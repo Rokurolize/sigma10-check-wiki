@@ -72,8 +72,9 @@ def main():
     client = get_client()
     site = client.site.get("sigma10-jp-test")
     drift = []
-    for fn in files + existing_files():
-        canonical = open(os.path.join(REPO, "pages", fn + ".txt"), encoding="utf-8").read()
+    pairs = [("pages", fn) for fn in files] + [("pages-existing", fn) for fn in existing_files()]
+    for subdir, fn in pairs:
+        canonical = open(os.path.join(REPO, subdir, fn + ".txt"), encoding="utf-8").read()
         try:
             wd = site.page.get(fn).source.wiki_text
         except Exception as e:
