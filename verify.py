@@ -20,6 +20,12 @@ sys.path.insert(0, "/home/roku/.local/state/wikijump/muse-bhl/sigma10-unify-2026
 REPO = os.path.dirname(os.path.abspath(__file__))
 
 
+# Pages that exist on the Wikidot check wiki only, by design:
+# theme:sigma-10-jp is delivered to the JP environment by CDN (GitHub Pages),
+# not by a local theme page on the Wikijump side (declared in the brief).
+WIKIDOT_ONLY = {"theme:sigma-10-jp"}
+
+
 def to_wikijump_form(fn, text):
     if fn == "theme-decoration-sample":
         text = text.replace(
@@ -68,6 +74,8 @@ def main():
             continue
         if norm(wd) != norm(canonical):
             drift.append((fn, "wikidot differs from canonical"))
+        if fn in WIKIDOT_ONLY:
+            continue
         got = wikijump_source(fn)
         if got is None:
             drift.append((fn, "missing on wikijump"))
