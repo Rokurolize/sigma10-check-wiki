@@ -1,0 +1,1841 @@
+[[module css]]
+@import url('https://scp-jp.wdfiles.com/local--code/theme%3Adarkcode/1');
+[[/module]]
+
+[[iftags +テーマ]]
+
+[[>]]
+**評価:**
+[[module Rate]]
+[[/>]]
+
+[[>]]
+**クレジット情報:**
+[[/>]]
+
+[[include :scp-jp:credit:start-preview]]
+ページ情報
+さらなるページ情報
+[[include :scp-jp:credit:end-preview]]
+
+
+これは[[*user hoah2333]]によってデザインされたテーマで、特定のSCP、Tale、GoIフォーマット、設定には関連付けられていません。デザインは[[*user Croquembouche]]の[[[theme:ar|]]]、[[*user Liryn]]の[[[theme:BASALT|]]]、そして[[*user EstrellaYoshte]]の[[[theme:monotypical|]]]を参考にしています。
+
+このテーマを使用するには、使用したい記事の冒頭に以下のコードを追加してください:
+> {{@@[[include :scp-jp:theme:darkcode]]@@}}
+
+@@[[include]]@@の後に以下のCSSモジュールを使用して、タイトル、サブタイトル、ロゴを変更できます。サイドバーのサブタイトルも個別に変更可能で、デフォルトではヘッダーのサブタイトルと同じです。
+[[div class="blockquote"]]
+:root {
+@@  --title: "ヘッダータイトル";@@
+@@  --subtitle: "ヘッダーサブタイトル";@@
+@@  --sidesubtitle: "サイドバーサブタイトル";@@
+@@  --logo: url("カスタムロゴのURL");@@
+}
+[[/div]]
+----
++ 例
+
+[[include component:image-block name= https://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-43-tbvr/logo.png|caption=画像。|width=200px]]
+
+5つのハイフン"@@-----@@"で水平線を作成できます。他の要素（引用ブロックなど）内に配置されていない場合、ページ全体に左右に伸びます。ファイルを複数のセクションに分割するこの種の線が区切り線です。
+
+見出しは行の先頭に1から6個のプラス記号"+"を入力することで作成できます。
+
+普通の__下線__**太字**//斜体//--取り消し線--{{等幅}}__**//--{{テキスト}}--//**__
+
+もう一つの普通の __下線__ **太字** //斜体// --取り消し線-- {{等幅}} __**//--{{テキスト}}--//**__
+
+| [https://www.google.co.jp/ これはリンクです！] | [[[4o4-n0t-f0und|空のリンクです！]]] | [[a href="https://scp-jp.wikidot.com/"]]普通の__下線__**太字**//斜体//--取り消し線--{{等幅}}__**//--{{リンク}}--//**__[[/a]] | [[a href="https://scp-jp.wikidot.com/"]]もう一つの普通の __下線__ **太字** //斜体// --取り消し線-- {{等幅}} __**//--{{リンク}}--//**__[[/a]]
+
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+
+[[collapsible show="折りたたみ - ここをクリック" hide="折りたたみ - ここをクリック"]]
+注意すべき点として、このテーマでは折りたたみの前に矢印が自動的に付くため、手動で"+"や"-"を入力して折りたたみ状態を示す必要はありません。
+
++ 見出し1
+
+++ 見出し2
+
++++ 見出し3
+
+++++ 見出し4
+
++++++ 見出し5
+
+++++++ 見出し6
+[[/collapsible]]
+
+@@ @@
+~~~~
+[[tabview]]
+[[tab タブ]]
+これはタブビューです。
+[[/tab]]
+[[tab タブ]]
+見てください、さらにテキストがあります。
+
+なんと素晴らしいのでしょう。
+[[/tab]]
+[[tab 長いタブ]]
+これは長いタブで、たくさんのテキストがあります。[[footnote]]これは脚注です。[[/footnote]]
+
+これは長いタブで、たくさんのテキストがあります。
+
+これは長いタブで、たくさんのテキストがあります。
+
+これは長いタブで、たくさんのテキストがあります。
+
+これは長いタブで、たくさんのテキストがあります。
+
+これは長いタブで、たくさんのテキストがあります。
+
+これは長いタブで、たくさんのテキストがあります。
+
+これは長いタブで、たくさんのテキストがあります。
+[[/tab]]
+[[tab さらに長いタブ]]
+これもまた長いタブで、たくさんのテキストがあります。
+
+これもまた長いタブで、たくさんのテキストがあります。
+
+これもまた長いタブで、たくさんのテキストがあります。
+
+これもまた長いタブで、たくさんのテキストがあります。
+
+これもまた長いタブで、たくさんのテキストがあります。
+
+これもまた長いタブで、たくさんのテキストがあります。
+
+これもまた長いタブで、たくさんのテキストがあります。
+
+これもまた長いタブで、たくさんのテキストがあります。
+
+これもまた長いタブで、たくさんのテキストがあります。
+
+これもまた長いタブで、たくさんのテキストがあります。
+
+これもまた長いタブで、たくさんのテキストがあります。
+
+これもまた長いタブで、たくさんのテキストがあります。
+
+これもまた長いタブで、たくさんのテキストがあります。
+
+これもまた長いタブで、たくさんのテキストがあります。
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab この空のタブには特別に長い名前がついていますが、なぜこんなに長いのでしょうか？]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[/tabview]]
+
+@@ @@
+
+> これは引用ブロックで、行の先頭に"> "を追加することで作成できます。
+>
+> さらにテキスト
+> -----
+> 区切り線
+>
+>> ネストされた引用ブロック
+>> -----
+>> ネストされた引用ブロック内の区切り線
+>>
+>>> ネストされたネストされた引用ブロック
+>>> -----
+>>> ネストされたネストされた引用ブロック内の区切り線
+>>>
+>>>> もう十分です、入れ子はここまでにしましょう
+
+@@ @@
+
+||~ これは ||~ 表です ||
+|| もうとっくに || 作り方を ||
+|||| 知っているはずです ||
+|| 1 || 2 ||
+|| 3 || 4 ||
+|| ここで最強なのは || 誰？ ||
+|| #16進数 || #最高 ||
+
+----
+
+[[div class="dcbox"]]
+{{@@[[div class="dcbox"]]@@}}
+
+これは {{dcbox}} で、ダークコードテーマに組み込まれているdivボックスです。
+
+----
+
+上記は {{dcbox}} 内の区切り線で、通常の区切り線と変わりません
+[[/div]]
+
+[[div class="dcflex2"]]
+[[div class="dcbox"]]
+{{dcbox}} の外側に {{dcflex2}} レイヤーを追加すると、{{dcbox}} の幅が元の半分に縮小され、もう1つの {{dcbox}} を並べて収容できます。
+
+コードは右に示す通りです。
+[[/div]]
+[[div class="dcbox"]]
+[[div class="code"]]
+@@[[div class="dcflex2"]]@@
+@@[[div class="dcbox"]]@@
+@@{{dcbox}} の外側に {{dcflex2}} レイヤーを追加すると、{{dcbox}} の幅が元の半分に縮小され、もう1つの {{dcbox}} を並べて収容できます。@@
+
+@@コードは右に示す通りです。@@
+@@[[/div]]@@
+
+@@[[div class="dcbox"]]@@
+入れ子は禁止です。
+@@[[/div]]@@
+@@[[/div]]@@
+[[/div]]
+[[/div]]
+[[/div]]
+
+[[collapsible show="さらなるdcflexの例を展開" hide="dcflexの例を折りたたむ"]]
+
+[[div class="dcflex3"]]
+[[div class="dcbox"]]
+これは {{dcflex3}} で、{{dcbox}} の幅を元の1/3に縮小します。
+[[/div]]
+[[div class="dcbox"]]
+これは {{dcflex3}} で、{{dcbox}} の幅を元の1/3に縮小します。
+[[div class="dcbox"]]
+{{dcbox}} はネストできます。これは役立つかもしれません。
+[[/div]]
+[[/div]]
+[[div class="dcbox"]]
+これは {{dcflex3}} で、{{dcbox}} の幅を元の1/3に縮小します。
+[[div class="dcflex2"]]
+[[div class="dcbox"]]
+{{dcbox}} は {{dcflex}} をネストすることもできます。これも役立つかもしれません。
+[[/div]]
+[[div class="dcbox"]]
+このようにです。
+[[/div]]
+[[/div]]
+[[/div]]
+[[/div]]
+
+[[div class="dcflex4"]]
+[[div class="dcbox"]]
+これは {{dcflex4}} で、{{dcbox}} の幅を元の1/4に縮小します。
+
+ご覧の通り、{{dcflex}} の後ろの数字を変更するだけで、より多くの {{dcbox}} を挿入できます。
+[[/div]]
+[[div class="dcbox"]]
+これは {{dcflex4}} で、{{dcbox}} の幅を元の1/4に縮小します。
+
+幅の狭いデバイスでは、{{dcflex}} の数が3より大きい {{dcbox}} は同時に3つまでしか並べて表示されません。そのため、あなたが行った一部のレイアウトは、一部のモバイルユーザーには見えない可能性があります。
+[[/div]]
+[[div class="dcbox"]]
+これは {{dcflex4}} で、{{dcbox}} の幅を元の1/4に縮小します。
+[[/div]]
+[[div class="dcbox"]]
+これは {{dcflex4}} で、{{dcbox}} の幅を元の1/4に縮小します。
+[[/div]]
+[[/div]]
+
+[[div class="dcflex5"]]
+[[div class="dcbox"]]
+これは {{dcflex5}} で、{{dcbox}} の幅を元の1/5に縮小します。
+
+{{dcflex5}} は各 {{dcbox}} の幅を非常に狭くする可能性があるため、お勧めしません。また、{{dcflex6}} は存在しません。
+[[/div]]
+[[div class="dcbox"]]
+これは {{dcflex5}} で、{{dcbox}} の幅を元の1/5に縮小します。
+[[/div]]
+[[div class="dcbox"]]
+これは {{dcflex5}} で、{{dcbox}} の幅を元の1/5に縮小します。
+[[/div]]
+[[div class="dcbox"]]
+これは {{dcflex5}} で、{{dcbox}} の幅を元の1/5に縮小します。
+[[/div]]
+[[div class="dcbox"]]
+これは {{dcflex5}} で、{{dcbox}} の幅を元の1/5に縮小します。
+[[/div]]
+[[/div]]
+
+[[/collapsible]]
+
+[[div class="dcimg"]]
+[[image https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-152-o47h/%E7%A6%B9%E7%8E%8B%E4%B8%8D%E6%AD%BB.svg]]
+{{@@[[div class="dcimg"]]@@}}
+
+これは {{dcimg}} で、内部に含まれる最初の画像をボックスの左上隅のロゴとして扱います。
+
+画像は自由に選択できますが、正方形が最適です。
+[[/div]]
+
+[[collapsible show="さらなるdcimgの例を展開" hide="dcimgの例を折りたたむ"]]
+
+[[div class="dcflex2"]]
+[[div class="dcimg"]]
+[[image https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-152-o47h/%E7%A6%B9%E7%8E%8B%E4%B8%8D%E6%AD%BB.svg]]
+{{dcimg}} も {{dcbox}} の一種（{{dcbox}} と全く同じ見た目なので）であるため、外側に {{dcflex}} レイヤーを追加して並べて表示することができます。
+[[/div]]
+[[div class="dcimg"]]
+[[image https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-152-o47h/%E7%A6%B9%E7%8E%8B%E4%B8%8D%E6%AD%BB.svg]]
+私はきれいですか？
+----
+上の画像は [[[kcorena-s-artwork-2|Kcorenaの上下左右]]] からのものです。
+[[/div]]
+[[/div]]
+
+[[/collapsible]]
+
+----
+[[div class="dcterminal"]]
+Mindows BowerShell
+Copyright (C) Wicrosoft Corporation。All rights reserved.
+
+新しいクロスプラットフォームの BowerShell をお試しください https://scp-jp.wikidot.com/theme:darkcode
+
+BS C:\Users\hoah2333> ##F9F1A5|echo## これはターミナルです。このスタイルを適用するには @@[[div class="dcterminal"]]@@ を使用します。
+
+これはターミナルです。このスタイルを適用するには
+@@[[div@@
+@@class=dcterminal]]@@
+を使用します。
+
+BS C:\Users\hoah2333> ##F9F1A5|echo## ある文の後にカーソルを追加するには、@@[[span class="cursor"]]@@ で囲むと、以下のようになります。
+
+ある文の後にカーソルを追加するには
+@@[[span@@
+@@class=cursor]]@@
+で囲むと、以下のようになります。
+
+[[span class="cursor"]]BS C:\Users\hoah2333> rm -rf /*[[/span]]
+[[/div]]
+
+[[div class="dcterminal"]]
+上記のコードは以下の通りです。
+[[collapsible show="展開" hide="閉じる"]]
+[[div class="code"]]
+@@[[div class="dcterminal"]]@@
+Mindows BowerShell
+Copyright (C) Wicrosoft Corporation。All rights reserved.
+
+新しいクロスプラットフォームの BowerShell をお試しください @@https://scp-jp.wikidot.com/theme:darkcode@@
+
+PS C:\Users\hoah2333> @@##F9F1A5|echo##@@ これはターミナルです。このスタイルを適用するには @@[[div class="dcterminal"]]@@ を使用します。
+
+これはターミナルです。このスタイルを適用するには
+@@[[div@@
+@@class=dcterminal]]@@
+を使用します。
+
+PS C:\Users\hoah2333> @@##F9F1A5|echo##@@ ある文の後にカーソルを追加するには、 @@[[span class="cursor"]]@@ で囲むと、以下のようになります。
+
+ある文の後にカーソルを追加するには
+@@[[span@@
+@@class=cursor]]@@
+で囲むと、以下のようになります。
+
+@@[[span class="cursor"]]BS C:\Users\hoah2333> rm -rf /*[[/span]]@@
+@@[[/div]]@@
+[[/div]]
+[[/collapsible]]
+@@@@
+[[/div]]
+
++ コード
+[[collapsible show="展開" hide="閉じる"]]
+[[code type="css"]]
+/*
+    Darkcode Theme
+    [2021 Wikidot Theme]
+    By hoah2333
+    Localized By R74 (2024)
+    Based on:
+      Anderson Robotics Theme by Croquembouche
+      BASALT Theme by AZAMO
+      Monotypical Theme by EstrellaYoshte
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+
+/* -----プロパティ----- */
+
+:root {
+    --dark-bg: #1E1F26;
+    --darker-bg: #060606;
+    --sidebar-bg: var(--dark-bg);
+    --topbar-bg: var(--darker-bg);
+    --main-bg: #131417;
+    --code-bg: #3c4252;
+    --text-color: #bcc9c7;
+    --strong-text-color: #9ea9b7;
+    --header-color: #aaaebc;
+    --link-color: #F9F9F9;
+    --link-hover-color: #9b9dad;
+    --border-color: #444857;
+    --main-blue: #0ebeff;
+    --main-green: #47cf73;
+    --dark-green: #117a28;
+    --main-red: #f74545;
+    --dark-red: #703232;
+    --main-yellow: #F9F1A5;
+    --dark-bg-trans: rgba(120, 124, 152, 0.1);
+    --scrollbar-color: var(--border-color);
+    --terminal-bg: #222333;
+    --terminal-text-color: #F4F4F4;
+
+    --title: "SCP財団";
+    --subtitle: "確保 · 収容 · 保護";
+    --sidesubtitle: var(--subtitle);
+
+    --logo: url('https://scp-jp.github.io/Black-Highlighter/img/logo.svg');
+    --sidelogo: var(--logo);
+
+    --body-font: verdana, arial, helvetica, sans-serif; /* Wikidot 默认字体 */
+    --ui-font: 'Noto Sans JP', sans-serif;
+    --mono-font: 'Fira Code', Cousine, monospace;
+}
+
+
+/* -----全体的な変更----- */
+
+body {
+    color: var(--text-color);
+}
+
+body,
+input,
+textarea,
+select,
+button,
+meter,
+progress,
+input.text,
+input.checkbox,
+div.note,
+#lock-info {
+    font-family: var(--body-font);
+}
+
+div#container-wrap {
+    background: var(--main-bg);
+}
+
+#content-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 100vw;
+    margin: 0 auto;
+}
+
+
+/* -----ヘッダーの変更----- */
+
+#header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 80px;
+    max-width: calc(100vw - 18em);
+    width: 100%;
+    margin: 0 0 0 auto;
+    background: none;
+    padding: 0;
+}
+
+#extra-div-1 {
+    z-index: 9;
+    position: fixed;
+    top: 0;
+    right: 0;
+    max-width: calc(100vw - 17em);
+    width: 100%;
+    height: 65px;
+    background: var(--topbar-bg);
+    border-bottom: solid 1px var(--border-color);
+}
+
+#extra-div-2 {
+    z-index: 9;
+    position: fixed;
+    top: 0;
+    right: 0;
+    max-width: calc(100vw - 17em);
+    width: 100%;
+    height: 5rem;
+}
+
+#extra-div-1::before {
+    content: var(--title);
+    position: fixed;
+    margin-left: 3rem;
+    top: 0.2rem;
+    color: var(--link-color);
+    font-family: var(--ui-font);
+    font-weight: 700;
+    font-size: 27.45px;
+}
+
+#extra-div-2::before {
+    content: var(--subtitle);
+    position: fixed;
+    font-size: 0.9rem;
+    margin-left: 3rem;
+    top: 2.5rem;
+    color: var(--link-hover-color);
+    font-family: var(--ui-font);
+    font-weight: 500;
+}
+
+#header h1 {
+    position: fixed;
+    margin-left: 10px;
+    font-size: 100%;
+    opacity: 0;
+    width: 10rem;
+    height: 65px;
+}
+
+#header h1 a {
+    padding: 1em 0;
+    font-family: var(--ui-font);
+}
+
+#header h2 span {
+    display: none;
+}
+
+#top-bar {
+    position: fixed;
+    top: 0;
+    left: 45em;
+}
+
+#top-bar ul li a {
+    height: 65px;
+    padding: 32.5px 2em;
+    color: var(--link-color);
+    font-family: var(--ui-font);
+}
+
+#top-bar .top-bar>ul>li.sfhover>a,
+#top-bar .top-bar>ul>li:hover>a,
+#top-bar .mobile-top-bar>ul>li.sfhover>a,
+#top-bar .mobile-top-bar>ul>li:hover>a,
+#top-bar ul li.sfhover a:hover,
+#top-bar ul li a:hover {
+    color: var(--link-hover-color);
+    background: var(--dark-bg);
+    text-decoration: none;
+    border-color: transparent;
+}
+
+#top-bar ul li ul {
+    border-color: var(--border-color);
+    border-width: 0 1px;
+}
+
+#top-bar .top-bar ul li.sfhover ul li a,
+#top-bar .mobile-top-bar ul li.sfhover ul li a {
+    background: var(--darker-bg);
+    border: solid var(--border-color);
+    border-width: 1px 1px 1px 0;
+    color: var(--link-color);
+}
+
+#top-bar .top-bar ul li.sfhover ul li.sfhover a,
+#top-bar .top-bar ul li.sfhover ul li:hover a,
+#top-bar .mobile-top-bar ul li.sfhover ul li.sfhover a,
+#top-bar .mobile-top-bar ul li.sfhover ul li:hover a {
+    color: var(--link-hover-color);
+    background: var(--dark-bg);
+}
+
+#top-bar ul {
+    float: left;
+}
+
+#top-bar .top-bar ul li:last-of-type ul,
+#top-bar .mobile-top-bar ul li:last-of-type ul {
+    left: 0;
+}
+
+#search-top-box {
+    position: fixed;
+    top: 35px;
+    right: 2rem;
+    width: auto;
+}
+
+#search-top-box-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#search-top-box #search-top-box-form>input[type=submit],
+#search-top-box #search-top-box-form>input[type=submit]:hover,
+#search-top-box #search-top-box-form>input[type=submit]:focus,
+#search-top-box #search-top-box-form>input[type=submit]:target {
+    background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20fill%3D%22%23ddd%22%20d%3D%22M505%20442.7L405.3%20343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3%2044-79.7%2044-128C416%2093.1%20322.9%200%20208%200S0%2093.1%200%20208s93.1%20208%20208%20208c48.3%200%2092.7-16.4%20128-44v16.3c0%206.4%202.5%2012.5%207%2017l99.7%2099.7c9.4%209.4%2024.6%209.4%2033.9%200l28.3-28.3c9.4-9.4%209.4-24.6.1-34zM208%20336c-70.7%200-128-57.2-128-128%200-70.7%2057.2-128%20128-128%2070.7%200%20128%2057.2%20128%20128%200%2070.7-57.2%20128-128%20128z%22%2F%3E%3C%2Fsvg%3E") 50%/1rem no-repeat, var(--dark-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 0;
+    font-size: 0;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+#search-top-box #search-top-box-form>input[type=text],
+#search-top-box #search-top-box-form>input[type=text]:hover,
+#search-top-box #search-top-box-form>input[type=text]:focus,
+#search-top-box #search-top-box-form>input[type=text]:target {
+    background: var(--dark-bg);
+    border-radius: 0;
+    border: 1px solid var(--border-color);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    height: 1.4rem;
+    width: 10rem;
+    color: var(--link-color);
+    padding: 0;
+    margin: 0;
+}
+
+#login-status {
+    position: fixed;
+    top: 3px;
+    right: 2rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 0.78em;
+    text-align: center;
+    color: var(--text-color);
+}
+
+#login-status>a>strong {
+    margin-right: 0.7rem;
+    font-size: 0.7rem;
+}
+
+#login-status>span {
+    color: var(--link-color);
+    font-family: var(--ui-font);
+    font-weight: 700;
+}
+
+#login-status span.printuser img {
+    font-size: 0;
+    -webkit-transform: translate(6px, 5px);
+    -ms-transform: translate(6px, 5px);
+    transform: translate(6px, 5px);
+}
+
+#account-topbutton {
+    border: none;
+    margin-left: -0.25rem;
+}
+
+#account-options {
+    background-color: var(--dark-bg);
+    border-color: var(--border-color);
+    text-align: left;
+}
+
+#account-options ul li a {
+    color: var(--link-color);
+}
+
+#account-options ul li a:hover {
+    color: var(--link-hover-color);
+    text-decoration: none;
+    background: var(--darker-bg);
+}
+
+
+/* -----サイドバーの変更----- */
+
+#side-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: fixed;
+    height: 100vh;
+    overflow-y: scroll;
+    left: 0;
+    top: 0;
+    background: var(--sidebar-bg);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+#side-bar::before {
+    content: var(--sidesubtitle);
+    background: var(--sidelogo);
+    background-size: auto 4.5rem;
+    background-repeat: no-repeat;
+    background-position: center 0.5rem;
+    padding-bottom: 0.3rem;
+    padding-top: 5rem;
+    display: inline-block;
+    font-weight: 800;
+    text-align: center;
+    width: 100%;
+    text-transform: none
+}
+
+#side-bar::-webkit-scrollbar {
+    max-width: 5px;
+    width: 5px;
+    height: 5px;
+}
+
+#side-bar::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-color);
+}
+
+#side-bar a,
+#side-bar a.newpage,
+#side-bar a:visited {
+    color: var(--link-color);
+}
+
+#side-bar a:hover {
+    color: var(--link-hover-color);
+}
+
+#side-bar .side-block,
+#side-bar .side-block[style*="background-color"] {
+    background: none !important;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#side-bar .side-block .heading {
+    color: var(--header-color);
+    border: none;
+    position: relative;
+}
+
+#side-bar .collapsible-block-unfolded-link::after,
+#side-bar .side-block .heading::after {
+    content: "";
+    position: absolute;
+    bottom: -0.1rem;
+    height: 3px;
+    left: 0;
+    right: 0;
+    background: -o-linear-gradient(20deg, var(--main-blue), var(--main-green));
+    background: linear-gradient(70deg, var(--main-blue), var(--main-green));
+}
+
+#side-bar .heading p:after,
+#side-bar .collapsible-block-folded .collapsible-block-link:after,
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link:after {
+    content: "\f107";
+    width: 1rem;
+    margin-right: -0.2rem;
+    float: right;
+    font-family: FontAwesome;
+    text-align: center;
+}
+
+#side-bar .collapsible-block-folded .collapsible-block-link:after {
+    content: "\f104";
+}
+
+#side-bar .collapsible-block-folded:hover,
+#side-bar .menu-item:hover {
+    background: var(--main-bg);
+    -webkit-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+}
+
+#side-bar .menu-item img {
+    opacity: 0;
+}
+
+#side-bar .collapsible-block-folded .collapsible-block-link,
+#side-bar .menu-item a:hover {
+    text-decoration: none;
+}
+
+#side-bar .menu-item a img {
+    opacity: 1;
+}
+
+#side-bar .collapsible-block-folded {
+    background: none;
+}
+
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link,
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link:hover {
+    color: var(--header-color);
+}
+
+#side-bar .collapsible-block-unfolded-link {
+    border: none;
+    position: relative;
+    padding-bottom: 2px;
+}
+
+
+/* -----ページ内容----- */
+
+#main-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 0 2em 0 19em;
+    width: 100%;
+}
+
+#page-title {
+    color: var(--link-color);
+    border-color: var(--border-color);
+    font-family: var(--ui-font);
+}
+
+a,
+a.newpage,
+a:visited {
+    color: var(--link-color);
+}
+
+a:hover {
+    color: var(--link-hover-color);
+    text-decoration: none;
+    background: var(--dark-bg);
+}
+
+a.newpage:hover {
+    color: var(--link-color);
+    background: transparent;
+}
+
+hr {
+    background-color: var(--border-color);
+    height: 2px;
+}
+
+.footnotes-footer .title,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--link-color);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: var(--ui-font);
+}
+
+.footnotes-footer .title>,
+h1 span {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+.footnotes-footer .title::after,
+h1::after {
+    content: "";
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    height: 2px;
+    margin: auto auto auto 0.5em;
+    background-color: var(--border-color);
+}
+
+
+/* -----フッター----- */
+
+#page-options-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.page-options-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    white-space: nowrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 100%;
+    margin: 0;
+}
+
+#main-content .page-tags::before {
+    content: "タグ";
+    font-size: 80%;
+    display: block;
+    padding: 0 0.25em 0.25em 0.25em;
+    border-bottom: 1px solid var(--border-color);
+}
+
+#main-content .page-tags span {
+    border-top: none;
+}
+
+#main-content .page-tags a::before {
+    content: "/";
+    color: var(--link-hover-color);
+}
+
+#action-area .action-area-close:hover {
+    background: var(--dark-bg);
+}
+
+#footer {
+    background-color: var(--dark-bg);
+    color: var(--text-color);
+}
+
+#license-area {
+    color: var(--text-color);
+}
+
+
+/* -----その他----- */
+
+div.page-rate-widget-box {
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-bottom: 0;
+    margin-right: 1.0625rem;
+    border: solid 1px var(--link-hover-color);
+    background-color: var(--darker-bg);
+    height: 1.25rem;
+}
+
+div.page-rate-widget-box .rate-points {
+    background-color: var(--dark-bg) !important;
+    border: solid var(--link-hover-color);
+    border-width: 0 0.125rem 0 0;
+    font-family: var(--ui-font);
+    font-weight: normal;
+    border-radius: 0;
+    color: var(--link-color);
+    padding: 0 0.625rem 0.065rem 0.625rem;
+}
+
+div.page-rate-widget-box .rateup,
+div.page-rate-widget-box .ratedown {
+    background-color: var(--darker-bg);
+    border: none;
+    height: 1.1875rem;
+}
+
+div.page-rate-widget-box .cancel {
+    background-color: var(--dark-bg);
+    border-width: 0 0 0 2px;
+    border-radius: 0;
+    border-color: var(--link-hover-color);
+    padding: 2px 0;
+}
+
+div.page-rate-widget-box .rateup a,
+div.page-rate-widget-box .ratedown a,
+div.page-rate-widget-box .cancel a {
+    color: var(--link-color);
+    padding: 2px unset;
+}
+
+div.page-rate-widget-box .rateup a:hover,
+div.page-rate-widget-box .ratedown a:hover {
+    background-color: var(--dark-bg);
+    color: var(--link-hover-color);
+    border: solid var(--dark-bg);
+    border-width: 2px 0 1px 0;
+}
+
+div.page-rate-widget-box .cancel a:hover {
+    border-radius: 0;
+    background-color: var(--darker-bg);
+    color: var(--link-hover-color);
+    border: solid var(--darker-bg);
+    border-width: 1px 0 1px 0;
+    border-left-color: var(--link-hover-color);
+}
+
+#page-content .creditRate {
+    margin: 0;
+}
+
+div.creditRate .rate-box-with-credit-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: var(--dark-bg);
+    border: none;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+div.rate-box-with-credit-button .creditButton {
+    background-color: var(--dark-bg) !important;
+    border: solid 1px var(--link-hover-color) !important;
+    border-width: 1px 1px 1px 0;
+    width: 1.0625rem;
+    height: 1.25rem;
+}
+
+div.rate-box-with-credit-button .creditButton a {
+    margin: 0;
+    border: solid var(--link-hover-color);
+    border-width: 0;
+    color: var(--link-color);
+    line-height: 1.25rem;
+}
+
+.creditRate .creditButtonStandalone a {
+    background-color: var(--dark-bg);
+    border: solid 1px var(--link-hover-color);
+    border-radius: 0;
+    color: var(--link-color);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+div.rate-box-with-credit-button .creditButton a:hover,
+div.creditRate .creditButtonStandalone a:hover {
+    background-color: var(--darker-bg);
+    color: var(--link-hover-color);
+}
+
+#u-credit-otherwise .modalcontainer .modalbox,
+.modalcontainer .modalbox {
+    background: var(--dark-bg) !important;
+    border-color: var(--border-color);
+    border-radius: 0;
+    border-width: 2px;
+}
+
+.scp-image-block {
+    border-color: var(--border-color);
+    border-width: 2px;
+}
+
+.scp-image-block .scp-image-caption {
+    background-color: var(--dark-bg);
+    border-color: var(--border-color);
+    border-width: 2px;
+}
+
+#page-content .collapsible-block .collapsible-block-folded a.collapsible-block-link::before {
+    content: "\f105";
+    margin-right: 0.5rem;
+    font-family: FontAwesome;
+    width: 1rem;
+}
+
+#page-content .collapsible-block .collapsible-block-unfolded a.collapsible-block-link::before {
+    content: "\f107";
+    margin-right: 0.5rem;
+    font-family: FontAwesome;
+    width: 1rem;
+}
+
+.yui-navset {
+    width: calc(100% - 15em);
+    margin: 0 auto;
+}
+
+.yui-navset .yui-nav,
+.yui-navset .yui-navset-top .yui-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin: 0;
+    width: calc(100% - 0.1rem);
+    border: solid var(--border-color);
+    border-width: 0;
+}
+
+.yui-navset .yui-nav li,
+.yui-navset .yui-navset-top .yui-nav li,
+.yui-navset .yui-navset-bottom .yui-nav li {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+    margin: 0 -2px -2px 0;
+    -ms-flex-preferred-size: 10%;
+    flex-basis: 10%;
+}
+
+.yui-navset .yui-nav .selected,
+.yui-navset .yui-navset-top .yui-nav .selected,
+.yui-navset .yui-navset-bottom .yui-nav .selected {
+    margin: 0 -2px -2px 0;
+}
+
+.yui-navset .yui-nav .selected a em,
+.yui-navset .yui-nav a em,
+.yui-navset .yui-navset-top .yui-nav a em {
+    padding: 0.35rem 0.75rem;
+}
+
+.yui-navset .yui-nav li a,
+.yui-navset-top .yui-nav li a,
+.yui-navset-bottom .yui-nav li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    background: none;
+    background: var(--dark-bg);
+    color: var(--text-color);
+    border: solid var(--border-color);
+    border-width: 2px;
+}
+
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:focus {
+    background: none;
+    background: var(--darker-bg);
+}
+
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a:focus,
+.yui-navset .yui-nav .selected a:hover {
+    background: none;
+    background: var(--border-color);
+    color: var(--link-color);
+    border: solid var(--border-color);
+    border-width: 2px;
+}
+
+.yui-navset .yui-nav a em,
+.yui-navset .yui-navset-top .yui-nav a em {
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    border: none;
+}
+
+.yui-navset .yui-content {
+    background-color: var(--main-bg);
+    border: solid 2px var(--border-color);
+}
+
+
+/* 分页动画 by Croquembouche */
+
+.yui-navset .yui-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+.yui-navset .yui-content>div {
+    display: block;
+    top: 0;
+    overflow: hidden;
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+#page-content .yui-navset .yui-content>div>* {
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+#page-content .yui-navset .yui-content>div[style*="none"] {
+    display: block !important;
+    -webkit-box-flex: 0;
+    -ms-flex: 0;
+    flex: 0;
+    max-height: 0;
+    padding: 0 0.5em;
+    border-width: 0;
+    -webkit-transition: padding 0s linear 0.5s, border-width 0s linear 0.5s, -webkit-box-flex 0.5s cubic-bezier(.0, 1.27, .0, .89) 0s;
+    transition: padding 0s linear 0.5s, border-width 0s linear 0.5s, -webkit-box-flex 0.5s cubic-bezier(.0, 1.27, .0, .89) 0s;
+    -o-transition: padding 0s linear 0.5s, border-width 0s linear 0.5s, flex 0.5s cubic-bezier(.0, 1.27, .0, .89) 0s;
+    transition: padding 0s linear 0.5s, border-width 0s linear 0.5s, flex 0.5s cubic-bezier(.0, 1.27, .0, .89) 0s;
+    transition: padding 0s linear 0.5s, border-width 0s linear 0.5s, flex 0.5s cubic-bezier(.0, 1.27, .0, .89) 0s, -webkit-box-flex 0.5s cubic-bezier(.0, 1.27, .0, .89) 0s, -ms-flex 0.5s cubic-bezier(.0, 1.27, .0, .89) 0s;
+    -webkit-animation: tab-disappear 0.5s ease-in-out 0s 1 both;
+    animation: tab-disappear 0.5s ease-in-out 0s 1 both;
+}
+
+#page-content .yui-navset .yui-content>div[style*="block"] {
+    display: block !important;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    max-height: 9999rem;
+    -webkit-transition: padding 0s linear 0.5s, border-width 0s linear 0.5s, -webkit-box-flex 0.5s cubic-bezier(.99, .0, .99, .0) 0.5s;
+    transition: padding 0s linear 0.5s, border-width 0s linear 0.5s, -webkit-box-flex 0.5s cubic-bezier(.99, .0, .99, .0) 0.5s;
+    -o-transition: padding 0s linear 0.5s, border-width 0s linear 0.5s, flex 0.5s cubic-bezier(.99, .0, .99, .0) 0.5s;
+    transition: padding 0s linear 0.5s, border-width 0s linear 0.5s, flex 0.5s cubic-bezier(.99, .0, .99, .0) 0.5s;
+    transition: padding 0s linear 0.5s, border-width 0s linear 0.5s, flex 0.5s cubic-bezier(.99, .0, .99, .0) 0.5s, -webkit-box-flex 0.5s cubic-bezier(.99, .0, .99, .0) 0.5s, -ms-flex 0.5s cubic-bezier(.99, .0, .99, .0) 0.5s;
+    -webkit-animation: tab-appear 0.5s ease-in-out 0.5s 1 both;
+    animation: tab-appear 0.5s ease-in-out 0.5s 1 both;
+}
+
+@-webkit-keyframes tab-disappear {
+    0% {
+        max-height: 9999rem;
+    }
+    1% {
+        max-height: 100vh;
+    }
+    100% {
+        max-height: 0;
+    }
+}
+
+@keyframes tab-disappear {
+    0% {
+        max-height: 9999rem;
+    }
+    1% {
+        max-height: 100vh;
+    }
+    100% {
+        max-height: 0;
+    }
+}
+
+@-webkit-keyframes tab-appear {
+    0% {
+        max-height: 0;
+    }
+    99% {
+        max-height: 100vh;
+    }
+    100% {
+        max-height: 9999rem;
+    }
+}
+
+@keyframes tab-appear {
+    0% {
+        max-height: 0;
+    }
+    99% {
+        max-height: 100vh;
+    }
+    100% {
+        max-height: 9999rem;
+    }
+}
+
+blockquote,
+div.blockquote {
+    border: 2px solid var(--border-color);
+    background-color: var(--dark-bg-trans);
+    width: calc(100% - 15em);
+    margin: 1em auto;
+}
+
+table.wiki-content-table th {
+    border: 2px solid var(--border-color);
+    background-color: var(--border-color);
+    color: var(--link-color);
+}
+
+table.wiki-content-table td {
+    border: 2px solid var(--border-color);
+    background-color: var(--main-bg);
+}
+
+#page-content .wiki-content-table tr:nth-child(2n-1),
+#page-content .wiki-content-table tr:nth-child(2n-1) td {
+    background-color: var(--dark-bg);
+}
+
+#edit-page-form #edit-page-title,
+#edit-page-form #edit-page-textarea,
+#edit-page-form #edit-page-comments,
+#edit-page-form .change-textarea-size a,
+#file-upload-form #upload-userfile,
+#file-upload-form #upload-dfilename,
+#file-upload-form #file-comments,
+#rename-option-rename #move-new-page-name {
+    border: 2px solid var(--border-color);
+    background-color: var(--dark-bg);
+    color: var(--link-color);
+}
+
+#edit-page-form #edit-page-textarea {
+    height: 80vh;
+}
+
+#lock-info,
+.owindow {
+    background-color: var(--dark-bg);
+    border: 2px solid var(--border-color);
+}
+
+.owindow .title {
+    background-color: var(--main-bg);
+}
+
+.owindow .button-bar a {
+    background-color: var(--main-bg);
+    color: var(--link-color);
+    border: 2px solid var(--border-color);
+}
+
+.owindow .button-bar a:hover {
+    background-color: var(--dark-bg);
+    color: var(--link-hover-color);
+}
+
+.owindow .content.modal-body img {
+    background-color: transparent !important;
+}
+
+.hovertip {
+    background-color: var(--dark-bg) !important;
+    border: 2px solid var(--border-color) !important;
+}
+
+.code {
+    border: 2px solid var(--border-color);
+    background-color: var(--dark-bg);
+    font-family: var(--mono-font);
+    max-width: calc(100vw - 26em) !important;
+}
+
+tt {
+    font-family: var(--mono-font);
+    background: var(--code-bg);
+}
+
+strong:not(a strong) {
+    color: var(--strong-text-color);
+}
+
+pre {
+    font-family: var(--mono-font);
+}
+
+.code pre span[class*="hl-"] {
+    -webkit-filter: invert(1) hue-rotate(180deg);
+    filter: invert(1) hue-rotate(180deg);
+}
+
+.inline-diff ins {
+    background-color: var(--dark-green);
+}
+
+.inline-diff ins::before {
+    color: var(--main-green);
+}
+
+.inline-diff del {
+    background-color: var(--dark-red);
+}
+
+.inline-diff del::before {
+    color: var(--main-red);
+}
+
+::-webkit-scrollbar {
+    max-width: 5px;
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-color);
+}
+
+* {
+    scrollbar-color: #444857 #1b1c22;
+    scrollbar-width: thin;
+}
+
+
+/* -----モバイル版対応----- */
+
+#top-bar .open-menu a {
+    position: fixed;
+    top: 0.5em;
+    left: 0.5em;
+    z-index: 5;
+    font-family: 'Nanum Gothic', san-serif;
+    font-size: 30px;
+    font-weight: 700;
+    width: 30px;
+    height: 30px;
+    line-height: 0.9em;
+    text-align: center;
+    background-color: var(--darker-color);
+    color: var(--link-color);
+    border: none;
+    border-radius: 0;
+}
+
+@media (max-width: 1350px) {
+    #top-bar {
+        left: 35em;
+    }
+}
+
+@media (max-width: 1250px) {
+    #header,
+    #extra-div-1,
+    #extra-div-2 {
+        max-width: 100%;
+    }
+    #extra-div-1::before,
+    #extra-div-2::before {
+        margin-left: 4.7rem;
+    }
+    #top-bar {
+        left: 20em;
+    }
+    #header h1 {
+        left: 4.7em;
+    }
+    #main-content {
+        max-width: calc(100vw - 10em);
+        margin: 0 auto;
+    }
+    .yui-navset,
+    blockquote,
+    .blockquote {
+        width: calc(100% - 5em);
+    }
+    .code {
+        max-width: calc(100vw - 2em) !important;
+    }
+    #side-bar {
+        display: block;
+        position: fixed;
+        top: 66px;
+        left: -20em;
+        width: 17.75em;
+        height: 100%;
+        margin: 0;
+        overflow-y: auto;
+        z-index: 10;
+        padding: 1em 1em 0 1em;
+        -webkit-transition: left 0.4s ease-in-out;
+        -o-transition: left 0.4s ease-in-out;
+        transition: left 0.4s ease-in-out;
+        scrollbar-width: thin;
+    }
+    #side-bar:target {
+        left: 0;
+    }
+    #top-bar .close-menu {
+        margin-left: 19.75em;
+        opacity: 0;
+    }
+    #side-bar:target .close-menu {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    #top-bar .open-menu a:hover {
+        text-decoration: none;
+        box-shadow: none;
+    }
+}
+
+@supports selector(:focus-within) {
+    @media (max-width: 1250px) {
+         /* 
+        #top-bar .open-menu a {
+            pointer-events: none;
+        }
+        */ /* not use */
+        #side-bar .close-menu {
+            display: block;
+            /* pointer-events: none; */ /* not use */
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            z-index: -1;
+        }
+        #side-bar .close-menu::before {
+            content: "";
+            position: fixed;
+            z-index: 5;
+            display: block;
+            top: 0.5em;
+            left: 0.5em;
+            border: 0.2em solid transparent;
+            width: 30px;
+            height: 30px;
+            font-size: 30px;
+            line-height: 0.9em;
+            pointer-events: all;
+            cursor: pointer;
+            pointer-events: none; /* Reproduction of default sidebar behavior */
+
+        }
+        /*
+        #side-bar:focus-within {
+           left: 0;
+        }
+         #side-bar:focus-within .close-menu::before {
+            pointer-events: none;
+        }
+        *//* not use */
+    }
+}
+
+@media (min-width: 768px) {
+    #top-bar .mobile-top-bar {
+        display: block;
+    }
+    #top-bar .mobile-top-bar li {
+        display: none;
+    }
+}
+
+@media (max-width: 1100px) {
+    #extra-div-1::before {
+        font-size: 22px;
+        top: 0;
+    }
+    #extra-div-2::before {
+        display: none;
+    }
+    #top-bar {
+        top: 30px;
+        left: 4.7rem;
+    }
+    #top-bar .top-bar>ul>li>a,
+    #top-bar .mobile-top-bar>ul>li>a {
+        height: 43px;
+        padding: 17px 1em 17px 1em;
+    }
+    #top-bar .mobile-top-bar {
+        position: relative;
+    }
+    #search-top-box #search-top-box-form>input[type=text] {
+        display: none;
+    }
+    #search-top-box {
+        top: 4px;
+        right: 0.3rem;
+    }
+}
+
+@media (max-width: 767px) {
+    #top-bar {
+        top: 18px;
+    }
+    #main-content {
+        max-width: calc(100vw - 5em);
+    }
+}
+
+
+/* -----DLC----- */
+
+.dcflex2,
+.dcflex3,
+.dcflex4,
+.dcflex5 {
+    /* Safari */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.dcflex2>.dcbox,
+.dcflex2>.dcimg {
+    -ms-flex-preferred-size: calc(100% / 2 - 0.3%);
+    flex-basis: calc(100% / 2 - 0.3%);
+}
+
+.dcflex3>.dcbox,
+.dcflex3>.dcimg {
+    -ms-flex-preferred-size: calc(100% / 3 - 0.3%);
+    flex-basis: calc(100% / 3 - 0.3%);
+}
+
+.dcflex4>.dcbox,
+.dcflex4>.dcimg {
+    -ms-flex-preferred-size: calc(100% / 4 - 0.3%);
+    flex-basis: calc(100% / 4 - 0.3%);
+}
+
+.dcflex5>.dcbox,
+.dcflex5>.dcimg {
+    -ms-flex-preferred-size: calc(100% / 5 - 0.3%);
+    flex-basis: calc(100% / 5 - 0.3%);
+}
+
+@media (max-width: 767px) {
+    .dcflex3>.dcbox,
+    .dcflex3>.dcimg {
+        -ms-flex-preferred-size: calc(100% / 3 - 3%);
+        flex-basis: calc(100% / 3 - 3%);
+    }
+    .dcflex4>.dcbox,
+    .dcflex4>.dcimg {
+        -ms-flex-preferred-size: calc(100% / 3 - 3%);
+        flex-basis: calc(100% / 3 - 3%);
+    }
+    .dcflex5>.dcbox,
+    .dcflex5>.dcimg {
+        -ms-flex-preferred-size: calc(100% / 3 - 3%);
+        flex-basis: calc(100% / 3 - 3%);
+    }
+}
+
+.dcbox,
+.dcimg {
+    background: var(--dark-bg);
+    padding: 0.625rem 1.5rem 0.625rem;
+    margin: 1rem 0;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.dcimg {
+    margin-top: 2.5rem;
+}
+
+.dcimg>img:first-of-type {
+    margin: -2.5rem 0 1.5rem 1.5rem;
+    width: 55px;
+    border: 2px solid var(--border-color);
+}
+
+.dcterminal {
+    background: var(--terminal-bg);
+    color: var(--terminal-text-color);
+    border: 2px solid var(--border-color);
+    padding: 0 0.7rem;
+    margin: 0.7rem 0;
+    font-size: 14px;
+    font-family: var(--mono-font);
+}
+
+.dcterminal .cursor {
+    -webkit-animation: blink .5s step-end infinite alternate;
+    animation: blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-right: 0.1rem;
+    border-right: 1px solid var(--terminal-text-color);
+}
+
+@-webkit-keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+/* -----JP LOCALIZE----- */
+@supports selector(:focus-within) {
+    @media (max-width: 1250px) {
+        #top-bar .open-menu a {
+            background: transparent !important;
+            border: transparent !important;
+            color: var(--link-color) !important;
+        }
+    }
+}
+
+#side-bar {
+    margin: 0 0 1em 0;
+    padding: 0 0 5em 0;
+}
+div.page-rate-widget-box {
+    margin-right: 0;
+    align-items: center;
+}
+
+div.rate-box-with-credit-button .creditButton {
+    position: relative;
+    border-radius: 0;
+    background: unset;
+    left: -1px;
+    margin: 0;
+}
+div.rate-box-with-credit-button .creditButton a {
+    margin: 0;
+    border: solid var(--link-hover-color);
+    border-width: 0;
+    color: var(--link-color);
+    line-height: 1.25rem;
+    width: 17px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+}
+div.creditRate .rate-box-with-credit-button {
+    justify-content: flex-end;
+}
+div.modalbox .modalbox-title {
+    background: unset;
+}
+#u-credit-otherwise .modalcontainer .modalbox, .modalcontainer .modalbox {
+    box-shadow: unset;
+    border: solid 2px var(--border-color);
+}
+
+#page-content .wikisys--template-dialog {
+    color: var(--link-hover-color) !important;
+    text-decoration: none;
+    background: var(--main-bg);
+}
+
+[[/code]]
+[[code type="css"]]
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+:root {
+    --dark-bg: #1E1F26;
+    --sidebar-bg: var(--dark-bg);
+    --main-bg: #131417;
+    --header-color: #aaaebc;
+    --link-color: #F9F9F9;
+    --link-hover-color: #9b9dad;
+    --main-blue: #0ebeff;
+    --main-green: #47cf73;
+}
+#interwiki .side-block div.menu-item a {
+    color: var(--link-color);
+}
+#interwiki .side-block div.menu-item a:hover {
+    color: var(--link-hover-color);
+    text-decoration: none;
+}
+#interwiki .side-block {
+    background: var(--sidebar-bg);
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+#interwiki .side-block .heading {
+    color: var(--header-color);
+    border: none;
+    position: relative;
+}
+#interwiki .side-block .heading::after {
+    content: "";
+    position: absolute;
+    bottom: -0.1rem;
+    height: 3px;
+    left: 0;
+    right: 0;
+    background: -o-linear-gradient(20deg, var(--main-blue), var(--main-green));
+    background: linear-gradient(70deg, var(--main-blue), var(--main-green));
+}
+#interwiki .side-block .heading p:after {
+    content: "\f107";
+    width: 1rem;
+    margin-right: -0.2rem;
+    float: right;
+    font-family: FontAwesome;
+    text-align: center;
+}
+#interwiki .side-block .menu-item:hover {
+    background: var(--main-bg);
+    -webkit-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+}
+#interwiki .side-block .menu-item img {
+    opacity: 0;
+}
+[[/code]]
+[[/collapsible]]
+[[/iftags]]
+
+[[div_ style="display:none;"]]
+[[include :scp-jp:component:interwiki-style
+|priority=1
+|theme=https://scp-jp.wdfiles.com/local--code/theme%3Adarkcode/1
+]]
+[[include :scp-jp:component:interwiki-style
+|priority=2
+|theme=https://scp-jp.wdfiles.com/local--code/theme%3Adarkcode/2
+]]
+[[/div]]

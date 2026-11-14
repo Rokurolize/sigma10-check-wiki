@@ -1,0 +1,929 @@
+[[iftags]]
+[[code type="CSS"]]
+/* 共異廻歴CSSテーマ by Hasuma_S, k-cal based on 青鈍色の空CSSテーマ by KanKan (https://scp-jp-sandbox3.wikidot.com/draft:2859452-141-94c5), based on AAPA New CSS Theme by NatVoltaic and stormbreath (Edited for SCP財団 by SCP-JP Technical Staff(Dr Devan)), based on code by Cyantreuse and InitHello */
+
+/* Licensed as CC-BY-SA-3.0 */
+
+/* Header image is CC0 Public Domain, having been taken by https://pxhere.com/en/photo/241 */
+
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+1p:400,800');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
+/*memo*/
+
+/*共異廻歴に必須なので同梱しています。[[div class="page"]][[/div]]で使えます。*/
+
+.page {
+  display: block;
+  overflow: hidden;
+  font-family: "MS Pゴシック";
+  font-style: normal;
+  background-attachment: scroll;
+  background-clip: padding-box;
+  background-color: transparent;
+  background-image: linear-gradient(to top, rgb(181, 175, 154) 0%, rgb(242, 237, 225) 8%);
+  background-origin: padding-box;
+  background-position: 0px 8px;
+  background-repeat: repeat;
+  background-size: 100% 20px;
+  border: 2px double #CCC;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2)
+}
+.page p {
+  line-height: 20px;
+  margin: 0;
+}
+/* COLOR ROOT */
+
+:root {
+  --1-color: #000000;
+  --2-color: #fffcf9;
+  --3-color: #fff;
+  --4-color: #ccc;
+  --5-color: #cfc9c0;
+  --6-color: #ffdbab;
+  --7-color: #b39476;
+  --8-color: #edd4be;
+}
+/* HEADER */
+
+div#extra-div-1 {
+  height: 140px;
+  width: 100%;
+  top: 0;
+  position: absolute;
+  background: url(" https://scp-jp-storage.wikidot.com/local--files/file:3383689-7-mv5g/sunrise.jpg")/*var(--2-color)*/
+  ;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+/* SPACE */
+
+div#container-wrap {
+  background-image: none;
+}
+div#extra-div-2 {
+  height: 22px;
+  width: 100%;
+  top: 140px;
+  position: absolute;
+  background: var(--1-color);
+}
+/* Red-top bar */
+
+#header {
+  background: url("https://scp-jp-storage.wikidot.com/local--files/file:3383689-6-ysah/logo.png") 15px 40px no-repeat;
+  background-size: 6rem;
+}
+@media (max-width: 580px) and (min-width: 480px) {
+  #header {
+    background-position: 0.5em 4.5em;
+    background-size: 66px/*66px*/
+    ;
+  }
+}
+@media (max-width: 479px) {
+  #header {
+    background-position: 0 5.5em;
+    background-size: 55px/*55px*/
+    ;
+  }
+}
+#header h1 a::before {
+  content: "共異廻歴";
+  font-size: 80%;
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 800;
+  /*text-shadow: 4px 4px 4px rgba(0,0,0,.8);*/
+}
+#header h1 a span {
+  display: block;
+  visibility: hidden;
+}
+#header h2 span {
+  display: block;
+  margin: 0;
+  margin-left: 0px;
+  padding: 19px 0;
+  font-weight: bold;
+  color: transparent;
+  text-shadow: 0px 0px 0px;
+}
+#header h2 span::before {
+  content: " ";
+  color: var(--3-color);
+  font-family: 'Noto Sans JP', serif;
+  font-weight: 700;
+  font-size: 120%;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, .9);
+}
+/* Log-In Info */
+
+#login-status {
+  color: var(--1-color);
+}
+#login-status a {
+  background: transparent;
+  color: var(--1-color);
+}
+#login-status ul a {
+  color: var(--1-color);
+  background: var(--2-color);
+  border-color: var(--1-color);
+}
+#login-status ul a:hover {
+  color: var(--1-color);
+  font-weight: bold;
+}
+#account-topbutton {
+  background: transparent;
+  color: var(--1-color);
+  border: none;
+}
+#account-options {
+  border: 1px solid var(--1-color);
+}
+/* Search Bar */
+
+#search-top-box-input, #search-top-box-input:hover, #search-top-box-input:focus {
+  border: solid 1px var(--1-color);
+  background-color: var(--2-color);
+}
+#search-top-box-input {
+  color: var(--1-color) !important;
+}
+#search-top-box-input:hover, #search-top-box-input:focus {
+  color: var(--1-color) !important;
+}
+#search-top-box-form input[type=submit], #search-top-box-form input[type=submit]:hover, #search-top-box-form input[type=submit]:focus {
+  border: solid 1px var(--1-color);
+  background: var(--2-color);
+  color: var(--1-color);
+}
+/* TITLE */
+
+#page-title {
+  color: var(--1-color);
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 900;
+}
+#page-title {
+  border-color: var(--1-color);
+}
+/* TOP-BAR SETTINGS */
+
+#top-bar a {
+  color: var(--3-color)
+}
+#top-bar ul li ul {
+  border: solid 1px var(--1-color);
+  border-radius: 0px 0px 10px 10px;
+  overflow: hidden;
+}
+#top-bar ul li.sfhover ul li a, #top-bar ul li:hover ul li a {
+  border-top-color: var(--1-color);
+}
+#top-bar ul li.sfhover a, #top-bar ul li:hover a {
+  background: var(--1-color);
+  color: var(--3-color);
+}
+#top-bar ul li.sfhover a:hover, #top-bar ul li:hover a:hover {
+  background: var(--2-color);
+  /* top bar hover background color */
+  color: var(--1-color);
+}
+/* SIDEBAR SETTINGS */
+
+#side-bar .side-block {
+  border: 1px solid var(--1-color);
+  box-shadow: none;
+  background-color: var(--2-color);
+  border-radius: 0;
+  color: var(--1-color);
+}
+#side-bar .side-block[style="background-color: #a7dba2;"] {
+  background-color: var(--2-color) !important;
+}
+#side-bar .side-block[style="background-color: #fff0f0;"] {
+  background-color: var(--2-color) !important;
+}
+#side-bar .side-block[style="background-color: #e5e5ff;"] {
+  background-color: var(--2-color) !important;
+}
+#side-bar .side-block[style="background-color: #f0f0f0;"] {
+  background-color: var(--2-color) !important;
+}
+#side-bar .heading {
+  border-bottom: 1px solid var(--1-color);
+  color: var(--1-color);
+}
+/* Side-Bar Images */
+
+.side-block .menu-item>.image {
+  filter: hue-rotate(60deg) brightness(400%);
+}
+/* Mobile Sidebar */
+
+@media (max-width: 767px) {
+  #side-bar {
+    background-color: var(--2-color)
+  }
+  .open-menu a {
+    border: 0.2em solid var(--1-color) !important;
+    background-color: var(--2-color) !important;
+    color: var(--1-color) !important;
+  }
+}
+/* BODY */
+
+body {
+  background-color: var(--2-color);
+  color: var(--1-color);
+}
+/* FOOTER */
+
+#footer {
+  background: var(--2-color);
+  color: var(--1-color);
+}
+#footer a {
+  color: var(--4-color);
+}
+#license-area {
+  color: var(--1-color);
+}
+/* OTHER STRUCTURAL ELEMENTS */
+
+/* Links */
+
+a {
+  color: var(--7-color);
+}
+a.newpage {
+  color: var(--7-color);
+}
+#side-bar a:visited {
+  color: var(--7-color);
+}
+a:visited {
+  color: var(--7-color);
+}
+/* Footnotes */
+
+.hovertip {
+  background-color: var(--6-color) !important;
+  border: 1px solid var(--1-color) !important;
+}
+.footnotes-footer .title {
+  color: var(--1-color);
+}
+/* Scrollbar */
+
+::-webkit-scrollbar-thumb {
+  background: var(--2-color);
+}
+/* Pop-Up Windows */
+
+.owindow {
+  background-color: var(--2-color);
+  border: 1px solid var(--1-color);
+}
+.owindow .modal-header {
+  background-color: var(--2-color);
+}
+.owindow .modal-body img {
+  background-color: transparent !important;
+}
+.owindow .button-bar a {
+  background-color: var(--2-color);
+  border: 1px solid var(--1-color);
+}
+.owindow .button-bar a:hover {
+  background-color: #26152e;
+}
+/* Edit Buttons */
+
+.buttons .btn {
+  background-color: var(--2-color);
+  border: 1px solid var(--1-color);
+  color: var(--1-color);
+  padding: 3px 5px;
+}
+.buttons .btn:hover {
+  background-color: #333333;
+  color: var(--1-color);
+}
+/* Edit Lock Info*/
+
+#lock-info {
+  background-color: var(--2-color);
+  border: 1px solid var(--1-color);
+}
+/* Code */
+
+.code {
+  border: 1px dashed #9400D3;
+  background-color: #FFF5EE;
+}
+/* code highlighter stuff */
+
+.hl-identifier, .hl-code, .hl-brackets {
+  color: var(--1-color);
+}
+.hl-var {
+  color: #21ff00;
+}
+.hl-special {
+  color: #ffff00;
+}
+.hl-reserved {
+  color: #00b2ff;
+}
+.hl-number, .hl-string {
+  color: #ff0020;
+}
+del {
+  color: var(--1-color);
+}
+ins {
+  color: var(--1-color);
+}
+/* RATING AND INFO MODULES */
+
+.page-rate-widget-box {
+  box-shadow: 0px 0px 0px 2px var(--1-color);
+  background-color: var(--2-color);
+  padding: .1em;
+  display: inline-flex;
+  align-items: center;
+}
+.page-rate-widget-box .rate-points {
+  background-color: var(--2-color) !important;
+  border: none;
+  color: var(--1-color) !important;
+  text-transform: capitalize;
+}
+.page-rate-widget-box .rateup, .page-rate-widget-box .ratedown {
+  background-color: var(--2-color);
+  border-top: none;
+  border-bottom: none;
+}
+.page-rate-widget-box .rateup a, .page-rate-widget-box .ratedown a {
+  background: transparent;
+  color: var(--1-color);
+}
+.page-rate-widget-box .rateup a:hover, .page-rate-widget-box .ratedown a:hover {
+  background: var(--1-color);
+  color: var(--2-color);
+}
+.page-rate-widget-box .cancel {
+  background: transparent;
+  background-color: var(--2-color);
+  border: none;
+}
+.page-rate-widget-box .cancel a {
+  color: var(--1-color);
+}
+.page-rate-widget-box .cancel a:hover {
+  background: var(--1-color);
+  color: var(--2-color);
+}
+/* Credit Module */
+
+#page-content .creditRate {
+  margin: 0 0 10px 0;
+}
+#page-content .rate-box-with-credit-button .creditButton {
+  border-color: var(--1-color);
+  border-width: 1px;
+  height: 18px;
+  box-shadow: 0px 0px 0px 1px var(--1-color);
+  background-color: var(--2-color);
+  padding: .1em;
+}
+#page-content .rate-box-with-credit-button .creditButton p a {
+  border-left-color: var(--1-color);
+}
+#page-content .rate-box-with-credit-button .page-rate-widget-box .cancel {
+  border-radius: 0;
+  background-color: var(--2-color);
+}
+#page-content .rate-box-with-credit-button .page-rate-widget-box .cancel a {
+  color: var(--1-color);
+}
+#page-content .rate-box-with-credit-button .page-rate-widget-box .cancel a:hover {
+  background: var(--1-color);
+  color: var(--2-color);
+}
+#page-content  .page-rate-widget-box .rate-points {
+  border: unset;
+}
+#page-content .rate-box-with-credit-button .fa-info {
+  border-color: var(--1-color);
+  color: var(--1-color);
+}
+#page-content .rate-box-with-credit-button .fa-info:hover {
+  color: var(--7-color);
+}
+#page-content .modalbox {
+  background-color: var(--2-color) !important;
+  color: var(--1-color);
+  box-shadow: 0px 0px 0px 2px var(--1-color);
+}
+#page-content .modalbox .modalbox-title {
+  background-color: var(--2-color);
+}
+#page-content .modalbox .creditBottomRate .cancel {
+  background-color: var(--2-color);
+}
+#page-content .modalbox .creditBottomRate .cancel a {
+  color: var(--1-color);
+}
+#page-content .modalbox .creditBottomRate .cancel a:hover {
+  background-color: var(--1-color);
+  color: var(--2-color);
+}
+.close-credits, .credit-back {
+  filter: hue-rotate(60deg) brightness(400%);
+}
+.credit-license a.cc {
+  color: #fff;
+}
+/* Ayer's Info Module */
+
+:root {
+  --barColour: var(--2-color);
+  --linkColour: var(--1-color);
+}
+.info-container .collapsible-block-unfolded {
+  border-color: var(--1-color);
+}
+/* PAGE ELEMENTS */
+
+blockquote {
+  margin: 1em 0;
+  border: 1px solid var(--7-color);
+  background-color: var(--8-color);
+}
+.scp-image-block {
+  border-color: var(--1-color);
+}
+.scp-image-block .scp-image-caption {
+  background-color: var(--2-color);
+  border-color: var(--1-color);
+}
+.wiki-content-table tr th {
+  background: var(--2-color);
+  color: var(--1-color);
+  border-color: var(--1-color);
+}
+h1, h2, h3, h4, h5, h6 {
+  color: var(--1-color);
+  font-family: 'Noto Serif JP', serif;
+}
+strong {
+  color: var(--1-color);
+}
+hr {
+  background-color: var(--1-color);
+}
+/* TABVIEW - ここから入らんとする者はすべて希望を捨てよ */
+
+.yui-navset * {
+  -webkit-transition: background-color 80ms cubic-bezier(0.4, 0.0, 0.2, 1), color 80ms cubic-bezier(0.4, 0.0, 0.2, 1);
+  -o-transition: background-color 80ms cubic-bezier(0.4, 0.0, 0.2, 1), color 80ms cubic-bezier(0.4, 0.0, 0.2, 1);
+  transition: background-color 80ms cubic-bezier(0.4, 0.0, 0.2, 1), color 80ms cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+.yui-navset .yui-nav, .yui-navset .yui-navset-top .yui-nav {
+  zoom: unset;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  border-color: var(--1-color);
+  width: -webkit-calc(100% - 0.125rem);
+  width: calc(100% - 0.125rem);
+  margin: 0 auto;
+  border: 0;
+  -webkit-box-shadow: 0 -webkit-calc(0.0625rem * 5) 0 0 var(--1-color);
+  box-shadow: 0 calc(0.0625rem * 5) 0 0 var(--1-color);
+}
+.yui-navset .yui-nav a, .yui-navset .yui-navset-top .yui-nav a {
+  zoom: unset;
+  background-image: none;
+  background: var(--1-color);
+  border: unset;
+  color: var(--5-color);
+  font-weight: bold;
+}
+.yui-navset .yui-nav a:hover, .yui-navset .yui-nav a:focus {
+  zoom: unset;
+  background-image: none;
+  background: var(--2-color);
+  font-weight: bold;
+}
+.yui-navset .yui-nav li, .yui-navset .yui-navset-top .yui-nav li {
+  background: var(--1-color);
+  border-color: transparent;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  zoom: unset;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-flex-basis: 7vw;
+  -ms-flex-preferred-size: 7vw;
+  flex-basis: 7vw;
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -moz-box-flex: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+  -webkit-box-shadow: 0 0 0 0.0625rem var(--1-color);
+  box-shadow: 0 0 0 0.0625rem var(--1-color);
+}
+.yui-navset .yui-nav li a, .yui-navset-top .yui-nav li a, .yui-navset-bottom .yui-nav li a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  vertical-align: bottom;
+  zoom: unset;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.yui-navset .yui-nav a em, .yui-navset .yui-navset-top .yui-nav a em {
+  padding: 0.35em 0.75em;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.yui-navset .yui-nav li em {
+  /* Undoes border set by wikidot's default layout */
+  border: unset !important;
+}
+/* Selected Tab */
+
+.yui-navset .yui-nav .selected, .yui-navset .yui-navset-top .yui-nav .selected, .yui-navset .yui-nav .selected:hover, .yui-navset .yui-navset-top .yui-nav .selected:hover {
+  padding: 0;
+  margin: 0;
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -moz-box-flex: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+  color: var(--5-color);
+  background-image: none;
+}
+.yui-navset .yui-nav .selected a, .yui-navset .yui-nav .selected a em {
+  border: none !important;
+  border-color: transparent;
+  color: var(--1-color);
+}
+.yui-navset .yui-nav .selected a {
+  /* Undoes a color set by wikidot's default layout */
+  color: rgb(252, 252, 252) !important;
+  width: 100%;
+  background-image: none;
+}
+.yui-navset .yui-content {
+  background-color: var(--2-color);
+  /* content background color */
+}
+.yui-navset .yui-content, .yui-navset .yui-navset-top .yui-content {
+  border-color: var(--1-color);
+  /* content border */
+}
+.yui-navset-left .yui-content {
+  border-left-color: var(--1-color);
+  /* different border color */
+}
+.yui-navset .yui-nav .selected a, .yui-navset .yui-nav .selected a:focus, .yui-navset .yui-nav .selected a:hover {
+  background-image: none;
+  background-color: var(--2-color);
+  color: var(--5-color);
+  cursor: default;
+  margin-bottom: -2px;
+  font-weight: bold;
+}
+/*Trophy*/
+
+div[class*="award"]+.creditRate .creditButton .fa.fa-info:before {
+  color: var(--1-color) !important;
+}
+/* code */
+
+.code {
+  border: 1px dashed var(--fg);
+  background-color: transparent;
+  font-size: 1em;
+}
+/* link to next */
+
+.earthworm {
+  --nav-color: #fffcf9;
+  --thickness: 1px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0;
+  clear: both;
+}
+.earthworm div {
+  display: inline-flex;
+  align-items: center;
+}
+.earthworm p {
+  margin: 0 1em;
+  text-align: center;
+}
+.earthworm div:nth-child(1) {
+  height: 30px;
+  /* border-top: var(--thickness) var(--nav-color) solid;
+  border-bottom: var(--thickness) var(--nav-color) solid;*/
+  background-color: #f2ede1;
+  position: relative;
+}
+.earthworm div:nth-child(1):not(.true)::before {
+  content: "";
+  position: absolute;
+  border: 17px solid transparent;
+  border-right: 25px solid #b39476;
+  left: -44px;
+  top: -2px;
+  z-index: 6;
+}
+.earthworm div:nth-child(1):not(.true)::after {
+  content: "";
+  position: absolute;
+  border: 15px solid transparent;
+  border-right: 15px solid #f2ede1;
+  left: -32px;
+  top: 0px;
+  z-index: 7;
+}
+.earthworm div:nth-child(2) {
+  height: 30px;
+  border-left: 1px var(--nav-color) solid;
+  border-right: 1px var(--nav-color) solid;
+  background: linear-gradient(to top right, #f2ede1, #f2ede1)
+}
+.earthworm div:nth-child(2).no a, .earthworm a[href="/"] {
+  color: #b39476;
+  text-decoration: none;
+  cursor: text;
+  pointer-events: none;
+}
+.earthworm div:nth-child(3) {
+  height: 30px;
+  line-height: 30px;
+  /* border-top: var(--thickness) var(--nav-color) solid;
+  border-bottom: var(--thickness) var(--nav-color) solid; */
+  background-color: #f2ede1;
+  position: relative;
+}
+.earthworm div:nth-child(3):not(.true)::before {
+  content: "";
+  position: absolute;
+  border: 17px solid transparent;
+  border-left: 25px solid #b39476;
+  right: -44px;
+  top: -2px;
+  z-index: 6;
+}
+.earthworm div:nth-child(3):not(.true)::after {
+  content: "";
+  position: absolute;
+  border: 15px solid transparent;
+  border-left: 15px solid #f2ede1;
+  right: -32px;
+  top: 0;
+  z-index: 7;
+}
+.earthworm div.true {
+  width: 1px;
+}
+.earthworm div.true p {
+  display: none;
+}
+.earthworm a {
+  word-break: normal;
+}
+/*  */
+
+#interwiki .side-block, #side-bar .side-block {
+  border: 1px solid #000000;
+  box-shadow: none;
+  background-color: #fffcf9;
+  border-radius: 0;
+  color: #000000;
+}
+#interwiki .heading p {
+  color: #000000;
+}
+#interwiki div.menu-item a, #interwiki div.menu-item a:visited {
+  color: #b39476
+}
+#interwiki .menu-item img {
+  filter: hue-rotate(60deg) brightness(400%);
+}
+[[/code]]
+[[/iftags]]
+
+[[module CSS]]
+@import url('https://scp-jp.wdfiles.com/local--code/theme:kyouikaireki/1');
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+|priority=1
+|theme=https://scp-jp.wdfiles.com/local--code/theme:kyouikaireki/1
+]]
+
+
+[[iftags +テーマ]]
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** 共異廻歴テーマ
+**作成者:** © [[*user Hasuma_S]] [[*user k-cal]]
+**作成年:** 2020
+> このテーマは以下のテーマをもとに作成されました。
+>
+> **テーマ名:** 青鈍色の空CSSテーマ
+> **作成者:** KanKan
+> **作成年:** 2020
+> **ライセンス:** CC BY-SA 3.0
+> **ソース:** https://scp-jp-sandbox3.wikidot.com/draft:2859452-141-94c5
+
+[[include :scp-jp:credit:end-preview]]
+
+
+分割線は5個のハイフン（@@-----@@）で作ることができ、何かの中でない限り（例えば引用符）ページ全体に展開されます。この文章を区切る線が分割線です。
+
+-----
+
+タイトルは行の先頭に1から6個のプラス（+）を置くことで作れます。
+
+[[collapsible show="+ 折り畳みリンク" hide="- 展開すると..."]]
++ First Title
+
+++ Second Title
+
++++ Third Title
+
+++++ Fourth Title
+
++++++ Fifth Title
+
+++++++ Sixth Title
+[[/collapsible]]
+
+@@ @@
+
+[[tabview]]
+[[tab Tabulator]]
+これはタブです。
+[[/tab]]
+[[tab Tabulation]]
+おや見てください、ここにも文章が。
+
+奇妙なり。
+[[/tab]]
+[[tab Long Tab]]
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+[[/tab]]
+[[tab この空のタブは何故かとても長い名前です。何故だろう？とても奇妙ですね。]]
+[[/tab]]
+[[tab Empty Tab]]
+[[/tab]]
+[[tab Empty Tab]]
+[[/tab]]
+[[tab Empty Tab]]
+[[/tab]]
+[[tab Empty Tab]]
+[[/tab]]
+[[tab Empty Tab]]
+[[/tab]]
+[[/tabview]]
+
+> これは引用符です。各行の先頭に大なり記号と半角スペース（> ）を置くことで作れます。
+>
+> たくさんの文章
+> -----
+> 分割線
+>
+>> ネストした引用符
+||~ これは ||~ テーブルです ||
+||もう既に || 作り方は ||
+||||知っていますね ||
+
+[# リンク]
+[[a class="newpage"]]存在しないリンク[[/a]]
+
+
+
+[[div class="page"]]
+@@[[div class="page"]]@@
+@@[[/div]]@@
+[[/div]]
+
+@@@@
+@@@@
+続き物の場合、以下のコードを貼り付けることで前の話へと次の話へのリンクを表示することができます。falseをtrueにすると、その部分は表示されなくなります。
+
+[[div class="earthworm"]]
+[[div class="false"]]
+  [https://scp-jp.wikidot.com/kyouikaireki-hub 前のお話]
+[[/div]]
+[[div class="yes"]]
+  [https://scp-jp.wikidot.com/kyouikaireki-hub 共異廻歴]
+[[/div]]
+[[div class="false"]]
+  [https://scp-jp.wikidot.com/kyouikaireki-hub 次のお話]
+[[/div]]
+[[/div]]
+
+
+
+[[div class="code"]]
+
+@@[[div class="earthworm"]]@@
+@@[[div class="false"]]@@
+@@  [前の話のURL タイトル]@@
+@@[[/div]]@@
+@@[[div class="yes"]]@@
+@@  [https://scp-jp.wikidot.com/kyouikaireki-hub 共異廻歴]@@
+@@[[/div]]@@
+@@[[div class="false"]]@@
+@@  [次の話のURL タイトル]@@
+@@[[/div]]@@
+@@[[/div]]@@
+
+[[/div]]
+
+ヘッダーライセンス
+> **画像ページ:** https://scp-jp-storage.wikidot.com/file:3383689-7-mv5g
+> **ソース:** https://unsplash.com/es/fotos/2UbJtgQp8VQ
+> **ライセンス:** CC0 Public Domain
+> **公開年:** 2014
+> **タイトル:** beach_cloud_sunset_people_coastline-241
+> **補足:** 反転してトリミングしたものです
+
+ロゴライセンス
+
+> **ライセンス:** CC BY-SA 3.0
+>
+> **タイトル:** 共異廻歴ロゴ
+> **著作権者:** Aelanna, Hasuma_S
+> **ソース:** https://scp-jp-storage.wikidot.com/file:3383689-6-ysah
+> **公開年:** 2020
+> **補足:** この画像は以下の画像をもとに作成されました。
+>> **ソース:** https://scp-wiki.wikidot.com/dr-mackenzie-s-sketchbook
+>> **ライセンス:** CC BY-SA 3.0
+>>
+>> **タイトル:** SCP-Logo
+>> **著作権者:** Aelanna
+
+[[/iftags]]

@@ -1,0 +1,1001 @@
+[[iftags +テーマ]]
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** 神世継テーマ
+**著者:** ©︎[[*user MikuKaneko]]
+**作成年:** 2023
+[[include :scp-jp:credit:end-preview]]
+
+@@@@
+@@@@
+@@@@
+
+これは、[[[kamiyotsugi-hub|神世継]]]に属する作品のためのテーマです。使用するには、以下のコードを記事の最上部に挿入してください。
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:kamiyotugi]]@@
+[[/div]]
+
+また、記事に上のようなロゴを表示するには、代わりに以下のコードを使用してください。
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:kamiyotugi@@
+@@|logo-url="ロゴ画像のURL" (ダブルクオーテーションも必要)@@
+@@]]@@
+[[/div]]
+
++ 例
+
+[[include :scp-jp:component:image-block
+|name=https://scp-jp-storage.wdfiles.com/local--files/file%3A7069044-164-tu4o/kmytg.svg
+|caption=神世継ロゴ。
+|width=200px
+|clear=true
+]]
+
+[[toc]]
+
+[# リンク] [[a class="newpage"]]存在しないリンク[[/a]]
+
+罫線は、5つのハイフン「@@-----@@」を使用して作成でき、何かの内側(例: ブロック引用)に配置されていなければページ全体に適用されます。このドキュメントのセクションを区切る線は罫線です。
+
+-----
+
+見出しは、行の先頭に1～6文字の「+」を置くことで作成できます。
+
+[[collapsible show="+ 見出し" hide="- 見出し"]]
++* 1番目の見出し
+
+++* 2番目の見出し
+
++++* 3番目の見出し
+
+++++* 4番目の見出し
+
++++++* 5番目の見出し
+
+++++++* 6番目の見出し
+[[/collapsible]]
+
+[[tabview]]
+[[tab タブを作る]]
+これはタブです。[[footnote]]そしてこれは脚注です。[[/footnote]]
+
+[[/tab]]
+[[tab タブが作られた]]
+見てください、ここにもテキストがあります。
+
+なんと奇妙な。
+
+そしてこれは[[span class="ruby"]]ルビ[[span class="rt"]]振り仮名[[/span]][[/span]]です。
+[[/tab]]
+[[tab 長いタブ]]
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[/tabview]]
+
+> これは引用ブロックです。各行の先頭に半角の「> 」を置くことで作成されます。
+>
+> 追加のテキスト
+> -----
+> これは罫線です
+>
+>> 入れ子になった引用ブロック
+
+[[note]]
+これはメモブロックです。
+[[/note]]
+
+||~ これは ||~ テーブルです ||
+||もう || 作り方は ||
+||||知っているはずです ||
+
+[[collapsible show="+ テーマコードを表示" hide="- 最小化"]]
+[[code type="CSS"]]
+/*
+    Kamiyotugi Theme
+    [2023 Wikidot Theme]
+    Created by MikuKaneko
+    Designed by kihaku 
+    Licensed under the CC-BY SA 3.0
+*/
+
+body {
+    background-color: #efefef;
+    color: #000;
+    font-family: "Playfair Display","Noto Serif JP", serif;
+    font-feature-settings: "palt" 1;
+    font-size: 1rem;
+    -webkit-text-size-adjust: 100%;
+    overflow: hidden auto;
+}
+
+::-webkit-scrollbar {
+    border: none;
+    height: .5rem;
+    width: .5rem;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #771d1c;
+}
+::-webkit-scrollbar-track {
+    background-color: #e7e7e7;
+}
+
+h1 {
+    color: #771d1c;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea {
+    font-family: inherit;
+}
+p {
+    line-height: inherit;
+    margin: 1.5rem 0;
+}
+a {
+    color: #771d1c;
+}
+a.newpage {
+    color: #78421c;
+}
+hr {
+    background-color: transparent;
+    background-image: radial-gradient(#771d1c, #f0f0f0);
+    margin: 1rem 0;
+}
+
+div#container-wrap {
+    background: none;
+}
+
+#header {
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background-color: #771d1ccc;
+    background-image: none;
+    box-shadow: 0px 1px #5f1716,
+    	inset 0px 1px #5f1716,
+    	0px 0px 8px 2px #461414cc;
+    height: 4.5rem;
+    left: 0;
+    max-width: unset;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+#header h1 {
+    height: inherit;
+    margin: 0 1rem;
+    max-height: unset;
+}
+#header h1 a {
+    align-items: center;
+    color: #ffffffb3;
+    display: flex;
+    font-family: inherit;
+    font-size: 1.75rem;
+    font-weight: 500;
+    gap: .5rem;
+    height: inherit;
+    letter-spacing: normal;
+    line-height: 1;
+    max-height: unset;
+    padding: 0;
+    text-shadow: none;
+}
+#header h1 a::before {
+    background-image: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A7069044-366-2hnw/kmy_white_logo");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    display: block;
+    height: 2.5rem;
+    opacity: .7;
+    width: 2rem;
+}
+#header h1 a::after {
+    content: "神世継";
+}
+#header :is(h1 a span, h2, #search-top-box, #my-account) {
+    display: none;
+}
+#top-bar {
+    font-size: inherit;
+    height: 4.5rem;
+    line-height: 1;
+    position: absolute;
+    right: 6rem;
+    top: 0;
+    width: auto;
+}
+#top-bar .top-bar {
+    display: none;
+}
+#top-bar .mobile-top-bar {
+    display: block;
+    height: inherit;
+    position: static;
+    max-width: unset;
+}
+.open-menu p {
+    margin: 0;
+}
+.open-menu a {
+    background: none !important;
+    border: none !important;
+    bottom: unset;
+    display: block;
+    font-size: 0;
+    height: 1.5rem;
+    left: unset;
+    position: fixed;
+    right: 1rem;
+    top: 1.5rem;
+    width: 1.5rem;
+}
+.open-menu a:hover {
+    box-shadow: none;
+}
+#top-bar .mobile-top-bar > ul {
+    height: inherit;
+}
+#top-bar .mobile-top-bar > ul > li {
+    height: inherit;
+}
+#top-bar .mobile-top-bar > ul > li > a {
+    border: none;
+    color: #ffffffb3;
+    font-size: clamp(.75rem, 2.5vw, 1rem);
+    height: inherit;
+    line-height: 4.5rem;
+    max-height: unset;
+    padding: 0 .1rem;
+    transition: background-color .1s ease-in-out,
+    	color .1s ease-in-out;
+}
+#top-bar .mobile-top-bar > ul > li > a:hover,
+#top-bar .mobile-top-bar > ul > li:is(.sfhover, :hover) > a,
+#top-bar .mobile-top-bar > ul > li:is(.sfhover, :hover) > a:hover {
+    background-color: #ffffff1a;
+    color: #fff;
+    text-decoration: none;
+}
+#top-bar .mobile-top-bar > ul > li > ul {
+    background-color: #efefefee;
+    border: solid 1px #676767ee;
+    border-top: none;
+    box-shadow: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: max-content;
+}
+#top-bar .mobile-top-bar > ul > li > ul {
+    right: 0;
+}
+#top-bar .mobile-top-bar > ul > li > ul > li {
+    width: 100%;
+}
+#top-bar .mobile-top-bar > ul > li > ul > li > a {
+    background: none;
+    border-top: solid 1px #676767ee;
+    box-sizing: border-box;
+    line-height: 2.5;
+    padding: 0 .5rem;
+    transition: background-color .1s ease-in-out;
+    width: 100%;
+}
+#top-bar .mobile-top-bar > ul > li > ul > li:nth-of-type(even) > a {
+    border-left: solid 1px #676767ee;
+}
+#top-bar .mobile-top-bar > ul > li > ul > a:hover,
+#top-bar .mobile-top-bar > ul > li > ul > li:is(.sfhover, :hover) > a,
+#top-bar .mobile-top-bar > ul > li > ul > li:is(.sfhover, :hover) > a:hover {
+    background-color: #fffd;
+}
+#login-status {
+    color: #ffffffb3;
+    font-size: 0;
+    right: 3rem;
+    top: 1.5rem;
+}
+#login-status > *:first-child {
+    margin: 0 .25rem 0 0;
+}
+#login-status a {
+    color: #ffffffb3;
+}
+#login-status .printuser {
+    font-size: 0;
+}
+#login-status .printuser a {
+    font-size: 1.5rem;
+    margin: 0;
+}
+#login-status .printuser img.small {
+    background: none !important;
+    height: 1.5rem;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    width: 1.5rem;
+}
+#login-status :is(.login-status-create-account, .login-status-sign-in)::before {
+    font-family: "FontAwesome";
+    font-size: 1.5rem;
+    line-height: 1;
+    vertical-align: bottom;
+}
+#login-status .login-status-create-account + span {
+    display: none;
+}
+#login-status .login-status-create-account::before {
+    content: "\f067";
+}
+#login-status .login-status-sign-in::before {
+    content: "\f090";
+}
+#account-topbutton {
+    border: none;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+a[href="https://www.wikidot.com/account/messages"] {
+    display: none;
+}
+a[href="https://www.wikidot.com/account/messages"] + #account-topbutton {
+    font-size: 0;
+}
+a[href="https://www.wikidot.com/account/messages"] + #account-topbutton::before {
+    content: "\f0f3";
+    font-family: "FontAwesome";
+    font-size: 1.25rem;
+}
+#account-options {
+    font-size: 1rem;
+}
+
+#content-wrap {
+    margin: 5rem auto 0;
+    max-width: 60rem;
+    min-height: unset;
+    width: 100%;
+}
+
+#side-bar {
+    background: none;
+    box-sizing: border-box;
+    color: #fff;
+    height: calc(100% - 4.5rem);
+    left: -100%;
+    margin: 0;
+    overflow: hidden auto;
+    padding: 0;
+    position: fixed;
+    top: 4.5rem;
+    transition: left .3s ease-in-out;
+    width: 100%;
+    z-index: 10;
+}
+#side-bar:target {
+    border: none;
+    left: 0;
+    width: 100%;
+}
+#side-bar::-webkit-scrollbar-thumb {
+    background-color: #0000006b;
+}
+#side-bar::-webkit-scrollbar-track {
+    background-color: #771d1ccc;
+}
+#side-bar:target .close-menu {
+    background: none;
+    color: inherit;
+    height: 1.5rem;
+    left: unset;
+    display: block;
+    position: fixed;
+    right: 1rem;
+    top: 1.5rem;
+    width: 1.5rem;
+    z-index: 15;
+}
+#side-bar .side-block {
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background-color: #771d1ccc !important;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+}
+#side-bar .side-block > * {
+    margin: 0 1rem;
+}
+#side-bar hr {
+    display: none;
+}
+#side-bar .side-block:not(.sns) :is(.heading, div.menu-item a, .collapsible-block-link, div[style="text-align: center;"]) {
+    border-top: solid 1px #d9d9d9;
+    color: inherit;
+    line-height: 3;
+    padding: 0 .5rem;
+    transition: background-color .1s ease-in-out;
+}
+#side-bar .side-block:not(.sns) :is(div.menu-item a, .collapsible-block-link):hover {
+    background-color: #ffffff1a;
+    text-decoration: none;
+}
+#side-bar .collapsible-block-folded {
+    background: none;
+}
+#side-bar .collapsible-block-link {
+    align-items: flex-end;
+    display: flex;
+    font-weight: 400;
+    margin: 0;
+    justify-content: space-between;
+}
+#side-bar .collapsible-block-link::after {
+    content: "\f078";
+    font-family: "FontAwesome";
+}
+#side-bar .collapsible-block-unfolded-link {
+    border: none;
+}
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link {
+    border-bottom: solid 1px #d9d9d9;
+    color: inherit;
+    font-size: inherit;
+    margin: 0;
+}
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link:hover {
+    color: inherit;
+}
+#side-bar .collapsible-block-content div.menu-item {
+    margin: 0 0 0 1rem;
+}
+#side-bar .heading {
+    border-bottom: solid 1px #d9d9d9;
+    font-size: inherit;
+    font-weight: 400;
+    margin: 0 1rem;
+}
+#side-bar div.menu-item {
+    font-size: 0;
+    margin: 0 1rem;
+}
+#side-bar .heading ~ div.menu-item {
+    margin: 0 1rem 0 2rem;
+}
+#side-bar .side-block:not(.sns) div.menu-item img {
+    display: none;
+}
+#side-bar div.menu-item a {
+    align-items: flex-end;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 400;
+    justify-content: space-between;
+}
+#side-bar  .side-block:not(.sns) div.menu-item a::after {
+    content: "\f054";
+    font-family: "FontAwesome";
+}
+#side-bar .side-block:first-of-type > .heading:first-of-type,
+#side-bar :is(.side-block:first-of-type, .collapsible-block-content) div.menu-item:first-of-type a:first-of-type,
+#side-bar .heading + div.menu-item a:first-of-type {
+    border-top: none;
+}
+#side-bar div.menu-item :is(br, .sub-text, span[style="white-space: pre-wrap;"]) {
+    display: none;
+}
+#side-bar  .side-block.sns div.menu-item div {
+    border-top: solid 1px #d9d9d9;
+}
+#side-bar  .side-block.sns div.menu-item img {
+    height: 2.5rem !important;
+    margin: 0;
+    padding: .25rem;
+    width: 2.5rem !important;
+}
+#side-bar  span[style="text-decoration: line-through;"] {
+    text-decoration: none !important;
+}
+#side-bar span[style="font-size:80%;"] {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    line-height: calc(3 / .8);
+}
+#side-bar span[style="font-size:80%;"] a {
+    color: inherit;
+}
+#side-bar .scpnet-interwiki-wrapper iframe.scpnet-interwiki-frame {
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background-color: #771d1ccc;
+    box-sizing: border-box;
+    margin: 0 !important;
+    max-width: 100%;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+#main-content {
+    line-height: 2;
+    margin: 0;
+    max-width: unset;
+    padding: 1rem 1.5rem;
+}
+#main-content::before {
+    background-color: #efefef;
+    background-image: url({$logo-url});
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 4rem;
+    content: {$logo-url};
+    display: block;
+    font-size: 0;
+    height: 8rem;
+    margin: 3rem auto;
+    width: 8rem;
+}
+
+#page-title {
+    align-items: center;
+    border: none;
+    color: #000;
+    display: flex;
+    font-family: inherit;
+    font-size: clamp(1.5rem, calc(10vw / 3 + .5rem), 2.5rem);
+    gap: .75em;
+    line-height: 1;
+    padding: 0;
+    margin: 1rem 0;
+}
+#page-title::before,
+#page-title::after {
+    background-color: #771d1ccc;
+    content: "";
+    display: block;
+    flex-grow: 1;
+    height: 1px;
+}
+
+#breadcrumbs {
+    font-size: 1rem;
+    margin: 0 0 1rem;
+}
+
+#page-content {
+    min-height: unset;
+}
+
+#main-content div.close-menu {
+    display: flex;
+    flex-direction: column;
+    height: 1.5rem;
+    justify-content: space-around;
+    pointer-events: none;
+    position: fixed;
+    right: 1rem;
+    top: 1.5rem;
+    width: 1.5rem;
+    z-index: 10;
+}
+#main-content div.close-menu::before,
+#main-content div.close-menu span,
+#main-content div.close-menu::after {
+    background-color: #ffffffb3;
+    content: "";
+    display: block;
+    height: 2px;
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    transition: transform .3s ease, opacity .3s ease;
+}
+#side-bar:target + #main-content div.close-menu::before {
+    -webkit-transform: translateY(calc(.375rem + 2px)) rotate(-45deg);
+    transform: translateY(calc(.375rem + 2px)) rotate(-45deg);
+}
+#side-bar:target + #main-content div.close-menu span {
+    opacity: 0;
+}
+#side-bar:target + #main-content div.close-menu::after {
+    -webkit-transform: translateY(calc(-.375rem - 2px)) rotate(45deg);
+    transform: translateY(calc(-.375rem - 2px)) rotate(45deg);
+}
+
+.logo-link {
+    border-radius: 4rem;
+    display: block;
+    height: 8rem;
+    left: 0;
+    margin: 3rem auto;
+    position: absolute;
+    right: 0;
+    top: 1rem;
+    width: 8rem;
+}
+
+:is(#page-content, #action-area) .page-rate-widget-box {
+    border-radius: 0;
+    box-shadow: none;
+}
+:is(#page-content, #action-area) div.page-rate-widget-box > span {
+    background: none;
+    border-color: #676767;
+    border-radius: 0;
+    color: #771d1c;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    height: 1.25rem;
+    line-height: 1.25;
+}
+:is(#page-content, #action-area) div.page-rate-widget-box > span > a {
+    align-items: center;
+    color: inherit;
+    display: flex;
+    font-family: inherit;
+    font-size: inherit;
+    height: 1.25rem;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    text-transform: lowercase;
+    width: 1.25rem;
+}
+:is(#page-content, #action-area) div.page-rate-widget-box > span > a:hover {
+    background: none;
+    border-radius: 0;
+    color: inherit;
+    font-weight: 700;
+}
+:is(#page-content, #action-area) div.page-rate-widget-box > span > a::before {
+    display: none;
+}
+:is(#page-content, #action-area) div.page-rate-widget-box > .rate-points {
+    font-size: .9rem;
+    line-height: calc(1 / .9);
+    padding: 0 .5rem;
+}
+:is(#page-content, #action-area) div.page-rate-widget-box > .cancel {
+    padding: 0;
+}
+:is(#page-content, #action-area) div.page-rate-widget-box > .cancel > a {
+    text-align: center;
+}
+
+#page-content .creditRate {
+    margin: .5rem 0;
+}
+#page-content .rate-box-with-credit-button {
+    border-radius: 0;
+    height: 1.25rem;
+    min-width: unset;
+}
+#page-content .rate-box-with-credit-button .creditButton {
+    background: none;
+    border-color: #676767;
+    border-radius: 0;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: #771d1c;
+    height: 1.25rem;
+    margin: 0 0 0 .5rem;
+    width: 1.25rem;
+}
+#page-content .creditButton a {
+    color: inherit;
+    font-family: inherit;
+    font-size: 1rem;
+    width: inherit;
+}
+#page-content .creditButton a:hover {
+    font-weight: 700;
+}
+#page-content .creditButton a::before {
+    content: "i";
+}
+
+#page-content .fader {
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background-color: #0009;
+}
+#page-content .modalcontainer {
+    height: fit-content;
+    max-width: 40rem !important;
+    min-height: 10rem;
+    min-width: min(30rem, 100%);
+    width: fit-content;
+}
+#page-content .modalbox {
+    border-radius: .5rem;
+    box-shadow: 0 .1rem .5rem #771d1ccc;
+    min-height: unset;
+    min-width: unset;
+    padding: 0 0 1rem;
+}
+
+.scp-image-block {
+    border: solid 1px #676767;
+    box-shadow: none;
+}
+.scp-image-block .scp-image-caption {
+    background: none;
+    border-top: solid 1px #676767;
+    padding: 0;
+}
+
+table[style="margin:0; padding:0"] {
+    margin: 0 auto !important;
+}
+#toc {
+    background: none;
+    border: solid 1px #676767;
+    box-sizing: border-box;
+    display: block;
+    margin: 0;
+    padding: 1rem;
+}
+#toc #toc-action-bar {
+    padding: 0;
+    text-align: end;
+}
+#toc .title {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+#toc-list {
+    display: block;
+    margin: 1rem 0;
+}
+
+:is(.yui-navset, .yui-navset-top, .yui-navset-bottom) .yui-nav {
+    border: none;
+    border-bottom: solid 1px #676767;
+    border-top: solid 1px #676767;
+    flex-flow: wrap;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+:is(.yui-navset, .yui-navset-top, .yui-navset-bottom) .yui-nav li {
+    display: block;
+    flex-grow: 1;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0 1rem;
+    text-align: center;
+    vertical-align: unset;
+}
+:is(.yui-navset, .yui-navset-top, .yui-navset-bottom) .yui-nav .selected {
+    margin: 0 1rem;
+}
+:is(.yui-navset, .yui-navset-top, .yui-navset-bottom) .yui-nav li a {
+    background: none;
+    border: none;
+    border-radius: 0;
+    color: #676767;
+    display: inline-block;
+    padding: 1rem .5rem;
+    position: relative;
+    transition: color .2s ease-in-out;
+}
+:is(.yui-navset, .yui-navset-top, .yui-navset-bottom) .yui-nav li a::after {
+    background-color: #676767;
+    bottom: -1px;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    transition: background-color .2s ease-in-out,
+    	width .2s ease-in-out;
+    width: 0;
+}
+:is(.yui-navset, .yui-navset-top, .yui-navset-bottom) .yui-nav a:is(:focus, :hover) {
+    background: none;
+    border: none;
+    color: #000;
+}
+:is(.yui-navset, .yui-navset-top, .yui-navset-bottom) .yui-nav a:is(:focus, :hover)::after {
+    background-color: #000;
+    width: 100%;
+}
+:is(.yui-navset, .yui-navset-top, .yui-navset-bottom) .yui-nav .selected a,
+:is(.yui-navset, .yui-navset-top, .yui-navset-bottom) .yui-nav .selected a:is(:focus, :hover) {
+    background: none;
+    border: none;
+    color: #771d1c;
+}
+:is(.yui-navset, .yui-navset-top, .yui-navset-bottom) .yui-nav .selected a::after,
+:is(.yui-navset, .yui-navset-top, .yui-navset-bottom) .yui-nav .selected a:is(:focus, :hover)::after {
+    background-color: #771d1c;
+    width: 100%;
+}
+:is(.yui-navset, .yui-navset-top, .yui-navset-bottom) .yui-nav :is(li, .selected) a em {
+    background: none;
+    border: none;
+    padding: 0;
+    position: static;
+}
+:is(.yui-navset, .yui-navset-top, .yui-navset-bottom) .yui-content {
+    background: none;
+    border: none;
+    color: inherit;
+    margin: 0 auto;
+    max-width: 60rem !important;
+    padding: 1rem;
+}
+
+#footer {
+    background-color: #771d1c;
+    color: #ffffffb3;
+    font-size: .75rem;
+    margin: 1rem 0 0;
+    padding: .5rem;
+}
+#footer .options {
+    width: auto;
+}
+#footer a {
+    color: inherit;
+}
+#license-area {
+    background-color: #771d1c;
+    color: #ffffffb3;
+    font-size: .75rem;
+    padding: .5rem;
+}
+#license-area a {
+    color: inherit;
+}
+[[/code]]
+
+[[code type="CSS"]]
+/*
+    Kamiyotugi Theme Interwiki
+    [2023 Wikidot Theme]
+    Created by MikuKaneko
+    Licensed under the CC-BY SA 3.0
+*/
+
+#interwiki p {
+    line-height: inherit;
+}
+#interwiki .side-block {
+    background: none !important;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    color: #fff;
+    font-family: "Playfair Display","Noto Serif JP", serif;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+#interwiki :is(.heading, div.menu-item a) {
+    border-top: solid 1px #d9d9d9;
+    color: inherit;
+    line-height: 3;
+    padding: 0 .5rem;
+}
+#interwiki .heading {
+    border-bottom: solid 1px #d9d9d9;
+    font-size: inherit;
+    font-weight: 400;
+    margin: 0;
+}
+#interwiki .heading ~ div.menu-item {
+    margin: 0 0 0 1rem;
+}
+#interwiki div.menu-item img {
+    display: none;
+}
+#interwiki div.menu-item a {
+    align-items: flex-end;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 400;
+    justify-content: space-between;
+    transition: background-color .1s ease-in-out;
+}
+#interwiki div.menu-item a:hover {
+    background-color: #ffffff1a;
+    text-decoration: none;
+}
+#interwiki div.menu-item a::after {
+    content: "\f054";
+    font-family: "FontAwesome";
+}
+#interwiki .heading + div.menu-item a:first-of-type {
+    border-top: none;
+}
+[[/code]]
+[[/collapsible]]
+[[/iftags]]
+
+[[div_ class="close-menu"]]
+@<&nbsp;>@
+[[/div]]
+
+[[a_ class="logo-link" href="kamiyotsugi-hub"]][[/a]]
+
+[[module CSS]]
+@import url("https://scp-jp.wdfiles.com/local--code/theme%3Akamiyotugi/1");
+
+#main-content::before {
+    background-image: url({$logo-url});
+    content: {$logo-url};
+}
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+|priority=1
+|theme=https://scp-jp.wdfiles.com/local--code/theme%3Akamiyotugi/2
+]]
+
+[[iftags +テーマ]]
+[[module CSS]]
+#main-content::before {
+    background-image: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A7069044-164-tu4o/kmytg.svg");
+    background-size: auto 90%;
+    content: "https://scp-jp-storage.wdfiles.com/local--files/file%3A7069044-164-tu4o/kmytg.svg";
+}
+[[/module]]
+[[/iftags]]

@@ -1,0 +1,373 @@
+[[module CSS]]
+@import url("https://scp-jp.wdfiles.com/local--code/theme%3Aword-processor/1");
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://scp-jp.wdfiles.com/local--code/theme%3Aword-processor/1
+]]
+
+[[include :scp-jp:component:collapsible-sidebar]]
+
+[[iftags +テーマ]]
+[[>]]
+**評価:**
+[[/>]]
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** ワードプロセッサテーマ
+**翻訳責任者:** [[*user KanekoLiku]]
+**翻訳年:** 2023
+**原題:** Word Processor Theme
+**著作権者:** ©[[*user stormbreath]]
+**作成年:** 2020
+**初訳時参照リビジョン:** 22
+**改訳時参照リビジョン:** 23
+**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:word-processor Word Processor Theme]
+[[include :scp-jp:credit:end-preview]]
+
+これはワードプロセッサの外観を視覚的に再現したテーマです。もとは「Escapism」taleシリーズのために作成されました。使用するには、以下をページに貼り付けてください:
+
+> @@[[include :scp-jp:theme:word-processor]]@@
+
+このテーマにはユーザーが使用可能なカスタムCSS divのidがあります。注: このdivは特定のページで1度のみ使用可能です。
+
+[[div id="blink-bar"]]
+{{@@[[div id="blink-bar"]]@@}}で使用されるこのidは、div内の最後の段落の終わりに点滅バーを設置し、ワードプロセッサの終わりに表示される点滅バーを再現します。
+[[/div]]
+
+このテーマは引用ブロック、テーブル、タブ、infoモジュール[[footnote]]JPではクレジットモジュールとinfoモジュールに対応しています。[[/footnote]]など、多くの一般的なページ要素で動作するようにデザインされていないことに注意してください。画像コンポーネントはサポートされていますが、評価モジュールの直下に配置することはできません。
+
+[[code type="CSS"]]
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap');
+
+/* ---------------------------------
+Word Processor Theme
+2020 Wikidot Theme
+Created by stormbreath
+Edited for SCP財団 by KanekoLiku
+Logo Image by Rounderhouse and MalyceGraves
+--------------------------------- */
+
+/* -------------- MAIN -------------- */
+a,
+a.newpage,
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a,
+#login-status ul a {
+    color: #00F;
+}
+
+a:visited{
+    color: #00C;
+}
+
+h1,
+#page-title {
+    color: black;
+    border-color: black;
+}
+
+/* Creates the page effect of the body. */
+div#main-content {
+    margin-top: 2em;
+    background: white;
+    box-shadow: 3px 3px 3px rgba(0,0,0,.2);
+    padding: 1em;
+}
+
+
+/* -------------- HEADER -------------- */
+
+div#container-wrap {
+     background-image: none;
+}
+
+body {
+    background-color: #e6e6e6;
+    background-image: linear-gradient(
+        to bottom,
+        #0F4699, #0F4699 38px,
+        #f4f4f4 38px, #f4f4f4 140px,
+        #0F4699 140px, #0F4699 162px,
+        #e6e6e6 162px, #e6e6e6 100%);
+    background-repeat: no-repeat;
+}
+
+#header {
+    background-image: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-74-ito6/commonlogo.png");
+    background-position-y: 3em;
+    background-size: auto;
+}
+
+#header h1 a {
+    color: transparent;
+    text-shadow: none;
+}
+
+#header h1 a::before {
+    content: 'Common Office';
+    color: #333;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+#header h2 span {
+   color: transparent;
+   text-shadow: none;
+}
+
+#header h2 span::before {
+    content: 'Open Source Word Processing';
+    color: #0F4699;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+/* -------------- SEARCH-BAR -------------- */
+#search-top-box-input {
+    border-color: #999;
+    background-color: #e6e6e6;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+#search-top-box-input:hover,
+#search-top-box-input:focus {
+    background-color: #f2f2f2;
+    box-shadow: none;
+    border-color: #ccc;
+    color: #333;
+}
+
+#search-top-box-form input[type=submit] {
+    background: #0F4699;
+    border-color: #999;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+    background: #1152B2;
+    box-shadow: none;
+    border-color: #ccc;
+}
+
+/* -------------- LOG-IN INFO -------------- */
+#login-status .printuser a {
+    display: none;
+}
+
+#login-status {
+    color: white;
+}
+#login-status a {
+    background: transparent;
+    color: white;
+}
+
+#account-topbutton {
+    background: transparent;
+    color: white;
+    border: none;
+}
+
+/* -------------- SIDE-BAR -------------- */
+/* See also: the Collapsible Side-Bar Component, included in this theme */
+#side-bar .side-block,
+#interwiki .side-block {
+    border: none;
+    box-shadow: none;
+    background: transparent !important;
+}
+
+#interwiki .side-block {
+    margin: 1em 0 0;
+    padding-left: 0.25em;
+}
+
+#side-bar .heading,
+#interwiki .heading {
+    color: #333;
+    border-color: #333;
+}
+
+#side-bar a,
+#interwiki a,
+#side-bar a:visited,
+#interwiki a:visited {
+    color: #666;
+}
+
+#side-bar .collapsible-block-unfolded-link {
+    border-bottom: solid 1px #333;
+}
+
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link {
+    color: #333;
+}
+
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link:hover {
+    color: #666;
+}
+
+#interwiki .menu-item img {
+    visibility: hidden;
+}
+
+#interwiki body {
+    background-image: none;
+}
+
+/* -------------- MOBILE SIDE-BAR -------------- */
+@media (max-width: 767px) {
+    #side-bar {
+        background-color: white;
+    }
+
+    #top-bar .open-menu a {
+        border-radius: 0;
+        border: none;
+        box-shadow: 0px 1px 4px 0 rgba(0, 0, 0, 0.2), 0px 3px 10px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    #side-bar .close-menu {
+        transition: width 0.5s ease-in-out 0.1s,
+                    opacity 1s ease-in-out 0s;
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background: rgba(0,0,0,0.3);
+        background-position: 19em 50%;
+        z-index: -1;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    #side-bar:target .close-menu {
+        width: calc(100% - 19em);
+        right: 0;
+        left: auto;
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+
+/* -------------- FOOTERS -------------- */
+.footnotes-footer {
+    border-top: 1px solid #333;
+}
+
+.footnotes-footer a {
+    color: #333;
+}
+
+.page-tags span {
+    border: none;
+    margin-top: 1em;
+}
+
+#footer,
+#footer a {
+    background-color: transparent;
+    color: black;
+}
+
+/* -------------- RATING MODULE -------------- */
+#page-content div.page-rate-widget-box .rate-points,
+#action-area div.page-rate-widget-box .rate-points,
+#page-content .page-rate-widget-box .cancel,
+#action-area .page-rate-widget-box .cancel,
+#page-content div.rate-box-with-credit-button,
+#page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton {
+    background-color: #0F4699;
+    border-color: #0F4699;
+}
+
+#page-content .page-rate-widget-box .rateup,
+#action-area .page-rate-widget-box .rateup,
+#page-content .page-rate-widget-box .ratedown,
+#action-area .page-rate-widget-box .ratedown {
+    background-color: #F2F6FC;
+    border-color: #0F4699;
+}
+
+#page-content .page-rate-widget-box .rateup a,
+#action-area .page-rate-widget-box .rateup a,
+#page-content .page-rate-widget-box .ratedown a,
+#action-area .page-rate-widget-box .ratedown a {
+    color: #0F4699;
+}
+
+#page-content .page-rate-widget-box .rateup a:hover,
+#action-area .page-rate-widget-box .rateup a:hover,
+#page-content .page-rate-widget-box .ratedown a:hover,
+#action-area .page-rate-widget-box .ratedown a:hover {
+    background: #0F4699;
+    color: #FFF;
+}
+
+#page-content .page-rate-widget-box .cancel a,
+#action-area .page-rate-widget-box .cancel a,
+#page-content div.rate-box-with-credit-button > .creditButton a {
+    border-color: #F2F6FC;
+    color: #F2F6FC;
+}
+
+#page-content .page-rate-widget-box .cancel a:hover,
+#action-area .page-rate-widget-box .cancel a:hover,
+#page-content div.rate-box-with-credit-button > .creditButton a:hover {
+    background: #0F4699;
+    color: #6F90C2;
+}
+
+/* -------------- CREDIT MODULE -------------- */
+#page-content .creditRate {
+    margin: 0;
+}
+
+#page-content .modalbox {
+    box-shadow: 0 2px 6px rgb(0 0 102 / 50%);
+}
+#page-content .modalbox .modalbox-title {
+}
+
+/* -------------- INFO MODULE -------------- */
+.info-container {
+    --barColour: #0F4699;
+}
+
+/* -------------- IMAGE BLOCKS -------------- */
+.scp-image-block {
+    box-shadow: unset;
+    border: none;
+}
+
+.scp-image-block img {
+    border: solid 1px #666;
+}
+
+.scp-image-block .scp-image-caption {
+    background: transparent;
+    border: none;
+    font-weight: initial;
+    font-style: italic;
+}
+
+/* -------------- BLINK-BAR -------------- */
+#u-blink-bar p:last-child::after {
+    content: "";
+    border-right: 1px solid black;
+    animation: blink 1.5s infinite;
+    position: relative;
+    left: 1px;
+}
+
+@keyframes blink {
+    to {
+        opacity: .0;
+    }
+}
+[[/code]]
+[[/iftags]]

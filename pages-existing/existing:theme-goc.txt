@@ -1,0 +1,498 @@
+[[iftags]]
+[[include :scp-jp:theme:black-highlighter-theme]]
+[[/iftags]]
+
+[[iftags +テーマ]]
+[[module css]]
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css");
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css");
+#page-title {
+    text-align: center !important;
+    font-family: var(--header-font);
+    font-size: 270%;
+}
+
+@media only screen and (max-width: 765px) {
+  #page-title {
+  font-size: 170%;
+  white-space: nowrap;
+  }
+ }
+[[/module]]
+
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css
+]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=2
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css
+]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** EX OFFICIOテーマ。
+**作者:** [[*user Rounderhouse]] & [[*user aismallard]]
+**原題:** EX OFFICIO THEME.
+**作成年:** 2020
+[[include :scp-jp:credit:end-preview]]
+
+[[div_ style="filter: none;"]]
+[[image https://scp-jp.wdfiles.com/local--files/theme%3Ablack-highlighter-theme/black-highlighter-logo.svg]]
+[[/div]]
+
+----
+
+[[=]]
++ テーマカラー
+[[/=]]
+
+[[include :scp-jp:component:theme-squares -=-
+| color1-name=Ship Gray
+| color1-variable=--gray-monochrome
+| color1-info=#424248
+| color1-has-light-text=1
+| color2-name=Sail
+| color2-variable=--bright-accent
+| color2-info=#A4C2EC
+| subcolor1-name=Cornflower
+| subcolor1-variable=--medium-accent
+| subcolor1-info=#5C95E6
+| subcolor2-name=Endeavor
+| subcolor2-variable=--dark-accent
+| subcolor2-info=#275495
+| subcolor2-has-light-text=1
+]]
+
+----
+
+[[div class="scp-image-block block-right" style="max-width: 300px;"]]
+[[image https://scp-jp-storage.wdfiles.com/local--files/file%3A8260379-38-48jq/44CA69AF-5424-4F5A-BDC9-E21EE0A4E8E5.png]]
+[[div class="scp-image-caption" style="max-width: 300px;"]]
+世界オカルト連合の標章
+[[/div]]
+[[/div]]
+
+++ 注: これはBlack Highlighterベースのテーマです。このテーマを使用するにはBlack Highlighterテーマもインポートする必要があります。[[[theme:black-highlighter-theme|詳細については、ここを参照してください。]]]
+
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+
+どんなウィキでも:
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:black-highlighter-theme]]@@
+@@[[include :scp-jp:theme:goc]]@@
+[[/div]]
+
++ 例
+
+罫線は、4つのハイフン「@@----@@」を使用して作成でき、何かの内側（例: ブロック引用）に配置されていなければページ全体に適用されます。このドキュメントのセクションを区切る線は罫線です。
+
+-----
+
+見出しは、行の先頭に1～6文字の「+」を置くことで作成できます
+
+[[collapsible show="+ 見出し" hide="- 見出し"]]
++ 1番目の見出し
+
+++ 2番目の見出し
+
++++ 3番目の見出し
+
+++++ 4番目の見出し
+
++++++ 5番目の見出し
+
+++++++ 6番目の見出し
+[[/collapsible]]
+
+@@ @@
+
+[[tabview]]
+[[tab タブを作る]]
+ここに{{ダミーテキスト}}が表示されていると想像してください。
+
+* [[span style="color: rgb(var(--dark-accent))"]]訪問済みのリンク[[/span]]
+* [[span style="color: rgb(var(--medium-accent))"]]未訪問のリンク[[/span]]
+* [[span style="color: rgb(var(--link-color))"]]存在しないリンク[[/span]]
+[[/tab]]
+[[tab タブが作られた]]
+見てください、ここにもテキストがあります。
+
+なんと奇妙な。
+[[/tab]]
+[[tab 長いタブ]]
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+本当に空ですよ
+[[/tab]]
+[[/tabview]]
+
+> これは引用ブロックです。各行の先頭に半角の「> 」を置くか、{{@@[[div class="blockquote"]]@@}}を使用することで作成されます。
+>
+> 追加のテキスト
+> -----
+> これは罫線です
+>
+>> 入れ子になった引用ブロック
+>>> そしてもう1段[[footnote]] そしてここに脚注！ [[/footnote]]
+
+様々な用途で使えるGOCロゴのdivはこれ:
+
+[[div class="warning"]]
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+[[/div]]
+
+[[div class="code"]]
+@<[[div class="warning"]]>@
+@<ここにテキストを挿入！>@
+@<[[/div]]>@
+[[/div]]
+
+----
+
+||~ これは ||~ テーブルです ||
+||もう || 作り方は ||
+||||知っているはずです ||
+
+----
+
+[[=]]
+[[span style="font-family: var(--header-font);"]]ヘッダーと見出しのフォントはRusso One。[[/span]]
+[[span style="font-family: var(--body-font);"]]BodyフォントはInter。[[/span]]
+[[span style="font-family: var(--mono-font);"]]使用している等幅フォントはPT Mono。[[/span]]
+[[/=]]
+
+----
+[[collapsible show="+ テーマコードを表示" hide="- テーマコードを非表示"]]
+[[code type="css"]]
+/*
+Ex Officio Theme
+[2020 Wikidot Theme]
+Created by Rounderhouse and aismallard.
+Thanks to wctaiwan, stormbreath, TSATPWTCOTTTADC, Woedenaz for critique and help.
+Based on Black Highlighter Theme created by Woedenaz and Croquembouche.
+The GOC logo was created by 7happy7. Licensed under CC BY SA 3.0.
+*/
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+/* GOC logo */
+
+@import url('https://scp-jp-storage.wdfiles.com/local--files/file%3A8260379-39-wy82/goc-logo.css');
+
+/* Variable definitions */
+
+:root {
+    /* S-CSS-P Integration */
+    /* If you're making a new CSS theme, please include the following three variables at minimum. */
+    --theme-base: 'black-highlighter';
+    /* must be either 'black-highlighter' or 'sigma9' */
+    --theme-id: 'black-highlighter';
+    /* set this to the URL of your theme's page - e.g. for 'component:ar-theme', set it to 'ar-theme' */
+    --theme-name: 'goc';
+    /* set this to your theme's full name */
+    --theme-name-full: 'Ex Officio Theme';
+    /* no idea if this is the right var or not */
+
+    /* Header */
+    /* animated GOC logo, courtesy of 7happy7! */
+    --header-title: '世界オカルト連合';
+    --header-subtitle: '事件簿アーカイブ';
+
+    /* Typefaces */
+    --header-font: 'Russo One', "M Plus 1p", sans-serif;
+    --title-font: 'Russo One', "M Plus 1p", sans-serif;
+    --mono-font: 'PT Mono', 'Andale Mono', 'Courier New', Courier, monospace;
+
+    /* Standard Colors */
+    --white-monochrome: 252, 252, 252;
+    /* white */
+    --pale-gray-monochrome: 244, 244, 244;
+    /* v light gray for blockquotes and stuff */
+    --light-gray-monochrome: 170, 170, 170;
+    /* light accent gray for login status */
+    --gray-monochrome: 66, 66, 72;
+    /* gray */
+    --dark-gray-monochrome: 48, 48, 52;
+    /* dark accent gray for sidebar background */
+    --black-monochrome: 12, 12, 12;
+    /* black */
+    --pale-accent: 164, 194, 236;
+    --bright-accent: 164, 194, 236;
+    /* bright blue */
+    --medium-accent: 92, 149, 230;
+    /* pale blue */
+    --dark-accent: 39, 84, 149;
+    /* v pale blue */
+    --newpage-color: 99, 190, 255;
+
+    /* Primary Theme Colors */
+    --swatch-primary: var(--bright-accent);
+    --swatch-primary-darker: var(--medium-accent);
+    --swatch-primary-darkest: var(--dark-accent);
+
+    /* Primary Menu Colors */
+    --swatch-menubg-color: var(--pale-gray-monochrome);
+    --swatch-menubg-dark-color: var(--medium-accent);
+    --swatch-menubg-hover-color: var(--gray-monochrome);
+    --swatch-menutxt-light-color: var(--white-monochrome);
+    --swatch-border-color: var(--bright-accent);
+
+    /* Primary Header Colors */
+    --swatch-headerh1-color: var(--dark-accent);
+    --swatch-headerh2-color: var(--dark-accent);
+    --rating-module-button-color: var(--black-monochrome);
+    --rating-module-text-color: var(--black-monochrome);
+
+    /* Header measurements */
+    --header-height-on-desktop: 11rem;
+    --header-height-on-mobile: 7.5rem;
+    --topbar-height-on-desktop: 1.875rem;
+    --topbar-height-on-mobile: 3.5rem;
+
+    /* Sidebar */
+    --sidebar-transition-timing: 0.5s ease-in-out 0.1s;
+    --sidebar-internal-border-thickness: 0.125rem;
+    --background-gradient-distance: 20rem;
+    --diagonal-stripes: none;
+}
+
+@media only screen and (max-width: 26.5625rem) {
+    :root {
+     --header-title: "世界オカルト連合";
+    }
+
+    #header::before {
+     top: -1rem;
+     left: -2rem;
+    }
+}
+
+:root {
+    /* ===BACKGROUND GRADIENT=== */
+
+    /* ===GENERAL BACKGROUND=== */
+    /* Gradient Color used for the --gradient-background var */
+    --background-gradient-color: var(--bright-accent);
+
+    /* ===TOPBAR GRADIENT=== */
+    /* Colors used in the --gradient-topmenu var to give the topbar its color */
+    --swatch-topmenu-border-color: var(--medium-accent);
+    --swatch-topmenu-bg-color: var(--bright-accent);
+
+    /* ===LINK COLORS=== */
+    --link-color: var(--swatch-primary-darker);
+    --visited-link-color: var(--swatch-primary-darkest);
+    --hover-link-color: var(--swatch-primary-darkest);
+}
+
+
+#header {
+    /* ===HEADER ELEMENTS=== */
+    /* ===HEADER TITLES=== */
+    /* Header H1 and H2 colors */
+    --swatch-headerh1-color: var(--medium-accent);
+    --swatch-headerh2-color: var(--dark-accent);
+
+    /* ===SEARCH ELEMENT=== */
+    --search-icon-color: var(--swatch-text-tertiary-color);
+
+    /* ===LOGIN BOX ELEMENT=== */
+    --login-line-divider-color: var(--swatch-text-tertiary-color);
+    --login-username-color: var(--swatch-text-tertiary-color);
+    --login-myaccount-color: var(--swatch-text-tertiary-color);
+    --login-arrow-color: var(--swatch-text-tertiary-color);
+}
+
+#top-bar {
+    /* ===TOPBAR ELEMENTS=== */
+
+    /* ===TOPBAR CATEGORIES=== */
+    --topmenu-category-color: var(--swatch-text-tertiary-color);
+    --topmenu-category-hover-color: var(--swatch-text-tertiary-color);
+    --topmenu-hover-border-color: var(--swatch-primary);
+
+    --mobile-topmenu-sidebar-button-color: var(--swatch-text-tertiary-color);
+}
+
+/* ===FOOTER=== */
+#footer {
+    --footer-link-hover-color: var(--swatch-text-tertiary-color);
+}
+
+/* ===LICENSE AREA=== */
+#license-area {
+    --license-link-hover-color: var(--swatch-text-tertiary-color);
+}
+
+/* Add scrollbar */
+html,
+body,
+#side-bar:hover {
+    scrollbar-color: rgb(var(--bright-accent)) rgb(var(--dark-accent));
+}
+
+::-webkit-scrollbar,
+#side-bar:hover::-webkit-scrollbar {
+    background-color: rgb(var(--bright-accent));
+}
+
+::-webkit-scrollbar-thumb,
+#side-bar:hover::-webkit-scrollbar-thumb {
+    background-color: rgb(var(--dark-accent));
+}
+
+/* Header shadow and colors */
+
+/* logo drop shadow */
+
+#header {
+    background-image: none;
+}
+
+#header::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--header-height-on-desktop);
+    opacity: 1;
+    background-image: var(--logo-image);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: auto 10rem;
+    pointer-events: none;
+    -webkit-filter: drop-shadow(1px 1px 1px white);
+            filter: drop-shadow(1px 1px 1px white);
+}
+
+#header h1 a::before {
+    color: rgb(var(--dark-accent));
+}
+
+/* Remove BHL's letter spacing for main header and title */
+#header h1 a::before,
+#page-title {
+    letter-spacing: 0;
+}
+
+/* Login status link */
+#login-status a {
+    color: rgb(var(--dark-accent));
+    font-weight: bold;
+}
+
+/* Search box */
+#search-top-box input.empty {
+    background-color: rgba(var(--pale-gray-monochrome));
+    color: rgb(var(--medium-accent));
+}
+
+blockquote,
+.blockquote,
+div.blockquote,
+[class*="blockquote"] {
+    background-color: #fff;
+    border-left: 5px solid rgb(var(--medium-accent));
+}
+
+/* Set horizontal rules to have the double line GOC formats have */
+hr {
+    padding: 0.0313rem;
+    border-top: 0.125rem solid #777;
+    border-bottom: 0.0625rem solid #777;
+    background: transparent;
+}
+
+/* Set background and style for section above topbar */
+#extra-div-2 {
+    --drop-shadow: rgb(var(--pale-gray-monochrome));
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 11rem;
+    background: url('https://scp-jp-storage.wdfiles.com/local--files/file%3A8260379-37-fspc/goc-background.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    pointer-events: none;
+    -webkit-filter: drop-shadow(-0.125rem 0.125rem 1rem var(--drop-shadow));
+    filter: drop-shadow(-0.125rem 0.125rem 1rem var(--drop-shadow));
+}
+
+div.warning {
+    width: 80%;
+    margin: 0.625rem auto;
+    padding: 0.9375rem;
+    border: solid 0.125rem rgb(var(--swatch-primary-darker));
+    background: #fff url('https://scp-jp-storage.wdfiles.com/local--files/file%3A8260379-37-4d3q/goc-fade.png') center no-repeat;
+    color: black;
+    text-align: center;
+}
+
+div.warning hr {
+    border-color: rgb(var(--swatch-primary-darker));
+}
+
+[[/code]]
+[[/collapsible]]
+[[/iftags]]
+
+[[module css]]
+@import url("https://scp-jp.wdfiles.com/local--code/theme%3Agoc/1")
+[[/module]]
+[[include :scp-jp:component:interwiki-style
+| priority=3
+| theme=https://scp-jp.wdfiles.com/local--code/theme%3Agoc/1
+]]

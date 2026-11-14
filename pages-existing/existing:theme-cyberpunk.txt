@@ -1,0 +1,1693 @@
+[[iftags +テーマ]]
+[[module CSS]]
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css");
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css");
+
+.scp-image-block.block-right {
+    background: var(--dark-gray-monochrome);
+}
+.scp-image-block img {
+    min-width: 100%;
+    border: 0.5rem solid transparent;
+    box-sizing: border-box;
+}
+
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css
+]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=2
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css
+]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** ネオン・ディストピア・テーマ
+**著作者:** [[*user JackalRelated]]
+**作成年:** 2021
+
+**翻訳責任者:** [[*user oplax-counterpoint]]
+**翻訳年:** 2025
+**最終参照版:** rev.40 (2025/09/26)
+**ソース:** [*https://scp-wiki.wikidot.com/theme:cyberpunk リンク]
+[[include :scp-jp:credit:cc4]]
+[[include :scp-jp:credit:end-preview]]
+
+-----
+++ これは何？
+[[div class="blokquote-alt"]]
+ネオン・ディストピア・テーマはサイバーパンク的な美学と1982年公開の映画『ブレードランナー』を基にした、BHL用のダークテーマです。どんな記事にも使用できますが、無関心で過密な、しかし最先端技術の進歩した雰囲気を持つ記事で使うのがいいでしょう。あるいは、ブレードランナーが好きならそれでもいいかも。
+[[/div]]
+----
+++ 訳注
+[[div class="blokquote-alt"]]
+* ライセンスの関係上、本テーマ (日本語版) はCC BY-SA __4.0__ライセンスで公開されています。
+* このテーマではデフォルトで[[[esoteric-syntax#toc20|Ayu18]]]コンポーネントを導入しています。一部のテーマ・コンポーネントには最初からAyu18フォントが設定されているほか、{{class="monoayu"}}を指定することで任意の場所にAyu18フォントを適用できます。
+* テーマに使われているフォントの都合上、テーマ・コンポーネントは和文を前提にしたモードを前提に、ENの表示に近いことができる方法をオプションで提供しています。目的および好みに応じて使い分けてください。
+[[/div]]
+----
+
+[[=]]
++ テーマカラー
+[[/=]]
+
+[[include :scp-jp:component:theme-squares -=-
+| color1-name=ネオン・ブルー
+| color1-variable=--neon-blue
+| color1-info=(15, 227, 229)
+| color2-name=雨の中の涙
+| color2-variable=--tears-n-rain
+| color2-info=(73, 177, 178)
+| color2-has-light-text=1
+| subcolor1-name=デッカード・レッド
+| subcolor1-variable=--deckard-red
+| subcolor1-info=(191, 0, 0)
+| subcolor2-name=ブレードランナー
+| subcolor2-variable=--blade-runner
+| subcolor2-info=(163, 0, 0)
+| subcolor3-name=退役レプリカント
+| subcolor3-variable=--retired-replicant
+| subcolor3-info=(77, 22, 25)
+| subcolor3-has-light-text=1
+| subcolor4-name=ディスプレイ・ライト
+| subcolor4-variable=--display-green
+| subcolor4-info=(23, 230, 16)
+| subcolor5-name=ディスプレイ・ミディアム
+| subcolor5-variable=--tyrell-green
+| subcolor5-info=(7, 53, 0)
+| subcolor5-has-light-text=1
+| subcolor6-name= ディスプレイ・ダーク
+| subcolor6-variable=--display-dark
+| subcolor6-info=(1, 18, 6)
+| subcolor6-has-light-text=1
+]]
+
+----
+@@ @@
+[[div class="scp-image-block block-center" style="width:100%; box-shadow:none;"]]
+[[image https://scp-jp-storage.wdfiles.com/local--files/file:9042763-269-7zlf/foundation-text.png style="width:100%;" link=#]]
+[[div class="scp-image-caption" style="width:100%;"]]
+財団遠隔接続データベース (FRAD) ロゴ
+[[/div]]
+[[/div]]
+@@ @@
++++ 代替カラースキーム
+[[div class="scp-image-block block-center" style="width:100%; box-shadow:none;"]]
+[[image https://scp-jp-storage.wdfiles.com/local--files/file:9042763-271-i5xa/spread.png style="width:100%;" link=#]]
+[[div class="scp-image-caption" style="width:100%;"]]
+バリエーション　青 - 緑 - 黄 - 赤
+[[/div]]
+[[/div]]
+
+注意：このテーマはBlack Highlighterテーマをベースにしています。このテーマを使用する際はBlack Highlighterテーマを先にインポートする必要があります。[[[theme:black-highlighter-theme|詳しくはこちらを参照してください]]]。
+
+**任意のwikiで：**
+[[div class="code" style="color: rgb(var(--gaff-black));"]]
+@@[[include :scp-jp:theme:black-highlighter-theme]]@@
+@@[[include :scp-jp:component:toggle-sidebar-bhl]]@@
+@@[[include :scp-jp:theme:cyberpunk theme-number=1]]@@
+[[/div]]
+@@ @@
+[[div class="blokquote-alt"]]
+**テーマ色の変更**
+-----
+theme-numberの数値を変更することで、以下のうち好きな色彩を選ぶことができます。
+* 青色：@@[[include :scp-jp:theme:cyberpunk theme-number=1]]@@
+* ##24e50f|緑色：@@[[include :scp-jp:theme:cyberpunk theme-number=2]]@@##
+* ##e5e30f|黄色：@@[[include :scp-jp:theme:cyberpunk theme-number=3]]@@##
+* ##e50f0f|赤色： @@[[include :scp-jp:theme:cyberpunk theme-number=4]]@@##
+[[/div]]
+@@ @@
+@@ @@
++ 表示例
+
+水平線はハイフン5つ「@@-----@@」で作ることができ、(例えばblockquoteのような) 何かの中に位置していない限りページ全体に展開されます。この文書内の節を区切っているのが水平線です。
+-----
+
+見出しは1～6個のプラス記号 + を行頭に置くことで作ることができます。
+
+[[collapsible show="+ 見出し" hide="- 閉じる"]]
++ 見出し1
+
+++ 見出し2
+
++++ 見出し3
+
+++++ 見出し4
+
++++++ 見出し5
+
+++++++ 見出し6
+[[/collapsible]]
+
+@@ @@
+
+[[tabview]]
+[[tab タブを作る]]
+想像力を働かせて、ここに"Lorem Ipsum"があると想像してみてください。
+[[/tab]]
+[[tab タブが作られる]]
+見てください。ここにも文章が。
+
+なんとも奇妙な。
+[[/tab]]
+[[tab 長いタブ]]
+長いタブです。たくさん文章が詰まっています。1
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+彼女も生きられずに残念ですな。だが、誰もがそうかもしれない
+[[/tab]]
+[[/tabview]]
+@@ @@
+> 各行の先頭に「> 」と書くことで引用ブロックを作ることができます。
+>
+> さらなるテキスト
+> -----
+> 分割線も入ります。
+>
+>> 入れ子の引用ブロック
+>>> さらにもう1つ[[footnote]] そしてこれが脚注！ [[/footnote]]
+@@ @@
+||~ これが ||~ **table** ||
+||もう既に || 作り方は ||
+||||知っていますね ||
+
+----
+@@ @@
++ 特別なdivブロック
+@@ @@
+++++ 代替引用ブロック
+[[div class="blokquote-alt"]]
+彼女がデジタル・リーパーなんて呼ばれてる人かい？
+-----
+ああ。ピリ・ヴァムレットの正体だ。
+[[/div]]
+
+[[collapsible show="» 使用法を見る" hide="« 使用法を閉じる"]]
+[[div class="code" style="color: rgb(var(--gaff-black));"]]
+@@[[div class="blokquote-alt"]]@@
+@@ここにテキストを書く@@
+@@-----@@
+@@あるいはここに書く@@
+@@[[/div]]@@
+[[/div]]
+上記のコードは以下のように表示されます。
+[[div class="blokquote-alt"]]
+ここにテキストを書く
+-----
+あるいはここに書く
+[[/div]]
+[[/collapsible]]
+@@ @@
+++++ コンソール／ターミナルのdiv (日本語対応)
+[[div class="console"]]
++ 
+[[div class="console-header-alt"]]
+-----
+[[div class="lcd"]]
+[[size 250%]] FOUNDATION [[/size]]
+[[size 125%]] モバイル接続端末 [[/size]]
+[[/div]]
+------
+[[/div]]
+[[table class="terminal"]]
+
+[[row]]
+[[hcell]]
+│
+[[/hcell]]
+[[cell]]
+department terminals provided and sponsored by:
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[hcell]]
+│
+│
+[[/hcell]]
+[[cell]]
+{{@@  ▄▀█ █▀▀ █▀█ █▀█ █░█ █▀▀ █░░   ▀█▀ █▀▀ █▀▀ █▄█@@}}
+{{@@  █▀█ █▄▄ █▀▄ █▄█ ▀▄▀ ██▄ █▄▄   ░█░ ██▄ █▄▄ █▀█@@}}
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[hcell]]
+│
+[[/hcell]]
+[[cell]]
+{{@@  bringing humanity through technology™@@}}
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[hcell]]
+│
+[[/hcell]]
+[[cell]]
+
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[hcell]]
+@@   @@
+[[/hcell]]
+[[cell]]
+@@  @@
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[hcell]]
+@@ >@@
+[[/hcell]]
+[[cell]]
+ログイン資格情報を入力してください:
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[hcell]]
+@@ @@
+[[/hcell]]
+[[cell]]
+@@    @@##17e610|__/useraccount@@  @@VAMULETTO P.@@  @@liveinthedreamofsalome__##
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[hcell]]
+@@ >@@
+@@  @@
+[[/hcell]]
+[[cell]]
+こんにちは、従業員 [ ##17e624|#F21E - PIRI VAMULETTO## ]。保留中のメッセージが [ ##17e610|0## ] 件あります。
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[hcell]]
+@@ @@
+[[/hcell]]
+[[cell]]
+@@    @@##17e610|__/open file VIDEO LOG__##
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[hcell]]
+@@ >@@
+[[/hcell]]
+[[cell]]
+ファイル読込中.........
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[hcell]]
+@@ >@@
+[[/hcell]]
+[[cell]]
+ファイル [ ##176e10|VIDEO LOG## ] が読み込まれました。
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[hcell]]
+@@ >@@
+[[/hcell]]
+[[cell]]
+クラス- [ ##17e610|A## ] クリアランスが必要です。
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[hcell]]
+@@ >@@
+[[/hcell]]
+[[cell]]
+ファイルを開きますか？ (Y/N)
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[hcell]]
+@@ @@
+[[/hcell]]
+[[cell]]
+@@    @@##17e610|__/Y__##
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[hcell]]
+@@ >@@
+[[/hcell]]
+[[cell]]
+ファイルを開いています...
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[hcell]]
+@@ >@@
+[[/hcell]]
+[[cell]]
+メインスクリーンに表示しています...
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[hcell]]
+@@ >@@
+[[/hcell]]
+[[cell]]
+ファイルを開きました。
+[[/cell]]
+[[/row]]
+
+[[/table]]
+[[/div]]
+
+[[collapsible show="» 使用法を見る" hide="« 使用法を閉じる"]]
+[[div class="code" style="color: rgb(var(--gaff-black));"]]
+@@[[div class="console"]]@@
+@@[[div class="console-header-alt"]]@@
+@@[[size 200%]]@@
+@@-----@@
+@@HEADERを好きに書けます。@@
+@@ @@
+@@[[div class="lcd"]]@@
+@@CRTっぽい横線を入れられます (JP独自機能)@@
+@@[[/div]]@@
+@@-----@@
+@@[[/size]]@@
+@@[[/div]]@@
+@@[[table class="terminal"]]@@
+@@ @@
+@@[[row]]@@
+@@[[hcell]@@
+@@﹫﹫   ﹫﹫@@
+@@[[/hcell]]@@
+@@[[cell]]@@
+@@﹫﹫   ﹫﹫@@
+@@[[/cell]]@@
+@@[[/row]]@@
+@@ @@
+@@[[row]]@@
+@@[[hcell]]@@
+@@﹫﹫ >﹫﹫@@
+@@[[/hcell]]@@
+@@[[cell]]@@
+@@ログイン資格情報を入力してください:@@
+@@[[/cell]]@@
+@@[[/row]]@@
+@@ @@
+@@[[row]]@@
+@@[[hcell]]@@
+﹫﹫ ﹫﹫
+@@[[/hcell]]@@
+@@[[cell]]@@
+@@﹫﹫    ﹫﹫ ##17e610|__/useraccount﹫﹫  ﹫﹫VAMULETTO P.﹫﹫  ﹫﹫liveinthedreamofsalome__##@@
+@@[[/cell]]@@
+@@[[/row]]@@
+@@[[/table]]@@
+@@[[/div]]@@
+[[/div]]
+上記のコードは以下のように表示されます。 
+[[div class="console"]]
+[[div class="console-header-alt"]]
+[[size 200%]]
+-----
+HEADERを好きに書けます。
+
+[[div class="lcd"]]
+CRTっぽい横線を入れられます (JP独自機能)
+[[/div]]
+-----
+[[/size]]
+[[/div]]
+[[table class="terminal"]]
+
+[[row]]
+[[hcell]]
+@@   @@
+[[/hcell]]
+[[cell]]
+@@   @@
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[hcell]]
+@@ >@@
+[[/hcell]]
+[[cell]]
+ログイン資格情報を入力してください:
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[hcell]]
+@@ @@
+[[/hcell]]
+[[cell]]
+@@    @@##17e610|__/useraccount@@  @@VAMULETTO P.@@  @@liveinthedreamofsalome__##
+[[/cell]]
+[[/row]]
+[[/table]]
+[[/div]]
+
+[[/collapsible]]
+@@ @@
+++++ コンソール／ターミナルのdiv (EN表示)
+**訳注:** フォントの都合上ラテン文字・数字・一部記号しか対応していません。
+[[div class="console"]]
++ 
+[[div class="console-header"]]
+-----
+[[size 250%]] FOUNDATION [[/size]]
+[[size 125%]] mobile access terminal [[/size]]
+------
+[[/div]]
+[[/div]]
+
+[[collapsible show="» Show Usage" hide="« Hide Usage"]]
+[[div class="code" style="color: rgb(var(--gaff-black));"]]
+@@[[div class="console"]]@@
+@@[[div class="console-header"]]@@
+@@[[size 200%]]@@
+@@-----@@
+@@ANY HEADER TEXT YOU WANT!@@
+@@-----@@
+@@[[/size]]@@
+@@[[/div]]@@
+@@[[table class="terminal"]]@@
+@@ @@
+@@[[row]]@@
+@@[[hcell]@@
+@@﹫﹫   ﹫﹫@@
+@@[[/hcell]]@@
+@@[[cell]]@@
+@@﹫﹫   ﹫﹫@@
+@@[[/cell]]@@
+@@[[/row]]@@
+@@ @@
+@@[[row]]@@
+@@[[hcell]]@@
+@@﹫﹫ >﹫﹫@@
+@@[[/hcell]]@@
+@@[[cell]]@@
+@@ログイン資格情報を入力してください:@@
+@@[[/cell]]@@
+@@[[/row]]@@
+@@ @@
+@@[[row]]@@
+@@[[hcell]]@@
+﹫﹫ ﹫﹫
+@@[[/hcell]]@@
+@@[[cell]]@@
+@@﹫﹫    ﹫﹫ ##17e610|__/useraccount﹫﹫  ﹫﹫VAMULETTO P.﹫﹫  ﹫﹫liveinthedreamofsalome__##@@
+@@[[/cell]]@@
+@@[[/row]]@@
+@@[[/table]]@@
+@@[[/div]]@@
+[[/div]]
+上記のコードは以下のように表示されます。 
+[[div class="console"]]
+[[div class="console-header"]]
+[[size 200%]]
+-----
+ANY HEADER TEXT YOU WANT!
+-----
+[[/size]]
+[[/div]]
+[[table class="terminal"]]
+
+[[row]]
+[[hcell]]
+@@   @@
+[[/hcell]]
+[[cell]]
+@@   @@
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[hcell]]
+@@ >@@
+[[/hcell]]
+[[cell]]
+ログイン資格情報を入力してください:
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[hcell]]
+@@ @@
+[[/hcell]]
+[[cell]]
+@@    @@##17e610|__/useraccount@@  @@VAMULETTO P.@@  @@liveinthedreamofsalome__##
+[[/cell]]
+[[/row]]
+[[/table]]
+[[/div]]
+
+[[/collapsible]]
+@@ @@
+++++ 音声・映像記録フォーマット
+[[div class="logs"]]
+[[div class="logs-header"]]
+[[size 150%]]
+映像記録 - ニューシュメリング、1982年
+[[/size]]
+**> 記録開始 <**
+@@ @@
+[[/div]]
+[[table class="dialog"]]
+
+[[row]]
+[[hcell]]
+
+[[/hcell]]
+[[cell]]
+//ピリは突然左に曲がり、近くの路地に入った。彼女の後を追っていた男もペースを上げて路地へと入った。数歩も行かないうちに、彼の面前にウェブリーMk.VIリボルバーの銃口が突き付けられていた。//
+
+//彼は両手を挙げた。//
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[hcell]]
+VAMULETTO
+[[/hcell]]
+[[cell class="active"]]
+何の用だ。
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[hcell]]
+ALEXANDER
+[[/hcell]]
+[[cell class="active"]]
+ミス・デジタル・リーパー本人だね？
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[hcell]]
+
+[[/hcell]]
+[[cell]]
+//ピリは撃鉄を起こした。J.アレクサンダーは笑っていた。//
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[hcell]]
+ALEXANDER
+[[/hcell]]
+[[cell class="active"]]
+私を撃つなんて愚かなことだよ。保証できる。
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[hcell]]
+VAMULETTO
+[[/hcell]]
+[[cell class="active"]]
+私はそうは思わないが。
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[hcell]]
+ALEXANDER
+[[/hcell]]
+[[cell class="active"]]
+ならやればいい。クインティリウム社の役員を撃った暁には、君のところの貧弱な組織が、我々の弁護士団の全力を止められるわけはないと思うがね。
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[hcell]]
+[[/hcell]]
+[[cell]]
+//ピリは拳銃をホルスターに戻し、ジェームズは両手を降ろした。//
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[hcell]]
+ALEXANDER
+[[/hcell]]
+[[cell class="active"]]
+その方がいいね。
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[hcell]]
+VAMULETTO
+[[/hcell]]
+[[cell class="active"]]
+一応言っておくが、撃ってもよかったんだぞ。だが、血を流しながら説明するのはお前には難しいだろう。
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[hcell]]
+[[/hcell]]
+[[cell]]
+//ジェームズはポケットに手を入れ、MOディスクを取り出してピリに投げ渡した。ピリは空いている方の手でそれをキャッチした。//
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[hcell]]
+ALEXANDER
+[[/hcell]]
+[[cell class="active"]]
+そのディスクの中身はきっと君の役に立つだろう。…あるいは、君の組織と共有するなら、彼らにとっても。
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[hcell]]
+VAMULETTO
+[[/hcell]]
+[[cell class="active"]]
+それが殺人ドライブじゃなければな。お前は//私の//何がお望みだ？お前は工場を自分で立ち上げるのに必要なネットリグも十分なオーギーズも全部持っているだろう？自分でやったらどうだ。
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[hcell]]
+[[/hcell]]
+[[cell]]
+//ジェームズは笑う。//
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[hcell]]
+ALEXANDER
+[[/hcell]]
+[[cell class="active"]]
+中身を見たらわかるよ。それでは御機嫌よう、ミス・デジタル・リーパー。
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[hcell]]
+[[/hcell]]
+[[cell]]
+//彼は足早に路地から出ていく。ピリはMOディスクを裏返し、そこに書かれていたラベルに "NUYTENS PROJEKT" と書かれているのを見た。//
+
+彼女はジェームズを走って追いかけようとしたが、彼はニュー・シュメリングの喧騒の中に姿を消していた。
+[[/cell]]
+[[/row]]
+
+[[/table]]
+[[/div]]
+[[collapsible show="» 使用法を見る" hide="« 使用法を閉じる"]]
+[[div class="code" style="color: rgb(var(--gaff-black));"]]
+@@[[div class="logs"]]@@
+@@[[div class="logs-header"]]@@
+@@[[size 150%]]@@
+@@映像記録@@
+@@[[/size]]@@
+@@**> 記録開始 <**@@
+@@﹫﹫ ﹫﹫@@
+@@[[/div]]@@
+@@[[table class="dialog"]]@@
+@@ @@
+@@[[row]]@@
+@@[[hcell]]@@
+@@ @@
+@@[[/hcell]]@@
+@@[[cell]]@@
+@@//視覚的なアクションの記述//@@
+@@ @@
+@@//きみは視覚的アクションが好き？//@@
+@@[[/cell]]@@
+@@[[/row]]@@
+@@ @@
+@@[[row]]@@
+@@[[hcell]]@@
+@@SPEAKER@@
+@@[[/hcell]]@@
+@@[[cell class="active"]]@@
+@@これが私のスピーチ。とても長ったらしい。@@
+@@[[/cell]]@@
+@@[[/row]]@@
+@@ @@
+@@[[row]]@@
+@@[[hcell]]@@
+@@SPEAKER@@
+@@[[/hcell]]@@
+@@[[cell class="active"]]@@
+@@これが私のスピーチ。とても長ったらしい。@@
+@@[[/cell]]@@
+@@[[/row]]@@
+@@ @@
+@@[[row]]@@
+@@[[hcell]]@@
+@@他者@@
+@@[[/hcell]]@@
+@@[[cell class="active"]]@@
+@@名前欄はローマ字限定というわけでもない。@@
+@@[[/cell]]@@
+@@[[/row]]@@
+@@ @@
+@@[[row]]@@
+@@[[hcell]]@@
+@@**UNKNOWN**@@
+@@[[/hcell]]@@
+@@[[cell class="active"]]@@
+@@MESSAGE BLOCKED@@
+@@[[/cell]]@@
+@@[[/row]]@@
+@@ @@
+@@[[/table]]@@
+@@[[/div]]@@
+[[/div]]
+上記のコードは以下のように表示されます。 
+[[div class="logs"]]
+[[div class="logs-header"]]
+[[size 150%]]
+映像記録
+[[/size]]
+**> 記録開始 <**
+@@ @@
+[[/div]]
+[[table class="dialog"]]
+
+[[row]]
+[[hcell]]
+
+[[/hcell]]
+[[cell]]
+//視覚的なアクションの記述//
+
+//きみは視覚的アクションが好き？//
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[hcell]]
+SPEAKER
+[[/hcell]]
+[[cell class="active"]]
+これが私のスピーチ。とても長ったらしい。
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[hcell]]
+他者
+[[/hcell]]
+[[cell class="active"]]
+名前欄はローマ字限定というわけでもない。
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[hcell]]
+**UNKNOWN**
+[[/hcell]]
+[[cell class="active"]]
+MESSAGE BLOCKED
+[[/cell]]
+[[/row]]
+
+[[/table]]
+[[/div]]
+
+テーブルのクラス名を{{dialog-alt}}に変更すると、右側の標準フォントをAyu18にします。
+
+[[div class="code" style="color: rgb(var(--gaff-black));"]]
+@@[[table class="dialog-alt"]]@@
+[[/div]]
+
+[[div class="logs"]]
+[[div class="logs-header"]]
+[[size 150%]]
+映像記録
+[[/size]]
+**> 記録開始 <**
+@@ @@
+[[/div]]
+[[table class="dialog-alt"]]
+
+[[row]]
+[[hcell]]
+
+[[/hcell]]
+[[cell]]
+//視覚的なACTIONの記述//
+
+//きみは視覚的ACTIONが好き？//
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[hcell]]
+SPEAKER
+[[/hcell]]
+[[cell class="active"]]
+これが私のスピーチ。とても長ったらしい。
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[hcell]]
+他者
+[[/hcell]]
+[[cell class="active"]]
+名前欄はローマ字限定というわけでもない。
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[hcell]]
+**UNKNOWN**
+[[/hcell]]
+[[cell class="active"]]
+MESSAGE BLOCKED
+[[/cell]]
+[[/row]]
+
+[[/table]]
+[[/div]]
+
+[[/collapsible]]
+@@ @@
+------
+[[=]]
+ヘッダ画像のフォントはStrasua（上）とElement（下）。
+@@ @@
+[[span style="font-family: var(--title-font);"]]見出しのフォントは Unicephalon と[[/span]] [[span style="font-family: 'WDXL Lubrifont JP N', sans-serif;"]]WDXL Lubrifont JP N。[[/span]]
+[[span style="font-family: var(--body-font);"]]本文のフォントは Jost と[[/span]] [[span style="font-family: 'Noto Sans JP', sans-serif;"]]Noto Sans JP。[[/span]]
+[[span style="font-family: var(--mono-font);"]]モノフォントは Bedstead (和文はブラウザ依存)。[[/span]]
+@@ @@
+__さらに以下のフォントを使用しています。__
+ディスプレイ/LEDのテキスト (英文) として [[span style="font-family: var(--display-font);"]]Liquid Crystal[[/span]] 。
+ヘッダテキスト (英文) として [[span style="font-family: var(--header-font);"]]Workbench[[/span]] 。
+コンソールのヘッダテキスト (英文) として [[span style="font-family: var(--header-alt-font);"]]Kdam Thmor Pro[[/span]] 。
+ダイアログテーブルのテキスト (英文) として [[span style="font-family: var(--dialogue-font);"]]SV Basic Manual[[/span]] 。
+コンソール・端末のテキスト (英文) として [[span style="font-family: var(--terminal-font);"]]Connection[[/span]] 。
+ダイアログ・コンソール・端末のテキスト (和文) として [[span style="font-family: 'ayu18regular', sans-serif;"]]Ayu18[[/span]] 。
+[[/=]]
+
+-----
+
+[[collapsible show="+ テーマのCSSコードを見る" hide="- テーマのCSSコードを閉じる"]]
+[[code type="css"]]
+/*
+   Neon Dystopia Theme
+   [2021 Wikidot Theme]
+   by JackalRelated
+       inspired by Blade Runner (1982)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://scp-jp-storage.wdfiles.com/local--files/file%3A9042763-273-c5bw/stylesheet.css');
+@import url('https://scp-jp-storage.wdfiles.com/local--files/file%3A9042763-272-jb1b/connection.css');
+
+/* Alternative Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Workbench:SCAN@-5&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+/* Japanese Fonts */
+@import url('https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+JP+N&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+:root {
+    --theme-base: "black-highlighter";
+    --theme-id: "cyberpunk-jp";
+    --theme-name: "Neon Dystopia (for SCP-JP)";
+
+    --header-title: "FOUNDATION";
+    --header-subtitle: "REMOTE ACCESS DATABASE";
+
+    --body-font: 'Jost', "Noto Sans JP", sans-serif;
+    --header-font: "Workbench", sans-serif;
+    --header-alt-font: "Kdam Thmor Pro", "Noto Sans JP", sans-serif;
+    --title-font: 'Unicephalon', "WDXL Lubrifont JP N", serif;
+    --mono-font: 'Bedstead', monospace;
+    --terminal-font: 'Connection II', monospace;
+    --display-font: 'Liquid Crystal', sans-serif;
+    --display-alt-font: 'ayu18regular', "Noto Sans JP", sans-serif;
+    --dialogue-font: 'SV Basic Manual', "Noto Sans JP", sans-serif;
+    --dialogue-alt-font: 'SV Basic Manual', 'ayu18regular', sans-serif;
+    --UI-font: var(--dialogue-font);
+
+    /* WHITE - GREY */
+    --electric-sheep: 230, 255, 255;
+    --gaff-black: 1, 1, 1;
+
+    /* BLUE */
+    --neon-blue: 15, 227, 229;
+    --tears-n-rain: 73, 177, 178;
+    --passive-blue: 65, 134, 155;
+    --pkd-blaster: 15, 12, 36;
+    --lapd-badge: 9, 8, 19;
+
+    --linkalt: 85, 181, 250;
+    --linkalt-hl: 0, 145, 250;
+
+    /* GREEN */
+    --display-green: 23, 230, 16;
+    --display-inter: 0, 145, 9;
+    --tyrell-green: 7, 53, 0;
+    --display-dark: 1, 18, 6;
+
+    --linkgr-hl: 65, 255, 59;
+    --linkgr: 6, 184, 0;
+
+    /* RED */
+    --deckard-red: 191, 0, 0;
+    --blade-runner: 163, 0, 0;
+    --retired-replicant: 77, 22, 25;
+
+    /* THEME ASSIGNMENTS */
+    --white-monochrome: var(--lapd-badge);
+    --pale-gray-monochrome: var(--display-dark);
+    --light-gray-monochrome: var(--retired-replicant);
+    --gray-monochrome: var(--gaff-black);
+    --dark-gray-monochrome: var(--lapd-badge);
+    --black-monochrome: var(--electric-sheep);
+    --pale-accent: var(--tears-n-rain);
+    --bright-accent: var(--deckard-red);
+    --medium-accent: var(--blade-runner);
+    --dark-accent: var(--retired-replicant);
+
+    --swatch-topmenu-bg-color: var(--gaff-black);
+    --swatch-topmenu-border-color: var(--tyrell-green);
+
+    --swatch-background: var(--lapd-badge);
+    --swatch-primary: var(--display-green);
+    --swatch-primary-darker: var(--tyrell-green);
+    --swatch-primary-darkest: var(--display-dark);
+    --swatch-border-color: 0, 0, 0, 0;
+
+    --swatch-text-dark: var(--gaff-black);
+    --swatch-text-light: var(--electric-sheep);
+    --swatch-text-general: var(--swatch-text-light);
+    --swatch-important-text: var(--bright-accent);
+
+    --swatch-menubg-color: var(--display-dark);
+    --swatch-menubg-light-color: var(--);
+    --swatch-menubg-medium-color: var(--tyrell-green);
+    --swatch-menubg-medium-dark-color: var(--gaff-black);
+    --swatch-menubg-dark-color: var(--);
+
+    --swatch-menutxt-light-color: var(--electric-sheep);
+    --swatch-menutxt-dark-color: var(--gaff-black);
+    --swatch-menutxt-general-color: var(--swatch-menutxt-light-color);
+
+    --swatch-text-secondary-color: var(--gaff-black);
+    --swatch-text-tertiary-color: var(--electric-sheep);
+
+    --header-gradient-color-top: var(--gaff-black);
+    --header-gradient-color-middle: var(--gaff-black);
+    --header-gradient-color-bottom: var(--gaff-black);
+    --background-gradient-distance: 0rem;
+    --diagonal-stripes: linear-gradient(transparent 0);
+
+    --sidebar-transition-timing: 0.8s ease-in-out 0.1s;
+
+    --hover-link-color: var(--neon-blue);
+    --newpage-color: var(--neon-blue);
+    --link-color: var(--tears-n-rain);
+    --visited-link-color: var(--tears-n-rain);
+
+    --rating-module-bg-color: var(--lapd-badge);
+    --rating-module-button-cancel-color: var(--neon-blue);
+    --rating-module-bottom-border-color: var(--neon-blue);
+
+    --toggle-button-bg: rgba(var(--gaff-black), 1);
+    --toggle-border-color: rgb(var(--tyrell-green));
+    --toggle-icon-color: rgb(var(--display-green));
+    --toggle-roundness: 0%;
+}
+
+
+/* HEADER AND TOPBAR */
+
+.page-rate-widget-box .rate-points {
+    font-size: 1em;
+    border: none !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+    line-height: calc(var(--rating-module-height)*1.25);
+}
+
+#page-title {
+    color: rgb(var(--neon-blue));
+    border-bottom: .0625rem solid rgb(var(--neon-blue));
+}
+
+#page-title:after,
+.meta-title:after {
+    height: 0;
+}
+
+#header {
+    --swatch-headerh1-color: var(--deckard-red);
+    --swatch-headerh2-color: var(--deckard-red);
+
+    --search-icon-color: var(--display-green);
+    --search-icon-hover-color: var(--gaff-black);
+    --search-icon-hover-bg-color: var(--display-green);
+    --search-textbox-text-color: 0, 0, 0, 0;
+
+    --search-icon-focus-color: var(--display-green);
+    --search-icon-focus-bg-color: var(--display-green);
+    --search-focus-outline-color: var(--display-green);
+    --search-focus-textbox-bg-color: var(--display-green);
+    --search-focus-textbox-text-color: var(--gaff-black);
+
+    --login-line-divider-color: var(--display-inter);
+    --login-username-color: var(--display-green);
+    --login-myaccount-color: var(--display-green);
+    --login-myaccount-underline-color: var(--display-inter);
+    --login-myaccount-hover-color: var(--gaff-black);
+    --login-myaccount-hover-bg-color: var(--display-green);
+    --login-arrow-color: var(--display-green);
+
+    --login-dropdown-bg-color: var(--display-dark);
+    --login-dropdown-bg-image: var(--display-dark);
+    --login-dropdown-border-color: var(--display-green), 0.5;
+    --login-dropdown-text-color: var(--display-inter);
+    --login-dropdown-text-hover-color: var(--display-green);
+    --login-dropdown-bg-hover-color: var(--display-dark);
+
+    --login-mobile-icon-color: var(--display-green);
+    --login-mobile-icon-hover-color: var(--gaff-black);
+    --login-mobile-icon-hover-bg-color: var(--display-green);
+
+    background-image: none;
+}
+
+#header h1 {
+    width: 100%;
+    height: var(--header-height-on-desktop);
+    z-index: -9999;
+}
+
+#header h1 a {
+    text-shadow: none;
+    height: 100%;
+    width: 100%;
+    color: transparent;
+    background-image: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A9042763-269-7zlf/foundation-text.png);
+    margin: 0;
+    padding: 0;
+    background-size: auto calc(var(--header-height-on-desktop) - 1rem);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+@media only screen and (max-width: 768px) {
+    #header h1 a {
+    	background-size: auto calc(var(--header-height-on-desktop) - 3rem);
+    	background-position: center center;
+    }
+}
+
+#header h1 a::before {
+    text-shadow: none;
+    color: transparent;
+}
+
+#header h2 {
+    display: none;
+}
+
+#extra-div-1 {
+    height: var(--header-height-on-desktop);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background-image: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A9042763-270-e2e2/grid.png);
+    background-size: calc(var(--header-height-on-desktop) * 4);
+}
+
+#top-bar {
+    --topmenu-category-color: var(--display-inter);
+    --topmenu-category-hover-color: var(--display-green);
+    --topmenu-hover-border-color: var(--display-green);
+
+    --mobile-topmenu-sidebar-button-color: var(--display-green);
+
+    --dropdown-bg-color: var(--display-dark), 0.9;
+    --dropdown-border-color: var(--display-green), 0.5;
+    --dropdown-links-color: var(--display-inter);
+    --dropdown-links-hover-color: var(--display-green);
+    --dropdown-links-hover-bg-color: var(--intentionaltypo);
+}
+
+
+/* BREADCRUMBS */
+
+#breadcrumbs a:hover,
+.pseudocrumbs a:hover,
+#breadcrumbs a:active,
+.pseudocrumbs a:active,
+#breadcrumbs a:focus-within,
+.pseudocrumbs a:focus-within {
+    color: rgb(var(--neon-blue));
+    text-decoration: none;
+}
+
+/* SCROLLBAR AND SIDEBAR */
+
+html,
+body {
+    scrollbar-color:
+    	rgb(var(--tyrell-green)) rgb(var(--display-dark));
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    width: 18px;
+    background: transparent;
+}
+
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+    background: rgb(var(--display-dark));
+}
+
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+    background: rgb(var(--tyrell-green));
+    border: rgb(var(--tyrell-green)) 1px solid;
+    border-radius: 0px;
+}
+
+html::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover {
+    background: rgb(var(--display-green));
+}
+
+#side-bar,
+#interwiki {
+    --sidebar-bg-color: var(--display-dark);
+    --sidebar-resources-bg-color: var(--tyrell-green), 0.25;
+    --sidebar-media-bg-color: var(---tyrell-green), 0.25;
+
+    --sideblock-heading-border-color: var(--display-green);
+    --sideblock-heading-text-color: var(--display-green);
+
+    --sidebar-border-color: var(--swatch-border-color), 0.08;
+    --sidebar-subtest-color: var(--swatch-primary);
+
+    --sidebar-links-text: var(--display-inter);
+    --sidebar-links-hover-bg-color: var(--display-green);
+    --sidebar-links-hover-text-color: var(--gaff-black);
+}
+
+hr {
+    background-color: rgb(var(--neon-blue));
+    border-top: .0625rem solid rgb(var(--neon-blue));
+}
+
+.code {
+    background-color: rgb(var(--scissor-blades));
+}
+
+blockquote,
+div.blockquote {
+    border: .0625rem dashed rgba(var(--display-green), 1);
+    color: rgb(var(--display-green));
+}
+
+blockquote hr,
+div.blockquote hr {
+    background-color: rgb(var(--display-green));
+    border-top: .0625rem solid rgb(var(--display-green));
+}
+
+.code {
+    background-color: rgb(var(--electric-sheep));
+}
+
+.scp-image-block {
+    box-shadow: none;
+    border: none;
+}
+
+.scp-image-block .scp-image-caption {
+    border-top: .0625rem outset rgba(var(--display-green), 1);
+    background-color: rgb(var(--display-dark));
+    color: rgb(var(--display-green));
+}
+
+
+/* MAIN CONTENT */
+
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:focus {
+    -webkit-filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg);
+}
+
+#main-content {
+    --tabs-bg: var(--pkd-blaster);
+    --tabs-txt: var(--tears-n-rain);
+    --tabs-hover-bg: var(--neon-blue);
+    --tabs-hover-txt: var(--pkd-blaster);
+    --tabs-selected-bg: var(--neon-blue);
+    --tabs-selected-txt: var(--lapd-badge);
+    --tabs-selected-outline: var(--neon-blue);
+    --tabs-bottom-border-color: var(--neon-blue);
+
+    --tabs-content-bg-color: var(--pkd-blaster), 0.25;
+    --tabs-content-border-color: var(--neon-blue);
+
+    --tables-header-bg: var(--pkd-blaster);
+    --tables-header-txt: var(--tears-n-rain);
+    --tables-border: var(--neon-blue);
+    --tables-body-txt: var(--passive-blue);
+    --tables-body-bg: var(--pkd-blaster), 0.50;
+
+    --toc-directory-lines-color: var(--neon-blue);
+    --toc-header-bg-color: var(--passive-blue);
+    --toc-header-text-color: var(--lapd-badge);
+    --toc-header-text-hover-color: var(--neon-blue);
+    --toc-body-bg-color: var(--pkd-blaster);
+    --toc-body-link-color: var(--tears-n-rain);
+    --toc-body-link-hover-color: var(--neon-blue);
+    --toc-body-hover-arrow-color: var(--neon-blue);
+
+    --ui-icon-color: var(--display-inter);
+    --ui-icon-bg: var(--display-dark);
+    --ui-icon-hover-color: var(--display-green);
+    --ui-icon-hover-bg: var(--tyrell-green);
+
+    --blockquote-bg-color: var(--display-dark), 0.5;
+    --blockquote-colorbar-color: var(--display-green), 1;
+
+    --footnotes-footer-colorbar-color: var(--tears-n-rain);
+    --footnotes-footer-title-bg-color: var(--tears-n-rain);
+    --footnotes-footer-title-text-color: var(--lapd-badge);
+    --footnotes-footer-bg-color: var(--pkd-blaster);
+
+    --pagetags-title-bg: var(--neon-blue);
+    --pagetags-title-text: var(--lapd-badge);
+    --pagetags-text-color: var(--display-inter);
+    --pagetags-text-hover-color: var(--gaff-black);
+    --pagetags-text-hover-bg-color: var(--display-green);
+}
+
+table.wiki-content-table th {
+    font-family: var(--display-alt-font);
+}
+table.wiki-content-table th strong {
+  font-family: var(--display-font);
+}
+
+:root {
+    --hoverblock-header-bg: var(--neon-blue);
+    --hoverblock-header-txt: var(--lapd-badge);
+    --hoverblock-footer-txt: var(--electric-sheep);
+    --hoverblock-bg: var(--pkd-blaster);
+
+    --ui-button-bg: var(--display-dark);
+    --ui-button-txt: var(--display-inter);
+    --ui-button-hover-bg: var(--tyrell-green);
+    --ui-button-hover-outline: var(--display-green);
+    --ui-button-hover-txt: var(--display-green);
+
+    --modal-bg: var(--display-dark);
+    --modal-body-text: var(--display-green);
+    --modal-body-header-txt: var(--blade-runner);
+    --modal-header-bg: var(--blade-runner);
+    --modal-header-stripe: var(--deckard-red);
+    --modal-header-txt: var(--display-dark);
+}
+
+/* FOOTERS AND BELOW */
+
+.page-source {
+    background: rgb(var(--electric-sheep));
+    font-family: var(--mono-font);
+    color: rgb(var(--gaff-black));
+}
+
+.content-panel {
+    --box-shadow-3: rgb(var(--neon-blue, 170, 170, 170));
+}
+
+.hl-default, .hl-code, .hl-brackets { color: black; }
+
+#lock-info,
+div.note,
+input.checkbox,
+input.text,
+textarea {
+    font-family: var(--body-font);
+}
+
+#footer {
+    --footer-bg-color: var(--display-inter);
+    --footer-text-color: var(--gaff-black);
+    --footer-link-color: var(--gaff-black);
+    --footer-link-hover-color: var(--gaff-black);
+    --footer-link-hover-bg-color: var(--display-green);
+}
+
+#license-area {
+    --license-bg-color: var(--lapd-badge);
+    --license-text-color: var(--display-inter);
+    --license-link-color: var(--display-green);
+    --license-link-hover-color: var(--gaff-black);
+    --license-link-hover-bg-color: var(--display-green);
+}
+
+/* TOGGLE SIDEBAR (BHL) CHANGES */
+
+@supports(display: grid) {
+    @media only screen and (min-width: 769px) {
+    	#main-content::before {
+    		background: rgba(var(--display-dark), .55) 1px 1px repeat;
+    	}
+    }
+}
+
+/* CREDIT MODULE for SCP-JP */
+
+#page-content .creditRate.creditModule ~ [id*="u-credit"] div.modalbox .modalbox-title {
+  background-image: unset;
+  background-color: rgb(var(--modal-header-bg));
+}
+#page-content .creditRate.creditModule ~ [id*="u-credit"] div.modalbox .credit {
+  max-height: 40vh;
+  overflow-y: scroll;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding: 0 1em;
+}
+
+/* SPECIAL DIVS */
+
+.console {
+    padding: 5px 5px 5px 5px;
+    margin-bottom: 10px;
+    width: 97.7%;
+    font-family: var(--terminal-font);
+    font-size: 1.1em;
+    background-color: rgb(var(--display-dark));
+    border: 3px dashed rgb(var(--display-green));
+    color: rgb(var(--display-inter));
+}
+
+.console hr,
+.console-header hr {
+    background: linear-gradient(10deg, rgba(var(--display-green), 0.25) 0%, rgba(var(--display-green), 1) 50%, rgba(var(--display-green), 0.25) 100%);
+    border-top: none;
+}
+
+.console-header {
+    font-family: var(--header-font);
+    text-align: center;
+    color: rgb(var(--display-green));
+}
+.console-header-alt {
+    font-family: var(--header-alt-font);
+    text-align: center;
+    color: rgb(var(--display-green));
+
+    .lcd {
+    	position: relative;
+    }
+    .lcd::after {
+    	display: block;
+    	position: absolute;
+    	top: 0;
+
+    	width: 100%;
+    	height: 100%;
+    	background-image: repeating-linear-gradient(to bottom, rgba(var(--display-dark), 0%), rgba(var(--display-dark), 0%) .1875rem, rgba(var(--display-dark), 100%) .25rem, rgba(var(--display-dark), 0%) .3125rem, rgba(var(--display-dark), 0%) .5rem);
+    	content: ""
+    }
+}
+
+table.terminal {
+    border-collapse: collapse;
+}
+
+table.terminal th {
+    font-weight: bold;
+    border: none;
+    padding: 0em 0em 0 0;
+}
+
+table.terminal td {
+    padding: 0em 0 0 1em;
+}
+
+.console,
+table.terminal,
+.console-header,
+blockquote,
+div.blockquote {
+    --hover-link-color: var(--linkgr-hl);
+    --newpage-color: var(--display-green);
+    --link-color: var(--display-green);
+    --visited-link-color: var(--linkgr);
+}
+
+.logs, .logs-lcd {
+    padding: 5px 5px 5px 5px;
+    margin-bottom: 10px;
+    width: 97.7%;
+    font-size: 1.1em;
+    background-color: rgb(var(--lapd-badge));
+    border: 3px solid rgb(var(--neon-blue));
+    color: rgb(var(--passive-blue));
+}
+.logs { font-family: var(--display-alt-font); }
+.logs-lcd { font-family: var(--display-font); }
+
+.logs-header {
+    text-align: center;
+    color: rgb(var(--neon-blue));
+}
+
+.logs hr {
+    background: linear-gradient(10deg, rgba(var(--neon-blue), 0.25) 0%, rgba(var(--neon-blue), 1) 50%, rgba(var(--neon-blue), 0.25) 100%);
+}
+
+table:is(.dialog, .dialog-alt) {
+    border-collapse: collapse;
+}
+
+table:is(.dialog, .dialog-alt) th {
+    font-family: var(--display-alt-font);
+    font-size: 1.1em;
+    border-right: 1px solid rgb(var(--neon-blue));
+    color: rgb(var(--neon-blue));
+    padding: 1.1em 1em 0em 1em;
+}
+table:is(.dialog, .dialog-alt) th strong {
+  font-family: var(--display-font);
+  --wght: 400;
+}
+
+table.dialog td {
+    font-family: var(--dialogue-font);
+    font-size: 1.15em;
+    padding: 1.15em 0em 0em 0.8em;
+}
+table.dialog-alt td {
+    font-family: var(--dialogue-alt-font);
+    font-size: 1.15em;
+    padding: 1.15em 0em 0em 0.8em;
+}
+
+table:is(.dialog, .dialog-alt) td.active {
+    color: rgb(var(--neon-blue));
+}
+
+.blokquote-alt,
+.logs {
+    --hover-link-color: var(--linkalt-hl);
+    --newpage-color: var(--linkalt);
+    --link-color: var(--linkalt);
+    --visited-link-color: var(--tears-n-rain);
+}
+
+.blokquote-alt {
+    margin: .5em 1.25rem;
+    padding: .825em 1.25em;
+    border: .0625rem dashed rgba(var(--neon-blue), 1);
+    color: rgb(var(--neon-blue));
+    background-color: rgba(var(--pkd-blaster), 0.7);
+}
+
+.blokquote-alt hr {
+    background-color: rgb(var(--neon-blue));
+    border-top: .0625rem solid rgb(var(--neon-blue));
+}
+
+/* SIDEBAR SCROLLBAR */
+
+#side-bar:hover,
+#side-bar:active {
+    scrollbar-color:
+    	rgb(var(--display-dark)) rgb(var(--tyrell-green), 1);
+    border-color: rgba(var(--tyrell-green), 1);
+}
+
+#side-bar::-webkit-scrollbar-track,
+#side-bar:hover::-webkit-scrollbar-track {
+    background-color: rgb(var(--display-dark));
+}
+
+#side-bar::-webkit-scrollbar-thumb {
+    background-color: rgb(var(--tyrell-green));
+}
+
+#side-bar:hover::-webkit-scrollbar-thumb {
+    background-color: rgb(var(--display-green));
+}
+
+/* System Dialog Patch (only for SCP-JP) */
+#page-content .wikisys--template-dialog {
+  background-color: rgb(var(--electric-sheep));
+}
+
+/* END */
+[[/code]]
+-----
+++++ GREEN VARIANT
+[[code type="css"]]
+:root {
+    /*GREEN (AGAIN) */
+    --electric-sheep: 233, 255, 230;
+
+    --neon-blue: 36, 229, 15;
+    --tears-n-rain: 89, 178, 73;
+    --passive-blue: 71, 155, 65;
+    --pkd-blaster: 16, 36, 12;
+    --lapd-badge: 1, 1, 1;
+
+    --linkalt: 110, 250, 88;
+    --linkalt-hl: 0, 250, 88;
+}
+
+#main-content {
+    --pagetags-title-bg: var(--display-green);
+}
+[[/code]]
+-----
+++++ YELLOW VARIANT
+[[code type="css"]]
+:root {
+    /* YELLOW */
+    --electric-sheep: 255, 255, 230;
+
+    --neon-blue: 229, 227, 15;
+    --tears-n-rain: 178, 150, 73;
+    --passive-blue: 155, 134, 65;
+    --pkd-blaster: 36, 29, 12;
+    --lapd-badge: 10, 8, 4;
+
+    --linkalt: 171, 201, 4;
+    --linkalt-hl: 225, 250, 0;
+}
+
+#main-content {
+    --pagetags-title-bg: var(--display-green);
+}
+[[/code]]
+-----
+++++ RED VARIANT
+[[code type="css"]]
+:root {
+    /* RED (AGAIN) */
+    --electric-sheep: 255, 237, 237;
+
+    --neon-blue: 229, 15, 15;
+    --tears-n-rain: 209, 48, 48;
+    --passive-blue: 195, 111, 111;
+    --pkd-blaster: 36, 12, 12;
+    --lapd-badge: 18, 1, 1;
+
+    --linkalt: 201, 4, 40;
+    --linkalt-hl: 255, 47, 0;
+}
+
+.blokquote-alt {
+    background-color: rgba(var(--pkd-blaster), 0.4);
+}
+
+.scp-image-block .scp-image-caption {
+    border-top: 0.0625rem outset rgba(230, 23, 16, 1);
+    background-color: rgb(18, 1, 1) !important;
+    color: rgb(230, 23, 16);
+}
+
+#main-content {
+    --pagetags-title-bg: var(--display-green);
+}
+[[/code]]
+[[/collapsible]]
+[[/iftags]]
+[[include :scp-jp:component:toggle-sidebar-bhl]]
+[[include :scp-jp:component:ayu18]]
+[[module CSS]]
+@import url(https://scp-jp.wdfiles.com/local--code/theme%3Acyberpunk/1); /* main theme */
+@import url(https://scp-jp.wdfiles.com/local--code/theme%3Acyberpunk/{$theme-number});
+[[/module]]
+[[include :scp-jp:component:interwiki-style
+| priority=3
+| theme=https://scp-jp.wdfiles.com/local--code/theme%3Acyberpunk/1
+]]
+[[include :scp-jp:component:interwiki-style
+| priority=4
+| theme=https://scp-jp.wdfiles.com/local--code/theme%3Acyberpunk/{$theme-number}
+]]

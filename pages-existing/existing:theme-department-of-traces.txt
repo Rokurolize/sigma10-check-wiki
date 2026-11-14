@@ -1,0 +1,442 @@
+[[iftags]]
+[[include :scp-jp:theme:black-highlighter-theme]]
+[[/iftags]]
+
+[[iftags +テーマ]]
+
+[[module css]]
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css");
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css");
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+|priority=1
+|theme=https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css
+]]
+
+[[include :scp-jp:component:interwiki-style
+|priority=2
+|theme=https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css
+]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** 痕跡部門テーマ
+**著者:** [[*user SealBaby-V]]
+**作成年:** 2026
+[[include :scp-jp:credit:end-preview]]
+
+[[image https://scp-jp.wdfiles.com/local--files/theme%3Ablack-highlighter-theme/black-highlighter-logo.svg]]
+
+++* 注: これはBlack Highlighterベースのテーマです。このテーマを使用するにはBlack Highlighterテーマもインポートする必要があります。[[[theme:black-highlighter-theme|詳細については、ここを参照してください。]]]
+
+-----
+
++* これは何？
+
+主に痕跡部門という財団下部組織が登場する記事に対しての適用を想定したカスタムテーマです。痕跡部門に関しては[[[blackbox-breakhouse-jp|こちら]]]。
+
+テーマを使用するには、以下のコードを記事の最上部に挿入してください。
+
+[[div class="code"]]
+
+@@[[include :scp-jp:theme:black-highlighter-theme]]@@
+@@[[include :scp-jp:theme:department-of-traces]]@@
+
+[[/div]]
+
+-----
+
+[[div class="scp-image-block block-right" style="width: 300px;"]]
+[[image https://scp-jp-storage.wdfiles.com/local--files/file%3A9122253-21-z1ty/department_of_traces.png]]
+[[div class="scp-image-caption" style="width: 300px;"]]
+痕跡部門
+[[/div]]
+[[/div]]
+
+[[toc]]
+
+~~~~
+
++* 例
+
+見出しは、行の先頭に1～6文字の「+」を置くことで作成できます
+
+[[collapsible show="▶︎ 見出し" hide="▼ 閉じる"]]
++ 1番目の見出し
+
+++ 2番目の見出し
+
++++ 3番目の見出し
+
+++++ 4番目の見出し
+
++++++ 5番目の見出し
+
+++++++ 6番目の見出し
+[[/collapsible]]
+
+@@ @@
+
+[[tabview]]
+[[tab タブを作る]]
+これはタブです。[[footnote]] これは脚注です。 [[/footnote]]
+[[/tab]]
+[[tab タブが作られた]]
+見てください、ここにもテキストがあります。
+
+なんと奇妙な。
+[[/tab]]
+[[tab 長いタブ]]
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[/tabview]]
+
+> これは引用ブロックです。各行の先頭に半角の「> 」を置くことで作成されます。
+>
+> 追加のテキスト
+> -----
+> これは罫線です
+>
+>> 入れ子になった引用ブロック
+
+||~ これは ||~ テーブルです ||
+||もう || 作り方は ||
+||||知っているはずです ||
+
+-----
+
+[[div class="report-box"]]
+
+[[=]]
+[[image https://scp-jp-storage.wdfiles.com/local--files/file%3A9122253-21-z1ty/department_of_traces.png width="120px"]]
++++* SCP-XXXX-JP実験ログ
+痕跡部門
+[[/=]]
+
+-----
+
+レポートボックスを使用することができます。
+
+[[/div]]
+
+[[div class="code"]]
+
+@@[[div class="report-box"]]@@
+
+@@[[=]]@@
+@@[[image https://scp-jp-storage.wdfiles.com/local--files/file%3A9122253-21-z1ty/department_of_traces.png width="120px"]]@@
+@@+++* SCP-XXXX-JP実験ログ@@
+@@痕跡部門@@
+@@[[/=]]@@
+
+@@-----@@
+
+@@hogehoge@@
+
+@@[[/div]]@@
+
+[[/div]]
+
+[[div class="report-box watermark"]]
+
+[[=]]
+[[image https://scp-jp-storage.wdfiles.com/local--files/file%3A9122253-21-z1ty/department_of_traces.png width="120px"]]
++++* SCP-XXXX-JP実験ログ
+痕跡部門
+[[/=]]
+
+-----
+
+watermarkクラスを併用することで透かしを入れることができます。
+こちらはレポートボックスに限らず、引用ブロック等にも使用できます。
+
+[[/div]]
+
+[[div class="code"]]
+
+@@[[div class="report-box watermark"]]@@
+
+@@[[=]]@@
+@@[[image https://scp-jp-storage.wdfiles.com/local--files/file%3A9122253-21-z1ty/department_of_traces.png width="120px"]]@@
+@@+++* SCP-XXXX-JP実験ログ@@
+@@痕跡部門@@
+@@[[/=]]@@
+
+@@-----@@
+
+@@hogehoge@@
+
+@@[[/div]]@@
+
+[[/div]]
+
+[[div class="limit"]]
+[[div class="anchor"]]
+[[div class="sidebox"]]
+sidebox内のテキスト
+[[/div]]
+[[/div]]
+
+[[*user EstrellaYoshte]]氏の作成した、[[[theme:penumbra-bhl|Penumbra BHL]]]に見られるサイドボックスを追加しています。
+
+[[div class="code"]]
+
+@@[[div class="limit"]]@@
+@@[[div class="anchor"]]@@
+@@[[div class="sidebox"]]@@
+@@sidebox内のテキスト@@
+@@[[/div]]@@
+@@[[/div]]@@
+
+@@sideboxの左に表示したいテキスト@@
+
+@@[[/div]]@@
+
+[[/div]]
+
+[[/div]]
+
+@@@@
+@@@@
+
+[[collapsible show="▶ コード" hide="▼ 閉じる"]]
+
+[[code type="css"]]
+
+:root {
+    --logo-image: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A9122253-21-z1ty/department_of_traces.png");
+    --header-title: "痕跡部門";
+    --header-subtitle:"";
+
+     --header-height-on-desktop: 12rem;
+     --header-height-on-mobile: 10rem;
+
+    --pale-gray-monochrome: 238, 240, 234;
+    --pale-accent: 151, 116, 89;
+    --bright-accent: 151, 116, 89;
+    --medium-accent: 78, 60, 46;
+    --dark-accent: 63, 48, 37;
+
+    --visited-link-color: 121, 86, 59;
+}
+
+#header {
+    --search-icon-color: var(--swatch-primary);
+    --search-focus-textbox-bg-color: var(--swatch-secondary-color);
+    --login-line-divider-color: var(--swatch-primary);
+    --login-username-color: var(--swatch-primary);
+    --login-myaccount-color: var(--swatch-primary);
+}
+
+#header::before {
+    background-size: auto 9rem;
+}
+
+#header h1 {
+    align-items: flex-end;
+}
+#header h1 a {
+    margin-bottom: 2rem;
+}
+
+#extra-div-1 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--header-height-on-desktop);
+    background-image: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A6903570-74-r06f/publicdomainq-0062947rhh.jpg);
+    background-size: cover;
+    background-color: rgb(var(--pale-gray-monochrome));
+}
+
+.limit {
+    margin-bottom: -1rem;
+}
+
+.anchor {
+    position: -webkit-sticky;
+    position: sticky;
+    height: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+.sidebox {
+    background-color: rgb(var(--pale-gray-monochrome));
+    border-top: solid 0.125rem rgb(var(--swatch-primary));
+    padding: .14rem 1rem .14rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    width: calc((100vw - (var(--body-width-on-desktop) + 10rem))/2);
+    max-height: calc(100vh - 18rem) !important;
+    position: absolute;
+    top: 0;
+    left: 103.5%;
+    z-index: 5;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+@media (max-width: 80.625rem) {
+    .sidebox {
+        width: auto;
+        max-width: 50vw !important;
+        color: rgba(0, 0, 0, 0);
+        background-color: rgba(0, 0, 0, 0);
+        box-shadow: 0 0 0 0 rgb(var(--swatch-primary));
+        border: none;
+        right: calc(((100vw - 1em - var(--body-width-on-desktop)) / 2) * -1);
+        left: initial;
+        pointer-events: none;
+        transition: max-width 0.2s ease-in-out 0.1s, color 0.2s ease-in-out 0.1s, box-shadow 0.5s ease-in-out 0.1s, background-color 0s ease-in-out 0s;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        scrollbar-width: thin;
+    }
+    .sidebox::-webkit-scrollbar {
+        width: 0.5em;
+    }
+    .sidebox * {
+        opacity: 0;
+        transition: opacity 0.2s ease-in-out 0.1s;
+    }
+    .sidebox::before,
+    .sidebox::after {
+        content: " ";
+        position: absolute;
+        pointer-events: all;
+        right: 0;
+    }
+    .sidebox::before {
+        top: calc(50% - 0.75rem);
+        width: 0;
+        height: 0;
+        border-top: 0.75rem solid transparent;
+        border-bottom: 0.75rem solid transparent;
+        border-right: 0.75rem solid rgb(var(--swatch-primary));
+        transition: border 0.1s ease-in-out 0.1s;
+        z-index: 10;
+    }
+    .sidebox::after {
+        top: 0;
+        max-width: 0.75rem;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0.125rem 0 0 0 rgb(var(--swatch-primary));
+        max-height: calc(100vh - 18rem) !important;
+        background-color: rgb(var(--pale-gray-monochrome));
+        z-index: -1;
+        transition: box-shadow 0.5s ease-in-out 0.1s, max-width 0.5s ease-in-out 0.1s, border-top-left-radius 0.5s ease-in-out 0.1s, border-bottom-left-radius 0.5s ease-in-out 0.1s;
+    }
+    .sidebox:hover,
+    .sidebox:active {
+        color: rgb(var(--swatch-text-general));
+        background-color: rgb(var(--pale-gray-monochrome));
+        pointer-events: all;
+        overflow-y: scroll;
+        transition: max-width 0.5s ease-in-out 0.2s, color 0.5s ease-in-out 0.2s, box-shadow 0.5s ease-in-out 0.1s, background-color 0s ease-in-out 0.6s, right 0.5s ease-in-out 0.1s;
+    }
+    .sidebox:hover *,
+    .sidebox:active * {
+        opacity: 1;
+        transition: opacity 0.5s ease-in-out 0.2s;
+    }
+    .sidebox:hover::before,
+    .sidebox:active::before {
+        border-top: 0vw solid transparent;
+        border-bottom: 0vw solid transparent;
+    }
+    .sidebox:hover::after,
+    .sidebox:active::after {
+        box-shadow: 0 -0.125rem 0 0 rgb(var(--swatch-primary));
+        right: 0;
+        max-width: 100% !important;
+        border-top-left-radius: 0rem;
+        border-bottom-left-radius: 0rem;
+    }
+}
+@media only screen and (max-width:56.25rem) {
+    .anchor {
+        top: calc(var(--topbar-height-on-mobile) + 0.75rem);
+    }
+    .sidebox,
+    .sidebox:hover,
+    .sidebox:active {
+        right: calc(((100vw - (100% - 3rem))/2) * -1 + 2em);
+    }
+    .sidebox::before,
+    .sidebox::after {
+        content: " ";
+        position: absolute;
+        pointer-events: all;
+        right: 0;
+    }
+}
+
+.report-box {
+    margin: 1em 0;
+    padding: 1em;
+    background: rgb(var(--pale-gray-monochrome));
+    box-shadow: 0px 0px 3px 1px rgb(var(--swatch-primary));
+}
+
+.watermark {
+    background-image: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A9122253-22-xp66/department_of_traces2.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 120%;
+}
+
+[[/code]]
+
+[[/collapsible]]
+
+[[/iftags]]
+
+[[include :scp-jp:component:centered-header-bhl]]
+[[include :scp-jp:component:toggle-sidebar-bhl]]
+
+[[module CSS]]
+@import url("https://scp-jp.wdfiles.com/local--code/theme%3Adepartment-of-traces/1")
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+|priority=3
+|theme=https://scp-jp.wdfiles.com/local--code/theme%3Adepartment-of-traces/1
+]]

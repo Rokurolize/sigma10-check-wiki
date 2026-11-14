@@ -1,0 +1,331 @@
+[[module CSS]]
+@import url("https://scp-jp.wdfiles.com/local--code/theme%3Adira-theme/1");
+[[/module]]
+[[include :scp-jp:component:interwiki-style
+| priority= 1
+| theme= https://scp-jp.wdfiles.com/local--code/theme%3Adira-theme/1
+]]
+
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** DIRAテーマ
+**原題:** Тема DIRA
+**著作権者:** [[*user MaestroGame]]
+**翻訳責任者:** [[*user takion00]]
+**作成年:** 2021
+**翻訳年:** 2026
+**初訳時参照リビジョン:** rev.24
+**元記事リンク:** [*https://scpfoundation.net/theme:dira-theme Тема DIRA]
+[[include :scp-jp:credit:end-preview]]
+
+
+このテーマを使用したい場合は以下のコードを記事に追加してください。
+> @@[[include :scp-jp:theme:dira-theme]]@@
+
++ 要素の例
+
+[[toc]]
+
+水平線は4つのハイフン@@"----"@@で作成でき、引用ブロック内に配置されていないときはページ全体に適用されます。
+
+[[include :scp-jp:component:image-block name=https://scp-jp-storage.wdfiles.com/local--files/file%3A9466112-179-c10t/DIRA_logo.png|caption=画像ブロック|width=280px]]
+
+見出しは行の先頭に1~6個の"+"を置くことで作ることができます。
+
++ 見出し1
+
+++ 見出し2
+
++++ 見出し3
+
+++++ 見出し4
+
++++++ 見出し5
+
+++++++ 見出し6
+
+@@ @@
+
+[[collapsible show="折り畳みを開く" hide="折り畳みを閉じる"]]
+
+まだここには何もありません。
+
+[[/collapsible]]
+
+~~~~
+
+[[tabview]]
+[[tab タブレーター]]
+これはタブです。
+[[/tab]]
+[[tab タブレーション]]
+
+おっとみてくださいここにもタブがあります。
+
+なんと趣があるのでしょうか。
+
+[[/tab]]
+[[tab 長いタブ]]
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。[[footnote]] これは脚注です。 [[/footnote]]
+
+[[/tab]]
+[[tab この空のタブの名前はなぜだかわからないけどとても長いです。なぜでしょうか?不思議ですね。]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+なにもないから、ね?
+[[/tab]]
+[[/tabview]]
+
+> これは引用ブロックで、行の先頭に"> "を追加することで作成できます。 [[footnote]]もちろん{{@@[[div class="blockquote"]]@@}}でもできますけどね。 [[/footnote]]
+>
+> もっとテキスト
+> -----
+> 区切り線
+>
+>> ネストされた引用ブロック
+
+[[div class="code"]]
+@@偽のセレクタ{@@
+@@  偽のプロパティ: 偽の値;@@
+@@}@@
+[[/div]]
+
+[[[theme:dira-theme|訪問済みリンク]]] | [# 未訪問リンク] | [[a href="javascript:void(0)" class="newpage"]]存在しないリンク[[/a]]
+
+
+# 番号付きリスト
+# リストのアイテム
+# リストのアイテム
+ # ネストされたリストのアイテム
+
+* 箇条書きリスト
+* リストのアイテム
+* リストのアイテム
+ * ネストされたリストのアイテム
+
+||~ これは ||~ テーブル構文です。 ||
+|| あなたは || これの作り方を ||
+|||| 知っているはずです。 ||
+|| もし || 知らなかったら ||
+|||| [[[wiki-syntax:tables|ここ]]]を見てください。 ||
+
+[[footnoteblock]]
+
++ ソースコード
+[[collapsible show="+ ソースコード" hide="- ソースコード"]]
+[[code type="CSS"]]
+@media (max-width: 770px) {
+ #header h1, #header h2
+{
+    margin-left: 100px;
+  }
+}
+
+body {
+    color: #000;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+h1, #page-title {
+    color: #000;
+}
+:is(#side-bar,#interwiki) .side-block {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+#header h1 a {
+    color: #fff;
+}
+#header h1 a::before {
+    color: #e9ebf0;
+}
+#header h2 span::before {
+    color: #f2f2fd;
+}
+#header h2 span {
+    text-shadow: 3px 1px 2px rgba(0,0,0,.8);
+    color: #ffffff;
+}
+#login-status {
+    color: #000;
+}
+#login-status a {
+    color: #000;
+}
+a {
+    color: #0c0043;
+    text-decoration: none;
+    background: transparent;
+}
+a.newpage {
+    color: #051b73;
+    text-decoration: none;
+    background: transparent;
+}
+a:visited {
+    color: #0c0043;
+}
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a {
+    background: #e3e3e3;
+    color: #505050;
+}
+#top-bar ul li ul {
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+#top-bar ul li ul a, #top-bar a:hover {
+    color: #505050;
+}
+#search-top-box-input {
+    color: #FFF;
+    background: #000;
+}
+#search-top-box-form input[type=submit] {
+    color: #fff;
+    background: #000;
+    background: linear-gradient(to bottom, #000,#000,#000);
+}
+.page-rate-widget-box .rate-points {
+    background: #616163 !important;
+    border: solid 1px #616163 !important;
+}
+.page-rate-widget-box .cancel {
+    background: #616163;
+    border: solid 1px #616163;
+}
+.page-rate-widget-box .cancel a {
+    color: #fff;
+}
+.page-rate-widget-box .rateup a:hover, .page-rate-widget-box .ratedown a:hover {
+    background: #616163;
+}
+.page-rate-widget-box .rateup, .page-rate-widget-box .ratedown {
+    background: #e8dcd4;
+    border-top: solid 1px #616163;
+    border-bottom: solid 1px #616163;
+}
+.page-rate-widget-box .rateup a, .page-rate-widget-box .ratedown a {
+    color: #000;
+}
+.page-rate-widget-box .cancel a:hover {
+    background: #464646;
+    color: #fff !important;
+}
+#page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton a:hover {
+    color: #fff;
+}
+#page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton:hover {
+    background: #464646;
+}
+#page-content .creditRate.creditModule .rate-box-with-credit-button {
+    border: none;
+}
+#page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton {
+    background: #616163;
+    border: 1px solid #616163;
+    box-shadow: none;
+}
+
+/* SideBar&Interwiki */
+:is(#side-bar,#interwiki) a:visited {
+    color: #000;
+}
+:is(#side-bar,#interwiki) a {
+    color: #000;
+}
+:is(#side-bar,#interwiki) div.menu-item img {
+    filter: hue-rotate(0deg) brightness(0%);
+}
+:is(#side-bar,#interwiki) .side-block {
+    border: 1px solid #000000;
+    background: #fff !important;
+}
+:is(#side-bar,#interwiki) .heading {
+    color: #000;
+}
+#side-bar .side-block.sns a img {
+    filter: none;
+}
+#header h1 a {
+    line-height: 0px;
+    max-height: 0px;
+    color: transparent;
+    background: transparent;
+    font-family: 'Verdana', Arial, sans-serif;
+    text-decoration: none;
+    text-shadow: none;
+    letter-spacing: 0.9px;
+}
+#header h1 a::before {
+    content: "DIRA";
+    color: #000;
+    letter-spacing: -0.02em;
+}
+#header h2 span {
+    line-height: 0px;
+    max-height: 0px;
+    font-weight: bold;
+    color: transparent;
+    text-shadow: none;
+}
+#header h2 span::before {
+    content: '内部調査分析部門';
+    color: #000;
+}
+#header {
+    background: url('https://scp-jp-storage.wdfiles.com/local--files/file%3A9466112-179-c10t/DIRA_logo.png') 0px 40px no-repeat;
+    background-size: 90px;
+}
+div#container-wrap {
+    background: url('https://scp-jp-storage.wdfiles.com/local--files/file%3A9466112-180-vi1n/DIRA_back.png') top left repeat-x;
+}
+div.yui-navset ul.yui-nav a,
+div.yui-navset div.yui-navset-top ul.yui-nav a {
+    background: #fff;
+    color: #000;
+}
+div.yui-navset ul.yui-nav a:hover,
+div.yui-navset ul.yui-nav a:focus {
+    background: #464646;
+    color: #fff;
+}
+div.yui-navset ul.yui-nav .selected a,
+div.yui-navset ul.yui-nav .selected a:focus,
+div.yui-navset ul.yui-nav .selected a:hover {
+    background: #616163;
+    color: #fff;
+}
+
+[[/code]]
+[[/collapsible]]
+[[/iftags]]

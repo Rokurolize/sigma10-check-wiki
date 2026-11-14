@@ -1,0 +1,323 @@
+[[iftags +テーマ]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
+
+これは[[*user DrMagnus]]によるMagnus Web Formatテーマ(のJPローカライズ版)です。
+
+このテーマをSCP-JPやSCP-JP付属サイトで使う際は、以下のコードをページの冒頭に入れてください。
+
+ [[div class="code"]]
+ [[include :scp-jp:theme:magnus-web-format]]
+ [[/div]]
+
+このテーマは私[[footnote]]訳注: つまり[[*user DrMagnus]][[/footnote]]の記事で使うために設計されたものです。自分の記事を私の記事みたいに見せるためのコンポーネントの使い方を理解していないなら、使わないでください。
+
+これはサイト全体を変化させるテーマではありません。
+
+[[div class="addendumbox"]]
+@@[[div class="addendumbox"]]@@
+(ここにテキストを入力)
+@@[[/div]]@@
+[[/div]]
+[[div class="material-box"]]
+@@[[div class="material-box"]]@@
+(ここにテキストを入力)
+@@[[/div]]@@
+[[/div]]
+[[div class="addendumtitle"]]
+@@[[div class="addendumtitle"]]@@
+(ここにテキストを入力)
+@@[[/div]]@@
+[[/div]]
+[[div class="maintitle"]]
+@@[[div class="maintitle"]]@@
+(ここにテキストを入力)
+@@[[/div]]@@
+[[/div]]
+[[div class="scp-header"]]
+@@[[div class="scp-header"]]@@
+(ここにテキストを入力)
+@@[[/div]]@@
+[[/div]]
+[[div class="addenda-header"]]
+@@[[div class="addenda-header"]]@@
+(ここにテキストを入力)
+@@[[/div]]@@
+[[/div]]
+[[div class="scp-info"]]
+@@[[div class="scp-info"]]@@
+(ここにテキストを入力)
+@@[[/div]]@@
+[[/div]]
+[[div class="scp-info-box"]]
+@@[[div class="scp-info-box"]]@@
+(ここにテキストを入力)
+@@[[/div]]@@
+[[/div]]
+[[div class="object-info"]]
+@@[[div class="object-info"]]@@
+(ここにテキストを入力)
+@@[[/div]]@@
+[[/div]]
+[[div class="title-style"]]
+@@[[div class="title-style"]]@@
+(ここにテキストを入力)
+@@[[/div]]@@
+[[/div]]
+[[div class="update-div-empty"]]
+@@[[div class="update-div-empty"]]@@
+(ここにテキストを入力)
+@@[[/div]]@@
+[[/div]]
+[[div class="update-div"]]
+@@[[div class="update-div"]]@@
+(ここにテキストを入力)
+@@[[/div]]@@
+[[/div]]
+[[div class="computed"]]
+@@[[div class="computed"]]@@
+(ここにテキストを入力)
+@@[[/div]]@@
+[[/div]]
+[[div class="rawcode"]]
+@@[[div class="rawcode"]]@@
+(ここにテキストを入力)
+@@[[/div]]@@
+[[/div]]
+[[div class="codebox"]]
+@@[[div class="codebox"]]@@
+(ここにテキストを入力)
+@@[[/div]]@@
+[[/div]]
+[[collapsible]]
+折り畳み
+[[/collapsible]]
+||~ これが ||~ テーブルの構文です ||
+|| 使い方が || 分からなかったら ||
+|||| ページソースを見てね ||
+[[tabview]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 中身があるタブ]]
+中身
+[[/tab]]
+[[tab 中身がいっぱいあるタブ]]
+中身
+中身
+中身
+中身
+中身
+[[/tab]]
+[[/tabview]]
+[[/iftags]]
+
+[[div [[iftags -テーマ]]style="display: none"[[/iftags]]]]
+[[module CSS show="true"]]
+#page-content .collapsible-block {
+    position: relative;
+    padding: 0.5em;
+    margin: 0.5em;
+    box-shadow: 2px 1.5px 1px rgba(176,16,0,0.7), 0 0 0px 1px lightgrey;
+    overflow-wrap: break-word;
+}
+
+.collapsible-block-unfolded{
+    color: black;
+    overflow-wrap: break-word;
+
+}
+
+.collapsible-block-unfolded-link {
+    text-align:center;
+}
+
+.collapsible-block-folded {
+    text-align: center;
+    color: dimgrey;
+}
+
+.collapsible-block-link {
+    font-weight: bold;
+    color: dimgrey;
+    text-align: center;
+}
+
+.addendumbox {
+    padding: .01em 16px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    padding-bottom: 1em;
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.material-box {
+    padding: .01em 16px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    padding-bottom: 1em;
+    border: 1px lightgrey solid;
+    box-shadow: 1px 2px 2px 0 rgba(0,0,0,0.16);
+}
+
+.material-box blockquote {
+    border: 1px double #999;
+}
+
+.wiki-content-table {
+    width: 100%;
+}
+
+.addendumbox blockquote {
+    border: 1px double #999;
+}
+
+.addendumtitle {
+   opacity: 0.8;
+   margin-bottom: 10px;
+   color: #b01;
+}
+
+.maintitle {
+   margin-bottom: 10px;
+   color: black;
+}
+
+.scp-header {
+    text-align: center;
+    font-size:x-large;
+    color:#b01;
+}
+
+.addenda-header {
+    width: 100%;
+    border-bottom: 2px black solid;
+    color: black;
+}
+
+.scp-info {
+    display:flex;
+    justify-content:space-between;
+    font-size:large;
+}
+
+.scp-info-box {
+    display:flex;
+    justify-content:space-between;
+}
+
+.object-info {
+    color:black;
+    align-self: flex-end;
+    font-size: large;
+}
+
+.title-style {
+    opacity: 0.8;
+    margin-bottom: 10px;
+    color: #b01;
+    font-size: large;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.update-div-empty {
+    text-align: right;
+    font-size: x-small;
+    color: lightgrey;
+}
+
+.update-div {
+    text-align: right;
+    font-size: x-small;
+}
+
+.computed {
+    border: 1px black solid;
+    width: 50%;
+    display: inline-block;
+text-align: left;
+    padding: 3px;
+}
+.computed:before {
+    content:"加工済コード";
+    font-weight: bold;
+border-bottom: solid 1px black;
+width: 100%;
+}
+.rawcode {
+    border: black solid 1px;
+    width: 50%;
+    display: inline-block;
+text-align: left;
+    padding: 3px;
+}
+.rawcode:before{
+    content:"未加工コード";
+    text-align: center;
+    font-weight: bold;
+border-bottom: solid 1px black;
+width: 100%;
+}
+.codebox {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.yui-navset .yui-nav .selected a em,  .yui-navset .yui-nav a em{
+        padding: 0.25em .75em;
+        top: 0px;
+        margin-bottom: 0px;
+}
+.yui-navset .yui-nav .selected a {
+     background: gray;
+}
+.yui-navset .yui-nav .selected {
+       margin: 0px;
+}
+.yui-navset .yui-nav .selected a, .yui-navset .yui-nav .selected a:focus, .yui-navset .yui-nav .selected a:hover, .yui-navset .yui-nav .selected a {
+         background: gray;
+}
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:focus {
+    background: gainsboro;
+    text-decoration: none;
+}
+.yui-navset .yui-nav a, .yui-navset .yui-navset-top .yui-nav a {
+background-color: none;
+background-image: none;
+}
+.yui-navset .yui-nav a {
+background: none;
+}
+.yui-navset .yui-nav li{
+margin: 0px;
+}
+
+#page-content .licensebox .collapsible-block {
+    position: unset;
+    padding: unset;
+    margin: unset;
+    box-shadow: unset;
+}
+
+.licensebox .collapsible-block-unfolded{
+    color: inherit;
+}
+
+.licensebox .collapsible-block-unfolded-link {
+    text-align: left;
+}
+
+.licensebox .collapsible-block-folded {
+    text-align: left;
+    color: inherit;
+}
+
+.licensebox .collapsible-block-link {
+    color: inherit;
+    text-align: left;
+}
+[[/module]]
+[[/div]]

@@ -1,0 +1,1235 @@
+[[iftags]]
+
+[[code type="CSS"]]
+
+/*
+License of this theme
+
+    DMAMテーマ
+    Created at 2024
+    Created by k-cal
+    CC BY-SA 3.0
+
+    This theme is based on 対話部門テーマ by dog_punch (published in 2020 under CC BY-SA 3.0)    
+*/
+
+/*
+License of the header image
+
+    対話部門
+    Created at 2020
+    Created by aisurakuto, dog_punch
+    Published at https://dog-punch.wdfiles.com/local--files/sintax%3Acss-taiwa/mmm
+    CC BY-SA 3.0
+
+    This image is based on 対話部門 by aisurakuto (published in 2020 under CC BY-SA 3.0)
+*/
+
+
+@import url(https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap);
+
+:root {
+  --base-color: ;
+  --main-color: #203a43;
+  --main-color-rgb: 32, 58, 67;
+  --main-color-light: #2c5364;
+  --main-color-lighter: #78b0c2;
+  --main-color-lighter-rbg: 120, 176, 194;
+  --main-color-dark: #0f2027;
+  --main-border-color: #203a43;
+  --accent-color: ;
+  --base-character-color: #292929;
+  --base-character-color-rgb: 41, 41, 41;
+  --base-border-color:  #292929;
+  --base-black: #292929;
+}
+
+div#container-wrap {
+    background: linear-gradient(45deg, #fcfcfc, #fff);
+}
+
+body {
+    color: #000;
+}
+
+
+
+
+/* Header */
+
+div#header {
+    width: 100%;
+    max-width: none;
+    background:  linear-gradient(45deg, var(--main-color-dark) 80%, var(--main-color));
+    background-attachment: fixed;
+    padding-bottom: 21;
+    height: 165px;
+    background-repeat: no-repeat;
+}
+
+#header:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: -1px;
+    right: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 90%, #181818 100%);
+}
+
+#header h1 {
+    text-align: center;
+    z-index: 100;
+    position: absolute;
+}
+
+#header h1 a {
+    padding: 40px 0 25px;
+    font-family: 'Noto Serif JP';
+    font-size: 180%;
+}
+
+#header h1 a span {
+    display: none;
+}
+
+
+#header h1 a:before {
+    content:"";
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-image: url(https://scp-jp-storage.wikidot.com/local--files/file:6057712-1-ftes/logo.png);
+    background-size: contain;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    transition-property: transform;
+    transition-duration:0.8s;
+    filter: drop-shadow(2px 2px 2px black);
+}
+
+#header h1 a:after {
+    content: 'DMAM';
+    text-shadow: 1px 1px 3px #000;
+   display: inherit;
+   transform: translate(150px, -65px);
+}
+
+div#header h2 {
+    text-align: left;
+    z-index: 100;
+    color: #fff;
+    font-family: 'Noto Serif JP';
+    text-shadow: 0px 0px 3px #000;
+    transform: translateY(103px);
+}
+
+#header h2 span {
+    display: none;
+}
+
+#header h2:after {
+    content: 'Diagnostic and Dialogic Manual of Anomalous Mental Disorders';
+    display: inherit;
+    transform: translateX(152px);
+    width: 65vw;
+}
+
+@media (max-width: 767px){
+    #header h1 {
+        width: 100%;
+        margin: auto;
+    }
+
+    #header h1 a:before {
+        width: 100px;
+        height: 100px;
+        transform: translateY(-10px);
+    }
+
+    #header h1 a:after {
+        transform: translate(0px, -5px);
+    }
+
+    #header h2:after {
+        display: none;
+    }
+}
+
+#account-options {
+    background: transparent;
+}
+
+#account-options ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+#account-options ul>li {
+    flex-grow: 1;
+    text-align: center;
+    width: 40%;
+}
+
+#account-options ul>li a {
+    transition: all 0.25s ease-in-out;
+}
+
+#account-options ul>li a:hover {
+    color: #fff;
+    background-color: var(--main-color-dark);
+    text-decoration: none;
+    text-shadow: none;
+}
+
+#login-status ul a {
+    color: var(--base-black);
+}
+
+#login-status {
+    color: #fff;
+    z-index: 150;
+    text-shadow: 0px 0px 3px #fff;
+}
+
+/* Search Bar */
+
+#search-top-box {
+    top: 35px;
+    z-index: 150;
+}
+
+#search-top-box input.empty {
+    color: transparent;
+}
+
+#search-top-box-form input[type=submit] {
+    display: none;
+}
+
+input#search-top-box-input {
+    border-radius: 0;
+    background: linear-gradient(45deg, black, var(--base-black));
+    padding: 3px;
+    border: 2px solid #999;
+    width: 6em;
+    transition: 0.3s;
+    outline: none;
+    color: #999;
+}
+
+input#search-top-box-input:-internal-autofill-selected {
+    background: linear-gradient(45deg, #181818, var(--base-black));
+    color: #999;
+}
+
+input#search-top-box-input:focus {
+    width: 11em;
+}
+
+
+
+/* Top Bar */
+
+#top-bar {
+    top: 166px;
+    right: 0em;
+    left: 0;
+    margin: 0;
+    max-width: none;
+}
+
+#top-bar div.mobile-top-bar {
+    max-width: none;
+    width: 100%;
+    left: 0;
+}
+
+#top-bar ul {
+    float: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#top-bar ul li,
+#top-bar ul li.sfhover {
+    border: 0;
+    position: relative;
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: var(--main-color-dark);
+}
+
+#top-bar ul li:hover,
+#top-bar ul li.sfhover:hover {
+    border: 0;
+    position: relative;
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+#top-bar ul li a,
+#top-bar ul li.sfhover a {
+    background: rgba(30,30,30,.8);
+    color: #fff;
+    border: none;
+}
+
+#top-bar ul li a:hover,
+#top-bar ul li.sfhover a:hover {
+    background-color: var(--base-black);
+}
+
+#top-bar ul li ul {
+    flex-wrap: wrap;
+    border-width: 0;
+}
+
+#top-bar ul li ul li,
+#top-bar ul li.sfhover ul li,
+#top-bar ul li ul li:hover,
+#top-bar ul li.sfhover ul li:hover {
+    background-color: transparent;
+}
+
+#top-bar ul li ul li a,
+#top-bar ul li.sfhover ul li a {
+    background-color: rgba(30, 30, 30, 0.8);
+    width: 100%;
+    box-sizing: border-box;
+    transition: .3s background;
+    border: none;
+    padding: 5px;
+    font-size: 102%;
+}
+
+#top-bar ul li ul li a:hover,
+#top-bar ul li.sfhover ul li a:hover {
+    background-color: rgba(10,10,10,0.8);
+    width: 100%;
+    box-sizing: border-box;
+    transition: .3s background;
+}
+
+
+/* Main Content */
+
+#page-title,
+#main-content h1,
+#main-content h2,
+#main-content h3,
+#main-content h4,
+#main-content h5,
+#main-content h6 {
+    border-color: #bbb;
+    color: var(--main-color);
+}
+
+
+/* a color */
+#license-area a,
+a {
+    transition: .3s;
+    color: #4D869C;
+    text-decoration: none;
+}
+
+#license-area a:hover,
+a:hover {
+    color: rgba(102, 183, 212, 0.71);
+    text-decoration: none;
+}
+
+a.newpage {
+    color: #66B7D4;
+    text-decoration: none;
+}
+
+/* RateBox */
+
+div.page-rate-widget-box {
+    box-shadow: none;
+    border-bottom: 2px solid var(--base-border-color);
+    border-radius: 0;
+}
+.creditRate .rateBox {
+    display: inline-flex;
+    border-bottom: 2px solid var(--base-border-color);
+}
+.creditRate .rateBox div.page-rate-widget-box {
+    border-bottom: none;
+}
+
+div.page-rate-widget-box .rate-points {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    color: var(--base-character-color);
+}
+
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+    background-color: transparent;
+    border: none;
+}
+
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a {
+    color: var(--base-character-color);
+}
+
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover {
+    background: transparent;
+    color: rgba(var(--base-character-color-rgb),0.42);
+}
+
+div.page-rate-widget-box .cancel {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    color: var(--base-character-color);
+}
+
+div.page-rate-widget-box .cancel a {
+    color: var(--base-character-color);
+}
+
+div.page-rate-widget-box .cancel a:hover {
+    color: rgba(var(--base-character-color-rgb),0.42);
+    background: transparent;
+}
+
+.rate-box-with-credit-button .creditButton {
+    background-color: transparent;
+    border: none;
+    border-radius: 0 ;
+    box-shadow: none;
+}
+
+.rate-box-with-credit-button a {
+    text-decoration: none;
+}
+
+a.fa.fa-info {
+    color: var(--base-character-color);
+}
+
+a.fa.fa-info:hover {
+    color: rgba(var(--base-character-color-rgb),0.42);
+}
+
+div.modalbox {
+    box-shadow: 0 2px 6px #ccc;
+    border-radius: 0;
+    background-color: rgba(365, 365, 365, 0.9);
+}
+
+div.modalbox .modalbox-title {
+    background: rgba(1, 1, 1, 0.9);
+    color: #fff;
+    border-radius: 0;
+}
+
+.modalbox .page-rate-widget-box {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.modalbox>.modalbox-title>h2>span {
+    font-family: 'noto serif jp';
+    color: #fff;
+}
+
+
+/* DMAM box*/
+
+.dmambox-heading {
+    background: var(--main-color);
+    color: #fff;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.dmambox-heading p {
+    font-weight: 600;
+    font-size: 180%;
+    margin: 0px 10px;
+}
+
+.dmambox-main {
+    background: rgba(var(--main-color-rgb),0.03);
+    padding: 20px;
+}
+
+.dmambox-main ol {
+    list-style-type: upper-latin;
+    padding-left: 20px;
+}
+
+.dmambox-main ol li{
+    padding: 5px;
+}
+
+.dmambox-main ol li ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.dmambox-main ol li ol li{
+    padding-top: 5px;
+}
+
+.case-report-collapsible {
+    margin:20px 0px;
+}
+
+.case-report-collapsible .collapsible-block-folded {
+    text-align: center;
+    animation: blinking 2s ease-in-out infinite alternate;
+}
+
+.case-report-collapsible .collapsible-block-unfolded-link {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+@keyframes blinking {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.case-report-collapsible a.collapsible-block-link {
+    color: var(--main-color);
+    font-size: 150%;
+}
+
+
+.case-report-collapsible .collapsible-block-folded a.collapsible-block-link::after {
+    font-family: "FontAwesome";
+    content: "\f0dd";
+    display: block;
+    font-size: 150%;
+    position: relative;
+    margin-left: 5px;
+    margin-top: -10px;
+}
+
+
+
+/* Side Bar */
+/* 初めての方へがhtmlでstyle指定しているのでimportantを使わざるを得ない*/
+
+#interwiki .side-block,
+#side-bar .side-block {
+    border-radius: 0;
+    position: relative;
+    border: none;
+    box-shadow: 0px 0px 4px var(--base-black);
+    color: var(--main-color) !important;
+    background: #fff !important;
+}
+
+#interwiki .side-block a,
+#side-bar .side-block a {
+    color: var(--main-color) !important;
+}
+#interwiki .side-block a:hover,
+#side-bar .side-block a:hover {
+    text-decoration: none !important;
+}
+
+
+#interwiki .heading,
+#side-bar .heading {
+    border-color: var(--main-border-color);
+    color: var(--main-color);
+}
+
+#interwiki div.menu-item img,
+#side-bar div.menu-item img {
+    filter: hue-rotate(180deg);
+}
+
+#side-bar .collapsible-block-unfolded-link,
+#side-bar .collapsible-block-unfolded {
+    border-color: var(--main-border-color);
+}
+
+#side-bar .collapsible-block-folded,
+#side-bar .collapsible-block-unfolded-link {
+    position: relative;
+    z-index: 0;
+}
+
+#side-bar .collapsible-block-folded::before,
+#side-bar .collapsible-block-unfolded-link::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: inherit;
+    filter: hue-rotate(180deg)brightness(1.7);
+    z-index: -1;
+}
+
+.side-block.sns img.image{
+    filter: none !important;
+}
+
+/* SB3のサイドバー */
+#side-bar .menu-item li {
+    filter: hue-rotate(180deg);
+} 
+
+#side-bar .menu-item li a {
+    filter: hue-rotate(-180deg);
+} 
+
+/* サイドバーを開くボタン */
+/* Sigma9にimportantついてんぞこの野郎 */
+
+div.open-menu a[href="#side-bar"] {
+    border: 5px solid #2c5364 !IMPORTANT;
+    color: #2c5364 !IMPORTANT;
+    border-radius: 5px;
+    background: transparent !IMPORTANT;
+    box-shadow: 0 0 5px #fff;
+    text-shadow: 0 0 5px #fff;
+}
+
+/* Tab */
+
+.yui-navset .yui-nav a em,
+.yui-navset .yui-navset-top .yui-nav a em {
+    border: none;
+}
+
+.yui-navset .yui-nav a,
+.yui-navset .yui-navset-top .yui-nav a {
+    background: transparent;
+    border: 0;
+}
+
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:focus {
+    background: none;
+}
+
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a:focus,
+.yui-navset .yui-nav .selected a:hover {
+    background: none;
+    color: #fff;
+}
+
+.yui-navset .yui-nav li,
+.yui-navset .yui-navset-top .yui-nav li {
+    margin: 0;
+    border: 0;
+    flex-grow: 1;
+    text-align: center;
+    transition: 1s;
+    color: #000;
+}
+
+.yui-navset .yui-nav a,
+.yui-navset .yui-navset-top .yui-nav a {
+    color: #000;
+}
+
+.yui-navset .yui-nav li:hover,
+.yui-navset .yui-navset-top .yui-nav li:hocer {
+    background: #ccc;
+    color: #000;
+}
+
+.yui-navset .yui-nav,
+.yui-navset .yui-navset-top .yui-nav {
+    border: 1px solid #181818;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: #fff;
+    border-bottom-width: 3px;
+}
+
+.yui-navset .yui-nav .selected a em {
+    padding: 0.25em .75em;
+}
+
+.yui-navset .yui-nav li:hover,
+.yui-navset .yui-navset-top .yui-nav li:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.yui-navset .yui-nav li:hover a,
+.yui-navset .yui-navset-top .yui-nav li:hover a {
+    color: #000;
+}
+
+.yui-navset .yui-nav .selected,
+.yui-navset .yui-navset-top .yui-nav .selected {
+    margin: 0;
+    animation: taiwan 0.5s ease-in-out both;
+}
+
+@keyframes taiwan {
+    100% {
+     background: #181818;
+    }
+}
+
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-navset-top .yui-nav .selected a {
+    animation: taiwan2 0.5s ease-in-out both;
+}
+
+@keyframes taiwan2 {
+    100% {
+     color: #fff;
+    }
+}
+
+.yui-navset .yui-content {
+    background-color: #fff;
+}
+
+#page-content .yui-navset .yui-content>div[style*="block"] {
+    animation: taiwan-tab 1.2s ease-in-out 0s 1 both;
+    overflow: hidden;
+}
+
+@keyframes taiwan-tab {
+    0% {
+     max-height: 25px;
+    }
+    20% {
+     max-height: 0px;
+    }
+    99% {
+     max-height: 100vh;
+    }
+    100% {
+     max-height: 9999rem;
+    }
+}
+
+
+/* Page Option */
+
+div.page-options-bottom {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-top: 3px;
+}
+
+a.btn-default,
+.page-options-bottom a.btn-default {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0 1px;
+    margin-bottom: 2px;
+    color: #fff;
+    padding: 4px 10px;
+    background: var(--main-color);
+    border: 2px solid #d5d5d5;
+    transition: 0.5s;
+}
+
+a.btn-default:hover,
+.page-options-bottom a.btn-default:hover {
+    text-decoration: none;
+    background: var(--main-color-light);
+}
+
+.page-options-bottom.form-actions {
+    line-height: 150%;
+}
+
+/* 編集ボタン等にホバーしたときに現れるTips */
+/* borderはelement styleで規定されているのでimportant */
+
+.hovertip {
+    width: 20em;
+    padding: 0.5em;
+    border: 2px solid var(--base-border-color) !important;
+    background: var(--base-black);
+    box-shadow: 0 0 6px 1px #000000aa;
+    z-index: 100;
+    color: #fff;
+    animation: hoverfade .5s ease-in-out both;
+    border-radius: 7px;
+}
+
+@keyframes hoverfade {
+    0% {
+     opacity: 0;
+    }
+    100% {
+     opacity: 1;
+    }
+}
+
+.hovertip .f-heading {
+    color: #cccccc;
+}
+
+/* エラーとかのときに出るウィンドウ */
+
+div.owindow {
+    background: #1e1e1ee3;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.owindow .title.modal-header {
+    background: #181818;
+    border-bottom: #555 1px solid;
+}
+
+div.owindow>div.content>img {
+    background: transparent;
+}
+
+div.owindow>div.content>h1 {
+    color: #78b0c2;
+}
+
+.owindow .button-bar a:hover {
+    background: #181818;
+}
+.owindow .button-bar a {
+    background: #3b3b3b;
+    color: #fff;
+    transition: .3s;
+}
+.owindow .title {
+    background-color: #090c16cc;
+}
+
+.owindow a,
+.owindow a:hover {
+    color: var(--main-color-lighter);
+}
+
+
+
+/* フッター */
+#footer {
+    background: linear-gradient(to right, var(--main-color-dark) 60%, var(--main-color));
+    color: #fff;
+    padding: 11px 3px;
+}
+
+#license-area {
+    color: #fff;
+    background: linear-gradient(to right, var(--main-color-dark) 60%, var(--main-color));
+    border-top: 1px solid #fff;
+}
+
+.odialog-shader {
+    background-color: #3e5166;
+    filter: alpha(opacity=80);
+    opacity: .3;
+}
+
+@media (max-width: 767px) {
+    #side-bar {
+     background-color: var(--main-color-light);
+    }
+}
+
+
+/* スクロールバー */
+::-webkit-scrollbar {
+    border: none;
+}
+
+#side-bar::-webkit-scrollbar {
+    width: 10px;
+}
+@media (max-width: 767px)
+#side-bar:target .close-menu {
+    background: rgb(1 134 255 / 14%) 1px 1px repeat;
+}
+
+
+/* 水平線 */
+hr {
+    height: 0.8px;
+}
+
+/*テキストボックスを入力中太枠にしない*/
+input:focus,textarea:focus  {
+    outline: none;
+}
+
+/* 編集画面のボタンを修正 */
+div.buttons input, input.button, button, file, a.button {
+    margin: 0;
+    padding: 3px;
+    background-color: var(--main-color);
+    color: #fff;
+    transition: .3s;
+    border: 2px solid #dadada;
+}
+
+div.buttons input:hover, input.button:hover, button:hover, a.button:hover {
+    background-color: var(--main-color-light);
+    color: #fff;
+}
+
+/* 編集画面右下のロックまでの時間が表示されるbox */
+#lock-info {
+    background-color: var(--main-color);
+    border: 2px solid #ccc;
+    color: #fff;
+}
+
+[[/code]]
+[[/iftags]]
+
+[[iftags +テーマ]]
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** DMAMテーマ
+**作成者:** [[*user k-cal]]
+**作成年:** 2024
+[[include :scp-jp:credit:end-preview]]
+
+[[>]]
+[[module rate]]
+[[/>]]
+
++ 序論
+
+ここは読者に興味を持ってもらうための導入部分です。非専門家にも馴染みやすいように、口調はですます調で、硬くなりすぎない程度が好ましいでしょう。
+
+読者がイメージしやすいように、簡単な症状の概説があると好ましいです。ほかに、画像などを用意しても構いません。
+
+[[div class="dmambox-heading"]]
+診断基準
+[[/div]]
+[[div class="dmambox-main"]]
+
+# 次の症状のうち2つ以上が存在する。
+ # 症状1
+ # 症状2
+ # 症状3の説明はとても長くなります。この文章は、そのような状況でも適切に文章が表示されるかどうかを確かめるためのものです。
+ # 症状4
+# 条件2の説明はとても長くなります。この文章は、そのような状況でも適切に文章が表示されるかどうかを確かめるためのものです。
+# この記憶の混濁は記憶処理によるものではない。
+# このように、除外条件も記載されているとリアリティが増します。
+# すべての条件が満たされたとき、この疾患であると診断することができます。
+
+**note:** ここには注記が入ります。
+[[/div]]
+
++ 概要
+ここに疾患の概要を記述します。SCP報告書でいえば説明にあたる部分です。
+
+最も重要な情報は、疾患の主要な症状や副次的な症状など、診断のために必要な内容の記載です。そのほか、考慮すべき事項や典型的な経過なども盛り込むと、ディティールを演出することができます。
+
+病因を書くことは強く推奨されます。この疾患がなぜ通常の疾患ではなく異常な疾患に分類されているかを納得できるようにしなければいけないからです。
+
+またこの概要を読んだときに、診断のためになぜこのような症状が必要なのか、あるいは除外すべきなのかということが概ね理解できるようにしなければいけません。
+
+
++ 危険因子及び予後因子
+
+危険因子とはその病気を発症させる可能性を増加させる要因です。喫煙はがんの危険因子です。
+
+予後因子は治療後の病気の経過を予測する要因です。例えば、様々な場所にがんが転移してしまうと、治療しても再発の可能性が高まります。つまり、がんの転移状況は、がんの予後因子です。
+
+この部分はどのような人物がこの疾患に罹患しやすく、また悪化（増悪）しやすいのかを書く部分です。要因の羅列になることは問題ありませんが、単なる箇条書きや同じ表現の繰り返しではなく、様々な表現を用いることを意識できるとよりリアルな専門文書の雰囲気を演出できるでしょう。
+
++ 対話方略
+
+ここではこの疾患に対し、どのような治療、対話が行われるべきかが記述されます。
+
+逆に財団の持つ技術を考慮し、どのような治療が行われるべきでないかも書くとディティールを深められるでしょう。
+
+[[div class="dmambox-heading"]]
+症状・対話記録
+[[/div]]
+[[div class="dmambox-main"]]
+
+[[div class="case-report-collapsible"]]
+[[collapsible show="記録を開く"hide="記録を閉じる"]]
+
+ここではTale調で記録が描かれます。対話の様子を描いたものであっても、症状を克明に描いたものでも良いでしょう。
+
+あまりに華美な修辞は雰囲気を損ないますが、ある程度自由に書いて構いません。実験記録の羅列のようなものでもよいです。
+
+[[/collapsible]]
+[[/div]]
+
+[[/div]]
+
+
++ 関連資料
+* 関連資料を掲載します。
+* [# 既存のTaleへのリンクを貼るのもよいでしょう]
+
+@@@@
+@@@@
+------
+@@@@
+@@@@
+
++ DMAMテーマの使い方
+++ 導入
+導入したいページの最下部に以下のコードを書き込んでください。
+
+> @@[[include :scp-jp:theme:dmam]]@@
+
+++ 見出し
+見出しは行の先頭に1から6個のプラス（+）を置くことで作れます。
+
+各セクションの見出しは、見出し１です。
+
+[[collapsible show="+ 見出しの一覧" hide="閉じる"]]
++ 見出し１ Heading 1
+
+++ 見出し２ Heading 2
+
++++ 見出し３ Heading 3
+
+++++ 見出し４ Heading 4
+
++++++ 見出し５ Heading 5
+
+++++++ 見出し６ Heading 6
+[[/collapsible]]
+
+++ ブロック
+
+診断基準などに用いられているブロックは、次のように記述すると使用することができます。通常は診断基準と、症状・対話記録にのみ用います。
+
+[[code]]
+[[div class="dmambox-heading"]]
+ここに見出し
+[[/div]]
+[[div class="dmambox-main"]]
+ここに内容を記載します。
+
+# このブロック内で、
+# このように順序付きリストを作成した場合、
+# 一段目はアルファベットになります。
+ # 二段目は数字になります。
+ # これは英語の専門書によく見られる形式です。
+# 一段目に戻るとまたアルファベットになります。
+
+[[/div]]
+[[/code]]
+
+[[div class="dmambox-heading"]]
+ここに見出し
+[[/div]]
+[[div class="dmambox-main"]]
+ここに内容を記載します。
+
+# このブロック内で、
+# このように順序付きリストを作成した場合、
+# 一段目はアルファベットになります。
+ # 二段目は数字になります。
+ # これは英語の専門書によく見られる形式です。
+# 一段目に戻るとまたアルファベットになります。
+
+[[/div]]
+
+++ 折り畳み
+
+通常の折りたたみを使用できますが、次のようなdivで囲ってあげると特殊な折りたたみを利用できます。
+
+[[code]]
+
+[[div class="case-report-collapsible"]]
+[[collapsible show="折りたたみ"hide="閉じる"]]
+通常の折りたたみと同じように記述することができます。
+[[/collapsible]]
+[[/div]]
+
+[[/code]]
+
+[[div class="case-report-collapsible"]]
+[[collapsible show="折りたたみ"hide="閉じる"]]
+通常の折りたたみと同じように記述することができます。
+[[/collapsible]]
+[[/div]]
+
+++ フォーマット
+
+基本的には上の例の通りのフォーマットを利用してください。つまり、以下の順番で内容を執筆します。
+# 序論
+# 診断基準
+# 危険因子及び予後因子
+# 対話方略
+# 症状・対話記録
+# 関連資料
+
+ただし、最後の2つに関しては必須ではありません。
+
+@@@@
+@@@@
+
+++ URLとタイトル、識別番号
+
+ページネーム（URL）は基本的に、「dmam-識別番号」の形式をとります（例: "dmam-pe013"）。
+
+ページのタイトルは、「識別番号: 正式な疾患名」の形式をとります。（例:「PE013: 自己安定性不信型悪夢障害」）。俗称がある場合も序論に記載するにとどめ、タイトルはあくまで正式な疾患名にします。
+
+識別番号は、カテゴリ識別子とナンバリングに分かれます。ナンバリングは適当な3桁の番号を利用してください。
+
+カテゴリ識別子は、次の中から適切なものを選択してください。
+
+**PE** - Paranormal Environment
+超常環境（異常なものが存在する環境）との接触や、超常環境での生活が原因となるもの。原因が異常に関連するものの、原因から症状に至るまでは非異常です。一般社会では発生しないような超常環境特有の疾患ですが、異常の被害者になることが主たる原因になるものは含みません。
+
+**PI** - Psychological Invasion
+認識災害や記憶改変を含む、精神侵襲性の異常によって直接引き起こされるもの。原因から発症の過程自体が異常なものが分類されます。ただし、特定のアノマリーによってのみ引き起こされる個別具体的なものは記載されるべきではありません（そういったものは、個別のSCP報告書に記載すべきです）。いくつかのアノマリーによって引き起こされる症状の共通部分を抜き出して類型化し、その対応や原因を記述することに意味があります。
+
+**SP** - Sequela of Psychological Invasion
+精神侵襲性の異常に暴露後の後遺症、あるいは暴露によって間接的に引き起こされるもの。原因は異常による精神侵襲ですが、そこから発症にいたるまでの過程は異常ではありません。
+
+**SN** - Sequela of Non-psychological Invasion
+精神侵襲性__でない__異常に暴露後の後遺症、あるいは暴露によって間接的に引き起こされるもの。原因は異常による精神侵襲ですが、そこから発症にいたるまでの過程は異常ではありません。
+
+
+
+++ その他テーマの特徴
+
+
+@@ @@
+
+[[tabview]]
+[[tab Tabulator]]
+これはタブです。
+[[/tab]]
+[[tab Tabulation]]
+タブを切り替えると、別の文章が現れます。
+[[/tab]]
+[[tab Long Tab]]
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+[[/tab]]
+[[tab タブに長い名前を設定することもできます]]
+中身が長いとは限りません。
+[[/tab]]
+[[tab 中身が空のタブです]]
+[[/tab]]
+
+[[/tabview]]
+
+> これは引用符です。各行の先頭に大なり記号と半角スペース（> ）を置くことで作れます。
+>
+> たくさんの文章
+> -----
+> 分割線
+>
+>> ネストした引用符
+||~ これは ||~ テーブルです ||
+||テーブルの || 作り方は ||
+||||通常と変わりません。 ||
+
+[# リンク]
+[[a class="newpage"]]存在しないリンク[[/a]]
+
+文章中にある[# リンク]はこのように、[[a class="newpage"]]存在しないリンク[[/a]]はこのように見えます。
+
+@@@@
+@@@@
+
+
+
+++ ヘッダーロゴライセンス
+[[div class="blockquote"]]
+
+**ファイルページ:** [*https://scp-jp-storage.wikidot.com/file:6057712-1-ftes 無題のファイル(1)]
+
+**ソース:** https://dog-punch.wdfiles.com/local--files/sintax%3Acss-taiwa/mmm
+**ライセンス:** CC BY-SA 3.0
+
+**タイトル:** 対話部門
+**著作権者:** [[*user aisurakuto]],[[*user dog_punch]]
+**公開年:** 2020
+**補足:** この画像は以下の画像を[[*user dog_punch]]が加工したものです
+> **ソース:** https://pbs.twimg.com/media/Elt2knlVMAAcJPf?format=png&name=900x900
+> **ライセンス:** CC BY-SA 3.0
+>
+> **タイトル:** 対話部門
+> **作者:** [[*user aisurakuto]]
+> **公開年:** 2020
+
+[[/div]]
+
+
+++ ロゴライセンス
+
+[[=]]
+[[image https://scp-jp-storage.wikidot.com/local--files/file:2579233-100-e30q/taiwa.png width="30%" height="30%"]]
+[[/=]]
+
+[[div class="blockquote"]]
+
+**ファイルページ:** [*https://scp-jp-storage.wikidot.com/file:2579233-100-e30q 対話部門ロゴ]
+
+**ライセンス:** CC BY-SA 3.0
+
+**タイトル:** 対話部門ロゴ
+**著作権者:** aisurakuto
+**公開年:** 2020
+**補足:** この画像は以下の画像をもとに作成されました。
+> **ソース:** https://scp-wiki.wikidot.com/dr-mackenzie-s-sketchbook
+> **ライセンス:** CC BY-SA 3.0
+>
+> **タイトル:** SCP-Logo
+> **著作権者:** Aelanna
+
+[[/div]]
+
+
+
+
+[[/iftags]]
+
+
+[[module CSS]]
+@import url('https://scp-jp.wdfiles.com/local--code/theme:dmam/1');
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+|priority=1
+|theme=https://scp-jp.wdfiles.com/local--code/theme:dmam/1
+]]

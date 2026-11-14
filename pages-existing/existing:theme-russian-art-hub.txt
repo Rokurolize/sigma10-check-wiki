@@ -1,0 +1,190 @@
+[[module CSS]]
+@import url("https://scp-jp.wdfiles.com/local--code/theme%3Arussian-art-hub/1");
+[[/module]]
+
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** SCP-RUアートハブ テーマ
+**原題:** Тема Арт-Хаба SCP-RU
+**著作権者:** [*https://scpfoundation.net/-/users/4679-TheNinth TheNinth]
+**翻訳責任者:** [[*user takion00]]
+**作成年:** 2024
+**翻訳年:** 2026
+**初訳時参照リビジョン:** rev.7
+**元記事リンク:** [*https://scpfoundation.net/theme:russian-art-hub Тема Арт-Хаба SCP-RU]
+[[include :scp-jp:credit:end-preview]]
+
+このテーマを使用したい場合以下のコードを記事に追加してください。
+> @@[[include :scp-jp:theme:russian-art-hub]]@@
+
++ 要素の例
+
+[[toc]]
+
+水平線は4つのハイフン@@"----"@@で作成でき、引用ブロック内に配置されていないときはページ全体に適用されます。
+
+[[include :scp-jp:component:image-block name=https://scp-jp-storage.wdfiles.com/local--files/file%3A9466112-140-7xm5/scp-art-hub.png|caption=画像ブロック|width=280px]]
+
+見出しは行の先頭に1~6個の"+"を置くことで作ることができます。
+
++ 見出し1
+
+++ 見出し2
+
++++ 見出し3
+
+++++ 見出し4
+
++++++ 見出し5
+
+++++++ 見出し6
+
+@@ @@
+
+[[collapsible show="折り畳みを開く" hide="折り畳みを閉じる"]]
+
+まだここには何もありません。
+
+[[/collapsible]]
+
+~~~~
+
+[[tabview]]
+[[tab タブレーター]]
+これはタブです。
+[[/tab]]
+[[tab タブレーション]]
+
+おっとみてくださいここにもタブがあります。
+
+なんと趣があるのでしょうか。
+
+[[/tab]]
+[[tab 長いタブ]]
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。[[footnote]] これは脚注です。 [[/footnote]]
+
+[[/tab]]
+[[tab この空のタブの名前はなぜだかわからないけどとても長いです。なぜでしょうか?不思議ですね。]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+なにもないから、ね?
+[[/tab]]
+[[/tabview]]
+
+> これは引用ブロックで、行の先頭に"> "を追加することで作成できます。 [[footnote]]もちろん{{@@[[div class="blockquote"]]@@}}でもできますけどね。 [[/footnote]]
+>
+> もっとテキスト
+> -----
+> 区切り線
+>
+>> ネストされた引用ブロック
+
+[[div class="code"]]
+@@偽のセレクタ{@@
+@@  偽のプロパティ: 偽の値;@@
+@@}@@
+[[/div]]
+
+[[[component:easy-gallery|訪問済みリンク]]] | [# 未訪問リンク] | [[a href="##" class="newpage"]]存在しないリンク[[/a]]
+
+
+# 番号付きリスト
+# リストのアイテム
+# リストのアイテム
+ # ネストされたリストのアイテム
+
+* 箇条書きリスト
+* リストのアイテム
+* リストのアイテム
+ * ネストされたリストのアイテム
+
+||~ これは ||~ テーブル構文です。 ||
+|| あなたは || これの作り方を ||
+|||| 知っているはずです。 ||
+|| もし || 知らなかったら ||
+|||| [[[wiki-syntax:tables|ここ]]]を見てください。 ||
+
+[[footnoteblock]]
+
++ ソースコード
+[[collapsible show="+ ソースコード" hide="- ソースコード"]]
+[[code type="CSS"]]
+#header {
+    background-image: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A9466112-140-7xm5/scp-art-hub.png);
+    background-size: 100px;
+}
+
+@media (max-width: 479px) {
+    #header {
+        background-position: 0 5.5em;
+        background-size: 55px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 580px) {
+    #header {
+        background-position: 0.5em 5em;
+        background-size: 66px;
+    }
+}
+
+@media (min-width: 581px) and (max-width: 767px) {
+    #header {
+        background-position: 0.5em 4.5em;
+        background-size: 77px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    #header {
+        background-position: 1em 4em;
+        background-size: 88px;
+    }
+}
+
+#header h2 span {
+    color: transparent;
+    text-shadow: none;
+}
+
+#header h2 span::before {
+    content: 'SCP-RUアートハブ';
+    color: #f0f0c0;
+    text-shadow: 1px 1px 1px #000000;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+}
+[[/code]]
+[[/collapsible]]
+[[/iftags]]

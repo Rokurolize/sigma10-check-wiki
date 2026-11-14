@@ -1,0 +1,806 @@
+[[iftags +テーマ]]
+[[module css]]
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css");
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css");
+
+.scp-image-block img {
+    min-width: 100%;
+    border: 0.5rem solid transparent;
+    box-sizing: border-box;
+}
+[[/module]]
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css
+]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=2
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css
+]]
+
+[[include :scp-jp:credit:start-preview]]
+**名前:** Present Malice テーマ
+**著作者:** [[*user JackalRelated]]
+**公開年:** 2021
+**ライセンス:** CC BY-SA 3.0
+
+**原題:** Present Malice Theme
+**翻訳責任者:** [[*user oplax-counterpoint]]
+**翻訳年:** 2025
+
+**参照版:** rev. 74 (2026/01/02)
+**ソース:** *https://scp-wiki.wikidot.com/theme:present-malice
+[[include :scp-jp:credit:end-preview]]
+
+-----
+++ これは何？
+[[div class="blockquote"]]
+Present Malice テーマは、1996年発売のサバイバルホラーゲームシリーズである『バイオハザード』を視覚的なベースとした、BHL用のライトテーマです。どんな記事にも使用できますが、冷酷な科学者たちが想像の絶する何かを研究し、そして利用しようとするような雰囲気の記事で使うのがいいでしょう。あるいは、バイオハザードが好きならそれでも。
+[[/div]]
+----
+
+[[=]]
++ テーマカラー
+[[/=]]
+
+[[include :scp-jp:component:theme-squares -=-
+| color1-name=アンブレラ・レッド
+| color1-variable=--umbrella-red
+| color1-info=#8F0000
+| color1-has-light-text=1
+| color2-name=バリーのマグナム
+| color2-variable=--barry-magnum
+| color2-info=#E6E6E6
+| color2-has-light-text=0
+| subcolor1-name= ライト・スターズ・ブルー
+| subcolor1-variable=--light-stars-blue
+| subcolor1-info=#DCDAEB
+| subcolor1-has-light-text=1
+| subcolor2-name= ミディアム・スターズ・ブルー
+| subcolor2-variable=--medium-stars-blue
+| subcolor2-info=#525366
+| subcolor2-has-light-text=1
+| subcolor3-name= ダーク・スターズ・ブルー
+| subcolor3-variable=--dark-stars-blue
+| subcolor3-info=#000854
+| subcolor3-has-light-text=1
+| subcolor4-name=ウェスカーのサングラス
+| subcolor4-variable=--weskers-shades
+| subcolor4-info=#141414
+| subcolor4-has-light-text=1
+| subcolor5-name=かゆい うま
+| subcolor5-variable=--itchy-tasty
+| subcolor5-info=#7E4026
+| subcolor5-has-light-text=1
+| subcolor6-name=クリスの血
+| subcolor6-variable=--chris-blood
+| subcolor6-info=#B90000
+| subcolor6-has-light-text=1
+]]
+
+----
+
+[[div class="scp-image-block block-right" style="width:300px;"]]
+[[image https://scp-jp-storage.wdfiles.com/local--files/file%3A9042763-302-0j63/umbrella-scp.png]]
+[[div class="scp-image-caption" style="width:300px;"]]
+シグネチャー・ケア製薬　ロゴ
+[[/div]]
+[[/div]]
+
+++ 注意：このテーマはBlack Highlighterテーマをベースにしています。このテーマを使用する際はBlack Highlighterテーマを先にインポートする必要があります。[[[theme:black-highlighter-theme|詳細はこちらを参照してください]]]。
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+
+任意のwikiで:
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:black-highlighter-theme]]@@
+@@[[include :scp-jp:theme:present-malice]]@@
+[[/div]]
+
+**訳注:** 現行のバージョンでは、このテーマは[[*user Woedenaz]]の[[[component:toggle-sidebar-bhl|BHLトグルサイドバー]]]を自動的に読み込むようになっています。
+
+-----
+[[div class="scp-image-block block-center"]]
+[[image https://scp-jp-storage.wdfiles.com/local--files/file%3A9042763-304-tbkh/pmal-2.PNG]]
+[[div class="scp-image-caption"]]
+英語版のヘッダ (中央揃えバージョン)
+[[/div]]
+[[/div]]
+
+**訳注:** EN版のヘッダを使用したい場合、コードを以下のように変更してください (中央揃えは[[[component:centered-header-bhl|BHL中央揃えヘッダー]]]を追加で読み込んでください)。
+[[div class="code"]]
+@@[[include :scp-jp:theme:black-highlighter-theme]]@@
+@@[[include :scp-jp:theme:present-malice engtitle=a]]@@
+[[/div]]
+
+さらに、EN版のヘッダで使用されているフォントで独自のタイトルを使いたい場合は、必ずテーマを読み込んだ後で以下のように設定してください。ただし、使用しているフォント ([*https://fonts.google.com/specimen/Anton Anton]) の都合上、ラテン文字・Latin-1補助・ラテン文字拡張A/Bなどでサポートされない文字に関しては表示を保証できません。
+[[div class="code"]]
+@@[[include :scp-jp:theme:black-highlighter-theme]]@@
+@@[[include :scp-jp:theme:present-malice engtitle=a]]@@
+@@[[module css]]@@
+@@	:root {@@
+@@		--header-title:    "@@##b90000|**YOUR HEADER HERE**##@@";@@
+@@		--header-subtitle: "@@##0b8a00|**AND SUBTITLE HERE**##@@";@@
+@@	}@@
+@@[[/module]]@@
+[[/div]]
+
+@@ @@
++ 表示例
+
+水平線はハイフン5つ「@@-----@@」で作ることができ、(例えばblockquoteのような) 何かの中に位置していない限りページ全体に展開されます。この文書内の節を区切っているのが水平線です。
+
+-----
+
+見出しは1～6個のプラス記号 + を行頭に置くことで作ることができます。
+
+[[collapsible show="+ 見出し" hide="- 閉じる"]]
++ 見出し1
+
+++ 見出し2
+
++++ 見出し3
+
+++++ 見出し4
+
++++++ 見出し5
+
+++++++ 見出し6
+[[/collapsible]]
+
+@@ @@
+
+[[tabview]]
+[[tab タブを作る]]
+想像力を働かせて、ここに"Lorem Ipsum"があると想像してみてください。
+[[/tab]]
+[[tab タブが作られる]]
+見てください。ここにも文章が。
+
+なんとも奇妙な。
+[[/tab]]
+[[tab 長いタブ]]
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+「//こいつ//があるさ」
+[[/tab]]
+[[tab 空のタブ]]
+ジル・サンドイッチとかなんだとか
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+{{##0B8A00|**インクリボン**##を使いますか？ [Yes / No]}}
+[[/tab]]
+[[/tabview]]
+@@ @@
+> 各行の先頭に「> 」と書くことで引用ブロックを作ることができます。
+>
+> さらなるテキスト
+> -----
+> 分割線も入ります。
+>
+>> 入れ子の引用ブロック
+>>> さらにもう1つ[[footnote]] そしてこれが脚注！ [[/footnote]]
+@@ @@
+||~ これが ||~ テーブル ||
+||もう既に || 作り方は ||
+||||知っていますね ||
+
+----
+
+[[=]]
+[[span style="font-family: var(--header-font); font-size: 1.2em;"]]ヘッダーのフォントは ZEN角ゴシックN、もしくは[[/span]] [[span style="font-family: var(--header-alt-font); font-size: 1.2em;"]]Anton[[/span]]
+[[span style="font-family: var(--title-font); font-size: 1.2em;"]]タイトルのフォントは Courier Prime と[[/span]] [[span style="font-family: 'Noto Sans JP';"]]Noto Sans JP[[/span]]
+[[span style="font-family: var(--body-font); font-size: 1.2em;"]]本文のフォントは Jost と[[/span]] [[span style="font-family: 'Noto Sans JP';"]]Noto Sans JP[[/span]]
+[[span style="font-family: var(--mono-font); font-size: 1.2em;"]]モノフォントは Anonymous Pro (和文はブラウザ依存)[[/span]]
+
+[[collapsible show="+ フォントのライセンスについて +" hide="- 閉じる -"]]
+[[==]]
+テーマ内で指定されているフォントはテーマの構成要素に含まれず、使用については自由に行えますが、再配布やその他の利用については個別のライセンスに従う必要があります。
+[[/==]]
+
+[[<]]
+> **名前:** Anton
+> **著作者:** [*https://github.com/googlefonts/AntonFont The Anton Project Authors] (Designed by Vernon Adams)
+> **公開年:** 2020
+> **ライセンス:** SIL OFL v1.1
+> **リンク:** [*https://fonts.google.com/specimen/Anton Google Fonts]
+
+> **名前:** Courier Prime
+> **著作者:** [*https://github.com/quoteunquoteapps/CourierPrime The Courier Prime Project Authors] (Designed by Alan Dafue-Greene)
+> **ライセンス:** SIL OFL v1.1
+> **リンク:** [*https://fonts.google.com/specimen/Courier+Prime Google Fonts]
+
+> **名前:** Jost
+> **著作者:** Owen Earl
+> **公開年:** 2020
+> **ライセンス:** SIL OFL v1.1
+> **リンク:** [*https://fonts.google.com/specimen/Jost Google Fonts]
+
+> **名前:** Anonymous Pro
+> **著作者:** [*https://www.marksimonson.com/ Mark Simonson]
+> **公開年:** 2009
+> **ライセンス:** SIL OFL v1.1
+> **リンク:** [*https://fonts.google.com/specimen/Anonymous+Pro Google Fonts]
+
+> **名前:** ZEN角ゴシック N
+> **著作者:** [*https://github.com/googlefonts/zen-kakugothic The Zen Kaku Gothic Project Authors] (Designed by Yoshimichi Ohira)
+> **公開年:** 2022
+> **ライセンス:** SIL OFL v1.1
+> **リンク:** [*https://fonts.google.com/specimen/Zen+Kaku+Gothic+New Google Fonts]
+
+> **名前:** Noto Sans Japanese (Source Han Sans, 源ノ角ゴシック)
+> **著作者:** Adobe
+> **公開年:** 2014
+> **ライセンス:** SIL OFL v1.1
+> **リンク:** [*https://fonts.google.com/noto/specimen/Noto+Sans+JP?query=Noto+Sans+JP Noto]
+[[/<]]
+[[/collapsible]]
+
+[[/=]]
+
+-----
+
+[[collapsible show="+ テーマのCSSコードを見る" hide="- テーマのCSSコードを閉じる"]]
+[[code type="css"]]
+/*
+   Present Malice Theme
+   [2021 Wikidot Theme]
+   by JackalRelated
+          greatly inspired by Resident Evil (1996)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Anton&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Japanese Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@900&display=swap');
+
+:root {
+    --theme-base: "black-highlighter";
+    --theme-id: "present-malice";
+    --theme-name: "Present Malice Theme";
+
+    --logo-image: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A9042763-303-s0pi/umbrella-scp.webp") !important;
+    --header-title: "SCP財団";
+    --header-subtitle: "確保，収容，保護．";
+
+    --body-font: 'Jost', "Noto Sans JP", sans-serif;
+    --header-font: 'Zen Kaku Gothic New', sans-serif;
+    --header-alt-font: 'Anton', sans-serif;
+    --title-font: 'Courier Prime', "Noto Sans JP", serif;
+    --mono-font: 'Anonymous Pro', monospace;
+    --UI-font: var(--body-font);
+
+    /* WHITE - GREY - BLACK */
+    --tyrant-white: 240, 235, 235;
+    --barry-magnum: 230, 230, 230;
+    --jill-grey: 198, 205, 215;
+    --pecking-crow: 40, 40, 40;
+    --weskers-shades: 20, 20, 20;
+    --mr-x: 5, 5, 5;
+
+    /* BLUE - GREEN */
+    --menu-blue: 132, 134, 163;
+    --light-stars-blue: 0, 13, 135;
+    --medium-stars-blue: 42, 45, 102;
+    --dark-stars-blue: 0, 8, 84;
+    --rpd-uniform: 30, 30, 56;
+    --jills-shoulderpads: 20, 20, 36;
+    --chris-green: 11, 138, 0;
+    --woman-drawing-water: 1, 71, 50;
+
+    /* RED - BROWN */
+    --chris-blood: 185, 0, 0;
+    --umbrella-red: 143, 0, 0;
+    --ashford-red: 84, 0, 0;
+    --barry-jacket: 165, 51, 51;
+    --rotten-flesh: 82, 54, 42;
+    --itchy-tasty: 126, 64, 38;
+    --rust-rot: 61, 31, 18;
+
+    /* THEME ASSIGNMENTS */
+    --white-monochrome: var(--tyrant-white);
+    --pale-gray-monochrome: var(--barry-magnum);
+    --light-gray-monochrome: var(--barry-magnum);
+    --gray-monochrome: var(--weskers-shades);
+    --dark-gray-monochrome: var(--jills-shoulderpads);
+    --black-monochrome: var(--weskers-shades);
+    --pale-accent: var(--barry-jacket);
+    --bright-accent: var(--chris-blood);
+    --medium-accent: var(--umbrella-red);
+    --dark-accent: var(--ashford-red);
+
+    --swatch-topmenu-bg-color: var(--weskers-shades);
+    --swatch-topmenu-border-color: var(--weskers-shades);
+
+    --swatch-background: var(--jill-grey);
+    --swatch-border-color: var(--weskers-shades);
+
+    --swatch-text-dark: var(--mr-x);
+    --swatch-text-light: var(--barry-magnum);
+    --swatch-text-general: var(--swatch-text-dark);
+    --swatch-important-text: var(--bright-accent);
+
+    --swatch-menubg-color: var(--tyrant-white);
+    --swatch-menubg-light-color: var(--menu-blue);
+    --swatch-menubg-medium-color: var(--rpd-uniform);
+    --swatch-menubg-medium-dark-color: var(--jills-shoulderpads);
+    --swatch-menubg-dark-color: var(--jills-shoulderpads);
+
+    --swatch-menutxt-dark-color: var(--mr-x);
+    --swatch-menutxt-light-color: var(--barry-magnum);
+
+    --swatch-secondary-color: var(--jills-shoulderpads);
+
+    --swatch-text-secondary-color: var(--tyrant-white);
+    --swatch-text-tertiary-color: var(--barry-magnum);
+
+    --header-gradient-color-top: var(--weskers-shades);
+    --header-gradient-color-middle: var(--weskers-shades);
+    --header-gradient-color-bottom: var(--weskers-shades);
+    --background-gradient-distance: 0rem;
+    --diagonal-stripes: linear-gradient(transparent 0);
+
+    --sidebar-transition-timing: 0.8s ease-in-out 0.1s;
+
+    --hover-link-color: var(--chris-blood);
+    --link-color: var(--umbrella-red);
+    --newpage-color: var(--chris-blood);
+    --visited-link-color: var(--ashford-red);
+
+    --ui-wght: 400;
+    --ui-hvr-wght: 400;
+
+    --toggle-button-bg: rgb(var(--weskers-shades));
+    --toggle-border-color: rgb(var(--umbrella-red));
+    --toggle-icon-color: rgb(var(--tyrant-white));
+    --toggle-roundness: 0%;
+
+    --title-wght: 600; /* SCP-JP patch: 各見出しのウェイト固定 */
+}
+
+/* HEADER AND TOPBAR */
+
+#header {
+    --swatch-headerh1-color: var(--chris-blood);
+    --swatch-headerh2-color: var(--tyrant-white);
+
+    --search-icon-color: var(--barry-magnum);
+    --search-icon-hover-color: var(--tyrant-white);
+    --search-icon-hover-bg-color: var(--umbrella-red);
+    --search-textbox-text-color: 0, 0, 0, 0;
+
+    --search-icon-focus-color: var(--tyrant-white);
+    --search-icon-focus-bg-color: var(--umbrella-red);
+    --search-focus-outline-color: var(--chris-blood);
+    --search-focus-textbox-bg-color: var(--medium-stars-blue);
+    --search-focus-textbox-text-color: var(--barry-magnum);
+
+    --login-line-divider-color: var(--chris-blood);
+    --login-username-color: var(--chris-blood);
+    --login-myaccount-color: var(--barry-magnum);
+    --login-myaccount-underline-color: var(--umbrella-red);
+    --login-myaccount-hover-bg-color: var(--mr-x);
+    --login-arrow-color: var(--barry-magnum);
+
+    --login-dropdown-bg-color: var(--jills-shoulderpads);
+    --login-dropdown-bg-image: var(--jills-shoulderpads);
+    --login-dropdown-border-color: var(--mr-x);
+    --login-dropdown-text-color: var(--barry-magnum);
+    --login-dropdown-text-hover-color: var(--tyrant-white);
+    --login-dropdown-bg-hover-color: var(--chris-blood);
+
+    --login-mobile-icon-color: var(--barry-magnum);
+    --login-mobile-icon-hover-color: var(--tyrant-white);
+    --login-mobile-icon-hover-bg-color: var(--chris-blood);
+}
+
+#header h1 a {
+  padding-top: 1.5625rem; /* タイトルとサブタイトルが日本語フォントだと重なるため調整 */
+}
+
+#header h1 a,
+#header h1 a:before {
+    font-weight: var(--title-wght);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  --wght: var(--title-wght);
+}
+
+#header h2 span::before {
+    margin-left: -0.2rem;
+}
+
+@media only screen and (max-width: 320px) {
+    #header h2 span::before {
+    	margin-left: -0.4rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    #header h2 span::before {
+    	margin-left: -0.7rem;
+    }
+}
+
+#page-title, .meta-title {
+  --wght: var(--title-wght);
+}
+
+#top-bar {
+    --topmenu-category-color: var(--barry-magnum);
+    --topmenu-category-hover-color: var(--tyrant-white);
+    --topmenu-category-hover-bg: var(--jills-shoulderpads);
+    --topmenu-hover-border-color: var(--umbrella-red);
+
+    --mobile-topmenu-sidebar-button-color: var(--barry-magnum);
+
+    --dropdown-bg-color: var(--rpd-uniform), 0.9;
+    --dropdown-border-color: var(--jills-shoulderpads), 0.5;
+    --dropdown-links-color: var(--barry-magnum);
+    --dropdown-links-hover-color: var(--tyrant-white);
+    --dropdown-links-hover-bg-color: var(--umbrella-red);
+}
+
+#action-area p {
+  color: white;
+}
+
+/* BREADCRUMBS */
+
+#breadcrumbs a:hover,
+.pseudocrumbs a:hover,
+#breadcrumbs a:active,
+.pseudocrumbs a:active {
+    color: rgb(var(--chris-blood));
+    text-decoration: none;
+}
+
+#breadcrumbs a:focus-within,
+.pseudocrumbs a:focus-within {
+    color: rgb(var(--umbrella-red));
+    text-decoration: none;
+}
+
+/* SCROLLBAR AND SIDEBAR */
+
+html,
+body {
+    scrollbar-color:
+    	rgb(var(--weskers-shades)) rgb(var(--umbrella-red));
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    width: 18px;
+    background: transparent;
+}
+
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+    background: rgb(var(--weskers-shades));
+}
+
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+    background: rgb(var(--umbrella-red));
+    border: rgb(var(--umbrella-red)) 1px solid;
+    border-radius: 0px;
+}
+
+html::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover {
+    background: rgb(var(--chris-blood));
+}
+
+#side-bar,
+#interwiki {
+    --sidebar-bg-color: var(--jills-shoulderpads);
+    --sidebar-resources-bg-color: var(--ashford-red);
+    --sidebar-media-bg-color: var(--ashford-red);
+
+    --sideblock-heading-bg-color: var(--umbrella-red);
+    --sideblock-heading-border-color: var(--chris-blood);
+    --sideblock-heading-text-color: var(--tyrant-white);
+
+    --sidebar-border-color: var(--rpd-uniform);
+    --sidebar-subtest-color: var(--umbrella-red);
+
+    --sidebar-links-text: var(--barry-magnum);
+    --sidebar-links-hover-bg-color: var(--chris-blood);
+    --sidebar-links-hover-text-color: var(--tyrant-white);
+}
+
+hr {
+    background-color: rgb(var(--dark-stars-blue));
+}
+
+.code {
+    background-color: rgb(var(--barry-magnum));
+}
+
+.scp-image-block .scp-image-caption {
+    border-top: .0625rem outset rgba(var(--umbrella-red), 1);
+    background-color: rgb(var(--barry-magnum)) !important;
+    color: rgb(var(--mr-x));
+}
+
+.scp-image-block {
+    box-shadow: none;
+    border: none;
+}
+
+/* MAIN CONTENT */
+
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:focus {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+}
+
+.page-rate-widget-box .rate-points {
+    border: none !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+#main-content {
+    --tabs-bg: var(--jills-shoulderpads);
+    --tabs-txt: var(--barry-magnum);
+    --tabs-hover-bg: var(--light-stars-blue);
+    --tabs-hover-txt: var(--tyrant-white);
+    --tabs-selected-bg: var(--chris-blood);
+    --tabs-selected-txt: var(--tyrant-white);
+    --tabs-selected-outline: var(--chris-blood);
+    --tabs-bottom-border-color: var(--light-stars-blue);
+    --tabs-content-bg-color: var(--tyrant-white);
+    --tabs-content-border-color: var(--jills-shoulderpads);
+
+    --tables-header-bg: var(--chris-green);
+    --tables-header-txt: var(--weskers-shades);
+    --tables-border: var(--woman-drawing-water);
+    --tables-body-bg: var(--rpd-uniform), 0.25;
+
+    --toc-header-bg-color: var(--umbrella-red);
+    --toc-header-text-color: var(--barry-magnum);
+    --toc-header-text-hover-color: var(--tyrant-white);
+    --toc-body-bg-color: var(--rpd-uniform);
+    --toc-body-link-color: var(--barry-magnum);
+
+    --ui-icon-color: var(--barry-magnum);
+    --ui-icon-bg: var(--jills-shoulderpads);
+    --ui-icon-hover-color: var(--tyrant-white);
+    --ui-icon-hover-bg: var(--chris-blood);
+
+    --editor-icon-hover-color: var(--tyrant-white);
+
+    --blockquote-bg-color: var(--tyrant-white), 0.35;
+    --blockquote-border-color: var(--rust-rot);
+    --blockquote-colorbar-color: var(--itchy-tasty);
+
+    --footnotes-footer-bg-color: var(--menu-blue);
+    --footnotes-footer-colorbar-color: var(--umbrella-red);
+    --footnotes-footer-title-bg-color: var(--umbrella-red);
+    --footnotes-footer-title-text-color: var(--barry-magnum);
+
+    --pagetags-title-bg: var(--weskers-shades);
+    --pagetags-title-text: var(--barry-magnum);
+    --pagetags-text-color: var(--mr-x);
+    --pagetags-text-hover-color: var(--tyrant-white);
+    --pagetags-text-hover-bg-color: var(--chris-blood);
+}
+
+.blockquote hr,
+div.blockquote hr {
+    background-color: rgb(var(--rotten-flesh));
+}
+
+table.wiki-content-table th {
+    font-family: var(--title-font);
+}
+
+:root {
+    --hoverblock-header-bg: var(--chris-blood);
+    --hoverblock-header-txt: var(--tyrant-white);
+    --hoverblock-footer-txt: var(--barry-magnum);
+
+    --ui-button-hover-bg: var(--chris-blood);
+    --ui-button-hover-txt: var(--tyrant-white);
+
+    --modal-bg: var(--jill-grey);
+    --modal-body-header-text: var(--barry-magnum);
+    --modal-body-text: var(--swatch-text-dark);
+
+    --rating-module-button-plus-color: var(--chris-green);
+    --rating-module-button-negative-color: var(--chris-blood);
+    --rating-module-button-cancel-color: var(--itchy-tasty);
+    --rating-module-button-credit-color: var(--tyrant-white);
+    --rating-module-bg-color: var(--pecking-crow);
+    --rating-module-text-color: var(--barry-magnum);
+    --rating-module-text-hover-color: var(--pecking-crow);
+}
+
+/* CREDIT MODULE for SCP-JP */
+
+#u-credit-view div.modalbox .modalbox-title h2 {
+  padding-top: .217em; /* フォント特性による追加パディング */
+}
+#u-credit-view .modalbox .credit {
+  max-height: 40vh;
+  overflow-y: scroll;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding: 0 1em;
+}
+
+/* FOOTERS AND BELOW */
+
+.page-source {
+    background: rgb(var(--tyrant-white));
+    font-family: var(--mono-font);
+}
+
+#lock-info,
+div.note,
+input.checkbox,
+input.text,
+textarea {
+    font-family: var(--body-font);
+}
+
+form#edit-page-form #edit-page-textarea {
+    background-color: rgb(var(--barry-magnum));
+}
+
+#footer {
+    --footer-bg-color: var(--jills-shoulderpads);
+    --footer-text-color: var(--barry-magnum);
+    --footer-link-color: var(--barry-magnum);
+    --footer-link-hover-color: var(--tyrant-white);
+    --footer-link-hover-bg-color: var(--chris-blood);
+}
+
+#license-area {
+    --license-bg-color: var(--weskers-shades);
+    --license-text-color: var(--barry-magnum);
+    --license-link-color: var(--barry-magnum);
+    --license-link-hover-color: var(--tyrant-white);
+    --license-link-hover-bg-color: var(--chris-blood);
+}
+
+/* TOGGLE SIDEBAR (BHL) CHANGES */
+
+@supports(display: grid) {
+    @media only screen and (min-width: 769px) {
+    	#main-content::before {
+    		background: rgba(var(--dark-stars-blue), .45) 1px 1px repeat;
+    	}
+    }
+}
+
+html,
+body {
+    scrollbar-color:
+    	rgb(var(--umbrella-red)) rgb(var(--weskers-shades));
+    border-color: rgba(var(--umbrella-red), 1);
+}
+
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+    background-color: rgb(var(--weskers-shades));
+}
+
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(var(--umbrella-red));
+}
+
+html::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(var(--chris-blood));
+}
+
+/* Action Area Patch */
+@supports selector(div:has(p)) {
+  #action-area:has(
+    form[onsubmit*="setParent"],
+    #who-rated-page-area,
+    form[onsubmit*="PageTagsModule"],
+    table.page-files, #edit-meta-addbutton,
+    ul[style="list-style: none"],
+    #page-block-checkbox,
+    #rename-option-rename,
+    #rename-option-delete
+  ) {
+    p:not(:has(a[id*="backlinks"], a[onclick*="showWho"], a.btn)) {
+      color: rgb(var(--swatch-text-tertiary-color));
+    }
+  }
+}
+
+/* Page Rating Patch */
+#who-rated-page-area > div > span[style*="color"] {
+  color: rgb(var(--swatch-text-dark)) !important;
+}
+
+/* Description List Patch */
+#page-content dl dd {
+  padding-left: .25em;
+}
+
+/* Hovertip Patch */
+.hovertip {
+  a, a:visited, a.newpage {
+    color: rgb(var(--pale-accent));
+  }
+}
+
+/* System Dialog Patch */
+#page-content .wikisys--template-dialog {
+  background-color: rgb(var(--barry-magnum));
+}
+[[/code]]
+[[/collapsible]]
+[[/iftags]]
+[[include :scp-jp:component:toggle-sidebar-bhl]]
+[[module CSS]]
+@import url('https://scp-jp.wdfiles.com/local--code/theme%3Apresent-malice/1');
+[[/module]]
+[[include :scp-jp:component:interwiki-style
+| priority=3
+| theme=https://scp-jp.wdfiles.com/local--code/theme%3Apresent-malice/1
+]]
+
+>[[ift{$engtitle}gs -テーマ]]
+>[[iftags]]
+[[module CSS]]
+:root {
+    --header-title: "SCP FOUNDATION";
+    --header-subtitle: "SECURE, CONTAIN, PROTECT."
+}
+#header h1 a,
+#header h1 a::before {
+    --wght: 200;
+    font-weight: 200;
+    font-family: var(--header-alt-font);
+}
+#odialog-container :is(.modal-header, .title) {
+    font-family: var(--header-alt-font);
+}
+[[/module]]
+>[[/iftags]]
+>[[/ift{$engtitle}gs]]

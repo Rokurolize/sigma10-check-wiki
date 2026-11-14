@@ -1,0 +1,236 @@
+[[module css]]
+@import url(https://scp-jp.wikidot.com/theme:sushi-academia/code/1);
+[[/module]]
+[[include :scp-jp:component:interwiki-style
+|priority=1
+|theme=https://scp-jp.wdfiles.com/local--code/theme%3Asushi-academia/1
+]]
+[[iftags +テーマ]]
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** スシアカデミア テーマ
+**著者:** ©︎[[*user Mishary]]
+**作成年:** 2020
+[[include :scp-jp:credit:end-preview]]
+
+> **テーマ名**: スシアカデミア テーマ
+> **作成者**: [[*user Mishary]]
+
+このテーマを使用するには、次のコードをページに貼り付けてください。
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:sushi-academia]]@@
+[[/div]]
+
++* 凡例
+[[module rate]]
+[[include credit:start-preview]]
+**タイトル:** SCP-XXX - タイトル
+**著者:** 作者のアカウント名
+**オリジナル:** オリジナル記事へのリンク
+**訳者:** 訳者のアカウント名
+[[include credit:end-preview]]
+
+[[toc]]
+
+[[include component:image-block
+|width=100px
+|name=https://scp-jp.wdfiles.com/local--files/component%3Atheme/logo.png
+|caption=Image Block]]
+
++ 見出し1
+
+++ 見出し2
+
++++ 見出し3
+
+++++ 見出し4
+
++++++ 見出し5
+
+++++++ 見出し6
+
+通常文章
+Alphabet
+
+**太字** | //斜体// | _下線_ | --打ち消し線-- | {{等幅フォント}} | ^^上付き文字^^,,下付き文字,,
+
+ハイフン4つ"@@----@@"で水平線をひくことができます。
+
+----
+
+> 引用ブロック
+>> ネストされた引用ブロック
+
+||~ ヘッダー ||~ ヘッダー ||~ ヘッダー ||~ ヘッダー ||~ ヘッダー ||~ ヘッダー ||
+|| セルの内容 || セルの内容 || セルの内容 || セルの内容 || セルの内容 || セルの内容 ||
+
+[[div class="code"]]
+@@偽のセレクタ{@@
+@@  偽のプロパティ: 偽の値;@@
+@@}@@
+[[/div]]
+
+[[div style="background-color:#F00;"]]
+赤い
+[[/div]]
+
+[[div class="sexy-box"]]
+Sexy Box
+[[/div]]
+
+[https://scp-jp.wikidot.com/ リンク] ([https://google.com 多分あなたが訪問したことのあるリンク])
+
+[[collapsible show="+ 折りたたみ" hide="- 折りたたみ"]]
+折りたたみの中身
+[[/collapsible]]
+
+# 番号付きリスト
+# リストのアイテム
+# リストのアイテム
+
+* 箇条書きリスト
+* リストのアイテム
+* リストのアイテム
+
+[[tabview]]
+[[tab タブ1]]
+内容1
+[[/tab]]
+[[tab タブ2]]
+内容2
+[[/tab]]
+[[tab タブ3]]
+内容3
+[[/tab]]
+[[tab タブ4]]
+内容4
+[[/tab]]
+[[tab タブ5]]
+内容5
+[[/tab]]
+[[/tabview]]
+
++* テーマコード
+[[code type="css"]]
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+
+/*
+    Sushi Academia Theme
+    Created by Mishary
+    lisence: CC BY-SA 3.0
+    2020.10.14
+*/
+
+div#header h1 a span {
+    display: none;
+}
+
+div#header h1 a:before {
+    font-weight: bold;
+    font-family: 'Yuji Syuku';
+    color: #000;
+    content: "寿司学士院";
+    text-shadow: none;
+}
+
+#header h2 span{
+    display: none;
+}
+
+#header h2:after{
+    font-weight: bold;
+    font-family: 'Yuji Syuku';
+    font-size: 150%;
+    color: #000;
+    content: "すし　あかでみあ";
+}
+
+@media (max-width: 767px){
+#header h2:after{
+    display: none;
+}
+}
+
+#header{
+    background: unset;
+}
+
+/*
+  Sigma9 Customizable Header
+  --author: ukwhatn
+  --source: https://scp-jp-sandbox3.wikidot.com/draft:3396310-168-9905
+  --license: CC BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0 )
+*/
+
+#container-wrap {
+    --c-header-2: repeating-radial-gradient(circle at 0% -1000%, #573216, #573216 0.1%, #744D30 0.3%, #744d30 0.5%);
+    --c-header-1: repeating-radial-gradient(circle at 0% -1000%, rgba(116, 77, 48, 0.7), #573216 4.5%, rgba(116, 77, 48, 0.9) 17%);
+    --c-topbar: repeating-linear-gradient(rgb(58 23 0) 0%, rgb(58 23 0) 0.1%, rgb(87 50 22) 0.3%, rgb(87 50 22) 0.5%);
+}
+
+div#container-wrap {
+    background: var(--c-header-1) top left repeat-x, var(--c-header-2) top left repeat-x;
+    background-size: auto 141px;
+}
+
+div#container-wrap::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 140px;
+    left: 0;
+    width: 100%;
+    height: 23px;
+    box-shadow: 3px 2px 25px -2px rgba(0,0,0,0.75);
+    background: var(--c-topbar) top left repeat-x;
+}
+
+/*
+    katusushiCSS
+    Powered on 2020/03/09 23:44:50
+    Created by tutuji
+    license: CC BY-SA 3.0
+    source: https://scp-jp-sandbox3.wikidot.com/draft:2206092-13-d9af
+*/
+
+body {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: 'Noto Serif JP', serif;
+}
+
+a, a:visited {
+    color: rgb(255, 10, 10);
+}
+
+h1 {
+    color: rgb(220, 0, 0);
+    font-family: 'Noto Serif JP', serif;
+}
+
+h2, h3, h4, h5, h6 {
+    color: rgb(0, 0, 0);
+    font-family: 'Noto Serif JP', serif;
+}
+
+blockquote {
+    border: 1px dashed #ff0a0a;
+    background: #ffffff;
+}
+
+div#page-title {
+    color: #000000;
+}
+
+#interwiki body {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: 'Noto Serif JP', serif;
+}
+
+#interwiki .menu-item a, #interwiki .menu-item a:visited{
+    color: rgb(255, 10, 10);
+}
+[[/code]]
+[[/iftags]]

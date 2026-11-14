@@ -1,0 +1,794 @@
+[[iftags]]
+[[include :scp-jp:theme:black-highlighter-theme]]
+[[/iftags]]
+
+[[iftags +テーマ]]
+[[module css]]
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css");
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css");
+#page-title {
+    text-align: center !important;
+    font-family: var(--header-font);
+    font-size: 270%;
+}
+
+@media only screen and (max-width: 765px) {
+  #page-title {
+  font-size: 170%;
+  white-space: nowrap;
+  }
+ }
+[[/module]]
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css
+]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=2
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css
+]]
+[[include :scp-jp:credit:start-preview]]
+**タイトル:**  Black Highlightyearテーマ
+**翻訳責任者:** [[*user nebula2700]]
+**翻訳年:** 2024
+**原題:**  Black Highlightyear Theme
+**著作権者:** [[*user Rounderhouse]]
+**作成年:**  2019
+**初訳時参照リビジョン:** 37
+**元記事リンク:** [https://scp-wiki.wikidot.com/theme:black-highlightyear ソース]
+[[include :scp-jp:credit:end-preview]]
+
+[[div_ style="filter: invert(.8);"]]
+[[image https://scp-jp.wdfiles.com/local--files/theme%3Ablack-highlighter-theme/black-highlighter-logo.svg]]
+[[/div]]
+
+----
+
+[[=]]
++ テーマカラー
+[[/=]]
+
+[[include :scp-jp:component:theme-squares -=-
+| color1-name=Madras
+| color1-variable=--dark-accent
+| color1-info=36, 65, 103
+| color1-has-light-text=1
+| color2-name=Chenin
+| color2-variable=--bright-accent
+| color2-info=255, 185, 97
+| subcolor1-name=Pacifika
+| subcolor1-variable=--dark-gray-monochrome
+| subcolor1-info=16, 29, 46
+| subcolor1-has-light-text=1
+| subcolor2-name=Anzak
+| subcolor2-variable=--medium-accent
+| subcolor2-info=86, 23, 23
+| subcolor2-has-light-text=1
+]]
+
+----
+
+[[div class="scp-image-block block-right"  style="max-width:300px;"]]
+[[image https://scp-jp.wdfiles.com/local--files/theme%3Aad-astra/logo.svg]]
+[[div class="scp-image-caption"]]
+AAPAロゴ
+[[/div]]
+[[/div]]
+
+++ 注: これはBlack Highlighterベースのテーマです。このテーマを使用するにはBlack Highlighterテーマもインポートする必要があります。[[[theme:black-highlighter-theme|詳細については、ここを参照してください]]]。
+
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+
+どんなウィキでも:
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:black-highlighter-theme]]@@
+@@[[include :scp-jp:theme:black-highlightyear]]@@
+[[/div]]
+
++ 例
+
+罫線は、5つのハイフン「@@-----@@」を使用して作成でき、何かの内側（例: ブロック引用）に配置されていなければページ全体に適用されます。このドキュメントのセクションを区切る線は罫線です。
+
+-----
+
+見出しは、行の先頭に1～6文字の「+」を置くことで作成できます
+
+[[collapsible show="+ 見出し" hide="- 見出し"]]
++ 1番目の見出し
+
+++ 2番目の見出し
+
++++ 3番目の見出し
+
+++++ 4番目の見出し
+
++++++ 5番目の見出し
+
+++++++ 6番目の見出し
+[[/collapsible]]
+
+@@ @@
+
+[[tabview]]
+[[tab タブを作る]]
+ここに`ダミーテキスト`が表示されていると想像してください。
+[[/tab]]
+[[tab タブが作られた]]
+見てください、ここにもテキストがあります。
+
+なんと奇妙な。
+[[/tab]]
+[[tab 長いタブ]]
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+本当に空ですよ
+[[/tab]]
+[[/tabview]]
+
+> これは引用ブロックです。各行の先頭に半角の「> 」を置くことで作成されます。
+>
+> 追加のテキスト
+> -----
+> これは罫線です
+>
+>> 入れ子になった引用ブロック
+>>> そしてもう1段[[footnote]] そしてここに脚注！ [[/footnote]]
+
+引用ブロックはブラック(デフォルト)、ブルー、ピンク、ゴールド、パープルの5色あり、それぞれ以下のコードで使用できます:
+
+[[div class="blue"]]
+> @@[[div class="blue"]]@@
+[[/div]]
+[[div class="pink"]]
+> @@[[div class="pink"]]@@
+[[/div]]
+[[div class="gold"]]
+> @@[[div class="gold"]]@@
+[[/div]]
+[[div class="purp"]]
+> @@[[div class="purp"]]@@
+[[/div]]
+
+||~ これは ||~ テーブルです ||
+||もう || 作り方は ||
+||||知っているはずです ||
+
+----
+
+[[=]]
+[[span style="font-family: var(--header-font);"]]ヘッダー  & BodyフォントはRusso One。[[/span]]
+[[span style="font-family: var(--title-font);"]]見出しフォントはExo。[[/span]]
+[[span style="font-family: var(--mono-font);"]]使用している等幅フォントは PT Mono。[[/span]]
+[[/=]]
+
+-----
+脚[[footnote]] 注 [[/footnote]]
+[[collapsible show="+ テーマコードを表示" hide="- テーマコードを非表示"]]
+[[code type="css"]]
+
+/* Black Highlightyear | To The Stars */
+/* 2019 Wikidot Theme */
+/* By Rounderhouse, based off Ad Astra theme by Stormbreath and NatVoltaic*/
+/* Logo licensed under CC BY SA 3.0 */
+/* Header background by NASA, public domain. */
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900|PT+Mono|Poppins:600,800');
+@import url('https://fonts.googleapis.com/css?family=Exo:400,800');
+@import url('https://fonts.googleapis.com/css?family=Russo+One&display=swap');
+
+/* All Vars Used */
+
+:root {
+    /* S-CSS-P Integration */
+    /* If you're making a new CSS theme, please include the following three variables at minimum. */
+    --theme-base: "nuscp";
+    /* must be either "nuscp" or "sigma9" */
+    --theme-id: "black-highlightyear-theme";
+    /* set this to the URL of your theme's page - eg for "component:ar-theme", set it to "ar-theme" */
+    --theme-name: "Black Highlightyear";
+    /* set this to your theme's full name */
+
+    /* Header */
+    --logo-image: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A8260379-68-0ayp/tg_logo_blk.svg");
+    --header-title: "Ad Astra Per Aspera";
+    --header-subtitle: "困難を通じて天へ";
+
+    /* Typefaces */
+    --body-font: 'Lato', sans-serif;
+    --header-font: 'Russo One', sans-serif;
+    --title-font: 'Exo', sans-serif;
+    --mono-font: "PT Mono", "Andale Mono", "Courier New", Courier, monospace;
+
+    /* Standard Colors */
+    /* white */
+    --white-monochrome: 252, 252, 252;
+    /* v light gray for blockquotes and stuff */
+    --pale-gray-monochrome: 204, 204, 204;
+    /* light accent gray for login status */
+    --light-gray-monochrome: 170, 170, 170;
+    /* gray */
+    --gray-monochrome: 27, 48, 77;
+    /* dark accent gray for sidebar background */
+    --dark-gray-monochrome: 16, 29, 46;
+    /* black */
+    --black-monochrome: 12, 12, 12;
+    /* pale orange */
+    --pale-accent: 255, 185, 97;
+    /* bright gold */
+    --bright-accent: 255, 185, 97;
+    /* maroon */
+    --medium-accent: 86, 23, 23;
+    /* dark blue */
+    --dark-accent: 36, 65, 103;
+
+    /* Ad Astra-Specific Accents */
+    --purple-accent: 38, 21, 46;
+    --gold-accent: 68, 47, 3;
+    --pink-accent: 92, 29, 36;
+    --alt-accent: 221, 102, 17;
+
+    --swatch-primary: var(--pale-accent);
+
+    /* ===GENERAL TEXT COLORS=== */
+    --swatch-text-light: var(--pale-gray-monochrome);
+    --swatch-text-general: var(--swatch-text-light);
+
+    /* Primary Menu Colors */
+    --swatch-menubg-color: var(--dark-gray-monochrome);
+
+    --swatch-topmenu-border-color: var(--swatch-primary);
+    --swatch-topmenu-bg-color: var(--medium-accent);
+
+    /* ===SECONDARY & TERTIARY COLORS=== */
+    /* Editing these will edit a vast majority of theme elements. Useful for making dark themes */
+
+    /* Colors for Secondary & Tertiary items like Blockquote and YUI Tabs */
+    --swatch-secondary-color: var(--dark-gray-monochrome);
+    --swatch-tertiary-color: var(--swatch-menubg-medium-color);
+    --swatch-alternate-color: var(--swatch-menubg-light-color);
+
+    /* Text Colors for Secondary & Tertiary items like Sidebar Headers and Top-Bar Menu Text */
+    --swatch-text-secondary-color: var(--dark-gray-monochrome);
+    --swatch-text-tertiary-color: var(--pale-accent);
+
+    --rating-module-button-color: var(--swatch-primary);
+    --rating-module-text-color: var(--swatch-primary);
+
+    /* Spacing Measurements */
+    --offset-from-page-top: 1.2rem;
+
+    /* space between the top of the page and the start of the header */
+    --background-gradient-color: var(--gray-monochrome);
+    --background-gradient-distance: 10rem;
+
+    --diagonal-stripes: none;
+}
+
+/*  ===============================
+    ======= SPECIFIC COLORS =======
+    ===============================
+/* Colors for Buttons, Tabs, Tables, Footnotes Hover/Modal, Etc. */
+
+:root {
+    --swatch-background: var(--dark-gray-monochrome);
+}
+
+#header {
+    /* ===HEADER ELEMENTS=== */
+    /* ===HEADER TITLES=== */
+    /* Header H1 and H2 colors */
+    --swatch-headerh1-color: var(--white-monochrome);
+    --swatch-headerh2-color: var(--swatch-primary);
+
+    /* ===SEARCH ELEMENT=== */
+    --search-icon-color: var(--swatch-primary);
+    --search-icon-bg-color: var(--dark-accent);
+    --search-icon-hover-color: var(--dark-accent);
+    --search-icon-hover-bg-color: var(--swatch-primary);
+    /* Focus is when the search box has been clicked on */
+    --search-icon-focus-color: var(--dark-accent);
+
+    /* ===LOGIN BOX ELEMENT=== */
+    --login-username-color: var(--swatch-primary);
+    --login-myaccount-color: var(--pale-gray-monochrome);
+    --login-myaccount-underline-color: 0, 0, 0, 0;
+    /* Dropdown Box when arrow is clicked */
+    --login-dropdown-text-color: var(--swatch-text-tertiary-color);
+    --login-dropdown-text-hover-color: var(--swatch-text-secondary-color);
+}
+
+#top-bar {
+    /* ===TOPBAR ELEMENTS=== */
+
+    /* ===TOPBAR CATEGORIES=== */
+    --topmenu-category-color: var(--swatch-text-tertiary-color);
+    --topmenu-category-hover-color: var(--swatch-text-tertiary-color);
+
+    --mobile-topmenu-sidebar-button-color: var(--swatch-text-tertiary-color);
+
+    /* ===DROPDOWN MENU=== */
+    --dropdown-bg-color: var(--swatch-primary-darker), 0.9;
+    --dropdown-border-color: var(--swatch-primary), 0.5;
+    --dropdown-links-color: var(--swatch-text-tertiary-color);
+    --dropdown-links-bg-color: 0, 0, 0, 0;
+    /* Transparent */
+    --dropdown-links-hover-color: var(--swatch-text-tertiary-color);
+    --dropdown-links-hover-bg-color: var(--swatch-primary-darkest);
+}
+
+#side-bar,
+#interwiki {
+    /* ===SIDE-BAR ELEMENTS=== */
+    --swatch-menubg-light-color: var(--swatch-primary);
+    /* ===SIDE-BAR GENERAL=== */
+    --sidebar-resources-bg-color: 0, 0, 0, 0;
+    --sidebar-media-bg-color: 0, 0, 0, 0;
+
+    /* ===SIDEBLOCK MENU=== */
+    --sideblock-heading-border-color: var(--swatch-primary-darker);
+    --sideblock-heading-text-color: var(--swatch-primary);
+
+    /* ===MENU-ITEMS=== */
+    --sidebar-border-color: var(--swatch-primary), 0.08;
+    --sidebar-subtest-color: var(--swatch-primary);
+
+    --sidebar-links-text: var(--pale-accent);
+    --sidebar-links-hover-bg-color: var(--bright-accent), 0.25;
+    --sidebar-links-hover-text-color: var(--pale-accent);
+}
+
+/* ===FOOTER=== */
+#footer {
+    --footer-bg-color: var(--swatch-primary);
+    --footer-link-hover-color: var(--swatch-primary-darkest);
+    --footer-link-hover-bg-color: var(--swatch-tertiary-color);
+}
+
+/* ===LICENSE AREA=== */
+#license-area {
+    --license-bg-color: var(--swatch-secondary-color);
+    --license-text-color: var(--swatch-text-tertiary-color);
+    --license-link-color: var(--swatch-text-tertiary-color);
+}
+
+#main-content {
+    /* ===MAIN CONTENT UI ELEMENTS */
+    /* ===UI ICONS=== */
+    /* ===PAGE OPTIONS ICONS=== */
+    --ui-icon-color: var(--swatch-primary-darker);
+    --ui-icon-bg: var(--swatch-primary);
+    --ui-icon-hover-color: var(--swatch-primary-darkest);
+
+    /* ===TEXT EDITOR ICONS=== */
+    --editor-icon-color: var(--swatch-text-tertiary-color);
+
+    /* ===TABS=== */
+    --tabs-bg: var(--dark-gray-monochrome);
+    --tabs-hover-txt: var(--swatch-text-tertiary-color);
+    --tabs-bottom-border-color: var(--swatch-primary);
+
+    --tabs-content-bg-color: var(--gray-monochrome), 1;
+    --tabs-content-border-color: var(--swatch-tertiary-color);
+
+    /* ===TABLES=== */
+    --tables-header-bg: var(--gray-monochrome), 0.5;
+    --tables-header-txt: var(--swatch-text-tertiary-color);
+    --tables-border: var(--swatch-tertiary-color);
+    --tables-body-bg: var(--dark-gray-monochrome);
+
+    /* ===BLOCKQUOTES=== */
+    --blockquote-bg-color: var(--purple-accent), 0.25;
+    --blockquote-border-color: var(--swatch-alternate-color);
+
+    /* ===FOOTNOTES/BIBLIOGRAPHY FOOTER=== */
+    --footnotes-footer-bg-color: var(--dark-gray-monochrome);
+    --footnotes-footer-colorbar-color: var(--swatch-alternate-color);
+    --footnotes-footer-title-bg-color: var(--swatch-alternate-color);
+
+    /* ===TOC=== */
+    --toc-header-bg-color: var(--swatch-primary);
+
+    /* ===PAGE TAGS=== */
+    --pagetags-title-bg: var(--swatch-alternate-color);
+}
+
+/* ===GLOBAL ELEMENTS=== */
+:root {
+    /* ===UI BUTTONS=== */
+    --ui-button-bg: var(--swatch-primary-darker);
+    --ui-button-hover-bg: var(--swatch-primary);
+    --ui-button-hover-outline: var(--dark-gray-monochrome);
+
+    /* ===RATING MODULE=== */
+    --rating-module-bg-color: var(--swatch-primary-darker);
+    --rating-module-text-color: var(--swatch-primary);
+    --rating-module-text-hover-color: var(--swatch-menutxt-dark-color);
+
+    /* ===MODALS=== */
+    --modal-header-bg: var(--swatch-primary-darker);
+    --modal-header-stripe: var(--dark-gray-monochrome);
+
+    /* ===FOOTNOTES HOVER BLOCK=== */
+    --hoverblock-header-bg: var(--swatch-alternate-color);
+}
+
+#skrollr-body {
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: url('https://scp-jp-storage.wdfiles.com/local--files/file%3A8260379-67-ws4f/hubble.png');
+    background-repeat: repeat-x;
+    background-size: inherit;
+}
+
+::-moz-selection {
+    background: rgba(var(--swatch-primary));
+    color: rgb(var(--swatch-text-dark));
+}
+
+::selection {
+    background: rgba(var(--swatch-primary));
+    color: rgb(var(--swatch-text-dark));
+}
+
+html,
+body,
+#side-bar:hover {
+    scrollbar-color: rgb(var(--bright-accent)) rgb(var(--dark-accent));
+}
+
+::-webkit-scrollbar,
+#side-bar:hover::-webkit-scrollbar {
+    background-color: rgb(var(--dark-accent));
+}
+
+::-webkit-scrollbar-thumb,
+#side-bar:hover::-webkit-scrollbar-thumb {
+    background-color: rgb(var(--bright-accent));
+}
+
+.scp-image-block .scp-image-caption {
+    background-color: rgb(27, 48, 77);
+    color: rgb(var(--bright-accent));
+    font-size: .8em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: rgb(var(--pale-accent));
+}
+
+#search-top-box,
+#search-top-box * {
+    border-radius: 0 0.5em 0 0.5em;
+}
+
+#search-top-box input.empty {
+    background-color: rgb(var(--medium-accent));
+    color: rgb(var(--pale-accent));
+}
+
+#search-top-box-input,
+#search-top-box-input {
+    background: rgb(var(--medium-accent));
+}
+
+span.printuser {
+    color: rgb(var(--pale-accent));
+}
+
+span.h-span {
+    color: rgb(var(--pale-accent));
+    font-weight: bold;
+    word-break: unset;
+}
+
+#page-title {
+    border-color: rgb(var(--pale-accent));
+    color: rgb(var(--pale-accent));
+    font-variant: small-caps;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 48rem) {
+    #header h2 {
+     height: 100%;
+     overflow: hidden;
+     pointer-events: none;
+    }
+
+    #header h1 span {
+     font-size: 75%;
+    }
+
+    #top-bar {
+     font-size: calc(var(--base-font-size)*0.70);
+    }
+
+    #skrollr-body {
+     width: 100%;
+     overflow: hidden;
+     background-image: url('https://scp-jp-storage.wdfiles.com/local--files/file%3A8260379-67-cj0x/hubblemobile.png');
+     background-size: inherit;
+    }
+}
+
+#side-bar *,
+#interwiki * {
+    border-radius: 0 0.75rem 0 0.75rem;
+}
+
+/* Rating Module */
+.page-rate-widget-box {
+    padding: .1em;
+    border-radius: 0 0.625rem 0 0.625rem;
+    box-shadow: 0px 0px 0px 0.125rem rgb(var(--pale-accent));
+
+}
+
+.page-rate-widget-box .rate-points {
+    text-transform: uppercase;
+}
+
+#page-content .page-rate-widget-box .rateup a,
+#page-content .page-rate-widget-box .ratedown a,
+#page-content .page-rate-widget-box .cancel a,
+#page-content .rate-box-with-credit-button>.creditButton>p>a,
+#page-content .page-rate-widget-box .rateup a::after,
+#page-content .page-rate-widget-box .ratedown a::after,
+#page-content .page-rate-widget-box .cancel a::after,
+#page-content .rate-box-with-credit-button>.creditButton>p>a::after {
+    border-radius: 0 0.625rem 0 0.625rem;
+}
+
+/* Tabs */
+#main-content .yui-navset .yui-nav a::before,
+#main-content .yui-navset .yui-nav .selected a::before {
+    transition:
+     background-color 50ms cubic-bezier(0.4, 0, 0.2, 1),
+     border-radius 150ms cubic-bezier(0.4, 0, 0.2, 1),
+     -webkit-clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition:
+     background-color 50ms cubic-bezier(0.4, 0, 0.2, 1),
+     border-radius 150ms cubic-bezier(0.4, 0, 0.2, 1),
+     clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition:
+     background-color 50ms cubic-bezier(0.4, 0, 0.2, 1),
+     border-radius 150ms cubic-bezier(0.4, 0, 0.2, 1),
+     clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1),
+     -webkit-clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#main-content .yui-navset .yui-nav .selected {
+    transform: translateY(-0.25em);
+    box-shadow: 0 0.25em 0 0 rgb(var(--swatch-primary));
+}
+
+#main-content .yui-navset .yui-nav .selected a::before {
+    border-radius: 0 0.625rem 0 0.625rem;
+}
+
+element>.img {
+    border: 0.125rem solid rgb(var(--pale-accent)) !important;
+    background-color: transparent !important;
+}
+
+.hovertip,
+.hovertip::before,
+.hovertip::after {
+    border-radius: 0 1rem 0 1rem;
+    box-shadow: 0 0 0 0.25rem rgb(var(--swatch-alternate-color));
+}
+
+.footnotes-footer,
+.bibitems {
+    border-radius: 0 1rem 0 1rem;
+    box-shadow: inset 0 0 0 0.25rem rgb(var(--swatch-alternate-color));
+}
+
+/* Code */
+.code {
+    border: 0.0625rem dashed rgb(var(--gray-monochrome));
+    background-color: transparent;
+
+    font-family: var(--mono-font);
+    font-size: 0.875rem;
+}
+
+:is(blockquote, .blockquote, div.blockquote, [class*="blockquote"]) {
+    border-radius: 0 1em 0 1em;
+    box-shadow:
+     inset 0 0 0 0.125rem rgb(var(--swatch-alternate-color)),
+     0 0 0 0.125rem rgb(var(--swatch-alternate-color));
+}
+
+#main-content .page-tags::before {
+    border-radius: 0 1em 0 0;
+}
+
+#main-content .page-tags span a:-webkit-any-link:not([href^="/system:page-tags/tag/_"])::before {
+    border-radius: 0 0.5em 0 0.5em;
+}
+
+#main-content .page-tags span a:-moz-any-link:not([href^="/system:page-tags/tag/_"])::before {
+    border-radius: 0 0.5em 0 0.5em;
+}
+
+#main-content .page-tags span a:any-link:not([href^="/system:page-tags/tag/_"])::before {
+    border-radius: 0 0.5em 0 0.5em;
+}
+
+/* Buttons */
+*:not(.page-rate-widget-box):not(#search-top-box-form)>.owindow .button-bar a,
+*:not(.page-rate-widget-box):not(#search-top-box-form)>div.buttons input,
+*:not(.page-rate-widget-box):not(#search-top-box-form)>input.button,
+*:not(.page-rate-widget-box):not(#search-top-box-form)>button,
+*:not(.page-rate-widget-box):not(#search-top-box-form)>.button,
+*:not(.page-rate-widget-box):not(#search-top-box-form)>div.buttons input,
+*:not(.page-rate-widget-box):not(#search-top-box-form)>input.button,
+*:not(.page-rate-widget-box):not(#search-top-box-form)>button,
+*:not(.page-rate-widget-box):not(#search-top-box-form)>.btn {
+    border-radius: 0 1em 0 1em;
+}
+
+/* code highlighter stuff */
+
+.hl-identifier,
+.hl-code,
+.hl-brackets {
+    color: rgb(102, 102, 102);
+}
+
+.hl-var {
+    color: rgb(33, 255, 0);
+}
+
+.hl-special {
+    color: rgb(255, 255, 0);
+}
+
+.hl-reserved {
+    color: rgb(0, 178, 255);
+}
+
+.hl-number,
+.hl-string {
+    color: rgb(255, 0, 32);
+}
+
+del {
+    color: rgb(51, 51, 51);
+}
+
+ins {
+    color: rgb(51, 51, 51);
+}
+
+.close-credits,
+.credit-back {
+    -webkit-filter: hue-rotate(60deg) brightness(400%);
+    filter: hue-rotate(60deg) brightness(400%);
+}
+
+#page-content a:not([href*="user"]):not([href*="javascript:;"]) {
+    display: inline-block;
+    position: relative;
+    transform: translateX(0);
+    transition:
+     color 150ms ease-in-out,
+     box-shadow 200ms ease-in-out,
+     transform 200ms ease-in-out;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
+#page-content a:not([href*="user"]):not([href*="javascript:;"]):not(.fa-info):hover {
+    transform: translateX(1em);
+    background-color: rgb(var(--bright-accent));
+    box-shadow:
+     0.5ch 0 0 0 rgb(var(--bright-accent)),
+     -1.25ch 0 0 0 rgb(var(--bright-accent));
+    color: rgb(var(--swatch-primary-darkest));
+    text-decoration: underline;
+}
+
+#page-content a:not([href*="user"]):not([href*="javascript:;"]):not(.fa-info)::before {
+    content: "> ";
+    position: absolute;
+    left: 0;
+    transform: translateX(-1.25ch);
+    transition: transform 200ms ease-in-out;
+    opacity: 0;
+    color: rgb(var(--swatch-primary-darkest));
+    pointer-events: none;
+}
+
+#page-content a:not([href*="user"]):not([href*="javascript:;"]):not(.fa-info):hover::before {
+    transform: translateX(-1ch);
+    opacity: 1;
+}
+
+/* Ayer's Info Module */
+:root {
+    --barColour: rgb(var(--medium-accent));
+    --linkColour: rgb(var(--pale-accent));
+}
+
+.info-container .collapsible-block-unfolded {
+    border-color: rgb(var(--pale-accent));
+}
+
+/* PAGE ELEMENTS */
+.blue blockquote {
+    background-color: rgb(var(--gray-monochrome));
+}
+
+.pink blockquote {
+    background-color: rgb(var(--pink-accent));
+}
+
+.gold blockquote {
+    background-color: rgb(var(--gold-accent));
+}
+
+.purp blockquote {
+    background-color: rgb(var(--purple-accent));
+}
+
+[[/code]]
+[[/collapsible]]
+[[/iftags]]
+
+[[module css]]
+@import url("https://scp-jp.wdfiles.com/local--code/theme%3Ablack-highlightyear/1")
+[[/module]]
+[[include :scp-jp:component:interwiki-style
+| priority=3
+| theme=https://scp-jp.wdfiles.com/local--code/theme%3Ablack-highlightyear/1
+]]

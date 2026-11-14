@@ -1,0 +1,1016 @@
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://scp-jp.wdfiles.com/local--code/theme%3Aunforgettable/2
+]]
+[[module CSS]]
+@import url("https://scp-jp.wdfiles.com/local--code/theme%3Aunforgettable/2");
+[[/module]]
+[[iftags +テーマ]]
+[[>]]
+**評価モジュール:**
+
+[[module Rate]]
+
+**クレジット付き評価モジュール**
+[[<]]
+[[include :scp-jp:credit:start-preview]]
+ページ情報
+[[include :scp-jp:credit:end-preview]]
+[[/<]]
+[[/>]]
+
+これは[[*user dr-hormress]]が反ミーム部門の設定に基づいて制作したカスタムテーマです。
+
+このテーマは[[*user universe647]]が制作した「私を忘れないで　テーマ」から派生したもので、現在のバージョンは[[*user estrellayoshte]]が制作した「Simple Yonderテーマ」をもとに作成されました。
+
+このテーマをあなたの記事に適用するには、以下のコードをページに挿入してください。
+
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:unforgettable]]@@
+[[/div]]
+
+----
+
++ 凡例
+
+[[include component:image-block name=https://scp-jp-storage.wdfiles.com/local--files/file%3A8260379-66-pxvf/minimal.svg|caption=画像。|width=150px]]
+
+4つのハイフン「@@----@@」を使用して水平線を作成でき、何かの内側(引用ブロックなど)に配置されていなければページ全体に適用されます。このドキュメントのセクションを区切る線が水平線です。
+
+----
+
+見出しは、行の先頭に1～6文字のプラス（+）を置くことで作成できます。ぼかし効果がついています。
+
+
++ 見出し1
+
+++ 見出し2
+
++++ 見出し3
+
+++++ 見出し4
+
++++++ 見出し5
+
+++++++ 見出し6
+
+@@  @@
+
+[[tabview]]
+[[tab タブ]]
+これはタブです。
+[[/tab]]
+[[tab タブ]]
+これはもう一つのタブです。
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 長いタブ]]
+[[div style="height: 50em;"]]
+[[/div]]
+[[/tab]]
+[[/tabview]]
+
+@@  @@
+
+> これは引用ブロックです。各行の先頭に半角の「> 」を置くことで作成されます。
+>
+> 追加のテキスト。
+> ----
+> これは水平線です。
+>
+>> 入れ子になった引用ブロック。
+>
+
+@@  @@
+
+||~ これは ||~ 表です ||
+||もう既に || 作り方は ||
+||||知っていますね ||
+
+@@  @@
+
+[[=]]
+++++ タイトルのフォントはRaleway、M PLUS 1pです。
+本文のフォントはNoto Sans Japaneseです。
+@@  @@
+{{テレタイプのフォントはAnonymous Pro、BIZ UDGothicです。}}
+[[/=]]
+
+----
+
++ 追加機能
+
+@@[[div class="darkstyle"]]@@を使うことでその中の構文要素をダークモードで表示できます。例は以下の通りです。
+
+[[div class="darkstyle"]]
+
+[[code]]
+[[div class="darkstyle"]]
+ダークモードにしたい要素
+[[/div]]
+[[/code]]
+
+@@  @@
+
+[[include component:image-block name=https://scp-jp-storage.wdfiles.com/local--files/file%3A8260379-66-pxvf/minimal.svg|caption=画像。|width=150px|align=center]]
+
+@@  @@
+
+[[>]]
+**評価モジュール:**
+[[module Rate]]
+
+**クレジット付き評価モジュール:**
+[[<]]
+[[include :scp-jp:credit:start-preview]]
+ページ情報
+[[include :scp-jp:credit:end-preview]]
+[[/<]]
+[[/>]]
+
+@@  @@
+
+[[tabview]]
+[[tab タブ]]
+これはタブです。
+[[/tab]]
+[[tab タブ]]
+これはもう一つのタブです。
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 長いタブ]]
+[[div style="height: 50em;"]]
+[[/div]]
+[[/tab]]
+[[/tabview]]
+
+@@  @@
+
+> これは引用ブロックです。各行の先頭に半角の「> 」を置くことで作成されます。
+>
+> 追加のテキスト。
+> ----
+> これは水平線です。
+>
+>> 入れ子になった引用ブロック。
+>
+
+@@  @@
+
+||~ これは ||~ 表です ||
+||もう既に || 作り方は ||
+||||知っていますね ||
+
+[[/div]]
+
+----
+
++ ソースコード
+
+[[code type="CSS"]]
+/* 2021 Wikidot Theme
+by Dr Hormress & Universe647
+based on Simple Yonder Theme by EstrellaYoshte */
+/* ========UNFORGETTABLE======== */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400;500;700&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@300;400;500;700&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext');
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDGothic:wght@400;700&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext');
+
+#page-content {
+    font-size: 0.87rem;
+}
+
+body {
+    color: #000;
+    font-family: "Noto Sans JP", sans-serif;
+    background-color: #FFF;
+}
+
+.code pre, .code p, .code, tt, #edit-page-form * {
+    font-family: "Anonymous Pro", "BIZ UDGothic", monospace;
+}
+
+.page-source{
+    font-family: "Anonymous Pro", "BIZ UDGothic", monospace;
+
+}
+
+a {
+    color: #AAA;
+}
+
+a:visited {
+    color: #AAA;
+}
+
+a.newpage {
+    color: silver;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #000;
+    font-family: "Raleway", "M PLUS 1p", sans-serif;
+    font-weight: bold;
+    filter: blur(0.5px);
+}
+
+#page-title,
+div.meta-title {
+    font-family: "Raleway", "M PLUS 1p";
+    filter: blur(0.5px);
+    color: #000;
+    font-weight: bold;
+    font-size: 2.4em;
+    border: none;
+}
+
+@media (min-width: 768px) {
+    #main-content {
+        margin: 0 2em 0 22em;
+    }
+}
+
+/* ---- HEADER ---- */
+
+div#container-wrap {
+    background-image: linear-gradient(to bottom, #FFF 0, #FFF 148px, #000 151px, #FFF 154px, #FFF 155px);
+    background-size: auto 160px;
+    background-repeat: repeat-x;
+}
+
+#header h1, div#header::before {
+    filter: blur(2px);
+}
+
+#header {
+    background-image: none;
+}
+
+div#header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -3px;
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient(-45deg, transparent, #FFF), url("https://scp-jp-storage.wdfiles.com/local--files/file%3A8260379-66-pxvf/minimal.svg");
+    background-size: 6.7rem, 6.7rem;
+    background-position: 3px 29px, 3px 29px;
+    background-repeat: no-repeat, no-repeat;
+}
+
+@media (max-width: 767px) and (min-width: 480px) {
+    div#header::before {
+      background-size: 5.4rem, 5.4rem;
+      background-position: 0 44px, 0 44px;
+    }
+}
+
+@media (max-width: 479px) {
+    div#header::before {
+      background-size: 4.2rem, 4.2rem;
+      background-position: 0 58px, 0 58px;
+    }
+}
+
+#login-status {
+    filter: drop-shadow(0 0 5px #000);
+}
+
+#login-status,
+#login-status a {
+    color: #000;
+    font-weight: bold;
+}
+
+#account-topbutton{
+    border: 0px;
+}
+
+#search-top-box {
+    bottom: 0;
+}
+
+#search-top-box-input,
+#search-top-box-input:hover,
+#search-top-box-input:focus,
+#search-top-box-form input[type=submit],
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+    border: none;
+    background: #000;
+    box-shadow: 0 0 5px #000;
+    border-radius: 3px;
+    color: #FFF;
+}
+
+#search-top-box input.empty {
+    color: #DDD;
+}
+
+div#header h1 a {
+    font-family: "Raleway", "M PLUS 1p", sans-serif;
+    font-weight: bold;
+    color: #000;
+    text-shadow: none;
+}
+
+div#header h1 a::before {
+    content: "反ミーム部門";
+}
+
+div#header h1 a span {
+    display: none;
+}
+
+div#header h2 span {
+    font-family: "Raleway", "M PLUS 1p", sans-serif;
+    font-weight: bold;
+    color: #000;
+    padding: 17px 0;
+    text-shadow: none;
+    white-space: pre;
+    filter: blur(1px);
+}
+
+#top-bar div > ul {
+    background-color: #000;
+    box-shadow: 0 0 5px #000;
+    border-radius: 3px;
+}
+
+#top-bar div > ul > li > a {
+    border-radius: 3px;
+    border: solid 2px #000;
+}
+
+#top-bar div > ul > li:hover > a,
+#top-bar div > ul > li.sfhover > a {
+    color: #000;
+    background-color: #FFF;
+    border: solid 2px #000;
+    box-shadow: inset 0 0 3px #000;
+}
+
+#top-bar div > ul > li > ul {
+    background-color: #000;
+    box-shadow: 0 0 5px #000;
+    border-radius: 3px;
+    border: none;
+}
+
+#top-bar div > ul > li:hover > ul > li > a,
+#top-bar div > ul > li.sfhover > ul > li > a {
+    background-color: transparent;
+    border: solid 2px #000;
+    color: #FFF;
+    border-radius: 3px;
+}
+
+#top-bar div > ul > li:hover > ul > li > a:hover,
+#top-bar div > ul > li.sfhover > ul > li > a:hover {
+    background-color: #FFF;
+    color: #000;
+    box-shadow: inset 0 0 3px #000;
+}
+
+/* ---- SIDE BAR ---- */
+
+#top-bar .open-menu a,
+#side-bar::before {
+    position: fixed;
+    bottom: 0.5em;
+    left: 0.5em;
+    font-size: 30px;
+    font-weight: 700;
+    width: 30px;
+    height: 30px;
+    line-height: 0.9em;
+    text-align: center;
+    background-color: #FFF !important;
+    color: #000 !important;
+    border-radius: 3px;
+    border: solid 2px #000 !important;
+    filter: blur(1px);
+}
+
+#top-bar .open-menu a:hover,
+#side-bar:hover::before {
+    text-decoration: none;
+    box-shadow: 0 0 20px 3px rgba(153,153,153,1);
+}
+
+:is(#side-bar, #interwiki) a,
+:is(#side-bar, #interwiki) a.newpage {
+    color: #000;
+}
+
+:is(#side-bar, #interwiki) img {
+    filter: grayscale(100%) blur(0.5px);
+}
+
+#side-bar .collapsible-block-folded {
+    background-image: none;
+}
+
+:is(#side-bar, #interwiki) .side-block {
+    box-shadow: inset 0 0 3px #000, 0 0 5px #000;
+    border: solid 2px #000;
+    background-color: #FFF !important;
+    border-radius: 5px;
+}
+
+:is(#side-bar, #interwiki) .side-block .heading,
+#side-bar .collapsible-block-unfolded-link {
+    border: none;
+    filter: drop-shadow(0 0 5px #000);
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+/* #side-bar .side-block .heading::after,
+#side-bar .collapsible-block-unfolded-link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 2px;
+    z-index: -1;
+    width: 75%;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #000;
+} */
+
+:is(#side-bar, #interwiki) .side-block .heading p,
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link,
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link:hover {
+    display: inline-block;
+    background-color: #000;
+    font-size: 12px;
+    margin-top: 0;
+    padding: 1px;
+    padding-left: 3px;
+    padding-right: 3px;
+    color: #FFF;
+    border-radius: 3px;
+    width: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+}
+
+@media (max-width: 767px) {
+    #side-bar {
+        background-color: #000;
+    }
+
+    #side-bar:target {
+        border: none;
+    }
+}
+
+/* ---- YUI TABS ---- */
+
+.yui-navset {
+    border-radius: 5px;
+    box-shadow:none;
+    background-color: transparent;
+}
+
+.yui-navset .yui-nav {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.yui-navset .yui-nav .selected a em,
+.yui-navset .yui-nav a em {
+    padding: 0.25em .75em;
+    top: 0px;
+    margin-bottom: 0px;
+    border: none;
+}
+
+.yui-navset .yui-nav .selected {
+    margin: 0px;
+}
+
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a:focus,
+.yui-navset .yui-nav .selected a:hover,
+.yui-navset .yui-nav .selected a {
+    background-image: none;
+    background-color: #FFF;
+    border: solid 1px transparent;
+    border-radius: 5px;
+    height: 2em;
+    color: #000;
+    box-shadow: inset 0 0 3px #AAA;
+}
+
+.yui-navset .yui-nav a,
+.yui-navset .yui-navset-top .yui-nav a {
+    background-color: transparent;
+    background-image: none;
+    border: solid 1px transparent;
+    border-radius: 5px;
+    height: 2em;
+    color: #000;
+    box-shadow: none;
+}
+
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:focus {
+    background-image: none;
+    background-color: transparent;
+    box-shadow: inset 0 0 3px #EEE;
+}
+
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a:focus,
+.yui-navset .yui-nav .selected a:hover,
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav a,
+.yui-navset .yui-navset-top .yui-nav a {
+    background-image: none;
+}
+
+.yui-navset .yui-nav a {
+    background-image: none;
+}
+
+.yui-navset .yui-nav li {
+    margin: 0px;
+    padding: 0px;
+    background-image: none;
+}
+
+.yui-navset .yui-content {
+    border: solid 1px transparent;
+    border-radius: 5px;
+    box-shadow: inset 0 0 3px #AAA;
+    background-color: #FFF;
+}
+
+.darkstyle .yui-navset {
+    border-radius: 5px;
+    box-shadow: 0 0 5px #000;
+    background-color: #000;
+}
+
+.darkstyle .yui-navset .yui-nav {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.darkstyle .yui-navset .yui-nav .selected a em,
+.darkstyle .yui-navset .yui-nav a em {
+    padding: 0.25em .75em;
+    top: 0px;
+    margin-bottom: 0px;
+    border: none;
+}
+
+.darkstyle .yui-navset .yui-nav .selected {
+    margin: 0px;
+}
+
+.darkstyle .yui-navset .yui-nav .selected a,
+.darkstyle .yui-navset .yui-nav .selected a:focus,
+.darkstyle .yui-navset .yui-nav .selected a:hover,
+.darkstyle .yui-navset .yui-nav .selected a {
+    background-image: none;
+    background-color: #FFF;
+    border: solid 2px #000;
+    border-radius: 5px;
+    height: 2em;
+    color: #000;
+    box-shadow: inset 0 0 3px #000;
+}
+
+.darkstyle .yui-navset .yui-nav a,
+.darkstyle .yui-navset .yui-navset-top .yui-nav a {
+    background-color: #000;
+    background-image: none;
+    border: solid 2px #000;
+    border-radius: 5px;
+    height: 2em;
+    color: #FFF;
+    box-shadow: inset 0 0 3px #000;
+}
+
+.darkstyle .yui-navset .yui-nav a:hover,
+.darkstyle .yui-navset .yui-nav a:focus {
+    background-image: none;
+    background-color: #444;
+}
+
+.darkstyle .yui-navset .yui-nav .selected a,
+.darkstyle .yui-navset .yui-nav .selected a:focus,
+.darkstyle .yui-navset .yui-nav .selected a:hover,
+.darkstyle .yui-navset .yui-nav .selected a,
+.darkstyle .yui-navset .yui-nav a,
+.darkstyle .yui-navset .yui-navset-top .yui-nav a {
+    background-image: none;
+}
+
+.darkstyle .yui-navset .yui-nav a {
+    background-image: none;
+}
+
+.darkstyle .yui-navset .yui-nav li {
+    margin: 0px;
+    padding: 0px;
+    background-image: none;
+}
+
+.darkstyle .yui-navset .yui-content {
+    border: solid 2px #000;
+    border-radius: 5px;
+    box-shadow: inset 0 0 3px #000;
+    background-color: #FFF;
+}
+
+/* ---- INFO PANE ---- */
+
+#page-content .creditRate{
+    margin: unset;
+    margin-bottom: 8px;
+}
+
+#page-content .rate-box-with-credit-button {
+    background-color: transparent;
+    border: solid 1px #FFF;
+    box-shadow: none;
+    border-radius: 3px;
+}
+
+.rate-box-with-credit-button .creditButton {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: inset 0 0 3px #DDD !important;
+    border-radius: 3px !important;
+    height: 18px !important;
+}
+
+#page-content .rate-box-with-credit-button .fa-info {
+    border: none;
+    color: #000;
+    line-height: 20px;
+    margin: 0 1px;
+}
+
+#page-content .rate-box-with-credit-button .fa-info:hover {
+    background: transparent;
+    color: #000;
+}
+
+#page-content .rate-box-with-credit-button .fa-info::before {
+    padding: 0 3px;
+}
+
+.rate-box-with-credit-button .cancel {
+    border: solid 1px #FFF;
+}
+
+#page-content .creditButtonStandalone p a {
+    background: #000;
+}
+
+#page-content .creditButtonStandalone p a:hover {
+    background: #000;
+}
+
+#page-content .modalbox {
+    border-radius: 3px;
+    box-shadow: 0 0 5px #000;
+}
+
+#page-content .darkstyle .creditRate{
+    margin: unset;
+    margin-bottom: 8px;
+}
+
+#page-content .darkstyle .rate-box-with-credit-button {
+    background-color: #000;
+    border: none;
+    box-shadow: none;
+    border-radius: 3px;
+}
+
+#page-content .darkstyle .rate-box-with-credit-button .page-rate-widget-box {
+    margin-bottom: 0;
+    box-shadow: 0 0 5px #000;
+}
+
+#page-content .darkstyle .rate-box-with-credit-button .creditButton {
+    background-color: #000 !important;
+    box-shadow: 0 0 5px #000 !important;
+}
+
+#page-content .darkstyle .rate-box-with-credit-button .fa-info {
+    border: none;
+    color: #FFF;
+
+}
+
+#page-content .darkstyle .rate-box-with-credit-button .fa-info:hover {
+    background: transparent;
+    color: #FFF;
+}
+
+.darkstyle .rate-box-with-credit-button .cancel {
+    border: solid 1px #000;
+}
+
+#page-content .darkstyle .creditButtonStandalone p a {
+    background: #FFF;
+}
+
+#page-content .darkstyle .creditButtonStandalone p a:hover {
+    background: #FFF;
+}
+
+#page-content .darkstyle .modalbox .page-rate-widget-box {
+    box-shadow: 0 0 5px #000;
+    background-color: #000;
+}
+/* ---- PAGE RATING ---- */
+
+.page-rate-widget-box {
+    box-shadow: inset 0 0 3px #DDD !important;
+    margin: unset;
+    margin-bottom: 8px;
+    padding-bottom: -1px;
+    background-color: transparent;
+    border-radius: 3px;
+}
+
+.page-rate-widget-box .rate-points {
+    background-color: transparent !important;
+    color: #000 !important;
+    border: none !important;
+    border-radius: 0;
+}
+
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+    background-color: transparent;
+    border: none;
+}
+
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a {
+    background: transparent;
+    color: #000;
+}
+
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover {
+    background: transparent;
+    color: #DDD;
+}
+
+.page-rate-widget-box .cancel {
+    background: transparent;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+}
+
+.page-rate-widget-box .cancel a {
+    color: #000 !important;
+    border-radius: 0;
+    height: 11px !important;
+}
+
+.page-rate-widget-box .cancel a:hover {
+    background: transparent;
+    color: #DDD !important;
+    border-radius: 0;
+}
+
+.darkstyle .page-rate-widget-box {
+    box-shadow: 0 0 5px #000 !important;
+    margin: unset;
+    margin-bottom: 8px;
+    padding-bottom: -1px;
+    background-color: #000;
+    border-radius: 3px;
+}
+
+.darkstyle .page-rate-widget-box .rate-points {
+    background-color: transparent !important;
+    color: #FFF !important;
+    border: none;
+    border-radius: 0;
+}
+
+.darkstyle .page-rate-widget-box .rateup,
+.darkstyle .page-rate-widget-box .ratedown {
+    background-color: transparent;
+    border: none;
+}
+
+.darkstyle .page-rate-widget-box .rateup a,
+.darkstyle .page-rate-widget-box .ratedown a {
+    background: transparent;
+    color: #FFF;
+}
+
+.darkstyle .page-rate-widget-box .rateup a:hover,
+.darkstyle .page-rate-widget-box .ratedown a:hover {
+    background: transparent;
+    color: #DDD;
+}
+
+.darkstyle .page-rate-widget-box .cancel {
+    background: transparent;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+}
+
+.darkstyle .page-rate-widget-box .cancel a {
+    color: #FFF !important;
+    border-radius: 0;
+}
+
+.darkstyle .page-rate-widget-box .cancel a:hover {
+    background: transparent;
+    color: #DDD !important;
+    border-radius: 0;
+}
+/* ---- Horizon Rules ---- */
+
+hr {
+    background-color: #DDD;
+    border: none;
+    box-shadow: 0 0 3px #AAA;
+}
+
+#page-content > hr, #page-content > .list-pages-box > .list-pages-item > hr, #page-content > .darkstyle > hr {
+    margin: 3em -2em 3em -3em;
+}
+
+.darkstyle hr {
+    background-color: #000;
+    height: 2px;
+    box-shadow: 0 0 3px #000;
+    border-radius: 1px;
+}
+
+@media (max-width: 767px) {
+    #page-content > hr, #page-content > .list-pages-box > .list-pages-item > hr, #page-content > .darkstyle > hr {
+        margin: 3em -5.5%;
+    }
+}
+
+/* ---- STANDARD IMAGE BLOCK ---- */
+
+.scp-image-block {
+    border: none;
+    padding: 6px;
+    background-color: #FFF;
+    box-shadow: inset 0 0 3px #DDD;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.scp-image-block .scp-image-caption {
+    background-color: #FFF;
+    border-top: none;
+    color: #000;
+}
+
+.scp-image-block img {
+    border-radius: 3px;
+    box-shadow: inset 0 0 3px #DDD;
+    background-color: #FFF;
+}
+
+.darkstyle .scp-image-block {
+    border: none;
+    padding: 6px;
+    background-color: #000;
+    box-shadow: 0 0 5px #000;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.darkstyle .scp-image-block .scp-image-caption {
+    background-color: #000;
+    border-top: none;
+    color: #FFF;
+}
+
+.darkstyle .scp-image-block img {
+    border-radius: 3px;
+    box-shadow: inset 0 0 3px #000;
+    background-color: #FFF;
+}
+
+/* ---- QUOTE BLOCK & CODE BLOCK ---- */
+
+blockquote,
+div.blockquote,
+.blockquote,
+.code,
+#toc {
+    background-color: #FFF;
+    border: solid 1px transparent;
+    border-radius: 5px;
+    box-shadow: inset 0 0 3px #AAA;
+}
+
+.darkstyle blockquote,
+.darkstyle div.blockquote,
+.darkstyle .blockquote,
+.darkstyle .code,
+.darkstyle #toc {
+    background-color: #FFF;
+    border: solid 2px #000;
+    border-radius: 5px;
+    box-shadow: inset 0 0 3px #000, 0 0 5px #000;
+}
+
+/* ---- WIKI CONTENT TABLE ---- */
+
+#page-content table.wiki-content-table {
+    border-collapse: separate;
+}
+
+#page-content .wiki-content-table th {
+    box-shadow: inset 0 0 3px #AAA;
+    background-color: #EEE;
+    border: solid 1px #FFF;
+    font-family: "Raleway", "M PLUS 1p";
+    border-collapse: separate;
+}
+
+#page-content .wiki-content-table td {
+    box-shadow: inset 0 0 3px #DDD;
+    background-color: #FFF;
+    border: solid 1px #FFF;
+    border-collapse: separate;
+}
+
+#page-content .wiki-content-table tr:nth-child(1) > *:nth-child(1) {
+    border-top-left-radius: 5px;
+}
+
+#page-content .wiki-content-table tr:nth-child(1) > *:nth-last-child(1) {
+    border-top-right-radius: 5px;
+}
+
+#page-content .wiki-content-table tr:nth-last-child(1) > *:nth-child(1) {
+    border-bottom-left-radius: 5px;
+}
+
+#page-content .wiki-content-table tr:nth-last-child(1) > *:nth-last-child(1) {
+    border-bottom-right-radius: 5px;
+}
+
+#page-content .darkstyle table.wiki-content-table {
+    border-collapse: separate;
+    border: solid 1px #000;
+    border-radius: 5px;
+    background-color: #000;
+    box-shadow: 0 0 5px #000;
+}
+
+#page-content .darkstyle .wiki-content-table th {
+    box-shadow: inset 0 0 3px #000;
+    background-color: #000;
+    color: #FFF;
+    border: solid 1px #000;
+    font-family: "Raleway", "M PLUS 1p";
+    border-collapse: separate;
+}
+
+#page-content .darkstyle .wiki-content-table td {
+    box-shadow: inset 0 0 3px #000;
+    background-color: #FFF;
+    border: solid 1px #000;
+    border-collapse: separate;
+}
+[[/code]]
+[[/iftags]]

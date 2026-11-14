@@ -1,0 +1,1502 @@
+[[iftags]]
+[[include :scp-jp:theme:black-highlighter-theme]]
+[[/iftags]]
+
+[[iftags +テーマ]]
+[[module CSS]]
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css");
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css");
+
+.blbf-main > div.blbf-example::before {
+    content: "例";
+}
+
+.blbf-main > div.blbf-intro::before {
+    content: "導入";
+}
+
+.blbf-main > div > p:last-of-type {
+    margin-top: 1.5rem;
+}
+
+.creditModule {
+    justify-content: center;
+    width: 100%;
+}
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css
+]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=2
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css
+]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** New Ageテーマ
+**著者:** ©︎[[*user JakdragonX]]
+**原題:** New Age Theme
+**作成年:** 2022
+[[include :scp-jp:credit:cc4]]
+[[include :scp-jp:credit:end-preview]]
+
+----
+[[=]]
++++++ これはNew Ageといい、主に[[*user JakdragonX]]によって執筆されている[[span class="hilighter"]]**SIMULACRUM**[[/span]]のために作られたテーマです。このテーマは[[[scp-2744|TATTLETALE]]]をベースにしており、これは**SIMULACRUM**に言及する最初の記事です。
+[[/=]]
+----
+
+[[div class="scp-image-block block-center" style="width:100%;"]]
+[[image https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-68-jpje/simulacrum-1.png style="width:100%;" link=#]]
+[[div class="scp-image-caption" style="width:100%;"]]
+New Ageには5つのユニークなカラーがあります: ##ff243c|RED##、##00d142|GREEN##、##00b8f0|BLUE##、##ff8e14|ORANGE##、そして##e165ec|PURPLE##。
+[[/div]]
+[[/div]]
+@@ @@
+[[div class="blbf-main"]]
+[[div class="blbf-intro blbf-main-colors"]]
+[[div class=".blbf-main > div.blbf-intro::before"]]
+[[/div]]
+これはBlack Highlighterベースのテーマであり、つまりNew Ageが適切に動作するためには//必ず//Black Highlighterをページにincludeすることが必要です。
+> @@[[include :scp-jp:theme:black-highlighter-theme]]@@
+> @@[[include :scp-jp:theme:new-age]]@@
+また、オプションでテーマの見た目や雰囲気を変更することができるいくつかの引数があります。以下に示します:
+> @@[[include :scp-jp:theme:new-age green=a]]@@
+> @@[[include :scp-jp:theme:new-age blue=a]]@@
+> @@[[include :scp-jp:theme:new-age orange=a]]@@
+> @@[[include :scp-jp:theme:new-age purple=a]]@@
+そして、"hidetitle"引数で上部の厄介な記事タイトルを取り除くこともできます:
+> @@[[include :scp-jp:theme:black-highlighter-theme]]@@
+> @@[[include :scp-jp:theme:new-age green/blue/orange/purple=a|hidetitle=a]]@@
+最後に、"SIMULACRUM/New Connection Established"からヘッダーを変更したい場合は、(テーマ自体のincludeの//後//に)以下を使用することができます:
+> @@[[module CSS]]@@
+> :root {
+>   @@ --header-title: "(タイトルはここ)";@@
+>     @@--header-subtitle: "(サブタイトルはここ)";@@
+>     @@--logo-image:@@ url(URLはここ[[footnote]]"url"の他に括弧を含めないと機能しません。[[/footnote]]);
+> }
+> @@[[/module]]@@
+このテーマのデフォルトを使用した記事の追加機能と基本フォーマットについては以下を参照して下さい。
+[[/div]]
+[[/div]]
+[[=]]
+[[collapsible show="クールなものを見るにはクリック!" hide="エンジョイしてくれてありがとう!" hideLocation="bottom"]]
+[[<]]
+
+[[div class="expoblock"]]
+[[=]]
++ [[span class="hilighter"]]これはEXPOBLOCKです。[[/span]]
+[[/=]]
+----
+このWikiでお気に入りのテーマである[[[theme:isolated-terminal|Isolated Terminalテーマ]]]から完璧に盗んできました。水平線の幅が広いことに注意して下さい。使い方:
+> @@[[div class="expoblock"]]@@
+> コンテンツをここに置くか、なんでも
+> @@----@@
+> (ああ、最高の日だ)
+> @@[[/div]]@@
+
+もしかしたら上のハイライトされたテキストも見たことがあるかもしれませんが、これは[[span class="hilighter"]]hilighter[[/span]]spanを使用していて、これも盗みました。
+> @@[[span class="hilighter"]]テキストはここ[[/span]]@@
+[[/div]]
+
+[[div class="blbf-main"]]
+[[div class="blbf-example blbf-main-colors"]]
+[[div class=".blbf-main > div.blbf-example::before"]]
+[[/div]]
+これは[[*user Woedenaz]]の厚意により[[[component:blacklight-box|Blacklight Boxコンポーネント]]]から堂々と盗んできた別のコンポーネントです。水平線を入れるとこれでも広がります。使い方はとても簡単です:
+> @@[[include :scp-jp:component:blacklight-box-source |inc-section-start= --]@@
+> @@|unique-name=小文字-スペースなし@@
+> @@|display-name=ラベルのテキスト@@
+> @@]]@@
+> ボックスのコンテンツはここに挿入。
+> @@[[include :scp-jp:component:blacklight-box-source |inc-section-end= --]]]@@
+[[/div]]
+[[/div]]
+
+[[div class="overwatch_notice"]]
+[[=]]
+++ 監督司令部より通達
+----
+これはどこでも使用できるクールなラベルで[[[theme:basalt|Basaltテーマ]]]から(他のdivと一緒に、すまない)取ってきたものです。[[span class="hilighter"]]overwatch_notice[[/span]]divを使用してみて下さい。
+[[/=]]
+[[/div]]
+
+[[div class="ethics_alert"]]
+[[=]]
+++ 倫理委員会より警告
+----
+ここには別のクールなラベルがあります。[[span class="hilighter"]]ethics_alert[[/span]]を試してみて下さい。
+[[/=]]
+[[/div]]
+
+[[div class="raisa_update"]]
+[[=]]
+++ 記録・情報保安管理局による更新
+----
+対処を始めていますか? これは[[span class="hilighter"]]raisa_update[[/span]]を使用しています。
+[[/=]]
+[[/div]]
+
+[[div class="classification_warning"]]
+[[=]]
+++ 分類委員会による警告を受信
+----
+そうでない場合、代わりにこれがあります。[[span class="hilighter"]]classification_warning[[/span]]を試してみて下さい。
+[[/=]]
+[[/div]]
+
+[[div class="miscom_message"]]
+[[=]]
+++ 誤伝達部門より伝達
+----
+そして最後の1枚。これは[[span class="hilighter"]]miscom_message[[/span]]を使用します。
+[[/=]]
+[[/div]]
+[[div class="modal"]]
+これも基本的なモーダルで、Basaltからもう1度取ってきました([[*user Liryn]]と[[*user Placeholder McD]]にはすまない)。これで使用できます:
+> @@[[div class="modal"]]@@
+> クールなコンテンツかなにか。
+> @@[[/div]]@@
+[[/div]]
+
+[[div class="smallmodal"]]
+これは上のと同じですが、小さいです。使用してみて下さい:
+> @@[[div class="smallmodal"]]@@
+> これを書くのはうんざりです。
+> @@[[/div]]@@
+[[/div]]
+
+> 更に、テーブルをdivで囲むことで特定の色に変更することができます。デフォルトでは、このテーマのテーブルは赤色になります。変更するにはテーブルを以下のいずれかで囲んでみて下さい:
+>> @@[[div class="redtable"]]@@
+>> @@[[div class="greentable"]]@@
+>> @@[[div class="bluetable"]]@@
+>> @@[[div class="orangetable"]]@@
+>> @@[[div class="purpletable"]]@@
+> いくつかの例を示します:
+[[=]]
+[[div class="greentable"]]
+||~ このテーブルが見えますか? ||
+||ママがそれを特別にしてくれた。||
+[[/div]]
+
+[[div class="bluetable"]]
+||~ 彼女は可愛らしいと言う。 ||
+||たがそれはバカだと思う。||
+[[/div]]
+
+[[div class="orangetable"]]
+||~ つまり、目的は何ですか? ||
+||部屋に食べに行けませんか?||
+[[/div]]
+
+[[div class="purpletable"]]
+||~ ただ、あれをするときは彼女は好きではない。 ||
+||だから今ここに空腹で座っています。||
+[[/div]]
+[[/=]]
+
+[[div class="blockquote"]]
+このテーマは、このテーマでサイドブロックを使用できるようにするために[[[theme:penumbra-bhl|Penumbra BHL]]]からも移植されています(つまり、そこから完全に盗みました)。Penumbra BHLと使い方は同じです:
+[[div class="blockquote"]]
+@@[[div class="limit"]]@@ <-- アンカーの始めのリミットを設定します
+@@[[div class="anchor"]]@@ <-- サイドボックスのスティッキー位置を設定します
+@@[[div class="sidebox"]]@@
+サイドボックスのテキストはここ。
+@@[[/div]]@@
+@@[[/div]]@@
+
+サイドボックスがスクロールするテキスト。
+
+@@[[/div]]@@ <-- アンカー終わりのリミットを設定します
+[[/div]]
+[[/div]]
+[[/<]]
+[[/collapsible]]
+[[/=]]
++ 例
+
+[[include :scp-jp:component:image-block name=https://scp-jp-storage.wikidot.com/local--files/file:7657035-67-6hze/logo.png|caption=情報部門ロゴ、[[*user EstrellaYoshte]]より提供!|width=200px]]
+
+分割線は5個のハイフン"@@-----@@"で作ることができ、何かの中でない限り(例えば引用ブロック)ページ全体に展開されます。この文章を区切る線が分割線です。[[footnote]]これは脚注です[[/footnote]]
+
+[https://www.google.com 1度は訪れたことがあるであろうリンク、知らないけれど]
+
+見出しは、行の先頭に1～6文字の"+"を置くことで作成できます
+
+[[collapsible show="+ 見出し" hide="- 見出し"]]
++ 1番目の見出し
+
+++ 2番目の見出し
+
++++ 3番目の見出し
+
+++++ 4番目の見出し
+
++++++ 5番目の見出し
+
+++++++ 6番目の見出し
+[[/collapsible]]
+
+@@ @@
+
+[[tabview]]
+[[tab タブ]]
+シャベルの何が革新的なんだい?
+
+そいつは[[span class="ruby"]]未知[[span class="rt"]]道[[/span]][[/span]]を切り開いた道具なのさ。
+[[/tab]]
+[[tab タブが作られた]]
+ここにも文章が。
+
+なんと奇妙な。
+[[/tab]]
+[[tab 長いタブ]]
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+[[/tab]]
+[[tab この空のタブにはとても長い名前が付いています。]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[/tabview]]
+@@ @@
+> これは引用ブロックです。各行の先頭に半角の"> "を置くことで作成されます。
+>
+> 追加のテキスト
+> -----
+> これは罫線です
+>
+>> 入れ子になった引用ブロック
+
+||~ これは ||~ テーブルです ||
+||もう || 作り方は ||
+||||知っているはずです ||
+
+[[=]]
+[[span style="font-family:var(--body-font); font-size: calc(var(--base-font-size) * 1.25);"]]bodyフォントはIBM Plex Sans。[[/span]]
+[[span style="font-family:var(--header-font); font-size: calc(var(--base-font-size) * 1.25);"]]ヘッダーフォントはArchivo。[[/span]]
+[[span style="font-family:var(--mono-font); font-size: calc(var(--base-font-size) * 1.25);"]]等幅フォントはSource Code Pro。[[/span]]
+[[/=]]
+
+@@ @@
+
++ ソースコード:
+
+[[collapsible show="+ テーマコードを表示" hide="-テーマコードを非表示"]]
+[[code type="css"]]
+
+/*
+New Age Theme
+[2022 Wikidot Theme]
+Created by JakdragonX
+Massive props to EstrellaYoshte, Liryn, and Placeholder McD for all the images. Thanks also to Estrella again for the help with the CSS.
+
+New Age is based on the Black Highlighter Theme created by Woedenaz and Croquembouche.
+The Informatics logo was created by EstrellaYoshte, based off the SCP Foundation logo. Licensed under CC BY SA 3.0.
+The node background was created by svgbackgrounds.com, licensed under CC BY 4.0.
+All of the other icons in the memo's were also made by Estrella and robbed from the BASALT theme, made by Liryn and Placeholder McD.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@900&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Source+Code+Pro:wght@500&display=swap');
+
+/* Primary Stuff */
+:root {
+    --theme-id: "New Age";
+    --theme-name: "New Age";
+    --header-title: "SIMULACRUM";
+    --header-subtitle: "NEW CONNECTION ESTABLISHED";
+    --logo-image: url("https://scp-jp-storage.wikidot.com/local--files/file:7657035-67-6hze/logo.png");
+    --accent-color: var(--deep-crimson);
+
+    /* These are the other colors beyond the accented ones. All of the themes uses these values. */
+    --pitch-black: 6, 6, 6;
+    --dark-midnight: 26, 26, 26;
+    --silver-lining: 196, 196, 196;
+
+    /* These are the five other values for the accents. Users can also simply just change the "--accent-color" variable to use any colors they want. */
+    --deep-crimson: 255, 36, 60;
+    --mutant-green: 0, 209, 66;
+    --skylight-blue: 0, 184, 240;
+    --neon-orange: 255, 142, 20;
+    --plum-purple: 225, 101, 236;
+
+    /* These are just fonts and other variables I edited to make things work. */
+    --body-font: 'IBM Plex Sans', "M Plus 1p", sans-serif;
+    --header-font: 'Archivo', "M Plus 1p", sans-serif;
+    --title-font: var(--header-font);
+    --mono-font: 'Source Code Pro', monospace;
+    --swatch-primary: var(--accent-color);
+    --swatch-primary-darker: var(--accent-color);
+    --swatch-primary-darkest: var(--accent-color);
+    --swatch-border-color: var(--accent-color);
+    --swatch-text-dark: var(--pitch-black);
+    --swatch-text-light: var(--silver-lining);
+    --swatch-text-general: var(--silver-lining);
+    --swatch-important-text: var(--accent-color);
+    --swatch-menubg-color: var(--dark-midnight);
+    --swatch-menubg-light-color: var(--dark-midnight);
+    --swatch-menubg-medium-color: var(--accent-color);
+    --swatch-menubg-medium-dark-color: var(--accent-color);
+    --swatch-menubg-dark-color: var(--pitch-black);
+    --swatch-menubg-black-color: var(--dark-midnight);
+    --swatch-menubg-hover-color: var(--pitch-black);
+    --swatch-menutxt-dark-color: var(--dark-midnight);
+    --swatch-menutxt-light-color: var(--silver-lining);
+    --swatch-menutxt-general-color: var(--silver-lining);
+    --swatch-secondary-color: var(--swatch-menubg-light-color);
+    --swatch-tertiary-color: var(--swatch-menubg-medium-color);
+    --swatch-alternate-color: var(--swatch-menubg-dark-color);
+    --swatch-text-secondary-color: var(--swatch-menutxt-light-color);
+    --swatch-text-tertiary-color: var(--silver-lining);
+    --gradient-header: linear-gradient(to top, rgb(var(--pitch-black)) 0%, rgb(var(--pitch-black)) 90%, rgb(var(--pitch-black)) 100%);
+    --diagonal-stripes: none;
+    --background-gradient-distance: 0rem;
+    --swatch-background: var(--pitch-black);
+    --background-gradient-color: var(--dark-midnight);
+    --header-gradient-color-bottom: var(--dark-midnight);
+    --header-gradient-color-middle: var(--dark-midnight);
+    --header-gradient-color-top: var(--black-monochrome);
+    --swatch-topmenu-bg-color: var(--pitch-black);
+    --swatch-topmenu-border-color: var(--pitch-black);
+    --link-color: var(--accent-color);
+    --visited-link-color: var(--accent-color);
+    --hover-link-color: var(--silver-lining);
+    --newpage-color: var(--accent-color);
+    --min-font-size: 16px;
+    --max-font-size: 16px;
+    --toggle-border-color: rgb(var(--accent-color));
+    --modal-header-txt: var(--pitch-black);
+    --modal-header-stripe: var(--accent-color);
+    --hoverblock-bg: var(--dark-midnight);
+    --hoverblock-header-txt: var(--pitch-black);
+    --ui-button-hover-bg: var(--dark-midnight);
+    --pager-selected-link: var(--pitch-black);
+    --pager-link-hover: var(--accent-color);
+    --pager-hover-bg: var(--dark-midnight);
+    --pager-selected-bg: var(--swatch-primary);
+    --hoverblock-footer-bg: var(--swatch-tertiary-color);
+    --rating-module-text-hover-color: var(--pitch-black);
+}
+
+/* The logo image is way too bright. I figured I'd just bring down it's opacity in case someone wants to use a different logo image that's also insanely bright. */
+#header::before {
+    opacity: 0.3;
+}
+
+/* Variables for the header. */
+#header {
+    --swatch-headerh1-color: var(--accent-color);
+    --swatch-headerh2-color: var(--swatch-text-light);
+    --search-icon-color: var(--silver-lining);
+    --search-icon-hover-color: var(--dark-midnight);
+    --search-icon-hover-bg-color: var(--accent-color);
+    --search-textbox-text-color: var(--silver-lining);
+    --search-icon-focus-color: var(--accent-color);
+    --search-icon-focus-bg-color: var(--accent-color);
+    --search-focus-outline-color: var(--dark-midnight);
+    --search-focus-textbox-bg-color: var(--dark-midnight);
+    --search-focus-textbox-text-color: var(--pitch-black);
+    --login-line-divider-color: var(--accent-color);
+    --login-username-color: var(--silver-lining);
+    --login-myaccount-color: var(--silver-lining);
+    --login-myaccount-hover-color: var(--pitch-black);
+    --login-myaccount-underline-color: transparent;
+    --login-myaccount-hover-bg-color: var(--swatch-primary-darkest);
+    --login-arrow-color: var(--accent-color);
+    --login-dropdown-bg-color: var(--dark-midnight);
+    --login-dropdown-bg-image: none;
+    --login-dropdown-border-color: var(--accent-color);
+    --login-dropdown-text-color: var(--swatch-text-secondary-color);
+    --login-dropdown-text-hover-color: var(--pitch-black);
+    --login-dropdown-bg-hover-color: var(--accent-color);
+    --login-mobile-icon-color: var(--search-icon-color);
+    --login-mobile-icon-hover-color: var(--search-icon-hover-color);
+    --login-mobile-icon-hover-bg-color: var(--search-icon-hover-bg-color);
+    --gradient-topmenu-mobile: linear-gradient(to bottom, rgba(var(--accent-color), 1) 0, rgba(var(--accent-color), 1) 0.125rem, rgba(var(--accent-color), 1) calc(var(--topbar-height-on-mobile) - 0.125rem), rgba(var(--swatch-topmenu-bg-color), 1) calc(var(--topbar-height-on-mobile) - 0.125rem), rgba(var(--swatch-topmenu-border-color), 1) var(--topbar-height-on-mobile));
+}
+
+/* Like the pretty lines in the background? Thank this guy for doing it. */
+#container-wrap:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1000' height='1000' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23C4C4C4' stroke-width='1.5'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23262626'%3E%3Ccircle cx='769' cy='229' r='6'/%3E%3Ccircle cx='539' cy='269' r='6'/%3E%3Ccircle cx='603' cy='493' r='6'/%3E%3Ccircle cx='731' cy='737' r='6'/%3E%3Ccircle cx='520' cy='660' r='6'/%3E%3Ccircle cx='309' cy='538' r='6'/%3E%3Ccircle cx='295' cy='764' r='6'/%3E%3Ccircle cx='40' cy='599' r='6'/%3E%3Ccircle cx='102' cy='382' r='6'/%3E%3Ccircle cx='127' cy='80' r='6'/%3E%3Ccircle cx='370' cy='105' r='6'/%3E%3Ccircle cx='578' cy='42' r='6'/%3E%3Ccircle cx='237' cy='261' r='6'/%3E%3Ccircle cx='390' cy='382' r='6'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: unset;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    z-index: -1;
+    opacity: 0.15;
+    aspect-ratio: unset;
+    object-view-box: unset;
+}
+
+/* Additional header stuff. */
+
+#header h1 a,
+#header h1 a:before {
+    font-size: 65px;
+}
+
+#header h2 span {
+    margin-top: calc(var(--header-height-on-mobile)/2 + var(--header-h1-font-size)/2 - 0.015em);
+    font-size: 20px;
+}
+
+@media (max-width: 580px) {
+
+    #header h1 a,
+    #header h1 a:before {
+     font-size: 40px;
+    }
+
+    #header h2 span {
+     margin-top: calc(var(--header-height-on-mobile)/2 + var(--header-h1-font-size)/2 - 1.4em);
+     font-size: 16px;
+    }
+}
+
+@media (max-width: 380px) {
+
+    #header h1 a,
+    #header h1 a:before {
+     font-size: 38px;
+    }
+
+    #header h2 span {
+     margin-top: calc(var(--header-height-on-mobile)/2 + var(--header-h1-font-size)/2 - 1.4em);
+     font-size: 14px;
+    }
+}
+
+/* Don't think I forgot the top bar! Oh, you're so silly! */
+#top-bar {
+    --topmenu-category-color: var(--pitch-black);
+    --topmenu-category-hover-color: var(--silver-lining);
+    --topmenu-category-hover-bg: var(--dark-midnight);
+    --topmenu-hover-border-color: var(--accent-color);
+    --mobile-topmenu-sidebar-button-color: var(--pitch-black);
+    --dropdown-bg-color: var(--dark-midnight);
+    --dropdown-border-color: var(--accent-color);
+    --dropdown-links-color: var(--swatch-text-secondary-color);
+    --dropdown-links-bg-color: 0, 0, 0, 0;
+    --dropdown-links-hover-color: var(--pitch-black);
+    --dropdown-links-hover-bg-color: var(--swatch-primary);
+}
+
+/* My ex used to call me this. Lots of these are just variables or small fixes to things like the text or something. */
+#main-content {
+    --ui-icon-color: var(--accent-color);
+    --ui-icon-bg: var(--pitch-black);
+    --ui-icon-hover-color: var(--pitch-black);
+    --ui-icon-hover-bg: var(--accent-color);
+    --editor-icon-color: var(--swatch-menutxt-general-color);
+    --editor-icon-hover-color: var(--swatch-background);
+    --editor-icon-hover-bg: var(--swatch-primary);
+    --editor-icon-submenu-bg: var(--swatch-secondary-color);
+    --tabs-bg: var(--dark-midnight);
+    --tabs-txt: var(--silver-lining);
+    --tabs-hover-bg: var(--swatch-primary-darker);
+    --tabs-hover-txt: var(--pitch-black);
+    --tabs-selected-bg: var(--swatch-primary);
+    --tabs-selected-txt: var(--pitch-black);
+    --tabs-selected-outline: var(--accent-color);
+    --tabs-bottom-border-color: var(--swatch-primary-darker);
+    --tabs-content-bg-color: var(--dark-midnight);
+    --tabs-content-border-color: var(--dark-midnight);
+    --tables-header-bg: var(--swatch-primary-darkest);
+    --tables-header-txt: var(--pitch-black);
+    --tables-border: var(--swatch-tertiary-color);
+    --tables-body-bg: var(--dark-midnight);
+    --tables-body-txt: var(--swatch-text-general);
+    --blockquote-bg-color: var(--dark-midnight);
+    --blockquote-border-color: var(--pitch-black);
+    --blockquote-colorbar-color: var(--accent-color);
+    --footnotes-footer-bg-color: var(--swatch-secondary-color);
+    --footnotes-footer-colorbar-color: var(--swatch-primary-darkest);
+    --footnotes-footer-title-bg-color: var(--swatch-primary-darkest);
+    --footnotes-footer-title-text-color: var(--pitch-black);
+    --footnotes-footer-num-color: var(--link-color);
+    --footnotes-footer-num-hover-color: var(--hover-link-color);
+    --footnotes-footer-text-color: var(--swatch-text-general);
+    --pagetags-title-text: var(--pitch-black)
+}
+
+#header div#top-bar {
+    background-color: rgb(var(--accent-color));
+    border-radius: 4px;
+}
+
+#interwiki,
+#side-bar {
+    --sidebar-links-hover-text-color: var(--pitch-black);
+
+}
+
+#footer {
+    --footer-bg-color: var(--accent-color);
+    --footer-text-color: var(--pitch-black);
+    --footer-link-color: var(--pitch-black);
+    --footer-link-hover-color: var(--silver-lining);
+    --footer-link-hover-bg-color: var(--dark-midnight);
+}
+
+.bibitems .title,
+.footnotes-footer .title {
+    border-radius: 4px;
+}
+
+.bibitems,
+.footnotes-footer {
+    border-radius: 4px;
+}
+
+#license-area {
+    --license-bg-color: var(--dark-midnight);
+    --license-text-color: var(--swatch-text-secondary-color);
+    --license-link-color: var(--silver-lining);
+    --license-link-hover-color: var(--pitch-black);
+    --license-link-hover-bg-color: var(--accent-color);
+}
+
+#body {
+    font-size: 16px;
+    --barColour: rgb(var(--accent-color));
+}
+
+tt,
+tt * {
+    font-size: inherit;
+}
+
+/* Code for the fancy lines underneath the collapsibles and links. */
+a.collapsible-block-link {
+    padding: 0.15em;
+    margin: -0.15em;
+    color: inherit;
+    -webkit-box-decoration-break: clone;
+            box-decoration-break: clone;
+    box-shadow: inset 0 -0.125rem 0 0rem rgba(var(--accent-color));
+    transition: box-shadow 200ms cubic-bezier(0.4, 0.0, 0.2, 1), color 200ms cubic-bezier(0.4, 0.0, 0.2, 1), padding 200ms cubic-bezier(0.4, 0.0, 0.2, 1), margin 200ms cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+a.collapsible-block-link:hover {
+    padding: 0.3em 0.25em 0.2em 0.25em;
+    margin: -0.25em;
+    box-shadow: inset 0 -1.5em 0 0 rgba(var(--accent-color));
+    text-decoration: none;
+    color: rgb(var(--pitch-black))
+}
+
+.info-container .collapsible-block-folded,
+.info-container .collapsible-block-unfolded-link {
+    background: rgb(var(--accent-color));
+}
+
+.info-container .collapsible-block-unfolded {
+    border: 3px solid rgb(var(--accent-color));
+    border-top: none;
+    background-color: rgb(var(--pitch-black));
+}
+
+.info-container .collapsible-block-folded .collapsible-block-link,
+.info-container .collapsible-block-link {
+    background: rgb(var(--pitch-black));
+}
+
+#page-content .info-container a.collapsible-block-link:hover {
+    box-shadow: none;
+}
+
+.collection .collapsible-block-unfolded-link a,
+.collection .collapsible-block-folded a:hover {
+    box-shadow: none;
+}
+
+.collection .collapsible-block-unfolded-link a,
+.collection .collapsible-block-folded a {
+    box-shadow: none;
+}
+
+#page-content .rate-box-with-credit-button,
+.page-rate-widget-box {
+    border: 0.0625rem solid rgba(var(--dark-midnight));
+    border-radius: 2px;
+    background-color: rgb(var(--dark-midnight));
+    box-shadow: 0 0.125rem 0 0 rgb(var(--accent-color));
+}
+
+hr {
+    height: 0.0925rem;
+    border-top: 0.0625rem solid rgba(var(--accent-color));
+    background-color: rgba(var(--accent-color));
+}
+
+#page-title::after,
+.meta-title::after,
+#page-title::before,
+.meta-title::before {
+    height: 0.19rem;
+}
+
+#page-content a:not([href*="user"]):not([href*="javascript:;"]):not(.fa-info):not([href*="https://scp-wiki.wikidot.com/classification-committee-memo"]):not([href="https://scp-wiki.wikidot.com/anomaly-classification-system-guide"]):not([href="/classification-committee-memo"]):not(.cc) {
+    padding: 0.15em;
+    margin: -0.15em;
+    color: inherit;
+    -webkit-box-decoration-break: clone;
+            box-decoration-break: clone;
+    box-shadow: inset 0 -0.125rem 0 0rem rgba(var(--accent-color));
+    transition: box-shadow 200ms cubic-bezier(0.4, 0.0, 0.2, 1), color 200ms cubic-bezier(0.4, 0.0, 0.2, 1), padding 200ms cubic-bezier(0.4, 0.0, 0.2, 1), margin 200ms cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+#page-content a:not([href*="user"]):not([href*="javascript:;"]):not([href*="https://scp-wiki.wikidot.com/classification-committee-memo"]):not([href="https://scp-wiki.wikidot.com/anomaly-classification-system-guide"]):not([href="/classification-committee-memo"]):not(.fa-info):not(.cc):hover {
+    padding: 0.3em 0.25em 0.2em 0.25em;
+    margin: -0.25em;
+    box-shadow: inset 0 -1.5em 0 0 rgba(var(--accent-color));
+    text-decoration: none;
+    color: rgb(var(--pitch-black));
+}
+
+.blockquote,
+[class*=blockquote],
+blockquote,
+div.blockquote {
+    background-color: rgba(var(--blockquote-bg-color));
+    border-top: 1px solid rgb(var(--pitch-black));
+    border-right: 1px solid rgb(var(--pitch-black));
+    border-bottom: 1px solid rgb(var(--pitch-black));
+    border-left: 5px solid rgb(var(--accent-color));
+    box-shadow: 4px 0px 8px 0px rgba(var(--pitch-black), 0.8);
+    border-radius: 4px;
+}
+
+/* Title and image block stuff. */
+@media (max-width: 360px) {
+
+    div#page-title,
+    div#meta-title {
+     border-bottom: 3px solid rgb(var(--accent-color));
+     padding-bottom: 0.5rem;
+    }
+
+    #page-title::after,
+    .meta-title::after,
+    #page-title::before,
+    .meta-title::before {
+     background: none;
+    }
+}
+
+.image-block,
+.scp-image-block {
+    box-shadow: none;
+}
+
+.image-block .image-caption,
+.scp-image-block .scp-image-caption {
+    background-color: rgb(var(--dark-midnight));
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom: 3px solid rgb(var(--accent-color));
+    box-shadow: none;
+}
+
+form#edit-page-form:not(.data-form) {
+    border: 3px solid rgb(var(--accent-color));
+}
+
+form#edit-page-form table.form:first-of-type td:last-of-type {
+    box-shadow: none;
+}
+
+form#edit-page-form table.form:first-of-type td:last-of-type input:not(:-moz-placeholder-shown) {
+    background-color: rgba(var(--dark-midnight));
+}
+
+form#edit-page-form table.form:first-of-type td:last-of-type input:not(:placeholder-shown) {
+    background-color: rgba(var(--dark-midnight));
+}
+
+form#edit-page-form .wd-editor-toolbar-panel {
+    background-color: rgb(var(--swatch-background));
+    border-bottom: 3px solid rgb(var(--accent-color));
+    border-top: 3px solid rgb(var(--accent-color));
+}
+
+input[type=text]:not(:-moz-placeholder-shown), textarea:not(:-moz-placeholder-shown) {
+    background-color: rgb(var(--dark-midnight));
+}
+
+input[type=text]:not(:placeholder-shown),
+textarea:not(:placeholder-shown) {
+    background-color: rgb(var(--dark-midnight));
+}
+
+form#edit-page-form #wd-editor-toolbar-panel+div {
+    border-bottom: 3px solid rgb(var(--accent-color));
+}
+
+form#edit-page-form .edit-help-34 {
+    background-color: rgb(var(--dark-midnight));
+}
+
+form#edit-page-form .edit-page-bottomtable tr>td:first-of-type>div:first-of-type {
+    box-shadow: none;
+}
+
+form#edit-page-form .edit-page-bottomtable tr>td:first-of-type>div:first-of-type textarea:not(:-moz-placeholder-shown) {
+    background-color: rgba(var(--dark-midnight));
+    color: rgb(var(--swatch-menutxt-general-color));
+    border: none;
+}
+
+form#edit-page-form .edit-page-bottomtable tr>td:first-of-type>div:first-of-type textarea:not(:placeholder-shown) {
+    background-color: rgba(var(--dark-midnight));
+    color: rgb(var(--swatch-menutxt-general-color));
+    border: none;
+}
+
+:not(.page-rate-widget-box):not(#search-top-box-form)>.btn,
+:not(.page-rate-widget-box):not(#search-top-box-form)>.button,
+:not(.page-rate-widget-box):not(#search-top-box-form)>.owindow .button-bar a,
+:not(.page-rate-widget-box):not(#search-top-box-form)>button,
+:not(.page-rate-widget-box):not(#search-top-box-form)>div.buttons input,
+:not(.page-rate-widget-box):not(#search-top-box-form)>input.button {
+    outline: 0 solidrgb(var(--swatch-primary));
+    background-color: rgb(var(--accent-color));
+    border: 3px solid rgb(var(--accent-color));
+    color: rgb(var(--pitch-black));
+}
+
+table.page-history tr:nth-of-type(2) td:not(:nth-of-type(7)):before {
+    color: rgb(var(--pitch-black));
+}
+
+.change-textarea-size {
+    background-color: rgb(var(--dark-midnight));
+}
+
+#odialog-container .owindow :not(.page-rate-widget-box):not(#search-top-box-form)>a.btn,
+#odialog-container .title.modal-header :not(.page-rate-widget-box):not(#search-top-box-form)>a.btn {
+    background-color: rgb(var(--accent-color));
+    color: rgb(var(--pitch-black));
+}
+
+.blbf-main>div {
+    border: 0.45rem rgb(var(--swatch-primary-darkest, 144, 25, 1)) solid;
+    margin-left: auto;
+    border-radius: 4px;
+    background-color: rgb(var(--pitch-black));
+}
+
+.blbf-main>div::before {
+    top: -0.45rem;
+    left: -0.25em;
+    color: rgb(var(--pitch-black));
+    border-radius: 4px;
+}
+
+.blbf-main hr {
+    border-top: 0.45rem solid rgba(var(--accent-color));
+}
+
+.blbf-main>div>p:last-of-type {
+    margin-top: 1.5rem;
+}
+
+.expoblock {
+    box-sizing: border-box;
+    border: solid 0.55rem rgb(var(--accent-color));
+    padding: 1rem;
+    border-radius: 4px;
+    background-color: rgb(var(--pitch-black));
+}
+
+.expoblock hr {
+    border-top: 0.45rem solid rgba(var(--accent-color));
+}
+
+span.hilighter {
+    background-color: rgb(var(--accent-color));
+    color: rgb(var(--pitch-black));
+    font-weight: bold;
+    padding: 0.2em;
+    font-size: 108%;
+    line-height: 1.2;
+    border-radius: 4px;
+}
+
+.overwatch_notice {
+    background: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-69-mcqt/O5_logo.png"), rgb(var(--dark-midnight));
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    width: auto;
+    padding: 10px 20px 5px 20px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0.3rem solid rgb(var(--deep-crimson));
+    color: rgb(var(--silver-lining));
+    border-radius: 4px;
+    width: 90%;
+    min-height: 4rem;
+    max-height: 100rem;
+}
+
+.overwatch_notice h1,
+.overwatch_notice h2,
+.overwatch_notice h3,
+.overwatch_notice h4,
+.overwatch_notice h5,
+.overwatch_notice h6 {
+    color: rgb(var(--silver-lining));
+}
+
+
+.overwatch_notice hr {
+    border-top: 0.0625rem solid rgb(var(--deep-crimson));
+    background-color: rgba(var(--deep-crimson));
+    margin: 0.25rem;
+}
+
+.overwatch_notice span.hilighter {
+    color: rgb(var(--pitch-black));
+    background-color: rgb(var(--deep-crimson));
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 0;
+}
+
+.overwatch_notice p {
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.ethics_alert {
+    background: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-70-jrsg/ethics_logo.png"), rgb(26 26 26);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    width: auto;
+    padding: 10px 20px 5px 20px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0.3rem solid rgb(var(--mutant-green));
+    color: rgb(var(--silver-lining));
+    border-radius: 4px;
+    width: 90%;
+    min-height: 4rem;
+    max-height: 100rem;
+}
+
+.ethics_alert h1,
+.ethics_alert h2,
+.ethics_alert h3,
+.ethics_alert h4,
+.ethics_alert h5,
+.ethics_alert h6 {
+    color: rgb(var(--silver-lining));
+}
+
+.ethics_alert hr {
+    border-top: 0.0625rem solid rgb(var(--mutant-green));
+    background-color: rgb(var(--mutant-green));
+    margin: 0.25rem;
+}
+
+.ethics_alert span.hilighter {
+    color: rgb(var(--pitch-black));
+    background-color: rgb(var(--mutant-green));
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 0;
+}
+
+.ethics_alert p {
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.raisa_update {
+    background: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-71-uxy9/RAISA_Logo.png"), rgb(26 26 26);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    width: auto;
+    padding: 10px 20px 5px 20px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0.3rem solid rgb(var(--skylight-blue));
+    color: rgb(var(--silver-lining));
+    border-radius: 4px;
+    width: 90%;
+    min-height: 4rem;
+    max-height: 100rem;
+}
+
+.raisa_update h1,
+.raisa_update h2,
+.raisa_update h3,
+.raisa_update h4,
+.raisa_update h5,
+.raisa_update h6 {
+    color: rgb(var(--silver-lining));
+}
+
+.raisa_update hr {
+    border-top: 0.0625rem solid rgb(var(--skylight-blue));
+    background-color: rgba(var(--skylight-blue));
+    margin: 0.25rem;
+}
+
+.raisa_update span.hilighter {
+    color: rgb(var(--pitch-black));
+    background-color: rgb(var(--skylight-blue));
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 0;
+}
+
+.raisa_update p {
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.classification_warning {
+    background: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-71-1ma0/CLASS_logo.png"), rgb(26 26 27);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    width: auto;
+    padding: 10px 20px 5px 20px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0.3rem solid rgb(var(--neon-orange));
+    color: rgb(var(--silver-lining));
+    border-radius: 4px;
+    width: 90%;
+    min-height: 4rem;
+    max-height: 100rem;
+}
+
+.classification_warning h1,
+.classification_warning h2,
+.classification_warning h3,
+.classification_warning h4,
+.classification_warning h5,
+.classification_warning h6 {
+    color: rgb(var(--silver-lining));
+}
+
+.classification_warning hr {
+    border-top: 0.0625rem solid rgb(var(--neon-orange));
+    background-color: rgb(var(--neon-orange));
+    margin: 0.25rem;
+}
+
+.classification_warning span.hilighter {
+    color: rgb(var(--pitch-black));
+    background-color: rgb(var(--neon-orange));
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 0;
+}
+
+.classification_warning p {
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.miscom_message {
+    background: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-72-v9ha/MISCOM_Logo.png"), rgb(26 26 27);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    width: auto;
+    padding: 10px 20px 5px 20px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0.3rem solid rgb(var(--plum-purple));
+    color: rgb(var(--silver-lining));
+    border-radius: 4px;
+    width: 90%;
+    min-height: 4rem;
+    max-height: 100rem;
+}
+
+.miscom_message h1,
+.miscom_message h2,
+.miscom_message h3,
+.miscom_message h4,
+.miscom_message h5,
+.miscom_message h6 {
+    color: rgb(var(--silver-lining));
+}
+
+.miscom_message hr {
+    border-top: 0.0625rem solid rgb(var(--plum-purple));
+    background-color: rgb(var(--plum-purple));
+    margin: 0.25rem;
+}
+
+.miscom_message span.hilighter {
+    color: rgb(var(--pitch-black));
+    background-color: rgb(var(--plum-purple));
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 0;
+}
+
+.miscom_message p {
+    line-height: 24px;
+    font-weight: 500;
+}
+
+form#edit-page-form .edit-page-bottomtable tr>td:first-of-type>div:first-of-type:before {
+    background-color: transparent;
+}
+
+form#edit-page-form .edit-help-34>a:hover {
+    color: rgb(var(--silver-lining));
+}
+
+.modal,
+.smallmodal {
+    padding: 15px 15px 15px 15px;
+    box-shadow: 0px 0px 3px rgb(0 0 0 / 30%);
+    width: auto;
+    margin: 1rem auto 1rem auto;
+    background: rgb(var(--dark-midnight));
+    border: solid 2px rgb(var(--dark-midnight));
+    border-radius: 4px;
+}
+
+.smallmodal {
+    width: 75%;
+}
+
+#page-content .greentable tr th {
+    background-color: rgb(var(--mutant-green));
+}
+
+#page-content .greentable tr {
+    --tables-border: var(--mutant-green);
+}
+
+#page-content .bluetable tr th {
+    background-color: rgb(var(--skylight-blue));
+}
+
+#page-content .bluetable tr {
+    --tables-border: var(--skylight-blue);
+}
+
+#page-content .orangetable tr th {
+    background-color: rgb(var(--neon-orange));
+}
+
+#page-content .orangetable tr {
+    --tables-border: var(--neon-orange);
+}
+
+#page-content .redtable tr th {
+    background-color: rgb(var(--deep-crimson));
+}
+
+#page-content .redtable tr {
+    --tables-border: var(--deep-crimson);
+}
+
+#page-content .purpletable tr th {
+    background-color: rgb(var(--plum-purple));
+}
+
+#page-content .purpletable tr {
+    --tables-border: var(--plum-purple);
+}
+
+.hl-identifier,
+.hl-code {
+    color: rgb(var(--silver-lining));
+}
+
+div.scale {
+    --woedbar-class-bar-color: rgb(var(--dark-midnight));
+    --woedbar-lvl6-color: rgb(var(--accent-color));
+    --woedbar-lvl5-color: rgb(var(--accent-color));
+    --woedbar-lvl4-color: rgb(var(--accent-color));
+    --woedbar-lvl3-color: rgb(var(--accent-color));
+    --woedbar-lvl2-color: rgb(var(--accent-color));
+    --woedbar-lvl1-color: rgb(var(--accent-color));
+}
+
+.collection .collapsible-block-unfolded-link a,
+.collection .collapsible-block-folded a {
+    border: 3px solid rgb(var(--accent-color));
+}
+
+.collection .collapsible-block-unfolded-link a,
+.collection .collapsible-block-folded a {
+    background-color: rgba(var(--dark-midnight));
+    color: rgb(var(--accent-color));
+}
+
+.collection .collapsible-block {
+    background-color: rgb(var(--dark-midnight));
+    border-radius: 4px;
+}
+
+.namerow {
+    background-color: rgb(var(--accent-color));
+    color: rgb(var(--pitch-black));
+}
+
+.namerow {
+    border: 2px solid rgb(var(--accent-color));
+    border-radius: 4px;
+}
+
+.titlecolumn {
+    border: 3px solid rgb(var(--accent-color));
+    border-radius: 4px;
+}
+
+.titlecolumn {
+    background-color: rgb(var(--accent-color));
+    color: rgb(var(--dark-midnight));
+}
+
+.articlecolumn {
+    background-color: rgb(var(--dark-midnight));
+}
+
+/* Custom Assets by EstrellaYoshte */
+.limit {
+    margin-bottom: -1rem;
+}
+
+.anchor {
+    position: -webkit-sticky;
+    position: sticky;
+    height: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+.sidebox {
+    background-color: rgb(var(--black-monochrome));
+    border-top: solid 0.125rem rgb(var(--swatch-primary));
+    padding: .14rem 1rem .14rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    width: calc((100vw - (var(--body-width-on-desktop) + 10rem))/2);
+    max-height: calc(100vh - 18rem);
+    position: absolute;
+    top: 0;
+    left: 103.5%;
+    z-index: 5;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.hovertip {
+    color: rgb(var(--swatch-text-general));
+}
+
+@media (max-width: 80.625rem) {
+    .sidebox {
+     width: auto;
+     max-width: 50vw;
+     color: rgba(0, 0, 0, 0);
+     background-color: rgba(0, 0, 0, 0);
+     box-shadow: 0 0 0 0 rgb(var(--swatch-primary));
+     border: none;
+     right: calc(((100vw - 1em - var(--body-width-on-desktop)) / 2) * -1);
+     left: initial;
+     pointer-events: none;
+     transition: max-width 0.2s ease-in-out 0.1s, color 0.2s ease-in-out 0.1s, box-shadow 0.5s ease-in-out 0.1s, background-color 0s ease-in-out 0s;
+     overflow-x: hidden;
+     overflow-y: hidden;
+     scrollbar-width: thin;
+    }
+
+    .sidebox::-webkit-scrollbar {
+     width: 0.5em;
+    }
+
+    .sidebox * {
+     opacity: 0;
+     transition: opacity 0.2s ease-in-out 0.1s;
+    }
+
+    .sidebox::before,
+    .sidebox::after {
+     content: " ";
+     position: absolute;
+     pointer-events: all;
+     right: 0;
+    }
+
+    .sidebox::before {
+     top: calc(50% - 0.75rem);
+     width: 0;
+     height: 0;
+     border-top: 0.75rem solid transparent;
+     border-bottom: 0.75rem solid transparent;
+     border-right: 0.75rem solid rgb(var(--accent-color));
+     transition: border 0.1s ease-in-out 0.1s;
+     z-index: 10;
+    }
+
+    .sidebox::after {
+     top: 0;
+     max-width: 0.75rem;
+     width: 100%;
+     height: 100%;
+     box-shadow: 0.125rem 0 0 0 rgb(var(--swatch-primary));
+     max-height: calc(100vh - 18rem);
+     background-color: rgb(var(--dark-midnight));
+     z-index: -1;
+     transition: box-shadow 0.5s ease-in-out 0.1s, max-width 0.5s ease-in-out 0.1s, border-top-left-radius 0.5s ease-in-out 0.1s, border-bottom-left-radius 0.5s ease-in-out 0.1s;
+    }
+
+    .sidebox:hover,
+    .sidebox:active {
+     color: rgb(var(--swatch-text-general));
+     background-color: rgb(var(--black-monochrome));
+     pointer-events: all;
+     overflow-y: scroll;
+     transition: max-width 0.5s ease-in-out 0.2s, color 0.5s ease-in-out 0.2s, box-shadow 0.5s ease-in-out 0.1s, background-color 0s ease-in-out 0.6s, right 0.5s ease-in-out 0.1s;
+    }
+
+    .sidebox:hover *,
+    .sidebox:active * {
+     opacity: 1;
+     transition: opacity 0.5s ease-in-out 0.2s;
+    }
+
+    .sidebox:hover::before,
+    .sidebox:active::before {
+     border-top: 0vw solid transparent;
+     border-bottom: 0vw solid transparent;
+    }
+
+    .sidebox:hover::after,
+    .sidebox:active::after {
+     box-shadow: 0 -0.125rem 0 0 rgb(var(--swatch-primary));
+     right: 0;
+     max-width: 100%;
+     border-top-left-radius: 0rem;
+     border-bottom-left-radius: 0rem;
+    }
+}
+
+@media only screen and (max-width:56.25rem) {
+    :root {
+     --body-width-on-desktop: 100vw;
+     --header-h1-font-size: calc(2rem + (2.5 - 2) * ((100vw - 18.750rem) / (60 - 18.750)));
+     --header-h2-font-size: var(--base-font-size);
+    }
+
+    #header h1,
+    #header h1 a,
+    #header h1 a::before {
+     top: 0.5rem;
+    }
+
+    #header h2,
+    #header h2 a,
+    #header h2 a::before {
+     top: 0.35rem;
+    }
+
+    .anchor {
+     top: calc(var(--topbar-height-on-mobile) + 0.75rem);
+    }
+
+    .sidebox,
+    .sidebox:hover,
+    .sidebox:active {
+     right: calc(((100vw - (100% - 3rem))/2) * -1 + 1.5em);
+    }
+
+    .sidebox::before,
+    .sidebox::after {
+     content: " ";
+     position: absolute;
+     pointer-events: all;
+     right: 0;
+    }
+
+    .blockquote,
+    [class*="blockquote"],
+    blockquote,
+    div.blockquote {
+     margin: 0;
+    }
+}
+
+@media only screen and (min-width: 48.0625rem) {
+
+    #search-top-box-form input[type="submit"],
+    #search-top-box-form input[type="submit"]:focus,
+    #search-top-box-form input[type="submit"]:hover {
+     border-left: 0.0625rem solid rgba(var(--swatch-primary-darkest), 0);
+    }
+
+    #search-top-box-form input[type="submit"] {
+     background: rgba(var(--swatch-primary-darkest), 0.5);
+    }
+}
+
+#page-content .rate-box-with-credit-button,
+.page-rate-widget-box {
+    border: 0.0625rem solid rgba(var(--pitch-black));
+}
+
+div.page-rate-widget-box .rate-points {
+    border: none;
+}
+
+#breadcrumbs a:active, 
+#breadcrumbs a:hover, 
+.pseudocrumbs a:active, 
+.pseudocrumbs a:hover {
+  color: rgb(var(--dark-midnight));
+}
+
+#search-top-box {
+     box-shadow: none;
+}
+[[/code]]
+[[/collapsible]]
+[[/iftags]]
+
+[[include :scp-jp:component:toggle-sidebar-bhl]]
+[[include :scp-jp:component:centered-header-bhl]]
+[[include :scp-jp:component:blacklight-box-source |inc-source= --]]]
+[[include :scp-jp:component:blacklight-box-source |inc-colors= --]
+|color-family=lowercase-nospaces
+|bg-color=rgb(var(--pitch-black))
+|txt-color=rgb(var(--accent-color))
+|border-color=rgb(var(--deep-crimson))
+|label-bg-color=rgb(var(--deep-crimson))
+|label-txt-color=rgb(var(--pitch-black))
+]]
+[[module CSS]]
+@import url("https://scp-jp.wdfiles.com/local--code/theme%3Anew-age/1")
+[[/module]]
+[[include :scp-jp:component:interwiki-style
+| priority=3
+| theme=https://scp-jp.wdfiles.com/local--code/theme%3Anew-age/1
+]]
+
+>[[ift{$green}gs -テーマ]]
+>[[iftags]]
+[[module CSS]]
+:root {
+    --accent-color: var(--mutant-green);
+}
+[[/module]]
+[[include :scp-jp:component:interwiki-style
+| priority=4
+| css=%3Aroot%20%7B%20--accent-color%3A%20var%28--mutant-green%29%3B%20%7D
+]]
+>[[/iftags]]
+>[[/ift{$green}gs]]
+
+>[[ift{$blue}gs -テーマ]]
+>[[iftags]]
+[[module CSS]]
+:root {
+    --accent-color: var(--skylight-blue);
+}
+[[/module]]
+[[include :scp-jp:component:interwiki-style
+| priority=4
+| css=%3Aroot%20%7B%20--accent-color%3A%20var%28--skylight-blue%29%3B%20%7D
+]]
+>[[/iftags]]
+>[[/ift{$blue}gs]]
+
+>[[ift{$orange}gs -テーマ]]
+>[[iftags]]
+[[module CSS]]
+:root {
+    --accent-color: var(--neon-orange);
+}
+[[/module]]
+[[include :scp-jp:component:interwiki-style
+| priority=4
+| css=%3Aroot%20%7B%20--accent-color%3A%20var%28--neon-orange%29%3B%20%7D
+]]
+>[[/iftags]]
+>[[/ift{$orange}gs]]
+
+>[[ift{$purple}gs -テーマ]]
+>[[iftags]]
+[[module CSS]]
+:root {
+    --accent-color: var(--plum-purple);
+}
+[[/module]]
+[[include :scp-jp:component:interwiki-style
+| priority=4
+| css=%3Aroot%20%7B%20--accent-color%3A%20var%28--plum-purple%29%3B%20%7D
+]]
+>[[/iftags]]
+>[[/ift{$purple}gs]]
+
+>[[ift{$hidetitle}gs -テーマ]]
+>[[iftags]]
+[[module CSS]]
+#page-title {
+display: none !important;
+}
+[[/module]]
+>[[/iftags]]
+>[[/ift{$hidetitle}gs]]

@@ -1,0 +1,2136 @@
+[[div class="sidebar-icon"]]
+[#side-bar ▶]
+[[/div]]
+[[a class="header-link" href="/"]]home[[/a]]
+
+[[module css]]
+@import url("https://scp-jp.wdfiles.com/local--code/theme%3Aaonibiiro-theme/1");
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+|priority= 1
+|theme= https://scp-jp.wdfiles.com/local--code/theme%3Aaonibiiro-theme/1
+]]
+
+[[iftags +テーマ]]
+
+[[module CSS]]
+.wikisys--template-dialog strong {
+    color: revert;
+}
+[[/module]]
+
+[[module rate]]
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** 青鈍色テーマ
+**著者:** [[*user Ryu JP]]
+[[include :scp-jp:credit:end-preview]]
+
++ 導入方法
+||[[include :scp-jp:theme:aonibiiro-theme]]||
+上記一行を記事内に記述してください。
+
++ 色彩構成
+[[include :scp-wiki:component:theme-squares -=-
+| color1-name=青鈍
+| color1-variable=--aonibi-accent
+| color1-info=(85, 102, 85)
+| color1-has-light-text=1
+| color2-name=薄萌葱
+| color2-variable=--usumoegi-accent
+| color2-info=(189, 224, 189)
+| subcolor1-name=白磁
+| subcolor1-variable=--hakuji-accent
+| subcolor1-info=(252, 255, 252)
+| subcolor2-name=蕎麦切
+| subcolor2-variable=--sobakiri-accent
+| subcolor2-info=(200, 207, 200)
+| subcolor3-name=黒橡
+| subcolor3-variable=--kurotsurubami-accent
+| subcolor3-info=(37, 40, 37)
+| subcolor3-has-light-text=1
+]]
+
++ 項目説明
+本項目は[[*user Ryu JP]]が[[[aonibiiro-hub|青鈍色の空]]]に属する自身の記事に適用するために作成した、[[*user Kankan]]氏の[*https://scp-jp-sandbox3.wikidot.com/draft:2859452-134-5016 青鈍色の空 テーマ]の派生様式です。 他テーマとの互換性と併存性は確認していません。本項目の作成にあたり、指摘及び助言をくださった全ての方々に対して感謝申し上げます。
+
++ 各種例示
+++ 分割線
+これは[[[wiki-syntax:horizontal-rules|分割線]]]の見本です。
+-----
+分割線は5個のハイフン（@@-----@@）によって作ることができ、何かの中でない限り（例えば下記の引用符など）ページ全体へ展開されます。上の文章を区切っている線が分割線です。
+
+++ 引用符
+> これは[[[wiki-syntax:block-quotes|引用符]]]の見本です。周りの文章を区切っている細い緑の線が引用符です。引用符は各行の先頭にダイナリ記号と半角スペース（> ）を置くことで作れます。
+>
+> -----
+> 分割線を入れた場合です。
+>
+>> 引用符を二重にした場合です。
+>>> 引用符を三重にした場合です。
+
+++ 見出し
+[[div class="aonibiiro-block3"]]
++* これは[[[wiki-syntax:headings|見出し]]]の見本です。
+++* 高速自動車国道
++++* 直轄国道（指定区間）
+++++* 補助国道（指定区間外）
++++++* 都道府県道
+++++++* 市町村道
+
+[[size 80%]]国土交通省の[*https://www.mlit.go.jp/road/sisaku/dorogyousei/2.pdf Ⅱ.道路の種類]をもとに[[*user Ryu JP]]により作成[[/size]]
+-----
+タイトルは行の先頭に1から6個のプラス（+）を置くことで作れます。また、特定の見出しを下記の目次に現れないようにするには、プラスの直後にアスタリスク（*）を付けてください。
+[[/div]]
+
+++ 折り畳みリンク
+[[collapsible show="これは折り畳みリンクの見本です" hide="折り畳みリンクを閉じる"]]
+[[div class="code"]]
+@@[[collapsible show="展開文章" hide="最小化文章"]]@@
+@@折り畳み内の内容@@
+@@[[/collapsible]]@@
+[[/div]]
+[[/collapsible]]
+
+++ テーブル
+||||||||~ [*https://www.mlit.go.jp/road/sign/sign/annai/rule3.htm 経路案内に用いる地名の表示方法] ||
+||~ 地＼道 ||~ 補助幹線道路 ||~ 幹線道路 ||~ 主要幹線道路 ||
+||~ 重要地 || ◎ || ◎ || ◎ ||
+||~ 主要地 || ◎ || ◎ || 〇 ||
+||~ 一般地 || ◎ || 〇 || 　||
+|||||||||| [[size 80%]]国土交通省の[*https://www.mlit.go.jp/road/sign/sign/annai/rule3.htm 経路案内に用いる地名の表示方法]をもとに[[*user Ryu JP]]により作成[[/size]] ||
+|||||||||| これは[[[wiki-syntax:tables|テーブル]]]の見本です。 ||
+
+++ タブ
+[[tabview]]
+[[tab タブ]]
+これは[[[wiki-syntax:layout%23tabview|タブ]]]の見本です。
+[[/tab]]
+[[tab 青鈍色の空]]
+> 「青鈍色の空の日は、何か面倒な事が起こる。」
+[[>]]
+[[[greedy-and-unbalanced-diet-dull-blue|]]] より
+[[/>]]
+[[/tab]]
+[[tab AM1620kHz]]
+> 『 午後2時25分現在の、高速道路情報をお知らせします』
+> 
+> 『アクアトンネル内にて､大規模交通事故及び施設損壊が発生しています』
+> 
+> 『その為東京アクアライン､川崎浮島ジャンクションから木更津インター間､並びに東京アクアライン連絡道､木更津金田インターから袖ヶ浦インター間は通過できない状況になっております｡皆様にはご迷惑をおかけします』
+> 
+> 『 ハイウェイラジオより、お伝えしました』
+[[>]]
+[[[event-number-ca-n|]]] より
+[[/>]]
+[[/tab]]
+[[tab 虚区高速十三号汐留線]]
+> そんな道路は存在しない｡
+[[>]]
+[[[null-highway|]]] より
+[[/>]]
+[[/tab]]
+[[tab 北陸自動車道]]
+> トンネルに組み込んであったバリケードを作動させ、子不知トンネルは完全に封鎖された。
+[[>]]
+[[[tunnel-octopus-dull-blue|]]] より
+[[/>]]
+[[/tab]]
+[[tab 御殿場PA]]
+> 場所は御殿場PAの入り口くらい。昔からあのあたりはよく猫がいましたよ。
+[[>]]
+[[[catcatcatcatcatcatcat|]]] より
+[[/>]]
+[[/tab]]
+[[tab 200km/h]]
+> 街路樹が一瞬で横へ流れていく。雨がほぼ真横の跡を残している。
+[[>]]
+[[[sea-mood|]]] より
+[[/>]]
+[[/tab]]
+[[/tabview]]
+
+++ ブロック要素
+[[div class="blockquote"]]
+これはclass「blockquote」の見本です。
+[[/div]]
+
+[[div class="page"]]
+これはclass「page」の見本です。
+[[/div]]
+
+[[div class="aonibiiro-block1"]]
+これはclass「aonibiiro-block1」の見本です。
+[[/div]]
+
+[[div class="aonibiiro-block2"]]
+これはclass「aonibiiro-block2」の見本です。
+[[/div]]
+
+[[div class="aonibiiro-block3"]]
+これはclass「aonibiiro-block3」の見本です。
+[[/div]]
+
+[[div class="aonibiiro-block4"]]
+これはclass「aonibiiro-block4」の見本です。
+[[/div]] 
+
+[[div class="code"]]
+@@[[div class="上記class名から選択"]]@@
+@@ブロック内の内容@@
+@@[[/div]] @@
+[[/div]]
+
+++ 画像キャプション
+[[include component:image-block
+|width=100%
+|name=https://scp-jp-storage.wikidot.com/local--files/file:2428007-139-5nif/aonbt.png
+|caption=これは画像キャプションの見本です。
+|align=center|]]
+[[div class="code"]]
+@@[[include component:image-block@@
+@@|name=画像のURL@@
+@@|caption=画像の説明@@
+@@|width=幅指定（任意）@@
+@@|link=画像リンク指定（任意）@@
+@@|align=right, center, leftのいずれかの画像位置（任意）@@
+@@]]@@
+[[/div]]
+
+++ 目次
+[[toc]]
+[[div class="code"]]
+@@[[toc]]@@
+[[/div]]
+
+++ リスト
+# これは[[[wiki-syntax:lists#numbered|番号付リスト]]]の見本です。
+# リストのアイテム
+# リストのアイテム
+[[div class="code"]]
+@@# 番号付きリストの内容１@@
+@@# 番号付きリストの内容２@@
+@@# 番号付きリストの内容３@@
+[[/div]]
+
+* これは[[[https://scp-jp.wikidot.com/wiki-syntax:lists#bulleted| 箇条書きリスト]]]の見本です。
+* リストのアイテム
+* リストのアイテム
+[[div class="code"]]
+@@# 箇条書きリストの内容１@@
+@@# 箇条書きリストの内容２@@
+@@# 箇条書きリストの内容３@@
+[[/div]]
+
+++ 文字装飾
+# **これは太字の見本です。**
+# //これは斜体の見本です。//
+# __これは下線の見本です。__
+# --これは打ち消し線の見本です。--
+# {{これは等幅フォントの見本です。}}
+# これは^^上付き文字^^と,,下付き文字,,の見本です。
+# これは[[[wiki-syntax:links|リンク]]]と[[a class="newpage"]]存在しないリンク[[/a]]の見本です。 
+# これは脚注[[footnote]]これは脚注内の見本です。[[/footnote]]の見本です。
+[[div class="code"]]
+@@**太字** | //斜体// | _下線_ | --打ち消し線-- | {{等幅フォント}} | ^^上付き文字^^,,下付き文字,, | 任意のリンク形式 | 脚注前[[footnote]]脚注内[[/footnote]]@@
+[[/div]]
+
+++ インターウィキ(SCP-173による見本)
+[[div style="border: 1px solid rgb(var(--sobakiri-accent));border-radius: 10px;background: rgb(var(--kurotsurubami-accent));box-shadow: 0 2px 6px rgb(var(--kurotsurubami-accent) / 50%);width: 17em;"]]
+[[include :rtas:interwikidemo |page=scp-173|lang=jp|cssurl=https://scp-jp.wdfiles.com/local--code/theme:aonibiiro-theme/1]]
+[[/div]]
+
+++ 前後記事リンク
+[[div class="earthworm"]]
+[[div class="false"]]
+[https://scp-jp.wikidot.com/aonibiiro-hub PREV]
+[[/div]]
+[[div class="yes"]]
+[https://scp-jp.wikidot.com/aonibiiro-hub SERIES HUB]
+[[/div]]
+[[div class="false"]]
+[https://scp-jp.wikidot.com/aonibiiro-hub NEXT]
+[[/div]]
+[[/div]]
+記事群が繋がっている形式の場合、下記コードを貼り付ける事により前後の話のリンクを表示することができます。falseをtrueにした時は該当部が表示されなくなります。
+[[div class="code"]]
+@@[[div class="earthworm"]]@@
+@@[[div class="false"]]@@
+@@ [前の話のURL PREV]@@
+@@[[/div]]@@
+@@[[div class="yes"]]@@
+@@ [https://scp-jp.wikidot.com/aonibiiro-hub SERIES HUB]@@
+@@[[/div]]@@
+@@[[div class="false"]]@@
+@@ [次の話のURL NEXT]@@
+@@[[/div]]@@
+@@[[/div]]@@
+[[/div]]
+------
++ 参考文献
+[[collapsible show="閲覧" hide="最小化"]]
+[[div class="aonibiiro-block2"]]
+**[https://scp-jp-sandbox3.wikidot.com/draft:2859452-134-5016 青鈍色の空 テーマ]**
+**作者:** [[*user Kankan]] / **公開:** 2020
+[[size 75%]]**Creative Commons Attribution-ShareAlike 3.0 Unported**[[/size]]
+[[/div]]
+
+[[div class="aonibiiro-block2"]]
+**[https://rtas.wikidot.com/n-theme:under-tokyo 地下東京テーマ]**
+**原案:** [[*user SOYA-001]] / **作者:** [[*user RTa_sub]] / **公開:** 2021
+[[size 75%]]**Creative Commons Attribution-ShareAlike 3.0 Unported**[[/size]]
+[[/div]]
+
+[[div class="aonibiiro-block2"]]
+**[https://scp-jp.wikidot.com/theme:kyouikaireki 共異廻歴テーマ]**
+**作者:** [[*user k-cal]] 及び [[*user Hasuma_S]] / **公開:** 2020
+[[size 75%]]**Creative Commons Attribution-ShareAlike 3.0 Unported**[[/size]]
+[[/div]]
+
+[[div class="aonibiiro-block2"]]
+**[https://scp-jp.wikidot.com/theme:basalt Basaltテーマ]**
+**作者:** [[*user Liryn]] 及び [[*user Placeholder McD]] / **公開:** 2022
+[[size 75%]]**Creative Commons Attribution-ShareAlike 3.0 Unported**[[/size]]
+[[/div]]
+
+[[div class="aonibiiro-block2"]]
+**[https://scp-jp.wikidot.com/theme:teito-keizai 帝都経済新聞テーマ]**
+**原案:** [[*user seafield13]] / **作者:** [[*user R74]] / **公開:** 2021
+[[size 75%]]**Creative Commons Attribution-ShareAlike 3.0 Unported**[[/size]]
+[[/div]]
+
+[[div class="aonibiiro-block2"]]
+**[https://pseudo-scp-jp.wikidot.com/above-and-beyond-theme-source Above and Beyond Theme]**
+**作者:** [[*user Enderman_desu]] / **公開:** 2023
+[[size 75%]]**Creative Commons Attribution-ShareAlike 3.0 Unported**[[/size]]
+[[/div]]
+
+[[div class="aonibiiro-block2"]]
+**[https://scp-jp.wikidot.com/theme:zattou 雑踏テーマ]**
+**作者:** [[*user sendoh-oroka]] / **公開:** 2021
+[[size 75%]]**Creative Commons Attribution-ShareAlike 3.0 Unported**[[/size]]
+[[/div]]
+
+[[div class="aonibiiro-block2"]]
+**[https://scp-wiki.wikidot.com/theme:monotypical Monotypical Theme]**
+**作者:** [[*user EstrellaYoshte]] 及び [[*user Woedenaz]] / **公開:** 2021
+[[size 75%]]**Creative Commons Attribution-ShareAlike 3.0 Unported**[[/size]]
+[[/div]]
+
+[[div class="aonibiiro-block2"]]
+**[https://1nu.wikidot.com/taiwa 対話部門]**
+**作者:** [[*user dog_punch]] / **公開:** 2020
+[[size 75%]]**Creative Commons Attribution-ShareAlike 3.0 Unported**[[/size]]
+[[/div]]
+
+[[div class="aonibiiro-block2"]]
+**[https://scp-jp.wikidot.com/theme:min-theme ミニマリストテーマ]**
+**作者:** [[*user Nanimono Demonai]] / **公開:** 2018
+[[size 75%]]**Creative Commons Attribution-ShareAlike 3.0 Unported**[[/size]]
+[[/div]]
+
+[[div class="aonibiiro-block2"]]
+**[https://scp-wiki.wikidot.com/theme:oceanbound Oceanbound Theme]**
+**作者:** [[*user EstrellaYoshte]] / **公開:** 2022
+[[size 75%]]**Creative Commons Attribution-ShareAlike 3.0 Unported**[[/size]]
+[[/div]]
+
+[[div class="aonibiiro-block2"]]
+**[https://scp-wiki.wikidot.com/theme:foxtrot Foxtrot Theme]**
+**作者:** [[*user Liryn]] / **公開:** 2022
+[[size 75%]]**Creative Commons Attribution-ShareAlike 3.0 Unported**[[/size]]
+[[/div]]
+[[/collapsible]]
+------
++ 権利関係
+[[collapsible show="閲覧" hide="最小化"]]
+**画像ライセンス**
+[[div class="aonibiiro-block2"]]
+**ファイルページ:** [*https://scp-jp-storage.wikidot.com/file:2428007-101-pfkc 青鈍色ロゴ]
+**ソース:** https://scp-jp-storage.wikidot.com/file:2428007-101-pfkc
+**ライセンス:** CC BY-SA 3.0
+**タイトル:** 青鈍色ロゴ
+**著作権者:** [[*user Ryu JP]]
+**公開年:** 2023
+**補足:**自作
+[[/div]]
+
+[[div class="aonibiiro-block2"]]
+**ファイルページ:** [*https://scp-jp-storage.wikidot.com/file:2428007-139-5nif 青鈍色テーマ用]
+**ソース:** https://scp-jp-storage.wikidot.com/file:2428007-139-5nif
+**ライセンス:** CC BY-SA 3.0
+**タイトル:** Aonibiiro Theme Photo
+**著作権者:** [[*user Ryu JP]]
+**公開年:** 2024
+**補足:** 自作/自己撮影画像を加工
+[[/div]]
+[[/collapsible]]
+------
++ CSS
+[[collapsible show="閲覧" hide="最小化"]]
+[[<]]
+[[code type="CSS"]]
+/*
+Powered on 2023/08/15
+[2024 Wikidot Theme]
+Created by Ryu JP
+CC BY-SA 3.0
+*/
+div#container-wrap {
+    background: none;
+}
+#header {
+    height: 7em;
+    z-index: 30;
+    position: relative;
+    padding: unset;
+    background: unset;
+    width: unset;
+    max-width: unset;
+    margin: unset;
+}
+#header h1 {
+    margin: unset;
+    padding: unset;
+    float: unset;
+    max-height: unset;
+}
+#header h1 a {
+    padding: unset;
+    line-height: unset;
+    max-height: unset;
+    color: unset;
+    font-family: unset;
+    font-size: unset;
+    text-shadow: unset;
+    letter-spacing: unset;
+}
+#header h2 {
+    margin: unset;
+    padding: unset;
+    clear: unset;
+    float: unset;
+    font-size: unset;
+    max-height: unset;
+    letter-spacing: unset;
+}
+#header h2 span {
+    margin: unset;
+    padding: unset;
+    line-height: unset;
+    max-height: unset;
+    color: unset;
+    text-shadow: unset;
+}
+#search-top-box {
+    top: unset;
+    right: unset;
+    width: unset;
+    text-align: unset;
+}
+#search-top-box-form input[type=submit] {
+    border: unset;
+    border-radius: unset;
+    padding: unset;
+    animation-name: unset;
+    font-size: unset;
+    font-weight: unset;
+    color: unset;
+    background: unset;
+    box-shadow: unset;
+}
+#search-top-box-input:hover, #search-top-box-input:focus {
+    border: unset;
+    color: unset;
+    background: unset;
+    box-shadow: unset;
+}
+#search-top-box-form input[type="submit"]:hover, #search-top-box-form input[type="submit"]:focus {
+    border: unset;
+    box-shadow: unset;
+    background: unset;
+    text-shadow: unset;
+    color: unset;
+}
+#login-status {
+    color: unset;
+    font-size: unset;
+}
+#login-status a {
+    color: unset;
+}
+#top-bar {
+    top: unset;
+    height: unset;
+    line-height: unset;
+    font-size: unset;
+    width: unset;
+    max-width: unset;
+    margin: unset;
+}
+#top-bar ul li a {
+    border: unset;
+    padding: unset;
+    line-height: unset;
+    max-height: unset;
+    overflow: unset;
+    color: unset;
+}
+#top-bar ul li.sfhover ul li a, #top-bar ul li:hover ul li a {
+    border: unset;
+    width: unset;
+    line-height: unset;
+    height: unset;
+    max-height: unset;
+    padding: unset;
+}
+#top-bar ul li.sfhover a, #top-bar ul li:hover a {
+    background: unset;
+    border: unset;
+    color: unset;
+}
+#top-bar ul li ul {
+    border: unset;
+    box-shadow: unset;
+    width: unset;
+}
+#main-content {
+    margin: unset;
+    padding: unset;
+}
+#side-bar {
+    margin: unset;
+    inset: unset;
+    width: unset;
+}
+/* ==== フォントの導入 ==== */
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+1p:400,800');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap');
+/* ==== :root ==== */
+:root {
+    --haeder-title: '青鈍色の空';
+    --header-subtitle: '気の沈む天気。';
+    --sidebar-icon: url(https://scp-jp-storage.wikidot.com/local--files/file:2428007-101-pfkc/aonibiiro_logo.png);
+    --header-h1-height: 50px;
+    --header-h2-height: 30px;
+    --header-h3-height: 40px;
+    --header-icon-width: 50px;
+    --sidebar-width: 270px;
+    --sidebar-icon-height: 200px;
+    --sidebar-banner-height: 100px;
+    --kurotsurubami-accent: 37, 40, 37;
+    --sobakiri-accent: 200, 207, 200;
+    --aonibi-accent: 85, 102, 85;
+    --hakuji-accent: 252, 255, 252;
+    --usumoegi-accent: 189, 224, 189;
+    --header-font: 'Noto Serif JP', serif;
+    ;
+    --UI-font: 'Noto Serif JP', serif;
+    ;
+    --scrollbar-width: 9px;
+}
+@media (max-width: 767px) {
+    :root {
+        --scrollbar-width: 0px;
+        --header-icon-width: 40px;
+        --sidebar-width: 70vw;
+        --header-h1-height: 35px;
+        --header-h2-height: 20px;
+        --header-h3-height: 35px;
+    }
+}
+/* Links */
+a {
+    color: rgb(var(--usumoegi-accent));
+}
+a.newpage {
+    color: rgb(var(--sobakiri-accent));
+}
+a:hover {
+    text-decoration: underline;
+    background-color: transparent;
+}
+#main-content a {
+    transition: .3s;
+}
+/* Collapsibles */
+#main-content a.collapsible-block-link {
+    padding: 0.17em;
+    color: rgb(var(--hakuji-accent));
+    background: rgb(var(--aonibi-accent));
+    border-radius: 3px;
+}
+#page-content .collapsible-block {
+    margin: 0.5em auto;
+}
+#page-content .collapsible-block-folded .collapsible-block-link::before,
+#page-content .collapsible-block-unfolded .collapsible-block-link::before {
+    content: "▶ ";
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 0.25em;
+    color: rgb(var(--sobakiri-accent));
+}
+#page-content .collapsible-block-folded .collapsible-block-link:hover::before,
+#page-content .collapsible-block-unfolded .collapsible-block-link:hover::before,
+#page-content .collapsible-block-folded .collapsible-block-link:focus::before,
+#page-content .collapsible-block-unfolded .collapsible-block-link:focus::before {
+    color: rgb(var(--sobakiri-accent));
+}
+#page-content .collapsible-block-unfolded .collapsible-block-link::before {
+    animation-name: collapsible-arrow-spin;
+    animation-duration: 0.15s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.32, .38, .39, .94);
+    animation-fill-mode: forwards;
+}
+@keyframes collapsible-arrow-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(90deg);
+    }
+}
+div.page-rate-widget-box {
+    box-shadow: none;
+    border-bottom: 2px solid rgb(var(--sobakiri-accent));
+    border-radius: 0;
+}
+.creditRate .rateBox {
+    display: inline-flex;
+    border-bottom: 2px solid rgb(var(--sobakiri-accent));
+}
+.creditRate .rateBox div.page-rate-widget-box {
+    border-bottom: none;
+}
+div.page-rate-widget-box .rate-points {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    color: rgb(var(--hakuji-accent));
+}
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+    background-color: transparent;
+    border: none;
+}
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a {
+    color: rgb(var(--hakuji-accent))
+}
+#page-content .page-rate-widget-box .rateup a:hover,
+#page-content .page-rate-widget-box .ratedown a:hover {
+    background: transparent;
+    color: rgb(var(--usumoegi-accent));
+}
+.page-rate-widget-box .cancel {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    color: rgb(var(--hakuji-accent));
+}
+#page-content .page-rate-widget-box .cancel a {
+    color: rgb(var(--hakuji-accent));
+}
+#page-content .page-rate-widget-box .cancel a:hover {
+    color: rgb(var(--usumoegi-accent));
+    background: transparent;
+}
+.modalbox .page-rate-widget-box {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%)
+}
+#page-content .rate-box-with-credit-button .creditButton {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+a.fa.fa-info {
+    color: rgb(var(--hakuji-accent))
+}
+a.fa.fa-info:hover {
+    color: rgb(var(--usumoegi-accent))
+}
+#page-content .modalbox .modalbox-title {
+    background: rgb(var(--kurotsurubami-accent));
+    color: rgb(var(--hakuji-accent));
+    border-radius: 0;
+}
+#page-content .modalbox {
+    border-radius: 0;
+    background-color: rgb(var(--kurotsurubami-accent));
+    box-shadow: none;
+}
+.modalcontainer .cc-by-sa:before {
+    color: rgb(var(--hakuji-accent));
+}
+/* Tag */
+#main-content .page-tags a {
+    line-height: inherit;
+    background-color: rgb(var(--aonibi-accent));
+    padding: 0.15em 0.75em;
+    border-radius: 2px 6px;
+    color: rgb(var(--hakuji-accent));
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 500;
+}
+.page-tags span {
+    border-top: none;
+}
+/* ==== header ==== */
+#header {
+    display: grid;
+    grid-template-rows: var(--header-h1-height) var(--header-h2-height) var(--header-h3-height);
+    grid-template-columns: var(--sidebar-width) 1fr var(--header-icon-width) var(--header-icon-width);
+    grid-template-areas:
+        ". header_h1 search login"
+        ". header_h2 search login"
+        ". topbar topbar topbar";
+    height: unset;
+}
+#header h1, #header h2 {
+    font-family: var(--header-font);
+    font-weight: 600;
+    overflow: hidden;
+    white-space: nowrap;
+}
+#header h1 {
+    grid-area: header_h1;
+    line-height: var(--header-h1-height);
+    padding-right: calc(var(--scrollbar-width) + var(--sidebar-width) - var(--header-icon-width) * 2);
+    top: 5%;
+}
+#header h1 a {
+    font-size: 0;
+    line-height: 0;
+}
+#header h1 a:before {
+    content: var(--header-title, '青鈍色の空');
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: calc(18px + (43 - 24) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(20px + (43 - 24) * ((100vw - 300px) / (1600 - 300)));
+    color: rgb(var(--hakuji-accent));
+    font-weight: 900;
+    position: relative;
+    top: 10px;
+}
+#header h2 {
+    grid-area: header_h2;
+    line-height: var(--header-h2-height);
+    padding-right: calc(var(--scrollbar-width) + var(--sidebar-width) - var(--header-icon-width) * 2);
+    top: 5%;
+}
+#header h2 span {
+    display: none;
+}
+#header h2:before {
+    content: var(--header-subtitle, '気の沈む天気。');
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: calc(10px + (20 - 12) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(12px + (20 - 12) * ((100vw - 300px) / (1600 - 300)));
+    color: rgb(var(--hakuji-accent), .75);
+    font-weight: 800;
+    position: relative;
+    top: 3px;
+}
+.header-link {
+    display: none;
+}
+@media (min-width: 768px) {
+    #side-bar {
+        padding-top: var(--sidebar-banner-height);
+    }
+    #side-bar:before {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 33;
+        width: var(--sidebar-width);
+        height: var(--sidebar-banner-height);
+        background-color: rgb(var(--kurotsurubami-accent));
+    }
+    .header-link {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 33;
+        width: var(--sidebar-width);
+        height: calc(var(--sidebar-banner-height) + 1px);
+        font-size: 0;
+    }
+}
+#search-top-box {
+    grid-area: search;
+    inset: 0;
+    position: relative;
+}
+#search-top-box-form input.button:hover {
+    cursor: pointer;
+}
+#search-top-box:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    top: -100%;
+    background: rgb(var(--aonibi-accent));
+    z-index: -2;
+    transition: all .3s cubic-bezier(0.1, 0.9, 0.1, 0.9);
+}
+#search-top-box:hover:before {
+    top: 0%;
+}
+#search-top-box:after {
+    content: '\f002';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    color: rgb(var(--hakuji-accent));
+    font-family: 'FontAwesome';
+    font-size: 15px;
+    line-height: calc(var(--header-h1-height) + var(--header-h2-height));
+    text-align: center;
+    z-index: -1;
+}
+#search-top-box:hover:after {
+    color: rgb(var(--hakuji-accent));
+}
+#search-top-box-input {
+    display: none;
+}
+#search-top-box-form input.button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    font-size: 0;
+    width: var(--header-icon-width);
+    height: calc(var(--header-h1-height) + var(--header-h2-height));
+}
+#top-bar {
+    grid-area: topbar;
+    right: 0;
+    font-family: var(--UI-font);
+}
+#login-status {
+    grid-area: login;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    position: relative;
+}
+#login-status {
+    font-size: 0;
+}
+.printuser a {
+    margin: unset;
+    font-family: 'Noto Serif JP', serif;
+}
+#login-status .printuser img.small {
+    background: none !important;
+    width: var(--header-icon-width);
+    height: calc(var(--header-h1-height) + var(--header-h2-height));
+    padding: calc((var(--header-h1-height) + var(--header-h2-height) - var(--header-icon-width) * 0.8) / 2) calc(var(--header-icon-width) / 10);
+    vertical-align: unset;
+    box-sizing: border-box;
+    margin: unset;
+    filter: grayscale();
+}
+#login-status:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    top: -100%;
+    background: rgb(var(--aonibi-accent));
+    z-index: -2;
+    transition: all .3s cubic-bezier(0.1, 0.9, 0.1, 0.9);
+}
+#login-status:hover:before {
+    top: 0%;
+}
+#login-status:has(.login-status-create-account) {
+    display: grid;
+    width: var(--header-icon-width);
+    grid-template-columns: 150px 0 150px;
+    grid-template-rows: 45px;
+    grid-template-areas: 'create . signin';
+    justify-content: end;
+    align-content: end;
+}
+#login-status:has(.login-status-create-account):after {
+    content: '\f090';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    font-family: 'FontAwesome';
+    font-size: 17px;
+    text-align: center;
+    color: rgb(var(--hakuji-accent));
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+}
+#login-status:has(.login-status-create-account):hover:after {
+    color: rgb(var(--hakuji-accent));
+}
+#login-status:has(.login-status-create-account) .login-status-create-account, #login-status:has(.login-status-create-account) .login-status-sign-in {
+    font-size: 13px;
+    font-family: var(--UI-font);
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(var(--hakuji-accent));
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    top: 45px;
+    display: grid;
+    place-items: center;
+    max-height: 0px;
+    overflow: hidden;
+}
+#login-status:has(.login-status-create-account):hover a {
+    max-height: 100vh;
+}
+#login-status:has(.login-status-create-account) .login-status-create-account:before, #login-status:has(.login-status-create-account) .login-status-sign-in:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    background: rgb(var(--aonibi-accent));
+    z-index: -2;
+}
+#login-status:has(.login-status-create-account) .login-status-create-account:after, #login-status:has(.login-status-create-account) .login-status-sign-in:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 0%;
+    inset: 0;
+    background: rgb(var(--kurotsurubami-accent));
+    z-index: -2;
+    transition: all .3s cubic-bezier(0.1, 0.9, 0.1, 0.9);
+}
+#login-status:has(.login-status-create-account) .login-status-create-account:hover, #login-status:has(.login-status-create-account) .login-status-sign-in:hover {
+    color: rgb(var(--hakuji-accent));
+}
+#login-status:has(.login-status-create-account) .login-status-create-account:hover:after, #login-status:has(.login-status-create-account) .login-status-sign-in:hover:after {
+    height: 100%;
+}
+#login-status:has(.login-status-create-account) .login-status-create-account {
+    grid-area: create;
+}
+#login-status:has(.login-status-create-account) .login-status-sign-in {
+    grid-area: signin;
+}
+#account-topbutton {
+    display: none;
+}
+#account-options {
+    display: block !important;
+    width: fit-content;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all .5s cubic-bezier(.5, .0, .5, 1);
+    border: none;
+    background: rgb(var(--aonibi-accent));
+}
+#login-status:hover #account-options, #account-options:hover {
+    max-height: 100vh;
+}
+#account-options ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(120px, 1fr));
+}
+#account-options li a {
+    position: relative;
+    font-size: 12px;
+    font-family: var(--UI-font);
+    color: rgb(var(--hakuji-accent));
+    text-decoration: none;
+    text-align: center;
+    padding: 12px;
+    line-height: normal;
+}
+#account-options li a:hover {
+    color: rgb(var(--hakuji-accent));
+}
+#top-bar>*:not(.top-bar):not(.mobile-top-bar) {
+    display: none;
+}
+#top-bar ul li a {
+    position: relative;
+    color: rgb(var(--hakuji-accent));
+    font-weight: 600;
+    line-height: var(--header-h3-height);
+    padding: 0 12px;
+    text-decoration: none;
+}
+#account-options li a:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 0%;
+    inset: 0;
+    background: rgb(var(--kurotsurubami-accent));
+    z-index: -2;
+    transition: all .3s cubic-bezier(0.1, 0.9, 0.1, 0.9);
+}
+#account-options li a:hover:before {
+    height: 100%;
+}
+#top-bar {
+    grid-area: topbar;
+    right: 0;
+}
+#top-bar li {
+    margin: 0;
+}
+#top-bar ul li {
+    position: static;
+}
+#top-bar li a:hover {
+    background: none;
+    color: rgb(var(--hakuji-accent));
+}
+#top-bar li:hover ul, #top-bar li.sfhover ul {
+    position: absolute;
+    width: calc(100vw - var(--sidebar-width) - var(--scrollbar-width));
+    right: 0;
+    background: rgb(var(--aonibi-accent));
+    z-index: -2;
+    max-width: 700px;
+}
+#top-bar ul li.sfhover a:hover, #top-bar ul li:hover a:hover {
+    background: unset;
+}
+#top-bar ul li.sfhover ul li a, #top-bar ul li:hover ul li a {
+    width: 100%;
+    box-sizing: border-box;
+    color: rgb(var(--hakuji-accent));
+    text-align: end;
+    line-height: var(--header-h3-height);
+    padding: 0 12px;
+}
+#top-bar li ul li a:hover {
+    color: rgb(var(--hakuji-accent));
+}
+.top-bar ul li a:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 0%;
+    inset: 0;
+    background: rgb(var(--aonibi-accent));
+    z-index: -1;
+    transition: all .3s cubic-bezier(0.1, 0.9, 0.1, 0.9);
+}
+.top-bar ul li a:hover:before {
+    height: 100%;
+}
+.top-bar ul li ul li a:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 0%;
+    inset: 0;
+    background: rgb(var(--kurotsurubami-accent));
+    z-index: -1;
+    transition: all .3s cubic-bezier(0.1, 0.9, 0.1, 0.9);
+}
+.top-bar ul li ul li a:before {
+    height: 0%;
+}
+.open-menu {
+    display: none;
+}
+.mobile-top-bar {
+    max-width: unset;
+    left: unset;
+    right: 0;
+    width: max-content;
+}
+.mobile-top-bar ul li a:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 0%;
+    inset: 0;
+    background: rgb(var(--aonibi-accent));
+    z-index: -1;
+    transition: all .3s cubic-bezier(0.1, 0.9, 0.1, 0.9);
+}
+.mobile-top-bar ul li a:hover:before {
+    height: 100%;
+}
+#top-bar .mobile-top-bar ul li ul {
+    width: 100vw;
+    max-width: unset;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    right: 0;
+}
+.mobile-top-bar ul li ul li a {
+    --header-h3-height: 30px;
+    font-size: 11px;
+}
+.mobile-top-bar ul {
+    position: relative;
+}
+.mobile-top-bar ul li ul li a:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 0%;
+    inset: 0;
+    background: rgb(var(--kurotsurubami-accent));
+    z-index: -1;
+    transition: all .3s cubic-bezier(0.1, 0.9, 0.1, 0.9);
+}
+.mobile-top-bar ul li ul li a:hover:before {
+    height: 100%;
+}
+/* ==== content-wrap ==== */
+::-webkit-scrollbar {
+    width: var(--scrollbar-width);
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(var(--sobakiri-accent));
+}
+body {
+    background: rgb(var(--kurotsurubami-accent));
+}
+#main-content {
+    min-height: calc(1000px + 20vh - var(--header-h1-height) - var(--header-h2-height) - var(--header-h3-height));
+    max-width: 1040px;
+    background: rgb(var(--kurotsurubami-accent));
+    border-radius: 25px 0 0 0;
+    color: rgb(var(--hakuji-accent));
+    font-family: var(--UI-font);
+    box-sizing: border-box;
+    margin: 0 min(5%, 17vw);
+    align-items: center;
+    justify-content: center;
+}
+#main-content:before {
+    content: '';
+    width: 100%;
+    height: calc(100%);
+    position: absolute;
+    inset: 0;
+    border-radius: 25px 0 0 0;
+    pointer-events: none;
+}
+#content-wrap {
+    margin: unset;
+    margin-left: var(--sidebar-width);
+    max-width: unset;
+    min-height: unset;
+}
+@media (min-width: 768px) {
+    #content-wrap {
+        top: -1.5em;
+    }
+}
+@media (max-width: 767px) {
+    #content-wrap {
+        margin: 0;
+    }
+    #main-content {
+        width: 100%;
+        border-radius: 0;
+        max-width: 90%;
+        margin: 0 5%;
+        padding: 0;
+    }
+    #main-content:before {
+        border-radius: 0;
+    }
+    #header {
+        grid-template-areas:
+            "header_h1 header_h1 search login"
+            "header_h2 header_h2 search login"
+            "topbar topbar topbar topbar";
+        grid-template-columns: 1fr var(--header-icon-width) var(--header-icon-width);
+    }
+    #header h1, #header h2 {
+        padding-right: 0;
+        text-align: start;
+        padding-left: calc(var(--header-icon-width) + 10px);
+    }
+}
+#side-bar,
+#side-bar:target {
+    position: fixed;
+    left: 0;
+    width: var(--sidebar-width);
+    height: 100vh;
+    overflow: auto;
+    top: 0;
+    z-index: 33;
+    transition: all .3s cubic-bezier(0.3, 1, 0.3, 1);
+    background: rgb(var(--kurotsurubami-accent));
+    box-sizing: border-box;
+    border: none;
+    padding: unset;
+    font-family: var(--UI-font);
+}
+#side-bar:before {
+    content: var(--sidebar-banner-title, '');
+    position: relative;
+    display: block;
+    width: 100%;
+    height: var(--sidebar-banner-height);
+    background: var(--sidebar-icon) center 20px no-repeat;
+    background-size: var(--sidebar-icon-height);
+    text-align: center;
+    line-height: calc(var(--sidebar-banner-height) + 60px);
+    font-size: 15px;
+    font-family: var(--header-font);
+    padding-bottom: 1px;
+    text-decoration: underline 2px;
+    text-underline-offset: 3px;
+}
+#side-bar:target {
+    left: 0;
+}
+#side-bar:target .close-menu {
+    opacity: 0;
+    visibility: hidden;
+    display: block;
+    position: fixed;
+    width: calc(100% - var(--sidebar-width));
+    height: 100vh;
+    left: var(--sidebar-width);
+    top: 0;
+    z-index: -1;
+    background: linear-gradient(90deg, rgba(var(--aonibi-accent), .6), transparent);
+    transition: all .3s cubic-bezier(0.3, 1, 0.3, 1);
+    opacity: 1;
+    visibility: visible;
+}
+#side-bar::-webkit-scrollbar {
+    width: 8px;
+    border: none;
+}
+#side-bar::-webkit-scrollbar-thumb {
+    background: rgb(var(--sobakiri-accent));
+}
+#side-bar .side-block, #interwiki .side-block {
+    border: none;
+    box-shadow: none;
+    background: none !important;
+    padding: 0;
+}
+#side-bar div.menu-item, #interwiki .menu-item {
+    margin: 0;
+    position: relative;
+}
+#side-bar div.menu-item a, #interwiki .menu-item a {
+    color: rgb(var(--hakuji-accent));
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    font-size: 12px;
+    position: relative;
+}
+#side-bar .side-block:not(.sns) div.menu-item {
+    font-size: 0;
+}
+#side-bar div.menu-item a:hover, #interwiki .menu-item a:hover {
+    color: rgb(var(--hakuji-accent));
+}
+#side-bar div.menu-item a:before, #interwiki .menu-item:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 0%;
+    inset: 0;
+    background: rgb(var(--aonibi-accent));
+    z-index: -1;
+    transition: all .3s cubic-bezier(0.1, 0.9, 0.1, 0.9);
+}
+#side-bar div.menu-item a:hover:before, #interwiki .menu-item:hover:before {
+    height: 100%;
+}
+#side-bar .heading, #interwiki .heading {
+    color: rgb(var(--hakuji-accent));
+    border: unset;
+    background: rgb(var(--aonibi-accent));
+    margin: 0;
+    padding: 4px 10px;
+}
+.side-block:not(.sns) img {
+    display: none;
+}
+#side-bar div.menu-item .sub-text {
+    font-size: 10px;
+    font-weight: 600;
+    font-family: var(--UI-font);
+    color: rgb(var(--hakuji-accent));
+    position: absolute;
+    right: 0;
+    height: 100%;
+    display: inline-flex;
+    place-items: center;
+    pointer-events: none;
+    padding-right: 10px;
+}
+#side-bar div.menu-item:hover .sub-text {
+    color: rgb(var(--hakuji-accent));
+}
+#side-bar hr {
+    display: none;
+}
+#side-bar .collapsible-block-link {
+    display: inline-block;
+    margin: 0;
+    padding: 5px 0 5px 15px;
+    width: 100%;
+    box-sizing: border-box;
+    background: rgb(var(--aonibi-accent));
+    color: rgb(var(--hakuji-accent));
+    text-decoration: none;
+    transition: all .3s cubic-bezier(0.1, 0.9, 0.1, 0.9);
+}
+#side-bar .collapsible-block-folded {
+    background: none;
+}
+#side-bar .collapsible-block-folded:hover .collapsible-block-link {
+    color: rgb(var(--usumoegi-accent));
+}
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link {
+    display: inline-block;
+    margin: 0;
+    padding: 5px 0 5px 15px;
+    width: 100%;
+    box-sizing: border-box;
+    background: rgb(var(--aonibi-accent));
+    color: rgb(var(--hakuji-accent));
+    text-decoration: none;
+    transition: all .3s cubic-bezier(0.1, 0.9, 0.1, 0.9);
+}
+#side-bar .collapsible-block-unfolded-link:hover .collapsible-block-link {
+    color: rgb(var(--usumoegi-accent));
+}
+#side-bar .collapsible-block-unfolded-link {
+    border: none;
+}
+/* ==== extra ==== */
+/* TITLE */
+#page-title {
+    color: rgb(var(--hakuji-accent));
+    font-family: 'Noto Serif JP', serif;
+    font-size: 220%;
+    transition: 0.5s;
+    border-bottom: 2px solid rgb(var(--aonibi-accent));
+}
+#page-content {
+    position: relative;
+}
+.side-nav {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.side-nav .yui-nav {
+    position: absolute;
+    display: grid;
+    left: calc(var(--sidebar-width) * -1);
+    top: 0;
+    border: none;
+    width: var(--sidebar-width);
+    height: calc(1000px + 40vh - var(--header-h1-height) - var(--header-h2-height) - var(--header-h3-height));
+    grid-template-rows: repeat(auto-fill, minmax(50px, 1fr));
+    overflow: auto;
+}
+.side-nav .yui-navset .yui-nav .selected, .yui-navset .yui-navset-top .yui-nav .selected {
+    margin: unset;
+}
+.side-nav .yui-navset .yui-nav li, .yui-navset .yui-navset-top .yui-nav li {
+    margin: unset;
+    padding: unset;
+}
+.side-nav .yui-navset .yui-nav a em {
+    border: none;
+    padding: 0;
+    inset: 0;
+    font-size: 20px;
+    font-family: var(--UI-font);
+    color: rgb(var(--hakuji-accent));
+    line-height: 20px;
+}
+.side-nav .yui-navset .yui-nav a,
+.side-nav .yui-navset .yui-nav li.selected a,
+.side-nav .yui-navset .yui-nav li.selected a:hover {
+    background: none;
+    border: none;
+    width: var(--sidebar-width);
+}
+.side-nav .yui-navset .yui-nav .selected a em {
+    padding: unset;
+}
+.side-nav .yui-navset .yui-nav li {
+    height: 100%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    position: relative;
+}
+.side-nav .yui-navset .yui-nav li:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 0%;
+    inset: 0;
+    background: rgb(var(--aonibi-accent));
+    z-index: 0;
+    transition: all .3s cubic-bezier(0.1, 0.9, 0.1, 0.9);
+}
+.side-nav .yui-navset .yui-nav li:hover:before {
+    height: 100%;
+}
+.side-nav .yui-navset .yui-nav li:hover em {
+    color: rgb(var(--hakuji-accent));
+}
+.side-nav .yui-navset .yui-content {
+    background: none;
+    border: none;
+    padding: unset;
+}
+@media (max-width: 767px) {
+    .side-nav {
+        z-index: 30;
+    }
+    .side-nav .yui-nav {
+        position: fixed;
+        inset: unset;
+        right: 0;
+        bottom: 0;
+        width: 70vw;
+        margin-bottom: 110px;
+        margin-right: 30px;
+        z-index: 1;
+        overflow: hidden;
+        pointer-events: auto;
+        height: 0;
+        transition: all .3s cubic-bezier(0.1, 0.9, 0.1, 0.9);
+    }
+    .side-nav .yui-nav:hover {
+        height: 70vh;
+        overflow: auto;
+    }
+    .side-nav .yui-nav:after {
+        content: '\f103';
+        font-family: 'FontAwesome';
+        font-size: 40px;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin-bottom: 30px;
+        margin-right: 30px;
+        width: 50px;
+        height: 50px;
+        display: grid;
+        place-items: center;
+        background: rgb(var(--aonibi-accent));
+        color: rgb(var(--hakuji-accent));
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgb(var(--aonibi-accent));
+        z-index: 3;
+        pointer-events: auto;
+        transition: all .3s cubic-bezier(0.1, 0.9, 0.1, 0.9);
+    }
+    .side-nav .yui-nav:hover:after {
+        color: rgb(var(--link-color));
+        transform: rotate(180deg);
+    }
+    .side-nav .yui-nav:hover:before {
+        content: '';
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        inset: 0;
+        z-index: -1;
+        pointer-events: none;
+        background: rgb(var(--aonibi-accent), .75);
+        backdrop-filter: blur(3px);
+    }
+    .side-nav .yui-nav li:first-child:after {
+        content: '';
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        width: 70vw;
+        height: 0;
+        margin-bottom: 110px;
+        margin-right: 30px;
+        z-index: -1;
+        background: rgb(var(--kurotsurubami-accent), .5);
+        border-radius: 15px;
+        box-shadow: 0 0 15px rgb(var(--aonibi-accent), .25);
+        transition: all .3s cubic-bezier(0.1, 0.9, 0.1, 0.9);
+    }
+    .side-nav .yui-nav:hover li:first-child:after {
+        height: 70vh;
+    }
+    .side-nav .yui-navset .yui-nav li:first-child:hover:before {
+        border-radius: 15px 15px 0 0;
+    }
+}
+tt {
+    font-family: 'JetBrains Mono', monospace;
+}
+/* IMAGE CAPTION */
+#page-content .scp-image-block {
+    border-color: rgb(var(--aonibi-accent));
+    box-shadow: none;
+}
+#page-content .scp-image-block .scp-image-caption {
+    border-color: rgb(var(--kurotsurubami-accent));
+    background-color: rgb(var(--aonibi-accent));
+    color: rgb(var(--hakuji-accent));
+}
+/* ELEMENT */
+blockquote {
+    margin: 1em 0;
+    border: 1px solid rgb(var(--aonibi-accent));
+    background-color: transparent;
+}
+.aonibiiro-block1 {
+    position: relative;
+    margin: 10px 0;
+    padding: 10px;
+    background: rgb(var(--kurotsurubami-accent));
+    border: 1px solid rgb(var(--sobakiri-accent));
+    border-top-width: 10px;
+    border-right-width: 2px;
+    border-bottom-width: 10px;
+    border-left-width: 2px;
+}
+.aonibiiro-block1:after {
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: rgb(var(--sobakiri-accent));
+    color: rgb(var(--kurotsurubami-accent));
+    content: "　･･･";
+    vertical-align: top;
+    font-weight: bold;
+    font-size: .2em;
+    line-height: 8px;
+}
+.aonibiiro-block2 {
+    position: relative;
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 4px solid rgb(var(--sobakiri-accent));
+    background: rgb(var(--aonibi-accent));
+}
+.aonibiiro-block2:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: rgb(var(--aonibi-accent));
+    color: rgb(var(--sobakiri-accent));
+    content: "･･･　";
+    vertical-align: top;
+    text-align: right;
+    font-size: 1em;
+    line-height: 4px;
+}
+.aonibiiro-block3 {
+    position: relative;
+    margin: 20px 0;
+    padding: 10px;
+    border: 2px solid rgb(var(--sobakiri-accent));
+    box-shadow: 0 8px rgb(var(--kurotsurubami-accent)), 0 10px rgb(var(--sobakiri-accent)), 0 -8px rgb(var(--kurotsurubami-accent)), 0 -10px rgb(var(--sobakiri-accent));
+}
+.aonibiiro-block4 {
+    position: relative;
+    margin: 10px 0;
+    padding: 10px;
+    background: rgb(var(--sobakiri-accent));
+    color: rgb(var(--kurotsurubami-accent));
+    box-shadow: 3px 3px rgb(var(--aonibi-accent));
+}
+.page {
+    display: block;
+    overflow: hidden;
+    font-style: normal;
+    background-attachment: scroll;
+    background-clip: padding-box;
+    background-color: transparent;
+    background-image: linear-gradient(to top, rgb(var(--kurotsurubami-accent)) 0%, rgb(var(--sobakiri-accent)) 8%);
+    background-origin: padding-box;
+    background-position: 0px 8px;
+    background-repeat: repeat;
+    background-size: 100% 20px;
+    border: 2px double rgb(var(--kurotsurubami-accent));
+    padding: 10px 10px;
+}
+.page p {
+    line-height: 20px;
+    margin: 0;
+    color: rgb(var(--kurotsurubami-accent));
+}
+h1, h2, h3, h4, h5, h6 {
+    color: rgb(var(--hakuji-accent));
+    font-family: 'Noto Serif JP', serif;
+    font-weight: bold;
+}
+strong {
+    color: rgb(var(--hakuji-accent));
+}
+/* footnote */
+.footnotes-footer .title {
+    font-size: 0px;
+    color: transparent;
+    margin-bottom: 6px;
+}
+.footnotes-footer .title:before {
+    content: "Footnotes \0026  References";
+    color: rgb(var(--hakuji-accent));
+    ;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 0.9rem;
+    cursor: text;
+}
+.footnotes-footer a {
+    color: rgb(var(--usumoegi-accent));
+    font-weight: 700;
+}
+.footnotes-footer {
+    border-left: solid 3px rgb(var(--aonibi-accent));
+    padding-left: 15px;
+    margin-top: 7px;
+}
+.footnote .f-footer,
+.equation .e-footer,
+.reference .r-footer {
+    display: none;
+}
+/* link to next */
+.earthworm {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0;
+    clear: both;
+}
+.earthworm div {
+    display: inline-flex;
+    align-items: center;
+}
+.earthworm p {
+    margin: 0 1em;
+    text-align: center;
+}
+.earthworm div:nth-child(1) {
+    height: 30px;
+    /* border-top: 1px rgb(var(--sobakiri-accent)) solid;
+  border-bottom: 1px rgb(var(--sobakiri-accent)) solid;*/
+    background-color: rgb(var(--aonibi-accent));
+    position: relative;
+}
+.earthworm div:nth-child(1):not(.true)::before {
+    content: "";
+    position: absolute;
+    border: 17px solid transparent;
+    border-right: 25px solid rgb(var(--hakuji-accent));
+    left: -44px;
+    top: -2px;
+    z-index: 6;
+}
+.earthworm div:nth-child(1):not(.true)::after {
+    content: "";
+    position: absolute;
+    border: 15px solid transparent;
+    border-right: 15px solid rgb(var(--sobakiri-accent));
+    left: -32px;
+    top: 0px;
+    z-index: 7;
+}
+.earthworm div:nth-child(2) {
+    height: 30px;
+    border-left: 1px rgb(var(--kurotsurubami-accent)) solid;
+    border-right: 1px rgb(var(--kurotsurubami-accent)) solid;
+    background-color: rgb(var(--aonibi-accent));
+}
+.earthworm div:nth-child(2).no a, .earthworm a[href="/"] {
+    color: rgb(var(--hakuji-accent));
+    text-decoration: none;
+    cursor: text;
+    pointer-events: none;
+}
+.earthworm div:nth-child(3) {
+    height: 30px;
+    line-height: 30px;
+    /* border-top: 1px rgb(var(--aonibi-accent)) solid;
+  border-bottom: 1px rgb(var(--sobakiri-accent)) solid; */
+    background-color: rgb(var(--aonibi-accent));
+    position: relative;
+}
+.earthworm div:nth-child(3):not(.true)::before {
+    content: "";
+    position: absolute;
+    border: 17px solid transparent;
+    border-left: 25px solid rgb(var(--hakuji-accent));
+    right: -44px;
+    top: -2px;
+    z-index: 6;
+}
+.earthworm div:nth-child(3):not(.true)::after {
+    content: "";
+    position: absolute;
+    border: 15px solid transparent;
+    border-left: 15px solid rgb(var(--sobakiri-accent));
+    right: -32px;
+    top: 0;
+    z-index: 7;
+}
+.earthworm div.true {
+    width: 1px;
+}
+.earthworm div.true p {
+    display: none;
+}
+.earthworm a {
+    word-break: normal;
+}
+/* TABLE */
+table.wiki-content-table th {
+    background-color: rgb(var(--aonibi-accent));
+    border-color: rgb(var(--aonibi-accent));
+}
+hr {
+    background-color: rgb(var(--aonibi-accent));
+}
+table.wiki-content-table td {
+    background-color: rgb(var(--kurotsurubami-accent));
+    border-color: rgb(var(--aonibi-accent));
+}
+.code {
+    border: 1px solid rgb(var(--sobakiri-accent));
+    background-color: transparent;
+    color: rgb(var(--hakuji-accent));
+}
+/* code highlighter stuff */
+.hl-identifier, .hl-code, .hl-brackets {
+    color: rgb(var(--hakuji-accent));
+}
+.hl-var {
+    color: rgb(var(--usumoegi-accent));
+}
+.hl-special {
+    color: rgb(var(--usumoegi-accent));
+}
+.hl-reserved {
+    color: rgb(var(--usumoegi-accent));
+}
+.hl-number, .hl-string, .hl-quotes {
+    color: rgb(var(--usumoegi-accent));
+}
+del {
+    color: rgb(var(--aonibi-accent));
+}
+ins {
+    color: rgb(var(--aonibi-accent));
+}
+/* TAB */
+.yui-navset {
+    border: solid rgb(var(--aonibi-accent)) 1px;
+}
+.yui-navset .yui-nav,
+.yui-navset .yui-nav li a,
+.yui-navset .yui-nav li a em {
+    border: none 0;
+}
+.yui-navset .yui-nav {
+    background: rgb(var(--aonibi-accent));
+}
+.yui-navset .yui-nav li,
+.yui-navset .yui-nav li.selected {
+    margin: 0;
+    padding: 0;
+}
+.yui-navset .yui-nav li a,
+.yui-navset .yui-nav li a:hover {
+    background: rgb(var(--aonibi-accent));
+}
+.yui-navset .yui-nav li.selected a,
+.yui-navset .yui-nav li.selected a:hover,
+.yui-navset .yui-nav li.selected a:focus {
+    background: rgb(var(--sobakiri-accent));
+}
+.yui-navset .yui-nav li a em {
+    color: rgb(var(--hakuji-accent));
+}
+.yui-navset .yui-nav li.selected a em {
+    padding: 0.25em 0.75em;
+    color: rgb(var(--kurotsurubami-accent));
+}
+.yui-navset .yui-content {
+    border: none;
+    background: rgb(var(--kurotsurubami-accent));
+}
+/* Edit Buttons */
+.buttons .btn {
+    background-color: rgb(var(--kurotsurubami-accent));
+    border: 1px solid rgb(var(--aonibi-accent));
+    color: rgb(var(--hakuji-accent));
+    padding: 3px 5px;
+}
+.buttons .btn:hover {
+    background-color: rgb(var(--hakuji-accent));
+    color: rgb(var(--kurotsurubami-accent));
+}
+/* Edit Lock Info*/
+#lock-info {
+    background-color: rgb(var(--kurotsurubami-accent));
+    border: 1px solid rgb(var(--aonibi-accent));
+}
+#edit-page-form>table.edit-page-bottomtable>tbody>tr>td:nth-child(1)>div.sub,
+#edit-page-form>table.form>tbody>tr>td:nth-child(1) {
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 500;
+}
+#edit-page-form>table.edit-page-bottomtable>tbody>tr>td:nth-child(1)>div:nth-child(1) {
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 600;
+}
+.wd-editor-toolbar-panel ul li a {
+    height: 22px;
+    width: 22px;
+    padding: 0;
+    margin: 0;
+    display: block;
+    border-radius: 2px;
+    filter: invert(1), hue-rotate(76deg);
+    filter: invert(1) hue-rotate(76deg);
+}
+.wd-editor-toolbar-panel {
+    margin-bottom: 0.5rem;
+}
+input#edit-page-title.text {
+    border-radius: 4px;
+    font-family: 'Noto Serif JP', serif;
+    border: 2px solid rgb(var(--aonibi-accent));
+    background-color: rgb(var(--hakuji-accent));
+}
+textarea {
+    font-family: 'Noto Serif JP', serif;
+    padding: 5px 5px 5px 5px;
+    font-size: 105%;
+    border: 0.13rem solid rgb(var(--aonibi-accent));
+    background-color: rgb(var(--hakuji-accent));
+    color: rgb(var(--kurotsurubami-accent));
+    border-radius: 2px;
+}
+#show-upload-button {
+    float: unset;
+    border-radius: 6px;
+    border: solid 1px grey;
+    font-size: 0.85rem;
+}
+.edit-help-34 {
+    margin-top: 2px;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+/* OTHER */
+div.blockquote {
+    background: rgb(var(--aonibi-accent));
+    margin: 1em 0;
+    border: 1px solid rgb(var(--aonibi-accent));
+}
+
+div#toc {
+    border: 2px solid rgb(var(--kurotsurubami-accent));
+    background: rgb(var(--sobakiri-accent));
+    color: rgb(var(--kurotsurubami-accent));
+    font-size: 1.05rem;
+    font-weight: bold;
+    border-radius: 6px;
+    display: inline-block;
+}
+div#toc a {
+    color: rgb(var(--kurotsurubami-accent));
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+.hovertip {
+    width: 20em;
+    padding: 0.5em;
+    border: 2px solid rgb(var(--kurotsurubami-accent)) !important;
+    background: rgb(var(--aonibi-accent)) !important;
+    /* box-shadow: 0 0 6px 1px rgb(var(--kurotsurubami-accent)); */
+    z-index: 100;
+    color: rgb(var(--hakuji-accent));
+    animation: hoverfade .5s ease-in-out both;
+    border-radius: 7px;
+}
+@keyframes hoverfade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.hovertip .f-heading {
+    background: rgb(var(--aonibi-accent));
+    color: rgb(var(--hakuji-accent));
+}
+/* USER INFO */
+div.owindow {
+    background: rgb(var(--kurotsurubami-accent));
+    color: rgb(var(--hakuji-accent));
+}
+.owindow .title.modal-header {
+    border-bottom: rgb(var(--kurotsurubami-accent)) 1px solid;
+    color: rgb(var(--hakuji-accent));
+}
+div.owindow>div.content>img {
+    background: transparent !important;
+}
+div.owindow>div.content>h1 {
+    color: rgb(var(--kurotsurubami-accent));
+}
+.owindow .button-bar a:hover {
+    background: rgb(var(--hakuji-accent));
+}
+.owindow .button-bar a {
+    background: rgb(var(--kurotsurubami-accent));
+    color: rgb(var(--hakuji-accent));
+    transition: .3s;
+}
+.owindow .title {
+    background-color: rgb(var(--kurotsurubami-accent));
+}
+/* BODY */
+body {
+    background-color: rgb(var(--kurotsurubami-accent));
+    color: rgb(var(--hakuji-accent));
+    font-family: 'Noto Serif JP', serif;
+}
+#page-info-break {
+    height: 10px;
+}
+#page-options-container {
+    border-top: solid 1px rgba(var(--sobakiri-accent), 0.5);
+    padding-top: 6pm;
+}
+.page-watch-options {
+    padding-bottom: 0.6rem;
+    font-size: 77%;
+}
+.page-options-bottom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.page-options-bottom a {
+    margin: 3px;
+    color: rgb(var(--hakuji-accent));
+    background: rgb(var(--aonibi-accent));
+    padding: 5px 13px 5px 13px;
+    text-decoration: none;
+    font-size: 90%;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.page-options-bottom a:hover {
+    background: rgba(var(--sobakiri-accent), 0.8);
+}
+#page-info-break {
+    height: 6px;
+}
+.odialog-shader {
+    background-color: rgb(var(--aonibi-accent));
+    opacity: .3;
+}
+/*--------------------------------------------*/
+/*-------------BOTTOM AREA---------------*/
+/*--------------------------------------------*/
+#footer {
+    order: 2;
+    display: flex !important;
+    flex-wrap: wrap;
+    column-gap: 0.5ex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    color: rgb(var(--hakuji-accent));
+    background-color: rgb(var(--aonibi-accent));
+    padding: 0.5rem;
+}
+#footer .options {
+    float: none;
+    width: auto;
+    font-size: 0;
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 0.5rem;
+    padding-right: 0.675rem;
+}
+#footer .options a {
+    font-size: 0.675rem;
+}
+#license-area {
+    order: 3;
+    position: relative;
+    isolation: isolate;
+    --wght: 700;
+    font-weight: 700;
+    padding: 0.5rem;
+    font-size: 0.75rem;
+    color: rgb(var(--kurotsurubami-accent));
+    background-color: rgb(var(--sobakiri-accent));
+    ;
+}
+#license-area a {
+    color: inherit;
+}
+@media (min-width: 768px) {
+    .sidebar-icon {
+        display: none;
+    }
+}
+@media (min-width: 768px) {
+    #footer {
+        margin-left: var(--sidebar-width);
+    }
+}
+@media (min-width: 768px) {
+    #license-area {
+        margin-left: var(--sidebar-width);
+    }
+}
+@media (min-width: 768px) {
+    #header h1, #header h2 {
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    .sidebar-icon {
+        position: fixed;
+        width: var(--header-icon-width);
+        height: calc(var(--header-h1-height) + var(--header-h2-height) + var(--header-h3-height));
+        display: grid;
+        place-items: center;
+        left: 0;
+        top: 0;
+        background: rgb(var(--aonibi-accent));
+        border-radius: 0 0 25px 0;
+        z-index: 32;
+    }
+    .sidebar-icon a {
+        display: grid;
+        place-items: center;
+        width: var(--header-icon-width);
+        height: calc(var(--header-h1-height) + var(--header-h2-height) + var(--header-h3-height));
+        font-size: 23px;
+        color: rgb(var(--hakuji-accent));
+        font-family: var(--UI-font);
+    }
+    .sidebar-icon p {
+        margin: 0;
+    }
+    #side-bar {
+        left: calc(var(--sidebar-width) * -2);
+    }
+    ::-webkit-scrollbar {
+        border: none;
+    }
+    #side-bar::-webkit-scrollbar {
+        width: 10px;
+    }
+}
+@media (max-width: 767px) {
+    hr {
+        height: 0.8px;
+    }
+}
+.modalbox>.modalbox-title>h2>span {
+    font-family: 'noto serif jp';
+}
+input:focus, textarea:focus {
+    outline: none;
+}
+#lock-info {
+    background-color: rgb(var(--hakuji-accent));
+    border: 3px solid rgb(var(--kurotsurubami-accent));
+    color: rgb(var(--hakuji-accent));
+}
+#page-version-info {
+    border-style: solid;
+    background: #rgb(var(--aonibi-accent));
+    color: rgb(var(--hakuji-accent));
+}
+.preview-message {
+    background: rgb(var(--aonibi-accent));
+    border: none 0;
+    color: rgb(var(--hakuji-accent));
+}
+.preview-message a {
+    color: rgb(var(--hakuji-accent));
+}
+/*
+Created by: 7happy7
+Special Thanks: Boyu12, C-take
+Source: https://topia.wikidot.com/php-interwiki CC BY-SA 3.0
+Edited by: RTa_sub
+Modified Source: https://rtas.wikidot.com/interwiki CC BY-SA 3.0
+*/
+#output .head_link {
+    display: block;
+    border-bottom: 1px solid rgb(var(--aonibi-accent));
+}
+#output div[class^="ct-"] a {
+    display: block;
+    margin-left: 1em;
+}
+[[/code]]
+[[/<]]
+[[/collapsible]]
+------
+[[footnoteblock]]
+[[/iftags]]

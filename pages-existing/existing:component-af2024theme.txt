@@ -1,0 +1,1985 @@
+[[module css]]
+@import url('https://scp-jp.wdfiles.com/local--code/component:af2024theme/1');
+@import url('https://scp-jp.wdfiles.com/local--code/component%3Aaf2024theme/2');
+[[/module]]
+[[include :scp-jp:component:interwiki-style
+|priority=1
+|theme=https://scp-jp.wdfiles.com/local--code/component:af2024theme/1
+]]
+
+[[include :scp-jp:component:interwiki-style
+|priority=2
+|theme=https://scp-jp.wdfiles.com/local--code/component:af2024theme/2
+]]
+
+
+[[module ListPages limit="@URL|0" range="." urlAttrPrefix="goyo"]]
+[[%%content{0}%%module css]]
+@import url('https://scp-jp.wdfiles.com/local--code/component%3Aaf2024theme/3');
+
+[[%%content{0}%%/module]]
+[[/module]]
+
+[[module ListPages limit="@URL|0" range="." urlAttrPrefix="ijo"]]
+[[%%content{0}%%module css]]
+@import url('https://scp-jp.wdfiles.com/local--code/component%3Aaf2024theme/4');
+[[%%content{0}%%/module]]
+[[/module]]
+
+
+[!-- {$goyo}
+[[module css]]
+@import url('https://scp-jp.wdfiles.com/local--code/component%3Aaf2024theme/3');
+[[/module]]
+[!----]
+[!-- {$ijo}
+[[module css]]
+@import url('https://scp-jp.wdfiles.com/local--code/component%3Aaf2024theme/4');
+[[/module]]
+[!----]
+
+
+[[div_ class="neon_titles"]]
+[[div_ class="maintitle"]]
+[[a href="/"]][[span]]S[[span]]C[[/span]]P[[/span]]**幕**府[[/a]]
+[[/div]]
+[[div_ class="subtitle"]]
+Seppuku, Chommage, Punk
+[[/div]]
+[[/div]]
+
+
+[[iftags 管理 テーマ]]
+[[div_ class="colmod-block switch"]]
+++ ##white|Power UP!##
+[[ul_]][[li class="folded"]][[ul]]_[[/ul]]
+[[div class="colmod-link-top"]]
+[[div_ class="foldable-list-container"]]
+[# 　][# 　][[/div]][[/div]]\
+[[/li]][[/ul]][[/div]]
+
+[[module ListPages limit="1" offset="1" wrapper="no" separate="no" order="random" category="*"]]
+[[#ifexpr %%size%%%5 != 0 | [!-- ]]
+[[%%content{0}%%module css]]
+@import url('https://scp-jp.wdfiles.com/local--code/component%3Aaf2024theme/3');
+
+[[%%content{0}%%/module]]
+[[#ifexpr %%size%%%5 != 0 | --] ]]
+[[#ifexpr %%size%%%5 != 1 | [!-- ]]
+[[%%content{0}%%module css]]
+@import url('https://scp-jp.wdfiles.com/local--code/component%3Aaf2024theme/4');
+
+[[%%content{0}%%/module]]
+[[#ifexpr %%size%%%5 != 1 | --] ]]
+[[/module]]
+
+
+[[module css]]
+
+.unmargined {
+    color: rgb(255 255 255 / 80%);
+}
+
+.unmargined>p {
+    text-shadow: 0 0 3px #ff4747, 0 0 5px #ff4747, 0 0 6px #ff4747, 0 0 19px #ff4747, 0 0 10px #ff4747;
+}
+
+
+div#container {
+    position: relative;
+}
+div#container:after {
+    /* content: ""; */
+    filter: blur(2px);
+    mix-blend-mode: saturation;
+    background-image: repeating-linear-gradient(90deg, #e618ff, #e618ff 5%, rgba(0, 0, 0, 0) 5.1%, rgba(0, 0, 0, 0) 100%), repeating-linear-gradient(0deg, #e618ff , #e618ff 5%, rgba(0, 0, 0, 0) 5.1%, rgba(0, 0, 0, 0) 100%);
+    position: absolute;
+    background-size: 8em 8em;
+    background-position: 0 0;
+    -webkit-animation: the80sFloor 0.6s linear infinite;
+    animation: the80sFloor 0.6s linear infinite;
+    will-change: animation;
+    transform: translate(-42%, 0%) rotateX(76deg);
+    transform-style: preserve-3d;
+    width: 500em;
+    height: 200em;
+    pointer-events: none;
+    left: 0;
+    bottom: 0
+}
+
+
+@keyframes the80sFloor  {
+    100% {
+        background-position: 0 8em;
+    }
+}
+
+div#container:before {
+    /* content: ""; */
+    filter: blur(2px);
+    mix-blend-mode: overlay;
+    background-image: repeating-linear-gradient(90deg, #74098280, #74098280 5%, rgba(0, 0, 0, 0) 5.1%, rgba(0, 0, 0, 0) 100%), repeating-linear-gradient(0deg, #74098280, #74098280 5%, rgba(0, 0, 0, 0) 5.1%, rgba(0, 0, 0, 0) 100%);
+    position: absolute;
+    background-size: 8em 8em;
+    background-position: 0 0;
+    -webkit-animation: the80sFloor 0.6s linear infinite;
+    animation: the80sFloor 0.6s linear infinite;
+    will-change: animation;
+    transform: translate(-42%, -30%) rotateX(86deg);
+    transform-style: preserve-3d;
+    width: 500em;
+    height: 200em;
+    pointer-events: none;
+    left: 0;
+    bottom: 0;
+}
+
+
+:has(#page-content .colmod-block.switch .unfolded) div#container {
+    perspective: 100vh;
+}
+
+:has(#page-content .colmod-block.switch .unfolded) div#container:before, :has(#page-content .colmod-block.switch .unfolded) div#container:after{
+     content: "";
+}
+
+[[/module]]
+
+[[module css]]
+.colmod-block.switch .foldable-list-container {
+  display: flex;
+}
+
+.colmod-block.switch .foldable-list-container a {
+  appearance: none;
+  font-size: 1em;
+  width: 3em;
+  aspect-ratio: 2;
+  border: 1px solid;
+  border-radius: 2em;
+  background: #fff;
+  position: relative;
+}
+.colmod-block.switch .foldable-list-container a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  width: 0.8em;
+  height: 0.8em;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  background: currentcolor;
+  transition: left 0.5s;
+}
+.colmod-block.switch .foldable-list-container a:last-child::before {
+  left: 75%;
+}
+
+
+@media (prefers-reduced-motion) {
+  .foldable-list-container a::before {
+    transition-duration: 0s;
+  }
+}
+.colmod-block.switch {
+    position: absolute;
+    right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  #html-body .colmod-block.switch {
+    display: none;
+  }
+}
+[[/module]]
+[[/iftags]]
+
+
+
+
+
+[[iftags]]
+[[code type="CSS"]]
+/*
+    SCP-JP 2024AF Theme
+    Created at 2024
+    Created by r74
+    CC BY-SA 3.0
+
+    [no title]
+    Created at 2021
+    Created by dog_punch
+    CC BY-SA 3.0
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nixie+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400&display=swap');
+div#container-wrap {
+    background: none;
+}
+#extra-div-1,
+.neon_titles,
+#top-bar div>ul,
+input#search-top-box-input,
+input#search-top-box-input:hover,
+div#login-status,
+h1, #page-title,
+blockquote:before,
+div.blockquote:before,
+table.wiki-content-table th,
+.content-panel.centered.standalone.invite img,
+.feature-block.customheight img {
+        animation: neonanim 5s linear infinite both;
+}
+div#header {
+    width: 100% !important;
+    margin: 0;
+    max-width: none !important;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+body#html-body {
+    background: #060a1d;
+    overflow-x: hidden;
+}
+#page-content {
+    color: white;
+}
+#extra-div-1 {
+    position: absolute;
+    top: 75px;
+    height: 140px;
+    left: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    z-index: 10;
+    width: 140px;
+}
+
+#extra-div-1 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-150-jg9r/AF2024.png);
+    background-size: cover;
+    filter: drop-shadow(0px 0px 6px #dd0d1d);
+}
+
+div#content-wrap,
+div#main-content {
+    position: static;
+}
+
+#header h1,
+#header h2 {
+    display: none;
+}
+
+.neon_titles {
+    position: absolute;
+    top: 75px;
+    transform: translateY(-50%);
+    z-index: 10;
+    left: 160px;
+    font-family: 'Nixie One', cursive;
+    color: rgb(255 255 255 / 80%);
+    line-height: 1;
+}
+
+@keyframes neonanim {
+    0% {
+        filter: hue-rotate(0deg)
+    }
+    100% {
+        filter: hue-rotate(360deg)
+    }
+}
+
+.maintitle {
+    font-size: 33px;
+    text-shadow: 0 0 3px #ff4747, 0 0 5px #ff4747, 0 0 6px #ff4747, 0 0 19px #ff4747, 0 0 10px #ff4747;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.maintitle span {
+    font-size: 45px;
+}
+
+.maintitle span span {
+    animation: blink linear infinite 2s;
+}
+
+#extra-div-1 span {
+    animation: blink linear infinite 3s;
+}
+
+.maintitle strong {
+    font-weight: normal;
+    animation: blink 1s linear infinite .6s;
+}
+
+.maintitle:before {
+    bottom: 0;
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background: rgb(255 255 255 / 90%);
+    box-shadow: 0 0 3px #ff4747, 0 0 5px #ff4747, 0 0 6px #ff4747, 0 0 19px #ff4747, 0 0 10px #ff4747;
+}
+
+.subtitle {
+    font-size: 18px;
+    text-shadow: 0 0 3px #ff4747, 0 0 5px #ff4747, 0 0 6px #ff4747, 0 0 19px #ff4747, 0 0 10px #ff4747;
+}
+
+@keyframes blink {
+    78% {
+        opacity: 1
+    }
+    79% {
+        opacity: 0
+    }
+    81% {
+        opacity: 1
+    }
+    82% {
+        opacity: 0
+    }
+    83% {
+        opacity: 1
+    }
+    92% {
+        opacity: 0
+    }
+    92.5% {
+        opacity: 1
+    }
+}
+
+div#top-bar,
+.mobile-top-bar {
+    max-width: none !important;
+    left: 0;
+}
+
+div#top-bar {
+    top: 400px;
+    border: 2px solid rgb(255 255 255 / 3%);
+    border-left: 0;
+    border-right: 0;
+}
+
+div#top-bar:before,
+div#top-bar:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient( 90deg, transparent, #da0a0a), linear-gradient( 90deg, transparent, #da0a0a);
+    filter: drop-shadow(0 0 4px #da0a0a);
+    animation: neonanim 5s linear infinite both, animate1 2s linear infinite;
+    margin-top: -2px;
+}
+
+div#top-bar:after {
+    top: unset;
+    bottom: 0;
+    animation-delay: .4s;
+    margin-top: 0;
+    margin-bottom: -2px;
+}
+
+@keyframes animate1 {
+    0% {
+        left: -100%;
+    }
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+#top-bar ul {
+    float: right;
+    display: flex;
+    width: 100%;
+}
+
+#top-bar ul>li>ul {
+    display: block;
+}
+
+#top-bar div {
+    width: 100%;
+    max-width: none;
+}
+
+#top-bar ul li {
+    border: 0;
+    position: relative;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+#top-bar li:hover ul,
+#top-bar li.sfhover ul {
+    width: 100%;
+}
+
+#top-bar ul li.sfhover ul li a,
+#top-bar ul li:hover ul li a {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#top-bar ul li a[href="javascript:;"] {
+    background: transparent !IMPORTANT;
+    color: #9c9c9c !IMPORTANT;
+    padding: 10px 1em;
+    border: none;
+}
+
+@media (min-width: 767px) {
+    #top-bar ul li a[href="/scp-international"] {
+        background: transparent !IMPORTANT;
+        color: #9c9c9c !IMPORTANT;
+        padding: 10px 1em;
+        border: none;
+    }
+}
+
+#top-bar ul li.sfhover ul li a,
+#top-bar ul li:hover ul li a {
+    border-bottom: 2px solid #cc2b2b;
+    color: #cc2b2b;
+    background: #080808 !important;
+    border-top: 0;
+    padding: 5px 7px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+#top-bar ul li ul {
+    border: 0;
+    box-shadow: none;
+}
+
+#top-bar ul li ul {
+    box-sizing: border-box;
+    border: 2px solid #cc2b2b;
+    border-bottom: 0;
+    border-top: none;
+}
+
+.mobile-top-bar {
+    position: static;
+}
+
+#top-bar div>ul {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+#top-bar ul li ul li:before,
+#top-bar ul li ul li:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #da0a0a;
+    pointer-events: none;
+}
+
+#top-bar ul li ul li:hover:before {
+    bottom: 100%;
+    transition: .6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#top-bar ul li ul li:before {
+    bottom: -2px;
+}
+
+#top-bar ul li ul li:after {
+    top: -2px;
+}
+
+#top-bar ul li ul li:hover:after {
+    top: 100%;
+    transition: .6s ease-in-out;
+}
+
+#top-bar ul li ul li {
+    overflow: hidden;
+}
+
+.subtitle span {
+    animation: blink linear infinite 4s;
+}
+
+input.button.btn {
+    display: none;
+}
+
+input#search-top-box-input,
+input#search-top-box-input:hover {
+    background-color: rgb(255 255 255 / 5%) !important;
+    outline: none !important;
+    border: 2px solid #cc2b2b !important;
+    box-shadow: 0 0 5px #cc2b2b;
+    border-radius: 0 0 5px 5px;
+    padding: 0;
+    width: 22px;
+    height: 22px;
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20fill%3D%22%23cc2b2b%22%20d%3D%22M505%20442.7L405.3%20343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3%2044-79.7%2044-128C416%2093.1%20322.9%200%20208%200S0%2093.1%200%20208s93.1%20208%20208%20208c48.3%200%2092.7-16.4%20128-44v16.3c0%206.4%202.5%2012.5%207%2017l99.7%2099.7c9.4%209.4%2024.6%209.4%2033.9%200l28.3-28.3c9.4-9.4%209.4-24.6.1-34zM208%20336c-70.7%200-128-57.2-128-128%200-70.7%2057.2-128%20128-128%2070.7%200%20128%2057.2%20128%20128%200%2070.7-57.2%20128-128%20128z%22%2F%3E%3C%2Fsvg%3E");
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: transparent;
+    transition: .5s cubic-bezier(0.68, -0.55, 0.27, 1.55), .3s ease-in-out box-shadow;
+}
+
+input#search-top-box-input:focus {
+    background-image: none;
+    width: 5em;
+    color: #cc2b2b;
+    box-shadow: 0 0 7px #cc2b2b;
+    border-radius: 5px 0 5px 5px;
+}
+
+div#search-top-box {
+    top: 29px;
+    right: 4px;
+}
+
+a#account-topbutton {
+    width: 22px;
+    height: 22px;
+    display: inline-flex;
+    padding: 0;
+    border: 2px solid #cc2b2b !important;
+    box-shadow: 0 0 5px #cc2b2b;
+    border-radius: 5px 5px 0 0;
+    color: #cc2b2b;
+    font-size: 110%;
+    align-items: center;
+    justify-content: center;
+    transition: .3s ease-in-out;
+    transform: translateY(3px);
+}
+
+div#login-status {
+    top: 2px;
+    right: 5px;
+    font-family: 'Nixie One', cursive;
+    font-weight: bold;
+    color: #ca4a4a;
+}
+
+a#account-topbutton:hover {
+    box-shadow: 0 0 9px #cc2b2b, 0 0 5px #cc2b2b;
+}
+
+input#search-top-box-input:hover {
+    box-shadow: 0 0 9px #cc2b2b, 0 0 5px #cc2b2b;
+}
+
+span.printuser {
+    color: rgb(255 255 255 / 90%);
+    text-shadow: 0 0 2px #ff4747, 0 0 3px #ff4747;
+}
+
+a#my-account {
+    animation: blink 2s linear infinite .3s;
+    color: rgb(255 255 255 / 80%);
+}
+
+#login-status>a>strong {
+    font-weight: normal;
+    color: #fff;
+}
+
+input#search-top-box-input.empty {
+    color: transparent;
+}
+
+div#account-options {
+    background: #fff;
+    border: 2px solid #cc2b2b;
+}
+
+div#account-options ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: 'noto sans jp';
+    font-weight: bold;
+}
+
+div#account-options li {
+    flex-grow: 1;
+    padding: 1px 2px;
+    text-align: center;
+    width: 50%;
+    flex-basis: 50%;
+    box-sizing: border-box;
+    transition: .3s ease-in-out;
+    color: #fff;
+    text-shadow: 0 0 3px #cc2b2b, 0 0 4px #cc2b2b, 0 0 5px #cc2b2b;
+}
+
+div#account-options li a {
+    color: inherit !important;
+    text-decoration: none;
+    text-shadow: inherit;
+}
+
+div#account-options li:hover {
+    background: #ffc0c0;
+    text-shadow: none;
+    color: #cc2b2b;
+}
+
+@media (max-width:400px) {
+div#extra-div-1 {
+    left: -40px;
+}
+.neon_titles {
+    left: 110px;
+}
+}
+
+h1, #page-title {
+    font-family: 'Nixie One','noto sans jp', cursive;
+    line-height: 1;
+    color: rgb(255 255 255 / 80%);
+    text-shadow: 0 0 3px #ff4747, 0 0 6px #ff4747;
+}
+
+div#page-title {
+    border-bottom: 1px solid #ffb2b2;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+blockquote, div.blockquote {
+    background: rgb(255 255 255 / 5%);
+    border: 2px solid #9c9c9c;
+    position: relative;
+}
+
+blockquote:before,div.blockquote:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    border-right: 2px solid #9c9c9c;
+    background: #941414;
+}
+
+table.wiki-content-table {
+    width: 100%;
+}
+
+table.wiki-content-table th {
+    text-align: left;
+    color: rgb(255 255 255 / 80%);
+    background: #cc2b2b;
+    font-family: 'noto sans jp';
+    border-color: rgb(255 255 255 / 80%);
+}
+#side-bar {
+    top: 420px;
+}
+
+#interwiki .side-block,
+#side-bar .side-block {
+    background: #060a1d !important;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#interwiki .side-block:before,
+#interwiki .side-block:after,
+#interwiki .side-block>*:first-of-type:after,
+#interwiki .side-block>*:first-of-type:before,
+.side-block:before,
+.side-block:after,
+.side-block>*:first-of-type:after,
+.side-block>*:first-of-type:before {
+    content: '';
+    display: block;
+    position: absolute;
+}
+
+#interwiki .side-block:before,
+.side-block:before {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #da0a0a);
+    animation: animate1 1s linear infinite;
+}
+
+#interwiki .side-block:nth-of-type(even):before,
+.side-block:nth-of-type(even):before {
+    animation-delay: 0.25s;
+}
+
+#interwiki .side-block:after,
+.side-block:after {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #da0a0a);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+#interwiki .side-block:nth-of-type(even):after,
+.side-block:nth-of-type(even):after {
+    animation-delay: 0.50s;
+}
+
+#interwiki .side-block>*:first-of-type:before,
+.side-block>*:first-of-type:before {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #da0a0a);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+
+#interwiki .side-block:nth-of-type(even)>*:first-of-type:before,
+.side-block:nth-of-type(even)>*:first-of-type:before {
+    animation-delay: 0.75s;
+}
+
+#interwiki .side-block>*:first-of-type:after,
+.side-block>*:first-of-type:after {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #da0a0a);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+#interwiki .side-block:nth-of-type(even)>*:first-of-type:after,
+.side-block:nth-of-type(even)>*:first-of-type:after {
+    animation-delay: 1s;
+}
+
+@keyframes animate4 {
+    0% {
+        bottom: -100%;
+    }
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+@keyframes animate3 {
+    0% {
+        right: -100%;
+    }
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        top: -100%;
+    }
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+#interwiki #side-bar hr,
+#side-bar hr {
+    height: 1px;
+    background: linear-gradient(to left, transparent,#ffffff42, transparent);
+}
+
+#interwiki #side-bar .menu-item > img,
+#side-bar .menu-item > img {
+     display: none;
+}
+
+#interwiki #side-bar .collapsible-block-folded,
+#side-bar .collapsible-block-folded {
+    background: none;
+}
+
+#interwiki #side-bar .collapsible-block-folded .collapsible-block-link,
+#interwiki .menu-item > img + a:before,
+#side-bar .collapsible-block-folded .collapsible-block-link:before,
+#side-bar .menu-item > img + a:before {
+    content: "\f02e";
+    display: inline-block;
+    font-family: 'FontAwesome';
+    font-size: .9em;
+    font-weight: 400;
+    padding: 0 .25em 0 0;
+    text-align: center;
+    width: 1em;
+}
+
+#side-bar .collapsible-block-folded .collapsible-block-link:before {
+    content: "\f067";
+}
+#side-bar .menu-item > img[src*="home.png"] + a:before {
+    content: "\f015";
+}
+#side-bar .menu-item > img[src*="default.png"] + a:before {
+    content: "\f041";
+}
+#side-bar .menu-item > img[src*="series.png"] + a:before {
+    content: "\f1c0";
+}
+#side-bar .menu-item > img[src*="help.png"] + a:before {
+    content: "\f129";
+}
+#side-bar .menu-item > img[src*="forum.png"] + a:before {
+    content: "\f086";
+}
+#side-bar .collapsible-block-link {
+    margin-left: 0;
+}
+#side-bar .heading,
+#side-bar > .side-block a,
+#side-bar .collapsible-block-unfolded-link {
+    color: #cc2b2b !important;
+}
+#side-bar .heading,
+#side-bar .collapsible-block-unfolded-link {
+    border-color: #cc2b2b;
+}
+
+
+#interwiki .collapsible-block-folded .collapsible-block-link:before {
+    content: "\f067";
+}
+#interwiki .menu-item > img[src*="home.png"] + a:before {
+    content: "\f015";
+}
+#interwiki .menu-item > img[src*="default.png"] + a:before {
+    content: "\f041";
+}
+#interwiki .menu-item > img[src*="series.png"] + a:before {
+    content: "\f1c0";
+}
+#interwiki .menu-item > img[src*="help.png"] + a:before {
+    content: "\f129";
+}
+#interwiki .menu-item > img[src*="forum.png"] + a:before {
+    content: "\f086";
+}
+#interwiki .collapsible-block-link {
+    margin-left: 0;
+}
+#interwiki .heading,
+#interwiki > .side-block a,
+#interwiki .collapsible-block-unfolded-link {
+    color: #cc2b2b !important;
+}
+#interwiki .heading,
+#interwiki .collapsible-block-unfolded-link {
+    border-color: #cc2b2b;
+}
+
+@media (max-width:767px) {
+div#side-bar:target,div#side-bar {
+    background: #060606;
+    border: none;
+    top: 0;
+    z-index: 15;
+}
+}
+
+.open-menu a {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 5px 0 0;
+    border: 3px solid rgb(156 156 156 / 60%) !important;
+    background: rgb(0 0 0 / 50%) !IMPORTANT;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(156 156 156 / 60%) !IMPORTANT;
+    font-weight: normal;
+    transition: .3s ease-in-out;
+}
+
+.open-menu a:hover {
+    box-shadow: none;
+}
+
+.open-menu a:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: -1;
+    border-radius: 50%;
+    transition: .35s ease-in-out;
+    background: #ffffff12;
+    transform: scale(0);
+}
+
+.open-menu a:hover:before {
+    border-radius: 0;
+    transform: scale(1);
+}
+
+.close-menu {
+    display: block;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: .5s ease-in-out;
+}
+
+@media (max-width:767px) {
+#side-bar:target .close-menu {
+    transform: scale(1);
+    border-radius: 0;
+    background: rgb(0 0 0 / 50%);
+}
+}
+
+#html-body .creditRate .rateBox {
+    display: inline-flex;
+    border-bottom: 2px solid rgb(156 156 156);
+}
+#html-body .creditRate .rateBox div.page-rate-widget-box {
+    border-bottom: none;
+    box-shadow: none;
+}
+#html-body .page-rate-widget-box .rate-points {
+    background-color: transparent !important;
+    border: none;
+    border-radius: 0;
+    color: rgb(156 156 156);
+}
+#html-body .page-rate-widget-box .rateup,
+#html-body .page-rate-widget-box .ratedown {
+    background-color: transparent;
+        border: none;
+}
+#html-body .page-rate-widget-box .rateup a:hover,
+#html-body .page-rate-widget-box .ratedown a:hover {
+    background: transparent;
+    color: rgb(156 156 156 / 0.70)
+}
+#html-body .page-rate-widget-box .cancel {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    color: rgb(156 156 156)
+}
+#html-body .page-rate-widget-box .cancel a:hover {
+    color: rgb(156 156 156 / 0.70);
+    background: transparent
+}
+#html-body .modalbox .page-rate-widget-box {
+    position: absolute;
+    left: 50%;
+    -webkit- transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+#html-body .rate-box-with-credit-button .creditButton {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none
+}
+#html-body a.fa.fa-info {
+    color: rgb(156 156 156)
+}
+#html-body a.fa.fa-info:hover {
+    color: rgb(156 156 156 / 0.70)
+}
+#html-body .modalbox .modalbox-title {
+    background: #191919;
+    color: #fff ;
+    border-radius: 0
+}
+#html-body .modalbox {
+    box-shadow: 0 2px 6px #ccc;
+    border-radius: 0;
+    background-color: #080808
+}
+#html-body .rate-box-with-credit-button a {
+    text-decoration: none
+}
+#html-body .page-rate-widget-box .cancel a {
+    color: rgb(156 156 156)
+}
+#html-body .page-rate-widget-box .rateup a,
+#html-body .page-rate-widget-box .ratedown a {
+    color: rgb(156 156 156)
+}
+#html-body .modalbox .modalbox-title h2 {
+    font-family: 'Nixie One', cursive;
+    color: rgb(156 156 156);
+}
+#html-body div#u-credit-view, div#u-credit-otherwise {
+    z-index: 20;
+}
+#html-body .page-rate-widget-box {
+    border-bottom: 2px solid rgb(156 156 156);
+    border-radius: 0;
+}
+#html-body .page-rate-widget-box, #html-body .creditRate .rateBox {
+    background: #191919;
+    box-shadow: none;
+}
+#html-body .modalbox .modalbox-title h2 span {
+    display: none;
+}
+
+#html-body .modalbox .modalbox-title h2:before {
+    content: 'CREDIT';
+}
+
+a {
+    color: #c72424;
+}
+
+.yui-navset {
+    overflow: auto;
+    border: 1px solid #191919;
+    background: #fff;
+    z-index: 0;
+}
+.yui-navset .yui-content {
+    overflow: inherit;
+    border-top: solid 1px #4e4e4e;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    margin: 0;
+    padding: 0 12px;
+    background: none;
+    color: #252525;
+}
+
+
+.yui-navset ul {
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+.yui-navset .yui-nav,
+.yui-navset .yui-navset-top .yui-nav {
+    border: none;
+    background: #191919;
+    position: relative;
+}
+.yui-navset .yui-nav a,
+.yui-navset .yui-navset-top .yui-nav a {
+    overflow-y:hidden;
+    border: none;
+    color: #b7b7b7;
+    font-weight: normal;
+    background: none;
+}
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-navset-top .yui-nav a:hover {
+    font-weight: normal;
+}
+.yui-navset .yui-nav a em:hover,
+.yui-navset .yui-navset-top .yui-nav a em:hover {
+    font-weight: normal;
+}
+.yui-navset .yui-nav .selected,
+.yui-navset .yui-navset-top .yui-nav .selected {
+    margin: 0;
+    background: #4e4e4e;
+}
+.yui-navset .yui-nav li,
+.yui-navset .yui-navset-top .yui-nav li {
+    margin: 0;
+    padding: 8px 6px;
+}
+.yui-navset .yui-nav .selected a em {
+    padding: 0.25em .75em;
+}
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a:focus,
+.yui-navset .yui-nav .selected a:hover {
+    overflow-y:hidden;
+    border: none;
+    color: #fff;
+    font-weight: normal;
+    background: none;
+}
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:focus {
+    overflow-y:hidden;
+    border: none;
+    color: #b7b7b7;
+    font-weight: bold;
+    background: none;
+}
+div#toc {
+    background: #191919;
+    border: 2px solid #9c9c9c;
+}
+.scp-image-block {
+    padding: 2px;
+    border: none;
+    overflow: hidden;
+    position: relative;
+}
+.scp-image-block:before,
+.scp-image-block:after,
+.scp-image-caption:after,
+.scp-image-caption:before {
+    content: '';
+    display: block;
+    position: absolute;
+}
+
+.scp-image-block:before {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #da0a0a);
+    animation: animate1 1s linear infinite,neonanim 5s linear infinite both;
+}
+
+.scp-image-block:after {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #da0a0a);
+    animation: animate2 1s linear infinite,neonanim 5s linear infinite both;
+    animation-delay: 0.25s;
+}
+
+.scp-image-caption:before {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #da0a0a);
+    animation: animate3 1s linear infinite,neonanim 5s linear infinite both;
+    animation-delay: 0.50s;
+}
+
+.scp-image-caption:after {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #da0a0a);
+    animation: animate4 1s linear infinite,neonanim 5s linear infinite both;
+    animation-delay: 0.75s;
+}
+.scp-image-block .scp-image-caption {
+    background-color: #191919;
+    border: none;
+}
+
+.scp-image-block .scp-image-caption {
+    background-color: #191919;
+    border: none;
+}
+
+.code {
+    background: #181818;
+    border: 1px solid #9c9c9c;
+}
+
+span.hl-identifier {
+    color: #9c9c9c;
+}
+
+span.hl-code {
+    color: #fb532c;
+}
+
+span.hl-brackets {
+    color: #9c9c9c;
+}
+
+span.hl-string {
+    color: #f72be7;
+}
+
+span.hl-quotes {
+    color: #7ffbef;
+}
+
+span.hl-number {
+    color: #b6c726;
+}
+[[/code]]
+
+[[code type="css"]]
+#page-title {
+    display: none;
+}
+
+
+div#header {
+    width: 100% !important;
+    margin: 0;
+    max-width: none !important;
+    height: 400px;
+    background: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-139-jg3f/65-1.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: cover;
+}
+
+div#header-extra-div-1,
+div#header-extra-div-2,
+div#header-extra-div-3,
+div#extra-div-2,
+div#extra-div-3,
+div#extra-div-4,
+div#extra-div-5,
+div#extra-div-6 {
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    pointer-events: none;
+}
+
+div#header-extra-div-1>span,
+div#header-extra-div-1>span:before,
+div#header-extra-div-1>span:after,
+div#header-extra-div-2>span,
+div#header-extra-div-2>span:before,
+div#header-extra-div-2>span:after,
+div#header-extra-div-3>span,
+div#header-extra-div-3>span:before,
+div#header-extra-div-3>span:after,
+div#extra-div-2>span,
+div#extra-div-2>span:before,
+div#extra-div-2>span:after,
+div#extra-div-3>span,
+div#extra-div-3>span:before,
+div#extra-div-3>span:after,
+div#extra-div-4>span,
+div#extra-div-4>span:before,
+div#extra-div-4>span:after,
+div#extra-div-5>span,
+div#extra-div-5>span:before,
+div#extra-div-5>span:after,
+div#extra-div-6>span,
+div#extra-div-6>span:before,
+div#extra-div-6>span:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: bottom right;
+    background-size: max(700px, 70%);
+    background-repeat: no-repeat;
+}
+
+div#header-extra-div-1>span {
+    background-image: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-140-057s/65-2.png);
+}
+div#header-extra-div-1>span:before {
+    background-image: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-141-026w/65-3.png);
+}
+div#header-extra-div-1>span:after {
+    background-image: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-142-uaxe/65-4.png);
+}
+
+
+div#extra-div-5>span:after {
+    background-image: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-144-asef/65-6.png);
+}
+div#extra-div-6>span {
+    background-image: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-145-sdrw/65-7.png);
+    background-repeat: repeat-x;
+}
+
+div#extra-div-3,
+div#extra-div-4 {
+    overflow: hidden;
+}
+div#extra-div-3>span {
+    background-image: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-143-u1se/65-5-2.png);
+    transform: translate(max(55%, 550px), 200px) rotateZ(230deg);
+    transform-origin: left;
+    background-position: left;
+    animation: moveBeam 30s infinite alternate;
+    animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+@keyframes moveBeam  {
+    0% {
+        transform: translate(max(55%, 550px), 200px)  rotateZ(230deg)
+    }
+    100% {
+        transform: translate(max(55%, 550px), 200px) rotateZ(310deg);
+    }
+}
+
+div#extra-div-3>span:before {
+    background-image: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-143-u1se/65-5-2.png);
+    transform: rotateZ(266deg);
+    transform-origin: left;
+    background-position: left;
+    animation: moveBeam1 40s infinite alternate;
+    animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+@keyframes moveBeam1  {
+    0% {
+        transform: rotateZ(-20deg);
+    }
+    100% {
+        transform: rotateZ(30deg);
+    }
+}
+
+div#extra-div-4>span {
+    background-image: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-143-u1se/65-5-2.png);
+    transform: translate(max(75%, 750px), 200px) rotateZ(320deg);
+    transform-origin: left;
+    background-position: left;
+    animation: moveBeam3 50s infinite alternate;
+    animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+@keyframes moveBeam3  {
+    0% {
+        transform: translate(max(75%, 750px), 200px)  rotateZ(320deg)
+    }
+    100% {
+        transform: translate(max(75%, 750px), 200px) rotateZ(210deg);
+    }
+}
+
+@media screen and (max-width: 768px) {
+  div#extra-div-3,
+  div#extra-div-4 {
+    display: none;
+  }
+  div#extra-div-2>span {
+    background-image: url(https://scp-jp.wdfiles.com/local--files/component%3Aaf2024theme/64-4.png);
+    background-size: cover;
+  }
+}
+[[/code]]
+
+
+[[code type="css"]]
+/* GOYO! */
+div#header {
+    background-image: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-136-nfuc/64-1.png);
+}
+div#header-extra-div-1>span {
+    background-size: 400px;
+    background-position: left;
+    background-image: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-148-sert/eye.gif);
+    background-position: center -100px;
+}
+div#header-extra-div-1>span:before {
+    background-image: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-137-7dr8/64-2.png);
+}
+
+div#header-extra-div-1>span:after {
+    background-image: unset;
+}
+
+div#extra-div-5>span:after {
+    background-image: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-138-gkt9/64-5.png);
+}
+[[/code]]
+[[code type="css"]]
+
+div#header {
+    background-image: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-136-nfuc/64-1.png);
+}
+div#header-extra-div-1>span {
+    background-image: unset;
+}
+div#header-extra-div-1>span:before {
+    background-image: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-137-7dr8/64-2.png);
+}
+div#header-extra-div-1>span:after {
+    background-image: unset;
+}
+div#extra-div-2>span {
+    background-image: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-149-sdet/ezgif-6-08c6d235d7.gif);
+    background-size: 1200px;
+}
+div#extra-div-5>span:after {
+    background-image: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-146-errw/68-1.png);
+    background-size: 400%;
+    background-position: bottom center;
+    animation: anim280 300s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+@keyframes anim280 {
+    0% {
+        background-size: 30%;
+
+    }
+    100% {
+        background-size: 400%;
+    }
+}
+[[/code]]
+[[/iftags]]
+
+
+[[iftags +テーマ]]
+
+[[include credit:start-preview]]
+**タイトル:** AF2024テーマ
+**著者:** [[*user r74]]
+
+[[include credit:end-preview]]
+[[div style="text-align: center; color: #600;"]]
+[[div class="unmargined"]]
+いましめ
+[[/div]]
+[[div class="unmargined" style="font-size: 400%; font-weight: bold; margin: 2px 0 5px;"]]
+SHOGUNはそちを見ておる
+[[/div]]
+[[div class="unmargined"]]
+幕府電脳空間への許しなきアクセスは厳に禁止されてあり
+@@@@
+違反せし者はシティ引き回しの上、[[span class="ruby"]]打首獄門[[span class="rt"]]リアルデス[[/span]][[/span]]
+に処す
+[[/div]]
+[[/div]]
+
+----
+[[div class="content-panel centered standalone newbies" style="padding: 10px;"]]
+[[size 130%]][[collapsible show="旅の方、E.D.O.シティへようこそ" hide="ここは管理AI「SHOGUN」が支配する電脳空間です。まずは以下のリンク先をお読みください"]][[/size]]
+[[div class="menu-item"]]
+[[size 130%]][[[about-the-scp-foundation|SCP財団とは]]][[/size]]
+当サイトの簡単な説明です
+[[/div]]
+[[div class="menu-item"]]
+[[size 130%]][[[faq-jp]]][[/size]]
+SCPに関する様々なことについてFAQ形式で説明しています
+[[/div]]
+[[div class="menu-item"]]
+[[size 130%]][[[Site Rules|サイトルール]]][[/size]]
+当サイトのマナーと心構えについて
+[[/div]]
+[[div class="menu-item"]]
+[[size 130%]][[[Licensing Guide|ライセンスガイド]]][[/size]]
+SCPに関する全世界共通のライセンスについて
+[[/div]]
+[[div class="menu-item"]]
+[[size 130%]][[[guide-for-newbies|サイトへの参加を希望される方へ]]][[/size]]
+参加されたい方はこちらからどうぞ
+[[/div]]
+[[/collapsible]]
+[[/div]]
+
+[[div class="content-panel centered standalone"]]
+**Tips For April Fool**
+
+[[div style="padding:0 0.8em"]]
+本日用のスペシャルな記事には「[*https://scp-jp.wikidot.com/system:page-tags/tag/af2024 af2024]」タグを付与してください。詳しくは[*https://scp-jp.wikidot.com/forum/t-16761875/af-2024-jp#post-6468931 こちら]」。
+[[/div]]
+
+[[/div]]
+
+
+[!-- 緊急度の高いお知らせ --]
+
+[[div class="content-panel centered standalone important-news" style="background: #ffff9c; padding: 10px;"]]
+**ご注進！　ご注進！**
+
+[[span style="font-size:150%;"]]**Wikidotがご乱心にござる！！**
+[[/span]]
+
+Rateモジュールの表示が不安定になる不具合
+Facebookログインが使用できなくなる不具合
+編集時に直前の編集が反映されなくなる不具合
+--[[span class="ruby"]]曲者[[span class="rt"]]ウイルス[[/span]][[/span]]どもが反乱を起こす不具合--
+
+上記などが確認されています。
+**詳細は[https://05command-ja.wikidot.com/defect-report こちら]。**
+
+[[/div]]
+
+[!-- コンテストパネル --]
+[[div class="content-panel centered standalone invite" style="background: #120458; padding: 15px 0px 10px;"]]
+= [[span style="font-size: 150%; color: #ff00a4;"]]//-- 者ども、[[span class="ruby"]]曲者[[span class="rt"]]ウイルス[[/span]][[/span]]じゃ！　出合え、出合え！//[[/span]]
+
+[[=image https://scp-jp-storage.wdfiles.com/local--files/file%3A1988496-36-as7u/shogun_banner_0.png link="https://scp-jp.wikidot.com/forum/t-16761875/af-2024-jp#post-6468931"]]
+[[/div]]
+
+
+
+[!-- 新着記事 --]
+
+[[div class="feature-block"]]
+[[div class="content-panel left-column"]]
+[[div class="panel-heading"]]
+新着のJP記事
+[[/div]]
+[[div class="panel-body"]]
+[[module ListPages category="-fragment -deleted -user-component" tags="scp tale goi-format アートワーク サイト 合作 設定集 news 著者ページ ハブ エッセイ コンポーネント テーマ リファレンス +jp" order="created_at desc" limit="7" separate="false"]]
+[[div_ style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; overflow: hidden; cursor: pointer; line-height: 18px;"]]
+%%linked_title%%
+[[/div]]
+[[/module]]
+[[/div]]
+[[div class="panel-footer"]]
+[*https://scp-jp.wikidot.com/feed/pages/pagename/main/category/-fragment,-deleted/tags/+jp,scp,tale,goi-format,アートワーク,サイト,合作,設定集,ニュース,著者ページ,ハブ,エッセイ,コンポーネント,テーマ/order/created_at+desc/limit/20/t/新着のJP記事 RSSフィード] | [[[most-recently-created-jp|新着のJP記事一覧]]]
+[[/div]]
+[[/div]]
+
+[[div class="content-panel right-column"]]
+[[div class="panel-heading"]]
+新着の翻訳記事
+[[/div]]
+[[div class="panel-body"]]
+[[module ListPages category="-fragment -deleted" tags="scp tale goi-format アートワーク サイト 合作 著者ページ ハブ エッセイ コンポーネント テーマ コンテスト 外部ウィキアーカイブ -jp" order="created_at desc" limit="7" separate="false"]]
+[[div_ style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; overflow: hidden; cursor: pointer; line-height: 18px;"]]
+%%linked_title%%
+[[/div]]
+[[/module]]
+[[/div]]
+[[div class="panel-footer"]]
+[*https://scp-jp.wikidot.com/feed/pages/pagename/main/category/-fragment,-deleted/tags/scp,tale,goi-format,アートワーク,サイト,合作,著者ページ,ハブ,エッセイ,コンポーネント,テーマ,コンテスト,外部ウィキアーカイブ,-jp/order/created_at+desc/limit/20/t/新着の翻訳記事 RSSフィード] | [[[most-recently-created-translated|新着の翻訳記事一覧]]]
+[[/div]]
+[[/div]]
+[[/div]]
+
+~~~~
+
+[[div class="feature-block customheight"]]
+ [[div class="content-panel left-column"]]
+  [[div class="panel-heading"]]
+   トレンディな町娘
+  [[/div]]
+  [[div class="panel-body"]]
+[[div class="feature-title"]]
+**##b01|[[[author:mary0228|前原博士]]] 18さい##**
+[[/div]]
+[[=image https://scp-jp-storage.wdfiles.com/local--files/file%3A4137401-18-xyde/%E8%83%B8%E5%83%8F.png style="max-width:200px;"]]
+  [[/div]]
+[[/div]]
+
+[[div class="content-panel right-column"]]
+[[div class="panel-heading"]]
+注目記事
+[[/div]]
+[[div class="panel-body"]]
+[[div class="feature-title"]]
+[[[scp-5175|]]]: DEATH KNIFE
+[[/div]]
+[[div class="feature-subtitle"]]
+by [[*user J Dune]]
+[[/div]]
+そいつはハンゾウって名前の、古代のサムライの幽霊だと名乗った。血への飽くなき渇望、日本文化の知識、軍人としての経歴、そして何年もの戦闘経験を見込んで、俺を主に選んだと言ってくれた。もうスゲークールだった。
+[[/div]]
+[[div class="panel-footer"]]
+[# 過去の注目記事一覧]
+[[/div]]
+[[/div]]
+[[/div]]
+
+~~~~
+----
+
+[[div class="news-block content-panel"]]
+[[div class="panel-heading"]]
+ニュース
+[[/div]]
+[[div class="panel-body"]]
+
+[[div class="alternate"]]
+[[div class="news-title"]]
+E.D.O. 2024/04/01 00:00
+[[/div]]
+[[div class="news-content"]]
+幕府に逆らう者どもによる反乱が発生。SHOGUN「余はウイルスどもを決して許さぬ」
+[[/div]]
+[[/div]]
+[[div class="alternate"]]
+[[div class="news-title"]]
+[[/div]]
+[[/div]]
+
+[[/div]]
+[[div class="panel-footer"]]
+[https://scp-jp.wikidot.com/forum/t-1754505 スタッフからのお知らせ] | [[[Archived News|過去のニュース]]]
+[[/div]]
+[[/div]]
+
+[!------ INT-Block Start ------]
+[[div class="international-block content-panel"]]
+[[div class="panel-heading"]]
+他言語版へのリンク
+[[/div]]
+[[div class="panel-body"]]
+
+[[div class="c_international-body"]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image https://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-30-yubw/logo-remade-whiteout.svg link="https://scp-wiki.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[https://scp-wiki.wikidot.com/ SCP Foundation]
+//英語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image https://scp-jp-storage.wdfiles.com/local--files/file%3A4052664-16-7kig/scp-logo-ru.svg link="https://scp-ru.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[https://scp-ru.wikidot.com/ Фонд SCP]
+//ロシア語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image https://scp-jp-storage.wdfiles.com/local--files/file%3A3282741-142-xwjq/scp-logo-ko-400.png link="http://ko.scp-wiki.net/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://ko.scp-wiki.net/ SCP 재단]
+//韓国語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image https://scp-jp-storage.wdfiles.com/local--files/file%3A4052664-5-i1qi/scp-logo-cn.svg link="https://scp-wiki-cn.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[https://scp-wiki-cn.wikidot.com/ SCP基金会]
+//中国語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image https://scp-jp-storage.wikidot.com/local--files/file%3A3438721-207-s1h7/scp-logo-fr.svg link="https://fondationscp.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[https://fondationscp.wikidot.com/ Fondation SCP]
+//フランス語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image https://scp-jp-storage.wdfiles.com/local--files/file%3A4052664-14-gjku/scp-logo-pl.svg link="https://scp-pl.wikidot.com"]]
+[[/div]]
+[[div class="c_international-text"]]
+[https://scp-pl.wikidot.com/ Fundacja SCP]
+//ポーランド語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image https://scp-jp-storage.wdfiles.com/local--files/file%3A4052664-7-hx89/scp-logo-es.svg link="https://lafundacionscp.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[https://lafundacionscp.wikidot.com/ La Fundación SCP]
+//スペイン語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image https://scp-jp-storage.wdfiles.com/local--files/file%3A4052664-17-zs9r/scp-logo-th.svg link="https://scp-th.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[https://scp-th.wikidot.com/ สถาบัน SCP]
+//タイ語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image https://scp-jp-storage.wikidot.com/local--files/file:3438721-196-zbna/scp-logo-dach.svg link="https://scp-wiki-de.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[https://scp-wiki-de.wikidot.com/ SCP auf Deutsch]
+//ドイツ語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image https://scp-jp-storage.wdfiles.com/local--files/file%3A4052664-11-62nv/scp-logo-it.svg link="https://fondazionescp.wikidot.com"]]
+[[/div]]
+[[div class="c_international-text"]]
+[https://fondazionescp.wikidot.com/ Fondazione SCP]
+//イタリア語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image https://scp-jp-storage.wdfiles.com/local--files/file%3A3282741-131-vhww/scp-logo-ua.svg link="https://scp-ukrainian.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[https://scp-ukrainian.wikidot.com/ Фонд SCP]
+//ウクライナ語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image https://scp-jp-storage.wdfiles.com/local--files/file%3A3282741-132-wrx0/scp-logo-pt.svg link="https://scp-pt-br.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[https://scp-pt-br.wikidot.com/ Fundação SCP]
+//ポルトガル語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image https://scp-jp-storage.wdfiles.com/local--files/file%3A3282741-130-gvk9/scp-logo-cs.svg link="https://scp-cs.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[https://scp-cs.wikidot.com/ SCP Nadace]
+//チェコ語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image https://scp-jp-storage.wikidot.com/local--files/file:3438721-158-eess/scp-logo-zh.svg link="https://scp-zh-tr.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[https://scp-zh-tr.wikidot.com/ SCP基金會]
+//繁体中国語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image https://scp-jp-storage.wikidot.com/local--files/file:3438721-161-fv0x/scp-logo-vn.svg link="https://scp-vn.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[https://scp-vn.wikidot.com/ Tổ Chức SCP]
+//ベトナム語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image https://scp-jp-storage.wdfiles.com/local--files/file%3A4052664-10-3nlk/scp-logo-int-full.svg link="https://scp-int.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[https://scp-int.wikidot.com/ International Translation Archive]
+//英語 (翻訳)//
+[[/div]]
+[[/div]]
+
+[[/div]]
+
+[[div class="international-entry"]]
+[[div class="international-title"]]
+    [[image https://scp-jp.wikidot.com/local--files/main/un.png]] 発展途上支部
+[[/div]]
+
+[[div class="international-description" style="font-style: normal;"]]
+[[table style="width: 100%;"]]
+[[row]]
+    [[cell]]
+     [[image https://scp-jp.wdfiles.com/local--files/main/gr.png]] [https://scp-el.wikidot.com/ SCP-EL] -- ギリシャ語
+    [[/cell]]
+    [[cell]]
+     [[image https://scp-jp.wdfiles.com/local--files/main/id.png]] [https://scp-idn.wikidot.com/ SCP-ID] -- インドネシア語
+    [[/cell]]
+    [[cell]]
+     [[image https://scp-jp.wdfiles.com/local--files/main/nd.png]] [https://scp-nd.wikidot.com/ SCP-ND] -- 北欧諸言語
+    [[/cell]]
+[[/row]]
+[[row]]
+    [[cell]]
+     [[image https://scp-jp.wdfiles.com/local--files/main/tr.png]] [https://scpvakfi.wikidot.com/ SCP-TR] -- トルコ語
+    [[/cell]]
+[[/row]]
+[[/table]]
+[[/div]]
+
+[[/div]]
+
+[[/div]]
+[[div class="panel-footer"]]
+[https://scp-un.wikidot.com/ その他の言語]
+[[/div]]
+[[/div]]
+[!------ INT-Block Ende ------]
+
+----
+
+[[div class="content-panel centered standalone" style="padding: 0.5em 1em;"]]
+[[size 90%]]SCP財団日本支部、及びSCP Foundationのメインテーマ **Sigma-9** は[[user Aelanna]]氏によって制作され、クリエイティブ・コモンズ・ライセンス 表示-継承 3.0([[[https://creativecommons.org/licenses/by-sa/3.0/deed.ja |CC BY-SA 3.0]]])の元で使用されています。[[/size]]
+[[/div]]
+
+[[module css]]
+.c_international-container .panel-body {
+    padding: 0;
+}
+.c_international-body {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    *background: rgba(255,255,255,.9) url(https://scp-wiki.wikidot.com/local--files/component:theme/panel-bg-gradient-reverse.png) bottom repeat-x;
+    padding: 5px 0;
+}
+.c_international-box {
+    margin: 5px 4px;
+    text-align: center;
+    min-width: 12em;
+}
+.c_international-box div > p,
+.international-entry div > p {
+    margin: 0;
+}
+.c_international-box .c_international-text {
+    margin: 5px 0;
+    font-size: 99%;
+}
+.international-entry {
+    padding: 10px 10px 5px 10px;
+    border-top: 1px solid #eeeee0;
+}
+.international-entry .international-description {
+    margin: 5px 20px;
+    font-size: 99%;
+}
+.c_international-box .c_international-logo img {
+    height: 90px;
+}
+
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .c_international-box .c_international-logo img {
+        height: 80px;
+    }
+    .c_international-box {
+        min-width: 10em;
+    }
+}
+@media (min-width: 581px) and (max-width: 767px) {
+    .c_international-box .c_international-logo img {
+        height: 70px;
+    }
+    .c_international-box {
+        min-width: 10em;
+    }
+}
+@media (min-width: 480px) and (max-width: 580px) {
+    .c_international-box .c_international-logo img {
+        height: 60px;
+    }
+    .c_international-box {
+        min-width: 10em;
+    }
+}
+@media (max-width: 479px) {
+    .c_international-box .c_international-logo img {
+        height: 50px;
+    }
+    .c_international-box {
+        min-width: 10em;
+    }
+}
+.content-panel {
+    color: #333;
+}
+#page-content .content-panel:not(.standalone) {
+    box-shadow: unset;
+    background: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-147-dwrt/da60d68a0760aaac.png);
+    background-size: 800px;
+    border-radius: 0px;
+}
+#page-content .content-panel .panel-heading {
+    padding: 12px 10px;
+}
+#page-content .content-panel .panel-footer {
+    background: #060a1d;
+}
+
+.news-block .panel-body {
+    padding: 0;
+}
+
+.news-block .panel-body .alternate {
+    padding: 5px 10px;
+}
+
+.news-block .news-title {
+    font-weight: bold;
+    font-size: 110%;
+    margin-bottom: 5px;
+    color: #633;
+}
+
+.news-block .news-content {
+    margin: 5px 0;
+}
+
+.news-block .news-title > p, .news-block .news-content > p {
+    margin: 0;
+}
+
+.news-block .list-pages-box .list-pages-item:nth-child(even) .alternate {
+    background-color: rgba(255,255,255,.9);
+}
+
+
+[[/module]]
+[[/iftags]]

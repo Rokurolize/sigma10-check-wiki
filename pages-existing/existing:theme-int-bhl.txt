@@ -1,0 +1,65 @@
+[[iftags]]
+[[include :scp-jp:theme:black-highlighter-theme]]
+[[/iftags]]
+
+[[iftags +テーマ]]
+[[module CSS]]
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css");
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css");
+[[/module]]
+[[include :scp-jp:component:interwiki-style
+| priority= 1
+| theme= https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css
+]]
+[[include :scp-jp:component:interwiki-style
+| priority= 2
+| theme= https://scp-jp.github.io/Black-Highlighter/css/
+min/black-highlighter.min.css
+]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** INT BHL
+**原題:** INT BHL
+**著作権者:** [[*user slashannemoo]]
+**翻訳責任者:** [[*user takion00]]
+**作成年:** 2023
+**翻訳年:** 2026
+**初訳時参照リビジョン:** rev.4
+**元記事リンク:** [*https://scp-int.wikidot.com/theme:int-bhl INT BHL]
+[[include :scp-jp:credit:end-preview]]
+
+[[image https://scp-jp.wdfiles.com/local--files/theme%3Ablack-highlighter-theme/black-highlighter-logo.svg]]
+
+**任意のウィキで:**
+[[div class="code"]]
+@@[[include :scp-jp:theme:black-highlighter-theme]]@@
+@@[[include :scp-jp:theme:int-bhl]]@@
+[[/div]]
+
+@@ @@
+
++ パッケージコンポーネント
+INT BHLにはあらかじめ以下のコンポーネントがパッケージされています。
+* [https://scp-jp.wikidot.com/component:toggle-sidebar-bhl BHLトグルサイドバー] by [[*user Woedenaz]]
+* [https://scp-jp.wikidot.com/component:centered-header-bhl BHLダークサイドバー] by [[*user Woedenaz]]
+* [https://scp-jp.wikidot.com/component:bhl-dark-sidebar BHL中央寄せヘッダー] by [[*user Woedenaz]]
+
+@@ @@
+
+[[/iftags]]
+
+[[include :scp-jp:component:toggle-sidebar-bhl]]
+[[include :scp-jp:component:centered-header-bhl]]
+[[include :scp-jp:component:bhl-dark-sidebar]]
+[[module CSS]]
+:root {
+    --logo-image: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A9466112-177-3uu5/scp-logo-int-full.svg");
+    --header-title: "INTアーカイブ";
+    --header-subtitle: "SCP財団";
+    --swatch-int-blue: 52, 76, 105;
+    --swatch-int-white: 201, 208, 216;
+    --header-gradient-color-bottom: var(--swatch-int-blue);
+    --rating-module-bg-color: var(--swatch-int-white);
+    --ct_col_rate-primary : var(--swatch-int-white);
+}
+[[/module]]

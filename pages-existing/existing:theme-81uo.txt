@@ -1,0 +1,462 @@
+[[include :scp-jp:component:interwiki-style
+|priority=1
+|theme=https://scp-jp.wdfiles.com/local--code/theme%3A81uo/code/1
+]]
+
+[[module css]]
+@import url('https://scp-jp.wdfiles.com/local--code/theme%3A81uo/1');
+[[/module]]
+
+[[iftags +テーマ]]
+
+@@@@
+@@@@
+> **テーマ名**: UOテーマ
+> **作成者**: [[*user stengan774]]
+
+これは、[[[secure-facility-dossier-site-81uo|財団サイト-81UO]]]とNx-54("四十八町")にまつわる作品のためのテーマです。使用するには、以下のコードをページに貼り付けてください。
+
+[[div class="code example"]]
+@@[[include :scp-jp:theme:81uo]]@@
+[[/div]]
+
++ 例
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** UOテーマ
+**著者:** [[*user stengan774]]
+**作成年:** 2024
+[[include :scp-jp:credit:end-preview]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
+
+通常文章 | Alphabet
+
+**太字** | //斜体// | __下線__ | --打ち消し線-- | {{等幅フォント}} | ^^上付き文字^^,,下付き文字,,
+
+[# リンク] [[a class="newpage"]]存在しないリンク[[/a]]
+
+罫線は、5つのハイフン「@@-----@@」を使用して作成でき、何かの内側(例: ブロック引用)に配置されていなければページ全体に適用されます。このドキュメントのセクションを区切る線は罫線です。
+
+-----
+
+見出しは、行の先頭に1～6文字の「+」を置くことで作成できます。
+
+[[toc]]
+
+[[collapsible show="+ 見出し" hide="- 見出し"]]
++* 1番目の見出し
+
+++* 2番目の見出し
+
++++* 3番目の見出し
+
+++++* 4番目の見出し
+
++++++* 5番目の見出し
+
+++++++* 6番目の見出し
+[[/collapsible]]
+
+[[tabview]]
+[[tab タブを作る]]
+これはタブです。[[footnote]]そしてこれは脚注です。[[/footnote]]
+
+[[/tab]]
+[[tab タブが作られた]]
+見てください、ここにもテキストがあります。
+
+なんと奇妙な。
+
+そしてこれは[[span class="ruby"]]ルビ[[span class="rt"]]振り仮名[[/span]][[/span]]です。
+[[/tab]]
+[[tab 長いタブ]]
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+[[/tab]]
+[[tab 一のタブ]]
+[[/tab]]
+[[tab 二のタブ]]
+[[/tab]]
+[[tab 三のタブ]]
+[[/tab]]
+[[tab 四のタブ]]
+[[/tab]]
+[[tab 五のタブ]]
+[[/tab]]
+[[tab 六のタブ]]
+⁽⁽👻₎₎
+
+幽霊は実在する、こういうところにね！
+[[/tab]]
+[[/tabview]]
+
+> これは引用ブロックです。各行の先頭に半角の「> 」を置くことで作成されます。
+> 
+> 追加のテキスト
+> 
+>> 入れ子になった引用ブロック
+@@@@
+@@@@
+@@@@
+
+[[include :scp-jp:component:image-block
+|width=200px
+|name= https://scp-jp-storage.wdfiles.com/local--files/file%3A5644609-150-txz2/81UO.png |caption=キャプション[[footnote]] 脚注その2。[[/footnote]]]]
+
+||~ 表題1 ||~ 表題2||
+|| 内容 || 内容 内容 内容 ||
+|||| これは下のセル ||
+
+# リストのアイテム
+# リストのアイテム
+# リストのアイテム
+
+* リストのアイテム
+* リストのアイテム
+* リストのアイテム
+------
++ コード
+[[code type="css"]]
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap');
+
+/* ---- VARS ---- */
+ :root{
+   --titleColor: hsl(219, 44%, 57%);
+   --subtitleColor: hsl(56, 100%, 10%);
+   --lgurl: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A5644609-150-txz2/81UO.png);
+}
+
+/* ---- SITE BANNER ---- */
+ #header,
+ div#header{
+     background-image: none;
+}
+
+ #header::before{
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     content: "";
+
+     background-image: var(--lgurl);
+     background-position: center top;
+     background-repeat: no-repeat;
+     background-size: auto 10.55em;
+     opacity: .40;
+}
+
+ #header h1,
+ #header h2{
+     float: none;
+     margin-left: 0;
+
+     text-align: center;
+}
+
+ #header h1 span,
+ #header h2 span{
+   /* Hide the Existing Text */
+     display: none;
+}
+
+ #header h1 a::before{
+     font-family: 'Shippori Mincho',serif;
+}
+ #header h2::before{
+   /* Style the New Text */
+     font-family: 'Zen Old Mincho',serif;
+}
+
+ #header h1 a::before{
+     position: relative;
+     bottom: .15em;
+
+     color: var(--titleColor);
+
+     font-size: 130%;
+     font-weight: 700;
+     text-shadow: 
+   -1.5px -1.5px 0 rgb(242,242,242),  
+    1.5px -1.5px 0 rgb(242,242,242),
+    -1.5px 1.5px 0 rgb(242,242,242),
+     1.5px 1.5px 0 rgb(242,242,242);
+}
+
+ #header h2::before{
+     position: relative;
+     top: .1em;
+
+     color: var(--subtitleColor);
+
+     font-size: 140%;
+     font-weight: 400;
+     text-shadow: 
+   -0.5px -0.5px 0 rgb(242,242,242),  
+    0.5px -0.5px 0 rgb(242,242,242),
+    -0.5px 0.5px 0 rgb(242,242,242),
+     0.5px 0.5px 0 rgb(242,242,242);
+}
+
+ #header h1 a::before{
+   /* Set the New Text's Content From Variable */
+     content: var(--header-title, "サイト-81UO");
+}
+
+ #header h2::before{
+     content: var(--header-subtitle, "ここでは死人に口がある");
+}
+
+ div#container-wrap {
+background: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A5644609-152-xhsj/Background.png) top left repeat-x;
+}
+
+/* ---- SEARCH ---- */
+ #search-top-box{
+     top: 1em;
+     right: 0;
+}
+
+ #search-top-box-form input.button{
+     margin-right: 0;
+}
+
+ #search-top-box-input,
+ #search-top-box-input:hover,
+ #search-top-box-input:focus,
+ #search-top-box-form input[type=submit],
+ #search-top-box-form input[type=submit]:hover,
+ #search-top-box-form input[type=submit]:focus{
+     border-radius: 0;
+     box-shadow: none;
+
+     font-size: 100%;
+}
+
+/* ---- TOP BAR ---- */
+ #top-bar{
+     right: 0;
+     display: flex;
+     justify-content: center;
+}
+
+ #top-bar ul li ul{
+     border-bottom: 1px solid hsl(0, 0%, 40%);
+     box-shadow: none;
+}
+
+/* ---- LOGIN ---- */
+ #login-status{
+     top: 1.1em;
+     right: initial;
+
+     color: black;
+}
+
+#login-status a {
+      color: black;
+}
+
+#login-status ul a {
+      color: black;
+}
+ #account-topbutton{
+      color: black;
+      background: #ccc;
+      font-size: 100%;
+}
+
+/* ---- SIDE BAR ---- */
+ #interwiki a {
+    color: #6283C2;
+}
+
+/* ---- TABVIEW ----*/
+div.yui-navset div.yui-content {
+    background: rgb(255, 255, 255);
+    background-image: none;
+    margin: 0em 0em 1em 0em;
+    border: none;
+    box-shadow: rgb(0 0 0 / 24%) 0 2px 5px;
+}
+div.yui-navset ul.yui-nav a,
+div.yui-navset div.yui-navset-top ul.yui-nav a {
+    background: rgb(255, 255, 255);
+    color: var(--titleColor);
+    background-image: none;
+}
+.yui-navset .yui-nav, .yui-navset .yui-navset-top .yui-nav {
+    border-color: var(--titleColor);
+}
+div.yui-navset ul.yui-nav a:hover,
+div.yui-navset ul.yui-nav a:focus {
+    background: rgb(217, 217, 217);
+    color: #ff0000;
+    background-image: none;
+    text-decoration: none;
+}
+
+div.yui-navset ul.yui-nav .selected a,
+div.yui-navset ul.yui-nav .selected a:focus,
+div.yui-navset ul.yui-nav .selected a:hover {
+    background: rgb(0, 1, 108);
+    color: #FFFFFF;
+    background-image: none;
+}
+
+#page-content .yui-nav a {
+  text-decoration: none;
+}
+
+/* ---- MOBILE DISPLAY ---- */
+ @media (max-width: 767px){
+     #search-top-box{
+          top: 1.85em;
+          width: unset;
+    }
+
+     .mobile-top-bar{
+          position: relative;
+          left: 0;
+          display: flex;
+          justify-content: center;
+    }
+
+     #login-status{
+          top: 0;
+          right: 0;
+    }
+
+     #header .printuser{
+          font-size: 0;
+    }
+
+     #header .printuser img.small{
+          margin: 0;
+
+          transform: translate(6px, 4px);
+    }
+
+     #my-account{
+          display: none;
+    }
+
+     #account-topbutton{
+          margin-left: 2px;
+    }
+}
+
+/* ---- LINK ---- */
+
+a {
+    color: #6283C2;
+}
+
+a.newpage {
+    color: #00AEEF;
+}
+[[/code]]
+------
++* 画像ライセンス
+
+[[div class="blockquote"]]
+
+**ファイルページ:** [*https://scp-jp-storage.wikidot.com/file:5644609-150-txz2 81UOロゴ]
+
+**ソース:** https://scp-jp-storage.wikidot.com/file:5644609-150-txz2
+**ライセンス:** CC BY-SA 3.0
+
+**タイトル:** 81UOロゴ
+**著作権者:** [[*user stengan774]]
+**公開年:** 2023
+**補足:**
+以下のメディアを使用
+
+[[div class="blockquote"]]
+**ソース:** https://scp-int.wikidot.com/jp-hub
+**ライセンス:** CC BY-SA 3.0
+
+**タイトル:** SCP-JPロゴ
+**著作権者:** [[*user Nanimono Demonai]]
+**公開年:** 2017
+[[/div]]
+
+[[div class="blockquote"]]
+**ソース:** https://commons.wikimedia.org/wiki/File:Japanese_Crest_mitu_Tomoe_1.svg
+**ライセンス:** CC BY-SA 3.0
+
+**タイトル:** Japanese Crest mitu Tomoe 1.svg
+**著作権者:** Mukai
+**公開年:** 2009
+[[/div]]
+
+[[div class="blockquote"]]
+**ソース:** https://commons.wikimedia.org/wiki/File:Siddham_ph.svg
+**ライセンス:** パブリックドメイン
+
+**タイトル:** Siddham ph.svg
+**著作権者:** Mhss
+**公開年:** 2009
+[[/div]]
+
+[[div class="blockquote"]]
+**ソース:** https://commons.wikimedia.org/wiki/File:Siddham_ng.svg
+**ライセンス:** パブリックドメイン
+
+**タイトル:** Siddham ng.svg
+**著作権者:** Mhss
+**公開年:** 2009
+[[/div]]
+
+
+[[div class="blockquote"]]
+**ソース:** https://commons.wikimedia.org/wiki/File:Siddham_b.svg
+**ライセンス:** パブリックドメイン
+
+**タイトル:** Siddham b.svg
+**著作権者:** Mhss
+**公開年:** 2009
+[[/div]]
+
+[[/div]]
+
+[[div class="blockquote"]]
+
+**ファイルページ:** [*https://scp-jp-storage.wikidot.com/file:5644609-152-xhsj UOテーマ背景]
+
+**ソース:** https://scp-jp.wikidot.com/author:mitan
+**ライセンス:** CC BY-SA 3.0
+
+**タイトル:** バックグラウンド
+**著作権者:** [[*user Mitan]]
+**公開年:** 2020
+**補足:**
+上記のページにおいて、独自CSSテーマの背景として適用されていた画像をCC BY-SA 3.0に基づき引用。
+
+[[/div]]
+
+[[/iftags]]

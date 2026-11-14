@@ -1,0 +1,349 @@
+[[module CSS]]
+@import url('https://scp-jp.wdfiles.com/local--code/theme%3Athe-flowing-night-sky/1');
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://scp-jp.wdfiles.com/local--code/theme%3Athe-flowing-night-sky/1
+]]
+
+[[iftags +テーマ]]
+[[>]]
+**評価モジュール:**
+[[module Rate]]
+
+**クレジット付き評価モジュール:**
+[[/>]]
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** 流れる夜空のCSSテーマ
+**原題:** 흐르는 밤하늘 CSS 테마
+**重訳元の記事のタイトル:** Night Sky Theme
+**著作権者:** c_bonefish (アカウント削除済み)
+**重訳元の記事の著者:** [[*user fluxman]]
+**翻訳責任者:** [[*user takion00]]
+**翻訳年:** 2025
+**作成年:** 2021
+**重訳元記事作成年:** 2024
+**初訳時参照リビジョン:** rev.54
+**重訳元記事参照リビジョン:** rev.10
+**元記事リンク:** [*https://scpko.wikidot.com/theme:the-flowing-night-sky 흐르는 밤하늘 CSS 테마]
+**重訳元記事リンク:** [*https://scp-wiki.wikidot.com/theme:the-flowing-night-sky Night Sky Theme]
+[[include :scp-jp:credit:end-preview]]
+
++ 流れる夜空のCSSテーマ
+これはc_bonefishによって作成された、特定のカノン・シリーズ・GoIに縛られない美しいテーマです。
+
+このテーマはだれでも使用可能です。
+> @@[[include :scp-jp:theme:the-flowing-night-sky]]@@
+このテーマを記事で使用するには上記のコードを記事の上部に挿入してください。
+
+@@ @@
+----
++ ページ要素
+[[include :scp-jp:component:image-block name=https://scp-jp-storage.wikidot.com/local--files/file%3A9466112-48-3666/logo.png|caption=ロゴ|width=200px]]
++ タイトル1
+++ タイトル2
++++ タイトル3
+++++ タイトル4
++++++ タイトル5
+++++++ タイトル6
+
+[[tabview]]
+[[tab タブ1]]
+[[=]]
+asdf
+
+> + リンク
+> [# 未訪問リンク] | [[[the-flowing-night-sky |訪問済みリンク]]]
+> ----
+>> テキスト[[footnote]] コンコン [[/footnote]]
+[[/=]]
+[[/tab]]
+[[tab タブ2]]
+[[/tab]]
+[[/tabview]]
+
+----
++ CSSテーマのコード
+[[code type="CSS"]]
+/*
+    Powered on 2021/01/19 18:35:49
+    [2021 Wikidot Theme]
+    Created by c_bonefish
+    Media Query edited by thd-glasses
+    Logo Image: https://pixabay.com/photos/starry-sky-night-sky-stars-night-2675322/
+    Header Image: https://pixabay.com/illustrations/banner-header-sky-night-stars-1557834/
+    CC BY-SA 3.0
+*/
+
+/* Header */
+
+div#container-wrap {
+    background: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A9466112-49-mi7y/background.png) center top repeat-x;
+}
+
+#header h1 a span {
+    color: #fff;
+}
+
+#header h2 span {
+    font-size:0px;
+    padding: 4px;
+}
+
+#header h2::after {
+    content: "天の川を通り、夜空を横切る";
+    font-weight: bold;
+    color: #FFD9FF;
+    padding: 19px 0;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+    white-space: pre;
+}
+
+#header {
+    background: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A9466112-48-3666/logo.png) 10px 40px no-repeat;
+    background-position: 1em 3em;
+    background-size: 97px 97px;
+}
+
+/* Color */
+
+#page-title {
+    font-size: 2.1em;
+    color: #073763;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+h1 {
+    color: rgb(16, 60, 128);
+}
+
+h2 {
+    color: rgb(41, 93, 174);
+}
+
+h3 {
+    color: rgb(82, 128, 202);
+}
+
+h4 {
+    color: rgb(143, 177, 231);
+}
+
+h5 {
+    color: rgb(183, 204, 238);
+}
+
+h6 {
+    color: rgb(216, 230, 253);
+}
+
+a:link {
+    color: rgb(66, 90, 129);
+}
+
+a:visited {
+    color: rgb(171, 171, 240);
+}
+
+/* Side bar & Interwiki */
+
+#side-bar {
+    background: #ffffff;
+}
+
+:is(#side-bar,#interwiki) .side-block {
+    background: #ffffff;
+    border: 5px solid #002662;
+    border-radius: 10px 0;
+}
+
+:is(#side-bar,#interwiki) .heading {
+    color: #000000;
+    border-bottom: solid 1px #000000;
+}
+
+div.open-menu a {
+    color: rgb(28, 69, 135) !important;
+    border-color: rgb(28, 69, 135) !important;
+}
+
+#side-bar div.menu-item .sub-text {
+    color: #000000;
+}
+
+:is(#side-bar,#interwiki) a:link {
+    color: rgb(147, 132, 187);
+}
+
+:is(#side-bar,#interwiki) a:visited {
+    color: rgb(197, 197, 255);
+}
+
+/* side-bar collapsible stuff */
+#side-bar .collapsible-block-unfolded-link {
+    border-bottom: solid 1px #000000;
+}
+
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link {
+    color: #000000;
+}
+
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link:hover {
+    color: #000000;
+}
+
+/* Rate Module */
+
+.page-rate-widget-box {
+    margin-right: 0;
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+div.page-rate-widget-box .rate-points {
+    background: #073763;
+    border: 2px solid #073763;
+}
+
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+    background: #fff;
+    border-top: solid 2px #073763;
+    border-bottom: solid 2px #073763;
+}
+
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover {
+    background-color: #073763;
+    color: #FFD9FF;
+}
+
+.page-rate-widget-box .cancel {
+    background: #073763;
+    border: 2px solid #073763;
+    color: #FFD9FF;
+}
+
+.page-rate-widget-box .cancel a {
+    color: #FFD9FF;
+    font-weight: bold;
+}
+
+.page-rate-widget-box .cancel a:hover {
+    background: #073763;
+    border-radius: 0;
+    color: #FFD9FF;
+}
+
+#page-content .creditRate {
+    margin-right: 0;
+}
+
+#page-content .rate-box-with-credit-button {
+    background: #073763;
+    border: 2px solid #073763;
+    box-shadow: none;
+}
+
+#page-content .creditButton p a {
+    border-left: #073763;
+    color: #FFD9FF;
+}
+
+#page-content .rate-box-with-credit-button .fa-info {
+    padding: 3px 0 1px;
+}
+
+#page-content .rate-box-with-credit-button .fa-info:hover {
+    background: #FFD9FF;
+    border-radius: 0 3px 3px 0;
+    color: #073763;
+}
+
+/* Credit Module */
+
+#page-content .creditRate.creditModule .rate-box-with-credit-button {
+    border: none;
+}
+
+#page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton {
+    background-color: #073763;
+    border: 1px solid #073763;
+    box-shadow: none;
+}
+
+#page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton a:hover {
+    border-radius: 3px;
+}
+
+/* Tab */
+
+div.yui-navset div.yui-content {
+    background: rgb(250, 250, 250);
+}
+
+div.yui-navset ul.yui-nav a,
+div.yui-navset div.yui-navset-top ul.yui-nav a {
+    background: #fefefe;
+    color: #000000;
+}
+
+div.yui-navset ul.yui-nav a:hover,
+div.yui-navset ul.yui-nav a:focus {
+    background: rgb(232, 244, 255);
+}
+
+div.yui-navset ul.yui-nav .selected a,
+div.yui-navset ul.yui-nav .selected a:focus,
+div.yui-navset ul.yui-nav .selected a:hover {
+    background: rgb(32, 18, 77);
+    color: #ffffff;
+}
+
+/* blockquote */
+
+blockquote, div.blockquote {
+    margin: 1px;
+    background: #ffffff;
+}
+
+blockquote p {
+    padding: 1px;
+    background: #ffffff;
+    border-radius: 5px;
+}
+
+/* Mobile Media Query */
+@media (max-width: 479px) {
+    #header {
+        background-position: 0 5.5em;
+        background-size: 55px 55px;
+    }
+}
+/* Note Media Query */
+@media (min-width: 480px) and (max-width: 580px) {
+    #header {
+        background-position: 0.5em 4.5em;
+        background-size: 66px 66px;
+    }
+}
+/* Mini Tablet Media Query */
+@media (min-width: 581px) and (max-width: 767px) {
+    #header {
+        background-position: 1em 4em;
+        background-size: 77px 77px;
+    }
+}
+/* Tablet Media Query */
+@media (min-width: 768px) and (max-width: 979px) {
+    #header {
+        background-position: 1em 4em;
+        background-size: 88px 88px;
+    }
+}
+[[/code]]
+[[/iftags]]
