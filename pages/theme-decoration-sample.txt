@@ -238,11 +238,11 @@ class="warning" の div です。警告ボックス風の装飾の受け皿に�
 [[/div]]
 [[div class="creditBottomRate" style="height:30px;"]]
 [[div class="credit-license"]]
-[[a href="https://creativecommons.org/licenses/by-sa/3.0/deed.ja" class="cc cc-by-sa"]]@@ @@[[/a]]
+[[a href="*https://creativecommons.org/licenses/by-sa/3.0/deed.ja" class="cc cc-by-sa"]]@@@@[[/a]]
 [[/div]]
 [[div style="text-align: center; top: 0px;"]]
-[[div class="page-rate-widget-box"]]
-[[span class="rate-points"]]評価: 0[[/span]] [[span class="rateup btn btn-default"]]+[[/span]] [[span class="ratedown btn btn-default"]]–[[/span]] [[span class="cancel btn btn-default"]]x[[/span]]
+[[div]]
+[[module Rate]]
 [[/div]]
 [[/div]]
 [[/div]]
@@ -367,51 +367,20 @@ collapsible を2つ並べた形:
 
 ++ 18. 列モジュール（colmod）
 
-[[div class="colmod-block"]]
-[[ul]]
-[[li class="unfolded"]]
-[[div class="colmod-link-top"]]
-[[a href="#"]]+ 開く[[/a]] [[a href="#"]]− 閉じる[[/a]]
-[[/div]]
-[[div class="colmod-content"]]
+[[include :scp-jp:component:coltop show=+ 開く | hide=- 閉じる | folded=0]]
 開いた状態の列モジュール本文です。colmod-content の余白と表示アニメーションの受け皿になります。Column module body text in English for mixed-language rendering.
-[[/div]]
-[[div class="colmod-link-end"]]
-[[a href="#"]]▲ 閉じる[[/a]]
-[[/div]]
-[[/li]]
-[[li class="folded"]]
-[[div class="colmod-link-top"]]
-[[a href="#"]]+ 開く[[/a]] [[a href="#"]]− 閉じる[[/a]]
-[[/div]]
-[[div class="colmod-content"]]
+[[include :scp-jp:component:colend hide=▲ 閉じる]]
+
+[[include :scp-jp:component:coltop show=+ 開く | hide=- 閉じる]]
 閉じた状態の列モジュール本文です。本文は CSS で隠れます。
-[[/div]]
-[[div class="colmod-link-end"]]
-[[a href="#"]]▲ 閉じる[[/a]]
-[[/div]]
-[[/li]]
-[[/ul]]
-[[/div]]
+[[include :scp-jp:component:colend hide=▲ 閉じる]]
 
 collapsiblealt 変種:
 
 [[div class="collapsiblealt"]]
-[[div class="colmod-block"]]
-[[ul]]
-[[li class="unfolded"]]
-[[div class="colmod-link-top"]]
-[[a href="#"]]+ 開く[[/a]] [[a href="#"]]− 閉じる[[/a]]
-[[/div]]
-[[div class="colmod-content"]]
+[[include :scp-jp:component:coltop show=+ 開く | hide=- 閉じる | folded=0]]
 collapsiblealt 変種の本文です。開閉リンクが中央揃えのボタン状になります。
-[[/div]]
-[[div class="colmod-link-end"]]
-[[a href="#"]]▲ 閉じる[[/a]]
-[[/div]]
-[[/li]]
-[[/ul]]
-[[/div]]
+[[include :scp-jp:component:colend hide=▲ 閉じる]]
 [[/div]]
 
 ++ 19. 文書ブロック（bblock / dblock）
@@ -796,9 +765,11 @@ Transcript body continues: no further anomalies were observed during the watch.
 混在した深いリスト:
 
 * レベル1（箇条書きA）
- * # レベル2（番号付き1）
- * # レベル2（番号付き2）
- * レベル2（箇条書き）
+ * レベル2（箇条書き1）
+ * レベル2（箇条書き2）
+  # レベル3（番号付き1）
+  # レベル3（番号付き2）
+ * レベル2（箇条書き3）
   * レベル3（箇条書き）
    # レベル4（番号付き1）
    # レベル4（番号付き2）
