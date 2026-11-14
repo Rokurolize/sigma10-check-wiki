@@ -94,7 +94,7 @@ def main():
         for fn, why in drift:
             print(" -", fn, ":", why)
         return 1
-    print("OK:", len(files), "pages match on both wikis")
+    print("OK:", len(pairs), "pages match on both wikis")
     return 0
 
 
