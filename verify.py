@@ -36,7 +36,7 @@ def to_wikijump_form(fn, text):
 
 
 def norm(t):
-    return t.rstrip("\n")
+    return "\n".join(line.rstrip() for line in t.rstrip("\n").split("\n"))
 
 
 def wikijump_source(fn):
