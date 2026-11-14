@@ -1,0 +1,934 @@
+[!--
+Live Wikidot Sigma-9 sandbox reference copy (scpaiueouiuiuiui) of the lab-authored theme decoration sample.
+Canonical source: ~/.local/state/wikijump/stafflab/theme-decoration-sample.wikidot.txt
+Purpose: ONE page exercising the constructs theme CSS decorates.
+--]
+
++ テーマ装飾サンプルページ
+
+このページは、テーマのCSSが装飾する要素を一通り並べた確認専用ページです。本文の意味はなく、各セクションが装飾の受け皿になります。
+This page is a decoration sample: every section exists only so theme CSS has something to style.
+
+[[toc]]
+
+++ 1. 見出しレベル
+
++ 見出しレベル1
+++ 見出しレベル2
++++ 見出しレベル3
+++++ 見出しレベル4
++++++ 見出しレベル5
+++++++ 見出しレベル6
+
+++ 2. 段落とインライン装飾・配置
+
+通常の段落です。**太字**、//斜体//、__下線__、--取り消し線--、{{等幅フォント}}、上付き^^sup^^、下付き,,sub,,、[[size 130%]]大きな文字[[/size]]、[[span style="color:#cc0000"]]色付きspan[[/span]]、{{inline code}}、そして @@raw **太字にならない**@@ を含みます。
+
+[[=]]
+中央揃えの段落です。Centered paragraph.
+[[/=]]
+
+[[>]]
+右揃えの段落です。Right-aligned paragraph.
+[[/>]]
+
+[[<]]
+左揃えの段落です。Left-aligned paragraph.
+[[/<]]
+
+[[==]]
+両端揃えの段落です。Justified paragraph needs enough text to wrap onto a second line so the justification is visible in captures: テーマの本文装飾を確認するための文章をここに続けます。さらに数行分のテキストを足して、行末が揃う様子が見えるようにします。
+[[/==]]
+
+++ 3. リンク
+
+* 内部リンク: [[[scp-002-j|SCP-002-J]]]
+* 未作成ページへのリンク: [[[theme-decoration-sample-missing|未作成ページ]]]
+* 外部リンク: [https://example.invalid/external 外部リンク]
+* アンカーへのリンク: [[[theme-decoration-sample#decoration-anchor|定義したアンカーへ]]]
+* ユーザーリンク（存在するユーザー）: [[*user daveyoufool]]
+* ユーザーリンク（存在しないユーザー）: [[*user staff.operator]]
+
+[[a name="decoration-anchor"]]アンカー定義位置（この行がアンカーの飛び先です）。[[/a]]
+
+++ 4. 画像
+
+裸の画像（段落内）:
+[[image https://sigma10-jp-test.wdfiles.com/local--files/theme-decoration-sample/test-image.png width="320px"]]
+
+左寄せ画像:
+[[<image https://sigma10-jp-test.wdfiles.com/local--files/theme-decoration-sample/test-image.png width="240px"]]
+
+左寄せ画像に続くテキストです。画像の配置と余白を確認します。テキストは数行続くように長めに書きます。枠と影の装飾は下の画像ブロック（scp-image-block）が担当します。
+
+右寄せ画像:
+[[>image https://sigma10-jp-test.wdfiles.com/local--files/theme-decoration-sample/test-image.png width="240px"]]
+
+右寄せ画像に続くテキストです。こちらも数行分の長さを持たせて、配置と下端の揃いを確認できるようにします。
+
+中央の画像:
+[[=image https://sigma10-jp-test.wdfiles.com/local--files/theme-decoration-sample/test-image.png width="240px"]]
+
+[[div style="clear: both;"]]
+[[/div]]
+
+画像ブロック（キャプション付き）:
+[[div class="scp-image-block block-right"]]
+[[image https://sigma10-jp-test.wdfiles.com/local--files/theme:basalt/basalt-theme-logo.svg width="300px"]]
+[[div class="scp-image-caption"]]
+Basaltロゴ（theme:basalt の添付ファイル）。キャプションの装飾を確認します。
+[[/div]]
+[[/div]]
+
+[[div style="clear: both;"]]
+[[/div]]
+
+++ 5. 表
+
+通常の表（ヘッダー行付き）:
+
+||~ 項目 ||~ 状態 ||~ 備考 ||
+|| alpha || active || 通常のセルです ||
+|| beta || archived || 長いテキストを入れたセルです。折り返しと左右の余白を確認します ||
+|| gamma || **太字セル** || [https://example.invalid セル内リンク] ||
+
+クラス付きラッパー内の表:
+
+[[div class="fancy-table"]]
+||~ ID ||~ 分類 ||~ 説明 ||~ 参照 ||
+|| 01 || active || 幅を確認する長めのセル内容です || primary ||
+|| 02 || archived || 日本語と Latin characters を混ぜたセルです || secondary ||
+|| 03 || active || 3行目です || tertiary ||
+[[/div]]
+
+++ 6. リスト
+
+箇条書き:
+
+* 項目1
+* 項目2
+ * 入れ子の項目
+  * さらに深い項目
+* 項目3
+
+番号付きリスト:
+
+# 第一の項目
+# 第二の項目
+ # 入れ子の番号項目
+# 第三の項目
+
+定義リスト:
+
+: 用語A : 用語Aの定義文です。
+: 用語B : 用語Bの定義文です。**太字**を含みます。
+
+++ 7. 引用と区切り
+
+> 引用文です。複数行にわたる引用で、余白・背景・左ボーダーの装飾を確認します。
+> 引用の2行目です。
+
+[[div class="blockquote"]]
+クラス付き blockquote div の本文です。テーマ固有の引用装飾を確認します。
+[[/div]]
+
+----
+
+++ 8. コード
+
+インラインコードは {{const x = 1;}} のように書きます。
+
+[[code type="css"]]
+.sample-code { color: #333; margin: 0 auto; }
+[[/code]]
+
+[[code]]
+言語指定なしのコードブロックです。
+長い行: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+[[/code]]
+
+++ 9. 折りたたみ
+
+[[collapsible show="閉じた状態のcollapsible（クリックで開く）" hide="閉じる"]]
+中身のテキストと箇条書きです。
+* 中の項目1
+* 中の項目2
+[[/collapsible]]
+
+[[collapsible show="開いた状態のcollapsible" hide="閉じる" folded="no"]]
+最初から開いて表示される中身です。**太字**と[https://example.invalid リンク]を含みます。
+[[/collapsible]]
+
+++ 10. タブ
+
+[[tabview]]
+[[tab テキスト]]
+タブ1の本文です。段落と **太字** を含みます。
+[[/tab]]
+[[tab リスト]]
+* タブ内リスト1
+* タブ内リスト2
+[[/tab]]
+[[tab 表]]
+||~ X ||~ Y ||
+|| 1 || 2 ||
+[[/tab]]
+[[/tabview]]
+
+++ 11. 脚注と参考文献
+
+本文に脚注[[footnote]]1つ目の脚注本文です。[[/footnote]]と、もう1つ[[footnote]]2つ目の脚注本文です。[[/footnote]]を含みます。参考文献への引用 ((bibcite sampleref)) も置きます。
+
+[[footnoteblock]]
+
+[[bibliography]]
+: sampleref : サンプルの参考文献エントリ。Theme decoration sample bibliography entry.
+: sampleops : 収容手順運用ハンドブック（サンプルエントリ）。Sample operations handbook entry.
+: samplelog : 観測ログ付録（サンプルエントリ）。Sample observation log entry.
+[[/bibliography]]
+
+++ 12. 分類バー（ACS風マークアップ）
+
+[[include :scp-jp:component:classified-decoration
+|lv=5
+|item=002-J
+|oc=Keter
+|lang=JP
+]]
+
+++ 13. 評価モジュールとクレジット（マークアップ形状）
+
+[[include :scp-jp:credit:start]]
+**ソース:** [[[theme-decoration-sample|テーマ装飾サンプルページ]]]
+**著者:** [[*user voted-fated-smuggler]]
+**作成年:** 2026
+[[include :scp-jp:credit:end]]
+
+[[div class="decoration-note" id="decoration-note-box"]]
+id と class を持つ div です。テーマの汎用装飾の受け皿になります。
+[[/div]]
+
+段落の中の [[span class="decoration-inline"]]class 付き span[[/span]] です。
+
+[[div class="warning"]]
+class="warning" の div です。警告ボックス風の装飾の受け皿になります。
+[[/div]]
+
+++ 30. クレジット表示パネル（ⓘクリック時の静的再現）
+
+13. のクレジットモジュールの「ⓘ」をクリックしたときに表示されるパネルを、クリックなしで確認できるよう静的に再現したものです。実物と同じクラス構成で組んであり、クレジットモジュールのCSSがそのまま適用されます。要素IDは実物と重ならないよう付けていません（このページの実物のⓘは従来どおり動作します）。
+
+[[module CSS]]
+.credit-static-view { position: relative; }
+.credit-static-view .modalcontainer { position: relative; top: auto; bottom: auto; left: auto; right: auto; height: auto; margin: 0 auto; }
+.credit-static-view .creditBottomRate { position: relative; bottom: auto; margin-top: 1em; }
+@media (max-width: 767px) { .credit-static-view .modalcontainer { width: 400px; max-width: 100%; } .credit-static-view .modalbox { min-width: 0; } }
+[[/module]]
+
+[[div class="credit-static-view"]]
+[[div class="modalcontainer"]]
+[[div class="modalbox"]]
+[[div class="modalbox-title"]]
+++* クレジット
+[[/div]]
+[[div class="credit"]]
+**ソース:** [[[theme-decoration-sample|テーマ装飾サンプルページ]]]
+**著者:** [[*user voted-fated-smuggler]]
+**作成年:** 2026
+[[/div]]
+[[div class="creditBottomRate" style="height:30px;"]]
+[[div class="credit-license"]]
+[[a href="https://creativecommons.org/licenses/by-sa/3.0/deed.ja" class="cc cc-by-sa"]]@@ @@[[/a]]
+[[/div]]
+[[div style="text-align: center; top: 0px;"]]
+[[div class="page-rate-widget-box"]]
+[[span class="rate-points"]]評価: 0[[/span]] [[span class="rateup btn btn-default"]]+[[/span]] [[span class="ratedown btn btn-default"]]–[[/span]] [[span class="cancel btn btn-default"]]x[[/span]]
+[[/div]]
+[[/div]]
+[[/div]]
+[[/div]]
+[[/div]]
+[[/div]]
+
+++ 14. 埋め込み
+
+[[iframe https://sigma10-jp-test.wikidot.com/scp-002-j width="100%" height="240"]]
+
+++ 15. コンテンツパネル
+
+見出し・本文・フッターを持つパネル:
+
+[[div class="content-panel"]]
+[[div class="panel-heading"]]
+収容手順のお知らせ / Notice from the Site Director
+[[/div]]
+[[div class="panel-body"]]
+本文の段落です。パネルの本文領域は panel-body が担当し、見出しやフッターとは別の背景と余白で描かれます。Site administration notices use this three-part panel shape.
+[[/div]]
+[[div class="panel-footer"]]
+Site Administration — 2026-11-09
+[[/div]]
+[[/div]]
+
+単独パネル（standalone・中央揃え）:
+
+[[div class="content-panel standalone centered"]]
+このパネルは standalone 変種です。本文は中央揃えになります。
+[[/div]]
+
+シリーズパネル（series）:
+
+[[div class="content-panel series"]]
+シリーズ一覧のパネルです。series 変種は左右に広い余白を持ちます。SCP-002-J、SCP-096-J、SCP-173-J のようなシリーズ内ページへの案内の置き場になります。
+[[/div]]
+
+左右カラムのパネル対:
+
+[[div class="content-panel left-column"]]
+[[div class="panel-heading"]]
+左カラム
+[[/div]]
+[[div class="panel-body"]]
+左側のパネル本文です。left-column は左に寄せて表示されます。
+[[/div]]
+[[/div]]
+
+[[div class="content-panel right-column"]]
+[[div class="panel-heading"]]
+右カラム
+[[/div]]
+[[div class="panel-body"]]
+右側のパネル本文です。right-column は右に寄せて表示されます。
+[[/div]]
+[[/div]]
+
+[[div style="clear: both;"]]
+[[/div]]
+
+++ 16. sexy-box と画像ブロックの変種
+
+sexy-box（画像とテキストの組み合わせ）:
+
+[[div class="sexy-box"]]
+[[image https://sigma10-jp-test.wdfiles.com/local--files/theme-decoration-sample/test-image.png width="300px"]]
+sexy-box の本文です。sexy-box 内の画像には枠と余白が付きます。The sexy-box pairs an image with a short excerpt, as in archived interview summaries.
+[[/div]]
+
+画像ブロック（左寄せ）:
+
+[[div class="scp-image-block block-left"]]
+[[image https://sigma10-jp-test.wdfiles.com/local--files/theme-decoration-sample/test-image.png width="260px"]]
+[[div class="scp-image-caption"]]
+左寄せ画像ブロックのキャプションです。
+[[/div]]
+[[/div]]
+
+左寄せ画像ブロックの横に回り込むテキストです。画像ブロックは CSS で float するため、本文が横に流れ込みます。数行分の長さを持たせて、ブロックの余白と回り込みの様子を確認できるようにします。さらに文章を続けて、ブロックの下端を越えたあたりで通常の行長に戻ることを確認します。
+
+[[div style="clear: both;"]]
+[[/div]]
+
+画像ブロック（中央・clear 付き）:
+
+[[div class="scp-image-block block-center scp-clear-true"]]
+[[image https://sigma10-jp-test.wdfiles.com/local--files/theme-decoration-sample/test-image.png width="260px"]]
+[[div class="scp-image-caption"]]
+中央配置・clear 指定の画像ブロックです。
+[[/div]]
+[[/div]]
+
+++ 17. 折りたたみの並び
+
+collapsible を2つ並べた形:
+
+[[collapsible show="1つ目のcollapsible（閉）" hide="閉じる"]]
+1つ目の本文です。
+[[/collapsible]]
+[[collapsible show="2つ目のcollapsible（開）" hide="閉じる" folded="no"]]
+2つ目の本文です。
+[[/collapsible]]
+
+リスト項目の中の collapsible:
+
+[[ul]]
+[[li]]
+項目A（通常の項目）
+[[/li]]
+[[li]]
+項目B（collapsible を含む項目）
+[[collapsible show="項目内のcollapsible" hide="閉じる"]]
+リスト項目の中に置かれたcollapsibleの本文です。
+[[/collapsible]]
+[[/li]]
+[[li]]
+項目C（通常の項目）
+[[/li]]
+[[/ul]]
+
+++ 18. 列モジュール（colmod）
+
+[[div class="colmod-block"]]
+[[ul]]
+[[li class="unfolded"]]
+[[div class="colmod-link-top"]]
+[[a href="#"]]+ 開く[[/a]] [[a href="#"]]− 閉じる[[/a]]
+[[/div]]
+[[div class="colmod-content"]]
+開いた状態の列モジュール本文です。colmod-content の余白と表示アニメーションの受け皿になります。Column module body text in English for mixed-language rendering.
+[[/div]]
+[[div class="colmod-link-end"]]
+[[a href="#"]]▲ 閉じる[[/a]]
+[[/div]]
+[[/li]]
+[[li class="folded"]]
+[[div class="colmod-link-top"]]
+[[a href="#"]]+ 開く[[/a]] [[a href="#"]]− 閉じる[[/a]]
+[[/div]]
+[[div class="colmod-content"]]
+閉じた状態の列モジュール本文です。本文は CSS で隠れます。
+[[/div]]
+[[div class="colmod-link-end"]]
+[[a href="#"]]▲ 閉じる[[/a]]
+[[/div]]
+[[/li]]
+[[/ul]]
+[[/div]]
+
+collapsiblealt 変種:
+
+[[div class="collapsiblealt"]]
+[[div class="colmod-block"]]
+[[ul]]
+[[li class="unfolded"]]
+[[div class="colmod-link-top"]]
+[[a href="#"]]+ 開く[[/a]] [[a href="#"]]− 閉じる[[/a]]
+[[/div]]
+[[div class="colmod-content"]]
+collapsiblealt 変種の本文です。開閉リンクが中央揃えのボタン状になります。
+[[/div]]
+[[div class="colmod-link-end"]]
+[[a href="#"]]▲ 閉じる[[/a]]
+[[/div]]
+[[/li]]
+[[/ul]]
+[[/div]]
+[[/div]]
+
+++ 19. 文書ブロック（bblock / dblock）
+
+[[div class="bblock"]]
+**文書 002-J-改** 本資料はレベル4以上の職員の閲覧に限ります。以下の記述は検閲済みのものであり、伏せられた部分の復元を試みてはなりません。The following section has been redacted by order of the Site Director.
+[[/div]]
+
+[[div class="dblock"]]
+**収容記録 002-J 抜粋** 対象は通常の収容室に保管され、監視カメラによる常時監視が行われています。異常な挙動が観察された場合は、直ちに保安部門へ報告してください。Document block body text continues in English for contrast.
+[[/div]]
+
+++ 20. ルビ・キーキャップ・ホバーチップ・説明ブロック
+
+ルビ: [[span class="ruby"]]収容違反[[span class="rt"]]しゅうよういはん[[/span]][[/span]]が発生した場合は、直ちに[[span class="ruby"]]機動部隊[[span class="rt"]]きどうぶたい[[/span]][[/span]]へ連絡してください。
+
+キーキャップ: [[span class="keycap"]]Ctrl[[/span]] + [[span class="keycap"]]Shift[[/span]] + [[span class="keycap"]]S[[/span]] で保存し、[[span class="keycap"]]F5[[/span]] で再読み込みします。
+
+ホバーチップ: [[span class="hovertip"]]要注意対象[[span class="content"]]ホバーで表示される補足説明です。対象への直接接触は禁止されています。[[/span]][[/span]]の監視を継続します。
+
+[[div class="description-block"]]
+**説明ブロック** 対象の外見と性質をまとめた説明文の置き場です。The description block carries the object's appearance summary near the article header.
+[[/div]]
+
+++ 21. Basalt 分類バー（anom-bar）
+
+[[div class="anom-bar-container clear-5 keter vlam warning"]]
+[[div class="anom-bar"]]
+[[div class="top-box"]]
+[[div class="top-left-box"]]
+[[span class="item"]]ITEM#:[[/span]] [[span class="number"]]SCP-002-J (SAMPLE)[[/span]]
+[[/div]]
+[[div class="top-center-box"]]
+[[div class="bar-one"]]
+[[/div]]
+[[div class="bar-two"]]
+[[/div]]
+[[div class="bar-three"]]
+[[/div]]
+[[div class="bar-four"]]
+[[/div]]
+[[div class="bar-five"]]
+[[/div]]
+[[div class="bar-six"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[div class="bar-sixty-nine"]]
+[[/div]]
+[[/div]]
+[[div class="top-right-box"]]
+[[div class="level"]]
+LEVEL 5
+[[/div]]
+[[div class="clearance"]]
+[[/div]]
+[[/div]]
+[[/div]]
+[[div class="bottom-box"]]
+[[div class="text-part"]]
+[[div class="main-class"]]
+[[div class="contain-class"]]
+[[div class="class-category"]]
+CONTAINMENT CLASS:
+[[/div]]
+[[div class="class-text"]]
+KETER
+[[/div]]
+[[/div]]
+[[/div]]
+[[div class="disrupt-class"]]
+[[div class="class-category"]]
+DISRUPTION CLASS:
+[[/div]]
+[[div class="class-text"]]
+VLAM
+[[/div]]
+[[/div]]
+[[div class="risk-class"]]
+[[div class="class-category"]]
+RISK CLASS:
+[[/div]]
+[[div class="class-text"]]
+WARNING
+[[/div]]
+[[/div]]
+[[/div]]
+[[div class="diamond-part"]]
+[[div class="danger-diamond"]]
+[[div class="arrows"]]
+[[/div]]
+[[div class="octagon"]]
+[[/div]]
+[[div class="quadrants"]]
+[[div class="top-quad"]]
+[[/div]]
+[[div class="right-quad"]]
+[[/div]]
+[[div class="left-quad"]]
+[[/div]]
+[[div class="bottom-quad"]]
+[[/div]]
+[[/div]]
+[[div class="top-icon"]]
+[[/div]]
+[[div class="right-icon"]]
+[[/div]]
+[[div class="left-icon"]]
+[[/div]]
+[[div class="bottom-icon"]]
+[[/div]]
+[[/div]]
+[[/div]]
+[[/div]]
+[[/div]]
+[[/div]]
+
+エソテリック変種（anom-bar-esoteric）:
+
+[[div class="anom-bar-esoteric"]]
+[[div class="text-part"]]
+[[div class="main-class"]]
+[[div class="contain-class"]]
+[[div class="class-category"]]
+CONTAINMENT CLASS:
+[[/div]]
+[[div class="class-text"]]
+ESOTERIC
+[[/div]]
+[[/div]]
+[[div class="second-class"]]
+[[div class="class-category"]]
+SECONDARY CLASS:
+[[/div]]
+[[div class="class-text"]]
+TICONDEROGA
+[[/div]]
+[[/div]]
+[[/div]]
+[[div class="disrupt-class"]]
+[[div class="class-category"]]
+DISRUPTION CLASS:
+[[/div]]
+[[div class="class-text"]]
+AMIDA
+[[/div]]
+[[/div]]
+[[div class="risk-class"]]
+[[div class="class-category"]]
+RISK CLASS:
+[[/div]]
+[[div class="class-text"]]
+CRITICAL
+[[/div]]
+[[/div]]
+[[/div]]
+[[/div]]
+++ 22. Basalt 著者ボックス
+
+[[div class="authorbox"]]
+|| [[image https://sigma10-jp-test.wdfiles.com/local--files/theme-decoration-sample/test-image.png width="120px"]] || [[span class="authorlink-wrapper"]]**著者:** Dr. Kiryu（サンプル著者）[[/span]] [[span class="description"]]この著者は収容手順と分類文書を専門としています。Author of the containment procedures cited in this sample entry.[[/span]] ||
+[[/div]]
+
+++ 23. Basalt 表スタイル
+
+[[div class="table1"]]
+||~ 見出し ||~ 値 ||
+|| 表1セル1 || 値1 ||
+|| 表1セル2 || 値2 ||
+[[/div]]
+
+[[div class="table2"]]
+||~ 見出し ||~ 値 ||
+|| 表2セル1 || 値1 ||
+|| 表2セル2 || 値2 ||
+[[/div]]
+
+[[div class="table3"]]
+||~ 見出し ||~ 値 ||
+|| 表3セル1 || 値1 ||
+|| 表3セル2 || 値2 ||
+[[/div]]
+
+[[div class="table4"]]
+||~ 見出し ||~ 値 ||
+|| 表4セル1 || 値1 ||
+|| 表4セル2 || 値2 ||
+[[/div]]
+
+[[div class="table5"]]
+||~ 見出し ||~ 値 ||
+|| 表5セル1 || 値1 ||
+|| 表5セル2 || 値2 ||
+[[/div]]
+
+[[div class="table6"]]
+||~ 見出し ||~ 値 ||
+|| 表6セル1 || 値1 ||
+|| 表6セル2 || 値2 ||
+[[/div]]
+
+枠なし表（table-no-border）:
+
+[[div class="table-no-border"]]
+||~ 項目 ||~ 値 ||
+|| 枠なしセル1 || 値1 ||
+|| 枠なしセル2 || 値2 ||
+[[/div]]
+
+標準表（wiki-content-table）:
+
+[[div class="wiki-content-table"]]
+||~ 項目 ||~ 値 ||
+|| 標準セル1 || 値1 ||
+|| 標準セル2 || 値2 ||
+[[/div]]
+
+++ 24. Basalt ノート・文書ブロック
+
+[[div class="papernote"]]
+紙のメモ風ブロックです。現場職員が残した手書きメモの体裁を確認します。Paper note body: the night shift reported a humming noise near the containment door.
+[[/div]]
+
+[[div class="wiki-note"]]
+ウィキノート: この項目は現在改訂中です。内容は暫定版として扱ってください。Wiki note body in English for the same block.
+[[/div]]
+
+[[div class="floatbox right"]]
+フロートボックス: 本文の脇に寄せて表示される小さな情報箱です。
+[[/div]]
+
+フロートボックスの横に続く本文です。数行分の長さを持たせて、回り込みと余白の様子を確認できるようにします。本文はさらに続き、フロートボックスの下端を過ぎたところで通常の行長に戻ります。追加の一文で数行を確保します。
+
+[[div style="clear: both;"]]
+[[/div]]
+
+書き起こし（transcript）:
+
+[[div class="transcript"]]
+**記録音声 002-J-A 書き起こし**
+職員A: 扉の前で待機しています。異常はありません。
+職員B: 了解。そのまま監視を続けてください。
+Transcript body continues: no further anomalies were observed during the watch.
+[[/div]]
+
+暗い文書（darkdocument）:
+
+[[div class="darkdocument"]]
+**機密文書（ダーク）** 暗い背景の文書ブロックです。この記録はレベル4以上の職員のみ閲覧できます。Dark document body: this record is restricted to Level 4 personnel and above.
+[[/div]]
+
+通常文書（document）:
+
+[[div class="document"]]
+**通常文書** 明るい背景の文書ブロックです。暗い変種との対比を確認します。Document body text for contrast with the dark variant.
+[[/div]]
+
+++ 25. リストの深い入れ子
+
+混在した深いリスト:
+
+* レベル1（箇条書きA）
+ * # レベル2（番号付き1）
+ * # レベル2（番号付き2）
+ * レベル2（箇条書き）
+  * レベル3（箇条書き）
+   # レベル4（番号付き1）
+   # レベル4（番号付き2）
+  * レベル3（箇条書き2）
+ * レベル2（続き）
+* レベル1（箇条書きB）
+
+定義リスト（4項目）:
+
+: 収容クラス : 対象を収容する手順の分類です。
+: 撹乱クラス : 対象が社会へ与える撹乱の度合いです。
+: リスククラス : 対象への接近に伴うリスクの度合いです。
+: クリアランス : 情報へアクセスするために必要な権限レベルです。
+
+++ 26. 大きな表
+
+幅広い表（8列）:
+
+||~ 列A ||~ 列B ||~ 列C ||~ 列D ||~ 列E ||~ 列F ||~ 列G ||~ 列H ||
+|| a1 || b1 || c1 || d1 || e1 || f1 || g1 || h1 ||
+|| a2 || b2 || c2 || d2 || e2 || f2 || g2 || h2 ||
+|| a3 || b3 || c3 || d3 || e3 || f3 || g3 || h3 ||
+
+長い表（15行）:
+
+||~ 番号 ||~ 状態 ||~ 備考 ||
+|| 01 || active || 行1です ||
+|| 02 || active || 行2です ||
+|| 03 || archived || 行3です ||
+|| 04 || active || 行4です ||
+|| 05 || active || 行5です ||
+|| 06 || pending || 行6です ||
+|| 07 || active || 行7です ||
+|| 08 || archived || 行8です ||
+|| 09 || active || 行9です ||
+|| 10 || active || 行10です ||
+|| 11 || pending || 行11です ||
+|| 12 || active || 行12です ||
+|| 13 || archived || 行13です ||
+|| 14 || active || 行14です ||
+|| 15 || active || 行15です ||
+
+画像と collapsible を含む表:
+
+||~ 項目 ||~ 内容 ||
+|| 画像セル || [[image https://sigma10-jp-test.wdfiles.com/local--files/theme-decoration-sample/test-image.png width="120px"]] ||
+
+collapsible の中に表を入れた例:
+
+[[collapsible show="表を含むcollapsible" hide="閉じる"]]
+||~ 項目 ||~ 内容 ||
+|| テキストセル || セル内の折りたたみ本文です。 ||
+[[/collapsible]]
+
+++ 27. 脚注と参考文献の配置
+
+((bibcite sampleops)) 文頭の引用です。収容手順の標準化については運用ハンドブックを参照します。
+
+本文の途中への引用を置いた段落です。分類の根拠は ((bibcite sampleref)) にまとめられており、関連する議論もそこに集約されています。引用が文の流れの中でどう描かれるかを確認します。
+
+観測記録の引用は文末に置きます。詳細な観測ログは付録を参照してください ((bibcite samplelog))
+
+[[collapsible show="脚注を含むcollapsible" hide="閉じる"]]
+折りたたみの中の脚注です。[[footnote]]collapsible 内の脚注本文です。[[/footnote]]脚注がページ全体の脚注並びに組み込まれることを確認します。
+[[/collapsible]]
+
+脚注を含む表:
+
+||~ 項目 ||~ 備考 ||
+|| セル内脚注 || 脚注付きのセルです。[[footnote]]表のセル内の脚注本文です。[[/footnote]] ||
+|| 通常セル || 脚注なしのセルです。 ||
+
+++ 28. タブと見出しの組み合わせ
+
+[[tabview]]
+[[tab 表を含むタブ]]
+||~ 列1 ||~ 列2 ||
+|| タブ内表1 || 値1 ||
+|| タブ内表2 || 値2 ||
+[[/tab]]
+[[tab collapsibleを含むタブ]]
+[[collapsible show="タブ内のcollapsible" hide="閉じる" folded="no"]]
+タブの中の折りたたみ本文です。
+[[/collapsible]]
+[[/tab]]
+[[tab 通常タブ]]
+通常のタブ本文です。段落と **太字** を含みます。
+[[/tab]]
+[[/tabview]]
+
++++ [[[scp-002-j|リンク]]] と **太字** と [[span style="color:#0066cc"]]色付きspan[[/span]] を含む見出し
+
++++ 見出しの直後に置かれた表
+
+||~ 直後表 ||~ 値 ||
+|| 行1 || 1 ||
+|| 行2 || 2 ||
+
++++ 見出しの直後に置かれたリスト
+
+* 直後リスト項目1
+* 直後リスト項目2
+
+++ 29. Black Highlighter 固有ブロック
+
+[[div class="note-block"]]
+ノートブロック: Black Highlighter の注記ブロックです。本文への補足を目立たせて表示します。Note block body in English.
+[[/div]]
+
+[[div class="warning-block"]]
+[[div class="title"]]
+警告: 収容違反のおそれ
+[[/div]]
+警告ブロックの本文です。タイトル帯と本文で構成されます。Warning block body: do not enter the containment chamber during a breach event.
+[[/div]]
+
+++ 31. Infoモジュール（info:start / info:end / component:info-cw）
+
+[[include :scp-wiki:info:start]]
+= SCP-XXXX — **装飾サンプル用ダミー記事**
+= Written by [[*user voted-fated-smuggler]]
+
+⚠️ **Content warning:** この記事には架空のセンシティブな内容が含まれます。以下は表示確認用のダミー項目です。
+
+@@ @@• ダミー項目1
+@@ @@• ダミー項目2
+
+本文を読む前に、警告内容を確認してください。
+[[include :scp-wiki:info:end]]
+
+[[include :scp-wiki:component:info-cw]]
+
+以上が装飾サンプルの全セクションです。
