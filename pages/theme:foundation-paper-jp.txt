@@ -1,0 +1,240 @@
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** 財団紙テーマ
+**翻訳責任者:** SCP-JP
+**翻訳年:** 2026
+**原題:** 재단지 테마
+**著作権者:** Denevola
+**作成年:** 2021
+**初訳時参照リビジョン:** 7
+**元記事リンク:** [*https://scpko.wikidot.com/theme:foundation-paper 재단지 테마]
+[[include :scp-jp:credit:end-preview]]
+
+SCP財団日本語版の[[[news|今月のニュース]]]向け専用テーマです。
+テーマのロゴ[[footnote]] Created by [[user Denevola]], [https://creativecommons.org/licenses/by-sa/3.0/deed.ja CC BY-SA 3.0] [[/footnote]]は、[https://commons.wikimedia.org/wiki/File:SCP_Foundation_(emblem).svg SCP財団エンブレム][[footnote]] Designed by [[user Aelanna]], [https://creativecommons.org/licenses/by-sa/3.0/deed.ja CC BY-SA 3.0] [[/footnote]]と[https://thenounproject.com/term/newspaper/1858229/ 新聞アイコン][[footnote]] Created by [https://thenounproject.com/vectorstall/ Vectorstall], [https://creativecommons.org/licenses/by/3.0/deed.ja CC BY 3.0] [[/footnote]]を組み合わせて作られています。
+
+++ 使用方法
+このテーマを適用したいページの先頭に、次の構文を貼り付けてください。
+[[div class="code"]]
+@@[[include :scp-jp:theme:foundation-paper]]@@
+[[/div]]
+
+++ 使用例
+水平線はハイフン5個「@@------@@」を入力すると作成されます。引用ブロックなどの内部にない場合、ページ全体を横切ります。このページで節を分けている線はすべてこの水平線です。
+
+-----
+
+見出しは、行頭に「+」を1個から6個まで入力して適用できます。
+
+[[collapsible show="▼ 見出し一覧" hide="▲ 閉じる"]]
++ 見出しレベル1
+
+++ 見出しレベル2
+
++++ 見出しレベル3
+
+++++ 見出しレベル4
+
++++++ 見出しレベル5
+
+++++++ 見出しレベル6
+[[/collapsible]]
+
+@@ @@
+
+[[tabview]]
+[[tab タブビュー]]
+最初のタブは「サイトニュース」が入る場所として、アイコンがあらかじめ設定されています。
++++ トピック
+タブビューの中に見出しレベル3,,（@@+++ テキスト@@）,,を挿入して作成します。
+* **作品ブロック**
+* タブビューの中にリスト,,（@@* テキスト@@）,,を挿入して作成します。
+[[/tab]]
+[[tab タブビュー]]
+2番目のタブは「今月の新作」が入る場所として、アイコンがあらかじめ設定されています。
+[[/tab]]
+[[tab タブビュー]]
+3番目のタブは「プロジェクト」が入る場所として、アイコンがあらかじめ設定されています。
+[[/tab]]
+[[tab タブビュー]]
+4番目以降のタブには、個別のアイコンは設定されていません。
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+𝐍𝐄𝐖𝐒
+[[/tab]]
+[[/tabview]]
+
+> これは引用文です。各行の先頭に「>」を入れると動作します。
+>
+> 文字
+> -----
+> 区切り線
+>
+>> 二重引用
+>>> 三重引用[[footnote]] そしてこれは脚注です！ [[/footnote]]
+
+||~ これは ||~ 表 ||
+|| 作り方は || もうご存じでしょう ||
+|||| と思います ||
+[[/iftags]]
+
+[[div [[iftags -テーマ]]style="display: none"[[/iftags]]]]
+++ ソースコード
+[[collapsible show="+ コードを表示" hide="- コードを隠す"]]
+[[include :scp-jp:component:toggle-sidebar]]
+[[module CSS show="true"]]
+/*
+    Foundation Paper Theme
+    [2021 Wikidot Theme]
+    Created by Denevola.
+    Based on Sigma-9 Theme created by Aelanna and Dr Devan.
+
+    SCP-JP版: 2026年に日本語版へ移植。
+    作成者: Denevola（韓国支部）。翻訳: SCP-JP。
+*/
+
+#header {
+    background-image: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Afoundation-paper-jp/logo.min.svg');
+}
+
+#header h1 a {
+    visibility: hidden;
+}
+
+#header h1 a::before {
+    visibility: visible;
+    content: 'SCPニュース';
+}
+
+#header h2 span {
+    visibility: hidden;
+}
+
+#header h2 span::before {
+    visibility: visible;
+    content: '迅速、正確、信頼';
+}
+
+#page-title {
+    display: none;
+}
+
+#page-content {
+    font-size: 1.1em;
+}
+
+#page-content img.image {
+    border: 2px solid white;
+    border-radius: .5em;
+    box-shadow: rgba(0, 0, 0, .35) 0 5px 15px;
+}
+
+#page-content img.image + br + [style="text-align: right;"] > p > sup {
+    opacity: .5;
+}
+
+.yui-navset .yui-nav,
+.yui-navset .yui-navset-top .yui-nav {
+    text-align: center;
+}
+
+.yui-navset .yui-nav li em::before {
+    margin-right: .5em;
+    font-family: 'FontAwesome';
+}
+
+.yui-navset .yui-nav li:nth-child(1) em::before {
+    content: '\f024';
+}
+
+.yui-navset .yui-nav li:nth-child(2) em::before {
+    content: '\f02d';
+}
+
+.yui-navset .yui-nav li:nth-child(3) em::before {
+    content: '\f135';
+}
+
+.yui-navset .yui-content,
+.yui-navset .yui-navset-top .yui-content {
+    padding: 1em 2em;
+    border-width: 1px 0 1px 0;
+    box-shadow: rgba(0, 0, 0, .35) 0 2px 5px;
+}
+
+.yui-navset .yui-content li,
+.yui-navset .yui-navset-top .yui-content li,
+.yui-navset .yui-content p,
+.yui-navset .yui-navset-top .yui-content p {
+    line-height: 160%
+}
+
+.yui-navset .yui-content li:not(:last-child),
+.yui-navset .yui-navset-top .yui-content li:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+.yui-navset .yui-content h3,
+.yui-navset .yui-navset-top .yui-content h3 {
+    display: inline-block;
+    position: relative;
+    margin-top: 2em;
+    margin-bottom: 0;
+    padding: .5rem;
+    background-color: rgb(119, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.yui-navset .yui-content h3::after,
+.yui-navset .yui-navset-top .yui-content h3::after {
+    position: absolute;
+    top: 0;
+    right: -2rem;
+    width: 2rem;
+    height: 100%;
+    background-color: rgb(119, 0, 0);
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+    content: '';
+}
+
+.yui-navset .yui-content ul,
+.yui-navset .yui-navset-top .yui-content ul {
+    padding: 1em 1em 1em 40px;
+    background-color: rgba(0, 0, 0, .06);
+}
+
+.footnotes-footer {
+    margin-top: 1em;
+    padding: 1em 2em 2em;
+    background-color: rgb(245, 245, 245);
+    border-color: rgb(128, 128, 128);
+    border-style: solid;
+    border-width: 1px 0;
+}
+
+@media (min-width: 768px) {
+    #main-content {
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 767px) {
+    .yui-navset .yui-content,
+    .yui-navset .yui-navset-top .yui-content {
+        box-shadow: none;
+    }
+}
+[[/module]]
+[[/collapsible]]
+[[/div]]
