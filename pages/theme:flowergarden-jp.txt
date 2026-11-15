@@ -1,0 +1,644 @@
+[[module CSS]]
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aflowergarden-jp/1');
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aflowergarden-jp/1
+]]
+
+[[iftags +テーマ]]
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** 花園テーマ
+**翻訳責任者:** SCP-JP
+**翻訳年:** 2026
+**原題:** 꽃밭 테마
+**著作権者:** [[*user thd-glasses]]
+**作成年:** 2021
+**初訳時参照リビジョン:** 57
+**元記事リンク:** [*https://scpko.wikidot.com/theme:flowergarden 꽃밭 테마]
+[[include :scp-jp:credit:end-preview]]
+
+これは[[[https://scpko.wikidot.com/seocheon-cc-hub|西天カントリークラブ（韓国語版）]]]専用のCSSテーマです。
+
++ 使い方
+このテーマを適用するには、ページの最上部に以下のコードを貼り付けてください。
+[[div class="blockquote codequote"]]
+@@[[include :scp-jp:theme:flowergarden]]@@
+[[/div]]
+
++ クラス（原語版に記載なし）
+原語版はこのテーマ固有のクラスについて説明を記載していません。どれも薄い色調のボックスで、次のクラスが定義されています。
+
+* .changhui / .munhui / .seunghui / .sahui / .segyeong / .maehwa / .guestbox（各色のメンバーボックス相当）
+* .frame（小さな右寄せのプロフィール枠）
+* .poem（二重線の飾り枠）
+
++ ソースコード
+[[collapsible show="+ コードを表示" hide="- コードを隠す" hideLocation="both"]]
+[[code type="css"]]
+/* [JP] KO原文のKorean Webフォント（GabiaBombaram / NapjakBlock / EBSHunminjeongeumSBA / BBTreeCB / GenKJwajinOTF-Rg / MapoDacapo / MapoFlowerIsland）は
+   いずれもGoogle Fontsに存在せず、許可されていない配信元でのみ提供されているため、SCP-JPでは
+   'Noto Serif JP' / 'Noto Sans JP'（Google Fonts）に置き換えています。 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap');
+
+ 
+/*
+sigma-9ベース 西天カントリークラブテーマ
+Ported for SCP-JP (theme:flowergarden rev 57)
+*/
+ 
+:root {
+  --header-logo: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aflowergarden-jp/scc.png) 0px 35px no-repeat;
+  --image-bg: repeat-x center/50% url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aflowergarden-jp/sky.png");
+  --color-sub: #2F9D27;
+  --color-ip: #0B7903;
+  --font: #FFF;
+  --shadow: #000;
+}
+
+@media (max-width: 676px) {
+  :root {
+    --image-bg: repeat-x center/100% url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aflowergarden-jp/sky.png");
+  }
+}
+
+@keyframes cloud{
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-100vw);
+  }
+}
+
+/* FORMAT */
+
+.changhui {color: #454545; background-color: #F2FAFF; border: solid 2px #E6EEF2; border-radius: 5px; padding: 0 1.5% 0; width: 97%; margin: 1.5% 0 0;}
+.munhui {color: #454545; background-color: #F2F2F2; border: solid 2px #E6E6E6; border-radius: 5px; padding: 0 1.5% 0; width: 97%; margin: 1.5% 0 0;}
+.seunghui {color: #454545; background-color: #FFF2FA; border: solid 2px #F2E6EE; border-radius: 5px; padding: 0 1.5% 0; width: 97%; margin: 1.5% 0 0;}
+.sahui {color: #454545; background-color: #FEFEFE; border: solid 2px #F2E6EE; border-radius: 5px; padding: 0 1.5% 0; width: 97%; margin: 1.5% 0 0;}
+.segyeong {color: #454545; background-color: #FFFAF2; border: solid 2px #F0EBE1; border-radius: 5px; padding: 0 1.5%; width: 97%; margin: 1.5% 0 0;}
+.maehwa {color: #454545; background-color: #F7FCED; border: solid 2px #EEF2E6; border-radius: 5px; padding: 0 1.5% 0; width: 97%; margin: 1.5% 0 0;}
+.guestbox {color: #454545; background-color: #FAFAFA; border: solid 2px #EFEFEF; border-radius: 5px; padding: 0 1.5% 0; width: 97%; margin: 1.5% 0 0;}
+
+.changhui strong, .changhui a, .changhui a:visited, .changhui a.newpage { color: navy }
+.munhui strong, .munhui a, .munhui a:visited, .munhui a.newpage { color: black }
+.seunghui strong, .seunghui a, .seunghui a:visited, .seunghui a.newpage { color: deeppink }
+.sahui strong, .sahui a, .sahui a:visited, .sahui a.newpage { color: crimson }
+.segyeong strong, .segyeong a, .segyeong a:visited, .segyeong a.newpage { color: maroon }
+.maehwa strong, .maehwa a, .maehwa a:visited, .maehwa a.newpage { color: green }
+.guestbox strong, .guestbox a, .guestbox a:visited, .guestbox a.newpage { color: black }
+
+.frame {font-family: 'Noto Sans JP', 'Hiragino Sans', sans-serif; /* [JP] */ font-size: 14px; background: white; border: solid 2px #dedede; float: right; width: 130px; text-align: center; margin-top: 5px; margin-left: 1.5%; padding: 7px;}
+ 
+/* COMMON */
+ #content-wrap {
+     min-height:1700px;
+     height: auto;
+}
+ 
+ h1, #page-title {
+     font-family: 'Noto Serif JP', 'Hiragino Mincho ProN', serif; /* [JP] */
+     color: var(--color-ip);
+}
+ 
+ #page-title {
+     text-align: center;
+     border: double var(--color-ip) !important;
+     border-width: 5px 0 5px 0 !important;
+     padding: 5px;
+}
+ 
+/* links */
+ 
+ a, #side-bar a {
+     color: var(--color-ip);
+}
+ 
+ a:visited {
+     color: var(--color-ip);
+}
+ 
+ a.newpage {
+     color: var(--color-ip);
+     filter: opacity(60%);
+}
+ 
+ body, #skrollr-body {
+     background-color: #FFF;
+     color: #000;
+
+     overflow-x: hidden;
+}
+ 
+/* HEADER */
+div#container-wrap {
+    background: none;
+}
+ 
+div#extra-div-1 {
+    height: 140px;
+    width: 200vw;
+    top: 0;
+    position: absolute;
+    background: var(--image-bg);
+    animation: cloud 75s linear infinite;
+    filter: contrast(1.15) brightness(1.05);
+}
+ 
+div#extra-div-2 {
+    height: 22px;
+    width: 100%;
+    top: 140px;
+    position: absolute;
+    background: var(--color-ip);
+}
+ 
+ #search-top-box-input {
+     border: transparent;
+     background-color: var(--font);
+}
+ 
+ #search-top-box-input:hover, #search-top-box-input:focus {
+     border: solid 0.5px #888;
+     background-color: var(--font);
+}
+ 
+ #search-top-box-form input[type=submit] {
+     border: transparent;
+     color: var(--font);
+     text-shadow: 0 0 3px var(--shadow);
+     background:  var(--color-ip) !important;
+}
+ 
+#search-top-box-form input[type=submit]:hover, #search-top-box-form input[type=submit]:focus {
+     border: solid 0.5px #FFF;
+     color: var(--font);
+     background: var(--color-ip) !important;
+}
+ 
+ #login-status {
+     color: var(--shadow);
+}
+ 
+ #login-status a {
+     color: var(--shadow);
+}
+ 
+ #login-status ul a {
+     color: #444;
+     text-shadow: none;
+}
+ 
+ #header  {
+     background: none;
+}
+ 
+ div#header-extra-div-1 {
+     background: var(--header-logo);
+     background-size: 200px;
+ 
+     position: absolute;
+     top: 0px; bottom: 0px; left: 0px;
+     width: 200px;
+}
+ 
+ #header h1 a {
+     color: transparent;
+     font-family: 'Noto Serif JP', 'Hiragino Mincho ProN', serif; /* [JP] */
+     font-size: 150%;
+     text-shadow: none;
+     letter-spacing: 0.5px; /* [JP] */
+}
+ 
+ #header h1 a::before {
+     content: "西天カントリークラブ"; /* [JP] */
+     color: var(--color-ip);
+  /*   text-shadow: 0 -3px var(--color-ip), 0 3px var(--color-ip), 3px 0 var(--color-ip), -3px 0 var(--color-ip), 2px 2px var(--color-ip), 2px -2px var(--color-ip), -2px 2px var(--color-ip), -2px -2px var(--color-ip); */
+}
+ 
+ #header h2 span {
+     color: transparent;
+     font-family: 'Noto Serif JP', 'Hiragino Mincho ProN', serif; /* [JP] */
+     font-size: 110%;
+     text-shadow: none;
+     margin-left: -10px; /* [JP] */
+}
+ 
+ #header h2 span::before {
+     content: "聖なるスポーツ・芳しい休養・吉祥の社交"; /* [JP] */
+     letter-spacing: -1px;
+     color: var(--color-sub);
+   /*  text-shadow: 1.5px 0 var(--shadow), -1.5px 0 var(--shadow), 0 1.5px var(--shadow), 0 -1.5px var(--shadow), 1px 1px var(--shadow), -1px 1px var(--shadow), 1px -1px var(--shadow), -1px -1px var(--shadow); */
+}
+ 
+ #top-bar a {
+     color: #FFF;
+}
+ 
+ #top-bar ul li ul {
+     border: solid 1px #EEE;
+     box-shadow: none;
+}
+ 
+ #top-bar ul li.sfhover a, #top-bar ul li:hover a {
+     background: #EEE;
+     color: #444;
+}
+ 
+ #top-bar ul li.sfhover ul li a, #top-bar ul li:hover ul li a {
+     border-top: 1px solid #EEE;
+}
+ 
+ #top-bar ul li.sfhover a:hover, #top-bar ul li:hover a:hover {
+     background: #DDD;
+}
+ 
+ #top-bar ul li ul a, #top-bar a:hover {
+     color: #444;
+}
+ 
+/* SIDE MENU */
+ #side-bar, #side-bar:target {
+     background: #FFF;
+    border: double var(--color-ip);
+}
+
+  #side-bar { border-width: 0 5px 5px 5px; }
+  #side-bar:target { border-width: 0 5px 0 5px; }
+
+ #side-bar .side-block .menu-item img {
+  display: none;
+}
+ 
+ #side-bar div.side-block:nth-child(4) > div:nth-child(1) > div:nth-child(1) img {
+     filter: none;
+     -webkit-filter: none;
+}
+ 
+#side-bar .side-block {
+  border: none;
+  background: #FFF !important;
+  box-shadow: none !important;
+}
+ 
+ #side-bar .heading {
+     color: var(--color-ip);
+     border-bottom: solid 1px var(--color-ip);
+}
+ 
+ #side-bar div.menu-item.inactive a {
+     color: var(--color-ip);
+}
+ 
+ #side-bar div.menu-item .sub-text {
+     color: var(--color-ip);
+}
+ 
+ #side-bar .collapsible-block-folded {
+     background: #FFF;
+}
+ 
+ #side-bar .collapsible-block-unfolded-link {
+     border-bottom: solid 1px var(--color-ip);
+}
+ 
+ #side-bar .collapsible-block-unfolded-link .collapsible-block-link {
+     color: var(--color-ip);
+}
+ 
+ #side-bar .collapsible-block-unfolded-link .collapsible-block-link:hover {
+     color: var(--color-ip);
+}
+
+#side-bar:target .close-menu {
+  left: 19.5em;
+  background: rgb(0,0,0,0);
+}
+
+#top-bar .open-menu a {
+  border-color: #5CA443;
+  color: #5CA443;
+  font-weight: 900;
+}
+
+/* POEM & YUI-TABS */
+.poem {
+    font-family: 'Noto Serif JP', verdana, sans-serif; /* [JP] */
+    font-size: 15px;
+    font-weight: normal;
+    text-shadow: 0px 0px 10px green;
+    color: #005000;
+
+    border: double 5px lightgrey;
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    background-color: #F9FFF7;
+}
+
+.poem, .yui-navset .yui-content {
+    background-repeat: no-repeat;
+    background-size: 60px;
+    background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aflowergarden-jp/deco.png), url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aflowergarden-jp/deco2.png), url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aflowergarden-jp/deco3.png), url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aflowergarden-jp/deco4.png);
+    background-position: top left, bottom left, bottom right, top right;
+}
+
+.yui-nav {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+ 
+.yui-nav li {
+  display: flex;
+  flex-grow: 2;
+  margin: 0;
+}
+ 
+.yui-nav li a {
+  width: 100%;
+  text-align: center;
+}
+
+.yui-navset .yui-content {
+    padding: 5em 20px;
+    border: double 5px lightgrey;
+    background-color: #FDFFFC;
+}
+
+ .yui-navset .yui-nav a, .yui-navset .yui-navset-top .yui-nav a {
+    font-family: 'Noto Sans JP', verdana, sans-serif; /* [JP] */
+    font-size: 1.2em;
+    background: #F9FFF7 url(none) repeat-x;
+    border-top: none;
+    border-left: solid #A3A3A3 0.5px;
+    border-right: solid #A3A3A3 0.5px;
+    color: var(--color-ip);
+}
+
+ .yui-navset .yui-nav .selected a,
+ .yui-navset .yui-nav .selected a:focus, /* no focus effect for selected */
+ .yui-navset .yui-nav .selected a:hover { /* no hover effect for selected */
+     background: var(--color-ip); /* selected tab background */
+     color: #FFF;
+}
+ 
+ .yui-navset .yui-nav a:hover,
+ .yui-navset .yui-nav a:focus {
+     background: #83BC7E;
+     color: #FFF;
+     text-decoration: none;
+}
+ .yui-navset .yui-nav,
+ .yui-navset .yui-navset-top .yui-nav {
+     border-width: 0;
+} 
+
+/* Quote and Table */
+
+blockquote, div.blockquote {
+  background-color: #FDFFFC;
+  border: dashed 1px var(--color-sub);
+  border-top: double 3px var(--color-ip);
+  border-bottom: double 3px var(--color-ip);
+}
+
+.codequote {
+  font-family: 'Andale Mono', 'Courier New', "Nanum Gothic Coding", Courier, monospace;
+}
+
+table.wiki-content-table th {
+  color: var(--color-ip);
+  background-color: #F9FFF7;
+  border-color: DarkSeaGreen;
+  border-top: double 3px var(--color-ip);
+  border-bottom: double 3px var(--color-ip);
+}
+
+table.wiki-content-table td {
+  border-color: DarkSeaGreen;
+}
+
+/* Rating Module */
+ .page-rate-widget-box{
+     box-shadow: none;
+}
+ 
+ .page-rate-widget-box .rate-points {
+     background-color: var(--color-ip) !important;
+     border: solid 1px var(--color-ip);
+     color: var(--font);
+}
+ 
+ .page-rate-widget-box .rateup, .page-rate-widget-box .ratedown {
+     background-color: var(--color-ip);
+     border-top: solid 1px var(--color-ip);
+     border-bottom: solid 1px var(--color-ip);
+}
+ 
+ .page-rate-widget-box .rateup a, .page-rate-widget-box .ratedown a {
+     color: var(--font);
+}
+ 
+ .page-rate-widget-box .rateup a:hover, .page-rate-widget-box .ratedown a:hover {
+     background: var(--color-ip);
+     color: var(--color-sub);
+}
+ 
+ .page-rate-widget-box .cancel {
+     background-color: var(--color-ip);
+     border: solid 1px var(--color-ip);
+}
+ 
+ .page-rate-widget-box .cancel a {
+     color: var(--font);
+}
+ 
+ .page-rate-widget-box .cancel a:hover {
+     background-color: var(--color-ip);
+     color: var(--color-sub);
+}
+ 
+/* Info Rating Module */
+ 
+ .rate-box-with-credit-button {
+     background-color: var(--color-ip) !important;
+     border: 1px solid var(--color-ip) !important;
+     border-radius: 5px !important;
+     box-shadow: none !important;
+}
+ 
+ .rate-box-with-credit-button .creditButton p a {
+     border-left-color: var(--color-ip) !important;
+     color: var(--font);
+}
+ 
+ .rate-box-with-credit-button .creditButton p a:hover {
+     color: var(--color-sub);
+}
+ 
+ .rate-box-with-credit-button .page-rate-widget-box .cancel {
+     border-radius: 0;
+}
+ 
+ .rate-box-with-credit-button .page-rate-widget-box .rate-points {
+     border-left: 0;
+}
+ 
+/* Heritage Collection Rating Module */
+ 
+ .heritage-rating-module {
+     background-color: var(--color-ip);
+     box-shadow: none;
+}
+ 
+/* Mobile Media Query */
+ @media (max-width: 479px) {
+     div#header-extra-div-1 {
+         background-size: 100px auto;
+         width: 100px;
+         transform: translate(-10px, 12px);
+    }
+     #header h1 a {
+         font-size: 120%;
+    }
+     #header h2 span {
+         font-size:90%;
+         letter-spacing: -1px;
+    }
+     #header h1, #header h2 {
+         margin-left: 100px;
+    }
+}
+/* Small Mobile Media Query */
+ @media (max-width: 385px) {
+     div#header-extra-div-1 {
+         background-size: 70px auto;
+         width: 70px;
+        transform: translate(0, 35px);
+    }
+     #header h1, #header h2 {
+         margin-left: -webkit-calc(66px + 5%);
+         margin-left: -moz-calc(66px + 5%);
+         margin-left: calc(66px + 5%);
+    }
+     #header h2 span {
+         letter-spacing: -2px;
+    }
+}
+/* Note Media Query */
+ @media (min-width: 480px) and (max-width: 580px) {
+     div#header-extra-div-1 {
+         background-size: 120px auto;
+         width: 120px;
+        transform: translate(-10px, 5px);
+    }
+     #header h1, #header h2 {
+         margin-left: 120px;
+    }
+}
+/* Mini Tablet Media Query */
+ @media (min-width: 581px) and (max-width: 767px) {
+     div#header-extra-div-1 {
+         background-size: 150px auto;
+         width: 150px;
+         transform: translate(-10px, 0);
+    }
+     #header h1 a {
+         font-size: 140%;
+    }
+     #header h1, #header h2 {
+         margin-left: 153px;
+    }
+}
+
+ @media (max-width: 767px) {
+    #search-top-box-input {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    div#header-extra-div-1 {
+        transform: translate(0, -30px);
+    }
+     #header h1, #header h2 {
+         margin-left: 223px;
+    }
+
+    #side-bar {
+        top: -2em;
+        padding-top: 3em;
+        padding-bottom: 1em;
+    }
+}
+
+/* --------< interwiki frame (原語版では display:none の非表示コードブロックだったものを、interwiki-style が参照する local--code/1 に統合) >-------- */
+#interwiki .side-block {
+  border: none;
+  box-shadow: none;
+}
+
+#interwiki .heading {
+  color: #0B7903;
+  border-bottom: solid 1px #0B7903;
+}
+
+#interwiki a:visited {
+  color: #0B7903;
+}
+
+#interwiki .menu-item img {
+  filter: hue-rotate(120deg);
+}
+[[/code]]
+[[/collapsible]]
+
+[[include :scp-jp:component:license-box-backend
+|author=thd-glasses]]
+
+> **ファイル名:** scc.png
+> **概要:** 西天カントリークラブのロゴ
+> **作者:** [[*user thd-glasses]]
+> **ライセンス:** 原語版に記載なし（投稿前に著者へ確認してください）
+> **出典:** [https://scpko.wikidot.com/local--files/theme%3Aflowergarden/scc.png SCP-KO]
+
+> **ファイル名:** sky.png
+> **概要:** ヘッダー上の空模様（cloudアニメーションで流れます）
+> **作者:** [[*user thd-glasses]]（加工素材を使用）
+> **ライセンス:** 原語版に記載なし（投稿前に著者へ確認してください）。素材はPixabay由来: [https://pixabay.com/ko/photos/%EA%B5%AC%EB%A6%84-%ED%95%98%EB%8A%98-%EB%B0%9D%EC%9D%80-%EC%9D%BC%EA%B4%91-%EB%B9%9B-1282314/ Pixabay]
+> **出典:** [https://scpko.wdfiles.com/local--files/theme%3Aflowergarden/sky.png SCP-KO]
+
+> **ファイル名:** deco.png
+> **概要:** 引用装飾（poem / タブ内容の角飾り）
+> **作者:** [[*user thd-glasses]]
+> **ライセンス:** 原語版に記載なし（投稿前に著者へ確認してください）
+> **出典:** [https://scpko.wdfiles.com/local--files/theme%3Aflowergarden/deco.png SCP-KO]
+
+> **ファイル名:** deco2.png
+> **概要:** 引用装飾（poem / タブ内容の角飾り）
+> **作者:** [[*user thd-glasses]]
+> **ライセンス:** 原語版に記載なし（投稿前に著者へ確認してください）
+> **出典:** [https://scpko.wdfiles.com/local--files/theme%3Aflowergarden/deco2.png SCP-KO]
+
+> **ファイル名:** deco3.png
+> **概要:** 引用装飾（poem / タブ内容の角飾り）
+> **作者:** [[*user thd-glasses]]
+> **ライセンス:** 原語版に記載なし（投稿前に著者へ確認してください）
+> **出典:** [https://scpko.wdfiles.com/local--files/theme%3Aflowergarden/deco3.png SCP-KO]
+
+> **ファイル名:** deco4.png
+> **概要:** 引用装飾（poem / タブ内容の角飾り）
+> **作者:** [[*user thd-glasses]]
+> **ライセンス:** 原語版に記載なし（投稿前に著者へ確認してください）
+> **出典:** [https://scpko.wdfiles.com/local--files/theme%3Aflowergarden/deco4.png SCP-KO]
+
+> **フォント:** Noto Serif JP / Noto Sans JP（Google Fonts、SIL Open Font License）。原語版が使用していたKorean Webフォントは配信元の都合により差し替えています。
+
+[[include :scp-jp:component:license-box-end]]
+
+[[/iftags]]
