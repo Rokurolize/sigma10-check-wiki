@@ -107,6 +107,495 @@
 
 タイトル・サブタイトル・ロゴ、あるいは配色全体を変更するには、[https://www.wikidot.com/doc-modules:css-module CSSモジュール]に以下のコードを挿入し、お好みに書き換えてください。たとえば次のコードを入れると、赤ではなく青の配色になります。
 
+[[code type="css"]]
+/*
+    Blood Theme
+    by ubergoober, 2026
+    Based on Sigma-9, from the SCP Wiki
+    Ported for SCP-JP (theme:blood rev 12)
+*/
+
+/* ---- VARS ---- */
+:root {
+
+    --header-title: "SCP Foundation";
+    --header-subtitle: "Secure, Contain, Protect";
+    --lgurl: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Ablood-jp/logo.svg);
+
+    --header-color: #661d1d;
+    --subtitle-color: white;
+    --background-color: #191919;
+
+    --accent-color: #f54242;
+    --visited-color: #D25B5B;
+    --bright-color: #C03535;
+    --dark-color: #6d0000;
+    --darker-color: #4c1717;
+}
+
+/* ---- SITE BANNER ---- */
+div#container-wrap {
+    background-image: none;
+}
+
+#header,
+div#header {
+    background-image: none;
+}
+
+#header::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    margin-top: 0.5em;
+    background-image: var(--lgurl);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: auto 9em;
+    opacity: .33;
+}
+
+#header h1,
+#header h2 {
+    float: none;
+    margin-left: 0;
+    text-align: center;
+}
+
+#header h1 span,
+#header h2 span {
+    display: none;
+}
+
+#header h1 a::before {
+    position: relative;
+    bottom: .15em;
+    color: var(--title-color);
+    font-size: 115%;
+    font-weight: 700;
+    content: var(--header-title);
+}
+
+#header h2::before {
+    position: relative;
+    top: .1em;
+    color: var(--subtitle-color);
+    font-size: 130%;
+    font-weight: 600;
+    content: var(--header-subtitle);
+}
+
+/* ---- TOP BAR ---- */
+#top-bar {
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#top-bar ul li ul {
+    border-bottom: 1px solid hsl(0, 0%, 40%);
+    box-shadow: none;
+}
+
+/* ---- BODY ---- */
+#container {
+    background: linear-gradient(to bottom, var(--header-color), var(--background-color) 200px);
+}
+
+body {
+    background: var(--background-color);
+    color: #f9f9f9;
+}
+
+/* -- Link Colors -- */
+
+a {
+    color: var(--accent-color);
+}
+
+ a:visited {
+    color: var(--visited-color);
+}
+
+a.newpage {
+    color: #e67b3e;
+}
+
+.hovertip {
+    background: var(--background-color);
+    border: 1px solid #808080;
+}
+
+/* ----SIDEBAR ---- */
+#side-bar a,
+#side-bar a:visited,
+#side-bar a.newpage,
+#interwiki a,
+#interwiki a:visited,
+#interwiki a.newpage {
+    color: var(--accent-color);
+}
+
+#side-bar .heading, 
+#interwiki .heading {
+    border-bottom: solid 1px #999;
+    color: #999;
+}
+
+#side-bar .side-block,
+#side-bar .side-block.media,
+#side-bar .side-block.resources,
+#interwiki .side-block {
+    background: var(--background-color);
+    border-color: #808080;
+    box-shadow: none;
+}
+
+#interwiki {
+    background: transparent;
+}
+
+#interwiki body {
+    background-image: unset;
+}
+
+#top-bar .open-menu a {
+    background: #161616;
+}
+
+@media (max-width: 767px) {
+    #side-bar {
+        background-color: #332733;
+    }
+}
+
+#top-bar .open-menu a {
+    position: fixed;
+    top: 0.5em;
+    left: 0.5em;
+    z-index: 5;
+    font-family: 'Lucida Sans Unicode','Lucida Grande','Lucida Sans','Times New Roman',Helvetica,Roboto,sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    width: 30px;
+    height: 30px;
+    line-height: 0.9em;
+    text-align: center;
+    border: 0.2em solid #888;
+    background-color: #fff;
+    border-radius: 3em;
+    color: #888;
+    pointer-events: auto;
+}
+
+@media not all and (max-width: 767px) {
+    #top-bar .mobile-top-bar {
+        display: block;
+        pointer-events: none;
+    }
+
+    #top-bar .mobile-top-bar li {
+        display: none;
+    }
+
+    #main-content {
+        max-width: 44.5rem;
+        margin: 0 auto;
+        padding: 0;
+        transition: max-width 0.2s ease-in-out;
+    }
+
+    #side-bar {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -18rem;
+        width: 15.25rem;
+        height: 100%;
+        margin: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+        z-index: 10;
+        padding: 1em 1em 0 1em;
+        background-color: rgba(0,0,0,0.1);
+        transition: left 0.4s ease-in-out;
+        scrollbar-width: thin;
+    }
+
+    #side-bar:target,
+    #side-bar:focus-within {
+        left: 0;
+    }
+
+    #side-bar:target .close-menu {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        margin-left: 17rem;
+        opacity: 0;
+        z-index: -1;
+        visibility: visible;
+    }
+
+    #side-bar:not(:target) .close-menu {
+        display: none;
+    }
+
+    #top-bar .open-menu a:hover {
+        text-decoration: none;
+    }
+}
+
+/* -------------- PAGE ELEMENTS -------------- */
+/* -- Page Classes -- */
+
+blockquote,
+div.blockquote,
+.code,
+#lock-info {
+    background: #0e0e0e;
+    border: solid 1px #333;
+    color: white;
+}
+
+.divider {
+  display: block;
+  max-width: 100%;
+  border-top: 1.5px solid #aaa;
+  border-bottom: 1.5px solid #aaa;
+  text-align: center;
+  font-size: 125%;
+  font-weight: bold;
+  padding: 1em;
+  margin: 50px auto;
+}
+
+/* -- Images --*/
+
+/* uses :root hack to override base sigma priority */
+:root .scp-image-block {
+    margin-bottom: 2em;
+}
+
+.scp-image-block .scp-image-caption {
+    background-color: #111;
+    color: #f9f9f9;
+    padding: 5px;
+}
+
+/* -- Rate Module -- */
+div.page-rate-widget-box .rate-points {
+    background-color: var(--background-color) ;
+    border-color: #aaa9a9;
+    color: #aaa9a9;
+}
+
+div.page-rate-widget-box .rateup,
+div.page-rate-widget-box .ratedown {
+    background-color: #aaa9a9;
+    border-top-color: #aaa9a9;
+    border-bottom-color: #aaa9a9;
+}
+
+div.page-rate-widget-box .rateup a,
+div.page-rate-widget-box .ratedown a {
+    color: var(--background-color);
+}
+
+div.page-rate-widget-box .rateup a:hover,
+div.page-rate-widget-box .ratedown a:hover {
+    background: var(--background-color);
+    color: #aaa9a9;
+}
+
+div.page-rate-widget-box .cancel {
+    background-color: var(--background-color);
+    border-color: #aaa9a9;
+}
+
+div.page-rate-widget-box .cancel a {
+    color: #aaa9a9;
+}
+
+div.page-rate-widget-box .cancel a:hover {
+    background: #aaa9a9;
+    color: var(--background-color);
+}
+
+/* -- ToC -- */
+
+#toc {
+    background-color: #333;
+    border: none;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.8);
+}
+
+/* -- Info Module -- */
+#page-content .rate-box-with-credit-button {
+    background-color: var(--background-color);
+    border-color: #aaa9a9;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.5);
+}
+
+#page-content .creditButton p a {
+    border-left-color: #aaa9a9;
+}
+
+.rate-box-with-credit-button .cancel {
+    border-radius: 0;
+}
+
+#page-content .creditButton p a:hover {
+    color: var(--accent-color);
+}
+
+div.modalbox {
+    background: linear-gradient(#0e0e0e 51px, var(--background-color) 51px, var(--background-color));
+}
+
+/* -- Titles -- */
+#page-title,
+.meta-title,
+h1 {
+    color: var(--accent-color);
+}
+
+/* -- Tables -- */
+
+table.wiki-content-table {
+    margin: 2em auto;
+}
+
+table.wiki-content-table tr td,
+table.wiki-content-table tr th {
+    border: solid 1px #333;
+    color: white;
+}
+
+table.wiki-content-table tr th {
+    background: #0e0e0e; 
+}
+
+/* -- Tabviews -- */
+.yui-navset {
+    margin: 2em auto;
+}
+
+.yui-navset .yui-content, .yui-navset .yui-navset-top .yui-content {
+    background-color: #0e0e0e;
+    border-color: #aaa9a9;
+}
+
+.yui-navset .yui-nav a,
+.yui-navset .yui-navset-top .yui-nav a {
+    background: #373636;
+    color: white;
+}
+
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a em,
+.yui-navset .yui-nav .selected a:focus,
+.yui-navset .yui-nav .selected a:hover {
+    background: var(--dark-color);
+    border-color: #aaa9a9;
+}
+
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:focus {
+    background: var(--darker-color);
+}
+
+/* -- Footnote Box -- */
+div.footnote {
+  color: black;
+}
+
+/* -- Code Highlighting -- */
+/* code highlighter stuff */
+.hl-identifier,
+.hl-code,
+.hl-brackets {
+    color: #dddddd;
+}
+
+.hl-reserved {
+    color: #7895ff;
+}
+
+.hl-var {
+    color: #aa5dc2;
+}
+
+.hl-special,
+.hl-quotes {
+    color: #ff4545;
+}
+
+.hl-number,
+.hl-string {
+    color: #5dc267;
+}
+
+/* -- Other -- */
+del,
+ins {
+    color: #333;
+}
+
+.content.modal-body {
+    color: black;
+}
+
+/* ---- PAGE TITLE ---- */
+.meta-title,
+#page-title {
+    text-align: center;
+}
+
+/* ---- MOBILE DISPLAY ---- */
+@media (max-width: 767px) {
+    #search-top-box {
+        top: 1.85em;
+        width: unset;
+    }
+
+    .mobile-top-bar {
+        position: relative;
+        left: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    #login-status {
+        top: 0;
+        right: 0;
+    }
+
+    #header .printuser {
+        font-size: 0;
+    }
+
+    #header .printuser img.small {
+        margin: 0;
+        transform: translate(6px, 4px);
+    }
+
+    #my-account {
+        display: none;
+    }
+
+    #account-topbutton {
+        margin-left: 2px;
+    }
+}
+
+[[/code]]
+
 [[code type="css"]] 
 
 :root {
