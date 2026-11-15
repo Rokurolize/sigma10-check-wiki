@@ -1,0 +1,559 @@
+[[iftags]]
+[[include :scp-jp:theme:black-highlighter-theme]]
+[[/iftags]]
+
+[[iftags +テーマ]]
+
+[[module css]]
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css");
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css");
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css
+]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=2
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css
+]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** Magpie Swoops Theme
+**翻訳責任者:** SCP-JP
+**翻訳年:** 2026
+**原題:** Magpie Swoops Theme
+**著作権者:** Sinking_Otter
+**作成年:** 2025
+**初訳時参照リビジョン:** 12
+**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:magpie-swoops Magpie Swoops Theme]
+[[include :scp-jp:credit:end-preview]]
+
+++ このテーマについて
+[[div class="blockquote"]]
+こんにちは！ これは**Magpie Swoopsテーマ**です。SCP世界内の小さなアマチュアホラー文芸誌/ウェブサイトであるMagpie Swoopsによって「書かれた」記事で使うため、[[*user Sinking_Otter]]が作成しました。着想元は、子どものころの私にとってのハロウィンです。オーストラリアで育ったため、10月ごろに店頭へプラスチック製のカボチャが少し並ぶ以外、本物のハロウィンはありませんでした。そのため、私のハロウィン体験の大半は、オンラインゲームのイベントと、図書館で借りたホラー系の本から来ていました。このテーマのデザインは、当時の記憶にまだ残っているものから着想を得ています。
+
+[[/div]]
+
+@@ @@
+------
+
+++ このテーマの使い方
+[[div class="blockquote"]]
+このテーマはBlack Highlighterを基礎にしています。したがって、このテーマを使いたい場合は、あなたのページに以下のコードをincludeしてください。トグル式サイドバーは任意です。
+
+> @@[[include :scp-jp:theme:black-highlighter-theme]]@@
+> @@[[include :scp-jp:theme:magpie-swoops]]@@
+> @@[[include :scp-jp:component:toggle-sidebar-bhl]]@@
+
+[[/div]]
+
+@@ @@
+------
+
+++ テーマカラー
+
+[[include :scp-jp:component:theme-squares -=-
+| color1-name=パンプキンオレンジ
+| color1-variable=--pumpkin-orange
+| color1-info=(255, 103, 24)
+| color1-has-light-text=1
+| color2-name=スライムグリーン
+| color2-variable=--slime-green
+| color2-info=(144, 232, 38)
+| color2-has-light-text=0
+| color3-name=バイオレントバイオレット
+| color3-variable=--violent-violet
+| color3-info=(116, 28, 140)
+| color3-has-light-text=1
+| color4-name=チャコール
+| color4-variable=--charcoal
+| color4-info=(15, 15, 15)
+| color4-has-light-text=1
+| subcolor1-name= ボーンホワイト
+| subcolor1-variable=--bone-white
+| subcolor1-info=(242, 242, 242)
+| subcolor1-has-light-text=0
+| subcolor2-name= とても暗いボーングレー
+| subcolor2-variable=--very-dark-bone-grey
+| subcolor2-info=(125, 125, 125)
+| subcolor2-has-light-text=1
+| subcolor3-name= 明るいパンプキンオレンジ
+| subcolor3-variable=--light-pumpkin-orange
+| subcolor3-info=(255, 145, 23)
+| subcolor3-has-light-text=1
+| subcolor4-name= 焦げたパンプキンオレンジ
+| subcolor4-variable=--burnt-pumpkin-orange
+| subcolor4-info=(133, 69, 0)
+| subcolor4-has-light-text=1
+| subcolor5-name= 暗いバイオレントバイオレット
+| subcolor5-variable=--dark-violent-violet
+| subcolor5-info=(70, 0, 89)
+| subcolor5-has-light-text=1
+| subcolor6-name=明るいバイオレントバイオレット
+| subcolor6-variable=--light-violent-violet
+| subcolor6-info=(166, 77, 191)
+| subcolor6-has-light-text=1
+| subcolor7-name=影のバイオレントバイオレット
+| subcolor7-variable=--shadow-violent-violet
+| subcolor7-info=(150, 33, 193)
+| subcolor7-has-light-text=1
+| subcolor8-name=明るいスライムグリーン
+| subcolor8-variable=--light-slime-green
+| subcolor8-info=(37, 232, 83)
+| subcolor8-has-light-text=1
+| subcolor9-name=暗いスライムグリーン
+| subcolor9-variable=--dark-slime-green
+| subcolor9-info=(109, 176, 28)
+| subcolor9-has-light-text=1
+]]
+
+@@ @@
+
+------
+
+++ 使用例
+
+[[include :scp-jp:component:image-block
+|name=  https://scp-wiki.wikidot.com/local--files/theme%3Amagpie-swoops/magpieswoopslogo.png
+|caption=Magpie Swoopsロゴ
+|width=300px
+|align=right]]
+
+水平線は5つのハイフン「- - - - -」で作成されます。何かの中、例えば引用ブロックの中に置かれていない場合、ページ全体の幅に広がります。この文書の各ページを区切っている線も水平線です。[[footnote]]カササギフエガラスは、他の動物の声や、カメラ、車のアラームといった機械音を含む、ほかの音を真似できます。（ちなみに、脚注はこのように表示されます）[[/footnote]]
+
+[*https://scp-jp.wikidot.com/ これはあなたが以前訪れたことのあるリンクです]
+[[[あなたはこのリンクを訪れたことがありません。存在しないからです。]]]
+
+見出しは、行頭に1個から6個のプラス記号「+」を置くと作成できます
+
+[[collapsible show="+ 見出し例" hide="- 見出し例"]]
+++++++ 1つ目の見出し
++++++ 2つ目の見出し
+++++ 3つ目の見出し
++++ 4つ目の見出し
+++ 5つ目の見出し
++ 6つ目の見出し
+[[/collapsible]]
+
+[[collapsible show="+ これは折り畳みです" hide="- クリックで閉じます"]]
+急降下攻撃をしてくるカササギフエガラスは全体の約10%だけです。しかし自然と宇宙の法則により、彼らは常に、あなたにとって最も都合の悪い場所にいることになります。
+[[/collapsible]]
+
+@@ @@
+
+------
+[[tabview]]
+[[tab タビュレーター]]
+カササギフエガラスは地中の虫の音を聞き取れます。
+
+不気味でもあり、格好よくもあります。
+[[/tab]]
+[[tab タビュレーション]]
+カササギフエガラスは人間の顔を見分けます。
+
+誰を最初に急襲すべきか分かるようにするためです。
+[[/tab]]
+[[tab 長いタブの例]]
+たくさんの文章が入った長いタブです。
+
+たくさんの文章が入った長いタブです。
+
+たくさんの文章が入った長いタブです。
+
+たくさんの文章が入った長いタブです。
+
+たくさんの文章が入った長いタブです。
+
+たくさんの文章が入った長いタブです。
+
+たくさんの文章が入った長いタブです。
+
+たくさんの文章が入った長いタブです。
+
+たくさんの文章が入った長いタブです。
+
+たくさんの文章が入った長いタブです。
+
+たくさんの文章が入った長いタブです。
+
+たくさんの文章が入った長いタブです。
+
+たくさんの文章が入った長いタブです。
+
+たくさんの文章が入った長いタブです。
+
+たくさんの文章が入った長いタブです。
+
+たくさんの文章が入った長いタブです。
+
+たくさんの文章が入った長いタブです。
+
+たくさんの文章が入った長いタブです。
+[[/tab]]
+[[tab とてもとても長い名前を持つタブの例です。]]
+カササギフエガラスがあなたを本当に、本当に、本当に気に入ったなら、雛を紹介してくれます
+
+そして自分がパブへ行っているあいだ、あなたに子守りをさせます。
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[/tabview]]
+
+@@ @@
+
+||~ これは ||~ 表です ||
+|| あなたは || もう作り方を知っているはずです ||
+|||| たぶんね ||
+
+@@ @@
+------
+
+> これは引用ブロックです。各行の先頭に「> 」を置くと作れます。
+> カササギフエガラス豆知識をもう1つ書こうと思ったのですが、弾切れです。
+> ------
+> これは水平線です。前にも見ましたが、今度は引用ブロックの中にあります。
+>> これは引用ブロックの中にネストされた引用ブロックです。
+>>> これは引用ブロックの中の引用ブロックの中にネストされた引用ブロックです。たいへん洒落ています。
+
+@@ @@
+------
+++ テーマフォント
+[[=]]
+
+[[span style="font-family:var(--UI-font); font-size: calc(var(--base-font-size) * 2);"]]UIフォントはAveria Sans Libreです[[/span]]
+
+[[span style="font-family:var(--header-font); font-size: calc(var(--base-font-size) * 2);"]]ヘッダーフォントはCreepsterです[[/span]]
+
+[[span style="font-family:var(--title-font); font-size: calc(var(--base-font-size) * 2);"]]タイトルフォントはNew Rockerです[[/span]]
+
+[[span style="font-family:var(--mono-font); font-size: calc(var(--base-font-size) * 2);"]]等幅フォントはUbuntu Sans Monoです[[/span]]
+
+[[/=]]
+
+@@ @@
+------
+++ カスタムdiv
+[[collapsible show="+ カスタムdivを見る" hide="- カスタムdivを追い払う"]]
+
+[[div class="editors-note"]]
+このdiv classは、次のコードを使うと利用できます:
+>  @@[[div class="editors-note"]]@@
+> ここに本文やいろいろ
+>  @@[[/div]]@@
+[[/div]]
+
+[[div class="discount"]]
+このdiv classは、次のコードを使うと利用できます:
+> @@ [[div class="discount"]]@@
+> ここに本文やいろいろ
+> @@[[/div]]@@
+[[/div]]
+
+[[/collapsible]]
+
+@@ @@
+------
+++ テーマコード
+[[collapsible show="+ コードを表示" hide="- コードを閉じる"]]
+[[code type="css"]]
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+
+:root {
+    /* ===S-CSS-P統合=== */
+    /* 新しいCSSテーマを作る場合、最低でも次の3変数を含めてください。 */
+    --theme-base: "black-highlighter";
+    /* "black-highlighter"か"sigma9"のどちらかでなければなりません */
+    --theme-id: "magpie-swoops";
+    /* ここにはテーマページのURLを設定します。例えば"component:ar-theme"なら"ar-theme"にします */
+    --theme-name: "Magpie Swoopsテーマ";
+    /* ここにはテーマの正式名を設定します */
+
+
+/* ===ヘッダー要素=== */
+    --logo-image: url(" https://scp-wiki.wikidot.com/local--files/theme%3Amagpie-swoops/magpieswoopslogo.png");
+    --header-title: "Magpie Swoops";
+    --header-subtitle: "ヴェールの裏側からの物語";
+
+
+/* ===書体=== */
+    --UI-font: "Averia Sans Libre", "Hiragino Maru Gothic ProN", "Yu Gothic", sans-serif;
+    --header-font: "Creepster", "Yu Mincho", "Hiragino Mincho ProN", system-ui;
+    --title-font: "New Rocker", "Yu Gothic", system-ui;
+    --mono-font: "Ubuntu Sans Mono", "BIZ UDGothic", monospace;
+
+
+/* ===テーマカラー=== */
+
+/* ===白とグレー=== */
+    --bone-white: 242, 242, 242;
+    --very-dark-bone-grey: 125, 125, 125;
+
+/* ===オレンジ=== */
+    --pumpkin-orange: 255, 103, 24;
+    --light-pumpkin-orange: 255, 145, 23;
+    --burnt-pumpkin-orange: 133, 69, 0;
+
+
+/* ===紫=== */
+    --dark-violent-violet: 70, 0, 89;
+    --violent-violet: 116, 28, 140;
+     --light-violent-violet: 166, 77, 191;
+     --shadow-violent-violet: 150, 33, 193;
+
+/* ===緑=== */
+    --slime-green: 144, 232, 38;
+    --light-slime-green: 37, 232, 83;
+    --dark-slime-green: 109, 176, 28;
+
+/* ===黒=== */
+    --charcoal: 15, 15, 15;
+
+/* ===標準テーマカラーの代替=== */
+    --white-monochrome: var(--bone-white);
+    --pale-gray-monochrome: var(--charcoal);
+    --light-pale-gray-monochrome: var(--pumpkin-orange);
+    --very-light-gray-monochrome: var(--light-pumpkin-orange);
+    --light-gray-monochrome: var(--light-pumpkin-orange);
+    --gray-monochrome: var(--pumpkin-orange);
+    --dark-gray-monochrome: var(--very-dark-bone-grey);
+    --black-monochrome: var(--dark-slime-green);
+    --pale-accent: var(--light-pumpkin-orange);
+    --bright-accent: var(--burnt-pumpkin-orange);
+    --medium-accent: var(--burnt-pumpkin-orange);
+    --dark-accent: var(--dark-slime-green);
+    --alt-accent: var(--light-slime-green);
+
+/* ===通常テキスト色 === */
+        --swatch-text-general: var(--bone-white);
+
+/*  ===============================
+        ======= 個別カラー =======
+        ===============================
+
+/* ボタン、タブ、表、脚注のホバー/モーダルなどに使う色 */
+
+/* ===背景グラデーション=== */
+
+/* ===全体背景=== */
+/* ページ全体の背景色 */
+    --swatch-background: var(--charcoal);
+/* --gradient-background変数に使われるグラデーション色 */
+    --background-gradient-color: var(--dark-violent-violet);
+
+/* ===ヘッダーグラデーション=== */
+/* --gradient-header変数で使われるヘッダーグラデーションの色 */
+    --header-gradient-color-bottom: var(--dark-violent-violet);
+    --header-gradient-color-middle: var(--violent-violet);
+    --header-gradient-color-top: var(--light-violent-violet);
+
+/* ===主要グラデーション=== */
+        --diagonal-stripes: unset;
+
+/* ===トップバーグラデーション=== */
+/* トップバーに色を付ける--gradient-topmenu変数で使われる色 */
+    --swatch-topmenu-bg-color: var(--charcoal);
+    --swatch-topmenu-border-color: var(--pumpkin-orange);
+
+}
+
+#header {
+/* ===ヘッダー要素=== */
+/* ===ヘッダータイトル=== */
+/* ヘッダーH1とH2の色 */
+    --swatch-headerh1-color: var(--slime-green);
+
+/* ===ログインボックス要素=== */
+    --login-myaccount-underline-color: var(--slime-green);
+    --login-myaccount-hover-bg-color: var(--burnt-pumpkin-orange);
+
+/* 矢印をクリックしたときのドロップダウンボックス */
+    --login-dropdown-bg-color: var(--charcoal);
+    --login-dropdown-bg-image: var(--charcoal);
+    --login-dropdown-bg-hover-color: var(--burnt-pumpkin-orange);
+
+
+}
+
+/* ===ヘッダーのマージン/影=== */
+
+#header h1 a {
+    margin-top: calc(var(--header-height-on-desktop)/2 - 1em);
+}
+
+div#header h1 a:before {
+     text-shadow: 2px 2px rgb(var(--shadow-violent-violet));
+}
+
+/* ===ページタイトルとヘッダーの色変更=== */
+
+#page-title, h1,h2,h3,h4,h5,h6 {
+      color: rgb(var(--slime-green));
+
+}
+
+
+#top-bar {
+/* ===トップバー要素=== */
+
+/* ===トップバーカテゴリ=== */
+    --topmenu-category-color: var(--bone-white);
+    --topmenu-category-hover-color: var(--slime-green);
+    --topmenu-hover-border-color: var(--slime-green);
+
+
+/* ===ドロップダウンメニュー=== */
+    --dropdown-bg-color: var(--charcoal), 0.9;
+    --dropdown-border-color: var(--slime-green), 0.5;
+    --dropdown-links-color: var(--bone-white);
+    --dropdown-links-hover-color: var(--bone-white);
+    --dropdown-links-hover-bg-color: var(--dark-violent-violet);
+}
+
+#side-bar,
+#interwiki {
+
+/* ===サイドバー要素=== */
+
+/* ===サイドバー全般=== */
+        --sidebar-bg-color: var(--charcoal);
+        --sidebar-resources-bg-color: var(--charcoal), 0.25;
+        --sidebar-media-bg-color: var(--bone-white), 0.25;
+
+/* ===サイドブロックメニュー=== */
+    --sideblock-heading-text-color: var(--slime-green);
+
+
+/* ===メニュー項目=== */
+    --sidebar-links-text: var(--bone-white);
+    --sidebar-links-hover-bg-color: var(--burnt-pumpkin-orange);
+
+}
+
+/* ===フッター=== */
+#footer {
+    --footer-bg-color: var(--burnt-pumpkin-orange);
+    --footer-link-hover-color: var(--pumpkin-orange);
+}
+
+#main-content {
+/* ===本文エリアのUI要素 */
+
+/* ===UIアイコン=== */
+/* ===ページオプションアイコン=== */
+    --ui-icon-bg: var(--burnt-pumpkin-orange);
+
+/* ===テキストエディタアイコン=== */
+    --editor-icon-hover-color: var(--bone-white);
+
+
+/* ===タブ=== */
+    --tabs-selected-bg: var(--dark-violent-violet);
+    --tabs-selected-outline: var(--pumpkin-orange);
+    --tabs-bottom-border-color: var(--pumpkin-orange);
+    --tabs-content-border-color: var(--pumpkin-orange);
+
+
+/* ===表=== */
+    --tables-header-bg: var(--dark-violent-violet);
+
+
+/* ===脚注/参考文献フッター=== */
+    --footnotes-footer-colorbar-color: var(--burnt-pumpkin-orange);
+    --footnotes-footer-title-bg-color: var(--burnt-pumpkin-orange);
+
+/* ===目次=== */
+    --toc-header-bg-color: var(--burnt-pumpkin-orange);
+    --toc-header-text-color: var(--bone-white);
+    --toc-header-text-hover-color: var(--slime-green);
+
+    --toc-body-bg-color: var(--charcoal);
+    --toc-directory-lines-color: var(--slime-green);
+
+    --toc-body-link-color: var(--slime-green);
+
+
+/* ===ページタグ=== */
+    --pagetags-title-bg: var(--pumpkin-orange);
+
+}
+
+/* ===モーダル=== */
+
+:root {
+        --modal-header-bg: var(--charcoal);
+}
+
+/* ===画像ブロック=== */
+
+.scp-image-block {
+    box-shadow: none;
+}
+
+:is(div.image-block,div.scp-image-block) :is(.image-caption,.scp-image-caption) {
+    background-color: rgb(var(--burnt-pumpkin-orange));
+}
+
+/* スクロールバー色*/
+
+html,
+body {
+    scrollbar-color: rgb(var(--pumpkin-orange)) rgb(var(--dark-violent-violet));
+}
+
+/* 選択範囲色*/
+
+::selection {
+  background-color: rgb(var(--shadow-violent-violet));
+}
+
+
+/* ===カスタムdiv=== */
+
+.editors-note {
+    border: 3px ridge rgb(var(--slime-green));
+    padding: 1vh 1.5vw;
+    margin: 1vh 1vw;
+    box-shadow: 0.35vw 0.35vh rgb(var(--shadow-violent-violet));
+
+}
+
+.discount {
+    border: 7px dashed;
+    border-color: rgb(var(--slime-green)) rgb(var(--slime-green)) rgb(var(--shadow-violent-violet)) rgb(var(--shadow-violent-violet));
+    padding: 1vh 1.5vw;
+    margin: 5vh 0.5vw;
+    text-align: center;
+
+}
+[[/code]]
+[[/collapsible]]
+
+@@ @@
+
+
+[[/iftags]]
+
+[[include :scp-jp:component:toggle-sidebar-bhl]]
+
+[[module css]]
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Amagpie-swoops-jp/1")
+[[/module]]
+[[include :scp-jp:component:interwiki-style
+| priority=3
+| theme= https://sigma10-jp-test.wdfiles.com/local--code/theme%3Amagpie-swoops-jp/1
+]]
