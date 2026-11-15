@@ -1,0 +1,413 @@
+[[div style="display: none;"]]
+
+[[include theme:basalt-jp]]
+
+[[/div]]
+
+[[module CSS]]
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+JP:wght@100..900&display=swap');
+
+:root {
+    --header-title: "SITE-CN-209";
+    --header-subtitle: "学史 · 構築 · 記録";
+    --header-font-primary: 'Orbitron', 'Inter', 'Noto Sans JP', sans-serif;
+    --UI-font-primary: 'Inter', 'Noto Sans JP', sans-serif;
+    --body-font-primary: 'Inter', 'Noto Sans JP', sans-serif;
+    --basalt-primary-color: 8, 12, 18;
+    --basalt-secondary-color: 16, 24, 36;
+    --basalt-tertiary-color: 26, 38, 56;
+    --basalt-main-text-color: 220, 240, 255;
+    --basalt-sub-text-color: 160, 200, 230;
+    --basalt-undertone: 0, 255, 255;
+    --basalt-overtone: 30, 40, 60;
+    --basalt-bright-element-color: 64, 180, 255;
+    --basalt-dark-element-color: 0, 80, 120;
+    --general-border-color: 40, 60, 80;
+    --header-background-color: var(--basalt-primary-color);
+    --header-drop-shadow-opacity: 0.4;
+    --side-bar-background-color: var(--basalt-secondary-color);
+    --bottom-area-background-color: var(--basalt-primary-color);
+    /* Logo修正：Basaltダークモード公式Logoを使用 */
+    --logo: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Adeepspace-jp/basalt_scp_logo-for_darkmode.svg');
+    --scan-speed: 3s;
+    --scan-color: 0, 255, 255;
+}
+
+body {
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 40V0h40' stroke='rgba(0,255,255,0.06)' fill='none'/%3E%3C/svg%3E");
+    background-color: rgb(var(--basalt-primary-color));
+}
+
+#header {
+    border-bottom: 2px solid rgba(0, 255, 255, 0.3);
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.08);
+}
+
+#header h1 a span::before {
+    color: rgb(0, 255, 255);
+    font-weight: 900;
+}
+
+#header h1 a span::after {
+    color: rgb(160, 200, 230);
+    font-weight: 600;
+}
+
+a {
+    color: rgb(64, 180, 255);
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+a:hover {
+    color: rgb(0, 255, 255);
+    text-shadow: 0 0 16px rgba(0, 255, 255, 0.5);
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgb(0, 255, 255), transparent);
+    margin: 1.5rem 0;
+}
+
+div.blockquote, blockquote {
+    border-left: 4px solid rgb(0, 255, 255);
+    background: rgba(0, 255, 255, 0.03);
+    padding: 0.75rem 1.25rem;
+}
+
+div.papernote {
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(16, 24, 36, 0.85);
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    border-radius: 4px;
+    padding: 1.5rem 2rem;
+    color: rgb(var(--basalt-main-text-color));
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.05), inset 0 0 60px rgba(0, 255, 255, 0.02);
+    background-image:
+        linear-gradient(rgba(0, 255, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 255, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(rgba(16, 24, 36, 0.85), rgba(16, 24, 36, 0.85));
+    background-size: 20px 20px, 20px 20px, 100% 100%;
+    background-position: 0 0, 0 0, 0 0;
+    background-blend-mode: normal, normal, normal;
+}
+
+div.papernote::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg,
+        transparent 0%,
+        rgba(0, 255, 255, 0) 20%,
+        rgba(0, 255, 255, 0.6) 50%,
+        rgba(0, 255, 255, 0) 80%,
+        transparent 100%
+    );
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+    animation: scanline var(--scan-speed) linear infinite;
+    pointer-events: none;
+    z-index: 2;
+}
+
+@keyframes scanline {
+    0% {
+        top: -3px;
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    95% {
+        opacity: 0;
+    }
+    100% {
+        top: 100%;
+        opacity: 0;
+    }
+}
+
+div.papernote::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 30% 20%, rgba(0, 255, 255, 0.03), transparent 70%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+div.papernote > * {
+    position: relative;
+    z-index: 3;
+}
+
+/* ===== サイドバー管理用の色修正 ===== */
+#side-bar div.side-block {
+    background-color: rgb(var(--basalt-overtone)) !important;
+}
+/* ===== 脚注コンポーネント最適化 ===== */
+.fncon {
+    background-color: rgba(16, 24, 36, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    border-left: 3px solid rgb(0, 255, 255);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), 0 0 40px rgba(0, 255, 255, 0.05);
+    border-radius: 0 6px 6px 0;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.9em;
+    line-height: 1.6;
+    color: rgb(var(--basalt-main-text-color));
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.fnnum {
+    color: rgb(0, 255, 255);
+    font-weight: 700;
+    cursor: pointer;
+    transition: color 0.2s, text-shadow 0.2s;
+    position: relative;
+}
+
+.fnnum:hover {
+    color: rgb(64, 180, 255);
+    text-shadow: 0 0 12px rgba(0, 255, 255, 0.4);
+}
+
+.fnnum sup {
+    font-size: 0.75em;
+    font-weight: 700;
+}
+
+.fncon::before {
+    content: "[";
+    color: rgb(0, 255, 255);
+    font-family: var(--mono-font, 'JetBrains Mono', monospace);
+    font-weight: 700;
+    opacity: 0.6;
+    margin-right: 0.3em;
+}
+
+.fncon::after {
+    content: "]";
+    color: rgb(0, 255, 255);
+    font-family: var(--mono-font, 'JetBrains Mono', monospace);
+    font-weight: 700;
+    opacity: 0.6;
+    margin-left: 0.3em;
+}
+
+.fnnum:hover + .fncon,
+.fncon:hover {
+    opacity: 1 !important;
+    transform: translateX(0);
+}
+
+.footnotes-footer {
+    border-top: 2px solid rgba(0, 255, 255, 0.15);
+    padding-top: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+.footnotes-footer .title {
+    font-family: var(--header-font-primary, 'Orbitron'), monospace;
+    font-size: 0.85em;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgb(0, 255, 255);
+    opacity: 0.7;
+}
+
+.footnotes-footer .footnote {
+    font-size: 0.9em;
+    color: rgb(var(--basalt-sub-text-color));
+    padding: 0.4rem 0;
+    border-bottom: 1px solid rgba(0, 255, 255, 0.05);
+}
+
+.footnotes-footer .footnote .fn-number {
+    color: rgb(0, 255, 255);
+    font-weight: 700;
+    margin-right: 0.6em;
+}
+
+/*  表  */
+:is(#page-content table:not(.form), table.wiki-content-table) th {
+    background-color: rgba(0, 255, 255, 0.12);
+    color: rgb(0, 255, 255);
+    font-family: var(--header-font-primary, 'Orbitron'), sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    border-color: rgba(0, 255, 255, 0.15);
+}
+
+:is(#page-content table:not(.form), table.wiki-content-table) td {
+    border-color: rgba(0, 255, 255, 0.08);
+}
+
+:is(#page-content table:not(.form), table.wiki-content-table) tr:nth-child(even) {
+    background-color: rgba(0, 255, 255, 0.03);
+}
+
+.code {
+    background-color: rgba(8, 12, 18, 0.8);
+    border: 1px solid rgba(0, 255, 255, 0.1);
+    border-radius: 4px;
+    font-family: var(--mono-font, 'JetBrains Mono', monospace);
+}
+
+[[/module]]
+
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**初訳時参照リビジョン:** 3
+**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:deepspace ソース]
+[[include :scp-jp:credit:end-preview]]
+[[>]]
+[[module rate]]
+[[/>]]
+
+[[=]]
+[[size 120%]]**任意のページで：**[[/size]]
+[[size 160%]]**{{@@[[include @@[[span style="opacity: 70%;"]]@@:scp-jp:@@[[/span]]@@theme:deepspace]]@@}}**[[/size]]
+[[/=]]
+
+[[div style="margin-top: 8rem;"]]
+[[/div]]
+
++* 情報
+
+**深空（Deepspace）**は、筆者[[*user Un Party]]が個人設定**緘黙春秋**のために制作した美学版式で、[玄武岩版式](https://scp-wiki-cn.wikidot.com/theme:basalt)を基にしています。また、[[*user Dr Roger_F_XL]]と[[*user Kcorena]]両同志がテストと指導をしてくださり、漏洞修正に協力いただいたことに、ここに感謝を申し上げます！
+
+**訳注:** このテーマは Basalt 系の版式です。JP版はチェック構成内の `theme:basalt-jp`（EN版BasaltのJP候補版）に依存しています。SCP-JP 本番Wikiには Basalt 相当の版式は未搭載であり、SCP-JP へ投稿する際には依存関係を見直してください。また、ヘッダーの副題「学史 · 構築 · 記録」は原語（中国語「学史 · 构造 · 记录」）の漢字表記をJP字体に整えたものです。
+[[div style="margin-top: 6.5rem;"]]
+[[/div]]
+
++* ページ要素
+
+@@ @@
+
+= [[span class="st"]]@@[[span class="st"]]@@[[/span]] [[span class="noclick"]] @@ @@ [[/span]] [[span class="specialtext"]]@@[[span class="specialtext"]]@@[[/span]]
+
+= [[span class="bt"]]@@[[span class="bt"]]@@[[/span]] [[span class="noclick"]] @@ @@ [[/span]] [[span class="bigtext"]]@@[[span class="bigtext"]]@@[[/span]]
+
+@@ @@
+
+[[=]]
+
+[[div class="blockquote"]]
+**{{@@[[div class="blockquote"]]@@}}**
+[[/div]]
+
+[[div class="notation"]]
+**{{@@[[div class="notation"]]@@}}**
+[[/div]]
+
+[[div class="jotting"]]
+**{{@@[[div class="jotting"]]@@}}**
+[[/div]]
+
+[[div class="modal"]]
+**{{@@[[div class="modal"]]@@}}**
+[[/div]]
+
+[[div class="smallmodal"]]
+**{{@@[[div class="smallmodal"]]@@}}**
+[[/div]]
+
+[[div class="papernote"]]
+**{{@@[[div class="papernote"]]@@}}**
+[[/div]]
+
+[[/=]]
+
+@@ @@
+
+[[include component:image-block name=https://sigma10-jp-test.wdfiles.com/local--files/theme%3Adeepspace-jp/basalt_scp_logo-for_lightmode.svg|caption=図版枠（玄武岩のもの）。|width=280px]]
+
+見出しは行頭に1〜6個のプラス「+」を入力して作成できます。
+
++* 1級見出し
+
+++* 2級見出し
+
++++* 3級見出し
+
+++++* 4級見出し
+
++++++* 5級見出し
+
+++++++* 6級見出し
+
+@@ @@
+
+[[tabview]]
+[[tab タブ]]
+これはタブ（Tab View）です。
+[[/tab]]
+[[tab タブ]]
+ここにはもっと文字があります。
+
+なんと面白いことでしょう。
+[[/tab]]
+[[tab 長いタブ]]
+これは長いタブです。特別に「屑懒」氏に感謝を。
+
+これは長いタブです。特別に「屑懒」氏に感謝を。
+
+これは長いタブです。特別に「屑懒」氏に感謝を。
+
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+
+これはなかなか立派な長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+[[/tab]]
+[[tab このタブは何らかの奇妙な理由で、とてもとても長い名前を持っています。なぜでしょう？本当に奇妙です。]]
+これは脚注付きのタブです[[footnote]]これはその脚注です。[[/footnote]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+偉大なる屑懒に栄光を
+[[/tab]]
+[[/tabview]]
+
+@@ @@
+
+||~ これは ||~ 表です ||
+||もう || やり方は ||
+||||知っているはずでしょう ||
+||||= 本当ですか？ ||
+
+[[div style="margin-top: 6.5rem;"]]
+[[/div]]
+
+[[footnoteblock]]
+[[/iftags]]

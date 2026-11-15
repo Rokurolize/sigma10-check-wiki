@@ -1,0 +1,479 @@
+[[module css]]
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Adecay-jp/2');
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Adecay-jp/2
+]]
+
+[[iftags +テーマ]]
+[[include :scp-jp:credit:start-preview]]
+**初訳時参照リビジョン:** 8
+**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:decay ソース]
+部署アイコンとその変種と背景画像は [[*user YanL777]] が制作しており、CC BY-SA 3.0 が適用されます。この版式は[超閾限 版式](https://backrooms-wiki-cn.wikidot.com/theme:super-liminal)を基にし、[恐怖症 主题版式](https://backrooms-wiki-cn.wikidot.com/theme:phobia)を参考にして制作され、CC BY-SA 3.0 の下でライセンスされます。
+[[include :scp-jp:credit:end-preview]]
+[[>]]
+[[module rate]]
+[[/>]]
+
+この版式は [[*user lestday233]] が招かれて、[心隙三局](https://scp-wiki-cn.wikidot.com/third-control-and-research-bureau-for-psychic-space-anomalie)（SCP-CN の設定）及びその関連作品のために制作したものです。技術実装は [[*user lestday233]]、画像制作は [[*user YanL777]] です。
+
+[超閾限 版式](https://backrooms-wiki-cn.wikidot.com/theme:super-liminal)を基にしており、デザイン上は[恐怖症 主题版式](https://backrooms-wiki-cn.wikidot.com/theme:phobia)を参考にしています。
+
++* 使用方法
+この版式を使うには、以下のコードをページに追加してください：
+[[div class="code"]]
+@@[[include :scp-jp:theme:decay]]@@
+[[/div]]
+
++* スタイル例
+
+[[include component:image-block
+|name=https://sigma10-jp-test.wdfiles.com/local--files/theme%3Adecay-jp/logo.png
+|caption=ロゴ
+]]
+
+5個のハイフン「@@-----@@」で水平線を作成できます。引用ブロックなど別の部件の中に置かれていなければ、ページの左右いっぱいまで伸びます。文書を複数の部分に分けるこの線が水平線です。
+
+**太字** | //斜体// | __下線__ | --打ち消し線-- | {{teletype text}} ^^上付き^^,,下付き,,
+
+[# 未アクセスのリンク] | [[[theme:decay-jp|アクセス済みのリンク]]] | [[[page-name|存在しないリンク]]]
+
+-----
+
+見出しは行頭に1〜6個のプラス「+」を入力して作成できます
+
+[[toc]]
+
+[[collapsible show="+ 見出しの折りたたみ" hide="- 見出しの折りたたみ"]]
++ 1級見出し
+++ 2級見出し
++++ 3級見出し
+++++ 4級見出し
++++++ 5級見出し
+++++++ 6級見出し
+[[/collapsible]]
+
+
+@@ @@
+
+[[tabview]]
+[[tab タブ]]
+これはタブ（tab view）です。[[footnote]]脚注情報のスタイルです。[[/footnote]]
+[[/tab]]
+[[tab タブ]]
+ほら、ここにはもっと文字があります。
+
+なんと精巧なのでしょう。
+[[/tab]]
+[[tab 長いタブ]]
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+[[/tab]]
+[[tab さらに長いタブ]]
+これも長いタブです。たくさんの文字があります。
+
+これも長いタブです。たくさんの文字があります。
+
+これも長いタブです。たくさんの文字があります。
+
+これも長いタブです。たくさんの文字があります。
+
+これも長いタブです。たくさんの文字があります。
+
+これも長いタブです。たくさんの文字があります。
+
+これも長いタブです。たくさんの文字があります。
+
+これも長いタブです。たくさんの文字があります。
+
+これも長いタブです。たくさんの文字があります。
+
+これも長いタブです。たくさんの文字があります。
+
+これも長いタブです。たくさんの文字があります。
+
+これも長いタブです。たくさんの文字があります。
+
+これも長いタブです。たくさんの文字があります。
+
+これも長いタブです。たくさんの文字があります。
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[/tabview]]
+
+@@ @@
+
+> これは引用ブロックです。行頭に「> 」を加えると作成できます。
+>
+> さらに文字
+> -----
+> 一条の分割線
+>
+>> 入れ子の引用ブロック
+>> -----
+>> 入れ子の引用ブロック内の分割線
+>>
+@@ @@
+
+[[div class="blockquote" style="text-align: center"]]
+{{@@> blockquote@@}}
+{{@@[[div class="blockquote"]]@@}}
+[[/div]]
+
+||~ これは ||~ 表です ||
+|| もう || やり方は ||
+|||| 知っているでしょう ||
+
+
+[[div class="hr-logo"]]
+------
+[[/div]]
+
+++* スタイルDiv
+[[div class="lightblock"]]
+= {{@@[[div class="lightblock"]]@@}}
+[[/div]]
+
+[[div class="darkblock"]]
+= {{@@[[div class="darkblock"]]@@}}
+[[/div]]
+
+[[div class="styled-quote"]]
+= {{@@[[div class="styled-quote"]]@@}}
+[[/div]]
+
+[[div class="dark-styled-quote"]]
+= {{@@[[div class="dark-styled-quote"]]@@}}
+[[/div]]
+
+[[div class="hr-logo"]]
+------
+[[/div]]
+
+++* コードブロック
+[[div class="code" style="text-align: center"]]
+@@[[code]]@@
+@@[[div class="code"]]@@
+[[/div]]
+
+[[code]]
+コードブロック
+[[/code]]
+
+[[div class="hr-logo"]]
+------
+[[/div]]
+
+++* ノート枠
+[[note]]
+= {{@@[[note]]@@}}
+= NOTE効果
+[[/note]]
+
+[[div class="styled-note"]]
+[[note]]
+[[=]]
+{{@@[[div class="styled-note"]]@@}}
+{{@@[[note]]@@}}
+{{@@[[/div]]@@}}
+[[/=]]
+= スタイル付きNOTE効果
+[[/note]]
+[[/div]]
+
+[[div class="hr-logo"]]
+------
+[[/div]]
+
+++* その他
+[[div class="styleBgBlock"]]
+[[=]]
+{{@@[[div class="styled-note"]]@@}}
+[[/=]]
+[[/div]]
+
+
+
+[[collapsible show="+ ソースコードを表示" hide="- ソースコードを非表示"]]
+[[code type="CSS"]]
+/* --------------------------
+  Decay
+  [2026 Wikidot Theme]
+   - Code by lestday233
+   - All Logo、Body_bg by YanL777
+
+  Based on Super Liminal
+  [2024 Wikidot Theme]
+   - Theme by Ambersight
+
+  Unless otherwise stated, All licensed under CC BY-SA 3.0
+ -------------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap");
+@import url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Adecay-jp/super-liminal.min.css");
+@import url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Adecay-jp/icon-masks.min.css");
+@import url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Adecay-jp/colmod-style.min.css");
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css');
+
+:root {
+    /* Basic Color */
+    --background-color: 13, 13, 15;
+    --text-color: 211, 211, 211;
+    --light-color-2: 26, 26, 28;
+    --dark-color-2: 44, 44, 45;
+    --dark-color-3: 66, 66, 67;
+    --dark-color-4: var(--dark-color-3);
+    --light-red-color: 244, 56, 37;
+    --dark-red-color: 109, 26, 26;
+    
+    /* General Colors */
+    --general-light-background-color: var(--light-color-2);
+    --general-light-text-color: var(--text-color);
+    --general-medium-background-color: var(--dark-color-2);
+    --general-medium-text-color: var(--text-color);
+    --general-dark-background-color: var(--dark-color-3);
+    --general-dark-text-color: var(--text-color);
+    
+    /* Body */
+    --body-width: 65rem;
+    --link-color: var(--light-red-color);
+    --visited-link-color: 249, 73, 73;
+    --scrollbar-color: var(--dark-color-3);
+    --scrollbar-background-color: var(--light-color-2);
+    --accept-color: 44, 121, 51;
+    --warning-color: 146, 50, 54;
+    --warning-text-color: 230, 230, 230;
+    --neutral-color: 137, 112, 57;
+    --hr-color: var(--dark-color-3);
+    
+    /* Header */
+    --header-title: "心隙三局";
+    --header-subtitle: "応許 遺故 物哀";
+    --logo-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Adecay-jp/logo-gradient.png);
+    --main-header-height: 9rem;
+    --main-header-height-on-mobile: 10rem;
+    --header-extra-background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Adecay-jp/body_bg.png);
+    --header-background-bottom: var(--light-color-2);
+    --header-background-top: 95, 56, 59, 0.8;
+    --header-title-font-size-on-mobile: 2.4rem;
+    --header-subtitle-font-size-on-mobile: 1rem;
+    --header-text-color: var(--text-color);
+    --header-text-shadow-color: 0, 0, 0, 0;
+    
+    /* Search */
+    --search-button-background-color: var(--dark-color-3);
+    --search-button-text-color: var(--text-color);
+    --search-button-hover-background-color: var(--dark-color-2);
+    
+    /* Sidebar */
+    --sidebar-handle-background-color: var(--light-color-2);
+    --sidebar-title-shadow-color: 0, 0, 0, 0;
+    --sidebar-media-icon-color: var(--dark-color-1), 0.75;
+    --sidebar-media-background-color: var(--light-color-2), 0.5;
+    
+    /* Topbar */
+    --topbar-text-color: var(--text-color);
+    --topbar-hover-text-color: var(--text-color);
+    --topbar-hover-border-color: var(--background-color), 0.5;
+    --topbar-drop-text-color: var(--text-color);
+    --topbar-drop-hover-text-color: var(--text-color);
+    
+    /* Rating */
+    --rating-info-text-color: 230, 230, 230;
+    
+    /* The 4 */
+    --lightblock-background-color: var(--dark-color-2);
+    --darkblock-background-color: var(--light-color-2);
+    --styled-quote-background-color: var(--dark-color-2);
+    --styled-quote-border-color: var(--dark-red-color), 0.8;
+    --dark-styled-quote-background-color: var(--light-color-2);
+    --dark-styled-quote-border-color: var(--dark-red-color), 0.8;
+    
+    /* Note */
+    --note-background-color: var(--light-color-2);
+    --note-text-color: 255, 255, 255;
+    
+    /* Image */
+    --imageblock-border-color: var(--dark-color-2);
+    --imageblock-caption-background-color: var(--dark-color-2);
+    
+    /* Popup */
+    --popup-tip-content: "";
+    --popup-tip-color: var(--text-color);
+    --popup-fader-color: 0, 0, 0, 0.77;
+    --popup-loading-color: var(--dark-color-3);
+    --popup-title-background-color: var(--general-medium-background-color);
+}
+
+/* ———————— HEADER ———————— */
+#header::before {
+    background-size: cover;
+    background-position: 15% center;
+    background-repeat: no-repeat;
+}
+
+#header h1 a span {
+    height: 80%;
+}
+
+#header h2 {
+    height: calc(100% - var(--topbar-height));
+    top: 0;
+}
+
+@media only screen and (min-width: 521px) {
+    #header h2 {
+    	top: 0;
+    }
+
+    #header h2 span::before {
+    	background-size: 28% auto;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #header h2 {
+    	height: calc(100% - var(--topbar-height-on-mobile));
+    }
+}
+
+#search-top-box-form .button {
+    font-weight: bold;
+    border-radius: 0.8em;
+    padding: 0.15em 0.65em;
+}
+
+@media only screen and (max-width: 1024px) {
+    #search-top-box-form .button {
+    	background: #fff;
+    }
+    
+    #search-top-box-form .button:is(:hover, :active, :focus, :focus-within) {
+    	background: #929191;
+    }
+}
+
+/* ———————— SIDE ———————— */
+#side-bar .side-block.media a img {
+    transform: none;
+    filter: none;
+}
+#side-bar div.side-block.newcomer { background-color: #202e1f !important; }
+#side-bar div.side-block.resources { background-color: #332a37 !important; }
+#side-bar div.side-block.admin { background-color: #422d2d !important; }
+#side-bar div.side-block.media { background-color: #6c6c91 !important; }
+#side-bar div.side-block.license { background-color: #1f1f1f !important; }
+
+/* ———————— RATE ———————— */
+.creditRate {
+    margin-right: 0 !important;
+}
+
+#u-credit-view .close-credits {
+    top: 1em;
+}
+
+/* ————————   TOC   ———————— */
+#toc {
+    min-width: 35%;
+    border-radius: 0 0 1em 1em;
+}
+
+#toc:has(#toc-action-bar a:first-child[style*="display: none"]) {
+    border-radius: 0;
+}
+
+/* ———————— TABVIEW ———————— */
+.yui-navset .yui-nav {
+    box-shadow: unset;
+}
+
+.yui-navset .yui-content {
+    border-radius: 0 0 1em 1em;
+}
+
+/* ———————— CONTENT ———————— */
+#toc .title,
+#toc-action-bar a {
+    color: var(--text-color);
+}
+
+div.styled-note div.wiki-note {
+    background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Adecay-jp/logo-note.png);
+    background-size: 28%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hr-logo {
+    padding: 1em 0;
+}
+
+.hr-logo::after {
+    content: "";
+    position: relative;
+    display: block;
+    background: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Adecay-jp/logo-white.png) center no-repeat;
+    background-size: 35px 35px;
+    background-color: rgb(var(--background-color));
+    margin: auto;
+    height: 35px;
+    width: 5em;
+    top: -32px;
+}
+
+.hr-logo hr {
+    border-top-color: rgba(var(--dark-color-1), 0.85);
+}
+
+.styleBgBlock {
+    background: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Adecay-jp/styleBgBlock_left.png),url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Adecay-jp/styleBgBlock_right.png);
+    background-position: left,right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: calc(110px + 30vw);
+    margin: auto;
+    padding: 4em;
+    text-align: center;
+}
+
+/* CODE */
+.hl-default, .hl-code , .hl-brackets , .hl-identifier {
+    color: rgba(var(--text-color));
+}
+
+.hl-special {
+    color: #1a65da;
+}
+
+.hl-number {
+    color: #d31d1d;
+}
+
+.hl-string {
+    color: #6969e2;
+}
+[[/code]]
+[[/collapsible]]
+[[/iftags]]
