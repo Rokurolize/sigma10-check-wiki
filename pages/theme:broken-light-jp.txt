@@ -1,0 +1,608 @@
+[[include :scp-jp:theme:black-highlighter-theme]]
+
+[[module CSS]]
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Abroken-light-jp/1');
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css
+]]
+[[include :scp-jp:component:interwiki-style
+| priority=2
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css
+]]
+[[include :scp-jp:component:interwiki-style
+| priority=3
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Abroken-light-jp/1
+]]
+
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** 如影随光（影は光に随う）テーマ
+**翻訳責任者:** SCP-JP
+**翻訳年:** 2026
+**原題:** 如影随光 主题版式
+**著作権者:** [[*user AI_Mayca]]
+**作成年:** 2022
+**初訳時参照リビジョン:** 28
+**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:broken-light 如影随光 主题版式]
+[[include :scp-jp:credit:end-preview]]
+
+[[div style="border: 1px solid #ddd; padding: 1em; margin: 1em; text-align: center;"]]
+
+[[div style="opacity: 0.6"]]
+[[image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abroken-light-jp/blbhl.png]]
+[[/div]]
+
++ 使用方法
+
+++ 注: これはBlack Highlighterベースのテーマです。このテーマを使用するにはBlack Highlighterテーマもインポートする必要があります。[[[theme:black-highlighter-theme|詳細についてはこちらを参照してください]]]。
+
+[[div class="code" style="text-align: left"]]
+@@[[include :scp-jp:theme:black-highlighter-theme]]@@
+@@[[include :scp-jp:theme:broken-light]]@@
+[[/div]]
+
+-----
+
+[[=]]
++ テーマカラー
+[[/=]]
+
+[[include :scp-jp:component:theme-squares -=-
+| color1-name=ディープブラック
+| color1-variable=--dark-accent
+| color1-info=(33, 33, 33)
+| color1-has-light-text=1
+| color2-name=ブライトレッド
+| color2-variable=--bright-accent
+| color2-info=(224, 37, 58, 0.5)
+| color2-has-light-text=1
+| subcolor1-name=ミドルグレー
+| subcolor1-variable=--medium-accent
+| subcolor1-info=(125, 125, 125)
+| subcolor1-has-light-text=1
+| subcolor2-name=ペールホワイト
+| subcolor2-variable=--white-monochrome
+| subcolor2-info=(216, 216, 216)
+]]
+
+@@ @@
+
++ カスタマイズ
+
+タイトルや背景を変更したい場合、またはサイト12ロゴのアニメーションを差し替えたい場合は……
+
+テーマのincludeの後ろに次の記述を追加し、必要に応じて変更してください。
+
+[[div style="text-align: left"]]
+[[code type="css"]]
+[[module css]]
+:root {
+    --header-title-text: "タイトル";
+    --header-subtitle-text: "サブタイトル";
+
+    --bg-img-mobile: url(https://url.com);
+    /* モバイル用背景URL↑ */
+
+    --bg-img: url(https://url.com);
+    /* デスクトップ用背景URL↑ */
+
+    --logo-img: url(https://url.com);
+    /* 差し替え用ロゴURL↑ */
+
+    --logo-anim: hidden;/* ←ロゴURLを差し替えた場合はhiddenを指定し、そうでなければこの行を削除 */
+}
+[[/module]]
+[[/code]]
+[[/div]]
+
++ 例
+
+[[include :scp-jp:component:image-block name=https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abroken-light-jp/logo-a.svg|caption=Site-JP-12|width=200px]]
+
+@@ @@
+
+5つのハイフン「@@-----@@」で水平の区切り線を作成できます。引用ブロックなど他の部品の中に置かれていない限り、左右に伸びてページを横断します。このようにファイルを複数の部分へ分ける線が区切り線です。
+
+-----
+
+見出しは、行頭に1個から6個のプラス記号「+」を入力して作成できます。
+
+[[collapsible show="見出し" hide="見出し"]]
++ レベル1見出し
+
+++ レベル2見出し
+
++++ レベル3見出し
+
+++++ レベル4見出し
+
++++++ レベル5見出し
+
+++++++ レベル6見出し
+[[/collapsible]]
+
+@@ @@
+
+[[tabview]]
+[[tab タブ]]
+これはタブです！
+[[/tab]]
+[[tab タブその二]]
+ニャーニャーニャー~
+ニャーニャーニャー~
+ニャーニャーニャー~
+[[/tab]]
+[[tab 爆裂魔法！]]
+ニャーニャーニャー~ニャーニャーニャー~ニャーニャーニャー~
+ニャーニャーニャー~ニャーニャーニャー~ニャーニャーニャー~
+ニャーニャーニャー~ニャーニャーニャー~ニャーニャーニャー~
+ニャーニャーニャー~ニャーニャーニャー~ニャーニャーニャー~
+ニャーニャーニャー~ニャーニャーニャー~ニャーニャーニャー~
+ニャーニャーニャー~ニャーニャーニャー~ニャーニャーニャー~
+ニャーニャーニャー~ニャーニャーニャー~ニャーニャーニャー~
+[[/tab]]
+[[/tabview]]
+
+> これは引用ブロックです。行頭に「> 」を付けて作成します。
+>
+> さらにテキスト
+> -----
+> 区切り線
+>
+>> ネストした引用ブロック
+
+||~ これは ||~ テーブルです ||
+|| あなたはもう || 作り方を ||
+|||| 知っているはずですにゃ ||
+
+[[=]]
+[[div_ class="fonts-display"]]
+本文、[[span class="title-font"]]タイトル[[/span]]、[[span class="header-font"]]ヘッダー[[/span]]のフォントは[https://rsms.me/inter/ Inter]/[https://fonts.google.com/noto/specimen/Noto+Sans+JP Noto Sans JP]です。
+[[span class="UI-font"]]ユーザーインターフェースのフォントは[https://www.paratype.com/fonts/pt/pt-root-ui PT Root UI]です。[[/span]]
+[[span class="mono-font"]]等幅フォントは[https://www.recursive.design/ Recursive]/[https://fonts.google.com/noto/specimen/Noto+Serif+JP Noto Serif JP]です。[[/span]]
+[[/div]]
+
+[[/div]]
+[[/=]]
+----
+
+//訳注: 原語版は UI フォントに PT Root UI（Paratype の商用書体）を指定しています。JP版では直リンクの特例に適合しないため、BHL の UI フォントと Noto Sans JP で代替しています。//
+
+[[collapsible show="テーマコードを表示" hide="テーマコードを非表示"]]
+[[code type="css"]]
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css");
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css");
+
+/* 日本語フォント (JP localization) */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
+
+/*
+    Broken Light / 如影随光
+    Ported for SCP-JP (theme:broken-light rev 28 on scp-wiki-cn).
+    By AI_Mayca. Background image licensed under CC0.
+    The CN BHL CDN is replaced by the SCP-JP BHL distribution; sandbox attachments re-hosted.
+*/
+
+/* root值↓ */
+:root, :root:lang(cn) {
+    --theme-base: "black-highlighter";
+    --theme-id: "broken-light";
+    --theme-name: "如影随光";
+    /* logo链接↓ */
+    --logo-image: ;
+    /* 背景图片链接↓ */
+    --background-img: var(--bg-img-mobile, url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abroken-light-jp/suiguang.jpg));
+    --background-imgr: var(--bg-img, url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abroken-light-jp/suiguang-r.jpg));
+    /* 版头标题↓ */
+    --header-title: var(--header-title-text, "Site-CN-12");
+    --header-subtitle: var(--header-subtitle-text, "常隐于影，行必有光");
+    /* 字体↓ */
+    --body-font: ;
+    --header-font: ;
+    --sub-header-font: ;
+    --page-title-font: ;
+    --title-font: ;
+    --mono-font: ;
+    --hdmemu-font: ;/* ←顶栏文字 */
+    --hdlist-font: ;/* ←顶栏列表 */
+    /* 主要颜色↓ */
+    --gray-monochrome: ;
+    --bright-accent: 224, 37, 58, 0.5;
+    --very-light-gray-monochrome: ;
+    --pale-gray-monochrome: ;
+    --dark-gray-monochrome: ;
+    --medium-accent: 125, 125, 125;
+    --dark-accent: 33, 33, 33;
+    --newpage-color: ;
+    --pale-accent: ;
+    --alt-accent: ;
+    --white-monochrome: 216, 216, 216;
+    --black-monochrome: var(--white-monochrome);
+    /* 杂项↓ */
+}
+
+/* 主体↓ */
+body {
+    color: rgb(var(--white-monochrome));
+}
+body::before {
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(var(--dark-accent));
+    background-image: var(--background-imgr);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+@media (max-aspect-ratio: 1/1) {
+    body::before {
+        background-image: var(--background-img);
+    }
+}
+
+/* logo动画↓ */
+#header-extra-div-1 {
+    display: block;
+    animation: rotateImg_A 5s ease-in-out;
+    background-image: var(--logo-img, url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abroken-light-jp/logo-a.svg'));
+}
+#header-extra-div-1::before {
+    content: '';
+    animation: rotateImg_B 5s ease-in-out;
+    background-image: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abroken-light-jp/logo-b.svg');
+    visibility: var(--logo-anim, visible);
+}
+#header-extra-div-1::after {
+    content: '';
+    animation: rotateImg_C 5s ease-in-out;
+    background-image: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abroken-light-jp/logo-c.svg');
+    visibility: var(--logo-anim, visible);
+}
+#header-extra-div-2 {
+    display: block;
+    animation: rotateImg_D 5s ease-in-out;
+    background-image: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abroken-light-jp/logo-d.svg');
+    visibility: var(--logo-anim, visible);
+}
+#header-extra-div-2::before {
+    content: '';
+    animation: rotateImg_E 5s ease-in-out;
+    background-image: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abroken-light-jp/logo-e.svg');
+    visibility: var(--logo-anim, visible);
+}
+#header-extra-div-1, #header-extra-div-1::before, #header-extra-div-1::after, #header-extra-div-2, #header-extra-div-2::before {
+    width: var(--final-header-height-on-desktop);
+    height: var(--final-header-height-on-desktop);
+    background-position: left 0.75rem top 1.1875rem;
+    background-size: auto calc(var(--header-height-on-desktop) - 2rem);
+    background-repeat: no-repeat;
+    transform-origin: calc(var(--header-height-on-desktop)/2 - 0.25rem) calc(var(--header-height-on-desktop)/2 + 0.1875rem);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 11;
+/* background-color: rgba(255, 0, 0, 0.1); */
+}
+@media only screen and (max-width:56.25rem) {
+    #header-extra-div-1, #header-extra-div-1::before, #header-extra-div-1::after, #header-extra-div-2, #header-extra-div-2::before {
+        width: var(--header-height-on-mobile);
+        height: var(--header-height-on-mobile);
+        --bg-posx-mb: calc(var(--header-height-on-mobile) - 0.75rem - var(--size));
+        --bg-posy-mb: calc(((var(--size)*-1) + var(--header-height-on-mobile) + var(--y-offset))/2);
+        background-position:  var(--bg-posx-mb) var(--bg-posy-mb);
+        background-size: var(--size), 100% var(--header-height-on-mobile);
+        transform-origin: calc(var(--size)/2 + var(--bg-posx-mb)) calc(var(--size)/2 + var(--bg-posy-mb));
+    }
+}
+@keyframes rotateImg_A {
+    0% {transform: rotate(90deg); opacity: 0}
+    30% {transform: rotate(90deg); opacity: 0}
+    45% {transform: rotate(0deg); opacity: 1}
+    100% {transform: rotate(0deg); opacity: 1}
+}
+@keyframes rotateImg_B {
+    0% {transform: rotate(90deg); opacity: 0}
+    32% {transform: rotate(90deg); opacity: 0}
+    47% {transform: rotate(0deg); opacity: 1}
+    100% {transform: rotate(0deg); opacity: 1}
+}
+@keyframes rotateImg_C {
+    0% {transform: rotate(90deg); opacity: 0}
+    34% {transform: rotate(90deg); opacity: 0}
+    49% {transform: rotate(0deg); opacity: 1}
+    100% {transform: rotate(0deg); opacity: 1}
+}
+@keyframes rotateImg_D {
+    0% {opacity: 0}
+    36% {opacity: 0}
+    51% {opacity: 1}
+    100% {opacity: 1}
+}
+@keyframes rotateImg_E {
+    0% {background-size: 0 0; background-position: calc((var(--header-height-on-desktop) - 2rem)/2 + 0.75rem) calc((var(--header-height-on-desktop) - 2rem)/2 + 1.1875rem); opacity: 0}
+    36% {background-size: 0 0; background-position: calc((var(--header-height-on-desktop) - 2rem)/2 + 0.75rem) calc((var(--header-height-on-desktop) - 2rem)/2 + 1.1875rem); opacity: 0}
+    51% {background-size: calc(var(--header-height-on-desktop) - 2rem) calc(var(--header-height-on-desktop) - 2rem); background-position: 0.75rem 1.1875rem; opacity: 1}
+    100% {background-size: calc(var(--header-height-on-desktop) - 2rem) calc(var(--header-height-on-desktop) - 2rem); background-position: 0.75rem 1.1875rem; opacity: 1}
+}
+@media only screen and (max-width:56.25rem) {
+    @keyframes rotateImg_A {
+        0% {background-size: calc(var(--size) * 2/3); background-position:  calc(var(--size)/3 + var(--bg-posx-mb)) calc(var(--size)/6 + var(--bg-posy-mb)); transform: rotate(90deg); transform-origin: calc(var(--size) * 2/3 + var(--bg-posx-mb)) calc(var(--size)/2 + var(--bg-posy-mb)); opacity: 0}
+        30% {transform: rotate(90deg); opacity: 0}
+        45% {transform: rotate(0deg); opacity: 1}
+        51% {background-position:  calc(var(--size)/3 + var(--bg-posx-mb)) calc(var(--size)/6 + var(--bg-posy-mb)); transform-origin: calc(var(--size) * 2/3 + var(--bg-posx-mb)) calc(var(--size)/2 + var(--bg-posy-mb))}
+        66% {background-size: calc(var(--size) * 2/3); background-position:  calc(var(--size)/6 + var(--bg-posx-mb)) calc(var(--size)/6 + var(--bg-posy-mb)); transform-origin: calc(var(--size)/2 + var(--bg-posx-mb)) calc(var(--size)/2 + var(--bg-posy-mb));}
+        80% {background-size: var(--size); background-position: var(--bg-posx-mb) var(--bg-posy-mb)}
+        100% {background-size: var(--size); background-position: var(--bg-posx-mb) var(--bg-posy-mb); transform: rotate(0deg); opacity: 1}
+    }
+    @keyframes rotateImg_B {
+        0% {background-size: calc(var(--size) * 2/3); background-position:  calc(var(--size)/3 + var(--bg-posx-mb)) calc(var(--size)/6 + var(--bg-posy-mb)); transform: rotate(90deg); transform-origin: calc(var(--size) * 2/3 + var(--bg-posx-mb)) calc(var(--size)/2 + var(--bg-posy-mb)); opacity: 0}
+        32% {transform: rotate(90deg); opacity: 0}
+        47% {transform: rotate(0deg); opacity: 1}
+        51% {background-position:  calc(var(--size)/3 + var(--bg-posx-mb)) calc(var(--size)/6 + var(--bg-posy-mb)); transform-origin: calc(var(--size) * 2/3 + var(--bg-posx-mb)) calc(var(--size)/2 + var(--bg-posy-mb))}
+        66% {background-size: calc(var(--size) * 2/3); background-position:  calc(var(--size)/6 + var(--bg-posx-mb)) calc(var(--size)/6 + var(--bg-posy-mb)); transform-origin: calc(var(--size)/2 + var(--bg-posx-mb)) calc(var(--size)/2 + var(--bg-posy-mb));}
+        80% {background-size: var(--size); background-position: var(--bg-posx-mb) var(--bg-posy-mb)}
+        100% {background-size: var(--size); background-position: var(--bg-posx-mb) var(--bg-posy-mb); transform: rotate(0deg); opacity: 1}
+    }
+    @keyframes rotateImg_C {
+        0% {background-size: calc(var(--size) * 2/3); background-position:  calc(var(--size)/3 + var(--bg-posx-mb)) calc(var(--size)/6 + var(--bg-posy-mb)); transform: rotate(90deg); transform-origin: calc(var(--size) * 2/3 + var(--bg-posx-mb)) calc(var(--size)/2 + var(--bg-posy-mb)); opacity: 0}
+        34% {transform: rotate(90deg); opacity: 0}
+        49% {transform: rotate(0deg); opacity: 1}
+        51% {background-position:  calc(var(--size)/3 + var(--bg-posx-mb)) calc(var(--size)/6 + var(--bg-posy-mb)); transform-origin: calc(var(--size) * 2/3 + var(--bg-posx-mb)) calc(var(--size)/2 + var(--bg-posy-mb))}
+        66% {background-size: calc(var(--size) * 2/3); background-position:  calc(var(--size)/6 + var(--bg-posx-mb)) calc(var(--size)/6 + var(--bg-posy-mb)); transform-origin: calc(var(--size)/2 + var(--bg-posx-mb)) calc(var(--size)/2 + var(--bg-posy-mb));}
+        80% {background-size: var(--size); background-position: var(--bg-posx-mb) var(--bg-posy-mb)}
+        100% {background-size: var(--size); background-position: var(--bg-posx-mb) var(--bg-posy-mb); transform: rotate(0deg); opacity: 1}
+    }
+    @keyframes rotateImg_D {
+        0% {background-size: calc(var(--size) * 2/3); background-position:  calc(var(--size)/3 + var(--bg-posx-mb)) calc(var(--size)/6 + var(--bg-posy-mb)); transform-origin: calc(var(--size) * 2/3 + var(--bg-posx-mb)) calc(var(--size)/2 + var(--bg-posy-mb)); opacity: 0}
+        36% {opacity: 0}
+        51% {background-position:  calc(var(--size)/3 + var(--bg-posx-mb)) calc(var(--size)/6 + var(--bg-posy-mb)); transform-origin: calc(var(--size) * 2/3 + var(--bg-posx-mb)) calc(var(--size)/2 + var(--bg-posy-mb)); opacity: 1}
+        66% {background-size: calc(var(--size) * 2/3); background-position:  calc(var(--size)/6 + var(--bg-posx-mb)) calc(var(--size)/6 + var(--bg-posy-mb)); transform-origin: calc(var(--size)/2 + var(--bg-posx-mb)) calc(var(--size)/2 + var(--bg-posy-mb));}
+        80% {background-size: var(--size); background-position: var(--bg-posx-mb) var(--bg-posy-mb)}
+        100% {background-size: var(--size); background-position: var(--bg-posx-mb) var(--bg-posy-mb); opacity: 1}
+    }
+    @keyframes rotateImg_E {
+        0% {background-size: 0 0; background-position: calc(var(--size) * 2/3 + var(--bg-posx-mb)) calc(var(--size)/2 + var(--bg-posy-mb)); transform-origin: calc(var(--size) * 2/3 + var(--bg-posx-mb)) calc(var(--size)/2 + var(--bg-posy-mb)); opacity: 0}
+        36% {background-size: 0 0; background-position: calc(var(--size) * 2/3 + var(--bg-posx-mb)) calc(var(--size)/2 + var(--bg-posy-mb)); opacity: 0}
+        51% {background-size: calc(var(--size) *2/3) calc(var(--size) * 2/3); background-position: calc(var(--size)/3 + var(--bg-posx-mb)) calc(var(--size)/6 + var(--bg-posy-mb)); opacity: 1}
+        66% {background-size: calc(var(--size) * 2/3); background-position:  calc(var(--size)/6 + var(--bg-posx-mb)) calc(var(--size)/6 + var(--bg-posy-mb))}
+        80% {background-size: var(--size); background-position: var(--bg-posx-mb) var(--bg-posy-mb)}
+        100% {background-size: var(--size); background-position: var(--bg-posx-mb) var(--bg-posy-mb)}
+    }
+}
+#header h1 {
+    animation:anim_h1 5s ease-in-out;
+}
+#header h2 {
+    animation:anim_h2 5s ease-in-out;
+}
+@keyframes anim_h1 {
+    0% {opacity: 0}
+    58% {margin-left: -50px; opacity: 0}
+    73% {margin-left: 0; opacity: 1}
+    100% {opacity: 1}
+}
+@keyframes anim_h2 {
+    0% {opacity: 0}
+    63% {margin-left: -50px; opacity: 0}
+    78% {margin-left: 0; opacity: 1}
+    100% {opacity: 1}
+}
+
+/* 正文部分↓ */
+#page-content {
+    background: rgba(var(--dark-accent), 0.8);
+}
+
+/* 侧边栏↓ */
+#side-bar {
+    background: rgba(var(--dark-accent), 0.9) !important;
+}
+#edit-page-textarea {
+    background: transparent !important;
+}
+.side-block {
+    background: rgba(var(--dark-accent), 0.6) !important;
+}
+@media screen {
+    .side-block {
+        background: rgba(var(--dark-accent), 0.8) !important;
+    }
+}
+
+/* 顶栏↓ */
+#top-bar {
+    background: rgba(var(--dark-accent), 0.8) !important;
+}
+
+/* 账户样式↓ */
+#account-options {
+    background: rgba(var(--dark-accent), 0.8) !important;
+}
+#login-status {
+    background: rgba(var(--dark-accent), 0.8);
+}
+@media screen {
+    #login-status {
+        background: transparent;
+    }
+    #login-status:hover {
+        background: rgba(var(--dark-accent), 0.8);
+    }
+}
+
+/* 评分栏↓ */
+.page-rate-widget-box {
+    background: rgba(var(--dark-accent), 0.5);
+}
+.rate-box-with-credit-button {
+    background: rgba(var(--dark-accent), 0.5) !important;
+}
+
+/* 著作信息块↓ */
+#u-credit-view .modalbox {
+    background: rgba(var(--dark-accent), 0.8) !important;
+}
+
+/* 插图块↓ */
+.scp-image-block {
+    background: rgba(var(--dark-accent), 0.5);
+    border: none !important;
+    box-shadow: none !important;
+}
+.scp-image-caption {
+    border-bottom: solid 2px rgba(var(--bright-accent));
+    box-shadow: none !important;
+}
+
+/* 折叠动画↓ */
+#page-content .collapsible-block-unfolded .collapsible-block-content {
+    top: 0;
+    overflow: hidden;
+    transform-origin: 0 0;
+}
+#page-content .collapsible-block-unfolded .collapsible-block-content[style*="none"] {/* 展开 */
+    display: block !important;
+    animation: anim-appear 0.5s ease-in-out 0s 1 both;
+}
+#page-content .collapsible-block-folded, #page-content .collapsible-block-unfolded-link {
+    border-bottom: solid 2px rgba(var(--bright-accent)) !important;
+    background: rgba(var(--dark-accent), 0.7) !important;
+    padding: 0.5rem 1rem;
+    width: min-content;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+#page-content .collapsible-block-folded .collapsible-block-link::before {
+    content: "▷ ";
+}
+#page-content .collapsible-block-unfolded .collapsible-block-link::before {
+    content: "▽ ";
+}
+#page-content .collapsible-block-link {
+    text-decoration: none;
+    color: rgb(var(--white-monochrome));
+    font-weight: bold;
+}
+
+/* tab动画↓ */
+.yui-navset {
+    background: rgba(var(--dark-accent), 0.7);
+}
+.yui-navset .yui-content > div {
+    display: block;
+    top: 0;
+    overflow: hidden;
+    transform-origin: 0 0;
+}
+#page-content .yui-navset .yui-content > div[style*="block"] {
+    display: block !important;
+    animation: anim-appear 0.5s ease-in-out 0.5s 1 both;
+}
+#page-content .yui-navset .yui-content > div[style*="none"] {
+    display: block !important;
+    animation: anim-disappear 0.5s ease-in-out 0s 1 both;
+}
+@keyframes anim-disappear {
+    0% { max-height: 9999rem; opacity: 1; }
+    1% { max-height: 100vh; }
+    100% { max-height: 0; opacity: 0; }
+}
+@keyframes anim-appear {
+    0% { max-height: 0; opacity: 0; }
+    99% { max-height: 100vh; }
+    100% { max-height: 9999rem; opacity: 1; }
+}
+
+/* 引用块↓ */
+blockquote {
+    background: rgba(var(--dark-accent), 0.8);
+}
+
+/* 表格↓ */
+.wiki-content-table>tbody>tr>th {
+    background: rgba(var(--dark-accent), 0.4) !important;
+}
+.wiki-content-table>tbody>tr>td {
+    background: transparent !important;
+}
+
+/* tags↓ */
+.page-tags::before {
+    background: rgba(var(--dark-accent), 0.8) !important;
+}
+.page-tags span {
+    background: rgba(var(--bright-accent));
+}
+
+/* 底边栏↓ */
+.btn-default:not(.rateup, .ratedown, .cancel) {
+    background: rgba(var(--dark-accent), 0.8) !important;
+}
+/* 编辑栏↓ */
+.btn-danger, .btn-info, .btn-primary, .btn-warning {
+    background: rgba(var(--dark-accent), 0.8) !important;
+}
+/* 底部文字↓ */
+#footer {
+    background: rgba(var(--dark-accent), 0.8) !important;
+}
+
+/* 杂项↓ */
+.text, #edit-page-form>table>tbody>tr>td, #wd-editor-toolbar-panel, .edit-page-bottomtable>tbody>tr>td, .edit-page-bottomtable>tbody>tr>td>div, .edit-page-bottomtable>tbody>tr>td>div::before, .wiki-content-table, #edit-page-textarea {
+    background: rgba(var(--dark-accent), 0.8) !important;
+}
+.hl-code, .hl-brackets, .hl-identifier {
+    color: rgb(var(--white-monochrome));
+}
+::selection {
+    background: rgba(var(--bright-accent));/* ←指针选中部分颜色 */
+}
+.owindow, .modal-header, #action-area {
+    background: rgba(var(--dark-accent), 0.8) !important;
+}
+#page-content a:not(.collapsible-block-link, .page-rate-widget-box span a, .yui-navset ul li a, .footnote-footer a):link, #action-area div a:link {
+    color: rgb(var(--bright-accent)) !important;
+}
+#page-content a:not(.collapsible-block-link, .page-rate-widget-box span a, .yui-navset ul li a, .footnote-footer a):visited, #action-area div a:visited {
+    color: rgba(255, 250, 250, 0.8) !important;
+}
+#main-content {
+    --footnotes-footer-num-color: var(--medium-accent);
+}
+.content {
+    background-color: rgba(var(--dark-accent), 0.9);
+}
+[[/code]]
+[[/collapsible]]
+
+[[include :scp-jp:component:license-box-backend
+|author=AI_Mayca]]
+
+> **ファイル名:** blbhl.png
+> **作者:** [[*user AI_Mayca]]
+> **ライセンス:** 原語版に記載なし（原語版ページにライセンス表記がありません。投稿前に著者へ確認してください）
+
+> **ファイル名:** logo-a.svg 〜 logo-e.svg（原語版: 12_logo_A〜E）
+> **作者:** [[*user AI_Mayca]]
+> **ライセンス:** 原語版に記載なし（投稿前に著者へ確認してください）
+
+> **ファイル名:** suiguang.jpg / suiguang-r.jpg（原語版: 碎光 / 碎光_r）
+> **作者:** [[*user AI_Mayca]]
+> **ライセンス:** CC0（原語版のテーマヘッダーに「Background image licensed under CC0」と記載）
+> **訳注:** 原語版はサンドボックスWiki上の添付を直リンクしていました。JP版は候補ページの添付として持ち、外部Wikiへの依存を無くしています。
+
+[[include :scp-jp:component:license-box-end]]
+
+[[/iftags]]

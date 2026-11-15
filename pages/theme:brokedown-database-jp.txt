@@ -1,0 +1,2321 @@
+[[include :scp-jp:theme:black-highlighter-theme]]
+
+[[module CSS]]
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Abrokedown-database-jp/1');
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css
+]]
+[[include :scp-jp:component:interwiki-style
+| priority=2
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css
+]]
+[[include :scp-jp:component:interwiki-style
+| priority=3
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Abrokedown-database-jp/1
+]]
+
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** 故障データベース テーマ
+**翻訳責任者:** SCP-JP
+**翻訳年:** 2026
+**原題:** 故障数据库 主题版式
+**著作権者:** [[*user etinjat]]
+**作成年:** 2022
+**初訳時参照リビジョン:** 43
+**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:brokedown-database 故障数据库 主题版式]
+[[include :scp-jp:credit:end-preview]]
+
+
++ 使用方法
+
++++++ 注意: これはBlack Highlighterを基盤とするテーマです。このテーマを使用するには、Black Highlighterテーマも読み込む必要があります。[[[theme:black-highlighter-theme|詳しくはこちら]]]。
+
+作品の冒頭に次の構文を追加すると、このテーマを適用できます。
+[[div class="code"]]
+@@[[include :scp-jp:theme:black-highlighter-theme]]@@
+@@[[include :scp-jp:theme:brokedown-database]]@@
+[[/div]]
+
+ヘッダーアニメーションを使わない場合は、次のように変更します。
+[[div class="code"]]
+@@[[include :scp-jp:theme:black-highlighter-theme]]@@
+@@[[include :scp-jp:theme:brokedown-database@@
+|no-animation=true
+]]
+[[/div]]
+
+
+ヘッダーロゴを変更する場合は、次のようにします。
+[[div class="code"]]
+@@[[include :scp-jp:theme:black-highlighter-theme]]@@
+@@[[include :scp-jp:theme:brokedown-database@@
+|my-logo=true
+|logo-url=url('画像URL')
+]]
+[[/div]]
+**PS:** 画像をbase64形式に変換してmodule CSSに追加すると、[/fragment:brokedown-database ロゴ用パラメータ]を直接変更できます。ヘッダーロゴの着色を保持でき、後述するロゴ走査線にも使用できます。
+
+
+
+
+
+
++ 例
+
+[[div class="scp-image-block block-right" style="width:340px;background:#999"]]
+[[image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abrokedown-database-jp/img-wikidown.png    ]]
+[[div class="scp-image-caption"]]
+Wikidotピル
+[[/div]]
+[[/div]]
+
+5つのハイフン「@@-----@@」で水平区切り線を作成できます。引用ブロックなど他の部品の中に置かれていない場合、左右に伸びてページを横断します。文書を複数の部分に分けるこの線が区切り線です。
+
+-----
+
+行頭に1個から6個のプラス記号「+」を入力すると見出しを作成できます。
+
+[[collapsible show="+ タイトル" hide="- タイトル"]]
++ 1 級見出し
+
+++ 2 級見出し
+
++++ 3 級見出し
+
+++++ 4 級見出し
+
++++++ 5 級見出し
+
+++++++ 6 級見出し
+[[/collapsible]]
+
+@@ @@
+
+[[tabview]]
+[[tab タブ]]
+これはタブビューです。
+[[/tab]]
+[[tab タブ]]
+ご覧の通り、こちらにはさらに文章があります。
+
+なんと精巧なことでしょう。
+[[/tab]]
+[[tab 長いタブ]]
+これは長いタブです。たくさんの文章があります。
+
+これは長いタブです。たくさんの文章があります。
+
+これは長いタブです。たくさんの文章があります。
+
+これは長いタブです。たくさんの文章があります。
+
+これは長いタブです。たくさんの文章があります。
+
+これは長いタブです。たくさんの文章があります。
+
+これは長いタブです。たくさんの文章があります。
+
+これは長いタブです。たくさんの文章があります。
+
+これは長いタブです。たくさんの文章があります。
+
+これは長いタブです。たくさんの文章があります。
+
+これは長いタブです。たくさんの文章があります。
+
+これは長いタブです。たくさんの文章があります。
+[[/tab]]
+[[tab どういうわけか、この空のタブにはとても長い名前があります。なぜでしょう。不思議です。]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[/tabview]]
+
+> これは引用ブロックです。行頭に「> 」を付けると作成できます。
+>
+> さらに文章
+> -----
+> 区切り線
+>
+>> 入れ子の引用ブロック
+
+||~ これは ||~ 表です ||
+|| あなたはもう || 作り方を ||
+|||| 知っているはずです ||
+
+-----
+
+
+[[=]]
+本文フォントはDotted Songti Squareです
+{{等幅フォントはZCOOL XiaoWeiです}}
+[[/=]]
+
+-----
+脚[[footnote]]注[[/footnote]]
+このテキストは
+__ここに置くと__
+//あなたは//
+**違いを確認**
+--書式や--
+{{その他のもの}}
+どの^^ように^^
+動作,,するか,,
+[[[存在しないものも含めて]]]
+[[[theme:brokedown-database|存在するリンクもあります！]]]
+[# なんてことだ。]
+-----
+
+[[div class="blinkblock"]]
+
+@@[[div class="blinkblock"]]@@
+カーソル[[span class="blinlbar"]] ▏[[/span]]
+@@[[span class="blinlbar"]] ▏[[/span]]@@
+@@[[/div]]@@
+
+[[/div]]
+
+-----
+
+
+
+
+[[div class="linebolck-outbox"]]
+[[div class="linebolck-inbox"]]
+@@[[div class="linebolck-outbox"]]@@
+@@[[div class="linebolck-inbox"]]@@
+ここにマウスカーソルを合わせてください
+@@[[/div]]@@
+@@[[/div]]@@
+[[/div]]
+[[/div]]
+
+------
+
+
+[[div class="scanline-letter"]]
+@@[[div class="scanline-letter"]]@@
+横方向に走査
+@@[[/div]]@@
+[[/div]]
+
+[[div class="scanline-letter-verti"]]
+@@[[div class="scanline-letter-verti"]]@@
+縦方向に走査
+@@[[/div]]@@
+[[/div]]
+[[collapsible show="+ 注記" hide="- 閉じる"]]
+[[div class="scanline-letter-verti"]]
+1. この走査線はpタグの段落、つまり通常のテキスト段落だけを走査できます。
+@@@@
+追記: 縦方向の走査線で行ごとではなく段落全体を走査させるには、改行したい位置で4つの@記号を改行記号として使い、前後の文に密着させます。次のようにします。
+@@@@
+@@[[div class="scanline-letter-verti"]]@@
+本文
+@@@@@@@@
+別の行
+@@[[/div]]@@
+@@@@
+3. 縦方向の走査線は内容が増えるほど走査速度が速くなります。この問題を解決するには、走査にかかる時間のパラメータを調整します。単位はs、つまり秒です。あるいは走査終了位置を変更します。単位はパーセントです。
+@@@@
+@@[[module css]]@@
+:root{
+@@--scanline-letter-speed: 4s;@@
+@@--scanlineletter-end:200%;@@
+}
+@@[[/module]]@@
+
+[[/div]]
+[[/collapsible]]
+
+
+
+------
+
+[[div class="scanline-wrap"]]
+[[div class="scanline-cell scanline-text"]]
+[[div class="scanline-intext"]]
+
+[!---------------]
+@@[[div class="scanline-wrap"]]@@
+@@[[div class="scanline-cell scanline-text"]]@@
+@@[[div class="scanline-intext"]]@@
+@@@@
+横方向に走査
+@@@@
+@@[[/div]]@@
+@@[[/div]]@@
+@@[[div class="scanline-cell scanline-animation"]]@@
+@@[[div class="scanline-place" ]]@@
+@@[[/div]]@@
+@@[[/div]]@@
+@@[[/div]]@@
+[!---------------]
+[[/div]]
+[[/div]]
+[[div class="scanline-cell scanline-animation"]]
+[[div class="scanline-place" ]]
+[[/div]]
+[[/div]]
+[[/div]]
+
+------
+[[div class="scanline-wrap scanline-verti"]]
+[[div class="scanline-cell scanline-text "]]
+[[div class="scanline-intext"]]
+
+[!---------------]
+@@[[div class="scanline-wrap  scanline-verti"]]@@
+@@[[div class="scanline-cell scanline-text"]]@@
+@@[[div class="scanline-intext"]]@@
+@@@@
+縦方向に走査
+@@@@
+@@[[/div]]@@
+@@[[/div]]@@
+@@[[div class="scanline-cell scanline-animation"]]@@
+@@[[div class="scanline-place" ]]@@
+@@[[/div]]@@
+@@[[/div]]@@
+@@[[/div]]@@
+[!---------------]
+
+
+[[/div]]
+[[/div]]
+[[div class="scanline-cell scanline-animation"]]
+[[div class="scanline-place" ]]
+[[/div]]
+[[/div]]
+[[/div]]
+------
+
+[[div class="scanline-wrap scanline-logo"]]
+[[div class="scanline-cell scanline-text"]]
+[[div class="scanline-intext"]]
+
+
+[!---------------]
+@@[[div class="scanline-wrap scanline-logo"]]@@
+@@[[div class="scanline-cell scanline-text"]]@@
+@@[[div class="scanline-intext"]]@@
+@@@@
+横方向に走査
+@@@@
+@@[[/div]]@@
+@@[[/div]]@@
+@@[[div class="scanline-cell scanline-animation"]]@@
+@@[[div class="scanline-place" ]]@@
+@@[[/div]]@@
+@@[[/div]]@@
+@@[[/div]]@@
+[!---------------]
+
+
+[[/div]]
+[[/div]]
+[[div class="scanline-cell scanline-animation"]]
+[[div class="scanline-place" ]]
+[[/div]]
+[[/div]]
+[[/div]]
+
+
+-----
+
+
+[[div class="scanline-wrap scanline-logo scanline-verti"]]
+[[div class="scanline-cell scanline-text"]]
+[[div class="scanline-intext"]]
+
+
+[!---------------]
+@@[[div class="scanline-wrap scanline-logo  scanline-verti"]]@@
+@@[[div class="scanline-cell scanline-text"]]@@
+@@[[div class="scanline-intext"]]@@
+@@@@
+縦方向に走査
+@@@@
+@@[[/div]]@@
+@@[[/div]]@@
+@@[[div class="scanline-cell scanline-animation"]]@@
+@@[[div class="scanline-place" ]]@@
+@@[[/div]]@@
+@@[[/div]]@@
+@@[[/div]]@@
+[!---------------]
+
+[[/div]]
+[[/div]]
+[[div class="scanline-cell scanline-animation"]]
+[[div class="scanline-place" ]]
+[[/div]]
+[[/div]]
+[[/div]]
+
+
+**PS:** scanline-animationのdiv内にstyle="-webkit-mask: auto 80%;mask-size: auto 80%;"を追加するとロゴサイズを変更できます。パーセント値は高さで、デフォルトは60%です
+
+@@[[div class="scanline-cell scanline-animation" style="-webkit-mask: auto 80%;mask-size: auto 80%;" ]]@@
+
+-----
+
+@@@@
+@@@@
+
+[[div class="et-typing"]]
+
+@@[[div class="et-typing"]]@@
+タイプライターエフェクト
+@@[[/div]]@@
+[[/div]]
+
+
+[[include :scp-jp:component:coltop  ifprot=true |  show=▦ 効果はこちら|hide= ☑  注意事項]]
+[[div class="et-typing"]]
+
+1. タイプライター効果はpタグの段落にのみ適用されます。
+
+つまり、同時に表示させず順番に表示させるには、段落ごとに空行で分ける必要があります。
+
+2. 段落が長くなって自動改行されないよう、各行はできるだけ短くしてください。
+
+3. スマートフォンの狭い画面では、通常の上から下へのフェードインになります。
+
+[[/div]]
+[[include :scp-jp:component:colend]]
+
+@@@@
+@@@@
+
+------
+
+[[div class="titleblock"]]
+[[span class="titlebox"]]テキストを挿入[[/span]]
+@@[[div class="titleblock"]]@@
+@@[[span class="titlebox"]]テキストを挿入[[/span]]@@
+@@[[/div]]@@
+[[/div]]
+
+[[div class="titleblock titleblock-green"]]
+[[span class="titlebox"]]テキストを挿入[[/span]]
+@@[[div class="titleblock titleblock-blue"]]@@
+@@[[span class="titlebox"]]テキストを挿入[[/span]]@@
+@@[[/div]]@@
+[[/div]]
+
+[[div class="titleblock titleblock-blue"]]
+[[span class="titlebox "]]テキストを挿入[[/span]]
+@@[[div class="titleblock titleblock-blue"]]@@
+@@[[span class="titlebox"]]テキストを挿入[[/span]]@@
+@@[[/div]]@@
+[[/div]]
+
+------
+
+
++ ソースコード
+
+[[collapsible show="> コードを表示" hide="> コードを閉じる"]]
+[[code type="css"]]
+@import し、BHL も etinjat 版を include します。SCP-JP にはそれらが無いため、コンポーネントの
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css");
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css");
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
+
+/*
+    故障数据库 / Brokedown Database Theme
+    Ported for SCP-JP (theme:brokedown-database rev 43 on scp-wiki-cn). by Etinjat.
+    原語版は CN の etinjat Wiki のコンポーネント（折りたたみサイドバー／中央寄せヘッダー）を
+    CSS を本ファイルに統合し、BHL は SCP-JP の配信（scp-jp.github.io）に置き換えています。
+*/
+
+
+
+/* ===== etinjat: centered-header-bhl ===== */
+@supports(display: grid) {
+   :root {
+        /* header measurements */
+        --header-h1-font-size: clamp(2rem, 5vw, 2.8125rem);
+        --header-h2-font-size: clamp(0.875rem, 3vw, 0.9375rem);
+    }
+
+    #header {
+        --search-textbox-text-color: var(--swatch-secondary-color);
+        background: none;
+    }
+
+    #header::before {
+        content: " ";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0.75rem;
+        background-image: var(--logo-image);
+        background-repeat: no-repeat;
+        background-position: center 0;
+        background-size: auto calc(var(--header-height-on-desktop) - 1.5rem);
+        opacity: 0.8;
+        pointer-events: none;
+    }
+
+    #header h1,
+    #header h2 {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: var(--header-height-on-desktop);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #header h1 a,
+    #header h1 a::before,
+    #header h2 span,
+    #header h2 span::before {
+        margin: 0;
+        padding: 0;
+        z-index: 0;
+        display: block;
+        text-align: center;
+    }
+
+    #header h1 {
+        z-index: 1;
+    }
+
+    #header h1 a::before,
+    #header h1 a::after {
+        content: var(--header-title);
+    }
+    
+    #header h1 a::before  {
+        color: rgb(var(--swatch-text-tertiary-color));
+        z-index: -1;
+        -webkit-text-stroke: 0.325rem rgb(var(--swatch-text-dark));
+    }
+    
+    #header h1 a::after {
+        color: rgb(var(--swatch-headerh1-color));
+        z-index: 1;
+    }
+
+    #header h2 {
+        z-index: 0;
+        text-transform: uppercase;
+        pointer-events: none;
+    }
+
+    #header h2 span {
+        margin-top: calc(var(--header-height-on-mobile)/2 + var(--header-h1-font-size)/2 - 2em);
+    }
+
+    #header h2 span::before,
+    #header h2 span::after {
+        --wght: 600;
+        content: var(--header-subtitle);
+        position: absolute;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        width: 100%;
+        text-align: center;
+    }
+
+    #header h2 span::before {
+        -webkit-text-stroke: 0.25rem rgb(var(--swatch-text-dark));
+    }
+
+    #header h2 span::after {
+        color: rgb(var(--swatch-headerh2-color));
+        z-index: 1;
+    }
+
+    #search-top-box form[id="search-top-box-form"]:not(:focus-within) input[type="text"] {
+        color: rgba(0, 0, 0, 0);
+    }
+
+    @media (min-width: 36rem) {
+
+        #login-status {
+            flex-grow: 1;
+            left: 3%;
+            right: initial;
+        }
+
+     #login-status::before {
+     --mask-image: none;
+     background-color: transparent;
+     }
+
+        #login-status:not(:focus-within) {
+            color: rgb(var(--login-line-divider-color));
+            -webkit-user-select: initial;
+            -moz-user-select: initial;
+            -ms-user-select: initial;
+            user-select: initial;
+        }
+
+        #login-status #account-topbutton,
+        #login-status:not(:focus-within) #account-topbutton {
+            --clip-path:
+                    polygon( 0 0, 100% 0, 100% 100%, 0 100% );
+            background-color: rgba(var(--login-arrow-color), 0);
+
+        }
+        
+        #login-status #account-topbutton::before{
+            --clip-path:
+                    polygon( 30% 35%, 70% 35%, 50% 60%, 50% 60% );
+            --mask-image: initial;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(var(--login-arrow-color), 1);
+            -webkit-clip-path: var(--clip-path);
+            clip-path: var(--clip-path);
+        }
+
+        #login-status #account-topbutton::before,
+        #login-status:not(:focus-within) #account-topbutton::before,
+        #login-status:not(:focus-within) #account-topbutton:hover::before {
+            --clip-path:
+                    polygon( 30% 35%, 70% 35%, 50% 60%, 50% 60% );
+            --mask-image: initial;
+        }
+
+        #login-status:not(:focus-within) #account-topbutton::after {
+            display: none;
+        }
+
+        #login-status:not(:focus-within) *:not(#account-topbutton):not([href*="account/messages"]) {
+            --clip-path:
+                    polygon(
+                        0 0,
+                        100% 0,
+                        100% 100%,
+                        0 100%
+                    );
+            pointer-events: all;
+            -webkit-clip-path: var(--clip-path);
+            clip-path: var(--clip-path);
+        }
+
+        #login-status:not(:focus-within) *:not(#account-topbutton):not(#account-options):not([href*="account/messages"]) {
+            opacity: 1;
+        }
+
+        #login-status #my-account {
+            --wght: 300;
+        }
+
+        #account-options {
+            background: var(--gradient-header);
+        }
+
+        #search-top-box {
+            top: 1.5em;
+            right: 3%;
+            background: rgba(var(--search-focus-textbox-bg-color), 0.4);
+            box-shadow: calc(var(--search-height) / 2 * -1) 0 calc(var(--search-height) / 2) rgba(var(--search-focus-textbox-bg-color), 0.4);
+        }
+
+     #search-top-box:focus-within ~ #login-status {
+     opacity: 1;
+     }
+
+        #search-top-box::after {
+            transition:
+                background-color 150ms cubic-bezier(0.4, 0, 0.2, 1),
+                -webkit-clip-path 150ms cubic-bezier(0.4, 0, 0.2, 1);
+            transition:
+                background-color 150ms cubic-bezier(0.4, 0, 0.2, 1),
+                clip-path 150ms cubic-bezier(0.4, 0, 0.2, 1);
+            transition:
+                background-color 150ms cubic-bezier(0.4, 0, 0.2, 1),
+                clip-path 150ms cubic-bezier(0.4, 0, 0.2, 1),
+                -webkit-clip-path 150ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        #search-top-box:not(:focus-within)::after {
+            --clip-path:
+                    polygon(
+                        0 0,
+                        100% 0,
+                        100% 100%,
+                        0% 100%
+                    );
+            background-color: rgba(var(--search-icon-bg-color, --dark-accent), 1);
+            -webkit-clip-path: var(--clip-path);
+            clip-path: var(--clip-path);
+        }
+
+        #search-top-box:not(:focus-within):hover::after {
+            --clip-path:
+                    polygon(
+                        0 0,
+                        100% 0,
+                        100% 100%,
+                        0 100%
+                    );
+            background-color: rgb(var(--search-icon-hover-bg-color));
+        }
+
+        #search-top-box form[id="search-top-box-form"]:not(:focus-within) {
+            max-width: var(--search-width);
+        }
+
+        #search-top-box form[id="search-top-box-form"]:not(:focus-within) input[type="text"] {
+            max-width: var(--search-width);
+            padding: 0 var(--search-height) 0 1em;
+            outline-width: 0;
+            background-color: rgb(var(--search-focus-textbox-bg-color), 0.35);
+            color: rgba(var(--search-textbox-text-color), 0.4);
+            cursor: pointer;
+        }
+
+        #search-top-box form[id="search-top-box-form"]:not(:focus-within) input[type="submit"],
+        #search-top-box form[id="search-top-box-form"]:focus-within input[type="submit"] {
+            pointer-events: all;
+            border: none;
+        }
+
+    }
+
+    #page-title::after,
+    .meta-title::after,
+    #page-title::before,
+    .meta-title::before {
+        content: "";
+        flex-grow: 1;
+        height: 0.0625rem;
+        background: rgb(var(--swatch-primary));
+    }
+
+    #page-title::before,
+    .meta-title::before {
+        margin: auto 1.25rem auto auto;
+    }
+}
+
+/* ===== etinjat: collapsible-sidebar ===== */
+/*
+===========================
+可折叠侧边栏
+http://scp-wiki.wikidot.com/component:collapsible-sidebar
+===========================
+*/
+:root {
+    --sidebar-width-on-desktop: calc((var(--base-font-size) * (14 / 15)) * 19);
+    --body-width-on-desktop: 45.75rem;
+    --icon-sidebar-tab:url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0id2luZG93cy0xMjUyIj8+DQo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDE2IDIwNiI+PHRpdGxlPnNpZGViYXItdGFiPC90aXRsZT48cGF0aCBkPSJNLjUsMjA1LjVWLjVINmM1LjcsMCw5LjUsMy44LDkuNSw5LjVWMTk2YzAsNS44LTMuNyw5LjUtOS41LDkuNVoiIGZpbGw9IiM0MzQzNDgiLz48cGF0aCBkPSJNNiwxYzUuNSwwLDksMy41LDksOVYxOTZjMCw1LjUtMy41LDktOSw5SDFWMUg2TTYsMEgwVjIwNkg2YzYsMCwxMC00LDEwLTEwVjEwQzE2LDQsMTIsMCw2LDBaIiBmaWxsPSIjMTYxNjE2Ii8+PHBvbHlnb24gcG9pbnRzPSIxMyAxMDAgOCAxMDAgOCA5OCAzIDEwMiA4IDEwNiA4IDEwNCAxMyAxMDQgMTMgMTAwIiBmaWxsPSIjZmRmZWZlIi8+PHBvbHlnb24gcG9pbnRzPSIxMyA0MCA4IDQwIDggMzggMyA0MiA4IDQ2IDggNDQgMTMgNDQgMTMgNDAiIGZpbGw9IiNmZGZlZmUiLz48cG9seWdvbiBwb2ludHM9IjEzIDE2MCA4IDE2MCA4IDE1OCAzIDE2MiA4IDE2NiA4IDE2NCAxMyAxNjQgMTMgMTYwIiBmaWxsPSIjZmRmZWZlIi8+PC9zdmc+');
+}
+@media only screen and (min-width: 56.25rem) {
+    #content-wrap {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+           -moz-box-orient: horizontal;
+           -moz-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        width: -webkit-calc(100vw - (100vw - 100%));
+        width: -moz-calc(100vw - (100vw - 100%));
+        width: calc(100vw - (100vw - 100%));
+        min-height: -webkit-calc(100vh - -webkit-calc(var(--final-header-height-on-desktop, 10.125rem)));
+        min-height: -moz-calc(100vh - -moz-calc(var(--final-header-height-on-desktop, 10.125rem)));
+        min-height: calc(100vh - calc(var(--final-header-height-on-desktop, 10.125rem)));
+        -webkit-box-flex: 2;
+        -webkit-flex-grow: 2;
+           -moz-box-flex: 2;
+            -ms-flex-positive: 2;
+                flex-grow: 2;
+        height: auto;
+        position: initial;
+        margin: 0 auto;
+        max-width: inherit;
+        margin-left: -11em;
+        margin-left: -webkit-calc(var(--sidebar-width-on-desktop, 15.5em) * -1 / 2 - 2rem);
+        margin-left: -moz-calc(var(--sidebar-width-on-desktop, 15.5em) * -1 / 2 - 2rem);
+        margin-left: calc(var(--sidebar-width-on-desktop, 15.5em) * -1 / 2 - 2rem);
+    }
+ 
+    #main-content {
+        position: initial;
+        max-height: 100%;
+        padding: 2rem 1rem;
+        width: 45.75rem;
+        width: var(--body-width-on-desktop, 45.75rem);
+        max-width: 45.75rem;
+        max-width: var(--body-width-on-desktop, 45.75rem);
+        margin: 0 auto;
+    }
+ 
+    #page-content {
+            max-width: min(90vw, 45.75rem);
+            max-width: min(90vw, var(--body-width-on-desktop, 45.75rem));
+    }
+ 
+    #side-bar {
+        -webkit-transform: translateX(-14.6rem);
+           -moz-transform: translateX(-14.6rem);
+            -ms-transform: translateX(-14.6rem);
+             -o-transform: translateX(-14.6rem);
+                transform: translateX(-14.6rem);
+        -webkit-transform: translateX(-webkit-calc(var(--sidebar-width-on-desktop, 17em) * -1 - 1rem));
+           -moz-transform: translateX(-moz-calc(var(--sidebar-width-on-desktop, 17em) * -1 - 1rem));
+            -ms-transform: translateX(calc(var(--sidebar-width-on-desktop, 17em) * -1 - 1rem));
+             -o-transform: translateX(calc(var(--sidebar-width-on-desktop, 17em) * -1 - 1rem));
+                transform: translateX(calc(var(--sidebar-width-on-desktop, 17em) * -1 - 1rem));
+        -webkit-transition:
+            background-color 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            padding 300ms linear,
+            margin 300ms linear,
+            -webkit-transform 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+        transition:
+            background-color 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            padding 300ms linear,
+            margin 300ms linear,
+            -webkit-transform 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+        -o-transition:
+            background-color 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            padding 300ms linear,
+            margin 300ms linear,
+            -o-transform 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+        -moz-transition:
+            transform 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            background-color 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            padding 300ms linear,
+            margin 300ms linear,
+            -moz-transform 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+        transition:
+            transform 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            background-color 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            padding 300ms linear,
+            margin 300ms linear;
+        transition:
+            transform 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            background-color 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            padding 300ms linear,
+            margin 300ms linear,
+            -webkit-transform 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            -moz-transform 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            -o-transform 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+        border: none;
+        border-color: rgba(var(--swatch-tertiary-color, 170, 170, 170), 0.4);
+        width: var(--sidebar-width-on-desktop, 13.6rem) !important;
+        min-width: var(--sidebar-width-on-desktop, 13.6rem) !important;
+        grid-area: side-bar;
+        padding-right: 2rem;
+        background-color: transparent;
+        background-color: rgba(var(--sidebar-bg-color, 255, 255, 255), 0);
+        top: 0;
+        max-height: 100vh;
+        position: -webkit-sticky;
+        position: sticky;
+        left: 0;
+        padding-left: 0.5rem;
+        direction: rtl;
+        scrollbar-width: thin;
+        -ms-scroll-chaining: none;
+            overscroll-behavior: contain;
+        overflow-y: scroll;
+        scrollbar-color: 
+            rgba(170, 170, 170, 0)  /* Thumb */
+            rgba(252, 252, 252, 0); /* Track */
+        scrollbar-color: 
+        rgba(var(--swatch-primary-darker, 170, 170, 170), 0.1)   /* Thumb */
+        rgba(var(--swatch-tertiary-color, 252, 252, 252), 0.05); /* Track */
+    }
+ 
+    #side-bar::-webkit-scrollbar-track {
+        background-color: rgba(var(--swatch-secondary-color, 244, 244, 244), 0.8);
+    }
+ 
+    #side-bar::-webkit-scrollbar,
+    #side-bar::-webkit-scrollbar-thumb,
+    #side-bar::-webkit-scrollbar-corner {
+        width: 0.5rem;
+        border-right-width: -webkit-calc(100vw + 100vh);
+        border-right-width: calc(100vw + 100vh);
+        border-right-style: inset;
+        border-color: inherit;
+        background-color: rgba(var(--sidebar-bg-color, 255, 255, 255), 0);
+    }
+ 
+    #side-bar:hover,
+    #side-bar:active {
+        background-color: white;
+        background-color: rgba(var(--sidebar-bg-color, 255, 255, 255), 1);
+        padding-right: 0.25rem;
+        margin-right: 1.75rem;
+        -webkit-transform: translateX(0);
+           -moz-transform: translateX(0);
+            -ms-transform: translateX(0);
+             -o-transform: translateX(0);
+                transform: translateX(0);
+        -webkit-transform: translateX(-webkit-calc(var(--sidebar-width-on-desktop, 1rem) - var(--sidebar-width-on-desktop, 0)));
+           -moz-transform: translateX(-moz-calc(var(--sidebar-width-on-desktop, 1rem) - var(--sidebar-width-on-desktop, 0)));
+            -ms-transform: translateX(calc(var(--sidebar-width-on-desktop, 1rem) - var(--sidebar-width-on-desktop, 0)));
+             -o-transform: translateX(calc(var(--sidebar-width-on-desktop, 1rem) - var(--sidebar-width-on-desktop, 0)));
+                transform: translateX(calc(var(--sidebar-width-on-desktop, 1rem) - var(--sidebar-width-on-desktop, 0)));
+        overflow-y: auto;
+        overflow-x: hidden;
+        scrollbar-color: 
+            rgba(170, 170, 170, 1)  /* Thumb */
+            rgba(252, 252, 252, 1); /* Track */
+        scrollbar-color: 
+            rgb(var(--swatch-primary-darker, 170, 170, 170), 1) /* Thumb */
+            rgb(var(--swatch-menubg-color, 252, 252, 252), 1);  /* Track */
+        border-color: rgba(var(--swatch-primary-darker), 1);
+    }
+ 
+    #side-bar:focus-within {
+        background-color: white;
+        background-color: rgba(var(--sidebar-bg-color, 255, 255, 255), 1);
+        padding-right: 0.25rem;
+        margin-right: 1.75rem;
+        -webkit-transform: translateX(0);
+           -moz-transform: translateX(0);
+            -ms-transform: translateX(0);
+             -o-transform: translateX(0);
+                transform: translateX(0);
+        -webkit-transform: translateX(-webkit-calc(var(--sidebar-width-on-desktop, 1rem) - var(--sidebar-width-on-desktop, 0.5rem)));
+           -moz-transform: translateX(-moz-calc(var(--sidebar-width-on-desktop, 1rem) - var(--sidebar-width-on-desktop, 0.5rem)));
+            -ms-transform: translateX(calc(var(--sidebar-width-on-desktop, 1rem) - var(--sidebar-width-on-desktop, 0.5rem)));
+             -o-transform: translateX(calc(var(--sidebar-width-on-desktop, 1rem) - var(--sidebar-width-on-desktop, 0.5rem)));
+                transform: translateX(calc(var(--sidebar-width-on-desktop, 1rem) - var(--sidebar-width-on-desktop, 0.5rem)));
+        overflow-y: auto;
+        overflow-x: hidden;
+        scrollbar-color: 
+            rgba(170, 170, 170, 1)  /* Thumb */
+            rgba(252, 252, 252, 1); /* Track */
+        scrollbar-color: 
+            rgb(var(--swatch-primary-darker, 170, 170, 170), 1) /* Thumb */
+            rgb(var(--swatch-menubg-color, 252, 252, 252), 1);  /* Track */
+        border-color: rgba(var(--swatch-primary-darker), 1);
+    }
+ 
+    #main-content::after {
+        content: " ";
+        position: fixed;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+           -moz-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+           -moz-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        width: 1rem;
+        height: 100%;
+        max-height: 100%;
+        top: 0;
+        -webkit-transition:
+            left 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            background-position 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            opacity 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+        -o-transition:
+            left 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            background-position 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            opacity 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+        -moz-transition:
+            left 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            background-position 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            opacity 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+        transition:
+            left 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            background-position 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            opacity 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+        left: 1rem;
+        background: var(--icon-sidebar-tab);
+        background-repeat: no-repeat;
+        background-position: center left 1rem;
+        background-attachment: fixed;
+        -webkit-background-size: 1rem 12.875rem;
+           -moz-background-size: 1rem 12.875rem;
+             -o-background-size: 1rem 12.875rem;
+                background-size: 1rem 12.875rem;
+        pointer-events: none;
+    }
+ 
+    #side-bar:hover+#main-content::after,
+    #side-bar:active+#main-content::after {
+        left: -17em;
+        left: -webkit-calc(var(--sidebar-width-on-desktop, 17em) * -1);
+        left: -moz-calc(var(--sidebar-width-on-desktop, 17em) * -1);
+        left: calc(var(--sidebar-width-on-desktop, 17em) * -1);
+        background-position: center left -17em;
+        background-position: center left -webkit-calc(var(--sidebar-width-on-desktop, 17em) * -1);
+        background-position: center left -moz-calc(var(--sidebar-width-on-desktop, 17em) * -1);
+        background-position: center left calc(var(--sidebar-width-on-desktop, 17em) * -1);
+        -webkit-transition:
+            left 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            background-position 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            opacity 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+        -o-transition:
+            left 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            background-position 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            opacity 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+        -moz-transition:
+            left 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            background-position 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            opacity 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+        transition:
+            left 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            background-position 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            opacity 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+        opacity: 0;
+        width: 0rem;
+        font-size: 0em;
+    }
+ 
+    #side-bar:focus-within+#main-content::after {
+        left: -17em;
+        left: -webkit-calc(var(--sidebar-width-on-desktop, 17em) * -1);
+        left: -moz-calc(var(--sidebar-width-on-desktop, 17em) * -1);
+        left: calc(var(--sidebar-width-on-desktop, 17em) * -1);
+        background-position: center left -17em;
+        background-position: center left -webkit-calc(var(--sidebar-width-on-desktop, 17em) * -1);
+        background-position: center left -moz-calc(var(--sidebar-width-on-desktop, 17em) * -1);
+        background-position: center left calc(var(--sidebar-width-on-desktop, 17em) * -1);
+        -webkit-transition:
+            left 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            background-position 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            opacity 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+        -o-transition:
+            left 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            background-position 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            opacity 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+        -moz-transition:
+            left 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            background-position 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            opacity 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+        transition:
+            left 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            background-position 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            opacity 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+        opacity: 0;
+        width: 0rem;
+        font-size: 0em;
+    }
+ 
+    #main-content::before {
+        --not-ie: absolute;
+        content: " ";
+        background-color: black;
+        background-color: rgb(var(--swatch-alternate-color, 0, 0, 0));
+        position: fixed;
+        position: var(--not-ie);
+        top: 0;
+        top: var(--final-header-height-on-desktop, 0);
+        left: 0;
+        -webkit-transform: translateX(-12.6rem);
+           -moz-transform: translateX(-12.6rem);
+            -ms-transform: translateX(-12.6rem);
+             -o-transform: translateX(-12.6rem);
+                transform: translateX(-12.6rem);
+        -webkit-transform: translateX(-webkit-calc(var(--sidebar-width-on-desktop, 17em) * -1 + 1rem));
+           -moz-transform: translateX(-moz-calc(var(--sidebar-width-on-desktop, 17em) * -1 + 1rem));
+            -ms-transform: translateX(calc(var(--sidebar-width-on-desktop, 17em) * -1 + 1rem));
+             -o-transform: translateX(calc(var(--sidebar-width-on-desktop, 17em) * -1 + 1rem));
+                transform: translateX(calc(var(--sidebar-width-on-desktop, 17em) * -1 + 1rem));
+        width: 17em;
+        width: var(--sidebar-width-on-desktop, 17em);
+        height: -webkit-calc(100% - 3rem);
+        height: -moz-calc(100% - 3rem);
+        height: calc(100% - 3rem);
+        height: -webkit-calc(100% - var(--final-header-height-on-desktop, 0.688rem) - 2.313rem);
+        height: -moz-calc(100% - var(--final-header-height-on-desktop, 0.688rem) - 2.313rem);
+        height: calc(100% - var(--final-header-height-on-desktop, 0.688rem) - 2.313rem);
+        -webkit-transition:
+            opacity 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            -webkit-transform 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+        transition:
+            opacity 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            -webkit-transform 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+        -o-transition:
+            opacity 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            -o-transform 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+        -moz-transition:
+            transform 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            opacity 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            -moz-transform 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+        transition:
+            transform 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            opacity 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+        transition:
+            transform 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            opacity 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            -webkit-transform 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            -moz-transform 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            -o-transform 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+        opacity: 0.5;
+        pointer-events: none;
+        z-index: 9;
+        margin-bottom: 0;
+        margin-bottom: -webkit-calc(var(--final-header-height-on-desktop, -2.313rem) * -1 - 2.313rem);
+        margin-bottom: -moz-calc(var(--final-header-height-on-desktop, -2.313rem) * -1 - 2.313rem);
+        margin-bottom: calc(var(--final-header-height-on-desktop, -2.313rem) * -1 - 2.313rem);
+    }
+ 
+    #side-bar:hover+#main-content::before,
+    #side-bar:active+#main-content::before {
+        -webkit-transform: translateX(0);
+           -moz-transform: translateX(0);
+            -ms-transform: translateX(0);
+             -o-transform: translateX(0);
+                transform: translateX(0);
+        opacity: 0;
+    }
+ 
+    #side-bar:focus-within+#main-content::before {
+        -webkit-transform: translateX(0);
+           -moz-transform: translateX(0);
+            -ms-transform: translateX(0);
+             -o-transform: translateX(0);
+                transform: translateX(0);
+        opacity: 0;
+    }
+ 
+    #side-bar .side-block {
+        margin-top: 1em;
+        padding-left: 0.25em;
+        background-color: rgb(0, 0, 0, 0);
+        -webkit-border-radius: 0;
+           -moz-border-radius: 0;
+                border-radius: 0;
+        border-left-width: 0rem;
+        border-right-width: 0rem;
+        direction: ltr;
+    }
+ 
+    #side-bar .scpnet-interwiki-wrapper {
+        direction: ltr;
+    }
+ 
+    @supports (-ms-ime-align: auto) {
+        #side-bar {
+            overflow-y: hidden;
+            overflow-x: hidden;
+            -webkit-transform: translateX(-90%) !important;
+               -moz-transform: translateX(-90%) !important;
+                -ms-transform: translateX(-90%) !important;
+                 -o-transform: translateX(-90%) !important;
+                    transform: translateX(-90%) !important;
+        }
+ 
+        #side-bar:hover,
+        #side-bar:active {
+            overflow-y: auto;
+            -webkit-transform: translateX(0) !important;
+               -moz-transform: translateX(0) !important;
+                -ms-transform: translateX(0) !important;
+                 -o-transform: translateX(0) !important;
+                    transform: translateX(0) !important;
+            margin-left: -0.5rem;
+        }
+ 
+        #side-bar:focus-within {
+            overflow-y: auto;
+            -webkit-transform: translateX(0) !important;
+               -moz-transform: translateX(0) !important;
+                -ms-transform: translateX(0) !important;
+                 -o-transform: translateX(0) !important;
+                    transform: translateX(0) !important;
+            margin-left: -0.5rem;
+        }
+ 
+        #main-content::before {
+            left: 1rem;
+            -webkit-transform: translateX(-100%) !important;
+               -moz-transform: translateX(-100%) !important;
+                -ms-transform: translateX(-100%) !important;
+                 -o-transform: translateX(-100%) !important;
+                    transform: translateX(-100%) !important;
+        }
+    }
+}
+
+/* ===== brokedown-database: code file 1 ===== */
+/*
+=========================================================
+   故障数据库 主题版式
+   [2022 Wikidot Theme]
+   by Etinjat
+
+ 像素点代码来源于 http://scp-wiki-cn.wikidot.com/scp-style-resource
+
+遵循CC-BY-SA协议
+==========================================================
+*/
+
+
+
+
+
+
+
+:root:lang(cn){
+         --body-font: 'Dotted Songti Square', 'PT Sans', '等线', sans-serif;
+   --header-font:'Dotted Songti Square',  'ZCOOL XiaoWei', 'Times New Roman', sans-serif;
+   --title-font: 'Dotted Songti Square', 'Times New Roman', '华文中宋',  monospace;
+   --mono-font:'ZCOOL XiaoWei','Dotted Songti Square',  'PT Sans', '微软雅黑', monospace;     
+
+}
+
+:root {
+
+ /* ----------------------
+   修复
+ --------------------- */
+
+     --hdh1-top: 1.5rem;
+      --hdh2-top:6rem;
+       --hdh1-top-mob:2.5rem;
+      --hdh2-top-mob:6rem;
+
+  --topbar-height-on-mobile:2.5rem;
+
+ /* ----------------------
+   特效
+ --------------------- */  
+
+   --fade-in-delay: 4s;   
+--typing-speed:6s;
+
+/* ----------------------
+   基准色以及其他
+ --------------------- */    
+
+                --white-monochrome: 3, 3, 3;
+            /*↑ 标准色 ↑*/
+                  --pale-gray-monochrome:50, 50, 50;
+            /*↑ 非常浅的灰色，用于引用块 ↑*/
+
+              --light-pale-gray-monochrome: 150,150,150;/**/
+            /*↑ 浅灰色 ↑*/
+               --very-light-gray-monochrome:190,187,156;/**/
+            /*↑ 浅灰色 ↑*/
+
+                  --light-pale-gray-monochrome: 205, 205, 205;
+            /*↑ 浅灰色 ↑*/
+                  --very-light-gray-monochrome: 215, 215, 215;
+            /*↑ 浅灰色 ↑*/
+                  --light-gray-monochrome: 240, 230, 230;
+            /*↑ 浅灰色 ↑*/
+                  --black-monochrome: 50, 240, 240;
+            /*↑ 文本色 ↑*/
+
+              --pale-accent: 210,107,92;/**/
+            /*↑ 浅红色，链接颜色 ↑*/
+                  --bright-accent: 100, 120, 225;/**/
+            /*↑ 链接 ↑*/
+                  --medium-accent:000,000,000;
+            /*↑ 红色 - 基准颜色 ↑*/
+                  --dark-accent: 122,145,165;
+            /*↑ 深色 ↑*/
+
+    --alt-accent: 221, 102, 17;
+            /*↑ 橘色，页面不存在的链接颜色 ↑*/
+
+                  --very-dark-accent: 591,5,4;
+                  /*↑ 非常深的红色 ↑*/
+
+                  --alt-accent: 204,102,0;
+            /*↑ 橘色，页面不存在的链接颜色 ↑*/
+
+                  --alt-accent: 204,102,0;
+            /*↑ 橘色，页面不存在的链接颜色 ↑*/
+
+/*---------------------- 其他颜色 ---------------------*/ 
+      --swatch-headerh1-color:var(--swatch-text-general);
+      --swatch-headerh2-color:var(--swatch-headerh1-color);
+
+      --swatch-text-light:230,240,250;
+
+ /*
+--swatch-menubg-medium-dark-color:50,50,100;
+--swatch-primary-darkest:000,000,000;
+*/
+
+      --swatch-tertiary-color:150,158,200;
+      --swatch-text-secondary-color:255,245,255;
+
+/*---------------------- 自设颜色 ---------------------*/ 
+
+      --display-green:23,230,16;
+      --darkest-blue: 22,45,65;
+      --pale-blue:122,145,165;
+
+      --sel-txt-color:rgb(var(--display-green));
+      --sel-bg-color:rgba(0,0,0,0.8);
+
+      --table-border-color:rgba(var(--pale-blue),0.8);
+      --table-th-color:rgba(255,255,255,0.8);
+      --table-th-bg:rgba(var(--darkest-blue),0.8);
+
+      --color-options-btn:#000;
+      
+   /*--------- 修复改色 ------------*/    
+      
+      
+      --dark-grey:70,67,58;
+
+      --background-gradient-color:0,0,0;
+
+      --header-gradient-color-top:0,0,0;
+      --header-gradient-color-middle:0,0,0;
+      --header-gradient-color-bottom:0,0,11;
+
+      --swatch-topmenu-bg-color:var(--dark-grey);
+      --swatch-topmenu-border-color:var(--pale-blue);
+
+/*------------------------------
+   版头标题   
+-------------------------- */    
+
+      --header-h1-font-size:170%;
+      --header-h2-font-size:110%;
+
+     --hdh1-size-mob:200%; 
+     --hdh2-size-mob:120%; 
+
+   /*------------- 颜色 -----------------*/   
+      --hdtt-color-11:rgb(var(--darkest-blue));
+      --hdtt-color-22:rgb(var(--swatch-text-general));
+
+      --hdtt-flcl-11:yellow;
+      --hdtt-flcl-22:purple;  
+
+  /*------------- 滤镜 -----------------*/   
+
+      --hdtt-filter-000:drop-shadow(1px 0px 0px var(--hdtt-flcl-11)) drop-shadow(1px 2px 0px var(--hdtt-flcl-22)) saturate(100%) brightness(100%);
+      --hdtt-filter-aaa:drop-shadow(5px 2px 1px var(--hdtt-flcl-11)) drop-shadow(2px 2px 1px var(--hdtt-flcl-22)) saturate(500%) brightness(150%);
+      --hdtt-filter-bbb:drop-shadow(1px 0px 1px var(--hdtt-flcl-11)) drop-shadow(1px 0px 0px var(--hdtt-flcl-22)) saturate(100%) brightness(100%);
+      --hdtt-filter-ccc:var(--hdtt-filter-000);
+      --hdtt-filter-ddd:drop-shadow(1px 0px 0px var(--hdtt-flcl-11)) drop-shadow(1px 0px 0px var(--hdtt-flcl-22)) saturate(200%) brightness(100%)
+      --hdtt-filter-eee:drop-shadow(1px 0px 0px var(--hdtt-flcl-11)) drop-shadow(1px 2px 0px var(--hdtt-flcl-22)) saturate(100%) brightness(100%);
+      --hdtt-filter-fff:var(--hdtt-filter-000);
+      --hdtt-filter-ggg:drop-shadow(2px 2px 1px var(--hdtt-flcl-11)) drop-shadow(1px 2px 0px var(--hdtt-flcl-22)) saturate(500%) brightness(150%);
+      --hdtt-filter-hhh:var(--hdtt-filter-000);
+
+/* -------------- 文字背景色 ------------------ */
+ /* w 指 -webkit- 另作一项 */
+
+--hdtt-line-a:linear-gradient(90deg, var(--hdtt-color-11) 40%, var(--hdtt-color-11) 41%, transparent 41.5%,transparent 65%, var(--hdtt-color-22) 65.5%, var(--hdtt-color-22) 90%);
+--hdtt-line-aw:-webkit-linear-gradient(90deg, var(--hdtt-color-11) 40%, var(--hdtt-color-11) 41%, transparent 41.5%,transparent 65%, var(--hdtt-color-22) 65.5%, var(--hdtt-color-22) 90%);
+
+      --hdtt-line-0: linear-gradient(90deg, var(--hdtt-color-11) 0%, var(--hdtt-color-22) 90%);
+      --hdtt-line-0w: -webkit-linear-gradient(90deg, var(--hdtt-color-11) 0%, var(--hdtt-color-22) 90%);
+
+      --hdtt-line-aa: linear-gradient(-90deg, var(--hdtt-color-11) 0%, var(--hdtt-color-11) 21%, transparent 21.5%,transparent 25%, var(--hdtt-color-22) 25.5%, var(--hdtt-color-22) 90%);
+      --hdtt-line-aaw: -webkit-linear-gradient(-90deg, var(--hdtt-color-11) 0%, var(--hdtt-color-11) 21%, transparent 21.5%,transparent 25%, var(--hdtt-color-22) 25.5%, var(--hdtt-color-22) 90%);
+
+      --hdtt-line-bbw: linear-gradient(-90deg, var(--hdtt-color-11) 0%, var(--hdtt-color-11) 30%, transparent 31.5%,transparent 35%, var(--hdtt-color-22) 35.5%, var(--hdtt-color-22) 90%);
+      --hdtt-line-bbw: -webkit-linear-gradient(-90deg, var(--hdtt-color-11) 0%, var(--hdtt-color-11) 30%, transparent 31.5%,transparent 35%, var(--hdtt-color-22) 35.5%, var(--hdtt-color-22) 90%);
+
+      --hdtt-line-cc: linear-gradient(-90deg, var(--hdtt-color-11) 0%, var(--hdtt-color-11) 50%, transparent 50.1%,transparent  65%, var(--hdtt-color-22) 65.5%, var(--hdtt-color-22) 90%);
+      --hdtt-line-ccw: -webkit-linear-gradient(-90deg, var(--hdtt-color-11) 0%, var(--hdtt-color-11) 50%, transparent 50.1%,transparent  65%, var(--hdtt-color-22) 65.5%, var(--hdtt-color-22) 90%);
+
+      --hdtt-line-dd: linear-gradient(90deg, var(--hdtt-color-11) 0%, var(--hdtt-color-11) 50%, transparent 50.1%,transparent  65%, var(--hdtt-color-22) 65.5%, var(--hdtt-color-22) 90%);
+      --hdtt-line-ddw: -webkit-linear-gradient(90deg, var(--hdtt-color-11) 0%, var(--hdtt-color-11) 50%, transparent 50.1%,transparent  65%, var(--hdtt-color-22) 65.5%, var(--hdtt-color-22) 90%);
+
+      --hdtt-line-1:linear-gradient(-30deg, var(--hdtt-color-11) 40%, var(--hdtt-color-22) 90%);
+      --hdtt-line-1w:-webkit-linear-gradient(-30deg, var(--hdtt-color-11) 40%, var(--hdtt-color-22) 90%);      
+
+/* -------------------------
+      版头logo
+-------------------------- */  
+  --logo-bg-111:rgba(var(--darkest-blue),1);
+  --logo-bg-222:rgba(255,215,0,0.5);
+
+      --logo-mask-size:7rem;    
+
+/*
+------------------------------
+版头背景
+------------------------------
+*/
+    --content-mask-size:7.5rem;  
+--header-mask-size:8.5rem;    
+--header-bg-color:rgba(var(--darkest-blue),0.8);
+--scanline-filter-color:rgba(var(--display-green),0.5);
+     
+
+  --scanline-cl-111:rgb(var(--darkest-blue));
+   --scanline-cl-222:rgb(var(--swatch-text-general));   
+
+      
+      --scanline-header-height:3rem;
+      --scanline-hd-start:calc(0% - var(--scanline-header-height));
+      --scanline-hd-end:calc(100% + var(--scanline-header-height));
+      
+
+
+  --scanline-speed:6s;    
+      
+      
+  --scanline-filter:brightness(300%) saturate(120%);
+
+   --hdbg-scanline-000:linear-gradient(0deg, transparent 0%, transparent 2%,var(--scanline-cl-111) 5%, var(--scanline-cl-222) 20%, var(--scanline-cl-222) 30%, var(--scanline-cl-111) 50%, transparent 90%, transparent 100%);
+  
+      --hdtt-scanline-00w:-webkit-linear-gradient(0deg, transparent 0%, transparent 2%,var(--scanline-cl-111) 5%, var(--scanline-cl-222) 20%, var(--scanline-cl-222) 30%, var(--scanline-cl-111) 50%, transparent 90%, transparent 100%);
+  
+/*--------------------------------------------  
+      版头杂项 
+------------------------------------------- */ 
+
+          --account-op-bg:#333;
+      --account-op-bg222:#000;
+      --account-op-bd000: 5px double #000;
+      --account-op-bd111: 2px solid #000;
+      --account-btn-color: #fff;
+
+      --search-color:inherit;
+       --search-bg:#000;
+       --search-bg-hover:#333; 
+
+/*
+--------------------------------
+正文部分
+--------------------------------
+*/    
+
+/*-------------- 引用块 ------------------*/      
+      --quote-bg:rgba(var(--swatch-secondary-color),0.8);
+
+      --quote-bd-c11:rgba(var(--swatch-text-general),0.8);
+
+      --quote-bg-box111:rgba(var(--swatch-secondary-color),0.8);
+      --quote-bghv-box111:rgba(33,33,33,0.8);
+
+       --quote-bd-sz11:2px;
+       --quote-bd:4px solid rgba(33,33,33,0.8);
+
+/*-------------- 扫描引用块 ------------------*/      
+      
+      --scanlineletter-end:200%;/*文本扫描尽头*/
+
+      --scanline-ct-bg:var(--header-bg-color);
+      
+      
+     --scanline-size-base:3rem;
+      --scanline-size-width:var( --scanline-size-base);
+      --scanline-size-height:var( --scanline-size-base);
+      --scanline-lgsz-horiz:2rem;
+      --scanline-lgsz-verti:2rem;
+      
+      
+      --scanline-strat-verti:calc(0% - var(--scanline-size-height)) ;
+      --scanline-strat-horiz:calc(0% - var(--scanline-size-width)) ;  
+      --scanline-limit-verti:calc(100% + var(--scanline-size-height) + 2rem) ;
+      --scanline-limit-horiz:calc(100% + var(--scanline-size-width) + 2rem) ;
+      
+
+        --hdbg-scanline-111:linear-gradient(-90deg, transparent 0%, transparent 2%,var(--scanline-cl-111) 5%, var(--scanline-cl-222) 20%, var(--scanline-cl-222) 40%, var(--scanline-cl-111) 60%, transparent 90%, transparent 100%);
+       --hdtt-scanline-11w:-webkit-linear-gradient(0deg,transparent 2%,var(--scanline-cl-111) 5%, var(--scanline-cl-111) 10%, var(--scanline-cl-222) 20%, var(--scanline-cl-222) 40%, var(--scanline-cl-111) 60%, transparent 90%, transparent 100%);
+
+      
+      --scanline-letter-speed:5s;
+      --scanline-block-speed:10s;
+      
+      --scanline-cl-444:rgba(0,255,255,1);
+      --scanline-cl-333:rgba(0,191,255,1);
+
+
+      --hdbg-scanline-222:linear-gradient(-90deg, transparent 0%, transparent 2%,var(--scanline-cl-333) 5%, var(--scanline-cl-444) 20%, var(--scanline-cl-444) 40%, var(--scanline-cl-333) 60%, transparent 90%, transparent 100%)
+            
+      --hdbg-scanline-22w:-webkit-linear-gradient(-90deg, transparent 0%, transparent 2%,var(--scanline-cl-333) 5%, var(--scanline-cl-444) 20%, var(--scanline-cl-444) 40%, var(--scanline-cl-333) 60%, transparent 90%, transparent 100%);
+    
+      
+     --hdbg-scanline-333:linear-gradient(180deg, transparent 0%, transparent 60%,var(--scanline-cl-333) 80%, var(--scanline-cl-444) 85%, var(--scanline-cl-444) 90%, var(--scanline-cl-333) 95%, transparent 98%, transparent 100%);
+
+      --hdbg-scanline-33w:-webkit-inear-gradient(180deg, transparent 0%, transparent 60%,var(--scanline-cl-333) 80%, var(--scanline-cl-444) 85%, var(--scanline-cl-444) 90%, var(--scanline-cl-333) 95%, transparent 98%, transparent 100%);
+    
+       --hdbg-scanline-444:linear-gradient(0deg, transparent 0%, transparent 2%,var(--scanline-cl-111) 5%, var(--scanline-cl-222) 20%, var(--scanline-cl-222) 40%, var(--scanline-cl-111) 60%, transparent 90%, transparent 100%);
+       --hdbg-scanline-44w:-webkit-linear-gradient(0deg,transparent 2%,var(--scanline-cl-111) 5%, var(--scanline-cl-111) 10%, var(--scanline-cl-222) 20%, var(--scanline-cl-222) 40%, var(--scanline-cl-111) 60%, transparent 90%, transparent 100%);
+
+/* ------------------- 图标数据 ---------------------- */
+ 
+--header-image:var(--grid-image); 
+
+--logo-image: var(--icon-scp) ; 
+
+--icon-scp: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abrokedown-database-jp/logo-scp.svg');
+
+ 
+--grid-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIYAAABoCAMAAAAD6XhRAAAAn1BMVEUAAAD////+/v7R0dHV1dXV1dXx8fGurq7+/v7S0tL9/f3////r6evS0tKDg4Pn5+fr6+v+/v7n5+fU1NTZ2dnr6+vb29u3t7dKSkpVVVXk5OT////Z2dn39/f9/f39/f3q6ur+/v79/P37+vubm5v39/f///+srKyioqLKysrz8/P4+Pjt7e2NjY36+vr////8+/zq6ur9/f3+/v7z8/M2KvSPAAAAM3RSTlMAU9Ocok4S1cJVnmGwYSn6/r+nsvv1/bIYCUJx5KiB9GO15fyPXjeZdmEVJcNVNFusuKCSbWiCAAABQ0lEQVRo3u3aXU/CMBTG8VJ1dLOTVdlUJmI3FeVF0cP3/2zecvUcEwnpzHOu/9l+ycoFJzVmEDOyZ0pxbi9wkI1dhou80BiX4pViLCUOriaVwiiDxijlWiluZKQwpjUZyTEaMsgggwwyyCCDDDLIICMBRiJ/EMg4OuNWZSiLhbumvsdFHsyshePlAQetlTkOHvcL5RE+mCcf0VjpIp5OLA5cL73DLznCR/Ha2cjq/TP+KgM6omSQQQYZZJBBBhlkkEEGGWSQQcYQGX/fb0x+wXiJDo2VzuHpxCpF30flJcG8arsvp+6+vLL7WkizhMX8NJvA6g0X+YmOqLKQHNAvhQwyyCCDDDLIIIMMMsgg4/8xErnpRMYhI40rRpl6xeg9mNUazlI8DtYbaXGwreoPXLTBfBZwdiHioIhhpz0ifHlcfP8AKMWr0khhiCAAAAAASUVORK5CYII=");
+
+
+}
+
+/*
+===================================
+主体
+==================================
+*/
+
+p{
+      font-size: 1.2em
+}
+
+
+#edit-page-textarea::selection ，
+::selection { 
+    color:#cc6600;
+    color: var(--sel-txt-color) ;
+    background:#5a100e; 
+    background:var(--sel-bg-color) ;
+}
+
+::-moz-selection { 
+    color:#cc6600;
+    color: var(--sel-txt-color) ;
+    background:#5a100e; 
+    background:var(--sel-bg-color) ;
+}
+
+#edit-page-textarea::-moz-selection,
+#edit-page-textarea::selection { 
+    color:#000;
+    background:rgb(var(--pale-blue)) ;
+}
+
+.blinkblock ::-moz-selection,
+.blinkblock ::selection {
+   background: green;
+   color:#000 ;
+}
+
+div:is(.linebolck-inbox, .blockquote, blockquote) ::-moz-selection,
+div:is(.linebolck-inbox, .blockquote, blockquote)  ::selection {
+     background-color:rgb(var(--swatch-text-general),0.6) ;
+      color: #000;
+}
+
+div:is(.et-typing, .scanline-letter-verti, .scanline-letter) *::-moz-selection,
+div:is(.et-typing, .scanline-letter-verti, .scanline-letter) *::-moz-selection{
+      background-color: rgba(var(--pale-blue), 1) ;
+      -webkit-text-fill-color: #000;
+}
+
+
+
+/*-------------------------*/
+
+#skrollr-body, #container {
+  background-image: none;
+ letter-spacing: 0.5px;
+}
+
+#container-wrap-wrap::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0.03) 50%, rgba(0, 0, 0, 0.45) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.22), rgba(0, 255, 0, 0.11), rgba(0, 0, 255, 0.22));
+    background-size: auto, auto;
+  z-index: -1;
+  background-size: 100% 2px, 5px 100%;/*2 3 */
+}
+
+
+@media (max-width: 500px){
+#container-wrap-wrap::before {
+  background-size: 100% 2px, 4px 100%;
+}
+}
+
+/*
+===================================
+版头标题
+h1:before 修改为 after
+==================================
+*/
+
+
+#header h1 a:after,
+#header h2 span:before{
+
+    font-weight: 500;
+
+      background-image:var(--hdtt-line-1) ;
+background-image:var(--hdtt-line-1w) ;
+      background-size: 1rem;
+     background-repeat:  repeat-x;
+       text-shadow: none;
+
+-webkit-background-clip: text;
+   background-clip: text;
+-webkit-text-fill-color: transparent;
+text-fill-color: transparent;
+
+    -webkit-animation: flashing 5s infinite; 
+      animation: flashing 5s infinite; 
+
+      animation-timing-function:ease-out;
+     -webkit-animation-timing-function:ease-out;
+ -webkit-filter:var(--hdtt-filter-000); 
+      filter:var(--hdtt-filter-000);
+}
+
+@keyframes flashing{
+0%{ opacity: 1; 
+     -webkit-filter:var(--hdtt-filter-000); filter:var(--hdtt-filter-000);
+      background-image:var(--hdtt-line-0); background-image:var(--hdtt-line-0w);
+      }    
+1%{ opacity: 0.8; 
+    -webkit-filter:var(--hdtt-filter-aaa); filter:var(--hdtt-filter-aaa);
+    background-image:var(--hdtt-line-dd);background-image:var(--hdtt-line-dd);
+      }    
+2%{ opacity: 1; 
+      -webkit-filter:var(--hdtt-filter-bbb);filter:var(--hdtt-filter-bbb);
+      }    
+40%{ opacity: 1; 
+      -webkit-filter:var(--hdtt-filter-ccc);filter:var(--hdtt-filter-ccc);
+      background-image:var(--hdtt-line-0);background-image:var(--hdtt-line-0w);
+      }     
+43%{ opacity: 1; 
+      -webkit-filter:var(--hdtt-filter-ddd);filter:var(--hdtt-filter-ddd);
+      }    
+44%{ opacity: 1; 
+      -webkit-filter:var(--hdtt-filter-eee); filter:var(--hdtt-filter-eee);
+      }        
+80%{ opacity: 1; 
+      -webkit-filter:var(--hdtt-filter-fff); filter:var(--hdtt-filter-fff);
+      background-image:var(--hdtt-line-0) ; background-image:var(--hdtt-line-0w) ; 
+      }    
+83%{ opacity: 1; 
+      -webkit-filter:var(--hdtt-filter-ggg);filter:var(--hdtt-filter-ggg);
+      background-image:var(--hdtt-line-cc) ;background-image:var(--hdtt-line-ccw) ;
+      }        
+84%{ opacity: 1;
+      -webkit-filter:var(--hdtt-filter-hhh); filter:var(--hdtt-filter-hhh);
+      background-image:var(--hdtt-line-0);  background-image:var(--hdtt-line-0w); 
+      }  
+100%{ opacity: 1;
+      -webkit-filter:var(--hdtt-filter-hhh);filter:var(--hdtt-filter-hhh);
+      }    
+}
+
+@media (max-width: 500px){
+#header h1 a {
+  letter-spacing: 2px;
+  }
+
+  #header h1 a {
+  font-size: var(--header-h1-mob-size);
+  }
+
+  #header h2 span {
+     font-size: var(--header-h1-mob-size);
+  }
+}
+
+/*
+===================================
+版头logo
+==================================
+*/
+
+#header::before {
+ display: none
+}
+
+#header-extra-div-1:after,
+#header-extra-div-1:before,
+#header-extra-div-1{
+      display: block;
+  top:0;
+  position: absolute;
+  width: 100%;
+  height:var(--header-height-on-desktop);
+  z-index: -1;
+      background: var(--logo-image) ;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: var(--logo-mask-size);
+       filter: brightness(100%) drop-shadow(0 0 1px #333) drop-shadow(0 0 0px #333) drop-shadow(0 0 0px #333);
+}
+
+#header-extra-div-1:after,
+#header-extra-div-1:before{
+   content: ' ';
+    mask:var(--logo-image);
+    mask-size:var(--logo-mask-size);
+   mask-repeat: no-repeat;
+   mask-position: center;   
+    -webkit-mask:var(--logo-image);
+    -webkit-mask-size: var(--logo-mask-size);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;   
+            background-size: 50%;
+      opacity: 0.4;
+
+}
+
+#header-extra-div-1:after{
+ background: var(--logo-bg-111);
+ -webkit-animation: lg-aft 4s infinite; 
+ animation: lg-aft 4s infinite; 
+      opacity: 0.9;
+}
+
+#header-extra-div-1:before{
+ background: var(--logo-bg-222);
+-webkit-animation: lg-bf 4s infinite; 
+ animation: lg-bf 4s infinite; 
+ opacity: 0.5;  
+}
+
+@keyframes lg-bf{
+      0%{left:0rem; top:0rem}
+      0.01%{left:0.5rem; top:-0.5rem}
+      2%{left:0.5rem; top:-0.5rem}
+      2.01%{left:0rem; top:0rem}
+      40%{left:0rem; top:0rem}
+      40.01%{left:0.5rem; top:0rem}
+      42%{left:0.5rem; top:0rem}
+      42.01%{left:0rem; top:0rem}
+      80%{left:0rem; top:0rem}
+      80.01%{left:-0.5rem; top:0.2rem}
+      83%{left:-0.5rem; top:0.2rem}
+      83.01%{left:0rem; top:0rem}
+      100%{left:0rem; top:0rem}
+}
+
+@keyframes lg-aft{
+     0%{left:0rem; top:0rem}
+      0.01%{left:0.5rem; top:0rem}
+      3%{left:0.5rem; top:0rem}
+      3.01%{left:0rem; top:0rem}
+      40%{left:0rem; top:0rem}
+      40.01%{left:-1rem; top:0rem}
+      43%{left:-1rem; top:0rem}
+      43.1%{left:0rem; top:0rem}
+      80%{left:0rem; top:0rem}
+      80.01%{left:0.5rem; top:-0.5rem}
+      83%{left:0.5rem; top:-0.5rem}
+      83.01%{left:0rem; top:0rem}
+      100%{left:0rem; top:0rem}
+}
+
+/*
+===================================
+版头背景
+==================================
+*/
+
+#extra-div-6:before,
+#extra-div-6:after,
+#extra-div-6{
+   position: absolute;
+   display: block;
+   top:0;
+   left: 0;
+height: var(--header-height-on-desktop);
+width: 100%;
+}
+
+#extra-div-6{  
+  background-color:var(--header-bg-color);
+          mask:var(--header-image);
+    mask-size:var(--header-mask-size);
+   mask-repeat: no-repeat;
+   mask-position: center;   
+    -webkit-mask:var(--header-image);
+    -webkit-mask-size: var(--header-mask-size);
+    -webkit-mask-repeat: repeat;
+    -webkit-mask-position: center;   
+      opacity: 0.8;
+      overflow-y: hidden;
+} 
+
+
+#extra-div-6:before{
+      content: '';
+      display: block;
+      z-index: -5;
+      
+      background-position:0% 0%;
+      background-size:100% var(--scanline-header-height);
+      background-repeat: no-repeat;
+      
+      background-image: var(--hdbg-scanline-00w);
+      background-image: var(--hdbg-scanline-000);
+      -webkit-filter: var(--scanline-filter); 
+      filter: var(--scanline-filter); 
+      
+-webkit-animation: scanline var(--scanline-speed) infinite; 
+ animation: scanline var(--scanline-speed) infinite; 
+
+}
+
+ /*----- 扫描线动画 -------*/       
+
+@keyframes scanline {
+0%{ background-position:0% var(--scanline-hd-start);   }     
+50%{background-position:0% var(--scanline-hd-end);}  
+100%{background-position:0% var(--scanline-hd-end);}    
+}
+
+
+/*
+===================================
+      新版黑标 修复 
+==================================
+*/
+
+
+/*-------- 背景 -------*/
+
+#container-wrap-wrap #container-wrap{
+      background: none ;
+}
+
+/*-------- 标题 -------*/
+#header h1 a:before,
+#header h2 span:after{
+     color: transparent;
+      display: none;
+}
+
+#header h1 a, 
+#header h1 a::before, 
+#header h2 span, 
+#header h2 span::before {
+  margin: 0;
+  padding: 0;
+  z-index: 0;
+  text-align: center;
+ -webkit-text-stroke: 0;
+  /*! left: 50%; */
+  /*! margin-left: 0; */
+}
+
+#header h1 a:before {
+  top: var(--hdh1-top);
+}
+
+#header h2 span:before  {
+  top: var(--hdh2-top);
+}
+
+@media only screen and (max-width: 500px){
+#header h1 a:after {
+  top: var(--hdh1-top-mob);
+  font-size:var(--hdh1-size-mob);
+      font-weight: 400;
+}
+
+#header h2  span:before {
+  top: var(--hdh2-top-mob);
+  font-size:var(--hdh2-size-mob);
+} 
+}
+
+/*-------- 侧栏 -------*/
+#side-bar div.menu-item a img {
+  display: block;
+}
+
+#interwiki .heading p, 
+#side-bar .heading p ,
+#content-wrap #side-bar .collapsible-block a[href="javascript:;"]  {
+  color: rgb(var(--swatch-primary));
+}
+
+/*
+===================================
+侧边栏
+==================================
+*/
+
+#main-content::after {
+filter: sepia(100%) hue-rotate(150deg);
+}
+
+/* 大长条 */
+#main-content::before {
+background-color: var(--quote-bg) !important;
+}
+
+/*
+===================================
+正文
+==================================
+*/
+
+/* ------------ 
+评分
+------------------ */
+
+
+.creditButtonStandalone p a{
+   background: rgb(var(--rating-module-bg-color));
+   color: rgb(var(--rating-module-text-color)) ;
+   box-shadow: 0 0 3px rgb(var(--rating-module-bottom-border-color));
+}
+
+
+/* ------------ 
+引用块
+------------------ */
+
+/* ------------ 普通引用块 ------------------ */
+.blockquote,
+blockquote{
+      background-color: var(--quote-bg);
+      border: var(--quote-bd);
+      box-shadow: inset 0 0 0 .0625rem rgba(var(--blockquote-border-color),.2),inset .0625rem 0 0 0 rgba(var(--blockquote-border-color),.2),inset 0 -.0625rem 0 0 rgba(var(--blockquote-border-color),.2);
+}
+
+.blockquote hr,
+blockquote hr{
+      opacity: 0.5;
+}
+
+code,.code{
+      border: .12rem  dashed rgba(var(--swatch-border-color),.5);
+}
+
+/* ------------ 标题盒子 ------------------ */
+.titleblock {
+        background-color: rgb(var(--gray-monochrome));
+        color:rgb(var(--text-white-monochrome));
+        padding: 0.5rem 1rem 0.10rem;
+        margin: 1.5rem 0rem 0.5rem 0rem;
+        box-shadow: 0 0.2rem 0.3rem rgba(0,0,0,.5);
+        border: solid rgb(var(--bright-accent)) 2px;
+}
+
+.titlebox{
+       color: rgba(255,255,255,0.9);
+       position: relative;
+       top: -1.6rem;
+       background-color: rgb(var(--bright-accent));
+       padding: 0.25rem 1rem;
+       line-height: 0.1rem;
+}
+
+.titleblock-green,
+.titleblock-green .titlebox {
+        border: solid  rgb(var(--display-green)); 2px;
+}
+
+.titleblock-green .titlebox{
+  color: rgba(0,0,0,0.9);
+  background-color: rgb(var(--display-green));
+}
+
+.titleblock-blue,
+.titleblock-green .titlebox {
+        border: solid  rgb(var(--display-green)); 2px;
+}
+
+.titleblock-blue .titlebox{
+  color: rgba(0,0,0,0.9);
+  background-color: rgb(var(--pale-blue));
+}
+.titleblock-blue,
+.titleblock-green .titlebox {
+        border: solid  rgba(var(--pale-blue),0.9); 2px;
+}
+
+/* ------------ 流光盒子  ------------------ */
+
+
+
+.blinkblock{      
+      padding: 0 0.5rem;  
+      background-color: rgba(10,15,12,0.8);
+      border:3px solid green;
+      padding: 0 0.5rem;
+      color:rgba(var(--display-green), 0.8);
+
+ -webkit-animation-timing-function:ease-out;
+ -webkit-animation-direction:alternate;    
+ -webkit-animation: blinkborder 1s infinite; 
+ animation: blinkborder 1s infinite; 
+      animation-timing-function:ease-out;
+       animation-direction:alternate;
+}
+
+.blinlbar{
+      opacity: 0;
+       -webkit-animation: blinkbar 2s infinite; 
+ animation: blinkbar 2s infinite; 
+}
+
+@keyframes blinkborder {
+to { border-color:rgb(var(--display-green));  }  
+}
+
+@keyframes blinkbar {
+to { opacity: 1  }  
+}
+
+/* ------------ 动线 ------------------ */
+
+.linebolck-outbox {
+      padding: var(--quote-bd-sz11);
+    transition: ease-in .3s;
+    background: linear-gradient(0, var(--quote-bd-c11)  var(--quote-bd-sz11),  var(--quote-bd-c11) var(--quote-bd-sz11)) no-repeat, 
+                linear-gradient(-90deg, var(--quote-bd-c11) var(--quote-bd-sz11),  var(--quote-bd-c11) var(--quote-bd-sz11)) no-repeat, 
+                linear-gradient(-180deg,  var(--quote-bd-c11) var(--quote-bd-sz11), var(--quote-bd-c11) var(--quote-bd-sz11)) no-repeat, 
+                linear-gradient(-270deg,  var(--quote-bd-c11) var(--quote-bd-sz11),  var(--quote-bd-c11)  var(--quote-bd-sz11)) no-repeat;
+    background-size: 0 var(--quote-bd-sz11), var(--quote-bd-sz11) 0, 0 var(--quote-bd-sz11), var(--quote-bd-sz11) 0;
+    background-position: left top, right top, right bottom, left bottom;
+            border: var(--quote-bd);
+}
+
+.linebolck-outbox:hover{
+    background-size: 100% 2px,  2px 100%, 100% 2px, 2px 100%;
+}
+
+.linebolck-inbox{
+      padding:0.5rem 1rem;
+      background: var(--quote-bg-box111);
+      transition: background ease-in .3s;     
+}
+
+.linebolck-inbox:hover{
+      background:var(--quote-bghv-box111);
+      transition: ease-in .3s;     
+      transition: background ease-in .3s;     
+}
+
+/* ------------ 区块扫描线 ------------------ */
+
+.scanline-wrap{
+      display: flex;
+      flex-wrap: nowrap;
+      align-items:stretch;
+      width:100%;
+}
+
+.scanline-cell{
+      flex-basis:100%;
+}
+.scanline-place{
+      color:transparent;
+}
+
+.scanline-animation{ 
+
+      z-index: -1;
+     margin-left: -100%;
+
+   background:var(--scanline-ct-bg);
+   mask-size:var(--content-mask-size);
+   mask-repeat: no-repeat;
+   mask-position: center;   
+    -webkit-mask:var(--header-image);
+    -webkit-mask-size: var(--content-mask-size);
+    -webkit-mask-repeat: repeat;
+    -webkit-mask-position: center;   
+      opacity: 0.8;
+}
+
+.scanline-animation:before{
+      content: '';
+      display: block;
+      z-index: -5;
+      
+      height:100%;
+      width: 100%;
+
+      background: var(--hdbg-scanline-11w);
+      background: var(--hdbg-scanline-111);
+      
+      -webkit-filter: var(--scanline-filter); 
+      filter: var(--scanline-filter); 
+
+-webkit-animation: scanline-horiz var(--scanline-block-speed) infinite; 
+ animation: scanline-horiz var(--scanline-block-speed) infinite; 
+                    
+      background-position:0% 0%;
+      background-size:var(--scanline-size-width) 100%;
+      background-repeat: no-repeat;
+}
+
+
+.scanline-verti .scanline-animation:before{
+  
+      background: var(--hdbg-scanline-44w);
+      background: var(--hdbg-scanline-444);
+-webkit-animation: scanline-verti  var(--scanline-block-speed) infinite; 
+ animation: scanline-verti  var(--scanline-block-speed) infinite; 
+      
+      background-size:100% var(--scanline-size-height);
+      background-repeat: no-repeat;
+}
+
+@keyframes scanline-horiz {
+0%{ background-position:var(--scanline-strat-horiz) 0%;   }     
+50%{background-position:var(--scanline-limit-horiz) 0%;}  
+100%{background-position:var(--scanline-limit-horiz) 0%;}    
+}
+
+
+@keyframes scanline-verti {
+0%{ background-position:0% var(--scanline-strat-verti);}     
+50%{background-position:0% var(--scanline-limit-verti);}  
+100%{background-position:0% var(--scanline-limit-verti);}      
+}
+
+
+.scanline-intext{
+            padding:0 1rem;
+}
+
+.scanline-logo .scanline-animation{
+       -webkit-mask:var(--logo-image);
+       -webkit-mask-repeat: no-repeat;
+       -webkit-mask-position: center;
+     -webkit-mask-size:auto 60%;
+
+mask:var(--logo-image);
+   mask-repeat: no-repeat;
+   mask-position: center;
+       mask-size:auto 60%;
+}
+
+
+.scanline-logo .scanline-animation:before{
+            background-size:var(--scanline-lgsz-horiz) 100%;
+}
+
+.scanline-logo.scanline-verti .scanline-animation:before{
+            background-size:100% var(--scanline-lgsz-verti);
+}
+
+
+/* ------------ 单行扫描线 ------------------ */
+
+ #page-content .scanline-letter-verti p,
+ #page-content .scanline-letter p{
+       background-color: rgba(var(--swatch-text-general),1);
+       background-image: var(--hdbg-scanline-11w);        
+        background-image: var(--hdbg-scanline-111);   
+       
+        -webkit-background-clip: text;
+        color: transparent;
+
+    -webkit-animation: scanlineletter  var(--scanline-letter-speed)  infinite;
+         animation: scanlineletter  var(--scanline-letter-speed)  infinite;
+  
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
+    background-size: 1.5rem 200%;
+   background-position: 0% 0%;    
+    background-repeat:  no-repeat;
+}
+
+ #page-content .scanline-letter-verti p{
+           background-size: 100% 1.5rem;
+       background-color: rgba(var(--swatch-text-general),1);
+               background-image: var(--hdbg-scanline-33w);        
+        background-image: var(--hdbg-scanline-333);        
+    -webkit-animation: scanlineletter-verti var(--scanline-letter-speed)  infinite;
+         animation: scanlineletter-verti  var(--scanline-letter-speed)  infinite;
+}
+
+@keyframes scanlineletter{
+    0% {background-position: 0% 0%;}
+    100% {background-position:var(--scanlineletter-end) 0%;}
+}
+
+@keyframes scanlineletter-verti{
+    0% {background-position: 0% 0%;}
+    100% {background-position:0% var(--scanlineletter-end)}
+}
+
+
+/* ------------ 
+表格
+------------------ */
+table.wiki-content-table td,
+table.wiki-content-table th, 
+table.wiki-content-table tr {
+  border: .1rem solid var(--table-border-color) !important;
+}
+
+table.wiki-content-table th {
+  color:var(--table-th-color) !important;
+      background: var(--table-th-bg) !important;
+}
+
+table.wiki-content-table{
+      background:none !important;
+}
+
+
+table.wiki-content-table td {
+      background: rgba(22,22,22,0.5) !important;
+}
+
+
+
+/* ------------ 
+图片框
+------------------ */
+.scp-image-block {
+  --box-shadow: rgba(var(--darkest-blue),0.8);
+    border: .0625rem outset rgba(var(--swatch-primary),1);
+}
+
+/*====================== 
+结尾
+========================*/
+#page-options-bottom a.btn {
+      opacity: 0.8;
+
+}
+
+#footer a,
+#page-options-container a.btn {
+      color:var(--color-options-btn);   
+}
+
+/*====================== 
+特效
+========================*/
+
+
+
+/* ------------ 打字机 ------------------ */
+
+.typing-center{
+      font-size: 150%;
+      text-align: center;
+}
+
+/*  打字机动作  */
+
+#page-content .et-typing p{
+        background-image: linear-gradient(0deg, rgb(var(--swatch-text-general)) 100%, transparent);        
+        -webkit-background-clip: text;
+        color: transparent;
+
+    animation: etwww  var(--typing-speed)  forwards;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
+    background-size: 100% 0%;
+    background-repeat:  no-repeat;
+}
+
+@media (max-width: 500px) {    
+#page-content .et-typing  p{
+    animation: etwwwmob 3s  forwards;
+    background-size: 0% 100%;
+}
+}
+
+@keyframes etwww{
+    0% {background-size: 0% 100%;}
+    100% {background-size:100% 100%;}
+}
+
+@keyframes etwwwmob{
+      0% {background-size: 100% 0%;}
+    100% { background-size:100% 100%;}
+}
+
+#page-content .et-typing p:nth-child(2)  { animation-delay: calc(0.5 * var(--fade-in-delay)); }
+#page-content .et-typing p:nth-child(3)  { animation-delay: calc(1 * var(--fade-in-delay)); }
+#page-content .et-typing p:nth-child(4) { animation-delay: calc(2 * var(--fade-in-delay)); }
+#page-content .et-typing p:nth-child(5) { animation-delay: calc(3 * var(--fade-in-delay)); }
+#page-content .et-typing p:nth-child(6) { animation-delay: calc(4 * var(--fade-in-delay)); }
+#page-content .et-typing p:nth-child(7) { animation-delay: calc(5 * var(--fade-in-delay)); }
+#page-content .et-typing p:nth-child(8) { animation-delay: calc(6 * var(--fade-in-delay)); }
+#page-content .et-typing p:nth-child(9) { animation-delay: calc(7 * var(--fade-in-delay)); }
+#page-content .et-typing p:nth-child(10) { animation-delay: calc(8 * var(--fade-in-delay)); }
+#page-content .et-typing p:nth-child(11) { animation-delay: calc(9 * var(--fade-in-delay)); }
+#page-content .et-typing p:nth-child(12) { animation-delay: calc(10 * var(--fade-in-delay)); }
+#page-content .et-typing p:nth-child(13) { animation-delay: calc(11 * var(--fade-in-delay)); }
+#page-content .et-typing p:nth-child(14) { animation-delay: calc(12 * var(--fade-in-delay)); }
+#page-content .et-typing p:nth-child(15) { animation-delay: calc(13 * var(--fade-in-delay)); }
+#page-content .et-typing p:nth-child(16) { animation-delay: calc(14 * var(--fade-in-delay)); }
+#page-content .et-typing p:nth-child(17) { animation-delay: calc(15 * var(--fade-in-delay)); }
+#page-content .et-typing p:nth-child(18) { animation-delay: calc(16 * var(--fade-in-delay)); }
+#page-content .et-typing p:nth-child(19) { animation-delay: calc(17 * var(--fade-in-delay)); }
+#page-content .et-typing p:nth-child(20) { animation-delay: calc(18 * var(--fade-in-delay)); }
+#page-content .et-typing p:nth-child(n+20) { animation-delay: calc(n * var(--fade-in-delay)); }
+
+/* ===== brokedown-database: code file 2 (language-box colours) ===== */
+/*
+==================
+故障数据库 语言框样式 22222222222222222222222
+==================
+*/
+
+:root {
+    --bright-accent: 62,76,148;
+    --medium-accent: 62,76,148;
+    --sidebar-links-text: 255,0,255;
+    --swatch-menutxt-general-color:122,145,165;
+}
+[[/code]]
+[[/collapsible]]
+
+[[include :scp-jp:component:license-box-backend
+|author=etinjat]]
+
+> **ファイル名:** logo-scp.svg
+> **作者:** [[*user etinjat]]（原語版は作者の CSS リポジトリで配布）
+> **ライセンス:** 原語版に記載なし（投稿前に著者へ確認してください）
+
+> **ファイル名:** img-wikidown.png
+> **作者:** 原語版ではサンドボックスWikiの添付として配布
+> **ライセンス:** 原語版に記載なし（投稿前に著者へ確認してください）
+
+> **内蔵CSS:** etinjat Wiki の component:collapsible-sidebar / component:centered-header-bhl を候補のコードファイルに統合
+> **ライセンス:** 各コンポーネントのライセンス表記に従います（投稿前に原語版で確認してください）。
+
+> **フォント:** ZCOOL XiaoWei / Noto Sans・Serif JP
+> **ライセンス:** SIL Open Font License（Google Fonts から配信）
+
+[[include :scp-jp:component:license-box-end]]
+
+[[/iftags]]
