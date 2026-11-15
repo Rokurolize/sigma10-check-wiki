@@ -1,0 +1,1685 @@
+[[module CSS]]
+/*
+    Tales of the Mosaic Theme
+    [2025 Wikidot Theme]
+    Created by Jezixo
+
+    CC BY-SA 3.0
+*/
+
+/* ADDING FANCY FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica+SC&display=swap');
+
+/* ———— COLORS ———— */
+
+/* SETTING COLOR PALETTE */
+:root {
+    --white-monochrome: 251,250,249;
+    --pale-gray-monochrome: 241, 241, 241;
+    --light-pale-gray-monochrome: 242, 245, 247;
+    --very-light-gray-monochrome: 211, 216, 222;
+    --light-gray-monochrome: 151, 160, 168;
+    --gray-monochrome: 40, 40, 40;
+    --dark-gray-monochrome: 30, 30, 30;
+    --black-monochrome: 12, 12, 12;
+    --pale-accent: 118, 162, 186;
+    --bright-accent: 44, 103, 166;
+    --medium-accent: 29, 60, 89;
+    --dark-accent: 19, 41, 52;
+    --alt-accent: 240, 164, 117;
+}
+
+/* ADJUSTING UI ELEMENT COLORS */
+
+:root {
+    --link-color: var(--black-monochrome);
+    --visited-link-color: var(--black-monochrome);
+    --newpage-color: var(--white-monochrome);
+    --footnotes-footer-num-color: var(--medium-accent);
+    --header-gradient-color-bottom: var(--gray-monochrome);
+    --swatch-menubg-medium-dark-color: var(--dark-gray-monochrome);
+    --login-myaccount-underline-color: var(--swatch-text-secondary-color);
+    --login-myaccount-hover-color: var(--white-monochrome);
+}
+
+#main-content {
+    --tabs-bg: var(--dark-accent);
+    --tabs-bottom-border-color: none;
+    --toc-header-bg-color: var(--medium-accent);
+    --toc-header-text-color: var(--white-monochrome);
+}
+
+#page-content {
+    color: rgb(var(--white-monochrome));
+}
+
+#login-status #account-options {
+    background: rgb(var(--black-monochrome));
+}
+
+@media (min-width: 36rem) {
+    #search-top-box {
+        background: rgba(var(--search-focus-textbox-bg-color), 0.1);
+    }
+}
+
+#header h1 a:focus {
+  outline-color: rgb(var(--alt-accent));
+}
+
+#content-wrap {
+    background: linear-gradient(34.77deg, #011018 29.51%, #132934 76.89%, #011018 107.83%);
+}
+
+/* ———— STYLING UI ELEMENTS ———— */
+
+/* PAGE VARIABLES */
+
+:root {
+    --base-font-size: 1rem;
+    --body-font: "EB Garamond", "Noto Serif JP", "Yu Mincho", "YuMincho", serif;
+    --header-font: "EB Garamond", "Noto Serif JP", "Yu Mincho", "YuMincho", serif;
+    --UI-font: "Hepta Slab", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", PTRootUI,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantrell,"Helvetica Neue",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --header-title: "Tales of the Mosaic";
+    --header-subtitle: "それはいつもこうだった";
+    --logo-image: none;
+    --diagonal-stripes: none;
+    --header-height-on-desktop: 16rem;
+    --header-height-on-mobile: 16rem;
+}
+
+/* LINKS */
+
+#page-content a {
+    font-weight: bold;
+    text-decoration: underline;
+    color: rgba(var(--white-monochrome));
+}
+
+#page-content a:visited {
+    color: rgba(var(--white-monochrome));
+}
+
+#page-content a:hover:not(.footnote-footer a:hover, #u-source-code-button .collapsible-block a:hover, #page-content .tessera-body a:hover) {
+    color: rgb(var(--alt-accent));
+}
+
+/* MAKING UTILITY ELEMENTS READABLE */
+
+.licensebox .collapsible-block-link {
+    color: rgba(var(--white-monochrome));
+    opacity: 1;
+ }
+
+/* This extra margin fixes a bug on the theme page where the tags intersect the theme licensebox. */
+.licensebox {
+    margin-bottom: 2rem;
+}
+
+div.page-watch-options a,
+.licensebox p,
+.page-tags a,
+#page-info {
+    color: rgba(var(--white-monochrome));
+}
+
+#action-area {
+    background: rgb(var(--white-monochrome));
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+#action-area a {
+    color: rgb(var(--black-monochrome));
+    text-decoration: underline;
+}
+
+div#revision-list .pager a:hover {
+    color: rgb(var(--black-monochrome));
+    text-decoration: underline;
+}
+
+div#revision-list .pager a,
+.code p,
+.footnotes-footer .footnote-footer a::before,
+.modalbox a,
+tbody tr td #toc #toc-list a
+ {
+    color: rgb(var(--black-monochrome));
+}
+
+/* PAGE HEADER TEXT */
+
+#header h1 a,  #header h1 a::before {
+  display: flex;
+  font-size: 0em;
+}
+
+#header h2 span::before {
+    display: none;
+}
+
+#header h2 span {
+    margin-top: calc(var(--header-height-on-mobile)/2 + var(--header-h1-font-size)/2 - 4em);
+    width: 80%;
+}
+
+#header h1 a::after {
+    font-weight: 400;
+    font-size: 3.2rem;
+    font-family: 'IM Fell DW Pica SC', 'EB Garamond', 'Noto Serif JP', 'Yu Mincho', 'YuMincho', serif;
+}
+
+#header h2 span::after {
+    text-transform: none;
+    font-family: 'EB Garamond', 'IM Fell DW Pica SC', 'Noto Serif JP', 'Yu Mincho', 'YuMincho', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+/* BREADCRUMBS */
+
+#breadcrumbs a:before, .pseudocrumbs a:before {
+    content: none;
+    display: none;
+}
+
+:is(#breadcrumbs,.pseudocrumbs) a {
+    margin-right: 0px;
+    color: rgb(var(--white-monochrome));
+    padding-right: 0.3rem;
+}
+
+:is(#breadcrumbs,.pseudocrumbs) a:hover {
+   color: rgb(var(--alt-accent));
+   text-decoration: underline;
+}
+
+#breadcrumbs, .pseudocrumbs {
+    color: rgb(var(--white-monochrome));
+}
+
+/* ———— SKYLINE HEADER ANIMATION ———— */
+
+/* Making the nav bar solid, so the animation can appear from behind it */
+
+div#header {
+    width: 100%;
+    max-width: 100%;
+}
+
+@media (min-width: 36rem) {
+    #search-top-box {
+        right: 15%;
+    }
+    #login-status {
+        left: 15%;
+    }
+}
+
+#header div#top-bar {
+    max-width: none;
+}
+
+.top-bar {
+    margin: auto;
+}
+
+#header div#top-bar {
+    max-width: none;
+    background: rgb(var(--dark-gray-monochrome));
+    border-block: 2px solid rgb(var(--black-monochrome));
+}
+
+/* SKYLINE LAYERS */
+
+#extra-div-1,
+#extra-div-2,
+#extra-div-3,
+#extra-div-4,
+#extra-div-5 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    height: 310px;
+}
+
+/* Layer 1 – Background */
+#extra-div-1 {
+    background: calc(50% - -40px) top/1640px repeat-x;
+    animation: fadeIn 1.5s ease-in 0.5s forwards;
+    z-index: 0;
+}
+
+/* Layer 2 - Lighthouse */
+#extra-div-2 {
+    background: calc(50% - -40px) top/1640px repeat-x;
+    animation: fadeIn 0.5s ease-in 0.3s forwards;
+    z-index: 1;
+}
+
+/* Layer 3 - Farthest buildings */
+#extra-div-3 {
+    background: calc(50% - -40px) top/1620px repeat-x;
+    animation: backgroundZoomIn 1.5s ease-out 0.5s forwards, fadeIn 1.5s ease-in 0.5s forwards;
+    z-index: 2;
+}
+
+/* Layer 4 - Mid-distance buildings */
+#extra-div-4 {
+    background: calc(50% - -50px) top/1620px repeat-x;
+    animation: slideLeft 1.5s ease-out 0.5s forwards, backgroundZoomIn 1.5s ease-out 0.5s forwards, fadeIn 1s ease-in 0.5s forwards;
+    z-index: 3;
+}
+
+/* Layer 5 - Closest buildings */
+#extra-div-5 {
+    background: calc(50% - -30px)  top/1620px repeat-x;
+    animation: slideRight 1.5s ease-out 0.5s forwards, backgroundZoomIn 1.5s ease-out 0.5s forwards, fadeIn 0.5s ease-in 0.5s forwards;
+    z-index: 4;
+}
+
+/* HEADER TEXT ANIMATION */
+
+#header h1 a::after {
+    transform: scale(0.7);
+    opacity: 0;
+    animation: textGrowIn 1s ease-out 1s forwards;
+}
+
+#header h2 span {
+    transform: scale(0.7);
+    opacity: 0;
+    animation: textGrowIn 1s ease-out 1.2s forwards;
+}
+
+/* SKYLINE ANIMATIONS */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes backgroundZoomIn {
+    0% {
+        background-size: 1620px;
+    }
+    100% {
+        background-size: 1640px;
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        background-position-x:  calc(50% - -30px);
+    }
+    100% {
+        background-position-x: calc(50% - -40px);
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        background-position-x:  calc(50% - -50px);
+    }
+    100% {
+        background-position-x: calc(50% - -40px);
+    }
+}
+
+@keyframes textGrowIn {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* WHITE LINE ANIMATION */
+/* Making the white line around the title grow in on page load */
+
+.title-container .tessera-eyebrow-container::before, .title-container .tessera-eyebrow-container::after {
+  animation: whiteLineReveal 2s cubic-bezier(.43,0,.1,1) 0.5s;
+  animation-fill-mode: both;
+}
+
+.title-container .tessera-eyebrow-container::before {
+  transform: rotate(180deg);
+}
+
+@keyframes whiteLineReveal {
+  from { clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%); }
+  to { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); }
+}
+
+/* ACCESSIBILITY MODE */
+/* Turning off all animations if user prefers reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+    #extra-div-1,
+    #extra-div-2,
+    #extra-div-3,
+    #extra-div-4,
+    #extra-div-5,
+    #header h1 a::after,
+    #header h2 span {
+        opacity: 1;
+        background: calc(50% - -40px) top/1640px repeat-x;
+        animation: none;
+        transform: none;
+    }
+
+    .title-container .tessera-eyebrow-container::before, .title-container .tessera-eyebrow-container::after {
+        animation: none;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+
+}
+
+/* ———— CUSTOM PAGE ELEMENTS ———— */
+
+/* TITLE SECTION */
+
+div#page-title {
+    display: none;
+}
+
+.title-container {
+    width: fit-content;
+    margin: 1rem auto 3rem;
+    text-align: center;
+}
+
+span.tessera-title {
+    font-weight: bold;
+    color: rgb(var(--white-monochrome));
+    font-size: 2.5rem;
+    max-width: 24.3rem;
+    display: block;
+    margin: 0.5rem auto 0.5rem;
+}
+
+/* EYEBROW HEADER  */
+
+.tessera-eyebrow-container {
+    margin: 3rem auto 0rem;
+    display: flex;
+    align-items: center;
+}
+
+.tessera-eyebrow-text {
+    text-transform: uppercase;
+    color: rgb(var(--white-monochrome));
+    font-weight: 700;
+    font-size: 1rem;
+    width: max-content;
+    display: block;
+    margin-inline: 1rem;
+    letter-spacing: 0.15rem;
+    font-family: 'IM Fell DW Pica SC', 'EB Garamond', 'Noto Serif JP', 'Yu Mincho', 'YuMincho', serif;
+}
+
+.tessera-eyebrow-container p, .title-container p {
+    margin: 0px;
+}
+
+.tessera-eyebrow-container::before, .tessera-eyebrow-container::after {
+    content: "";
+    height: 1px;
+    background: rgb(var(--white-monochrome));
+    width: 100%;
+}
+
+/* AUTHOR TAG */
+
+div#u-title-byline {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+div#u-title-byline a {
+    font-weight: 700;
+}
+
+div#u-title-byline p {
+    margin: 0px;
+}
+
+/* TESSERA BODY PAPER DOCUMENT */
+
+.tessera-body {
+    padding: 24px 40px;
+    background: linear-gradient(203.04deg, #FBFAF9 40.5%, #f1f1f1 100%);
+    box-shadow: 0px 16px 32px -4px rgba(12, 12, 13, 0.1), 0px 4px 4px -4px rgba(12, 12, 13, 0.05), inset 0px 0px 30px 0px #AE8B75;
+    border-radius: 0px;
+    margin-block: 2.5rem;
+    max-width: 35rem;
+    margin: 0rem auto 3rem;
+}
+
+.tessera-body p {
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: rgb(var(--dark-gray-monochrome));
+}
+
+#page-content .tessera-body a {
+    font-weight: bold;
+    color: rgba(var(--bright-accent));
+    text-decoration: underline;
+}
+
+#page-content .tessera-body a:visited {
+    color: rgb(var(--black-monochrome));
+}
+
+#page-content .tessera-body a:hover {
+    color: rgb(var(--medium-accent));
+    text-decoration-style: double;
+}
+
+@media (max-width: 479px) {
+    .tessera-body {
+        padding: 1rem 1rem;
+    }
+}
+
+/* This makes the color of images in the paper doc blend with the paper color - ideal for Costodias' monochrome line art, though you might want to disable this when using other kinds of art. */
+
+.paper img {
+    mix-blend-mode: multiply;
+}
+
+/* MOSAIC EARTHWORM */
+
+.earthworm {
+    margin-block: 3rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: rgb(var(--white-monochrome));
+    text-align: center;
+}
+
+#page-content .earthworm a {
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    margin: 1rem auto;
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: 0.5s;
+    border: 1px solid rgb(var(--white-monochrome));
+    background: rgb(var(--dark-accent));
+    border-radius: 0px 8px 0px 8px;
+    border-left-color: rgb(var(--alt-accent));
+    border-bottom-color: rgb(var(--alt-accent));
+    max-width: 25rem;
+}
+
+#page-content .earthworm a:visited {
+    color: rgb(var(--white-monochrome));
+    border-color: rgb(var(--light-gray-monochrome));
+}
+
+#page-content .earthworm a:hover {
+    text-decoration: none;
+    border: 1px solid rgb(var(--alt-accent));
+    color: rgb(var(--alt-accent));
+}
+
+.earthworm .tessera-eyebrow-container {
+    margin: 3rem auto 1rem;
+}
+
+.earthworm p, .earthworm a {
+    font-weight: bold;
+}
+
+/* AUDIO PLAYER */
+
+.audio {
+    margin-top: 2rem;
+}
+
+.audio iframe {
+    width: 300px;
+}
+
+/* ———— MOBILE TWEAKS ———— */
+
+/* Making the title text wrap on small screens */
+
+@media (max-width: 460px) {
+  #header h1 a {
+    padding: 0;
+    line-height: 1;
+  }
+  #header h2 span {
+    padding-top: 15%;
+  }
+}
+
+/* Making the title size smaller on small screens */
+
+@media (max-width: 300px) {
+    #header h1 a::after {
+        font-size: 2rem;
+    }
+
+}
+
+/* Fixing nav bar text size */
+@media only screen and (max-width: 56.25rem) {
+    #header div[class*=top-bar]>ul>li>a {
+        background: 0 0;
+        font-size: calc(var(--base-font-size)*(13/15));
+    }
+}
+
+/* ———— DAY THEME ———— */
+
+/* These values get replaced when the other themes are enabled. */
+
+div#header {
+    --login-line-divider-color: var(--swatch-primary-darkest);
+    --login-username-color: var(--swatch-primary-darkest);
+    --login-myaccount-color: var(--swatch-primary-darkest);
+    --login-myaccount-hover-color: var(--white-monochrome);
+    --search-icon-color: var(--black-monochrome);
+}
+
+:root {
+    --header-gradient-color-bottom: 1, 16, 24;
+    --header-gradient-color-middle: 255, 255, 255;
+    --header-gradient-color-top: 255, 255, 255;
+}
+
+#extra-div-1 {
+    background-image: url('https://scp-wiki.wikidot.com/local--files/theme:tales-of-the-mosaic/day-bg.webp');
+}
+
+#extra-div-2 {
+    background-image: url('https://scp-wiki.wikidot.com/local--files/theme:tales-of-the-mosaic/day-lighthouse.webp');
+}
+
+#extra-div-3 {
+    background-image: url('https://scp-wiki.wikidot.com/local--files/theme:tales-of-the-mosaic/day-layer1.webp');
+}
+
+#extra-div-4 {
+    background-image: url('https://scp-wiki.wikidot.com/local--files/theme:tales-of-the-mosaic/day-layer2.webp');
+}
+
+#extra-div-5 {
+    background-image: url('https://scp-wiki.wikidot.com/local--files/theme:tales-of-the-mosaic/day-layer3.webp');
+}
+
+#header h1 a::after {
+    text-shadow: 5px 0px 5px #132934, 0px 4px 5px #132934, -5px 0px 5px #132934, 0px -4px 5px #132934, 5px 5px 10px #132934, -5px 5px 10px #132934, -5px -5px 10px #132934, 5px -5px 10px #132934;
+}
+
+#header h2 span::after {
+    text-shadow: 5px 0px 5px #132934, 0px 4px 5px #132934, -5px 0px 5px #132934, 0px -4px 5px #132934, 5px 5px 10px #132934, -5px 5px 10px #132934, -5px -5px 10px #132934, 5px -5px 10px #132934;
+}
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css
+]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=2
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css
+]]
+
+[[iftags +テーマ]]
+
+[[module css]]
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css");
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css");
+@import url("https://scp-jp.wdfiles.com/local--code/component%3Atoggle-sidebar-bhl/1");
+@import url("https://scp-jp.wdfiles.com/local--code/component%3Acentered-header-bhl/1");
+
+/* CODE BLOCKS */
+
+.code {
+    margin-block: 2rem;
+}
+
+.tessera-body .code p {
+    font-size: 1rem;
+}
+
+/* MAKING THE SOURCE CODE BUTTON LOOK NICE */
+#u-source-code-button .collapsible-block a {
+    border: 1px solid white;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    display: block;
+    transition: 0.5s;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-block: 2rem;
+    font-weight: bold;
+}
+
+#u-source-code-button .collapsible-block a:hover {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+
+.collapsible-block-unfolded-link {
+    margin-bottom: 1rem;
+}[[/module]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** Tales of the Mosaicテーマ
+**翻訳責任者:** SCP-JP
+**翻訳年:** 2026
+**原題:** Tales of the Mosaic Theme
+**著作権者:** Jezixo
+**作成年:** 2025
+**初訳時参照リビジョン:** 25
+**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:tales-of-the-mosaic ソース]
+[[include :scp-jp:credit:end-preview]]
+
+[[div class="title-container"]]
+[[div class="tessera-eyebrow-container"]]
+[[span class="tessera-eyebrow-text"]]Theme[[/span]]
+[[/div]]
+
+[[span class="tessera-title"]]Tales of the Mosaic[[/span]]
+
+[[div id="title-byline"]]
+by [https://scp-wiki.wikidot.com/jezixo-s-author-page Jezixo]
+[[/div]]
+
+[[/div]]
+
+[[div class="tessera-body"]]
+これは[[https://scp-wiki.wikidot.com/tales-of-the-mosaic Tales of the Mosaic]]シリーズのために作成されたテーマです。
+
+[[[theme:black-highlighter-theme|Black Highlighterテーマ]]]をベースにしており、トグル式サイドバーと中央寄せヘッダーのコンポーネントを使用しています。
+
+このテーマはTessera（シリーズの作品）を書くことのみを想定しています。他の用途にも使用できますが、自己責任でお願いします。
+
+このテーマを使用するには、ページの先頭に以下を記述してください。
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:black-highlighter-theme]]@@
+@@[[include :scp-jp:component:toggle-sidebar-bhl]]@@
+@@[[include :scp-jp:component:centered-header-bhl]]@@
+@@[[include :scp-jp:theme:tales-of-the-mosaic-jp]]@@
+[[/div]]
+
+このテーマには、ヘッダー画像用の「時間帯」シーンが3種類あります。デフォルトでは昼が有効になっています。夕暮れに切り替えるには、上記コードの最終行を以下に差し替えてください。
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:tales-of-the-mosaic-jp | dusk=--]]@@
+[[/div]]
+
+夜の場合は、以下を使用してください。
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:tales-of-the-mosaic-jp | night=--]]@@
+[[/div]]
+
+[[/div]]
+
+[[div class="tessera-body"]]
+Tesseraを書く場合は、以下のテンプレートをコピー＆ペーストすれば、必要なページ構造のほとんどをすぐに埋められます。
+
+[[div class="code"]]
+@@[[div class="title-container"]]@@
+@@[[module rate]]@@
+
+@@[[div class="tessera-eyebrow-container"]]@@
+@@[[span class="tessera-eyebrow-text"]]Tessera[[/span]]@@
+@@[[/div]]@@
+
+@@[[span class="tessera-title"]]@@**TITLE**@@[[/span]]@@
+
+@@[[div id="title-byline"]]@@
+**YOUR-NAME** 作
+@@[[/div]]@@
+
+@@[[/div]]@@
+
+@@[[div class="tessera-body"]]@@
+**STORY-GOES-HERE**
+@@[[/div]]@@
+
+@@[[div class="earthworm"]]@@
+@@[[div class="tessera-eyebrow-container"]]@@
+@@[[span class="tessera-eyebrow-text"]]Previous[[/span]]@@
+@@[[/div]]@@**PREVIOUS-TALE**
+
+@@[[div class="tessera-eyebrow-container"]]@@
+@@[[span class="tessera-eyebrow-text"]]Next[[/span]]@@
+@@[[/div]]@@**NEXT-TALE**
+@@[[/div]]@@
+[[/div]]
+
+**ALL CAPS**のテキストを自分の内容に置き換えるだけで構いません。それぞれについて補足します。
+
+|| **TITLE** || 作品のタイトルをここに書いてください。 ||
+|| **YOUR-NAME** || あなたのユーザー名です。著者ページがある場合はリンクを貼れます。誰かの画像を使用している場合は、この下の行に「art by」とアーティスト名を記載できます。 ||
+|| **STORY-GOES-HERE** || ここが本文です。ここに書く内容が思い浮かばない場合、今日Tesseraを投稿する準備はまだできていないかもしれません。 ||
+|| **PREVIOUS-TALE**|| 前のTesseraへのリンクです。@@[[[Tesseraのタイトル]]]@@のように書いてください。 ||
+|| **NEXT-TALE**|| 次のTesseraへのリンクです。まだ作られていない場合は、ここに@@//近日公開//@@と書いてください。 ||
+
+ページにはプレビューコンポーネントとライセンスボックスコンポーネントも忘れずに追加してください。さらに、ページの末尾には[CroquemboucheのABテスト](https://scp-wiki.wikidot.com/forum/t-17022412/should-your-article-have-a-2nd-rating-module)を追加することをおすすめします。Jezixo氏は、そうすることを幸運と考えています。
+
+-----
+@@@@
+[[span style="font-size: 1.2rem;"]][[collapsible show="Tesseraに音声を使用する場合は、こちらの手順に従ってください。" hide="音声の使用手順を閉じる"]][[/span]]
+
+**音声の使用手順**
+音声付きのTesseraを作るには、以下のテンプレートでページを作成してください。
+
+音声ファイルをあなたのページにアップロードし、その直接リンクを取得してください（ページ下部の「ファイル」をクリックし、「情報」から「Full file URL」の隣にあるリンクをコピーします）。
+
+そのリンクをテンプレートの「**AUDIO-FILE-LINK**」部分に貼り付けてください。
+
+音声を他の人が作成した場合は、バイライン欄でその人のクレジットを忘れずに記載してください。
+
+[[div class="code"]]
+
+@@[[div class="title-container"]]@@
+@@[[module rate]]@@
+
+@@[[div class="tessera-eyebrow-container"]]@@
+@@[[span class="tessera-eyebrow-text"]]Tessera[[/span]]@@
+@@[[/div]]@@
+
+@@[[span class="tessera-title"]]@@**TITLE**@@[[/span]]@@
+
+@@[[div id="title-byline"]]@@
+**YOUR-NAME** 作
+@@[[/div]]@@
+
+@@[[div class="audio"]]@@
+@@[[include :snippets:html5player@@
+@@|type=audio@@
+@@|url=@@**AUDIO-FILE-LINK**
+@@]]@@
+@@[[/div]]@@
+
+@@[[/div]]@@
+
+@@[[div class="tessera-body"]]@@
+**STORY-GOES-HERE**
+@@[[/div]]@@
+
+@@[[div class="earthworm"]]@@
+@@[[div class="tessera-eyebrow-container"]]@@
+@@[[span class="tessera-eyebrow-text"]]Previous[[/span]]@@
+@@[[/div]]@@**PREVIOUS-TALE**
+
+@@[[div class="tessera-eyebrow-container"]]@@
+@@[[span class="tessera-eyebrow-text"]]Next[[/span]]@@
+@@[[/div]]@@**NEXT-TALE**
+@@[[/div]]@@
+
+[[/div]]
+
+[[/collapsible]]
+
+[[/div]]
+
+[[div id="source-code-button"]]
+[[collapsible show="テーマのソースコードを表示" hide="ソースコードを隠す"]]
+[[code type="css"]]
+/*
+    Tales of the Mosaic Theme
+    [2025 Wikidot Theme]
+    Created by Jezixo
+
+    CC BY-SA 3.0
+*/
+
+/* ADDING FANCY FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica+SC&display=swap');
+
+/* ———— COLORS ———— */
+
+/* SETTING COLOR PALETTE */
+:root {
+    --white-monochrome: 251,250,249;
+    --pale-gray-monochrome: 241, 241, 241;
+    --light-pale-gray-monochrome: 242, 245, 247;
+    --very-light-gray-monochrome: 211, 216, 222;
+    --light-gray-monochrome: 151, 160, 168;
+    --gray-monochrome: 40, 40, 40;
+    --dark-gray-monochrome: 30, 30, 30;
+    --black-monochrome: 12, 12, 12;
+    --pale-accent: 118, 162, 186;
+    --bright-accent: 44, 103, 166;
+    --medium-accent: 29, 60, 89;
+    --dark-accent: 19, 41, 52;
+    --alt-accent: 240, 164, 117;
+}
+
+/* ADJUSTING UI ELEMENT COLORS */
+
+:root {
+    --link-color: var(--black-monochrome);
+    --visited-link-color: var(--black-monochrome);
+    --newpage-color: var(--white-monochrome);
+    --footnotes-footer-num-color: var(--medium-accent);
+    --header-gradient-color-bottom: var(--gray-monochrome);
+    --swatch-menubg-medium-dark-color: var(--dark-gray-monochrome);
+    --login-myaccount-underline-color: var(--swatch-text-secondary-color);
+    --login-myaccount-hover-color: var(--white-monochrome);
+}
+
+#main-content {
+    --tabs-bg: var(--dark-accent);
+    --tabs-bottom-border-color: none;
+    --toc-header-bg-color: var(--medium-accent);
+    --toc-header-text-color: var(--white-monochrome);
+}
+
+#page-content {
+    color: rgb(var(--white-monochrome));
+}
+
+#login-status #account-options {
+    background: rgb(var(--black-monochrome));
+}
+
+@media (min-width: 36rem) {
+    #search-top-box {
+        background: rgba(var(--search-focus-textbox-bg-color), 0.1);
+    }
+}
+
+#header h1 a:focus {
+  outline-color: rgb(var(--alt-accent));
+}
+
+#content-wrap {
+    background: linear-gradient(34.77deg, #011018 29.51%, #132934 76.89%, #011018 107.83%);
+}
+
+/* ———— STYLING UI ELEMENTS ———— */
+
+/* PAGE VARIABLES */
+
+:root {
+    --base-font-size: 1rem;
+    --body-font: "EB Garamond", "Noto Serif JP", "Yu Mincho", "YuMincho", serif;
+    --header-font: "EB Garamond", "Noto Serif JP", "Yu Mincho", "YuMincho", serif;
+    --UI-font: "Hepta Slab", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", PTRootUI,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantrell,"Helvetica Neue",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --header-title: "Tales of the Mosaic";
+    --header-subtitle: "それはいつもこうだった";
+    --logo-image: none;
+    --diagonal-stripes: none;
+    --header-height-on-desktop: 16rem;
+    --header-height-on-mobile: 16rem;
+}
+
+/* LINKS */
+
+#page-content a {
+    font-weight: bold;
+    text-decoration: underline;
+    color: rgba(var(--white-monochrome));
+}
+
+#page-content a:visited {
+    color: rgba(var(--white-monochrome));
+}
+
+#page-content a:hover:not(.footnote-footer a:hover, #u-source-code-button .collapsible-block a:hover, #page-content .tessera-body a:hover) {
+    color: rgb(var(--alt-accent));
+}
+
+/* MAKING UTILITY ELEMENTS READABLE */
+
+.licensebox .collapsible-block-link {
+    color: rgba(var(--white-monochrome));
+    opacity: 1;
+ }
+
+/* This extra margin fixes a bug on the theme page where the tags intersect the theme licensebox. */
+.licensebox {
+    margin-bottom: 2rem;
+}
+
+div.page-watch-options a,
+.licensebox p,
+.page-tags a,
+#page-info {
+    color: rgba(var(--white-monochrome));
+}
+
+#action-area {
+    background: rgb(var(--white-monochrome));
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+#action-area a {
+    color: rgb(var(--black-monochrome));
+    text-decoration: underline;
+}
+
+div#revision-list .pager a:hover {
+    color: rgb(var(--black-monochrome));
+    text-decoration: underline;
+}
+
+div#revision-list .pager a,
+.code p,
+.footnotes-footer .footnote-footer a::before,
+.modalbox a,
+tbody tr td #toc #toc-list a
+ {
+    color: rgb(var(--black-monochrome));
+}
+
+/* PAGE HEADER TEXT */
+
+#header h1 a,  #header h1 a::before {
+  display: flex;
+  font-size: 0em;
+}
+
+#header h2 span::before {
+    display: none;
+}
+
+#header h2 span {
+    margin-top: calc(var(--header-height-on-mobile)/2 + var(--header-h1-font-size)/2 - 4em);
+    width: 80%;
+}
+
+#header h1 a::after {
+    font-weight: 400;
+    font-size: 3.2rem;
+    font-family: 'IM Fell DW Pica SC', 'EB Garamond', 'Noto Serif JP', 'Yu Mincho', 'YuMincho', serif;
+}
+
+#header h2 span::after {
+    text-transform: none;
+    font-family: 'EB Garamond', 'IM Fell DW Pica SC', 'Noto Serif JP', 'Yu Mincho', 'YuMincho', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+/* BREADCRUMBS */
+
+#breadcrumbs a:before, .pseudocrumbs a:before {
+    content: none;
+    display: none;
+}
+
+:is(#breadcrumbs,.pseudocrumbs) a {
+    margin-right: 0px;
+    color: rgb(var(--white-monochrome));
+    padding-right: 0.3rem;
+}
+
+:is(#breadcrumbs,.pseudocrumbs) a:hover {
+   color: rgb(var(--alt-accent));
+   text-decoration: underline;
+}
+
+#breadcrumbs, .pseudocrumbs {
+    color: rgb(var(--white-monochrome));
+}
+
+/* ———— SKYLINE HEADER ANIMATION ———— */
+
+/* Making the nav bar solid, so the animation can appear from behind it */
+
+div#header {
+    width: 100%;
+    max-width: 100%;
+}
+
+@media (min-width: 36rem) {
+    #search-top-box {
+        right: 15%;
+    }
+    #login-status {
+        left: 15%;
+    }
+}
+
+#header div#top-bar {
+    max-width: none;
+}
+
+.top-bar {
+    margin: auto;
+}
+
+#header div#top-bar {
+    max-width: none;
+    background: rgb(var(--dark-gray-monochrome));
+    border-block: 2px solid rgb(var(--black-monochrome));
+}
+
+/* SKYLINE LAYERS */
+
+#extra-div-1,
+#extra-div-2,
+#extra-div-3,
+#extra-div-4,
+#extra-div-5 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    height: 310px;
+}
+
+/* Layer 1 – Background */
+#extra-div-1 {
+    background: calc(50% - -40px) top/1640px repeat-x;
+    animation: fadeIn 1.5s ease-in 0.5s forwards;
+    z-index: 0;
+}
+
+/* Layer 2 - Lighthouse */
+#extra-div-2 {
+    background: calc(50% - -40px) top/1640px repeat-x;
+    animation: fadeIn 0.5s ease-in 0.3s forwards;
+    z-index: 1;
+}
+
+/* Layer 3 - Farthest buildings */
+#extra-div-3 {
+    background: calc(50% - -40px) top/1620px repeat-x;
+    animation: backgroundZoomIn 1.5s ease-out 0.5s forwards, fadeIn 1.5s ease-in 0.5s forwards;
+    z-index: 2;
+}
+
+/* Layer 4 - Mid-distance buildings */
+#extra-div-4 {
+    background: calc(50% - -50px) top/1620px repeat-x;
+    animation: slideLeft 1.5s ease-out 0.5s forwards, backgroundZoomIn 1.5s ease-out 0.5s forwards, fadeIn 1s ease-in 0.5s forwards;
+    z-index: 3;
+}
+
+/* Layer 5 - Closest buildings */
+#extra-div-5 {
+    background: calc(50% - -30px)  top/1620px repeat-x;
+    animation: slideRight 1.5s ease-out 0.5s forwards, backgroundZoomIn 1.5s ease-out 0.5s forwards, fadeIn 0.5s ease-in 0.5s forwards;
+    z-index: 4;
+}
+
+/* HEADER TEXT ANIMATION */
+
+#header h1 a::after {
+    transform: scale(0.7);
+    opacity: 0;
+    animation: textGrowIn 1s ease-out 1s forwards;
+}
+
+#header h2 span {
+    transform: scale(0.7);
+    opacity: 0;
+    animation: textGrowIn 1s ease-out 1.2s forwards;
+}
+
+/* SKYLINE ANIMATIONS */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes backgroundZoomIn {
+    0% {
+        background-size: 1620px;
+    }
+    100% {
+        background-size: 1640px;
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        background-position-x:  calc(50% - -30px);
+    }
+    100% {
+        background-position-x: calc(50% - -40px);
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        background-position-x:  calc(50% - -50px);
+    }
+    100% {
+        background-position-x: calc(50% - -40px);
+    }
+}
+
+@keyframes textGrowIn {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* WHITE LINE ANIMATION */
+/* Making the white line around the title grow in on page load */
+
+.title-container .tessera-eyebrow-container::before, .title-container .tessera-eyebrow-container::after {
+  animation: whiteLineReveal 2s cubic-bezier(.43,0,.1,1) 0.5s;
+  animation-fill-mode: both;
+}
+
+.title-container .tessera-eyebrow-container::before {
+  transform: rotate(180deg);
+}
+
+@keyframes whiteLineReveal {
+  from { clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%); }
+  to { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); }
+}
+
+/* ACCESSIBILITY MODE */
+/* Turning off all animations if user prefers reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+    #extra-div-1,
+    #extra-div-2,
+    #extra-div-3,
+    #extra-div-4,
+    #extra-div-5,
+    #header h1 a::after,
+    #header h2 span {
+        opacity: 1;
+        background: calc(50% - -40px) top/1640px repeat-x;
+        animation: none;
+        transform: none;
+    }
+
+    .title-container .tessera-eyebrow-container::before, .title-container .tessera-eyebrow-container::after {
+        animation: none;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+
+}
+
+/* ———— CUSTOM PAGE ELEMENTS ———— */
+
+/* TITLE SECTION */
+
+div#page-title {
+    display: none;
+}
+
+.title-container {
+    width: fit-content;
+    margin: 1rem auto 3rem;
+    text-align: center;
+}
+
+span.tessera-title {
+    font-weight: bold;
+    color: rgb(var(--white-monochrome));
+    font-size: 2.5rem;
+    max-width: 24.3rem;
+    display: block;
+    margin: 0.5rem auto 0.5rem;
+}
+
+/* EYEBROW HEADER  */
+
+.tessera-eyebrow-container {
+    margin: 3rem auto 0rem;
+    display: flex;
+    align-items: center;
+}
+
+.tessera-eyebrow-text {
+    text-transform: uppercase;
+    color: rgb(var(--white-monochrome));
+    font-weight: 700;
+    font-size: 1rem;
+    width: max-content;
+    display: block;
+    margin-inline: 1rem;
+    letter-spacing: 0.15rem;
+    font-family: 'IM Fell DW Pica SC', 'EB Garamond', 'Noto Serif JP', 'Yu Mincho', 'YuMincho', serif;
+}
+
+.tessera-eyebrow-container p, .title-container p {
+    margin: 0px;
+}
+
+.tessera-eyebrow-container::before, .tessera-eyebrow-container::after {
+    content: "";
+    height: 1px;
+    background: rgb(var(--white-monochrome));
+    width: 100%;
+}
+
+/* AUTHOR TAG */
+
+div#u-title-byline {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+div#u-title-byline a {
+    font-weight: 700;
+}
+
+div#u-title-byline p {
+    margin: 0px;
+}
+
+/* TESSERA BODY PAPER DOCUMENT */
+
+.tessera-body {
+    padding: 24px 40px;
+    background: linear-gradient(203.04deg, #FBFAF9 40.5%, #f1f1f1 100%);
+    box-shadow: 0px 16px 32px -4px rgba(12, 12, 13, 0.1), 0px 4px 4px -4px rgba(12, 12, 13, 0.05), inset 0px 0px 30px 0px #AE8B75;
+    border-radius: 0px;
+    margin-block: 2.5rem;
+    max-width: 35rem;
+    margin: 0rem auto 3rem;
+}
+
+.tessera-body p {
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: rgb(var(--dark-gray-monochrome));
+}
+
+#page-content .tessera-body a {
+    font-weight: bold;
+    color: rgba(var(--bright-accent));
+    text-decoration: underline;
+}
+
+#page-content .tessera-body a:visited {
+    color: rgb(var(--black-monochrome));
+}
+
+#page-content .tessera-body a:hover {
+    color: rgb(var(--medium-accent));
+    text-decoration-style: double;
+}
+
+@media (max-width: 479px) {
+    .tessera-body {
+        padding: 1rem 1rem;
+    }
+}
+
+/* This makes the color of images in the paper doc blend with the paper color - ideal for Costodias' monochrome line art, though you might want to disable this when using other kinds of art. */
+
+.paper img {
+    mix-blend-mode: multiply;
+}
+
+/* MOSAIC EARTHWORM */
+
+.earthworm {
+    margin-block: 3rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: rgb(var(--white-monochrome));
+    text-align: center;
+}
+
+#page-content .earthworm a {
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    margin: 1rem auto;
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: 0.5s;
+    border: 1px solid rgb(var(--white-monochrome));
+    background: rgb(var(--dark-accent));
+    border-radius: 0px 8px 0px 8px;
+    border-left-color: rgb(var(--alt-accent));
+    border-bottom-color: rgb(var(--alt-accent));
+    max-width: 25rem;
+}
+
+#page-content .earthworm a:visited {
+    color: rgb(var(--white-monochrome));
+    border-color: rgb(var(--light-gray-monochrome));
+}
+
+#page-content .earthworm a:hover {
+    text-decoration: none;
+    border: 1px solid rgb(var(--alt-accent));
+    color: rgb(var(--alt-accent));
+}
+
+.earthworm .tessera-eyebrow-container {
+    margin: 3rem auto 1rem;
+}
+
+.earthworm p, .earthworm a {
+    font-weight: bold;
+}
+
+/* AUDIO PLAYER */
+
+.audio {
+    margin-top: 2rem;
+}
+
+.audio iframe {
+    width: 300px;
+}
+
+/* ———— MOBILE TWEAKS ———— */
+
+/* Making the title text wrap on small screens */
+
+@media (max-width: 460px) {
+  #header h1 a {
+    padding: 0;
+    line-height: 1;
+  }
+  #header h2 span {
+    padding-top: 15%;
+  }
+}
+
+/* Making the title size smaller on small screens */
+
+@media (max-width: 300px) {
+    #header h1 a::after {
+        font-size: 2rem;
+    }
+
+}
+
+/* Fixing nav bar text size */
+@media only screen and (max-width: 56.25rem) {
+    #header div[class*=top-bar]>ul>li>a {
+        background: 0 0;
+        font-size: calc(var(--base-font-size)*(13/15));
+    }
+}
+
+/* ———— DAY THEME ———— */
+
+/* These values get replaced when the other themes are enabled. */
+
+div#header {
+    --login-line-divider-color: var(--swatch-primary-darkest);
+    --login-username-color: var(--swatch-primary-darkest);
+    --login-myaccount-color: var(--swatch-primary-darkest);
+    --login-myaccount-hover-color: var(--white-monochrome);
+    --search-icon-color: var(--black-monochrome);
+}
+
+:root {
+    --header-gradient-color-bottom: 1, 16, 24;
+    --header-gradient-color-middle: 255, 255, 255;
+    --header-gradient-color-top: 255, 255, 255;
+}
+
+#extra-div-1 {
+    background-image: url('https://scp-wiki.wikidot.com/local--files/theme:tales-of-the-mosaic/day-bg.webp');
+}
+
+#extra-div-2 {
+    background-image: url('https://scp-wiki.wikidot.com/local--files/theme:tales-of-the-mosaic/day-lighthouse.webp');
+}
+
+#extra-div-3 {
+    background-image: url('https://scp-wiki.wikidot.com/local--files/theme:tales-of-the-mosaic/day-layer1.webp');
+}
+
+#extra-div-4 {
+    background-image: url('https://scp-wiki.wikidot.com/local--files/theme:tales-of-the-mosaic/day-layer2.webp');
+}
+
+#extra-div-5 {
+    background-image: url('https://scp-wiki.wikidot.com/local--files/theme:tales-of-the-mosaic/day-layer3.webp');
+}
+
+#header h1 a::after {
+    text-shadow: 5px 0px 5px #132934, 0px 4px 5px #132934, -5px 0px 5px #132934, 0px -4px 5px #132934, 5px 5px 10px #132934, -5px 5px 10px #132934, -5px -5px 10px #132934, 5px -5px 10px #132934;
+}
+
+#header h2 span::after {
+    text-shadow: 5px 0px 5px #132934, 0px 4px 5px #132934, -5px 0px 5px #132934, 0px -4px 5px #132934, 5px 5px 10px #132934, -5px 5px 10px #132934, -5px -5px 10px #132934, 5px -5px 10px #132934;
+}
+[[/code]]
+[[/collapsible]]
+[[/div]]
+
+[[include :scp-jp:component:license-box-backend |author=Jezixo]]
++++ 昼のテーマ画像
+
+> **ファイル名:** daybg.webp
+> **作者:** [[*user Jezixo]]および[[*user Ghostdyes]]
+> **ライセンス:** CC BY-SA 3.0
+> **出典:** [https://scp-wiki.wikidot.com/theme:tales-of-the-mosaic Tales of the Mosaic Theme]
+
+> **ファイル名:** daylayer-1.webp
+> **作者:** [[*user Jezixo]]および[[*user Ghostdyes]]
+> **ライセンス:** CC BY-SA 3.0
+> **出典:** [https://scp-wiki.wikidot.com/theme:tales-of-the-mosaic Tales of the Mosaic Theme]
+
+
+> **ファイル名:** daylayer-2.webp
+> **作者:** [[*user Jezixo]]および[[*user Ghostdyes]]
+> **ライセンス:** CC BY-SA 3.0
+> **出典:** [https://scp-wiki.wikidot.com/theme:tales-of-the-mosaic Tales of the Mosaic Theme]
+
+
+> **ファイル名:** daylayer-3.webp
+> **作者:** [[*user Jezixo]]および[[*user Ghostdyes]]
+> **ライセンス:** CC BY-SA 3.0
+> **出典:** [https://scp-wiki.wikidot.com/theme:tales-of-the-mosaic Tales of the Mosaic Theme]
+
+
+> **ファイル名:** daylighthouse.webp
+> **作者:** [[*user Jezixo]]および[[*user Ghostdyes]]
+> **ライセンス:** CC BY-SA 3.0
+> **出典:** [https://scp-wiki.wikidot.com/theme:tales-of-the-mosaic Tales of the Mosaic Theme]
+
++++ 夕暮れのテーマ画像
+
+> **ファイル名:** duskbg.webp
+> **作者:** [[*user Jezixo]]および[[*user Ghostdyes]]
+> **ライセンス:** CC BY-SA 3.0
+> **出典:** [https://scp-wiki.wikidot.com/theme:tales-of-the-mosaic Tales of the Mosaic Theme]
+
+> **ファイル名:** dusklayer-1.webp
+> **作者:** [[*user Jezixo]]および[[*user Ghostdyes]]
+> **ライセンス:** CC BY-SA 3.0
+> **出典:** [https://scp-wiki.wikidot.com/theme:tales-of-the-mosaic Tales of the Mosaic Theme]
+
+
+> **ファイル名:** dusklayer-2.webp
+> **作者:** [[*user Jezixo]]および[[*user Ghostdyes]]
+> **ライセンス:** CC BY-SA 3.0
+> **出典:** [https://scp-wiki.wikidot.com/theme:tales-of-the-mosaic Tales of the Mosaic Theme]
+
+
+> **ファイル名:** dusklayer-3.webp
+> **作者:** [[*user Jezixo]]および[[*user Ghostdyes]]
+> **ライセンス:** CC BY-SA 3.0
+> **出典:** [https://scp-wiki.wikidot.com/theme:tales-of-the-mosaic Tales of the Mosaic Theme]
+
+
+> **ファイル名:** dusklighthouse.webp
+> **作者:** [[*user Jezixo]]および[[*user Ghostdyes]]
+> **ライセンス:** CC BY-SA 3.0
+> **出典:** [https://scp-wiki.wikidot.com/theme:tales-of-the-mosaic Tales of the Mosaic Theme]
+
++++ 夜のテーマ画像
+
+> **ファイル名:** nightbg.webp
+> **作者:** [[*user Jezixo]]および[[*user Ghostdyes]]
+> **ライセンス:** CC BY-SA 3.0
+> **出典:** [https://scp-wiki.wikidot.com/theme:tales-of-the-mosaic Tales of the Mosaic Theme]
+
+> **ファイル名:** nightlayer-1.webp
+> **作者:** [[*user Jezixo]]および[[*user Ghostdyes]]
+> **ライセンス:** CC BY-SA 3.0
+> **出典:** [https://scp-wiki.wikidot.com/theme:tales-of-the-mosaic Tales of the Mosaic Theme]
+
+
+> **ファイル名:** nightlayer-2.webp
+> **作者:** [[*user Jezixo]]および[[*user Ghostdyes]]
+> **ライセンス:** CC BY-SA 3.0
+> **出典:** [https://scp-wiki.wikidot.com/theme:tales-of-the-mosaic Tales of the Mosaic Theme]
+
+
+> **ファイル名:** nightlayer-3.webp
+> **作者:** [[*user Jezixo]]および[[*user Ghostdyes]]
+> **ライセンス:** CC BY-SA 3.0
+> **出典:** [https://scp-wiki.wikidot.com/theme:tales-of-the-mosaic Tales of the Mosaic Theme]
+
+
+> **ファイル名:** nightlighthouse.webp
+> **作者:** [[*user Jezixo]]および[[*user Ghostdyes]]
+> **ライセンス:** CC BY-SA 3.0
+> **出典:** [https://scp-wiki.wikidot.com/theme:tales-of-the-mosaic Tales of the Mosaic Theme]
+
+[[include :scp-jp:component:license-box-end]]
+[[/iftags]]
+
+[!-- ––––DUSK THEME–––– --]
+[!-- {$dusk}]
+[[module css]]
+
+div#header {
+    --login-line-divider-color: var(--white-monochrome);
+    --login-username-color: var(--white-monochrome);
+    --login-myaccount-color: var(--white-monochrome);
+    --login-myaccount-underline-color: var(--pale-gray-monochrome);
+    --login-myaccount-hover-bg-color: var(--gray-monochrome);
+    --search-icon-color: var(--white-monochrome);
+}
+
+:root {
+    --header-gradient-color-bottom: 61, 49, 41;
+    --header-gradient-color-middle: 244, 207, 184;
+    --header-gradient-color-top: 230, 221, 216;
+}
+
+#extra-div-1 {
+    background-image: url('https://scp-wiki.wikidot.com/local--files/theme:tales-of-the-mosaic/dusk-bg.webp');
+}
+
+#extra-div-2 {
+    background-image: url('https://scp-wiki.wikidot.com/local--files/theme:tales-of-the-mosaic/dusk-lighthouse.webp');
+}
+
+#extra-div-3 {
+    background-image: url('https://scp-wiki.wikidot.com/local--files/theme:tales-of-the-mosaic/dusk-layer1.webp');
+}
+
+#extra-div-4 {
+    background-image: url('https://scp-wiki.wikidot.com/local--files/theme:tales-of-the-mosaic/dusk-layer2.webp');
+}
+
+#extra-div-5 {
+    background-image: url('https://scp-wiki.wikidot.com/local--files/theme:tales-of-the-mosaic/dusk-layer3.webp');
+}
+
+
+#header h1 a::after {
+    text-shadow: 1px 1px #262521, -1px -1px #262521, 1px -1px #262521, -1px 1px #262521, 5px 0px 5px #4746A5, 0px 5px 5px #4746A5, -5px 0px 5px #4746A5, 0px -5px 5px #4746A5, 5px 5px 10px #4746A5, -5px 5px 10px #4746A5, -5px -5px 10px #4746A5, 5px -5px 10px #4746A5;
+}
+
+#header h2 span::after {
+    text-shadow: 1px 1px #262521, -1px -1px #262521, 1px -1px #262521, -1px 1px #262521, 5px 0px 5px #4746A5, 0px 5px 5px #4746A5, -5px 0px 5px #4746A5, 0px -5px 5px #4746A5, 5px 5px 10px #4746A5, -5px 5px 10px #4746A5, -5px -5px 10px #4746A5, 5px -5px 10px #4746A5;
+}
+
+[[/module]]
+[!-- --]
+
+[!-- ––––NIGHT THEME–––– --]
+[!-- {$night}]
+[[module css]]
+
+div#header {
+    --login-line-divider-color: var(--white-monochrome);
+    --login-username-color: var(--white-monochrome);
+    --login-myaccount-color: var(--white-monochrome);
+    --login-myaccount-underline-color: var(--pale-gray-monochrome);
+    --login-myaccount-hover-bg-color: var(--gray-monochrome);
+    --search-icon-color: var(--white-monochrome);
+}
+
+:root {
+    --header-gradient-color-bottom: 1, 16, 24;
+    --header-gradient-color-middle: 19, 41, 52;
+    --header-gradient-color-top: 28, 60, 77;
+}
+
+#extra-div-1 {
+    background-image: url('https://scp-wiki.wikidot.com/local--files/theme:tales-of-the-mosaic/night-bg.webp');
+}
+
+#extra-div-2 {
+    background-image: url('https://scp-wiki.wikidot.com/local--files/theme:tales-of-the-mosaic/night-lighthouse.webp');
+}
+
+#extra-div-3 {
+    background-image: url('https://scp-wiki.wikidot.com/local--files/theme:tales-of-the-mosaic/night-layer1.webp');
+}
+
+#extra-div-4 {
+    background-image: url('https://scp-wiki.wikidot.com/local--files/theme:tales-of-the-mosaic/night-layer2.webp');
+}
+
+#extra-div-5 {
+    background-image: url('https://scp-wiki.wikidot.com/local--files/theme:tales-of-the-mosaic/night-layer3.webp');
+}
+
+
+#header h1 a::after {
+    text-shadow: 1px 1px #262521, -1px -1px #262521, 1px -1px #262521, -1px 1px #262521, 5px 0px 5px #183B4B, 0px 5px 5px #183B4B, -5px 0px 5px #183B4B, 0px -5px 5px #183B4B, 5px 5px 10px #183B4B, -5px 5px 10px #183B4B, -5px -5px 10px #183B4B, 5px -5px 10px #183B4B;
+}
+
+#header h2 span::after {
+    text-shadow: 1px 1px #262521, -1px -1px #262521, 1px -1px #262521, -1px 1px #262521, 5px 0px 5px #183B4B, 0px 5px 5px #183B4B, -5px 0px 5px #183B4B, 0px -5px 5px #183B4B, 5px 5px 10px #183B4B, -5px 5px 10px #183B4B, -5px -5px 10px #183B4B, 5px -5px 10px #183B4B;
+}
+[[/module]]
+[!-- --]
