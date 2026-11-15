@@ -1,0 +1,745 @@
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** 涂蜡的氧化切制铜台阶 版式
+**翻訳責任者:** SCP-JP
+**翻訳年:** 2026
+**原題:** 涂蜡的氧化切制铜台阶 版式
+**著作権者:** Dr Hormress
+**作成年:** 2026
+**初訳時参照リビジョン:** 2
+**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:waxed-oxidized-cut-copper-slab 涂蜡的氧化切制铜台阶 版式]
+[[include :scp-jp:credit:end-preview]]
+
+[# 岩盤テーマ] >> [[[theme:copper|銅テーマ]]] >> [# 切り込み入りの銅のハーフブロックテーマ] >> [# 酸化した切り込み入りの銅のハーフブロックテーマ] >> **錆止めされた酸化した切り込み入りの銅のハーフブロックテーマ**
+
+[[>]]
+[[/>]]
+
++ 概要と使用方法
+
+これは[[[theme:bedrock|岩盤]]]を土台にした美学テーマです。このテーマを使用するには、まず岩盤を読み込んでください。
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:bedrock]]@@
+[[/div]]
+
+次に、その下で銅テーマを読み込みます。
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:bedrock]]@@
+@@[[include :scp-jp:theme:copper]]@@
+[[/div]]
+
+次に、石切台に通します。
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:bedrock]]@@
+@@[[include :scp-jp:theme:@@##grey|cut-##copper##grey|-slab##@@]]@@
+[[/div]]
+
+次に、自然に酸化するまで待ちます。
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:bedrock]]@@
+@@[[include :scp-jp:theme:@@##green|oxidized-####grey|cut-##copper##grey|-slab##@@]]@@
+[[/div]]
+
+最後に、錆止めを塗ります。
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:bedrock]]@@
+@@[[include :scp-jp:theme:@@##brown|waxed-####green|oxidized-####grey|cut-##copper##grey|-slab##@@]]@@
+[[/div]]
+
+[[size 60%]]岩盤は忘れずに[[[theme:parallel|パラレル]]]へ差し替えてください。普通、建物を岩盤の上へ直接置いたりはしません！[[/size]]
+
+[[div class="code" style="transform-origin: 0% 0%; scale: 0.6; width: max-content;"]]
+@@[[include :scp-jp:theme:parallel]]@@
+@@[[include :scp-jp:theme:@@##brown|waxed-####green|oxidized-####grey|cut-##copper##grey|-slab##@@]]@@
+[[/div]]
+
+++ パラメータと変数
+
+一部の端末では、このテーマのアニメーションによって動作が重くなることがあります。右下のスイッチをクリックするとアニメーションを一時停止できます。
+
+読み込み時にアニメーションを無効にするには、次のコードを使ってください。
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:parallel]]@@
+@@[[include :scp-jp:theme:@@##brown|waxed-####green|oxidized-####grey|cut-##copper##grey|-slab## **##darkblue|no-anim=*##**@@]]@@
+[[/div]]
+
+アニメーション切り替え用のスイッチは表示例であり、テーマを読み込んだだけでは出現しません。ただし、このページのソースにある対応する{{@@[[div]]@@}}をコピーすれば使えます。関連するスタイルはこのテーマ内に組み込まれています。
+
+[[div class="animation-switch panel-dark color-light"]]
+**背景アニメーション**
+再生または一時停止
+[[collapsible show="オフ" hide="オン"]]
+[[/collapsible]]
+[[/div]]
+
+[!-- ここまでがスイッチです。この一式をページ内の任意の場所へコピーすれば使用できます。 --]
+
+このテーマの背景画像は、Minecraftのタイトル画面パノラマと同じ形式のパノラマ画像に対応しています。スクリーンショット作成手順はウェブ上で見つかります。次の変数で画像を指定してください。
+
+[[div class="code"]]
+@@:root {@@
+@@    --panorama-0: url("画像URL");@@
+@@    --panorama-1: url("画像URL");@@
+@@    --panorama-2: url("画像URL");@@
+@@    --panorama-3: url("画像URL");@@
+@@    --panorama-4: url("画像URL");@@
+@@    --panorama-5: url("画像URL");@@
+@@}@@
+[[/div]]
+
++ 例
+
+++ カスタム要素
+
+錆止めされた酸化した切り込み入りの銅のハーフブロックテーマには、少数のユーティリティクラスを組み合わせて使える要素があります。以下が見栄えのよい組み合わせの一覧です。
+
+[[collapsible show="+ 例を開く" hide="- 例を隠す"]]
+
+[[div class="panel"]]
+{{@@[[div class="panel"]]@@}}
+[[/div]]
+
+[[div class="panel-dark color-light"]]
+{{@@[[div class="panel-dark color-light"]]@@}}
+[[/div]]
+
+[[div class="panel-darker color-light"]]
+{{@@[[div class="panel-darker color-light"]]@@}}
+[[/div]]
+
+[[div class="panel bwidth-l"]]
+{{@@[[div class="panel bwidth-l"]]@@}}
+[[/div]]
+
+[[div class="panel-dark color-light bwidth-l"]]
+{{@@[[div class="panel-dark color-light bwidth-l"]]@@}}
+[[/div]]
+
+[[div class="panel-darker color-light bwidth-l"]]
+{{@@[[div class="panel-darker color-light bwidth-l"]]@@}}
+[[/div]]
+
+[[div class="panel bwidth-xl"]]
+{{@@[[div class="panel bwidth-xl"]]@@}}
+[[/div]]
+
+[[div class="panel-dark color-light bwidth-xl"]]
+{{@@[[div class="panel-dark color-light bwidth-xl"]]@@}}
+[[/div]]
+
+[[div class="panel-darker color-light bwidth-xl"]]
+{{@@[[div class="panel-darker color-light bwidth-xl"]]@@}}
+[[/div]]
+
+[[/collapsible]]
+
+++ 標準要素
+
+[[include component:image-block name=https://bhl.scpwikicn.com/img/logo.svg|caption=画像の例|width=200px]]
+
+横罫線は、ハイフン9個「@@---------@@」で作成できます。引用ブロックなど他の部品の中に置かれていなければ、左右へ伸びてページを横断します。ファイルを複数の部分へ区切るこの線が分割線です。
+
+---------
+
+見出しは、行頭に1個から6個のプラス記号「+」を入力すると作成できます。
+
+[[collapsible show="+ 折り畳みブロック" hide="- 閉じる"]]
++* 一番目の見出し
+++* 二番目の見出し
++++* 三番目の見出し
+++++* 四番目の見出し
++++++* 五番目の見出し
+++++++* 六番目の見出し
+[[/collapsible]]
+
+[[tabview]]
+[[tab タブ]]
+これはタブビューです。
+[[/tab]]
+[[tab タブ]]
+ほら、こちらにはもっと文章があります。
+
+なんとも見事な細工です。
+[[/tab]]
+[[tab 長いタブ]]
+これは長いタブで、文章がたくさん入っています。
+
+これは長いタブで、文章がたくさん入っています。
+
+これは長いタブで、文章がたくさん入っています。
+
+これは長いタブで、文章がたくさん入っています。
+
+これは長いタブで、文章がたくさん入っています。
+
+これは長いタブで、文章がたくさん入っています。
+
+これは長いタブで、文章がたくさん入っています。
+
+これは長いタブで、文章がたくさん入っています。
+
+これは長いタブで、文章がたくさん入っています。
+
+これは長いタブで、文章がたくさん入っています。
+
+これは長いタブで、文章がたくさん入っています。
+
+これは長いタブで、文章がたくさん入っています。
+[[/tab]]
+[[tab 何か妙な理由で、この空のタブにはとても長い名前が付いています。なぜでしょう。不思議ですね。]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+ケーキは嘘です
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[/tabview]]
+
+> これは引用ブロックです。行頭に「> 」を付けると作成できます。
+>
+> さらに文章
+> -----
+> 分割線
+>
+>> 入れ子の引用ブロック
+
+||~ これは ||~ テーブルです ||
+|||| 白色のカーペット ||
+|||| オークのフェンス ||
+
+[[=]]
+++* [[span style="font-family: var(--header-font);"]]見出しフォントはNoto Serif JP / Cutiveです[[footnote]]ここには見事な駄洒落が入ります[[/footnote]][[/span]]
++++* [[span style="font-family: var(--body-font);"]]本文フォントは結局パラレル既定と同じです[[/span]]
++++* [[span style="font-family: var(--mono-font);"]]等幅フォントの名前は私も忘れました[[/span]]
+[[/=]]
+
+[[div style="display: none;"]]
+
+[[/div]]
+
+----
+
++ ソースコード
+
+[[collapsible show="ソースコードを表示" hide="ソースコードを閉じる"]]
+[[code type="css"]]
+/* ===== waxed-oxidized-cut-copper-slab ===== */
+@import url('https://fonts.googleapis.com/css2?family=Cutive&display=swap');
+
+
+:root {
+    --header-logo: url("https://ah-sandbox.wikidot.com/local--files/pictures/PixelSCP_3D.svg");
+    --header-stripes: none;
+    --header-gradient: linear-gradient(to bottom, rgb(var(--basalt-darker-element-color)), 60%, transparent);
+    --header-drop-shadow-opacity: 0;
+
+    --basalt-primary-color: 254, 254, 254;
+    --basalt-secondary-color: 229, 230, 232;
+    --basalt-tertiary-color: var(--gold);
+    --basalt-main-text-color: 20, 20, 20;
+    --basalt-overtone: 50, 50, 50;
+
+    --gold: 254, 224, 124;
+    --grey: 66, 66, 72;
+
+    --page-bg-color: 42, 52, 57;
+    --basalt-overtone: 50, 50, 50;
+    --basalt-undertone: 73, 90, 100;
+    --basalt-bright-element-color: 84, 102, 114;
+    --basalt-dark-element-color: 63, 78, 86;
+
+    --basalt-darker-element-color: var(--page-bg-color);
+
+    --header-h1-height: 10rem;
+    --top-bar-height: 2.5rem;
+    --title-size: 2.25rem;
+    --subtitle-size: 0.95rem;
+    --header-final-height: calc(var(--header-h1-height) + 2 * var(--top-bar-height) + var(--header-border-width));
+    --side-bar-button-width: var(--user-button-width);
+    --search-button-width: var(--top-bar-height);
+    --user-button-width: var(--top-bar-height);
+    --main-content-top-margin: 3rem;
+    --main-content-side-margin: 0.5rem;
+    --base-border-radius: 0rem;
+    --thin-border-width: var(--base-border-width);
+
+    --blockquote-background-color: 245, 244, 244, 0.8;
+    --bottom-area-background-color: var(--gold);
+
+    --diagonal-stripes-color: var(--basalt-main-text-color);
+
+    --four-color: var(--gold) !important;
+
+    --mono-font: "JetBrains Mono", "Noto Sans JP", monospace;
+    --header-font: "Cutive", "Noto Sans JP", monospace;
+    --title-font: var(--mono-font);
+    --body-font: "Noto Sans", "Noto Sans JP", sans-serif;
+
+    --sbi: max(1dvh, 1dvw);
+
+    --panorama-0: url("https://ah-sandbox.wikidot.com/local--files/pictures/panorama_0.png");
+    --panorama-1: url("https://ah-sandbox.wikidot.com/local--files/pictures/panorama_1.png");
+    --panorama-2: url("https://ah-sandbox.wikidot.com/local--files/pictures/panorama_2.png");
+    --panorama-3: url("https://ah-sandbox.wikidot.com/local--files/pictures/panorama_3.png");
+    --panorama-4: url("https://ah-sandbox.wikidot.com/local--files/pictures/panorama_4.png");
+    --panorama-5: url("https://ah-sandbox.wikidot.com/local--files/pictures/panorama_5.png");
+}
+
+body {
+    background-color: rgb(var(--page-bg-color));
+}
+
+/* 天空盒 */
+
+div#extra-div-1,
+div#extra-div-2 {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    transform-style: preserve-3d;
+    perspective: 1rem;
+    scale: 20;
+    z-index: -1;
+    --rotangle: 0;
+    will-change: transform, --rotangle;
+    animation: rot linear 60s infinite;
+}
+
+@keyframes rot {
+    from {--rotangle: 0;}
+    to {--rotangle: 360;}
+}
+
+div#extra-div-1::before,
+div#extra-div-1 span,
+div#extra-div-1::after,
+div#extra-div-2::before,
+div#extra-div-2 span,
+div#extra-div-2::after {
+    content: "";
+    display: block;
+    position: fixed;
+    left: calc(50% - 40 * var(--sbi));
+    top: calc(50% - 40 * var(--sbi));
+    width: calc(80 * var(--sbi));
+    height: calc(80 * var(--sbi));
+    background-size: contain;
+    background-position: center;
+    backface-visibility: hidden;
+}
+
+div#extra-div-1::before {/* Front */
+    transform: rotateY(calc(var(--rotangle) * 1deg)) translateZ(calc(-40 * var(--sbi)));
+    background-image: var(--panorama-0);
+}
+
+div#extra-div-1 span {/* Back */
+    transform: rotateY(calc(var(--rotangle) * 1deg + 180deg)) translateZ(calc(-40 * var(--sbi)));
+    background-image: var(--panorama-2);
+}
+
+div#extra-div-1::after {/* Left */
+    transform: rotateY(calc(var(--rotangle) * 1deg - 90deg)) translateZ(calc(-40 * var(--sbi)));
+    background-image: var(--panorama-1);
+}
+
+div#extra-div-2::before {/* Right */
+    transform: rotateY(calc(var(--rotangle) * 1deg + 90deg)) translateZ(calc(-40 * var(--sbi)));
+    background-image: var(--panorama-3);
+}
+
+div#extra-div-2 span {/* Up */
+    transform: rotateX(90deg) rotateZ(calc(var(--rotangle) * -1deg)) translateZ(calc(-40 * var(--sbi)));
+    background-image: var(--panorama-5);
+}
+
+div#extra-div-2::after {/* Down */
+    transform: rotateX(-90deg) rotateZ(calc(var(--rotangle) * 1deg)) translateZ(calc(-40 * var(--sbi)));
+    background-image: var(--panorama-4);
+}
+
+/* 版头 */
+
+div#header {
+    contain: initial;
+    height: var(--header-final-height);
+    position: static;
+    border-bottom: solid var(--header-border-width) rgb(var(--gold));
+    background-color: transparent;
+    grid-template-areas:
+        '. . . search user'
+        'h-link h-link h-link h-link h-link'
+        'top-bar top-bar top-bar top-bar top-bar';
+    grid-template-columns: var(--side-bar-button-width) var(--search-button-width) 1fr var(--search-button-width) var(--user-button-width);
+    grid-template-rows: var(--top-bar-height) 1fr var(--top-bar-height);
+    margin: 0rem;
+}
+
+div#header h1 {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    grid-column: 2 / 5;
+    grid-row: 1 / 3;
+    align-self: stretch;
+    align-content: center;
+}
+
+div#header-extra-div-3 {
+    grid-area: h-link;
+    pointer-events: none;
+}
+
+div#header h1 a {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    width: auto;
+    max-width: calc(var(--header-h1-height) * 3);
+    height: var(--header-h1-height);
+    pointer-events: none;
+    box-sizing: border-box;
+}
+
+div#header h1 a::before {
+    pointer-events: auto;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center top;
+    background-size: contain;
+    -webkit-mask-image: none;
+    mask-image: none;
+}
+
+div#header h1 a::after {
+    content: "控制，收容，保护";
+    display: block;
+    margin: 2rem -1.5rem;
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    transform: rotate(-20deg);
+    color: rgb(var(--gold));
+    text-shadow: 0.15rem 0.15rem 0 rgb(var(--basalt-undertone));
+    font-size: 1.2rem;
+    font-weight: 800;
+    animation: ease-in-out sub 0.5s infinite;
+}
+
+@keyframes sub {
+    0% {scale: 1;}
+    50% {scale: 1.08;}
+    100% {scale: 1;}
+}
+
+div#header h1 span {
+    display: none;
+}
+
+div#header h1 span::after {
+    margin-bottom: 0;
+}
+
+div#header-extra-div-2 {
+    height: unset;
+    aspect-ratio: 1 / 1;
+}
+
+/* 导航栏 */
+
+div#top-bar {
+    height: var(--top-bar-height);
+}
+
+div#top-bar div[class*="top-bar"] > ul {
+    width: var(--main-content-width);
+    max-width: 100dvw;
+    margin-inline: auto;
+    border-block: solid var(--base-border-width) rgb(var(--basalt-primary-color), 0.6);
+}
+
+div#top-bar div[class*="top-bar"] > ul > li {
+    flex-grow: 1;
+}
+
+div#top-bar div.mobile-top-bar > .open-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 8;
+    width: var(--side-bar-button-width);
+    height: var(--top-bar-height);
+    -webkit-backdrop-filter: blur(var(--basalt-UI-blur));
+    backdrop-filter: blur(var(--basalt-UI-blur));
+    background-color: rgba(var(--page-bg-color), 0.8);
+}
+
+div#side-bar::after,
+div#side-bar::before {
+    top: 0;
+    height: var(--top-bar-height);
+    transition: left var(--side-bar-transition);
+}
+
+div#side-bar {
+    margin-top: 0;
+    height: 100vh;
+}
+
+div#side-bar::before {
+    backdrop-filter: blur(var(--basalt-UI-blur));
+    background-color: rgba(var(--page-bg-color), 0.8);
+}
+
+div#side-bar:is(:hover, :focus-within)::before,
+div#side-bar:is(:hover, :focus-within)::after {
+    left: var(--side-bar-width);
+    height: var(--top-bar-height);
+}
+
+/* ANIMATION SWITCHER */
+
+:root:has(div.animation-switch):not(:has(div.animation-switch div.collapsible-block-unfolded[style*="none"])) :is(div#extra-div-1, div#extra-div-2) {
+    animation-play-state: paused;
+}
+
+div.animation-switch {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    margin: 0;
+    text-align: center;
+    z-index: 2;
+}
+
+div.animation-switch p {
+    margin: 0;
+}
+
+div.animation-switch a.collapsible-block-link {
+    user-select: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 2;
+}
+
+div.animation-switch div.collapsible-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 1rem 0.5rem;
+    width: calc(var(--base-border-width) * 28);
+    height: calc(var(--base-border-width) * 14);
+}
+
+div.animation-switch div.collapsible-block::before {
+    content: "";
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    position: relative;
+    width: calc(var(--base-border-width) * 8);
+    height: calc(var(--base-border-width) * 14);
+    background-color: rgb(208, 209, 212);
+    box-shadow: inset 0 calc(var(--base-border-width) * -2) rgb(88, 88, 90), inset 0 0 0 var(--base-border-width) rgb(227, 227, 229), inset 0 calc(var(--base-border-width) * -3) rgb(227, 227, 229), 0 0 0 var(--base-border-width) rgb(20, 20, 20);
+    transform: translate(calc(var(--base-border-width) * 20));
+    z-index: 2;
+}
+
+div.animation-switch:hover div.collapsible-block::before {
+    background-color: rgb(177, 178, 181);
+    box-shadow: inset 0 calc(var(--base-border-width) * -2) rgb(88, 88, 90), inset 0 0 0 var(--base-border-width) rgb(227, 227, 229), inset 0 calc(var(--base-border-width) * -3) rgb(227, 227, 229), 0 0 0 var(--base-border-width) rgb(20, 20, 20), 0 0 0 calc(var(--base-border-width) * 2) rgb(254, 254, 254);
+}
+
+div.animation-switch div.collapsible-block::after {
+    content: "";
+    display: block;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    width: calc(var(--base-border-width) * 20);
+    height: calc(var(--base-border-width) * 10);
+    background-color: rgb(127, 127, 127);
+    background-image: linear-gradient(to bottom, rgb(49, 50, 51) 0%, rgb(49, 50, 51) 100%);
+    background-size: calc(var(--base-border-width) * 2) calc(var(--base-border-width) * 6);
+    background-position: calc(var(--base-border-width) * 9) center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 0 var(--base-border-width) rgb(20, 20, 20);
+    justify-self: center;
+}
+
+div.animation-switch:hover div.collapsible-block::after {
+    box-shadow: 0 0 0 var(--base-border-width) rgb(20, 20, 20), 0 0 0 calc(var(--base-border-width) * 2) rgb(254, 254, 254);
+}
+
+:root:has(div.animation-switch):not(:has(div.animation-switch div.collapsible-block-unfolded[style*="none"])) div.animation-switch div.collapsible-block::before {
+    transform: translate(0);
+}
+
+:root:has(div.animation-switch):not(:has(div.animation-switch div.collapsible-block-unfolded[style*="none"])) div.animation-switch div.collapsible-block::after {
+    background-color: rgb(49, 50, 51);
+    background-image: linear-gradient(to bottom, rgb(127, 127, 127) 0, rgb(127, 127, 127) var(--base-border-width), transparent var(--base-border-width), transparent calc(var(--base-border-width) * 5), rgb(127, 127, 127) calc(var(--base-border-width) * 5), rgb(127, 127, 127)  calc(var(--base-border-width) * 6)), linear-gradient(to right, rgb(127, 127, 127) 0, rgb(127, 127, 127) var(--base-border-width), transparent var(--base-border-width), transparent calc(var(--base-border-width) * 5), rgb(127, 127, 127) calc(var(--base-border-width) * 5), rgb(127, 127, 127)  calc(var(--base-border-width) * 6));
+    background-size: calc(var(--base-border-width) * 4) calc(var(--base-border-width) * 6), calc(var(--base-border-width) * 6) calc(var(--base-border-width) * 4);
+    background-position: calc(var(--base-border-width) * 9) center, calc(var(--base-border-width) * 8) center;
+}
+
+/* 主要内容 */
+
+div#main-content {
+    background-color: rgb(var(--basalt-primary-color), 0.75);
+    padding: 1rem 1.5rem 1.5rem;
+    box-sizing: border-box;
+}
+
+:is(.blockquote, blockquote, .code) :is(.blockquote, blockquote, .code) {
+    box-shadow: none;
+}
+
+.yui-navset .yui-content,
+.yui-navset.yui-navset-top .yui-content,
+table.wiki-content-table td {
+    background-color: rgb(var(--blockquote-background-color));
+}
+
+/* 自定义元素 */
+
+:where(div:is(.panel, [class*="panel-dark"])) {
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    position: relative;
+    background-color: rgb(var(--_bg-color));
+    border: solid var(--base-border-width) rgb(var(--_border-one));
+    border-bottom-color: rgb(var(--_border-two));
+    border-right-color: rgb(var(--_border-two));
+}
+
+div:is(.panel, [class*="panel-dark"])::before,
+div:is(.panel, [class*="panel-dark"])::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: var(--base-border-width);
+    height: var(--base-border-width);
+    background-color: rgb(var(--_bg-color));
+}
+
+div:is(.panel, [class*="panel-dark"])::before {
+    left: calc(var(--base-border-width) * -1);
+    bottom: calc(var(--base-border-width) * -1);
+}
+
+div:is(.panel, [class*="panel-dark"])::after {
+    right: calc(var(--base-border-width) * -1);
+    top: calc(var(--base-border-width) * -1);
+}
+
+div.panel {
+    --_bg-color: 230, 232, 235;
+    --_border-one: 254, 254, 254;
+    --_border-two: 177, 178, 181;
+}
+
+div.panel-dark {
+    --_bg-color: 72, 73, 74;
+    --_border-one: 90, 91, 92;
+    --_border-two: 50, 51, 52;
+}
+
+div.panel-darker {
+    --_bg-color: 49, 50, 51;
+    --_border-one: 69, 70, 71;
+    --_border-two: 29, 30, 31;
+}
+
+div.panel-dark,
+div.panel-darker {
+    --link-color: var(--gold);
+    --link-visited-color: var(--gold), 0.6;
+}
+
+:where(div.bwidth-l:is(.panel, [class*="panel-dark"])) {
+    border-width: calc(var(--base-border-width) * 2);
+}
+
+div.bwidth-l:is(.panel, [class*="panel-dark"])::before {
+    box-shadow: calc(var(--base-border-width) * -1) var(--base-border-width) 0 rgb(var(--_bg-color));
+}
+
+div.bwidth-l:is(.panel, [class*="panel-dark"])::after {
+    box-shadow: var(--base-border-width) calc(var(--base-border-width) * -1) 0 rgb(var(--_bg-color));
+}
+
+:where(div.bwidth-xl:is(.panel, [class*="panel-dark"])) {
+    border-width: calc(var(--base-border-width) * 3);
+}
+
+div.bwidth-xl:is(.panel, [class*="panel-dark"])::before {
+    box-shadow: calc(var(--base-border-width) * -1) var(--base-border-width) 0 rgb(var(--_bg-color)), calc(var(--base-border-width) * -2) calc(var(--base-border-width) * 2) 0 rgb(var(--_bg-color));
+}
+
+div.bwidth-xl:is(.panel, [class*="panel-dark"])::after {
+    box-shadow: var(--base-border-width) calc(var(--base-border-width) * -1) 0 rgb(var(--_bg-color)), calc(var(--base-border-width) * 2) calc(var(--base-border-width) * -2) 0 rgb(var(--_bg-color));
+}
+
+@media (max-width: 480px) {
+    :root {
+        --base-border-width: 0.15rem;
+    }
+
+    div#header h1 {
+        grid-row: 2 / 3;
+    }
+
+    div#header h1 a::after {
+        margin: 0;
+        right: 5%;
+        bottom: 30%;
+    }
+}
+
+/* 特别选项 */
+
+/* {$no-anim}/
+div#extra-div-1,
+div#extra-div-2 {
+    animation: none;
+}
+/{no-anim} */
+@property --rotangle {
+    syntax: "<number>";
+    inherits: true;
+    initial-value: 0;
+}
+[[/code]]
+[[/collapsible]]
+
+[[/iftags]]
+
+[[module css]]
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Awaxed-oxidized-cut-copper-slab-jp/1")
+[[/module]]
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme= https://sigma10-jp-test.wdfiles.com/local--code/theme%3Awaxed-oxidized-cut-copper-slab-jp/1
+]]
