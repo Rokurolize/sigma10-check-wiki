@@ -1,0 +1,1010 @@
+[[include :scp-jp:component:centered-header-sigma-9]]
+[[include :scp-jp:component:toggle-sidebar]]
+[[module css]]
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aparamycota-jp/1");
+[[/module]]
+[[include component:interwiki-style
+| priority=1
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aparamycota-jp/1]]
+
+[!-- {$recolor-acs}
+[[module css]]
+.anom-bar-container{
+  --one-color: 92, 56, 54;
+  --two-color: 123, 97, 81;
+  --three-color: 154, 138, 108;
+  --four-color: 185, 179, 135;
+  --five-color: var(--headerLight);
+}
+[[/module]]
+[!----]
+
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** Paramycotaテーマ
+**翻訳責任者:** SCP-JP
+**翻訳年:** 2026
+**原題:** Paramycota Theme
+**著作権者:** [[*user tachymelia]]
+**作成年:** 2026
+**初訳時参照リビジョン:** 37
+**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:paramycota ソース]
+[[include :scp-jp:credit:end-preview]]
+
+これは菌類関連の記事、または何らかの菌類学研究部門が登場する記事で使うための美観Sigma-10テーマです。雰囲気が合うなら使ってください！ [[*user tachymelia]]作。
+
+[[div style="--swatch-text-light: var(--lightColor); --swatch-text-dark: var(--darkColor);"]]
+[[include :scp-jp:component:theme-squares -=-
+        | color1-name = ツクリタケ
+        | color1-variable = --lightColor
+        | color1-info = #dcdcc8 (220, 220, 200)
+        | color2-name = 培地
+        | color2-variable = --darkColor
+        | color2-info = #0e000a (14, 0, 10)
+        | color2-has-light-text = 1
+        | subcolor1-name = 菌糸の生息地
+        | subcolor1-variable = --headerLight
+        | subcolor1-info = #d8dca2 (216, 220, 162)
+        | subcolor2-name = プラーク・バック
+        | subcolor2-variable = --headerOff
+        | subcolor2-info = #3e0e19 (62, 14, 25)
+        | subcolor2-has-light-text = 1
+        | subcolor3-name = スライドベア・セピア
+        | subcolor3-variable = --headerDark
+        | subcolor3-info = #20010e (32, 1, 14)
+        | subcolor3-has-light-text = 1]]
+[[/div]]
+
+[[div class="subsection" style="--subsection-index: 1;"]]
+++ 使用方法
+
+要するに、記事の冒頭へ次を置いてください。
+[[div class="code"]]
+@@[[include :scp-jp:theme:paramycota]]@@
+[[/div]]
+
+このテーマは中央寄せヘッダーとトグル式サイドバーを自動で使います。自分でincludeしないでください。
+
+[[collapsible show="+ カスタムヘッダー" hide="- カスタムヘッダー" hideLocation="both"]]
+[[div class="box"]]
+テーマincludeの後ろに次を挿入し、引用符や括弧内の値を好きなものに置き換えてください。変更しない行は省略できます。
+
+{{@@[[module css]]@@}}
+{{@@:root{@@}}
+{{@@  --header-title: "ここにタイトルを入れてください！";@@}}
+{{@@  --header-subtitle: "ここに副題を入れてください！";@@}}
+{{@@  --lgurl: url(カスタムロゴが欲しい？ ここにURLを入れてください！);@@}}
+{{@@  --shroomurl: url(ページタイトル周りのアイコンはここでカスタムできます);@@}}
+{{@@}@@}}
+{{@@[[/module]]@@}}
+[[/div]]
+[[/collapsible]]
+
+[[collapsible show="+ ACSの再配色" hide="- ACSの再配色" hideLocation="both"]]
+[[div class="box"]]
+[[include component:image-block
+        | name = https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aparamycota-jp/recolor-acs.png
+        | caption = 再配色したACSの例
+        | align = center
+        | width = 100%
+        | alt = alt
+        | alt-text = 標準的なACSバー。ただし菌糸の生息地とプラーク・バックの間の色調になっている。]]
+
+使うには、記事内のこのテーマのincludeを次のものに//置き換えて//ください。
+{{@@[[include :scp-jp:theme:paramycota | recolor-acs = --]]@@}}
+[[/div]]
+[[/collapsible]]
+[[/div]]
+
+
+
+[[div class="subsection" style="--subsection-index: 2;"]]
+++ Wiki構文
+
+[[include component:image-block
+        | name = https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aparamycota-jp/scp.png
+        | caption = [部門名が見つかりません]
+        | alt = alt
+        | alt-text = SCP財団ロゴ。ただし上部が切れ、矢印が全体から生えたキノコに置き換わっている]]
+脚注[[footnote]]泣かないで！ 私はただの魚……[[/footnote]]とリンク、[[[/|たぶん訪問済み]]]と[[[qwertyuiop|たぶん未訪問]]]の両方！
+
+[[tabview]]
+[[tab タブ]]
+うわあ
+[[/tab]]
+
+[[tab 無料BEENZはこちらをクリック！！！！]]
+@@-->@@ [[[https://scp-wiki.wikidot.com/scp-7764|http://www.beenz.com]]] @@<--@@
+[[/tab]]
+[[/tabview]]
+
+||~ X ||~ O ||~ X ||
+||~ X ||  O ||  X ||
+||~ O ||  X ||  O ||
+
+* 担子菌類
+* 子嚢菌類
+* パラ菌類
+[[/div]]
+
+
+
+[[div class="subsection" style="--subsection-index: 3;"]]
+++ 特殊構文
+
+[[collapsible show="+ テキスト構文" hide="- テキスト構文" hideLocation="both"]]
+[[div class="box subsection"]]
+++ 線付き見出し
+[[div class="colophon"]]
+さらにいろいろ！
+[[/div]]
+
+{{@@[[div class="subsection"]]@@}}
+{{@@++ 線付き見出し@@}}
+{{@@[[div class="colophon"]]@@}}
+{{@@さらにいろいろ！@@}}
+{{@@[[/div]]@@}}
+{{@@ @@}}
+{{@@...@@}}
+{{@@[[/div]]@@}}
+[[/div]]
+
+[[div class="box subsection" style="--subsection-index: 5;"]]
+++ 番号付き線付き見出し
+[[div class="colophon"]]
+キノコを見てください
+[[/div]]
+
+下の{{NUMBER}}を、表示したいキノコの数に置き換えてください。
+
+{{@@[[div class="subsection" style="--subsection-index: NUMBER;"]]@@}}
+{{@@++ 番号付き線付き見出し@@}}
+{{@@[[div class="colophon"]]@@}}
+{{@@キノコを見てください@@}}
+{{@@[[/div]]@@}}
+{{@@ @@}}
+{{@@...@@}}
+{{@@[[/div]]@@}}
+[[/div]]
+[[/collapsible]]
+
+[[collapsible show="+ ボックス構文" hide="- ボックス構文" hideLocation="both"]]
+[[div class="box"]]
+[[=]]
+++ ボックス
+-----
+[[/=]]
+
+{{@@[[div class="box"]]@@}}
+{{@@[[=]]@@}}
+{{@@++ ボックス@@}}
+{{@@-----@@}}
+{{@@[[/=]]@@}}
+{{@@ @@}}
+{{@@...@@}}
+{{@@[[/div]]@@}}
+[[/div]]
+
+[[div class="box mycelium"]]
+[[=]]
+++ 菌糸体ボックス
+-----
+[[/=]]
+
+{{@@[[div class="box mycelium"]]@@}}
+{{@@[[=]]@@}}
+{{@@++ 菌糸体ボックス@@}}
+{{@@-----@@}}
+{{@@[[/=]]@@}}
+{{@@ @@}}
+{{@@...@@}}
+{{@@[[/div]]@@}}
+[[/div]]
+
+[[div class="box mycelium classification"]]
+[[=]]
+++ 分類委員会ボックス
+-----
+[[/=]]
+
+{{@@[[div class="box mycelium classification"]]@@}}
+{{@@[[=]]@@}}
+{{@@++ 分類委員会ボックス@@}}
+{{@@-----@@}}
+{{@@[[/=]]@@}}
+{{@@ @@}}
+{{@@...@@}}
+{{@@[[/div]]@@}}
+[[/div]]
+
+[[div class="box mycelium ethics"]]
+[[=]]
+++ 倫理委員会ボックス
+-----
+[[/=]]
+
+{{@@[[div class="box mycelium ethics"]]@@}}
+{{@@[[=]]@@}}
+{{@@++ 倫理委員会ボックス@@}}
+{{@@-----@@}}
+{{@@[[/=]]@@}}
+{{@@ @@}}
+{{@@...@@}}
+{{@@[[/div]]@@}}
+[[/div]]
+
+[[div class="box mycelium overwatch"]]
+[[=]]
+++ O5司令部ボックス
+-----
+[[/=]]
+
+{{@@[[div class="box mycelium overwatch"]]@@}}
+{{@@[[=]]@@}}
+{{@@++ O5司令部ボックス@@}}
+{{@@-----@@}}
+{{@@[[/=]]@@}}
+{{@@ @@}}
+{{@@...@@}}
+{{@@[[/div]]@@}}
+[[/div]]
+
+[[div class="box mycelium raisa"]]
+[[=]]
+++ RAISAボックス
+-----
+[[/=]]
+
+{{@@[[div class="box mycelium raisa"]]@@}}
+{{@@[[=]]@@}}
+{{@@++ RAISAボックス@@}}
+{{@@-----@@}}
+{{@@[[/=]]@@}}
+{{@@ @@}}
+{{@@...@@}}
+{{@@[[/div]]@@}}
+[[/div]]
+
+[[div class="box mycelium"]]
+[[=]]
+++ RAISA本文付き菌糸体ボックス
+-----
+[[/=]]
+
+[[div class="raisa"]]
+他の部門ボックスでも同じことができます！
+
+{{@@[[div class="box mycelium"]]@@}}
+{{@@[[=]]@@}}
+{{@@++ RAISA本文付き菌糸体ボックス@@}}
+{{@@-----@@}}
+{{@@[[/=]]@@}}
+{{@@ @@}}
+{{@@[[div class="raisa"]]@@}}
+{{@@...@@}}
+{{@@[[/div]]@@}}
+{{@@[[/div]]@@}}
+[[/div]]
+[[/div]]
+[[/collapsible]]
+
+[[collapsible show="+ 表構文" hide="- 表構文" hideLocation="both"]]
+[[div class="box"]]
+[[div class="record"]]
+||||||~ 機動部隊                 ||||||     MTF β-69 "Betta Suck Deez Nuts" ||
+||||||~ 指揮官                   ||||||     Dr. Deez                        ||
+||||||~ 指揮音楽プラットフォーム ||||||     Deezer                          ||
+||~     ミスター・ビーン || ウルトラ         |||| ||~   ビーン博士 || シュプリーム             ||
+||~     e                         ||         f                               ||
+[[/div]]
+
+{{@@[[div class="record"]]@@}}
+{{@@||||||~ 機動部隊 |||||| MTF β-69 "Betta Suck Deez Nuts" ||@@}}
+{{@@||||||~ 指揮官 |||||| Dr. Deez ||@@}}
+{{@@||||||~ 指揮音楽プラットフォーム |||||| Deezer ||@@}}
+{{@@||~ ミスター・ビーン || ウルトラ |||| ||~ ビーン博士 || シュプリーム ||@@}}
+{{@@||~ e || f ||@@}}
+{{@@[[/div]]@@}}
+[[/div]]
+
+[[div class="box"]]
+[[div class="discourse"]]
+||||~ 視聴覚記録 ||
+||~ ミスター・ビーン || 憎いよ、ビーン博士。                                  ||
+||~ ビーン博士 || 愛しています、ミスター・ビーン。                                  ||
+||~ @@--------@@ ||=  //二人はキスする。//[[footnote]]ずさんな様式。[[/footnote]] ||
+[[/div]]
+
+備考として、"{{discourse}}"クラスを"{{discourse box}}"へ変えると、これをボックスに入れられます！
+
+{{@@[[div class="discourse"]]@@}}
+{{@@||||~ 視聴覚記録 ||@@}}
+{{@@||~ ミスター・ビーン || 憎いよ、ビーン博士。 ||@@}}
+{{@@||~ ビーン博士 || 愛しています、ミスター・ビーン。 ||@@}}
+{{@<||~ @@--------@@ ||= //二人はキスする。//[[footnote]]ずさんな様式。[[/footnote]] ||>@}}
+{{@@[[/div]]@@}}
+[[/div]]
+[[/collapsible]]
+[[/div]]
+
+[[div class="subsection" style="--subsection-index: 4;"]]
+++ ソースコード
+
+[[collapsible show="+ ソースを表示" hide="- ソースを隠す" hideLocation="both"]]
+[[code type="css"]]
+:root{
+  --titleColor: #d8dca2;
+  --subtitleColor: #d1d197;
+  --header-title: "SCP財団";
+  --header-subtitle: "維持、消費、増殖";
+  --lgurl: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aparamycota-jp/scp.png);
+  --shroomurl: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aparamycota-jp/clavarioid.svg);
+
+  --headerLight: 216, 220, 162;
+  --headerOff: 62, 14, 25;
+  --headerDark: 32, 1, 14;
+
+  --lightColor: 220, 220, 200;
+  --darkColor: 14, 0, 10;
+
+  background-color: rgb(var(--darkColor));
+  scrollbar-color: rgb(var(--headerLight)) rgb(var(--headerDark));
+}
+
+div#container-wrap{
+  background: linear-gradient(to bottom, rgb(var(--headerDark)) 0px 269px, rgba(var(--darkColor), 0.75) 1269px calc(100% - 1000px), rgb(var(--darkColor)) 100%) no-repeat, url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aparamycota-jp/soil.jpg) fixed, #0e000a;
+}
+div#container-wrap::before{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 269.01px;
+  background: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aparamycota-jp/web.svg) bottom 4.01px center / auto 21px repeat-x, linear-gradient(to top, rgb(var(--headerDark)) 0px 2.01px, rgb(var(--headerLight)) 2.01px 27.01px, rgb(var(--headerDark)) 27.01px 29.01px, transparent 29.01px 100%) bottom no-repeat, url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aparamycota-jp/header.jpg) top center / 100% auto no-repeat, #20010e;
+}
+#header{
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+#header::before{
+  opacity: 1;
+  margin-top: -3em;
+  background-size: auto 15em;
+}
+#header h1 a::before{
+  font-family: unset;
+}
+#header h1 a::before, #header h2::before{
+  text-shadow: 0px 0px 5px rgb(var(--headerDark)), 0px 0px 5px rgb(var(--headerDark)), 0px 0px 5px rgb(var(--headerDark)), 0px 0px 5px rgb(var(--headerDark)), 0px 0px 5px rgb(var(--headerDark));
+  text-transform: uppercase;
+}
+#header #login-status, #header #login-status #account-options, #top-bar ul li ul, #search-top-box-form input[type="submit"], #search-top-box-form input[type="submit"]:focus, #search-top-box-form input[type="submit"]:hover{
+  color: rgb(var(--headerLight));
+  border-color: rgb(var(--headerLight));
+  background: rgb(var(--headerDark));
+}
+#header #login-status{
+  border: solid 1px rgb(var(--headerLight));
+  padding: 1px;
+}
+#header #login-status a, #top-bar a{
+  color: rgb(var(--headerLight));
+}
+#header #account-topbutton{
+  border: none;
+}
+#header #login-status #account-options{
+  right: -1px;
+  margin-top: 1px;
+  border-radius: 2px 0 2px 2px;
+}
+#search-top-box-form input[type="submit"]{
+  background: linear-gradient(to bottom, #562a25, #3e0e19, #20010e) rgb(var(--headerDark));
+  border-radius: 2px;
+}
+#search-top-box-form input[type="submit"]:focus, #search-top-box-form input[type="submit"]:hover{
+  background: linear-gradient(to bottom, #77593a, #5d3228, #3f0f19) rgb(var(--headerDark));
+  border-radius: 2px;
+}
+#top-bar{
+  padding-top: 100px;
+}
+#top-bar > .top-bar > ul{
+  margin: 4px 0;
+  background: rgb(var(--headerDark));
+}
+#top-bar > .mobile-top-bar{
+  top: 4px;
+  background: rgb(var(--headerDark));
+}
+#top-bar ul li ul{
+  border-top: 2px solid;
+  border-radius: 0 0 2px 2px;
+}
+#top-bar ul li a, #top-bar ul li:hover a, #top-bar ul li.sfhover a, #top-bar ul li:hover ul li a, #top-bar ul li.sfhover ul li a{
+  color: rgb(var(--headerLight));
+  border: none;
+  background: rgb(var(--headerDark));
+}
+#top-bar ul li.sfhover a:hover, #top-bar ul li:hover a:hover{
+  color: rgb(var(--headerDark));
+  border-color: rgb(var(--headerLight));
+  background: rgb(var(--headerLight));
+}
+#top-bar .open-menu a{
+  color: rgb(var(--headerLight));
+  border: 2px rgb(var(--headerLight)) outset;
+  border-radius: 4px;
+  background: rgb(var(--headerOff));
+}
+#top-bar .open-menu a:hover{
+  box-shadow: 0 0 10px 3px rgb(var(--headerDark));
+}
+
+#side-bar{
+  border-right: 1px rgb(var(--headerLight)) solid;
+  background: rgb(var(--headerDark));
+}
+#side-bar .side-block, #side-bar .side-block.resources, #side-bar .side-block.media, #interwiki .side-block{
+  background: rgb(var(--headerOff));
+  border: 2px rgb(var(--headerLight)) outset;
+  border-radius: 2px;
+}
+#side-bar .heading, #interwiki .heading{
+  color: rgb(var(--headerLight));
+  border-color: rgb(var(--headerLight));
+}
+#side-bar a, #interwiki a{
+  color: inherit;
+}
+#side-bar strong{
+  font-weight: normal;
+}
+
+body, h1{
+  color: rgb(var(--lightColor));
+}
+#page-title, .meta-title{
+  color: rgb(var(--headerLight));
+  border-color: rgb(var(--headerLight));
+  overflow-x: hidden;
+}
+#page-title::before, #page-title::after, .meta-title::before, .meta-title::after{
+  content: "";
+  display: inline-block;
+  width: 2lh;
+  height: 2lh;
+  background: var(--shroomurl) center center / 100%;
+  vertical-align: bottom;
+}
+#page-title::before, .meta-title::before{
+  transform: scaleX(-1);
+  margin-left: -2lh;
+}
+#page-title::after, .meta-title::after{
+  margin-right: -2lh;
+}
+#main-content{
+  text-align: justify;
+}
+li::marker{
+  color: rgb(var(--headerLight));
+}
+:is(h1, h2, h3, h4, h5, h6, #page-content div[style]:not([class]):has(> :is(h1, h2, h3, h4, h5, h6))) + hr{
+  margin-top: 0;
+}
+
+a, a:visited, #footer a, #footer a:visited{
+  color: rgb(var(--headerLight));
+  font-weight: bold;
+}
+#page-content p a:not(.footnoteref), span.printuser.avatarhover, #page-content td a:not(.footnoteref){
+  color: rgb(var(--headerDark));
+  text-shadow: none;
+  border: 2px rgb(var(--headerLight)) dotted;
+  border-radius: 8px;
+  background: rgb(var(--headerLight)) padding-box;
+  padding: 2px;
+}
+#page-content p a:not(.footnoteref):hover, span.printuser.avatarhover:hover, #page-content td a:not(.footnoteref):hover{
+  border-style: double;
+  border-width: 4px;
+  padding-left: 0;
+  padding-right: 0;
+}
+#page-content p span.printuser.avatarhover a:not(.footnoteref){
+  border-width: 0;
+  padding: 0;
+}
+span.printuser.avatarhover a{
+  color: rgb(var(--headerDark));
+}
+a.newpage:hover{
+  text-decoration: underline;
+}
+#page-content p > a:not(.footnoteref):not([href^="#"]):visited, #page-content p :not(span.printuser.avatarhover) > a:not(.footnoteref):not([href^="#"]):visited, #page-content td a:not(.footnoteref):visited{
+  color: rgb(var(--headerLight));
+  background: rgb(var(--headerOff)) padding-box;
+  border-color: rgb(var(--headerOff));
+}
+.owindow .button-bar a, div.buttons input{
+  color: rgb(var(--headerLight));
+  font-weight: bold;
+  border: 2px dotted rgb(var(--headerLight));
+  border-radius: 8px;
+  background: rgb(var(--headerDark));
+  padding: calc(0.1em + 2px) 1em;
+  cursor: pointer;
+}
+.owindow .button-bar a:hover, div.buttons input:hover{
+  color: rgb(var(--headerLight));
+  border: 4px double rgb(var(--headerLight));
+  background: rgb(var(--headerOff));
+  padding: 0.1em calc(1em - 2px);
+}
+
+blockquote, .blockquote, .code, .box, .yui-navset > .yui-content, #toc, .alert, .alert-info, .owindow, .error, #lock-info, table.page-files .highlight{
+  border: 4px rgb(var(--headerOff)) solid;
+  border-right-color: #290910;
+  border-bottom-color: #290910;
+  border-radius: 8px;
+  background: rgba(var(--headerDark), 0.5);
+  padding: 0 1em;
+  margin: 1em 0;
+  overflow: auto;
+}
+blockquote, .blockquote, .code, .box{
+  clear: both;
+}
+.alert, .alert-info, .owindow, .error{
+  background: rgba(var(--headerDark), 0.75);
+}
+.code > .hl-main > pre > span{
+  color: rgb(var(--lightColor));
+}
+.hl-identifier{
+  font-weight: bold;
+}
+.owindow .title{
+  background: none;
+}
+.code{
+  text-align: start;
+}
+tt{
+  text-justify: none; /* not supported everywhere but it's nice if we can get it */
+}
+
+h5, h6{
+  margin-top: 2em;
+}
+.subsection{
+  --subsection-index: 0;
+}
+.subsection > :is(h1, h2, h3, h4){
+  display: flex;
+  flex-flow: row nowrap;
+  border-bottom: 1px rgb(var(--lightColor)) solid;
+  margin-top: 2em;
+  margin-bottom: 1rem;
+  text-align: start;
+}
+.subsection > :is(h1, h2, h3, h4) > *{
+  flex: 0 0 auto;
+  margin-right: 1lh;
+}
+.subsection > :is(h1, h2, h3, h4)::after{
+  content: "";
+  flex: 1 1 auto;
+  align-self: end;
+  height: 0;
+  border-top: 1lh transparent solid;
+  border-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aparamycota-jp/buttons.svg) 84% 0 0 0 / 1lh 0 0 0 round;
+  margin-left: auto;
+  margin-right: 0;
+  max-width: calc(1.2lh * var(--subsection-index));
+}
+.colophon{
+  margin-top: -1em;
+  margin-bottom: 1em;
+  text-align: right;
+}
+
+.mycelium{
+  text-shadow: 1px 1px 1px rgb(var(--darkColor)),-1px 1px 1px rgb(var(--darkColor)),1px -1px 1px rgb(var(--darkColor)),-1px -1px 1px rgb(var(--darkColor));
+  background: rgb(var(--darkColor), 0.75);
+}
+.mycelium, .raisa, .ethics, .overwatch, .classification{
+  position: relative;
+  z-index: 1;
+}
+.mycelium::before, .raisa::after, .ethics::after, .overwatch::after, .classification::after{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.mycelium::before{
+  background: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aparamycota-jp/mycelium.jpg) center / cover fixed, #6d6962;
+  opacity: 0.2;
+  mix-blend-mode: hard-light;
+}
+.raisa::after{
+  background: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aparamycota-jp/raisa.png) center / contain no-repeat;
+}
+.ethics::after{
+  background: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aparamycota-jp/ethics.png) center / contain no-repeat;
+}
+.overwatch::after{
+  background: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aparamycota-jp/overwatch.png) center / contain no-repeat;
+}
+.classification::after{
+  background: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aparamycota-jp/classification.png) center / contain no-repeat;
+}
+.raisa::after, .ethics::after, .overwatch::after, .classification::after{
+  filter: drop-shadow(0 0 10px rgb(var(--headerDark)));
+}
+
+#page-content > div.page-rate-widget-box{
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: right;
+}
+div.page-rate-widget-box .rate-points{
+  color: rgb(var(--headerLight));
+  border: 2px rgb(var(--headerLight)) outset;
+  border-radius: 2px;
+  border-right: 0 none;
+  background-color: rgb(var(--headerOff));
+}
+div.page-rate-widget-box :is(.rateup, .ratedown, .cancel){
+  background-color: rgb(var(--headerOff));
+  border-top: 2px outset;
+  border-bottom: 2px outset;
+  border-color: rgb(var(--headerLight));
+  border-radius: 2px;
+}
+div.page-rate-widget-box .cancel{
+  border-right: 2px rgb(var(--headerLight)) outset;
+}
+div.page-rate-widget-box :is(.rateup, .ratedown) a{
+  padding: 0 5px;
+  margin: 0;
+}
+div.page-rate-widget-box :is(.rateup, .ratedown, .cancel) a{
+  color: rgb(var(--headerLight));
+  background: none;
+}
+div.page-rate-widget-box :is(.rateup, .ratedown, .cancel) a:hover{
+  color: rgb(var(--headerOff));
+  background-color: rgb(var(--headerLight));
+  border-radius: 0;
+}
+
+#content-wrap{
+  margin-top: 0.5rem;
+}
+:is(.page-rate-widget-box, #page-content > div:has(> .page-rate-widget-box)) + p{
+  margin-top: 0;
+}
+#page-content > div:has(+ .anom-bar-container) > .page-rate-widget-box, #page-content > .page-rate-widget-box:has(+ .anom-bar-container){
+  margin-bottom: 0;
+  text-align: center;
+}
+:is(div.page-rate-widget-box, #page-content > div:has(.page-rate-widget-box)) + div.anom-bar-container{
+  padding-top: 0.5em;
+}
+
+.anom-bar-container{
+  --swatch-menubg-black-color: var(--headerLight);
+  --swatch-text-secondary-color: var(--headerLight);
+  --swatch-menutxt-dark-color: var(--headerDark);
+}
+.anom-bar-container .text-part :is(.disrupt-class, .risk-class)::before{
+  background-color: rgb(var(--headerDark));
+}
+.anom-bar-container .danger-diamond > :is(.top-icon, .right-icon, .left-icon, .bottom-icon){
+  border-color: rgb(var(--headerDark));
+}
+.anom-bar-container .top-box .top-center-box > div{
+  border-radius: 2px;
+}
+.anom-bar-container .bottom-box .text-part > div{
+  border-radius: 4px;
+}
+@media(min-width: 480px){
+  .anom-bar-container .bottom-box .text-part > div{
+    border-radius: 4px 0 0 4px;
+  }
+}
+@media(min-width: 875px){
+  .anom-bar-container .bottom-box .text-part > div.main-class{
+    border-radius: 0 0 0 4px;
+  }
+  .anom-bar-container .bottom-box .text-part > div.disrupt-class, .anom-bar-container .bottom-box .text-part > div.risk-class{
+    border-radius: 0 4px 4px 0;
+  }
+}
+
+div.hovertip{ /* wikidot puts these styles in the fucking element html :/ */
+  color: rgb(var(--darkColor));
+  background: rgb(var(--headerLight)) content-box !important;
+  border: 3em transparent solid !important;
+  border-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aparamycota-jp/box.svg) 33.33% / 3em round !important;
+  filter: drop-shadow(0 0 2px rgb(var(--headerDark)));
+}
+
+div > a.collapsible-block-link, .colmod-link-top > div.foldable-list-container > a, .colmod-link-end > div.foldable-list-container > a{ /* increase target size of non-inline collapsible targets for wcag 2.5.8 */
+  display: inline-block;
+  width: 100%;
+  margin: -0.5em;
+  padding: 0.5em;
+}
+.collapsible-block-folded, .collapsible-block-unfolded > .collapsible-block-unfolded-link:first-child, .colmod-block{
+  margin-top: 1em;
+}
+.collapsible-block-folded, .collapsible-block-unfolded > .collapsible-block-unfolded-link:last-child, .colmod-block{
+  margin-bottom: 1em;
+}
+
+:not(.record) > table.wiki-content-table th, .pager .current{
+  color: rgb(var(--headerDark));
+  background: rgb(var(--headerLight));
+}
+:not(.record) > table.wiki-content-table th, :not(.record) > table.wiki-content-table td{
+  border: none;
+}
+:not(.record) > table.wiki-content-table tr + tr th:first-child, :not(.record) > table.wiki-content-table tr:first-child th:first-child:not(:last-child){
+  border-right: 4px rgb(var(--headerLight)) double;
+  text-align: right;
+}
+:not(.record) > table.wiki-content-table tr:first-child th{
+  border-bottom: 4px rgb(var(--headerLight)) double;
+  text-align: center;
+}
+:not(.record) > table.wiki-content-table tr + tr td{
+  border-top: 2px rgb(var(--headerLight)) dotted;
+}
+:not(.record) > table.wiki-content-table td + td{
+  border-left: 2px rgb(var(--headerLight)) dotted;
+}
+:not(.record) > table.wiki-content-table td > img:only-child{
+  max-width: calc(100% + 1.4em);
+  margin: -0.3em -0.7em;
+}
+
+.discourse.box{
+  padding: 0;
+}
+.discourse.box > table.wiki-content-table{
+  margin: 0;
+  width: 100%;
+}
+.discourse > table.wiki-content-table tr th{
+  font-family: 'Andale Mono', 'Courier New', Courier, monospace;
+  font-size: 98%;
+  text-transformation: uppercase;
+  vertical-align: top;
+}
+.discourse > table.wiki-content-table tr + tr th:first-child{
+  color: rgb(var(--headerLight));
+  border-right: none;
+  background: none;
+  white-space: nowrap;
+}
+.discourse > table.wiki-content-table tr:first-child > :first-child{
+  border-top-left-radius: 4px;
+}
+.discourse > table.wiki-content-table tr:first-child > :last-child{
+  border-top-right-radius: 4px;
+}
+.discourse > table.wiki-content-table tr + tr td{
+  border-top: none;
+}
+.discourse > table.wiki-content-table th + td, .discourse > table.wiki-content-table td + td{
+  border-left: 2px rgb(var(--headerLight)) solid;
+}
+.discourse > table.wiki-content-table tr + tr + tr td > img{
+  border-top: 2px rgb(var(--headerLight)) solid;
+}
+.discourse > table.wiki-content-table tr:not(:last-child) td > img{
+  border-bottom: 2px rgb(var(--headerLight)) solid;
+}
+
+.record{
+  padding: 0 2em;
+}
+.record.box{
+  padding: 0 1em;
+}
+.subsection > :is(h1, h2, h3, h4, h5, h6) + .record, .subsection > .colophon + .record{
+  margin-top: -1em;
+}
+.record > table.wiki-content-table{
+  width: 100%;
+  border-collapse: separate;
+  margin-bottom: 1.5em;
+}
+.record.box > table.wiki-content-table{
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+.record > table.wiki-content-table th, .record > table.wiki-content-table td{
+  vertical-align: bottom;
+  border: none;
+  empty-cells: hide;
+}
+.record > table.wiki-content-table th{
+  text-align: left;
+  background: none;
+  padding: 1em 0 0 0.1em;
+  border-bottom: 2px rgb(var(--headerLight)) solid;
+}
+.record > table.wiki-content-table td{
+  text-align: center;
+  font-family: 'Andale Mono', 'Courier New', Courier, monospace;
+  font-size: 98%;
+  padding: 1em 0.5em 0 0.5em;
+  border-bottom: 2px rgb(var(--headerLight)) dotted;
+}
+
+.yui-navset > ul.yui-nav{
+  display: flex;
+  flex-flow: row wrap;
+  border: none;
+}
+.yui-navset > ul.yui-nav > li{
+  display: block;
+  flex: 1 0 auto;
+}
+.yui-navset > ul.yui-nav > li.selected{
+  flex: 2 0 auto;
+}
+.yui-navset > ul.yui-nav > li > a{
+  display: block;
+  position: static;
+  border: 2px rgb(var(--headerLight)) dotted;
+  border-bottom: 1px rgb(var(--headerLight)) solid;
+  border-radius: 4px 4px 0 0;
+  padding: 2px 2px 0;
+  text-align: center;
+  color: rgb(var(--headerLight));
+  background: rgb(var(--headerDark));
+}
+.yui-navset > ul.yui-nav > li > :is(a:hover, a:focus){
+  background: rgb(var(--headerOff));
+  outline: revert;
+}
+.yui-navset > ul.yui-nav > li.selected > :is(a, a:hover, a:focus){
+  border: 4px rgb(var(--headerLight)) solid;
+  border-bottom: 1px rgb(var(--headerLight)) solid;
+  padding: 0;
+  color: rgb(var(--headerDark));
+  background: rgb(var(--headerLight));
+}
+.yui-navset > ul.yui-nav > :is(li, li.selected) > :is(a, a:hover, a:focus) em{
+  position: static;
+  border: none;
+  padding: 2px;
+}
+.yui-navset > .yui-content{
+  border-top: none;
+  border-radius: 0px 0px 8px 8px;
+  margin-top: 0;
+}
+
+.scp-image-block{
+  border: none;
+}
+.scp-image-block img{
+  box-sizing: border-box;
+  border: 1px rgb(var(--headerLight)) solid;
+  border-radius: 4px 4px 0 0;
+  background: rgb(var(--darkColor));
+}
+.scp-image-block .scp-image-caption{
+  color: rgb(var(--headerLight));
+  border: 1px rgb(var(--headerLight)) solid;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  background: rgb(var(--headerOff));
+}
+.anom-bar-container + .scp-image-block.block-center{
+  margin-bottom: 1em;
+}
+.scp-image-block.block-center, :is(.box, blockquote, .blockquote, .code) > .scp-image-block:first-child{
+  margin-top: 1em;
+}
+/* from croqstyle */
+@media (max-width: 850px){
+  div.scp-image-block.block-right, div.scp-image-block.block-left{
+    float: none;
+    margin-top: 1em;
+    margin-inline: auto;
+  }
+}
+
+a.action-area-close:hover{
+  background: none;
+}
+.footnotes-footer, .licensebox{
+  margin-top: 6rem;
+}
+.footnotes-footer ~ .licensebox, .licensebox ~ .footnotes-footer{
+  margin-top: 0;
+}
+.licensebox{
+  text-align: start;
+}
+#footer, #license-area{
+  color: rgb(var(--lightColor));
+  background: none;
+}
+[[/code]]
+[[/collapsible]]
+[[/div]]
+
+[[footnoteblock]]
+
+[[include :scp-jp:component:license-box-backend |author=tachymelia]]
+> **ファイル名:** header.jpg
+> **名称:** Aspergillus（アスペルギルス属）胞子のない菌糸、走査型電子顕微鏡画像
+> **著者:** David Gregory and Debbie Marshall
+> **ライセンス:** CC BY 4.0
+> **ソースリンク:** [[[https://wellcomecollection.org/works/f5ujxfsz/images?id=u6r4d94u]]] (via [[[https://openverse.org/image/89705b09-0358-4263-b5ff-884076d1271d|openverse]]])
+
+> **ファイル名:** soil.jpg
+> **名称:** Ground 048
+> **著者:** ambientcg.com
+> **ライセンス:** CC0
+> **ソースリンク:** [[[https://ambientcg.com/view?id=Ground048]]]
+
+> **ファイル名:** mycelium.jpg
+> **名称:** Agaricus bisporus Mycelium（ツクリタケの菌糸体）
+> **著者:** [[[Rob Hille|https://commons.wikimedia.org/wiki/User:Rob_Hille]]]
+> **ライセンス:** CC BY-SA 3.0
+> **ソースリンク:** [[[https://commons.wikimedia.org/wiki/File:Mycelium_RH_(3).jpg]]]
+
+> **ファイル名:** clavarioid.svg
+> **名称:** fungi（キノコ）
+> **著者:** [[[Olena Panasovska|https://thenounproject.com/creator/zzyzz/]]]
+> **ライセンス:** CC BY 3.0
+> **ソースリンク:** [[[https://thenounproject.com/icon/fungi-3292005/]]]
+
+> **ファイル名:** buttons.svg
+> **名称:** Mushrooms vector image（キノコのベクター画像）
+> **著者:** Unattributed
+> **ライセンス:** Public Domain
+> **ソースリンク:** [[[https://publicdomainvectors.org/en/free-clipart/Mushrooms-vector-image/1400.html]]]
+> **補足:** リカラーと簡略化。
+
+> **ファイル名:** classification.png
+> **名称:** 分類委員会
+> **著者:** [[*user EstrellaYoshte]]
+> **ライセンス:** CC BY-SA 3.0
+> **ソースリンク:** [[[desk-of-junior-designer-s-yvonne]]]
+
+> **ファイル名:** ethics.png
+> **名称:** 倫理委員会
+> **著者:** [[*user EstrellaYoshte]]
+> **ライセンス:** CC BY-SA 3.0
+> **ソースリンク:** [[[desk-of-junior-designer-s-yvonne]]]
+
+> **ファイル名:** overwatch.png
+> **名称:** O5司令部
+> **著者:** [[*user EstrellaYoshte]]
+> **ライセンス:** CC BY-SA 3.0
+> **ソースリンク:** [[[desk-of-junior-designer-s-yvonne]]]
+
+> **ファイル名:** raisa.png
+> **名称:** RAISA
+> **著者:** [[*user EstrellaYoshte]]
+> **ライセンス:** CC BY-SA 3.0
+> **ソースリンク:** [[[desk-of-junior-designer-s-yvonne]]]
+[[include :scp-jp:component:license-box-end]]
+[[/iftags]]

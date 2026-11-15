@@ -1,0 +1,271 @@
+[[include component:interwiki-style
+| priority=1
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aplant-jp/1
+]]
+
+[[module CSS]]
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aplant-jp/1");
+[[/module]]
+
+
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** Plantテーマ
+**翻訳責任者:** SCP-JP
+**翻訳年:** 2026
+**原題:** Plant Theme
+**著作権者:** [[*user stormbreath]]
+**作成年:** 2020
+**初訳時参照リビジョン:** 28
+**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:plant ソース]
+**フォント:** Short Stack・Noto Sans JP（ともに Google Fonts、SIL Open Font License）
+[[include :scp-jp:credit:end-preview]]
+
+この派生テーマは、2020年のエイプリルフール企画「Super Cool Plants!」で使用されました。
+
+このテーマを使用するには、任意のページに以下の構文を記述してください。
+
+> @@[[include :scp-jp:theme:plant]]@@
+
++ 第1見出し
+
+[# 未訪問リンク] ([/theme:plant 訪問済みリンク])
+
+[[code type="CSS"]]
+@import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
+
+/*
+    Super Cool Plants!
+    [2020年 Wikidotテーマ]
+    SCP財団のために stormbreath が作成
+    ロゴ画像: https://www.kissclipart.com/leaf-icon-png-clipart-computer-icons-leaf-g0jlo5/ (CC0) および Sigma-9テーマ（ベース）。stormbreathが編集。
+    ヘッダー画像: https://pixabay.com/photos/green-plant-white-wall-texture-3685805/ (CC0) および Sigma-9テーマ（ベース）。stormbreathが編集。
+*/
+
+/* 共通 */
+h1, #page-title {
+    font-family: 'Comic Sans MS', 'Comic Sans', 'Short Stack', 'Noto Sans JP', cursive;
+    font-feature-settings: 'case', 'ss04';
+    color: #090;
+}
+
+a,
+#side-bar a,
+#interwiki a,
+#interwiki a:visited,
+#side-bar a:visited,
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a,
+#login-status ul a {
+    color: #0b0;
+}
+
+a.newpage {
+    color: #6d6;
+}
+
+a:visited {
+   color: #282;
+}
+
+/* 全体幅 */
+div#container-wrap {
+    background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aplant-jp/plantbg.png);
+}
+
+/* ヘッダー */
+#header {
+    background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aplant-jp/plantlogo.png);
+}
+#search-top-box-input {
+    border: solid 1px #696;
+    background-color: #030;
+}
+#search-top-box-input:hover,
+#search-top-box-input:focus {
+    background-color: #060;
+}
+#search-top-box-form input[type=submit] {
+    border: solid 1px #696;
+    background-color: #363;
+    background: linear-gradient(to bottom, #696,#060,#030);
+}
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+    background-color: #696;
+    background: linear-gradient(to bottom, #9c9,#696,#363);
+}
+
+#header h1 a,
+#header h2 span {
+    font-family: 'Comic Sans MS', 'Comic Sans', 'Short Stack', 'Noto Sans JP', cursive;
+}
+
+#header h2 span {
+    color: transparent;
+    text-shadow: none;
+}
+
+#header h2 span::before {
+     content: 'Super Cool Plants!';
+     color: #f0f0c0;
+     text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+}
+
+/* サイドメニュー */
+#side-bar .side-block,
+#interwiki .side-block {
+    border: 1px solid #060;
+    box-shadow: 0 2px 6px rgba(0,102,0,.5);
+}
+
+#side-bar .heading,
+#interwiki .heading {
+    color: #060;
+    border-bottom: solid 1px #060;
+}
+
+#side-bar .collapsible-block-unfolded-link {
+    border-bottom: solid 1px #060;
+}
+
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link {
+    color: #060;
+}
+
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link:hover {
+    color: #0b0;
+}
+
+/* 展開中サイドバーの背景を変更 */
+@media (max-width: 767px) {
+     #side-bar {
+         background-color: #090;
+     }
+}
+
+#interwiki .menu-item img {
+    filter: hue-rotate(140deg);
+}
+
+#side-bar .side-block.media {
+     background-color: #a2dba2;
+}
+
+#side-bar .side-block.resources {
+     background-color: #f0fff0;
+}
+
+#interwiki .side-block {
+     background: #e0fddd;
+}
+
+/* フッター */
+#footer {
+    background: #242;
+}
+
+/* いい感じのボックス類 */
+.content-panel {
+    border: solid 1px #308830;
+    background-color: #339930;
+}
+
+/* ページ評価モジュールのカスタマイズ */
+div.page-rate-widget-box .rate-points {
+    background-color: #363;
+    border: solid 1px #363;
+}
+
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+    background-color: #f6fff6;
+    border-top: solid 1px #363;
+    border-bottom: solid 1px #363;
+}
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a {
+    color: #363;
+}
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover {
+    background: #363;
+    color: #fffff0;
+}
+.page-rate-widget-box .cancel {
+    background-color: #363;
+    border: solid 1px #363;
+}
+.page-rate-widget-box .cancel a {
+    color: #696;
+}
+.page-rate-widget-box .cancel a:hover {
+    background: #363;
+    color: #fffff0;
+}
+
+#page-content .rate-box-with-credit-button{
+    background-color: #363;
+    border: solid 1px #363;
+}
+
+#page-content .creditButton p a {
+    border-left-color: #696;
+}
+
+.close-credits,
+.credit-back {
+     filter: hue-rotate(140deg)
+}
+
+#page-content .modalbox {
+    box-shadow: 0 2px 6px rgba(0, 100,0 ,.5);
+}
+
+/* YUIタブ */
+.yui-navset .yui-nav a,
+.yui-navset .yui-navset-top .yui-nav a {
+    background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aplant-jp/tabs.png);
+}
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a:focus, /* 選択中はフォーカス効果なし */
+.yui-navset .yui-nav .selected a:hover { /* 選択中はホバー効果なし */
+    background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aplant-jp/tabs.png); /* 選択中タブの背景 */
+}
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:focus {
+    background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aplant-jp/tabs.png);
+}
+[[/code]]
+[[include :scp-jp:component:license-box-backend |author=stormbreath]]
+> **ファイル名:** plantbg.png
+> **名称:** 植物ヘッダー
+> **著者:** [[*user stormbreath]]
+> **ライセンス:** CC BY-SA 3.0
+> ----
+> **派生元:** green-plant-white-wall-texture
+> **著者:** Dimhou
+> **ライセンス:** CC0
+> **ソースリンク:** [[[https://pixabay.com/photos/green-plant-white-wall-texture-3685805|Pixabay]]]
+>
+> **派生元:** body_bg.png
+> **著者:** [[*user Aelanna]]
+> **ライセンス:** CC BY-SA 3.0
+> **ソースリンク:** [[[component:theme|サイトテーマ]]]
+
+> **ファイル名:** plantlogo.png
+> **名称:** 葉のロゴ
+> **著者:** [[*user stormbreath]]
+> **ライセンス:** CC BY-SA 3.0
+> ----
+> **派生元:** Circle Leaf
+> **ライセンス:** CC0
+> **ソースリンク:** [[[https://www.kissclipart.com/leaf-icon-png-clipart-computer-icons-leaf-g0jlo5/ |kissclipart]]]
+>
+> **派生元:** logo.png
+> **著者:** [[*user Aelanna]]
+> **ライセンス:** CC BY-SA 3.0
+> **ソースリンク:** [[[component:theme|サイトテーマ]]]
+[[include :scp-jp:component:license-box-end]]
+[[/iftags]]

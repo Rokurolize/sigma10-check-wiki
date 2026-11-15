@@ -1,0 +1,128 @@
+[[include component:interwiki-style
+| priority=1
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aparawatch-pumpkin-jp/1
+| css=%23interwiki%20.menu-item%20img%2C%20%23interwiki%20.menu-item%20%3E%20.image%7Bfilter%3Ahue-rotate%288deg%29%20brightness%284.5%29%20saturate%28200%25%29%7D
+]]
+
+[[module CSS]]
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aparawatch-pumpkin-jp/1");
+[[/module]]
+
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** パラウォッチ・パンプキンテーマ
+**翻訳責任者:** SCP-JP
+**翻訳年:** 2026
+**原題:** Parawatch Pumpkin Theme
+**著作権者:** [[*user stormbreath]]
+**作成年:** 2022
+**初訳時参照リビジョン:** 11
+**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:parawatch-pumpkin ソース]
+**基盤:** [[[theme:anon|パラウォッチ・アノンテーマ]]]（[[*user Lt Flops]]作、theme:anon-jp 経由。Creepypasta（[[*user The Great Hippo]]作）はインラインで同梱）
+[[include :scp-jp:credit:end-preview]]
+[[div style="display: none;"]]
+[[include theme:anon-jp]]
+[[/div]]
+
+[[div class="blockquote"]]
+これは[[*user stormbreath]]によるパラウォッチ・パンプキンテーマです。[[*user Lt Flops]]による**[[[theme:anon|パラウォッチ・アノンテーマ]]]**の派生版であり、さらにそれ自体が[[*user The Great Hippo]]による**[[[theme:creepypasta|クリーピーパスタテーマ]]]**の派生版です。
+
+このテーマはほぼパラウォッチ・アノンテーマを土台にしていますが、その青系統の配色をオレンジ系統に塗り替えています。用途は問いませんが、パラウォッチテーマのハロウィン版として特に適しています。
+
+このテーマを使用するには、ページ上部に次の構文をコピーしてください。
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:creepypasta]]@@
+@@[[include :scp-jp:theme:anon]]@@
+@@[[include :scp-jp:theme:parawatch-pumpkin]]@@
+[[/div]]
+[[/div]]
+
+
+[[code type="css"]]
+:root {
+     --bg: hsl(14, 6%, 12%);
+     --bg-dark: hsl(17, 5%, 10%);
+
+     --fg-dark: hsl(19, 82%, 65%);
+
+     --fg-dark-2: hsl(19, 100%, 58%);
+
+     --fg-accent-light: hsl(19, 100%, 70%);
+     --fg-accent: hsl(19, 100%, 65%);
+     --fg-accent-dark: hsl(19, 100%, 60%);
+
+     --fg-accent-dark-2: hsl(19, 61%, 49%);
+}
+
+#page-content{
+     font-size: .8rem;
+}
+
+a.newpage {
+    color: hsl(346, 27%, 68%);
+}
+
+div.parapost {
+     border-color: var(--bg-light);
+}
+
+::selection {
+    background: hsl(22, 11%, 27%);
+}
+
+/* -------------- ヘッダー -------------- */
+div#container-wrap{
+     background-image: linear-gradient(to bottom, #010000, #201e1d);
+     background-size: auto 130px;
+}
+
+div#header h1{
+     background: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aparawatch-pumpkin-jp/parawatch-orange.png) no-repeat;
+}
+
+#top-bar li:hover ul,
+#top-bar li.sfhover ul {
+    border-bottom: 1px solid var(--fg-light);
+}
+
+#top-bar ul li.sfhover a:hover,
+#top-bar ul li:hover a:hover {
+    background: hsl(25, 40%, 20%);
+}
+
+ #top-bar .open-menu a{
+     color: var(--fg-dark);
+     background-color: var(--bg-dark);
+     border-color: var(--fg-dark);
+}
+
+
+/* -------------- サイドバー -------------- */
+div#side-bar .collapsible-block-unfolded-link,
+div#side-bar .collapsible-block-unfolded-link .collapsible-block-link {
+     color: var(--fg-dark-2);
+}
+
+#interwiki div.side-block {
+     border-color: var(--fg-dark-2);
+}
+
+#interwiki div.side-block div.heading {
+     color: var(--fg-dark-2);
+     border-color: var(--fg-dark-2);
+}
+
+[[/code]]
+
+[[include :scp-jp:component:license-box-backend |author=stormbreath]]
+> **ファイル名:** parawatch-orange.png
+> **著者:** [[*user stormbreath]]
+> **ライセンス:** CC BY-SA 3.0
+> **派生元:** [[[https://scp-wiki.wikidot.com/theme:creepypasta|parawatch.png]]]、[[*user The Great Hippo]]作
+[[include :scp-jp:component:license-box-end]]
+
+[[/iftags]]
+
+
