@@ -1,0 +1,1139 @@
+[[iftags +テーマ]]
+[[module css]]
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css");
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+#page-title {
+    text-align: center !important;
+    font-family: var(--header-font);
+    font-size: 270%;
+}
+
+@media only screen and (max-width: 765px) {
+  #page-title {
+  font-size: 170%;
+  white-space: nowrap;
+  }
+ }
+
+/* Fonts */
+
+/* Bebas Neueの読み込みはこのモジュールの先頭の@import群に集約した（@importは規則の後に書くと無効になるため） */
+
+/* All Vars Used */
+
+:root {
+    /* S-CSS-P Integration */
+    /* If you're making a new CSS theme, please include the following three variables at minimum. */
+    --theme-base: "nuscp";
+    /* must be either "nuscp" or "sigma9" */
+    --theme-id: "nuscp";
+    /* set this to the URL of your theme's page - eg for "component:ar-theme", set it to "ar-theme" */
+    --theme-name: "i57-theme";
+    /* set this to your theme's full name */
+
+    /* Header */
+    --logo-image: url("https://scp-wiki.wdfiles.com/local--files/theme:i57/i57logo.png");
+
+    --header-title: "FACILITY-57";
+    --header-subtitle: "SEGURIDAD. CONTENCIÓN. PROTECCIÓN";
+
+    /* Typefaces */
+    --header-font: "Bebas Neue", cursive;
+
+    /* ========================== Stylistic Sets		|	Any: 	0 OR 1	 */
+    --ss01: 0;
+    --ss02: 0;
+    --ss03: 0;
+
+    /* Standard Colors */
+    --white-monochrome: 252, 252, 252;
+
+    --pale-gray-monochrome: 244, 244, 244;
+
+    --very-light-gray-monochrome: 153, 153, 153;
+
+    --light-gray-monochrome: 170, 170, 170;
+
+    --gray-monochrome: 66, 66, 72;
+
+    --dark-gray-monochrome: 39, 39, 39;
+
+    --black-monochrome: 12, 12, 12;
+    /* bright yellow */
+    --bright-accent: 243, 207, 0;
+    /* medium yellow 4 header */
+    --medium-accent: 221, 188, 0;
+    /* dark blue */
+    --dark-accent: 18, 20, 17;
+    /* blue */
+    --alt-accent: 131, 115, 15;
+
+
+    /* Primary Theme Colors */
+    --swatch-background: 240, 240, 240;
+    --swatch-primary: var(--medium-accent);
+    --swatch-primary-darker: var(--bright-accent);
+    --swatch-primary-darkest: var(--bright-accent);
+    /* Primary Text Colors */
+    --swatch-text-dark: var(--black-monochrome);
+    --swatch-text-light: var(--white-monochrome);
+    --swatch-important-text: var(--bright-accent);
+
+    /* Primary Menu Colors */
+    --swatch-menubg-color: var(--dark-accent);
+    --swatch-border-color: var(--medium-accent);
+    /* Primary Header Colors */
+    --swatch-headerh1-color: var(--bright-accent);
+    --swatch-headerh2-color: var(--bright-accent);
+    --swatch-topmenu-border-color: var(--dark-accent);
+    --swatch-topmenu-bg-color: var(--dark-accent);
+
+    --rating-module-button-color: var(--black-monochrome);
+    --rating-module-text-color: var(--black-monochrome);
+
+    --diagonal-stripes: none;
+
+    --cutColour: rgb(var(--bright-accent));
+    --barColour: rgb(var(--dark-accent));
+}
+
+:root {
+    /* ===LINK COLORS=== */
+    --link-color: var(--alt-accent);
+    --visited-link-color: var(--gray-monochrome);
+    --hover-link-color: var(--swatch-primary-darkest);
+    --newpage-color: var(--bright-accent);
+}
+
+#header {
+    /* ===LOGIN BOX ELEMENT=== */
+    --login-arrow-color: var(--swatch-primary-darkest);
+    /* Dropdown Box when arrow is clicked */
+    --login-dropdown-bg-hover-color: var(--swatch-primary), 0.25;
+}
+
+#top-bar {
+    /* ===TOPBAR ELEMENTS=== */
+
+    /* ===TOPBAR CATEGORIES=== */
+    --topmenu-hover-border-color: var(--swatch-primary-darkest);
+    /* ===DROPDOWN MENU=== */
+    --dropdown-links-hover-color: var(--swatch-text-secondary-color);
+    --dropdown-links-hover-bg-color: var(--swatch-primary), 0.25;
+}
+
+#side-bar,
+#interwiki {
+    /* ===SIDE-BAR ELEMENTS=== */
+    /* ===MENU-ITEMS=== */
+    --sidebar-links-hover-bg-color: var(--swatch-primary), 0.25;
+}
+
+#side-bar .heading p,
+#interwiki .heading p {
+    font-size: var(--base-font-size);
+    letter-spacing: 0.1em;
+}
+
+/* ===FOOTER=== */
+#footer {
+    --footer-text-color: var(--swatch-text-tertiary-color);
+    --footer-link-color: var(--swatch-text-tertiary-color);
+    --footer-link-hover-color: var(--swatch-primary-darkest);
+}
+
+/* ===LICENSE AREA=== */
+#license-area {
+    --license-link-hover-color: var(--swatch-primary-darkest);
+}
+
+#main-content {
+    /* ===MAIN CONTENT UI ELEMENTS */
+    /* ===UI ICONS=== */
+    /* ===PAGE OPTIONS ICONS=== */
+    --ui-icon-color: var(--swatch-text-tertiary-color);
+    --ui-icon-bg: var(--swatch-primary);
+    --ui-icon-hover-color: var(--swatch-text-tertiary-color);
+    --ui-icon-hover-bg: var(--swatch-primary-darkest);
+
+    /* ===TEXT EDITOR ICONS=== */
+    --editor-icon-hover-color: var(---swatch-text-tertiary-color);
+
+    /* ===TABS=== */
+    --tabs-bg: var(--swatch-secondary-color);
+    --tabs-txt: var(--swatch-primary-darkest);
+    --tabs-hover-bg: var(--swatch-primary);
+    --tabs-hover-txt: var(--swatch-text-secondary-color);
+    --tabs-selected-bg: var(--swatch-primary-darker);
+    --tabs-selected-outline: var(--swatch-primary-darker);
+
+    /* ===TABLES=== */
+    --tables-header-bg: var(--swatch-primary);
+
+    /* ===FOOTNOTES/BIBLIOGRAPHY FOOTER=== */
+    --footnotes-footer-title-text-color: var(--swatch-text-tertiary-color);
+    --footnotes-footer-num-hover-color: var(--swatch-text-tertiary-color);
+
+    /* ===PAGE TAGS=== */
+    --pagetags-title-text: var(--swatch-text-tertiary-color);
+    --pagetags-text-hover-color: var(--swatch-primary-darkest);
+    --pagetags-text-hover-bg-color: var(--black-monochrome);
+}
+
+/* ===GLOBAL ELEMENTS=== */
+:root {
+    /* ===UI BUTTONS=== */
+    --ui-button-bg: var(--swatch-alternate-color);
+    --ui-button-txt: var(--swatch-text-secondary-color);
+    --ui-button-hover-bg: var(--swatch-primary-darkest);
+    --ui-button-hover-txt: var(--swatch-text-tertiary-color);
+    --ui-button-hover-outline: var(--swatch-primary-darkest);
+
+    /* ===MODALS=== */
+    --modal-bg: var(--swatch-secondary-color);
+    --modal-body-text: var(--swatch-text-tertiary-color);
+    /* h1/h2/h3/h4/h5/h6 */
+    --modal-body-header-txt: var(--swatch-text-tertiary-color);
+
+    --modal-header-bg: var(--swatch-primary-darkest);
+    --modal-header-txt: var(--swatch-text-secondary-color);
+    --modal-header-stripe: var(--swatch-primary);
+
+    /* ===FOOTNOTES HOVER BLOCK=== */
+    --hoverblock-bg: var(--swatch-alternate-color);
+    --hoverblock-txt: var(--swatch-text-secondary-color);
+    --hoverblock-header-txt: var(--swatch-text-tertiary-color);
+    --hoverblock-footer-bg: var(--swatch-alternate-color);
+    --hoverblock-footer-txt: var(--swatch-text-secondary-color);
+}
+
+html,
+body,
+#side-bar:hover {
+    scrollbar-color: rgb(var(--bright-accent)) rgb(var(--dark-accent));
+}
+
+::-webkit-scrollbar,
+#side-bar:hover::-webkit-scrollbar {
+    background-color: rgb(var(--dark-accent));
+}
+
+::-webkit-scrollbar-thumb,
+#side-bar:hover::-webkit-scrollbar-thumb {
+    background-color: rgb(var(--bright-accent));
+}
+
+#header h1 a::before {
+    color: rgb(var(--medium-accent));
+}
+
+#search-top-box-form input[type="submit"],
+#search-top-box-form input[type="submit"]:focus,
+#search-top-box-form input[type="submit"]:hover {
+    background: rgb(var(--black-monochrome));
+    color: rgb(var(--medium-accent));
+}
+
+@media only screen and (max-width: 48rem) {
+    #search-top-box:not(:focus-within)::before {
+    	color: rgb(var(--medium-accent));
+    }
+
+    #search-top-box form[id="search-top-box-form"]:not(:focus-within) input[type="text"] {
+    	background-color: #181a17;
+    }
+}
+
+hr {
+    border-top: 0.0625rem solid rgb(var(--dark-gray-monochrome));
+    border-right: 1.875rem solid rgb(var(--bright-accent));
+    border-bottom: 0.0625rem solid rgb(var(--dark-gray-monochrome));
+    border-left: 1.875rem solid rgb(var(--bright-accent));
+    background: rgb(var(--dark-gray-monochrome));
+}
+
+.scp-image-block {
+    border: none;
+    border-radius: 0.3125rem;
+    background: rgb(var(--dark-gray-monochrome));
+}
+
+.scp-image-block .scp-image-caption {
+    background-color: rgb(var(--dark-accent));
+    color: rgb(var(--bright-accent));
+}
+
+blockquote,
+.blockquote {
+    border: 0.125rem dashed rgba(var(--light-gray-monochrome), 0.7);
+    background-color: rgba(var(--light-gray-monochrome), 0.3);
+}
+
+.footnotes-footer {
+    transition: box-shadow 300ms ease-in-out;
+    background: url("https://scp-wiki.wdfiles.com/local--files/theme:i57/i57.png");
+    background-repeat: repeat;
+    background-size: contain;
+    box-shadow:
+    	inset 0 0 0 0 rgb(var(--medium-accent)),
+    	inset 0 0 0 0 rgb(var(--medium-accent));
+    color: rgb(var(--bright-accent));
+}
+
+.footnotes-footer:hover {
+    box-shadow:
+    	inset 0.35em 0 0 0 rgb(var(--medium-accent)),
+    	inset -0.35em 0 0 0 rgb(var(--medium-accent));
+}
+
+.footnotes-footer a[href*="javascript"]::before,
+.bibitems .bibitem::after {
+    margin: -0.125ch 0.125ch 0;
+    padding: 0 0.125ch;
+    background-color: rgb(var(--swatch-primary-darkest));
+    color: rgb(var(--swatch-text-tertiary-color));
+}
+
+#page-content a:not([href*="user"]):not([href*="javascript:;"]):not([href="/classification-committee-memo"]):hover {
+    background-color: rgb(var(--alt-accent));
+    color: rgb(var(--white-monochrome));
+}
+
+.report {
+    display: block;
+    width: 84%;
+    margin: 0.625rem auto;
+    padding: 0.3125rem 0.9375rem;
+    border: dashed 0.0625rem rgb(var(--very-light-gray-monochrome));
+    background: url('https://scp-wiki.wdfiles.com/local--files/theme%3Ai57/scp-logo-i57.png') center center no-repeat;
+}
+
+.mac {
+    display: block;
+    width: 84%;
+    margin: 0.625rem auto;
+    padding: 12.1875rem 0.9375rem 0.9375rem 0.9375rem;
+    border: solid 0.1875rem rgb(var(--dark-accent));
+    background: url('https://scp-wiki.wikidot.com/local--files/theme:i57/MAC-1.png') top no-repeat;
+    background-color: rgb(var(--white-monochrome));
+    background-size: 12.5rem;
+}
+
+.mac p {
+    padding-top: 0.25rem;
+    border-top: 0.125rem solid rgb(var(--black-monochrome));
+}
+
+#extra-div-2 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7.5rem;
+    background: url("https://scp-wiki.wikidot.com/local--files/theme:i57/i57.png");
+    background-repeat: repeat;
+    background-position: top;
+    background-size: contain;
+    pointer-events: none;
+}
+
+
+/* TABVIEW - Abandon All Hope Ye Who Enter Here */
+
+.yui-navset .yui-nav,
+.yui-navset .yui-navset-top .yui-nav {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% - 0.125rem);
+    margin: 0 auto;
+    box-shadow: 0 calc(0.0625rem * 5) 0 0 rgb(var(--bright-accent));
+}
+
+.yui-navset .yui-nav li,
+.yui-navset .yui-navset-top .yui-nav li {
+    display: flex;
+    position: relative;
+    max-width: 100%;
+    margin: 0 0.25em 0.5em;
+    padding: 0;
+    transition: all 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+    background: url("https://scp-wiki.wikidot.com/local--files/theme:i57/i57.png");
+    background-repeat: repeat;
+    background-size: contain;
+    box-shadow: 0 0 0 0.0625rem rgba(var(--dark-accent), 0.5);
+    color: rgb(var(--bright-accent));
+    font-weight: bold;
+}
+
+.yui-navset .yui-nav li a,
+.yui-navset .yui-navset-top .yui-nav li a {
+    zoom: unset;
+    border: unset;
+    background-color: rgb(0, 0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    zoom: unset;
+    vertical-align: bottom;
+}
+
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:active {
+    color: rgb(var(--dark-accent));
+    font-weight: bold;
+}
+
+.yui-navset .yui-nav a:focus-within {
+    color: rgb(var(--dark-accent));
+    font-weight: bold;
+}
+
+.yui-navset .yui-nav a em,
+.yui-navset .yui-navset-top .yui-nav a em {
+    padding: 0.35em 0.75em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.yui-navset .yui-nav li em {
+    /* Undoes border set by wikidot's default layout */
+    border: unset !important;
+}
+
+/* Selected Tab */
+
+.yui-navset .yui-nav .selected,
+.yui-navset .yui-navset-top .yui-nav .selected,
+.yui-navset .yui-nav .selected:hover,
+.yui-navset .yui-navset-top .yui-nav .selected:hover {
+    flex-grow: 2;
+    margin: -0.25em 0 0.25em 0;
+    padding: 0;
+    color: rgb(var(--dark-accent));
+}
+
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a em {
+    color: rgb(var(--dark-accent));
+}
+
+.yui-navset .yui-nav .selected a {
+    width: 100%;
+    /* Undoes a color set by wikidot's default layout */
+    color: rgb(var(--white-monochrome)) !important;
+}
+
+.yui-navset .yui-content {
+    background-color: rgba(var(--light-gray-monochrome), 0.5);
+    /* content background color */
+}
+
+.yui-navset .yui-content,
+.yui-navset .yui-navset-top .yui-content {
+    border-color: rgb(var(--light-gray-monochrome));
+    /* content border */
+}
+
+.yui-navset-left .yui-content {
+    border-left-color: rgba(var(--dark-accent), 1);
+    /* different border color */
+}
+
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a:focus,
+.yui-navset .yui-nav .selected a:hover {
+    margin-bottom: -0.125rem;
+    background-color: rgb(var(--medium-accent));
+    background-image: none;
+    color: rgb(var(--dark-accent));
+    font-weight: bold;
+    cursor: default;
+}
+
+/* Reduced Animations */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    ::before,
+    ::after {
+    	transition-duration: 0.001s !important;
+    	-webkit-animation-duration: 0.001s !important;
+    	animation-duration: 0.001s !important;
+    	-webkit-animation-iteration-count: 1 !important;
+    	animation-iteration-count: 1 !important;
+    }
+}
+
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css
+]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=2
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css
+]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** I57 BHLテーマ
+**翻訳責任者:** SCP-JP
+**翻訳年:** 2026
+**原題:** I57 BHL Theme
+**著作権者:** Rounderhouse
+**作成年:** 2020
+**初訳時参照リビジョン:** 41
+**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:i57 ソース]
+[[include :scp-jp:credit:end-preview]]
+
+[[div_ style="display:flex;"]]
+[[image https://scp-jp.github.io/Black-Highlighter/img/black-highlighter-logo.svg]]
+[[/div]]
+
+----
+[[=]]
++ テーマカラー
+[[/=]]
+
+[[include :scp-jp:component:theme-squares -=-
+| color1-name=Ship Gray
+| color1-variable=--dark-gray-monochrome
+| color1-info=#424248
+| color1-has-light-text=1
+| color2-name=Gold
+| color2-variable=--bright-accent
+| color2-info=#f3cf00
+| subcolor1-name=Corn
+| subcolor1-variable=--medium-accent
+| subcolor1-info=#ddbc00
+| subcolor2-name=Log Cabin
+| subcolor2-variable=--dark-accent
+| subcolor2-info=#121411
+| subcolor2-has-light-text=1
+]]
+----
+
+[[div class="scp-image-block block-right" style="width: 150px;"]]
+[[image https://scp-wiki.wdfiles.com/local--files/theme%3Ai57/i57logo.png]]
+[[div class="scp-image-caption" style="width: 150px;"]]
+I57 SEAL
+[[/div]]
+[[/div]]
+
+[# 未訪問リンク] ([/i57 訪問済みリンク])
+
+++ 注: これはBlack Highlighterベースのテーマです。このテーマを使用するには、Black Highlighterテーマも導入する必要があります。[[[theme:black-highlighter-theme|詳細はこちら]]]。
+
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+
+任意のページで:
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:black-highlighter-theme]]@@
+@@[[include theme:i57-jp]]@@
+[[/div]]
+
++ 例
+
+水平線は5つのハイフン「@@-----@@」で作成でき、何かの内側（例: 引用ブロック）に置かれていない限り、ページ全体に広がります。このドキュメントのセクションを分ける線は水平線です。
+
+-----
+
+見出しは、行頭に1つから6つの「+」を置くことで作成できます。
+
+[[collapsible show="+ 見出し" hide="- 見出し"]]
++ 第1見出し
+
+++ 第2見出し
+
++++ 第3見出し
+
+++++ 第4見出し
+
++++++ 第5見出し
+
+++++++ 第6見出し
+[[/collapsible]]
+
+@@ @@
+
+[[tabview]]
+[[tab Tabulator]]
+想像力を働かせて、ここに{{Lorem Ipsum}}があると思ってください。
+[[/tab]]
+[[tab Tabulation]]
+ほら、ここにもテキストがありますね。
+
+なんと趣深い。
+[[/tab]]
+[[tab Long Tab]]
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+[[/tab]]
+[[tab Empty Tab]]
+[[/tab]]
+[[tab Empty Tab]]
+[[/tab]]
+[[tab Empty Tab]]
+[[/tab]]
+[[tab Empty Tab]]
+[[/tab]]
+[[tab Empty Tab]]
+[[/tab]]
+[[tab Empty Tab]]
+weed lmao
+[[/tab]]
+[[/tabview]]
+
+> これは引用ブロックです。各行の先頭に「> 」を置くことで作成できます。
+>
+> 追加のテキスト
+> -----
+> これは水平線です
+>
+>> ネストされた引用ブロック
+>>> さらにもう一つ[[footnote]]ここに脚注があります！[[/footnote]]
+
+||~ これは ||~ テーブルです ||
+||= 👁 ||= 👁 ||
+||||= 👄 ||
+
+[[div class="report"]]
+@@ [[div class="report"]] @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+[[/div]]
+
+[[div class="mac"]]
+@@ [[div class="mac"]] @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+[[/div]]
+----
+
+[[=]]
+[[span style="font-family: var(--header-font);"]]ヘッダーとタイトルのフォントはBebas Neueです。[[/span]]
+[[span style="font-family: var(--body-font);"]]本文のフォントはInterです。[[/span]]
+[[span style="font-family: var(--mono-font);"]]使用されている等幅フォントはRecursiveです。[[/span]]
+[[/=]]
+
+----
+
+[[collapsible show="+ テーマコードを表示" hide="- テーマコードを隠す"]]
+[[code type="css"]]
+/* Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+/* All Vars Used */
+
+:root {
+    /* S-CSS-P Integration */
+    /* If you're making a new CSS theme, please include the following three variables at minimum. */
+    --theme-base: "nuscp";
+    /* must be either "nuscp" or "sigma9" */
+    --theme-id: "nuscp";
+    /* set this to the URL of your theme's page - eg for "component:ar-theme", set it to "ar-theme" */
+    --theme-name: "i57-theme";
+    /* set this to your theme's full name */
+
+    /* Header */
+    --logo-image: url("https://scp-wiki.wdfiles.com/local--files/theme:i57/i57logo.png");
+
+    --header-title: "FACILITY-57";
+    --header-subtitle: "SEGURIDAD. CONTENCIÓN. PROTECCIÓN";
+
+    /* Typefaces */
+    --header-font: "Bebas Neue", cursive;
+
+    /* ========================== Stylistic Sets		|	Any: 	0 OR 1	 */
+    --ss01: 0;
+    --ss02: 0;
+    --ss03: 0;
+
+    /* Standard Colors */
+    --white-monochrome: 252, 252, 252;
+
+    --pale-gray-monochrome: 244, 244, 244;
+
+    --very-light-gray-monochrome: 153, 153, 153;
+
+    --light-gray-monochrome: 170, 170, 170;
+
+    --gray-monochrome: 66, 66, 72;
+
+    --dark-gray-monochrome: 39, 39, 39;
+
+    --black-monochrome: 12, 12, 12;
+    /* bright yellow */
+    --bright-accent: 243, 207, 0;
+    /* medium yellow 4 header */
+    --medium-accent: 221, 188, 0;
+    /* dark blue */
+    --dark-accent: 18, 20, 17;
+    /* blue */
+    --alt-accent: 131, 115, 15;
+
+
+    /* Primary Theme Colors */
+    --swatch-background: 240, 240, 240;
+    --swatch-primary: var(--medium-accent);
+    --swatch-primary-darker: var(--bright-accent);
+    --swatch-primary-darkest: var(--bright-accent);
+    /* Primary Text Colors */
+    --swatch-text-dark: var(--black-monochrome);
+    --swatch-text-light: var(--white-monochrome);
+    --swatch-important-text: var(--bright-accent);
+
+    /* Primary Menu Colors */
+    --swatch-menubg-color: var(--dark-accent);
+    --swatch-border-color: var(--medium-accent);
+    /* Primary Header Colors */
+    --swatch-headerh1-color: var(--bright-accent);
+    --swatch-headerh2-color: var(--bright-accent);
+    --swatch-topmenu-border-color: var(--dark-accent);
+    --swatch-topmenu-bg-color: var(--dark-accent);
+
+    --rating-module-button-color: var(--black-monochrome);
+    --rating-module-text-color: var(--black-monochrome);
+
+    --diagonal-stripes: none;
+
+    --cutColour: rgb(var(--bright-accent));
+    --barColour: rgb(var(--dark-accent));
+}
+
+:root {
+    /* ===LINK COLORS=== */
+    --link-color: var(--alt-accent);
+    --visited-link-color: var(--gray-monochrome);
+    --hover-link-color: var(--swatch-primary-darkest);
+    --newpage-color: var(--bright-accent);
+}
+
+#header {
+    /* ===LOGIN BOX ELEMENT=== */
+    --login-arrow-color: var(--swatch-primary-darkest);
+    /* Dropdown Box when arrow is clicked */
+    --login-dropdown-bg-hover-color: var(--swatch-primary), 0.25;
+}
+
+#top-bar {
+    /* ===TOPBAR ELEMENTS=== */
+
+    /* ===TOPBAR CATEGORIES=== */
+    --topmenu-hover-border-color: var(--swatch-primary-darkest);
+    /* ===DROPDOWN MENU=== */
+    --dropdown-links-hover-color: var(--swatch-text-secondary-color);
+    --dropdown-links-hover-bg-color: var(--swatch-primary), 0.25;
+}
+
+#side-bar,
+#interwiki {
+    /* ===SIDE-BAR ELEMENTS=== */
+    /* ===MENU-ITEMS=== */
+    --sidebar-links-hover-bg-color: var(--swatch-primary), 0.25;
+}
+
+#side-bar .heading p,
+#interwiki .heading p {
+    font-size: var(--base-font-size);
+    letter-spacing: 0.1em;
+}
+
+/* ===FOOTER=== */
+#footer {
+    --footer-text-color: var(--swatch-text-tertiary-color);
+    --footer-link-color: var(--swatch-text-tertiary-color);
+    --footer-link-hover-color: var(--swatch-primary-darkest);
+}
+
+/* ===LICENSE AREA=== */
+#license-area {
+    --license-link-hover-color: var(--swatch-primary-darkest);
+}
+
+#main-content {
+    /* ===MAIN CONTENT UI ELEMENTS */
+    /* ===UI ICONS=== */
+    /* ===PAGE OPTIONS ICONS=== */
+    --ui-icon-color: var(--swatch-text-tertiary-color);
+    --ui-icon-bg: var(--swatch-primary);
+    --ui-icon-hover-color: var(--swatch-text-tertiary-color);
+    --ui-icon-hover-bg: var(--swatch-primary-darkest);
+
+    /* ===TEXT EDITOR ICONS=== */
+    --editor-icon-hover-color: var(---swatch-text-tertiary-color);
+
+    /* ===TABS=== */
+    --tabs-bg: var(--swatch-secondary-color);
+    --tabs-txt: var(--swatch-primary-darkest);
+    --tabs-hover-bg: var(--swatch-primary);
+    --tabs-hover-txt: var(--swatch-text-secondary-color);
+    --tabs-selected-bg: var(--swatch-primary-darker);
+    --tabs-selected-outline: var(--swatch-primary-darker);
+
+    /* ===TABLES=== */
+    --tables-header-bg: var(--swatch-primary);
+
+    /* ===FOOTNOTES/BIBLIOGRAPHY FOOTER=== */
+    --footnotes-footer-title-text-color: var(--swatch-text-tertiary-color);
+    --footnotes-footer-num-hover-color: var(--swatch-text-tertiary-color);
+
+    /* ===PAGE TAGS=== */
+    --pagetags-title-text: var(--swatch-text-tertiary-color);
+    --pagetags-text-hover-color: var(--swatch-primary-darkest);
+    --pagetags-text-hover-bg-color: var(--black-monochrome);
+}
+
+/* ===GLOBAL ELEMENTS=== */
+:root {
+    /* ===UI BUTTONS=== */
+    --ui-button-bg: var(--swatch-alternate-color);
+    --ui-button-txt: var(--swatch-text-secondary-color);
+    --ui-button-hover-bg: var(--swatch-primary-darkest);
+    --ui-button-hover-txt: var(--swatch-text-tertiary-color);
+    --ui-button-hover-outline: var(--swatch-primary-darkest);
+
+    /* ===MODALS=== */
+    --modal-bg: var(--swatch-secondary-color);
+    --modal-body-text: var(--swatch-text-tertiary-color);
+    /* h1/h2/h3/h4/h5/h6 */
+    --modal-body-header-txt: var(--swatch-text-tertiary-color);
+
+    --modal-header-bg: var(--swatch-primary-darkest);
+    --modal-header-txt: var(--swatch-text-secondary-color);
+    --modal-header-stripe: var(--swatch-primary);
+
+    /* ===FOOTNOTES HOVER BLOCK=== */
+    --hoverblock-bg: var(--swatch-alternate-color);
+    --hoverblock-txt: var(--swatch-text-secondary-color);
+    --hoverblock-header-txt: var(--swatch-text-tertiary-color);
+    --hoverblock-footer-bg: var(--swatch-alternate-color);
+    --hoverblock-footer-txt: var(--swatch-text-secondary-color);
+}
+
+html,
+body,
+#side-bar:hover {
+    scrollbar-color: rgb(var(--bright-accent)) rgb(var(--dark-accent));
+}
+
+::-webkit-scrollbar,
+#side-bar:hover::-webkit-scrollbar {
+    background-color: rgb(var(--dark-accent));
+}
+
+::-webkit-scrollbar-thumb,
+#side-bar:hover::-webkit-scrollbar-thumb {
+    background-color: rgb(var(--bright-accent));
+}
+
+#header h1 a::before {
+    color: rgb(var(--medium-accent));
+}
+
+#search-top-box-form input[type="submit"],
+#search-top-box-form input[type="submit"]:focus,
+#search-top-box-form input[type="submit"]:hover {
+    background: rgb(var(--black-monochrome));
+    color: rgb(var(--medium-accent));
+}
+
+@media only screen and (max-width: 48rem) {
+    #search-top-box:not(:focus-within)::before {
+    	color: rgb(var(--medium-accent));
+    }
+
+    #search-top-box form[id="search-top-box-form"]:not(:focus-within) input[type="text"] {
+    	background-color: #181a17;
+    }
+}
+
+hr {
+    border-top: 0.0625rem solid rgb(var(--dark-gray-monochrome));
+    border-right: 1.875rem solid rgb(var(--bright-accent));
+    border-bottom: 0.0625rem solid rgb(var(--dark-gray-monochrome));
+    border-left: 1.875rem solid rgb(var(--bright-accent));
+    background: rgb(var(--dark-gray-monochrome));
+}
+
+.scp-image-block {
+    border: none;
+    border-radius: 0.3125rem;
+    background: rgb(var(--dark-gray-monochrome));
+}
+
+.scp-image-block .scp-image-caption {
+    background-color: rgb(var(--dark-accent));
+    color: rgb(var(--bright-accent));
+}
+
+blockquote,
+.blockquote {
+    border: 0.125rem dashed rgba(var(--light-gray-monochrome), 0.7);
+    background-color: rgba(var(--light-gray-monochrome), 0.3);
+}
+
+.footnotes-footer {
+    transition: box-shadow 300ms ease-in-out;
+    background: url("https://scp-wiki.wdfiles.com/local--files/theme:i57/i57.png");
+    background-repeat: repeat;
+    background-size: contain;
+    box-shadow:
+    	inset 0 0 0 0 rgb(var(--medium-accent)),
+    	inset 0 0 0 0 rgb(var(--medium-accent));
+    color: rgb(var(--bright-accent));
+}
+
+.footnotes-footer:hover {
+    box-shadow:
+    	inset 0.35em 0 0 0 rgb(var(--medium-accent)),
+    	inset -0.35em 0 0 0 rgb(var(--medium-accent));
+}
+
+.footnotes-footer a[href*="javascript"]::before,
+.bibitems .bibitem::after {
+    margin: -0.125ch 0.125ch 0;
+    padding: 0 0.125ch;
+    background-color: rgb(var(--swatch-primary-darkest));
+    color: rgb(var(--swatch-text-tertiary-color));
+}
+
+#page-content a:not([href*="user"]):not([href*="javascript:;"]):not([href="/classification-committee-memo"]):hover {
+    background-color: rgb(var(--alt-accent));
+    color: rgb(var(--white-monochrome));
+}
+
+.report {
+    display: block;
+    width: 84%;
+    margin: 0.625rem auto;
+    padding: 0.3125rem 0.9375rem;
+    border: dashed 0.0625rem rgb(var(--very-light-gray-monochrome));
+    background: url('https://scp-wiki.wdfiles.com/local--files/theme%3Ai57/scp-logo-i57.png') center center no-repeat;
+}
+
+.mac {
+    display: block;
+    width: 84%;
+    margin: 0.625rem auto;
+    padding: 12.1875rem 0.9375rem 0.9375rem 0.9375rem;
+    border: solid 0.1875rem rgb(var(--dark-accent));
+    background: url('https://scp-wiki.wikidot.com/local--files/theme:i57/MAC-1.png') top no-repeat;
+    background-color: rgb(var(--white-monochrome));
+    background-size: 12.5rem;
+}
+
+.mac p {
+    padding-top: 0.25rem;
+    border-top: 0.125rem solid rgb(var(--black-monochrome));
+}
+
+#extra-div-2 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7.5rem;
+    background: url("https://scp-wiki.wikidot.com/local--files/theme:i57/i57.png");
+    background-repeat: repeat;
+    background-position: top;
+    background-size: contain;
+    pointer-events: none;
+}
+
+
+/* TABVIEW - Abandon All Hope Ye Who Enter Here */
+
+.yui-navset .yui-nav,
+.yui-navset .yui-navset-top .yui-nav {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% - 0.125rem);
+    margin: 0 auto;
+    box-shadow: 0 calc(0.0625rem * 5) 0 0 rgb(var(--bright-accent));
+}
+
+.yui-navset .yui-nav li,
+.yui-navset .yui-navset-top .yui-nav li {
+    display: flex;
+    position: relative;
+    max-width: 100%;
+    margin: 0 0.25em 0.5em;
+    padding: 0;
+    transition: all 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+    background: url("https://scp-wiki.wikidot.com/local--files/theme:i57/i57.png");
+    background-repeat: repeat;
+    background-size: contain;
+    box-shadow: 0 0 0 0.0625rem rgba(var(--dark-accent), 0.5);
+    color: rgb(var(--bright-accent));
+    font-weight: bold;
+}
+
+.yui-navset .yui-nav li a,
+.yui-navset .yui-navset-top .yui-nav li a {
+    zoom: unset;
+    border: unset;
+    background-color: rgb(0, 0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    zoom: unset;
+    vertical-align: bottom;
+}
+
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:active {
+    color: rgb(var(--dark-accent));
+    font-weight: bold;
+}
+
+.yui-navset .yui-nav a:focus-within {
+    color: rgb(var(--dark-accent));
+    font-weight: bold;
+}
+
+.yui-navset .yui-nav a em,
+.yui-navset .yui-navset-top .yui-nav a em {
+    padding: 0.35em 0.75em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.yui-navset .yui-nav li em {
+    /* Undoes border set by wikidot's default layout */
+    border: unset !important;
+}
+
+/* Selected Tab */
+
+.yui-navset .yui-nav .selected,
+.yui-navset .yui-navset-top .yui-nav .selected,
+.yui-navset .yui-nav .selected:hover,
+.yui-navset .yui-navset-top .yui-nav .selected:hover {
+    flex-grow: 2;
+    margin: -0.25em 0 0.25em 0;
+    padding: 0;
+    color: rgb(var(--dark-accent));
+}
+
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a em {
+    color: rgb(var(--dark-accent));
+}
+
+.yui-navset .yui-nav .selected a {
+    width: 100%;
+    /* Undoes a color set by wikidot's default layout */
+    color: rgb(var(--white-monochrome)) !important;
+}
+
+.yui-navset .yui-content {
+    background-color: rgba(var(--light-gray-monochrome), 0.5);
+    /* content background color */
+}
+
+.yui-navset .yui-content,
+.yui-navset .yui-navset-top .yui-content {
+    border-color: rgb(var(--light-gray-monochrome));
+    /* content border */
+}
+
+.yui-navset-left .yui-content {
+    border-left-color: rgba(var(--dark-accent), 1);
+    /* different border color */
+}
+
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a:focus,
+.yui-navset .yui-nav .selected a:hover {
+    margin-bottom: -0.125rem;
+    background-color: rgb(var(--medium-accent));
+    background-image: none;
+    color: rgb(var(--dark-accent));
+    font-weight: bold;
+    cursor: default;
+}
+
+/* Reduced Animations */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    ::before,
+    ::after {
+    	transition-duration: 0.001s !important;
+    	-webkit-animation-duration: 0.001s !important;
+    	animation-duration: 0.001s !important;
+    	-webkit-animation-iteration-count: 1 !important;
+    	animation-iteration-count: 1 !important;
+    }
+}
+
+[[/code]]
+[[/collapsible]]
+[[/iftags]]
+[[include :scp-jp:component:bhl-dark-sidebar]]

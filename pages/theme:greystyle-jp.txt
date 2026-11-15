@@ -1,0 +1,3881 @@
+[!--
+フラグメント:
+https://scp-jp.wikidot.com/fragment:greystyle-0
+https://scp-jp.wikidot.com/fragment:greystyle-1
+--]
+
+[[iftags +テーマ]]
+[[module CSS]]
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css");
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css");
+
+/*
+Greystyle
+[2023 Wikidot Theme]
+Created by Greyve
+
+Forked from:
+* Penumbra BHL by Woedenaz
+
+Inspiration from:
+* ADMONITION Theme by Liryn and Placeholder McD
+* Basalt Theme by Liryn and Placeholder McD
+* Black Highlighter Theme by Croquembouche and Woedenaz
+* BLANKSTYLE CSS by HarryBlank and Placeholder McD
+* Flopstyle: DARK by Lt Flops
+* Paperstack Theme by EstrellaYoshte
+* Penumbra by EstrellaYosthe
+* Penumbra BHL by Woedenaz
+* PLACESTYLE CSS by Placeholder McD
+* Redtape Theme by Rounderhouse
+* SYNTECH Theme by Greyve
+* Twin Files Theme by JackalRelated
+
+Components from:
+* Centered BHL Header  by Woedenaz
+* Toggle BHL Sidebar by Woedenaz
+* BetterFootnotes by EstrellaYoshte
+* ACS Animation by EstrellaYoshte
+*/
+
+/* FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Fira+Code&display=swap);
+
+:root {
+/* INTEGRATION */
+    --theme-base: "black-highlighter";
+    --theme-id: "greystyle";
+    --theme-name: "Greystyle";
+
+/* FONTS */
+    --body-font: 'Oxygen', sans-serif;
+    --header-font: 'Josefin Sans', sans-serif;
+    --title-font: 'Josefin Sans', sans-serif;
+    --mono-font: 'Fira Code', monospace;
+    --ui-font: var(--body-font);
+
+/* COLORS */
+    /* Primary Colors */
+    --white-monochrome: 252, 252, 252;
+    --light-gray-monochrome: 238, 238, 238;
+    --gray-monochrome: 56, 49, 49;
+
+    --pale-gray-monochrome: 196, 196, 196;
+    --dark-gray-monochrome: 28, 28, 28;
+    --black-monochrome: 14, 14, 14;
+
+    --accent-color: 140, 0, 0;
+
+    --pale-accent: var(--accent-color);
+    --bright-accent: var(--accent-color);
+    --medium-accent: var(--accent-color);
+    --dark-accent: var(--accent-color);
+    --alt-accent: var(--accent-color);
+
+    /* Custom Variable Colors */
+    --bg-color1: var(--white-monochrome);
+    --bg-color2: var(--light-gray-monochrome);
+    --bg-color3: var(--accent-color);
+    --bg-color4: var(--gray-monochrome);
+
+    --txt-color1: var(--gray-monochrome);
+    --txt-color2: var(--white-monochrome);
+    --txt-color3: var(--accent-color);
+    --txt-color4: var(--light-gray-monochrome);
+
+    /* Secondary and Tertiary Colors */
+    --swatch-primary: var(--accent-color);
+    --swatch-primary-darker: var(--accent-color);
+    --swatch-primary-darkest: var(--accent-color);
+    --swatch-border-color: var(--dark-gray-monochrome);
+    --swatch-secondary-color: var(--accent-color);
+    --swatch-tertiary-color: var(--accent-color);
+    --swatch-alternate-color: var(--alt-accent);
+
+    /* Background Color */
+    --background-color: var(--bg-color1);
+    --background-gradient-color: var(--bg-color1);
+
+    /* Text Colors */
+    --swatch-text-general: var(--txt-color1);
+    --swatch-text-light: var(--txt-color2);
+    --swatch-text-dark: var(--txt-color1);
+    --swatch-important-text: var(--txt-color3);
+
+    --link-color: var(--txt-color3);
+    --hover-link-color: var(--txt-color3);
+
+    /* Menu Colors */
+    --swatch-menutxt-general-color: var(--txt-color1);
+    --swatch-menutxt-dark-color: var(--txt-color1);
+    --swatch-menutxt-light-color: var(--txt-color2);
+
+    --swatch-menubg-color: var(--bg-color1);
+    --swatch-menubg-light-color: var(--bg-color3);
+    --swatch-menubg-medium-color: var(--bg-color3);
+    --swatch-menubg-medium-dark-color: var(--bg-color3);
+    --swatch-menubg-dark-color: var(--bg-color3);
+    --swatch-menubg-black-color:var(--bg-color4);
+    --swatch-menubg-hover-color:var(--bg-color2);
+
+    --swatch-background: var(--bg-color1);
+    --swatch-headerh1-color: var(--bg-color3);
+    --swatch-headerh2-color: var(--bg-color3);
+
+    /* ACS Colors */
+    --one-color: 76, 160, 108;
+    --two-color: 67, 135, 190;
+    --three-color: 245, 211, 1;
+    --four-color: 233, 107, 40;
+    --five-color: 197, 38, 50;
+    --six-color: 98, 60, 122;
+
+/* COMPONENTS */
+    /* UI */
+    --ui-button-txt: var(--txt-color1);
+    --ui-button-bg: var(--bg-color2);
+    --ui-button-hover-txt: var(--txt-color2);
+    --ui-button-hover-bg: var(--bg-color3);
+    --ui-button-hover-outline: transparent;
+
+    /* Header */
+    --logo-image: url("https://scp-wiki.wikidot.com/local--files/theme:greystyle/foundation-logo.svg");
+    --header-title: "SCP FOUNDATION";
+    --header-subtitle: "SECURE, CONTAIN, PROTECT";
+    --header-h1-font-size: calc(2rem + (.025 * (100vw - 20rem)));
+    --header-h2-font-size: calc(var(--base-font-size) * 1.25);
+
+    --down-arrow-mask:url("data:image/svg+xml;charset=utf-8,%3Csvg version='1.2' baseProfile='tiny' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 26' overflow='visible' xml:space='preserve'%3E%3Cpath d='m15,26 15-26H0'/%3E%3C/svg%3E");
+    --right-arrow-mask: url("data:image/svg+xml;charset=utf-8,%3Csvg version='1.2' baseProfile='tiny' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 30' overflow='visible' xml:space='preserve'%3E%3Cpath d='m26,15 -26,15 V0'/%3E%3C/svg%3E");
+
+    --header-gradient-color-bottom: var(--bg-color1);
+    --header-gradient-color-middle: var(--bg-color1);
+    --header-gradient-color-top: var(--bg-color1);
+    --diagonal-stripes: unset;
+
+    --swatch-topmenu-border-color: var(--bg-color1);
+    --swatch-topmenu-bg-color: var(--bg-color1);
+
+    /* Toggle Sidebar */
+    --sidebar-transition-timing: .7s ease-in-out .1s;
+    --toggle-button-bg: rgb(var(--bg-color3));
+    --toggle-border-color: transparent;
+    --toggle-icon-color: rgb(var(--txt-color2));
+    --toggle-roundness: 0;
+
+    /* Rating Module */
+    --rating-module-button-color: var(--bg-color2);
+    --rating-module-button-cancel-color: var(--bg-color4);
+    --rating-module-button-credit-color: var(--bg-color4);
+    --rating-module-text-color: var(--txt-color1);
+    --rating-module-text-hover-color: var(--txt-color2);
+
+    /* Footnote Hoverbox */
+    --hoverblock-bg: var(--bg-color2);
+    --hoverblock-txt: var(--txt-color1);
+    --hoverblock-header-bg: var(--bg-color3));
+    --hoverblock-header-txt: var(--txt-color2);
+    --hoverblock-footer-bg: var(--bg-color2);
+    --hoverblock-footer-txt: var(--txt-color1);
+
+    /* Modal */
+    --modal-bg: var(--bg-color1);
+    --modal-body-text: var(--txt-color1);
+    --modal-body-header-txt: var(--txt-color1);
+    --modal-header-txt: var(--txt-color2);
+    --modal-header-bg: var(--bg-color3);
+    --modal-header-stripe: var(--bg-color3);
+
+    /* BetterFootnotes */
+    --fnColor: rgb(var(--txt-color3));
+    --posX: calc(50% + var(--body-width-on-desktop) / 2 + 2.5rem);
+}
+
+/* HEADER*/
+#header {
+    --swatch-headerh1-color: var(--txt-color1);
+    --swatch-headerh2-color: var(--txt-color1);
+
+    --search-icon-color: var(--txt-color1);
+    --search-icon-hover-color: var(--txt-color2);
+    --search-icon-hover-bg-color: var(--bg-color3);
+
+    --search-icon-focus-color: var(--txt-color2);
+    --search-icon-focus-bg-color: var(--bg-color3);
+    --search-focus-outline-color: transparent;
+    --search-focus-textbox-bg-color: var(--bg-color2);
+    --search-focus-textbox-text-color: var(--txt-color1);
+
+    --login-username-color: var(--txt-color1);
+    --login-line-divider-color: var(--txt-color1);
+    --login-myaccount-color: var(--txt-color1);
+    --login-myaccount-hover-color: var(--txt-color2);
+    --login-myaccount-underline-color: var(--bg-color3);
+    --login-myaccount-hover-bg-color: var(--bg-color3);
+
+    --login-dropdown-text-color: var(--txt-color1);
+    --login-dropdown-bg-color: var(--bg-color2);
+    --login-dropdown-bg-image: var(--bg-color2);
+    --login-dropdown-border-color: transparent;
+    --login-dropdown-text-hover-color: var(--txt-color2);
+    --login-dropdown-bg-hover-color: var(--bg-color3);
+}
+
+/* Logo Changes */
+/* Use https://codepen.io/sosuke/pen/Pjoqqp to filter the image color from black. */
+:root {
+    --logo-filter: invert(11%) sepia(2%) saturate(4457%) hue-rotate(314deg) brightness(95%) contrast(76%) opacity(25%);
+}
+
+#header::before {
+    filter: var(--logo-filter);
+}
+
+/* Outline Correction */
+#header h1 a::before {
+    content: "";
+}
+
+#header h2 span::before {
+    content: "";
+}
+
+/* Position Correction */
+#header h1,
+#header h1 a,
+#header h1 a::before {
+    top: -.25rem;
+}
+
+/* Login Arrow */
+#login-status #account-topbutton::before,
+#login-status:not(:focus-within) #account-topbutton::before,
+#login-status:not(:focus-within) #account-topbutton:hover::before {
+    --clip-path: polygon(30% 30%, 70% 30%, 50% 65%);
+}
+
+#login-status #account-options li>a:before {
+    --clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+}
+
+#login-status #account-options li>a:hover:before {
+    --clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* Mobile Corrections */
+@media only screen and (max-width:56.25rem) {
+    :root {
+        --body-width-on-desktop: 100vw;
+        --header-h1-font-size: calc(2rem + (.02 * (100vw - 20rem)));
+        --header-h2-font-size: calc(var(--base-font-size) * 1.25);
+    }
+}
+
+/* SELECTION */
+::-moz-selection {
+    background: rgba(var(--bg-color3), 1);
+    color: rgb(var(--txt-color2));
+    text-shadow: none;
+    }
+
+::selection {
+    background: rgba(var(--bg-color3), 1);
+    color: rgb(var(--txt-color2));
+    text-shadow: none;
+    }
+
+/* TOPBAR */
+#top-bar {
+    --topmenu-category-color: var(--txt-color1);
+    --topmenu-category-hover-color: var(--txt-color2);
+    --topmenu-category-hover-bg: var(--bg-color3);
+    --topmenu-hover-border-color: transparent;
+
+    --mobile-topmenu-sidebar-button-color: var(--bg-color3);
+
+    --dropdown-bg-color: var(--bg-color2);
+    --dropdown-border-color: transparent;
+    --dropdown-links-color: var(--txt-color1);
+    --dropdown-links-hover-color: var(--txt-color2);
+    --dropdown-links-hover-bg-color: var(--bg-color3);
+
+    --topbar-height-on-desktop: 2rem;
+    --topbar-height-on-mobile: 2rem;
+}
+
+#header div[class*=top-bar]>ul>li>ul li>a:before {
+    --clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+}
+
+#header div[class*=top-bar]>ul>li>ul li>a:active:before,
+#header div[class*=top-bar]>ul>li>ul li>a:hover:before {
+    --clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* SIDEBAR */
+#side-bar {
+    --sidebar-bg-color: var(--bg-color1);
+    --sidebar-resources-bg-color: var(--bg-color2);
+    --sidebar-media-bg-color: var(--bg-color2);
+
+    --sideblock-heading-border-color: transparent;
+
+    --sidebar-border-color: var(--bg-color1);
+
+    --sidebar-links-text: var(--txt-color1);
+    --sidebar-links-hover-bg-color: var(--bg-color3);
+    --sidebar-links-hover-text-color: var(--txt-color2);
+}
+
+#side-bar .heading p,
+#side-bar .side-block>.collapsible-block .collapsible-block-link {
+    text-transform: none;
+    text-align: left;
+    font-size: .95rem;
+    text-indent: 0;
+}
+
+/* Background Changes */
+@supports((display: -ms-grid) or (display: grid)) {
+    @media only screen and (min-width: 769px) {
+        #main-content::before {
+            background: rgba(var(--bg-color2), .5) 1px 1px repeat;
+            backdrop-filter: blur(.1rem);
+            }
+        }
+    }
+
+/* BREADCRUMBS */
+#breadcrumbs a:before,
+#breadcrumbs a:visited:before,
+.pseudocrumbs a:before,
+.pseudocrumbs a:visited:before {
+    padding: 0;
+    transform: skew(0deg);
+    color: rgb(var(--txt-color3));
+    box-shadow: inset 0 -.125rem 0 0rem rgba(var(--bg-color3), 1);
+    transition: box-shadow 300ms cubic-bezier(.4, 0, .2, 1), color 300ms cubic-bezier(.4, 0, .2, 1), padding 300ms cubic-bezier(.4, 0, .2, 1), margin 300ms cubic-bezier(.4, 0, .2, 1);
+}
+
+#breadcrumbs a:active:before,
+#breadcrumbs a:hover:before,
+.pseudocrumbs a:active:before,
+.pseudocrumbs a:hover:before {
+    padding: 0;
+    text-decoration: none;
+    color: rgb(var(--txt-color2));
+    box-shadow: inset 0 -1.5em 0 0 rgba(var(--bg-color3), 1);
+}
+
+/* SCROLLBAR*/
+html,
+body {
+    scrollbar-color: rgb(var(--bg-color3)) rgb(var(--bg-color2));
+}
+
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    width: 16px;
+    background: transparent;
+}
+
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+    background: rgb(var(--bg-color2));
+}
+
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb,
+html::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover {
+    background: rgb(var(--bg-color3));
+}
+
+/* TITLE */
+#page-title::before,
+.meta-title::before {
+        content: none;
+    }
+
+#page-title::after,
+.meta-title::after{
+height: .125rem;
+}
+
+/* CONTENT*/
+#main-content {
+    /* UI */
+    --ui-icon-color: var(--txt-color1);
+    --ui-icon-bg: var(--bg-color2);
+    --ui-icon-hover-color: var(--txt-color2);
+    --ui-icon-hover-bg: var(--bg-color3);
+
+    /* Table of Contents */
+    --toc-header-bg-color: var(--bg-color3);
+    --toc-header-text-color: var(--txt-color2);
+    --toc-header-text-hover-color: var(--txt-color2);
+    --toc-body-bg-color: var(--bg-color2);
+    --toc-directory-lines-color: var(--bg-color2);
+    --toc-body-link-color: var(--txt-color1);
+    --toc-body-link-hover-color: var(--txt-color3);
+    --toc-body-hover-arrow-color: var(--txt-color3);
+
+    /* Tabs */
+    --tabs-bg: var(--bg-color2);
+    --tabs-txt: var(--txt-color1);
+    --tabs-hover-bg: var(--bg-color3);
+    --tabs-hover-txt: var(--txt-color2);
+    --tabs-selected-bg: var(--bg-color3);
+    --tabs-selected-txt: var(--txt-color2);
+    --tabs-selected-outline: var(--bg-color3);
+    --tabs-bottom-border-color: var(--bg-color3);
+    --tabs-content-bg-color: var(--bg-color2);
+    --tabs-content-border-color: var(--bg-color2);
+
+    /* Footnote Block */
+    --footnotes-footer-bg-color: var(--bg-color2);
+    --footnotes-footer-colorbar-color: var(--bg-color3);
+    --footnotes-footer-title-bg-color: var(--bg-color3);
+    --footnotes-footer-title-text-color: var(--txt-color2);
+    --footnotes-footer-num-color: var(--txt-color3);
+    --footnotes-footer-num-hover-color: var(--txt-color3);
+
+    /* Editor*/
+    --editor-icon-color: var(--txt-color1);
+    --editor-icon-bg: var(--bg-color1);
+    --editor-icon-hover-color: var(--txt-color2);
+    --editor-icon-hover-bg: var(--bg-color3);
+    --editor-icon-submenu-bg: var(--bg-color3);
+
+    /* Tags */
+    --pagetags-title-bg: var(--bg-color3);
+    --pagetags-title-text: var(--txt-color2);
+    --pagetags-text-color: var(--txt-color1);
+    --pagetags-text-hover-color: var(--txt-color2);
+    --pagetags-text-hover-bg-color: var(--bg-color3);
+}
+
+/* RATING MODULE */
+#page-content .rate-box-with-credit-button, .page-rate-widget-box {
+    background-color: rgb(var(--bg-color2));
+    border: none;
+}
+
+/* Credit */
+#page-content .rate-box-with-credit-button>.creditButton>p>a:after {
+    background-color: rgb(var(--bg-color3));
+}
+
+/* POPUP */
+div.odialog-shader{
+    background-color: rgba(var(--bg-color3), .5) 1px 1px repeat;
+    backdrop-filter: blur(.1rem);
+}
+
+#odialog-container div.owindow {
+    box-shadow: none;
+}
+
+/* Header */
+.owindow .modal-header {
+    background-color: rgb(var(--bg-color2));
+}
+
+.owindow .title {
+    color: var(--txt-color2);
+    background-color: rgb(var(--bg-color3));
+    border: none;
+}
+
+/* Body */
+#odialog-container .content h1,
+#odialog-container .modal-body h1 {
+    box-shadow: none;
+}
+
+/* Footer */
+#odialog-container .modal-footer {
+    box-shadow: none;
+}
+
+/* Button Correction */
+#odialog-container .title.modal-header :not(.page-rate-widget-box) :not(#search-top-box-form) > a.btn {
+    color: rgb(var(--txt-color1));
+    background-color: rgb(var(--bg-color2));
+    border: none;
+}
+
+#odialog-container .title.modal-header :not(.page-rate-widget-box):not(#search-top-box-form) > a.btn:active,
+#odialog-container .title.modal-header :not(.page-rate-widget-box):not(#search-top-box-form) > a.btn:hover,
+#odialog-container .title.modal-header :not(.page-rate-widget-box):not(#search-top-box-form) > a.btn:focus-within {
+    color: rgb(var(--txt-color2));
+    background-color: rgb(var(--bg-color3));
+    border: none;
+}
+
+/* DETAILS */
+/* Watch */
+div.page-watch-options a {
+    padding: 0.15em;
+    text-decoration: none !important;
+    box-shadow: inset 0 -0.125em 0 0 rgba(var(--bg-color3), 1) !important;
+    transition: box-shadow 300ms cubic-bezier(.4, .0, .2, 1), color 300ms cubic-bezier(.4, .0, .2, 1), padding 300ms cubic-bezier(.4, .0, .2, 1), margin 300ms cubic-bezier(.4, .0, .2, 1) !important;
+}
+
+div.page-watch-options a:hover {
+    padding: .3em .25em .2em .25em !important;
+    text-decoration: none !important;
+    color: rgb(var(--txt-color2)) !important;
+    box-shadow: inset 0 -1.5em 0 0 rgba(var(--bg-color3), 1) !important;
+}
+
+/* Revision */
+#page-info {
+    margin: .25em;
+    font-family: var(--body-font) !important;
+    font-size: .75rem !important;
+}
+
+div#page-info .odate {
+    --MONO: 0;
+    font-family: var(--body-font);
+    font-size: .75rem;
+}
+
+/* TAGS*/
+.page-tags span a {
+    padding: .15em;
+    color: rgb(var(--txt-color1));
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    box-shadow: inset 0 -.125em 0 0rem rgba(var(--bg-color3), 1);
+    transition: box-shadow 300ms cubic-bezier(.4, .0, .2, 1), color 300ms cubic-bezier(.4, .0, .2, 1), padding 300ms cubic-bezier(.4, .0, .2, 1), margin 300ms cubic-bezier(.4, .0, .2, 1);
+}
+
+.page-tags span a:hover {
+    padding: .3em .25em .2em .25em;
+    text-decoration: none;
+    color: rgb(var(--txt-color2));
+    box-shadow: inset 0 -1.5em 0 0 rgba(var(--bg-color3), 1);
+}
+
+#main-content .page-tags span a:not([href^="/system:page-tags/tag/_"]):before,
+#main-content .page-tags span a:visited:not([href^="/system:page-tags/tag/_"]):before {
+    --clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+}
+
+#main-content .page-tags span a:not([href^="/system:page-tags/tag/_"]):active:before,
+#main-content .page-tags span a:not([href^="/system:page-tags/tag/_"]):hover:before {
+    --clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* ACTION AREA */
+#action-area > p {
+    background-color: rgb(var(--bg-color2)) !important;
+    box-shadow: none !important;
+}
+
+#action-area a[onclick*=PageRateModule],
+#action-area a.action-area-close,
+table.page-history tr td.optionstd a,
+body.print-body #print-options a,
+#site-tools-box ul.nav li a,
+#action-area h1+p+h2~div[style="padding-left:3em;"] > div a {
+    border: none;
+    box-shadow: none;
+}
+
+/* EDITOR */
+/* Title */
+#action-area h1:after {
+    height: .125rem;
+}
+
+/* Border */
+form#edit-page-form:not(.data-form),
+form#edit-page-form .wd-editor-toolbar-panel {
+    box-shadow: none;
+}
+
+/* Title */
+form#edit-page-form #edit-page-title {
+    background-color: rgb(var(--bg-color2));
+}
+
+form#edit-page-form #edit-page-title:focus-visible {
+    background-color: rgb(var(--bg-color1));
+    border: none;
+}
+
+/* Text Area */
+form#edit-page-form #edit-page-textarea {
+    border: none;
+}
+
+form#edit-page-form #edit-page-textarea:focus {
+    border: none;
+}
+
+form#edit-page-form #wd-editor-toolbar-panel+div {
+    box-shadow: none;
+}
+
+/* Help */
+form#edit-page-form .edit-help-34 {
+    background-color: rgb(var(--bg-color2));
+}
+
+/* Size Buttons */
+form#edit-page-form .change-textarea-size {
+    grid-gap: 0em;
+    gap: 0em;
+    background-color: rgb(var(--bg-color2));
+}
+
+form#edit-page-form .change-textarea-size a:active,
+form#edit-page-form .change-textarea-size a:hover{
+    border: .125rem solid rgb(var(--bg-color3));
+}
+
+/* Edit Comments */
+form#edit-page-form #edit-page-comments {
+    background-color: rgb(var(--bg-color2));
+}
+
+form#edit-page-form #edit-page-comments:focus-visible {
+    background-color: rgb(var(--bg-color1));
+    border: none;
+}
+
+/* HISTORY */
+/* Per Page */
+select#h-perpage {
+    background-color: rgb(var(--bg-color2));
+    border: none;
+}
+
+/* Pager */
+#action-area .pager span.current:not(:last-of-type)::before {
+    display: none;
+}
+
+.pager .current {
+    color: rgb(var(--txt-color2));
+}
+
+/* List*/
+#revision-list .page-history tr:first-child {
+    display: none;
+}
+
+table.page-history tr:nth-of-type(odd) {
+    background-color: rgb(var(--bg-color2));
+}
+
+/* SOURCE */
+.page-source {
+    border: none;
+    background-color: rgb(var(--bg-color2));
+}
+
+/* FOOTER */
+/* Footer */
+#footer {
+    --footer-bg-color: var(--bg-color2);
+    --footer-text-color: var(--txt-color1);
+    --footer-link-color: var(--txt-color1);
+    --footer-link-hover-color: var(--txt-color2);
+    --footer-link-hover-bg-color: var(--bg-color3);
+}
+
+#footer a:before {
+    --clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+}
+
+#footer a:active:before,
+#footer a:hover:before {
+    --clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+
+/* Buttons */
+:not(.page-rate-widget-box):not(#search-top-box-form)>.btn,
+:not(.page-rate-widget-box):not(#search-top-box-form)>div.buttons input {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+#odialog-container div.owindow {
+    box-shadow: none;
+}
+
+
+/* License Area */
+#license-area {
+    --license-bg-color: var(--bg-color2);
+    --license-text-color: var(--txt-color1);
+    --license-link-color: var(--txt-color1);
+    --license-link-hover-color: var(--txt-color2);
+    --license-link-hover-bg-color: var(--bg-color3);
+}
+
+#license-area a:before {
+    --clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+}
+
+#license-area a:active:before,
+#license-area a:hover:before {
+    --clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+
+/* COMPONENTS */
+/* Table of Contents */
+#page-content div#toc {
+    box-shadow: none;
+}
+
+/* Horizontal Rule */
+hr {
+        height: .125rem;
+        margin: 1.25rem 0;
+        background-color: rgb(var(--bg-color3));
+        border-top: none;
+}
+
+/* Link */
+#page-content a:not([href*="user"]):not([href*="javascript:;"]):not(#toc #toc-list a):not(#toc #toc-list a:visited):not(.fa.fa-info):not(.linkbox a):not(#action-area .btn):not(#rename-option-rename a):not(.danger-diamond a) {
+    padding: .15em;
+    margin: -.15em;
+    color: rgb(var(--txt-color1));
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    box-shadow: inset 0 -.125rem 0 0rem rgba(var(--bg-color3), 1);
+    transition: box-shadow 300ms cubic-bezier(.4, 0, .2, 1), color 300ms cubic-bezier(.4, 0, .2, 1), padding 300ms cubic-bezier(.4, 0, .2, 1), margin 300ms cubic-bezier(.4, 0, .2, 1);
+}
+
+#page-content a:not([href*="user"]):not([href*="javascript:;"]):hover:not(#toc #toc-list a):not(#toc #toc-list a:visited):not(.fa.fa-info):not(.linkbox a):not(#action-area .btn):hover:not(#rename-option-rename a):hover:not(.danger-diamond a):hover {
+    padding: .3em .25em .2em .25em;
+    margin: -.25em;
+    text-decoration: none;
+    color: rgb(var(--txt-color2));
+    box-shadow: inset 0 -1.5em 0 0 rgba(var(--bg-color3), 1);
+}
+
+/* Collapsible */
+#page-content .collapsible-block-folded,
+#page-content .collapsible-block-unfolded-link {
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    width: fit-content;
+    overflow: hidden;
+    margin: auto;
+    box-sizing: border-box;
+    background: rgb(var(--bg-color2));
+    transition: background .25s linear;
+}
+
+#page-content .collapsible-block-link {
+    display: inline-block;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(var(--txt-color1));
+    font-weight: 700;
+}
+
+#page-content .collapsible-block-link:hover {
+    color: rgb(var(--txt-color2));
+}
+
+#page-content .collapsible-block-folded:hover,
+#page-content .collapsible-block-unfolded-link:hover {
+    background: rgb(var(--bg-color3));
+}
+
+#page-content .collapsible-block-unfolded-link {
+    box-shadow: 0rem -.25rem 0rem 0rem rgb(var(--bg-color3));
+}
+
+#page-content .collapsible-block-folded,
+#page-content .collapsible-block-unfolded-link {
+    margin-top: .75rem;
+    margin-bottom: .75rem;
+}
+
+/* Image Block */
+.scp-image-block {
+    box-sizing: border-box;
+    border: none;
+    bottom-border: none;
+    box-shadow: none;
+}
+
+:is(div.image-block, div.scp-image-block) {
+    box-shadow: none;
+}
+
+:is(div.image-block, div.scp-image-block) :is(.image-caption, .scp-image-caption) {
+    color: rgb(var(--txt-color1));
+    background-color: rgb(var(--bg-color2));
+    border: none;
+    box-shadow: none;
+}
+
+.block-right:is(div.image-block,div.scp-image-block) {
+    margin: 1.25em 0 1.25em 1.25em;
+}
+
+.block-center:is(div.image-block,div.scp-image-block) {
+    margin: 1.25em auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .scp-image-block {
+        float: none;
+        margin: 1.25rem auto;
+    }
+}
+
+/* BetterFootnotes */
+.fnnum::after {
+    padding: .125rem;
+}
+
+.fncon {
+    left: var(--posX);
+    background: rgb(var(--bg-color2));
+    border: none;
+    box-shadow: none;
+    padding: 1rem;
+    width: 12rem;
+}
+
+.fncon::before {
+    color: rgb(var(--txt-color2));
+}
+
+@media only screen and (max-width: 58.125rem) {
+    .fncon {
+        position: fixed;
+        bottom: 1.25rem;
+        left: calc(27.125vw - 3.125rem);
+        width: 75%;
+        transition: opacity 0.15s linear var(--fnLinger), left var(--fnTransition) cubic-bezier(.4, 0, .2, 1) var(--fnLinger), visibility 0.01s linear var(--fnInteract);
+    }
+
+    .fnnum:hover + .fncon, .fncon:hover {
+        left: 27.125vw;
+        transition: opacity 0.15s linear, left var(--fnTransition)  cubic-bezier(.4, 0, .2, 1);
+    }
+}
+
+/* STANDARD */
+/* Blockquote */
+:is(blockquote, .blockquote, div.blockquote, [class*=blockquote]) {
+    margin: 1.25em;
+    padding: .825em 1.25em;
+    background-color: rgb(var(--bg-color2));
+    border: none;
+    box-shadow: none;
+}
+
+/* Code */
+.code {
+    margin: 1.25em;
+    padding: .825em 1.75em .825em 1.25em;
+    color: rgb(var(--txt-color1));
+    background-color: rgb(var(--bg-color2));
+    border: none;
+    box-shadow: inset .5rem 0 0 0 rgba(var(--bg-color3));
+}
+
+.hl-code,
+.hl-identifier,
+.hl-brackets {
+    color: rgb(var(--txt-color1));
+}
+
+.hl-var {
+    color: rgb(76, 160, 108);
+}
+
+.hl-reserved {
+    color: rgb(67, 135, 190);
+}
+
+.hl-number,
+.hl-string {
+    color: rgb(197, 38, 50);
+}
+
+.hl-quotes,
+.hl-special {
+    color: rgb(98, 60, 122);
+}
+
+/* Table */
+ #page-content .wiki-content-table tbody tr th {
+    padding: .4rem;
+    color: rgb(var(--txt-color2));
+    background: rgb(var(--bg-color3));
+    border: .125rem solid rgb(var(--bg-color3)) !important;
+}
+
+ #page-content .wiki-content-table tbody tr td {
+    padding: .8rem;
+    line-height: 1.5;
+    color: rgb(var(--txt-color1));
+    background: rgb(var(--bg-color1));
+    border: .125rem solid rgb(var(--bg-color3)) !important;
+}
+
+/* CUSTOM */
+/* Label */
+.label {
+    padding: .125em;
+    color: rgb(var(--txt-color2));
+    white-space: nowrap;
+    background: rgb(var(--bg-color3));
+}
+
+/* Memetic */
+.memetic{
+    filter: blur(.25rem);
+}
+
+/* Redaction */
+.redaction{
+    padding: .15em 0;
+    color: rgb(var(--txt-color1));
+    text-decoration: none;
+    background-color: rgb(var(--txt-color1));
+    transition: background-color 300ms cubic-bezier(.4, .0, .2, 1);
+}
+
+.redaction:hover {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+/* Notation*/
+.notation {
+    margin: 1.25em;
+    padding: .825em 1.75em .825em 1.25em;
+    background-color: rgb(var(--bg-color1));
+    box-shadow: inset .5rem 0 0 0 rgba(var(--bg-color3));
+}
+
+/* Jotting */
+.jotting {
+    margin: 1.25em;
+    padding: .825em 1.25em;
+    background-color: rgb(var(--bg-color2));
+    border: 1px dashed rgb(var(--txt-color1));
+}
+
+/* Modal*/
+.modal {
+    margin: 1.25em;
+    padding: .825em 1.25em;
+    background-color: rgb(var(--bg-color1));
+    box-shadow: 0 0 5px rgba(var(--bg-color4), .5);
+}
+
+/* Translucent*/
+.translucent{
+    margin: 1.25em;
+    padding: .825em 1.25em;
+    background-color: rgba(var(--bg-color2), .5);
+    backdrop-filter: blur(.1rem);
+}
+
+/* Floatbox */
+/* Adapted from Basalt */
+#page-content div.floatbox {
+    float: right;
+    max-width: calc(var(--body-width-on-desktop)/2.5);
+    box-sizing: border-box;
+    margin: 1.25em;
+    padding: .825em 1.25em;
+    background-color: rgb(var(--bg-color2));
+    border: none;
+}
+
+@media only screen and (max-width: 600px) {
+    #page-content div:is(.floatbox) {
+    float: none;
+    width: 100%;
+    margin: 1.25em;
+    }
+}
+
+/* Document */
+/* Adapted from Basalt */
+.document {
+    display: block;
+    position: relative;
+    max-width: 45rem;
+    margin: 1.25em 1.25em 2.25em 1.25em;
+    padding: 1.25em;
+    color: rgb(var(--txt-color1));
+    background-color: rgb(var(--bg-color1));
+    box-shadow: 0 0 10px rgba(var(--bg-color4), .5);
+}
+
+.document::before {
+    top: 5px;
+    left: -5px;
+    transform: rotate(-2.5deg);
+}
+
+.document::after {
+    top: 2.5px;
+    right: -2.5px;
+    transform: rotate(1.25deg);
+}
+
+.document::before,
+.document::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    height: 98%;
+    width: 98%;
+    background-color: rgb(var(--bg-color1));
+    box-shadow: 0 0 10px rgba(var(--bg-color4), .5);
+}
+
+@media only screen and (max-width: 1020px) {
+.document::before,
+.document::after {
+        display: none;
+    }
+}
+
+/* Table Color */
+/* Adapted from BLANKSTYLE CSS */
+:root {
+    --table0-bg-color: 56, 49, 49;
+    --table1-bg-color: var(--one-color);
+    --table2-bg-color: var(--two-color);
+    --table3-bg-color: var(--three-color);
+    --table4-bg-color: var(--four-color);
+    --table5-bg-color: var(--five-color);
+    --table6-bg-color: var(--six-color);
+
+    --table0-txt-color: var(--white-monochrome);
+    --table1-txt-color: var(--white-monochrome);
+    --table2-txt-color: var(--white-monochrome);
+    --table3-txt-color: var(--gray-monochrome);
+    --table4-txt-color: var(--white-monochrome);
+    --table5-txt-color: var(--white-monochrome);
+    --table6-txt-color: var(--white-monochrome);
+}
+
+.table0 {
+    --bg-color3: var(--table0-bg-color);
+    --txt-color2: var(--table0-txt-color);
+}
+
+.table1 {
+    --bg-color3: var(--table1-bg-color);
+    --txt-color2: var(--table1-txt-color);
+}
+
+.table2 {
+    --bg-color3: var(--table2-bg-color);
+    --txt-color2: var(--table2-txt-color);
+}
+
+.table3 {
+    --bg-color3: var(--table3-bg-color);
+    --txt-color2: var(--table3-txt-color);
+}
+
+.table4 {
+    --bg-color3: var(--table4-bg-color);
+    --txt-color2: var(--table4-txt-color);
+}
+
+.table5 {
+    --bg-color3: var(--table5-bg-color);
+    --txt-color2: var(--table5-txt-color);
+}
+
+.table6 {
+    --bg-color3: var(--table6-bg-color);
+    --txt-color2: var(--table6-txt-color);
+}
+
+/* Memo */
+/* Adapted from Basalt*/
+:root {
+    --memo-txt-color: var(--txt-color1);
+    --memo-logo-filter: invert(11%) sepia(2%) saturate(4457%) hue-rotate(314deg) brightness(95%) contrast(76%) opacity(20%);
+    --memo-size: 5rem;
+}
+
+div[class$="-memo"] {
+    color: rgb(var(--memo-txt-color));
+    min-height: var(--memo-size);
+    margin: 2.25rem auto;
+    padding: 1.25rem;
+    text-align: center;
+    background: rgb(var(--memo-bg-color));
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(.1rem);
+}
+
+div[class$="-memo"]::before{
+    color: rgb(var(--memo-txt-color));
+    z-index: 2;
+    content: var(--memo-header);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 1.25rem auto;
+    padding-top: .5em;
+    font-family: var(--UI-font);
+    font-weight: 700;
+    font-size: 1.25em;
+    text-align: center;
+}
+
+div[class$="-memo"]::after{
+    content: "";
+    position: absolute;
+    height: 15rem;
+    width: 15rem;
+    top: 50%;
+    left: 50%;
+    margin-top: -7.5rem;
+    margin-left: -7.5rem;
+    min-height: var(--memo-size);
+    background: var(--memo-logo);
+    filter: var(--memo-logo-filter);
+    background-size: calc(1.5 * var(--memo-size));
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+div[class$="-memo"] > * {
+    position: relative;
+    z-index: 2;
+}
+
+.overwatch-memo {
+    --memo-header: "Overwatch Command Directive";
+    --memo-logo: url(https://scp-wiki.wikidot.com/local--files/theme:greystyle/o5-logo.svg);
+    --memo-bg-color: 252, 217, 217;
+}
+
+.ethics-memo {
+    --memo-header: "Ethics Committee Memorandum";
+    --memo-logo: url(https://scp-wiki.wikidot.com/local--files/theme:greystyle/ec-logo.svg);
+    --memo-bg-color: 217, 231, 252;
+}
+
+.raisa-memo {
+    --memo-header: "Records and Information Security Administration Notice";
+    --memo-logo: url(https://scp-wiki.wikidot.com/local--files/theme:greystyle/raisa-logo.svg);
+    --memo-bg-color: 252, 245, 196;
+}
+
+/* Shadow */
+.shadow {
+    box-shadow: 0 0 5px rgba(var(--bg-color4), .5);
+}
+
+.blockquote.shadow {
+    box-shadow: 0 0 5px rgba(var(--bg-color4), .5);
+}
+
+.notation.shadow,
+.code.shadow {
+    box-shadow: inset .5rem 0 0 0 rgba(var(--bg-color3)), 0 0 5px rgba(var(--bg-color4), .5);
+}
+
+/* Headline */
+.headline {
+    padding: 0;
+    margin: .5rem 1.25rem;
+    background: none;
+    border: none;
+}
+
+.headline > p {
+    --wght: 700;
+    font-size: 1.5em;
+    font-family: var(--title-font);
+    text-align: center;
+    color: rgb(var(--txt-color2));
+    background: rgb(var(--bg-color3));
+    padding: .5rem 1.25rem;
+    margin: 0;
+}
+
+.headline > div {
+    position: relative;
+    padding: .5rem 1.25rem;
+    border-top: none;
+    margin: 0;
+}
+
+/* Logo */
+:root {
+    --logo1-bg: url("https://scp-wiki.wikidot.com/local--files/theme:greystyle/foundation-logo.svg");
+    --logo2-bg: url("https://scp-wiki.wikidot.com/local--files/theme:greystyle/foundation-logo.svg");
+    --logo3-bg: url("https://scp-wiki.wikidot.com/local--files/theme:greystyle/foundation-logo.svg");
+
+    --logo-bg-filter: invert(11%) sepia(2%) saturate(4457%) hue-rotate(314deg) brightness(95%) contrast(76%) opacity(20%);
+    --logo-bg-size: 15rem;
+}
+
+.logo1,
+.logo2,
+.logo3 {
+    position: relative;
+}
+
+.logo1::after,
+.logo2::after,
+.logo3::after {
+    content: "";
+    position: absolute;
+    height: 40vw;
+    width: 40vw;
+    top: 50%;
+    left: 50%;
+    margin-top: -20vw;
+    margin-left: -20vw;
+    min-height: 15rem;
+    filter: var(--logo-bg-filter);
+}
+
+.logo1 > *,
+.logo2 > *,
+.logo3 > * {
+    position: relative;
+    z-index: 2;
+}
+
+.logo1::after {
+    background: var(--logo1-bg);
+    background-size: var(--logo-bg-size);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.logo2::after {
+    background: var(--logo2-bg);
+    background-size: var(--logo-bg-size);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.logo3::after {
+    background: var(--logo3-bg);
+    background-size: var(--logo-bg-size);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* Proposal */
+:root {
+    --proposal-logo1: url("https://scp-wiki.wikidot.com/local--files/theme:greystyle/foundation-logo.svg");
+    --proposal-logo2: url("https://scp-wiki.wikidot.com/local--files/theme:greystyle/foundation-logo.svg");
+    --proposal1-logo3: url("https://scp-wiki.wikidot.com/local--files/theme:greystyle/foundation-logo.svg");
+
+    --proposal-logo-filter: invert(11%) sepia(2%) saturate(4457%) hue-rotate(314deg) brightness(95%) contrast(76%);
+    --proposal-logo-size: 15rem;
+}
+
+.proposal-logo1,
+.proposal-logo2,
+.proposal-logo3 {
+    min-height: 15rem;
+    filter: var(--proposal-logo-filter);
+}
+
+.proposal-logo1 {
+    background: var(--proposal-logo1);
+    background-size: var(--proposal-logo-size);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.proposal-logo2 {
+    background: var(--proposal-logo2);
+    background-size: var(--proposal-logo-size);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.proposal-logo3 {
+    background: var(--proposal-logo3);
+    background-size: var(--proposal-logo-size);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.proposal-title {
+    font-size: 2em;
+}
+
+.proposal-subtitle {
+    font-size: 1.5em;
+}
+
+.proposal-title,
+.proposal-subtitle {
+    position: relative;
+    margin: .5rem 1.25rem;
+    margin-bottom: 0;
+    padding: .5rem 1.25rem;
+    padding-bottom: 0;
+    --wght: 700;
+    font-family: var(--title-font);
+    text-align: center;
+    color: rgb(var(--txt-color1));
+}
+
+.proposal-title p,
+.proposal-subtitle p {
+    margin: 0;
+}
+
+.proposal-author {
+font-style: italic;
+text-align: right;
+}
+
+/* Transcript */
+.flank {
+    --wght: 700;
+    text-align: center;
+}
+
+.flank p {
+    margin: 0;
+}
+
+.transcript {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    color: rgb(var(--txt-color1));
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-auto-rows: minmax(1em, auto);
+}
+
+.transcript p {
+    margin: 0;
+}
+
+.sp {
+    border-right: 1px solid rgb(var(--txt-color1));
+    padding: .825em .825em 0 .825em;
+    --wght: 700;
+    text-align: right;
+}
+
+.di {
+    padding: .825em 0 0 .825em;
+}
+
+.ac {
+    padding: .825em 0 0 .825em;
+    font-style: italic;
+}
+
+/* Mobile Correction */
+@media only screen and (max-width: 56.25rem) {
+    .transcript {
+        display: inline;
+    }
+
+    .transcript::after {
+        content: "\000a";
+        white-space: pre;
+    }
+
+    .transcript .sp,
+    .transcript .di,
+    .transcript .ac {
+        display: inline;
+        padding: 0;
+        margin: 0;
+    }
+
+    .sp::before,
+    .di::before,
+    .ac::before {
+        content: "\000a";
+        white-space: pre;
+    }
+
+    .sp {
+        float: left;
+        width: fit-content;
+        border-right: none;
+    }
+
+    .sp p::after {
+        content: ":\00a0"
+    }
+}
+
+/* Linkbox*/
+.linkbox {
+    display: block;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    width: fit-content;
+    overflow: hidden;
+    overflow-wrap: anywhere;
+    margin: .75rem auto;
+    background: rgb(var(--bg-color2));
+    transition: background .25s linear;
+}
+
+.linkbox p {
+    margin: 0;
+}
+
+.linkbox a {
+    display: inline-block;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(var(--txt-color1));
+    font-weight: 700;
+}
+
+.linkbox:hover {
+    color: rgb(var(--txt-color2));
+    background: rgb(var(--bg-color3));
+}
+
+.linkbox a:hover {
+    color: rgb(var(--txt-color2));
+}
+
+/* Mode Changer */
+:root {
+    --mode1-display: inline;
+    --mode2-display: none;
+}
+
+.mode1-changer {
+    display: var(--mode1-display);
+}
+
+.mode2-changer {
+    display: var(--mode2-display);
+}
+
+/* Member Changer */
+.member-changer {
+    display: inline;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.member-changer > .site-member {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+.member-changer .site-member:nth-child(2) {
+    display: none;
+}
+
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css
+]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=2
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css
+]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** Greystyleテーマ
+**翻訳責任者:** SCP-JP
+**翻訳年:** 2026
+**原題:** Greystyle
+**著作権者:** Greyve
+**作成年:** 2023
+**初訳時参照リビジョン:** 14
+**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:greystyle ソース]
+[[include :scp-jp:credit:end-preview]]
+
+[[div class="mode1-changer"]]
+[[div class="linkbox"]]
+[/theme:greystyle-jp/offset/1 ダークモード]
+[[/div]]
+[[/div]]
+
+[[div class="mode2-changer"]]
+[[div class="linkbox"]]
+[/theme:greystyle-jp/offset/0 ライトモード]
+[[/div]]
+[[/div]]
+
+[[div class="mode1-changer"]]
+[[div_ style="filter: display:flex;"]]
+[[image https://scp-jp.github.io/Black-Highlighter/img/black-highlighter-logo.svg]]
+[[/div]]
+[[/div]]
+
+[[div class="mode2-changer"]]
+[[div_ style="display:inline-flex;width:100%;filter:invert(1);"]]
+[[image https://scp-jp.github.io/Black-Highlighter/img/black-highlighter-logo.svg]]
+[[/div]]
+[[/div]]
+
+@@ @@
+
+-----
+
++ 情報
+
+[[collapsible show="▼ インタビュー記録" hide="▲ 閉じる"]]
+
+[[div class="headline"]]
+インタビュー記録
+
+[[div class="blockquote"]]
+
+[[div class="flank"]]
+//記録開始//
+[[/div]]
+
+[[div class="transcript"]]
+[[div class="sp"]]
+[[div class="member-changer"]]
+[[module ListUsers users="."]]
+[[div class="site-member"]]
+%%name%%
+[[/div]]
+[[/module]]
+[[div class="site-member"]]
+███
+[[/div]]
+[[/div]]
+[[/div]]
+[[div class="di"]]
+これは何?
+[[/div]]
+
+[[div class="sp"]]
+Greyve
+[[/div]]
+[[div class="di"]]
+Greystyle。次の質問どうぞ。
+[[/div]]
+
+[[div class="sp"]]
+[[div class="member-changer"]]
+[[module ListUsers users="."]]
+[[div class="site-member"]]
+%%name%%
+[[/div]]
+[[/module]]
+[[div class="site-member"]]
+███
+[[/div]]
+[[/div]]
+[[/div]]
+[[div class="di"]]
+いや、これ、つまりこの記録のことなんですけど。なんか……なんていうか、気取ってません?
+[[/div]]
+
+[[div class="sp"]]
+Greyve
+[[/div]]
+[[div class="di"]]
+だって、文字通りGreystyle（灰色スタイル）でしょ。
+[[/div]]
+
+
+[[div class="sp"]]
+[[/div]]
+[[div class="ac"]]
+[[div class="member-changer"]]
+[[module ListUsers users="."]]
+[[div class="site-member"]]
+%%name%% は肩をすくめる。
+[[/div]]
+[[/module]]
+[[div class="site-member"]]
+███ は肩をすくめる。
+[[/div]]
+[[/div]]
+[[/div]]
+
+[[div class="sp"]]
+[[div class="member-changer"]]
+[[module ListUsers users="."]]
+[[div class="site-member"]]
+%%name%%
+[[/div]]
+[[/module]]
+[[div class="site-member"]]
+███
+[[/div]]
+[[/div]]
+[[/div]]
+[[div class="di"]]
+まあ、そうですね。
+[[/div]]
+
+[[div class="sp"]]
+Greyve
+[[/div]]
+[[div class="di"]]
+じゃあ……次の質問は?
+[[/div]]
+
+[[div class="sp"]]
+[[div class="member-changer"]]
+[[module ListUsers users="."]]
+[[div class="site-member"]]
+%%name%%
+[[/div]]
+[[/module]]
+[[div class="site-member"]]
+███
+[[/div]]
+[[/div]]
+[[/div]]
+[[div class="di"]]
+そうですね。このテーマの元になったのは何ですか?
+[[/div]]
+
+[[div class="sp"]]
+Greyve
+[[/div]]
+[[div class="di"]]
+主に[[*user Woedenaz]]の[[[theme:penumbra-bhl|Penumbra BHL]]]からフォークしたものです。Penumbra BHLは[[*user EstrellaYoshte]]の[[[theme:penumbra|Penumbra Theme]]]の移植ですね。
+[[/div]]
+
+[[div class="sp"]]
+[[div class="member-changer"]]
+[[module ListUsers users="."]]
+[[div class="site-member"]]
+%%name%%
+[[/div]]
+[[/module]]
+[[div class="site-member"]]
+███
+[[/div]]
+[[/div]]
+[[/div]]
+[[div class="di"]]
+Penumbraとはどこが違うんですか?
+[[/div]]
+
+[[div class="sp"]]
+Greyve
+[[/div]]
+[[div class="di"]]
+機能的にはかなり似てますけど、見た目はかなり違うのが分かると思います。サイト全体のインターフェースに細かい変更を大量に加えて、あとこの記録みたいな専用フォーマットもいくつか追加しました。
+[[/div]]
+
+[[div class="sp"]]
+[[div class="member-changer"]]
+[[module ListUsers users="."]]
+[[div class="site-member"]]
+%%name%%
+[[/div]]
+[[/module]]
+[[div class="site-member"]]
+███
+[[/div]]
+[[/div]]
+[[/div]]
+[[div class="di"]]
+いいですね。なんで作ったんですか?
+[[/div]]
+
+[[div class="sp"]]
+Greyve
+[[/div]]
+[[div class="di"]]
+正直? 仲間外れにされた気がしたんですよ。だって、みんな自分専用のテーマ持ってますし——[[[theme:placestyle|Placestyle]]]とか、[[[theme:blankstyle|Blankstyle]]]とか、[[*https://scp-wiki.wikidot.com/theme:flopstyle-dark Flopstyle Dark]]とか見てくださいよ——
+[[/div]]
+
+[[div class="sp"]]
+[[div class="member-changer"]]
+[[module ListUsers users="."]]
+[[div class="site-member"]]
+%%name%%
+[[/div]]
+[[/module]]
+[[div class="site-member"]]
+███
+[[/div]]
+[[/div]]
+[[/div]]
+[[div class="di"]]
+でも、あなたこの2年くらい何も書いてないじゃないですか。
+[[/div]]
+
+[[div class="sp"]]
+Greyve
+[[/div]]
+[[div class="di"]]
+そこがポイントなんですよ。サンクコスト謬誤です——いや、BHLのソースコードを読み解くのにどれだけ時間かかるか知ってます? そこまで時間をかけたんだから、テーマを使うくらいの理由にはなるだろうなって。
+[[/div]]
+
+[[div class="sp"]]
+[[div class="member-changer"]]
+[[module ListUsers users="."]]
+[[div class="site-member"]]
+%%name%%
+[[/div]]
+[[/module]]
+[[div class="site-member"]]
+███
+[[/div]]
+[[/div]]
+[[/div]]
+[[div class="di"]]
+なるほど。じゃあ、これからも定期的に更新し続けるつもりですか?
+[[/div]]
+
+[[div class="sp"]]
+Greyve
+[[/div]]
+[[div class="di"]]
+そうするつもりです。CSSのフォーマットを自分の記事用に一本化して、自分の……なんて言うか、美的嗜好的特異性を満たすテーマを作るのが目的なんです。あなたが使いたいなら、そりゃ嬉しいですね！ ただ、これはBHLテーマなので、他のベーステーマとは互換性がないことだけ覚えておいてください。
+[[/div]]
+
+[[div class="sp"]]
+[[div class="member-changer"]]
+[[module ListUsers users="."]]
+[[div class="site-member"]]
+%%name%%
+[[/div]]
+[[/module]]
+[[div class="site-member"]]
+███
+[[/div]]
+[[/div]]
+[[/div]]
+[[div class="di"]]
+"美的嗜好的特異性"って何ですか?
+[[/div]]
+
+[[div class="sp"]]
+Greyve
+[[/div]]
+[[div class="di"]]
+だいたいミニマリズムです。このテーマはほぼ4色パレットで、Wikidot固有のものでもなく、何らかの機能も果たしていない線はほとんど全部取り除きました。
+[[/div]]
+
+[[div class="sp"]]
+[[div class="member-changer"]]
+[[module ListUsers users="."]]
+[[div class="site-member"]]
+%%name%%
+[[/div]]
+[[/module]]
+[[div class="site-member"]]
+███
+[[/div]]
+[[/div]]
+[[/div]]
+[[div class="di"]]
+それって[*https://scp-wiki.wikidot.com/theme:basalt Basalt]の余計な手間版というだけじゃないですか。
+[[/div]]
+
+[[div class="sp"]]
+Greyve
+[[/div]]
+[[div class="di"]]
+だいたいそんなところです。[[*user Liryn]]が[[*https://scp-wiki.wikidot.com/theme:foxtrot Foxtrot]]をBasaltに移植してくれるのを待ってるんですよ、Penumbraのヘッダーフォーマットを使い続けるために。
+[[/div]]
+
+[[div class="sp"]]
+[[div class="member-changer"]]
+[[module ListUsers users="."]]
+[[div class="site-member"]]
+%%name%%
+[[/div]]
+[[/module]]
+[[div class="site-member"]]
+███
+[[/div]]
+[[/div]]
+[[/div]]
+[[div class="di"]]
+そう。それはさておき、実際にはどう使うんですか?
+[[/div]]
+
+[[/div]]
+
+
+[[div class="flank"]]
+//記録終了//
+[[/div]]
+
+[[/div]]
+
+[[/div]]
+
+[[/collapsible]]
+
+俺のメタフィクション的な気まぐれを寛容に楽しむ忍耐力のない人のために言うと、**Greystyle**は[[*user Greyve]]が自分の記事で使うために作ったビジュアルテーマです。[[*user Woedenaz]]の[[[theme:penumbra-bhl|Penumbra BHL]]]のライトバリアントをベースに、いくつかの個人的なスタイル変更を加えたものです。
+
+**GreystyleはSigma-9およびBasaltと互換性がありません。**
+
+@@ @@
+
+-----
+
++ 使い方
+
+このテーマを適用するには、ページ先頭に以下のコードを記述してください:
+
+[[div class="code"]]
+@@[[include theme:greystyle-jp]]@@
+[[/div]]
+
+@@ @@
+
+-----
+
++ 例
+
+[[div class="mode1-changer"]]
+[[include :scp-jp:component:theme-squares -=-
+| color1-name=Bone
+| color1-variable=--white-monochrome
+| color1-info=(252, 252, 252)
+| color2-name=Blood
+| color2-variable=--accent-color
+| color2-info=(140, 0, 0)
+| color2-has-light-text=1
+| subcolor1-name=Smoke
+| subcolor1-variable=--light-gray-monochrome
+| subcolor1-info=(238, 238, 238)
+| subcolor2-name=Ash
+| subcolor2-variable=--gray-monochrome
+| subcolor2-info=(56, 49, 49)
+| subcolor2-has-light-text=1
+]]
+[[/div]]
+
+[[div class="mode2-changer"]]
+[[module css]]
+.colors-container [data-has-light-text="1"] {
+    color: rgb(var(--txt-color4));
+}
+[[/module]]
+[[include :scp-jp:component:theme-squares -=-
+| color1-name=Iron
+| color1-variable=--pale-gray-monochrome
+| color1-info=(196, 196, 196)
+| color2-name=Rust
+| color2-variable=--accent-color
+| color2-info=(140, 0, 0)
+| color2-has-light-text=1
+| subcolor1-name=Charcoal
+| subcolor1-variable=--dark-gray-monochrome
+| subcolor1-info=(38, 28, 28)
+| subcolor1-has-light-text=1
+| subcolor2-name=Ink
+| subcolor2-variable=--black-monochrome
+| subcolor2-info=(14, 14, 14)
+| subcolor2-has-light-text=1
+]]
+[[/div]]
+
+[[=]]
+[[span style="font-family: var(--header-font);"]]ヘッダーとタイトルのフォントはJosefin Sansです。[[/span]]
+[[span style="font-family: var(--body-font);"]]本文のフォントはOxygenです。[[/span]]
+[[span style="font-family: var(--mono-font);"]]等幅フォントはFira Codeです。[[/span]]
+[[/=]]
+
+[[toc]]
+
+[[span class="label"]]@@-----@@[[/span]]を使うと水平線を作成できます。
+
+-----
+
+[[include :scp-jp:component:image-block
+|name=https://scp-wiki.wikidot.com/local--files/theme:greystyle/foundation-logo.svg
+|caption=これは画像ブロックです。
+|width=15rem
+|align=right
+]]
+
+行頭に1つから6つまでの[[span class="label"]]+[[/span]]を置くと、見出しを作成できます。
+
++* 第1見出し
+++* 第2見出し
++++* 第3見出し
+++++* 第4見出し
++++++* 第5見出し
+++++++* 第6見出し
+
+@@ @@
+
+[[collapsible show="開く" hide="閉じる"]]
+これは折りたたみです。
+[[/collapsible]]
+
+[[tabview]]
+[[tab タブ]]
+これはタブです[[footnote]]これは脚注です。[[/footnote]]。
+
+* これは
+* 箇条書き
+* リストです
+
+[[/tab]]
+[[tab 長い名前の長いタブ]]
+これは長いタブです[[span class="fnnum"]].[[/span]][[span class="fncon"]]これはより良い脚注です。[[/span]]。
+
+@@ @@
+
+@@ @@
+
+@@ @@
+
+@@ @@
+
+@@ @@
+
+@@ @@
+
+@@ @@
+
+@@ @@
+
+@@ @@
+
+@@ @@
+
+@@ @@
+
+@@ @@
+
+@@ @@
+
+テキストはたくさんありません。
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+これがオチです。
+[[/tab]]
+[[/tabview]]
+
+@@ @@
+
+>  これは引用ブロックです。
+
+[[div class="blockquote"]]
+各行の行頭に[[span class="label"]]>[[/span]]を置くか、[[span class="label"]]@@[[div class="blockquote"]]@@[[/span]]を使うと作成できます。
+[[/div]]
+
+||~ これ ||||~ は||
+|| テーブル ||です ||
+
+[[footnoteblock]]
+
+@@ @@
+
+-----
+
++ カスタム
+
+[[div class="floatbox"]]
+[[span class="label"]]@@[[div class="floatbox"]]@@[[/span]]を使うと作成できます。
+[[/div]]
+
+[[span class="label"]]@@[[span class="label"]]@@[[/span]]を使うと [[span class="label"]]これら[[/span]]を作成できます。
+
+[[span class="label"]]@@[[span class="redaction"]]@@[[/span]]を使うと [[span class="redaction"]]これら[[/span]]を作成できます。
+
+[[span class="label"]]@@[[span class="memetic"]]@@[[/span]]を使うと [[span class="memetic"]]これら[[/span]]を作成できます。
+
+[[div class="notation"]]
+[[span class="label"]]@@[[div class="notation"]]@@[[/span]]を使うと作成できます。
+[[/div]]
+
+[[div class="jotting"]]
+[[span class="label"]]@@[[div class="jotting"]]@@[[/span]]を使うと作成できます。
+[[/div]]
+
+[[div class="modal"]]
+[[span class="label"]]@@[[div class="modal"]]@@[[/span]]を使うと作成できます。
+[[/div]]
+
+[[div class="document"]]
+[[span class="label"]]@@[[div class="document"]]@@[[/span]]を使うと作成できます。他の div の中にネストすることは推奨されません。
+[[/div]]
+
+[[div class="table0"]]
+||~ これは灰色のテーブルです。 ||
+|| [[span class="label"]]@@[[div class="table0"]]@@[[/span]]を使うと作成できます。 ||
+[[/div]]
+
+[[div class="table1"]]
+||~ これは緑色のテーブルです。 ||
+|| [[span class="label"]]@@[[div class="table1"]]@@[[/span]]を使うと作成できます。 ||
+[[/div]]
+
+[[div class="table2"]]
+||~ これは青色のテーブルです。 ||
+|| [[span class="label"]]@@[[div class="table2"]]@@[[/span]]を使うと作成できます。 ||
+[[/div]]
+
+[[div class="table3"]]
+||~ これは黄色のテーブルです。 ||
+|| [[span class="label"]]@@[[div class="table3"]]@@[[/span]]を使うと作成できます。 ||
+[[/div]]
+
+[[div class="table4"]]
+||~ これはオレンジ色のテーブルです。 ||
+|| [[span class="label"]]@@[[div class="table4"]]@@[[/span]]を使うと作成できます。 ||
+[[/div]]
+
+[[div class="table5"]]
+||~ これは赤色のテーブルです。 ||
+|| [[span class="label"]]@@[[div class="table5"]]@@[[/span]]を使うと作成できます。 ||
+[[/div]]
+
+[[div class="table6"]]
+||~ これは紫色のテーブルです。 ||
+|| [[span class="label"]]@@[[div class="table6"]]@@[[/span]]を使うと作成できます。 ||
+[[/div]]
+
+[[div class="overwatch-memo"]]
+[[span class="label"]]@@[[div class="overwatch-memo"]]@@[[/span]]を使うと作成できます。
+[[/div]]
+
+[[div class="ethics-memo"]]
+[[span class="label"]]@@[[div class="ethics-memo"]]@@[[/span]]を使うと作成できます。
+[[/div]]
+
+[[div class="raisa-memo"]]
+[[span class="label"]]@@[[div class="raisa-memo"]]@@[[/span]]を使うと作成できます。
+[[/div]]
+
+[[div class="blockquote shadow"]]
+これらを作成するには、以下のコードを使ってください:
+[[div class="code"]]
+@@[[div class="DIV CLASS shadow"]]@@
+内容
+@@[[/div]]@@
+[[/div]]
+[[/div]]
+
+[[div class="headline"]]
+ヘッドライン
+[[div class="blockquote"]]
+これらを作成するには、以下のコードを使ってください:
+
+[[div class="code"]]
+@@[[div class="headline"]]@@
+ヘッドラインの内容
+@@[[div class="DIV CLASS"]]@@
+div の内容
+@@[[/div]]@@
+@@[[/div]]@@
+[[/div]]
+
+[[/div]]
+
+[[/div]]
+
+[[div class="modal logo1"]]
+これらを作成するには、以下のコードを使ってください:
+
+[[div class="code"]]
+@@[[div class="DIV CLASS logo#"]]@@
+内容
+@@[[/div]]@@
+[[/div]]
+
+デフォルトで[[span class="label"]]logo1[[/span]]、[[span class="label"]]logo2[[/span]]、[[span class="label"]]logo3[[/span]]の3つが用意されています。以下のコードで、ロゴの変更、フィルターの追加、サイズの調整ができます:
+[[div class="code"]]
+@@:root {@@
+@@--logo1-bg: url("URL HERE");@@
+@@--logo2-bg: url("URL HERE");@@
+@@--logo3-bg: url("URL HERE");@@
+@@--logo-bg-filter: FILTER;@@
+@@--logo-bg-size: SIZE;@@
+@@}@@
+[[/div]]
+
+[[div class="translucent"]]
+[[span class="label"]]@@[[div class="translucent"]]@@[[/span]]を使うと作成できます。
+[[/div]]
+
+[[/div]]
+
+[[div class="document"]]
+
+[[div class="proposal-logo1"]]
+[[/div]]
+[[div class="proposal-title"]]
+提案のタイトル
+[[/div]]
+[[div class="proposal-subtitle"]]
+サブタイトル
+[[/div]]
+
+[[div class="proposal-author"]]
+日付
+著者
+部門
+課
+[[/div]]
+
+-----
+
+これらを作成するには、以下のコードを使ってください:
+
+[[div class="code"]]
+@@[[div class="DIV CLASS"]]@@
+@@[[div class="proposal-logo#"]]@@
+@@[[/div]]@@
+@@[[div class="proposal-title"]]@@
+タイトルの内容
+@@[[/div]]@@
+@@[[div class="proposal-subtitle"]]@@
+サブタイトルの内容
+@@[[/div]]@@
+@@[[div class="proposal-author"]]@@
+著者の内容
+@@[[/div]]@@
+@@-----@@
+提案の内容
+@@[[/div]]@@
+[[/div]]
+
+デフォルトで[[span class="label"]]proposal-logo1[[/span]]、[[span class="label"]]proposal-logo2[[/span]]、[[span class="label"]]proposal-logo3[[/span]]の3つが用意されています。以下のコードで、ロゴの変更、フィルターの追加、サイズの調整ができます:
+
+[[div class="code"]]
+@@:root {@@
+@@--proposal-logo-1: url("URL 1");@@
+@@--proposal-logo2: url("URL 2");@@
+@@--proposal1-logo3: url("URL 3");@@
+@@--proposal-logo-filter: FILTER;@@
+@@--proposal-logo-size: SIZE;@@
+@@}@@
+[[/div]]
+
+[[/div]]
+
+[[div class="headline"]]
+トランスクリプト
+[[div class="blockquote"]]
+これらを作成するには、以下のコードを使ってください:
+
+[[div class="code"]]
+@@[[div class="headline"]]@@
+ヘッドラインの内容
+@@[[div class="DIV CLASS"]]@@
+@@[[div class="flank"]]@@
+フランクの内容
+@@[[/div]]@@
+@@[[div class="transcript"]]@@
+トランスクリプトの内容
+@@[[/div]]@@
+@@[[div class="flank"]]@@
+フランクの内容
+@@[[/div]]@@
+@@[[/div]]@@
+@@[[/div]]@@
+[[/div]]
+
+[[div class="flank"]]
+//記録開始//
+[[/div]]
+
+[[div class="transcript"]]
+[[div class="sp"]]
+話者
+[[/div]]
+[[div class="di"]]
+[[span class="label"]]@@[[div class="di"]]@@[[/span]]を使うと、セリフを作成できます。
+[[/div]]
+
+[[div class="sp"]]
+話者
+[[/div]]
+[[div class="di"]]
+[[span class="label"]]@@[[div class="sp"]]@@[[/span]]を使うと、話者を作成できます。
+[[/div]]
+
+[[div class="sp"]]
+話者
+[[/div]]
+[[div class="ac"]]
+[[span class="label"]]@@[[div class="ac"]]@@[[/span]]を使うと、行動を作成できます。手前に空の[[span class="label"]]@@[[div class="sp"]]@@[[/span]]を置くことを推奨します。
+[[/div]]
+
+[[/div]]
+
+[[div class="flank"]]
+//記録終了//
+[[/div]]
+
+[[/div]]
+
+[[/div]]
+
+[[div class="blockquote"]]
+
+[[div class="linkbox"]]
+[https://scp-wiki.wikidot.com/greyve-author-page これはリンクボックスです。]
+[[/div]]
+
+これも、恥知らずな自己宣伝です。
+
+[[span class="label"]]@@[[div class="linkbox"]]@@[[/span]]を使うと作成できます。
+[[/div]]
+
+[[div class="blockquote"]]
+
+[[div class="mode1-changer"]]
+これはライトモード切り替えです。ライトモード専用の内容が含まれます。
+[[/div]]
+[[div class="mode2-changer"]]
+これはダークモード切り替えです。ダークモード専用の内容が含まれます。
+[[/div]]
+
+これらを作成するには、以下のコードを使ってください:
+
+[[div class="code"]]
+@@[[div class="mode1-changer"]]@@
+ライトモードの内容
+@@[[/div]]@@
+@@[[div class="mode2-changer"]]@@
+ダークモードの内容
+@@[[/div]]@@
+[[/div]]
+
+[[/div]]
+
+-----
+
++ コード
+
+[[collapsible show="▼ コードを表示" hide="▲ コードを隠す"]]
+
+[[code type="css"]]
+/*
+Greystyle
+[2023 Wikidot Theme]
+Created by Greyve
+
+Forked from:
+* Penumbra BHL by Woedenaz
+
+Inspiration from:
+* ADMONITION Theme by Liryn and Placeholder McD
+* Basalt Theme by Liryn and Placeholder McD
+* Black Highlighter Theme by Croquembouche and Woedenaz
+* BLANKSTYLE CSS by HarryBlank and Placeholder McD
+* Flopstyle: DARK by Lt Flops
+* Paperstack Theme by EstrellaYoshte
+* Penumbra by EstrellaYosthe
+* Penumbra BHL by Woedenaz
+* PLACESTYLE CSS by Placeholder McD
+* Redtape Theme by Rounderhouse
+* SYNTECH Theme by Greyve
+* Twin Files Theme by JackalRelated
+
+Components from:
+* Centered BHL Header  by Woedenaz
+* Toggle BHL Sidebar by Woedenaz
+* BetterFootnotes by EstrellaYoshte
+* ACS Animation by EstrellaYoshte
+*/
+
+/* FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Fira+Code&display=swap);
+
+:root {
+/* INTEGRATION */
+    --theme-base: "black-highlighter";
+    --theme-id: "greystyle";
+    --theme-name: "Greystyle";
+
+/* FONTS */
+    --body-font: 'Oxygen', sans-serif;
+    --header-font: 'Josefin Sans', sans-serif;
+    --title-font: 'Josefin Sans', sans-serif;
+    --mono-font: 'Fira Code', monospace;
+    --ui-font: var(--body-font);
+
+/* COLORS */
+    /* Primary Colors */
+    --white-monochrome: 252, 252, 252;
+    --light-gray-monochrome: 238, 238, 238;
+    --gray-monochrome: 56, 49, 49;
+
+    --pale-gray-monochrome: 196, 196, 196;
+    --dark-gray-monochrome: 28, 28, 28;
+    --black-monochrome: 14, 14, 14;
+
+    --accent-color: 140, 0, 0;
+
+    --pale-accent: var(--accent-color);
+    --bright-accent: var(--accent-color);
+    --medium-accent: var(--accent-color);
+    --dark-accent: var(--accent-color);
+    --alt-accent: var(--accent-color);
+
+    /* Custom Variable Colors */
+    --bg-color1: var(--white-monochrome);
+    --bg-color2: var(--light-gray-monochrome);
+    --bg-color3: var(--accent-color);
+    --bg-color4: var(--gray-monochrome);
+
+    --txt-color1: var(--gray-monochrome);
+    --txt-color2: var(--white-monochrome);
+    --txt-color3: var(--accent-color);
+    --txt-color4: var(--light-gray-monochrome);
+
+    /* Secondary and Tertiary Colors */
+    --swatch-primary: var(--accent-color);
+    --swatch-primary-darker: var(--accent-color);
+    --swatch-primary-darkest: var(--accent-color);
+    --swatch-border-color: var(--dark-gray-monochrome);
+    --swatch-secondary-color: var(--accent-color);
+    --swatch-tertiary-color: var(--accent-color);
+    --swatch-alternate-color: var(--alt-accent);
+
+    /* Background Color */
+    --background-color: var(--bg-color1);
+    --background-gradient-color: var(--bg-color1);
+
+    /* Text Colors */
+    --swatch-text-general: var(--txt-color1);
+    --swatch-text-light: var(--txt-color2);
+    --swatch-text-dark: var(--txt-color1);
+    --swatch-important-text: var(--txt-color3);
+
+    --link-color: var(--txt-color3);
+    --hover-link-color: var(--txt-color3);
+
+    /* Menu Colors */
+    --swatch-menutxt-general-color: var(--txt-color1);
+    --swatch-menutxt-dark-color: var(--txt-color1);
+    --swatch-menutxt-light-color: var(--txt-color2);
+
+    --swatch-menubg-color: var(--bg-color1);
+    --swatch-menubg-light-color: var(--bg-color3);
+    --swatch-menubg-medium-color: var(--bg-color3);
+    --swatch-menubg-medium-dark-color: var(--bg-color3);
+    --swatch-menubg-dark-color: var(--bg-color3);
+    --swatch-menubg-black-color:var(--bg-color4);
+    --swatch-menubg-hover-color:var(--bg-color2);
+
+    --swatch-background: var(--bg-color1);
+    --swatch-headerh1-color: var(--bg-color3);
+    --swatch-headerh2-color: var(--bg-color3);
+
+    /* ACS Colors */
+    --one-color: 76, 160, 108;
+    --two-color: 67, 135, 190;
+    --three-color: 245, 211, 1;
+    --four-color: 233, 107, 40;
+    --five-color: 197, 38, 50;
+    --six-color: 98, 60, 122;
+
+/* COMPONENTS */
+    /* UI */
+    --ui-button-txt: var(--txt-color1);
+    --ui-button-bg: var(--bg-color2);
+    --ui-button-hover-txt: var(--txt-color2);
+    --ui-button-hover-bg: var(--bg-color3);
+    --ui-button-hover-outline: transparent;
+
+    /* Header */
+    --logo-image: url("https://scp-wiki.wikidot.com/local--files/theme:greystyle/foundation-logo.svg");
+    --header-title: "SCP FOUNDATION";
+    --header-subtitle: "SECURE, CONTAIN, PROTECT";
+    --header-h1-font-size: calc(2rem + (.025 * (100vw - 20rem)));
+    --header-h2-font-size: calc(var(--base-font-size) * 1.25);
+
+    --down-arrow-mask:url("data:image/svg+xml;charset=utf-8,%3Csvg version='1.2' baseProfile='tiny' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 26' overflow='visible' xml:space='preserve'%3E%3Cpath d='m15,26 15-26H0'/%3E%3C/svg%3E");
+    --right-arrow-mask: url("data:image/svg+xml;charset=utf-8,%3Csvg version='1.2' baseProfile='tiny' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 30' overflow='visible' xml:space='preserve'%3E%3Cpath d='m26,15 -26,15 V0'/%3E%3C/svg%3E");
+
+    --header-gradient-color-bottom: var(--bg-color1);
+    --header-gradient-color-middle: var(--bg-color1);
+    --header-gradient-color-top: var(--bg-color1);
+    --diagonal-stripes: unset;
+
+    --swatch-topmenu-border-color: var(--bg-color1);
+    --swatch-topmenu-bg-color: var(--bg-color1);
+
+    /* Toggle Sidebar */
+    --sidebar-transition-timing: .7s ease-in-out .1s;
+    --toggle-button-bg: rgb(var(--bg-color3));
+    --toggle-border-color: transparent;
+    --toggle-icon-color: rgb(var(--txt-color2));
+    --toggle-roundness: 0;
+
+    /* Rating Module */
+    --rating-module-button-color: var(--bg-color2);
+    --rating-module-button-cancel-color: var(--bg-color4);
+    --rating-module-button-credit-color: var(--bg-color4);
+    --rating-module-text-color: var(--txt-color1);
+    --rating-module-text-hover-color: var(--txt-color2);
+
+    /* Footnote Hoverbox */
+    --hoverblock-bg: var(--bg-color2);
+    --hoverblock-txt: var(--txt-color1);
+    --hoverblock-header-bg: var(--bg-color3));
+    --hoverblock-header-txt: var(--txt-color2);
+    --hoverblock-footer-bg: var(--bg-color2);
+    --hoverblock-footer-txt: var(--txt-color1);
+
+    /* Modal */
+    --modal-bg: var(--bg-color1);
+    --modal-body-text: var(--txt-color1);
+    --modal-body-header-txt: var(--txt-color1);
+    --modal-header-txt: var(--txt-color2);
+    --modal-header-bg: var(--bg-color3);
+    --modal-header-stripe: var(--bg-color3);
+
+    /* BetterFootnotes */
+    --fnColor: rgb(var(--txt-color3));
+    --posX: calc(50% + var(--body-width-on-desktop) / 2 + 2.5rem);
+}
+
+/* HEADER*/
+#header {
+    --swatch-headerh1-color: var(--txt-color1);
+    --swatch-headerh2-color: var(--txt-color1);
+
+    --search-icon-color: var(--txt-color1);
+    --search-icon-hover-color: var(--txt-color2);
+    --search-icon-hover-bg-color: var(--bg-color3);
+
+    --search-icon-focus-color: var(--txt-color2);
+    --search-icon-focus-bg-color: var(--bg-color3);
+    --search-focus-outline-color: transparent;
+    --search-focus-textbox-bg-color: var(--bg-color2);
+    --search-focus-textbox-text-color: var(--txt-color1);
+
+    --login-username-color: var(--txt-color1);
+    --login-line-divider-color: var(--txt-color1);
+    --login-myaccount-color: var(--txt-color1);
+    --login-myaccount-hover-color: var(--txt-color2);
+    --login-myaccount-underline-color: var(--bg-color3);
+    --login-myaccount-hover-bg-color: var(--bg-color3);
+
+    --login-dropdown-text-color: var(--txt-color1);
+    --login-dropdown-bg-color: var(--bg-color2);
+    --login-dropdown-bg-image: var(--bg-color2);
+    --login-dropdown-border-color: transparent;
+    --login-dropdown-text-hover-color: var(--txt-color2);
+    --login-dropdown-bg-hover-color: var(--bg-color3);
+}
+
+/* Logo Changes */
+/* Use https://codepen.io/sosuke/pen/Pjoqqp to filter the image color from black. */
+:root {
+    --logo-filter: invert(11%) sepia(2%) saturate(4457%) hue-rotate(314deg) brightness(95%) contrast(76%) opacity(25%);
+}
+
+#header::before {
+    filter: var(--logo-filter);
+}
+
+/* Outline Correction */
+#header h1 a::before {
+    content: "";
+}
+
+#header h2 span::before {
+    content: "";
+}
+
+/* Position Correction */
+#header h1,
+#header h1 a,
+#header h1 a::before {
+    top: -.25rem;
+}
+
+/* Login Arrow */
+#login-status #account-topbutton::before,
+#login-status:not(:focus-within) #account-topbutton::before,
+#login-status:not(:focus-within) #account-topbutton:hover::before {
+    --clip-path: polygon(30% 30%, 70% 30%, 50% 65%);
+}
+
+#login-status #account-options li>a:before {
+    --clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+}
+
+#login-status #account-options li>a:hover:before {
+    --clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* Mobile Corrections */
+@media only screen and (max-width:56.25rem) {
+    :root {
+        --body-width-on-desktop: 100vw;
+        --header-h1-font-size: calc(2rem + (.02 * (100vw - 20rem)));
+        --header-h2-font-size: calc(var(--base-font-size) * 1.25);
+    }
+}
+
+/* SELECTION */
+::-moz-selection {
+    background: rgba(var(--bg-color3), 1);
+    color: rgb(var(--txt-color2));
+    text-shadow: none;
+    }
+
+::selection {
+    background: rgba(var(--bg-color3), 1);
+    color: rgb(var(--txt-color2));
+    text-shadow: none;
+    }
+
+/* TOPBAR */
+#top-bar {
+    --topmenu-category-color: var(--txt-color1);
+    --topmenu-category-hover-color: var(--txt-color2);
+    --topmenu-category-hover-bg: var(--bg-color3);
+    --topmenu-hover-border-color: transparent;
+
+    --mobile-topmenu-sidebar-button-color: var(--bg-color3);
+
+    --dropdown-bg-color: var(--bg-color2);
+    --dropdown-border-color: transparent;
+    --dropdown-links-color: var(--txt-color1);
+    --dropdown-links-hover-color: var(--txt-color2);
+    --dropdown-links-hover-bg-color: var(--bg-color3);
+
+    --topbar-height-on-desktop: 2rem;
+    --topbar-height-on-mobile: 2rem;
+}
+
+#header div[class*=top-bar]>ul>li>ul li>a:before {
+    --clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+}
+
+#header div[class*=top-bar]>ul>li>ul li>a:active:before,
+#header div[class*=top-bar]>ul>li>ul li>a:hover:before {
+    --clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* SIDEBAR */
+#side-bar {
+    --sidebar-bg-color: var(--bg-color1);
+    --sidebar-resources-bg-color: var(--bg-color2);
+    --sidebar-media-bg-color: var(--bg-color2);
+
+    --sideblock-heading-border-color: transparent;
+
+    --sidebar-border-color: var(--bg-color1);
+
+    --sidebar-links-text: var(--txt-color1);
+    --sidebar-links-hover-bg-color: var(--bg-color3);
+    --sidebar-links-hover-text-color: var(--txt-color2);
+}
+
+#side-bar .heading p,
+#side-bar .side-block>.collapsible-block .collapsible-block-link {
+    text-transform: none;
+    text-align: left;
+    font-size: .95rem;
+    text-indent: 0;
+}
+
+/* Background Changes */
+@supports((display: -ms-grid) or (display: grid)) {
+    @media only screen and (min-width: 769px) {
+        #main-content::before {
+            background: rgba(var(--bg-color2), .5) 1px 1px repeat;
+            backdrop-filter: blur(.1rem);
+            }
+        }
+    }
+
+/* BREADCRUMBS */
+#breadcrumbs a:before,
+#breadcrumbs a:visited:before,
+.pseudocrumbs a:before,
+.pseudocrumbs a:visited:before {
+    padding: 0;
+    transform: skew(0deg);
+    color: rgb(var(--txt-color3));
+    box-shadow: inset 0 -.125rem 0 0rem rgba(var(--bg-color3), 1);
+    transition: box-shadow 300ms cubic-bezier(.4, 0, .2, 1), color 300ms cubic-bezier(.4, 0, .2, 1), padding 300ms cubic-bezier(.4, 0, .2, 1), margin 300ms cubic-bezier(.4, 0, .2, 1);
+}
+
+#breadcrumbs a:active:before,
+#breadcrumbs a:hover:before,
+.pseudocrumbs a:active:before,
+.pseudocrumbs a:hover:before {
+    padding: 0;
+    text-decoration: none;
+    color: rgb(var(--txt-color2));
+    box-shadow: inset 0 -1.5em 0 0 rgba(var(--bg-color3), 1);
+}
+
+/* SCROLLBAR*/
+html,
+body {
+    scrollbar-color: rgb(var(--bg-color3)) rgb(var(--bg-color2));
+}
+
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    width: 16px;
+    background: transparent;
+}
+
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+    background: rgb(var(--bg-color2));
+}
+
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb,
+html::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover {
+    background: rgb(var(--bg-color3));
+}
+
+/* TITLE */
+#page-title::before,
+.meta-title::before {
+        content: none;
+    }
+
+#page-title::after,
+.meta-title::after{
+height: .125rem;
+}
+
+/* CONTENT*/
+#main-content {
+    /* UI */
+    --ui-icon-color: var(--txt-color1);
+    --ui-icon-bg: var(--bg-color2);
+    --ui-icon-hover-color: var(--txt-color2);
+    --ui-icon-hover-bg: var(--bg-color3);
+
+    /* Table of Contents */
+    --toc-header-bg-color: var(--bg-color3);
+    --toc-header-text-color: var(--txt-color2);
+    --toc-header-text-hover-color: var(--txt-color2);
+    --toc-body-bg-color: var(--bg-color2);
+    --toc-directory-lines-color: var(--bg-color2);
+    --toc-body-link-color: var(--txt-color1);
+    --toc-body-link-hover-color: var(--txt-color3);
+    --toc-body-hover-arrow-color: var(--txt-color3);
+
+    /* Tabs */
+    --tabs-bg: var(--bg-color2);
+    --tabs-txt: var(--txt-color1);
+    --tabs-hover-bg: var(--bg-color3);
+    --tabs-hover-txt: var(--txt-color2);
+    --tabs-selected-bg: var(--bg-color3);
+    --tabs-selected-txt: var(--txt-color2);
+    --tabs-selected-outline: var(--bg-color3);
+    --tabs-bottom-border-color: var(--bg-color3);
+    --tabs-content-bg-color: var(--bg-color2);
+    --tabs-content-border-color: var(--bg-color2);
+
+    /* Footnote Block */
+    --footnotes-footer-bg-color: var(--bg-color2);
+    --footnotes-footer-colorbar-color: var(--bg-color3);
+    --footnotes-footer-title-bg-color: var(--bg-color3);
+    --footnotes-footer-title-text-color: var(--txt-color2);
+    --footnotes-footer-num-color: var(--txt-color3);
+    --footnotes-footer-num-hover-color: var(--txt-color3);
+
+    /* Editor*/
+    --editor-icon-color: var(--txt-color1);
+    --editor-icon-bg: var(--bg-color1);
+    --editor-icon-hover-color: var(--txt-color2);
+    --editor-icon-hover-bg: var(--bg-color3);
+    --editor-icon-submenu-bg: var(--bg-color3);
+
+    /* Tags */
+    --pagetags-title-bg: var(--bg-color3);
+    --pagetags-title-text: var(--txt-color2);
+    --pagetags-text-color: var(--txt-color1);
+    --pagetags-text-hover-color: var(--txt-color2);
+    --pagetags-text-hover-bg-color: var(--bg-color3);
+}
+
+/* RATING MODULE */
+#page-content .rate-box-with-credit-button, .page-rate-widget-box {
+    background-color: rgb(var(--bg-color2));
+    border: none;
+}
+
+/* Credit */
+#page-content .rate-box-with-credit-button>.creditButton>p>a:after {
+    background-color: rgb(var(--bg-color3));
+}
+
+/* POPUP */
+div.odialog-shader{
+    background-color: rgba(var(--bg-color3), .5) 1px 1px repeat;
+    backdrop-filter: blur(.1rem);
+}
+
+#odialog-container div.owindow {
+    box-shadow: none;
+}
+
+/* Header */
+.owindow .modal-header {
+    background-color: rgb(var(--bg-color2));
+}
+
+.owindow .title {
+    color: var(--txt-color2);
+    background-color: rgb(var(--bg-color3));
+    border: none;
+}
+
+/* Body */
+#odialog-container .content h1,
+#odialog-container .modal-body h1 {
+    box-shadow: none;
+}
+
+/* Footer */
+#odialog-container .modal-footer {
+    box-shadow: none;
+}
+
+/* Button Correction */
+#odialog-container .title.modal-header :not(.page-rate-widget-box) :not(#search-top-box-form) > a.btn {
+    color: rgb(var(--txt-color1));
+    background-color: rgb(var(--bg-color2));
+    border: none;
+}
+
+#odialog-container .title.modal-header :not(.page-rate-widget-box):not(#search-top-box-form) > a.btn:active,
+#odialog-container .title.modal-header :not(.page-rate-widget-box):not(#search-top-box-form) > a.btn:hover,
+#odialog-container .title.modal-header :not(.page-rate-widget-box):not(#search-top-box-form) > a.btn:focus-within {
+    color: rgb(var(--txt-color2));
+    background-color: rgb(var(--bg-color3));
+    border: none;
+}
+
+/* DETAILS */
+/* Watch */
+div.page-watch-options a {
+    padding: 0.15em;
+    text-decoration: none !important;
+    box-shadow: inset 0 -0.125em 0 0 rgba(var(--bg-color3), 1) !important;
+    transition: box-shadow 300ms cubic-bezier(.4, .0, .2, 1), color 300ms cubic-bezier(.4, .0, .2, 1), padding 300ms cubic-bezier(.4, .0, .2, 1), margin 300ms cubic-bezier(.4, .0, .2, 1) !important;
+}
+
+div.page-watch-options a:hover {
+    padding: .3em .25em .2em .25em !important;
+    text-decoration: none !important;
+    color: rgb(var(--txt-color2)) !important;
+    box-shadow: inset 0 -1.5em 0 0 rgba(var(--bg-color3), 1) !important;
+}
+
+/* Revision */
+#page-info {
+    margin: .25em;
+    font-family: var(--body-font) !important;
+    font-size: .75rem !important;
+}
+
+div#page-info .odate {
+    --MONO: 0;
+    font-family: var(--body-font);
+    font-size: .75rem;
+}
+
+/* TAGS*/
+.page-tags span a {
+    padding: .15em;
+    color: rgb(var(--txt-color1));
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    box-shadow: inset 0 -.125em 0 0rem rgba(var(--bg-color3), 1);
+    transition: box-shadow 300ms cubic-bezier(.4, .0, .2, 1), color 300ms cubic-bezier(.4, .0, .2, 1), padding 300ms cubic-bezier(.4, .0, .2, 1), margin 300ms cubic-bezier(.4, .0, .2, 1);
+}
+
+.page-tags span a:hover {
+    padding: .3em .25em .2em .25em;
+    text-decoration: none;
+    color: rgb(var(--txt-color2));
+    box-shadow: inset 0 -1.5em 0 0 rgba(var(--bg-color3), 1);
+}
+
+#main-content .page-tags span a:not([href^="/system:page-tags/tag/_"]):before,
+#main-content .page-tags span a:visited:not([href^="/system:page-tags/tag/_"]):before {
+    --clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+}
+
+#main-content .page-tags span a:not([href^="/system:page-tags/tag/_"]):active:before,
+#main-content .page-tags span a:not([href^="/system:page-tags/tag/_"]):hover:before {
+    --clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* ACTION AREA */
+#action-area > p {
+    background-color: rgb(var(--bg-color2)) !important;
+    box-shadow: none !important;
+}
+
+#action-area a[onclick*=PageRateModule],
+#action-area a.action-area-close,
+table.page-history tr td.optionstd a,
+body.print-body #print-options a,
+#site-tools-box ul.nav li a,
+#action-area h1+p+h2~div[style="padding-left:3em;"] > div a {
+    border: none;
+    box-shadow: none;
+}
+
+/* EDITOR */
+/* Title */
+#action-area h1:after {
+    height: .125rem;
+}
+
+/* Border */
+form#edit-page-form:not(.data-form),
+form#edit-page-form .wd-editor-toolbar-panel {
+    box-shadow: none;
+}
+
+/* Title */
+form#edit-page-form #edit-page-title {
+    background-color: rgb(var(--bg-color2));
+}
+
+form#edit-page-form #edit-page-title:focus-visible {
+    background-color: rgb(var(--bg-color1));
+    border: none;
+}
+
+/* Text Area */
+form#edit-page-form #edit-page-textarea {
+    border: none;
+}
+
+form#edit-page-form #edit-page-textarea:focus {
+    border: none;
+}
+
+form#edit-page-form #wd-editor-toolbar-panel+div {
+    box-shadow: none;
+}
+
+/* Help */
+form#edit-page-form .edit-help-34 {
+    background-color: rgb(var(--bg-color2));
+}
+
+/* Size Buttons */
+form#edit-page-form .change-textarea-size {
+    grid-gap: 0em;
+    gap: 0em;
+    background-color: rgb(var(--bg-color2));
+}
+
+form#edit-page-form .change-textarea-size a:active,
+form#edit-page-form .change-textarea-size a:hover{
+    border: .125rem solid rgb(var(--bg-color3));
+}
+
+/* Edit Comments */
+form#edit-page-form #edit-page-comments {
+    background-color: rgb(var(--bg-color2));
+}
+
+form#edit-page-form #edit-page-comments:focus-visible {
+    background-color: rgb(var(--bg-color1));
+    border: none;
+}
+
+/* HISTORY */
+/* Per Page */
+select#h-perpage {
+    background-color: rgb(var(--bg-color2));
+    border: none;
+}
+
+/* Pager */
+#action-area .pager span.current:not(:last-of-type)::before {
+    display: none;
+}
+
+.pager .current {
+    color: rgb(var(--txt-color2));
+}
+
+/* List*/
+#revision-list .page-history tr:first-child {
+    display: none;
+}
+
+table.page-history tr:nth-of-type(odd) {
+    background-color: rgb(var(--bg-color2));
+}
+
+/* SOURCE */
+.page-source {
+    border: none;
+    background-color: rgb(var(--bg-color2));
+}
+
+/* FOOTER */
+/* Footer */
+#footer {
+    --footer-bg-color: var(--bg-color2);
+    --footer-text-color: var(--txt-color1);
+    --footer-link-color: var(--txt-color1);
+    --footer-link-hover-color: var(--txt-color2);
+    --footer-link-hover-bg-color: var(--bg-color3);
+}
+
+#footer a:before {
+    --clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+}
+
+#footer a:active:before,
+#footer a:hover:before {
+    --clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+
+/* Buttons */
+:not(.page-rate-widget-box):not(#search-top-box-form)>.btn,
+:not(.page-rate-widget-box):not(#search-top-box-form)>div.buttons input {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+#odialog-container div.owindow {
+    box-shadow: none;
+}
+
+
+/* License Area */
+#license-area {
+    --license-bg-color: var(--bg-color2);
+    --license-text-color: var(--txt-color1);
+    --license-link-color: var(--txt-color1);
+    --license-link-hover-color: var(--txt-color2);
+    --license-link-hover-bg-color: var(--bg-color3);
+}
+
+#license-area a:before {
+    --clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+}
+
+#license-area a:active:before,
+#license-area a:hover:before {
+    --clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+
+/* COMPONENTS */
+/* Table of Contents */
+#page-content div#toc {
+    box-shadow: none;
+}
+
+/* Horizontal Rule */
+hr {
+        height: .125rem;
+        margin: 1.25rem 0;
+        background-color: rgb(var(--bg-color3));
+        border-top: none;
+}
+
+/* Link */
+#page-content a:not([href*="user"]):not([href*="javascript:;"]):not(#toc #toc-list a):not(#toc #toc-list a:visited):not(.fa.fa-info):not(.linkbox a):not(#action-area .btn):not(#rename-option-rename a):not(.danger-diamond a) {
+    padding: .15em;
+    margin: -.15em;
+    color: rgb(var(--txt-color1));
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    box-shadow: inset 0 -.125rem 0 0rem rgba(var(--bg-color3), 1);
+    transition: box-shadow 300ms cubic-bezier(.4, 0, .2, 1), color 300ms cubic-bezier(.4, 0, .2, 1), padding 300ms cubic-bezier(.4, 0, .2, 1), margin 300ms cubic-bezier(.4, 0, .2, 1);
+}
+
+#page-content a:not([href*="user"]):not([href*="javascript:;"]):hover:not(#toc #toc-list a):not(#toc #toc-list a:visited):not(.fa.fa-info):not(.linkbox a):not(#action-area .btn):hover:not(#rename-option-rename a):hover:not(.danger-diamond a):hover {
+    padding: .3em .25em .2em .25em;
+    margin: -.25em;
+    text-decoration: none;
+    color: rgb(var(--txt-color2));
+    box-shadow: inset 0 -1.5em 0 0 rgba(var(--bg-color3), 1);
+}
+
+/* Collapsible */
+#page-content .collapsible-block-folded,
+#page-content .collapsible-block-unfolded-link {
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    width: fit-content;
+    overflow: hidden;
+    margin: auto;
+    box-sizing: border-box;
+    background: rgb(var(--bg-color2));
+    transition: background .25s linear;
+}
+
+#page-content .collapsible-block-link {
+    display: inline-block;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(var(--txt-color1));
+    font-weight: 700;
+}
+
+#page-content .collapsible-block-link:hover {
+    color: rgb(var(--txt-color2));
+}
+
+#page-content .collapsible-block-folded:hover,
+#page-content .collapsible-block-unfolded-link:hover {
+    background: rgb(var(--bg-color3));
+}
+
+#page-content .collapsible-block-unfolded-link {
+    box-shadow: 0rem -.25rem 0rem 0rem rgb(var(--bg-color3));
+}
+
+#page-content .collapsible-block-folded,
+#page-content .collapsible-block-unfolded-link {
+    margin-top: .75rem;
+    margin-bottom: .75rem;
+}
+
+/* Image Block */
+.scp-image-block {
+    box-sizing: border-box;
+    border: none;
+    bottom-border: none;
+    box-shadow: none;
+}
+
+:is(div.image-block, div.scp-image-block) {
+    box-shadow: none;
+}
+
+:is(div.image-block, div.scp-image-block) :is(.image-caption, .scp-image-caption) {
+    color: rgb(var(--txt-color1));
+    background-color: rgb(var(--bg-color2));
+    border: none;
+    box-shadow: none;
+}
+
+.block-right:is(div.image-block,div.scp-image-block) {
+    margin: 1.25em 0 1.25em 1.25em;
+}
+
+.block-center:is(div.image-block,div.scp-image-block) {
+    margin: 1.25em auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .scp-image-block {
+        float: none;
+        margin: 1.25rem auto;
+    }
+}
+
+/* BetterFootnotes */
+.fnnum::after {
+    padding: .125rem;
+}
+
+.fncon {
+    left: var(--posX);
+    background: rgb(var(--bg-color2));
+    border: none;
+    box-shadow: none;
+    padding: 1rem;
+    width: 12rem;
+}
+
+.fncon::before {
+    color: rgb(var(--txt-color2));
+}
+
+@media only screen and (max-width: 58.125rem) {
+    .fncon {
+        position: fixed;
+        bottom: 1.25rem;
+        left: calc(27.125vw - 3.125rem);
+        width: 75%;
+        transition: opacity 0.15s linear var(--fnLinger), left var(--fnTransition) cubic-bezier(.4, 0, .2, 1) var(--fnLinger), visibility 0.01s linear var(--fnInteract);
+    }
+
+    .fnnum:hover + .fncon, .fncon:hover {
+        left: 27.125vw;
+        transition: opacity 0.15s linear, left var(--fnTransition)  cubic-bezier(.4, 0, .2, 1);
+    }
+}
+
+/* STANDARD */
+/* Blockquote */
+:is(blockquote, .blockquote, div.blockquote, [class*=blockquote]) {
+    margin: 1.25em;
+    padding: .825em 1.25em;
+    background-color: rgb(var(--bg-color2));
+    border: none;
+    box-shadow: none;
+}
+
+/* Code */
+.code {
+    margin: 1.25em;
+    padding: .825em 1.75em .825em 1.25em;
+    color: rgb(var(--txt-color1));
+    background-color: rgb(var(--bg-color2));
+    border: none;
+    box-shadow: inset .5rem 0 0 0 rgba(var(--bg-color3));
+}
+
+.hl-code,
+.hl-identifier,
+.hl-brackets {
+    color: rgb(var(--txt-color1));
+}
+
+.hl-var {
+    color: rgb(76, 160, 108);
+}
+
+.hl-reserved {
+    color: rgb(67, 135, 190);
+}
+
+.hl-number,
+.hl-string {
+    color: rgb(197, 38, 50);
+}
+
+.hl-quotes,
+.hl-special {
+    color: rgb(98, 60, 122);
+}
+
+/* Table */
+ #page-content .wiki-content-table tbody tr th {
+    padding: .4rem;
+    color: rgb(var(--txt-color2));
+    background: rgb(var(--bg-color3));
+    border: .125rem solid rgb(var(--bg-color3)) !important;
+}
+
+ #page-content .wiki-content-table tbody tr td {
+    padding: .8rem;
+    line-height: 1.5;
+    color: rgb(var(--txt-color1));
+    background: rgb(var(--bg-color1));
+    border: .125rem solid rgb(var(--bg-color3)) !important;
+}
+
+/* CUSTOM */
+/* Label */
+.label {
+    padding: .125em;
+    color: rgb(var(--txt-color2));
+    white-space: nowrap;
+    background: rgb(var(--bg-color3));
+}
+
+/* Memetic */
+.memetic{
+    filter: blur(.25rem);
+}
+
+/* Redaction */
+.redaction{
+    padding: .15em 0;
+    color: rgb(var(--txt-color1));
+    text-decoration: none;
+    background-color: rgb(var(--txt-color1));
+    transition: background-color 300ms cubic-bezier(.4, .0, .2, 1);
+}
+
+.redaction:hover {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+/* Notation*/
+.notation {
+    margin: 1.25em;
+    padding: .825em 1.75em .825em 1.25em;
+    background-color: rgb(var(--bg-color1));
+    box-shadow: inset .5rem 0 0 0 rgba(var(--bg-color3));
+}
+
+/* Jotting */
+.jotting {
+    margin: 1.25em;
+    padding: .825em 1.25em;
+    background-color: rgb(var(--bg-color2));
+    border: 1px dashed rgb(var(--txt-color1));
+}
+
+/* Modal*/
+.modal {
+    margin: 1.25em;
+    padding: .825em 1.25em;
+    background-color: rgb(var(--bg-color1));
+    box-shadow: 0 0 5px rgba(var(--bg-color4), .5);
+}
+
+/* Translucent*/
+.translucent{
+    margin: 1.25em;
+    padding: .825em 1.25em;
+    background-color: rgba(var(--bg-color2), .5);
+    backdrop-filter: blur(.1rem);
+}
+
+/* Floatbox */
+/* Adapted from Basalt */
+#page-content div.floatbox {
+    float: right;
+    max-width: calc(var(--body-width-on-desktop)/2.5);
+    box-sizing: border-box;
+    margin: 1.25em;
+    padding: .825em 1.25em;
+    background-color: rgb(var(--bg-color2));
+    border: none;
+}
+
+@media only screen and (max-width: 600px) {
+    #page-content div:is(.floatbox) {
+    float: none;
+    width: 100%;
+    margin: 1.25em;
+    }
+}
+
+/* Document */
+/* Adapted from Basalt */
+.document {
+    display: block;
+    position: relative;
+    max-width: 45rem;
+    margin: 1.25em 1.25em 2.25em 1.25em;
+    padding: 1.25em;
+    color: rgb(var(--txt-color1));
+    background-color: rgb(var(--bg-color1));
+    box-shadow: 0 0 10px rgba(var(--bg-color4), .5);
+}
+
+.document::before {
+    top: 5px;
+    left: -5px;
+    transform: rotate(-2.5deg);
+}
+
+.document::after {
+    top: 2.5px;
+    right: -2.5px;
+    transform: rotate(1.25deg);
+}
+
+.document::before,
+.document::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    height: 98%;
+    width: 98%;
+    background-color: rgb(var(--bg-color1));
+    box-shadow: 0 0 10px rgba(var(--bg-color4), .5);
+}
+
+@media only screen and (max-width: 1020px) {
+.document::before,
+.document::after {
+        display: none;
+    }
+}
+
+/* Table Color */
+/* Adapted from BLANKSTYLE CSS */
+:root {
+    --table0-bg-color: 56, 49, 49;
+    --table1-bg-color: var(--one-color);
+    --table2-bg-color: var(--two-color);
+    --table3-bg-color: var(--three-color);
+    --table4-bg-color: var(--four-color);
+    --table5-bg-color: var(--five-color);
+    --table6-bg-color: var(--six-color);
+
+    --table0-txt-color: var(--white-monochrome);
+    --table1-txt-color: var(--white-monochrome);
+    --table2-txt-color: var(--white-monochrome);
+    --table3-txt-color: var(--gray-monochrome);
+    --table4-txt-color: var(--white-monochrome);
+    --table5-txt-color: var(--white-monochrome);
+    --table6-txt-color: var(--white-monochrome);
+}
+
+.table0 {
+    --bg-color3: var(--table0-bg-color);
+    --txt-color2: var(--table0-txt-color);
+}
+
+.table1 {
+    --bg-color3: var(--table1-bg-color);
+    --txt-color2: var(--table1-txt-color);
+}
+
+.table2 {
+    --bg-color3: var(--table2-bg-color);
+    --txt-color2: var(--table2-txt-color);
+}
+
+.table3 {
+    --bg-color3: var(--table3-bg-color);
+    --txt-color2: var(--table3-txt-color);
+}
+
+.table4 {
+    --bg-color3: var(--table4-bg-color);
+    --txt-color2: var(--table4-txt-color);
+}
+
+.table5 {
+    --bg-color3: var(--table5-bg-color);
+    --txt-color2: var(--table5-txt-color);
+}
+
+.table6 {
+    --bg-color3: var(--table6-bg-color);
+    --txt-color2: var(--table6-txt-color);
+}
+
+/* Memo */
+/* Adapted from Basalt*/
+:root {
+    --memo-txt-color: var(--txt-color1);
+    --memo-logo-filter: invert(11%) sepia(2%) saturate(4457%) hue-rotate(314deg) brightness(95%) contrast(76%) opacity(20%);
+    --memo-size: 5rem;
+}
+
+div[class$="-memo"] {
+    color: rgb(var(--memo-txt-color));
+    min-height: var(--memo-size);
+    margin: 2.25rem auto;
+    padding: 1.25rem;
+    text-align: center;
+    background: rgb(var(--memo-bg-color));
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(.1rem);
+}
+
+div[class$="-memo"]::before{
+    color: rgb(var(--memo-txt-color));
+    z-index: 2;
+    content: var(--memo-header);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 1.25rem auto;
+    padding-top: .5em;
+    font-family: var(--UI-font);
+    font-weight: 700;
+    font-size: 1.25em;
+    text-align: center;
+}
+
+div[class$="-memo"]::after{
+    content: "";
+    position: absolute;
+    height: 15rem;
+    width: 15rem;
+    top: 50%;
+    left: 50%;
+    margin-top: -7.5rem;
+    margin-left: -7.5rem;
+    min-height: var(--memo-size);
+    background: var(--memo-logo);
+    filter: var(--memo-logo-filter);
+    background-size: calc(1.5 * var(--memo-size));
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+div[class$="-memo"] > * {
+    position: relative;
+    z-index: 2;
+}
+
+.overwatch-memo {
+    --memo-header: "Overwatch Command Directive";
+    --memo-logo: url(https://scp-wiki.wikidot.com/local--files/theme:greystyle/o5-logo.svg);
+    --memo-bg-color: 252, 217, 217;
+}
+
+.ethics-memo {
+    --memo-header: "Ethics Committee Memorandum";
+    --memo-logo: url(https://scp-wiki.wikidot.com/local--files/theme:greystyle/ec-logo.svg);
+    --memo-bg-color: 217, 231, 252;
+}
+
+.raisa-memo {
+    --memo-header: "Records and Information Security Administration Notice";
+    --memo-logo: url(https://scp-wiki.wikidot.com/local--files/theme:greystyle/raisa-logo.svg);
+    --memo-bg-color: 252, 245, 196;
+}
+
+/* Shadow */
+.shadow {
+    box-shadow: 0 0 5px rgba(var(--bg-color4), .5);
+}
+
+.blockquote.shadow {
+    box-shadow: 0 0 5px rgba(var(--bg-color4), .5);
+}
+
+.notation.shadow,
+.code.shadow {
+    box-shadow: inset .5rem 0 0 0 rgba(var(--bg-color3)), 0 0 5px rgba(var(--bg-color4), .5);
+}
+
+/* Headline */
+.headline {
+    padding: 0;
+    margin: .5rem 1.25rem;
+    background: none;
+    border: none;
+}
+
+.headline > p {
+    --wght: 700;
+    font-size: 1.5em;
+    font-family: var(--title-font);
+    text-align: center;
+    color: rgb(var(--txt-color2));
+    background: rgb(var(--bg-color3));
+    padding: .5rem 1.25rem;
+    margin: 0;
+}
+
+.headline > div {
+    position: relative;
+    padding: .5rem 1.25rem;
+    border-top: none;
+    margin: 0;
+}
+
+/* Logo */
+:root {
+    --logo1-bg: url("https://scp-wiki.wikidot.com/local--files/theme:greystyle/foundation-logo.svg");
+    --logo2-bg: url("https://scp-wiki.wikidot.com/local--files/theme:greystyle/foundation-logo.svg");
+    --logo3-bg: url("https://scp-wiki.wikidot.com/local--files/theme:greystyle/foundation-logo.svg");
+
+    --logo-bg-filter: invert(11%) sepia(2%) saturate(4457%) hue-rotate(314deg) brightness(95%) contrast(76%) opacity(20%);
+    --logo-bg-size: 15rem;
+}
+
+.logo1,
+.logo2,
+.logo3 {
+    position: relative;
+}
+
+.logo1::after,
+.logo2::after,
+.logo3::after {
+    content: "";
+    position: absolute;
+    height: 40vw;
+    width: 40vw;
+    top: 50%;
+    left: 50%;
+    margin-top: -20vw;
+    margin-left: -20vw;
+    min-height: 15rem;
+    filter: var(--logo-bg-filter);
+}
+
+.logo1 > *,
+.logo2 > *,
+.logo3 > * {
+    position: relative;
+    z-index: 2;
+}
+
+.logo1::after {
+    background: var(--logo1-bg);
+    background-size: var(--logo-bg-size);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.logo2::after {
+    background: var(--logo2-bg);
+    background-size: var(--logo-bg-size);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.logo3::after {
+    background: var(--logo3-bg);
+    background-size: var(--logo-bg-size);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* Proposal */
+:root {
+    --proposal-logo1: url("https://scp-wiki.wikidot.com/local--files/theme:greystyle/foundation-logo.svg");
+    --proposal-logo2: url("https://scp-wiki.wikidot.com/local--files/theme:greystyle/foundation-logo.svg");
+    --proposal1-logo3: url("https://scp-wiki.wikidot.com/local--files/theme:greystyle/foundation-logo.svg");
+
+    --proposal-logo-filter: invert(11%) sepia(2%) saturate(4457%) hue-rotate(314deg) brightness(95%) contrast(76%);
+    --proposal-logo-size: 15rem;
+}
+
+.proposal-logo1,
+.proposal-logo2,
+.proposal-logo3 {
+    min-height: 15rem;
+    filter: var(--proposal-logo-filter);
+}
+
+.proposal-logo1 {
+    background: var(--proposal-logo1);
+    background-size: var(--proposal-logo-size);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.proposal-logo2 {
+    background: var(--proposal-logo2);
+    background-size: var(--proposal-logo-size);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.proposal-logo3 {
+    background: var(--proposal-logo3);
+    background-size: var(--proposal-logo-size);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.proposal-title {
+    font-size: 2em;
+}
+
+.proposal-subtitle {
+    font-size: 1.5em;
+}
+
+.proposal-title,
+.proposal-subtitle {
+    position: relative;
+    margin: .5rem 1.25rem;
+    margin-bottom: 0;
+    padding: .5rem 1.25rem;
+    padding-bottom: 0;
+    --wght: 700;
+    font-family: var(--title-font);
+    text-align: center;
+    color: rgb(var(--txt-color1));
+}
+
+.proposal-title p,
+.proposal-subtitle p {
+    margin: 0;
+}
+
+.proposal-author {
+font-style: italic;
+text-align: right;
+}
+
+/* Transcript */
+.flank {
+    --wght: 700;
+    text-align: center;
+}
+
+.flank p {
+    margin: 0;
+}
+
+.transcript {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    color: rgb(var(--txt-color1));
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-auto-rows: minmax(1em, auto);
+}
+
+.transcript p {
+    margin: 0;
+}
+
+.sp {
+    border-right: 1px solid rgb(var(--txt-color1));
+    padding: .825em .825em 0 .825em;
+    --wght: 700;
+    text-align: right;
+}
+
+.di {
+    padding: .825em 0 0 .825em;
+}
+
+.ac {
+    padding: .825em 0 0 .825em;
+    font-style: italic;
+}
+
+/* Mobile Correction */
+@media only screen and (max-width: 56.25rem) {
+    .transcript {
+        display: inline;
+    }
+
+    .transcript::after {
+        content: "\000a";
+        white-space: pre;
+    }
+
+    .transcript .sp,
+    .transcript .di,
+    .transcript .ac {
+        display: inline;
+        padding: 0;
+        margin: 0;
+    }
+
+    .sp::before,
+    .di::before,
+    .ac::before {
+        content: "\000a";
+        white-space: pre;
+    }
+
+    .sp {
+        float: left;
+        width: fit-content;
+        border-right: none;
+    }
+
+    .sp p::after {
+        content: ":\00a0"
+    }
+}
+
+/* Linkbox*/
+.linkbox {
+    display: block;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    width: fit-content;
+    overflow: hidden;
+    overflow-wrap: anywhere;
+    margin: .75rem auto;
+    background: rgb(var(--bg-color2));
+    transition: background .25s linear;
+}
+
+.linkbox p {
+    margin: 0;
+}
+
+.linkbox a {
+    display: inline-block;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(var(--txt-color1));
+    font-weight: 700;
+}
+
+.linkbox:hover {
+    color: rgb(var(--txt-color2));
+    background: rgb(var(--bg-color3));
+}
+
+.linkbox a:hover {
+    color: rgb(var(--txt-color2));
+}
+
+/* Mode Changer */
+:root {
+    --mode1-display: inline;
+    --mode2-display: none;
+}
+
+.mode1-changer {
+    display: var(--mode1-display);
+}
+
+.mode2-changer {
+    display: var(--mode2-display);
+}
+
+/* Member Changer */
+.member-changer {
+    display: inline;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.member-changer > .site-member {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+.member-changer .site-member:nth-child(2) {
+    display: none;
+}
+
+[[/code]]
+
+[[code type="css"]]
+/* DARK */
+:root {
+    /* Primary Colors */
+    --accent-color: 197, 38, 50;
+
+    --bg-color1: var(--black-monochrome);
+    --bg-color2: var(--dark-gray-monochrome);
+    --bg-color3: var(--accent-color);
+    --bg-color4: var(--black-monochrome);
+
+    --txt-color1: var(--pale-gray-monochrome);
+    --txt-color2: var(--pale-gray-monochrome);
+    --txt-color3: var(--accent-color);
+    --txt-color4: var(--black-monochrome);
+
+    /* Logo Changes */
+    --logo-filter: invert(61%) sepia(37%) saturate(0%) hue-rotate(195deg) brightness(110%) contrast(119%) opacity(25%);
+
+    /* Fixing the Text Color in a Single Dark Mode Theme Square */
+    --swatch-text-dark: var(--black-monochrome);
+
+    /* Color Table */
+    --table0-txt-color: var(--pale-gray-monochrome);
+    --table1-txt-color: var(--pale-gray-monochrome);
+    --table2-txt-color: var(--pale-gray-monochrome);
+    --table3-txt-color: var(--black-monochrome);
+    --table4-txt-color: var(--pale-gray-monochrome);
+    --table5-txt-color: var(--pale-gray-monochrome);
+    --table6-txt-color: var(--pale-gray-monochrome);
+
+    /* Logo Background */
+    --logo-bg-filter: invert(61%) sepia(37%) saturate(0%) hue-rotate(195deg) brightness(110%) contrast(119%) opacity(25%);
+
+    /* Proposal Logo */
+    --proposal-logo-filter: invert(61%) sepia(37%) saturate(0%) hue-rotate(195deg) brightness(110%) contrast(119%);
+
+    /* Memo */
+    --memo-txt-color: var(--txt-color4);
+    --memo-logo-filter: invert(0%) sepia(55%) saturate(3607%) hue-rotate(44deg) brightness(94%) contrast(89%) opacity(25%);
+
+    /* Mode Changer */
+    --mode1-display: none;
+    --mode2-display: inline;
+}
+
+/* Document */
+.document {
+    background-color: rgb(var(--bg-color2));
+}
+
+.document::before,
+.document::after {
+    background-color: rgb(var(--bg-color2));
+
+[[/code]]
+
+[[code type="css"]]
+#main-content {
+    --body-width-on-desktop: 60vw;
+    --header-width-on-desktop: 60vw;
+}
+
+@media only screen and (max-width: 78.75rem) {
+    .fncon {
+        position: fixed;
+        bottom: 1.25rem;
+        left: calc(20vw - 3.125rem);
+            width: 75%;
+        transition: opacity 0.15s linear var(--fnLinger), left var(--fnTransition) cubic-bezier(.4, 0, .2, 1) var(--fnLinger), visibility 0.01s linear var(--fnInteract);
+    }
+
+    .fnnum:hover + .fncon, .fncon:hover {
+        left: 20vw;
+        transition: opacity 0.15s linear, left var(--fnTransition)  cubic-bezier(.4, 0, .2, 1);
+    }
+}
+[[/code]]
+
+[[code type="css"]]
+/* HIDE TITLE */
+#page-title {
+    display: none !important;
+}
+[[/code]]
+
+[[/collapsible]]
+
+[[/iftags]]
+
+[[include :scp-jp:component:centered-header-bhl]]
+[[include :scp-jp:component:toggle-sidebar-bhl]]
+[[include :scp-jp:component:betterfootnotes]]
+[[include :scp-jp:component:acs-animation]]
+
+[[iftags +テーマ]]
+[[module ListPages  category="fragment" parent="." limit="1" order="created_at" offset="@URL|0"]]
+%%content%%
+[[/module]]
+[[/iftags]]

@@ -1,0 +1,789 @@
+[[iftags +テーマ]]
+[[module CSS]]
+/* HELiX Technologies CSS theme
+By tiredsn0w, 2026
+Licensed under CC BY SA 3.0.
+*/
+
+:root {
+    --alpha: hsl(97,17%,99%);
+    --light-grey: hsl(75, 2%, 95%);
+    --grey: hsl(0,0%,87%);
+    --black: hsl(70, 0%, 7%);
+    --delta: hsl(200, 100%, 37%);
+    --delta-strong: hsl(220, 100%, 20%);
+    --gamma: hsl(60,66%,85%);
+    --gamma-strong: hsl(27,100%,45%);
+}
+
+h1, #page-title, .meta-title{color: var(--delta);}
+h2{color: var(--delta-strong);}
+#page-title, .meta-title{font-weight: bold;}
+h2, h3, h4, h5, h6{letter-spacing: 0px; word-spacing: 0px;}
+h1, h2, h3, h4, h5, h6{font-weight:bold;}
+
+body {
+  color: var(--black);
+  background-color: var(--light-grey);
+}
+
+/* --------------- HEADER -------*/
+
+div#container-wrap{
+     background:url(https://scp-wiki.wdfiles.com/local--files/theme:helix/HELiXthemeHeader.png) 0 0 repeat-x}
+
+#header {background: none;}
+
+#header::before {
+    display:block;
+    position: absolute;
+    width: min(292px, 75%);
+    height: 100px;
+    z-index: -1;
+    top: 19%;
+    left: 9%;
+    content: "";
+    background: url("https://scp-wiki.wdfiles.com/local--files/theme:helix/HELiX.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#header h1 a {
+  background: transparent;
+  text-shadow: none;
+  line-height: 0px;
+  max-height: 0px;
+  color: transparent;
+}
+
+#header h2 span {
+  background: transparent;
+  text-shadow: none;
+  line-height: 0px;
+  max-height: 0px;
+  color: transparent;
+}
+
+#header h2 span::before {content: " ";}
+
+/* --------- CUSTOM BOXES -----*/
+
+ blockquote, div.blockquote {
+  background: var(--alpha);
+  border: 3px solid var(--grey);
+}
+
+div.helix-alt {
+  padding: 9px;
+  border: 4px solid var(--black);
+  margin: 0.2rem;
+  background: var(--alpha);
+}
+
+div.helix-log {
+  padding: 9px;
+  margin: 1rem 3rem;
+  background: var(--alpha);
+  border: 4px solid var(--black);
+}
+
+div.helix-warning {
+  padding: 1rem;
+  border: 3px solid var(--gamma-strong);
+  margin: 1rem 3rem;
+  background: var(--gamma);
+  font-weight: bold;
+  color: var(--gamma-strong);
+}
+
+div.helix-classified {
+  padding: 1rem;
+  border: 1px solid;
+  margin: 1rem 3rem;
+  background: var(--black);
+  font-weight: bold;
+  color: var(--alpha);
+}
+
+
+/* --------------- TOP MENU ---------*/
+ #top-bar ul li ul{border: solid 1px var(--black);}
+ #top-bar a{color: var(--alpha);}
+
+ #top-bar ul .sfhover a,
+ #top-bar ul li:hover a{
+     color: var(--black);
+     background: var(--alpha);
+}
+
+ #login-status ul a{color: var(--black);}
+ #my-account,#account-topbutton{color: var(--black);}
+
+/* --------------- SIDE MENU ---------*/
+ #side-bar{background: none;}
+
+ #side-bar .side-block{
+     background: var(--gamma);
+     border: 3px solid var(--black);
+     border-radius: 0;
+     box-shadow: none;
+}
+
+ #side-bar .heading{color: var(--black);border-bottom: 1px solid var(--black);}
+
+ #side-bar div.menu-item.inactive a{color: var(--black);}
+ #side-bar div.menu-item .sub-text{color: var(--black);}
+
+ #side-bar .collapsible-block-folded{background: none;}
+ #side-bar .collapsible-block-unfolded-link{border-bottom: solid 1px var(--black);}
+ #side-bar .collapsible-block-unfolded-link .collapsible-block-link{color: var(--black);}
+
+ #side-bar a{color: var(--gamma-strong);}
+
+/* --------------- SEARCH BAR ---------*/
+ #search-top-box-input{
+     background-color: var(--black);
+     border: solid 1px var(--black);
+     border-radius: 0;
+}
+
+ #search-top-box-input:hover,
+ #search-top-box-input:focus{
+     background: var(--delta);
+     border: solid 1px var(--light-grey);
+     border-radius: 0;
+}
+
+ #search-top-box-form input[type="submit"]{
+     color: var(--light-grey);
+     background: var(--black);
+     border: solid 1px var(--light-grey);
+     border-radius: 0;
+     box-shadow: none;
+}
+
+ #search-top-box-form input[type="submit"]:hover,
+ #search-top-box-form input[type="submit"]:focus{
+     color: var(--gamma-strong);
+     background: var(--gamma);
+     border: solid 1px var(--gamma-strong);
+     border-radius: 0;
+     box-shadow: none;
+}
+
+
+/* --------------- RATE/INFO BOX ---------*/
+
+ .page-rate-widget-box{
+     border: none;
+     border-radius: 0;
+     box-shadow: none;
+}
+
+ div.page-rate-widget-box .rate-points{
+     background-color: var(--black);
+     border: solid 1px var(--black);
+     border-radius: 0;
+}
+
+ .page-rate-widget-box .rateup,
+ .page-rate-widget-box .ratedown{
+     background-color: var(--alpha);
+     border-top: solid 1px var(--black);
+     border-bottom: solid 1px var(--black);
+}
+
+ .page-rate-widget-box .rateup a,
+ .page-rate-widget-box .ratedown a{color: var(--black);}
+
+ .page-rate-widget-box .rateup a:hover,
+ .page-rate-widget-box .ratedown a:hover{color: var(--alpha);background: var(--black);}
+
+ .page-rate-widget-box .cancel{
+     background-color: var(--black);
+     border: solid 1px var(--black);
+     border-left: 0;
+     border-radius: 0;
+     font-weight:bold;
+}
+
+ .page-rate-widget-box .cancel a{color: var(--alpha);}
+ .page-rate-widget-box .cancel a:hover{
+     color: var(--alpha);
+     background: var(--delta);
+     border-radius: 0;
+}
+
+ div.rate-box-with-credit-button,div.creditButtonStandalone p a{
+     background-color: var(--black);
+     border-color: var(--black);
+     border-radius: 0;
+     box-shadow: none;
+}
+
+ div.creditButton p a,div.creditButtonStandalone p a {color: var(--alpha);text-decoration:none;}
+ div.creditButtonStandalone p a:hover{color: var(--alpha);}
+
+ div.modalbox {
+    background-color: var(--alpha);
+    background:linear-gradient(var(--alpha) 51px,var(--alpha) 51px,var(--alpha));
+    border: var(--black) solid 5px;
+    border-radius: 0px;
+    box-shadow: 0 0px 0px;
+    padding: 1px;
+}
+
+/* --------- MODIFIED IMAGEBLOCK -----*/
+
+ .scp-image-block{
+     box-shadow: none;
+     background-color: var(--alpha);
+     border: solid 2px var(--black);
+}
+
+ .scp-image-block .scp-image-caption{background-color: var(--alpha);}
+ .scp-image-caption{margin: 0;border-top: solid 1px var(--black);}
+
+/* --------------- TABVIEW ----------- */
+
+ .yui-navset .yui-content{background-color: var(--alpha);}
+
+ .yui-navset .yui-nav a,
+ .yui-navset .yui-navset-top .yui-navset-left .yui-navset-right .yui-nav a{
+     color: var(--black);
+     background-color: var(--grey);
+     border: solid 2px var(--black);
+     background-image: none;
+     border-bottom: none;
+}
+
+ .yui-navset .yui-nav .selected a,
+ .yui-navset .yui-nav .selected a:focus,
+ .yui-navset .yui-nav .selected a:hover{
+     color: var(--grey);
+     background: var(--black);
+     color: var(--alpha);
+     font-weight: bold;
+}
+
+ .yui-navset .yui-nav a:hover,
+ .yui-navset .yui-nav a:focus{
+     background: var(--grey);
+}
+
+ .yui-navset .yui-navset-top .yui-nav{
+     border-color: var(--black);
+}
+
+/* --------------- LOGO CONTAINER FROM AKIVA COUNTER OPERATING MANUAL ---------*/
+
+.logo-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-self: flex-end;
+    gap: 1rem 1rem;
+}
+
+/* --------- SMALL FIXES/TWEAKS -----*/
+
+.hovertip{max-width: 500px;}
+
+a.collapsible-block-link{font-weight: bold; color: var(--delta);}
+
+hr {height:3px;border-width:0;color:var(--black);background-color:var(--black);margin:-0.4rem;}
+
+#main-content .page-tags {margin-top: 3em;}
+#main-content .page-tags span {
+  border-color: var(--delta);
+  margin-left: -4.7em;
+  padding-left: 4.7em;
+}
+
+ table.wiki-content-table{background-color: var(--alpha);}
+ table.wiki-content-table th{
+     color: var(--alpha);
+     background-color: var(--black);
+}
+
+/* --------- RECOLORING LINKS-----*/
+
+ a{color: var(--delta);}
+ a:visited{color:var(--delta-strong);}
+ a.newpage{color var(--gamma.strong);}
+ a.footnoteref,a.footnoteref:before{color: var(--delta);}
+
+[[/module]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** HELiX Technologiesテーマ
+**翻訳責任者:** SCP-JP
+**翻訳年:** 2026
+**原題:** HELiX Technologies Theme
+**著作権者:** tiredsn0w
+**作成年:** 2026
+**初訳時参照リビジョン:** 11
+**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:helix ソース]
+[[include :scp-jp:credit:end-preview]]
+
+[[div class="helix-log"]]
++++ HELiX Technologies | LOGS > PUBLIC_LOGS > THEME > INFORMATION
+------
+これはHELiX Technologies向けのCSSテーマです。HELiX Technologiesは、ケプラー22-bに拠点を置く、地球外生化学・遺伝子工学のGoIです。ケプラー22-bは、HELiX TechnologiesとSGC部門の共同プロジェクトである[*https://scp-wiki.wikidot.com/scp-6118 SCP-6118]の起源の地として最もよく知られています。
+
+HELiX Technologiesテーマ（CSS）は[[*user tiredsn0w]]が作成し、ロゴはtiredsn0wと匿名の非ウィキ人員によって作成されました。含まれる画像とテキストはすべてCC BY-SA 3.0です。
+
+このテーマは[[*user croquembouche]]の[*https://scp-wiki.wikidot.com/component:croqstyle Croqstyle]と[[*user Lt Flops]]の[*https://scp-wiki.wikidot.com/theme:pataphysics Pataphysicsテーマ]に部分的に着想を得ています。ヘッダーはPataphysicsヘッダーを編集したものです。コードの一部は[[*user Jerden]]の[*https://scp-wiki.wikidot.com/akiva-counter-operating-instructions Akiva Counter Operating Instructions]から借用しています。
+
+HELiX Technologiesテーマ（CSS）は、GoIフォーマット、Tale、HELiX関連の文書での使用に適しています。これはSigma-10ベースのテーマです。
+[[/div]]
+
+[[div class="helix-log"]]
++++ HELiX Technologies | LOGS > PUBLIC_LOGS > THEME > IMPLEMENTATION
+----
+このテーマを使うには、ページの先頭に以下を記述してください:
+[[div class="code"]]
+@@[[include theme:helix-jp]]@@
+[[/div]]
+[[/div]]
+
+[[div class="helix-log"]]
++++ HELiX Technologies | LOGS > PUBLIC_LOGS > THEME > EXAMPLES
+----
+以下はフォーマットの例です。
+[[/div]]
+----
+@@ @@
+
++ カスタム引用ブロック
+
+[[div class="blockquote"]]
+これはおなじみの、フレンドリーな引用ブロックをHELiXテーマに合わせて塗り直したものです。使い方はもうご存知でしょう。
+[[/div]]
+
+[[div class="helix-alt"]]
+これは代替スタイルの引用ブロックです。次のように使います:
+[[div class="helix-alt"]]
+@@[[div class="helix-alt"]]@@
+@@テキストをここに@@
+@@[[/div]]@@
+[[/div]]
+[[/div]]
+
+[[div class="helix-log"]]
++++ HELiX Technologies | LOGS > PUBLIC_LOGS > THEME > INFORMATION > HELiXquoteblockUtilization
+----
+これは標準的なHELiXファイル、通信、ログ用の公式スタイルの引用ブロックです。次のように使います:
+[[div class="helix-log"]]
+@@[[div class="helix-log"]]@@
+@@+++ HELiX Technologies | DIR > DIR > FOLDER > FILE@@
+@@----@@
+@@テキストをここに@@
+@@[[/div]]@@
+[[/div]]
+[[/div]]
+
+[[div class="helix-warning"]]
+これは、本当にそれをするつもりかどうか尋ねる警告・告知や、あなたがそれをしたあとに施設が爆発しつつあることを知らせるためのものです。次のように使います:
+[[div class="helix-warning"]]
+@@[[div class="helix-warning"]]@@
+@@テキストをここに@@
+@@[[/div]]@@
+[[/div]]
+[[/div]]
+
+
+[[div class="helix-classified"]]
+これは反転した配色で、削除されたファイルや秘密のファイルに伴う不吉な雰囲気を演出するものです。次のように使います:
+[[div class="helix-classified"]]
+@@[[div class="helix-classified"]]@@
+@@テキストをここに@@
+@@[[/div]]@@
+[[/div]]
+[[/div]]
+
+----
+@@ @@
+
++ その他
+
+
+[[div class="helix-log"]]
+
+[[div class="logo-container"]]
+[[image https://scp-wiki.wdfiles.com/local--files/theme%3Ahelix/DR_logo_2.png width="250px"]]
+[[image https://scp-wiki.wdfiles.com/local--files/theme%3Ahelix/Polaris_logo.png width="220px"]]
+[[image https://scp-wiki.wdfiles.com/local--files/theme%3Ahelix/HELiX_2.png width="200px"]]
+[[/div]]
+これはロゴコンテナの例で、画像を横に並べることができます——複数の団体が共同で作成する内部文書、例えばHELiX TechnologiesとSGC部門の合同R&Dプロジェクトの文書や、特殊作戦部門での実装に焦点を当てたProject DEADRINGER報告書などに便利です。このコードは[[*user Jerden]]の[*https://scp-wiki.wikidot.com/akiva-counter-operating-instructions Akiva Counter Operating Instructions]から借用しました。
+[[/div]]
+
+
+[[include :scp-jp:component:image-block | name= https://scp-wiki.wdfiles.com/local--files/theme%3Ahelix/DR_logo.png | caption=The Deadringerロゴ。改変されたimage-blockコンポーネントの使用例です。 | width=150px ]]
+
+[[div class="blockquote"]]
+@@[[div class="logo-container"]]@@
+@@[[image https://scp-wiki.wdfiles.com/local--files/theme%3Ahelix/DR_logo_2.png width="250px"]]@@
+@@[[image https://scp-wiki.wdfiles.com/local--files/theme%3Ahelix/Polaris_logo.png width="220px"]]@@
+@@[[image https://scp-wiki.wdfiles.com/local--files/theme%3Ahelix/HELiX_2.png width="200px"]]@@
+@@[[/div]]@@
+@@これはロゴコンテナの例で、画像を横に並べることができます——複数の団体が共同で作成する内部文書、例えばHELiX TechnologiesとSGC部門の合同R&Dプロジェクトの文書や、特殊作戦部門での実装に焦点を当てたProject DEADRINGER報告書などに便利です。このコードは[[*user Jerden]]の[*https://scp-wiki.wikidot.com/akiva-counter-operating-instructions Akiva Counter Operating Instructions]から借用しました。@@
+[[/div]]
+
+[[tabview]]
+[[tab タブ 1]]
+これはタブです。どのテーマもタブを見せてくれます。タブの使用は古いWikiの時代にはもっと一般的だったようで、これは遺物のようなものとして残っています。
+[[/tab]]
+[[tab タブ 2]]
+最初のタブで足りなかったあなたのための、もう一つのタブです。
+[[/tab]]
+[[/tabview]]
+
+||~ テーブルヘッダー ||~ 2つ目のテーブルヘッダー||
+|| セルの内容 || セルの内容その2||
+
++ 第1見出し
+++ 第2見出し
++++ 第3見出し
+++++ 第4見出し
++++++ 第5見出し
+++++++ 第6見出し
+
+[[collapsible show="+ 折りたたみを開く"]]
+折りたたみの中のテキスト
+[[/collapsible]]
+
+[https://scp-wiki.wikidot.com/tiredsn0w ページへのリンク] | [https://scp-wiki.wikidot.com/random:random-page ランダムページへのリンク]
+
+[[=]]
++ ソースコード
+[[collapsible show="+ 表示" hide="- 隠す"]]
+[[<]]
+[[code type="CSS"]]
+/* HELiX Technologies CSS theme
+By tiredsn0w, 2026
+Licensed under CC BY SA 3.0.
+*/
+
+:root {
+    --alpha: hsl(97,17%,99%);
+    --light-grey: hsl(75, 2%, 95%);
+    --grey: hsl(0,0%,87%);
+    --black: hsl(70, 0%, 7%);
+    --delta: hsl(200, 100%, 37%);
+    --delta-strong: hsl(220, 100%, 20%);
+    --gamma: hsl(60,66%,85%);
+    --gamma-strong: hsl(27,100%,45%);
+}
+
+h1, #page-title, .meta-title{color: var(--delta);}
+h2{color: var(--delta-strong);}
+#page-title, .meta-title{font-weight: bold;}
+h2, h3, h4, h5, h6{letter-spacing: 0px; word-spacing: 0px;}
+h1, h2, h3, h4, h5, h6{font-weight:bold;}
+
+body {
+  color: var(--black);
+  background-color: var(--light-grey);
+}
+
+/* --------------- HEADER -------*/
+
+div#container-wrap{
+     background:url(https://scp-wiki.wdfiles.com/local--files/theme:helix/HELiXthemeHeader.png) 0 0 repeat-x}
+
+#header {background: none;}
+
+#header::before {
+    display:block;
+    position: absolute;
+    width: min(292px, 75%);
+    height: 100px;
+    z-index: -1;
+    top: 19%;
+    left: 9%;
+    content: "";
+    background: url("https://scp-wiki.wdfiles.com/local--files/theme:helix/HELiX.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#header h1 a {
+  background: transparent;
+  text-shadow: none;
+  line-height: 0px;
+  max-height: 0px;
+  color: transparent;
+}
+
+#header h2 span {
+  background: transparent;
+  text-shadow: none;
+  line-height: 0px;
+  max-height: 0px;
+  color: transparent;
+}
+
+#header h2 span::before {content: " ";}
+
+/* --------- CUSTOM BOXES -----*/
+
+ blockquote, div.blockquote {
+  background: var(--alpha);
+  border: 3px solid var(--grey);
+}
+
+div.helix-alt {
+  padding: 9px;
+  border: 4px solid var(--black);
+  margin: 0.2rem;
+  background: var(--alpha);
+}
+
+div.helix-log {
+  padding: 9px;
+  margin: 1rem 3rem;
+  background: var(--alpha);
+  border: 4px solid var(--black);
+}
+
+div.helix-warning {
+  padding: 1rem;
+  border: 3px solid var(--gamma-strong);
+  margin: 1rem 3rem;
+  background: var(--gamma);
+  font-weight: bold;
+  color: var(--gamma-strong);
+}
+
+div.helix-classified {
+  padding: 1rem;
+  border: 1px solid;
+  margin: 1rem 3rem;
+  background: var(--black);
+  font-weight: bold;
+  color: var(--alpha);
+}
+
+
+/* --------------- TOP MENU ---------*/
+ #top-bar ul li ul{border: solid 1px var(--black);}
+ #top-bar a{color: var(--alpha);}
+
+ #top-bar ul .sfhover a,
+ #top-bar ul li:hover a{
+     color: var(--black);
+     background: var(--alpha);
+}
+
+ #login-status ul a{color: var(--black);}
+ #my-account,#account-topbutton{color: var(--black);}
+
+/* --------------- SIDE MENU ---------*/
+ #side-bar{background: none;}
+
+ #side-bar .side-block{
+     background: var(--gamma);
+     border: 3px solid var(--black);
+     border-radius: 0;
+     box-shadow: none;
+}
+
+ #side-bar .heading{color: var(--black);border-bottom: 1px solid var(--black);}
+
+ #side-bar div.menu-item.inactive a{color: var(--black);}
+ #side-bar div.menu-item .sub-text{color: var(--black);}
+
+ #side-bar .collapsible-block-folded{background: none;}
+ #side-bar .collapsible-block-unfolded-link{border-bottom: solid 1px var(--black);}
+ #side-bar .collapsible-block-unfolded-link .collapsible-block-link{color: var(--black);}
+
+ #side-bar a{color: var(--gamma-strong);}
+
+/* --------------- SEARCH BAR ---------*/
+ #search-top-box-input{
+     background-color: var(--black);
+     border: solid 1px var(--black);
+     border-radius: 0;
+}
+
+ #search-top-box-input:hover,
+ #search-top-box-input:focus{
+     background: var(--delta);
+     border: solid 1px var(--light-grey);
+     border-radius: 0;
+}
+
+ #search-top-box-form input[type="submit"]{
+     color: var(--light-grey);
+     background: var(--black);
+     border: solid 1px var(--light-grey);
+     border-radius: 0;
+     box-shadow: none;
+}
+
+ #search-top-box-form input[type="submit"]:hover,
+ #search-top-box-form input[type="submit"]:focus{
+     color: var(--gamma-strong);
+     background: var(--gamma);
+     border: solid 1px var(--gamma-strong);
+     border-radius: 0;
+     box-shadow: none;
+}
+
+
+/* --------------- RATE/INFO BOX ---------*/
+
+ .page-rate-widget-box{
+     border: none;
+     border-radius: 0;
+     box-shadow: none;
+}
+
+ div.page-rate-widget-box .rate-points{
+     background-color: var(--black);
+     border: solid 1px var(--black);
+     border-radius: 0;
+}
+
+ .page-rate-widget-box .rateup,
+ .page-rate-widget-box .ratedown{
+     background-color: var(--alpha);
+     border-top: solid 1px var(--black);
+     border-bottom: solid 1px var(--black);
+}
+
+ .page-rate-widget-box .rateup a,
+ .page-rate-widget-box .ratedown a{color: var(--black);}
+
+ .page-rate-widget-box .rateup a:hover,
+ .page-rate-widget-box .ratedown a:hover{color: var(--alpha);background: var(--black);}
+
+ .page-rate-widget-box .cancel{
+     background-color: var(--black);
+     border: solid 1px var(--black);
+     border-left: 0;
+     border-radius: 0;
+     font-weight:bold;
+}
+
+ .page-rate-widget-box .cancel a{color: var(--alpha);}
+ .page-rate-widget-box .cancel a:hover{
+     color: var(--alpha);
+     background: var(--delta);
+     border-radius: 0;
+}
+
+ div.rate-box-with-credit-button,div.creditButtonStandalone p a{
+     background-color: var(--black);
+     border-color: var(--black);
+     border-radius: 0;
+     box-shadow: none;
+}
+
+ div.creditButton p a,div.creditButtonStandalone p a {color: var(--alpha);text-decoration:none;}
+ div.creditButtonStandalone p a:hover{color: var(--alpha);}
+
+ div.modalbox {
+    background-color: var(--alpha);
+    background:linear-gradient(var(--alpha) 51px,var(--alpha) 51px,var(--alpha));
+    border: var(--black) solid 5px;
+    border-radius: 0px;
+    box-shadow: 0 0px 0px;
+    padding: 1px;
+}
+
+/* --------- MODIFIED IMAGEBLOCK -----*/
+
+ .scp-image-block{
+     box-shadow: none;
+     background-color: var(--alpha);
+     border: solid 2px var(--black);
+}
+
+ .scp-image-block .scp-image-caption{background-color: var(--alpha);}
+ .scp-image-caption{margin: 0;border-top: solid 1px var(--black);}
+
+/* --------------- TABVIEW ----------- */
+
+ .yui-navset .yui-content{background-color: var(--alpha);}
+
+ .yui-navset .yui-nav a,
+ .yui-navset .yui-navset-top .yui-navset-left .yui-navset-right .yui-nav a{
+     color: var(--black);
+     background-color: var(--grey);
+     border: solid 2px var(--black);
+     background-image: none;
+     border-bottom: none;
+}
+
+ .yui-navset .yui-nav .selected a,
+ .yui-navset .yui-nav .selected a:focus,
+ .yui-navset .yui-nav .selected a:hover{
+     color: var(--grey);
+     background: var(--black);
+     color: var(--alpha);
+     font-weight: bold;
+}
+
+ .yui-navset .yui-nav a:hover,
+ .yui-navset .yui-nav a:focus{
+     background: var(--grey);
+}
+
+ .yui-navset .yui-navset-top .yui-nav{
+     border-color: var(--black);
+}
+
+/* --------------- LOGO CONTAINER FROM AKIVA COUNTER OPERATING MANUAL ---------*/
+
+.logo-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-self: flex-end;
+    gap: 1rem 1rem;
+}
+
+/* --------- SMALL FIXES/TWEAKS -----*/
+
+.hovertip{max-width: 500px;}
+
+a.collapsible-block-link{font-weight: bold; color: var(--delta);}
+
+hr {height:3px;border-width:0;color:var(--black);background-color:var(--black);margin:-0.4rem;}
+
+#main-content .page-tags {margin-top: 3em;}
+#main-content .page-tags span {
+  border-color: var(--delta);
+  margin-left: -4.7em;
+  padding-left: 4.7em;
+}
+
+ table.wiki-content-table{background-color: var(--alpha);}
+ table.wiki-content-table th{
+     color: var(--alpha);
+     background-color: var(--black);
+}
+
+/* --------- RECOLORING LINKS-----*/
+
+ a{color: var(--delta);}
+ a:visited{color:var(--delta-strong);}
+ a.newpage{color var(--gamma.strong);}
+ a.footnoteref,a.footnoteref:before{color: var(--delta);}
+
+[[/code]]
+[[/<]]
+[[/collapsible]]
+[[/=]]
+[[=]]
+[[div class="footer-wikiwalk-nav"]]
+<< [*https://scp-wiki.wikidot.com/altitudes-hub Altitudes Hub] | HELiX Technologiesテーマ | State of Keplerテーマ >>
+[[/div]]
+[[/=]]
+[[/iftags]]
