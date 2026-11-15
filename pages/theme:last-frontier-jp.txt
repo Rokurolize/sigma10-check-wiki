@@ -1,0 +1,894 @@
+[[module CSS]]
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Alast-frontier-jp/1');
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Alast-frontier-jp/1
+]]
+
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** ラスト・フロンティア テーマ
+**翻訳責任者:** SCP-JP
+**翻訳年:** 2026
+**原題:** Last Frontier Theme
+**著作権者:** [[*user Vivarium]], [[*user Yossipossi]]
+**作成年:** 2021
+**初訳時参照リビジョン:** 41
+**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:last-frontier Last Frontier Theme]
+[[include :scp-jp:credit:end-preview]]
+
+[[=]]
+こんにちは！他の作品も読んでみてください……読まなくても構いません！
+私があなたの上司というわけではないので、好きにしてください！
+
+**[http://scp-wiki.wikidot.com/vivarium-s-word-hole Vivariumの作品置き場（英語版）]**
+[[/=]]
+@@ @@
+@@ @@
+@@ @@
++++ [[*user Vivarium]]が、[[*user Yossipossi]]のShattered Thoughtsテーマを改変したもので、[[[into-the-void-hub|Into the Voidハブ]]]とその設定の記事で使用するためのテーマです。
+@@ @@
++++ このテーマをページに読み込むには、ページ内の好きな場所に以下のテキストを置いてください:
+@@ @@
+@@ @@
+@@ @@
+++ [[span style="padding: 1px; margin-left: 10px;"]]{{@@[[include :scp-jp:theme:last-frontier]]@@}}[[/span]]
+@@ @@
+@@ @@
+@@ @@
++++ 以下は、テーマページによくあるお決まりの説明です。
+
+@@ @@
+@@ @@
+@@ @@
+
+[[include component:image-block name=https://sigma10-jp-test.wdfiles.com/local--files/theme%3Alast-frontier-jp/binary-star-loop-blink.gif|caption=見てください、よく動くこと。]]
+
++ 見出し1
+
+++ 見出し2
+
++++ 見出し3
+
+++++ 見出し4
+
++++++ 見出し5
+
+++++++ 見出し6
+
+//これは見本用のダミーテキストです。//リンクは[[[into-the-void-hub|このように]]]書けます。**強調**や//斜体//、//**その組み合わせ**//も使えます。脚注はこのようにつきます[[footnote]]脚注です。[[/footnote]]。以降もダミーテキストが続きます。見た目の確認のための文章なので、内容に意味はありません。
+
+[[collapsible show="折りたたみ！" hide="~ 折りたたみを閉じる ~"]]
+
+[[/collapsible]]
+
+
+
+> 引用ブロックです！
+>
+>> もうひとつの引用ブロック！
+>>
+>>> なんてこった、また引用ブロック！
+>>>
+>>>> もうやめて……お願い！
+@@ @@
+[[tabview]]
+[[tab 内容のあるタブ]]
+
+言葉
+
+[[/tab]]
+[[tab 空のタブ]]
+
+[[/tab]]
+[[tab 長い内容のタブ]]
+言葉がたくさん
+
+言葉がたくさん
+
+言葉がたくさん
+
+言葉がたくさん
+
+言葉がたくさん
+
+言葉がたくさん
+
+言葉がたくさん
+
+言葉がたくさん
+
+言葉がたくさん
+
+言葉がたくさん
+
+[[/tab]]
+[[tab タブの中に色々あるタブ]]
+
++ タブの中の見出し
+
++++ タブの中の見出し、でも小さい
+
+テキスト — [https://scp-wiki.wikidot.com/into-the-void-hub リンク]
+
+----
+
+> 引用その1
+>> （引用その2）
+
+[[/tab]]
+[[/tabview]]
+@@ @@
+||~ テーブル ||~ の ||
+|| 作り方を || ご ||
+|| 存じで？！ ||
+@@ @@
+
+
+
+@@ @@
+@@ @@
+
+
+
++ ソースコード
+
+@@ @@
+
+[[collapsible show="> コードを表示" hide="> コードを閉じる"]]
+[[code type="css"]]
+/*
+    Last Frontier Theme
+    [2021 Wikidot Theme]
+    Created by Vivarium
+    Based on Shattered Thoughts Theme created by Yossipossi.
+    Ported for SCP-JP (theme:last-frontier rev 41).
+    The base theme (Shattered Thoughts, rev 34) is not on SCP-JP, so its CSS is merged in ahead of
+    the variant: base first, then the variant's overrides, exactly as the original page includes
+    :scp-wiki:theme:shattered-thoughts before its own CSS.
+*/
+
+/* 日本語フォント (JP localization) */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+/* ===================== base: Shattered Thoughts ===================== */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    background-color: #363940;
+    color: #ffffff;
+    font-family: 'Open Sans', "Noto Sans JP", sans-serif;
+}
+
+#content-wrap {
+    text-shadow: 0.0625rem 0.0625rem 0.0625rem #000000;
+}
+
+/* -=- HEADER -=- */
+
+#header {
+    background-image: none;
+    padding-bottom: 1.875rem;
+}
+ 
+#header h1 a span, 
+#header h2 span {
+    display: none;
+}
+
+#header h1 a::before {
+    color: #ffffff;
+    content: "Shattered Thoughts";
+    font-family: 'Open Sans', "Noto Sans JP", sans-serif;
+    font-size: 2.3rem;
+    text-shadow: 0rem 0rem 0.3125rem #000000;
+}
+
+#header h2::before {
+    color: #ffffff;
+    content: "Broken Minds";
+    font-family: 'Open Sans', "Noto Sans JP", sans-serif;
+    font-size: 0.9rem;
+    font-style: italic;
+    font-weight: bold;
+    margin-left: 2.5rem;
+    position: relative;
+    top: 0.625rem;
+}
+
+/* -=- HEADER BACKGROUND -=- */
+
+div#container-wrap {
+    background: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Alast-frontier-jp/st-background.png) top left repeat-x;
+    background-size: 100%;
+}
+
+/* -=- LINKS -=- */
+
+a, a.newpage {
+    color: #0eadf7;
+}
+
+a:visited {
+    color: #2f96ff;
+}
+
+/* -=- BLOCKQUOTE -=- */
+
+div.blockquote,
+blockquote {
+    background: rgba(9, 0, 135, 0.11);
+    border: 0.125rem dotted #a0c7ff;
+}
+
+/* -=- OWINDOWS -=- */
+
+.owindow, 
+.owindow h1, 
+.owindow .button-bar a {
+    color: #000000;
+    text-shadow: none;
+}
+
+/* This simply changed the karma bar colors in that user info pop-up menu. No functional purpose besides it looks neat, really. */
+.modal-body td img[src*="userkarma.php"] {
+    filter: hue-rotate(150deg);
+}
+
+.owindow ::selection {
+    background: #cfeaff;
+}
+
+/* -=- RATING MODULE -=- */
+
+.page-rate-widget-box {
+    box-shadow: 0.0625rem 0.0625rem 0.1875rem #000000;
+    margin-top: 0.625rem;
+}
+
+.page-rate-widget-box .rate-points, 
+.page-rate-widget-box > *,
+.rate-box-with-credit-button {
+    background-color: rgba(0, 0, 132, 0.4) !important;
+    border: none !important;
+}
+
+.page-rate-widget-box .rateup a, 
+.page-rate-widget-box .ratedown a, 
+.page-rate-widget-box .cancel a {
+    background: transparent;
+    color: #ffffff;
+    transition-duration: 1s;
+}
+
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover,
+.page-rate-widget-box .cancel a:hover {
+    background: rgba(226, 238, 255, 0.1);
+    transition-duration: 1s;
+}
+
+/* For the info module on some pages. */
+.modalbox {
+    text-shadow: none;
+    color: #000000;
+}
+
+/* -=- PAGE TITLE AND H1 -=- */
+
+#page-content h1, 
+#page-title, 
+#action-area h1 {
+    color: #e0ebff;
+}
+
+#page-title, 
+#action-area h1 {
+    margin: auto;
+    text-align: center;
+}
+
+/* -=- SEARCH BAR -=- */
+
+#search-top-box-input, 
+#search-top-box-input:hover, 
+#search-top-box-input:focus {
+    background-color: #00235e;
+    border-color: #333333;
+    border-radius: 0.3125rem;
+    color: #3f87ff;
+    opacity: 0.8;
+    padding: 0.125rem;
+}
+
+#search-top-box-form input[type=submit],
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+    background-color: #002970;
+    border: none;
+    border-radius: 0rem;
+    color: #ffffff;
+    background-image: none;
+}
+
+/* -=- TOP BAR -=- */
+
+#top-bar {
+    background: linear-gradient(to right, transparent 60%, #0b1d51 85%, transparent 100%);
+    padding-right: 3.125rem;
+}
+
+#top-bar ul li a {
+    border: none;
+    color: #4bb1ff;
+}
+
+#top-bar ul li:hover a, 
+#top-bar ul li:hover ul li a {
+    background: rgba(0, 85, 155, 0.9);
+    border: none;
+    color: #ffffff;
+}
+
+#top-bar ul li:hover a:hover {
+    background: #00559b;
+    color: #e6e6e6;
+}
+
+#top-bar ul li:hover ul li a {
+    padding-bottom: 0.0938rem;
+    padding-top: 0.0938rem;
+}
+
+#top-bar ul li ul {
+    border: 0.0625rem solid #2477ac;
+}
+
+#top-bar .open-menu a {
+    background-color: #e4e9ff;
+    border-color: #6677a8;
+    color: #6677a8;
+}
+
+/* -=- SIDEBAR -=- */
+
+#side-bar .heading {
+     color: #cce7ff;
+     font-size: 130%;
+     border-color: #000000;
+}
+
+#side-bar div.menu-item img { 
+    background: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Alast-frontier-jp/st-diamondblue.png");
+    box-sizing: border-box;
+    padding-left: 0.8125rem;
+}
+
+#side-bar div.side-block, 
+#side-bar .side-block.media, 
+#side-bar .side-block.resources {
+    background: #494c56;
+    border: 0.3125rem double #1d2124;
+    box-shadow: 0 0.125rem 0.375rem #1d2124;
+    opacity: 0.8;
+    text-shadow: 0.0625rem 0.0625rem 0.0625rem #000000;
+}
+
+#side-bar a,
+#side-bar a:visited {
+    color: #00c2ff;
+}
+
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link,
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link:hover {
+    color: #cce7ff;
+}
+
+#side-bar .collapsible-block-unfolded-link {
+    border-bottom: solid 1px #000000;
+}
+
+#interwiki .side-block {
+    background: #494c56;
+    border: 0.3125rem double #1d2124;
+    box-shadow: 0 0.125rem 0.375rem #1d2124;
+    opacity: 0.8;
+    text-shadow: 0.0625rem 0.0625rem 0.0625rem #000000;
+}
+
+
+#interwiki .side-block .heading {
+     color: #cce7ff;
+     font-size: 130%;
+     border-color: #000000;
+}
+
+#interwiki .side-block .menu-item a,
+#interwiki .side-block .menu-item a:visited {
+    color: #00c2ff;
+}
+
+#interwiki .side-block .menu-item img { 
+    background: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Alast-frontier-jp/st-diamondblue.png");
+    box-sizing: border-box;
+    padding-left: 0.8125rem;
+}
+
+/* -=- TABBERS -=- */
+
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a:focus,
+.yui-navset .yui-nav .selected a:hover {
+    background-color: rgb(69, 171, 249, 0.7);
+    background-image: none;
+    border: none;
+}
+ 
+.yui-navset .yui-nav a,
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:focus {
+    background-color: #0074ff4f;
+    background-image: none;
+    border: none;
+    color: #ffffff;
+}
+
+.yui-navset .yui-content {
+    background: rgba(9, 0, 135, 0.11);
+    border: 0.125rem dotted #5878b2;
+}
+
+.yui-navset .yui-nav {
+    border: none;
+    padding-bottom: 0.0625rem;
+}
+
+.yui-navset .yui-nav a em {
+    border: none;
+}
+
+/* -=- USER INFO -=- */
+
+#login-status, 
+#login-status a {
+    color: #12b4ff;
+    text-shadow: 0.0625rem 0.0625rem 0.0625rem #000000;
+    font-weight: bold;
+}
+ 
+#account-options li a, 
+#account-options li a:hover {
+    color: #e4f7ff;
+    text-shadow: none;
+}
+
+#account-options {
+    border: none;
+}
+
+#account-options ul {
+    background-color: #1f68d2;
+    opacity: 0.8;
+}
+
+/* -=- IMAGES -=- */
+
+.scp-image-block .scp-image-caption {
+    background-color: #747474;
+}
+
+/* -=- TABLES -=- */
+
+table.wiki-content-table td {
+    border: 0.0625rem dotted #a0c7ff;
+    background: rgba(9, 0, 135, 0.11);
+}
+
+table.wiki-content-table th {
+    border: 0.0625rem solid #bbb;
+    background: #747474;
+}
+
+/* -=- CODE MODULE -=- */
+
+.code {
+    text-shadow: none;
+}
+
+/* -=- MISCELLANEOUS -=- */
+
+/* In the files, when the menu is expanded, .highlight's background is #EEE, which gives poor constrast with the link color. */
+table.page-files .highlight {
+    background-color: transparent;
+}
+
+/* Changes the top border of the tags section, which is typically colored #888, to match the theme better. */
+.page-tags span {
+    border-top: solid 0.0625rem #2477ac;
+}
+
+/* Changes the colors of the layout in the History tab of the page, which constrasts heavily with the background theme. */
+.pager a, 
+.pager a:hover, 
+.optionstd a, 
+.optionstd a:hover {
+    color: #ffffff;
+    background: rgba(0, 85, 155, 0.9);
+    border: solid 0.0625rem #2477ac;
+}
+
+/* While the page is saving and loading, there is a popup on the screen. This popup was difficult to read due to the body's properties (color being white), so this changed the background to be more thematically appropriate and legible. */
+.owait, 
+.osuccess {
+    background-color: #00559b;
+    color: #ffffff;
+    text-shadow: 0.0625rem 0.0625rem 0.0625rem #000000;
+    border: solid 0.0625rem #2477ac;
+    opacity: 0.95;
+}
+
+/* Similar to above, but required an !important and different target apparently. */
+.owait div.modal-body {
+    color: #ffffff !important;
+}
+
+/* The text below the editing menu, specifically "Max 200 characters [...]" and "You have an exclusive 15-minute lock[...]" */
+form div.sub {
+    color: #b7b7b7;
+}
+
+/* Specifically the "You have an exclusive[...]" text box. Changes color and text-shadow for legibility. */
+#lock-info {
+    color: #3d3d3d;
+    text-shadow: none;
+}
+
+/* The grow/shrink buttons on the bottom right of the editor. Changes to be more legible. */
+.change-textarea-size a.btn {
+    color: #000000;
+    text-shadow: none;
+}
+
+/* Changes color of aforementioned buttons on hover. */
+.change-textarea-size a:hover {
+    text-decoration: none;
+    background: #ffffff;
+}
+
+/* When a page is parented, its parent is listed as a "breadcrumb" for some reason. This modifies the parented page backlink near the top. Can be seen here: https://scp-wiki.wikidot.com/exploration-log-3426 */
+#breadcrumbs {
+    margin: 0.5em 0 1em;
+    font-size: 80%;
+    text-align: center;
+}
+
+/* Changes selection color. */
+::selection { 
+    background: #004777;
+}
+
+/* Changes seleciton color for specific menus to increase legibility of highlighted text. */
+textarea::selection, 
+input.text::selection, 
+#lock-info::selection, 
+span#lock-timer::selection, 
+.code span::selection {
+    background-color: #8ac8f9;
+}
+
+/* Preview message when previewing a page in the upper-right corner. */
+.preview-message {
+    background-color: #00559b;
+    color: #ffffff;
+    text-shadow: 0.0625rem 0.0625rem 0.0625rem #000000;
+    border: solid 0.0625rem #2477ac;
+    opacity: 0.95;
+}
+
+/* Changes the color of the text at the very bottom of the page. */
+#license-area {
+    color: #ffffff;
+}
+
+/* -=- FOOTNOTES -=- */
+
+.hovertip {
+  background: #00559b !important;
+  border: solid 0.0625rem #2477ac !important;
+  color: #ffffff;
+  text-shadow: 0.0625rem 0.0625rem 0.0625rem #000000;
+  opacity: 0.94;
+}
+
+/* -=- MEDIA SELECTORS -=- */
+
+@media screen and (max-width: 50rem) {
+
+    #header h1 a::before {
+        font-size: 1.7rem;
+    }
+
+    #header h1 {
+        margin-left: 0rem;
+    }
+
+    #header h2 {
+        margin-left: 0.75rem;
+    }
+
+    #top-bar {
+        background: linear-gradient(to right, transparent 0%, #0b1d51 5%, #0b1d51 60%, transparent 85%);
+        padding-right: 0rem;
+    }
+
+    #side-bar {
+        position: fixed;
+        z-index: 30;
+        background-color: rgba(11, 29, 81, 0.93);
+    }
+
+}
+
+/* ===================== variant: Last Frontier ===================== */
+/*
+    Last Frontier Theme
+    [2021 Wikidot Theme]
+    Created by Vivarium
+    Based on Shattered Thoughts Theme created by Yossipossi.
+*/
+ 
+ body {
+    background-color: #150100;
+}
+ 
+/* -=- HEADER -=- */
+ 
+#header h1 a::before {
+    content: "The Beholder Program";
+}
+ 
+#header h2::before {
+    content: "Re-Discovering Space.";
+    text-shadow: 0rem 0rem 0.3125rem #000000;
+}
+ 
+/* -=- HEADER BACKGROUND -=- */
+ 
+div#container-wrap {
+    background: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Alast-frontier-jp/earth.jpg) top left repeat-x;
+    background-size: 100%;
+}
+
+/* JP port: the original header logo (a test-wiki attachment) is gone (404 on every known
+   host), so this rule is dropped rather than pointing at a dead URL. */
+/* -=- LINKS -=- */
+ 
+a, a.newpage {
+    color: #e3647c;
+}
+ 
+a:visited {
+    color: #d2647c;
+}
+ 
+/* -=- BLOCKQUOTE -=- */
+ 
+div.blockquote,
+blockquote {
+    background: rgba(135, 0, 9, 0.11);
+    border: 0.125rem dotted #865757;
+}
+ 
+/* -=- RATING MODULE -=- */
+ 
+.page-rate-widget-box .rate-points,
+.page-rate-widget-box > *,
+.rate-box-with-credit-button {
+    background-color: rgba(107, 22, 22, 255) !important;
+}
+ 
+/* -=- PAGE TITLE AND H1 -=- */
+ 
+#page-title,
+#action-area h1 {
+    color: #ffffff;
+    font-weight: bold;
+ 
+}
+ 
+/* -=- SEARCH BAR -=- */
+ 
+#search-top-box-input,
+#search-top-box-input:hover,
+#search-top-box-input:focus {
+    background-color: #150100;
+}
+ 
+#search-top-box-form input[type=submit],
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+    background-color: #61000d;
+ 
+}
+ 
+/* -=- TOP BAR -=- */
+ 
+#top-bar {
+    background: linear-gradient(to right, transparent 25%, transparent 50%, #6b1616 75%, transparent 100%);
+}
+ 
+#top-bar ul li ul {
+    border: 0.0625rem solid #2477ac;
+}
+ 
+#top-bar ul li a {
+    color: #ffffff;
+    text-shadow: 0rem 0rem 0.3125rem #000000;
+}
+ 
+#top-bar ul li:hover a,
+#top-bar ul li:hover ul li a {
+    background-color: #611e2c;
+}
+ 
+#top-bar ul li:hover a:hover {
+    background: #8c465a;
+}
+ 
+#top-bar .open-menu a {
+    background-color: #611e2c;
+    border-color: #e3647c;
+    color: #ffffff;
+}
+ 
+/* -=- SIDEBAR -=- */
+ 
+#side-bar .heading {
+     color: #ffffff;
+}
+ 
+#side-bar div.menu-item img {
+    background: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Alast-frontier-jp/diamond.png");
+}
+ 
+#side-bar div.side-block,
+#side-bar .side-block.media,
+#side-bar .side-block.resources {
+    background: #2b1d1d;
+    border: 0.3125rem double #000000;
+    box-shadow: 0 0.125rem 0.375rem #000000;
+    opacity: 0.9;
+}
+ 
+#side-bar a,
+#side-bar a:visited {
+    color: #ff7a98;
+}
+ 
+/* -=- TABBERS -=- */
+ 
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a:focus,
+.yui-navset .yui-nav .selected a:hover {
+    background: #8c465a;
+}
+ 
+.yui-navset .yui-nav a,
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:focus {
+    background: #360e0b;
+}
+ 
+.yui-navset .yui-content {
+    background-color: #110500;
+    border: 0.125rem dotted #865757;
+}
+ 
+/* -=- USER INFO -=- */
+ 
+#login-status,
+#login-status a {
+    color: #e3647c;
+}
+ 
+#account-options li a,
+#account-options li a:hover {
+    color: #e3647c;
+}
+ 
+#account-options ul {
+    background-color: #150100;
+    border: solid 0.0625rem #e3647c;
+    opacity: 1.0;
+}
+ 
+/* -=- IMAGES -=- */
+ 
+.scp-image-block .scp-image-caption {
+    background-color: #394046;
+}
+ 
+/* -=- TABLES -=- */
+ 
+table.wiki-content-table td {
+    border: 0.0625rem dotted #865757;
+}
+ 
+table.wiki-content-table th {
+    background-color: #394046;
+}
+ 
+/* -=- MISCELLANEOUS -=- */
+ 
+/* Changes the top border of the tags section, which is typically colored #888, to match the theme better. */
+.page-tags span {
+    border-top: solid 0.0625rem #f15c7d;
+}
+ 
+/* Changes the colors of the layout in the History tab of the page, which constrasts heavily with the background theme. */
+.pager a,
+.pager a:hover,
+.optionstd a,
+.optionstd a:hover {
+    background: #83303f;
+    border: solid 0.0625rem #f15c7d;
+}
+ 
+/* While the page is saving and loading, there is a popup on the screen. This popup was difficult to read due to the body's properties (color being white), so this changed the background to be more thematically appropriate and legible. */
+.owait,
+.osuccess {
+    background-color: #83303f;
+    border: solid 0.0625rem #f15c7d;
+}
+ 
+/* -=- FOOTNOTES -=- */
+ 
+.hovertip {
+  background: rgba(17, 0, 5, 255) !important;
+  border: solid 0.0625rem #865757 !important;
+ 
+}
+ 
+/* -=- MEDIA SELECTORS -=- */
+ 
+@media screen and (max-width: 50rem) {
+ 
+    #side-bar {
+        background-color: rgba(21, 1, 0, .93);
+    }
+ 
+}
+[[/code]]
+[[/collapsible]]
+
+[[include :scp-jp:component:license-box-backend
+|author=Vivarium, Yossipossi]]
+
+> **ファイル名:** earth.jpg
+> **作者:** 原語版に記載なし（Vivariumのテーマ用添付ファイルとして配布）
+> **ライセンス:** 原語版に記載なし（投稿前に著者へ確認してください）
+> **出典:** [https://scp-wiki.wikidot.com/local--files/theme:last-frontier/Earth.jpg SCP Foundation Wiki]
+
+> **ファイル名:** diamond.png
+> **作者:** 原語版に記載なし（Vivariumのテーマ用添付ファイルとして配布）
+> **ライセンス:** 原語版に記載なし（投稿前に著者へ確認してください）
+> **出典:** [https://scp-wiki.wikidot.com/local--files/theme:last-frontier/Diamond.png SCP Foundation Wiki]
+
+> **ファイル名:** binary-star-loop-blink.gif
+> **作者:** 原語版に記載なし（Vivariumのテーマ用添付ファイルとして配布）
+> **ライセンス:** 原語版に記載なし（投稿前に著者へ確認してください）
+> **出典:** [https://scp-wiki.wikidot.com/local--files/theme:last-frontier/Binary_Star_Loop_Blink.gif SCP Foundation Wiki]
+
+> **ファイル名:** st-diamondblue.png / st-background.png
+> **作者:** [[*user Yossipossi]]（Shattered Thoughtsテーマの添付ファイル）
+> **ライセンス:** 原語版に記載なし（Shattered Thoughtsテーマ側のライセンス表記を確認してください）
+> **出典:** [https://scp-wiki.wdfiles.com/local--files/theme%3Ashattered-thoughts/ SCP Foundation Wiki]
+
+> **訳注:** 原語版のヘッダーロゴ（ITTV_LOGO.png、テストWiki上の添付ファイル）は配信元から消失しており取得できませんでした。原語版でも現在は表示されないため、JP版では当該規則を落としています。
+
+[[include :scp-jp:component:license-box-end]]
+
+[[/iftags]]
