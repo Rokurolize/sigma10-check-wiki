@@ -1,0 +1,471 @@
+[[iftags +テーマ]]
+
+[[module CSS]]
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css");
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css");
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css
+]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=2
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css
+]]
+
+[[include :scp-jp:credit:start-preview]]
+**初訳時参照リビジョン:** 10
+**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:cleaning-services ソース]
+[[include :scp-jp:credit:end-preview]]
+
+[[>]]
+[[module rate]]
+[[/>]]
+
++ これは何？
+
+これは、クリーニングサービステーマです。winkwonkboiによって、//Cleanliness Guaranteed//（近日公開）カノンに関わる記事のために作られました。
+
+このテーマを適用するには、ページの先頭に以下のコードを貼り付けてください:
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:black-highlighter-theme]]@@
+@@[[include :scp-jp:theme:cleaning-services]]@@
+[[/div]]
+
+@@ @@
+
+[[collapsible show="+ 「Cleaning Services Theme」のタイトルが見えていますか？" hide="- 変えたい場合は？"]]
+任意ですが、ページ上部のフォントを切り替えたい場合は、以下のコードを使用してください:
+
+[[div class="code"]]
+@@[[module CSS]]@@
+@@#page-title {@@
+@@    font-family: var(--header-font);@@
+@@}@@
+@@[[/module]]@@
+[[/div]]
+
+これにより、上に表示されている「SAFE CLEANUP PROFESSIONALS」のタイトルと同じフォントに変わります。
+[[/collapsible]]
+
+//注記: これはBlack Highlighterをベースとしたテーマです。このテーマが機能するには、Black Highlighterテーマと併用する必要があります。詳しくは[[[theme:black-highlighter-theme|こちら]]]をご覧ください。//
+
+----
+
+[[include :scp-jp:component:image-block name=https://sigma10-jp-test.wdfiles.com/local--files/theme%3Acleaning-services-jp/173canon.jpg|caption=画像。|width=300px]]
+
++ 例
+
+5個のハイフン@@"-----"@@で水平線が作成でき、blockquoteなどの中に置かれていない限り、ページ全体に広がります。ページのセクションを分ける線は水平線です。
+
+[[[theme:cleaning-services|あなたが訪れたことのあるであろうリンク。]]]
+[# 未訪問のリンク。]
+
+[[collapsible show="+ これは折りたたみです" hide="- 折りたたみを隠す"]]
+見出しは、行の先頭に1個から6個のプラス記号「+」を置くことで作成できます。
+
++ 第1見出し
+++ 第2見出し
++++ 第3見出し
+++++ 第4見出し
++++++ 第5見出し
+++++++ 第6見出し
+[[/collapsible]]
+
+----
+
+@@ @@
+
+[[tabview]]
+[[tab タブ]]
+これはタブです。
+[[/tab]]
+[[tab タブ化]]
+これもタブです。
+
+2行目もあります。
+[[/tab]]
+[[tab 長いタブ]]
+彫刻は唯一のカノンアノマリーです。
+
+彫刻は唯一のカノンアノマリーです。
+
+彫刻は唯一のカノンアノマリーです。
+
+彫刻は唯一のカノンアノマリーです。
+
+彫刻は唯一のカノンアノマリーです。
+
+彫刻は唯一のカノンアノマリーです。
+
+彫刻は唯一のカノンアノマリーです。
+
+彫刻は唯一のカノンアノマリーです。
+
+彫刻は唯一のカノンアノマリーです。
+
+彫刻は唯一のカノンアノマリーです。
+
+彫刻は唯一のカノンアノマリーです。
+
+彫刻は唯一のカノンアノマリーです。
+
+彫刻は唯一のカノンアノマリーです。
+
+彫刻は唯一のカノンアノマリーです。
+
+彫刻は唯一のカノンアノマリーです。
+[[/tab]]
+[[tab このタブのタイトルはなぜこんなにもやたらと長いのだろうか？]]
+知りません、どうして私に聞くのですか？
+[[/tab]]
+[[tab 空のタブ]]
+
+[[/tab]]
+[[tab 空のタブ]]
+
+[[/tab]]
+[[tab 空のタブ]]
+
+[[/tab]]
+[[tab 空のタブ]]
+
+[[/tab]]
+[[tab 空のタブ]]
+
+[[/tab]]
+[[tab 空のタブ]]
+
+[[/tab]]
+[[tab 空のタブ]]
+私はブギーマンです。
+[[/tab]]
+[[/tabview]]
+
+@@ @@
+
+[[div class="blockquote"]]
+これは引用ブロックです。
+----
+引用ブロックは、divブロックを使って作成できます。
+> -または行の先頭に「>」を置いても作成できます。
+>> 入れ子の引用ブロックもあります。[[footnote]]ご覧のとおり、脚注もあります。[[/footnote]]
+[[/div]]
+
+@@ @@
+||~ これは ||~ 表です ||
+|| 作り方は || 知っているはずです ||
+|||| そうですよね？ ||
+@@ @@
+
+----
+
++ 追加のdiv
+
+@@ @@
+[[div class="cleanblock"]]
+= これはSafe Cleanup Professionalsのロゴを含む引用ブロックです。
+
+= **{{@@[[div class="cleanblock"]]@@}}**
+[[/div]]
+@@ @@
+
+[[div class="stickynote"]]
+@@ @@
+
+@@ @@
+= これは付箋のdivです。
+
+= **{{@@[[div class="stickynote"]]@@}}**
+[[/div]]
+@@ @@
+
+[[div class="tablered"]]
+||~ これは ||~ 赤い表です ||
+|| バラがあっても || 気にしないでください ||
+|||| ね？ ||
+@@ @@
+[[div class="code"]]
+= これは血まみれのコードです、なあ。
+[[/div]]
+@@ @@
+[[div class="blockquote"]]
+= おまけに引用ブロックまで！
+
+= **{{@@[[div class="tablered"]]@@}}**
+[[/div]]
+[[/div]]
+
+@@ @@
+
+[[div class="tablegreen"]]
+||~ でも ||~ 緑が好きかもしれません。 ||
+|| ちょっとだけ || 味わってみてください ||
+|||| 母なる自然を。 ||
+@@ @@
+[[div class="code"]]
+= これはローラックスのコードです、なあ。
+[[/div]]
+@@ @@
+[[div class="blockquote"]]
+= おっと、また別の引用ブロックです。
+
+= **{{@@[[div class="tablegreen"]]@@}}**
+[[/div]]
+[[/div]]
+
+@@ @@
+
+[[div class="tablenut"]]
+||~ ピーナッツの ||~ 味がお好みかもしれません。 ||
+|| 目を離すと || 首が ||
+|||| へし折られますよ。 ||
+@@ @@
+[[div class="code"]]
+= これはナッツなコードです、なあ。
+[[/div]]
+@@ @@
+[[div class="blockquote"]]
+= ヴォワラ、//また別の//引用ブロックです。
+
+= **{{@@[[div class="tablenut"]]@@}}**
+[[/div]]
+[[/div]]
+
+@@ @@
+
+----
+
+[[=]]
+[[div style="font-size: 1.5em;"]]
+[[span style="font-family: var(--header-font);"]]ヘッダーフォントはOswaldです。[[/span]]
+[[span style="font-family: var(--title-font);"]]タイトルおよび等幅フォントはRoboto Monoです。[[/span]]
+[[span style="font-family: var(--body-font);"]]本文およびUIフォントはNoto Sans JPです。[[/span]]
+[[/div]]
+[[/=]]
+
+----
+
++ ソースコード
+
+@@ @@
+[[collapsible]]
+[[code type="CSS"]]
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+:root {
+    /* S-CSS-P INTEGRATION */
+    --theme-base: "black-highlighter";
+    --theme-id: "cleaning-services";
+    --theme-name: "Cleaning Services Theme";
+
+    /* Colors */
+    --peanut-butter: 175, 143, 133;
+    --dark-choco: 122, 68, 52;
+    --bitter-dirt: 98, 42, 15;
+    --lightheaded: 228, 218, 214;
+    --wonka-stream: 149, 105, 93;
+    --salt-free: 249, 244, 236;
+
+    --bloody: 124, 10, 2;
+    --grassy: 59, 122, 87;
+    --pakistan-green: 0, 102, 0;
+
+    --darker: 38, 38, 38;
+    --brighter: 252, 252, 252;
+
+    /* Fonts */
+    --header-font: 'Oswald', sans-serif;
+    --title-font: 'Roboto Mono', monospace;
+    --body-font: 'Noto Sans JP', sans-serif;
+    --mono-font: var(--title-font);
+    --ui-font: var(--body-font);
+
+    /* Header Elements */
+    --logo-image: unset;
+    --header-title: "SAFE CLEANUP PROFESSIONALS";
+    --header-subtitle: "Sanitize, Cleanse, Polish";
+    --header-h1-font-size: 3rem;
+    --header-h2-font-size: 1.2rem;
+
+    --header-height-on-desktop: 15rem;
+    --header-height-on-mobile: 10rem;
+
+    --header-gradient-color-bottom: 238, 221, 195;
+    --header-gradient-color-middle: 238, 221, 195;
+    --header-gradient-color-top: 238, 221, 195;
+    --diagonal-stripes: unset;
+
+    /* Theme Colors */
+    --bright-accent: var(--peanut-butter);
+    --medium-accent: var(--peanut-butter);
+    --dark-accent: var(--peanut-butter);
+
+    --gray-monochrome: var(--dark-choco);
+    --dark-gray-monochrome: var(--bitter-dirt);
+
+    --swatch-background: var(--salt-free);
+    --background-gradient-color: var(--salt-free);
+
+    --rating-module-button-cancel-color: var(--peanut-butter);
+    --rating-module-bg-color: var(--lightheaded);
+
+    --ui-button-bg: var(--darker);
+    --ui-button-txt: var(--brighter);
+
+    --link-color: var(--grassy);
+    --visited-link-color: var(--bloody);
+    --hover-link-color: var(--pakistan-green);
+
+    --code-color: var(--lightheaded), 0.30;
+}
+
+#extra-div-1 {
+    height: var(--header-height-on-desktop);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background-image: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Acleaning-services-jp/headerbg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#header {
+    --swatch-headerh1-color: var(--bloody);
+    --swatch-headerh2-color: var(--grassy);
+    --search-icon-color: var(--darker);
+
+    --login-line-divider-color: var(--darker);
+    --login-username-color: var(--darker);
+    --login-myaccount-color: var(--darker);
+    --login-myaccount-hover-color: var(--brighter);
+
+    --login-dropdown-bg-color:  var(--dark-choco);
+    --login-dropdown-bg-image:  var(--dark-choco);
+    --login-dropdown-text-color: var(--brighter);
+    --login-mobile-icon-color: var(--darker);
+}
+
+@media only screen and (max-width: 56.25rem) {
+    :root{
+        --header-h1-font-size: 1.6rem;
+        --header-h2-font-size: 1rem;
+    }
+
+    #header h1 a {
+        margin-left: 1rem;
+    }
+
+    #header h2 span {
+        margin-left: 1rem;
+    }
+
+    #extra-div-1 {
+         display: none;
+    }
+}
+
+#page-title {
+    color: rgb(var(--dark-choco));
+    font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: rgb(var(--darker));
+}
+
+#side-bar,
+#interwiki {
+    --sidebar-bg-color: var(--wonka-stream);
+    --sideblock-heading-bg-color:  var(--dark-choco);
+    --sidebar-media-bg-color: var(--lightheaded);
+
+    --sideblock-heading-text-color: var(--brighter);
+    --sidebar-links-text: var(--brighter);
+}
+
+#main-content {
+    --tabs-bg: var(--brighter);
+    --tabs-hover-bg:  var(--bloody);
+    --tabs-selected-bg: var(--bloody);
+    --tabs-selected-outline: var(--bloody);
+    --tabs-bottom-border-color: var(--grassy);
+
+    --tables-header-bg: var(--darker);
+    --toc-header-bg-color: var(--darker);
+    --toc-body-bg-color: var(--brighter);
+
+    --footnotes-footer-colorbar-color:  var(--darker);
+    --footnotes-footer-title-bg-color:  var(--darker);
+    --footnotes-footer-bg-color: var(--brighter);
+
+    --ui-icon-bg: var(--darker);
+
+    --pagetags-title-bg: var(--darker);
+    --pagetags-text-color: var(--darker);
+    --pagetags-text-hover-bg-color: var(--darker);
+}
+
+html,
+body {
+    scrollbar-color: rgb(var(--peanut-butter)) rgb(var(--lightheaded));
+}
+
+.scp-image-block .scp-image-caption {
+    background-color: rgb(var(--darker)) !important;
+    color: rgb(var(--brighter));
+}
+
+.code {
+    background-color: rgba(var(--code-color));
+}
+
+.cleanblock {
+    background: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Acleaning-services-jp/transparentmark.png") rgb(254, 254, 254) center no-repeat;
+    background-size: 500px;
+    border: solid;
+    padding: 1px 15px;
+}
+
+.stickynote {
+    width: 50%;
+    min-height: 15em;
+    border: transparent;
+    margin: auto;
+    padding: 1rem;
+    background-color: rgb(254, 255, 156);
+}
+
+.tablered {
+    --tables-header-bg: var(--bloody);
+    --blockquote-bg-color: var(--bloody), 0.10;
+    --code-color: var(--bloody), 0.10;
+}
+
+.tablegreen {
+    --tables-header-bg: var(--grassy);
+    --blockquote-bg-color: var(--grassy), 0.10;
+    --code-color: var(--grassy), 0.10;
+}
+
+.tablenut {
+    --tables-header-bg:  var(--dark-choco);
+    --blockquote-bg-color:  var(--dark-choco), 0.10;
+    --code-color:  var(--dark-choco), 0.10;
+}
+[[/code]]
+[[/collapsible]]
+@@ @@
+
+[[/iftags]]
+
+[[module CSS]]
+@import url(https://sigma10-jp-test.wdfiles.com/local--code/theme%3Acleaning-services-jp/1);
+[[/module]]
