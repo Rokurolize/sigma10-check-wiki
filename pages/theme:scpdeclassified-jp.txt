@@ -1,0 +1,692 @@
+[[module CSS]]
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Ascpdeclassified-jp/1');
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Ascpdeclassified-jp/1
+]]
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** SCP 解密 テーマ
+**翻訳責任者:** SCP-JP
+**翻訳年:** 2026
+**原題:** 版式：SCP 解密
+**著作権者:** 原語版ページの作成者に同じ（scp-wiki-cn の theme:scpdeclassified）
+**作成年:** 2022
+**初訳時参照リビジョン:** 14
+**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:scpdeclassified 版式：SCP 解密]
+[[include :scp-jp:credit:end-preview]]
+
+**評価:**
+
+**評価モジュールと著作情報モジュール:**
+
+これは [[*user Ambersight]] が制作した「SCP解説」用テーマです。Reddit の [[[https://www.reddit.com/r/SCPDeclassified|r/SCPDeclassifiedサブレディット]]]のデザインを**ある程度**再現しています。コードは [[*user sendoh-oroka]] による[[[theme:zattou|雑踏テーマ]]]、および [[*user EstrellaYoshte ]] による[[[theme:penumbra|Penumbraテーマ]]]と[[[theme:simple-yonder|Simple Yonderテーマ]]]を参考にしています。
+
+このテーマは、オリジナルまたは翻訳のSCP解説記事に自由に適用できます。詳しくは[[[scpdeclassified|SCP解説ハブ]]]を参照してください。もちろん、他の用途に使っても構いません。
+
+作品の冒頭に次の構文を追加すると、このテーマを適用できます。
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:scpdeclassified]]@@
+[[/div]]
+
+標準的なCSSの@import方式では、このテーマを読み込まないでください。もちろん技術的には可能ですが、@@[[include]]@@でテーマを読み込むと、あなたのページが「バックリンク」の一覧に入ります。この方式なら、テーマを更新したときに影響を受けるページを確認でき、更新に伴う不具合にも早く気づいて修正できるため便利です。
+
+任意のページのバックリンクは、ページ下部の「+ オプション」、「バックリンク」から確認できます。
+
+-----
+
++ 例
+
+[[include component:image-block
+|name=https://sigma10-jp-test.wdfiles.com/local--files/theme%3Ascpdeclassified-jp/scp.png
+|caption=見覚えのあるロゴだ。どこで見たんだっけ？
+|width=200px]]
+
+ハイフン5つ「@@-----@@」で水平線を作成できます。引用ブロックなど、他の要素の中に置かれていなければ、ページ全体を横切って左右に伸びます。文書を複数の部分に分ける、このような線が区切り線です。
+
+-----
+
+見出しは、行頭に1個から6個のプラス記号「+」を入力すると作成できます。
+
+[[collapsible show="+ 見出し" hide="- 見出し"]]
++ レベル1見出し
+
+++ レベル2見出し
+
++++ レベル3見出し
+
+++++ レベル4見出し
+
++++++ レベル5見出し
+
+++++++ レベル6見出し
+[[/collapsible]]
+
+@@ @@
+
+[[tabview]]
+[[tab タブ]]
+これはタブビューです。
+[[/tab]]
+[[tab タブ]]
+ほら、ここにはさらに文字があります。
+
+なんて精巧なんでしょう。
+[[/tab]]
+[[tab 長いタブ]]
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[/tabview]]
+
+> これは引用ブロックです。行頭に「> 」を付けると作成できます。
+> @@@@
+> さらに文字
+> -----
+> 区切り線
+> @@@@
+>> 入れ子の引用ブロック
+
+||~ これは ||~ 表です ||
+||もうとっくに || 作り方は ||
+||||分かっていますよね ||
+
+* 1段目[[footnote]] 脚注。 [[/footnote]]
+ * 2段目
+
+[[div class="hardblock"]]
+別の種類の枠です。
+
+@@[[div class="hardblock"]]@@
+@@[[/div]]@@
+[[/div]]
+
+本文、ヘッダー、見出しのフォントはNoto Sans JP、等幅表示は{{Noto Serif JP}}です。
+
+-----
+[[footnoteblock]]
+
+-----
+@@@@
+[[collapsible show="+ ソースコード" hide="- ソースコード"]]
+[[/collapsible]]
+
++ ソースコード
+
+[[collapsible show="> コードを表示" hide="> コードを閉じる"]]
+[[code type="css"]]
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap');
+
+/*
+    版式：SCP 解密 / SCP Declassified Theme — Ported for SCP-JP (theme:scpdeclassified rev 14).
+    sandbox 上の 4 枚の画像は候補ページの添付として再ホストしています。
+*/
+/* 日本語フォント (JP localization) */
+
+
+/* --- 全局 --- */
+body {
+    color: #000000;
+    font-family: 'Noto Sans SC', sans-serif;
+    background-color: rgb(218,224,230);
+}
+
+.code pre, .code p, .code, tt{
+    font-family: 'Noto Serif SC', sans-serif;
+}
+
+.page-source{
+    font-family: 'Noto Serif SC', sans-serif;
+}
+
+a,a:visited {
+    color: rgb(113, 71, 121);
+}
+
+.avatar-hover { 
+    display: none !important;
+}
+
+.hovertip { 
+    max-width: 400px;
+}
+
+/* --- 版头 --- */
+#search-top-box-input,
+#search-top-box-input:hover,
+#search-top-box-input:focus,
+#search-top-box-form input[type=submit],
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+    border: none;
+    background: rgba(64,38,68,0.8);
+    box-shadow: none;
+    border-radius: 2px;
+    color: #f4f4f4;
+}
+
+#account-options {
+    border-radius: 5px;
+    border: solid white 1px;
+}
+
+#account-topbutton {
+    border-width: 0;
+}
+
+#login-status,
+#login-status a {
+  color: white;
+    font-weight: bold;
+}
+
+#login-status ul a,
+#login-status ul a:hover {
+    color: rgb(113, 71, 121);
+}
+
+#header {
+  background: none;
+}
+ 
+div#container-wrap {
+  background: none;
+}
+
+div#extra-div-1 {
+  height: 161px;
+  width: 100%;
+  top: 0;
+  position: absolute;
+  background: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Ascpdeclassified-jp/banner-x.jpg");
+  background-size: cover;
+  background-position: left top;
+}
+
+#header h1 a::before {
+  background: none;
+}
+#header h1 a span{
+    visibility: hidden;
+}
+#header h2 span {
+    color: transparent;
+    text-shadow: 0px 0px 0px;
+}
+#header h2 span::before {
+  background: none;
+}
+
+/* --- 顶栏 --- */
+div#extra-div-2 {
+  height: 21px;
+  width: 100%;
+  top: 140px;
+  position: absolute;
+  background-color: rgba(64,38,68,0.8);
+}
+
+#top-bar ul li a,
+#top-bar ul li:hover a {
+background: transparent;
+    color: rgb(113, 147, 255);
+    font-weight: bold;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+}
+
+#top-bar ul li a:after {
+    content:"▼";
+    color: rgb(113, 147, 255);
+}
+
+#top-bar ul li.sfhover a:hover:after {
+  color: rgb(44, 0, 87);
+}
+
+#top-bar ul li ul li a:after,
+#top-bar ul li ul li a:hover:after {
+    content:" ";
+}
+
+#top-bar ul li ul {
+    border: none;
+    overflow: hidden;
+    box-shadow: none;
+    background: white;
+    border-radius: 5px;
+    border: solid white 1px;
+}
+
+#top-bar ul li.sfhover a:hover {
+  color: rgb(44, 0, 87);
+  background: transparent;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+}
+
+/* --- 侧栏 --- */
+.menu-item > .image {
+     filter: invert(27%) sepia(82%) saturate(341%) hue-rotate(244deg) brightness(70%) contrast(85%) !important;
+     -webkit-filter: invert(27%) sepia(82%) saturate(341%) hue-rotate(244deg) brightness(70%) contrast(85%) !important;
+}
+
+#side-bar {
+    top: 0px;
+}
+
+#side-bar .side-block {
+    background-color: white !important;
+    width: 120%;
+    border-radius: 5px;
+    border: solid white 1px;
+    box-shadow: none;
+    padding: 0;
+    padding-bottom: 15px;
+}
+
+#side-bar > div.side-block.license {
+    padding-top: 15px;
+}
+
+#side-bar .heading,
+#side-bar .collapsible-block-unfolded .collapsible-block-unfolded-link {
+    padding-top: 0.435rem;
+    border-bottom: none;
+    border-radius: 5px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    height: 1.74rem;
+    background: rgb(113, 71, 121);
+    color: white;
+    font-size: .87rem;
+    margin-bottom: 15px;
+}
+
+#side-bar a,
+#side-bar a:visited {
+    color: rgb(113, 71, 121);
+}
+
+#side-bar div.menu-item,
+#side-bar .collapsible-block-folded {
+    margin-left: 15px;
+}
+
+#side-bar .collapsible-block-folded {
+    margin-top: 15px;
+}
+
+#side-bar .collapsible-block-folded {
+     background: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Ascpdeclassified-jp/expand.png) 0 2px no-repeat;
+}
+
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link,
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link:hover {
+    color: white;
+    font-size: .87rem;
+}
+
+/* --- 主体 --- */
+/* 分页（半影） */
+/* ---- YUI TAB BASE ---- */
+.yui-navset .yui-nav a,.yui-navset .yui-navset-top .yui-nav a{background-color:inherit;background-image:inherit}.yui-navset .yui-nav a:hover,.yui-navset .yui-nav a:focus{background:inherit;text-decoration:inherit}.yui-navset .yui-nav .selected a,.yui-navset .yui-nav .selected a:focus,.yui-navset .yui-nav .selected a:hover{color:inherit;background:inherit}.yui-navset .yui-nav,.yui-navset .yui-navset-top .yui-nav{border-color:inherit}.yui-navset li{line-height:inherit}
+
+/* ---- YUI TAB CUSTOMIZATION ----*/
+ 
+ .yui-navset .yui-nav,
+ .yui-navset .yui-navset-top .yui-nav{
+     display: flex;
+     flex-wrap: wrap;
+     width: calc(100% - .125rem);
+     margin: 0 auto;
+     border-color: rgb(113, 71, 121);
+     box-shadow: none;
+}
+ .yui-navset .yui-nav a, /* ---- Link Modifier ---- */
+ .yui-navset .yui-navset-top .yui-nav a{
+     color: black;
+     font-weight: bold;
+    /* ---- Tab Background Colour | [UNSELECTED] ---- */
+     background-color: white;
+     border: solid 0.1rem rgb(113, 71, 121);
+     box-shadow: none;
+     box-shadow: none;
+     transition: background-color 0.15s linear;
+}
+ .yui-navset .yui-nav a:hover,
+ .yui-navset .yui-nav a:focus{
+     color: #ededed;
+    /* ---- Tab Background Colour | [HOVER] ---- */
+     background-color: rgb(113, 71, 121);
+}
+ .yui-navset .yui-nav li, /* ---- Listitem Modifier ---- */
+ .yui-navset .yui-navset-top .yui-nav li{
+     position: relative;
+     display: flex;
+     flex-grow: 2;
+     max-width: 100%;
+     margin: 0;
+     padding: 0;
+     color: #ededed;
+     background-color: white;
+     border-color: rgb(113, 71, 121);
+     box-shadow: none;
+}
+ .yui-navset .yui-nav li a,
+ .yui-navset-top .yui-nav li a,
+ .yui-navset-bottom .yui-nav li a{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+}
+ .yui-navset .yui-nav li em{
+     border: unset;
+}
+ .yui-navset .yui-nav a em,
+ .yui-navset .yui-navset-top .yui-nav a em{
+     padding: .35em .75em;
+     text-overflow: ellipsis;
+     overflow: hidden;
+     white-space: nowrap;
+}
+ .yui-navset .yui-nav .selected, /* ---- Selection Modifier ---- */
+ .yui-navset .yui-navset-top .yui-nav .selected{
+     flex-grow: 2;
+     margin: 0;
+     padding: 0;
+    /* ---- Tab Background Colour | [SELECTED] ---- */
+     background-color: rgb(113, 71, 121);
+}
+ .yui-navset .yui-nav .selected a,
+ .yui-navset .yui-nav .selected a em{
+     border: none;
+}
+ .yui-navset .yui-nav .selected a{
+     width: 100%;
+     color: white;
+     font-weight: bold;
+}
+ .yui-navset .yui-nav .selected a:focus,
+ .yui-navset .yui-nav .selected a:active{
+     color: white;
+     background-color: rgb(113, 71, 121);
+}
+ .yui-navset .yui-content {
+    background-color: white;
+    box-shadow: none;
+}
+ .yui-navset .yui-content,
+ .yui-navset .yui-navset-top .yui-content{
+     padding: .5em;
+    border: solid 0.1rem rgb(160,160,160);
+}
+
+/* 表格 */
+#page-content .wiki-content-table tr th {
+    border: solid 0.1rem rgb(113, 71, 121);
+    background-color: rgb(113, 71, 121);
+    color: white;
+}
+
+#page-content .wiki-content-table tr td {
+    border: solid 0.1rem rgb(160,160,160);
+}
+
+/* 图片框 */
+.scp-image-block.block-right {
+    margin-right: 0;
+}
+
+.scp-image-block.block-left {
+    margin-left: 0;
+}
+
+.scp-image-block{
+    border: solid 0.1rem rgb(160,160,160);
+    box-shadow: none;
+}
+.scp-image-block .scp-image-caption {
+    border-top: solid 0.1rem rgb(160,160,160);
+}
+
+/* div */
+blockquote,
+div.blockquote {
+    background-color: white;
+    margin: 0;
+    border: none;
+    border-left: solid 0.2rem rgb(160,160,160);
+    box-shadow: none;
+    padding-left: 0.7em;
+    padding-right: 1em;
+}
+
+#toc,
+.code,
+div.hardblock {
+    background-color: white;
+    border: solid 0.1rem rgb(160,160,160);
+    box-shadow: none;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.code {
+    font-family: 'Noto Serif SC', sans-serif;
+}
+
+/* 分割线 */
+hr {
+    height: 1px;
+    margin: 1em 0;
+    background-color: rgb(160,160,160);
+}
+
+/* 标题 */
+h1, h2, h3, h4, h5, h6 {
+    color: #000000;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-weight: bold;
+}
+
+/* 评分模块 */
+#page-content .creditRate{
+    margin: unset;
+    margin-bottom: 8px;
+}
+#page-content .rate-box-with-credit-button {
+    background-color: white;
+    border: solid 1px white;
+    box-shadow: none;
+    border-radius: 0;
+}
+ 
+#page-content .rate-box-with-credit-button .fa-info {
+    border: none;
+    color: rgb(113, 71, 121);
+}
+ 
+#page-content .rate-box-with-credit-button .fa-info:hover {
+    background: white;
+    color: rgb(113, 71, 121);
+}
+ 
+.rate-box-with-credit-button .cancel {
+    border: solid 1px white;
+}
+
+.page-rate-widget-box {
+    box-shadow: none;
+    margin: unset;
+    margin-bottom: 8px;
+}
+
+.page-rate-widget-box .rate-points {
+    background-color: white !important;
+    color: black !important;
+    border: solid 1px white !important;
+}
+
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+    background-color: white;
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+}
+ 
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a {
+    background: transparent;
+    color: rgb(113, 71, 121);
+}
+ 
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover {
+    background: white;
+     color: rgb(113, 71, 121);
+}
+ 
+.page-rate-widget-box .cancel {
+    background: transparent;
+    background-color: white;
+    border: solid 1px white;
+}
+ 
+.page-rate-widget-box .cancel a {
+     color: rgb(113, 71, 121);
+}
+.page-rate-widget-box .cancel a:hover {
+    background: white;
+     color: rgb(113, 71, 121);
+}
+
+/* 正文背景 */
+div#extra-div-3 {
+  height: 100%;
+  width:100%;
+  z-index:-10;
+  top: 0;
+  position: fixed;
+  background: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Ascpdeclassified-jp/background-x.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#page-content {
+    font-size: .87rem;
+}
+
+#main-content {
+    margin-left: 25em;
+    padding: 0.2em 1.5em 1.5em 3em;
+    background-color: white;
+    border: 0.05rem solid rgb(205,205,205);
+  border-radius: 5px;
+}
+
+/* 标题 */
+#page-title {
+    display: none;
+}
+
+#breadcrumbs {
+    margin-top: 1em;
+}
+
+/* --- 底栏 --- */
+#footer {
+  background-color: rgba(64,38,68,0.8);
+  color: rgb(113, 147, 255);
+}
+
+#footer a {
+  color: rgb(113, 147, 255);
+}
+
+#license-area,
+#license-area a {
+  color: rgb(113, 147, 255);
+}
+
+/* --- 移动端 --- */
+#top-bar .open-menu a {
+    border: 0.15em solid rgb(113, 71, 121);
+    color: rgb(113, 71, 121);
+}
+
+@media only screen and (max-width: 768px) {
+div#extra-div-1 {
+  background: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Ascpdeclassified-jp/banner-phone.jpg");
+  background-size: cover;
+  background-position: left top;
+}
+
+#main-content {
+    margin-left: 0.6em;
+    margin-right: 0.6em;
+    padding-left: 1.5em;
+}
+
+#side-bar .side-block {
+    width: 100%;
+}
+
+#side-bar {
+    background-color: rgba(113, 71, 121, 0.4);
+}
+
+#top-bar ul li a:after,
+#top-bar ul li.sfhover a:hover:after {
+    content:" ";
+}
+
+#page-content {
+    font-size: 0.80rem;
+}
+
+}
+
+/* page module css */
+[[/code]]
+[[/collapsible]]
+
+[[include :scp-jp:component:license-box-backend
+|author=scp-wiki-cn theme:scpdeclassified の作者]]
+
+> **画像・フォントの出典:** 原語版の theme:scpdeclassified の記載に従います。sandbox 等の外部ホストの添付は候補ページに再ホストしています。原語版にライセンス表記が無い画像は、投稿前に著者へ確認してください。
+
+[[include :scp-jp:component:license-box-end]]
+
+[[/iftags]]
