@@ -1,0 +1,682 @@
+[[div style="display: none;"]]
+[[include :scp-wiki-cn:theme:basalt wide=a|hidetitle={$hidetitle}|centertitle={$centertitle}|acs-itemnum={$acs-itemnum}|disable-acs-anim={$disable-acs-anim}]]
+[[/div]]
+[[module css]]
+@media only screen and (max-width: 1040px) {
+:root: {
+    --header-title: "";
+    --header-subtitle: "";
+}
+}
+
+:root {
+    --header-title: "快速、安全、放心。";
+    --header-subtitle: "Gp快递物流有限公司";
+    --header-logo: url("https://scpsandboxcn.wikidot.com/local--files/jr-reboot/New_gp_light.png");
+
+    --basalt-primary-color: 254,254,254;
+    --basalt-secondary-color: 247,248,250;
+    --basalt-tertiary-color: 218,219,222;
+    --basalt-main-text-color: 20,20,20;
+    --basalt-overtone: 35,0,0;
+    --basalt-undertone: 22,98,133;
+
+    --basalt-bright-element-color: 0,117,169;
+    --basalt-dark-element-color: 0,54,99;
+    --basalt-alternate-color: 244,96,54;
+    --basalt-positive-color: 76,159,112;
+    --basalt-negative-color: 255,34,12;
+    --basalt-cancel-color: var(--basalt-negative-color);
+    --basalt-sub-text-color: 155,154,162;
+    --basalt-light-text-color: var(--basalt-primary-color);
+
+    --basalt-UI-dark-palette: var(--basalt-overtone);
+    --basalt-focus-color: var(--basalt-undertone);
+    --basalt-background-color: var(--basalt-primary-color);
+
+    --header-title-color: var(--basalt-secondary-color);
+    --header-background-color: var(--basalt-bright-element-color);
+    --header-subtitle-color: var(--header-title-color);
+    --top-bar-link-color: var(--header-title-color);
+    --top-bar-dropdown-link-color: var(--basalt-main-text-color);
+    --search-icon-color: var(--basalt-primary-color);
+    --side-bar-button-color: var(--top-bar-link-color);
+    --side-bar-button-color-hover: var(--top-bar-link-color-hover);
+
+
+    --bottom-area-text-color: var(--basalt-secondary-color);
+    --bottom-area-background-color: var(--basalt-dark-element-color);
+    --footer-divider-color: var(--basalt-tertiary-color);
+    --footer-link-color: 52,228,234;
+    --license-area-logo:  var(--light-logo);
+    --light-logo: url(https://scpsandboxcn.wikidot.com/local--files/jr-reboot/header_light.png);
+    --license-area-divider-color: var(--basalt-tertiary-color);
+
+    --bg-img: url(https://scpsandboxcn.wikidot.com/local--files/jr-reboot/world.png);
+    --prologue: "快速、安全、放心。";
+    --prologue-setting: visible;
+    --prologue-author: "——Gp快递";
+    --prologue-author-setting: visible;
+    --display-mode: 86vh;
+
+    --background-logo: var(--trans-logo);
+    --trans-logo: url(https://scpsandboxcn.wikidot.com/local--files/jr-reboot/GpLogo-small-trans.png);
+}
+
+/* {$scp-takeover}/
+:root {
+    --header-title: "顺通畅达 包裹至上";
+    --header-subtitle: "顺畅包裹物流有限公司";
+    --header-logo: url("https://scpsandboxcn.wikidot.com/local--files/jr-reboot/ShunChang%20Package%20Banner%20Reverse.png");
+
+    --trans-logo: url(https://scpsandboxcn.wikidot.com/local--files/jr-reboot/ShunChang%20Package%20Banner%20Logo%20Trans.png);
+    --light-logo: url(https://scpsandboxcn.wikidot.com/local--files/jr-reboot/ShunChang%20Package%20Banner%20Logo%20Reverse.png);
+    --bg-img: url(https://scpsandboxcn.wikidot.com/local--files/jr-reboot/world.png);
+
+    --footer-link-color: 244, 44, 4;
+    --basalt-bright-element-color: 232,75,72;
+    --basalt-dark-element-color: 61,8,20;
+    --basalt-undertone: 175,62,60;
+}
+/* */
+
+body:not(#interwiki body)::before {
+    content: " ";
+    position: fixed;
+    display: block;
+    z-index: -2;
+
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--bg-img);
+    background-size: cover;
+    background-position: center;
+}
+
+#header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+#header h1 a::before {
+    width: 7vw !important;
+    max-width: unset !important;
+    background-position: left top;
+    margin: 10;
+    padding: 10;
+}
+
+#extrac-div-1::before {
+    line-height: 1.5em;
+    font-size: 1.5em;
+    font-family: var(--mono-font-primary);
+    font-weight: 400;
+
+    content: var(--prologue);
+    color: rgb(var(--secondary-color));
+    visibility: var(--prologue-setting);
+    display: block;
+
+    text-align: center;
+    transition: font-size 0.3s ease, background-size 0.3s ease;
+}
+
+#extrac-div-1:lang(cn)::before {
+    font-family: var(--mono-font-fallback);
+}
+
+#extrac-div-1 {
+    position: absolute;
+    top: calc(var(--display-mode) / 2);
+    left: 50%;
+    transform: translateX(-50%);
+    padding-left: 1em;
+    padding-right: 1em;
+    z-index: 2;
+    pointer-events: var(--introduction-setting);
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#extrac-div-1::after {
+    line-height: 1.5em;
+    font-size: 1.25em;
+    font-family: var(--mono-font-primary);
+
+    content: var(--prologue-author);
+    color: rgb(var(--secondary-color));
+    visibility: var(--prologue-author-setting);
+    display: block;
+
+    text-align: right;
+    transition: font-size 0.3s ease, background-size 0.3s ease;
+}
+
+#extrac-div-1:lang(cn)::after {
+    font-family: var(--mono-font-fallback);
+}
+
+#content-wrap {
+    position: relative;
+
+    max-width: none;
+    margin: 0;
+
+    overflow: hidden; 
+    top: var(--display-mode);
+
+    background: linear-gradient(to bottom, transparent, rgb(var(--primary-color), 0.75) 15vh, rgb(var(--primary-color), 0.75));
+}
+
+@media only screen and (max-width: 1000px) {
+:root {
+    --display-mode: 43vh;
+}
+#header h1 a::before {
+    width: 150vw !important;
+}
+}
+
+@media (min-width: 1px) and (max-width: 1000px) {
+  #extrac-div-1{
+    width: 80%;
+ }
+
+ #page-title {
+     font-size: 2.5em;
+ }
+
+ #top-bar {
+   top: 1rem !important;
+ }
+
+ #top-bar li {
+  margin-left: -0.6rem;
+ }
+
+#top-bar li a {
+  padding: 1px 0.9em;
+ }
+}
+
+#license-area, #footer {
+  top: var(--display-mode);
+  position: relative;
+}
+
+/* {$half-banner}/
+:root {
+  --display-mode: 43vh;
+}
+/* */
+
+/* {$remove-banner}/
+:root {
+  --display-mode: 3em;
+  --prologue-setting: hidden;
+  --prologue-author-setting: hidden;
+}
+
+div#extrac-div-1 {
+  pointer-events: none;
+}
+
+#footer {
+  margin-top: 15px;
+}
+
+#license-area {
+  top: 0;
+}
+/* */
+
+:is(span.specialtext, span.st) {
+    text-decoration: underline 2px;
+    text-underline-offset: 3px;
+}
+
+.tablescp {
+    --basalt-th-background-color: 150, 24, 43;
+}
+.tablegp {
+    --basalt-th-background-color: var(--basalt-bright-element-color);
+}
+
+div.gp_memo {
+    --memo-heading: "Gp快递提醒您";
+    --memo-logo: url(https://scpsandboxcn.wikidot.com/local--files/jr-reboot/header_trans.png);
+    --memo-color: 200, 240, 241;
+}
+
+div.blockquote {
+    background-image: var(--background-logo);
+    background-blend-mode: multiply;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+div.notation {
+    background-image: var(--background-logo);
+    background-blend-mode: multiply;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+div.jotting {
+    background-image: var(--background-logo);
+    background-blend-mode: multiply;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+div.papernote {
+    background-image: var(--background-logo);
+    background-blend-mode: multiply;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+div.scp_memo {
+    --memo-heading: "顺畅包裹提醒您";
+    --memo-logo: url(https://scpsandboxcn.wikidot.com/local--files/jr-reboot/ShunChang%20Package%20Banner%20Logo%20Trans.png);
+    --memo-color: 236, 209, 209;
+}
+[[/module]]
+
+[[iftags +版式]]
+[[>]]
+[[module rate]]
+[[/>]]
+
+此版式由[[*user Jonuarl Reden]]基于玄武岩及[[[gpexpress|Gp快递]]]主题版式而创作，有使用[[[theme:shivering-night|夜琉璃]]]版式的部分代码。该版式在世界观内主要用于2022年左右起的Gp快递GoI格式或故事，因此不建议在其他场合使用该版式，除非：
+* 你是这个版式的作者。
+* 你知道你在干什么。
+
+**本版式不支持暗色模式。**
+
+若需使用此版式，请插入以下文字：
+
+> {{@@[[include :scp-wiki-cn:theme:gp-refresh]]@@}}
+
+------
+
++* 版式设置
+
+由于这是一个基于玄武岩的版式，可直接按照如下方式设置：
+
+**{{@@[[include @@[[span style="opacity: 70%;"]]@@:scp-wiki-cn:@@[[/span]]@@theme:gp-refresh @@##green|版式设置##@@]]@@}}**
+
+**{{@@[[include @@[[span style="opacity: 70%;"]]@@:scp-wiki-cn:@@[[/span]]@@theme:gp-refresh @@##green|版式设置##|##purple|另一个版式设置##@@]]@@}}**
+
+++* 玄武岩基本设置
+
+具体设置请参见[[[theme:basalt|此处说明]]]。
+
+**本版式不支持暗色模式。第二次。**
+
+++* 本版式专用设置
+
+别问为什么这里是*触发，问就是代码力不足。
+
+* **{{half-banner=*}}**[[span class="noclick"]]@@ @@ @@ @@[[/span]]半高版头[[span class="fnnum"]].[[/span]][[span class="fncon"]]移动端强制启用。[[*user Agent FS]]的提议。[[/span]]
+* **{{remove-banner=*}}**[[span class="noclick"]]@@ @@ @@ @@[[/span]]移除版头
+
+想要编辑版头文字？用下面的代码。
+
+[[div class="smallmodal"]]
+{{@@[[module css]]@@}}
+{{:root {}}
+{{@@    --prologue: "这是引文";@@}}
+{{@@    --prologue-setting: visible;@@}}
+{{@@    --prologue-author: "这是作者（虽然可以不说明但是为什么不这么做呢）";@@}}
+{{@@    --prologue-author-setting: visible;@@}}
+}
+{{@@[[/module]]@@}}
+[[/div]]
+
+{{visible}}改成{{hidden}}即可隐去对应的元素。
+
+特别，你可以启用以下设置以体验不一样的东西，但不建议这么做除非：
+* 你是这个版式的作者。
+* 你对__顺畅包裹（ShunChang Package）/基金会物流部中国中心__感兴趣。
+* 你想看上面那个玩意夺舍Gp快递。
+* 你知道这个版式在世界观内意味着什么。
+* 你知道你在干什么。
+
+* **{{scp-takeover=*}}**[[span class="noclick"]]@@ @@ @@ @@[[/span]]__SCP基金会物流部中国中心/顺畅包裹__模式
+
+[[div style="margin-top: 6.5rem;"]]
+[[/div]]
+
++* 页面元素
+
+@@ @@
+= [[span class="st"]]@@[[span class="st"]]@@[[/span]] [[span class="noclick"]] @@ @@ [[/span]] [[span class="specialtext"]]@@[[span class="specialtext"]]@@[[/span]][[span class="fnnum"]].[[/span]][[span class="fncon"]]是的没错我加的下划线，从[[[theme:admo|告诫]]]抄过来的。顺带一提这个更好的脚注其实从玄武岩那里就有了。[[/span]]
+
+= [[span class="bt"]]@@[[span class="bt"]]@@[[/span]] [[span class="noclick"]] @@ @@ [[/span]] [[span class="bigtext"]]@@[[span class="bigtext"]]@@[[/span]]
+@@ @@
+
+[[=]]
+
+[[div class="blockquote"]]
+**{{@@[[div class="blockquote"]]@@}}**
+[[/div]]
+
+[[div class="notation"]]
+**{{@@[[div class="notation"]]@@}}**
+[[/div]]
+
+[[div class="jotting"]]
+**{{@@[[div class="jotting"]]@@}}**
+[[/div]]
+
+[[div class="modal"]]
+**{{@@[[div class="modal"]]@@}}**
+[[/div]]
+
+[[div class="smallmodal"]]
+**{{@@[[div class="smallmodal"]]@@}}**
+[[/div]]
+
+[[div class="papernote"]]
+**{{@@[[div class="papernote"]]@@}}**
+[[/div]]
+
+[[/=]]
+
+@@ @@
+
+
+
+[[div class="floatbox"]]
+**{{@@[[div class="floatbox"]]@@}}**
+
+这是浮动框（floatbox）。你可以在里面塞入任何类型的内容（除了更好的脚注之外，暂时如此）。这些内容会相对于围绕在其旁边的内容浮动在页面的一侧。
+
+[[/div]]
+
+
+
+[[div class="floatbox right"]]
+**{{@@[[div class="floatbox right"]]@@}}**
+[[/div]]
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+
+[[div style="display: flex; flex-flow: row wrap; justify-content: space-between; gap: 2.5rem;"]]
+
+[[div class="document" style="padding-bottom: 23rem; flex-grow: 1;"]]
+**{{@@[[div class="document"]]@@}}**
+[[/div]]
+
+[[div class="darkdocument" style="padding-bottom: 23rem; flex-grow: 1;"]]
+**{{@@[[div class="darkdocument"]]@@}}**
+[[/div]]
+
+[[/div]]
+
+@@ @@
+
+[[div class="raisa_memo"]]
+**{{@@[[div class="raisa_memo"]]@@}}**
+[[/div]]
+
+[[=]]
+[[collapsible show="+ 更多备忘" hide="- 收起"]]
+
+与玄武岩板式同款
+
+[[div class="classification_memo"]]
+**{{@@[[div class="classification_memo"]]@@}}**
+[[/div]]
+
+[[div class="ettra_memo"]]
+**{{@@[[div class="ettra_memo"]]@@}}**
+[[/div]]
+
+[[div class="ethics_memo"]]
+**{{@@[[div class="ethics_memo"]]@@}}**
+[[/div]]
+
+[[div class="temporal_memo"]]
+**{{@@[[div class="temporal_memo"]]@@}}**
+[[/div]]
+
+[[div class="overwatch_memo"]]
+**{{@@[[div class="overwatch_memo"]]@@}}**
+[[/div]]
+
+[[div class="miscomm_memo"]]
+**{{@@[[div class="miscomm_memo"]]@@}}**
+[[/div]]
+
+------
+
+以及全新的Gp快递提示！
+
+[[div class="gp_memo"]]
+**{{@@[[div class="gp_memo"]]@@}}**
+[[/div]]
+
+------
+
+……和奇怪的东西。
+
+[[div class="scp_memo"]]
+**{{@@[[div class="scp_memo"]]@@}}**
+[[/div]]
+
+[[/collapsible]]
+[[/=]]
+
+如果你想改标题
+[[code type="css"]]
+:root {
+    --header-title: "主标题";
+    --header-subtitle: "副标题";
+[[/code]]
+
+
+如果你想改图标
+[[code type="css"]]
+:root {
+--logo: url('图片url');
+}
+[[/code]]
+
+
+[[include component:image-block name= https://scptestwiki.wdfiles.com/local--files/sigma%3Aspace/spacelogo.png |caption=图像。|width=270px]]
+
+可通过Gp个连字符[[footnote]] 不是，哥们？ [[/footnote]]“- - - - -”创建如上方般的装饰性水平分割线。
+
+标题可通过在一行字起始处输入 1 至 6 个加号“+”来创建。
+@@ @@
+
+[[collapsible show="+ 折叠 - 点我" hide="- 折叠 - 点我"]]
++ 1 级标题
+
+++ 2 级标题
+
++++ 3 级标题
+
+++++ 4 级标题
+
++++++ 5 级标题
+
+++++++ 6 级标题
+[[/collapsible]]
+
+@@ @@
+
+[[tabview]]
+[[tab 分页]]
+此为分页（tab view）。
+[[/tab]]
+[[tab 分页]]
+我偷懒了所以只改了头尾、配色，然后又加了一张背景图。
+[[/tab]]
+[[tab 长 Tab]]
+这是一个长的 tab，它有很多文字。[[footnote]]这是一个脚注[[/footnote]]
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+[[/tab]]
+
+[[tab 更长的 Tab]]
+这也是一个长的 tab，它有很多文字。
+
+这也是一个长的 tab，它有很多文字。
+
+这也是一个长的 tab，它有很多文字。
+
+这也是一个长的 tab，它有很多文字。
+
+这也是一个长的 tab，它有很多文字。
+
+这也是一个长的 tab，它有很多文字。
+
+这也是一个长的 tab，它有很多文字。
+
+这也是一个长的 tab，它有很多文字。
+
+这也是一个长的 tab，它有很多文字。
+
+这也是一个长的 tab，它有很多文字。
+
+这也是一个长的 tab，它有很多文字。
+
+这也是一个长的 tab，它有很多文字。
+
+这也是一个长的 tab，它有很多文字。
+
+这也是一个长的 tab，它有很多文字。
+[[/tab]]
+
+[[tab 空 Tab]]
+嘎嘎嘎嘎嘎嘎嘎嘎嘎嘎
+
+[[/tab]]
+[[/tabview]]
+
+
+||~ 这是 ||~ 表格 ||
+||你应该老早 || 就知道怎么 ||
+||||做这个了吧 ||=
+
+
+
+[[div style="margin-top: 6.5rem;"]]
+[[/div]]
+
++* 着色
+
+这和玄武岩是一样的。除了多出来Gp配色和奇怪的东西。
+
+特别，如果启用了**{{scp-takeover}}**那么Gp配色会被夺舍。
+
+@@ @@
+
+[[div style="display: flex; flex-flow: row wrap; gap: 2.5rem;"]]
+
+[[div class="table1"]]
+||~ {{.table1}} ||
+||= 这里是文本 ||
+||= 这里是文本 ||
+||= 这里是文本 ||
+[[/div]]
+
+
+
+[[div class="table2"]]
+||~ {{.table2}} ||
+||= 这里是文本 ||
+||= 这里是文本 ||
+||= 这里是文本 ||
+[[/div]]
+
+
+
+[[div class="table3"]]
+||~ {{.table3}} ||
+||= 这里是文本 ||
+||= 这里是文本 ||
+||= 这里是文本 ||
+[[/div]]
+
+
+
+[[div class="table4"]]
+||~ {{.table4}} ||
+||= 这里是文本 ||
+||= 这里是文本 ||
+||= 这里是文本 ||
+[[/div]]
+
+
+
+[[div class="table5"]]
+||~ {{.table5}} ||
+||= 这里是文本 ||
+||= 这里是文本 ||
+||= 这里是文本 ||
+[[/div]]
+
+
+
+[[div class="table6"]]
+||~ {{.table6}} ||
+||= 这里是文本 ||
+||= 这里是文本 ||
+||= 这里是文本 ||
+[[/div]]
+
+[[div class="tablegp"]]
+||~ {{.tablegp}} ||
+||= 这里是文本 ||
+||= 这里是文本 ||
+||= 这里是文本 ||
+[[/div]]
+
+[[div class="tablescp"]]
+||~ {{.tablescp}} ||
+||= 这里是文本 ||
+||= 这里是文本 ||
+||= 这里是文本 ||
+[[/div]]
+
+
+
+[[/div]]
+
+
+
+[[=]]
+[[div style="font-size: 1.5em !important;"]]
+[[span style="font-family: var(--header-font);"]]页眉字体与用户界面字体为 **Sofia Sans** / **思源黑体**。[[/span]]
+正文字体为 **Inter** / **思源黑体**。
+{{等宽字体为 **JetBrains Mono** / **思源宋体**。}}
+[[/div]]
+[[/=]]
+
+[[/iftags]]
