@@ -1,0 +1,1142 @@
+[[include :scp-jp:theme:aero-glass]]
+
+[[module CSS]]
+
+/* ===Preset: Cobalt=== */
+
+:root {
+    --white-monochrome: 230, 230, 230;
+    --pale-gray-monochrome: 214, 245, 255;
+    --very-light-gray-monochrome: 220, 222, 230;
+    --light-gray-monochrome: 70, 130, 183;
+    --gray-monochrome: 0, 35, 100;
+    --dark-gray-monochrome: 10, 30, 55;
+    --pale-accent: 136, 198, 201;
+    --bright-accent: 140, 234, 222;
+    --medium-accent: 41, 127, 128;
+    --dark-accent: var(--dark-gray-monochrome);
+    --newpage-color: 150, 235, 150;
+
+    --logo: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Acobalt-aero-glass-jp/paradigm-shift-seal.svg);
+
+    --background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Acobalt-aero-glass-jp/006Vtzrtly1h5mq8zzqv0j321i0rswq7.jpg);
+
+    --main-aero-glass-filter: blur(7px);
+
+    --title: " パラダイムシフト";
+    --subtitle: " パラダイムシフト";
+}
+
+body {
+    background-blend-mode: luminosity;
+}
+
+#extra-div-1::before, #extra-div-2::before, #side-bar::before {
+    font-family:  'Fira Code', monospace;
+}
+
+
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Acobalt-aero-glass-jp/1
+]]
+
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** Cobalt Aero Glassテーマ
+**翻訳責任者:** SCP-JP
+**翻訳年:** 2026
+**原題:** 钴玻璃 主题版式
+**著作権者:** [[*user Mercuresphere]]
+**作成年:** 2022
+**初訳時参照リビジョン:** 56
+**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:cobalt-aero-glass ソース]
+**背景画像:** https://pixabay.com/images/id-1572988 （Pixabay License）
+[[include :scp-jp:credit:end-preview]]
+
+[[=]]
++ テーマカラー
+[[/=]]
+
+[[include :scp-jp:component:theme-squares -=-
+| color1-name=Deep Sea
+| color1-variable=--gray-monochrome
+| color1-info=(0, 35, 100)
+| color1-has-light-text=1
+| color2-name=Phosphorescence
+| color2-variable=--bright-accent
+| color2-info=(163, 233, 224)
+| subcolor1-name=Azure
+| subcolor1-variable=--pale-gray-monochrome
+| subcolor1-info=(214, 245, 255)
+| subcolor2-name=Cirrostratus
+| subcolor2-variable=--light-gray-monochrome
+| subcolor2-info=(70, 130, 183)
+| subcolor2-has-light-text=1
+| subcolor3-name=Abyss
+| subcolor3-variable=--dark-gray-monochrome
+| subcolor3-info=(10, 30, 55)
+| subcolor3-has-light-text=1
+| subcolor4-name=Ash
+| subcolor4-variable=--white-monochrome
+| subcolor4-info=(230, 230, 230)
+| subcolor5-name=Turquoise
+| subcolor5-variable=--medium-accent
+| subcolor5-info=(41, 127, 128)
+| subcolor5-has-light-text=1
+| subcolor6-name=Lawn
+| subcolor6-variable=--newpage-color
+| subcolor6-info=(150, 235, 150)
+]]
+
++ このページについて
+
+これは[[*user Mercuresphere]]が図書館カノン「[[[wanderers:paradigm-shift-hub | パラダイムシフト]]]」のためにデザインしたテーマです。
+
+このテーマはパラダイムシフト専用ではなく、パラダイムシフトのページで必ず使用しなければならないものでもありません。
+
+このテーマを使用するには、作品の冒頭に以下の構文を追加してください。
+
+> [[include :scp-jp:theme:cobalt-aero-glass]]
+
++ サンプル
+
+[[include component:image-block name=https://sigma10-jp-test.wdfiles.com/local--files/theme%3Acobalt-aero-glass-jp/paradigm-shift-seal.svg |caption=パラダイムシフト|width=300px]]
+
+5つのハイフン「@@-----@@」で水平線を作成できます。引用ブロックなどの部品内に置かれていなければ、ページの左右いっぱいまで伸びます。このようにファイルを複数の部分へ区切る線が水平線です。
+
+-----
+
+見出しは、行頭に1個から6個のプラス記号「+」を入力して作成できます。
+
+[[collapsible show="+ 見出し" hide="- 見出し"]]
++ レベル1見出し
+
+++ レベル2見出し
+
++++ レベル3見出し
+
+++++ レベル4見出し
+
++++++ レベル5見出し
+
+++++++ レベル6見出し
+[[/collapsible]]
+
+@@ @@
+
+[[tabview]]
+[[tab ページ]]
+「@@-----@@」をclassが「fancyhr」のdiv要素内に置くと、以下のように別の水平線スタイルを表示できます。
+> @@[[div_ class="fancyhr"]]@@
+> @@-----@@
+> @@[[/div]]@@
+
+表示結果は以下のとおりです。
+
+[[div_ class="fancyhr"]]
+-----
+[[/div]]
+
+[[div class="fancyborder"]]
+任意の要素に「fancyborder」classを追加すると、特殊な枠線を表示できます。たとえば、このボックスのコードは以下のとおりです。
+
+> @@[[div class="fancyborder"]]@@
+> @@本文@@
+> @@[[/div]]@@
+
+[[/div]]
+
+[[/tab]]
+[[tab ページ]]
+さらにテキスト。
+
+なんとも精巧ですね。
+
+[[/tab]]
+[[tab 長いタブ]]
+
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+
+[[/tab]]
+[[tab 空タブ]]
+[[/tab]]
+[[tab 空タブ]]
+[[/tab]]
+[[tab 空タブ]]
+[[/tab]]
+[[tab 空タブ]]
+[[/tab]]
+[[tab 空タブ]]
+░░░░░▄▄▄▄▀▀▀▀▀▀▀▀▄▄▄▄▄▄░░░░░░░
+░░░░░█░░░░▒▒▒▒▒▒▒▒▒▒▒▒░░▀▀▄░░░░
+░░░░█░░░▒▒▒▒▒▒░░░░░░░░▒▒▒░░█░░░
+░░░█░░░░░░▄██▀▄▄░░░░░▄▄▄░░░░█░░
+░▄▀▒▄▄▄▒░█▀▀▀▀▄▄█░░░██▄▄█░░░░█░
+█░▒█▒▄░▀▄▄▄▀░░░░░░░░█░░░▒▒▒▒▒░█
+█░▒█░█▀▄▄░░░░░█▀░░░░▀▄░░▄▀▀▀▄▒█
+░█░▀▄░█▄░█▀▄▄░▀░▀▀░▄▄▀░░░░█░░█░
+░░█░░░▀▄▀█▄▄░█▀▀▀▄▄▄▄▀▀█▀██░█░░
+░░░█░░░░██░░▀█▄▄▄█▄▄█▄████░█░░░
+░░░░█░░░░▀▀▄░█░░░█░█▀██████░█░░
+░░░░░▀▄░░░░░▀▀▄▄▄█▄█▄█▄█▄▀░░█░░
+░░░░░░░▀▄▄░▒▒▒▒░░░░░░░░░░▒░░░█░
+░░░░░░░░░░▀▀▄▄░▒▒▒▒▒▒▒▒▒▒░░░░█░
+░░░░░░░░░░░░░░▀▄▄▄▄▄░░░░░░░░█░░
+[[/tab]]
+[[tab 空タブ]]
+[[/tab]]
+[[/tabview]]
+
+> これは引用ブロックです。行頭に「> 」を付けて作成します。
+>
+> さらにテキスト
+> -----
+> 水平線
+>
+>> 入れ子の引用ブロック[[footnote]] 脚注です [[/footnote]]
+
+||~ これは ||~ 表です ||
+||もうずいぶん前から || 作り方は分かっている ||
+||||はずですよね ||
+
+
+[[=]]
+本文フォントはNoto Sans JPです。
+[[span style="font-family: var(--title-font);"]]ページヘッダーと見出しのフォントはWork Sansです。[[/span]]
+[[span style="font-family: var(--mono-font);"]]等幅フォントはFira Codeです。[[/span]]
+[[/=]]
+
+-----
+
+[[collapsible show="+ コードを表示" hide="- コードを隠す" hideLocation="both"]]
+
+[[code type="CSS"]]
+/* Cobalt Aero Glass Theme */
+/* 2022 Wikidot Theme */
+/* By Mercuresphere */
+/* Based on Basalt Theme by Liryn & Placeholder McD  */
+/* CC BY-SA 3.0 */
+
+:root {
+    --white-monochrome: 230, 230, 230;
+    --pale-gray-monochrome: 214, 245, 255;
+    --very-light-gray-monochrome: 220, 222, 230;
+    --light-gray-monochrome: 70, 130, 183;
+    --gray-monochrome: 0, 35, 100;
+    --dark-gray-monochrome: 10, 30, 55;
+    --pale-accent: 136, 198, 201;
+    --bright-accent: 140, 234, 222;
+    --medium-accent: 41, 127, 128;
+    --dark-accent: var(--dark-gray-monochrome);
+    --newpage-color: 150, 235, 150;
+
+    --logo: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Acobalt-aero-glass-jp/paradigm-shift-seal.svg);
+
+    --background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Acobalt-aero-glass-jp/006Vtzrtly1h5mq8zzqv0j321i0rswq7.jpg);
+
+    --main-aero-glass-filter: blur(7px);
+
+    --title: " パラダイムシフト";
+    --subtitle: " パラダイムシフト";
+}
+
+/* body */
+
+body {
+    background-color: rgb(var(--dark-gray-monochrome));
+    background-image: var(--background-image);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: luminosity;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Noto Sans JP', 'Noto Sans CJK JP', sans-serif;
+}
+
+#content-wrap {
+    margin: 2em auto 2em;
+}
+
+#footer,
+#license-area {
+    display: none !important;
+}
+
+/* メインのすりガラス枠 */
+
+#main-content::before {
+    content: " ";
+    border: 1px solid rgb(var(--white-monochrome));
+    border-radius: 10px;
+    position: absolute;
+    width: 106%;
+    height: calc(100% + 2rem);
+    background: rgba(var(--gray-monochrome), 0.25);
+    -webkit-backdrop-filter: var(--main-aero-glass-filter);
+    backdrop-filter: var(--main-aero-glass-filter);
+    display: block;
+    z-index: -6;
+    left: calc(-3% - 1px);
+    box-shadow: 0px 0px 8px 4px rgba(var(--dark-gray-monochrome), 0.8);
+    top: -1rem;
+}
+
+@media only screen and (min-width: 768px) {
+    #main-content::before {
+        width: calc(100vw - 20px);
+        height: 100%;
+        top: 1rem;
+        left: calc((100vw - 20px - 100%) / (-2) - 1px);
+    }
+}
+
+@media only screen and (min-width: 975px) {
+    #main-content::before {
+        width: 110%;
+        left: calc(-5% - 1px);
+        top: 1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #main-content::before {
+        border: 1px solid rgba(var(--white-monochrome), 0.5);
+        border-radius: 6px;
+    }
+}
+
+/* トップバー */
+
+#extra-div-1 {
+    background: linear-gradient(180deg, rgba(var(--dark-gray-monochrome), 0.5) 0%, rgba(var(--gray-monochrome), 0.5) 100%);
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+    box-shadow: 0px 1px rgb(var(--white-monochrome)), inset 0px 1px rgb(var(--white-monochrome)), 0px 0px 8px 2px rgba(0, 0, 0, 0.8);
+}
+
+#extra-div-1 {
+    top: 1px;
+}
+
+#extra-div-1::before, #extra-div-2::before, #side-bar::before {
+    font-family:  'Fira Code', monospace;
+}
+
+#side-bar::before {
+    word-spacing: -2px;
+}
+
+.hovertip,
+#account-options {
+    background: rgba(var(--very-light-gray-monochrome), 0.25) !important;
+    border: 1px solid rgb(var(--white-monochrome)) !important;
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    box-shadow: 0px 0px 8px 2px rgba(var(--dark-gray-monochrome), 0.8) !important;
+    border-radius: 8px !important;
+}
+
+#top-bar ul li.sfhover a:hover,
+#top-bar ul li:hover a:hover {
+    background: rgba(var(--very-light-gray-monochrome), 0.25);
+}
+
+#top-bar ul li.sfhover ul li a,
+#top-bar ul li:hover ul li a {
+    background-color: transparent;
+}
+
+#top-bar li:hover ul,
+#top-bar li.sfhover ul {
+    background-color: transparent;
+    border: 1px solid rgb(var(--white-monochrome)) !important;
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    box-shadow: 0px 0px 8px 2px rgba(var(--dark-gray-monochrome), 0.8) !important;
+    border-radius: 8px !important;
+}
+
+#top-bar ul li.sfhover ul li:first-of-type a,
+#top-bar ul li:hover ul li:first-of-type a {
+    border-top: 0;
+}
+
+#top-bar ul li>a:hover {
+    transform: none;
+}
+
+
+/* 検索ボックスとページヘッダー見出し */
+
+#search-top-box-form>input[type=submit],
+#search-top-box-form>input[type=submit]:hover,
+#search-top-box-form>input[type=submit]:focus,
+#search-top-box-form>input[type=submit]:target {
+    margin-top: 0;
+}
+
+div#search-top-box {
+    top: 14px;
+}
+
+#extra-div-1::before {
+    top: 0.7rem;
+}
+
+#extra-div-2::before {
+    top: 2.8rem;
+}
+
+@media (max-width: 1020px) {
+    #extra-div-1::before {
+        top: 0.3rem;
+        font-size: calc(0.85 * 27.45px);
+    }
+}
+
+@media (max-width: 1020px) {
+    #extra-div-2::before {
+        top: 2rem;
+        font-size: calc(0.85 * 1.22em);
+    }
+}
+
+
+/* ページ要素の枠線調整 */
+
+blockquote,
+div.blockquote {
+    background: rgba(var(--very-light-gray-monochrome), 0.25);
+    border: 1px solid rgb(var(--white-monochrome));
+    border-radius: 10px;
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    box-shadow: 0px 0px 8px 2px rgba(var(--dark-gray-monochrome), 0.8);
+}
+
+.scp-image-block img,
+.scp-image-block .scp-image-caption {
+    outline: solid 1px rgb(var(--white-monochrome));
+    box-shadow: 0px 0px 8px 2px rgba(var(--dark-gray-monochrome), 0.7);
+    background: rgba(var(--very-light-gray-monochrome), 0.5);
+    margin-top: 10px;
+}
+
+.scp-image-block img {
+    background: transparent;
+}
+
+.modalbox {
+    background: rgba(var(--very-light-gray-monochrome), 0.25) !important;
+    border: 1px solid rgb(var(--white-monochrome)) !important;
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    box-shadow: 0px 0px 8px 2px rgba(var(--dark-gray-monochrome), 0.8) !important;
+    border-radius: 10px !important;
+}
+
+
+/* hrとfancyborder */
+
+hr {
+    height: 1px;
+    border: 0;
+    background-color: rgb(var(--white-monochrome));
+    box-shadow: 0px 0px 8px 2px rgba(var(--dark-gray-monochrome), 0.8);
+    background-image: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 1em 0;
+}
+
+div#u-credit-view hr {
+    margin: 1em 2em;
+}
+
+@media (max-width: 767px) {
+
+    #page-content>hr,
+    #page-content>.list-pages-box>.list-pages-item>hr {
+        margin: 1em 0;
+    }
+}
+
+.fancyhr hr {
+    filter: saturate(0);
+    border-top: 2vw solid transparent;
+    height: 0;
+    box-sizing: border-box;
+    border-image-source: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Acobalt-aero-glass-jp/wl_hr.png");
+    border-image-repeat: round round;
+    background: rgba(var(--bright-accent), 0) none;
+    border-image-slice: 80 500 80 500 fill;
+    border-image-width: 10em 80em 10em 80em;
+    box-shadow: none;
+}
+
+.fancyborder {
+    border: 2vw solid rgba(0, 0, 0, 0.5);
+    border-image: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Acobalt-aero-glass-jp/wl_border.png") 600 round;
+    border-image-width: 6;
+}
+
+
+/* yui-tabs */
+
+
+.yui-navset .yui-content {
+    background: transparent;
+    box-shadow: none;
+    border-bottom: dotted 4px rgb(var(--white-monochrome));
+}
+
+.yui-navset .yui-nav,
+.yui-navset .yui-navset-top .yui-nav {
+    border: 1px solid rgb(var(--white-monochrome));
+    box-shadow: 0px 0px 8px 4px rgb(0 0 0 / 70%);
+}
+
+
+.yui-navset .yui-content {
+    background: transparent;
+    box-shadow: none;
+    border-bottom: dotted 4px rgb(var(--white-monochrome));
+}
+
+.yui-navset .yui-nav,
+.yui-navset .yui-navset-top .yui-nav {
+    border: 1px solid rgb(var(--white-monochrome));
+    box-shadow: 0px 0px 8px 4px rgb(0 0 0 / 70%);
+}
+
+.yui-navset .yui-nav .selected,
+.yui-navset .yui-navset-top .yui-nav .selected,
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:active,
+.yui-navset .yui-nav a:focus {
+    background: rgba(var(--very-light-gray-monochrome), 0.5);
+}
+
+.yui-navset .yui-nav a,
+.yui-navset .yui-navset-top .yui-nav a {
+    background: rgba(var(--pale-gray-monochrome), 0.25);
+    border-radius: 10px;
+}
+
+.yui-navset .yui-nav li,
+.yui-navset .yui-navset-top .yui-nav li {
+    background: none;
+    border-radius: 10px;
+}
+
+.yui-navset .yui-nav .selected a:focus,
+.yui-navset .yui-nav .selected a:active {
+    background-color: rgba(var(--very-light-gray-monochrome), 0.5);
+}
+
+.yui-navset .yui-nav,
+.yui-navset .yui-navset-top .yui-nav {
+    box-shadow: 0px 0px 8px 2px rgb(0 0 0 / 70%);
+    border-radius: 10px;
+}
+
+.yui-navset .yui-nav .selected a {
+    width: 100%;
+    color: rgb(var(--dark-gray-monochrome));
+}
+
+.yui-navset .yui-nav .selected a:focus,
+.yui-navset .yui-nav .selected a:active {
+    color: rgb(var(--dark-gray-monochrome));
+}
+
+/* サイドバー */
+
+#side-bar {
+    background: linear-gradient(0deg, rgba(var(--dark-gray-monochrome), 0.85) 87%, rgba(var(--dark-gray-monochrome)) 100%);
+    direction: rtl;
+}
+
+#side-bar .side-block {
+    direction: ltr;
+    background: linear-gradient(180deg, rgba(10, 10, 10, 1) 0%, rgb(var(--gray-monochrome)) 100%);
+    border: solid 2px rgb(var(--gray-monochrome));
+}
+
+#side-bar .side-block.resources {
+    background: linear-gradient(180deg, rgba(10, 10, 10, 1) 0%, rgb(var(--gray-monochrome)) 100%) !important;
+    border: solid 2px rgb(var(--gray-monochrome));
+}
+
+#side-bar .side-block.media {
+    background-color: rgb(5 5 5) !important;
+    border-bottom: solid 2px rgb(10, 10, 10);
+    border-top: solid 2px rgb(10 10 10);
+}
+
+@media (max-width: 767px) {
+    #side-bar:target {
+        border: none;
+        box-shadow: 3px 0 1px -2px rgb(0 0 0 / 4%), 1px 0 5px 0 rgb(0 0 0 / 20%), inset -1px 0px rgb(var(--white-monochrome));
+    }
+}
+
+#side-bar {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3), inset -1px 0px rgb(var(--white-monochrome));
+}
+
+/* 評価モジュール */
+
+#page-content .page-rate-widget-box {
+    border: 1px solid rgb(var(--white-monochrome));
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px 2px rgba(var(--dark-gray-monochrome), 0.8);
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+}
+
+#page-content .rate-box-with-credit-button {
+    border: none;
+    background: transparent;
+}
+
+#page-content .page-rate-widget-box .rate-points {
+    background-color: transparent !important;
+    color: #F5F5F5 !important;
+    border: none;
+}
+
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown,
+.page-rate-widget-box .cancel {
+    background: transparent !important;
+}
+
+#page-content .rate-box-with-credit-button {
+    box-shadow: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#action-area .page-rate-widget-box .rate-points {
+    background-color: transparent !important;
+    color: #F5F5F5 !important;
+    border: none;
+}
+
+#action-area .page-rate-widget-box {
+    box-shadow: 0px 0px 8px 2px rgba(var(--dark-gray-monochrome), 0.8);
+    border: 1px solid rgb(var(--white-monochrome));
+    border-radius: 5px;
+}
+
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover,
+.page-rate-widget-box .cancel a:hover,
+#page-content .rate-box-with-credit-button .fa-info:hover {
+    background: transparent;
+    color: rgb(var(--bright-accent));
+}
+
+.rate-box-with-credit-button .creditButton {
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 20px;
+    border: 1px solid rgb(var(--white-monochrome));
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px 2px rgba(var(--dark-gray-monochrome), 0.8);
+    display: inline-flex !important;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6px;
+}
+
+.creditButton p a {
+    margin-left: 0 !important;
+}
+
+.creditRate .rateBox p {
+    padding-top: 1px !important;
+}
+
+.rate-box-with-credit-button .page-rate-widget-box .cancel {
+    padding-right: 4px;
+}
+
+/* 脚注 */
+
+.footnotes-footer {
+    border-left: solid 3px rgb(var(--white-monochrome));
+}
+
+.footnotes-footer a {
+    color: rgb(var(--white-monochrome));
+}
+
+/* 選択範囲の背景 */
+
+::-moz-selection {
+    color: inherit;
+    background: rgba(var(--bright-accent), .25);
+    text-shadow: none
+}
+
+::selection {
+    color: inherit;
+    background: rgba(var(--bright-accent), .25);
+    text-shadow: none
+}
+
+/* リンク */
+
+a {
+    color: rgb(var(--bright-accent));
+}
+
+a:visited {
+    color: rgb(var(--bright-accent));
+}
+
+a,
+a.newpage {
+    background: transparent;
+}
+
+a.newpage {
+    color: rgb(var(--newpage-color));
+}
+
+a:active,
+a:hover {
+    background-color: initial;
+    color: rgb(var(--pale-accent));
+}
+
+#main-content .page-tags a {
+    background: rgba(var(--very-light-gray-monochrome), 0.25);
+    border: 1px solid rgb(var(--white-monochrome));
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    box-shadow: 0px 0px 8px 2px rgba(var(--dark-gray-monochrome), 0.8);
+}
+
+#main-content a.collapsible-block-link {
+    background: rgba(var(--very-light-gray-monochrome), 0.25);
+    border: 1px solid rgb(var(--white-monochrome));
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    box-shadow: 0px 0px 8px 2px rgba(var(--dark-gray-monochrome), 0.8);
+    border-radius: 5px;
+}
+
+/* ダイアログ */
+
+#owindow-1.owindow {
+    background: rgba(var(--very-light-gray-monochrome), 0.15) !important;
+    border: 1px solid rgb(var(--white-monochrome)) !important;
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    box-shadow: 0px 0px 8px 2px rgba(var(--dark-gray-monochrome), 0.8) !important;
+    border-radius: 10px !important;
+}
+
+#owindow-1>div.title.modal-header {
+    background: transparent;
+}
+
+#owindow-1>div.content.modal-body>div {
+    border-top: dotted 2px rgb(var(--white-monochrome));
+}
+
+.owindow .button-bar {
+    margin: 7px;
+}
+
+#owindow-1>div.content.modal-body>table {
+    border-right: none;
+}
+
+/* ボタン */
+
+a.btn.btn-danger,
+a.btn.btn-primary,
+.btn-small,
+#owindow-1>div.button-bar.modal-footer>a,
+#edit-cancel-button,
+#edit-diff-button,
+#edit-preview-button,
+#edit-save-draft-button,
+#edit-save-continue-button,
+#edit-save-button,
+#owindow-1>div.content.modal-body>div>a.btn.btn-default,
+#action-area>p:nth-child(5)>a {
+    background: rgba(var(--very-light-gray-monochrome), 0.25) !important;
+    border: 1px solid rgb(var(--white-monochrome)) !important;
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    box-shadow: 0px 0px 4px 2px rgba(var(--dark-gray-monochrome), 0.8) !important;
+    border-radius: 5px !important;
+}
+
+a.collapsible-block-link:hover,
+a.btn.btn-danger:hover,
+a.btn.btn-primary:hover,
+.btn-small:hover,
+#owindow-1>div.button-bar.modal-footer>a:hover,
+#edit-cancel-button:hover,
+#edit-diff-button:hover,
+#edit-preview-button:hover,
+#edit-save-draft-button:hover,
+#edit-save-continue-button:hover,
+#edit-save-button:hover,
+#owindow-1>div.content.modal-body>div>a.btn.btn-default:hover,
+#action-area>p:nth-child(5)>a:hover {
+    color: rgb(var(--pale-accent));
+}
+
+a.btn.btn-danger:not(.btn-small.btn-sm) {
+    margin-bottom: 4px !important;
+}
+
+#owindow-1>div.content.modal-body td.active>b {
+    font-family: 'Work Sans', sans-serif;
+    color: rgb(200 200 200);
+}
+
+/* タグ */
+
+#main-content .page-tags a {
+    font-family: sans-serif;
+}
+
+#main-content .page-tags a:before {
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* スクロールバー */
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(var(--light-gray-monochrome));
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(var(--medium-accent));
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(var(--gray-monochrome), 0.85);
+}
+
+
+/* パンくずリスト */
+
+
+#breadcrumbs {
+    color: rgba(var(--white-monochrome), 0.9);
+}
+
+/* 表 */
+
+#page-content .wiki-content-table tr th {
+    background-color: rgba(var(--very-light-gray-monochrome), 0.6);
+    border-color: rgb(var(--white-monochrome));
+    color: rgb(var(--dark-gray-monochrome));
+}
+
+#page-content .wiki-content-table tr td {
+    border: 1px solid rgb(var(--white-monochrome)) !important;
+}
+
+/* 色調整 */
+
+.close-credits {
+    filter: hue-rotate(177deg) saturate(0.4) brightness(4);
+}
+
+/* 問題のある大文字小文字変換を調整 */
+
+#owindow-1 td::first-letter {
+    text-transform: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: none;
+}
+
+/* ===ページ保存問題を回避する内蔵モジュール=== */
+body[class="wait"] #odialog-shader-iframe,
+body[class="wait"] #odialog-shader {
+    display: none !important;
+}
+
+#odialog-container {
+    position: fixed !important;
+}
+
+body[class="wait"] #odialog-container {
+    z-index: -1;
+}
+
+body[class="wait"] #odialog-container #owindow-1 {
+    display: none !important;
+}
+
+body[class="wait"] a[name="page-top"][target]+div #main-content #action-area div#lock-info {
+    background-color: rgb(var(--dark-accent));
+    border: 1px solid rgb(var(--bright-accent));
+}
+
+div#lock-info {
+    font-size: 0 !important;
+    margin: .8rem 0 .8rem 1rem !important;
+    padding: 0.4rem .8rem !important;
+}
+
+div#lock-info::before {
+    content: 'あなたは15分間の排他的ロックを保持しています。これにより、作業中のページを他のユーザーが編集できなくなります。\Aこのロックは、操作がないまま ';
+    display: inline;
+    font-size: .82rem;
+    white-space: pre-wrap;
+}
+
+div#lock-info>strong {
+    font-size: .82rem;
+}
+
+div#lock-info>br {
+    display: none;
+}
+
+div#lock-info::after {
+    content: ' 秒経過すると失効します。';
+    display: inline;
+    font-size: .82rem;
+}
+
+body[class="wait"] a[name="page-top"][target]+div #main-content #action-area div#lock-info::before {
+    content: 'ページを保存しています……\Aこの表示が長時間続く場合は、編集欄の内容をクリップボードにコピーし、ページを再読み込みして編集をやり直してください。';
+    display: inline;
+    font-size: .82rem;
+    color: rgb(var(--bright-accent));
+    white-space: pre-wrap;
+}
+
+body[class="wait"] a[name="page-top"][target]+div #main-content #action-area div#lock-info::after {
+    font-size: 0;
+}
+
+body[class="wait"] a[name="page-top"][target]+div #main-content #action-area div#lock-info>strong {
+    font-size: 0;
+}
+
+body[class="wait"] a[name="page-top"][target]+div #main-content #action-area div#lock-info::after {
+    font-size: 0;
+}
+
+/* ===iOS端末での表示を修正=== */
+@supports (-webkit-touch-callout: none) {
+    .fancyhr hr {
+        filter: saturate(0);
+        border-image-source: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Acobalt-aero-glass-jp/wl_hr.png");
+        border-image-repeat: repeat;
+        border-image-slice: 80 500 80 500 fill;
+        border-image-width: 10em 80em 10em 80em;
+    }
+}
+
+/* ===Firefoxでの表示を修正=== */
+
+@-moz-document url-prefix() {
+    #main-content::before {
+        content: " ";
+        border: 1px solid rgb(var(--white-monochrome));
+        border-radius: 10px;
+        position: absolute;
+        width: 106%;
+        height: calc(100% + 2rem);
+        background: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Acobalt-aero-glass-jp/006Vtzrtly1h5mksft9x8j33j81c34qq.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: auto 100%;
+        background-position: center top;
+        display: block;
+        filter: var(--main-aero-glass-filter);
+        z-index: -6;
+        left: calc(-3% - 1px);
+        box-shadow: 0px 0px 8px 4px rgba(var(--dark-gray-monochrome), 0.8);
+        top: -1rem;
+    }
+
+    #main-content::after {
+        content: " ";
+        border: 1px solid rgb(var(--white-monochrome));
+        border-radius: 10px;
+        position: absolute;
+        width: 106%;
+        height: calc(100% + 2rem);
+        background: rgba(var(--gray-monochrome), 0.25);
+        display: block;
+        z-index: -6;
+        left: calc(-3% - 1px);
+        box-shadow: 0px 0px 8px 4px rgba(var(--dark-gray-monochrome), 0.8);
+        top: -1rem;
+    }
+
+    @media only screen and (min-width: 768px) {
+        #main-content::before {
+            width: calc(100vw - 20px);
+            height: 100%;
+            top: 1rem;
+            left: calc((100vw - 20px - 100%) / (-2) - 1px);
+        }
+
+        #main-content::after {
+            width: calc(100vw - 20px);
+            height: 100%;
+            top: 1rem;
+            left: calc((100vw - 20px - 100%) / (-2) - 1px);
+        }
+    }
+
+    @media only screen and (min-width: 975px) {
+        #main-content::before {
+            width: 110%;
+            left: calc(-5% - 1px);
+            top: 1rem;
+        }
+
+        #main-content::after {
+            width: 110%;
+            left: calc(-5% - 1px);
+            top: 1rem;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        #main-content::before {
+            border: 1px solid rgba(var(--white-monochrome), 0.5);
+            border-radius: 6px;
+        }
+    }
+}
+
+/* ===ブラウザがbackdrop-filterに対応していない場合の代替表示=== */
+
+@supports (not ((backdrop-filter: blur(7px)) or (-webkit-backdrop-filter: blur(7px)))) {
+    #main-content::before {
+        content: " ";
+        border: 1px solid rgb(var(--white-monochrome));
+        border-radius: 10px;
+        position: absolute;
+        width: 106%;
+        height: calc(100% + 2rem);
+        background: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Acobalt-aero-glass-jp/006Vtzrtly1h5mksft9x8j33j81c34qq.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: auto 100%;
+        background-position: center top;
+        display: block;
+        filter: var(--main-aero-glass-filter);
+        z-index: -6;
+        left: calc(-3% - 1px);
+        box-shadow: 0px 0px 8px 4px rgba(var(--dark-gray-monochrome), 0.8);
+        top: -1rem;
+    }
+
+    #main-content::after {
+        content: " ";
+        border: 1px solid rgb(var(--white-monochrome));
+        border-radius: 10px;
+        position: absolute;
+        width: 106%;
+        height: calc(100% + 2rem);
+        background: rgba(var(--gray-monochrome), 0.25);
+        display: block;
+        z-index: -6;
+        left: calc(-3% - 1px);
+        box-shadow: 0px 0px 8px 4px rgba(var(--dark-gray-monochrome), 0.8);
+        top: -1rem;
+    }
+
+    @media only screen and (min-width: 768px) {
+        #main-content::before {
+            width: calc(100vw - 20px);
+            height: 100%;
+            top: 1rem;
+            left: calc((100vw - 20px - 100%) / (-2) - 1px);
+        }
+
+        #main-content::after {
+            width: calc(100vw - 20px);
+            height: 100%;
+            top: 1rem;
+            left: calc((100vw - 20px - 100%) / (-2) - 1px);
+        }
+    }
+
+    @media only screen and (min-width: 975px) {
+        #main-content::before {
+            width: 110%;
+            left: calc(-5% - 1px);
+            top: 1rem;
+        }
+
+        #main-content::after {
+            width: 110%;
+            left: calc(-5% - 1px);
+            top: 1rem;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        #main-content::before {
+            border: 1px solid rgba(var(--white-monochrome), 0.5);
+            border-radius: 6px;
+        }
+    }
+}
+
+/* ----END---- */
+[[/code]]
+[[/collapsible]]
+[[/iftags]]

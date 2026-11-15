@@ -1,0 +1,1756 @@
+[[module CSS]]
+@import url(https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aconstruct-jp/1);
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aconstruct-jp/1
+]]
+
+[[div class="construct-body-bg-switch construct-body-bg-{$bodybg}"]]
+&#x20;
+[[/div]]
+
+[[iftags +テーマ]]
+
+[[div class="construct-poster"]]
+[[div class="construct-poster-word construct-poster-scp construct-poster-top"]]
+SCP
+[[/div]]
+[[div class="construct-poster-word construct-poster-foundation construct-poster-top"]]
+Foundation
+[[/div]]
+[[div class="construct-poster-word construct-poster-title"]]
+構成
+[[/div]]
+[[div class="construct-poster-word construct-poster-note"]]
+確保、収容、保護
+[[/div]]
+[[div class="construct-poster-word construct-poster-scp construct-poster-bottom"]]
+SCP
+[[/div]]
+[[div class="construct-poster-word construct-poster-foundation construct-poster-bottom"]]
+Foundation
+[[/div]]
+[[/div]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** 構成テーマ
+**翻訳責任者:** SCP-JP
+**翻訳年:** 2026
+**原題:** 构成 主题版式
+**著作権者:** Mr_J_AND
+**作成年:** 2026
+**初訳時参照リビジョン:** 24
+**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:construct ソース]
+[[include :scp-jp:credit:end-preview]]
+
+[[div class="construct-strip"]]
+[[span class="construct-number"]]01[[/span]][[span class="construct-label"]]テーマについて / 使い方[[/span]]
+[[/div]]
+
++ 構成テーマ
+
+本テーマはSigma-9を基礎とし、構成主義のスタイルを大まかに模倣したもので、楔形・円弧・斜線・カラーブロックをヘッダーとレイアウトの端に無造作に配置します。ヘッダーには人間が描き直したSCP-Cロゴを使用し、上部のポスターは編集可能なWebテキストのまま保持され、本文は生成り色の背景になります。
+
+本テーマはまた、[[[theme:turbo-vision|Turbo Vision]]]テーマのテキストブロックを見事に盗用しています。詳細は第5部を参照してください。
+
+記事の冒頭に以下のコードを加えてください。
+
+> @@[[include :scp-jp:theme:construct]]@@
+
+背景パターンは既定で表示され、非ワイドスクリーンでは読書体験を優先して非表示になります。図案が邪魔だと感じる場合は、テーマ適用時に無効化できます。
+
+> @@[[include :scp-jp:theme:construct | bodybg=off]]@@
+
+@@bodybg=on@@ に戻すか、パラメータを省略すれば再び有効になります。このオプションは本文領域の背景パターンのみを制御し、ヘッダーと本文のスタイルには影響しません。
+
+前知識はここまでです。後半部では、本テーマの見出し・表・引用・脚注・タブ・再利用可能な構成パーツなどのスタイルを紹介します。各パーツの例の下にはWikidotソースが付いており、本テーマを適用したページにそのままコピーできます。
+
+本テーマは今後も改良される可能性があります。不備やバグがありましたら、ディスカッションページで指摘してください。
+
+**章番号バーのソース**
+
+[[code]]
+[[div class="construct-strip"]]
+[[span class="construct-number"]]01[[/span]][[span class="construct-label"]]章の名前[[/span]]
+[[/div]]
+[[/code]]
+
+[[toc]]
+
+[[div class="construct-actions"]]
+[[[https://scp-jp.wikidot.com/|SCP-JP トップ →]]] [[[https://pseudo-scp-jp.wikidot.com/|JPサンドボックス →]]]
+[[/div]]
+
+**ボタンスタイルのソース（押せます！）**
+
+[[code]]
+[[div class="construct-actions"]]
+[[[https://scp-jp.wikidot.com/|SCP-JP トップ →]]] [[[https://pseudo-scp-jp.wikidot.com/|JPサンドボックス →]]]
+[[/div]]
+[[/code]]
+
+[[div class="construct-strip"]]
+[[span class="construct-number"]]02[[/span]][[span class="construct-label"]]本文 / テキストと階層[[/span]]
+[[/div]]
+
++ 見出しと本文
+
+↑プラスが1つの見出しの下だけ赤線で区切られます。[[[wiki-syntax]]]の簡単な紹介です（本格的な解説は[[[wiki-syntax]]]にあります。あちらの方が良い例です。ここでは表示のためだけです）：
+
+本文、[[[https://scp-jp.wikidot.com/|リンク]]]、**太字**、//斜体//、__下線__、--取り消し線--、行内コード {{SCP-JP-001}} は、同じ段落中で併用できます。
+
+脚注番号は青字で表示されます[[footnote]]脚注はページ末尾に列挙され、マウスを載せると簡単な説明が表示されます。[[/footnote]]。
+
+キーの表記には、キーキャップスタイルを使えます[[footnote]]これもウィキット由来です[[/footnote]]：[[span class="keycap"]]Ctrl[[/span]] + [[span class="keycap"]]F[[/span]]。
+
+**参考：キーキャップのソース**
+
+[[code]]
+[[span class="keycap"]]Ctrl[[/span]] + [[span class="keycap"]]F[[/span]]
+[[/code]]
+
+++ 二級見出し / 情報の区切り
+
+プラス2つの見出しは左側の短い線で識別されます。三級見出しは分量の少ない情報のまとまりに適しています。
+
+元の見出しが気に入らない場合、一風変わった使い方があります。@@+*@@のように見出しを隠して（tocでは引き続き表示されます）、spanやその他の手段（この章番号バーなど）で偽の見出しを作ればよいのです。
+
++++ 三級見出し（プラス3つ） / 二級見出しと似ていますが、先の方の区分にあった平沢進スタイルの赤い縦棒はありません
+
+上付き文字は 2^^3^^、下付き文字は H,,2,,O です。これもWikidotのウィキットに従います。
+
+----
+
+++ リストと引用
+
+* 点リスト：アスタリスク+空白が使い方です
+* 点リスト：アスタリスク+空白が使い方です
+* 点リスト：アスタリスク+空白が使い方です
+ * 二次点リスト：半角スペース+アスタリスク+空白
+
+# 番号リスト：ハッシュ+空白が使い方です
+# 番号リスト：ハッシュ+空白が使い方です
+# 番号リスト：ハッシュ+空白が使い方です
+
+: （カスタム内容1）前に赤い線が付くこれ : （カスタム内容2）半角コロンであることに注意してください（：ではありません）
+: 使い方は、コロン+空白+カスタム内容1+空白+コロン : +カスタム内容2
+
+> 引用ブロックは枠線で本文と区切られます。長い文は自然に折り返されるので、引用部分も連続して読めます。使い方は>に空白を1つ付けます。
+>> 入れ子の引用は、>に空白を付けてさらに増やします。
+
+[[div class="construct-annotated"]]
+[[div class="construct-margin-note"]]
+余白注 / 01
+
+非常に小さな領域で、デスクトップでは横並び、スマートフォンでは順に並びます。
+[[/div]]
+[[div class="construct-body"]]
+余白注と本文を横に並べて、章番号・短い説明・主内容を配置できます。狭い画面では2カラムが順に並びます。（これは本文ですが、本文でもありません）
+[[/div]]
+[[/div]]
+
+**余白注と本文のソース**
+
+[[code]]
+[[div class="construct-annotated"]]
+[[div class="construct-margin-note"]]
+余白注 / 01
+[[/div]]
+[[div class="construct-body"]]
+ここは本文です。
+[[/div]]
+[[/div]]
+[[/code]]
+
+[[div class="construct-strip"]]
+[[span class="construct-number"]]03[[/span]][[span class="construct-label"]]カードと表[[/span]]
+[[/div]]
+
++* 資料カードと強調情報
+
+[[div class="construct-dossier"]]
+[[div class="construct-index"]]
+[[span class="construct-index-label"]]上の黄色い文字[[/span]]
+
+[[span class="construct-index-number"]]中央の大きい文字[[/span]]
+
+下の文字
+[[/div]]
+[[div class="construct-summary"]]
+**用途** / 随意。
+
+**構造** / 1つの枠を2つの部分に分けます。
+
+**狭い画面** / 2カラム**はおそらく**自動的に上下に並びます。
+[[/div]]
+[[/div]]
+
+**資料カードのソース**
+
+[[code]]
+[[div class="construct-dossier"]]
+[[div class="construct-index"]]
+[[span class="construct-index-label"]]ファイル / FILE[[/span]]
+[[span class="construct-index-number"]]NO. 001[[/span]]
+ファイルのタイトル
+[[/div]]
+[[div class="construct-summary"]]
+**用途** / ここに要約を書きます。
+[[/div]]
+[[/div]]
+[[/code]]
+
+[[div class="construct-alert"]]
+[[div class="construct-alert-mark"]]
+注意
+[[/div]]
+[[div class="construct-alert-text"]]
+黄色の通知ブロックは、警告・章の導入・操作の案内に適しています。文字が長くても自然に折り返されます。
+[[/div]]
+[[/div]]
+
+**通知ブロックのソース**
+
+[[code]]
+[[div class="construct-alert"]]
+[[div class="construct-alert-mark"]]注意[[/div]]
+[[div class="construct-alert-text"]]ここに通知内容を書きます。[[/div]]
+[[/div]]
+[[/code]]
+
+[[div class="construct-panel"]]
+**補足説明** ： この簡潔なブロックは短い付記に適しており、黄色の通知ブロックと併用できます。
+[[/div]]
+
+**あの簡潔なブロックのソース**
+
+[[code]]
+[[div class="construct-panel"]]
+**補足説明** / ここに付記を書きます。
+[[/div]]
+[[/code]]
+
+[[note]]
+これはウィキットの@@[[note]]...[[/note]]@@ブロックで、テーマが枠と余白を調整します。
+[[/note]]
+
+++ 表
+
+[[div class="construct-table-scroll" tabindex="0" role="region" aria-label="配色と用途の表"]]
+||~ 見出し ||~ 白線を入れたかったが美しくなかった ||
+|| セル || セルセルセル ||
+|| セル || セルセルセル ||
+|| セル || ルセルセルセル ||
+|| セル || セルセルセル ||
+[[/div]]
+
+幅の広い表はスクロールコンテナに入れると、狭い画面でも横スクロールが保たれます。
+
+**表コンテナのソース**
+
+[[code]]
+[[div class="construct-table-scroll" tabindex="0" role="region" aria-label="資料表"]]
+||~ 項目 ||~ 説明 ||
+|| 例 || 表の内容 ||
+[[/div]]
+[[/code]]
+
+[[div class="construct-strip"]]
+[[span class="construct-number"]]04[[/span]][[span class="construct-label"]]インタラクティブ部品[[/span]]
+[[/div]]
+
++ 操作できる部品
+
+[[tabview]]
+[[tab 第一ページその1]]
+タブの中には、通常の文字・[[[https://scp-jp.wikidot.com/|リンク]]]・その他のWikidotコンテンツを置けます。
+[[/tab]]
+[[tab 第二ページ]]
+第二ページの内容です。タブは本テーマの直角枠と高コントラスト配色を引き継ぎ、マウスを載せると黄色く変わります。
+[[/tab]]
+[[tab 第三ページ]]
+* 第一項目
+* 第二項目
+[[/tab]]
+[[/tabview]]
+
+**タブのソース**
+
+[[code]]
+[[tabview]]
+[[tab 第一ページ]]
+第一ページの内容。
+[[/tab]]
+[[tab 第二ページ]]
+第二ページの内容。
+[[/tab]]
+[[/tabview]]
+[[/code]]
+
+[[collapsible show="＋ 折りたたみを開く（＋－は必須ではありません）" hide="折りたたみブロック、本当に速い"]]
+[[div class="construct-panel"]]
+いろいろなもの（これもそうです）は折りたたみ領域に置けますが、collapsibleを書き間違えないように気をつけてください。
+[[/div]]
+これは普通の折りたたみの中身です。例がすべてを証明します。
+もう一度おさらいすると、collapsibleです。
+[[/collapsible]]
+
+**折りたたみのソース**
+
+[[code]]
+[[collapsible show="＋ 中身を表示" hide="－ 中身を隠す"]]
+これが中身です。
+[[/collapsible]]
+[[/code]]
+
+以下は完全なコードブロックで、行内コードとは別の扱いになります。
+
+[[code type="css"]]
+.construct-block {
+  color: #171714;
+  background: #f2ecde;
+}
+[[/code]]
+
+[[div class="construct-strip"]]
+[[span class="construct-number"]]05[[/span]][[span class="construct-label"]]コンストラクトブロック[[/span]]
+[[/div]]
+
++ ブロック・タイトルタブと組み合わせ
+
+前述のとおり、コンストラクトブロックの発想はTurbo Visionの盗用ですが、背景色・文字色・枠線・幅・位置を調整できます。左上のタイトルタブは @@data-label="..."@@ で指定し、この属性を省略するとタイトルタブは表示されません。
+
+以下に、コピーして使える組み合わせを順に示します。
+
+[[div class="construct-block" data-label="00 / 図版"]]
+[[div class="construct-block-visual"]]
+[[span class="construct-block-visual-label"]]FORMA / 00[[/span]]
+[[/div]]
+**図版の説明** / CSSで適当に描いた図形によるプレースホルダーです。ビジュアル領域は自分の画像やコンポーネントに置き換えられます。
+[[/div]]
+
+**画像ブロックのソース**
+
+[[code]]
+[[div class="construct-block" data-label="00 / 画像"]]
+[[div class="construct-block-visual"]]（←ここを画像ブロックに置き換えてもよいです）
+[[span class="construct-block-visual-label"]]FORMA / 00[[/span]]
+[[/div]]
+ここに図版の説明を書きます。
+[[/div]]
+[[/code]]
+
+[[div class="construct-block cb-red" data-label="01 / 赤いもの"]]
+[[div class="construct-block-heading"]]
+赤は破壊である
+[[/div]]
+**赤いブロック**は赤いもの全般に適しています。見出し・本文・リンクは自由に変更できます：[[[https://scp-jp.wikidot.com/|リンクを見る]]]。
+[[/div]]
+
+**赤いブロックのソース**
+
+[[code]]
+[[div class="construct-block cb-red" data-label="01 / 赤いもの"]]
+[[div class="construct-block-heading"]]赤は破壊である[[/div]]
+ここに本文を書きます。
+[[/div]]
+[[/code]]
+
+[[div class="construct-offset cb-right cb-step-2"]]
+[[div class="construct-block cb-ink cb-line-paper" data-label="02 / 黒いもの"]]
+[[div class="construct-block-heading"]]
+目立たない黒子
+[[/div]]
+**アイテム番号** / SCP-JP-XXXX
+
+**ステータス** / 収容済み
+
+[[div class="construct-block cb-yellow cb-line-red cb-type-ink" data-label="内部付記"]]
+これは入れ子にしたブロックです。すべてdivブロックなので、理論上はいくらでも入れ子にできます。
+内側のブロックにも、タイトルタブ・背景色・枠線を個別に設定できます。
+[[/div]]
+[[/div]]
+[[/div]]
+
+**右寄せ・ダーク・入れ子ブロックのソース**
+
+[[code]]
+[[div class="construct-offset cb-right cb-step-2"]]
+[[div class="construct-block cb-ink cb-line-paper" data-label="02 / 黒いもの"]]
+[[div class="construct-block-heading"]]目立たない黒子[[/div]]
+外側の本文。
+[[div class="construct-block cb-yellow cb-line-red cb-type-ink" data-label="内部付記"]]
+内側の本文。
+[[/div]]
+[[/div]]
+[[/div]]
+[[/code]]
+
+[[div class="construct-offset cb-left cb-step-3"]]
+[[div class="construct-block cb-yellow" data-label="03 / 注意"]]
+短く目立つ黄色い通知で、付箋のようなものです。罫線は引いていないので、自分で工夫して足してください。
+[[/div]]
+[[/div]]
+
+**左寄せショート通知のソース**
+
+[[code]]
+[[div class="construct-offset cb-left cb-step-3"]]
+[[div class="construct-block cb-yellow" data-label="03 / 注意"]]
+ここに通知を書きます。
+[[/div]]
+[[/div]]
+[[/code]]
+
+[[div class="construct-flow"]]
+[[div class="construct-float-right"]]
+[[div class="construct-block cb-line-red" data-label="04 / 浮いた木"]]
+浮き木ブロックは、デスクトップ幅で文字を回り込ませられます。スマートフォン利用者のために、モバイルでは全幅に戻るので本文を圧迫しません。
+[[/div]]
+[[/div]]
+
+これは右側に浮かせたブロックに沿う本文です。ブロックが占める残りの幅を自然に使い、ブロックが終われば通常の行幅に戻ります。さらに文字を足していくと、ブロックと本文が一本の読み筋を共有しているのが分かります。
+[[/div]]
+
+**浮き木ブロックのソース**
+
+[[code]]
+[[div class="construct-flow"]]
+[[div class="construct-float-right"]]
+[[div class="construct-block cb-line-red" data-label="04 / 浮いた木"]]
+ここは浮き木です。
+[[/div]]
+[[/div]]
+ここに浮き木に沿う本文を書いても、書かなくてもかまいません。
+[[/div]]
+[[/code]]
+
+[[div class="construct-block cb-label-hidden" data-label="このタイトルは非表示です"]]
+**タイトルタブなしブロック** / {{data-label}} を書かなければタイトルタブは省略されます。属性の文字は残したまま一時的に隠すには、{{cb-label-hidden}} を付けてください。
+[[/div]]
+
+**タイトルタブなしのソース**
+
+[[code]]
+[[div class="construct-block cb-label-hidden" data-label="このタイトルは非表示です"]]
+ここに本文を書きます。
+[[/div]]
+[[/code]]
+
+以下はプリセットで、ご自由にお使いください。色は {{cb-red}}、{{cb-ink}}、{{cb-yellow}}；枠線は {{cb-line-paper}}、{{cb-line-red}}；文字色は {{cb-type-paper}}、{{cb-type-ink}} が選べます。オフセット幅は {{cb-step-1}}、{{cb-step-2}}、{{cb-step-3}} で、{{cb-left}} または {{cb-right}} と組み合わせて使います。//もちろん、divの魔法で自由に変更してもかまいません。//
+
+[[div class="construct-credit"]]
+**設計参考：**構成ブロックの組み合わせ方、タイトルタブ、入れ子とずらし表示は、[[[theme:turbo-vision|Turbo Vision]]]テーマ（JakdragonX、Croquembouche）の公開サンプルとコードを参考にしました。ブロックの形・配色・CSSは本テーマ向けに再構成しました。
+[[/div]]
+
+[[div class="construct-strip"]]
+[[span class="construct-number"]]06[[/span]][[span class="construct-label"]]図形 / ロゴと画像[[/span]]
+[[/div]]
+
++ ヘッダーロゴ
+
+ヘッダーのSCP-Cロゴ（およびポスター）は、[[*user Mr_J_AND]]が手描きしたSVGで、テーマのCSSに内蔵されています（添付ファイルは不要です）。以下はその独立した外観です。
+
+[[div class="construct-logo-specimen"]]
+[[/div]]
+
+**上の黒いロゴ展示枠のソース**
+
+[[code]]
+[[div class="construct-logo-specimen"]]
+ここに画像を置きます。確かに実用的ではありませんが、それでもプリセットCSSスタイルにしました。
+[[/div]]
+[[/code]]
+
+テーマページ冒頭のポスターもSVG図形を下地にし（こちらも内蔵で、添付ファイルは不要です）、SCP・Foundation・タイトル・余白の文字は編集可能なテキストのままです。記事中で使う場合は、以下の構造をコピーして文字を置き換えてください。
+
+**ポスターのソース**
+
+[[code]]
+[[div class="construct-poster"]]
+[[div class="construct-poster-word construct-poster-scp construct-poster-top"]]SCP[[/div]]
+[[div class="construct-poster-word construct-poster-foundation construct-poster-top"]]Foundation[[/div]]
+[[div class="construct-poster-word construct-poster-title"]]構成[[/div]]
+[[div class="construct-poster-word construct-poster-note"]]確保、収容、保護[[/div]]
+[[div class="construct-poster-word construct-poster-scp construct-poster-bottom"]]SCP[[/div]]
+[[div class="construct-poster-word construct-poster-foundation construct-poster-bottom"]]Foundation[[/div]]
+[[/div]]
+[[/code]]
+
+++ 画像とキャプション
+
+[[div class="scp-image-block"]]
+[[div class="construct-block-visual"]]
+[[span class="construct-block-visual-label"]]IMAGE / 01[[/span]]
+[[/div]]
+[[div class="scp-image-caption"]]
+キャプション / ここではテーマ内蔵の幾何学図形で画像カードの枠・余白・キャプションの位置を示しています。実際にはWikidotの画像ブロックを使えます。
+[[/div]]
+[[/div]]
+
+
+**画像カードのソース**
+
+[[code]]
+[[div class="scp-image-block"]]
+[[image サンプル画像ファイル名.jpg]]
+[[div class="scp-image-caption"]]
+ここに画像の説明を書きます。
+[[/div]]
+[[/div]]
+[[/code]]
+
+画像ファイルは先にページの添付ファイルとしてアップロードするか、アクセス可能な画像URLに置き換えてください。通常の脚注は引き続きWikidotの @@[[footnote]]...[[/footnote]]@@ 構文を使えます[[footnote]]ページ末尾の脚注とホバーチップは同じ配色を共有します。[[/footnote]]。
+
++ ソースコード
+
+[[collapsible show="+ コードを表示" hide="- コードを隠す"]]
+[[code type="CSS"]]
+/*
+ * コンストラクトテーマ / Sigma-9
+ * ヘッダー・ロゴ・背景の図形はすべて CSS に内蔵。追加の添付ファイルやフォントは不要。
+ */
+
+:root {
+  --construct-red: #c9251c;
+  --construct-ink: #171714;
+  --construct-paper: #f2ecde;
+  --construct-yellow: #edbd32;
+  --construct-rule: #9b9485;
+  --construct-logo: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iX+WbvuWxgl8xIiBkYXRhLW5hbWU9IuWbvuWxgiAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MjAuODIgNDcxLjA2Ij4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAgICBmaWxsOiAjZjJlY2RlOwogICAgICB9CgogICAgICAuY2xzLTIgewogICAgICAgIGZpbGw6ICNiZTI4MjA7CiAgICAgIH0KCiAgICAgIC5jbHMtMyB7CiAgICAgICAgZmlsbDogIzIzMTgxNTsKICAgICAgfQogICAgPC9zdHlsZT4KICA8L2RlZnM+CiAgPGcgaWQ9Il/lm77lsYJfMiIgZGF0YS1uYW1lPSLlm77lsYIgMiI+CiAgICA8cG9seWdvbiBjbGFzcz0iY2xzLTEiIHBvaW50cz0iMjQ3LjcyIDE0Mi40NCAyMTYuMTkgMTMxLjgyIDE0Ny41MSAxOTYuOTMgMTQwLjM4IDI2Mi4zNyAxMjMuMzMgMjY2LjgyIDU1LjE1IDI4NC42IDQ5Ljg0IDI4NS45OCA0OS40NyAyODQuNzYgNDkuNDcgMjI3LjgyIDYzLjc3IDE2OS42MSA5Mi42MiAxMjAuODQgMTI2Ljc4IDg4LjE2IDE5Mi40NCA0Ni42OSAxOTcuNTYgNTUuNTUgMjMzLjc4IDExOC4yOSAyNDcuNzIgMTQyLjQ0Ii8+CiAgICA8cG9seWdvbiBjbGFzcz0iY2xzLTEiIHBvaW50cz0iNDA1LjQ3IDQxNS42NiAzNTMuNTYgNDQ2LjM4IDMwMy4yNiA0NjMuMjMgMjE5IDQ2My4yMyAxMzQuMjQgNDI3Ljc0IDEyNy40OSA0MTkuMDEgMTMwLjgyIDQxNS42NCAxODAuMzEgMzY1LjQ5IDE5MS41IDM1NC4xNCAyNjYuMjQgMzc4Ljk3IDM0MC41NCAzNTIuMTYgMzUwLjIxIDMxOS45NCAzNjQuMTQgMzQ0LjA3IDQwMC4zNiA0MDYuOCA0MDUuNDcgNDE1LjY2Ii8+CiAgPC9nPgogIDxwYXRoIGNsYXNzPSJjbHMtMyIgZD0iTTI0Ny43MiwxNDIuNDRsLTEzLjk0LTI0LjE1Yy02My42LDEyLjQ2LTExMS4wOSw2OC42Mi0xMTEuMDksMTM1LjE3LDAsNC40NS4yMSw4LjkyLjY0LDEzLjM2bDE3LjA1LTQuNDUsOC41MS0yLjIyYy0uMTMtMi4yMy0uMi00LjQ2LS4yLTYuNjksMC01Ny4wNyw0My4wNC0xMDQuNzEsOTkuMDMtMTExLjAyWk0zNTAuMjEsMzE5Ljk0Yy0yMS4wNywyOC40NC01NC4yLDQ1LjI0LTg5LjgsNDUuMjQtMjEuOTIsMC00My4zOS02LjUtNjEuNTUtMTguNDlsLTcuMzYsNy40NS0xMS4xOSwxMS4zNWMyMy4yNCwxNi42Miw1MS4zNiwyNS42OSw4MC4xLDI1LjY5LDQwLjE1LDAsNzcuNzQtMTcuMzMsMTAzLjczLTQ3LjExbC0xMy45My0yNC4xM1oiLz4KICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik00NzMuMDEsMjUzLjQ2YzAsMTkuMzMtMi41OCwzOC4wNi03LjQxLDU1Ljg2aC0xMDguNDNjMi42My01LjI1LDUuMjUtMTEuMzksNy40NS0xOC40LDQuNTctMTQuNTMsNS43Mi0yNy41OCw1LjczLTM3LjQ2LjMxLTkuMjIuMjktNDIuMTktMjMuNTItNzEuNzEtMzEuOTMtMzkuNTktODAuMDctNDAuMDUtODYuNDItNDAuMDFsNTQuMjEtOTMuOWM5MS4xNiwyMy45NiwxNTguMzksMTA2LjkzLDE1OC4zOSwyMDUuNjJaIi8+CiAgPHBhdGggY2xhc3M9ImNscy0zIiBkPSJNNTIuODIsMjUzLjQ2YzAsMTAuNDMuNzgsMjAuODcsMi4zMywzMS4xNGwtNS4zMSwxLjM4LTQuNDIsMS4xNmMtMS43My0xMS4xLTIuNi0yMi4zOS0yLjYtMzMuNjgsMC05NC40NSw2MC44OS0xNzcuNjksMTQ5LjYyLTIwNi43N2w1LjEyLDguODZDMTExLjgzLDgyLjY5LDUyLjgyLDE2Mi42NCw1Mi44MiwyNTMuNDZaIi8+CiAgPHBhdGggY2xhc3M9ImNscy0zIiBkPSJNNDA1LjQ3LDQxNS42NmMtMzkuOTMsMzUuODItOTAuOTUsNTUuNC0xNDUuMDYsNTUuNC00OS44OSwwLTk4LjAzLTE3LjA3LTEzNi42NS00OC4yN2wzLjczLTMuNzgsMy4zMy0zLjM3YzM2LjcxLDI5LjM2LDgyLjM0LDQ1LjQyLDEyOS41OSw0NS40Miw1Mi4zMywwLDEwMS42My0xOS4yLDEzOS45NS01NC4yNmw1LjExLDguODZaIi8+CiAgPHBvbHlnb24gY2xhc3M9ImNscy0zIiBwb2ludHM9IjM0Mi4yNCAwIDMxNC42MiA0Ny44NCAyNjcuOCAxMjguOTQgMjYwLjQxIDE0MS43NCAyNTMuMDIgMTI4Ljk0IDIwNi4yIDQ3Ljg0IDE3OC41OCAwIDM0Mi4yNCAwIi8+CiAgPHBvbHlnb24gY2xhc3M9ImNscy0zIiBwb2ludHM9IjUyMC44MiAzMDkuMzIgNDM5IDQ1MS4wNSA0MTEuMzUgNDAzLjE3IDM2NC41NiAzMjIuMTEgMzU3LjE3IDMwOS4zMiA1MjAuODIgMzA5LjMyIi8+CiAgPHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjI5OC41IDIzMS40NiAwIDMwOS4zMiA4MS44MyA0NTEuMDUgMjk4LjUgMjMxLjQ2Ii8+Cjwvc3ZnPg==");
+}
+
+body {
+  background: var(--construct-paper);
+  color: var(--construct-ink);
+  font-family: "Noto Sans JP", "Noto Sans CJK JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, Arial, sans-serif;
+}
+
+#container-wrap,
+#container-wrap-wrap {
+  background: none;
+}
+
+div#container-wrap {
+  background:
+    linear-gradient(to bottom, transparent 0 140px, var(--construct-ink) 140px 162px, var(--construct-paper) 162px),
+    url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iX+WbvuWxgl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDIwMDAgMTQwIj4KICA8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMjkuOC4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogMi4xLjEgQnVpbGQgMikgIC0tPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuc3QwIHsKICAgICAgICBvcGFjaXR5OiAuMTc7CiAgICAgIH0KCiAgICAgIC5zdDAsIC5zdDEsIC5zdDIgewogICAgICAgIGZpbGw6ICMxNzE3MTQ7CiAgICAgIH0KCiAgICAgIC5zdDAsIC5zdDMsIC5zdDQsIC5zdDIsIC5zdDUgewogICAgICAgIGlzb2xhdGlvbjogaXNvbGF0ZTsKICAgICAgfQoKICAgICAgLnN0NiwgLnN0MywgLnN0NCB7CiAgICAgICAgZmlsbDogI2M5MjUxYzsKICAgICAgfQoKICAgICAgLnN0MyB7CiAgICAgICAgb3BhY2l0eTogLjY2OwogICAgICB9CgogICAgICAuc3Q3IHsKICAgICAgICBzdHJva2U6ICNjOTI1MWM7CiAgICAgICAgc3Ryb2tlLXdpZHRoOiAzcHg7CiAgICAgIH0KCiAgICAgIC5zdDcsIC5zdDggewogICAgICAgIGZpbGw6IG5vbmU7CiAgICAgIH0KCiAgICAgIC5zdDggewogICAgICAgIHN0cm9rZTogIzE3MTcxNDsKICAgICAgICBzdHJva2Utd2lkdGg6IDJweDsKICAgICAgfQoKICAgICAgLnN0NCwgLnN0NSB7CiAgICAgICAgb3BhY2l0eTogLjM4OwogICAgICB9CgogICAgICAuc3QyIHsKICAgICAgICBvcGFjaXR5OiAuMTY7CiAgICAgIH0KCiAgICAgIC5zdDUgewogICAgICAgIGZpbGw6ICNlZGJkMzI7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgPC9kZWZzPgogIDxwYXRoIGNsYXNzPSJzdDYiIGQ9Ik0wLDE0MEwzMzAsMGg1MGwtMjA4LDE0MEgwWiIvPgogIDxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik0yNzguNTMsMjQuODFoMTQxbC0xMjIuMjMsOTAuMzgtMTguNzctOTAuMzhoMFoiLz4KICA8cGF0aCBjbGFzcz0ic3QyIiBkPSJNNjI2LDE0MEw3ODgsMGg5MmwtMTY3LDE0MGgtODdaIi8+CiAgPHBhdGggY2xhc3M9InN0NCIgZD0iTTgwNiwxMzJMMTExOCwwbDc1LDE0MC0zODctOFoiLz4KICA8cGF0aCBjbGFzcz0ic3Q1IiBkPSJNMTE3MS4zMiw2Ljc5aDM1djg3LjM4aC0zNVY2Ljc5WiIvPgogIDxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMzA3LDBsMTQyLDE0MGgtODJMMTIyNSwwaDgyWiIvPgogIDxwYXRoIGNsYXNzPSJzdDMiIGQ9Ik0xNDQxLjg3LDExNS43NGwxNjAuMTMtODEuNzQtODUuMTMsMTA1Ljc0cy03NS0yNC03NS0yNFoiLz4KICA8cGF0aCBjbGFzcz0ic3QyIiBkPSJNMTg5NiwwbC0xODcsMTQwaC0xMzlMMTc3MywwaDEyM1oiLz4KICA8cGF0aCBjbGFzcz0ic3Q2IiBkPSJNMTc4OSwwbDIxMSwxNDBoLTYwTDE3MzAsMGg1OVoiLz4KICA8Zz4KICAgIDxwYXRoIGNsYXNzPSJzdDgiIGQ9Ik0zNS41Nyw0M0wyMDIuMzQsNi45Nk0zNi4zNCw0Ny44M2wxODAtMjkuODciLz4KICAgIDxwYXRoIGNsYXNzPSJzdDgiIGQ9Ik02NDguNzksMjMuNWgxMTguMDJNNjYwLjY2LDMyLjVoMTI0LjE0TTEyMTMuNTcsOTQuMTdsMTY0LTYzLjE3TTEyMjMuNTcsMTA2LjE3bDE2Mi02My4xNyIvPgogICAgPHBhdGggY2xhc3M9InN0OCIgZD0iTTE3NDcuNjcsMTA2LjI0bDIyOS40MS05NC4wM00xNzU0LjY3LDExOC4yNGwyMjkuNDEtOTQuMDMiLz4KICA8L2c+CiAgPHBhdGggY2xhc3M9InN0NyIgZD0iTTEyMTMsMTI1aDEyME0xNjI5LjcsMTguNTdoODkiLz4KICA8cmVjdCBjbGFzcz0ic3QxIiB4PSI4OTIiIHk9IjE4IiB3aWR0aD0iODYuNDMiIGhlaWdodD0iMjkiLz4KICA8cmVjdCBjbGFzcz0ic3Q0IiB4PSIxNDM4LjE1IiB5PSIzMSIgd2lkdGg9IjcwIiBoZWlnaHQ9IjI0Ii8+CiAgPHJlY3QgY2xhc3M9InN0MyIgeD0iMTY2MSIgeT0iODEuMzgiIHdpZHRoPSIzMSIgaGVpZ2h0PSI0Ni4zNiIvPgogIDxwb2x5Z29uIGNsYXNzPSJzdDQiIHBvaW50cz0iMzQ5LjAzIDEwMi40MSA0NTMuOTcgOTguMDcgNDUzLjk3IDEyMi4wNyAzNDkuMDMgMTI2LjQxIDM0OS4wMyAxMDIuNDEiLz4KICA8bGluZSBjbGFzcz0ic3Q4IiB4MT0iNTYuNyIgeTE9IjExLjQiIHgyPSIxMzQuNDUiIHkyPSI2MS45NiIvPgo8L3N2Zz4=") center top / max(100%, 2000px) auto no-repeat,
+    linear-gradient(to bottom, var(--construct-paper) 0 140px, var(--construct-ink) 140px 162px, var(--construct-paper) 162px);
+}
+
+/* 前2層はヘッダー領域を固定し、本文の模様はその下にのみ表示する。 */
+@media (min-width: 1400px) {
+  div#container-wrap {
+    --construct-body-art: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iX+WbvuWxgl8xIiBkYXRhLW5hbWU9IuWbvuWxgl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDI1MDAgNDcwMCI+CiAgPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI5LjguMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDIuMS4xIEJ1aWxkIDIpICAtLT4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLnN0MCwgLnN0MSwgLnN0MiwgLnN0MywgLnN0NCwgLnN0NSwgLnN0NiwgLnN0NywgLnN0OCwgLnN0OSwgLnN0MTAsIC5zdDExLCAuc3QxMiwgLnN0MTMsIC5zdDE0LCAuc3QxNSwgLnN0MTYsIC5zdDE3LCAuc3QxOCwgLnN0MTksIC5zdDIwLCAuc3QyMSwgLnN0MjIsIC5zdDIzLCAuc3QyNCwgLnN0MjUsIC5zdDI2LCAuc3QyNywgLnN0MjgsIC5zdDI5LCAuc3QzMCB7CiAgICAgICAgaXNvbGF0aW9uOiBpc29sYXRlOwogICAgICB9CgogICAgICAuc3QwLCAuc3QxLCAuc3QzLCAuc3Q1LCAuc3Q5LCAuc3QxMCwgLnN0MTMsIC5zdDE2LCAuc3QxNywgLnN0MjMsIC5zdDI0LCAuc3QyNSwgLnN0MjcsIC5zdDMwIHsKICAgICAgICBmaWxsOiBub25lOwogICAgICB9CgogICAgICAuc3QwLCAuc3Q5LCAuc3QyMiB7CiAgICAgICAgc3Ryb2tlOiAjYzkyNTFjOwogICAgICB9CgogICAgICAuc3QwLCAuc3QxNyB7CiAgICAgICAgb3BhY2l0eTogLjA3OwogICAgICB9CgogICAgICAuc3QwLCAuc3QxNywgLnN0MjMsIC5zdDI0LCAuc3QzMCB7CiAgICAgICAgc3Ryb2tlLXdpZHRoOiAycHg7CiAgICAgIH0KCiAgICAgIC5zdDEsIC5zdDMsIC5zdDQsIC5zdDUsIC5zdDcsIC5zdDEwLCAuc3QxMywgLnN0MTUsIC5zdDE2LCAuc3QxNywgLnN0MjAsIC5zdDIzLCAuc3QyNCwgLnN0MjUsIC5zdDI3LCAuc3QyOCwgLnN0MjksIC5zdDMwIHsKICAgICAgICBzdHJva2U6ICMxNzE3MTQ7CiAgICAgIH0KCiAgICAgIC5zdDEsIC5zdDMsIC5zdDksIC5zdDEzLCAuc3QyNSB7CiAgICAgICAgc3Ryb2tlLXdpZHRoOiA0cHg7CiAgICAgIH0KCiAgICAgIC5zdDEsIC5zdDIxLCAuc3QyNiB7CiAgICAgICAgb3BhY2l0eTogLjE2OwogICAgICB9CgogICAgICAuc3QyLCAuc3Q2LCAuc3QyNiB7CiAgICAgICAgZmlsbDogIzE3MTcxNDsKICAgICAgfQoKICAgICAgLnN0MiwgLnN0OSwgLnN0MjUgewogICAgICAgIG9wYWNpdHk6IC4xNzsKICAgICAgfQoKICAgICAgLnN0MywgLnN0NSwgLnN0MTEsIC5zdDI4LCAuc3QyOSB7CiAgICAgICAgb3BhY2l0eTogLjE0OwogICAgICB9CgogICAgICAuc3Q0LCAuc3Q3LCAuc3QxNSwgLnN0MjIsIC5zdDI3LCAuc3QyOCwgLnN0MjkgewogICAgICAgIHN0cm9rZS13aWR0aDogNXB4OwogICAgICB9CgogICAgICAuc3Q0LCAuc3Q4LCAuc3QxMCwgLnN0MTMsIC5zdDE2LCAuc3QxOSwgLnN0MjAgewogICAgICAgIG9wYWNpdHk6IC4xNTsKICAgICAgfQoKICAgICAgLnN0NCwgLnN0OCwgLnN0MTUsIC5zdDE4LCAuc3QyOCB7CiAgICAgICAgZmlsbDogI2VkYmQzMjsKICAgICAgfQoKICAgICAgLnN0NCwgLnN0MjAgewogICAgICAgIHN0cm9rZS1taXRlcmxpbWl0OiA0OwogICAgICB9CgogICAgICAuc3Q1IHsKICAgICAgICBzdHJva2Utd2lkdGg6IDNweDsKICAgICAgfQoKICAgICAgLnN0NiB7CiAgICAgICAgb3BhY2l0eTogLjA5OwogICAgICB9CgogICAgICAuc3Q3IHsKICAgICAgICBvcGFjaXR5OiAuMjI7CiAgICAgIH0KCiAgICAgIC5zdDcsIC5zdDExLCAuc3QxMiwgLnN0MTQsIC5zdDE5LCAuc3QyMSwgLnN0MjIgewogICAgICAgIGZpbGw6ICNjOTI1MWM7CiAgICAgIH0KCiAgICAgIC5zdDEwIHsKICAgICAgICBzdHJva2UtZGFzaGFycmF5OiAzODAgMjUwOwogICAgICAgIHN0cm9rZS1taXRlcmxpbWl0OiA0OwogICAgICAgIHN0cm9rZS13aWR0aDogNXB4OwogICAgICB9CgogICAgICAuc3QxMiB7CiAgICAgICAgb3BhY2l0eTogLjI7CiAgICAgIH0KCiAgICAgIC5zdDE0LCAuc3QyNyB7CiAgICAgICAgb3BhY2l0eTogLjEzOwogICAgICB9CgogICAgICAuc3QxNSwgLnN0MjIgewogICAgICAgIG9wYWNpdHk6IC4xODsKICAgICAgfQoKICAgICAgLnN0MTYgewogICAgICAgIHN0cm9rZS1kYXNoYXJyYXk6IDQ4MCAxNTA7CiAgICAgICAgc3Ryb2tlLW1pdGVybGltaXQ6IDQ7CiAgICAgICAgc3Ryb2tlLXdpZHRoOiA1cHg7CiAgICAgIH0KCiAgICAgIC5zdDE4IHsKICAgICAgICBvcGFjaXR5OiAuMjU7CiAgICAgIH0KCiAgICAgIC5zdDIwIHsKICAgICAgICBzdHJva2Utd2lkdGg6IDVweDsKICAgICAgfQoKICAgICAgLnN0MjAsIC5zdDI5IHsKICAgICAgICBmaWxsOiAjMjY2M2FmOwogICAgICB9CgogICAgICAuc3QyMyB7CiAgICAgICAgb3BhY2l0eTogLjE7CiAgICAgIH0KCiAgICAgIC5zdDI0IHsKICAgICAgICBvcGFjaXR5OiAuMTE7CiAgICAgIH0KCiAgICAgIC5zdDMwIHsKICAgICAgICBvcGFjaXR5OiAuMTI7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgPC9kZWZzPgogIDxwYXRoIGNsYXNzPSJzdDI1IiBkPSJNMTE0LjM0LDQyMGw0MjAtMjg5LjY2Ii8+CiAgPHBhdGggY2xhc3M9InN0MzAiIGQ9Ik0xMzUsNTIwbDI5MC0yMDAiLz4KICA8cmVjdCBjbGFzcz0ic3QyMSIgeD0iMzY3LjUiIHk9IjM4MCIgd2lkdGg9IjIyMi41IiBoZWlnaHQ9IjcwIi8+CiAgPHBhdGggY2xhc3M9InN0MjYiIGQ9Ik0yODAsODUwbDI3MC0yMDB2MjAwaC0yNzBaIi8+CiAgPHBhdGggY2xhc3M9InN0MTEiIGQ9Ik0xNzQuODUsOTYwbDQxNS4xNSw0NjIuODktNDE1LjE1LTIwMi44OXYtMjYwWiIvPgogIDxjaXJjbGUgY2xhc3M9InN0MTYiIGN4PSI1ODAiIGN5PSIxMTkwIiByPSIxMDAiLz4KICA8cGF0aCBjbGFzcz0ic3Q5IiBkPSJNMTcwLDE1MTBoNDUwIi8+CiAgPHBhdGggY2xhc3M9InN0MzAiIGQ9Ik0yMTUsMTUzMGgzMDUiLz4KICA8cmVjdCBjbGFzcz0ic3QyMCIgeD0iMjU5Ljg1IiB5PSIxNzgwLjAyIiB3aWR0aD0iMjIwIiBoZWlnaHQ9IjE1NSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTU1NS45MSAyMDUuMikgcm90YXRlKC0xOCkiLz4KICA8cGF0aCBjbGFzcz0ic3QzIiBkPSJNNDE1LDIyOTguOTNsMjMwLTE2MCIvPgogIDxwYXRoIGNsYXNzPSJzdDYiIGQ9Ik01MzAsMjIzOS4xNWgxODBsLTkwLDE4MC05MC0xODBaIi8+CiAgPGNpcmNsZSBjbGFzcz0ic3QyMiIgY3g9IjM4Mi40MiIgY3k9IjI0NjAiIHI9IjkwIi8+CiAgPHBhdGggY2xhc3M9InN0NSIgZD0iTTM0NC4zMiwyNzk1aDQzMCIvPgogIDxyZWN0IGNsYXNzPSJzdDE4IiB4PSIyNTAiIHk9IjMwNTAiIHdpZHRoPSIzMjUiIGhlaWdodD0iNzUiLz4KICA8cGF0aCBjbGFzcz0ic3QxNCIgZD0iTTExMCwzNTM0LjIzbDQxMC0yODB2MTUwbC00MTAsMjgwdi0xNTBaIi8+CiAgPHBhdGggY2xhc3M9InN0MTMiIGQ9Ik0xMDcuMTksMzc4NWwzNzAtMjcwIi8+CiAgPHBhdGggY2xhc3M9InN0MjciIGQ9Ik00NTAsMzE5NWgyODB2MjQwIi8+CiAgPHBhdGggY2xhc3M9InN0MjEiIGQ9Ik0xODUsMzk4MGwxMzAtMTMwdjI2MGwtMTMwLTEzMFoiLz4KICA8cGF0aCBjbGFzcz0ic3QxOSIgZD0iTTI0MDUsMzAwbC0yNzAtMTUwdjEzMGwyNzAsMTUwdi0xMzBaIi8+CiAgPHJlY3QgY2xhc3M9InN0MjgiIHg9IjE5NTkuMjQiIHk9IjQ2Ny41IiB3aWR0aD0iMTc1IiBoZWlnaHQ9IjM2NSIvPgogIDxwYXRoIGNsYXNzPSJzdDEzIiBkPSJNMjM1Ni43NCw5MjAuNjlsLTMxMC0xODAiLz4KICA8cGF0aCBjbGFzcz0ic3QyNCIgZD0iTTIzMDAsNzE1bC0yMTAtMTIwIi8+CiAgPGNpcmNsZSBjbGFzcz0ic3QxMCIgY3g9IjIxNjkuOTgiIGN5PSI5OTYuOTMiIHI9IjEwMCIvPgogIDxyZWN0IGNsYXNzPSJzdDEyIiB4PSIyMDE5LjkzIiB5PSIxNDgwIiB3aWR0aD0iMjUwIiBoZWlnaHQ9IjYwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNDI4LjI2IC0xMDEzLjMzKSByb3RhdGUoMzkpIi8+CiAgPHBhdGggY2xhc3M9InN0MSIgZD0iTTIzNjkuOTgsMTY3NS41N2gtNDAwIi8+CiAgPHBhdGggY2xhc3M9InN0MjMiIGQ9Ik0yMzI0Ljk4LDE2OTUuNTdoLTI2NSIvPgogIDxwYXRoIGNsYXNzPSJzdDExIiBkPSJNMTkwNC4xMSwxOTIwbC0xNi44NSwyMzIuMDgsNDEyLjc0LDg4Ljk4LTM5NS44OS0zMjEuMDZaIi8+CiAgPHBhdGggY2xhc3M9InN0NCIgZD0iTTIwMjAsMjE5MGwtMTUwLDEyMCwxODAsNjAtMzAtMTgwWiIvPgogIDxjaXJjbGUgY2xhc3M9InN0MiIgY3g9IjIzMjAiIGN5PSIyNzEwIiByPSI4NSIvPgogIDxwYXRoIGNsYXNzPSJzdDUiIGQ9Ik0yMzkzLjYzLDI4ODMuMDVsLTM4NS41NC0xNjYuNjEiLz4KICA8cmVjdCBjbGFzcz0ic3Q3IiB4PSIxOTEwIiB5PSIzMDcwIiB3aWR0aD0iNDQ4LjMyIiBoZWlnaHQ9IjY4Ii8+CiAgPHBhdGggY2xhc3M9InN0MyIgZD0iTTIyNTAsMzc3MGwtMzgwLTI2MCIvPgogIDxwYXRoIGNsYXNzPSJzdDI3IiBkPSJNMjMxNSwzMzU5LjIzaC0yNzB2MjIwIi8+CiAgPHBhdGggY2xhc3M9InN0MjEiIGQ9Ik0yNDM1LjY2LDM2MTVsLTMyMC0yMTB2MTQwbDMyMCw3MFoiLz4KICA8cGF0aCBjbGFzcz0ic3QxNyIgZD0iTTgyMCw4OTBsMjUwLTE4MCIvPgogIDxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xNjUwLDE3MDBsLTIxMC0xNTAiLz4KICA8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNzYwLDMwNTBsMjIwLTE2MCIvPgogIDxwYXRoIGNsYXNzPSJzdDE3IiBkPSJNMTc0MCwzODkwbC0yMzAtMTYwIi8+CiAgPHBhdGggY2xhc3M9InN0OCIgZD0iTTIzNzQuNCwzODc2LjA3bC00NTIuNjgtMTQ1LjczLDI3MC43NSwzMTQuODEsMTgxLjkzLTE2OS4wOFoiLz4KICA8cGF0aCBjbGFzcz0ic3QxMyIgZD0iTTIzMCwzNzUwbDM3MC0yNzAiLz4KICA8Y2lyY2xlIGNsYXNzPSJzdDE1IiBjeD0iNDkwIiBjeT0iNDI3OC43NSIgcj0iMTg2LjcxIi8+CiAgPHJlY3QgY2xhc3M9InN0MjkiIHg9IjIwMzkuMTUiIHk9IjQyMTUuNzIiIHdpZHRoPSIyNjEuNjYiIGhlaWdodD0iMzY1IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzNDkwLjkyIC0zMjQuOTQpIHJvdGF0ZSg0MS44OSkiLz4KICA8cGF0aCBjbGFzcz0ic3QxMyIgZD0iTTEwNy4zNSw0MzQ2LjlsMzkxLjg4LDIzNy4xMyIvPgogIDxwYXRoIGNsYXNzPSJzdDMiIGQ9Ik0xOTIxLjc5LDQxNTcuNDFsNDUyLjU1LTg0Ljg1Ii8+CiAgPHJlY3QgY2xhc3M9InN0MjYiIHg9IjI1Ni4yNSIgeT0iMTMyLjY2IiB3aWR0aD0iMjIyLjUiIGhlaWdodD0iNzAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI1Ny44OCAtMjIxLjEyKSByb3RhdGUoNDkuNzMpIi8+Cjwvc3ZnPg==");
+    background:
+      linear-gradient(to bottom, transparent 0 140px, var(--construct-ink) 140px 162px, var(--construct-paper) 162px 300px, transparent 300px),
+      url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iX+WbvuWxgl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDIwMDAgMTQwIj4KICA8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMjkuOC4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogMi4xLjEgQnVpbGQgMikgIC0tPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuc3QwIHsKICAgICAgICBvcGFjaXR5OiAuMTc7CiAgICAgIH0KCiAgICAgIC5zdDAsIC5zdDEsIC5zdDIgewogICAgICAgIGZpbGw6ICMxNzE3MTQ7CiAgICAgIH0KCiAgICAgIC5zdDAsIC5zdDMsIC5zdDQsIC5zdDIsIC5zdDUgewogICAgICAgIGlzb2xhdGlvbjogaXNvbGF0ZTsKICAgICAgfQoKICAgICAgLnN0NiwgLnN0MywgLnN0NCB7CiAgICAgICAgZmlsbDogI2M5MjUxYzsKICAgICAgfQoKICAgICAgLnN0MyB7CiAgICAgICAgb3BhY2l0eTogLjY2OwogICAgICB9CgogICAgICAuc3Q3IHsKICAgICAgICBzdHJva2U6ICNjOTI1MWM7CiAgICAgICAgc3Ryb2tlLXdpZHRoOiAzcHg7CiAgICAgIH0KCiAgICAgIC5zdDcsIC5zdDggewogICAgICAgIGZpbGw6IG5vbmU7CiAgICAgIH0KCiAgICAgIC5zdDggewogICAgICAgIHN0cm9rZTogIzE3MTcxNDsKICAgICAgICBzdHJva2Utd2lkdGg6IDJweDsKICAgICAgfQoKICAgICAgLnN0NCwgLnN0NSB7CiAgICAgICAgb3BhY2l0eTogLjM4OwogICAgICB9CgogICAgICAuc3QyIHsKICAgICAgICBvcGFjaXR5OiAuMTY7CiAgICAgIH0KCiAgICAgIC5zdDUgewogICAgICAgIGZpbGw6ICNlZGJkMzI7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgPC9kZWZzPgogIDxwYXRoIGNsYXNzPSJzdDYiIGQ9Ik0wLDE0MEwzMzAsMGg1MGwtMjA4LDE0MEgwWiIvPgogIDxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik0yNzguNTMsMjQuODFoMTQxbC0xMjIuMjMsOTAuMzgtMTguNzctOTAuMzhoMFoiLz4KICA8cGF0aCBjbGFzcz0ic3QyIiBkPSJNNjI2LDE0MEw3ODgsMGg5MmwtMTY3LDE0MGgtODdaIi8+CiAgPHBhdGggY2xhc3M9InN0NCIgZD0iTTgwNiwxMzJMMTExOCwwbDc1LDE0MC0zODctOFoiLz4KICA8cGF0aCBjbGFzcz0ic3Q1IiBkPSJNMTE3MS4zMiw2Ljc5aDM1djg3LjM4aC0zNVY2Ljc5WiIvPgogIDxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMzA3LDBsMTQyLDE0MGgtODJMMTIyNSwwaDgyWiIvPgogIDxwYXRoIGNsYXNzPSJzdDMiIGQ9Ik0xNDQxLjg3LDExNS43NGwxNjAuMTMtODEuNzQtODUuMTMsMTA1Ljc0cy03NS0yNC03NS0yNFoiLz4KICA8cGF0aCBjbGFzcz0ic3QyIiBkPSJNMTg5NiwwbC0xODcsMTQwaC0xMzlMMTc3MywwaDEyM1oiLz4KICA8cGF0aCBjbGFzcz0ic3Q2IiBkPSJNMTc4OSwwbDIxMSwxNDBoLTYwTDE3MzAsMGg1OVoiLz4KICA8Zz4KICAgIDxwYXRoIGNsYXNzPSJzdDgiIGQ9Ik0zNS41Nyw0M0wyMDIuMzQsNi45Nk0zNi4zNCw0Ny44M2wxODAtMjkuODciLz4KICAgIDxwYXRoIGNsYXNzPSJzdDgiIGQ9Ik02NDguNzksMjMuNWgxMTguMDJNNjYwLjY2LDMyLjVoMTI0LjE0TTEyMTMuNTcsOTQuMTdsMTY0LTYzLjE3TTEyMjMuNTcsMTA2LjE3bDE2Mi02My4xNyIvPgogICAgPHBhdGggY2xhc3M9InN0OCIgZD0iTTE3NDcuNjcsMTA2LjI0bDIyOS40MS05NC4wM00xNzU0LjY3LDExOC4yNGwyMjkuNDEtOTQuMDMiLz4KICA8L2c+CiAgPHBhdGggY2xhc3M9InN0NyIgZD0iTTEyMTMsMTI1aDEyME0xNjI5LjcsMTguNTdoODkiLz4KICA8cmVjdCBjbGFzcz0ic3QxIiB4PSI4OTIiIHk9IjE4IiB3aWR0aD0iODYuNDMiIGhlaWdodD0iMjkiLz4KICA8cmVjdCBjbGFzcz0ic3Q0IiB4PSIxNDM4LjE1IiB5PSIzMSIgd2lkdGg9IjcwIiBoZWlnaHQ9IjI0Ii8+CiAgPHJlY3QgY2xhc3M9InN0MyIgeD0iMTY2MSIgeT0iODEuMzgiIHdpZHRoPSIzMSIgaGVpZ2h0PSI0Ni4zNiIvPgogIDxwb2x5Z29uIGNsYXNzPSJzdDQiIHBvaW50cz0iMzQ5LjAzIDEwMi40MSA0NTMuOTcgOTguMDcgNDUzLjk3IDEyMi4wNyAzNDkuMDMgMTI2LjQxIDM0OS4wMyAxMDIuNDEiLz4KICA8bGluZSBjbGFzcz0ic3Q4IiB4MT0iNTYuNyIgeTE9IjExLjQiIHgyPSIxMzQuNDUiIHkyPSI2MS45NiIvPgo8L3N2Zz4=") center top / max(100%, 2000px) auto no-repeat,
+      linear-gradient(to bottom, var(--construct-paper) 0 300px, transparent 300px),
+      var(--construct-body-art) center 220px / 100vw auto repeat-y,
+      var(--construct-paper);
+  }
+
+  div#container-wrap:has(.construct-body-bg-off) {
+    --construct-body-art: linear-gradient(transparent, transparent);
+  }
+}
+
+.construct-body-bg-switch {
+  display: none !important;
+}
+/* ヘッダーの文字と操作要素は定位置に保ち、幾何学的背景はビューポート全幅に伸ばす。 */
+#header {
+  overflow: visible;
+  background: transparent;
+  isolation: isolate;
+}
+
+#header h1,
+#header h2 {
+  position: relative;
+  z-index: 1;
+}
+
+#header h1 { margin-top: 0; }
+
+#header h1::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -120px;
+  width: 120px;
+  height: 120px;
+  background: var(--construct-logo) center / contain no-repeat;
+  box-shadow: none;
+}
+
+#header h1 a {
+  color: var(--construct-ink);
+  font-family: "Arial Black", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+  font-size: 190%;
+  font-weight: 900;
+  letter-spacing: .02em;
+  text-shadow: 3px 3px 0 var(--construct-red);
+}
+
+#header h2 span {
+  color: var(--construct-red);
+  text-shadow: none;
+  letter-spacing: .12em;
+}
+
+#login-status,
+#login-status a,
+#login-status a:visited { color: var(--construct-ink); }
+#login-status {
+  z-index: 50;
+  padding: 4px 6px;
+  border: 2px solid var(--construct-ink);
+  background: var(--construct-paper);
+  box-shadow: 3px 3px 0 var(--construct-red);
+  font-weight: 700;
+  white-space: nowrap;
+}
+#login-status .printuser img.small { vertical-align: middle; }
+#login-status #my-account { text-decoration: underline; text-decoration-color: var(--construct-red); }
+#account-topbutton {
+  display: inline-block;
+  min-width: 1.4em;
+  padding: 0 4px;
+  border: 2px solid var(--construct-ink);
+  border-radius: 0;
+  background-color: var(--construct-red) !important;
+  background-image: none !important;
+  color: var(--construct-paper) !important;
+  font-weight: 900;
+  line-height: 1.3;
+  text-align: center;
+  text-indent: 0;
+  text-decoration: none;
+}
+#account-topbutton:hover,
+#account-topbutton:focus {
+  background-color: var(--construct-yellow) !important;
+  color: var(--construct-ink) !important;
+}
+#account-options {
+  border: 2px solid var(--construct-ink);
+  border-radius: 0;
+  background: var(--construct-paper);
+  box-shadow: 4px 4px 0 var(--construct-red);
+}
+#account-options ul { margin: 0; padding: 4px; }
+#account-options li { list-style: none; }
+#account-options a,
+#account-options a:visited {
+  display: block;
+  padding: 5px 9px;
+  color: var(--construct-ink);
+  text-decoration: none;
+}
+#account-options a:hover,
+#account-options a:focus {
+  background: var(--construct-yellow);
+  color: var(--construct-ink);
+}
+
+/* トップバーのメニュー・ドロップダウン・検索の操作性を保つ。 */
+#top-bar {
+  background: var(--construct-ink);
+  border-bottom: 5px solid var(--construct-yellow);
+}
+
+#top-bar a,
+#top-bar a:visited {
+  color: var(--construct-paper);
+}
+
+#top-bar a:hover,
+#top-bar a:focus {
+  color: var(--construct-ink);
+  background: var(--construct-yellow);
+}
+
+#top-bar ul li ul {
+  background: var(--construct-ink);
+  border: 2px solid var(--construct-paper);
+}
+
+#top-bar ul li:hover > a,
+#top-bar ul li.sfhover > a,
+#top-bar ul li a:focus {
+  color: var(--construct-ink);
+  background: var(--construct-yellow);
+  border-color: var(--construct-ink);
+}
+
+/* Sigma-9 標準の角丸グラデーション検索ボックスを、直角の高コントラスト版に置き換える。 */
+#search-top-box-input {
+  border: 2px solid var(--construct-ink);
+  border-radius: 0;
+  background: var(--construct-paper);
+  color: var(--construct-ink);
+  box-shadow: none;
+}
+
+#search-top-box-input:hover,
+#search-top-box-input:focus {
+  border-color: var(--construct-red);
+  background: #fffaf0;
+  color: var(--construct-ink);
+  box-shadow: none;
+}
+
+#search-top-box-form input[type=submit] {
+  border: 2px solid var(--construct-ink);
+  border-radius: 0;
+  background: var(--construct-red);
+  background-image: none;
+  color: var(--construct-paper);
+  box-shadow: 3px 3px 0 var(--construct-ink);
+  font-weight: 900;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+  border-color: var(--construct-ink);
+  background: var(--construct-yellow);
+  background-image: none;
+  color: var(--construct-ink);
+  box-shadow: 0 0 0 var(--construct-ink);
+  transform: translate(3px, 3px);
+}
+
+#side-bar {
+  border-top: 8px solid var(--construct-red);
+}
+
+#side-bar .side-block {
+  border: 2px solid var(--construct-ink);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: 3px 3px 0 var(--construct-ink);
+}
+
+#side-bar .heading {
+  color: var(--construct-red);
+  border-color: var(--construct-ink);
+  font-weight: 900;
+}
+
+a,
+a:visited,
+#side-bar a,
+#side-bar a:visited {
+  color: #a81d17;
+}
+
+a:hover,
+a:focus {
+  color: var(--construct-ink);
+  background: var(--construct-yellow);
+}
+
+#page-title {
+  color: var(--construct-ink);
+  border-bottom: 4px solid var(--construct-ink);
+  border-left: 12px solid var(--construct-red);
+  padding: .1em 0 .25em .45em;
+  font-family: "Arial Black", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+  font-weight: 900;
+  line-height: 1.15;
+}
+
+#page-content {
+  background: rgba(242, 236, 222, .88);
+  font-family: Arial, "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+}
+#page-content p,
+#page-content li { line-height: 1.8; }
+#page-content > p { margin: 1em 0; }
+#page-content a { text-underline-offset: .2em; }
+#page-content p a { text-decoration: underline; }
+#page-content a:focus-visible,
+#header a:focus-visible,
+#side-bar a:focus-visible {
+  outline: 3px solid var(--construct-red);
+  outline-offset: 3px;
+}
+
+#page-content h1,
+#page-content h2,
+#page-content h3 {
+  color: var(--construct-ink);
+  font-family: "Arial Black", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+#page-content h1 {
+  border-bottom: 3px solid var(--construct-red);
+  padding-bottom: .15em;
+}
+
+#page-content h2 {
+  border-left: 8px solid var(--construct-red);
+  padding-left: .45em;
+}
+
+#page-content hr {
+  height: 2px;
+  border: 0;
+  background: var(--construct-ink);
+}
+
+#page-content blockquote,
+#page-content .blockquote {
+  margin: 1.2em 0;
+  padding: .8em 1.1em;
+  border: 0;
+  border-left: 8px solid var(--construct-red);
+  background: #e5dcc9;
+  box-shadow: none;
+}
+
+#page-content table.wiki-content-table {
+  width: 100%;
+  margin: 1.2em 0;
+  border: 2px solid var(--construct-ink);
+  border-collapse: collapse;
+  background: var(--construct-paper);
+}
+
+#page-content table.wiki-content-table th {
+  border: 2px solid var(--construct-ink);
+  background: var(--construct-ink);
+  color: var(--construct-paper);
+  text-align: left;
+  padding: .6em .8em;
+}
+
+#page-content table.wiki-content-table td {
+  border: 2px solid var(--construct-ink);
+  padding: .6em .8em;
+  vertical-align: top;
+}
+#page-content table.wiki-content-table tr:nth-child(odd) td {
+  background: rgba(23, 23, 20, .035);
+}
+
+#page-content .yui-navset .yui-nav a {
+  border-radius: 0;
+  background: var(--construct-ink);
+  color: var(--construct-paper);
+  box-shadow: 3px 3px 0 var(--construct-ink);
+}
+
+#page-content .yui-navset .yui-nav .selected a {
+  background: var(--construct-red);
+  color: #fff;
+}
+
+/* 専用コンテンツブロック：旗・番号・2カラムの資料。 */
+/* ポスターコンポーネント：文字を含まない SVG を下地にし、文字は編集可能なテキストのまま残す。 */
+#page-content .construct-poster,
+#page-content .construct-poster * { box-sizing: border-box; }
+.construct-poster {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 841.92 / 595.28;
+  container-type: inline-size;
+  margin: 1.5em 0 2em;
+  background: var(--construct-paper) url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iX+WbvuWxgl8yIiBkYXRhLW5hbWU9IuWbvuWxgiAyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4NDEuOTIgNTk1LjI4Ij4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAgICBmaWxsOiAjYmUyODIwOwogICAgICB9CgogICAgICAuY2xzLTIsIC5jbHMtMyB7CiAgICAgICAgZmlsbDogIzIzMTgxNTsKICAgICAgfQoKICAgICAgLmNscy0zIHsKICAgICAgICBmaWxsLXJ1bGU6IGV2ZW5vZGQ7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgPC9kZWZzPgogIDxnPgogICAgPHBhdGggY2xhc3M9ImNscy0zIiBkPSJNMzM1LjQ2LDMwNC4zMmgtMTUuMjdjLTcuOTUsNTQuMzQtMzguMTgsODYuNC05Mi4zNCw5NC41My0yMi4xNywxLjA4LTM5LjEyLTMuMDUtNTMuMDgtMTAuMTgtMy42NSwzLjM4LTUuNzYsOC4zLTgsMTMuMDktNC43Ny0uNTYtNi43LTMuOTctMTAuOTEtNS4wOSwyLjQ3LTQuOCw0Ljk4LTkuNTYsOC0xMy44Mi00LjAyLTMuMjUtNy45OS02LjU1LTEyLjM2LTkuNDUtMTkuMDEtMTkuNTMtMzQuNDYtNDIuNjEtMzIuNzItODIuODksNC4xNC0zNi4xLDIwLjg1LTU5LjYxLDQ1LjA4LTc1LjYyLTIuNTYtNC43MS01LjExLTkuNDQtOC0xMy44MiwzLjI5LTIuMjksNi4yOS00Ljg2LDEwLjkxLTUuODIsMS41LDUuMDUsNS4xNiw3LjkzLDYuNTQsMTMuMDksMTEuMTctNC4zNCwyMi40MS04LjYxLDM2LjM2LTEwLjE4LDY3LjgxLjI5LDEwMS4yOSwzNC45MywxMDkuOCw5NC41M2gxNnYxMS42M1pNMzAwLjU2LDI4NS40MWMtNi4wNC01MC44Ny02NC41Mi04NS41MS0xMTcuMDctNjEuODEsNC43OCwxMS43LDEyLjA5LDIwLjg4LDE3LjQ1LDMxLjk5LDUuMTYtMS4zOSw4LjA0LTUuMDUsMTMuMDktNi41NC0uMjIsMTUuMjUsMS43MywyOC4zMywxLjQ1LDQzLjYzLTExLjkzLTguMTktMjQuOTUtMTUuMjgtMzYuMzYtMjMuOTksMy45NC0yLjEyLDcuNTgtNC41NCwxMS42My02LjU0LTUuMDQtMTEuNDUtMTIuMzUtMjAuNjEtMTcuNDUtMzEuOTktMjEuMjgsMTQuMTEtMzUuNjEsMzUuMTYtMzcuMDgsNjkuMDgsMS45NiwzMi45NCwxNi4wNCw1My43NiwzNy4wOCw2Ny42Miw1LjExLTExLjM4LDEyLjQ2LTIwLjUsMTcuNDUtMzEuOTktMy45MS0yLjM5LTguNi00LTExLjYzLTcuMjcsMTIuMi02Ljk1LDI1LjIxLTE2Ljk2LDM2LjM2LTIyLjU0LS4yMSwxNC44Mi0uNzEsMjkuMzUtMi4xOCw0Mi45LTQuMjYtMi4wNC03LjU0LTUuMDYtMTIuMzYtNi41NC01LjM3LDExLjEyLTEyLjY3LDIwLjI5LTE3LjQ1LDMxLjk5LDEwLjM1LDQuNDQsMjEuOTcsNy42LDM2LjM2LDgsNDguMjItNC42MSw3NS41LTMwLjE4LDgxLjQ0LTc3LjA3aC0zNi4zNnYxNC41NGMtMTIuNTUtNy4wOC0yNi4yNi0xMy0zOC41NC0yMC4zNiwxMi4xMi02Ljc5LDI2Ljk0LTE0Ljc1LDM4LjU0LTE5LjYzdjEzLjgyaDM2LjM2Yy4xNC0yLjgxLjAzLTUuMzYtLjczLTcuMjdaIi8+CiAgICA8cGF0aCBjbGFzcz0iY2xzLTMiIGQ9Ik0zODkuMjcsMjQ5LjA2djk5LjYyYy05LjcxLDEuMi0xOC40LDMuNDItMjcuNjMsNS4wOS0yNyw1OC42LTc1LjQsMTAzLjQyLTE2NC4zMyw5NS4yNS03LjcxLDYuMTEtMTMuNDIsMTQuMjEtMTkuNjMsMjEuODEtMjguODYtMTYuNzEtNTguMDUtMzMuMDgtODYuNTMtNTAuMTcsMi40OS05LjE0LDYuMTYtMTcuMTEsOC43My0yNi4xOC0xNy44My0yNS4zMS0zMi4zOS01My45LTMzLjQ1LTk1Ljk4LDEuMjQtNDEuNjYsMTUuMS03MC43LDMzLjQ1LTk1LjI1LTIuMzMtOS4zLTUuOTEtMTcuMzUtOC43My0yNi4xOCwyNy4yNy0xOC4zLDU3Ljg1LTMzLjI4LDg1LjgtNTAuOSw2Ljg2LDYuOTUsMTIuNTEsMTUuMTIsMTkuNjMsMjEuODEsODguODItOC4wNSwxMzguMzUsMzUuNjMsMTY0LjMzLDk1LjI1LDkuNTEsMS44OSwxOS41OSwzLjIsMjguMzYsNS44MlpNMzU1LjA5LDI1MS4yNGMtMTEuNjMtMzItMzEuNDgtNTUuNzctNTcuNDQtNzMuNDQtMjQuNjYtMTYuMjMtNjQuNDktMjguODgtMTA0LjcxLTIwLjM2LTcuMzktNS45NC0xMS40OC0xNS4xOC0xOS42My0yMC4zNi0yMy44MSwxNC4wMS00Ny42OCwyNy45NC03MS45OCw0MS40NSwyLjc4LDguODUsNi4xNSwxNy4xMiw4LjczLDI2LjE4LTE5LjQxLDIzLjQ5LTMzLjgzLDUxLjk3LTM0LjksOTMuOC44Miw0Mi4zMiwxNi4xMiw3MC4xNywzNC45LDk0LjUzLTMuMDIsOC4zNy01Ljc2LDE3LjAzLTguNzMsMjUuNDUsMjQuMzMsMTMuNDksNDguMTIsMjcuNSw3MS45OCw0MS40NSw4LjUyLTUuMDUsMTEuOTUtMTUuMTksMjAuMzYtMjAuMzYsMzkuODUsOC4yMyw4MC4zOC0zLjgzLDEwMy45OC0yMS4wOSwyNy4yOC0xNi4zNSw0NS4wNi00Mi4xOSw1OC4xNy03Mi43MSw4LjM0LTIuMzMsMTguNTMtMi44LDI2LjE4LTUuODJ2LTgyLjE2Yy02Ljc2LTQuMzktMTguMjUtNC4wNS0yNi45LTYuNTRaIi8+CiAgPC9nPgogIDxnPgogICAgPHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMjEyLjU1LDM1LjY1djYzLjdjLTc4LjA4LDYuNDYtMTQzLjQyLDU3LjgxLTE3MC4xNywxMjguMTdoLS40NFYzNS42NWgxNzAuNjFaIi8+CiAgICA8cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iNzg5LjA0IDM1LjY1IDc4OS4wNCAxMzIuNzMgNjMxLjEzIDE5MC44MiA2MzEuMTMgMTI5LjkyIDcwMi40NSA5Ni41NCAyMTguNiA5Ni41NCAyMTguNiAzNS42NSA3ODkuMDQgMzUuNjUiLz4KICAgIDxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTY2OS4yNCwxMDUuMjhsLTI1OS41NywxMDcuMTdjLTI1LTUyLjMzLTcyLjEtOTIuMDgtMTI5LjIyLTEwNy4xN2gzODguNzlaIi8+CiAgICA8cG9seWdvbiBjbGFzcz0iY2xzLTEiIHBvaW50cz0iNzg2LjYxIDIwNy45IDYzMi42NiAyMzkuNjQgNjMyLjY2IDIwMi45NyA3ODYuNjEgMTQ0LjMzIDc4Ni42MSAyMDcuOSIvPgogICAgPHJlY3QgY2xhc3M9ImNscy0xIiB4PSIzOS45MyIgd2lkdGg9Ijc0OS4xIiBoZWlnaHQ9IjE2LjAzIi8+CiAgPC9nPgogIDxnPgogICAgPHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMjEyLjU1LDU1OS42M3YtNjMuN2MtNzguMDgtNi40Ni0xNDMuNDItNTcuODEtMTcwLjE3LTEyOC4xN2gtLjQ0djE5MS44N2gxNzAuNjFaIi8+CiAgICA8cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iNzg5LjA0IDU1OS42MyA3ODkuMDQgNDYyLjU1IDYzMS4xMyA0MDQuNDYgNjMxLjEzIDQ2NS4zNiA3MDIuNDUgNDk4Ljc0IDIxOC42IDQ5OC43NCAyMTguNiA1NTkuNjMgNzg5LjA0IDU1OS42MyIvPgogICAgPHBhdGggY2xhc3M9ImNscy0xIiBkPSJNNjY5LjI0LDQ5MGwtMjU5LjU3LTEwNy4xN2MtMjUsNTIuMzMtNzIuMSw5Mi4wOC0xMjkuMjIsMTA3LjE3aDM4OC43OVoiLz4KICAgIDxwb2x5Z29uIGNsYXNzPSJjbHMtMSIgcG9pbnRzPSI3ODYuNjEgMzg3LjM3IDYzMi42NiAzNTUuNjMgNjMyLjY2IDM5Mi4zMSA3ODYuNjEgNDUwLjk1IDc4Ni42MSAzODcuMzciLz4KICAgIDxyZWN0IGNsYXNzPSJjbHMtMSIgeD0iMzkuOTMiIHk9IjU3OS4yNSIgd2lkdGg9Ijc0OS4xIiBoZWlnaHQ9IjE2LjAzIi8+CiAgPC9nPgogIDxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSI2MjEuOTQgMTM0LjM3IDYyMS45NCA0NjAuOTEgNDE0LjI0IDM3NC4yNSAzMDIuNTMgMzI3LjYzIDMwMi41MyAyNjcuNjUgNDEzLjY0IDIyMS4yOSA2MjEuOTQgMTM0LjM3Ii8+CiAgPHBvbHlnb24gY2xhc3M9ImNscy0xIiBwb2ludHM9Ijc4Ni42MiAyMjQuMTcgNzg2LjYyIDM3MS4xMSA2MzIuNjYgMzQyLjc3IDYzMi42NiAyNTIuNTEgNzg2LjYyIDIyNC4xNyIvPgo8L3N2Zz4=") center / 100% 100% no-repeat;
+}
+.construct-poster-word {
+  position: absolute;
+  z-index: 2;
+  margin: 0;
+  font-family: Arial, "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+  font-weight: 900;
+  letter-spacing: -.045em;
+  line-height: 1;
+  white-space: nowrap;
+}
+#page-content .construct-poster-word p {
+  margin: 0;
+  line-height: inherit;
+  white-space: inherit;
+  overflow-wrap: inherit;
+  word-break: inherit;
+}
+.construct-poster-scp {
+  left: 6.5%;
+  color: var(--construct-ink);
+  font-size: 8cqw;
+  letter-spacing: -.07em;
+}
+.construct-poster-foundation {
+  left: 27%;
+  color: var(--construct-paper);
+  font-size: 7.4cqw;
+}
+.construct-poster-top { top: 5.5%; }
+.construct-poster-bottom { top: 83.5%; }
+.construct-poster-title {
+  left: 45%;
+  top: 29.5%;
+  width: 24.5%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  color: var(--construct-paper);
+  font-size: 11cqw;
+  letter-spacing: 0;
+  line-height: 1.08;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-all;
+  overflow: hidden;
+}
+/* ポスター見出しは編集可能なテキストのままにし、遠近感はコンテナ側で制御する。 */
+#page-content .construct-poster-title p {
+  width: 100%;
+  transform-origin: left center;
+  transform: perspective(37cqw) rotateY(-59deg);
+}
+.construct-poster-note {
+  left: 76.3%;
+  top: 44%;
+  width: 15.3%;
+  height: 17%;
+  color: var(--construct-ink);
+  font-size: 3cqw;
+  letter-spacing: -.06em;
+  line-height: 1.3;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-all;
+  overflow: hidden;
+}
+
+/* 見開き風の資料カード・余白注・通知バー。色は強調にのみ使い、本文は水平を保つ。 */
+.construct-dossier {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr);
+  gap: 0;
+  margin: 1.6em 0;
+  border: 2px solid var(--construct-ink);
+  box-shadow: 5px 5px 0 var(--construct-ink);
+}
+.construct-dossier > div { min-width: 0; padding: 1.2em; }
+.construct-index {
+  background: var(--construct-ink);
+  color: var(--construct-paper);
+  border-top: 7px solid var(--construct-red);
+}
+#page-content .construct-index p { margin: .2em 0; }
+.construct-index-label { color: var(--construct-yellow); font-size: .8em; letter-spacing: .08em; }
+.construct-index-number { font-size: 2.2em; font-weight: 900; line-height: 1.15; }
+.construct-summary { border-top: 7px solid var(--construct-ink); }
+#page-content .construct-summary p { margin: .3em 0; }
+.construct-annotated {
+  display: grid;
+  grid-template-columns: 7em minmax(0, 1fr);
+  gap: 1.2em;
+  margin: 2em 0;
+}
+.construct-margin-note {
+  border-top: 4px solid var(--construct-red);
+  color: #a81d17;
+  font-size: .8em;
+  font-weight: 700;
+}
+#page-content .construct-margin-note p { margin: .5em 0; }
+#page-content .construct-body p:first-child { margin-top: 0; }
+.construct-alert {
+  display: grid;
+  grid-template-columns: 4.5em minmax(0, 1fr);
+  margin: 1.5em 0;
+  border: 2px solid var(--construct-ink);
+}
+.construct-alert-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--construct-yellow);
+  font-weight: 900;
+}
+.construct-alert-text { padding: .8em 1em; }
+#page-content .construct-alert p { margin: 0; }
+#page-content .construct-alert-mark p { line-height: 1.2; }
+.construct-table-scroll { max-width: 100%; overflow-x: auto; }
+#page-content .construct-table-scroll table { margin-top: 0; }
+#page-content .construct-table-scroll:focus-visible {
+  outline: 3px solid var(--construct-red);
+  outline-offset: 2px;
+}
+#page-content .construct-dossier *,
+#page-content .construct-annotated *,
+#page-content .construct-alert * { box-sizing: border-box; }
+#page-content .construct-panel {
+  padding: 1em 1.2em;
+  border-left: 5px solid var(--construct-red);
+  background: #e5dcc9;
+}
+#page-content .construct-panel p { margin: .3em 0; }
+
+.construct-strip {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  margin: 1.4em 0;
+  border-top: 4px solid var(--construct-ink);
+  border-bottom: 4px solid var(--construct-ink);
+  background: linear-gradient(135deg, transparent 0 85%, rgba(201,37,28,.08) 85% 100%);
+}
+
+/* Wikidot は strip の中を自動的に p で包む。レイアウトは必ずこの p に乗せること。 */
+.construct-strip p {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  margin: 0;
+}
+
+.construct-strip .construct-number {
+  display: flex;
+  align-items: center;
+  padding: .25em .7em .25em .35em;
+  background: var(--construct-red);
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 2.2em;
+  font-weight: 900;
+  line-height: 1;
+  white-space: nowrap;
+  clip-path: polygon(0 0, 100% 0, 82% 100%, 0 100%);
+}
+
+.construct-strip .construct-label {
+  align-self: center;
+  flex: 1;
+  padding: .65em .9em .65em .35em;
+  font-weight: 800;
+}
+
+.construct-note {
+  margin: 1.2em 0;
+  padding: .85em 1.1em;
+  border: 3px solid var(--construct-ink);
+  background: var(--construct-yellow);
+  font-weight: 700;
+}
+
+/* ポスター風の操作ボタン：塗り／線抜きの2種。直角の枠線とハードシャドウを共用する。 */
+.construct-actions { margin: 1.25em 0 1.8em; }
+#page-content .construct-actions p {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 0;
+}
+#page-content .construct-actions a,
+#page-content .construct-actions a:visited {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.6em;
+  box-sizing: border-box;
+  padding: .45em 1em;
+  border: 2px solid var(--construct-ink);
+  border-radius: 0;
+  background: var(--construct-red);
+  color: var(--construct-paper);
+  box-shadow: 4px 4px 0 var(--construct-ink);
+  font-family: Arial, "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+  font-weight: 900;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: transform .15s ease, box-shadow .15s ease, background-color .15s ease;
+}
+#page-content .construct-actions a + a,
+#page-content .construct-actions a + a:visited {
+  background: var(--construct-paper);
+  color: var(--construct-ink);
+}
+#page-content .construct-actions a:hover,
+#page-content .construct-actions a:focus {
+  background: var(--construct-yellow);
+  color: var(--construct-ink);
+  box-shadow: 1px 1px 0 var(--construct-ink);
+  transform: translate(3px, 3px);
+}
+
+#page-content .yui-navset .yui-nav {
+  border-bottom: 3px solid var(--construct-ink);
+}
+#page-content .yui-navset .yui-nav a em { border: 0; }
+#page-content .yui-navset .yui-nav a:hover,
+#page-content .yui-navset .yui-nav a:focus {
+  background: var(--construct-yellow);
+  color: var(--construct-ink);
+  box-shadow: 0 0 0 var(--construct-ink);
+  transform: translate(2px, 2px);
+}
+#page-content .yui-navset .yui-nav .selected a,
+#page-content .yui-navset .yui-nav .selected a:hover,
+#page-content .yui-navset .yui-nav .selected a:focus {
+  background: var(--construct-red);
+  color: #fff;
+}
+#page-content .yui-navset .yui-content {
+  border: 1px solid var(--construct-ink);
+  background: transparent;
+  padding: 1em 1.2em;
+}
+#page-content .collapsible-block { margin: 1.4em 0; }
+#page-content .collapsible-block-link {
+  display: inline-block;
+  padding: .32em .65em;
+  border: 2px solid var(--construct-ink);
+  background: var(--construct-paper);
+  box-shadow: 3px 3px 0 var(--construct-ink);
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+#page-content .collapsible-block-link:hover,
+#page-content .collapsible-block-link:focus {
+  background: var(--construct-yellow);
+  color: var(--construct-ink);
+  box-shadow: 0 0 0 var(--construct-ink);
+  transform: translate(3px, 3px);
+}
+
+/* よく使われる Wikidot 閲覧系コンポーネント：本文の静けさを保ち、幾何学的要素は枠と見出しに留める。 */
+#page-content #toc {
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 1.5em 0;
+  padding: .8em 1em 1em;
+  border: 2px solid var(--construct-ink);
+  border-left: 8px solid var(--construct-red);
+  border-radius: 0;
+  background: var(--construct-paper);
+  box-shadow: 4px 4px 0 var(--construct-ink);
+}
+#page-content #toc .title {
+  margin: 0 0 .5em;
+  padding: 0 0 .25em;
+  border-bottom: 2px solid var(--construct-ink);
+  color: var(--construct-ink);
+  font-size: 1.15em;
+  font-weight: 900;
+}
+#page-content #toc-action-bar { float: right; margin-left: 1em; }
+#page-content #toc-action-bar a {
+  padding: .15em .45em;
+  border: 1px solid var(--construct-ink);
+  background: var(--construct-yellow);
+  color: var(--construct-ink);
+  font-weight: 700;
+  text-decoration: none;
+}
+#page-content #toc-list > div {
+  max-width: 100%;
+  padding-left: .45em;
+  border-left: 2px solid var(--construct-rule);
+  overflow-wrap: anywhere;
+}
+#page-content #toc-list a { color: var(--construct-ink); text-decoration: none; }
+#page-content #toc-list a:hover,
+#page-content #toc-list a:focus { color: var(--construct-ink); background: var(--construct-yellow); }
+
+#page-content .code {
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 1.1em 0;
+  border: 2px solid var(--construct-ink);
+  border-top: 5px solid var(--construct-red);
+  border-radius: 0;
+  background: #eee7d8;
+  box-shadow: 3px 3px 0 var(--construct-rule);
+}
+#page-content .code pre {
+  max-width: 100%;
+  margin: 0;
+  padding: .8em 1em;
+  overflow-x: auto;
+  background: transparent;
+  color: var(--construct-ink);
+  white-space: pre;
+}
+#page-content .code code { background: transparent; color: inherit; }
+#page-content tt,
+#page-content p code,
+#page-content li code {
+  padding: .1em .25em;
+  border: 0;
+  border-radius: 0;
+  background: #eee7d8;
+  color: var(--construct-ink);
+  box-shadow: none;
+}
+#page-content .keycap {
+  padding: .1em .35em;
+  border: 2px solid var(--construct-ink);
+  border-radius: 0;
+  background: var(--construct-paper);
+  box-shadow: 2px 2px 0 var(--construct-rule);
+  color: var(--construct-ink);
+  font-family: monospace;
+}
+
+#page-content .wiki-note {
+  margin: 1.2em 0;
+  padding: .7em 1em;
+  border: 2px solid var(--construct-ink);
+  border-left: 8px solid var(--construct-red);
+  border-radius: 0;
+  background: #eee7d8;
+  color: var(--construct-ink);
+}
+#page-content .wiki-note p { margin: .35em 0; }
+#page-content blockquote blockquote { border-left-width: 3px; background: var(--construct-paper); }
+#page-content sup.footnoteref,
+#page-content a.footnoteref,
+#page-content a[id^="footnoteref-"] {
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+#page-content a.footnoteref,
+#page-content a.footnoteref:visited,
+#page-content a[id^="footnoteref-"],
+#page-content a[id^="footnoteref-"]:visited {
+  padding: 0;
+  color: #175b9a;
+  font-size: 1em;
+  font-weight: 700;
+  text-decoration: none;
+}
+#page-content a.footnoteref:hover,
+#page-content a.footnoteref:focus,
+#page-content a[id^="footnoteref-"]:hover,
+#page-content a[id^="footnoteref-"]:focus {
+  color: #103e6a;
+  background: transparent;
+  text-decoration: underline;
+}
+#page-content .footnotes-footer {
+  margin: 2em 0 1.2em;
+  padding: .75em 1em;
+  border-top: 4px solid var(--construct-ink);
+  background: #eee7d8;
+}
+#page-content .footnotes-footer .title {
+  margin: 0 0 .5em;
+  color: var(--construct-ink);
+  font-weight: 900;
+}
+#page-content .footnote-footer { padding: .35em 0; border-top: 1px solid var(--construct-rule); }
+#page-content .footnote-footer a,
+#page-content .footnote-footer a:visited { color: #175b9a; font-weight: 900; }
+#page-content .footnote-footer a:hover,
+#page-content .footnote-footer a:focus { color: #103e6a; }
+.hovertip:has(.footnote) {
+  border: 2px solid var(--construct-ink) !important;
+  background: var(--construct-paper) !important;
+}
+.hovertip:has(.footnote) > .content { padding: 0; }
+.hovertip .footnote {
+  border: 0;
+  padding: 8px 10px;
+  background: var(--construct-paper);
+  color: var(--construct-ink);
+}
+.hovertip .footnote .f-heading { display: none !important; }
+.hovertip .footnote .f-content { margin: 0; }
+.hovertip .footnote .f-footer {
+  display: block !important;
+  margin: .45em 0 0;
+  padding: 0;
+  border: 0;
+  color: #5b5448;
+  font-size: 0;
+  line-height: 0;
+}
+.hovertip .footnote .f-footer > * { display: none !important; }
+.hovertip .footnote .f-footer::after {
+  content: "番号をクリックするとページ末尾の脚注へ移動します";
+  display: block;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+/* リストと画像にはほどほどの目印だけを与え、読み順を変えたり画像を覆ったりはしない。 */
+#page-content ul:not(.yui-nav) li::marker { color: var(--construct-red); }
+#page-content ol li::marker { color: var(--construct-red); font-weight: 900; }
+#page-content dl { border-left: 3px solid var(--construct-red); padding-left: 1em; }
+#page-content dt { color: var(--construct-ink); font-weight: 900; }
+#page-content dd { margin-bottom: .5em; }
+#page-content .scp-image-block,
+#page-content .image-block {
+  box-sizing: border-box;
+  max-width: 100%;
+  border: 2px solid var(--construct-ink);
+  border-radius: 0;
+  background: var(--construct-paper);
+  box-shadow: 4px 4px 0 var(--construct-rule);
+}
+#page-content .scp-image-block img,
+#page-content .image-block img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+#page-content .scp-image-block .scp-image-caption,
+#page-content .image-block .caption {
+  padding: .5em .7em;
+  border-top: 2px solid var(--construct-ink);
+  color: var(--construct-ink);
+  font-size: .85em;
+  line-height: 1.5;
+}
+#page-content > p img { max-width: 100%; height: auto; }
+
+/* ページ操作部は元のリンクとスクリプトを保持したまま、ボタン表面だけを差し替える。コメント本文には触れない。 */
+#page-options-container { margin-top: 2em; border-top: 4px solid var(--construct-ink); }
+#page-info { color: var(--construct-ink); }
+#page-options-container .page-options-bottom a.btn {
+  display: inline-block;
+  margin: .2em;
+  padding: .35em .65em;
+  border: 2px solid var(--construct-ink);
+  border-radius: 0;
+  background: var(--construct-paper);
+  background-image: none;
+  box-shadow: 2px 2px 0 var(--construct-ink);
+  color: var(--construct-ink);
+  font-weight: 700;
+  text-shadow: none;
+}
+#page-options-container .page-options-bottom a.btn:hover,
+#page-options-container .page-options-bottom a.btn:focus {
+  background: var(--construct-yellow);
+  color: var(--construct-ink);
+  box-shadow: none;
+}
+/* 評価モジュール：番号プレートと3つの操作キーを一つのベースライン上に並べる。 */
+#page-content .page-rate-widget-box {
+  display: inline-flex;
+  align-items: stretch;
+  height: auto;
+  margin: .25em 4px 1em 0;
+  padding: 0;
+  border: 2px solid var(--construct-ink);
+  border-radius: 0;
+  background: var(--construct-paper);
+  box-shadow: 4px 4px 0 var(--construct-red);
+  color: var(--construct-ink);
+  font-weight: 700;
+  overflow: visible;
+}
+#page-content .page-rate-widget-box .rate-points,
+#page-content .page-rate-widget-box .rateup,
+#page-content .page-rate-widget-box .ratedown,
+#page-content .page-rate-widget-box .cancel {
+  float: none;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  line-height: 2.2;
+  white-space: nowrap;
+}
+#page-content .page-rate-widget-box .rate-points,
+#page-content .page-rate-widget-box .rateup,
+#page-content .page-rate-widget-box .ratedown { display: block; }
+#page-content .page-rate-widget-box .rate-points {
+  padding: 0 .8em;
+  background: var(--construct-ink) !important;
+  color: var(--construct-paper) !important;
+}
+#page-content .page-rate-widget-box .rateup,
+#page-content .page-rate-widget-box .ratedown,
+#page-content .page-rate-widget-box .cancel {
+  border-left: 2px solid var(--construct-ink);
+  background: var(--construct-paper);
+}
+#page-content .page-rate-widget-box .rateup { background: var(--construct-yellow); }
+#page-content .page-rate-widget-box .rateup a,
+#page-content .page-rate-widget-box .ratedown a,
+#page-content .page-rate-widget-box .cancel a {
+  display: block;
+  height: auto;
+  padding: 0 .65em;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--construct-ink);
+  font-weight: 900;
+  line-height: inherit;
+  text-decoration: none;
+  text-shadow: none;
+}
+#page-content .page-rate-widget-box .rateup a:hover,
+#page-content .page-rate-widget-box .ratedown a:hover,
+#page-content .page-rate-widget-box .cancel a:hover,
+#page-content .page-rate-widget-box .rateup a:focus,
+#page-content .page-rate-widget-box .ratedown a:focus,
+#page-content .page-rate-widget-box .cancel a:focus {
+  background: var(--construct-red);
+  color: var(--construct-paper);
+}
+
+/*
+ * コンストラクトブロック / Construct Blocks
+ * 組み合わせ式ブロック・タイトルタブ・ずらし表示の発想は、Turbo Vision テーマの
+ * 「Turbo Blocks」公開サンプルとコード（作者: JakdragonX、Croquembouche）を参考にした:
+ * https://scp-wiki-cn.wikidot.com/theme:turbo-vision
+ * https://scp-wiki.wikidot.com/theme:turbo-vision
+ * 以下の見た目と CSS はコンストラクトテーマ向けに書き直したもので、元の CSS を移植したものではない。
+ */
+#page-content .construct-block {
+  --cb-bg: var(--construct-paper);
+  --cb-fg: var(--construct-ink);
+  --cb-line: var(--construct-ink);
+  --cb-accent: var(--construct-red);
+  position: relative;
+  box-sizing: border-box;
+  min-width: 0;
+  max-width: 100%;
+  margin: 1.8em 0;
+  padding: 1.4em 1.2em 1.1em;
+  border: 3px solid var(--cb-line);
+  background: var(--cb-bg);
+  color: var(--cb-fg);
+  box-shadow: 7px 7px 0 var(--cb-accent);
+  overflow-wrap: anywhere;
+}
+#page-content .construct-block::before {
+  content: attr(data-label);
+  position: absolute;
+  top: -.85em;
+  left: .9em;
+  max-width: calc(100% - 1.8em);
+  padding: .12em .58em;
+  box-sizing: border-box;
+  background: var(--cb-line);
+  color: var(--cb-bg);
+  font-size: .75em;
+  font-weight: 900;
+  letter-spacing: .08em;
+  line-height: 1.4;
+}
+#page-content .construct-block:not([data-label])::before { display: none; }
+#page-content .construct-block.cb-label-hidden::before { display: none; }
+#page-content .construct-block p { margin: .55em 0; }
+#page-content .construct-block p:last-child { margin-bottom: 0; }
+#page-content .construct-block a,
+#page-content .construct-block a:visited { color: inherit; text-decoration: underline; }
+#page-content .construct-block a:hover,
+#page-content .construct-block a:focus { background: var(--construct-yellow); color: var(--construct-ink); }
+#page-content .construct-block img { display: block; max-width: 100%; height: auto; }
+#page-content .construct-block-visual {
+  position: relative;
+  height: clamp(110px, 20vw, 220px);
+  overflow: hidden;
+  background:
+    repeating-linear-gradient(0deg, transparent 0 24px, rgba(23,23,20,.12) 24px 26px),
+    var(--construct-paper);
+}
+#page-content .construct-block-visual::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 76%;
+  height: 95%;
+  top: 3%;
+  left: -5%;
+  clip-path: polygon(0 15%, 100% 50%, 0 85%);
+  background: var(--construct-red);
+}
+#page-content .construct-block-visual::after {
+  content: "";
+  position: absolute;
+  width: 27%;
+  aspect-ratio: 1;
+  top: -22%;
+  right: 7%;
+  border: clamp(10px, 3vw, 30px) solid var(--construct-ink);
+  border-radius: 50%;
+}
+#page-content .construct-block-visual-label {
+  position: absolute;
+  z-index: 2;
+  right: .8em;
+  bottom: .7em;
+  padding: .2em .5em;
+  background: var(--construct-ink);
+  color: var(--construct-paper);
+  font-size: .8em;
+  font-weight: 900;
+  letter-spacing: .12em;
+}
+#page-content .construct-block-heading {
+  margin: .15em 0 .7em;
+  padding: 0 0 .35em .55em;
+  border-left: .45em solid var(--cb-accent);
+  border-bottom: 2px solid var(--cb-line);
+  font-size: 1.25em;
+  font-weight: 900;
+  line-height: 1.2;
+}
+#page-content .construct-block-heading p { margin: 0; }
+#page-content .construct-block.cb-red {
+  --cb-bg: var(--construct-red);
+  --cb-fg: var(--construct-paper);
+  --cb-line: var(--construct-ink);
+  --cb-accent: var(--construct-ink);
+}
+#page-content .construct-block.cb-red::before { color: var(--construct-paper); }
+#page-content .construct-block.cb-ink {
+  --cb-bg: var(--construct-ink);
+  --cb-fg: var(--construct-paper);
+  --cb-line: var(--construct-red);
+  --cb-accent: var(--construct-yellow);
+}
+#page-content .construct-block.cb-ink::before { color: var(--construct-paper); }
+#page-content .construct-block.cb-yellow {
+  --cb-bg: var(--construct-yellow);
+  --cb-accent: var(--construct-ink);
+}
+#page-content .construct-block.cb-line-paper { --cb-line: var(--construct-paper); }
+#page-content .construct-block.cb-line-red { --cb-line: var(--construct-red); }
+#page-content .construct-block.cb-type-paper { --cb-fg: var(--construct-paper); }
+#page-content .construct-block.cb-type-ink { --cb-fg: var(--construct-ink); }
+#page-content .construct-block.cb-ink.cb-line-paper::before { color: var(--construct-ink); }
+#page-content .construct-block.cb-red.cb-line-paper::before { color: var(--construct-red); }
+#page-content .construct-block .construct-block {
+  margin: 1.15em 0 .4em;
+  padding: 1em;
+  box-shadow: 4px 4px 0 var(--cb-accent);
+}
+
+/* オフセット幅は常に本文コンテナ基準で計算し、Sigma-9 のサイドバーを覆わないようにする。 */
+#page-content .construct-offset { box-sizing: border-box; width: 78%; max-width: 100%; clear: both; }
+#page-content .construct-offset.cb-step-1 { width: 90%; }
+#page-content .construct-offset.cb-step-2 { width: 75%; }
+#page-content .construct-offset.cb-step-3 { width: 60%; }
+#page-content .construct-offset.cb-right { margin-left: auto; }
+#page-content .construct-offset.cb-left { margin-right: auto; }
+#page-content .construct-offset .construct-block { margin: 1.8em 0; }
+#page-content .construct-float-left,
+#page-content .construct-float-right { box-sizing: border-box; width: 43%; max-width: 100%; }
+#page-content .construct-float-left { float: left; margin: 0 1.7em .8em 0; }
+#page-content .construct-float-right { float: right; margin: 0 0 .8em 1.7em; }
+#page-content .construct-float-left .construct-block,
+#page-content .construct-float-right .construct-block { margin: .9em 0 1.3em; }
+#page-content .construct-flow { display: flow-root; }
+#page-content .construct-flow::after { content: ""; display: table; clear: both; }
+#page-content .construct-credit {
+  margin: 1.6em 0;
+  padding: .8em 1em;
+  border-left: 5px solid var(--construct-red);
+  background: #eee7d8;
+  font-size: .88em;
+}
+#page-content .construct-logo-specimen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 170px;
+  margin: 1.5em 0;
+  border: 3px solid var(--construct-ink);
+  background: var(--construct-paper);
+}
+#page-content .construct-logo-specimen::before {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 120px;
+  background: var(--construct-logo) center / contain no-repeat;
+}
+
+/* 中間幅では見出しと検索を別行にし、サイドバーは引き続き Sigma-9 本体に任せる。 */
+@media (min-width: 768px) and (max-width: 1023px) {
+  div#container-wrap {
+    background:
+      linear-gradient(to bottom, transparent 0 170px, var(--construct-ink) 170px 192px, var(--construct-paper) 192px),
+      url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iX+WbvuWxgl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDIwMDAgMTQwIj4KICA8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMjkuOC4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogMi4xLjEgQnVpbGQgMikgIC0tPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuc3QwIHsKICAgICAgICBvcGFjaXR5OiAuMTc7CiAgICAgIH0KCiAgICAgIC5zdDAsIC5zdDEsIC5zdDIgewogICAgICAgIGZpbGw6ICMxNzE3MTQ7CiAgICAgIH0KCiAgICAgIC5zdDAsIC5zdDMsIC5zdDQsIC5zdDIsIC5zdDUgewogICAgICAgIGlzb2xhdGlvbjogaXNvbGF0ZTsKICAgICAgfQoKICAgICAgLnN0NiwgLnN0MywgLnN0NCB7CiAgICAgICAgZmlsbDogI2M5MjUxYzsKICAgICAgfQoKICAgICAgLnN0MyB7CiAgICAgICAgb3BhY2l0eTogLjY2OwogICAgICB9CgogICAgICAuc3Q3IHsKICAgICAgICBzdHJva2U6ICNjOTI1MWM7CiAgICAgICAgc3Ryb2tlLXdpZHRoOiAzcHg7CiAgICAgIH0KCiAgICAgIC5zdDcsIC5zdDggewogICAgICAgIGZpbGw6IG5vbmU7CiAgICAgIH0KCiAgICAgIC5zdDggewogICAgICAgIHN0cm9rZTogIzE3MTcxNDsKICAgICAgICBzdHJva2Utd2lkdGg6IDJweDsKICAgICAgfQoKICAgICAgLnN0NCwgLnN0NSB7CiAgICAgICAgb3BhY2l0eTogLjM4OwogICAgICB9CgogICAgICAuc3QyIHsKICAgICAgICBvcGFjaXR5OiAuMTY7CiAgICAgIH0KCiAgICAgIC5zdDUgewogICAgICAgIGZpbGw6ICNlZGJkMzI7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgPC9kZWZzPgogIDxwYXRoIGNsYXNzPSJzdDYiIGQ9Ik0wLDE0MEwzMzAsMGg1MGwtMjA4LDE0MEgwWiIvPgogIDxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik0yNzguNTMsMjQuODFoMTQxbC0xMjIuMjMsOTAuMzgtMTguNzctOTAuMzhoMFoiLz4KICA8cGF0aCBjbGFzcz0ic3QyIiBkPSJNNjI2LDE0MEw3ODgsMGg5MmwtMTY3LDE0MGgtODdaIi8+CiAgPHBhdGggY2xhc3M9InN0NCIgZD0iTTgwNiwxMzJMMTExOCwwbDc1LDE0MC0zODctOFoiLz4KICA8cGF0aCBjbGFzcz0ic3Q1IiBkPSJNMTE3MS4zMiw2Ljc5aDM1djg3LjM4aC0zNVY2Ljc5WiIvPgogIDxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMzA3LDBsMTQyLDE0MGgtODJMMTIyNSwwaDgyWiIvPgogIDxwYXRoIGNsYXNzPSJzdDMiIGQ9Ik0xNDQxLjg3LDExNS43NGwxNjAuMTMtODEuNzQtODUuMTMsMTA1Ljc0cy03NS0yNC03NS0yNFoiLz4KICA8cGF0aCBjbGFzcz0ic3QyIiBkPSJNMTg5NiwwbC0xODcsMTQwaC0xMzlMMTc3MywwaDEyM1oiLz4KICA8cGF0aCBjbGFzcz0ic3Q2IiBkPSJNMTc4OSwwbDIxMSwxNDBoLTYwTDE3MzAsMGg1OVoiLz4KICA8Zz4KICAgIDxwYXRoIGNsYXNzPSJzdDgiIGQ9Ik0zNS41Nyw0M0wyMDIuMzQsNi45Nk0zNi4zNCw0Ny44M2wxODAtMjkuODciLz4KICAgIDxwYXRoIGNsYXNzPSJzdDgiIGQ9Ik02NDguNzksMjMuNWgxMTguMDJNNjYwLjY2LDMyLjVoMTI0LjE0TTEyMTMuNTcsOTQuMTdsMTY0LTYzLjE3TTEyMjMuNTcsMTA2LjE3bDE2Mi02My4xNyIvPgogICAgPHBhdGggY2xhc3M9InN0OCIgZD0iTTE3NDcuNjcsMTA2LjI0bDIyOS40MS05NC4wM00xNzU0LjY3LDExOC4yNGwyMjkuNDEtOTQuMDMiLz4KICA8L2c+CiAgPHBhdGggY2xhc3M9InN0NyIgZD0iTTEyMTMsMTI1aDEyME0xNjI5LjcsMTguNTdoODkiLz4KICA8cmVjdCBjbGFzcz0ic3QxIiB4PSI4OTIiIHk9IjE4IiB3aWR0aD0iODYuNDMiIGhlaWdodD0iMjkiLz4KICA8cmVjdCBjbGFzcz0ic3Q0IiB4PSIxNDM4LjE1IiB5PSIzMSIgd2lkdGg9IjcwIiBoZWlnaHQ9IjI0Ii8+CiAgPHJlY3QgY2xhc3M9InN0MyIgeD0iMTY2MSIgeT0iODEuMzgiIHdpZHRoPSIzMSIgaGVpZ2h0PSI0Ni4zNiIvPgogIDxwb2x5Z29uIGNsYXNzPSJzdDQiIHBvaW50cz0iMzQ5LjAzIDEwMi40MSA0NTMuOTcgOTguMDcgNDUzLjk3IDEyMi4wNyAzNDkuMDMgMTI2LjQxIDM0OS4wMyAxMDIuNDEiLz4KICA8bGluZSBjbGFzcz0ic3Q4IiB4MT0iNTYuNyIgeTE9IjExLjQiIHgyPSIxMzQuNDUiIHkyPSI2MS45NiIvPgo8L3N2Zz4=") center top / auto 170px no-repeat,
+      linear-gradient(to bottom, var(--construct-paper) 0 170px, var(--construct-ink) 170px 192px, var(--construct-paper) 192px);
+  }
+  #header { height: 170px; }
+  #header h1, #header h2 {
+    float: none;
+    clear: none;
+    max-height: none;
+    margin-left: 124px;
+  }
+  #header h1::before { top: 16px; left: -120px; width: 120px; height: 120px; }
+  #header h1 a {
+    padding: 60px 0 0;
+    max-height: none;
+    font-size: 26px;
+    line-height: 1.1;
+  }
+  #header h2 span { padding: .4em 0 0; max-height: none; line-height: 1.2; }
+  #search-top-box { top: 137px; }
+  #top-bar { top: 170px; }
+}
+
+@media (max-width: 767px) {
+  #login-status { padding: 2px 4px; font-size: 11px; }
+  #account-options a { padding: 7px 9px; }
+  div#container-wrap {
+    /* SVG 内の x≈500 のデスクトップ用ロゴ位置を、170px ヘッダー高に比例換算した 607px。 */
+    --construct-mobile-logo-center: calc(5vw + 4px);
+    --construct-svg-logo-anchor: 607px;
+    background:
+      linear-gradient(to bottom, transparent 0 170px, var(--construct-ink) 170px 192px, var(--construct-paper) 192px),
+      url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iX+WbvuWxgl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDIwMDAgMTQwIj4KICA8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMjkuOC4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogMi4xLjEgQnVpbGQgMikgIC0tPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuc3QwIHsKICAgICAgICBvcGFjaXR5OiAuMTc7CiAgICAgIH0KCiAgICAgIC5zdDAsIC5zdDEsIC5zdDIgewogICAgICAgIGZpbGw6ICMxNzE3MTQ7CiAgICAgIH0KCiAgICAgIC5zdDAsIC5zdDMsIC5zdDQsIC5zdDIsIC5zdDUgewogICAgICAgIGlzb2xhdGlvbjogaXNvbGF0ZTsKICAgICAgfQoKICAgICAgLnN0NiwgLnN0MywgLnN0NCB7CiAgICAgICAgZmlsbDogI2M5MjUxYzsKICAgICAgfQoKICAgICAgLnN0MyB7CiAgICAgICAgb3BhY2l0eTogLjY2OwogICAgICB9CgogICAgICAuc3Q3IHsKICAgICAgICBzdHJva2U6ICNjOTI1MWM7CiAgICAgICAgc3Ryb2tlLXdpZHRoOiAzcHg7CiAgICAgIH0KCiAgICAgIC5zdDcsIC5zdDggewogICAgICAgIGZpbGw6IG5vbmU7CiAgICAgIH0KCiAgICAgIC5zdDggewogICAgICAgIHN0cm9rZTogIzE3MTcxNDsKICAgICAgICBzdHJva2Utd2lkdGg6IDJweDsKICAgICAgfQoKICAgICAgLnN0NCwgLnN0NSB7CiAgICAgICAgb3BhY2l0eTogLjM4OwogICAgICB9CgogICAgICAuc3QyIHsKICAgICAgICBvcGFjaXR5OiAuMTY7CiAgICAgIH0KCiAgICAgIC5zdDUgewogICAgICAgIGZpbGw6ICNlZGJkMzI7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgPC9kZWZzPgogIDxwYXRoIGNsYXNzPSJzdDYiIGQ9Ik0wLDE0MEwzMzAsMGg1MGwtMjA4LDE0MEgwWiIvPgogIDxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik0yNzguNTMsMjQuODFoMTQxbC0xMjIuMjMsOTAuMzgtMTguNzctOTAuMzhoMFoiLz4KICA8cGF0aCBjbGFzcz0ic3QyIiBkPSJNNjI2LDE0MEw3ODgsMGg5MmwtMTY3LDE0MGgtODdaIi8+CiAgPHBhdGggY2xhc3M9InN0NCIgZD0iTTgwNiwxMzJMMTExOCwwbDc1LDE0MC0zODctOFoiLz4KICA8cGF0aCBjbGFzcz0ic3Q1IiBkPSJNMTE3MS4zMiw2Ljc5aDM1djg3LjM4aC0zNVY2Ljc5WiIvPgogIDxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMzA3LDBsMTQyLDE0MGgtODJMMTIyNSwwaDgyWiIvPgogIDxwYXRoIGNsYXNzPSJzdDMiIGQ9Ik0xNDQxLjg3LDExNS43NGwxNjAuMTMtODEuNzQtODUuMTMsMTA1Ljc0cy03NS0yNC03NS0yNFoiLz4KICA8cGF0aCBjbGFzcz0ic3QyIiBkPSJNMTg5NiwwbC0xODcsMTQwaC0xMzlMMTc3MywwaDEyM1oiLz4KICA8cGF0aCBjbGFzcz0ic3Q2IiBkPSJNMTc4OSwwbDIxMSwxNDBoLTYwTDE3MzAsMGg1OVoiLz4KICA8Zz4KICAgIDxwYXRoIGNsYXNzPSJzdDgiIGQ9Ik0zNS41Nyw0M0wyMDIuMzQsNi45Nk0zNi4zNCw0Ny44M2wxODAtMjkuODciLz4KICAgIDxwYXRoIGNsYXNzPSJzdDgiIGQ9Ik02NDguNzksMjMuNWgxMTguMDJNNjYwLjY2LDMyLjVoMTI0LjE0TTEyMTMuNTcsOTQuMTdsMTY0LTYzLjE3TTEyMjMuNTcsMTA2LjE3bDE2Mi02My4xNyIvPgogICAgPHBhdGggY2xhc3M9InN0OCIgZD0iTTE3NDcuNjcsMTA2LjI0bDIyOS40MS05NC4wM00xNzU0LjY3LDExOC4yNGwyMjkuNDEtOTQuMDMiLz4KICA8L2c+CiAgPHBhdGggY2xhc3M9InN0NyIgZD0iTTEyMTMsMTI1aDEyME0xNjI5LjcsMTguNTdoODkiLz4KICA8cmVjdCBjbGFzcz0ic3QxIiB4PSI4OTIiIHk9IjE4IiB3aWR0aD0iODYuNDMiIGhlaWdodD0iMjkiLz4KICA8cmVjdCBjbGFzcz0ic3Q0IiB4PSIxNDM4LjE1IiB5PSIzMSIgd2lkdGg9IjcwIiBoZWlnaHQ9IjI0Ii8+CiAgPHJlY3QgY2xhc3M9InN0MyIgeD0iMTY2MSIgeT0iODEuMzgiIHdpZHRoPSIzMSIgaGVpZ2h0PSI0Ni4zNiIvPgogIDxwb2x5Z29uIGNsYXNzPSJzdDQiIHBvaW50cz0iMzQ5LjAzIDEwMi40MSA0NTMuOTcgOTguMDcgNDUzLjk3IDEyMi4wNyAzNDkuMDMgMTI2LjQxIDM0OS4wMyAxMDIuNDEiLz4KICA8bGluZSBjbGFzcz0ic3Q4IiB4MT0iNTYuNyIgeTE9IjExLjQiIHgyPSIxMzQuNDUiIHkyPSI2MS45NiIvPgo8L3N2Zz4=") calc(var(--construct-mobile-logo-center) - var(--construct-svg-logo-anchor)) top / auto 170px no-repeat,
+      linear-gradient(to bottom, var(--construct-paper) 0 170px, var(--construct-ink) 170px 192px, var(--construct-paper) 192px);
+  }
+
+  #header {
+    width: 100%;
+    max-width: none;
+    height: 170px;
+    padding-bottom: 22px;
+  }
+
+  #header h1,
+  #header h2 {
+    position: absolute;
+    float: none;
+    clear: none;
+    max-height: none;
+    margin: 0;
+  }
+
+  #header h1 {
+    top: 0;
+    left: 20px;
+  }
+
+  #header h2 {
+    top: 100px;
+    left: 152px;
+  }
+
+  #header h1::before {
+    content: none;
+  }
+
+  #header h1 a::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 0;
+    width: 120px;
+    height: 120px;
+    background: var(--construct-logo) center / contain no-repeat;
+    box-shadow: none;
+  }
+
+  #header h1 a {
+    position: relative;
+    box-sizing: border-box;
+    min-height: 136px;
+    max-height: none;
+    padding: 66px 0 0 132px;
+    font-size: clamp(1.1rem, 4.5vw, 2rem);
+    line-height: 1.08;
+    white-space: nowrap;
+    text-shadow: 2px 2px 0 var(--construct-red);
+  }
+
+  #header h2 span {
+    max-height: none;
+    padding: 0;
+    font-size: .8em;
+    line-height: 1.2;
+  }
+
+  #search-top-box {
+    top: 137px;
+    right: 5%;
+    width: 90%;
+  }
+
+  #search-top-box-input {
+    width: min(34vw, 160px);
+  }
+
+  #top-bar {
+    top: 170px;
+  }
+
+  #top-bar .open-menu a {
+    border: 3px solid var(--construct-ink);
+    border-radius: 0;
+    background: var(--construct-yellow);
+    color: var(--construct-ink);
+    box-shadow: 4px 4px 0 var(--construct-red);
+  }
+
+  #top-bar .open-menu a:hover,
+  #top-bar .open-menu a:focus {
+    background: var(--construct-paper);
+    color: var(--construct-ink);
+    box-shadow: 1px 1px 0 var(--construct-red);
+    transform: translate(3px, 3px);
+  }
+
+  #page-content {
+  background: rgba(242, 236, 222, .88); font-size: 15px; }
+  .construct-poster { margin-top: 1em; }
+  .construct-dossier { grid-template-columns: 1fr; }
+  .construct-dossier > div { padding: 1em; }
+  .construct-summary { border-top: 0; }
+  .construct-annotated { grid-template-columns: 1fr; gap: .5em; }
+  .construct-margin-note { width: fit-content; padding-right: 2em; }
+  .construct-alert { grid-template-columns: 3.5em minmax(0, 1fr); }
+  #page-content table.wiki-content-table {
+    display: table;
+    width: 100%;
+    max-width: 100%;
+  }
+  #page-content #toc { padding: .65em .7em .8em; }
+  #page-options-container .page-options-bottom a.btn { margin: .25em; }
+  #side-bar { background: var(--construct-paper); }
+  /* Sigma-9 の閉じるオーバーレイはサイドバーの内側にある。カードが透明な場合は下から灰色が透けて見える。 */
+  #side-bar .side-block { background: var(--construct-paper); }
+  #page-content .construct-offset,
+  #page-content .construct-offset.cb-step-1,
+  #page-content .construct-offset.cb-step-2,
+  #page-content .construct-offset.cb-step-3,
+  #page-content .construct-float-left,
+  #page-content .construct-float-right {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #search-top-box-form input[type=submit],
+  #page-content .construct-actions a,
+  #page-content .collapsible-block-link {
+    transition: none;
+  }
+}
+
+[[/code]]
+[[/collapsible]]
+[[/iftags]]
