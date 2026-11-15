@@ -25,6 +25,7 @@
 **作者:** ©︎JakdragonX、Pedagon
 **作成年:** 2021
 **初訳時参照リビジョン:** 104
+**改訳時参照リビジョン:** 107
 [[include :scp-jp:credit:end-preview]]
 
 > こんにちは。これは**ミニマリストBHLテーマ**です。元々はPedagon氏が自身の科学部門関連作に使用するためのものでしたが、これをより使い勝手が良くなるように改変しました。このページをincludeするには以下のコードを使用してください。
@@ -601,7 +602,7 @@ div#page-options-bottom>a:hover {
 }
 
 .creditButton p a {
-    background-color: rgb(var(--black-accent));
+    background-color: rgb(var(--black-accent, var(--dark-accent)));
 }
 
 #page-content .rate-box-with-credit-button {
@@ -713,9 +714,6 @@ table.wiki-content-table tr {
 
 :is(div.image-block,div.scp-image-block) :is(.image-caption,.scp-image-caption) {
     background-color: rgb(var(--dark-accent));
-}
-
-:is(div.image-block,div.scp-image-block) :is(.image-caption,.scp-image-caption)>p {
     color: rgb(var(--bright-accent));
 }
 
@@ -842,7 +840,7 @@ form#edit-page-form .edit-help-34>a {
     #search-top-box-form>input,
     #search-top-box-form>input:hover,
     #search-top-box-form>input:focus {
-     background: rgb(var(--light-accent));
+     background: rgb(var(--light-accent, var(--pale-accent)));
     }
 }
 
@@ -863,7 +861,7 @@ form#edit-page-form .edit-help-34>a {
 }
 
 #u-author_block>p>a {
-    color: var(--linkColour) !important;
+    color: var(--linkColour, var(--link-color)) !important;
 }
 
 [[/code]]

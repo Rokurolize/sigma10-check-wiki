@@ -1,8 +1,10 @@
 [[div class="content-panel standalone centered"]]
 [[div class="panel-body"]]
-+ Phase 17 差分: Night Rush Theme
++ Phase 22 差分: Night Rush Theme
 対象の既存ページ: [[[theme:night-rush-theme|theme:night-rush-theme]]]（SCP-JP）
-原語版: https://scp-wiki.wikidot.com/theme:night-rush-theme rev28（初訳時）
+原語版: https://scp-wiki.wikidot.com/theme:night-rush-theme rev28 → rev31
+
+取り込み: トップバーのドロップダウン最終項目の下線とhover時の下線解除。
 
 **適用方法:** 既存ページの該当行を下記の差分どおりに変更してください。差分はSCP-JPの現行ページに対するものです。
 [[/div]]
@@ -11,16 +13,32 @@
 [[code type="diff"]]
 --- theme:night-rush-theme (before)
 +++ theme:night-rush-theme (after)
-@@ -3,6 +3,11 @@
+@@ -3,6 +3,12 @@
  [[/module]]
  
  [[iftags +テーマ]]
++
 +[[include :scp-jp:credit:start-preview]]
 +**初訳時参照リビジョン:** 28
++**改訳時参照リビジョン:** 31
 +**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:night-rush-theme ソース]
 +[[include :scp-jp:credit:end-preview]]
-+
  [[>]]
  **Rating:**
  [[module Rate]]
+@@ -266,6 +272,14 @@
+ #top-bar ul li:hover ul li a {   /*  dropdown borders  */
+   border-top-color: #e6e6e6;
+ }
++#top-bar ul li ul li:last-of-type a,
++#top-bar ul li ul li:last-of-type:hover a {
++  border-bottom: 1px solid #e6e6e6;
++}
++#top-bar ul li.sfhover a:hover,
++#top-bar ul li:hover a:hover {
++  border-bottom: 0;
++}
+ 
+ /*-------------------------------------*\
+  *               SIDEBAR               *
 [[/code]]

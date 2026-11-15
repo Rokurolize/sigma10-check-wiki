@@ -1,8 +1,10 @@
 [[div class="content-panel standalone centered"]]
 [[div class="panel-body"]]
-+ Phase 17 差分: Minimalist BHL Theme
++ Phase 22 差分: Minimalist BHL Theme
 対象の既存ページ: [[[theme:minimalist-bhl|theme:minimalist-bhl]]]（SCP-JP）
-原語版: https://scp-wiki.wikidot.com/theme:minimalist-bhl rev104（初訳時）
+原語版: https://scp-wiki.wikidot.com/theme:minimalist-bhl rev104 → rev107
+
+取り込み: 画像キャプションの色指定を親に統合（>p セレクタ削除）。§3の未定義変数をフォールバックで修理。
 
 **適用方法:** 既存ページの該当行を下記の差分どおりに変更してください。差分はSCP-JPの現行ページに対するものです。
 [[/div]]
@@ -15,8 +17,45 @@
  **原題:** Minimalist BHL Theme
  **作者:** ©︎[[*user JakdragonX]]、[[*user Pedagon]]
  **作成年:** 2021
-+**初訳時参照リビジョン:** 104
++**改訳時参照リビジョン:** 107
  [[include :scp-jp:credit:end-preview]]
  
  > こんにちは。これは**ミニマリストBHLテーマ**です。元々は[[*user Pedagon]]氏が自身の科学部門関連作に使用するためのものでしたが、これをより使い勝手が良くなるように改変しました。このページをincludeするには以下のコードを使用してください。
+@@ -601,7 +602,7 @@
+ }
+ 
+ .creditButton p a {
+-    background-color: rgb(var(--black-accent));
++    background-color: rgb(var(--black-accent, var(--dark-accent)));
+ }
+ 
+ #page-content .rate-box-with-credit-button {
+@@ -713,9 +714,6 @@
+ 
+ :is(div.image-block,div.scp-image-block) :is(.image-caption,.scp-image-caption) {
+     background-color: rgb(var(--dark-accent));
+-}
+-
+-:is(div.image-block,div.scp-image-block) :is(.image-caption,.scp-image-caption)>p {
+     color: rgb(var(--bright-accent));
+ }
+ 
+@@ -842,7 +840,7 @@
+     #search-top-box-form>input,
+     #search-top-box-form>input:hover,
+     #search-top-box-form>input:focus {
+-     background: rgb(var(--light-accent));
++     background: rgb(var(--light-accent, var(--pale-accent)));
+     }
+ }
+ 
+@@ -863,7 +861,7 @@
+ }
+ 
+ #u-author_block>p>a {
+-    color: var(--linkColour) !important;
++    color: var(--linkColour, var(--link-color)) !important;
+ }
+ 
+ [[/code]]
 [[/code]]

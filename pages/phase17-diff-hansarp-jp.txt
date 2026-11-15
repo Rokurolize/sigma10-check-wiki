@@ -1,8 +1,10 @@
 [[div class="content-panel standalone centered"]]
 [[div class="panel-body"]]
-+ Phase 17 差分: HANSARP Theme
++ Phase 22 差分: HANSARP Theme
 対象の既存ページ: [[[theme:hansarp|theme:hansarp]]]（SCP-JP）
-原語版: https://scp-wiki.wikidot.com/theme:hansarp rev12（初訳時）
+原語版: https://scp-wiki.wikidot.com/theme:hansarp rev12 → rev14
+
+取り込み: blockquote装飾の ::after 形状（top/width/aspect-ratio）。フォント配信元はGoogle Fontsを維持。
 
 **適用方法:** 既存ページの該当行を下記の差分どおりに変更してください。差分はSCP-JPの現行ページに対するものです。
 [[/div]]
@@ -15,8 +17,22 @@
  **作者:** [[*user EstrellaYoshte]]
  **原題:** HANSARP Theme
  **作成年:** 2022
-+**初訳時参照リビジョン:** 12
++**改訳時参照リビジョン:** 14
  [[include :scp-jp:credit:end-preview]]
  
  [[*user Woedenaz]]はHANSARPテーマで何か使えそうなものを作れないかと俺に挑戦を申し込んできた。俺は受けたさ。
+@@ -605,10 +606,10 @@
+ }
+ 
+ :is(blockquote, div.blockquote)::after {
+-    top: calc(97.5% - 0.75rem);
++    top: calc(100% - 1.75rem);
+     right: calc(90% - 2rem);
+-    width: calc(15% + 5rem);
+-    height: calc(10% + 3rem);
++    width: min(calc(12.5% + 6rem), 12.5rem);
++    aspect-ratio: 7 / 4;
+     -webkit-clip-path: polygon(0 55%, 40% 40%, 37% 0, 100% 30%, 93% 83%, 60% 64%, 56% 84%);
+             clip-path: polygon(0 55%, 40% 40%, 37% 0, 100% 30%, 93% 83%, 60% 64%, 56% 84%);
+     transform: rotate(-25deg);
 [[/code]]

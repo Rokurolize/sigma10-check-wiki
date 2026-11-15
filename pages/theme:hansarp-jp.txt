@@ -24,6 +24,7 @@
 **原題:** HANSARP Theme
 **作成年:** 2022
 **初訳時参照リビジョン:** 12
+**改訳時参照リビジョン:** 14
 [[include :scp-jp:credit:end-preview]]
 
 WoedenazはHANSARPテーマで何か使えそうなものを作れないかと俺に挑戦を申し込んできた。俺は受けたさ。
@@ -606,10 +607,10 @@ body {
 }
 
 :is(blockquote, div.blockquote)::after {
-    top: calc(97.5% - 0.75rem);
+    top: calc(100% - 1.75rem);
     right: calc(90% - 2rem);
-    width: calc(15% + 5rem);
-    height: calc(10% + 3rem);
+    width: min(calc(12.5% + 6rem), 12.5rem);
+    aspect-ratio: 7 / 4;
     -webkit-clip-path: polygon(0 55%, 40% 40%, 37% 0, 100% 30%, 93% 83%, 60% 64%, 56% 84%);
             clip-path: polygon(0 55%, 40% 40%, 37% 0, 100% 30%, 93% 83%, 60% 64%, 56% 84%);
     transform: rotate(-25deg);

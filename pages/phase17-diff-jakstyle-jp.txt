@@ -1,8 +1,10 @@
 [[div class="content-panel standalone centered"]]
 [[div class="panel-body"]]
-+ Phase 17 差分: JAKSTYLE
++ Phase 22 差分: JAKSTYLE
 対象の既存ページ: [[[theme:jakstyle|theme:jakstyle]]]（SCP-JP）
-原語版: https://scp-wiki.wikidot.com/theme:jakstyle rev305（初訳時）
+原語版: https://scp-wiki.wikidot.com/theme:jakstyle rev305 → rev327
+
+上流306–327は95セレクタ規模のCSSリファクタ。局所差分ではなく再移植対象のため本体は変更なし。§3の未解決参照をフォールバックで修理し、hovertipのpadding上書きを削除。
 
 **適用方法:** 既存ページの該当行を下記の差分どおりに変更してください。差分はSCP-JPの現行ページに対するものです。
 [[/div]]
@@ -15,8 +17,75 @@
  **著者:** ©︎[[*user JakdragonX]]
  **原題:** JAKSTYLE
  **作成年:** 2021
-+**初訳時参照リビジョン:** 305
++**改訳時参照リビジョン:** 327
  [[include :scp-jp:credit:end-preview]]
  
  + ここはどこ?
+@@ -218,7 +219,7 @@
+ 
+     /* Primary Header Colors */
+     --swatch-topmenu-border-color: var(--swatch-menubg-black-color);
+-    --swatch-topmenu-bg-color: var(--swatch-menubg-extra-dark-color);
++    --swatch-topmenu-bg-color: var(--swatch-menubg-extra-dark-color, var(--swatch-menubg-black-color));
+ 
+     --rating-module-text-color: var(--bright-accent);
+     --rating-module-button-cancel-color: var(--gray-monochrome);
+@@ -232,8 +233,8 @@
+     --diagonal-stripes: repeating-linear-gradient(45deg,
+      hsla(0, 0%, 100%, 0),
+      hsla(0, 0%, 100%, 0) 0.25vh,
+-     rgba(var(--swatch-menubg-extra-dark-color), 0.1) 0.35vh,
+-     rgba(var(--swatch-menubg-extra-dark-color), 0.2) 0.5vh);
++     rgba(var(--swatch-menubg-extra-dark-color, var(--swatch-menubg-black-color)), 0.1) 0.35vh,
++     rgba(var(--swatch-menubg-extra-dark-color, var(--swatch-menubg-black-color)), 0.2) 0.5vh);
+ 
+     --toggle-button-bg: rgb(var(--dark-accent));
+     --toggle-border-color: rgb(var(--dark-gray-monochrome));
+@@ -263,7 +264,7 @@
+ }
+ 
+ #header h1 a::after {
+-    color: rgb(var(--light-accent));
++    color: rgb(var(--light-accent, var(--pale-accent)));
+ }
+ 
+ #header h2 span::before {
+@@ -435,7 +436,7 @@
+ }
+ 
+ .creditButton p a {
+-    background-color: rgb(var(--black-accent));
++    background-color: rgb(var(--black-accent, var(--dark-accent)));
+ }
+ 
+ #page-content .rate-box-with-credit-button {
+@@ -602,7 +603,7 @@
+ #page-content div.b-tables table.wiki-content-table th,
+ #page-content table.wiki-content-table th {
+     background: rgb(var(--dark-gray-monochrome));
+-    color: rgb(var(--white-accent));
++    color: rgb(var(--white-accent, var(--white-monochrome)));
+     --tables-border: var(--dark-gray-monochrome);
+ }
+ 
+@@ -612,7 +613,7 @@
+ div.note,
+ #lock-info {
+     border: 0.0625rem solid rgba(var(--swatch-menubg-light-color), 0.25);
+-    background-color: rgb(var(--swatch-menubg-extra-dark-color));
++    background-color: rgb(var(--swatch-menubg-extra-dark-color, var(--swatch-menubg-black-color)));
+     color: rgb(var(--swatch-text-light));
+ }
+ 
+@@ -632,10 +633,6 @@
+ .hovertip {
+     border: .0625rem solid rgb(var(--dark-gray-monochrome));
+     color: rgb(var(--swatch-text-light));
+-}
+-
+-.hovertip .content {
+-    padding: 0;
+ }
+ 
+ #footer {
 [[/code]]

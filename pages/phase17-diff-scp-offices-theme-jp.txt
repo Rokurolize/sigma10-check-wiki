@@ -1,8 +1,10 @@
 [[div class="content-panel standalone centered"]]
 [[div class="panel-body"]]
-+ Phase 17 差分: SCP Offices Theme
++ Phase 22 差分: SCP Offices Theme
 対象の既存ページ: [[[theme:scp-offices-theme|theme:scp-offices-theme]]]（SCP-JP）
-原語版: https://scp-wiki.wikidot.com/theme:scp-offices-theme rev56（改訳時）
+原語版: https://scp-wiki.wikidot.com/theme:scp-offices-theme rev56 → rev58
+
+取り込み: page-optionsボタンの --min-font-size:.7rem、未定義だった --offset-from-page-top を0remで定義。フォント配信元はGoogle Fontsを維持。
 
 **適用方法:** 既存ページの該当行を下記の差分どおりに変更してください。差分はSCP-JPの現行ページに対するものです。
 [[/div]]
@@ -15,8 +17,28 @@
  **著者:** ©[[*user Woedenaz]]
  **原題:** SCP Offices Theme
  **作成年:** 2019
-+**改訳時参照リビジョン:** 56
++**改訳時参照リビジョン:** 58
  [[include :scp-jp:credit:end-preview]]
  
  [[=]]
+@@ -206,6 +207,7 @@
+ @supports(display: grid) {
+ 
+     :root {
++     --offset-from-page-top: 0rem;
+      /* S-CSS-P Integration */
+      /* If you're making a new CSS theme, please include the following three variables at minimum. */
+      --theme-base: "black-highlighter";
+@@ -347,6 +349,11 @@
+      font-size: calc(var(--base-font-size) * 0.75);
+     }
+ 
++    div[id*=page-options-bottom]:not(:is(.page-rate-widget-box,
++#search-top-box-form)) > a.btn {
++     --min-font-size: 0.7rem;
++    }
++
+     @media only screen and (max-width: 56.25rem) {
+      #header {
+      background-repeat: no-repeat, repeat;
 [[/code]]
