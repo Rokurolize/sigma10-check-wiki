@@ -1,0 +1,737 @@
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** 無名城の具名者テーマ
+**翻訳責任者:** SCP-JP
+**翻訳年:** 2026
+**原題:** 无名城中的具名者 版式
+**著作権者:** Re_spectators
+**作成年:** 2024
+**初訳時参照リビジョン:** 6
+**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:nameless ソース]
+[[include :scp-jp:credit:end-preview]]
+
++ 使い方
+
+これは無名者の城（[*https://scp-wiki-cn.wikidot.com/scp-cn-3612 SCP-CN-3612]）および関連作品のために制作されたテーマです。かつて本文のアクセシビリティモードページで使用されていたもので、[*https://scp-wiki-cn.wikidot.com/theme:dustjacket-sigma ダストジャケットSigma-9テーマ（中国語版）]と[[*user Dr Hormress]]による[https://ah-sandbox.wikidot.com/theme:library 星と図書館テーマ]をもとに改変されています。
+
+このテーマは、任意の財団作品や図書館作品、特に無名者の城に関連する作品へ使用できます。もちろん、この設定と無関係な作品を書きたい場合でも、テーマを気に入ったなら自由に使用できます。
+
+作品の冒頭に次の構文を追加すると、このテーマを適用できます。
+
+> @@[[include theme:nameless-jp]]@@
+
+任意のページのバックリンクは、ページ下部の「+ オプション」、「バックリンク」をクリックすると確認できます。
+
++ テーマカラー
+
+[[include :scp-jp:component:theme-squares -=-
+| color1-name=@@@@
+| color1-variable=--gray-monochrome
+| color1-info=(189, 144, 58)
+| color1-has-light-text=1
+| color2-name=@@@@
+| color2-variable=--bright-accent
+| color2-info=(255, 244, 220)
+| subcolor1-name=@@@@
+| subcolor1-variable=--light-gray-monochrome
+| subcolor1-info=(232, 192, 118)
+| subcolor1-has-light-text=1
+| subcolor2-name=@@@@
+| subcolor2-variable=--pale-gray-monochrome
+| subcolor2-info=(217, 198, 137)
+| subcolor3-name=@@@@
+| subcolor3-variable=--dark-gray-monochrome
+| subcolor3-info=(71, 50, 6)
+| subcolor3-has-light-text=1
+| subcolor4-name=@@@@
+| subcolor4-variable=--medium-accent
+| subcolor4-info=(228, 180, 28)
+| subcolor4-has-light-text=1
+| subcolor5-name=@@@@
+| subcolor5-variable=--dark-accent
+| subcolor5-info=(185, 150, 17)
+| subcolor5-has-light-text=1
+]]
+
++ 派生
+
+このテーマには任意で使える追加機能がいくつかあります。使用する場合は、以下のコードを使ってください。
+
+* デフォルトでは、テーマの背景はページ最上部に固定されています。背景を動かないようにしたい場合は、以下のコードを使ってください。背景画像が適度に縮小され、デスクトップ表示ではスクロールしても背景が移動しなくなります。
+
+> @@[[include theme:nameless-jp fixed=*]]@@
+
+* このテーマのデフォルトロゴは放浪者の図書館のアイコンです。財団ヘッダーを使いたい場合は、以下のコードを使ってください。同時にヘッダーへ副題が追加されます。
+
+> @@[[include theme:nameless-jp scp=*]]@@
+
+* 2つの効果を同時に使いたい場合:
+
+> @@[[include theme:nameless-jp fixed=*|scp=*]]@@
+
+上記コードの効果例は[https://pokm.wikidot.com/nameless-theme-test こちら]です。Safariベースのブラウザプラットフォームでは、背景固定効果を実現できない点に注意してください。
+
+@@@@
+@@@@
+@@@@
+
+ヘッダー画像と大見出しを変更したい場合は、以下のコードを使い、対応する箇所にヘッダー画像のリンクと見出し文言を入力してください。
+[[div_ class="code" style="padding-top: 1rem; padding-bottom: 1rem;"]]
+@@[[module css]]@@
+@@:root {@@
+@@    --lgurl: url("ヘッダー画像のリンク");@@
+@@}@@
+@@@@
+@@#header h1 a::before {@@
+@@    content: "使用したい大見出しの文言";@@
+@@}@@
+@@[[/module]]@@
+[[/div]]
+
+副題を変更したい場合は、scp=*版のテーマを使い、以下のコード内の対応する箇所に副題の文言を入力してください。
+
+[[div_ class="code" style="padding-top: 1rem; padding-bottom: 1rem;"]]
+@@[[module css]]@@
+@@#header h2::before {@@
+@@    content: "使用したい副題の文言";@@
+@@}@@
+@@[[/module]]@@
+[[/div]]
+
++ 例
+
+[[include component:image-block name=https://wanderers-library.wdfiles.com/local--files/component%3Atheme/wandererslibary_logobg.png|caption=放浪者の図書館ロゴ|width=200px]]
+
+4つのハイフン「@@----@@」で水平線を作成できます。引用ブロックなど他の要素内に置かれていない場合、この線はページを左右いっぱいに横切ります。文書を複数の部分へ分けるこの線が区切り線です。
+
+~~~~
+
+----
+
+「@@----@@」をクラス（class）「fancyhr」のdiv要素に入れると、以下のように別の水平線スタイルを表示できます。
+> @@[[div_ class="fancyhr"]]@@
+> @@----@@
+> @@[[/div]]@@
+
+表示例:
+
+[[div_ class="fancyhr"]]
+----
+[[/div]]
+
+[[div_ class="fancyborder"]]
+任意の要素へ「fancyborder」クラス（class）を追加すると、特殊な枠線を表示できます。たとえば、このボックスのコードは次のとおりです。
+[[div_ class="code" style="padding-top: 1rem; padding-bottom: 1rem;"]]
+@@[[div_ class="fancyborder"]]@@
+@@テキスト内容@@
+@@[[/div]]@@
+[[/div]]
+[[/div]]
+
+脚注の前には「(」または「,」が追加されます。[[footnote]]これにより、複数の脚注をよりすっきり追加できます。[[/footnote]][[footnote]]一部のブラウザでは、このスタイルをうまくサポートできない場合があります。[[/footnote]]
+
+[[footnoteblock]]
+
+見出しは、行頭に1個から6個のプラス記号「+」を入力すると作成できます。
+
+[[collapsible show="+ 見出し" hide="- 見出し"]]
++ レベル1見出し
+
+++ レベル2見出し
+
++++ レベル3見出し
+
+++++ レベル4見出し
+
++++++ レベル5見出し
+
+++++++ レベル6見出し
+[[/collapsible]]
+
+@@ @@
+
+
+
+[[tabview]]
+[[tab タブ]]
+これはタブビューです。
+[[/tab]]
+[[tab タブ]]
+ほら、ここにはもっとテキストがあります。
+
+なんと精巧なことでしょう。
+[[/tab]]
+[[tab 長いタブ]]
+これは長いタブです。たくさんのテキストがあります。
+
+これは長いタブです。たくさんのテキストがあります。
+
+これは長いタブです。たくさんのテキストがあります。
+
+これは長いタブです。たくさんのテキストがあります。
+
+これは長いタブです。たくさんのテキストがあります。
+
+これは長いタブです。たくさんのテキストがあります。
+
+これは長いタブです。たくさんのテキストがあります。
+
+これは長いタブです。たくさんのテキストがあります。
+
+これは長いタブです。たくさんのテキストがあります。
+
+これは長いタブです。たくさんのテキストがあります。
+
+これは長いタブです。たくさんのテキストがあります。
+
+これは長いタブです。たくさんのテキストがあります。
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[/tabview]]
+
+> これは引用ブロックです。行頭に「> 」を加えると作成できます。
+>
+> さらにテキスト
+> -----
+> 区切り線
+>
+>> 入れ子の引用ブロック
+
+||~ これは ||~ 表です ||
+|| もうとっくに || 作り方は ||
+|||| 知っていますよね ||
+
+------
+
+[[collapsible show="クリックしてソースコードを展開" hide="閉じる"]]
+[[code type="css"]]
+@import url(https://pokm.wikidot.com/local--code/theme:starry-library/1);
+
+/*------- 変数 ------- */
+:root {
+    --body-font: adelle-sans, 'Lato', 'Noto Sans JP', sans-serif;
+    --header-font: 'zuijinregular', 'Poppins', 'Noto Serif JP', serif;
+    --title-font: 'zuijinregular', 'Poppins', 'Noto Serif JP', serif;
+    --mono-font: "Noto Sans Mono", adaptive-mono, "PT Mono", "Andale Mono", "Courier New", Courier, monospace;
+    --pale-gray-monochrome: 217, 198, 137;
+    --light-gray-monochrome: 232, 192, 118;
+    --gray-monochrome: 189, 144, 58;
+    --dark-gray-monochrome: 71, 50, 6;
+    --bright-accent: 255, 244, 220;
+    --medium-accent: 228, 180, 28;
+    --dark-accent: 185, 150, 17;
+}
+
+/* ------- メインタイトル -------*/
+#header h1 a::before {
+    color: rgb(var(--bright-accent));
+    text-shadow: inherit;
+    background: url(https://scp-wiki.wdfiles.com/local--files/theme%3Adustjacket-sigma/goldfoil.png);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    overflow-wrap: normal;
+    font-size: 125%;
+}
+
+div#header {
+    height: 200px;
+}
+
+div#header::before {
+    top: 0;
+    height: 180px;
+    background-position: center center;
+}
+
+div#header h1 a {
+    display: flex;
+    height: 180px;
+    max-height: 180px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+}
+
+div#header h1 a::before {
+    bottom: 0;
+    line-height: 100%;
+}
+
+/* ------- メインタイトルのモバイル対応 ------- */
+@media (max-width: 767px) {
+    #header h1 a {
+        font-size: 100%;
+    }
+}
+
+/* ------- 副題（デフォルトでは非表示）------- */
+div#header h2 {
+    display: none;
+}
+
+/* ------- ヘッダー ------- */
+div#header div#top-bar {
+    top: 180px;
+    z-index: 300 !important;
+}
+
+div#header div#top-bar > div.top-bar {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding: 0.5rem 1.5rem;
+    height: 21px;
+}
+
+div#header div#top-bar > div > ul > li > a {
+    color: #dbac53;
+    border: none;
+    border-radius: 0.4rem;
+}
+
+div#header div#top-bar > div > ul > li > a:hover,
+div#header div#top-bar > div > ul > li:hover > a{
+    border: none;
+    background-color:  rgba(0, 0, 0, 0.5);
+}
+
+div#header div#top-bar > div > ul > li > ul {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+div#header div#top-bar > div > ul > li > ul > li {
+    padding: 0.125rem;
+    border: none;
+    border-radius: 0.4rem;
+    overflow: hidden;
+}
+
+div#header div#top-bar > div > ul > li.sfhover > ul > li > a,
+div#header div#top-bar > div > ul > li:hover > ul > li > a {
+    border: none;
+    border-top: none;
+    border-radius: 0.4rem;
+}
+
+div#main-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    min-height: 100rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 768px) {
+div#main-content {
+    padding: 2rem 4rem;
+}
+}
+
+@media (max-width: 767px) {
+#main-content {
+    max-width: 100%;
+    margin: 0;
+    padding: 1rem 5%;
+}
+
+div#header div#top-bar > div.mobile-top-bar {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding: 0.5rem 1.5rem;
+    height: 21px;
+}
+
+div#header div#top-bar > div.mobile-top-bar > ul {
+    display: flex;
+    flex-wrap: nowrap;
+}
+}
+
+/* ------- フォント ------- */
+body {
+    font-family: var(--body-font) !important;
+}
+
+div#page-content {
+    font-size: 0.90rem;
+}
+
+div#header h1 a::before {
+    font-family: "Noto Serif JP", serif !important;
+}
+
+/* ------- トップバー ------- */
+div#top-bar div.open-menu a {
+    border: 0.2em solid transparent;
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #dbac53;
+    z-index: 300 !important;
+}
+
+a.close-menu {
+    opacity: 0.1;
+}
+
+/* ------- サイドバー ------- */
+div#side-bar {
+    background-image: linear-gradient(to bottom, #000000, #553F10);
+    border: none !important;
+    padding: 1em 1em 0 1em;
+    z-index: 310 !important;
+}
+
+div#side-bar div.side-block {
+    /* background-color: rgba(0, 0, 0, 0.5) !important; */
+    border-radius: 1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border: none;
+}
+
+    #page-content h1,
+    #page-content h2,
+    #page-content h3,
+    #page-content h4,
+    #page-content h5,
+    #page-content h6 {
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-color: #dbac53;
+        -webkit-text-fill-color: transparent;
+    }
+
+
+/* ------- 本文部分 ------- */
+div#container-wrap {
+    background: black;
+    background-image: url("https://pokm.wikidot.com/local--files/theme:city-of-the-nameless/bkg");
+    background-size: 480px;
+    background-position: center top;
+    background-repeat: repeat-x;
+    background-attachment: local;
+}
+
+
+div#main-content {
+    background-color: rgba(36, 25, 1, 0.75);
+    border: solid 5px #dbac53;
+    border-radius: 1rem;
+    min-height: 100rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+div#page-title,
+div.meta-title {
+    text-align: center;
+    color: #dbac53;
+}
+
+#page-content {
+    color: white;
+}
+
+/* ------- テキストボックス ------- */
+blockquote,
+div.blockquote {
+    background: rgb(var(--dark-gray-monochrome));
+    border: solid 3px #dbac53;
+    border-radius: 1rem;
+}
+
+/* ------- タブビュー ------- */
+.yui-navset .yui-content {
+    border-color: rgb(var(--light-gray-monochrome));
+    border-top-color: rgb(var(--medium-accent));
+    background-color:  rgb(var(--dark-gray-monochrome));
+    font-weight: normal;
+}
+.yui-navset .yui-nav, .yui-navset .yui-navset-top .yui-nav {
+    border-bottom: 0.3em solid rgb(var(--medium-accent));
+}
+.yui-navset .yui-nav a,
+.yui-navset .yui-navset-top .yui-nav a {
+    background-image: none;
+    background-color: rgb(var(--pale-gray-monochrome));
+    color: black;
+    font-weight: normal;
+}
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:focus {
+    background: rgb(var(--gray-monochrome));
+    color: white;
+}
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a:focus, /* Pas d'effet focus/hover pour tab sélectionné */
+.yui-navset .yui-nav .selected a:hover {
+    background-image: none !important;
+    background: rgb(var(--dark-accent));
+    border-color: rgb(var(--dark-accent));
+    color: white;
+}
+.yui-navset li {
+    line-height: normal;
+}
+
+/* ------- 評価モジュール ------- */
+#page-content .page-rate-widget-box {
+    font-size: .8rem;
+}
+
+.page-rate-widget-box .rate-points {
+    background-color: rgb(var(--dark-gray-monochrome)) !important;
+    border-color: #dbac53;
+    color: rgb(var(--bright-accent)) !important;
+}
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+    background-color: rgb(var(--dark-gray-monochrome));
+    border-top-color: #dbac53;
+    border-bottom-color: #dbac53;
+}
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a {
+    background: transparent;
+    color: rgb(var(--bright-accent)) !important;
+}
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover {
+    background: rgb(var(--gray-monochrome));
+    color: white !important;
+}
+.page-rate-widget-box .cancel {
+    background: transparent;
+    background-color: rgb(var(--dark-gray-monochrome));
+    border-color: #dbac53;
+}
+.page-rate-widget-box .cancel a {
+    color: rgb(var(--bright-accent)) !important;
+}
+.page-rate-widget-box .cancel a:hover {
+    background-color: rgb(var(--gray-monochrome));
+    color: white !important;
+}
+
+#page-content .rate-box-with-credit-button {
+    background-color: rgb(var(--dark-gray-monochrome));
+    border-color:#dbac53;
+}
+
+#page-content .rate-box-with-credit-button .page-rate-widget-box {
+    padding-top: 0px !important;
+    border-color: transparent;
+}
+
+#page-content .rate-box-with-credit-button .page-rate-widget-box .cancel,
+#page-content .rate-box-with-credit-button .page-rate-widget-box .rate-points,
+#page-content .rate-box-with-credit-button .page-rate-widget-box .rateup,
+#page-content .rate-box-with-credit-button .page-rate-widget-box .ratedown {
+    border-color: transparent;
+    border-bottom-radius: 0;
+    border-bottom: solid 1px #dbac53;
+}
+
+#page-content .rate-box-with-credit-button .creditButton p a {
+    border-left-color: transparent;
+}
+#page-content .rate-box-with-credit-button .creditButton a {
+    color: rgb(var(--bright-accent)) !important;
+}
+#page-content .rate-box-with-credit-button .creditButton a:hover {
+    background-color: rgb(var(--gray-monochrome));
+    color: white !important;
+}
+
+/* ------- リンク ------- */
+a:link, a:visited {
+    color: #c99c87;
+}
+a:hover, a:active {
+    color: white;
+}
+a {
+    color: yellow;
+}
+
+#page-options-container {
+  color:  #dbac53;
+}
+
+#action-area {
+  color:  #dbac53;
+}
+
+/* ------- 下部ツールバー ------- */
+table.wiki-content-table th {
+  background-color: rgb(var(--dark-gray-monochrome));
+  border-color:#dbac53;
+}
+
+#breadcrumbs {
+  color:  #dbac53 !important;
+}
+
+table.form td div.sub, form div.sub {
+  color:  #dbac53;
+}
+
+/* ------- 画像ブロック ------- */
+div.scp-image-block .scp-image-caption {
+       background-color: #362503 !important;
+}
+
+/* ------- コードブロック ------- */
+div.code {
+    background: rgb(var(--dark-gray-monochrome));
+    border: dashed 2px #dbac53;
+}
+
+div.code span.hl-code {
+    color: white;
+}
+
+div.code span.hl-identifier {
+    color: white;
+}
+
+div.code span.hl-brackets {
+    color: white;
+}
+
+div.code span.hl-special {
+    color: #b5b8f5;
+}
+
+div.code span.hl-reserved {
+    color: #cacbe3;
+}
+
+
+div.code span.hl-string {
+    color: #7496cc;
+}
+
+div.code span.hl-number {
+    color: red;
+}
+
+div.code span.hl-var {
+    color: lightgreen;
+}
+
+/* ------- 脚注 ------- */
+div.footnotes-footer {
+    background: rgb(var(--dark-gray-monochrome));
+}
+
+/* ------- クレジットブロック ------- */
+#page-content .modalbox {
+    background: rgb(var(--dark-gray-monochrome)) !important;
+    border: solid 2px #dbac53;
+}
+
+
+/* ------- 区切り線 ------- */
+hr {
+    border-bottom: solid 2px rgb(var(--medium-accent));
+}
+[[/code]]
+
+背景の固定
+
+[[code type="css"]]
+div#container-wrap {
+    background-size: 420px;
+    background-attachment: fixed;
+}
+[[/code]]
+
+SCP財団ヘッダー
+
+[[code type="css"]]
+:root {
+    --body-font: adelle-sans, 'Lato', 'Noto Sans JP', sans-serif;
+    --header-font: 'zuijinregular', 'Poppins', 'Noto Serif JP', serif;
+    --title-font: 'zuijinregular', 'Poppins', 'Noto Serif JP', serif;
+    --mono-font: "Noto Sans Mono", adaptive-mono, "PT Mono", "Andale Mono", "Courier New", Courier, monospace;
+    --lgurl: url("https://pokm.wdfiles.com/local--files/theme%3Acity-of-the-nameless/SCP.png");
+}
+
+#header h1 a::before {
+    content: "SCP財団";
+    color: rgb(var(--bright-accent));
+    text-shadow: inherit;
+    background: url(https://scp-wiki.wdfiles.com/local--files/theme%3Adustjacket-sigma/goldfoil.png);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    overflow-wrap: normal;
+    font-size: 125%;
+}
+
+#header h2 {
+    display: block !important;
+    margin-top: 1.4em;
+}
+
+#header h2::before {
+    content: "確保 - 収容 - 保護";
+    color: rgb(var(--gray-monochrome));
+    text-shadow: inherit;
+    background: url(https://scp-wiki.wdfiles.com/local--files/theme%3Adustjacket-sigma/goldfoil.png);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    overflow-wrap: normal;
+    font-size:110%;
+}
+[[/code]]
+[[/collapsible]]
+
+[[/iftags]]
+
+[[module css]]
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400;700;900&display=swap');
+@import url(https://scp-wiki-cn.wikidot.com/local--code/theme:nameless/1);
+
+/* {$fixed}/
+@import url(https://scp-wiki-cn.wikidot.com/local--code/theme:nameless/2);
+/{$fixed} */
+
+/* {$scp}/
+@import url(https://scp-wiki-cn.wikidot.com/local--code/theme:nameless/3);
+/{$scp} */
+
+/* SCP-JP port: JP font fallbacks appended to the stacks (same typefaces as upstream, JP cuts). */
+:root {
+    --body-font: adelle-sans, 'Lato', 'Noto Sans SC', 'Noto Sans JP', sans-serif;
+    --header-font: 'zuijinregular', 'Poppins', 'Noto Serif SC', 'Noto Serif JP', serif;
+    --title-font: 'zuijinregular', 'Poppins', 'Noto Serif SC', 'Noto Serif JP', serif;
+    --mono-font: "Noto Sans Mono", adaptive-mono, "PT Mono", "Andale Mono", "Courier New", Courier, monospace;
+}
+
+div#header h1 a::before {
+    font-family: "Noto Serif SC", "Noto Serif JP", serif !important;
+}
+[[/module]]
