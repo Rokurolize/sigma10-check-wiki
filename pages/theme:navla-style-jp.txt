@@ -1,0 +1,2155 @@
+[[module CSS]]
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Anavla-style-jp/1");
+[[/module]]
+
+[[include :scp-jp:component:toggle-sidebar]]
+
+[[iftags +テーマ]]
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** ナブラスタイル
+**翻訳責任者:** SCP-JP
+**翻訳年:** 2026
+**原題:** 나블라 스타일 코드
+**著作権者:** [[*user Navla]]
+**作成年:** 2023
+**初訳時参照リビジョン:** 162
+**元記事リンク:** [*https://scpko.wikidot.com/theme:navla-style 나블라 스타일 코드]
+**フォント:** Noto Serif JP・Noto Sans JP・Nanum Myeongjo・Nanum Gothic Coding（Google Fonts、SIL Open Font License）
+**画像の出典:** SCP Foundation emblem（upload.wikimedia.org 掲載の SCP財団エンブレムを再ホスト、CC BY-SA 3.0）ほか、引用符マスク Cquote1_black.svg（同上）、SCP_logo.svg（ナブラコンポーネント同梱のSCPロゴを再ホスト）
+[[include :scp-jp:credit:end-preview]]
+
++ これは何？
+# [[*user Navla]]が作成した汎用テーマです。
+# どの連作・カノン・GOIFとも無関係の、純粋に美学上のテーマです。
+# 自分がこれまで作ってきたテーマを置き換え、必要なテーマを簡単に拡張しようと作られました。
+# 個人的な趣味をふんだんに盛り込んで作られました。
+# シグマ9系のテーマです。
+
+++ 特徴
+# 軽い！
+# 美しい！
+# 読みやすい！
+# 汎用性がある！[[footnote]]カスタムしやすいという意味！[[/footnote]]
+# 継続して保守されます。(そのため、特定の書式が少しずつ変わることがあります。ご留意ください)[[footnote]]書式の誤りや改善提案があれば、いつでもチャットやポストで[[*user Navla]]を探してください。[[/footnote]]
+
+++ デザイン方針
+# 整然として端正であること
+# ミニマリズム
+# グラスモーフィズム
+# 控えめなグラデーション
+
+++ 含まれるコンポーネント
+* [https://scp-jp.wikidot.com/component:toggle-sidebar 折りたたみ式サイドバー]
+* ナブラコンポーネント — このページに内蔵（日本語化済み）。原語版は[[[https://scpko.wikidot.com/navla-component-introduction|ナブラコンポーネント紹介]]]を参照
+* プライドロゴ — JP版では未収録（後述）
+
+++ 使い方
+次のコードを編集画面に貼り付けてください。
+> @@[[include :scp-jp:theme:navla-style-jp]]@@
+使用可能な引数は次の通りです。
+* tocbox=1 : ページ左上に目次入りのサイドボックスを表示します。
+* help=1 : ナブラコンポーネントに存在するクラスを紹介するヘルプボックスを表示します。
+各引数は "|" で区切ってください。
+
+> **例）** 本文に目次サイドボックスとヘルプボックスを追加する:
+> @@[[include :scp-jp:theme:navla-style-jp tocbox=1|help=1]]@@
+
+**訳注:** 原語版の引数 `preset`（プリセットカラー）と `flag`（プライドロゴ）は、JP版では未対応です（KO wiki 上の別ページに依存するため）。代わりに、以下の変数再宣言で同等のカスタマイズが可能です。プリセットが必要な場合は、スタッフまでご相談ください。
+
+++ 主な変数
+ナブラスタイルは、カスタムが簡単に設計されています。複数の変数の再宣言を通じて、思い通りに調整できます。
+特に、手軽に変更できる変数は次の通りです。これ以外にもカスタムを助ける様々な変数があります。より詳しいカスタム方法については、原語版の[[[https://scpko.wikidot.com/navla-style-preset-and-custom|プリセット・カスタム]]]ページ（韓国語）を参照してください。
+
+変数の再宣言は、テーマの宣言より後に以下のコードを書くことで行えます。
+[[div class="blockquote"]]
+@@[[module CSS]]@@
+:root:lang(ja) {
+@@    --好みの-変数1: 好みの値;@@
+@@    --好みの-変数2: 好みの値;@@
+}
+@@[[/module]]@@
+[[/div]]
+
+基本的な変数は次の通りです。
+[[code type="css"]]
+:root:lang(ja) {
+    --theme-color: 120, 120, 120; /* テーマのハイライト色です。 */
+    --theme-color-dark: 60, 60, 60; /* より暗いハイライト色です。 */
+    --logo-image: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Anavla-style-jp/SCP_Foundation_emblem.svg'); /* ロゴ画像です。#header-extra-div-1 の背景画像になります。 */
+    --header-title: "SCP財団"; /* ヘッダーのタイトルテキストです。 */
+    --header-subtitle: "確保、収容、保護"; /* ヘッダーのサブタイトルテキストです。 */
+}
+[[/code]]
+
+++ カスタムについて
+原語版で提供されているプリセット（preset=1 など）は KO wiki 上のページに依存するため、JP版には含まれていません。色は上記の変数再宣言で自由に変更できます。
+
++ ソースコード
+[[collapsible show="+ コードを表示" hide="- コードを隠す" hideLocation="both"]]
+[[code type="css"]]
+/*
+    ナブラスタイル (Navla Style)
+
+    Made by Navla from SCP-KO, 2023
+    Ported to SCP-JP, 2026 (reference revision: theme:navla-style rev.162 / component:navla rev.119)
+
+    基本CSSは原語版 rev.162、ナブラコンポーネント基本部分は component:navla rev.119 を移植したものです。
+    フォント・画像の配信元は SCP-JP の特例（Google Fonts・SCP-JP ファイルストレージ／チェックWikiストレージ）に置き換えています。
+*/
+
+/* 
+Made by Navla from SCP-KO, 2023
+*/
+
+:root {
+    --header-height: 200px;
+    --top-bar-height: 25px;
+    --theme-color: 120, 120, 120;
+    --theme-color-dark: 60, 60, 60;
+    --body-txt-color: 44, 44, 44;
+    --bg-color: 242, 242, 242;
+    --logo-image: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Anavla-style-jp/SCP_Foundation_emblem.svg');
+    --header-title: "SCP財団";
+    --header-subtitle: "確保、収容、保護";
+
+    --text-font: verdana, "Noto Sans JP", "Yu Gothic", "Hiragino Kaku Gothic ProN", Meiryo, arial, helvetica, sans-serif;
+    --title-font: "Noto Serif JP", "Yu Mincho", "Hiragino Mincho ProN", serif;
+    --header-font-width: 700;
+    --title-font-width: 700;
+    --logo-size: calc(var(--header-height) - var(--top-bar-height) - 10px);
+    --logo-top: 25%;
+    --header-txt-color: var(--body-txt-color);
+    --title-color: var(--header-txt-color);
+    --title-outline: none;
+    --title-outline-color: 0,0,0;
+    --title-align: center;
+    --some-border-color: var(--body-txt-color);
+    --link-color: var(--theme-color);
+    --link-color-visited: var(--theme-color-dark);
+    --h1-top: calc(var(--header-height)/1.2 - 80px);
+    --h1-size: calc(var(--header-height)/6 + 10px);
+    --h2-top: calc(var(--h1-top) + var(--h1-size)/1.3 + 11px);
+    --h2-size: calc(var(--h1-size) * 0.45);
+    --top-bar-position: static;
+    --tob-bar-justify: center;
+    --hlt-opa-link: 0.2;
+    --hlt-opa-h1: 0.2;
+    --link-bg-style: linear-gradient(transparent 60%, rgba(var(--theme-color),var(--hlt-opa-link)) 60%, rgba(var(--theme-color),var(--hlt-opa-link)) 90%, transparent 90%, transparent 100%);
+
+/*
+    --drk: 1;
+    --left: 1;
+*/
+
+    --white: 255, 255, 255;
+    --alt-black: calc(var(--drk)*20),calc(var(--drk)*20),calc(var(--drk)*20);
+    --alt-bg-color: var(--alt-black,var(--white));
+    --alt-title-padding: calc(var(--logo-size) + var(--left)*5px);
+}
+
+/* ========< RESET >======== */
+div#container-wrap {
+    background-image: none;
+}
+input#search-top-box-input {
+    display: none;
+}
+
+/* ========< HEADER >======== */
+#header {
+    height: var(--header-height);
+    padding-bottom: 0;
+    background-image: none;
+    position: var(--top-bar-position);
+    top: calc((var(--header-height) - var(--top-bar-height)) * -1);
+    max-width: 100vw;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 15px;
+    z-index: 11;
+}
+div#header-extra-div-1 {
+    width: 100%;
+    max-width: 708px;
+    position: relative;
+    margin: 0 auto;
+    height: var(--header-height);
+    top: 0;
+    background: transparent;
+    z-index: 4;
+    background-image: var(--logo-image);
+    background-position: var(--title-align) top var(--logo-top);
+    background-size: var(--logo-size);
+    background-repeat: no-repeat;
+    opacity: 0.2;
+}
+div#header-extra-div-2 {
+    width: 100%;
+    right: 0;
+    height: var(--header-height);
+    position: absolute;
+    top: 0;
+    background: transparent;
+    z-index: 3;
+}
+
+#header h1, #header h2 {
+    max-width: 708px;
+    position: relative;
+    margin: 0 auto;
+    float: none;
+    height: 0;
+    overflow-x: clip;
+}
+#header h1 a {
+    font-family: var(--title-font), serif;
+    z-index: 10;
+    padding: 1.875rem 0 0;
+    font-family: var(--header-font);
+    line-height: 0;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+}
+#header h1 a::before, #header h1 a::after, 
+#header h2 span::before, #header h2 span::after {
+    position: relative;
+    left: 0;
+    right: 0;
+    text-align: var(--title-align);
+    margin-left: var(--alt-title-padding, 0);
+    padding: 0;
+    display: block;
+    white-space: nowrap;
+}
+#header h1 a>span {
+    display:none;
+}
+#header h1 a::before {
+    content: var(--header-title);
+    color: rgb(var(--title-outline-color));
+    z-index: 12;
+    -webkit-text-stroke: 0.325rem rgb(var(--title-outline-color));
+    text-shadow: none;
+    top: var(--h1-top);
+    font-size: var(--h1-size);
+    display: var(--title-outline);
+}
+#header h1 a::after {
+    content: var(--header-title);
+    color: rgb(var(--title-color));
+    z-index: 13;
+    top: var(--h1-top);
+    font-size: var(--h1-size);
+    text-shadow: none;
+}
+#header h2 span {
+    color: transparent;
+    text-shadow: none;
+}
+#header h2 span::before {
+    content: var(--header-subtitle);
+    color: rgb(var(--title-outline-color));
+    z-index: 12;
+    -webkit-text-stroke: 0.25rem rgb(var(--title-outline-color));
+    text-shadow: none;
+    top: var(--h2-top);
+    font-size: var(--h2-size);
+    display: var(--title-outline);
+}
+#header h2 span::after {
+    content: var(--header-subtitle);
+    color: rgb(var(--title-color));
+    z-index: 13;
+    top: var(--h2-top);
+    font-size: var(--h2-size);
+    text-shadow: none;
+}
+
+@media all and (max-width: 767px) {
+#header h1 a::before {
+    top: calc(var(--h1-top) + 2px);
+    font-size: calc(var(--h1-size)/1.1);
+}
+#header h1 a::after {
+    top: calc(var(--h1-top) + 2px);
+    font-size: calc(var(--h1-size)/1.1);
+}
+#header h2 span::before {
+    top: var(--h2-top);
+    font-size: calc(var(--h2-size)/1.1);
+}
+#header h2 span::after {
+    top: var(--h2-top);
+    font-size: calc(var(--h2-size)/1.1);
+}
+}
+
+/* --------<searsh & account>-------- */
+#search-top-box {
+    top: 26px;
+    right: 7px;
+}
+#search-top-box-form input[type=submit] {
+    background: rgba(var(--theme-color-dark), .9);
+    border-radius: 0;
+    color: white;
+    box-shadow: none;
+}
+#search-top-box-form input[type=submit]:hover {
+    background: rgba(var(--theme-color), .9);
+    box-shadow: none;
+}
+@media (max-width: 767px) {
+#search-top-box-form input[type=submit] {
+    height: 25px;
+}
+#login-status {
+    font-size: 0;
+    right: 47px;
+    height: 30px;
+    width: 110px;
+    background: transparent;
+    white-space: nowrap;
+}
+#login-status #account-options * {
+    color: rgb(var(--body-txt-color)) !important;
+    font-size: 15px !important;
+}
+div#login-status::before {
+    display: none;
+}
+div#login-status:hover::before {
+    content: "";
+    opacity: 1;
+    position: absolute;
+    width: 145px;
+    height: 30px;
+    display: block;
+    background: linear-gradient(90deg, rgba(var(--theme-color),0.8), rgba(var(--theme-color-dark),0.7)), black;
+    top: 30px;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+}
+#login-status:after {
+    content: "▼";
+    font-family: 'Verdana', sans-serif;
+    font-size: 1rem;
+    position: absolute;
+    right: 4px;
+    border: solid 1px rgba(var(--header-txt-color),.6);
+    top: 2px;
+    padding: 0 5px 2px;
+    font-size: 13px;
+}
+#login-status .printuser {
+    font-size: 0 !important;
+}
+#login-status:hover > #account-options {
+    display: block !important;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+    background: linear-gradient(rgba(var(--alt-bg-color), 0.7), rgba(var(--alt-bg-color), 0.4)), rgba(var(--theme-color),0.2);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    position: absolute;
+    top: 60px;
+    right: -35px;
+}
+#account-options {
+    width: 145px;
+    border: none;
+}
+#account-options ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#login-status > * {
+    top: 35px;
+    position: relative;
+    font-size: initial;
+}
+#login-status a {
+    margin: 0 3px;
+}
+a#my-account {
+    margin-left: 6px;
+}
+div#login-status > * {
+    display: none;
+}
+div#login-status:hover > * {
+    display: initial;
+    font-size: 15px;
+}
+#login-status > a#account-topbutton, #login-status > script {
+    display: none !important;
+}
+#login-status > a, #login-status > span {
+    color: white !important;
+}
+}
+#login-status > a#my-account {
+    top: 31px;
+}
+
+/* --------<top bar>-------- */
+#top-bar {
+    display: flex;
+    max-width: 708px;
+    left: 0;
+    right: 0;
+    top: calc(var(--header-height) - var(--top-bar-height));
+    height: var(--top-bar-height);
+    z-index: 10;
+    position: absolute;
+    justify-content: var(--tob-bar-justify);
+}
+div#header-extra-div-3 {
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: calc(var(--header-height) - var(--top-bar-height));
+    height: var(  --top-bar-height);
+    position: absolute;
+    z-index: 4;
+}
+#top-bar ul li a {
+    padding: calc(var(--top-bar-height) /2) 11.5px;
+}
+#top-bar ul li.sfhover>a, #top-bar ul li:hover>a {
+    background: rgb(var(--theme-color-dark)) !important;
+    color: #EEE;
+    transition: 0.3s;
+}
+#top-bar ul li.sfhover ul li a, #top-bar ul li:hover ul li a {
+    background: rgb(var(--bg-color)) !important;
+    color: rgb(var(--body-txt-color));
+}
+#top-bar ul li.sfhover ul li.sfhover a {
+    background-color: rgb(var(--alt-bg-color)) !important;
+    transition: 0.3s;
+}
+.c_topbar_arrow {
+    color: rgb(var(--body-txt-color));
+}
+#top-bar ul > li:hover > ul, #top-bar ul > li.sfhover > ul {
+    opacity: 1;
+}
+#top-bar ul > li > ul {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+@media (min-width: 768px) {
+.top-bar {
+    display: flex;
+}
+}
+.mobile-top-bar {
+    display: flex;
+    justify-content: var(--tob-bar-justify);
+    width: 100%;
+    max-width: 100%;
+    right: 0;
+    left: 0;
+}
+#top-bar ul > li > ul {
+    flex-direction: column;
+}
+
+/* ========< SIDE BAR >======== */
+div#side-bar {
+    background-color: rgba(var(--body-txt-color),.1);
+    background: linear-gradient(90deg, rgba(var(--bg-color), .6), rgba(var(--bg-color), .4)), linear-gradient(90deg, rgba(var(--theme-color),.2),transparent);
+    z-index: 15;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+    scrollbar-width: none;
+}
+#side-bar:target .close-menu {
+    background: transparent;
+    margin-left: 21em;
+}
+
+div#side-bar::before {
+    content: "";
+    width: 16.8rem;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: -18rem;
+    transition: left 0.4s ease-in-out;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    z-index: -1;
+    height: 100%;
+}
+div#side-bar:target::before {
+    left: 0px;
+}
+@media (max-width: 767px) {
+#side-bar:target {
+    border: none;
+    z-index:15;
+}
+#side-bar:target .close-menu {
+    margin-left: 19em;
+}
+div#side-bar::before {
+    left: -25em;
+    width: 19em;
+    transition: left 0.5s ease-in-out 0.1s;
+}
+}
+
+#top-bar .open-menu a {
+    bottom: 0.5em;
+    border: 5px solid rgb(var(--theme-color));
+    background: linear-gradient(rgba(var(--bg-color), 0.5), rgba(var(--bg-color), 0.5)), linear-gradient(rgba(var(--theme-color), 0.3), rgba(var(--theme-color), 0.3));
+    border-radius: 30%;
+    color: rgb(var(--theme-color));
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    top: unset;
+
+}
+#side-bar .side-block {
+    padding: 10px;
+    border: unset;
+    border-radius: unset;
+    box-shadow: unset;
+    background: rgba(var(--alt-bg-color),.4) !important;
+    margin-bottom: 15px;
+}
+#side-bar .heading {
+    font-size: 1.2em;
+    color: rgb(var(--body-txt-color));
+}
+#side-bar a:visited {
+    color: rgb(var(--link-color-visited));
+}
+#side-bar::-webkit-scrollbar {
+    display: none;
+}
+
+/* ========< FONT & COLOR >======== */
+#login-status, #login-status a, #top-bar a {
+    color: rgb(var(--header-txt-color));
+}
+body {
+    font-family: var(--text-font);
+    overflow-x: hidden;
+}
+h1, h2, h3, h4, h5, h6, body {
+    color: rgb(var(--body-txt-color));
+}
+
+#page-content :is(h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6), #page-title, .meta-title, #side-bar .heading, #interwiki .heading, .f-heading, #header h1 a::before, #header h2::before, .title, .r-heading {
+    font-family: var(--title-font);
+    font-weight: var(--title-font-width);
+}
+#header h1, #header h2 span {
+    font-family: var(--title-font);
+    font-weight: var(--header-font-width);
+}
+
+/* ========< MAIN CONTENTS >======== */
+/* --------< rate box >-------- */
+div.rate-box-with-credit-button {
+    background-color: none;
+    border: none;
+    border-radius: 0;
+    background: linear-gradient(90deg, rgba(var(--theme-color), .1), transparent), linear-gradient(rgba(var(--alt-bg-color),0.5),rgba(var(--alt-bg-color),0.5)), linear-gradient(rgb(var(--bg-color)),rgb(var(--bg-color)));
+    box-shadow: 2px 2px 5px rgba(0,0,0,.3);
+}
+:is(div.page-rate-widget-box, div.rate-box-with-credit-button) *:not(.page-rate-widget-box) {
+    border: none;
+    background: none;
+    color: rgb(var(--body-txt-color));
+}
+
+div.rate-box-with-credit-button p a {
+    border-left: none;
+    color: inherit;
+    padding: 3px 0px;
+}
+
+.page-rate-widget-box :is(.rate-points, .rateup, .ratedown, .cancel) {
+    background-color: transparent;
+    border: none;
+    color: rgb(var(--body-txt-color));
+}
+.page-rate-widget-box :is(.rateup, .ratedown, .cancel) a {
+    color: rgb(var(--body-txt-color));
+}
+
+.page-rate-widget-box {
+    border-radius: 0;
+    background: linear-gradient(90deg, rgba(var(--theme-color), .1), transparent), linear-gradient(rgba(var(--alt-bg-color),0.5),rgba(var(--alt-bg-color),0.5)), linear-gradient(rgb(var(--bg-color)),rgb(var(--bg-color)));
+    padding: 0.3em 0;
+    border-left: solid 3px rgb(var(--theme-color-dark));
+    box-shadow: 2px 2px 5px rgba(0,0,0,.3);
+}
+.rate-box-with-credit-button > .page-rate-widget-box {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+.modalbox .modalbox-title {
+    background: rgba(var(--bg-color),.4) !important;
+}
+.modalcontainer {
+    height: 350px !important;
+    width: 600px !important;
+    max-width: 95vw !important;
+}
+.credit {
+    height: 30vh;
+    overflow-y: auto;
+}
+#u-credit-view {
+    z-index: 15 !important;
+}
+
+/* --------< links >-------- */
+a, #side-bar a {
+    color: rgb(var(--link-color));
+}
+a:visited {
+    color: rgb(var(--link-color-visited));
+}
+
+:where(#page-content) a {
+    background: var(--link-bg-style);
+}
+/* .ko-footer は SCP-KO 側のフッター用クラス。SCP-JP では該当する要素はないが、原語版の構造を保つためそのまま残す。
+   '.ko-footer a:not(.ko-footer a)' は原語版でも空の集合を指すデッドルール。 */
+.ko-footer a:not(.ko-footer a) {
+    background: none;
+}
+a.collapsible-block-link, a.bibcite, a.footnoteref, .printuser a {
+    background: none;
+}
+:where(#page-content) a {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  background-color: transparent;
+  transition-property: all;
+  transition: 0.2s ease-in-out;
+  font-weight: bold;
+}
+#page-content li a:not(.ko-footer a) {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+#page-content a:hover:not(.ko-footer a, .accent a) {
+  background: none;
+  background-color: rgb(var(--theme-color)) !important;
+  color: #FFF;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+th a, th a:visited {
+    color: #FFF;
+    text-decoration: underline !important;    
+}
+
+/* --------< tab >-------- */
+.yui-navset .yui-nav .selected :is(a, a:focus, a:hover) {
+    background: rgb(var(--theme-color-dark)) !important;
+    color: #fff;
+}
+.yui-navset .yui-nav a, .yui-navset .yui-navset-top .yui-nav a {
+    background: none;
+    border: none;
+    border-width: 0 1px;
+    position: relative;
+    text-decoration: none;
+    background-image: none;
+    color: rgb(var(--body-txt-color));
+    font-weight: normal;
+}
+.yui-navset .yui-nav a em, .yui-navset .yui-navset-top .yui-nav a em, .yui-navset .yui-nav .selected a em{
+    border: none;
+    padding: .35em .75em .15em .75em;
+}
+.yui-navset .yui-nav .selected a {
+    border-color: transparent;
+}
+.yui-navset .yui-nav li, .yui-navset .yui-navset-top .yui-nav li {
+    margin: 0;
+    padding: 0;
+}
+.yui-navset .yui-nav .selected, .yui-navset .yui-navset-top .yui-nav .selected {
+    margin: 0;
+}
+.yui-navset .yui-nav, .yui-navset .yui-navset-top .yui-nav {
+    border-color: rgb(var(--theme-color-dark));
+    background-color: rgb(var(--alt-bg-color));
+}
+.yui-navset .yui-content {
+    background-color: rgba(var(--alt-bg-color),0.2);
+    border: 1px solid rgb(var(--some-border-color));
+    border-top: none;
+}
+
+/* --------< info >-------- */
+.fader {
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+div.modalbox {
+    background: linear-gradient(rgba(var(--alt-bg-color),.7), rgba(var(--alt-bg-color),.5)), linear-gradient(transparent, rgba(var(--theme-color),.5));
+    border: none;
+    border-radius: 0;
+    box-shadow: 3px 3px 13px rgba(0,0,0,.3);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+}
+
+/* --------< SIDE BOX >--------*/
+.anchor {
+    top: calc(var(--top-bar-height) + 10px);
+}
+.anchor:hover {
+    z-index: 11;
+}
+.sidebox {
+    background-color: none;
+    background: linear-gradient(90deg, rgba(var(--alt-bg-color), 0.7), rgba(var(--alt-bg-color), 1));
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    border: none;
+    box-shadow: -2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.tocanchor {
+    top: calc(var(--top-bar-height) + 10px);
+}
+.tocbox {
+    background-color: none;
+    background: linear-gradient(90deg, rgba(var(--alt-bg-color), 0.9), rgba(var(--alt-bg-color), 0.5));
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.sidebox:before, .tocbox:before {
+    color: rgb(var(--theme-color));
+    font-family: 'Verdana', sans-serif;
+}
+
+/* --------< ETC >-------- */
+#page-content hr {
+    clear: both;
+    height: 0;
+    border: crimson;
+    background-color: transparent;
+    border-bottom: rgb(var(--theme-color-dark)) solid 1px;
+    border-top: rgb(var(--theme-color)) solid 1px;
+}
+
+.page-tags span {
+    border-top: 1px solid rgba(var(--theme-color-dark),0.5);
+}
+
+#page-title, .meta-title {
+    border-color: rgb(var(--theme-color-dark));
+    border-bottom-width: 1.5px;
+    text-align: center;
+    color: rgb(var(--body-txt-color));
+    margin-top: 1em;
+    padding: 0 0 0.25em;
+    margin: 0 0 0.6em;
+    text-align: var(--title-align);
+}
+.meta-title p {
+    margin: 0;
+}
+
+div#extra-div-4 {
+    background: linear-gradient(rgba(var(--theme-color-dark),0.1), transparent calc(var(--header-height) + 300px), transparent), linear-gradient(rgba(0,0,0,0.1), transparent calc(var(--header-height) + 300px), transparent);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    z-index: -10;
+}
+body {
+    background-color: rgb(var(--bg-color));
+}
+div#extra-div-5 {
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    z-index: -5;
+}
+
+.hovertip {
+    background: rgba(var(--alt-bg-color), 0.5) !important;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: none !important;
+    box-shadow: 2px 2px 7px rgba(0,0,0,0.2);
+}
+.footnote .f-footer, .equation .e-footer, .reference .r-footer {
+    display: none;
+}
+
+table.wiki-content-table th {
+    border: 1px solid #222;
+    padding: 0.3em 0.7em;
+    background-color: rgb(var(--theme-color-dark));
+    color: white;
+}
+
+.scp-image-block .scp-image-caption {
+    background-color: rgb(var(--bg-color));
+}
+
+#main-content h1 span:not(.cool-title, .glss-banner) {
+    background: linear-gradient(transparent 60%, rgba(var(--theme-color),var(--hlt-opa-h1)) 60%, rgba(var(--theme-color),var(--hlt-opa-h1)) 90%, transparent 90%, transparent 100%);
+}
+
+#login-status {
+    z-index: 13;
+    right: 10px;
+    top: 5px;
+}
+.owindow .title {
+    background-color: rgba(var(--bg-color), 1);
+}
+
+/* ----<code>---- */
+.code {
+    border: 1px solid #AAA;
+    background-color: #222;
+    color: #DDD;
+    word-break: normal;
+}
+.hl-code {
+    color: #DDD;
+}
+.hl-special {
+    color: violet;
+}
+.hl-identifier {
+    color: #AAA;
+}
+.hl-number {
+    color: #E55;
+}
+.hl-string {
+    color: #B7E;
+}
+.hl-brackets {
+    color: #2AF;
+}
+.hl-reserved {
+    color: #88E;
+}
+.hl-var {
+    color: #6C6;
+}
+.hl-identifier {
+    color: #EDA;
+}
+
+.inline-diff del {
+    background-color: rgba(250, 80, 60, 0.4);
+}
+.inline-diff ins {
+    background-color: rgba(60,80,250,.4);
+}
+
+.system-pageconsole>.collapsible-block a.collapsible-block-link, 
+.system-comment-Area .foldable-list-container>a {
+    color: rgb(var(--body-txt-color)) !important;
+}
+
+.owindow {
+    background-color: rgba(var(--bg-color),1);
+    border: none;
+    box-shadow: 3px 3px 13px rgba(0,0,0,.3);
+}
+
+#content-wrap {
+    margin: 0 auto;
+}
+
+@media all and (max-width: 767px) {
+#login-status {
+    font-size: 0;
+    right: 46px;
+}
+#search-top-box {
+    top: 5px;
+    right: 7px;
+}
+.printuser img.small {
+    padding: 1px 2px 1px 8px;
+}
+#account-topbutton {
+    display: none;
+}
+}
+
+#toc {
+    padding: 0em 1em;
+    border: 1px solid rgba(var(--body-txt-color),.5);
+    background-color: rgba(var(--alt-bg-color),.3);
+}
+#toc .title {
+    margin: 0.4em 0 0.7em;
+    padding: 0 2em 0.3em;
+    border-bottom: 1px solid rgb(var(--body-txt-color));
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(var(--theme-color));
+}
+
+::-moz-selection {
+    background: rgba(var(--theme-color),0.2);
+}
+
+::selection {
+    background: rgba(var(--theme-color),0.2);
+}
+
+/* --------<comments>---- */
+.thread-container .post :is(.head, .short) {
+    background-color: transparent;
+    background: linear-gradient(90deg, rgba(var(--theme-color),0.6), rgba(var(--theme-color-dark),0.4)), black;
+    border-radius: 0;
+    color: white;
+    box-shadow: 0px 3px 3px rgba(0,0,0,.2);
+}
+.thread-container .post :is(.head, .short) a {
+    color: white !important;
+}
+div.content {
+    padding: 0 10px;
+}
+.post div.long {
+    background-color: rgba(var(--alt-bg-color),0.5);
+    box-shadow: 3px 3px 6px rgba(0,0,0,.3);
+}
+.post.folded div.short {
+    padding: 0.5em 1em;
+}
+.thread-container .post .long .options {
+    padding: 0 10px 5px 0;
+}
+.thread-container .post .options a {
+    color: rgb(var(--theme-color));
+}
+.thread-container .post .long .changes {
+    padding: 0 10px;
+}
+
+#np-title, #np-text, #edit-page-title, #edit-page-textarea, #edit-page-comments, #lock-info {
+    background: rgba(var(--alt-bg-color),0.5);
+    color: rgb(var(--body-txt-color));
+    border: rgba(var(--body-txt-color),0.5) solid 1px;
+}
+#np-title, #np-text {
+    margin: 2px;
+}
+#lock-info {
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+}
+
+.units {
+    display: flex;
+}
+
+#page-content {
+    margin-top: 15px;
+}
+
+input#edit-page-title {
+    width: 100%;
+}
+.change-textarea-size {
+    float: right;
+    text-align: right;
+    padding-right: 2em;
+    padding-left: 1em;
+    margin: 3px;
+}
+.change-textarea-size a {
+    padding: 0 4px;
+    border-width: 1px;
+}
+
+#license-area {
+    color: var(--body-txt-color);
+}
+
+/* ========< MY COMPONENT>======== */
+table.wiki-content-table td, 
+div.blockquote {
+    border: solid rgba(var(--some-border-color),0.5) 1px;
+    background-color: rgba(var(--alt-bg-color), 0.1);
+}
+
+blockquote {
+    border-color: transparent;
+    border-left: solid rgb(var(--theme-color-dark)) 3px;
+    background: rgba(var(--alt-bg-color), 0.6);
+}
+
+.digit blockquote {
+    background: black;
+}
+
+.box {
+    --border-rgb-nvl: var(--some-border-color);
+}
+.mini {
+    --border-rgb-nvl: var(--theme-color-dark);
+}
+.pre-next {
+    --border-rgb-nvl: var(--theme-color-dark);
+}
+.help {
+    border: solid 2px rgb(var(--body-txt-color));
+}
+.quote {
+    --clr: rgb(var(--theme-color-dark));
+}
+
+.box:not(.quote, .mini, .digit), div.blockquote {
+    background-color: rgba(var(--alt-bg-color), 0.15);
+}
+.paper {
+    background-color:rgba(var(--alt-bg-color), 0.35);
+}
+
+.collapsible-block-unfolded-link:not(.collection div), .collapsible-block-folded:not(.collection div), .colmod-link-top, .unfolded>.colmod-link-end {
+    padding: 0.5em 1em;
+    background: linear-gradient(90deg, rgba(var(--theme-color),.2), rgba(var(--theme-color),.1));
+    border-inline: solid rgba(var(--theme-color),0.4) 4px;
+}
+.collapsible-block-content:not(.collection div), .colmod-content {
+    border-top: rgba(var(--theme-color),.7) solid 2px;
+    border-bottom: rgba(var(--theme-color),.7) solid 2px;
+    margin: 0.5em 0;
+    padding: 0.5em 0;
+}
+#side-bar .collapsible-block-unfolded-link {
+    padding: 2px;
+}
+.colmod-content {
+    padding: 0.7em 0;
+}
+
+.re {
+    border-left: rgba(var(--theme-color),0.3) solid 5px;
+}
+.re p:first-child {
+    background: rgba(var(--theme-color-dark),0.1);
+}
+
+.flex {
+    --border-clr-1: var(--theme-color);
+    --border-clr-2: var(--theme-color-dark);
+}
+
+.accent {
+    --bg-clr: rgb(var(--theme-color));
+}
+.accent a:hover {
+    text-decoration: underline !important;
+}
+div.accent a, span.accent a {
+    color: white;
+}
+
+.line-title {
+    --clr: rgb(var(--theme-color));
+}
+
+.no-colstyle>div>:is(.collapsible-block-folded, div>.collapsible-block-unfolded-link, ul>li>.colmod-link-top,ul>li>.colmod-link-end) {
+  background: none !important;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.no-colstyle>div>div>:is(.collapsible-block-link, div>.collapsible-block-link)::before, 
+.no-colstyle>div>ul>:is(.folded,.unfolded)>:is(.colmod-link-top, .colmod-link-end)>.foldable-list-container>a:first-child::before {
+  content: none !important;
+}
+
+
+/* --------<Other component Compatibility>-------- */
+/* component:info-ayers */
+.info-container .collapsible-block-folded, .info-container .collapsible-block-unfolded-link {
+    background: rgb(var(--theme-color-dark)) !important;
+    padding: 0 !important;
+}
+.info-container .collapsible-block-folded .collapsible-block-link, .info-container .collapsible-block-link {
+    background-color: white !important;
+    width: unset !important;
+}
+
+/* component:wikimodule */
+#page-content .collection :is(.collapsible-block-unfolded-link a, .collapsible-block-folded a, .namerow, .titlecolumn) {
+    color: rgb(var(--body-text-color));
+    background-color: rgba(var(--theme-color), .3);
+}
+#page-content .collection th a {
+    color: rgb(var(--link-color));
+}
+#page-content .collection th a:visited {
+    color: rgb(var(--link-color-visited));
+}
+
+
+/* ========< ナブラコンポーネント（基本） | component:navla rev.119 を内蔵 > ======== */
+/*
+Made by Navla from SCP-KO 
+
+時々アップデートを行います。
+そのため: 1. デザインが変わることがあります。2. 突然崩れることがあります（報告いただければ可能な限り早く修正します）。3. 一部のクラスの適用方法が変わることがあります。
+
+I update it occasionally.
+As a result, 1. The design may change. 2. it may break suddenly (if you report it, I'll fix it ASAP) 3. the way some classes are applied may change.
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap');
+
+/* ========< mask >========*/
+:root {
+    --scp-logo: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Anavla-style-jp/SCP_logo.svg');
+    --title-font-nvl: "Noto Serif JP", "Yu Mincho", serif;
+    --border-rgb-nvl: 0,0,0;
+    --theme-rgb-nvl: 153, 0, 17;
+}
+
+/* ========<Layout enhance>======== */
+body {
+    overflow-x: hidden;
+}
+h2 {
+    font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0.8rem 0rem 0.3rem 0rem;
+}
+:is(h1,h2,h3,h4,h5,h6) + :is(h1,h2,h3,h4,h5,h6) {
+    margin: 0.3em 0em;
+}
+
+#page-content > hr {
+    margin: 2em;
+}
+
+*:not(#u-credit-view, h1,h2,h3,h4,h5,h6,hr) + :is(h1,h2,h3,h4,h5,h6) {
+    margin-top: 1.3em;
+}
+:is(h1,h2,h3,h4,h5,h6) + p {
+    margin-top: 0.3em;
+}
+
+li, p {
+  line-height: 1.65;
+  word-break: break-word;
+}
+li li {
+    padding: 1px 0px;
+}
+li {
+    padding: 2px 0px;
+}
+ul, ol ol {
+    padding-inline-start: 20px;
+}
+ol {
+    padding-inline-start: 30px;
+}
+#page-content p + :is(ul, ol) {
+    margin-top: -1em;
+}
+:is(h1,h2,h3,h4,h5,h6) + :is(ul,ol) {
+    margin-top: 0;
+}
+
+.yui-nav {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+.yui-nav li {
+  display: flex;
+  flex-grow: 2;
+  margin: 0;
+}
+.yui-nav li a {
+  width: 100%;
+  text-align: center;
+}
+.yui-navset .yui-content, .yui-navset .yui-navset-top .yui-content {
+    padding: 0.25em 1em;
+}
+
+.collapsible-block, .colmod-block {
+    margin: 0.7em 0;
+}
+
+@media (max-width: 479px) {
+#page-content .creditRate {
+    margin-right: 0.5em;
+}
+}
+
+/* ========<Custom Class>======== */
+.nmj {
+    font-family: 'Nanum Myeongjo', 'Noto Serif JP', serif;
+}
+.ubt {
+    font-family: 'Noto Serif JP', 'Yu Mincho', serif;
+}
+/* --------<BOX>-------- */
+.box {
+  --dark: 0;
+  --img: none;
+  border: solid 2px rgba(var(--border-rgb-nvl));
+  padding: 5px 15px;
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, .2);
+  margin: 1.5em 1.5em;
+  position: relative;
+  overflow: hidden;
+}
+.box::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: var(--img);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+    background-size: 50%;
+    opacity: 0.1;
+    filter: invert(var(--dark));
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -250px;
+}
+
+.paper {
+  border: none;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  margin: 2rem 1.5em;
+}
+@media only screen and (max-width: 479px) {
+.paper {
+  margin: 1.5rem 0em;
+}
+}
+
+.mini {
+  border-right: solid 3px rgba(var(--border-rgb-nvl),.7);
+  border-left: solid 3px rgba(var(--border-rgb-nvl),.7);
+  border-top: none;
+  border-bottom: none;
+  padding: 0 1em;
+  box-shadow: none;
+}
+
+.img {
+  --img: var(--scp-logo);
+  margin: 1.5em 2em;
+}
+.img::before {
+  background-size: 75%;
+  opacity: 0.1;
+}
+
+.quote {
+    --clr: rgb(var(--border-rgb-nvl));
+    border: none;
+    box-shadow: none;
+    padding: 0.5em 1em 0.5em 2.5em;
+    background-size: 2em;
+    margin: 1.5em 1em;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 1.2em;
+}
+.quote::before {
+    background-color: var(--clr);
+    mask: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Anavla-style-jp/Cquote1_black.svg');;
+    -webkit-mask: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Anavla-style-jp/Cquote1_black.svg');;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    mask-position-y: 9px;
+    -webkit-mask-size: 1.5em;
+    left: 11px;
+    top: 14px;
+    opacity: 1;
+    margin: 0;
+}
+@media only screen and (max-width: 479px) {
+.quote {
+  margin: 1em 0.3em;
+}
+}
+
+.digit {
+  --clr: lime;
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),repeating-linear-gradient(transparent 0px, rgba(0 0 0 / 15%) 3px, transparent 6px), var(--clr);
+  border: solid 3px var(--clr);
+  color: var(--clr);
+  font-family: 'Andale Mono', 'Courier New', "Nanum Gothic Coding", "Noto Sans JP", Courier, monospace;
+}
+.digit * {
+  color: var(--clr);
+  font-family: 'Andale Mono', 'Courier New', "Nanum Gothic Coding", "Noto Sans JP", Courier, monospace;
+}
+#page-content .digit hr {
+  background-color: var(--clr);
+  border-color: var(--clr);
+  margin: 1em !important;
+}
+.digit div.blockquote {
+  border-color: var(--clr);
+  background-color: rgba(0, 0, 0, .4);
+  box-shadow: none;
+  border-width: 2px;
+  border-style: solid;
+}
+.digit blockquote>p::before {
+    content: "> ";
+    font-weight: bold;
+}
+.digit blockquote {
+    background: black;
+    border: none;
+    padding: 0 0.5em;
+}
+.digit a::before {
+    content: "#";
+    font-weight: bold;
+}
+.digit a:hover {
+    color: black;
+    background: var(--clr);
+    text-decoration: none;
+}
+.digit a {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 479px) {
+.box {
+  margin: 1em 0em;
+}
+}
+
+
+/* --------<TITLE>-------- */
+.title :is(h1,h2,h3,h4,h5,h6) {
+    font-weight: bold;
+    font-family: var(--title-font-nvl) !important;
+}
+.pre-next {
+    border: rgba(var(--border-rgb-nvl),0.4) 1.5px solid;
+    border-right: none;
+    border-left: none;
+    text-align: center;
+    line-height: 2;
+    font-weight: bolder;
+    margin: 20px auto;
+    max-width: fit-content !important;
+}
+.pre-next p {
+  margin: 0.3em;
+}
+.pre-next :is(h1,h2,h3,h4,h5,h6) {
+  margin: 0;
+}
+
+.cool-title {
+    text-align: center;
+    font-family: var(--title-font-nvl);
+    display: block;
+}
+.cool {
+    text-align: center;
+    display: block;
+}
+
+.glss-banner {
+    --img: var(--scp-logo);
+    --bg-size: 150px;
+    --txt: "";
+    margin: 1.5em 2em;
+    position: relative;
+    text-align: center;
+    padding: calc(var(--bg-size) - 70px) 10px 5px 10px;
+}
+.glss-banner::before {
+    content: var(--txt);
+    font-size: calc(var(--bg-size) / 1.3);
+    font-family: var(--title-font-nvl) !important;
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: var(--img);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+    background-size: auto var(--bg-size);
+    -webkit-mask-image: linear-gradient(black, transparent calc(var(--bg-size) - 30px));
+}
+@media only screen and (max-width: 479px) {
+.glss-banner {
+  margin: 1em 0em;
+}
+}
+.glss-banner :is(h1,h2,h3,h4,h5,h6) {
+    text-align: center;
+    font-family: var(--title-font-nvl);
+    display: block;
+}
+
+.line-title, .line:not(.sushi *) {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    --clr: rgb(var(--theme-rgb-nvl));
+}
+:is(.line-title, .line):before, :is(.line-title, .line):after {
+    content: "";
+    border: var(--clr) solid 1px;
+    flex-grow: 1;
+    height: 0;
+    margin: 1em;
+    position: relative;
+    top: 4px;
+    min-width: 2em;
+}
+
+.emoji {
+    --emoji: "😂";
+    display: flex;
+    position: relative;
+    vertical-align: bottom;
+    align-items: center;
+    margin: 1.5em 0 0.5em 2.5em;
+    width: fit-content;
+}
+.emoji::before {
+    content: var(--emoji);
+    font-size: 4em;
+    opacity: 0.3;
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    min-width: 1.4em;
+    min-height: 1.4em;
+    left: -0.7em;
+    top: -0.3em;
+    position: absolute;
+    z-index: -1;
+    background-image: var(--img);
+    background-size: contain;
+}
+
+.text-mask{
+    --bg: linear-gradient(90deg, #861657, #ffa69e);
+    width: fit-content;
+    background: var(--bg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: contain;
+}
+
+/* --------<ETC>-------- */
+.re {
+    border-left: rgba(var(--border-rgb-nvl),.2) solid 5px;
+    position: relative;
+    border-bottom: rgba(var(--border-rgb-nvl),.1) solid 1.5px;
+    border-right: rgba(var(--border-rgb-nvl),.1) solid 1.5px;
+    margin: 0;
+}
+.re .re {
+    margin: 4px;
+    border-bottom: none;
+    border-right: none;
+}
+.re .re>p:first-child::before {
+    content: "└";
+    position: relative;
+    font-weight: bold;
+    left: -5px;
+    top: 2px;
+    opacity: 0.8;
+}
+.re p {
+    padding: 0 3px 0 6px;
+    margin: 0;
+}
+.re p:first-child {
+    background: rgba(var(--border-rgb-nvl),0.1);
+    padding: 1px 2px 1px 8px;
+    font-weight: bold;
+    margin: 5px 0 5px 0;
+}
+@media (max-width: 479px) {
+    .re {
+        border-left: rgba(var(--border-rgb-nvl),.2) solid 3px;
+    }
+    .re .re {
+        margin: 4px 4px 4px 2px;
+    }
+}
+
+.indent p::before {
+    content: "";
+    margin: 0 0.4em;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: stretch;
+}
+.flex-column>div {
+    width: 100%;
+}
+
+@media (max-width: 479px) {
+.flex-column:not(.always, .dialog) {
+    flex-direction: column;
+}
+.flex-column>div {
+    width: auto;
+}
+.flex-column.always>div, .flex-column.dialog>div {
+    width: 100%;
+}
+}
+
+.flex {
+    border-right: solid 1px rgba(var(--border-rgb-nvl),.2);
+    border-left: solid 1px rgba(var(--border-rgb-nvl),.2);
+    padding: 0 0.7em;
+    border-top: none;
+    border-bottom: none;
+}
+.flex:first-child {
+    border-left: none;
+}
+.flex:last-child {
+    border-right: none;
+}
+
+@media (max-width: 479px) {
+.flex:not(.always .flex, .dialog .flex) {
+    border-top: solid 1px rgba(var(--border-rgb-nvl),.2);
+    border-bottom: solid 1px rgba(var(--border-rgb-nvl),.2);
+    border-right: none;
+    border-left: none;
+}
+.flex:first-child:not(.always .flex, .dialog .flex) {
+    border-top: none;
+}
+.flex:last-child:not(.always .flex, .dialog .flex) {
+    border-bottom: none;
+}
+}
+
+.accent {
+    --bg-clr: rgb(var(--theme-rgb-nvl));
+    background-color: var(--bg-clr);
+    background-image: var(--bg-clr);
+    border: solid 3px;
+    border-color: var(--bg-clr);
+    border-image: var(--bg-clr) 1;
+    color: white;
+    text-align: center;
+    margin: 3px;
+}
+.accent * {
+    color: inherit;
+    margin: 0;
+}
+
+.ntc {
+    text-align: end;
+    padding: 0 2.5em 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.ntc p {
+    margin: 0;
+    padding: 0 4px;
+}
+.ntc:after {
+    content: "⤴";
+}
+
+@media (max-width: 479px) {
+.ntc {
+    padding: 0 1em 0 0;
+}
+}
+
+.Dinnerbone {
+    transform: rotate(180deg);
+    display: inline-block;
+}
+.Jeb_ {
+    animation-name: Jeb_color;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.help {
+    border: solid 2px rgb(var(--border-rgb-nvl));
+    padding: 0 1em;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, .2);
+    margin: 1.5em;
+}
+
+.box, .img, .glss-banner {
+    z-index: 0;
+}
+
+.limit {
+}
+.anchor {
+    position: sticky;
+    height: 0;
+    top: 15px;
+    z-index: 9;
+}
+.sidebox {
+    --bg-clr: #FFF9EE;
+    position: absolute;
+    max-height: 70px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-color: var(--bg-clr);
+    padding: 0 20px 0 0;
+    max-width: 0 !important;
+    transition: max-width 0.6s ease-in-out, max-height 0.6s ease-in-out, padding 0.6s ease-in-out;
+    border: rgb(var(--border-rgb-nvl)) solid 1px;
+}
+.sidebox:hover {
+    max-height: 60vh;
+    height: auto;
+    overflow-y: auto;
+    max-width: 50vw !important;
+    width: auto;
+    padding: 0 10px;
+}
+@media only screen and (max-width: 479px) {
+.sidebox:hover {
+    max-width: 70vw !important;
+}
+}
+.sidebox * {
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+.sidebox:hover * {
+    opacity: 1;
+}
+.sidebox::before {
+    content: "◀";
+    position: sticky;
+    font-size: 1.3em;
+    top: 23px;
+    left: 2px;
+    opacity: 1;
+    transition: opacity 0.3s;
+    display: block;
+    height: 0;
+}
+.sidebox:hover::before {
+    opacity: 0;
+}
+
+.tocanchor {
+    display: block;
+    position: sticky;
+    height: 0;
+    top: 15px;
+    z-index: 9;
+}
+.tocbox {
+    --bg-clr: #FFF9EE;
+    display: block;
+    position: absolute;
+    max-height: 70px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-color: var(--bg-clr);
+    padding: 0 17px 0 3px;
+    max-width: 0 !important;
+    transition: max-width 0.6s ease-in-out, max-height 0.6s ease-in-out, padding 0.6s ease-in-out;
+    border: rgb(var(--border-rgb-nvl)) solid 1px;
+}
+.tocbox:hover {
+    max-height: 60vh;
+    height: auto;
+    overflow-y: auto;
+    max-width: 256px !important;
+    width: auto;
+    padding: 0 10px;
+}
+.tocbox * {
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+.tocbox:hover * {
+    opacity: 1;
+}
+.tocbox::before {
+    content: "▶";
+    position: sticky;
+    font-size: 1.3em;
+    top: 23px;
+    right: 2px;
+    opacity: 1;
+    transition: opacity 0.3s;
+    display: block;
+    height: 0;
+}
+.tocbox:hover::before {
+    opacity: 0;
+}
+
+@media (max-width: 479px) {
+.sidebox {
+    padding: 0 4.5% 0 0.5%;
+}
+.sidebox:before {
+    left: 2.5%;
+}
+.tocbox {
+    padding: 0 4% 0 1%;
+}
+.tocbox:before {
+    right: 2.5%;
+}
+}
+@media (min-width: 1289px) {
+.sidebox, .sidebox:hover {
+    max-width: calc((100vw - 100%)/2 - 15em) !important;
+    padding: 10px;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+.sidebox::before {
+    opacity: 0;
+}
+.sidebox * {
+    opacity: 1;
+}
+}
+
+@media (min-width: 1980px) {
+.sidebox, .sidebox:hover {
+    max-width: 600px !important;
+}
+}
+
+div.full {
+    width: 100vw;
+    max-width: unset !important;
+    box-sizing: border-box;
+    border-inline: none;
+}
+@media (min-width: 768px) and (max-width: 979px) {
+div.full {
+    margin-left: calc(-50vw + 50% - 8em) !important;
+}
+}
+@media (max-width: 767px) {
+div.full {
+    margin-left: calc(-50vw + 50%) !important;
+}
+div.full.box::before {
+    left: 50%;
+}
+}
+
+#side-bar {
+     z-index: 1;
+}
+
+#page-content div.center {
+    margin-inline: auto !important;
+    max-width: 60%;
+}
+div.right, div.left {
+    width: auto;
+    margin-block: 0.5em;
+}
+@media (min-width: 479px) {
+div.right {
+    width: 40%;
+    float: right;
+    margin-right: 0;
+}
+div.left {
+    width: 40%;
+    float: left;
+    margin-left: 0;
+}
+}
+
+/* --------<Animation>-------- */
+@keyframes Jeb_color {
+    0% { color: rgb(255, 0, 0); }
+    16% { color: rgb(255, 255, 0); }
+    33% { color: rgb(0, 255, 0); }
+    50% { color: rgb(0, 255, 255); }
+    67% { color: rgb(0, 0, 255); }
+    84% { color: rgb(255, 0, 255); }
+    100% { color: rgb(255, 0, 0); }
+}
+@keyframes wipe {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+.wipe {
+    background-size: 200%;
+    animation-name: wipe;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.rotate::before {
+    animation-name: rotate;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+/* ====<Fixing dumbass Wikidot Bug>==== */
+.credit ul {
+    display: block !important;
+}
+
+
+/* ========< Free DLC > ======== */
+/* ========< Free DLC >========*/
+div.blockquote {
+  border: solid rgba(var(--border-rgb-nvl),0.5) 1px;
+  box-shadow: 2px 2px 5px rgb(0 0 0 / 10%);
+  background-color: transparent;
+}
+blockquote {
+  background-color: transparent;
+  border: none;
+  border-left: solid 4px rgba(var(--border-rgb-nvl),.7);
+  padding: 1px 1em;
+  margin: 1.5em 0.5em;
+}
+
+#page-content .collapsible-block>div.collapsible-block-folded>a:not(.system-pagestate-ctrl a, .info-container a)::before,
+#page-content .folded>.colmod-link-top>.foldable-list-container>a:not(.system-pagestate-ctrl a)::before {
+    content: "▶ ";
+}
+#page-content .collapsible-block>div.collapsible-block-unfolded>div.collapsible-block-unfolded-link:last-child>a:not(.system-pagestate-ctrl a, .info-container a)::before,
+#page-content .unfolded>.colmod-link-end>.foldable-list-container>a:not(.system-pagestate-ctrl a)::before {
+    content: "△ ";
+}
+#page-content .collapsible-block>div.collapsible-block-unfolded>div.collapsible-block-unfolded-link:first-child>a:not(.system-pagestate-ctrl a, .info-container a)::before,
+#page-content .unfolded>.colmod-link-top>.foldable-list-container>a:not(.system-pagestate-ctrl a)::before {
+    content: "▽ ";
+}
+
+
+/* ========< Navla component : Center > ======== */
+/* <Navla component : Center> */
+.sidebox {
+    right: calc(((100vw - 9px - 100%) / 2) * -1);
+}
+
+.tocbox {
+    right: unset;
+    left: calc(((100vw - 9px - 100%) / 2) * -1);
+}
+
+@media all and (max-width: 479px) {
+.sidebox {
+    right: calc(((100vw - 100%) / 2) * -1);
+}
+.tocbox {
+    right: unset;
+    left: calc(((100vw - 100%) / 2) * -1);
+}
+}
+@media (min-width: 1289px) {
+.sidebox, .sidebox:hover, .tocbox {
+    max-width: calc((100vw - 100%)/2 - 50px) !important;
+    max-height: 60vh;
+    padding: 0 10px;
+}
+.tocbox:before {
+    opacity: 0;
+}
+.tocbox * {
+    opacity: 1;
+}
+.sidebox:hover, .tocbox:hover {
+    max-width: calc((100vw - 100%)/2 - 50px) !important;
+}
+}
+@media (min-width: 1980px) {
+.sidebox, .sidebox:hover, .tocbox, .tocbox:hover {
+    max-width: 600px !important;
+}
+}
+
+div.full {
+    margin-left: calc(-50vw + 50%) !important;
+    padding: 0 calc(50vw - 50%);
+}
+[[/code]]
+[[/collapsible]]
+
+[[include :scp-jp:component:license-box-backend
+|author=Navla]]
+
+> **ファイル名:** SCP_Foundation_emblem.svg
+> **作者:** SCP財団（Wilkinson（維基百科））
+> **ライセンス:** CC BY-SA 3.0
+> **出典:** [https://upload.wikimedia.org/wikipedia/commons/e/ec/SCP_Foundation_%28emblem%29.svg Wikimedia Commons（upload.wikimedia.org）]
+
+> **ファイル名:** SCP_logo.svg
+> **作者:** [[*user Navla]]（ナブラコンポーネントに同梱）
+> **ライセンス:** CC BY-SA 3.0（原語版に準じる）
+> **出典:** [https://scpko.wikidot.com/local--files/component:navla/SCP_logo.svg SCP 韓国支部 Wiki（component:navla）]
+
+> **ファイル名:** Cquote1_black.svg
+> **作者:** Wikimedia Commons 提供（引用符マスク）
+> **ライセンス:** CC BY-SA 3.0 ほか Wikimedia Commons のライセンスに準じる
+> **出典:** [https://upload.wikimedia.org/wikipedia/commons/3/3d/Cquote1_black.svg Wikimedia Commons（upload.wikimedia.org）]
+
+[[include :scp-jp:component:license-box-end]]
+[[/iftags]]
+
+[[#if {$tocbox} |  | [!-- ]]
+[[div class="tocanchor"]]
+[[div class="tocbox"]]
+[[toc]]
+[[/div]]
+[[/div]]
+[!-- --]
+
+[[#if {$help} |  | [!-- ]]
+[[div class="help"]]
+[[collapsible show="初期設定" hide="閉じる"]]
+[[code]]
+:root:lang(ja) {
+    --scp-logo: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Anavla-style-jp/SCP_logo.svg'); /* SCP財団のロゴ画像のURLです。 */
+    --title-font-nvl: 'Noto Serif JP', serif; /* タイトル用のフォントです。カスタムタイトルにも大抵このフォントが適用されます。別のコードをタイトルにしたい場合は、このコードを変更する必要があります。現在の日本語版では Noto Serif JP が適用されています。 */
+    --border-rgb-nvl: 0,0,0; /* カスタムテキストボックスの枠線の色です。この RGB コードを変更することで、ボックスの枠線の色を自由にカスタマイズできます。現在の既定値は黒です。 */
+    --theme-rgb-nvl: 153, 0, 17; /* 主要なアクセント色です。現在は暗い赤色（SCP 財団のシグマテーマのh1見出し色）に設定されています。 */
+}
+[[/code]]
+[[/collapsible]]
+
+[[collapsible show="テキストボックス" hide="閉じる"]]
+[[code]]
+[[div class="box"]]
+汎用テキストボックス
+
+style="--img: url("ここにURLを入力"); --dark: 1(画像を反転);"
+上記の変数は、以下のすべての box クラスに適用されます
+[[/div]]
+[[/code]]
+
+[[code]]
+[[div class="box paper"]]
+紙質感のテキストボックス
+[[/div]]
+[[/code]]
+
+[[code]]
+[[div class="box mini"]]
+ミニマルテキストボックス
+[[/div]]
+[[/code]]
+
+[[code]]
+[[div class="box img"]]
+画像が敷かれたテキストボックス
+[[/div]]
+[[/code]]
+
+[[code]]
+[[div class="box quote"]]
+名言の引用文
+* style=""
+ * --clr: 色; /* 引用符の色 */
+[[/div]]
+[[/code]]
+
+[[code]]
+[[div class="box digit"]]
+デジタル風テキストボックス
+style="--clr: 色; /* 端末の主要色 */"
+[[/div]]
+[[/code]]
+[[/collapsible]]
+
+[[collapsible show="タイトル書式" hide="閉じる"]]
+[[code]]
+[[div class="pre-next"]]
+連作バー、またはタイトル書式
+[[/div]]
+[[/code]]
+
+[[code]]
++* [[span class="cool-title"]]中央揃えタイトル[[/span]]
+[[/code]]
+
+[[code]]
+[[div class="glss-banner"]]
++* グラシス風バナー
+
+style="--img: url('ここに画像URLを入力'); --bg-size:ここに画像サイズを入力;"
+[[/div]]
+[[/code]]
+
+[[code]]
+[[div class="line-title"]]
++* 横線タイトル
+[[/div]]
+[[/code]]
+
+[[code]]
+[[div class="emoji" style="--emoji: '😂';"]]
++* 絵文字タイトル
+[[/div]]
+[[/code]]
+
+[[code]]
+[[div class="text-mask"]]
++* [[size 200%]]テキストマスク[[/size]]
+
+style="--bg:url('ここに画像URLを入力');"
+
+(wipe クラスを追加すると左へスクロールするアニメーションになります)
+[[/div]]
+[[/code]]
+[[/collapsible]]
+
+[[collapsible show="その他の書式" hide="閉じる"]]
+[[code]]
+[[span class="nmj"]]ナヌム明朝フォント。[[/span]]
+[[span class="ubt"]]ノト明朝フォント。[[/span]]
+[[/code]]
+
+[[code]]
+[[div class="re"]]
+ユーザー1
+
+ユーザー1のコメント
+[[/div]]
+[[/code]]
+
+[[code]]
+[[div class="indent"]]
+インデント
+[[/div]]
+[[/code]]
+
+[[code]]
+[[div class="flex-column"]]
+[[div class="flex"]]
+フレックス2列
+[[/div]]
+[[div class="flex"]]
+always クラスを追加するとモバイル環境でも変化しません
+[[/div]]
+[[/div]]
+[[/code]]
+
+[[code]]
+[[span class="accent"]]ハイライト文字強調[[/span]]
+[[div class="accent"]]
+ハイライトブロック強調
+
+style="--bg-clr: ここに背景色を入力; color: ここに文字色を入力;"
+[[/div]]
+[[/code]]
+
+[[code]]
+[[div class="ntc"]]
+⚠️ コンテンツ警告
+[[/div]]
+[[/code]]
+
+[[code]]
+[[div class="limit"]]
+[[div class="anchor"]]
+[[div class="sidebox"]]
+サイドボックスに入れる内容
+[[/div]]
+[[/div]]
+
+サイドボックスがスクロールして通り過ぎる内容
+
+[[/div]]
+[[/code]]
+
++++* その他の汎用クラス
+* nmj / ubt: このクラスが付いたボックスのフォントをナヌム明朝、またはノト明朝に変更します
+* center: ページ中央にやや小さい幅で
+* right: ページ右側にfloat
+* left: ページ左側にfloat
+* full: ページ幅を横いっぱいに
+* box img rotate: ボックス内の背景画像を回転
+* emoji rotate: 背景の絵文字を回転
+[[/collapsible]]
+
+* **引数**
+ * tocbox=1
+ * help=1
+
+* [*https://scpko.wikidot.com/navla-component-introduction コンポーネントリンク（韓国語）]
+* [*https://scpko.wikidot.com/navla-style-introduction テーマリンク（韓国語）]
+[[/div]]
+[!-- --]

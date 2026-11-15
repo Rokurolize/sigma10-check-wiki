@@ -1,0 +1,237 @@
+[[module CSS]]
+@import url('https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css');
+@import url('https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css');
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aontology-department-jp/1");
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css
+]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=2
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css
+]]
+
+[[iftags +テーマ]]
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** 存在学部ハイライター
+**翻訳責任者:** SCP-JP
+**翻訳年:** 2026
+**原題:** 존재학부 하이라이터
+**著作権者:** [[*user Denevola]]
+**作成年:** 2021
+**初訳時参照リビジョン:** 15
+**元記事リンク:** [*https://scpko.wikidot.com/theme:ontology-department 존재학부 하이라이터]
+**フォント:** Noto Sans JP（Google Fonts、SIL Open Font License）
+**画像の出典:** SCP-KO より再ホスト（department-logo.svg）。ロゴは Didic がデザインし Denevola がベクター化（CC BY-SA 3.0）
+[[include :scp-jp:credit:end-preview]]
+
+これは[[[http://scpkosb.wikidot.com/collab:shark-bytes-44-5bde|存在学部]]]のための専用テーマです。
+存在学部ロゴは[[*user Didic]]がデザインしました。
+
++ 使用方法
+このテーマを使用するには、以下のコードを作品に貼り付けてください。
+[[div class="code"]]
+@@[[include :scp-jp:theme:black-highlighter-theme]]@@
+@@[[include :scp-jp:theme:ontology-department-jp]]@@
+[[/div]]
+暗色サイドバーの適用
+[[div class="code"]]
+@@[[include :scp-jp:theme:black-highlighter-theme]]@@
+@@[[include :scp-jp:theme:ontology-department-jp]]@@
+@@[[include :scp-jp:component:bhl-dark-sidebar]]@@
+[[/div]]
+
++ 使用例
+水平線はハイフン5つ「@@-----@@」を入力すると作成できます。引用ブロックなどの内部に置かれていなければ、ページ全体を横切ります。このページでセクションを分けている線はすべて水平線です。
+
+-----
+
+見出しは、文頭に「+」を1個から6個まで入力することで適用できます。
+
+[[collapsible show="▼ 見出し一覧" hide="▲ 閉じる"]]
++ 見出し1段階
+
+++ 見出し2段階
+
++++ 見出し3段階
+
+++++ 見出し4段階
+
++++++ 見出し5段階
+
+++++++ 見出し6段階
+[[/collapsible]]
+
+@@ @@
+
+[[tabview]]
+[[tab タブビュー]]
+タブビューです。
+[[/tab]]
+[[tab タブビュー]]
+見てください、こちらにはもっと文字があります。
+
+すごいでしょう。
+[[/tab]]
+[[tab 長いタブ]]
+長いタブです。多くの文字が入ります。
+
+長いタブです。多くの文字が入ります。
+
+長いタブです。多くの文字が入ります。
+
+長いタブです。多くの文字が入ります。
+
+長いタブです。多くの文字が入ります。
+
+長いタブです。多くの文字が入ります。
+
+長いタブです。多くの文字が入ります。
+
+長いタブです。多くの文字が入ります。
+
+長いタブです。多くの文字が入ります。
+
+長いタブです。多くの文字が入ります。
+
+長いタブです。多くの文字が入ります。
+
+長いタブです。多くの文字が入ります。
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+草
+[[/tab]]
+[[/tabview]]
+
+> これは引用文です。各行の先頭に「>」を入れると機能します。
+>
+> 文字
+> -----
+> 区切り線
+>
+>> 二重引用文
+>>> 三重引用文[[footnote]]そしてこれは脚注です！[[/footnote]]
+
+||~ これは ||~ 表です ||
+|| 作り方は || もうご存じだと ||
+|||| 思います ||
+
++ ソースコード
+[[collapsible show="+ コードを表示" hide="- コードを隠す" hideLocation="both"]]
+[[code type="css"]]
+/*
+    Ontology Department Highlighter Theme
+    [2021 Wikidot Theme]
+    Created by Denevola.
+    Based on Black Highlighter Theme created by Woedenaz and Croquembouche.
+    The Ontology Department logo was created by Didic and vectorized by Denevola. Licensed under CC BY-SA 3.0.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');
+
+:root:lang(ja) {
+    --theme-base: "black-highlighter";
+    --theme-id: "ontology-department";
+    --theme-name: "Ontology Department Highlighter Theme";
+
+    /* Header */
+    --logo-image: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aontology-department-jp/department-logo.svg');
+    --header-title: "存在学部";
+    --header-subtitle: "因果、概念、物質";
+
+    /* Typefaces */
+    --body-font: 'Noto Sans JP', proxima-nova,Verdana,Geneva,sans-serif;
+    --header-font: 'Noto Sans JP',"Poppins",Franklin Gothic Medium,Franklin Gothic,ITC Franklin Gothic,Arial,sans-serif;
+    --title-font: 'Noto Sans JP',"Poppins",Franklin Gothic Medium,Franklin Gothic,ITC Franklin Gothic,Arial,sans-serif;
+    --mono-font: "Space Mono",Consolas,monaco,"Noto Sans JP",monospace;
+
+    /* Standard Colors */
+    --white-monochrome: 247, 250, 252;
+    --pale-gray-monochrome: 250, 250, 250;
+    --light-pale-gray-monochrome: 250, 250, 250;
+    --pale-accent: 157, 157, 212;
+    --bright-accent: 100, 100, 135;
+    --medium-accent: 34, 46, 89;
+    --dark-accent: 100, 100, 135;
+
+    /* Header Gradients */
+    --gradient-header: linear-gradient(
+     180deg,
+     rgb(var(--header-gradient-color-bottom)) 0%,
+     rgb(var(--header-gradient-color-middle)) 90%,
+     rgb(var(--header-gradient-color-top)) 100%
+    );
+    --diagonal-stripes: repeating-linear-gradient(
+     to top,
+     hsla(0, 0%, 100%, 0),
+     hsla(0, 0%, 100%, 0) 0.25vh,
+     rgba(88, 88, 88, 0.1) 0.35vh,
+     rgba(88, 88, 88, 0.2) 0.5vh
+    );
+}
+
+#header h1 a {
+    margin-top: calc(var(--header-height-on-desktop)/2 - .75em);
+}
+
+#header h2 {
+    font-family: 'Noto Sans JP', "Poppins", Franklin Gothic Medium, Franklin Gothic, ITC Franklin Gothic, Arial, sans-serif;
+}
+
+#header h2 span {
+    margin-top: calc(var(--header-height-on-desktop)/2 + var(--header-h1-font-size)/2 - var(--header-h2-font-size) + .75rem);
+}
+
+@media only screen and (max-width: 768px) {
+
+    #header h1 a {
+        margin-top: calc(var(--header-height-on-mobile)/2 - 1.345rem);
+    }
+
+    #header h2 span {
+        margin-top: calc(var(--header-height-on-mobile)/2 + var(--header-h1-font-size)/2 + .5rem);
+    }
+}
+
+#page-title,
+.meta-title {
+    flex-direction: column;
+    border-bottom: none;
+    text-align: center;
+}
+
+#page-title::after,
+.meta-title::after {
+    display: block;
+    width: 100%;
+    height: .5rem;
+    border-radius: 50%;
+    background-color: rgba(var(--swatch-menubg-medium-dark-color,66,66,72),.2);
+    content: "";
+}
+[[/code]]
+[[/collapsible]]
+
+[[include :scp-jp:component:license-box-backend
+|author=Denevola]]
+
+> **ファイル名:** department-logo.svg
+> **作者:** Didic（デザイン）、Denevola（ベクター化）
+> **ライセンス:** CC BY-SA 3.0（原語版ソースコード内の表記による）
+> **出典:** [https://scpko.wikidot.com/local--files/theme:ontology-department/department-logo.svg SCP 韓国支部 Wiki]
+
+[[include :scp-jp:component:license-box-end]]
+[[/iftags]]
