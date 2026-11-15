@@ -1,0 +1,115 @@
+[[div style="display: none;"]]
+[[include theme:pacom]]
+[[/div]]
+[[module CSS]]
+@import url(https://scpko.wikidot.com/local--code/theme%3Apacom1943/1);
+
+.comments-box {
+  margin-top: 1.5em;
+}
+[[/module]]
+
+[[iftags +테마]]
+
+[[include info:start]]
+
+재료가 된 이미지:
+# https://pixabay.com/photos/paper-scrapbook-texture-decorative-1914901/
+
+기타 이미지 파일은 모두 [[*user thd-glasses]]가 제작함.
+
+[[include info:end]]
+
+@@@@
+@@@@
+----
+[[>]]
+[[module Rate]]
+[[/>]]
+
++ 사용 방법: 태평양사령부 1943 CSS 테마
+* [[[scp-987-ko|SCP-987-KO]]]를 위한 전용 테마입니다.
+* 본 테마를 적용할 페이지 최상단에 다음 구문을 삽입하세요.
+> [[include :scpko:theme:pacom1943]]
+
++ How to use: PACOM 1943 CSS THEME
+* This is the original theme for SCP-987-KO.
+* Add the following code on the top of your page.
+> [[include :scpko:theme:pacom1943]]
+
+~~~~
+[[code type="CSS"]]
+@charset "utf-8";
+
+/*
+    태평양사령부 CSS 테마
+    [2020 Wikidot Theme]
+    Edited by thd-glasses.
+    Based on Anderson Robotics theme created by Croquembouche, with help from Jacob Conwell and OthellotheCat.
+*/
+
+/*-----------------------*\
+ *   Fonts and Colours   * 
+\*-----------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600|Raleway|Roboto+Mono');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo');
+@import url('https://scpko.wdfiles.com/local--files/unfont/UnJamoBatang.css');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+:root {
+  --background: #F2E8DA;
+  --main: #b01;
+  --highlight: #000;
+  --hyperlink: #b01;
+  --hyperlink-visited: #824;
+  --padding: 2em;
+  --padding-ng: -2em;
+}
+
+body {
+  background: var(--background) url(https://scpko.wdfiles.com/local--files/theme%3Apacom1943/body_bg.jpg) center -100em repeat;
+}
+
+/*------------------*\
+ *    Top Header    * 
+\*------------------*/
+
+div#container-wrap {
+  background: url(https://scpko.wdfiles.com/local--files/theme%3Apacom1943/report_bg.png) 50% 0% no-repeat;
+}
+
+#header {
+  background-image: url(https://scpko.wdfiles.com/local--files/theme%3Apacom1943/header.png);
+}
+
+/*------------------*\
+ *      Mobile      * 
+\*------------------*/
+
+@media (max-width: 479px) {
+  div#container-wrap {
+    background: url(https://scpko.wdfiles.com/local--files/theme%3Apacom1943/mobile_bg_s.png) left 0% no-repeat !important;
+  }
+}
+
+/* Tablet Media Query */
+@media (min-width: 768px) and (max-width: 1104px) {
+  #side-bar {
+    background-image: url(https://scpko.wdfiles.com/local--files/theme%3Apacom1943/header.png);
+  }
+}
+
+/* custom for small device */
+@media (max-width: 767px) {
+  div#container-wrap {
+    background: url(https://scpko.wdfiles.com/local--files/theme%3Apacom1943/mobile_bg.png) left 0% no-repeat;
+  }
+  #header {
+    background-image: url(https://scpko.wdfiles.com/local--files/theme%3Apacom1943/pacom.png);
+  }
+}
+
+[[/code]]
+
+[[/iftags]]
