@@ -1,0 +1,901 @@
+[[iftags]]
+[[include :scp-jp:theme:black-highlighter-theme]]
+[[/iftags]]
+
+[[iftags +テーマ]]
+
+[[module css]]
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css");
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css");
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css
+]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=2
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css
+]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** Fuladh Theme
+**翻訳責任者:** SCP-JP
+**翻訳年:** 2026
+**原題:** Fuladh Theme
+**著作権者:** Miss Lapis
+**作成年:** 2024
+**初訳時参照リビジョン:** 23
+**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:fuladh-theme Fuladh Theme]
+[[include :scp-jp:credit:end-preview]]
+
++* 情報
+
+これはアモニ＝ラムを題材にしたテーマで、アモニ＝ラムに触発されて作られました。アモニ＝ラムの世界を扱う記事、[*https://scp-wiki.wikidot.com/rounderhouse-gold-proposal その舞台になっている作品（英語版）]の周辺の記事での使用を想定しています。
+
+このテーマには次のものが入っています:
+* 組み込みの[*https://scp-wiki.wikidot.com/theme:extra-black-highlighter-theme ダークモード]と[*https://scp-wiki.wikidot.com/component:toggle-sidebar サイドバーの折りたたみ];
+* 他のテーマから取り入れた要素: [*https://scp-wiki.wikidot.com/theme:space Generic Space Theme]、[*https://scp-wiki.wikidot.com/theme:flopstyle-dark Flopstyle DARK]、[*https://scp-wiki.wikidot.com/theme:hansarp HANSARP Theme]、[*https://scp-wiki.wikidot.com/component:centered-header-bhl Centered Header BHL]、そして[*https://wanderers-library.wikidot.com/component:motherboard-theme ワンダラーズ・ライブラリの Motherboard Theme];
+* デスクトップでの広いページ幅;
+* 好みに合わせた大きなヘッダー。
+
+----
+
++* 使い方
+
+これは Black Highlighter を土台にしたテーマなので、このテーマを使うには Black Highlighter テーマも読み込む必要があります。詳しくは[[[theme:black-highlighter-theme|こちら]]]を参照してください。
+
+**このテーマを読み込むには、ページに以下を追加してください:**
+
+[[div class="blockquote"]]
+@@[[include :scp-jp:theme:black-highlighter-theme]]@@
+@@[[include :scp-jp:theme:fuladh-theme]]@@
+[[/div]]
+
+@@ @@
+
++* 例
+
+[[div class="scp-image-block block-right" style="width:50px;"]]
+[[image https://scp-wiki.wdfiles.com/local--files/her-golden-wings/image.png]]
+[[div class="scp-image-caption" style="width:50px;"]]
+画像のキャプション。
+[[/div]]
+[[/div]]
+
+# 番号付きリスト
+# リスト項目
+# リスト項目
+
+* 箇条書き
+* リスト項目
+* リスト項目
+
+水平線は、ハイフンを4つ並べた @@----@@ で作れます。何かの内側（引用ブロックなど）に置かなければページ全体に広がります。この文書の各節を区切っているのが水平線です。
+
+----
+
+装飾的な水平線は、次のコードで作れます:
+
+[[div class="code"]]
+@@[[div class="fancyhr"]]@@
+@@----@@
+@@[[/div]]@@
+[[/div]]
+
+[[div class="fancyhr"]]
+----
+[[/div]]
+
+行頭に「+」を1つから6つ置くと見出しを作れます。
+
+[[collapsible show="見出し" hide="閉じる"]]
+
++ 見出し1
+
+++ 見出し2
+
++++ 見出し3
+
+++++ 見出し4
+
++++++ 見出し5
+
+++++++ 見出し6
+ _
+
+[[/collapsible]]
+
+[[div class="code"]]
+@@ 偽のコードセレクタ{@@
+@@     偽のコードプロパティ: 偽のコード値;@@
+@@}@@
+[[/div]]
+
+[*https://scp-wiki.wikidot.com/# リンク] ([*https://google.com たぶん訪問済みのリンク])
+
+> 引用ブロック。
+>> 入れ子。
+
+[[div class="blockquote blue"]]
+青い引用ブロック。
+
+{{@@[[div class="blockquote blue"]]@@}}
+[[/div]]
+
+[[div class="fancyborder"]]
+
+{{@@[[div class="fancyborder"]]@@}}
+
+[[/div]]
+
+[[collapsible show="他の div を表示" hide="他の div を閉じる"]]
+
+ここから下の div には、いずれも既定の見た目と、任意で青い変種があります。
+
+[[div class="simple"]]
+{{@@[[div class="simple"]]@@}}
+[[/div]]
+
+[[div class="simple blue"]]
+{{@@[[div class="simple blue"]]@@}}
+[[/div]]
+
+[[div class="simple left"]]
+{{@@[[div class="simple left"]]@@}}
+[[/div]]
+
+[[div class="simple left blue"]]
+{{@@[[div class="simple left blue"]]@@}}
+[[/div]]
+
+[[div class="simple top"]]
+{{@@[[div class="simple top"]]@@}}
+[[/div]]
+
+[[div class="simple top blue"]]
+{{@@[[div class="simple top blue"]]@@}}
+[[/div]]
+
+[[div class="round"]]
+{{@@[[div class="round"]]@@}}
+[[/div]]
+
+[[div class="round blue"]]
+{{@@[[div class="round blue"]]@@}}
+[[/div]]
+
+[[/collapsible]]
+
+[[tabview]]
+[[tab タブ]]
+これは[[footnote]] 脚注 [[/footnote]]タブビューです。
+[[/tab]]
+[[tab タブ2]]
+おや、ここにもテキストがあるぞ。
+
+なんてこった。
+[[/tab]]
+[[tab 長いタブ]]
+これは長いタブです。たくさんのテキストが入ります。
+
+これは長いタブです。たくさんのテキストが入ります。
+
+これは長いタブです。たくさんのテキストが入ります。
+
+これは長いタブです。たくさんのテキストが入ります。
+
+これは長いタブです。たくさんのテキストが入ります。
+
+これは長いタブです。たくさんのテキストが入ります。
+
+これは長いタブです。たくさんのテキストが入ります。
+
+これは長いタブです。たくさんのテキストが入ります。
+
+これは長いタブです。たくさんのテキストが入ります。
+
+これは長いタブです。たくさんのテキストが入ります。
+
+これは長いタブです。たくさんのテキストが入ります。
+
+これは長いタブです。たくさんのテキストが入ります。
+[[/tab]]
+[[tab 名前がやや長めの、長い空のタブ。]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+Hello.
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[/tabview]]
+
+||~ これは ||~ 表です ||
+||作り方は || 知っているはず ||
+||||もう ||
+
++* 画像の出典
+
+* **ファイル名:** amoniram.png
+* **著作権者:** stephlynch
+* **ライセンス:** CC BY SA 3.0
+* **ソースリンク:** [*https://scp-wiki.wikidot.com/rounderhouse-gold-proposal SCP Foundation Wiki]
+* **ファイル名:** spaces.jpg — CC BY-SA 3.0。次の画像を含む合成画像: Dragonfish600.jpg（著作権者: NASA/JPL-Caltech/Univ. of Toronto、パブリックドメイン、[*https://commons.wikimedia.org/wiki/File:Dragonfish600.jpg Wikimedia Commons]）
+* **ファイル名:** @@--gear-mask@@（歯車アイコン） — 著作権者: Lorc、CC BY 3.0、[*https://game-icons.net/1x1/lorc/cog.html Game Icons]
+* **ファイル名:** image.png — 著作権者: Agente Shuffle、CC BY 3.0。次の画像を含む合成画像: SPChu.png（著作権者: SunnyClockwork、CC BY 3.0、[*https://scp-wiki.wikidot.com/sunny-art-cotbg-sarkicism SCP Foundation Wiki]）
+* **ファイル名:** cyberfancy_border.png, cyberfancy_hr.png — 著作権者: LAN 2D、CC BY SA 3.0、[*https://wanderers-library.wikidot.com/component:motherboard-theme The Wanderers' Library]。色調補正: Miss Lapis
+
+[[collapsible show="ソースコードを表示" hide="ソースコードを閉じる"]]
+
+[[code type="css"]]
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap');
+
+/* --------------- root --------------- */
+:root{
+    /* ===S-CSS-P INTEGRATION=== */
+    --theme-base: "black-highlighter";
+    --theme-id: "fuladh-theme";
+    --theme-name: "Fuladh Theme";
+
+/*fonts*/
+    --header-iceberg: Iceberg, "Noto Sans JP";
+    --header-fallback: Inter, "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --header-font: var(--header-iceberg), var(--header-fallback);
+    --title-font: var(--header-iceberg), var(--header-fallback);
+    --main-font: Domine, "Noto Sans JP";
+
+/*colors*/
+    --swatch-background: 57, 50, 50; /*bg color*/
+    --dark-gray-monochrome: 43, 34, 34; /*everything color*/
+    --bright-accent: 218, 165, 32; /*light yellow*/
+    --medium-accent: var(--bright-accent); 
+    --dark-accent: 126, 103, 53; /*dark yellow*/
+    --swatch-secondary-color: var(--dark-gray-monochrome);
+    --swatch-alternate-color: var(--dark-gray-monochrome);
+    --black-monochrome: var(--dark-gray-monochrome);
+    --swatch-menubg-extra-dark-color: var(--dark-gray-monochrome);
+
+    --visited-link-color: 228, 153, 73;
+    --link-color: 255, 212, 102;
+    --newpage-color: 255, 102, 102;
+    --ui-button-hover-txt: var(--dark-gray-monochrome);
+
+    --swatch-text-light: 230, 230, 230; /*text color*/
+    --swatch-text-general: var(--swatch-text-light);
+
+    --blue: 75, 106, 110;
+
+    --swatch-topmenu-bg-color: 38, 29, 29;
+    --swatch-topmenu-border-color: var(--swatch-topmenu-bg-color);
+    --background-gradient-color: 19, 12, 12; 
+    --background-gradient-distance: 60rem;
+
+/*header styling*/
+    --logo-image: unset;
+    --header-title: "Amoni-Ram";
+    --header-subtitle: ;
+    --swatch-headerh1-color: var(--bright-accent);
+    --header-height-on-desktop: 25rem;
+    --header-height-on-mobile: 20rem;
+    --header-h1-font-size: calc(var(--base-font-size) * (80 / 15));
+    --topbar-height-on-mobile: 2rem;
+    --swatch-headerh1-color: var(--bright-accent);
+
+/*misc*/
+    --body-width-on-desktop: 60rem;
+    --toggle-roundness: 0;
+    --toggle-border-color: rgb(var(--medium-accent));
+    --toggle-icon-color: rgb(var(--medium-accent));
+    --fnColor: #ffd466; /*betterfootnotes*/
+    --barColour: #daa520!important; /*Ayers info bar*/
+
+/*little blockquote icon*/
+    --gear-mask: url("data:image/svg+xml,%3Csvg style='height: 512px; width: 512px;' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cg class='' style='' transform='translate(0,-2)'%3E%3Cpath d='M234.875 18.78c-26.087 2.367-51.557 8.56-74.875 18.782 15.37 32.763 14.222 66.706-6.72 82.407-20.835 15.617-54.055 7.965-81.124-15.69-16.246 19.452-29.336 41.36-38.875 65.626 33.83 12.333 56.635 37.665 52.94 63.5-3.698 25.835-32.697 43.74-68.626 46.094 2.338 25.796 8.91 50.778 18.937 73.875 17.81-8.182 35.793-11.09 51.095-8.938 13.032 1.87 23.927 7.015 31.156 16.657 15.817 21.097 7.603 54.713-16.78 81.97 19.516 16.35 42.216 29.444 66.594 39.03 12.33-33.828 37.655-56.634 63.5-52.938 25.844 3.697 43.74 32.696 46.094 68.625 26.087-2.365 51.557-8.555 74.875-18.78-15.766-32.997-14.26-67.588 6.843-83.406 9.64-7.23 22.568-9.022 35.594-7.125 15.112 2.16 31.19 10.25 45.563 22.78 16.088-19.345 29.4-41.51 38.875-65.594-33.83-12.332-56.635-37.653-52.938-63.5 3.697-25.846 32.665-43.772 68.594-46.125-2.36-25.944-8.774-50.663-18.906-73.874-32.612 15.117-66.66 13.145-82.282-7.687-15.696-20.944-7.252-53.86 16.688-81-19.52-16.352-42.248-29.447-66.625-39.032-12.332 33.828-37.657 56.66-63.5 52.968-25.846-3.693-43.744-32.696-46.095-68.625zm21.656 95.126c79.626 0 144.376 64.752 144.376 144.375 0 79.626-64.75 144.376-144.375 144.376-79.624 0-144.374-64.75-144.374-144.375 0-79.624 64.75-144.374 144.375-144.374zm0 18.688c-69.524 0-125.686 56.162-125.686 125.687 0 69.526 56.162 125.69 125.687 125.69 69.526 0 125.69-56.164 125.69-125.69 0-69.522-56.164-125.686-125.69-125.686zm.033 15.125c61.094 0 110.625 49.53 110.625 110.624 0 61.095-49.53 110.625-110.625 110.625s-110.625-49.53-110.625-110.626c0-61.095 49.53-110.625 110.625-110.625z' fill='%23fff' fill-opacity='1'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+}
+/* ------------------------------------------------ */
+
+/* --------------- header image --------------- */
+/*Amoni-Ram picture*/
+#extra-div-1 {
+    height: var(--header-height-on-desktop);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background-image: url("https://scp-wiki.wdfiles.com/local--files/rounderhouse-gold-proposal/amoniram.png");
+    background-size: auto 85dvh;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+/*spaces overlay that's there for fun and style*/
+#extra-div-2 {
+    height: var(--header-height-on-desktop);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background-image: url("https://scp-wiki.wdfiles.com/local--files/theme%3Afuladh-theme/spaces.jpg");
+    background-size: 110dvw auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    mix-blend-mode: overlay;
+    opacity: 0.5;
+}
+/* ------------------------------------------------ */
+
+/* --------------- header styling --------------- */
+#header {
+    :is(h1, h2) {
+        position: absolute;
+        margin-top: 3rem;
+        margin-left: calc((var(--header-height-on-desktop) - 2rem) * -1);
+    }
+}
+
+/*text outline code from Centered Header BHL*/ 
+#header h1 a,
+#header h1 a::before,
+#header h2 span,
+#header h2 span::before {
+    padding: 0;
+    z-index: 0;
+    display: block;
+}
+
+#header h1 {
+    z-index: 1;
+}
+
+#header h1 a::before,
+#header h1 a::after {
+    content: var(--header-title);
+}
+
+#header h1 a::before  {
+    color: rgb(var(--swatch-text-tertiary-color));
+    z-index: -1;
+    -webkit-text-stroke: 0.325rem rgb(var(--swatch-background));
+}
+
+#header h1 a::after {
+    color: rgb(var(--swatch-headerh1-color));
+    z-index: 1;
+}
+/* ------------------------------------------------ */
+
+/* --------------- title styling --------------- */
+#page-title,
+.meta-title {
+    font-family: var(--header-font);
+    font-size: 3rem;
+}
+
+/*center title code from Centered Header BHL*/ 
+#page-title::after,
+.meta-title::after,
+#page-title::before,
+.meta-title::before {
+    content: "";
+    flex-grow: 1;
+    height: 0.0625rem;
+    background: rgb(var(--swatch-primary));
+}
+
+#page-title::before,
+.meta-title::before {
+    margin: auto 1.25rem auto auto;
+}
+/* ------------------------------------------------ */
+
+/* --------------- links styling --------------- */
+a:is(:hover, :active, :focus, :focus-within) {
+        transition:
+            color 0.35s var(--ease-in-out);
+        background-color: rgb(var(--link-color));
+        color: rgb(var(--dark-gray-monochrome));
+        text-decoration: unset;
+}
+
+/*toc and license area styling, so they didn't act weird*/
+#toc a:is(:hover,:active,:focus,:focus-within) {
+    background: unset;
+}
+
+#license-area a:is(:hover, :active, :focus, :focus-within) {
+    background: unset;
+    color: rgb(255, 212, 102);
+}
+/* ------------------------------------------------ */
+
+/* ---------------  small edits that are suited to my tastes --------------- */
+/*scrollbar*/
+html,
+body {
+    scrollbar-color: rgb(var(--bright-accent)) rgb(var(--black-monochrome));
+} 
+
+/*page content font only*/
+#page-content {
+    font-family: var(--main-font), var(--body-font);
+}
+
+/*toc modification*/
+.title,
+#toc-action-bar {
+    font-size: 1.0625em;
+}
+#toc-list a {
+    font-size: var(--base-font-size);
+}
+
+/*giving tags a bigger font size*/
+#main-content .page-tags {
+    font-size: var(--base-font-size);
+}
+.page-tags span a {
+    font-size: var(--base-font-size);
+}
+
+/*code block colors*/
+
+.code pre span.hl-code{
+    filter: none;
+}
+
+.code pre span.hl-default {
+    filter: none;
+}
+
+.code pre span.hl-brackets {
+    filter: none;
+}
+
+/*giving p and li a margin*/
+p {
+    margin-bottom: 1.5rem;
+}
+
+li:last-child {
+    margin-bottom: 1.5rem;
+}
+
+/*and taking it away from everything else manually because :not refused to work for me*/
+#breadcrumbs, .pseudocrumbs {
+    margin-bottom: unset;
+}
+
+div.page-rate-widget-box,
+#page-content div.rate-box-with-credit-button {
+    margin: 0 0 0.75rem;
+}
+
+#page-title, .meta-title {
+    margin-bottom: 0.5em;
+}
+
+.creditRate > li {
+    margin-bottom:10px;
+}
+
+/*hr styling, from Aesthetic Theme*/
+hr {
+    border-top: none;
+    position: relative;
+    height: 0.35rem;
+    background: rgba(0, 0, 0, 0);
+    display: flex;
+}
+
+hr::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: none;
+    width: 100%;
+    height: 0.125rem;
+    background: linear-gradient(10deg, rgba(var(--bright-accent), 0.15) 0%, rgba(var(--medium-accent), 1) 50%, rgba(var(--bright-accent), 0.15) 100%);
+    background-position: center center;
+}
+
+/*table styling*/
+#page-content .wiki-content-table tr td {
+    background-color: rgba(var(--black-monochrome), 0.8);
+    border: 1px solid rgb(--bright-accent);
+    font-size: var(--base-font-size);
+}
+/* ------------------------------------------------ */
+
+/* --------------- alternative blockquote styles --------------- */
+.simple {
+    margin: 1.5rem auto;
+    padding: 0.5rem 2rem;
+    border: 0;
+    background-color: rgba(var(--black-monochrome), 0.8);
+    box-shadow: 0 0 0.5rem rgb(var(--black-monochrome));
+}
+
+.simple.blue {
+    background-color: rgba(var(--blue), 0.3);
+}
+
+.simple.left {
+    padding: 1rem;
+    border: 0;
+    border-left: 7px solid rgb(var(--medium-accent));
+}
+
+.simple.left.blue {
+    background-color: rgba(var(--blue), 0.3);
+}
+
+.simple.top {
+    padding: 1rem;
+    border: 0;
+    border-top: 7px solid rgb(var(--medium-accent));
+}
+
+.simple.top.blue {
+    background-color: rgba(var(--blue), 0.3);
+}
+
+.round {
+    background-color: rgba(var(--black-monochrome), 0.8);
+    margin: 1.5rem auto;
+    padding: 1.325rem;
+    border: none;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 0.5rem rgb(var(--black-monochrome));
+}
+
+.round.blue {
+    background-color: rgba(var(--blue), 0.3);
+}
+/* ------------------------------------------------ */
+
+/* --------------- fancyhr and fancyborder from Wanderer's Library --------------- */
+.fancyborder {
+    box-sizing: border-box;
+    padding: 2vw;
+    border: 2vw solid rgba(0, 0, 0, 0.5);
+    border-image: url("https://scp-wiki.wdfiles.com/local--files/theme%3Afuladh-theme/cyberfancy_border.png") 600 round;
+    border-image-width: 6;
+    margin: 1.5rem auto;
+}
+
+#main-content .fancyhr hr {
+    border-top: 2vw solid transparent;
+    border-image-source: url("https://scp-wiki.wdfiles.com/local--files/theme%3Afuladh-theme/cyberfancy_hr.png");
+    border-image-repeat: round round;
+    border-image-slice: 80 500 80 500 fill;
+    border-image-width: 10em 80em 10em 80em;
+    filter: opacity(80%);
+    margin: 1.5rem auto;
+}
+/* ------------------------------------------------ */
+
+/* --------------- betterfootnotes styling --------------- */
+.fnnum:hover::after { color: rgb(43, 34, 34); }
+
+.fncon {
+    background: rgb(43, 34, 34);
+    border: .125rem solid rgb(211, 166, 71);
+}
+
+.fncon::before {
+    color: rgb(43, 34, 34);
+}
+/* ------------------------------------------------ */
+
+/* --------------- Vertical tabs from HANSARP Theme --------------- */
+.yui-navset.yui-navset-top {
+    display: grid;
+    grid-template: "tabs content";
+    grid-template-columns: 12rem minmax(0,1fr);
+    margin: 1.5rem auto;
+}
+
+.yui-navset.yui-navset-top>.yui-nav {
+    grid-area: tabs;
+    display: flex;
+    align-items: stretch;
+    align-self: flex-start;
+    flex-direction: column;
+    position: static;
+}
+
+.yui-navset.yui-navset-top>.yui-nav>li {
+    flex-grow: 0;
+}
+
+.yui-navset .yui-nav .selected a em,
+.yui-navset .yui-nav a em {
+    white-space: break-spaces;
+}
+
+.yui-navset.yui-navset-top>.yui-content {
+    grid-area: content;
+    border: none;
+    border-left: solid 0.35rem rgb(var(--swatch-primary));
+    background: rgba(var(--black-monochrome), 0.5);
+    background: linear-gradient(180deg, rgba(var(--black-monochrome) ,1) 0%, rgba(var(--black-monochrome) ,0.5) 50%, rgba(var(--black-monochrome) ,0.1) 100%);
+}
+
+#main-content {
+    --tabs-selected-txt: var(--dark-gray-monochrome);
+    --tabs-hover-txt: var(--dark-gray-monochrome);
+}
+/* ------------------------------------------------ */
+
+/* --------------- FANCY COLLAPSIBLES from Flopstyle: DARK --------------- */
+/* Base */
+ .collapsible-block-folded,
+ .collapsible-block-unfolded-link{
+     margin: 2rem auto 1em auto;
+     padding: .53rem 1rem;
+
+     background-color: rgb(var(--black-monochrome));
+     transition: all .2s cubic-bezier(.77, 0, .18, 1);
+
+     text-align: center;
+}
+
+ .collapsible-block-link{
+     font: 1.25rem/1.5;
+     letter-spacing: 1px;
+
+     white-space: normal;
+}
+ @media (max-width: 767px){
+     .collapsible-block-link{
+          font-size: 100%;
+    }
+}
+
+/* Pseudo-elements */
+
+ .collapsible-block-link::before{
+     content: "▷ ";
+}
+
+ .collapsible-block-unfolded .collapsible-block-link::before,
+ .collapsible-block-unfolded > *:nth-child(3) .collapsible-block-link::before{
+     content: "▽ "
+}
+
+ .collapsible-block-folded:hover,
+ .collapsible-block-unfolded-link:hover{
+     background-color: rgb(var(--dark-accent));
+     transition: all .2s cubic-bezier(.77, 0, .18, 1);
+}
+ .collapsible-block-link:hover{
+     padding: .067rem !important;
+
+     color: var(--black-monochrome);
+     background-color: unset;
+     border-bottom: thin solid var(--black-monochrome);
+     transition: all .2s cubic-bezier(.77, 0, .18, 1);
+}
+
+/* Licensebox Collapsible */
+ .licensebox .collapsible-block-content {
+     text-align: center;
+}
+
+ .licensebox blockquote,
+ .licensebox div.blockquote {
+     text-align: left;
+}
+/* ------------------------------------------------ */
+
+/* --------------- blockquote style from Generic Space Theme --------------- */
+
+blockquote, div.blockquote {
+    background-color: rgba(var(--black-monochrome), 0.8)!important;
+    border: none;
+    margin: 1rem!important;
+    padding: 0.25rem 1.325rem 0.15rem 1.325rem;
+}
+
+blockquote, div.blockquote {
+    position: relative;
+    min-height: 2rem;
+}
+:where(blockquote, div.blockquote)::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    box-sizing: border-box;
+    width: 100%; 
+    height: 100%;
+    border: solid 0.1rem rgb(var(--medium-accent));
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 1.425rem, 1.125rem 0);
+    pointer-events: none;
+}
+:where(blockquote, div.blockquote)::after {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    box-sizing: border-box;
+    width: 2rem; 
+    height: 2rem;
+    background-color: rgb(var(--medium-accent));
+    -webkit-mask-image: var(--gear-mask);
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-image: var(--gear-mask);
+    mask-size: contain;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    transform: translate(-50%, -42.5%);
+}
+
+div.blockquote.blue {
+    background-color: rgba(var(--blue), 0.3)!important;
+}
+/* ------------------------------------------------ */
+
+/* --------------- big screen sizing --------------- */
+@media only screen and (min-width: 1580px) {
+
+:root{
+    --header-height-on-desktop: 35rem;
+}
+
+#extra-div-1 {
+    background-size: 110dvw auto;
+    background-position: center;
+}
+
+#extra-div-2 {
+    background-size: 110dvw auto;
+}
+}
+/* ------------------------------------------------ */
+
+/* --------------- between desktop and mobile --------------- */
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+
+:root{
+    --header-height-on-mobile: 25rem;
+    --header-h1-font-size: calc(var(--base-font-size) * (80 / 15));
+}
+
+#header {
+    :is(h1, h2) {
+        margin-top: 1rem;
+    }
+}
+
+#extra-div-1 {
+    height: var(--header-height-on-mobile);
+    background-size: 90rem auto;
+    background-repeat: no-repeat;
+    background-position: center top 55%;
+}
+
+}
+/* ------------------------------------------------ */
+
+/* --------------- mobile sizing (incl. landscape mode) --------------- */
+@media only screen and (max-width: 767.98px) {
+:root{
+    --header-height-on-desktop: 20rem;
+    --header-h1-font-size: calc(var(--base-font-size) * (58 / 15));
+}
+
+#header {
+    :is(h1, h2) {
+        margin-top: 1.5rem;
+    }
+}
+
+#extra-div-1 {
+    height: var(--header-height-on-mobile);
+    background-size: 60rem auto;
+    background-position: center;
+}
+
+#extra-div-2 {
+    height: var(--header-height-on-mobile);
+    background-size: auto 80dvh;
+    background-position: center;
+}
+
+/*h1 to h6 size adjust*/
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2.25em;
+}
+
+h3 {
+    font-size: 2.1875em;
+}
+
+h4 {
+    font-size: 2em;
+}
+
+h5 {
+    font-size: 1.75em;
+}
+
+h6 {
+    font-size: 1.5em;
+}
+
+/*returning tabs to horizontal*/
+.yui-navset.yui-navset-top {
+    display: grid;
+    grid-template: "tabs" "content";
+    grid-template-rows: minmax(0,1fr);
+    margin: 1.5rem auto;
+}
+
+.yui-navset.yui-navset-top>.yui-nav {
+    align-items: stretch;
+    align-self: flex-start;
+    flex-direction: row;
+    justify-content: center;
+    position: static;
+}
+
+.yui-navset.yui-navset-top>.yui-nav>li {
+    flex-grow: 1;
+}
+
+.yui-navset .yui-nav .selected a em,
+.yui-navset .yui-nav a em {
+    white-space: break-spaces;
+}
+
+.yui-navset.yui-navset-top>.yui-content {
+    border: none;
+}
+}
+
+@media only screen and (max-width: 767.98px) and (orientation: landscape) {
+#extra-div-2 {
+    height: var(--header-height-on-mobile);
+    background-size: 110dvw auto;
+    background-position: center;
+}
+}
+/* ------------------------------------------------ */
+[[/code]]
+
+[[/collapsible]]
+
+[[/iftags]]
+
+[[div style="display: none;"]]
+[[include :scp-jp:theme:extra-black-highlighter-theme]]
+[[include :scp-jp:component:toggle-sidebar-bhl]]
+[[include :scp-jp:component:betterfootnotes]]
+[[/div]]
+
+[[module css]]
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Afuladh-theme-jp/1")
+[[/module]]
+[[include :scp-jp:component:interwiki-style
+| priority=3
+| theme= https://sigma10-jp-test.wdfiles.com/local--code/theme%3Afuladh-theme-jp/1
+]]
