@@ -1,0 +1,788 @@
+[[module CSS]]
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Ascp-human-resources-sigma-jp/1');
+[[/module]]
+
+[[include component:interwiki-style
+| priority=1
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Ascp-human-resources-sigma-jp/1
+]]
+
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**初訳時参照リビジョン:** 13
+**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:scp-human-resources-sigma ソース]
+[[include :scp-jp:credit:end-preview]]
+
++ 使用方法
+
+これは[[[theme:scp-offices-theme|SCPオフィステーマ]]]の拡張版である[[[theme:scp-human-resources|人事部門テーマ]]]をもとにしたSigma-9テーマです。
+
+このテーマをページへ読み込むには、ページ内の任意の場所に以下を入れてください。
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:scp-human-resources-sigma]]@@
+[[/div]]
+
+標準的なCSSの@import方式ではこのテーマを読み込まないでください。そうすること自体は止められませんが、[[include]]でテーマを読み込むと、あなたのページがバックリンク一覧に追加されます。テーマ更新時に影響を受けるページを確認しやすくなり、それによって起きたエラーにも早く気づいて修正できます。
+
+各ページのバックリンクは、ページ下部の「+ オプション」をクリックし、続けて「バックリンク」を選ぶと確認できます。
+
+-----
+
++ 使用例
+
+[[include component:image-block name=https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-44-ziy1/hrlogo.png|caption=SCP人事部門テーマ|width=200px]]
+
+水平線は5個のハイフン「-----」で作成でき、引用ブロックなどの内部に置かれていなければページ全体に伸びます。この文書で節を区切っている線が水平線です。
+
+行頭に1個から6個のプラス記号「+」を置くと、見出しを作成できます。
+
+[[collapsible show="+ 見出し" hide="- 見出し"]]
++ 第一見出し
+
+++ 第二見出し
+
++++ 第三見出し
+
+++++ 第四見出し
+
++++++ 第五見出し
+
+++++++ 第六見出し
+[[/collapsible]]
+
+@@ @@
+
+[[tabview]]
+[[tab タブその1]]
+これはタブビューです。
+[[/tab]]
+[[tab タブその2]]
+ほら、ここにもテキストがあります。
+
+なかなか趣がありますね。
+[[/tab]]
+[[tab 長いタブ]]
+これは長いタブです。たくさんのテキストが含まれています。
+
+これは長いタブです。たくさんのテキストが含まれています。
+
+これは長いタブです。たくさんのテキストが含まれています。
+
+これは長いタブです。たくさんのテキストが含まれています。
+
+これは長いタブです。たくさんのテキストが含まれています。
+
+これは長いタブです。たくさんのテキストが含まれています。
+
+これは長いタブです。たくさんのテキストが含まれています。
+
+これは長いタブです。たくさんのテキストが含まれています。
+
+これは長いタブです。たくさんのテキストが含まれています。
+
+これは長いタブです。たくさんのテキストが含まれています。
+
+これは長いタブです。たくさんのテキストが含まれています。
+
+これは長いタブです。たくさんのテキストが含まれています。
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[/tabview]]
+
+> これは引用ブロックです。各行の先頭に半角の「> 」を置くと作成できます。
+>
+> さらにテキスト
+> -----
+> これは水平線です
+>
+>> 入れ子の引用ブロック
+
+||~ これは ||~ 表です ||
+||作り方は || もう分かっている ||
+||||はずです ||
+
+[[=]]
+[[span style="font-family: 'Zilla Slab', serif;"]]ヘッダーとタイトルのフォントはZilla Slabです。[[/span]]
+[[span style="font-family: 'IBM Plex Mono', monospace;"]]本文と等幅フォントにはIBM Plex Monoを使っています。[[/span]]
+[[/=]]
+
+-----
+
++ ソースコード
+
+[[code type="css"]]
+/*
+    人事部門Sigma-9テーマ
+    [2023年Wikidotテーマ]
+    macro_au_micro作
+    CityToastによるBHL版人事部門テーマを調整
+    AelannaとDr Devanが作成したSCP Sigma 9テーマをもとに作成
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap');
+
+:root {
+  --gradient-header: linear-gradient(to bottom,rgba(255, 242, 219,1) 0,rgba(255, 242, 219,0.987) calc(60rem*0.008),rgba(255, 242, 219,0.951) calc(60rem*0.029),rgba(255, 242, 219,0.896) calc(60rem*0.064),rgba(255, 242, 219,0.825) calc(60rem*0.11),rgba(255, 242, 219,0.741) calc(60rem*0.166),rgba(255, 242, 219,0.648) calc(60rem*0.231),rgba(255, 242, 219,0.550) calc(60rem*0.304),rgba(255, 242, 219,0.450) calc(60rem*0.383),rgba(255, 242, 219,0.352) calc(60rem*0.467),rgba(255, 242, 219,0.259) calc(60rem*0.554),rgba(255, 242, 219,0.175) calc(60rem*0.644),rgba(255, 242, 219,0.104) calc(60rem*0.735),rgba(255, 242, 219,0.049) calc(60rem*0.825),rgba(255, 242, 219,0.013) calc(60rem*0.914),rgba(255, 242, 219,0) 60rem);
+
+    scrollbar-color: rgb(112,149,201) rgb(157,186,226);
+}
+
+::selection {
+    background: rgba(128,184,116,.25);
+    text-shadow: none;
+}
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+#side-bar::-webkit-scrollbar {
+    width: .4rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(112,149,201);
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(157,186,226);
+}
+
+/* ヘッダー */
+div#container-wrap {
+    background-image:
+        repeating-linear-gradient(45deg,hsla(0, 0%, 100%, 0),
+        hsla(0, 0%, 100%, 0) 0.25vh,
+        rgba(88, 88, 88, 0.1) 0.35vh,
+        rgba(88, 88, 88, 0.2) 0.5vh),
+
+        repeating-linear-gradient(180deg,
+        hsla(0, 0%, 100%, 0),
+        hsla(0, 0%, 100%, 0) 0.25vh,
+        rgba(88, 88, 88, 0.1) 0.35vh,
+        rgba(88, 88, 88, 0.2) 0.5vh),
+
+        linear-gradient(to bottom,
+        rgba(7,7,40, 1) 8.75rem,
+        rgba(72,114,163, 1) 7.625rem,
+        rgba(72,114,163, 1) calc(91% - 0.125rem),
+        rgba(63,97,145, 1) calc(99% - 0.125rem));
+
+    background-size: 100% 8.7rem, 100% 8.7rem, 100% 10.08rem;
+    background-repeat: no-repeat;
+}
+
+#header {
+    background: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-44-ziy1/hrlogo.png) 13px 44px no-repeat;
+    background-size: 94px 88px;
+}
+
+#header h1 a {
+    font-size: 150%;
+    color: rgb(207, 223, 245);
+    font-family: 'Zilla Slab', 'Noto Serif JP', serif;
+    font-weight: 900;
+    text-shadow: .063rem .063rem .063rem #0c0c0c;
+    letter-spacing: -.02em;
+    line-height: 0;
+}
+
+#header h2 span {
+    color: transparent;
+    text-shadow: none;
+    font-size: 0;
+}
+#header h2 span::before {
+    font-family: 'Zilla Slab', 'Noto Serif JP', serif;
+    content: "人事部門";
+    color: rgb(148,204,136);
+    text-shadow: .063rem .063rem .063rem #0c0c0c;
+    font-weight: 400;
+    line-height: 0;
+    font-size: .845rem;
+}
+
+div#extra-div-1 {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 60rem;
+    top: 0;
+    left: 0;
+    background: var(--gradient-header);
+    background-size: 31.250rem;
+    background-repeat: repeat;
+    z-index: -2;
+}
+
+@media (max-width: 767px) {
+    #header {
+        background: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-44-ziy1/hrlogo.png) 12px 72px no-repeat;
+        background-size: 60px 56px;
+    }
+    #header h1 a {
+        font-size: 80%;
+    }
+    #header h2 span::before {
+        font-size: .6rem;
+    }
+}
+
+/* ログイン情報 */
+#login-status {
+    color: rgb(207,223,245);
+    font-family: 'Zilla Slab', 'Noto Serif JP', serif;
+}
+#login-status a {
+    color: rgb(207,223,245);
+}
+#login-status ul a {
+    background-color: rgb(194,214,241);
+    color: rgb(61,139,44);
+}
+
+#login-status ul a:hover {
+    color: rgb(7,7,40);
+   font-weight: bold;
+}
+
+/* 検索バー */
+#search-top-box-form input[type=submit] {
+    background: rgb(28,104,12);
+    color: rgb(128,184,116);
+    border-color: rgb(128,184,116);
+    font-family: 'Zilla Slab', 'Noto Serif JP', serif;
+    transition: background 0.25s;
+}
+#search-top-box-form input[type=submit]:hover, #search-top-box-form input[type=submit]:focus {
+    background:rgb(128,184,116);
+    border-color: rgb(28,104,12);
+    color: rgb(28,104,12);
+}
+
+/* タイトル */
+#page-title, .meta-title {
+    font-size: 210%;
+    font-weight: 600;
+    border-color: rgb(112,149,201);
+}
+#breadcrumbs {
+    font-family: 'Zilla Slab', 'Noto Serif JP', serif;
+}
+h1, h2, h3, h4, h5, h6, #page-title, .meta-title {
+    font-family: 'Zilla Slab', 'Noto Serif JP', serif;
+    color: rgb(7,7,40);
+}
+h1 {
+    margin: .7em 0 .6em;
+    padding: 0 0 .25em;
+    font-weight: 700;
+}
+h2, h3, h4, h5, h6 {
+    margin: .5em 0 .4em;
+    padding: 0;
+    font-weight: 900;
+    letter-spacing: .063rem;
+}
+
+@media (max-width: 767px) {
+    #page-title, .meta-title {
+        font-size: 180%
+    }
+}
+
+/* トップバー設定 */
+#top-bar ul li ul {
+    border-color: rgb(37,56,98);
+}
+#top-bar ul li a {
+    color: rgb(207,223,245);
+    font-family: 'Zilla Slab', 'Noto Serif JP', serif;
+}
+#top-bar ul li ul li a {
+    font-family: 'Zilla Slab', 'Noto Serif JP', serif;
+}
+#top-bar ul li.sfhover ul li a,
+#top-bar ul li:hover ul li a {
+    border-color: rgb(37,56,98);
+    color: rgb(207,223,245);
+}
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a {
+    background: rgb(75,115,171);
+    color: rgb(207, 223, 245);
+}
+#top-bar ul li.sfhover a:hover,
+#top-bar ul li:hover a:hover {
+    background: rgb(128,184,116);
+    border-color: rgb(63,97,145);
+    color: rgb(29,61,123);
+}
+#top-bar ul li ul.sfhover a:hover,
+#top-bar ul li ul:hover a:hover {
+    background: rgb(128,184,116);
+    color: rgb(29,61,123);
+}
+
+/* サイドバー設定 */
+#side-bar .side-block,#interwiki .side-block {
+    border-color: rgb(61,139,44);
+    background-color: rgb(194,214,241);
+    box-shadow: none;
+    font-family: 'Zilla Slab', 'Noto Serif JP', serif;
+    color: rgb(112,149,201);
+}
+
+#side-bar .side-block.media {
+    background: rgb(157,186,226);
+}
+
+#side-bar .side-block.resources {
+    background: rgb(184,207,238);
+}
+
+#side-bar .heading,#interwiki .heading {
+    color: rgb(61,139,44);
+    border-bottom-color: rgb(61,139,44);
+}
+
+/* サイドバー画像 */
+.side-block .menu-item > .image {
+    filter: hue-rotate(-220deg);
+}
+
+/* モバイル版サイドバー */
+@media (max-width: 767px) {
+#side-bar {
+    background-color: rgb(207,223,245);
+}
+#top-bar .open-menu a {
+    border: 0.2em solid rgb(63,97,145);
+    background-color: rgb(207,223,245);
+    color: rgb(63,97,145);
+    }
+}
+
+/* 本文 */
+body {
+    background-color: rgb(207,223,245);
+    font-family: 'IBM Plex Mono', 'Noto Sans JP', monospace;
+    color: rgb(7,7,40);
+}
+body tt {
+    font-family: 'IBM Plex Mono', 'Noto Sans JP', monospace;
+    font-size: 100%;
+}
+
+/* フッター */
+#footer {
+    background: rgb(28,104,12);
+    font-family: 'Zilla Slab', 'Noto Serif JP', serif;
+}
+
+#license-area {
+    font-family: 'Zilla Slab', 'Noto Serif JP', serif;
+}
+
+/* その他の構造要素 */
+
+/* 区切り線 */
+#page-content hr {
+background: rgb(112,149,201);
+}
+
+/* リンク */
+a {
+    color: rgb(61,139,44);
+    font-weight: bold;
+}
+a:visited {
+    color: rgb(28,104,12);
+}
+#side-bar a,
+#side-bar a:visited,
+#side-bar a.newpage,
+#interwiki a {
+    color: rgb(61,139,44);
+}
+
+/* ポップアップウィンドウ */
+.owindow {
+    background-color: rgb(157,186,226);
+    border-color: rgb(128,184,116);
+}
+
+.owindow .modal-header {
+    background-color: rgb(61,139,44);
+    font-family: 'Zilla Slab', 'Noto Serif JP', serif;
+}
+.owindow .modal-body img {
+    background-color: transparent !important;
+}
+.owindow .title {
+    background-color: rgb(61,139,44);
+    color: rgb(207,223,245);
+}
+.owindow .button-bar a {
+    background-color: rgb(61,139,44);
+    border-color: rgb(128,184,116);
+    color: rgb(207,223,245);
+    font-family: 'Zilla Slab', 'Noto Serif JP', serif;
+}
+.owindow .button-bar a:hover {
+    background-color: rgb(207,223,245);
+    color: rgb(61,139,44);
+}
+.owindow a.btn.btn-primary,.owindow a.btn.btn-danger.btn-small.btn-sm {
+    font-family: 'Zilla Slab', 'Noto Serif JP', serif;
+}
+
+/* コード */
+.code,div.code {
+    background-color: rgb(157,186,226);
+    border-color: rgb(120,141,179);
+    font-family: 'Zilla Slab', 'Noto Serif JP', serif;
+}
+
+/* 評価モジュール */
+div.page-rate-widget-box {
+    font-family: 'Zilla Slab', 'Noto Serif JP', serif;
+}
+div.page-rate-widget-box .rate-points {
+    background-color: rgb(28,104,12) !important;
+    border-color: rgb(128,184,116);
+    color: rgb(128,184,116);
+}
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+    background-color: rgb(28,104,12);
+    border-top-color: rgb(128,184,116);
+    border-bottom-color: rgb(128,184,116);
+}
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a {
+    color: rgb(128,184,116);
+}
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover {
+    background: rgb(28,104,12);
+    text-decoration: none;
+    color: rgb(207,223,245);
+}
+.page-rate-widget-box .cancel {
+    background-color: rgb(28,104,12);
+    border-color: rgb(128,184,116);
+}
+.page-rate-widget-box .cancel a {
+    color: rgb(128,184,116);
+}
+.page-rate-widget-box .cancel a:hover {
+    background-color: transparent;
+    text-decoration: none;
+    color: rgb(207,223,245);
+}
+
+/* ページ要素 */
+
+/* 引用ブロック */
+blockquote,
+div.blockquote {
+    background-color: rgb(194,214,241);
+    border: solid 1px rgb(122,158,206);
+}
+blockquote blockquote,
+div.blockquote div.blockquote {
+    background-color: rgb(184,207,238);
+    border: solid 1px rgb(121,157,206);
+}
+
+/* 表 */
+table.wiki-content-table td {
+border-color: rgb(112,149,201);
+}
+
+table.wiki-content-table th {
+    color: rgb(207,223,245);
+    background-color: rgb(28,104,12);
+    border-color: rgb(112,149,201);
+}
+
+/* タブビュー */
+.yui-navset .yui-content {
+    background-color: rgb(194, 214, 241);
+    border-top: transparent;
+    font-weight: normal;
+}
+.yui-navset .yui-nav a,
+.yui-navset .yui-navset-top .yui-nav a {
+    background-image: none;
+    background-color: rgb(157,186,226);
+    border-color: rgb(120,141,179);
+    font-weight: normal;
+    font-family: 'Zilla Slab', 'Noto Serif JP', serif;
+}
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:focus {
+    background: rgb(128,184,116);
+    color: rgb(207,223,245);
+}
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a:focus,
+.yui-navset .yui-nav .selected a:hover {
+    background: rgb(61,139,44);
+    color: rgb(207,223,245);
+}
+.yui-navset .yui-nav a em, .yui-navset .yui-navset-top .yui-nav a em {
+    border-color: rgb(120,141,179);
+}
+.yui-navset .yui-nav .selected a, .yui-navset .yui-nav .selected a em {
+    border-color: rgb(28,104,12);
+}
+.yui-navset li {
+    line-height: normal;
+}
+.yui-navset .yui-nav,
+.yui-navset .yui-navset-top .yui-nav {
+    border-color: rgb(61,139,44);
+}
+
+/* 画像ブロック */
+.scp-image-block .scp-image-caption {
+    background-color: rgb(157,186,226);
+    border-color: rgb(112,149,201);
+}
+
+.scp-image-block {
+    border-color: rgb(112,149,201);
+}
+
+/* ホバーチップ */
+.hovertip {
+    background-color: rgb(157,186,226) !important;
+    border-color: rgb(28,104,12) !important;
+    font-family: 'Zilla Slab', 'Noto Serif JP', serif;
+}
+
+/* タグとオプション */
+#page-info {
+    font-family: 'Zilla Slab', 'Noto Serif JP', serif;
+}
+.page-tags span {
+    border-color: rgb(112,149,201);
+}
+.page-tags a, .page-options-bottom a, .page-watch-options a {
+    font-family: 'Zilla Slab', 'Noto Serif JP', serif;
+    font-weight: normal;
+}
+a.action-area-close.btn.btn-danger {
+    font-family: 'Zilla Slab', 'Noto Serif JP', serif;
+    font-weight: normal;
+}
+
+/* アニメーション */
+
+#header h1 *,
+#page-title *,
+.meta-title * {
+    will-change: opacity;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#header h1 a:hover,
+#page-title:hover,
+.meta-title:hover {
+    -webkit-animation: flicker 20s linear infinite;
+    -moz-animation: flicker 20s linear infinite;
+    animation: flicker 20s linear infinite;
+}
+
+@-webkit-keyframes flicker {
+    0% {
+    opacity: 1;
+    }
+
+    5% {
+    opacity: .9;
+    }
+
+    6% {
+    opacity: .8;
+    }
+
+    11% {
+    opacity: .4;
+    }
+
+    11.25% {
+    opacity: .6;
+    }
+
+    11.5% {
+    opacity: .4;
+    }
+
+    18% {
+    opacity: 1;
+    }
+
+    18.5% {
+    opacity: .9;
+    }
+
+    22% {
+    opacity: 1;
+    }
+
+    38.5% {
+    opacity: 1;
+    }
+
+    39% {
+    opacity: .8;
+    }
+
+    42% {
+    opacity: 1;
+    }
+
+    60% {
+    opacity: 1;
+    }
+
+    60.5% {
+    opacity: 0;
+    }
+
+    62% {
+    opacity: 0;
+    }
+
+    63% {
+    opacity: .2;
+    }
+
+    63.25% {
+    opacity: 0;
+    }
+
+    65% {
+    opacity: 1;
+    }
+
+    73% {
+    opacity: 1;
+    }
+
+    75% {
+    opacity: .8;
+    }
+
+    79% {
+    opacity: 1;
+    }
+
+    100% {
+    opacity: 1;
+    }
+}
+@keyframes flicker {
+    0% {
+    opacity: 1;
+    }
+
+    5% {
+    opacity: .9;
+    }
+
+    6% {
+    opacity: .8;
+    }
+
+    11% {
+    opacity: .4;
+    }
+
+    11.25% {
+    opacity: .6;
+    }
+
+    11.5% {
+    opacity: .4;
+    }
+
+    18% {
+    opacity: 1;
+    }
+
+    18.5% {
+    opacity: .9;
+    }
+
+    22% {
+    opacity: 1;
+    }
+
+    38.5% {
+    opacity: 1;
+    }
+
+    39% {
+    opacity: .8;
+    }
+
+    42% {
+    opacity: 1;
+    }
+
+    60% {
+    opacity: 1;
+    }
+
+    60.5% {
+    opacity: 0;
+    }
+
+    62% {
+    opacity: 0;
+    }
+
+    63% {
+    opacity: .2;
+    }
+
+    63.25% {
+    opacity: 0;
+    }
+
+    65% {
+    opacity: 1;
+    }
+
+    73% {
+    opacity: 1;
+    }
+
+    75% {
+    opacity: .8;
+    }
+
+    79% {
+    opacity: 1;
+    }
+
+    100% {
+    opacity: 1;
+    }
+}
+[[/code]]
+[[/iftags]]
