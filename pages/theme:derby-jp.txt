@@ -1,0 +1,963 @@
+[[iftags +テーマ]]
+
+[[include credit:start-preview]]
+**タイトル:** Derby Theme
+**原題:** Derby Theme
+**著作権者:** [[*user Fish^12]]
+**作成年:** 2026
+**初訳時参照リビジョン:** 17
+**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:derby ソース]
+**追加フォント:** Noto Sans JP, Zen Kaku Gothic New (SIL OFL 1.1, Google Fonts)
+[[include credit:end-preview]]
+
++ YEAR OF THE HORSE GIRL
+
+これは[[*user Fish^12]]と[[*user SailorEnoch]]によるSPORTSCON出展作品のテーマです。ご期待ください。
+
+このテーマは[https://scp-wiki.wikidot.com/component:sigma-plus Sigma Plus（英語版）]テーマであり、[[[component:toggle-sidebar|Toggle Sidebar]]]コンポーネントを使用しています。あるウマ娘のユーザーインターフェース、プロモーション素材、および関連メディアにインスパイアされたテーマです。
+
+このテーマをページで使用するには、次のコードを記述してください:
+
+[[=]]
+> [[include theme:derby-jp]]
+[[/=]]
+
+次の行は{{hr}}です。@@----@@と書くと引かれます。
+
+----
+
+@@ @@
+
+[[include component:image-block name=https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aderby-jp/sigma-header-logo.svg|caption=画像ブロックの例。]]
+
+||~  名前 ||~ 出走数 ||~ 獲得賞金 ||
+||~ War Relic ||= 0 ||= $89,495 ||
+||~ Man O' War ||= 0 ||= $249,465 ||
+||~ Sergeant Reckless ||= 1 ||= $53,326 ||
+
+[[tabview]]
+[[tab クリックして]]
+正しい場所にいますよ。
+[[/tab]]
+[[tab クリックしないで]]
+バカ。
+[[/tab]]
+[[/tabview]]
+
+[[=]]
+[[span style="font-family:var(--oswa);font-size:150%"]]見出しと小見出しのフォントはOswaldです。[[/span]]
+[[span style="font-family:var(--open);font-size:150%"]]本文のフォントはOpen Sansです。[[/span]]
+[[/=]]
+
+[[div style="margin:250px"]]
+[[/div]]
+
+[[collapsible show="▼ テーマのソース ▼" hide="▽ テーマのソース ▽"]]
+[[code type="CSS"]]
+/*
+    Derby Theme
+    [2026 Wikidot Theme]
+    by Fish^12
+*/
+
+@import url(https://fonts.googleapis.com/css2?family=Oswald:wght@400&family=Zen+Kaku+Gothic+New:wght@700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&family=Noto+Sans+JP:wght@400&display=swap);
+
+:root {
+    --green: #adf24f;
+    --black: #333333;
+    --brown: #7f3f0f;
+    --pink: #fa518e;
+    --white: #f5f8ff;
+    --grey: #efecf7;
+    --darkgrey: #635d7f;
+    --trans: transparent;
+
+    --oswa: "Oswald", "Zen Kaku Gothic New";
+    --open: "Open Sans", "Noto Sans JP";
+
+    --timer: 200ms;
+
+    --header-title: "Horse Girls";
+    --header-subtitle: "DARLING DERBY";
+    --sp_header-logo: none;
+    --sp_header-logo-adaptive-size: 0;
+    --sp_header-title-size: 0;
+    --sp_header-subtitle-size: 0;
+
+    --sp_header-height: 20rem;
+    --sp_top-bar-height: 2rem;
+
+    --sp_top-bar-gradient-top-color: var(--trans);
+    --sp_top-bar-gradient-bottom-color: var(--trans);
+
+    --sp_top-bar-link-color: var(--black);
+    --sp_top-bar-link-hover-color: var(--white);
+    --sp_top-bar-link-hover-background: var(--pink);
+
+    --sp_side-bar-width: 18rem;
+
+    --sp_dropdown-link-color: var(--black);
+    --sp_dropdown-link-hover-color: var(--white);
+    --sp_dropdown-link-background: var(--green);
+    --sp_dropdown-link-hover-background: var(--pink);
+    --sp_dropdown-link-border: none;
+
+    --sp_rate-module-text-color: var(--black);
+    --sp_rate-module-background: var(--green);
+    --sp_rate-module-sub-color: var(--black);
+    --sp_rate-module-active-color: var(--pink);
+    --sp_rate-module-button-color: var(--black);
+    --sp_rate-module-button-background: var(--green);
+    --sp_rate-module-button-hover-color: var(--white);
+    --sp_rate-module-button-hover-background: var(--pink);
+
+    --sp_tab-text-color: var(--brown);
+    --sp_tab-background: var(--white);
+    --sp_tab-border-color: var(--green);
+    --sp_tab-hover-text-color: var(--white);
+    --sp_tab-hover-background: var(--brown);
+    --sp_tab-hover-border-color: var(--brown);
+    --sp_tab-selected-text-color: var(--brown);
+    --sp_tab-selected-background: var(--green);
+    --sp_tab-selected-border-color: var(--green);
+
+    --sp_hovertip-background: var(--grey);
+    --sp_hovertip-border: var(--trans);
+}
+
+/* From the top! */
+
+::selection {
+    background-color: rgba(255, 192, 203, 0.8);
+}
+#container {
+    overflow-x: hidden;
+    background-image:
+    	url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aderby-jp/umaRunner.png"),
+    	linear-gradient(to bottom, var(--trans) 18rem, rgba(245, 248, 255, 1) 24rem 100%),
+    	url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aderby-jp/umaBackground.png");
+    background-repeat:
+    	no-repeat,
+    	repeat-x,
+    	repeat-x;
+    background-size:
+    	200px 200px,
+    	auto 25rem,
+    	auto 25rem;
+    background-position:
+    	100% 6rem,
+    	top,
+    	top;
+}
+#login-status {
+    margin-right: 0.5em;
+    margin-top: 0.5em;
+    padding: 0;
+    color: var(--black);
+    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.5));
+    font-weight: bold;
+    min-width: fit-content;
+    background-color: var(--green);
+    white-space: nowrap;
+    position: relative;
+    padding-left: 0;
+    border-radius: 0 3px 3px 0;
+}
+#login-status .printuser::before {
+    content: "Trainer: ";
+}
+#login-status::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 99%;
+    height: calc(100% + 0.5px);
+    width: 3rem;
+    clip-path: polygon(0% 100%, 20% 0, 50% 0, 30% 100%, 100% 100%, 100% 0, 80% 0, 60% 100%);
+    background-color: var(--green);
+}
+#login-status .printuser {
+    display: inline-block;
+    position: relative;
+    padding: 0 5px;
+    transition: var(--timer);
+}
+#login-status .printuser a {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+#login-status .printuser a:hover {
+    background-color: var(--trans);
+}
+#login-status .printuser:hover {
+    color: var(--white);
+    background-color: var(--pink);
+}
+#login-status .printuser a img {
+    display: none;
+}
+#login-status a {
+    color: var(--black);
+    transition: var(--timer);
+}
+#login-status a:hover {
+    color: var(--white);
+    background-color: var(--pink);
+    text-decoration: none;
+}
+a.login-status-sign-in.btn.btn-primary {
+    padding-right: 5px;
+}
+a#my-account {
+    padding: 0 5px;
+}
+#account-topbutton {
+    font-size: 100%;
+    padding: 0 5px;
+    border-color: var(--trans);
+    border-radius: 0 3px 3px 0;
+}
+
+/* Pop-up page. */
+
+.owindow {
+    background-color: var(--white);
+    border: solid 2px var(--grey);
+    border-radius: 10px 10px 0 0;
+}
+.owindow .title {
+    cursor: auto;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #99da0a, var(--green));
+    border-radius: 10px 10px 0 0;
+}
+div#owindow-1 .title.modal-header {
+    text-align: center;
+    cursor: auto;
+    font-size: 0;
+    background-image: linear-gradient(to bottom, #99da0a, var(--green));
+    border-radius: 10px 10px 0 0;
+}
+div#owindow-1 .title.modal-header::before {
+    content: "Trainer Card";
+    font-size: 1.5rem;
+    color: var(--black);
+}
+.owindow img {
+    background-color: var(--trans) !important;
+}
+.owindow table {
+    border-spacing: 0;
+    padding: 0;
+    width: 100%;
+}
+.owindow td {
+    text-align: right;
+    border-bottom: 2px solid var(--green);
+}
+.owindow td.active.col-md-3.col-sm-3.col-xs-3.span3, .owindow td.active {
+    text-align: left;
+}
+.owindow .button-bar {
+    text-align: center;
+    text-transform: capitalize;
+}
+.owindow .button-bar a {
+    background-color: var(--green);
+    color: var(--black);
+    border-color: var(--trans);
+    transition: var(--timer);
+}
+.owindow .button-bar a:hover {
+    background-color: var(--pink);
+    color: var(--white);
+}
+.owindow.owait,
+.owindow.osuccess {
+    border-radius: 0;
+    background-image: linear-gradient(to bottom, #99da0a, var(--green));
+    border: solid 2px var(--brown);
+    height: 10rem;
+}
+.owindow.owait .content {
+    background-image: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aderby-jp/horse_running.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: var(--trans);
+    height: 100%;
+}
+.owindow.osuccess {
+    color: var(--trans);
+    background-color: var(--green) !important;
+    background-image: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aderby-jp/horse_running.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+
+/* Account and search buttons. */
+
+#account-options {
+    margin-top: 0.1rem;
+    margin-right: -0.1rem;
+    text-align: center;
+    border: solid ;
+    border-color: var(--trans);
+    background-color: var(--trans);
+}
+#account-options li a {
+    border: solid 1px var(--darkgrey);
+    color: var(--brown);
+    background-color: var(--white);
+    text-transform: capitalize;
+    margin: 6px 0;
+    border-radius: 10px;
+    padding: 0.4rem 0;
+}
+#account-options li a:hover {
+    color: var(--brown);
+    background-color: var(--white);
+}
+#account-options li {
+    position: relative;
+    transition: var(--timer);
+}
+#account-options li:nth-child(1)::before,
+#account-options li:nth-child(2)::before,
+#account-options li:nth-child(3)::before,
+#account-options li:nth-child(4)::before,
+#account-options li:nth-child(5)::before,
+#account-options li:nth-child(6)::before {
+    position: absolute;
+    content: "";
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    left: 20%;
+    top: 50%;
+    aspect-ratio: 1;
+    transform: translate(-50%, -50%);
+}
+#account-options li:nth-child(1)::before {
+    background-image: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aderby-jp/quill-ink.png");
+}
+#account-options li:nth-child(2)::before {
+    background-image: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aderby-jp/envelope.png");
+}
+#account-options li:nth-child(3)::before {
+    background-image: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aderby-jp/castle.png");
+}
+#account-options li:nth-child(4)::before {
+    background-image: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aderby-jp/cog.png");
+}
+#account-options li:nth-child(5)::before {
+    background-image: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aderby-jp/thrust.png");
+}
+#account-options li:nth-child(6)::before {
+    background-image: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aderby-jp/exit-door.png");
+}
+#account-options li:hover {
+    transform: scale(1.05);
+}
+
+#search-top-box {
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    padding: 8px 12px 0 0;
+}
+#search-top-box-form {
+    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.5));
+}
+#search-top-box-form input[type=submit] {
+    background-color: var(--green);
+    background-image: none;
+    color: var(--black);
+    border-color: var(--trans);
+    box-shadow: none;
+    border-radius: 0 3px 3px 0;
+    transition: var(--timer);
+}
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+    background-color: var(--pink);
+    border-color: var(--trans);
+    background-image: none;
+    color: var(--white);
+    box-shadow: none;
+}
+#search-top-box-form {
+    position: relative;
+}
+#search-top-box-form::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 95%;
+    height: calc(100% + 0.5px);
+    width: 3rem;
+    clip-path: polygon(100% 100%, 100% 0, 80% 0, 55% 100%, 0 100%, 25% 0, 55% 0, 30% 100%);
+    background-color: var(--green);
+}
+
+/* Header. */
+
+#header {
+grid-template-areas:
+    ". . . . login"
+    ". . . . search"
+    "h1 h1 h1 h1 h1"
+    "h2 h2 h2 h2 h2"
+    ". . . . ."
+    "top-bar top-bar top-bar top-bar top-bar";
+    grid-template-columns: repeat(5, 1fr);
+    background-image: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aderby-jp/umaLogo.png");
+    background-repeat: no-repeat;
+    background-size: min(70vw, 600px);
+    background-position: 0 45%;
+}
+#header h1 a::before, #header h2 span::before {
+    color: var(--trans);
+    font-family: var(--oswa);
+}
+#header h1 a::before {
+    border-radius: 1rem;
+    position: absolute;
+    width: min(70vw, 600px);
+    height: min(20vw, 110px);
+    top: 35%;
+}
+#header h1 a:hover::before {
+    animation: 5s tasteTheRainbow linear infinite;
+}
+@keyframes tasteTheRainbow {
+    from {backdrop-filter: hue-rotate(0deg);}
+    to {backdrop-filter: hue-rotate(360deg);}
+}
+#header h1 a, #header h2 span {
+    text-shadow: none;
+}
+
+/* Top bar. */
+
+#top-bar ul li a {
+    transition: var(--timer);
+    font-weight: bold;
+}
+#top-bar ul li ul {
+    border-width: 0 0;
+    box-shadow:
+    	5px 2px 5px -3px var(--grey),
+    	-5px 2px 5px -3px var(--grey);
+    transition: var(--timer);
+}
+#top-bar div[class*="top-bar"] > ul {
+    justify-content: center;
+}
+#top-bar :is(.top-bar, .mobile-top-bar) ul li ul li a {
+    text-align: center;
+}
+#top-bar :is(.top-bar, .mobile-top-bar) > ul > li:where(:not(:last-child)) > ul {
+    inset-inline-start: 50%;
+    transform: translate(-50%, 0);
+}
+
+/* Side bar and side bar button. */
+
+#top-bar .open-menu a {
+    background-color: var(--pink);
+    border: solid 2px var(--pink);
+    border-radius: 5px;
+    color: var(--white);
+    outline: solid 2px var(--white);
+    font-weight: 100;
+    transition: var(--timer);
+}
+#top-bar .open-menu a:hover {
+    background-color: var(--white);
+    color: var(--pink);
+}
+#side-bar {
+    background-color: var(--grey);
+    overflow-x: auto;
+    direction: rtl;
+    background-image: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aderby-jp/umaBanner2.png");
+    background-repeat: repeat-y;
+    background-size: 100%;
+    background-position: center;
+}
+#side-bar .side-block.media,
+#side-bar .side-block.resources,
+#side-bar .side-block,
+#interwiki .side-block {
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: none;
+    border: solid 1px var(--darkgrey);
+    color: var(--brown);
+    direction: ltr;
+    width: 213.6px;
+    margin-right: auto;
+    padding: 0;
+}
+#side-bar .side-block.media a {
+    padding: 0;
+}
+#side-bar .side-block.resources a,
+#side-bar .side-block a,
+#interwiki .side-block a {
+    padding: 0 5px;
+}
+#interwiki .heading, #side-bar .heading {
+    color: var(--black);
+    border: none;
+    font-weight: bold;
+    padding: 2px 10px;
+    background-color: var(--green);
+    background-image:
+    	radial-gradient(var(--white) 30%, transparent 30%),
+    	radial-gradient(var(--grey) 30%, transparent 30%);
+    background-position: 0 0, 1px 1px;
+    background-size: 2px 2px;
+    font-style: italic;
+    font-size: 0.9em;
+}
+#side-bar .side-block.resources .heading {
+    border-radius: 10px 10px 0 0;
+}
+#interwiki .menu-item, #side-bar .menu-item {
+    text-align: center;
+}
+#side-bar .side-block.media a:hover {
+    background-color: var(--trans);
+    filter: invert(1);
+}
+
+/* Body content. */
+
+body, html {
+    color: var(--black);
+    background-color: var(--white);
+    font-family: var(--open);
+    scrollbar-width: thin;
+    scrollbar-color: var(--pink) var(--white);
+}
+::-webkit-scrollbar {
+    background-color: var(--pink);
+}
+::-webkit-scrollbar-thumb, ::-webkit-scrollbar-button {
+    background-color: var(--white);
+}
+h1, h2, h3, h4, h5 {
+    color: var(--black);
+    font-family: var(--oswa);
+}
+#page-content h1 {
+    padding-left: 2rem;
+    position: relative;
+}
+#page-content h1::before {
+    content: "❖";
+    left: 0;
+    top: -5px;
+    text-shadow: -12px 0 var(--black), -6px 6px var(--black);
+    position: absolute;
+}
+hr {
+    background-image: linear-gradient(to right, #ddffd5, #d2eee4, #bfe3f2, #b1d6fc, #d3c9fb, #eeb9f2);
+    background-color: var(--trans);
+    height: 1rem;
+}
+blockquote, div.blockquote {
+    border-color: var(--trans);
+    border-bottom: solid 0.2em var(--brown);
+}
+table.wiki-content-table th {
+    border: 2px solid var(--brown);
+    background-color: var(--green);
+}
+table.wiki-content-table td {
+    border: 2px solid var(--brown);
+    background-color: var(--trans);
+}
+.scp-image-block, div.scp-image-block {
+    border: solid 2px var(--brown);
+    box-shadow: none;
+}
+.scp-image-block .scp-image-caption, div.scp-image-block .scp-image-caption {
+    border-top: solid 2px var(--brown);
+    background-color: var(--brown);
+    background-image:
+    	radial-gradient(#e39153 30%, transparent 30%),
+    	radial-gradient(#9d4f14 30%, transparent 30%);
+    background-position: 0 0, 1px 1px;
+    background-size: 2px 2px;
+    color: var(--white);
+    font-size: 1rem;
+}
+a, a.newpage, a:visited, #interwiki a, #side-bar a, a.action-area-close {
+    color: var(--pink);
+    font-weight: bold;
+    transition: var(--timer);
+}
+a:hover, a:visited:hover, #interwiki a:hover, #side-bar a:hover, a.action-area-close:hover {
+    color: var(--white);
+    background-color: var(--pink);
+    border-radius: 3px;
+    text-decoration: none;
+}
+#action-area a {
+    padding: 0 3px;
+}
+.wd-editor-toolbar-panel ul li a {
+    max-width: 16px;
+}
+.collapsible-block {
+    margin: 1rem;
+}
+a.collapsible-block-link {
+    background-color: var(--pink);
+    color: var(--white);
+    padding: 5px;
+    border: solid 2px var(--pink);
+    border-radius: 5px;
+}
+a.collapsible-block-link:hover {
+    background-color: var(--white);
+    color: var(--pink);
+}
+.licensebox a.collapsible-block-link {
+    background-color: unset;
+    color: unset;
+    padding: unset;
+    border: unset;
+    font-family: system-ui;
+}
+.licensebox a.collapsible-block-link:hover {
+    background-color: unset;
+    color: unset;
+}
+.licensebox a.collapsible-block-link:hover {
+    background-color: var(--trans);
+}
+#page-title, .meta-title {
+    color: var(--brown);
+    font-size: clamp(1.5rem, 0.786rem + 1.905vw, 2.5rem);
+    font-weight: bold;
+    font-family: var(--oswa);
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    border-color: var(--brown);
+    border-width: 5px;
+    border-radius: 0 0 7px 0;
+    text-align: right;
+    padding-left: 1rem;
+    position: relative;
+}
+#page-title::before, .meta-title::before {
+    position: absolute;
+    content: "";
+    background-color: var(--brown);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    height: 3rem;
+    width: 3rem;
+    top: calc(100% + 2.5px);
+    left: 0;
+    transform: translate(-50%, -50%) rotate(-90deg);
+}
+#page-content p a {
+    padding: 0 2px;
+    border-radius: 3px;
+}
+div.page-rate-widget-box,
+.page-rate-widget-box {
+    box-shadow: none;
+    border-radius: 0 3px 3px 0;
+    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.5));
+    text-transform: capitalize;
+    padding-left: 2rem;
+    position: relative;
+}
+div.page-rate-widget-box::after,
+.page-rate-widget-box::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 95%;
+    height: 100%;
+    width: 3rem;
+    clip-path: polygon(100% 100%, 100% 0, 80% 0, 55% 100%, 0 100%, 25% 0, 55% 0, 30% 100%);
+    background-color: var(--green);
+}
+.page-rate-widget-box .ratedown,
+.page-rate-widget-box .rateup,
+div.page-rate-widget-box .ratedown,
+div.page-rate-widget-box .rateup {
+    font-family: "Inter";
+}
+.page-rate-widget-box .cancel a:hover,
+div.page-rate-widget-box .cancel a:hover {
+    background-color: var(--pink);
+    color: var(--white);
+}
+.yui-navset .yui-nav,
+.yui-navset .yui-navset-top .yui-nav {
+    border-color: var(--brown);
+}
+.yui-navset .yui-content,
+.yui-navset .yui-navset-top .yui-content {
+    border: solid 2px var(--brown);
+    border-top-color: var(--brown);
+}
+.yui-navset .yui-content {
+    background-color: var(--grey);
+}
+.yui-navset.yui-navset-top .yui-nav :is(li, .selected) {
+    flex: 50%;
+}
+.hovertip {
+    width: fit-content;
+    height: fit-content;
+    color: var(--brown);
+    box-shadow: 0 0.2em var(--brown);
+}
+
+/* Bottom of page and editor. */
+
+.page-tags span {
+    border-top: 0;
+}
+#main-content .page-tags {
+    margin: 5em 0 0;
+}
+#main-content .page-tags a {
+    background-color: var(--pink);
+    border: solid 2px var(--pink);
+    color: var(--white);
+    padding: 2px 10px 2px 4px;
+    border-radius: 0 100px 100px 0;
+}
+#main-content .page-tags a::after {
+    content:"•";
+    padding-left: 5px;
+}
+#main-content .page-tags a:hover {
+    background-color: var(--white);
+    color: var(--pink);
+}
+#page-info {
+    font-size: 80%;
+    margin-top: 1.5rem;
+}
+.page-watch-options {
+    font-size: 85%;
+    margin-bottom: 1rem;
+}
+.page-options-bottom {
+    margin: 0;
+}
+#page-info, .page-watch-options, .page-options-bottom {
+    text-align: center;
+}
+.page-watch-options a:hover {
+    text-decoration: none;
+}
+#footer {
+    background-color: var(--green);
+    justify-content: right;
+    color: var(--black);
+    background-image: linear-gradient(120deg, var(--white) 5rem, var(--trans) 5rem 6rem, var(--white) 6rem 7rem, var(--trans) 7rem);
+}
+#footer a {
+    color: var(--black);
+}
+#footer a:hover {
+    color: var(--white);
+    background-color: var(--pink);
+}
+#license-area {
+    background-color: var(--brown);
+    background-image:
+    	radial-gradient(#e39153 30%, transparent 30%),
+    	radial-gradient(#9d4f14 30%, transparent 30%);
+    background-position: 0 0, 1px 1px;
+    background-size: 2px 2px;
+    color: var(--white);
+}
+#license-area a {
+    color: var(--white);
+    padding: 0 3px;
+}
+#license-area a:hover {
+    background-color: var(--black);
+}
+.pager .current {
+    background-color: var(--pink);
+    border: solid 1px var(--grey);
+    padding: 0 12px;
+}
+.page-history {
+    border-spacing: 0;
+}
+.page-history td {
+    padding: 2px;
+}
+.page-history tr:nth-child(1) {
+    font-weight: bold;
+    text-transform: capitalize;
+    background-color: var(--grey);
+}
+.page-history td:nth-child(1) {
+    text-align: right;
+}
+.page-history td:nth-child(3),
+.page-history td:nth-child(6) {
+    text-align: center;
+}
+div.buttons input, input.button, button, file, a.button {
+    background-color: var(--green);
+    border: none;
+    color: var(--black);
+    font-weight: bold;
+    padding: 0.1em 1em;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    transition: var(--timer);
+}
+div.buttons input:hover, input.button:hover, button:hover, file:hover, a.button:hover {
+    background-color: var(--pink);
+    border: none;
+    color: var(--white);
+}
+.preview-message {
+    background-image: linear-gradient(to right, #ddffd5, #d2eee4, #bfe3f2, #b1d6fc, #d3c9fb, #eeb9f2);
+    background-color: var(--trans);
+    border: solid 3px var(--white);
+    left: 50%;
+    opacity: 0.95;
+    outline: solid 2px var(--grey);
+    transform: translate(-50%, 0px);
+}
+.preview-message a {
+    padding: 0 5px;
+}
+
+/* Resizing to make stuff work on mobile. */
+
+@media only screen and (min-width: 767px) {
+#container {
+    background-position:
+    	85% 6rem,
+    	top,
+    	top;
+    }
+#top-bar .top-bar {
+    background-image: linear-gradient(to bottom, #99da0a, var(--green));
+    border-radius: 100px;
+    box-shadow: 0 -2px #b1f025, 2px 2px 2px rgba(0, 0, 0, 0.5);
+    }
+#top-bar .mobile-top-bar {
+    background-image: none;
+    border-radius: 100px;
+    box-shadow: none;
+    }
+}
+@media only screen and (max-width: 767px) {
+#top-bar .top-bar {
+    background-image: linear-gradient(to bottom, #99da0a, var(--green));
+    border-radius: 100px;
+    box-shadow: 0 -2px #b1f025, 2px 2px 2px rgba(0, 0, 0, 0.5);
+    }
+#top-bar .mobile-top-bar {
+    background-image: linear-gradient(to bottom, #99da0a, var(--green));
+    border-radius: 100px;
+    box-shadow: 0 -2px #b1f025, 2px 2px 2px rgba(0, 0, 0, 0.5);
+    }
+#top-bar > div[class*="top-bar"] {
+    margin: 0 1rem;
+    }
+#top-bar div[class*="top-bar"] > ul {
+    justify-content: center;
+    }
+#top-bar div[class*="top-bar"] > ul > li {
+    flex-grow: 0;
+    }
+#top-bar .open-menu a:hover {
+    box-shadow: none;
+    }
+#side-bar {
+    left: -30rem;
+    }
+#footer {
+    background-image: none;
+    }
+}
+@media not all and (max-width: 767px) {
+#side-bar {
+    left: -30rem;
+    }
+}
+@media (max-width: 767px) {
+#side-bar:target .close-menu {
+    background-color: var(--trans);
+    }
+}
+[[/code]]
+[[/collapsible]]
+
+[[include component:license-box-theme]]
+=====
+> **Name:** horse_running.gif, umaBanner2.png, umaRunner.png, umaBackground.png
+> **Filenames:**
+> https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aderby-jp/horse_running.gif
+> https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aderby-jp/umaBanner2.png
+> https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aderby-jp/umaRunner.png
+> https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aderby-jp/umaBackground.png
+> https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aderby-jp/umaLogo.png
+> **Author:** [[*user SailorEnoch]]
+> **License:** Site License
+
+> **Name:** quill-ink.png, envelope.png, castle.png, cog.png
+> **Filenames:**
+> https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aderby-jp/quill-ink.png
+> https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aderby-jp/envelope.png
+> https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aderby-jp/castle.png
+> https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aderby-jp/cog.png
+> **Author:** Lorc
+> **License:** CC BY 3.0
+> **Source:**
+> https://game-icons.net/1x1/lorc/envelope.html
+> https://game-icons.net/1x1/lorc/castle.html
+> https://game-icons.net/1x1/lorc/quill-ink.html
+> https://game-icons.net/1x1/lorc/cog.html
+
+> **Name:** thrust.png
+> **Filename:** https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aderby-jp/thrust.png
+> **Author:** Felbrigg
+> **License:** CC BY 3.0
+> **Source:** https://game-icons.net/1x1/felbrigg/thrust.html
+
+> **Name:** exit-door.png
+> **Filename:** https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aderby-jp/exit-door.png
+> **Author:** Delapouite
+> **License:** CC BY 3.0
+> **Source:** https://game-icons.net/1x1/delapouite/exit-door.html
+=====
+[[include :scp-jp:component:license-box-end]]
+
+[[/iftags]]
+
+[[include component:sigma-plus]]
+[[include :scp-jp:component:toggle-sidebar]]
+
+[[module css]]
+@import url(https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aderby-jp/1);
+[[/module]]
+[[include component:interwiki-style
+| priority=1
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aderby-jp/1
+]]

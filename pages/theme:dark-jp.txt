@@ -1,0 +1,375 @@
+[[module CSS]]
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Adark-jp/1');
+[[/module]]
+
+[[include component:interwiki-style
+| priority=1
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Adark-jp/1
+]]
+
+[[iftags +テーマ]]
+
+[[include credit:start-preview]]
+**タイトル:** Sigma-10 Dark Mode
+**原題:** Sigma-10 Dark Mode
+**著作権者:** [[*user stormbreath]]
+**作成年:** 2023
+**初訳時参照リビジョン:** 5
+**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:dark ソース]
+[[include credit:end-preview]]
+
+これは汎用のSigma-10 ダークモードテーマです。どのような用途にも使用できます。記事にこのテーマを適用するには、次のコードを使用してください:
+
+> @@[[include theme:dark-jp]]@@
+
++ テーマの例
+
+このテーマを使用した場合に、様々なページ要素がどのように見えるかを以下に示します。
+
+[[include component:image-block name=https://sigma10-jp-test.wdfiles.com/local--files/theme%3Adark-jp/component-theme-logo.png | caption=テスト画像。 | width=100px]]
+
++ h1
+++ h2
++++ h3
+
+~~~~
+----
+
+[[tabview]]
+[[tab GOC Peacekeeper]]
+出てこい、包囲したぞ！
+[[/tab]]
+[[tab stormbreath]]
+タブが嫌いだ！
+タブが嫌いだ！
+[[/tab]]
+[[tab the antichrist]]
+やあ
+[[/tab]]
+[[/tabview]]
+
+||~ ヘッダー ||~ ヘッダー ||~ ヘッダー ||
+|| セルの内容 || セルの内容 || セルの内容 ||
+
+[[table style="width: 100%; background: #0e0e0e; border: 3px outset #aaa9a9; padding: 2px 0;"]]
+[[row]]
+[[cell style="width: 33%; text-align: center;"]]
+[# リンク。]
+[[/cell]]
+[[cell style="width: 1%; text-align: center; font-weight: bold;"]]
+|
+[[/cell]]
+[[cell style="width: 33%; text-align: center;"]]
+[[[theme:dark-jp|訪問済みリンク。]]]
+[[/cell]]
+[[cell style="width: 1%; text-align: center; font-weight: bold;"]]
+|
+[[/cell]]
+[[cell style="width: 33%; text-align: center;"]]
+[[[SCP-99999|新しいリンク。]]]
+[[/cell]]
+[[/row]]
+[[/table]]
+
+[[code type="css"]]
+/* SCP Sigma-9 Dark */
+/* Based on a theme by anqyxr and MechaLynx, readjusted by stormbreath */
+
+/* -------------- OVERALL -------------- */
+:root {
+    background: #191919;
+}
+
+body {
+    background: #191919 url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Adark-jp/bodydark.png") repeat;
+    color: #aaa9a9;
+}
+
+a {
+    color: #F54242;
+}
+
+a:visited {
+    color: #D65C85;
+}
+
+.hovertip {
+    background: #191919 !important;
+    border: 1px solid #808080 !important;
+}
+
+/* -------------- HEADER -------------- */
+div#container-wrap {
+    background-image: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Adark-jp/headerdark.png");
+}
+
+#account-options {
+    background: #191919;
+}
+
+#login-status ul a {
+    color: #F43434;
+}
+
+#account-options li a:hover {
+    color: #aaa9a9;
+}
+
+#search-top-box-form input[type=submit] {
+    background-image: linear-gradient(to bottom, #610101, #633, #300);
+}
+
+#search-top-box-form input[type=submit]:focus, 
+#search-top-box-form input[type=submit]:hover {
+    background-image: linear-gradient(to bottom,#110e0e,#533636,#6c2828);
+}
+
+/* -------------- TOP-BAR -------------- */
+#top-bar a {
+    color: #bbb;
+    background: transparent;
+}
+
+#top-bar ul li.sfhover a, 
+#top-bar ul li:hover a {
+    background: #191919;
+    color: #A8A8A8;
+}
+
+#top-bar ul li.sfhover ul li a, 
+#top-bar ul li:hover ul li a {
+    border-top: 1px solid #191919;
+}
+
+#top-bar ul li.sfhover a:hover, 
+#top-bar ul li:hover a:hover {
+    background: #3d3d3d;
+}
+
+#top-bar ul li ul a, 
+#top-bar a:hover {
+    color: #A8A8A8;
+}
+
+/* -------------- SIDE-BAR -------------- */
+#side-bar a,
+#side-bar a:visited,
+#side-bar a.newpage,
+#interwiki a,
+#interwiki a:visited,
+#interwiki a.newpage {
+    color: #D25B5B;
+}
+
+#side-bar .side-block,
+#side-bar .side-block.media,
+#side-bar .side-block.resources,
+#interwiki .side-block {
+    background: #191919;
+    border-color: #808080;
+    box-shadow: none;
+}
+
+#side-bar .heading,
+#interwiki .heading {
+    border-bottom: solid 1px #858585;
+    color: #858585;
+}
+
+#interwiki {
+    background: transparent;
+}
+
+#interwiki body {
+   background-image: unset;
+}
+
+#top-bar .open-menu a {
+    background: #161616;
+}
+
+@media (max-width: 767px) {
+     #side-bar{
+         background-color: #332733;
+      }
+}
+
+/* -------------- PAGE ELEMENTS -------------- */
+/* -- Rate Module -- */
+div.page-rate-widget-box .rate-points {
+    background-color: #191919 !important;
+    border-color: #aaa9a9;
+    color: #aaa9a9 !important;
+}
+
+div.page-rate-widget-box .rateup,
+div.page-rate-widget-box .ratedown {
+    background-color: #aaa9a9;
+    border-top-color: #aaa9a9;
+    border-bottom-color: #aaa9a9;
+}
+
+div.page-rate-widget-box .rateup a,
+div.page-rate-widget-box .ratedown a {
+    color: #191919;
+}
+
+div.page-rate-widget-box .rateup a:hover,
+div.page-rate-widget-box .ratedown a:hover {
+    background: #191919;
+    color: #aaa9a9;
+}
+
+div.page-rate-widget-box .cancel {
+    background-color: #191919;
+    border-color: #aaa9a9;
+}
+
+div.page-rate-widget-box .cancel a {
+    color: #aaa9a9;
+}
+
+div.page-rate-widget-box .cancel a:hover {
+    background: #aaa9a9;
+    color: #191919;
+}
+
+/* -- Info Module -- */
+#page-content .rate-box-with-credit-button {
+    background-color: #191919;
+    border-color: #aaa9a9;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.5);
+}
+
+#page-content .creditButton p a {
+    border-left-color: #aaa9a9;
+}
+
+.rate-box-with-credit-button .cancel {
+   border-radius: 0;
+}
+
+#page-content .creditButton p a:hover {
+    color: #F54242;
+}
+
+div.modalbox {
+    background: linear-gradient(#0e0e0e 51px, #191919 51px, #191919);
+}
+
+/* -- Other Page Elements -- */
+#page-title,
+.meta-title,
+h1 {
+     color: #C03535;
+}
+
+.scp-image-block .scp-image-caption {
+    background-color: #191919;
+    color: #808080;
+}
+
+blockquote,
+div.blockquote,
+.code,
+.wiki-content-table tr th,
+#lock-info {
+    background: #0e0e0e;
+    border-color: #aaa9a9;
+}
+
+.yui-navset .yui-content {
+    background-color: #0e0e0e;
+}
+
+.yui-navset .yui-nav a, 
+.yui-navset .yui-navset-top .yui-nav a {
+    background: #373636;
+    color: #aaa9a9;
+}
+
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a:focus, /* no focus effect for selected */
+.yui-navset .yui-nav .selected a:hover { /* no hover effect for selected */
+    background: #6d0000;
+}
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:focus {
+    background: #4c1717;
+}
+
+
+/* code highlighter stuff */
+.hl-identifier,
+.hl-code,
+.hl-brackets {
+    color: #aaa9a9;
+}
+
+.hl-var {
+    color: #b02c7d;
+}
+
+.hl-special,
+.hl-quotes {
+    color: #f4750b;
+}
+
+.hl-number,
+.hl-string {
+    color: #ff0020;
+}
+
+/* Page Revisions Readability */
+del,
+ins {
+    color: #333;
+}
+
+/* -------------- FUNCTIONAL ELEMENTS -------------- */
+.pager span a {
+    border: 1px solid #808080;
+}
+
+div.buttons input, 
+input.button, 
+button, 
+file, 
+a.button,
+.owindow .button-bar a {
+    background-color: #373636;
+    color: #aaa9a9;
+}
+
+.owindow {
+    background: #1a1a1a;
+    border-color: #111111;
+}
+
+.owindow .content img {
+    background: transparent !important;
+}
+
+.owindow .title {
+    background: #000;
+}
+
+textarea,
+input.text {
+    background-color: #1f1f1f;
+    color: #aaa9a9;
+}
+
+.change-textarea-size a {
+    color: #aaa9a9;
+}
+
+/* -------------- FOOTER  -------------- */
+#license-area {
+    color: #aaa9a9;
+}
+
+[[/code]]
+
+[[/iftags]]
