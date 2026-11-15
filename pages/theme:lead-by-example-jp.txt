@@ -1,0 +1,2962 @@
+[[module CSS]]
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css");
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css");
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css
+]]
+[[include :scp-jp:component:interwiki-style
+| priority=2
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css
+]]
+
+[[module CSS]]
+@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+/*Base*/
+@supports(display: grid) {
+:root:lang(ja) {
+    /* S-CSS-P Integration */
+    /* If you're making a new CSS theme, please include the following three variables at minimum. */
+        --theme-base: "nuscp";
+    /* must be either "nuscp" or "sigma9" */
+        --theme-id: "lead-by-example";
+    /* set this to the URL of your theme's page - eg for "component:ar-theme", set it javascript:;to "ar-theme" */
+        --theme-name: "LeadByExample";
+    /* set this to your theme's full name */
+        --header-title: "財団武装部隊";
+        --header-subtitle: "捜索、交戦、防護";
+
+        /* Standard theme colors */
+        --bright-accent: 143,151,121;
+        --medium-accent: 108,124,89;
+        --dark-accent: 68,76,56;
+        --newpage-color: 181,195,0;
+        --sidebar-quotes: 232, 237, 225;
+        --header-gradient-color-bottom: 108,124,89;
+
+    /* Primary Header Colors */
+    --swatch-topmenu-border-color: var(--dark-accent);
+    --swatch-topmenu-bg-color: transparent;
+    --mobile-desktop-sidebar-button-color: var(--medium-accent);
+    --diagonal-stripes: unset;
+        /* ===SIDE-BAR GENERAL=== */
+    --sidebar-bg-color: var(--sidebar-quotes);
+    --sidebar-resources-bg-color: var(--bright-accent);
+    --sidebar-media-bg-color: var(--bright-accent);
+
+        /* ===SIDEBLOCK MENU=== */
+    --sideblock-heading-border-color: transparent;
+    --sideblock-heading-bg-color: var(--dark-accent);
+    --rating-module-button-color: var(--bright-accent);
+    --rating-module-button-color: var(--gray-monochrome);
+
+        /* ===MENU-ITEMS=== */
+    --sidebar-border-color: transparent;
+    --sidebar-subtest-color: transparent;
+
+    --sidebar-links-text: var(--bright-accent);
+    --sidebar-links-hover-bg-color: var(--bright-accent);
+    --sidebar-links-hover-text-color: var(--medium-accent);
+    }
+}
+
+
+/* Sidebar */
+#side-bar {
+    background-color: rgba(var(--sidebar-quotes));
+}
+
+#side-bar .heading p,
+#interwiki .heading p {
+    border-top: 3px rgb(var(--medium-accent));
+    width: 100%;
+    text-align: center;
+    padding: 0.5em;
+    background-color: rgb(var(--medium-accent));
+    color: rgb(255,255,255);
+}
+
+#extra-div-1 {
+    height: calc(var(--header-height-on-desktop) + var(--topbar-height-on-desktop));
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 7;
+    background-image:
+        linear-gradient(to top, black, rgb(var(--medium-accent)));
+}
+
+#extra-div-5 {
+    height: calc(var(--header-height-on-desktop) + var(--topbar-height-on-desktop));
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 8;
+
+    background-image:
+        repeating-linear-gradient(135deg, rgba(255,255,255,0.12) 0px, rgba(255,255,255,0.12) 2px, transparent 4px),
+        linear-gradient(rgba(255,255,255,0.09) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.09) 1px, transparent 1px);
+    background-size: 8px 8px, 40px 40px, 40px 40px;
+    opacity: 0.55;
+    animation: hud-scan 9s linear infinite;
+}
+
+@keyframes hud-scan {
+    0% { background-position: 0 0, 0 0, 0 0; }
+    100% { background-position: -200px 200px, 0 40px, 40px 0; }
+}
+
+/* Scan adapts on mobile */
+@media (max-width: 768px) {
+    #extra-div-1,
+    #extra-div-5 {
+        height: calc(var(--header-height-on-mobile) + var(--topbar-height-on-mobile));
+    }
+
+
+:root:lang(ja) {
+    --swatch-topmenu-border-color: var(--dark-accent);
+    --swatch-topmenu-bg-color: var(--gray-monochrome);
+}
+}
+
+h1, h2 {
+    color: rgb(var(--medium-accent));
+    font-weight: 700;
+}
+
+/* Base blockquote */
+.blockquote-s {
+    min-width: 85% !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    position: relative;
+    font-weight: 500;
+    padding: 1em;
+    margin: 1.2em 0;
+    background-color: rgb(var(--sidebar-quotes)) !important;
+    border: 1px solid rgb(var(--dark-accent));
+    pointer-events: auto;
+    background-image: none;
+    box-shadow: none;
+}
+.blockquote-s::before {
+    content: "";
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 0;
+    border: none !important;
+}
+.blockquote > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Time and place title */
+
+.title-a {
+    position: relative;
+    width: 100%;
+    display: block;
+    margin: auto;
+    font-family: 'VonwaonBitmap 12px', 'Noto Sans JP', monospace;
+    color: rgb(var(--medium-accent));
+    font-weight: 750;
+    font-size: 1.2em;
+
+    padding: 0.1em 0.5em;
+    border-top: 3px solid rgb(var(--gray-monochrome));
+    border-bottom: 3px solid rgb(var(--gray-monochrome));
+    border-left: none;
+    border-right: none;
+    overflow: hidden;
+    width: 100%;
+    background-image: 
+        repeating-linear-gradient(to right, rgba(var(--medium-accent),0.1) 0, rgba(var(--dark-accent),0.1) 1px, transparent 1px, transparent 10px),
+        repeating-linear-gradient(to bottom, rgba(var(--medium-accent),0.1) 0, rgba(var(--dark-accent),0.1) 1px, transparent 1px, transparent 10px);
+    background-size: 100% 100%;
+}
+
+.title-a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+
+    background: linear-gradient(
+        90deg,
+        rgba(var(--medium-accent), 0) 0%, 
+        rgba(var(--medium-accent), 0.35) 40%, 
+        rgba(var(--medium-accent), 0.5) 50%,
+        rgba(var(--medium-accent), 0.35) 51%,
+        rgba(var(--medium-accent), 0.1) 52%,  
+        rgba(var(--medium-accent), 0.05) 60%,  
+        rgba(var(--medium-accent), 0) 100%
+    );
+    filter: drop-shadow(0 0 4px rgba(var(--medium-accent), 0.6));
+    animation: scan-horizontal-neon 3s linear infinite;
+}
+
+@keyframes scan-horizontal-neon {
+    0%   { left: -100%; opacity: 0.5; }
+    25%  { opacity: 1; }
+    50%  { left: 50%; opacity: 0.7; }
+    75%  { opacity: 1; }
+    100% { left: 150%; opacity: 0.5; }
+}
+
+/* Titles A and B */
+.title-b {
+    position: relative;
+    width: 100%;
+    display: block;
+    margin: auto;
+    font-family: 'VonwaonBitmap 12px', 'Noto Sans JP', monospace;
+    color: rgb(var(--dark-accent));
+    font-weight: 800;
+    font-size: 1.2em;
+
+    padding: 0.1em 0.5em;
+    border-top: 3px solid rgb(var(--gray-monochrome));
+    border-bottom: 3px solid rgb(var(--gray-monochrome));
+    border-left: none;
+    border-right: none;
+    overflow: hidden;
+
+    background-color: rgba(var(--bright-accent), 0.2);
+
+    background-image: 
+        background: linear-gradient(to bottom, black, rgb(var(--medium-accent)));
+        repeating-linear-gradient(to right, rgba(var(--medium-accent),0.5) 0, rgba(var(--medium-accent),0.05) 1px, transparent 1px, transparent 10px),
+        repeating-linear-gradient(to bottom, rgba(var(--medium-accent),0.5) 0, rgba(var(--medium-accent),0.05) 1px, transparent 1px, transparent 10px);
+    background-size: 100% 100%;
+}
+
+.title-b::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+
+    background: linear-gradient(
+        90deg,
+        rgba(var(--pale-gray-monochrome), 0) 0%, 
+        rgba(var(--pale-gray-monochrome), 0.85) 40%, 
+        rgba(var(--pale-gray-monochrome), 1) 50%,
+        rgba(var(--pale-gray-monochrome), 0.85) 51%,
+        rgba(var(--pale-gray-monochrome), 0.5) 55%,  
+        rgba(var(--pale-gray-monochrome), 0.3) 60%,  
+        rgba(var(--pale-gray-monochrome), 0) 100%
+    );
+    filter: drop-shadow(0 0 4px rgba(var(--medium-accent), 0.6));
+    animation: scan-horizontal-neon 3s linear infinite;
+}
+
+@keyframes scan-horizontal-neon {
+    0%   { left: -100%; opacity: 0.5; }
+    25%  { opacity: 1; }
+    50%  { left: 50%; opacity: 0.7; }
+    75%  { opacity: 1; }
+    100% { left: 150%; opacity: 0.5; }
+}
+
+.title-a-noscan {
+    position: relative;
+    width: 100%;
+    display: block;
+    margin: auto;
+    font-family: 'VonwaonBitmap 12px', 'Noto Sans JP', monospace;
+    color: rgb(var(--medium-accent));
+    font-weight: 750;
+    font-size: 1.2em;
+
+    padding: 0.1em 0.5em;
+    border-top: 3px solid rgb(var(--gray-monochrome));
+    border-bottom: 3px solid rgb(var(--gray-monochrome));
+    border-left: none;
+    border-right: none;
+    overflow: hidden;
+    width: 100%;
+    background-image: 
+        repeating-linear-gradient(to right, rgba(var(--medium-accent),0.1) 0, rgba(var(--dark-accent),0.1) 1px, transparent 1px, transparent 10px),
+        repeating-linear-gradient(to bottom, rgba(var(--medium-accent),0.1) 0, rgba(var(--dark-accent),0.1) 1px, transparent 1px, transparent 10px);
+    background-size: 100% 100%;
+}
+
+.title-b-noscan {
+    position: relative;
+    width: 100%;
+    display: block;
+    margin: auto;
+    font-family: 'VonwaonBitmap 12px', 'Noto Sans JP', monospace;
+    color: rgb(var(--dark-accent));
+    font-weight: 800;
+    font-size: 1.2em;
+
+    padding: 0.1em 0.5em;
+    border-top: 3px solid rgb(var(--gray-monochrome));
+    border-bottom: 3px solid rgb(var(--gray-monochrome));
+    border-left: none;
+    border-right: none;
+    overflow: hidden;
+
+    background-color: rgba(var(--bright-accent), 0.2);
+
+    background-image: 
+        repeating-linear-gradient(to right, rgba(var(--medium-accent),0.5) 0, rgba(var(--medium-accent),0.05) 1px, transparent 1px, transparent 10px),
+        repeating-linear-gradient(to bottom, rgba(var(--medium-accent),0.5) 0, rgba(var(--medium-accent),0.05) 1px, transparent 1px, transparent 10px);
+    background-size: 100% 100%;
+}
+
+/* Title C and D */
+
+/* Title C */
+.title-c {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    font-family: 'VonwaonBitmap 12px', 'Noto Sans JP', monospace;
+    font-size: 2.1em;
+    font-weight: 900;
+    text-align: left;
+    letter-spacing: 0.12em;
+    color: rgb(var(--pale-gray-monochrome));
+    line-height: 1;
+    z-index: 1; /* base */
+}
+
+.title-c span {
+    position: relative;
+    color: transparent;
+    display: inline-block;
+}
+
+.title-c span::before {
+    content: attr(data-char);
+    position: absolute;
+    top: 0; left: 0;
+    color: rgb(var(--pale-gray-monochrome));
+    animation: char-roll 20s infinite;
+    animation-delay: calc(var(--i) * 0.15s);
+    z-index: 2; /* below borders */
+    text-shadow:
+       -1px -1px 0 rgb(var(--medium-accent)),
+        1px -1px 0 rgb(var(--medium-accent)),
+       -1px  1px 0 rgb(var(--medium-accent)),
+        1px  1px 0 rgb(var(--medium-accent)),
+        0  -1px 0 rgb(var(--medium-accent)),
+        0   1px 0 rgb(var(--medium-accent)),
+       -1px  0  0 rgb(var(--medium-accent)),
+        1px  0  0 rgb(var(--medium-accent));
+}
+
+/* Animation */
+@keyframes char-roll {
+0% { content: "▓"; opacity: 0; } 
+5% { content: "▓"; opacity: 0; } 
+10% { content: "▓"; opacity: 1; } 
+15% { content: "%"; opacity: 1; } 
+20% { content: "#"; opacity: 1; } 
+25% { content: "□"; opacity: 1; } 
+30% { content: "?"; opacity: 1; } 
+35% { content: "$"; opacity: 1; } 
+40% { content: "@"; opacity: 1; } 
+41%,89% { content: attr(data-char); opacity: 1; } 
+90% { content: "▓"; opacity: 1; } 
+93% { content: "▓"; opacity: 0; } 
+100% { content: "▓"; opacity: 0; }
+}
+
+.title-c::before,
+.title-c::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: rgb(var(--dark-accent));
+    z-index: 3; /* above glitch */
+}
+.title-c::before { bottom: 0.55em; height: 3px; }
+.title-c::after  { bottom: 0.7em; height: 1px; }
+
+/* Title D */
+.title-d {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    font-family: 'VonwaonBitmap 12px', 'Noto Sans JP', monospace;
+    font-size: 2.1em;
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: 0.12em;
+    color: rgb(var(--pale-gray-monochrome));
+    line-height: 1;
+
+    text-shadow:
+       -1px -1px 0 rgb(var(--medium-accent)),
+        1px -1px 0 rgb(var(--medium-accent)),
+       -1px  1px 0 rgb(var(--medium-accent)),
+        1px  1px 0 rgb(var(--medium-accent)),
+        0  -1px 0 rgb(var(--medium-accent)),
+        0   1px 0 rgb(var(--medium-accent)),
+       -1px  0  0 rgb(var(--medium-accent)),
+        1px  0  0 rgb(var(--medium-accent));
+}
+
+.title-d::before,
+.title-d::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: rgb(var(--dark-accent));
+    z-index: 1;
+}
+.title-d::before { bottom: 0.55em; height: 3px; }
+.title-d::after  { bottom: 0.7em; height: 1px; }
+
+
+/* Title D with grid */
+.title-d-grid {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    font-family: 'VonwaonBitmap 12px', 'Noto Sans JP', monospace;
+    font-size: 2.1em;
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: 0.12em;
+    color: rgb(var(--pale-gray-monochrome));
+    line-height: 1;
+    margin: 0;
+    padding-bottom: 0.7em; /* for borders */
+
+    text-shadow:
+       -1px -1px 0 rgb(var(--medium-accent)),
+        1px -1px 0 rgb(var(--medium-accent)),
+       -1px  1px 0 rgb(var(--medium-accent)),
+        1px  1px 0 rgb(var(--medium-accent)),
+        0  -1px 0 rgb(var(--medium-accent)),
+        0   1px 0 rgb(var(--medium-accent)),
+       -1px  0  0 rgb(var(--medium-accent)),
+        1px  0  0 rgb(var(--medium-accent));
+
+    background-image: 
+        linear-gradient(to top, rgba(var(--newpage-color), 0.6), rgba(var(--newpage-color), 0.2)),
+        repeating-linear-gradient(
+            0deg,
+            rgba(var(--pale-gray-monochrome), 1) 0px,
+            rgba(var(--pale-gray-monochrome), 1) 1px,
+            transparent 1px,
+            transparent 20px
+        ),
+        repeating-linear-gradient(
+            90deg,
+            rgba(var(--pale-gray-monochrome), 1) 0px,
+            rgba(var(--pale-gray-monochrome), 1) 1px,
+            transparent 1px,
+            transparent 20px
+        );
+    background-blend-mode: overlay;
+    background-repeat: repeat;
+    background-size: auto;
+    background-clip: content-box;
+}
+
+/* Double border for grid */
+.title-d-grid::before,
+.title-d-grid::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: rgb(var(--dark-accent));
+    z-index: 1;
+}
+.title-d-grid::before { bottom: 0.55em; height: 3px; }
+.title-d-grid::after  { bottom: 0.7em; height: 1px; }
+
+/* Notebook Container */
+
+.notebook {
+    border: 4px solid rgb(var(--dark-accent));
+    background: rgba(var(--medium-accent), 0.7);
+    margin: 1.5em 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 10px;
+    width: 97%;
+    border-right: 17px solid rgb(var(--dark-accent));
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+
+}
+
+.notebook::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+    pointer-events: none;
+    z-index: 0;
+    display: none;
+}
+
+.notebook > * {
+    position: relative;
+    z-index: 1;
+}
+
+.notebook-grid {
+    flex: 0 0 60px;
+    width: 80%;
+    margin: auto;
+    background-image:
+        repeating-linear-gradient(
+            0deg,
+            rgba(var(--medium-accent), 0.9) 0px,
+            rgba(var(--medium-accent), 0.9) 1px,
+            transparent 1px,
+            transparent 15px
+        ),
+        repeating-linear-gradient(
+            90deg,
+            rgba(var(--medium-accent), 0.9) 0px,
+            rgba(var(--medium-accent), 0.9) 1px,
+            transparent 1px,
+            transparent 15px
+        );
+    background-color: rgb(var(--sidebar-quotes));
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 30px;
+    border-top: 1px solid rgb(var(--dark-accent));
+    border-left: 1px solid rgb(var(--dark-accent));
+    border-right: 1px solid rgb(var(--dark-accent));
+    box-shadow: 4px 0 6px -2px rgba(0,0,0,0.3);
+}
+
+
+.notebook-divider {
+    height: 5px;
+    background-color: rgb(var(--dark-accent));
+    width: 80%;
+    margin: auto;
+    border-left: 1px solid rgb(var(--dark-accent));
+    border-right: 1px solid rgb(var(--dark-accent));
+    box-shadow: 4px 0 6px -2px rgba(0,0,0,0.3);
+}
+
+.notebook-lines {
+    width: 80%;
+    margin: auto;
+    display: block;
+    overflow: hidden;
+    font-family: 'Ma Shan Zheng', cursive;
+    font-size: 1.2em;
+    font-style: normal;
+
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: linear-gradient(to top ,rgb(var(--medium-accent)) 0%, rgb(var(--sidebar-quotes)) 8%);
+    background-origin: padding-box;
+    background-position: 0px 8px;
+    background-repeat: repeat;
+    background-size: 100% 20px;
+
+    border-bottom: 1px solid rgb(var(--dark-accent));
+    border-left: 1px solid rgb(var(--dark-accent));
+    border-right: 1px solid rgb(var(--dark-accent));
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px 10px;
+    margin-bottom: 30px;
+
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5)
+    }
+.notebook-lines p,
+.notebook-lines ul {
+    line-height: 20px;
+    margin: 0;
+}
+    text-shadow:
+        0 0 1px rgba(var(--pale-gray-monochrome), 0.3),
+        0.4px 0.4px 0 rgba(var(--black-monochrome), 0.4),
+        -0.3px -0.3px 0 rgba(var(--black-monochrome), 0.4);
+    opacity: 0.92;
+}
+
+.notebook-lines::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+        repeating-linear-gradient(
+            45deg,
+            rgba(255, 255, 255, 0.02) 0px,
+            rgba(255, 255, 255, 0.02) 2px,
+            transparent 2px,
+            transparent 4px
+        );
+    mix-blend-mode: overlay;
+    opacity: 0.05;
+    pointer-events: none;
+}
+
+.notebook-grid,
+.notebook-divider,
+.notebook-lines {
+    box-sizing: border-box;
+}
+
+.divider-fortified {
+    position: relative;
+    height: 4px;
+    background-color: rgb(var(--medium-accent));
+    margin-top: 35px;
+    margin-bottom: 20px;
+    width: 100%;
+    overflow: visible;
+}
+
+.divider-fortified::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 87.5%;
+    height: 12px;
+
+    background-image:
+        repeating-linear-gradient(
+            90deg,
+            rgb(var(--medium-accent)) 0 12px,
+            transparent 12px 20px
+        );
+
+    background-size: 20px 12px;
+    background-repeat: repeat-x;
+    -webkit-mask-image: linear-gradient(to top, transparent 30%, black 30%);
+    mask-image: linear-gradient(to top, transparent 30%, black 30%);
+    background-position: center bottom;
+    pointer-events: none;
+}
+
+.divider-concertina {
+    position: relative;
+    height: 3px;
+    background-color: rgb(var(--medium-accent));
+    overflow: visible;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.divider-concertina::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -1px;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 30px;
+
+
+    background-image: radial-gradient(
+        ellipse 7px 15px at center 60%,
+        transparent 49%,
+        rgb(var(--medium-accent)) 50%,
+        rgb(var(--medium-accent)) 70%,
+        transparent 71%
+    );
+
+    background-size: 15px 30px; 
+    background-repeat: repeat-x;
+    background-position: center bottom; 
+}
+
+.divider-bound {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: rgb(var(--medium-accent));
+    font-weight: bold;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.divider-bound::before,
+.divider-bound::after {
+    content: "";
+    flex: 1;
+    border-bottom: 3px solid rgb(var(--medium-accent));
+    margin: 0 10px; /* space between line and text */
+}
+
+.divider-bound.thick {
+    font-size: 1.2em;
+}
+
+.divider-bound.thim {
+    font-size: 0.8em;
+}
+
+.divider-bound.thick::before,
+.divider-bound.thick::after {
+    border-bottom-width: 5px;
+}
+
+.divider-bound.thin::before,
+.divider-bound.thin::after {
+    border-bottom-width: 1px;
+}
+
+/* Link colors */
+a {
+    color: rgb(var(--medium-accent));
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+a:hover { text-decoration: underline; color: rgb(var(--bright-accent)); }
+
+a:active { color: rgb(var(--sidebar-quotes)); }
+
+a:visited { color: rgb(var(--dark-accent)); }
+
+a.new-page {
+    color: rgb(var(--newpage-color));
+}
+
+/* Header text shadow */
+#header h1 a::before,
+#header h2 span:before {
+    text-shadow: 2px 2px #000;
+}
+
+@media screen and (max-width: 768px) {
+  html, body, #page-title {
+    overflow-x: hidden !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+[[/module]]
+
+[[iftags [[#ifexpr {$army} == (true) | - ]]]]
+[[module CSS]]
+/*Army*/
+
+:root:lang(ja) {
+        --header-title: "財団陸軍";
+        --header-subtitle: "偵察、占領、投入";
+        --swatch-topmenu-bg-color: transparent;
+}
+#extra-div-1 { display: none !important; }
+
+#extra-div-5 { display: none !important; }
+
+#extra-div-3 {
+height: calc(var(--header-height-on-desktop) + var(--topbar-height-on-desktop));
+width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+pointer-events: none;
+background-image: url("https://scpsandboxcn.wdfiles.com/local--files/theme%3Aeatshit/tropmulti.png");
+background-size: 120% auto;
+background-repeat: no-repeat;
+background-position: left top;
+}
+
+#extra-div-6 {
+    height: calc(var(--header-height-on-desktop) + var(--topbar-height-on-desktop));
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 7;
+    background-image:
+        linear-gradient(to top, black, transparent);
+}
+
+/* Scan adapts on mobile */
+@media (max-width: 768px) {
+    #extra-div-2 {
+        height: calc(var(--header-height-on-mobile) + var(--topbar-height-on-mobile));
+    }
+
+    #extra-div-6 {
+        height: calc(var(--header-height-on-mobile) + var(--topbar-height-on-mobile));
+    }
+}
+
+.blockquote-s {
+    background-image: url(https://scpsandboxcn.wdfiles.com/local--files/theme%3Aeatshit/tropmulti.png);
+    background-size: cover;
+    background-position: right;
+    border: 1px solid rgb(var(--dark-accent)); 
+    color: black !important;
+}
+
+.blockquote-s::before {
+    display: block;
+    background-color: rgba(255,255,255,0.8);
+    border: 2px solid rgb(var(--dark-accent));
+}
+
+.blockquote-s > * {
+    position: relative;
+    z-index: 1;
+}
+
+.notebook {
+    background-image: url(https://scpsandboxcn.wdfiles.com/local--files/theme%3Aeatshit/tropmulti.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.notebook::before {
+    display: block;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.notebook > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+
+
+[[/module]]
+[[/iftags]]
+[[iftags [[#ifexpr {$navy} == (true) | - ]]]]\
+[[module CSS]]
+/*Navy*/
+
+@supports(display: grid) {
+:root:lang(ja) {
+        --header-title: "財団海軍";
+        --header-subtitle: "航行、阻止、哨戒";
+        --bright-accent: 75,156,211;
+        --medium-accent: 38,97,156;
+        --dark-accent: 0,35,102;
+        --newpage-color: 153,102,204;
+        --sidebar-quotes: 213, 234, 250;
+        --header-gradient-color-bottom: 38,97,156;
+    }
+}
+
+#extra-div-1 { display: none; }
+#extra-div-5 { display: none !important; }
+
+#extra-div-3 {
+    height: calc(var(--header-height-on-desktop) + var(--topbar-height-on-desktop));
+    width: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    pointer-events: none;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/57/NFP-navy.jpg");
+    background-size: 100% auto;
+    background-position: center top;
+}
+
+#extra-div-6 {
+    height: calc(var(--header-height-on-desktop) + var(--topbar-height-on-desktop));
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 7;
+    background-image:
+        linear-gradient(to top, black, transparent);
+}
+
+/* Scan adapts on mobile */
+@media (max-width: 768px) {
+
+    #extra-div-6 {
+        height: calc(var(--header-height-on-mobile) + var(--topbar-height-on-mobile));
+    }
+
+:root:lang(ja) {
+    --swatch-topmenu-border-color: var(--dark-accent);
+    --swatch-topmenu-bg-color: var(--gray-monochrome);
+}
+}
+
+.blockquote-s {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/57/NFP-navy.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 1px solid rgb(var(--dark-accent));
+}
+
+.blockquote-s::before {
+    display: block;
+    background-color: rgba(255,255,255,0.8);
+    border: 2px solid rgb(var(--dark-accent));
+}
+
+.blockquote-s > * {
+    position: relative;
+    z-index: 1;
+}
+
+.notebook {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/57/NFP-navy.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.notebook::before {
+    display: block;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.notebook > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Navy links */
+a:hover {
+    color: rgb(50,120,180);
+}
+
+[[/module]]
+[[/iftags]]
+
+[[iftags [[#ifexpr {$alert} == (true) | - ]]]]\
+[[module CSS]]
+/*Alert*/
+
+@supports(display: grid) {
+:root:lang(ja) {
+        --header-title: "財団武装部隊";
+        --header-subtitle: "矢は弦にあり";
+        /* ===STANDARD THEME COLORS=== */
+        --bright-accent: 237, 41, 57;
+        --medium-accent: 237, 27, 36;
+        --dark-accent: 150, 0, 24;
+        --sidebar-quotes: 241, 219, 216;
+        --newpage-color: 202, 31, 123;
+        /* ===HEADER GRADIENT=== */
+        --header-gradient-color-bottom: 237, 27, 36;
+        --header-height-on-desktop: 500px;
+        --logo-image: none;
+
+        --swatch-menubg-extra-dark-color: 30, 30, 32;
+
+        /* Old Vars */
+        --black-monochrome: 20, 22, 24;
+        --light-pale-gray-monochrome: 250, 250, 250;
+        --bright-accent: var(--pale-accent);
+        /* Primary Theme Colors */
+        --swatch-background: var(--swatch-menubg-black-color);
+        /* Background and Header Colors */
+        --background-gradient-color: 10, 10, 10;
+        /* Primary Text Colors */
+        --swatch-text-light: var(--light-pale-gray-monochrome);
+        --swatch-text-general: var(--swatch-text-light);
+        /* Primary Menu Colors */
+        --swatch-menubg-color: var(--swatch-menubg-black-color);
+        --swatch-menutxt-general-color: var(--swatch-menutxt-light-color);
+        /* Colors for Secondary & Tertiary items like Blockquote and YUI Tabs */
+        --swatch-secondary-color: var(--swatch-menubg-dark-color);
+        --swatch-tertiary-color: var(--swatch-menubg-medium-dark-color);
+        --swatch-alternate-color: var(--swatch-primary);
+
+        /* Text Colors for Secondary & Tertiary items like Sidebar Headers and Top-Bar Menu Text */
+        --swatch-text-secondary-color: var(--swatch-menutxt-light-color);
+        --swatch-text-tertiary-color: var(--swatch-menutxt-light-color);
+
+        --rating-module-text-color: var(--swatch-text-general);
+        --rating-module-button-color: var(--swatch-text-general);
+        --rating-module-button-cancel-color: 100, 100, 100;
+
+        --ui-wght: 500;
+        --ui-hvr-wght: 600;
+
+
+    }
+
+    #main-content {
+        --pagetags-title-text: var(--swatch-text-secondary-color);
+    }
+
+    #header {
+        --search-icon-color: var(--swatch-text-tertiary-color);
+    }
+
+    #top-bar {
+        /* ===DROPDOWN MENU=== */
+        --dropdown-bg-color: var(--swatch-menubg-extra-dark-color), 0.9;
+    }
+
+    ::-moz-selection {
+        background: rgb(var(--swatch-primary-darkest));
+    }
+
+    ::selection {
+        background: rgb(var(--swatch-primary-darkest));
+    }
+
+    body {
+        -webkit-font-smoothing: subpixel-antialiased;
+        -moz-osx-font-smoothing: auto;
+    }
+
+    #search-top-box-input {
+        background-color: rgb(var(--swatch-menubg-extra-dark-color));
+    }
+
+    #account-options {
+        background: var(--gradient-header);
+    }
+
+    #login-status {
+        color: rgba(var(--swatch-menutxt-light-color), 0.5);
+    }
+
+    #login-status ul a {
+        color: rgb(var(--swatch-menutxt-light-color));
+    }
+
+    span.printuser {
+        color: rgb(var(--swatch-menutxt-light-color));
+    }
+
+    .page-rate-widget-box {
+        background: linear-gradient(to bottom,
+                rgba(var(--header-gradient-color-bottom), 0.5) 0%,
+                rgba(var(--header-gradient-color-middle), 0.15) 90%,
+                rgba(var(--header-gradient-color-top), 0.15) 100%);
+        border: 0.0625rem solid rgba(var(--swatch-menubg-medium-color), 0.25);
+    }
+
+    #top-bar div.mobile-top-bar>ul>li>ul>li>a,
+    #top-bar div.top-bar>ul>li>ul>li>a {
+        box-shadow: inset 0 0 0 0.0625rem rgba(var(--swatch-menubg-medium-color), 0.15);
+    }
+
+    #side-bar .heading p,
+    #side-bar .collapsible-block .collapsible-block-link {
+        color: rgb(var(--swatch-menutxt-light-color));
+    }
+
+    blockquote,
+    .blockquote,
+    .code {
+        --swatch-border-color: var(--swatch-menubg-light-color);
+        border-color: rgba(var(--swatch-border-color), 0.25);
+    }
+
+    .yui-navset .yui-nav,
+    .yui-navset .yui-navset-top .yui-nav {
+        --box-shadow: rgb(var(--swatch-primary-darkest));
+        border-color: rgb(var(--swatch-primary-darkest));
+    }
+
+    .yui-navset .yui-nav li,
+    .yui-navset .yui-navset-top .yui-nav li {
+        --box-shadow: rgb(var(--swatch-primary-darkest));
+    }
+
+    .yui-navset .yui-nav a,
+    .yui-navset .yui-navset-top .yui-nav a {
+        background-color: rgb(var(--swatch-menubg-extra-dark-color));
+        color: rgb(var(--swatch-text-general));
+    }
+
+    .yui-navset .yui-nav .selected,
+    .yui-navset .yui-navset-top .yui-nav .selected {
+        background-color: rgb(var(--swatch-primary-darkest));
+    }
+
+    table.wiki-content-table th {
+        background: rgb(var(--swatch-secondary-color));
+    }
+
+    table.wiki-content-table th,
+    table.wiki-content-table tr {
+        border: 0.0625rem solid rgba(var(--swatch-menubg-medium-color), 0.25) !important;
+    }
+
+    table.wiki-content-table td {
+        border: 0.0625rem solid rgba(var(--swatch-menubg-light-color), 0.25) !important;
+    }
+
+    textarea,
+    input.text,
+    input.checkbox,
+    div.note,
+    #lock-info {
+        border: 0.0625rem solid rgba(var(--swatch-menubg-light-color), 0.25);
+        background-color: rgb(var(--swatch-menubg-extra-dark-color));
+        color: rgb(var(--swatch-text-light));
+    }
+
+    .code pre span[class*="hl-"] {
+        -webkit-filter: invert(1) hue-rotate(180deg);
+        filter: invert(1) hue-rotate(180deg);
+    }
+
+    .owindow .modal-body img {
+        background-color: transparent !important;
+    }
+
+    .hovertip {
+        border: 0.0625rem solid rgba(var(--swatch-menubg-light-color), 0.25);
+        background-color: rgb(var(--swatch-menubg-extra-dark-color)) !important;
+        color: rgb(var(--swatch-text-light)) !important;
+    }
+
+    #main-content .page-tags span a:not([href^="/system:page-tags/tag/_"]),
+    #main-content .page-tags span a:visited:not([href^="/system:page-tags/tag/_"]) {
+        color: rgb(var(--swatch-primary-secondary-color));
+    }
+
+    #footer,
+    #license-area {
+        --link-color: var(--swatch-text-tertiary-color);
+        --hover-link-color: var(--swatch-text-tertiary-color);
+        --visited-link-color: var(--swatch-text-tertiary-color);
+        color: rgb(var(--swatch-text-general));
+    }
+
+    div[id*="page-options-bottom"]>a::after {
+        background-color: rgb(var(--swatch-text-secondary-color));
+    }
+
+    /* ===BUTTONS=== */
+    div[id*="page-options-bottom"]>a::after {
+        background-color: rgb(var(--swatch-text-tertiary-color));
+    }
+}
+
+    }
+
+
+#extra-div-1 { display: none; }
+#extra-div-5 { display: none; }
+
+#extra-div-4 {
+    height: calc(var(--header-height-on-desktop) + var(--topbar-height-on-desktop));
+width: 105%;
+position: absolute;
+top: 0;
+left: 0;
+pointer-events: none;
+background-image: url("https://upload.wikimedia.org/wikipedia/commons/2/28/HMS_Belfast_-_Operations_room_4.jpg");
+background-size: 95% auto;
+background-repeat: no-repeat;
+background-position: left top;
+z-index: 7;
+}
+
+#extra-div-6 {
+    height: calc(var(--header-height-on-desktop) + var(--topbar-height-on-desktop));
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 8;
+    background-image:
+        linear-gradient(to top, rgb(0, 0, 0), transparent);
+    display: block !important;
+}
+
+@media (max-width: 768px) {
+
+    #extra-div-6 {
+        height: calc(var(--header-height-on-mobile) + var(--topbar-height-on-mobile));
+    }
+}
+
+/* ===Blockquote=== */
+.blockquote-s {
+    background-image: none !important;
+    border: 1px solid rgb(var(--dark-accent)) !important;
+    background-color: rgb(var(--sidebar-quotes)) !important;
+}
+
+.blockquote-s::before {
+    display: none !important;
+}
+
+.blockquote-s a,
+.blockquote-s {
+    color: rgb(var(--dark-accent)); 
+}
+
+/* === Link Colors=== */
+a {
+    color: rgb(var(--bright-accent)); /* base red */
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: rgb(200, 30, 45);
+    text-decoration: underline;
+}
+
+a:active {
+    color: rgb(150, 0, 24);
+}
+
+a:visited {
+    color: rgb(180, 20, 35);
+}
+
+a.new-page {
+    color: rgb(var(--newpage-color));
+}
+
+
+
+[[/module]]
+[[/iftags]]
+
+
+[[iftags +テーマ]]
+[[image https://scp-jp.wdfiles.com/local--files/theme%3Ablack-highlighter-theme/black-highlighter-logo.svg]]
+
+[[>]]
+**評価モジュール:**
+[[module Rate]]
+[[/>]]
+
+[[>]]
+**評価モジュールとクレジットモジュール:**
+[[/>]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** 率先垂範テーマ
+**原題:** 身先士卒 主題版式
+**著者:** [[*user Agt Darkwall]]
+**作成年:** 2025
+**翻訳責任者:** SCP-JP
+**翻訳年:** 2026
+**著作権者:** Agt Darkwall
+**初訳時参照リビジョン:** 146
+**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:lead-by-example 身先士卒 主題版式]
+**使用フォント:** Ma Shan Zheng、Noto Sans JP（Google Fonts、SIL OFL 1.1）; VonwaonBitmap 12px（鳳凰点阵体、CC0 1.0、ローカル環境のみ）
+[[include :scp-jp:credit:end-preview]]
+
++ これは何ですか？
+
+これは[[*user Agt Darkwall]]が[[[https://scp-wiki-cn.wikidot.com/slipping-desolation|荏苒荒涼（Slipping Desolation）]]]設定向けに制作した、[[[https://scp-jp.wikidot.com/theme:black-highlighter-theme|Black Highlighter]]]ベースのテーマです。財団武装部隊の世界観に沿ったデザインですが、使用に制限はありません。
+
+本テーマは Black Highlighter を内包しています。使用するには、作品の冒頭に以下の構文を追加してください。
+
+[[div class="code"]]
+@@[[include theme:lead-by-example-jp]]@@
+[[/div]]
+
+「荏苒荒涼」設定の使用範囲は狭いため、財団武装部隊以外の背景で本テーマを使いたい作者向けに、タイトルとロゴをカスタマイズできるようにしています。
+
+つまり、「このテーマは好きだが、財団のロゴではしっくりこない。お気に入りの部署や団体の標章に差し替えたい」と思ったなら、上記のコードの後ろにこれを追加して、思いきりやってください。
+
+[[div class="code"]]
+@@[[module CSS]]@@
+@@:root {@@
+@@     --lgurl: url('画像URLをここに入れる');@@
+@@}@@
+@@:root:lang(ja) {@@
+@@     --header-title: "タイトル";@@
+@@     --header-subtitle: "サブタイトル";@@
+@@}@@
+@@[[/module]]@@
+[[/div]]
+@@@@
+@@@@
+@@@@
++ プリセット
+
+本テーマにはいくつかのプリセット視覚効果が組み込まれており、include時のパラメータを変更することで外観を切り替えられます。
+@@@@
+@@@@
+[[include component:image-block name=https://scpsandboxcn.wdfiles.com/local--files/theme%3Aeatshit-0/navy2.png|caption=SCP海軍迷彩プリセット|width=100%]]
+include方法：
+[[div class="code"]]
+@@[[include theme:lead-by-example-jp |navy=true]]@@
+[[/div]]
+@@@@
+[[include component:image-block name=https://scpsandboxcn.wdfiles.com/local--files/theme%3Aeatshit-0/army2.png|caption=SCP陸軍迷彩プリセット|width=100%]]
+include方法：
+[[div class="code"]]
+@@[[include theme:lead-by-example-jp |army=true]]@@
+[[/div]]
+@@@@
+@@@@
+@@@@
++ テーマカラー
+
+[[include component:theme-squares -=-
+| color1-name=Payne's Grey
+| color1-variable=--gray-monochrome
+| color1-info=(66, 66, 72)
+| color1-has-light-text=1
+| color2-name=Asparagus
+| color2-variable=--bright-accent
+| color2-info=(143, 151, 121)
+| color2-has-light-text=1
+| subcolor1-name=Alto
+| subcolor1-variable=--very-light-gray-monochrome
+| subcolor1-info=(215, 215, 215)
+| subcolor2-name=White Smoke
+| subcolor2-variable=--pale-gray-monochrome
+| subcolor2-info=(244, 244, 244)
+| subcolor3-name=Bastille
+| subcolor3-variable=--dark-gray-monochrome
+| subcolor3-info=(48, 48, 52)
+| subcolor3-has-light-text=1
+| subcolor4-name=Resada Green
+| subcolor4-variable=--medium-accent
+| subcolor4-info=(108, 124, 89)
+| subcolor4-has-light-text=1
+| subcolor5-name=Rifle Green
+| subcolor5-variable=--dark-accent
+| subcolor5-info=(68, 76, 56)
+| subcolor5-has-light-text=1
+| subcolor6-name=Olive Chatreuse
+| subcolor6-variable=--newpage-color
+| subcolor6-info=(181, 195, 0)
+]]
+@@@@
+@@@@
+@@@@
++ 例
+
+5つのハイフン「@@-----@@」で水平線を作成できます。引用ブロックなどほかの部品の中に置かれていなければ、ページ全体を左右に横切って伸びます。ファイルを複数の部分に分けるこうした線が水平線です。
+
+-----
+
+見出しは、行頭に1個から6個のプラス記号「+」を入力して作成できます。
+
+[[collapsible show="+ 見出し" hide="- 見出し"]]
++ レベル1見出し
+
+++ レベル2見出し
+
++++ レベル3見出し
+
+++++ レベル4見出し
+
++++++ レベル5見出し
+
+++++++ レベル6見出し
+[[/collapsible]]
+@@@@
+@@@@
+@@@@
+[[tabview]]
+[[tab タブ]]
+これはタブビューです。
+[[/tab]]
+[[tab タブ]]
+ほら、ここにはさらに文章があります。
+
+なんとも精巧なことでしょう。
+[[/tab]]
+[[tab 長いタブ]]
+これは長いタブで、文章がたくさん入っています。
+
+これは長いタブで、文章がたくさん入っています。
+
+これは長いタブで、文章がたくさん入っています。
+
+これは長いタブで、文章がたくさん入っています。
+
+これは長いタブで、文章がたくさん入っています。
+
+これは長いタブで、文章がたくさん入っています。
+
+これは長いタブで、文章がたくさん入っています。
+
+これは長いタブで、文章がたくさん入っています。
+
+これは長いタブで、文章がたくさん入っています。
+
+これは長いタブで、文章がたくさん入っています。
+
+これは長いタブで、文章がたくさん入っています。
+
+これは長いタブで、文章がたくさん入っています。
+
+これは長いタブで、文章がたくさん入っています。
+[[/tab]]
+[[tab この空のタブには、なぜかとても長い名前が付いています。どうしてこんなに長いのでしょうか？ とても不思議です。]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 段落]]
+99式戦車（車両番号ZTZ-99、計画番号WZ-123）は、中国人民解放軍の最新主力戦車です。比較対象となる96式戦車と比べて、製造コストと性能がともに高く、優れた防弾性能を備え、砲塔と車体はいずれも第三世代複合装甲を採用しています。中国陸軍重機械化合成旅の主力突撃戦力であり、「中国陸戦のエース」と呼ばれています。99式とその後継型は、1999年国慶節50周年軍事パレード以来の各回の閲兵式で装甲方隊の先頭を務めており、解放軍における99式の重要性を示しています。大幅改良型の99A式戦車は、2014年「和平使命-2014」合同演習で初めて公開されました。（Wikipedia より抜粋）
+[[/tab]]
+[[tab 謎のリンク]]
+https://www.bilibili.com/video/BV1GJ411x7h7
+これは何でしょう。気になります。
+[[/tab]]
+[[/tabview]]
+@@@@
+@@@@
+@@@@
+> これは引用ブロックです。行頭に「> 」を付けて作成します。
+>
+> さらに文章
+> -----
+> 水平線
+>
+>> 入れ子の引用ブロック
+@@@@
+||~ これは ||~ 表です ||
+||もうとっくに || 作り方を ||
+||||知っているはずです ||
+@@@@
+@@@@
+@@@@
+
+@@@@
+@@@@
+@@@@
++ 特殊要素
+
+本テーマには見出し、本文、水平線などの特殊要素が複数含まれています。
+
+**以下のようにdivを使うと、別スタイルの引用ブロックを作成できます。**
+[[div class="code"]]
+@@[[div class="blockquote-s"]]@@
+これは別スタイルの引用ブロックです。
+第34任務艦隊は今どこにいるのか。繰り返す、今どこにいるのか。世界中が知りたがっている。
+海軍または陸軍プリセットを使うと、背景は迷彩柄になります。
+注意: 海軍または陸軍プリセットでこのdivを使う場合は、行数をできるだけ40行未満にしてください。そうしないと迷彩背景が過度に引き伸ばされたり拡大されたりします。現在、解決策を検討中です。
+@@[[/div]]@@
+[[/div]]
+[[div class="blockquote-s"]]
+これは別スタイルの引用ブロックです。
+第34任務艦隊は今どこにいるのか。繰り返す、今どこにいるのか。世界中が知りたがっている。
+海軍または陸軍プリセットを使うと、背景は迷彩柄になります。
+注意: 海軍または陸軍プリセットでこのdivを使う場合は、行数をできるだけ40行未満にしてください。そうしないと迷彩背景が過度に引き伸ばされたり拡大されたりします。現在、解決策を検討中です。
+[[/div]]
+@@@@
+@@@@
+@@@@
+**「スキャン」効果付き見出し:**
+[[div class="code"]]
+これは明るい背景でのスキャンです:
+@@[[div class="title-a"]]@@
+2027年5月9日 0332 | カナダ東部、アンティコスティ島
+@@[[/div]]@@
+これは暗い背景でのスキャンです:
+@@[[div class="title-b"]]@@
+2027年5月9日 0332 | カナダ東部、アンティコスティ島
+@@[[/div]]@@
+[[/div]]
+[[div class="title-a"]]
+2027年5月9日 0332 | カナダ東部、アンティコスティ島
+[[/div]]
+@@@@
+[[div class="title-b"]]
+2027年5月9日 0332 | カナダ東部、アンティコスティ島
+[[/div]]
+@@@@
+@@@@
+@@@@
+**「スキャン」効果なしで組版だけを残した見出し:**
+[[div class="code"]]
+これは明るい背景です:
+@@[[div class="title-a-noscan"]]@@
+2027年5月9日 0332 | カナダ東部、アンティコスティ島
+@@[[/div]]@@
+これは暗い背景です:
+@@[[div class="title-b-noscan"]]@@
+2027年5月9日 0332 | カナダ東部、アンティコスティ島
+@@[[/div]]@@
+[[/div]]
+
+[[div class="title-a-noscan"]]
+2027年5月9日 0332 | カナダ東部、アンティコスティ島
+[[/div]]
+@@@@
+[[div class="title-b-noscan"]]
+2027年5月9日 0332 | カナダ東部、アンティコスティ島
+[[/div]]
+@@@@
+@@@@
+@@@@
+**文字化けスクロール効果付き見出し ——COD4から公然と借用しています——:**
+[[div class="code"]]
+@@[[div class="title-c"]]@@
+@@[[span class="glitch" style="--i:0" data-char="“"]]“[[/span]][[span class="glitch" style="--i:1" data-char="砂"]]砂[[/span]][[span class="glitch" style="--i:2" data-char="嵐"]]嵐[[/span]][[span class="glitch" style="--i:3" data-char="作"]]作[[/span]][[span class="glitch" style="--i:4" data-char="戦"]]戦[[/span]][[span class="glitch" style="--i:5" data-char="”"]]”[[/span]]@@
+@@[[/div]]@@
+[[/div]]
+**注意：使用時は十分に気をつけてください。1文字入力するごとに「--i:数字」の値を1ずつ増やす必要があります。どの文字であれ入力を誤ったり、2箇所が対応しなくなったりすると、表示が崩れる可能性があります。**
+
+[[div class="title-c"]]
+[[span class="glitch" style="--i:0" data-char="“"]]“[[/span]][[span class="glitch" style="--i:1" data-char="砂"]]砂[[/span]][[span class="glitch" style="--i:2" data-char="嵐"]]嵐[[/span]][[span class="glitch" style="--i:3" data-char="作"]]作[[/span]][[span class="glitch" style="--i:4" data-char="戦"]]戦[[/span]][[span class="glitch" style="--i:5" data-char="”"]]”[[/span]]
+[[/div]]
+@@@@
+@@@@
+@@@@
+**文字化けスクロール効果なしで組版だけを残した見出し ———これはずっと簡単です———:**
+[[div class="code"]]
+@@[[div class="title-d"]]@@
+「砂嵐」作戦
+@@[[/div]]@@
+[[/div]]
+@@@@
+[[div class="title-d"]]
+「砂嵐」作戦
+[[/div]]
+@@@@
+@@@@
+@@@@
+**グリッドグラデーションを加えた同種の見出し:**
+[[div class="code"]]
+@@[[div class="title-d-grid"]]@@
+「砂嵐」作戦
+@@[[/div]]@@
+[[/div]]
+@@@@
+[[div class="title-d-grid"]]
+「砂嵐」作戦
+[[/div]]
+@@@@
+@@@@
+@@@@
+**「軍用ノートブック」本文ボックス:**
+[[div class="code"]]
+@@[[div class="notebook"]]@@
+    @@[[div class="notebook-grid"]]@@
+    @@[[/div]]@@
+
+    @@[[div class="notebook-divider"]]@@
+    @@[[/div]]@@
+
+    @@[[div class="notebook-lines"]]@@
+海軍または陸軍プリセットを使うと、背景は迷彩柄になります。
+北の基地から来た
+雪白の外套をまとって
+温かな糧食を求めて
+······
+北の基地から来た
+雪白の外套をまとって
+温かな糧食を求めて
+    @@[[/div]]@@
+@@[[/div]]@@
+[[/div]]
+@@@@
+[[div class="notebook"]]
+    [[div class="notebook-grid"]]
+    [[/div]]
+
+    [[div class="notebook-divider"]]
+    [[/div]]
+
+    [[div class="notebook-lines"]]
+海軍または陸軍プリセットを使うと、背景は迷彩柄になります。
+北の基地から来た
+雪白の外套をまとって
+温かな糧食を求めて
+北の基地から来た
+雪白の外套をまとって
+温かな糧食を求めて
+北の基地から来た
+雪白の外套をまとって
+温かな糧食を求めて
+北の基地から来た
+雪白の外套をまとって
+温かな糧食を求めて
+北の基地から来た
+雪白の外套をまとって
+温かな糧食を求めて
+北の基地から来た
+雪白の外套をまとって
+温かな糧食を求めて
+北の基地から来た
+雪白の外套をまとって
+温かな糧食を求めて
+    [[/div]]
+[[/div]]
+@@@@
+@@@@
+@@@@
+**「築城防御線」水平線（NATO標準軍事記号APP-6の「Fortified Line」を参照）:**
+[[div class="code"]]
+これは文章です
+@@~~~~@@
+@@[[div class="divider-fortified"]]@@
+@@[[/div]]@@
+@@~~~~@@
+これは蚊です、ブーン、ブーン。
+[[/div]]
+@@@@
+これは文章です
+~~~~
+[[div class="divider-fortified"]]
+[[/div]]
+~~~~
+これは蚊です、ブーン、ブーン。
+@@@@
+@@@@
+@@@@
+**「蛇腹鉄条網」水平線（NATO標準軍事記号APP-6の「Wire Obstacle (Single Strand Concertina)」を参照）:**
+[[div class="code"]]
+これは文章です
+@@~~~~@@
+@@[[div class="divider-fortified"]]@@
+@@[[/div]]@@
+@@~~~~@@
+これは蚊です（語呂合わせには課金です）
+[[/div]]
+@@@@
+これは文章です
+~~~~
+[[div class="divider-concertina"]]
+[[/div]]
+~~~~
+これは蚊です（語呂合わせには課金です）
+~~~~
+@@@@
+@@@@
+@@@@
+**「部隊分界線」水平線（NATO標準軍事記号APP-6の「Sector Boundaries」を参照）:**
+[[div class="code"]]
+この水平線には太・中・細の3種類があります。以下は太線版です。
+@@~~~~@@
+@@[[div class="divider-bound thick"]]@@
+XXXXXX
+@@[[/div]]@@
+@@~~~~@@
+以下は中線版です。
+@@~~~~@@
+@@[[div class="divider-bound"]]@@
+XXXXXX
+@@[[/div]]@@
+@@~~~~@@
+以下は細線版です。
+@@~~~~@@
+@@[[div class="divider-bound thin"]]@@
+XXXXXX
+@@[[/div]]@@
+@@~~~~@@
+[[/div]]
+@@@@
+これは太線版です。軍事地図では、この種の境界線は通常、一線上の異なる部隊の担当区域を区切るために使われます。
+NATO標準軍事記号では、XXXXXは軍集団を表します。
+~~~~
+[[div class="divider-bound thick"]]
+XXXXX
+[[/div]]
+~~~~
+これは中線版です。一般に、部隊が大きいほど境界線も太くなり、その逆もまた然りです。
+NATO標準軍事記号では、IIIは連隊を表します。
+~~~~
+[[div class="divider-bound "]]
+III
+[[/div]]
+~~~~
+これは細線版です。軍事編制は、必ずしも「軍・師・旅・団・大隊・中隊・小隊・分隊」のように固定されているわけではありません。多くの国は独自の編制を持っており、たとえば米軍の「Section」は班より大きく小隊より小さい単位を指します。
+NATO標準軍事記号では、••は分隊を表します。
+~~~~
+[[div class="divider-bound thin"]]
+••
+[[/div]]
+~~~~
+これは文章です。
+@@@@
+@@@@
+@@@@
+[[=]]
+特殊要素以外のフォントは、[[[https://scp-jp.wikidot.com/theme:black-highlighter-theme|Black Highlighterテーマ]]]と同じです。
+一部の要素では[https://timothyqiu.itch.io/vonwaon-bitmap 鳳凰点阵体]を使用しています。
+一部の要素では[https://fonts.google.com/specimen/Ma+Shan+Zheng Ma Shan Zheng]を使用しています。
+一部の要素では[https://fonts.google.com/noto/specimen/Noto+Sans+JP Noto Sans JP]を使用しています。
+フォントはすべて SIL Open Font License Ver. 1.1 のもとにあります（鳳凰点阵体は CC0 1.0）。
+ChatGPTによるコード支援を一部受けています。
+[[/=]]
+@@@@
+------
+@@@@
+[[collapsible show="+ ソースコードを表示" hide="- ソースコードを隠す"]]
+
+[[code type="css"]]
+[[module CSS]]
+@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+/*Base*/
+@supports(display: grid) {
+:root:lang(ja) {
+    /* S-CSS-P Integration */
+    /* If you're making a new CSS theme, please include the following three variables at minimum. */
+        --theme-base: "nuscp";
+    /* must be either "nuscp" or "sigma9" */
+        --theme-id: "lead-by-example";
+    /* set this to the URL of your theme's page - eg for "component:ar-theme", set it javascript:;to "ar-theme" */
+        --theme-name: "LeadByExample";
+    /* set this to your theme's full name */
+        --header-title: "財団武装部隊";
+        --header-subtitle: "捜索、交戦、防護";
+
+        /* Standard theme colors */
+        --bright-accent: 143,151,121;
+        --medium-accent: 108,124,89;
+        --dark-accent: 68,76,56;
+        --newpage-color: 181,195,0;
+        --sidebar-quotes: 232, 237, 225;
+        --header-gradient-color-bottom: 108,124,89;
+
+    /* Primary Header Colors */
+    --swatch-topmenu-border-color: var(--dark-accent);
+    --swatch-topmenu-bg-color: transparent;
+    --mobile-desktop-sidebar-button-color: var(--medium-accent);
+    --diagonal-stripes: unset;
+        /* ===SIDE-BAR GENERAL=== */
+    --sidebar-bg-color: var(--sidebar-quotes);
+    --sidebar-resources-bg-color: var(--bright-accent);
+    --sidebar-media-bg-color: var(--bright-accent);
+
+        /* ===SIDEBLOCK MENU=== */
+    --sideblock-heading-border-color: transparent;
+    --sideblock-heading-bg-color: var(--dark-accent);
+    --rating-module-button-color: var(--bright-accent);
+    --rating-module-button-color: var(--gray-monochrome);
+
+        /* ===MENU-ITEMS=== */
+    --sidebar-border-color: transparent;
+    --sidebar-subtest-color: transparent;
+
+    --sidebar-links-text: var(--bright-accent);
+    --sidebar-links-hover-bg-color: var(--bright-accent);
+    --sidebar-links-hover-text-color: var(--medium-accent);
+    }
+}
+
+
+/* Sidebar */
+#side-bar {
+    background-color: rgba(var(--sidebar-quotes));
+}
+
+#side-bar .heading p,
+#interwiki .heading p {
+    border-top: 3px rgb(var(--medium-accent));
+    width: 100%;
+    text-align: center;
+    padding: 0.5em;
+    background-color: rgb(var(--medium-accent));
+    color: rgb(255,255,255);
+}
+
+#extra-div-1 {
+    height: calc(var(--header-height-on-desktop) + var(--topbar-height-on-desktop));
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 7;
+    background-image:
+        linear-gradient(to top, black, rgb(var(--medium-accent)));
+}
+
+#extra-div-5 {
+    height: calc(var(--header-height-on-desktop) + var(--topbar-height-on-desktop));
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 8;
+
+    background-image:
+        repeating-linear-gradient(135deg, rgba(255,255,255,0.12) 0px, rgba(255,255,255,0.12) 2px, transparent 4px),
+        linear-gradient(rgba(255,255,255,0.09) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.09) 1px, transparent 1px);
+    background-size: 8px 8px, 40px 40px, 40px 40px;
+    opacity: 0.55;
+    animation: hud-scan 9s linear infinite;
+}
+
+@keyframes hud-scan {
+    0% { background-position: 0 0, 0 0, 0 0; }
+    100% { background-position: -200px 200px, 0 40px, 40px 0; }
+}
+
+/* Scan adapts on mobile */
+@media (max-width: 768px) {
+    #extra-div-1,
+    #extra-div-5 {
+        height: calc(var(--header-height-on-mobile) + var(--topbar-height-on-mobile));
+    }
+
+
+:root:lang(ja) {
+    --swatch-topmenu-border-color: var(--dark-accent);
+    --swatch-topmenu-bg-color: var(--gray-monochrome);
+}
+}
+
+h1, h2 {
+    color: rgb(var(--medium-accent));
+    font-weight: 700;
+}
+
+/* Base blockquote */
+.blockquote-s {
+    min-width: 85% !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    position: relative;
+    font-weight: 500;
+    padding: 1em;
+    margin: 1.2em 0;
+    background-color: rgb(var(--sidebar-quotes)) !important;
+    border: 1px solid rgb(var(--dark-accent));
+    pointer-events: auto;
+    background-image: none;
+    box-shadow: none;
+}
+.blockquote-s::before {
+    content: "";
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 0;
+    border: none !important;
+}
+.blockquote > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Time and place title */
+
+.title-a {
+    position: relative;
+    width: 100%;
+    display: block;
+    margin: auto;
+    font-family: 'VonwaonBitmap 12px', 'Noto Sans JP', monospace;
+    color: rgb(var(--medium-accent));
+    font-weight: 750;
+    font-size: 1.2em;
+
+    padding: 0.1em 0.5em;
+    border-top: 3px solid rgb(var(--gray-monochrome));
+    border-bottom: 3px solid rgb(var(--gray-monochrome));
+    border-left: none;
+    border-right: none;
+    overflow: hidden;
+    width: 100%;
+    background-image: 
+        repeating-linear-gradient(to right, rgba(var(--medium-accent),0.1) 0, rgba(var(--dark-accent),0.1) 1px, transparent 1px, transparent 10px),
+        repeating-linear-gradient(to bottom, rgba(var(--medium-accent),0.1) 0, rgba(var(--dark-accent),0.1) 1px, transparent 1px, transparent 10px);
+    background-size: 100% 100%;
+}
+
+.title-a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+
+    background: linear-gradient(
+        90deg,
+        rgba(var(--medium-accent), 0) 0%, 
+        rgba(var(--medium-accent), 0.35) 40%, 
+        rgba(var(--medium-accent), 0.5) 50%,
+        rgba(var(--medium-accent), 0.35) 51%,
+        rgba(var(--medium-accent), 0.1) 52%,  
+        rgba(var(--medium-accent), 0.05) 60%,  
+        rgba(var(--medium-accent), 0) 100%
+    );
+    filter: drop-shadow(0 0 4px rgba(var(--medium-accent), 0.6));
+    animation: scan-horizontal-neon 3s linear infinite;
+}
+
+@keyframes scan-horizontal-neon {
+    0%   { left: -100%; opacity: 0.5; }
+    25%  { opacity: 1; }
+    50%  { left: 50%; opacity: 0.7; }
+    75%  { opacity: 1; }
+    100% { left: 150%; opacity: 0.5; }
+}
+
+/* Titles A and B */
+.title-b {
+    position: relative;
+    width: 100%;
+    display: block;
+    margin: auto;
+    font-family: 'VonwaonBitmap 12px', 'Noto Sans JP', monospace;
+    color: rgb(var(--dark-accent));
+    font-weight: 800;
+    font-size: 1.2em;
+
+    padding: 0.1em 0.5em;
+    border-top: 3px solid rgb(var(--gray-monochrome));
+    border-bottom: 3px solid rgb(var(--gray-monochrome));
+    border-left: none;
+    border-right: none;
+    overflow: hidden;
+
+    background-color: rgba(var(--bright-accent), 0.2);
+
+    background-image: 
+        background: linear-gradient(to bottom, black, rgb(var(--medium-accent)));
+        repeating-linear-gradient(to right, rgba(var(--medium-accent),0.5) 0, rgba(var(--medium-accent),0.05) 1px, transparent 1px, transparent 10px),
+        repeating-linear-gradient(to bottom, rgba(var(--medium-accent),0.5) 0, rgba(var(--medium-accent),0.05) 1px, transparent 1px, transparent 10px);
+    background-size: 100% 100%;
+}
+
+.title-b::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+
+    background: linear-gradient(
+        90deg,
+        rgba(var(--pale-gray-monochrome), 0) 0%, 
+        rgba(var(--pale-gray-monochrome), 0.85) 40%, 
+        rgba(var(--pale-gray-monochrome), 1) 50%,
+        rgba(var(--pale-gray-monochrome), 0.85) 51%,
+        rgba(var(--pale-gray-monochrome), 0.5) 55%,  
+        rgba(var(--pale-gray-monochrome), 0.3) 60%,  
+        rgba(var(--pale-gray-monochrome), 0) 100%
+    );
+    filter: drop-shadow(0 0 4px rgba(var(--medium-accent), 0.6));
+    animation: scan-horizontal-neon 3s linear infinite;
+}
+
+@keyframes scan-horizontal-neon {
+    0%   { left: -100%; opacity: 0.5; }
+    25%  { opacity: 1; }
+    50%  { left: 50%; opacity: 0.7; }
+    75%  { opacity: 1; }
+    100% { left: 150%; opacity: 0.5; }
+}
+
+.title-a-noscan {
+    position: relative;
+    width: 100%;
+    display: block;
+    margin: auto;
+    font-family: 'VonwaonBitmap 12px', 'Noto Sans JP', monospace;
+    color: rgb(var(--medium-accent));
+    font-weight: 750;
+    font-size: 1.2em;
+
+    padding: 0.1em 0.5em;
+    border-top: 3px solid rgb(var(--gray-monochrome));
+    border-bottom: 3px solid rgb(var(--gray-monochrome));
+    border-left: none;
+    border-right: none;
+    overflow: hidden;
+    width: 100%;
+    background-image: 
+        repeating-linear-gradient(to right, rgba(var(--medium-accent),0.1) 0, rgba(var(--dark-accent),0.1) 1px, transparent 1px, transparent 10px),
+        repeating-linear-gradient(to bottom, rgba(var(--medium-accent),0.1) 0, rgba(var(--dark-accent),0.1) 1px, transparent 1px, transparent 10px);
+    background-size: 100% 100%;
+}
+
+.title-b-noscan {
+    position: relative;
+    width: 100%;
+    display: block;
+    margin: auto;
+    font-family: 'VonwaonBitmap 12px', 'Noto Sans JP', monospace;
+    color: rgb(var(--dark-accent));
+    font-weight: 800;
+    font-size: 1.2em;
+
+    padding: 0.1em 0.5em;
+    border-top: 3px solid rgb(var(--gray-monochrome));
+    border-bottom: 3px solid rgb(var(--gray-monochrome));
+    border-left: none;
+    border-right: none;
+    overflow: hidden;
+
+    background-color: rgba(var(--bright-accent), 0.2);
+
+    background-image: 
+        repeating-linear-gradient(to right, rgba(var(--medium-accent),0.5) 0, rgba(var(--medium-accent),0.05) 1px, transparent 1px, transparent 10px),
+        repeating-linear-gradient(to bottom, rgba(var(--medium-accent),0.5) 0, rgba(var(--medium-accent),0.05) 1px, transparent 1px, transparent 10px);
+    background-size: 100% 100%;
+}
+
+/* Title C and D */
+
+/* Title C */
+.title-c {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    font-family: 'VonwaonBitmap 12px', 'Noto Sans JP', monospace;
+    font-size: 2.1em;
+    font-weight: 900;
+    text-align: left;
+    letter-spacing: 0.12em;
+    color: rgb(var(--pale-gray-monochrome));
+    line-height: 1;
+    z-index: 1; /* base */
+}
+
+.title-c span {
+    position: relative;
+    color: transparent;
+    display: inline-block;
+}
+
+.title-c span::before {
+    content: attr(data-char);
+    position: absolute;
+    top: 0; left: 0;
+    color: rgb(var(--pale-gray-monochrome));
+    animation: char-roll 20s infinite;
+    animation-delay: calc(var(--i) * 0.15s);
+    z-index: 2; /* below borders */
+    text-shadow:
+       -1px -1px 0 rgb(var(--medium-accent)),
+        1px -1px 0 rgb(var(--medium-accent)),
+       -1px  1px 0 rgb(var(--medium-accent)),
+        1px  1px 0 rgb(var(--medium-accent)),
+        0  -1px 0 rgb(var(--medium-accent)),
+        0   1px 0 rgb(var(--medium-accent)),
+       -1px  0  0 rgb(var(--medium-accent)),
+        1px  0  0 rgb(var(--medium-accent));
+}
+
+/* Animation */
+@keyframes char-roll {
+0% { content: "▓"; opacity: 0; } 
+5% { content: "▓"; opacity: 0; } 
+10% { content: "▓"; opacity: 1; } 
+15% { content: "%"; opacity: 1; } 
+20% { content: "#"; opacity: 1; } 
+25% { content: "□"; opacity: 1; } 
+30% { content: "?"; opacity: 1; } 
+35% { content: "$"; opacity: 1; } 
+40% { content: "@"; opacity: 1; } 
+41%,89% { content: attr(data-char); opacity: 1; } 
+90% { content: "▓"; opacity: 1; } 
+93% { content: "▓"; opacity: 0; } 
+100% { content: "▓"; opacity: 0; }
+}
+
+.title-c::before,
+.title-c::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: rgb(var(--dark-accent));
+    z-index: 3; /* above glitch */
+}
+.title-c::before { bottom: 0.55em; height: 3px; }
+.title-c::after  { bottom: 0.7em; height: 1px; }
+
+/* Title D */
+.title-d {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    font-family: 'VonwaonBitmap 12px', 'Noto Sans JP', monospace;
+    font-size: 2.1em;
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: 0.12em;
+    color: rgb(var(--pale-gray-monochrome));
+    line-height: 1;
+
+    text-shadow:
+       -1px -1px 0 rgb(var(--medium-accent)),
+        1px -1px 0 rgb(var(--medium-accent)),
+       -1px  1px 0 rgb(var(--medium-accent)),
+        1px  1px 0 rgb(var(--medium-accent)),
+        0  -1px 0 rgb(var(--medium-accent)),
+        0   1px 0 rgb(var(--medium-accent)),
+       -1px  0  0 rgb(var(--medium-accent)),
+        1px  0  0 rgb(var(--medium-accent));
+}
+
+.title-d::before,
+.title-d::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: rgb(var(--dark-accent));
+    z-index: 1;
+}
+.title-d::before { bottom: 0.55em; height: 3px; }
+.title-d::after  { bottom: 0.7em; height: 1px; }
+
+
+/* Title D with grid */
+.title-d-grid {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    font-family: 'VonwaonBitmap 12px', 'Noto Sans JP', monospace;
+    font-size: 2.1em;
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: 0.12em;
+    color: rgb(var(--pale-gray-monochrome));
+    line-height: 1;
+    margin: 0;
+    padding-bottom: 0.7em; /* for borders */
+
+    text-shadow:
+       -1px -1px 0 rgb(var(--medium-accent)),
+        1px -1px 0 rgb(var(--medium-accent)),
+       -1px  1px 0 rgb(var(--medium-accent)),
+        1px  1px 0 rgb(var(--medium-accent)),
+        0  -1px 0 rgb(var(--medium-accent)),
+        0   1px 0 rgb(var(--medium-accent)),
+       -1px  0  0 rgb(var(--medium-accent)),
+        1px  0  0 rgb(var(--medium-accent));
+
+    background-image: 
+        linear-gradient(to top, rgba(var(--newpage-color), 0.6), rgba(var(--newpage-color), 0.2)),
+        repeating-linear-gradient(
+            0deg,
+            rgba(var(--pale-gray-monochrome), 1) 0px,
+            rgba(var(--pale-gray-monochrome), 1) 1px,
+            transparent 1px,
+            transparent 20px
+        ),
+        repeating-linear-gradient(
+            90deg,
+            rgba(var(--pale-gray-monochrome), 1) 0px,
+            rgba(var(--pale-gray-monochrome), 1) 1px,
+            transparent 1px,
+            transparent 20px
+        );
+    background-blend-mode: overlay;
+    background-repeat: repeat;
+    background-size: auto;
+    background-clip: content-box;
+}
+
+/* Double border for grid */
+.title-d-grid::before,
+.title-d-grid::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: rgb(var(--dark-accent));
+    z-index: 1;
+}
+.title-d-grid::before { bottom: 0.55em; height: 3px; }
+.title-d-grid::after  { bottom: 0.7em; height: 1px; }
+
+/* Notebook Container */
+
+.notebook {
+    border: 4px solid rgb(var(--dark-accent));
+    background: rgba(var(--medium-accent), 0.7);
+    margin: 1.5em 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 10px;
+    width: 97%;
+    border-right: 17px solid rgb(var(--dark-accent));
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+
+}
+
+.notebook::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+    pointer-events: none;
+    z-index: 0;
+    display: none;
+}
+
+.notebook > * {
+    position: relative;
+    z-index: 1;
+}
+
+.notebook-grid {
+    flex: 0 0 60px;
+    width: 80%;
+    margin: auto;
+    background-image:
+        repeating-linear-gradient(
+            0deg,
+            rgba(var(--medium-accent), 0.9) 0px,
+            rgba(var(--medium-accent), 0.9) 1px,
+            transparent 1px,
+            transparent 15px
+        ),
+        repeating-linear-gradient(
+            90deg,
+            rgba(var(--medium-accent), 0.9) 0px,
+            rgba(var(--medium-accent), 0.9) 1px,
+            transparent 1px,
+            transparent 15px
+        );
+    background-color: rgb(var(--sidebar-quotes));
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 30px;
+    border-top: 1px solid rgb(var(--dark-accent));
+    border-left: 1px solid rgb(var(--dark-accent));
+    border-right: 1px solid rgb(var(--dark-accent));
+    box-shadow: 4px 0 6px -2px rgba(0,0,0,0.3);
+}
+
+
+.notebook-divider {
+    height: 5px;
+    background-color: rgb(var(--dark-accent));
+    width: 80%;
+    margin: auto;
+    border-left: 1px solid rgb(var(--dark-accent));
+    border-right: 1px solid rgb(var(--dark-accent));
+    box-shadow: 4px 0 6px -2px rgba(0,0,0,0.3);
+}
+
+.notebook-lines {
+    width: 80%;
+    margin: auto;
+    display: block;
+    overflow: hidden;
+    font-family: 'Ma Shan Zheng', cursive;
+    font-size: 1.2em;
+    font-style: normal;
+
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: linear-gradient(to top ,rgb(var(--medium-accent)) 0%, rgb(var(--sidebar-quotes)) 8%);
+    background-origin: padding-box;
+    background-position: 0px 8px;
+    background-repeat: repeat;
+    background-size: 100% 20px;
+
+    border-bottom: 1px solid rgb(var(--dark-accent));
+    border-left: 1px solid rgb(var(--dark-accent));
+    border-right: 1px solid rgb(var(--dark-accent));
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px 10px;
+    margin-bottom: 30px;
+
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5)
+    }
+.notebook-lines p,
+.notebook-lines ul {
+    line-height: 20px;
+    margin: 0;
+}
+    text-shadow:
+        0 0 1px rgba(var(--pale-gray-monochrome), 0.3),
+        0.4px 0.4px 0 rgba(var(--black-monochrome), 0.4),
+        -0.3px -0.3px 0 rgba(var(--black-monochrome), 0.4);
+    opacity: 0.92;
+}
+
+.notebook-lines::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+        repeating-linear-gradient(
+            45deg,
+            rgba(255, 255, 255, 0.02) 0px,
+            rgba(255, 255, 255, 0.02) 2px,
+            transparent 2px,
+            transparent 4px
+        );
+    mix-blend-mode: overlay;
+    opacity: 0.05;
+    pointer-events: none;
+}
+
+.notebook-grid,
+.notebook-divider,
+.notebook-lines {
+    box-sizing: border-box;
+}
+
+.divider-fortified {
+    position: relative;
+    height: 4px;
+    background-color: rgb(var(--medium-accent));
+    margin-top: 35px;
+    margin-bottom: 20px;
+    width: 100%;
+    overflow: visible;
+}
+
+.divider-fortified::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 87.5%;
+    height: 12px;
+
+    background-image:
+        repeating-linear-gradient(
+            90deg,
+            rgb(var(--medium-accent)) 0 12px,
+            transparent 12px 20px
+        );
+
+    background-size: 20px 12px;
+    background-repeat: repeat-x;
+    -webkit-mask-image: linear-gradient(to top, transparent 30%, black 30%);
+    mask-image: linear-gradient(to top, transparent 30%, black 30%);
+    background-position: center bottom;
+    pointer-events: none;
+}
+
+.divider-concertina {
+    position: relative;
+    height: 3px;
+    background-color: rgb(var(--medium-accent));
+    overflow: visible;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.divider-concertina::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -1px;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 30px;
+
+
+    background-image: radial-gradient(
+        ellipse 7px 15px at center 60%,
+        transparent 49%,
+        rgb(var(--medium-accent)) 50%,
+        rgb(var(--medium-accent)) 70%,
+        transparent 71%
+    );
+
+    background-size: 15px 30px; 
+    background-repeat: repeat-x;
+    background-position: center bottom; 
+}
+
+.divider-bound {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: rgb(var(--medium-accent));
+    font-weight: bold;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.divider-bound::before,
+.divider-bound::after {
+    content: "";
+    flex: 1;
+    border-bottom: 3px solid rgb(var(--medium-accent));
+    margin: 0 10px; /* space between line and text */
+}
+
+.divider-bound.thick {
+    font-size: 1.2em;
+}
+
+.divider-bound.thim {
+    font-size: 0.8em;
+}
+
+.divider-bound.thick::before,
+.divider-bound.thick::after {
+    border-bottom-width: 5px;
+}
+
+.divider-bound.thin::before,
+.divider-bound.thin::after {
+    border-bottom-width: 1px;
+}
+
+/* Link colors */
+a {
+    color: rgb(var(--medium-accent));
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+a:hover { text-decoration: underline; color: rgb(var(--bright-accent)); }
+
+a:active { color: rgb(var(--sidebar-quotes)); }
+
+a:visited { color: rgb(var(--dark-accent)); }
+
+a.new-page {
+    color: rgb(var(--newpage-color));
+}
+
+/* Header text shadow */
+#header h1 a::before,
+#header h2 span:before {
+    text-shadow: 2px 2px #000;
+}
+
+@media screen and (max-width: 768px) {
+  html, body, #page-title {
+    overflow-x: hidden !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+[[/module]]
+[[iftags [[#ifexpr {$army} == (true) | - ]]]]
+[[module CSS]]
+/*Army*/
+
+:root:lang(ja) {
+        --header-title: "財団陸軍";
+        --header-subtitle: "偵察、占領、投入";
+        --swatch-topmenu-bg-color: transparent;
+}
+#extra-div-1 { display: none !important; }
+
+#extra-div-5 { display: none !important; }
+
+#extra-div-3 {
+height: calc(var(--header-height-on-desktop) + var(--topbar-height-on-desktop));
+width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+pointer-events: none;
+background-image: url("https://scpsandboxcn.wdfiles.com/local--files/theme%3Aeatshit/tropmulti.png");
+background-size: 120% auto;
+background-repeat: no-repeat;
+background-position: left top;
+}
+
+#extra-div-6 {
+    height: calc(var(--header-height-on-desktop) + var(--topbar-height-on-desktop));
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 7;
+    background-image:
+        linear-gradient(to top, black, transparent);
+}
+
+/* Scan adapts on mobile */
+@media (max-width: 768px) {
+    #extra-div-2 {
+        height: calc(var(--header-height-on-mobile) + var(--topbar-height-on-mobile));
+    }
+
+    #extra-div-6 {
+        height: calc(var(--header-height-on-mobile) + var(--topbar-height-on-mobile));
+    }
+}
+
+.blockquote-s {
+    background-image: url(https://scpsandboxcn.wdfiles.com/local--files/theme%3Aeatshit/tropmulti.png);
+    background-size: cover;
+    background-position: right;
+    border: 1px solid rgb(var(--dark-accent)); 
+    color: black !important;
+}
+
+.blockquote-s::before {
+    display: block;
+    background-color: rgba(255,255,255,0.8);
+    border: 2px solid rgb(var(--dark-accent));
+}
+
+.blockquote-s > * {
+    position: relative;
+    z-index: 1;
+}
+
+.notebook {
+    background-image: url(https://scpsandboxcn.wdfiles.com/local--files/theme%3Aeatshit/tropmulti.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.notebook::before {
+    display: block;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.notebook > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+
+
+[[/module]]
+[[/iftags]]
+
+[[iftags [[#ifexpr {$navy} == (true) | - ]]]]\
+[[module CSS]]
+/*Navy*/
+
+@supports(display: grid) {
+:root:lang(ja) {
+        --header-title: "財団海軍";
+        --header-subtitle: "航行、阻止、哨戒";
+        --bright-accent: 75,156,211;
+        --medium-accent: 38,97,156;
+        --dark-accent: 0,35,102;
+        --newpage-color: 153,102,204;
+        --sidebar-quotes: 213, 234, 250;
+        --header-gradient-color-bottom: 38,97,156;
+    }
+}
+
+#extra-div-1 { display: none; }
+#extra-div-5 { display: none !important; }
+
+#extra-div-3 {
+    height: calc(var(--header-height-on-desktop) + var(--topbar-height-on-desktop));
+    width: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    pointer-events: none;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/57/NFP-navy.jpg");
+    background-size: 100% auto;
+    background-position: center top;
+}
+
+#extra-div-6 {
+    height: calc(var(--header-height-on-desktop) + var(--topbar-height-on-desktop));
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 7;
+    background-image:
+        linear-gradient(to top, black, transparent);
+}
+
+/* Scan adapts on mobile */
+@media (max-width: 768px) {
+
+    #extra-div-6 {
+        height: calc(var(--header-height-on-mobile) + var(--topbar-height-on-mobile));
+    }
+
+:root:lang(ja) {
+    --swatch-topmenu-border-color: var(--dark-accent);
+    --swatch-topmenu-bg-color: var(--gray-monochrome);
+}
+}
+
+.blockquote-s {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/57/NFP-navy.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 1px solid rgb(var(--dark-accent));
+}
+
+.blockquote-s::before {
+    display: block;
+    background-color: rgba(255,255,255,0.8);
+    border: 2px solid rgb(var(--dark-accent));
+}
+
+.blockquote-s > * {
+    position: relative;
+    z-index: 1;
+}
+
+.notebook {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/57/NFP-navy.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.notebook::before {
+    display: block;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.notebook > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Navy links */
+a:hover {
+    color: rgb(50,120,180);
+}
+
+[[/module]]
+[[/iftags]]
+
+[[iftags [[#ifexpr {$alert} == (true) | - ]]]]\
+[[module CSS]]
+/*Alert*/
+
+@supports(display: grid) {
+:root:lang(ja) {
+        --header-title: "財団武装部隊";
+        --header-subtitle: "矢は弦にあり";
+        /* ===STANDARD THEME COLORS=== */
+        --bright-accent: 237, 41, 57;
+        --medium-accent: 237, 27, 36;
+        --dark-accent: 150, 0, 24;
+        --sidebar-quotes: 241, 219, 216;
+        --newpage-color: 202, 31, 123;
+        /* ===HEADER GRADIENT=== */
+        --header-gradient-color-bottom: 237, 27, 36;
+        --header-height-on-desktop: 500px;
+        --logo-image: none;
+
+        --swatch-menubg-extra-dark-color: 30, 30, 32;
+
+        /* Old Vars */
+        --black-monochrome: 20, 22, 24;
+        --light-pale-gray-monochrome: 250, 250, 250;
+        --bright-accent: var(--pale-accent);
+        /* Primary Theme Colors */
+        --swatch-background: var(--swatch-menubg-black-color);
+        /* Background and Header Colors */
+        --background-gradient-color: 10, 10, 10;
+        /* Primary Text Colors */
+        --swatch-text-light: var(--light-pale-gray-monochrome);
+        --swatch-text-general: var(--swatch-text-light);
+        /* Primary Menu Colors */
+        --swatch-menubg-color: var(--swatch-menubg-black-color);
+        --swatch-menutxt-general-color: var(--swatch-menutxt-light-color);
+        /* Colors for Secondary & Tertiary items like Blockquote and YUI Tabs */
+        --swatch-secondary-color: var(--swatch-menubg-dark-color);
+        --swatch-tertiary-color: var(--swatch-menubg-medium-dark-color);
+        --swatch-alternate-color: var(--swatch-primary);
+
+        /* Text Colors for Secondary & Tertiary items like Sidebar Headers and Top-Bar Menu Text */
+        --swatch-text-secondary-color: var(--swatch-menutxt-light-color);
+        --swatch-text-tertiary-color: var(--swatch-menutxt-light-color);
+
+        --rating-module-text-color: var(--swatch-text-general);
+        --rating-module-button-color: var(--swatch-text-general);
+        --rating-module-button-cancel-color: 100, 100, 100;
+
+        --ui-wght: 500;
+        --ui-hvr-wght: 600;
+
+
+    }
+
+    #main-content {
+        --pagetags-title-text: var(--swatch-text-secondary-color);
+    }
+
+    #header {
+        --search-icon-color: var(--swatch-text-tertiary-color);
+    }
+
+    #top-bar {
+        /* ===DROPDOWN MENU=== */
+        --dropdown-bg-color: var(--swatch-menubg-extra-dark-color), 0.9;
+    }
+
+    ::-moz-selection {
+        background: rgb(var(--swatch-primary-darkest));
+    }
+
+    ::selection {
+        background: rgb(var(--swatch-primary-darkest));
+    }
+
+    body {
+        -webkit-font-smoothing: subpixel-antialiased;
+        -moz-osx-font-smoothing: auto;
+    }
+
+    #search-top-box-input {
+        background-color: rgb(var(--swatch-menubg-extra-dark-color));
+    }
+
+    #account-options {
+        background: var(--gradient-header);
+    }
+
+    #login-status {
+        color: rgba(var(--swatch-menutxt-light-color), 0.5);
+    }
+
+    #login-status ul a {
+        color: rgb(var(--swatch-menutxt-light-color));
+    }
+
+    span.printuser {
+        color: rgb(var(--swatch-menutxt-light-color));
+    }
+
+    .page-rate-widget-box {
+        background: linear-gradient(to bottom,
+                rgba(var(--header-gradient-color-bottom), 0.5) 0%,
+                rgba(var(--header-gradient-color-middle), 0.15) 90%,
+                rgba(var(--header-gradient-color-top), 0.15) 100%);
+        border: 0.0625rem solid rgba(var(--swatch-menubg-medium-color), 0.25);
+    }
+
+    #top-bar div.mobile-top-bar>ul>li>ul>li>a,
+    #top-bar div.top-bar>ul>li>ul>li>a {
+        box-shadow: inset 0 0 0 0.0625rem rgba(var(--swatch-menubg-medium-color), 0.15);
+    }
+
+    #side-bar .heading p,
+    #side-bar .collapsible-block .collapsible-block-link {
+        color: rgb(var(--swatch-menutxt-light-color));
+    }
+
+    blockquote,
+    .blockquote,
+    .code {
+        --swatch-border-color: var(--swatch-menubg-light-color);
+        border-color: rgba(var(--swatch-border-color), 0.25);
+    }
+
+    .yui-navset .yui-nav,
+    .yui-navset .yui-navset-top .yui-nav {
+        --box-shadow: rgb(var(--swatch-primary-darkest));
+        border-color: rgb(var(--swatch-primary-darkest));
+    }
+
+    .yui-navset .yui-nav li,
+    .yui-navset .yui-navset-top .yui-nav li {
+        --box-shadow: rgb(var(--swatch-primary-darkest));
+    }
+
+    .yui-navset .yui-nav a,
+    .yui-navset .yui-navset-top .yui-nav a {
+        background-color: rgb(var(--swatch-menubg-extra-dark-color));
+        color: rgb(var(--swatch-text-general));
+    }
+
+    .yui-navset .yui-nav .selected,
+    .yui-navset .yui-navset-top .yui-nav .selected {
+        background-color: rgb(var(--swatch-primary-darkest));
+    }
+
+    table.wiki-content-table th {
+        background: rgb(var(--swatch-secondary-color));
+    }
+
+    table.wiki-content-table th,
+    table.wiki-content-table tr {
+        border: 0.0625rem solid rgba(var(--swatch-menubg-medium-color), 0.25) !important;
+    }
+
+    table.wiki-content-table td {
+        border: 0.0625rem solid rgba(var(--swatch-menubg-light-color), 0.25) !important;
+    }
+
+    textarea,
+    input.text,
+    input.checkbox,
+    div.note,
+    #lock-info {
+        border: 0.0625rem solid rgba(var(--swatch-menubg-light-color), 0.25);
+        background-color: rgb(var(--swatch-menubg-extra-dark-color));
+        color: rgb(var(--swatch-text-light));
+    }
+
+    .code pre span[class*="hl-"] {
+        -webkit-filter: invert(1) hue-rotate(180deg);
+        filter: invert(1) hue-rotate(180deg);
+    }
+
+    .owindow .modal-body img {
+        background-color: transparent !important;
+    }
+
+    .hovertip {
+        border: 0.0625rem solid rgba(var(--swatch-menubg-light-color), 0.25);
+        background-color: rgb(var(--swatch-menubg-extra-dark-color)) !important;
+        color: rgb(var(--swatch-text-light)) !important;
+    }
+
+    #main-content .page-tags span a:not([href^="/system:page-tags/tag/_"]),
+    #main-content .page-tags span a:visited:not([href^="/system:page-tags/tag/_"]) {
+        color: rgb(var(--swatch-primary-secondary-color));
+    }
+
+    #footer,
+    #license-area {
+        --link-color: var(--swatch-text-tertiary-color);
+        --hover-link-color: var(--swatch-text-tertiary-color);
+        --visited-link-color: var(--swatch-text-tertiary-color);
+        color: rgb(var(--swatch-text-general));
+    }
+
+    div[id*="page-options-bottom"]>a::after {
+        background-color: rgb(var(--swatch-text-secondary-color));
+    }
+
+    /* ===BUTTONS=== */
+    div[id*="page-options-bottom"]>a::after {
+        background-color: rgb(var(--swatch-text-tertiary-color));
+    }
+}
+
+    }
+
+
+#extra-div-1 { display: none; }
+#extra-div-5 { display: none; }
+
+#extra-div-4 {
+    height: calc(var(--header-height-on-desktop) + var(--topbar-height-on-desktop));
+width: 105%;
+position: absolute;
+top: 0;
+left: 0;
+pointer-events: none;
+background-image: url("https://upload.wikimedia.org/wikipedia/commons/2/28/HMS_Belfast_-_Operations_room_4.jpg");
+background-size: 95% auto;
+background-repeat: no-repeat;
+background-position: left top;
+z-index: 7;
+}
+
+#extra-div-6 {
+    height: calc(var(--header-height-on-desktop) + var(--topbar-height-on-desktop));
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 8;
+    background-image:
+        linear-gradient(to top, rgb(0, 0, 0), transparent);
+    display: block !important;
+}
+
+@media (max-width: 768px) {
+
+    #extra-div-6 {
+        height: calc(var(--header-height-on-mobile) + var(--topbar-height-on-mobile));
+    }
+}
+
+/* ===Blockquote=== */
+.blockquote-s {
+    background-image: none !important;
+    border: 1px solid rgb(var(--dark-accent)) !important;
+    background-color: rgb(var(--sidebar-quotes)) !important;
+}
+
+.blockquote-s::before {
+    display: none !important;
+}
+
+.blockquote-s a,
+.blockquote-s {
+    color: rgb(var(--dark-accent)); 
+}
+
+/* === Link Colors=== */
+a {
+    color: rgb(var(--bright-accent)); /* base red */
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: rgb(200, 30, 45);
+    text-decoration: underline;
+}
+
+a:active {
+    color: rgb(150, 0, 24);
+}
+
+a:visited {
+    color: rgb(180, 20, 35);
+}
+
+a.new-page {
+    color: rgb(var(--newpage-color));
+}
+
+
+
+[[/module]]
+[[/iftags]]
+[[/code]]
+[[/collapsible]]
+[[/iftags]]
