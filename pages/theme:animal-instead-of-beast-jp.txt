@@ -1,0 +1,647 @@
+[[module CSS]]
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aanimal-instead-of-beast-jp/1');
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aanimal-instead-of-beast-jp/1
+]]
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** 獣ではなく動物 テーマ
+**翻訳責任者:** SCP-JP
+**翻訳年:** 2026
+**原題:** 짐승 대신 동물 CSS 테마
+**著作権者:** 原語版ページの作成者に同じ（scpko の theme:animal-instead-of-beast）
+**作成年:** 2023
+**初訳時参照リビジョン:** 5
+**元記事リンク:** [*https://scpko.wikidot.com/theme:animal-instead-of-beast 짐승 대신 동물 CSS 테마]
+[[include :scp-jp:credit:end-preview]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://scpko.wikidot.com/local--code/theme%3Aanimal-instead-of-beast/1
+]]
+
++ 獣のかわりに動物 CSSテーマ
+
+**評価モジュール:**
+
+**クレジット付き評価モジュール:**
+
+[[include info:start]]
+[[include info:end]]
+
+獣のかわりに動物 CSSテーマは、[[*user c_bonefish]]が超常動物学部、または同種の作品のために制作しました。
+
+このテーマを適用するには、次の構文をページ上部に挿入してください。
+> @@[[include :scp-jp:theme:animal-instead-of-beast]]@@
+@@@@
+-----
++ ページ要素
+@@@@
+[[include component:image-block name=https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aanimal-instead-of-beast-jp/logo.png|caption=ロゴ|width=200px]]
+
++ 見出し1
+++ 見出し2
++++ 見出し3
+++++ 見出し4
++++++ 見出し5
+++++++ 見出し6
+@@@@
+@@@@
+@@@@
+[[tabview]] [[tab tab1]]
+[[=]]
+サンプルテキスト
+
+> + Link
+> [# 未訪問リンク] | [[[theme:animal-instead-of-beast|訪問済みリンク]]]
+> -----
+>> テキスト[[footnote]]こんこん[[/footnote]]
+[[/=]]
+[[/tab]] [[tab tab2]]
+[[/tab]] [[/tabview]]
+@@@@
+-----
++ CSSテーマコード
+
+@@@@
+
++ ソースコード
+
+[[collapsible show="> コードを表示" hide="> コードを閉じる"]]
+[[code type="css"]]
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
+
+/*
+    짐승 대신 동물 / Animal Instead of Beast — Ported for SCP-JP (theme:animal-instead-of-beast rev 5 on scpko).
+*/
+/* 日本語フォント (JP localization) */
+
+/*
+    Animal Instead Of Beast CSS Theme
+    [2023 Wikidot Theme]
+
+    Created by c_bonefish
+    Base Code by Denevola
+    Logo by DEFECT15
+
+    CC BY-SA 3.0
+*/
+
+:root {
+   --color-1: #F9FCF9;
+   --color-2: #233823;
+
+   --color-3: #C7E5C7;
+   --color-4: #F2FCF2;
+
+   --color-5: #324332;
+   --color-6: #516D51;
+   --color-7: #6C836C;
+}
+
+/* Header */
+div#container-wrap {
+    background: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aanimal-instead-of-beast-jp/background.png') center top repeat-x;
+    background-size: 400px;
+}
+
+#header {
+    z-index: 1;
+    background: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aanimal-instead-of-beast-jp/logo.png');
+    background-repeat: no-repeat;
+    background-position: 1em 3em;
+    background-size: 97px 97px;
+}
+
+#header h1 a span,
+#header h2 span {
+    display: none;
+}
+
+#header h1 a {
+    z-index: 5;
+}
+ 
+#header h1 a::before {
+    content: "SCP 재단 초상동물학부";
+    color: var(--color-1);
+    position: absolute;
+    top: 76px;
+    left: 120px;
+    z-index: 5;
+}
+ 
+#header h2::after {
+    color: var(--color-3);
+    position: absolute;
+    top: 106px;
+    left: 120px;
+    content: "유전, 진화, 행동";
+}
+
+/* Login & Search & Top Bar */
+#login-status {
+    color: var(--color-1);
+    z-index: 8;
+}
+
+#login-status a {
+    color: var(--color-1);
+}
+
+#account-options {
+    background-color: var(--color-1) !important;
+    border: 1px solid var(--color-3) !important;
+    color: var(--color-1) !important;
+    font-weight: bold !important;
+}
+
+#account-topbutton {
+    border-color: var(--color-1);
+}
+
+#login-status ul a {
+    color: var(--color-2) !important;
+}
+
+#search-top-box {
+    text-align: right;
+    z-index: 7;
+}
+
+#search-top-box-form {
+    display: inline-flex;
+}
+
+#search-top-box-form > input {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    border-radius: 5px;
+}
+
+#search-top-box-input {
+    background-color: var(--color-2) !important;
+    color: var(--color-3) !important;
+    border: solid 1px var(--color-1) !important;
+}
+
+#search-top-box-input:hover,
+#search-top-box-input:focus {
+    background-color: var(--color-1) !important;
+    color: var(--color-2) !important;
+    border: solid 1px var(--color-2) !important;
+}
+
+#search-top-box-form input[type=submit] {
+    padding: 2px 5px;
+    background: var(--color-2);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+    border: solid 1px var(--color-3);
+    color: var(--color-3);
+    font-size: 90%;
+}
+
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+    background: var(--color-5);
+}
+
+#top-bar {
+    display: flex;
+    width: 100%;
+    top: 141px;
+    z-index: 6;
+}
+
+#top-bar a {
+    color: var(--color-1);
+}
+
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a {
+    background: var(--color-3);
+    border-color: var(--color-2);
+    color: var(--color-2);
+}
+
+#top-bar ul li.sfhover a:hover,
+#top-bar ul li:hover a:hover {
+    background: var(--color-1);
+    color: var(--color-2);
+}
+
+#top-bar ul li ul,
+#top-bar ul li ul li ul {
+    border-color: rgba(0, 0, 0, .4);
+}
+
+#top-bar ul li.sfhover ul li a,
+#top-bar ul li:hover ul li a {
+    border-color: rgba(0, 0, 0, .1);
+}
+
+#top-bar ul li.sfhover ul li ul a,
+#top-bar ul li:hover ul li ul a {
+    border-top: none;
+}
+
+.top-bar {
+    position: relative;
+    margin: 0 auto;
+}
+.c_topbar_arrow {
+    color: var(--color-2);
+}
+
+/* Page Elements */
+#page-title,
+.meta-title {
+    color: var(--color-6);
+    font-size: 2.1em;
+    font-weight: bold;
+}
+
+#content-wrap {
+    margin: 30px auto 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-6);
+    font-weight: bold;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--color-1);
+    color: var(--color-2);
+}
+
+a:link {
+    color: var(--color-5);
+}
+
+a:visited {
+    color: var(--color-6);
+}
+
+.hovertip {
+    background-color: var(--color-1) !important;
+    border: 2px solid var(--color-2) !important;
+    color: var(--color-2) !important;
+}
+
+.scp-image-block {
+    background: var(--color-4);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+    border: 1px solid var(--color-3);
+}
+ 
+.scp-image-block .scp-image-caption {
+    background: var(--color-3);
+    color: var(--color-2) !important;
+    border-top: none;
+    font-size: 85%;
+}
+ 
+.scp-image-block img {
+    box-shadow: 0 0 1px black;
+}
+
+/* ---- SCROLLBAR ---- */
+::-webkit-scrollbar {
+    width: unset;
+    height: unset;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-2);
+    border: none;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-5);
+}
+
+textarea::-webkit-scrollbar-track {
+    background: var(--color-3);
+}
+
+/* Side Bar */
+#side-bar {
+    background: none;
+}
+
+#side-bar .side-block,
+#side-bar .side-block.media,
+#side-bar .side-block.resources,
+#interwiki .side-block {
+    background: var(--color-1) !important;
+    border: none;
+    border-radius: 0px;
+    box-shadow: 1px 2px 3px var(--color-2);
+}
+
+#side-bar .heading,
+#interwiki .heading,
+#side-bar .collapsible-block-unfolded-link {
+    border-bottom: solid 2px var(--color-2);
+    color: var(--color-5);
+}
+
+#side-bar .collapsible-block-folded-link .collapsible-block-link:hover,
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link:hover {
+    color: var(--color-7);
+}
+
+#side-bar .collapsible-block-folded-link .collapsible-block-link,
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link {
+    color: var(--color-5);
+}
+
+#side-bar .menu-item .image,
+#interwiki .menu-item .image,
+#side-bar .collapsible-block-folded,
+#side-bar .collapsible-block-unfolded-link .collapsible-block-content .image {
+    filter: grayscale(80%);
+}
+
+#side-bar .collapsible-block-folded a:link {
+    filter: grayscale(80%);
+}
+
+#side-bar a:link,
+#interwiki a:link {
+    color: var(--color-5);
+}
+
+#side-bar a:visited,
+#interwiki a:visited {
+    color: var(--color-6);
+}
+
+#side-bar a:link:hover,
+#side-bar a:visited:hover,
+#interwiki a:link:hover,
+#interwiki a:visited:hover {
+    color: var(--color-7);
+}
+
+#top-bar .open-menu a {
+    background: var(--color-1);
+    border-color: var(--color-2);
+    color: var(--color-2);
+}
+
+/* Tab */
+div.yui-navset ul.yui-nav a,
+div.yui-navset ul.yui-nav a:hover,
+div.yui-navset ul.yui-nav .selected a,
+div.yui-navset ul.yui-nav .selected a:hover,
+div.yui-navset ul.yui-nav .selected a:focus {
+    background: none;
+    border: none;
+}
+
+.yui-navset {
+    clear: both;
+    margin-bottom: 1em;
+    border-bottom: 2px var(--color-5) !important;
+}
+
+.yui-navset .yui-nav {
+    background: none !important;
+}
+
+.yui-navset .yui-nav li a em {
+    margin-bottom: -1px;
+    background: var(--color-3);
+    border: var(--color-5);
+    color: var(--color-2);
+    transition: .2s;
+}
+
+.yui-navset .yui-nav li a em:hover {
+    background: var(--color-7);
+    border: var(--color-5);
+    color: var(--color-3);
+}
+
+.yui-navset .yui-nav .selected a em {
+    background: var(--color-5);
+    border: var(--color-6);
+    color: var(--color-1);
+    font-weight: bold;
+}
+
+.yui-navset .yui-nav .selected a em:hover {
+    background: var(--color-6);
+    border: var(--color-7);
+    color: var(--color-1);
+    font-weight: bold;
+}
+
+div.yui-navset div.yui-content {
+    background: var(--color-1);
+    border: 1px solid var(--color-2);
+}
+
+/* Rate Module */
+.page-rate-widget-box {
+    margin-right: 0;
+    background-color: var(--color-1);
+    border: 2px solid var(--color-1);
+    border-radius: 0px;
+}
+ 
+.page-rate-widget-box > span {
+    border: none !important;
+}
+ 
+.page-rate-widget-box .rate-points {
+    background: var(--color-1) !important;
+    color: var(--color-2) !important;
+}
+ 
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+    background: var(--color-1);
+}
+
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a {
+    color: var(--color-2);
+}
+ 
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover {
+    background-color: var(--color-5);
+    border: var(--color-5);
+    color: var(--color-1);
+}
+ 
+.page-rate-widget-box .cancel {
+    background: var(--color-1);
+}
+ 
+.page-rate-widget-box .cancel a {
+    color: var(--color-2);
+    font-weight: bold;
+}
+ 
+.page-rate-widget-box .cancel a:hover {
+    background: var(--color-5);
+    border: var(--color-5);
+    border-radius: 0;
+    color: var(--color-1);
+}
+ 
+.creditRate {
+    margin-right: 0 !important;
+}
+ 
+.rate-box-with-credit-button {
+    background: var(--color-1) !important;
+    border: 2px solid var(--color-1) !important;
+    border-radius: 0px !important;
+}
+ 
+.rate-box-with-credit-button .page-rate-widget-box {
+    border: none;
+}
+ 
+.creditButton p a {
+    border-left: 1px var(--color-1) !important;
+    color: var(--color-2) !important;
+}
+ 
+#page-content .rate-box-with-credit-button .fa-info {
+    padding: 3px 0 1px;
+}
+ 
+#page-content .rate-box-with-credit-button .fa-info:hover {
+    background: var(--color-3);
+    border-radius: 0 0 0 0;
+    border: var(--color-5);
+    color: var(--color-1) !important;
+}
+
+/* ---- EDITING WINDOWS ---- */
+.owindow {
+    background-color: var(--color-1);
+    border-color: var(--color-5);
+}
+
+.owindow .modal-header {
+    background-color: var(--color-1);
+}
+
+.owindow .modal-body img {
+    background-color: var(--color-1) !important;
+    color: var(--color-2);
+}
+
+.owindow .title {
+    background-color: var(--color-1);
+}
+
+.owindow a,
+.owindow a:visited {
+    color: #var(--color-5);
+}
+
+.owindow .active {
+    color: var(--color-6);
+}
+
+.owindow .content.modal-body img {
+    background-color: var(--color-1) !important;
+}
+
+.owindow .button-bar a {
+    background-color: var(--color-1);
+    color: var(--color-2);
+}
+
+.owindow .button-bar a:hover,
+.owindow .button-bar a:focus {
+    background-color: var(--color-1) !important;
+    border-color: var(--color-7);
+    color: var(--color-2);
+}
+
+table.page-files .highlight {
+    background-color: var(--color-1);
+}
+
+input.text,
+input.text:focus,
+input.text:hover {
+    background-color: var(--color-1) !important;
+    border-color: var(--color-7);
+    color: var(--color-2);
+}
+
+textarea {
+    background-color: var(--color-1);
+    color: var(--color-2);
+}
+
+.change-textarea-size a {
+    background-color: var(--color-1);
+    color: var(--color-2);
+}
+
+#lock-info {
+    background-color: var(--color-1);
+}
+
+/* Blockquote */
+blockquote,
+div.blockquote {
+    background-color: var(--color-4);
+    border-style: dotted;
+}
+
+/* media */
+@media (max-width: 979px) {
+    #search-top-box-input,
+    #search-top-box-input:hover,
+    #search-top-box-input:focus {
+      display: none;
+    }
+}
+
+@media (max-width: 767px) {
+  .yui-navset {
+    z-index: 0 !important;
+  }
+}
+
+@media (max-width: 580px) {
+    #header h1 a::before {
+      content: "SCP 재단";
+    }
+}
+[[/code]]
+[[/collapsible]]
+
+[[include :scp-jp:component:license-box-backend
+|author=scpko theme:animal-instead-of-beast の作者]]
+
+> **画像・フォントの出典:** 原語版の theme:animal-instead-of-beast の記載に従います。KO 側の添付・ウェブフォントは候補ページに再ホストするか Google Fonts の同等書体に差し替えています。原語版にライセンス表記が無い画像は、投稿前に著者へ確認してください。
+
+[[include :scp-jp:component:license-box-end]]
+
+[[/iftags]]
