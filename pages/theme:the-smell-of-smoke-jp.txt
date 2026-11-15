@@ -1,0 +1,586 @@
+[[module CSS]]
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Athe-smell-of-smoke-jp/1');
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Athe-smell-of-smoke-jp/1
+]]
+
+[[iftags +テーマ]]
+
++ The Smell Of Smoke CSSテーマ
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** The Smell Of Smoke CSSテーマ
+**翻訳責任者:** [[*user nebula2700]]
+**翻訳年:** 2026
+**原題:** The Smell Of Smoke CSS Theme
+**著作権者:** [[*user c_bonefish]]（ベースコード: Denevola）
+**作成年:** 2022
+**初訳時参照リビジョン:** 10
+**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:the-smell-of-smoke ソース]
+[[include :scp-jp:credit:end-preview]]
+
+これは[[*user c_bonefish]]が[[[factory-hub|ザ・ファクトリー]]]GoIFか何かのために作ったThe Smell Of Smoke CSSテーマです。
+
+このテーマを自分のページに読み込むには、ページ内の任意の場所に次のテキストを置いてください。
+> @@[[include :scp-jp:theme:the-smell-of-smoke]]@@
+@@@@
+-----
++ ページ要素
+@@@@
+[[include :scp-jp:component:image-block name=https://sigma10-jp-test.wdfiles.com/local--files/theme%3Athe-smell-of-smoke-jp/logo.png|caption=ロゴ|width=200px]]
+
++ タイトル1
+++ タイトル2
++++ タイトル3
+++++ タイトル4
++++++ タイトル5
+++++++ タイトル6
+@@@@
+@@@@
+@@@@
+[[tabview]] [[tab タブ1]]
+[[=]]
+> + リンク
+> [# 未訪問リンク] | [[[theme:the-smell-of-smoke|訪問済みリンク]]]
+> -----
+>> テキスト[[footnote]]こんこん[[/footnote]]
+[[/=]]
+[[/tab]] [[tab タブ2]]
+[[/tab]] [[/tabview]]
+@@@@
+-----
+
+フォント: 日本語は[[[https://fonts.google.com/noto/specimen/Noto+Sans+JP|Noto Sans JP]]]、Vollkorn SCは[[[https://fonts.google.com/specimen/Vollkorn+SC|Google Fonts]]]から読み込みます（Vollkorn SCは原語版が読み込んでいますが、原語版のCSSではどの要素にも適用されていません。そのまま残しています）。すべて[https://scripts.sil.org/OFL SIL Open Font License, Version 1.1]の下でライセンスされています。
+
++ CSSテーマコード
+
+@@@@
+[[code type="css"]]
+/*
+    The Smell Of Smoke CSSテーマ
+    [2022 Wikidot Theme]
+
+    制作: c_bonefish
+    ベースコード: Denevola
+
+    背景画像1: https://pixabay.com/vectors/cloud-overcast-weather-159388/
+    背景画像2: https://pixabay.com/vectors/ecology-factories-industry-158945/
+
+    CC BY-SA 3.0
+*/
+
+/* SCP-JP補正: 原語版の配信元（fonts.bunny.net）は直リンクの特例外のためGoogle Fontsへ。日本語フォントも追加 */
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn+SC&family=Noto+Sans+JP:wght@400;700&display=swap');
+
+/* ヘッダー */
+div#container-wrap {
+    background: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Athe-smell-of-smoke-jp/background.png') center top repeat-x;
+    background-size: 1500px;
+}
+
+#header {
+    height: 165px;
+    background-image: none;
+}
+
+#header h1 a {
+    position: absolute;
+    font-size: 100%;
+    text-align: center;
+    text-shadow: none;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#header h1 a::before {
+    content: " ";
+    color: #00000000;
+    width: 100%;
+    height: 100%;
+}
+
+#header h2,
+#header h1 a span,
+#header h2 span {
+    display: none;
+}
+
+/* ログイン・検索・トップバー */
+#login-status {
+    position: absolute;
+    top: 3px;
+    color: #fff;
+    z-index: 2;
+}
+
+#login-status a {
+    color: #fff;
+    font-weight: bolder;
+}
+
+#account-topbutton {
+    border-color: #fff;
+}
+
+#login-status ul a {
+    color: #000000 !important;
+}
+
+#search-top-box {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 250px;
+    text-align: right;
+    z-index: 1;
+}
+
+#search-top-box-form {
+    display: inline-flex;
+}
+
+#search-top-box-form > input {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    border-radius: 5px;
+}
+
+#search-top-box-input {
+    background-color: #C6C6C6;
+    border: solid 1px #000;
+    color: #000;
+}
+
+#search-top-box-input:hover,
+#search-top-box-input:focus {
+    box-shadow: inset 1px 1px 5px rgb(0 0 0 / 50%);
+    color: #000000 !important;
+}
+
+#search-top-box-form input[type=submit] {
+    padding: 2px 5px;
+    background: #000;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+    border: solid 1px #C6C6C6;
+    color: #C6C6C6;
+    font-size: 90%;
+}
+
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+    background: #000;
+}
+
+#top-bar {
+    display: flex;
+    justify-content: center;
+    top: 160px;
+    width: 100%;
+    z-index: 20;
+}
+
+#top-bar a {
+    color: #fff;
+    background: #00000044;
+}
+
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a {
+    background: #E8E8E5;
+    border-color: transparent;
+    color: #000;
+}
+
+#top-bar ul li.sfhover a:hover,
+#top-bar ul li:hover a:hover {
+    background: #E8E8E5;
+}
+
+#top-bar ul li ul,
+#top-bar ul li ul li ul {
+    border-color: rgba(0, 0, 0, .4);
+}
+
+#top-bar ul li.sfhover ul li a,
+#top-bar ul li:hover ul li a {
+    border-color: rgba(0, 0, 0, .1);
+}
+
+#top-bar ul li.sfhover ul li ul a,
+#top-bar ul li:hover ul li ul a {
+    border-top: none;
+}
+
+.top-bar {
+    position: relative;
+    margin: 0 auto;
+}
+.c_topbar_arrow {
+    color: #D5D5D5;
+}
+
+/* ページ要素 */
+#page-title,
+.meta-title {
+    color: #484848;
+    font-size: 2.1em;
+    font-weight: bold;
+}
+
+#content-wrap {
+    margin: 30px auto 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #484848;
+    font-weight: bold;
+}
+
+body {
+    background-color: #E8E8E5;
+    color: #000000;
+}
+
+a:link {
+    color: #757575;
+}
+
+a:visited {
+    color: #7D7D7D;
+}
+
+.hovertip {
+    background-color: #E7E7E7 !important;
+    border: 2px solid #000 !important;
+    color: #000 !important;
+}
+
+.scp-image-block {
+    background: #F6F6F6;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+}
+
+.scp-image-block .scp-image-caption {
+    background: #F6F6F6;
+    border-top: none;
+    font-size: 85%;
+}
+
+.scp-image-block img {
+    box-shadow: 0 0 1px black;
+}
+
+/* ---- スクロールバー ---- */
+::-webkit-scrollbar {
+    width: unset;
+    height: unset;
+}
+
+::-webkit-scrollbar-track {
+    background: #F6F6F6;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000;
+    border: none;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #363636;
+}
+
+textarea::-webkit-scrollbar-track {
+    background: #F6F6F6;
+}
+
+/* サイドバー */
+#side-bar {
+    background: none;
+}
+
+#side-bar .side-block,
+#side-bar .side-block.media,
+#side-bar .side-block.resources,
+#interwiki .side-block {
+    background: #E7E7E7 !important;
+    border: 2px solid #121212;
+    border-radius: 0 0;
+}
+
+#side-bar .heading,
+#interwiki .heading,
+#side-bar .collapsible-block-unfolded-link {
+    border-bottom: solid 1px #000;
+    color: #121212;
+}
+
+#side-bar .collapsible-block-folded-link .collapsible-block-link:hover,
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link:hover {
+    color: #353535;
+}
+
+#side-bar .collapsible-block-folded-link .collapsible-block-link,
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link {
+    color: #595959;
+}
+
+#side-bar .menu-item .image,
+#interwiki .menu-item .image,
+#side-bar .collapsible-block-folded,
+#side-bar .collapsible-block-unfolded-link .collapsible-block-content .image {
+    filter: grayscale(80%);
+}
+
+#side-bar .collapsible-block-folded a:link {
+    filter: grayscale(80%);
+}
+
+#side-bar a:link,
+#interwiki a:link {
+    color: #757575;
+}
+
+#side-bar a:visited,
+#interwiki a:visited {
+    color: #7D7D7D;
+}
+
+#side-bar a:link:hover,
+#side-bar a:visited:hover,
+#interwiki a:link:hover,
+#interwiki a:visited:hover {
+    color: #8C8C8C;
+}
+
+#top-bar .open-menu a {
+    background: #E8E8E5;
+    border-color: #121212;
+    color: #000000;
+}
+
+/* タブ */
+div.yui-navset ul.yui-nav a,
+div.yui-navset ul.yui-nav a:hover,
+div.yui-navset ul.yui-nav .selected a,
+div.yui-navset ul.yui-nav .selected a:hover,
+div.yui-navset ul.yui-nav .selected a:focus {
+    background: none;
+    border: none;
+}
+
+.yui-navset {
+    clear: both;
+    margin-bottom: 1em;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .5);
+}
+
+.yui-navset .yui-nav {
+    background: #E7E7E7;
+    border: 1px solid gainsboro;
+    border-bottom: none;
+}
+
+.yui-navset .yui-nav li {
+    margin-right: 10px !important;
+}
+
+.yui-navset .yui-nav li:first-child {
+    margin-left: 1.5em;
+}
+
+.yui-navset .yui-nav li a em {
+    padding: 10px .75em .25em;
+    margin-bottom: -1px;
+    background: none;
+    border: none;
+    border-bottom: 4px solid transparent;
+    color: gray;
+    transition: .2s;
+}
+
+.yui-navset .yui-nav li a em:hover {
+    background: none;
+}
+
+.yui-navset .yui-nav .selected a em,
+.yui-navset .yui-nav .selected a em:hover {
+    padding: 10px .75em .25em;
+    background: none;
+    border: none;
+    border-bottom: 4px solid #9C9C9C;
+    color: #000;
+    font-weight: bold;
+}
+
+div.yui-navset div.yui-content {
+    background: #F6F6F6;
+    border: 1px solid gainsboro;
+}
+
+/* 評価モジュール */
+.page-rate-widget-box {
+    margin-right: 0;
+    background-color: #E7E7E7;
+    border: 2px solid #121212;
+    border-radius: 0px;
+}
+
+.page-rate-widget-box > span {
+    border: none !important;
+}
+
+div.page-rate-widget-box .rate-points {
+    background: #E7E7E7;
+    color: #000;
+}
+
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+    background: #E7E7E7;
+}
+
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a {
+    color: #000;
+}
+
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover {
+    background-color: #121212;
+    color: #E7E7E7;
+}
+
+.page-rate-widget-box .cancel {
+    background: #E7E7E7;
+}
+
+.page-rate-widget-box .cancel a {
+    color: #000;
+    font-weight: bold;
+}
+
+.page-rate-widget-box .cancel a:hover {
+    background: #121212;
+    border-radius: 0;
+    color: #E7E7E7;
+}
+
+.creditRate {
+    margin-right: 0 !important;
+}
+
+.rate-box-with-credit-button {
+    background: #E7E7E7 !important;
+    border: 2px solid #121212 !important;
+    border-radius: 0px !important;
+}
+
+.rate-box-with-credit-button .page-rate-widget-box {
+    border: none;
+}
+
+.creditButton p a {
+    border-left: 1px solid #000 !important;
+    color: #000 !important;
+}
+
+#page-content .rate-box-with-credit-button .fa-info {
+    padding: 3px 0 1px;
+}
+
+#page-content .rate-box-with-credit-button .fa-info:hover {
+    background: #121212;
+    border-radius: 0 0 0 0;
+    color: #E7E7E7 !important;
+}
+
+/* ---- 編集ウィンドウ ---- */
+.owindow {
+    background-color: #ffffff;
+    border-color: #8C8C8C;
+}
+
+.owindow .modal-header {
+    background-color: #ffffff;
+}
+
+.owindow .modal-body img {
+    background-color: #ffffff !important;
+    color: #000000;
+}
+
+.owindow .title {
+    background-color: #ffffff;
+}
+
+.owindow a,
+.owindow a:visited {
+    color: #CECECE;
+}
+
+.owindow .active {
+    color: #000000;
+}
+
+.owindow .content.modal-body img {
+    background-color: #727272 !important;
+}
+
+.owindow .button-bar a {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.owindow .button-bar a:hover,
+.owindow .button-bar a:focus {
+    background-color: #ffffff !important;
+    border-color: #999999;
+    color: #000000;
+}
+
+table.page-files .highlight {
+    background-color: #FBFBFB;
+}
+
+input.text,
+input.text:focus,
+input.text:hover {
+    background-color: #ffffff !important;
+    border-color: #999999;
+    color: #000000;
+}
+
+textarea {
+    background-color: #FEFEFE;
+    color: #000000;
+}
+
+.change-textarea-size a {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+#lock-info {
+    background-color: #ffffff;
+}
+
+/* 引用ブロック */
+blockquote,
+div.blockquote {
+    background-color: #F6F6F6;
+    border-style: dotted;
+}
+
+/* SCP-JP補正: 日本語フォールバック（原語版はフォントを指定しておらず、OS依存になるため） */
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+[[/code]]
+
+[[/iftags]]
