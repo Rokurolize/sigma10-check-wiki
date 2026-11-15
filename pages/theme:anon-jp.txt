@@ -1,0 +1,858 @@
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** パラウォッチ・アノン・テーマ
+**翻訳責任者:** SCP-JP
+**翻訳年:** 2026
+**原題:** Parawatch Anon Theme
+**著作権者:** Lt Flops
+**作成年:** 2021
+**初訳時参照リビジョン:** 91
+**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:anon ソース]
+[[include :scp-jp:credit:end-preview]]
+
+Parawatch Anon向けのCreepypastaベーステーマです。
+
+**使い方:** @@[[include theme:anon-jp]]@@
+
+**基盤:** Creepypasta（インライン）
+
+[[module CSS]]
+
+@import url('https://fonts.googleapis.com/css?family=PT+Mono&display=swap');
+ 
+/*
+    Powered on 2019/05/09 06:09:42
+    [2019 Wikidot Theme]
+    Created by The Great Hippo
+    CC BY-SA 3.0
+*/
+ 
+/* FONTS AND COLORS */
+ 
+:root {
+    --bg-light: #262626;
+    --bg: #1a1a1a;
+    --bg-dark: #000000;
+ 
+    --fg-light: #ffffff; 
+    --fg:  #f2f2f2;
+    --fg-dark: #e6e6e6;
+ 
+    --fg-accent-light: #ffffcc;
+    --fg-accent: #ffff99;
+    --fg-accent-dark: #ffff80;
+ 
+    --fg-accent-2: #ffffff;
+ 
+}
+
+body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: 'PT Mono', monospace;
+}
+ 
+a, a:visited {
+    color: var(--fg-accent-dark);
+}
+ 
+h1, h2, h3, h4, h5, h6, #page-title {
+    color: var(--fg-light);
+    font-family: 'PT Mono', monospace;
+}
+
+ins, del {
+    color: black;
+}
+
+/* HEADER */
+ 
+div#container-wrap {
+    background: url(https://scp-wiki.wdfiles.com/local--files/theme%3Acreepypasta/gradient.png) top left repeat-x;
+}
+ 
+div#header {
+    background: url(https://scp-wiki.wdfiles.com/local--files/theme%3Acreepypasta/parawatch.png) 10px 40px no-repeat;
+}
+ 
+div#header h1 a span {
+    /* hiding header text */
+    font-size: 0px;
+    color: transparent;
+}
+ 
+div#header h1 a:before {
+    content: " ";
+    color: rgb(24, 24, 24);
+}
+ 
+div#header h2 span {
+    font-size:0px;
+    padding: 4px;
+}
+ 
+div#header h2:after {
+    content: " ";
+    font-weight: bold;
+    color: rgb(255, 224, 135);
+    padding: 19px 0;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
+    white-space: pre;
+}
+ 
+/* SIDE-BAR */
+ 
+div#side-bar a,
+div#side-bar a:visited,
+#interwiki a,
+#interwiki a:visited {
+    color: var(--fg-dark);
+}
+ 
+div#side-bar div.side-block,
+#interwiki div.side-block {
+    background: rgb(24, 24, 24);
+    border: 1px solid #ffe087;
+    box-shadow: 0 2px 6px #404040;
+}
+
+div#side-bar div.side-block.media,
+div#side-bar div.side-block.resources {
+    background: rgb(24,24,24);
+}
+ 
+div#side-bar div.side-block div.heading,
+#interwiki div.side-block div.heading,
+div#side-bar .collapsible-block-unfolded-link,
+div#side-bar .collapsible-block-unfolded-link .collapsible-block-link {
+    color: rgb(255, 224, 135);
+    border-color: rgb(255, 224, 135);
+}
+
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link:hover {
+    color: var(--fg-dark);
+}
+  
+/* Recolors the Translation Module */
+#interwiki .menu-item img {
+    filter: hue-rotate(230deg) invert(100%);
+}
+ 
+/* Recolors the panel that opens on mobile with the side-bar */
+@media (max-width: 767px) {
+    #side-bar{
+        background-color: var(--bg);
+    }
+}
+ 
+/* Recolors the drop down from the arrow next to username in the header */
+#login-status ul a {
+    color: var(--fg);
+    background: var(--bg);
+    border-color: var(--fg);
+}
+ 
+#login-status ul a:hover {
+    color: var(--fg-dark);
+}
+ 
+/* Makes the code readable */
+.hl-identifier, .hl-code, .hl-brackets {
+    color: var(--fg);
+}
+ 
+/* Top-Bar */
+#top-bar a { 
+    color: var(--fg-dark);
+}
+ 
+#top-bar ul li ul {
+    border-color: var(--fg-light);
+}
+ 
+#top-bar ul li.sfhover ul li a,
+#top-bar ul li:hover ul li a {
+   border-top-color: var(-fg-light);
+}
+ 
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a {
+    background-color: var(--bg-light);
+    color: var(--fg-dark);
+}
+ 
+#top-bar ul li.sfhover a:hover,
+#top-bar ul li:hover a:hover {
+    background: var(--bg-dark); /* top bar hover background color */
+    color: var(--fg-dark);
+}
+ 
+div.yui-navset div.yui-content {
+    background: rgb(24, 24, 24);
+}
+ 
+div.yui-navset ul.yui-nav a,
+div.yui-navset div.yui-navset-top ul.yui-nav a {
+    background: rgb(24, 24, 24);
+    color: rgb(255, 237, 185);
+    border: solid 1px #ffffff;
+}
+ 
+div.yui-navset ul.yui-nav a:hover,
+div.yui-navset ul.yui-nav a:focus {
+    background: rgb(40, 40, 40);
+    color: rgb(255, 237, 185);
+}
+ 
+div.yui-navset ul.yui-nav .selected a,
+div.yui-navset ul.yui-nav .selected a:focus,
+div.yui-navset ul.yui-nav .selected a:hover {
+    background: rgb(50, 50, 50);
+    color: var(--fg);
+    border: solid 2px #ffff99;
+}
+ 
+/* rating module */
+ 
+.page-rate-widget-box .rate-points {
+    background-color: var(--bg-dark) !important;
+}
+ 
+.page-rate-widget-box .rate-points,
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a,
+.page-rate-widget-box .cancel a {
+    background-color: var(--bg-dark);
+    color: white;
+    border: 0;
+}
+ 
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown,
+.page-rate-widget-box .cancel {
+    background-color: var(--bg-dark);
+    border: 0;
+    border-left: 1px solid var(--fg-accent-light);
+}
+ 
+div.page-rate-widget-box .rate-points,
+.page-rate-widget-box .cancel a {
+    border: 0;
+ 
+}
+ 
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a {
+    background-color: var(--bg-dark);
+    color: white;
+}
+ 
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover,
+.page-rate-widget-box .cancel a:hover {
+    background-color: var(--bg-dark);
+    color: white;
+}
+ 
+/* footnote hovers */
+ 
+.hovertip {
+    width: 20em;
+    padding: 0.5em;
+ 
+    border: 1px solid var(--fg-accent-light) !important;
+    border-radius: 0.5em;
+ 
+    background-color: #000000ee !important;
+    box-shadow: 0 0 6px 1px #000000aa;
+    z-index: 100;
+}
+ 
+.hovertip .f-heading {
+    color: var(--fg-accent-light);
+}
+ 
+/* inputs */
+ 
+input.text, input.button,
+#search-top-box-input,
+#search-top-box-form input[type=submit],
+div.buttons input, input.button, button, file, a.button {
+    background: transparent;
+    color: var(--fg);
+    border: 1px solid var(--fg-accent-2);
+    border-radius: 0;
+    font-size: 1em;
+    outline: 0;
+}
+ 
+div.buttons input:hover, div.buttons input:focus,
+input.button:hover, input.button:focus,
+button:hover, button:focus,
+file:hover, file:focus,
+a.button:hover, a.button:focus {
+    border-color: var(--fg-accent-2);
+    background: transparent;
+    color: var(--fg);
+}
+ 
+input.text:hover, input.button:hover,
+input.text:focus, input.button:focus,
+#search-top-box-input:hover,
+#search-top-box-input:focus,
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+    color: var(--fg);
+    background: transparent;
+    border: 1px solid var(--fg-accent-2);
+    outline: 0;
+}
+ 
+/* EDITING WINDOWS */
+.owindow {
+    color: #000;
+}
+ 
+.owindow h1, .owindow h2, .owindow h3, .owindow h4, .owindow h5, .owindow h6 {
+    color: #000;
+}
+ 
+.owindow a {
+    color: #272727;
+}
+ 
+table.page-files .highlight {
+    background-color: #272727;
+}
+ 
+input.text {
+    border: 1px dashed #000;
+    color: #fff;
+}
+ 
+input.text:focus {
+    border: 1px dashed #000;
+    color: #fff;
+}
+ 
+input.text:hover {
+    border: 1px dashed #000;
+    color: #fff;
+}
+
+div#lock-info {
+    background-color: var(--bg-light);
+}
+
+/* BLOCKQUOTES */
+ 
+blockquote,
+div.blockquote {
+    background:  var(--bg-dark);
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--bg-light);
+}
+ 
+/* Parawatch Forum Pseudo-Blockquotes */
+div.parapost {
+    background:  var(--bg-dark);
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--bg-light);
+    padding: 0 1em;
+    margin: 1em 3em;
+}
+
+div.parapost.reply1 {margin: 1em 3em 1em 4em;}
+div.parapost.reply2 {margin: 1em 3em 1em 5em;}
+div.parapost.reply3 {margin: 1em 3em 1em 6em;}
+div.parapost.reply4 {margin: 1em 3em 1em 7em;}
+div.parapost.reply5 {margin: 1em 3em 1em 8em;}
+
+@media (max-width: 479px) {
+   div.parapost {margin: 1em 0;}
+   div.parapost.reply1 {margin: 1em 0 1em 1em;}
+   div.parapost.reply2 {margin: 1em 0 1em 2em;}
+   div.parapost.reply3 {margin: 1em 0 1em 3em;}
+   div.parapost.reply4 {margin: 1em 0 1em 4em;}
+   div.parapost.reply5 {margin: 1em 0 1em 5em;}
+}
+
+@media (min-width: 480px) and (max-width: 580px) {
+   div.parapost {margin: 0.5em;}
+   div.parapost.reply1 {margin: 0.5em 0.5em 0.5em 1em;}
+   div.parapost.reply2 {margin: 0.5em 0.5em 0.5em 1.5em;}
+   div.parapost.reply3 {margin: 0.5em 0.5em 0.5em 2em;}
+   div.parapost.reply4 {margin: 0.5em 0.5em 0.5em 2.5em;}
+   div.parapost.reply5 {margin: 0.5em 0.5em 0.5em 3em;}
+}
+
+/* IMAGES */
+ 
+#page-content .scp-image-block {
+    border-color: var(--fg-accent);
+    box-shadow: none;
+}
+#page-content .scp-image-block .scp-image-caption {
+    border-color: var(--fg-accent);
+    background-color: var(--bg-dark);
+}
+ 
+table.wiki-content-table th {
+    background-color: var(--bg-dark);
+}
+ 
+hr {
+    background-color: var(--fg);
+}
+ 
+.code {
+    border: 1px dashed var(--fg);
+    background-color: transparent;
+ 
+    font-family: "Courier", "Courier New", "Roboto Mono", monospace;
+    font-size: 1em;
+}
+
+/* INFO MODULE */
+
+#page-content .rate-box-with-credit-button {
+    background-color: var(--bg-dark); 
+    border: 1px solid var(--bg-dark);
+}
+
+#page-content .rate-box-with-credit-button .creditButton p a {
+    border-left-color: var(--fg-accent-light);
+}
+
+#page-content .rate-box-with-credit-button .page-rate-widget-box .cancel {
+    border-radius: 0;
+}
+#page-content .rate-box-with-credit-button .page-rate-widget-box .rate-points {
+    border-left: 0;
+}
+
+#page-content .modalbox {
+    background: linear-gradient(var(--bg) 51px,var(--bg-light) 51px,var(--bg-light)) !important;
+    color: var(--fg);
+    box-shadow: 0 2px 6px #404040;
+}
+
+.close-credits,
+.credit-back {
+    filter: hue-rotate(230deg) invert(100%) brightness(150%);
+}
+
+#footer {
+    background: var(--bg-light);
+}
+
+/* MOBILE CODE */
+@media (max-width: 767px) { 
+    div#header {
+        background-size: 22em;
+        background-position: 1em;
+    }
+ 
+    #top-bar .open-menu a {
+        border: 0.2em solid var(--bg-light);
+        background-color: #787878;
+        color: var(--bg-light);
+  }
+}
+
+
+
+/* Parawatch "Anon" Theme
+ * [2021 Wikidot Theme]
+ * Created by Lt Flops
+ * Based on "Creepypasta Theme" by The Great Hippo and 4chan theme "Tomorrow"
+**/
+
+/* ---- COLOURS ---- */
+ :root{
+     --bg-light: hsl(0, 0%, 7%);
+     --bg: hsl(210, 6%, 12%);
+     --bg-dark: hsl(220, 7%, 17%);
+
+     --bg-light-2: hsl(0, 0%, 11%);
+
+     --fg-light: hsl(140, 3%, 83%);
+     --fg: hsl(140, 3%, 78%);
+     --fg-dark: hsl(207, 100%, 73%);
+
+     --fg-dark-2: hsl(207, 100%, 56%);
+
+     --fg-accent-light: hsl(207, 50%, 36.5%);
+     --fg-accent: hsl(207, 90%, 63%);
+     --fg-accent-dark: hsl(207, 32%, 52%);
+
+     --fg-accent-2: hsl(140, 3%, 83%);
+     --fg-accent-dark-2: hsl(207, 32%, 63%);
+
+     --vivid-lime-green: hsl(112, 77%, 48%);
+}
+
+/* ---- GENERAL ---- */
+ a, body, span{
+     word-break: unset;
+}
+ a:visited, a:hover{
+     color: var(--fg-accent-dark-2);
+}
+ a.newpage{
+     color: hsl(237, 27%, 68%);
+}
+ ins, del{
+     color: var(--bg-dark);
+}
+ .meta-title{
+     color: var(--fg-light);
+     border-bottom-color: var(--fg-light);
+}
+ #toc{
+     background-color: unset;
+}
+
+/* ---- SCROLLBAR ---- */
+ ::-webkit-scrollbar-track{
+     background: var(--bg-dark);
+}
+ ::-webkit-scrollbar-thumb{
+     background: var(--fg-dark);
+     border: none;
+}
+ ::-webkit-scrollbar-thumb:hover{
+     background: var(--fg-dark-2);
+}
+ textarea::-webkit-scrollbar-track{
+     background: var(--bg);
+}
+
+/* ---- HEADER ---- */
+ div#container-wrap{
+     background-image: url(https://scp-wiki.wdfiles.com/local--files/theme%3Aanon/gradient-anon.png);
+}
+ div#header{
+     background-image: none;
+}
+ div#header h1{
+     position: relative;
+     float: unset;
+     top: 40px;
+     max-height: 100%;
+     height: 100%;
+     margin: unset;
+
+     background: url(https://scp-wiki.wdfiles.com/local--files/mkwhiteout-cia-pride/parawatchPRIDE.png) no-repeat;
+}
+
+/* ---- SIDE-BAR ---- */
+ div#side-bar div.side-block{
+     background-color: var(--bg-dark);
+     border-color: var(--fg-dark-2);
+     box-shadow: none;
+}
+ div#side-bar div.side-block.media,
+ div#side-bar div.side-block.resources{
+     background: var(--bg-dark);
+}
+ div#side-bar div.side-block div.heading,
+ div#side-bar div.collapsible-block-unfolded-link,
+ div#side-bar div.collapsible-block-unfolded-link div.collapsible-block-link{
+     color: var(--fg-dark-2);
+     border-color: var(--fg-dark-2);
+}
+ #side-bar div.menu-item img{
+     filter: hue-rotate(62deg) invert(100%);
+}
+ @media (max-width: 767px){
+     #side-bar{
+         background-color: var(--bg-dark);
+    }
+}
+
+/* ---- TOP-BAR ---- */
+ #top-bar a{
+     color: var(--fg-accent-dark);
+}
+ #top-bar .open-menu a{
+     color: var(--fg-dark-2);
+     background-color: var(--bg-dark);
+     border-color: var(--fg-dark-2);
+}
+ div.yui-navset div.yui-content{
+     background-color: var(--bg);
+}
+ div.yui-navset ul.yui-nav a,
+ div.yui-navset div.yui-navset-top ul.yui-nav a{
+     color: var(--fg-accent);
+     background-color: var(--bg-dark);
+     border-color: var(--fg-light);
+}
+ div.yui-navset ul.yui-nav a:hover,
+ div.yui-navset ul.yui-nav a:focus{
+     color: var(--fg-accent-light);
+     background-color: var(--bg-light);
+}
+ div.yui-navset ul.yui-nav .selected a,
+ div.yui-navset ul.yui-nav .selected a:focus,
+ div.yui-navset ul.yui-nav .selected a:hover{
+     background-color: var(--bg-light-2);
+     border-color: var(--fg-accent);
+}
+
+/* ---- INFO BAR ---- */
+ .info-container{
+     --linkColour: var(--fg);
+     --barColour: var(--bg-dark);
+}
+
+/* ---- INFO MODULE ---- */
+ .creditButton p a{
+     color: var(--fg);
+}
+ .creditButton p a:hover,
+ .creditButtonStandalone p a:hover{
+     color: var(--vivid-lime-green) !important;
+}
+ #page-content .modalbox{
+     background: var(--bg) !important;
+     box-shadow: none !important;
+}
+ .close-credits,
+ .credit-back{
+     filter: hue-rotate(62deg) invert(100%) brightness(150%);
+}
+ div#footer{
+     background: var(--bg-dark);
+}
+ #license-area{
+     color: var(--fg);
+}
+
+/* ---- INTERWIKI ---- */
+ iframe.scpnet-interwiki-frame{
+     border-color: var(--fg-dark-2);
+}
+ #interwiki body{
+     overflow: hidden;
+}
+ #interwiki .side-block{
+     background-color: var(--bg-dark);
+     border-color: var(--fg-dark-2);
+     box-shadow: none;
+}
+ #interwiki .menu-item img{
+     filter: hue-rotate(213deg) saturate(1.1364) brightness(2.7037);
+}
+ #interwiki .menu-item a{
+     color: var(--fg-dark);
+}
+ #interwiki .heading{
+     color: var(--fg-dark-2);
+     border-color: var(--fg-dark-2);
+}
+
+
+/* ---- RATING MODULE ---- */
+ .page-rate-widget-box,
+ .rate-box-with-credit-button{
+     box-shadow: none;
+}
+ div.page-rate-widget-box .rate-points,
+ .page-rate-widget-box .rateup a,
+ .page-rate-widget-box .ratedown a,
+ .page-rate-widget-box .cancel a,
+ .page-rate-widget-box .rateup a:hover,
+ .page-rate-widget-box .ratedown a:hover,
+ .page-rate-widget-box .cancel a:hover{
+     color: var(--fg);
+}
+
+/* ---- LICENSEBOX ---- */
+ .licensebox .collapsible-block-link{
+     color: var(--fg-accent-dark);
+}
+
+/* ---- FOOTNOTE HOVERS ---- */
+ .hovertip{
+     box-shadow: none;
+}
+
+/* ---- EDITING WINDOWS ---- */
+ .owindow{
+     border-color: var(--fg-dark-2);
+}
+ .owindow,
+ .owindow h1,
+ .owindow h2,
+ .owindow h3,
+ .owindow h4,
+ .owindow h5,
+ .owindow h6{
+     color: var(--fg);
+}
+ .owindow{
+     background-color: var(--bg-dark);
+}
+ .owindow .title{
+     background-color: var(--bg);
+}
+ .owindow a,
+ .owindow a:visited{
+     color: var(--fg-accent-dark);
+}
+ .owindow .active{
+     color: var(--fg-dark-2);
+}
+ .owindow .content.modal-body img{
+     background-color: var(--bg-dark) !important;
+}
+ .owindow .button-bar a{
+     background-color: transparent;
+     border-color: var(--fg-dark-2);
+}
+ .owindow .button-bar a:hover,
+ .owindow .button-bar a:focus{
+     background-color: transparent;
+     border-color: var(--fg-dark);
+}
+ table.page-files .highlight{
+     background-color: var(--bg-light);
+}
+ input.text,
+ input.text:focus,
+ input.text:hover{
+     color: var(--fg-light);
+     border-color: var(--fg);
+}
+ .wd-editor-toolbar-panel{
+     filter: hue-rotate(62deg) invert(83%);
+}
+ textarea{
+     color: var(--fg);
+     background-color: var(--bg-dark);
+}
+ .change-textarea-size a{
+     color: var(--fg);
+     background-color: var(--bg-dark);
+}
+ div#lock-info{
+     background-color: var(--bg);
+}
+
+/* ---- SELECTION ---- */
+ ::selection{
+     background: hsl(207, 11%, 27%);
+}
+
+/* ---- PARAWATCH DIV BLOCK ---- */
+ div.parapost{
+     border-color: var(--bg-dark);
+}
+ span.title{
+     color: var(--fg-dark-2);
+     font-size: 110%;
+     font-weight: bold;
+     cursor: pointer;
+     word-break: unset;
+}
+ span.title span{
+     word-break: unset;
+}
+ span.title:hover,
+ span.title:focus{
+     text-decoration: underline;
+}
+
+/* -------- MOBILE MEDIA QUERY -------- */
+ @media (max-width: 479px){
+     div#header h1{
+         background-position-y: .5em !important;
+         background-size: 75% !important;
+    }
+}
+
+/* -------- NOTE MEDIA QUERY -------- */
+ @media (min-width: 480px) and (max-width: 580px){
+     div#header h1{
+         background-position-y: 1em !important;
+         background-size: 60% !important;
+    }
+}
+
+/* -------- MINI TABLET MEDIA QUERY -------- */
+ @media (min-width: 581px) and (max-width: 767px){
+     div#header h1{
+         background-position-y: .25em !important;
+         background-size: 65% !important;
+    }
+}
+
+ @media (max-width: 767px){
+     .open-menu a:hover{
+         box-shadow: none !important;
+    }
+     #top-bar .open-menu a{
+         background-color: var(--bg-dark);
+         border-width: .1em;
+    }
+}
+
+/* -------- TABLET MEDIA QUERY -------- */
+ @media (min-width: 768px) and (max-width: 979px){
+     div#header h1{
+         background-size: 75% !important;
+    }
+}
+
+/* ---- CODE SELECTORS [BACK-END] ---- */
+ .hl-identifier,
+ .hl-code,
+ .hl-brackets{
+     color: var(--fg);
+}
+ 
+ .hl-var{
+     color: #21ff00;
+}
+ 
+ .hl-special,
+ .hl-quotes{
+     color: #ffff00;
+}
+ 
+ .hl-reserved{
+     color: #00b2ff;
+}
+ 
+ .hl-number,
+ .hl-string{
+     color: #ff0020;
+}
+
+
+@@
+@@ :root{@@
+@@     --fg-dark: hsl(45, 94%,82%);@@
+@@     --fg-accent-light: hsl(60, 100%, 90%);@@
+@@     --fg-accent: hsl(60, 100%, 80%);@@
+@@     --fg-accent-dark: hsl(60, 100%, 75%);@@
+@@     --fg-accent-dark-2: hsl(60, 53%, 59%);@@
+@@     --fg-dark-2: hsl(59, 100%, 70%);@@
+}
+
+@@ div#header h1{@@
+@@     background: url(https://scp-wiki.wdfiles.com/local--files/theme%3Acreepypasta/parawatch.png) no-repeat;@@
+}
+
+@@ #side-bar div.menu-item img{@@
+@@     filter: hue-rotate(230deg) invert(100%);@@
+}
+@@
+[[/module]]
+
+[[/iftags]]

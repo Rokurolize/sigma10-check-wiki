@@ -1,0 +1,538 @@
+[[iftags +theme]]
+
+[[module CSS]]
+@import url("https://nu-scptheme.github.io/Black-Highlighter/stable/styles/normalize.min.css");
+@import url("https://nu-scptheme.github.io/Black-Highlighter/stable/styles/black-highlighter.min.css");
+[[/module]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
+
+[[div style="display: flex; opacity: 40%; margin: auto; margin-top: 20px;"]]
+[[image https://scp-wiki.wdfiles.com/local--files/theme%3Ablack-highlighter-theme/black-highlighter-logo.svg]]
+[[/div]]
+
+----
+
+[[=]]
++ What is This?
+[[/=]]
+
+This is the Angel Theme, created by [[*user MisterFrown]] for his girlfriend who really likes pink.
+
+Put the following code above any page to use:
+
+> [[include :scp-wiki:theme:black-highlighter-theme]]
+> [[include :scp-wiki:theme:angel]]
+
+[[div style="height: 10px"]]
+[[/div]]
+
+As this is a Black Highlighter based theme, you are required to utilize it as well if you wish to use this one. Please consult [https://scp-wiki.wikidot.com/theme:black-highlighter-theme this page] for more information.
+
+----
+
+[[=]]
++ Examples
+[[/=]]
+
+[[div style="height: 10px"]]
+[[/div]]
+
+[[include :scp-wiki:component:image-block name=https://scp-wiki.wdfiles.com/local--files/theme%3Aborealis-constant-theme/street|
+    caption=Here's an image block.|
+     align=right
+]]
+
+[[[misterfrown |Example Link]]][[footnote]] Example Footnote [[/footnote]]
+
+[[div style="height: 10px"]]
+[[/div]]
+
++ Heading Level 1
+
+++ Heading Level 2
+
++++ Heading Level 3
+
+++++ Heading Level 4
+
++++++ Heading Level 5
+
+[[div style="height: 20px"]]
+[[/div]]
+
+[[div class="blockquote"]]
+
+Here's what blockquotes look like.
+
+> And here's a nested one.
+
+[[/div]]
+
+[[div style="height: 10px"]]
+[[/div]]
+
+||~ Table ||~ Example ||
+|| cell-content || cell-content ||
+
+[[div style="height: 10px"]]
+[[/div]]
+
+[[tabview]]
+
+[[tab Example Tab 1]]
+
+test
+
+[[/tab]]
+
+[[tab Example Tab 2]]
+
+test
+
+[[/tab]]
+
+[[tab Example Tab 3]]
+
+test
+
+[[/tab]]
+
+[[/tabview]]
+
+[[div style="height: 10px"]]
+[[/div]]
+
+----
+
+[[=]]
+
++ Source Code
+
+[[div style="height: 10px"]]
+[[/div]]
+
+[[collapsible show="View Code" hide="Close Code"]]
+
+[[<]]
+
+[[code type="css"]]
+
+/* Angel Theme by MisterFrown */
+ 
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+/* Root Block */
+
+:root {
+
+--theme-base: "black-highlighter";
+--theme-id: "angel";
+--theme-name: "Angel Theme";
+
+--header-title: "SCP FOUNDATION";
+--header-subtitle: "SECURE, CONTAIN, PROTECT";
+--header-h2-font-size: 1em;
+
+--header-font: "Sour Gummy", sans-serif;
+--UI-font: "Itim", cursive;
+
+--white-monochrome: 255, 240, 245;
+--gray-monochrome: 244, 187, 255;
+--light-gray-monochrome: 255, 250, 241;
+
+--bright-accent: 137, 207, 240;
+--dark-accent: 0, 206, 209;
+--medium-accent: 244, 154, 194;
+ 
+--hoverblock-bg: var(--light-gray-monochrome);
+--hoverblock-txt: var(--swatch-text-dark);
+--hoverblock-header-bg: var(--dark-accent);
+--hoverblock-header-txt: var(--white-monochrome);
+
+--link-color: var(--black-monochrome);
+--visited-link-color: var(--black-monochrome);
+--hover-link-color: var(--medium-accent);
+--newpage-color: var(--dark-accent);
+
+--swatch-secondary-color: var(--light-gray-monochrome);
+--swatch-tertiary-color: var(--dark-accent);
+ 
+--rating-module-bg-color: var(--gray-monochrome);
+--rating-module-bottom-border-color: var(--dark-accent);
+
+--background-gradient-distance: 0px;
+--gradient-topmenu: linear-gradient(180deg, rgba(var(--gray-monochrome),1) 0%, rgba(var(--gray-monochrome),1) 100%);
+--gradient-topmenu-mobile: none;
+--topbar-height-on-desktop: 1.7rem;
+
+--toggle-border-color: rgb(var(--gray-monochrome));
+--toggle-icon-color: rgb(var(--gray-monochrome));
+--toggle-roundness: 20%;
+ 
+--zero: 0;
+ 
+}
+
+/* Main Content */
+ 
+#main-content {
+ 
+--ui-button-bg-color: var(--rating-module-bg-color);
+--ui-icon-hover-color: var(--dark-accent);
+--ui-button-hover-txt: var(--swatch-text-light);
+--ui-icon-color: var(--dark-accent);
+ 
+}
+
+/* Header */
+ 
+#header {
+ 
+--login-username-color: var(--swatch-text-dark);
+--login-myaccount-color: var(--swatch-text-dark);
+--search-icon-color: var(--swatch-text-dark);
+--login-dropdown-text-hover-color: var(--swatch-text-dark);
+--login-line-divider-color: var(--swatch-text-dark);
+ 
+}
+
+#extra-div-2 {
+
+height: var(--header-height-on-desktop);
+width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+pointer-events: none;
+background-color: rgb(var(--white-monochrome));
+background-image: url("https://scp-wiki.wdfiles.com/local--files/theme%3Aangel/starcircle.png");
+background-size: 5%;
+
+}
+
+#extra-div-3 {
+
+height: var(--header-height-on-desktop);
+width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+pointer-events: none;
+background-image: url("https://scp-wiki.wdfiles.com/local--files/theme%3Aangel/stars.png");
+background-size: 100%;
+
+}
+
+/* Top Bar */
+ 
+#top-bar {
+ 
+--dropdown-links-hover-color: var(--swatch-text-light);
+--topmenu-category-hover-color: var(--swatch-text-light);
+--topmenu-category-color: var(--black-monochrome);
+--mobile-topmenu-sidebar-button-color: var(--black-monochrome);
+ 
+}
+
+#top-bar {
+
+background: rgb(var(--gray-monochrome));
+border: none;
+
+}
+
+/* Background */
+
+#content-wrap {
+
+background-color: rgb(var(--white-monochrome));
+background-image: url("https://scp-wiki.wdfiles.com/local--files/theme%3Aangel/starcircle.png");
+background-size: 5%;
+
+}
+
+/* Page Title */
+ 
+#page-title {
+
+background: rgba(var(--gray-monochrome), 0.4);
+box-shadow: 0.25rem 0.25rem 0 rgba(var(--bright-accent), 0.4);
+border-radius: 20px;
+margin-bottom: 10px;
+padding-top: 2px;
+padding-bottom: 2px;
+justify-content: center;
+ 
+}
+
+#page-title::after,
+.meta-title::after,
+#page-title::before,
+.meta-title::before {
+ 
+display: none;
+ 
+}
+
+/* Side Bar */
+
+#interwiki .side-block,
+#side-bar .side-block {
+
+background: rgb(var(--gray-monochrome));
+box-shadow: 0.15rem 0.15rem 0 rgb(var(--bright-accent));
+
+}
+
+#interwiki .heading,
+#side-bar .heading {
+
+box-shadow: none;
+position: relative;
+
+}
+ 
+#interwiki .heading p,
+#side-bar .heading p {
+
+display: inline-block;
+position: relative;
+padding: 0.45em 1em;
+text-indent: 0;
+color: rgb(var(--swatch-text-light));
+margin: auto;
+
+}
+
+/* Links */
+
+#page-content a:not([href*="user"]):not(.footnotes-footer a[href*="javascript"]):not(.page-rate-widget-box .rateup a):not(.page-rate-widget-box .ratedown a):not(.page-rate-widget-box .cancel a) {
+
+padding: 0.35em;
+margin: -0.15em;
+background: rgba(var(--gray-monochrome), 0.4);
+box-shadow: 0.25rem 0.25rem 0 rgba(var(--bright-accent), 0.4);
+border-radius: 20px;
+
+}
+
+#page-content a:not([href*="user"]):not(.footnotes-footer a[href*="javascript"]):not(.page-rate-widget-box .rateup a):not(.page-rate-widget-box .ratedown a):not(.page-rate-widget-box .cancel a) {
+
+padding: 0.35em;
+margin: -0.15em;
+background: rgba(var(--bright-accent), 0.4);
+box-shadow: 0.25rem 0.25rem 0 rgba(var(--gray-monochrome), 0.4);
+border-radius: 10px;
+
+}
+
+/* Rating Module */
+
+.page-rate-widget-box:not(.rateBox .page-rate-widget-box),
+#page-content .rate-box-with-credit-button {
+
+box-shadow: 0.25rem 0.25rem 0 rgb(var(--bright-accent));
+
+}
+
+/* Bottom Buttons */
+
+div[id*="page-options-bottom"]:not(.page-rate-widget-box):not(#search-top-box-form)>a.btn {
+
+box-shadow: 0.25rem 0.25rem 0 rgb(var(--bright-accent));
+background-color: rgb(var(--rating-module-bg-color));
+border-radius: 10px;
+
+}
+
+/* Footnotes */
+
+.bibitems,
+.footnotes-footer {
+ 
+background-color: rgb(var(--rating-module-bg-color));
+ 
+}
+ 
+.bibitems .bibitem::after,
+.footnotes-footer a[href*="javascript"]::before {
+ 
+background-color: rgb(var(--rating-module-bg-color));
+box-shadow: none;
+
+}
+
+/* Image Block */
+
+.image-block,
+.scp-image-block {
+
+box-shadow: 0.25rem 0.25rem 0 rgb(var(--bright-accent));
+border-radius: 0px 0px 25px 25px;
+
+}
+
+:is(div.image-block, div.scp-image-block) :is(.image-caption, .scp-image-caption) {
+
+background-color: rgb(var(--rating-module-bg-color));
+box-shadow: 0.25rem 0.25rem 0 rgb(var(--bright-accent));
+border-radius: 0px 0px 25px 25px;
+
+}
+
+/* Code + Page Source */
+
+.code, .page-source {
+
+background-color: rgb(var(--rating-module-bg-color));
+box-shadow: 0.25rem 0.25rem 0 rgb(var(--bright-accent));
+border-radius: 10px;
+border: none;
+
+}
+
+/* Tabs */
+
+.yui-navset.yui-navset-top>.yui-content {
+
+background: rgba(var(--light-gray-monochrome), 0.5);
+border: none;
+border-radius: 0px 0px 20px 20px;
+
+}
+
+/* Hovertip */
+
+.hovertip[style*="display: block"] {
+
+border: solid 2px rgb(var(--dark-accent));
+border-radius: 20px;
+
+}
+
+.hovertip:before {
+
+box-shadow: 0.15rem 0.15rem 0 rgb(var(--bright-accent)) !important;
+border-radius: 20px;
+
+}
+
+.hovertip .f-heading {
+
+border-radius: 20px;
+
+}
+
+/* Tags */
+
+#main-content .page-tags span {
+
+justify-content: flex-start;
+
+}
+ 
+#main-content .page-tags span a:-webkit-any-link:not([href^="/system:page-tags/tag/_"]) {
+
+padding: 0.35em;
+background: rgba(var(--gray-monochrome), 0.4);
+box-shadow: 0.25rem 0.25rem 0 rgba(var(--bright-accent), 0.4);
+border-radius: 20px;
+margin-bottom: 10px;
+
+}
+ 
+#main-content .page-tags span a:-moz-any-link:not([href^="/system:page-tags/tag/_"]) {
+
+padding: 0.35em;
+background: rgba(var(--gray-monochrome), 0.4);
+box-shadow: 0.25rem 0.25rem 0 rgba(var(--bright-accent), 0.4);
+border-radius: 20px;
+margin-bottom: 10px;
+
+}
+ 
+#main-content .page-tags span a:any-link:not([href^="/system:page-tags/tag/_"]) {
+
+padding: 0.35em;
+background: rgba(var(--gray-monochrome), 0.4);
+box-shadow: 0.25rem 0.25rem 0 rgba(var(--bright-accent), 0.4);
+border-radius: 20px;
+margin-bottom: 10px;
+
+}
+
+/* Footnotes */
+ 
+.bibitems,
+.footnotes-footer {
+ 
+background-color: rgb(var(--light-gray-monochrome));
+border: solid 2px rgb(var(--dark-accent));
+box-shadow: 0.25rem 0.25rem 0 rgba(var(--bright-accent), 0.4);
+border-radius: 20px;
+ 
+}
+ 
+.bibitems .title,
+.footnotes-footer .title {
+ 
+background-color: rgb(var(--dark-accent));
+text-align: center;
+color: rgb(var(--light-gray-monochrome));
+font-family: var(--header-font);
+border-radius: 20px;
+ 
+}
+ 
+.bibitems .bibitem::after,
+.footnotes-footer a[href*="javascript"]::before {
+ 
+background-color: rgb(var(--light-gray-monochrome));
+ 
+}
+
+/* Mobile Adjustments */
+ 
+@media only screen and (max-width: 600px) {
+
+#extra-div-3 {
+
+background-size: 250%;
+
+}
+
+}
+
+/* Divs */
+
+:is(blockquote, div.blockquote, [class*="blockquote"]) {
+
+background-color: rgba(var(--gray-monochrome), 0.4);
+border: none;
+box-shadow: 0.25rem 0.25rem 0 rgba(var(--bright-accent), 0.4);
+border-radius: 20px;
+
+}
+
+[[/code]]
+
+[[/<]]
+
+[[/collapsible]]
+
+[[/=]]
+
+[[/iftags]]
+
+[[include :scp-wiki:component:centered-header-bhl]]
+[[include :scp-wiki:component:toggle-sidebar-bhl]]
+
+[[module CSS]]
+@import url(https://scp-wiki.wikidot.com/theme:angel/code/1);
+[[/module]]

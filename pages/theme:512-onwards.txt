@@ -1,0 +1,496 @@
+[[iftags +theme]]
+[[module css]]
+@import url('https://scp-wiki.wdfiles.com/local--code/theme%3Abasalt/1');
+@import url('https://scp-wiki.wdfiles.com/local--code/theme%3Abasalt/3');
+@import url('https://scp-wiki.wdfiles.com/local--code/theme%3Abasalt/5');
+[[/module]]
+
+[[=]]
+[[module Rate]]
+
+[[include :scp-wiki:info:start]]
+yo its another basalt reskin by [[*user waylandlaurencepan]]
+[[include :scp-wiki:info:end]]
+
+------
+[[image https://scp-wiki.wikidot.com/local--files/theme:admo/basalt-theme-logo.svg style="width:50%;"]]
+
+[[size 110%]]**On any page:**[[/size]]
+[[size 140%]]**{{@@[[include @@[[span style="opacity: 70%;"]]@@:scp-wiki:@@[[/span]]@@theme:basalt acs-itemnum=a|hidetitle=a]]@@}}**[[/size]]
+[[size 140%]]**{{@@[[include @@[[span style="opacity: 70%;"]]@@:scp-wiki:@@[[/span]]@@theme:512-onwards]]@@}}**[[/size]]
+[[/=]]
+
+This is the Site-512 Theme by [[*user WaylandLaurencePan]], dubbed the 512 Onwards Theme. It is a [[[theme:basalt|Basalt]]]-based theme for [[[secure-facility-dossier-site-512|Site-512]]] and associated articles; in particular, the series [[[https://scp-wiki.wikidot.com/512-means-onwards-hub|512 Means Onwards]]] (did not exist as of writing; now exists as of reading). It shamelessly grabs CSS from [[[SCP-9628]]] by [[*user sprawlingstar]] (an incredible article, by the way).
+
+It is wholly shaped by my personal preferences. Especially regarding the presence of ITEM#: in ACS and page titles.
+
+Yes, it is an incredibly red theme. When your country's flag is dichromatic, there's only so much you can do.
+[[toc]]
+
+------
+
++ __Settings__
+
+There are no easy buttons or dials, given this theme's intent to be used solely for Site-512 articles. Typical Basalt variables remain exposed. Modify CSS as needed. Feel free to contact me if you need help.
+
+A few new variables have been added:
+[[div class="blockquote"]]
+ {{-​-onwards-ui-highlight: the highlight for the UI above
+ -​-onwards-account-ui-selector: hover-color for account selector
+ -​-onwards-header-sizing: customize the pattern size for the header
+ -​-onwards-pattern-color1: first color for the pattern
+ -​-onwards-pattern-color2: second color for the pattern
+ -​-onwards-pattern-bgcolor: overall background color}}
+[[/div]]
+
+------
+
++ __Elements__
+
++* Header 1
+++* Header 2
++++* Header 3
+++++* Header 4
++++++* Header 5
+++++++* Header 6
+
+[[tabview]]
+[[tab Test]]
+This is a tabview. 
+[[/tab]]
+[[tab Test 2]]
+Another tab.
+[[/tab]]
+[[tab Now this one has a really really really really really really really long name for no reason]]
+nil
+[[/tab]]
+[[/tabview]]
+
+You can use footnotes too.[[footnote]]etc...[[/footnote]]
+
+[[collapsible]]
+testing!
+[[/collapsible]]
+
+------
+
++ __Custom Divs__
+
+The typical Basalt divs are available under this theme:
+
+[[div class="blockquote"]]
+
+= {{@@[[div class="blockquote"]]@@}}
+
+[[/div]]
+
+[[div class="jotting"]]
+
+= {{@@[[div class="jotting"]]@@}}
+
+[[/div]]
+
+[[div class="modal"]]
+
+= {{@@[[div class="modal"]]@@}}
+
+[[/div]]
+
+[[div class="smallmodal"]]
+
+= {{@@[[div class="smallmodal"]]@@}}
+
+[[/div]]
+
+[[div class="papernote"]]
+
+= {{@@[[div class="papernote"]]@@}}
+
+[[/div]]
+
+[[div class="raisa_memo"]]
+
+= {{@@[[div class="raisa_memo"]]@@}}
+
+[[/div]]
+
+In addition, some new memos have been added:
+
+[[div class="hq_memo"]]
+
+= {{@@[[div class="hq_memo"]]@@}}
+
+[[/div]]
+
+[[div class="insp_memo"]]
+
+= {{@@[[div class="insp_memo"]]@@}}
+
+[[/div]]
+
+[[div class="tnn_memo"]]
+
+= {{@@[[div class="tnn_memo"]]@@}}
+
+[[/div]]
+
+
+[[div class="tnl_memo"]]
+
+= {{@@[[div class="tnl_memo"]]@@}}
+
+[[/div]]
+
+
+[[div class="elnr_memo"]]
+
+= {{@@[[div class="elnr_memo"]]@@}}
+
+[[/div]]
+
+[[div class="cnm_memo"]]
+
+= {{@@[[div class="cnm_memo"]]@@}}
+
+[[/div]]
+
+[[div class="ss_memo"]]
+
+= {{@@[[div class="ss_memo"]]@@}}
+
+[[/div]]
+
+
+[[div class="hr_memo"]]
+
+= {{@@[[div class="hr_memo"]]@@}}
+
+[[/div]]
+
+[[div class="enp_memo"]]
+
+= {{@@[[div class="enp_memo"]]@@}}
+
+[[/div]]
+
+[[div class="ani_memo"]]
+
+= {{@@[[div class="ani_memo"]]@@}}
+
+[[/div]]
+
+[[div class="it_memo"]]
+
+= {{@@[[div class="it_memo"]]@@}}
+
+[[/div]]
+
+[[div class="ae_memo"]]
+
+= {{@@[[div class="ae_memo"]]@@}}
+
+[[/div]]
+
+[[div class="fnm_memo"]]
+
+= {{@@[[div class="fnm_memo"]]@@}}
+
+[[/div]]
+
+[[div class="dis_memo"]]
+
+= {{@@[[div class="dis_memo"]]@@}}
+
+[[/div]]
+
+-------
+
++ __Wrap-Up__
+
+Feel free to abuse this theme as much as you want. The header was inspired by a mix of batik design and government tear-off slips.
+
+--------
+
++ __Source Code__
+
+
+[[collapsible]]
+
+
+[[code type="css"]]
+:root {
+ --onwards-ui-highlight: 240, 55, 55;
+ --onwards-account-ui-selector: 240, 117, 117;
+ --onwards-header-sizing: 28px;
+ --onwards-pattern-color1: 235, 140, 140;
+ --onwards-pattern-color2: 240, 117, 117;
+ --onwards-pattern-bgcolor: 250, 235, 235;
+
+ -webkit-tap-highlight-color: transparent;
+
+ --header-top-gap: 0rem;
+ --top-bar-height: 2rem;
+ --title-size: 3.0rem;
+ --subtitle-size: 1.6rem;
+ --header-title: 'SITE-512';
+ --header-subtitle: 'ONWARDS, FOREVER';
+ --logo: url(https://scp-wiki.wikidot.com/local--files/wlpan-artist-page/512logo-textless.png);
+ --icon-opacity: 100%;
+ --top-bar-link-background-hover: var(--onwards-ui-highlight);
+ --top-bar-link-background-hover-alt: var(--onwards-ui-highlight);
+ --selection-background-color: var(--onwards-ui-highlight);
+ --top-bar-dropdown-background-hover: var(--onwards-ui-highlight);
+ --rate-module-info-icon-color: 255, 143, 143;
+ --scrollbar-track-color: 254,254,254;
+
+  --basalt-secondary-color: 252, 240, 241;
+  --basalt-tertiary-color: 117, 7, 1;
+  --basalt-alternate-color: 255, 236, 235;
+  --basalt-UI-dark-palette: 61, 41, 43;
+
+  --basalt-overtone: 79, 74, 74;
+  --basalt-undertone: 169, 14, 14;  
+
+  --basalt-bright-element-color: 147, 32, 0;
+  --basalt-dark-element-color: 79, 74, 74;
+
+  --basalt-UI-blur: 0;
+
+  --general-border-color: 222, 200, 200;
+  --image-caption-background-color: 255,255,255;
+  --blockquote-border-width: 0.1rem;
+
+  --link-color: 186, 38, 17;
+  --link-newpage-color: 184, 89, 17;
+  --link-visited-color: 132, 32, 18;
+
+  --tab-background-color: var(--basalt-secondary-color);
+  --tab-hover-background-color: var(--basalt-undertone);
+  --tab-selected-background-color: var(--basalt-tertiary-color);
+  --tab-text-color: var(--basalt-tertiary-color);
+  --tab-focus-text-color: var(--basalt-secondary-color);
+  --tab-transition: calc(1s/3) ease-out;
+
+  --rate-module-background-color: var(--basalt-secondary-color);
+  --rate-module-info-background-color: var(--rate-module-background-color); 
+  --rate-module-text-color: var(--basalt-main-text-color);
+  --authorbox-background-color: var(--basalt-secondary-color);
+}
+#search-top-box::before {
+background-color: rgb(var(--onwards-ui-highlight));
+}
+#login-status::after {
+background-color: rgb(var(--onwards-ui-highlight));
+}
+div#account-options {
+background-color: rgb(var(--onwards-ui-highlight));
+}
+div#account-options > ul > li > a::before {
+background-color: rgb(var(--onwards-account-ui-selector));
+}
+#header {
+    contain: initial;
+    height: auto;
+    min-height: var(--header-final-height);
+    position: static;
+    background: transparent;
+box-shadow: none;
+    grid-template-areas:
+        '. . . . .'
+        '. search line top-bar user'
+        'h-link h-link h-link h-link h-link';
+    grid-template-columns: var(--side-bar-button-width) var(--search-button-width) 1fr max-content var(--user-button-width);
+    grid-template-rows: var(--header-top-gap) var(--top-bar-height) 1fr;
+backdrop-filter: none;
+
+background-color: rgb(var(--onwards-pattern-bgcolor));
+
+  --s: var(--onwards-header-sizing);
+  --c1: rgb(var(--onwards-pattern-color1));
+  --c2: rgb(var(--onwards-pattern-color2)); 
+    
+  --_l:#0000 34%,var(--c1) 0 41%,#0000 0 59%,var(--c1) 0 66%,#0000 0;
+  background:
+    linear-gradient(-45deg,var(--_l)),
+    linear-gradient( 45deg,var(--_l)) var(--c2);
+  background-size: var(--s) var(--s);
+
+
+border-bottom: 0.3rem dashed rgb(254,254,254);
+
+}
+
+#side-bar {
+   margin-top: var(--top-bar-height);
+}
+ 
+#header h1 { grid-template-columns: minmax(0,1fr); }
+#header h1 a {
+    justify-content: center;
+    width: auto; height: auto;
+text-align: center;
+    flex-wrap: wrap;
+    pointer-events: none;
+    gap: 1rem calc(var(--base-header-height) *.125);
+    padding: 1rem;
+    box-sizing: border-box;
+}
+#header h1 a::before, #header h1 a span { height: auto; pointer-events: auto; }
+#header h1 a::before {
+    width: calc(var(--base-header-height)*0.80);
+    aspect-ratio: 1;
+    min-width: unset;
+    max-width: 100%;
+
+
+opacity: var(--icon-opacity);
+}
+
+ 
+#side-bar::before, #side-bar::after {
+    inset: initial;
+    left: 0;
+    top: var(--header-top-gap);
+    height: var(--top-bar-height);
+    transition: left var(--side-bar-transition);
+}
+
+#more-options-button{
+color: white;
+}
+
+#page-content {
+    padding-block: 0em;
+}
+
+@media only screen and (max-width: 1024px) {
+:root {
+    --header-top-gap: 0rem;
+    --main-content-side-margin: calc(0.25rem + 2.25vw);
+}
+  
+#header {
+    grid-template-areas:
+        '. search . user'
+        'h-link h-link h-link h-link'
+        'top-bar top-bar top-bar top-bar';
+    grid-template-columns: var(--side-bar-button-width) var(--search-button-width) 1fr var(--user-button-width);
+    grid-template-rows: var(--top-bar-height) 1fr var(--top-bar-height);
+}
+}
+
+#top-bar div.mobile-top-bar>.open-menu {
+    position: fixed;
+    left: 0;
+    top: var(--header-top-gap);
+    width: var(--side-bar-button-width);
+    height: var(--top-bar-height);
+    background-color: rgba(213, 60, 106,.5);
+    border-radius: 0rem 1rem 1rem 0rem;
+}
+
+#side-bar > a.close-menu, #side-bar:target > a.close-menu {
+background-color: rgb(0, 0, 0, 0);
+}
+
+div.papernote {
+background-color: rgb(242, 255, 128);
+}
+
+div.tnn_memo {
+    --memo-heading: "TIMELINES \0026   NARRATIVES MEMORANDUM";
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+                  url(https://scp-wiki.wikidot.com/local--files/wlpan-artist-page/tnn.png);
+    background-color: #a1f9ff;
+}
+
+div.tnl_memo {
+    --memo-heading: "TRANSPORTATION \0026   LOGISTICS MEMORANDUM";
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+                  url(https://scp-wiki.wikidot.com/local--files/wlpan-artist-page/tnl.png);
+    background-color: #2e82ff;
+}
+div.elnr_memo {
+    --memo-heading: "ESOTERIC LOGICS \0026   RITUALISTICS MESSAGE";
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+                  url(https://scp-wiki.wikidot.com/local--files/wlpan-artist-page/elnr.png);
+    background-color: #fa16e3;
+}
+div.cnm_memo {
+    --memo-heading: "CONSTRUCTION \0026   MAINTENANCE NOTICE";
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+                  url(https://scp-wiki.wikidot.com/local--files/wlpan-artist-page/cnm.png);
+    background-color: #ffbb3d;
+}
+div.ss_memo {
+    --memo-heading: "SITE SECURITY NOTICE";
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+                  url(https://scp-wiki.wikidot.com/local--files/wlpan-artist-page/ss.png);
+    background-color: #9452ff;
+}
+div.hr_memo {
+    --memo-heading: "HUMAN RESOURCES NOTICE";
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+                  url(https://scp-wiki.wikidot.com/local--files/wlpan-artist-page/hr.png);
+    background-color: #68fcab;
+}
+div.enp_memo {
+    --memo-heading: "EXPERIMENTATION \0026   PARATECHNOLOGY MEMORANDUM";
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+                  url(https://scp-wiki.wikidot.com/local--files/wlpan-artist-page/enp.png);
+    background-color: #2eb2ff;
+}
+div.ani_memo {
+    --memo-heading: "ANALYTICS \0026   INTELLIGENCE MEMORANDUM";
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+                  url(https://scp-wiki.wikidot.com/local--files/wlpan-artist-page/ani.png);
+    background-color: #86b9bd;
+}
+div.it_memo {
+    --memo-heading: "NOTICE FROM INTEGRATED TELERGISTS";
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+                  url(https://scp-wiki.wikidot.com/local--files/wlpan-artist-page/it.png);
+    background-color: #d28adb;
+}
+div.ae_memo {
+    --memo-heading: "ANOMALOUS ENERGIES MEMORANDUM";
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+                  url(https://scp-wiki.wikidot.com/local--files/wlpan-artist-page/ae.png);
+    background-color: #53c9a2;
+}
+div.fnm_memo {
+    --memo-heading: "FOLKLORE \0026   MYTHOLOGY MEMORANDUM";
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+                  url(https://scp-wiki.wikidot.com/local--files/wlpan-artist-page/fnm.png);
+    background-color: #ad8c8c;
+}
+div.dis_memo {
+    --memo-heading: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 MEMORANDUM";
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+                  url(https://scp-wiki.wikidot.com/local--files/wlpan-artist-page/dis.png);
+    background-color: white;
+}
+div.insp_memo {
+    --memo-heading: "SITE-512 INSPECTORATE";
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+                  url(https://scp-wiki.wikidot.com/local--files/wlpan-artist-page/insp.png);
+    background-color: #fa8a84;
+}
+div.hq_memo {
+    --memo-heading: "SITE-512 HEADQUARTERS";
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+                  url(https://scp-wiki.wikidot.com/local--files/wlpan-artist-page/hq.png);
+    background-color: #ff3d47;
+}
+
+[[/code]]
+[[/collapsible]]
+-------
+
+[[include more-by:waylandlaurencepan]]
+
+[[/iftags]]
+
+[[module CSS]]
+@import url(https://scp-wiki.wikidot.com/theme:512-onwards/code/1);
+[[/module]]

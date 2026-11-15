@@ -1,0 +1,311 @@
+[[iftags +theme]]
+[[module css]]
+@import url('https://scp-wiki.wdfiles.com/local--code/theme%3Abasalt/1');
+@import url('https://scp-wiki.wdfiles.com/local--code/theme%3Abasalt/3');
+@import url('https://scp-wiki.wdfiles.com/local--code/theme%3Abasalt/5');
+[[/module]]
+
+
+[[=]]
+
+[[include :scp-wiki:info:start]]
+Basalt-based theme for Alcur Hospital, by [[*user ApothecaryCat21]] and [[*user dxxander]]
+[[include :scp-wiki:info:end]]
+
+------
+[[image https://scp-wiki.wikidot.com/local--files/theme:admo/basalt-theme-logo.svg style="width:50%;"]]
+
+[[size 110%]]**On any page:**[[/size]]
+[[size 140%]]**{{@@[[include @@[[span style="opacity: 70%;"]]@@:scp-wiki:@@[[/span]]@@theme:basalt]]@@}}**[[/size]]
+[[size 140%]]**{{@@[[include @@[[span style="opacity: 70%;"]]@@:scp-wiki:@@[[/span]]@@theme:alcur-theme]]@@}}**[[/size]]
+[[/=]]
+
+This is the Alcur Hospital theme, a Basalt-based theme created by [[*user ApothecaryCat21]] with assistance from [[*user dxxander]]. This theme was created for use with the GoI [[[the alcur hospital hub|Alcur Hospital.]]] Basalt **must** be included above this theme in order for it to work properly.
+
+Thank you to:
+[[*user Liryn]] and [[*user Placeholder McD]] - [[[theme:basalt|Basalt]]]
+[[*user Greyve]] - memos from [[[theme:greystyle|Greystyle]]]
+[[*user badooga]] - collapsibles from [[[theme:hytoth-two|Second Second Hytoth Theme]]]
+[[toc]]
+
+-----
++ __Settings__
+
+All Basalt settings still apply.
+
+-----
+
++ __Elements__
+
++* Header 1
+++* Header 2
++++* Header 3
+++++* Header 4
++++++* Header 5
+++++++* Header 6
+
+[[tabview]]
+[[tab Test]]
+This is a tabview.
+[[/tab]]
+[[tab Test 2]]
+Another tab.
+[[/tab]]
+[[tab Now this one has a really really really really really really really long name for no reason]]
+nil
+[[/tab]]
+[[/tabview]]
+
+You can use footnotes too.[[footnote]]etc...[[/footnote]]
+
+[[collapsible]]
+testing!
+[[/collapsible]]
+
+@@ @@
+
+||~ This is a ||~ table ||
+||You should know || how to make these ||
+||||already ||
+
+------
+
++ __Custom Divs__
+
+The typical Basalt divs are available under this theme:
+
+[[div class="blockquote"]]
+
+= {{@@[[div class="blockquote"]]@@}}
+
+[[/div]]
+
+[[div class="jotting"]]
+
+= {{@@[[div class="jotting"]]@@}}
+
+[[/div]]
+
+[[div class="modal"]]
+
+= {{@@[[div class="modal"]]@@}}
+
+[[/div]]
+
+[[div class="smallmodal"]]
+
+= {{@@[[div class="smallmodal"]]@@}}
+
+[[/div]]
+
+[[div class="papernote"]]
+
+= {{@@[[div class="papernote"]]@@}}
+
+[[/div]]
+
+[[div class="notation"]]
+
+= {{@@[[div class="notation"]]@@}}
+
+[[/div]]
+
+In addition, a new memo has been added:
+
+[[div class="alcur-memo"]]
+
+= {{@@[[div class="alcur-memo"]]@@}}
+
+[[/div]]
+
++ __Source Code__
+
+
+[[collapsible]]
+
+
+[[code type="css"]]
+/*-- collapsibles --*/
+#page-content .collapsible-block-folded:not(.licensebox a, .info-container a, .default-style div),
+#page-content .collapsible-block-unfolded-link:not(.licensebox a, .info-container a, .default-style div) {
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+}
+
+#page-content a.collapsible-block-link:not(.licensebox a, .info-container a, .default-style a) {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(var(--basalt-light-text-color));
+  padding: 4px 9px 4px 7px;
+  background: rgb(var(--header-title-color));
+  border-radius: 6px;
+  margin-top: 5px;
+  box-shadow: inset 0px 0px 0px 2px rgba(0, 0, 0, 0.4);
+  transition-duration: 0.4s;
+  display: inline-block;
+  min-width: 200px;
+  min-height: 20px;
+}
+#page-content a.collapsible-block-link:not(.licensebox a, .info-container a, .default-style a):hover {
+  background: rgb(var(--header-background-color));
+  box-shadow: none;
+}
+.collapsible-block-unfolded:not(.default-style div, .no-animation div) .collapsible-block-content[style*="block"] {
+  overflow: hidden;
+  animation: tab-appear 1s 1 both;
+}
+
+
+/*-- memo --*/
+.alcur-memo {
+    --memo-txt-color: var(--txt-color2);
+    --memo-bg-color: 198, 223, 237;
+    --memo-logo: url("https://scp-wiki.wikidot.com/local--files/theme%3Aalcur-theme/logo-dark.png");
+    --memo-logo-filter: invert(11%) sepia(2%) saturate(4457%) hue-rotate(314deg) brightness(95%) contrast(76%) opacity(20%);
+    --memo-size: 3.5rem;
+
+    position: relative;
+    color: rgb(var(--memo-txt-color));
+    min-height: var(--memo-size);
+    margin: 2.25rem auto;
+    padding: 1.25rem;
+    text-align: center;
+    background: rgb(var(--memo-bg-color));
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(.1rem);
+}
+
+.alcur-memo::before {
+    content: "ALCUR HOSPITAL MEMORANDUM";
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 1.25rem auto;
+    padding-top: .5em;
+    font-family: var(--UI-font);
+    font-weight: 700;
+    font-size: 1.75em;
+    text-align: center;
+}
+
+.alcur-memo::after {
+    content: "";
+    position: absolute;
+    height: 15rem;
+    width: 15rem;
+    top: 50%;
+    left: 50%;
+    margin-top: -7.5rem;
+    margin-left: -7.5rem;
+    min-height: var(--memo-size);
+    background: var(--memo-logo);
+    filter: var(--memo-logo-filter);
+    background-size: calc(1.5 * var(--memo-size));
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.alcur-memo > * {
+    position: relative;
+    z-index: 2;
+}
+
+:root {
+/*-- body elements --*/
+
+   --basalt-background-color: 224, 255, 254;
+   --basalt-bright-element-color: 72, 117, 161;
+   --basalt-dark-element-color: 141, 175, 196;
+
+   --link-color: 0, 41, 84;
+   --link-newpage-color: 0, 41, 84;
+   --link-visited-color: 57, 110, 196;
+
+   --tab-hover-background-color: var(--header-background-color);
+   --tab-selected-background-color: var(--header-title-color);
+
+   --header-background-color: 184, 206, 219;
+   --header-title-color: 0, 41, 84;
+   --header-subtitle-color: 0, 41, 84;
+   --top-bar-link-color: 0, 41, 84;
+   --top-bar-dropdown-background: 184, 206, 219;
+   --search-icon-color: 0, 41, 84;
+   --side-bar-background-color: 184, 206, 219;
+   --side-bar-heading-text-color: 0, 41, 84;
+   --side-bar-heading-color: 141, 175, 196;
+   --side-bar-link-color: 0, 41, 84;
+   --scrollbar-thumb-color: 72, 117, 161;
+   --general-border-color: 72, 117, 161;
+
+   --footnote-background-color: 255, 255, 255;
+   --rate-module-background-color: 255, 255, 255;
+   --basalt-secondary-color: 255, 255, 255;
+
+/*-- header --*/
+  --logo: url("https://scp-wiki.wikidot.com/local--files/theme%3Aalcur-theme/alcur-logo.png");
+  --title: "The Alcur Hospital";
+  --subtitle: "Curing Illnesses across Countless Infinities";
+  --title-size: 2.0rem;
+  --subtitle-size: 1.50rem;
+ 
+/*-- table --*/
+  --basalt-th-background-color: 0, 41, 84;
+}
+
+@media only screen and (max-width: 600px) {
+    :root {
+        --title-size: 1.50rem;
+        --subtitle-size: 0.70rem;
+    }
+}
+/*-- altered blockquote backgrounds --*/
+:is(blockquote, div.blockquote) {
+       background-color: white;
+}
+
+#page-content .jotting {
+       background-color: white;
+}
+
+#page-content .papernote {
+       background-color: white;
+}
+
+#page-content .notation {
+       background-color: white;
+}
+
+#page-content .footnotes-footer,
+#page-content .footnotes-footer .footnote-footer {
+  background-color: white;
+}
+ 
+#page-content .page-rate-widget-box {
+  background-color: white;
+}
+ 
+#page-content .code,
+.code pre {
+  background-color: white;
+}
+[[/code]]
+[[/collapsible]]
+
+[[footnoteblock]]
+
+[[include :scp-wiki:component:license-box-theme
+|author=ApothecaryCat21 and dxxander]]
+> **Filename:** alcur-logo.png, logo-dark.png
+> **Name:** Logo3 and AlcurLogo
+> **Author:** purplehefferey
+> **License:** CC BY-SA 3.0
+> **Additional Notes:** Originally commissioned this for my prototype GOI article a month back. Artist gave permission for the logo to be released under CC BY-SA 3.0.
+[[include :scp-wiki:component:license-box-end]]
+[[/iftags]]
+
+[[module CSS]]
+@import url(https://scp-wiki.wikidot.com/theme:alcur-theme/code/1);
+[[/module]]

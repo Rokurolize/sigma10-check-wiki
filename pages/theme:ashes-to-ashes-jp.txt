@@ -1,0 +1,148 @@
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** 灰から灰へテーマ
+**翻訳責任者:** SCP-JP
+**翻訳年:** 2026
+**原題:** Ashes To Ashes Theme
+**著作権者:** Yossipossi
+**作成年:** 2025
+**初訳時参照リビジョン:** 8
+**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:ashes-to-ashes ソース]
+[[include :scp-jp:credit:end-preview]]
+
+Black Highlighterを基盤にしたAshes to Ashesテーマです。
+
+**使い方:** @@[[include theme:ashes-to-ashes-jp]]@@
+
+**基盤:** BHL（インライン）
+
+[[module CSS]]
+:root {
+    /* ACT-SPECIFIC CSS */
+    --head-prelude: "YOSHIHIDE'S PROPOSAL";
+    --head-1: "THE TRAIL FOR BEASTS";
+    --head-2: "THE PATH OF SWORDS";
+    --head-3: "THE ROAD TO HELL";
+
+    --sub-prelude: "A PORTRAIT OF HELL";
+    --sub-1: "YOSHIHIDE'S PROPOSAL";
+    --sub-2: "YOSHIHIDE'S PROPOSAL";
+    --sub-3: "YOSHIHIDE'S PROPOSAL";
+
+    /* REGULAR STUFF */
+
+    /* General */
+
+    --bright-accent: 130, 0, 0;
+    --medium-accent: 100, 0, 0;
+    --dark-accent: 70, 0, 0;
+
+    --background-gradient-color: 255, 220, 220;
+
+    /* Header */
+
+    --header-h1-font-size: clamp(1.4rem, 5vw, 2.8125rem);
+
+    --logo-image: url("");
+
+    --header-title: "YOSHIHIDE'S PROPOSAL";
+    --header-title: var(--head-{$act});
+
+    --header-subtitle: var(--sub-prelude);
+    --header-subtitle: var(--sub-{$act});
+
+    --header-gradient-color-bottom: 100, 0, 0;
+    --header-gradient-color-middle: 10, 0, 0;
+    --header-gradient-color-top: 0, 00, 0;
+
+    --swatch-topmenu-bg-color: 30, 10, 10;
+    --swatch-topmenu-border-color: 150, 0, 0;
+
+    --diagonal-stripes: unset;
+    --header-font: 'Fredericka the Great', Times New Roman;
+}
+
+#license-area {
+    background-color: rgb(30, 10, 10);
+}
+
+#breadcrumbs {
+    margin: auto;
+}
+
+#header div[class*="top-bar"] > ul > li > ul {
+    background: rgba(30, 10, 10, 0.9);
+}
+
+#container {
+    background: url(https://scp-wiki.wikidot.com/local--files/theme:ashes-to-ashes/fire.webp);
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto;
+    background-repeat: repeat-x;
+    background-position: top center;
+    background-size: inherit;
+}
+
+#content-wrap::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://scp-wiki.wikidot.com/local--files/theme:ashes-to-ashes/bamboo.webp);
+    z-index: -1;
+    opacity: 0.05;
+    background-position: center center;
+}
+
+#content-wrap::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background-image: url(https://scp-wiki.wikidot.com/local--files/theme:ashes-to-ashes/parchment.webp);
+    background-position: center center;
+    background-size: cover;
+    opacity: 0.12;
+}
+
+#header::before {
+    filter: drop-shadow(0px 3px 2px black);
+}
+
+#header div[class*="top-bar"] > ul {
+    font-family: var(--header-font);
+}
+
+#page-title {
+    display: none;
+}
+
+#main-content hr {
+    border-top: 0.163rem solid rgb(70, 0, 0);
+}
+
+:is(div.image-block, div.scp-image-block) {
+    gap: 0px;
+    border: 5px solid rgba(30, 10, 10, 0.9);
+}
+
+:is(div.image-block, div.scp-image-block) :is(.image-caption, .scp-image-caption) {
+    background-color: rgba(30, 10, 10, 0.9);
+    padding: calc(0.5ex + .0625rem) 0.5ch 0ex;
+    color: white;
+}
+
+:is(blockquote, .blockquote, div.blockquote, [class*="blockquote"]) {
+    box-shadow: inset 0 0 0 .0625rem rgba(150, 100, 100, .5),inset .0625rem 0 0 0 rgba(150, 100, 100, .5),inset 0 -.0625rem 0 0 rgba(150, 100, 100, .75);
+}
+[[/module]]
+
+[[/iftags]]

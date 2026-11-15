@@ -1,0 +1,546 @@
+[[module CSS]]
+@import url(https://scp-wiki.wdfiles.com/local--code/theme%3Aambrose-chapter-two/1);
+[[/module]]
+
+[[iftags +theme]]
+[[>]]
+[[module Rate]]
+[[/>]]
+
+[[include :scp-wiki:component:interwiki-style
+| priority=1
+| theme=https://scp-wiki.wdfiles.com/local--code/theme%3Aambrose-chapter-two/1;
+]]
+
+
+
+This is the Ambrose Chapter two CSS Theme created by [[*user Proasek]] using code heavily modified from the "[[[theme:golden feast | Golden Feast]]]" theme by [[*user c_bonefish]] for [[[https://scp-wiki.wikidot.com/ambrose-restaurant-hub|Ambrose Restaurants]]]
+
+It is intended for use in works relating to the Ambrose Chapter two project, however if you prefer to use it elsewhere you may do so.
+
+To import this theme to your page, put the following text anywhere inside it:
+[[div class="code"]]
+@@[[include :scp-wiki:theme:ambrose-chapter-two]]@@
+[[/div]]
+@@@@
+If you wish to use this theme without the "chapter 2" subheading, you may append the following within your work:
+
+[[div class="code"]]
+@@[[module CSS]]@@
+:root {
+    --header-subtitle: "";
+}
+@@[[/module]]@@
+[[/div]]
+
+@@ @@
+@@ @@
+-----
++ Page Elements
+@@@@
+
+[[toc]]
+
+[[include component:image-block name=https://scp-wiki.wdfiles.com/local--files/theme%3Aambrose-chapter-two/top-image.png|caption=Example Image|width=200px]]
+
++ Title1
+++ Title2
++++ Title3
+++++ Title4
++++++ Title5
+++++++ Title6
+@@@@
+Here is some body text, so you know what that is like.[[footnote]]This text is also here, but you need to either scroll down or hover over the 1 to see it. Nifty. [[/footnote]]
+@@@@
+@@@@
+[# Unvisited Link] | [[[theme:ambrose-chapter-two|Visited Link]]]
+@@ @@
+[[tabview]] [[tab tab1]]
+[[=]]
+> + Link
+> [# Unvisited Link] | [[[theme:ambrose-chapter-two|Visited Link]]]
+> -----
+>> I wonder what footnotes look like in here?[[footnote]]Oh, that's what![[/footnote]]
+[[/=]]
+[[/tab]] [[tab tab2]]
+This is text that exists within a tab. Isn't that nice?
+[[/tab]] [[tab tab3]]
+[[/tab]] [[tab tab4]]
+[[/tab]] [[/tabview]]
+[[collapsible show="Show CSS" hide="Enough of that malarkey"]]
+[[code type="css"]]
+
+/*
+
+    "Ambrose Chapter two" theme, based on colours for Ambrose: Under Johannesburg.
+
+    Created by Proasek, based on the Golden Feast theme by c_bonefish. Further sub-
+    segment credits are copied from the original:
+
+    Header Code adopted from The Buck Stops Here CSS Theme by thd-glasses
+    Info Bar and Page Rating Code adopted from Technoblast Theme by EstrellaYoshte
+ 
+    Background Image1: https://pixabay.com/vectors/ornate-decoration-banner-greeting-3068591/
+    Background Image2: https://pixabay.com/illustrations/chandelier-ornament-decor-golden-3006697/
+ 
+    CC BY-SA 3.0
+*/
+ 
+@import url('https://fonts.bunny.net/css?family=Poiret+One');
+ 
+:root {
+    --title: "Ambrose Restaurants";
+    --short_title: "Ambrose";
+    --header-subtitle: "Chapter 2";
+    background-color: #876D6D;
+}
+ 
+/* Header */
+ 
+div#container-wrap {
+    background: url(https://scp-wiki.wdfiles.com/local--files/theme%3Aambrose-chapter-two/background.png) center top repeat-x;
+    background-size: 224px 400px;
+}
+
+
+#header h1 {
+    margin-left: 0;
+    padding: 0px;
+    clear: both;
+    float: none;
+}
+ 
+#header h1 a {
+    color: transparent;
+    font-size: 0px;
+    font-family: 'Poiret One', cursive;
+    letter-spacing: 0.5px;
+}
+ 
+#header h1 a::before {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    content: var(--title);
+    color: #FFF;
+    font-size: 50px;
+    text-shadow: 1px 1px 3px black;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    padding-top: 75px;
+}
+ 
+#header h2::before {
+    position: absolute;
+    left: 70%;
+    font-size: 15px;
+    content: var(--header-subtitle);
+}
+
+#header h2 span {
+    font-size: 0px
+}
+
+
+#header #header-extra-div-1 {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    margin-top: 0px;
+}
+ 
+#header #header-extra-div-1::before{
+    z-index: -1;
+    content: "";
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size : 280px
+    flex: 1;
+}
+ 
+#header #header-extra-div-1 {
+    background: url(https://scp-wiki.wikidot.com/local--files/theme%3Aambrose-chapter-two/top-image.png) center top no-repeat;
+    background-size : 280px
+}
+ 
+#header {
+    background: none;
+}
+ 
+
+#login-status {
+  position: absolute;
+  top: 30px;
+  z-index: 2;
+}
+ 
+#login-status {
+    color: #ffffff;
+    font-size: 90%;
+}
+ 
+#login-status ul a {
+    color: #A38800;
+}
+ 
+#search-top-box {
+  position: absolute;
+  top: 105px;
+  right: 0px;
+  width: 250px;
+  text-align: right;
+  z-index: 1;
+}
+ 
+#search-top-box-input{
+    border: solid 1px #EACC54;
+    border-radius: 5px;
+    color: #EACC54;
+    background-color: #332B2E;
+    box-shadow: inset 1px 1px 3px rgba(0,0,0,.5);
+}
+ 
+#search-top-box-input:hover,
+#search-top-box-input:focus,
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus{
+    background-color: #967F88;
+
+}
+#search-top-box-form input[type=submit]{
+    border: solid 1px #EACC54;
+    border-radius: 5px;
+    padding: 2px 5px;
+    font-size: 90%;
+    font-weight: bold;
+    color: #EACC54!important;
+    background-color: #0000FF;
+    background: #332B2E;
+    box-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+ 
+#top-bar {
+  width: 100%;
+  top: 160px;
+  z-index: 20;
+ 
+  display: flex;
+  justify-content: center;
+}
+ 
+.top-bar {
+  position: relative;
+  margin: 0 auto;
+}
+ 
+.mobile-top-bar{
+  position: relative;
+  margin: 0 auto;
+  margin-top: -1em;
+}
+ 
+#page-title {
+    font-size: 2.1em;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-family: 'Poiret One', cursive;
+}
+ 
+#content-wrap {
+    margin: 30px auto 0;
+}
+ 
+h1,h2,h3,h4,h5,h6 {
+    color: #FFFFFF;
+    font-weight: bolder;
+    font-family: 'Poiret One', cursive;
+}
+ 
+a:link {
+    color: #F8F13E;
+}
+ 
+a:visited {
+    color: #F8E392;
+}
+ 
+/* Side bar */
+ 
+#side-bar {
+    background: rgba(255, 255, 255, 0);
+}
+ 
+#side-bar .side-block,
+#side-bar .side-block.media,
+#side-bar .side-block.resources,
+#interwiki .side-block {
+    background: #332B2E !important;
+    border: 5px solid #D8A33A;
+    border-radius: 10px 0px;
+}
+
+#side-bar .heading,
+#interwiki .heading {
+    color: #C4B73B;
+    border-bottom: solid 3px #C4B73B;
+}
+ 
+div.open-menu a {
+    color: #A38800;
+    border-color: #A38800;
+}
+ 
+#side-bar div.menu-item.inactive a {
+    color: #ffffff;
+}
+ 
+#side-bar div.menu-item .sub-text {
+    color: #ffffff;
+}
+ 
+#side-bar a:link,
+#interwiki a:link {
+    color: #FAF33E;
+}
+ 
+#side-bar a:visited,
+#interwiki a:visited {
+    color: #FFF7D8;
+}
+ 
+/* side-bar collapsible stuff */
+#side-bar .collapsible-block-unfolded-link {
+    border-bottom: solid 1px #000000;
+}
+ 
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link {
+    color: #000000;
+}
+ 
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link:hover {
+    color: #000000;
+}
+ 
+/* Rate Module */
+ 
+.page-rate-widget-box {
+    box-shadow: none;
+    margin: unset;
+    background-color: #8A7500;
+}
+ 
+div.page-rate-widget-box .rate-points {
+    background-color: #8A7500!important;
+    color: #ffffff;
+}
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+    background: #ffffff;
+    color: #8A7500;
+}
+ 
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a {
+    background: #ffffff;
+    color: #8A7500;
+}
+ 
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover {
+    background: #8A7500;
+    color: #ffffff;
+}
+ 
+.page-rate-widget-box .cancel {
+    background: transparent;
+    background-color: #8A7500;
+}
+ 
+.page-rate-widget-box .cancel a {
+    color: #ffffff;
+}
+ 
+.page-rate-widget-box .cancel a:hover {
+    background: #ffffff;
+    color: #8A7500;
+}
+ 
+ .info-container .collapsible-block-content .wiki-content-table{
+     width: 100%;
+}
+ 
+#page-content .creditRate{
+     margin: unset;
+}
+#page-content .rate-box-with-credit-button {
+    background-color: #8A7500;
+    border: solid 1px #8A7500;
+    box-shadow: none;
+}
+ 
+#page-content .rate-box-with-credit-button .fa-info {
+    border: none;
+    color: #ffffff;
+}
+ 
+#page-content .rate-box-with-credit-button .fa-info:hover {
+    background: #8A7500;
+    color: #FFFFFF;
+}
+ 
+/* Tab */
+ 
+div.yui-navset div.yui-content {
+    background: #F29C63;
+    color: #000000;
+}
+ 
+div.yui-navset ul.yui-nav a,
+div.yui-navset div.yui-navset-top ul.yui-nav a {
+    background: #CA8453;
+    color: #FFFFFF;
+}
+ 
+div.yui-navset ul.yui-nav a:hover,
+div.yui-navset ul.yui-nav a:focus {
+    background: #B26A46;
+    color: #FFFFFF;
+}
+ 
+div.yui-navset ul.yui-nav .selected a,
+div.yui-navset ul.yui-nav .selected a:focus,
+div.yui-navset ul.yui-nav .selected a:hover {
+    background: #B26A46;
+    color: #FFFFFF;
+}
+ 
+
+/* blockquote */
+ 
+blockquote,
+blockquote p,
+div.blockquote,
+div.blockquote p {
+    background: #AB6643;
+    color: #FFFFFF;
+}
+ 
+.scp-image-block {
+    border: solid 1px #CA8453;
+    box-shadow: none;
+}
+ 
+.scp-image-block .scp-image-caption {
+    background: #AB6643!important;
+    border-top: solid 1px #CA8453;
+}
+ 
+@media (max-width: 499px) {
+  #header h1 a::before {
+    content: var(--short_title);
+    font-size: 50px;
+    padding-top: 80px;
+  }
+}
+ 
+@media (max-width: 767px) {
+  #content-wrap {
+    margin: 43px auto 0;
+  }
+  #login-status {
+    top: 25px;
+  }
+}
+/* Footnotes */
+.hovertip {
+     background-color: #dab8b8!important;
+}
+
+/* Table of Contents */
+
+#toc{
+    background-color: #876D6D;
+    border: 2px solid #A38800;
+    
+}
+
+/* Code */
+
+.code {
+    color: #000000;
+    background-color: #D8B6C7;
+}
+
+/* Page footer */
+
+#license-area{
+    color: #FFFFFF;
+}
+
+/* Pop-ups*/
+
+.owindow{
+    background-color: #876D6D;
+    color: #FFFFFF;
+    border: 2px solid #A38800;
+}
+
+div.modalbox{
+    background-image: unset;
+    background-color: #876D6D;
+    color: #FFFFFF;
+    border: 2px solid #A38800;
+}
+.owindow .title {
+    background-color: #A38800;
+    color: #FFFFFF;
+}
+.owindow .button-bar a {
+    background-color: #876D6D;
+}
+.owindow img {
+    background-color: #876D6D!important;
+}
+
+#lock-info{
+    color: #000000;
+}
+
+table.form td div.sub, form div.sub {
+    color: #ffffff;
+}
+#who-rated-page-area span:not(.printuser) {
+    color: #ffffff!important;
+}
+
+div.buttons input, input.button, button, file, a.button {
+    color: #000!important;
+}
+
+table.page-files .highlight {
+  background-color: #876D6D;
+}
+
+
+/* Body */
+
+body{
+    background-color: transparent;
+}
+
+#main-content {
+    color: #FFFFFF;
+}
+[[/code]]
+[[/collapsible]]
+[[/iftags]]
