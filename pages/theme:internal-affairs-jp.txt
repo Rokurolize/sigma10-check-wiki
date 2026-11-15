@@ -1,0 +1,838 @@
+[[iftags]]
+[[include :scp-jp:theme:black-highlighter-theme]]
+[[/iftags]]
+
+[[module css]]
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css");
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css");
+@import url("https://scp-jp.wdfiles.com/local--code/theme%3Ajakstyle/1");
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css
+]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=2
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css
+]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=3
+| theme=https://scp-jp.wdfiles.com/local--code/theme%3Ajakstyle/1
+]]
+
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** Internal Affairs Theme
+**翻訳責任者:** SCP-JP
+**翻訳年:** 2026
+**原題:** Internal Affairs Theme
+**著作権者:** badooga
+**作成年:** 2026
+**初訳時参照リビジョン:** 5
+**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:internal-affairs Internal Affairs Theme]
+[[include :scp-jp:credit:end-preview]]
+
+これは badooga による Internal Affairs Theme です。[[[theme:jakstyle|JAKSTYLE]]] から派生したテーマで、財団内部の情報収集部門として[*https://scp-wiki.wikidot.com/scp-9000 SCP-9000（英語版）]で紹介される内部管理局（Department of Internal Affairs）を中心に据えた作品向けです[[span class="fnnum"]].[[/span]][[span class="fncon"]]テーマとは関係ありませんが、私は内部管理局の下位部門として[*https://scp-wiki.wikidot.com/fire-suppression-department-hub 消火局（英語版）]、人事部、[*https://scp-wiki.wikidot.com/internal-affairs 内部保安（英語版）]あたりを想像しています。[[/span]]。
+
+[[div class="jotting" style="text-align: center"]]
+**どのページでも:**
+**{{@@[[include @@[[span style="opacity: 70%;"]]@@:scp-jp:@@[[/span]]@@theme:@@##rgb(237, 113, 121)|black-highlighter-theme##]]}}**
+**{{@@[[include @@[[span style="opacity: 70%;"]]@@:scp-jp:@@[[/span]]@@theme:@@##rgb(205, 205, 209)|jakstyle##]]}}**
+**{{@@[[include @@[[span style="opacity: 70%;"]]@@:scp-jp:@@[[/span]]@@theme:@@##rgb(var(--bright-accent))|internal-affairs##]]}}**
+[[/div]]
+
+-----
+
++ __使い方__
+
+[[module css]]
+.colors-container .colors .color:nth-child(4),
+.colors-container .subcolors .color:nth-child(5) {
+  box-shadow: inset 0 0 0 0.12rem rgb(var(--medium-accent));
+}
+[[/module]]
+
+[[include :scp-jp:component:theme-squares -=-
+| color1-name=明るいアクセント
+| color1-variable=--bright-accent
+| color1-info=100, 140, 60
+| color2-name=中間アクセント
+| color2-variable=--medium-accent
+| color2-info=45, 82, 0
+| color2-has-light-text=1
+| color3-name=灰色アクセント
+| color3-variable=--gray-accent
+| color3-info=78, 78, 83
+| color3-has-light-text=1
+| color4-name=暗いアクセント
+| color4-variable=--dark-accent
+| color4-info=26, 26, 26
+| color4-has-light-text=1
+| subcolor1-name=薄いアクセント
+| subcolor1-variable=--light-accent
+| subcolor1-info=128, 187, 56
+| subcolor2-name=白アクセント
+| subcolor2-variable=--white-accent
+| subcolor2-info=228, 228, 230
+| subcolor3-name=淡いアクセント
+| subcolor3-variable=--pale-accent
+| subcolor3-info=213, 220, 204
+| subcolor4-name=暗い灰色
+| subcolor4-variable=--dark-gray-monochrome
+| subcolor4-info=66, 66, 70
+| subcolor4-has-light-text=1
+| subcolor5-name=黒
+| subcolor5-variable=--black-monochrome
+| subcolor5-info=33, 35, 37
+| subcolor5-has-light-text=1
+]]
+
+@@ @@
+
+[[include :scp-jp:component:image-block name=https://scp-wiki.wikidot.com/local--files/theme%3Ainternal-affairs/Internal%20Affairs%20Logo.png|caption=Internal Affairs ロゴ（by PlaguePJP）|width=200px]]
+
+このテーマは、EstrellaYoshte による [[[component:betterfootnotes|BetterFootnotes]]] を既定で読み込み、装飾します[[span class="fnnum"]].[[/span]][[span class="fncon"]]これは脚注です。[[/span]]。
+
+水平線（下記）は、ハイフンを5つ並べた @@-----@@ で作れます。何かの内側（引用ブロックなど）に置かなければ、ページ全体に広がります。この文書の各節を区切っているのが水平線です。
+
+-----
+
+その5つのハイフンを {{@@[[div class="default-hr"]]@@}} で囲むと、Internal Affairs のロゴが付かない水平線になります:
+
+[[div class="default-hr"]]
+-----
+[[/div]]
+
+[*https://www.google.com たぶん昔に一度だけ訪問したことのあるリンク]
+
+行頭に「+」を1つから6つ置くと見出しを作れます。
+
+[[collapsible show="+ 見出し" hide="- 見出し"]]
++ 見出し1
+
+++ 見出し2
+
++++ 見出し3
+
+++++ 見出し4
+
++++++ 見出し5
+
+++++++ 見出し6
+[[/collapsible]]
+
+@@ @@
+
+[[tabview]]
+[[tab タブ]]
+なぜシャベルはそんなに特別だったのか？
+
+画期的な発明だったからです。
+[[/tab]]
+[[tab タブ2]]
+続きのテキスト。
+
+なんてこった。
+[[/tab]]
+[[tab 長いタブ]]
+これは長いタブです。たくさんのテキストが入ります。
+
+これは長いタブです。たくさんのテキストが入ります。
+
+これは長いタブです。たくさんのテキストが入ります。
+
+これは長いタブです。たくさんのテキストが入ります。
+
+これは長いタブです。たくさんのテキストが入ります。
+
+これは長いタブです。たくさんのテキストが入ります。
+
+これは長いタブです。たくさんのテキストが入ります。
+
+これは長いタブです。たくさんのテキストが入ります。
+
+これは長いタブです。たくさんのテキストが入ります。
+
+これは長いタブです。たくさんのテキストが入ります。
+
+これは長いタブです。たくさんのテキストが入ります。
+
+これは長いタブです。たくさんのテキストが入ります。
+[[/tab]]
+[[tab ここにある空のタブは、実に長い名前を持っています。]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[div class="blockquote"]]
+なぜ私を信じてくれない？
+[[div class="blockquote"]]
+なぜ私を信じてくれない？
+[[div class="blockquote"]]
+なぜ私を信じてくれない？
+[[/div]]
+[[/div]]
+[[/div]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[/tabview]]
+@@ @@
+
+||~ これは ||~ 表です ||
+||作り方は || 知っているはず ||
+||||もう ||
+||||= でも、本当に？||
+
+CSS の追加機能:
+# {{div}} に {{alt-accent}} クラスを付けると、アクセント色が {{@@--bright-accent@@}} から {{@@--medium-accent@@}} に変わります（{{@@--div-accent@@}} を直接いじってもかまいません）。
+# テキストを {{@@[[span class="dblock"]]@@}} で囲むと[[span class="dblock"]]伏せ字[[/span]]にできます。
+# テキストを {{@@[[span class="bblock"]]@@}} で囲むと[[span class="bblock"]]ラベル[[/span]]にできます。
+# {{div}} に {{rounded}} クラスを付けると角が丸くなります（[[span class="dblock rounded"]]伏せ字[[/span]]や[[span class="bblock rounded"]]ラベル[[/span]]でも同じです）。
+
+[[div class="blockquote"]]
+
+= {{@@[[div class="blockquote"]]@@}}
+
+[[/div]]
+
+[[div class="notation"]]
+
+= {{@@[[div class="notation"]]@@}}
+
+[[/div]]
+
+[[div class="vertbox"]]
+
+= {{@@[[div class="vertbox"]]@@}}
+
+[[/div]]
+
+[[div class="jotting"]]
+
+= {{@@[[div class="jotting"]]@@}}
+
+[[/div]]
+
+[[div class="modal"]]
+
+= {{@@[[div class="modal"]]@@}}
+
+[[/div]]
+
+[[div class="smallmodal"]]
+
+= {{@@[[div class="smallmodal"]]@@}}
+
+[[/div]]
+
+[[div class="papernote"]]
+
+= {{@@[[div class="papernote"]]@@}}
+
+[[/div]]
+
+[[div class="emergency"]]
+
+= {{@@[[div class="emergency"]]@@}}
+
+[[/div]]
+
+@@ @@
+
+
+[[div_ class="scp-header default-hr"]]
+-----
+
+[[div_ class="scp-header-row"]]
+[[span]]**Item #:** SCP-XXXX[[/span]] ##rgb(var(--bright-accent))|**Level 2/XXXX**##
+[[/div]]
+
+[[div_ class="scp-header-row"]]
+[[span]]**Object Class:** Keter[[/span]] ##rgb(var(--bright-accent))|**Classified**##
+[[/div]]
+
+-----
+[[/div]]
+
+[[collapsible show="+ サンプルコード"]]
+[[div class="jotting alt-accent"]]
+
+{{@@[[div_ class="scp-header default-hr"]]@@}}
+{{@@-----@@}}
+
+{{@@[[div_ class="scp-header-row"]]@@}}
+{{@@[[span]]**Item #:** SCP-XXXX[[/span]] ##rgb(var(--bright-accent))|**Level 2/XXXX**##@@}}
+{{@@[[/div]]@@}}
+
+{{@@[[div_ class="scp-header-row"]]@@}}
+{{@@[[span]]**Object Class:** Keter[[/span]] ##rgb(var(--bright-accent))|**Classified**##@@}}
+{{@@[[/div]]@@}}
+
+{{@@-----@@}}
+{{@@[[/div]]@@}}
+
+[[/div]]
+[[/collapsible]]
+
+[[div class="vertbox alt-accent"]]
+
+[[div class="warning"]]
+[[div class="warninglogo" style="/* --spin-anim: none */"]]
+
+[[/div]]
+[[div class="warningtitle"]]
++* 運用上の不備に関する警告
+++* ID: 9000/TOTEM
+[[/div]]
+[[/div]]
+
+[[div class="papernote" style="max-width: 100%"]]
+[*https://scp-wiki.wikidot.com/scp-9000 SCP-9000（英語版）]にありそうな警告ブロックを再現したものです。ロゴの回転を止めるには {{@@style="--spin-anim: none"@@}} を設定してください。
+[[/div]]
+
+[[div style="margin-inline: auto"]]
+[[collapsible show="+ サンプルコード" hide="- サンプルコード"]]
+[[div class="jotting"]]
+{{@@[[div class="vertbox alt-accent"]]@@}}
+
+{{@@[[div class="warning"]]@@}}
+{{@@[[div class="warninglogo" style="/* --spin-anim: none */"]]@@}}
+
+{{@@[[/div]]@@}}
+{{@@[[div class="warningtitle"]]@@}}
+{{@@+* 運用上の不備に関する警告@@}}
+{{@@++* ID: 9000/TOTEM@@}}
+{{@@[[/div]]@@}}
+{{@@[[/div]]@@}}
+
+{{@@[[div class="papernote" style="max-width: 100%"]]@@}}
+{{@@SCP-9000 にありそうな警告ブロックの再現です。ロゴの回転を止めるには style="--spin-anim: none" を設定してください。@@}}
+{{@@[[/div]]@@}}
+
+{{@@[[/div]]@@}}
+[[/div]]
+[[/collapsible]]
+[[/div]]
+
+[[/div]]
+
+-----
+
++ ソースコード
+
+[[collapsible show="+ ソースコード" hide="- ソースコード"]]
+[[code type="css"]]
+/*
+    Internal Affairs Theme
+    [2026 Wikidot Theme]
+    Created by badooga.
+    Based on the Jakstyle theme created by JakdragonX.
+*/
+
+/*--- Root Variables ---*/
+:root {
+  --header-title: "INTERNAL AFFAIRS";
+  --header-subtitle: "SURVEIL - CONTROL - PERVADE";
+  --lgurl: url('https://scp-wiki.wikidot.com/local--files/theme%3Ainternal-affairs/Internal%20Affairs%20Logo.png');
+  --logo-image: var(--lgurl);
+
+  --white-accent: 228, 228, 230;
+  --pale-accent: 213, 220, 204;
+  --light-accent: 128, 187, 56;
+  --bright-accent: 100, 140, 60; /* main one */
+  --gray-accent: 78, 78, 83;
+  --medium-accent: 45, 82, 0;
+  --dark-accent: 26, 26, 26;
+
+  --black-monochrome: 33, 35, 37;
+  --gray-monochrome: 215, 215, 215;
+  --dark-gray-monochrome: 66, 66, 70;
+  --pale-gray-monochrome: var(--pale-accent);
+
+  --swatch-tertiary-color: var(--light-accent), 0.8;
+  --swatch-text-light: var(--white-accent);
+  --swatch-text-general: var(--swatch-text-light);
+  --swatch-border-color: var(--bright-accent);
+  --blockquote-bg-color-fallback: 39, 39, 40; /* --blockquote-bg-color + 0.75 * --dark-accent */
+
+  --link-color: var(--bright-accent);
+  --rating-module-text-color: var(--white-accent);
+  --fnColor: #75a641; /* link text color */
+
+  --header-h1-font-size: clamp(1rem, calc(0.9rem + 3.5vw), 2.8125rem);
+  --header-h2-font-size: clamp(0.75rem, calc(0.75rem + 0.5vw), 1rem);
+
+  --ui-button-hover-bg: var(--medium-accent);
+}
+
+#main-content {
+  --div-accent: var(--bright-accent);
+  --blockquote-bg-color: var(--gray-accent), 0.25;
+
+  --ui-icon-color: var(--bright-accent);
+  --tabs-hover-bg: var(--bright-accent), 0.8;
+  --tabs-hover-txt: var(--dark-accent);
+
+  --tables-border: var(--medium-accent);
+  --tables-body-bg: var(--blockquote-bg-color);
+}
+
+/*--- Undo Grayscale ---*/
+body,
+.yui-navset .yui-content,
+.yui-navset .yui-navset-top .yui-content {
+  color: rgb(var(--swatch-text-light));
+}
+
+::selection {
+  background: rgba(var(--light-accent), 0.25);
+}
+
+/*--- Front Matter ---*/
+#login-status {
+  color: transparent;
+}
+
+#side-bar, #interwiki {
+  --sideblock-heading-text-color: var(--bright-accent);
+}
+
+/*- Header -*/
+#header {
+  --swatch-headerh2-color: var(--pale-gray-monochrome);
+}
+
+#header::before {
+  --header-gap: 1rem;
+  top: var(--header-gap);
+  background-size: auto calc(var(--header-height-on-desktop) - var(--header-gap) * 2);
+  opacity: 0.35;
+}
+
+#header h1 a::after {
+    color: rgb(var(--bright-accent));
+}
+
+#header #login-status #account-options {
+  --login-dropdown-bg-color: var(--blockquote-bg-color-fallback);
+}
+
+div#page-title, div.meta-title {
+  color: rgb(var(--bright-accent));
+}
+
+#page-content .meta-title {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  margin-block: -0.55rem;
+  grid-template-rows: 2rem 1.5lh;
+  column-gap: 1.25rem;
+}
+#page-content .meta-title::before,
+#page-content .meta-title::after {
+  background: rgba(var(--swatch-primary), 0.5);
+  margin-inline: 0;
+}
+
+/*- Rating Module and Author Info Components -*/
+.authorlink-wrapper {
+  --author-top-adjust: -0.3rem;
+  /* --author-bottom-adjust: -0.9rem; */
+}
+
+.authorbox {
+  --swatch-text-general: var(--swatch-text-light);
+  --swatch-background: var(--blockquote-bg-color-fallback);
+}
+
+/*- Breadcrumbs -*/
+#page-content :is(#breadcrumbs, .pseudocrumbs) {
+  font-family: var(--UI-font);
+  margin-block: -2.5em 1.5em;
+  line-height: 1.5;
+  display: block;
+}
+#page-content :is(#breadcrumbs, .pseudocrumbs) > p {
+  margin-block: 0.35lh;
+}
+
+#page-content :is(#breadcrumbs, .pseudocrumbs) a {
+  display: inline-block;
+  box-shadow: none;
+  position: relative;
+  margin-inline: 0.35em;
+  padding-inline: 0.15em 0.3em;
+  padding-block: 0;
+}
+#page-content :is(#breadcrumbs, .pseudocrumbs) a:first-child,
+#page-content :is(#breadcrumbs, .pseudocrumbs) a:first-child:is(:focus, :hover) {
+  margin-inline: 0 0.35em;
+}
+#page-content :is(#breadcrumbs, .pseudocrumbs) a:is(:focus, :hover) {
+  margin-inline: 0.35em;
+  padding-inline: 0.15em 0.3em;
+}
+
+#page-content :is(#breadcrumbs, .pseudocrumbs) a::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  display: inline-block;
+  box-shadow: none;
+  border-bottom: 0.125rem solid rgb(var(--bright-accent));
+  border-right: 0.125rem solid rgb(var(--bright-accent));
+}
+#page-content :is(#breadcrumbs, .pseudocrumbs) a:is(:focus, :hover)::before {
+  box-shadow: inset 0 -1.5em 0 0 rgba(var(--bright-accent));
+  transition: all 400ms cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+/*--- Back Matter ---*/
+div[id*="page-options-bottom"]:not(:is(.page-rate-widget-box, #search-top-box-form)) > a.btn:is(:hover, :active, :focus, :focus-within) {
+  border: solid 0.05rem rgba(var(--white-accent), 0.35);
+  --ui-button-hover-bg: var(--blockquote-bg-color);
+}
+
+/*--- Page Contents ---*/
+h1 {
+  color: rgb(var(--bright-accent));
+}
+
+/*- Links -*/
+#page-content a:not([href*="user"], [href*="javascript:;"], :where(.fa-info), [href*="http://www.scp-wiki.net/classification-committee-memo"], [href="https://scp-wiki.wikidot.com/anomaly-classification-system-guide"], [href="/classification-committee-memo"]) {
+  box-shadow: inset 0 -0.125rem 0 0rem rgba(var(--link-color));
+}
+
+/*- Horizontal Rule from Cosmos Theme -*/
+#page-content hr:not(.default-hr hr) {
+  --hr-icon-size: 2.5rem;
+  margin: .5rem 0;
+  background: transparent;
+  height: var(--hr-icon-size);
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  border-color: transparent !important;
+}
+#page-content hr:not(.default-hr hr)::before,
+#page-content hr:not(.default-hr hr)::after {
+  content: "";
+  display: grid;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+#page-content hr:not(.default-hr hr)::before {
+  height: 0.05rem;
+  width: 100%;
+  background-image: linear-gradient(90deg, rgb(var(--bright-accent)) calc(50% - var(--hr-icon-size)/2 - 0.35rem), transparent calc(50% - var(--hr-icon-size)/2 - 0.35rem), transparent calc(50% + var(--hr-icon-size)/2 + 0.35rem), rgb(var(--bright-accent)) calc(50% + var(--hr-icon-size)/2 + 0.35rem));
+}
+#page-content hr:not(.default-hr hr)::after {
+  width: var(--hr-icon-size);
+  height: var(--hr-icon-size);
+  background-image: var(--lgurl);
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.8;
+}
+
+/*- Tables -*/
+#page-content div.b-tables table.wiki-content-table th,
+#page-content table.wiki-content-table th {
+  color: rgb(var(--tabs-hover-txt));
+  background: rgb(var(--bright-accent));
+  --tables-border: revert;
+}
+
+/*- Image Blocks -*/
+#page-content div:is(.image-block, .scp-image-block) img {
+  background: unset;
+}
+
+:is(div.image-block, div.scp-image-block) :is(.image-caption, .scp-image-caption) {
+  background-color: rgb(var(--medium-accent));
+  color: rgb(var(--white-accent));
+}
+
+/*- Tabviews -*/
+:is(.yui-navset, .yui-navset-top, .yui-navset-bottom) .yui-nav li a {
+  color: rgb(var(--white-accent));
+}
+
+:is(.yui-navset, .yui-navset-top, .yui-navset-bottom) .yui-nav .selected {
+  box-shadow: unset;
+  translate: 0;
+}
+
+:is(.yui-navset, .yui-navset-top, .yui-navset-bottom) .yui-nav li a::before {
+  clip-path: unset;
+  background-color: rgb(var(--blockquote-bg-color-fallback));
+  transition: inherit;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.yui-navset .yui-content, .yui-navset .yui-navset-top .yui-content {
+  background: rgb(var(--blockquote-bg-color));
+  border: none;
+  border-top: solid rgb(var(--bright-accent));
+  border-top-width: 5px;
+}
+
+/* Tab Animation by Croquembouche */
+:is(.yui-navset, .yui-navset-top, .yui-navset-bottom) .yui-nav :is(li, a) {
+  transition: all calc(1s/3);
+}
+:is(.yui-navset, .yui-navset-top, .yui-navset-bottom) .yui-nav li a em {
+  transition: none;
+}
+
+.yui-content > div {
+    display: block;
+    top: 0;
+    overflow: hidden;
+    transform-origin: 0 0;
+}
+.yui-content > div[style*="none"] {
+    display: block !important; /* necessary to override CSS in style attribute */
+    flex: 0;
+    max-height: 0;
+    padding: 0 0.5em;
+    border-width: 0;
+    /* The following transition affects the one that DISAPPEARS */
+    transition: padding 0s linear 0.5s,
+          border-width 0s linear 0.5s,
+          flex 0.5s cubic-bezier(.18,.51,.54,.9) 0s;
+    animation: tab-disappear 0.5s ease-in-out 0s 1 both;
+}
+.yui-content > div[style*="block"] {
+    display: block !important; /* necessary to override CSS in style attribute */
+    flex: 1;
+    max-height: 9999rem;
+    /* The following transition affects the one that APPEARS */
+    transition: padding 0s linear 0.5s,
+          border-width 0s linear 0.5s,
+          flex 0.5s cubic-bezier(.18,.51,.54,.9) 0.5s;
+    animation: tab-appear 0.5s ease-in-out 0.5s 1 both;
+}
+
+@keyframes tab-disappear {
+    0% { max-height: 9999rem; }
+    1% { max-height: 100vh; }
+    100% { max-height: 0; }
+}
+@keyframes tab-appear {
+    0% { max-height: 0; }
+    99% { max-height: 100vh; }
+    100% { max-height: 9999rem; }
+}
+
+/*- Divs -*/
+:is(blockquote, .blockquote),
+.darkbox, .notation, .vertbox, .jotting,
+.modal, .smallmodal, .papernote, .emergency {
+  display: block;
+  margin-inline: auto;
+  margin-block: 1.4rem;
+}
+
+:is(blockquote, div.blockquote)  {
+  background: rgb(var(--blockquote-bg-color));
+  border-left: solid 0.15rem rgb(var(--div-accent));
+  box-shadow: none;
+}
+
+div.darkbox, div.notation {
+  background: rgb(var(--blockquote-bg-color));
+  max-width: 38rem;
+  padding-inline: 1.1rem;
+  padding-block: 0.9rem;
+  border-left: solid 0.2rem rgb(var(--div-accent));
+  border-right: solid 0.2rem rgb(var(--div-accent));
+}
+
+div.vertbox {
+  background: rgb(var(--blockquote-bg-color));
+  max-width: 38rem;
+  padding-inline: 1.1rem;
+  padding-block: 0.9rem;
+  border-top: solid 0.2rem rgb(var(--div-accent));
+  border-bottom: solid 0.2rem rgb(var(--div-accent));
+}
+
+div.jotting {
+  background: rgb(var(--blockquote-bg-color));
+  max-width: 36rem;
+  padding-inline: 1.5rem;
+  padding-block: 0.2rem;
+  border: dashed 0.15rem rgb(var(--div-accent));
+}
+
+div.modal {
+  padding-inline: 1.5rem;
+  padding-block: 0.5rem;
+  border: solid 0.2rem rgb(var(--div-accent));
+}
+
+div.smallmodal {
+  max-width: 40rem;
+  padding-inline: 1rem;
+  padding-block: 0.2rem;
+  border: solid 0.15rem rgb(var(--div-accent));
+}
+
+div.papernote {
+  max-width: 30rem;
+  padding: 1em 2em;
+  background: rgb(var(--medium-accent));
+}
+
+div.emergency { /* From SCP-9001 */
+  position: relative;
+  background: rgba(var(--div-accent), 0.075);
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, .2);
+  max-width: 38rem;
+  padding-inline: 1.1rem;
+  padding-block: 0.9rem;
+}
+div.emergency::before, div.emergency::after {
+  content: "";
+  height: 0.3rem;
+  left: 0;
+  right: 0;
+  background-image: repeating-linear-gradient(135deg, rgb(var(--bright-accent)) 0ch, rgb(var(--bright-accent)) 1ch, rgb(var(--medium-accent)) 1ch, rgb(var(--medium-accent)) 1.75ch, rgb(var(--medium-accent)) 1.75ch);
+  position: absolute;
+}
+div.emergency::before { top: 0 }
+div.emergency::after { bottom: 0 }
+
+#page-content div.alt-accent {
+  --div-accent: var(--medium-accent);
+}
+
+#page-content :is(.round, .rounded) {
+  border-radius: 0.4rem;
+}
+
+/*- Internal Affairs-Specific Entries -*/
+
+/* Warning Banner from SCP-9000 */
+div.warning {
+  display: grid;
+  grid-template-columns: 0.75fr 1fr;
+  align-items: center;
+  grid-column-gap: 1rem;
+}
+
+div.warning .warningtitle {
+  text-align: center;
+}
+div.warning .warningtitle h1 {
+  color: rgb(var(--light-accent));
+  font-size: clamp(1.375em, 5vw, 2.5em);
+  line-height: 1.1;
+}
+div.warning .warningtitle h2 {
+  color: rgb(var(--light-accent));
+  margin-top: 1rem;
+  line-height: 1.1;
+  font-size: clamp(1.125em, 4.2vw, 2.125em);
+}
+
+div.warning .warninglogo {
+  aspect-ratio: 1 / 1;
+  margin: 1.5em;
+  background-image: var(--lgurl);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: var(--spin-anim, ia-spin) 20s cubic-bezier(1, 1, 1, 1) infinite;
+}
+@keyframes ia-spin {
+  100% { transform: rotate(360deg); }
+}
+
+/* SCP Header from SCP-9001-A */
+.scp-header {
+  font-size: 125%;
+}
+.scp-header > .scp-header-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0 1ch;
+}
+
+/* Labels and Redactions */
+span.bblock, span.bblock::selection {
+  --swatch-menubg-black-color: var(--bright-accent);
+  padding: .125em;
+  color: black;
+  background: rgb(var(--bright-accent));
+}
+
+span.dblock {
+  padding: 0.15em 0;
+  color: rgb(var(--white-accent));
+  background-color: rgb(var(--white-accent));
+  transition-duration: 1s;
+}
+
+.label {
+  color: black;
+  padding: .125em;
+  white-space: nowrap;
+  background: rgb(var(--bright-accent));
+}
+
+/*- Better Footnotes -*/
+.fnnum {
+  --wght: 700;
+}
+
+.fncon {
+  background: rgb(var(--blockquote-bg-color-fallback));
+  border-color: rgb(var(--bright-accent));
+}
+.fncon::before {
+  color: rgb(var(--black-monochrome));
+}
+[[/code]]
+[[/collapsible]]
+
+@@ @@
+
+-----
+
++* 画像の出典
+
+> **ファイル名:** Internal Affairs Logo.png
+> **著作権者:** plaguepjp
+> **ライセンス:** CC BY-SA 3.0
+> **ソース:** [*https://scp-wiki.wikidot.com/scp-9000 SCP-9000（英語版）]
+
+[[/iftags]]
+
+[[include :scp-jp:component:centered-header-bhl]]
+[[include :scp-jp:component:toggle-sidebar-bhl]]
+[[include :scp-jp:component:betterfootnotes]]
+
+[[module css]]
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Ainternal-affairs-jp/1")
+[[/module]]
+[[include :scp-jp:component:interwiki-style
+| priority=4
+| theme= https://sigma10-jp-test.wdfiles.com/local--code/theme%3Ainternal-affairs-jp/1
+]]

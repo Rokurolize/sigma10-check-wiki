@@ -1,0 +1,501 @@
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** Janitor's Closet Theme
+**翻訳責任者:** SCP-JP
+**翻訳年:** 2026
+**原題:** Janitor's Closet Theme
+**著作権者:** winkwonkboi
+**作成年:** 2025
+**初訳時参照リビジョン:** 8
+**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:janitor-closet Janitor's Closet Theme]
+[[include :scp-jp:credit:end-preview]]
+
++ これは何？
+
+これは winkwonkboi が、Cleanliness Guaranteed* シリーズ配下のページのために作った Janitor's Closet Theme です。
+
+> @@[[include :scp-jp:theme:janitor-closet]]@@
+
+このテーマを適用するには、上のコードを記事の最上部にコピー＆ペーストしてください。
+
+----
+
+[[include :scp-jp:component:image-block name=https://scp-wiki.wdfiles.com/local--files/theme%3Ajanitor-closet/173canon.jpg|caption=びんごばんご|width=300px]]
+
++ 例
+
+ハイフンを5つ並べた @@-----@@ で水平線を作れます。divブロック（引用ブロックなど）の内側に置かなければ、ページの幅いっぱいに広がります。このページの各節を区切っているのが水平線です。
+
+[# 未訪問のリンク。]
+[[[theme:janitor-closet|訪問済みのリンク。]]]
+
+[[collapsible show="+ これは折りたたみです。" hide="- 折りたたみを閉じる。"]]
+行頭に「+」を1つから6つ置くと見出しになります。
+
++ 見出し1
+++ 見出し2
++++ 見出し3
+++++ 見出し4
++++++ 見出し5
+++++++ 見出し6
+[[/collapsible]]
+
+----
+
+[[tabview]]
+[[tab タブ1]]
+このタブには1行だけ入っています。
+[[/tab]]
+[[tab タブ2]]
+このタブには2行入っています。
+
+2行目がこれです。
+[[/tab]]
+[[tab タブ3]]
+このタブにはたくさんの行が入っています。
+
+このタブにはたくさんの行が入っています。
+
+このタブにはたくさんの行が入っています。
+
+このタブにはたくさんの行が入っています。
+
+このタブにはたくさんの行が入っています。
+
+このタブにはたくさんの行が入っています。
+
+このタブにはたくさんの行が入っています。
+
+このタブにはたくさんの行が入っています。
+
+このタブにはたくさんの行が入っています。
+
+このタブにはたくさんの行が入っています。
+
+このタブにはたくさんの行が入っています。
+
+このタブにはたくさんの行が入っています。
+
+このタブにはたくさんの行が入っています。
+
+このタブにはたくさんの行が入っています。
+
+このタブにはたくさんの行が入っています。
+[[/tab]]
+[[tab タブ4（不要に長いタイトル付き）]]
+楽しいことをするのは楽しい。
+[[/tab]]
+[[tab 空のタブ]]
+
+[[/tab]]
+[[tab 空のタブ]]
+
+[[/tab]]
+[[tab 空のタブ]]
+
+[[/tab]]
+[[tab 空のタブ]]
+
+[[/tab]]
+[[tab 空のタブ]]
+
+[[/tab]]
+[[tab 空のタブ]]
+
+[[/tab]]
+[[tab 空のタブ]]
+あなたは今、ゲームに負けました。
+[[/tab]]
+[[/tabview]]
+
+@@ @@
+
+[[div class="blockquote"]]
+こんにちは、これは引用ブロックです。
+----
+divブロックを使って作ることもできます。
+
+> あるいは行頭に「>」を置いて作ります。
+>> 入れ子の引用ブロック。[[footnote]]これは脚注です。[[/footnote]]
+[[/div]]
+
+@@ @@
+
+[[=]]
+[[div class="greenbox"]]
+これは緑のボックスです。
+
+{{@@[[div class="greenbox"]]@@}}
+[[/div]]
+
+@@ @@
+
+[[div class="redbox"]]
+これは赤のボックスです。
+
+{{@@[[div class="redbox"]]@@}}
+[[/div]]
+[[/=]]
+
+@@ @@
+
+||~ ええ、そうです。 ||~ これは表です。 ||
+|| きっと || 作り方は ||
+|||| ご存じですよね？ ||
+
+----
+
++ ソースコード
+
+[[collapsible show="ソースコードを表示" hide="ソースコードを閉じる"]]
+[[code type="CSS"]]
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+div#container-wrap {
+  background: url('https://scp-wiki.wdfiles.com/local--files/theme%3Ajanitor-closet/bg.jpg') top left repeat-x;
+  background-size: 100%;
+}
+
+#header {
+  background-image: url('https://scp-wiki.wdfiles.com/local--files/theme%3Ajanitor-closet/lightlogo.png');
+}
+
+#header h1 span,
+#header h2 span {
+  text-shadow: none;
+  color: transparent;
+}
+
+#header h1 span::before {
+  content: 'Safe Cleanup Professionals';
+  font-family: "Patua One", "Noto Sans JP", serif;
+  color: #efefef;
+  text-shadow: 0rem 0rem 0.3125rem #000000;
+}
+
+#header h2 span::before {
+  content: 'Sanitize, Cleanse, Polish';
+  color: #efefef;
+  font-family: "Afacad Flux", "Noto Sans JP", serif;
+  font-style: italic;
+  text-shadow: none;
+}
+
+#search-top-box-input, 
+#search-top-box-input:hover, 
+#search-top-box-input:focus {
+  background-color: #ffbb55;
+  color: #0e0e0e;
+}
+
+#search-top-box-form input[type=submit],
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+  background-color: #ffbb55;
+  border: none;
+  color: #0e0e0e;
+  background-image: none;
+}
+
+#login-status, 
+#login-status a {
+  color: #ffbb55;
+  text-shadow: 0.0625rem 0.0625rem 0.0625rem #000000;
+}
+
+#account-options li a, 
+#account-options li a:hover {
+  color: #ffbb55;
+  text-shadow: none;
+}
+
+#account-options {
+  border: 1px solid #ffbb11;
+}
+
+#account-options ul {
+  background-color: #0e0e0e;
+}
+
+#top-bar {
+  background: linear-gradient(to right, transparent 60%, #0e0e0e 85%, transparent 100%);
+}
+
+#top-bar ul li:hover a:hover {
+  background: #ffbb11;
+  color: #0e0e0e;
+}
+
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a {
+  background: #0e0e0e;
+  color: #ffbb55;
+}
+
+div.page-rate-widget-box .rate-points {
+  background-color: #ffbb55;
+  color: #0e0e0e;
+  border: none;
+}
+
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+  background-color: #16161f;
+  border-top: none;
+  border-bottom: none;
+}
+
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a {
+  background: transparent;
+  color: #ededed;
+}
+
+.page-rate-widget-box .rateup a:hover {
+  background: #29AB87;
+  color: #0e0e0e;
+}
+
+.page-rate-widget-box .ratedown a:hover {
+  background: #C21807;
+  color: #0e0e0e;
+}
+
+.page-rate-widget-box .cancel {
+  background-color: #ffbb55;
+  border: none;
+}
+
+.page-rate-widget-box .cancel a {
+  color: #0e0e0e;
+}
+
+.page-rate-widget-box .cancel a:hover {
+  background: #ffbb55;
+  color: #0e0e0e;
+}
+
+#page-content .rate-box-with-credit-button {
+  background-color: #ffbb55;
+  border: none;
+}
+
+#page-content .rate-box-with-credit-button .creditButton p a {
+  border-left-color: #0e0e0e;
+}
+
+#page-content .rate-box-with-credit-button .creditButton a {
+  color: #0e0e0e;
+}
+
+#page-content .modalbox {
+  background: #0e0e0e;
+  border: dotted 1px #ffbb55;
+  color: #ededed;
+  box-shadow: none;
+}
+
+#side-bar .heading,
+#interwiki .heading {
+  color: #C21807;
+  border-color: #C21807;
+  font-family: "Source Serif 4", "Noto Sans JP", serif;
+  font-size: 100%;
+  text-align: right;
+}
+
+#side-bar div.side-block, 
+#side-bar .side-block.media, 
+#side-bar .side-block.resources,
+#interwiki .side-block {
+  background: #0e0e0e;
+  border: 1px solid #29AB87;
+}
+
+#page-title {
+  color: #ffbb55;
+  font-family: "Afacad Flux", "Noto Sans JP", serif;
+  font-weight: bold;
+  font-size: 250%;
+  text-align: center;
+  text-shadow: 0rem 0rem 0.3125rem #000000;
+} 
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #ffffff;
+  font-family: "Source Serif 4", "Noto Sans JP", serif;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+a,
+#side-bar a,
+#interwiki a {
+  color: #29AB87;
+}
+
+a:visited,
+#side-bar a:visited,
+#interwiki a:visited {
+  color: #194d3e;
+}
+
+body {
+  background-color: #16161f;
+  color: #ededed;
+}
+
+.yui-navset .yui-content {
+  background: #0e0e0e;
+}
+
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a:focus,
+.yui-navset .yui-nav .selected a:hover {
+  background-color: #e89c2a;
+  background-image: none;
+  border: none;
+}
+
+.yui-navset .yui-nav a,
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:focus {
+  background-color: #ffbb11;
+  background-image: none;
+  border: none;
+  color: #0e0e0e;
+}
+
+.yui-navset .yui-content {
+  background: #0e0e0e;
+  border: 1px dotted #ffbb11;
+}
+
+.yui-navset .yui-nav {
+  border: none;
+  padding-bottom: 1px;
+}
+
+.yui-navset .yui-nav a em {
+  border: none;
+}
+
+#toc {
+  background-color: #0e0e0e;
+  border: 1px solid #ffbb11;
+}
+
+blockquote,
+div.blockquote {
+  background: #0e0e0e;
+  border: 3px solid #ffbb11;
+}
+
+table.wiki-content-table th {
+  background: #ffbb11;
+  border: 1px solid #e89c2a;
+  color: #0e0e0e;
+}
+
+.scp-image-block .scp-image-caption {
+  background-color: #0e0e0e;
+  border: 1px solid #ffbb11;
+}
+
+.hovertip {
+  background: #0e0e0e !important;
+  border: solid 0.0625rem #ffbb11 !important;
+  color: #ffffff;
+  text-shadow: none;
+  opacity: 0.95;
+}
+
+.owindow, 
+.owindow h1, 
+.owindow .button-bar a {
+  color: #0e0e0e;
+  text-shadow: none;
+}
+
+.owait, 
+.osuccess {
+  background-color: #0e0e0e;
+  color: #ffffff;
+  text-shadow: 0.0625rem 0.0625rem 0.0625rem #000000;
+  border: solid 0.0625rem #ffbb11;
+  opacity: 0.95;
+}
+
+form div.sub {
+  color: #ffffff;
+}
+
+#lock-info {
+  color: #0e0e0e;
+  text-shadow: none;
+}
+
+.greenbox {
+  display: block;
+  background: #0e0e0e;
+  border: 3px solid #29AB87;
+  padding: 0.5rem;
+}
+
+.redbox {
+  display: block;
+  background: #0e0e0e;
+  border: 3px solid #C21807;
+  padding: 0.5rem;
+}
+
+@media only screen and (max-width: 56.25rem) {
+  #header h1 span::before {
+    content: 'Safe Clean Pros.';
+    font-size: 1.5rem;
+  }
+
+  #top-bar .open-menu a {
+      border: 0.2em solid #ffbb11;
+      background-color: #0e0e0e;
+      color: #ffbb11;
+  }
+
+  #page-title {
+    font-size: 200%;
+  }
+
+  #side-bar {
+    background-color: #16161f;
+  }
+}
+[[/code]]
+[[/collapsible]]
+
++* 画像の出典
+
+* **ファイル名:** 173canon.jpg
+* **著作権者:** winkwonkboi
+* **ライセンス:** CC BY-SA 3.0
+* **ソースリンク:** SCP Foundation
+
+[[/iftags]]
+
+[[module CSS]]
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Ajanitor-closet-jp/1")
+[[/module]]
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme= https://sigma10-jp-test.wdfiles.com/local--code/theme%3Ajanitor-closet-jp/1
+]]
