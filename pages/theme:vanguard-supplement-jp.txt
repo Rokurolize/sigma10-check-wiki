@@ -1,0 +1,920 @@
+[[module CSS]]
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Basic&family=IBM+Plex+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Avanguard-supplement-jp/1');
+[[/module]]
+
+[[iftags +テーマ]]
+
+[[>]]
+**評価:**
+[[module rate]]
+[[/>]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** Vanguard Supplement
+**著者:** macro_au_micro（親テーマ: Human Resources Sigma-9 Theme / macro_au_micro作、CC BY-SA 3.0（SCP-Wiki既定、個別記載なし）、rev 13 で読み取り内蔵）
+**原題:** [https://scp-wiki.wikidot.com/theme:vanguard-supplement Vanguard Supplement]
+**作成年:** 2024
+**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:vanguard-supplement ソース（rev 17）]
+**初訳時参照リビジョン:** 17
+[[include :scp-jp:credit:end-preview]]
+
+日本語のページタイトルには Noto Serif JP（SIL Open Font License 1.1）を使います。Google Fonts から読み込まれます。
+
+[[=]]
++ 使用方法
+[[/=]]
+
+これはVanguard Sigma-9テーマの補完コードです。親テーマである[[[https://scp-wiki.wikidot.com/theme:scp-human-resources-sigma|Human Resources Sigma-9 Theme]]]（英語版）のCSSを内蔵しているため、単体で完全に動作します。SCP-JPに親テーマは未投稿です。
+
+このテーマをページへ読み込むには、ページ内の任意の場所に以下を入れてください:
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:vanguard-supplement]]@@
+[[/div]]
+
+サイドバーを隠したい場合は、上記の後に以下を入れてください:
+
+[[div class="code"]]
+@@[[include :scp-jp:component:toggle-sidebar]]@@
+[[/div]]
+
+各ページのバックリンクは、ページ下部の「+ オプション」をクリックし、続けて「バックリンク」を選ぶと確認できます。
+
+----
+
+以下のコードでクリーム色のヴァンガード用ブロックを作成できます:
+
+[[div class="log"]]
+@@[[div class="log"]]@@
+[[/div]]
+
+----
+
+[[=]]
+
+[[collapsible hide="<<ソースコードを隠す>>" show="<<ソースコードを表示する>>"]]
+[[<]]
+[[=]]
++ ソースコード
+[[/=]]
+[[code type="css"]]
+
+/* ===== 親テーマ Human Resources Sigma-9 Theme（macro_au_micro、rev 13 内蔵） ===== */
+/* 原題: theme:scp-human-resources-sigma（SCP-Wiki、rev 13 で読み取り）。 */
+/* 内蔵理由: SCP-JP に親テーマが未投稿のため。親の @import はモジュール冒頭へ移動済み。 */
+/* 親の hrlogo.png は SCP-JP ファイルストレージの同一画像（file%3A7657035-44-ziy1）を参照します。 */
+/* 親テーマが SCP-JP に投稿されたら、このブロックを丸ごと削除し、先頭の hidden include 方式へ戻してください。 */
+/*
+    Human Resources Sigma-9 Theme
+    [2023 Wikidot Theme]
+    By macro_au_micro
+    Adapted from Human Resources BHL Theme by CityToast
+    Based on SCP Sigma 9 Theme created by Aelanna and Dr Devan
+*/
+
+
+:root {
+  --gradient-header: linear-gradient(to bottom,rgba(255, 242, 219,1) 0,rgba(255, 242, 219,0.987) calc(60rem*0.008),rgba(255, 242, 219,0.951) calc(60rem*0.029),rgba(255, 242, 219,0.896) calc(60rem*0.064),rgba(255, 242, 219,0.825) calc(60rem*0.11),rgba(255, 242, 219,0.741) calc(60rem*0.166),rgba(255, 242, 219,0.648) calc(60rem*0.231),rgba(255, 242, 219,0.550) calc(60rem*0.304),rgba(255, 242, 219,0.450) calc(60rem*0.383),rgba(255, 242, 219,0.352) calc(60rem*0.467),rgba(255, 242, 219,0.259) calc(60rem*0.554),rgba(255, 242, 219,0.175) calc(60rem*0.644),rgba(255, 242, 219,0.104) calc(60rem*0.735),rgba(255, 242, 219,0.049) calc(60rem*0.825),rgba(255, 242, 219,0.013) calc(60rem*0.914),rgba(255, 242, 219,0) 60rem);
+
+    scrollbar-color: rgb(112,149,201) rgb(157,186,226);
+}
+
+::selection {
+    background: rgba(128,184,116,.25);
+    text-shadow: none;
+}
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+#side-bar::-webkit-scrollbar {
+    width: .4rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(112,149,201);
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(157,186,226);
+}
+
+/* HEADER */
+div#container-wrap {
+    background-image:
+        repeating-linear-gradient(45deg,hsla(0, 0%, 100%, 0),
+        hsla(0, 0%, 100%, 0) 0.25vh,
+        rgba(88, 88, 88, 0.1) 0.35vh,
+        rgba(88, 88, 88, 0.2) 0.5vh),
+
+        repeating-linear-gradient(180deg,
+        hsla(0, 0%, 100%, 0),
+        hsla(0, 0%, 100%, 0) 0.25vh,
+        rgba(88, 88, 88, 0.1) 0.35vh,
+        rgba(88, 88, 88, 0.2) 0.5vh),
+
+        linear-gradient(to bottom,
+        rgba(7,7,40, 1) 8.75rem,
+        rgba(72,114,163, 1) 7.625rem,
+        rgba(72,114,163, 1) calc(91% - 0.125rem),
+        rgba(63,97,145, 1) calc(99% - 0.125rem));
+
+    background-size: 100% 8.7rem, 100% 8.7rem, 100% 10.08rem;
+    background-repeat: no-repeat;
+}
+
+#header {
+    background: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-44-ziy1/hrlogo.png) 13px 44px no-repeat;
+    background-size: 94px 88px;
+}
+
+#header h1 a {
+    font-size: 150%;
+    color: rgb(207, 223, 245);
+    font-family: 'Zilla Slab', serif;
+    font-weight: 900;
+    text-shadow: .063rem .063rem .063rem #0c0c0c;
+    letter-spacing: -.02em;
+    line-height: 0;
+}
+
+#header h2 span {
+    color: transparent;
+    text-shadow: none;
+    font-size: 0;
+}
+#header h2 span::before {
+    font-family: 'Zilla Slab', serif;
+    content: "HUMAN RESOURCES DEPARTMENT";
+    color: rgb(148,204,136);
+    text-shadow: .063rem .063rem .063rem #0c0c0c;
+    font-weight: 400;
+    line-height: 0;
+    font-size: .845rem;
+}
+
+div#extra-div-1 {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 60rem;
+    top: 0;
+    left: 0;
+    background: var(--gradient-header);
+    background-size: 31.250rem;
+    background-repeat: repeat;
+    z-index: -2;
+}
+
+@media (max-width: 767px) {
+    #header {
+        background: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-44-ziy1/hrlogo.png) 12px 72px no-repeat;
+        background-size: 60px 56px;
+    }
+    #header h1 a {
+        font-size: 80%;
+    }
+    #header h2 span::before {
+        font-size: .6rem;
+    }
+}
+
+/* LOG-IN INFO */
+#login-status {
+    color: rgb(207,223,245);
+    font-family: 'Zilla Slab', serif;
+}
+#login-status a {
+    color: rgb(207,223,245);
+}
+#login-status ul a {
+    background-color: rgb(194,214,241);
+    color: rgb(61,139,44);
+}
+
+#login-status ul a:hover {
+    color: rgb(7,7,40);
+   font-weight: bold;
+}
+
+/* SEARCH BAR */
+#search-top-box-form input[type=submit] {
+    background: rgb(28,104,12);
+    color: rgb(128,184,116);
+    border-color: rgb(128,184,116);
+    font-family: 'Zilla Slab', serif;
+    transition: background 0.25s;
+}
+#search-top-box-form input[type=submit]:hover, #search-top-box-form input[type=submit]:focus {
+    background:rgb(128,184,116);
+    border-color: rgb(28,104,12);
+    color: rgb(28,104,12);
+}
+
+/* TITLE */ 
+#page-title, .meta-title {
+    font-size: 210%;
+    font-weight: 600;
+    border-color: rgb(112,149,201);
+}
+#breadcrumbs {
+    font-family: 'Zilla Slab', serif;
+}
+h1, h2, h3, h4, h5, h6, #page-title, .meta-title {
+    font-family: 'Zilla Slab', serif;
+    color: rgb(7,7,40);
+}
+h1 {
+    margin: .7em 0 .6em;
+    padding: 0 0 .25em;
+    font-weight: 700;
+}
+h2, h3, h4, h5, h6 {
+    margin: .5em 0 .4em;
+    padding: 0;
+    font-weight: 900;
+    letter-spacing: .063rem;
+}
+
+@media (max-width: 767px) {
+    #page-title, .meta-title {
+        font-size: 180%
+    }
+}
+
+/* TOP-BAR SETTINGS */
+#top-bar ul li ul {
+    border-color: rgb(37,56,98);
+}
+#top-bar ul li a {
+    color: rgb(207,223,245);
+    font-family: 'Zilla Slab', serif;
+}
+#top-bar ul li ul li a {
+    font-family: 'Zilla Slab', serif;
+}
+#top-bar ul li.sfhover ul li a,
+#top-bar ul li:hover ul li a {
+    border-color: rgb(37,56,98);
+    color: rgb(207,223,245);
+}
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a {
+    background: rgb(75,115,171);
+    color: rgb(207, 223, 245);
+}
+#top-bar ul li.sfhover a:hover,
+#top-bar ul li:hover a:hover {
+    background: rgb(128,184,116);
+    border-color: rgb(63,97,145);
+    color: rgb(29,61,123);
+}
+#top-bar ul li ul.sfhover a:hover,
+#top-bar ul li ul:hover a:hover {
+    background: rgb(128,184,116);
+    color: rgb(29,61,123);
+}
+
+/* SIDE-BAR SETTINGS */
+#side-bar .side-block,#interwiki .side-block {
+    border-color: rgb(61,139,44);
+    background-color: rgb(194,214,241);
+    box-shadow: none;
+    font-family: 'Zilla Slab', serif;
+    color: rgb(112,149,201);
+}
+
+#side-bar .side-block.media {
+    background: rgb(157,186,226);
+}
+
+#side-bar .side-block.resources {
+    background: rgb(184,207,238);
+}
+
+#side-bar .heading,#interwiki .heading {
+    color: rgb(61,139,44);
+    border-bottom-color: rgb(61,139,44);
+}
+
+/* SIDE-BAR IMAGES */
+.side-block .menu-item > .image {
+    filter: hue-rotate(-220deg);
+}
+
+/* MOBILE SIDE-BAR */
+@media (max-width: 767px) {
+#side-bar {
+    background-color: rgb(207,223,245);
+}
+#top-bar .open-menu a {
+    border: 0.2em solid rgb(63,97,145);
+    background-color: rgb(207,223,245);
+    color: rgb(63,97,145);
+    }
+}
+
+/* BODY */
+body {
+    background-color: rgb(207,223,245);
+    font-family: 'IBM Plex Mono', monospace;
+    color: rgb(7,7,40);
+}
+body tt {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 100%;
+}
+
+/* FOOTER */
+#footer {
+    background: rgb(28,104,12);
+    font-family: 'Zilla Slab', serif;
+}
+
+#license-area {
+    font-family: 'Zilla Slab', serif;
+}
+
+/* OTHER STRUCTURAL ELEMENTS */
+
+/* BARS */
+#page-content hr {
+background: rgb(112,149,201);
+}
+
+/* LINKS */
+a {
+    color: rgb(61,139,44);
+    font-weight: bold;
+}
+a:visited {
+    color: rgb(28,104,12);
+}
+#side-bar a,
+#side-bar a:visited,
+#side-bar a.newpage,
+#interwiki a {
+    color: rgb(61,139,44);
+}
+
+/* POP-UP WINDOWS */
+.owindow {
+    background-color: rgb(157,186,226);
+    border-color: rgb(128,184,116);
+}
+
+.owindow .modal-header {
+    background-color: rgb(61,139,44);
+    font-family: 'Zilla Slab', serif;
+}
+.owindow .modal-body img {
+    background-color: transparent !important;
+}
+.owindow .title {
+    background-color: rgb(61,139,44);
+    color: rgb(207,223,245);
+}
+.owindow .button-bar a {
+    background-color: rgb(61,139,44);
+    border-color: rgb(128,184,116);
+    color: rgb(207,223,245);
+    font-family: 'Zilla Slab', serif;
+}
+.owindow .button-bar a:hover {
+    background-color: rgb(207,223,245);
+    color: rgb(61,139,44);
+}
+.owindow a.btn.btn-primary,.owindow a.btn.btn-danger.btn-small.btn-sm {
+    font-family: 'Zilla Slab', serif;
+}
+
+/* CODE */
+.code,div.code {
+    background-color: rgb(157,186,226);
+    border-color: rgb(120,141,179);
+    font-family: 'Zilla Slab', serif;
+}
+
+/* RATING MODULE */
+div.page-rate-widget-box {
+    font-family: 'Zilla Slab', serif;
+}
+div.page-rate-widget-box .rate-points {
+    background-color: rgb(28,104,12) !important;
+    border-color: rgb(128,184,116);
+    color: rgb(128,184,116);
+}
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+    background-color: rgb(28,104,12);
+    border-top-color: rgb(128,184,116);
+    border-bottom-color: rgb(128,184,116);
+}
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a {
+    color: rgb(128,184,116);
+}
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover {
+    background: rgb(28,104,12);
+    text-decoration: none;
+    color: rgb(207,223,245);
+}
+.page-rate-widget-box .cancel {
+    background-color: rgb(28,104,12);
+    border-color: rgb(128,184,116);
+}
+.page-rate-widget-box .cancel a {
+    color: rgb(128,184,116);
+}
+.page-rate-widget-box .cancel a:hover {
+    background-color: transparent;
+    text-decoration: none;
+    color: rgb(207,223,245);
+}
+
+/* PAGE ELEMENTS */
+
+/* BLOCKQUOTES */
+blockquote,
+div.blockquote {
+    background-color: rgb(194,214,241);
+    border: solid 1px rgb(122,158,206);
+}
+blockquote blockquote,
+div.blockquote div.blockquote {
+    background-color: rgb(184,207,238);
+    border: solid 1px rgb(121,157,206);
+}
+
+/* TABLES */
+table.wiki-content-table td {
+border-color: rgb(112,149,201);
+}
+
+table.wiki-content-table th {
+    color: rgb(207,223,245);
+    background-color: rgb(28,104,12);
+    border-color: rgb(112,149,201);
+}
+
+/* TABVIEW */
+.yui-navset .yui-content {
+    background-color: rgb(194, 214, 241);
+    border-top: transparent;
+    font-weight: normal;
+}
+.yui-navset .yui-nav a, 
+.yui-navset .yui-navset-top .yui-nav a {
+    background-image: none;
+    background-color: rgb(157,186,226);
+    border-color: rgb(120,141,179);
+    font-weight: normal;
+    font-family: 'Zilla Slab', serif;
+}
+.yui-navset .yui-nav a:hover, 
+.yui-navset .yui-nav a:focus {
+    background: rgb(128,184,116);
+    color: rgb(207,223,245);
+}
+.yui-navset .yui-nav .selected a, 
+.yui-navset .yui-nav .selected a:focus,
+.yui-navset .yui-nav .selected a:hover {
+    background: rgb(61,139,44);
+    color: rgb(207,223,245);
+}
+.yui-navset .yui-nav a em, .yui-navset .yui-navset-top .yui-nav a em {
+    border-color: rgb(120,141,179);
+}
+.yui-navset .yui-nav .selected a, .yui-navset .yui-nav .selected a em {
+    border-color: rgb(28,104,12);
+}
+.yui-navset li {
+    line-height: normal;
+}
+.yui-navset .yui-nav,
+.yui-navset .yui-navset-top .yui-nav {
+    border-color: rgb(61,139,44);
+}
+
+/* IMAGE BLOCK */
+.scp-image-block .scp-image-caption {
+    background-color: rgb(157,186,226);
+    border-color: rgb(112,149,201);
+}
+
+.scp-image-block {
+    border-color: rgb(112,149,201);
+}
+
+/* HOVERTIP */
+.hovertip {
+    background-color: rgb(157,186,226) !important;
+    border-color: rgb(28,104,12) !important;
+    font-family: 'Zilla Slab', serif;
+}
+
+/* TAGS & OPTIONS */
+#page-info {
+    font-family: 'Zilla Slab', serif;
+}
+.page-tags span {
+    border-color: rgb(112,149,201);
+}
+.page-tags a, .page-options-bottom a, .page-watch-options a {
+    font-family: 'Zilla Slab', serif;
+    font-weight: normal;
+}
+a.action-area-close.btn.btn-danger {
+    font-family: 'Zilla Slab', serif;
+    font-weight: normal;
+}
+
+/* ANIMATIONS */
+
+#header h1 *,
+#page-title *,
+.meta-title * {
+    will-change: opacity;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#header h1 a:hover,
+#page-title:hover,
+.meta-title:hover {
+    -webkit-animation: flicker 20s linear infinite;
+    -moz-animation: flicker 20s linear infinite;
+    animation: flicker 20s linear infinite;
+}
+
+@-webkit-keyframes flicker {
+    0% {
+    opacity: 1;
+    }
+
+    5% {
+    opacity: .9;
+    }
+
+    6% {
+    opacity: .8;
+    }
+
+    11% {
+    opacity: .4;
+    }
+
+    11.25% {
+    opacity: .6;
+    }
+
+    11.5% {
+    opacity: .4;
+    }
+
+    18% {
+    opacity: 1;
+    }
+
+    18.5% {
+    opacity: .9;
+    }
+
+    22% {
+    opacity: 1;
+    }
+
+    38.5% {
+    opacity: 1;
+    }
+
+    39% {
+    opacity: .8;
+    }
+
+    42% {
+    opacity: 1;
+    }
+
+    60% {
+    opacity: 1;
+    }
+
+    60.5% {
+    opacity: 0;
+    }
+
+    62% {
+    opacity: 0;
+    }
+
+    63% {
+    opacity: .2;
+    }
+
+    63.25% {
+    opacity: 0;
+    }
+
+    65% {
+    opacity: 1;
+    }
+
+    73% {
+    opacity: 1;
+    }
+
+    75% {
+    opacity: .8;
+    }
+
+    79% {
+    opacity: 1;
+    }
+
+    100% {
+    opacity: 1;
+    }
+}
+@keyframes flicker {
+    0% {
+    opacity: 1;
+    }
+
+    5% {
+    opacity: .9;
+    }
+
+    6% {
+    opacity: .8;
+    }
+
+    11% {
+    opacity: .4;
+    }
+
+    11.25% {
+    opacity: .6;
+    }
+
+    11.5% {
+    opacity: .4;
+    }
+
+    18% {
+    opacity: 1;
+    }
+
+    18.5% {
+    opacity: .9;
+    }
+
+    22% {
+    opacity: 1;
+    }
+
+    38.5% {
+    opacity: 1;
+    }
+
+    39% {
+    opacity: .8;
+    }
+
+    42% {
+    opacity: 1;
+    }
+
+    60% {
+    opacity: 1;
+    }
+
+    60.5% {
+    opacity: 0;
+    }
+
+    62% {
+    opacity: 0;
+    }
+
+    63% {
+    opacity: .2;
+    }
+
+    63.25% {
+    opacity: 0;
+    }
+
+    65% {
+    opacity: 1;
+    }
+
+    73% {
+    opacity: 1;
+    }
+
+    75% {
+    opacity: .8;
+    }
+
+    79% {
+    opacity: 1;
+    }
+
+    100% {
+    opacity: 1;
+    }
+}
+
+/* ===== Vanguard Supplement（本テーマ） ===== */
+/*
+    Vanguard Supplement
+    [2024 Wikidot Theme]
+    By macro_au_micro
+    Adapted from the code used to transform the BHL Human Resources theme into a Vanguard theme by Placeholder McD in the SCP-6500 Emissary Path
+    Based on SCP Sigma 9 Theme created by Aelanna and Dr Devan
+*/
+
+/* HEADER */
+
+#header, div#header {
+     background-image: none;
+}
+
+#header::before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    left: -11.6rem;
+    top: 1rem;
+    z-index: -1;
+
+    background-image: url('https://scp-jp-storage.wdfiles.com/local--files/file%3A2963469-77-1a78/vanguard%20transparent.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: auto 9em;
+    filter: brightness(125%);
+}
+
+#header h1,
+#header h2 {
+    margin-left: 0;
+    float: none;
+    text-align: center;
+}
+
+#header h2 {
+    margin-top: 2rem;
+}
+
+#header h1 span,
+#header h2 span {
+    font-size: 0;
+    display: none;
+}
+
+#header h2::before {
+    color: rgb(207, 223, 245);
+    letter-spacing: -.02em;
+    line-height: 0;
+}
+
+#header h1 a::before {
+    content: "ANGUARD";
+    font-size: unset;
+}
+
+#header h2::before {
+    content: "保護 - 正常化 - 告知";
+    font-size: 110%;
+}
+
+div#container-wrap {
+    background-image:
+        repeating-linear-gradient(45deg,
+        hsla(0, 0%, 100%, 0),
+        hsla(0, 0%, 100%, 0) 0.25vh,
+        rgba(88, 88, 88, 0.1) 0.35vh,
+        rgba(88, 88, 88, 0.2) 0.5vh),
+
+        repeating-linear-gradient(180deg,
+        hsla(0, 0%, 100%, 0),
+        hsla(0, 0%, 100%, 0) 0.25vh,
+        rgba(88, 88, 88, 0.1) 0.35vh,
+        rgba(88, 88, 88, 0.2) 0.5vh),
+
+        linear-gradient(to bottom,
+        rgba(7, 7, 40, 1) 10.125rem,
+        rgba(72, 114, 163, 1) 7.625rem,
+        rgba(72, 114, 163, 1) calc(91% - 0.125rem),
+        rgba(63, 97, 145, 1) calc(99% - 0.125rem)) !important;
+
+    background-size: 100% 10.125rem, 100% 10.125rem, 100% 11.438rem !important;
+    background-repeat: no-repeat;
+}
+
+/* BODY */
+
+div#content-wrap {
+    top: 1.375rem;
+    padding-bottom: 1rem;
+}
+
+/* TOP BAR */
+
+#top-bar {
+    top: 162px;
+}
+
+/* LOGIN & SEARCH */
+
+@media (min-width: 767px){
+    #login-status {
+        left: -4%;
+    }
+    #search-top-box {
+        right: 4%;
+        top: .5rem;
+    }
+}
+
+@media (max-width: 767px){
+    #search-top-box{
+        top: 40px;
+        right: 0;
+        font-size: 80%;
+    }
+    #login-status{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    #my-account{
+         display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    #header::before {
+        left: -6rem;
+    }
+
+    #header h1 {
+        position: relative;
+        left: 0.4em;
+    }
+}
+
+/* PAGE TITLE */
+
+#content-wrap :is(#page-title, .meta-title) {
+    text-align: center;
+    font-family: 'Copperplate Gothic', 'Noto Serif JP', serif;
+    color: #b61805;
+    font-size: 280%;
+}
+
+@media (max-width: 767px) {
+    #content-wrap :is(#page-title, .meta-title) {
+        font-size: 180%;
+    }
+}
+
+/* CUSTOM DIVS */
+
+.log {
+    border: solid 3px #000000;
+    color: #000000;
+    border-radius: 10px;
+    background: #d8d6d6;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-family: initial;
+}
+
+[[/code]]
+[[/<]]
+[[/collapsible]]
+[[/=]]
+
+[[include :scp-jp:component:license-box-backend
+|author=macro_au_micro]]
+
+> **名称:** Human Resources Sigma-9 Theme（このページに内蔵。rev 13 で原版を読み取り）
+> **作者:** macro_au_micro
+> **ライセンス:** CC BY-SA 3.0（SCP-Wiki既定。ページ内に個別記載なし）
+> **出典:** [https://scp-wiki.wikidot.com/theme:scp-human-resources-sigma SCP-Wiki「Human Resources Sigma-9 Theme」]
+> **補足:** SCP-JP に親テーマが未投稿のため内蔵しています。親が SCP-JP に投稿されたら、このブロックとコードの親セクションを削除し、EN版と同じ hidden include 方式へ戻してください。
+
+> **ファイル名:** hrlogo.png
+> **名称:** SCP Human Resources ロゴ
+> **作者:** 記載なし
+> **ライセンス:** 記載なし
+> **出典:** [https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-44-ziy1/hrlogo.png SCP-JP ファイルストレージ（人事部門テーマ）]
+
+[[include :scp-jp:component:license-box-end]]
+[[/iftags]]
