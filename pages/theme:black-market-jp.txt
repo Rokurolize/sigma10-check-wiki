@@ -1,0 +1,248 @@
+[[include :scp-jp:theme:black-highlighter-theme]]
+
+[[module CSS]]
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Ablack-market-jp/1');
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Ablack-market-jp/1
+]]
+
+[[include :scp-jp:component:bhl-dark-sidebar]]
+
+[[iftags +テーマ]]
+
+[[div class="mcdLogo animSVG" style="width: 100%; padding-bottom: calc(100% / 64 * 31); background-image: var(--mcdLogo);"]]
+[[/div]]
+
+----
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** ブラック・マーケット テーマ
+**翻訳責任者:** SCP-JP
+**翻訳年:** 2026
+**原題:** Black Market Theme
+**著作権者:** [[*user Randomini]], [[*user stormbreath]]
+**作成年:** 2014
+**初訳時参照リビジョン:** 35
+**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:black-market Black Market Theme]
+[[include :scp-jp:credit:end-preview]]
+
++ 使い方
+
+++ 注: これはBlack Highlighterを基盤とするテーマです。使用するにはBlack Highlighterテーマも併せて読み込む必要があります。[[[theme:black-highlighter-theme|詳しくはこちら]]]。
+
+このテーマを読み込むには、ページに以下を追加してください:
+
+> @@[[include :scp-jp:theme:black-highlighter-theme]]@@
+> @@[[include :scp-jp:theme:black-market]]@@
+
+@@ @@
+
+||~ テーブルの実演||
+||~ XXXXX/XXXXX/XXXXX ||
+||MC&Dの様式で使われるテーブルの見出しセルは、上の例と下の例のように淡い紫灰色になります。||
+||~ Marshall, Carter and Dark, LLP||
+
+[[=]]
++ テーマカラー
+[[/=]]
+
+[[include :scp-jp:component:theme-squares -=-
+| color1-name=アイザベリン
+| color1-variable=--pale-gray-monochrome
+| color1-info=(248, 230, 238)
+| color2-name=ブラックコーヒー
+| color2-variable=--gray-monochrome
+| color2-info=(61, 43, 61)
+| color2-has-light-text=1
+| subcolor1-name=オーキッド
+| subcolor1-variable=--pale-accent
+| subcolor1-info=(216, 39, 216)
+| subcolor1-has-light-text=1
+| subcolor2-name=ビザンティン
+| subcolor2-variable=--bright-accent
+| subcolor2-info=(180, 35, 180)
+| subcolor2-has-light-text=1
+| subcolor3-name=ロイヤル
+| subcolor3-variable=--medium-accent
+| subcolor3-info=(140, 20, 140)
+| subcolor3-has-light-text=1
+| subcolor4-name=ティリアン
+| subcolor4-variable=--dark-accent
+| subcolor4-info=(100, 3, 100)
+| subcolor4-has-light-text=1
+]]
+
+[[collapsible show="+ テーマのコードを表示" hide="- テーマのコードを閉じる"]]
+[[code type="css"]]
+/*
+    Marshall, Carter & Dark (Black Market Theme)
+    [2014 Wikidot Theme, 2019 Update]
+    Originally created for the SCP Foundation GoI Contest of 2014 (MC&D team and Group of Interest) by Randomini.
+     Originally based on Sigma-9 by Aelanna, Reach and Crayne.
+     Theme updated later by stormbreath.
+     All images created by Randomini.
+     Ported for SCP-JP (theme:black-market rev 35)
+*/
+
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css");
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css");
+@import url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Ablack-market-jp/mcdLogo.css");
+
+.animSVG {
+    width: 100%;
+    height: 0px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* ROOT - Header & General Recoloring */
+:root {
+	/* Intro */
+	--theme-base: "nuscp"
+		--theme-id: "black-market-theme"
+		--theme-name: "Black Market Theme";
+
+	/* Header Images */
+    --logo-image: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Ablack-market-jp/mcdpride.png");
+	--gradient-header: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Ablack-market-jp/mcd.png");
+	--header-background-image-size: 290px 9rem;
+	--header-height-on-desktop: 9rem;
+	--header-height-on-mobile: 9rem;
+	--diagonal-stripes: none;
+
+	/* Colors */
+	--pale-gray-monochrome: 248, 230, 238;
+	/* light purple for quoteblocks and such */
+	--light-gray-monochrome: 160, 140, 160;
+	/* light purple-gray */
+	--gray-monochrome: 61, 43, 61;
+	/* dark purple-gray */
+	--dark-gray-monochrome: 52, 31, 52;
+	/* darker purple-gray */
+
+	--pale-accent: 216, 39, 216;
+	/* light purple */
+	--bright-accent: 180, 35, 180;
+	/* bright purple*/
+	--medium-accent: 140, 20, 140;
+	/* medium purple*/
+	--dark-accent: 100, 3, 100;
+	/* dark purple*/
+	--newpage-color: 221, 102, 221;
+	/* pale purple*/
+
+	--light-pale-gray-monochrome: var(--pale-gray-monochrome);
+	--rating-module-button-color: var(--pale-gray-monochrome);
+	--rating-module-text-color: var(--pale-gray-monochrome);
+	--barColour: rgb(100, 3, 100);
+}
+
+#side-bar,
+#interwiki {
+	--sidebar-links-text: var(--pale-gray-monochrome);
+}
+
+/* Final Bits of Header */
+#header h1 a,
+#header h1 a::before,
+#header h2 span,
+#header h2 span::before {
+	color: transparent;
+	text-shadow: none;
+}
+
+/* Undo the mobile Image Resize */
+@media only screen and (max-width: 768px) {
+	#header {
+		background-size: 0.625rem 2.500rem;
+		background-repeat: no-repeat;
+		background-position: left 0.75rem top 1.1875rem;
+		background-clip: border-box;
+		background-size: auto 5.375rem;
+	}
+}
+
+/* LOG-IN INFO */
+#login-status #account-options {
+	background-image: none;
+}
+
+/* PAGE-TITLE */
+#page-title,
+.meta-title {
+	color: rgb(var(--dark-accent));
+}
+
+#page-title::after,
+.meta-title::after {
+	background-color: rgb(var(--dark-accent));
+}
+
+/* SEXY BOX */
+div.sexy-box {
+	background: rgb(var(--pale-gray-monochrome));
+	border: 1px solid rgb(var(--gray-monochrome));
+}
+
+div.sexy-box div.image-container img {
+	border: 1px solid #9f8170;
+}
+
+/* CODE */
+.code {
+	border: none;
+	background-color: rgba(var(--blockquote-bg-color));
+	box-shadow: inset 0 0 0 .0625rem rgba(var(--blockquote-border-color), .5), inset .0625rem 0 0 0 rgba(var(--blockquote-border-color), .5), inset 0 -.0625rem 0 0 rgba(var(--blockquote-border-color), .75);
+}
+
+/* RATING AND INFO MODULES */
+.page-rate-widget-box,
+#page-content .rate-box-with-credit-button {
+	background: linear-gradient(to top,
+			rgba(var(--dark-accent), 1) 0%,
+			rgba(var(--dark-accent), 1) 100%);
+	border-color: rgb(var(--gray-monochrome));
+	border-bottom-width: 0.0625rem;
+	box-shadow: none;
+}
+
+#page-content .rate-box-with-credit-button>.creditButton>p>a::before {
+	background-color: rgb(var(--pale-gray-monochrome));
+}
+
+#page-content .rate-box-with-credit-button>.creditButton:hover {
+	background: rgba(var(--bright-accent), 0.8);
+}
+
+#page-content .modalbox {
+	border-radius: 0;
+	box-shadow: 0 2px 6px rgba(var(--bright-accent), 0.5);
+}
+[[/code]]
+[[/collapsible]]
+
+[[include :scp-jp:component:license-box-backend
+|author=Randomini, stormbreath]]
+
+> **ファイル名:** mcdpride.png
+> **作者:** Randomini
+> **ライセンス:** 原語版に記載なし（原語版ページにライセンス表記がありません。投稿前に著者へ確認してください）
+> **出典:** [https://scp-wiki.wikidot.com/local--files/theme:black-market/mcdpride.png SCP Foundation Wiki]
+
+> **ファイル名:** mcd.png
+> **作者:** Randomini
+> **ライセンス:** 原語版に記載なし（原語版ページにライセンス表記がありません。投稿前に著者へ確認してください）
+> **出典:** [https://scp-wiki.wikidot.com/local--files/theme:black-market/mcd.png SCP Foundation Wiki]
+
+> **ファイル名:** mcdLogo.css
+> **作者:** Randomini
+> **ライセンス:** 原語版に記載なし（SVGアニメーションのコード。原語版ページにライセンス表記がありません。投稿前に著者へ確認してください）
+> **出典:** [https://scp-wiki.wikidot.com/local--files/svg-animation/mcdLogo.css SCP Foundation Wiki]
+
+[[include :scp-jp:component:license-box-end]]
+
+[[/iftags]]

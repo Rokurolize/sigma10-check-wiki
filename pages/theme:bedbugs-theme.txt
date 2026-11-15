@@ -1,0 +1,314 @@
+[[iftags +theme]]
+
+[[module CSS]]
+@import url("https://cdn.scpwiki.com/theme/en/black-highlighter/css/min/normalize.min.css");
+@import url("https://cdn.scpwiki.com/theme/en/black-highlighter/css/min/black-highlighter.min.css");
+[[/module]]
+
+[[include :scp-wiki:component:interwiki-style
+| priority=1
+| theme=https://nu-scptheme.github.io/Black-Highlighter/css/min/normalize.min.css
+]]
+
+[[include :scp-wiki:component:interwiki-style
+| priority=2
+| theme=https://nu-scptheme.github.io/Black-Highlighter/css/min/black-highlighter.min.css
+]]
+
+[[>]]
+[[module rate]]
+[[/>]]
+
++ What's This?
+
+This is the Bedbugs Theme, created by [[*user winkwonkboi]] for articles under the [[[department-of-entomology-hub|Department of Entomology]]] setting. On any wiki, simply apply the following code at the top of your page:
+
+[[div class="code"]]
+@@[[include :scp-wiki:theme:black-highlighter-theme]]@@
+@@[[include :scp-wiki:theme:bedbugs-theme]]@@
+[[/div]]
+
+//Note: As this is a Black Highlighter based theme, the Black Highlighter theme should also be applied for this theme to work. To learn more, go [[[theme:black-highlighter-theme|here.]]]//
+
+----
+
+[[include component:image-block name=https://scp-wiki.wdfiles.com/local--files/theme%3Abedbugs-theme/Site-95.png|caption=Site-95 Insignia|width=300px]]
+
++ Examples
+
+A horizontal rule can be created by using five hyphens @@"-----"@@ and extends across the entire page if not placed inside anything (eg: a blockquote). Lines separating sections of this page are horizontal rules.
+
+[[[theme:bedbugs-theme|Link you've certainly visited.]]]
+[# Link you've never visited.]
+
+[[collapsible show="+ Here's a collapsible." hide="- Ever watched Bugbo before?"]]
+Titles are made by putting between one and six pluses "+" at the beginning of the line.
+
++ One Plus Title
+++ Two Plus Title
++++ Three Plus Title
+++++ Four Plus Title
++++++ Five Plus Title
+++++++ Six Plus Title
+[[/collapsible]]
+
+----
+
+@@ @@
+
+[[tabview]]
+[[tab Tabby]]
+This is a tab.
+[[/tab]]
+[[tab Two Tab]]
+This is also a tab.
+
+Now, with two lines.
+[[/tab]]
+[[tab Long Tab]]
+This tab has the same line in succession.
+
+This tab has the same line in succession.
+
+This tab has the same line in succession.
+
+This tab has the same line in succession.
+
+This tab has the same line in succession.
+
+This tab has the same line in succession.
+
+This tab has the same line in succession.
+
+This tab has the same line in succession.
+
+This tab has the same line in succession.
+
+This tab has the same line in succession.
+
+This tab has the same line in succession.
+
+This tab has the same line in succession.
+[[/tab]]
+[[tab Hello and welcome to the Department of Entomology.]]
+We hope you enjoy your stay.
+[[/tab]]
+[[tab Empty Tab]]
+
+[[/tab]]
+[[tab Empty Tab]]
+
+[[/tab]]
+[[tab Empty Tab]]
+
+[[/tab]]
+[[tab Empty Tab]]
+
+[[/tab]]
+[[tab Empty Tab]]
+
+[[/tab]]
+[[tab Empty Tab]]
+
+[[/tab]]
+[[tab Empty Tab]]
+
+[[/tab]]
+[[tab Empty Tab]]
+Hey, stop bugging me!
+[[/tab]]
+[[/tabview]]
+
+@@ @@
+
+[[div class="blockquote"]]
+This is a blockquote, with a hint of blue.
+----
+You can make a blockquote by using a div
+> or by using ">" at the start of a line.
+>> As you can see, there are also nested blockquotes.[[footnote]]And a footnote to boot![[/footnote]]
+[[/div]]
+
+@@ @@
+
+||~ This is a table. ||~ This is a table. ||
+|| You should know || how to make one ||
+|||| of these already. ||
+
+@@ @@
+
+----
+
++ Extra Divs
+
+@@ @@
+[[div class="redstain"]]
+||~ This div gives ||~ everything a red coating. ||
+|| cell content || cell content two ||
+|||| cell content numero tres ||
+@@ @@
+[[div class="code"]]
+= Yup, code blocks are also affected.
+[[/div]]
+@@ @@
+> = Even blockquotes!
+> 
+> = **{{@@[[div class="redstain"]]@@}}**
+[[/div]]
+@@ @@
+
+[[div class="redblock"]]
+= Blockquote with a red border.
+
+= **{{@@[[div class="redblock"]]@@}}**
+[[/div]]
+
+@@ @@
+
+[[div class="blueblock"]]
+= Blockquote with a blue border.
+
+= **{{@@[[div class="blueblock"]]@@}}**
+[[/div]]
+
+@@ @@
+
+----
+
+[[=]]
+[[div style="font-size: 1.5em;"]]
+[[span style="font-family: var(--header-font);"]]Header font is Teko.[[/span]]
+[[span style="font-family: var(--title-font);"]]Title font is Rokkitt.[[/span]]
+[[span style="font-family: var(--body-font);"]]Body font is Noto Sans Buginese.[[/span]]
+[[span style="font-family: var(--mono-font);"]]Monospace font is Sometype Mono.[[/span]]
+[[span style="font-family: var(--UI-font);"]]UI font is Dosis.[[/span]]
+[[/div]]
+[[/=]]
+
+----
+
++ Source Code
+
+@@ @@
+
+[[collapsible]]
+[[code type="css"]]
+@import url('https://fonts.bunny.net/css2?family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.bunny.net/css2?family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.bunny.net/css2?family=Noto+Sans+Buginese&display=swap');
+@import url('https://fonts.bunny.net/css2?family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.bunny.net/css2?family=Dosis:wght@200..800&display=swap');
+
+    :root {
+        /* S-CSS-P INTEGRATION */
+        --theme-base: "black-highlighter";
+        --theme-id: "bedbugs-theme";
+        --theme-name: "Bedbugs Theme";
+
+        /* Colors */
+        --ent-red: 228, 0, 43;
+        --ent-red-transparent: 247, 224, 228;
+
+        --ent-blue: 1, 32, 105;
+        --sky-blue: 173, 216, 230;
+        --dark-sapphire: 8, 37, 103;
+        --air-force: 0, 79, 152;
+
+        --castleton-green: 0, 86, 59;
+        --paris-green: 80, 200, 120;
+        --bottle-green: 0, 106, 78;
+
+        /* Fonts */
+        --header-font: "Teko", sans-serif;
+        --title-font: "Rokkitt", serif;
+        --body-font: "Noto Sans Buginese", sans-serif;
+        --mono-font: "Sometype Mono", monospace;
+        --UI-font: "Dosis", sans-serif;
+
+        /* Header Elements */
+        --logo-image: url("https://scp-wiki.wdfiles.com/local--files/theme%3Abedbugs-theme/entlogo.png");
+        --header-title: "Department of Entomology";
+        --header-subtitle: "Odd Is To Be Expected";
+        --header-h2-font-size: 1.2rem;
+
+        /* Header Gradient */
+        --header-gradient-color-bottom: var(--air-force);
+        --header-gradient-color-middle: var(--ent-blue);
+        --header-gradient-color-top: var(--ent-blue);
+        --diagonal-stripes: unset;
+
+        /* Theme Colors */
+        --bright-accent: var(--ent-red);
+        --medium-accent: var(--ent-red);
+        --dark-accent: var(--dark-sapphire);
+        --gray-monochrome: var(--dark-sapphire);
+        --dark-gray-monochrome: var(--dark-sapphire);
+
+        --link-color: var(--bottle-green);
+        --visited-link-color: var(--castleton-green);
+        --hover-link-color: var(--paris-green);
+
+        --swatch-menubg-color: var(--ent-red-transparent);
+        --code-color: var(--sky-blue), 0.20;
+    }
+
+    #page-title,
+    .meta-title {
+        color: rgb(var(--bottle-green));
+    }
+
+    #main-content {
+        --blockquote-bg-color: var(--sky-blue), 0.20;
+        --rating-module-bg-color: var(--ent-red), 0.05;
+        --tabs-bg: var(--ent-red), 0.05;
+
+        --toc-body-link-color: 0, 0, 0;
+        --toc-body-link-hover-color: 0, 0, 0;
+        --toc-body-hover-arrow-color: 0, 0, 0;
+        --toc-body-bg-color: var(--sky-blue), 0.20;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: rgb(var(--bottle-green));
+    }
+
+    .code {
+        background-color: rgba(var(--code-color));
+    }
+
+    .redstain {
+        --blockquote-bg-color: var(--ent-red), 0.05;
+        --code-color: var(--ent-red), 0.05;
+        --tables-header-bg: var(--ent-red);
+    }
+
+    .redblock {
+        background: rgb(252, 252, 252);
+        border: rgb(var(--ent-red)) solid;
+        border-radius:10px;
+        padding: 1px 15px;
+        margin: .5em 1.25rem;
+    }
+
+    .blueblock {
+        background: rgb(252, 252, 252);
+        border: rgb(var(--ent-blue)) solid;
+        border-radius:10px;
+        padding: 1px 15px;
+        margin: .5em 1.25rem;
+    }
+[[/code]]
+[[/collapsible]]
+
+@@ @@
+
+[[/iftags]]
+
+[[module CSS]]
+@import url(https://scp-wiki.wdfiles.com/local--code/theme%3Abedbugs-theme/1);
+[[/module]]
