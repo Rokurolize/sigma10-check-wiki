@@ -1,0 +1,874 @@
+[[iftags +theme]]
+[[module css]]
+@import url("https://nu-scptheme.github.io/Black-Highlighter/css/min/normalize.min.css");
+@import url("https://nu-scptheme.github.io/Black-Highlighter/css/min/black-highlighter.min.css");
+[[/module]]
+[[include :scp-wiki:component:interwiki-style
+| priority=1
+| theme=https://nu-scptheme.github.io/Black-Highlighter/css/min/normalize.min.css
+]]
+
+[[include :scp-wiki:component:interwiki-style
+| priority=2
+| theme=https://nu-scptheme.github.io/Black-Highlighter/css/min/black-highlighter.min.css
+]]
+
+[[>]]
+[[module rate]]
+[[/>]]
+[[div style="display: none;"]]
+[[include component:image-block name=http://scp-wiki.wikidot.com/local--files/eventyr-hub/LogosearchS.png|caption=.]]
+[[/div]]
+
+[[include :scp-wiki:info:start]]
+**SCP-XXXX:** TITLE
+**NAME OF TALE/GOI-FORMAT**
+**Author:** [[*user AUTHOR]]
+**Original:** LINK TO ORIGINAL
+**Translator:** [[*user TRANSLATOR]]
+**Image:** Put any licensing information for images here
+Add anything else you'd like the reader to know
+[[include :scp-wiki:info:more]]
+More, optional info that appears in a new window. Remove the "[[include :scp-wiki:info:more]]" if you > don't want this
+[[include :scp-wiki:info:end]]
+
+Hello! This is a [[[/theme:black-highlighter-theme|Black Highlighter]]] theme made for the Eventyr setting. In order to use it, put the following on your page:
+
+[[div class="code"]]
+@@[[include :scp-wiki:theme:black-highlighter-theme]]@@
+@@[[include :scp-wiki:theme:eventyr]]@@
+[[/div]]
+
++ EXAMPLES
+
+[[include component:image-block name=http://scp-wiki.wikidot.com/local--files/theme:eventyr/Eventyr%20SCP%20Logo|caption=Eventyr SCP Logo|width=200px]]
+
+A horizontal rule can be created with 5 hyphens "@@-----@@" and extends across the whole page if it's not placed inside anything (eg a blockquote). The lines separating sections of this document are horizontal rules.[[footnote]] This is a footnote[[/footnote]]
+
+[http://www.google.com A link you probably visited once, idk]
+[https://scp-wiki.wikidot.com/scp-2601789532645888881596 unvisited]
+
+Titles can be created by putting between one and six plus "+" at the start of the line
+
+[[collapsible show="+ Titles" hide="- Titles"]]
++ First Title
+
+++ Second Title
+
++++ Third Title
+
+++++ Fourth Title
+
++++++ Fifth Title
+
+++++++ Sixth Title
+[[/collapsible]]
+
+@@ @@
+-----
+@@ @@
+
+[[tabview]]
+[[tab Tabulator]]
+Why was the shovel so special?
+
+Because it was a groundbreaking invention
+[[/tab]]
+[[tab Tabulation]]
+More text.
+
+How quaint.
+[[/tab]]
+[[tab Long Tab]]
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+[[/tab]]
+[[tab This empty tab right here has a really long name.]]
+[[/tab]]
+[[tab Empty Tab]]
+[[/tab]]
+[[tab Empty Tab]]
+[[/tab]]
+[[tab Empty Tab]]
+[[/tab]]
+[[tab Empty Tab]]
+[[/tab]]
+[[tab Empty Tab]]
+[[/tab]]
+[[/tabview]]
+@@ @@
+> This is a blockquote, created by putting "> " at the start of each line.
+>
+> More text
+> -----
+> That's a horizontal rule
+>
+>> Nested blockquotes
+
+||~ This is a ||~ table ||
+||You should know || how to make these ||
+||||already ||
+
+[[footnoteblock]]
+@@ @@
+@@ @@
+
+[[=]]
++ Eventyr Logo Options
+@@ @@
+[[div class="blockquote"]]
+There are multiple options provided for the header logo. These include:
+Base (Rainbow), Aro, Ace, Bi, Gay, Lesbian, Nonbinary, Pan and Transgender Flag Themes. To update them, in your @@[[module css]]@@, include the following line:
+[[div class="code"]]
+   @@[[module CSS]]@@
+   @@:root{--logo-image: var(--eventyr-base);}@@
+   @@[[/module]]@@
+[[/div]]
+Replace @@'--eventyr-base'@@ with any of the following options:
+[[collapsible show="+ Logo Options" hide="- Hide"]]
+|| Base || [[image http://scp-wiki.wikidot.com/local--files/theme:eventyr/Eventyr%20SCP%20Logo]]|| @@--eventyr-base@@ ||
+|| Aromantic || [[image http://scp-wiki.wikidot.com/local--files/theme:eventyr/Eventyr%20SCP%20Logo%20Aro]] || @@--eventyr-aro@@ ||
+|| Asexual || [[image http://scp-wiki.wikidot.com/local--files/theme:eventyr/Eventyr%20SCP%20Logo%20Ace]] || @@--eventyr-ace@@ ||
+|| Bisexual || [[image http://scp-wiki.wikidot.com/local--files/theme:eventyr/Eventyr%20SCP%20Logo%20Bi]] || @@--eventyr-bi@@ ||
+|| Gay || [[image http://scp-wiki.wikidot.com/local--files/theme:eventyr/Eventyr%20SCP%20Logo%20Gay]] || @@--eventyr-gay@@ ||
+|| Lesbian || [[image http://scp-wiki.wikidot.com/local--files/theme:eventyr/Eventyr%20SCP%20Logo%20Lesbian]] || @@--eventyr-lesbian@@ ||
+|| Nonbinary || [[image http://scp-wiki.wikidot.com/local--files/theme:eventyr/Eventyr%20SCP%20Logo%20NB]] || @@--eventyr-nonbinary@@ ||
+|| Pansexual || [[image http://scp-wiki.wikidot.com/local--files/theme:eventyr/Eventyr%20SCP%20Logo%20Pan]] || @@--eventyr-pan@@ ||
+|| Transgender || [[image http://scp-wiki.wikidot.com/local--files/theme:eventyr/Eventyr%20SCP%20Logo%20Trans]] || @@--eventyr-trans@@ ||
+|| Agender || [[image http://scp-wiki.wikidot.com/local--files/theme:eventyr/Eventyr%20SCP%20Logo%20Agender]] || @@--eventyr-agender@@ ||
+|| Demisexual || [[image http://scp-wiki.wikidot.com/local--files/theme:eventyr/Eventyr%20SCP%20Logo%20Demi]] || @@--eventyr-demisexual@@ ||
+|| Genderfluid || [[image http://scp-wiki.wikidot.com/local--files/theme:eventyr/Eventyr%20SCP%20Logo%20Genderfluid]] || @@--eventyr-genderfluid@@ ||
+|| Genderqueer || [[image http://scp-wiki.wikidot.com/local--files/theme:eventyr/Eventyr%20SCP%20Logo%20Genderqueer]] || @@--eventyr-genderqueer@@ ||
+|| Intersex || [[image http://scp-wiki.wikidot.com/local--files/theme:eventyr/Eventyr%20SCP%20Logo%20Intersex]] || @@--eventyr-intersex@@ ||
+|| LGBTQ || [[image http://scp-wiki.wikidot.com/local--files/theme:eventyr/Eventyr%20SCP%20Logo%20LGBTQ]] || @@--eventyr-lgbtq@@ ||
+|| Polyamorous || [[image http://scp-wiki.wikidot.com/local--files/theme:eventyr/Eventyr%20SCP%20Logo%20Polyamorous]] || @@--eventyr-polyamorous@@ ||
+|| Polysexual|| [[image http://scp-wiki.wikidot.com/local--files/theme:eventyr/Eventyr%20SCP%20Logo%20Polysexual]] || @@--eventyr-polysexual@@ ||
+[[/collapsible]]
+[[/div]]
+@@ @@
++ Eventyr style Divs
+@@ @@
+
++ HCA: STORYBOOK BLOCKQUOTE
+uses __{{storybook-hca}}__ div
+[[/=]]
+
+[[div class="storybook-hca"]]
+Vort Jordliv her er Evighedens Frø
+-----
+Our life here on earth is the seed of eternity.
+[[/div]]
+@@ @@
+[[=]]
+
++ TYPEWRITER PAGE BLOCKQUOTE
+uses __{{eventypewriter}}__ div
+[[/=]]
+
+[[div class="eventypewriter"]]
+Vort Jordliv her er Evighedens Frø
+-----
+Our life here on earth is the seed of eternity.
+[[/div]]
+@@ @@
+[[=]]
+uses __{{eventypewriter-left}}__ div
+[[/=]]
+
+[[div class="eventypewriter-left"]]
+Vort Jordliv her
+-----
+Our life here on earth
+[[/div]]
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+
+[[=]]
+
+uses __{{eventypewriter-right}}__ div
+[[/=]]
+
+[[div class="eventypewriter-right"]]
+er Evighedens Frø
+-----
+is the seed of eternity.
+[[/div]]
+@@ @@
+[[=]]
+@@ @@
+@@ @@
+@@ @@
+uses __{{evenflowery}}__ div
+[[div class="evenflowery"]]
+Vort Jordliv her er Evighedens Frø
+
+Our life here on earth is the seed of eternity.
+[[/div]]
+[[/=]]
+@@ @@
+
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+[[=]]
+
++ HCA: EVENTYR DIVIDERS
+uses __{{eventyr-butterfly-div}}__ div
+[[div class="eventyr-butterfly-div"]]
+[[/div]]
+@@ @@
+uses __{{eventyr-hr}}__ div
+[[div class="eventyr-hr"]]
+[[/div]]
+@@ @@
+uses __{{eventyr-hr-short}}__ div
+[[div class="eventyr-hr-short"]]
+[[/div]]
+[[/=]]
+@@ @@
+
+
+[[=]]
++ HCA: EVENTYR TITLE
+Uses the Lavishly Yours font
+uses __{{eventyr-title}}__ div
+[[/=]]
+
+[[div class="eventyr-title"]]
+Vort Jordliv her er Evighedens Frø
+[[/div]]
+
+@@ @@
+@@ @@
+[[collapsible show="+ Image licensing" hide="- Close"]]
+
+This theme was created by [[*user FlyPurgatorio]] with help from [[*user Queerious]], [[*user Fish^12]] and [[*user Uncle Nicolini]].
+
+> **Filename:** Eventyr SCP Logo
+> **Author:** [[*user FlyPurgatorio]]
+> **License:** CC BY-SA 3.0
+> **Source Link:** [https://imgur.com/hJVeZzx BACKUP LINK] [http://scp-wiki.wikidot.com/local--files/theme:eventyr/Eventyr%20SCP%20Logo LINK]
+> **Source:** Authors own work
+
+> **Filename:** Eventyr SCP Logo Ace
+> **Author:** [[*user FlyPurgatorio]]
+> **License:** CC BY-SA 3.0
+> **Source Link:** [https://imgur.com/qTG77Uo BACKUP LINK] [http://scp-wiki.wikidot.com/local--files/theme:eventyr/Eventyr%20SCP%20Logo%20Ace LINK]
+> **Source:** Authors own work
+
+> **Filename:** Eventyr SCP Logo Aro
+> **Author:** [[*user FlyPurgatorio]]
+> **License:** CC BY-SA 3.0
+> **Source Link:** [https://imgur.com/8IAiW29 BACKUP LINK]
+> **Source:** Authors own work
+
+> **Filename:** Eventyr SCP Logo Bi
+> **Author:** [[*user FlyPurgatorio]]
+> **License:** CC BY-SA 3.0
+> **Source Link:** [https://imgur.com/YnsRoMl BACKUP LINK]
+> **Source:** Authors own work
+
+> **Filename:** Eventyr SCP Logo Gay
+> **Author:** [[*user FlyPurgatorio]]
+> **License:** CC BY-SA 3.0
+> **Source Link:** [https://imgur.com/yOEha1S BACKUP LINK]
+> **Source:** Authors own work
+
+> **Filename:** Eventyr SCP Logo Lesbian
+> **Author:** [[*user FlyPurgatorio]]
+> **License:** CC BY-SA 3.0
+> **Source Link:** [https://imgur.com/jsj7q5J BACKUP LINK]
+> **Source:** Authors own work
+
+> **Filename:** Eventyr SCP Logo NB
+> **Author:** [[*user FlyPurgatorio]]
+> **License:** CC BY-SA 3.0
+> **Source Link:** [https://imgur.com/dbRZvo2 BACKUP LINK]
+> **Source:** Authors own work
+
+> **Filename:** Eventyr SCP Logo Pan
+> **Author:** [[*user FlyPurgatorio]]
+> **License:** CC BY-SA 3.0
+> **Source Link:** [https://imgur.com/bk7IxgI BACKUP LINK]
+> **Source:** Authors own work
+
+> **Filename:** Eventyr SCP Logo Trans
+> **Author:** [[*user FlyPurgatorio]]
+> **License:** CC BY-SA 3.0
+> **Source Link:** [https://imgur.com/OfoIIX7 BACKUP LINK] http://scp-wiki.wikidot.com/local--files/theme:eventyr/Eventyr%20SCP%20Logo%20Trans
+> **Source:** Authors own work
+
+> **Filename:** Eventyr SCP Logo Agender
+> **Author:** [[*user FlyPurgatorio]]
+> **License:** CC BY-SA 3.0
+> **Source Link:** [https://imgur.com/VHFv7UV BACKUP LINK]
+> **Source:** Authors own work
+
+> **Filename:** Eventyr SCP Logo Demisexual
+> **Author:** [[*user FlyPurgatorio]]
+> **License:** CC BY-SA 3.0
+> **Source Link:** [https://imgur.com/bAlgxo3 BACKUP LINK]
+> **Source:** Authors own work
+
+> **Filename:** Eventyr SCP Logo Genderfluid
+> **Author:** [[*user FlyPurgatorio]]
+> **License:** CC BY-SA 3.0
+> **Source Link:** [https://imgur.com/SphpDMq BACKUP LINK]
+> **Source:** Authors own work
+
+> **Filename:** Eventyr SCP Logo Genderqueer
+> **Author:** [[*user FlyPurgatorio]]
+> **License:** CC BY-SA 3.0
+> **Source Link:** [https://imgur.com/GkWFL3a BACKUP LINK]
+> **Source:** Authors own work
+
+> **Filename:** Eventyr SCP Logo Intersex
+> **Author:** [[*user FlyPurgatorio]]
+> **License:** CC BY-SA 3.0
+> **Source Link:** [https://imgur.com/cXGldVr BACKUP LINK]
+> **Source:** Authors own work
+
+> **Filename:** Eventyr SCP Logo LGBTQ
+> **Author:** [[*user FlyPurgatorio]]
+> **License:** CC BY-SA 3.0
+> **Source Link:** [https://imgur.com/WBLXd4n BACKUP LINK]
+> **Source:** Authors own work
+
+> **Filename:** Eventyr SCP Logo Polyamorous
+> **Author:** [[*user FlyPurgatorio]]
+> **License:** CC BY-SA 3.0
+> **Source Link:** [https://imgur.com/r6BL1K1 BACKUP LINK]
+> **Source:** Authors own work
+
+> **Filename:** Eventyr SCP Logo Polysexual
+> **Author:** [[*user FlyPurgatorio]]
+> **License:** CC BY-SA 3.0
+> **Source Link:** [https://imgur.com/SlFoWpY BACKUP LINK]
+> **Source:** Authors own work
+
+The Eventyr SCP logos are a derivative of:
+
+> **Filename:** Logo of the SCP Foundation.png
+> **Author:** Far2
+> **License:** Creative Commons Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+> **Source Link:** https://en.wikipedia.org/wiki/File:Logo_of_the_SCP_Foundation.png
+
+> **Filename:** Eventyrbanner.png
+> **Author:** [[*user FlyPurgatorio]]
+> **License:** CC BY-SA 3.0
+> **Source Link:** [https://imgur.com/0vDHtcQ BACKUP LINK]
+> **Source:** Authors own work
+
+> **Filename:** Eventyrfooter.png
+> **Author:** [[*user FlyPurgatorio]]
+> **License:** CC BY-SA 3.0
+> **Source Link:** [https://imgur.com/4rVrW0i BACKUP LINK]
+> **Source:** Authors own work
+
+> **Filename:** Mobileeventyrbanner.png
+> **Author:** [[*user FlyPurgatorio]]
+> **License:** CC BY-SA 3.0
+> **Source Link:** [https://imgur.com/3AZGuDX BACKUP LINK]
+> **Source:** Authors own work
+
+The images [Eventyrbanner.png], [Mobileeventyrbanner.png] and [Eventyrfooter.png] are a derivative of:
+
+> **Filename:** Hans Christian Andersen Dagbog 1831.jpg
+> **Author:** The Royal Library, Denmark
+> **License:** Creative Commons Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+> **Source Link:** [https://commons.wikimedia.org/wiki/File:Hans_Christian_Andersen_Dagbog_1831.jpg LINK]
+
+> **Filename:** Evenflowery
+> **Author:** [[*user FlyPurgatorio]]
+> **License:** CC BY-SA 3.0
+> **Source Link:** [TBA LINK]
+> **Source:** Authors own work
+> **Notes:** Derivative of L'Image cover 02 Auriol.png
+
+The images [Evenflowery.png] is a derivative of:
+
+> **Filename:** Flowerybottom
+> **Author:** [[*user FlyPurgatorio]]
+> **License:** CC BY-SA 3.0
+> **Source Link:** [TBA LINK]
+> **Source:** Authors own work
+> **Notes:** Derivative of L'Image cover 02 Auriol.png
+
+> **Filename:** Flowerytop
+> **Author:** [[*user FlyPurgatorio]]
+> **License:** CC BY-SA 3.0
+> **Source Link:** [TBA LINK]
+> **Source:** Authors own work
+> **Notes:** Derivative of L'Image cover 02 Auriol.png
+
+> **Filename:** L'Image cover 02 Auriol.png
+> **Author:**  Bibliothèque nationale de France
+> **License:** Public Domain
+> **Source Link:** [https://commons.wikimedia.org/wiki/File:L'Image_cover_02_Auriol.png LINK]
+
+> **Filename:** Eventyr-hr
+> **Author:** [[*user FlyPurgatorio]]
+> **License:** CC BY-SA 3.0
+> **Source Link:** [TBA LINK]
+> **Source:** Authors own work
+
+> **Filename:** Eventyr-hr-short
+> **Author:** [[*user FlyPurgatorio]]
+> **License:** CC BY-SA 3.0
+> **Source Link:** [TBA LINK]
+> **Source:** Authors own work
+
+> **Filename:** Eventyr-butterfly-div
+> **Author:** [[*user FlyPurgatorio]]
+> **License:** CC BY-SA 3.0
+> **Source Link:** [TBA LINK]
+> **Source:** Authors own work
+> **Note:** Derivative of Eventyr Wing
+
+> **Filename:** Eventyr Wing
+> **Author:** [[*user sailorenoch]]
+> **License:** CC BY-SA 3.0
+> **Source Link:** [TBA LINK]
+> **Source:** Authors own work
+
+> **Filename:** Paper effect
+> **Author:** [[*user sailorenoch]]
+> **License:** CC BY-SA 3.0
+> **Source Link:** [https://imgur.com/4dVsnOH BACKUP LINK]
+> **Source:** Authors own work
+> **Notes:** Used as background for the Storybook and Typewriter divs
+
+> **Quote:** Vort Jordliv her er Evighedens Frø / Our life here on earth is the seed of Eternity
+> **Name:** Oldingen (poem)
+> **Author:** Hans Christian Andersen (original); [[*user FlyPurgatorio]] (translation)
+> **License:** Public Domain
+> **Source Link:** [http://wayback-01.kb.dk/wayback/20100504130620/http://www2.kb.dk/elib/mss/hcadigt/oldingen/oldingen.htm LINK] / [https://andersen.sdu.dk/vaerk/register/info.html?vid=2303 Link that shows original date of publication of the Danish text in 1874]
+> **Additional Notes:** Danish phrase is also used on Hans Christian Andersen's gravestone. New translation by [[*user FlyPurgatorio]].
+
+> **Filename:** Philosopher
+> **License:** Open Font License
+> **Source Link:** [https://fonts.google.com/specimen/Philosopher/about LINK]
+
+> **Filename:** Lavishly Yours
+> **License:** Open Font License
+> **Source Link:** [https://fonts.google.com/specimen/Lavishly+Yours/about LINK]
+
+> **Filename:** Cutive
+> **License:** Open Font License
+> **Source Link:** [https://fonts.google.com/specimen/Cutive/about LINK]
+
+[[/collapsible]]
+
+@@ @@
+[[collapsible show="+ Code" hide="- Hide" hideLocation="both"]]
+[[code type="css"]]
+@import url('https://fonts.bunny.net/css2?family=Cutive&display=swap');
+@import url('https://fonts.bunny.net/css2?family=Lavishly+Yours&display=swap');
+@import url('https://fonts.bunny.net/css2?family=Philosopher&display=swap');
+
+:root {
+    /* ===S-CSS-P INTEGRATION=== */
+    --theme-base: "black-highlighter";
+    --theme-id: "eventyr-theme";
+    --theme-name: "Eventyr Theme";
+
+    /* ===HEADER ELEMENTS=== */
+   --logo-image: var(--eventyr-base);
+    --header-title: "Eventyr";
+    --header-subtitle: "The cycle continues, set to a new tune";
+
+    /* === Header Logo Options === */
+    --eventyr-base: url(http://scp-wiki.wikidot.com/local--files/theme:eventyr/Eventyr%20SCP%20Logo);
+    --eventyr-aro: url(http://scp-wiki.wikidot.com/local--files/theme:eventyr/Eventyr%20SCP%20Logo%20Aro);
+    --eventyr-ace: url(http://scp-wiki.wikidot.com/local--files/theme:eventyr/Eventyr%20SCP%20Logo%20Ace);
+    --eventyr-bi: url(http://scp-wiki.wikidot.com/local--files/theme:eventyr/Eventyr%20SCP%20Logo%20Bi);
+    --eventyr-gay: url(http://scp-wiki.wikidot.com/local--files/theme:eventyr/Eventyr%20SCP%20Logo%20Gay);
+    --eventyr-lesbian: url(http://scp-wiki.wikidot.com/local--files/theme:eventyr/Eventyr%20SCP%20Logo%20Lesbian);
+    --eventyr-nonbinary: url(http://scp-wiki.wikidot.com/local--files/theme:eventyr/Eventyr%20SCP%20Logo%20NB);
+    --eventyr-pan: url(http://scp-wiki.wikidot.com/local--files/theme:eventyr/Eventyr%20SCP%20Logo%20Pan);
+    --eventyr-trans: url(http://scp-wiki.wikidot.com/local--files/theme:eventyr/Eventyr%20SCP%20Logo%20Trans);
+    --eventyr-agender: url(http://scp-wiki.wikidot.com/local--files/theme:eventyr/Eventyr%20SCP%20Logo%20Agender);
+    --eventyr-demisexual: url(http://scp-wiki.wikidot.com/local--files/theme:eventyr/Eventyr%20SCP%20Logo%20Demi);
+    --eventyr-genderfluid: url(http://scp-wiki.wikidot.com/local--files/theme:eventyr/Eventyr%20SCP%20Logo%20Genderfluid);
+    --eventyr-genderqueer: url(http://scp-wiki.wikidot.com/local--files/theme:eventyr/Eventyr%20SCP%20Logo%20Genderqueer);
+    --eventyr-intersex: url(http://scp-wiki.wikidot.com/local--files/theme:eventyr/Eventyr%20SCP%20Logo%20Intersex);
+    --eventyr-lgbtq: url(http://scp-wiki.wikidot.com/local--files/theme:eventyr/Eventyr%20SCP%20Logo%20LGBTQ);
+    --eventyr-polyamorous: url(http://scp-wiki.wikidot.com/local--files/theme:eventyr/Eventyr%20SCP%20Logo%20Polyamorous);
+    --eventyr-polysexual: url(http://scp-wiki.wikidot.com/local--files/theme:eventyr/Eventyr%20SCP%20Logo%20Polysexual);
+
+
+
+
+    /* ===Fonts=== */
+    --UI-font: Cutive, serif;
+    --header-font: Lavishly Yours, serif;
+    --title-font: Cutive, serif;
+    --mono-font: Recursive, monospace;
+
+    /* ===LIGHT BROWNS=== */
+    --off-white: 253, 252, 251;
+    --yet-unwritten: 227, 219, 174;
+    --wooden-floor: 202, 182, 153;
+    --writing-pages: 190, 163, 99;
+    --book-binding: 237, 230, 220;
+    --writing-desk: 161, 145, 122;
+
+    /* ===DARKS=== */
+    --writing-ink: 96, 66, 48;
+    --the-void: 12, 12, 12;
+
+    /* ===GREENS=== */
+    --study-wall: 42, 55, 37;
+    --curtains: 201, 214, 195;
+
+    /* ===ACCENTS=== */
+    --hca-purple: 93, 15, 135;
+    --bronze-ornament: 179, 122, 18;
+
+    /* ===THEME ASSIGNMENTS=== */
+    /* white */
+    --white-monochrome: var(--off-white);
+    /* v light gray for blockquotes and stuff */
+    --pale-gray-monochrome: var(--book-binding);
+    /* very light pale gray for misc. use */
+    --light-pale-gray-monochrome: 244, 244, 244;
+    /* very light accent gray for misc. use */
+    --very-light-gray-monochrome: 215, 215, 215;
+    /* light accent gray for login status */
+    --light-gray-monochrome: var(--study-wall);
+    /* gray */
+    --gray-monochrome: var(--study-wall);
+    /* dark accent gray for sidebar background */
+    --dark-gray-monochrome: var(--curtains);
+    /* black */
+    --black-monochrome: var(--the-void);
+
+    /* subdued theme color */
+    --pale-accent: var(--writing-desk);
+    /* vivid theme color the "default" accent color */
+    --bright-accent: var(--writing-pages);
+    /* theme color */
+    --medium-accent: var(--wooden-floor);
+    /* darker theme color */
+    --dark-accent: var(--writing-ink);
+    /* alternate accent color for newpage links */
+    --alt-accent: var(--bronze-ornament);
+
+    /* ===GENERAL COLORS=== */
+    --swatch-border-color: var(--writing-ink);
+
+    /* ===MENU COLORS=== */
+    /* ===MENU BACKGROUND COLORS=== */
+    --swatch-menubg-dark-color: var(--light-gray-monochrome);
+    --swatch-menubg-black-color: var(--light-gray-monochrome);
+
+
+
+    /* ===HEADER TITLE FONT SIZES=== */
+    --header-h1-font-size: calc(var(--base-font-size) * (120 / 45));
+    --header-h2-font-size: var(--base-font-size);
+
+    /* ===OVERALL PAGE BACKGROUND COLOUR=== */
+    --swatch-background: var(--white-monochrome);
+
+    /* ===BACKGROUND GRADIENT=== */
+    /* Subtle gradient that begins just below the top-bar and header */
+    --background-gradient-color: var(--yet-unwritten);
+    --background-gradient-distance: 40rem;
+
+    /* ===LINK COLOURS=== */
+        --link-color: var(--alt-accent);
+        --visited-link-color: var(--hca-purple);
+        --hover-link-color: var(--hca-purple);
+        --newpage-color: 221, 102, 17;
+
+        --header-background-image-size: 100% var(--header-height-on-desktop);
+        --header-height-on-desktop: 12.25rem;
+        --header-height-on-mobile: 12.25rem;
+        --topbar-height-on-mobile: 2.5rem;
+}
+
+#header {
+    /* ===HEADER ELEMENTS=== */
+    /* ===HEADER TITLES=== */
+    /* Header H1 and H2 colors */
+    --swatch-headerh1-color: var(--dark-accent);
+    --swatch-headerh2-color: var(--dark-accent);
+    background-position: center top;
+    background-size:180px;
+
+    /* ===LOGIN BOX ELEMENT=== */
+    --login-line-divider-color: var(--study-wall);
+    --login-username-color: var(--study-wall);
+    --login-myaccount-color: var(--study-wall);
+    --login-myaccount-hover-color: var(--login-myaccount-color);
+    --login-arrow-color: var(--study-wall);
+
+    /* Dropdown Box when arrow is clicked */
+    --login-dropdown-bg-color: var(--study-wall);
+    --login-dropdown-bg-image: var(--study-wall);
+
+    /* ===SEARCH ELEMENT=== */
+    --search-icon-color: var(--study-wall);
+}
+
+#header h1 a, #header h1 a::before, #header h2 span, #header h2 span::before {
+    filter:drop-shadow(0px 0px 1px white);
+}
+
+
+#side-bar,
+#interwiki {
+    /* ===SIDE-BAR ELEMENTS=== */
+
+    /* ===SIDE-BAR GENERAL=== */
+    --sidebar-bg-color: var(--study-wall);
+    --sidebar-resources-bg-color: var(--curtains), 0.25;
+    --sidebar-media-bg-color: var(--curtains), 0.125;
+
+    --social-icon-hover-color: var(--swatch-primary);
+
+    /* ===SIDEBLOCK MENU=== */
+    --sideblock-bg-color: 0, 0, 0, 0; /* Transparent */
+    --sideblock-heading-border-color: var(--swatch-primary);
+    --sideblock-heading-bg-color: 0, 0, 0, 0; /* Transparent */
+    --sideblock-heading-text-color: var(--alt-accent);
+
+    /* ===MENU-ITEMS=== */
+    --sidebar-border-color: var(--yet-unwritten), 0.08;
+    --sidebar-subtext-color: var(--yet-unwritten);
+
+    --sidebar-links-text: var(--curtains);
+    --sidebar-links-bg-color: 0, 0, 0, 0; /* Transparent */
+    --sidebar-links-hover-bg-color: var(--swatch-primary);
+    --sidebar-links-hover-text-color: var(--swatch-text-secondary-color);
+
+    /* ===SIDEBAR COLLAPSIBLES=== */
+    /* Folded Colors */
+    --sidebar-collapsible-fld-link-bg: var(--swatch-primary-darker), 0.25;
+    --sidebar-collapsible-fld-link-color: var(--sideblock-heading-text-color);
+    --sidebar-collapsible-fld-link-hover-bg: var(--swatch-primary-darker);
+    --sidebar-collapsible-fld-link-hover-color: var(--swatch-text-secondary-color);
+    --sidebar-collapsible-fld-arrow-color: var(--swatch-text-tertiary-color);
+    --sidebar-collapsible-fld-arrow-hover-color: var(--swatch-text-secondary-color);
+
+    /* Unfolded Colors */
+    --sidebar-collapsible-ufld-link-bg: var(--sidebar-collapsible-fld-link-bg);
+    --sidebar-collapsible-ufld-link-color: var(--sideblock-heading-text-color);
+    --sidebar-collapsible-ufld-link-hover-bg: var(--swatch-primary);
+    --sidebar-collapsible-ufld-link-hover-color: var(--sidebar-collapsible-fld-link-hover-color);
+    --sidebar-collapsible-ufld-arrow-color: var(--sidebar-collapsible-fld-arrow-color);
+    --sidebar-collapsible-ufld-arrow-hover-color: var(--sidebar-collapsible-fld-arrow-hover-color);
+
+    /* Unfolded Body Colors */
+    --sidebar-collapsible-body-bg: var(--swatch-primary), 0.125;
+    --sidebar-collapsible-link-color: var(--sidebar-links-text);
+    --sidebar-collapsible-link-hover-bg: var(--sidebar-links-hover-bg-color);
+    --sidebar-collapsible-link-hover-color: var(--sidebar-links-hover-text-color);
+}
+
+#main-content {
+    /* ===TABLES=== */
+    --tables-header-bg: var(--writing-pages);
+}
+
+/* Center Header */
+#header h1, #header h2 {
+   width: 100%;
+}
+
+#header h1 a, #header h1 a::before, #header h2 span, #header h2 span::before {
+   display: block;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+#skrollr-body {
+  background-image: none;
+}
+
+:root {
+  --header-h1-font-size: 4rem;
+  --gradient-header: url(http://scp-wiki.wikidot.com/local--files/theme:eventyr/Eventyr%20top%20banner);
+  --header-background-image-size: auto var(--header-height-on-desktop);
+  background-position-x: center;
+}
+
+body {
+  background-position-x: center;
+}
+#footer {
+    position: relative;
+    background-color: transparent;
+    color: rgb(var(--dark-accent));
+    margin-top: 100px !important;
+    overflow: unset;
+    isolation: isolate;
+   --footer-link-color: var(--writing-ink);
+   --footer-link-hover-color: var(--writing-ink);
+}
+
+#footer .options a {
+    color: rgb(var(--dark-accent));
+    width: auto;
+    background-repeat: repeat-x;
+    background-size: inherit;
+}
+
+#footer::before {
+  position: absolute;
+  z-index: auto;
+
+  min-height: 100px;
+  content: "Vort Jordliv her er Evighedens Frø";
+  color: var(--writing-ink);
+  font-size: 3rem;
+  text-align: center;
+  font-family: Lavishly Yours;
+  line-height: calc(1rem + 13.25vw); /* Same as the height */
+    bottom: 0; left: 0;
+    height: calc(1rem + 13.25vw); width: 100%;
+    background-image: url('http://scp-wiki.wikidot.com/local--files/theme:eventyr/Eventyr%20Footer%20Banner');
+    background-size: cover;
+    background-position: center top;
+    pointer-events: none;
+}
+
+@media only screen and (max-width: 56.25rem) {
+  :root {
+    --gradient-header: url(http://scp-wiki.wikidot.com/local--files/theme:eventyr/Mobile%20banner);
+  }
+   #footer::before {
+      font-size: 1.5rem;
+  content: "Evighedens Frø";
+   }
+#footer {
+    margin-top: 40px !important;}
+}
+
+/* VOTING BOX MARGIN CORRECTION */
+.number{
+margin-top:3px;
+}
+
+/* CUSTOM DIVS */
+
+.storybook-hca {
+     font-family: Philosopher, cursive;
+     background-image: url(http://scp-wiki.wikidot.com/local--files/theme:eventyr/5%20-%20Paper%20effect.png);
+     padding: 15px;
+     font-size: 105%;
+     border: 2px solid #5d0f87;
+}
+
+.eventypewriter{
+     font-family: Cutive, serif;
+     background-image: url(http://scp-wiki.wikidot.com/local--files/theme:eventyr/5%20-%20Paper%20effect.png);
+     padding: 15px;
+     font-size: 90%;
+     border: 2px solid #5d0f87;
+}
+
+.eventypewriter-left{
+     font-family: Cutive, serif;
+     background-image: url(http://scp-wiki.wikidot.com/local--files/theme:eventyr/5%20-%20Paper%20effect.png);
+     padding: 15px;
+     font-size: 80%;
+     float: left;  
+     width: 40%;
+     border: 2px solid #5d0f87;
+     margin: 20px;
+}
+
+.eventypewriter-right{
+     font-family: Cutive, serif;
+     background-image: url(http://scp-wiki.wikidot.com/local--files/theme:eventyr/5%20-%20Paper%20effect.png);
+     padding: 15px;
+     font-size: 80%;
+     float: right;  
+     width: 40%;
+     border: 2px solid #5d0f87;
+     margin: 20px;
+}
+
+.eventyr-title{
+     font-family: var(--header-font), cursive;
+     padding: 5px;
+     font-size: 300%;
+     text-align: center;
+     color: var(--writing-ink);
+}
+
+.eventyr-butterfly-div{
+    min-height: 200px;
+    background-image: url(http://scp-wiki.wikidot.com/local--files/theme:eventyr/Butterfly%20divider);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.eventyr-hr{
+    min-height: 6em;
+    background-image: url(http://scp-wiki.wikidot.com/local--files/theme:eventyr/Eventyr-hr);
+    background-size: cover;
+@media only screen and (max-width: 600px) {
+    background-size: contain;
+}
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.eventyr-hr-short{
+    min-height: 6em;
+    background-image: url(http://scp-wiki.wikidot.com/local--files/theme:eventyr/Eventyr-hr-short);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.evenflowery{
+    background-image: url(http://scp-wiki.wikidot.com/local--files/theme:eventyr/Flowerytop), url(http://scp-wiki.wikidot.com/local--files/theme:eventyr/Flowerybottom);
+    background-repeat: no-repeat;
+    background-size: 24%;
+    background-position: top left, 102% 110%;
+    padding: 1em 1em 1em 2em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+[[/code]]
+[[/collapsible]]
+[[/iftags]]
+
+[[include :scp-wiki:component:toggle-sidebar-bhl]]
+
+[[module css]]
+@import url("https://scp-wiki.wikidot.com//local--code/theme%3Aeventyr/1")
+[[/module]]
