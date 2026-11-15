@@ -36,6 +36,7 @@
 **著作権者:** EstrellaYoshte
 **作成年:**  2021
 **初訳時参照リビジョン:** 135
+**改訳時参照リビジョン:** 142
 **元記事リンク:** [https://scp-wiki.wikidot.com/theme:monotypical ソース]
 [[include :scp-jp:credit:end-preview]]
 
@@ -328,9 +329,9 @@ divの中のテキストも中央に寄せられます。
 */
 @import url('https://cdn.scpwiki.com/theme/en/basalt/normalize-min.css');
 
-@import url('https://api.fonts.coollabs.io/css2?family=Urbanist:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
-@import url('https://api.fonts.coollabs.io/css2?family=Ubuntu&display=swap');
-@import url('https://api.fonts.coollabs.io/css2?family=Fira+Code:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
 
 /*-------------------*/
 /*---- NORMALIZE ----*/
@@ -2436,7 +2437,7 @@ div.buttons.alignleft {
 #who-rated-page-area>div {
     grid-gap: 0.25em;
     display: grid;
-    grid-template-columns: repeat(4,1fr auto);
+    grid-template-columns: repeat(auto-fill,minmax(12.5rem,1fr) 1.25rem);
     grid-auto-flow: row;
     justify-items: end;
     max-width: var(--page-content-width);
@@ -2449,7 +2450,10 @@ div.buttons.alignleft {
     align-items: baseline;
 }
 #who-rated-page-area>div span:nth-child(3n-1) {
-    margin-right: 2rem;
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-right: 0;
 }
 
 /*-------------------*/
@@ -2703,13 +2707,6 @@ div.buttons.alignleft {
 
     #page-info, div.page-watch-options {
         text-align: start;
-    }
-
-    #who-rated-page-area>div {
-        grid-template-columns: repeat(2,1fr auto);
-    }
-    #who-rated-page-area>div span:nth-child(3n-1) {
-        margin-right: 1rem;
     }
 
     #revision-list table.page-history tr td:nth-child(5) .printuser.avatarhover a:last-of-type {

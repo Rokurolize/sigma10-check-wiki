@@ -1,0 +1,70 @@
+[[div class="content-panel standalone centered"]]
+[[div class="panel-body"]]
++ Phase 17 差分: Monotypical Theme
+対象の既存ページ: [[[theme:monotypical|theme:monotypical]]]（SCP-JP）
+原語版: https://scp-wiki.wikidot.com/theme:monotypical rev142（改訳時）
+
+**適用方法:** 既存ページの該当行を下記の差分どおりに変更してください。差分はSCP-JPの現行ページに対するものです。
+[[/div]]
+[[/div]]
+
+[[code type="diff"]]
+--- theme:monotypical (before)
++++ theme:monotypical (after)
+@@ -37,6 +37,7 @@
+ **作成年:**  2021
+ **初訳時参照リビジョン:** 135
+ **元記事リンク:** [https://scp-wiki.wikidot.com/theme:monotypical ソース]
++**改訳時参照リビジョン:** 142
+ [[include :scp-jp:credit:end-preview]]
+ 
+ これは[[*user EstrellaYoshte]] による美しさを追求したテーマで、[[*user Woedenaz]]氏に多大なご協力をいただいています。使用するには、以下をあなたの記事にコピーペーストしてください:
+@@ -329,9 +330,9 @@
+ */
+ @import url('https://cdn.scpwiki.com/theme/en/basalt/normalize-min.css');
+ 
+-@import url('https://api.fonts.coollabs.io/css2?family=Urbanist:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+-@import url('https://api.fonts.coollabs.io/css2?family=Ubuntu&display=swap');
+-@import url('https://api.fonts.coollabs.io/css2?family=Fira+Code:wght@400;700&display=swap');
++@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
++@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
++@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+ 
+ /*-------------------*/
+ /*---- NORMALIZE ----*/
+@@ -2438,7 +2439,7 @@
+ #who-rated-page-area>div {
+     grid-gap: 0.25em;
+     display: grid;
+-    grid-template-columns: repeat(4,1fr auto);
++    grid-template-columns: repeat(auto-fill,minmax(12.5rem,1fr) 1.25rem);
+     grid-auto-flow: row;
+     justify-items: end;
+     max-width: var(--page-content-width);
+@@ -2451,7 +2452,10 @@
+     align-items: baseline;
+ }
+ #who-rated-page-area>div span:nth-child(3n-1) {
+-    margin-right: 2rem;
++    display: block;
++    text-align: center;
++    width: 100%;
++    margin-right: 0;
+ }
+ 
+ /*-------------------*/
+@@ -2709,13 +2713,6 @@
+         text-align: start;
+     }
+ 
+-    #who-rated-page-area>div {
+-        grid-template-columns: repeat(2,1fr auto);
+-    }
+-    #who-rated-page-area>div span:nth-child(3n-1) {
+-        margin-right: 1rem;
+-    }
+-
+     #revision-list table.page-history tr td:nth-child(5) .printuser.avatarhover a:last-of-type {
+         display: none;
+     }
+[[/code]]
