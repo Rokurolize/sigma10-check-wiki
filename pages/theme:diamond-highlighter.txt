@@ -1,0 +1,143 @@
+[[iftags +theme]]
+
+[[module CSS]]
+@import url("https://nu-scptheme.github.io/Black-Highlighter/css/min/normalize.min.css");
+@import url("https://nu-scptheme.github.io/Black-Highlighter/css/min/black-highlighter.min.css");
+[[/module]]
+
+[[include :scp-wiki:component:interwiki-style
+| priority=1
+| theme=https://nu-scptheme.github.io/Black-Highlighter/css/min/normalize.min.css
+]]
+
+[[include :scp-wiki:component:interwiki-style
+| priority=2
+| theme=https://nu-scptheme.github.io/Black-Highlighter/css/min/black-highlighter.min.css
+]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
+
+This is the Diamond Highlighter Theme by [[*user tetsusquared]].
+
+This theme extends [[[theme:black-highlighter-theme|Black Highlighter]]] and makes minimal changes. It is primarily intended to standardize the [[[secure-facility-dossier-site-418|Minecraft Division]]] theme between pages[[footnote]] even though only 6468 and Site-418 use it, but there'll be more I PROMISE [[/footnote]].
+
+The header will automatically be translated on the **CN**, **FR**, **JP**, **KO**, **PL**, **VN** and **ZH**[[footnote]]To keep things consistent between CN and ZH, the wording from the CN translation of the Site-418 dossier is used as the standard.[[/footnote]] wikis, as those are the wikis on which at least one Minecraft Division translation exists. If you are from a branch not listed and translate an article from the Minecraft Division, please send me ([[*user tetsusquared]]) a Wikidot PM with a link to the article so I can "officialize" your translation of the theme. In the meantime, you may override the {{header-title}} and {{header-subtitle}} parameters until I get to it.
+
+If you translate this theme, please send me ([[*user tetsusquared]]) a Wikidot PM so I can keep you updated on updates to the theme. Including this page on the EN wiki is preferred so I can roll out changes to all wikis at once.
+
+To use this theme, please put the following at the top of your page:
+
+[[div class="code"]]
+@@[[include :scp-wiki:theme:black-highlighter-theme]]@@
+@@[[include :scp-wiki:theme:diamond-highlighter]]@@
+[[/div]]
+
+The following special features are included:
+
+++ MCDiv Blockquote
+
+[[div class="mcdiv-blockquote"]]
+[[=]]
+[[size 150%]] **Minecraft Division Memo** [[/size]]
+[[/=]]
+There have been sightings of anomalously large creeper-wither hybrids outside [# Site-418-ε]. Containment teams have been dispatched to assess the situation. Please remain calm.
+
+[[>]]
+Rhiannon Leighton, Site-418-ε Management Team
+[[/>]]
+[[/div]]
+
+To use this feature, use the code
+[[div class="code"]]
+@@[[div class="mcdiv-blockquote"]]@@
+@@... your content here ...@@
+@@[[/div]]@@
+[[/div]]
+
+------
+
+[[collapsible show="+ Show theme code" hide="- Hide theme code"]]
+[[code type="css"]]
+/* DIAMOND HIGHLIGHTER THEME
+BHL based theme by tetsusquared 
+feel free to use for all Minecraft Division articles */
+
+:root:lang(en) {
+    --header-title: "Minecraft Division";
+    --header-subtitle: "Systematic Containment with Playability";
+}
+
+:root:lang(cn) {
+    --header-title: "Minecraft部门";
+    --header-subtitle: "有可玩性的系统性收容";
+}
+
+:root:lang(cs) {
+    --header-title: "Minecraft Divize";
+    --header-title: "Systematická zadržení hrou";
+}
+
+:root:lang(fr) {
+    --header-title: "Division Minecraft";
+    --header-subtitle: "Systématicité du Confinement Pratique";
+}
+
+:root:lang(ja) {
+    --header-title: "Minecraft部門";
+    --header-subtitle: "Systematic Containment with Playability";
+}
+
+:root:lang(ko) {
+    --header-title: "마인크래프트과";
+    --header-subtitle: "확립된 격리는 비디오게임과 함께";
+}
+
+:root:lang(pl) {
+    --header-title: "Wydział Minecrafta";
+    --header-subtitle: "Systematyczne Czynności z Pogrywaniem";
+}
+
+:root:lang(vi) {
+    --header-title: "Phân khu Minecraft";
+    --header-subtitle: "Quản thúc Hệ thống các Đối tượng Trò chơi";
+}
+
+:root:lang(zh) {
+    --header-title: "Minecraft部門";
+    --header-subtitle: "有可玩性的系統性收容";
+}
+
+
+:root {
+    /* ===HEADER ELEMENTS=== */
+    --logo-image: url("https://scp-wiki.wikidot.com/local--files/theme:diamond-highlighter/mcdiv_logo.png");
+    --header-title: "Minecraft Division";
+    --header-subtitle: "Systematic Containment with Playability";
+
+    /* ===STANDARD THEME COLORS=== */
+    --pale-accent: 114, 157, 203;
+    --bright-accent: 97, 145, 197;
+    --medium-accent: 56, 100, 148;
+    --dark-accent: 39, 70, 104;
+
+    /* ===HEADER GRADIENT=== */
+    --gradient-header: linear-gradient(to bottom, rgb(53, 173, 30), rgb(40, 160, 20) 10%, rgb(151, 104, 21) 10%, rgb(90, 61, 12));
+}
+
+.mcdiv-blockquote {
+    background: url("https://scp-wiki.wikidot.com/local--files/theme:diamond-highlighter/mcdiv_watermark.png") 50% 50%/10rem no-repeat, linear-gradient(to bottom, rgb(217, 248, 211), rgb(180, 240, 168) 15px, rgb(255, 234, 215) 15px, rgb(234, 214, 200) 170px);
+    padding-top: 20px;
+}
+[[/code]]
+[[/collapsible]]
+[[/iftags]]
+
+[[module css]]
+@import url("https://scp-wiki.wdfiles.com/local--code/theme%3Adiamond-highlighter/1")
+[[/module]]
+[[include :scp-wiki:component:interwiki-style
+| priority=3
+| theme=https://scp-wiki.wdfiles.com/local--code/theme%3Adiamond-highlighter/1
+]]
