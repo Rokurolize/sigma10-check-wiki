@@ -18,7 +18,7 @@
 
 [[include :scp-jp:credit:start-preview]]
 **タイトル:** Inkblot Theme (Waldon Studio Theme)
-**翻訳責任者:** SCP-JP
+**翻訳責任者:** AI
 **翻訳年:** 2026
 **原題:** Inkblot Theme (Waldon Studio Theme)
 **著作権者:** Croquembouche
@@ -112,10 +112,6 @@ Croquembouche著。
 [[/div]]
 [[/div]]
 
-[[>]]
-[[module Rate]]
-[[/>]]
-
 このページには、いくつかの役割があります。
 
 # Inkblotテーマのソース。
@@ -128,7 +124,7 @@ Inkblotテーマは、アンブローズの下位GoI、だと思うのですが�
 
 [[collapsible show="+ クイックコピー&ペースト"]]
 [[code]]
-[[include :scp-wiki:theme:inkblot accent=transparent]]
+[[include :scp-jp:theme:inkblot-jp accent=transparent]]
 
 [[module CSS]]
 :root {
@@ -221,7 +217,7 @@ Sigma-9の[[[component:toggle-sidebar | Toggle Sidebar]]]コンポーネント�
 このテーマをページに追加するには、次のコードをページへコピーしてください。できれば、他のCSSと一緒にページ上部付近へ置くのが理想です。
 
 [[div class="code terminal inksplot"]]
-**##var(--c-keyword)|[[include##** ##var(--c-symbol)|:scp-wiki:theme:inkblot## ##var(--c-builtin)|accent##**##var(--c-keyword)|=##**##var(--c-string)|transparent##**##var(--c-keyword)|]]##**
+**##var(--c-keyword)|[[include##** ##var(--c-symbol)|:scp-jp:theme:inkblot-jp## ##var(--c-builtin)|accent##**##var(--c-keyword)|=##**##var(--c-string)|transparent##**##var(--c-keyword)|]]##**
 
 **##var(--c-keyword)|[[module##** ##var(--c-builtin)|CSS##**##var(--c-keyword)|]]##**
 ##var(--c-symbol)|:root## {
@@ -382,13 +378,14 @@ Inkblotテーマは既定のページタイトルを非表示にするので、�
 
 [[code type="css"]]
 /* Import fonts */
-@import url('https://fonts.bunny.net/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
-@import url('https://fonts.bunny.net/css2?family=Prata&display=swap');
-@import url('https://fonts.bunny.net/css2?family=Montserrat:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 
 /* Set the font size back to normal */
 #page-content { font-size: 1rem; }
-body { font-family: 'Libre Baskerville', serif; }
+body { font-family: 'Libre Baskerville', 'Noto Sans JP', serif; }
 
 /* Hide the page title. I'll make my own damned title */
 #page-title { display: none; }
@@ -420,7 +417,7 @@ body { font-family: 'Libre Baskerville', serif; }
 .inkblot-title {
   flex: 1 1 0;
   font-size: min(4rem, 10vw);
-  font-family: 'Prata', serif;
+  font-family: 'Prata', 'Noto Sans JP', serif;
   display: inline-grid;
   grid-template-areas:
     "one two"
@@ -641,7 +638,7 @@ body { font-family: 'Libre Baskerville', serif; }
 
 /* Replace the header background */
 /* 324px is twice the height of the default header */
-div#container-wrap { background: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Ainkblot-jp/review-header.svg/100% 648px no-repeat; }
+div#container-wrap { background: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Ainkblot-jp/review-header.svg) top left/100% 648px no-repeat; }
 
 #header { background: radial-gradient(circle at left 75px top 90px, var(--inkblot-accent, transparent) 42px, transparent 42.5px); }
 
@@ -655,7 +652,7 @@ div#container-wrap { background: url(https://sigma10-jp-test.wdfiles.com/local--
 /* Style the new text */
 #header h1 a::before, #header h2::before {
   color: #333;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
   text-shadow: none;
 }
 /* Set the new text's content from variable */
@@ -916,13 +913,13 @@ li, p {
 
 #page-content h1, #page-content h2, #page-content h3,
 #page-content h4, #page-content h5, #page-content h6 {
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Libre Baskerville', 'Noto Sans JP', serif;
   color: #333;
   margin: 1em 0 0.5em 0;
   letter-spacing: 0;
 }
 #page-content h1 {
-  font-family: 'Prata', serif; font-size: 3rem; text-align: center;
+  font-family: 'Prata', 'Noto Sans JP', serif; font-size: 3rem; text-align: center;
 }
 #page-content h2 { font-size: 2rem; font-weight: bold; }
 
@@ -979,7 +976,7 @@ hr::before, hr::after {
 
 .licensebox {
   font-size: 0.82rem;
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family: verdana, arial, helvetica, 'Noto Sans JP', sans-serif;
   margin: 1rem 0 -1.5rem;
 }
 

@@ -2,12 +2,18 @@
 @import url(https://scp-jp.github.io/files/theme/flopstyle/style0.css);
 [[/module]]
 
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://scp-jp.github.io/files/theme/flopstyle/style0.css
+]]
+
 [[iftags +テーマ]]
 
 [[include :scp-jp:credit:start-preview]]
 **タイトル:** Flopstyle CSS（SCP-JP）
 **翻訳責任者:** fumeinadebaisu
 **翻訳年:** 2020
+**翻訳について:** fumeinadebaisu による既存の翻訳を基に改変したものです。
 **原題:** Flopstyle: LITE
 **著作権者:** Lt Flops
 **作成年:** 2020
@@ -15,9 +21,6 @@
 **改訳時参照リビジョン:** 510
 **元記事リンク:** [*https://scp-wiki.wikidot.com/theme:flopstyle ソース]
 [[include :scp-jp:credit:end-preview]]
-[[>]]
-[[module Rate]]
-[[/>]]
 
 [[module CSS]]
  .templateInfo{ margin: 1em 0; padding: 0 1em; border: 1px solid hsl(0, 0%, 87%); }
@@ -94,6 +97,7 @@
 
 [[code type="css"]]
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap);
 
 /* --------------------
  * Flopstyle CSS Theme
@@ -118,7 +122,7 @@
      letter-spacing: -.02em;
 }
  #header h1 a{
-     font-family: "Montserrat", "Arial", sans-serif;
+     font-family: "Montserrat", "Noto Sans JP", "Arial", sans-serif;
 }
  #header h2 span,
  #header h2 span::before{

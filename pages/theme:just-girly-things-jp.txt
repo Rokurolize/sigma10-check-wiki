@@ -1,5 +1,8 @@
 [[module CSS]]
-@import url('https://fonts.bunny.net/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+body { font-family: verdana, arial, 'Noto Sans JP', sans-serif; }
 
 /* ---------------------------------
 Just Girly Things Redux
@@ -46,7 +49,7 @@ div#header {
 
 #header h1 a::before {
     content: "Just Girly Things!";
-    font-family: 'Lobster', cursive;
+    font-family: 'Lobster', 'Noto Sans JP', cursive;
     color: hsl(335, 90%, 95%);
 }
 
@@ -58,7 +61,7 @@ div#header {
 #header h2 span::before {
     content: "By Girls, for Girls";
     color: hsl(335, 90%, 70%);
-    font-family: 'Lobster', cursive;
+    font-family: 'Lobster', 'Noto Sans JP', cursive;
     letter-spacing: 2px;
     padding-left: 4em;
 }
@@ -350,10 +353,14 @@ div.blockquote,
 }
 [[/module]]
 
+[[include :scp-jp:component:interwiki-style
+| priority=1
+]]
+
 [[iftags +テーマ]]
 [[include :scp-jp:credit:start-preview]]
 **タイトル:** Just Girly Things Theme（SCP-JP）
-**翻訳責任者:** SCP-JP
+**翻訳責任者:** AI
 **翻訳年:** 2026
 **原題:** Just Girly Things Theme
 **著作権者:** stormbreath

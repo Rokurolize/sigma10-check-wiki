@@ -1,5 +1,6 @@
 [[module CSS]]
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 
 /*
     BLANKSTYLE CSS
@@ -35,7 +36,7 @@ div#header {
 #header h1 a::before, #header h2::before {
     color: #000;
     letter-spacing: 1px;
-    font-family: 'Montserrat', verdana, arial, helvetica, sans-serif !important;
+    font-family: 'Montserrat', 'Noto Sans JP', verdana, arial, helvetica, sans-serif !important;
     text-shadow: none;
 }
 
@@ -110,7 +111,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Montserrat', verdana, arial, helvetica, sans-serif;
+    font-family: 'Montserrat', 'Noto Sans JP', verdana, arial, helvetica, sans-serif;
     color: #000;
     letter-spacing: 1px;
 }
@@ -652,11 +653,17 @@ span, a { word-break: normal !important }
 #interwiki .side-block { border: 1px solid #333; border-radius: 0; box-shadow: none; margin-bottom: 2em; }
 [[/module]]
 
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| css=%23interwiki%20.side-block%7Bfont-family%3A%22Noto%20Sans%20JP%22%2Csans-serif%7D
+]]
+
 [[iftags +テーマ]]
 [[include :scp-jp:credit:start-preview]]
 **タイトル:** BLANKSTYLE CSS（SCP-JP）
 **翻訳責任者:** iti119
 **翻訳年:** 2022
+**翻訳について:** iti119 による既存の翻訳を基に改変したものです。
 **原題:** BLANKSTYLE CSS
 **著作権者:** Placeholder McD、HarryBlank
 **作成年:** 2021
