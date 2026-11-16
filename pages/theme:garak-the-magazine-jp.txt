@@ -1,4 +1,13 @@
 [[module CSS]]
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/fragment%3Au-navstyle-jp-base-css/1");
+[[/module]]
+[[div id="u-side"]]
+[[div]]
+[[include :scp-jp:nav:side]]
+[[/div]]
+[[/div]]
+
+[[module CSS]]
 @import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Agarak-the-magazine-jp/1');
 
 :root {
@@ -51,7 +60,7 @@
 **フォント出典**
 * 原語版は Paperlogy（noonnu.cc/font_page/38）と NanumSquareRound（noonnu.cc/font_page/1456）を使用。日本語版では再配布特例のある Google Fonts の同種フォント（M PLUS 1p、M PLUS Rounded 1c、Noto Sans JP）に置き換えています。
 
-このテーマは、韓国語支部の要注意団体[[[https://scpko.wikidot.com/garak-the-hub|カラクギョルギ（韓国語版ハブ）]]]に関連する作中雑誌「月刊カラククン」を表現するための専用CSSテーマです。このテーマを使用するには、ページ内の任意の場所に次のコードを貼り付けてください。[[footnote]]原語版は韓国語版ウィキの代替サイドバー（[[[https://scpko.wikidot.com/component:u-navstyle|component:u-navstyle]]] と [[[https://scpko.wikidot.com/nav:side|nav:side]]]）をページに含めていますが、これらは韓国語版ウィキにしか存在せず、日本語版・表示確認Wikiにはありません。そのため日本語版では代替サイドバーを含めず、標準のサイドバーを使用します。[[/footnote]]
+このテーマは、韓国語支部の要注意団体[[[https://scpko.wikidot.com/garak-the-hub|カラクギョルギ（韓国語版ハブ）]]]に関連する作中雑誌「月刊カラククン」を表現するための専用CSSテーマです。このテーマを使用するには、ページ内の任意の場所に次のコードを貼り付けてください。[[footnote]]原語版は韓国語版ウィキの代替サイドバー（[[[https://scpko.wikidot.com/component:u-navstyle|component:u-navstyle]]] と [[[https://scpko.wikidot.com/nav:side|nav:side]]]）をページに含めています。日本語版では、ページ冒頭で [[[https://scp-jp.wikidot.com/nav:side|nav:side]]]（scp-jp の代替サイドバー）を #u-side 内に include し、component:u-navstyle に相当する基盤CSSを受け皿ページ [[[fragment:u-navstyle-jp-base-css]]]（KO版CSSを逐語収録した機械ページ）から [[module CSS]] で @import して読み込みます。[[/footnote]]
 
 > @@[[include :scp-jp:theme:garak-the-magazine]]@@
 
@@ -122,7 +131,7 @@
 /* 月刊カラククンテーマ by thd-glasses */
 /* based on Sigma-9 theme */
 /* SCP-JP版: 2026年に日本語版へ移植。作成者: thd-glasses（韓国支部）。翻訳: SCP-JP。 */
-/* 原語版の component:u-navstyle / nav:side 依存の代替サイドバーは日本語版には含まれません。 */
+/* 原語版の代替サイドバーは、ページ冒頭で fragment:u-navstyle-jp-base-css（component:u-navstyle 相当、KO版CSSを逐語収録）を @import し、:scp-jp:nav:side を #u-side に include して読み込みます。 */
 
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500;700;800&family=M+PLUS+Rounded+1c:wght@400;700&display=swap');
 
@@ -921,7 +930,7 @@ div:not(.rate-box-with-credit-button) > .page-rate-widget-box > span {
   display: inline-block;
 }
 
-/* 代替サイドバー（#u-side）用スタイル。日本語版ではマークアップを含めません（韓国語版の u-navstyle コンポーネントに依存するため）。 */
+/* 代替サイドバー（#u-side）用スタイル。ページ冒頭で #u-side マークアップを復元し（:scp-jp:nav:side を内包）、基盤CSSは fragment:u-navstyle-jp-base-css から読み込みます。 */
 #u-side {
   position: absolute;
   width: 16em;
