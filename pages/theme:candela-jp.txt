@@ -1,9 +1,16 @@
 [[module CSS]]
-/* 未移植の基盤テーマ（parallel / lumina）への依存。原語版と同じ参照先を保持している（未翻訳の依存先は書き換えない）。JP への移植を要する項目は MANIFEST.md を参照。 */
-@import url("https://scp-wiki-cn.wikidot.com/fragment:parallel/code/1");
-@import url("https://scp-wiki-cn.wikidot.com/fragment:parallel/code/3");
-@import url('https://scp-wiki.wdfiles.com/local--code/theme%3Alumina/1');
+/* 基盤テーマへの依存。parallel は JP 候補 theme:parallel-jp のチェックWiki配信（bundle /1）を読み込み、その直後の明示的な上書きブロックで CN 原語版 code/1+code/3（base+紅石）シーケンスが最終的に作っていた変数状態を復元する（bundle 単体の最後の素の :root は深層ダイヤモンド配色で、link/header のアクセントが変わるため。詳細は REPORT-GOSIGN2-FIX3-PC.md 参照）。lumina は JP 候補 theme:lumina-jp のチェックWiki配信へ付け替え済み。JP への移植を要する項目は MANIFEST.md を参照。 */
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aparallel-jp/1');
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Alumina-jp/1');
 @import url(https://sigma10-jp-test.wdfiles.com/local--code/theme%3Acandela-jp/1);
+/* CN code/1+code/3（base+紅石）相当の最終状態を復元。bundle の深層ダイヤモンド値（--basalt-darker-element-color:138,188,234 / --header-color-one:32,64,128 / --header-color-two:64,128,254 / --link-color:220,220,224 / --link-visited-color:195,195,199）を原語版どおりに戻す。--basalt-undertone は lumina が 252,248,222 で上書きするため両者で既に同一（上書き不要）。CSS の @import は他の規則より前に置く必要があるため、この上書きは全 @import の後に配置。 */
+:root {
+    --basalt-darker-element-color: 202, 50, 50;
+    --header-color-one: var(--basalt-dark-element-color);
+    --header-color-two: var(--basalt-darker-element-color);
+    --link-color: var(--basalt-bright-element-color);
+    --link-visited-color: var(--basalt-dark-element-color);
+}
 [[/module]]
 
 [[include :scp-jp:component:interwiki-style
@@ -15,7 +22,7 @@
 
 [[include :scp-jp:credit:start-preview]]
 **タイトル:** 標準カンデラ テーマ
-**翻訳責任者:** SCP-JP
+**翻訳責任者:** AI
 **翻訳年:** 2026
 **原題:** 标准烛光 版式
 **著作権者:** Dr Hormress
@@ -29,32 +36,32 @@
 このテーマを適用するには、次の3行をすべて読み込んでください。
 
 [[div class="code"]]
-@@[[include :scp-wiki-cn:theme:parallel redstone=*]]@@
-@@[[include :scp-wiki-cn:theme:lumina]]@@
+@@[[include :scp-jp:theme:parallel redstone=*]]@@
+@@[[include :scp-jp:theme:lumina]]@@
 @@[[include :scp-jp:theme:candela]]@@
 [[/div]]
 
 Lumina Crashの青系スタイルを使うには、次のコードを読み込んでください。
 
 [[div class="code"]]
-@@[[include :scp-wiki-cn:theme:parallel redstone=*]]@@
-@@[[include :scp-wiki-cn:theme:lumina]]@@
+@@[[include :scp-jp:theme:parallel redstone=*]]@@
+@@[[include :scp-jp:theme:lumina]]@@
 @@[[include :scp-jp:theme:candela classic=*]]@@
 [[/div]]
 
 ページ幅を狭くするには、次のコードを読み込んでください。
 
 [[div class="code"]]
-@@[[include :scp-wiki-cn:theme:parallel redstone=*]]@@
-@@[[include :scp-wiki-cn:theme:lumina]]@@
+@@[[include :scp-jp:theme:parallel redstone=*]]@@
+@@[[include :scp-jp:theme:lumina]]@@
 @@[[include :scp-jp:theme:candela narrow=*]]@@
 [[/div]]
 
 青系スタイルと狭いページ幅を同時に使うには、次のコードを読み込んでください。
 
 [[div class="code"]]
-@@[[include :scp-wiki-cn:theme:parallel redstone=*]]@@
-@@[[include :scp-wiki-cn:theme:lumina]]@@
+@@[[include :scp-jp:theme:parallel redstone=*]]@@
+@@[[include :scp-jp:theme:lumina]]@@
 @@[[include :scp-jp:theme:candela classic=* | narrow=*]]@@
 [[/div]]
 
