@@ -32,13 +32,16 @@ contiguous block of || lines with no blank line inside. --check enforces
 this for every generated page.
 """
 import csv
+import json
 import os
 import sys
 
 REPO = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(REPO, "start-themes.tsv")
+PARITY_DATA = os.path.join(REPO, "parity-existing.json")
 PAGES_DIR = os.path.join(REPO, "pages")
 MAX_PAGE_CHARS = 40000
+PARITY_PAGE = "start:wikijump-parity"
 
 WD = "https://sigma10-jp-test.wikidot.com/"
 WJ = "https://codex-wsl-maintenance.tail3a09a5.ts.net:8443/"
@@ -67,7 +70,12 @@ def sample_links(slug):
 
 
 def render_row(r):
-    status = f"既存: {r['exist']} ／ 整備: {r['seibi']} ／ スタッフ: {r['staff']}"
+    # The row status carries porting/migration state only. The existing
+    # article's Wikijump reproduction state (the TSV `exist` column) is
+    # rendered on the parity ledger page instead (render_parity below):
+    # the tables are the primary porting record, the ledger is the
+    # secondary Wikijump verification record, and the two stay separate.
+    status = f"整備: {r['seibi']} ／ スタッフ: {r['staff']}"
     if r["detail_override"]:
         detail = r["detail_override"]
     else:
@@ -113,6 +121,58 @@ def render_page(page, rows):
     return "\n".join(lines) + "\n"
 
 
+def render_parity(rows, parity):
+    """The Wikijump reproduction ledger for the 153 existing articles.
+
+    Kept apart from the theme tables on purpose: the tables document
+    porting and migration state (the primary purpose of this wiki set);
+    whether the still-in-development Wikijump reproduces a page is a
+    secondary verification record and lives only here. Theme-row states
+    come from the TSV `exist` column; the articles without a theme row
+    come from parity-existing.json."""
+    lines = [
+        "[[=]]",
+        "+ Wikijump描画再現の記録",
+        "[[/=]]",
+        "",
+        '[[div class="content-panel standalone centered"]]',
+        '[[div class="panel-body"]]',
+        "[[[start|Sigma-10 表示確認トップ]]] のテーマ表とは目的の異なる、副次的な検証の記録です。"
+        "このWiki群の本来の目的はテーマ移植とSigma-10への移行であり、このページはその作業記録ではありません。"
+        "Wikijumpは開発途中のソフトウェアであり、Wikidotの表示を再現できないページがあるのは想定内です。"
+        "ここでは、SCP-JP本番の既存記事153件について、Wikijump側で読者に見える表示がWikidot側と一致するかどうかを記録します。"
+        "不一致はWikijump側の課題としてここに集約し、テーマ移植や移行の残作業には数えません。",
+        "[[/div]]",
+        "[[/div]]",
+        "",
+        "**測定ビルド eaefd8bf27（一部は f7e6cd103 で再測定）。** 「一致」はWikidotとWikijumpで読者に見えるものが同じであること、「不一致」は括弧内に書いた差があることです。",
+        "",
+        "+ 不一致の分類",
+        "",
+        "色の差（本文・見出しの色）、リテラルの差（マークアップのようなテキストの漏れ）、画像の差（壊れた画像・読み込みの差）、折りたたみの差、タブの差、includeエラーの差です。",
+        "",
+    ]
+    themed = [r for r in rows if r["existing"]]
+    lines += [f"+ テーマ行に対応する既存記事（{len(themed)}件）", "",
+              "||~ テーマ ||~ 既存ページ ||~ 再現状態 ||"]
+    for r in themed:
+        target = r["existing"].replace(":", "-")
+        lines.append(f"|| {r['name']} || [[[existing:{target}|{r['existing']}]]] || {r['exist']} ||")
+    rest = len(parity["match_theme"]) + len(parity["match_other"]) + len(parity["mismatch"])
+    lines += ["", f"+ テーマ行のない既存記事（{rest}件）", ""]
+    nmatch = len(parity["match_theme"]) + len(parity["match_other"])
+    lines += [f"**一致（{nmatch}件）**", ""]
+    lines.append(f"テーマページ（{len(parity['match_theme'])}件）: "
+                 + "、".join(f"[[[existing:{x['target']}|{x['label']}]]]" for x in parity["match_theme"]))
+    lines += [""]
+    lines.append(f"コンポーネント・その他（{len(parity['match_other'])}件）: "
+                 + "、".join(f"[[[existing:{x['target']}|{x['label']}]]]" for x in parity["match_other"]))
+    lines += ["", f"**不一致（{len(parity['mismatch'])}件）**", ""]
+    for x in parity["mismatch"]:
+        lines.append(f"* [[[existing:{x['target']}|{x['label']}]]] — {x['kinds']}")
+    return "\n".join(lines) + "\n"
+
+
 def load_rows():
     with open(DATA, encoding="utf-8") as f:
         rows = list(csv.DictReader(f, delimiter="\t"))
@@ -147,10 +207,12 @@ def main():
             last = sub[-1]["orig_slug"] or "amethyst-v2"
             print(f"* [[[{fullname(page)}|{PAGE_TITLES[page]}]]]（{len(sub)}行、{first} から {last} まで）")
         return 0
+    with open(PARITY_DATA, encoding="utf-8") as f:
+        parity = json.load(f)
+    outputs = [(fullname(page), render_page(page, by_page[page])) for page in PAGE_ORDER]
+    outputs.append((PARITY_PAGE, render_parity(rows, parity)))
     problems = []
-    for page in PAGE_ORDER:
-        text = render_page(page, by_page[page])
-        label = fullname(page)
+    for label, text in outputs:
         if len(text) > MAX_PAGE_CHARS:
             problems.append(f"{label}: {len(text)} chars exceeds {MAX_PAGE_CHARS}")
         check_table_contiguity(text, label, problems)
@@ -162,7 +224,7 @@ def main():
                 problems.append(f"{label}: file missing")
                 continue
             if current != text:
-                problems.append(f"{label}: differs from start-themes.tsv (run build_start.py)")
+                problems.append(f"{label}: differs from its data source (run build_start.py)")
         else:
             with open(path, "w", encoding="utf-8") as f:
                 f.write(text)
@@ -171,7 +233,7 @@ def main():
             print("PROBLEM:", p)
         return 1
     total = sum(len(by_page[p]) for p in PAGE_ORDER)
-    print(f"OK: {total} rows on {len(PAGE_ORDER)} subpages")
+    print(f"OK: {total} rows on {len(PAGE_ORDER)} subpages + parity ledger")
     return 0
 
 

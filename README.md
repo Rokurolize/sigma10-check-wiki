@@ -63,7 +63,7 @@ references. The 287-row theme table lives on seven subpages
 up: the 44 themes posted on real SCP-JP first, then the unposted
 originals by branch (EN, CN, KO), in sample-slug order within a subpage.
 
-The subpages are generated. Their source of truth is `start-themes.tsv`
+The same generator also renders `start:wikijump-parity`, the Wikijump reproduction ledger for the 153 existing articles (kept separate from the theme tables: the tables carry porting/migration state, the ledger is the secondary Wikijump verification record). The subpages are generated. Their source of truth is `start-themes.tsv`
 (one line per row: name, the three status fields, base, reference
 revision, existing page, sample slugs). To change a row, edit the TSV
 and run:

@@ -1,0 +1,69 @@
+[[=]]
++ Wikijump描画再現の記録
+[[/=]]
+
+[[div class="content-panel standalone centered"]]
+[[div class="panel-body"]]
+[[[start|Sigma-10 表示確認トップ]]] のテーマ表とは目的の異なる、副次的な検証の記録です。このWiki群の本来の目的はテーマ移植とSigma-10への移行であり、このページはその作業記録ではありません。Wikijumpは開発途中のソフトウェアであり、Wikidotの表示を再現できないページがあるのは想定内です。ここでは、SCP-JP本番の既存記事153件について、Wikijump側で読者に見える表示がWikidot側と一致するかどうかを記録します。不一致はWikijump側の課題としてここに集約し、テーマ移植や移行の残作業には数えません。
+[[/div]]
+[[/div]]
+
+**測定ビルド eaefd8bf27（一部は f7e6cd103 で再測定）。** 「一致」はWikidotとWikijumpで読者に見えるものが同じであること、「不一致」は括弧内に書いた差があることです。
+
++ 不一致の分類
+
+色の差（本文・見出しの色）、リテラルの差（マークアップのようなテキストの漏れ）、画像の差（壊れた画像・読み込みの差）、折りたたみの差、タブの差、includeエラーの差です。
+
++ テーマ行に対応する既存記事（30件）
+
+||~ テーマ ||~ 既存ページ ||~ 再現状態 ||
+|| Aesthetic Theme || [[[existing:theme-aesthetic-theme|theme:aesthetic-theme]]] || 一致 ||
+|| Basalt Theme || [[[existing:old-theme-basalt|old:theme:basalt]]] || 不一致（折りたたみの差・タブの差） ||
+|| Black Highlighter Theme || [[[existing:theme-black-highlighter-theme|theme:black-highlighter-theme]]] || 一致 ||
+|| BLANKSTYLE CSS || [[[existing:theme-blankstyle|theme:blankstyle]]] || 一致（f7e6cd103 再測定） ||
+|| Classic SCP Foundation Theme || [[[existing:theme-classic|theme:classic]]] || 一致 ||
+|| Cosmonaut Theme || [[[existing:theme-cosmonaut|theme:cosmonaut]]] || 一致 ||
+|| Extra Black Highlighter Theme || [[[existing:theme-extra-black-highlighter-theme|theme:extra-black-highlighter-theme]]] || 一致 ||
+|| Flopstyle CSS || [[[existing:theme-flopstyle|theme:flopstyle]]] || 一致 ||
+|| Foxtrot Theme || [[[existing:theme-foxtrot|theme:foxtrot]]] || 不一致（色の差） ||
+|| HANSARP Theme || [[[existing:theme-hansarp|theme:hansarp]]] || 一致 ||
+|| Isolated Terminal Theme || [[[existing:theme-isolated-terminal|theme:isolated-terminal]]] || 一致 ||
+|| JAKSTYLE || [[[existing:theme-jakstyle|theme:jakstyle]]] || 一致 ||
+|| ミニマリストテーマ（Min Theme） || [[[existing:theme-min-theme|theme:min-theme]]] || 一致 ||
+|| Minimalist BHL Theme || [[[existing:theme-minimalist-bhl|theme:minimalist-bhl]]] || 一致 ||
+|| Monotypical Theme || [[[existing:theme-monotypical|theme:monotypical]]] || 不一致（リテラルの差） ||
+|| Much Cool CSS Theme || [[[existing:theme-much-cool|theme:much-cool]]] || 一致 ||
+|| Night Rush Theme || [[[existing:theme-night-rush-theme|theme:night-rush-theme]]] || 一致 ||
+|| Ouroborous Theme || [[[existing:theme-ouroborous-theme|theme:ouroborous-theme]]] || 一致 ||
+|| Paperstack Theme || [[[existing:theme-paperstack|theme:paperstack]]] || 一致 ||
+|| 'Pataphysics Theme || [[[existing:theme-pataphysics|theme:pataphysics]]] || 不一致（画像の差） ||
+|| Penumbra Theme || [[[existing:theme-penumbra|theme:penumbra]]] || 一致 ||
+|| Quand le soleil se couche || [[[existing:theme-quand-le-soleil-se-couche|theme:quand-le-soleil-se-couche]]] || 一致 ||
+|| REDTAPE Theme || [[[existing:theme-redtape|theme:redtape]]] || 一致 ||
+|| 人事部門テーマ（SCP Human Resources） || [[[existing:theme-scp-human-resources|theme:scp-human-resources]]] || 一致 ||
+|| SCP Offices Theme || [[[existing:theme-scp-offices-theme|theme:scp-offices-theme]]] || 一致 ||
+|| 蒐集院テーマ・改（Shushuin） || [[[existing:theme-shushuin|theme:shushuin]]] || 不一致（タブの差） ||
+|| Simple Yonder || [[[existing:theme-simple-yonder|theme:simple-yonder]]] || 一致 ||
+|| Generic Space Theme || [[[existing:theme-space|theme:space]]] || 一致 ||
+|| Turbo Vision Theme || [[[existing:theme-turbo-vision|theme:turbo-vision]]] || 一致 ||
+|| Y2K Theme || [[[existing:theme-y2k|theme:y2k]]] || 一致 ||
+
++ テーマ行のない既存記事（123件）
+
+**一致（114件）**
+
+テーマページ（90件）: [[[existing:theme-3law|theme:3law]]]、[[[existing:theme-3law-7ow|theme:3law-7ow]]]、[[[existing:theme-81uo|theme:81uo]]]、[[[existing:theme-ad-abyssum|theme:ad-abyssum]]]、[[[existing:theme-ad-astra|theme:ad-astra]]]、[[[existing:theme-aero-glass|theme:aero-glass]]]、[[[existing:theme-aonibiiro-theme|theme:aonibiiro-theme]]]、[[[existing:theme-ar|theme:ar]]]、[[[existing:theme-beyondentropy-theme|theme:beyondentropy-theme]]]、[[[existing:theme-black-highlightyear|theme:black-highlightyear]]]、[[[existing:theme-broken-masquerade|theme:broken-masquerade]]]、[[[existing:theme-calamity|theme:calamity]]]、[[[existing:theme-calibri-logos|theme:calibri-logos]]]、[[[existing:theme-crocker-theme|theme:crocker-theme]]]、[[[existing:theme-cs-theme|theme:cs-theme]]]、[[[existing:theme-cyberpunk|theme:cyberpunk]]]、[[[existing:theme-deception-theme|theme:deception-theme]]]、[[[existing:theme-department-of-tombstone|theme:department-of-tombstone]]]、[[[existing:theme-department-of-traces|theme:department-of-traces]]]、[[[existing:theme-deus-ex-machina|theme:deus-ex-machina]]]、[[[existing:theme-dialogue-department|theme:dialogue-department]]]、[[[existing:theme-dira-theme|theme:dira-theme]]]、[[[existing:theme-disrememberment-theme|theme:disrememberment-theme]]]、[[[existing:theme-dmam|theme:dmam]]]、[[[existing:theme-dustjacket|theme:dustjacket]]]、[[[existing:theme-dustjacket-sigma|theme:dustjacket-sigma]]]、[[[existing:theme-elma|theme:elma]]]、[[[existing:theme-expose|theme:expose]]]、[[[existing:theme-foundless|theme:foundless]]]、[[[existing:theme-fusouki-theme|theme:fusouki-theme]]]、[[[existing:theme-goc|theme:goc]]]、[[[existing:theme-horizon-initiative-theme|theme:horizon-initiative-theme]]]、[[[existing:theme-hytoth|theme:hytoth]]]、[[[existing:theme-int-bhl|theme:int-bhl]]]、[[[existing:theme-joicl-catalog-theme|theme:joicl-catalog-theme]]]、[[[existing:theme-kamikase|theme:kamikase]]]、[[[existing:theme-kamiyotugi|theme:kamiyotugi]]]、[[[existing:theme-kyouikaireki|theme:kyouikaireki]]]、[[[existing:theme-linkage|theme:linkage]]]、[[[existing:theme-logos|theme:logos]]]、[[[existing:theme-magnus-web-format|theme:magnus-web-format]]]、[[[existing:theme-manhattan-crisis|theme:manhattan-crisis]]]、[[[existing:theme-mcd|theme:mcd]]]、[[[existing:theme-mcd-gray|theme:mcd-gray]]]、[[[existing:theme-memoria|theme:memoria]]]、[[[existing:theme-midnight-rush|theme:midnight-rush]]]、[[[existing:theme-minimal|theme:minimal]]]、[[[existing:theme-mujin-getsudo|theme:mujin-getsudo]]]、[[[existing:theme-new-age|theme:new-age]]]、[[[existing:theme-newspaper|theme:newspaper]]]、[[[existing:theme-newtouhei|theme:newtouhei]]]、[[[existing:theme-pacom|theme:pacom]]]、[[[existing:theme-penumbra-bhl|theme:penumbra-bhl]]]、[[[existing:theme-pet|theme:pet]]]、[[[existing:theme-plugsoft-theme|theme:plugsoft-theme]]]、[[[existing:theme-plvs-vltra|theme:plvs-vltra]]]、[[[existing:theme-poor-foundation|theme:poor-foundation]]]、[[[existing:theme-present-malice|theme:present-malice]]]、[[[existing:theme-prom-labs-deepsea|theme:prom-labs-deepsea]]]、[[[existing:theme-revised-ijamea-theme|theme:revised-ijamea-theme]]]、[[[existing:theme-russian-art-hub|theme:russian-art-hub]]]、[[[existing:theme-scp-archive|theme:scp-archive]]]、[[[existing:theme-scp-archive-sigma|theme:scp-archive-sigma]]]、[[[existing:theme-scp-jp-10th-anniv|theme:scp-jp-10th-anniv]]]、[[[existing:theme-scp-trans-pride|theme:scp-trans-pride]]]、[[[existing:theme-shushusoin|theme:shushusoin]]]、[[[existing:theme-simple-black-theme|theme:simple-black-theme]]]、[[[existing:theme-sinano|theme:sinano]]]、[[[existing:theme-sotm|theme:sotm]]]、[[[existing:theme-spc|theme:spc]]]、[[[existing:theme-sushi-academia|theme:sushi-academia]]]、[[[existing:theme-swirling-ashes|theme:swirling-ashes]]]、[[[existing:theme-taisho150|theme:taisho150]]]、[[[existing:theme-technoblast|theme:technoblast]]]、[[[existing:theme-thanatomania|theme:thanatomania]]]、[[[existing:theme-the-flowing-night-sky|theme:the-flowing-night-sky]]]、[[[existing:theme-the-foundation-theme|theme:the-foundation-theme]]]、[[[existing:theme-the-greatest-alley|theme:the-greatest-alley]]]、[[[existing:theme-the-way-out|theme:the-way-out]]]、[[[existing:theme-touheisha|theme:touheisha]]]、[[[existing:theme-toyoho-web|theme:toyoho-web]]]、[[[existing:theme-unforgettable|theme:unforgettable]]]、[[[existing:theme-valravn|theme:valravn]]]、[[[existing:theme-wanderers|theme:wanderers]]]、[[[existing:theme-war-on-all-fronts-bhl|theme:war-on-all-fronts-bhl]]]、[[[existing:theme-war-on-all-fronts-sigma|theme:war-on-all-fronts-sigma]]]、[[[existing:theme-wilsons|theme:wilsons]]]、[[[existing:theme-word-processor|theme:word-processor]]]、[[[existing:theme-zattou|theme:zattou]]]、[[[existing:theme-placestyle|theme:placestyle]]]
+
+コンポーネント・その他（24件）: [[[existing:component-abyssal-light-theme|component:abyssal-light-theme]]]、[[[existing:component-af2017theme|component:af2017theme]]]、[[[existing:component-af2019theme|component:af2019theme]]]、[[[existing:component-af2020theme|component:af2020theme]]]、[[[existing:component-af2021theme|component:af2021theme]]]、[[[existing:component-af2021theme-source|component:af2021theme-source]]]、[[[existing:component-af2022theme|component:af2022theme]]]、[[[existing:component-af2023theme|component:af2023theme]]]、[[[existing:component-black-highlighter-theme-dev|component:black-highlighter-theme-dev]]]、[[[existing:component-cc-theme|component:cc-theme]]]、[[[existing:component-darkbodytheme|component:darkbodytheme]]]、[[[existing:component-i57theme|component:i57theme]]]、[[[existing:component-oem|component:oem]]]、[[[existing:component-theme|component:theme]]]、[[[existing:component-theme-saint-patrick|component:theme-saint-patrick]]]、[[[existing:component-thewayitendstheme|component:thewayitendstheme]]]、[[[existing:old-component-ijamea-theme|old:component:ijamea-theme]]]、[[[existing:old-component-mcf-theme|old:component:mcf-theme]]]、[[[existing:old-component-newscptheme|old:component:newscptheme]]]、[[[existing:old-component-resurrection-theme|old:component:resurrection-theme]]]、[[[existing:old-component-spc-theme|old:component:spc-theme]]]、[[[existing:old-component-spc-theme-2|old:component:spc-theme-2]]]、[[[existing:component-af2026theme|component:af2026theme]]]、[[[existing:component-ny21|component:ny21]]]
+
+**不一致（9件）**
+
+* [[[existing:component-af2018theme|component:af2018theme]]] — 画像の差
+* [[[existing:component-af2024theme|component:af2024theme]]] — 色の差
+* [[[existing:theme-creepypasta|theme:creepypasta]]] — 画像の差
+* [[[existing:theme-darkcode|theme:darkcode]]] — リテラルの差
+* [[[existing:theme-ijamea-bhl|theme:ijamea-bhl]]] — リテラルの差
+* [[[existing:theme-nebulae|theme:nebulae]]] — リテラルの差
+* [[[existing:theme-neo-linkage|theme:neo-linkage]]] — 色の差
+* [[[existing:theme-teito-keizai|theme:teito-keizai]]] — includeエラーの差・画像の差・色の差
+* [[[existing:theme-yamisushi|theme:yamisushi]]] — 画像の差
