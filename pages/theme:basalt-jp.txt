@@ -73,6 +73,7 @@
 **タイトル:** Basalt Theme
 **翻訳責任者:** iti119
 **翻訳年:** 2022
+**翻訳について:** iti119 による既存の翻訳を基に改変したものです。
 **原題:** Basalt Theme
 **著作権者:** Liryn、Placeholder McD
 **作成年:** 2021
@@ -108,7 +109,16 @@
 @import url('https://cdn.jsdelivr.net/gh/Rokurolize/Basalt@gh-pages/normalize-min.css');
 @import url('https://cdn.jsdelivr.net/gh/Rokurolize/Basalt@gh-pages/basalt-bedrock-min.css');
 
-@import url('https://fonts.bunny.net/css2?family=Sofia+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+/* JP 字形のフォールバック: Sofia Sans には日本語グリフが無いため、読み込んだ Noto Sans JP を各フォントスタックのフォールバックとして指定する。 */
+:root:lang(ja) {
+    --UI-font-fallback: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', Meiryo, sans-serif;
+    --header-font-fallback: var(--UI-font-fallback);
+    --body-font-fallback: var(--UI-font-fallback);
+    --mono-font-fallback: 'Noto Sans JP', 'Noto Sans Mono CJK JP', monospace;
+}
 
 :root {
 
@@ -418,43 +428,43 @@ div[class$="_memo"]::before {
 
 div.raisa_memo {
     --memo-heading: "NOTICE FROM THE RECORDS AND INFORMATION SECURITY ADMINISTRATION";
-    --memo-logo: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abasalt-jp/RAISA_LIGHTLOGO.png;
+    --memo-logo: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abasalt-jp/RAISA_LIGHTLOGO.png);
     --memo-color: 255, 243, 173;
 }
 
 div.classification_memo {
     --memo-heading: "CLASSIFICATION COMMITTEE MEMORANDUM";
-    --memo-logo: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abasalt-jp/CLASSIFICATION_LIGHTLOGO.png;
+    --memo-logo: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abasalt-jp/CLASSIFICATION_LIGHTLOGO.png);
     --memo-color: 237, 245, 243;
 }
 
 div.ettra_memo {
     --memo-heading: "NOTICE FROM THE EMERGENT THREAT TACTICAL RESPONSE AUTHORITY";
-    --memo-logo: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abasalt-jp/ETTRA_LIGHTLOGO.png;
+    --memo-logo: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abasalt-jp/ETTRA_LIGHTLOGO.png);
     --memo-color: 245, 215, 215;
 }
 
 div.ethics_memo {
     --memo-heading: "ETHICS COMMITTEE MEMORANDUM";
-    --memo-logo: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abasalt-jp/ETHICS_LIGHTLOGO.png;
+    --memo-logo: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abasalt-jp/ETHICS_LIGHTLOGO.png);
     --memo-color: 255, 219, 196;
 }
 
 div.temporal_memo {
     --memo-heading: "TEMPORAL ANOMALIES DEPARTMENT";
-    --memo-logo: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abasalt-jp/DELTA_T_LIGHTLOGO.png;
+    --memo-logo: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abasalt-jp/DELTA_T_LIGHTLOGO.png);
     --memo-color: 255, 255, 255;
 }
 
 div.overwatch_memo {
     --memo-heading: "OVERWATCH COMMAND";
-    --memo-logo: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abasalt-jp/O5_LIGHTLOGO.png;
+    --memo-logo: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abasalt-jp/O5_LIGHTLOGO.png);
     --memo-color: 227, 227, 227;
 }
 
 div.miscomm_memo {
     --memo-heading: "NOTICE FROM THE DEPARTMENT OF MISCOMMUNICATIONS";
-    --memo-logo: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abasalt-jp/MISCOMM_LIGHTLOGO.png;
+    --memo-logo: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abasalt-jp/MISCOMM_LIGHTLOGO.png);
     --memo-color: 238, 237, 250;
 }
 
@@ -1143,7 +1153,7 @@ sup {
     /*---- (DARK MODE) -----*/
     /*----------------------*/
 
-    --logo: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abasalt-jp/basalt_scp_logo-for_darkmode.svg;
+    --logo: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abasalt-jp/basalt_scp_logo-for_darkmode.svg);
 
     --basalt-overtone: 180, 180, 181;
     --basalt-UI-dark-palette: 55, 55, 56;
@@ -1284,32 +1294,32 @@ div[class$="_memo"]::before {
 }
 
 div.raisa_memo {
-    --memo-logo: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abasalt-jp/RAISA_DARKLOGO.png;
+    --memo-logo: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abasalt-jp/RAISA_DARKLOGO.png);
 }
 
 div.classification_memo {
-    --memo-logo: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abasalt-jp/CLASSIFICATION_DARKLOGO.png;
+    --memo-logo: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abasalt-jp/CLASSIFICATION_DARKLOGO.png);
 }
 
 div.ettra_memo {
-    --memo-logo: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abasalt-jp/ETTRA_DARKLOGO.png;
+    --memo-logo: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abasalt-jp/ETTRA_DARKLOGO.png);
 }
 
 div.ethics_memo {
-    --memo-logo: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abasalt-jp/ETHICS_DARKLOGO.png;
+    --memo-logo: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abasalt-jp/ETHICS_DARKLOGO.png);
 }
 
 div.temporal_memo {
-    --memo-logo: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abasalt-jp/DELTA_T_DARKLOGO.png;
+    --memo-logo: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abasalt-jp/DELTA_T_DARKLOGO.png);
     --memo-color: 195, 195, 200;
 }
 
 div.overwatch_memo {
-    --memo-logo: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abasalt-jp/O5_DARKLOGO.png;
+    --memo-logo: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abasalt-jp/O5_DARKLOGO.png);
 }
 
 div.miscomm_memo {
-    --memo-logo: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abasalt-jp/MISCOMM_DARKLOGO.png;
+    --memo-logo: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abasalt-jp/MISCOMM_DARKLOGO.png);
 }
 
 :is(.table1, .table2, .table3, .table4, .table5, .table6) {
@@ -1408,10 +1418,6 @@ div.miscomm_memo {
 
 [[/module]]
 
-[[=]]
-[[module Rate]]
-[[/=]]
-
 [[div class="noclick"]]
 @@ @@
 [[=]]
@@ -1425,7 +1431,7 @@ div.miscomm_memo {
 
 [[=]]
 [[size 120%]]**任意のページで:**[[/size]]
-[[size 160%]]**{{@@[[include theme:basalt]]@@}}**[[/size]]
+[[size 160%]]**{{@@[[include theme:basalt-jp]]@@}}**[[/size]]
 [[/=]]
 
 [[div style="margin-top: 8rem;"]]
@@ -1443,9 +1449,9 @@ div.miscomm_memo {
 Basaltの各要素を変更するには、@@[[include]]@@モジュールに**テーマ設定**を追加します。
 @@ @@
 
-**{{@@[[include theme:basalt @@##green|themesetting##@@]]@@}}**
+**{{@@[[include theme:basalt-jp @@##green|themesetting##@@]]@@}}**
 
-**{{@@[[include theme:basalt @@##green|themesetting##|##purple|another-テーマsetting##@@]]@@}}**
+**{{@@[[include theme:basalt-jp @@##green|themesetting##|##purple|another-themesetting##@@]]@@}}**
 
 @@ @@
 
@@ -1821,3 +1827,120 @@ div.heritage-rating-module ~ div.creditButton > a:is(:hover, :focus)::before {
     transform: translateY(-1px);
 }
 [[/module]]
+
+[[div id="normalize" style="display: none;"]]
+[[code type="css"]]
+/*-------------------*/
+/*---- NORMALIZE ----*/
+/*-------------------*/
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+[[/code]]
+[[/div]]
