@@ -383,8 +383,7 @@ Foxtrotは、[[[theme:blankstyle |Blankstyle]]]や[[[theme:penumbra|Penumbra]]]�
 * **{{@@--darkmode-gradient-top@@}}** @@ @@ -- @@ @@ ダークモード使用時のページトップの背景グラデーションの開始色。
  * デフォルト値 (ダークモード): @@ @@ {{@@var(--dark-bg-1)@@}}
 
-* **{{@@--darkmode-gradient-bottom@@}}** @@ @@ -- @@ @@ The color of the bottom (or main body) of the page background gradient in dark mode.
-* ダークモード使用時のページの背景グラデーションの終了色 (ページのメイン部分の背景色)。
+* **{{@@--darkmode-gradient-bottom@@}}** @@ @@ -- @@ @@ ダークモード使用時のページの背景グラデーションの終了色 (ページのメイン部分の背景色)。
  * デフォルト値　(ダークモード): @@ @@ {{@@var(--dark-bg-2)@@}}
 
 * **{{@@--dark-bg-1@@}}** @@ @@ -- @@ @@ ダークモード使用時の全要素に適用される2種類の背景色の1つ。
@@ -407,13 +406,13 @@ Foxtrotは、[[[theme:blankstyle |Blankstyle]]]や[[[theme:penumbra|Penumbra]]]�
 **書体設定**
 
 * **{{@@--head-font@@}}** @@ @@ -- @@ @@ ヘッダーと見出しに適用されるフォント。
- * デフォルト値: @@ @@ {{Lexend}} / {{M PLUS 1p}} (日本語)
+ * デフォルト値: @@ @@ {{Sans Normalcy}} / {{M PLUS 1p}} (日本語)
 
 * **{{@@--page-font@@}}** @@ @@ -- @@ @@ ページコンテンツに適用されるフォント。
  * デフォルト値: @@ @@ {{Inter}} / {{游ゴシック体}} (日本語)
 
 * **{{@@--ui-font@@}}** @@ @@ -- @@ @@ ページコンテンツ以外のインターフェース要素に適用されるフォント。
- * デフォルト値: @@ @@ {{Sofia Sans}} / {{Noto Sans JP}} (日本語)
+ * デフォルト値: @@ @@ {{IBM Plex Sans}} / {{Noto Sans JP}} (日本語)
 
 * **{{@@--mono-font@@}}** @@ @@ -- @@ @@ ページソースの閲覧・編集時のボックスに適用されるフォント。
  * デフォルト値: @@ @@ {{JetBrains Mono}}
@@ -422,7 +421,7 @@ Foxtrotは、[[[theme:blankstyle |Blankstyle]]]や[[[theme:penumbra|Penumbra]]]�
  * デフォルト値: @@ @@ {{0.9rem}}
 
 * **{{@@--page-font-size@@}}** @@ @@ -- @@ @@ ページコンテンツの文字サイズ。
- * デフォルト値: @@ @@ {{0.84rem}}
+ * デフォルト値: @@ @@ {{1rem}}
 
 [[/div]]
 [[/<]]
@@ -545,7 +544,6 @@ Foxtrotは、[[[theme:blankstyle |Blankstyle]]]や[[[theme:penumbra|Penumbra]]]�
 
 = @@ @@
 
-* Collapsibles, heavily styled in this theme, can be reverted back their original look if wrapped inside a div with the **{{default-col}}** class.
 * テーマによって装飾された折り畳みリンクは、**{{default-col}}**クラスのdivタグで囲むことで元の外見に戻すことができます。
 
 [[div style="display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap; text-align: center;"]]
@@ -629,7 +627,9 @@ Foxtrotは、[[[theme:blankstyle |Blankstyle]]]や[[[theme:penumbra|Penumbra]]]�
 
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-@import url('https://rsms.me/inter/inter.css');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Figtree:wght@800;900&display=swap');
 
