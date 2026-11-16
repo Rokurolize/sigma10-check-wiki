@@ -61,10 +61,14 @@ directory:
 
 Where a candidate's operative CSS lives partly outside the repo text,
 the cell value is UNDECIDABLE-FROM-REPO, and it is mandatory, not
-optional. This applies to 80 of 287 candidates (28 percent, axis A4
-of the 2026-11-17 repository review: INHERIT-EXT bases and candidates
-whose operative CSS sits in attached files outside the repo), and to
-named watch-list rows (KB-11: black-serpent, internal-affairs). A
+optional. On the credit axis (axis A4 of the 2026-11-17 repository review, as
+corrected by SWEEP-A2) this applies to 47 of 287 candidates: the 45
+INHERIT-EXT candidates plus blackinblack and skiesmadestrange. The
+v1 figure of 80 of 287 (28 percent) is SUPERSEDED by 47; other axes
+count differently by definition (SWEEP-B's all-mechanism axis gives
+106 of 287), and each sweep must state its axis. Named watch-list
+rows (KB-11: black-serpent, internal-affairs, both INHERIT-EXT) are
+undecidable on the credit axis. A
 blank cell or a PASS in such a cell is a protocol violation: it
 converts "the repo cannot tell" into a false clearance. An undecidable
 cell is cleared only by evidence from outside the repo (the published
@@ -83,6 +87,19 @@ produced two false instance sets this way and retracted both. The same
 rule applies to selector arithmetic in inline-base pairs, where
 candidate-only selectors measure base inlining, not supplements
 (A13-9).
+
+### Tolerant channel parsing (binding, beside the two-channel rule)
+
+The two channels appear in more forms than the canonical spellings:
+`[[module css]]`, `[[code type="CSS"]]`, and attributed forms such as
+`[[module CSS show="true"]]` all deliver CSS. Every recipe must match
+channel forms case-insensitively and tolerantly of attributes.
+Evidence: SWEEP-A2 (2026-11-17) showed a case-sensitive,
+attribute-less pass misclassifying 28 themes on the KB-11 axis (OWN
+135 instead of 160), and the last 3 divergences all traced to
+`[[module CSS show="true"]]` blocks. A recipe run with strict
+spellings is a recipe-version defect, recorded in
+patterns/NEGATIVE-LEDGER.md, and its absence claims are void.
 
 ## Relation to AGENTS.md section 9
 
@@ -105,3 +122,49 @@ cited in the new file; numbering continues from the highest existing
 KB number. A variant of an existing mechanism is merged into that
 pattern as a named instance set, with the merge decision stated in the
 file, rather than minted as a near-duplicate pattern.
+
+## Brief consumption: patterns by ID plus commit hash
+
+Lanes consume patterns by ID plus the patterns/ commit hash, reading
+the files in the repository at that commit. Pattern bodies are never
+copied into briefs: a copied body strips provenance, ages silently,
+and cannot be corrected by a later amendment. A brief names the
+pattern IDs in scope and the commit; the lane reads the files.
+Proposed pattern changes go in the lane's report, never as brief-local
+edits (the inherited-projection rule).
+
+## Support counting
+
+Each pattern header carries `Basis:` (a closed enum: measured-render,
+static-diff, live-probe, owner-inspection, lane-report) and
+`Support:` (the count of independent evidence bases). Distinct bases
+are distinct supports; one basis cited twice is one support. A defect
+arriving via AGENTS.md section 9, a pattern file, and a sweep hit
+collapses to ONE support line under its dedupe key, because all three
+cite the same underlying evidence; section 9-derived patterns are the
+likeliest double-count source. Support may only grow from new evidence
+rows, never from re-running the same sweep.
+
+## Negative ledgers
+
+patterns/NEGATIVE-LEDGER.md records unfiled observations and recipe
+misses: observations that matched no pattern and founded no pattern
+(with the reason), and cells a recipe was expected to decide but could
+not (beyond the known UNDECIDABLE-FROM-REPO set). Each entry carries
+the recipe version (pattern ID plus the commit or sweep that ran it)
+and the miss kind, because a miss can mean the recipe was wrong rather
+than that nothing was found (A13's two retracted single-channel sets
+are the standing example). The negative ledger is the evidence-backed
+agenda for new patterns and recipe repairs.
+
+## Sweep outcome card (required)
+
+Each sweep ends with a fixed outcome card, stored at
+patterns/sweeps/<date>-<name>.md, with exactly these fields: cells
+decided / hit / undecidable / stalled; patterns proposed / merged /
+retired; and the false charges prevented by the not-a-defect classes
+(C and E, counted per pattern). A sweep without its outcome card is
+not complete. The card cites its source reports; where the full
+reports live in the campaign record rather than the repo, the card
+says so.
+
