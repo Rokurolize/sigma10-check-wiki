@@ -50,6 +50,31 @@ the composition.
   exhibits in forms both engines render as intended, and re-check the
   rendered pages (not only the sources) after any body edit.
 
+## The /start index is split, and its theme table is generated
+
+`pages/start.txt` is a hub (about 13,000 characters): the introduction,
+how to read the tables, the table of contents, the existing articles
+without a theme row, the site-operations wikis and the comparison
+references. The 287-row theme table lives on seven subpages
+(`start:themes-stage1`, `start:themes-en-1` to `start:themes-en-3`,
+`start:themes-cn-1` to `start:themes-cn-2`, `start:themes-ko`; about
+21,000 to 26,000 characters each), grouped the way a reader looks a theme
+up: the 44 themes posted on real SCP-JP first, then the unposted
+originals by branch (EN, CN, KO), in sample-slug order within a subpage.
+
+The subpages are generated. Their source of truth is `start-themes.tsv`
+(one line per row: name, the three status fields, base, reference
+revision, existing page, sample slugs). To change a row, edit the TSV
+and run:
+
+    python3 build_start.py
+
+then commit the TSV, the regenerated subpages and any hub edit together.
+`python3 build_start.py --check` fails if a subpage differs from the
+TSV, if a table is not one contiguous block of `||` lines (a blank line
+inside a Wikidot table splits it), or if a subpage exceeds 40,000
+characters. Do not edit the `start:themes-*` files by hand.
+
 ## Scope notes
 
 - Pages mirrored from other wikis (the `theme:` copies of SCP-Wiki / SCP-JP /
