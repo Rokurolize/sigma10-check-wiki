@@ -13,6 +13,13 @@
 [[module css]]
 @import url("https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css");
 @import url("https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+/* JP 字形のフォールバック: Raleway / Poppins / Recursive は日本語グリフを持たないため、Noto Sans JP をフォールバックとして読み込む。 */
+:root {
+    --body-font: 'Raleway', 'Noto Sans JP', 'BIZ UDPGothic', 'M Plus 1p', sans-serif;
+    --header-font: 'Poppins', 'Noto Sans JP', 'M Plus 1p', sans-serif;
+    --mono-font: 'Recursive', 'Noto Sans JP', monospace;
+}
 #page-title, #breadcrumbs {
     text-align: center !important;
 }
@@ -63,7 +70,6 @@ div.wikisys--template-dialog-footer > a {
 | theme=https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css
 ]]
 [[=]]
-[[module Rate]]
 + これは何?
 ええと、これはBHL用のダークテーマです。
 //もしあなたがお望みなら。//
