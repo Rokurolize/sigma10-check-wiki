@@ -1,13 +1,19 @@
 [[module css]]
-@import url('https://cdn.scpwiki.com/theme/en/basalt/normalize-min.css');
-@import url('https://cdn.scpwiki.com/theme/en/basalt/basalt-bedrock-min.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Abasalt-jp/1');
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Abasalt-jp/1');
 [[/module]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aadmo-jp/1
+]]
 
 [[iftags +テーマ]]
 
 [[include :scp-jp:credit:start-preview]]
 **タイトル:** ADMONITIONテーマ
-**翻訳責任者:** SCP-JP
+**翻訳責任者:** AI
 **翻訳年:** 2026
 **原題:** ADMONITION Theme
 **著作権者:** Liryn
@@ -20,7 +26,7 @@ ADMONITION向けのテーマです。警告色と専用レイアウトを持ち�
 
 **使い方:** @@[[include theme:admo-jp]]@@
 
-**基盤:** Basalt — cdn.scpwiki.com の normalize-min.css / basalt-bedrock-min.css をこのページ冒頭の module CSS で @import します（原語版のEN-CDN基盤URLを逐語、原語版 theme:basalt 相当）
+**基盤:** Basalt — このページ冒頭の module CSS で JP 版 base（theme%3Abasalt-jp/1）を @import します（Sigma-10 JP 版 base 候補を使用）
 
 [[module CSS]]
 /* ADMONITION Theme           */
@@ -39,14 +45,14 @@ ADMONITION向けのテーマです。警告色と専用レイアウトを持ち�
     /*---- BEDROCK VARS ----*/
     /*----------------------*/
 
-    --logo: url(https://scp-wiki.wikidot.com/local--files/theme:admo/scp-logo_tactical_SCPGAMES-TREYBISHOP-gray.png);
+    --logo: url(https://scp-wiki.wikidot.com/local--files/theme%3Aadmo/scp-logo_tactical_SCPGAMES-TREYBISHOP-gray.png);
 
     --header-title: 'ADMONITION';
 
     --base-header-height: calc((var(--title-size) + var(--subtitle-size))*1.325);
     --title-size: 1.7rem;
 
-    --header-font-primary: 'Poppins';
+    --header-font-primary: 'Poppins', 'Noto Sans JP';
     --UI-font-primary: 'Spline Sans';
 
     --basalt-overtone: 100, 100, 100;
@@ -450,7 +456,7 @@ hr {
 
 :root {
 
-    --logo: url('http://scptestwiki.wikidot.com/local--files/sigma:basalt/basalt_scp_logo-for_lightmode.svg');
+    --logo: url('http://scptestwiki.wikidot.com/local--files/sigma%3Abasalt/basalt_scp_logo-for_lightmode.svg');
 
     --basalt-overtone: 73, 73, 73;
     --basalt-light-text-color: var(--admo-color-dark);
@@ -582,31 +588,31 @@ div[class$="_memo"]::before {
 }
 
 div.raisa_memo {
-    --memo-logo: url(https://scp-wiki.wikidot.com/local--files/theme:basalt/RAISA_LIGHTLOGO.png);
+    --memo-logo: url(https://scp-wiki.wikidot.com/local--files/theme%3Abasalt/RAISA_LIGHTLOGO.png);
 }
 
 div.classification_memo {
-    --memo-logo: url(https://scp-wiki.wikidot.com/local--files/theme:basalt/CLASSIFICATION_LIGHTLOGO.png);
+    --memo-logo: url(https://scp-wiki.wikidot.com/local--files/theme%3Abasalt/CLASSIFICATION_LIGHTLOGO.png);
 }
 
 div.ettra_memo {
-    --memo-logo: url(https://scp-wiki.wikidot.com/local--files/theme:basalt/ETTRA_LIGHTLOGO.png);
+    --memo-logo: url(https://scp-wiki.wikidot.com/local--files/theme%3Abasalt/ETTRA_LIGHTLOGO.png);
 }
 
 div.ethics_memo {
-    --memo-logo: url(https://scp-wiki.wikidot.com/local--files/theme:basalt/ETHICS_LIGHTLOGO.png);
+    --memo-logo: url(https://scp-wiki.wikidot.com/local--files/theme%3Abasalt/ETHICS_LIGHTLOGO.png);
 }
 
 div.temporal_memo {
-    --memo-logo: url(https://scp-wiki.wikidot.com/local--files/theme:basalt/DELTA_T_LIGHTLOGO.png);
+    --memo-logo: url(https://scp-wiki.wikidot.com/local--files/theme%3Abasalt/DELTA_T_LIGHTLOGO.png);
 }
 
 div.overwatch_memo {
-    --memo-logo: url(https://scp-wiki.wikidot.com/local--files/theme:basalt/O5_LIGHTLOGO.png);
+    --memo-logo: url(https://scp-wiki.wikidot.com/local--files/theme%3Abasalt/O5_LIGHTLOGO.png);
 }
 
 div.miscomm_memo {
-    --memo-logo: url(https://scp-wiki.wikidot.com/local--files/theme:basalt/MISCOMM_LIGHTLOGO.png);
+    --memo-logo: url(https://scp-wiki.wikidot.com/local--files/theme%3Abasalt/MISCOMM_LIGHTLOGO.png);
 }
 [[/module]]
 
