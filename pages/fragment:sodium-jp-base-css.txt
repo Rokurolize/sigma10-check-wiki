@@ -1,0 +1,1636 @@
+[!-- Sodium 基盤（JP版） — 機械用ページ。このページのコードブロックを local--code/fragment%3Asodium-jp-base-css/1 としてアップロードし、theme:sodium-jp からモジュール CSS の @import で読み込むためのものです。
+内容は原語版 Sodium CSS（https://3nkv.github.io/Sodium/sodium.min.css の内容）に、日本語向けの調整（Noto Serif SC → Noto Serif JP への置換、CN のヘッダー文言 → JP のヘッダー文言、幼圆 → Yu Gothic、scp-wiki-cn の画像 URL → 候補ページ添付（sigma10-jp-test.wdfiles.com/local--files/theme%3Asodium-jp/…）、font-weight: 700 → bold、#f0f0f0 等の略記ゆれ、セレクターの並び替えなど）を施したものです。
+theme:sodium-pentasulfide-jp は theme:sodium-jp を include する文書化された二段 include チェーンでこの基盤を受け取ります。--]
+
+[[code type="css"]]
+/*
+    Sodium Theme
+    [2026 Wikidot Theme]
+    By Ankv
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+:root {
+    /* パレット */
+    --fluorescent-green: #54ff62;
+    --ruby-red: #ff6262;
+    --emerald-green: #62ff62;
+    --granite-grey: #888888;
+    --light-grey: #f0f0f0;
+    --light-grey-fixed: #f0f0f0;
+    --dark-night: #11111b;
+
+    --black-color-01: #000;
+    --white-color-01: #fafbfe;
+    --grey-color-01: #ebebeb;
+    --grey-color-02: #dadada;
+    --dark-grey-color-01: #3b3b3b;
+
+    --code-dark-green: #63b12b;
+    --code-dark-blue: #148bec;
+    --code-dark-red: #ff6262;
+    --code-dark-orange: #f18c2d;
+
+    /* rgba */
+    --sodium-rgba-bg-color: rgba(245, 245, 245, 0.719);
+
+    /* グローバルカラー */
+    --sodium-bg-color: #fafbfe;
+    --sodium-sec-bg-color: #fff;
+    --sodium-link-color: #3c51b4;
+    --sodium-hover-color: #ffffff;
+    --sodium-text-color: #252525;
+    --sodium-border-color: #ebebeb;
+    --sodium-selection-color: var(--fluorescent-green);
+    --sodium-bg-filter: none; /* blur(10px) */
+
+    /* HEADER */
+    --header-height: 300px;
+    --header-icon-filter: contrast(0.5);
+    --header-bg-color: var(--sodium-bg-color);
+    --header-openmenu-bg-color: var(--sodium-bg-color);
+    --header-logo: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Asodium-jp/sodium-logo-light.png');
+    --header-title: "SCP財団";
+    --header-subtitle: "-確保 -収容 -保護";
+    --header-customized-title: none;
+    --header-customized-title-size: 2.5em;
+    --header-customized-title-family: 'Noto Serif JP', 'Times New Roman', serif;
+    --header-customized-title-color: var(--topbar-text-color);
+    --header-customized-title-hover-effects: 3px 3px 5px;
+    --header-bg-image: var(--header-bg-color);
+    --topbar-height: 30px;
+    --topbar-link-color: var(--sodium-text-color);
+    --topbar-text-color: var(--sodium-text-color);
+    --topbar-text-shadow: none;
+    --topbar-hover-color: var(--light-grey);
+    --logo-width: calc(var(--header-height) * 0.75);
+    --login-status-width: 30px;
+    --login-status-right: 5px;
+
+    --mobile-bg-position: 0% 0%;
+
+    /* TABVIEW */
+    --tab-bg-color: var(--sodium-sec-bg-color);
+    --tab--hover-border-color: #838383;
+
+    /* HOVERTIP */
+    --hovertip-bg-color: var(--dark-night);
+    --hovertip-text-color: var(--light-grey-fixed);
+
+    /* darkmode 0.1 */
+    --special-hr-contrast: contrast(0.75);
+
+    /* カスタムカラー対応 */
+    --footer-text-color: var(--sodium-text-color);
+    --footer-link-color: var(--sodium-link-color);
+
+    /* 全体の角丸 */
+    --common-box-radius-mn: 5px;
+    --common-box-radius-mx: 10px;
+
+    /* 全体のシャドウ */
+    --common-box-shadow-1: 0 0 8px 0 rgb(0 0 0 / 2%);
+    --common-box-shadow-2: 0 0 16px 0 rgba(0, 0, 0, 20%);
+    --common-box-shadow-3: 0 0 8px 0 rgb(0 0 0 / 10%);
+    --common-box-shadow-4: 0 0 8px 0 rgb(0 0 0 / 5%);
+}
+
+/* source: http://ah-sandbox.wikidot.com/component:collapsible-sidebar-x1 */
+
+#top-bar .open-menu a {
+        position: fixed;
+        top: 0.5em;
+        left: 0.5em;
+        z-index: 5;
+        font-family: 'Nanum Gothic', san-serif;
+        font-size: 30px;
+        font-weight: 700;
+        width: 30px;
+        height: 30px;
+        line-height: 0.9em;
+        text-align: center;
+        border: 0.2em solid #888;
+        background-color: #fff;
+        border-radius: 3em;
+        color: #888;
+        pointer-events: auto;
+}
+
+@media not all and (max-width: 767px) {
+
+    #top-bar .mobile-top-bar {
+        display: block;
+        pointer-events: none;
+    }
+
+    #top-bar .mobile-top-bar li {
+        display: none;
+    }
+
+    #main-content {
+        max-width: 44.5rem;
+        margin: 0 auto;
+        padding: 0;
+        transition: max-width 0.2s ease-in-out;
+    }
+
+    #side-bar {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -18rem;
+        width: 15.25rem;
+        height: 100%;
+        margin: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+        z-index: 10;
+        padding: 1em 1em 0 1em;
+        background-color: rgba(0,0,0,0.1);
+        transition: left 0.4s ease-in-out;
+
+        scrollbar-width: inherit;
+    }
+
+    #side-bar:target {
+        left: 0;
+    }
+    #side-bar:focus-within {
+        left: 0;
+    }
+
+    #side-bar:target .close-menu {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        margin-left: 17rem;
+        opacity: 0;
+        z-index: -1;
+        visibility: visible;
+    }
+    #side-bar:not(:target) .close-menu { display: none; }
+
+    #top-bar .open-menu a:hover {
+        text-decoration: none;
+    }
+}
+/* メインの変更 */
+
+div#container-wrap {
+    background: none;
+}
+
+#container {
+    background: var(--header-bg-image);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* モバイル背景の最適化 */
+@media (max-width: 767px) {
+    #container {
+        background-size: auto calc(var(--topbar-height) + var(--header-height));;
+        background-position: var(--mobile-bg-position);
+        background-attachment: scroll;
+    }
+}
+
+#content-wrap {
+    /* 動作検証済み: ここにフィルターがあるとサイドバーなどの二重ウィンドウがずれるバグが出る */
+    /* backdrop-filter: var(--sodium-bg-filter); */
+    margin: 0 auto 0;
+    max-width: 100%;
+    border-radius: var(--common-box-radius-mx) var(--common-box-radius-mx) 0 0;
+    box-shadow: var(--common-box-shadow-1);
+    background: var(--sodium-sec-bg-color);
+}
+
+#main-content {
+    padding: 20px 5px 20px 5px;
+
+}
+
+::selection {
+    color: var(--sodium-text-color);
+    background-color: var(--sodium-selection-color);
+}
+
+body {
+    color: var(--sodium-text-color);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: .9em;
+}
+
+a, a:visited {
+    color: var(--sodium-link-color);
+}
+
+a.newpage {
+    color: var(--ruby-red);
+}
+
+:is(#page-content, #side-bar .side-block, #main-content .page-tags, .page-watch-options, #footer, #license-area, #breadcrumbs, .owindow) a {
+    transition: all 0.15s ease-out;
+}
+
+:is(#page-content, #side-bar .side-block, #main-content .page-tags, .page-watch-options, #footer, #license-area, #breadcrumbs, .owindow) a:hover {
+    text-decoration: none;
+    color: var(--sodium-hover-color);
+    background-color: var(--sodium-link-color);
+}
+
+tt {
+    font-family: 'Noto Serif JP', 'Times New Roman', serif;
+}
+
+hr {
+    margin: 1em .5em;
+    background-color: var(--granite-grey);
+    display: block;
+}
+
+/* ヘッダー部 */
+#header {
+    /* display: grid; */
+    height: var(--header-height);
+    padding-bottom: var(--topbar-height);
+    background-repeat: no-repeat;
+    background-size: var(--logo-width) var(--logo-width);
+    background-position: center;
+    background-image: var(--header-logo);
+}
+
+@media (max-width: 767px) {
+    #header {
+        background-size: min(var(--logo-width), 300px) min(var(--logo-width), 300px);
+    }
+}
+
+#header h1 {
+    position: relative;
+    top: calc(var(--header-height) * 0.5);
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+#header h1 a {
+    padding: 0;
+    font-size: 0;
+    text-shadow: none;
+    color: var(--topbar-text-color);
+    letter-spacing: 0;
+}
+
+#header h1 a span::before {
+    white-space: nowrap;
+    word-break: keep-all;
+    content: var(--header-title);
+    font-family: 'Noto Serif JP', serif;
+    font-size: 45px;
+    color: var(--topbar-text-color);
+    text-shadow: var(--topbar-text-shadow);
+}
+
+#header h2 {
+    position: relative;
+    top: calc(var(--header-height) * 0.5 + 35px);
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+#header h2 span {
+    padding: 0;
+    font-size: 0;
+    text-shadow: none;
+    color: var(--topbar-text-color);
+}
+
+#header h2 span::before {
+    white-space: nowrap;
+    word-break: keep-all;
+    font-size: 15px;
+    text-shadow: var(--topbar-text-shadow);
+    font-family: 'Noto Serif JP', serif;
+    content: var(--header-subtitle);
+}
+
+/* TOP BAR */
+.mobile-top-bar {
+    display: none;
+}
+
+#top-bar {
+    height: var(--topbar-height);
+    top: calc(var(--header-height) * 1);
+}
+
+.top-bar {
+    display: flex;
+}
+
+#top-bar .top-bar ul {
+    display: grid;
+    flex-grow: 1;
+    grid-auto-flow: column;
+}
+
+#top-bar .top-bar ul li a {    
+    border-radius: var(--common-box-radius-mn);
+    color: var(--sodium-text-color);
+    line-height: 0;
+    border: none;
+    padding-top: calc(var(--topbar-height) * 0.5);
+    padding-bottom: calc(var(--topbar-height) * 0.5);
+    transition: background-color 0.2s ease-in-out;
+}
+
+#top-bar .top-bar > ul > li > a{
+    color: var(--topbar-link-color);
+}
+
+#top-bar .top-bar ul li a:hover,
+#top-bar .top-bar ul > li.sfhover > a {
+    background-color: var(--topbar-hover-color);
+}
+
+#top-bar .top-bar ul > li > ul {
+    display: grid;
+    grid-auto-flow: row;
+    overflow: hidden;
+    border-radius: var(--common-box-radius-mn);
+    box-shadow: var(--common-box-shadow-3);
+    border: none;
+    width: 100%;
+}
+
+#top-bar ul li.sfhover ul li a {
+    border: none;
+}
+
+#top-bar .top-bar ul > li > ul > li a {
+    text-align: center;
+    backdrop-filter: var(--sodium-bg-filter);
+    background-color: var(--sodium-sec-bg-color);
+    border-radius: 0;
+    padding: 0;
+    padding-top: calc(var(--topbar-height) * 0.25);
+    padding-bottom: calc(var(--topbar-height) * 0.25);
+    height: auto;
+    width: 100%;
+}
+
+#top-bar .top-bar ul > li > ul > li a:hover {
+    background-color: var(--light-grey);
+}
+
+/* 表示アニメーション */
+#top-bar .top-bar ul > li > ul {
+    transform: translateY(-10px);
+    opacity: 0;
+    transition: transform 0.15s cubic-bezier(0.4, 0.88, 0.58, 1), opacity 0.15s cubic-bezier(0.4, 0.88, 0.58, 1);
+}
+
+#top-bar .top-bar ul > li.sfhover > ul {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 767px) {
+    #top-bar .mobile-top-bar ul > li > ul {
+        transform: translateY(-10px);
+        opacity: 0;
+        transition: transform 0.15s cubic-bezier(0.4, 0.88, 0.58, 1), opacity 0.15s cubic-bezier(0.4, 0.88, 0.58, 1);
+    }
+
+    #top-bar .mobile-top-bar ul > li.sfhover > ul {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ヘッダーを全幅に */
+#header, #top-bar {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* モバイル対応 */
+
+@media (max-width: 767px) {
+    #top-bar .top-bar {
+        display: none;
+    }
+
+    #top-bar .mobile-top-bar {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+    }
+
+    #top-bar .mobile-top-bar ul {
+        display: grid;
+        flex-grow: 1;
+        grid-auto-flow: column;
+    }
+
+    #top-bar .mobile-top-bar ul > li {
+        position: unset;
+    }
+
+    #top-bar .mobile-top-bar ul li a {
+        transition: background-color 0.2s ease-in-out;
+        border-radius: var(--common-box-radius-mn);
+        color: var(--topbar-link-color);
+        line-height: 0;
+        border: none;
+        padding-top: calc(var(--topbar-height) * 0.5);
+        padding-bottom: calc(var(--topbar-height) * 0.5);
+    }
+
+    #top-bar .mobile-top-bar > ul > li.sfhover > a {
+        background-color: var(--topbar-hover-color);
+    }
+
+    #top-bar .mobile-top-bar ul li a:hover {
+        background-color: var(--topbar-hover-color);
+    }
+
+    #top-bar .mobile-top-bar ul > li > ul {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        display: grid;
+        grid-auto-flow: row;
+        overflow: hidden;
+        border-radius: var(--common-box-radius-mn);
+        box-shadow: var(--common-box-shadow-2);
+        border: none;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #top-bar .mobile-top-bar ul > li > ul > :last-child:nth-child(odd) {
+        grid-column: 1 / -1;
+    }
+
+    #top-bar .mobile-top-bar ul > li > ul > li a {
+        text-align: center;
+        font-size: 13px;
+        width: 100%;
+        backdrop-filter: var(--sodium-bg-filter);
+        color: var(--sodium-text-color);
+        background-color: var(--sodium-sec-bg-color);
+        border-radius: 0;
+        padding: 0;
+        padding-top: calc(var(--topbar-height) * 0.25);
+        padding-bottom: calc(var(--topbar-height) * 0.25);
+        height: auto;
+        transition: background-color 0.2s ease-in-out;
+    }
+
+    #top-bar .mobile-top-bar ul > li > ul > li a:hover {
+        background-color: var(--light-grey);
+    }
+}
+
+/* ユーザーアイコン */
+#login-status {
+    position: relative;
+    font-size: 0;
+}
+
+#login-status span.printuser {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+}
+
+#login-status span.printuser img.small {
+    /* この優先度の高さは…… */    
+    background-image: none !important;
+    height: var(--login-status-width);
+    width: var(--login-status-width);
+    border-radius: var(--common-box-radius-mn);
+    box-shadow: var(--common-box-shadow-2);
+    margin: 0;
+    padding: 0;
+
+}
+
+#login-status a#my-account {
+    display: none;
+}
+
+#login-status a#account-topbutton {
+    position: absolute;
+    top: 10px;
+    right: calc(var(--login-status-right) + var(--login-status-width));
+    margin: 0;
+    padding: 0;
+    display: block;
+    height: var(--login-status-width);
+    width: var(--login-status-width);
+    border: none;
+    background-image: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Asodium-jp/cogwheel.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+    filter: var(--header-icon-filter);
+    border-radius: var(--common-box-radius-mn);
+    /* box-shadow: var(--common-box-shadow-2); */
+}
+
+#login-status #account-options {
+    overflow: hidden;
+    position: absolute;
+    top: 43px;
+    right: var(--login-status-right);
+    font-size: 10px;
+    border: none;
+    border-radius: var(--common-box-radius-mn);
+    box-shadow: var(--common-box-shadow-1);
+}
+
+#login-status #account-options ul li {
+    background-color: var(--sodium-sec-bg-color);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+#login-status #account-options ul li a {
+    color: var(--sodium-text-color);
+}
+
+#login-status #account-options ul li:hover {
+    background-color: var(--light-grey);
+}
+
+#login-status #account-options ul li a:hover {
+    color: var(--sodium-text-color);
+    text-decoration: none;
+}
+
+/* 検索ボックス */
+#search-top-box input#search-top-box-input {
+    display: none;
+}
+
+#search-top-box input.button.btn {
+    position: absolute;
+    top: 10px;
+    right: calc(var(--login-status-right) * 2 + var(--login-status-width) * 2);
+    padding: 0;
+    margin: 0;
+    height: var(--login-status-width);
+    width: var(--login-status-width);
+    border: none;
+    background: transparent;
+    font-size: 0;
+    box-shadow: none;
+    filter: var(--header-icon-filter);
+    /* box-shadow: var(--common-box-shadow-2); */
+    background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Asodium-jp/searchstyle01.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+
+}
+
+#search-top-box {
+    position: absolute;
+    top: 10px;
+}
+
+#top-bar .open-menu a {
+    top: 0.5em;
+    left: 0.5em;
+    border-radius: var(--common-box-radius-mn);
+    border: none;
+    height: 35px;
+    width: 35px;
+    align-items: center;
+    line-height: 35px;
+    box-shadow: var(--common-box-shadow-2);
+    background-color: var(--header-openmenu-bg-color);
+    color: var(--topbar-text-color);
+}
+
+/* タイトル */
+#page-title {
+    text-align: center;
+    color: var(--sodium-text-color);
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    padding: .7em 0;
+    font-size: 2em;
+    border-bottom: none;
+}
+
+#page-title::before, #page-title::after {
+    content: ' ';
+    height: 2px;
+    background-color: var(--sodium-border-color);
+    flex: 1;
+}
+
+h1 {
+    color: var(--sodium-link-color);
+}
+
+#page-content h1::before,
+#page-content h2::before,
+#page-content h3::before,
+#page-content h4::before,
+#page-content h5::before,
+#page-content h6::before {
+    color: var(--sodium-border-color);
+    content: '# ';
+}
+
+/* 評価モジュール */
+.page-rate-widget-box {
+    border-radius: var(--common-box-radius-mn);
+    box-shadow: var(--common-box-shadow-1);
+    border: 1px solid var(--sodium-border-color);
+    height: 25px;
+    background-color: var(--sodium-sec-bg-color);
+    margin-right: .5em;
+}
+
+.page-rate-widget-box span.rate-points {
+    color: var(--sodium-text-color);
+    border: none;
+    background-color: transparent !important; /* 透過背景に対応するため var(--sodium-sec-bg-color) を解除 */
+}
+
+.page-rate-widget-box .ratedown,
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .cancel {
+    line-height: 25px;
+    border: none;
+    background-color: transparent; /* 透過背景に対応するため var(--sodium-sec-bg-color) を解除 */
+}
+
+.page-rate-widget-box .ratedown a,
+.page-rate-widget-box .rateup a {
+    margin: 0;
+}
+
+.page-rate-widget-box .ratedown a,
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .cancel a {
+    color: var(--sodium-text-color);
+    display: inline-block;
+    text-align: center;
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    transition: all 0.2s ease-in-out;
+}
+
+.page-rate-widget-box .cancel a:hover {
+    color: var(--sodium-hover-color);
+    background-color: var(--granite-grey) !important;
+}
+
+.page-rate-widget-box .ratedown a:hover {
+    color: var(--sodium-hover-color);
+    background-color: var(--ruby-red) !important;
+}
+
+.page-rate-widget-box .rateup a:hover {
+    color: var(--sodium-hover-color);
+    background-color: var(--emerald-green) !important;
+}
+
+/* 著作情報付き評価モジュール */
+#page-content .creditRate {
+    margin-right: .5em;
+}
+
+#page-content .rate-box-with-credit-button .page-rate-widget-box {
+    background: transparent; /* 透過背景に対応するため var(--sodium-sec-bg-color) を解除 */
+    border: none;
+}
+
+#page-content .rate-box-with-credit-button {
+    display: flex;
+    overflow: hidden;
+    height: 25px;
+    box-shadow: var(--common-box-shadow-1);
+    border: 1px solid var(--sodium-border-color);
+    background-color: var(--sodium-sec-bg-color);
+}
+
+#page-content .rate-box-with-credit-button .creditButton {
+    display: contents;
+    width: 25px;
+    margin: 0px;
+}
+
+#page-content .rate-box-with-credit-button .creditButton p a {
+    margin-left: 0;
+    padding-top: 0;
+    line-height: 25px;
+    height: 25px;
+    border: none;
+    width: 25px;
+    color: var(--sodium-text-color);
+    transition: all 0.2s ease-in-out;
+}
+
+#page-content .rate-box-with-credit-button .creditButton p a:hover {
+    background-color: var(--sodium-link-color);
+    color: var(--sodium-hover-color);
+}
+
+#page-content .rate-box-with-credit-button .creditButton p a::before {
+    position: relative;
+    top: 1px;
+}
+
+#page-content .rate-box-with-credit-button .page-rate-widget-box .cancel a {
+    border-radius: 0;
+}
+
+#page-content .modalbox {
+    backdrop-filter: var(--sodium-bg-filter);
+    border: none;
+    box-shadow: var(--common-box-shadow-2);
+    background: var(--sodium-sec-bg-color);
+}
+
+#page-content .modalbox a.back {
+    color: var(--sodium-link-color) !important;
+}
+
+#page-content .modalbox h2::before {
+    color: var(--sodium-text-color);
+    content: '# ';
+}
+
+#page-content .modalbox hr {
+    display: none;
+}
+
+#page-content .modalbox .credit.first hr {
+    margin: 1em .5em;
+    background-color: var(--granite-grey);
+    display: block;
+}
+
+/* SEC PAGE */
+#page-content #u-credit-otherwise .modalbox {
+    border: none;
+    box-shadow: var(--common-box-shadow-2);
+    background: var(--sodium-sec-bg-color);
+}
+
+#page-content #u-credit-otherwise .modalbox a.back {
+    color: var(--sodium-link-color) !important;
+}
+
+/* TABVIEW */
+.yui-navset {
+    /* 後で変更予定 */
+    border: 1px solid var(--sodium-border-color);
+    border-radius: var(--common-box-radius-mn);
+    box-shadow: var(--common-box-shadow-1);
+    background-color: var(--sodium-sec-bg-color);
+    overflow: hidden;
+}
+
+.yui-navset .yui-content {
+    background-color: transparent; /* 透過背景に対応するため var(--sodium-sec-bg-color) を解除 */
+}
+
+.yui-navset .yui-nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.yui-navset .yui-nav li {
+    padding: 0;
+    margin: 0;
+    border: none;
+    text-align: center;
+    display: grid;
+    flex-grow: 1;
+}
+
+.yui-navset .yui-nav li.selected {
+    padding: 0;
+    margin: 0;
+}
+
+.yui-navset .yui-nav li.selected a {
+    background: none;
+    border: none;
+}
+
+.yui-navset .yui-nav li a {
+    color: var(--sodium-text-color);
+    border: none;
+    white-space: normal;
+}
+
+.yui-navset .yui-nav li a,
+.yui-navset .yui-nav li a:hover,
+.yui-navset .yui-nav li a:focus {
+    background: none;
+}
+
+.yui-navset .yui-nav .selected a, .yui-navset .yui-nav .selected a:focus, .yui-navset .yui-nav .selected a:hover {
+    background: none;
+}
+
+.yui-navset .yui-nav a em, .yui-navset .yui-navset-top .yui-nav a em {
+    /* ずいぶん苦労した */
+    top: 0;
+    border: none;
+    padding: 0.35em 0.75em;
+}
+
+.yui-navset .yui-nav, .yui-navset .yui-navset-top .yui-nav {
+    border: none;
+    border-bottom: 2px solid var(--sodium-border-color);
+}
+
+.yui-navset .yui-content, .yui-navset .yui-navset-top .yui-content {
+    border-radius: var(--common-box-radius-mn);
+    padding: 10px 20px 10px 20px;
+    background-color: var(--sodium-sec-bg-color);
+    border: none;
+}
+
+/* TABVIEWアニメーションの変更 */
+.yui-navset .yui-nav li a {
+    transition: font-weight 0.2s ease-in-out;
+}
+
+.yui-navset .yui-nav li a:hover {
+    color: var(--sodium-link-color) !important;
+    background-color: transparent !important;
+}
+
+.yui-navset .yui-nav li.selected a {
+    background-color: transparent;
+    color: var(--sodium-text-color);
+}
+
+.yui-navset .yui-nav .selected a, .yui-navset .yui-nav .selected a em {
+    color: var(--sodium-link-color);
+    background-color: transparent;
+}
+
+.yui-navset .yui-nav a::before {
+    border-radius: 50px;
+    content: " ";
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    background: var(--sodium-link-color);
+    width: 0%;
+    height: 2px;
+    transform: translateX(-50%);
+    transition: left 0.2s ease-in-out, width 0.2s ease-in-out;
+}
+
+.yui-navset .yui-nav a:hover::before {
+    width: 30px;
+    height: 2px;
+    background-color: var(--sodium-link-color);
+}
+
+.yui-navset .yui-nav a em::before {
+    border-radius: 50px;
+    content: " ";
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    background: var(--sodium-link-color);
+    width: 0%;
+    height: 2px;
+    transform: translateX(-50%);
+    transition: left 0.2s ease-in-out, width 0.2s ease-in-out;
+}
+
+.yui-navset .yui-nav .selected a em::before {
+    width: 100%;
+    height: 2px;
+    background-color: var(--sodium-link-color);
+}
+
+/* タブアニメーション by Croquembouche */
+
+.yui-navset .yui-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+.yui-navset .yui-content>div {
+    display: block;
+    top: 0;
+    overflow: hidden;
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+#page-content .yui-navset .yui-content>div>* {
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+#page-content .yui-navset .yui-content>div[style*="none"] {
+    display: block !important;
+    -webkit-box-flex: 0;
+    -ms-flex: 0;
+    flex: 0;
+    max-height: 0;
+    padding: 0 0.5em;
+    border-width: 0;
+    -webkit-transition: padding 0s linear 0.5s, border-width 0s linear 0.5s, -webkit-box-flex 0.5s cubic-bezier(.0, 1.27, .0, .89) 0s;
+    transition: padding 0s linear 0.5s, border-width 0s linear 0.5s, -webkit-box-flex 0.5s cubic-bezier(.0, 1.27, .0, .89) 0s;
+    -o-transition: padding 0s linear 0.5s, border-width 0s linear 0.5s, flex 0.5s cubic-bezier(.0, 1.27, .0, .89) 0s;
+    transition: padding 0s linear 0.5s, border-width 0s linear 0.5s, flex 0.5s cubic-bezier(.0, 1.27, .0, .89) 0s;
+    transition: padding 0s linear 0.5s, border-width 0s linear 0.5s, flex 0.5s cubic-bezier(.0, 1.27, .0, .89) 0s, -webkit-box-flex 0.5s cubic-bezier(.0, 1.27, .0, .89) 0s, -ms-flex 0.5s cubic-bezier(.0, 1.27, .0, .89) 0s;
+    -webkit-animation: tab-disappear 0.5s ease-in-out 0s 1 both;
+    animation: tab-disappear 0.5s ease-in-out 0s 1 both;
+}
+
+#page-content .yui-navset .yui-content>div[style*="block"] {
+    display: block !important;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    max-height: 9999rem;
+    -webkit-transition: padding 0s linear 0.5s, border-width 0s linear 0.5s, -webkit-box-flex 0.5s cubic-bezier(.99, .0, .99, .0) 0.5s;
+    transition: padding 0s linear 0.5s, border-width 0s linear 0.5s, -webkit-box-flex 0.5s cubic-bezier(.99, .0, .99, .0) 0.5s;
+    -o-transition: padding 0s linear 0.5s, border-width 0s linear 0.5s, flex 0.5s cubic-bezier(.99, .0, .99, .0) 0.5s;
+    transition: padding 0s linear 0.5s, border-width 0s linear 0.5s, flex 0.5s cubic-bezier(.99, .0, .99, .0) 0.5s;
+    transition: padding 0s linear 0.5s, border-width 0s linear 0.5s, flex 0.5s cubic-bezier(.99, .0, .99, .0) 0.5s, -webkit-box-flex 0.5s cubic-bezier(.99, .0, .99, .0) 0.5s, -ms-flex 0.5s cubic-bezier(.99, .0, .99, .0) 0.5s;
+    -webkit-animation: tab-appear 0.5s ease-in-out 0.5s 1 both;
+    animation: tab-appear 0.5s ease-in-out 0.5s 1 both;
+}
+
+@-webkit-keyframes tab-disappear {
+    0% {
+        max-height: 9999rem;
+    }
+    1% {
+        max-height: 100vh;
+    }
+    100% {
+        max-height: 0;
+    }
+}
+
+@keyframes tab-disappear {
+    0% {
+        max-height: 9999rem;
+    }
+    1% {
+        max-height: 100vh;
+    }
+    100% {
+        max-height: 0;
+    }
+}
+
+@-webkit-keyframes tab-appear {
+    0% {
+        max-height: 0;
+    }
+    99% {
+        max-height: 100vh;
+    }
+    100% {
+        max-height: 9999rem;
+    }
+}
+
+@keyframes tab-appear {
+    0% {
+        max-height: 0;
+    }
+    99% {
+        max-height: 100vh;
+    }
+    100% {
+        max-height: 9999rem;
+    }
+}
+
+/* 引用ブロック */
+
+blockquote, div.blockquote {
+    padding: 10px 20px 10px 20px;
+    border-radius: var(--common-box-radius-mn);
+    box-shadow: var(--common-box-shadow-1);
+    border: 1px solid var(--sodium-border-color);
+    background-color: var(--sodium-sec-bg-color);
+}
+
+/* テーブル */
+table.wiki-content-table {
+    overflow: hidden;
+    box-shadow: var(--common-box-shadow-1);
+
+}
+
+table.wiki-content-table td {
+    color: var(--sodium-text-color);
+    border-color: var(--sodium-border-color);
+    background-color: var(--sodium-sec-bg-color);
+}
+
+table.wiki-content-table th {
+    font-weight: 900;
+    color: var(--sodium-text-color);
+    border-color: var(--sodium-border-color);
+    background-color: var(--light-grey);
+}
+
+/* ソースコード */
+.page-source {
+    background-color: var(--sodium-sec-bg-color);
+    border: 1px solid var(--sodium-border-color);
+}
+
+.code {
+    border-radius: var(--common-box-radius-mn);
+    background-color: var(--sodium-sec-bg-color);
+    border: 1px solid var(--sodium-border-color);
+}
+
+.code, code, pre, .page-source {
+    font-family: 'JetBrains Mono', 'Noto Serif JP', serif;
+}
+
+.hl-code, .hl-identifier, .hl-brackets {
+    color: var(--sodium-text-color);
+}
+
+.hl-var {
+    color: var(--code-dark-green);
+}
+
+.hl-number {
+    color: var(--code-dark-orange);
+}
+
+.hl-special {
+    color: var(--code-dark-green);
+}
+
+.hl-reserved {
+    color: var(--code-dark-blue);
+}
+
+.hl-string {
+    color: var(--code-dark-orange)
+}
+
+/* ページ下部のボタン */
+
+.page-options-bottom a {
+    color: var(--sodium-text-color);
+    border-bottom: 1px solid var(--sodium-border-color);
+    background-size: 0 2px;
+    border-radius: none;
+    white-space: nowrap;
+    text-align: center;
+    width: 40%;
+    flex-grow: 1;
+    margin: 2px 0px;
+    padding: 7.5px 2px;
+    transition: background-size .2s ease-in-out;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-image: linear-gradient(0deg, var(--sodium-link-color), var(--sodium-link-color));
+}
+
+.page-options-bottom {
+    overflow: hidden;
+    border: none;
+    box-shadow: var(--common-box-shadow-3);
+    border-radius: var(--common-box-radius-mn);
+    background: var(--sodium-sec-bg-color);
+    display: flex;
+    margin: 1em 0;
+    text-align: right;
+    height: 1%;
+    line-height: 150%;
+    flex-wrap: wrap;
+}
+
+.page-options-bottom a#more-options-button {
+    color: var(--sodium-hover-color);
+    background: var(--sodium-link-color);
+}
+
+.page-options-bottom a:hover {
+    background-position: left bottom;
+    background-size: 100% 2px;
+    color: var(--sodium-link-color);
+    text-decoration: none;
+}
+
+@media not all and (max-width: 767px) {
+    .page-options-bottom a {
+        width: 10%;
+    }
+}
+
+@media (max-width: 767px) {
+    .page-options-bottom a {
+        width: 40%;
+    }
+}
+
+/* ライセンス表記 */
+#footer {
+    font-size: 90%;
+    color: var(--footer-text-color);
+    background-color: transparent;
+}
+
+#footer a {
+    color: var(--footer-link-color);
+}
+
+#license-area {
+    background-color: transparent;
+    color: var(--footer-text-color);
+}
+
+#license-area a {
+    color: var(--footer-text-color);
+}
+
+/* サイドバー */
+@media not all and (max-width: 767px) {
+    #side-bar {
+        background-color: var(--sodium-sec-bg-color);
+    }
+}
+
+@media (max-width: 767px) {
+    #side-bar {
+        background-color: var(--sodium-sec-bg-color);
+    }
+
+    #side-bar:target .close-menu {
+        background: rgba(255, 255, 255, 0) 1px 1px repeat;
+
+    }
+}
+
+#side-bar .side-block {
+    border-radius: var(--common-box-radius-mn);
+    box-shadow: var(--common-box-shadow-1);
+    border: 1px solid var(--sodium-border-color);
+    /* CN SIDEBAR COLOR */
+    background-color: var(--sodium-sec-bg-color) !important;
+}
+
+#side-bar a:visited {
+    color: var(--sodium-link-color);
+}
+
+#side-bar div.menu-item img {
+    display: none;
+}
+
+#side-bar .heading {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: var(--sodium-text-color);
+    font-family: "Raleway", "Yu Gothic", sans-serif;
+    padding-left: 0;
+    font-size: 1.15rem;
+    border: none;
+}
+
+#side-bar hr {
+    display: none;
+}
+
+#side-bar .heading::after {
+    border-radius: 50px;
+    content: " ";
+    height: 2px;
+    background-color: var(--sodium-text-color);
+    flex: 1;
+}
+
+#side-bar .collapsible-block-link {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 1.25em;
+    font-family: "Raleway", "Yu Gothic", sans-serif;
+    color: var(--sodium-text-color);
+    margin-left: 0;
+}
+
+#side-bar .collapsible-block-unfolded-link {
+    border: none;
+}
+
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link {
+    margin: 0;
+    font-size: 1.25em;
+    font-family: "Raleway", "Yu Gothic", sans-serif;
+    color: var(--sodium-text-color);
+}
+
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link:hover,
+#side-bar .collapsible-block-link:hover {
+    background-color: transparent !important;
+    text-decoration: none;
+    color: var(--sodium-link-color) !important;
+}
+
+#side-bar .collapsible-block-link::after {
+    border-radius: 50px;
+    content: " ";
+    height: 2px;
+    background-color: var(--sodium-text-color);
+    flex: 1;
+}
+
+#side-bar .collapsible-block-folded {
+    background: none;
+}
+
+#side-bar .side-block.media img {
+    display: block;
+}
+
+/* HOVERTIP */
+.hovertip {
+    padding: .5em;
+    text-align: center;
+    color: var(--hovertip-text-color) !important;
+    border: none !important;
+    background-color: var(--hovertip-bg-color) !important;
+    border-radius: var(--common-box-radius-mn);
+    box-shadow: var(--common-box-shadow-2) !important;
+}
+
+/* TAGS */
+#main-content .page-tags {
+    display: flex;
+}
+
+#main-content .page-tags a {
+    line-height: 18px;
+    height: 18px;
+}
+
+#main-content .page-tags::before {
+    position: relative;
+    line-height: 18px;
+    margin-right: 6px;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    color: var(--sodium-text-color);
+    font-family: 'FontAwesome';
+    content: "\f02c";
+    font-size: .75em;
+}
+
+#main-content .page-tags span {
+    border: none;
+    display: inline-block;
+    padding: 0;
+    max-width: 60%;
+}
+
+#page-info, .page-watch-options a {
+    font-size: 75%;
+}
+
+/* ユーザー情報 */
+.owindow {
+    backdrop-filter: var(--sodium-bg-filter);
+    overflow: hidden;
+    color: var(--sodium-text-color);
+    box-shadow: var(--common-box-shadow-2);
+    border: none;
+    border-radius: var(--common-box-radius-mn);
+    background-color: var(--sodium-sec-bg-color);
+}
+
+.owindow .title {
+    background-color: transparent; /* 透過背景に対応するため var(--sodium-sec-bg-color) を解除 */
+}
+
+.owindow .content {
+    padding: 1em 1em;
+}
+
+.owindow .content.modal-body {
+    display: grid;
+}
+
+.owindow .button-bar a {
+    border-radius: var(--common-box-radius-mn);
+    margin: 0.2em 0.2em;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    box-shadow: var(--common-box-shadow-1);
+    background-color: var(--sodium-sec-bg-color);
+    border: 1px solid var(--sodium-border-color);
+    transition: all 0.2s ease-in-out;
+}
+
+.owindow .button-bar a:hover {
+    border: 1px solid var(--sodium-link-color);
+    background-color: var(--sodium-link-color);
+    color: var(--sodium-hover-color);
+}
+
+/* スクロールバー */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: var(--light-grey) !important;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: var(--common-box-radius-mx);
+    background-color: var(--sodium-link-color) !important;
+}
+
+/* 画像 */
+.scp-image-block {
+    border: 1px solid var(--sodium-border-color);
+    box-shadow: var(--common-box-shadow-1);
+    border-radius: var(--common-box-radius-mn);
+}
+
+.scp-image-block .scp-image-caption {
+    background-color: var(--light-grey);
+    border-top: none;
+}
+
+/* TOC */
+#toc {
+    box-shadow: var(--common-box-shadow-1);
+    border-radius: var(--common-box-radius-mn);
+    margin: 1em auto 1em 0;
+    padding: 0em 0.5em;
+    border: 1px solid var(--sodium-border-color);
+    background-color: var(--sodium-sec-bg-color);
+    display: table;
+}
+
+/* 単独の著作情報 */
+#page-content .creditButtonStandalone p a {
+    border: 1px solid var(--sodium-border-color);
+    display: block;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: var(--common-box-radius-mn);
+    color: var(--sodium-text-color);
+    text-align: center;
+    background: var(--sodium-sec-bg-color);
+    box-shadow: var(--common-box-shadow-1);
+    font-size: 12px;
+    transition: all 0.2s ease-in-out;
+}
+
+#page-content .creditButtonStandalone p a:hover {
+    color: var(--sodium-hover-color);
+    text-decoration: none;
+    background: var(--sodium-link-color);
+}
+
+/* カスタムヘッダー */
+#header-extra-div-1 {
+    position: absolute;
+    top: calc(var(--header-height) / 2);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    background-color: transparent;
+}
+
+#header-extra-div-1::before {
+    display: block;
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+    color: var(--header-customized-title-color);
+    font-family: var(--header-customized-title-family);
+    font-size: var(--header-customized-title-size);
+    content: var(--header-customized-title);
+    text-shadow: none;
+    transition: text-shadow 0.2s ease-out;
+}
+
+#header-extra-div-1:hover::before {
+    text-shadow: var(--header-customized-title-hover-effects);
+    cursor: pointer;
+}
+
+/* 編集ボタン群 */
+
+div.buttons input, input.button, button, file, a.button,
+#action-area a.action-area-close {
+    border-radius: var(--common-box-radius-mn);
+    margin: 0 2px;
+    padding: 0.23em 0.3em;
+    text-decoration: none;
+    background-color: var(--sodium-sec-bg-color);
+    border: 1px solid var(--sodium-border-color);
+    color: var(--sodium-text-color);
+    transition: all 0.2s ease-in-out;
+}
+
+div.buttons input:hover, input.button:hover, button:hover, file:hover, a.button:hover,
+#action-area a.action-area-close:hover  {
+    color: var(--sodium-hover-color);
+    background-color: var(--sodium-link-color);
+
+}
+
+div.buttons.alignleft > * {
+    margin: .2em;
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+div.buttons.alignleft {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+input#edit-save-button {
+    width: 100%;
+}
+
+#lock-info {
+    background-color: var(--sodium-sec-bg-color);
+    border: 1px solid var(--sodium-border-color);
+}
+
+/* PAGE HISTORY */
+table.page-history td.optionstd a {
+    border-radius: 2px;
+    border: 1px solid var(--sodium-border-color);
+    padding: 0 5px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+table.page-history td.optionstd a:hover {
+    color: var(--sodium-hover-color);
+    text-decoration: none;
+    background: var(--sodium-link-color);
+    border: 1px solid var(--sodium-link-color);
+}
+
+.pager .current {
+    border-radius: 3px;
+    padding: 0 7px;
+    margin: 0 3px;
+    font-weight: bold;
+    background-color: var(--sodium-link-color);
+    color: var(--sodium-hover-color);
+    border: 1px solid var(--sodium-link-color);
+}
+
+.pager a {
+    border-radius: 3px;
+    padding: 0 7px;
+    margin: 0 3px;
+    border: 1px solid var(--sodium-border-color);
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.pager a:hover {
+    color: var(--sodium-hover-color);
+    text-decoration: none;
+    background: var(--sodium-link-color);
+    border: 1px solid var(--sodium-link-color);
+}
+
+/* Sigmaの問題の修正 */
+input#edit-page-title {
+    width: 100%;
+}
+
+/* 追加の内容 */
+
+.code-terminal {
+    font-family: 'JetBrains Mono', 'Noto Serif JP', serif;
+    margin: 1em 0;
+    padding: 10px;
+    color: #d4d4d4;
+    border: none;
+    background: linear-gradient(92deg, #0b0b0b, #252525, #3b3b3b);
+    border-radius: var(--common-box-radius-mn);
+}
+
+.cb, .bob, .nbb, .nbbd, .sbb {
+    margin: .5em;
+    padding: 10px 20px 10px 20px;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/*.classic-blockquote */
+.cb {
+    color: var(--black-color-01);
+    border: 1px solid var(--grey-color-01);
+    background-color: var(--white-color-01);
+}
+
+/* .borderonly-blockquote */
+.bob {
+    color: var(--sodium-text-color);
+    border: 1px solid var(--grey-color-01);
+    background-color: transparent;
+}
+
+/* .noborder-blockquote */
+.nbb {
+    color: var(--black-color-01);
+    border: none;
+    background-color: var(--grey-color-02);
+}
+
+/* .noborder-blockquote-dark */
+.nbbd {
+    color: var(--white-color-01);
+    border: none;
+    background-color: var(--dark-grey-color-01);
+}
+
+/* singleborder-blockquote */
+.sbb {
+    color: var(--black-color-01);
+    border-left: 5px solid var(--grey-color-01);
+    background-color: var(--white-color-01);
+}
+
+.special-hr::before {
+    border-radius: 20px;
+    flex: 1;
+    background: linear-gradient(90deg, #ffffff00, #000, #000);
+    content: " ";
+    height: 2px;
+}
+
+.special-hr::after {
+    border-radius: 20px;
+    flex: 1;
+    background: linear-gradient(90deg, #000, #000, #ffffff00);
+    content: " ";
+    height: 2px;
+}
+
+.special-hr {
+    filter: var(--special-hr-contrast);
+    gap: 50px;
+    height: 30px;
+    display: flex;
+    margin: 10px auto;
+    background-size: 30px 30px;
+    background-position: center;
+    background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Asodium-jp/hrlogo.png);
+    align-items: center;
+    background-repeat: no-repeat;
+}
+[[/code]]
