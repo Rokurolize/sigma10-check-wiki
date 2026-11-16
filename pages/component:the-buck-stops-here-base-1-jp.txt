@@ -1,0 +1,660 @@
+[!--The Buck Stops Here（component:the-buck-stops-here-base-1）— CSS 本体
+このページは theme:the-buck-stops-here-jp から [[include]] される機械用コンポーネントです。
+原語版 https://scpko.wikidot.com/component:the-buck-stops-here-base-1 （theme:the-buck-stops-here rev 29 が include）の
+CSS を、キャッシュ済みの原語版ソースからそのまま収録しています。
+ライセンス・クレジットは theme:the-buck-stops-here-jp ページのクレジットを参照してください。（原語版: thd-glasses）--]
+
+[!--
+[[code type="CSS"]]
+#interwiki .side-block, #side-bar .side-block { background-color: #222 !important; border-color: #901; }
+#interwiki .a, #side-bar a { color: #901; }
+#interwiki .heading, #side-bar .heading { color: #901; border-bottom: solid 1px #901; }
+#side-bar img { filter: grayscale(1) brightness(0.5); transition: all 0.5s; }
+#side-bar img:hover { filter: none; transition: all 0.5s; }
+[[/code]]
+--]
+
+[[iftags +コンポーネント]]
+**The Buck Stops Here CSS テーマ**
+
+制作: [[*user thd-glasses]]
+
+画像出典: 使用画像はすべて thd-glasses 制作。
+フォント出典: https://noonnu.cc/font_page/402 / https://noonnu.cc/font_page/29 / Google Fonts（Play, Noto Sans KR, IBM Plex Sans, Yusei Magic）
+
+使用方法・パラメータは theme:the-buck-stops-here-jp ページを参照してください。
+[[/iftags]]
+
+[[div_ [[iftags -テーマ]]style="display: none"[[/iftags]]]]
+[[code type="CSS"]]
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic');
+
+/*
+    최종책임자 CSS 테마
+    [2021 Wikidot Theme]
+    Based on SCP Sigma 9 Theme created by Aelanna and Dr Devan.
+    Code adopted from Pataphysics Department Theme's CSS spinner by Woedenaz.
+    Code adopted from Black Highlighter Theme and Dustjacket Theme created by Woedenaz.
+*/
+
+@charset "utf-8";
+@font-face { font-family: 'YES24'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/YES24.woff') format('woff'); font-weight: normal; font-style: normal;}
+@font-face { font-family: 'Busan'; font-style: normal; font-weight: 400; src: url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/govs/busan/Busan/Busan.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/govs/busan/Busan/Busan.woff') format('woff');}
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic');
+
+:root {
+  --hr: #0C0005;
+}
+
+html {
+  overflow-x:hidden;
+}
+
+/* ------------ HEADER ------------*/
+
+div#container-wrap {
+  background: url(https://scpko.wdfiles.com/local--files/theme%3Athe-buck-stops-here/body_bg_1.png) top left repeat-x;
+}
+
+#content-wrap {
+  margin: 4em auto 0 !important;
+}
+@media(max-width: 767px) {
+  #content-wrap {
+    margin-top: 5em !important;
+  }
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  background: none;
+}
+
+#header #header-extra-div-1 {
+  z-index: -1;
+  width: 265px;
+  height: 265px;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  margin-top: -44px;
+  clip-path: polygon(0 0, 0 206px, 100% 206px, 100% 0);
+}
+
+#header #header-extra-div-1::before{
+  z-index: -1;
+  content: "";
+  width: 265px;
+  height: 265px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  flex: 1;
+}
+
+#header #header-extra-div-1::before{
+  z-index: -1;
+  background-image: url(https://scpko.wdfiles.com/local--files/theme%3Athe-buck-stops-here/logo_SCP.png);
+  animation: cont-spin 40s linear infinite;
+}
+
+#header #header-extra-div-3 {
+  position: absolute;
+  top: -69px; left: 0; right: 0;
+  height: 300px;
+  background: url(https://scpko.wdfiles.com/local--files/theme%3Athe-buck-stops-here/logo_KO.png) center no-repeat;
+  background-size: 260px;
+  z-index: -1;
+  pointer-events: none;
+}
+
+#header h1 {
+  margin-left: 0;
+  padding: 0;
+  clear: both;
+  float: none;
+}
+
+#header h2 {
+  margin-left: 0;
+  padding: 0;
+  clear: both;
+  float: none;
+}
+
+#header h1 a {
+  color: transparent;
+  font-size: 0px;
+  font-family: 'YES24', 'Yusei Magic', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+#header h1 a::before {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  content: "대한민국 지역사령부";
+  color: #FFF;
+  font-size: 50px;
+  text-shadow: 1px 1px 3px black;
+}
+
+#header h2 span {
+  color: transparent;
+  font-size: 0px;
+  font-family: 'Play', 'Busan', 'YES24', sans-serif;
+}
+
+#header h2 span::before {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  content: "제{$n}K{$sa} 내부 데이터베이스";
+  color: #EEE;
+  font-size: 20px;
+  text-shadow: 1px 1px 1.5px black;
+  padding-top: 10px;
+}
+
+
+#login-status {
+  position: absolute;
+  left: 0px;
+  top: 10px;
+  overflow: visible;
+  z-index:30;
+}
+
+#account-topbutton {
+  display: none;
+}
+
+#search-top-box {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  width: 250px;
+  text-align: right;
+  z-index: 50;
+}
+
+#search-top-box-form input[type=submit], #search-top-box-form input[type=submit]:hover, #search-top-box-form input[type=submit]:focus {
+  color: transparent;
+  width: 35px;
+  height: 22px;
+}
+
+#search-top-box-form::before {
+  pointer-events: none;
+  position: absolute;
+  top: 1px;
+  right: 8px;
+  content: "검색";
+  font-size: 13px;
+  font-weight: 200;
+  font-family: 'IBM Plex Sans', 'Noto Sans KR', sans-serif;
+  color: #EEE;
+  z-index: 100;
+}
+
+#top-bar {
+  width: 100%;
+  top: 162px;
+  z-index: 20;
+
+  display: flex;
+  justify-content: center;
+}
+
+.top-bar {
+  position: absolute;
+}
+
+.mobile-top-bar{
+  position: relative;
+  margin: 0 auto;
+  margin-top: -1em;
+}
+
+@media (min-width: 768px) {
+  #top-bar {
+    left: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  #header h1 a::before {
+    font-size: 45px;
+  }
+  #header h2 span::before {
+    padding-top: 5px;
+  }
+}
+
+@media (max-width: 479px) {
+  #login-status {
+    font-size: 0px;
+  }
+  #login-status .printuser,
+  #login-status .login-status-sign-in {
+    font-size: 12px;
+  }
+
+  #header h1 a::before {
+    font-size: 35px;
+  }
+  #header h2 span::before {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 385px) {
+  .mobile-top-bar {
+    width: auto;
+  }
+}
+
+/*------------ TITLE & BODY ------------*/
+
+#page-title, h1 {
+  font-family: 'YES24', sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+#page-title {
+  border-color: #A01;
+}
+
+h2 {
+  font-family: 'YES24', sans-serif;
+  font-weight: 300;
+  color: #901;
+}
+
+h3 {
+  font-family: 'Play', 'Busan', 'YES24', sans-serif;
+  font-weight: 100;
+  color: #333;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  overflow-x:hidden;
+}
+
+#side-bar {
+  font-family: 'YES24', 'IBM Plex Sans', 'Noto Sans KR', sans-serif;
+}
+#side-bar div.menu-item a, #side-bar .heading,
+#side-bar .collapsible-block-folded,
+#side-bar .collapsible-block-unfolded,
+#side-bar .collapsible-block-link  {
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+
+#page-content hr {
+  height: 2px;
+  border: 0;
+  background-color: transparent;
+  background: url(https://scpko.wdfiles.com/local--files/theme%3Athe-buck-stops-here/hr.png) center no-repeat;
+  background-size: 100% 2px;
+}
+
+#page-content .modalbox hr,
+#page-content .ko-footer hr {
+  margin: 1em 0;
+  height: 1px;
+  background: var(--hr);
+}
+
+#page-content .ko-footer {
+  margin-top: 3em;
+}
+
+.preview-message {
+  z-index: 200;
+}
+
+@media (min-width: 768px) {
+  #page-content:not(.page-rate-widget-box) {
+    font-size: 1.05em;
+  }
+}
+
+/*------------ YUI-TABS ------------*/
+.yui-navset .yui-nav .selected, .yui-navset .yui-navset-top .yui-nav .selected {
+  margin: 0;
+}
+.yui-navset .yui-nav li, .yui-navset .yui-navset-top .yui-nav li {
+  margin: 0;
+  padding: 0;
+}
+.yui-navset .yui-nav a em, .yui-navset .yui-navset-top .yui-nav a em,
+.yui-navset .yui-nav .selected a em {
+  border-width: 0;
+  padding: 0.25em 0.75em;
+}
+
+.yui-nav {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  overflow-x: hidden;
+}
+
+.yui-nav li {
+  display: flex;
+  flex-grow: 2;
+  margin: 0;
+}
+
+.yui-nav li a {
+  width: 100%;
+  text-align: center;
+}
+
+.yui-navset .yui-content {
+  border: none;
+  border-bottom: 2px solid #641527;
+  background-color: #F9F9F9;
+  padding: 15px;
+}
+
+.yui-navset .yui-nav a, .yui-navset .yui-navset-top .yui-nav a {
+  background:#FFF url(https://scpko.wdfiles.com/local--files/theme%3Athe-buck-stops-here/logo_KO.png) repeat-x;
+  border-top: solid #641527 2px;
+  border-left: solid #EDD 1px;
+  border-right: solid #EDD 1px;
+  border-bottom: none;
+  color:#000;
+}
+
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a:focus, /* no focus effect for selected */
+.yui-navset .yui-nav .selected a:hover { /* no hover effect for selected */
+  background: linear-gradient(to bottom, #782637,#641527); /* selected tab background */
+  color: #FFF;
+}
+
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:focus {
+  background: #DDD;
+  text-decoration: none;
+}
+
+.yui-navset .yui-nav,
+.yui-navset .yui-navset-top .yui-nav {
+  border-color: #641527;
+}
+
+/*------------ RATING ------------*/
+
+.page-rate-widget-box .rateup, .page-rate-widget-box .ratedown {
+  background-color: #FFF;
+}
+
+[[/code]]
+
++* アニメーションキーフレーム
+
+[[code type="CSS"]]
+
+@keyframes cont-spin{
+  from{
+    transform: rotate(360deg);
+  }
+  to{
+    transform: rotate(0deg);
+  }
+}
+
+[[/code]]
+
++* SCP 書式要素
+
+[[code type="CSS"]]
+#page-content .content hr {
+  margin: -0.8em 0 -0.7em 0;
+  height: 1px;
+  background: var(--hr);
+}
+
+#page-content hr {
+  margin: 1em 0 1em 0;
+  height: 1px;
+  background: var(--hr);
+}
+
+#side-bar hr, #page-content .modalcontainer .modalbox hr, #page-content blockquote hr {
+  margin: 1em;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+.header-kologo {
+  display: flex;
+  justify-content: center;
+  background: url(https://scpko.wdfiles.com/local--files/thd-glasses-hub/scp_ko_bg.png) center/contain no-repeat;
+  height: 500px;
+}
+
+.header-kologo h1 {
+  font-size: 250%;
+  color: #000;
+}
+
+.quotebox {
+  border: 2px solid #999;
+  background: #F4F4F4;
+  width: 90%;
+  margin: 1.5em auto;
+  padding: 0.5em 1.5em;
+}
+
+.inner {
+  width: auto;
+  margin: 0.2em auto;
+  margin-bottom: 1.5em;
+}
+
+.quotebox a {
+  color: black;
+  font-weight: bold;
+}
+
+.quotecontent {
+  text-align: justify;
+}
+
+.quotecontent a {
+  color: #b01;
+  font-weight: normal;
+}
+
+.footnotes-footer .title {
+  color: #901;
+  text-align: center;
+  border-bottom: 1px solid var(--hr);
+  padding-bottom: 3px;
+}
+
+@media (max-width: 767px) {
+  .creditRate {
+    margin-right: 0.75em !important;
+  }
+
+  .header-kologo h1 {
+    font-size: 200%;
+  }
+
+  .margin {
+    display: none;
+  }
+
+  .quotebox {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.5em 1em;
+  }
+
+  .inner {
+    padding: 0.5em 1.5em 1.5em 1.5em;
+  }
+}
+[[/code]]
+
++* ダークバージョン
+
+[[code type="CSS"]]
+
+:root {
+  --hr: #A01;
+}
+
+div#container-wrap {
+  background: #211 url(https://scpko.wdfiles.com/local--files/theme%3Athe-buck-stops-here/body_bg_2.png) top left repeat-x;
+}
+
+#interwiki .side-block, #side-bar .side-block { background-color: #222 !important; border-color: #901; }
+#interwiki .a, #side-bar a { color: #901; }
+#interwiki .heading, #side-bar .heading { color: #901; border-bottom: solid 1px #901; }
+#side-bar .collapsible-block-folded, #side-bar .collapsible-block-unfolded-link { border-bottom: solid 1px #901; }
+#side-bar img { filter: grayscale(1) brightness(0.5); transition: all 0.5s; }
+#side-bar img:hover { filter: none; transition: all 0.5s; }
+
+body {
+  color: #EEE;
+}
+
+a, a:visited {
+  color: #b01;
+}
+
+blockquote, div.blockquote, .modalbox, .quotebox, .owindow,
+.hovertip, .info, #lock-info, .side-block, .scp-image-caption, .preview-message {
+  color: #333;
+}
+
+.quotebox {
+  opacity: 0.95;
+}
+
+#page-content blockquote hr,
+#page-content .blockquote hr {
+  background: #AAA;
+}
+
+[[/code]]
+
+[[/div]]
+
+[[div_ style="display: none;"]]
+
+[[module CSS]]
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/component%3Athe-buck-stops-here-base-1-jp/2');
+
+#header h2 span::before {
+  content: "제{$n}K{$sa} 내부 데이터베이스";
+}
+[[/module]]
+
+[[#ifexpr {$scpformat}==0 | [!-- | ]]
+[[module CSS]]
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/component%3Athe-buck-stops-here-base-1-jp/4');
+[[/module]]
+[[#ifexpr {$scpformat}==0 | --] | ]]
+
+[[#ifexpr {$dark}==0 | [!-- | ]]
+[[module CSS]]
+
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/component%3Athe-buck-stops-here-base-1-jp/5');
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/component%3Athe-buck-stops-here-base-1-jp/5
+]]
+[[#ifexpr {$dark}==0 | --] | ]]
+
+[[#ifexpr {$animate}==0 | [!-- | ]]
+[[module CSS]]
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/component%3Athe-buck-stops-here-base-1-jp/3');
+[[/module]]
+[[#ifexpr {$animate}==0 | --] | ]]
+
+[[#ifexpr {$jp}==0 | [!-- | ]]
+
+[[code type="CSS"]]
+#header h1 a::before {
+  content: "大韓民国 地域司令部";
+}
+
+#header h2 span::before {
+  content: "{$sa} {$n}K インターナル データベース";
+  letter-spacing: -1px;
+}
+[[/code]]
+
+[[module CSS]]
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/component%3Athe-buck-stops-here-base-1-jp/6');
+
+#header h2 span::before {
+  content: "{$sa} {$n}K インターナル データベース";
+}
+[[/module]]
+[[#ifexpr {$jp}==0 | --] | ]]
+
+[[#ifexpr {$en}==0 | [!-- | ]]
+
+[[code type="CSS"]]
+#header h1 a::before {
+  content: "KOREA REGIONAL COMMAND";
+  font-weight: 800;
+}
+
+#header h2 span::before {
+  content: "{$sa} {$n}K INTERNAL DATABASE";
+}
+
+@media (max-width: 900px) {
+  #header h1 a::before {
+    content: "KOREA COMMAND";
+  }
+}
+[[/code]]
+
+[[module CSS]]
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/component%3Athe-buck-stops-here-base-1-jp/7');
+
+#header h2 span::before {
+  content: "{$sa} {$n}K INTERNAL DATABASE";
+}
+[[/module]]
+[[#ifexpr {$en}==0 | --] | ]]
+
+[[/div]]

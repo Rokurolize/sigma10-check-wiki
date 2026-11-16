@@ -1,0 +1,614 @@
+[!--大韓民国 政府テーマ（component:rok-gov-base）— CSS 本体
+このページは theme:rok-gov-theme-jp から [[include]] される機械用コンポーネントです。
+原語版 https://scpko.wikidot.com/component:rok-gov-base （theme:rok-gov-theme rev 81 が include）の CSS を、
+キャッシュ済みの原語版ソースから収録し、SCP-JP 向けに画像 URL を候補ページの添付へ、
+書体を Gothic A1 / Noto Sans・Serif JP へ置き換えています（原語版の EBSHMJESaeronRA 書体 noonnu 配布の代替）。
+NPES 以外の機関ロゴは JP 添付に無いため、header={npes以外} を使う場合は先に画像を添付してください。
+ライセンス・クレジットは theme:rok-gov-theme-jp ページのクレジットを参照してください。（原語版: thd-glasses）--]
+
+[[iftags +コンポーネント]]
+**大韓民国 政府 CSS テーマ**
+
+制作: [[*user thd-glasses]]
+
+画像出典: 使用画像はすべて thd-glasses 制作。
+フォント出典: https://noonnu.cc/font_page/77 （JP 版は Gothic A1 / Noto Sans・Serif JP で代替）
+
+使用方法・パラメータは theme:rok-gov-theme-jp ページを参照してください。
+[[/iftags]]
+
+[[div_ [[iftags -テーマ]]style="display: none"[[/iftags]]]]
+[[module CSS show="true"]]
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;700&display=swap');
+
+/*
+    대한민국 정부 CSS 테마
+    [2020 Wikidot Theme]
+    Edited by thd-glasses.
+    Code adopted from JOICL hub theme created by kumer1090, with assistance from snoj.
+    Code adopted from Minimal Theme created by stormbreath.
+    Originally based on SCP Sigma 9 Theme created by Aelanna and Dr Devan.
+    The NPES symbol, the NPES logo, and the rok-gov-small0.png file was created by thd-glasses and is licensed under CC-BY-SA 3.0.
+*/
+
+ :root {
+     --header: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Arok-gov-theme-jp/{$header}-logo-small0.png) 20px 50px no-repeat;
+     --title: "{$title}";
+     --subtitle: "{$subtitle}";
+}
+
+/* COMMON */
+ #content-wrap {
+     min-height:1700px;
+}
+
+ h1, #page-title {
+     color: #3F497F;
+}
+
+ #page-title {
+     border-color: #3F497F;
+     display: {$page-title}one;
+}
+
+ .enlarge{
+     transition: .25s;
+}
+
+ .enlarge:hover{
+     transform: scale(1.3);
+     transition: .25s;
+     transition-delay: .4s;
+     z-index: 1000;
+}
+
+ table.wiki-content-table td {
+     border-color: #D0D0EF;
+     background-color: #FFF;
+}
+
+ table.wiki-content-table th {
+     text-align: center;
+     border-color: #D0D0EF;
+     background-color: #D0D0EF;
+     color: #4C5999;
+}
+
+ #page-content {
+     min-height: 1540px !important;
+}
+
+/* links */
+
+ a {
+     color: #4C5999;
+}
+
+ #side-bar a {
+     color: #4C5999;
+}
+
+ a:visited {
+     color: #4C5999;
+}
+
+ a.newpage {
+     color: #9BA2C9;
+}
+
+ body {
+     background: #FFFFFF;
+     color: #000000;
+}
+
+ div#container-wrap {
+     background: none;
+}
+
+/* HEADER */
+
+ #header {
+     background: var(--header);
+}
+
+ #search-top-box-input {
+     border: solid 1px #AAA;
+     color: #DDD;
+     background-color: #FFF;
+     box-shadow: none;
+}
+
+ #search-top-box-input:hover, #search-top-box-input:focus {
+     border: solid 1px #AAA;
+     color: #DDD;
+     background-color: #EEE;
+     box-shadow: none;
+}
+
+ #search-top-box-form input[type=submit] {
+     border: transparent;
+     color: #FFF;
+     background-color: #3F497F;
+     background: linear-gradient(to bottom, #4F5C9F,#313962);
+     box-shadow: none;
+}
+
+ #search-top-box-form input[type=submit]:hover, #search-top-box-form input[type=submit]:focus {
+     border: transparent;
+     color: #EEE;
+     background-color: #3F497F;
+     background: linear-gradient(to bottom, #4F5C9F,#313962);
+     box-shadow: none;
+}
+
+ #login-status {
+     color: #000;
+}
+
+ #login-status a {
+     color: #000;
+}
+ #login-status ul a {
+     color: #000;
+}
+
+ #account-topbutton {
+     background: #CCCCCC;
+     color: #000;
+}
+
+ #header h1 a {
+     padding: 88px 0 25px;
+     color: transparent;
+     font-family: 'EBSHMJESaeronRA', Arial, sans-serif;
+     font-size: 170%;
+     font-weight: 900;
+     text-shadow: none;
+     letter-spacing: -2px;
+}
+
+ #header h1 a::before {
+     content: var(--title);
+     color: #000;
+     text-shadow: none;
+}
+
+ #header h2 span {
+     padding-left: 2px;
+     color: transparent;
+     font-family: sans-serif, Arial;
+     font-size: 120%;
+     text-shadow: none;
+     letter-spacing: -0.1px;
+}
+
+ #header h2 span::before {
+     content: var(--subtitle);
+     color: #444;
+     text-shadow: none;
+}
+
+/* TOP MENU */
+ #top-bar a {
+     color: #fff;
+}
+
+ #top-bar {
+     position: absolute;
+     bottom: 0px;
+     border-radius: 5px;
+     background: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Arok-gov-theme-jp/body_bg_1.png) 0 0 no-repeat;
+     border: transparent;
+     height: auto;
+     padding: 0;
+     z-index: 20;
+     font-size: 90%;
+}
+
+ #top-bar ul li ul {
+     border-radius: 0 0 5px 5px;
+     background-color: transparent;
+     border: transparent;
+     box-shadow: none;
+}
+
+ #top-bar ul {
+     float: right;
+     padding-right: : 5em;
+}
+
+ #top-bar ul li a {
+     border-left: none;
+     border-right: none;
+}
+
+ #top-bar ul li.sfhover a, #top-bar ul li:hover a {
+     color: #3F497F;
+     border-left: none;
+     border-right: none;
+}
+
+/* SIDE MENU */
+ #side-bar {
+     background: #fff;
+}
+
+ #side-bar .side-block {
+     border: solid 1px #3F497F;
+     border-radius: 0px;
+     background: #FFF !important;
+     box-shadow: none !important;
+}
+
+ #side-bar .heading {
+     padding-left: 5px;
+     padding-top: 3px;
+     height: 18px;
+     color: #FFF;
+     background-color: #3F497F;
+     background-size: cover;
+}
+
+ #side-bar div.menu-item.inactive a {
+     color: #3F497F;
+}
+
+ #side-bar div.menu-item .sub-text {
+     color: #3F497F;
+}
+
+ #side-bar .collapsible-block-folded {
+     background: none;
+}
+
+ #side-bar .collapsible-block-unfolded-link {
+     border-bottom: solid 1px #3F497F;
+}
+
+ #side-bar .collapsible-block-unfolded-link .collapsible-block-link {
+     color: #3F497F;
+}
+
+ #side-bar .collapsible-block-unfolded-link .collapsible-block-link:hover {
+     color: #4F5C9F;
+}
+
+/* YUI-TABS */
+ .yui-navset .yui-content{
+     background-color: #FDFDFD;
+     padding: 15px;
+     font-size: 14px
+}
+
+ .yui-navset .yui-nav a, .yui-navset .yui-navset-top .yui-nav a {
+    background:#FFF url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Arok-gov-theme-jp/body_bg_0.png) repeat-x;
+    border-top: solid #333 1px;
+    border-left: solid #444 1px;
+    border-right: solid #444 1px;
+    color:#000;
+}
+
+ .yui-navset .yui-nav .selected a,
+ .yui-navset .yui-nav .selected a:focus, /* no focus effect for selected */
+ .yui-navset .yui-nav .selected a:hover { /* no hover effect for selected */
+     background: linear-gradient(to bottom, #4F5C9F,#313962); /* selected tab background */
+     border-top: solid #4F5C9F 1px;
+     color: #FFF;
+}
+
+ .yui-navset .yui-nav a:hover,
+ .yui-navset .yui-nav a:focus {
+     background: #DDD;
+     text-decoration: none;
+}
+ .yui-navset .yui-nav,
+ .yui-navset .yui-navset-top .yui-nav {
+     border-color: #313962;
+}
+
+/* Rating Module */
+ .page-rate-widget-box{
+     box-shadow: none;
+}
+
+ .page-rate-widget-box .rate-points {
+     background-color: #3F497F !important;
+     border: solid 1px #3F497F;
+     color: #FFF;
+}
+
+ .page-rate-widget-box .rateup, .page-rate-widget-box .ratedown {
+     background-color: #B0B4CF;
+     border-top: solid 1px #3F497F;
+     border-bottom: solid 1px #3F497F;
+}
+
+ .page-rate-widget-box .rateup a, .page-rate-widget-box .ratedown a {
+     color: #3F497F;
+}
+
+ .page-rate-widget-box .rateup a:hover, .page-rate-widget-box .ratedown a:hover {
+     background: #3F497F;
+     color: #B0B4CF;
+}
+
+ .page-rate-widget-box .cancel {
+     background-color: #3F497F;
+     border: solid 1px #3F497F;
+}
+
+ .page-rate-widget-box .cancel a {
+     color: #FFF;
+}
+
+ .page-rate-widget-box .cancel a:hover {
+     background-color: #B0B4CF;
+     color: #3F497F;
+}
+
+/* Info Rating Module */
+
+ .rate-box-with-credit-button {
+     background-color: #3F497F !important;
+     border: 1px solid #3F497F !important;
+     border-radius: 5px !important;
+     box-shadow: none !important;
+}
+
+ .rate-box-with-credit-button .creditButton p a {
+     border-left-color: #3F497F !important;
+     color: #FFF;
+}
+
+ .rate-box-with-credit-button .creditButton p a:hover {
+     color: #B0B4CF;
+}
+
+ .rate-box-with-credit-button .page-rate-widget-box .cancel {
+     border-radius: 0;
+}
+
+ .rate-box-with-credit-button .page-rate-widget-box .rate-points {
+     border-left: 0;
+}
+
+#page-content .rate-box-with-credit-button .creditButton {
+    background-color: #3F497F;
+    border: solid 1px #3F497F;
+    box-shadow: none;
+}
+
+/* Heritage Collection Rating Module */
+
+ .heritage-rating-module {
+     background-color: #3F497F;
+     box-shadow: none;
+}
+
+/* Mobile Media Query */
+ @media (max-width: 479px) {
+     #header {
+         background-position: 0 5.5em;
+         background-size: 55px 55px;
+    }
+     #header h1 a {
+         font-size: 100%;
+    }
+     #header h1, #header h2 {
+         margin-left: 66px;
+    }
+     #header h2 span {
+         letter-spacing: -1.5px;
+    }
+}
+/* Small Mobile Media Query */
+ @media (max-width: 385px) {
+     #header {
+         background-position: 5% 5.5em;
+    }
+     #header h1, #header h2 {
+         margin-left: -webkit-calc(66px + 5%);
+         margin-left: -moz-calc(66px + 5%);
+         margin-left: calc(66px + 5%);
+    }
+     #header h2 span {
+         letter-spacing: -1.5px;
+    }
+}
+/* Note Media Query */
+ @media (min-width: 480px) and (max-width: 580px) {
+     #header {
+         background-position: 0.5em 4.5em;
+         background-size: 66px 66px;
+    }
+     #header h1 a {
+         font-size: 120%;
+    }
+     #header h1, #header h2 {
+         margin-left: 80px;
+    }
+}
+/* Mini Tablet Media Query */
+ @media (min-width: 581px) and (max-width: 767px) {
+     #header {
+         background-position: 1em 4em;
+         background-size: 77px 77px;
+    }
+     #header h1 a {
+         font-size: 140%;
+    }
+     #header h1, #header h2 {
+         margin-left: 93px;
+    }
+}
+/* Tablet Media Query */
+ @media (min-width: 768px) and (max-width: 979px) {
+     #header {
+         background-size: 88px 88px;
+    }
+     #header h1 a {
+         font-size: 160%;
+    }
+     #header h1, #header h2 {
+         margin-left: 106px;
+    }
+}
+
+/* Interwiki */
+ #side-bar .scpnet-interwiki-wrapper iframe.scpnet-interwiki-frame {
+     border: none;
+     padding: 0;
+     box-radius: 0px;
+     box-shadow: none;
+     background-color: #fff !important;
+     -webkit-filter: hue-rotate(220deg) brightness(126%);
+     filter: hue-rotate(220deg) brightness(126%);
+}
+
+ @media (max-width: 767px) {
+     #side-bar .scpnet-interwiki-wrapper iframe.scpnet-interwiki-frame {
+        background-color: transparent !important;
+    }
+}
+
+ 
+[[/module]]
+
++ GoI フォーマット用の追加コード
+
+[[code CSS]]
+:root {
+     --margin-left: 15px;
+}
+
+ #page-title {
+     display: none;
+}
+
+ .report{
+     width:90%;
+     margin-left: var(--margin-left);
+     background:#fdfdfd;
+     border:1px solid grey;
+     padding: 15px;
+     font-size:14px;
+     
+}
+
+ .summary{
+     width:90%;
+     margin:auto;
+     background:#fff;
+     border:1px solid grey;
+     padding: 0 15px 0 15px;
+     font-size:15px;
+}
+
+ .yui-navset .yui-content{
+     width: 90%;
+     margin-left: var(--margin-left);
+}
+
+ .yui-navset .yui-nav,
+ .yui-navset .yui-navset-top .yui-nav{
+     width: 95%;
+     border-color: transparent;
+     border: solid 0px transparent;
+     margin-left: var(--margin-left)
+}
+
+ ul {
+     list-style-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Arok-gov-theme-jp/square.png);
+     margin: 15px 0;
+     padding: 0 5px 0 30px;
+}
+
+ ul ul, ol ul {
+     list-style: square;
+     margin: 15px 0;
+     padding: 0 0 0 20px;
+}
+
+ ul ul ul, ol ul ul {
+     list-style: circle;
+}
+
+/* Mobile Media Query */
+ @media (max-width: 479px) {
+     :root {
+          --margin-left: 0px;
+     }
+}
+[[/code]]
+
+[[#if {$format-disable} | [!-- | ]]
+[[module CSS show="false"]]
+:root {
+     --margin-left: 15px;
+}
+
+ #page-title {
+     display: none;
+}
+
+ .report{
+     width:90%;
+     margin-left: var(--margin-left);
+     background:#fdfdfd;
+     border:1px solid grey;
+     padding: 15px;
+     font-size:14px;
+     
+}
+
+ .summary{
+     width:90%;
+     margin:auto;
+     background:#fff;
+     border:1px solid grey;
+     padding: 0 15px 0 15px;
+     font-size:15px;
+}
+
+ .yui-navset .yui-content{
+     width: 90%;
+     margin-left: var(--margin-left);
+}
+
+ .yui-navset .yui-nav,
+ .yui-navset .yui-navset-top .yui-nav{
+     width: 95%;
+     border-color: transparent;
+     border: solid 0px transparent;
+     margin-left: var(--margin-left)
+}
+
+ ul {
+     list-style-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Arok-gov-theme-jp/square.png);
+     margin: 15px 0;
+     padding: 0 5px 0 30px;
+}
+
+ ul ul, ol ul {
+     list-style: square;
+     margin: 15px 0;
+     padding: 0 0 0 20px;
+}
+
+ ul ul ul, ol ul ul {
+     list-style: circle;
+}
+
+/* Mobile Media Query */
+ @media (max-width: 479px) {
+     :root {
+          --margin-left: 0px;
+     }
+}
+[[/module]]
+[[#if {$format-disable} | --] | ]]
+
+[[/div]]
