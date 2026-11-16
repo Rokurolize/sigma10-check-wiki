@@ -7,10 +7,11 @@ Sigma-10 display-check composition used by the SCP-JP theme-porting work:
 - Wikijump check wiki: stafflab site 6000303 (`scp-jp-sigma10`), served at
   `https://codex-wsl-maintenance.tail3a09a5.ts.net:8443/`
 
-`pages/<fullname>.txt` holds the canonical text of each page (122 pages: the
-`start` index, every theme sample, the shared decoration body
-`theme-decoration-sample`, the locally held theme pages, and the SCP sample
-pages). The canonical text is the Wikidot-side text. The Wikijump side is the
+`pages/<fullname>.txt` holds the canonical text of each page (1,013 pages:
+the `start` index and its seven generated table subpages, every theme
+sample, the shared decoration body `theme-decoration-sample`, the locally
+held theme pages, and the SCP sample pages; the imported existing articles
+live under `pages-existing/`). The canonical text is the Wikidot-side text. The Wikijump side is the
 same text after the environment transforms documented in `ALLOWLIST.md`
 (entries A1 and A2, which apply only inside `theme-decoration-sample`), plus
 at most a trailing-newline difference, which is not a difference.
