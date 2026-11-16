@@ -4,8 +4,10 @@
 The theme table of the Sigma-10 display-check index used to live inside
 pages/start.txt as one ~168,000-character page. It now lives as structured
 data in start-themes.tsv (one row per theme), and this script renders the
-seven subpages under pages/ (start:themes-*). pages/start.txt itself is a
-hand-maintained hub that links to the subpages; it is not generated.
+subpages under pages/ (start:themes-*), grouped by the branch the theme
+was created in (the TSV `page` column holds the origin code: jp/en/cn/
+ko/fr). pages/start.txt itself is a hand-maintained hub that links to
+the subpages; it is not generated.
 
 Usage:
   python3 build_start.py           regenerate the subpages in pages/
@@ -46,20 +48,46 @@ PARITY_PAGE = "start:wikijump-parity"
 WD = "https://sigma10-jp-test.wikidot.com/"
 WJ = "https://codex-wsl-maintenance.tail3a09a5.ts.net:8443/"
 
-PAGE_ORDER = ["stage1", "en-1", "en-2", "en-3", "cn-1", "cn-2", "ko"]
-PAGE_TITLES = {
-    "stage1": "テーマ表（既存JPテーマ）",
-    "en-1": "テーマ表（EN原典テーマ 1/3）",
-    "en-2": "テーマ表（EN原典テーマ 2/3）",
-    "en-3": "テーマ表（EN原典テーマ 3/3）",
-    "cn-1": "テーマ表（CN原典テーマ 1/2）",
-    "cn-2": "テーマ表（CN原典テーマ 2/2）",
-    "ko": "テーマ表（KO原典テーマ）",
-}
+# The subpages are grouped by the branch the theme was created in
+# (its origin), which is the categorization a reader expects: a theme
+# posted on SCP-JP as a translation belongs to its origin branch's
+# table, not to a "posted themes" bucket. The TSV `page` column holds
+# the origin code. For themes posted on SCP-JP the origin is the branch
+# tag on the production page (the JP census in the campaign scope
+# record); for unposted themes it is the campaign's originality
+# classification. Within an origin, rows are in sample-slug order and
+# are chunked only for page size.
+ORIGINS = [
+    ("jp", "JP原典テーマ"),
+    ("en", "EN原典テーマ"),
+    ("cn", "CN原典テーマ"),
+    ("ko", "KO原典テーマ"),
+    ("fr", "FR原典テーマ"),
+]
+MAX_ROWS_PER_PAGE = 54
 
 
-def fullname(page):
-    return "start:themes-" + page
+def plan_pages(by_origin):
+    """Return [(fullname, title, rows)] in reading order."""
+    plan = []
+    for code, label in ORIGINS:
+        rows = sorted(by_origin.get(code, []),
+                      key=lambda r: (r["orig_slug"] or r["cand_slug"] or r["name"]))
+        if not rows:
+            continue
+        nchunks = (len(rows) + MAX_ROWS_PER_PAGE - 1) // MAX_ROWS_PER_PAGE
+        base, extra = divmod(len(rows), nchunks)
+        pos = 0
+        for i in range(nchunks):
+            size = base + (1 if i < extra else 0)
+            chunk = rows[pos:pos + size]
+            pos += size
+            if nchunks == 1:
+                plan.append((f"start:themes-{code}", f"テーマ表（{label}）", chunk))
+            else:
+                plan.append((f"start:themes-{code}-{i + 1}",
+                             f"テーマ表（{label} {i + 1}/{nchunks}）", chunk))
+    return plan
 
 
 def sample_links(slug):
@@ -90,17 +118,7 @@ def render_row(r):
     return f"|| {r['name']} || {status} || {detail} ||"
 
 
-def render_page(page, rows):
-    title = PAGE_TITLES[page]
-    idx = PAGE_ORDER.index(page)
-    nav = []
-    if idx > 0:
-        prev = PAGE_ORDER[idx - 1]
-        nav.append(f"前の分冊: [[[{fullname(prev)}|{PAGE_TITLES[prev]}]]]")
-    if idx < len(PAGE_ORDER) - 1:
-        nxt = PAGE_ORDER[idx + 1]
-        nav.append(f"次の分冊: [[[{fullname(nxt)}|{PAGE_TITLES[nxt]}]]]")
-    navline = " ／ ".join(nav)
+def render_page(title, rows, navline):
     lines = [
         "[[=]]",
         f"+ {title}",
@@ -196,22 +214,35 @@ def check_table_contiguity(text, label, problems):
 
 def main():
     mode = sys.argv[1] if len(sys.argv) > 1 else "build"
-    rows, by_page = load_rows()
-    if set(by_page) != set(PAGE_ORDER):
-        print(f"page set mismatch: {sorted(by_page)}", file=sys.stderr)
+    rows, by_origin = load_rows()
+    if set(by_origin) != {code for code, _ in ORIGINS}:
+        print(f"origin set mismatch: {sorted(by_origin)}", file=sys.stderr)
         return 1
+    plan = plan_pages(by_origin)
     if mode == "--toc":
-        for page in PAGE_ORDER:
-            sub = by_page[page]
-            first = sub[0]["orig_slug"] or "amethyst-v2"
-            last = sub[-1]["orig_slug"] or "amethyst-v2"
-            print(f"* [[[{fullname(page)}|{PAGE_TITLES[page]}]]]（{len(sub)}行、{first} から {last} まで）")
+        for fn, title, chunk in plan:
+            first = chunk[0]["orig_slug"] or chunk[0]["name"]
+            last = chunk[-1]["orig_slug"] or chunk[-1]["name"]
+            posted = sum(1 for r in chunk if r["existing"])
+            note = f"、うちSCP-JP投稿済み{posted}行" if posted else ""
+            print(f"* [[[{fn}|{title}]]]（{len(chunk)}行{note}、{first} から {last} まで）")
         return 0
     with open(PARITY_DATA, encoding="utf-8") as f:
         parity = json.load(f)
-    outputs = [(fullname(page), render_page(page, by_page[page])) for page in PAGE_ORDER]
+    outputs = []
+    for i, (fn, title, chunk) in enumerate(plan):
+        nav = []
+        if i > 0:
+            nav.append(f"前の分冊: [[[{plan[i - 1][0]}|{plan[i - 1][1]}]]]")
+        if i < len(plan) - 1:
+            nav.append(f"次の分冊: [[[{plan[i + 1][0]}|{plan[i + 1][1]}]]]")
+        outputs.append((fn, render_page(title, chunk, " ／ ".join(nav))))
     outputs.append((PARITY_PAGE, render_parity(rows, parity)))
     problems = []
+    expected = {label + ".txt" for label, _ in outputs}
+    for name in os.listdir(PAGES_DIR):
+        if name.startswith("start:themes-") and name not in expected:
+            problems.append(f"stale generated file pages/{name} (remove it; its category is retired)")
     for label, text in outputs:
         if len(text) > MAX_PAGE_CHARS:
             problems.append(f"{label}: {len(text)} chars exceeds {MAX_PAGE_CHARS}")
@@ -232,8 +263,8 @@ def main():
         for p in problems:
             print("PROBLEM:", p)
         return 1
-    total = sum(len(by_page[p]) for p in PAGE_ORDER)
-    print(f"OK: {total} rows on {len(PAGE_ORDER)} subpages + parity ledger")
+    total = sum(len(chunk) for _, _, chunk in plan)
+    print(f"OK: {total} rows on {len(plan)} subpages + parity ledger")
     return 0
 
 

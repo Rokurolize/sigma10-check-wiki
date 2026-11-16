@@ -8,7 +8,7 @@ Sigma-10 display-check composition used by the SCP-JP theme-porting work:
   `https://codex-wsl-maintenance.tail3a09a5.ts.net:8443/`
 
 `pages/<fullname>.txt` holds the canonical text of each page (1,013 pages:
-the `start` index and its seven generated table subpages, every theme
+the `start` index and its eight generated table subpages, every theme
 sample, the shared decoration body `theme-decoration-sample`, the locally
 held theme pages, and the SCP sample pages; the imported existing articles
 live under `pages-existing/`). The canonical text is the Wikidot-side text. The Wikijump side is the
@@ -53,15 +53,15 @@ the composition.
 
 ## The /start index is split, and its theme table is generated
 
-`pages/start.txt` is a hub (about 13,000 characters): the introduction,
-how to read the tables, the table of contents, the existing articles
-without a theme row, the site-operations wikis and the comparison
-references. The 287-row theme table lives on seven subpages
-(`start:themes-stage1`, `start:themes-en-1` to `start:themes-en-3`,
-`start:themes-cn-1` to `start:themes-cn-2`, `start:themes-ko`; about
-21,000 to 26,000 characters each), grouped the way a reader looks a theme
-up: the 44 themes posted on real SCP-JP first, then the unposted
-originals by branch (EN, CN, KO), in sample-slug order within a subpage.
+`pages/start.txt` is a hub: the introduction, how to read the tables,
+the table of contents, the site-operations wikis and the comparison
+references. The 287-row theme table lives on eight subpages
+(`start:themes-jp`, `start:themes-en-1` to `start:themes-en-3`,
+`start:themes-cn-1` to `start:themes-cn-2`, `start:themes-ko`,
+`start:themes-fr`), grouped the way a reader looks a theme up: by the
+branch the theme was created in (its origin), in sample-slug order
+within a subpage. A theme posted on SCP-JP as a translation sits in its
+origin branch's table; whether it is posted is per-row information.
 
 The same generator also renders `start:wikijump-parity`, the Wikijump reproduction ledger for the 153 existing articles (kept separate from the theme tables: the tables carry porting/migration state, the ledger is the secondary Wikijump verification record). The subpages are generated. Their source of truth is `start-themes.tsv`
 (one line per row: name, the three status fields, base, reference
