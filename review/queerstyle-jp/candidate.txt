@@ -1,0 +1,170 @@
+[[div style="display: none;"]]
+[[include theme:blankstyle-jp]]
+[[/div]]
+
+[[module CSS]]
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aqueerstyle-jp/1');
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aqueerstyle-jp/1
+]]
+
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** Queerstyleテーマ
+**翻訳責任者:** AI
+**翻訳年:** 2026
+**原題:** Queerstyle CSS
+**著作権者:** Queerious
+**作成年:** 2024
+**初訳時参照リビジョン:** 51
+**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:queerstyle Queerstyle CSS]
+[[include :scp-jp:credit:end-preview]]
+
+これは[[*user Queerious]]によるQueerstyleテーマです。[[*user Placeholder McD]]と[[*user HarryBlank]]による既存の[[[https://scp-wiki.wikidot.com/theme:blankstyle|BLANKSTYLE]]]のフォークです。このフォークでは、ヘッダーをサイト-43専用ではない形に変更し、見出しのフォントを置き換えるなど、小さな変更を加えています。
+
+このテーマでは、[[*user Woedenaz]]による[[[https://scp-wiki.wikidot.com/component:pride-highlighter|ホワイトアウトライン クラシックLGBTQ+プライドロゴ]]]も使用しています。
+
+このスタイルでは'pseudo-div'クラス内の見出しだけを変更し、font-familyをPseudogenesis Productionsに関連するフォントVast Shadowへ変えます。以下に'pseudo-div'クラスの例と、各見出しレベルの例を示します。
+
+[[div class="pseudo-div" style="color: white; padding: 0.2em 1em 1em 1em;"]]
+
++ 見出しレベル1
+++ 見出しレベル2
++++ 見出しレベル3
+++++ 見出しレベル4
++++++ 見出しレベル5
+++++++ 見出しレベル6
+
+[[/div]]
+
+ほかの場所でVast Shadowを使うには、スタイル定義に次を記述してください。
+[[div class="code"]]
+@@font-family: "Vast Shadow", "Noto Sans JP", serif;@@
+[[/div]]
+
+このテーマを使うには、ページの先頭に次を置いてください。
+
+[[div class="code"]]
+@@[[include theme:blankstyle-jp]]@@
+@@[[include theme:queerstyle-jp]]@@
+[[/div]]
+
+[[div class="blockquote"]]
+[[=]]
+重要な注記！ このテーマを機能させるには、両方のテーマを**この順番で**includeする必要があります。
+[[/=]]
+[[/div]]
+
+
+このテーマはQueeriousの作品で使うために設計されていますが、BLANKSTYLEの控えめな中央揃えを好みつつ、サイト-43以外を舞台にした作品で使いたい人なら誰でも利用できます。
+
+**フォント:** 使用している欧文・和文書体はいずれもGoogle Fontsで配信されるオープンライセンスの書体です（SIL Open Font License など）。日本語文字はNoto Sans JPにフォールバックします。
+
+[[/iftags]]
+
+[[div [[iftags -テーマ]]style="display: none"[[/iftags]]]]
+[[include :scp-jp:component:toggle-sidebar]]
+
+>[[ift{$fade}gs +テーマ]]
+[[include :scp-jp:component:fade-in speed=3]]
+>[[/ift{$fade}gs]]
+
+>[[ift{$acs}gs +テーマ]]
+[[include :scp-jp:component:acs-animation]]
+>[[/ift{$acs}gs]]
+
+[[=]]
+[[collapsible show="+ コード" hide="- コード"]]
+[[<]]
+[[code type="CSS"]]
+/*
+    QUEERSTYLE CSS
+    作者: Queerious
+    フォーク元:
+       Placeholder McDとHarryBlankによるBlankstyle CSS
+    使用素材:
+       Woedenazによるホワイトアウトライン クラシックLGBTQ+プライドロゴ（https://scp-wiki.wikidot.com/component:pride-highlighter より）
+*/
+@import url('https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+#header h1 a::before {
+  font-size: 1.2em;
+  text-shadow: 3px 3px 3px #fff;
+}
+
+#header h2::before {
+  font-size: 0.9em;
+  text-shadow: 1px 1px 1px #fff;
+}
+
+#header {
+    margin-top: 0.5em;
+}
+
+:root {
+    --header-title: "SCP財団";
+    --header-subtitle: "確保、収容、保護";
+}
+
+
+@media (max-width: 707px) {
+    #header h1 a::before {
+        font-size: 9vw;
+    }
+}
+
+#top-bar, #top-bar a {
+  text-shadow: 0.75px 0.75px 1px #fff;
+}
+
+div#extra-div-1 {
+    height: 150px;
+    background-image: url('https://scp-jp-storage.wdfiles.com/local--files/file%3A9466112-67-zdsl/gp_logo.svg');
+}
+
+#page-content .creditButton p a {
+    color:#373737;
+}
+
+/* メールコンポーネント補正 */
+#page-content .top-left-box :is(.from-box, .to-box, .cc-box, .subject-box) {
+    margin-right: 0em;
+}
+
+#page-content .top-middle-box :is(.from-name-box, .to-name-box, .cc-text-box, .subject-text-box) {
+    margin-left: 0em;
+}
+
+/* Pseudogenesisフォーマット */
+
+.pseudo-div {
+    border:solid 4px #B22A2A;
+    background:#403450;
+    color: #ffffff;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    font-family: "Vast Shadow", "Noto Sans JP", serif;
+    text-align: center;
+}
+
+.pseudo-div :is(h1,h2,h3,h4,h5,h6) {
+    font-family: "Vast Shadow", "Noto Sans JP", serif;
+    letter-spacing: 0px;
+    font-weight: normal;
+    color: white;
+}
+[[/code]]
+[[/<]]
+[[/collapsible]]
+[[/=]]
+@@ @@
+
+[[module CSS]]
+[[/module]]
+
+[[/div]]
