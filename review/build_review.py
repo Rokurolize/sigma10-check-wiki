@@ -896,8 +896,13 @@ def render_status_block(pkg):
         if "\t" in line:
             k, v = line.split("\t", 1)
             src[k.strip()] = v.strip()
-    commit = (git_last_change(f"review/{pkg.name}/candidate.css",
-                              f"review/{pkg.name}/status.tsv")
+    # The named commit is the last commit touching the material the
+    # stamp vouches for (the original and candidate files). status.tsv
+    # is the stamp's own configuration and the README is generated, so
+    # neither may move it; HEAD would make the field self-referential.
+    inputs = sorted(p.name for p in pkg.glob("original.*")) \
+        + sorted(p.name for p in pkg.glob("candidate.*"))
+    commit = (git_last_change(*[f"review/{pkg.name}/{n}" for n in inputs])
               or git_head())
     out = [STATUS_BEGIN, "| Field | Value |", "|---|---|"]
     for label, key in _STATUS_FIELDS:
