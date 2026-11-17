@@ -1,0 +1,713 @@
+{
+ "tool": "classify_hunks.py",
+ "classifier_version": "0.1.0",
+ "signature_table_version": "2026-11-17.1",
+ "theme": {
+  "dir": "paradigm-inapplicable-jp",
+  "cand_fullname": "theme:paradigm-inapplicable-jp",
+  "orig_fullname": "theme:paradigm-inapplicable",
+  "wiki": "scp-wiki-cn",
+  "revision": "132",
+  "kind": "standard",
+  "verdict": "PASS",
+  "original_file": "review/paradigm-inapplicable-jp/original.txt",
+  "candidate_file": "review/paradigm-inapplicable-jp/candidate.txt",
+  "original_sha256": "333745dc397502cc400384b91a6bfba2b702ae05e281735da5abe0f7b440dc49",
+  "candidate_sha256": "9604baa9b97a04b9e6b859cdd7d711a1d3b0a4d29fea575567be55965c57fdbc",
+  "original_lines": 773,
+  "candidate_lines": 785
+ },
+ "topology": {
+  "original_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     0,
+     5
+    ],
+    "lines": 5
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     10,
+     119
+    ],
+    "lines": 109
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     315,
+     771
+    ],
+    "lines": 456
+   }
+  ],
+  "candidate_components": [
+   {
+    "kind": "code-css",
+    "range": [
+     206,
+     773
+    ],
+    "lines": 567
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     777,
+     781
+    ],
+    "lines": 4
+   }
+  ],
+  "moves": [
+   {
+    "from_kind": "module-css",
+    "to_kind": "code-css",
+    "orig_range": [
+     10,
+     119
+    ],
+    "cand_range": [
+     206,
+     773
+    ],
+    "similarity": 0.978,
+    "basis": "content"
+   }
+  ],
+  "external_own_delivery": false
+ },
+ "blocks": [
+  {
+   "id": "B1",
+   "orig_range": [
+    0,
+    1
+   ],
+   "cand_range": [
+    0,
+    1
+   ],
+   "orig_lines": "1-1",
+   "cand_lines": "1-1",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [
+    "IFTAGS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "IFTAGS",
+   "primary_section": 2,
+   "label_prec": {
+    "IFTAGS": "A",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "IFTAGS": {
+     "orig": [],
+     "cand": [
+      [
+       0,
+       1
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[module CSS]]",
+   "first_added": "[[iftags +テーマ]]"
+  },
+  {
+   "id": "B2",
+   "orig_range": [
+    2,
+    3
+   ],
+   "cand_range": [
+    2,
+    12
+   ],
+   "orig_lines": "3-3",
+   "cand_lines": "3-12",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [
+    "CREDIT-PREVIEW",
+    "CREDIT-PROSE",
+    "DELIVERY-HOST",
+    "SELF-DELIVERY",
+    "TASL-FIELDS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "CREDIT-PREVIEW",
+   "primary_section": 1,
+   "label_prec": {
+    "CREDIT-PREVIEW": "A",
+    "TASL-FIELDS": "A",
+    "DELIVERY-HOST": "A",
+    "SELF-DELIVERY": "A",
+    "TRANS-UNANCHORED": "C",
+    "CREDIT-PROSE": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "CREDIT-PREVIEW": {
+     "cand": [
+      [
+       2,
+       3
+      ],
+      [
+       11,
+       12
+      ]
+     ]
+    },
+    "TASL-FIELDS": {
+     "cand": [
+      [
+       3,
+       11
+      ]
+     ]
+    },
+    "DELIVERY-HOST": {
+     "orig": [
+      [
+       2,
+       3
+      ]
+     ],
+     "cand": [
+      [
+       10,
+       11
+      ]
+     ]
+    },
+    "SELF-DELIVERY": {
+     "orig": [
+      [
+       2,
+       3
+      ]
+     ],
+     "cand": []
+    },
+    "TRANS-UNANCHORED": {},
+    "CREDIT-PROSE": {}
+   },
+   "notes": [
+    "script delta without the anchor majority",
+    "position: inside the credit include pair"
+   ],
+   "partial_notes": [],
+   "first_removed": "@import url(\"https://scp-wiki-cn.wdfiles.com/local--code/theme%3Aparadigm-inapplicable/1\");",
+   "first_added": "[[include :scp-jp:credit:start-preview]]"
+  },
+  {
+   "id": "B3",
+   "orig_range": [
+    4,
+    5
+   ],
+   "cand_range": [
+    13,
+    14
+   ],
+   "orig_lines": "5-5",
+   "cand_lines": "14-14",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[/module]]",
+   "first_added": "<iframe src=\"//interwiki.scp-jp.org/styleFrame.html?bhl\" name=\"typeFrame\"></iframe>"
+  },
+  {
+   "id": "B4",
+   "orig_range": [
+    6,
+    7
+   ],
+   "cand_range": [
+    15,
+    17
+   ],
+   "orig_lines": "7-7",
+   "cand_lines": "16-17",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "====",
+   "first_added": "[[>]]"
+  },
+  {
+   "id": "B5",
+   "orig_range": [
+    8,
+    9
+   ],
+   "cand_range": [
+    18,
+    19
+   ],
+   "orig_lines": "9-9",
+   "cand_lines": "19-19",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "IFTAGS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "IFTAGS",
+   "primary_section": 2,
+   "label_prec": {
+    "IFTAGS": "A",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "IFTAGS": {
+     "orig": [
+      [
+       8,
+       9
+      ]
+     ],
+     "cand": []
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[iftags +版式]]",
+   "first_added": "**著者:** [[*user Mercuresphere]]"
+  },
+  {
+   "id": "B6",
+   "orig_range": [
+    10,
+    11
+   ],
+   "cand_range": [
+    20,
+    214
+   ],
+   "orig_lines": "11-11",
+   "cand_lines": "21-214",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "JPFONT-LOAD",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "JPFONT-LOAD": "A",
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "JPFONT-LOAD": {
+     "cand": [
+      [
+       213,
+       214
+      ]
+     ]
+    },
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "orig": [
+      [
+       10,
+       11
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "absence claim needs base subtraction (resolved base)",
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[module css]]",
+   "first_added": "ヘッダー画像: https://pixabay.com/images/id-1572988"
+  },
+  {
+   "id": "B7",
+   "orig_range": [
+    117,
+    317
+   ],
+   "cand_range": [
+    320,
+    320
+   ],
+   "orig_lines": "118-317",
+   "cand_lines": "at 321",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [
+    "EXHIBIT-RESTRUCTURE",
+    "RATE-EXHIBIT-KEPT-CANDIDATE"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "RATE-EXHIBIT-KEPT-CANDIDATE": "B",
+    "EXHIBIT-RESTRUCTURE": "C"
+   },
+   "tier": "B",
+   "label_spans": {
+    "RATE-EXHIBIT-KEPT-CANDIDATE": {
+     "orig": [
+      [
+       127,
+       128
+      ]
+     ]
+    },
+    "EXHIBIT-RESTRUCTURE": {}
+   },
+   "notes": [
+    "removed Rate sits beside an exhibit label; routed to residue for the writer's kept-vs-removed reasoning",
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced"
+   ],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": ""
+  },
+  {
+   "id": "B8",
+   "orig_range": [
+    323,
+    324
+   ],
+   "cand_range": [
+    326,
+    327
+   ],
+   "orig_lines": "324-324",
+   "cand_lines": "327-327",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DUPIMPORT-DEL"
+   ],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {
+    "DUPIMPORT-DEL": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DUPIMPORT-DEL": {
+     "orig": [
+      [
+       323,
+       324
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "@import url(\"https://fastly.jsdelivr.net/gh/Crimone/crimson-anemone@2.4.4/dustjacket.css\");",
+   "first_added": ""
+  },
+  {
+   "id": "B9",
+   "orig_range": [
+    362,
+    366
+   ],
+   "cand_range": [
+    365,
+    369
+   ],
+   "orig_lines": "363-366",
+   "cand_lines": "366-369",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       365,
+       369
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "anchored pairs 4/4"
+   ],
+   "partial_notes": [],
+   "first_removed": "    --header-font: \"Anonymous Pro\", 'punctuation-marks-altered', 'HanWang WeiBeiMedium-Gb5', Consolas, 'Noto Serif SC', monospace;",
+   "first_added": "    --header-font: \"Anonymous Pro\", 'punctuation-marks-altered', 'HanWang WeiBeiMedium-Gb5', Consolas, 'Noto Serif JP', monospace;"
+  },
+  {
+   "id": "B10",
+   "orig_range": [
+    748,
+    750
+   ],
+   "cand_range": [
+    751,
+    753
+   ],
+   "orig_lines": "749-750",
+   "cand_lines": "752-753",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "GLYPH-FORM",
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "GLYPH-FORM": "B",
+    "TRANSLATION-ANCHORED": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "GLYPH-FORM": {},
+    "TRANSLATION-ANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       751,
+       753
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "fold-compare: glyph forms only",
+    "anchored pairs 2/2"
+   ],
+   "partial_notes": [],
+   "first_removed": "        --UI-font: \"EB Garamond\", Big Caslon, Book Antiqua, Palatino Linotype, 'Noto Serif SC', Georgia, serif;",
+   "first_added": "        --UI-font: \"EB Garamond\", Big Caslon, Book Antiqua, Palatino Linotype, 'Noto Serif JP', Georgia, serif;"
+  },
+  {
+   "id": "B11",
+   "orig_range": [
+    769,
+    770
+   ],
+   "cand_range": [
+    772,
+    772
+   ],
+   "orig_lines": "770-770",
+   "cand_lines": "at 773",
+   "channel_pair": [
+    "code-css",
+    "body"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": ""
+  },
+  {
+   "id": "B12",
+   "orig_range": [
+    772,
+    772
+   ],
+   "cand_range": [
+    774,
+    775
+   ],
+   "orig_lines": "at 773",
+   "cand_lines": "775-775",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": ""
+  },
+  {
+   "id": "B13",
+   "orig_range": [
+    773,
+    773
+   ],
+   "cand_range": [
+    776,
+    785
+   ],
+   "orig_lines": "at 774",
+   "cand_lines": "777-785",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "DRAFT-HOST",
+    "SELF-DELIVERY"
+   ],
+   "primary": "SELF-DELIVERY",
+   "primary_section": 3,
+   "label_prec": {
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "SELF-DELIVERY": {
+     "orig": [],
+     "cand": [
+      [
+       779,
+       780
+      ],
+      [
+       783,
+       784
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       779,
+       780
+      ],
+      [
+       783,
+       784
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": ""
+  }
+ ],
+ "derived_presence": {},
+ "summary": {
+  "blocks": 13,
+  "specific": 9,
+  "heuristic": 0,
+  "residue": 4,
+  "skipped": 0,
+  "reindent_blocks": 0,
+  "label_counts": {
+   "IFTAGS": 2,
+   "TRANS-UNANCHORED": 4,
+   "CREDIT-PREVIEW": 1,
+   "CREDIT-PROSE": 1,
+   "DELIVERY-HOST": 1,
+   "SELF-DELIVERY": 2,
+   "TASL-FIELDS": 1,
+   "COMMENT-TEXT": 1,
+   "DELIVERY-MOVE": 3,
+   "JPFONT-LOAD": 1,
+   "EXHIBIT-RESTRUCTURE": 1,
+   "RATE-EXHIBIT-KEPT-CANDIDATE": 1,
+   "DUPIMPORT-DEL": 1,
+   "TRANSLATION-ANCHORED": 2,
+   "GLYPH-FORM": 1,
+   "DRAFT-HOST": 1
+  }
+ },
+ "residue": [
+  "B3",
+  "B4",
+  "B11",
+  "B12"
+ ],
+ "skeleton": {
+  "sha256": "86ab91b42549d3e5036695e827bb59136b7eca871f463564922d2ab3ce343274",
+  "status": "written (new)"
+ }
+}

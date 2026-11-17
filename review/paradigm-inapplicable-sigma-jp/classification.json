@@ -1,0 +1,652 @@
+{
+ "tool": "classify_hunks.py",
+ "classifier_version": "0.1.0",
+ "signature_table_version": "2026-11-17.1",
+ "theme": {
+  "dir": "paradigm-inapplicable-sigma-jp",
+  "cand_fullname": "theme:paradigm-inapplicable-sigma-jp",
+  "orig_fullname": "theme:paradigm-inapplicable-sigma",
+  "wiki": "scp-wiki-cn",
+  "revision": "91",
+  "kind": "standard",
+  "verdict": "PASS",
+  "original_file": "review/paradigm-inapplicable-sigma-jp/original.txt",
+  "candidate_file": "review/paradigm-inapplicable-sigma-jp/candidate.txt",
+  "original_sha256": "5565f42368235b3ade332b55c7a4d4997042dffa7c89cf5542d1819a1815bc62",
+  "candidate_sha256": "eed8175f935cb9e3b0a98f0e5626162c327ecd255c67ead7998ce77bd7fabb2e",
+  "original_lines": 422,
+  "candidate_lines": 435
+ },
+ "topology": {
+  "original_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     2,
+     7
+    ],
+    "lines": 5
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     12,
+     121
+    ],
+    "lines": 109
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     308,
+     420
+    ],
+    "lines": 112
+   }
+  ],
+  "candidate_components": [
+   {
+    "kind": "code-css",
+    "range": [
+     199,
+     424
+    ],
+    "lines": 225
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     428,
+     431
+    ],
+    "lines": 3
+   }
+  ],
+  "moves": [
+   {
+    "from_kind": "module-css",
+    "to_kind": "code-css",
+    "orig_range": [
+     12,
+     121
+    ],
+    "cand_range": [
+     199,
+     424
+    ],
+    "similarity": 0.978,
+    "basis": "content"
+   }
+  ],
+  "external_own_delivery": false
+ },
+ "blocks": [
+  {
+   "id": "B1",
+   "orig_range": [
+    0,
+    1
+   ],
+   "cand_range": [
+    0,
+    1
+   ],
+   "orig_lines": "1-1",
+   "cand_lines": "1-1",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "COMPONENT-SWAP",
+    "INCLUDE-REPOINT"
+   ],
+   "primary": "COMPONENT-SWAP",
+   "primary_section": 2,
+   "label_prec": {
+    "INCLUDE-REPOINT": "A",
+    "COMPONENT-SWAP": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "INCLUDE-REPOINT": {
+     "orig": [
+      [
+       0,
+       1
+      ]
+     ],
+     "cand": [
+      [
+       0,
+       1
+      ]
+     ]
+    },
+    "COMPONENT-SWAP": {
+     "orig": [
+      [
+       0,
+       1
+      ]
+     ],
+     "cand": [
+      [
+       0,
+       1
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[include :scp-wiki-cn:theme:dustframe]]",
+   "first_added": "[[include theme:dustframe-jp]]"
+  },
+  {
+   "id": "B2",
+   "orig_range": [
+    2,
+    3
+   ],
+   "cand_range": [
+    2,
+    3
+   ],
+   "orig_lines": "3-3",
+   "cand_lines": "3-3",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [
+    "IFTAGS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "IFTAGS",
+   "primary_section": 2,
+   "label_prec": {
+    "IFTAGS": "A",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "IFTAGS": {
+     "orig": [],
+     "cand": [
+      [
+       2,
+       3
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[module css]]",
+   "first_added": "[[iftags +テーマ]]"
+  },
+  {
+   "id": "B3",
+   "orig_range": [
+    4,
+    5
+   ],
+   "cand_range": [
+    4,
+    14
+   ],
+   "orig_lines": "5-5",
+   "cand_lines": "5-14",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [
+    "CREDIT-PREVIEW",
+    "CREDIT-PROSE",
+    "DELIVERY-HOST",
+    "SELF-DELIVERY",
+    "TASL-FIELDS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "CREDIT-PREVIEW",
+   "primary_section": 1,
+   "label_prec": {
+    "CREDIT-PREVIEW": "A",
+    "TASL-FIELDS": "A",
+    "DELIVERY-HOST": "A",
+    "SELF-DELIVERY": "A",
+    "TRANS-UNANCHORED": "C",
+    "CREDIT-PROSE": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "CREDIT-PREVIEW": {
+     "cand": [
+      [
+       4,
+       5
+      ],
+      [
+       13,
+       14
+      ]
+     ]
+    },
+    "TASL-FIELDS": {
+     "cand": [
+      [
+       5,
+       13
+      ]
+     ]
+    },
+    "DELIVERY-HOST": {
+     "orig": [
+      [
+       4,
+       5
+      ]
+     ],
+     "cand": [
+      [
+       12,
+       13
+      ]
+     ]
+    },
+    "SELF-DELIVERY": {
+     "orig": [
+      [
+       4,
+       5
+      ]
+     ],
+     "cand": []
+    },
+    "TRANS-UNANCHORED": {},
+    "CREDIT-PROSE": {}
+   },
+   "notes": [
+    "script delta without the anchor majority",
+    "position: inside the credit include pair"
+   ],
+   "partial_notes": [],
+   "first_removed": "@import url(\"https://scp-wiki-cn.wdfiles.com/local--code/theme%3Aparadigm-inapplicable-sigma/1\");",
+   "first_added": "[[include :scp-jp:credit:start-preview]]"
+  },
+  {
+   "id": "B4",
+   "orig_range": [
+    6,
+    7
+   ],
+   "cand_range": [
+    15,
+    16
+   ],
+   "orig_lines": "7-7",
+   "cand_lines": "16-16",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[/module]]",
+   "first_added": "<iframe src=\"//interwiki.scp-jp.org/styleFrame.html?bhl\" name=\"typeFrame\"></iframe>"
+  },
+  {
+   "id": "B5",
+   "orig_range": [
+    8,
+    9
+   ],
+   "cand_range": [
+    17,
+    19
+   ],
+   "orig_lines": "9-9",
+   "cand_lines": "18-19",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "====",
+   "first_added": "[[>]]"
+  },
+  {
+   "id": "B6",
+   "orig_range": [
+    10,
+    11
+   ],
+   "cand_range": [
+    20,
+    21
+   ],
+   "orig_lines": "11-11",
+   "cand_lines": "21-21",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "IFTAGS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "IFTAGS",
+   "primary_section": 2,
+   "label_prec": {
+    "IFTAGS": "A",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "IFTAGS": {
+     "orig": [
+      [
+       10,
+       11
+      ]
+     ],
+     "cand": []
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[iftags +版式]]",
+   "first_added": "**著者:** [[*user Mercuresphere]]"
+  },
+  {
+   "id": "B7",
+   "orig_range": [
+    12,
+    13
+   ],
+   "cand_range": [
+    22,
+    207
+   ],
+   "orig_lines": "13-13",
+   "cand_lines": "23-207",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "JPFONT-LOAD",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "JPFONT-LOAD": "A",
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "JPFONT-LOAD": {
+     "cand": [
+      [
+       206,
+       207
+      ]
+     ]
+    },
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "orig": [
+      [
+       12,
+       13
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "absence claim needs base subtraction (resolved base)",
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[module css]]",
+   "first_added": "ヘッダー画像: https://pixabay.com/images/id-1572988"
+  },
+  {
+   "id": "B8",
+   "orig_range": [
+    119,
+    309
+   ],
+   "cand_range": [
+    313,
+    313
+   ],
+   "orig_lines": "120-309",
+   "cand_lines": "at 314",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [
+    "EXHIBIT-RESTRUCTURE",
+    "RATE-EXHIBIT-KEPT-CANDIDATE"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "RATE-EXHIBIT-KEPT-CANDIDATE": "B",
+    "EXHIBIT-RESTRUCTURE": "C"
+   },
+   "tier": "B",
+   "label_spans": {
+    "RATE-EXHIBIT-KEPT-CANDIDATE": {
+     "orig": [
+      [
+       129,
+       130
+      ]
+     ]
+    },
+    "EXHIBIT-RESTRUCTURE": {}
+   },
+   "notes": [
+    "removed Rate sits beside an exhibit label; routed to residue for the writer's kept-vs-removed reasoning",
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced"
+   ],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": ""
+  },
+  {
+   "id": "B9",
+   "orig_range": [
+    319,
+    321
+   ],
+   "cand_range": [
+    323,
+    325
+   ],
+   "orig_lines": "320-321",
+   "cand_lines": "324-325",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       323,
+       325
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    --header-font: \"Anonymous Pro\", 'zuijinregular', 'Poppins', sans-serif;",
+   "first_added": "    --header-font: \"Anonymous Pro\", 'zuijinregular', 'Poppins', 'Noto Serif JP', sans-serif;"
+  },
+  {
+   "id": "B10",
+   "orig_range": [
+    421,
+    421
+   ],
+   "cand_range": [
+    425,
+    426
+   ],
+   "orig_lines": "at 422",
+   "cand_lines": "426-426",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": ""
+  },
+  {
+   "id": "B11",
+   "orig_range": [
+    422,
+    422
+   ],
+   "cand_range": [
+    427,
+    435
+   ],
+   "orig_lines": "at 423",
+   "cand_lines": "428-435",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "DRAFT-HOST",
+    "SELF-DELIVERY"
+   ],
+   "primary": "SELF-DELIVERY",
+   "primary_section": 3,
+   "label_prec": {
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "SELF-DELIVERY": {
+     "orig": [],
+     "cand": [
+      [
+       429,
+       430
+      ],
+      [
+       433,
+       434
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       429,
+       430
+      ],
+      [
+       433,
+       434
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": ""
+  }
+ ],
+ "derived_presence": {},
+ "summary": {
+  "blocks": 11,
+  "specific": 8,
+  "heuristic": 0,
+  "residue": 3,
+  "skipped": 0,
+  "reindent_blocks": 0,
+  "label_counts": {
+   "COMPONENT-SWAP": 1,
+   "INCLUDE-REPOINT": 1,
+   "IFTAGS": 2,
+   "TRANS-UNANCHORED": 4,
+   "CREDIT-PREVIEW": 1,
+   "CREDIT-PROSE": 1,
+   "DELIVERY-HOST": 1,
+   "SELF-DELIVERY": 2,
+   "TASL-FIELDS": 1,
+   "COMMENT-TEXT": 1,
+   "DELIVERY-MOVE": 2,
+   "JPFONT-LOAD": 1,
+   "EXHIBIT-RESTRUCTURE": 1,
+   "RATE-EXHIBIT-KEPT-CANDIDATE": 1,
+   "DRAFT-HOST": 1
+  }
+ },
+ "residue": [
+  "B4",
+  "B5",
+  "B10"
+ ],
+ "skeleton": {
+  "sha256": "97b6efd5cf08d120d3bd469ed7b35a6872360af8e7b75ee7bc345089200b862d",
+  "status": "written (new)"
+ }
+}
