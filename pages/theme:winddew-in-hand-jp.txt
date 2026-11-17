@@ -1,3 +1,6 @@
+[[div style="display: none;"]]
+[[include theme:basalt-jp wide=a|hidetitle={$hidetitle}|centertitle={$centertitle}|acs-itemnum={$acs-itemnum}|disable-acs-anim={$disable-acs-anim}]]
+[[/div]]
 [[iftags +テーマ]]
 
 [[include :scp-jp:credit:start-preview]]
@@ -152,8 +155,21 @@ Basaltテーマと同じものです。
 [[/=]]
 
 タイトルを変更したい場合
+[[code type="css"]]
+:root {
+    --header-title: "メインタイトル";
+    --header-subtitle: "サブタイトル";
+}
+[[/code]]
+
 
 アイコンを変更したい場合
+[[code type="css"]]
+:root {
+--logo: url('画像URL');
+}
+[[/code]]
+
 
 [[include component:image-block name= https://scptestwiki.wdfiles.com/local--files/sigma%3Aspace/spacelogo.png |caption=画像。|width=270px]]
 
@@ -429,12 +445,6 @@ div.papernote {
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
-}
-:root {
-    --header-title: "主标题";
-    --header-subtitle: "副标题";
-:root {
---logo: url('图片url');
 }
 [[/code]]
 [[/collapsible]]
