@@ -1,0 +1,136 @@
+/*
+  SCP-JP Sandbox III (SB3) site override layer — Sigma-10 port.
+  Authored for this review package; not deployed. Production SB3 still serves
+  the full 32 KB Sigma-9 fork mirrored as original.css.
+
+  The original is a whole Sigma-9 fork, so the port does not re-base it rule by
+  rule. Per REPORT24 §4 (SB3 items 1-5) and the /start SB3 row, the fork is
+  replaced by the Sigma-10 JP base (the import below) plus only the
+  site-specific deltas, re-expressed on Sigma-10 selectors:
+
+    S1 green search field / button   S2 green top-bar hover
+    S3 sidebar width + drawer colour S4 sandbox header / body art
+    S5 site name + h2 subtitle       S6 narrow search-box placement
+
+  S7 (full-width, right-aligned top bar), S8 (content min-height), S9 (Font
+  Awesome), S10 (management top-bar hiding) and S11 (shared sidebar CSS) are
+  adjudicated in README.md; the first two are already supplied by the base,
+  S9 is decided in favour of the base's 4.3, and S10/S11 are separate admin
+  layers that stay outside this file.
+*/
+@import url(https://scp-jp.github.io/sigma/css/sigma.min.css);
+
+/* S4 — sandbox art on the Sigma-10 header/body selectors. The shorthand
+   resets the base's background-size/position, so the logo keeps SB3's
+   natural size and 10px 40px placement at every width. */
+div#container-wrap {
+    background: url(/files/util/sandbox/media/component/theme/body_bg.png) top left repeat-x;
+}
+
+#header {
+    background: url(/files/util/sandbox/media/component/theme/logo.png) 10px 40px no-repeat;
+}
+
+/* S5 — site name + subtitle. Sigma-10 hides the h1 span at all widths and
+   prints "SCP" + "財団" through the two pseudos; both must be overridden so
+   the header reads exactly the sandbox site name. The subtitle text lives in
+   the site's h2 span (Wikidot site field), so SB3's subtitle presentation is
+   restated on the new base rather than hardcoded with a content: string. */
+#header h1 a::before {
+    content: "SCP-JPサンドボックスⅢ";
+}
+
+#header h1 a::after {
+    content: none;
+}
+
+#header h2 span {
+    display: block;
+    max-height: 0;
+    padding: 19px 0;
+    margin: 0;
+    font-weight: bold;
+    line-height: 0;
+    color: #f0f0c0;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
+}
+
+/* S1 — green search field/button. Sigma-10 sets display:none on the text
+   input; restore it so the green field is visible, and repaint the submit
+   button's gradient from the base's red to SB3's green. */
+#search-top-box-input {
+    display: inline-block;
+    color: #cccccc;
+    background-color: #003300;
+    border: solid 1px #999999;
+    border-radius: 5px;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, .5);
+}
+
+#search-top-box-input:hover,
+#search-top-box-input:focus {
+    color: #ffffff;
+    background-color: #32a18e;
+    border: solid 1px #ffffff;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, .8);
+}
+
+#search-top-box-form input[type = "submit"] {
+    color: #cccccc;
+    background: linear-gradient(to bottom, #226e61, #32a18e, #003300);
+    background-color: #32a18e;
+    border: solid 1px #999999;
+    border-radius: 5px;
+}
+
+#search-top-box-form input[type = "submit"]:hover,
+#search-top-box-form input[type = "submit"]:focus {
+    color: #ffffff;
+    background: linear-gradient(to bottom, #42d4bb, #226e61, #32a18e);
+    background-color: #226e61;
+    border: solid 1px #ffffff;
+}
+
+/* S2 — green-on-dark top-bar hover, on the Sigma-10 top-bar selectors. */
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a {
+    color: #00aa11;
+    background: #333333;
+    border-right: solid 1px rgba(64, 64, 64, 1);
+    border-left: solid 1px rgba(64, 64, 64, 1);
+}
+
+#top-bar ul li.sfhover a:hover,
+#top-bar ul li:hover a:hover {
+    background: #333333;
+}
+
+#top-bar a:hover,
+#top-bar ul li ul a {
+    color: #00aa11;
+}
+
+/* S3 — wider, left-aligned sidebar on the Sigma-10 selector. */
+#side-bar {
+    width: 17em;
+    left: 0;
+    margin: 0 0 0 2em;
+}
+
+/* S3 drawer — the base's off-canvas sidebar is #b88686 / 15rem; repaint it
+   SB3 green at the same 17em width as the desktop sidebar. */
+@media (max-width: 767px) {
+    #side-bar {
+        width: 17em;
+        background-color: rgb(50, 161, 142);
+    }
+}
+
+/* S6 — SB3's narrow-width search-box placement (top 115 / right 2),
+   re-expressed at the same <=479px breakpoint the original used. */
+@media (max-width: 479px) {
+    #search-top-box {
+        top: 115px;
+        right: 2px;
+    }
+}
