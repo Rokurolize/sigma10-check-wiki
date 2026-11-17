@@ -1,0 +1,240 @@
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aalcur-theme-jp/1
+]]
+
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** アルカー病院テーマ
+**翻訳責任者:** AI
+**翻訳年:** 2026
+**原題:** The Alcur Hospital Theme
+**著作権者:** ApothecaryCat21 & dxxander
+**作成年:** 2026
+**初訳時参照リビジョン:** 33
+**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:alcur-theme ソース]
+[[include :scp-jp:credit:end-preview]]
+
+Alcur Hospital向けのBasaltベーステーマです。
+
+**使い方:** @@[[include theme:alcur-theme-jp]]@@
+
+**基盤:** Basalt
+
+[[module CSS]]
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Abasalt-jp/1');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*-- delivery: the Basalt base is referenced by the @import of theme:basalt-jp/1 above; it is not copied inline.
+    What follows is this theme's own override layer only. --*/
+
+/*-- preserved from the former inlined base copy: the three rules below are not delivered by the
+    current theme:basalt-jp/1 (they survive in the EN base snapshot); kept verbatim so the effective
+    cascade is unchanged. --*/
+#revision-list .page-history tr[id*="revision-row"] td:nth-child(7) {
+    font-family: var(--mono-font);
+}
+
+div.anom-bar > div.top-box {
+    grid-template-columns: auto 1fr auto;
+}
+
+:where(#page-content) table:not(.form), table.wiki-content-table {
+    margin: 0rem auto;
+}
+
+
+#page-title {
+    display: none !important;
+}
+
+
+
+.top-left-box>.item {
+    display: none;
+}
+
+
+
+/*-- collapsibles --*/
+#page-content .collapsible-block-folded:not(.licensebox a, .info-container a, .default-style div),
+#page-content .collapsible-block-unfolded-link:not(.licensebox a, .info-container a, .default-style div) {
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+}
+
+#page-content a.collapsible-block-link:not(.licensebox a, .info-container a, .default-style a) {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(var(--basalt-light-text-color));
+  padding: 4px 9px 4px 7px;
+  background: rgb(var(--header-title-color));
+  border-radius: 6px;
+  margin-top: 5px;
+  box-shadow: inset 0px 0px 0px 2px rgba(0, 0, 0, 0.4);
+  transition-duration: 0.4s;
+  display: inline-block;
+  min-width: 200px;
+  min-height: 20px;
+}
+#page-content a.collapsible-block-link:not(.licensebox a, .info-container a, .default-style a):hover {
+  background: rgb(var(--header-background-color));
+  box-shadow: none;
+}
+.collapsible-block-unfolded:not(.default-style div, .no-animation div) .collapsible-block-content[style*="block"] {
+  overflow: hidden;
+  animation: tab-appear 1s 1 both;
+}
+
+
+/*-- memo --*/
+.alcur-memo {
+    --memo-txt-color: var(--txt-color2);
+    --memo-bg-color: 198, 223, 237;
+    --memo-logo: url("https://scp-wiki.wikidot.com/local--files/theme%3Aalcur-theme/logo-dark.png");
+    --memo-logo-filter: invert(11%) sepia(2%) saturate(4457%) hue-rotate(314deg) brightness(95%) contrast(76%) opacity(20%);
+    --memo-size: 3.5rem;
+
+    position: relative;
+    color: rgb(var(--memo-txt-color));
+    min-height: var(--memo-size);
+    margin: 2.25rem auto;
+    padding: 1.25rem;
+    text-align: center;
+    background: rgb(var(--memo-bg-color));
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(.1rem);
+}
+
+.alcur-memo::before {
+    content: "ALCUR HOSPITAL MEMORANDUM";
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 1.25rem auto;
+    padding-top: .5em;
+    font-family: var(--UI-font);
+    font-weight: 700;
+    font-size: 1.75em;
+    text-align: center;
+}
+
+.alcur-memo::after {
+    content: "";
+    position: absolute;
+    height: 15rem;
+    width: 15rem;
+    top: 50%;
+    left: 50%;
+    margin-top: -7.5rem;
+    margin-left: -7.5rem;
+    min-height: var(--memo-size);
+    background: var(--memo-logo);
+    filter: var(--memo-logo-filter);
+    background-size: calc(1.5 * var(--memo-size));
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.alcur-memo > * {
+    position: relative;
+    z-index: 2;
+}
+
+:root {
+/*-- body elements --*/
+
+   --basalt-background-color: 224, 255, 254;
+   --basalt-bright-element-color: 72, 117, 161;
+   --basalt-dark-element-color: 141, 175, 196;
+
+   --link-color: 0, 41, 84;
+   --link-newpage-color: 0, 41, 84;
+   --link-visited-color: 57, 110, 196;
+
+   --tab-hover-background-color: var(--header-background-color);
+   --tab-selected-background-color: var(--header-title-color);
+
+   --header-background-color: 184, 206, 219;
+   --header-title-color: 0, 41, 84;
+   --header-subtitle-color: 0, 41, 84;
+   --top-bar-link-color: 0, 41, 84;
+   --top-bar-dropdown-background: 184, 206, 219;
+   --search-icon-color: 0, 41, 84;
+   --side-bar-background-color: 184, 206, 219;
+   --side-bar-heading-text-color: 0, 41, 84;
+   --side-bar-heading-color: 141, 175, 196;
+   --side-bar-link-color: 0, 41, 84;
+   --scrollbar-thumb-color: 72, 117, 161;
+   --general-border-color: 72, 117, 161;
+
+   --footnote-background-color: 255, 255, 255;
+   --rate-module-background-color: 255, 255, 255;
+   --basalt-secondary-color: 255, 255, 255;
+
+/*-- header --*/
+  --logo: url("https://scp-wiki.wikidot.com/local--files/theme%3Aalcur-theme/alcur-logo.png");
+  --title: "The Alcur Hospital";
+  --subtitle: "Curing Illnesses across Countless Infinities";
+  --title-size: 2.0rem;
+  --subtitle-size: 1.50rem;
+ 
+/*-- table --*/
+  --basalt-th-background-color: 0, 41, 84;
+}
+
+@media only screen and (max-width: 600px) {
+    :root {
+        --title-size: 1.50rem;
+        --subtitle-size: 0.70rem;
+    }
+}
+/*-- altered blockquote backgrounds --*/
+:is(blockquote, div.blockquote) {
+       background-color: white;
+}
+
+#page-content .jotting {
+       background-color: white;
+}
+
+#page-content .papernote {
+       background-color: white;
+}
+
+#page-content .notation {
+       background-color: white;
+}
+
+#page-content .footnotes-footer,
+#page-content .footnotes-footer .footnote-footer {
+  background-color: white;
+}
+ 
+#page-content .page-rate-widget-box {
+  background-color: white;
+}
+ 
+#page-content .code,
+.code pre {
+  background-color: white;
+}
+
+[[/module]]
+
+[[include :scp-jp:component:license-box-backend
+|author=ApothecaryCat21 and dxxander]]
+> **ファイル名:** alcur-logo.png, logo-dark.png
+> **名称:** Logo3 and AlcurLogo
+> **作者:** purplehefferey
+> **ライセンス:** CC BY-SA 3.0
+> **補足:** 原型となるGOI記事のために依頼したものです。作成者はCC BY-SA 3.0での公開を許可しました。
+[[include :scp-jp:component:license-box-end]]
+
+[[/iftags]]
