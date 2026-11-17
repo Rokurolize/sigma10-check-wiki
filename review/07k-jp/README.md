@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 3 [LOCALIZE-ROWS row 248, source LOCALIZE-S2-F]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 248]
 - FIX5 re-judgement: item 99 (class C) FIXED — FIX5-INFO, commit 9a1c86a: info-module / duplicate credit residue removed [GOSIGN2-LEDGER-SUPPLEMENT (a) item 99]
-- Computed against: canonical commit 05dd295f2874b21920630066cf955283d2b77d5d; candidate file pages/theme:07k-jp.txt sha256:b486662b51d9fe8a1e8e29244cd84c0809b6fed6c73bd1e36c95d63e4272a91d; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 84e8201ca3418907cf4fcb86c19a78d31d20617c; candidate file pages/theme:07k-jp.txt sha256:b486662b51d9fe8a1e8e29244cd84c0809b6fed6c73bd1e36c95d63e4272a91d; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
