@@ -1,0 +1,151 @@
+[[iftags +테마]]
+
+[[include :scpko:info:start]]
+**괴수공원 테마**
+
+**제작:** [[*user thd-glasses]]
+
+[https://ko.wikipedia.org/wiki/쥬라기_공원_(영화) 쥬라기 공원]의 포스터 디자인으로부터 영감을 얻음.
+
+**폰트 출처**
+* https://noonnu.cc/font_page/1037
+
+**이미지 출처**
+* 사용된 이미지는 모두 [[*user thd-glasses]]가 제작함.
+[[include :scpko:info:end]]
+
+[[[11thanniversarycontest|한국어 위키 11주년 연말경연]]]을 위한 CSS 테마입니다.
+
+참조 테마 및 구성요소:
+* [[[theme:anniversary|연말경연 테마]]]
+* [[[component:collapsible-topbar|접히는 상단바]]]
+
+[[/iftags]]
+
+[[include :scpko:component:collapsible-topbar 
+|maxw=1000px
+|top-color=#222
+|top-bg=#FD0
+]]
+
+[[div [[iftags -테마]]style="display: none"[[/iftags]]]]
+[[module CSS show="true"]]
+@import url(https://scpko.wdfiles.com/local--code/theme:anniversary/1);
+
+:root {
+  --color-bg: #222;
+  --color-ip: #222;
+  --font: #FFF;
+}
+[[/module]]
+
+[[module CSS show="true"]]
+@font-face {
+    font-family: 'FUNFLOWSURVIVORKR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/FUNFLOWSURVIVORKR.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+#container-wrap-wrap {
+  margin-top: 250px;
+}
+#content-wrap {
+  margin-top: 90px;
+}
+div#header-extra-div-1 {
+  background: #222;
+  width: 100%;
+  height: 113px;
+  top: 27px;
+  left: -100px;
+  border-left: 100px solid #222;
+  border-right: 50px solid #222;
+  z-index: -1;
+}
+div#header-extra-div-2 {
+  top: -227px;
+  position: absolute;
+  left: -70px;
+  width: 454px;
+  height: 454px;
+  border-radius: 232px;
+  background: #FD0;
+  border: 5px solid #222;
+  z-index: -3;
+}
+div#header-extra-div-2 span {
+  position: absolute;
+  width: calc(100% + 10px);
+  height: 157px;
+  top: 227px;
+  left: -5px;
+  background: #FD0;
+}
+div#header-extra-div-3 {
+  top: -200px;
+  position: absolute;
+  left: -43px;
+  width: 400px;
+  height: 400px;
+  border-radius: 205px;
+  background: #E40B0B center / cover no-repeat url(https://scpko.wdfiles.com/local--files/theme:creature/creature.png);
+  border: 5px solid #222;
+  z-index: -2;
+}
+div#extra-div-2, div#extra-div-3 {
+  background-color: #FD0;
+  border-top: 5px solid #222;
+  border-bottom: 5px solid #222;
+  top: 0px;
+}
+div#extra-div-3 {
+  height: 22px;
+  width: 100%;
+  top: 135px;
+  position: absolute;
+}
+#login-status {
+  top: 7px;
+}
+@media (max-width: 700px) {
+  #login-status {
+    top: -247px;
+  }
+  #search-top-box {
+    right: -5px;
+  }
+}
+#header h1 {
+  transition: 0.5s;
+  margin-left: -40px;
+}
+@media (max-width: 1100px) {
+  #header h1 {
+    transition: 0.5s;
+    margin-left: -10px;
+  }
+}
+#header h1 a::before {
+  content: "SCP PARK";
+  color: #FFF;
+  font-family: 'FUNFLOWSURVIVORKR';
+  font-weight: 100;
+  font-size: 220% !important;
+}
+#header h2 span, #search-top-box-input {
+  display: none;
+}
+#page-title, h1 {
+  font-family: 'FUNFLOWSURVIVORKR';
+  font-weight: 100;
+}
+#top-bar a, #login-status, #login-status a {
+  color: #222;
+}
+[[/module]]
+[[/div]]
