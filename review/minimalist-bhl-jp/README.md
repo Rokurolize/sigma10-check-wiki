@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:minimalist-bhl-jp — origin EN, population #21 [GOSIGN2-LEDGER (b) row 21]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 91ccb1df6404953f2b18a911ea683c71c941a994d4a332808aa0bdbc02258e68); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 2f464b3dfae9a5209292e84cedae5c1986597f6a25e084e4bce3f4cd3c6a04a8); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 3 errors / 1 warn / 3 infos (http×2, pseudo-ref×1); standing classes dispositioned in register c1 [T1-ROWS row 21; GOSIGN2-LEDGER (b) row 21]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — §15/parallel panel body near-black-on-black unreadable (theme-specific), sample credit-modal, SP overflow 337–419px, CSS load aborted at chromium-375. [RENDER-ROWS-1 (RENDER-B row 21)]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): PASS — display-affecting findings: 0 [LOCALIZE-ROWS row 21, source LOCALIZE-A]
 - T5 (translation text): PASS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 21]
 - FIX5 re-judgement: item 2 (class E) DISPOSITIONED — FIX5-CONTRB (no edit, no commit): --dark-accent / --swatch-text-general rgb(36,36,36) identical to original rev 107; candidate-side fallbacks touch only credit-button, search and author-link furniture [GOSIGN2-LEDGER-SUPPLEMENT (a) item 2]
-- Computed against: canonical commit 358955eb4013dac2399c414ba8ec2a6e416a3c11; candidate file pages/theme:minimalist-bhl-jp.txt sha256:91ccb1df6404953f2b18a911ea683c71c941a994d4a332808aa0bdbc02258e68; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 1f846a6a8462d9654ff916968145490cdefd4522; candidate file pages/theme:minimalist-bhl-jp.txt sha256:2f464b3dfae9a5209292e84cedae5c1986597f6a25e084e4bce3f4cd3c6a04a8; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 Status: complete (R-disp-8 lane, 2026-11-17)
@@ -281,6 +281,14 @@ Second-reviewer walk. The ground is fully re-derivable from this package: a read
 ### Candidate-versus-production record (K6 third source)
 
 The full candidate-versus-production diff was enumerated. Beyond the phase17-diff deltas (sections 1 and 8) and flag F1, the deltas are: the credit completion (section 1); the usage exhibits' escaping and the self-name repoint (section 2, the repoint being the snippet audit's line, commit 358955e); the storage URL scheme and colon form (sections 4 and 11); the footnote author-link notation (candidate L51 drops production's [[*user Placeholder McD]] link, the name retained, the same notation family as the credit author field); trailing-space trims on blockquote markers; the self-delivery repoint (section 3); and the three appended modules (section 8). The sources.tsv note "production drift: 一致" is consistent with this census: no unexplained drift exists.
+
+### Post-package repairs (REFRESH3-L)
+
+The items above describe this package as built. The repair recorded below postdates the package; `candidate.txt` has been recopied from the current canonical `pages/theme:minimalist-bhl-jp.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**FIX-RDISP8, landing `1f846a6` (report `R/review-scout/FIX-RDISP8.md`).** One candidate repair (+1/−1 on this file), postdating this package's build at `358955e` (production-predecessor reference audit, which the as-built `candidate.txt` matches byte-for-byte).
+- **Item 1 — escaped footnoteblock unescaped.** The candidate carries two live footnotes (L51 and L133), but its footnoteblock token (as-built L147) stood escaped as `@@[[footnoteblock]]@@`. Both sources keep the token live at the corresponding position — the frozen original L139 and the production page `pages-existing/existing:theme-minimalist-bhl.txt` L141 both read `[[footnoteblock]]`. The escape was the candidate's own delta against both sources; L147 now reads the live token, giving the footnotes a render position.
+Checker per the report: plain and links error 3 / warn 1 / info 3 before and after, finding sets byte-identical in both modes; class (i) 0.
 
 ## Appendix — residue and heuristic blocks
 

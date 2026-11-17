@@ -156,7 +156,7 @@ adjudicated explanation.
 | 118 | 14 | 715–717 | 718–720 | +3/−3 | translation | \|\|~ これは \|\|~ 幅広表 \|\| |
 | 119 | 14 | 723–725 | 726–728 | +3/−3 | translation | \|\|~ これは \|\|~ 三線表 \|\| |
 | 120 | 15 | 754–755 | 757–758 | +2/−2 | translation | [[div class="blockquote title" data-title="サンプル見出し"]] |
-| 121 | 15 | 757–757 | 760–760 | +1/−1 | residual | この一部のコードは[[[theme:lumina\|Lumina]]]から拝借したものです。 |
+| 121 | 15 | 757–757 | 760–760 | +1/−1 | residual | この一部のコードは[*https://scp-wiki.wikidot.com/theme:lumina Lumina]（原語版）から拝借したものです。 |
 | 122 | 15 | 761–761 | 764–764 | +1/−1 | translation | + テーマソースコード |
 | 123 | 15 | 763–763 | 766–768 | +3/−1 | supplement | [[collapsible show="+ ソースコードを表示" hide="- 閉じる"]] |
 | 124 | 15 | 766–766 | 771–772 | +2/−1 | supplement | @import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Abasalt-j… |
@@ -278,7 +278,7 @@ adjudicated explanation.
 -[[include :scp-wiki-cn:credit:more]]
 -更多页面信息
 -[[include :scp-wiki-cn:credit:end]]
-+これは[[*user Sharia Vanilla]]がSCP-CN向けに制作した美的テーマで、主に[*https://scp-wiki-cn.wikidot.com/waldichter-hub 吟遊詩客]（原語版）のGoIフォーマットで用いられます。このテーマは[*https://scp-wiki-cn.wikidot.com/theme:parallel Parallel]を基に制作されています。
++これは[[*user Sharia Vanilla]]がSCP-CN向けに制作した美的テーマで、主に[*https://scp-wiki-cn.wikidot.com/waldichter-hub 吟遊詩客]（原語版）のGoIフォーマットで用いられます。このテーマは[*https://scp-wiki-cn.wikidot.com/theme:parallel Parallel]（原語版）を基に制作されています。
  
 -[[include :scp-wiki-cn:credit:start-standalone]]
 -
@@ -917,7 +917,7 @@ adjudicated explanation.
 +{{@@[[div class="blockquote title" data-title="サンプル見出し"]]@@}}
  
 -这个的部分代码是从[[[theme:lumina|流明冲击]]]偷的。
-+この一部のコードは[[[theme:lumina|Lumina]]]から拝借したものです。
++この一部のコードは[*https://scp-wiki.wikidot.com/theme:lumina Lumina]（原語版）から拝借したものです。
  [[/div]]
  
  

@@ -5,7 +5,8 @@ An English theme by Placeholder McD and HarryBlank (March 2021). The JP candidat
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:blankstyle-jp — origin EN, population #6 [GOSIGN2-LEDGER (b) row 6]
-- Overall: PASS — NOT PASS at the ledger determination (section (e) register); its one OPEN item re-judged DISPOSITIONED with grounds by the FIX5 wave; go-sign issued 2026-11-17 (COMPLETION-REPORT §10) [GOSIGN2-LEDGER (b); GOSIGN2-LEDGER-SUPPLEMENT (d)]
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now d74bc016bd058deeb41fb094d0e0cc4fc04cfd6d2e53ffadd9caf226023e2475); verdict not carried over, re-judgement required
+> verdicts below describe the pre-change file
 - T1 (source check): PASS — baseline 2026-11-16: exit 0, 0 errors / 1 warn / 1 info (no error codes) [T1-ROWS row 6; GOSIGN2-LEDGER (b) row 6]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — credit-modal contrast-credit 1.07 (near-white × unreadable), sample chromium-1366 shows Wikidot 503 (one width unjudgeable), ≡ toggle overlaps body at 320, mobile overflow, sample credit-modal. [RENDER-ROWS-1 (RENDER-A row 6)]
 - Engine coverage: full matrix as run by the lane, with one width unjudgeable (sample chromium-1366, transient Wikidot 503; ledger (a) caveat 3) [RENDER-ROWS-1 row; GOSIGN2-LEDGER (a)]
@@ -13,7 +14,7 @@ An English theme by Placeholder McD and HarryBlank (March 2021). The JP candidat
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 4 [LOCALIZE-ROWS row 7, source LOCALIZE-A]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 7]
 - FIX5 re-judgement: item 1 (class E) DISPOSITIONED — FIX5-CONTRA (no edit, no commit): charged colour value absent from the candidate file; candidate is an existing-page diff touching no colour, credit or rate rule; value traced to the shared preview credit module (KB-32 class) [GOSIGN2-LEDGER-SUPPLEMENT (a) item 1]
-- Computed against: canonical commit 1869877ffdcd33cb214b8dc421fb39e3de8d7e8d; candidate file pages/theme:blankstyle-jp.txt sha256:cad8a8250396fa900d6a03137c96ab643d9c64f5b6f0aa92749f72ea46681aaa; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit f24b7d0e86e573ee5b9403589d62db5d972af009; candidate file pages/theme:blankstyle-jp.txt sha256:d74bc016bd058deeb41fb094d0e0cc4fc04cfd6d2e53ffadd9caf226023e2475; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## 0. Header / provenance
@@ -130,6 +131,16 @@ Re-derivation from the bytes, measured for this package:
 5. The value's source: FIX5-CONTRA §6 records theme:sodium showing the identical rgb(255,246,240) × glyph with the same absence from its candidate; the value belongs to the shared preview credit module every candidate includes (this candidate at L662), the KB-32 class, uniform across themes and not a property of this file.
 
 Second-reviewer walk. Is the ground stated in terms a reader who did none of the work can check? Legs 1 and 2 and the EN-original half of leg 3 verify from this package's own two files alone. The production half of leg 3 needs pages-existing/existing:theme-blankstyle.txt, and the delta needs pages/phase17-diff-blankstyle-jp.txt; both are in this repo, so the whole ground is re-derivable without the campaign record. The walk confirms the ground as stated for the contrast charge. For the bundle's toggle and overflow lines (section 11) the record's ground is thinner: it rests on the delta's silence over layout surfaces, which the same two in-repo files let a reader confirm, but no measurement re-derives those two observations away; they are recorded as closed with the bundle on that basis, not as independently dispositioned. Walk outcome: the disposition stands, with the thinness on the record.
+
+### Post-package repairs (REFRESH3-L)
+
+The items above describe this package as built. The repair recorded below postdates the package; `candidate.txt` has been recopied from the current canonical `pages/theme:blankstyle-jp.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**FIX-RDISP3, landing `f24b7d0` (report `R/review-scout/FIX-RDISP3.md`).** Three candidate restorations (+129/−0, pure insertions), all postdating this package's build at `1869877`. All three restore regions come from the production page `pages-existing/existing:theme-blankstyle.txt`, the translation of record for this K6 production-counterpart row (translator iti119), cross-checked against the original's ranges.
+- **F1a — documentation body restored.** The ListPages sidebox (production L9–24) and the body prose (production L37–118) were restored inside the gate, before the candidate's untouched credit block and closing prose. One sanctioned adaptation: the usage exhibit `@@[[include :scp-jp:theme:blankstyle]]@@` → `@@[[include theme:blankstyle-jp]]@@`, the candidate's own established form. The original's info block was not part of the flagged body and was not restored (its content is carried by the credit block and closing prose, per §1).
+- **F1b — bundled-component delivery zone restored.** Production L121–132 verbatim after the gate closes: the hidden holder div, `component:toggle-sidebar`, the `{$fade}`-gated `component:fade-in speed=3`, the `{$acs}`-gated `component:acs-animation`, and `component:betterfootnotes`, all already in the population's `:scp-jp:` form (no `-jp` counterpart exists for any of the four).
+- **F1c — S&C Plastics variant module restored.** Production L804–816 (the `[[iftags +s&cプラスチック]]` CSS module with the S&C header variables and the `div#extra-div-1` Big87.png rule), inside the holder div. Its asset URL took the candidate's established colon-encoded `file%3A5722815-48-k39z` form (the production's unencoded colon had introduced an `unencoded-colon` error); the file named is unchanged.
+Checker per the report: plain error 0 / warn 0 / info 1 unchanged; links error 0 / warn 0 / info 1 → 0 / 2 / 1, the two warns being production-inherited `link-label` notes on the restored body (Fade-In, ACSコンポーネントバー); class (i) errors 0 before and after; brace depth ends at 0.
 
 ## Appendix — residue blocks
 

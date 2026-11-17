@@ -8,11 +8,11 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 5185 |
-| candidate.txt | 5174 |
+| candidate.txt | 5183 |
 | Added | +90 |
 | Review-stage comments | 0 of the +90 added lines |
-| Removed | -106 |
-| Hunks | 17 |
+| Removed | -97 |
+| Hunks | 16 |
 
 ```diff
 --- original.txt
@@ -292,23 +292,7 @@ with `python3 review/build_review.py`; verify with
      color: rgb(var(--header-subtitle-color));
      display: block;
      font-family: var(--header-subtitle-font);
-@@ -1661,15 +1659,6 @@
-     width: 100%;
- }
- 
--div.scpnet-interwiki-wrapper {
--    margin: 0;
--    min-height: 0;
--}
--
--iframe.scpnet-interwiki-frame {
--    height: 0;
--}
--
- a.close-menu {
-     display: none;
- }
-@@ -1730,11 +1719,11 @@
+@@ -1730,11 +1728,11 @@
  }
  
  #page-content:not(:has(a.\-override-warning))::before {
@@ -322,7 +306,7 @@ with `python3 review/build_review.py`; verify with
  }
  
  a:any-link {
-@@ -2936,7 +2925,7 @@
+@@ -2936,7 +2934,7 @@
  }
  
  #edit-page-form div.edit-help-34 {
@@ -331,7 +315,7 @@ with `python3 review/build_review.py`; verify with
      grid-area: help;
  }
  #edit-page-form table.edit-page-bottomtable {
-@@ -3640,7 +3629,7 @@
+@@ -3640,7 +3638,7 @@
  #action-area>ul[style="list-style: none"] {
      display: grid;
      grid-template-columns: repeat(auto-fill, minmax(min(15rem, 100%), 1fr));
@@ -340,7 +324,7 @@ with `python3 review/build_review.py`; verify with
      padding: 0;
  }
  #action-area>ul[style="list-style: none"]>li {
-@@ -4005,12 +3994,12 @@
+@@ -4005,12 +4003,12 @@
  }
  
  #main-content div.pager::before {
@@ -355,7 +339,7 @@ with `python3 review/build_review.py`; verify with
      grid-area: nxt;
  }
  
-@@ -4367,7 +4356,7 @@
+@@ -4367,7 +4365,7 @@
      #main-content div.pager>span.target:is(:nth-child(2), :last-child)>a {
          font-size: 0;
      }
@@ -364,7 +348,7 @@ with `python3 review/build_review.py`; verify with
      #main-content div.pager::after,
      #main-content div.pager::before,
      #main-content div.pager>span.target:is(:nth-child(2), :last-child)>a::after {
-@@ -4501,7 +4490,7 @@
+@@ -4501,7 +4499,7 @@
  }
  
  #st-action-area>a:empty::before {

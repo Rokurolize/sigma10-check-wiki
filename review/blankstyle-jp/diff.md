@@ -5,21 +5,77 @@ candidate.txt in this directory; do not hand-edit it. Regenerate
 with `python3 review/build_review.py`; verify with
 `python3 review/build_review.py --check`.
 
+Tier 2 format (large diff): summary header, change-block
+index, then the full diff in collapsed sections. Purely
+mechanical sections are grouped into one collapsed section
+at the end. Auto-class labels are heuristic (token-level
+normalization only); the package README.md carries the
+adjudicated explanation.
+
 | | Lines |
 |---|---|
 | original.txt | 703 |
-| candidate.txt | 687 |
-| Added | +188 |
-| Review-stage comments | 0 of the +188 added lines |
-| Removed | -201 |
-| Hunks | 14 |
+| candidate.txt | 816 |
+| Added | +306 |
+| Review-stage comments | 0 of the +306 added lines |
+| Removed | -193 |
+| Changed | 499 |
+| Change blocks | 28 |
+| Diff sections (context 3) | 14 |
+
+## Changed lines by auto-class (heuristic)
+
+| Auto-class | Blocks | Changed lines |
+|---|---|---|
+| mechanical | 7 | 44 |
+| supplement | 2 | 155 |
+| residual | 19 | 300 |
+
+## Change-block index
+
+| # | Section | Original | Candidate | +/− | Auto-class | Gist |
+|---|---|---|---|---|---|---|
+| 1 | 1 | 1–1 | 1–3 | +3/−1 | supplement | [[module CSS]] |
+| 2 | 1 | 3–136 | — | +0/−134 | residual | [[module css]] |
+| 3 | 2 | — | 12–13 | +2/−0 | residual | Edited by iti119 for SCP-JP |
+| 4 | 2 | 146–146 | 16–16 | +1/−1 | residual | @import url('https://fonts.bunny.net/css2?family=Montserrat:ital,wght@0,800;1… |
+| 5 | 3 | 156–156 | 26–26 | +1/−1 | mechanical | background-image: none; |
+| 6 | 4 | 169–169 | 39–39 | +1/−1 | residual | font-family: 'Montserrat', 'Noto Sans JP', verdana, arial, helvetica, sans-se… |
+| 7 | 4 | 174–176 | 44–46 | +3/−3 | mechanical | content: var(--header-title, "R\0026 C SITE-43"); |
+| 8 | 4 | 180–182 | 50–52 | +3/−3 | mechanical | content: var(--header-subtitle, "SUBVERTING COMMON PRACTICE"); |
+| 9 | 5 | 223–223 | 93–93 | +1/−1 | residual | top: 2.3rem !important; |
+| 10 | 5 | 227–231 | 97–101 | +5/−5 | mechanical | #top-bar { |
+| 11 | 6 | 244–244 | 114–114 | +1/−1 | residual | font-family: 'Montserrat', 'Noto Sans JP', verdana, arial, helvetica, sans-se… |
+| 12 | 7 | 262–262 | 132–132 | +1/−1 | residual | background: url('https://scp-jp-storage.wdfiles.com/local--files/file%3A57228… |
+| 13 | 8 | 276–280 | 146–146 | +1/−5 | residual | background-image: linear-gradient(to bottom, #e0e0e0, #e0e0e0 90px, #e0e0e0 9… |
+| 14 | 8 | 285–288 | 151–154 | +4/−4 | mechanical | --timeScale: 1.5; |
+| 15 | 9 | 306–306 | 172–172 | +1/−1 | mechanical | #page-content .sidebox tr td, |
+| 16 | 10 | — | 186–186 | +1/−0 | residual | background-color: #FDF6D7; |
+| 17 | 10 | 323–323 | 190–190 | +1/−1 | residual | border: 1px solid #333 !important; |
+| 18 | 11 | 333–345 | — | +0/−13 | residual | } |
+| 19 | 12 | 427–427 | 281–281 | +1/−1 | residual | height: 0; |
+| 20 | 13 | 579–583 | 433–437 | +5/−5 | mechanical | .imagediv { |
+| 21 | 14 | 665–665 | 519–519 | +1/−1 | residual | #page-content .fancyhr hr { |
+| 22 | 14 | 670–670 | 524–524 | +1/−1 | residual | border-image-source: url('https://scp-jp-storage.wdfiles.com/local--files/fil… |
+| 23 | 14 | 677–677 | 531–531 | +1/−1 | residual | #page-content .fancyborder { |
+| 24 | 14 | 680–680 | 534–534 | +1/−1 | residual | border-image: url('https://scp-jp-storage.wdfiles.com/local--files/file%3A572… |
+| 25 | 14 | — | 538–653 | +116/−0 | residual | /*---- Localization for JP ----*/ |
+| 26 | 14 | 686–687 | 656–804 | +149/−2 | supplement | [[include :scp-jp:component:interwiki-style |
+| 27 | 14 | 694–694 | 811–811 | +1/−1 | residual | background-image: url('https://scp-jp-storage.wdfiles.com/local--files/file%3… |
+| 28 | 14 | 699–702 | — | +0/−4 | residual | [[/<]] |
+
+## Full diff
+
+<details>
+<summary>Section 1 — original 1–139 · candidate 1–7 · +3/−135 · residual, supplement</summary>
 
 ```diff
---- original.txt
-+++ candidate.txt
 @@ -1,139 +1,7 @@
 -[[iftags +theme]]
--
++[[module CSS]]
++@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,800&display=swap');
++@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+ 
 -[[module css]]
 -.footnotes-footer {
 -display: none;
@@ -154,13 +210,17 @@ with `python3 review/build_review.py`; verify with
 -[[collapsible show="+ CODE" hide="- CODE"]]
 -[[<]]
 -[[module CSS show="true"]]
-+[[module CSS]]
-+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,800&display=swap');
-+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
-+
  /*
      BLANKSTYLE CSS
      [2021 Wikidot Theme]
+```
+
+</details>
+
+<details>
+<summary>Section 2 — original 141–149 · candidate 9–19 · +3/−1 · residual</summary>
+
+```diff
 @@ -141,9 +9,11 @@
      Based on:
         Paperstack Theme by EstrellaYoshte
@@ -174,15 +234,14 @@ with `python3 review/build_review.py`; verify with
  
  #page-content { font-size: .9rem; }
  
-@@ -153,7 +23,7 @@
- }
- 
- div#container-wrap {
--     background-image: none;
-+    background-image: none;
- }
- 
- div#header {
+```
+
+</details>
+
+<details>
+<summary>Section 4 — original 166–185 · candidate 36–55 · +7/−7 · mechanical, residual</summary>
+
+```diff
 @@ -166,20 +36,20 @@
  #header h1 a::before, #header h2::before {
      color: #000;
@@ -211,6 +270,14 @@ with `python3 review/build_review.py`; verify with
  }
  
  @media (max-width: 707px) {
+```
+
+</details>
+
+<details>
+<summary>Section 5 — original 220–234 · candidate 90–104 · +6/−6 · mechanical, residual</summary>
+
+```diff
 @@ -220,15 +90,15 @@
  }
  
@@ -233,6 +300,14 @@ with `python3 review/build_review.py`; verify with
  }
  
  #top-bar, #top-bar a {
+```
+
+</details>
+
+<details>
+<summary>Section 6 — original 241–247 · candidate 111–117 · +1/−1 · residual</summary>
+
+```diff
 @@ -241,7 +111,7 @@
  h4,
  h5,
@@ -242,6 +317,14 @@ with `python3 review/build_review.py`; verify with
      color: #000;
      letter-spacing: 1px;
  }
+```
+
+</details>
+
+<details>
+<summary>Section 7 — original 259–265 · candidate 129–135 · +1/−1 · residual</summary>
+
+```diff
 @@ -259,7 +129,7 @@
      width: 100%;
      top: 0;
@@ -251,6 +334,14 @@ with `python3 review/build_review.py`; verify with
      background-size: contain;
      background-repeat: no-repeat;
      background-position: 50% 50%;
+```
+
+</details>
+
+<details>
+<summary>Section 8 — original 273–291 · candidate 143–157 · +5/−9 · mechanical, residual</summary>
+
+```diff
 @@ -273,19 +143,15 @@
  }
  
@@ -276,15 +367,14 @@ with `python3 review/build_review.py`; verify with
  }
  
  #page-content hr {
-@@ -303,7 +169,7 @@
-     line-height: 1.4;
- }
- 
--#page-content .sidebox tr td, 
-+#page-content .sidebox tr td,
- #page-content .sidebox tr th {
-     padding: 0.35em;
- }
+```
+
+</details>
+
+<details>
+<summary>Section 10 — original 317–326 · candidate 183–193 · +2/−1 · residual</summary>
+
+```diff
 @@ -317,10 +183,11 @@
      border: 1px solid #333;
      border-radius: 0;
@@ -298,6 +388,14 @@ with `python3 review/build_review.py`; verify with
      border-radius: 0;
      box-shadow: none;
  }
+```
+
+</details>
+
+<details>
+<summary>Section 11 — original 330–348 · candidate 197–202 · +0/−13 · residual</summary>
+
+```diff
 @@ -330,19 +197,6 @@
          border: 1px black;
          box-shadow: none;
@@ -318,6 +416,14 @@ with `python3 review/build_review.py`; verify with
  }
  
  #page-content .creditRate{
+```
+
+</details>
+
+<details>
+<summary>Section 12 — original 424–430 · candidate 278–284 · +1/−1 · residual</summary>
+
+```diff
 @@ -424,7 +278,7 @@
  
  .anchor {
@@ -327,24 +433,15 @@ with `python3 review/build_review.py`; verify with
      top: 0;
  }
  .sidebox {
-@@ -576,11 +430,11 @@
- }
- 
- @media (max-width: 540px) {
--  .imagediv {
--    float: none;
--    text-align:center;
--    margin: auto;
--  }
-+    .imagediv {
-+        float: none;
-+        text-align:center;
-+        margin: auto;
-+    }
- }
- 
- @media only screen and (max-width: 600px) {
-@@ -662,42 +516,172 @@
+```
+
+</details>
+
+<details>
+<summary>Section 14 — original 662–703 · candidate 516–816 · +270/−11 · residual, supplement</summary>
+
+```diff
+@@ -662,42 +516,301 @@
  
  /* -- FANCY THINGS from Woedenaz's Dustjacket Theme -- */
  
@@ -491,22 +588,30 @@ with `python3 review/build_review.py`; verify with
  
 -[[iftags +s&c-plastics]]
 -[[module css]]
--:root{
--  --header-title: "S\0026 C PLASTICS";
--  --header-subtitle: "SITE-87, NARRATIVE AND NEXOLOGICAL STUDIES";
--}
--
--div#extra-div-1 {
--    background-image: url(https://scp-wiki.wdfiles.com/local--files/the-s-c-plastics-hub/Big87.png);
--    filter: opacity(20%);
--}
--[[/module]]
 +[[include :scp-jp:component:interwiki-style
 +| priority=1
 +| css=%23interwiki%20.side-block%7Bfont-family%3A%22Noto%20Sans%20JP%22%2Csans-serif%7D
 +]]
 +
 +[[iftags +テーマ]]
++
++[[div class="anchor"]]
++[[div class="sidebox"]]
++[[=]]
++[[module ListPages name="=" limit="1"]]
++[[div class="tableb"]]
++||~ %%title%% ||
++||= [[*user Placeholder McD]], _
++[[*user HarryBlank]] ||
++||~ Published on March 2021 ||
++[[/div]]
++
++||= このテーマに含まれている殆どのコードを共同制作してくださった[[*user stormbreath]]、[[*user EstrellaYoshte]]、[[*user Croquembouche]]の3名に感謝します。 ||
++[[/module]]
++[[/=]]
++[[/div]]
++[[/div]]
++
 +[[include :scp-jp:credit:start-preview]]
 +**タイトル:** BLANKSTYLE CSS（SCP-JP）
 +**翻訳責任者:** iti119
@@ -520,6 +625,89 @@ with `python3 review/build_review.py`; verify with
 +**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:blankstyle ソース]
 +[[include :scp-jp:credit:end-preview]]
 +
++[[=]]
+++* これは何?
++[[/=]]
++
++このBlankstyle CSSは、[[*user Placeholder McD]]と[[*user HarryBlank]]が、後者の記事で使用するために作成したビジュアルスタイルです。幅広い作品に適用し、簡単に更新することができるように作成されました。本質的には[[*user EstrellaYoshte]]による[[[theme:penumbra|Penumbraテーマ]]]のライトテーマ版として機能しますが、Blank特有の注意事項が何点かあります。
++
++**他のテーマ、特にBlack Highlighterと共にはほぼ確実に機能しません。何が起こるか分からないのであれば、使用しないでください。**
++----
++[[=]]
+++* 使い方
++[[/=]]
++
++このテーマを使用するには、次の構文をページの最上部にコピー＆ペーストしてください。
++
++> @@[[include theme:blankstyle-jp]]@@
++
++このテーマには次のコンポーネントがインクルードされていることに留意してください。
++
++* [[[component:toggle-sidebar|トグル式サイドバー]]]
++* [[[component:fade-in|Fade-In]]] ({{speed=3}}に設定済み)
++* [[[component:acs-animation|ACSアニメーション]]]
++* [[[component:betterfootnotes|BetterFootnotes]]]
++
++このテーマをinfo-rateモジュールやcreditモジュールと併用する際は、情報パネルがフェードイン構文によって遅延しないようにするために、それらのモジュールを{{[[div]]}}で囲んでください。
++
++このテーマでは[[*user PeppersGhost]]の[[[component:image-block-peppo|Image Block Peppo]]]とEstrellaYoshteから、小さな画面 (モバイル端末など) で画像ブロックを中央寄せにして綺麗に見せるためのコードを転用しています。また、PenumblaテーマからEstrellaの天才的なsidebox構文も借りており、そしてそのコードの大部分は[[[theme:paperstack|Paperstackテーマ]]]からの派生です。
++
++BLANKSTYLE CSSの追加の機能については、ディスカッションにあるパッチノートを参照してください。
++----
++[[=]]
+++* ACSカラーテーブル
++[[/=]]
++
++次のようなカスタムカラーの見出しセルを持つテーブルは、それぞれ"table1"から"table5"と名付けられたdivで囲むことで作成できます[[span class="fnnum"]].[[/span]][[span class="fncon"]]これらのdivでscp-image-blockを囲むと、キャプションに同様のカスタムカラーが適用されることに注意してください。また、これがBetterFootnotesであることに注目してください。使用方法の詳細は上記のリンクに記載されています。[[/span]]。これらは、[[[component:anomaly-class-bar|ACSコンポーネントバー]]]の5つの基本レベルに準じています。また、{{table6}}で紫色のテーブルも使用できます。
++
++||~ これは普通のテーブルです。 ||
++||= これじゃテストにならない ||
++
++[[div class="table1"]]
++||~ これは緑色のテーブルです。 ||
++||= これなら試しがいがある ||
++[[/div]]
++
++[[div class="table2"]]
++||~ これは青色のテーブルです。 ||
++||= これもテストしがいがある ||
++[[/div]]
++
++[[div class="table3"]]
++||~ これは黄色のテーブルです。 ||
++||= これもテストしがいがある ||
++[[/div]]
++
++[[div class="table4"]]
++||~ これは橙色のテーブルです。 ||
++||= これもテストしがいがある ||
++[[/div]]
++
++[[div class="table5"]]
++||~ これは赤色のテーブルです。 ||
++||= やりがいがなくなってきた ||
++[[/div]]
++
++[[div class="table6"]]
++||~ これは紫色のテーブルです。 ||
++||= これテスト ||
++[[/div]]
++
++注: 紫色はThaumielクラスオブジェクトや、要レベル6(Cosmic Top Secret)文書または要レベル6/暫定(Thaumiel-Proviso)文書を示すために使用されます。これは[[*user Placeholder McD]]の共感覚的嗜好や、私の好きなものを記事に盛り込もうとするHarryの意欲を汲んだものです。
++
++= {{tableb}}クラスのdivの中にあるテーブルはセル同士が分割されます。
++
++[[div class="tableb"]]
++||~ これは分割版テーブルです。 ||
++||= このテストめちゃ楽しい！ ||
++[[/div]]
++
++= ,,Harryは長い間ずっとテーブル構文を手作業でフォーマットしてきました。オタクめ。,,
++----
++[[=]]
+++* ソースコード
++[[/=]]
++
 ++ BLANKSTYLE CSS（SCP-JP 移植）
 +
 +本テーマは SCP-JP の BLANKSTYLE CSS（Placeholder McD / HarryBlank 作、iti119 による SCP-JP 向け改変）を、外部サイトのテーマページに依存せず単体で適用できる形に移植したものです。
@@ -532,10 +720,89 @@ with `python3 review/build_review.py`; verify with
 +
 +----
 +//出典: https://scp-jp.wikidot.com/theme:blankstyle（CC BY-SA 3.0）//
++[[/iftags]]
++
++[[div [[iftags -テーマ]]style="display: none"[[/iftags]]]]
++[[include :scp-jp:component:toggle-sidebar]]
++
++>[[ift{$fade}gs +テーマ]]
++[[include :scp-jp:component:fade-in speed=3]]
++>[[/ift{$fade}gs]]
++
++>[[ift{$acs}gs +テーマ]]
++[[include :scp-jp:component:acs-animation]]
++>[[/ift{$acs}gs]]
++
++[[include :scp-jp:component:betterfootnotes]]
++
++[[iftags +s&cプラスチック]]
++[[module CSS]]
+ :root{
+   --header-title: "S\0026 C PLASTICS";
+   --header-subtitle: "SITE-87, NARRATIVE AND NEXOLOGICAL STUDIES";
+ }
+ 
+ div#extra-div-1 {
+-    background-image: url(https://scp-wiki.wdfiles.com/local--files/the-s-c-plastics-hub/Big87.png);
++    background-image: url('https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-48-k39z/Big87.png');
+     filter: opacity(20%);
+ }
+ [[/module]]
  [[/iftags]]
 -[[/<]]
 -[[/collapsible]]
 -[[/=]]
 -@@ @@
--[[/div]]
+ [[/div]]
 ```
+
+</details>
+
+<details>
+<summary>Purely mechanical sections (3, 9, 13) — whitespace, host, and branch-token changes only (heuristic)</summary>
+
+```diff
+@@ -153,7 +23,7 @@
+ }
+ 
+ div#container-wrap {
+-     background-image: none;
++    background-image: none;
+ }
+ 
+ div#header {
+```
+
+```diff
+@@ -303,7 +169,7 @@
+     line-height: 1.4;
+ }
+ 
+-#page-content .sidebox tr td, 
++#page-content .sidebox tr td,
+ #page-content .sidebox tr th {
+     padding: 0.35em;
+ }
+```
+
+```diff
+@@ -576,11 +430,11 @@
+ }
+ 
+ @media (max-width: 540px) {
+-  .imagediv {
+-    float: none;
+-    text-align:center;
+-    margin: auto;
+-  }
++    .imagediv {
++        float: none;
++        text-align:center;
++        margin: auto;
++    }
+ }
+ 
+ @media only screen and (max-width: 600px) {
+```
+
+</details>

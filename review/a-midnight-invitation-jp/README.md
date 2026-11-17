@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:a-midnight-invitation-jp — origin KO, population #250 [GOSIGN2-LEDGER (b) row 250]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 9fad8fad8dcae7ff668bd249ed9be56d8933dec4c095176d6aa33ee27519e2a0); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 4b82f12bd2f42a26dcad94b4d5642e741e8ec0a123c31f1b61c5f5769d65faa7); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 4 errors / 2 warns / 1 info (pseudo-ref×4); standing classes dispositioned in register c1 [T1-ROWS row 233; GOSIGN2-LEDGER (b) row 250]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — sample credit-modal (preview-form) + page-overflow 324px@320 + 884px@768; T3 stock-header SCP財団 wordmark and nav render in very light gray on near-white at all 8 viewports, nearly illegible (theme-specific, §1 contrast). [RENDER-ROWS-2 (RENDER-S2-H (KO1))]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 249, source LOCALIZE-S2-F]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 249]
 - FIX5 re-judgement: item 100 (class E) DISPOSITIONED — FIX5-CONTRB (no edit, no commit): colour diff vs original consists only of the two sanctioned draft-host asset URLs; the pale wordmark is tied by the render report itself to the deferred logo/background 404s (KB-58) [GOSIGN2-LEDGER-SUPPLEMENT (a) item 100]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:a-midnight-invitation-jp.txt sha256:9fad8fad8dcae7ff668bd249ed9be56d8933dec4c095176d6aa33ee27519e2a0; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit a729077c4be28c95b81b8c396a7517c51f5176e1; candidate file pages/theme:a-midnight-invitation-jp.txt sha256:4b82f12bd2f42a26dcad94b4d5642e741e8ec0a123c31f1b61c5f5769d65faa7; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -254,6 +254,15 @@ The class asks for the disposition to be walked once more from the third-party p
 ### Multi-wave provenance
 
 The candidate's current state is the product of successive waves, not one pass: the Stage 2 KO1 integration (commit 18280b3) produced the port the localize lane audited (LOCALIZE-S2-F, KO1); FIX-CREDIT-D (commit 1869877) normalized the translator attribution to ruling 3's form; FIX5-CONTRB closed the theme's only blocking item as a no-edit disposition, so no FIX5 commit touches this file; and the usage-example sweep (commit b5cb724) repointed the usage line to the `-jp` posting name — the one-line delta behind the stamp's STALE. (The file's earlier history, commits d727e92 and 8dcac74, is the composition's canonical-sources and Phase 17 record strata, before the port.) Citations, in place of a changelog: GOSIGN2-LEDGER.md §(c2) (render row), §(c3) (localize row), §(e) item 100; GOSIGN2-LEDGER-SUPPLEMENT.md item 100; REPORT-GOSIGN2-LOCALIZE-S2-F.md (KO1, a-midnight-invitation, and cross-cutting findings 4, 8, 9); REPORT-GOSIGN2-RENDER-S2-H.md §2; REPORT-GOSIGN2-FIX5-CONTRB.md §1. The go-sign over that record is what the Status block certifies.
+
+### Post-package repairs (REFRESH3-L)
+
+The items above describe this package as built. The repair recorded below postdates the package; `candidate.txt` has been recopied from the current canonical `pages/theme:a-midnight-invitation-jp.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**FIX-RDISP1, landing `a729077` (report `R/review-scout/FIX-RDISP1.md`).** Two candidate repairs, 3 lines (+3/−3), both postdating this package's build at `b5cb724` (the usage-example sweep, which the as-built `candidate.txt` matches byte-for-byte).
+- **Item 1 — credit pointer names nobody (two carriers).** The original names c_bonefish twice (original L20 `[[*user c_bonefish]]`, banner L60 "Created by c_bonefish"; the base/logo attributions at L61–62 survive in the candidate's own banner at L81–83). Both TASL author fields were pointers. The credit block (as-built candidate L16) `**著作権者:** 原語版ページの作成者に同じ（scpko の theme:a-midnight-invitation）` → `**著作権者:** [[*user c_bonefish]]`; the license box (L621) `|author=scpko theme:a-midnight-invitation の作者]]` → `|author=c_bonefish]]`. Both are the population's established forms for this author (theme:some-guider-jp, theme:mr-reprisal-jp). The attribution prose at L623 is a source note and is untouched.
+- **Item 2 — visited-link exhibit names the plain form.** Candidate L52 `[[[theme:a-midnight-invitation|訪問済みリンク]]]` → `[[[theme:a-midnight-invitation-jp|訪問済みリンク]]]`, a single `-jp` insertion (the greyday / king-s-palace shape). The exhibit is a self-reference to the port's own page; the usage sweep at build time had repointed the usage line (L31) but not this exhibit.
+Checker per the report: exit 1, error 4 / warn 2 / info 1 before and after; the four errors are unchanged class (iii) pseudo-refs, class (i) errors 0 throughout; the only delta is the L52 warn now naming the candidate's own `-jp` page (a not-yet-posted self-reference that resolves at posting).
 
 ## Appendix — residue blocks
 

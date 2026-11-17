@@ -9,9 +9,9 @@ with `python3 review/build_review.py`; verify with
 |---|---|
 | original.txt | 876 |
 | candidate.txt | 899 |
-| Added | +151 |
-| Review-stage comments | 0 of the +151 added lines |
-| Removed | -133 |
+| Added | +150 |
+| Review-stage comments | 0 of the +150 added lines |
+| Removed | -132 |
 | Hunks | 11 |
 
 ```diff
@@ -267,9 +267,8 @@ with `python3 review/build_review.py`; verify with
 +[[span style="font-family:var(--mono-font); font-size: calc(var(--base-font-size) * 1.25);"]]等幅フォントは[https://fonts.google.com/specimen/Recursive Recursive]。[[/span]]
  [[/=]]
  
--[[footnoteblock]]
+ [[footnoteblock]]
 -
-+@@[[footnoteblock]]@@
  @@ @@
  
 -[[collapsible show="+ Show theme code" hide="- Hide theme code"]]

@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:betwixt-jp — origin CN, population #167 [GOSIGN2-LEDGER (b) row 167]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 227f057c1e686eeeadf5bb11d74fddd486ba5cd764c14dd092ec4f90dcbcc6ee); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 7d10ca5fbcb39ada43395a088b53d1e7a41db43a4310f80ba9a133a000467af7); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 8 errors / 0 warns / 1 info (pseudo-ref×8); standing classes dispositioned in register c1 [T1-ROWS row 145; GOSIGN2-LEDGER (b) row 167]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — REAL WebKit-specific FINDING on both pages: the top-left mobile sidebar-open hamburger renders in chromium but is entirely absent in webkit at 375x812 and 320x640, leaving no visible way to open the sidebar in webkit (screenshot-confirmed; machine `sidebar-unreachable` on all four mobile combos); page-overflow 434px chromium / 438px webkit @320/375; runtime-hotlink incl. candidate-own ah-sandbox hosts, hormress.github.io, nu-scptheme.github.io (judgment-required); sample adds credit-modal (preview-form); decorative 404/ORB assets leave a flat light-blue header (deferred). [RENDER-ROWS-RERUN16 (CN2) — supersedes the RENDER-ROWS-2 row for this theme, rule S1]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 166, source LOCALIZE-S2-D]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 166]
 - FIX5 re-judgement: item 45 (class F) DISPOSITIONED — FIX5-FUNC §1 (no edit): sidebar block candidate L446-460 byte-identical to original L442-456 (diff IDENTICAL); hover/focus reveal is the theme's own original design; engine-specific rendering of an original-identical mechanism [GOSIGN2-LEDGER-SUPPLEMENT (a) item 45]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:betwixt-jp.txt sha256:227f057c1e686eeeadf5bb11d74fddd486ba5cd764c14dd092ec4f90dcbcc6ee; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit fa9e84aae02210b174c0480db82e68c1846aeef4; candidate file pages/theme:betwixt-jp.txt sha256:7d10ca5fbcb39ada43395a088b53d1e7a41db43a4310f80ba9a133a000467af7; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 Status: complete (R-disp-2 lane, 2026-11-17)
@@ -186,6 +186,16 @@ Counts: 71 blocks, 50 specific, 20 heuristic, 1 residue, 0 skipped (comment text
 - F1 — three rules from the original's head module are absent from the whole delivery chain. The original's head module-css carries five inline rules (orig L6-26): div#page-title { display: none } (L6-8), div.hover / div.hover:hover (L10-17), div.ctn > img (L19-22), div.ctn:hover > img (L24-26). The div.hover pair survives in the base: theme:parallel-jp carries div.hover (its L412) and div.hover:hover (its L419), with parallel's own additions. The other three are in neither file: grep counts for ctn and page-title in theme:parallel-jp are 0 and 0, and the candidate's own block styles div#page-title only for font (cand L559-564, L569-573). The markup they govern survives (the div.ctn / div.hover image-swap divs at cand L31-36), so the title-image swap loses the base image's fade and the theme layer no longer hides the page title. Precedent: LOCALIZE-S2-D treated fmd-bhl-theme's dropped #page-title block from its original as a finding of the same family. The classifier cannot see this loss: the two head modules pair by kind (B2), and the moved-block similarity is computed on the main module only.
 - F2 — the meta-title specimen is dropped while its CSS survives. Original L29-31: [[div class="meta-title"]] ##darkblue|{{**@@//@@**}}##夹缝间 版式 [[/div]] — the theme's title specimen. The candidate has no counterpart (its head passes from the credit block straight to the image grid at cand L25), while its CSS still styles div.meta-title (cand L560, L570). No ground for the drop is stated anywhere in the file.
 - F3 — the intro prose links (cand L40; section 7).
+
+### Post-package repairs (REFRESH3-L)
+
+The items above describe this package as built. The repair recorded below postdates the package; `candidate.txt` has been recopied from the current canonical `pages/theme:betwixt-jp.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**FIX-RDISP2, landing `fa9e84a` (report `R/review-scout/FIX-RDISP2.md`).** Three candidate repairs (+17/−1: three insertions, one line substituted twice over), all postdating this package's build at `b5cb724`.
+- **F1 — three head-module rules restored.** Byte-identical to the original (original L6–8, L19–22, L24–26): `div#page-title { display: none; }`, `div.ctn > img { opacity: 1; transition: ease 0.25s; }`, `div.ctn:hover > img { opacity: 0; }`, restored at the head of the candidate's own rule set in code block 5 immediately before `:root`. The `div.hover` pair is untouched (covered by theme:parallel-jp). Brace depth ends at 0.
+- **F2 — meta-title specimen restored.** Restored immediately after `[[include :scp-jp:credit:end-preview]]` and directly above the title-image grid, in the original's markup with the candidate's own JP name form: `[[div class="meta-title"]] ##darkblue|{{**@@//@@**}}##狭間のテーマ [[/div]]` (original: 夹缝间 版式). Its CSS (div.meta-title) now has its specimen again.
+- **F3 — intro prose links, split decision.** `theme:parallel` (candidate L40→L44) was absolutized to the CN original; repointed to the candidate's own base form `[[[theme:parallel-jp|平行]]]` (the file includes theme:parallel-jp at L1 and its 訳注 already names it). `theme:shancheng` took the annotation branch (pattern 11): target kept, display text now 山城テーマ（中国語版）, because in this sentence shancheng is credited as an aesthetic inspiration (not a dependency or base) and the referent is the CN original work.
+Checker per the report: plain error 8 / warn 0 / info 1 unchanged; links error 8 / warn 0 / info 1 → 8 / 1 / 1, the added warn being the F3 repoint's not-yet-posted theme:parallel-jp internal link (resolves at posting); no new class (i) error.
 
 ## Appendix — residue blocks
 

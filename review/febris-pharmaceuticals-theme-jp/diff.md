@@ -8,16 +8,16 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 515 |
-| candidate.txt | 521 |
-| Added | +169 |
-| Review-stage comments | 0 of the +169 added lines |
-| Removed | -166 |
+| candidate.txt | 525 |
+| Added | +167 |
+| Review-stage comments | 0 of the +167 added lines |
+| Removed | -160 |
 | Hunks | 17 |
 
 ```diff
 --- original.txt
 +++ candidate.txt
-@@ -1,169 +1,169 @@
+@@ -1,169 +1,173 @@
 -[[iftags +theme]]
 -[[module css]]
 -@import url("https://nu-scptheme.github.io/Black-Highlighter/stable/styles/normalize.min.css");
@@ -44,9 +44,6 @@ with `python3 review/build_review.py`; verify with
 -[[module Rate]]
 -[[/>]]
 -
--
--[[div_ style="display:inline-flex;width:100%;filter:invert(1);"]]
--[[image https://scp-wiki.wdfiles.com/local--files/theme%3Ablack-highlighter-theme/black-highlighter-logo.svg]]
 +[[include :scp-jp:component:interwiki-style
 +| priority=3
 +| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Afebris-pharmaceuticals-theme-jp/1
@@ -64,18 +61,10 @@ with `python3 review/build_review.py`; verify with
 +**初訳時参照リビジョン:** 4
 +**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:febris-pharmaceuticals-theme Febris Pharmaceuticals Theme]
 +[[include :scp-jp:credit:end-preview]]
-+
-++* 使い方
-+
-+これは[[*user Heck_Tech]]と[[*user dddaker]]による、Febris Pharmaceuticals要注意団体のためのBlack Highlighter基盤のテーマです。基本的な美的テーマに加えて、記事を引き立てる独自の@@[[div]]@@をいくつか用意しています。
-+
-+このテーマを使用するには、Black Highlighterテーマも併せて読み込む必要があります。[[[theme:black-highlighter-theme|詳しくはこちら]]]をご覧ください。
-+
-+どのWikiでも、以下のコードをページに記述してください:
-+
-+[[div class="code"]]
-+@@[[include :scp-jp:theme:black-highlighter-theme]]@@
-+@@[[include :scp-jp:theme:febris-pharmaceuticals-theme-jp]]@@
+ 
+ [[div_ style="display:inline-flex;width:100%;filter:invert(1);"]]
+-[[image https://scp-wiki.wdfiles.com/local--files/theme%3Ablack-highlighter-theme/black-highlighter-logo.svg]]
++[[image https://scp-jp.github.io/Black-Highlighter/img/black-highlighter-logo.svg]]
  [[/div]]
  
 -+* Usage
@@ -85,12 +74,21 @@ with `python3 review/build_review.py`; verify with
 -You will need to import the Black Highlighter theme as well in order to use this theme. [[[theme:black-highlighter-theme|To learn more go here]]].
 -
 -On any wiki:
--
--[[div class="code"]]
+++* 使い方
++
++これは[[*user Heck_Tech]]と[[*user dddaker]]による、Febris Pharmaceuticals要注意団体のためのBlack Highlighter基盤のテーマです。基本的な美的テーマに加えて、記事を引き立てる独自の@@[[div]]@@をいくつか用意しています。
++
++このテーマを使用するには、Black Highlighterテーマも併せて読み込む必要があります。[[[theme:black-highlighter-theme|詳しくはこちら]]]をご覧ください。
++
++どのWikiでも、以下のコードをページに記述してください:
+ 
+ [[div class="code"]]
 -@@[[include :scp-wiki:theme:black-highlighter-theme]]@@
 -@@[[include :scp-wiki:theme:febris-pharmaceuticals-theme]]@@
--[[/div]]
--
++@@[[include :scp-jp:theme:black-highlighter-theme]]@@
++@@[[include :scp-jp:theme:febris-pharmaceuticals-theme-jp]]@@
+ [[/div]]
+ 
 -
 -
  @@ @@
@@ -291,7 +289,7 @@ with `python3 review/build_review.py`; verify with
  
  > @@[[div class="leaflet"]]@@
  >
-@@ -172,19 +172,25 @@
+@@ -172,19 +176,25 @@
  
  @@ @@
  
@@ -320,7 +318,7 @@ with `python3 review/build_review.py`; verify with
  
  :root {
      --theme-base: "black-highlighter";
-@@ -193,15 +199,15 @@
+@@ -193,15 +203,15 @@
  
      /* PAGE */
  
@@ -341,7 +339,7 @@ with `python3 review/build_review.py`; verify with
    /* PURPLES */
  
  --light-lilly: 226, 187, 252;
-@@ -223,48 +229,48 @@
+@@ -223,48 +233,48 @@
  
  --eigengrau: 22, 22, 29;
  --deep-purple: 15, 1, 24;
@@ -404,7 +402,7 @@ with `python3 review/build_review.py`; verify with
  
      /* ===GENERAL TEXT COLORS=== */
      --swatch-text-dark: var(--black-monochrome);
-@@ -280,7 +286,7 @@
+@@ -280,7 +290,7 @@
      --swatch-menubg-dark-color: var(--dark-gray-monochrome);
      --swatch-menubg-black-color: var(--black-monochrome);
      --swatch-menubg-hover-color: var(--black-monochrome);
@@ -413,7 +411,7 @@ with `python3 review/build_review.py`; verify with
      /* ===MENU TEXT COLORS=== */
      --swatch-menutxt-dark-color: var(--black-monochrome);
      --swatch-menutxt-light-color: var(--white-monochrome);
-@@ -290,7 +296,7 @@
+@@ -290,7 +300,7 @@
          --link-color: var(--medium-accent);
          --visited-link-color: var(--dark-accent);
          --hover-link-color: var(--bright-accent);
@@ -422,7 +420,7 @@ with `python3 review/build_review.py`; verify with
          /* Rating Module Colors */
  
           --rating-module-button-plus-color: var(--febris-pharma);
-@@ -301,11 +307,11 @@
+@@ -301,11 +311,11 @@
           --rating-module-bottom-border-color: var(--medium-tint);
           --rating-module-text-color: var(--eigengrau);
           --rating-module-text-hover-color: var(--old-paper);
@@ -436,7 +434,7 @@ with `python3 review/build_review.py`; verify with
          /* Navbar Shadow */
  
  --gradient-background:
-@@ -314,22 +320,22 @@
+@@ -314,22 +324,22 @@
  rgba(var(--background-gradient-color), 0) var(--background-gradient-distance));
  --background-gradient-color: 96, 7, 156;
  --background-gradient-distance: 15rem;
@@ -463,7 +461,7 @@ with `python3 review/build_review.py`; verify with
      #top-bar {
          /* ===DROPDOWN MENU=== */
            --login-dropdown-bg-color: var(--febris-pharma);
-@@ -339,20 +345,20 @@
+@@ -339,20 +349,20 @@
  --login-dropdown-text-hover-color: var(--eigengrau);
  --login-dropdown-bg-hover-color: var(--old-paper);
      }
@@ -488,7 +486,7 @@ with `python3 review/build_review.py`; verify with
      /* ===FOOTER=== */
      #footer {
          --footer-bg-color: var(--medium-tint);
-@@ -361,12 +367,12 @@
+@@ -361,12 +371,12 @@
     --footer-link-hover-color: var(--eigengrau);
     --footer-link-hover-bg-color: var(--light-lavender));
      }
@@ -503,7 +501,7 @@ with `python3 review/build_review.py`; verify with
  div[id*=page-options-bottom]:not(:is(.page-rate-widget-box,#search-top-box-form))>a.btn {
    font-weight: 700;
  }
-@@ -380,14 +386,14 @@
+@@ -380,14 +390,14 @@
     --ui-icon-bg: var(--cool-purple);
     --ui-icon-hover-color: var(--old-paper);
     --ui-icon-hover-bg: var(--light-lavender);
@@ -520,7 +518,7 @@ with `python3 review/build_review.py`; verify with
          /* ===TABS=== */
          --tabs-txt: var(--swatch-text-tertiary-color);
          --tabs-hover-bg: var(--swatch-primary-darkest);
-@@ -395,7 +401,7 @@
+@@ -395,7 +405,7 @@
          --tabs-selected-bg: var(--swatch-primary-darker);
          --tabs-selected-txt: var(--swatch-text-secondary-color);
          --tabs-selected-outline: var(--swatch-primary-darker);
@@ -529,7 +527,7 @@ with `python3 review/build_review.py`; verify with
          /* ===TABLES=== */
          --tabs-bg: var(--cool-purple);
     --tabs-txt: var(--eigengrau);
-@@ -407,7 +413,7 @@
+@@ -407,7 +417,7 @@
     --tabs-bottom-border-color: var(--medium-tint);
     --tabs-content-bg-color: var(--old-paper), 0.25;
     --tabs-content-border-color: var(--medium-tint);
@@ -538,7 +536,7 @@ with `python3 review/build_review.py`; verify with
      /* ===BLOCKQUOTES=== */
          --blockquote-bg-color: var(--old-paper), 0.35;
      --blockquote-border-color: var(--eigengrau);
-@@ -422,7 +428,7 @@
+@@ -422,7 +432,7 @@
     --pagetags-text-hover-bg-color: var(--light-lavender);
  
  }
@@ -547,7 +545,7 @@ with `python3 review/build_review.py`; verify with
      /* ===GLOBAL ELEMENTS=== */
      :root {
          /* ===UI BUTTONS=== */
-@@ -432,29 +438,29 @@
+@@ -432,29 +442,29 @@
  --ui-button-hover-bg: var(--febris-pharma);
  --ui-button-hover-txt: var(--old-paper);
  --ui-button-hover-outline: var(--eigengrau);
@@ -584,7 +582,7 @@ with `python3 review/build_review.py`; verify with
      /* Page Rating Module */
      .page-rate-widget-box {
          border-color: rgb(var(--pale-gray-monochrome));
-@@ -462,22 +468,22 @@
+@@ -462,22 +472,22 @@
                  rgba(var(--pale-gray-monochrome), 1) 0%,
                  rgba(var(--pale-gray-monochrome), 1) 100%);
      }
@@ -611,7 +609,7 @@ with `python3 review/build_review.py`; verify with
      #page-content .modalbox {
          border-radius: 0;
          background: rgb(var(--pale-gray-monochrome));
-@@ -499,17 +505,17 @@
+@@ -499,17 +509,17 @@
  margin: auto;
  }
  

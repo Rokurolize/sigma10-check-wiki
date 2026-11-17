@@ -5,7 +5,7 @@ A Chinese glass theme by Mercuresphere, built on theme:aero-glass (itself a Basa
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:cobalt-aero-glass-jp — origin CN, population #175 [GOSIGN2-LEDGER (b) row 175]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 4d223fb0e2e8e48ebf7427a72aada5475f3ef0de6d2c86f25e7792ddeedab9c0); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 0e703dd6e19759358d983a0439876faabd8ea099286a2669c985c6fc62581ec2); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 10 errors / 1 warn / 1 info (pseudo-ref×10); standing classes dispositioned in register c1 [T1-ROWS row 200; GOSIGN2-LEDGER (b) row 175]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page hidden-* cluster confined to chromium-768, whose only hotlink host is http.cat = transient 503 capture, not a result; page sidebar-unreachable at ≤375 (both engines); sample T2 no machine verdict (exit 2, no summary). [RENDER-ROWS-2 (RENDER-S2-E (CN3))]
@@ -14,7 +14,7 @@ A Chinese glass theme by Mercuresphere, built on theme:aero-glass (itself a Basa
 - T4 (localize patterns + follow-up): PASS — display-affecting findings: 0 [LOCALIZE-ROWS row 174, source LOCALIZE-S2-D]
 - T5 (translation text): PASS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 174]
 - FIX5 re-judgement: item 47 (class F) DISPOSITIONED — FIX5-FUNC §3 (no edit): sidebar mechanism inherited from base theme:aero-glass exactly as the original inherits it; candidate #side-bar rules byte-identical to original (diff IDENTICAL); no candidate-side cause [GOSIGN2-LEDGER-SUPPLEMENT (a) item 47]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:cobalt-aero-glass-jp.txt sha256:4d223fb0e2e8e48ebf7427a72aada5475f3ef0de6d2c86f25e7792ddeedab9c0; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit f24b7d0e86e573ee5b9403589d62db5d972af009; candidate file pages/theme:cobalt-aero-glass-jp.txt sha256:0e703dd6e19759358d983a0439876faabd8ea099286a2669c985c6fc62581ec2; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## 0. Header / provenance
@@ -130,6 +130,15 @@ Re-derivation from the bytes, measured for this package:
 5. Checker: FIX5-FUNC reported 10 errors / 1 warn / 1 info before and after, unchanged (no edit); the stamp's T1 baseline agrees.
 
 Second-reviewer walk. Is the ground stated in terms a reader who did none of the work can check? Yes: legs 1–3 verify from this package's own two files; leg 4 needs the pages/ census for the absence of a JP base candidate and pages-existing/existing:theme-aero-glass.txt for the base itself, both in this repo. The walk confirms the ground exactly as stated: the candidate-side file contributes no sidebar mechanism of its own beyond byte-identical inherited rules, so a candidate edit was not the right outcome. The walk also surfaces what the disposition does not cover: the .logo deletion (section 8) sits outside the sidebar mechanism and outside this disposition's claim, and is flagged separately rather than folded into this judgement. Walk outcome: the disposition stands.
+
+### Post-package repairs (REFRESH3-L)
+
+The items above describe this package as built. The repair recorded below postdates the package; `candidate.txt` has been recopied from the current canonical `pages/theme:cobalt-aero-glass-jp.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**FIX-RDISP3, landing `f24b7d0` (report `R/review-scout/FIX-RDISP3.md`).** Two candidate insertions (+4/−0), postdating this package's build at `b5cb724`.
+- **F2 — dropped `.logo` rule restored.** Verbatim at L395–397, at the original's corresponding position in the delivered code block (after `#top-bar ul li>a:hover`, before the search-box comment): `.logo { transform-origin: 50% 33.333%; }`. The batch's selector census (candidate 110 vs original 111, `.logo` the only difference) now stands equal.
+- **F3 — Noto Sans JP load added.** The original's body rule is `font-family: sans-serif;`; the candidate's corresponding rule (L279) reads `font-family: 'Noto Sans JP', 'Noto Sans CJK JP', sans-serif;` — those names are port-introduced, so the pastel-skies branch applies (a port-introduced face named in a stack but loaded nowhere gains a load). One import added at L245 at the head of the delivered code block: `@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');`, the population's established form (sibling frutiger-aero-jp, blankstyle). `Noto Sans CJK JP` got no load: it is a system fallback (basalt-jp precedent).
+Checker per the report: plain error 10 / warn 0 / info 1 and links error 10 / warn 1 / info 1 unchanged; all ten errors class (iii) pseudo-refs, class (i) 0; brace depth ends at 0.
 
 ## Appendix — residue blocks
 

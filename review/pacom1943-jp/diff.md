@@ -43,7 +43,7 @@ with `python3 review/build_review.py`; verify with
 +**翻訳責任者:** AI
 +**翻訳年:** 2026
 +**原題:** 태평양사령부 1943 테마
-+**著作権者:** 原語版ページの作成者に同じ（scpko の theme:pacom1943）
++**著作権者:** [[*user thd-glasses]]
 +**作成年:** 2020
 +**初訳時参照リビジョン:** 43
 +**元記事リンク:** [*https://scpko.wikidot.com/theme:pacom1943 태평양사령부 1943 테마]
@@ -71,7 +71,7 @@ with `python3 review/build_review.py`; verify with
 -* 본 테마를 적용할 페이지 최상단에 다음 구문을 삽입하세요.
 -> [[include :scpko:theme:pacom1943]]
 ++ 使い方：太平洋司令部1943 CSSテーマ
-+* [[[scp-987-ko|SCP-987-KO]]]のための専用テーマです。
++* [[[https://scpko.wikidot.com/scp-987-ko|SCP-987-KO]]]（韓国語版）のための専用テーマです。
 +* このテーマを適用するページの一番上に以下の構文を入れてください。
 +> [[include :scp-jp:theme:pacom1943-jp]]
  
@@ -188,7 +188,7 @@ with `python3 review/build_review.py`; verify with
 +[[/collapsible]]
 +
 +[[include :scp-jp:component:license-box-backend
-+|author=scpko theme:pacom1943 の作者]]
++|author=thd-glasses]]
 +
 +> **画像・フォントの出典:** 原語版の theme:pacom1943 の記載に従います。KO 側の添付は候補ページに再ホストし、ウェブフォントは Google Fonts の同等書体に差し替えています。原語版にライセンス表記が無い画像は、投稿前に著者へ確認してください。
 +

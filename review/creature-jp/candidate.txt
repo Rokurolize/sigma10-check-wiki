@@ -1,7 +1,7 @@
 [[iftags +テーマ]]
 
 [[include :scp-jp:credit:start-preview]]
-**タイトル:** 괴수공원 테마
+**タイトル:** 怪獣公園テーマ
 **翻訳責任者:** AI
 **翻訳年:** 2026
 **原題:** 괴수공원 테마
@@ -23,11 +23,11 @@
 **画像出典**
 * すべての画像は[[*user thd-glasses]]が制作しました。
 
-[[[11thanniversarycontest|韓国語版SCP財団11周年年末コンテスト]]]専用CSSテーマです。
+[[[https://scpko.wikidot.com/11thanniversarycontest|韓国語版SCP財団11周年年末コンテスト]]]専用CSSテーマです。
 
 参考テーマおよびコンポーネント:
-* [[[theme:anniversary|年末コンテストテーマ]]]
-* [[[component:collapsible-topbar|折り畳み式トップバー]]]
+* [[[theme:anniversary-jp|年末コンテストテーマ]]]
+* [[[component:collapsible-topbar-jp|折り畳み式トップバー]]]
 
 ----
 
@@ -35,7 +35,12 @@
 
 [[collapsible show="ソースコードを表示" hide="ソースコードを閉じる"]]
 [[code type="css"]]
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+:root {
+  --color-bg: #222;
+  --color-ip: #222;
+  --font: #FFF;
+}
+
 /* ===== creature ===== */
 @font-face {
     font-family: 'FUNFLOWSURVIVORKR';
@@ -148,6 +153,12 @@ div#extra-div-3 {
 [[/collapsible]]
 
 [[/iftags]]
+
+[[include component:collapsible-topbar-jp
+|maxw=1000px
+|top-color=#222
+|top-bg=#FD0
+]]
 
 [[module css]]
 @import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aanniversary-jp/1");

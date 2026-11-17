@@ -15,13 +15,13 @@ adjudicated explanation.
 | | Lines |
 |---|---|
 | original.txt | 1140 |
-| candidate.txt | 1142 |
-| Added | +112 |
-| Review-stage comments | 0 of the +112 added lines |
-| Removed | -110 |
-| Changed | 222 |
+| candidate.txt | 1146 |
+| Added | +113 |
+| Review-stage comments | 0 of the +113 added lines |
+| Removed | -107 |
+| Changed | 220 |
 | Change blocks | 91 |
-| Diff sections (context 3) | 31 |
+| Diff sections (context 3) | 32 |
 
 ## Changed lines by auto-class (heuristic)
 
@@ -29,8 +29,8 @@ adjudicated explanation.
 |---|---|---|
 | mechanical | 3 | 5 |
 | translation | 43 | 94 |
-| supplement | 2 | 21 |
-| residual | 43 | 102 |
+| supplement | 3 | 22 |
+| residual | 42 | 99 |
 
 ## Change-block index
 
@@ -93,40 +93,40 @@ adjudicated explanation.
 | 55 | 5 | 219–221 | 224–226 | +3/−3 | translation | \|\|~ これは \|\|~ 表です \|\| |
 | 56 | 5 | 225–227 | 230–232 | +3/−3 | residual | 本文フォントはNoto Sans JPです。 |
 | 57 | 5 | 232–232 | 237–237 | +1/−1 | translation | [[collapsible show="+ コードを表示" hide="- コードを隠す" hideLocation="both"]] |
-| 58 | 6 | 254–254 | 259–259 | +1/−1 | residual | --logo: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Acobalt-a… |
-| 59 | 6 | 256–256 | 261–261 | +1/−1 | residual | --background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/them… |
-| 60 | 6 | 260–261 | 265–266 | +2/−2 | residual | --title: " パラダイムシフト"; |
-| 61 | 7 | 274–274 | 279–279 | +1/−1 | residual | font-family: 'Noto Sans JP', 'Noto Sans CJK JP', sans-serif; |
-| 62 | 8 | 286–286 | 291–291 | +1/−1 | translation | /* メインのすりガラス枠 */ |
-| 63 | 9 | 329–329 | 334–334 | +1/−1 | translation | /* トップバー */ |
-| 64 | 10 | 389–391 | — | +0/−3 | residual | .logo { |
-| 65 | 10 | 393–393 | 395–395 | +1/−1 | translation | /* 検索ボックスとページヘッダー見出し */ |
-| 66 | 11 | 429–429 | 431–431 | +1/−1 | translation | /* ページ要素の枠線調整 */ |
-| 67 | 12 | 463–463 | 465–465 | +1/−1 | translation | /* hrとfancyborder */ |
-| 68 | 13 | 495–495 | 497–497 | +1/−1 | residual | border-image-source: url("https://sigma10-jp-test.wdfiles.com/local--files/th… |
-| 69 | 14 | 505–505 | 507–507 | +1/−1 | residual | border-image: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Ac… |
-| 70 | 15 | 579–579 | 581–581 | +1/−1 | translation | /* サイドバー */ |
-| 71 | 16 | 614–614 | 616–616 | +1/−1 | translation | /* 評価モジュール */ |
-| 72 | 17 | 709–709 | 711–711 | +1/−1 | translation | /* 選択範囲の背景 */ |
-| 73 | 18 | 723–723 | 725–725 | +1/−1 | translation | /* リンク */ |
-| 74 | 19 | 765–765 | 767–767 | +1/−1 | translation | /* ダイアログ */ |
-| 75 | 20 | 792–792 | 794–794 | +1/−1 | translation | /* ボタン */ |
-| 76 | 21 | 839–839 | 841–841 | +1/−1 | residual | /* タグ */ |
-| 77 | 22 | 849–849 | 851–851 | +1/−1 | translation | /* スクロールバー */ |
-| 78 | 23 | 864–864 | 866–866 | +1/−1 | residual | /* パンくずリスト */ |
-| 79 | 23 | 871–871 | 873–873 | +1/−1 | residual | /* 表 */ |
-| 80 | 24 | 883–883 | 885–885 | +1/−1 | translation | /* 色調整 */ |
-| 81 | 24 | 889–889 | 891–891 | +1/−1 | translation | /* 問題のある大文字小文字変換を調整 */ |
-| 82 | 25 | 904–904 | 906–906 | +1/−1 | residual | /* ===ページ保存問題を回避する内蔵モジュール=== */ |
-| 83 | 26 | 934–934 | 936–936 | +1/−1 | translation | content: 'あなたは15分間の排他的ロックを保持しています。これにより、作業中のページを他のユーザーが編集できなくなります。\Aこのロックは、操作… |
-| 84 | 27 | 949–949 | 951–951 | +1/−1 | translation | content: ' 秒経過すると失効します。'; |
-| 85 | 27 | 955–955 | 957–957 | +1/−1 | translation | content: 'ページを保存しています……\Aこの表示が長時間続く場合は、編集欄の内容をクリップボードにコピーし、ページを再読み込みして編集をやり直し… |
-| 86 | 28 | 974–974 | 976–976 | +1/−1 | residual | /* ===iOS端末での表示を修正=== */ |
-| 87 | 28 | 978–978 | 980–980 | +1/−1 | residual | border-image-source: url("https://sigma10-jp-test.wdfiles.com/local--files/th… |
-| 88 | 28 | 985–985 | 987–987 | +1/−1 | residual | /* ===Firefoxでの表示を修正=== */ |
-| 89 | 29 | 995–995 | 997–997 | +1/−1 | residual | background: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Acoba… |
-| 90 | 30 | 1061–1061 | 1063–1063 | +1/−1 | translation | /* ===ブラウザがbackdrop-filterに対応していない場合の代替表示=== */ |
-| 91 | 31 | 1071–1071 | 1073–1073 | +1/−1 | residual | background: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Acoba… |
+| 58 | 6 | — | 245–245 | +1/−0 | supplement | @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;7… |
+| 59 | 7 | 254–254 | 260–260 | +1/−1 | residual | --logo: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Acobalt-a… |
+| 60 | 7 | 256–256 | 262–262 | +1/−1 | residual | --background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/them… |
+| 61 | 7 | 260–261 | 266–267 | +2/−2 | residual | --title: " パラダイムシフト"; |
+| 62 | 8 | 274–274 | 280–280 | +1/−1 | residual | font-family: 'Noto Sans JP', 'Noto Sans CJK JP', sans-serif; |
+| 63 | 9 | 286–286 | 292–292 | +1/−1 | translation | /* メインのすりガラス枠 */ |
+| 64 | 10 | 329–329 | 335–335 | +1/−1 | translation | /* トップバー */ |
+| 65 | 11 | 393–393 | 399–399 | +1/−1 | translation | /* 検索ボックスとページヘッダー見出し */ |
+| 66 | 12 | 429–429 | 435–435 | +1/−1 | translation | /* ページ要素の枠線調整 */ |
+| 67 | 13 | 463–463 | 469–469 | +1/−1 | translation | /* hrとfancyborder */ |
+| 68 | 14 | 495–495 | 501–501 | +1/−1 | residual | border-image-source: url("https://sigma10-jp-test.wdfiles.com/local--files/th… |
+| 69 | 15 | 505–505 | 511–511 | +1/−1 | residual | border-image: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Ac… |
+| 70 | 16 | 579–579 | 585–585 | +1/−1 | translation | /* サイドバー */ |
+| 71 | 17 | 614–614 | 620–620 | +1/−1 | translation | /* 評価モジュール */ |
+| 72 | 18 | 709–709 | 715–715 | +1/−1 | translation | /* 選択範囲の背景 */ |
+| 73 | 19 | 723–723 | 729–729 | +1/−1 | translation | /* リンク */ |
+| 74 | 20 | 765–765 | 771–771 | +1/−1 | translation | /* ダイアログ */ |
+| 75 | 21 | 792–792 | 798–798 | +1/−1 | translation | /* ボタン */ |
+| 76 | 22 | 839–839 | 845–845 | +1/−1 | residual | /* タグ */ |
+| 77 | 23 | 849–849 | 855–855 | +1/−1 | translation | /* スクロールバー */ |
+| 78 | 24 | 864–864 | 870–870 | +1/−1 | residual | /* パンくずリスト */ |
+| 79 | 24 | 871–871 | 877–877 | +1/−1 | residual | /* 表 */ |
+| 80 | 25 | 883–883 | 889–889 | +1/−1 | translation | /* 色調整 */ |
+| 81 | 25 | 889–889 | 895–895 | +1/−1 | translation | /* 問題のある大文字小文字変換を調整 */ |
+| 82 | 26 | 904–904 | 910–910 | +1/−1 | residual | /* ===ページ保存問題を回避する内蔵モジュール=== */ |
+| 83 | 27 | 934–934 | 940–940 | +1/−1 | translation | content: 'あなたは15分間の排他的ロックを保持しています。これにより、作業中のページを他のユーザーが編集できなくなります。\Aこのロックは、操作… |
+| 84 | 28 | 949–949 | 955–955 | +1/−1 | translation | content: ' 秒経過すると失効します。'; |
+| 85 | 28 | 955–955 | 961–961 | +1/−1 | translation | content: 'ページを保存しています……\Aこの表示が長時間続く場合は、編集欄の内容をクリップボードにコピーし、ページを再読み込みして編集をやり直し… |
+| 86 | 29 | 974–974 | 980–980 | +1/−1 | residual | /* ===iOS端末での表示を修正=== */ |
+| 87 | 29 | 978–978 | 984–984 | +1/−1 | residual | border-image-source: url("https://sigma10-jp-test.wdfiles.com/local--files/th… |
+| 88 | 29 | 985–985 | 991–991 | +1/−1 | residual | /* ===Firefoxでの表示を修正=== */ |
+| 89 | 30 | 995–995 | 1001–1001 | +1/−1 | residual | background: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Acoba… |
+| 90 | 31 | 1061–1061 | 1067–1067 | +1/−1 | translation | /* ===ブラウザがbackdrop-filterに対応していない場合の代替表示=== */ |
+| 91 | 32 | 1071–1071 | 1077–1077 | +1/−1 | residual | background: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Acoba… |
 
 ## Full diff
 
@@ -425,10 +425,26 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 6 — original 251–264 · candidate 256–269 · +4/−4 · residual</summary>
+<summary>Section 6 — original 237–242 · candidate 242–248 · +1/−0 · supplement</summary>
 
 ```diff
-@@ -251,14 +256,14 @@
+@@ -237,6 +242,7 @@
+ /* By Mercuresphere */
+ /* Based on Basalt Theme by Liryn & Placeholder McD  */
+ /* CC BY-SA 3.0 */
++@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+ 
+ :root {
+     --white-monochrome: 230, 230, 230;
+```
+
+</details>
+
+<details>
+<summary>Section 7 — original 251–264 · candidate 257–270 · +4/−4 · residual</summary>
+
+```diff
+@@ -251,14 +257,14 @@
      --dark-accent: var(--dark-gray-monochrome);
      --newpage-color: 150, 235, 150;
  
@@ -452,10 +468,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 7 — original 271–277 · candidate 276–282 · +1/−1 · residual</summary>
+<summary>Section 8 — original 271–277 · candidate 277–283 · +1/−1 · residual</summary>
 
 ```diff
-@@ -271,7 +276,7 @@
+@@ -271,7 +277,7 @@
      background-blend-mode: luminosity;
      background-attachment: fixed;
      background-size: cover;
@@ -469,10 +485,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 8 — original 283–289 · candidate 288–294 · +1/−1 · translation</summary>
+<summary>Section 9 — original 283–289 · candidate 289–295 · +1/−1 · translation</summary>
 
 ```diff
-@@ -283,7 +288,7 @@
+@@ -283,7 +289,7 @@
      display: none !important;
  }
  
@@ -486,10 +502,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 9 — original 326–332 · candidate 331–337 · +1/−1 · translation</summary>
+<summary>Section 10 — original 326–332 · candidate 332–338 · +1/−1 · translation</summary>
 
 ```diff
-@@ -326,7 +331,7 @@
+@@ -326,7 +332,7 @@
      }
  }
  
@@ -503,16 +519,12 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 10 — original 386–396 · candidate 391–398 · +1/−4 · residual, translation</summary>
+<summary>Section 11 — original 390–396 · candidate 396–402 · +1/−1 · translation</summary>
 
 ```diff
-@@ -386,11 +391,8 @@
-     transform: none;
+@@ -390,7 +396,7 @@
+     transform-origin: 50% 33.333%;
  }
- 
--.logo {
--    transform-origin: 50% 33.333%;
--}
  
 -/* 搜索框和页眉标题 */
 +/* 検索ボックスとページヘッダー見出し */
@@ -524,10 +536,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 11 — original 426–432 · candidate 428–434 · +1/−1 · translation</summary>
+<summary>Section 12 — original 426–432 · candidate 432–438 · +1/−1 · translation</summary>
 
 ```diff
-@@ -426,7 +428,7 @@
+@@ -426,7 +432,7 @@
  }
  
  
@@ -541,10 +553,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 12 — original 460–466 · candidate 462–468 · +1/−1 · translation</summary>
+<summary>Section 13 — original 460–466 · candidate 466–472 · +1/−1 · translation</summary>
 
 ```diff
-@@ -460,7 +462,7 @@
+@@ -460,7 +466,7 @@
  }
  
  
@@ -558,10 +570,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 13 — original 492–498 · candidate 494–500 · +1/−1 · residual</summary>
+<summary>Section 14 — original 492–498 · candidate 498–504 · +1/−1 · residual</summary>
 
 ```diff
-@@ -492,7 +494,7 @@
+@@ -492,7 +498,7 @@
      border-top: 2vw solid transparent;
      height: 0;
      box-sizing: border-box;
@@ -575,10 +587,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 14 — original 502–508 · candidate 504–510 · +1/−1 · residual</summary>
+<summary>Section 15 — original 502–508 · candidate 508–514 · +1/−1 · residual</summary>
 
 ```diff
-@@ -502,7 +504,7 @@
+@@ -502,7 +508,7 @@
  
  .fancyborder {
      border: 2vw solid rgba(0, 0, 0, 0.5);
@@ -592,10 +604,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 15 — original 576–582 · candidate 578–584 · +1/−1 · translation</summary>
+<summary>Section 16 — original 576–582 · candidate 582–588 · +1/−1 · translation</summary>
 
 ```diff
-@@ -576,7 +578,7 @@
+@@ -576,7 +582,7 @@
      color: rgb(var(--dark-gray-monochrome));
  }
  
@@ -609,10 +621,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 16 — original 611–617 · candidate 613–619 · +1/−1 · translation</summary>
+<summary>Section 17 — original 611–617 · candidate 617–623 · +1/−1 · translation</summary>
 
 ```diff
-@@ -611,7 +613,7 @@
+@@ -611,7 +617,7 @@
      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3), inset -1px 0px rgb(var(--white-monochrome));
  }
  
@@ -626,10 +638,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 17 — original 706–712 · candidate 708–714 · +1/−1 · translation</summary>
+<summary>Section 18 — original 706–712 · candidate 712–718 · +1/−1 · translation</summary>
 
 ```diff
-@@ -706,7 +708,7 @@
+@@ -706,7 +712,7 @@
      color: rgb(var(--white-monochrome));
  }
  
@@ -643,10 +655,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 18 — original 720–726 · candidate 722–728 · +1/−1 · translation</summary>
+<summary>Section 19 — original 720–726 · candidate 726–732 · +1/−1 · translation</summary>
 
 ```diff
-@@ -720,7 +722,7 @@
+@@ -720,7 +726,7 @@
      text-shadow: none
  }
  
@@ -660,10 +672,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 19 — original 762–768 · candidate 764–770 · +1/−1 · translation</summary>
+<summary>Section 20 — original 762–768 · candidate 768–774 · +1/−1 · translation</summary>
 
 ```diff
-@@ -762,7 +764,7 @@
+@@ -762,7 +768,7 @@
      border-radius: 5px;
  }
  
@@ -677,10 +689,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 20 — original 789–795 · candidate 791–797 · +1/−1 · translation</summary>
+<summary>Section 21 — original 789–795 · candidate 795–801 · +1/−1 · translation</summary>
 
 ```diff
-@@ -789,7 +791,7 @@
+@@ -789,7 +795,7 @@
      border-right: none;
  }
  
@@ -694,10 +706,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 21 — original 836–842 · candidate 838–844 · +1/−1 · residual</summary>
+<summary>Section 22 — original 836–842 · candidate 842–848 · +1/−1 · residual</summary>
 
 ```diff
-@@ -836,7 +838,7 @@
+@@ -836,7 +842,7 @@
      color: rgb(200 200 200);
  }
  
@@ -711,10 +723,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 22 — original 846–852 · candidate 848–854 · +1/−1 · translation</summary>
+<summary>Section 23 — original 846–852 · candidate 852–858 · +1/−1 · translation</summary>
 
 ```diff
-@@ -846,7 +848,7 @@
+@@ -846,7 +852,7 @@
      font-family: 'Work Sans', sans-serif;
  }
  
@@ -728,10 +740,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 23 — original 861–874 · candidate 863–876 · +2/−2 · residual</summary>
+<summary>Section 24 — original 861–874 · candidate 867–880 · +2/−2 · residual</summary>
 
 ```diff
-@@ -861,14 +863,14 @@
+@@ -861,14 +867,14 @@
  }
  
  
@@ -753,10 +765,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 24 — original 880–892 · candidate 882–894 · +2/−2 · translation</summary>
+<summary>Section 25 — original 880–892 · candidate 886–898 · +2/−2 · translation</summary>
 
 ```diff
-@@ -880,13 +882,13 @@
+@@ -880,13 +886,13 @@
      border: 1px solid rgb(var(--white-monochrome)) !important;
  }
  
@@ -777,10 +789,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 25 — original 901–907 · candidate 903–909 · +1/−1 · residual</summary>
+<summary>Section 26 — original 901–907 · candidate 907–913 · +1/−1 · residual</summary>
 
 ```diff
-@@ -901,7 +903,7 @@
+@@ -901,7 +907,7 @@
      text-transform: none;
  }
  
@@ -794,10 +806,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 26 — original 931–937 · candidate 933–939 · +1/−1 · translation</summary>
+<summary>Section 27 — original 931–937 · candidate 937–943 · +1/−1 · translation</summary>
 
 ```diff
-@@ -931,7 +933,7 @@
+@@ -931,7 +937,7 @@
  }
  
  div#lock-info::before {
@@ -811,10 +823,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 27 — original 946–958 · candidate 948–960 · +2/−2 · translation</summary>
+<summary>Section 28 — original 946–958 · candidate 952–964 · +2/−2 · translation</summary>
 
 ```diff
-@@ -946,13 +948,13 @@
+@@ -946,13 +952,13 @@
  }
  
  div#lock-info::after {
@@ -835,10 +847,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 28 — original 971–988 · candidate 973–990 · +3/−3 · residual</summary>
+<summary>Section 29 — original 971–988 · candidate 977–994 · +3/−3 · residual</summary>
 
 ```diff
-@@ -971,18 +973,18 @@
+@@ -971,18 +977,18 @@
      font-size: 0;
  }
  
@@ -865,10 +877,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 29 — original 992–998 · candidate 994–1000 · +1/−1 · residual</summary>
+<summary>Section 30 — original 992–998 · candidate 998–1004 · +1/−1 · residual</summary>
 
 ```diff
-@@ -992,7 +994,7 @@
+@@ -992,7 +998,7 @@
          position: absolute;
          width: 106%;
          height: calc(100% + 2rem);
@@ -882,10 +894,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 30 — original 1058–1064 · candidate 1060–1066 · +1/−1 · translation</summary>
+<summary>Section 31 — original 1058–1064 · candidate 1064–1070 · +1/−1 · translation</summary>
 
 ```diff
-@@ -1058,7 +1060,7 @@
+@@ -1058,7 +1064,7 @@
      }
  }
  
@@ -899,10 +911,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 31 — original 1068–1074 · candidate 1070–1076 · +1/−1 · residual</summary>
+<summary>Section 32 — original 1068–1074 · candidate 1074–1080 · +1/−1 · residual</summary>
 
 ```diff
-@@ -1068,7 +1070,7 @@
+@@ -1068,7 +1074,7 @@
          position: absolute;
          width: 106%;
          height: calc(100% + 2rem);

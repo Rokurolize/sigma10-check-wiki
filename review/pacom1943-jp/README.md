@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:pacom1943-jp — origin KO, population #279 [GOSIGN2-LEDGER (b) row 279]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 2e1e962ba6fc103306f63d35a86ba6aa4e312fb9edeab0bf69ba8e3a76f98078); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 6965955081a0ccc1910b7388d72af79d12f9c5f814cb5a99ffa0aeddf26127cb); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 8 errors / 1 warn / 1 info (pseudo-ref×8); standing classes dispositioned in register c1 [T1-ROWS row 249; GOSIGN2-LEDGER (b) row 279]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page-overflow 380px@320/375 (page) and 380px@320/375 + 906px@768 (sample); sample credit-modal (preview-form); T3 long headings run past the content column and are clipped at PC/tablet, wrap/cut at mobile. [RENDER-ROWS-2 (RENDER-S2-H (KO7))]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 278, source LOCALIZE-S2-F]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 278]
 - FIX5 re-judgement: item 106 (class F) DISPOSITIONED — FIX5-FUNC §8 (no edit): the two long headings are direct translations of original L30/L35; neither file carries a heading font-size/overflow/width rule; operative typography is inherited from the base in both versions [GOSIGN2-LEDGER-SUPPLEMENT (a) item 106]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:pacom1943-jp.txt sha256:2e1e962ba6fc103306f63d35a86ba6aa4e312fb9edeab0bf69ba8e3a76f98078; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit b4109ab7758a2904b5dbfff500e1438718099212; candidate file pages/theme:pacom1943-jp.txt sha256:6965955081a0ccc1910b7388d72af79d12f9c5f814cb5a99ffa0aeddf26127cb; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 Status: complete (batch R-disp-9 lane, 2026-11-17)
@@ -163,6 +163,15 @@ Counts: 24 blocks, 21 specific, 2 heuristic, 1 residue, 0 skipped (comment text)
 
 - F1 — both credit author carriers are pointers although the original names the author. Candidate cand L16: 著作権者： 原語版ページの作成者に同じ（scpko の theme:pacom1943）; license-box author parameter, cand L128: |author=scpko theme:pacom1943 の作者. The frozen original names thd-glasses in two carriers: the info body at orig L19 ("기타 이미지 파일은 모두 [[*user thd-glasses]]가 제작함" — all other image files were made by thd-glasses) and the code banner at orig L47 ("Edited by thd-glasses."). This is the credit-pointer family: the original names them, the fields name nobody. The population's remedy form is on record in many landed repairs (e.g. theme:07k-jp, whose credit field and license-box author parameter were both set to thd-glasses in FIX-07K). The ledger (c3) formula "P3 credit fields FIXED (credit waves; checker-verified)" is the prose the bytes overtake: the fields are present and checker-verified, their content is the pointer.
 - F2 — the dedication link is a dead bare name in the JP environment. Cand L31: "* [[[scp-987-ko|SCP-987-KO]]]のための専用テーマです。", byte-identical to orig L31. Probe (2026-11-17): https://scp-jp.wikidot.com/scp-987-ko returns 404; no JP counterpart page exists under that name, and no pacom-style counterpart name is in the population. The remedy form is pattern 11's annotation branch (absolutize to the scpko original with the （韓国語版） annotation), as applied to creature-jp's contest link in FIX-RDISP4.
+
+### Post-package repairs (REFRESH3-L)
+
+The items above describe this package as built. The repair recorded below postdates the package; `candidate.txt` has been recopied from the current canonical `pages/theme:pacom1943-jp.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**FIX-RDISP9, landing `b4109ab` (report `R/review-scout/FIX-RDISP9.md`).** Three candidate lines (+3/−3 on this file), postdating this package's build at `b5cb724`.
+- **F1 — both credit carriers name thd-glasses.** The frozen original names thd-glasses in its info body (L19) and code banner (L47 "Edited by thd-glasses."). The candidate's two carriers held pointers: credit block (L16) → `**著作権者:** [[*user thd-glasses]]` and license box (L128) → `|author=thd-glasses]]`, the population's forms for this author (FIX-07K).
+- **F2 — dedication link absolutized with the Korean-version annotation.** L31 (formerly byte-identical to original L31) named `[[[scp-987-ko|SCP-987-KO]]]`, which probes 404 on scp-jp and has no JP counterpart. Pattern 11's annotation branch (the creature contest-link precedent) gives `[[[https://scpko.wikidot.com/scp-987-ko|SCP-987-KO]]]（韓国語版）`, target unchanged in substance.
+Checker per the report: plain error 8 / warn 0 / info 1 unchanged (all class (iii) pseudo-refs, class (i) 0); links error 8 / warn 1 / info 1 → 8 / 0 / 1, the removed warn being the dead dedication link's own finding; no new finding of any class.
 
 ## Appendix — residue blocks
 

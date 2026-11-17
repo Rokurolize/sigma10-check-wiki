@@ -8,33 +8,30 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 741 |
-| candidate.txt | 775 |
+| candidate.txt | 784 |
 | Added | +174 |
 | Review-stage comments | 0 of the +174 added lines |
-| Removed | -146 |
-| Hunks | 11 |
+| Removed | -137 |
+| Hunks | 12 |
 
 ```diff
 --- original.txt
 +++ candidate.txt
-@@ -1,178 +1,196 @@
+@@ -1,7 +1,7 @@
 -[[iftags +theme]]
 -[[module css]]
 -@import url("https://nu-scptheme.github.io/Black-Highlighter/css/min/normalize.min.css");
 -@import url("https://nu-scptheme.github.io/Black-Highlighter/css/min/black-highlighter.min.css");
--.scp-image-block.block-right {
--    margin: 1em 0 1em 2em;
--}
--
--.scp-image-block img {
--    min-width: 100%;
--    border: 0.5rem solid rgba(var(--pale-gray-monochrome));
--    box-sizing: border-box;
--}
 +[[include :scp-jp:theme:black-highlighter-theme]]
 +
 +[[module CSS]]
 +@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aold-money-theme-jp/1');
+ .scp-image-block.block-right {
+     margin: 1em 0 1em 2em;
+ }
+@@ -12,167 +12,194 @@
+     box-sizing: border-box;
+ }
  [[/module]]
 -[[include :scp-wiki:component:interwiki-style
 +
@@ -336,7 +333,7 @@ with `python3 review/build_review.py`; verify with
  
  @supports(display:grid) {
  
-@@ -187,15 +205,15 @@
+@@ -187,15 +214,15 @@
      	/* set this to your theme's full name */
  
      	/* Header */
@@ -359,7 +356,7 @@ with `python3 review/build_review.py`; verify with
      	/* Stylistic Alternates */
      	--ss04: 0;
  
-@@ -239,7 +257,7 @@
+@@ -239,7 +266,7 @@
  
      	/* Primary Theme Colors */
      	--swatch-background: var(--black-monochrome, 26, 25, 24);
@@ -368,7 +365,7 @@ with `python3 review/build_review.py`; verify with
      	/* Link Colors */
      	--visited-link-color: var(--gray-monochrome);
  
-@@ -376,7 +394,7 @@
+@@ -376,7 +403,7 @@
      }
  
      #header h1 a::before {
@@ -377,7 +374,7 @@ with `python3 review/build_review.py`; verify with
      	-webkit-background-clip: text;
      	background-clip: text;
      	background-size: cover;
-@@ -406,7 +424,7 @@
+@@ -406,7 +433,7 @@
      #header div[class*="top-bar"]>ul>li>ul {
      	background-attachment: fixed;
      	background-color: rgb(var(--swatch-background));
@@ -386,7 +383,7 @@ with `python3 review/build_review.py`; verify with
      	background-repeat: repeat, repeat-x;
      	background-size: 10%, 100% var(--background-gradient-distance);
      	background-blend-mode: difference;
-@@ -463,7 +481,7 @@
+@@ -463,7 +490,7 @@
      	position: relative;
      	justify-content: center;
      	margin: 1rem 0;
@@ -395,7 +392,7 @@ with `python3 review/build_review.py`; verify with
      	-webkit-background-clip: text;
      	background-clip: text;
      	background-size: cover;
-@@ -488,7 +506,7 @@
+@@ -488,7 +515,7 @@
      	position: absolute;
      	width: 100%;
      	height: 0.35rem;
@@ -404,7 +401,7 @@ with `python3 review/build_review.py`; verify with
      	background-repeat: no-repeat;
      	background-position: center;
      	background-size: contain;
-@@ -548,7 +566,7 @@
+@@ -548,7 +575,7 @@
  
      table.wiki-content-table th {
      	background-color: rgb(var(--swatch-primary-darker));
@@ -413,7 +410,7 @@ with `python3 review/build_review.py`; verify with
      	background-size: 100vw 100vh;
      	background-attachment: fixed;
      }
-@@ -600,7 +618,7 @@
+@@ -600,7 +627,7 @@
      	width: 10%;
      	height: 0.35rem;
      	transform: translateX(-50%);
@@ -422,7 +419,7 @@ with `python3 review/build_review.py`; verify with
      	background-repeat: no-repeat;
      	background-position: center center;
      	background-size: cover;
-@@ -617,7 +635,7 @@
+@@ -617,7 +644,7 @@
      	-webkit-background-clip: text;
      	background-clip: text;
      	background-color: rgb(var(--swatch-primary-darker));
@@ -431,7 +428,7 @@ with `python3 review/build_review.py`; verify with
      	background-size: cover;
      	background-blend-mode: hard-light;
      	-webkit-text-fill-color: transparent;
-@@ -727,15 +745,31 @@
+@@ -727,15 +754,31 @@
      	}
      }
  }

@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:animal-instead-of-beast-jp — origin KO, population #251 [GOSIGN2-LEDGER (b) row 251]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 557e67d9c94c85a15ed1d8164e0e3c86c17b64b43db712532ffeae17c471fad0); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now ca7918c69dfb93606a215b141359af12facdb026bd8292120ed90c1d7d625ff1); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 4 errors / 1 warn / 1 info (pseudo-ref×4); standing classes dispositioned in register c1 [T1-ROWS row 234; GOSIGN2-LEDGER (b) row 251]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — runtime-hotlink site-theme chain + scpko.wdfiles.com / scpko.wikidot.com on both pages; sample credit-modal (preview-form) + 884px@768 overflow; T3 header wordmark faint gray-on-white (machine contrast 1.03). [RENDER-ROWS-2 (RENDER-S2-H (KO1))]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 3 [LOCALIZE-ROWS row 250, source LOCALIZE-S2-F]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 250]
 - FIX5 re-judgement: items 101 (class C) FIXED, 102 (class E) DISPOSITIONED — FIX5-INFO, commit 9a1c86a: info-module / duplicate credit residue removed FIX5-INFO (no edit): candidate and original value sets byte-identical (--color-1: #F9FCF9 wordmark on both); live probe 2026-11-17: original logo.png HTTP 200 (image/png, 305,687 B), candidate draft-host logo.png HTTP 404; cause is the deferred draft-bucket asset (AGENTS.md ss4/ss6), not a colour binding [GOSIGN2-LEDGER-SUPPLEMENT (a) items 101–102]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:animal-instead-of-beast-jp.txt sha256:557e67d9c94c85a15ed1d8164e0e3c86c17b64b43db712532ffeae17c471fad0; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit fa9e84aae02210b174c0480db82e68c1846aeef4; candidate file pages/theme:animal-instead-of-beast-jp.txt sha256:ca7918c69dfb93606a215b141359af12facdb026bd8292120ed90c1d7d625ff1; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 Status: complete (R-disp-2 lane, 2026-11-17)
@@ -186,6 +186,17 @@ Counts: 37 blocks, 31 specific, 6 heuristic, 0 residue, 0 skipped (comment text)
 - A2 — credit title field diverges from the candidate's own body form. Title field (cand L12): 獣ではなく動物 テーマ. The candidate's heading (cand L27) and prose (cand L33) both use 獣のかわりに動物 CSSテーマ as the theme's Japanese name. The steam-guide and voyager repairs settled that the title field follows the page's own Japanese form.
 - A3 — visited-link exhibit names the plain form (cand L57; section 7).
 - A4 — load-only JP font supplement (cand L73-74; section 4), recorded for adjudication.
+
+### Post-package repairs (REFRESH3-L)
+
+The items above describe this package as built. The repair recorded below postdates the package; `candidate.txt` has been recopied from the current canonical `pages/theme:animal-instead-of-beast-jp.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**FIX-RDISP2, landing `fa9e84a` (report `R/review-scout/FIX-RDISP2.md`).** Four candidate repairs (as-built 4 substitutions + 4 deletions), all postdating this package's build at `b5cb724`.
+- **A1 — credit pointer names nobody.** The original's prose (L25) and banner (L65) name c_bonefish. Credit field (as-built L16) `原語版ページの作成者に同じ（scpko の theme:animal-instead-of-beast）` → `**著作権者:** [[*user c_bonefish]]`; license-box author (L638, now L634) `|author=scpko theme:animal-instead-of-beast の作者]]` → `|author=c_bonefish]]`.
+- **A2 — credit title field.** `獣ではなく動物 テーマ` → `獣のかわりに動物 CSSテーマ` at L12, the form the candidate's own body heading (L27) and prose (L33) use.
+- **A3 — visited-link exhibit.** L57 `[[[theme:animal-instead-of-beast|訪問済みリンク]]]` → `[[[theme:animal-instead-of-beast-jp|訪問済みリンク]]]`, a single `-jp` insertion (greyday `9e0c700` / king-s-palace `f5acc90` shape).
+- **A4 — load-only JP font supplement removed.** Census of the whole delivery chain found the two @imports (`Noto Sans JP`, `Noto Serif JP`, as-built L73–74) had no consumer: zero `font-family` declarations, zero font shorthands, no font-name custom property in the candidate or the original. The two @import lines, their separating blank line, and the orphaned `/* 日本語フォント (JP localization) */` annotation were removed, so the code block again opens with the ported banner comment.
+Checker per the report: plain error 4 / warn 0 / info 1 and links error 4 / warn 1 / info 1 before and after; all errors class (iii) pseudo-refs, class (i) 0; the links warn's target changed from the plain name (a page that will never exist on scp-jp) to the candidate's own `-jp` name (a not-yet-posted self-reference that resolves at posting).
 
 ## Appendix — residue blocks
 

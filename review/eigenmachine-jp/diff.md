@@ -15,10 +15,10 @@ adjudicated explanation.
 | | Lines |
 |---|---|
 | original.txt | 3199 |
-| candidate.txt | 3212 |
-| Added | +307 |
-| Review-stage comments | 0 of the +307 added lines |
-| Removed | -294 |
+| candidate.txt | 3216 |
+| Added | +309 |
+| Review-stage comments | 0 of the +309 added lines |
+| Removed | -292 |
 | Changed | 601 |
 | Change blocks | 246 |
 | Diff sections (context 3) | 53 |
@@ -37,7 +37,7 @@ adjudicated explanation.
 |---|---|---|---|---|---|---|
 | 1 | 1 | 1–1 | 1–13 | +13/−1 | supplement | [[iftags +テーマ]] |
 | 2 | 1 | 3–4 | 15–15 | +1/−2 | supplement | @import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Abasalt-j… |
-| 3 | 2 | 59–59 | 70–70 | +1/−1 | residual | //関連ページ: [https://scp-wiki.wikidot.com/theme:scpedia SCPediaテーマ（英語版）]、[[[them… |
+| 3 | 2 | 59–59 | 70–70 | +1/−1 | residual | //関連ページ: [[[theme:scpedia-jp\|SCPediaテーマ]]]、[[[theme:eigenvector-jp\|Eigenvecto… |
 | 4 | 2 | 62–64 | — | +0/−3 | residual | [[>]] |
 | 5 | 2 | 70–70 | 78–78 | +1/−1 | residual | これは[[*user EstrellaYoshte]]による[[[theme:eigenvector-jp\|Eigenvector]]]テーマの派生で、[… |
 | 6 | 2 | 72–72 | 80–80 | +1/−1 | residual | このテーマを記事にインポートするには、記事のどこかに以下のテキストを記述してください: |
@@ -109,7 +109,7 @@ adjudicated explanation.
 | 72 | 12 | 653–653 | 661–661 | +1/−1 | residual | {{inter}}はカラークラスでテキストの色を変えます: |
 | 73 | 13 | 663–663 | 671–671 | +1/−1 | residual | {{lightpanel}}と{{darkpanel}}は、交互に使えるカスタマイズ可能なdivです: |
 | 74 | 13 | 667–669 | 675–677 | +3/−3 | residual | 背景色 {{@@--light-color@@}} |
-| 75 | 13 | 675–675 | 683–683 | +1/−1 | residual | リンクの色 {{@@--light-link@@}} |
+| 75 | 13 | 673–675 | 681–683 | +3/−3 | residual | 背景色 {{@@--dark-color@@}} |
 | 76 | 13 | 678–678 | 686–686 | +1/−1 | residual | カラークラスはこれらにも影響します: |
 | 77 | 13 | 684–684 | 692–692 | +1/−1 | residual | そのままの{{space}} divは必要に応じて幅を変えます。それ以上の機能はありません: |
 | 78 | 14 | 694–694 | 702–702 | +1/−1 | residual | 色/サイズ/配置/divクラスを追加すると、これらをさまざまな方法でカスタマイズできます。ぜひ試してみてください: |
@@ -139,148 +139,148 @@ adjudicated explanation.
 | 102 | 19 | 899–899 | 907–907 | +1/−1 | mechanical | (blank lines only) |
 | 103 | 20 | 907–907 | 915–915 | +1/−1 | residual | [[collapsible show="コードを表示" hide="コードを隠す"]] |
 | 104 | 21 | 931–931 | 939–939 | +1/−1 | residual | [[span class="s-title"]]ラベル[[/span]] |
-| 105 | 21 | 934–938 | 942–942 | +1/−5 | residual | = 著者ラベルにもカスタムスタイルが用意されています。詳しくは[[span class="bd"]]ルート変数[[/span]]の一覧を参照してください。 |
-| 106 | 21 | 943–943 | 947–947 | +1/−1 | residual | [[span class="s-title"]]カーソル（PCのみ）[[/span]] |
-| 107 | 21 | 946–946 | 950–950 | +1/−1 | residual | 標準のカーソルは矢印です。一部の機能にはデフォルトで別のカーソルが使われます。例: |
-| 108 | 21 | 948–949 | 952–953 | +2/−2 | residual | \|\|~ [[span class="cursor crosshair"]]クロスヘアになるはずです。[[/span]] \|\| |
-| 109 | 21 | 951–951 | 955–955 | +1/−1 | residual | カーソルクラスでカスタマイズできます: |
-| 110 | 21 | 953–953 | 957–957 | +1/−1 | residual | [[collapsible show="カーソルクラスを表示" hide="閉じる"]] |
-| 111 | 21 | 955–955 | 959–959 | +1/−1 | residual | = //収録オプション:// |
-| 112 | 21 | 959–959 | 963–963 | +1/−1 | residual | カーソルの種類 |
-| 113 | 22 | 1052–1053 | 1056–1057 | +2/−2 | residual | [[span class="s-title"]]アスタリスク*[[/span]] |
-| 114 | 22 | 1055–1055 | 1059–1059 | +1/−1 | residual | アスタリスクは水平線の代わりに、または併用して、記事のセクションを区切るのに使います。例えばdivの外ではこれを使い、中では水平線を使う、といった具合です… |
-| 115 | 22 | 1057–1057 | 1061–1061 | +1/−1 | residual | 画像をdivクラス{{asterisk}}の中に置くと、適切なサイズに整形されます。サイズは{{@@--astersize@@}}でも設定できます。div… |
-| 116 | 22 | 1060–1060 | 1064–1064 | +1/−1 | residual | [[image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachine… |
-| 117 | 22 | 1064–1064 | 1068–1068 | +1/−1 | residual | [[image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachine… |
-| 118 | 22 | 1067–1067 | 1071–1071 | +1/−1 | residual | [[collapsible show="アスタリスクを表示" hide="閉じる"]] |
-| 119 | 22 | 1069–1069 | 1073–1073 | +1/−1 | residual | = //収録オプション:// |
-| 120 | 22 | 1074–1074 | 1078–1078 | +1/−1 | residual | [[=image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachin… |
-| 121 | 22 | 1077–1077 | 1081–1081 | +1/−1 | residual | [[=image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachin… |
-| 122 | 22 | 1082–1082 | 1086–1086 | +1/−1 | residual | [https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachine-jp/ast… |
-| 123 | 22 | 1085–1085 | 1089–1089 | +1/−1 | residual | [https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachine-jp/ast… |
-| 124 | 22 | 1090–1090 | 1094–1094 | +1/−1 | residual | [[=image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachin… |
-| 125 | 22 | 1093–1093 | 1097–1097 | +1/−1 | residual | [[=image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachin… |
-| 126 | 22 | 1098–1098 | 1102–1102 | +1/−1 | residual | [https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachine-jp/ast… |
-| 127 | 22 | 1101–1101 | 1105–1105 | +1/−1 | residual | [https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachine-jp/ast… |
-| 128 | 22 | 1106–1106 | 1110–1110 | +1/−1 | residual | [[=image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachin… |
-| 129 | 22 | 1109–1109 | 1113–1113 | +1/−1 | residual | [[=image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachin… |
-| 130 | 22 | 1114–1114 | 1118–1118 | +1/−1 | residual | [https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachine-jp/ast… |
-| 131 | 22 | 1117–1117 | 1121–1121 | +1/−1 | residual | [https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachine-jp/ast… |
-| 132 | 22 | 1122–1122 | 1126–1126 | +1/−1 | residual | [[=image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachin… |
-| 133 | 22 | 1125–1125 | 1129–1129 | +1/−1 | residual | [[=image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachin… |
-| 134 | 22 | 1130–1130 | 1134–1134 | +1/−1 | residual | [https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachine-jp/top… |
-| 135 | 22 | 1133–1133 | 1137–1137 | +1/−1 | residual | [https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachine-jp/ast… |
-| 136 | 22 | 1138–1138 | 1142–1142 | +1/−1 | residual | [[=image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachin… |
-| 137 | 22 | 1141–1141 | 1145–1145 | +1/−1 | residual | [[=image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachin… |
-| 138 | 22 | 1146–1146 | 1150–1150 | +1/−1 | residual | [https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachine-jp/ast… |
-| 139 | 22 | 1149–1149 | 1153–1153 | +1/−1 | residual | [https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachine-jp/ast… |
-| 140 | 22 | 1154–1154 | 1158–1158 | +1/−1 | residual | [[=image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachin… |
-| 141 | 22 | 1157–1157 | 1161–1161 | +1/−1 | residual | [[=image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachin… |
-| 142 | 22 | 1162–1162 | 1166–1166 | +1/−1 | residual | [https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachine-jp/ast… |
-| 143 | 22 | 1165–1165 | 1169–1169 | +1/−1 | residual | [https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachine-jp/ast… |
-| 144 | 22 | 1170–1170 | 1174–1174 | +1/−1 | residual | [[=image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachin… |
-| 145 | 22 | 1173–1173 | 1177–1177 | +1/−1 | residual | [[=image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachin… |
-| 146 | 22 | 1178–1178 | 1182–1182 | +1/−1 | residual | [https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachine-jp/ast… |
-| 147 | 22 | 1181–1181 | 1185–1185 | +1/−1 | residual | [https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachine-jp/ast… |
-| 148 | 23 | 1189–1189 | 1193–1193 | +1/−1 | residual | 回転効果を加えるには、追加クラス{{spinner}}を使います（{{@@--scale1@@}}と{{@@--loop2@@}}の影響を受けます。コンテ… |
-| 149 | 23 | 1193–1193 | 1197–1197 | +1/−1 | residual | [[=image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachin… |
-| 150 | 23 | 1197–1197 | 1201–1201 | +1/−1 | residual | 回転効果（反転回転）を加えるには、追加クラス{{rotator}}を使います（{{@@--scale2@@}}と{{@@--loop2@@}}の影響を受け… |
-| 151 | 23 | 1201–1201 | 1205–1205 | +1/−1 | residual | [[=image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachin… |
-| 152 | 23 | 1205–1205 | 1209–1209 | +1/−1 | residual | = //責任を持って使いましょう。低モーション設定が有効な場合、これらのアニメーションは再生されません。// |
-| 153 | 23 | 1208–1208 | 1212–1212 | +1/−1 | residual | + ルート変数 |
-| 154 | 23 | 1211–1211 | 1215–1215 | +1/−1 | residual | ルート変数を変更するには、記事に次のようにCSSモジュールを追加します。 |
-| 155 | 24 | 1221–1221 | 1225–1225 | +1/−1 | residual | 次に{{:root}}疑似クラスを追加します。 |
-| 156 | 25 | 1231–1231 | 1235–1235 | +1/−1 | residual | そして、使いたい値とともに、該当する変数を追加します。 |
-| 157 | 26 | 1241–1242 | 1245–1246 | +2/−2 | residual | = //最も重要なルート変数:// |
-| 158 | 26 | 1244–1244 | 1248–1248 | +1/−1 | residual | \|\|\|\|\|\| {{fade-in1}}、{{fade-out1}}、{{spinner}}、{{rotator}}、{{blinkenlights}}の所… |
-| 159 | 26 | 1246–1246 | 1250–1250 | +1/−1 | residual | \|\|\|\|\|\| {{fade-in2}}、{{fade-out2}}の所要時間を指定します \|\| |
-| 160 | 26 | 1248–1248 | 1252–1252 | +1/−1 | residual | \|\|\|\|\|\| {{fade-in3}}、{{fade-out3}}の所要時間を指定します \|\| |
-| 161 | 26 | 1250–1250 | 1254–1254 | +1/−1 | residual | \|\|\|\|\|\| {{fade-in1}}、{{fade-out1}}、{{spinner}}、{{rotator}}の遅延時間を指定します \|\| |
-| 162 | 26 | 1252–1252 | 1256–1256 | +1/−1 | residual | \|\|\|\|\|\| {{fade-in2}}、{{fade-out2}}の遅延時間を指定します \|\| |
-| 163 | 26 | 1254–1254 | 1258–1258 | +1/−1 | residual | \|\|\|\|\|\| {{fade-in3}}、{{fade-out3}}の遅延時間を指定します \|\| |
-| 164 | 26 | 1256–1256 | 1260–1260 | +1/−1 | residual | \|\|\|\|\|\| {{fade-in1}}、{{fade-out1}}、{{rotator}}、{{spinner}}の繰り返し回数を指定します \|\| |
-| 165 | 26 | 1258–1258 | 1262–1262 | +1/−1 | residual | \|\|\|\|\|\| {{fade-in2}}、{{fade-out2}}の繰り返し回数を指定します \|\| |
-| 166 | 26 | 1260–1260 | 1264–1264 | +1/−1 | residual | \|\|\|\|\|\| {{fade-in3}}、{{fade-out3}}の繰り返し回数を指定します \|\| |
-| 167 | 26 | 1262–1262 | 1266–1266 | +1/−1 | residual | \|\|\|\|\|\| {{lightpanel}}の背景と、{{darkpanel}}のテキスト/枠線の色を設定します \|\| |
-| 168 | 26 | 1264–1264 | 1268–1268 | +1/−1 | residual | \|\|\|\|\|\| {{darkpanel}}の背景と、{{lightpanel}}のテキスト/枠線の色を設定します \|\| |
-| 169 | 26 | 1266–1266 | 1270–1270 | +1/−1 | residual | \|\|\|\|\|\| {{asterisk}}のサイズを設定します \|\| |
-| 170 | 26 | 1268–1268 | 1272–1272 | +1/−1 | residual | \|\|\|\|\|\| ページ上部のロゴを設定します \|\| |
-| 171 | 26 | 1270–1270 | 1274–1274 | +1/−1 | residual | \|\|\|\|\|\| {{logger}}の背景画像を設定します \|\| |
-| 172 | 26 | 1272–1272 | 1276–1276 | +1/−1 | residual | \|\|\|\|\|\| 全体の背景画像を設定します \|\| |
-| 173 | 26 | 1274–1274 | 1278–1278 | +1/−1 | residual | \|\|\|\|\|\| {{@@--backdrop@@}}のサイズを設定します。100でフルサイズ。それ未満は繰り返し表示されます \|\| |
-| 174 | 26 | 1276–1276 | 1280–1280 | +1/−1 | residual | \|\|\|\|\|\| ページ上部のヘッダータイトルを設定します \|\| |
-| 175 | 26 | 1278–1278 | 1282–1282 | +1/−1 | residual | \|\|\|\|\|\| ページ上部のヘッダーサブタイトルを設定します \|\| |
-| 176 | 26 | 1280–1280 | 1284–1284 | +1/−1 | residual | \|\|\|\|\|\| 小さい画面用のページ上部のヘッダータイトルを設定します \|\| |
-| 177 | 26 | 1282–1282 | 1286–1286 | +1/−1 | residual | \|\|\|\|\|\| 小さい画面用のページ上部のヘッダーサブタイトルを設定します \|\| |
-| 178 | 26 | 1284–1284 | 1288–1288 | +1/−1 | residual | \|\|\|\|\|\| 著者ラベルボックスの上にある三角形を変更/削除します \|\| |
-| 179 | 26 | 1286–1286 | 1290–1290 | +1/−1 | residual | \|\|\|\|\|\| {{custom_memo}}のテキストを設定します。 \|\| |
-| 180 | 26 | 1288–1288 | 1292–1292 | +1/−1 | residual | \|\|\|\|\|\| {{custom_memo}}の背景画像を設定します \|\| |
-| 181 | 26 | 1290–1290 | 1294–1294 | +1/−1 | residual | \|\|\|\|\|\| {{custom_memo}}の背景/枠線の色を設定します。上記のすべての色クラスと併用できます \|\| |
-| 182 | 26 | 1292–1292 | 1296–1296 | +1/−1 | residual | \|\|\|\|\|\| リンクの文字の大文字化/字間スタイルを指定します。 \|\| |
-| 183 | 26 | 1294–1294 | 1298–1298 | +1/−1 | residual | \|\|\|\|\|\| リンクの文字の下線/上線スタイルを指定します。 \|\| |
-| 184 | 26 | 1296–1296 | 1300–1300 | +1/−1 | residual | \|\|\|\|\|\| ページの識別情報（タイトル）の表示を切り替えます \|\| |
-| 185 | 26 | 1298–1298 | 1302–1302 | +1/−1 | residual | \|\|\|\|\|\| ローディングバーの高さを指定します \|\| |
-| 186 | 26 | 1300–1300 | 1304–1304 | +1/−1 | residual | \|\|\|\|\|\| ローディングバーが埋まるまでの時間を指定します \|\| |
-| 187 | 26 | 1302–1302 | 1306–1306 | +1/−1 | residual | \|\|\|\|\|\|~ //全リストを見るには、ソースコードを参照してください。// \|\| |
-| 188 | 26 | 1305–1305 | 1309–1309 | +1/−1 | residual | + フォント |
-| 189 | 26 | 1309–1316 | 1313–1320 | +8/−8 | residual | \|\|~ フォント \|\|~ 用途 \|\|~ カスタムクラス/ルート変数 \|\| |
-| 190 | 26 | 1318–1318 | 1322–1322 | +1/−1 | residual | [[span class="wide"]]全角（fullwidth）[[/span]]クラス{{wide}}を使います |
-| 191 | 26 | 1325–1325 | 1329–1329 | +1/−1 | residual | + ソースコード |
-| 192 | 26 | 1327–1327 | 1331–1331 | +1/−1 | residual | [[collapsible show="ソースコードを表示" hide="閉じる"]] |
-| 193 | 26 | 1330–1330 | 1334–1335 | +2/−1 | supplement | @import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Frag… |
-| 194 | 26 | 1332–1332 | 1337–1337 | +1/−1 | supplement | @import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300;… |
-| 195 | 27 | 1517–1517 | 1522–1522 | +1/−1 | residual | --header-logo: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3A… |
-| 196 | 27 | 1521–1521 | 1526–1526 | +1/−1 | residual | --custom-logo: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3A… |
-| 197 | 28 | 1560–1560 | 1565–1565 | +1/−1 | mechanical | (blank lines only) |
-| 198 | 29 | 1628–1628 | 1633–1633 | +1/−1 | mechanical | (blank lines only) |
-| 199 | 30 | 1687–1687 | 1692–1692 | +1/−1 | mechanical | (blank lines only) |
-| 200 | 31 | 1715–1715 | 1720–1720 | +1/−1 | mechanical | (blank lines only) |
-| 201 | 31 | 1717–1717 | 1722–1722 | +1/−1 | mechanical | (blank lines only) |
-| 202 | 32 | 1727–1727 | 1732–1732 | +1/−1 | mechanical | (blank lines only) |
-| 203 | 33 | 1740–1740 | 1745–1745 | +1/−1 | mechanical | (blank lines only) |
-| 204 | 34 | 1751–1751 | 1756–1756 | +1/−1 | mechanical | (blank lines only) |
-| 205 | 35 | 1765–1765 | 1770–1770 | +1/−1 | mechanical | (blank lines only) |
-| 206 | 36 | 1789–1789 | 1794–1794 | +1/−1 | mechanical | (blank lines only) |
-| 207 | 37 | 1800–1800 | 1805–1805 | +1/−1 | mechanical | (blank lines only) |
-| 208 | 38 | 1838–1838 | 1843–1843 | +1/−1 | mechanical | (blank lines only) |
-| 209 | 39 | 1857–1857 | 1862–1862 | +1/−1 | mechanical | (blank lines only) |
-| 210 | 40 | 1941–1941 | 1946–1946 | +1/−1 | mechanical | (blank lines only) |
-| 211 | 41 | 1970–1970 | 1975–1975 | +1/−1 | mechanical | (blank lines only) |
-| 212 | 41 | 1976–1976 | 1981–1981 | +1/−1 | residual | --memo-logo: url("https://scp-wiki.wdfiles.com/local--files/theme%3Aeigenmach… |
-| 213 | 42 | 2308–2308 | 2313–2313 | +1/−1 | residual | --memo-logo: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aei… |
-| 214 | 43 | 2317–2317 | 2322–2322 | +1/−1 | residual | --memo-logo: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aei… |
-| 215 | 43 | 2323–2323 | 2328–2328 | +1/−1 | residual | --memo-logo: var(--custom-logo, url("https://sigma10-jp-test.wdfiles.com/loca… |
-| 216 | 44 | 2410–2410 | 2415–2415 | +1/−1 | mechanical | (blank lines only) |
-| 217 | 45 | 2707–2707 | 2712–2712 | +1/−1 | mechanical | (blank lines only) |
-| 218 | 45 | 2711–2711 | 2716–2716 | +1/−1 | mechanical | (blank lines only) |
-| 219 | 46 | — | 2752–2752 | +1/−0 | mechanical | (blank lines only) |
-| 220 | 46 | — | 2754–2754 | +1/−0 | mechanical | (blank lines only) |
-| 221 | 46 | 2754–2754 | 2761–2761 | +1/−1 | residual | --header-logo: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3A… |
-| 222 | 47 | 2862–2862 | 2869–2869 | +1/−1 | mechanical | (blank lines only) |
-| 223 | 48 | — | 2904–2904 | +1/−0 | mechanical | (blank lines only) |
-| 224 | 48 | — | 2906–2906 | +1/−0 | mechanical | (blank lines only) |
-| 225 | 48 | — | 2908–2908 | +1/−0 | mechanical | (blank lines only) |
-| 226 | 49 | 2906–2906 | 2916–2916 | +1/−1 | residual | --header-logo: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3A… |
-| 227 | 50 | 2964–2964 | 2974–2974 | +1/−1 | mechanical | (blank lines only) |
-| 228 | 51 | — | 2996–2996 | +1/−0 | mechanical | (blank lines only) |
-| 229 | 51 | — | 2998–2998 | +1/−0 | mechanical | (blank lines only) |
-| 230 | 52 | 3094–3094 | 3106–3106 | +1/−1 | mechanical | (blank lines only) |
-| 231 | 53 | — | 3155–3155 | +1/−0 | mechanical | (blank lines only) |
-| 232 | 53 | 3149–3149 | 3162–3162 | +1/−1 | supplement | @import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aeigenmac… |
-| 233 | 53 | 3152–3152 | 3165–3165 | +1/−1 | supplement | [[include component:interwiki-style |
-| 234 | 53 | 3154–3154 | 3167–3167 | +1/−1 | supplement | \| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aeigenmachine-… |
-| 235 | 53 | 3158–3158 | 3171–3171 | +1/−1 | residual | >[[ift{$delete}gs -テーマ]] |
-| 236 | 53 | 3161–3161 | 3174–3174 | +1/−1 | supplement | @import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aeigenmac… |
-| 237 | 53 | 3163–3163 | 3176–3176 | +1/−1 | supplement | [[include component:interwiki-style |
-| 238 | 53 | 3165–3165 | 3178–3178 | +1/−1 | supplement | \| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aeigenmachine-… |
-| 239 | 53 | 3170–3170 | 3183–3183 | +1/−1 | residual | >[[ift{$light}gs -テーマ]] |
-| 240 | 53 | 3173–3173 | 3186–3186 | +1/−1 | supplement | @import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aeigenmac… |
-| 241 | 53 | 3175–3175 | 3188–3188 | +1/−1 | supplement | [[include component:interwiki-style |
-| 242 | 53 | 3177–3177 | 3190–3190 | +1/−1 | supplement | \| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aeigenmachine-… |
-| 243 | 53 | 3183–3183 | 3196–3196 | +1/−1 | residual | >[[ift{$murder}gs -テーマ]] |
-| 244 | 53 | 3186–3186 | 3199–3199 | +1/−1 | supplement | @import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aeigenmac… |
-| 245 | 53 | 3188–3188 | 3201–3201 | +1/−1 | supplement | [[include component:interwiki-style |
-| 246 | 53 | 3190–3190 | 3203–3203 | +1/−1 | supplement | \| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aeigenmachine-… |
+| 105 | 21 | 937–937 | 945–945 | +1/−1 | residual | = 著者ラベルにもカスタムスタイルが用意されています。詳しくは[[span class="bd"]]ルート変数[[/span]]の一覧を参照してください。 |
+| 106 | 21 | 943–943 | 951–951 | +1/−1 | residual | [[span class="s-title"]]カーソル（PCのみ）[[/span]] |
+| 107 | 21 | 946–946 | 954–954 | +1/−1 | residual | 標準のカーソルは矢印です。一部の機能にはデフォルトで別のカーソルが使われます。例: |
+| 108 | 21 | 948–949 | 956–957 | +2/−2 | residual | \|\|~ [[span class="cursor crosshair"]]クロスヘアになるはずです。[[/span]] \|\| |
+| 109 | 21 | 951–951 | 959–959 | +1/−1 | residual | カーソルクラスでカスタマイズできます: |
+| 110 | 21 | 953–953 | 961–961 | +1/−1 | residual | [[collapsible show="カーソルクラスを表示" hide="閉じる"]] |
+| 111 | 21 | 955–955 | 963–963 | +1/−1 | residual | = //収録オプション:// |
+| 112 | 21 | 959–959 | 967–967 | +1/−1 | residual | カーソルの種類 |
+| 113 | 22 | 1052–1053 | 1060–1061 | +2/−2 | residual | [[span class="s-title"]]アスタリスク*[[/span]] |
+| 114 | 22 | 1055–1055 | 1063–1063 | +1/−1 | residual | アスタリスクは水平線の代わりに、または併用して、記事のセクションを区切るのに使います。例えばdivの外ではこれを使い、中では水平線を使う、といった具合です… |
+| 115 | 22 | 1057–1057 | 1065–1065 | +1/−1 | residual | 画像をdivクラス{{asterisk}}の中に置くと、適切なサイズに整形されます。サイズは{{@@--astersize@@}}でも設定できます。div… |
+| 116 | 22 | 1060–1060 | 1068–1068 | +1/−1 | residual | [[image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachine… |
+| 117 | 22 | 1064–1064 | 1072–1072 | +1/−1 | residual | [[image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachine… |
+| 118 | 22 | 1067–1067 | 1075–1075 | +1/−1 | residual | [[collapsible show="アスタリスクを表示" hide="閉じる"]] |
+| 119 | 22 | 1069–1069 | 1077–1077 | +1/−1 | residual | = //収録オプション:// |
+| 120 | 22 | 1074–1074 | 1082–1082 | +1/−1 | residual | [[=image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachin… |
+| 121 | 22 | 1077–1077 | 1085–1085 | +1/−1 | residual | [[=image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachin… |
+| 122 | 22 | 1082–1082 | 1090–1090 | +1/−1 | residual | [https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachine-jp/ast… |
+| 123 | 22 | 1085–1085 | 1093–1093 | +1/−1 | residual | [https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachine-jp/ast… |
+| 124 | 22 | 1090–1090 | 1098–1098 | +1/−1 | residual | [[=image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachin… |
+| 125 | 22 | 1093–1093 | 1101–1101 | +1/−1 | residual | [[=image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachin… |
+| 126 | 22 | 1098–1098 | 1106–1106 | +1/−1 | residual | [https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachine-jp/ast… |
+| 127 | 22 | 1101–1101 | 1109–1109 | +1/−1 | residual | [https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachine-jp/ast… |
+| 128 | 22 | 1106–1106 | 1114–1114 | +1/−1 | residual | [[=image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachin… |
+| 129 | 22 | 1109–1109 | 1117–1117 | +1/−1 | residual | [[=image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachin… |
+| 130 | 22 | 1114–1114 | 1122–1122 | +1/−1 | residual | [https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachine-jp/ast… |
+| 131 | 22 | 1117–1117 | 1125–1125 | +1/−1 | residual | [https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachine-jp/ast… |
+| 132 | 22 | 1122–1122 | 1130–1130 | +1/−1 | residual | [[=image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachin… |
+| 133 | 22 | 1125–1125 | 1133–1133 | +1/−1 | residual | [[=image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachin… |
+| 134 | 22 | 1130–1130 | 1138–1138 | +1/−1 | residual | [https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachine-jp/top… |
+| 135 | 22 | 1133–1133 | 1141–1141 | +1/−1 | residual | [https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachine-jp/ast… |
+| 136 | 22 | 1138–1138 | 1146–1146 | +1/−1 | residual | [[=image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachin… |
+| 137 | 22 | 1141–1141 | 1149–1149 | +1/−1 | residual | [[=image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachin… |
+| 138 | 22 | 1146–1146 | 1154–1154 | +1/−1 | residual | [https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachine-jp/ast… |
+| 139 | 22 | 1149–1149 | 1157–1157 | +1/−1 | residual | [https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachine-jp/ast… |
+| 140 | 22 | 1154–1154 | 1162–1162 | +1/−1 | residual | [[=image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachin… |
+| 141 | 22 | 1157–1157 | 1165–1165 | +1/−1 | residual | [[=image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachin… |
+| 142 | 22 | 1162–1162 | 1170–1170 | +1/−1 | residual | [https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachine-jp/ast… |
+| 143 | 22 | 1165–1165 | 1173–1173 | +1/−1 | residual | [https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachine-jp/ast… |
+| 144 | 22 | 1170–1170 | 1178–1178 | +1/−1 | residual | [[=image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachin… |
+| 145 | 22 | 1173–1173 | 1181–1181 | +1/−1 | residual | [[=image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachin… |
+| 146 | 22 | 1178–1178 | 1186–1186 | +1/−1 | residual | [https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachine-jp/ast… |
+| 147 | 22 | 1181–1181 | 1189–1189 | +1/−1 | residual | [https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachine-jp/ast… |
+| 148 | 23 | 1189–1189 | 1197–1197 | +1/−1 | residual | 回転効果を加えるには、追加クラス{{spinner}}を使います（{{@@--scale1@@}}と{{@@--loop2@@}}の影響を受けます。コンテ… |
+| 149 | 23 | 1193–1193 | 1201–1201 | +1/−1 | residual | [[=image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachin… |
+| 150 | 23 | 1197–1197 | 1205–1205 | +1/−1 | residual | 回転効果（反転回転）を加えるには、追加クラス{{rotator}}を使います（{{@@--scale2@@}}と{{@@--loop2@@}}の影響を受け… |
+| 151 | 23 | 1201–1201 | 1209–1209 | +1/−1 | residual | [[=image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeigenmachin… |
+| 152 | 23 | 1205–1205 | 1213–1213 | +1/−1 | residual | = //責任を持って使いましょう。低モーション設定が有効な場合、これらのアニメーションは再生されません。// |
+| 153 | 23 | 1208–1208 | 1216–1216 | +1/−1 | residual | + ルート変数 |
+| 154 | 23 | 1211–1211 | 1219–1219 | +1/−1 | residual | ルート変数を変更するには、記事に次のようにCSSモジュールを追加します。 |
+| 155 | 24 | 1221–1221 | 1229–1229 | +1/−1 | residual | 次に{{:root}}疑似クラスを追加します。 |
+| 156 | 25 | 1231–1231 | 1239–1239 | +1/−1 | residual | そして、使いたい値とともに、該当する変数を追加します。 |
+| 157 | 26 | 1241–1242 | 1249–1250 | +2/−2 | residual | = //最も重要なルート変数:// |
+| 158 | 26 | 1244–1244 | 1252–1252 | +1/−1 | residual | \|\|\|\|\|\| {{fade-in1}}、{{fade-out1}}、{{spinner}}、{{rotator}}、{{blinkenlights}}の所… |
+| 159 | 26 | 1246–1246 | 1254–1254 | +1/−1 | residual | \|\|\|\|\|\| {{fade-in2}}、{{fade-out2}}の所要時間を指定します \|\| |
+| 160 | 26 | 1248–1248 | 1256–1256 | +1/−1 | residual | \|\|\|\|\|\| {{fade-in3}}、{{fade-out3}}の所要時間を指定します \|\| |
+| 161 | 26 | 1250–1250 | 1258–1258 | +1/−1 | residual | \|\|\|\|\|\| {{fade-in1}}、{{fade-out1}}、{{spinner}}、{{rotator}}の遅延時間を指定します \|\| |
+| 162 | 26 | 1252–1252 | 1260–1260 | +1/−1 | residual | \|\|\|\|\|\| {{fade-in2}}、{{fade-out2}}の遅延時間を指定します \|\| |
+| 163 | 26 | 1254–1254 | 1262–1262 | +1/−1 | residual | \|\|\|\|\|\| {{fade-in3}}、{{fade-out3}}の遅延時間を指定します \|\| |
+| 164 | 26 | 1256–1256 | 1264–1264 | +1/−1 | residual | \|\|\|\|\|\| {{fade-in1}}、{{fade-out1}}、{{rotator}}、{{spinner}}の繰り返し回数を指定します \|\| |
+| 165 | 26 | 1258–1258 | 1266–1266 | +1/−1 | residual | \|\|\|\|\|\| {{fade-in2}}、{{fade-out2}}の繰り返し回数を指定します \|\| |
+| 166 | 26 | 1260–1260 | 1268–1268 | +1/−1 | residual | \|\|\|\|\|\| {{fade-in3}}、{{fade-out3}}の繰り返し回数を指定します \|\| |
+| 167 | 26 | 1262–1262 | 1270–1270 | +1/−1 | residual | \|\|\|\|\|\| {{lightpanel}}の背景と、{{darkpanel}}のテキスト/枠線の色を設定します \|\| |
+| 168 | 26 | 1264–1264 | 1272–1272 | +1/−1 | residual | \|\|\|\|\|\| {{darkpanel}}の背景と、{{lightpanel}}のテキスト/枠線の色を設定します \|\| |
+| 169 | 26 | 1266–1266 | 1274–1274 | +1/−1 | residual | \|\|\|\|\|\| {{asterisk}}のサイズを設定します \|\| |
+| 170 | 26 | 1268–1268 | 1276–1276 | +1/−1 | residual | \|\|\|\|\|\| ページ上部のロゴを設定します \|\| |
+| 171 | 26 | 1270–1270 | 1278–1278 | +1/−1 | residual | \|\|\|\|\|\| {{logger}}の背景画像を設定します \|\| |
+| 172 | 26 | 1272–1272 | 1280–1280 | +1/−1 | residual | \|\|\|\|\|\| 全体の背景画像を設定します \|\| |
+| 173 | 26 | 1274–1274 | 1282–1282 | +1/−1 | residual | \|\|\|\|\|\| {{@@--backdrop@@}}のサイズを設定します。100でフルサイズ。それ未満は繰り返し表示されます \|\| |
+| 174 | 26 | 1276–1276 | 1284–1284 | +1/−1 | residual | \|\|\|\|\|\| ページ上部のヘッダータイトルを設定します \|\| |
+| 175 | 26 | 1278–1278 | 1286–1286 | +1/−1 | residual | \|\|\|\|\|\| ページ上部のヘッダーサブタイトルを設定します \|\| |
+| 176 | 26 | 1280–1280 | 1288–1288 | +1/−1 | residual | \|\|\|\|\|\| 小さい画面用のページ上部のヘッダータイトルを設定します \|\| |
+| 177 | 26 | 1282–1282 | 1290–1290 | +1/−1 | residual | \|\|\|\|\|\| 小さい画面用のページ上部のヘッダーサブタイトルを設定します \|\| |
+| 178 | 26 | 1284–1284 | 1292–1292 | +1/−1 | residual | \|\|\|\|\|\| 著者ラベルボックスの上にある三角形を変更/削除します \|\| |
+| 179 | 26 | 1286–1286 | 1294–1294 | +1/−1 | residual | \|\|\|\|\|\| {{custom_memo}}のテキストを設定します。 \|\| |
+| 180 | 26 | 1288–1288 | 1296–1296 | +1/−1 | residual | \|\|\|\|\|\| {{custom_memo}}の背景画像を設定します \|\| |
+| 181 | 26 | 1290–1290 | 1298–1298 | +1/−1 | residual | \|\|\|\|\|\| {{custom_memo}}の背景/枠線の色を設定します。上記のすべての色クラスと併用できます \|\| |
+| 182 | 26 | 1292–1292 | 1300–1300 | +1/−1 | residual | \|\|\|\|\|\| リンクの文字の大文字化/字間スタイルを指定します。 \|\| |
+| 183 | 26 | 1294–1294 | 1302–1302 | +1/−1 | residual | \|\|\|\|\|\| リンクの文字の下線/上線スタイルを指定します。 \|\| |
+| 184 | 26 | 1296–1296 | 1304–1304 | +1/−1 | residual | \|\|\|\|\|\| ページの識別情報（タイトル）の表示を切り替えます \|\| |
+| 185 | 26 | 1298–1298 | 1306–1306 | +1/−1 | residual | \|\|\|\|\|\| ローディングバーの高さを指定します \|\| |
+| 186 | 26 | 1300–1300 | 1308–1308 | +1/−1 | residual | \|\|\|\|\|\| ローディングバーが埋まるまでの時間を指定します \|\| |
+| 187 | 26 | 1302–1302 | 1310–1310 | +1/−1 | residual | \|\|\|\|\|\|~ //全リストを見るには、ソースコードを参照してください。// \|\| |
+| 188 | 26 | 1305–1305 | 1313–1313 | +1/−1 | residual | + フォント |
+| 189 | 26 | 1309–1316 | 1317–1324 | +8/−8 | residual | \|\|~ フォント \|\|~ 用途 \|\|~ カスタムクラス/ルート変数 \|\| |
+| 190 | 26 | 1318–1318 | 1326–1326 | +1/−1 | residual | [[span class="wide"]]全角（fullwidth）[[/span]]クラス{{wide}}を使います |
+| 191 | 26 | 1325–1325 | 1333–1333 | +1/−1 | residual | + ソースコード |
+| 192 | 26 | 1327–1327 | 1335–1335 | +1/−1 | residual | [[collapsible show="ソースコードを表示" hide="閉じる"]] |
+| 193 | 26 | 1330–1330 | 1338–1339 | +2/−1 | supplement | @import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Frag… |
+| 194 | 26 | 1332–1332 | 1341–1341 | +1/−1 | supplement | @import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300;… |
+| 195 | 27 | 1517–1517 | 1526–1526 | +1/−1 | residual | --header-logo: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3A… |
+| 196 | 27 | 1521–1521 | 1530–1530 | +1/−1 | residual | --custom-logo: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3A… |
+| 197 | 28 | 1560–1560 | 1569–1569 | +1/−1 | mechanical | (blank lines only) |
+| 198 | 29 | 1628–1628 | 1637–1637 | +1/−1 | mechanical | (blank lines only) |
+| 199 | 30 | 1687–1687 | 1696–1696 | +1/−1 | mechanical | (blank lines only) |
+| 200 | 31 | 1715–1715 | 1724–1724 | +1/−1 | mechanical | (blank lines only) |
+| 201 | 31 | 1717–1717 | 1726–1726 | +1/−1 | mechanical | (blank lines only) |
+| 202 | 32 | 1727–1727 | 1736–1736 | +1/−1 | mechanical | (blank lines only) |
+| 203 | 33 | 1740–1740 | 1749–1749 | +1/−1 | mechanical | (blank lines only) |
+| 204 | 34 | 1751–1751 | 1760–1760 | +1/−1 | mechanical | (blank lines only) |
+| 205 | 35 | 1765–1765 | 1774–1774 | +1/−1 | mechanical | (blank lines only) |
+| 206 | 36 | 1789–1789 | 1798–1798 | +1/−1 | mechanical | (blank lines only) |
+| 207 | 37 | 1800–1800 | 1809–1809 | +1/−1 | mechanical | (blank lines only) |
+| 208 | 38 | 1838–1838 | 1847–1847 | +1/−1 | mechanical | (blank lines only) |
+| 209 | 39 | 1857–1857 | 1866–1866 | +1/−1 | mechanical | (blank lines only) |
+| 210 | 40 | 1941–1941 | 1950–1950 | +1/−1 | mechanical | (blank lines only) |
+| 211 | 41 | 1970–1970 | 1979–1979 | +1/−1 | mechanical | (blank lines only) |
+| 212 | 41 | 1976–1976 | 1985–1985 | +1/−1 | residual | --memo-logo: url("https://scp-wiki.wdfiles.com/local--files/theme%3Aeigenmach… |
+| 213 | 42 | 2308–2308 | 2317–2317 | +1/−1 | residual | --memo-logo: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aei… |
+| 214 | 43 | 2317–2317 | 2326–2326 | +1/−1 | residual | --memo-logo: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aei… |
+| 215 | 43 | 2323–2323 | 2332–2332 | +1/−1 | residual | --memo-logo: var(--custom-logo, url("https://sigma10-jp-test.wdfiles.com/loca… |
+| 216 | 44 | 2410–2410 | 2419–2419 | +1/−1 | mechanical | (blank lines only) |
+| 217 | 45 | 2707–2707 | 2716–2716 | +1/−1 | mechanical | (blank lines only) |
+| 218 | 45 | 2711–2711 | 2720–2720 | +1/−1 | mechanical | (blank lines only) |
+| 219 | 46 | — | 2756–2756 | +1/−0 | mechanical | (blank lines only) |
+| 220 | 46 | — | 2758–2758 | +1/−0 | mechanical | (blank lines only) |
+| 221 | 46 | 2754–2754 | 2765–2765 | +1/−1 | residual | --header-logo: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3A… |
+| 222 | 47 | 2862–2862 | 2873–2873 | +1/−1 | mechanical | (blank lines only) |
+| 223 | 48 | — | 2908–2908 | +1/−0 | mechanical | (blank lines only) |
+| 224 | 48 | — | 2910–2910 | +1/−0 | mechanical | (blank lines only) |
+| 225 | 48 | — | 2912–2912 | +1/−0 | mechanical | (blank lines only) |
+| 226 | 49 | 2906–2906 | 2920–2920 | +1/−1 | residual | --header-logo: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3A… |
+| 227 | 50 | 2964–2964 | 2978–2978 | +1/−1 | mechanical | (blank lines only) |
+| 228 | 51 | — | 3000–3000 | +1/−0 | mechanical | (blank lines only) |
+| 229 | 51 | — | 3002–3002 | +1/−0 | mechanical | (blank lines only) |
+| 230 | 52 | 3094–3094 | 3110–3110 | +1/−1 | mechanical | (blank lines only) |
+| 231 | 53 | — | 3159–3159 | +1/−0 | mechanical | (blank lines only) |
+| 232 | 53 | 3149–3149 | 3166–3166 | +1/−1 | supplement | @import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aeigenmac… |
+| 233 | 53 | 3152–3152 | 3169–3169 | +1/−1 | supplement | [[include component:interwiki-style |
+| 234 | 53 | 3154–3154 | 3171–3171 | +1/−1 | supplement | \| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aeigenmachine-… |
+| 235 | 53 | 3158–3158 | 3175–3175 | +1/−1 | residual | >[[ift{$delete}gs -テーマ]] |
+| 236 | 53 | 3161–3161 | 3178–3178 | +1/−1 | supplement | @import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aeigenmac… |
+| 237 | 53 | 3163–3163 | 3180–3180 | +1/−1 | supplement | [[include component:interwiki-style |
+| 238 | 53 | 3165–3165 | 3182–3182 | +1/−1 | supplement | \| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aeigenmachine-… |
+| 239 | 53 | 3170–3170 | 3187–3187 | +1/−1 | residual | >[[ift{$light}gs -テーマ]] |
+| 240 | 53 | 3173–3173 | 3190–3190 | +1/−1 | supplement | @import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aeigenmac… |
+| 241 | 53 | 3175–3175 | 3192–3192 | +1/−1 | supplement | [[include component:interwiki-style |
+| 242 | 53 | 3177–3177 | 3194–3194 | +1/−1 | supplement | \| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aeigenmachine-… |
+| 243 | 53 | 3183–3183 | 3200–3200 | +1/−1 | residual | >[[ift{$murder}gs -テーマ]] |
+| 244 | 53 | 3186–3186 | 3203–3203 | +1/−1 | supplement | @import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aeigenmac… |
+| 245 | 53 | 3188–3188 | 3205–3205 | +1/−1 | supplement | [[include component:interwiki-style |
+| 246 | 53 | 3190–3190 | 3207–3207 | +1/−1 | supplement | \| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aeigenmachine-… |
 
 ## Full diff
 
@@ -323,7 +323,7 @@ adjudicated explanation.
  
  [[div class="pseudocrumbs"]]
 -//See also: [[[theme:scpedia|SCPedia Theme]]], [[[theme:eigenvector|Eigenvector Theme]]]//
-+//関連ページ: [https://scp-wiki.wikidot.com/theme:scpedia SCPediaテーマ（英語版）]、[[[theme:eigenvector-jp|Eigenvectorテーマ]]]//
++//関連ページ: [[[theme:scpedia-jp|SCPediaテーマ]]]、[[[theme:eigenvector-jp|Eigenvectorテーマ]]]//
  [[/div]]
  
 -[[>]]
@@ -750,7 +750,7 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 13 — original 660–687 · candidate 668–695 · +7/−7 · residual</summary>
+<summary>Section 13 — original 660–687 · candidate 668–695 · +9/−9 · residual</summary>
 
 ```diff
 @@ -660,28 +668,28 @@
@@ -771,9 +771,11 @@ adjudicated explanation.
  [[/div]]
  [[div class="darkpanel"]]
  div class {{darkpanel}}
- background color {{@@--dark-color@@}}
- font color {{@@--light-color@@}}
+-background color {{@@--dark-color@@}}
+-font color {{@@--light-color@@}}
 -link color {{@@--light-link@@}}
++背景色 {{@@--dark-color@@}}
++文字色 {{@@--light-color@@}}
 +リンクの色 {{@@--light-link@@}}
  [[/div]]
  
@@ -1036,10 +1038,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 21 — original 928–962 · candidate 936–966 · +10/−14 · residual</summary>
+<summary>Section 21 — original 928–962 · candidate 936–970 · +10/−10 · residual</summary>
 
 ```diff
-@@ -928,35 +936,31 @@
+@@ -928,35 +936,35 @@
  @@ @@
  @@ @@
  
@@ -1047,12 +1049,12 @@ adjudicated explanation.
 +[[span class="s-title"]]ラベル[[/span]]
  @@ @@
  [[>]]
--[[module rate]]
--[[include :scp-wiki:component:author-label-source start=--
--|name=put anything you want here!|center=*]]
+ [[module rate]]
+ [[include :scp-wiki:component:author-label-source start=--
+ |name=put anything you want here!|center=*]]
 -= also comes with custom styling for the [[[component:author-label|author label component!]]] see the [[span class="bd"]]ROOT VARIABLES[[/span]] list for more info. 
--[[include :scp-wiki:component:author-label-source end=--]]
 += 著者ラベルにもカスタムスタイルが用意されています。詳しくは[[span class="bd"]]ルート変数[[/span]]の一覧を参照してください。
+ [[include :scp-wiki:component:author-label-source end=--]]
  [[/>]]
  
  @@ @@
@@ -1090,10 +1092,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 22 — original 1049–1184 · candidate 1053–1188 · +36/−36 · residual</summary>
+<summary>Section 22 — original 1049–1184 · candidate 1057–1192 · +36/−36 · residual</summary>
 
 ```diff
-@@ -1049,136 +1053,136 @@
+@@ -1049,136 +1057,136 @@
  [[/collapsible]]
  @@ @@
  @@ @@
@@ -1271,10 +1273,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 23 — original 1186–1214 · candidate 1190–1218 · +7/−7 · residual</summary>
+<summary>Section 23 — original 1186–1214 · candidate 1194–1222 · +7/−7 · residual</summary>
 
 ```diff
-@@ -1186,29 +1190,29 @@
+@@ -1186,29 +1194,29 @@
  [[/div]]
  @@ @@
  @@ @@
@@ -1316,10 +1318,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 24 — original 1218–1224 · candidate 1222–1228 · +1/−1 · residual</summary>
+<summary>Section 24 — original 1218–1224 · candidate 1226–1232 · +1/−1 · residual</summary>
 
 ```diff
-@@ -1218,7 +1222,7 @@
+@@ -1218,7 +1226,7 @@
  > 
  > {{@@[[/module]]@@}}
  
@@ -1333,10 +1335,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 25 — original 1228–1234 · candidate 1232–1238 · +1/−1 · residual</summary>
+<summary>Section 25 — original 1228–1234 · candidate 1236–1242 · +1/−1 · residual</summary>
 
 ```diff
-@@ -1228,7 +1232,7 @@
+@@ -1228,7 +1236,7 @@
  > {{@@}@@}}
  > {{@@[[/module]]@@}}
  
@@ -1350,10 +1352,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 26 — original 1238–1335 · candidate 1242–1340 · +47/−46 · residual, supplement</summary>
+<summary>Section 26 — original 1238–1335 · candidate 1246–1344 · +47/−46 · residual, supplement</summary>
 
 ```diff
-@@ -1238,98 +1242,99 @@
+@@ -1238,98 +1246,99 @@
  > {{@@}@@}}
  > {{@@[[/module]]@@}}
  @@ @@
@@ -1504,10 +1506,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 27 — original 1514–1524 · candidate 1519–1529 · +2/−2 · residual</summary>
+<summary>Section 27 — original 1514–1524 · candidate 1523–1533 · +2/−2 · residual</summary>
 
 ```diff
-@@ -1514,11 +1519,11 @@
+@@ -1514,11 +1523,11 @@
  
      --mobile-title:"P.M. CENTER";
      --mobile-subtitle:"ADVANCED STUDIES";
@@ -1526,10 +1528,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 41 — original 1967–1979 · candidate 1972–1984 · +2/−2 · mechanical, residual</summary>
+<summary>Section 41 — original 1967–1979 · candidate 1976–1988 · +2/−2 · mechanical, residual</summary>
 
 ```diff
-@@ -1967,13 +1972,13 @@
+@@ -1967,13 +1976,13 @@
  body.print-body #content-wrap::after {
      content: unset;
  }
@@ -1550,10 +1552,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 42 — original 2305–2311 · candidate 2310–2316 · +1/−1 · residual</summary>
+<summary>Section 42 — original 2305–2311 · candidate 2314–2320 · +1/−1 · residual</summary>
 
 ```diff
-@@ -2305,7 +2310,7 @@
+@@ -2305,7 +2314,7 @@
  
  div.underwatch_memo {
      --memo-heading: "YOU HAVE BEEN SELECTED TO SERVE THE UNDERWATCH COUNCIL";
@@ -1567,10 +1569,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 43 — original 2314–2326 · candidate 2319–2331 · +2/−2 · residual</summary>
+<summary>Section 43 — original 2314–2326 · candidate 2323–2335 · +2/−2 · residual</summary>
 
 ```diff
-@@ -2314,13 +2319,13 @@
+@@ -2314,13 +2323,13 @@
  
  div.deletions_memo {
      --memo-heading: "THIS DOCUMENT HAS BEEN MARKED FOR DELETIONS";
@@ -1591,10 +1593,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 46 — original 2744–2757 · candidate 2749–2764 · +3/−1 · mechanical, residual</summary>
+<summary>Section 46 — original 2744–2757 · candidate 2753–2768 · +3/−1 · mechanical, residual</summary>
 
 ```diff
-@@ -2744,14 +2749,16 @@
+@@ -2744,14 +2753,16 @@
          --header-subtitle: var(--mobile-subtitle);
      }
  }
@@ -1617,10 +1619,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 49 — original 2903–2909 · candidate 2913–2919 · +1/−1 · residual</summary>
+<summary>Section 49 — original 2903–2909 · candidate 2917–2923 · +1/−1 · residual</summary>
 
 ```diff
-@@ -2903,7 +2913,7 @@
+@@ -2903,7 +2917,7 @@
  --basalt-main-text-color: 31, 28, 31;
  --link-volume: uppercase;
  --basalt-background-color: 237, 237, 237;
@@ -1634,10 +1636,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 53 — original 3140–3193 · candidate 3152–3206 · +16/−15 · mechanical, residual, supplement</summary>
+<summary>Section 53 — original 3140–3193 · candidate 3156–3210 · +16/−15 · mechanical, residual, supplement</summary>
 
 ```diff
-@@ -3140,54 +3152,55 @@
+@@ -3140,54 +3156,55 @@
          --header-subtitle: var(--mobile-subtitle);
      }
  }
@@ -1731,7 +1733,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -1557,7 +1562,7 @@
+@@ -1557,7 +1566,7 @@
      --loop1: 1;
      --loop2: 1;
      --loop3: 1;
@@ -1743,7 +1745,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -1625,7 +1630,7 @@
+@@ -1625,7 +1634,7 @@
  #main-content, body.print-body #main-content {
      max-width: calc(100% - var(--main-content-side-margin)* 2.5);
  }
@@ -1755,7 +1757,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -1684,7 +1689,7 @@
+@@ -1684,7 +1693,7 @@
  }
  
  /*------- Page Tags -------*/
@@ -1767,7 +1769,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -1712,9 +1717,9 @@
+@@ -1712,9 +1721,9 @@
      flex-grow: 0;
      border-radius: 0;
  }
@@ -1782,7 +1784,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -1724,7 +1729,7 @@
+@@ -1724,7 +1733,7 @@
      background-color: rgb(var(--basalt-secondary-color));
      border: solid 0.05rem rgb(var(--h-border-color));
      border-radius: 5px;
@@ -1794,7 +1796,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -1737,7 +1742,7 @@
+@@ -1737,7 +1746,7 @@
  }
  
  /*------- Title, Breadcrumbs, Rating Module  -------*/
@@ -1806,7 +1808,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -1748,7 +1753,7 @@
+@@ -1748,7 +1757,7 @@
      font-weight: normal;
      font-size: 1em;
  }
@@ -1818,7 +1820,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -1762,7 +1767,7 @@
+@@ -1762,7 +1771,7 @@
  #page-content div:is(.capt, .wikibox, .opaque):is(.sandy, .wasabi, .white, .grey, .peachy, .pink, .clay, .mint							, .turquoise) {
      color: rgb(var(--dark-color));
  }
@@ -1830,7 +1832,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -1786,7 +1791,7 @@
+@@ -1786,7 +1795,7 @@
  #page-content :is(h3,h4,h5,h6) > span {
      font-size: 77.5%;
  }
@@ -1842,7 +1844,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -1797,7 +1802,7 @@
+@@ -1797,7 +1806,7 @@
      padding: 0.325rem 1.25rem;
      margin: 0.25rem auto;
  }
@@ -1854,7 +1856,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -1835,7 +1840,7 @@
+@@ -1835,7 +1844,7 @@
  :is(#page-content table:not(.form), table.wiki-content-table) td {
      background-color: rgb(var(--vector-midtone));
  }
@@ -1866,7 +1868,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -1854,7 +1859,7 @@
+@@ -1854,7 +1863,7 @@
      padding-left: 0;
      margin: 0.125rem 0 0;
  }
@@ -1878,7 +1880,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -1938,7 +1943,7 @@
+@@ -1938,7 +1947,7 @@
  /*----------------------------------*/
  /*-------- MOBILE QUERY --------*/
  /*----------------------------------*/
@@ -1890,7 +1892,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -2407,7 +2412,7 @@
+@@ -2407,7 +2416,7 @@
  div.align-l {
      text-align: left;
  }
@@ -1902,7 +1904,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -2704,11 +2709,11 @@
+@@ -2704,11 +2713,11 @@
  }
  
  /* ---- Wikimodule Integration ---- */
@@ -1919,7 +1921,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -2859,7 +2866,7 @@
+@@ -2859,7 +2870,7 @@
      --vector-vanta: 9, 0, 13;
  }
  
@@ -1931,7 +1933,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -2894,8 +2901,11 @@
+@@ -2894,8 +2905,11 @@
          --header-subtitle: var(--mobile-subtitle);
      }
  }
@@ -1946,7 +1948,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -2961,7 +2971,7 @@
+@@ -2961,7 +2975,7 @@
      --vector-storm: 90, 91, 91;
      --vector-dark: 12, 23, 20;
      --vector-vanta: 0, 0, 0;
@@ -1958,7 +1960,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -2983,7 +2993,9 @@
+@@ -2983,7 +2997,9 @@
          --header-subtitle: var(--mobile-subtitle);
      }
  }
@@ -1971,7 +1973,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -3091,7 +3103,7 @@
+@@ -3091,7 +3107,7 @@
      --vector-vanta: 0, 0, 0;
  }
  

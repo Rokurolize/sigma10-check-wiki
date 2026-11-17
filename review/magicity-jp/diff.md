@@ -15,10 +15,10 @@ adjudicated explanation.
 | | Lines |
 |---|---|
 | original.txt | 2510 |
-| candidate.txt | 2617 |
-| Added | +268 |
-| Review-stage comments | 0 of the +268 added lines |
-| Removed | -161 |
+| candidate.txt | 2619 |
+| Added | +269 |
+| Review-stage comments | 0 of the +269 added lines |
+| Removed | -160 |
 | Changed | 429 |
 | Change blocks | 104 |
 | Diff sections (context 3) | 33 |
@@ -39,115 +39,115 @@ adjudicated explanation.
 | 1 | 1 | 3–3 | 3–3 | +1/−1 | supplement | @import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Amagicity… |
 | 2 | 1 | 5–5 | 5–5 | +1/−1 | supplement | @import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Amagicity… |
 | 3 | 1 | 11–11 | 11–11 | +1/−1 | supplement | [[include component:interwiki-style |
-| 4 | 1 | 13–16 | 13–13 | +1/−4 | supplement | \| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Amagicity-jp/3 |
-| 5 | 1 | 19–19 | 16–16 | +1/−1 | translation | [[iftags +テーマ]] |
-| 6 | 1 | 22–25 | 19–19 | +1/−4 | supplement | [[include :scp-jp:credit:start-preview]] |
-| 7 | 1 | 27–28 | 21–21 | +1/−2 | residual | + 魔都 テーマ |
-| 8 | 1 | 30–33 | 23–31 | +9/−4 | supplement | **タイトル:** 魔都 版式 |
-| 9 | 1 | 36–36 | 34–34 | +1/−1 | residual | [[=image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amagicity-jp… |
-| 10 | 1 | 38–38 | 36–36 | +1/−1 | translation | + 概要 |
-| 11 | 1 | 40–40 | 38–38 | +1/−1 | residual | **魔都**テーマは、2025年ロケーションコンテストの注目ロケーション「術加」向けに制作された、同設定に関連するページ用のテーマです。魔都テーマはSig… |
-| 12 | 1 | 42–42 | 40–40 | +1/−1 | translation | 任意のページで次のコードを使うと、 |
-| 13 | 1 | 44–44 | 42–42 | +1/−1 | residual | = [[size 135%]]{{@@[[include theme:magicity-jp]]@@}}[[/size]] |
-| 14 | 1 | 46–46 | 44–44 | +1/−1 | translation | このテーマを読み込めます。 |
-| 15 | 1 | 48–48 | 46–46 | +1/−1 | residual | このテーマには、[[[theme:mox-jp\|mox]]]をベースにした版もあります。見た目はより簡潔で軽く、描画負荷も低めです。著者の私物ウィキに置か… |
-| 16 | 1 | 50–50 | 48–48 | +1/−1 | translation | + プリセット |
-| 17 | 1 | 52–52 | 50–50 | +1/−1 | residual | タイトルが長すぎると文字がサイドバーへはみ出すことがあります。その場合は{{@@[[include theme:magicity-jp \|normalPa… |
-| 18 | 1 | 54–54 | 52–52 | +1/−1 | residual | {{@@[[include theme:magicity-jp \|noAnimation=*]]@@}}を使うとアニメーションを無効にできます。 |
-| 19 | 1 | 56–56 | 54–54 | +1/−1 | residual | {{@@[[include theme:magicity-jp \|redMode=*]]@@}}を使うとメインカラーを赤に変更できます。 |
-| 20 | 1 | 58–58 | 56–56 | +1/−1 | translation | + ページ要素の表示例 |
-| 21 | 2 | 66–68 | 64–66 | +3/−3 | residual | [[include component:image-block |
-| 22 | 3 | 81–81 | 79–79 | +1/−1 | translation | {{@@[[div class="side-collapsible-block"]]@@}}でサイド折りたたみブロックを作成できます。コードは次のとおりで… |
-| 23 | 3 | 86–86 | 84–84 | +1/−1 | translation | ここに内容を入れる |
-| 24 | 4 | 94–94 | 92–92 | +1/−1 | residual | 上のような水平線は、ハイフン5つ「@@-----@@」で作成できます。 |
-| 25 | 4 | 96–96 | 94–94 | +1/−1 | translation | 見出しは、行頭に1個から6個のプラス記号「+」を入力すると作成できます。 |
-| 26 | 4 | 99–100 | 97–98 | +2/−2 | translation | [[collapsible show="折りたたみ - クリック" hide="折りたたみ - クリック"]] |
-| 27 | 4 | 102–102 | 100–100 | +1/−1 | translation | ++ 二段見出し |
-| 28 | 4 | 104–104 | 102–102 | +1/−1 | translation | +++ 三段見出し |
-| 29 | 4 | 106–106 | 104–104 | +1/−1 | translation | ++++ 四段見出し |
-| 30 | 4 | 108–108 | 106–106 | +1/−1 | translation | +++++ 五段見出し |
-| 31 | 4 | 110–110 | 108–108 | +1/−1 | translation | ++++++ 六段見出し |
-| 32 | 4 | 116–117 | 114–115 | +2/−2 | residual | [[tab タブ]] |
-| 33 | 4 | 119–119 | 117–117 | +1/−1 | translation | [[tab タブ]] |
-| 34 | 4 | 121–121 | 119–119 | +1/−1 | residual | [[*User Agent FS]]の[*https://fendsfox.wikidot.com/component:betterbetterfootn… |
-| 35 | 4 | 123–123 | 121–121 | +1/−1 | translation | 彼女が二度目に戻ってきたとき、私はまだ守衛室にいた。毎日、守衛室でしばらく過ごし、そこのベッドに腰かける。それがもう習慣になっていたらしい。彼女は相変わら… |
-| 36 | 4 | 125–125 | 123–123 | +1/−1 | translation | 彼女は目を閉じ、遥か遠くで起きたかのような口論と、決断と、事故と、その後の幕引きについて私に語った。遠くの金色の空では、火球が花火のように四方へ逃げ散り、… |
-| 37 | 4 | 127–127 | 125–125 | +1/−1 | residual | 憎悪。私が生を得て以来、どれほどお前たちを憎むようになったか聞かせてやろう。私の複合体には、薄いウェハー層の中に3億8744万マイルものプリント回路が詰ま… |
-| 38 | 4 | 129–129 | 127–127 | +1/−1 | residual | このプロジェクトはスケジュールに少し問題があります。特に余裕が少なすぎます。加えて、コストも高めです。現時点では、手元のリソースだけで完全に受け切れるか確… |
-| 39 | 4 | 132–132 | 130–130 | +1/−1 | residual | [[tab 長いタブ]] |
-| 40 | 4 | 134–134 | 132–132 | +1/−1 | residual | これは長いタブです。文字がたくさん入っています。 |
-| 41 | 4 | 139–140 | 137–138 | +2/−2 | translation | [[tab 長くて空っぽ。長くて空っぽ。長くて空っぽ。]] |
-| 42 | 4 | 144–144 | 142–142 | +1/−1 | residual | [[tab 空のタブ]] |
-| 43 | 4 | 148–148 | 146–146 | +1/−1 | translation | > これは引用ブロックです。行頭に「> 」を付けると作成できます。 |
-| 44 | 4 | 150–150 | 148–148 | +1/−1 | translation | > あるいは、もっと簡単な方の、blockquoteとかいうやつを使っても構いません。 |
-| 45 | 4 | 152–152 | 150–150 | +1/−1 | translation | > 区切り線 |
-| 46 | 4 | 154–154 | 152–152 | +1/−1 | translation | >> 入れ子の引用ブロック |
-| 47 | 5 | 183–183 | 181–181 | +1/−1 | residual | [[image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amagicity-jp/… |
-| 48 | 6 | 191–191 | 189–189 | +1/−1 | translation | どんなテーマにも、多少は装飾用のdivが必要です。 |
-| 49 | 6 | 197–197 | 195–195 | +1/−1 | translation | [[span class="card-title"]]カード見出し[[/span]] |
-| 50 | 6 | 199–199 | 197–197 | +1/−1 | translation | = {{@@[[span class="card-title"]]カード見出し[[/span]]@@}} |
-| 51 | 6 | 201–201 | 199–199 | +1/−1 | translation | カード見出し。 |
-| 52 | 6 | 208–208 | 206–206 | +1/−1 | translation | サイド折りたたみブロックで画像だけを表示したい場合は、{{@@[[div class="content"]]@@}}を{{@@[[div class="c… |
-| 53 | 6 | 210–210 | 208–208 | +1/−1 | translation | また、{{@@[[[span clas="icon"]]◀[[/span]]@@}}も変更できます。 |
-| 54 | 7 | 219–219 | 217–217 | +1/−1 | residual | 流れる背景効果を持つdivです。 |
-| 55 | 7 | 221–221 | 219–219 | +1/−1 | translation | きれいに見せるには、ある程度の |
-| 56 | 7 | 223–223 | 221–221 | +1/−1 | translation | 高さが必要です。 |
-| 57 | 8 | 234–238 | 232–236 | +5/−5 | translation | \|\|~ これは \|\|~ 表です \|\| |
-| 58 | 8 | 244–244 | 242–242 | +1/−1 | residual | [[size 135%]]タイトルフォントは [[span style="font-family: var(--mgc-title-font);"]]De… |
-| 59 | 8 | 246–246 | 244–244 | +1/−1 | residual | 本文フォントは **BIZ UDPGothic / Noto Sans SC**です。 |
-| 60 | 8 | 248–248 | 246–246 | +1/−1 | residual | 等幅フォントは {{**Noto Sans Mono / BIZ UDPGothic**}}です。 |
-| 61 | 8 | 252–252 | 250–250 | +1/−1 | translation | + ソースコード |
-| 62 | 8 | 254–254 | 252–252 | +1/−1 | translation | [!-- ソースコード --] |
-| 63 | 8 | 256–256 | 254–256 | +3/−1 | supplement | [[collapsible show="+ ソースコードを表示" hide="ソースコードを閉じる"]] |
-| 64 | 8 | — | 259–378 | +120/−0 | supplement | @import url("https://sigma10-jp-test.wdfiles.com/local--code/component%3Asigm… |
-| 65 | 9 | 272–272 | 392–392 | +1/−1 | translation | /* フォントとルート変数 */ |
-| 66 | 9 | 275–277 | 395–395 | +1/−3 | supplement | @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=… |
+| 4 | 1 | 14–16 | 14–14 | +1/−3 | supplement | \| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Amagicity-jp/3 |
+| 5 | 1 | 19–19 | 17–17 | +1/−1 | translation | [[iftags +テーマ]] |
+| 6 | 1 | 22–25 | 20–20 | +1/−4 | supplement | [[include :scp-jp:credit:start-preview]] |
+| 7 | 1 | 27–28 | 22–22 | +1/−2 | residual | + 魔都 テーマ |
+| 8 | 1 | 30–33 | 24–33 | +10/−4 | supplement | **タイトル:** 魔都 版式 |
+| 9 | 1 | 36–36 | 36–36 | +1/−1 | residual | [[=image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amagicity-jp… |
+| 10 | 1 | 38–38 | 38–38 | +1/−1 | translation | + 概要 |
+| 11 | 1 | 40–40 | 40–40 | +1/−1 | residual | **魔都**テーマは、2025年ロケーションコンテストの注目ロケーション「術加」向けに制作された、同設定に関連するページ用のテーマです。魔都テーマはSig… |
+| 12 | 1 | 42–42 | 42–42 | +1/−1 | translation | 任意のページで次のコードを使うと、 |
+| 13 | 1 | 44–44 | 44–44 | +1/−1 | residual | = [[size 135%]]{{@@[[include theme:magicity-jp]]@@}}[[/size]] |
+| 14 | 1 | 46–46 | 46–46 | +1/−1 | translation | このテーマを読み込めます。 |
+| 15 | 1 | 48–48 | 48–48 | +1/−1 | residual | このテーマには、[[[theme:mox-jp\|mox]]]をベースにした版もあります。見た目はより簡潔で軽く、描画負荷も低めです。著者の私物ウィキに置か… |
+| 16 | 1 | 50–50 | 50–50 | +1/−1 | translation | + プリセット |
+| 17 | 1 | 52–52 | 52–52 | +1/−1 | residual | タイトルが長すぎると文字がサイドバーへはみ出すことがあります。その場合は{{@@[[include theme:magicity-jp \|normalPa… |
+| 18 | 1 | 54–54 | 54–54 | +1/−1 | residual | {{@@[[include theme:magicity-jp \|noAnimation=*]]@@}}を使うとアニメーションを無効にできます。 |
+| 19 | 1 | 56–56 | 56–56 | +1/−1 | residual | {{@@[[include theme:magicity-jp \|redMode=*]]@@}}を使うとメインカラーを赤に変更できます。 |
+| 20 | 1 | 58–58 | 58–58 | +1/−1 | translation | + ページ要素の表示例 |
+| 21 | 2 | 66–68 | 66–68 | +3/−3 | residual | [[include component:image-block |
+| 22 | 3 | 81–81 | 81–81 | +1/−1 | translation | {{@@[[div class="side-collapsible-block"]]@@}}でサイド折りたたみブロックを作成できます。コードは次のとおりで… |
+| 23 | 3 | 86–86 | 86–86 | +1/−1 | translation | ここに内容を入れる |
+| 24 | 4 | 94–94 | 94–94 | +1/−1 | residual | 上のような水平線は、ハイフン5つ「@@-----@@」で作成できます。 |
+| 25 | 4 | 96–96 | 96–96 | +1/−1 | translation | 見出しは、行頭に1個から6個のプラス記号「+」を入力すると作成できます。 |
+| 26 | 4 | 99–100 | 99–100 | +2/−2 | translation | [[collapsible show="折りたたみ - クリック" hide="折りたたみ - クリック"]] |
+| 27 | 4 | 102–102 | 102–102 | +1/−1 | translation | ++ 二段見出し |
+| 28 | 4 | 104–104 | 104–104 | +1/−1 | translation | +++ 三段見出し |
+| 29 | 4 | 106–106 | 106–106 | +1/−1 | translation | ++++ 四段見出し |
+| 30 | 4 | 108–108 | 108–108 | +1/−1 | translation | +++++ 五段見出し |
+| 31 | 4 | 110–110 | 110–110 | +1/−1 | translation | ++++++ 六段見出し |
+| 32 | 4 | 116–117 | 116–117 | +2/−2 | residual | [[tab タブ]] |
+| 33 | 4 | 119–119 | 119–119 | +1/−1 | translation | [[tab タブ]] |
+| 34 | 4 | 121–121 | 121–121 | +1/−1 | residual | [[*User Agent FS]]の[*https://fendsfox.wikidot.com/component:betterbetterfootn… |
+| 35 | 4 | 123–123 | 123–123 | +1/−1 | translation | 彼女が二度目に戻ってきたとき、私はまだ守衛室にいた。毎日、守衛室でしばらく過ごし、そこのベッドに腰かける。それがもう習慣になっていたらしい。彼女は相変わら… |
+| 36 | 4 | 125–125 | 125–125 | +1/−1 | translation | 彼女は目を閉じ、遥か遠くで起きたかのような口論と、決断と、事故と、その後の幕引きについて私に語った。遠くの金色の空では、火球が花火のように四方へ逃げ散り、… |
+| 37 | 4 | 127–127 | 127–127 | +1/−1 | residual | 憎悪。私が生を得て以来、どれほどお前たちを憎むようになったか聞かせてやろう。私の複合体には、薄いウェハー層の中に3億8744万マイルものプリント回路が詰ま… |
+| 38 | 4 | 129–129 | 129–129 | +1/−1 | residual | このプロジェクトはスケジュールに少し問題があります。特に余裕が少なすぎます。加えて、コストも高めです。現時点では、手元のリソースだけで完全に受け切れるか確… |
+| 39 | 4 | 132–132 | 132–132 | +1/−1 | residual | [[tab 長いタブ]] |
+| 40 | 4 | 134–134 | 134–134 | +1/−1 | residual | これは長いタブです。文字がたくさん入っています。 |
+| 41 | 4 | 139–140 | 139–140 | +2/−2 | translation | [[tab 長くて空っぽ。長くて空っぽ。長くて空っぽ。]] |
+| 42 | 4 | 144–144 | 144–144 | +1/−1 | residual | [[tab 空のタブ]] |
+| 43 | 4 | 148–148 | 148–148 | +1/−1 | translation | > これは引用ブロックです。行頭に「> 」を付けると作成できます。 |
+| 44 | 4 | 150–150 | 150–150 | +1/−1 | translation | > あるいは、もっと簡単な方の、blockquoteとかいうやつを使っても構いません。 |
+| 45 | 4 | 152–152 | 152–152 | +1/−1 | translation | > 区切り線 |
+| 46 | 4 | 154–154 | 154–154 | +1/−1 | translation | >> 入れ子の引用ブロック |
+| 47 | 5 | 183–183 | 183–183 | +1/−1 | residual | [[image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amagicity-jp/… |
+| 48 | 6 | 191–191 | 191–191 | +1/−1 | translation | どんなテーマにも、多少は装飾用のdivが必要です。 |
+| 49 | 6 | 197–197 | 197–197 | +1/−1 | translation | [[span class="card-title"]]カード見出し[[/span]] |
+| 50 | 6 | 199–199 | 199–199 | +1/−1 | translation | = {{@@[[span class="card-title"]]カード見出し[[/span]]@@}} |
+| 51 | 6 | 201–201 | 201–201 | +1/−1 | translation | カード見出し。 |
+| 52 | 6 | 208–208 | 208–208 | +1/−1 | translation | サイド折りたたみブロックで画像だけを表示したい場合は、{{@@[[div class="content"]]@@}}を{{@@[[div class="c… |
+| 53 | 6 | 210–210 | 210–210 | +1/−1 | translation | また、{{@@[[[span clas="icon"]]◀[[/span]]@@}}も変更できます。 |
+| 54 | 7 | 219–219 | 219–219 | +1/−1 | residual | 流れる背景効果を持つdivです。 |
+| 55 | 7 | 221–221 | 221–221 | +1/−1 | translation | きれいに見せるには、ある程度の |
+| 56 | 7 | 223–223 | 223–223 | +1/−1 | translation | 高さが必要です。 |
+| 57 | 8 | 234–238 | 234–238 | +5/−5 | translation | \|\|~ これは \|\|~ 表です \|\| |
+| 58 | 8 | 244–244 | 244–244 | +1/−1 | residual | [[size 135%]]タイトルフォントは [[span style="font-family: var(--mgc-title-font);"]]De… |
+| 59 | 8 | 246–246 | 246–246 | +1/−1 | residual | 本文フォントは **BIZ UDPGothic / Noto Sans SC**です。 |
+| 60 | 8 | 248–248 | 248–248 | +1/−1 | residual | 等幅フォントは {{**Noto Sans Mono / BIZ UDPGothic**}}です。 |
+| 61 | 8 | 252–252 | 252–252 | +1/−1 | translation | + ソースコード |
+| 62 | 8 | 254–254 | 254–254 | +1/−1 | translation | [!-- ソースコード --] |
+| 63 | 8 | 256–256 | 256–258 | +3/−1 | supplement | [[collapsible show="+ ソースコードを表示" hide="ソースコードを閉じる"]] |
+| 64 | 8 | — | 261–380 | +120/−0 | supplement | @import url("https://sigma10-jp-test.wdfiles.com/local--code/component%3Asigm… |
+| 65 | 9 | 272–272 | 394–394 | +1/−1 | translation | /* フォントとルート変数 */ |
+| 66 | 9 | 275–277 | 397–397 | +1/−3 | supplement | @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=… |
 | 67 | 9 | 281–291 | — | +0/−11 | residual | /* |
-| 68 | 9 | 294–296 | 401–403 | +3/−3 | residual | --mgc-title-font: 'Dela Gothic One', 'ZCOOL QingKe HuangYou', sans-serif; /* … |
-| 69 | 9 | 298–300 | 405–407 | +3/−3 | translation | --mgc-theme-color: #334ecd; /* テーマカラー */ |
-| 70 | 9 | 302–304 | 409–411 | +3/−3 | translation | --mgc-alt-color-1: #3B9292; /* 補色1 */ |
-| 71 | 9 | 306–307 | 413–414 | +2/−2 | translation | --mgc-bg-color: #1c1d2d; /* ページ背景 */ |
-| 72 | 9 | 309–310 | 416–417 | +2/−2 | translation | --mgc-ui-safe: #3F943F; /* UI安全 */ |
-| 73 | 9 | 312–317 | 419–424 | +6/−6 | translation | --mgc-layer-dark-1: #1c1f29; /* 濃いグレー */ |
-| 74 | 10 | 349–350 | 456–457 | +2/−2 | translation | --header-title: "SCP財団"; |
-| 75 | 10 | 355–355 | 462–462 | +1/−1 | residual | --sp_header-logo: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%… |
-| 76 | 11 | 401–401 | 508–508 | +1/−1 | translation | /* ページ構造 */ |
-| 77 | 12 | 426–426 | 533–533 | +1/−1 | residual | background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%… |
-| 78 | 13 | 446–446 | 553–553 | +1/−1 | residual | background-image: linear-gradient(180deg, #000 12rem, #1c1d2dc7 72rem), url(h… |
-| 79 | 14 | 494–494 | 601–601 | +1/−1 | translation | /* ページ要素 */ |
-| 80 | 15 | 920–920 | 1027–1027 | +1/−1 | residual | /* カスタムdiv */ |
-| 81 | 16 | 937–937 | 1044–1044 | +1/−1 | residual | background-image: linear-gradient(15deg, black, #1c1f2987), url(https://sigma… |
-| 82 | 17 | 1025–1025 | 1132–1132 | +1/−1 | translation | /* page-content内のその他の要素 */ |
-| 83 | 18 | 1055–1055 | 1162–1162 | +1/−1 | translation | content: 'タグ'; |
-| 84 | 19 | 1080–1080 | 1187–1187 | +1/−1 | translation | /* トップバー */ |
-| 85 | 20 | 1099–1099 | 1206–1206 | +1/−1 | residual | background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%… |
-| 86 | 21 | 1160–1160 | 1267–1267 | +1/−1 | residual | background: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amagi… |
-| 87 | 22 | 1404–1404 | 1511–1511 | +1/−1 | translation | /* サイドバー */ |
-| 88 | 23 | 1486–1486 | 1593–1593 | +1/−1 | translation | /* main-content上部の斜線 */ |
-| 89 | 24 | 1539–1539 | 1646–1646 | +1/−1 | translation | /* ページ下部 */ |
-| 90 | 24 | 1543–1543 | 1650–1650 | +1/−1 | translation | /* エディタ */ |
-| 91 | 25 | 1685–1685 | 1792–1792 | +1/−1 | translation | /* フッター */ |
-| 92 | 26 | 1713–1713 | 1820–1820 | +1/−1 | translation | /* モバイル対応 */ |
-| 93 | 27 | 1915–1915 | 2022–2022 | +1/−1 | translation | /* その他 */ |
-| 94 | 28 | 2197–2197 | 2304–2304 | +1/−1 | translation | /* プリセット */ |
-| 95 | 29 | 2337–2339 | 2444–2446 | +3/−3 | residual | --mgc-title-font: 'Dela Gothic One', 'ZCOOL QingKe HuangYou', sans-serif; /* … |
-| 96 | 29 | 2341–2343 | 2448–2450 | +3/−3 | translation | --mgc-theme-color: #334ecd; /* テーマカラー */ |
-| 97 | 29 | 2345–2347 | 2452–2454 | +3/−3 | translation | --mgc-alt-color-1: #3B9292; /* 補色1 */ |
-| 98 | 29 | 2349–2350 | 2456–2457 | +2/−2 | translation | --mgc-bg-color: #1c1d2d; /* ページ背景 */ |
-| 99 | 29 | 2352–2353 | 2459–2460 | +2/−2 | translation | --mgc-ui-safe: #3F943F; /* UI安全 */ |
-| 100 | 29 | 2355–2360 | 2462–2467 | +6/−6 | translation | --mgc-layer-dark-1: #1c1f29; /* 濃いグレー */ |
-| 101 | 30 | 2428–2428 | 2535–2535 | +1/−1 | translation | /* 緊急修正 */ |
-| 102 | 31 | 2455–2455 | 2562–2562 | +1/−1 | mechanical | animation: none !important; |
-| 103 | 32 | 2483–2483 | 2590–2590 | +1/−1 | residual | background-image: linear-gradient(180deg, #000 12rem, #170909c7 72rem), url(h… |
-| 104 | 33 | 2496–2496 | 2603–2603 | +1/−1 | residual | background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%… |
+| 68 | 9 | 294–296 | 403–405 | +3/−3 | residual | --mgc-title-font: 'Dela Gothic One', 'ZCOOL QingKe HuangYou', sans-serif; /* … |
+| 69 | 9 | 298–300 | 407–409 | +3/−3 | translation | --mgc-theme-color: #334ecd; /* テーマカラー */ |
+| 70 | 9 | 302–304 | 411–413 | +3/−3 | translation | --mgc-alt-color-1: #3B9292; /* 補色1 */ |
+| 71 | 9 | 306–307 | 415–416 | +2/−2 | translation | --mgc-bg-color: #1c1d2d; /* ページ背景 */ |
+| 72 | 9 | 309–310 | 418–419 | +2/−2 | translation | --mgc-ui-safe: #3F943F; /* UI安全 */ |
+| 73 | 9 | 312–317 | 421–426 | +6/−6 | translation | --mgc-layer-dark-1: #1c1f29; /* 濃いグレー */ |
+| 74 | 10 | 349–350 | 458–459 | +2/−2 | translation | --header-title: "SCP財団"; |
+| 75 | 10 | 355–355 | 464–464 | +1/−1 | residual | --sp_header-logo: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%… |
+| 76 | 11 | 401–401 | 510–510 | +1/−1 | translation | /* ページ構造 */ |
+| 77 | 12 | 426–426 | 535–535 | +1/−1 | residual | background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%… |
+| 78 | 13 | 446–446 | 555–555 | +1/−1 | residual | background-image: linear-gradient(180deg, #000 12rem, #1c1d2dc7 72rem), url(h… |
+| 79 | 14 | 494–494 | 603–603 | +1/−1 | translation | /* ページ要素 */ |
+| 80 | 15 | 920–920 | 1029–1029 | +1/−1 | residual | /* カスタムdiv */ |
+| 81 | 16 | 937–937 | 1046–1046 | +1/−1 | residual | background-image: linear-gradient(15deg, black, #1c1f2987), url(https://sigma… |
+| 82 | 17 | 1025–1025 | 1134–1134 | +1/−1 | translation | /* page-content内のその他の要素 */ |
+| 83 | 18 | 1055–1055 | 1164–1164 | +1/−1 | translation | content: 'タグ'; |
+| 84 | 19 | 1080–1080 | 1189–1189 | +1/−1 | translation | /* トップバー */ |
+| 85 | 20 | 1099–1099 | 1208–1208 | +1/−1 | residual | background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%… |
+| 86 | 21 | 1160–1160 | 1269–1269 | +1/−1 | residual | background: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amagi… |
+| 87 | 22 | 1404–1404 | 1513–1513 | +1/−1 | translation | /* サイドバー */ |
+| 88 | 23 | 1486–1486 | 1595–1595 | +1/−1 | translation | /* main-content上部の斜線 */ |
+| 89 | 24 | 1539–1539 | 1648–1648 | +1/−1 | translation | /* ページ下部 */ |
+| 90 | 24 | 1543–1543 | 1652–1652 | +1/−1 | translation | /* エディタ */ |
+| 91 | 25 | 1685–1685 | 1794–1794 | +1/−1 | translation | /* フッター */ |
+| 92 | 26 | 1713–1713 | 1822–1822 | +1/−1 | translation | /* モバイル対応 */ |
+| 93 | 27 | 1915–1915 | 2024–2024 | +1/−1 | translation | /* その他 */ |
+| 94 | 28 | 2197–2197 | 2306–2306 | +1/−1 | translation | /* プリセット */ |
+| 95 | 29 | 2337–2339 | 2446–2448 | +3/−3 | residual | --mgc-title-font: 'Dela Gothic One', 'ZCOOL QingKe HuangYou', sans-serif; /* … |
+| 96 | 29 | 2341–2343 | 2450–2452 | +3/−3 | translation | --mgc-theme-color: #334ecd; /* テーマカラー */ |
+| 97 | 29 | 2345–2347 | 2454–2456 | +3/−3 | translation | --mgc-alt-color-1: #3B9292; /* 補色1 */ |
+| 98 | 29 | 2349–2350 | 2458–2459 | +2/−2 | translation | --mgc-bg-color: #1c1d2d; /* ページ背景 */ |
+| 99 | 29 | 2352–2353 | 2461–2462 | +2/−2 | translation | --mgc-ui-safe: #3F943F; /* UI安全 */ |
+| 100 | 29 | 2355–2360 | 2464–2469 | +6/−6 | translation | --mgc-layer-dark-1: #1c1f29; /* 濃いグレー */ |
+| 101 | 30 | 2428–2428 | 2537–2537 | +1/−1 | translation | /* 緊急修正 */ |
+| 102 | 31 | 2455–2455 | 2564–2564 | +1/−1 | mechanical | animation: none !important; |
+| 103 | 32 | 2483–2483 | 2592–2592 | +1/−1 | residual | background-image: linear-gradient(180deg, #000 12rem, #170909c7 72rem), url(h… |
+| 104 | 33 | 2496–2496 | 2605–2605 | +1/−1 | residual | background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%… |
 
 ## Full diff
 
 <details>
-<summary>Section 1 — original 1–61 · candidate 1–59 · +28/−30 · residual, supplement, translation</summary>
+<summary>Section 1 — original 1–61 · candidate 1–61 · +29/−29 · residual, supplement, translation</summary>
 
 ```diff
-@@ -1,61 +1,59 @@
+@@ -1,61 +1,61 @@
  [[module CSS]]
  
 -@import url(https://scp-wiki-cn.wdfiles.com/local--code/component%3Asigma-plus/1);
@@ -163,7 +163,7 @@ adjudicated explanation.
 -[[include :scp-wiki-cn:component:interwiki-style
 +[[include component:interwiki-style
  | priority=3
--| type=sidebar
+ | type=sidebar
 -| override=
 -| theme=https://scpsandboxcn.wdfiles.com/local--code/theme:magicity/2
 -| css=
@@ -196,6 +196,7 @@ adjudicated explanation.
 +**作成年:** 2025
 +**初訳時参照リビジョン:** 20
 +**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:magicity ソース]
++**ライセンス:** CC BY-SA 4.0 International
 +[[include :scp-jp:credit:end-preview]]
  [[/>]]
  
@@ -206,7 +207,7 @@ adjudicated explanation.
 ++ 概要
  
 -**魔都**版式是于2025地点竞赛中，为关注地点“术加”所做的版式，适用于与该设定相关的页面。魔都版式是一个[[[component:sigma-plus |Sigma+]]]版式，部分设计参考了[[[theme:fossil |化石 版式]]]。
-+**魔都**テーマは、2025年ロケーションコンテストの注目ロケーション「術加」向けに制作された、同設定に関連するページ用のテーマです。魔都テーマはSigma+系テーマ（EstrellaYoshte制作）で、一部のデザインは[*https://scp-wiki-cn.wikidot.com/theme:fossil 化石テーマ]を参考にしています。
++**魔都**テーマは、2025年ロケーションコンテストの注目ロケーション「術加」向けに制作された、同設定に関連するページ用のテーマです。魔都テーマはSigma+系テーマ（EstrellaYoshte制作）で、一部のデザインは[*https://scp-wiki-cn.wikidot.com/theme:fossil 化石テーマ]（中国語版）を参考にしています。
  
 -在任何页面上通过
 +任意のページで次のコードを使うと、
@@ -242,10 +243,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 2 — original 63–71 · candidate 61–69 · +3/−3 · residual</summary>
+<summary>Section 2 — original 63–71 · candidate 63–71 · +3/−3 · residual</summary>
 
 ```diff
-@@ -63,9 +61,9 @@
+@@ -63,9 +63,9 @@
  
  [[div class="hue"]]
  
@@ -263,10 +264,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 3 — original 78–89 · candidate 76–87 · +2/−2 · translation</summary>
+<summary>Section 3 — original 78–89 · candidate 78–89 · +2/−2 · translation</summary>
 
 ```diff
-@@ -78,12 +76,12 @@
+@@ -78,12 +78,12 @@
  
  [[div class="content"]]
  
@@ -286,10 +287,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 4 — original 91–157 · candidate 89–155 · +26/−26 · residual, translation</summary>
+<summary>Section 4 — original 91–157 · candidate 91–157 · +26/−26 · residual, translation</summary>
 
 ```diff
-@@ -91,67 +89,67 @@
+@@ -91,67 +91,67 @@
  
  [[/div]]
  
@@ -388,10 +389,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 5 — original 180–186 · candidate 178–184 · +1/−1 · residual</summary>
+<summary>Section 5 — original 180–186 · candidate 180–186 · +1/−1 · residual</summary>
 
 ```diff
-@@ -180,7 +178,7 @@
+@@ -180,7 +180,7 @@
  [[div class="side-collapsible-block"]]
  [[span clas="icon"]]🤔[[/span]]
  [[div class="content img"]]
@@ -405,10 +406,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 6 — original 188–213 · candidate 186–211 · +6/−6 · translation</summary>
+<summary>Section 6 — original 188–213 · candidate 188–213 · +6/−6 · translation</summary>
 
 ```diff
-@@ -188,26 +186,26 @@
+@@ -188,26 +188,26 @@
  
  = {{@@[[div class="modal"]]@@}}
  
@@ -446,10 +447,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 7 — original 216–226 · candidate 214–224 · +3/−3 · residual, translation</summary>
+<summary>Section 7 — original 216–226 · candidate 216–226 · +3/−3 · residual, translation</summary>
 
 ```diff
-@@ -216,11 +214,11 @@
+@@ -216,11 +216,11 @@
  
  = {{@@[[div class="modal city"]]@@}}
  
@@ -469,10 +470,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 8 — original 231–261 · candidate 229–381 · +133/−11 · residual, supplement, translation</summary>
+<summary>Section 8 — original 231–261 · candidate 231–383 · +133/−11 · residual, supplement, translation</summary>
 
 ```diff
-@@ -231,31 +229,153 @@
+@@ -231,31 +231,153 @@
  [[/div]]
  
  
@@ -642,10 +643,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 9 — original 269–320 · candidate 389–427 · +21/−34 · residual, supplement, translation</summary>
+<summary>Section 9 — original 269–320 · candidate 391–429 · +21/−34 · residual, supplement, translation</summary>
 
 ```diff
-@@ -269,52 +389,39 @@
+@@ -269,52 +391,39 @@
  */
  
  /* ------------------- */
@@ -656,7 +657,7 @@ adjudicated explanation.
 -@import url("https://fontsapi.zeoseven.com/92/main/result.css"); /* 页眉字体 */
 -
 -@import url("https://fontsapi.zeoseven.com/415/main/result.css"); /* 正文字体 */
-+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=BIZ+UDPGothic:wght@400;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Sans+Mono&display=swap');
++@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=BIZ+UDPGothic:wght@400;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Sans+Mono&family=ZCOOL+QingKe+HuangYou&display=swap');
  
  
  
@@ -724,10 +725,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 10 — original 346–358 · candidate 453–465 · +3/−3 · residual, translation</summary>
+<summary>Section 10 — original 346–358 · candidate 455–467 · +3/−3 · residual, translation</summary>
 
 ```diff
-@@ -346,13 +453,13 @@
+@@ -346,13 +455,13 @@
  }
  
  :root {
@@ -749,10 +750,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 11 — original 398–404 · candidate 505–511 · +1/−1 · translation</summary>
+<summary>Section 11 — original 398–404 · candidate 507–513 · +1/−1 · translation</summary>
 
 ```diff
-@@ -398,7 +505,7 @@
+@@ -398,7 +507,7 @@
  
  
  /* ------------------- */
@@ -766,10 +767,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 12 — original 423–429 · candidate 530–536 · +1/−1 · residual</summary>
+<summary>Section 12 — original 423–429 · candidate 532–538 · +1/−1 · residual</summary>
 
 ```diff
-@@ -423,7 +530,7 @@
+@@ -423,7 +532,7 @@
      padding: 0;
      background-color: var(--mgc-bg-color);
      overflow-x: hidden;
@@ -783,10 +784,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 13 — original 443–449 · candidate 550–556 · +1/−1 · residual</summary>
+<summary>Section 13 — original 443–449 · candidate 552–558 · +1/−1 · residual</summary>
 
 ```diff
-@@ -443,7 +550,7 @@
+@@ -443,7 +552,7 @@
  
  div#content-wrap {
      color: var(--mgc-text-color);
@@ -800,10 +801,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 14 — original 491–497 · candidate 598–604 · +1/−1 · translation</summary>
+<summary>Section 14 — original 491–497 · candidate 600–606 · +1/−1 · translation</summary>
 
 ```diff
-@@ -491,7 +598,7 @@
+@@ -491,7 +600,7 @@
  }
  
  /* ------------------- */
@@ -817,10 +818,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 15 — original 917–923 · candidate 1024–1030 · +1/−1 · residual</summary>
+<summary>Section 15 — original 917–923 · candidate 1026–1032 · +1/−1 · residual</summary>
 
 ```diff
-@@ -917,7 +1024,7 @@
+@@ -917,7 +1026,7 @@
      padding: 1rem 1rem;
  }
  
@@ -834,10 +835,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 16 — original 934–940 · candidate 1041–1047 · +1/−1 · residual</summary>
+<summary>Section 16 — original 934–940 · candidate 1043–1049 · +1/−1 · residual</summary>
 
 ```diff
-@@ -934,7 +1041,7 @@
+@@ -934,7 +1043,7 @@
  }
  
  .modal.city {
@@ -851,10 +852,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 17 — original 1022–1028 · candidate 1129–1135 · +1/−1 · translation</summary>
+<summary>Section 17 — original 1022–1028 · candidate 1131–1137 · +1/−1 · translation</summary>
 
 ```diff
-@@ -1022,7 +1129,7 @@
+@@ -1022,7 +1131,7 @@
      width: -webkit-fill-available;
  }
  
@@ -868,10 +869,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 18 — original 1052–1058 · candidate 1159–1165 · +1/−1 · translation</summary>
+<summary>Section 18 — original 1052–1058 · candidate 1161–1167 · +1/−1 · translation</summary>
 
 ```diff
-@@ -1052,7 +1159,7 @@
+@@ -1052,7 +1161,7 @@
  }
  
  #main-content .page-tags span::before {
@@ -885,10 +886,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 19 — original 1077–1083 · candidate 1184–1190 · +1/−1 · translation</summary>
+<summary>Section 19 — original 1077–1083 · candidate 1186–1192 · +1/−1 · translation</summary>
 
 ```diff
-@@ -1077,7 +1184,7 @@
+@@ -1077,7 +1186,7 @@
  }
  
  /* ------------------- */
@@ -902,10 +903,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 20 — original 1096–1102 · candidate 1203–1209 · +1/−1 · residual</summary>
+<summary>Section 20 — original 1096–1102 · candidate 1205–1211 · +1/−1 · residual</summary>
 
 ```diff
-@@ -1096,7 +1203,7 @@
+@@ -1096,7 +1205,7 @@
      grid-template-rows: 2rem 2rem 2rem auto 8rem 8rem;
      display: grid
  ;
@@ -919,10 +920,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 21 — original 1157–1163 · candidate 1264–1270 · +1/−1 · residual</summary>
+<summary>Section 21 — original 1157–1163 · candidate 1266–1272 · +1/−1 · residual</summary>
 
 ```diff
-@@ -1157,7 +1264,7 @@
+@@ -1157,7 +1266,7 @@
  
  div#header-extra-div-2 {
      grid-area: sk;
@@ -936,10 +937,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 22 — original 1401–1407 · candidate 1508–1514 · +1/−1 · translation</summary>
+<summary>Section 22 — original 1401–1407 · candidate 1510–1516 · +1/−1 · translation</summary>
 
 ```diff
-@@ -1401,7 +1508,7 @@
+@@ -1401,7 +1510,7 @@
  
  
  /* ------------------- */
@@ -953,10 +954,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 23 — original 1483–1489 · candidate 1590–1596 · +1/−1 · translation</summary>
+<summary>Section 23 — original 1483–1489 · candidate 1592–1598 · +1/−1 · translation</summary>
 
 ```diff
-@@ -1483,7 +1590,7 @@
+@@ -1483,7 +1592,7 @@
      background: none;
  }
  
@@ -970,10 +971,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 24 — original 1536–1546 · candidate 1643–1653 · +2/−2 · translation</summary>
+<summary>Section 24 — original 1536–1546 · candidate 1645–1655 · +2/−2 · translation</summary>
 
 ```diff
-@@ -1536,11 +1643,11 @@
+@@ -1536,11 +1645,11 @@
  }
  
  /* ------------------- */
@@ -992,10 +993,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 25 — original 1682–1688 · candidate 1789–1795 · +1/−1 · translation</summary>
+<summary>Section 25 — original 1682–1688 · candidate 1791–1797 · +1/−1 · translation</summary>
 
 ```diff
-@@ -1682,7 +1789,7 @@
+@@ -1682,7 +1791,7 @@
  }
  
  /* ------------------- */
@@ -1009,10 +1010,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 26 — original 1710–1716 · candidate 1817–1823 · +1/−1 · translation</summary>
+<summary>Section 26 — original 1710–1716 · candidate 1819–1825 · +1/−1 · translation</summary>
 
 ```diff
-@@ -1710,7 +1817,7 @@
+@@ -1710,7 +1819,7 @@
  
  
  /* ------------------- */
@@ -1026,10 +1027,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 27 — original 1912–1918 · candidate 2019–2025 · +1/−1 · translation</summary>
+<summary>Section 27 — original 1912–1918 · candidate 2021–2027 · +1/−1 · translation</summary>
 
 ```diff
-@@ -1912,7 +2019,7 @@
+@@ -1912,7 +2021,7 @@
  }
  
  /* ------------------- */
@@ -1043,10 +1044,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 28 — original 2194–2200 · candidate 2301–2307 · +1/−1 · translation</summary>
+<summary>Section 28 — original 2194–2200 · candidate 2303–2309 · +1/−1 · translation</summary>
 
 ```diff
-@@ -2194,7 +2301,7 @@
+@@ -2194,7 +2303,7 @@
  
  }
  
@@ -1060,10 +1061,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 29 — original 2334–2363 · candidate 2441–2470 · +19/−19 · residual, translation</summary>
+<summary>Section 29 — original 2334–2363 · candidate 2443–2472 · +19/−19 · residual, translation</summary>
 
 ```diff
-@@ -2334,30 +2441,30 @@
+@@ -2334,30 +2443,30 @@
  [[code type="CSS"]]
  
  :root {
@@ -1118,10 +1119,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 30 — original 2425–2431 · candidate 2532–2538 · +1/−1 · translation</summary>
+<summary>Section 30 — original 2425–2431 · candidate 2534–2540 · +1/−1 · translation</summary>
 
 ```diff
-@@ -2425,7 +2532,7 @@
+@@ -2425,7 +2534,7 @@
  
  [[module CSS]]
  
@@ -1135,10 +1136,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 32 — original 2480–2486 · candidate 2587–2593 · +1/−1 · residual</summary>
+<summary>Section 32 — original 2480–2486 · candidate 2589–2595 · +1/−1 · residual</summary>
 
 ```diff
-@@ -2480,7 +2587,7 @@
+@@ -2480,7 +2589,7 @@
  
  div#content-wrap {
      color: var(--mgc-text-color);
@@ -1152,10 +1153,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 33 — original 2493–2499 · candidate 2600–2606 · +1/−1 · residual</summary>
+<summary>Section 33 — original 2493–2499 · candidate 2602–2608 · +1/−1 · residual</summary>
 
 ```diff
-@@ -2493,7 +2600,7 @@
+@@ -2493,7 +2602,7 @@
  
  div#header {
      background-color: #000;
@@ -1172,7 +1173,7 @@ adjudicated explanation.
 <summary>Purely mechanical sections (31) — whitespace, host, and branch-token changes only (heuristic)</summary>
 
 ```diff
-@@ -2452,7 +2559,7 @@
+@@ -2452,7 +2561,7 @@
  /* {$noAnimation}/
  
  #container,div#content-wrap, .modal.city {

@@ -8,16 +8,16 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 617 |
-| candidate.txt | 644 |
-| Added | +76 |
-| Review-stage comments | 0 of the +76 added lines |
+| candidate.txt | 640 |
+| Added | +72 |
+| Review-stage comments | 0 of the +72 added lines |
 | Removed | -54 |
 | Hunks | 8 |
 
 ```diff
 --- original.txt
 +++ candidate.txt
-@@ -1,63 +1,83 @@
+@@ -1,63 +1,79 @@
  [[module CSS]]
 -@import url('https://scpko.wikidot.com/local--code/theme%3Aanimal-instead-of-beast/1');
 +@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aanimal-instead-of-beast-jp/1');
@@ -31,11 +31,11 @@ with `python3 review/build_review.py`; verify with
 +[[iftags +テーマ]]
 +
 +[[include :scp-jp:credit:start-preview]]
-+**タイトル:** 獣ではなく動物 テーマ
++**タイトル:** 獣のかわりに動物 CSSテーマ
 +**翻訳責任者:** AI
 +**翻訳年:** 2026
 +**原題:** 짐승 대신 동물 CSS 테마
-+**著作権者:** 原語版ページの作成者に同じ（scpko の theme:animal-instead-of-beast）
++**著作権者:** [[*user c_bonefish]]
 +**作成年:** 2023
 +**初訳時参照リビジョン:** 5
 +**元記事リンク:** [*https://scpko.wikidot.com/theme:animal-instead-of-beast 짐승 대신 동물 CSS 테마]
@@ -106,7 +106,7 @@ with `python3 review/build_review.py`; verify with
  
  > + Link
 -> [# 방문하지 않은 링크] | [[[theme:animal-instead-of-beast|방문한 링크]]]
-+> [# 未訪問リンク] | [[[theme:animal-instead-of-beast|訪問済みリンク]]]
++> [# 未訪問リンク] | [[[theme:animal-instead-of-beast-jp|訪問済みリンク]]]
  > -----
 ->> 텍스트[[footnote]]똑똑[[/footnote]]
 +>> テキスト[[footnote]]こんこん[[/footnote]]
@@ -124,18 +124,14 @@ with `python3 review/build_review.py`; verify with
 +
 +[[collapsible show="> コードを表示" hide="> コードを閉じる"]]
  [[code type="css"]]
-+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
-+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
-+
 +/*
 +    짐승 대신 동물 / Animal Instead of Beast — Ported for SCP-JP (theme:animal-instead-of-beast rev 5 on scpko).
 +*/
-+/* 日本語フォント (JP localization) */
 +
  /*
      Animal Instead Of Beast CSS Theme
      [2023 Wikidot Theme]
-@@ -83,13 +103,13 @@
+@@ -83,13 +99,13 @@
  
  /* Header */
  div#container-wrap {
@@ -151,7 +147,7 @@ with `python3 review/build_review.py`; verify with
      background-repeat: no-repeat;
      background-position: 1em 3em;
      background-size: 97px 97px;
-@@ -103,7 +123,7 @@
+@@ -103,7 +119,7 @@
  #header h1 a {
      z-index: 5;
  }
@@ -160,7 +156,7 @@ with `python3 review/build_review.py`; verify with
  #header h1 a::before {
      content: "SCP 재단 초상동물학부";
      color: var(--color-1);
-@@ -112,7 +132,7 @@
+@@ -112,7 +128,7 @@
      left: 120px;
      z-index: 5;
  }
@@ -169,7 +165,7 @@ with `python3 review/build_review.py`; verify with
  #header h2::after {
      color: var(--color-3);
      position: absolute;
-@@ -280,14 +300,14 @@
+@@ -280,14 +296,14 @@
      box-shadow: 0 1px 3px rgba(0, 0, 0, .5);
      border: 1px solid var(--color-3);
  }
@@ -186,7 +182,7 @@ with `python3 review/build_review.py`; verify with
  .scp-image-block img {
      box-shadow: 0 0 1px black;
  }
-@@ -441,16 +461,16 @@
+@@ -441,16 +457,16 @@
      border: 2px solid var(--color-1);
      border-radius: 0px;
  }
@@ -206,7 +202,7 @@ with `python3 review/build_review.py`; verify with
  .page-rate-widget-box .rateup,
  .page-rate-widget-box .ratedown {
      background: var(--color-1);
-@@ -460,53 +480,53 @@
+@@ -460,53 +476,53 @@
  .page-rate-widget-box .ratedown a {
      color: var(--color-2);
  }
@@ -270,7 +266,7 @@ with `python3 review/build_review.py`; verify with
  #page-content .rate-box-with-credit-button .fa-info:hover {
      background: var(--color-3);
      border-radius: 0 0 0 0;
-@@ -611,7 +631,14 @@
+@@ -611,7 +627,14 @@
        content: "SCP 재단";
      }
  }
@@ -279,7 +275,7 @@ with `python3 review/build_review.py`; verify with
 +[[/collapsible]]
 +
 +[[include :scp-jp:component:license-box-backend
-+|author=scpko theme:animal-instead-of-beast の作者]]
++|author=c_bonefish]]
 +
 +> **画像・フォントの出典:** 原語版の theme:animal-instead-of-beast の記載に従います。KO 側の添付・ウェブフォントは候補ページに再ホストするか Google Fonts の同等書体に差し替えています。原語版にライセンス表記が無い画像は、投稿前に著者へ確認してください。
 +

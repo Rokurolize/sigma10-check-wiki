@@ -3,7 +3,8 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:magicity-jp — origin CN, population #204 [GOSIGN2-LEDGER (b) row 204]
-- Overall: PASS — NOT PASS at the ledger determination (section (e) register); its one OPEN item re-judged DISPOSITIONED with grounds by the FIX5 wave; go-sign issued 2026-11-17 (COMPLETION-REPORT §10) [GOSIGN2-LEDGER (b); GOSIGN2-LEDGER-SUPPLEMENT (d)]
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 971eaeda0ee6dc2152069d737b88f8c2d2a87b12170d98dc9001921869d7b426); verdict not carried over, re-judgement required
+> verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 15 errors / 2 warns / 1 info (pseudo-ref×15); standing classes dispositioned in register c1 [T1-ROWS row 270; GOSIGN2-LEDGER (b) row 204]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page `hidden-interwiki` (chromium 375/320, webkit 768/375/320), runtime-hotlink site-theme chain only; sample credit-modal (preview-form), `hidden-interwiki` (same 5 combos), `sidebar-not-opening` [webkit 768x1024] (machine line; T3: not reproduced in the webkit 768 sidebar screenshot, drawer open), runtime-hotlink site-theme chain + sample font host; T3 REAL FINDING (sample): table-cell, blockquote and tab-panel body text renders near-black on dark navy panels (the classed-wrapper table cells, "7. 引用と区切り" quotes, "10. タブ" body) and is effectively unreadable at chromium 1366x768; page T3 clean (hamburger present both engines at ≤375, drawer opens); magicity.svg/shujia.png broken = deferred assets; sample webkit 375/320 *-full.png missing (32767px cap). [RENDER-ROWS-RERUN16 (CN9) — supersedes the RENDER-ROWS-2 row for this theme, rule S1]
 - Engine coverage: full (chromium+webkit, both pages) [RENDER-ROWS-RERUN16 (CN9)]
@@ -11,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 203, source LOCALIZE-S2-D]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 203]
 - FIX5 re-judgement: item 66 (class E) DISPOSITIONED — FIX5-CONTRA (no edit, no commit): candidate vs original colour value sets byte-identical (line citations both sides) [GOSIGN2-LEDGER-SUPPLEMENT (a) item 66]
-- Computed against: canonical commit 1869877ffdcd33cb214b8dc421fb39e3de8d7e8d; candidate file pages/theme:magicity-jp.txt sha256:b6d967cec4b7ee64e2d70a1f8944140c713f0a788a7e8ffe596966ff30d9af1b; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 18aa301801827f0f49074aa1b59efea49f598270; candidate file pages/theme:magicity-jp.txt sha256:971eaeda0ee6dc2152069d737b88f8c2d2a87b12170d98dc9001921869d7b426; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -353,6 +354,17 @@ The class asks for the disposition to be walked once more from the third-party p
 ### Multi-wave provenance
 
 The candidate's current state is the product of successive waves, not one pass: the Stage 2 CN port (LOCALIZE-S2-D) produced the localization the T4 lane audited; commit 1869877 (FIX-CREDIT-D, translator attribution normalization) settled the credit block's 翻訳責任者 form; FIX5-CONTRA closed the theme's only blocking item as a no-edit disposition, so no FIX5 commit touches this file — its bytes are exactly the ones the FIX5 wave judged (Provenance). Citations, in place of a changelog: GOSIGN2-LEDGER.md §(e) item 66 and the theme's render/localize rows; GOSIGN2-LEDGER-SUPPLEMENT.md item 66; REPORT-GOSIGN2-FIX5-CONTRA.md §5; RENDER-ROWS-RERUN16 (CN9). The go-sign over that record is what the Status block certifies.
+
+### Post-package repairs (REFRESH3-L)
+
+The items above describe this package as built. The repair recorded below postdates the package; `candidate.txt` has been recopied from the current canonical `pages/theme:magicity-jp.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**FIX-RDISP7, landing `18aa301` (report `R/review-scout/FIX-RDISP7.md`).** Four candidate repairs (+4/−2), postdating this package's build at `1869877` (FIX-CREDIT-D, which the as-built `candidate.txt` matches byte-for-byte).
+- **Item 1 — dropped credit license line restored.** The original's credit:more states its own license (original L31, 授权协议：CC-BY-SA 4.0 International); the candidate's only CC mention was the Sigma-Plus base comment (which licenses the base, not this theme). Restored after the last TASL field and before credit:end-preview as `**ライセンス:** CC BY-SA 4.0 International`, the population's field form (frutiger-aero-jp, another-night-jp).
+- **Item 2 — interwiki frame `type=sidebar` restored.** The original's frame (original L11–17) is `:scp-wiki-cn:component:interwiki-style` with `priority=3, type=sidebar` and two empty no-ops; the candidate's bare frame kept priority=3 but dropped `type=sidebar`, which no record dispositions. `| type=sidebar` is restored between priority=3 and theme=; the empty no-ops were not restored. The restore adds the standing `interwiki-style-param` warn also carried by the two population files that retain the parameter (shancheng-jp, sci-fi-jp) — a warn, not an error.
+- **Item 3 — 'ZCOOL QingKe HuangYou' load added.** The original never names this face (its title face is Smiley Sans Oblique, loaded via the zeoseven import); the name is port-introduced by the disclosed font substitution (Dela Gothic One with ZCOOL QingKe HuangYou fallback in the title stack). The fallback was loaded nowhere in the delivery chain, so `family=ZCOOL+QingKe+HuangYou` was appended to the candidate's one Google Fonts css2 import (L395) — the pastel-skies / cobalt-F3 port-introduced-load remedy. The combined URL serves 200 text/css and declares the family.
+- **Item 4 — fossil design-credit link annotation branch.** The original credits fossil as a design reference (original L40); it is not a dependency (Sigma+ is the base), so the drift repoint does not apply. `（中国語版）` was restored after `[*https://scp-wiki-cn.wikidot.com/theme:fossil 化石テーマ]` at candidate L38, in the betwixt-shancheng sibling form. (The report and README cite this link at original L46 / candidate L44; the bytes place it at L40 / L38, pre-repair numbering — substance unchanged.)
+Checker per the report: error 15 / warn 2 / info 1 → 15 / 3 / 1. All 15 errors are unchanged class (ii)/(iii) pseudo-refs, class (i) 0; the single warn added is Item 2's interwiki-style-param note. The two pre-existing link-target-missing warns (theme:mox-jp, the-melody-left-in-that-night) are unchanged apart from the +2 line shift.
 
 ## Appendix — heuristic and residue adjudication
 

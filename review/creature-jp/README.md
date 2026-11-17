@@ -3,7 +3,8 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:creature-jp — origin KO, population #257 [GOSIGN2-LEDGER (b) row 257]
-- Overall: PASS — NOT PASS at the ledger determination (section (e) register); its one OPEN item re-judged DISPOSITIONED with grounds by the FIX5 wave; go-sign issued 2026-11-17 (COMPLETION-REPORT §10) [GOSIGN2-LEDGER (b); GOSIGN2-LEDGER-SUPPLEMENT (d)]
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 8a700d62103cd2d385c97673ce4df8cd55ad4ed5b4bb7a90e8fb295b9210fe40); verdict not carried over, re-judgement required
+> verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 4 errors / 3 warns / 1 info (hotlink×2, pseudo-ref×2); standing classes dispositioned in register c1 [T1-ROWS row 240; GOSIGN2-LEDGER (b) row 257]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page runtime-hotlink incl. cdn.jsdelivr.net + scpko.wdfiles.com; sample credit-modal (preview-form) + runtime-hotlink (one combo http.cat among other hosts); T3 oversized circular SCP PARK header art wider than the mobile viewport, lettering cut at the edges at 375/320 (both engines). [RENDER-ROWS-2 (RENDER-S2-H (KO2))]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row [RENDER-ROWS-2 row]
@@ -11,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 2 [LOCALIZE-ROWS row 256, source LOCALIZE-S2-F]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 256]
 - FIX5 re-judgement: item 104 (class F) DISPOSITIONED — FIX5-FUNC §7 (no edit): header-art rules candidate L67-92 byte-identical to original L70-95 (diff IDENTICAL); fixed-width circular specimen art is the original's design in both versions [GOSIGN2-LEDGER-SUPPLEMENT (a) item 104]
-- Computed against: canonical commit 1869877ffdcd33cb214b8dc421fb39e3de8d7e8d; candidate file pages/theme:creature-jp.txt sha256:f63912aa79328aaef3cd2068472b866c49e5307d44555ace945709c5ef471c41; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 050817e10987f9070493e17f10ff30b587631985; candidate file pages/theme:creature-jp.txt sha256:8a700d62103cd2d385c97673ce4df8cd55ad4ed5b4bb7a90e8fb295b9210fe40; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 
@@ -200,6 +201,18 @@ The walk re-read the disposition as a reader who did none of the work. Item 104'
 - The Noto Sans JP load is named by no font-family stack in creature's own CSS; the theme does not set the body font. Recorded by the localize lane (pattern 7 APPLIED-partial, "unused" noted); no ledger item charges it. It is not a wholesale font-program substitution: the theme's one display face (FUNFLOWSURVIVORKR) is carried identically.
 - The candidate's self-delivery address /1 names its only code block, which is the stylesheet; the FIX-CODEADDR audit's classes do not touch this theme.
 - The sources.tsv supersession note for this row is in the correct standard form and its cited artifact agrees with it (rev 4 to rev 4, no changes); no correction is recorded for the coordinator.
+
+### Post-package repairs (REFRESH3-L)
+
+The items above describe this package as built. The repair recorded below postdates the package; `candidate.txt` has been recopied from the current canonical `pages/theme:creature-jp.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**FIX-RDISP4, landing `050817e` (report `R/review-scout/FIX-RDISP4.md`).** Five candidate repairs (21 lines changed) plus a new component port, all postdating this package's build at `1869877` (FIX-CREDIT-D, which the as-built `candidate.txt` matches byte-for-byte).
+- **C1 — dropped `:root` override restored verbatim.** The original's base-import module sets `--color-bg: #222; --color-ip: #222; --font: #FFF;` (original L35–39); with no counterpart, the base theme:anniversary-jp's red (#B01 / #000) rendered where charcoal was designed. The five lines now stand byte-identical at the head of the delivered code block (L38–42), after the base import and ahead of the theme's rules.
+- **C2 — dropped collapsible-topbar include restored; component ported with the theme (ruling 4).** The include now stands at its original position (after the documentation gate's `[[/iftags]]`, ahead of the delivery module; L154–159): `[[include component:collapsible-topbar-jp |maxw=1000px |top-color=#222 |top-bg=#FD0 ]]`, the three parameter values the original's own. The new `pages/component:collapsible-topbar-jp.txt` (127 lines) was fetched once from live Wikidot (rev 3, cached at `R/evidence/scpko-collapsible-topbar-rev3.wikitext.txt`) and built in the population's component-port forms: CSS verbatim except the one visible string `content: "둘러보기"` → `content: "メニュー"`; documentation translated; self-references take the `-jp` form; TASL names thd-glasses, source `https://scpko.wikidot.com/component:collapsible-topbar` rev 3, CC BY-SA 3.0, 翻訳責任者 AI (2026), adaptation stated. **This component has no review package of its own yet** — it ports with this theme and is recorded here, not in a separate candidate package.
+- **C3 — three reference links, per-link remedies.** L29 `theme:anniversary` → `[[[theme:anniversary-jp|年末コンテストテーマ]]]` (drift repoint: this file's own tail module imports theme:anniversary-jp, its base); L30 `component:collapsible-topbar` → `[[[component:collapsible-topbar-jp|折り畳み式トップバー]]]` (the dependency ported by C2); L26 `11thanniversarycontest` → `[[[https://scpko.wikidot.com/11thanniversarycontest|韓国語版SCP財団11周年年末コンテスト]]]` (annotation branch — no JP counterpart; the label already opens 韓国語版, so no duplicate annotation appended).
+- **C4 — credit title field aligned.** タイトル (L4) 怪獣公園テーマ replaces the copied Korean 괴수공원 테마; 原題 (L7) keeps the Korean title.
+- **C5 — duplicated Noto Sans JP load removed.** The css2 URL stood both here (L38) and in the imported theme:anniversary-jp (its L66), firing twice per delivery; the candidate's copy was removed, the base's retained (the vanguard-supplement remedy `55c8314`). The delivered face set is identical.
+Checker per the report: plain error 4 / warn 0 / info 1 unchanged (two class-(ii) hotlinks, two class-(iii) pseudo-refs, line-shifted only); links error 4 / warn 3 / info 1 → 4 / 2 / 1 (the contest link's warn disappears once absolutized; the two remaining warns name not-yet-posted candidates, resolving at posting); no new class (i) error. The new component file checks at error 0 / warn 1 / info 1 under `--kind component`.
 
 ## Appendix — residue blocks
 

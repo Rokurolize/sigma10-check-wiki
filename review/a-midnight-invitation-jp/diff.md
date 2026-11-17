@@ -53,7 +53,7 @@ with `python3 review/build_review.py`; verify with
 +**翻訳責任者:** AI
 +**翻訳年:** 2026
 +**原題:** 한밤중의 초대 CSS 테마
-+**著作権者:** 原語版ページの作成者に同じ（scpko の theme:a-midnight-invitation）
++**著作権者:** [[*user c_bonefish]]
 +**作成年:** 2022
 +**初訳時参照リビジョン:** 20
 +**元記事リンク:** [*https://scpko.wikidot.com/theme:a-midnight-invitation 한밤중의 초대 CSS 테마]
@@ -102,7 +102,7 @@ with `python3 review/build_review.py`; verify with
 +サンプルテキスト
 +
 +> + リンク
-+> [# 未訪問リンク] | [[[theme:a-midnight-invitation|訪問済みリンク]]]
++> [# 未訪問リンク] | [[[theme:a-midnight-invitation-jp|訪問済みリンク]]]
  > -----
 ->> 텍스트[[footnote]]똑똑[[/footnote]]
 +>> テキスト[[footnote]]コンコン[[/footnote]]
@@ -272,7 +272,7 @@ with `python3 review/build_review.py`; verify with
 +[[/collapsible]]
 +
 +[[include :scp-jp:component:license-box-backend
-+|author=scpko theme:a-midnight-invitation の作者]]
++|author=c_bonefish]]
 +
 +> **画像・フォントの出典:** 原語版の theme:a-midnight-invitation の記載に従います。KO 側の添付・ウェブフォントは候補ページに再ホストするか Google Fonts の同等書体に差し替えています。原語版にライセンス表記が無い画像は、投稿前に著者へ確認してください。
 +

@@ -3,7 +3,8 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:marchen-jp — origin CN, population #205 [GOSIGN2-LEDGER (b) row 205]
-- Overall: PASS — NOT PASS at the ledger determination (section (e) register); its one OPEN item re-judged DISPOSITIONED with grounds by the FIX5 wave; go-sign issued 2026-11-17 (COMPLETION-REPORT §10) [GOSIGN2-LEDGER (b); GOSIGN2-LEDGER-SUPPLEMENT (d)]
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now acd4eb75690546d598137bfc6910351f46455da40ec3b7bfc6ced4c3126f19f8); verdict not carried over, re-judgement required
+> verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 19 errors / 1 warn / 1 info (pseudo-ref×15, hotlink×4); standing classes dispositioned in register c1 [T1-ROWS row 271; GOSIGN2-LEDGER (b) row 205]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page page-overflow 435px chromium / 436px webkit @320/375, runtime-hotlink site-theme chain + candidate-own cdn.jsdelivr.net (judgment-required), `sidebar-not-opening` [webkit 1366x768]; sample credit-modal (preview-form), same page-overflow (sample T3: cross-cutting static-credit shape), same runtime-hotlink + sample font host, `sidebar-not-opening` [webkit 1366x768]; T3 REAL FINDING on both pages: at webkit 1366x768 the hamburger open control is present but pressing it does not bring the sidebar on-screen, no drawer appears, whereas chromium shows the sidebar open at left (machine line corroborates); mobile ≤375 hamburger opens in both engines; rate/credit/footer/license/JP font fine. [RENDER-ROWS-RERUN16 (CN9) — supersedes the RENDER-ROWS-2 row for this theme, rule S1]
 - Engine coverage: full (chromium+webkit, both pages) [RENDER-ROWS-RERUN16 (CN9)]
@@ -11,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 2 [LOCALIZE-ROWS row 204, source LOCALIZE-S2-D]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 204]
 - FIX5 re-judgement: item 67 (class F) DISPOSITIONED — FIX5-FUNC §2 (no edit): toggle rules candidate L1675-1703 byte-identical to original L865-893 (diff IDENTICAL); failure confined to one engine at one viewport while mobile widths open in both engines [GOSIGN2-LEDGER-SUPPLEMENT (a) item 67]
-- Computed against: canonical commit 379eb44032d541453098c3177e0b1e3fc62c5964; candidate file pages/theme:marchen-jp.txt sha256:fc9cd69d676a560b87c93c99df22e8d2a52d16813bf01ed5dc7b4634b3419e41; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 1f846a6a8462d9654ff916968145490cdefd4522; candidate file pages/theme:marchen-jp.txt sha256:acd4eb75690546d598137bfc6910351f46455da40ec3b7bfc6ced4c3126f19f8; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 Status: complete (R-disp-8 lane, 2026-11-17)
@@ -370,6 +371,15 @@ Second-reviewer walk. The ground is stated in terms a reader who did none of the
 ### Sources.tsv note correction (for the coordinator's harvest)
 
 The marchen row's note claims the original was "superseded upstream since the reference revision". Its own cited artifact (gosign2-lanes/lane-oc-gs-localize-s2-D/diff-marchen-from35.txt) records scp-wiki-cn theme:marchen rev 35 to rev 35, no changes, no intervening revisions. The correct form: "Upstream latest remains rev 35; the S2 artifact records rev35 to rev35, no changes; follow-up diff artifact diff-marchen-from35.txt in the campaign record (K5a-i)".
+
+### Post-package repairs (REFRESH3-L)
+
+The items above describe this package as built. The repair recorded below postdates the package; `candidate.txt` has been recopied from the current canonical `pages/theme:marchen-jp.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**FIX-RDISP8, landing `1f846a6` (report `R/review-scout/FIX-RDISP8.md`).** Two candidate repairs (+2/−2 on this file), postdating this package's build at `379eb44` (FIX4-MOPUP, which the as-built `candidate.txt` matches byte-for-byte).
+- **Item 2 — lumina attribution link absolutized with annotation.** As-built L760 read `この一部のコードは[[[theme:lumina|Lumina]]]から拝借したものです。`; the plain name probes 404 on scp-jp (no theme:lumina there), while the EN original serves 200 at `https://scp-wiki.wikidot.com/theme:lumina`. The sentence credits the EN theme, so the annotation branch applies (not a `-jp` repoint). L760 now reads `この一部のコードは[*https://scp-wiki.wikidot.com/theme:lumina Lumina]（原語版）から拝借したものです。`, the file's own absolutized-link form (the L286 hub link).
+- **Item 3 — parallel link gains its missing annotation.** L286 carries two absolutized CN links; the waldichter-hub link already ends （原語版） while the parallel link did not. The latter now reads `[*https://scp-wiki-cn.wikidot.com/theme:parallel Parallel]（原語版）を基に制作されています。` — target untouched, annotation added in the sibling's form.
+Checker per the report: plain error 17 / warn 0 / info 1 unchanged; links error 17 / warn 1 / info 1 → 17 / 0 / 1, the removed warn being item 2's own dead-link finding (the checker's own message prescribes this remedy); no new class (i) error.
 
 ## Appendix — residue and heuristic blocks
 

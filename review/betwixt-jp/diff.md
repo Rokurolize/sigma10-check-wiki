@@ -8,16 +8,16 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 860 |
-| candidate.txt | 896 |
-| Added | +182 |
-| Review-stage comments | 0 of the +182 added lines |
-| Removed | -158 |
+| candidate.txt | 911 |
+| Added | +196 |
+| Review-stage comments | 0 of the +196 added lines |
+| Removed | -157 |
 | Hunks | 11 |
 
 ```diff
 --- original.txt
 +++ candidate.txt
-@@ -1,153 +1,136 @@
+@@ -1,153 +1,140 @@
 -[[iftags +版式]]
 +[[include theme:parallel-jp]]
 +
@@ -49,19 +49,6 @@ with `python3 review/build_review.py`; verify with
 +@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Abetwixt-jp/5');
  [[/module]]
  
--[[div class="meta-title"]]
--##darkblue|{{**@@//@@**}}##夹缝间 版式
--[[/div]]
--
--[[>]]
--[[module rate]]
--[[/>]]
--
--[[include :scp-wiki-cn:credit:start]]
--页面信息
--[[include :scp-wiki-cn:credit:more]]
--更多页面信息
--[[include :scp-wiki-cn:credit:end]]
 +[[include :scp-jp:component:interwiki-style
 +| priority=1
 +| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Abetwixt-jp/5
@@ -79,6 +66,22 @@ with `python3 review/build_review.py`; verify with
 +**初訳時参照リビジョン:** 3
 +**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:betwixt 夹缝间 版式]
 +[[include :scp-jp:credit:end-preview]]
++
+ [[div class="meta-title"]]
+-##darkblue|{{**@@//@@**}}##夹缝间 版式
+-[[/div]]
+-
+-[[>]]
+-[[module rate]]
+-[[/>]]
+-
+-[[include :scp-wiki-cn:credit:start]]
+-页面信息
+-[[include :scp-wiki-cn:credit:more]]
+-更多页面信息
+-[[include :scp-wiki-cn:credit:end]]
++##darkblue|{{**@@//@@**}}##狭間のテーマ
++[[/div]]
  
  [[div style="display: grid; grid-template-columns: 3fr 5fr; grid-template-areas: 'a b'; max-width: 44rem; margin: auto; align-items: center;"]]
  
@@ -104,7 +107,7 @@ with `python3 review/build_review.py`; verify with
 +
 +[[/div]]
 +
-+これはロケーション「山城」のために制作されたテーマです。[[[https://scp-wiki-cn.wikidot.com/theme:parallel|平行]]]をベースに、[[*user odeo]]制作の[[[https://scp-wiki-cn.wikidot.com/theme:shancheng|山城テーマ]]]と映画『流転の地球2』から美学上の着想を得ています。
++これはロケーション「山城」のために制作されたテーマです。[[[theme:parallel-jp|平行]]]をベースに、[[*user odeo]]制作の[[[https://scp-wiki-cn.wikidot.com/theme:shancheng|山城テーマ（中国語版）]]]と映画『流転の地球2』から美学上の着想を得ています。
  
  [[div class="code"]]
 -@@[[include :scp-wiki-cn:theme:parallel bedrock=*]]@@
@@ -265,7 +268,7 @@ with `python3 review/build_review.py`; verify with
  
  [[div class="blockquote glass"]]
  **{{@@[[div class="blockquote glass"]]@@}}**
-@@ -160,56 +143,56 @@
+@@ -160,56 +147,56 @@
  [[div class="hors"]]
  [[/div]]
  
@@ -343,7 +346,7 @@ with `python3 review/build_review.py`; verify with
  ++ PROLOGUE
  [[/div]]
  [[/code]]
-@@ -217,7 +200,7 @@
+@@ -217,7 +204,7 @@
  [[div class="hors"]]
  [[/div]]
  
@@ -352,7 +355,7 @@ with `python3 review/build_review.py`; verify with
  
  [[div class="bet-year-title"]]
  +* 2044
-@@ -229,21 +212,21 @@
+@@ -229,21 +216,21 @@
  [[/div]]
  [[/code]]
  
@@ -383,7 +386,7 @@ with `python3 review/build_review.py`; verify with
  [[div class="bet-subtitle"]]
  THE NEW THEME PUBLISHMENT
  IN 5 SECONDS
-@@ -252,7 +235,7 @@
+@@ -252,7 +239,7 @@
  
  [[code]]
  [[div class="bet-timebox"]]
@@ -392,7 +395,7 @@ with `python3 review/build_review.py`; verify with
  [[div class="bet-subtitle"]]
  THE NEW THEME PUBLISHMENT
  IN 5 SECONDS
-@@ -263,32 +246,53 @@
+@@ -263,32 +250,64 @@
  [[div class="hors"]]
  [[/div]]
  
@@ -451,11 +454,22 @@ with `python3 review/build_review.py`; verify with
 -@import url("https://fontsapi.zeoseven.com/223/main/result.css");
 +
 +
++div#page-title {
++    display: none;
++}
 +
++div.ctn > img {
++    opacity: 1;
++    transition: ease 0.25s;
++}
++
++div.ctn:hover > img {
++    opacity: 0;
++}
  
  :root {
      --header-height: 15rem;
-@@ -300,8 +304,8 @@
+@@ -300,8 +319,8 @@
      --header-stripes: none;
      --header-gradient: none;
      --header-background-color: var(--basalt-darker-element-color);
@@ -466,7 +480,7 @@ with `python3 review/build_review.py`; verify with
  
      --top-bar-link-color: var(--basalt-main-text-color);
      --search-icon-color: var(--basalt-background-color);
-@@ -394,7 +398,7 @@
+@@ -394,7 +413,7 @@
  }
  
  div#content-wrap {
@@ -475,7 +489,7 @@ with `python3 review/build_review.py`; verify with
      background-size: 100% 16rem, 750px auto, 100% 100%;
      background-repeat: repeat-x, repeat, repeat-x;
      background-position: center top;
-@@ -555,7 +559,7 @@
+@@ -555,7 +574,7 @@
  div#page-title,
  div.meta-title,
  div#page-content h1 {
@@ -484,7 +498,7 @@ with `python3 review/build_review.py`; verify with
      text-shadow: 0.02rem 0.02rem 0.02rem rgb(var(--basalt-background-color)), -0.02rem -0.02rem 0.02rem rgb(var(--basalt-overtone));
  }
  
-@@ -603,7 +607,7 @@
+@@ -603,7 +622,7 @@
  
  div.blockquote.newspaper p {
      text-indent: 2em;
@@ -493,7 +507,7 @@ with `python3 review/build_review.py`; verify with
  }
  
  div.blockquote.newspaper strong {
-@@ -857,4 +861,36 @@
+@@ -857,4 +876,36 @@
      --main-clip-path: polygon(0 0, 0 0, 100% 0, 100% 0, 100% calc(100% - 0.5rem), calc(100% - 0.5rem) 100%, 0 100%, 0 100%);
  
  }

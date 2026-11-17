@@ -8,23 +8,23 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 151 |
-| candidate.txt | 159 |
-| Added | +41 |
-| Review-stage comments | 0 of the +41 added lines |
-| Removed | -33 |
+| candidate.txt | 170 |
+| Added | +46 |
+| Review-stage comments | 0 of the +46 added lines |
+| Removed | -27 |
 | Hunks | 3 |
 
 ```diff
 --- original.txt
 +++ candidate.txt
-@@ -1,45 +1,42 @@
+@@ -1,45 +1,47 @@
 -[[iftags +테마]]
 +[[iftags +テーマ]]
  
 -[[include :scpko:info:start]]
 -**괴수공원 테마**
 +[[include :scp-jp:credit:start-preview]]
-+**タイトル:** 괴수공원 테마
++**タイトル:** 怪獣公園テーマ
 +**翻訳責任者:** AI
 +**翻訳年:** 2026
 +**原題:** 괴수공원 테마
@@ -53,14 +53,14 @@ with `python3 review/build_review.py`; verify with
 +* すべての画像は[[*user thd-glasses]]が制作しました。
  
 -[[[11thanniversarycontest|한국어 위키 11주년 연말경연]]]을 위한 CSS 테마입니다.
-+[[[11thanniversarycontest|韓国語版SCP財団11周年年末コンテスト]]]専用CSSテーマです。
++[[[https://scpko.wikidot.com/11thanniversarycontest|韓国語版SCP財団11周年年末コンテスト]]]専用CSSテーマです。
  
 -참조 테마 및 구성요소:
 -* [[[theme:anniversary|연말경연 테마]]]
 -* [[[component:collapsible-topbar|접히는 상단바]]]
 +参考テーマおよびコンポーネント:
-+* [[[theme:anniversary|年末コンテストテーマ]]]
-+* [[[component:collapsible-topbar|折り畳み式トップバー]]]
++* [[[theme:anniversary-jp|年末コンテストテーマ]]]
++* [[[component:collapsible-topbar-jp|折り畳み式トップバー]]]
  
 -[[/iftags]]
 +----
@@ -76,22 +76,21 @@ with `python3 review/build_review.py`; verify with
 -[[module CSS show="true"]]
 -@import url(https://scpko.wdfiles.com/local--code/theme:anniversary/1);
 -
--:root {
--  --color-bg: #222;
--  --color-ip: #222;
--  --font: #FFF;
--}
--[[/module]]
--
--[[module CSS show="true"]]
 +[[collapsible show="ソースコードを表示" hide="ソースコードを閉じる"]]
 +[[code type="css"]]
-+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+ :root {
+   --color-bg: #222;
+   --color-ip: #222;
+   --font: #FFF;
+ }
+-[[/module]]
+ 
+-[[module CSS show="true"]]
 +/* ===== creature ===== */
  @font-face {
      font-family: 'FUNFLOWSURVIVORKR';
      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/FUNFLOWSURVIVORKR.woff2') format('woff2');
-@@ -93,7 +90,7 @@
+@@ -93,7 +95,7 @@
    width: 400px;
    height: 400px;
    border-radius: 205px;
@@ -100,7 +99,7 @@ with `python3 review/build_review.py`; verify with
    border: 5px solid #222;
    z-index: -2;
  }
-@@ -147,5 +144,16 @@
+@@ -147,5 +149,22 @@
  #top-bar a, #login-status, #login-status a {
    color: #222;
  }
@@ -108,6 +107,12 @@ with `python3 review/build_review.py`; verify with
 +[[/collapsible]]
 +
 +[[/iftags]]
++
++[[include component:collapsible-topbar-jp
++|maxw=1000px
++|top-color=#222
++|top-bg=#FD0
++]]
 +
 +[[module css]]
 +@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aanniversary-jp/1");

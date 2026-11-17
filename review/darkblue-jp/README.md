@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:darkblue-jp — origin CN, population #179 [GOSIGN2-LEDGER (b) row 179]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 0e1659f1f61abc9ad4a108a0e11a6515e603a8f0fbde8b1ab851d0989f78bbe3); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 1a7a096c0904bccca2bd742e556640620f1a3f53f5771743f02d5668022578e4); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 5 errors / 1 warn / 2 infos (pseudo-ref×5); standing classes dispositioned in register c1 [T1-ROWS row 214; GOSIGN2-LEDGER (b) row 179]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page T2 no machine verdict (exit 2, no summary); sample page-overflow 387–389px@320/375 + sidebar-unreachable at ≤375 (both engines) + runtime-hotlink site-theme chain. [RENDER-ROWS-2 (RENDER-S2-E (CN4))]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 4 [LOCALIZE-ROWS row 178, source LOCALIZE-S2-D]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 178]
 - FIX5 re-judgement: items 50 (class B) FIXED, 51 (class D) FIXED, 52 (class F) DISPOSITIONED — FIX5-FURNB, commit 25bb0b4: duplicate bare Rate block removed; darkblue class-D item fixed (per lane commit) FIX5-FURNB (no edit): theme-owned off-canvas toggle (#side-bar:is(:hover,:focus-within) plus tab pseudo-elements) byte-identical to the original over the toggle regions (diff empty); the machine check only looks for .open-menu a; T3 recorded no visual finding [GOSIGN2-LEDGER-SUPPLEMENT (a) items 50–52]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:darkblue-jp.txt sha256:0e1659f1f61abc9ad4a108a0e11a6515e603a8f0fbde8b1ab851d0989f78bbe3; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 050817e10987f9070493e17f10ff30b587631985; candidate file pages/theme:darkblue-jp.txt sha256:1a7a096c0904bccca2bd742e556640620f1a3f53f5771743f02d5668022578e4; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 
@@ -221,6 +221,14 @@ Item 52's ground passes the third-party test in the same way raisa's did: it nam
 - The `type=sidebar` argument drop on both interwiki includes is the localize lane's recorded pattern 6 application (the JP component accepts only priority and theme), not drift.
 - The head module and interwiki includes load the same two files twice by design of the original; the lane's rollup records the merge as a posting-time cleanup note.
 - The sources.tsv supersession note for this row is wrong, in the ambrose shape: the note claims "original superseded upstream since the reference revision", but its own cited artifact (diff-darkblue-from3.txt) records rev 3 to rev 3, no changes. Correct form, recorded for the coordinator's harvest correction (this lane does not edit sources.tsv): "Upstream latest remains rev 3; the S2 artifact records rev3 to rev3, no changes; follow-up diff artifact diff-darkblue-from3.txt in the campaign record (K5a-i)".
+
+### Post-package repairs (REFRESH3-L)
+
+The items above describe this package as built. The repair recorded below postdates the package; `candidate.txt` has been recopied from the current canonical `pages/theme:darkblue-jp.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**FIX-RDISP4, landing `050817e` (report `R/review-scout/FIX-RDISP4.md`).** One candidate repair (+9 lines), postdating this package's build at `b5cb724`.
+- **D1 — scpnet-interwiki frame rules restored verbatim.** The two rules (original L1664–1672) now stand in the candidate's code block at the original's corresponding position — after the `:is(#side-bar, #interwiki) ::before` rule and before `a.close-menu` (candidate L1662–1670) — byte-identical to the original's nine lines including spacing (confirmed by direct comparison). Nothing else in the file changed.
+Checker per the report: plain error 5 / warn 0 / info 1 → 5 / 2 / 1 and links error 5 / warn 1 / info 1 → 5 / 3 / 1. The five errors are the identical class (iii) pseudo-refs; the two added warns are the checker's standing `interwiki-touched` note, one per restored rule (rok-gov-base-jp carries the same warn), and no class (i) error is new.
 
 ## Appendix — residue blocks
 
