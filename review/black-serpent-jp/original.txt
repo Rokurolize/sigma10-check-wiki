@@ -1,0 +1,285 @@
+[[iftags +theme]]
+[[module CSS]]
+@import url("https://nu-scptheme.github.io/Black-Highlighter/css/min/normalize.min.css");
+@import url("https://nu-scptheme.github.io/Black-Highlighter/css/min/black-highlighter.min.css");
+[[/module]]
+
+@@ @@
+
+[[>]]
+**Rating:**
+[[module Rate]]
+**Rating w/ Credit Module:**
+[[/>]]
+[[include :scp-wiki:info:start]]
+Info about your page.
+[[include :scp-wiki:info:more]]
+More information about your page.
+[[include :scp-wiki:info:end]]
+
+This is a Black Highlighter-based theme by [[*user Jerden]]. This was created as an alternative for the [[[theme:wanderers| Classic Wanderer's Library theme]]], specifically for the [[[serpent-s-hand-hub|Serpent's Hand]]] Group of Interest and the [[[Now, the Serpent]]] series. The header image was originally created by [[*user Zyn]].
+
+[[image https://scp-wiki.wdfiles.com/local--files/theme%3Ablack-highlighter-theme/black-highlighter-logo.svg]]
+
+------
+
+You need to import the Black Highlighter theme as well in order to use this theme. To learn more about the Black Highlighter theme, go [https://scp-wiki.wikidot.com/theme:black-highlighter-theme here].
+
+**To import this theme, add this to your page:**
+[[div class="code"]]
+@@[[include :scp-wiki:theme:black-highlighter-theme]]@@
+@@[[include :scp-wiki:theme:black-serpent]]@@
+[[/div]]
+
+----
+
+++* Theme Colors:
+[[include :scp-wiki:component:theme-squares -=-
+| color1-name=Theme Color
+| color1-variable=--medium-accent
+| color1-info=(0, 100, 55)
+| color1-has-light-text=1
+| color2-name=Dark Accent
+| color2-variable=--dark-accent
+| color2-info=(20, 55, 20)
+| color2-has-light-text=1
+| subcolor3-name=Bright Accent
+| subcolor3-variable=--bright-accent
+| subcolor3-info=(0, 125, 0)
+| subcolor3-has-light-text=1
+| subcolor4-name=Pale Accent
+| subcolor4-variable=--pale-accent
+| subcolor4-info=(45, 110, 44)
+| subcolor4-has-light-text=1
+| subcolor5-name=Alternate Accent
+| subcolor5-variable=--alt-accent
+| subcolor5-info=(71, 92, 75)
+| subcolor5-has-light-text=1
+| subcolor6-name=Dark Grey
+| subcolor6-variable=--dark-gray-monochrome
+| subcolor6-info=(48, 48, 52)
+| subcolor6-has-light-text=1
+| subcolor7-name=Pale Grey
+| subcolor7-variable=--pale-gray-monochrome
+| subcolor7-info=(244, 244, 244)
+]]
+
+[[=]]
+[[span style="font-family: var(--header-font); font-size: 3em;"]]THE HEADER FONT IS LONDRINA OUTLINE[[/span]]
+[[span style="font-family: var(--title-font); font-size: 2em;"]]The Title font is Federo[[/span]]
+[[/=]]
+----
+
+Horizontal rules are created with 5 hyphens "- - - - -" and extends across the entire page if not placed inside anything (eg a blockquote). The line separating pages of this document are horizontal rules.[[footnote]] This is a footnote. [[/footnote]]
+
+Titles can be created by putting between 1 and 6 plus signs ("+") at the start of the line.
+
+[[collapsible show="+ Titles!" hide="- Titles!"]]
+[[toc]]
++ First Title
+++ Second Title
++++ Third Title
+++++ Fourth Title
++++++ Fifth Title
+++++++ Sixth Title
+[[/collapsible]]
+
+------
+
+[[[This link doesn't exist.]]]
+[https://scp-wiki.wikidot.com/now-the-serpent This link does exist.]
+[[[theme:black-serpent| You're already here.]]]
+
+@@ @@
+
+[[collapsible show="+ Click me, this is a Collapsible" hide="- Click to Hide"]]
+Surprise, there's a snake inside!
+[[image Serpents-Hand.svg height="250px"]]
+[[/collapsible]]
+
+@@ @@
+
+[[tabview]]
+[[tab Tabulator]]
+This is a tab view.
+[[/tab]]
+[[tab Tabulation]]
+Hey look, more text here.
+
+How quaint.
+[[/tab]]
+[[tab Long Tab]]
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+[[/tab]]
+
+[[tab Longer Tab]]
+This is also a long tab. It contains a lot of text.
+
+This is also a long tab. It contains a lot of text.
+
+This is also a long tab. It contains a lot of text.
+
+This is also a long tab. It contains a lot of text.
+
+This is also a long tab. It contains a lot of text.
+
+This is also a long tab. It contains a lot of text.
+
+This is also a long tab. It contains a lot of text.
+
+This is also a long tab. It contains a lot of text.
+
+This is also a long tab. It contains a lot of text.
+
+This is also a long tab. It contains a lot of text.
+
+This is also a long tab. It contains a lot of text.
+
+This is also a long tab. It contains a lot of text.
+
+This is also a long tab. It contains a lot of text.
+
+This is also a long tab. It contains a lot of text.
+[[/tab]]
+
+[[tab Empty Tab]]
+[[/tab]]
+[[/tabview]]
+
+@@ @@
+
+||~ This is a ||~ Table ||
+|| You should know || how to make these ||
+|||| Already ||
+
+@@ @@
+
+> This is a blockquote, created by putting "> " at the start of every line.
+> More text.
+> ------
+> That's a horizontal rule.
+>> Nested blockquotes
+
+@@ @@
+[[collapsible show="+ Alternate ways to create blockquotes" hide="- Alternate blockquotes"]]
+[[div class="blockquote"]]
+Green Border blockquote:
+@@[[div class="blockquote"]]@@
+Write text here
+@@[[/div]]@@
+[[/div]]
+
+[[div class="blockquote" style="border-left: 5px solid #823f3f"]]
+Red Border blockquote:
+@@[[div class="blockquote" style="border-left: 5px solid #823f3f"]]@@
+Write text here
+@@[[/div]]@@
+[[/div]]
+
+[[div class="blockquote" style="border-left: 5px solid #5c95e6"]]
+Blue Border blockquote:
+@@[[div class="blockquote" style="border-left: 5px solid #5c95e6"]]@@
+Write text here
+@@[[/div]]@@
+[[/div]]
+
+[[div class="blockquote" style="border-left: 1px solid #302f34"]]
+No Border blockquote:
+@@[[div class="blockquote" style="border-left: 1px solid #302f34"]]@@
+Write text here
+@@[[/div]]@@
+[[/div]]
+[[/collapsible]]
+
+@@ @@
+
+[[collapsible show="+ Change Header Title and Subtitle back to Wanderer's Library: The Garden Is The Serpent's Place" hide="- Put this into a CSS Block:"]]
+@@  --header-title: "            WANDERER'S LIBRARY";@@
+@@  --header-subtitle: "          The Garden Is The Serpent's Place";@@
+[[/collapsible]]
+
+@@ @@
+
+[[footnoteblock]]
+------
+
+[[=]]
+**Source Code:**
+[[/=]]
+
+[[collapsible show="+ Show theme code" hide="- Hide theme code"]]
+[[code type="css"]]
+@import url("https://api.fonts.coollabs.io/css2?family=Londrina+Outline&display=swap");
+@import url("https://api.fonts.coollabs.io/css2?family=Farro&display=swap");
+
+:root {
+    /* S-CSS-P Integration */
+    --theme-base: "nuscp";
+    --theme-id: "black-serpent";
+    --theme-name: "Black Serpent Theme";
+
+    /* ===THEME COLORS=== */
+    /* theme color */
+    --medium-accent: 0, 100, 55;
+    /* dark theme color */
+    --dark-accent: 20, 55, 20;
+    /* bright theme color, the "default" accent color*/
+    --bright-accent: 0, 125, 0;
+    /* pale theme color, for visited links */
+    --pale-accent: 45, 110, 44;
+    /* alternate accent color, for newpage links */
+    --alt-accent: 71, 92, 75;
+
+    /* ===THEME HEADER=== */
+    --logo-image: url("https://scp-wiki.wikidot.com/local--files/theme:black-serpent/Serpents-Hand.svg");
+    --header-title: "SERPENT'S HAND";
+    --header-h1-font-size: calc(var(--base-font-size) * (2.4));
+    --header-subtitle: "The Anomalous is on the Rise";
+    --header-h2-font-size: calc(var(--base-font-size)*1);
+    --header-font: 'Londrina Outline';
+    --title-font: 'Farro';
+}
+
+/* ===PAGE CONTENT=== */
+#main-content {
+    --tables-header-bg: var(--medium-accent);
+}
+
+:is(blockquote, div.blockquote) {
+       border: 1px solid rgb(var(--dark-gray-monochrome));  
+       border-left: 5px solid rgb(var(--bright-accent));
+       background-color: rgb(var(--pale-gray-monochrome));
+}
+
+[[/code]]
+[[/collapsible]]
+----
+[[include :scp-wiki:component:license-box-theme
+|author=Jerden]]
+=====
+> **Filename:** Serpents-Hand.svg
+> **Name:** Serpent's Hand Logo
+> **Author:** [[*user Zyn]], modified by [[*user Jerden]]
+> **License:** CC BY-SA 3.0
+> **Source Link:** [[[serpent-s-hand-hub|Serpent's Hand Hub]]]
+=====
+[[include :scp-wiki:component:license-box-end]]
+[[/iftags]]
+
+[[module css]]
+@import url("https://scp-wiki.wikidot.com//local--code/theme%3Ablack-serpent/1")
+[[/module]]
