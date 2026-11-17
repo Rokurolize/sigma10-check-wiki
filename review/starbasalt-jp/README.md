@@ -391,6 +391,10 @@ classifier blocks, 9 specific and 2 heuristic, 0 residue).
   (fb43564) touches L7 and L11, not the stylesheet. Both closures are
   confirmed from the bytes, not from the ledger.
 
+### The post-verdict repair, recorded — FIX-NAVLA2, canonical commit fb43564
+
+The "only post-verdict change" just described is the navla2 stylesheet-address repair: FIX-NAVLA2 (report `R/review-scout/FIX-NAVLA2.md`, section 3; flagged by FIX-NAVLA.md item 2), landed in canonical commit `fb435643733dfd93d8dfa698861e4a59921d8f0f` ("pages: stylesheet-address repairs in four themes", 2026-11-17). The candidate has three code blocks — a 98 B title sample at /1, a 39 B icon sample at /2, and the 24,066 B stylesheet at /3 — while both delivery lines named /1; the stylesheet was the only copy and nothing delivered it. The repair changed two addresses only: the interwiki-style frame's `theme=` (candidate L7) and the head module's `@import` (candidate L11) now read `local--code/theme%3Astarbasalt-jp/3`. The draft-host probe served /3 at 24,066 B (the Star Basalt stylesheet) against /1's 98 B; the T1 checker's 1/1/1 finding set was unchanged apart from the L11 pseudo-ref's block number, class (i) errors 0 before and after. This package was rebuilt from the post-repair canonical bytes: `candidate.txt` recopied from `pages/theme:starbasalt-jp.txt` (its hash already matched the canonical file), `diff.md` and the stamp regenerated. The regenerated stamp reads STALE with the current file sha256 — no re-judgement is fabricated and the frozen GOSIGN2 ledger remains the verdict record; the items 86/87 closures above stand on the bytes independently of that word.
+
 ## Change set outside the two diffed files
 
 The navla2 repair (fb43564) is inside the candidate file and visible in

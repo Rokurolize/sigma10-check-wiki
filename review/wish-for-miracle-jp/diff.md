@@ -196,7 +196,7 @@ adjudicated explanation.
 +**作成年:** 2025
 +**初訳時参照リビジョン:** 67
 +**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:wish-for-miracle ソース]
-+**使用フォント:** Google Fonts 配信（Noto Serif JP、Noto Sans JP、ZCOOL XiaoWei、Playfair Display、Special Elite、Archivo、IBM Plex Sans、Source Code Pro。いずれも SIL Open Font License）。テーマのヘッダー画像・ロゴ等の素材は原作者（Kcorena、Agent FS）によるもの（原語版のライセンス表記 CC BY-SA 4.0 International に従う）
++**使用フォント:** Google Fonts 配信（Noto Serif JP、Noto Sans JP、ZCOOL XiaoWei、Playfair Display、Special Elite、Archivo、IBM Plex Sans、Source Code Pro。Special Elite は Apache License 2.0、その他はいずれも SIL Open Font License）。テーマのヘッダー画像・ロゴ等の素材は原作者（Kcorena、Agent FS）によるもの（原語版のライセンス表記 CC BY-SA 4.0 International に従う）
 +[[include :scp-jp:credit:end-preview]]
  
 -++ 采访记录 - 这是什么？

@@ -35,7 +35,7 @@ adjudicated explanation.
 | # | Section | Original | Candidate | +/− | Auto-class | Gist |
 |---|---|---|---|---|---|---|
 | 1 | 1 | — | 1–21 | +21/−0 | supplement | [[module CSS]] |
-| 2 | 1 | 2–2 | 23–23 | +1/−1 | residual | [[include theme:basalt wide=a\|hidetitle={$hidetitle}\|centertitle={$centertitl… |
+| 2 | 1 | 2–2 | 23–23 | +1/−1 | residual | [[include theme:basalt-jp wide=a\|hidetitle={$hidetitle}\|centertitle={$centert… |
 | 3 | 1 | 4–4 | 25–1544 | +1520/−1 | supplement | このテーマは[[*user Jonuarl Reden]]が玄武岩および[[[gpexpress\|Gpエクスプレス]]]のテーマを基に制作したもので、[[… |
 | 4 | 2 | 15–15 | 1555–1555 | +1/−1 | residual | --header-logo: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3A… |
 | 5 | 3 | 52–52 | 1592–1592 | +1/−1 | residual | --light-logo: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Agp… |
@@ -73,7 +73,7 @@ adjudicated explanation.
 +**翻訳責任者:** AI
 +**翻訳年:** 2026
 +**原題:** 亚空间传输时代 版式
-+**著作権者:** 原語版ページの作成者に同じ（scp-wiki-cn の theme:gp-refresh）
++**著作権者:** Jonuarl Reden
 +**作成年:** 2025
 +**初訳時参照リビジョン:** 14
 +**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:gp-refresh 亚空间传输时代 版式]
@@ -81,7 +81,7 @@ adjudicated explanation.
 +
  [[div style="display: none;"]]
 -[[include :scp-wiki-cn:theme:basalt wide=a|hidetitle={$hidetitle}|centertitle={$centertitle}|acs-itemnum={$acs-itemnum}|disable-acs-anim={$disable-acs-anim}]]
-+[[include theme:basalt wide=a|hidetitle={$hidetitle}|centertitle={$centertitle}|acs-itemnum={$acs-itemnum}|disable-acs-anim={$disable-acs-anim}]]
++[[include theme:basalt-jp wide=a|hidetitle={$hidetitle}|centertitle={$centertitle}|acs-itemnum={$acs-itemnum}|disable-acs-anim={$disable-acs-anim}]]
  [[/div]]
 -[[module css]]
 +
@@ -1943,7 +1943,7 @@ adjudicated explanation.
  
 -@@ @@
 +[[include :scp-jp:component:license-box-backend
-+|author=scp-wiki-cn theme:gp-refresh の作者]]
++|author=Jonuarl Reden]]
  
 -[[tabview]]
 -[[tab 分页]]

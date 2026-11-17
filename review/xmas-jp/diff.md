@@ -8,10 +8,10 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 282 |
-| candidate.txt | 331 |
-| Added | +108 |
-| Review-stage comments | 0 of the +108 added lines |
-| Removed | -59 |
+| candidate.txt | 339 |
+| Added | +107 |
+| Review-stage comments | 0 of the +107 added lines |
+| Removed | -50 |
 | Hunks | 6 |
 
 ```diff
@@ -200,21 +200,23 @@ with `python3 review/build_review.py`; verify with
      background-size: 720px;
      animation: snowThree 21s infinite linear;
      filter: blur(2.4px);
-@@ -247,36 +262,70 @@
+@@ -247,36 +262,78 @@
  }
  [[/code]]
  
-+[[/collapsible]]
-+
- [[module css]]
+-[[module css]]
 -@import url("https://scp-wiki.wdfiles.com/local--code/theme%3Axmas/1");
 -@import url("https://scp-wiki.wdfiles.com/local--code/theme%3Axmas/2");
 -@import url("https://scp-wiki.wdfiles.com/local--code/theme%3Axmas/3");
+-[[/module]]
++[[/collapsible]]
++
++[[module css]]
 +@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Axmas-jp/1");
 +@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Axmas-jp/2");
 +@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Axmas-jp/3");
- [[/module]]
- 
++[[/module]]
++
 +[[include :scp-jp:component:license-box-backend
 +|author=Dc_Yerko]]
 +
@@ -254,41 +256,38 @@ with `python3 review/build_review.py`; verify with
 +> **出典:** 原語版（[[[https://scp-wiki.wikidot.com/theme:xmas|theme:xmas]]]、rev. 51）の添付ファイル
 +
 +[[include :scp-jp:component:license-box-end]]
-+
+ 
  [[/iftags]]
  
  [!-- {$xmas-header}
-+[!-- --]
-+
-+[!-- {$xmas-snow}
-+[!-- --]
-+
-+[!-- {$xmas-header-bhl}
  [[module css]]
 -@import url("https://scp-wiki.wdfiles.com/local--code/theme%3Axmas/1");
++@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Axmas-jp/1");
+ [[/module]]
+ [!-- --]
+ 
+ [!-- {$xmas-snow}
+ [[module css]]
+-@import url("https://scp-wiki.wdfiles.com/local--code/theme%3Axmas/2");
+-@import url("https://scp-wiki.wdfiles.com/local--code/theme%3Axmas/3");
++@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Axmas-jp/2");
++@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Axmas-jp/3");
+ [[/module]]
+ [!-- --]
+ 
+ [!-- {$xmas-header-bhl}
+ [[module css]]
+-@import url("https://scp-wiki.wdfiles.com/local--code/theme%3Axmas//4");
 +@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Axmas-jp/4");
  [[/module]]
  [!-- --]
  
--[!-- {$xmas-snow}
-+[!-- {$xmas-snow-bhl}
+ [!-- {$xmas-snow-bhl}
  [[module css]]
--@import url("https://scp-wiki.wdfiles.com/local--code/theme%3Axmas/2");
 -@import url("https://scp-wiki.wdfiles.com/local--code/theme%3Axmas/3");
+-@import url("https://scp-wiki.wdfiles.com/local--code/theme%3Axmas/5");
++@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Axmas-jp/3");
 +@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Axmas-jp/5");
  [[/module]]
  [!-- --]
--
--[!-- {$xmas-header-bhl}
--[[module css]]
--@import url("https://scp-wiki.wdfiles.com/local--code/theme%3Axmas//4");
--[[/module]]
--[!-- --]
--
--[!-- {$xmas-snow-bhl}
--[[module css]]
--@import url("https://scp-wiki.wdfiles.com/local--code/theme%3Axmas/3");
--@import url("https://scp-wiki.wdfiles.com/local--code/theme%3Axmas/5");
--[[/module]]
--[!-- --]
 ```

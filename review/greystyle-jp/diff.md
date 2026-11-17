@@ -15,68 +15,72 @@ adjudicated explanation.
 | | Lines |
 |---|---|
 | original.txt | 2413 |
-| candidate.txt | 3879 |
-| Added | +2314 |
-| Review-stage comments | 0 of the +2314 added lines |
-| Removed | -848 |
-| Changed | 3162 |
-| Change blocks | 27 |
-| Diff sections (context 3) | 18 |
+| candidate.txt | 3900 |
+| Added | +2319 |
+| Review-stage comments | 0 of the +2319 added lines |
+| Removed | -832 |
+| Changed | 3151 |
+| Change blocks | 29 |
+| Diff sections (context 3) | 17 |
 
 ## Changed lines by auto-class (heuristic)
 
 | Auto-class | Blocks | Changed lines |
 |---|---|---|
 | mechanical | 13 | 26 |
-| supplement | 3 | 2293 |
-| residual | 11 | 843 |
+| supplement | 7 | 2307 |
+| residual | 9 | 818 |
 
 ## Change-block index
 
 | # | Section | Original | Candidate | +/− | Auto-class | Gist |
 |---|---|---|---|---|---|---|
-| 1 | 1 | 2–4 | 2–4 | +3/−3 | residual | フラグメント: |
-| 2 | 1 | 7–11 | 7–10 | +4/−5 | supplement | [[iftags +テーマ]] |
+| 1 | 1 | 2–4 | 2–6 | +5/−3 | supplement | フラグメント: |
+| 2 | 1 | 7–11 | 9–12 | +4/−5 | supplement | [[iftags +テーマ]] |
 | 3 | 1 | 13–800 | — | +0/−788 | residual | [[include :scp-wiki:component:interwiki-style |
-| 4 | 2 | — | 45–45 | +1/−0 | supplement | @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;7… |
-| 5 | 3 | 842–842 | 54–54 | +1/−1 | residual | --body-font: 'Oxygen', 'Noto Sans JP', sans-serif; |
-| 6 | 4 | 933–933 | 145–145 | +1/−1 | residual | --logo-image: url("https://scp-wiki.wikidot.com/local--files/theme%3Agreystyl… |
-| 7 | 5 | 1006–1006 | 218–218 | +1/−1 | mechanical | (blank lines only) |
-| 8 | 6 | 1071–1071 | 283–283 | +1/−1 | mechanical | (blank lines only) |
-| 9 | 7 | 1084–1084 | 296–296 | +1/−1 | mechanical | (blank lines only) |
-| 10 | 7 | 1086–1086 | 298–298 | +1/−1 | mechanical | (blank lines only) |
-| 11 | 8 | 1111–1111 | 323–323 | +1/−1 | mechanical | (blank lines only) |
-| 12 | 8 | 1113–1113 | 325–325 | +1/−1 | mechanical | (blank lines only) |
-| 13 | 8 | 1115–1115 | 327–327 | +1/−1 | mechanical | (blank lines only) |
-| 14 | 9 | 1173–1173 | 385–385 | +1/−1 | mechanical | (blank lines only) |
-| 15 | 9 | 1178–1178 | 390–390 | +1/−1 | mechanical | (blank lines only) |
-| 16 | 10 | 1275–1275 | 487–487 | +1/−1 | mechanical | (blank lines only) |
-| 17 | 11 | 1287–1287 | 499–499 | +1/−1 | mechanical | (blank lines only) |
-| 18 | 12 | 1346–1346 | 558–558 | +1/−1 | mechanical | (blank lines only) |
-| 19 | 13 | 1747–1747 | 959–959 | +1/−1 | mechanical | (blank lines only) |
-| 20 | 14 | 1962–1962 | 1174–1174 | +1/−1 | residual | --memo-logo: url(https://scp-wiki.wikidot.com/local--files/theme%3Agreystyle/… |
-| 21 | 14 | 1968–1968 | 1180–1180 | +1/−1 | residual | --memo-logo: url(https://scp-wiki.wikidot.com/local--files/theme%3Agreystyle/… |
-| 22 | 14 | 1974–1974 | 1186–1186 | +1/−1 | residual | --memo-logo: url(https://scp-wiki.wikidot.com/local--files/theme%3Agreystyle/… |
-| 23 | 15 | 2020–2022 | 1232–1234 | +3/−3 | residual | --logo1-bg: url("https://scp-wiki.wikidot.com/local--files/theme%3Agreystyle/… |
-| 24 | 16 | 2079–2081 | 1291–3570 | +2280/−3 | supplement | --proposal-logo1: url("https://scp-wiki.wikidot.com/local--files/theme%3Agrey… |
-| 25 | 17 | 2349–2349 | — | +0/−1 | residual | /* WIDE */ |
-| 26 | 18 | 2382–2385 | 3870–3873 | +4/−4 | residual | [[include :scp-jp:component:centered-header-bhl]] |
-| 27 | 18 | 2387–2409 | 3875–3875 | +1/−23 | residual | [[iftags +テーマ]] |
+| 4 | 2 | — | 47–47 | +1/−0 | supplement | @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;7… |
+| 5 | 3 | 842–842 | 56–56 | +1/−1 | residual | --body-font: 'Oxygen', 'Noto Sans JP', sans-serif; |
+| 6 | 4 | 933–933 | 147–147 | +1/−1 | residual | --logo-image: url("https://scp-wiki.wikidot.com/local--files/theme%3Agreystyl… |
+| 7 | 5 | 1006–1006 | 220–220 | +1/−1 | mechanical | (blank lines only) |
+| 8 | 6 | 1071–1071 | 285–285 | +1/−1 | mechanical | (blank lines only) |
+| 9 | 7 | 1084–1084 | 298–298 | +1/−1 | mechanical | (blank lines only) |
+| 10 | 7 | 1086–1086 | 300–300 | +1/−1 | mechanical | (blank lines only) |
+| 11 | 8 | 1111–1111 | 325–325 | +1/−1 | mechanical | (blank lines only) |
+| 12 | 8 | 1113–1113 | 327–327 | +1/−1 | mechanical | (blank lines only) |
+| 13 | 8 | 1115–1115 | 329–329 | +1/−1 | mechanical | (blank lines only) |
+| 14 | 9 | 1173–1173 | 387–387 | +1/−1 | mechanical | (blank lines only) |
+| 15 | 9 | 1178–1178 | 392–392 | +1/−1 | mechanical | (blank lines only) |
+| 16 | 10 | 1275–1275 | 489–489 | +1/−1 | mechanical | (blank lines only) |
+| 17 | 11 | 1287–1287 | 501–501 | +1/−1 | mechanical | (blank lines only) |
+| 18 | 12 | 1346–1346 | 560–560 | +1/−1 | mechanical | (blank lines only) |
+| 19 | 13 | 1747–1747 | 961–961 | +1/−1 | mechanical | (blank lines only) |
+| 20 | 14 | 1962–1962 | 1176–1176 | +1/−1 | residual | --memo-logo: url(https://scp-wiki.wikidot.com/local--files/theme%3Agreystyle/… |
+| 21 | 14 | 1968–1968 | 1182–1182 | +1/−1 | residual | --memo-logo: url(https://scp-wiki.wikidot.com/local--files/theme%3Agreystyle/… |
+| 22 | 14 | 1974–1974 | 1188–1188 | +1/−1 | residual | --memo-logo: url(https://scp-wiki.wikidot.com/local--files/theme%3Agreystyle/… |
+| 23 | 15 | 2020–2022 | 1234–1236 | +3/−3 | residual | --logo1-bg: url("https://scp-wiki.wikidot.com/local--files/theme%3Agreystyle/… |
+| 24 | 16 | 2079–2081 | 1293–3572 | +2280/−3 | supplement | --proposal-logo1: url("https://scp-wiki.wikidot.com/local--files/theme%3Agrey… |
+| 25 | 17 | 2382–2389 | 3873–3876 | +4/−8 | residual | [[include :scp-jp:component:centered-header-bhl]] |
+| 26 | 17 | 2393–2393 | 3880–3880 | +1/−1 | supplement | @import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Agreystyl… |
+| 27 | 17 | 2399–2399 | 3886–3886 | +1/−1 | supplement | @import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Agreystyl… |
+| 28 | 17 | 2405–2405 | 3892–3892 | +1/−1 | supplement | @import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Agreystyl… |
+| 29 | 17 | 2409–2409 | 3896–3896 | +1/−1 | residual | [[iftags +テーマ]] |
 
 ## Full diff
 
 <details>
-<summary>Section 1 — original 1–803 · candidate 1–14 · +7/−796 · residual, supplement</summary>
+<summary>Section 1 — original 1–803 · candidate 1–16 · +9/−796 · residual, supplement</summary>
 
 ```diff
-@@ -1,803 +1,14 @@
+@@ -1,803 +1,16 @@
  [!--
 -Fragments:
 -https://scp-wiki.wikidot.com/fragment:greystyle-0
 -https://scp-wiki.wikidot.com/fragment:greystyle-1
 +フラグメント:
-+https://scp-jp.wikidot.com/fragment:greystyle-0
-+https://scp-jp.wikidot.com/fragment:greystyle-1
++https://sigma10-jp-test.wdfiles.com/local--code/theme%3Agreystyle-jp/1
++https://sigma10-jp-test.wdfiles.com/local--code/theme%3Agreystyle-jp/2
++https://sigma10-jp-test.wdfiles.com/local--code/theme%3Agreystyle-jp/3
++https://sigma10-jp-test.wdfiles.com/local--code/theme%3Agreystyle-jp/4
  --]
  
 -[[iftags +theme]]
@@ -885,10 +889,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 2 — original 831–836 · candidate 42–48 · +1/−0 · supplement</summary>
+<summary>Section 2 — original 831–836 · candidate 44–50 · +1/−0 · supplement</summary>
 
 ```diff
-@@ -831,6 +42,7 @@
+@@ -831,6 +44,7 @@
  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
  @import url(https://fonts.googleapis.com/css2?family=Fira+Code&display=swap);
@@ -901,10 +905,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 3 — original 839–845 · candidate 51–57 · +1/−1 · residual</summary>
+<summary>Section 3 — original 839–845 · candidate 53–59 · +1/−1 · residual</summary>
 
 ```diff
-@@ -839,7 +51,7 @@
+@@ -839,7 +53,7 @@
      --theme-name: "Greystyle";
  
  /* FONTS */
@@ -918,10 +922,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 4 — original 930–936 · candidate 142–148 · +1/−1 · residual</summary>
+<summary>Section 4 — original 930–936 · candidate 144–150 · +1/−1 · residual</summary>
 
 ```diff
-@@ -930,7 +142,7 @@
+@@ -930,7 +144,7 @@
      --ui-button-hover-outline: transparent;
  
      /* Header */
@@ -935,10 +939,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 14 — original 1959–1977 · candidate 1171–1189 · +3/−3 · residual</summary>
+<summary>Section 14 — original 1959–1977 · candidate 1173–1191 · +3/−3 · residual</summary>
 
 ```diff
-@@ -1959,19 +1171,19 @@
+@@ -1959,19 +1173,19 @@
  
  .overwatch-memo {
      --memo-header: "Overwatch Command Directive";
@@ -966,10 +970,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 15 — original 2017–2025 · candidate 1229–1237 · +3/−3 · residual</summary>
+<summary>Section 15 — original 2017–2025 · candidate 1231–1239 · +3/−3 · residual</summary>
 
 ```diff
-@@ -2017,9 +1229,9 @@
+@@ -2017,9 +1231,9 @@
  
  /* Logo */
  :root {
@@ -987,10 +991,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 16 — original 2076–2084 · candidate 1288–3573 · +2280/−3 · supplement</summary>
+<summary>Section 16 — original 2076–2084 · candidate 1290–3575 · +2280/−3 · supplement</summary>
 
 ```diff
-@@ -2076,9 +1288,2286 @@
+@@ -2076,9 +1290,2286 @@
  
  /* Proposal */
  :root {
@@ -3285,26 +3289,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 17 — original 2346–2352 · candidate 3835–3840 · +0/−1 · residual</summary>
+<summary>Section 17 — original 2379–2412 · candidate 3870–3899 · +8/−12 · residual, supplement</summary>
 
 ```diff
-@@ -2346,7 +3835,6 @@
- [[/code]]
- 
- [[code type="css"]]
--/* WIDE */
- #main-content {
-     --body-width-on-desktop: 60vw;
-     --header-width-on-desktop: 60vw;
-```
-
-</details>
-
-<details>
-<summary>Section 18 — original 2379–2412 · candidate 3867–3878 · +5/−27 · residual</summary>
-
-```diff
-@@ -2379,34 +3867,12 @@
+@@ -2379,34 +3870,30 @@
  
  [[/iftags]]
  
@@ -3312,33 +3300,36 @@ adjudicated explanation.
 -[[include :scp-wiki:component:toggle-sidebar-bhl]]
 -[[include :scp-wiki:component:betterfootnotes]]
 -[[include :scp-wiki:component:acs-animation]]
+-
+-[[module css]]
+-@import url("https://scp-wiki.wdfiles.com/local--code/theme%3Agreystyle/1")
+-[[/module]]
 +[[include :scp-jp:component:centered-header-bhl]]
 +[[include :scp-jp:component:toggle-sidebar-bhl]]
 +[[include :scp-jp:component:betterfootnotes]]
 +[[include :scp-jp:component:acs-animation]]
  
--[[module css]]
--@import url("https://scp-wiki.wdfiles.com/local--code/theme%3Agreystyle/1")
--[[/module]]
--
--[!-- {$dark}-]
--[[module css]]
+ [!-- {$dark}-]
+ [[module css]]
 -@import url("https://scp-wiki.wdfiles.com/local--code/theme%3Agreystyle/2")
--[[/module]]
--[!-- --]
--
--[!-- {$wide}-]
--[[module css]]
++@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Agreystyle-jp/2")
+ [[/module]]
+ [!-- --]
+ 
+ [!-- {$wide}-]
+ [[module css]]
 -@import url("https://scp-wiki.wdfiles.com/local--code/theme%3Agreystyle/3")
--[[/module]]
--[!-- --]
--
--[!-- {$hide}-]
--[[module css]]
++@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Agreystyle-jp/3")
+ [[/module]]
+ [!-- --]
+ 
+ [!-- {$hide}-]
+ [[module css]]
 -@import url("https://scp-wiki.wdfiles.com/local--code/theme%3Agreystyle/4")
--[[/module]]
--[!-- --]
--
++@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Agreystyle-jp/4")
+ [[/module]]
+ [!-- --]
+ 
 -[[iftags +theme]]
 +[[iftags +テーマ]]
  [[module ListPages  category="fragment" parent="." limit="1" order="created_at" offset="@URL|0"]]
@@ -3352,7 +3343,7 @@ adjudicated explanation.
 <summary>Purely mechanical sections (5, 6, 7, 8, 9, 10, 11, 12, 13) — whitespace, host, and branch-token changes only (heuristic)</summary>
 
 ```diff
-@@ -1003,7 +215,7 @@
+@@ -1003,7 +217,7 @@
      --login-myaccount-hover-color: var(--txt-color2);
      --login-myaccount-underline-color: var(--bg-color3);
      --login-myaccount-hover-bg-color: var(--bg-color3);
@@ -3364,7 +3355,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -1068,7 +280,7 @@
+@@ -1068,7 +282,7 @@
      color: rgb(var(--txt-color2));
      text-shadow: none;
      }
@@ -3376,7 +3367,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -1081,9 +293,9 @@
+@@ -1081,9 +295,9 @@
      --topmenu-category-hover-color: var(--txt-color2);
      --topmenu-category-hover-bg: var(--bg-color3);
      --topmenu-hover-border-color: transparent;
@@ -3391,7 +3382,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -1108,11 +320,11 @@
+@@ -1108,11 +322,11 @@
      --sidebar-bg-color: var(--bg-color1);
      --sidebar-resources-bg-color: var(--bg-color2);
      --sidebar-media-bg-color: var(--bg-color2);
@@ -3409,7 +3400,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -1170,12 +382,12 @@
+@@ -1170,12 +384,12 @@
      width: 16px;
      background: transparent;
  }
@@ -3427,7 +3418,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -1272,7 +484,7 @@
+@@ -1272,7 +486,7 @@
  .owindow .modal-header {
      background-color: rgb(var(--bg-color2));
  }
@@ -3439,7 +3430,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -1284,7 +496,7 @@
+@@ -1284,7 +498,7 @@
  #odialog-container .modal-body h1 {
      box-shadow: none;
  }
@@ -3451,7 +3442,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -1343,7 +555,7 @@
+@@ -1343,7 +557,7 @@
      box-shadow: inset 0 -.125em 0 0rem rgba(var(--bg-color3), 1);
      transition: box-shadow 300ms cubic-bezier(.4, .0, .2, 1), color 300ms cubic-bezier(.4, .0, .2, 1), padding 300ms cubic-bezier(.4, .0, .2, 1), margin 300ms cubic-bezier(.4, .0, .2, 1);
  }
@@ -3463,7 +3454,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -1744,7 +956,7 @@
+@@ -1744,7 +958,7 @@
      background-color: rgb(var(--txt-color1));
      transition: background-color 300ms cubic-bezier(.4, .0, .2, 1);
  }

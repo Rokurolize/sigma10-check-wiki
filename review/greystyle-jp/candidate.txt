@@ -1,7 +1,9 @@
 [!--
 フラグメント:
-https://scp-jp.wikidot.com/fragment:greystyle-0
-https://scp-jp.wikidot.com/fragment:greystyle-1
+https://sigma10-jp-test.wdfiles.com/local--code/theme%3Agreystyle-jp/1
+https://sigma10-jp-test.wdfiles.com/local--code/theme%3Agreystyle-jp/2
+https://sigma10-jp-test.wdfiles.com/local--code/theme%3Agreystyle-jp/3
+https://sigma10-jp-test.wdfiles.com/local--code/theme%3Agreystyle-jp/4
 --]
 
 [[iftags +テーマ]]
@@ -3835,6 +3837,7 @@ text-align: right;
 [[/code]]
 
 [[code type="css"]]
+/* WIDE */
 #main-content {
     --body-width-on-desktop: 60vw;
     --header-width-on-desktop: 60vw;
@@ -3871,6 +3874,24 @@ text-align: right;
 [[include :scp-jp:component:toggle-sidebar-bhl]]
 [[include :scp-jp:component:betterfootnotes]]
 [[include :scp-jp:component:acs-animation]]
+
+[!-- {$dark}-]
+[[module css]]
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Agreystyle-jp/2")
+[[/module]]
+[!-- --]
+
+[!-- {$wide}-]
+[[module css]]
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Agreystyle-jp/3")
+[[/module]]
+[!-- --]
+
+[!-- {$hide}-]
+[[module css]]
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Agreystyle-jp/4")
+[[/module]]
+[!-- --]
 
 [[iftags +テーマ]]
 [[module ListPages  category="fragment" parent="." limit="1" order="created_at" offset="@URL|0"]]

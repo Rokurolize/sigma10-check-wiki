@@ -15,44 +15,45 @@ adjudicated explanation.
 | | Lines |
 |---|---|
 | original.txt | 762 |
-| candidate.txt | 873 |
-| Added | +509 |
-| Review-stage comments | 0 of the +509 added lines |
-| Removed | -398 |
-| Changed | 907 |
-| Change blocks | 11 |
+| candidate.txt | 908 |
+| Added | +552 |
+| Review-stage comments | 0 of the +552 added lines |
+| Removed | -406 |
+| Changed | 958 |
+| Change blocks | 12 |
 | Diff sections (context 3) | 3 |
 
 ## Changed lines by auto-class (heuristic)
 
 | Auto-class | Blocks | Changed lines |
 |---|---|---|
-| supplement | 2 | 400 |
-| residual | 9 | 507 |
+| supplement | 2 | 420 |
+| residual | 10 | 538 |
 
 ## Change-block index
 
 | # | Section | Original | Candidate | +/− | Auto-class | Gist |
 |---|---|---|---|---|---|---|
 | 1 | 1 | 1–1 | 1–391 | +391/−1 | supplement | [[iftags +テーマ]] |
-| 2 | 1 | — | 395–497 | +103/−0 | residual | /* ===== parallel：原語版の CSS をまとめたもの ===== */ |
-| 3 | 1 | 6–6 | 499–499 | +1/−1 | residual | @import url("https://scp-wiki-cn.wikidot.com/fragment:parallel/code/2"); |
-| 4 | 1 | 10–10 | 503–503 | +1/−1 | residual | @import url("https://scp-wiki-cn.wikidot.com/fragment:parallel/code/3"); |
-| 5 | 1 | 14–14 | 507–507 | +1/−1 | residual | @import url("https://scp-wiki-cn.wikidot.com/fragment:parallel/code/4"); |
-| 6 | 1 | 18–18 | 511–511 | +1/−1 | residual | @import url("https://scp-wiki-cn.wikidot.com/fragment:parallel/code/5"); |
-| 7 | 1 | 22–22 | 515–515 | +1/−1 | residual | @import url("https://scp-wiki-cn.wikidot.com/fragment:parallel/code/6"); |
-| 8 | 1 | 27–41 | — | +0/−15 | residual | [[/module]] |
-| 9 | 2 | 307–669 | — | +0/−363 | residual | [[/module]] |
-| 10 | 3 | 747–760 | 862–863 | +2/−14 | residual | [[/code]] |
-| 11 | 3 | — | 866–873 | +8/−0 | supplement | [[module css]] |
+| 2 | 1 | 5–23 | — | +0/−19 | residual | /* {$bedrock}/ |
+| 3 | 1 | 27–41 | — | +0/−15 | residual | [[/module]] |
+| 4 | 2 | 307–669 | — | +0/−363 | residual | [[/module]] |
+| 5 | 3 | 747–747 | 740–742 | +3/−1 | residual | [[/code]] |
+| 6 | 3 | 749–750 | 744–750 | +7/−2 | residual | :root { |
+| 7 | 3 | 752–752 | 752–762 | +11/−1 | residual | --basalt-bright-element-color: 16, 76, 184; |
+| 8 | 3 | 754–754 | 764–770 | +7/−1 | residual | :root { |
+| 9 | 3 | 756–756 | 772–778 | +7/−1 | residual | --basalt-bright-element-color: 255, 20, 20; |
+| 10 | 3 | 758–758 | 780–781 | +2/−1 | residual | --header-title-color: var(--main-text-color); |
+| 11 | 3 | 760–760 | 783–878 | +96/−1 | residual | --top-bar-link-color: var(--basalt-overtone); |
+| 12 | 3 | — | 881–908 | +28/−0 | supplement | [[module css]] |
 
 ## Full diff
 
 <details>
-<summary>Section 1 — original 1–44 · candidate 1–522 · +499/−21 · residual, supplement</summary>
+<summary>Section 1 — original 1–44 · candidate 1–400 · +391/−35 · residual, supplement</summary>
 
 ```diff
-@@ -1,44 +1,522 @@
+@@ -1,44 +1,400 @@
 -[[module CSS]]
 +[[iftags +テーマ]]
 +
@@ -448,133 +449,25 @@ adjudicated explanation.
  @import url('https://hormress.github.io/Parallel/normalize-min.css');
  @import url('https://hormress.github.io/Parallel/parallel-min.css');
  
-+/* ===== parallel：原語版の CSS をまとめたもの ===== */
-+/* 配色方案：基岩 */
-+
-+:root {
-+    --basalt-primary-color: 254, 254, 254;
-+    --basalt-secondary-color: 247, 248, 250;
-+    --basalt-tertiary-color: 218, 219, 222;
-+    --basalt-main-text-color: 20, 20, 20;
-+    --basalt-overtone: 50, 50, 50;
-+    --basalt-undertone: 61, 71, 202;
-+
-+    --basalt-bright-element-color: 16, 76, 184;
-+    --basalt-dark-element-color: 18, 20, 150;
-+    --basalt-darker-element-color: 8, 10, 60;
-+    --basalt-alternate-color: 255, 132, 0;
-+    --basalt-positive-color: 24, 163, 20;
-+    --basalt-negative-color: 255, 48, 48;
-+    --basalt-sub-text-color: 155, 154, 162;
-+}
-+/* 配色方案：红石 */
-+
-+:root {
-+    --basalt-primary-color: 20, 20, 20;
-+    --basalt-secondary-color: 32, 29, 28;
-+    --basalt-tertiary-color: 40, 39, 38;
-+    --basalt-main-text-color: 254, 254, 254;
-+    --basalt-overtone: 254, 254, 254;
-+    --basalt-undertone: 202, 20, 20;
-+
-+    --basalt-bright-element-color: 255, 20, 20;
-+    --basalt-dark-element-color: 144, 20, 20;
-+    --basalt-darker-element-color: 202, 50, 50;
-+    --basalt-alternate-color: 132, 132, 20;
-+    --basalt-positive-color: 24, 163, 20;
-+    --basalt-negative-color: 255, 48, 48;
-+    --basalt-sub-text-color: 162, 154, 155;
-+
-+    --header-title-color: var(--main-text-color);
-+    --header-subtitle-color: var(--main-text-color);
-+
-+    --top-bar-link-color: var(--basalt-overtone);
-+
-+    --UI-title-color: var(--basalt-darker-element-color);
-+    --UI-title-background-color: var(--basalt-secondary-color);
-+}
-+/* 配色方案：深板岩 */
-+
-+:root {
-+    --basalt-primary-color: 46, 46, 52;
-+    --basalt-secondary-color: 62, 58, 64;
-+    --basalt-tertiary-color: 74, 72, 82;
-+    --basalt-main-text-color: 254, 254, 254;
-+    --basalt-overtone: 254, 254, 254;
-+    --basalt-undertone: 144, 144, 152;
-+
-+    --basalt-bright-element-color: 129, 128, 132;
-+    --basalt-dark-element-color: 112, 112, 118;
-+    --basalt-darker-element-color: 161, 160, 164;
-+    --basalt-alternate-color: 132, 132, 20;
-+    --basalt-positive-color: 24, 163, 20;
-+    --basalt-negative-color: 255, 48, 48;
-+    --basalt-sub-text-color: 162, 154, 155;
-+
-+    --link-color: 220, 220, 224;
-+    --link-visited-color: 195, 195, 199;
-+
-+    --header-title-color: var(--main-text-color);
-+    --header-subtitle-color: var(--main-text-color);
-+
-+    --top-bar-link-color: var(--basalt-overtone);
-+
-+    --UI-title-color: var(--basalt-darker-element-color);
-+    --UI-title-background-color: var(--basalt-secondary-color);
-+}
-+/* 配色方案：深板岩钻石 */
-+
-+:root {
-+    --basalt-primary-color: 46, 46, 52;
-+    --basalt-secondary-color: 62, 58, 64;
-+    --basalt-tertiary-color: 74, 72, 82;
-+    --basalt-main-text-color: 254, 254, 254;
-+    --basalt-overtone: 254, 254, 254;
-+    --basalt-undertone: 144, 204, 254;
-+
-+    --basalt-bright-element-color: 142, 192, 232;
-+    --basalt-dark-element-color: 128, 178, 222;
-+    --basalt-darker-element-color: 138, 188, 234;
-+    --basalt-alternate-color: 132, 132, 20;
-+    --basalt-positive-color: 24, 163, 20;
-+    --basalt-negative-color: 255, 48, 48;
-+    --basalt-sub-text-color: 162, 154, 155;
-+
-+    --header-title-color: var(--main-text-color);
-+    --header-subtitle-color: var(--main-text-color);
-+    --header-color-one: 32, 64, 128;
-+    --header-color-two: 64, 128, 254;
-+
-+    --top-bar-link-color: var(--basalt-overtone);
-+
-+    --UI-title-color: var(--basalt-darker-element-color);
-+    --UI-title-background-color: var(--basalt-secondary-color);
-+}
-+
- /* {$bedrock}/
+-/* {$bedrock}/
 -@import url("https://scp-wiki-cn.wikidot.com/fragment:parallel/code/2");
-+
- /{$bedrock} */
- 
- /* {$redstone}/
+-/{$bedrock} */
+-
+-/* {$redstone}/
 -@import url("https://scp-wiki-cn.wikidot.com/fragment:parallel/code/3");
-+
- /{$redstone} */
- 
- /* {$deepslate}/
+-/{$redstone} */
+-
+-/* {$deepslate}/
 -@import url("https://scp-wiki-cn.wikidot.com/fragment:parallel/code/4");
-+
- /{$deepslate} */
- 
- /* {$deep-diamond}/
+-/{$deepslate} */
+-
+-/* {$deep-diamond}/
 -@import url("https://scp-wiki-cn.wikidot.com/fragment:parallel/code/5");
-+
- /{$deep-diamond} */
- 
- /* {$deep-gold}/
+-/{$deep-diamond} */
+-
+-/* {$deep-gold}/
 -@import url("https://scp-wiki-cn.wikidot.com/fragment:parallel/code/6");
-+
- /{$deep-gold} */
+-/{$deep-gold} */
  
  :root {--set-safari-mode-disabled: set;}
  p:has(iframe) {margin: 0;}
@@ -601,10 +494,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 2 — original 304–672 · candidate 782–787 · +0/−363 · residual</summary>
+<summary>Section 2 — original 304–672 · candidate 660–665 · +0/−363 · residual</summary>
 
 ```diff
-@@ -304,369 +782,6 @@
+@@ -304,369 +660,6 @@
          grid-template-columns: 1fr 1fr 1fr;
      }
  }
@@ -979,34 +872,185 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 3 — original 744–762 · candidate 859–873 · +10/−14 · residual, supplement</summary>
+<summary>Section 3 — original 744–762 · candidate 737–908 · +161/−8 · residual, supplement</summary>
 
 ```diff
-@@ -744,19 +859,15 @@
+@@ -744,19 +737,172 @@
  .earthworm a {
      word-break: normal;
  }
 -[[/module]]
--
++[[/code]]
++[[code type="css"]]
++/* 配色方案：基岩 */
+ 
 -[[div style="height: 10rem;"]]
 -[[/div]]
--
++:root {
++    --basalt-primary-color: 254, 254, 254;
++    --basalt-secondary-color: 247, 248, 250;
++    --basalt-tertiary-color: 218, 219, 222;
++    --basalt-main-text-color: 20, 20, 20;
++    --basalt-overtone: 50, 50, 50;
++    --basalt-undertone: 61, 71, 202;
+ 
 -+ 致谢
--
++    --basalt-bright-element-color: 16, 76, 184;
++    --basalt-dark-element-color: 18, 20, 150;
++    --basalt-darker-element-color: 8, 10, 60;
++    --basalt-alternate-color: 255, 132, 0;
++    --basalt-positive-color: 24, 163, 20;
++    --basalt-negative-color: 255, 48, 48;
++    --basalt-sub-text-color: 155, 154, 162;
++}
++[[/code]]
++[[code type="css"]]
++/* 配色方案：红石 */
+ 
 -此版式基本是 [[*user EstrellaYoshte]]、[[*user Liryn]] 和 [[*user Placeholder-mcd]] 所制作的 [[[theme:bedrock|基岩版式]]]的再创作。此版式的风格也受到 [[*user woedenaz]] 的[[[theme:black-highlighter-theme|黑色标记笔版式]]]的相当影响，平行目前所使用的 SCP 标志也是基于其版式徽标。
--
++:root {
++    --basalt-primary-color: 20, 20, 20;
++    --basalt-secondary-color: 32, 29, 28;
++    --basalt-tertiary-color: 40, 39, 38;
++    --basalt-main-text-color: 254, 254, 254;
++    --basalt-overtone: 254, 254, 254;
++    --basalt-undertone: 202, 20, 20;
+ 
 -中文分部的 [[*user hoah2333]] 在最早期开发思路的起点新贵族提供了不少建设性意见。
--
++    --basalt-bright-element-color: 255, 20, 20;
++    --basalt-dark-element-color: 144, 20, 20;
++    --basalt-darker-element-color: 202, 50, 50;
++    --basalt-alternate-color: 132, 132, 20;
++    --basalt-positive-color: 24, 163, 20;
++    --basalt-negative-color: 255, 48, 48;
++    --basalt-sub-text-color: 162, 154, 155;
+ 
 -以上这些人的贡献对于平行的开发直接影响相当大，当然还有更多为我汇报问题的使用者、各群聊中遇到的朋友。平行版式没有你们不可能走到今天！
--
++    --header-title-color: var(--main-text-color);
++    --header-subtitle-color: var(--main-text-color);
+ 
 -[[=image https://hormress.github.io/Parallel/images/project-parallel.svg style="width: 60%; padding: 1rem; border-radius: 1rem; background-color: rgb(254, 254, 254);"]]
++    --top-bar-link-color: var(--basalt-overtone);
++
++    --UI-title-color: var(--basalt-darker-element-color);
++    --UI-title-background-color: var(--basalt-secondary-color);
++}
++[[/code]]
++[[code type="css"]]
++/* 配色方案：深板岩 */
++
++:root {
++    --basalt-primary-color: 46, 46, 52;
++    --basalt-secondary-color: 62, 58, 64;
++    --basalt-tertiary-color: 74, 72, 82;
++    --basalt-main-text-color: 254, 254, 254;
++    --basalt-overtone: 254, 254, 254;
++    --basalt-undertone: 144, 144, 152;
++
++    --basalt-bright-element-color: 129, 128, 132;
++    --basalt-dark-element-color: 112, 112, 118;
++    --basalt-darker-element-color: 161, 160, 164;
++    --basalt-alternate-color: 132, 132, 20;
++    --basalt-positive-color: 24, 163, 20;
++    --basalt-negative-color: 255, 48, 48;
++    --basalt-sub-text-color: 162, 154, 155;
++
++    --link-color: 220, 220, 224;
++    --link-visited-color: 195, 195, 199;
++
++    --header-title-color: var(--main-text-color);
++    --header-subtitle-color: var(--main-text-color);
++
++    --top-bar-link-color: var(--basalt-overtone);
++
++    --UI-title-color: var(--basalt-darker-element-color);
++    --UI-title-background-color: var(--basalt-secondary-color);
++}
++[[/code]]
++[[code type="css"]]
++/* 配色方案：深板岩钻石 */
++
++:root {
++    --basalt-primary-color: 46, 46, 52;
++    --basalt-secondary-color: 62, 58, 64;
++    --basalt-tertiary-color: 74, 72, 82;
++    --basalt-main-text-color: 254, 254, 254;
++    --basalt-overtone: 254, 254, 254;
++    --basalt-undertone: 144, 204, 254;
++
++    --basalt-bright-element-color: 142, 192, 232;
++    --basalt-dark-element-color: 128, 178, 222;
++    --basalt-darker-element-color: 138, 188, 234;
++    --basalt-alternate-color: 132, 132, 20;
++    --basalt-positive-color: 24, 163, 20;
++    --basalt-negative-color: 255, 48, 48;
++    --basalt-sub-text-color: 162, 154, 155;
++
++    --header-title-color: var(--main-text-color);
++    --header-subtitle-color: var(--main-text-color);
++    --header-color-one: 32, 64, 128;
++    --header-color-two: 64, 128, 254;
++
++    --top-bar-link-color: var(--basalt-overtone);
++
++    --UI-title-color: var(--basalt-darker-element-color);
++    --UI-title-background-color: var(--basalt-secondary-color);
++}
++[[/code]]
++[[code type="css"]]
++/* 配色方案：深板岩金矿 */
++
++:root {
++    --basalt-primary-color: 46, 46, 52;
++    --basalt-secondary-color: 62, 58, 64;
++    --basalt-tertiary-color: 74, 72, 82;
++    --basalt-main-text-color: 254, 254, 254;
++    --basalt-overtone: 254, 254, 254;
++    --basalt-undertone: 254, 234, 152;
++
++    --basalt-bright-element-color: 232, 152, 80;
++    --basalt-dark-element-color: 244, 188, 102;
++    --basalt-darker-element-color: 254, 218, 124;
++    --basalt-alternate-color: 132, 132, 20;
++    --basalt-positive-color: 24, 163, 20;
++    --basalt-negative-color: 255, 48, 48;
++    --basalt-sub-text-color: 162, 154, 155;
++
++    --header-title-color: var(--main-text-color);
++    --header-subtitle-color: var(--main-text-color);
++    --header-color-one: var(--basalt-darker-element-color);
++    --header-color-two: var(--basalt-dark-element-color);
++
++    --UI-title-color: var(--basalt-darker-element-color);
++    --UI-title-background-color: var(--basalt-secondary-color);
++}
 +[[/code]]
 +[[/collapsible]]
  
  [[/iftags]]
 +
 +[[module css]]
-+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aparallel-jp/1")
++@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aparallel-jp/1");
++
++/* {$bedrock}/
++@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aparallel-jp/2");
++/{$bedrock} */
++
++/* {$redstone}/
++@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aparallel-jp/3");
++/{$redstone} */
++
++/* {$deepslate}/
++@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aparallel-jp/4");
++/{$deepslate} */
++
++/* {$deep-diamond}/
++@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aparallel-jp/5");
++/{$deep-diamond} */
++
++/* {$deep-gold}/
++@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aparallel-jp/6");
++/{$deep-gold} */
 +[[/module]]
 +[[include :scp-jp:component:interwiki-style
 +| priority=1

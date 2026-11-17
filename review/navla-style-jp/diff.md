@@ -20,7 +20,7 @@ with `python3 review/build_review.py`; verify with
 @@ -1,5 +1,110 @@
 -[[iftags +테마]]
 +[[module CSS]]
-+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Anavla-style-jp/1");
++@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Anavla-style-jp/2");
 +[[/module]]
 +
 +[[include component:navla-jp dlc=1|center=1|tocbox={$tocbox}|help={$help}]]
@@ -29,7 +29,7 @@ with `python3 review/build_review.py`; verify with
 +
 +[[include :scp-jp:component:interwiki-style
 +| priority=1
-+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Anavla-style-jp/1
++| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Anavla-style-jp/2
 +]]
 +
 +[[iftags +テーマ]]

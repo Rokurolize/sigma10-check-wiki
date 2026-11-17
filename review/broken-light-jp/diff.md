@@ -43,7 +43,7 @@ with `python3 review/build_review.py`; verify with
 +[[include :scp-jp:theme:black-highlighter-theme]]
 +
 +[[module CSS]]
-+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Abroken-light-jp/1');
++@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Abroken-light-jp/2');
  [[/module]]
  
 +[[include :scp-jp:component:interwiki-style
@@ -56,7 +56,7 @@ with `python3 review/build_review.py`; verify with
 +]]
 +[[include :scp-jp:component:interwiki-style
 +| priority=3
-+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Abroken-light-jp/1
++| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Abroken-light-jp/2
 +]]
 +
 +[[iftags +テーマ]]

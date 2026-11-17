@@ -15,11 +15,11 @@ adjudicated explanation.
 | | Lines |
 |---|---|
 | original.txt | 1499 |
-| candidate.txt | 2202 |
-| Added | +991 |
-| Review-stage comments | 0 of the +991 added lines |
+| candidate.txt | 2203 |
+| Added | +992 |
+| Review-stage comments | 0 of the +992 added lines |
 | Removed | -288 |
-| Changed | 1279 |
+| Changed | 1280 |
 | Change blocks | 221 |
 | Diff sections (context 3) | 56 |
 
@@ -28,7 +28,7 @@ adjudicated explanation.
 | Auto-class | Blocks | Changed lines |
 |---|---|---|
 | mechanical | 121 | 242 |
-| supplement | 6 | 54 |
+| supplement | 6 | 55 |
 | residual | 94 | 983 |
 
 ## Change-block index
@@ -120,141 +120,141 @@ adjudicated explanation.
 | 83 | 2 | 242–242 | 256–956 | +701/−1 | residual | ++ 基盤: Sigma+ |
 | 84 | 2 | 249–249 | 963–963 | +1/−1 | mechanical | (blank lines only) |
 | 85 | 2 | 255–255 | 969–969 | +1/−1 | mechanical | (blank lines only) |
-| 86 | 2 | 262–267 | 976–984 | +9/−6 | supplement | /* 代替フォント（Google Fonts）: VT323・IBM Plex Mono・Sometype Mono（いずれも SIL Open Font… |
-| 87 | 2 | 271–271 | 988–988 | +1/−1 | mechanical | (blank lines only) |
-| 88 | 2 | 273–277 | 990–994 | +5/−5 | residual | --header-font: 'VT323', 'Noto Sans JP', monospace; |
-| 89 | 2 | 280–280 | 997–997 | +1/−1 | mechanical | (blank lines only) |
-| 90 | 3 | 296–296 | 1013–1013 | +1/−1 | mechanical | (blank lines only) |
-| 91 | 4 | 306–306 | 1023–1023 | +1/−1 | mechanical | (blank lines only) |
-| 92 | 5 | 315–315 | 1032–1032 | +1/−1 | mechanical | (blank lines only) |
-| 93 | 5 | 318–318 | 1035–1035 | +1/−1 | mechanical | (blank lines only) |
-| 94 | 6 | 336–339 | 1053–1056 | +4/−4 | residual | --border-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3A… |
-| 95 | 6 | 346–346 | 1063–1063 | +1/−1 | mechanical | (blank lines only) |
-| 96 | 7 | 355–355 | 1072–1072 | +1/−1 | mechanical | (blank lines only) |
-| 97 | 7 | 361–361 | 1078–1078 | +1/−1 | mechanical | (blank lines only) |
-| 98 | 8 | 371–371 | 1088–1088 | +1/−1 | mechanical | (blank lines only) |
-| 99 | 9 | 385–385 | 1102–1102 | +1/−1 | mechanical | (blank lines only) |
-| 100 | 10 | 401–401 | 1118–1118 | +1/−1 | mechanical | (blank lines only) |
-| 101 | 11 | 418–418 | 1135–1135 | +1/−1 | mechanical | (blank lines only) |
-| 102 | 11 | 423–423 | 1140–1140 | +1/−1 | mechanical | (blank lines only) |
-| 103 | 11 | 427–427 | 1144–1144 | +1/−1 | mechanical | (blank lines only) |
-| 104 | 12 | 441–441 | 1158–1158 | +1/−1 | mechanical | (blank lines only) |
-| 105 | 13 | 457–457 | 1174–1174 | +1/−1 | residual | background-image: url("https://sigma10-jp-test.wdfiles.com/local--files/theme… |
-| 106 | 14 | 478–478 | 1195–1195 | +1/−1 | mechanical | (blank lines only) |
-| 107 | 15 | 498–498 | 1215–1215 | +1/−1 | mechanical | (blank lines only) |
-| 108 | 15 | 504–504 | 1221–1221 | +1/−1 | mechanical | (blank lines only) |
-| 109 | 16 | 515–515 | 1232–1232 | +1/−1 | mechanical | (blank lines only) |
-| 110 | 16 | 519–519 | 1236–1236 | +1/−1 | mechanical | (blank lines only) |
-| 111 | 17 | 534–534 | 1251–1251 | +1/−1 | mechanical | (blank lines only) |
-| 112 | 17 | 538–538 | 1255–1255 | +1/−1 | mechanical | (blank lines only) |
-| 113 | 17 | 543–543 | 1260–1260 | +1/−1 | mechanical | (blank lines only) |
-| 114 | 17 | 549–549 | 1266–1266 | +1/−1 | mechanical | (blank lines only) |
-| 115 | 17 | 554–554 | 1271–1271 | +1/−1 | mechanical | (blank lines only) |
-| 116 | 17 | 560–560 | 1277–1277 | +1/−1 | mechanical | (blank lines only) |
-| 117 | 18 | 571–571 | 1288–1288 | +1/−1 | mechanical | (blank lines only) |
-| 118 | 18 | 574–574 | 1291–1291 | +1/−1 | mechanical | (blank lines only) |
-| 119 | 18 | 578–578 | 1295–1295 | +1/−1 | mechanical | (blank lines only) |
-| 120 | 18 | 582–582 | 1299–1299 | +1/−1 | mechanical | (blank lines only) |
-| 121 | 18 | 589–589 | 1306–1306 | +1/−1 | mechanical | (blank lines only) |
-| 122 | 18 | 594–594 | 1311–1311 | +1/−1 | mechanical | (blank lines only) |
-| 123 | 18 | 600–600 | 1317–1317 | +1/−1 | mechanical | (blank lines only) |
-| 124 | 18 | 607–607 | 1324–1324 | +1/−1 | mechanical | (blank lines only) |
-| 125 | 19 | 639–639 | 1356–1356 | +1/−1 | mechanical | (blank lines only) |
-| 126 | 19 | 644–644 | 1361–1361 | +1/−1 | mechanical | (blank lines only) |
-| 127 | 20 | 653–653 | 1370–1370 | +1/−1 | mechanical | (blank lines only) |
-| 128 | 21 | 661–661 | 1378–1378 | +1/−1 | mechanical | (blank lines only) |
-| 129 | 21 | 668–668 | 1385–1385 | +1/−1 | mechanical | (blank lines only) |
-| 130 | 22 | 680–680 | 1397–1397 | +1/−1 | mechanical | (blank lines only) |
-| 131 | 23 | 688–688 | 1405–1405 | +1/−1 | mechanical | (blank lines only) |
-| 132 | 24 | 697–697 | 1414–1414 | +1/−1 | mechanical | (blank lines only) |
-| 133 | 24 | 701–701 | 1418–1418 | +1/−1 | mechanical | (blank lines only) |
-| 134 | 24 | 705–705 | 1422–1422 | +1/−1 | mechanical | (blank lines only) |
-| 135 | 24 | 710–710 | 1427–1427 | +1/−1 | mechanical | (blank lines only) |
-| 136 | 24 | 715–715 | 1432–1432 | +1/−1 | mechanical | (blank lines only) |
-| 137 | 24 | 720–720 | 1437–1437 | +1/−1 | mechanical | (blank lines only) |
-| 138 | 25 | 737–737 | 1454–1454 | +1/−1 | mechanical | (blank lines only) |
-| 139 | 26 | 746–746 | 1463–1463 | +1/−1 | mechanical | (blank lines only) |
-| 140 | 26 | 753–753 | 1470–1470 | +1/−1 | mechanical | (blank lines only) |
-| 141 | 26 | 757–757 | 1474–1474 | +1/−1 | mechanical | (blank lines only) |
-| 142 | 26 | 761–761 | 1478–1478 | +1/−1 | mechanical | (blank lines only) |
-| 143 | 27 | 781–781 | 1498–1498 | +1/−1 | mechanical | (blank lines only) |
-| 144 | 28 | 794–794 | 1511–1511 | +1/−1 | mechanical | (blank lines only) |
-| 145 | 28 | 801–801 | 1518–1518 | +1/−1 | mechanical | (blank lines only) |
-| 146 | 28 | 807–807 | 1524–1524 | +1/−1 | residual | background-image: url('https://sigma10-jp-test.wdfiles.com/local--files/theme… |
-| 147 | 29 | 818–818 | 1535–1535 | +1/−1 | mechanical | (blank lines only) |
-| 148 | 30 | 835–835 | 1552–1552 | +1/−1 | mechanical | (blank lines only) |
-| 149 | 31 | 854–854 | 1571–1571 | +1/−1 | mechanical | (blank lines only) |
-| 150 | 32 | 871–871 | 1588–1588 | +1/−1 | mechanical | (blank lines only) |
-| 151 | 32 | 878–878 | 1595–1595 | +1/−1 | mechanical | (blank lines only) |
-| 152 | 32 | 883–883 | 1600–1600 | +1/−1 | mechanical | (blank lines only) |
-| 153 | 32 | 888–888 | 1605–1605 | +1/−1 | mechanical | (blank lines only) |
-| 154 | 33 | 896–896 | 1613–1613 | +1/−1 | mechanical | (blank lines only) |
-| 155 | 33 | 900–900 | 1617–1617 | +1/−1 | mechanical | (blank lines only) |
-| 156 | 34 | 916–916 | 1633–1633 | +1/−1 | mechanical | (blank lines only) |
-| 157 | 34 | 920–920 | 1637–1637 | +1/−1 | mechanical | (blank lines only) |
-| 158 | 35 | 928–928 | 1645–1645 | +1/−1 | mechanical | (blank lines only) |
-| 159 | 35 | 932–932 | 1649–1649 | +1/−1 | mechanical | (blank lines only) |
-| 160 | 36 | 960–960 | 1677–1677 | +1/−1 | mechanical | (blank lines only) |
-| 161 | 36 | 967–967 | 1684–1684 | +1/−1 | mechanical | (blank lines only) |
-| 162 | 37 | 975–975 | 1692–1692 | +1/−1 | mechanical | (blank lines only) |
-| 163 | 38 | 985–985 | 1702–1702 | +1/−1 | mechanical | (blank lines only) |
-| 164 | 38 | 988–988 | 1705–1705 | +1/−1 | mechanical | (blank lines only) |
-| 165 | 39 | 999–999 | 1716–1716 | +1/−1 | mechanical | (blank lines only) |
-| 166 | 39 | 1006–1006 | 1723–1723 | +1/−1 | mechanical | (blank lines only) |
-| 167 | 40 | 1017–1017 | 1734–1734 | +1/−1 | mechanical | (blank lines only) |
-| 168 | 40 | 1021–1021 | 1738–1738 | +1/−1 | mechanical | (blank lines only) |
-| 169 | 41 | 1030–1030 | 1747–1747 | +1/−1 | mechanical | (blank lines only) |
-| 170 | 42 | 1041–1041 | 1758–1758 | +1/−1 | mechanical | (blank lines only) |
-| 171 | 42 | 1046–1046 | 1763–1763 | +1/−1 | mechanical | (blank lines only) |
-| 172 | 43 | 1162–1162 | 1879–1879 | +1/−1 | mechanical | (blank lines only) |
-| 173 | 43 | 1167–1167 | 1884–1884 | +1/−1 | mechanical | (blank lines only) |
-| 174 | 43 | 1172–1172 | 1889–1889 | +1/−1 | mechanical | (blank lines only) |
-| 175 | 44 | 1181–1181 | 1898–1898 | +1/−1 | mechanical | (blank lines only) |
-| 176 | 44 | 1183–1183 | 1900–1900 | +1/−1 | mechanical | (blank lines only) |
-| 177 | 44 | 1185–1185 | 1902–1902 | +1/−1 | mechanical | (blank lines only) |
-| 178 | 45 | 1196–1196 | 1913–1913 | +1/−1 | mechanical | (blank lines only) |
-| 179 | 45 | 1203–1203 | 1920–1920 | +1/−1 | mechanical | (blank lines only) |
-| 180 | 46 | 1212–1212 | 1929–1929 | +1/−1 | mechanical | (blank lines only) |
-| 181 | 46 | 1216–1216 | 1933–1933 | +1/−1 | mechanical | (blank lines only) |
-| 182 | 46 | 1218–1218 | 1935–1935 | +1/−1 | residual | background-image: url("https://sigma10-jp-test.wdfiles.com/local--files/theme… |
-| 183 | 46 | 1222–1222 | 1939–1939 | +1/−1 | mechanical | (blank lines only) |
-| 184 | 46 | 1229–1229 | 1946–1946 | +1/−1 | mechanical | (blank lines only) |
-| 185 | 46 | 1234–1234 | 1951–1951 | +1/−1 | mechanical | (blank lines only) |
-| 186 | 47 | 1260–1260 | 1977–1977 | +1/−1 | mechanical | (blank lines only) |
-| 187 | 48 | 1269–1269 | 1986–1986 | +1/−1 | mechanical | (blank lines only) |
-| 188 | 48 | 1273–1273 | 1990–1990 | +1/−1 | mechanical | (blank lines only) |
-| 189 | 48 | 1277–1277 | 1994–1994 | +1/−1 | mechanical | (blank lines only) |
-| 190 | 48 | 1281–1281 | 1998–1998 | +1/−1 | mechanical | (blank lines only) |
-| 191 | 48 | 1287–1287 | 2004–2004 | +1/−1 | mechanical | (blank lines only) |
-| 192 | 49 | 1298–1298 | 2015–2015 | +1/−1 | mechanical | (blank lines only) |
-| 193 | 49 | 1305–1305 | 2022–2022 | +1/−1 | mechanical | (blank lines only) |
-| 194 | 49 | 1310–1310 | 2027–2027 | +1/−1 | mechanical | (blank lines only) |
-| 195 | 50 | 1323–1323 | 2040–2040 | +1/−1 | mechanical | (blank lines only) |
-| 196 | 50 | 1329–1329 | 2046–2046 | +1/−1 | mechanical | (blank lines only) |
-| 197 | 51 | 1340–1340 | 2057–2057 | +1/−1 | mechanical | (blank lines only) |
-| 198 | 51 | 1344–1344 | 2061–2061 | +1/−1 | mechanical | (blank lines only) |
-| 199 | 51 | 1348–1348 | 2065–2065 | +1/−1 | mechanical | (blank lines only) |
-| 200 | 51 | 1353–1353 | 2070–2070 | +1/−1 | mechanical | (blank lines only) |
-| 201 | 51 | 1355–1355 | 2072–2072 | +1/−1 | mechanical | (blank lines only) |
-| 202 | 52 | 1363–1363 | 2080–2080 | +1/−1 | mechanical | (blank lines only) |
-| 203 | 52 | 1368–1368 | 2085–2085 | +1/−1 | mechanical | (blank lines only) |
-| 204 | 53 | 1382–1382 | 2099–2099 | +1/−1 | mechanical | (blank lines only) |
-| 205 | 54 | 1398–1398 | 2115–2115 | +1/−1 | mechanical | (blank lines only) |
-| 206 | 54 | 1402–1402 | 2119–2119 | +1/−1 | mechanical | (blank lines only) |
-| 207 | 54 | 1404–1404 | 2121–2121 | +1/−1 | residual | background-image: url('https://sigma10-jp-test.wdfiles.com/local--files/theme… |
-| 208 | 54 | 1408–1408 | 2125–2125 | +1/−1 | mechanical | (blank lines only) |
-| 209 | 55 | 1416–1416 | 2133–2133 | +1/−1 | mechanical | (blank lines only) |
-| 210 | 55 | 1420–1420 | 2137–2137 | +1/−1 | mechanical | (blank lines only) |
-| 211 | 55 | 1425–1425 | 2142–2142 | +1/−1 | mechanical | (blank lines only) |
-| 212 | 56 | 1451–1451 | 2168–2168 | +1/−1 | supplement | [[include :scp-jp:component:license-box-backend |
-| 213 | 56 | 1453–1455 | 2170–2172 | +3/−3 | residual | > **ファイル名:** blue_spaces.jpg |
-| 214 | 56 | 1457–1457 | 2174–2174 | +1/−1 | residual | > この画像は以下の画像を組み込んだ合成物です。 |
-| 215 | 56 | 1459–1462 | 2176–2179 | +4/−4 | residual | > **ファイル名:** Dragonfish600.jpg |
-| 216 | 56 | 1464–1466 | 2181–2183 | +3/−3 | residual | > **ファイル名:** acs_demo_pastel_skies.png |
-| 217 | 56 | 1468–1468 | 2185–2185 | +1/−1 | residual | > この画像は以下を組み込んだ合成物です。 |
-| 218 | 56 | 1470–1473 | 2187–2190 | +4/−4 | residual | > **名称:** Anomaly Classification Bar |
-| 219 | 56 | 1475–1478 | 2192–2195 | +4/−4 | residual | > **ファイル名:** その他すべての画像（icon_night.svg、moon_icon.svg、bordir.svg、cloudy_dusk_ne… |
-| 220 | 56 | 1480–1484 | 2197–2201 | +5/−5 | supplement | > **ファイル名:** --the-border-itself および対応するすべての変数 |
+| 86 | 2 | 262–267 | 976–985 | +10/−6 | supplement | /* 代替フォント（Google Fonts）: VT323・IBM Plex Mono・Sometype Mono（いずれも SIL Open Font… |
+| 87 | 2 | 271–271 | 989–989 | +1/−1 | mechanical | (blank lines only) |
+| 88 | 2 | 273–277 | 991–995 | +5/−5 | residual | --header-font: 'VT323', 'Noto Sans JP', monospace; |
+| 89 | 2 | 280–280 | 998–998 | +1/−1 | mechanical | (blank lines only) |
+| 90 | 3 | 296–296 | 1014–1014 | +1/−1 | mechanical | (blank lines only) |
+| 91 | 4 | 306–306 | 1024–1024 | +1/−1 | mechanical | (blank lines only) |
+| 92 | 5 | 315–315 | 1033–1033 | +1/−1 | mechanical | (blank lines only) |
+| 93 | 5 | 318–318 | 1036–1036 | +1/−1 | mechanical | (blank lines only) |
+| 94 | 6 | 336–339 | 1054–1057 | +4/−4 | residual | --border-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3A… |
+| 95 | 6 | 346–346 | 1064–1064 | +1/−1 | mechanical | (blank lines only) |
+| 96 | 7 | 355–355 | 1073–1073 | +1/−1 | mechanical | (blank lines only) |
+| 97 | 7 | 361–361 | 1079–1079 | +1/−1 | mechanical | (blank lines only) |
+| 98 | 8 | 371–371 | 1089–1089 | +1/−1 | mechanical | (blank lines only) |
+| 99 | 9 | 385–385 | 1103–1103 | +1/−1 | mechanical | (blank lines only) |
+| 100 | 10 | 401–401 | 1119–1119 | +1/−1 | mechanical | (blank lines only) |
+| 101 | 11 | 418–418 | 1136–1136 | +1/−1 | mechanical | (blank lines only) |
+| 102 | 11 | 423–423 | 1141–1141 | +1/−1 | mechanical | (blank lines only) |
+| 103 | 11 | 427–427 | 1145–1145 | +1/−1 | mechanical | (blank lines only) |
+| 104 | 12 | 441–441 | 1159–1159 | +1/−1 | mechanical | (blank lines only) |
+| 105 | 13 | 457–457 | 1175–1175 | +1/−1 | residual | background-image: url("https://sigma10-jp-test.wdfiles.com/local--files/theme… |
+| 106 | 14 | 478–478 | 1196–1196 | +1/−1 | mechanical | (blank lines only) |
+| 107 | 15 | 498–498 | 1216–1216 | +1/−1 | mechanical | (blank lines only) |
+| 108 | 15 | 504–504 | 1222–1222 | +1/−1 | mechanical | (blank lines only) |
+| 109 | 16 | 515–515 | 1233–1233 | +1/−1 | mechanical | (blank lines only) |
+| 110 | 16 | 519–519 | 1237–1237 | +1/−1 | mechanical | (blank lines only) |
+| 111 | 17 | 534–534 | 1252–1252 | +1/−1 | mechanical | (blank lines only) |
+| 112 | 17 | 538–538 | 1256–1256 | +1/−1 | mechanical | (blank lines only) |
+| 113 | 17 | 543–543 | 1261–1261 | +1/−1 | mechanical | (blank lines only) |
+| 114 | 17 | 549–549 | 1267–1267 | +1/−1 | mechanical | (blank lines only) |
+| 115 | 17 | 554–554 | 1272–1272 | +1/−1 | mechanical | (blank lines only) |
+| 116 | 17 | 560–560 | 1278–1278 | +1/−1 | mechanical | (blank lines only) |
+| 117 | 18 | 571–571 | 1289–1289 | +1/−1 | mechanical | (blank lines only) |
+| 118 | 18 | 574–574 | 1292–1292 | +1/−1 | mechanical | (blank lines only) |
+| 119 | 18 | 578–578 | 1296–1296 | +1/−1 | mechanical | (blank lines only) |
+| 120 | 18 | 582–582 | 1300–1300 | +1/−1 | mechanical | (blank lines only) |
+| 121 | 18 | 589–589 | 1307–1307 | +1/−1 | mechanical | (blank lines only) |
+| 122 | 18 | 594–594 | 1312–1312 | +1/−1 | mechanical | (blank lines only) |
+| 123 | 18 | 600–600 | 1318–1318 | +1/−1 | mechanical | (blank lines only) |
+| 124 | 18 | 607–607 | 1325–1325 | +1/−1 | mechanical | (blank lines only) |
+| 125 | 19 | 639–639 | 1357–1357 | +1/−1 | mechanical | (blank lines only) |
+| 126 | 19 | 644–644 | 1362–1362 | +1/−1 | mechanical | (blank lines only) |
+| 127 | 20 | 653–653 | 1371–1371 | +1/−1 | mechanical | (blank lines only) |
+| 128 | 21 | 661–661 | 1379–1379 | +1/−1 | mechanical | (blank lines only) |
+| 129 | 21 | 668–668 | 1386–1386 | +1/−1 | mechanical | (blank lines only) |
+| 130 | 22 | 680–680 | 1398–1398 | +1/−1 | mechanical | (blank lines only) |
+| 131 | 23 | 688–688 | 1406–1406 | +1/−1 | mechanical | (blank lines only) |
+| 132 | 24 | 697–697 | 1415–1415 | +1/−1 | mechanical | (blank lines only) |
+| 133 | 24 | 701–701 | 1419–1419 | +1/−1 | mechanical | (blank lines only) |
+| 134 | 24 | 705–705 | 1423–1423 | +1/−1 | mechanical | (blank lines only) |
+| 135 | 24 | 710–710 | 1428–1428 | +1/−1 | mechanical | (blank lines only) |
+| 136 | 24 | 715–715 | 1433–1433 | +1/−1 | mechanical | (blank lines only) |
+| 137 | 24 | 720–720 | 1438–1438 | +1/−1 | mechanical | (blank lines only) |
+| 138 | 25 | 737–737 | 1455–1455 | +1/−1 | mechanical | (blank lines only) |
+| 139 | 26 | 746–746 | 1464–1464 | +1/−1 | mechanical | (blank lines only) |
+| 140 | 26 | 753–753 | 1471–1471 | +1/−1 | mechanical | (blank lines only) |
+| 141 | 26 | 757–757 | 1475–1475 | +1/−1 | mechanical | (blank lines only) |
+| 142 | 26 | 761–761 | 1479–1479 | +1/−1 | mechanical | (blank lines only) |
+| 143 | 27 | 781–781 | 1499–1499 | +1/−1 | mechanical | (blank lines only) |
+| 144 | 28 | 794–794 | 1512–1512 | +1/−1 | mechanical | (blank lines only) |
+| 145 | 28 | 801–801 | 1519–1519 | +1/−1 | mechanical | (blank lines only) |
+| 146 | 28 | 807–807 | 1525–1525 | +1/−1 | residual | background-image: url('https://sigma10-jp-test.wdfiles.com/local--files/theme… |
+| 147 | 29 | 818–818 | 1536–1536 | +1/−1 | mechanical | (blank lines only) |
+| 148 | 30 | 835–835 | 1553–1553 | +1/−1 | mechanical | (blank lines only) |
+| 149 | 31 | 854–854 | 1572–1572 | +1/−1 | mechanical | (blank lines only) |
+| 150 | 32 | 871–871 | 1589–1589 | +1/−1 | mechanical | (blank lines only) |
+| 151 | 32 | 878–878 | 1596–1596 | +1/−1 | mechanical | (blank lines only) |
+| 152 | 32 | 883–883 | 1601–1601 | +1/−1 | mechanical | (blank lines only) |
+| 153 | 32 | 888–888 | 1606–1606 | +1/−1 | mechanical | (blank lines only) |
+| 154 | 33 | 896–896 | 1614–1614 | +1/−1 | mechanical | (blank lines only) |
+| 155 | 33 | 900–900 | 1618–1618 | +1/−1 | mechanical | (blank lines only) |
+| 156 | 34 | 916–916 | 1634–1634 | +1/−1 | mechanical | (blank lines only) |
+| 157 | 34 | 920–920 | 1638–1638 | +1/−1 | mechanical | (blank lines only) |
+| 158 | 35 | 928–928 | 1646–1646 | +1/−1 | mechanical | (blank lines only) |
+| 159 | 35 | 932–932 | 1650–1650 | +1/−1 | mechanical | (blank lines only) |
+| 160 | 36 | 960–960 | 1678–1678 | +1/−1 | mechanical | (blank lines only) |
+| 161 | 36 | 967–967 | 1685–1685 | +1/−1 | mechanical | (blank lines only) |
+| 162 | 37 | 975–975 | 1693–1693 | +1/−1 | mechanical | (blank lines only) |
+| 163 | 38 | 985–985 | 1703–1703 | +1/−1 | mechanical | (blank lines only) |
+| 164 | 38 | 988–988 | 1706–1706 | +1/−1 | mechanical | (blank lines only) |
+| 165 | 39 | 999–999 | 1717–1717 | +1/−1 | mechanical | (blank lines only) |
+| 166 | 39 | 1006–1006 | 1724–1724 | +1/−1 | mechanical | (blank lines only) |
+| 167 | 40 | 1017–1017 | 1735–1735 | +1/−1 | mechanical | (blank lines only) |
+| 168 | 40 | 1021–1021 | 1739–1739 | +1/−1 | mechanical | (blank lines only) |
+| 169 | 41 | 1030–1030 | 1748–1748 | +1/−1 | mechanical | (blank lines only) |
+| 170 | 42 | 1041–1041 | 1759–1759 | +1/−1 | mechanical | (blank lines only) |
+| 171 | 42 | 1046–1046 | 1764–1764 | +1/−1 | mechanical | (blank lines only) |
+| 172 | 43 | 1162–1162 | 1880–1880 | +1/−1 | mechanical | (blank lines only) |
+| 173 | 43 | 1167–1167 | 1885–1885 | +1/−1 | mechanical | (blank lines only) |
+| 174 | 43 | 1172–1172 | 1890–1890 | +1/−1 | mechanical | (blank lines only) |
+| 175 | 44 | 1181–1181 | 1899–1899 | +1/−1 | mechanical | (blank lines only) |
+| 176 | 44 | 1183–1183 | 1901–1901 | +1/−1 | mechanical | (blank lines only) |
+| 177 | 44 | 1185–1185 | 1903–1903 | +1/−1 | mechanical | (blank lines only) |
+| 178 | 45 | 1196–1196 | 1914–1914 | +1/−1 | mechanical | (blank lines only) |
+| 179 | 45 | 1203–1203 | 1921–1921 | +1/−1 | mechanical | (blank lines only) |
+| 180 | 46 | 1212–1212 | 1930–1930 | +1/−1 | mechanical | (blank lines only) |
+| 181 | 46 | 1216–1216 | 1934–1934 | +1/−1 | mechanical | (blank lines only) |
+| 182 | 46 | 1218–1218 | 1936–1936 | +1/−1 | residual | background-image: url("https://sigma10-jp-test.wdfiles.com/local--files/theme… |
+| 183 | 46 | 1222–1222 | 1940–1940 | +1/−1 | mechanical | (blank lines only) |
+| 184 | 46 | 1229–1229 | 1947–1947 | +1/−1 | mechanical | (blank lines only) |
+| 185 | 46 | 1234–1234 | 1952–1952 | +1/−1 | mechanical | (blank lines only) |
+| 186 | 47 | 1260–1260 | 1978–1978 | +1/−1 | mechanical | (blank lines only) |
+| 187 | 48 | 1269–1269 | 1987–1987 | +1/−1 | mechanical | (blank lines only) |
+| 188 | 48 | 1273–1273 | 1991–1991 | +1/−1 | mechanical | (blank lines only) |
+| 189 | 48 | 1277–1277 | 1995–1995 | +1/−1 | mechanical | (blank lines only) |
+| 190 | 48 | 1281–1281 | 1999–1999 | +1/−1 | mechanical | (blank lines only) |
+| 191 | 48 | 1287–1287 | 2005–2005 | +1/−1 | mechanical | (blank lines only) |
+| 192 | 49 | 1298–1298 | 2016–2016 | +1/−1 | mechanical | (blank lines only) |
+| 193 | 49 | 1305–1305 | 2023–2023 | +1/−1 | mechanical | (blank lines only) |
+| 194 | 49 | 1310–1310 | 2028–2028 | +1/−1 | mechanical | (blank lines only) |
+| 195 | 50 | 1323–1323 | 2041–2041 | +1/−1 | mechanical | (blank lines only) |
+| 196 | 50 | 1329–1329 | 2047–2047 | +1/−1 | mechanical | (blank lines only) |
+| 197 | 51 | 1340–1340 | 2058–2058 | +1/−1 | mechanical | (blank lines only) |
+| 198 | 51 | 1344–1344 | 2062–2062 | +1/−1 | mechanical | (blank lines only) |
+| 199 | 51 | 1348–1348 | 2066–2066 | +1/−1 | mechanical | (blank lines only) |
+| 200 | 51 | 1353–1353 | 2071–2071 | +1/−1 | mechanical | (blank lines only) |
+| 201 | 51 | 1355–1355 | 2073–2073 | +1/−1 | mechanical | (blank lines only) |
+| 202 | 52 | 1363–1363 | 2081–2081 | +1/−1 | mechanical | (blank lines only) |
+| 203 | 52 | 1368–1368 | 2086–2086 | +1/−1 | mechanical | (blank lines only) |
+| 204 | 53 | 1382–1382 | 2100–2100 | +1/−1 | mechanical | (blank lines only) |
+| 205 | 54 | 1398–1398 | 2116–2116 | +1/−1 | mechanical | (blank lines only) |
+| 206 | 54 | 1402–1402 | 2120–2120 | +1/−1 | mechanical | (blank lines only) |
+| 207 | 54 | 1404–1404 | 2122–2122 | +1/−1 | residual | background-image: url('https://sigma10-jp-test.wdfiles.com/local--files/theme… |
+| 208 | 54 | 1408–1408 | 2126–2126 | +1/−1 | mechanical | (blank lines only) |
+| 209 | 55 | 1416–1416 | 2134–2134 | +1/−1 | mechanical | (blank lines only) |
+| 210 | 55 | 1420–1420 | 2138–2138 | +1/−1 | mechanical | (blank lines only) |
+| 211 | 55 | 1425–1425 | 2143–2143 | +1/−1 | mechanical | (blank lines only) |
+| 212 | 56 | 1451–1451 | 2169–2169 | +1/−1 | supplement | [[include :scp-jp:component:license-box-backend |
+| 213 | 56 | 1453–1455 | 2171–2173 | +3/−3 | residual | > **ファイル名:** blue_spaces.jpg |
+| 214 | 56 | 1457–1457 | 2175–2175 | +1/−1 | residual | > この画像は以下の画像を組み込んだ合成物です。 |
+| 215 | 56 | 1459–1462 | 2177–2180 | +4/−4 | residual | > **ファイル名:** Dragonfish600.jpg |
+| 216 | 56 | 1464–1466 | 2182–2184 | +3/−3 | residual | > **ファイル名:** acs_demo_pastel_skies.png |
+| 217 | 56 | 1468–1468 | 2186–2186 | +1/−1 | residual | > この画像は以下を組み込んだ合成物です。 |
+| 218 | 56 | 1470–1473 | 2188–2191 | +4/−4 | residual | > **名称:** Anomaly Classification Bar |
+| 219 | 56 | 1475–1478 | 2193–2196 | +4/−4 | residual | > **ファイル名:** その他すべての画像（icon_night.svg、moon_icon.svg、bordir.svg、cloudy_dusk_ne… |
+| 220 | 56 | 1480–1484 | 2198–2202 | +5/−5 | supplement | > **ファイル名:** --the-border-itself および対応するすべての変数 |
 | 221 | 56 | 1486–1499 | — | +0/−14 | residual | [[include :scp-wiki:component:sigma-plus]] |
 
 ## Full diff
@@ -557,10 +557,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 2 — original 190–283 · candidate 202–1000 · +738/−33 · mechanical, residual, supplement</summary>
+<summary>Section 2 — original 190–283 · candidate 202–1001 · +739/−33 · mechanical, residual, supplement</summary>
 
 ```diff
-@@ -190,94 +202,799 @@
+@@ -190,94 +202,800 @@
  
  @@ @@
  
@@ -1369,6 +1369,7 @@ adjudicated explanation.
 +@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 +@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap');
 +@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap');
++@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 +
      /*---------------------------------------------------*/
      /*----------------------- ROOT ----------------------*/
@@ -1398,10 +1399,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 6 — original 333–349 · candidate 1050–1066 · +5/−5 · mechanical, residual</summary>
+<summary>Section 6 — original 333–349 · candidate 1051–1067 · +5/−5 · mechanical, residual</summary>
 
 ```diff
-@@ -333,17 +1050,17 @@
+@@ -333,17 +1051,17 @@
      --top-bar-color: var(--bg-color);
      --selection-color: 146, 63, 112;
      --og-selection-color: 0, 120, 215;
@@ -1429,10 +1430,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 13 — original 454–460 · candidate 1171–1177 · +1/−1 · residual</summary>
+<summary>Section 13 — original 454–460 · candidate 1172–1178 · +1/−1 · residual</summary>
 
 ```diff
-@@ -454,7 +1171,7 @@
+@@ -454,7 +1172,7 @@
      margin-bottom: 5rem;
      color: transparent;
  
@@ -1446,10 +1447,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 28 — original 791–810 · candidate 1508–1527 · +3/−3 · mechanical, residual</summary>
+<summary>Section 28 — original 791–810 · candidate 1509–1528 · +3/−3 · mechanical, residual</summary>
 
 ```diff
-@@ -791,20 +1508,20 @@
+@@ -791,20 +1509,20 @@
  ::-webkit-scrollbar-track {
    background: rgb(var(--bg-color));
  }
@@ -1478,10 +1479,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 46 — original 1209–1237 · candidate 1926–1954 · +6/−6 · mechanical, residual</summary>
+<summary>Section 46 — original 1209–1237 · candidate 1927–1955 · +6/−6 · mechanical, residual</summary>
 
 ```diff
-@@ -1209,29 +1926,29 @@
+@@ -1209,29 +1927,29 @@
    --two-color: 68, 103, 140;
    --one-color: 70, 142, 126;
  }
@@ -1522,10 +1523,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 54 — original 1395–1411 · candidate 2112–2128 · +4/−4 · mechanical, residual</summary>
+<summary>Section 54 — original 1395–1411 · candidate 2113–2129 · +4/−4 · mechanical, residual</summary>
 
 ```diff
-@@ -1395,17 +2112,17 @@
+@@ -1395,17 +2113,17 @@
  #header::before {
      grid-column: 2/3;
  }
@@ -1552,10 +1553,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 56 — original 1448–1499 · candidate 2165–2202 · +26/−40 · residual, supplement</summary>
+<summary>Section 56 — original 1448–1499 · candidate 2166–2203 · +26/−40 · residual, supplement</summary>
 
 ```diff
-@@ -1448,52 +2165,38 @@
+@@ -1448,52 +2166,38 @@
  [[/code]]
  [[/collapsible]]
  
@@ -1642,7 +1643,7 @@ adjudicated explanation.
 <summary>Purely mechanical sections (3, 4, 5, 7, 8, 9, 10, 11, 12, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 47, 48, 49, 50, 51, 52, 53, 55) — whitespace, host, and branch-token changes only (heuristic)</summary>
 
 ```diff
-@@ -293,7 +1010,7 @@
+@@ -293,7 +1011,7 @@
      --sp_dropdown-background: rgb(var(--light-pink));
      --sp_dropdown-link-hover-color: rgb(var(--dark-pink));
      --sp_dropdown-link-hover-background: rgb(var(--light-red));
@@ -1654,7 +1655,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -303,7 +1020,7 @@
+@@ -303,7 +1021,7 @@
      --sp_tab-selected-text-color: rgb(var(--dark-purple));
      --sp_tab-selected-background: rgb(var(--light-pink));
      --sp_tab-selected-border-color: transparent;
@@ -1666,7 +1667,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -312,10 +1029,10 @@
+@@ -312,10 +1030,10 @@
      --sp_rate-module-button-background: var(--sp_rate-module-background);
      --sp_rate-module-button-hover-color: var(--sp_rate-module-active-color);
      --sp_rate-module-button-hover-background: rgb(var(--light-pink));
@@ -1682,7 +1683,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -352,13 +1069,13 @@
+@@ -352,13 +1070,13 @@
      /*---------------------------------------------------*/
      /*---- https://codepen.io/makewistful/pen/ezOGJK ----*/
      /*---------------------------------------------------*/
@@ -1701,7 +1702,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -368,7 +1085,7 @@
+@@ -368,7 +1086,7 @@
       0 calc(var(--pixel) * 9) 0 calc(var(--pixel) * -4) rgb(var(--pixel-bg)),
       0 calc(var(--pixel) * -12) 0 calc(var(--pixel) * -6) rgb(var(--pixel-bg)),
       0 calc(var(--pixel) * 12) 0 calc(var(--pixel) * -6) rgb(var(--pixel-bg)),
@@ -1713,7 +1714,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -382,7 +1099,7 @@
+@@ -382,7 +1100,7 @@
       0 calc(var(--pixel) * 10) 0 calc(var(--pixel) * -4) rgb(var(--pixel-border)),
       0 calc(var(--pixel) * -13) 0 calc(var(--pixel) * -6) rgb(var(--pixel-border)),
       0 calc(var(--pixel) * 13) 0 calc(var(--pixel) * -6) rgb(var(--pixel-border)),
@@ -1725,7 +1726,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -398,7 +1115,7 @@
+@@ -398,7 +1116,7 @@
       0 calc(var(--pixel) * 11) 0 calc(var(--pixel) * -4) rgb(var(--pixel-border-2)),
       0 calc(var(--pixel) * -14) 0 calc(var(--pixel) * -6) rgb(var(--pixel-border-2)),
       0 calc(var(--pixel) * 14) 0 calc(var(--pixel) * -6) rgb(var(--pixel-border-2)),
@@ -1737,7 +1738,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -415,16 +1132,16 @@
+@@ -415,16 +1133,16 @@
       0 calc(var(--pixel) * 12) 0 calc(var(--pixel) * -4) rgb(var(--pixel-border-3)),
       0 calc(var(--pixel) * -15) 0 calc(var(--pixel) * -6) rgb(var(--pixel-border-3)),
       0 calc(var(--pixel) * 15) 0 calc(var(--pixel) * -6) rgb(var(--pixel-border-3));
@@ -1760,7 +1761,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -438,7 +1155,7 @@
+@@ -438,7 +1156,7 @@
      grid-template-columns: var(--sp_area-comp-margin) 1fr auto auto;
  }
  /* -------------------- */
@@ -1772,7 +1773,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -475,7 +1192,7 @@
+@@ -475,7 +1193,7 @@
      justify-self: center;
      width: var(--sp_header-logo-adaptive-size);
  }
@@ -1784,7 +1785,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -495,13 +1212,13 @@
+@@ -495,13 +1213,13 @@
      font-size: 15rem;
  }
  /* -------------------- */
@@ -1803,7 +1804,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -512,11 +1229,11 @@
+@@ -512,11 +1230,11 @@
      font-size: 0.9em;
      color: rgb(var(--dark-pink));
  }
@@ -1820,7 +1821,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -531,33 +1248,33 @@
+@@ -531,33 +1249,33 @@
      color: rgb(var(--dark-purple));
      border: none;
  }
@@ -1863,7 +1864,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -568,43 +1285,43 @@
+@@ -568,43 +1286,43 @@
      color: rgb(var(--dark-purple));
      border-top: 0.08em solid rgb(var(--dark-purple));
      border-bottom: 0.08em solid rgb(var(--dark-purple));
@@ -1918,7 +1919,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -636,12 +1353,12 @@
+@@ -636,12 +1354,12 @@
      mask-repeat: no-repeat;
  }
  /* -------------------- */
@@ -1936,7 +1937,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -650,7 +1367,7 @@
+@@ -650,7 +1368,7 @@
      color: rgb(var(--dark-pink));
      font-weight: bold;
  }
@@ -1948,7 +1949,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -658,14 +1375,14 @@
+@@ -658,14 +1376,14 @@
      border-bottom: 0.25em solid rgb(var(--dark-purple));
      font-size: 0.9em;
  }
@@ -1968,7 +1969,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -677,7 +1394,7 @@
+@@ -677,7 +1395,7 @@
      color: rgb(var(--dark-purple));
  }
  /* -------------------- */
@@ -1980,7 +1981,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -685,7 +1402,7 @@
+@@ -685,7 +1403,7 @@
      border-right: 0.08em solid rgb(var(--dark-purple));
      scrollbar-width: none;
  }
@@ -1992,7 +1993,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -694,30 +1411,30 @@
+@@ -694,30 +1412,30 @@
      text-align: center;
      border-bottom-color: rgb(var(--dark-purple));
  }
@@ -2032,7 +2033,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -734,7 +1451,7 @@
+@@ -734,7 +1452,7 @@
      filter: hue-rotate(46deg);
  }
  /* -------------------- */
@@ -2044,7 +2045,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -743,22 +1460,22 @@
+@@ -743,22 +1461,22 @@
      font-size: 1.14em;
      font-family: var(--UI-font);
  }
@@ -2074,7 +2075,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -778,7 +1495,7 @@
+@@ -778,7 +1496,7 @@
      background-color: rgb(var(--lighter-pink));
  }
  /* -------------------- */
@@ -2086,7 +2087,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -815,7 +1532,7 @@
+@@ -815,7 +1533,7 @@
  :root {
    --cloud-background-gradient-transition: calc(100vh - 30vw);
  }
@@ -2098,7 +2099,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -832,7 +1549,7 @@
+@@ -832,7 +1550,7 @@
      image-rendering: pixelated; 
  }
      /*---------------------------------------------------*/
@@ -2110,7 +2111,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -851,7 +1568,7 @@
+@@ -851,7 +1569,7 @@
      margin: 0 auto;
  }
      /*---------------------------------------------------*/
@@ -2122,7 +2123,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -868,24 +1585,24 @@
+@@ -868,24 +1586,24 @@
  a::selection {
      color: #e3edfa;
  }
@@ -2154,7 +2155,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -893,11 +1610,11 @@
+@@ -893,11 +1611,11 @@
      text-align: center;
      font-size: calc(var(--sp_header-title-size) * 0.8);
  }
@@ -2171,7 +2172,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -913,11 +1630,11 @@
+@@ -913,11 +1631,11 @@
      /*---------------------------------------------------*/
      /*--------------- KEY PAGE COMPONENTS ---------------*/
      /*---------------------------------------------------*/
@@ -2188,7 +2189,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -925,11 +1642,11 @@
+@@ -925,11 +1643,11 @@
      border-color: transparent;
      border-radius: var(--radius); 
      padding: 0.25rem 1.325rem;
@@ -2205,7 +2206,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -957,14 +1674,14 @@
+@@ -957,14 +1675,14 @@
  div[class*="collapsible-block"] {
      display: flow-root;
  }
@@ -2225,7 +2226,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -972,7 +1689,7 @@
+@@ -972,7 +1690,7 @@
      filter: unset;
      text-decoration: none;
  }
@@ -2237,7 +2238,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -982,10 +1699,10 @@
+@@ -982,10 +1700,10 @@
      background-color: rgb(var(--light-pink)); 
      font-family: var(--header-font); 
      font-size: 140%;
@@ -2253,7 +2254,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -996,14 +1713,14 @@
+@@ -996,14 +1714,14 @@
      border-image-outset: 0.1em;
      pointer-events: none;
  }
@@ -2273,7 +2274,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -1014,11 +1731,11 @@
+@@ -1014,11 +1732,11 @@
      border-image-outset: 0.1em;
      pointer-events: none;
  }
@@ -2290,7 +2291,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -1027,7 +1744,7 @@
+@@ -1027,7 +1745,7 @@
      background-color: rgb(var(--light-red)); 
      color: rgb(var(--text-color));
  }
@@ -2302,7 +2303,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -1038,12 +1755,12 @@
+@@ -1038,12 +1756,12 @@
      border-image-outset: 0.14em;
      pointer-events: none;
  }
@@ -2320,7 +2321,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -1159,17 +1876,17 @@
+@@ -1159,17 +1877,17 @@
  table.wiki-content-table :is(th,td) {
      border-color: rgb(var(--border-color-general));
  }
@@ -2344,7 +2345,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -1178,11 +1895,11 @@
+@@ -1178,11 +1896,11 @@
      box-sizing: border-box;
      background: rgba(var(--bg-color), 0.25);
  }
@@ -2362,7 +2363,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -1193,14 +1910,14 @@
+@@ -1193,14 +1911,14 @@
      font-size: .95em;
  }
  /* -------------------- */
@@ -2382,7 +2383,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -1257,7 +1974,7 @@
+@@ -1257,7 +1975,7 @@
      /*---------------------------------------------------*/
      /*------------------- BOTTOM HALF -------------------*/
      /*---------------------------------------------------*/
@@ -2394,7 +2395,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -1266,25 +1983,25 @@
+@@ -1266,25 +1984,25 @@
      background-color: rgb(var(--light-purple));
      color: rgb(var(--text-color));
  }
@@ -2428,7 +2429,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -1295,19 +2012,19 @@
+@@ -1295,19 +2013,19 @@
      font-weight: bold;
      color: rgb(var(--white));
  }
@@ -2454,7 +2455,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -1320,13 +2037,13 @@
+@@ -1320,13 +2038,13 @@
    background-color: rgb(var(--og-selection-color));
    color: rgb(var(--white));
  }
@@ -2473,7 +2474,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -1337,22 +2054,22 @@
+@@ -1337,22 +2055,22 @@
  .page-tags > span {
    border-top: none;
  }
@@ -2504,7 +2505,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -1360,12 +2077,12 @@
+@@ -1360,12 +2078,12 @@
  #container::before {
      background-position: right center, center;
  }
@@ -2522,7 +2523,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -1379,7 +2096,7 @@
+@@ -1379,7 +2097,7 @@
  #login-status {
      padding-left: 3em;
  }
@@ -2534,7 +2535,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -1413,16 +2130,16 @@
+@@ -1413,16 +2131,16 @@
  #content-wrap {
    position: relative;
    margin: 0 auto 0;

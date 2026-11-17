@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:broken-light-jp — origin CN, population #171 [GOSIGN2-LEDGER (b) row 171]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 86df16a59c8567a9fb22f9662876408cbce5345892c32bd6342b4e56ee5bfc50); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now c3eb642845b1d8c46c3df64c196c47d7ec924e5d046e69905bf4928ef7fd1f9e); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 13 errors / 1 warn / 1 info (pseudo-ref×10, hotlink×3); standing classes dispositioned in register c1 [T1-ROWS row 149; GOSIGN2-LEDGER (b) row 171]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page runtime-hotlink site-theme chain only; sample credit-modal (preview-form) + page-overflow 337–419px@320/375. [RENDER-ROWS-2 (RENDER-S2-E (CN2))]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 170, source LOCALIZE-S2-D]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 170]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 171]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:broken-light-jp.txt sha256:86df16a59c8567a9fb22f9662876408cbce5345892c32bd6342b4e56ee5bfc50; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit fb435643733dfd93d8dfa698861e4a59921d8f0f; candidate file pages/theme:broken-light-jp.txt sha256:c3eb642845b1d8c46c3df64c196c47d7ec924e5d046e69905bf4928ef7fd1f9e; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -166,6 +166,10 @@ Adjudication for this README (every block was read against the bytes): the 19 he
 ### The usage example's posting name
 
 The usage example at candidate L45 as built read `@@[[include :scp-jp:theme:broken-light]]@@`: the porting wave's repoint changed the branch prefix but left the plain name, so the example named a page that does not exist on scp-jp (the campaign's settled rule for usage examples, AGENTS.md §6). The usage-example population sweep has since completed the reference to `:scp-jp:theme:broken-light-jp` (sweep report SWEEP-USAGE.md in the campaign record, R/review-scout/; canonical commit b5cb724), one of its 287 repairs across 157 candidates. The companion line above it (candidate L44) names `:scp-jp:theme:black-highlighter-theme`, the production JP page, which is correct as built and was not a sweep line. This package documents the corrected candidate; its stamp reads STALE against the pre-repair verdict, by design.
+
+### A second, later repair — FIX-NAVLA2, canonical commit fb43564
+
+A repair landed after this package was built that the usage-sweep record above does not cover. FIX-NAVLA2 (report `R/review-scout/FIX-NAVLA2.md`, section 1; flagged first by FIX-NAVLA.md item 2) was landed in canonical commit `fb435643733dfd93d8dfa698861e4a59921d8f0f` ("pages: stylesheet-address repairs in four themes", 2026-11-17). The candidate had two `[[code]]` blocks — a 499 B customization sample at /1 (L81–99) and the 17,602 B stylesheet at /2 (L176–587) — while both delivery lines named /1; the original (rev 28) delivered block 2 by name, and the JP Black Highlighter base include masked the defect in render checks. The repair changed two addresses only: the head module's `@import` (candidate L4) and the interwiki-style frame's `theme=` (candidate L17) now read `local--code/theme%3Abroken-light-jp/2`. The draft-host probe served /2 at 17,602 B (the stylesheet, opening with the BHL normalize @imports) against /1's 499 B, and the T1 checker's 13/1/1 finding set was unchanged apart from the L4 pseudo-ref's block number; class (i) errors 0 before and after. This package was rebuilt from the post-repair canonical bytes: `candidate.txt` recopied from `pages/theme:broken-light-jp.txt`, `diff.md` and the stamp regenerated. The regenerated stamp reads STALE with the current file sha256 — no re-judgement is fabricated and the frozen GOSIGN2 ledger remains the verdict record.
 
 ## Change set outside the two diffed files
 

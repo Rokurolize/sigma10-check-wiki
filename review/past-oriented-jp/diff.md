@@ -8,11 +8,11 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 528 |
-| candidate.txt | 516 |
-| Added | +131 |
-| Review-stage comments | 0 of the +131 added lines |
-| Removed | -148 |
-| Hunks | 8 |
+| candidate.txt | 533 |
+| Added | +194 |
+| Review-stage comments | 0 of the +194 added lines |
+| Removed | -194 |
+| Hunks | 7 |
 
 ```diff
 --- original.txt
@@ -66,7 +66,7 @@ with `python3 review/build_review.py`; verify with
 +**翻訳責任者:** AI
 +**翻訳年:** 2026
 +**原題:** 과거지향 테마
-+**著作権者:** 原語版ページの作成者に同じ（scpko の theme:past-oriented）
++**著作権者:** [[*user thd-glasses]]
 +**作成年:** 2024
 +**初訳時参照リビジョン:** 20
 +**元記事リンク:** [*https://scpko.wikidot.com/theme:past-oriented 과거지향 테마]
@@ -250,7 +250,7 @@ with `python3 review/build_review.py`; verify with
  
  @@@@
  @@@@
-@@ -146,44 +141,59 @@
+@@ -146,44 +141,60 @@
  
  [[div style="background: #FFF; width: 89%; margin: 1em 3% 1em 8%;"]]
  [[div class="format comment" style="width: 100%; margin: 0;"]]
@@ -318,15 +318,16 @@ with `python3 review/build_review.py`; verify with
 +
 +/*
 +    과거지향 / Past-Oriented — Ported for SCP-JP (theme:past-oriented rev 20 on scpko).
-+    原語版は本体 CSS を code file 0・2・3 に分割して @import しています。JP 候補は 1 本のコード
-+    ファイルに統合しました。書体は KO の UnJamoBatang / Shilla Culture 系を Google の
++    原語版は本体 CSS を code file 0・2・3 に分割して @import しています。JP 候補は本体と書式を
++    code file /1 に統合し、dark バリアントは原語版と同様に code file /2 として dark 引数で
++    ゲートして読み込みます。書体は KO の UnJamoBatang / Shilla Culture 系を Google の
 +    Gowun Batang で代替しています。
 +*/
 +/* 日本語フォント (JP localization) */
  html, body, #container {
    overflow-x: hidden;
  }
-@@ -237,7 +247,7 @@
+@@ -237,7 +248,7 @@
    left: -15px;
    width: 120px;
    height: 120px;
@@ -335,23 +336,84 @@ with `python3 review/build_review.py`; verify with
    z-index: 5;
  }
  
-@@ -368,14 +378,9 @@
+@@ -368,14 +379,72 @@
      content: "홍익역사연구회";
    }
  }
--[[/code]]
--
++
++div.format {
++  --main: 100, 100, 150;
++  --dark: 25, 25, 70;
++  --light: 150, 150, 200;
++  --bg: 255, 255, 255;
++  --text: 20, 20, 20;
++
++  background: rgba(var(--light), 0.1);
++  color: rgb(var(--text));
++  padding: 2em;
++  box-sizing: border-box;
++}
++
++div.format.paper {
++  width: 90%;
++  margin: 1em auto;
++}
++
++div.format.paper > h1, div.format.paper > h2, div.format.paper > h3 {
++  text-align: center;
++}
++
++div.format.paper > h1:first-of-type {
++  font-size: 210%;
++  font-weight: 900;
++}
++
++div.format.comment {
++  position: relative;
++  width: 85%;
++  margin: 1em 5% 1em 10%;
++}
++
++div.format.comment.reply {
++  width: 80%;
++  margin: 1em 5% 1em 15%;
++}
++
++div.format.comment > h1:first-of-type {
++  background: rgb(var(--main));
++  color: #EEF;
++  margin: -1.1em -1.1em 1em -1.1em;
++  padding: 0.4em;
++  width: calc(100% + 1.4em);
++  font-size: 140%;
++}
++
++div.format.comment::before {
++  content: "";
++  position: absolute;
++  top: 5px;
++  left: max(calc(-2vw - 10px), -25px);
++  width: min(2vw, 15px);
++  height: 15px;
++  border: solid rgb(var(--main));
++  border-width: 0 0 3px 3px;
++}
++
++
++
+ [[/code]]
+ 
 -+ 검붉은 홍익사 버전
 -
 -[[code type="CSS"]]
-+
++[[code type="css"]]
  @font-face {
      font-family: 'Shilla_CultureB-Bold';
 -    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/Shilla_CultureB-Bold.woff2') format('woff2');
      font-weight: 700;
      font-style: normal;
  }
-@@ -400,7 +405,7 @@
+@@ -400,7 +469,7 @@
  }
  
  #header-extra-div-1 {
@@ -360,55 +422,106 @@ with `python3 review/build_review.py`; verify with
    filter: drop-shadow(0 0 30px rgb(30, 0, 0));
  }
  
-@@ -437,11 +442,6 @@
-     margin-left: 130px;
+@@ -438,91 +507,27 @@
    }
  }
--[[/code]]
+ [[/code]]
 -
 -+ 요주의 단체 서식
 -
 -[[code type="CSS"]]
- 
- div.format {
-   --main: 100, 100, 150;
-@@ -500,29 +500,17 @@
-   border: solid rgb(var(--main));
-   border-width: 0 0 3px 3px;
- }
-+
-+
-+
- [[/code]]
+-
+-div.format {
+-  --main: 100, 100, 150;
+-  --dark: 25, 25, 70;
+-  --light: 150, 150, 200;
+-  --bg: 255, 255, 255;
+-  --text: 20, 20, 20;
+-
+-  background: rgba(var(--light), 0.1);
+-  color: rgb(var(--text));
+-  padding: 2em;
+-  box-sizing: border-box;
+-}
+-
+-div.format.paper {
+-  width: 90%;
+-  margin: 1em auto;
+-}
+-
+-div.format.paper > h1, div.format.paper > h2, div.format.paper > h3 {
+-  text-align: center;
+-}
+-
+-div.format.paper > h1:first-of-type {
+-  font-size: 210%;
+-  font-weight: 900;
+-}
+-
+-div.format.comment {
+-  position: relative;
+-  width: 85%;
+-  margin: 1em 5% 1em 10%;
+-}
+-
+-div.format.comment.reply {
+-  width: 80%;
+-  margin: 1em 5% 1em 15%;
+-}
+-
+-div.format.comment > h1:first-of-type {
+-  background: rgb(var(--main));
+-  color: #EEF;
+-  margin: -1.1em -1.1em 1em -1.1em;
+-  padding: 0.4em;
+-  width: calc(100% + 1.4em);
+-  font-size: 140%;
+-}
+-
+-div.format.comment::before {
+-  content: "";
+-  position: absolute;
+-  top: 5px;
+-  left: max(calc(-2vw - 10px), -25px);
+-  width: min(2vw, 15px);
+-  height: 15px;
+-  border: solid rgb(var(--main));
+-  border-width: 0 0 3px 3px;
+-}
+-[[/code]]
 -
  [[/collapsible]]
 +
 +[[include :scp-jp:component:license-box-backend
-+|author=scpko theme:past-oriented の作者]]
++|author=thd-glasses]]
 +
-+> **画像・フォントの出典:** 原語版の theme:past-oriented の記載に従います。KO 側の添付は候補ページに再ホストし、ウェブフォントは Google Fonts の同等書体に差し替えています。原語版にライセンス表記が無い画像は、投稿前に著者へ確認してください。
++> **画像・フォントの出典:** 原語版の theme:past-oriented の記載に従います。弘益寺のロゴは [[*user AXOL0TL]] 原案、[[*user thd-glasses]] 制作です。KO 側の添付は候補ページに再ホストし、ウェブフォントは Google Fonts の同等書体に差し替えています。原語版にライセンス表記が無い画像は、投稿前に著者へ確認してください。
 +
 +[[include :scp-jp:component:license-box-end]]
 +
  [[/iftags]]
--
+ 
 -[[module CSS]]
 -@import url("https://scpko.wdfiles.com/local--code/theme:past-oriented/0");
 -[[/module]]
 -
 ->[[ift{$dark}gs -테마]]
-->[[iftags]]
--[[module CSS]]
++>[[ift{$dark}gs -テーマ]]
+ >[[iftags]]
+ [[module CSS]]
 -@import url("https://scpko.wdfiles.com/local--code/theme:past-oriented/2");
--[[/module]]
-->[[/iftags]]
-->[[/ift{$dark}gs]]
--
++@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Apast-oriented-jp/2');
+ [[/module]]
+ >[[/iftags]]
+ >[[/ift{$dark}gs]]
+ 
 -[[iftags +테마]]
--[[module CSS]]
++[[iftags +テーマ]]
+ [[module CSS]]
 -@import url("https://scpko.wdfiles.com/local--code/theme:past-oriented/2");
--[[/module]]
--[[/iftags]]
++@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Apast-oriented-jp/2');
+ [[/module]]
+ [[/iftags]]
 -
 -[[module CSS]]
 -@import url("https://scpko.wdfiles.com/local--code/theme:past-oriented/3");

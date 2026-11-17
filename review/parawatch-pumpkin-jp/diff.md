@@ -40,7 +40,7 @@ with `python3 review/build_review.py`; verify with
 +**作成年:** 2022
 +**初訳時参照リビジョン:** 11
 +**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:parawatch-pumpkin ソース]
-+**基盤:** [[[theme:anon|パラウォッチ・アノンテーマ]]]（[[*user Lt Flops]]作、theme:anon-jp 経由。Creepypasta（[[*user The Great Hippo]]作）はインラインで同梱）
++**基盤:** [[[theme:anon-jp|パラウォッチ・アノンテーマ]]]（[[*user Lt Flops]]作、theme:anon-jp 経由。Creepypasta（[[*user The Great Hippo]]作）はインラインで同梱）
 +[[include :scp-jp:credit:end-preview]]
  [[div style="display: none;"]]
 -[[include :scp-wiki:theme:creepypasta]]
@@ -53,7 +53,7 @@ with `python3 review/build_review.py`; verify with
 -[[module Rate]]
 -[[/>]]
 +[[div class="blockquote"]]
-+これは[[*user stormbreath]]によるパラウォッチ・パンプキンテーマです。[[*user Lt Flops]]による**[[[theme:anon|パラウォッチ・アノンテーマ]]]**の派生版であり、さらにそれ自体が[[*user The Great Hippo]]による**[[[theme:creepypasta|クリーピーパスタテーマ]]]**の派生版です。
++これは[[*user stormbreath]]によるパラウォッチ・パンプキンテーマです。[[*user Lt Flops]]による**[[[theme:anon-jp|パラウォッチ・アノンテーマ]]]**の派生版であり、さらにそれ自体が[[*user The Great Hippo]]による**[[[theme:creepypasta|クリーピーパスタテーマ]]]**の派生版です。
  
 -[[div class="blockquote"]]
 -This is the Parawatch Pumpkin Theme by [[*user stormbreath]]. It is a variant of the **[[[theme:anon|Parawatch Anon Theme]]]** by [[*user Lt Flops]], which is itself a variant of the **[[[theme:creepypasta|Creepypasta Theme]]]** by [[*user The Great Hippo]].
