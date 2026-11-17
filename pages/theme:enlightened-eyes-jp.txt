@@ -1,5 +1,5 @@
 [[module CSS]]
-@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aenlightened-eyes-jp/1');
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aenlightened-eyes-jp/6');
 [[/module]]
 
 [[include :scp-jp:component:interwiki-style
@@ -12,7 +12,7 @@
 ]]
 [[include :scp-jp:component:interwiki-style
 | priority=3
-| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aenlightened-eyes-jp/1
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aenlightened-eyes-jp/6
 ]]
 
 [[iftags +テーマ]]
@@ -2609,3 +2609,26 @@ span.pw-arr {
 [[/collapsible]]
 
 [[/iftags]]
+
+[[module CSS]]
+body {
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='M12 3v6M12 15v6M3 12h6M15 12h6' fill='none' stroke='%230E0E0E' stroke-width='3' stroke-opacity='.6'/%3E%3Cpath d='M12 3v6M12 15v6M3 12h6M15 12h6' fill='none' stroke='%23F35541' stroke-width='1.25'/%3E%3Crect x='11' y='11' width='2' height='2' fill='%23EAE3DE'/%3E%3C/svg%3E") 12 12, crosshair;
+}
+
+#page-title,
+div.parapost-body,
+#page-content :is(p, li, dd, dt, td, th, blockquote, h1, h2, h3, h4, h5, h6, .code) {
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='M12 6v12' fill='none' stroke='%230E0E0E' stroke-width='3' stroke-opacity='.6'/%3E%3Crect x='10.5' y='3' width='3' height='3' fill='%230E0E0E' fill-opacity='.6'/%3E%3Crect x='10.5' y='18' width='3' height='3' fill='%230E0E0E' fill-opacity='.6'/%3E%3Cpath d='M12 6v12' fill='none' stroke='%23EAE3DE' stroke-width='1.25'/%3E%3Crect x='11' y='3.5' width='2' height='2' fill='%23EAE3DE'/%3E%3Crect x='11' y='18.5' width='2' height='2' fill='%23EAE3DE'/%3E%3C/svg%3E") 12 12, text;
+}
+
+a, button, .collapsible-block-link, .yui-nav li a, .page-rate-widget-box a {
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5' fill='none' stroke='%230E0E0E' stroke-width='3' stroke-opacity='.6'/%3E%3Cpath d='M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5' fill='none' stroke='%23F35541' stroke-width='1.25'/%3E%3Crect x='11' y='11' width='2' height='2' fill='%23EAE3DE'/%3E%3C/svg%3E") 12 12, pointer;
+}
+
+textarea,
+input:not([type]),
+input:is([type=text], [type=search], [type=email], [type=password], [type=url]),
+[contenteditable] {
+    cursor: text;
+}
+[[/module]]
