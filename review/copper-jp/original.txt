@@ -1,0 +1,372 @@
+[[iftags +版式]]
+[[module CSS]]
+@import url("https://scp-wiki-cn.wikidot.com/fragment:parallel/code/1");
+
+:root:not(:has(div.light-switch div.collapsible-block-unfolded[style*="none"])) {
+    --page-bg-color: 42, 52, 57;
+    --basalt-overtone: 50, 50, 50;
+    --basalt-undertone: 73, 90, 100;
+    --basalt-bright-element-color: 84, 102, 114;
+    --basalt-dark-element-color: 63, 78, 86;
+}
+
+div#page-title::before {
+    content: "//";
+    color: rgb(var(--gold));
+}
+
+div.hover {
+    opacity: 0;
+    transition: ease 0.25s;
+}
+
+div.hover:hover {
+    opacity: 1;
+}
+
+div.ctn > img {
+    opacity: 1;
+    transition: ease 0.25s;
+}
+
+div.ctn:hover > img {
+    opacity: 0;
+}
+[[/module]]
+
+[[div class="pseudocrumbs" style="font-weight: normal;"]]
+**又名：**你游玩 Minecraft 时包里攒了一堆又不知道怎么处理的矿物 版式
+[[/div]]
+
+[[>]]
+[[module rate]]
+[[/>]]
+
+[[include :scp-wiki-cn:credit:start]]
+页面信息
+[[include :scp-wiki-cn:credit:more]]
+更多页面信息
+[[include :scp-wiki-cn:credit:end]]
+
+[[div style="display: grid; grid-template-columns: 1.5fr 5fr; grid-template-areas: 'a b'; max-width: 44rem; margin: auto; align-items: center;"]]
+
+[[div style="grid-area: a;"]]
+[[image https://ah-sandbox.wdfiles.com/local--files/hormress-s-logos/ARED_2.svg]]
+[[/div]]
+
+[[div class="ctn" style="position: relative; opacity: 0.85; grid-area: b;"]]
+[[image https://ah-sandbox.wikidot.com/local--files/theme:parallel/parallel-theme-logo.svg]]
+[[div class="hover" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"]]
+[[image https://ah-sandbox.wikidot.com/local--files/theme:parallel/parallel-theme-logo-zh.svg]]
+[[/div]]
+[[/div]]
+
+[[/div]]
+
+这是为一个基于[[[theme:parallel|平行]]]的简单美学版式，为[[[SCP-CN-088|破茧]]]制作。此版式提供某种唤起回忆的风格。使用以下代码引入此版式：
+
+[[div class="code"]]
+@@[[include :scp-wiki-cn:theme:parallel]]@@
+@@[[include :scp-wiki-cn:theme:copper]]@@
+[[/div]]
+
+另有一个青色的预制颜色变体：
+
+[[div class="code"]]
+@@[[include :scp-wiki-cn:theme:parallel]]@@
+@@[[include :scp-wiki-cn:theme:copper bronze=*]]@@
+[[/div]]
+
+[[div class="light-switch"]]
+[[collapsible show="点此预览" hide="取消预览"]]
+[[/collapsible]]
+[[/div]]
+
++ 元素示例
+
+[[include component:image-block name=https://bhl.scpwikicn.com/img/logo.svg|caption=一张什么图，看不清也没关系，因为这个东西的作用是给你预览图片块|width=200px]]
+
+可通过⑨个连字符“@@---------@@”创建水平分割线。若它未被放在其他部件（诸如引用块）中，则会左右延伸贯穿页面。这种将文件分割为多个部分的线就是分割线。
+
+---------
+
+标题可通过在一行字起始处输入 1 至 6 个加号“+”来创建。
+
+[[collapsible show="+ 折叠块" hide="- 收起"]]
++* 一号标题
+++* 二号标题
++++* 三号标题
+++++* 四号标题
++++++* 五号标题
+++++++* 六号标题
+[[/collapsible]]
+
+[[tabview]]
+[[tab 分页]]
+此为分页（tab view）。
+[[/tab]]
+[[tab 分页]]
+看，这有更多文字。
+
+多么精巧绝伦。
+[[/tab]]
+[[tab 长 Tab]]
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+[[/tab]]
+[[tab 由于一些奇怪的原因，这个空 tab 有一个很长的名字。我想知道为什么？这很奇怪。]]
+[[/tab]]
+[[tab 空 Tab]]
+[[/tab]]
+[[tab 空 Tab]]
+[[/tab]]
+[[tab 空 Tab]]
+[[/tab]]
+[[tab 空 Tab]]
+Rick Astley
+[[/tab]]
+[[tab 空 Tab]]
+[[/tab]]
+[[/tabview]]
+
+> 这是一个引用块，在一行字的起始处加上“> ”来创建。
+>
+> 更多文字
+> -----
+> 一条分割线
+>
+>> 嵌套引用块
+
+||~ 这是 ||~ 表格 ||
+|| 不用烦人的{{@@[[cell]]@@}} || 就没法跨列 ||
+|||| 为啥！？ ||
+
+[[/iftags]]
+
+[[module CSS]]
+/* https://pixabay.com/photos/stone-rock-quarry-quarrying-237745/ */
+:root {
+
+    --body-image: url("https://ah-sandbox.wikidot.com/local--files/theme:copper/quarry.jpg");
+
+    --basalt-primary-color: 254, 254, 254;
+    --basalt-secondary-color: var(--gold);
+    --basalt-tertiary-color: var(--gold);
+    --basalt-main-text-color: 20, 20, 20;
+    --basalt-overtone: 50, 50, 50;
+
+    --gold: 254, 224, 124;
+    --grey: 66, 66, 72;
+
+    --page-bg-color: 81, 18, 0;
+    --basalt-overtone: 40, 14, 0;
+    --basalt-undertone: 107, 22, 20;
+    --basalt-bright-element-color: 124, 22, 20;
+    --basalt-dark-element-color: 90, 20, 10;
+
+    --basalt-darker-element-color: var(--page-bg-color);
+
+    --header-h1-height: 8rem;
+    --top-bar-height: 2.5rem;
+    --title-size: 2.25rem;
+    --subtitle-size: 0.95rem;
+    --header-final-height: calc(var(--header-h1-height) + 2 * var(--top-bar-height) + var(--header-border-width));
+    --side-bar-button-width: var(--top-bar-height);
+    --search-button-width: var(--top-bar-height);
+    --user-button-width: var(--top-bar-height);
+
+    --blockquote-background-color: 245, 244, 244;
+    --bottom-area-background-color: var(--gold);
+
+    --diagonal-stripes-color: var(--basalt-main-text-color);
+
+    --four-color: var(--gold) !important;
+
+    --mono-font: "JetBrains Mono", "Noto Sans SC", monospace;
+    --header-font: var(--mono-font);
+    --title-font: var(--mono-font);
+    --body-font: "Noto Sans", "Noto Sans SC", sans-serif;
+}
+
+/* {$bronze}/
+:root {
+    --page-bg-color: 42, 52, 57;
+    --basalt-overtone: 50, 50, 50;
+    --basalt-undertone: 73, 90, 100;
+    --basalt-bright-element-color: 84, 102, 114;
+    --basalt-dark-element-color: 63, 78, 86;
+}
+/{$bronze} */
+
+body {
+    background-color: rgb(var(--page-bg-color));
+}
+
+body::after {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: var(--body-image);
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    mix-blend-mode: luminosity;
+    opacity: 0.25;
+    z-index: -1;
+}
+
+div#header {
+    contain: initial;
+    height: var(--header-final-height);
+    position: static;
+    border-bottom: solid var(--header-border-width) rgb(var(--gold));
+    background-color: transparent;
+    grid-template-areas:
+        '. . search user'
+        'h-link h-link h-link h-link'
+        'top-bar top-bar top-bar top-bar';
+    grid-template-columns: var(--side-bar-button-width) 1fr var(--search-button-width) var(--user-button-width);
+    grid-template-rows: var(--top-bar-height) 1fr var(--top-bar-height);
+    margin: 0rem;
+}
+
+div#top-bar div.mobile-top-bar > .open-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 8;
+    width: var(--side-bar-button-width);
+    height: var(--top-bar-height);
+    -webkit-backdrop-filter: blur(var(--basalt-UI-blur));
+    backdrop-filter: blur(var(--basalt-UI-blur));
+    background-color: rgba(var(--page-bg-color), 0.8);
+}
+
+div#side-bar::after,
+div#side-bar::before {
+    top: 0;
+    height: var(--top-bar-height);
+    transition: left var(--side-bar-transition);
+}
+
+div#side-bar {
+    margin-top: 0;
+    height: 100vh;
+}
+
+div#side-bar::before {
+    backdrop-filter: blur(var(--basalt-UI-blur));
+    background-color: rgba(var(--page-bg-color), 0.8);
+}
+
+div#side-bar:is(:hover, :focus-within)::before,
+div#side-bar:is(:hover, :focus-within)::after {
+    left: var(--side-bar-width);
+    height: var(--top-bar-height);
+}
+
+div#top-bar {
+    height: var(--top-bar-height);
+}
+
+div#top-bar div[class*="top-bar"] > ul {
+    width: var(--main-content-width);
+    max-width: 100dvw;
+    margin-inline: auto;
+}
+
+div#top-bar div[class*="top-bar"] > ul > li {
+    flex-grow: 1;
+}
+
+div#header h1 {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: var(--header-h1-height);
+}
+
+div#header h1 a {
+    justify-content: center;
+    width: 100%;
+    height: var(--header-h1-height);
+    display: grid;
+    grid-template-areas: "a";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    pointer-events: none;
+    gap: 0;
+    align-items: center;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div#header h1 a::before,
+div#header h1 a span {
+    pointer-events: auto;
+    grid-area: a;
+}
+
+div#header h1 a::before {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: var(--header-h1-height);
+    background-position: center top;
+    background-size: auto 95.5%;
+    -webkit-mask-image: none;
+    mask-image: none;
+    opacity: 0.1;
+}
+
+div#header h1 span {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+div#header h1 span::after {
+    margin-bottom: 0;
+}
+
+div#top-bar div[class*="top-bar"] ul li ul li a {
+    box-shadow: none;
+}
+
+div#main-content {
+    background-color: rgb(var(--basalt-primary-color));
+    padding: 1rem 1.5rem 1.5rem;
+    box-sizing: border-box;
+}
+
+:is(.blockquote, blockquote, .code) :is(.blockquote, blockquote, .code) {
+    box-shadow: none;
+}
+[[/module]]
