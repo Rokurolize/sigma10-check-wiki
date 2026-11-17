@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:saphir-jp — origin EN, population #132 [GOSIGN2-LEDGER (b) row 132]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 3ed94621d2f02020e1cd1d5934ff78aa6174d19c09dfd9ca4df36054f391af48); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now e92d55d70549f1e64ef518cc50b78ba7a1da49417b53d7433e15b3ba39bc5e46); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 5 errors / 0 warns / 2 infos (pseudo-ref×5); standing classes dispositioned in register c1 [T1-ROWS row 127; GOSIGN2-LEDGER (b) row 132]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page page-overflow 682/685px@320/375 + 989px@768 chromium and 672/675px + 996px@768 webkit (T3: visually confirmed, driven by cross-cutting preview-chrome rate module), runtime-hotlink site-theme chain only; sample credit-modal (preview-form), page-overflow 706/708px@320/375 + 1031/1036px@768 (706/708 = cross-cutting static-credit shape); T3 otherwise clean (sample section 27 bibliography-not-found = possible stale static-cache, not a theme defect); saphir-header/sapphire-logo missing = deferred assets. [RENDER-ROWS-RERUN16 (EN18) — supersedes the RENDER-ROWS-2 row for this theme, rule S1]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 3 [LOCALIZE-ROWS row 132, source LOCALIZE-S2-C]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 132]
 - FIX5 re-judgement: item 26 (class B) DISPOSITIONED — FIX5-FURNA (no edit): original rev 14 ships the identical Rate inside its specimen at orig L211; candidate L210 sits inside the format-example block, 186 lines from the credit module at L24; the class-B labelled-specimen exception applies verbatim [GOSIGN2-LEDGER-SUPPLEMENT (a) item 26]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:saphir-jp.txt sha256:3ed94621d2f02020e1cd1d5934ff78aa6174d19c09dfd9ca4df36054f391af48; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit cc4b4d8827291483ad7643d0ea2d20fa5f205ca9; candidate file pages/theme:saphir-jp.txt sha256:e92d55d70549f1e64ef518cc50b78ba7a1da49417b53d7433e15b3ba39bc5e46; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 Status: complete (R-disp-11 lane, 2026-11-17)
@@ -329,6 +329,10 @@ Defect flags (this lane does not edit candidates):
 
 - F1 (minor): candidate L63 annotates the French branch link (https://fondationscp.wikidot.com) with the annotation for the English version; the original L64 names the same target the French SCP Branch. One-word correction for the coordinator's fix lane.
 - O1 (observation, not a defect): the license-box wrapper includes are dropped while the licensed content stands (section 8, block B153). No licensed field was lost; recorded so the shape is not re-charged as a KB-63 drop.
+
+### Repair landed after this package was built
+
+- F1 repaired by FIX-RDISP11 (record R/review-scout/FIX-RDISP11.md), landed in commit cc4b4d8: the annotation on the French branch link at candidate L63 now reads （フランス語版）; the same line's SAPPHIRE（英語版） annotation is unchanged, and a whole-file census confirmed L63 was the only mis-annotated instance. Checker finding output is byte-identical before and after (5 errors / 0 warns / 2 infos, the batch baseline). candidate.txt is recopied from the repaired candidate in this refresh; the regenerated stamp reads STALE, no re-judgement is fabricated, and the frozen ledger remains the verdict record.
 
 ## Appendix — residue blocks
 

@@ -46,7 +46,7 @@ adjudicated explanation.
 | 9 | 1 | 55–55 | 54–54 | +1/−1 | residual | = ,,このテーマは以下のコンポーネントとその変数を使用しています。,, |
 | 10 | 1 | 57–58 | 56–57 | +2/−2 | residual | * ,,[[[theme:flopstyle]]]、[[user Lt Flops]]作,, |
 | 11 | 1 | 62–62 | 61–61 | +1/−1 | residual | = **__このテーマは何に使いますか？__** |
-| 12 | 1 | 64–64 | 63–63 | +1/−1 | residual | = このテーマは、**[*https://fondationscp.wikidot.com SCPフランス支部（英語版）]**の要注意団体[*https:… |
+| 12 | 1 | 64–64 | 63–63 | +1/−1 | residual | = このテーマは、**[*https://fondationscp.wikidot.com SCPフランス支部（フランス語版）]**の要注意団体[*htt… |
 | 13 | 1 | 66–66 | 65–65 | +1/−1 | residual | = 詳細は以下を参照してください。 |
 | 14 | 1 | 69–69 | 68–68 | +1/−1 | residual | **神秘主義終焉のための無神論者協会**、通称「**SAPPHIRE**」（フランス語では“SAPHIR”、//La Société Athée Pour… |
 | 15 | 1 | 71–71 | 70–70 | +1/−1 | residual | 知られている中で最古のSAPPHIRE関連活動は1909年まで遡りますが、SAPPHIREが大幅な発展を遂げたと思われる1960年代まで、この組織は不透明… |
@@ -299,7 +299,7 @@ adjudicated explanation.
 += **__このテーマは何に使いますか？__**
  
 -= This theme represents the Group of Interest [[[saphir-centre|SAPPHIRE]]] from the **[[[https://fondationscp.wikidot.com/|French SCP Branch]]]**.
-+= このテーマは、**[*https://fondationscp.wikidot.com SCPフランス支部（英語版）]**の要注意団体[*https://scp-wiki.wikidot.com/saphir-centre SAPPHIRE（英語版）]を表現します。
++= このテーマは、**[*https://fondationscp.wikidot.com SCPフランス支部（フランス語版）]**の要注意団体[*https://scp-wiki.wikidot.com/saphir-centre SAPPHIRE（英語版）]を表現します。
  
 -= For further information:
 += 詳細は以下を参照してください。
