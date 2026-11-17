@@ -1,0 +1,515 @@
+[[iftags +theme]]
+[[module css]]
+@import url("https://nu-scptheme.github.io/Black-Highlighter/stable/styles/normalize.min.css");
+@import url("https://nu-scptheme.github.io/Black-Highlighter/stable/styles/black-highlighter.min.css");
+[[/module]]
+
+[[include :scp-wiki:component:interwiki-style
+| priority=1
+| theme=https://nu-scptheme.github.io/Black-Highlighter/css/min/normalize.min.css
+]]
+
+[[include :scp-wiki:component:interwiki-style
+| priority=2
+| theme=https://nu-scptheme.github.io/Black-Highlighter/css/min/black-highlighter.min.css
+]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
+
+
+[[div_ style="display:inline-flex;width:100%;filter:invert(1);"]]
+[[image https://scp-wiki.wdfiles.com/local--files/theme%3Ablack-highlighter-theme/black-highlighter-logo.svg]]
+[[/div]]
+
++* Usage
+
+This is a Black Highlighter based theme by [[*user Heck_Tech]] and [[*user dddaker]] for the Febris Pharmaceuticals GOI. Here you will find a basic aesthetic theme and some custom //[[divs]]// you can use to enhance your articles!
+
+You will need to import the Black Highlighter theme as well in order to use this theme. [[[theme:black-highlighter-theme|To learn more go here]]].
+
+On any wiki:
+
+[[div class="code"]]
+@@[[include :scp-wiki:theme:black-highlighter-theme]]@@
+@@[[include :scp-wiki:theme:febris-pharmaceuticals-theme]]@@
+[[/div]]
+
+
+
+@@ @@
+
+-----
+
+++ Colors
+
+[[include :scp-wiki:component:theme-squares -=-
+| color1-name=Cool Purple
+| color1-variable=--cool-purple
+| color1-info=(207, 143, 250)
+| color2-name=Febris Pharma
+| color2-variable=--febris-pharma
+| color2-info=(163, 39, 245)
+| color2-has-light-text=1
+| subcolor1-name=Dark Lavender
+| subcolor1-variable=--dark-lavender
+| subcolor1-info=(124, 9, 200)
+| subcolor2-name=Old Paper
+| subcolor2-variable=--old-paper
+| subcolor2-info=(255, 251, 245)
+| subcolor3-name=Deep Purple
+| subcolor3-variable=--deep-purple
+| subcolor3-info=(15, 1, 24)
+| subcolor3-has-light-text=1
+| subcolor4-name=Eigengrau
+| subcolor4-variable=--eigengrau
+| subcolor4-info=(22, 22, 29)
+| subcolor4-has-light-text=1
+| subcolor5-name=Medium Tint
+| subcolor5-variable=--medium-tint
+| subcolor5-info=(69, 5, 112)
+| subcolor5-has-light-text=1
+| subcolor6-name= Light Lavender
+| subcolor6-variable=--light-lavender
+| subcolor6-info=(151, 11, 244)
+]]
+
+-----
+
+++ Formatting Examples
+
+
+[[[This link doesn't exist.]]]
+[https://scp-wiki.wikidot.com/delendases-f3b3r-x44nm-pll77 This link does exist.]
+[https://scp-sandbox-3.wikidot.com/febris-theme-new You are here.]
+
+@@ @@
+
+
+[[=]]
+**Quoteblock**
+[[/=]]
+
+> Remember the space after the ">"!
+>
+> Another line!
+>> A nested block![[footnote]]This is a footnote.[[/footnote]]
+
+[[=]]
+**Tables**
+[[/=]]
+
+||~ You should ||~ know ||
+|| How to ||= make me ||
+|||| already ||
+
+[[=]]
+**Tabulator**
+[[/=]]
+
+[[tabview]]
+[[tab Tabulator]]
+Just use your imagination and pretend there's `Lorem Ipsum` here.
+[[/tab]]
+[[tab Tabulation]]
+Hey look, more text here.
+
+How quaint.
+[[/tab]]
+[[tab Long Tab]]
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+[[/tab]]
+[[tab Empty Tab]]
+[[/tab]]
+[[tab Empty Tab]]
+[[/tab]]
+[[tab Empty Tab]]
+[[/tab]]
+[[tab Empty Tab]]
+[[/tab]]
+[[tab Empty Tab]]
+[[/tab]]
+[[/tabview]]
+
+
+-----
+
+++ Custom Divs
+
+@@ @@
+
+[[div class="leaflet"]]
+
+This the main div for Febris Pharmaceuticals-based texts, including the GoI Format. You can use this div class by using:
+
+> @@[[div class="leaflet"]]@@
+>
+> @@[[/div]]@@
+[[/div]]
+
+@@ @@
+
++* Code
+@@ @@
+[[collapsible show="▼ Show code" hide="▲ Hide code"]]
+[[code type="css"]]
+/*
+[FEBRIS PHARMACEUTICALS THEME]
+by: Heck_Tech and dddaker
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Oxanium&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Datatype&display=swap');
+
+:root {
+    --theme-base: "black-highlighter";
+    --theme-id: "febris-pharmaceuticals-theme";
+    --theme-name: "Febris Pharmaceuticals";
+
+    /* PAGE */
+
+      --logo-image: url("https://scp-wiki.wikidot.com/local--files/heck-s-cool-corner/Logo%20Febris%20Nuovo");
+
+      --header-title: "Febris Pharmaceuticals";
+      --header-subtitle: "Nostrum Malum, Nostra Salus";
+
+     --mono-font: "IBM Plex Mono", monospace;
+     --header-font: "Oxanium", sans-serif;
+     --title-font: "IBM Plex Mono", monospace;
+ 
+  /* PURPLES */
+
+--light-lilly: 226, 187, 252;
+--cool-purple: 207, 143, 250;
+--light-purple: 188, 99, 248;
+--febris-pharma: 163, 39, 245;
+--light-lavender: 151, 11, 244;
+--dark-lavender: 124, 9, 200;
+--light-tint: 96, 7, 156;
+--medium-tint: 69, 5, 112;
+--dark-tint: 42, 3, 68;
+
+/* WHITES */
+
+--white-purple: 245, 231, 254;
+--old-paper: 255, 251, 245;
+
+/* BLACKS */
+
+--eigengrau: 22, 22, 29;
+--deep-purple: 15, 1, 24;
+ 
+   /* Colors */
+   /* white */
+    --white-monochrome: 252, 252, 252;
+    
+    /* v light gray for blockquotes and stuff */
+    --pale-gray-monochrome: 255, 251, 245;
+    
+    /* very light pale gray for misc. use */
+    --light-pale-gray-monochrome: 22, 22, 29;
+    
+    /* very light accent gray for misc. use */
+    --very-light-gray-monochrome: 22, 22, 29;
+    
+    /* light accent gray for login status */
+    --light-gray-monochrome: 22, 22, 29;
+    
+    /* gray */
+    --gray-monochrome:  255, 251, 245;
+    
+    /* dark accent gray for sidebar background */
+    --dark-gray-monochrome: 22, 22, 29;
+    
+    /* black */
+    --black-monochrome: 22, 22, 29;
+    
+    /* subdued theme color */
+    --pale-accent: 163, 39, 245;
+    
+    /* vivid theme color the "default" accent color */
+    --bright-accent: 124, 9, 200;
+    
+    /* theme color */
+    --medium-accent: 163, 39, 245;
+    
+    /* darker theme color */
+    --dark-accent: 69, 5, 112;
+    
+    /* alternate accent color for newpage links */
+    --alt-accent: 207, 143, 250;
+
+ 
+
+    /* ===GENERAL TEXT COLORS=== */
+    --swatch-text-dark: var(--black-monochrome);
+    --swatch-text-light: var(--white-monochrome);
+    --swatch-text-general: var(--swatch-text-dark);
+    --swatch-important-text: var(--bright-accent);
+
+    /* ===MENU BACKGROUND COLORS=== */
+    --swatch-menubg-color: var(--white-monochrome);
+    --swatch-menubg-light-color: var(--pale-gray-monochrome);
+    --swatch-menubg-medium-color: var(--light-gray-monochrome);
+    --swatch-menubg-medium-dark-color: var(--gray-monochrome);
+    --swatch-menubg-dark-color: var(--dark-gray-monochrome);
+    --swatch-menubg-black-color: var(--black-monochrome);
+    --swatch-menubg-hover-color: var(--black-monochrome);
+    
+    /* ===MENU TEXT COLORS=== */
+    --swatch-menutxt-dark-color: var(--black-monochrome);
+    --swatch-menutxt-light-color: var(--white-monochrome);
+    --swatch-menutxt-general-color: var(--swatch-menutxt-dark-color);
+
+        /* Link Colors */
+        --link-color: var(--medium-accent);
+        --visited-link-color: var(--dark-accent);
+        --hover-link-color: var(--bright-accent);
+ 
+        /* Rating Module Colors */
+
+         --rating-module-button-plus-color: var(--febris-pharma);
+         --rating-module-button-negative-color: var(--eigengrau);
+         --rating-module-button-cancel-color: var(--medium-tint););
+         --rating-module-button-credit-color: var(--eigengrau);
+         --rating-module-bg-color: var(--old-paper);
+         --rating-module-bottom-border-color: var(--medium-tint);
+         --rating-module-text-color: var(--eigengrau);
+         --rating-module-text-hover-color: var(--old-paper);
+ 
+        /* Header Colors */
+        --swatch-topmenu-border-color: var(--light-gray-monochrome);
+        --swatch-topmenu-bg-color: var(--light-gray-monochrome);
+ 
+        /* Navbar Shadow */
+
+--gradient-background:
+linear-gradient(to bottom,
+rgba(var(--background-gradient-color), 0.5) 0,
+rgba(var(--background-gradient-color), 0) var(--background-gradient-distance));
+--background-gradient-color: 96, 7, 156;
+--background-gradient-distance: 15rem;
+ 
+  --header-gradient-color-bottom: 124, 9, 200;
+--header-gradient-color-medium: 69, 5, 112;
+--header-gradient-color-top: 42, 3, 68;
+
+--diagonal-stripes: 15, 1, 24;
+    }
+ 
+  
+    #header {
+        /* ===HEADER ELEMENTS=== */
+        /* ===SEARCH ELEMENT=== */
+        /* Focus is when the search box has been clicked on */
+        --search-icon-focus-color: var(--swatch-alternate-color);
+    }
+ 
+    #top-bar {
+        /* ===DROPDOWN MENU=== */
+          --login-dropdown-bg-color: var(--febris-pharma);
+--login-dropdown-bg-image: var(--gradient-header);
+--login-dropdown-border-color: var(--eigengrau),.5;
+--login-dropdown-text-color: var(--febris-pharma);
+--login-dropdown-text-hover-color: var(--eigengrau);
+--login-dropdown-bg-hover-color: var(--old-paper);
+    }
+ 
+    #side-bar {
+        /* ===SIDEBLOCK MENU=== */
+        --sideblock-heading-border-color: var(--dark-accent);
+        --sideblock-heading-bg-color: var(--medium-accent), 0.25;
+        --sideblock-heading-text-color: var(--swatch-text-tertiary-color);
+ 
+        --sidebar-links-hover-bg-color: var(--medium-accent);
+    }
+ 
+    #interwiki {
+        --sideblock-heading-bg-color: var(--medium-accent), 0.25;
+    }
+ 
+    /* ===FOOTER=== */
+    #footer {
+        --footer-bg-color: var(--medium-tint);
+   --footer-text-color: var(--old-paper);
+   --footer-link-color: var(--cool-purple);
+   --footer-link-hover-color: var(--eigengrau);
+   --footer-link-hover-bg-color: var(--light-lavender));
+    }
+ 
+    /* ===LICENSE AREA=== */
+    #license-area {
+        --license-link-hover-color: var(--swatch-text-tertiary-color);
+    }
+ 
+div[id*=page-options-bottom]:not(:is(.page-rate-widget-box,#search-top-box-form))>a.btn {
+  font-weight: 700;
+}
+
+
+    #main-content {
+        /* ===MAIN CONTENT UI ELEMENTS */
+        /* ===UI ICONS=== */
+        /* ===PAGE OPTIONS ICONS=== */
+             --ui-icon-color: var(--febris-pharma);
+   --ui-icon-bg: var(--cool-purple);
+   --ui-icon-hover-color: var(--old-paper);
+   --ui-icon-hover-bg: var(--light-lavender);
+ 
+        /* ===TEXT EDITOR ICONS=== */
+           --editor-icon-color: var(--eigengrau);
+   --editor-icon-submenu-bg: var(--cool-purple);
+   --editor-icon-hover-color: var(--cool-purple);
+   --editor-icon-hover-bg: var(--light-lavender);
+    --editor-icon-submenu-bg: var(--swatch-secondary-color);
+ 
+        /* ===TABS=== */
+        --tabs-txt: var(--swatch-text-tertiary-color);
+        --tabs-hover-bg: var(--swatch-primary-darkest);
+        --tabs-hover-txt: var(--swatch-text-secondary-color);
+        --tabs-selected-bg: var(--swatch-primary-darker);
+        --tabs-selected-txt: var(--swatch-text-secondary-color);
+        --tabs-selected-outline: var(--swatch-primary-darker);
+ 
+        /* ===TABLES=== */
+        --tabs-bg: var(--cool-purple);
+   --tabs-txt: var(--eigengrau);
+   --tabs-hover-bg: var(--febris-pharma);
+   --tabs-hover-txt: var(--old-paper);
+   --tabs-selected-bg: var(--medium-tint);
+   --tabs-selected-txt: var(--old-paper);
+   --tabs-selected-outline: var(--medium-tint);
+   --tabs-bottom-border-color: var(--medium-tint);
+   --tabs-content-bg-color: var(--old-paper), 0.25;
+   --tabs-content-border-color: var(--medium-tint);
+ 
+    /* ===BLOCKQUOTES=== */
+        --blockquote-bg-color: var(--old-paper), 0.35;
+    --blockquote-border-color: var(--eigengrau);
+    /* Color for special .colorbar-quote blockquote class */
+    --blockquote-colorbar-color: var(--febris-pharma), 1;
+
+        /* ===PAGE TAGS=== */
+--pagetags-title-bg: var(--medium-tint);
+   --pagetags-title-text: var(--old-paper);
+   --pagetags-text-color: var(--febris-pharma);
+   --pagetags-text-hover-color: var(--old-paper);
+   --pagetags-text-hover-bg-color: var(--light-lavender);
+
+}
+ 
+    /* ===GLOBAL ELEMENTS=== */
+    :root {
+        /* ===UI BUTTONS=== */
+
+--ui-button-bg: var(--cool-purple);
+--ui-button-txt: var(--eigengrau);
+--ui-button-hover-bg: var(--febris-pharma);
+--ui-button-hover-txt: var(--old-paper);
+--ui-button-hover-outline: var(--eigengrau);
+ 
+        /* ===FOOTNOTES HOVER BLOCK=== */
+        --hoverblock-bg: var(--old-paper);
+    }
+ 
+    ::-moz-selection {
+        background: rgba(var(--swatch-primary-darkest), 1);
+        color: rgb(var(--swatch-primary));
+    }
+ 
+    ::selection {
+        background: rgba(var(--cool-purple), 1);
+        color: rgb(var(--eigengrau));
+    }
+ 
+
+ 
+    /* Page Title */
+    #page-title {
+        border-color: rgb(var(--dark-gray));
+        color: rgb(var(--eigengrau));
+    }
+ 
+    /* Page Rating Module */
+    .page-rate-widget-box {
+        border-color: rgb(var(--pale-gray-monochrome));
+        background: linear-gradient(to top,
+                rgba(var(--pale-gray-monochrome), 1) 0%,
+                rgba(var(--pale-gray-monochrome), 1) 100%);
+    }
+ 
+    #page-content .rate-box-with-credit-button {
+        border-color: rgb(var(--pale-gray-monochrome));
+        background: linear-gradient(to top,
+                rgba(var(--pale-gray-monochrome), 1) 0%,
+                rgba(var(--pale-gray-monochrome), 1) 100%);
+    }
+ 
+    #page-content .rate-box-with-credit-button>.creditButton>p>a::before {
+        background-color: rgb(var(--pale-gray-monochrome));
+    }
+ 
+    #page-content .rate-box-with-credit-button>.creditButton:hover {
+        background: rgba(var(--bright-accent), 0.8);
+    }
+ 
+    #page-content .modalbox {
+        border-radius: 0;
+        background: rgb(var(--pale-gray-monochrome));
+        box-shadow: 0 2px 6px rgba(var(--bright-accent), 0.5);
+        color: rgb(var(--eigengrau));
+    }
+
+.leaflet{
+border: solid 2px rgb(var(--eigengrau));
+border-right: dashed 2px;
+border-left: dashed 2px;
+border-bottom: solid 2px;
+background: rgb(var(--old-paper));
+font-family: "IBM Plex Mono", monospace;
+padding: 15px;
+font-size: 12px;
+font-weight: 600;
+max-width: 700px;
+margin: auto;
+}
+
+
+[[/code]]
+[[/collapsible]]
+
+[[/iftags]]
+
+[[module css]]
+@import url("https://scp-wiki.wikidot.com/theme:febris-pharmaceuticals-theme/code/1")
+[[/module]]
+
+[[include :scp-wiki:component:interwiki-style
+| priority=3
+| theme=https://scp-wiki.wikidot.com/theme:febris-pharmaceuticals-theme/code/1
+]]
