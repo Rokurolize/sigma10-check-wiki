@@ -1,0 +1,1780 @@
+{
+ "tool": "classify_hunks.py",
+ "classifier_version": "0.1.0",
+ "signature_table_version": "2026-11-17.1",
+ "theme": {
+  "dir": "golden-wind-jp",
+  "cand_fullname": "theme:golden-wind-jp",
+  "orig_fullname": "theme:golden-wind",
+  "wiki": "scp-wiki-cn",
+  "revision": "29",
+  "kind": "standard",
+  "verdict": "PASS",
+  "original_file": "review/golden-wind-jp/original.txt",
+  "candidate_file": "review/golden-wind-jp/candidate.txt",
+  "original_sha256": "19b9bb8e990cf8b8096b551f264816a7cd81a156f1319c951fe4702485f58687",
+  "candidate_sha256": "24e92ce7e49b2df6106dbb2054218adb398a730c6c41dfe981e71001c7808bdc",
+  "original_lines": 630,
+  "candidate_lines": 670
+ },
+ "topology": {
+  "original_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     0,
+     3
+    ],
+    "lines": 3
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     81,
+     629
+    ],
+    "lines": 548
+   }
+  ],
+  "candidate_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     0,
+     3
+    ],
+    "lines": 3
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     97,
+     660
+    ],
+    "lines": 563
+   }
+  ],
+  "moves": [],
+  "external_own_delivery": true
+ },
+ "blocks": [
+  {
+   "id": "B1",
+   "orig_range": [
+    1,
+    2
+   ],
+   "cand_range": [
+    1,
+    2
+   ],
+   "orig_lines": "2-2",
+   "cand_lines": "2-2",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-HOST",
+    "DRAFT-HOST",
+    "SELF-DELIVERY"
+   ],
+   "primary": "DELIVERY-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-HOST": "A",
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DELIVERY-HOST": {
+     "orig": [
+      [
+       1,
+       2
+      ]
+     ],
+     "cand": [
+      [
+       1,
+       2
+      ]
+     ]
+    },
+    "SELF-DELIVERY": {
+     "orig": [
+      [
+       1,
+       2
+      ]
+     ],
+     "cand": [
+      [
+       1,
+       2
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       1,
+       2
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "@import url(\"https://scp-wiki-cn.wdfiles.com/local--code/theme:golden-wind/1\");",
+   "first_added": "@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Agolden-wind-jp/1');"
+  },
+  {
+   "id": "B2",
+   "orig_range": [
+    3,
+    4
+   ],
+   "cand_range": [
+    3,
+    3
+   ],
+   "orig_lines": "4-4",
+   "cand_lines": "at 4",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "IFTAGS"
+   ],
+   "primary": "IFTAGS",
+   "primary_section": 2,
+   "label_prec": {
+    "IFTAGS": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "IFTAGS": {
+     "orig": [
+      [
+       3,
+       4
+      ]
+     ],
+     "cand": []
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[iftags +版式]]",
+   "first_added": ""
+  },
+  {
+   "id": "B3",
+   "orig_range": [
+    5,
+    8
+   ],
+   "cand_range": [
+    4,
+    20
+   ],
+   "orig_lines": "6-8",
+   "cand_lines": "5-20",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "CREDIT-PREVIEW",
+    "DRAFT-HOST",
+    "IFTAGS",
+    "SELF-DELIVERY",
+    "TASL-FIELDS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "CREDIT-PREVIEW",
+   "primary_section": 1,
+   "label_prec": {
+    "CREDIT-PREVIEW": "A",
+    "TASL-FIELDS": "A",
+    "IFTAGS": "A",
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "CREDIT-PREVIEW": {
+     "cand": [
+      [
+       10,
+       11
+      ],
+      [
+       19,
+       20
+      ]
+     ]
+    },
+    "TASL-FIELDS": {
+     "cand": [
+      [
+       11,
+       19
+      ]
+     ]
+    },
+    "IFTAGS": {
+     "orig": [],
+     "cand": [
+      [
+       8,
+       9
+      ]
+     ]
+    },
+    "SELF-DELIVERY": {
+     "orig": [],
+     "cand": [
+      [
+       6,
+       7
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       6,
+       7
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "class (iii) draft-stage form",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[>]]",
+   "first_added": "[[include :scp-jp:component:interwiki-style"
+  },
+  {
+   "id": "B4",
+   "orig_range": [
+    15,
+    16
+   ],
+   "cand_range": [
+    27,
+    28
+   ],
+   "orig_lines": "16-16",
+   "cand_lines": "28-28",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "**项目编号：**SCP-GIO-001",
+   "first_added": "**アイテム番号:**SCP-GIO-001"
+  },
+  {
+   "id": "B5",
+   "orig_range": [
+    17,
+    18
+   ],
+   "cand_range": [
+    29,
+    30
+   ],
+   "orig_lines": "18-18",
+   "cand_lines": "30-30",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "**项目等级：**Passion",
+   "first_added": "**オブジェクトクラス:**Passion"
+  },
+  {
+   "id": "B6",
+   "orig_range": [
+    19,
+    20
+   ],
+   "cand_range": [
+    31,
+    32
+   ],
+   "orig_lines": "20-20",
+   "cand_lines": "32-32",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "**特殊收容措施：**措施（特殊且收容）",
+   "first_added": "**特別収容プロトコル:**措置（特別であり、かつ収容）"
+  },
+  {
+   "id": "B7",
+   "orig_range": [
+    21,
+    22
+   ],
+   "cand_range": [
+    33,
+    34
+   ],
+   "orig_lines": "22-22",
+   "cand_lines": "34-34",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "**描述：**这是一大段又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长又臭又长的描述",
+   "first_added": "**説明:**これは、長くてしつこく、長くてしつこく、長くてしつこく、長くてしつこく、長くてしつこく、長くてしつこく、長くてしつこく、長くてしつこく、長くてしつこく、長くてしつこく、長くてしつこく、長くてしつこく、長くてしつこく、長くてしつこく、長くてしつこく、長くてしつこく、長くてしつこく、長くてしつこく、長くてしつこく、長くてしつこく、長くてしつこく、長くてしつこく、長くてしつこく、長くてしつこく、長くてしつこく、長くてしつこく、長くてしつこく、長くてしつこく、長くてしつこく、長くてしつこい説明です。"
+  },
+  {
+   "id": "B8",
+   "orig_range": [
+    23,
+    24
+   ],
+   "cand_range": [
+    35,
+    36
+   ],
+   "orig_lines": "24-24",
+   "cand_lines": "36-36",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "**附录：**",
+   "first_added": "**補遺:**"
+  },
+  {
+   "id": "B9",
+   "orig_range": [
+    26,
+    27
+   ],
+   "cand_range": [
+    38,
+    39
+   ],
+   "orig_lines": "27-27",
+   "cand_lines": "39-39",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[tab 东西]]",
+   "first_added": "[[tab 何か]]"
+  },
+  {
+   "id": "B10",
+   "orig_range": [
+    28,
+    29
+   ],
+   "cand_range": [
+    40,
+    41
+   ],
+   "orig_lines": "29-29",
+   "cand_lines": "41-41",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "东西",
+   "first_added": "何か"
+  },
+  {
+   "id": "B11",
+   "orig_range": [
+    32,
+    34
+   ],
+   "cand_range": [
+    44,
+    46
+   ],
+   "orig_lines": "33-34",
+   "cand_lines": "45-46",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/2"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[tab 更多东西]]",
+   "first_added": "[[tab もっと何か]]"
+  },
+  {
+   "id": "B12",
+   "orig_range": [
+    36,
+    38
+   ],
+   "cand_range": [
+    48,
+    50
+   ],
+   "orig_lines": "37-38",
+   "cand_lines": "49-50",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/2"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[tab 很多东西]]",
+   "first_added": "[[tab たくさんの何か]]"
+  },
+  {
+   "id": "B13",
+   "orig_range": [
+    40,
+    42
+   ],
+   "cand_range": [
+    52,
+    54
+   ],
+   "orig_lines": "41-42",
+   "cand_lines": "53-54",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/2"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[tab 非常多东西]]",
+   "first_added": "[[tab とてもたくさんの何か]]"
+  },
+  {
+   "id": "B14",
+   "orig_range": [
+    47,
+    48
+   ],
+   "cand_range": [
+    59,
+    60
+   ],
+   "orig_lines": "48-48",
+   "cand_lines": "60-60",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "**[[size 200%]]· 这是什么？**[[/size]]",
+   "first_added": "**[[size 200%]]· これは何？**[[/size]]"
+  },
+  {
+   "id": "B15",
+   "orig_range": [
+    49,
+    50
+   ],
+   "cand_range": [
+    61,
+    62
+   ],
+   "orig_lines": "50-50",
+   "cand_lines": "62-62",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "> 这是[[*user Dr Roger_F_XL]]所制作的**美学版式**，与任何设定无挂钩。[[footnote]]创作灵感来源于动漫/漫画作品：[https://baike.baidu.com/item/JOJO%E7%9A%84%E5%A5%87%E5%A6%99%E5%86%92%E9%99%A9%EF%BC%9A%E9%BB%84%E9%87%91%E4%B9%8B%E9%A3%8E/22337225?fr=aladdin 《JOJOの奇妙冒险：黄金之风》][[/footnote]]",
+   "first_added": "> これは[[*user Dr Roger_F_XL]]が制作した**美学テーマ**です。特定のカノンや設定には紐づいていません。[[footnote]]制作上の着想源はアニメ/漫画作品『ジョジョの奇妙な冒険 黄金の風』です。[[/footnote]]"
+  },
+  {
+   "id": "B16",
+   "orig_range": [
+    52,
+    53
+   ],
+   "cand_range": [
+    64,
+    65
+   ],
+   "orig_lines": "53-53",
+   "cand_lines": "65-65",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "DRAFT-HOST"
+   ],
+   "primary": "DRAFT-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       64,
+       65
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "> [[image http://roger.wdfiles.com/local--files/picture-warehouse/%E6%89%80%E4%BB%A5gw%E5%88%B0%E5%BA%95%E5%93%AA%E9%87%8C%E8%83%BD%E7%94%A8]]",
+   "first_added": "> [[image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Agolden-wind-jp/gw-poster.png]]"
+  },
+  {
+   "id": "B17",
+   "orig_range": [
+    58,
+    59
+   ],
+   "cand_range": [
+    70,
+    71
+   ],
+   "orig_lines": "59-59",
+   "cand_lines": "71-71",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "**[[size 200%]]· 如何使用？**[[/size]]",
+   "first_added": "**[[size 200%]]· 使い方**[[/size]]"
+  },
+  {
+   "id": "B18",
+   "orig_range": [
+    60,
+    62
+   ],
+   "cand_range": [
+    72,
+    74
+   ],
+   "orig_lines": "61-62",
+   "cand_lines": "73-74",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "COMPONENT-SWAP",
+    "INCLUDE-REPOINT",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "COMPONENT-SWAP",
+   "primary_section": 2,
+   "label_prec": {
+    "INCLUDE-REPOINT": "A",
+    "COMPONENT-SWAP": "B",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "INCLUDE-REPOINT": {
+     "orig": [
+      [
+       61,
+       62
+      ]
+     ],
+     "cand": [
+      [
+       73,
+       74
+      ]
+     ]
+    },
+    "COMPONENT-SWAP": {
+     "orig": [
+      [
+       61,
+       62
+      ]
+     ],
+     "cand": [
+      [
+       73,
+       74
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "> 请在你的页面开头加上以下内容：",
+   "first_added": "> ページの冒頭に次の内容を追加してください。"
+  },
+  {
+   "id": "B19",
+   "orig_range": [
+    65,
+    66
+   ],
+   "cand_range": [
+    77,
+    78
+   ],
+   "orig_lines": "66-66",
+   "cand_lines": "78-78",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "COMPONENT-SWAP",
+    "INCLUDE-REPOINT"
+   ],
+   "primary": "COMPONENT-SWAP",
+   "primary_section": 2,
+   "label_prec": {
+    "INCLUDE-REPOINT": "A",
+    "COMPONENT-SWAP": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "INCLUDE-REPOINT": {
+     "orig": [
+      [
+       65,
+       66
+      ]
+     ],
+     "cand": [
+      [
+       77,
+       78
+      ]
+     ]
+    },
+    "COMPONENT-SWAP": {
+     "orig": [
+      [
+       65,
+       66
+      ]
+     ],
+     "cand": [
+      [
+       77,
+       78
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "> [[include :scp-wiki-cn:theme:golden-wind]]",
+   "first_added": "> [[include :scp-jp:theme:golden-wind-jp]]"
+  },
+  {
+   "id": "B20",
+   "orig_range": [
+    70,
+    71
+   ],
+   "cand_range": [
+    82,
+    83
+   ],
+   "orig_lines": "71-71",
+   "cand_lines": "83-83",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "> 项目编号：SCP-CN-XXXX",
+   "first_added": "> アイテム番号:SCP-JP-XXXX"
+  },
+  {
+   "id": "B21",
+   "orig_range": [
+    80,
+    81
+   ],
+   "cand_range": [
+    92,
+    97
+   ],
+   "orig_lines": "81-81",
+   "cand_lines": "93-97",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "**[[size 200%]]· 代码**[[/size]]",
+   "first_added": "**[[size 200%]]· コード**[[/size]]"
+  },
+  {
+   "id": "B22",
+   "orig_range": [
+    82,
+    82
+   ],
+   "cand_range": [
+    98,
+    114
+   ],
+   "orig_lines": "at 83",
+   "cand_lines": "99-114",
+   "channel_pair": [
+    "body",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "JPFONT-LOAD",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "JPFONT-LOAD",
+   "primary_section": 4,
+   "label_prec": {
+    "JPFONT-LOAD": "A",
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "JPFONT-LOAD": {
+     "cand": [
+      [
+       109,
+       111
+      ]
+     ]
+    },
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "absence claim needs base subtraction (resolved base)",
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": "/*"
+  },
+  {
+   "id": "B23",
+   "orig_range": [
+    88,
+    89
+   ],
+   "cand_range": [
+    120,
+    121
+   ],
+   "orig_lines": "89-89",
+   "cand_lines": "121-121",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "WS-ONLY"
+   ],
+   "primary": "WS-ONLY",
+   "primary_section": 9,
+   "label_prec": {
+    "WS-ONLY": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "WS-ONLY": {}
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": " "
+  },
+  {
+   "id": "B24",
+   "orig_range": [
+    91,
+    92
+   ],
+   "cand_range": [
+    123,
+    124
+   ],
+   "orig_lines": "92-92",
+   "cand_lines": "124-124",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "GLYPH-FORM"
+   ],
+   "primary": "GLYPH-FORM",
+   "primary_section": 6,
+   "label_prec": {
+    "GLYPH-FORM": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "GLYPH-FORM": {}
+   },
+   "notes": [
+    "fold-compare: glyph forms only"
+   ],
+   "partial_notes": [],
+   "first_removed": "    font-family: 'Arial Black', '华文新魏', cursive;",
+   "first_added": "    font-family: 'Arial Black', 'Noto Serif JP', cursive;"
+  },
+  {
+   "id": "B25",
+   "orig_range": [
+    95,
+    96
+   ],
+   "cand_range": [
+    127,
+    128
+   ],
+   "orig_lines": "96-96",
+   "cand_lines": "128-128",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "WS-ONLY"
+   ],
+   "primary": "WS-ONLY",
+   "primary_section": 9,
+   "label_prec": {
+    "WS-ONLY": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "WS-ONLY": {}
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": " "
+  },
+  {
+   "id": "B26",
+   "orig_range": [
+    98,
+    99
+   ],
+   "cand_range": [
+    130,
+    131
+   ],
+   "orig_lines": "99-99",
+   "cand_lines": "131-131",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DRAFT-HOST"
+   ],
+   "primary": "DRAFT-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       130,
+       131
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "    background: url(http://roger.wdfiles.com/local--files/picture-warehouse/gwlogo.png) 10px 40px no-repeat;",
+   "first_added": "    background: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Agolden-wind-jp/gwlogo.png) 10px 40px no-repeat;"
+  },
+  {
+   "id": "B27",
+   "orig_range": [
+    108,
+    109
+   ],
+   "cand_range": [
+    140,
+    141
+   ],
+   "orig_lines": "109-109",
+   "cand_lines": "141-141",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "CSS-BODY"
+   ],
+   "primary": "CSS-BODY",
+   "primary_section": 8,
+   "label_prec": {
+    "CSS-BODY": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "CSS-BODY": {}
+   },
+   "notes": [
+    "no other signature matched"
+   ],
+   "partial_notes": [],
+   "first_removed": "    font-family: 'SJQY', '华文楷体', cursive;",
+   "first_added": "    font-family: 'SJQY', 'Noto Serif JP', cursive;"
+  },
+  {
+   "id": "B28",
+   "orig_range": [
+    118,
+    119
+   ],
+   "cand_range": [
+    150,
+    151
+   ],
+   "orig_lines": "119-119",
+   "cand_lines": "151-151",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "GLYPH-FORM"
+   ],
+   "primary": "GLYPH-FORM",
+   "primary_section": 6,
+   "label_prec": {
+    "GLYPH-FORM": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "GLYPH-FORM": {}
+   },
+   "notes": [
+    "fold-compare: glyph forms only"
+   ],
+   "partial_notes": [],
+   "first_removed": "    font-family: 'Arial Black', '华文新魏', cursive;",
+   "first_added": "    font-family: 'Arial Black', 'Noto Serif JP', cursive;"
+  },
+  {
+   "id": "B29",
+   "orig_range": [
+    136,
+    137
+   ],
+   "cand_range": [
+    168,
+    169
+   ],
+   "orig_lines": "137-137",
+   "cand_lines": "169-169",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DRAFT-HOST"
+   ],
+   "primary": "DRAFT-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       168,
+       169
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "    background-image: url(https://scpsandboxcn.wdfiles.com/local--files/theme%3Agolden-wind/golden-sky);",
+   "first_added": "    background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Agolden-wind-jp/golden-sky.gif);"
+  },
+  {
+   "id": "B30",
+   "orig_range": [
+    269,
+    270
+   ],
+   "cand_range": [
+    301,
+    302
+   ],
+   "orig_lines": "270-270",
+   "cand_lines": "302-302",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "WS-ONLY"
+   ],
+   "primary": "WS-ONLY",
+   "primary_section": 9,
+   "label_prec": {
+    "WS-ONLY": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "WS-ONLY": {}
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": " "
+  },
+  {
+   "id": "B31",
+   "orig_range": [
+    275,
+    276
+   ],
+   "cand_range": [
+    307,
+    308
+   ],
+   "orig_lines": "276-276",
+   "cand_lines": "308-308",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "WS-ONLY"
+   ],
+   "primary": "WS-ONLY",
+   "primary_section": 9,
+   "label_prec": {
+    "WS-ONLY": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "WS-ONLY": {}
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": " "
+  },
+  {
+   "id": "B32",
+   "orig_range": [
+    282,
+    283
+   ],
+   "cand_range": [
+    314,
+    315
+   ],
+   "orig_lines": "283-283",
+   "cand_lines": "315-315",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "WS-ONLY"
+   ],
+   "primary": "WS-ONLY",
+   "primary_section": 9,
+   "label_prec": {
+    "WS-ONLY": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "WS-ONLY": {}
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": " "
+  },
+  {
+   "id": "B33",
+   "orig_range": [
+    442,
+    443
+   ],
+   "cand_range": [
+    474,
+    475
+   ],
+   "orig_lines": "443-443",
+   "cand_lines": "475-475",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DRAFT-HOST"
+   ],
+   "primary": "DRAFT-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       474,
+       475
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "    background-image: url(\"https://scpsandboxcn.wikidot.com/local--files/theme:golden-wind/joruno\");",
+   "first_added": "    background-image: url(\"https://sigma10-jp-test.wdfiles.com/local--files/theme%3Agolden-wind-jp/joruno.jpg\");"
+  },
+  {
+   "id": "B34",
+   "orig_range": [
+    461,
+    462
+   ],
+   "cand_range": [
+    493,
+    494
+   ],
+   "orig_lines": "462-462",
+   "cand_lines": "494-494",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DRAFT-HOST"
+   ],
+   "primary": "DRAFT-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       493,
+       494
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "    background-image: url(\"http://roger.wdfiles.com/local--files/picture-warehouse/bugs\");",
+   "first_added": "    background-image: url(\"https://sigma10-jp-test.wdfiles.com/local--files/theme%3Agolden-wind-jp/bugs.png\");"
+  },
+  {
+   "id": "B35",
+   "orig_range": [
+    468,
+    469
+   ],
+   "cand_range": [
+    500,
+    501
+   ],
+   "orig_lines": "469-469",
+   "cand_lines": "501-501",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DRAFT-HOST"
+   ],
+   "primary": "DRAFT-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       500,
+       501
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "    background-image: url(\"http://roger.wdfiles.com/local--files/picture-warehouse/bugs\");",
+   "first_added": "    background-image: url(\"https://sigma10-jp-test.wdfiles.com/local--files/theme%3Agolden-wind-jp/bugs.png\");"
+  },
+  {
+   "id": "B36",
+   "orig_range": [
+    612,
+    613
+   ],
+   "cand_range": [
+    644,
+    645
+   ],
+   "orig_lines": "613-613",
+   "cand_lines": "645-645",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DRAFT-HOST"
+   ],
+   "primary": "DRAFT-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       644,
+       645
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "    background-image: url('https://scp-wiki-cloud.wikidot.com/local--files/roger/golden-karma') !important;",
+   "first_added": "    background-image: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Agolden-wind-jp/golden-karma.png') !important;"
+  },
+  {
+   "id": "B37",
+   "orig_range": [
+    619,
+    620
+   ],
+   "cand_range": [
+    651,
+    652
+   ],
+   "orig_lines": "620-620",
+   "cand_lines": "652-652",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DRAFT-HOST"
+   ],
+   "primary": "DRAFT-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       651,
+       652
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "    cursor: url('https://scp-wiki-cloud.wdfiles.com/local--files/roger/bug'), default;",
+   "first_added": "    cursor: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Agolden-wind-jp/bug.png'), default;"
+  },
+  {
+   "id": "B38",
+   "orig_range": [
+    622,
+    623
+   ],
+   "cand_range": [
+    654,
+    655
+   ],
+   "orig_lines": "623-623",
+   "cand_lines": "655-655",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DRAFT-HOST"
+   ],
+   "primary": "DRAFT-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       654,
+       655
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "    cursor: url('https://scp-wiki-cloud.wdfiles.com/local--files/roger/zipper'), pointer;",
+   "first_added": "    cursor: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Agolden-wind-jp/zipper.png'), pointer;"
+  },
+  {
+   "id": "B39",
+   "orig_range": [
+    625,
+    626
+   ],
+   "cand_range": [
+    657,
+    658
+   ],
+   "orig_lines": "626-626",
+   "cand_lines": "658-658",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DRAFT-HOST"
+   ],
+   "primary": "DRAFT-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       657,
+       658
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "    cursor: url('https://scp-wiki-cloud.wdfiles.com/local--files/roger/text'), text;",
+   "first_added": "    cursor: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Agolden-wind-jp/text.png'), text;"
+  },
+  {
+   "id": "B40",
+   "orig_range": [
+    627,
+    627
+   ],
+   "cand_range": [
+    659,
+    661
+   ],
+   "orig_lines": "at 628",
+   "cand_lines": "660-661",
+   "channel_pair": [
+    "body",
+    "code-css"
+   ],
+   "labels": [
+    "CSS-BODY"
+   ],
+   "primary": "CSS-BODY",
+   "primary_section": 8,
+   "label_prec": {
+    "CSS-BODY": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "CSS-BODY": {}
+   },
+   "notes": [
+    "no other signature matched"
+   ],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": "[[/code]]"
+  },
+  {
+   "id": "B41",
+   "orig_range": [
+    628,
+    629
+   ],
+   "cand_range": [
+    662,
+    669
+   ],
+   "orig_lines": "629-629",
+   "cand_lines": "663-669",
+   "channel_pair": [
+    "code-css",
+    "body"
+   ],
+   "labels": [
+    "LICENSE-BOX",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "LICENSE-BOX",
+   "primary_section": 1,
+   "label_prec": {
+    "LICENSE-BOX": "A",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "LICENSE-BOX": {
+     "cand": [
+      [
+       662,
+       663
+      ],
+      [
+       667,
+       668
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "supplement (T4): the original carried no license box",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[/code]]",
+   "first_added": "[[include :scp-jp:component:license-box-backend"
+  }
+ ],
+ "derived_presence": {},
+ "summary": {
+  "blocks": 41,
+  "specific": 35,
+  "heuristic": 6,
+  "residue": 0,
+  "skipped": 0,
+  "reindent_blocks": 0,
+  "label_counts": {
+   "DELIVERY-HOST": 1,
+   "DRAFT-HOST": 12,
+   "SELF-DELIVERY": 2,
+   "IFTAGS": 2,
+   "CREDIT-PREVIEW": 1,
+   "TASL-FIELDS": 1,
+   "TRANS-UNANCHORED": 8,
+   "TRANSLATION-ANCHORED": 11,
+   "COMPONENT-SWAP": 2,
+   "INCLUDE-REPOINT": 2,
+   "COMMENT-TEXT": 1,
+   "JPFONT-LOAD": 1,
+   "WS-ONLY": 5,
+   "GLYPH-FORM": 2,
+   "CSS-BODY": 2,
+   "LICENSE-BOX": 1
+  }
+ },
+ "residue": [],
+ "skeleton": {
+  "sha256": "cf1099a4267a5eb4a2c7e7133ad5b8283ab4aabefb947b38a21a07fbf4faace6",
+  "status": "written (new)"
+ }
+}
