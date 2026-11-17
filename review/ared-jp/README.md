@@ -3,7 +3,8 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:ared-jp — origin CN, population #165 [GOSIGN2-LEDGER (b) row 165]
-- Overall: PASS — passed at the ledger determination; no OPEN items [GOSIGN2-LEDGER (b) row 165]
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now d21b43d776d369a9fb29d97575ed17a163f17c41ce3601285ebc92d61389fe0c); verdict not carried over, re-judgement required
+> verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 3 errors / 1 warn / 1 info (hotlink×2, pseudo-ref×1); standing classes dispositioned in register c1 [T1-ROWS row 142; GOSIGN2-LEDGER (b) row 165]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page page-overflow 328px@320 only (8px), runtime-hotlink site-theme chain + candidate-own ah-sandbox.wdfiles.com, ah-sandbox.wikidot.com (judgment-required); sample credit-modal (preview-form), page-overflow 328px@320 + 884px@768 (cross-cutting static-credit), runtime-hotlink incl. the ah-sandbox hosts + sample font host; T3 clean on both pages (sidebar at left JP position, opens in both engines; subtitle doubling + preview-notice clipping cross-cutting). [RENDER-ROWS-RERUN16 (CN1) — supersedes the RENDER-ROWS-2 row for this theme, rule S1]
 - Engine coverage: full (chromium+webkit, both pages) [RENDER-ROWS-RERUN16 (CN1)]
@@ -11,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 4 [LOCALIZE-ROWS row 164, source LOCALIZE-S2-D]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 164]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 165]
-- Computed against: canonical commit 8c62b7b5207f684c8373dfe00f28b90427d28027; candidate file pages/theme:ared-jp.txt sha256:1b89d34b078b5fff0d429ae89eb1bcf6f9237cc4c03bedd5fe401627a15b4cba; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 2437825cf71d8418899216ebad736265789f95f2; candidate file pages/theme:ared-jp.txt sha256:d21b43d776d369a9fb29d97575ed17a163f17c41ce3601285ebc92d61389fe0c; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 
@@ -103,7 +104,7 @@ Adjudication for this README (every block was read against the bytes): the 5 heu
 
 ### 5. Header, sidebar, and site furniture
 
-- **What:** The header's rendered department label is a CSS `content:` string in the code exhibit (candidate L124): `content: "异常宗教表现部"` — carried byte-identical from the original (original L121), in Chinese glyph forms, while the candidate's prose writes the same name in Japanese glyph form (異常宗教表現部). That string is the per-theme record's flag. No header variable is overridden (no `--header-title` / `--header-subtitle` / `--logo-image`); the header background is the section 4 logo.
+- **What:** The header's rendered department label is a CSS `content:` string in the code exhibit (candidate L124): `content: "异常宗教表现部"` — carried byte-identical from the original (original L121), in Chinese glyph forms, while the candidate's prose writes the same name in Japanese glyph form (異常宗教表現部). That string is the per-theme record's flag. The repair has since landed (canonical commit 2437825): the string now reads 異常宗教表現部 in Japanese glyph forms, and this package documents the corrected candidate (its stamp reads STALE against the pre-repair verdict). No header variable is overridden (no `--header-title` / `--header-subtitle` / `--logo-image`); the header background is the section 4 logo.
 - **Why:** P9/T6 is a per-theme judgment and none was needed; the `content:` string is reader-visible text, so KB-18 governs it — which is why its untranslated state is a flag and not a formatting note.
 - **Verify:** `sed -n '124p' candidate.txt` against the credit title (candidate L9) and the prose (candidate L23) — the three writings of the department name, two glyph forms.
 - **Disposition:** Standing, with the `content:` string FLAGGED (per-theme record).

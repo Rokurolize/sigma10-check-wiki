@@ -3,7 +3,8 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:aces-and-eights-jp — origin EN, population #50 [GOSIGN2-LEDGER (b) row 50]
-- Overall: PASS — passed at the ledger determination; no OPEN items [GOSIGN2-LEDGER (b) row 50]
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now c49b7c483421c38f03c5fa19f103a8fed6000db2a6eb26b2a022fe1a7f4d72ee); verdict not carried over, re-judgement required
+> verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 3 errors / 1 warn / 1 info (hotlink×3); standing classes dispositioned in register c1 [T1-ROWS row 50; GOSIGN2-LEDGER (b) row 50]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — broken `background: url(null)` in candidate CSS (404 every combo of both pages, §3 dead declaration) + ACES wordmark clip at 320. [RENDER-ROWS-1 (RENDER-S2-A)]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row [RENDER-ROWS-1 row]
@@ -11,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 50, source LOCALIZE-S2-A]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 50]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 50]
-- Computed against: canonical commit 1869877ffdcd33cb214b8dc421fb39e3de8d7e8d; candidate file pages/theme:aces-and-eights-jp.txt sha256:13cbd176aa385e5a491b34b0f5fbff3cd7fe954a7e1af8364aab246ef3d16e27; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 2437825cf71d8418899216ebad736265789f95f2; candidate file pages/theme:aces-and-eights-jp.txt sha256:c49b7c483421c38f03c5fa19f103a8fed6000db2a6eb26b2a022fe1a7f4d72ee; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -165,7 +166,7 @@ The ledger distributes this file's repairs across four names: FIX3-S2EN §5 (the
 
 ### Item 2 — the holder field and Uncle Nicolini
 
-LOCALIZE-ROWS row 50 charges: クレジット著作権者から Uncle Nicolini 欠落 (the credit holder field drops Uncle Nicolini, pattern 3). The original's CSS comment credits "rounderhouse, with help from Uncle Nicolini" — Nicolini as a helper, not the author of record; the page's authorship is Rounderhouse's. The candidate's credit block names Rounderhouse alone (candidate L13), and no commit adds Nicolini to the field; the credit waves' edit to this file is the translator field only. The ledger §(c3) line closes the row's P3 as FIXED (credit waves; checker-verified). The two records can be reconciled only by reading "FIXED" as covering the eight fields' presence and form, which is what the checker verifies — the holder field was already present and well-formed at creation, with the value the port chose. Whether the value should also name the helper is a credit-content judgment the campaign record does not argue anywhere for this theme (for theme:alexylva-university-jp the same lane charged Nicolini as 原作者, original author, a different relation). This package flags the gap with its evidence and leaves the determination where the ledger put it: PASS, with the flag on record for any future credit-content pass.
+LOCALIZE-ROWS row 50 charges: クレジット著作権者から Uncle Nicolini 欠落 (the credit holder field drops Uncle Nicolini, pattern 3). The original's CSS comment credits "rounderhouse, with help from Uncle Nicolini" — Nicolini as a helper, not the author of record; the page's authorship is Rounderhouse's. The candidate's credit block names Rounderhouse alone (candidate L13), and no commit adds Nicolini to the field; the credit waves' edit to this file is the translator field only. The ledger §(c3) line closes the row's P3 as FIXED (credit waves; checker-verified). The two records can be reconciled only by reading "FIXED" as covering the eight fields' presence and form, which is what the checker verifies — the holder field was already present and well-formed at creation, with the value the port chose. Whether the value should also name the helper is a credit-content judgment the campaign record does not argue anywhere for this theme (for theme:alexylva-university-jp the same lane charged Nicolini as 原作者, original author, a different relation). This package flags the gap with its evidence and leaves the determination where the ledger put it: PASS, with the flag on record for any future credit-content pass. The credit-content repair has since landed (canonical commit 2437825): the field now reads Rounderhouse & Uncle Nicolini, and this package documents the corrected candidate (its stamp reads STALE against the pre-repair verdict).
 
 ## Change set outside the two diffed files
 

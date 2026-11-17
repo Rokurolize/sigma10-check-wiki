@@ -30,7 +30,7 @@ with `python3 review/build_review.py`; verify with
 +**翻訳責任者:** AI
 +**翻訳年:** 2026
 +**原題:** Aces and Eights Theme
-+**著作権者:** Rounderhouse
++**著作権者:** Rounderhouse & Uncle Nicolini
 +**作成年:** 2018
 +**初訳時参照リビジョン:** 26
 +**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:aces-and-eights ソース]

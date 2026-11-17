@@ -9,9 +9,9 @@ with `python3 review/build_review.py`; verify with
 |---|---|
 | original.txt | 562 |
 | candidate.txt | 566 |
-| Added | +53 |
-| Review-stage comments | 0 of the +53 added lines |
-| Removed | -49 |
+| Added | +54 |
+| Review-stage comments | 0 of the +54 added lines |
+| Removed | -50 |
 | Hunks | 3 |
 
 ```diff
@@ -148,8 +148,12 @@ with `python3 review/build_review.py`; verify with
  
  div#container-wrap {
      background-image: linear-gradient(to bottom, #666 0, #666 96%, #555 100%), linear-gradient(#999, #999), linear-gradient(#666, #666), linear-gradient(#999, #999), linear-gradient(to bottom, #555, transparent);
-@@ -121,7 +124,7 @@
-     content: "异常宗教表现部";
+@@ -118,10 +121,10 @@
+ }
+ 
+ #header h1 a::before {
+-    content: "异常宗教表现部";
++    content: "異常宗教表現部";
      color: #FFF;
      text-shadow: 0 1px 2px #000;
 -    font-family: 'Noto Serif SC', serif;
