@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:waxed-oxidized-cut-copper-slab-jp — origin CN, population #244 [GOSIGN2-LEDGER (b) row 244]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 9c97f71d0c881a748e672fb13c377a12c5bcc93ce9bd68d24484ba7fa4d1965b); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now bbf49f93e657f4ce6aec9f88d3d14aa4d3c9a3401eaaa14c51560b16b64e4770); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 9 errors / 3 warns / 1 info (hotlink×8, pseudo-ref×1); standing classes dispositioned in register c1 [T1-ROWS row 209; GOSIGN2-LEDGER (b) row 244]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page-overflow 445px@320/375 on page and sample + runtime-hotlink site-theme chain + candidate hosts ah-sandbox.wdfiles.com, ah-sandbox.wikidot.com, bhl.scpwikicn.com, hormress.github.io, nu-scptheme.github.io, scp-wiki.wikidot.com; sample credit-modal (preview-form); T3 re-run, no new screenshot-grounded visual finding; chromium-only coverage (no WebKit verdict). [RENDER-ROWS-G (CN17)]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 243, source LOCALIZE-S2-E]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 243]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 244]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:waxed-oxidized-cut-copper-slab-jp.txt sha256:9c97f71d0c881a748e672fb13c377a12c5bcc93ce9bd68d24484ba7fa4d1965b; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit f4488f2d2948824238a2d06479f104f4aab0cf5d; candidate file pages/theme:waxed-oxidized-cut-copper-slab-jp.txt sha256:bbf49f93e657f4ce6aec9f88d3d14aa4d3c9a3401eaaa14c51560b16b64e4770; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -179,6 +179,12 @@ The usage-example sweep (review-scout/SWEEP-USAGE.md) repaired this theme's thre
 | Block | Original | Candidate | Adjudication |
 |---|---|---|---|
 | B57 | L242–243 | L234–235 | The `[[/iftags]]` gate close and a `----` divider at the source section's head, displaced by the consolidation (R3; section 3) |
+
+### Post-package repairs (REFRESH3-H)
+
+The items above describe this package as built. The repair recorded below postdates the package; `candidate.txt` has been recopied from the current canonical `pages/theme:waxed-oxidized-cut-copper-slab-jp.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**FIX-MP12 item 4 (a)(b)(c) — margin rules, prose links, breadcrumb wrapper (landing `f4488f2d2948824238a2d06479f104f4aab0cf5d`, "pages: skipos delivered channel, the-other-side fonts and subtitle, M-pure-12 repairs", 2026-11-17; record `FIX-MP12.md`).** +13/−3 by git numstat. (a) The original head module's two margin rules, absent from the candidate and from the parallel-jp base (the `--main-content-top-margin` variable is a different mechanism), are restored at the code block head after the @import (new L246–253): `#page-content > h1 { margin-top: 3rem; }` and `#page-content > h2 { margin-top: 2rem; }`. (b) Three prose links are repointed to their `-jp` posting names: L17 `theme:copper` → `theme:copper-jp`, L25 `theme:bedrock` → `theme:bedrock-jp`, L59 `theme:parallel` → `theme:parallel-jp` (all three exist as candidates; the two fictional Minecraft progression stages at L40/L47 stay plain, per the package record). (c) The breadcrumb trail is wrapped in `[[div class="pseudocrumbs"]]` … `[[/div]]` (new L16/L18), the original's form. Checker 9/3/1 before and after; the three link-target-missing warnings persist but now name the `-jp` posting names that resolve at posting; no new class (i). (FIX-MP12's acceptance summary quotes +13/−5; git numstat is +13/−3.)
 
 ## Change set outside the two diffed files
 

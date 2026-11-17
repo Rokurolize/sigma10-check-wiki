@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:laruetheme-jp — origin EN, population #106 [GOSIGN2-LEDGER (b) row 106]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now b966fa73a5b9a5e4c65b8330578ef9d1a9ccc9d81b36bf126ff8bc9d7f125ccf); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 47fb39f8f0830d4a2b4ea21d0368c8b8735254a80947170c986b8208de0ad1e4); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 7 errors / 1 warn / 1 info (pseudo-ref×7); standing classes dispositioned in register c1 [T1-ROWS row 96; GOSIGN2-LEDGER (b) row 106]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page runtime-hotlink site-theme chain only; sample T2 no machine verdict (exit 2); T3 page credit modal opens, preview-notice left-clip (shared chrome). [RENDER-ROWS-2 (RENDER-S2-C (EN13))]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 106, source LOCALIZE-S2-B]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 106]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 106]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:laruetheme-jp.txt sha256:b966fa73a5b9a5e4c65b8330578ef9d1a9ccc9d81b36bf126ff8bc9d7f125ccf; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 41048ca2b13766899b5c5d5d426a980ad00f8a04; candidate file pages/theme:laruetheme-jp.txt sha256:47fb39f8f0830d4a2b4ea21d0368c8b8735254a80947170c986b8208de0ad1e4; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -178,6 +178,12 @@ The original's head module carried two rules for the theme page's own exhibits (
 ### The original's invalid var() reference (for report-back to the EN author)
 
 Original L552 reads `color: rgb(var(-black-monochrome));` — a custom property name with a single dash, which makes the declaration invalid and drops it. The port repairs it to `var(--black-monochrome)` and comments the repair in the file (candidate L547, section 10). The defect is the original's, and it belongs on the report-back list for the EN author alongside the derivative record, in the same form as the derby batch's malformed `var()` findings.
+
+### Post-package repairs (REFRESH3-H)
+
+The items above describe this package as built. The repair recorded below postdates the package; `candidate.txt` has been recopied from the current canonical `pages/theme:laruetheme-jp.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**FIX-FONTS7 item 1 — Latin face load restored; Courier Prime non-restore (landing `41048ca2b13766899b5c5d5d426a980ad00f8a04`, "pages: larue and laughter font loads, two exhibit samples", 2026-11-17; record `FIX-FONTS7.md`).** +1/−0. The Latin load is restored as the first @import of the code exhibit at L183: `@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Rubik&display=swap');` — the two faces its stacks name (`--body-font`/`--title-font` 'Rubik', `--header-font` 'Parisienne'), which the original loaded (original L194, bunny.net) but the candidate loaded nowhere. Google Fonts css2 is used instead of the original's bunny.net verbatim form because the candidate's own license box (L746–747) declares Google Fonts as the distribution source for these faces; probed once 200, `text/css`. **Courier Prime non-restore adjudication (recorded, not a defect):** Courier Prime was in the original's load bundle but is named by no stack in either file (only exhibit prose L176 and the license-box font entry L746; `--mono-font` names pennsylvania in both), so its load is deliberately not restored; adding `family=Courier+Prime` to the same line would be a one-token change if byte-parity of the load bundle were preferred. Checker 7/1/1 unchanged; class (i) 0.
 
 ## Change set outside the two diffed files
 

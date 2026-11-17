@@ -15,61 +15,47 @@ adjudicated explanation.
 | | Lines |
 |---|---|
 | original.txt | 1202 |
-| candidate.txt | 1188 |
-| Added | +208 |
-| Review-stage comments | 0 of the +208 added lines |
-| Removed | -222 |
-| Changed | 430 |
-| Change blocks | 17 |
+| candidate.txt | 1207 |
+| Added | +234 |
+| Review-stage comments | 0 of the +234 added lines |
+| Removed | -229 |
+| Changed | 463 |
+| Change blocks | 9 |
 | Diff sections (context 3) | 3 |
 
 ## Changed lines by auto-class (heuristic)
 
 | Auto-class | Blocks | Changed lines |
 |---|---|---|
-| supplement | 3 | 27 |
-| residual | 14 | 403 |
+| supplement | 3 | 239 |
+| residual | 6 | 224 |
 
 ## Change-block index
 
 | # | Section | Original | Candidate | +/− | Auto-class | Gist |
 |---|---|---|---|---|---|---|
-| 1 | 1 | 1–4 | 1–1 | +1/−4 | residual | [[iftags +テーマ]] |
-| 2 | 1 | 6–10 | 3–12 | +10/−5 | supplement | [[include :scp-jp:credit:start-preview]] |
-| 3 | 1 | 12–14 | 14–17 | +4/−3 | residual | @@@@ |
-| 4 | 1 | — | 19–21 | +3/−0 | residual | [[/=]] |
-| 5 | 1 | 17–19 | 23–53 | +31/−3 | residual | [[include :scp-jp:component:theme-squares -=- |
-| 6 | 1 | 21–21 | 55–55 | +1/−1 | residual | ------ |
-| 7 | 1 | — | 57–62 | +6/−0 | residual | [[div style="font-family:'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',s… |
-| 8 | 1 | — | 64–65 | +2/−0 | residual | @@@@ |
-| 9 | 1 | 25–25 | 67–207 | +141/−1 | residual | [[div class="scp-image-block block-right" style="width:300px;"]] |
-| 10 | 1 | — | 209–209 | +1/−0 | residual | /* ===== walk-in-the-dark ===== */ |
-| 11 | 2 | 45–46 | 228–229 | +2/−2 | residual | --header-font: '思源宋体 CN', 'Noto Serif JP', lisu,kaiti,sans-serif; |
-| 12 | 2 | 48–48 | 231–231 | +1/−1 | residual | --title-font: '思源宋体 CN', 'Noto Serif JP', lisu,kaiti,sans-serif; |
-| 13 | 3 | 991–1082 | — | +0/−92 | residual | [[/code]] |
-| 14 | 3 | 1087–1110 | — | +0/−24 | residual | 结果显示为这样： |
-| 15 | 3 | 1113–1191 | — | +0/−79 | residual | @@ @@ |
-| 16 | 3 | 1195–1195 | 1183–1183 | +1/−1 | supplement | @import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Awalk-in-… |
-| 17 | 3 | 1197–1202 | 1185–1188 | +4/−6 | supplement | [[include :scp-jp:component:interwiki-style |
+| 1 | 1 | 1–3 | 1–224 | +224/−3 | supplement | [[iftags +テーマ]] |
+| 2 | 2 | 21–39 | — | +0/−19 | residual | [[/module]] |
+| 3 | 2 | 44–46 | 246–248 | +3/−3 | residual | --body-font: 'Noto Serif JP', '新宋体', kaiti, monospace; |
+| 4 | 2 | 48–49 | 250–251 | +2/−2 | residual | --title-font: '思源宋体 CN', 'Noto Serif JP', lisu,kaiti,sans-serif; |
+| 5 | 3 | 991–1082 | — | +0/−92 | residual | [[/code]] |
+| 6 | 3 | 1087–1110 | — | +0/−24 | residual | 结果显示为这样： |
+| 7 | 3 | 1113–1191 | — | +0/−79 | residual | @@ @@ |
+| 8 | 3 | 1195–1195 | 1202–1202 | +1/−1 | supplement | @import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Awalk-in-… |
+| 9 | 3 | 1197–1202 | 1204–1207 | +4/−6 | supplement | [[include :scp-jp:component:interwiki-style |
 
 ## Full diff
 
 <details>
-<summary>Section 1 — original 1–29 · candidate 1–212 · +200/−17 · residual, supplement</summary>
+<summary>Section 1 — original 1–6 · candidate 1–227 · +224/−3 · supplement</summary>
 
 ```diff
-@@ -1,29 +1,212 @@
+@@ -1,6 +1,227 @@
 -[[iftags +版式]]
 -[[include :etinjat:theme:black-highlighter-theme]]
 -[[module css]]
--.heritage-rating-module{display:none!important}
 +[[iftags +テーマ]]
- 
--.unmargined{
--background-color: #302c30   !important;
--border: solid 1px transparent    !important;
--  font-family: '等线';
--}
++
 +[[include :scp-jp:credit:start-preview]]
 +**タイトル:** 圣人夜行 BHL 主题
 +**翻訳責任者:** AI
@@ -80,22 +66,16 @@ adjudicated explanation.
 +**初訳時参照リビジョン:** 72
 +**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:walk-in-the-dark 圣人夜行 BHL 主题]
 +[[include :scp-jp:credit:end-preview]]
- 
--#breadcrumbs{
--text-align: center;
--}
++
 +@@@@
 +[[div class="front-title" style="border-bottom:2px solid #777;border-top:2px solid #777;  padding:1px;"]]
 +[[div style="border-bottom:1px solid #777;border-top:1px solid #777;"]]
 +[[=]]
- 
++
 +[[/=]]
 +[[/div]]
 +[[/div]]
- 
--#page-content .unmargined + hr{   
--    display: none;
--}
++
 +[[include :scp-jp:component:theme-squares -=-
 +| color1-name=ペインズグレー
 +| color1-variable=--gray-monochrome
@@ -127,21 +107,19 @@ adjudicated explanation.
 +| subcolor6-variable=--pale-accent
 +| subcolor6-info=(105,32,32)
 +]]
- 
--[[/module]] 
++
 +------
- 
++
 +[[div style="font-family:'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif;font-size: 120%;"]]
 +//天文、地理、月刑、日徳、四時の検、度数の節、陰陽の気。五行の業、五政の道、五音の調べ、五声の故、五味の事、賞罰の約。これらはみな験を有する。そうである所以は、随ってもその後を見ず、迎えてもその首を見ない。功を成し事を遂げても、そのかたちを知る者はない。図は載せることあたわず、名は挙げることあたわず。強いてこれを説けば、芴乎芒乎として中に象あり、芒乎芴乎として中に物あり、窅乎冥乎として中に精あり。信を致し情を究めれば、また無貌へと返る。鬼は見えても、人の業とはならない。ゆえに聖人は夜行を貴ぶ。//
 +[[>]]
 +――『鶡冠子』
 +[[/>]]
 +[[/div]]
- 
++
 +@@@@
 +@@@@
- 
--[[collapsible show="+ 主题代码" hide="- 主题代码"]]
++
 +[[div class="scp-image-block block-right" style="width:300px;"]]
 +[[image Logo-YXH-red.png]]
 +[[div class="scp-image-caption" style="width:300px;"]]
@@ -283,42 +261,84 @@ adjudicated explanation.
 ++ ソースコード
 +
 +[[collapsible show="ソースコードを表示" hide="ソースコードを閉じる"]]
- [[code type="css"]]
++[[code type="css"]]
 +/* ===== walk-in-the-dark ===== */
- /*
- =========================================================
-               🐉 羽天一的异学夜行BHL版主题 🐉
++/*
++=========================================================
++              🐉 羽天一的异学夜行BHL版主题 🐉
++       ------------------------------------------------
++           异学会标志由 Freedom Koo 绘制
++           CN分部标志由 Deer Kylin 设计
++         分割线代码参考自 Woednaz 设计的主题
++                   遵循CC-BY-SA协议
++==========================================================
++*/
++
++
++@import url('https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap');
++@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
++
+ .heritage-rating-module{display:none!important}
+ 
+ .unmargined{
 ```
 
 </details>
 
 <details>
-<summary>Section 2 — original 42–51 · candidate 225–234 · +3/−3 · residual</summary>
+<summary>Section 2 — original 18–52 · candidate 239–254 · +5/−24 · residual</summary>
 
 ```diff
-@@ -42,10 +225,10 @@
+@@ -18,35 +239,16 @@
+     display: none;
+ }
+ 
+-[[/module]] 
+-
+-
+-
+-[[collapsible show="+ 主题代码" hide="- 主题代码"]]
+-[[code type="css"]]
+-/*
+-=========================================================
+-              🐉 羽天一的异学夜行BHL版主题 🐉
+-       ------------------------------------------------
+-           异学会标志由 Freedom Koo 绘制
+-           CN分部标志由 Deer Kylin 设计
+-         分割线代码参考自 Woednaz 设计的主题
+-                   遵循CC-BY-SA协议
+-==========================================================
+-*/
+-
+-
+-@import url('https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap');
+ :root:lang(cn),
+ :root {
  
  /* 字体 */
-     --body-font: '新宋体',kaiti,monospace;
+-    --body-font: '新宋体',kaiti,monospace;
 -    --header-font: '思源宋体 CN', 'Noto Serif SC', lisu,kaiti,sans-serif;
 -    --sub-header-font:'思源宋体 CN',  'Noto Serif SC', lisu, kaiti,sans-serif;
++    --body-font: 'Noto Serif JP', '新宋体', kaiti, monospace;
 +    --header-font: '思源宋体 CN', 'Noto Serif JP', lisu,kaiti,sans-serif;
 +    --sub-header-font:'思源宋体 CN',  'Noto Serif JP', lisu, kaiti,sans-serif;
      --page-title-font: '楷体', kaiti,sans-serif;
 -    --title-font: '思源宋体 CN', 'Noto Serif SC',  lisu,kaiti,sans-serif;
+-    --mono-font: '仿宋','ZCOOL XiaoWei', monospace;
 +    --title-font: '思源宋体 CN', 'Noto Serif JP',  lisu,kaiti,sans-serif;
-     --mono-font: '仿宋','ZCOOL XiaoWei', monospace;
++    --mono-font: '仿宋', 'ZCOOL XiaoWei', 'Noto Serif JP', monospace;
      --hdmemu-font: kaiti, monospace;/* 顶栏文字 */
      --hdlist-font: '等线', monospace;/* 顶栏列表 */
+ 
 ```
 
 </details>
 
 <details>
-<summary>Section 3 — original 988–1202 · candidate 1171–1188 · +5/−202 · residual, supplement</summary>
+<summary>Section 3 — original 988–1202 · candidate 1190–1207 · +5/−202 · residual, supplement</summary>
 
 ```diff
-@@ -988,215 +1171,18 @@
+@@ -988,215 +1190,18 @@
    border: 0.5em groove #333;
      width: auto;
  }

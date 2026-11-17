@@ -100,7 +100,7 @@ with `python3 review/build_review.py`; verify with
 -> + Link
 -> [# Unvisited Link] | [[[theme:maxwell-s-silver-hammer|Visited Link]]]
 +> + リンク
-+> [# 未訪問リンク] | [[[theme:maxwell-s-silver-hammer|訪問済みリンク]]]
++> [# 未訪問リンク] | [[[theme:maxwell-s-silver-hammer-jp|訪問済みリンク]]]
  > -----
 ->> text[[footnote]]knocknock[[/footnote]]
 +>> テキスト[[footnote]]コンコン[[/footnote]]

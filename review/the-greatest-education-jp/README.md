@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:the-greatest-education-jp — origin KO, population #287 [GOSIGN2-LEDGER (b) row 287]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now d05d901ea5d7e55f01ccc567691ce093b7537a0d66044252ff2ffd2be398abf1); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 058647e246dd4df26abc9b80df166f1090dd14db5a52226b91cd873871f40ecf); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 4 errors / 2 warns / 1 info (hotlink×3, pseudo-ref×1); standing classes dispositioned in register c1 [T1-ROWS row 257; GOSIGN2-LEDGER (b) row 287]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — sample credit-modal (preview-form) + page-overflow 324px@320 + 884px@768 + runtime-hotlink incl. scpko hosts on both pages; T3 none beyond cross-cutting items. [RENDER-ROWS-2 (RENDER-S2-H (KO8))]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 2 [LOCALIZE-ROWS row 286, source LOCALIZE-S2-F]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 286]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 287]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:the-greatest-education-jp.txt sha256:d05d901ea5d7e55f01ccc567691ce093b7537a0d66044252ff2ffd2be398abf1; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit f4488f2d2948824238a2d06479f104f4aab0cf5d; candidate file pages/theme:the-greatest-education-jp.txt sha256:058647e246dd4df26abc9b80df166f1090dd14db5a52226b91cd873871f40ecf; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -179,6 +179,12 @@ This is T4 row 286's 型3 charge in its exact shape （自己矛盾・第二 cre
 |---|---|---|---|
 | B17 | L55 | L65–66 | The porter banner comment `/* ===== the-greatest-education ===== */` added at the code block's head (R2; section 10) |
 | B20 | L667 | L678–679 | The `[[/collapsible]]` closing the code exhibit's new wrapper (R3 presentation; section 8) |
+
+### Post-package repairs (REFRESH3-H)
+
+The items above describe this package as built. The repair recorded below postdates the package; `candidate.txt` has been recopied from the current canonical `pages/theme:the-greatest-education-jp.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**FIX-MP12 item 1 — the credit author field (landing `f4488f2d2948824238a2d06479f104f4aab0cf5d`, "pages: skipos delivered channel, the-other-side fonts and subtitle, M-pure-12 repairs", 2026-11-17; record `FIX-MP12.md`).** As built, candidate L8 read `**著作権者:** ClownBonefish`, a name occurring nowhere else in either file; the original's own banner (original L62, "Created by c_bonefish and Denevola") and the candidate's body/prose (L23, L25) name c_bonefish and Denevola. The field now reads `**著作権者:** c_bonefish, Denevola`, the population's established form for this author pair. One line changed (+1/−1). Kept, not edited: the body line's `[[*user kkaaccc]]` translator credit has no counterpart in the original (FIX-MP12 item 1 records it for the coordinator). Checker 4/2/1 before and after; no new class (i).
 
 ## Change set outside the two diffed files
 

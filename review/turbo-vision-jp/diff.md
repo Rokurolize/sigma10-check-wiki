@@ -82,7 +82,7 @@ adjudicated explanation.
 | 45 | 1 | 142–143 | 153–154 | +2/−2 | residual | \| name=https://scp-jp-storage.wdfiles.com/local--files/file%3A9042763-26-mn41… |
 | 46 | 1 | 149–149 | 160–160 | +1/−1 | residual | **アイテム番号** |
 | 47 | 1 | 155–155 | 166–166 | +1/−1 | residual | **オブジェクトクラス** |
-| 48 | 1 | 158–158 | 169–169 | +1/−1 | residual | [[[http://scp-jp.wikidot.com/scp-0110-j\|LIGMA]]] |
+| 48 | 1 | 158–158 | 169–169 | +1/−1 | residual | [[[https://scp-jp.wikidot.com/scp-0110-j\|LIGMA]]] |
 | 49 | 1 | 161–161 | 172–172 | +1/−1 | residual | **特別収容プロトコル** |
 | 50 | 1 | 165–165 | 176–176 | +1/−1 | residual | [[div class="turbo-block bg-black border-white text-white" data-title="チャット" … |
 | 51 | 1 | 167–167 | 178–178 | +1/−1 | residual | **johnsmith12:** あの、自分が今何やってるか分かってる？ |
@@ -160,9 +160,9 @@ adjudicated explanation.
 | 123 | 8 | 539–539 | 549–549 | +1/−1 | residual | オフセットクラスを使うべきでない場合もあります。もちろん使用することはできますが、ページに悪影響を及ぼします。 |
 | 124 | 8 | 541–541 | 551–551 | +1/−1 | residual | 使用できるクラスは、サイドバーの位置と、ページコンテンツがブラウザのビューポートに対して中央揃えになっているかどうかによって異なります。また、このテーマを… |
 | 125 | 8 | 544–544 | 554–554 | +1/−1 | residual | テーマ・モード |
-| 126 | 8 | 547–547 | 557–557 | +1/−1 | residual | ターボ・ビジョン テーマを “テーマ・モード” で使用している場合は、[[[http://scp-jp.wikidot.com/component:tog… |
+| 126 | 8 | 547–547 | 557–557 | +1/−1 | residual | ターボ・ビジョン テーマを “テーマ・モード” で使用している場合は、[[[component:toggle-sidebar]]]が付属しており、ページコ… |
 | 127 | 8 | 550–550 | 560–560 | +1/−1 | residual | コンポーネント・モード |
-| 128 | 8 | 553–553 | 563–563 | +1/−1 | residual | ターボ・ビジョン テーマを “コンポーネント・モード” で使用している場合、デフォルトでは[[[http://scp-jp.wikidot.com/com… |
+| 128 | 8 | 553–553 | 563–563 | +1/−1 | residual | ターボ・ビジョン テーマを “コンポーネント・モード” で使用している場合、デフォルトでは[[[component:toggle-sidebar]]]は付… |
 | 129 | 8 | 555–555 | 565–565 | +1/−1 | residual | もしトグル式サイドバーを使用している場合は、ページ本体が中央揃えになり、すべてのオフセットクラスを自由に使用できます。 |
 | 130 | 8 | 557–557 | 567–567 | +1/−1 | residual | トグル式サイドバーを使用していない場合、ページ本体はページの右側にあります。右側のオフセットクラスは画面の端からはみ出す可能性があるため、使用しないでくだ… |
 | 131 | 8 | 559–559 | 569–569 | +1/−1 | residual | [[[theme:black-highlighter-theme\|]]]を使用している場合、ページ本体は中央に配置されるため、右側のオフセットクラスを自由… |
@@ -441,7 +441,7 @@ adjudicated explanation.
  [[/div]]
  
 -[[[/scp-0110-j|LIGMA]]]
-+[[[http://scp-jp.wikidot.com/scp-0110-j|LIGMA]]]
++[[[https://scp-jp.wikidot.com/scp-0110-j|LIGMA]]]
  
  [[div class="heading"]]
 -**SPECIAL CONTAINMENT PROCEDURES**
@@ -882,7 +882,7 @@ adjudicated explanation.
  [[/div]]
  
 -If you are using the Turbo Vision theme in 'theme mode', it comes with [[[component:toggle-sidebar|]]], which center-aligns the page content and frees up as much horizontal space as possible. You may freely use all of the offset classes.
-+ターボ・ビジョン テーマを “テーマ・モード” で使用している場合は、[[[http://scp-jp.wikidot.com/component:toggle-sidebar|component:toggle-sidebar]]]が付属しており、ページコンテンツを中央揃えにして、水平方向のスペースを可能な限り広く確保します。全てのオフセットクラスを自由に使用できます。
++ターボ・ビジョン テーマを “テーマ・モード” で使用している場合は、[[[component:toggle-sidebar]]]が付属しており、ページコンテンツを中央揃えにして、水平方向のスペースを可能な限り広く確保します。全てのオフセットクラスを自由に使用できます。
  
  [[div class="heading"]]
 -COMPONENT MODE
@@ -890,7 +890,7 @@ adjudicated explanation.
  [[/div]]
  
 -If you are using the Turbo Vision theme in 'component mode', it does not come with [[[component:toggle-sidebar|]]] by default. This limits the horizontal space.
-+ターボ・ビジョン テーマを “コンポーネント・モード” で使用している場合、デフォルトでは[[[http://scp-jp.wikidot.com/component:toggle-sidebar|component:toggle-sidebar]]]は付属していません。これにより、水平方向のスペースが制限されます。
++ターボ・ビジョン テーマを “コンポーネント・モード” で使用している場合、デフォルトでは[[[component:toggle-sidebar]]]は付属していません。これにより、水平方向のスペースが制限されます。
  
 -If you are using Toggle Sidebar anyway, your page body is center-aligned. You may freely use all of the offset classes.
 +もしトグル式サイドバーを使用している場合は、ページ本体が中央揃えになり、すべてのオフセットクラスを自由に使用できます。
@@ -931,29 +931,29 @@ adjudicated explanation.
 +**ソース:** [[[https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aturbo-vision-jp/logo%20%281%29.png]]]
 +
 +以上全てのライセンス表示
-+**著作者:** Croquembouche
++**著作者:** [[*user Croquembouche]]
 +**ライセンス:** CC BY SA 3.0
 +**公開年:** 2021
 +**補足:** oplax-counterpointによって、全てCSS内に埋め込む形式に変更されている。
 +[[/div]]
 +
 +> **ファイル名:** scpimage.png
-+> **ファイルページ:** [[[http://scp-jp-storage.wikidot.com/file:9042763-26-mn41]]]
++> **ファイルページ:** [[[https://scp-jp-storage.wikidot.com/file:9042763-26-mn41]]]
 +> **ソース:** [[[https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aturbo-vision-jp/scpimage.png]]]
-+> **著作者:** Placeholder McD
++> **著作者:** [[*user Placeholder McD]]
 +> **ライセンス:** CC BY SA 3.0
 +> **補足:** サイズ縮小とwebpへの変換はoplax-counterpointが行った。
 +
 +> **ファイル名:** small (1).png
 +> **ソース:** [[[https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aturbo-vision-jp/small%20%281%29.png]]]
-+> **著作者:** JakdragonX
++> **著作者:** [[*user JakdragonX]]
 +> **ライセンス:** CC BY SA 3.0
 +> **補足:** oplax-counterpointによって、CSS内に埋め込む形式に変更されている。
 +[[/collapsible]]
 +
 +[[collapsible show="フォント情報について"]]
 +> **フォント名:** JFドットM+12
-+> **ファイルページ:** [[[http://scp-jp-storage.wikidot.com/file:9042763-13-vzwf]]]
++> **ファイルページ:** [[[https://scp-jp-storage.wikidot.com/file:9042763-13-vzwf]]]
 +> **ソース:** [[[http://jikasei.me/font/jf-dotfont/]]]
 +> **著作権者:** 森下浩司
 +> **ライセンス:** M+ FONTS LICENSE

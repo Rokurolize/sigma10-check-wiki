@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:turbo-vision-jp — origin EN, population #41 [GOSIGN2-LEDGER (b) row 41]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now ca8a6817b329c00a76b6dc10e337e2180d8ed7898c7eccc34e5295f601c71d68); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now d5c7e1a5aa596a6d15687fb7857c01b572e77b9c7f0a01680934600ff3b58eba); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 2 errors / 0 warns / 1 info (pseudo-ref×2); standing classes dispositioned in register c1 [T1-ROWS row 41; GOSIGN2-LEDGER (b) row 41]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — T2 sample no machine verdict (webkit screenshot pixel-cap, deterministic); page error only runtime-hotlink; JFDot pixel-font stylesheet ORB-blocked at chromium-768 (candidate-inherent flakiness); offset blocks by design. [RENDER-ROWS-1 (RENDER-D2 row 41)]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 0 [LOCALIZE-ROWS row 41, source LOCALIZE-B]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 41]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 41]
-- Computed against: canonical commit 358955eb4013dac2399c414ba8ec2a6e416a3c11; candidate file pages/theme:turbo-vision-jp.txt sha256:ca8a6817b329c00a76b6dc10e337e2180d8ed7898c7eccc34e5295f601c71d68; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit f4488f2d2948824238a2d06479f104f4aab0cf5d; candidate file pages/theme:turbo-vision-jp.txt sha256:d5c7e1a5aa596a6d15687fb7857c01b572e77b9c7f0a01680934600ff3b58eba; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -201,6 +201,12 @@ Eleven live CSS modules appended at candidate L1672–1739, absent from producti
 | B118 | L449–450 | L459–460 | The exhibit label "EXAMPLES" → "例" (R1) |
 | B139 | L595 | L676–698 | The production translation's JP font-variable layer added at code block 1's head; no single original line corresponds (R2 mass, section 4) |
 | B146 | L966 | L1066–1103 | The same JP layer at code block 2's head (R2 mass, section 4) |
+
+### Post-package repairs (REFRESH3-H)
+
+The items above describe this package as built. The repair recorded below postdates the package; `candidate.txt` has been recopied from the current canonical `pages/theme:turbo-vision-jp.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**FIX-MP12 item 5 — production drift, eight loci (landing `f4488f2d2948824238a2d06479f104f4aab0cf5d`, "pages: skipos delivered channel, the-other-side fonts and subtitle, M-pure-12 repairs", 2026-11-17; record `FIX-MP12.md`).** +8/−8. Eight named loci are corrected to the production predecessor (`pages-existing/existing:theme-turbo-vision.txt`), leaving the intended migration deltas (draft-host asset ソース lines, credit block, delivery) untouched: L169 `http://…/scp-0110-j` → `https://…`; L557 and L563 `[[[http://scp-jp.wikidot.com/component:toggle-sidebar|component:toggle-sidebar]]]` → `[[[component:toggle-sidebar]]]`; L605 and L620 storage `http://` → `https://`; L598/L607/L613 bare `**著作者:** X` → `[[*user X]]` for Croquembouche, Placeholder McD and JakdragonX. Checker 2/0/1 before and after, findings identical modulo line numbers; no new class (i). The AGENTS.md §6 NO-FOLLOW for Turbo Vision's bulk-only upstream revisions (53→54) is not disturbed — only these eight loci moved.
 
 ## Change set outside the two diffed files
 

@@ -3,7 +3,8 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:magazine-jp — origin CN, population #203 [GOSIGN2-LEDGER (b) row 203]
-- Overall: PASS — NOT PASS at the ledger determination (section (e) register); its one OPEN item re-judged FIXED by the FIX5 wave; go-sign issued 2026-11-17 (COMPLETION-REPORT §10) [GOSIGN2-LEDGER (b); GOSIGN2-LEDGER-SUPPLEMENT (d)]
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 05bd91d95bb22c978f900f578b167221774bed41aeb8fdf47713c26f21da16e3); verdict not carried over, re-judgement required
+> verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 31 errors / 1 warn / 3 infos (pseudo-ref×30, hotlink×1); standing classes dispositioned in register c1 [T1-ROWS row 269; GOSIGN2-LEDGER (b) row 203]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page-overflow 1415px@1366 + 448px@320 + 525px@375 + 911–996px@768 + runtime-hotlink site-theme chain; sample T2 no machine verdict (exit 2, no summary). [RENDER-ROWS-2 (RENDER-S2-F (CN9))]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row (the row records inconclusive runs, carried verbatim above) [RENDER-ROWS-2 row]
@@ -11,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 3 [LOCALIZE-ROWS row 202, source LOCALIZE-S2-D]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 202]
 - FIX5 re-judgement: item 65 (class H) FIXED — FIX5-TEXTA §2, commit 6f6b349: untranslated residue at L7121, L7158, L7268/L7272 translated; source-wide grep found no further reader-visible CN residue [GOSIGN2-LEDGER-SUPPLEMENT (a) item 65]
-- Computed against: canonical commit 6f6b34974c400a68e01363f5423d1cf817492522; candidate file pages/theme:magazine-jp.txt sha256:782b936384d5f7db00220af5c6d628482effe2909faf54c7e3a112926ddab79b; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit f5acc90cbb800f3c0752713589322929dac75821; candidate file pages/theme:magazine-jp.txt sha256:05bd91d95bb22c978f900f578b167221774bed41aeb8fdf47713c26f21da16e3; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -179,6 +180,12 @@ The T4/T5 row (LOCALIZE-ROWS row 202, LOCALIZE-S2-D) charged reader-visible untr
 3. **L7268 and L7272** — the style-attribute exhibit placeholders `url(图片地址)` ("image URL") become `url(画像URL)` at both occurrences. Current bytes: B380 and B382 (candidate L7268, L7272), both carrying GLYPH-FORM spans.
 
 The supplement also reports that the lane's source-wide grep found no further reader-visible CN residue. This package does not take that on trust: the scan of section 6 (distinctive simplified-only forms over the whole candidate) returns no reader-visible hits, and the Chinese text that remains in the file is accounted for — the gated Traditional Chinese variant module (section 5) and quoted specimen strings. One scope note belongs in the record: the FIX5 commit is the candidate's last change (the file's git history runs bbd273c → c839ec3 → 1869877 → a497307 → 6f6b349), so unlike a repaired-after-verdict theme, this package's stamp reads PASS against the very bytes the supplement judged, and the re-derivation above is a check of the fix, not of a drifted file. The fix is present and complete.
+
+### Post-package repairs (REFRESH3-H)
+
+The items above describe this package as built. The repair recorded below postdates the package; `candidate.txt` has been recopied from the current canonical `pages/theme:magazine-jp.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**FIX-RFIX6 items 2–3 — attribution links and the maxim face (landing `f5acc90cbb800f3c0752713589322929dac75821`, "pages: king-s-palace exhibit slug, magazine attribution links and maxim face", 2026-11-17; record `FIX-RFIX6.md`).** +17/−1. Item 2: the two dead EN-host attribution links on L6185 are repointed to their CN originals (re-probed 200) — `[*https://scp-wiki-cn.wikidot.com/fragment:semimonth-magazine 半月刊専用部分]` and `[*https://scp-wiki-cn.wikidot.com/semimonth-202110-01 効果はこちら]`; the third link (EN theme:newspaper) is untouched because the prose credits MalyceGraves' original theme. Item 3: the original's two `'Huiwen-mincho'` `@font-face` blocks are restored at new L31–46 immediately after the Google Fonts @import — the `.yxh-maxim` rule (new L5044) names 'Huiwen-Mincho' but the face was loaded nowhere in the candidate; the URLs are trimmed of the original's trailing space inside `url()` (spaced form 404, trimmed form 200 `font/woff2`, SCP-BASE 7,456 B / SCP-ADD 14,036 B). The two sibling Weibei blocks are deliberately NOT restored (no surviving rule names that face). Checker 29/1/3 → 31/1/3: the two new errors are class (ii) hotlinks on the restored fastly.jsdelivr.net URLs; class (i) 0.
 
 ## Change set outside the two diffed files
 

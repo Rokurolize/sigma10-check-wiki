@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:walk-in-the-dark-jp — origin CN, population #243 [GOSIGN2-LEDGER (b) row 243]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now d7ccd40536c6b8e4f87cf508b03b04faa3fac20536daac99971ee066f2d0f7c2); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 8ad895d99e2f82a5190886b3d83e6c0d9d5205fd218d0c0b2fd03e7682ff43d9); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 4 errors / 2 warns / 1 info (hotlink×3, pseudo-ref×1); standing classes dispositioned in register c1 [T1-ROWS row 208; GOSIGN2-LEDGER (b) row 243]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page-overflow 350px@320 + 382px@375 + 814px@768 (page; sample 884px@768) + runtime-hotlink site-theme chain + candidate hosts fastly.jsdelivr.net, scp-wiki-cn.wdfiles.com; sample credit-modal (preview-form); T3 re-run, no new screenshot-grounded visual finding; chromium-only coverage (no WebKit verdict). [RENDER-ROWS-G (CN17)]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 242, source LOCALIZE-S2-E]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 242]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 243]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:walk-in-the-dark-jp.txt sha256:d7ccd40536c6b8e4f87cf508b03b04faa3fac20536daac99971ee066f2d0f7c2; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit f4488f2d2948824238a2d06479f104f4aab0cf5d; candidate file pages/theme:walk-in-the-dark-jp.txt sha256:8ad895d99e2f82a5190886b3d83e6c0d9d5205fd218d0c0b2fd03e7682ff43d9; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -180,6 +180,12 @@ Recorded in section 2: the original's gated personal-wiki base include (`:etinja
 | B6 | L20–21 | L54–55 | The original's module close and a divider line, aligned into the reordered documentation (R3) |
 | B8 | L23 | L63–65 | `@@@@` exhibit markers displaced by the reorder (R3) |
 | B14 | L1086–1110 | L1177 | The documentation tail region (the cn-hr snippet's neighborhood) compressed at the code block's close by the reorder (R3) |
+
+### Post-package repairs (REFRESH3-H)
+
+The items above describe this package as built. The repair recorded below postdates the package; `candidate.txt` has been recopied from the current canonical `pages/theme:walk-in-the-dark-jp.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**FIX-MP12 item 3 (a)(b) — head module restored, JP face loaded and applied (landing `f4488f2d2948824238a2d06479f104f4aab0cf5d`, "pages: skipos delivered channel, the-other-side fonts and subtitle, M-pure-12 repairs", 2026-11-17; record `FIX-MP12.md`).** +21/−2. (a) The original's live `[[module CSS]]` head rules (original L4–19), absent from the candidate, are restored verbatim — byte-exact including the trailing spaces on the `#page-content .unmargined + hr{` line — at the head of the delivered code block after the @imports and before `:root` (new L225–241): `.heritage-rating-module{display:none!important}`, `.unmargined{…}`, `#breadcrumbs{text-align:center}`, `#page-content .unmargined + hr{display:none}`. (b) A Noto Serif JP load is added at L223 beside the existing ZCOOL XiaoWei import (Google Fonts css2, probed once: HTTP 200, `text/css`); `--body-font` at L246 becomes `'Noto Serif JP', '新宋体', kaiti, monospace` (JP face primary) and `--mono-font` at L251 becomes `'仿宋', 'ZCOOL XiaoWei', 'Noto Serif JP', monospace` (JP fallback), making the file's font specimens true. Checker 4/2/1 before and after; the info `important` count rose 11 → 14 because the restored rules carry three `!important` declarations — the same finding, not a new one; no new class (i).
 
 ## Change set outside the two diffed files
 

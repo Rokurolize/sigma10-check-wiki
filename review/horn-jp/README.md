@@ -3,7 +3,8 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:horn-jp — origin CN, population #197 [GOSIGN2-LEDGER (b) row 197]
-- Overall: PASS — passed at the ledger determination; no OPEN items [GOSIGN2-LEDGER (b) row 197]
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 831d08df26cc3876a3b7b313a8e30a0e16f1e9a41ed4393aa711ede519d431fe); verdict not carried over, re-judgement required
+> verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 5 errors / 1 warn / 2 infos (hotlink×4, pseudo-ref×1); standing classes dispositioned in register c1 [T1-ROWS row 227; GOSIGN2-LEDGER (b) row 197]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page runtime-hotlink site-theme chain only; sample hidden-* cluster confined to webkit-1366, whose only hotlink host is http.cat = transient 503 capture, not a result; sample credit-modal (preview-form) + 884px@768 overflow. [RENDER-ROWS-2 (RENDER-S2-F (CN8))]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row [RENDER-ROWS-2 row]
@@ -11,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 2 [LOCALIZE-ROWS row 196, source LOCALIZE-S2-D]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 196]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 197]
-- Computed against: canonical commit 1869877ffdcd33cb214b8dc421fb39e3de8d7e8d; candidate file pages/theme:horn-jp.txt sha256:fff7bbdcccc780f9384df18b8688b4eb1c78f9b278b8fdfc30caae3d172d2d71; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 1c96ee4f6dbe58243d8c4ba0136a4a4dde806972; candidate file pages/theme:horn-jp.txt sha256:831d08df26cc3876a3b7b313a8e30a0e16f1e9a41ed4393aa711ede519d431fe; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -170,6 +171,14 @@ Class M treatment: the 42 heuristic blocks are not listed one by one; they fall 
 | Specimen sentence translation (unanchored) | The TRANS-UNANCHORED body mass (45 label occurrences across heuristic and mixed blocks) | candidate L34–200 | P10 translation (section 6) |
 | CSS comment translation | COMMENT-TEXT ×9 | the delivered CSS body | Expected heuristic mass; comments carry no behaviour |
 | Glyph-form conversion inside translated lines | B13, B14, B16, B17 (specific-anchored, listed here for completeness) | candidate L53, L57, L65, L67 | R5 conversions, named in section 6 |
+
+## Per-theme record
+
+### Post-package repairs (REFRESH3-H)
+
+The items above describe this package as built. The repair recorded below postdates the package; `candidate.txt` has been recopied from the current canonical `pages/theme:horn-jp.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**FIX-RATES — head-zone bare Rate removed (landing `1c96ee4f6dbe58243d8c4ba0136a4a4dde806972`, "pages: head-zone bare Rates removed in five themes", 2026-11-17; record `FIX-RATES.md`).** +0/−5. The five-line head-zone bare-Rate block (right-floated `[[>]]` wrapper, `**評価モジュール:**`, `[[module Rate]]`, `[[/>]]`, trailing blank) is removed from inside the `[[iftags +テーマ]]` gate, directly above the rate-bearing preview credit block — head furniture beside the credit block, not a specimen. Residue kept, not edited: the remaining combined heading `**評価モジュールとクレジットモジュール:**` now heads the credit block alone (a wording call for the coordinator). Checker 5/1/2 → 5/1/1 (the `double-rate` info clears); every other finding unchanged in kind and count; class (i) 0.
 
 ## Change set outside the two diffed files
 

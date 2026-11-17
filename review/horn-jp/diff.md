@@ -8,16 +8,16 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 514 |
-| candidate.txt | 533 |
-| Added | +160 |
-| Review-stage comments | 0 of the +160 added lines |
-| Removed | -146 |
+| candidate.txt | 528 |
+| Added | +159 |
+| Review-stage comments | 0 of the +159 added lines |
+| Removed | -150 |
 | Hunks | 12 |
 
 ```diff
 --- original.txt
 +++ candidate.txt
-@@ -1,171 +1,191 @@
+@@ -1,171 +1,186 @@
  [[module CSS]]
 -@import url(https://scp-wiki-cn.wikidot.com/local--code/theme%3Ahorn/1);
 +@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Ahorn-jp/1");
@@ -33,15 +33,14 @@ with `python3 review/build_review.py`; verify with
  
  [[>]]
 -**评分：**
-+**評価モジュール:**
- [[module Rate]]
- [[/>]]
- 
- [[>]]
--**评分模块与著作信息模块：**
+-[[module Rate]]
 +**評価モジュールとクレジットモジュール:**
  [[/>]]
  
+-[[>]]
+-**评分模块与著作信息模块：**
+-[[/>]]
+-
 -[[include :scp-wiki-cn:credit:start]]
 -页面信息
 -[[include :scp-wiki-cn:credit:more]]
@@ -334,7 +333,7 @@ with `python3 review/build_review.py`; verify with
  [[code type="css"]]
  /*
      Horn Theme
-@@ -175,9 +195,9 @@
+@@ -175,9 +190,9 @@
        Anderson Robotics Theme by Croquembouche
        Paperstack Theme by EstrellaYoshte
  */
@@ -347,7 +346,7 @@ with `python3 review/build_review.py`; verify with
  #header {
      background: url(https://scpsandboxcn.wikidot.com/local--files/nmscxj/logo%20400x400-%E6%81%A2%E5%A4%8D%E7%9A%844.png) 15px 5px no-repeat;
      background-size: 455px 149px;
-@@ -186,7 +206,7 @@
+@@ -186,7 +201,7 @@
  #header h2 span {
      color: transparent;
      text-shadow: none;
@@ -356,7 +355,7 @@ with `python3 review/build_review.py`; verify with
  }
  #header h2 span {
      font-size: 110%;
-@@ -251,7 +271,7 @@
+@@ -251,7 +266,7 @@
      border-top: solid 1px transparent;
  }
  
@@ -365,7 +364,7 @@ with `python3 review/build_review.py`; verify with
  #account-options li a,
  #account-options li a:hover,
  #login-status,
-@@ -279,7 +299,7 @@
+@@ -279,7 +294,7 @@
      color: #3296A0;
  }
  
@@ -374,7 +373,7 @@ with `python3 review/build_review.py`; verify with
  #side-bar .heading,
  #side-bar .collapsible-block-unfolded-link{
      border-bottom: solid 1px #EEFFFF;
-@@ -304,7 +324,7 @@
+@@ -304,7 +319,7 @@
      background: none;
  }
  
@@ -383,7 +382,7 @@ with `python3 review/build_review.py`; verify with
  .yui-navset .yui-content {
      border: none;
  }
-@@ -336,7 +356,7 @@
+@@ -336,7 +351,7 @@
      border: 1px solid #2f333c;
  }
  
@@ -392,7 +391,7 @@ with `python3 review/build_review.py`; verify with
  .yui-navset .yui-nav,
   .yui-navset .yui-navset-top .yui-nav{
       display: flex;
-@@ -374,7 +394,7 @@
+@@ -374,7 +389,7 @@
       padding: 0;
  }
  
@@ -401,7 +400,7 @@ with `python3 review/build_review.py`; verify with
  .yui-navset .yui-content {
      display: flex;
      flex-direction: column;
-@@ -421,7 +441,7 @@
+@@ -421,7 +436,7 @@
      100% { max-height: 9999rem; }
  }
  
@@ -410,7 +409,7 @@ with `python3 review/build_review.py`; verify with
  table.wiki-content-table {
      border-collapse: separate;
      border: 2px solid #21252E;
-@@ -437,7 +457,7 @@
+@@ -437,7 +452,7 @@
      color: #EEFFFF;
  }
  
@@ -419,7 +418,7 @@ with `python3 review/build_review.py`; verify with
  .page-rate-widget-box .rate-points,
  .page-rate-widget-box .cancel,
  #page-content .rate-box-with-credit-button {
-@@ -472,7 +492,7 @@
+@@ -472,7 +487,7 @@
      background: #2F333C;
  }
  
@@ -428,7 +427,7 @@ with `python3 review/build_review.py`; verify with
  .scp-image-block .scp-image-caption {
      background-color: #2F333C;
      color: #EEFFFF;
-@@ -498,17 +518,16 @@
+@@ -498,17 +513,16 @@
  [[/code]]
  [[/collapsible]]
  [[/iftags]]

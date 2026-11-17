@@ -8,16 +8,16 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 999 |
-| candidate.txt | 1008 |
-| Added | +91 |
-| Review-stage comments | 0 of the +91 added lines |
-| Removed | -87 |
-| Hunks | 2 |
+| candidate.txt | 1033 |
+| Added | +107 |
+| Review-stage comments | 0 of the +107 added lines |
+| Removed | -78 |
+| Hunks | 3 |
 
 ```diff
 --- original.txt
 +++ candidate.txt
-@@ -1,137 +1,135 @@
+@@ -1,137 +1,160 @@
 -[[include :scp-wiki-cn:component:sigma-plus]]
 -[[include :scp-wiki:component:toggle-sidebar]]
 -
@@ -48,7 +48,7 @@ with `python3 review/build_review.py`; verify with
 +**翻訳責任者:** AI
 +**翻訳年:** 2026
 +**原題:** 终极阅读器 版式
-+**著作権者:** 原語版ページの作成者に同じ（scp-wiki-cn の theme:ultimate-reader）
++**著作権者:** Dr Hormress
 +**作成年:** 2023
 +**初訳時参照リビジョン:** 8
 +**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:ultimate-reader 终极阅读器 版式]
@@ -86,34 +86,48 @@ with `python3 review/build_review.py`; verify with
 -**更多CSS变量：**（以下提供的是不启用“终极模式”时的默认值）
 -
 -[[code type="CSS"]]
--:root {
++**追加のCSS変数:**（以下は「アルティメットモード」を有効にしない場合のデフォルト値です）
++
++[[code type="css"]]
+ :root {
 -    --header-title: "SCP基金会";
 -    /* 主标题 */
 -    --header-subtitle: "控制，收容，保护";
 -    /* 副标题 */
--    --sp_area-max-width: 45rem;
+     --sp_area-max-width: 45rem;
 -    /* 正文宽度 */
 -
 -    --ur_title-font: "Noto Serif SC", serif;
 -    /* 标题字体 */
 -    --ur_body-font: "Noto Sans SC", sans-serif;
 -    /* 正文字体 */
--
--    --ur_marble: #DDE;
++    /* 本文の幅 */
++
++    --ur_title-font: "Noto Serif JP", "Noto Serif SC", serif;
++    /* タイトルフォント */
++    --ur_body-font: "Noto Sans JP", "Noto Sans SC", sans-serif;
++    /* 本文フォント */
+ 
+     --ur_marble: #DDE;
 -    /* 主题颜色：大理石 */
--    --ur_concrete: #FFF;
++    /* テーマカラー：大理石 */
+     --ur_concrete: #FFF;
 -    /* 主题颜色：混凝土 */
--    --ur_redstone: #F05F57;
++    /* テーマカラー：コンクリート */
+     --ur_redstone: #F05F57;
 -    /* 主题颜色：红石 */
--    --ur_basalt: #360940;
++    /* テーマカラー：レッドストーン */
+     --ur_basalt: #360940;
 -    /* 主题颜色：玄武岩 */
--    --ur_bedrock: #222;
++    /* テーマカラー：玄武岩 */
+     --ur_bedrock: #222;
 -    /* 主题颜色：基岩 */
--    --ur_stone: #333;
++    /* テーマカラー：岩盤 */
+     --ur_stone: #333;
 -    /* 主题颜色：石头 */
--}
--[[/code]]
-+**追加のCSS変数:**（以下は「アルティメットモード」を有効にしない場合のデフォルト値です）
++    /* テーマカラー：石 */
+ }
+ [[/code]]
  
  ----
  
@@ -237,7 +251,18 @@ with `python3 review/build_review.py`; verify with
      --sp_header-logo-size: 5rem;
      --sp_header-logo-adaptive-size: min(var(--sp_header-logo-size), calc(var(--sp_header-logo-size)*0.575 + 5vw));
  
-@@ -992,8 +990,19 @@
+@@ -190,8 +213,8 @@
+     --title-font: var(--ur_title-font);
+     --black-monochrome: 255, 255, 255;
+ 
+-    --ur_title-font: "Noto Serif SC", serif;
+-    --ur_body-font: "Noto Sans SC", sans-serif;
++    --ur_title-font: "Noto Serif JP", "Noto Serif SC", serif;
++    --ur_body-font: "Noto Sans JP", "Noto Sans SC", sans-serif;
+ 
+     --ur_marble: #DDE;
+     --ur_concrete: #FFF;
+@@ -992,8 +1015,19 @@
  }
  
  /{$toggle-header} */
@@ -248,7 +273,7 @@ with `python3 review/build_review.py`; verify with
  
 -[[/div]]
 +[[include :scp-jp:component:license-box-backend
-+|author=scp-wiki-cn theme:ultimate-reader の作者]]
++|author=Dr Hormress]]
 +
 +> **ファイル名:** logo.png
 +> **作者:** 原語版では sigma9.scpwikicn.com の配信ロゴ

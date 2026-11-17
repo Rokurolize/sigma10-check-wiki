@@ -3,7 +3,8 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:inland-empire-jp — origin CN, population #199 [GOSIGN2-LEDGER (b) row 199]
-- Overall: PASS — passed at the ledger determination; no OPEN items [GOSIGN2-LEDGER (b) row 199]
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 743163107d1548af7f34fdfffa811ba621dda1d1a8505759b1ab17152950a69f); verdict not carried over, re-judgement required
+> verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 6 errors / 3 warns / 2 infos (hotlink×5, pseudo-ref×1); standing classes dispositioned in register c1 [T1-ROWS row 229; GOSIGN2-LEDGER (b) row 199]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page hidden-login (4 combos) + runtime-hotlink site-theme chain; sample T2 no machine verdict (exit 2, no summary). [RENDER-ROWS-2 (RENDER-S2-F (CN8))]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row (the row records inconclusive runs, carried verbatim above) [RENDER-ROWS-2 row]
@@ -11,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 2 [LOCALIZE-ROWS row 198, source LOCALIZE-S2-D]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 198]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 199]
-- Computed against: canonical commit 1869877ffdcd33cb214b8dc421fb39e3de8d7e8d; candidate file pages/theme:inland-empire-jp.txt sha256:29e24545828ecab1d86f8e4794579d5ebe95e5c97478b6de7c4d634685cd128b; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 1c96ee4f6dbe58243d8c4ba0136a4a4dde806972; candidate file pages/theme:inland-empire-jp.txt sha256:743163107d1548af7f34fdfffa811ba621dda1d1a8505759b1ab17152950a69f; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -162,6 +163,14 @@ Adjudications applied for this README: the single CSS-BODY block is a P7 font-st
 - **Why:** Verification claims name the cheapest deciding check and its result, including the one gap.
 - **Verify:** Re-run the checker on `pages/theme:inland-empire-jp.txt` and `python3 review/build_review.py --check` in this repo.
 - **Disposition:** PASS (GOSIGN2-LEDGER (b) row 199; go-sign, COMPLETION-REPORT §10).
+
+## Per-theme record
+
+### Post-package repairs (REFRESH3-H)
+
+The items above describe this package as built. The repair recorded below postdates the package; `candidate.txt` has been recopied from the current canonical `pages/theme:inland-empire-jp.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**FIX-RATES — head-zone bare Rate removed (landing `1c96ee4f6dbe58243d8c4ba0136a4a4dde806972`, "pages: head-zone bare Rates removed in five themes", 2026-11-17; record `FIX-RATES.md`).** +0/−5. Same shape as horn: the five-line bare-Rate block is removed from inside the `[[iftags +テーマ]]` gate directly above the preview credit block. Residue kept, not edited: the combined heading `**評価モジュールとクレジットモジュール:**` now heads the credit block alone (the same coordinator wording call). Checker 6/3/2 → 6/3/1 (the `double-rate` info clears); every other finding unchanged in kind and count; class (i) 0.
 
 ## Change set outside the two diffed files
 

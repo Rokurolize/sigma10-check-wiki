@@ -8,16 +8,16 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 915 |
-| candidate.txt | 912 |
-| Added | +136 |
-| Review-stage comments | 0 of the +136 added lines |
+| candidate.txt | 913 |
+| Added | +137 |
+| Review-stage comments | 0 of the +137 added lines |
 | Removed | -145 |
 | Hunks | 4 |
 
 ```diff
 --- original.txt
 +++ candidate.txt
-@@ -1,200 +1,194 @@
+@@ -1,200 +1,195 @@
 -[[iftags +theme]]
 -[[module css]]
 -@import url("https://nu-scptheme.github.io/Black-Highlighter/css/min/normalize.min.css");
@@ -332,6 +332,7 @@ with `python3 review/build_review.py`; verify with
 +[[collapsible show="+ テーマのコードを表示" hide="- テーマのコードを閉じる"]]
  [[code type="css"]]
 -@import url('https://fonts.bunny.net/css?family=Chicle|Overlock:400,900');
++@import url('https://fonts.googleapis.com/css2?family=Chicle&family=Overlock:wght@400;900&display=swap');
 +@import url("https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css");
 +@import url("https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css");
 +
@@ -342,7 +343,7 @@ with `python3 review/build_review.py`; verify with
  
  @supports(display:grid) {
      :root {
-@@ -290,11 +284,11 @@
+@@ -290,11 +285,11 @@
  
      :root {
      	/* Typefaces */
@@ -359,7 +360,7 @@ with `python3 review/build_review.py`; verify with
      	--header-title: "MAN ZOO LEAGUE";
      	--header-subtitle: "Well, well, well... How the turn tables...";
  
-@@ -720,7 +714,6 @@
+@@ -720,7 +715,6 @@
  
      #page-content div.bobble-bg {
      	position: absolute;
@@ -367,7 +368,7 @@ with `python3 review/build_review.py`; verify with
      	background-size: contain;
      	background-repeat: no-repeat;
      	background-position: center center;
-@@ -901,15 +894,19 @@
+@@ -901,15 +895,19 @@
      	}
      }
  }

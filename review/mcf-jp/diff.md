@@ -81,7 +81,7 @@ with `python3 review/build_review.py`; verify with
 -[# Unvisited Link] ([[[theme:mcf|Visited Link]]])
 ++ ヘッダー
 +
-+[# 未訪問リンク] ([[[theme:mcf|訪問済みリンク]]])
++[# 未訪問リンク] ([[[theme:mcf-jp|訪問済みリンク]]])
  ~~~~
  [[tabview]]
 -[[tab Tab 1]]

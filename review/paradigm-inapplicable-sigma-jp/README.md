@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:paradigm-inapplicable-sigma-jp — origin CN, population #214 [GOSIGN2-LEDGER (b) row 214]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now eed8175f935cb9e3b0a98f0e5626162c327ecd255c67ead7998ce77bd7fabb2e); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 93ec66784fb235e9f0f3ceffdf493ae87fe6afe2e16ce149a1afe703baf3b786); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 3 errors / 2 warns / 0 infos (hotlink×2, pseudo-ref×1); standing classes dispositioned in register c1 [T1-ROWS row 184; GOSIGN2-LEDGER (b) row 214]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page-overflow 332px@320 + 387px@375 (page) and 337px@320 + 387px@375 (sample); sample credit-modal (preview-form). [RENDER-ROWS-2 (RENDER-S2-F (CN11))]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 3 [LOCALIZE-ROWS row 213, source LOCALIZE-S2-E]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 213]
 - FIX5 re-judgement: item 69 (class D) FIXED — FIX5-FONTSA, commit 8eacd6e: pattern-7 fix (paradigm family) [GOSIGN2-LEDGER-SUPPLEMENT (a) item 69]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:paradigm-inapplicable-sigma-jp.txt sha256:eed8175f935cb9e3b0a98f0e5626162c327ecd255c67ead7998ce77bd7fabb2e; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit fbbe5acd44acf9c49b9b067e48946270676ae6e2; candidate file pages/theme:paradigm-inapplicable-sigma-jp.txt sha256:93ec66784fb235e9f0f3ceffdf493ae87fe6afe2e16ce149a1afe703baf3b786; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -57,6 +57,12 @@ This theme's delivery involves one file beyond the two diffed here: **theme:dust
 - **What the fix was supposed to change.** Add the Noto Serif JP load at the head of the theme's own code block and append 'Noto Serif JP' to the header stack, leaving the title stack and every Latin face unchanged (REPORT-GOSIGN2-FIX5-FONTSA.md §10).
 - **Re-derivation from this package's bytes.** (1) The load is present: candidate L207, `@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');`, the file's only Google Fonts import, preceded by the fix's provenance comment (candidate L202–206). (2) The stack half is present: candidate L324 reads `--header-font: "Anonymous Pro", 'zuijinregular', 'Poppins', 'Noto Serif JP', sans-serif;` (the JP face appended after the Latin faces), and candidate L325's title stack names 'Noto Serif JP' where the original's (original L321 region) named 'Noto Serif SC'; no 'Noto Serif SC' remains anywhere in candidate.txt (0 occurrences; the original had 2, both inside that one title-stack value). (3) The fix commit's diff for this file is exactly the comment-plus-import block and that one stack line, matching the lane report. (4) Completeness: the only JP face named in any stack is Noto Serif JP and it is loaded; the imported family is applied by both the header and title stacks, so nothing imported goes unapplied. One inherited oddity is recorded, not charged: the title stack names 'Noto Serif JP' twice, exactly as the original named 'Noto Serif SC' twice in the same value; a duplicated name inside one stack value is harmless and is the original's own form. The closure holds on the current bytes.
 - **Post-verdict change.** One line, the usage-example posting name (candidate L84), landed in the population sweep (b5cb724) after the verdict. The generated stamp therefore reads STALE rather than carrying the PASS onto changed bytes; the change is outside item 69's scope and is recorded here so the reader can see exactly what moved.
+
+### Post-package repairs (REFRESH3-H)
+
+The items above describe this package as built. The repair recorded below postdates the package; `candidate.txt` has been recopied from the current canonical `pages/theme:paradigm-inapplicable-sigma-jp.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**FIX-RFIX7 — the sibling prose link (landing `fbbe5acd44acf9c49b9b067e48946270676ae6e2`, "pages: paradigm-inapplicable-sigma sibling link", 2026-11-17; record `FIX-RFIX7.md`).** +1/−1. L80's prose cross-link target `theme:paradigm-inapplicable` → `theme:paradigm-inapplicable-jp`, the sibling theme's posting name (first package of the R-fix-7 batch); the link label (` Paradigm Inapplicable Black Highlighterテーマ`) and the sentence are byte-unchanged. The self-include at L84 was already completed to `-jp` by the earlier usage sweep (`b5cb724`) and is not part of this repair. Checker 3/2/0 before and after; only the L80 `link-target-missing` warning changes address, now naming the sibling candidate's posting name, which resolves when the batch posts; class (i) 0.
 
 ## 0. Header / provenance
 

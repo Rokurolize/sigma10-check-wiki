@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:mcf-jp — origin EN, population #113 [GOSIGN2-LEDGER (b) row 113]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 0bd990b5fbb41820a19d26d6484cead09947d38c4355c23fb06150a1bdb2ec19); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now b5a5692934a7bb21445105384b4fadd6f589ff17b602ea2d735cafc8258a8076); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 5 errors / 1 warn / 0 infos (hotlink×4, pseudo-ref×1); standing classes dispositioned in register c1 [T1-ROWS row 113; GOSIGN2-LEDGER (b) row 113]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page runtime-hotlink site-theme chain only; sample credit-modal (preview-form) + 884px@768 overflow (one combo http.cat among hosts); T3 clean on both pages. [RENDER-ROWS-2 (RENDER-S2-C (EN14))]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 2 [LOCALIZE-ROWS row 113, source LOCALIZE-S2-B]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 113]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 113]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:mcf-jp.txt sha256:0bd990b5fbb41820a19d26d6484cead09947d38c4355c23fb06150a1bdb2ec19; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 41048ca2b13766899b5c5d5d426a980ad00f8a04; candidate file pages/theme:mcf-jp.txt sha256:b5a5692934a7bb21445105384b4fadd6f589ff17b602ea2d735cafc8258a8076; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -171,6 +171,12 @@ At this batch's snapshot the candidate's usage example (candidate L24) read `> @
 ### The credit author field and the banner's creator (observation)
 
 The credit block's 著作権者 field names stormbreath (candidate L16). The theme's own banner comment, retained translated at candidate L55–59, records a longer attribution: the theme was "Originally created for the SCP Foundation GoI Contest of 2014 ... by Reach", with thanks to Aelanna and Crayne, and was "Brought back by Stormbreath and UncleNicolini". The original's credit furniture (the info pair) names no author at all — its body is placeholder text — so there is no original field value to compare against; the banner is the only attribution the original carries, and it survives in full in the candidate. T4's row for this theme (LOCALIZE-ROWS row 113) records two findings, both served-source lines, and charges nothing on the field. This package therefore records the difference between the field's single name and the banner's three, with both texts, and flags it for the coordinator's judgment rather than asserting a defect the campaign's own checker did not charge.
+
+### Post-package repairs (REFRESH3-H)
+
+The items above describe this package as built. The repair recorded below postdates the package; `candidate.txt` has been recopied from the current canonical `pages/theme:mcf-jp.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**FIX-FONTS7 item 3 — link-exhibit sample posting name (landing `41048ca2b13766899b5c5d5d426a980ad00f8a04`, "pages: larue and laughter font loads, two exhibit samples", 2026-11-17; record `FIX-FONTS7.md`).** +1/−1. L38 link-styling exhibit sample `[[[theme:mcf|訪問済みリンク]]]` → `[[[theme:mcf-jp|訪問済みリンク]]]`, the `-jp` posting name (the plain name does not exist on the JP site). This is the surviving sub-form of the usage sweep: that sweep's scope was `:scp-jp:theme:` token references, not relative `[[[theme:<slug>|…]]]` samples. Checker 5/1/0 unchanged; the single `link-target-missing` warning now names `theme:mcf-jp` and persists until posting; class (i) 0.
 
 ## Change set outside the two diffed files
 

@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:laughter-and-knives-theme-jp — origin EN, population #108 [GOSIGN2-LEDGER (b) row 108]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 5e93cbb732c1fcf86f0ffd7455add722cac64c5eca846a9c3f24ae4cb46cc355); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 0bf68d535ca68844eee6c8614a510e246fd3d7f3c94d5e7f91a7a388dbfbfb79); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 2 errors / 1 warn / 3 infos (pseudo-ref×2); standing classes dispositioned in register c1 [T1-ROWS row 98; GOSIGN2-LEDGER (b) row 108]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page runtime-hotlink site-theme chain + sidebar-not-opening [webkit 768/375]; sample T2 no machine verdict (exit 2); T3 "MAN ZOO LEAGUE" subtitle faint/overlapping at 375 (minor). [RENDER-ROWS-2 (RENDER-S2-C (EN13))]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 108, source LOCALIZE-S2-B]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 108]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 108]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:laughter-and-knives-theme-jp.txt sha256:5e93cbb732c1fcf86f0ffd7455add722cac64c5eca846a9c3f24ae4cb46cc355; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 41048ca2b13766899b5c5d5d426a980ad00f8a04; candidate file pages/theme:laughter-and-knives-theme-jp.txt sha256:0bf68d535ca68844eee6c8614a510e246fd3d7f3c94d5e7f91a7a388dbfbfb79; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -171,6 +171,12 @@ Four items belong to this theme alone.
 **The bobble.png deletion is documented in the file, and its premise checks out.** The porter's license-box note (candidate L909) states the distribution host had disappeared; the review's probe of the recorded URL (2026-11-17) returns a 308 redirect to the https form and then a 404 — the host answers, the file does not. The deletion of the single background declaration (original L723), with the spin animation rules kept, is recorded in section 8 with this evidence.
 
 **The head module's page-local rules did not survive the delivery rebuild (observation).** The original's head module carried four rules for the theme page itself (original L5–28): `.scp-image-block.block-right` margins, `.scp-image-block a` width, `.scp-image-block img` border and sizing, and the `.colors-container .subcolors .color:nth-of-type(9)` rainbow animation for the theme-squares exhibit's ninth square. None has a counterpart in the candidate (grep-verified). The image-block rules are plausibly covered by the base theme's own stylesheet, which the original's head frame also loaded; the rainbow rule animated only this page's own color exhibit, and its loss is a small display difference on the theme page itself, left to the coordinator's judgment alongside the laruetheme package's similar observation.
+
+### Post-package repairs (REFRESH3-H)
+
+The items above describe this package as built. The repair recorded below postdates the package; `candidate.txt` has been recopied from the current canonical `pages/theme:laughter-and-knives-theme-jp.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**FIX-FONTS7 item 2 — Latin face load restored (landing `41048ca2b13766899b5c5d5d426a980ad00f8a04`, "pages: larue and laughter font loads, two exhibit samples", 2026-11-17; record `FIX-FONTS7.md`).** +1/−0. L185 restored as the first @import of the code exhibit: `@import url('https://fonts.googleapis.com/css2?family=Chicle&family=Overlock:wght@400;900&display=swap');` — Chicle (`--header-font`/`--title-font`) and Overlock (`--body-font`) are stack-named in both files but loaded nowhere in the candidate; the css2 axis spec carries the original's `Overlock:400,900` weights (original L197, bunny.net). Probed once 200, `text/css`. Checker 2/1/3 unchanged, with no hotlink from the restored googleapis line (the file's established font source); class (i) 0.
 
 ## Change set outside the two diffed files
 

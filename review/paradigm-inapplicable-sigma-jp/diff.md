@@ -140,7 +140,7 @@ adjudicated explanation.
 +
 +これは[[*user Mercuresphere]]が図書館典籍「[[[wanderers:paradigm-shift-hub | パラダイム・シフト]]]」のために設計したテーマです。
 +
-+このテーマは基本的に[[[theme:paradigm-inapplicable| Paradigm Inapplicable Black Highlighterテーマ]]]の軽量版であり、読み込み速度を高めながら、元のBlack Highlighterテーマに近い外観を実現します。
++このテーマは基本的に[[[theme:paradigm-inapplicable-jp| Paradigm Inapplicable Black Highlighterテーマ]]]の軽量版であり、読み込み速度を高めながら、元のBlack Highlighterテーマに近い外観を実現します。
 +
 +あなたの作品の冒頭に次の構文を追加すると、このテーマを適用できます。
 +

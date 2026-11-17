@@ -8,16 +8,16 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 747 |
-| candidate.txt | 752 |
-| Added | +141 |
-| Review-stage comments | 0 of the +141 added lines |
+| candidate.txt | 753 |
+| Added | +142 |
+| Review-stage comments | 0 of the +142 added lines |
 | Removed | -143 |
 | Hunks | 9 |
 
 ```diff
 --- original.txt
 +++ candidate.txt
-@@ -1,197 +1,192 @@
+@@ -1,197 +1,193 @@
 -[[iftags +theme]]
 -[[module css]]
 -@import url("https://nu-scptheme.github.io/Black-Highlighter/stable/styles/normalize.min.css");
@@ -321,6 +321,7 @@ with `python3 review/build_review.py`; verify with
 +[[collapsible show="+ テーマのコードを表示" hide="- テーマのコードを閉じる"]]
  [[code type="css"]]
 -@import url('https://fonts.bunny.net/css?family=Courier+Prime|Parisienne|Rubik&display=swap');
++@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Rubik&display=swap');
 +@import url("https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css");
 +@import url("https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css");
 +
@@ -331,7 +332,7 @@ with `python3 review/build_review.py`; verify with
  
  @supports(--css:variables) {
  
-@@ -203,12 +198,12 @@
+@@ -203,12 +199,12 @@
      	--header-title: "La Rue Macabre";
      	--header-subtitle: "Sit a spell & share your story";
  
@@ -350,7 +351,7 @@ with `python3 review/build_review.py`; verify with
  
      	--white-monochrome: 255, 250, 240;
      	--pale-gray-monochrome: 244, 244, 244;
-@@ -276,7 +271,7 @@
+@@ -276,7 +272,7 @@
      		position: absolute;
      		top: 0;
      		left: 0;
@@ -359,7 +360,7 @@ with `python3 review/build_review.py`; verify with
      		background-size: var(--header-background-image-size) 80%, 80%, 80%;
      		background-blend-mode: normal;
      		pointer-events: none;
-@@ -293,7 +288,7 @@
+@@ -293,7 +289,7 @@
      		background-color: rgba(var(--swatch-background), 1);
      		mask: var(--gradient-background);
      		-webkit-mask: var(--gradient-background);
@@ -368,7 +369,7 @@ with `python3 review/build_review.py`; verify with
      		background-size: 10%, 100% var(--background-gradient-distance);
      		background-blend-mode: difference;
      		background-repeat: repeat, repeat-x;
-@@ -323,7 +318,7 @@
+@@ -323,7 +319,7 @@
      	color: rgb(255, 219, 90);
      	color: rgb(var(--bright-accent));
      	text-shadow: inherit;
@@ -377,7 +378,7 @@ with `python3 review/build_review.py`; verify with
      	background-size: cover;
      	background-clip: text;
      	-webkit-background-clip: text;
-@@ -380,7 +375,7 @@
+@@ -380,7 +376,7 @@
      	color: rgb(255, 219, 90);
      	color: rgb(var(--bright-accent));
      	text-shadow: inherit;
@@ -386,7 +387,7 @@ with `python3 review/build_review.py`; verify with
      	background-size: cover;
      	background-clip: text;
      	-webkit-background-clip: text;
-@@ -400,7 +395,7 @@
+@@ -400,7 +396,7 @@
      	position: absolute;
      	width: 100%;
      	height: 0.35rem;
@@ -395,7 +396,7 @@ with `python3 review/build_review.py`; verify with
      	background-size: contain;
      	background-repeat: no-repeat;
      	background-position: center;
-@@ -549,7 +544,7 @@
+@@ -549,7 +545,7 @@
      file,
      a.button {
      	background-color: rgb(var(--medium-accent));
@@ -404,7 +405,7 @@ with `python3 review/build_review.py`; verify with
      	border-color: rgb(var(--black-monochrome))
      }
  
-@@ -732,16 +727,26 @@
+@@ -732,16 +728,26 @@
      }
  
  }

@@ -15,12 +15,12 @@ adjudicated explanation.
 | | Lines |
 |---|---|
 | original.txt | 1102 |
-| candidate.txt | 1119 |
-| Added | +211 |
-| Review-stage comments | 0 of the +211 added lines |
-| Removed | -194 |
-| Changed | 405 |
-| Change blocks | 130 |
+| candidate.txt | 1114 |
+| Added | +210 |
+| Review-stage comments | 0 of the +210 added lines |
+| Removed | -198 |
+| Changed | 408 |
+| Change blocks | 129 |
 | Diff sections (context 3) | 29 |
 
 ## Changed lines by auto-class (heuristic)
@@ -28,9 +28,9 @@ adjudicated explanation.
 | Auto-class | Blocks | Changed lines |
 |---|---|---|
 | mechanical | 53 | 193 |
-| translation | 45 | 113 |
-| supplement | 4 | 29 |
-| residual | 28 | 70 |
+| translation | 42 | 107 |
+| supplement | 4 | 27 |
+| residual | 30 | 81 |
 
 ## Change-block index
 
@@ -39,133 +39,132 @@ adjudicated explanation.
 | 1 | 1 | 2–2 | 2–2 | +1/−1 | supplement | @import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Ainland-e… |
 | 2 | 1 | — | 4–8 | +5/−0 | supplement | [[include :scp-jp:component:interwiki-style |
 | 3 | 2 | 11–12 | 16–16 | +1/−2 | translation | [[iftags +テーマ]] |
-| 4 | 2 | 15–15 | 19–19 | +1/−1 | translation | **評価モジュール:** |
-| 5 | 2 | 20–20 | 24–24 | +1/−1 | translation | **評価モジュールとクレジットモジュール:** |
-| 6 | 2 | 23–27 | 27–38 | +12/−5 | supplement | [[include :scp-jp:credit:start-preview]] |
-| 7 | 2 | 29–29 | 40–40 | +1/−1 | translation | これは[[*user Flea_ZER0]]が制作したSigma-9美学のテーマです。[[[theme:oneiroi-west\|オネイロイ・ウェスト テ… |
-| 8 | 2 | 32–32 | 43–43 | +1/−1 | residual | **検索ボックス・Wikidotアカウントのスタイル** |
-| 9 | 2 | 38–38 | 49–49 | +1/−1 | translation | **サイドバーコンポーネント** |
-| 10 | 2 | 44–44 | 55–55 | +1/−1 | translation | **四隅ボーダースタイル** |
-| 11 | 2 | 50–50 | 61–61 | +1/−1 | translation | **ヘッダーメディア - 波** |
-| 12 | 2 | 55–55 | 66–66 | +1/−1 | translation | **ヘッダーメディア - 木陰** |
-| 13 | 2 | 60–60 | 71–71 | +1/−1 | translation | **デモ画像 - 子猫** |
-| 14 | 2 | 65–65 | 76–76 | +1/−1 | translation | このテーマを適用するには、作品の冒頭に以下のテキストを追加してください。 |
-| 15 | 2 | 67–67 | 78–78 | +1/−1 | residual | {{@@[[include theme:inland-empire-jp]]@@}} |
-| 16 | 2 | 69–69 | 80–80 | +1/−1 | translation | 以下の構文を追加すると、ある程度デザインをカスタマイズできます。 |
-| 17 | 2 | 73–73 | 84–84 | +1/−1 | translation | {{@@ --prologue: "直感の予兆を解き放ち 明晰夢を彷徨う"; /* ヘッダー中央の白い標語、つまり副題を変更します */@@}} |
-| 18 | 2 | 75–77 | 86–88 | +3/−3 | translation | {{@@ --purpleColor: #9900FF; /* テーマカラーを変更します（既定は紫） */@@}} |
-| 19 | 2 | 81–81 | 92–92 | +1/−1 | translation | + テーマ例 |
-| 20 | 2 | 83–83 | 94–94 | +1/−1 | translation | このテーマを使用すると、各種ページ要素は以下のように表示されます。 |
-| 21 | 2 | 85–85 | 96–96 | +1/−1 | translation | [[include component:image-block name=https://scpsandboxcn.wdfiles.com/local--… |
-| 22 | 2 | 89–89 | 100–100 | +1/−1 | translation | + レベル1見出し |
-| 23 | 2 | 91–91 | 102–102 | +1/−1 | translation | ++ レベル2見出し |
-| 24 | 2 | 93–93 | 104–104 | +1/−1 | translation | +++ レベル3見出し |
-| 25 | 2 | 95–95 | 106–106 | +1/−1 | translation | ++++ レベル4見出し |
-| 26 | 2 | 97–97 | 108–108 | +1/−1 | translation | +++++ レベル5見出し |
-| 27 | 2 | 99–99 | 110–110 | +1/−1 | translation | ++++++ レベル6見出し |
-| 28 | 2 | 101–101 | 112–112 | +1/−1 | translation | **太字** \| //斜体// \| __下線__ \| --取り消し線-- \| {{teletype text}} ^^上付き^^,,下付き,, |
-| 29 | 2 | 103–103 | 114–114 | +1/−1 | residual | ハイフンを5つ並べた「@@-----@@」で水平線を作成できます。 |
-| 30 | 2 | 108–109 | 119–120 | +2/−2 | residual | [[tab タブ]] |
-| 31 | 2 | 111–112 | 122–123 | +2/−2 | translation | [[tab タブ]] |
-| 32 | 2 | 114–114 | 125–125 | +1/−1 | translation | なんとも精巧です。 |
-| 33 | 2 | 116–117 | 127–128 | +2/−2 | residual | [[tab 長いタブ]] |
-| 34 | 2 | 119–119 | 130–130 | +1/−1 | residual | これは長いタブです。たくさんの文字があります。 |
-| 35 | 2 | 121–121 | 132–132 | +1/−1 | residual | これは長いタブです。たくさんの文字があります。 |
-| 36 | 2 | 123–123 | 134–134 | +1/−1 | residual | これは長いタブです。たくさんの文字があります。 |
-| 37 | 2 | 125–125 | 136–136 | +1/−1 | residual | これは長いタブです。たくさんの文字があります。 |
-| 38 | 2 | 127–127 | 138–138 | +1/−1 | residual | これは長いタブです。たくさんの文字があります。 |
-| 39 | 2 | 129–129 | 140–140 | +1/−1 | residual | これは長いタブです。たくさんの文字があります。 |
-| 40 | 2 | 131–131 | 142–142 | +1/−1 | residual | これは長いタブです。たくさんの文字があります。 |
-| 41 | 2 | 133–133 | 144–144 | +1/−1 | residual | これは長いタブです。たくさんの文字があります。 |
-| 42 | 2 | 135–135 | 146–146 | +1/−1 | residual | これは長いタブです。たくさんの文字があります。 |
-| 43 | 2 | 137–137 | 148–148 | +1/−1 | residual | これは長いタブです。たくさんの文字があります。 |
-| 44 | 2 | 139–139 | 150–154 | +5/−1 | residual | これは長いタブです。たくさんの文字があります。 |
-| 45 | 2 | 141–141 | 156–156 | +1/−1 | residual | [[tab 空のタブ]] |
-| 46 | 2 | 143–143 | 158–158 | +1/−1 | residual | [[tab 空のタブ]] |
-| 47 | 2 | 145–145 | 160–160 | +1/−1 | residual | [[tab 空のタブ]] |
-| 48 | 2 | 147–147 | 162–162 | +1/−1 | residual | [[tab 空のタブ]] |
-| 49 | 2 | 149–150 | 164–165 | +2/−2 | residual | [[tab 空のタブ]] |
-| 50 | 2 | 154–157 | 169–172 | +4/−4 | translation | \|\|~ 見出し \|\|~ 見出し \|\|~ 見出し \|\|~ 見出し \|\|~ 見出し \|\|~ 見出し \|\| |
-| 51 | 2 | 159–159 | 174–174 | +1/−1 | residual | = [# リンク] · [[[theme:inland-empire-jp\|訪問済みリンク]]] · [[[SCP-10000-JP\|新しいリンク]]] |
-| 52 | 2 | 164–164 | 179–179 | +1/−1 | translation | = これは既定の引用ブロックです。マウスをホバーすると、背景画像にかすかな煙の動きが現れます |
-| 53 | 3 | 172–172 | 187–187 | +1/−1 | translation | = これは常に煙の効果を表示する引用ブロックです |
-| 54 | 4 | 180–180 | 195–195 | +1/−1 | translation | = これは純黒の引用ブロックです |
-| 55 | 4 | 187–187 | 202–202 | +1/−1 | translation | [[include component:coltop show=ソースコード ▶\|hide=ソースコード ▼]] |
-| 56 | 4 | 189–190 | 204–206 | +3/−2 | supplement | @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;… |
-| 57 | 4 | 192–192 | 208–208 | +1/−1 | translation | /* 全体 */ |
-| 58 | 4 | 194–195 | 210–211 | +2/−2 | residual | --title-font: 'Noto Serif JP', 'Source Han Serif JP', serif; |
-| 59 | 4 | 197–197 | 213–213 | +1/−1 | translation | --prologue: "直感の予兆を解き放ち 明晰夢を彷徨う"; |
-| 60 | 4 | 203–203 | 219–219 | +1/−1 | mechanical | --lightColor: #EEE; |
-| 61 | 5 | 237–237 | 253–253 | +1/−1 | mechanical | background: |
-| 62 | 5 | 243–244 | 259–260 | +2/−2 | mechanical | background-position: |
-| 63 | 5 | 249–250 | 265–266 | +2/−2 | mechanical | background-size: |
-| 64 | 6 | 264–264 | 280–280 | +1/−1 | translation | /* 見出し */ |
-| 65 | 6 | 266–266 | 282–282 | +1/−1 | mechanical | background: |
-| 66 | 7 | 313–313 | 329–329 | +1/−1 | mechanical | position: relative; |
-| 67 | 8 | 366–366 | 382–382 | +1/−1 | translation | /* トップバーメニュー */ |
-| 68 | 8 | 371–374 | 387–390 | +4/−4 | translation | /* 評価モジュール */ |
-| 69 | 8 | 381–381 | 397–397 | +1/−1 | mechanical | } |
-| 70 | 8 | 383–385 | 399–401 | +3/−3 | mechanical | div.page-rate-widget-box .rateup, |
-| 71 | 8 | 387–387 | 403–403 | +1/−1 | mechanical | } |
-| 72 | 8 | 389–390 | 405–406 | +2/−2 | mechanical | div.page-rate-widget-box .rateup a, |
-| 73 | 8 | 395–395 | 411–411 | +1/−1 | mechanical | } |
-| 74 | 8 | 397–401 | 413–417 | +5/−5 | mechanical | div.page-rate-widget-box .rateup a:hover, |
-| 75 | 8 | 403–404 | 419–420 | +2/−2 | mechanical | div.page-rate-widget-box .cancel { |
-| 76 | 8 | 408–408 | 424–424 | +1/−1 | mechanical | } |
-| 77 | 8 | 410–410 | 426–426 | +1/−1 | mechanical | div.page-rate-widget-box .cancel a { |
-| 78 | 8 | 415–415 | 431–431 | +1/−1 | mechanical | } |
-| 79 | 8 | 417–420 | 433–436 | +4/−4 | mechanical | div.page-rate-widget-box .cancel a:hover { |
-| 80 | 8 | 422–422 | 438–438 | +1/−1 | mechanical | /* -- Info Module -- */ |
-| 81 | 9 | 431–431 | 447–447 | +1/−1 | mechanical | #page-content .creditButton p a { |
-| 82 | 10 | 439–439 | 455–455 | +1/−1 | mechanical | } |
-| 83 | 10 | 441–443 | 457–459 | +3/−3 | mechanical | .rate-box-with-credit-button .cancel { |
-| 84 | 10 | 445–448 | 461–464 | +4/−4 | mechanical | #page-content .creditButton p a:hover { |
-| 85 | 10 | 450–452 | 466–468 | +3/−3 | mechanical | div.modalbox { |
-| 86 | 10 | 454–454 | 470–470 | +1/−1 | translation | /* 折りたたみ */ |
-| 87 | 11 | 480–480 | 496–496 | +1/−1 | translation | /* サイドバー */ |
-| 88 | 12 | 490–490 | 506–506 | +1/−1 | translation | #side-bar .heading { /* サイドバー見出し */ |
-| 89 | 12 | 493–494 | 509–510 | +2/−2 | translation | color: var(--lightColor); /* 色 */ |
-| 90 | 12 | 497–497 | 513–513 | +1/−1 | translation | color: var(--purpleColor); /* サイドバー副題、SCPシリーズ後ろの（X000-X999）の色 */ |
-| 91 | 13 | 506–506 | 522–522 | +1/−1 | translation | /* 画像スタイル */ |
-| 92 | 14 | 527–527 | 543–543 | +1/−1 | mechanical | background: |
-| 93 | 15 | 535–536 | 551–552 | +2/−2 | mechanical | background-position: |
-| 94 | 15 | 541–542 | 557–558 | +2/−2 | mechanical | background-size: |
-| 95 | 16 | 553–553 | 569–569 | +1/−1 | mechanical | position: relative; |
-| 96 | 16 | 555–555 | 571–571 | +1/−1 | mechanical | background: |
-| 97 | 16 | 562–564 | 578–580 | +3/−3 | mechanical | background-position: |
-| 98 | 16 | 567–569 | 583–585 | +3/−3 | mechanical | background-repeat: |
-| 99 | 16 | 572–574 | 588–590 | +3/−3 | mechanical | background-size: |
-| 100 | 17 | 609–609 | 625–625 | +1/−1 | mechanical | background: |
-| 101 | 18 | 617–618 | 633–634 | +2/−2 | mechanical | background-position: |
-| 102 | 18 | 623–624 | 639–640 | +2/−2 | mechanical | background-size: |
-| 103 | 19 | 646–646 | 662–662 | +1/−1 | mechanical | background: |
-| 104 | 20 | 664–664 | 680–680 | +1/−1 | mechanical | background: |
-| 105 | 21 | 672–673 | 688–689 | +2/−2 | mechanical | background-position: |
-| 106 | 21 | 678–679 | 694–695 | +2/−2 | mechanical | background-size: |
-| 107 | 22 | 697–697 | 713–713 | +1/−1 | residual | background-color: var(--darkColor); /* タブラベルの背景色。画像なしモードで有用 */ |
-| 108 | 23 | 708–708 | 724–724 | +1/−1 | mechanical | background: |
-| 109 | 23 | 714–715 | 730–731 | +2/−2 | mechanical | background-position: |
-| 110 | 23 | 720–721 | 736–737 | +2/−2 | mechanical | background-size: |
-| 111 | 24 | 729–730 | 745–746 | +2/−2 | residual | background-color: var(--purpleColor); /* タブラベルの背景色。画像なしモードで有用 */ |
-| 112 | 24 | 736–737 | 752–753 | +2/−2 | mechanical | background-position: |
-| 113 | 24 | 742–743 | 758–759 | +2/−2 | mechanical | background-size: |
-| 114 | 25 | 757–757 | 773–773 | +1/−1 | translation | /* 表 */ |
-| 115 | 26 | 772–772 | 788–788 | +1/−1 | residual | background-image: url("https://scpsandboxcn.wikidot.com/local--files/theme%3A… |
-| 116 | 26 | 775–775 | 791–791 | +1/−1 | translation | /* 編集ロック */ |
-| 117 | 26 | 782–783 | 798–799 | +2/−2 | translation | /* ウィンドウ */ |
-| 118 | 26 | 786–786 | 802–802 | +1/−1 | mechanical | background: |
-| 119 | 26 | 791–791 | 807–807 | +1/−1 | residual | url("https://scpsandboxcn.wikidot.com/local--files/theme%3Ainland-empire/%E5%… |
-| 120 | 26 | 793–795 | 809–811 | +3/−3 | mechanical | background-position: |
-| 121 | 26 | 798–800 | 814–816 | +3/−3 | mechanical | background-repeat: |
-| 122 | 26 | 803–805 | 819–821 | +3/−3 | mechanical | background-size: |
-| 123 | 26 | 807–807 | 823–823 | +1/−1 | mechanical | } |
-| 124 | 26 | 809–811 | 825–827 | +3/−3 | mechanical | .owindow .content img { |
-| 125 | 26 | 813–813 | 829–829 | +1/−1 | mechanical | .owindow .title { |
-| 126 | 26 | 815–815 | 831–831 | +1/−1 | mechanical | } |
-| 127 | 26 | 817–817 | 833–833 | +1/−1 | translation | /* 検索バー/ユーザー情報 */ |
-| 128 | 27 | 861–861 | 877–877 | +1/−1 | mechanical | background-repeat: no-repeat; |
-| 129 | 28 | 1012–1012 | 1028–1028 | +1/−1 | residual | /* サイドバーコンポーネント */ |
-| 130 | 29 | — | 1116–1116 | +1/−0 | mechanical | (blank lines only) |
+| 4 | 2 | 15–16 | 19–19 | +1/−2 | residual | **評価モジュールとクレジットモジュール:** |
+| 5 | 2 | 19–21 | 22–33 | +12/−3 | supplement | [[include :scp-jp:credit:start-preview]] |
+| 6 | 2 | 23–29 | 35–35 | +1/−7 | residual | これは[[*user Flea_ZER0]]が制作したSigma-9美学のテーマです。[[[theme:oneiroi-west\|オネイロイ・ウェスト テ… |
+| 7 | 2 | 32–32 | 38–38 | +1/−1 | residual | **検索ボックス・Wikidotアカウントのスタイル** |
+| 8 | 2 | 38–38 | 44–44 | +1/−1 | translation | **サイドバーコンポーネント** |
+| 9 | 2 | 44–44 | 50–50 | +1/−1 | translation | **四隅ボーダースタイル** |
+| 10 | 2 | 50–50 | 56–56 | +1/−1 | translation | **ヘッダーメディア - 波** |
+| 11 | 2 | 55–55 | 61–61 | +1/−1 | translation | **ヘッダーメディア - 木陰** |
+| 12 | 2 | 60–60 | 66–66 | +1/−1 | translation | **デモ画像 - 子猫** |
+| 13 | 2 | 65–65 | 71–71 | +1/−1 | translation | このテーマを適用するには、作品の冒頭に以下のテキストを追加してください。 |
+| 14 | 2 | 67–67 | 73–73 | +1/−1 | residual | {{@@[[include theme:inland-empire-jp]]@@}} |
+| 15 | 2 | 69–69 | 75–75 | +1/−1 | translation | 以下の構文を追加すると、ある程度デザインをカスタマイズできます。 |
+| 16 | 2 | 73–73 | 79–79 | +1/−1 | translation | {{@@ --prologue: "直感の予兆を解き放ち 明晰夢を彷徨う"; /* ヘッダー中央の白い標語、つまり副題を変更します */@@}} |
+| 17 | 2 | 75–77 | 81–83 | +3/−3 | translation | {{@@ --purpleColor: #9900FF; /* テーマカラーを変更します（既定は紫） */@@}} |
+| 18 | 2 | 81–81 | 87–87 | +1/−1 | translation | + テーマ例 |
+| 19 | 2 | 83–83 | 89–89 | +1/−1 | translation | このテーマを使用すると、各種ページ要素は以下のように表示されます。 |
+| 20 | 2 | 85–85 | 91–91 | +1/−1 | translation | [[include component:image-block name=https://scpsandboxcn.wdfiles.com/local--… |
+| 21 | 2 | 89–89 | 95–95 | +1/−1 | translation | + レベル1見出し |
+| 22 | 2 | 91–91 | 97–97 | +1/−1 | translation | ++ レベル2見出し |
+| 23 | 2 | 93–93 | 99–99 | +1/−1 | translation | +++ レベル3見出し |
+| 24 | 2 | 95–95 | 101–101 | +1/−1 | translation | ++++ レベル4見出し |
+| 25 | 2 | 97–97 | 103–103 | +1/−1 | translation | +++++ レベル5見出し |
+| 26 | 2 | 99–99 | 105–105 | +1/−1 | translation | ++++++ レベル6見出し |
+| 27 | 2 | 101–101 | 107–107 | +1/−1 | translation | **太字** \| //斜体// \| __下線__ \| --取り消し線-- \| {{teletype text}} ^^上付き^^,,下付き,, |
+| 28 | 2 | 103–103 | 109–109 | +1/−1 | residual | ハイフンを5つ並べた「@@-----@@」で水平線を作成できます。 |
+| 29 | 2 | 108–109 | 114–115 | +2/−2 | residual | [[tab タブ]] |
+| 30 | 2 | 111–112 | 117–118 | +2/−2 | translation | [[tab タブ]] |
+| 31 | 2 | 114–114 | 120–120 | +1/−1 | translation | なんとも精巧です。 |
+| 32 | 2 | 116–117 | 122–123 | +2/−2 | residual | [[tab 長いタブ]] |
+| 33 | 2 | 119–119 | 125–125 | +1/−1 | residual | これは長いタブです。たくさんの文字があります。 |
+| 34 | 2 | 121–121 | 127–127 | +1/−1 | residual | これは長いタブです。たくさんの文字があります。 |
+| 35 | 2 | 123–123 | 129–129 | +1/−1 | residual | これは長いタブです。たくさんの文字があります。 |
+| 36 | 2 | 125–125 | 131–131 | +1/−1 | residual | これは長いタブです。たくさんの文字があります。 |
+| 37 | 2 | 127–127 | 133–133 | +1/−1 | residual | これは長いタブです。たくさんの文字があります。 |
+| 38 | 2 | 129–129 | 135–135 | +1/−1 | residual | これは長いタブです。たくさんの文字があります。 |
+| 39 | 2 | 131–131 | 137–137 | +1/−1 | residual | これは長いタブです。たくさんの文字があります。 |
+| 40 | 2 | 133–133 | 139–139 | +1/−1 | residual | これは長いタブです。たくさんの文字があります。 |
+| 41 | 2 | 135–135 | 141–141 | +1/−1 | residual | これは長いタブです。たくさんの文字があります。 |
+| 42 | 2 | 137–137 | 143–143 | +1/−1 | residual | これは長いタブです。たくさんの文字があります。 |
+| 43 | 2 | 139–139 | 145–149 | +5/−1 | residual | これは長いタブです。たくさんの文字があります。 |
+| 44 | 2 | 141–141 | 151–151 | +1/−1 | residual | [[tab 空のタブ]] |
+| 45 | 2 | 143–143 | 153–153 | +1/−1 | residual | [[tab 空のタブ]] |
+| 46 | 2 | 145–145 | 155–155 | +1/−1 | residual | [[tab 空のタブ]] |
+| 47 | 2 | 147–147 | 157–157 | +1/−1 | residual | [[tab 空のタブ]] |
+| 48 | 2 | 149–150 | 159–160 | +2/−2 | residual | [[tab 空のタブ]] |
+| 49 | 2 | 154–157 | 164–167 | +4/−4 | translation | \|\|~ 見出し \|\|~ 見出し \|\|~ 見出し \|\|~ 見出し \|\|~ 見出し \|\|~ 見出し \|\| |
+| 50 | 2 | 159–159 | 169–169 | +1/−1 | residual | = [# リンク] · [[[theme:inland-empire-jp\|訪問済みリンク]]] · [[[SCP-10000-JP\|新しいリンク]]] |
+| 51 | 2 | 164–164 | 174–174 | +1/−1 | translation | = これは既定の引用ブロックです。マウスをホバーすると、背景画像にかすかな煙の動きが現れます |
+| 52 | 3 | 172–172 | 182–182 | +1/−1 | translation | = これは常に煙の効果を表示する引用ブロックです |
+| 53 | 4 | 180–180 | 190–190 | +1/−1 | translation | = これは純黒の引用ブロックです |
+| 54 | 4 | 187–187 | 197–197 | +1/−1 | translation | [[include component:coltop show=ソースコード ▶\|hide=ソースコード ▼]] |
+| 55 | 4 | 189–190 | 199–201 | +3/−2 | supplement | @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;… |
+| 56 | 4 | 192–192 | 203–203 | +1/−1 | translation | /* 全体 */ |
+| 57 | 4 | 194–195 | 205–206 | +2/−2 | residual | --title-font: 'Noto Serif JP', 'Source Han Serif JP', serif; |
+| 58 | 4 | 197–197 | 208–208 | +1/−1 | translation | --prologue: "直感の予兆を解き放ち 明晰夢を彷徨う"; |
+| 59 | 4 | 203–203 | 214–214 | +1/−1 | mechanical | --lightColor: #EEE; |
+| 60 | 5 | 237–237 | 248–248 | +1/−1 | mechanical | background: |
+| 61 | 5 | 243–244 | 254–255 | +2/−2 | mechanical | background-position: |
+| 62 | 5 | 249–250 | 260–261 | +2/−2 | mechanical | background-size: |
+| 63 | 6 | 264–264 | 275–275 | +1/−1 | translation | /* 見出し */ |
+| 64 | 6 | 266–266 | 277–277 | +1/−1 | mechanical | background: |
+| 65 | 7 | 313–313 | 324–324 | +1/−1 | mechanical | position: relative; |
+| 66 | 8 | 366–366 | 377–377 | +1/−1 | translation | /* トップバーメニュー */ |
+| 67 | 8 | 371–374 | 382–385 | +4/−4 | translation | /* 評価モジュール */ |
+| 68 | 8 | 381–381 | 392–392 | +1/−1 | mechanical | } |
+| 69 | 8 | 383–385 | 394–396 | +3/−3 | mechanical | div.page-rate-widget-box .rateup, |
+| 70 | 8 | 387–387 | 398–398 | +1/−1 | mechanical | } |
+| 71 | 8 | 389–390 | 400–401 | +2/−2 | mechanical | div.page-rate-widget-box .rateup a, |
+| 72 | 8 | 395–395 | 406–406 | +1/−1 | mechanical | } |
+| 73 | 8 | 397–401 | 408–412 | +5/−5 | mechanical | div.page-rate-widget-box .rateup a:hover, |
+| 74 | 8 | 403–404 | 414–415 | +2/−2 | mechanical | div.page-rate-widget-box .cancel { |
+| 75 | 8 | 408–408 | 419–419 | +1/−1 | mechanical | } |
+| 76 | 8 | 410–410 | 421–421 | +1/−1 | mechanical | div.page-rate-widget-box .cancel a { |
+| 77 | 8 | 415–415 | 426–426 | +1/−1 | mechanical | } |
+| 78 | 8 | 417–420 | 428–431 | +4/−4 | mechanical | div.page-rate-widget-box .cancel a:hover { |
+| 79 | 8 | 422–422 | 433–433 | +1/−1 | mechanical | /* -- Info Module -- */ |
+| 80 | 9 | 431–431 | 442–442 | +1/−1 | mechanical | #page-content .creditButton p a { |
+| 81 | 10 | 439–439 | 450–450 | +1/−1 | mechanical | } |
+| 82 | 10 | 441–443 | 452–454 | +3/−3 | mechanical | .rate-box-with-credit-button .cancel { |
+| 83 | 10 | 445–448 | 456–459 | +4/−4 | mechanical | #page-content .creditButton p a:hover { |
+| 84 | 10 | 450–452 | 461–463 | +3/−3 | mechanical | div.modalbox { |
+| 85 | 10 | 454–454 | 465–465 | +1/−1 | translation | /* 折りたたみ */ |
+| 86 | 11 | 480–480 | 491–491 | +1/−1 | translation | /* サイドバー */ |
+| 87 | 12 | 490–490 | 501–501 | +1/−1 | translation | #side-bar .heading { /* サイドバー見出し */ |
+| 88 | 12 | 493–494 | 504–505 | +2/−2 | translation | color: var(--lightColor); /* 色 */ |
+| 89 | 12 | 497–497 | 508–508 | +1/−1 | translation | color: var(--purpleColor); /* サイドバー副題、SCPシリーズ後ろの（X000-X999）の色 */ |
+| 90 | 13 | 506–506 | 517–517 | +1/−1 | translation | /* 画像スタイル */ |
+| 91 | 14 | 527–527 | 538–538 | +1/−1 | mechanical | background: |
+| 92 | 15 | 535–536 | 546–547 | +2/−2 | mechanical | background-position: |
+| 93 | 15 | 541–542 | 552–553 | +2/−2 | mechanical | background-size: |
+| 94 | 16 | 553–553 | 564–564 | +1/−1 | mechanical | position: relative; |
+| 95 | 16 | 555–555 | 566–566 | +1/−1 | mechanical | background: |
+| 96 | 16 | 562–564 | 573–575 | +3/−3 | mechanical | background-position: |
+| 97 | 16 | 567–569 | 578–580 | +3/−3 | mechanical | background-repeat: |
+| 98 | 16 | 572–574 | 583–585 | +3/−3 | mechanical | background-size: |
+| 99 | 17 | 609–609 | 620–620 | +1/−1 | mechanical | background: |
+| 100 | 18 | 617–618 | 628–629 | +2/−2 | mechanical | background-position: |
+| 101 | 18 | 623–624 | 634–635 | +2/−2 | mechanical | background-size: |
+| 102 | 19 | 646–646 | 657–657 | +1/−1 | mechanical | background: |
+| 103 | 20 | 664–664 | 675–675 | +1/−1 | mechanical | background: |
+| 104 | 21 | 672–673 | 683–684 | +2/−2 | mechanical | background-position: |
+| 105 | 21 | 678–679 | 689–690 | +2/−2 | mechanical | background-size: |
+| 106 | 22 | 697–697 | 708–708 | +1/−1 | residual | background-color: var(--darkColor); /* タブラベルの背景色。画像なしモードで有用 */ |
+| 107 | 23 | 708–708 | 719–719 | +1/−1 | mechanical | background: |
+| 108 | 23 | 714–715 | 725–726 | +2/−2 | mechanical | background-position: |
+| 109 | 23 | 720–721 | 731–732 | +2/−2 | mechanical | background-size: |
+| 110 | 24 | 729–730 | 740–741 | +2/−2 | residual | background-color: var(--purpleColor); /* タブラベルの背景色。画像なしモードで有用 */ |
+| 111 | 24 | 736–737 | 747–748 | +2/−2 | mechanical | background-position: |
+| 112 | 24 | 742–743 | 753–754 | +2/−2 | mechanical | background-size: |
+| 113 | 25 | 757–757 | 768–768 | +1/−1 | translation | /* 表 */ |
+| 114 | 26 | 772–772 | 783–783 | +1/−1 | residual | background-image: url("https://scpsandboxcn.wikidot.com/local--files/theme%3A… |
+| 115 | 26 | 775–775 | 786–786 | +1/−1 | translation | /* 編集ロック */ |
+| 116 | 26 | 782–783 | 793–794 | +2/−2 | translation | /* ウィンドウ */ |
+| 117 | 26 | 786–786 | 797–797 | +1/−1 | mechanical | background: |
+| 118 | 26 | 791–791 | 802–802 | +1/−1 | residual | url("https://scpsandboxcn.wikidot.com/local--files/theme%3Ainland-empire/%E5%… |
+| 119 | 26 | 793–795 | 804–806 | +3/−3 | mechanical | background-position: |
+| 120 | 26 | 798–800 | 809–811 | +3/−3 | mechanical | background-repeat: |
+| 121 | 26 | 803–805 | 814–816 | +3/−3 | mechanical | background-size: |
+| 122 | 26 | 807–807 | 818–818 | +1/−1 | mechanical | } |
+| 123 | 26 | 809–811 | 820–822 | +3/−3 | mechanical | .owindow .content img { |
+| 124 | 26 | 813–813 | 824–824 | +1/−1 | mechanical | .owindow .title { |
+| 125 | 26 | 815–815 | 826–826 | +1/−1 | mechanical | } |
+| 126 | 26 | 817–817 | 828–828 | +1/−1 | translation | /* 検索バー/ユーザー情報 */ |
+| 127 | 27 | 861–861 | 872–872 | +1/−1 | mechanical | background-repeat: no-repeat; |
+| 128 | 28 | 1012–1012 | 1023–1023 | +1/−1 | residual | /* サイドバーコンポーネント */ |
+| 129 | 29 | — | 1111–1111 | +1/−0 | mechanical | (blank lines only) |
 
 ## Full diff
 
@@ -191,10 +190,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 2 — original 8–167 · candidate 13–182 · +74/−64 · residual, supplement, translation</summary>
+<summary>Section 2 — original 8–167 · candidate 13–177 · +73/−68 · residual, supplement, translation</summary>
 
 ```diff
-@@ -8,160 +13,170 @@
+@@ -8,160 +13,165 @@
  }
  [[/module]]
  
@@ -204,20 +203,13 @@ adjudicated explanation.
  
  [[>]]
 -**评分：**
-+**評価モジュール:**
- [[module Rate]]
- [[/>]]
- 
- [[>]]
--**评分模块与著作信息模块：**
+-[[module Rate]]
 +**評価モジュールとクレジットモジュール:**
  [[/>]]
  
--[[include :scp-wiki-cn:credit:start]]
--**标题：**内陆帝国 版式
--**作者：**[[*user Flea_ZER0]]
--**发布年份：**2024
--[[include :scp-wiki-cn:credit:end]]
+-[[>]]
+-**评分模块与著作信息模块：**
+-[[/>]]
 +[[include :scp-jp:credit:start-preview]]
 +**タイトル:** 内陸帝国テーマ
 +**原題:** 内陆帝国 版式
@@ -231,6 +223,12 @@ adjudicated explanation.
 +**使用フォント:** Noto Serif JP、Noto Sans JP（Google Fonts、SIL OFL 1.1）
 +[[include :scp-jp:credit:end-preview]]
  
+-[[include :scp-wiki-cn:credit:start]]
+-**标题：**内陆帝国 版式
+-**作者：**[[*user Flea_ZER0]]
+-**发布年份：**2024
+-[[include :scp-wiki-cn:credit:end]]
+-
 -这是一个由[[*user Flea_ZER0]]捣鼓出来的Sigma-9美学板式，受启发自[[[theme:oneiroi-west|西部梦神 主题版式]]]与大卫·林奇同名电影，适合用于梦神相关或是任何具备梦/超现实风格特质的文章。话虽如此，本版式并无使用限制，你可以将其用于任何页面。
 +これは[[*user Flea_ZER0]]が制作したSigma-9美学のテーマです。[[[theme:oneiroi-west|オネイロイ・ウェスト テーマ]]]とデイヴィッド・リンチの同名映画に着想を得ており、オネイロイ関連の記事、あるいは夢やシュルレアリスムの気配を持つ記事に向いています。とはいえ、このテーマに使用制限はありません。どのページにも使用できます。
  
@@ -434,10 +432,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 3 — original 169–175 · candidate 184–190 · +1/−1 · translation</summary>
+<summary>Section 3 — original 169–175 · candidate 179–185 · +1/−1 · translation</summary>
 
 ```diff
-@@ -169,7 +184,7 @@
+@@ -169,7 +179,7 @@
  [[div class="blockquote haze"]]
  @@ @@
  = {{@@[[div class="blockquote haze"]]@@}}
@@ -451,10 +449,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 4 — original 177–206 · candidate 192–222 · +10/−9 · mechanical, residual, supplement, translation</summary>
+<summary>Section 4 — original 177–206 · candidate 187–217 · +10/−9 · mechanical, residual, supplement, translation</summary>
 
 ```diff
-@@ -177,30 +192,31 @@
+@@ -177,30 +187,31 @@
  [[div class="blockquote dark"]]
  @@ @@
  = {{@@[[div class="blockquote dark"]]@@}}
@@ -500,10 +498,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 6 — original 261–269 · candidate 277–285 · +2/−2 · mechanical, translation</summary>
+<summary>Section 6 — original 261–269 · candidate 272–280 · +2/−2 · mechanical, translation</summary>
 
 ```diff
-@@ -261,9 +277,9 @@
+@@ -261,9 +272,9 @@
      background-color: var(--darkColor) !important;
  }
  
@@ -520,10 +518,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 8 — original 363–425 · candidate 379–441 · +28/−28 · mechanical, translation</summary>
+<summary>Section 8 — original 363–425 · candidate 374–436 · +28/−28 · mechanical, translation</summary>
 
 ```diff
-@@ -363,63 +379,63 @@
+@@ -363,63 +374,63 @@
    scrollbar-color: var(--purpleColor) var(--darkColor);
  }
  
@@ -620,10 +618,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 10 — original 436–457 · candidate 452–473 · +12/−12 · mechanical, translation</summary>
+<summary>Section 10 — original 436–457 · candidate 447–468 · +12/−12 · mechanical, translation</summary>
 
 ```diff
-@@ -436,22 +452,22 @@
+@@ -436,22 +447,22 @@
      color: transparent;
  
      border-left: 0;
@@ -663,10 +661,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 11 — original 477–483 · candidate 493–499 · +1/−1 · translation</summary>
+<summary>Section 11 — original 477–483 · candidate 488–494 · +1/−1 · translation</summary>
 
 ```diff
-@@ -477,7 +493,7 @@
+@@ -477,7 +488,7 @@
      opacity: 1 !important;
  }
  
@@ -680,10 +678,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 12 — original 487–500 · candidate 503–516 · +4/−4 · translation</summary>
+<summary>Section 12 — original 487–500 · candidate 498–511 · +4/−4 · translation</summary>
 
 ```diff
-@@ -487,14 +503,14 @@
+@@ -487,14 +498,14 @@
      background: rgba(0,0,0,0.5) !important;
      box-shadow: none;
  }
@@ -707,10 +705,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 13 — original 503–509 · candidate 519–525 · +1/−1 · translation</summary>
+<summary>Section 13 — original 503–509 · candidate 514–520 · +1/−1 · translation</summary>
 
 ```diff
-@@ -503,7 +519,7 @@
+@@ -503,7 +514,7 @@
      display: none;
  }
  
@@ -724,10 +722,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 22 — original 694–700 · candidate 710–716 · +1/−1 · residual</summary>
+<summary>Section 22 — original 694–700 · candidate 705–711 · +1/−1 · residual</summary>
 
 ```diff
-@@ -694,7 +710,7 @@
+@@ -694,7 +705,7 @@
  
  .yui-navset .yui-nav a,
  .yui-navset .yui-navset-top .yui-nav a {
@@ -741,10 +739,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 24 — original 726–746 · candidate 742–762 · +6/−6 · mechanical, residual</summary>
+<summary>Section 24 — original 726–746 · candidate 737–757 · +6/−6 · mechanical, residual</summary>
 
 ```diff
-@@ -726,21 +742,21 @@
+@@ -726,21 +737,21 @@
  
  .yui-navset .yui-nav a:hover,
  .yui-navset .yui-nav a:focus {
@@ -777,10 +775,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 25 — original 754–760 · candidate 770–776 · +1/−1 · translation</summary>
+<summary>Section 25 — original 754–760 · candidate 765–771 · +1/−1 · translation</summary>
 
 ```diff
-@@ -754,7 +770,7 @@
+@@ -754,7 +765,7 @@
      width: 100%;
  }
  
@@ -794,10 +792,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 26 — original 769–820 · candidate 785–836 · +22/−22 · mechanical, residual, translation</summary>
+<summary>Section 26 — original 769–820 · candidate 780–831 · +22/−22 · mechanical, residual, translation</summary>
 
 ```diff
-@@ -769,52 +785,52 @@
+@@ -769,52 +780,52 @@
  
      background-position: center;
      background-size: auto;
@@ -877,10 +875,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 28 — original 1009–1015 · candidate 1025–1031 · +1/−1 · residual</summary>
+<summary>Section 28 — original 1009–1015 · candidate 1020–1026 · +1/−1 · residual</summary>
 
 ```diff
-@@ -1009,7 +1025,7 @@
+@@ -1009,7 +1020,7 @@
      color: #000
  }
  
@@ -897,7 +895,7 @@ adjudicated explanation.
 <summary>Purely mechanical sections (5, 7, 9, 14, 15, 16, 17, 18, 19, 20, 21, 23, 27, 29) — whitespace, host, and branch-token changes only (heuristic)</summary>
 
 ```diff
-@@ -234,20 +250,20 @@
+@@ -234,20 +245,20 @@
      background-color:  var(--darkColor) !important;
      border: solid 1px transparent;
  
@@ -926,7 +924,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -310,7 +326,7 @@
+@@ -310,7 +321,7 @@
      height: 400px;
      background: none;
  
@@ -938,7 +936,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -428,7 +444,7 @@
+@@ -428,7 +439,7 @@
      box-shadow: none;
  }
  
@@ -950,7 +948,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -524,7 +540,7 @@
+@@ -524,7 +535,7 @@
  div#toc {
      border: solid 1px transparent;
  
@@ -962,7 +960,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -532,14 +548,14 @@
+@@ -532,14 +543,14 @@
  
      background-color:  var(--darkColor);
  
@@ -984,7 +982,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -550,28 +566,28 @@
+@@ -550,28 +561,28 @@
  div.blockquote.haze,
  div#toc.haze {
      border: solid 1px transparent;
@@ -1027,7 +1025,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -606,7 +622,7 @@
+@@ -606,7 +617,7 @@
  div#toc.dark {
      border: solid 1px transparent;
  
@@ -1039,7 +1037,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -614,14 +630,14 @@
+@@ -614,14 +625,14 @@
  
      background-color:  var(--darkColor);
  
@@ -1061,7 +1059,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -643,7 +659,7 @@
+@@ -643,7 +654,7 @@
      border: solid 1px transparent;
      border-top: solid 1px transparent;
  
@@ -1073,7 +1071,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -661,7 +677,7 @@
+@@ -661,7 +672,7 @@
  .yui-navset .yui-content{
          border: solid 1px transparent;
  
@@ -1085,7 +1083,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -669,14 +685,14 @@
+@@ -669,14 +680,14 @@
  
      background-color:  var(--darkColor);
  
@@ -1107,7 +1105,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -705,20 +721,20 @@
+@@ -705,20 +716,20 @@
  .yui-navset .yui-nav .selected a:focus,
  .yui-navset .yui-nav .selected a:hover {
      background-color:  var(--darkColor);
@@ -1136,7 +1134,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -858,7 +874,7 @@
+@@ -858,7 +869,7 @@
      box-shadow: none;
      background-position: center;
      background-size: 55%;
@@ -1148,7 +1146,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -1097,6 +1113,7 @@
+@@ -1097,6 +1108,7 @@
          background-color: rgba(34, 32, 46, 0.75);
      }
  }

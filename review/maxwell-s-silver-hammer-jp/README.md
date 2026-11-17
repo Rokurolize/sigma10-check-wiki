@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:maxwell-s-silver-hammer-jp — origin EN, population #112 [GOSIGN2-LEDGER (b) row 112]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 89343ab073c03e249b09181a9c694f96ea8a847ff0a549e174fe6697c4e29ef3); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 589f0197307cb4b69bfae2d734a4cef9ea699a508b2fd1eb7fe85526eeb3355d); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 4 errors / 1 warn / 1 info (hotlink×3, pseudo-ref×1); standing classes dispositioned in register c1 [T1-ROWS row 112; GOSIGN2-LEDGER (b) row 112]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page runtime-hotlink site-theme chain + scp-wiki.wikidot.com; sample credit-modal (preview-form) + 884px@768 overflow (one combo http.cat among hosts); T3 header logo overprints subtitle/account links at 375/320 on both pages, h1 wraps to two lines at 320. [RENDER-ROWS-2 (RENDER-S2-C (EN14))]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 112, source LOCALIZE-S2-B]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 112]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 112]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:maxwell-s-silver-hammer-jp.txt sha256:89343ab073c03e249b09181a9c694f96ea8a847ff0a549e174fe6697c4e29ef3; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 41048ca2b13766899b5c5d5d426a980ad00f8a04; candidate file pages/theme:maxwell-s-silver-hammer-jp.txt sha256:589f0197307cb4b69bfae2d734a4cef9ea699a508b2fd1eb7fe85526eeb3355d; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -168,6 +168,12 @@ Adjudication for this README (every block was read against the bytes): the 5 CSS
 ### The usage example's self-reference (repaired after the verdict; the link sample still names the plain slug)
 
 At this batch's snapshot the candidate's usage example (candidate L28) read `@@[[include :scp-jp:theme:maxwell-s-silver-hammer]]@@`: the wiki prefix had been repointed from the original's `:scp-wiki:` form, but the page name kept the original's plain slug, and this candidate's posting name is theme:maxwell-s-silver-hammer-jp, so the example named a page that will not exist on scp-jp. The population sweep that the earlier batches' flags of this same shape set in motion repaired the line after the ledger determination (canonical commit b5cb724, a single -jp insertion on the line); this package is built against the repaired candidate, whose L28 now reads `:scp-jp:theme:maxwell-s-silver-hammer-jp`. One member of the shape survives the sweep: the link sample (candidate L48) still links `[[[theme:maxwell-s-silver-hammer|訪問済みリンク]]]`, a relative-link syntax sample outside the sweep's `:scp-jp:theme:` token scope, recorded here for the coordinator's judgment. The ledger's determination for this theme is PASS and this package does not re-open it.
+
+### Post-package repairs (REFRESH3-H)
+
+The items above describe this package as built. The repair recorded below postdates the package; `candidate.txt` has been recopied from the current canonical `pages/theme:maxwell-s-silver-hammer-jp.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**FIX-FONTS7 item 3 — link-exhibit sample posting name (landing `41048ca2b13766899b5c5d5d426a980ad00f8a04`, "pages: larue and laughter font loads, two exhibit samples", 2026-11-17; record `FIX-FONTS7.md`).** +1/−1. L48 link-styling exhibit sample `[[[theme:maxwell-s-silver-hammer|訪問済みリンク]]]` → `[[[theme:maxwell-s-silver-hammer-jp|訪問済みリンク]]]`, the `-jp` posting name, with the label and all other text unchanged. Checker 4/1/1 unchanged; the single `link-target-missing` warning now names the `-jp` posting name and persists until posting; class (i) 0.
 
 ## Change set outside the two diffed files
 

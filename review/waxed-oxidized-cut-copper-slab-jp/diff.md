@@ -5,40 +5,131 @@ candidate.txt in this directory; do not hand-edit it. Regenerate
 with `python3 review/build_review.py`; verify with
 `python3 review/build_review.py --check`.
 
+Tier 2 format (large diff): summary header, change-block
+index, then the full diff in collapsed sections. Purely
+mechanical sections are grouped into one collapsed section
+at the end. Auto-class labels are heuristic (token-level
+normalization only); the package README.md carries the
+adjudicated explanation.
+
 | | Lines |
 |---|---|
 | original.txt | 735 |
-| candidate.txt | 747 |
-| Added | +165 |
-| Review-stage comments | 0 of the +165 added lines |
-| Removed | -164 |
-| Hunks | 4 |
+| candidate.txt | 757 |
+| Added | +133 |
+| Review-stage comments | 0 of the +133 added lines |
+| Removed | -111 |
+| Changed | 244 |
+| Change blocks | 71 |
+| Diff sections (context 3) | 4 |
+
+## Changed lines by auto-class (heuristic)
+
+| Auto-class | Blocks | Changed lines |
+|---|---|---|
+| mechanical | 4 | 14 |
+| translation | 27 | 76 |
+| supplement | 3 | 30 |
+| residual | 37 | 124 |
+
+## Change-block index
+
+| # | Section | Original | Candidate | +/− | Auto-class | Gist |
+|---|---|---|---|---|---|---|
+| 1 | 1 | 1–4 | 1–1 | +1/−4 | residual | [[include theme:parallel-jp]] |
+| 2 | 1 | 6–8 | 3–3 | +1/−3 | residual | [[iftags +テーマ]] |
+| 3 | 1 | 10–13 | 5–14 | +10/−4 | supplement | [[include :scp-jp:credit:start-preview]] |
+| 4 | 1 | 16–16 | 17–17 | +1/−1 | residual | [# 岩盤テーマ] >> [[[theme:copper-jp\|銅テーマ]]] >> [# 切り込み入りの銅のハーフブロックテーマ] >> [# 酸化した… |
+| 5 | 1 | 20–20 | — | +0/−1 | residual | [[module rate]] |
+| 6 | 1 | 23–23 | 23–23 | +1/−1 | translation | + 概要と使用方法 |
+| 7 | 1 | 25–25 | 25–25 | +1/−1 | residual | これは[[[theme:bedrock-jp\|岩盤]]]を土台にした美学テーマです。このテーマを使用するには、まず岩盤を読み込んでください。 |
+| 8 | 1 | 28–28 | 28–28 | +1/−1 | mechanical | @@[[include :scp-jp:theme:bedrock-jp]]@@ |
+| 9 | 1 | 31–31 | 31–31 | +1/−1 | translation | 次に、その下で銅テーマを読み込みます。 |
+| 10 | 1 | 34–35 | 34–35 | +2/−2 | mechanical | @@[[include :scp-jp:theme:bedrock-jp]]@@ |
+| 11 | 1 | 38–38 | 38–38 | +1/−1 | translation | 次に、石切台に通します。 |
+| 12 | 1 | 41–42 | 41–42 | +2/−2 | mechanical | @@[[include :scp-jp:theme:bedrock-jp]]@@ |
+| 13 | 1 | 45–45 | 45–45 | +1/−1 | translation | 次に、自然に酸化するまで待ちます。 |
+| 14 | 1 | 48–49 | 48–49 | +2/−2 | mechanical | @@[[include :scp-jp:theme:bedrock-jp]]@@ |
+| 15 | 1 | 52–52 | 52–52 | +1/−1 | translation | 最後に、錆止めを塗ります。 |
+| 16 | 1 | 55–56 | 55–56 | +2/−2 | residual | @@[[include :scp-jp:theme:bedrock-jp]]@@ |
+| 17 | 1 | 59–59 | 59–59 | +1/−1 | residual | [[size 60%]]岩盤は忘れずに[[[theme:parallel-jp\|パラレル]]]へ差し替えてください。普通、建物を岩盤の上へ直接置いたりはし… |
+| 18 | 1 | 62–63 | 62–63 | +2/−2 | residual | @@[[include :scp-jp:theme:parallel-jp]]@@ |
+| 19 | 1 | 66–66 | 66–66 | +1/−1 | translation | ++ パラメータと変数 |
+| 20 | 1 | 68–68 | 68–68 | +1/−1 | translation | 一部の端末では、このテーマのアニメーションによって動作が重くなることがあります。右下のスイッチをクリックするとアニメーションを一時停止できます。 |
+| 21 | 1 | 70–70 | 70–70 | +1/−1 | translation | 読み込み時にアニメーションを無効にするには、次のコードを使ってください。 |
+| 22 | 1 | 73–74 | 73–74 | +2/−2 | residual | @@[[include :scp-jp:theme:parallel-jp]]@@ |
+| 23 | 1 | 77–77 | 77–77 | +1/−1 | translation | アニメーション切り替え用のスイッチは表示例であり、テーマを読み込んだだけでは出現しません。ただし、このページのソースにある対応する{{@@[[div]]@… |
+| 24 | 1 | 80–82 | 80–82 | +3/−3 | translation | **背景アニメーション** |
+| 25 | 1 | 86–86 | 86–86 | +1/−1 | translation | [!-- ここまでがスイッチです。この一式をページ内の任意の場所へコピーすれば使用できます。 --] |
+| 26 | 1 | 88–88 | 88–88 | +1/−1 | translation | このテーマの背景画像は、Minecraftのタイトル画面パノラマと同じ形式のパノラマ画像に対応しています。スクリーンショット作成手順はウェブ上で見つかりま… |
+| 27 | 1 | 92–97 | 92–97 | +6/−6 | residual | @@ --panorama-0: url("画像URL");@@ |
+| 28 | 1 | 101–101 | 101–101 | +1/−1 | translation | + 例 |
+| 29 | 1 | 103–103 | 103–103 | +1/−1 | translation | ++ カスタム要素 |
+| 30 | 1 | 105–105 | 105–105 | +1/−1 | translation | 錆止めされた酸化した切り込み入りの銅のハーフブロックテーマには、少数のユーティリティクラスを組み合わせて使える要素があります。以下が見栄えのよい組み合わせ… |
+| 31 | 1 | 107–107 | 107–107 | +1/−1 | translation | [[collapsible show="+ 例を開く" hide="- 例を隠す"]] |
+| 32 | 2 | 147–147 | 147–147 | +1/−1 | translation | ++ 標準要素 |
+| 33 | 2 | 149–149 | 149–149 | +1/−1 | translation | [[include component:image-block name=https://bhl.scpwikicn.com/img/logo.svg\|c… |
+| 34 | 2 | 151–151 | 151–151 | +1/−1 | residual | 横罫線は、ハイフン9個「@@---------@@」で作成できます。引用ブロックなど他の部品の中に置かれていなければ、左右へ伸びてページを横断します。ファ… |
+| 35 | 2 | 155–155 | 155–155 | +1/−1 | translation | 見出しは、行頭に1個から6個のプラス記号「+」を入力すると作成できます。 |
+| 36 | 2 | 157–163 | 157–163 | +7/−7 | translation | [[collapsible show="+ 折り畳みブロック" hide="- 閉じる"]] |
+| 37 | 2 | 167–168 | 167–168 | +2/−2 | residual | [[tab タブ]] |
+| 38 | 2 | 170–171 | 170–171 | +2/−2 | translation | [[tab タブ]] |
+| 39 | 2 | 173–173 | 173–173 | +1/−1 | translation | なんとも見事な細工です。 |
+| 40 | 2 | 175–176 | 175–176 | +2/−2 | residual | [[tab 長いタブ]] |
+| 41 | 2 | 178–178 | 178–178 | +1/−1 | residual | これは長いタブで、文章がたくさん入っています。 |
+| 42 | 2 | 180–180 | 180–180 | +1/−1 | residual | これは長いタブで、文章がたくさん入っています。 |
+| 43 | 2 | 182–182 | 182–182 | +1/−1 | residual | これは長いタブで、文章がたくさん入っています。 |
+| 44 | 2 | 184–184 | 184–184 | +1/−1 | residual | これは長いタブで、文章がたくさん入っています。 |
+| 45 | 2 | 186–186 | 186–186 | +1/−1 | residual | これは長いタブで、文章がたくさん入っています。 |
+| 46 | 2 | 188–188 | 188–188 | +1/−1 | residual | これは長いタブで、文章がたくさん入っています。 |
+| 47 | 2 | 190–190 | 190–190 | +1/−1 | residual | これは長いタブで、文章がたくさん入っています。 |
+| 48 | 2 | 192–192 | 192–192 | +1/−1 | residual | これは長いタブで、文章がたくさん入っています。 |
+| 49 | 2 | 194–194 | 194–194 | +1/−1 | residual | これは長いタブで、文章がたくさん入っています。 |
+| 50 | 2 | 196–196 | 196–196 | +1/−1 | residual | これは長いタブで、文章がたくさん入っています。 |
+| 51 | 2 | 198–198 | 198–198 | +1/−1 | residual | これは長いタブで、文章がたくさん入っています。 |
+| 52 | 2 | 200–200 | 200–200 | +1/−1 | residual | [[tab 何か妙な理由で、この空のタブにはとても長い名前が付いています。なぜでしょう。不思議ですね。]] |
+| 53 | 2 | 202–202 | 202–202 | +1/−1 | residual | [[tab 空のタブ]] |
+| 54 | 2 | 204–204 | 204–204 | +1/−1 | residual | [[tab 空のタブ]] |
+| 55 | 2 | 206–207 | 206–207 | +2/−2 | residual | [[tab 空のタブ]] |
+| 56 | 2 | 209–209 | 209–209 | +1/−1 | residual | [[tab 空のタブ]] |
+| 57 | 2 | 211–211 | 211–211 | +1/−1 | residual | [[tab 空のタブ]] |
+| 58 | 2 | 215–215 | 215–215 | +1/−1 | translation | > これは引用ブロックです。行頭に「> 」を付けると作成できます。 |
+| 59 | 2 | 217–217 | 217–217 | +1/−1 | translation | > さらに文章 |
+| 60 | 2 | 219–219 | 219–219 | +1/−1 | translation | > 分割線 |
+| 61 | 2 | 221–221 | 221–221 | +1/−1 | translation | >> 入れ子の引用ブロック |
+| 62 | 2 | 223–225 | 223–225 | +3/−3 | translation | \|\|~ これは \|\|~ テーブルです \|\| |
+| 63 | 2 | 228–230 | 228–230 | +3/−3 | residual | ++* [[span style="font-family: var(--header-font);"]]見出しフォントはNoto Serif JP / … |
+| 64 | 2 | 234–240 | 234–234 | +1/−7 | residual | [[code type="CSS"]] |
+| 65 | 2 | 243–243 | 237–237 | +1/−1 | residual | ---- |
+| 66 | 2 | 245–245 | 239–243 | +5/−1 | residual | + ソースコード |
+| 67 | 2 | 247–247 | 245–253 | +9/−1 | residual | #page-content > h1 { |
+| 68 | 3 | 292–293 | 298–299 | +2/−2 | residual | --mono-font: "JetBrains Mono", "Noto Sans JP", monospace; |
+| 69 | 3 | 295–295 | 301–301 | +1/−1 | residual | --body-font: "Noto Sans", "Noto Sans JP", sans-serif; |
+| 70 | 4 | — | 741–752 | +12/−0 | supplement | @property --rotangle { |
+| 71 | 4 | — | 754–757 | +4/−0 | supplement | [[include :scp-jp:component:interwiki-style |
+
+## Full diff
+
+<details>
+<summary>Section 1 — original 1–110 · candidate 1–110 · +52/−52 · mechanical, residual, supplement, translation</summary>
 
 ```diff
---- original.txt
-+++ candidate.txt
-@@ -1,110 +1,108 @@
+@@ -1,110 +1,110 @@
 -[[iftags +版式]]
 -[[module CSS]]
 -@import url('https://hormress.github.io/Parallel/normalize-min.css');
 -@import url('https://hormress.github.io/Parallel/parallel-min.css');
--
++[[include theme:parallel-jp]]
+ 
 -#page-content > h1 {
 -    margin-top: 3rem;
 -}
--
++[[iftags +テーマ]]
+ 
 -#page-content > h2 {
 -    margin-top: 2rem;
 -}
 -[[/module]]
--
--[[div class="pseudocrumbs"]]
--[# 基岩 版式] >> [[[theme:copper|铜 版式]]] >> [# 切制铜台阶 版式] >> [# 氧化的切制铜台阶 版式] >> **涂蜡的氧化切制铜台阶 版式**
--[[/div]]
-+[[include theme:parallel-jp]]
-+
-+[[iftags +テーマ]]
-+
 +[[include :scp-jp:credit:start-preview]]
 +**タイトル:** 涂蜡的氧化切制铜台阶 版式
 +**翻訳責任者:** AI
@@ -49,108 +140,94 @@ with `python3 review/build_review.py`; verify with
 +**初訳時参照リビジョン:** 2
 +**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:waxed-oxidized-cut-copper-slab 涂蜡的氧化切制铜台阶 版式]
 +[[include :scp-jp:credit:end-preview]]
-+
-+[# 岩盤テーマ] >> [[[theme:copper|銅テーマ]]] >> [# 切り込み入りの銅のハーフブロックテーマ] >> [# 酸化した切り込み入りの銅のハーフブロックテーマ] >> **錆止めされた酸化した切り込み入りの銅のハーフブロックテーマ**
+ 
+ [[div class="pseudocrumbs"]]
+-[# 基岩 版式] >> [[[theme:copper|铜 版式]]] >> [# 切制铜台阶 版式] >> [# 氧化的切制铜台阶 版式] >> **涂蜡的氧化切制铜台阶 版式**
++[# 岩盤テーマ] >> [[[theme:copper-jp|銅テーマ]]] >> [# 切り込み入りの銅のハーフブロックテーマ] >> [# 酸化した切り込み入りの銅のハーフブロックテーマ] >> **錆止めされた酸化した切り込み入りの銅のハーフブロックテーマ**
+ [[/div]]
  
  [[>]]
 -[[module rate]]
  [[/>]]
  
 -+ 简介与使用方法
--
--这是一个基于[[[theme:bedrock|基岩]]]的美学版式。要使用此版式，请首先引入基岩：
 ++ 概要と使用方法
-+
-+これは[[[theme:bedrock|岩盤]]]を土台にした美学テーマです。このテーマを使用するには、まず岩盤を読み込んでください。
+ 
+-这是一个基于[[[theme:bedrock|基岩]]]的美学版式。要使用此版式，请首先引入基岩：
++これは[[[theme:bedrock-jp|岩盤]]]を土台にした美学テーマです。このテーマを使用するには、まず岩盤を読み込んでください。
  
  [[div class="code"]]
 -@@[[include :scp-wiki-cn:theme:bedrock]]@@
--[[/div]]
--
--然后，在其下方引入铜 版式：
 +@@[[include :scp-jp:theme:bedrock-jp]]@@
-+[[/div]]
-+
+ [[/div]]
+ 
+-然后，在其下方引入铜 版式：
 +次に、その下で銅テーマを読み込みます。
  
  [[div class="code"]]
 -@@[[include :scp-wiki-cn:theme:bedrock]]@@
 -@@[[include :scp-wiki-cn:theme:copper]]@@
--[[/div]]
--
--然后，对其使用切石机：
 +@@[[include :scp-jp:theme:bedrock-jp]]@@
 +@@[[include :scp-jp:theme:copper-jp]]@@
-+[[/div]]
-+
+ [[/div]]
+ 
+-然后，对其使用切石机：
 +次に、石切台に通します。
  
  [[div class="code"]]
 -@@[[include :scp-wiki-cn:theme:bedrock]]@@
 -@@[[include :scp-wiki-cn:theme:@@##grey|cut-##copper##grey|-slab##@@]]@@
--[[/div]]
--
--然后，等待其自然氧化：
 +@@[[include :scp-jp:theme:bedrock-jp]]@@
 +@@[[include :scp-jp:theme:@@##grey|cut-##copper##grey|-slab##@@]]@@
-+[[/div]]
-+
+ [[/div]]
+ 
+-然后，等待其自然氧化：
 +次に、自然に酸化するまで待ちます。
  
  [[div class="code"]]
 -@@[[include :scp-wiki-cn:theme:bedrock]]@@
 -@@[[include :scp-wiki-cn:theme:@@##green|oxidized-####grey|cut-##copper##grey|-slab##@@]]@@
--[[/div]]
--
--最后，涂蜡：
 +@@[[include :scp-jp:theme:bedrock-jp]]@@
 +@@[[include :scp-jp:theme:@@##green|oxidized-####grey|cut-##copper##grey|-slab##@@]]@@
-+[[/div]]
-+
+ [[/div]]
+ 
+-最后，涂蜡：
 +最後に、錆止めを塗ります。
  
  [[div class="code"]]
 -@@[[include :scp-wiki-cn:theme:bedrock]]@@
 -@@[[include :scp-wiki-cn:theme:@@##brown|waxed-####green|oxidized-####grey|cut-##copper##grey|-slab##@@]]@@
--[[/div]]
--
--[[size 60%]]别忘了把基岩换成[[[theme:parallel|平行]]]，我们一般不把建筑直接放在基岩上！[[/size]]
 +@@[[include :scp-jp:theme:bedrock-jp]]@@
 +@@[[include :scp-jp:theme:@@##brown|waxed-####green|oxidized-####grey|cut-##copper##grey|-slab-jp##@@]]@@
-+[[/div]]
-+
-+[[size 60%]]岩盤は忘れずに[[[theme:parallel|パラレル]]]へ差し替えてください。普通、建物を岩盤の上へ直接置いたりはしません！[[/size]]
+ [[/div]]
+ 
+-[[size 60%]]别忘了把基岩换成[[[theme:parallel|平行]]]，我们一般不把建筑直接放在基岩上！[[/size]]
++[[size 60%]]岩盤は忘れずに[[[theme:parallel-jp|パラレル]]]へ差し替えてください。普通、建物を岩盤の上へ直接置いたりはしません！[[/size]]
  
  [[div class="code" style="transform-origin: 0% 0%; scale: 0.6; width: max-content;"]]
 -@@[[include :scp-wiki-cn:theme:parallel]]@@
 -@@[[include :scp-wiki-cn:theme:@@##brown|waxed-####green|oxidized-####grey|cut-##copper##grey|-slab##@@]]@@
--[[/div]]
--
--++ 参数与变量
--
--部分设备上此版式的动画会导致卡顿，点击右下角滑块可以暂停动画。
--
--若要在引入中禁用动画，请使用如下的代码：
 +@@[[include :scp-jp:theme:parallel-jp]]@@
 +@@[[include :scp-jp:theme:@@##brown|waxed-####green|oxidized-####grey|cut-##copper##grey|-slab-jp##@@]]@@
-+[[/div]]
-+
+ [[/div]]
+ 
+-++ 参数与变量
 +++ パラメータと変数
-+
+ 
+-部分设备上此版式的动画会导致卡顿，点击右下角滑块可以暂停动画。
 +一部の端末では、このテーマのアニメーションによって動作が重くなることがあります。右下のスイッチをクリックするとアニメーションを一時停止できます。
-+
+ 
+-若要在引入中禁用动画，请使用如下的代码：
 +読み込み時にアニメーションを無効にするには、次のコードを使ってください。
  
  [[div class="code"]]
 -@@[[include :scp-wiki-cn:theme:parallel]]@@
 -@@[[include :scp-wiki-cn:theme:@@##brown|waxed-####green|oxidized-####grey|cut-##copper##grey|-slab## **##darkblue|no-anim=*##**@@]]@@
--[[/div]]
--
--用于开关动画的滑块仅用于展示，在引入版式时不会出现。不过你可以复制此页面的源代码中出现的对应 {{@@[[div]]@@}}，它的相关样式已经集成在此版式内部。
 +@@[[include :scp-jp:theme:parallel-jp]]@@
 +@@[[include :scp-jp:theme:@@##brown|waxed-####green|oxidized-####grey|cut-##copper##grey|-slab-jp## **##darkblue|no-anim=*##**@@]]@@
-+[[/div]]
-+
+ [[/div]]
+ 
+-用于开关动画的滑块仅用于展示，在引入版式时不会出现。不过你可以复制此页面的源代码中出现的对应 {{@@[[div]]@@}}，它的相关样式已经集成在此版式内部。
 +アニメーション切り替え用のスイッチは表示例であり、テーマを読み込んだだけでは出現しません。ただし、このページのソースにある対応する{{@@[[div]]@@}}をコピーすれば使えます。関連するスタイルはこのテーマ内に組み込まれています。
  
  [[div class="animation-switch panel-dark color-light"]]
@@ -164,10 +241,9 @@ with `python3 review/build_review.py`; verify with
  [[/div]]
  
 -[!-- 以上就是开关，整个复制放在页面任何地方即可引用。 --]
--
--此版式背景图适配与 Minecraft 封面全景图格式相同的全景图，截图教程可以在网络上找到。使用以下变量指定这些图片：
 +[!-- ここまでがスイッチです。この一式をページ内の任意の場所へコピーすれば使用できます。 --]
-+
+ 
+-此版式背景图适配与 Minecraft 封面全景图格式相同的全景图，截图教程可以在网络上找到。使用以下变量指定这些图片：
 +このテーマの背景画像は、Minecraftのタイトル画面パノラマと同じ形式のパノラマ画像に対応しています。スクリーンショット作成手順はウェブ上で見つかります。次の変数で画像を指定してください。
  
  [[div class="code"]]
@@ -188,41 +264,45 @@ with `python3 review/build_review.py`; verify with
  [[/div]]
  
 -+ 示例
--
--++ 自定义元素
--
--涂蜡的氧化切制铜台阶版式提供一些支持少量工具类的元素，以下是全部可能的赏心悦目组合。
--
--[[collapsible show="+ 展开示例" hide="- 隐藏示例"]]
 ++ 例
-+
+ 
+-++ 自定义元素
 +++ カスタム要素
-+
+ 
+-涂蜡的氧化切制铜台阶版式提供一些支持少量工具类的元素，以下是全部可能的赏心悦目组合。
 +錆止めされた酸化した切り込み入りの銅のハーフブロックテーマには、少数のユーティリティクラスを組み合わせて使える要素があります。以下が見栄えのよい組み合わせの一覧です。
-+
+ 
+-[[collapsible show="+ 展开示例" hide="- 隐藏示例"]]
 +[[collapsible show="+ 例を開く" hide="- 例を隠す"]]
  
  [[div class="panel"]]
  {{@@[[div class="panel"]]@@}}
-@@ -144,107 +142,105 @@
+```
+
+</details>
+
+<details>
+<summary>Section 2 — original 144–250 · candidate 144–256 · +62/−56 · residual, translation</summary>
+
+```diff
+@@ -144,107 +144,113 @@
  
  [[/collapsible]]
  
 -++ 经典元素
--
--[[include component:image-block name=https://bhl.scpwikicn.com/img/logo.svg|caption=一张图片|width=200px]]
--
--可通过⑨个连字符“@@---------@@”创建水平分割线。若它未被放在其他部件（诸如引用块）中，则会左右延伸贯穿页面。这种将文件分割为多个部分的线就是分割线。
 +++ 標準要素
-+
+ 
+-[[include component:image-block name=https://bhl.scpwikicn.com/img/logo.svg|caption=一张图片|width=200px]]
 +[[include component:image-block name=https://bhl.scpwikicn.com/img/logo.svg|caption=画像の例|width=200px]]
-+
+ 
+-可通过⑨个连字符“@@---------@@”创建水平分割线。若它未被放在其他部件（诸如引用块）中，则会左右延伸贯穿页面。这种将文件分割为多个部分的线就是分割线。
 +横罫線は、ハイフン9個「@@---------@@」で作成できます。引用ブロックなど他の部品の中に置かれていなければ、左右へ伸びてページを横断します。ファイルを複数の部分へ区切るこの線が分割線です。
  
  ---------
  
 -标题可通过在一行字起始处输入 1 至 6 个加号“+”来创建。
--
++見出しは、行頭に1個から6個のプラス記号「+」を入力すると作成できます。
+ 
 -[[collapsible show="+ 折叠块" hide="- 收起"]]
 -+* 一号标题
 -++* 二号标题
@@ -230,8 +310,6 @@ with `python3 review/build_review.py`; verify with
 -++++* 四号标题
 -+++++* 五号标题
 -++++++* 六号标题
-+見出しは、行頭に1個から6個のプラス記号「+」を入力すると作成できます。
-+
 +[[collapsible show="+ 折り畳みブロック" hide="- 閉じる"]]
 ++* 一番目の見出し
 +++* 二番目の見出し
@@ -244,93 +322,73 @@ with `python3 review/build_review.py`; verify with
  [[tabview]]
 -[[tab 分页]]
 -此为分页（tab view）。
--[[/tab]]
--[[tab 分页]]
--看，这有更多文字。
--
--多么精巧绝伦。
--[[/tab]]
--[[tab 长 Tab]]
--这是一个长的 tab，它有很多文字。
--
--这是一个长的 tab，它有很多文字。
--
--这是一个长的 tab，它有很多文字。
--
--这是一个长的 tab，它有很多文字。
--
--这是一个长的 tab，它有很多文字。
--
--这是一个长的 tab，它有很多文字。
--
--这是一个长的 tab，它有很多文字。
--
--这是一个长的 tab，它有很多文字。
--
--这是一个长的 tab，它有很多文字。
--
--这是一个长的 tab，它有很多文字。
--
--这是一个长的 tab，它有很多文字。
--
--这是一个长的 tab，它有很多文字。
--[[/tab]]
--[[tab 由于一些奇怪的原因，这个空 tab 有一个很长的名字。我想知道为什么？这很奇怪。]]
--[[/tab]]
--[[tab 空 Tab]]
--[[/tab]]
--[[tab 空 Tab]]
--[[/tab]]
--[[tab 空 Tab]]
--蛋糕是个谎言
--[[/tab]]
--[[tab 空 Tab]]
--[[/tab]]
--[[tab 空 Tab]]
 +[[tab タブ]]
 +これはタブビューです。
-+[[/tab]]
+ [[/tab]]
+-[[tab 分页]]
+-看，这有更多文字。
 +[[tab タブ]]
 +ほら、こちらにはもっと文章があります。
-+
+ 
+-多么精巧绝伦。
 +なんとも見事な細工です。
-+[[/tab]]
+ [[/tab]]
+-[[tab 长 Tab]]
+-这是一个长的 tab，它有很多文字。
 +[[tab 長いタブ]]
 +これは長いタブで、文章がたくさん入っています。
-+
+ 
+-这是一个长的 tab，它有很多文字。
 +これは長いタブで、文章がたくさん入っています。
-+
+ 
+-这是一个长的 tab，它有很多文字。
 +これは長いタブで、文章がたくさん入っています。
-+
+ 
+-这是一个长的 tab，它有很多文字。
 +これは長いタブで、文章がたくさん入っています。
-+
+ 
+-这是一个长的 tab，它有很多文字。
 +これは長いタブで、文章がたくさん入っています。
-+
+ 
+-这是一个长的 tab，它有很多文字。
 +これは長いタブで、文章がたくさん入っています。
-+
+ 
+-这是一个长的 tab，它有很多文字。
 +これは長いタブで、文章がたくさん入っています。
-+
+ 
+-这是一个长的 tab，它有很多文字。
 +これは長いタブで、文章がたくさん入っています。
-+
+ 
+-这是一个长的 tab，它有很多文字。
 +これは長いタブで、文章がたくさん入っています。
-+
+ 
+-这是一个长的 tab，它有很多文字。
 +これは長いタブで、文章がたくさん入っています。
-+
+ 
+-这是一个长的 tab，它有很多文字。
 +これは長いタブで、文章がたくさん入っています。
-+
+ 
+-这是一个长的 tab，它有很多文字。
 +これは長いタブで、文章がたくさん入っています。
-+[[/tab]]
+ [[/tab]]
+-[[tab 由于一些奇怪的原因，这个空 tab 有一个很长的名字。我想知道为什么？这很奇怪。]]
 +[[tab 何か妙な理由で、この空のタブにはとても長い名前が付いています。なぜでしょう。不思議ですね。]]
-+[[/tab]]
+ [[/tab]]
+-[[tab 空 Tab]]
 +[[tab 空のタブ]]
-+[[/tab]]
+ [[/tab]]
+-[[tab 空 Tab]]
 +[[tab 空のタブ]]
-+[[/tab]]
+ [[/tab]]
+-[[tab 空 Tab]]
+-蛋糕是个谎言
 +[[tab 空のタブ]]
 +ケーキは嘘です
-+[[/tab]]
+ [[/tab]]
+-[[tab 空 Tab]]
 +[[tab 空のタブ]]
-+[[/tab]]
+ [[/tab]]
+-[[tab 空 Tab]]
 +[[tab 空のタブ]]
  [[/tab]]
  [[/tabview]]
@@ -345,12 +403,11 @@ with `python3 review/build_review.py`; verify with
 +> 分割線
  >
 ->> 嵌套引用块
--
++>> 入れ子の引用ブロック
+ 
 -||~ 这是 ||~ 桌子 ||
 -|||| 白色地毯 ||
 -|||| 橡木栅栏 ||
-+>> 入れ子の引用ブロック
-+
 +||~ これは ||~ テーブルです ||
 +|||| 白色のカーペット ||
 +|||| オークのフェンス ||
@@ -372,16 +429,13 @@ with `python3 review/build_review.py`; verify with
 -    initial-value: 0;
 -}
 -[[/code]]
--[[/div]]
--
++
+ [[/div]]
+ 
 -[[/iftags]]
--
--[[module CSS]]
-+
-+[[/div]]
-+
 +----
-+
+ 
+-[[module CSS]]
 ++ ソースコード
 +
 +[[collapsible show="ソースコードを表示" hide="ソースコードを閉じる"]]
@@ -390,10 +444,26 @@ with `python3 review/build_review.py`; verify with
  @import url('https://fonts.googleapis.com/css2?family=Cutive&display=swap');
 -@import url('https://scp-wiki-cn.wikidot.com/theme:waxed-oxidized-cut-copper-slab/code/1');
 +
++#page-content > h1 {
++    margin-top: 3rem;
++}
++
++#page-content > h2 {
++    margin-top: 2rem;
++}
++
  
  :root {
      --header-logo: url("https://ah-sandbox.wikidot.com/local--files/pictures/PixelSCP_3D.svg");
-@@ -289,10 +285,10 @@
+```
+
+</details>
+
+<details>
+<summary>Section 3 — original 289–298 · candidate 295–304 · +3/−3 · residual</summary>
+
+```diff
+@@ -289,10 +295,10 @@
  
      --four-color: var(--gold) !important;
  
@@ -407,7 +477,15 @@ with `python3 review/build_review.py`; verify with
  
      --sbi: max(1dvh, 1dvw);
  
-@@ -732,4 +728,20 @@
+```
+
+</details>
+
+<details>
+<summary>Section 4 — original 732–735 · candidate 738–757 · +16/−0 · supplement</summary>
+
+```diff
+@@ -732,4 +738,20 @@
      animation: none;
  }
  /{no-anim} */
@@ -429,3 +507,5 @@ with `python3 review/build_review.py`; verify with
 +| theme= https://sigma10-jp-test.wdfiles.com/local--code/theme%3Awaxed-oxidized-cut-copper-slab-jp/1
 +]]
 ```
+
+</details>

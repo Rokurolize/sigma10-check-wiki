@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:ultimate-reader-jp — origin CN, population #241 [GOSIGN2-LEDGER (b) row 241]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now fa7fee42f90f1868758a06f4e90aa4bd7fa2fb976990b8c7ad20d5a55a0db062); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 5d6fa9440ebc42f79a9709f257edbb60e1e67db570d37402ab0b52f4f328e651); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 3 errors / 1 warn / 1 info (pseudo-ref×3); standing classes dispositioned in register c1 [T1-ROWS row 206; GOSIGN2-LEDGER (b) row 241]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page-overflow 778px at 320/375/768 (page) and 790px at 320/375/768 (sample) + runtime-hotlink site-theme chain; sample credit-modal (preview-form); T3 re-run, no new screenshot-grounded visual finding; chromium-only coverage (no WebKit verdict). [RENDER-ROWS-G (CN16)]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 240, source LOCALIZE-S2-E]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 240]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 241]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:ultimate-reader-jp.txt sha256:fa7fee42f90f1868758a06f4e90aa4bd7fa2fb976990b8c7ad20d5a55a0db062; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit f4488f2d2948824238a2d06479f104f4aab0cf5d; candidate file pages/theme:ultimate-reader-jp.txt sha256:5d6fa9440ebc42f79a9709f257edbb60e1e67db570d37402ab0b52f4f328e651; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -179,6 +179,12 @@ Candidate L110–111 import Noto Sans JP and Noto Serif JP; the porter comment (
 ## Appendix — residue blocks
 
 None: classification.json records zero residue-tier blocks for this pair (24 specific / 6 heuristic / 0 residue). The one heuristic block that is not a translation, B27 (original L126–128 → candidate L126, DUPIMPORT-DEL-labeled), is adjudicated in section 3 as the import relocation's removal half.
+
+### Post-package repairs (REFRESH3-H)
+
+The items above describe this package as built. The repair recorded below postdates the package; `candidate.txt` has been recopied from the current canonical `pages/theme:ultimate-reader-jp.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**FIX-MP12 item 2 (a)(b)(c) — credit author, defaults listing, JP faces applied (landing `f4488f2d2948824238a2d06479f104f4aab0cf5d`, "pages: skipos delivered channel, the-other-side fonts and subtitle, M-pure-12 repairs", 2026-11-17; record `FIX-MP12.md`).** Three changes, +29/−4 by git numstat. (a) The credit deferral is resolved: L20 `**著作権者:** 原語版ページの作成者に同じ（scp-wiki-cn の theme:ultimate-reader）` → `**著作権者:** Dr Hormress`, and the license-box L1022 `|author=scp-wiki-cn theme:ultimate-reader の作者]]` → `|author=Dr Hormress]]`; the banner still credits EstrellaYoshte and Woedenaz. (b) The original's 28-line `:root` defaults listing, dropped as built while its introducing sentence survived at L48, is restored in the candidate's own `[[code type="css"]]` form immediately after that sentence (new L50 onward), with values from the delivered CSS and translated comments (本文の幅 / タイトルフォント / 本文フォント / テーマカラー：…); the original's two CN header defaults are deliberately not carried because the port sets none (package §5 adjudicates that absence defensible), leaving nine entries. (c) The JP faces the port imported but never applied are now applied: L216/L217 (and the restored listing at L55/L57) read `--ur_title-font: "Noto Serif JP", "Noto Serif SC", serif;` and `--ur_body-font: "Noto Sans JP", "Noto Sans SC", sans-serif;` — JP face first, SC fallback, mirroring the original's application of its SC faces. Checker 3/1/1 before and after; no new class (i). (FIX-MP12's acceptance summary quotes +31/−4 for this file; git numstat is +29/−4.)
 
 ## Change set outside the two diffed files
 
