@@ -29,7 +29,7 @@ Classifier: classify_hunks.py 0.1.0; signature table 2026-11-17.1; patterns comm
 | Fixed after the localize check | The duplicate `interwiki-style` priority (FIX4-IWB, commit 5559209: priority=1 → 3, one line) and the translator-attribution normalization (FIX-CREDIT-D, commit 1869877) |
 | Standing items | **DISPOSITIONED** — T1 pseudo-ref×4 (draft-host lines, classes (ii)/(iii)); the #6 interwiki registration form as a staff-confirmation item; license confirmation for the two images and mcdLogo.css at posting |
 | Coverage caveat | The render row's sample machine verdict is missing after one retry (page-open failure, documented in the row); the sample T3 rests on surviving screenshots only |
-| Flagged by this package | The usage exhibit's self-reference names the plain slug (candidate L39) — see the Per-theme record |
+| Flagged by this package | The usage exhibit's self-reference named the plain slug (candidate L39), since completed to the `-jp` posting name by the usage sweep (b5cb724) — see the Per-theme record |
 | Go-sign basis | COMPLETION-REPORT.md §10 (go-sign issued; 81 FIXED / 26 DISPOSITIONED / 0 OPEN across the sweep) |
 | Named exception | None for this theme (the sweep's single named exception is theme:amethyst-v2, which has no candidate) |
 
@@ -87,10 +87,10 @@ Counts: 9 blocks — 9 specific (100%), 0 heuristic, 0 residue, 0 skipped. The s
 
 ### 2. Includes and components
 
-- **What:** The candidate's include list (grep): the JP BHL theme page (L1), the interwiki-style frame (L7–10), the dark-sidebar component (L12), the credit pair (L21/L30), the escaped usage pair (L38–39), the theme-squares component repointed to `:scp-jp:` (cand L48–), and the license-box pair (L228/L247). Changes: (a) theme-squares repointed `:scp-wiki:` → `:scp-jp:` with its parameters carried and its color names translated (アイザベリン, ブラックコーヒー, オーキッド, ビザンティン, ロイヤル, ティリアン); (b) bhl-dark-sidebar repointed and moved from the tail (orig L218, outside the gate) into the head frame (cand L12, outside the gate in the same relative sense — before the gate opens); (c) the usage exhibit's escaped includes repointed to `:scp-jp:` — with one survivor defect, the self-reference at cand L39, flagged in the Per-theme record. No `:scp-wiki:` include remains (grep: none). No T8 swap was needed; ruling 4 does not engage.
+- **What:** The candidate's include list (grep): the JP BHL theme page (L1), the interwiki-style frame (L7–10), the dark-sidebar component (L12), the credit pair (L21/L30), the escaped usage pair (L38–39), the theme-squares component repointed to `:scp-jp:` (cand L48–), and the license-box pair (L228/L247). Changes: (a) theme-squares repointed `:scp-wiki:` → `:scp-jp:` with its parameters carried and its color names translated (アイザベリン, ブラックコーヒー, オーキッド, ビザンティン, ロイヤル, ティリアン); (b) bhl-dark-sidebar repointed and moved from the tail (orig L218, outside the gate) into the head frame (cand L12, outside the gate in the same relative sense — before the gate opens); (c) the usage exhibit's escaped includes repointed to `:scp-jp:` — the self-reference at cand L39 was completed to the `-jp` posting name by the sweep (b5cb724), closing the flag in the Per-theme record. No `:scp-wiki:` include remains (grep: none). No T8 swap was needed; ruling 4 does not engage.
 - **Why:** P1: foreign-site includes are repointed to the JP counterpart that actually exists on scp-jp (KB-15); both components have JP ports.
 - **Verify:** `grep -n '\[\[include' original.txt candidate.txt` and compare the lists.
-- **Disposition:** Standing, with the cand L39 self-reference flagged (Per-theme record).
+- **Disposition:** Standing; the cand L39 self-reference flag is closed by the sweep repair (b5cb724; Per-theme record, item 1).
 
 ### 3. Delivery and code loading
 
@@ -150,10 +150,10 @@ Counts: 9 blocks — 9 specific (100%), 0 heuristic, 0 residue, 0 skipped. The s
 
 ### 11. Dispositions and exceptions
 
-- **What:** Every finding not fixed in the candidate, in one place. (1) The candidate's draft-host lines (cand L4, L9, L92, L110–111): T1 pseudo-ref×4 as extracted in T1-ROWS row 67 — DISPOSITIONED, classes (ii)/(iii) (posting rewrites the own-code host to scp-jp.wdfiles.com and re-hosts the own attachments; GOSIGN2-LEDGER (c1) pseudo-ref entry). (2) The #6 interwiki registration form: DISPOSITIONED as a staff-confirmation form item (ledger group entry); its display-relevant half (the duplicate priority) is FIXED. (3) The asset re-hosting and the license confirmations for mcdpride.png, mcd.png and mcdLogo.css: posting-time items recorded in LOCALIZE-ROWS row 62, with the confirmation need stated in the candidate's own license box. (4) The render row's missing sample machine verdict: a coverage caveat, not a finding (section 12). (5) FLAGGED by this package, not dispositioned: the usage exhibit's plain-slug self-reference (cand L39) — see the Per-theme record. No item for this theme is left as an unexplained exception.
+- **What:** Every finding not fixed in the candidate, in one place. (1) The candidate's draft-host lines (cand L4, L9, L92, L110–111): T1 pseudo-ref×4 as extracted in T1-ROWS row 67 — DISPOSITIONED, classes (ii)/(iii) (posting rewrites the own-code host to scp-jp.wdfiles.com and re-hosts the own attachments; GOSIGN2-LEDGER (c1) pseudo-ref entry). (2) The #6 interwiki registration form: DISPOSITIONED as a staff-confirmation form item (ledger group entry); its display-relevant half (the duplicate priority) is FIXED. (3) The asset re-hosting and the license confirmations for mcdpride.png, mcd.png and mcdLogo.css: posting-time items recorded in LOCALIZE-ROWS row 62, with the confirmation need stated in the candidate's own license box. (4) The render row's missing sample machine verdict: a coverage caveat, not a finding (section 12). (5) FLAGGED by this package and since repaired: the usage exhibit's plain-slug self-reference (cand L39) — see the Per-theme record; the sweep (b5cb724) completed the `-jp` posting name. No item for this theme is left as an unexplained exception.
 - **Why:** A disposition is a decision with grounds, not an omission; this section exists so the full set can be audited in one place.
 - **Verify:** Each item names its deciding register above; the KB IDs resolve in patterns/ at commit 9c5e9079afb01d30cb9fc4ef9d714e5591eb2ffa.
-- **Disposition:** DISPOSITIONED (items 1–3); item 4 recorded; item 5 flagged for the repair sweep.
+- **Disposition:** DISPOSITIONED (items 1–3); item 4 recorded; item 5 was flagged with evidence and has since been repaired by the sweep (b5cb724), closing the flag; the frozen ledger verdict stands and the stamp reads STALE against it by design.
 
 ### 12. Verification
 
@@ -164,9 +164,9 @@ Counts: 9 blocks — 9 specific (100%), 0 heuristic, 0 residue, 0 skipped. The s
 
 ## Per-theme record
 
-### Item 1 — the usage exhibit names a page that will not exist (flagged by this package)
+### Item 1 — the usage exhibit names a page that will not exist (repaired)
 
-The usage exhibit's second line reads `> @@[[include :scp-jp:theme:black-market]]@@` (cand L39). The original's line names `:scp-wiki:theme:black-market` — correct on its own wiki. The port repointed the site prefix to `:scp-jp:` but kept the plain slug; the candidate itself posts as theme:black-market-jp, so the exhibit instructs readers to include a page that will not exist under that name on scp-jp. The first exhibit line (cand L38, `:scp-jp:theme:black-highlighter-theme`) is not an instance: that is the JP BHL page's actual name. No register charges the line. This package flags it for the population sweep repairing this family; the candidate is not edited here (review packages never edit candidates).
+As built, the usage exhibit's second line read `> @@[[include :scp-jp:theme:black-market]]@@` (cand L39). The original's line names `:scp-wiki:theme:black-market` — correct on its own wiki. The port repointed the site prefix to `:scp-jp:` but kept the plain slug; the candidate posts as theme:black-market-jp, so the exhibit instructed readers to include a page that will not exist under that name on scp-jp. The first exhibit line (cand L38, `:scp-jp:theme:black-highlighter-theme`) is not an instance: that is the JP BHL page's actual name. No register charged the line. The usage-example population sweep completed the reference to `> @@[[include :scp-jp:theme:black-market-jp]]@@` on the same line (sweep report SWEEP-USAGE.md in R/review-scout/; canonical commit b5cb724), one of its 287 repairs across 157 candidates, and U-3's batch report (BATCH-U3.md, flag F1) independently recorded the same line. This package documents the corrected candidate; its stamp reads STALE against the pre-repair verdict, by design. The U-3 repair landing (FIX-U3.md, canonical commit 49cfb90) touched only bloodraven and black-serpent — this theme's U-3 involvement was the sweep line, not that landing.
 
 ### Item 2 — wave attribution, checked against the bytes
 

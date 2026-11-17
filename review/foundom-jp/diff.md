@@ -5,166 +5,38 @@ candidate.txt in this directory; do not hand-edit it. Regenerate
 with `python3 review/build_review.py`; verify with
 `python3 review/build_review.py --check`.
 
-Tier 2 format (large diff): summary header, change-block
-index, then the full diff in collapsed sections. Purely
-mechanical sections are grouped into one collapsed section
-at the end. Auto-class labels are heuristic (token-level
-normalization only); the package README.md carries the
-adjudicated explanation.
-
 | | Lines |
 |---|---|
 | original.txt | 1007 |
-| candidate.txt | 951 |
-| Added | +142 |
-| Review-stage comments | 0 of the +142 added lines |
-| Removed | -198 |
-| Changed | 340 |
-| Change blocks | 80 |
-| Diff sections (context 3) | 5 |
-
-## Changed lines by auto-class (heuristic)
-
-| Auto-class | Blocks | Changed lines |
-|---|---|---|
-| mechanical | 2 | 4 |
-| translation | 35 | 126 |
-| supplement | 2 | 26 |
-| residual | 41 | 184 |
-
-## Change-block index
-
-| # | Section | Original | Candidate | +/− | Auto-class | Gist |
-|---|---|---|---|---|---|---|
-| 1 | 1 | 1–5 | 1–1 | +1/−5 | residual | [[include theme:parallel-jp]] |
-| 2 | 1 | 7–11 | 3–3 | +1/−5 | residual | [[iftags +テーマ]] |
-| 3 | 1 | 13–20 | 5–14 | +10/−8 | supplement | [[include :scp-jp:credit:start-preview]] |
-| 4 | 1 | 22–28 | 16–16 | +1/−7 | residual | これは[[[letters\|Lettersエンターテインメント]]]のGoIフォーマット用に作成されたテーマです。[[[theme:parallel\|Pa… |
-| 5 | 1 | 30–61 | 18–19 | +2/−32 | residual | [[div class="code"]] |
-| 6 | 1 | 64–64 | 22–22 | +1/−1 | residual | 財団標準の配色を使用する場合は、以下のコードでこのテーマを導入してください。 |
-| 7 | 1 | 66–67 | 24–25 | +2/−2 | residual | [[div class="code"]] |
-| 8 | 1 | 70–93 | 28–28 | +1/−24 | residual | このテーマのトップナビゲーションバーはSCP-CN Wiki向けに設計されています。他のWikiで使用する場合は、各Wikiのトップナビゲーションバーに合… |
-| 9 | 1 | 98–98 | 33–33 | +1/−1 | translation | + ページ要素 |
-| 10 | 1 | 100–100 | 35–35 | +1/−1 | translation | ++ 基本要素 |
-| 11 | 1 | 102–102 | 37–37 | +1/−1 | translation | [[collapsible show="+ 基本要素" hide="- 基本要素"]] |
-| 12 | 1 | 104–104 | 39–39 | +1/−1 | translation | > これは引用ブロックです |
-| 13 | 1 | 106–106 | 41–41 | +1/−1 | translation | >> 入れ子の引用 |
-| 14 | 1 | 109–109 | 44–44 | +1/−1 | translation | 暗色引用ブロック |
-| 15 | 1 | 116–116 | 51–51 | +1/−1 | residual | [[include :scp-jp:component:image-block name=https://ah-sandbox.wdfiles.com/l… |
-| 16 | 1 | 118–118 | 53–53 | +1/−1 | residual | 4個から6個のハイフン「@@----@@」「@@-----@@」「@@------@@」[[footnote]][[*user Placeholder M… |
-| 17 | 1 | 120–120 | 55–55 | +1/−1 | translation | 見出しは、行頭に1個から6個のプラス記号「+」を入力すると作成できます。 |
-| 18 | 1 | 122–122 | 57–57 | +1/−1 | translation | +* レベル1見出し |
-| 19 | 1 | 124–124 | 59–59 | +1/−1 | translation | ++* レベル2見出し |
-| 20 | 1 | 126–126 | 61–61 | +1/−1 | translation | +++* レベル3見出し |
-| 21 | 1 | 128–128 | 63–63 | +1/−1 | translation | ++++* レベル4見出し |
-| 22 | 1 | 130–130 | 65–65 | +1/−1 | translation | +++++* レベル5見出し |
-| 23 | 1 | 132–132 | 67–67 | +1/−1 | translation | ++++++* レベル6見出し |
-| 24 | 1 | 137–138 | 72–73 | +2/−2 | residual | [[tab タブ]] |
-| 25 | 1 | 140–141 | 75–76 | +2/−2 | translation | [[tab タブ]] |
-| 26 | 1 | 143–143 | 78–78 | +1/−1 | translation | なんとも凝った作りですね。 |
-| 27 | 1 | 145–146 | 80–81 | +2/−2 | residual | [[tab 長いタブ]] |
-| 28 | 1 | 148–148 | 83–83 | +1/−1 | residual | これは長いタブです。たくさんの文字があります。 |
-| 29 | 1 | 150–150 | 85–85 | +1/−1 | residual | これは長いタブです。たくさんの文字があります。 |
-| 30 | 1 | 152–152 | 87–87 | +1/−1 | residual | これは長いタブです。たくさんの文字があります。 |
-| 31 | 1 | 154–154 | 89–89 | +1/−1 | residual | これは長いタブです。たくさんの文字があります。 |
-| 32 | 1 | 156–156 | 91–91 | +1/−1 | residual | これは長いタブです。たくさんの文字があります。 |
-| 33 | 1 | 158–158 | 93–93 | +1/−1 | residual | これは長いタブです。たくさんの文字があります。 |
-| 34 | 1 | 160–160 | 95–95 | +1/−1 | residual | これは長いタブです。たくさんの文字があります。 |
-| 35 | 1 | 162–162 | 97–97 | +1/−1 | residual | これは長いタブです。たくさんの文字があります。 |
-| 36 | 1 | 164–164 | 99–99 | +1/−1 | residual | これは長いタブです。たくさんの文字があります。 |
-| 37 | 1 | 166–166 | 101–101 | +1/−1 | residual | これは長いタブです。たくさんの文字があります。 |
-| 38 | 1 | 168–168 | 103–103 | +1/−1 | residual | これは長いタブです。たくさんの文字があります。 |
-| 39 | 1 | 170–171 | 105–106 | +2/−2 | residual | [[tab このタブには、どういうわけか妙に長い名前が付いています。なぜでしょう？本当に変ですね。]] |
-| 40 | 1 | 173–173 | 108–108 | +1/−1 | residual | [[tab 空のタブ]] |
-| 41 | 1 | 175–175 | 110–110 | +1/−1 | residual | [[tab 空のタブ]] |
-| 42 | 1 | 177–177 | 112–112 | +1/−1 | residual | [[tab 空のタブ]] |
-| 43 | 1 | 179–179 | 114–114 | +1/−1 | residual | [[tab 空のタブ]] |
-| 44 | 1 | 181–182 | 116–117 | +2/−2 | residual | [[tab 空のタブ]] |
-| 45 | 1 | 186–188 | 121–123 | +3/−3 | translation | \|\|~ これは \|\|~ 表です \|\| |
-| 46 | 1 | 195–195 | 130–130 | +1/−1 | translation | ++ 応用要素 |
-| 47 | 1 | 197–197 | 132–132 | +1/−1 | translation | +++ 評価モジュール付き見出し |
-| 48 | 1 | 201–202 | 136–137 | +2/−2 | residual | @@[[span class="title"]]見出しテキスト[[/span]]@@ |
-| 49 | 1 | 206–206 | 141–141 | +1/−1 | translation | +++ フロートボックス |
-| 50 | 2 | 214–214 | 149–149 | +1/−1 | residual | [[image https://ah-sandbox.wikidot.com/local--files/secret%3Asuper-crush-pers… |
-| 51 | 2 | 216–219 | 151–154 | +4/−4 | translation | \|\|~ ジャンル \|\| 格闘ゲーム \|\| |
-| 52 | 2 | 222–222 | 157–157 | +1/−1 | translation | [[collapsible show="+ コードを展開" hide="- コードを隠す"]] |
-| 53 | 3 | 230–230 | 165–165 | +1/−1 | residual | @@[[image https://ah-sandbox.wikidot.com/local--files/secret%3Asuper-crush-pe… |
-| 54 | 3 | 232–235 | 167–170 | +4/−4 | translation | @@\|\|~ ジャンル \|\| 格闘ゲーム \|\|@@ |
-| 55 | 3 | 240–240 | 175–175 | +1/−1 | translation | {{@@[[div class="float-box box-left"]]@@}}で左寄せのフロートボックスを、{{@@[[div class="flo… |
-| 56 | 3 | 242–242 | 177–177 | +1/−1 | translation | これはダミーテキストです。テーマの余白、行送り、折り返し、フロートボックス周辺の本文回り込みを確認するために置いています。長めの段落を配置すると、画像や表… |
-| 57 | 3 | 244–244 | 179–179 | +1/−1 | residual | さらに別のダミーテキストです。日本語と英数字が混在する段落でも、文字詰め、行間、句読点の位置、リンクや強調表示の見え方が破綻しないかを確認します。Foun… |
-| 58 | 3 | 248–248 | 183–183 | +1/−1 | residual | +++ Wikiヘッダー |
-| 59 | 3 | 250–250 | 185–185 | +1/−1 | residual | カスタムWikiヘッダーを作成できます。以下のコードを使用してください。 |
-| 60 | 3 | 254–254 | 189–189 | +1/−1 | translation | @@[[image 画像リンク]]@@ |
-| 61 | 3 | 258–258 | 193–193 | +1/−1 | translation | この操作により、対応する画像がページ内容領域の上部に表示されます。 |
-| 62 | 3 | 262–262 | 197–197 | +1/−1 | translation | ++ Charaコンポーネント |
-| 63 | 3 | 264–264 | 199–199 | +1/−1 | translation | これはアイコン付きのフロート型折りたたみブロックを生成する、非常に複雑なコンポーネントです。具体的な使用例は[[[pedialpha-super-crus… |
-| 64 | 3 | 266–266 | 201–201 | +1/−1 | translation | +++ 構造 |
-| 65 | 3 | 268–268 | 203–203 | +1/−1 | residual | Charaコンポーネントは、外側コンテナと再利用可能な子コンテナで構成されます。外側コンテナはインライン引数を持つ{{@@[[div]]@@}}要素で、子… |
-| 66 | 3 | 271–271 | 206–206 | +1/−1 | residual | @@[[div class="charaContainer" style="@@[[span style="color: red;"]]@@flex-wr… |
-| 67 | 3 | 274–274 | 209–209 | +1/−1 | mechanical | @@[[include :scp-jp:theme:foundom inc-chara-start=--]@@[[span style="color: g… |
-| 68 | 3 | 276–276 | 211–211 | +1/−1 | translation | @@++ エージェント八川@@ |
-| 69 | 3 | 278–278 | 213–213 | +1/−1 | mechanical | @@[[include :scp-jp:theme:foundom inc-chara-end=--]]] @@ |
-| 70 | 3 | 284–284 | 219–219 | +1/−1 | residual | 上記の**黒色**部分が外側コンテナです。このコンポーネントを使用するには、このコンテナですべての子コンテナを包む必要があります。##blue\|**青色*… |
-| 71 | 3 | 286–291 | 221–221 | +1/−6 | residual | +++ ##red\|外側コンテナ引数## |
-| 72 | 3 | 293–295 | 223–223 | +1/−3 | residual | 外側コンテナ引数はCSS引数を使用します。引数名と値はコロンで接続し、異なる引数はセミコロンで区切ります。具体的な形式は前述の例に従ってください。既定値が… |
-| 73 | 3 | 298–311 | 226–239 | +14/−14 | translation | \|\|~ プロパティ名 \|\|~ 説明 \|\|~ 既定値 \|\| |
-| 74 | 3 | 314–314 | 242–242 | +1/−1 | translation | +++ ##red\|子コンテナ引数## |
-| 75 | 3 | 316–316 | 244–244 | +1/−1 | translation | 子コンテナ引数はinclude引数を使用します。引数名と値は等号で接続し、異なる引数は縦棒で区切ります。具体的な形式は前述の例に従ってください。既定値がな… |
-| 76 | 3 | 319–325 | 247–253 | +7/−7 | translation | \|\|~ プロパティ名 \|\|~ 説明 \|\|~ 既定値 \|\| |
-| 77 | 3 | 331–331 | 259–259 | +1/−1 | translation | + ソースコード |
-| 78 | 3 | 333–334 | 261–273 | +13/−2 | residual | [[collapsible show="+ ソースコードを表示" hide="- ソースコードを隠す"]] |
-| 79 | 4 | 969–971 | — | +0/−3 | residual | [[/code]] |
-| 80 | 5 | — | 944–951 | +8/−0 | supplement | [[module css]] |
-
-## Full diff
-
-<details>
-<summary>Section 1 — original 1–209 · candidate 1–144 · +68/−133 · residual, supplement, translation</summary>
+| candidate.txt | 984 |
+| Added | +178 |
+| Review-stage comments | 0 of the +178 added lines |
+| Removed | -215 |
+| Hunks | 7 |
 
 ```diff
-@@ -1,209 +1,144 @@
--[!-- {$inc-css}
--[[module CSS]]
--@import url("https://scp-wiki-cn.wikidot.com/theme:foundom/code/1");
--[[/module]]
--[!-- --]
+--- original.txt
++++ candidate.txt
+@@ -1,12 +1,14 @@
 +[[include theme:parallel-jp]]
++
+ [!-- {$inc-css}
+ [[module CSS]]
+-@import url("https://scp-wiki-cn.wikidot.com/theme:foundom/code/1");
++@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Afoundom-jp/1");
+ [[/module]]
+ [!-- --]
  
--[!-- {$inc-color}
--[[module CSS]]
+ [!-- {$inc-color}
+ [[module CSS]]
 -@import url("https://scp-wiki-cn.wikidot.com/theme:foundom/code/2");
--[[/module]]
--[!-- --]
-+[[iftags +テーマ]]
++@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Afoundom-jp/2");
+ [[/module]]
+ [!-- --]
  
--[!-- {$inc-chara-start}
--[[div class="chara id-{$id}" style="--left: {$x}; --top: {$y}; {$style}"]]
--[[collapsible show="{$id}" hide="{$id}"]]
--[[div class="charaInfo"]]
--[[div class="charaInfoContent"]]
--[[div class="charaImage move-{$ani}" style="{$imgstyle}"]]
--[[/div]]
--[!-- --]
-+[[include :scp-jp:credit:start-preview]]
-+**タイトル:** Foundom版式
-+**翻訳責任者:** AI
-+**翻訳年:** 2026
-+**原題:** Foundom版式
-+**著作権者:** Dr Hormress
-+**作成年:** 2024
-+**初訳時参照リビジョン:** 7
-+**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:foundom Foundom版式]
-+[[include :scp-jp:credit:end-preview]]
- 
--[!-- {$inc-chara-end}
--~~~~
--[[/div]]
--[[/div]]
--[[/collapsible]]
--[[/div]]
--[!-- --]
-+これは[[[letters|Lettersエンターテインメント]]]のGoIフォーマット用に作成されたテーマです。[[[theme:parallel|Parallel]]]を基に、Fandom風のWikiスタイルを再現できます。このテーマを導入するには、以下のコードを使用してください。
+@@ -27,183 +29,145 @@
+ [[/div]]
+ [!-- --]
  
 -[[iftags +版式]]
 -[[module CSS]]
@@ -198,19 +70,14 @@ adjudicated explanation.
 -[[div class="meta-title wiki-title"]]
 -[[span class="title"]]{{##rgb(255, 199, 59)|@@//@@##}}Foundom 版式[[/span]]
 -[[module rate]]
-+[[div class="code"]]
-+@@[[include :scp-jp:theme:foundom]]@@
- [[/div]]
- 
+-[[/div]]
+-
 -[[div style="display: grid; grid-template-columns: 1.5fr 5fr; grid-template-areas: 'a b'; max-width: 44rem; margin: auto; align-items: center;"]]
-+財団標準の配色を使用する場合は、以下のコードでこのテーマを導入してください。
- 
+-
 -[[div style="grid-area: a;"]]
 -[[image https://scpsandboxcn.wdfiles.com/local--files/collab:letters/lettersV3.png]]
-+[[div class="code"]]
-+@@[[include :scp-jp:theme:foundom inc-css=--]]@@
- [[/div]]
- 
+-[[/div]]
+-
 -[[div class="ctn" style="position: relative; opacity: 0.85; grid-area: b;"]]
 -[[image https://ah-sandbox.wikidot.com/local--files/secret:super-crush-personnels/parallel-theme-logo-y.svg]]
 -[[div class="hover" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"]]
@@ -221,35 +88,59 @@ adjudicated explanation.
 -[[/div]]
 -
 -这是为[[[letters|Letters娱乐]]]的GoI格式制作的版式，基于[[[theme:parallel|平行]]]，可用于模拟Fandom维基样式。使用以下代码引入此版式：
--
--[[div class="code"]]
++[[iftags +テーマ]]
++
++[[include :scp-jp:credit:start-preview]]
++**タイトル:** Foundom版式
++**翻訳責任者:** AI
++**翻訳年:** 2026
++**原題:** Foundom版式
++**著作権者:** Dr Hormress
++**作成年:** 2024
++**初訳時参照リビジョン:** 7
++**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:foundom Foundom版式]
++[[include :scp-jp:credit:end-preview]]
++
++これは[[[letters|Lettersエンターテインメント]]]のGoIフォーマット用に作成されたテーマです。[[[theme:parallel|Parallel]]]を基に、Fandom風のWikiスタイルを再現できます。このテーマを導入するには、以下のコードを使用してください。
+ 
+ [[div class="code"]]
 -@@[[include :scp-wiki-cn:theme:parallel]]@@
 -@@[[include :scp-wiki-cn:theme:foundom inc-css=--] | inc-color=--]]]@@
 -[[/div]]
 -
 -若需使用基金会经典配色，使用以下代码引入此版式：
--
--[[div class="code"]]
++@@[[include :scp-jp:theme:foundom-jp]]@@
++[[/div]]
++
++財団標準の配色を使用する場合は、以下のコードでこのテーマを導入してください。
+ 
+ [[div class="code"]]
 -@@[[include :scp-wiki-cn:theme:parallel]]@@
 -@@[[include :scp-wiki-cn:theme:foundom inc-css=--]]]@@
 -[[/div]]
 -
 -此版式的顶部导航栏样式是为SCP-CN Wiki特别设计的，在其他Wiki使用时，请针对相应Wiki的顶部导航栏进行重新适配。
++@@[[include :scp-jp:theme:foundom-jp inc-css=--]]@@
++[[/div]]
++
 +このテーマのトップナビゲーションバーはSCP-CN Wiki向けに設計されています。他のWikiで使用する場合は、各Wikiのトップナビゲーションバーに合わせて再調整してください。
  
  @@ @@
  @@ @@
  
 -+ 页面元素
-++ ページ要素
- 
+-
 -++ 基础元素
-+++ 基本要素
- 
+-
 -[[collapsible show="+ 基础元素" hide="- 基础元素"]]
-+[[collapsible show="+ 基本要素" hide="- 基本要素"]]
- 
+-
 -> 这是引用块
+++ ページ要素
++
++++ 基本要素
++
++[[collapsible show="+ 基本要素" hide="- 基本要素"]]
++
 +> これは引用ブロックです
  > ----
 ->> 嵌套引用
@@ -265,30 +156,38 @@ adjudicated explanation.
  [[/div]]
  
 -[[include :scp-wiki-cn:component:image-block name=https://ah-sandbox.wdfiles.com/local--files/hormress-s-logos/ARED_2.svg|caption=随处可见的图像|width=280px]]
-+[[include :scp-jp:component:image-block name=https://ah-sandbox.wdfiles.com/local--files/hormress-s-logos/ARED_2.svg|caption=どこにでもありそうな画像|width=280px]]
- 
+-
 -可通过四至六个连字符“@@----@@”、“@@-----@@”或“@@------@@”[[footnote]][[*user Placeholder McD]]是哪位来着？[[/footnote]]创建水平分割线。若它未被放在其他部件（诸如引用块）中，则会左右延伸贯穿页面。
-+4個から6個のハイフン「@@----@@」「@@-----@@」「@@------@@」[[footnote]][[*user Placeholder McD]]って誰でしたっけ？[[/footnote]]で水平線を作成できます。引用ブロックなどの別要素内に置かれていない場合、水平線は左右に伸びてページを横断します。
- 
+-
 -标题可通过在一行字起始处输入 1 至 6 个加号“+”来创建。
-+見出しは、行頭に1個から6個のプラス記号「+」を入力すると作成できます。
- 
+-
 -+* 1 级标题
-++* レベル1見出し
- 
+-
 -++* 2 级标题
-+++* レベル2見出し
- 
+-
 -+++* 3 级标题
-++++* レベル3見出し
- 
+-
 -++++* 4 级标题
-+++++* レベル4見出し
- 
+-
 -+++++* 5 级标题
-++++++* レベル5見出し
- 
+-
 -++++++* 6 级标题
++[[include :scp-jp:component:image-block name=https://ah-sandbox.wdfiles.com/local--files/hormress-s-logos/ARED_2.svg|caption=どこにでもありそうな画像|width=280px]]
++
++4個から6個のハイフン「@@----@@」「@@-----@@」「@@------@@」[[footnote]][[*user Placeholder McD]]って誰でしたっけ？[[/footnote]]で水平線を作成できます。引用ブロックなどの別要素内に置かれていない場合、水平線は左右に伸びてページを横断します。
++
++見出しは、行頭に1個から6個のプラス記号「+」を入力すると作成できます。
++
+++* レベル1見出し
++
++++* レベル2見出し
++
+++++* レベル3見出し
++
++++++* レベル4見出し
++
+++++++* レベル5見出し
++
 +++++++* レベル6見出し
  
  @@ @@
@@ -301,48 +200,60 @@ adjudicated explanation.
  [[/tab]]
 -[[tab 分页]]
 -嘿看，这里有更多的文本。
+-
+-多么精巧绝伦。
 +[[tab タブ]]
 +ほら、ここにはさらに文章があります。
- 
--多么精巧绝伦。
++
 +なんとも凝った作りですね。
  [[/tab]]
 -[[tab 长 Tab]]
 -这是一个长的 tab，它有很多文字。
+-
+-这是一个长的 tab，它有很多文字。
+-
+-这是一个长的 tab，它有很多文字。
+-
+-这是一个长的 tab，它有很多文字。
+-
+-这是一个长的 tab，它有很多文字。
+-
+-这是一个长的 tab，它有很多文字。
+-
+-这是一个长的 tab，它有很多文字。
+-
+-这是一个长的 tab，它有很多文字。
+-
+-这是一个长的 tab，它有很多文字。
+-
+-这是一个长的 tab，它有很多文字。
+-
+-这是一个长的 tab，它有很多文字。
+-
+-这是一个长的 tab，它有很多文字。
 +[[tab 長いタブ]]
 +これは長いタブです。たくさんの文字があります。
- 
--这是一个长的 tab，它有很多文字。
++
 +これは長いタブです。たくさんの文字があります。
- 
--这是一个长的 tab，它有很多文字。
++
 +これは長いタブです。たくさんの文字があります。
- 
--这是一个长的 tab，它有很多文字。
++
 +これは長いタブです。たくさんの文字があります。
- 
--这是一个长的 tab，它有很多文字。
++
 +これは長いタブです。たくさんの文字があります。
- 
--这是一个长的 tab，它有很多文字。
++
 +これは長いタブです。たくさんの文字があります。
- 
--这是一个长的 tab，它有很多文字。
++
 +これは長いタブです。たくさんの文字があります。
- 
--这是一个长的 tab，它有很多文字。
++
 +これは長いタブです。たくさんの文字があります。
- 
--这是一个长的 tab，它有很多文字。
++
 +これは長いタブです。たくさんの文字があります。
- 
--这是一个长的 tab，它有很多文字。
++
 +これは長いタブです。たくさんの文字があります。
- 
--这是一个长的 tab，它有很多文字。
++
 +これは長いタブです。たくさんの文字があります。
- 
--这是一个长的 tab，它有很多文字。
++
 +これは長いタブです。たくさんの文字があります。
  [[/tab]]
 -[[tab 这个 tab 因为某些古怪的原因而拥有一个特别特别长的名字。我想知道为什么？这真的很奇怪。]]
@@ -382,9 +293,10 @@ adjudicated explanation.
  ----
  
 -++ 进阶元素
-+++ 応用要素
- 
+-
 -+++ 带评分模块的标题
++++ 応用要素
++
 ++++ 評価モジュール付き見出し
  
  [[div class="code"]]
@@ -401,45 +313,32 @@ adjudicated explanation.
  
  [[div class="float-box box-right" style="width: 300px;"]]
  [[div class="box-title"]]
-```
-
-</details>
-
-<details>
-<summary>Section 2 — original 211–225 · candidate 146–160 · +6/−6 · residual, translation</summary>
-
-```diff
-@@ -211,15 +146,15 @@
+@@ -211,15 +175,15 @@
  //Super Crush Personnels//
  [[/div]]
  
 -[[image https://ah-sandbox.wikidot.com/local--files/secret:super-crush-personnels/Main_Screen.png width="100%"]]
-+[[image https://ah-sandbox.wikidot.com/local--files/secret%3Asuper-crush-personnels/Main_Screen.png width="100%"]]
- 
+-
 -||~ 类型 || 格斗游戏 ||
 -||~ 平台 || PC、Letters Alphabox ||
 -||~ 开发商 || GG Studio ||
 -||~ 发行商 || Letters Entertainment ||
+-[[/div]]
+-
+-[[collapsible show="+ 展开代码" hide="- 隐藏代码"]]
++[[image https://ah-sandbox.wikidot.com/local--files/secret%3Asuper-crush-personnels/Main_Screen.png width="100%"]]
++
 +||~ ジャンル || 格闘ゲーム ||
 +||~ プラットフォーム || PC、Letters Alphabox ||
 +||~ 開発元 || GG Studio ||
 +||~ 発売元 || Letters Entertainment ||
- [[/div]]
- 
--[[collapsible show="+ 展开代码" hide="- 隐藏代码"]]
++[[/div]]
++
 +[[collapsible show="+ コードを展開" hide="- コードを隠す"]]
  [[div class="code"]]
  @@[[div class="float-box box-right" style="width: 300px;"]]@@
  @@[[div class="box-title"]]@@
-```
-
-</details>
-
-<details>
-<summary>Section 3 — original 227–337 · candidate 162–276 · +60/−56 · mechanical, residual, translation</summary>
-
-```diff
-@@ -227,111 +162,115 @@
+@@ -227,111 +191,115 @@
  @@//Super Crush Personnels//@@
  @@[[/div]]@@
  @@@@
@@ -459,20 +358,23 @@ adjudicated explanation.
  [[/collapsible]]
  
 -使用{{@@[[div class="float-box box-left"]]@@}}创建靠左的悬浮块，使用{{@@[[div class="float-box box-right"]]@@}}创建靠右的悬浮块。悬浮块内部的表格会自动隐去边框，使用{{@@[[div class="box-title"]]@@}}则可使用暗色背景的悬浮块标题。
-+{{@@[[div class="float-box box-left"]]@@}}で左寄せのフロートボックスを、{{@@[[div class="float-box box-right"]]@@}}で右寄せのフロートボックスを作成できます。フロートボックス内の表は自動的に罫線が隠れます。{{@@[[div class="box-title"]]@@}}を使うと、暗色背景のフロートボックス見出しを使用できます。
- 
+-
 -靠米约题蛋绝击错。画例济占越证另众食千持商硫喜。杨粒协面增观型客杂你一杀宗顾黑离油。职具布轻王殖杨范到门故。象哥尼课太党事己处守朝才批洲游线拉跟，花义历妒况经更虽乙速担点第。助西离季溶缩味很实师吗，亚取创去及背敌案信宽。河响据量苏富德声，贵死损量众靠审层胡对鱼简和身胡眼层万，神措天明心田父地娘儿。班较易待二呀深架尔成洋。言客里思心秋现良说。茶产轮够阳没读会善足步功编识括河。
-+これはダミーテキストです。テーマの余白、行送り、折り返し、フロートボックス周辺の本文回り込みを確認するために置いています。長めの段落を配置すると、画像や表が本文を押し出さず、画面幅が変わっても読みやすさを保てるかを確認できます。
- 
+-
 -积夫械性慢区宜调商苦。住组无殖孙弦变鱼福陆候针聚苏乡两。弦叶居道著流便亲赶工底率白地取，征门空呢考略杂影其念石花。掉伟将民他商宗专席考底季几略增学金南剂。沿余哪项所终做绝害燃治次握天乡几交极述。照级月教烈右志机高吃术白低油里相间号药。艺下她益皮怀周脸曲配假诉亚肉。型井人考些刚肥引克认祖烟地正企固足，司甲打记宁族服投权训这扩散叶叶较雷苗胞。九跳世肥末收数袁均央。兵施校报末直球营村存山足赵修导简。长钟急族没绍木采块令。
++{{@@[[div class="float-box box-left"]]@@}}で左寄せのフロートボックスを、{{@@[[div class="float-box box-right"]]@@}}で右寄せのフロートボックスを作成できます。フロートボックス内の表は自動的に罫線が隠れます。{{@@[[div class="box-title"]]@@}}を使うと、暗色背景のフロートボックス見出しを使用できます。
++
++これはダミーテキストです。テーマの余白、行送り、折り返し、フロートボックス周辺の本文回り込みを確認するために置いています。長めの段落を配置すると、画像や表が本文を押し出さず、画面幅が変わっても読みやすさを保てるかを確認できます。
++
 +さらに別のダミーテキストです。日本語と英数字が混在する段落でも、文字詰め、行間、句読点の位置、リンクや強調表示の見え方が破綻しないかを確認します。Foundomテーマの背景色、影、見出し、表、引用ブロックが本文の流れに自然に馴染むかを見るための文章です。
  
  ~~~~
  
 -+++ 维基版头
-++++ Wikiヘッダー
- 
+-
 -你可以制作一个自定义的维基版头！使用如下代码：
+++++ Wikiヘッダー
++
 +カスタムWikiヘッダーを作成できます。以下のコードを使用してください。
  
  [[div class="code"]]
@@ -488,15 +390,18 @@ adjudicated explanation.
  ----
  
 -++ Chara组件
-+++ Charaコンポーネント
- 
+-
 -这是一个**极端复杂**的组件，用于生成带有图标的悬浮折叠块，具体使用效果参见[[[pedialpha-super-crush-personnels|这篇GoI格式]]]的“角色”部分。由于组件基于一个折叠块工作，因此组件内部的折叠容器必须使用[[[colmod-magic-and-you|多重折叠组件]]]。
-+これはアイコン付きのフロート型折りたたみブロックを生成する、非常に複雑なコンポーネントです。具体的な使用例は[[[pedialpha-super-crush-personnels|このGoIフォーマット]]]の「キャラクター」節を参照してください。このコンポーネントは折りたたみブロックを基に動作するため、コンポーネント内部の折りたたみコンテナには[[[colmod-magic-and-you|多重折りたたみコンポーネント]]]を使用する必要があります。
- 
+-
 -+++ 结构
-++++ 構造
- 
+-
 -Chara组件由一个外容器和可重复使用的子容器构成。外容器是一个带有内联参数的{{@@[[div]]@@}}元素，子容器则通过两个{{@@[[include]]@@}}语法前后包裹，两者的参数设置方法并不一致。
++++ Charaコンポーネント
++
++これはアイコン付きのフロート型折りたたみブロックを生成する、非常に複雑なコンポーネントです。具体的な使用例は[[[pedialpha-super-crush-personnels|このGoIフォーマット]]]の「キャラクター」節を参照してください。このコンポーネントは折りたたみブロックを基に動作するため、コンポーネント内部の折りたたみコンテナには[[[colmod-magic-and-you|多重折りたたみコンポーネント]]]を使用する必要があります。
++
+++++ 構造
++
 +Charaコンポーネントは、外側コンテナと再利用可能な子コンテナで構成されます。外側コンテナはインライン引数を持つ{{@@[[div]]@@}}要素で、子コンテナは2つの{{@@[[include]]@@}}構文で前後を囲みます。両者では引数の設定方法が異なります。
  
  [[div class="code"]]
@@ -505,32 +410,34 @@ adjudicated explanation.
  @@@@
  [[div style="color: blue;"]]
 -@@[[include :scp-wiki-cn:theme:foundom inc-chara-start=--]@@[[span style="color: green;"]]@@ | id=1 | x=0 | y=0 | ani=8-4@@[[/span]]@@]] @@
-+@@[[include :scp-jp:theme:foundom inc-chara-start=--]@@[[span style="color: green;"]]@@ | id=1 | x=0 | y=0 | ani=8-4@@[[/span]]@@]] @@
++@@[[include :scp-jp:theme:foundom-jp inc-chara-start=--]@@[[span style="color: green;"]]@@ | id=1 | x=0 | y=0 | ani=8-4@@[[/span]]@@]] @@
  @@@@
 -@@++ 特工八川@@
 +@@++ エージェント八川@@
  @@@@
 -@@[[include :scp-wiki-cn:theme:foundom inc-chara-end=--]]] @@
-+@@[[include :scp-jp:theme:foundom inc-chara-end=--]]] @@
++@@[[include :scp-jp:theme:foundom-jp inc-chara-end=--]]] @@
  [[/div]]
  
  @@[[/div]]@@
  [[/div]]
  
 -以上**黑色**部分为外部容器，使用此组件需要用这一容器包裹所有子容器；##blue|**蓝色**##部分为子容器，对应每一个折叠块（例如文豪野拳中的每个角色，都使用了一次这段代码），外部容器是一组{{@@[[div]]@@}}语法，子容器则被两个分别标记为start和end的{{@@[[include]]@@}}语法包裹。##red|**红色**##部分为外部容器的参数，在此处设置的参数会影响到每一个子容器；##green|**绿色**##部分为子容器参数，在此处设置的参数只会影响到相对应的容器。
-+上記の**黒色**部分が外側コンテナです。このコンポーネントを使用するには、このコンテナですべての子コンテナを包む必要があります。##blue|**青色**##部分は子コンテナで、各折りたたみブロックに対応します（たとえば文豪野拳の各キャラクターには、このコードが1回ずつ使われています）。外側コンテナは一組の{{@@[[div]]@@}}構文で、子コンテナはstartとendで示された2つの{{@@[[include]]@@}}構文に囲まれます。##red|**赤色**##部分は外側コンテナの引数で、ここで設定した引数は各子コンテナすべてに影響します。##green|**緑色**##部分は子コンテナ引数で、対応するコンテナのみに影響します。
- 
+-
 -[[module CSS]]
 -div.variants th {
 -    text-align: left;
 -    font-family: var(--mono-font);
 -}
 -[[/module]]
-++++ ##red|外側コンテナ引数##
- 
+-
 -+++ ##red|外部容器参数##
 -
 -外部容器参数使用CSS参数，使用冒号连接参数名和参数值，使用分号分隔不同参数，具体格式可仿照前述示例。若无默认值且无特别说明则为必填项。
++上記の**黒色**部分が外側コンテナです。このコンポーネントを使用するには、このコンテナですべての子コンテナを包む必要があります。##blue|**青色**##部分は子コンテナで、各折りたたみブロックに対応します（たとえば文豪野拳の各キャラクターには、このコードが1回ずつ使われています）。外側コンテナは一組の{{@@[[div]]@@}}構文で、子コンテナはstartとendで示された2つの{{@@[[include]]@@}}構文に囲まれます。##red|**赤色**##部分は外側コンテナの引数で、ここで設定した引数は各子コンテナすべてに影響します。##green|**緑色**##部分は子コンテナ引数で、対応するコンテナのみに影響します。
++
+++++ ##red|外側コンテナ引数##
++
 +外側コンテナ引数はCSS引数を使用します。引数名と値はコロンで接続し、異なる引数はセミコロンで区切ります。具体的な形式は前述の例に従ってください。既定値がなく、特別な説明もないものは必須項目です。
  
  [[div class="variants" style="font-family: var(--mono-font);"]]
@@ -548,6 +455,11 @@ adjudicated explanation.
 -||~ @@--chara-image-width@@ || 展开后区域显示图片宽度 || 272px ||
 -||~ @@--chara-image-height@@ || 展开后区域显示图片高度 || 280px ||
 -||~ @@--chara-image-display@@ || 展开后区域是否显示图片，若否，则填none || block ||
+-[[/div]]
+-
+-+++ ##red|子容器参数##
+-
+-外部容器参数使用include参数，使用等于号连接参数名和参数值，使用竖线分隔不同参数，具体格式可仿照前述示例。若无默认值且无特别说明则为必填项。
 +||~ プロパティ名 ||~ 説明 ||~ 既定値 ||
 +||~ @@--chara-vertical-margin@@ || 折りたたみ展開後に表示される領域の垂直方向外側余白 || 10vh ||
 +||~ @@--chara-side-margin@@ || 折りたたみ展開後に表示される領域の水平方向外側余白 || 15vw ||
@@ -562,12 +474,10 @@ adjudicated explanation.
 +||~ @@--chara-image-width@@ || 展開後領域に表示する画像の幅 || 272px ||
 +||~ @@--chara-image-height@@ || 展開後領域に表示する画像の高さ || 280px ||
 +||~ @@--chara-image-display@@ || 展開後領域に画像を表示するかどうか。表示しない場合はnoneを指定します || block ||
- [[/div]]
- 
--+++ ##red|子容器参数##
++[[/div]]
++
 ++++ ##red|子コンテナ引数##
- 
--外部容器参数使用include参数，使用等于号连接参数名和参数值，使用竖线分隔不同参数，具体格式可仿照前述示例。若无默认值且无特别说明则为必填项。
++
 +子コンテナ引数はinclude引数を使用します。引数名と値は等号で接続し、異なる引数は縦棒で区切ります。具体的な形式は前述の例に従ってください。既定値がなく、特別な説明もないものは必須項目です。
  
  [[div class="variants" style="font-family: var(--mono-font);"]]
@@ -591,15 +501,16 @@ adjudicated explanation.
  @@@@
  
 -+ 源代码
-++ ソースコード
- 
+-
 -[[collapsible show="+ 查看源码" hide="- 隐藏源码"]]
 -[[code type="CSS"]]
+++ ソースコード
++
 +[[collapsible show="+ ソースコードを表示" hide="- ソースコードを隠す"]]
 +
 +[[/collapsible]]
 +
-+[[/iftags]
++[[/iftags]]
 +
 +----
 +
@@ -611,44 +522,38 @@ adjudicated explanation.
  @import url('https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic,hebrew,latin-ext');
  @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;700;900&display=swap');
-```
-
-</details>
-
-<details>
-<summary>Section 4 — original 966–974 · candidate 905–910 · +0/−3 · residual</summary>
-
-```diff
-@@ -966,9 +905,6 @@
-         background-position: calc(-1 * ((var(--left) + 8) * var(--sprite-width))) calc(-1 * (var(--top) * var(--sprite-height)));
-     }
+@@ -341,9 +309,9 @@
  }
--[[/code]]
--
+ 
+ :root {
+-    --header-font: "Rubik", "Noto Sans SC", sans-serif;
++    --header-font: "Rubik", "Noto Sans JP", sans-serif;
+     --UI-font: var(--body-font);
+-    --body-font: "Rubik", "Noto Sans SC", sans-serif;
++    --body-font: "Rubik", "Noto Sans JP", sans-serif;
+ 
+     --header-width: 4rem;
+ 
+@@ -968,7 +936,7 @@
+ }
+ [[/code]]
+ 
 -[[code type="CSS"]]
++[[code type="css"]]
  /* LETTERS Ver. */
  :root {
      --header-border-width: 0.25rem;
-```
-
-</details>
-
-<details>
-<summary>Section 5 — original 1005–1007 · candidate 941–951 · +8/−0 · supplement</summary>
-
-```diff
-@@ -1005,3 +941,11 @@
+@@ -1005,3 +973,12 @@
  [[/collapsible]]
  
  [[/iftags]]
 +
 +[[module css]]
 +@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Afoundom-jp/1")
++@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Afoundom-jp/2")
 +[[/module]]
 +[[include :scp-jp:component:interwiki-style
 +| priority=1
 +| theme= https://sigma10-jp-test.wdfiles.com/local--code/theme%3Afoundom-jp/1
 +]]
 ```
-
-</details>

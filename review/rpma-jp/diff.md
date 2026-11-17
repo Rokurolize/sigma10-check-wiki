@@ -8,24 +8,19 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 581 |
-| candidate.txt | 593 |
+| candidate.txt | 601 |
 | Added | +55 |
 | Review-stage comments | 0 of the +55 added lines |
-| Removed | -44 |
+| Removed | -36 |
 | Hunks | 5 |
 
 ```diff
 --- original.txt
 +++ candidate.txt
-@@ -1,52 +1,55 @@
--[[div class="curtain-right"]]
--@@@@
--[[/div]]
--
--[[div class="curtain-left"]]
--@@@@
--[[/div]]
--
+@@ -6,47 +6,58 @@
+ @@@@
+ [[/div]]
+ 
 -[[iftags +테마]]
 -
 -[[include info:start]]
@@ -111,7 +106,7 @@ with `python3 review/build_review.py`; verify with
  @charset "utf-8";
  @font-face { font-family: '국립박물관문화재단클래식M'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식M.woff') format('woff'); font-weight: normal; font-style: normal;}
  @font-face { font-family: '국립박물관문화재단클래식L'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식L.woff') format('woff'); font-weight: normal; font-style: normal;}
-@@ -63,7 +66,7 @@
+@@ -63,7 +74,7 @@
       position:fixed;
       top:-50px;
       right: 0px;
@@ -120,7 +115,7 @@ with `python3 review/build_review.py`; verify with
       background-size: 200px 1000px;
       width: 200px;
       height: 1000px;
-@@ -74,7 +77,7 @@
+@@ -74,7 +85,7 @@
       position:fixed;
       top:-50px;
       left: 0px;
@@ -129,7 +124,7 @@ with `python3 review/build_review.py`; verify with
       background-size: 200px 1000px;
       width: 200px;
       height: 1000px;
-@@ -131,13 +134,13 @@
+@@ -131,13 +142,13 @@
  }
  
   div#container-wrap {
@@ -145,7 +140,7 @@ with `python3 review/build_review.py`; verify with
       -webkit-background-size: 125px;
       background-size: 125px;
       z-index: 1;
-@@ -576,6 +579,15 @@
+@@ -576,6 +587,15 @@
           height: 950px;
      }
  }

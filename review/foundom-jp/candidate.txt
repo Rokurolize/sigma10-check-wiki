@@ -1,5 +1,34 @@
 [[include theme:parallel-jp]]
 
+[!-- {$inc-css}
+[[module CSS]]
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Afoundom-jp/1");
+[[/module]]
+[!-- --]
+
+[!-- {$inc-color}
+[[module CSS]]
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Afoundom-jp/2");
+[[/module]]
+[!-- --]
+
+[!-- {$inc-chara-start}
+[[div class="chara id-{$id}" style="--left: {$x}; --top: {$y}; {$style}"]]
+[[collapsible show="{$id}" hide="{$id}"]]
+[[div class="charaInfo"]]
+[[div class="charaInfoContent"]]
+[[div class="charaImage move-{$ani}" style="{$imgstyle}"]]
+[[/div]]
+[!-- --]
+
+[!-- {$inc-chara-end}
+~~~~
+[[/div]]
+[[/div]]
+[[/collapsible]]
+[[/div]]
+[!-- --]
+
 [[iftags +テーマ]]
 
 [[include :scp-jp:credit:start-preview]]
@@ -16,13 +45,13 @@
 これは[[[letters|Lettersエンターテインメント]]]のGoIフォーマット用に作成されたテーマです。[[[theme:parallel|Parallel]]]を基に、Fandom風のWikiスタイルを再現できます。このテーマを導入するには、以下のコードを使用してください。
 
 [[div class="code"]]
-@@[[include :scp-jp:theme:foundom]]@@
+@@[[include :scp-jp:theme:foundom-jp]]@@
 [[/div]]
 
 財団標準の配色を使用する場合は、以下のコードでこのテーマを導入してください。
 
 [[div class="code"]]
-@@[[include :scp-jp:theme:foundom inc-css=--]]@@
+@@[[include :scp-jp:theme:foundom-jp inc-css=--]]@@
 [[/div]]
 
 このテーマのトップナビゲーションバーはSCP-CN Wiki向けに設計されています。他のWikiで使用する場合は、各Wikiのトップナビゲーションバーに合わせて再調整してください。
@@ -206,11 +235,11 @@ Charaコンポーネントは、外側コンテナと再利用可能な子コン
 @@[[div class="charaContainer" style="@@[[span style="color: red;"]]@@flex-wrap: wrap; --chara-image: url("https://ah-sandbox.wikidot.com/local--files/secret%3Asuper-crush-personnels/Sprite.png"); --sprite-full-image-size: 2176px 3920px; --sprite-width: 272px; --sprite-height: 280px; --left-transform: -72px; --top-transform: -12px;@@[[/span]]@@"]]@@
 @@@@
 [[div style="color: blue;"]]
-@@[[include :scp-jp:theme:foundom inc-chara-start=--]@@[[span style="color: green;"]]@@ | id=1 | x=0 | y=0 | ani=8-4@@[[/span]]@@]] @@
+@@[[include :scp-jp:theme:foundom-jp inc-chara-start=--]@@[[span style="color: green;"]]@@ | id=1 | x=0 | y=0 | ani=8-4@@[[/span]]@@]] @@
 @@@@
 @@++ エージェント八川@@
 @@@@
-@@[[include :scp-jp:theme:foundom inc-chara-end=--]]] @@
+@@[[include :scp-jp:theme:foundom-jp inc-chara-end=--]]] @@
 [[/div]]
 
 @@[[/div]]@@
@@ -262,7 +291,7 @@ Charaコンポーネントは、外側コンテナと再利用可能な子コン
 
 [[/collapsible]]
 
-[[/iftags]
+[[/iftags]]
 
 ----
 
@@ -280,9 +309,9 @@ Charaコンポーネントは、外側コンテナと再利用可能な子コン
 }
 
 :root {
-    --header-font: "Rubik", "Noto Sans SC", sans-serif;
+    --header-font: "Rubik", "Noto Sans JP", sans-serif;
     --UI-font: var(--body-font);
-    --body-font: "Rubik", "Noto Sans SC", sans-serif;
+    --body-font: "Rubik", "Noto Sans JP", sans-serif;
 
     --header-width: 4rem;
 
@@ -905,6 +934,9 @@ div.charaContainer div.charaInfo div.charaImage.move-8-8 {
         background-position: calc(-1 * ((var(--left) + 8) * var(--sprite-width))) calc(-1 * (var(--top) * var(--sprite-height)));
     }
 }
+[[/code]]
+
+[[code type="css"]]
 /* LETTERS Ver. */
 :root {
     --header-border-width: 0.25rem;
@@ -944,6 +976,7 @@ div.meta-title {
 
 [[module css]]
 @import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Afoundom-jp/1")
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Afoundom-jp/2")
 [[/module]]
 [[include :scp-jp:component:interwiki-style
 | priority=1

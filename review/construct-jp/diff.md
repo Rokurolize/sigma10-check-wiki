@@ -76,12 +76,12 @@ adjudicated explanation.
 ```diff
 @@ -1,7 +1,516 @@
  [[module CSS]]
-+@import url(https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aconstruct-jp/1);
++@import url(https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aconstruct-jp/21);
 +[[/module]]
 +
 +[[include :scp-jp:component:interwiki-style
 +| priority=1
-+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aconstruct-jp/1
++| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aconstruct-jp/21
 +]]
 +
 +[[div class="construct-body-bg-switch construct-body-bg-{$bodybg}"]]

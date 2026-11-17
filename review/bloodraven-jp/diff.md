@@ -8,16 +8,16 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 1440 |
-| candidate.txt | 1442 |
-| Added | +185 |
-| Review-stage comments | 0 of the +185 added lines |
+| candidate.txt | 1443 |
+| Added | +186 |
+| Review-stage comments | 0 of the +186 added lines |
 | Removed | -192 |
 | Hunks | 9 |
 
 ```diff
 --- original.txt
 +++ candidate.txt
-@@ -1,194 +1,195 @@
+@@ -1,194 +1,196 @@
 -[[module CSS]]
 -@import url(https://scp-wiki.wikidot.com/theme:bloodraven/code/1);
 +[[module css]]
@@ -369,12 +369,13 @@ with `python3 review/build_review.py`; verify with
 -@import url('https://api.fonts.coollabs.io/css2?family=Wallpoet&display=swap');
 +@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 +@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
++@import url('https://scp-wiki.wikidot.com/local--files/theme%3Avalravn/comic-runes.css');
 +@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 +@import url('https://fonts.googleapis.com/css2?family=Wallpoet&display=swap');
  
  /* ROOT */
  
-@@ -206,7 +207,7 @@
+@@ -206,7 +208,7 @@
  /* HEADER BACKGROUND */
  
  div#container-wrap {
@@ -383,7 +384,7 @@ with `python3 review/build_review.py`; verify with
  }
  
  /* HEADER LOGO */
-@@ -558,7 +559,7 @@
+@@ -558,7 +560,7 @@
  
  body {
      background-color: #0F0F0F;
@@ -392,7 +393,7 @@ with `python3 review/build_review.py`; verify with
      font-size: 1.05em;
      color: #DBDBDB;
      background-image: var(--fondo);
-@@ -1045,7 +1046,7 @@
+@@ -1045,7 +1047,7 @@
  /* CODE */
  
  .code {
@@ -401,7 +402,7 @@ with `python3 review/build_review.py`; verify with
      background-color: #0F0F0F;
      border: solid 2px var(--raven-color);
      color: var(--raven-color);
-@@ -1369,13 +1370,13 @@
+@@ -1369,13 +1371,13 @@
  
  :root {
      --raven-color: #00C4F8;
@@ -422,7 +423,7 @@ with `python3 review/build_review.py`; verify with
  }
  
  [[/module]]
-@@ -1388,13 +1389,13 @@
+@@ -1388,13 +1390,13 @@
  
  :root {
      --raven-color: #F8B301;
@@ -443,7 +444,7 @@ with `python3 review/build_review.py`; verify with
  }
  
  [[/module]]
-@@ -1405,13 +1406,13 @@
+@@ -1405,13 +1407,13 @@
  
  :root {
      --raven-color: #00EE10;
@@ -464,7 +465,7 @@ with `python3 review/build_review.py`; verify with
  }
  
  [[/module]]
-@@ -1422,13 +1423,13 @@
+@@ -1422,13 +1424,13 @@
  
  :root {
      --raven-color: #F7F7F7;
@@ -485,7 +486,7 @@ with `python3 review/build_review.py`; verify with
  }
  
  ::selection {
-@@ -1438,3 +1439,4 @@
+@@ -1438,3 +1440,4 @@
  
  [[/module]]
  [!----]

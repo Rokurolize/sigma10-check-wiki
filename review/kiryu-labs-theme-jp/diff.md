@@ -47,7 +47,7 @@ with `python3 review/build_review.py`; verify with
 +**翻訳責任者:** AI
 +**翻訳年:** 2026
 +**原題:** Kiryu Labs Theme
-+**著作権者:** 作者不明（Kiryu Labs ハブ向けのテーマ）
++**著作権者:** Rounderhouse
 +**作成年:** 2019
 +**初訳時参照リビジョン:** 29
 +**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:kiryu-labs-theme Kiryu Labs Theme]

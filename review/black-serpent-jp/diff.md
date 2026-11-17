@@ -8,16 +8,16 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 285 |
-| candidate.txt | 302 |
-| Added | +166 |
-| Review-stage comments | 0 of the +166 added lines |
+| candidate.txt | 304 |
+| Added | +168 |
+| Review-stage comments | 0 of the +168 added lines |
 | Removed | -155 |
 | Hunks | 4 |
 
 ```diff
 --- original.txt
 +++ candidate.txt
-@@ -1,213 +1,219 @@
+@@ -1,213 +1,221 @@
 -[[iftags +theme]]
 +[[include :scp-jp:theme:black-highlighter-theme]]
 +
@@ -62,6 +62,8 @@ with `python3 review/build_review.py`; verify with
 +[[include :scp-jp:credit:end-preview]]
 +
 +これは[[*user Jerden]]によるBlack Highlighter基盤のテーマです。[[[theme:wanderers|放浪者の図書館テーマ]]]の代替として、とくに[[[serpent-s-hand-hub|蛇の手]]]要注意団体と『[[[https://scp-wiki.wikidot.com/now-the-serpent|Now, the Serpent]]]』シリーズのために作成されました。ヘッダー画像の原案は[[*user Zyn]]によるものです。
++
++[[image https://scp-jp.github.io/Black-Highlighter/img/black-highlighter-logo.svg]]
  
  ------
  
@@ -371,7 +373,7 @@ with `python3 review/build_review.py`; verify with
  @@  --header-title: "            WANDERER'S LIBRARY";@@
  @@  --header-subtitle: "          The Garden Is The Serpent's Place";@@
  [[/collapsible]]
-@@ -218,13 +224,27 @@
+@@ -218,13 +226,27 @@
  ------
  
  [[=]]
@@ -403,7 +405,7 @@ with `python3 review/build_review.py`; verify with
  
  :root {
      /* S-CSS-P Integration */
-@@ -245,13 +265,13 @@
+@@ -245,13 +267,13 @@
      --alt-accent: 71, 92, 75;
  
      /* ===THEME HEADER=== */
@@ -420,7 +422,7 @@ with `python3 review/build_review.py`; verify with
  }
  
  /* ===PAGE CONTENT=== */
-@@ -264,22 +284,19 @@
+@@ -264,22 +286,19 @@
         border-left: 5px solid rgb(var(--bright-accent));
         background-color: rgb(var(--pale-gray-monochrome));
  }
