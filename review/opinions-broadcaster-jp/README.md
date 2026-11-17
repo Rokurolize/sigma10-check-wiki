@@ -174,6 +174,16 @@ The candidate's interwiki-style frame (candidate L626–629) names the candidate
 
 The :root override block sets `--mono-font: "JetBrains Mono", "Maple Mono NF CN", "Noto Sans Mono", "Noto Sans JP", monospace` (candidate L613). "Noto Sans Mono" is loaded by no line in this file (the added loads at candidate L4–10 are Inter, Sofia Sans, JetBrains Mono, Noto Sans JP, Noto Serif JP, Domine, and Material Symbols Outlined). The face is a mid-stack fallback, not a first face, so the standing flag shape does not arise; if it arrives from nowhere, the stack falls through to "Noto Sans JP", which is loaded. The same shape is noted for theme:normal-jp in this batch, while theme:nameless-jp and theme:obflow-jp do load the face — the population's practice is inconsistent, and a one-line load addition in each naming file would settle it. Recorded for the coordinator's patterns pass; this package does not edit the candidate.
 
+
+### Post-package repairs (REFRESH3-D)
+
+Recopy was a verified no-op: `candidate.txt` is byte-identical to the current canonical `pages/theme:opinions-broadcaster-jp.txt`. No repair lands after this package's candidate build, so the record below is the slice's sub-shape and remedy, confirmed present in the built bytes.
+
+- **FIX-FRAMEADDR, sub-shape (B) — Introduced** (report `R/review-scout/FIX-FRAMEADDR.md` §2; landing `722ceb5c949172bb5185d51ef56ce4119ee4fa91`, 2026-11-17): the original carries no interwiki-style frame and no `theme=` self-address in that role; the porting wave introduced the frame with `theme=` naming its own draft-host `local--code/theme%3Aopinions-broadcaster-jp/1`, a fragment the page does not carry (delivery is the inline `[[module CSS]]`). Remedy: the single `| theme=...` line was deleted; the frame include and its `priority=1` line are kept. Current candidate frame at L624.
+- The frame candidate is a whole introduced include here (the original has no frame and no `theme=`); the (B) remedy dropped its parameter with the include kept.
+
+Stamp treatment follows the jiha-jp / alexylva-university-jp precedents: the regenerated verdict stamp reads STALE, no re-judgement is fabricated, and the frozen GOSIGN2 ledger remains the verdict record.
+
 ## Change set outside the two diffed files
 
 The diff covers two files; the port's record is one file larger. `pages/theme-decoration-sample-opinions-broadcaster-jp.txt` is the decoration sample the render checks ran against (its run is the inconclusive one recorded in section 11(5)). The base theme's candidate, `pages/theme:basalt-jp.txt`, is a separate theme package in this campaign, not part of this change set; this candidate's dependence on it is recorded in section 3. There are no companion fragments and no inbound-link repairs in other candidates for this theme.

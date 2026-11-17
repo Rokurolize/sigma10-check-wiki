@@ -8,20 +8,19 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 44 |
-| candidate.txt | 397 |
-| Added | +375 |
-| Review-stage comments | 0 of the +375 added lines |
+| candidate.txt | 396 |
+| Added | +374 |
+| Review-stage comments | 0 of the +374 added lines |
 | Removed | -22 |
 | Hunks | 2 |
 
 ```diff
 --- original.txt
 +++ candidate.txt
-@@ -1,18 +1,361 @@
+@@ -1,18 +1,360 @@
 -[[iftags +theme]]
 +[[include :scp-jp:component:interwiki-style
 +| priority=1
-+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3A3lawcracked-jp/1
 +]]
 +
 +[[iftags +テーマ]]
@@ -393,7 +392,7 @@ with `python3 review/build_review.py`; verify with
  /*
      Cracked Third Law Theme
      [2018 Wikidot Theme]
-@@ -23,22 +366,32 @@
+@@ -23,22 +365,32 @@
      The Prometheus Labs/Third Law Flame Logo was created by GreenWolf and is licensed under CC-BY-SA 3.0.
       Revised by stormbreath.
  */

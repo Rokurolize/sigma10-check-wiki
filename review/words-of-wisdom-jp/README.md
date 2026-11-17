@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:words-of-wisdom-jp — origin EN, population #159 [GOSIGN2-LEDGER (b) row 159]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 69fbf0a79c7abc1322252e5ec1f0cec7cd23acc1eb98b88029f3da3ee4e6ad17); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 2c5b26d15b2a7217277a27adcdde56cc93b925e6b81f80b54a4151f66f5a2b25); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 3 errors / 1 warn / 2 infos (pseudo-ref×3); standing classes dispositioned in register c1 [T1-ROWS row 174; GOSIGN2-LEDGER (b) row 159]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page hidden-* cluster + sidebar-unreachable confined to chromium-375, whose only hotlink host is http.cat = transient 503 capture, not a result; sample credit-modal (preview-form) + 884px@768 overflow + runtime-hotlink site-theme chain. [RENDER-ROWS-2 (RENDER-S2-D (EN23))]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 3 [LOCALIZE-ROWS row 159, source LOCALIZE-S2-C]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 159]
 - FIX5 re-judgement: item 41 (class B) FIXED — FIX5-FURNA, commit 9e8931f: duplicate bare Rate block removed [GOSIGN2-LEDGER-SUPPLEMENT (a) item 41]
-- Computed against: canonical commit 722ceb5c949172bb5185d51ef56ce4119ee4fa91; candidate file pages/theme:words-of-wisdom-jp.txt sha256:69fbf0a79c7abc1322252e5ec1f0cec7cd23acc1eb98b88029f3da3ee4e6ad17; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 3f0aa788d3a56dfcfb83c698ec2c7a4a9bb44f44; candidate file pages/theme:words-of-wisdom-jp.txt sha256:2c5b26d15b2a7217277a27adcdde56cc93b925e6b81f80b54a4151f66f5a2b25; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## 0. Header / provenance
@@ -138,6 +138,18 @@ Counts: 25 blocks, 17 specific, 3 heuristic, 5 residue, 0 skipped. Topology: the
 - Supplement re-judgement: FIXED, FIX5-FURNA, commit 9e8931f.
 - Re-derived from this package's bytes: the original carries the identical bare Rate at original L5-7, inside its gate. `git show 9e8931f -- pages/theme:words-of-wisdom-jp.txt` removes exactly the `[[>]]` / `[[module Rate]]` / `[[/>]]` block and the following blank line ahead of the credit include. The current candidate contains no `[[module Rate]]` anywhere (`grep -c` = 0), and its only rate-bearing element is `credit:start-preview` (candidate L7-17). This lane's checker run reproduces the after state, 3/0/1.
 - Closure: CONFIRMED on current bytes. The verdict stamp is STALE for the later frame remedy (section 3), which does not touch the credit flow; the closure is re-derived from the package, not inherited from the stamp.
+
+## Per-theme record
+
+
+### Post-package repairs (REFRESH3-D)
+
+FIX-FRAMEADDR (`722ceb5`, sub-shape (B)) lands *before* this package's candidate build (`c12dbde`), so the frame at L1 was already remedied; recopy confirms no byte change from it. The one post-package repair is the duplicate-banner removal below.
+
+- **FIX-FRAMEADDR, sub-shape (B) — Introduced** (report `R/review-scout/FIX-FRAMEADDR.md` §2; landing `722ceb5c949172bb5185d51ef56ce4119ee4fa91`, 2026-11-17): the original carries no interwiki-style frame and no `theme=` self-address in that role; the porting wave introduced the frame with `theme=` naming its own draft-host `local--code/theme%3Awords-of-wisdom-jp/1`, a fragment the page does not carry (delivery is the inline `[[module CSS]]`). Remedy: the single `| theme=...` line was deleted; the frame include and its `priority=1` line are kept. Current candidate frame at L1.
+- **FIX-RFIX20 — duplicate banner comment** (report `R/review-scout/FIX-RFIX20.md`; landing `3f0aa788d3a56dfcfb83c698ec2c7a4a9bb44f44`, 2026-11-17): the second, byte-identical `/* Words of Wisdom theme … CC BY-SA 3.0 */` banner (7 lines) was removed, so the licence banner now stands once at candidate L94–99. Recopy removed 7 lines (342 → 335).
+
+Stamp treatment follows the jiha-jp / alexylva-university-jp precedents: the regenerated verdict stamp reads STALE, no re-judgement is fabricated, and the frozen GOSIGN2 ledger remains the verdict record.
 
 ## Change set outside the two diffed files
 

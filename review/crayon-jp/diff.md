@@ -8,33 +8,32 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 49 |
-| candidate.txt | 66 |
-| Added | +37 |
-| Review-stage comments | 0 of the +37 added lines |
-| Removed | -20 |
+| candidate.txt | 60 |
+| Added | +35 |
+| Review-stage comments | 0 of the +35 added lines |
+| Removed | -24 |
 | Hunks | 2 |
 
 ```diff
 --- original.txt
 +++ candidate.txt
-@@ -1,26 +1,26 @@
+@@ -1,26 +1,21 @@
 -[[div [[iftags -theme]]style="display: none"[[/iftags]]]]
-+[[div [[iftags -テーマ]]style="display: none"[[/iftags]]]]
- [[>]]
+-[[>]]
 -**Rating:**
-+**評価:**
- [[module Rate]]
- [[/>]]
- 
--This variant theme was used for 2021 April Fool's incident, "Subpar Creative Products".
+-[[module Rate]]
+-[[/>]]
++[[div [[iftags -テーマ]]style="display: none"[[/iftags]]]]
 +このバリエーションテーマは、2021年4月1日の「Subpar Creative Products」騒動に使用されました。
  
--To use this theme, put the following syntax on any page:
+-This variant theme was used for 2021 April Fool's incident, "Subpar Creative Products".
 +このテーマを使用するには、任意のページに以下の構文を記述してください:
  
--> @@[[include :scp-wiki:theme:crayon]]@@
+-To use this theme, put the following syntax on any page:
 +> @@[[include :scp-jp:theme:crayon-jp]]@@
  
+-> @@[[include :scp-wiki:theme:crayon]]@@
+-
 -Header banner by stormbreath. Header logo by UncertaintyCrossing.
 +ヘッダーバナー: stormbreath。ヘッダーロゴ: UncertaintyCrossing。
  
@@ -53,7 +52,7 @@ with `python3 review/build_review.py`; verify with
  }
  
  #header h1 a,
-@@ -34,16 +34,33 @@
+@@ -34,16 +29,32 @@
  [[/module]]
  [[/div]]
  
@@ -65,7 +64,6 @@ with `python3 review/build_review.py`; verify with
 -> **License:** CC BY-SA 3.0
 +[[include :scp-jp:component:interwiki-style
 +| priority=1
-+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Acrayon-jp/1
 +]]
  
 -> **Filename:** scribble-logo.png

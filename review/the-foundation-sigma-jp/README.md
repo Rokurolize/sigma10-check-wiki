@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:the-foundation-sigma-jp — origin EN, population #148 [GOSIGN2-LEDGER (b) row 148]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now d5fb879b06f95aae455041c2682ef5fe8183c4fb2f98ee41b0ca8d1ea26098cc); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 944d5db8e14b36d4ca6ba081bcd90ea0ef5c2aee83170a06c7ad68d2b309da6c); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 1 error / 1 warn / 1 info (pseudo-ref×1); standing classes dispositioned in register c1 [T1-ROWS row 133; GOSIGN2-LEDGER (b) row 148]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page-overflow 474–506px@320/375 (page) and 474–557px@320/375 (sample); sample credit-modal (preview-form). [RENDER-ROWS-2 (RENDER-S2-D (EN21))]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 2 [LOCALIZE-ROWS row 148, source LOCALIZE-S2-C]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 148]
 - FIX5 re-judgement: item 33 (class H) FIXED — FIX5-TEXTA §5, commit 6f6b349: usage example repointed to theme:the-foundation-sigma-jp [GOSIGN2-LEDGER-SUPPLEMENT (a) item 33]
-- Computed against: canonical commit 722ceb5c949172bb5185d51ef56ce4119ee4fa91; candidate file pages/theme:the-foundation-sigma-jp.txt sha256:d5fb879b06f95aae455041c2682ef5fe8183c4fb2f98ee41b0ca8d1ea26098cc; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit fd36608a54c17d699155b725e041a75bfd044996; candidate file pages/theme:the-foundation-sigma-jp.txt sha256:944d5db8e14b36d4ca6ba081bcd90ea0ef5c2aee83170a06c7ad68d2b309da6c; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 Status: explanation written (lane rfix16, 2026-11-17); the verdict stamp above is generated and reads STALE by design: it was computed against the 435a6bb-era file, and the candidate has since changed in commit 722ceb5 (the frame sub-shape (B) remedy, section 3). The explanation below is written against the current bytes.
@@ -143,6 +143,19 @@ Counts: 83 blocks, 22 specific, 52 heuristic, 9 residue, 0 skipped (comment text
 - Verification against the bytes: commit 6f6b349's diff for this file is one line: the example at (now) candidate L29 reads `> @@[[include :scp-jp:theme:the-foundation-sigma-jp]]@@`, against original L19's `:scp-wiki:theme:the-foundation-sigma`. A census of the plain name in the current candidate returns two remaining occurrences, both correct in role: the 元記事リンク source URL in the credit block (candidate L18, a quotation of the original) and nothing else — the delivery import at L2 names the -jp page. The fix is present and complete.
 - Post-FIX5 change: commit 722ceb5 (frame sub-shape (B), section 3) touched the file after the FIX5 head; it does not touch the example. The stamp's STALE state dates from that landing.
 - Verdict: the supplement's account matches the bytes. FIXED stands, re-derived. The neighbouring dead link of section 7 is a separate, uncharged instance of the same family and does not reopen item 33.
+
+## Per-theme record
+
+
+### Post-package repairs (REFRESH3-D)
+
+FIX-FRAMEADDR (`722ceb5`) lands *before* this package's candidate build (`05f0db5`): the frame at L5 was remedied under sub-shape (B) and the head `@import` at L2 is the report's one sub-shape (A) instance; both were already in the built candidate and recopy confirms no byte change from them. The one post-package repair is the prose link below.
+
+- **FIX-FRAMEADDR, sub-shape (B) — Introduced** (report `R/review-scout/FIX-FRAMEADDR.md` §2; landing `722ceb5c949172bb5185d51ef56ce4119ee4fa91`, 2026-11-17): the original carries no interwiki-style frame and no `theme=` self-address in that role; the porting wave introduced the frame with `theme=` naming its own draft-host `local--code/theme%3Athe-foundation-sigma-jp/1`, a fragment the page does not carry (delivery is the inline `[[module CSS]]`). Remedy: the single `| theme=...` line was deleted; the frame include and its `priority=1` line are kept. Current candidate frame at L5.
+- **FIX-FRAMEADDR, sub-shape (A) — Inherited** (report §1; same landing `{FRAME}`): the head `@import` at candidate L2 naming the candidate's own `local--code/theme%3Athe-foundation-sigma-jp/1` is the port of the original's identical dead self-import (original L2, 0 code blocks). The report applies no edit; this refresh leaves it byte-unchanged.
+- **FIX-RFIX16 — dead base-theme prose link** (report `R/review-scout/FIX-RFIX16.md`; landing `fd36608a54c17d699155b725e041a75bfd044996`, 2026-11-17): candidate L22's `[[[theme:the-foundation-theme|The Foundation]]]` was absolutized to `[[[https://scp-wiki.wikidot.com/theme:the-foundation-theme|The Foundation（英語版）]]]`, matching the neighbouring SCP-4485 link's form. Recopy changed this line only (24,034 → 24,078 bytes).
+
+Stamp treatment follows the jiha-jp / alexylva-university-jp precedents: the regenerated verdict stamp reads STALE, no re-judgement is fabricated, and the frozen GOSIGN2 ledger remains the verdict record.
 
 ## Change set outside the two diffed files
 

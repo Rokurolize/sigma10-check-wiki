@@ -154,6 +154,18 @@ A small French Sigma-9 theme for the "Quand le Soleil se Couche" canon: a graysc
 - Heuristic B17 (orig L93–109 → cand L210–211) and B18 (orig L112–139 → cand L214): the differ's alignment of the two dropped EN-side modules against the candidate's tail. Assigned to section 8(b)/(c).
 - Unanchored translation mass (TRANS-UNANCHORED spans in B2, B3, B4): the production-inherited body, the banner-comment replacement, and the `:root` rewrite. Resolved by shape: sections 6, 10, and 5 respectively, with no content class of their own.
 
+## Per-theme record
+
+
+### Post-package repairs (REFRESH3-D)
+
+Recopy was a verified no-op: `candidate.txt` is byte-identical to the current canonical `pages/theme:quand-le-soleil-se-couche.txt`. No repair lands after this package's candidate build, so the record below is the slice's sub-shape and remedy, confirmed present in the built bytes.
+
+- **FIX-FRAMEADDR, sub-shape (B) — Introduced** (report `R/review-scout/FIX-FRAMEADDR.md` §2; landing `722ceb5c949172bb5185d51ef56ce4119ee4fa91`, 2026-11-17): the original carries no interwiki-style frame and no `theme=` self-address in that role; the porting wave introduced the frame with `theme=` naming its own draft-host `local--code/theme%3Aquand-le-soleil-se-couche/1`, a fragment the page does not carry (delivery is the inline `[[module CSS]]`). Remedy: the single `| theme=...` line was deleted; the frame include and its `priority=1` line are kept. Current candidate frame at L1.
+- The (B) remedy and the line-number shift of the slogan are already recorded in the per-theme record; this subsection names the sub-shape for the slice.
+
+Stamp treatment follows the jiha-jp / alexylva-university-jp precedents: the regenerated verdict stamp reads STALE, no re-judgement is fabricated, and the frozen GOSIGN2 ledger remains the verdict record.
+
 ## Change set outside the two diffed files
 
 The diff covers two files; the port's record is slightly larger. (1) `pages/theme-decoration-sample-quand-le-soleil-se-couche.txt` — the decoration sample page used by the render checks. (2) `pages-existing/existing:theme-quand-le-soleil-se-couche.txt` — the production page, not a port artifact but the mediation source declared in the Provenance section; a reviewer judging the candidate against production will find the slogan default is the one place the candidate is *ahead* of production (production still carries `"{$sous-titre}"`). No fragment or companion files belong to this theme.

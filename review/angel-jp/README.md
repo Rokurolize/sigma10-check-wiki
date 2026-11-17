@@ -192,6 +192,16 @@ The class asks for the disposition to be walked once more from the third-party p
 
 The candidate's current state is the product of successive waves, not one pass: the Stage 2 EN batch 1 port (commit 3205f27) produced the compact delivery form the localize lane audited (LOCALIZE-S2-A, EN3); commit 1869877 (FIX-CREDIT-D, translator attribution normalization over 163 files) also carried this file's frame include and its JP font supplement (sections 2 and 4); FIX5-CONTRA closed the theme's only blocking item as a no-edit disposition, so no FIX5 commit touches this file; and commit 722ceb5 (frame self-address remedies, sub-shape (B)) dropped the frame's dead `theme=` parameter — the one-line delta behind the stamp's STALE. Citations, in place of a changelog: GOSIGN2-LEDGER.md §(c2) (render row), §(c3) (localize row), §(e) item 15; GOSIGN2-LEDGER-SUPPLEMENT.md item 15; REPORT-GOSIGN2-LOCALIZE-S2-A.md (EN3, angel); REPORT-GOSIGN2-RENDER-S2-A.md §12; REPORT-GOSIGN2-FIX5-CONTRA.md §2; FIX-FRAMEADDR.md (scout folder). The go-sign over that record is what the Status block certifies.
 
+
+### Post-package repairs (REFRESH3-D)
+
+Recopy was a verified no-op: `candidate.txt` is byte-identical to the current canonical `pages/theme:angel-jp.txt`. No repair lands after this package's candidate build, so the record below is the slice's sub-shape and remedy, confirmed present in the built bytes.
+
+- **FIX-FRAMEADDR, sub-shape (B) — Introduced** (report `R/review-scout/FIX-FRAMEADDR.md` §2; landing `722ceb5c949172bb5185d51ef56ce4119ee4fa91`, 2026-11-17): the original carries no interwiki-style frame and no `theme=` self-address in that role; the porting wave introduced the frame with `theme=` naming its own draft-host `local--code/theme%3Aangel-jp/1`, a fragment the page does not carry (delivery is the inline `[[module CSS]]`). Remedy: the single `| theme=...` line was deleted; the frame include and its `priority=1` line are kept. Current candidate frame at L1.
+- The frame remedy and its STALE consequence are already narrated in sections 2, 11 and the multi-wave provenance; this subsection records the sub-shape for the slice.
+
+Stamp treatment follows the jiha-jp / alexylva-university-jp precedents: the regenerated verdict stamp reads STALE, no re-judgement is fabricated, and the frozen GOSIGN2 ledger remains the verdict record.
+
 ## Appendix — residue blocks
 
 ### Residue R1 — B2 (heuristic; orig 4-6 -> cand at 25, module-css -> body)

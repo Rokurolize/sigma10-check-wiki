@@ -177,6 +177,16 @@ Two blocks carried no label. Both are translation mass of section 6, left unlabe
 | B5 | original L18–19 → candidate L22–23 | The "+ Attribution:" heading pair, translated to "+ 帰属:" — section 6 prose furniture |
 | B60 | original L196 → candidate L200 | A collapsible specimen's label, "Example" → 「例」 — a specimen-string translation inside the documentation body |
 
+
+### Post-package repairs (REFRESH3-D)
+
+Recopy was a verified no-op: `candidate.txt` is byte-identical to the current canonical `pages/theme:ragnarok-theme-jp.txt`. No repair lands after this package's candidate build, so the record below is the slice's sub-shape and remedy, confirmed present in the built bytes.
+
+- **FIX-FRAMEADDR, sub-shape (B) — Introduced** (report `R/review-scout/FIX-FRAMEADDR.md` §2; landing `722ceb5c949172bb5185d51ef56ce4119ee4fa91`, 2026-11-17): the original carries no interwiki-style frame and no `theme=` self-address in that role; the porting wave introduced the frame with `theme=` naming its own draft-host `local--code/theme%3Aragnarok-theme-jp/1`, a fragment the page does not carry (delivery is the inline `[[module CSS]]`). Remedy: the single `| theme=...` line was deleted; the frame include and its `priority=1` line are kept. Current candidate frame at L1.
+- No further post-package repair touches this file.
+
+Stamp treatment follows the jiha-jp / alexylva-university-jp precedents: the regenerated verdict stamp reads STALE, no re-judgement is fabricated, and the frozen GOSIGN2 ledger remains the verdict record.
+
 ## Change set outside the two diffed files
 
 The diff covers two files; this theme's record is one file larger. `pages/theme-decoration-sample-ragnarok-theme-jp.txt` is the decoration sample the render checks ran against (its coverage caveat is section 11(3)); it belongs to this theme's record but carries no port change of its own to explain here. There are no companion fragments, no shared base file, and no inbound-link repairs in other candidates for this theme.

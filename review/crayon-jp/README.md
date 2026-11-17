@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:crayon-jp — origin EN, population #74 [GOSIGN2-LEDGER (b) row 74]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 09135155f5ecc62c3754c1efe870da864e83ea7eb5803da8395ab98de3cab022); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 1ec09486f8d7a9e624e9cdb393184759c08d109b40776c7a9057ef71e31e145f); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 2 errors / 1 warn / 1 info (pseudo-ref×2); standing classes dispositioned in register c1 [T1-ROWS row 64; GOSIGN2-LEDGER (b) row 74]
 - T2/T3 (render, combined verdict): PASS-WITH-NOTES — [combined T2/T3] report `NO candidate-specific defect established` — error cluster is a transient 503 capture; other lines cross-cutting/draft-form/by-design. [RENDER-ROWS-1 (RENDER-S2-A)]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 2 [LOCALIZE-ROWS row 74, source LOCALIZE-S2-A]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 74]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 74]
-- Computed against: canonical commit 722ceb5c949172bb5185d51ef56ce4119ee4fa91; candidate file pages/theme:crayon-jp.txt sha256:09135155f5ecc62c3754c1efe870da864e83ea7eb5803da8395ab98de3cab022; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 1c96ee4f6dbe58243d8c4ba0136a4a4dde806972; candidate file pages/theme:crayon-jp.txt sha256:1ec09486f8d7a9e624e9cdb393184759c08d109b40776c7a9057ef71e31e145f; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 
@@ -161,6 +161,16 @@ Adjudication for this README (every block was read against the bytes): the 1 res
 ### The usage example's posting name
 
 The theme's only exhibit, the usage syntax line at candidate L11, as built named this theme by its original's slug on the JP branch, `:scp-jp:theme:crayon` — a page that does not exist on scp-jp, under the campaign's settled rule for usage examples (AGENTS.md §6). The usage-example population sweep has since completed the name to this candidate's posting name, `:scp-jp:theme:crayon-jp` (sweep report SWEEP-USAGE.md in the campaign record, R/review-scout/; canonical commit b5cb724). This package documents the corrected candidate; its stamp reads STALE against the pre-repair verdict, by design.
+
+
+### Post-package repairs (REFRESH3-D)
+
+Two post-package landings are in the recopy (built at `5c04bbe`, before both); the candidate went 66 → 60 lines.
+
+- **FIX-FRAMEADDR, sub-shape (B) — Introduced** (report `R/review-scout/FIX-FRAMEADDR.md` §2; landing `722ceb5c949172bb5185d51ef56ce4119ee4fa91`, 2026-11-17): the original carries no interwiki-style frame and no `theme=` self-address in that role; the porting wave introduced the frame with `theme=` naming its own draft-host `local--code/theme%3Acrayon-jp/1`, a fragment the page does not carry (delivery is the inline `[[module CSS]]`). Remedy: the single `| theme=...` line was deleted; the frame include and its `priority=1` line are kept. Current candidate frame at L32.
+- **FIX-RATES — head-zone bare Rate removed** (report `R/review-scout/FIX-RATES.md`; landing `1c96ee4f6dbe58243d8c4ba0136a4a4dde806972`, 2026-11-17): the five-line head-zone exhibit (`[[>]]`, `**評価:**`, `[[module Rate]]`, `[[/>]]` and its blank line) directly under the opening `[[div]]` was deleted, leaving the rate-bearing preview credit module as the sole rating widget (AGENTS.md §5). The original has no frame, no `theme=` and no local--code reference at all (FIX-FRAMEADDR §2 worked example, verified).
+
+Stamp treatment follows the jiha-jp / alexylva-university-jp precedents: the regenerated verdict stamp reads STALE, no re-judgement is fabricated, and the frozen GOSIGN2 ledger remains the verdict record.
 
 ## Appendix — residue blocks
 

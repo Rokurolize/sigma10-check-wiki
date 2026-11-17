@@ -38,7 +38,7 @@ adjudicated explanation.
 | 2 | 1 | 5–9 | 5–7 | +3/−5 | supplement | [[include :scp-jp:component:interwiki-style |
 | 3 | 1 | 11–11 | 9–19 | +11/−1 | supplement | [[iftags +テーマ]] |
 | 4 | 1 | 13–13 | 21–21 | +1/−1 | residual | + 使用法 |
-| 5 | 1 | 15–15 | 23–23 | +1/−1 | residual | これは、[[[https://scp-wiki.wikidot.com/scp-4485\|SCP-4485（英語版）]]]のために作成された[[[them… |
+| 5 | 1 | 15–15 | 23–23 | +1/−1 | residual | これは、[[[https://scp-wiki.wikidot.com/scp-4485\|SCP-4485（英語版）]]]のために作成された[[[http… |
 | 6 | 1 | 17–17 | 25–25 | +1/−1 | residual | このテーマは、高クリアランス制限資料の記事に適用することを意図しています。 |
 | 7 | 1 | 19–19 | 27–27 | +1/−1 | residual | このテーマをページへ読み込むには、ページ内の任意の場所に以下を置いてください。 |
 | 8 | 1 | 21–21 | 29–29 | +1/−1 | residual | > @@[[include :scp-jp:theme:the-foundation-sigma-jp]]@@ |
@@ -156,7 +156,7 @@ adjudicated explanation.
 ++ 使用法
  
 -This theme is intended to be applied to articles that are high-level restricted materials.
-+これは、[[[https://scp-wiki.wikidot.com/scp-4485|SCP-4485（英語版）]]]のために作成された[[[theme:the-foundation-theme|The Foundation]]] Black Highlighter CSSテーマを基にしたSigma-9テーマです。
++これは、[[[https://scp-wiki.wikidot.com/scp-4485|SCP-4485（英語版）]]]のために作成された[[[https://scp-wiki.wikidot.com/theme:the-foundation-theme|The Foundation（英語版）]]] Black Highlighter CSSテーマを基にしたSigma-9テーマです。
  
 -To import this theme to your page, put the following anywhere inside it:
 +このテーマは、高クリアランス制限資料の記事に適用することを意図しています。

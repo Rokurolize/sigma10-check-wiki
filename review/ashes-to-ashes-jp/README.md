@@ -173,6 +173,16 @@ The coordinator's ruling decided it: the candidate was missing its base layer. T
 
 The third repair in the rebuild is the body itself (FIX-ASHES.md, section 3). The original's second gate (original L143–211) is restored at candidate L160–228, translated, element for element: the centred bare Rate, the Hell Screen story quote, the contest note, the import prose with its include exhibit in the candidate's own bare local form, the presets prose, the image-block exhibit, the six header specimens, the Lorem ipsum paragraph verbatim, the collapsible, the blockquote specimens, and the footnoteblock. The Rate is the item this package's earlier sections reasoned about most carefully, and the rebuild supersedes that reasoning on evidence: sections 1 and 8 recorded its deletion under the KB-09 duplicate-Rate concern (the preview credit module is rate-bearing, so a kept Rate would duplicate it). The population says otherwise — of the 22 candidates carrying a `[[module Rate]]`, 20 carry it alongside the JP credit block, theme:classic-jp setting the pair side by side under the labels 評価モジュール / クレジットモジュール and theme:crayon-jp, this theme's batchmate, likewise — and the source checker's `double-rate` info names the specimen case as allowed in its own text. Under the ruling that an undispositioned drop defaults to the population standard, the Rate is restored verbatim at the body's head, and the KB-09 drop rationale recorded in sections 1 and 8 no longer holds for this file. Those sections now state both the as-built reasoning and its supersession, so the record shows why the file changed its mind.
 
+
+### Post-package repairs (REFRESH3-D)
+
+Recopy was a verified no-op: `candidate.txt` is byte-identical to the current canonical `pages/theme:ashes-to-ashes-jp.txt`. No repair lands after this package's candidate build, so the record below is the slice's sub-shape and remedy, confirmed present in the built bytes.
+
+- **FIX-FRAMEADDR, sub-shape (B) — Introduced** (report `R/review-scout/FIX-FRAMEADDR.md` §2; landing `722ceb5c949172bb5185d51ef56ce4119ee4fa91`, 2026-11-17): the original carries no interwiki-style frame and no `theme=` self-address in that role; the porting wave introduced the frame with `theme=` naming its own draft-host `local--code/theme%3Aashes-to-ashes-jp/1`, a fragment the page does not carry (delivery is the inline `[[module CSS]]`). Remedy: the single `| theme=...` line was deleted; the frame include and its `priority=1` line are kept. Current candidate frame at L3.
+- This is the (B) remedy **atop the refresh-2 rewrite**: the rebuild (`2aee861`, FIX-ASHES.md) and its body/font restoration are recorded in the per-theme record; 722ceb5 then dropped the rebuilt frame's dead `theme=` parameter at L3–6. Both landings predate this package's refresh-2 build (`4b46183`) and are present in the copied bytes.
+
+Stamp treatment follows the jiha-jp / alexylva-university-jp precedents: the regenerated verdict stamp reads STALE, no re-judgement is fabricated, and the frozen GOSIGN2 ledger remains the verdict record.
+
 ## Appendix — residue blocks
 
 | Block | Range (orig → cand) | Classifier state | Resolution |

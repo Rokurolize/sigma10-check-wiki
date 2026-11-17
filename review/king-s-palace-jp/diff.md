@@ -98,7 +98,7 @@ with `python3 review/build_review.py`; verify with
  
  > + Link
 -> [# 방문하지 않은 링크] | [[[theme:king-s-palace|방문한 링크]]]
-+> [# 未訪問リンク] | [[[theme:king-s-palace|訪問済みリンク]]]
++> [# 未訪問リンク] | [[[theme:king-s-palace-jp|訪問済みリンク]]]
  > -----
 ->> 텍스트[[footnote]]똑똑[[/footnote]]
 +>> テキスト[[footnote]]ノック、ノック[[/footnote]]

@@ -8,16 +8,16 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 300 |
-| candidate.txt | 342 |
-| Added | +92 |
-| Review-stage comments | 0 of the +92 added lines |
-| Removed | -50 |
-| Hunks | 7 |
+| candidate.txt | 335 |
+| Added | +86 |
+| Review-stage comments | 0 of the +86 added lines |
+| Removed | -51 |
+| Hunks | 6 |
 
 ```diff
 --- original.txt
 +++ candidate.txt
-@@ -1,59 +1,103 @@
+@@ -1,67 +1,103 @@
 -[[iftags +theme]]
 -
 -
@@ -146,17 +146,11 @@ with `python3 review/build_review.py`; verify with
 +@import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Noto+Sans+JP:wght@400;700&display=swap');
 +
 +/* ===== Words Of Wisdom Theme（本テーマ） ===== */
-+/*
-+    Words Of Wisdom theme
-+    [2021 Wikidot Theme]
-+    Created by Cole 13
-+    CC BY-SA 3.0
-+*/
-+
  /*
-     Words of Wisdom theme
+-    Words of Wisdom theme
++    Words Of Wisdom theme
      [2021 Wikidot Theme]
-@@ -61,7 +105,6 @@
+     Created by Cole 13
      CC BY-SA 3.0
  */
  
@@ -164,7 +158,7 @@ with `python3 review/build_review.py`; verify with
  
  #header-extra-div-1{  
      animation-name: floating;
-@@ -92,7 +135,7 @@
+@@ -92,7 +128,7 @@
      text-align: center;
      content: "The Wandsmen";
      color: #ffffff;
@@ -173,7 +167,7 @@ with `python3 review/build_review.py`; verify with
      font-size: 2.3rem;
      text-shadow: 0rem 0rem 0.3125rem #000000;
      position: absolute;
-@@ -106,7 +149,7 @@
+@@ -106,7 +142,7 @@
      content: "";
  }
  #header #header-extra-div-1 {
@@ -182,7 +176,7 @@ with `python3 review/build_review.py`; verify with
      background-size :195px;
      height: 195px;
  }
-@@ -118,7 +161,7 @@
+@@ -118,7 +154,7 @@
  /* -=- HEADER BACKGROUND -=- */
  
  div#container-wrap {
@@ -191,7 +185,7 @@ with `python3 review/build_review.py`; verify with
      background-size: 100%;
  }
  
-@@ -217,22 +260,22 @@
+@@ -217,22 +253,22 @@
  
  /* -=- SIDEBAR -=- */
  
@@ -224,7 +218,7 @@ with `python3 review/build_review.py`; verify with
      color: #D196eb;
  }
  
-@@ -295,6 +338,5 @@
+@@ -295,6 +331,5 @@
      border: solid 0.0625rem #825ec0;
  }
  

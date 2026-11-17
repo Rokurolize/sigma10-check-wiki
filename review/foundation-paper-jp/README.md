@@ -173,6 +173,18 @@ The 6 heuristic blocks are the one-line prose and specimen translations counted 
 
 The usage snippet is the one line a reader copies to adopt the theme, and on the bytes it names the wrong page. Candidate L25 reads `> @@[[include :scp-jp:theme:foundation-paper]]@@`. This candidate is theme:foundation-paper-jp: its canonical file is `pages/theme:foundation-paper-jp.txt` and its frame `theme=` URL names `theme%3Afoundation-paper-jp`, and the batch's other candidates with usage snippets name their own `-jp` pages in theirs. Probes run for this package (2026-11-17): `https://scp-jp.wikidot.com/theme:foundation-paper` returns 404 and `https://scp-jp.wikidot.com/theme:foundation-paper-jp` returns 404 — neither page is posted yet, so the probe cannot settle intent; what the bytes settle is that the snippet is inconsistent with the candidate's own identity, and if the candidate posts under its canonical name the snippet will point at a page that does not exist. No ledger line dispositions the snippet's name (the T1 pseudo-ref class (iii) covers references to the not-yet-posted page itself, which this is not, on the bytes). The candidate is left exactly as it stands, per the standing rule for fix lanes; the repair, if the coordinator confirms it, is the one-line repoint of candidate L25 to the candidate's own page name, after which this package's diff.md and stamp need no change beyond regeneration (the candidate file's hash in the stamp would change).
 
+## Per-theme record
+
+
+### Post-package repairs (REFRESH3-D)
+
+Recopy brought one post-package repair in: built at `6e17ffa` before 722ceb5, the candidate still carried the dead frame parameter; the recopy removed exactly that line (6,696 → 6,610 bytes).
+
+- **FIX-FRAMEADDR, sub-shape (B) — Introduced** (report `R/review-scout/FIX-FRAMEADDR.md` §2; landing `722ceb5c949172bb5185d51ef56ce4119ee4fa91`, 2026-11-17): the original carries no interwiki-style frame and no `theme=` self-address in that role; the porting wave introduced the frame with `theme=` naming its own draft-host `local--code/theme%3Afoundation-paper-jp/1`, a fragment the page does not carry (delivery is the inline `[[module CSS]]`). Remedy: the single `| theme=...` line was deleted; the frame include and its `priority=1` line are kept. Current candidate frame at L1.
+- **Original evidence:** no original frame, no `theme=`, no local--code (KO integration). No other repair touches this file.
+
+Stamp treatment follows the jiha-jp / alexylva-university-jp precedents: the regenerated verdict stamp reads STALE, no re-judgement is fabricated, and the frozen GOSIGN2 ledger remains the verdict record.
+
 ## Change set outside the two diffed files
 
 The diff covers two files; the port's record is one file larger. `pages/theme-decoration-sample-foundation-paper-jp.txt` is the decoration sample the render checks ran against (its findings are the sample half of section 11(2)); it belongs to this theme's record but carries no port change of its own to explain here. There are no companion fragments, no shared base file, and no inbound-link repairs in other candidates for this theme.

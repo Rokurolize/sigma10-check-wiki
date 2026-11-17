@@ -105,7 +105,7 @@ with `python3 review/build_review.py`; verify with
 -[[size 120%]]**在任意页面中：**[[/size]]
 -[[size 160%]]**{{@@[[include @@[[span style="opacity: 70%;"]]@@:scp-wiki-cn:@@[[/span]]@@theme:deepspace]]@@}}**[[/size]]
 +[[size 120%]]**任意のページで：**[[/size]]
-+[[size 160%]]**{{@@[[include @@[[span style="opacity: 70%;"]]@@:scp-jp:@@[[/span]]@@theme:deepspace]]@@}}**[[/size]]
++[[size 160%]]**{{@@[[include @@[[span style="opacity: 70%;"]]@@:scp-jp:@@[[/span]]@@theme:deepspace-jp]]@@}}**[[/size]]
  [[/=]]
  
  [[div style="margin-top: 8rem;"]]

@@ -15,11 +15,11 @@ adjudicated explanation.
 | | Lines |
 |---|---|
 | original.txt | 496 |
-| candidate.txt | 1356 |
-| Added | +1028 |
-| Review-stage comments | 0 of the +1028 added lines |
+| candidate.txt | 1355 |
+| Added | +1027 |
+| Review-stage comments | 0 of the +1027 added lines |
 | Removed | -168 |
-| Changed | 1196 |
+| Changed | 1195 |
 | Change blocks | 68 |
 | Diff sections (context 3) | 6 |
 
@@ -28,89 +28,89 @@ adjudicated explanation.
 | Auto-class | Blocks | Changed lines |
 |---|---|---|
 | mechanical | 4 | 8 |
-| supplement | 5 | 47 |
+| supplement | 5 | 46 |
 | residual | 59 | 1141 |
 
 ## Change-block index
 
 | # | Section | Original | Candidate | +/− | Auto-class | Gist |
 |---|---|---|---|---|---|---|
-| 1 | 1 | 1–6 | 1–4 | +4/−6 | supplement | [[include :scp-jp:component:interwiki-style |
-| 2 | 1 | 8–9 | 6–6 | +1/−2 | residual | [[iftags +テーマ]] |
-| 3 | 1 | 11–13 | 8–17 | +10/−3 | supplement | [[include :scp-jp:credit:start-preview]] |
-| 4 | 1 | 15–16 | 19–19 | +1/−2 | residual | Basaltを基盤に、512以降の記事群向けの赤いアクセントとヘッダーを加えたテーマです。 |
-| 5 | 1 | 18–21 | 21–21 | +1/−4 | residual | **使い方:** @@[[include theme:512-onwards-jp]]@@ |
-| 6 | 1 | 23–23 | 23–23 | +1/−1 | residual | **基盤:** Basalt（インライン） |
-| 7 | 1 | 25–25 | 25–25 | +1/−1 | residual | [[module CSS]] |
-| 8 | 1 | 27–28 | 27–44 | +18/−2 | supplement | @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;7… |
-| 9 | 1 | 30–30 | 46–48 | +3/−1 | residual | /*-----------------*/ |
-| 10 | 1 | 32–32 | 50–50 | +1/−1 | supplement | @import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Abasalt-j… |
-| 11 | 1 | 34–34 | 52–52 | +1/−1 | supplement | @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,… |
-| 12 | 1 | 36–44 | 54–54 | +1/−9 | residual | :root { |
-| 13 | 1 | 46–46 | 56–58 | +3/−1 | residual | /*----------------------*/ |
-| 14 | 1 | 48–48 | 60–61 | +2/−1 | residual | --header-logo: var(--logo); |
-| 15 | 1 | 50–55 | 63–66 | +4/−6 | residual | --header-title: var(--title); |
-| 16 | 1 | 57–67 | 68–74 | +7/−11 | residual | --main-content-width: 60rem; |
-| 17 | 1 | 69–69 | 76–77 | +2/−1 | residual | --header-font-primary: var(--UI-font-primary); |
-| 18 | 1 | 71–73 | 79–88 | +10/−3 | residual | --basalt-overtone: 10, 10, 11; |
-| 19 | 1 | 75–75 | 90–98 | +9/−1 | residual | --title-border-color: var(--basalt-overtone); |
-| 20 | 1 | 77–77 | 100–105 | +6/−1 | residual | --side-bar-heading-background-color: 0, 0, 2, 0.07; |
-| 21 | 1 | 79–79 | 107–109 | +3/−1 | residual | /*---------------------*/ |
-| 22 | 1 | 81–81 | 111–117 | +7/−1 | residual | --basalt-UI-background-color: var(--basalt-secondary-color); |
-| 23 | 1 | 83–83 | 119–129 | +11/−1 | residual | --basalt-UI-text-color: var(--basalt-main-text-color); |
-| 24 | 1 | 85–85 | 131–138 | +8/−1 | residual | --ACS-font: var(--header-font); |
-| 25 | 1 | 87–87 | 140–141 | +2/−1 | residual | --header-drop-shadow-opacity: 0.1; |
-| 26 | 1 | 89–89 | 143–145 | +3/−1 | residual | /*-----------------------*/ |
-| 27 | 1 | 91–91 | 147–150 | +4/−1 | residual | /* Info Bar */ |
-| 28 | 1 | 93–93 | 152–154 | +3/−1 | residual | /* BetterFootnotes */ |
-| 29 | 1 | 95–95 | 156–162 | +7/−1 | residual | /* ACS */ |
-| 30 | 1 | 97–97 | 164–164 | +1/−1 | residual | } |
-| 31 | 1 | 99–99 | 166–168 | +3/−1 | residual | /*------------------------*/ |
-| 32 | 1 | 101–101 | 170–173 | +4/−1 | residual | :is(div.blockquote, blockquote) { |
-| 33 | 1 | 103–103 | 175–177 | +3/−1 | residual | :is(div.blockquote, blockquote):has(div.floatbox) { |
-| 34 | 1 | 105–105 | 179–181 | +3/−1 | residual | #page-content div.notation { |
-| 35 | 1 | 107–107 | 183–193 | +11/−1 | residual | div.notation { |
-| 36 | 1 | 109–109 | 195–197 | +3/−1 | residual | #page-content div.modal { |
-| 37 | 1 | 111–111 | 199–208 | +10/−1 | residual | div.modal { |
-| 38 | 1 | 113–113 | 210–212 | +3/−1 | residual | #page-content div.smallmodal { |
-| 39 | 1 | 115–115 | 214–223 | +10/−1 | residual | div.smallmodal { |
-| 40 | 1 | 117–117 | 225–227 | +3/−1 | residual | #page-content div:is(.jotting, .transcript) { |
-| 41 | 1 | 119–119 | 229–238 | +10/−1 | residual | div:is(.jotting, .transcript) { |
-| 42 | 1 | 121–121 | 240–242 | +3/−1 | residual | #page-content div.papernote { |
-| 43 | 1 | 123–123 | 244–251 | +8/−1 | residual | div.papernote { |
-| 44 | 1 | 125–125 | 253–255 | +3/−1 | residual | #page-content div:is(.document, .darkdocument) { |
-| 45 | 1 | 127–127 | 257–264 | +8/−1 | residual | div:is(.document, .darkdocument) { |
-| 46 | 1 | 129–129 | 266–270 | +5/−1 | residual | div.document { |
-| 47 | 1 | 131–131 | 272–276 | +5/−1 | residual | div.darkdocument { |
-| 48 | 1 | 133–133 | 278–285 | +8/−1 | residual | div:is(.document, .darkdocument)::before, |
-| 49 | 1 | 135–135 | 287–489 | +203/−1 | residual | div:is(.document, .darkdocument)::before { |
-| 50 | 1 | 138–138 | 492–496 | +5/−1 | residual | body, |
-| 51 | 1 | 140–140 | 498–498 | +1/−1 | residual | @supports (font-feature-settings: inherit) { |
-| 52 | 1 | 142–142 | 500–1046 | +547/−1 | residual | *, |
-| 53 | 1 | 145–145 | 1049–1049 | +1/−1 | residual | @supports (-webkit-touch-callout: none) /* Targets iOS only */ { |
-| 54 | 1 | 147–147 | 1051–1055 | +5/−1 | residual | :is(#page-content table:not(.form), table.wiki-content-table) { |
-| 55 | 1 | 149–149 | 1057–1057 | +1/−1 | residual | } |
-| 56 | 1 | 151–151 | 1059–1067 | +9/−1 | residual | :is(#page-content table:not(.form), table.wiki-content-table) th { |
-| 57 | 1 | 153–153 | 1069–1071 | +3/−1 | residual | :where(#page-content) table:not(.form), table.wiki-content-table { |
-| 58 | 1 | 155–155 | 1073–1076 | +4/−1 | residual | #page-content .quadrants > div { |
-| 59 | 1 | 157–157 | 1078–1080 | +3/−1 | residual | .printuser a { |
-| 60 | 1 | 159–161 | 1082–1084 | +3/−3 | residual | /*-------------------------------------------------*/ |
+| 1 | 1 | 1–6 | 1–3 | +3/−6 | supplement | [[include :scp-jp:component:interwiki-style |
+| 2 | 1 | 8–9 | 5–5 | +1/−2 | residual | [[iftags +テーマ]] |
+| 3 | 1 | 11–13 | 7–16 | +10/−3 | supplement | [[include :scp-jp:credit:start-preview]] |
+| 4 | 1 | 15–16 | 18–18 | +1/−2 | residual | Basaltを基盤に、512以降の記事群向けの赤いアクセントとヘッダーを加えたテーマです。 |
+| 5 | 1 | 18–21 | 20–20 | +1/−4 | residual | **使い方:** @@[[include theme:512-onwards-jp]]@@ |
+| 6 | 1 | 23–23 | 22–22 | +1/−1 | residual | **基盤:** Basalt（インライン） |
+| 7 | 1 | 25–25 | 24–24 | +1/−1 | residual | [[module CSS]] |
+| 8 | 1 | 27–28 | 26–43 | +18/−2 | supplement | @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;7… |
+| 9 | 1 | 30–30 | 45–47 | +3/−1 | residual | /*-----------------*/ |
+| 10 | 1 | 32–32 | 49–49 | +1/−1 | supplement | @import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Abasalt-j… |
+| 11 | 1 | 34–34 | 51–51 | +1/−1 | supplement | @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,… |
+| 12 | 1 | 36–44 | 53–53 | +1/−9 | residual | :root { |
+| 13 | 1 | 46–46 | 55–57 | +3/−1 | residual | /*----------------------*/ |
+| 14 | 1 | 48–48 | 59–60 | +2/−1 | residual | --header-logo: var(--logo); |
+| 15 | 1 | 50–55 | 62–65 | +4/−6 | residual | --header-title: var(--title); |
+| 16 | 1 | 57–67 | 67–73 | +7/−11 | residual | --main-content-width: 60rem; |
+| 17 | 1 | 69–69 | 75–76 | +2/−1 | residual | --header-font-primary: var(--UI-font-primary); |
+| 18 | 1 | 71–73 | 78–87 | +10/−3 | residual | --basalt-overtone: 10, 10, 11; |
+| 19 | 1 | 75–75 | 89–97 | +9/−1 | residual | --title-border-color: var(--basalt-overtone); |
+| 20 | 1 | 77–77 | 99–104 | +6/−1 | residual | --side-bar-heading-background-color: 0, 0, 2, 0.07; |
+| 21 | 1 | 79–79 | 106–108 | +3/−1 | residual | /*---------------------*/ |
+| 22 | 1 | 81–81 | 110–116 | +7/−1 | residual | --basalt-UI-background-color: var(--basalt-secondary-color); |
+| 23 | 1 | 83–83 | 118–128 | +11/−1 | residual | --basalt-UI-text-color: var(--basalt-main-text-color); |
+| 24 | 1 | 85–85 | 130–137 | +8/−1 | residual | --ACS-font: var(--header-font); |
+| 25 | 1 | 87–87 | 139–140 | +2/−1 | residual | --header-drop-shadow-opacity: 0.1; |
+| 26 | 1 | 89–89 | 142–144 | +3/−1 | residual | /*-----------------------*/ |
+| 27 | 1 | 91–91 | 146–149 | +4/−1 | residual | /* Info Bar */ |
+| 28 | 1 | 93–93 | 151–153 | +3/−1 | residual | /* BetterFootnotes */ |
+| 29 | 1 | 95–95 | 155–161 | +7/−1 | residual | /* ACS */ |
+| 30 | 1 | 97–97 | 163–163 | +1/−1 | residual | } |
+| 31 | 1 | 99–99 | 165–167 | +3/−1 | residual | /*------------------------*/ |
+| 32 | 1 | 101–101 | 169–172 | +4/−1 | residual | :is(div.blockquote, blockquote) { |
+| 33 | 1 | 103–103 | 174–176 | +3/−1 | residual | :is(div.blockquote, blockquote):has(div.floatbox) { |
+| 34 | 1 | 105–105 | 178–180 | +3/−1 | residual | #page-content div.notation { |
+| 35 | 1 | 107–107 | 182–192 | +11/−1 | residual | div.notation { |
+| 36 | 1 | 109–109 | 194–196 | +3/−1 | residual | #page-content div.modal { |
+| 37 | 1 | 111–111 | 198–207 | +10/−1 | residual | div.modal { |
+| 38 | 1 | 113–113 | 209–211 | +3/−1 | residual | #page-content div.smallmodal { |
+| 39 | 1 | 115–115 | 213–222 | +10/−1 | residual | div.smallmodal { |
+| 40 | 1 | 117–117 | 224–226 | +3/−1 | residual | #page-content div:is(.jotting, .transcript) { |
+| 41 | 1 | 119–119 | 228–237 | +10/−1 | residual | div:is(.jotting, .transcript) { |
+| 42 | 1 | 121–121 | 239–241 | +3/−1 | residual | #page-content div.papernote { |
+| 43 | 1 | 123–123 | 243–250 | +8/−1 | residual | div.papernote { |
+| 44 | 1 | 125–125 | 252–254 | +3/−1 | residual | #page-content div:is(.document, .darkdocument) { |
+| 45 | 1 | 127–127 | 256–263 | +8/−1 | residual | div:is(.document, .darkdocument) { |
+| 46 | 1 | 129–129 | 265–269 | +5/−1 | residual | div.document { |
+| 47 | 1 | 131–131 | 271–275 | +5/−1 | residual | div.darkdocument { |
+| 48 | 1 | 133–133 | 277–284 | +8/−1 | residual | div:is(.document, .darkdocument)::before, |
+| 49 | 1 | 135–135 | 286–488 | +203/−1 | residual | div:is(.document, .darkdocument)::before { |
+| 50 | 1 | 138–138 | 491–495 | +5/−1 | residual | body, |
+| 51 | 1 | 140–140 | 497–497 | +1/−1 | residual | @supports (font-feature-settings: inherit) { |
+| 52 | 1 | 142–142 | 499–1045 | +547/−1 | residual | *, |
+| 53 | 1 | 145–145 | 1048–1048 | +1/−1 | residual | @supports (-webkit-touch-callout: none) /* Targets iOS only */ { |
+| 54 | 1 | 147–147 | 1050–1054 | +5/−1 | residual | :is(#page-content table:not(.form), table.wiki-content-table) { |
+| 55 | 1 | 149–149 | 1056–1056 | +1/−1 | residual | } |
+| 56 | 1 | 151–151 | 1058–1066 | +9/−1 | residual | :is(#page-content table:not(.form), table.wiki-content-table) th { |
+| 57 | 1 | 153–153 | 1068–1070 | +3/−1 | residual | :where(#page-content) table:not(.form), table.wiki-content-table { |
+| 58 | 1 | 155–155 | 1072–1075 | +4/−1 | residual | #page-content .quadrants > div { |
+| 59 | 1 | 157–157 | 1077–1079 | +3/−1 | residual | .printuser a { |
+| 60 | 1 | 159–161 | 1081–1083 | +3/−3 | residual | /*-------------------------------------------------*/ |
 | 61 | 1 | 164–214 | — | +0/−51 | residual | [[div class="hr_memo"]] |
 | 62 | 1 | 217–220 | — | +0/−4 | residual | [[collapsible]] |
-| 63 | 2 | 311–311 | 1179–1179 | +1/−1 | mechanical | (blank lines only) |
-| 64 | 3 | 326–326 | 1194–1194 | +1/−1 | mechanical | (blank lines only) |
-| 65 | 4 | 349–349 | 1217–1217 | +1/−1 | mechanical | (blank lines only) |
-| 66 | 5 | 371–371 | 1239–1239 | +1/−1 | mechanical | (blank lines only) |
-| 67 | 6 | 486–490 | 1354–1354 | +1/−5 | residual | [[/module]] |
+| 63 | 2 | 311–311 | 1178–1178 | +1/−1 | mechanical | (blank lines only) |
+| 64 | 3 | 326–326 | 1193–1193 | +1/−1 | mechanical | (blank lines only) |
+| 65 | 4 | 349–349 | 1216–1216 | +1/−1 | mechanical | (blank lines only) |
+| 66 | 5 | 371–371 | 1238–1238 | +1/−1 | mechanical | (blank lines only) |
+| 67 | 6 | 486–490 | 1353–1353 | +1/−5 | residual | [[/module]] |
 | 68 | 6 | 493–496 | — | +0/−4 | residual | [[module CSS]] |
 
 ## Full diff
 
 <details>
-<summary>Section 1 — original 1–223 · candidate 1–1091 · +1023/−155 · residual, supplement</summary>
+<summary>Section 1 — original 1–223 · candidate 1–1090 · +1022/−155 · residual, supplement</summary>
 
 ```diff
-@@ -1,223 +1,1091 @@
+@@ -1,223 +1,1090 @@
 -[[iftags +theme]]
 -[[module css]]
 -@import url('https://scp-wiki.wdfiles.com/local--code/theme%3Abasalt/1');
@@ -119,7 +119,6 @@ adjudicated explanation.
 -[[/module]]
 +[[include :scp-jp:component:interwiki-style
 +| priority=1
-+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3A512-onwards-jp/1
 +]]
  
 -[[=]]
@@ -1362,10 +1361,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 6 — original 483–496 · candidate 1351–1356 · +1/−9 · residual</summary>
+<summary>Section 6 — original 483–496 · candidate 1350–1355 · +1/−9 · residual</summary>
 
 ```diff
-@@ -483,14 +1351,6 @@
+@@ -483,14 +1350,6 @@
      background-color: #ff3d47;
  }
  
@@ -1389,7 +1388,7 @@ adjudicated explanation.
 <summary>Purely mechanical sections (2, 3, 4, 5) — whitespace, host, and branch-token changes only (heuristic)</summary>
 
 ```diff
-@@ -308,7 +1176,7 @@
+@@ -308,7 +1175,7 @@
    --s: var(--onwards-header-sizing);
    --c1: rgb(var(--onwards-pattern-color1));
    --c2: rgb(var(--onwards-pattern-color2)); 
@@ -1401,7 +1400,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -323,7 +1191,7 @@
+@@ -323,7 +1190,7 @@
  #side-bar {
     margin-top: var(--top-bar-height);
  }
@@ -1413,7 +1412,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -346,7 +1214,7 @@
+@@ -346,7 +1213,7 @@
  opacity: var(--icon-opacity);
  }
  
@@ -1425,7 +1424,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -368,7 +1236,7 @@
+@@ -368,7 +1235,7 @@
      --header-top-gap: 0rem;
      --main-content-side-margin: calc(0.25rem + 2.25vw);
  }

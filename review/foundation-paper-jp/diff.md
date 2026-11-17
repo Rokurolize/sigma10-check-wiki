@@ -8,16 +8,16 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 230 |
-| candidate.txt | 245 |
-| Added | +77 |
-| Review-stage comments | 0 of the +77 added lines |
+| candidate.txt | 244 |
+| Added | +76 |
+| Review-stage comments | 0 of the +76 added lines |
 | Removed | -71 |
 | Hunks | 3 |
 
 ```diff
 --- original.txt
 +++ candidate.txt
-@@ -1,101 +1,116 @@
+@@ -1,101 +1,115 @@
 -[[iftags +테마]]
 -[[>]]
 -[[module Rate]]
@@ -33,7 +33,6 @@ with `python3 review/build_review.py`; verify with
 -본 테마를 적용할 페이지 상단에 다음 구문을 붙여넣으세요.
 +[[include :scp-jp:component:interwiki-style
 +| priority=1
-+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Afoundation-paper-jp/1
 +]]
 +
 +[[iftags +テーマ]]
@@ -203,7 +202,7 @@ with `python3 review/build_review.py`; verify with
  }
  
  #header h1 a {
-@@ -104,7 +119,7 @@
+@@ -104,7 +118,7 @@
  
  #header h1 a::before {
      visibility: visible;
@@ -212,7 +211,7 @@ with `python3 review/build_review.py`; verify with
  }
  
  #header h2 span {
-@@ -113,7 +128,7 @@
+@@ -113,7 +127,7 @@
  
  #header h2 span::before {
      visibility: visible;

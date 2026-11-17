@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:king-s-palace-jp — origin KO, population #271 [GOSIGN2-LEDGER (b) row 271]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now ffb47dbdce758da2329eb1f68c4b67ce611458d40eeaedae7a903aa67f93282f); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 31f6780c467e1b7f9609b8fcc090291ddae73b8b17d46cbfe5c48278a4d9a5ce); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 4 errors / 3 warns / 2 infos (pseudo-ref×4); standing classes dispositioned in register c1 [T1-ROWS row 275; GOSIGN2-LEDGER (b) row 271]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page runtime-hotlink site-theme chain only; sample credit-modal (preview-form) + 884px@768 overflow; T3 none beyond cross-cutting items. [RENDER-ROWS-2 (RENDER-S2-H (KO5))]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 270, source LOCALIZE-S2-F]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 270]
 - FIX5 re-judgement: item 105 (class C) FIXED — FIX5-INFO, commit 9a1c86a: info-module / duplicate credit residue removed [GOSIGN2-LEDGER-SUPPLEMENT (a) item 105]
-- Computed against: canonical commit 722ceb5c949172bb5185d51ef56ce4119ee4fa91; candidate file pages/theme:king-s-palace-jp.txt sha256:ffb47dbdce758da2329eb1f68c4b67ce611458d40eeaedae7a903aa67f93282f; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit f5acc90cbb800f3c0752713589322929dac75821; candidate file pages/theme:king-s-palace-jp.txt sha256:31f6780c467e1b7f9609b8fcc090291ddae73b8b17d46cbfe5c48278a4d9a5ce; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -178,6 +178,16 @@ The verdict was computed against the candidate as FIX5 left it. Three later comm
 ### The T7 credit correction (B22)
 
 The appended module at candidate L635–641 restates one rule. The original styles the credit anchor as `.creditButton p a` (original L519–522), because the KO credit module wraps the anchor in a `<p>`; the JP credit module emits the anchor as a direct child of `.creditButton`, so that selector can never match in the JP environment. The candidate carries the original rule in place (candidate L530–533, where it is inert) and the appended module ships the same two declarations (`border-left: none !important; color: #000 !important`) under the corrected selector `#page-content .rate-box-with-credit-button .creditButton a`, with its reason stated in its own comment (candidate L636; section 10). This is the T7 class in its correction form (R6): the theme's own credit CSS is not supplemented from the basalt selector set, it is repaired at the point where the module DOM changed.
+
+
+### Post-package repairs (REFRESH3-D)
+
+FIX-FRAMEADDR (`722ceb5`, sub-shape (B)) lands *before* this package's candidate build (`ae7b058`), so the frame at L1 was already remedied; recopy confirms no byte change from it. The earlier repairs this file carries (source-link, info residue, credit fields, usage sweep) also predate the build and are recorded in the package record. The one post-package repair is the exhibit slug below.
+
+- **FIX-FRAMEADDR, sub-shape (B) — Introduced** (report `R/review-scout/FIX-FRAMEADDR.md` §2; landing `722ceb5c949172bb5185d51ef56ce4119ee4fa91`, 2026-11-17): the original carries no interwiki-style frame and no `theme=` self-address in that role; the porting wave introduced the frame with `theme=` naming its own draft-host `local--code/theme%3Aking-s-palace-jp/1`, a fragment the page does not carry (delivery is the inline `[[module CSS]]`). Remedy: the single `| theme=...` line was deleted; the frame include and its `priority=1` line are kept. Current candidate frame at L1.
+- **FIX-RFIX6 — visited-link exhibit slug** (report `R/review-scout/FIX-RFIX6.md`; landing `f5acc90cbb800f3c0752713589322929dac75821`, 2026-11-17): candidate L54 `[[[theme:king-s-palace|訪問済みリンク]]]` → `[[[theme:king-s-palace-jp|訪問済みリンク]]]`, the -jp posting name. Recopy changed this line only (13,481 → 13,484 bytes).
+
+Stamp treatment follows the jiha-jp / alexylva-university-jp precedents: the regenerated verdict stamp reads STALE, no re-judgement is fabricated, and the frozen GOSIGN2 ledger remains the verdict record.
 
 ## Change set outside the two diffed files
 

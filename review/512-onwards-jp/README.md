@@ -166,6 +166,16 @@ Adjudication for this README (every block was read against the bytes): the DELIV
 
 The original page is a theme page in the EN style: a short intro, then Settings, Elements, and Custom Divs exhibits demonstrating the theme's variables and memo classes, a Wrap-Up, and the source in a collapsible. The candidate keeps none of that body. The porting wave that produced it (Stage 2 EN batch 1) built delivery pages: frame, credit, a three-line body, and the CSS. Nothing in the ledger, the localize row, or the FIX3/FIX4 records names the exhibit drop as a decision, and the render record cannot speak to it, because the composition's sample pages are include stubs on both sides. The classes the exhibits demonstrated remain usable (their CSS moved intact, section 8), so the loss is documentation, not function. This record exists so a reviewer does not have to discover the absence by census, and so the patterns loop can decide whether the EN batch-1 lean body is a convention to name or a gap to repair.
 
+
+### Post-package repairs (REFRESH3-D)
+
+Recopy brought one post-package repair in: built at `9068bb7` before 722ceb5, the candidate still carried the dead frame parameter; the recopy removed exactly that line (36,970 → 36,889 bytes).
+
+- **FIX-FRAMEADDR, sub-shape (B) — Introduced** (report `R/review-scout/FIX-FRAMEADDR.md` §2; landing `722ceb5c949172bb5185d51ef56ce4119ee4fa91`, 2026-11-17): the original carries no interwiki-style frame and no `theme=` self-address in that role; the porting wave introduced the frame with `theme=` naming its own draft-host `local--code/theme%3A512-onwards-jp/1`, a fragment the page does not carry (delivery is the inline `[[module CSS]]`). Remedy: the single `| theme=...` line was deleted; the frame include and its `priority=1` line are kept. Current candidate frame at L1.
+- **Original evidence:** no original frame; tail `@import` of its own code/1 at original L495. No other repair touches this file.
+
+Stamp treatment follows the jiha-jp / alexylva-university-jp precedents: the regenerated verdict stamp reads STALE, no re-judgement is fabricated, and the frozen GOSIGN2 ledger remains the verdict record.
+
 ## Change set outside the two diffed files
 
 The diff covers two files; the port's record is two files larger. `pages/theme-decoration-sample-512-onwards-jp.txt` is the two-line decoration sample the render checks ran against (its findings are the sample half of section 11(2)); it belongs to this theme's record but carries no port change of its own to explain here. The candidate layers over `pages/theme:basalt-jp.txt` (sources.tsv kind K5b-3); the base's own package is a separate record (class U), and the inlined copy of its layer inside this candidate is accounted in section 3. There are no companion fragments and no inbound-link repairs in other candidates for this theme.

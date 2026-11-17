@@ -187,6 +187,18 @@ The classifier reports no residue blocks for this package. Its non-specific bloc
 | B27 | 387-387 → 391-391 (module-css → module-css) | heuristic CSS-BODY | Font-stack conversion (toc title stack); section 4 |
 | B28 | 395-395 → 399-399 (module-css → module-css) | heuristic CSS-BODY | Font-stack conversion (toc list stack); section 4 |
 
+## Per-theme record
+
+
+### Post-package repairs (REFRESH3-D)
+
+Recopy brought one post-package repair in: built at `f9cae19` before 722ceb5, the candidate still carried the dead frame parameter; the recopy removed exactly that line (10,503 → 10,413 bytes).
+
+- **FIX-FRAMEADDR, sub-shape (B) — Introduced** (report `R/review-scout/FIX-FRAMEADDR.md` §2; landing `722ceb5c949172bb5185d51ef56ce4119ee4fa91`, 2026-11-17): the original carries no interwiki-style frame and no `theme=` self-address in that role; the porting wave introduced the frame with `theme=` naming its own draft-host `local--code/theme%3Adeserted-years-theme-jp/1`, a fragment the page does not carry (delivery is the inline `[[module CSS]]`). Remedy: the single `| theme=...` line was deleted; the frame include and its `priority=1` line are kept. Current candidate frame at L1.
+- **Original evidence:** no original frame, no `theme=`, no local--code (CN integration). No other repair touches this file.
+
+Stamp treatment follows the jiha-jp / alexylva-university-jp precedents: the regenerated verdict stamp reads STALE, no re-judgement is fabricated, and the frozen GOSIGN2 ledger remains the verdict record.
+
 ## Change set outside the two diffed files
 
 The diff covers two files; the port's record is one file larger. `pages/theme-decoration-sample-deserted-years-theme-jp.txt` is the decoration sample the render checks ran against (its findings are the sample half of the T2/T3 row); it belongs to this theme's record but carries no port change of its own to explain here. There are no companion fragments, no shared base file, and no inbound-link repairs in other candidates for this theme.

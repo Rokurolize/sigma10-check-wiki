@@ -8,16 +8,16 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 311 |
-| candidate.txt | 240 |
-| Added | +75 |
-| Review-stage comments | 0 of the +75 added lines |
+| candidate.txt | 239 |
+| Added | +74 |
+| Review-stage comments | 0 of the +74 added lines |
 | Removed | -142 |
 | Hunks | 3 |
 
 ```diff
 --- original.txt
 +++ candidate.txt
-@@ -1,130 +1,64 @@
+@@ -1,130 +1,63 @@
 -[[iftags +theme]]
 -[[module css]]
 -@import url('https://scp-wiki.wdfiles.com/local--code/theme%3Abasalt/1');
@@ -147,7 +147,6 @@ with `python3 review/build_review.py`; verify with
 -[[code type="css"]]
 +[[include :scp-jp:component:interwiki-style
 +| priority=1
-+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aalcur-theme-jp/1
 +]]
 +
 +[[iftags +テーマ]]
@@ -209,7 +208,7 @@ with `python3 review/build_review.py`; verify with
  /*-- collapsibles --*/
  #page-content .collapsible-block-folded:not(.licensebox a, .info-container a, .default-style div),
  #page-content .collapsible-block-unfolded-link:not(.licensebox a, .info-container a, .default-style div) {
-@@ -250,7 +184,7 @@
+@@ -250,7 +183,7 @@
    --subtitle: "Curing Illnesses across Countless Infinities";
    --title-size: 2.0rem;
    --subtitle-size: 1.50rem;
@@ -218,7 +217,7 @@ with `python3 review/build_review.py`; verify with
  /*-- table --*/
    --basalt-th-background-color: 0, 41, 84;
  }
-@@ -282,30 +216,25 @@
+@@ -282,30 +215,25 @@
  #page-content .footnotes-footer .footnote-footer {
    background-color: white;
  }

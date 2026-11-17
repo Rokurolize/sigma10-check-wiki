@@ -344,6 +344,18 @@ specific and 6 heuristic, 0 residue.
 - P6 (frame) FIXED: the frame stands in its interwiki form at L1–3;
   its current parameter set is the codeaddr remedy's outcome (§3).
 
+## Per-theme record
+
+
+### Post-package repairs (REFRESH3-D)
+
+Recopy was a verified no-op: `candidate.txt` is byte-identical to the current canonical `pages/theme:spidersfalling-jp.txt`. No repair lands after this package's candidate build, so the record below is the slice's sub-shape and remedy, confirmed present in the built bytes.
+
+- **FIX-FRAMEADDR, sub-shape (B) — Introduced** (report `R/review-scout/FIX-FRAMEADDR.md` §2; landing `722ceb5c949172bb5185d51ef56ce4119ee4fa91`, 2026-11-17): the original carries no interwiki-style frame and no `theme=` self-address in that role; the porting wave introduced the frame with `theme=` naming its own draft-host `local--code/theme%3Aspidersfalling-jp/1`, a fragment the page does not carry (delivery is the inline `[[module CSS]]`). Remedy: the single `| theme=...` line was deleted; the frame include and its `priority=1` line are kept. Current candidate frame at L1.
+- The two post-FIX5 landings (b5cb724 usage sweep and 722ceb5 frame remedy) are already recorded in sections 3 and 11 and the multi-wave provenance; both predate the package build `cb269a7`.
+
+Stamp treatment follows the jiha-jp / alexylva-university-jp precedents: the regenerated verdict stamp reads STALE, no re-judgement is fabricated, and the frozen GOSIGN2 ledger remains the verdict record.
+
 ## Change set outside the two diffed files
 
 None belonging to this theme beyond the two stamp-cause landings

@@ -164,6 +164,16 @@ Adjudication for this README (every block was read against the bytes): the heuri
 
 KB-01's rule is mechanical: a raw colon in a `local--files` page address breaks the address, so the port encodes it. This candidate encodes two of its three colon addresses (the logo, twice) and leaves the third — a collaborator's file at `collab:dr-moist:theatre` on smlt.wdfiles.com — exactly as the original wrote it. The ledger's c1 register records why: the encoded form of that address does not serve. Encoding it would satisfy the checker and break the image; leaving it keeps the image and costs one standing checker error, dispositioned once, run-wide, as a named precedent rather than a per-lane judgment. A reviewer can re-derive the whole decision from this package: the two encoded forms are candidate L47 and L185, the unencoded form is candidate L100, and the original's three addresses are original L25, L169, and the memo rule in its first module.
 
+
+### Post-package repairs (REFRESH3-D)
+
+Recopy brought one post-package repair in: built at `9068bb7` before 722ceb5, the candidate still carried the dead frame parameter; the recopy removed exactly that line (5,612 → 5,540 bytes).
+
+- **FIX-FRAMEADDR, sub-shape (B) — Introduced** (report `R/review-scout/FIX-FRAMEADDR.md` §2; landing `722ceb5c949172bb5185d51ef56ce4119ee4fa91`, 2026-11-17): the original carries no interwiki-style frame and no `theme=` self-address in that role; the porting wave introduced the frame with `theme=` naming its own draft-host `local--code/theme%3A5k-jp/1`, a fragment the page does not carry (delivery is the inline `[[module CSS]]`). Remedy: the single `| theme=...` line was deleted; the frame include and its `priority=1` line are kept. Current candidate frame at L5.
+- **Original evidence:** one plain `[[code]]` block (original L268), no frame, no `theme=`, no local--code line. (The unencoded-colon item is a separate earlier class, left as found.)
+
+Stamp treatment follows the jiha-jp / alexylva-university-jp precedents: the regenerated verdict stamp reads STALE, no re-judgement is fabricated, and the frozen GOSIGN2 ledger remains the verdict record.
+
 ## Change set outside the two diffed files
 
 The diff covers two files; the port's record is one file larger. `pages/theme-decoration-sample-5k-jp.txt` is the decoration sample the render checks ran against (its findings are the sample half of section 11(3)); it belongs to this theme's record but carries no port change of its own to explain here. The candidate layers over `pages/theme:basalt-jp.txt` by the include of section 2; the base's own package is a separate record (class U). There are no companion fragments and no inbound-link repairs in other candidates for this theme.

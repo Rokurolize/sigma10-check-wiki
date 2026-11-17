@@ -8,16 +8,16 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 306 |
-| candidate.txt | 213 |
-| Added | +30 |
-| Review-stage comments | 0 of the +30 added lines |
+| candidate.txt | 212 |
+| Added | +29 |
+| Review-stage comments | 0 of the +29 added lines |
 | Removed | -123 |
 | Hunks | 7 |
 
 ```diff
 --- original.txt
 +++ candidate.txt
-@@ -1,9 +1,33 @@
+@@ -1,9 +1,32 @@
  [[div style="display: none;"]]
 -[[include :scp-wiki:theme:basalt darkmode=a|wide=a]]
 +[[include theme:basalt-jp darkmode=a|wide=a]]
@@ -25,7 +25,6 @@ with `python3 review/build_review.py`; verify with
  
 +[[include :scp-jp:component:interwiki-style
 +| priority=1
-+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3A5k-jp/1
 +]]
 +
 +[[iftags +テーマ]]
@@ -53,7 +52,7 @@ with `python3 review/build_review.py`; verify with
  /* SCP: 5K Theme              */
  /* [2023 Wikidot Theme]       */
  /*                            */
-@@ -13,8 +37,6 @@
+@@ -13,8 +36,6 @@
  /*---- IMPORTS ----*/
  /*-----------------*/
  
@@ -62,7 +61,7 @@ with `python3 review/build_review.py`; verify with
  
  :root {
  
-@@ -22,7 +44,7 @@
+@@ -22,7 +43,7 @@
      /*---- BEDROCK VARS ----*/
      /*----------------------*/
  
@@ -71,7 +70,7 @@ with `python3 review/build_review.py`; verify with
  
      --title: "SCP: 5K";
  
-@@ -41,7 +63,7 @@
+@@ -41,7 +62,7 @@
      --basalt-tertiary-color: 30, 30, 30;
      --general-border-color: 40, 40, 40;
      --basalt-main-text-color: 210, 210, 210;
@@ -80,7 +79,7 @@ with `python3 review/build_review.py`; verify with
      --basalt-focus-color: var(--basalt-bright-element-color);
      --selection-text-color: var(--basalt-main-text-color);
      --header-background-color: var(--basalt-primary-color);
-@@ -63,7 +85,7 @@
+@@ -63,7 +84,7 @@
  }
  
  #page-content .metam {
@@ -89,7 +88,7 @@ with `python3 review/build_review.py`; verify with
      color: transparent !important;
      background-color: transparent !important;
      border: none !important;
-@@ -158,15 +180,9 @@
+@@ -158,15 +179,9 @@
      background-color: rgba(var(--selection-background-color), 0.4);
  }
  
@@ -106,7 +105,7 @@ with `python3 review/build_review.py`; verify with
  
      --header-title: "AREA-12";
  
-@@ -192,115 +208,6 @@
+@@ -192,115 +207,6 @@
  div#account-options>ul>li>a {
      transition: color 0.4s;
  }

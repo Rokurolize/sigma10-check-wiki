@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:deepspace-jp — origin CN, population #181 [GOSIGN2-LEDGER (b) row 181]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now a6eeb7f77f041e2847150ccc1119b7209913c932f53727914a66d4fb6a833152); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 30476e077361ddec42729ef3810297a38f0396fed3457d33759e3be58076208f); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 2 errors / 1 warn / 2 infos (pseudo-ref×2); standing classes dispositioned in register c1 [T1-ROWS row 216; GOSIGN2-LEDGER (b) row 181]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — hidden-rate on both pages (all combos); page-overflow 501–502px@320/375 (page) and 505–506px@320/375 + 789px@768 + 1489px@1366 (sample); runtime-hotlink site-theme chain. [RENDER-ROWS-2 (RENDER-S2-E (CN4))]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 4 [LOCALIZE-ROWS row 180, source LOCALIZE-S2-D]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 180]
 - FIX5 re-judgement: item 54 (class B) FIXED — FIX5-FURNB, commit 25bb0b4: duplicate bare Rate block removed [GOSIGN2-LEDGER-SUPPLEMENT (a) item 54]
-- Computed against: canonical commit 722ceb5c949172bb5185d51ef56ce4119ee4fa91; candidate file pages/theme:deepspace-jp.txt sha256:a6eeb7f77f041e2847150ccc1119b7209913c932f53727914a66d4fb6a833152; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 1e34c0b668faf170da8af14c127251af3e35fa26; candidate file pages/theme:deepspace-jp.txt sha256:30476e077361ddec42729ef3810297a38f0396fed3457d33759e3be58076208f; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -155,6 +155,16 @@ The candidate's first act is to include `theme:basalt-jp` (candidate L3). That p
 ### Flag — the usage example's posting name (open)
 
 The centered install example at candidate L287 reads, in its split-markup form, `[[include :scp-jp:theme:deepspace]]`: the branch prefix was repointed from the original's `:scp-wiki-cn:` (original L275), but the slug kept the original's plain form instead of this candidate's posting name, `theme:deepspace-jp`. Under the campaign's settled rule for usage examples (AGENTS.md §6), the example should name the posting name — the same completion the usage-example sweep applied to decay's and suprematism's equivalents. The sweep did not take this instance, plausibly because the token is split by nested span markup (`@@:scp-jp:@@[[/span]]@@theme:deepspace`), which its extractor did not join. Whether a production `theme:deepspace` exists on scp-jp is not decidable from this repo; on the campaign's own rule the line is wrong either way, since it teaches the reader to include a name this port does not post under. This package documents the candidate as it stands and flags the line for the coordinator (the repair is the single `-jp` insertion inside the exhibit); it is not covered by any ledger disposition.
+
+
+### Post-package repairs (REFRESH3-D)
+
+FIX-FRAMEADDR (`722ceb5`, sub-shape (B)) lands *before* this package's candidate build (`05dd295`), so the frame at L268 was already remedied in the built candidate; the recopy confirms no byte change from it.
+
+- **FIX-FRAMEADDR, sub-shape (B) — Introduced** (report `R/review-scout/FIX-FRAMEADDR.md` §2; landing `722ceb5c949172bb5185d51ef56ce4119ee4fa91`, 2026-11-17): the original carries no interwiki-style frame and no `theme=` self-address in that role; the porting wave introduced the frame with `theme=` naming its own draft-host `local--code/theme%3Adeepspace-jp/1`, a fragment the page does not carry (delivery is the inline `[[module CSS]]`). Remedy: the single `| theme=...` line was deleted; the frame include and its `priority=1` line are kept. Current candidate frame at L268.
+- **FIX-U7 — deepspace usage specimen slug** (report `R/review-scout/FIX-U7.md`; landing `1e34c0b668faf170da8af14c127251af3e35fa26`, 2026-11-17): the split-span specimen at candidate L284 renamed `theme:deepspace` → `theme:deepspace-jp`, completing the posting name. This is the one post-package repair; recopy changed this line only (11,780 → 11,783 bytes).
+
+Stamp treatment follows the jiha-jp / alexylva-university-jp precedents: the regenerated verdict stamp reads STALE, no re-judgement is fabricated, and the frozen GOSIGN2 ledger remains the verdict record.
 
 ## Change set outside the two diffed files
 

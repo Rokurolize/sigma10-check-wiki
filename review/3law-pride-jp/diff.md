@@ -8,20 +8,19 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 36 |
-| candidate.txt | 389 |
-| Added | +374 |
-| Review-stage comments | 0 of the +374 added lines |
+| candidate.txt | 388 |
+| Added | +373 |
+| Review-stage comments | 0 of the +373 added lines |
 | Removed | -21 |
 | Hunks | 1 |
 
 ```diff
 --- original.txt
 +++ candidate.txt
-@@ -1,36 +1,389 @@
+@@ -1,36 +1,388 @@
 -[[iftags +theme]]
 +[[include :scp-jp:component:interwiki-style
 +| priority=1
-+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3A3law-pride-jp/1
 +]]
 +
 +[[iftags +テーマ]]

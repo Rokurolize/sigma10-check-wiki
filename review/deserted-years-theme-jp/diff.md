@@ -8,16 +8,16 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 443 |
-| candidate.txt | 447 |
-| Added | +47 |
-| Review-stage comments | 0 of the +47 added lines |
+| candidate.txt | 446 |
+| Added | +46 |
+| Review-stage comments | 0 of the +46 added lines |
 | Removed | -43 |
 | Hunks | 13 |
 
 ```diff
 --- original.txt
 +++ candidate.txt
-@@ -1,61 +1,65 @@
+@@ -1,61 +1,64 @@
 -[[iftags +版式]]
 -[[>]]
 -**评分模块：**
@@ -36,7 +36,6 @@ with `python3 review/build_review.py`; verify with
 -这是为[[[http://scp-wiki-cn.wikidot.com/deserted-years|废年故事集]]]制作的版式。页面背景图像来自[[[http://scp-wiki-cn.wikidot.com/about-the-scp-foundation|关于SCP基金会]]]，版头背景图像来自[[[http://scp-wiki-cn.wikidot.com/theme:swirling-ashes|余烬旋流 版式]]]。{{[[tabview]]}}样式等额外调整更新中。
 +[[include :scp-jp:component:interwiki-style
 +| priority=1
-+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Adeserted-years-theme-jp/1
 +]]
 +
 +[[iftags +テーマ]]
@@ -112,7 +111,7 @@ with `python3 review/build_review.py`; verify with
      font-size: 0.85rem;
  }
  
-@@ -67,7 +71,7 @@
+@@ -67,7 +70,7 @@
      width: 100%;
      height: 161px;
      z-index: -2;
@@ -121,7 +120,7 @@ with `python3 review/build_review.py`; verify with
      background-repeat: repeat-x;
      background-size: auto 111px;
      background-position: center 50px;
-@@ -102,7 +106,7 @@
+@@ -102,7 +105,7 @@
      text-align: center;
      font-size: 80px;
      font-weight: normal;
@@ -130,7 +129,7 @@ with `python3 review/build_review.py`; verify with
      text-shadow: 0 4px 0 rgba(0, 0, 0, 0.6);
      white-space: nowrap;
  }
-@@ -120,13 +124,13 @@
+@@ -120,13 +123,13 @@
  }
  
  #header h1 a::before {
@@ -146,7 +145,7 @@ with `python3 review/build_review.py`; verify with
      font-size: 80px;
  }
  /{$deserted} */
-@@ -146,7 +150,7 @@
+@@ -146,7 +149,7 @@
  #search-top-box-form input[type=submit],
  #search-top-box-form input[type=submit]:hover,
  #search-top-box-form input[type=submit]:focus {
@@ -155,7 +154,7 @@ with `python3 review/build_review.py`; verify with
      background-color: transparent;
      color: #666;
      border-color: #666;
-@@ -187,7 +191,7 @@
+@@ -187,7 +190,7 @@
      border-color: #000;
      font-size: 14px;
      font-weight: normal;
@@ -164,7 +163,7 @@ with `python3 review/build_review.py`; verify with
  }
  
  #side-bar a, #side-bar a:visited, #side-bar a.newpage {
-@@ -197,7 +201,7 @@
+@@ -197,7 +200,7 @@
  @media (max-width: 767px) {
  #side-bar, #side-bar:target {
      background-color: transparent;
@@ -173,7 +172,7 @@ with `python3 review/build_review.py`; verify with
      border: none;
  }
  
-@@ -220,13 +224,13 @@
+@@ -220,13 +223,13 @@
  #top-bar ul li:hover a,
  #top-bar ul li.sfhover a {
      color: #000;
@@ -189,7 +188,7 @@ with `python3 review/build_review.py`; verify with
      color: #666;
      box-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
  }
-@@ -238,7 +242,7 @@
+@@ -238,7 +241,7 @@
  }
  
  #page-title, h1 {
@@ -198,7 +197,7 @@ with `python3 review/build_review.py`; verify with
      color: #000;
      border-color: #666;
      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
-@@ -341,7 +345,7 @@
+@@ -341,7 +344,7 @@
      margin-right: 0;
  }
  
@@ -207,7 +206,7 @@ with `python3 review/build_review.py`; verify with
      display: inline-block;
      margin: 0;
      margin-left: 5px;
-@@ -359,7 +363,7 @@
+@@ -359,7 +362,7 @@
      position: static;
  }
  
@@ -216,7 +215,7 @@ with `python3 review/build_review.py`; verify with
      color: #000;
  }
  
-@@ -384,7 +388,7 @@
+@@ -384,7 +387,7 @@
  }
  
  div.adytoc div#toc div.title {
@@ -225,7 +224,7 @@ with `python3 review/build_review.py`; verify with
      color: #000;
      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
      font-size: 200%;
-@@ -392,7 +396,7 @@
+@@ -392,7 +395,7 @@
  
  div.adytoc div#toc div#toc-list div {
      margin-left: 0 !important;
