@@ -659,6 +659,24 @@ span, a { word-break: normal !important }
 ]]
 
 [[iftags +テーマ]]
+
+[[div class="anchor"]]
+[[div class="sidebox"]]
+[[=]]
+[[module ListPages name="=" limit="1"]]
+[[div class="tableb"]]
+||~ %%title%% ||
+||= [[*user Placeholder McD]], _
+[[*user HarryBlank]] ||
+||~ Published on March 2021 ||
+[[/div]]
+
+||= このテーマに含まれている殆どのコードを共同制作してくださった[[*user stormbreath]]、[[*user EstrellaYoshte]]、[[*user Croquembouche]]の3名に感謝します。 ||
+[[/module]]
+[[/=]]
+[[/div]]
+[[/div]]
+
 [[include :scp-jp:credit:start-preview]]
 **タイトル:** BLANKSTYLE CSS（SCP-JP）
 **翻訳責任者:** iti119
@@ -671,6 +689,89 @@ span, a { word-break: normal !important }
 **改訳時参照リビジョン:** 119
 **元記事リンク:** [*https://scp-wiki.wikidot.com/theme:blankstyle ソース]
 [[include :scp-jp:credit:end-preview]]
+
+[[=]]
++* これは何?
+[[/=]]
+
+このBlankstyle CSSは、[[*user Placeholder McD]]と[[*user HarryBlank]]が、後者の記事で使用するために作成したビジュアルスタイルです。幅広い作品に適用し、簡単に更新することができるように作成されました。本質的には[[*user EstrellaYoshte]]による[[[theme:penumbra|Penumbraテーマ]]]のライトテーマ版として機能しますが、Blank特有の注意事項が何点かあります。
+
+**他のテーマ、特にBlack Highlighterと共にはほぼ確実に機能しません。何が起こるか分からないのであれば、使用しないでください。**
+----
+[[=]]
++* 使い方
+[[/=]]
+
+このテーマを使用するには、次の構文をページの最上部にコピー＆ペーストしてください。
+
+> @@[[include theme:blankstyle-jp]]@@
+
+このテーマには次のコンポーネントがインクルードされていることに留意してください。
+
+* [[[component:toggle-sidebar|トグル式サイドバー]]]
+* [[[component:fade-in|Fade-In]]] ({{speed=3}}に設定済み)
+* [[[component:acs-animation|ACSアニメーション]]]
+* [[[component:betterfootnotes|BetterFootnotes]]]
+
+このテーマをinfo-rateモジュールやcreditモジュールと併用する際は、情報パネルがフェードイン構文によって遅延しないようにするために、それらのモジュールを{{[[div]]}}で囲んでください。
+
+このテーマでは[[*user PeppersGhost]]の[[[component:image-block-peppo|Image Block Peppo]]]とEstrellaYoshteから、小さな画面 (モバイル端末など) で画像ブロックを中央寄せにして綺麗に見せるためのコードを転用しています。また、PenumblaテーマからEstrellaの天才的なsidebox構文も借りており、そしてそのコードの大部分は[[[theme:paperstack|Paperstackテーマ]]]からの派生です。
+
+BLANKSTYLE CSSの追加の機能については、ディスカッションにあるパッチノートを参照してください。
+----
+[[=]]
++* ACSカラーテーブル
+[[/=]]
+
+次のようなカスタムカラーの見出しセルを持つテーブルは、それぞれ"table1"から"table5"と名付けられたdivで囲むことで作成できます[[span class="fnnum"]].[[/span]][[span class="fncon"]]これらのdivでscp-image-blockを囲むと、キャプションに同様のカスタムカラーが適用されることに注意してください。また、これがBetterFootnotesであることに注目してください。使用方法の詳細は上記のリンクに記載されています。[[/span]]。これらは、[[[component:anomaly-class-bar|ACSコンポーネントバー]]]の5つの基本レベルに準じています。また、{{table6}}で紫色のテーブルも使用できます。
+
+||~ これは普通のテーブルです。 ||
+||= これじゃテストにならない ||
+
+[[div class="table1"]]
+||~ これは緑色のテーブルです。 ||
+||= これなら試しがいがある ||
+[[/div]]
+
+[[div class="table2"]]
+||~ これは青色のテーブルです。 ||
+||= これもテストしがいがある ||
+[[/div]]
+
+[[div class="table3"]]
+||~ これは黄色のテーブルです。 ||
+||= これもテストしがいがある ||
+[[/div]]
+
+[[div class="table4"]]
+||~ これは橙色のテーブルです。 ||
+||= これもテストしがいがある ||
+[[/div]]
+
+[[div class="table5"]]
+||~ これは赤色のテーブルです。 ||
+||= やりがいがなくなってきた ||
+[[/div]]
+
+[[div class="table6"]]
+||~ これは紫色のテーブルです。 ||
+||= これテスト ||
+[[/div]]
+
+注: 紫色はThaumielクラスオブジェクトや、要レベル6(Cosmic Top Secret)文書または要レベル6/暫定(Thaumiel-Proviso)文書を示すために使用されます。これは[[*user Placeholder McD]]の共感覚的嗜好や、私の好きなものを記事に盛り込もうとするHarryの意欲を汲んだものです。
+
+= {{tableb}}クラスのdivの中にあるテーブルはセル同士が分割されます。
+
+[[div class="tableb"]]
+||~ これは分割版テーブルです。 ||
+||= このテストめちゃ楽しい！ ||
+[[/div]]
+
+= ,,Harryは長い間ずっとテーブル構文を手作業でフォーマットしてきました。オタクめ。,,
+----
+[[=]]
++* ソースコード
+[[/=]]
 
 + BLANKSTYLE CSS（SCP-JP 移植）
 
@@ -685,3 +786,31 @@ span, a { word-break: normal !important }
 ----
 //出典: https://scp-jp.wikidot.com/theme:blankstyle（CC BY-SA 3.0）//
 [[/iftags]]
+
+[[div [[iftags -テーマ]]style="display: none"[[/iftags]]]]
+[[include :scp-jp:component:toggle-sidebar]]
+
+>[[ift{$fade}gs +テーマ]]
+[[include :scp-jp:component:fade-in speed=3]]
+>[[/ift{$fade}gs]]
+
+>[[ift{$acs}gs +テーマ]]
+[[include :scp-jp:component:acs-animation]]
+>[[/ift{$acs}gs]]
+
+[[include :scp-jp:component:betterfootnotes]]
+
+[[iftags +s&cプラスチック]]
+[[module CSS]]
+:root{
+  --header-title: "S\0026 C PLASTICS";
+  --header-subtitle: "SITE-87, NARRATIVE AND NEXOLOGICAL STUDIES";
+}
+
+div#extra-div-1 {
+    background-image: url('https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-48-k39z/Big87.png');
+    filter: opacity(20%);
+}
+[[/module]]
+[[/iftags]]
+[[/div]]
