@@ -1,0 +1,840 @@
+[[iftags +theme]]
+[[image logo_sh_2.png class="crom-thumbnail" style="display: none"]]
+[[/iftags]]
+
+[[include :scp-wiki:component:interwiki-style
+| priority=4
+| theme=https://scp-wiki.wdfiles.com/local--code/theme%3Ahytoth-two/1
+]]
+
+[[div style="display: none;"]]
+[[include :scp-wiki:theme:basalt hidetitle={$hidetitle}|centertitle=a|acs-itemnum={$acs-itemnum}|disable-acs-anim={$disable-acs-anim}]]
+[[/div]]
+
+[[module CSS]]
+@import url(https://scp-wiki.wdfiles.com/local--code/theme%3Ahytoth-two/1)
+[[/module]]
+
+[[iftags +theme]]
+[[div style="display:flex; flex-direction: column; align-items: center;"]]
+[[include :scp-wiki:info:start]]
+
+[[[badooga-author-page|More By Badooga]]]
+
+[[include :scp-wiki:info:end]]
+[[/div]]
+
+@@ @@
+
+[[=]]
+[[image https://scp-wiki.wikidot.com/local--files/theme:admo/basalt-theme-logo.svg style="width: calc(3rem + 50vw);"]]
+
+[[size 110%]]**On any page:**[[/size]]
+[[size 140%]]**{{@@[[include @@[[span style="opacity: 70%;"]]@@:scp-wiki:@@[[/span]]@@theme:hytoth-two]]@@}}**[[/size]]
+[[/=]]
+
+This is the Second Second Hytoth Theme by [[*user badooga]]. It is otherwise known as the Second Theme for the Second Hytoth—or, in formal contexts, Second Hytoth Theme the Second.
+
+Let's try that again. This is a [[[theme:basalt|Basalt]]]-based theme for the [[[second-hytoth-hub|Church of the Second Hytoth]]] group of interest! It is a modernization of the [[[theme:hytoth|Sigma-9]]] theme by [[*user macro_au_micro]] and [[*user NatVoltaic]] that also adds plenty of other bells and whistles.
+
+I also grabbed a decent bit of CSS from the [[[theme:foxtrot|Foxtrot]]] theme by [[*user Liryn]] and [[[SCP-9628]]] by [[*user sprawlingstar]]. Check them both out!
+
+[[toc]]
+
+------
+
++ __Settings__
+//The Holy Fourth is the greatest of strategists. They do not charge head-first into combat; they analyze situations before making their move, and when they do they are sure to emerge victorious.//
+
+++ Configuration
+
+Like its parent theme, you can add **theme settings** to your {{[[include]]}} module to modify aspects of this theme.
+
+**{{@@[[include @@[[span style="opacity: 70%;"]]@@:scp-wiki:@@[[/span]]@@theme:hytoth-two @@##green|themesetting##@@]]@@}}**
+
+**{{@@[[include @@[[span style="opacity: 70%;"]]@@:scp-wiki:@@[[/span]]@@theme:hytoth-two @@##green|themesetting##|##purple|another-themesetting##@@]]@@}}**
+
+Theme settings:
+* **{{hidetitle=a}}**[[span class="noclick"]]@@ @@ @@ @@[[/span]]Removes page title
+* **{{acs-itemnum=a}}**[[span class="noclick"]]@@ @@ @@ @@[[/span]]Restores [[[https://scp-wiki.wikidot.com/anomaly-classification-system-guide|ACS]]] "ITEM#:" text
+* **{{disable-acs-anim=a}}**[[span class="noclick"]]@@ @@ @@ @@[[/span]]Disables [[[https://scp-wiki.wikidot.com/component:acs-animation|ACS Animation]]] component
+
+++ Colors
+Here are the colors you'll see most often across this theme:
+
+[[module css]]
+.colors-container .colors .color:is(:first-child, :nth-child(2)) {
+  box-sizing: border-box;
+  border: solid 0.12rem rgba(var(--general-border-color), 0.4);
+}
+[[/module]]
+
+[[include :scp-wiki:component:theme-squares -=-
+| color1-name=Hytoth Yellow
+| color1-variable=--basalt-primary-color
+| color1-info=255,213,133
+| color2-name=Hytoth Pink
+| color2-variable=--basalt-secondary-color
+| color2-info=255,211,175
+| color3-name=Hytoth Red
+| color3-variable=--basalt-tertiary-color
+| color3-info=106,7,2
+| color3-has-light-text=1
+| color4-name=Hytoth White
+| color4-variable=--basalt-alternate-color
+| color4-info=252,245,224
+| subcolor1-name=Crimson
+| subcolor1-variable=--basalt-undertone
+| subcolor1-info=169,14,14
+| subcolor1-has-light-text=1
+| subcolor2-name=War
+| subcolor2-variable=--basalt-bright-element-color
+| subcolor2-info=147,66,0
+| subcolor2-has-light-text=1
+| subcolor3-name=Solitude
+| subcolor3-variable=--basalt-overtone
+| subcolor3-info=68,68,68
+| subcolor3-has-light-text=1
+]]
+
+You can also access the first four colors using the variables {{@@--hytoth-yellow@@}}, {{@@--hytoth-pink@@}}, {{@@--hytoth-red@@}}, and {{@@--hytoth-white@@}}.
+
+------
+
++ __Elements__
+//Peace leads to our survival. To stay peaceful is to stay Ortothan.//
+
++* Header 1
+++* Header 2
++++* Header 3
+++++* Header 4
++++++* Header 5
+++++++* Header 6
+
+[[tabview]]
+[[tab Test]]
+This is a tabview. Notice how the contents don't get their own box; the intent is that you use one of the custom divs in the next section for them. See other tabs for examples.
+[[/tab]]
+[[tab Test 2]]
+[[div class="modal ortothan-3"]]
+{{Modal}} divs are pretty wide, so they work well when nested within {{tab}}s.
+[[/div]]
+[[/tab]]
+[[tab Test 3]]
+[[div class="smallmodal ortothan-5"]]
+This one uses a {{smallmodal}} div instead. If you prefer the default {{tab}} border, see the next section.
+[[/div]]
+[[/tab]]
+[[/tabview]]
+
+------
+
++ __Further Customization__
+
+//With curiosity, we stay aware of the world and all that it may send our way.//
+
+++ Colors Galore
+
+Below are fourteen pre-configured divs with colored backgrounds for your convenience.
+
+[[collapsible show="+ Colored Divs" hide="- Colored Divs"]]
+[[div class="opening"]]
+{{@@[[div class="opening"]]@@}} or {{@@[[div class="ortothan-1"]]@@}}
+[[/div]]
+
+[[div class="saduj"]]
+{{@@[[div class="saduj"]]@@}} or {{@@[[div class="ortothan-2"]]@@}}
+[[/div]]
+
+[[div class="nicole"]]
+{{@@[[div class="nicole"]]@@}} or {{@@[[div class="ortothan-3"]]@@}}
+[[/div]]
+
+[[div class="sarah"]]
+{{@@[[div class="sarah"]]@@}} or {{@@[[div class="ortothan-4"]]@@}}
+[[/div]]
+
+[[div class="bleu"]]
+{{@@[[div class="bleu"]]@@}} or {{@@[[div class="ortothan-5"]]@@}}
+[[/div]]
+
+[[div class="fondation"]]
+{{@@[[div class="fondation"]]@@}} or {{@@[[div class="ortothan-6"]]@@}}
+[[/div]]
+
+[[div class="inconnu"]]
+{{@@[[div class="inconnu"]]@@}} or {{@@[[div class="ortothan-7"]]@@}}
+[[/div]]
+
+[[div class="merle"]]
+{{@@[[div class="merle"]]@@}} or {{@@[[div class="ortothan-8"]]@@}}
+[[/div]]
+
+[[div class="affiche"]]
+{{@@[[div class="affiche"]]@@}} or {{@@[[div class="ortothan-9"]]@@}}
+[[/div]]
+
+[[div class="quatrieme"]]
+{{@@[[div class="quatrieme"]]@@}} or {{@@[[div class="ortothan-10"]]@@}}
+[[/div]]
+
+[[div class="samarah"]]
+{{@@[[div class="samarah"]]@@}} or {{@@[[div class="ortothan-11"]]@@}}
+[[/div]]
+
+[[div class="st-hubert"]]
+{{@@[[div class="st-hubert"]]@@}} or {{@@[[div class="ortothan-12"]]@@}}
+[[/div]]
+
+[[div class="comptine"]]
+{{@@[[div class="comptine"]]@@}} or {{@@[[div class="ortothan-13"]]@@}}
+[[/div]]
+
+[[div class="void"]]
+{{@@[[div class="void"]]@@}} or {{@@[[div class="ortothan-14"]]@@}}
+[[/div]]
+
+[[/collapsible]]
+
+You can mix and match these with Basalt's plethora of divs! Below are a few examples. You can also give them the {{round}} or {{rounded}} class to round their border corners.
+
+[[div class="blockquote opening"]]
+
+= {{@@[[div class="blockquote opening"]]@@}}
+
+[[/div]]
+
+[[div class="jotting nicole"]]
+
+= {{@@[[div class="jotting nicole"]]@@}}
+
+[[/div]]
+
+[[div class="modal quatrieme"]]
+
+= {{@@[[div class="modal quatrieme"]]@@}}
+
+[[/div]]
+
+[[div class="smallmodal comptine"]]
+
+= {{@@[[div class="smallmodal comptine"]]@@}}
+
+[[/div]]
+
+[[div class="papernote void"]]
+
+= {{@@[[div class="papernote void"]]@@}}
+
+[[/div]]
+
+++ Limiting CSS
+If you wrap a tabview or collapsible in a div with the {{default-style}} class, it'll strip away some of the fancier CSS that you might not like.
+
+[[div class="default-style"]]
+[[tabview]]
+[[tab Tab 1]]
+Notice that there is a border, but no unique background. You'll likely want to mess with the CSS to customize it further.
+
+------
+
+Horizontal lines from using {{@@------@@}} are unstyled as well.
+
+[[/tab]]
+[[tab Tab 2]]
+No tab switching animation either!
+
+[[collapsible show="+ Normal Collapsible" hide="- Normal Collapsible"]]
+No collapsible styling or animation to be found here.
+[[/collapsible]]
+[[/tab]]
+[[/tabview]]
+[[/div]]
+
+If you want to disable the transitions without disabling the rest of the styling, just wrap with the {{no-animation}} class instead.
+
+++ GoI Format Snippets
+The code snippets below are tailored for use in GoI formats for the Church of the Second Hytoth.
+
+[[collapsible show="+ Ortothan Memo" hide="- Ortothan Memo"]]
+Simply use {{@@[[div class="hytoth_memo"]]@@}}:
+
+[[div class="hytoth_memo"]]
+
+[[=]]
+//To Brady --//
+
+//You requested that I point you toward Ortothan [[[zeyu-eitothan|stories]]] regarding the tenant of Curiosity. You are right to perceive that it is often underemphasized. We Ortothans involve ourselves in a struggle for the continuation of reality itself. In a very real sense, we are all warriors, and those at war are not known for considering the perspectives of their enemies and accepting virtue from them.//
+
+//I find this story to be a wonderful counter to that impulse. This is an ancient fable recorded by Paul Adams in 1903 after being conveyed to him by Second Messenger. In it, one of the Holy Seven gives us an example of what it means to judge others by their actions.//
+
+//-- Eiv-Aímact Priest Luke Moore//
+[[/=]]
+
+[[/div]]
+
+[[/collapsible]]
+
+[[collapsible show="+ Static Filter" hide="- Static Filter"]]
+Simply add the {{static-background}} class to your {{div}} to apply a static filter to its background:
+
+[[div class="smallmodal static-background quatrieme"]]
+
+—lost. All near Ortothans must unite at [Unknown Symbol 31], cannons have been moved into orbit around the planets. The extra-universal [[[SCP-1548|invasion]]] lessens. The gods protect us. Ortothans will survive.
+
+Rakmou-leusan is dead.
+
+Gods lost. [Drifted Galaxy] lost. Universe is unprotected. Universe is not lost. Ortothans are not lost. Ortothans—
+
+[[/div]]
+
+[[/collapsible]]
+
+[[collapsible show="+ Antimemetic Text" hide="- Antimemetic Text"]]
+Wrap your text in a {{div}} with the {{antimemetic}} class to make it invisible unless tapped/hovered/focused. Note that if you put that class on the text's normal container (in this case, the {{div.jotting}} surrounding it), the entire container will become invisible as well.
+
+[[div class="jotting inconnu rounded"]]
+
+[[div class="antimemetic"]]
+And as Nestor wandered, he soon realized he was [[[three-musings|lost]]] in the cosmos. It soon became apparent that something was not right. Thus, the Void spoke:
+
+//You’re certainly not from here, are you?//
+
+Nestor, ever alert, responded:
+
+“Where exactly is ‘here’? What is this place?”
+
+//Perhaps this Place cannot be conceptualized by descriptors of location. It seems to me, we’re on the edge of all that exists.//
+[[/div]]
+
+[[/div]]
+
+[[/collapsible]]
+
+------
+
++ __Source Code__
+
+//Rakmou-leusan's hope has never been lost, and it never will be.//
+
+[[collapsible show="+ Source Code" hide="- Source Code"]]
+
+[[code type="css"]]
+/*
+    Second Second Hytoth Theme
+    [2026 Wikidot Theme]
+    Created by badooga.
+    Based on the Second Hytoth theme created by macro_au_micro with edits from NatVoltaic.
+    The Second Hytoth logo is by Taoka.
+*/
+
+@import url('https://fonts.bunny.net/css?family=Charm');
+
+:root {
+  --hytoth-yellow: 255, 213, 133;
+  --hytoth-red: 106, 7, 2;
+  --hytoth-pink: 255, 211, 175;
+  --hytoth-white: 252, 245, 224;
+
+  --hytoth-logo-1: url('https://scp-wiki.wdfiles.com/local--files/theme%3Ahytoth-two/logo_sh.svg');
+  --hytoth-logo-2: url('https://scp-wiki.wdfiles.com/local--files/theme%3Ahytoth-two/logo_sh_2.svg');
+
+  --title: "Church of the Second Hytoth";
+  --subtitle: "For Life, Existence, and Eternity";
+  --logo: var(--hytoth-logo-1);
+
+  --basalt-primary-color: var(--hytoth-yellow);
+  --basalt-secondary-color: var(--hytoth-pink);
+  --basalt-tertiary-color: var(--hytoth-red);
+  --basalt-alternate-color: var(--hytoth-white);
+
+  --basalt-overtone: 68, 68, 68;
+  --basalt-undertone: 169, 14, 14;  
+
+  --basalt-bright-element-color: 147, 66, 0;
+  --basalt-dark-element-color: 68, 68, 68;
+  --basalt-light-text-color: var(--basalt-alternate-color);
+  --basalt-UI-dark-palette: var(--basalt-undertone);
+
+  --code-background-color: var(--basalt-alternate-color);
+  --login-status-link-background-hover: var(--basalt-overtone);
+  --hr-color: var(--basalt-tertiary-color);
+  --basalt-th-background-color: var(--basalt-tertiary-color);
+
+  --general-border-color: 67, 19, 13;
+  --image-caption-background-color: var(--basalt-secondary-color);
+  --blockquote-border-width: 0.1rem;
+
+  --link-color: var(--basalt-undertone);
+  --link-visited-color: 132, 32, 18;
+  --link-newpage-color: var(--basalt-bright-element-color);
+  --heading-color: var(--basalt-tertiary-color);
+  --header-title-color: 255, 255, 255;
+  --header-subtitle-color: 255, 255, 255;
+  --top-bar-link-color: 16, 16, 16;
+
+  --header-top-gap: 0rem;
+  --top-bar-height: 1.875rem;
+  --header-final-height: var(--top-bar-height);
+  --title-size: calc(0.9rem + 3.5vw);
+  --subtitle-size: calc(0.75rem + 2.5vw);
+  --icon-opacity: 85%;
+
+  --tab-background-color: var(--basalt-secondary-color);
+  --tab-hover-background-color: var(--basalt-undertone);
+  --tab-selected-background-color: var(--basalt-tertiary-color);
+  --tab-text-color: var(--basalt-tertiary-color);
+  --tab-focus-text-color: var(--basalt-secondary-color);
+  --tab-transition: calc(1s/3) ease-out;
+
+  --rate-module-background-color: var(--basalt-tertiary-color);
+  --rate-module-info-background-color: var(--rate-module-background-color); /* var(--basalt-undertone); */
+  --rate-module-text-color: var(--basalt-light-text-color);
+  --authorbox-background-color: var(--basalt-secondary-color);
+}
+
+/*----- Front Matter -----*/
+
+/* Centered Header by sprawlingstar */
+#header {
+  --header-font: 'Charm', cursive;
+  contain: initial;
+  height: auto;
+  min-height: var(--header-final-height);
+  position: static;
+  background: transparent;
+  box-shadow: none;
+  grid-template-areas:
+      '. . . . .'
+      '. search line top-bar user'
+      'h-link h-link h-link h-link h-link';
+  grid-template-columns: var(--side-bar-button-width) var(--search-button-width) 1fr max-content var(--user-button-width);
+  grid-template-rows: var(--header-top-gap) var(--top-bar-height) 1fr;
+  backdrop-filter: none;
+
+  background-image: linear-gradient(#bd4202a0, #6a0702);
+  border-bottom: 1rem solid #42130d;
+}
+
+#content-wrap {
+  background: linear-gradient(rgba(234, 112, 14, 0.8), rgb(var(--basalt-primary-color)) 6em);
+}
+
+#header h1 a span::before {
+  text-shadow: 3px 3px 5px #000000;
+  margin-bottom: 0.25rem;
+}
+#header h1 a span::after {
+  text-shadow: 1.5px 1.5px 1.5px rgba(0,0,0,.8);
+}
+
+#header h1 { grid-template-columns: minmax(0,1fr); }
+#header h1 a {
+  justify-content: center;
+  width: auto; height: auto;
+text-align: center;
+  flex-wrap: wrap;
+  pointer-events: none;
+  gap: 1rem calc(var(--base-header-height) * 0.125);
+  padding: 1rem;
+  box-sizing: border-box;
+}
+#header h1 a::before,
+#header h1 a span {
+  height: auto;
+  pointer-events: auto;
+}
+#header h1 a::before {
+  width: calc(6.25rem + 5vw);
+  aspect-ratio: 1;
+  min-width: unset;
+  max-width: 100%;
+  position: absolute;
+  left: 50%;
+  opacity: var(--icon-opacity);
+  transform: translateX(-50%) translateY(-10%);
+  z-index: -1;
+}
+
+#top-bar div:is(.top-bar, .mobile-top-bar) > ul > li > ul {
+  box-shadow: 0px 3px 3px rgba(var(--basalt-tertiary-color), 0.5);
+}
+
+@media only screen and (max-width: 1024px) {
+  :root {
+    --main-content-side-margin: calc(0.25rem + 2.25vw);
+  }
+
+  #header {
+    grid-template-areas:
+      '. search . user'
+      'h-link h-link h-link h-link'
+      'top-bar top-bar top-bar top-bar';
+    grid-template-columns: var(--side-bar-button-width) var(--search-button-width) 1fr var(--user-button-width);
+    grid-template-rows: var(--top-bar-height) 1fr var(--top-bar-height);
+  }
+
+  #header h1 a::before {
+    margin-bottom: unset;
+  }
+
+  #top-bar {
+    --top-bar-link-color: var(--basalt-secondary-color);
+  }
+
+  #top-bar div.mobile-top-bar > .open-menu {
+    position: fixed;
+    left: 0;
+    top: var(--header-top-gap);
+    width: var(--side-bar-button-width);
+    height: var(--top-bar-height);
+    background-color: rgba(var(--basalt-undertone), .5);
+    border-radius: 0rem 1rem 1rem 0rem;
+    backdrop-filter: blur(4px);
+  }
+}
+
+#login-status span.printuser > a img {
+  height: 200%;
+}
+
+/* Rating Module and Author Info Components */
+div.page-rate-widget-box,
+div.rate-box-with-credit-button {
+  border: unset;
+  border-radius: 2px 7px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,.5);
+}
+div.page-rate-widget-box span.btn > a::before {
+  background-color: #fff;
+}
+
+.authorbox {
+  filter: drop-shadow(0rem 0.4rem 0.7rem rgba(0, 0, 0, 0.5)) !important; /* overriding another !important */
+}
+.authorlink-wrapper > a {
+  width: unset;
+  --swatch-tertiary-color: var(--basalt-tertiary-color);
+  font-weight: 550;
+  font-size: 90%;
+}
+
+:is(#u-credit-view, #u-credit-otherwise) .modalbox > div:first-child {
+  background-color: rgb(var(--basalt-tertiary-color));
+}
+
+/*----- Side Bar and Back Matter -----*/
+#side-bar::after {
+  inset: initial;
+  left: 0;
+  top: var(--header-top-gap);
+  height: var(--top-bar-height);
+  transition: left var(--side-bar-transition);
+}
+
+#interwiki {
+  --side-bar-background-color: 106, 7, 2, 0.1;
+}
+
+div.footnotes-footer {
+  border-left: 0;
+}
+
+.page-tags span a:not(:focus, :hover),
+.page-options-bottom,
+.bibitems, .footnotes-footer {
+  border: 1.5px solid rgb(var(--basalt-tertiary-color));
+}
+#page-options-bottom-2 {
+  border-top-width: 0px;
+}
+#page-options-bottom:has(+ #page-options-bottom-2:not([style*="none"])) {
+  border-bottom-width: 0px;
+}
+
+#more-options-button {
+  color: rgb(var(--selection-text-color));
+}
+
+#edit-page-comments,
+td:has(> :is(input,  textarea).form-control),
+#action-area :is(#page-tags-input, #parent-page-name, #move-new-page-name),
+#action-area input.text {
+  border: solid 0.12rem rgba(var(--general-border-color), 0.4);
+}
+
+#license-area::after {
+  filter: brightness(0.25);
+}
+
+/*----- Page Contents -----*/
+#page-content {
+  padding-block: 1em 2em;
+}
+
+a.newpage {
+  color: rgb(var(--link-newpage-color));
+}
+
+div.papernote {
+  background-color: rgb(var(--basalt-alternate-color));
+}
+
+/* Horizontal Rule from Cosmos Theme */
+hr:not(#u-credit-view hr, #u-credit-otherwise hr, .default-style hr, .licensebox hr) {
+  --hr-icon-mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 350 485.78' width='350' height='485.78' xmlns='http://www.w3.org/2000/svg'%3E%3Cg data-name='Layer 2'%3E%3Cpath d='M348.255 186.2c-157.4 21.4-155.4 33.4-174.1 243.3-18.9-210-16.9-222-174.3-243.4 157.4-21.3 152.8-28.7 174.2-186.1 21.4 157.4 16.8 164.8 174.3 186.2z' data-name='Layer 1' style='fill:%23231f20' transform='translate(.895 56.39)'/%3E%3C/g%3E%3C/svg%3E");
+  --hr-icon-size: 2rem;
+  margin: .5rem 0;
+  background: transparent;
+  height: var(--hr-icon-size);
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+hr:not(#u-credit-view hr, #u-credit-otherwise hr, .default-style hr, .licensebox hr)::before,
+hr:not(#u-credit-view hr, #u-credit-otherwise hr, .default-style hr, .licensebox hr)::after {
+  content: "";
+  display: grid;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background-color: rgb(var(--basalt-tertiary-color));
+}
+hr:not(#u-credit-view hr, #u-credit-otherwise hr, .default-style hr, .licensebox hr)::before {
+  height: 0.05rem;
+  width: 100%;
+  -webkit-mask-image: linear-gradient(90deg, black calc(50% - var(--hr-icon-size)/2 - 0.125rem), transparent calc(50% - var(--hr-icon-size)/2 - 0.125rem), transparent calc(50% + var(--hr-icon-size)/2 + 0.125rem), black calc(50% + var(--hr-icon-size)/2 + 0.125rem));
+  mask-image: linear-gradient(90deg, black calc(50% - var(--hr-icon-size)/2 - 0.125rem), transparent calc(50% - var(--hr-icon-size)/2 - 0.125rem), transparent calc(50% + var(--hr-icon-size)/2 + 0.125rem), black calc(50% + var(--hr-icon-size)/2 + 0.125rem));
+}
+hr:not(#u-credit-view hr, #u-credit-otherwise hr, .default-style hr, .licensebox hr)::after {
+  width: var(--hr-icon-size);
+  height: var(--hr-icon-size);
+  -webkit-mask-image: var(--hr-icon-mask);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  -webkit-mask-position: center;
+  mask-image: var(--hr-icon-mask);
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+}
+
+/*--- Table of Contents ---*/
+div#toc {
+  background-color: rgb(var(--basalt-secondary-color));
+}
+div#toc #toc-action-bar {
+  background-color: rgb(var(--basalt-tertiary-color));
+  padding: 0.66rem;
+}
+div#toc div.title {
+  background-color: rgb(var(--basalt-tertiary-color));
+  color: rgb(var(--basalt-light-text-color));
+}
+#toc-action-bar a {
+  color: rgb(var(--basalt-light-text-color));
+}
+#toc-list {
+  background-color: rgb(var(--basalt-secondary-color));
+}
+
+/* Tables */
+:is(#page-content table:not(.form), table.wiki-content-table) th {
+  border: solid .05rem rgb(var(--general-border-color));
+}
+
+/*--- Image Blocks ---*/
+.image-block, .scp-image-block {
+  background-color: transparent;
+  border: 1.5px solid rgb(var(--basalt-tertiary-color));
+  box-shadow: 0 1px 6px rgba(0,0,0,.25);
+}
+
+div:is(.table1, .table2, .table3, .table4, .table5, .table6) .scp-image-block {
+  border-bottom-color: unset;
+}
+
+:is(.image-block, .scp-image-block) :is(.image-caption, .scp-image-caption) {
+  border-top: 1.5px solid rgb(var(--basalt-tertiary-color));
+}
+
+/*--- Headings ---*/
+#page-title {
+  color: rgb(var(--heading-color));
+  font-weight: 350;
+}
+h1 {
+  color: rgb(var(--heading-color));
+}
+
+/*--- Tabviews ---*/
+
+/* Tabs */
+#page-content ul.yui-nav {
+  background-color: unset;
+  font-family: var(--body-font);
+}
+#page-content ul.yui-nav li {
+  margin: 0 0.32em 0 0;
+  border: 1.5px solid rgb(var(--basalt-tertiary-color));
+  box-shadow: 0px 3px 3px rgba(var(--basalt-tertiary-color), 0.5);
+}
+
+#page-content ul.yui-nav li:not(:focus, :hover, .selected) a em {
+  color: rgb(var(--tab-text-color));
+}
+#page-content .yui-navset.yui-navset-top > ul.yui-nav li.selected {
+  font-weight: unset;
+}
+#page-content ul.yui-nav li.selected::after {
+  display: none;
+}
+
+/* Tab Contents */
+#page-content .yui-content:not(.default-style div) {
+  padding: 0;
+  border: none;
+}
+
+/* Tab Animation by Croquembouche */
+.yui-content:not(.default-style div, .no-animation div) > div {
+    display: block;
+    top: 0;
+    overflow: hidden;
+    transform-origin: 0 0;
+}
+.yui-content:not(.default-style div, .no-animation div) > div[style*="none"] {
+    display: block !important; /* necessary to override CSS in style attribute */
+    flex: 0;
+    max-height: 0;
+    padding: 0 0.5em;
+    border-width: 0;
+    /* The following transition affects the one that DISAPPEARS */
+    transition: padding 0s linear 0.5s,
+          border-width 0s linear 0.5s,
+          flex 0.5s cubic-bezier(.18,.51,.54,.9) 0s;
+    animation: tab-disappear 0.5s ease-in-out 0s 1 both;
+}
+.yui-content:not(.default-style div, .no-animation div) > div[style*="block"] {
+    display: block !important; /* necessary to override CSS in style attribute */
+    flex: 1;
+    max-height: 9999rem;
+    /* The following transition affects the one that APPEARS */
+    transition: padding 0s linear 0.5s,
+          border-width 0s linear 0.5s,
+          flex 0.5s cubic-bezier(.18,.51,.54,.9) 0.5s;
+    animation: tab-appear 0.5s ease-in-out 0.5s 1 both;
+}
+
+@keyframes tab-disappear {
+    0% { max-height: 9999rem; }
+    1% { max-height: 100vh; }
+    100% { max-height: 0; }
+}
+@keyframes tab-appear {
+    0% { max-height: 0; }
+    99% { max-height: 100vh; }
+    100% { max-height: 9999rem; }
+}
+
+/*--- Collapsibles ---*/
+#page-content .collapsible-block-folded:not(.licensebox a, .info-container a, .default-style div),
+#page-content .collapsible-block-unfolded-link:not(.licensebox a, .info-container a, .default-style div) {
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+}
+
+/* Collapsible Link */
+#page-content a.collapsible-block-link:not(.licensebox a, .info-container a, .default-style a) {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(var(--basalt-light-text-color));
+  padding: 4px 9px 4px 7px;
+  background: rgb(var(--basalt-tertiary-color));
+  border-radius: 6px;
+  margin-top: 5px;
+  box-shadow: inset 0px 0px 0px 2px rgba(0, 0, 0, 0.4);
+  transition-duration: 0.4s;
+  display: inline-block;
+}
+#page-content a.collapsible-block-link:not(.licensebox a, .info-container a, .default-style a):hover {
+  background: rgb(var(--basalt-undertone));
+  box-shadow: none;
+}
+
+/* Collapsible Animation */
+.collapsible-block-unfolded:not(.default-style div, .no-animation div) .collapsible-block-content[style*="block"] {
+  overflow: hidden;
+  animation: tab-appear 1s 1 both;
+}
+
+/*----- Custom Divs -----*/
+
+/* Colored Blocks */
+div.ortothan-1, div.opening { background-color: #fdd3af; border-color: #800000; }
+div.ortothan-2, div.saduj { background-color: #ffd6a8; }
+div.ortothan-3, div.nicole { background-color: #fbf2b7; }
+div.ortothan-4, div.sarah { background-color: #ffab93; }
+div.ortothan-5, div.bleu { background-color: #e5ccff; }
+div.ortothan-6, div.fondation { background-color: #FCF5E0; }
+div.ortothan-7, div.inconnu { background-color: #c0a78e; }
+div.ortothan-8, div.merle { background-color: #ffeba9; }
+div.ortothan-9, div.affiche { background-color: #bebebe; }
+div.ortothan-10, div.quatrieme { background-color: #ff834f; }
+div.ortothan-11, div.samarah { background-color: #b2ffb2; }
+div.ortothan-12, div.st-hubert { background-color: #0097f2; }
+div.ortothan-13, div.comptine { background-color: #e4717a; }
+div.ortothan-14, div.void { background-color: #1f1f1f; color: rgb(var(--basalt-light-text-color)); }
+
+/* GoI Format Features */
+div.hytoth_memo {
+  --memo-logo: var(--logo);
+  --memo-color: var(--basalt-primary-color);
+  border: none;
+  background-color: transparent;
+  background-position: center center;
+}
+
+.static-background {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 250 250' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)' opacity='0.65'/%3E%3C/svg%3E");
+}
+
+.antimemetic {
+  opacity: 0;
+  transition-duration: 2s;
+}
+.antimemetic:is(:hover, :focus, :focus-within) {
+  opacity: 100;
+}
+
+/* Other Customizations */
+.round, .rounded {
+  border-radius: 10px;
+}
+
+div:is(.default-style, .no-animation) .yui-navset.yui-navset-top > .yui-nav li::before,
+div:is(.default-style, .no-animation) .yui-navset.yui-navset-top > .yui-nav li a {
+  transition: none;
+}
+
+[[/code]]
+[[/collapsible]]
+
+------
+
+[[include :scp-wiki:component:license-box-theme]]
+======
+> **Filename:** logo_sh.svg, logo_sh_2.svg
+> **Author:** [[*user badooga]]
+> **License:** CC BY-SA 3.0
+> **Derivative of:**
+> ------
+> **Filename:** logo_sh.png
+> **Author:** [[*user Taoka]]
+> **License:** CC BY-SA 3.0
+> **Source:** [https://scp-wiki.wikidot.com/theme:hytoth Second Hytoth Theme]
+======
+[[include :scp-wiki:component:license-box-end]]
+
+[[/iftags]]

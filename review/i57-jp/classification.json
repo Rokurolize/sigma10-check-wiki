@@ -1,0 +1,854 @@
+{
+ "tool": "classify_hunks.py",
+ "classifier_version": "0.1.0",
+ "signature_table_version": "2026-11-17.1",
+ "theme": {
+  "dir": "i57-jp",
+  "cand_fullname": "theme:i57-jp",
+  "orig_fullname": "theme:i57",
+  "wiki": "scp-wiki",
+  "revision": "41",
+  "kind": "standard",
+  "verdict": "PASS",
+  "original_file": "review/i57-jp/original.txt",
+  "candidate_file": "review/i57-jp/candidate.txt",
+  "original_sha256": "0fd1b84235997e84ade0801ab75ff0a94e70d44b521360c6acec3109893cc483",
+  "candidate_sha256": "06c32f4da1c19a286fe66d6371eb582a9d049759e057c3b57a7e3987cc21dbe7",
+  "original_lines": 681,
+  "candidate_lines": 1139
+ },
+ "topology": {
+  "original_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     1,
+     17
+    ],
+    "lines": 16
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     216,
+     671
+    ],
+    "lines": 455
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     674,
+     677
+    ],
+    "lines": 3
+   }
+  ],
+  "candidate_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     1,
+     473
+    ],
+    "lines": 472
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     682,
+     1136
+    ],
+    "lines": 454
+   }
+  ],
+  "moves": [
+   {
+    "from_kind": "code-css",
+    "to_kind": "module-css",
+    "orig_range": [
+     216,
+     671
+    ],
+    "cand_range": [
+     1,
+     473
+    ],
+    "similarity": 0.976,
+    "basis": "content"
+   },
+   {
+    "from_kind": "external-own-delivery",
+    "to_kind": "module-css",
+    "orig_range": null,
+    "cand_range": [
+     1,
+     473
+    ],
+    "similarity": null,
+    "basis": "candidate-side",
+    "caveat": "companion body unavailable; candidate-side only"
+   }
+  ],
+  "external_own_delivery": true
+ },
+ "blocks": [
+  {
+   "id": "B1",
+   "orig_range": [
+    0,
+    1
+   ],
+   "cand_range": [
+    0,
+    1
+   ],
+   "orig_lines": "1-1",
+   "cand_lines": "1-1",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "IFTAGS",
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "IFTAGS",
+   "primary_section": 2,
+   "label_prec": {
+    "IFTAGS": "A",
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "IFTAGS": {
+     "orig": [
+      [
+       0,
+       1
+      ]
+     ],
+     "cand": [
+      [
+       0,
+       1
+      ]
+     ]
+    },
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[iftags +theme]]",
+   "first_added": "[[iftags +テーマ]]"
+  },
+  {
+   "id": "B2",
+   "orig_range": [
+    2,
+    4
+   ],
+   "cand_range": [
+    2,
+    6
+   ],
+   "orig_lines": "3-4",
+   "cand_lines": "3-6",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-HOST",
+    "DELIVERY-MOVE",
+    "FONT-IMPORT",
+    "JPFONT-LOAD"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-HOST": "A",
+    "JPFONT-LOAD": "A",
+    "FONT-IMPORT": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DELIVERY-HOST": {
+     "orig": [
+      [
+       2,
+       4
+      ]
+     ],
+     "cand": [
+      [
+       2,
+       4
+      ]
+     ]
+    },
+    "JPFONT-LOAD": {
+     "cand": [
+      [
+       5,
+       6
+      ]
+     ]
+    },
+    "FONT-IMPORT": {
+     "orig": [],
+     "cand": [
+      [
+       4,
+       5
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       2,
+       6
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "absence claim needs base subtraction (resolved base)",
+    "the deciding evidence is the load probe (KB-04)"
+   ],
+   "partial_notes": [],
+   "first_removed": "@import url(\"https://nu-scptheme.github.io/Black-Highlighter/css/min/normalize.min.css\");",
+   "first_added": "@import url(\"https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css\");"
+  },
+  {
+   "id": "B3",
+   "orig_range": [
+    16,
+    17
+   ],
+   "cand_range": [
+    18,
+    18
+   ],
+   "orig_lines": "17-17",
+   "cand_lines": "at 19",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [
+    "CSS-BODY"
+   ],
+   "primary": "CSS-BODY",
+   "primary_section": 8,
+   "label_prec": {
+    "CSS-BODY": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "CSS-BODY": {}
+   },
+   "notes": [
+    "no other signature matched"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[/module]]",
+   "first_added": ""
+  },
+  {
+   "id": "B4",
+   "orig_range": [
+    18,
+    217
+   ],
+   "cand_range": [
+    19,
+    19
+   ],
+   "orig_lines": "19-217",
+   "cand_lines": "at 20",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "EXHIBIT-RESTRUCTURE",
+    "RATE-EXHIBIT-KEPT-CANDIDATE"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "RATE-EXHIBIT-KEPT-CANDIDATE": "B",
+    "EXHIBIT-RESTRUCTURE": "C"
+   },
+   "tier": "B",
+   "label_spans": {
+    "RATE-EXHIBIT-KEPT-CANDIDATE": {
+     "orig": [
+      [
+       29,
+       30
+      ]
+     ]
+    },
+    "EXHIBIT-RESTRUCTURE": {}
+   },
+   "notes": [
+    "removed Rate sits beside an exhibit label; routed to residue for the writer's kept-vs-removed reasoning",
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[include :scp-wiki:component:interwiki-style",
+   "first_added": ""
+  },
+  {
+   "id": "B5",
+   "orig_range": [
+    219,
+    220
+   ],
+   "cand_range": [
+    21,
+    22
+   ],
+   "orig_lines": "220-220",
+   "cand_lines": "22-22",
+   "channel_pair": [
+    "code-css",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       21,
+       22
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "@import url(\"https://fonts.bunny.net/css?family=Bebas+Neue&display=swap\");",
+   "first_added": "/* Bebas Neueの読み込みはこのモジュールの先頭の@import群に集約した（@importは規則の後に書くと無効になるため） */"
+  },
+  {
+   "id": "B6",
+   "orig_range": [
+    234,
+    235
+   ],
+   "cand_range": [
+    36,
+    37
+   ],
+   "orig_lines": "235-235",
+   "cand_lines": "37-37",
+   "channel_pair": [
+    "code-css",
+    "module-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE",
+    "HEADERVAR"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "HEADERVAR": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       234,
+       235
+      ]
+     ],
+     "cand": [
+      [
+       36,
+       37
+      ]
+     ]
+    },
+    "HEADERVAR": {
+     "orig": [
+      [
+       234,
+       235
+      ]
+     ],
+     "cand": [
+      [
+       36,
+       37
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       36,
+       37
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    --logo-image: url(\"https://scp-wiki.wdfiles.com/local--files/theme:i57/i57logo.png\");",
+   "first_added": "    --logo-image: url(\"https://scp-wiki.wdfiles.com/local--files/theme%3Ai57/i57logo.png\");"
+  },
+  {
+   "id": "B7",
+   "orig_range": [
+    240,
+    241
+   ],
+   "cand_range": [
+    42,
+    43
+   ],
+   "orig_lines": "241-241",
+   "cand_lines": "43-43",
+   "channel_pair": [
+    "code-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       42,
+       43
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    --header-font: \"Bebas Neue\", cursive;",
+   "first_added": "    --header-font: \"Bebas Neue\", \"Noto Sans JP\", cursive;"
+  },
+  {
+   "id": "B8",
+   "orig_range": [
+    473,
+    474
+   ],
+   "cand_range": [
+    275,
+    276
+   ],
+   "orig_lines": "474-474",
+   "cand_lines": "276-276",
+   "channel_pair": [
+    "code-css",
+    "module-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       473,
+       474
+      ]
+     ],
+     "cand": [
+      [
+       275,
+       276
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       275,
+       276
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: url(\"https://scp-wiki.wdfiles.com/local--files/theme:i57/i57.png\");",
+   "first_added": "    background: url(\"https://scp-wiki.wdfiles.com/local--files/theme%3Ai57/i57.png\");"
+  },
+  {
+   "id": "B9",
+   "orig_range": [
+    516,
+    517
+   ],
+   "cand_range": [
+    318,
+    319
+   ],
+   "orig_lines": "517-517",
+   "cand_lines": "319-319",
+   "channel_pair": [
+    "code-css",
+    "module-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       516,
+       517
+      ]
+     ],
+     "cand": [
+      [
+       318,
+       319
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       318,
+       319
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: url('https://scp-wiki.wikidot.com/local--files/theme:i57/MAC-1.png') top no-repeat;",
+   "first_added": "    background: url('https://scp-wiki.wikidot.com/local--files/theme%3Ai57/MAC-1.png') top no-repeat;"
+  },
+  {
+   "id": "B10",
+   "orig_range": [
+    533,
+    534
+   ],
+   "cand_range": [
+    335,
+    336
+   ],
+   "orig_lines": "534-534",
+   "cand_lines": "336-336",
+   "channel_pair": [
+    "code-css",
+    "module-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       533,
+       534
+      ]
+     ],
+     "cand": [
+      [
+       335,
+       336
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       335,
+       336
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: url(\"https://scp-wiki.wikidot.com/local--files/theme:i57/i57.png\");",
+   "first_added": "    background: url(\"https://scp-wiki.wikidot.com/local--files/theme%3Ai57/i57.png\");"
+  },
+  {
+   "id": "B11",
+   "orig_range": [
+    560,
+    561
+   ],
+   "cand_range": [
+    362,
+    1026
+   ],
+   "orig_lines": "561-561",
+   "cand_lines": "363-1026",
+   "channel_pair": [
+    "code-css",
+    "module-css"
+   ],
+   "labels": [
+    "CONTENT-STRING",
+    "CREDIT-PREVIEW",
+    "DELIVERY-MOVE",
+    "HEADERVAR",
+    "RESTORATION",
+    "TASL-FIELDS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "RESTORATION",
+   "primary_section": 8,
+   "label_prec": {
+    "CREDIT-PREVIEW": "A",
+    "TASL-FIELDS": "A",
+    "HEADERVAR": "A",
+    "CONTENT-STRING": "B",
+    "RESTORATION": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "CREDIT-PREVIEW": {
+     "cand": [
+      [
+       484,
+       485
+      ],
+      [
+       493,
+       494
+      ]
+     ]
+    },
+    "TASL-FIELDS": {
+     "cand": [
+      [
+       485,
+       493
+      ],
+      [
+       674,
+       675
+      ]
+     ]
+    },
+    "HEADERVAR": {
+     "orig": [],
+     "cand": [
+      [
+       699,
+       700
+      ],
+      [
+       701,
+       703
+      ]
+     ]
+    },
+    "CONTENT-STRING": {
+     "orig": [],
+     "cand": [
+      [
+       695,
+       696
+      ],
+      [
+       744,
+       745
+      ],
+      [
+       842,
+       843
+      ],
+      [
+       858,
+       859
+      ]
+     ]
+    },
+    "RESTORATION": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "orig": [
+      [
+       560,
+       561
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "added content matches the original's own earlier region; diff-only signal, supplement decides",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "    background: url(\"https://scp-wiki.wikidot.com/local--files/theme:i57/i57.png\");",
+   "first_added": "    background: url(\"https://scp-wiki.wikidot.com/local--files/theme%3Ai57/i57.png\");"
+  },
+  {
+   "id": "B12",
+   "orig_range": [
+    673,
+    681
+   ],
+   "cand_range": [
+    1138,
+    1139
+   ],
+   "orig_lines": "674-681",
+   "cand_lines": "1139-1139",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "EXHIBIT-RESTRUCTURE",
+    "INCLUDE-REPOINT",
+    "SELF-DELIVERY"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "INCLUDE-REPOINT": "A",
+    "SELF-DELIVERY": "A",
+    "EXHIBIT-RESTRUCTURE": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "INCLUDE-REPOINT": {
+     "orig": [
+      [
+       673,
+       674
+      ]
+     ],
+     "cand": [
+      [
+       1138,
+       1139
+      ]
+     ]
+    },
+    "SELF-DELIVERY": {
+     "orig": [
+      [
+       675,
+       676
+      ],
+      [
+       679,
+       680
+      ]
+     ],
+     "cand": []
+    },
+    "EXHIBIT-RESTRUCTURE": {}
+   },
+   "notes": [
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[include :scp-wiki:component:bhl-dark-sidebar]]",
+   "first_added": "[[include :scp-jp:component:bhl-dark-sidebar]]"
+  }
+ ],
+ "derived_presence": {},
+ "summary": {
+  "blocks": 12,
+  "specific": 11,
+  "heuristic": 1,
+  "residue": 0,
+  "skipped": 0,
+  "reindent_blocks": 0,
+  "label_counts": {
+   "IFTAGS": 1,
+   "TRANSLATION-ANCHORED": 1,
+   "DELIVERY-HOST": 1,
+   "DELIVERY-MOVE": 8,
+   "FONT-IMPORT": 1,
+   "JPFONT-LOAD": 1,
+   "CSS-BODY": 1,
+   "EXHIBIT-RESTRUCTURE": 2,
+   "RATE-EXHIBIT-KEPT-CANDIDATE": 1,
+   "COMMENT-TEXT": 1,
+   "TRANS-UNANCHORED": 2,
+   "COLON-ENC": 4,
+   "HEADERVAR": 2,
+   "CONTENT-STRING": 1,
+   "CREDIT-PREVIEW": 1,
+   "RESTORATION": 1,
+   "TASL-FIELDS": 1,
+   "INCLUDE-REPOINT": 1,
+   "SELF-DELIVERY": 1
+  }
+ },
+ "residue": [],
+ "skeleton": {
+  "sha256": "b99467ce9a4e73e74e6065742f995c8b9fb417e02d95f19f62ee0f127331317a",
+  "status": "written (new)"
+ }
+}
