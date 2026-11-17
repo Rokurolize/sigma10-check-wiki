@@ -1,0 +1,396 @@
+[[module CSS]]
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Atravellers-book-jp/1');
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Atravellers-book-jp/1
+]]
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** 旅行者の書 テーマ
+**翻訳責任者:** AI
+**翻訳年:** 2026
+**原題:** 旅行者之书 版式
+**著作権者:** 原語版ページの作成者に同じ（scp-wiki-cn の theme:travellers-book）
+**作成年:** 2021
+**初訳時参照リビジョン:** 14
+**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:travellers-book 旅行者之书 版式]
+[[include :scp-jp:credit:end-preview]]
+
+**評価:**
+
+**クレジット付き評価モジュール:**
+
+これは[[[theme:wanderers|放浪者の図書館Sigma-9テーマ]]]を基にしたテーマです。作者の判断に応じて、放浪者の図書館の「旅行者の書」シリーズに使用できます。//訳注: 原語版の「旅行者の書」ハブ（wanderers:travellers-book-hub）はCN版ウィキのページで、JP版に対応ページが存在しないためリンクをプレーンテキストに変更しました。//
+
+使用するには、本文中に以下のコードを追加してください。
+> [[include :scp-jp:theme:travellers-book-jp]]
+
+[[include :scp-jp:component:image-block name=https://sigma10-jp-test.wdfiles.com/local--files/theme%3Atravellers-book-jp/tree.png | caption=ヘッダー画像 | width=100px]]
++ 画像出典 / Image credit
+
+ヘッダー画像 / Header image: [[[https://pixabay.com/en/tree-nature-ecological-animals-2789704/|Pixabay]]], GDJ, Pixabay License
+背景画像 / Background: [[[http://source.pixite.co/pixite-source/antique-patterns|Antique-Patterns]]], Pixite Source, No known restrictions
+タイトル装飾 / Title decoration: [[[https://pixabay.com/en/decor-ornament-jewelry-star-2490106/|Pixabay]]], MR1313, Pixabay License
+
+Pixabayライセンスより引用 / Quoted from Pixabay license:
+> Free for commercial use
+> No attribution required
+
+++ 第2見出し / H2
++++ 第3見出し / H3
+++++ 第4見出し / H4
++++++ 第5見出し / H5
+++++++ 第6見出し / H6
+
+[[tabview]]
+[[tab 第一の世界]]
+回想: SCP-XXXX-1は、自身が無意識のうちに現実と時間を操れる世界を描写した。また、はるか昔、自らの有するその世界があらゆる法則の中心であり、その法則が想像しうるあらゆる方法で所在宇宙を統御していた時代があったとも主張した。最初のSCP計画以前に何が存在していたのか、以後に何が存在するのかは、もはや知りえない。SCP-XXXXを除き、現在の財団はこの点について何も把握していない。
+
+~ //Talk to Transformer//によって生成されたテキスト
+[[/tab]]
+
+[[tab 第二の世界]]
+SCP-XXXXは、自分が生まれた世界に似た世界を描写したが、その際には現在時制を用いた。彼は、Dr. O██████という人物が5名の人間の死に責任を負う必要があると言及した。この人物は犠牲者の身体を用いて人工魂を製造する施設を建設した。最終的に完成しなかったこの施設は、1名を殺害するごとに数十の人間の魂を製造できた。彼は同時に、複数のSCP-XXXX実例の存在も確認した。彼の説明によれば、彼はある儀式の中で殺害された。その儀式は、彼を自分自身が感知されない並行次元へ移行させることができ、さらにこの過程で彼が作成した魂は死者たちの新たな身体となった。
+
+~ //Talk to Transformer//によって生成されたテキスト
+[[/tab]]
+
+[[tab 第三の世界]]
+ああ、大企業から来た連中のことだ。テクノロジーで世界を支配しようとした連中。そのうちの一人は、私の兄と取引まで結んだ。彼は私を連れて行き、実験室で未来へ進ませようとした。私たちは何度も何度もその件について話し合ったが、成果は何ひとつ出なかった。
+
+~ //Talk to Transformer//によって生成されたテキスト
+[[/tab]]
+[[/tabview]]
+
++ ソースコード
+
+[[collapsible show="> コードを表示" hide="> コードを閉じる"]]
+[[code type="css"]]
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
+
+/*
+    旅行者之书 / Traveller's Book — Ported for SCP-JP (theme:travellers-book rev 14 on scp-wiki-cn).
+    原語版は CN の sigma9 wanderers 配信（cdn.jsdelivr.net/gh/scp-cn-tech/sigma9）を基盤にしていましたが、
+    SCP-JP では Sigma-9 のサイトテーマ層はサイトテーマ側が提供するため、このファイルには含めていません。
+    画像は候補ページの添付に置き換えています。
+*/
+
+
+
+/*
+BASED ON FLANNEL NATURE CSS THEME
+BASED ON SCP SIGMA-9 CSS THEME
+
+Made by [[*user W Asriel]] for the Traveller's Book
+*/
+
+
+body{
+    color: #222;
+}
+
+#container {    
+    margin:0 5em 0 5em;
+    background:rgba(255,255,255,0.5);
+    -webkit-background:rgba(255,255,255,0.5);
+    -moz-background:rgba(255,255,255,0.5);
+    -o-background:rgba(255,255,255,0.5);
+}
+
+div#container-wrap {
+    background: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Atravellers-book-jp/bg_c.jpg) repeat;
+}
+
+#page-title {
+    color: #4b724b;
+    border-bottom: 1px dotted #AAA;
+}
+
+#page-title:before {
+    height:2em;
+    width:2em;
+    content:"　";
+    background:url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Atravellers-book-jp/title_1.png) no-repeat 0px 0px;
+    background-size: auto 1.1em;
+}
+ 
+#page-title:after {
+    height:2em;
+    width:2em;
+    content:"　";
+    background:url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Atravellers-book-jp/title_2.png) no-repeat 0px 0px;
+    background-size: auto 1.1em;
+}
+
+h1,h2,h3 {
+    color: #228B22;
+}
+
+blockquote{
+    border: 1px dashed #008800;
+    padding:0 3em 0 3em;
+    background:rgba(255,255,255,0.2);
+    -webkit-background:rgba(255,255,255,0.2) !important;
+    -moz-background:rgba(255,255,255,0.2) !important;
+    -o-background:rgba(255,255,255,0.2) !important;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.code{
+    border: 1px dashed #008800;
+    padding:0 3em 0 3em;
+    background:    rgba(236,242,226,0.8);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+ 
+a{
+    color: #044004;    
+    transition: background 0.5s ease-out;
+    text-decoration:none;
+    border-bottom:1px dashed #228B22;
+}
+
+a:hover{
+    background:rgba(255,255,255,0.8);
+}
+ 
+a.newpage{
+    color: #888;
+    transition: box-shadow 0.5s ease-out;
+    text-decoration:none;
+    border-bottom:1px dashed #228B22;
+}
+
+#side-bar {
+    border: 1px solid #006600 !important;
+    background:rgba(255,255,255,0.1);
+    -webkit-background:rgba(255,255,255,0.1);
+    -moz-background:rgba(255,255,255,0.1);
+    -o-background:rgba(255,255,255,0.1);
+}
+
+#side-bar a{
+    border-bottom: none;
+}
+
+#side-bar .side-block {
+    border: none;
+    box-shadow: none;
+    background:transparent !important;
+}
+
+#page-info{
+    color: #555;
+}
+
+.page-options-bottom a{
+    color: #242;
+    background-color: rgba(255,255,255,0.6);
+    text-decoration: none;
+    border-bottom:none;
+    transition: box-shadow 0.5s ease-out;
+}
+.page-options-bottom a:hover{
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#header {
+    font-family:'宋体' !important;
+    width:100% !important;
+    background:transparent !important;
+    border-bottom: 3px solid #044004;
+}
+
+#header-extra-div-2{
+    width:162px;
+    height:162px;
+    z-index: 0;
+    background: transparent url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Atravellers-book-jp/tree.png);
+    background-repeat:no-repeat;
+    background-size:162px 162px;
+    padding:0;
+    margin:0;
+    position: absolute;
+    top:0; left:calc(25% - 9em);
+}
+
+#header h1{
+    text-shadow:none !important;
+    border-bottom:none;
+}
+
+#header h1 a {
+    text-shadow:none !important;
+    border-bottom:none;
+}
+
+#header h1 a::before {
+//    color: #044004 !important;   
+    color:transparent;
+    font-family:'等线' !important;
+    content: "旅行者之书";
+    text-shadow:none !important;
+}
+
+#header h2{
+    text-shadow:none !important;
+    border-bottom:none;
+}
+
+#header h2 span {
+    border-bottom:none;
+    text-shadow:none !important;
+}
+
+#header h2 span::before {
+    color:transparent;
+    text-shadow:none !important;
+}
+
+#top-bar a {
+    color: #044004;
+    border-bottom:none;
+    background: transparent;
+}
+
+#login-status {
+    color: #333333;
+}
+#login-status a {
+    color: #044004;
+}
+
+/* IMAGE BLOCK */
+.image-block {
+      margin:0 4%;
+      border:2px solid #ffffff;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 300px;
+}
+ 
+.image-block.block-right {
+    float: right;
+    clear: right;
+    margin: 0 2em 1em 2em;
+}
+ 
+.image-block.block-left {
+    float: left;
+    clear: left;
+    margin: 0 2em 1em 0;
+}
+ 
+.image-block.block-center {
+    margin-right: auto;
+    margin-left: auto;
+}
+.image-block img {
+    border: 0;
+    width: 300px;
+}
+.image-block .image-caption {
+    border-width:2px 0 0 0;
+    border-style:solid;
+    border-color:#fff;
+    padding: 2px 0;
+    background:rgba(255,255,255,0.7);
+    -webkit-background:rgba(255,255,255,0.7);
+    -moz-background:rgba(255,255,255,0.7);
+    -o-background:rgba(255,255,255,0.7);
+
+    font-size: 80%;
+    font-weight: bold;
+    text-align: center;
+    width: 300px;
+}
+.image-block > p {
+    margin: 0;
+}
+.image-block .image-caption > p {
+    margin: 0;
+    padding: 0 10px;
+}
+
+/* YUI TABS */
+.yui-navset .yui-content{
+    background-color:transparent;
+    background-color:rgba(255,255,255,0.1);
+    -webkit-background:rgba(255,255,255,0.1) !important;
+    -moz-background:rgba(255,255,255,0.1) !important;
+    -o-background:rgba(255,255,255,0.1) !important;
+
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.yui-navset .yui-nav a,
+.yui-navset .yui-navset-top .yui-nav a {
+    background-color: #CCCCCC;
+}
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a:focus,
+.yui-navset .yui-nav .selected a:hover {
+    background: #4b724b;
+    color: #EEEEEE;
+}
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:focus {
+    background: #B4EEB4;
+    text-decoration: none;
+}
+.yui-navset .yui-nav,
+.yui-navset .yui-navset-top .yui-nav {
+    border-color: #4b724b;
+}
+.yui-navset li {
+    line-height: normal;
+}
+
+/* MOBILE ADJUSTMENTS */
+
+@media (max-width: 767px) {
+#container {    
+    margin:0 0.5em 0 0.5em !important;
+}
+
+#side-bar{
+    background:rgba(255,255,255,0.5) !important;
+    -webkit-background:rgba(255,255,255,0.5) !important;
+    -moz-background:rgba(255,255,255,0.5) !important;
+    -o-background:rgba(255,255,255,0.5) !important;
+}
+
+#side-bar .close-menu {
+    background:rgba(255,255,255,0.5) !important;
+    -webkit-background:rgba(255,255,255,0.5) !important;
+    -moz-background:rgba(255,255,255,0.5) !important;
+    -o-background:rgba(255,255,255,0.5) !important;
+}
+
+}
+
+/* Credit module — carried from the production counterpart
+   pages-existing/existing:theme-wanderers.txt line 153. Production green
+   #006c00 adapted to this theme's forest-green palette (#228B22, the h1-h3
+   heading green). The candidate otherwise carried zero credit-module rules
+   (KB-11). */
+#page-content .rate-box-with-credit-button .creditButton {
+    background-color: #228B22;
+    border: solid 1px #228B22;
+}
+
+[[/code]]
+[[/collapsible]]
+
+[[include :scp-jp:component:license-box-backend
+|author=scp-wiki-cn theme:travellers-book の作者]]
+
+> **画像・フォントの出典:** 原語版の theme:travellers-book の記載に従います。sandbox・他Wiki・個人サイトの添付は候補ページに再ホストしています。原語版にライセンス表記が無い画像は、投稿前に著者へ確認してください。
+
+[[include :scp-jp:component:license-box-end]]
+
+[[/iftags]]
