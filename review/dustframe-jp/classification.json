@@ -1,0 +1,9657 @@
+{
+ "tool": "classify_hunks.py",
+ "classifier_version": "0.1.0",
+ "signature_table_version": "2026-11-17.1",
+ "theme": {
+  "dir": "dustframe-jp",
+  "cand_fullname": "theme:dustframe-jp",
+  "orig_fullname": "theme:dustframe",
+  "wiki": "scp-wiki-cn",
+  "revision": "7",
+  "kind": "standard",
+  "verdict": "PASS",
+  "original_file": "dustframe-jp/original.txt",
+  "candidate_file": "dustframe-jp/candidate.txt",
+  "original_sha256": "9b144c10bb5a5a30fe9a2b06251773e797fc8e62edfff9b8a1e92b07a263a706",
+  "candidate_sha256": "8221e062f45516f4c7dd6c2a7224aa918b12b13852d4ad81708beaecfad74c55",
+  "original_lines": 6621,
+  "candidate_lines": 6620
+ },
+ "topology": {
+  "original_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     0,
+     3163
+    ],
+    "lines": 3163
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     3168,
+     3277
+    ],
+    "lines": 109
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     3458,
+     6619
+    ],
+    "lines": 3161
+   }
+  ],
+  "candidate_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     0,
+     3161
+    ],
+    "lines": 3161
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     3170,
+     3279
+    ],
+    "lines": 109
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     3462,
+     6617
+    ],
+    "lines": 3155
+   }
+  ],
+  "moves": [
+   {
+    "from_kind": "module-css",
+    "to_kind": "code-css",
+    "orig_range": [
+     0,
+     3163
+    ],
+    "cand_range": [
+     3462,
+     6617
+    ],
+    "similarity": 0.971,
+    "basis": "content"
+   },
+   {
+    "from_kind": "code-css",
+    "to_kind": "module-css",
+    "orig_range": [
+     3458,
+     6619
+    ],
+    "cand_range": [
+     0,
+     3161
+    ],
+    "similarity": 0.969,
+    "basis": "content"
+   }
+  ],
+  "external_own_delivery": false
+ },
+ "blocks": [
+  {
+   "id": "B1",
+   "orig_range": [
+    8,
+    14
+   ],
+   "cand_range": [
+    8,
+    12
+   ],
+   "orig_lines": "9-14",
+   "cand_lines": "9-12",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "FONT-IMPORT"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "FONT-IMPORT": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "FONT-IMPORT": {
+     "orig": [
+      [
+       9,
+       12
+      ]
+     ],
+     "cand": [
+      [
+       8,
+       12
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       8,
+       12
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "the deciding evidence is the load probe (KB-04)"
+   ],
+   "partial_notes": [],
+   "first_removed": "@import url(\"https://fastly.jsdelivr.net/gh/Crimone/wanderers-dustjacket-fonts@main/typefaces.css\"); ",
+   "first_added": "@import url(\"https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;700;900&display=swap\");"
+  },
+  {
+   "id": "B2",
+   "orig_range": [
+    18,
+    20
+   ],
+   "cand_range": [
+    16,
+    18
+   ],
+   "orig_lines": "19-20",
+   "cand_lines": "17-18",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "ASSET-REHOST",
+    "DELIVERY-MOVE",
+    "HEADERVAR",
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "ASSET-REHOST": "A",
+    "HEADERVAR": "A",
+    "TRANSLATION-ANCHORED": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "ASSET-REHOST": {
+     "orig": [
+      [
+       18,
+       20
+      ]
+     ],
+     "cand": [
+      [
+       16,
+       17
+      ]
+     ]
+    },
+    "HEADERVAR": {
+     "orig": [
+      [
+       18,
+       20
+      ]
+     ],
+     "cand": [
+      [
+       16,
+       18
+      ]
+     ]
+    },
+    "TRANSLATION-ANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       16,
+       18
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "anchored pairs 2/2"
+   ],
+   "partial_notes": [],
+   "first_removed": "    --logo-image: url(\"https://wanderers-library.wdfiles.com/local--files/component%3Adustjacket-theme/wl_logo.png\");",
+   "first_added": "    --logo-image: url(\"https://scp-jp-storage.wdfiles.com/local--files/file%3A3438721-307-u2rk/wl_logo.png\");"
+  },
+  {
+   "id": "B3",
+   "orig_range": [
+    21,
+    26
+   ],
+   "cand_range": [
+    19,
+    24
+   ],
+   "orig_lines": "22-26",
+   "cand_lines": "20-24",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "ASSET-REHOST",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "ASSET-REHOST": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "ASSET-REHOST": {
+     "orig": [
+      [
+       21,
+       26
+      ]
+     ],
+     "cand": [
+      [
+       23,
+       24
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       19,
+       24
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    --body-font: adelle-sans, 'Lato', '微软雅黑', sans-serif;",
+   "first_added": "    --body-font: adelle-sans, 'Lato', 'Noto Sans JP', sans-serif;"
+  },
+  {
+   "id": "B4",
+   "orig_range": [
+    59,
+    61
+   ],
+   "cand_range": [
+    57,
+    59
+   ],
+   "orig_lines": "60-61",
+   "cand_lines": "58-59",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       57,
+       59
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    --user-account-mask: url(\"https://fastly.jsdelivr.net/gh/Crimone/crimson-anemone@main/files/user-account-mask.svg\");",
+   "first_added": "    --user-account-mask: url(\"data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20baseProfile%3D'tiny'%20overflow%3D'visible'%20version%3D'1.2'%20viewBox%3D'0%200%20200%20200'%20xml%3Aspace%3D'preserve'%3E%3Cpath%20d%3D'M89.8%2070.6c-9.9%200-15.8%207.9-15.8%2015.8%200%2015.8%2019.8%2019.8%2027.7%2031.6%207.9-11.9%2027.7-15.8%2027.7-31.6%200-7.9-5.9-15.8-15.8-15.8-7.9%200-11.9%207.9-11.9%207.9s-4-7.9-11.9-7.9z'%2F%3E%3Cpath%20d%3D'M188.7%20115.6c.1-.9.2-1.8.3-2.8.2-1.8.3-3.7.3-5.5v-2.8c0-1.1%200-2.2-.1-3.2%200-.4%200-.7-.1-1.1%200-.7-.1-1.4-.1-2.2%200-.4-.1-.8-.1-1.2-.1-.7-.1-1.3-.2-2%200-.4-.1-.9-.1-1.3-.1-.6-.2-1.3-.3-1.9-.1-.4-.1-.9-.2-1.3-.1-.6-.2-1.3-.3-1.9-.1-.4-.1-.8-.2-1.2-.1-.7-.3-1.4-.4-2.1-.1-.3-.1-.7-.2-1-.2-1-.5-2-.7-3-.1-.3-.2-.7-.3-1-.2-.7-.4-1.3-.6-2-.1-.4-.3-.9-.4-1.3-.2-.5-.4-1.1-.5-1.6-.2-.5-.3-.9-.5-1.4l-.6-1.5c-.2-.5-.4-.9-.5-1.4-.2-.5-.4-1-.6-1.4-.2-.5-.4-.9-.6-1.4-.2-.5-.4-.9-.6-1.4-.2-.5-.4-1-.7-1.4l-.6-1.2c-.5-1.1-1.1-2.1-1.7-3.2-.1-.3-.3-.5-.4-.8-.3-.5-.6-1.1-.9-1.6-.2-.3-.4-.6-.6-1-.3-.5-.7-1-1-1.6l-.6-.9c-.3-.5-.7-1-1.1-1.6l-.6-.9c-.4-.5-.7-1-1.1-1.6-.2-.3-.4-.5-.6-.8-.4-.5-.8-1.1-1.3-1.6-.1-.2-.3-.3-.4-.5-2.2-2.7-4.5-5.2-6.9-7.6l-.4-.4c-.5-.5-1.1-1-1.6-1.6-.2-.1-.3-.3-.5-.4-.6-.5-1.1-1-1.7-1.5-.2-.1-.3-.3-.5-.4l-1.8-1.5c-.1-.1-.2-.2-.3-.2-2.8-2.3-5.8-4.4-8.9-6.3-3.9-2.4-7.9-4.5-12.2-6.3L129.5%206h-59l-5.3%2016.1c-32.1%2013.6-54.6%2045.4-54.6%2082.4%200%201.8.1%203.7.2%205.5s.3%203.7.5%205.5L0%20128.2l15%2026.1%2014.5%2025.1%2016.6-3.5c15%2011.4%2033.7%2018.1%2053.9%2018.1%2020.2%200%2038.9-6.7%2053.9-18.1l16.6%203.5%2029.5-51.2-11.3-12.6zm-70-94.6%201.9%205.8%202.1%206.5%205.1%202.2-11%204%2016.9%2011.9c7.6%205.4%2012.2%2014.1%2012.2%2023.4v24.4c0%2010.4-4.3%2019.9-11.3%2026.6-5.7%205.5-13.2%209.1-21.1%2010.1-3.2.5-16.9.2-20.3.3-9.5%200-18.9-3.8-25.7-10.4-6.9-6.7-11.3-16.1-11.3-26.5V74.7c0-9.3%204.6-18.1%2012.2-23.4l31.3-21.9%201.5-8.3h17.5zm44.2%20141.5-5.9-1.2-6.7-1.4-5.4%204.1c-13%209.8-28.5%2015-44.8%2015s-31.9-5.2-44.8-15l-5.4-4.1-6.7%201.4-5.9%201.2-10.9-19c8.3-6.6%2018.4-12%2029.7-16C64.5%20138.7%2078%20146%2093.2%20146H109c15.2%200%2028.7-7.3%2037.3-18.5%2010.7%203.8%2020.2%208.9%2028.2%2014.9l-11.6%2020.1z'%2F%3E%3C%2Fsvg%3E\");"
+  },
+  {
+   "id": "B5",
+   "orig_range": [
+    76,
+    77
+   ],
+   "cand_range": [
+    74,
+    75
+   ],
+   "orig_lines": "77-77",
+   "cand_lines": "75-75",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       74,
+       75
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #region = 搜索框的normalize部分 */",
+   "first_added": "/* #region = 検索ボックスのnormalize部分 */"
+  },
+  {
+   "id": "B6",
+   "orig_range": [
+    149,
+    150
+   ],
+   "cand_range": [
+    147,
+    148
+   ],
+   "orig_lines": "150-150",
+   "cand_lines": "148-148",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       147,
+       148
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #endregion = 搜索框的normalize部分 */",
+   "first_added": "/* #endregion = 検索ボックスのnormalize部分 */"
+  },
+  {
+   "id": "B7",
+   "orig_range": [
+    190,
+    191
+   ],
+   "cand_range": [
+    188,
+    189
+   ],
+   "orig_lines": "191-191",
+   "cand_lines": "189-189",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       188,
+       189
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #region == 顶栏 */",
+   "first_added": "/* #region == トップバー */"
+  },
+  {
+   "id": "B8",
+   "orig_range": [
+    211,
+    212
+   ],
+   "cand_range": [
+    209,
+    210
+   ],
+   "orig_lines": "212-212",
+   "cand_lines": "210-210",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       209,
+       210
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #region === 黑标顶栏设置 */",
+   "first_added": "/* #region === ブラックハイライター系トップバー設定 */"
+  },
+  {
+   "id": "B9",
+   "orig_range": [
+    291,
+    292
+   ],
+   "cand_range": [
+    289,
+    290
+   ],
+   "orig_lines": "292-292",
+   "cand_lines": "290-290",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       289,
+       290
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #endregion === 黑标顶栏设置 */",
+   "first_added": "/* #endregion === ブラックハイライター系トップバー設定 */"
+  },
+  {
+   "id": "B10",
+   "orig_range": [
+    293,
+    294
+   ],
+   "cand_range": [
+    291,
+    292
+   ],
+   "orig_lines": "294-294",
+   "cand_lines": "292-292",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       291,
+       292
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #region === Sigma-9吸附顶栏 */",
+   "first_added": "/* #region === Sigma-9 吸着式トップバー */"
+  },
+  {
+   "id": "B11",
+   "orig_range": [
+    332,
+    333
+   ],
+   "cand_range": [
+    330,
+    331
+   ],
+   "orig_lines": "333-333",
+   "cand_lines": "331-331",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       330,
+       331
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #endregion === Sigma-9吸附顶栏 */",
+   "first_added": "/* #endregion === Sigma-9 吸着式トップバー */"
+  },
+  {
+   "id": "B12",
+   "orig_range": [
+    334,
+    335
+   ],
+   "cand_range": [
+    332,
+    333
+   ],
+   "orig_lines": "335-335",
+   "cand_lines": "333-333",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       332,
+       333
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #endregion == 顶栏 */",
+   "first_added": "/* #endregion == トップバー */"
+  },
+  {
+   "id": "B13",
+   "orig_range": [
+    391,
+    392
+   ],
+   "cand_range": [
+    389,
+    390
+   ],
+   "orig_lines": "392-392",
+   "cand_lines": "390-390",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "GLYPH-FORM",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "GLYPH-FORM": "B",
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "GLYPH-FORM": {},
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       389,
+       390
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "fold-compare: glyph forms only",
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #region = HEADER背景图 */",
+   "first_added": "/* #region = HEADER背景画像 */"
+  },
+  {
+   "id": "B14",
+   "orig_range": [
+    408,
+    409
+   ],
+   "cand_range": [
+    406,
+    407
+   ],
+   "orig_lines": "409-409",
+   "cand_lines": "407-407",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "GLYPH-FORM",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "GLYPH-FORM": "B",
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "GLYPH-FORM": {},
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       406,
+       407
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "fold-compare: glyph forms only",
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #endregion = HEADER背景图 */",
+   "first_added": "/* #endregion = HEADER背景画像 */"
+  },
+  {
+   "id": "B15",
+   "orig_range": [
+    410,
+    411
+   ],
+   "cand_range": [
+    408,
+    409
+   ],
+   "orig_lines": "411-411",
+   "cand_lines": "409-409",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       408,
+       409
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #region = 页眉、页面标题 */",
+   "first_added": "/* #region = ヘッダー・ページタイトル */"
+  },
+  {
+   "id": "B16",
+   "orig_range": [
+    458,
+    459
+   ],
+   "cand_range": [
+    456,
+    457
+   ],
+   "orig_lines": "459-459",
+   "cand_lines": "457-457",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "ASSET-REHOST",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "ASSET-REHOST": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "ASSET-REHOST": {
+     "orig": [
+      [
+       458,
+       459
+      ]
+     ],
+     "cand": [
+      [
+       456,
+       457
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       456,
+       457
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: url(https://wanderers-library.wdfiles.com/local--files/component%3Adustjacket-theme/goldfoil.png);",
+   "first_added": "    background: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A3438721-305-rq20/goldfoil.png);"
+  },
+  {
+   "id": "B17",
+   "orig_range": [
+    485,
+    486
+   ],
+   "cand_range": [
+    483,
+    484
+   ],
+   "orig_lines": "486-486",
+   "cand_lines": "484-484",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       483,
+       484
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #region == 页面标题 */",
+   "first_added": "/* #region == ページタイトル */"
+  },
+  {
+   "id": "B18",
+   "orig_range": [
+    508,
+    509
+   ],
+   "cand_range": [
+    506,
+    507
+   ],
+   "orig_lines": "509-509",
+   "cand_lines": "507-507",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "ASSET-REHOST",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "ASSET-REHOST": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "ASSET-REHOST": {
+     "orig": [
+      [
+       508,
+       509
+      ]
+     ],
+     "cand": [
+      [
+       506,
+       507
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       506,
+       507
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background-image: url(\"https://wanderers-library.wdfiles.com/local--files/component%3Adustjacket-theme/goldfoil.png\");",
+   "first_added": "    background-image: url(\"https://scp-jp-storage.wdfiles.com/local--files/file%3A3438721-305-rq20/goldfoil.png\");"
+  },
+  {
+   "id": "B19",
+   "orig_range": [
+    632,
+    633
+   ],
+   "cand_range": [
+    630,
+    631
+   ],
+   "orig_lines": "633-633",
+   "cand_lines": "631-631",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       630,
+       631
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    font-family: 'zuijinregular', serif;",
+   "first_added": "    font-family: 'Zen Old Mincho', serif;"
+  },
+  {
+   "id": "B20",
+   "orig_range": [
+    635,
+    636
+   ],
+   "cand_range": [
+    633,
+    634
+   ],
+   "orig_lines": "636-636",
+   "cand_lines": "634-634",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       633,
+       634
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #endregion == 页面标题 */",
+   "first_added": "/* #endregion == ページタイトル */"
+  },
+  {
+   "id": "B21",
+   "orig_range": [
+    637,
+    638
+   ],
+   "cand_range": [
+    635,
+    636
+   ],
+   "orig_lines": "638-638",
+   "cand_lines": "636-636",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       635,
+       636
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #endregion = 页眉、页面标题 */",
+   "first_added": "/* #endregion = ヘッダー・ページタイトル */"
+  },
+  {
+   "id": "B22",
+   "orig_range": [
+    639,
+    640
+   ],
+   "cand_range": [
+    637,
+    638
+   ],
+   "orig_lines": "640-640",
+   "cand_lines": "638-638",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       637,
+       638
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #region = 侧栏 */",
+   "first_added": "/* #region = サイドバー */"
+  },
+  {
+   "id": "B23",
+   "orig_range": [
+    641,
+    642
+   ],
+   "cand_range": [
+    639,
+    640
+   ],
+   "orig_lines": "642-642",
+   "cand_lines": "640-640",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       639,
+       640
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #region == Sigma-9 侧栏 */",
+   "first_added": "/* #region == Sigma-9 サイドバー */"
+  },
+  {
+   "id": "B24",
+   "orig_range": [
+    740,
+    741
+   ],
+   "cand_range": [
+    738,
+    739
+   ],
+   "orig_lines": "741-741",
+   "cand_lines": "739-739",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       738,
+       739
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #endregion == Sigma-9 侧栏 */",
+   "first_added": "/* #endregion == Sigma-9 サイドバー */"
+  },
+  {
+   "id": "B25",
+   "orig_range": [
+    865,
+    866
+   ],
+   "cand_range": [
+    863,
+    864
+   ],
+   "orig_lines": "866-866",
+   "cand_lines": "864-864",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       863,
+       864
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #region == Sigma-9 移动端侧栏启动按钮 */",
+   "first_added": "/* #region == Sigma-9 モバイルサイドバー起動ボタン */"
+  },
+  {
+   "id": "B26",
+   "orig_range": [
+    932,
+    933
+   ],
+   "cand_range": [
+    930,
+    931
+   ],
+   "orig_lines": "933-933",
+   "cand_lines": "931-931",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       930,
+       931
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #endregion == Sigma-9 移动端侧栏启动按钮 */",
+   "first_added": "/* #endregion == Sigma-9 モバイルサイドバー起動ボタン */"
+  },
+  {
+   "id": "B27",
+   "orig_range": [
+    934,
+    935
+   ],
+   "cand_range": [
+    932,
+    933
+   ],
+   "orig_lines": "935-935",
+   "cand_lines": "933-933",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       932,
+       933
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #endregion = 侧栏 */",
+   "first_added": "/* #endregion = サイドバー */"
+  },
+  {
+   "id": "B28",
+   "orig_range": [
+    936,
+    937
+   ],
+   "cand_range": [
+    934,
+    935
+   ],
+   "orig_lines": "937-937",
+   "cand_lines": "935-935",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       934,
+       935
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #region = 页面主要元素 */",
+   "first_added": "/* #region = ページの主要要素 */"
+  },
+  {
+   "id": "B29",
+   "orig_range": [
+    1177,
+    1178
+   ],
+   "cand_range": [
+    1175,
+    1176
+   ],
+   "orig_lines": "1178-1178",
+   "cand_lines": "1176-1176",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "SELECTOR-CORRECTION",
+    "T7-CREDIT-CSS"
+   ],
+   "primary": "T7-CREDIT-CSS",
+   "primary_section": 1,
+   "label_prec": {
+    "T7-CREDIT-CSS": "B",
+    "SELECTOR-CORRECTION": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "T7-CREDIT-CSS": {
+     "cand": [
+      [
+       1175,
+       1176
+      ]
+     ]
+    },
+    "SELECTOR-CORRECTION": {
+     "orig": [
+      [
+       1177,
+       1178
+      ]
+     ],
+     "cand": [
+      [
+       1175,
+       1176
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       1175,
+       1176
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "supplement-vs-inherited needs the production counterpart"
+   ],
+   "partial_notes": [],
+   "first_removed": "#page-content .rate-box-with-credit-button .creditButton p a {",
+   "first_added": "#page-content .rate-box-with-credit-button .creditButton a {"
+  },
+  {
+   "id": "B30",
+   "orig_range": [
+    1199,
+    1200
+   ],
+   "cand_range": [
+    1197,
+    1198
+   ],
+   "orig_lines": "1200-1200",
+   "cand_lines": "1198-1198",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "SELECTOR-CORRECTION",
+    "T7-CREDIT-CSS"
+   ],
+   "primary": "T7-CREDIT-CSS",
+   "primary_section": 1,
+   "label_prec": {
+    "T7-CREDIT-CSS": "B",
+    "SELECTOR-CORRECTION": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "T7-CREDIT-CSS": {
+     "cand": [
+      [
+       1197,
+       1198
+      ]
+     ]
+    },
+    "SELECTOR-CORRECTION": {
+     "orig": [
+      [
+       1199,
+       1200
+      ]
+     ],
+     "cand": [
+      [
+       1197,
+       1198
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       1197,
+       1198
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "supplement-vs-inherited needs the production counterpart"
+   ],
+   "partial_notes": [],
+   "first_removed": ".creditButtonStandalone p a{",
+   "first_added": ".creditButtonStandalone a{"
+  },
+  {
+   "id": "B31",
+   "orig_range": [
+    1203,
+    1204
+   ],
+   "cand_range": [
+    1201,
+    1202
+   ],
+   "orig_lines": "1204-1204",
+   "cand_lines": "1202-1202",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "SELECTOR-CORRECTION",
+    "T7-CREDIT-CSS"
+   ],
+   "primary": "T7-CREDIT-CSS",
+   "primary_section": 1,
+   "label_prec": {
+    "T7-CREDIT-CSS": "B",
+    "SELECTOR-CORRECTION": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "T7-CREDIT-CSS": {
+     "cand": [
+      [
+       1201,
+       1202
+      ]
+     ]
+    },
+    "SELECTOR-CORRECTION": {
+     "orig": [
+      [
+       1203,
+       1204
+      ]
+     ],
+     "cand": [
+      [
+       1201,
+       1202
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       1201,
+       1202
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "supplement-vs-inherited needs the production counterpart"
+   ],
+   "partial_notes": [],
+   "first_removed": ".creditButtonStandalone p a:hover {",
+   "first_added": ".creditButtonStandalone a:hover {"
+  },
+  {
+   "id": "B32",
+   "orig_range": [
+    1249,
+    1250
+   ],
+   "cand_range": [
+    1247,
+    1248
+   ],
+   "orig_lines": "1250-1250",
+   "cand_lines": "1248-1248",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "ASSET-REHOST",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "ASSET-REHOST": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "ASSET-REHOST": {
+     "orig": [
+      [
+       1249,
+       1250
+      ]
+     ],
+     "cand": [
+      [
+       1247,
+       1248
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       1247,
+       1248
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    border-image-source: url(https://wanderers-library.wdfiles.com/local--files/component%3Adustjacket-theme/wl_hr.png);",
+   "first_added": "    border-image-source: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A3438721-307-flvk/wl_hr.png);"
+  },
+  {
+   "id": "B33",
+   "orig_range": [
+    1260,
+    1261
+   ],
+   "cand_range": [
+    1258,
+    1259
+   ],
+   "orig_lines": "1261-1261",
+   "cand_lines": "1259-1259",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "ASSET-REHOST",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "ASSET-REHOST": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "ASSET-REHOST": {
+     "orig": [
+      [
+       1260,
+       1261
+      ]
+     ],
+     "cand": [
+      [
+       1258,
+       1259
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       1258,
+       1259
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    border-image: url(\"https://wanderers-library.wdfiles.com/local--files/component%3Adustjacket-theme/wl_border.png\") 600 round;",
+   "first_added": "    border-image: url(\"https://scp-jp-storage.wdfiles.com/local--files/file%3A3438721-307-yhhi/wl_border.png\") 600 round;"
+  },
+  {
+   "id": "B34",
+   "orig_range": [
+    1299,
+    1300
+   ],
+   "cand_range": [
+    1297,
+    1298
+   ],
+   "orig_lines": "1300-1300",
+   "cand_lines": "1298-1298",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       1297,
+       1298
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #region == 黑标 Footnote Block */",
+   "first_added": "/* #region == ブラックハイライター系 Footnote Block */"
+  },
+  {
+   "id": "B35",
+   "orig_range": [
+    1333,
+    1334
+   ],
+   "cand_range": [
+    1331,
+    1332
+   ],
+   "orig_lines": "1334-1334",
+   "cand_lines": "1332-1332",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       1331,
+       1332
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    font-family: \"zuijinregular\", sans-serif;",
+   "first_added": "    font-family: 'Zen Old Mincho', sans-serif;"
+  },
+  {
+   "id": "B36",
+   "orig_range": [
+    1475,
+    1476
+   ],
+   "cand_range": [
+    1473,
+    1474
+   ],
+   "orig_lines": "1476-1476",
+   "cand_lines": "1474-1474",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       1473,
+       1474
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    font-family: 'zuijinregular', serif;",
+   "first_added": "    font-family: 'Zen Old Mincho', serif;"
+  },
+  {
+   "id": "B37",
+   "orig_range": [
+    1502,
+    1503
+   ],
+   "cand_range": [
+    1500,
+    1501
+   ],
+   "orig_lines": "1503-1503",
+   "cand_lines": "1501-1501",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       1500,
+       1501
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #endregion == 黑标 Footnote Block */",
+   "first_added": "/* #endregion == ブラックハイライター系 Footnote Block */"
+  },
+  {
+   "id": "B38",
+   "orig_range": [
+    1614,
+    1615
+   ],
+   "cand_range": [
+    1612,
+    1613
+   ],
+   "orig_lines": "1615-1615",
+   "cand_lines": "1613-1613",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       1612,
+       1613
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #endregion = 页面主要元素 */",
+   "first_added": "/* #endregion = ページの主要要素 */"
+  },
+  {
+   "id": "B39",
+   "orig_range": [
+    1616,
+    1617
+   ],
+   "cand_range": [
+    1614,
+    1615
+   ],
+   "orig_lines": "1617-1617",
+   "cand_lines": "1615-1615",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       1614,
+       1615
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #region = 用户和搜索栏 */",
+   "first_added": "/* #region = ユーザー欄と検索欄 */"
+  },
+  {
+   "id": "B40",
+   "orig_range": [
+    1979,
+    1980
+   ],
+   "cand_range": [
+    1977,
+    1978
+   ],
+   "orig_lines": "1980-1980",
+   "cand_lines": "1978-1978",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       1977,
+       1978
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #region == 默认收起用户信息栏和搜索栏 */",
+   "first_added": "/* #region == ユーザー情報欄と検索欄を既定で折り畳む */"
+  },
+  {
+   "id": "B41",
+   "orig_range": [
+    2127,
+    2128
+   ],
+   "cand_range": [
+    2125,
+    2126
+   ],
+   "orig_lines": "2128-2128",
+   "cand_lines": "2126-2126",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       2125,
+       2126
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #endregion == 默认收起用户信息栏和搜索栏 */",
+   "first_added": "/* #endregion == ユーザー情報欄と検索欄を既定で折り畳む */"
+  },
+  {
+   "id": "B42",
+   "orig_range": [
+    2129,
+    2130
+   ],
+   "cand_range": [
+    2127,
+    2128
+   ],
+   "orig_lines": "2130-2130",
+   "cand_lines": "2128-2128",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       2127,
+       2128
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #endregion = 用户和搜索栏 */",
+   "first_added": "/* #endregion = ユーザー欄と検索欄 */"
+  },
+  {
+   "id": "B43",
+   "orig_range": [
+    2131,
+    2132
+   ],
+   "cand_range": [
+    2129,
+    2130
+   ],
+   "orig_lines": "2132-2132",
+   "cand_lines": "2130-2130",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       2129,
+       2130
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #region = 黑标评分模块 */",
+   "first_added": "/* #region = ブラックハイライター系評価モジュール */"
+  },
+  {
+   "id": "B44",
+   "orig_range": [
+    2175,
+    2176
+   ],
+   "cand_range": [
+    2173,
+    2174
+   ],
+   "orig_lines": "2176-2176",
+   "cand_lines": "2174-2174",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "SELECTOR-CORRECTION",
+    "T7-CREDIT-CSS"
+   ],
+   "primary": "T7-CREDIT-CSS",
+   "primary_section": 1,
+   "label_prec": {
+    "T7-CREDIT-CSS": "B",
+    "SELECTOR-CORRECTION": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "T7-CREDIT-CSS": {
+     "cand": [
+      [
+       2173,
+       2174
+      ]
+     ]
+    },
+    "SELECTOR-CORRECTION": {
+     "orig": [
+      [
+       2175,
+       2176
+      ]
+     ],
+     "cand": [
+      [
+       2173,
+       2174
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       2173,
+       2174
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "supplement-vs-inherited needs the production counterpart"
+   ],
+   "partial_notes": [],
+   "first_removed": ".page-rate-widget-box .cancel,.page-rate-widget-box .cancel a,.page-rate-widget-box .ratedown,.page-rate-widget-box .ratedown a,.page-rate-widget-box .rateup,.page-rate-widget-box .rateup a,.rate-box-with-credit-button>.creditButton,.rate-box-with-credit-button>.creditButton>p {",
+   "first_added": ".page-rate-widget-box .cancel,.page-rate-widget-box .cancel a,.page-rate-widget-box .ratedown,.page-rate-widget-box .ratedown a,.page-rate-widget-box .rateup,.page-rate-widget-box .rateup a,.rate-box-with-credit-button>.creditButton,.rate-box-with-credit-button>.creditButton {"
+  },
+  {
+   "id": "B45",
+   "orig_range": [
+    2365,
+    2366
+   ],
+   "cand_range": [
+    2363,
+    2364
+   ],
+   "orig_lines": "2366-2366",
+   "cand_lines": "2364-2364",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "SELECTOR-CORRECTION",
+    "T7-CREDIT-CSS"
+   ],
+   "primary": "T7-CREDIT-CSS",
+   "primary_section": 1,
+   "label_prec": {
+    "T7-CREDIT-CSS": "B",
+    "SELECTOR-CORRECTION": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "T7-CREDIT-CSS": {
+     "cand": [
+      [
+       2363,
+       2364
+      ]
+     ]
+    },
+    "SELECTOR-CORRECTION": {
+     "orig": [
+      [
+       2365,
+       2366
+      ]
+     ],
+     "cand": [
+      [
+       2363,
+       2364
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       2363,
+       2364
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "supplement-vs-inherited needs the production counterpart"
+   ],
+   "partial_notes": [],
+   "first_removed": "#page-content .rate-box-with-credit-button>.creditButton>p {",
+   "first_added": "#page-content .rate-box-with-credit-button>.creditButton {"
+  },
+  {
+   "id": "B46",
+   "orig_range": [
+    2372,
+    2373
+   ],
+   "cand_range": [
+    2370,
+    2371
+   ],
+   "orig_lines": "2373-2373",
+   "cand_lines": "2371-2371",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "T7-CREDIT-CSS"
+   ],
+   "primary": "T7-CREDIT-CSS",
+   "primary_section": 1,
+   "label_prec": {
+    "T7-CREDIT-CSS": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "T7-CREDIT-CSS": {
+     "cand": [
+      [
+       2370,
+       2371
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       2370,
+       2371
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "supplement-vs-inherited needs the production counterpart"
+   ],
+   "partial_notes": [],
+   "first_removed": "#page-content .rate-box-with-credit-button>.creditButton>p,#page-content .rate-box-with-credit-button>.creditButton>p>a {",
+   "first_added": "#page-content .rate-box-with-credit-button>.creditButton,#page-content .rate-box-with-credit-button>.creditButton>a {"
+  },
+  {
+   "id": "B47",
+   "orig_range": [
+    2377,
+    2378
+   ],
+   "cand_range": [
+    2375,
+    2376
+   ],
+   "orig_lines": "2378-2378",
+   "cand_lines": "2376-2376",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "SELECTOR-CORRECTION",
+    "T7-CREDIT-CSS"
+   ],
+   "primary": "T7-CREDIT-CSS",
+   "primary_section": 1,
+   "label_prec": {
+    "T7-CREDIT-CSS": "B",
+    "SELECTOR-CORRECTION": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "T7-CREDIT-CSS": {
+     "cand": [
+      [
+       2375,
+       2376
+      ]
+     ]
+    },
+    "SELECTOR-CORRECTION": {
+     "orig": [
+      [
+       2377,
+       2378
+      ]
+     ],
+     "cand": [
+      [
+       2375,
+       2376
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       2375,
+       2376
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "supplement-vs-inherited needs the production counterpart"
+   ],
+   "partial_notes": [],
+   "first_removed": "#page-content .rate-box-with-credit-button>.creditButton>p>a {",
+   "first_added": "#page-content .rate-box-with-credit-button>.creditButton>a {"
+  },
+  {
+   "id": "B48",
+   "orig_range": [
+    2384,
+    2385
+   ],
+   "cand_range": [
+    2382,
+    2383
+   ],
+   "orig_lines": "2385-2385",
+   "cand_lines": "2383-2383",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "SELECTOR-CORRECTION",
+    "T7-CREDIT-CSS"
+   ],
+   "primary": "T7-CREDIT-CSS",
+   "primary_section": 1,
+   "label_prec": {
+    "T7-CREDIT-CSS": "B",
+    "SELECTOR-CORRECTION": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "T7-CREDIT-CSS": {
+     "cand": [
+      [
+       2382,
+       2383
+      ]
+     ]
+    },
+    "SELECTOR-CORRECTION": {
+     "orig": [
+      [
+       2384,
+       2385
+      ]
+     ],
+     "cand": [
+      [
+       2382,
+       2383
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       2382,
+       2383
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "supplement-vs-inherited needs the production counterpart"
+   ],
+   "partial_notes": [],
+   "first_removed": "#page-content .rate-box-with-credit-button>.creditButton>p>a:after {",
+   "first_added": "#page-content .rate-box-with-credit-button>.creditButton>a:after {"
+  },
+  {
+   "id": "B49",
+   "orig_range": [
+    2401,
+    2402
+   ],
+   "cand_range": [
+    2399,
+    2400
+   ],
+   "orig_lines": "2402-2402",
+   "cand_lines": "2400-2400",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "SELECTOR-CORRECTION",
+    "T7-CREDIT-CSS"
+   ],
+   "primary": "T7-CREDIT-CSS",
+   "primary_section": 1,
+   "label_prec": {
+    "T7-CREDIT-CSS": "B",
+    "SELECTOR-CORRECTION": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "T7-CREDIT-CSS": {
+     "cand": [
+      [
+       2399,
+       2400
+      ]
+     ]
+    },
+    "SELECTOR-CORRECTION": {
+     "orig": [
+      [
+       2401,
+       2402
+      ]
+     ],
+     "cand": [
+      [
+       2399,
+       2400
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       2399,
+       2400
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "supplement-vs-inherited needs the production counterpart"
+   ],
+   "partial_notes": [],
+   "first_removed": "#page-content .rate-box-with-credit-button>.creditButton>p>a:active:after,#page-content .rate-box-with-credit-button>.creditButton>p>a:hover:after {",
+   "first_added": "#page-content .rate-box-with-credit-button>.creditButton>a:active:after,#page-content .rate-box-with-credit-button>.creditButton>a:hover:after {"
+  },
+  {
+   "id": "B50",
+   "orig_range": [
+    2405,
+    2406
+   ],
+   "cand_range": [
+    2403,
+    2404
+   ],
+   "orig_lines": "2406-2406",
+   "cand_lines": "2404-2404",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "SELECTOR-CORRECTION",
+    "T7-CREDIT-CSS"
+   ],
+   "primary": "T7-CREDIT-CSS",
+   "primary_section": 1,
+   "label_prec": {
+    "T7-CREDIT-CSS": "B",
+    "SELECTOR-CORRECTION": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "T7-CREDIT-CSS": {
+     "cand": [
+      [
+       2403,
+       2404
+      ]
+     ]
+    },
+    "SELECTOR-CORRECTION": {
+     "orig": [
+      [
+       2405,
+       2406
+      ]
+     ],
+     "cand": [
+      [
+       2403,
+       2404
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       2403,
+       2404
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "supplement-vs-inherited needs the production counterpart"
+   ],
+   "partial_notes": [],
+   "first_removed": "#page-content .rate-box-with-credit-button>.creditButton>p>a:focus-within:after {",
+   "first_added": "#page-content .rate-box-with-credit-button>.creditButton>a:focus-within:after {"
+  },
+  {
+   "id": "B51",
+   "orig_range": [
+    2409,
+    2410
+   ],
+   "cand_range": [
+    2407,
+    2408
+   ],
+   "orig_lines": "2410-2410",
+   "cand_lines": "2408-2408",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "SELECTOR-CORRECTION",
+    "T7-CREDIT-CSS"
+   ],
+   "primary": "T7-CREDIT-CSS",
+   "primary_section": 1,
+   "label_prec": {
+    "T7-CREDIT-CSS": "B",
+    "SELECTOR-CORRECTION": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "T7-CREDIT-CSS": {
+     "cand": [
+      [
+       2407,
+       2408
+      ]
+     ]
+    },
+    "SELECTOR-CORRECTION": {
+     "orig": [
+      [
+       2409,
+       2410
+      ]
+     ],
+     "cand": [
+      [
+       2407,
+       2408
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       2407,
+       2408
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "supplement-vs-inherited needs the production counterpart"
+   ],
+   "partial_notes": [],
+   "first_removed": "#page-content .rate-box-with-credit-button>.creditButton>p>a:before {",
+   "first_added": "#page-content .rate-box-with-credit-button>.creditButton>a:before {"
+  },
+  {
+   "id": "B52",
+   "orig_range": [
+    2431,
+    2432
+   ],
+   "cand_range": [
+    2429,
+    2430
+   ],
+   "orig_lines": "2432-2432",
+   "cand_lines": "2430-2430",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "SELECTOR-CORRECTION",
+    "T7-CREDIT-CSS"
+   ],
+   "primary": "T7-CREDIT-CSS",
+   "primary_section": 1,
+   "label_prec": {
+    "T7-CREDIT-CSS": "B",
+    "SELECTOR-CORRECTION": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "T7-CREDIT-CSS": {
+     "cand": [
+      [
+       2429,
+       2430
+      ]
+     ]
+    },
+    "SELECTOR-CORRECTION": {
+     "orig": [
+      [
+       2431,
+       2432
+      ]
+     ],
+     "cand": [
+      [
+       2429,
+       2430
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       2429,
+       2430
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "supplement-vs-inherited needs the production counterpart"
+   ],
+   "partial_notes": [],
+   "first_removed": "#page-content .rate-box-with-credit-button>.creditButton>p>a:active:before,#page-content .rate-box-with-credit-button>.creditButton>p>a:hover:before {",
+   "first_added": "#page-content .rate-box-with-credit-button>.creditButton>a:active:before,#page-content .rate-box-with-credit-button>.creditButton>a:hover:before {"
+  },
+  {
+   "id": "B53",
+   "orig_range": [
+    2435,
+    2436
+   ],
+   "cand_range": [
+    2433,
+    2434
+   ],
+   "orig_lines": "2436-2436",
+   "cand_lines": "2434-2434",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "SELECTOR-CORRECTION",
+    "T7-CREDIT-CSS"
+   ],
+   "primary": "T7-CREDIT-CSS",
+   "primary_section": 1,
+   "label_prec": {
+    "T7-CREDIT-CSS": "B",
+    "SELECTOR-CORRECTION": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "T7-CREDIT-CSS": {
+     "cand": [
+      [
+       2433,
+       2434
+      ]
+     ]
+    },
+    "SELECTOR-CORRECTION": {
+     "orig": [
+      [
+       2435,
+       2436
+      ]
+     ],
+     "cand": [
+      [
+       2433,
+       2434
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       2433,
+       2434
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "supplement-vs-inherited needs the production counterpart"
+   ],
+   "partial_notes": [],
+   "first_removed": "#page-content .rate-box-with-credit-button>.creditButton>p>a:focus-within:before {",
+   "first_added": "#page-content .rate-box-with-credit-button>.creditButton>a:focus-within:before {"
+  },
+  {
+   "id": "B54",
+   "orig_range": [
+    2706,
+    2707
+   ],
+   "cand_range": [
+    2704,
+    2705
+   ],
+   "orig_lines": "2707-2707",
+   "cand_lines": "2705-2705",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "SELECTOR-CORRECTION",
+    "T7-CREDIT-CSS"
+   ],
+   "primary": "T7-CREDIT-CSS",
+   "primary_section": 1,
+   "label_prec": {
+    "T7-CREDIT-CSS": "B",
+    "SELECTOR-CORRECTION": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "T7-CREDIT-CSS": {
+     "cand": [
+      [
+       2704,
+       2705
+      ]
+     ]
+    },
+    "SELECTOR-CORRECTION": {
+     "orig": [
+      [
+       2706,
+       2707
+      ]
+     ],
+     "cand": [
+      [
+       2704,
+       2705
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       2704,
+       2705
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "supplement-vs-inherited needs the production counterpart"
+   ],
+   "partial_notes": [],
+   "first_removed": ".rate-box-with-credit-button>.creditButton>p>a {",
+   "first_added": ".rate-box-with-credit-button>.creditButton>a {"
+  },
+  {
+   "id": "B55",
+   "orig_range": [
+    2716,
+    2717
+   ],
+   "cand_range": [
+    2714,
+    2715
+   ],
+   "orig_lines": "2717-2717",
+   "cand_lines": "2715-2715",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "SELECTOR-CORRECTION",
+    "T7-CREDIT-CSS"
+   ],
+   "primary": "T7-CREDIT-CSS",
+   "primary_section": 1,
+   "label_prec": {
+    "T7-CREDIT-CSS": "B",
+    "SELECTOR-CORRECTION": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "T7-CREDIT-CSS": {
+     "cand": [
+      [
+       2714,
+       2715
+      ]
+     ]
+    },
+    "SELECTOR-CORRECTION": {
+     "orig": [
+      [
+       2716,
+       2717
+      ]
+     ],
+     "cand": [
+      [
+       2714,
+       2715
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       2714,
+       2715
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "supplement-vs-inherited needs the production counterpart"
+   ],
+   "partial_notes": [],
+   "first_removed": "#page-content .rate-box-with-credit-button>.creditButton>p>a:after {",
+   "first_added": "#page-content .rate-box-with-credit-button>.creditButton>a:after {"
+  },
+  {
+   "id": "B56",
+   "orig_range": [
+    2720,
+    2721
+   ],
+   "cand_range": [
+    2718,
+    2719
+   ],
+   "orig_lines": "2721-2721",
+   "cand_lines": "2719-2719",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       2718,
+       2719
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #endregion = 黑标评分模块 */",
+   "first_added": "/* #endregion = ブラックハイライター系評価モジュール */"
+  },
+  {
+   "id": "B57",
+   "orig_range": [
+    2722,
+    2723
+   ],
+   "cand_range": [
+    2720,
+    2721
+   ],
+   "orig_lines": "2723-2723",
+   "cand_lines": "2721-2721",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       2720,
+       2721
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #region = 黑标Tabview / YUI-NAVSET */",
+   "first_added": "/* #region = ブラックハイライター系 Tabview / YUI-NAVSET */"
+  },
+  {
+   "id": "B58",
+   "orig_range": [
+    2740,
+    2741
+   ],
+   "cand_range": [
+    2738,
+    2739
+   ],
+   "orig_lines": "2741-2741",
+   "cand_lines": "2739-2739",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       2738,
+       2739
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #region == 黑标Tabview NORMALIZE */",
+   "first_added": "/* #region == ブラックハイライター系 Tabview NORMALIZE */"
+  },
+  {
+   "id": "B59",
+   "orig_range": [
+    2773,
+    2774
+   ],
+   "cand_range": [
+    2771,
+    2772
+   ],
+   "orig_lines": "2774-2774",
+   "cand_lines": "2772-2772",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       2771,
+       2772
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #endregion == 黑标Tabview NORMALIZE */",
+   "first_added": "/* #endregion == ブラックハイライター系 Tabview NORMALIZE */"
+  },
+  {
+   "id": "B60",
+   "orig_range": [
+    2954,
+    2955
+   ],
+   "cand_range": [
+    2952,
+    2953
+   ],
+   "orig_lines": "2955-2955",
+   "cand_lines": "2953-2953",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       2952,
+       2953
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #endregion = 黑标Tabview / YUI-NAVSET */",
+   "first_added": "/* #endregion = ブラックハイライター系 Tabview / YUI-NAVSET */"
+  },
+  {
+   "id": "B61",
+   "orig_range": [
+    2956,
+    2957
+   ],
+   "cand_range": [
+    2954,
+    2955
+   ],
+   "orig_lines": "2957-2957",
+   "cand_lines": "2955-2955",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       2954,
+       2955
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #region = 黑标移动端顶栏 */",
+   "first_added": "/* #region = ブラックハイライター系モバイルトップバー */"
+  },
+  {
+   "id": "B62",
+   "orig_range": [
+    3030,
+    3031
+   ],
+   "cand_range": [
+    3028,
+    3029
+   ],
+   "orig_lines": "3031-3031",
+   "cand_lines": "3029-3029",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       3028,
+       3029
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #endregion = 黑标移动端顶栏 */",
+   "first_added": "/* #endregion = ブラックハイライター系モバイルトップバー */"
+  },
+  {
+   "id": "B63",
+   "orig_range": [
+    3032,
+    3033
+   ],
+   "cand_range": [
+    3030,
+    3031
+   ],
+   "orig_lines": "3033-3033",
+   "cand_lines": "3031-3031",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       3030,
+       3031
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #region = 调整平板电脑(768px)时的显示效果 */",
+   "first_added": "/* #region = タブレット(768px)表示の調整 */"
+  },
+  {
+   "id": "B64",
+   "orig_range": [
+    3067,
+    3068
+   ],
+   "cand_range": [
+    3065,
+    3066
+   ],
+   "orig_lines": "3068-3068",
+   "cand_lines": "3066-3066",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       3065,
+       3066
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #endregion = 调整平板电脑(768px)时的显示效果 */",
+   "first_added": "/* #endregion = タブレット(768px)表示の調整 */"
+  },
+  {
+   "id": "B65",
+   "orig_range": [
+    3069,
+    3070
+   ],
+   "cand_range": [
+    3067,
+    3068
+   ],
+   "orig_lines": "3070-3070",
+   "cand_lines": "3068-3068",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       3067,
+       3068
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #region = 内置解决saving pages问题的模块 */",
+   "first_added": "/* #region = 「保存中」表示の内蔵対応ブロック */"
+  },
+  {
+   "id": "B66",
+   "orig_range": [
+    3098,
+    3099
+   ],
+   "cand_range": [
+    3096,
+    3097
+   ],
+   "orig_lines": "3099-3099",
+   "cand_lines": "3097-3097",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "CONTENT-STRING",
+    "DELIVERY-MOVE",
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "CONTENT-STRING": "B",
+    "TRANSLATION-ANCHORED": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "CONTENT-STRING": {
+     "orig": [
+      [
+       3098,
+       3099
+      ]
+     ],
+     "cand": [
+      [
+       3096,
+       3097
+      ]
+     ]
+    },
+    "TRANSLATION-ANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       3096,
+       3097
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "    content: '您握有一个独占的15 分钟锁定，这将会阻止其他人编辑您正在作业的页面。\\A这个锁定将在闲置 ';",
+   "first_added": "    content: 'あなたは15分間の占有ロックを保持しています。これにより、他の人が編集中のページを編集するのを防げます。\\Aこのロックは ';"
+  },
+  {
+   "id": "B67",
+   "orig_range": [
+    3113,
+    3114
+   ],
+   "cand_range": [
+    3111,
+    3112
+   ],
+   "orig_lines": "3114-3114",
+   "cand_lines": "3112-3112",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "CONTENT-STRING",
+    "DELIVERY-MOVE",
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "CONTENT-STRING": "B",
+    "TRANSLATION-ANCHORED": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "CONTENT-STRING": {
+     "orig": [
+      [
+       3113,
+       3114
+      ]
+     ],
+     "cand": [
+      [
+       3111,
+       3112
+      ]
+     ]
+    },
+    "TRANSLATION-ANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       3111,
+       3112
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "    content: ' 秒后失效。';",
+   "first_added": "    content: ' 秒で失効します。';"
+  },
+  {
+   "id": "B68",
+   "orig_range": [
+    3119,
+    3120
+   ],
+   "cand_range": [
+    3117,
+    3118
+   ],
+   "orig_lines": "3120-3120",
+   "cand_lines": "3118-3118",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "CONTENT-STRING",
+    "DELIVERY-MOVE",
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "CONTENT-STRING": "B",
+    "TRANSLATION-ANCHORED": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "CONTENT-STRING": {
+     "orig": [
+      [
+       3119,
+       3120
+      ]
+     ],
+     "cand": [
+      [
+       3117,
+       3118
+      ]
+     ]
+    },
+    "TRANSLATION-ANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       3117,
+       3118
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "    content: '保存页面中……\\A若此提示已经显示了很长时间，建议将编辑框中的内容复制到剪切板然后刷新本页重新编辑。';",
+   "first_added": "    content: 'ページを保存中……\\Aこの表示が長時間続く場合は、編集ボックスの内容をクリップボードにコピーしてからページを再読み込みして再編集してください。';"
+  },
+  {
+   "id": "B69",
+   "orig_range": [
+    3138,
+    3139
+   ],
+   "cand_range": [
+    3136,
+    3137
+   ],
+   "orig_lines": "3139-3139",
+   "cand_lines": "3137-3137",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       3136,
+       3137
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #endregion = 内置解决saving pages问题的模块 */",
+   "first_added": "/* #endregion = 「保存中」表示の内蔵対応ブロック */"
+  },
+  {
+   "id": "B70",
+   "orig_range": [
+    3140,
+    3141
+   ],
+   "cand_range": [
+    3138,
+    3139
+   ],
+   "orig_lines": "3141-3141",
+   "cand_lines": "3139-3139",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       3138,
+       3139
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #region = 修复ios设备上的显示效果 */",
+   "first_added": "/* #region = iOSデバイス表示の修復 */"
+  },
+  {
+   "id": "B71",
+   "orig_range": [
+    3143,
+    3144
+   ],
+   "cand_range": [
+    3141,
+    3142
+   ],
+   "orig_lines": "3144-3144",
+   "cand_lines": "3142-3142",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "ASSET-REHOST",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "ASSET-REHOST": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "ASSET-REHOST": {
+     "orig": [
+      [
+       3143,
+       3144
+      ]
+     ],
+     "cand": [
+      [
+       3141,
+       3142
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       3141,
+       3142
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "        border-image-source: url(\"https://wanderers-library.wdfiles.com/local--files/component%3Adustjacket-theme/wl_hr.png\");",
+   "first_added": "        border-image-source: url(\"https://scp-jp-storage.wdfiles.com/local--files/file%3A3438721-307-flvk/wl_hr.png\");"
+  },
+  {
+   "id": "B72",
+   "orig_range": [
+    3158,
+    3159
+   ],
+   "cand_range": [
+    3156,
+    3157
+   ],
+   "orig_lines": "3159-3159",
+   "cand_lines": "3157-3157",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       3156,
+       3157
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #endregion = 修复ios设备上的显示效果 */",
+   "first_added": "/* #endregion = iOSデバイス表示の修復 */"
+  },
+  {
+   "id": "B73",
+   "orig_range": [
+    3164,
+    3165
+   ],
+   "cand_range": [
+    3162,
+    3166
+   ],
+   "orig_lines": "3165-3165",
+   "cand_lines": "3163-3166",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "DRAFT-HOST",
+    "SELF-DELIVERY"
+   ],
+   "primary": "SELF-DELIVERY",
+   "primary_section": 3,
+   "label_prec": {
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "SELF-DELIVERY": {
+     "orig": [],
+     "cand": [
+      [
+       3164,
+       3165
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       3164,
+       3165
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "====",
+   "first_added": "[[include :scp-jp:component:interwiki-style"
+  },
+  {
+   "id": "B74",
+   "orig_range": [
+    3166,
+    3167
+   ],
+   "cand_range": [
+    3167,
+    3169
+   ],
+   "orig_lines": "3167-3167",
+   "cand_lines": "3168-3169",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "IFTAGS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "IFTAGS",
+   "primary_section": 2,
+   "label_prec": {
+    "IFTAGS": "A",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "IFTAGS": {
+     "orig": [
+      [
+       3166,
+       3167
+      ]
+     ],
+     "cand": [
+      [
+       3167,
+       3168
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[iftags +_版式框架]]",
+   "first_added": "[[iftags +テーマ]]"
+  },
+  {
+   "id": "B75",
+   "orig_range": [
+    3184,
+    3185
+   ],
+   "cand_range": [
+    3186,
+    3187
+   ],
+   "orig_lines": "3185-3185",
+   "cand_lines": "3187-3187",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "CSS-BODY"
+   ],
+   "primary": "CSS-BODY",
+   "primary_section": 8,
+   "label_prec": {
+    "CSS-BODY": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "CSS-BODY": {}
+   },
+   "notes": [
+    "no other signature matched"
+   ],
+   "partial_notes": [],
+   "first_removed": "    font-family: zuijinregular, serif;",
+   "first_added": "    font-family: 'Zen Old Mincho', serif;"
+  },
+  {
+   "id": "B76",
+   "orig_range": [
+    3280,
+    3281
+   ],
+   "cand_range": [
+    3282,
+    3283
+   ],
+   "orig_lines": "3281-3281",
+   "cand_lines": "3283-3283",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "<iframe src=\"https://scp-wiki-cn.wdfiles.com/local--files/nav%3Aside/styleFrame.html?bhl\" name=\"typeFrame\"></iframe>",
+   "first_added": "<iframe src=\"//interwiki.scp-jp.org/styleFrame.html?bhl\" name=\"typeFrame\"></iframe>"
+  },
+  {
+   "id": "B77",
+   "orig_range": [
+    3284,
+    3287
+   ],
+   "cand_range": [
+    3286,
+    3287
+   ],
+   "orig_lines": "3285-3287",
+   "cand_lines": "3287-3287",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "BARE-RATE-DEL",
+    "CREDIT-PREVIEW"
+   ],
+   "primary": "CREDIT-PREVIEW",
+   "primary_section": 1,
+   "label_prec": {
+    "CREDIT-PREVIEW": "A",
+    "BARE-RATE-DEL": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "CREDIT-PREVIEW": {
+     "cand": [
+      [
+       3286,
+       3287
+      ]
+     ]
+    },
+    "BARE-RATE-DEL": {
+     "orig": [
+      [
+       3285,
+       3286
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[>]]",
+   "first_added": "[[include :scp-jp:credit:start-preview]]"
+  },
+  {
+   "id": "B78",
+   "orig_range": [
+    3288,
+    3289
+   ],
+   "cand_range": [
+    3288,
+    3297
+   ],
+   "orig_lines": "3289-3289",
+   "cand_lines": "3289-3297",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "CREDIT-PROSE",
+    "TASL-FIELDS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TASL-FIELDS",
+   "primary_section": 1,
+   "label_prec": {
+    "TASL-FIELDS": "A",
+    "TRANS-UNANCHORED": "C",
+    "CREDIT-PROSE": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "TASL-FIELDS": {
+     "cand": [
+      [
+       3288,
+       3296
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {},
+    "CREDIT-PROSE": {}
+   },
+   "notes": [
+    "script delta without the anchor majority",
+    "position: inside the credit include pair"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[include :scp-wiki-cn:credit:start]]",
+   "first_added": "**タイトル:** 塵封 Sigma-9テーマ"
+  },
+  {
+   "id": "B79",
+   "orig_range": [
+    3290,
+    3295
+   ],
+   "cand_range": [
+    3298,
+    3299
+   ],
+   "orig_lines": "3291-3295",
+   "cand_lines": "3299-3299",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "CREDIT-PREVIEW",
+    "INCLUDE-REPOINT"
+   ],
+   "primary": "CREDIT-PREVIEW",
+   "primary_section": 1,
+   "label_prec": {
+    "CREDIT-PREVIEW": "A",
+    "INCLUDE-REPOINT": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "CREDIT-PREVIEW": {
+     "cand": [
+      [
+       3298,
+       3299
+      ]
+     ]
+    },
+    "INCLUDE-REPOINT": {
+     "orig": [
+      [
+       3294,
+       3295
+      ]
+     ],
+     "cand": [
+      [
+       3298,
+       3299
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "**作者：**[[*user Mercuresphere]]",
+   "first_added": "[[include :scp-jp:credit:end-preview]]"
+  },
+  {
+   "id": "B80",
+   "orig_range": [
+    3297,
+    3298
+   ],
+   "cand_range": [
+    3301,
+    3302
+   ],
+   "orig_lines": "3298-3298",
+   "cand_lines": "3302-3302",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "+ 主题颜色",
+   "first_added": "+ テーマカラー"
+  },
+  {
+   "id": "B81",
+   "orig_range": [
+    3347,
+    3348
+   ],
+   "cand_range": [
+    3351,
+    3352
+   ],
+   "orig_lines": "3348-3348",
+   "cand_lines": "3352-3352",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "+ 关于本页",
+   "first_added": "+ このページについて"
+  },
+  {
+   "id": "B82",
+   "orig_range": [
+    3349,
+    3350
+   ],
+   "cand_range": [
+    3353,
+    3354
+   ],
+   "orig_lines": "3350-3350",
+   "cand_lines": "3354-3354",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "LINK-REPOINT",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "LINK-REPOINT",
+   "primary_section": 7,
+   "label_prec": {
+    "LINK-REPOINT": "C",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "LINK-REPOINT": {
+     "orig": [
+      [
+       3349,
+       3350
+      ]
+     ],
+     "cand": [
+      [
+       3353,
+       3354
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "DustFrame是 [[*user Mercuresphere]] 制作的版式，基于Sigma-9，是[[[wanderers:dustjacket-theme| 被放逐者的护封黑标版式]]]的Sigma-9实现，可以在外观复刻原版式的绝大部分设计元素的同时，取得与Sigma-9版式相当的加载速度和兼容性。",
+   "first_added": "DustFrameは[[*user Mercuresphere]]が制作したSigma-9ベースのテーマです。[[[https://scp-wiki-cn.wikidot.com/wanderers:dustjacket-theme|放浪者の図書館DustJacketテーマのBlack Highlighter版（中国語版）]]]をSigma-9上で再現し、元テーマのデザイン要素の大部分を見た目に残しつつ、Sigma-9テーマ相当の読み込み速度と互換性を得られます。"
+  },
+  {
+   "id": "B83",
+   "orig_range": [
+    3351,
+    3352
+   ],
+   "cand_range": [
+    3355,
+    3356
+   ],
+   "orig_lines": "3352-3352",
+   "cand_lines": "3356-3356",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "得益于移植了一部分黑标元素，DustFrame能在一定程度上兼容图书馆主站基于黑标护封的版式，经少许修改后图书馆主站版式（如做梦者之图书馆等）可被移植到DustFrame上。",
+   "first_added": "Black Highlighter由来の要素を一部移植しているため、DustFrameは放浪者の図書館本家で使われているDustJacket系テーマとある程度互換します。少し調整すれば、「夢見る者の図書館」など本家図書館サイトのテーマをDustFrameへ移植できます。"
+  },
+  {
+   "id": "B84",
+   "orig_range": [
+    3353,
+    3354
+   ],
+   "cand_range": [
+    3357,
+    3358
+   ],
+   "orig_lines": "3354-3354",
+   "cand_lines": "3358-3358",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "在你的作品开头添加如下语法以应用此版式：",
+   "first_added": "このテーマを使うには、作品の冒頭に次の構文を追加してください。"
+  },
+  {
+   "id": "B85",
+   "orig_range": [
+    3355,
+    3356
+   ],
+   "cand_range": [
+    3359,
+    3360
+   ],
+   "orig_lines": "3356-3356",
+   "cand_lines": "3360-3360",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "COMPONENT-SWAP",
+    "INCLUDE-REPOINT"
+   ],
+   "primary": "COMPONENT-SWAP",
+   "primary_section": 2,
+   "label_prec": {
+    "INCLUDE-REPOINT": "A",
+    "COMPONENT-SWAP": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "INCLUDE-REPOINT": {
+     "orig": [
+      [
+       3355,
+       3356
+      ]
+     ],
+     "cand": [
+      [
+       3359,
+       3360
+      ]
+     ]
+    },
+    "COMPONENT-SWAP": {
+     "orig": [
+      [
+       3355,
+       3356
+      ]
+     ],
+     "cand": [
+      [
+       3359,
+       3360
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "> {{[[include :scp-wiki-cn:theme:dustframe]]}}",
+   "first_added": "> {{[[include theme:dustframe-jp]]}}"
+  },
+  {
+   "id": "B86",
+   "orig_range": [
+    3357,
+    3358
+   ],
+   "cand_range": [
+    3361,
+    3362
+   ],
+   "orig_lines": "3358-3358",
+   "cand_lines": "3362-3362",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "GLYPH-FORM",
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "GLYPH-FORM": "B",
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "GLYPH-FORM": {},
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "fold-compare: glyph forms only",
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "+ 示例",
+   "first_added": "+ 例"
+  },
+  {
+   "id": "B87",
+   "orig_range": [
+    3359,
+    3360
+   ],
+   "cand_range": [
+    3363,
+    3364
+   ],
+   "orig_lines": "3360-3360",
+   "cand_lines": "3364-3364",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "可通过 5 个连字符“@@-----@@”创建水平分割线。若它未被放在其他部件（诸如引用块）中，则会左右延伸贯穿页面。这种将文件分割为多个部分的线就是分割线。",
+   "first_added": "5つのハイフン「@@-----@@」で水平の区切り線を作成できます。引用ブロックなど他の部品の内側に置かれていない場合、区切り線はページの左右いっぱいに伸びます。この文書のセクションを分けている線がその区切り線です。"
+  },
+  {
+   "id": "B88",
+   "orig_range": [
+    3363,
+    3364
+   ],
+   "cand_range": [
+    3367,
+    3368
+   ],
+   "orig_lines": "3364-3364",
+   "cand_lines": "3368-3368",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "如果将“@@-----@@”放入类（class）为 “fancyhr” 的 div 元素中，则可以显示另一种水平线样式，如下所示：",
+   "first_added": "「@@-----@@」をclassが“fancyhr”のdiv要素に入れると、次のように別の水平線スタイルを表示できます。"
+  },
+  {
+   "id": "B89",
+   "orig_range": [
+    3368,
+    3369
+   ],
+   "cand_range": [
+    3372,
+    3373
+   ],
+   "orig_lines": "3369-3369",
+   "cand_lines": "3373-3373",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "效果如下：",
+   "first_added": "表示例です。"
+  },
+  {
+   "id": "B90",
+   "orig_range": [
+    3375,
+    3376
+   ],
+   "cand_range": [
+    3379,
+    3380
+   ],
+   "orig_lines": "3376-3376",
+   "cand_lines": "3380-3380",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "任何元素添加 “fancyborder” 类（class），即可显示特殊边框。例如，这是此方块的代码：",
+   "first_added": "任意の要素に“fancyborder”classを追加すると、特殊な枠線を表示できます。たとえば、このボックスのコードは次のとおりです。"
+  },
+  {
+   "id": "B91",
+   "orig_range": [
+    3378,
+    3379
+   ],
+   "cand_range": [
+    3382,
+    3383
+   ],
+   "orig_lines": "3379-3379",
+   "cand_lines": "3383-3383",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "@@文字内容@@",
+   "first_added": "@@テキスト内容@@"
+  },
+  {
+   "id": "B92",
+   "orig_range": [
+    3383,
+    3384
+   ],
+   "cand_range": [
+    3387,
+    3388
+   ],
+   "orig_lines": "3384-3384",
+   "cand_lines": "3388-3388",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "标题可通过在一行字起始处输入 1 至 6 个加号“+”来创建",
+   "first_added": "見出しは、行頭に1個から6個のプラス記号「+」を入力すると作成できます"
+  },
+  {
+   "id": "B93",
+   "orig_range": [
+    3385,
+    3387
+   ],
+   "cand_range": [
+    3389,
+    3391
+   ],
+   "orig_lines": "3386-3387",
+   "cand_lines": "3390-3391",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 2/2"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[collapsible show=\"+ Titles\" hide=\"- Titles\"]]",
+   "first_added": "[[collapsible show=\"+ 見出し\" hide=\"- 見出し\"]]"
+  },
+  {
+   "id": "B94",
+   "orig_range": [
+    3388,
+    3389
+   ],
+   "cand_range": [
+    3392,
+    3393
+   ],
+   "orig_lines": "3389-3389",
+   "cand_lines": "3393-3393",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "++ 2 级标题",
+   "first_added": "++ 第2見出し"
+  },
+  {
+   "id": "B95",
+   "orig_range": [
+    3390,
+    3391
+   ],
+   "cand_range": [
+    3394,
+    3395
+   ],
+   "orig_lines": "3391-3391",
+   "cand_lines": "3395-3395",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "+++ 3 级标题",
+   "first_added": "+++ 第3見出し"
+  },
+  {
+   "id": "B96",
+   "orig_range": [
+    3392,
+    3393
+   ],
+   "cand_range": [
+    3396,
+    3397
+   ],
+   "orig_lines": "3393-3393",
+   "cand_lines": "3397-3397",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "++++ 4 级标题",
+   "first_added": "++++ 第4見出し"
+  },
+  {
+   "id": "B97",
+   "orig_range": [
+    3394,
+    3395
+   ],
+   "cand_range": [
+    3398,
+    3399
+   ],
+   "orig_lines": "3395-3395",
+   "cand_lines": "3399-3399",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "+++++ 5 级标题",
+   "first_added": "+++++ 第5見出し"
+  },
+  {
+   "id": "B98",
+   "orig_range": [
+    3396,
+    3397
+   ],
+   "cand_range": [
+    3400,
+    3401
+   ],
+   "orig_lines": "3397-3397",
+   "cand_lines": "3401-3401",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "++++++ 6 级标题",
+   "first_added": "++++++ 第6見出し"
+  },
+  {
+   "id": "B99",
+   "orig_range": [
+    3402,
+    3404
+   ],
+   "cand_range": [
+    3406,
+    3408
+   ],
+   "orig_lines": "3403-3404",
+   "cand_lines": "3407-3408",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/2"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[tab 分页]]",
+   "first_added": "[[tab タブ]]"
+  },
+  {
+   "id": "B100",
+   "orig_range": [
+    3405,
+    3407
+   ],
+   "cand_range": [
+    3409,
+    3411
+   ],
+   "orig_lines": "3406-3407",
+   "cand_lines": "3410-3411",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/2"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[tab 分页]]",
+   "first_added": "[[tab タブ]]"
+  },
+  {
+   "id": "B101",
+   "orig_range": [
+    3408,
+    3410
+   ],
+   "cand_range": [
+    3412,
+    3414
+   ],
+   "orig_lines": "3409-3410",
+   "cand_lines": "3413-3414",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/2"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[tab 长 Tab]]",
+   "first_added": "[[tab 長いタブ]]"
+  },
+  {
+   "id": "B102",
+   "orig_range": [
+    3412,
+    3413
+   ],
+   "cand_range": [
+    3416,
+    3417
+   ],
+   "orig_lines": "3413-3413",
+   "cand_lines": "3417-3417",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "GLYPH-FORM",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "GLYPH-FORM",
+   "primary_section": 6,
+   "label_prec": {
+    "GLYPH-FORM": "B",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "B",
+   "label_spans": {
+    "GLYPH-FORM": {},
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "fold-compare: glyph forms only",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "1914年H. Rackham译文",
+   "first_added": "1914年H. Rackham訳"
+  },
+  {
+   "id": "B103",
+   "orig_range": [
+    3415,
+    3416
+   ],
+   "cand_range": [
+    3419,
+    3420
+   ],
+   "orig_lines": "3416-3416",
+   "cand_lines": "3420-3420",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "\"de Finibus Bonorum et Malorum\"章节1.10.33，西塞罗于公元前45年著",
+   "first_added": "\"de Finibus Bonorum et Malorum\"第1.10.33節、キケロ、紀元前45年"
+  },
+  {
+   "id": "B104",
+   "orig_range": [
+    3418,
+    3419
+   ],
+   "cand_range": [
+    3422,
+    3423
+   ],
+   "orig_lines": "3419-3419",
+   "cand_lines": "3423-3423",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "GLYPH-FORM",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "GLYPH-FORM",
+   "primary_section": 6,
+   "label_prec": {
+    "GLYPH-FORM": "B",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "B",
+   "label_spans": {
+    "GLYPH-FORM": {},
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "fold-compare: glyph forms only",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "1914年H. Rackham译文",
+   "first_added": "1914年H. Rackham訳"
+  },
+  {
+   "id": "B105",
+   "orig_range": [
+    3421,
+    3422
+   ],
+   "cand_range": [
+    3425,
+    3426
+   ],
+   "orig_lines": "3422-3422",
+   "cand_lines": "3426-3426",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[tab 空 tab]]",
+   "first_added": "[[tab 空のタブ]]"
+  },
+  {
+   "id": "B106",
+   "orig_range": [
+    3423,
+    3424
+   ],
+   "cand_range": [
+    3427,
+    3428
+   ],
+   "orig_lines": "3424-3424",
+   "cand_lines": "3428-3428",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[tab 空 tab]]",
+   "first_added": "[[tab 空のタブ]]"
+  },
+  {
+   "id": "B107",
+   "orig_range": [
+    3425,
+    3426
+   ],
+   "cand_range": [
+    3429,
+    3430
+   ],
+   "orig_lines": "3426-3426",
+   "cand_lines": "3430-3430",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[tab 空 tab]]",
+   "first_added": "[[tab 空のタブ]]"
+  },
+  {
+   "id": "B108",
+   "orig_range": [
+    3427,
+    3428
+   ],
+   "cand_range": [
+    3431,
+    3432
+   ],
+   "orig_lines": "3428-3428",
+   "cand_lines": "3432-3432",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[tab 空 tab]]",
+   "first_added": "[[tab 空のタブ]]"
+  },
+  {
+   "id": "B109",
+   "orig_range": [
+    3429,
+    3430
+   ],
+   "cand_range": [
+    3433,
+    3434
+   ],
+   "orig_lines": "3430-3430",
+   "cand_lines": "3434-3434",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[tab 空 tab]]",
+   "first_added": "[[tab 空のタブ]]"
+  },
+  {
+   "id": "B110",
+   "orig_range": [
+    3431,
+    3432
+   ],
+   "cand_range": [
+    3435,
+    3436
+   ],
+   "orig_lines": "3432-3432",
+   "cand_lines": "3436-3436",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[tab 空 tab]]",
+   "first_added": "[[tab 空のタブ]]"
+  },
+  {
+   "id": "B111",
+   "orig_range": [
+    3435,
+    3436
+   ],
+   "cand_range": [
+    3439,
+    3440
+   ],
+   "orig_lines": "3436-3436",
+   "cand_lines": "3440-3440",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "> 这是一个引用块，在一行字的起始处加上“> ”来创建。",
+   "first_added": "> これは引用ブロックです。行頭に「> 」を付けると作成できます。"
+  },
+  {
+   "id": "B112",
+   "orig_range": [
+    3437,
+    3438
+   ],
+   "cand_range": [
+    3441,
+    3442
+   ],
+   "orig_lines": "3438-3438",
+   "cand_lines": "3442-3442",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "> 更多文字",
+   "first_added": "> さらにテキスト"
+  },
+  {
+   "id": "B113",
+   "orig_range": [
+    3439,
+    3440
+   ],
+   "cand_range": [
+    3443,
+    3444
+   ],
+   "orig_lines": "3440-3440",
+   "cand_lines": "3444-3444",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "> 一条分割线",
+   "first_added": "> 区切り線"
+  },
+  {
+   "id": "B114",
+   "orig_range": [
+    3441,
+    3442
+   ],
+   "cand_range": [
+    3445,
+    3446
+   ],
+   "orig_lines": "3442-3442",
+   "cand_lines": "3446-3446",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": ">> 嵌套引用块[[footnote]] 一个脚注 [[/footnote]]",
+   "first_added": ">> ネストした引用ブロック[[footnote]] 脚注です [[/footnote]]"
+  },
+  {
+   "id": "B115",
+   "orig_range": [
+    3443,
+    3446
+   ],
+   "cand_range": [
+    3447,
+    3450
+   ],
+   "orig_lines": "3444-3446",
+   "cand_lines": "3448-3450",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 3/3"
+   ],
+   "partial_notes": [],
+   "first_removed": "||~ 这是 ||~ 表格 ||",
+   "first_added": "||~ これは ||~ 表です ||"
+  },
+  {
+   "id": "B116",
+   "orig_range": [
+    3449,
+    3453
+   ],
+   "cand_range": [
+    3453,
+    3457
+   ],
+   "orig_lines": "3450-3453",
+   "cand_lines": "3454-3457",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 3/4"
+   ],
+   "partial_notes": [],
+   "first_removed": "正文字体为 Skolar Sans / 浏览器默认字体",
+   "first_added": "本文フォントはAdelle Sans / ブラウザ既定フォントです"
+  },
+  {
+   "id": "B117",
+   "orig_range": [
+    3457,
+    3458
+   ],
+   "cand_range": [
+    3461,
+    3462
+   ],
+   "orig_lines": "3458-3458",
+   "cand_lines": "3462-3462",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[collapsible show=\"+ 显示代码\" hide=\"- 隐藏代码\" hideLocation=\"both\"]]",
+   "first_added": "[[collapsible show=\"+ コードを表示\" hide=\"- コードを隠す\" hideLocation=\"both\"]]"
+  },
+  {
+   "id": "B118",
+   "orig_range": [
+    3465,
+    3471
+   ],
+   "cand_range": [
+    3469,
+    3469
+   ],
+   "orig_lines": "3466-3471",
+   "cand_lines": "at 3470",
+   "channel_pair": [
+    "code-css",
+    "body"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "FONT-IMPORT"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "FONT-IMPORT": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "FONT-IMPORT": {
+     "orig": [
+      [
+       3466,
+       3469
+      ]
+     ],
+     "cand": []
+    },
+    "DELIVERY-MOVE": {
+     "orig": [
+      [
+       3465,
+       3471
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "the deciding evidence is the load probe (KB-04)"
+   ],
+   "partial_notes": [],
+   "first_removed": "@import url(\"https://fastly.jsdelivr.net/gh/Crimone/wanderers-dustjacket-fonts@main/typefaces.css\"); ",
+   "first_added": ""
+  },
+  {
+   "id": "B119",
+   "orig_range": [
+    3475,
+    3477
+   ],
+   "cand_range": [
+    3473,
+    3475
+   ],
+   "orig_lines": "3476-3477",
+   "cand_lines": "3474-3475",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "ASSET-REHOST",
+    "DELIVERY-MOVE",
+    "HEADERVAR",
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "ASSET-REHOST": "A",
+    "HEADERVAR": "A",
+    "TRANSLATION-ANCHORED": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "ASSET-REHOST": {
+     "orig": [
+      [
+       3475,
+       3477
+      ]
+     ],
+     "cand": [
+      [
+       3473,
+       3474
+      ]
+     ]
+    },
+    "HEADERVAR": {
+     "orig": [
+      [
+       3475,
+       3477
+      ]
+     ],
+     "cand": [
+      [
+       3473,
+       3475
+      ]
+     ]
+    },
+    "TRANSLATION-ANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       3473,
+       3475
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "anchored pairs 2/2"
+   ],
+   "partial_notes": [],
+   "first_removed": "    --logo-image: url(\"https://wanderers-library.wdfiles.com/local--files/component%3Adustjacket-theme/wl_logo.png\");",
+   "first_added": "    --logo-image: url(\"https://scp-jp-storage.wdfiles.com/local--files/file%3A3438721-307-u2rk/wl_logo.png\");"
+  },
+  {
+   "id": "B120",
+   "orig_range": [
+    3478,
+    3483
+   ],
+   "cand_range": [
+    3476,
+    3481
+   ],
+   "orig_lines": "3479-3483",
+   "cand_lines": "3477-3481",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "ASSET-REHOST",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "ASSET-REHOST": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "ASSET-REHOST": {
+     "orig": [
+      [
+       3478,
+       3483
+      ]
+     ],
+     "cand": [
+      [
+       3480,
+       3481
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       3476,
+       3481
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    --body-font: adelle-sans, 'Lato', '微软雅黑', sans-serif;",
+   "first_added": "    --body-font: adelle-sans, 'Lato', 'Noto Sans JP', sans-serif;"
+  },
+  {
+   "id": "B121",
+   "orig_range": [
+    3516,
+    3518
+   ],
+   "cand_range": [
+    3514,
+    3516
+   ],
+   "orig_lines": "3517-3518",
+   "cand_lines": "3515-3516",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       3514,
+       3516
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    --user-account-mask: url(\"https://fastly.jsdelivr.net/gh/Crimone/crimson-anemone@main/files/user-account-mask.svg\");",
+   "first_added": "    --user-account-mask: url(\"data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20baseProfile%3D'tiny'%20overflow%3D'visible'%20version%3D'1.2'%20viewBox%3D'0%200%20200%20200'%20xml%3Aspace%3D'preserve'%3E%3Cpath%20d%3D'M89.8%2070.6c-9.9%200-15.8%207.9-15.8%2015.8%200%2015.8%2019.8%2019.8%2027.7%2031.6%207.9-11.9%2027.7-15.8%2027.7-31.6%200-7.9-5.9-15.8-15.8-15.8-7.9%200-11.9%207.9-11.9%207.9s-4-7.9-11.9-7.9z'%2F%3E%3Cpath%20d%3D'M188.7%20115.6c.1-.9.2-1.8.3-2.8.2-1.8.3-3.7.3-5.5v-2.8c0-1.1%200-2.2-.1-3.2%200-.4%200-.7-.1-1.1%200-.7-.1-1.4-.1-2.2%200-.4-.1-.8-.1-1.2-.1-.7-.1-1.3-.2-2%200-.4-.1-.9-.1-1.3-.1-.6-.2-1.3-.3-1.9-.1-.4-.1-.9-.2-1.3-.1-.6-.2-1.3-.3-1.9-.1-.4-.1-.8-.2-1.2-.1-.7-.3-1.4-.4-2.1-.1-.3-.1-.7-.2-1-.2-1-.5-2-.7-3-.1-.3-.2-.7-.3-1-.2-.7-.4-1.3-.6-2-.1-.4-.3-.9-.4-1.3-.2-.5-.4-1.1-.5-1.6-.2-.5-.3-.9-.5-1.4l-.6-1.5c-.2-.5-.4-.9-.5-1.4-.2-.5-.4-1-.6-1.4-.2-.5-.4-.9-.6-1.4-.2-.5-.4-.9-.6-1.4-.2-.5-.4-1-.7-1.4l-.6-1.2c-.5-1.1-1.1-2.1-1.7-3.2-.1-.3-.3-.5-.4-.8-.3-.5-.6-1.1-.9-1.6-.2-.3-.4-.6-.6-1-.3-.5-.7-1-1-1.6l-.6-.9c-.3-.5-.7-1-1.1-1.6l-.6-.9c-.4-.5-.7-1-1.1-1.6-.2-.3-.4-.5-.6-.8-.4-.5-.8-1.1-1.3-1.6-.1-.2-.3-.3-.4-.5-2.2-2.7-4.5-5.2-6.9-7.6l-.4-.4c-.5-.5-1.1-1-1.6-1.6-.2-.1-.3-.3-.5-.4-.6-.5-1.1-1-1.7-1.5-.2-.1-.3-.3-.5-.4l-1.8-1.5c-.1-.1-.2-.2-.3-.2-2.8-2.3-5.8-4.4-8.9-6.3-3.9-2.4-7.9-4.5-12.2-6.3L129.5%206h-59l-5.3%2016.1c-32.1%2013.6-54.6%2045.4-54.6%2082.4%200%201.8.1%203.7.2%205.5s.3%203.7.5%205.5L0%20128.2l15%2026.1%2014.5%2025.1%2016.6-3.5c15%2011.4%2033.7%2018.1%2053.9%2018.1%2020.2%200%2038.9-6.7%2053.9-18.1l16.6%203.5%2029.5-51.2-11.3-12.6zm-70-94.6%201.9%205.8%202.1%206.5%205.1%202.2-11%204%2016.9%2011.9c7.6%205.4%2012.2%2014.1%2012.2%2023.4v24.4c0%2010.4-4.3%2019.9-11.3%2026.6-5.7%205.5-13.2%209.1-21.1%2010.1-3.2.5-16.9.2-20.3.3-9.5%200-18.9-3.8-25.7-10.4-6.9-6.7-11.3-16.1-11.3-26.5V74.7c0-9.3%204.6-18.1%2012.2-23.4l31.3-21.9%201.5-8.3h17.5zm44.2%20141.5-5.9-1.2-6.7-1.4-5.4%204.1c-13%209.8-28.5%2015-44.8%2015s-31.9-5.2-44.8-15l-5.4-4.1-6.7%201.4-5.9%201.2-10.9-19c8.3-6.6%2018.4-12%2029.7-16C64.5%20138.7%2078%20146%2093.2%20146H109c15.2%200%2028.7-7.3%2037.3-18.5%2010.7%203.8%2020.2%208.9%2028.2%2014.9l-11.6%2020.1z'%2F%3E%3C%2Fsvg%3E\");"
+  },
+  {
+   "id": "B122",
+   "orig_range": [
+    3533,
+    3534
+   ],
+   "cand_range": [
+    3531,
+    3532
+   ],
+   "orig_lines": "3534-3534",
+   "cand_lines": "3532-3532",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       3531,
+       3532
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #region = 搜索框的normalize部分 */",
+   "first_added": "/* #region = 検索ボックスのnormalize部分 */"
+  },
+  {
+   "id": "B123",
+   "orig_range": [
+    3606,
+    3607
+   ],
+   "cand_range": [
+    3604,
+    3605
+   ],
+   "orig_lines": "3607-3607",
+   "cand_lines": "3605-3605",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       3604,
+       3605
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #endregion = 搜索框的normalize部分 */",
+   "first_added": "/* #endregion = 検索ボックスのnormalize部分 */"
+  },
+  {
+   "id": "B124",
+   "orig_range": [
+    3647,
+    3648
+   ],
+   "cand_range": [
+    3645,
+    3646
+   ],
+   "orig_lines": "3648-3648",
+   "cand_lines": "3646-3646",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       3645,
+       3646
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #region == 顶栏 */",
+   "first_added": "/* #region == トップバー */"
+  },
+  {
+   "id": "B125",
+   "orig_range": [
+    3668,
+    3669
+   ],
+   "cand_range": [
+    3666,
+    3667
+   ],
+   "orig_lines": "3669-3669",
+   "cand_lines": "3667-3667",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       3666,
+       3667
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #region === 黑标顶栏设置 */",
+   "first_added": "/* #region === ブラックハイライター系トップバー設定 */"
+  },
+  {
+   "id": "B126",
+   "orig_range": [
+    3748,
+    3749
+   ],
+   "cand_range": [
+    3746,
+    3747
+   ],
+   "orig_lines": "3749-3749",
+   "cand_lines": "3747-3747",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       3746,
+       3747
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #endregion === 黑标顶栏设置 */",
+   "first_added": "/* #endregion === ブラックハイライター系トップバー設定 */"
+  },
+  {
+   "id": "B127",
+   "orig_range": [
+    3750,
+    3751
+   ],
+   "cand_range": [
+    3748,
+    3749
+   ],
+   "orig_lines": "3751-3751",
+   "cand_lines": "3749-3749",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       3748,
+       3749
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #region === Sigma-9吸附顶栏 */",
+   "first_added": "/* #region === Sigma-9 吸着式トップバー */"
+  },
+  {
+   "id": "B128",
+   "orig_range": [
+    3789,
+    3790
+   ],
+   "cand_range": [
+    3787,
+    3788
+   ],
+   "orig_lines": "3790-3790",
+   "cand_lines": "3788-3788",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       3787,
+       3788
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #endregion === Sigma-9吸附顶栏 */",
+   "first_added": "/* #endregion === Sigma-9 吸着式トップバー */"
+  },
+  {
+   "id": "B129",
+   "orig_range": [
+    3791,
+    3792
+   ],
+   "cand_range": [
+    3789,
+    3790
+   ],
+   "orig_lines": "3792-3792",
+   "cand_lines": "3790-3790",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       3789,
+       3790
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #endregion == 顶栏 */",
+   "first_added": "/* #endregion == トップバー */"
+  },
+  {
+   "id": "B130",
+   "orig_range": [
+    3848,
+    3849
+   ],
+   "cand_range": [
+    3846,
+    3847
+   ],
+   "orig_lines": "3849-3849",
+   "cand_lines": "3847-3847",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "GLYPH-FORM",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "GLYPH-FORM": "B",
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "GLYPH-FORM": {},
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       3846,
+       3847
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "fold-compare: glyph forms only",
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #region = HEADER背景图 */",
+   "first_added": "/* #region = HEADER背景画像 */"
+  },
+  {
+   "id": "B131",
+   "orig_range": [
+    3865,
+    3866
+   ],
+   "cand_range": [
+    3863,
+    3864
+   ],
+   "orig_lines": "3866-3866",
+   "cand_lines": "3864-3864",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "GLYPH-FORM",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "GLYPH-FORM": "B",
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "GLYPH-FORM": {},
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       3863,
+       3864
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "fold-compare: glyph forms only",
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #endregion = HEADER背景图 */",
+   "first_added": "/* #endregion = HEADER背景画像 */"
+  },
+  {
+   "id": "B132",
+   "orig_range": [
+    3867,
+    3868
+   ],
+   "cand_range": [
+    3865,
+    3866
+   ],
+   "orig_lines": "3868-3868",
+   "cand_lines": "3866-3866",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       3865,
+       3866
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #region = 页眉、页面标题 */",
+   "first_added": "/* #region = ヘッダー・ページタイトル */"
+  },
+  {
+   "id": "B133",
+   "orig_range": [
+    3915,
+    3916
+   ],
+   "cand_range": [
+    3913,
+    3914
+   ],
+   "orig_lines": "3916-3916",
+   "cand_lines": "3914-3914",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "ASSET-REHOST",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "ASSET-REHOST": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "ASSET-REHOST": {
+     "orig": [
+      [
+       3915,
+       3916
+      ]
+     ],
+     "cand": [
+      [
+       3913,
+       3914
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       3913,
+       3914
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: url(https://wanderers-library.wdfiles.com/local--files/component%3Adustjacket-theme/goldfoil.png);",
+   "first_added": "    background: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A3438721-305-rq20/goldfoil.png);"
+  },
+  {
+   "id": "B134",
+   "orig_range": [
+    3942,
+    3943
+   ],
+   "cand_range": [
+    3940,
+    3941
+   ],
+   "orig_lines": "3943-3943",
+   "cand_lines": "3941-3941",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       3940,
+       3941
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #region == 页面标题 */",
+   "first_added": "/* #region == ページタイトル */"
+  },
+  {
+   "id": "B135",
+   "orig_range": [
+    3965,
+    3966
+   ],
+   "cand_range": [
+    3963,
+    3964
+   ],
+   "orig_lines": "3966-3966",
+   "cand_lines": "3964-3964",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "ASSET-REHOST",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "ASSET-REHOST": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "ASSET-REHOST": {
+     "orig": [
+      [
+       3965,
+       3966
+      ]
+     ],
+     "cand": [
+      [
+       3963,
+       3964
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       3963,
+       3964
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background-image: url(\"https://wanderers-library.wdfiles.com/local--files/component%3Adustjacket-theme/goldfoil.png\");",
+   "first_added": "    background-image: url(\"https://scp-jp-storage.wdfiles.com/local--files/file%3A3438721-305-rq20/goldfoil.png\");"
+  },
+  {
+   "id": "B136",
+   "orig_range": [
+    4089,
+    4090
+   ],
+   "cand_range": [
+    4087,
+    4088
+   ],
+   "orig_lines": "4090-4090",
+   "cand_lines": "4088-4088",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       4087,
+       4088
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    font-family: 'zuijinregular', serif;",
+   "first_added": "    font-family: 'Zen Old Mincho', serif;"
+  },
+  {
+   "id": "B137",
+   "orig_range": [
+    4092,
+    4093
+   ],
+   "cand_range": [
+    4090,
+    4091
+   ],
+   "orig_lines": "4093-4093",
+   "cand_lines": "4091-4091",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       4090,
+       4091
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #endregion == 页面标题 */",
+   "first_added": "/* #endregion == ページタイトル */"
+  },
+  {
+   "id": "B138",
+   "orig_range": [
+    4094,
+    4095
+   ],
+   "cand_range": [
+    4092,
+    4093
+   ],
+   "orig_lines": "4095-4095",
+   "cand_lines": "4093-4093",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       4092,
+       4093
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #endregion = 页眉、页面标题 */",
+   "first_added": "/* #endregion = ヘッダー・ページタイトル */"
+  },
+  {
+   "id": "B139",
+   "orig_range": [
+    4096,
+    4097
+   ],
+   "cand_range": [
+    4094,
+    4095
+   ],
+   "orig_lines": "4097-4097",
+   "cand_lines": "4095-4095",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       4094,
+       4095
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #region = 侧栏 */",
+   "first_added": "/* #region = サイドバー */"
+  },
+  {
+   "id": "B140",
+   "orig_range": [
+    4098,
+    4099
+   ],
+   "cand_range": [
+    4096,
+    4097
+   ],
+   "orig_lines": "4099-4099",
+   "cand_lines": "4097-4097",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       4096,
+       4097
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #region == Sigma-9 侧栏 */",
+   "first_added": "/* #region == Sigma-9 サイドバー */"
+  },
+  {
+   "id": "B141",
+   "orig_range": [
+    4197,
+    4198
+   ],
+   "cand_range": [
+    4195,
+    4196
+   ],
+   "orig_lines": "4198-4198",
+   "cand_lines": "4196-4196",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       4195,
+       4196
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #endregion == Sigma-9 侧栏 */",
+   "first_added": "/* #endregion == Sigma-9 サイドバー */"
+  },
+  {
+   "id": "B142",
+   "orig_range": [
+    4322,
+    4323
+   ],
+   "cand_range": [
+    4320,
+    4321
+   ],
+   "orig_lines": "4323-4323",
+   "cand_lines": "4321-4321",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       4320,
+       4321
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #region == Sigma-9 移动端侧栏启动按钮 */",
+   "first_added": "/* #region == Sigma-9 モバイルサイドバー起動ボタン */"
+  },
+  {
+   "id": "B143",
+   "orig_range": [
+    4389,
+    4390
+   ],
+   "cand_range": [
+    4387,
+    4388
+   ],
+   "orig_lines": "4390-4390",
+   "cand_lines": "4388-4388",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       4387,
+       4388
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #endregion == Sigma-9 移动端侧栏启动按钮 */",
+   "first_added": "/* #endregion == Sigma-9 モバイルサイドバー起動ボタン */"
+  },
+  {
+   "id": "B144",
+   "orig_range": [
+    4391,
+    4392
+   ],
+   "cand_range": [
+    4389,
+    4390
+   ],
+   "orig_lines": "4392-4392",
+   "cand_lines": "4390-4390",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       4389,
+       4390
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #endregion = 侧栏 */",
+   "first_added": "/* #endregion = サイドバー */"
+  },
+  {
+   "id": "B145",
+   "orig_range": [
+    4393,
+    4394
+   ],
+   "cand_range": [
+    4391,
+    4392
+   ],
+   "orig_lines": "4394-4394",
+   "cand_lines": "4392-4392",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       4391,
+       4392
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #region = 页面主要元素 */",
+   "first_added": "/* #region = ページの主要要素 */"
+  },
+  {
+   "id": "B146",
+   "orig_range": [
+    4634,
+    4635
+   ],
+   "cand_range": [
+    4632,
+    4633
+   ],
+   "orig_lines": "4635-4635",
+   "cand_lines": "4633-4633",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "SELECTOR-CORRECTION",
+    "T7-CREDIT-CSS"
+   ],
+   "primary": "T7-CREDIT-CSS",
+   "primary_section": 1,
+   "label_prec": {
+    "T7-CREDIT-CSS": "B",
+    "SELECTOR-CORRECTION": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "T7-CREDIT-CSS": {
+     "cand": [
+      [
+       4632,
+       4633
+      ]
+     ]
+    },
+    "SELECTOR-CORRECTION": {
+     "orig": [
+      [
+       4634,
+       4635
+      ]
+     ],
+     "cand": [
+      [
+       4632,
+       4633
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       4632,
+       4633
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "supplement-vs-inherited needs the production counterpart"
+   ],
+   "partial_notes": [],
+   "first_removed": "#page-content .rate-box-with-credit-button .creditButton p a {",
+   "first_added": "#page-content .rate-box-with-credit-button .creditButton a {"
+  },
+  {
+   "id": "B147",
+   "orig_range": [
+    4656,
+    4657
+   ],
+   "cand_range": [
+    4654,
+    4655
+   ],
+   "orig_lines": "4657-4657",
+   "cand_lines": "4655-4655",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "SELECTOR-CORRECTION",
+    "T7-CREDIT-CSS"
+   ],
+   "primary": "T7-CREDIT-CSS",
+   "primary_section": 1,
+   "label_prec": {
+    "T7-CREDIT-CSS": "B",
+    "SELECTOR-CORRECTION": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "T7-CREDIT-CSS": {
+     "cand": [
+      [
+       4654,
+       4655
+      ]
+     ]
+    },
+    "SELECTOR-CORRECTION": {
+     "orig": [
+      [
+       4656,
+       4657
+      ]
+     ],
+     "cand": [
+      [
+       4654,
+       4655
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       4654,
+       4655
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "supplement-vs-inherited needs the production counterpart"
+   ],
+   "partial_notes": [],
+   "first_removed": ".creditButtonStandalone p a{",
+   "first_added": ".creditButtonStandalone a{"
+  },
+  {
+   "id": "B148",
+   "orig_range": [
+    4660,
+    4661
+   ],
+   "cand_range": [
+    4658,
+    4659
+   ],
+   "orig_lines": "4661-4661",
+   "cand_lines": "4659-4659",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "SELECTOR-CORRECTION",
+    "T7-CREDIT-CSS"
+   ],
+   "primary": "T7-CREDIT-CSS",
+   "primary_section": 1,
+   "label_prec": {
+    "T7-CREDIT-CSS": "B",
+    "SELECTOR-CORRECTION": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "T7-CREDIT-CSS": {
+     "cand": [
+      [
+       4658,
+       4659
+      ]
+     ]
+    },
+    "SELECTOR-CORRECTION": {
+     "orig": [
+      [
+       4660,
+       4661
+      ]
+     ],
+     "cand": [
+      [
+       4658,
+       4659
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       4658,
+       4659
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "supplement-vs-inherited needs the production counterpart"
+   ],
+   "partial_notes": [],
+   "first_removed": ".creditButtonStandalone p a:hover {",
+   "first_added": ".creditButtonStandalone a:hover {"
+  },
+  {
+   "id": "B149",
+   "orig_range": [
+    4706,
+    4707
+   ],
+   "cand_range": [
+    4704,
+    4705
+   ],
+   "orig_lines": "4707-4707",
+   "cand_lines": "4705-4705",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "ASSET-REHOST",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "ASSET-REHOST": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "ASSET-REHOST": {
+     "orig": [
+      [
+       4706,
+       4707
+      ]
+     ],
+     "cand": [
+      [
+       4704,
+       4705
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       4704,
+       4705
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    border-image-source: url(https://wanderers-library.wdfiles.com/local--files/component%3Adustjacket-theme/wl_hr.png);",
+   "first_added": "    border-image-source: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A3438721-307-flvk/wl_hr.png);"
+  },
+  {
+   "id": "B150",
+   "orig_range": [
+    4717,
+    4718
+   ],
+   "cand_range": [
+    4715,
+    4716
+   ],
+   "orig_lines": "4718-4718",
+   "cand_lines": "4716-4716",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "ASSET-REHOST",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "ASSET-REHOST": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "ASSET-REHOST": {
+     "orig": [
+      [
+       4717,
+       4718
+      ]
+     ],
+     "cand": [
+      [
+       4715,
+       4716
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       4715,
+       4716
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    border-image: url(\"https://wanderers-library.wdfiles.com/local--files/component%3Adustjacket-theme/wl_border.png\") 600 round;",
+   "first_added": "    border-image: url(\"https://scp-jp-storage.wdfiles.com/local--files/file%3A3438721-307-yhhi/wl_border.png\") 600 round;"
+  },
+  {
+   "id": "B151",
+   "orig_range": [
+    4756,
+    4757
+   ],
+   "cand_range": [
+    4754,
+    4755
+   ],
+   "orig_lines": "4757-4757",
+   "cand_lines": "4755-4755",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       4754,
+       4755
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #region == 黑标 Footnote Block */",
+   "first_added": "/* #region == ブラックハイライター系 Footnote Block */"
+  },
+  {
+   "id": "B152",
+   "orig_range": [
+    4790,
+    4791
+   ],
+   "cand_range": [
+    4788,
+    4789
+   ],
+   "orig_lines": "4791-4791",
+   "cand_lines": "4789-4789",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       4788,
+       4789
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    font-family: \"zuijinregular\", sans-serif;",
+   "first_added": "    font-family: 'Zen Old Mincho', sans-serif;"
+  },
+  {
+   "id": "B153",
+   "orig_range": [
+    4932,
+    4933
+   ],
+   "cand_range": [
+    4930,
+    4931
+   ],
+   "orig_lines": "4933-4933",
+   "cand_lines": "4931-4931",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       4930,
+       4931
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    font-family: 'zuijinregular', serif;",
+   "first_added": "    font-family: 'Zen Old Mincho', serif;"
+  },
+  {
+   "id": "B154",
+   "orig_range": [
+    4959,
+    4960
+   ],
+   "cand_range": [
+    4957,
+    4958
+   ],
+   "orig_lines": "4960-4960",
+   "cand_lines": "4958-4958",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       4957,
+       4958
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #endregion == 黑标 Footnote Block */",
+   "first_added": "/* #endregion == ブラックハイライター系 Footnote Block */"
+  },
+  {
+   "id": "B155",
+   "orig_range": [
+    5071,
+    5072
+   ],
+   "cand_range": [
+    5069,
+    5070
+   ],
+   "orig_lines": "5072-5072",
+   "cand_lines": "5070-5070",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       5069,
+       5070
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #endregion = 页面主要元素 */",
+   "first_added": "/* #endregion = ページの主要要素 */"
+  },
+  {
+   "id": "B156",
+   "orig_range": [
+    5073,
+    5074
+   ],
+   "cand_range": [
+    5071,
+    5072
+   ],
+   "orig_lines": "5074-5074",
+   "cand_lines": "5072-5072",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       5071,
+       5072
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #region = 用户和搜索栏 */",
+   "first_added": "/* #region = ユーザー欄と検索欄 */"
+  },
+  {
+   "id": "B157",
+   "orig_range": [
+    5436,
+    5437
+   ],
+   "cand_range": [
+    5434,
+    5435
+   ],
+   "orig_lines": "5437-5437",
+   "cand_lines": "5435-5435",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       5434,
+       5435
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #region == 默认收起用户信息栏和搜索栏 */",
+   "first_added": "/* #region == ユーザー情報欄と検索欄を既定で折り畳む */"
+  },
+  {
+   "id": "B158",
+   "orig_range": [
+    5584,
+    5585
+   ],
+   "cand_range": [
+    5582,
+    5583
+   ],
+   "orig_lines": "5585-5585",
+   "cand_lines": "5583-5583",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       5582,
+       5583
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #endregion == 默认收起用户信息栏和搜索栏 */",
+   "first_added": "/* #endregion == ユーザー情報欄と検索欄を既定で折り畳む */"
+  },
+  {
+   "id": "B159",
+   "orig_range": [
+    5586,
+    5587
+   ],
+   "cand_range": [
+    5584,
+    5585
+   ],
+   "orig_lines": "5587-5587",
+   "cand_lines": "5585-5585",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       5584,
+       5585
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #endregion = 用户和搜索栏 */",
+   "first_added": "/* #endregion = ユーザー欄と検索欄 */"
+  },
+  {
+   "id": "B160",
+   "orig_range": [
+    5588,
+    5589
+   ],
+   "cand_range": [
+    5586,
+    5587
+   ],
+   "orig_lines": "5589-5589",
+   "cand_lines": "5587-5587",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       5586,
+       5587
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #region = 黑标评分模块 */",
+   "first_added": "/* #region = ブラックハイライター系評価モジュール */"
+  },
+  {
+   "id": "B161",
+   "orig_range": [
+    5632,
+    5633
+   ],
+   "cand_range": [
+    5630,
+    5631
+   ],
+   "orig_lines": "5633-5633",
+   "cand_lines": "5631-5631",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "SELECTOR-CORRECTION",
+    "T7-CREDIT-CSS"
+   ],
+   "primary": "T7-CREDIT-CSS",
+   "primary_section": 1,
+   "label_prec": {
+    "T7-CREDIT-CSS": "B",
+    "SELECTOR-CORRECTION": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "T7-CREDIT-CSS": {
+     "cand": [
+      [
+       5630,
+       5631
+      ]
+     ]
+    },
+    "SELECTOR-CORRECTION": {
+     "orig": [
+      [
+       5632,
+       5633
+      ]
+     ],
+     "cand": [
+      [
+       5630,
+       5631
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       5630,
+       5631
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "supplement-vs-inherited needs the production counterpart"
+   ],
+   "partial_notes": [],
+   "first_removed": ".page-rate-widget-box .cancel,.page-rate-widget-box .cancel a,.page-rate-widget-box .ratedown,.page-rate-widget-box .ratedown a,.page-rate-widget-box .rateup,.page-rate-widget-box .rateup a,.rate-box-with-credit-button>.creditButton,.rate-box-with-credit-button>.creditButton>p {",
+   "first_added": ".page-rate-widget-box .cancel,.page-rate-widget-box .cancel a,.page-rate-widget-box .ratedown,.page-rate-widget-box .ratedown a,.page-rate-widget-box .rateup,.page-rate-widget-box .rateup a,.rate-box-with-credit-button>.creditButton,.rate-box-with-credit-button>.creditButton {"
+  },
+  {
+   "id": "B162",
+   "orig_range": [
+    5822,
+    5823
+   ],
+   "cand_range": [
+    5820,
+    5821
+   ],
+   "orig_lines": "5823-5823",
+   "cand_lines": "5821-5821",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "SELECTOR-CORRECTION",
+    "T7-CREDIT-CSS"
+   ],
+   "primary": "T7-CREDIT-CSS",
+   "primary_section": 1,
+   "label_prec": {
+    "T7-CREDIT-CSS": "B",
+    "SELECTOR-CORRECTION": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "T7-CREDIT-CSS": {
+     "cand": [
+      [
+       5820,
+       5821
+      ]
+     ]
+    },
+    "SELECTOR-CORRECTION": {
+     "orig": [
+      [
+       5822,
+       5823
+      ]
+     ],
+     "cand": [
+      [
+       5820,
+       5821
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       5820,
+       5821
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "supplement-vs-inherited needs the production counterpart"
+   ],
+   "partial_notes": [],
+   "first_removed": "#page-content .rate-box-with-credit-button>.creditButton>p {",
+   "first_added": "#page-content .rate-box-with-credit-button>.creditButton {"
+  },
+  {
+   "id": "B163",
+   "orig_range": [
+    5829,
+    5830
+   ],
+   "cand_range": [
+    5827,
+    5828
+   ],
+   "orig_lines": "5830-5830",
+   "cand_lines": "5828-5828",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "T7-CREDIT-CSS"
+   ],
+   "primary": "T7-CREDIT-CSS",
+   "primary_section": 1,
+   "label_prec": {
+    "T7-CREDIT-CSS": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "T7-CREDIT-CSS": {
+     "cand": [
+      [
+       5827,
+       5828
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       5827,
+       5828
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "supplement-vs-inherited needs the production counterpart"
+   ],
+   "partial_notes": [],
+   "first_removed": "#page-content .rate-box-with-credit-button>.creditButton>p,#page-content .rate-box-with-credit-button>.creditButton>p>a {",
+   "first_added": "#page-content .rate-box-with-credit-button>.creditButton,#page-content .rate-box-with-credit-button>.creditButton>a {"
+  },
+  {
+   "id": "B164",
+   "orig_range": [
+    5834,
+    5835
+   ],
+   "cand_range": [
+    5832,
+    5833
+   ],
+   "orig_lines": "5835-5835",
+   "cand_lines": "5833-5833",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "SELECTOR-CORRECTION",
+    "T7-CREDIT-CSS"
+   ],
+   "primary": "T7-CREDIT-CSS",
+   "primary_section": 1,
+   "label_prec": {
+    "T7-CREDIT-CSS": "B",
+    "SELECTOR-CORRECTION": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "T7-CREDIT-CSS": {
+     "cand": [
+      [
+       5832,
+       5833
+      ]
+     ]
+    },
+    "SELECTOR-CORRECTION": {
+     "orig": [
+      [
+       5834,
+       5835
+      ]
+     ],
+     "cand": [
+      [
+       5832,
+       5833
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       5832,
+       5833
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "supplement-vs-inherited needs the production counterpart"
+   ],
+   "partial_notes": [],
+   "first_removed": "#page-content .rate-box-with-credit-button>.creditButton>p>a {",
+   "first_added": "#page-content .rate-box-with-credit-button>.creditButton>a {"
+  },
+  {
+   "id": "B165",
+   "orig_range": [
+    5841,
+    5842
+   ],
+   "cand_range": [
+    5839,
+    5840
+   ],
+   "orig_lines": "5842-5842",
+   "cand_lines": "5840-5840",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "SELECTOR-CORRECTION",
+    "T7-CREDIT-CSS"
+   ],
+   "primary": "T7-CREDIT-CSS",
+   "primary_section": 1,
+   "label_prec": {
+    "T7-CREDIT-CSS": "B",
+    "SELECTOR-CORRECTION": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "T7-CREDIT-CSS": {
+     "cand": [
+      [
+       5839,
+       5840
+      ]
+     ]
+    },
+    "SELECTOR-CORRECTION": {
+     "orig": [
+      [
+       5841,
+       5842
+      ]
+     ],
+     "cand": [
+      [
+       5839,
+       5840
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       5839,
+       5840
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "supplement-vs-inherited needs the production counterpart"
+   ],
+   "partial_notes": [],
+   "first_removed": "#page-content .rate-box-with-credit-button>.creditButton>p>a:after {",
+   "first_added": "#page-content .rate-box-with-credit-button>.creditButton>a:after {"
+  },
+  {
+   "id": "B166",
+   "orig_range": [
+    5858,
+    5859
+   ],
+   "cand_range": [
+    5856,
+    5857
+   ],
+   "orig_lines": "5859-5859",
+   "cand_lines": "5857-5857",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "SELECTOR-CORRECTION",
+    "T7-CREDIT-CSS"
+   ],
+   "primary": "T7-CREDIT-CSS",
+   "primary_section": 1,
+   "label_prec": {
+    "T7-CREDIT-CSS": "B",
+    "SELECTOR-CORRECTION": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "T7-CREDIT-CSS": {
+     "cand": [
+      [
+       5856,
+       5857
+      ]
+     ]
+    },
+    "SELECTOR-CORRECTION": {
+     "orig": [
+      [
+       5858,
+       5859
+      ]
+     ],
+     "cand": [
+      [
+       5856,
+       5857
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       5856,
+       5857
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "supplement-vs-inherited needs the production counterpart"
+   ],
+   "partial_notes": [],
+   "first_removed": "#page-content .rate-box-with-credit-button>.creditButton>p>a:active:after,#page-content .rate-box-with-credit-button>.creditButton>p>a:hover:after {",
+   "first_added": "#page-content .rate-box-with-credit-button>.creditButton>a:active:after,#page-content .rate-box-with-credit-button>.creditButton>a:hover:after {"
+  },
+  {
+   "id": "B167",
+   "orig_range": [
+    5862,
+    5863
+   ],
+   "cand_range": [
+    5860,
+    5861
+   ],
+   "orig_lines": "5863-5863",
+   "cand_lines": "5861-5861",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "SELECTOR-CORRECTION",
+    "T7-CREDIT-CSS"
+   ],
+   "primary": "T7-CREDIT-CSS",
+   "primary_section": 1,
+   "label_prec": {
+    "T7-CREDIT-CSS": "B",
+    "SELECTOR-CORRECTION": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "T7-CREDIT-CSS": {
+     "cand": [
+      [
+       5860,
+       5861
+      ]
+     ]
+    },
+    "SELECTOR-CORRECTION": {
+     "orig": [
+      [
+       5862,
+       5863
+      ]
+     ],
+     "cand": [
+      [
+       5860,
+       5861
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       5860,
+       5861
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "supplement-vs-inherited needs the production counterpart"
+   ],
+   "partial_notes": [],
+   "first_removed": "#page-content .rate-box-with-credit-button>.creditButton>p>a:focus-within:after {",
+   "first_added": "#page-content .rate-box-with-credit-button>.creditButton>a:focus-within:after {"
+  },
+  {
+   "id": "B168",
+   "orig_range": [
+    5866,
+    5867
+   ],
+   "cand_range": [
+    5864,
+    5865
+   ],
+   "orig_lines": "5867-5867",
+   "cand_lines": "5865-5865",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "SELECTOR-CORRECTION",
+    "T7-CREDIT-CSS"
+   ],
+   "primary": "T7-CREDIT-CSS",
+   "primary_section": 1,
+   "label_prec": {
+    "T7-CREDIT-CSS": "B",
+    "SELECTOR-CORRECTION": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "T7-CREDIT-CSS": {
+     "cand": [
+      [
+       5864,
+       5865
+      ]
+     ]
+    },
+    "SELECTOR-CORRECTION": {
+     "orig": [
+      [
+       5866,
+       5867
+      ]
+     ],
+     "cand": [
+      [
+       5864,
+       5865
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       5864,
+       5865
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "supplement-vs-inherited needs the production counterpart"
+   ],
+   "partial_notes": [],
+   "first_removed": "#page-content .rate-box-with-credit-button>.creditButton>p>a:before {",
+   "first_added": "#page-content .rate-box-with-credit-button>.creditButton>a:before {"
+  },
+  {
+   "id": "B169",
+   "orig_range": [
+    5888,
+    5889
+   ],
+   "cand_range": [
+    5886,
+    5887
+   ],
+   "orig_lines": "5889-5889",
+   "cand_lines": "5887-5887",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "SELECTOR-CORRECTION",
+    "T7-CREDIT-CSS"
+   ],
+   "primary": "T7-CREDIT-CSS",
+   "primary_section": 1,
+   "label_prec": {
+    "T7-CREDIT-CSS": "B",
+    "SELECTOR-CORRECTION": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "T7-CREDIT-CSS": {
+     "cand": [
+      [
+       5886,
+       5887
+      ]
+     ]
+    },
+    "SELECTOR-CORRECTION": {
+     "orig": [
+      [
+       5888,
+       5889
+      ]
+     ],
+     "cand": [
+      [
+       5886,
+       5887
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       5886,
+       5887
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "supplement-vs-inherited needs the production counterpart"
+   ],
+   "partial_notes": [],
+   "first_removed": "#page-content .rate-box-with-credit-button>.creditButton>p>a:active:before,#page-content .rate-box-with-credit-button>.creditButton>p>a:hover:before {",
+   "first_added": "#page-content .rate-box-with-credit-button>.creditButton>a:active:before,#page-content .rate-box-with-credit-button>.creditButton>a:hover:before {"
+  },
+  {
+   "id": "B170",
+   "orig_range": [
+    5892,
+    5893
+   ],
+   "cand_range": [
+    5890,
+    5891
+   ],
+   "orig_lines": "5893-5893",
+   "cand_lines": "5891-5891",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "SELECTOR-CORRECTION",
+    "T7-CREDIT-CSS"
+   ],
+   "primary": "T7-CREDIT-CSS",
+   "primary_section": 1,
+   "label_prec": {
+    "T7-CREDIT-CSS": "B",
+    "SELECTOR-CORRECTION": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "T7-CREDIT-CSS": {
+     "cand": [
+      [
+       5890,
+       5891
+      ]
+     ]
+    },
+    "SELECTOR-CORRECTION": {
+     "orig": [
+      [
+       5892,
+       5893
+      ]
+     ],
+     "cand": [
+      [
+       5890,
+       5891
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       5890,
+       5891
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "supplement-vs-inherited needs the production counterpart"
+   ],
+   "partial_notes": [],
+   "first_removed": "#page-content .rate-box-with-credit-button>.creditButton>p>a:focus-within:before {",
+   "first_added": "#page-content .rate-box-with-credit-button>.creditButton>a:focus-within:before {"
+  },
+  {
+   "id": "B171",
+   "orig_range": [
+    6163,
+    6164
+   ],
+   "cand_range": [
+    6161,
+    6162
+   ],
+   "orig_lines": "6164-6164",
+   "cand_lines": "6162-6162",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "SELECTOR-CORRECTION",
+    "T7-CREDIT-CSS"
+   ],
+   "primary": "T7-CREDIT-CSS",
+   "primary_section": 1,
+   "label_prec": {
+    "T7-CREDIT-CSS": "B",
+    "SELECTOR-CORRECTION": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "T7-CREDIT-CSS": {
+     "cand": [
+      [
+       6161,
+       6162
+      ]
+     ]
+    },
+    "SELECTOR-CORRECTION": {
+     "orig": [
+      [
+       6163,
+       6164
+      ]
+     ],
+     "cand": [
+      [
+       6161,
+       6162
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       6161,
+       6162
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "supplement-vs-inherited needs the production counterpart"
+   ],
+   "partial_notes": [],
+   "first_removed": ".rate-box-with-credit-button>.creditButton>p>a {",
+   "first_added": ".rate-box-with-credit-button>.creditButton>a {"
+  },
+  {
+   "id": "B172",
+   "orig_range": [
+    6173,
+    6174
+   ],
+   "cand_range": [
+    6171,
+    6172
+   ],
+   "orig_lines": "6174-6174",
+   "cand_lines": "6172-6172",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "SELECTOR-CORRECTION",
+    "T7-CREDIT-CSS"
+   ],
+   "primary": "T7-CREDIT-CSS",
+   "primary_section": 1,
+   "label_prec": {
+    "T7-CREDIT-CSS": "B",
+    "SELECTOR-CORRECTION": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "T7-CREDIT-CSS": {
+     "cand": [
+      [
+       6171,
+       6172
+      ]
+     ]
+    },
+    "SELECTOR-CORRECTION": {
+     "orig": [
+      [
+       6173,
+       6174
+      ]
+     ],
+     "cand": [
+      [
+       6171,
+       6172
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       6171,
+       6172
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "supplement-vs-inherited needs the production counterpart"
+   ],
+   "partial_notes": [],
+   "first_removed": "#page-content .rate-box-with-credit-button>.creditButton>p>a:after {",
+   "first_added": "#page-content .rate-box-with-credit-button>.creditButton>a:after {"
+  },
+  {
+   "id": "B173",
+   "orig_range": [
+    6177,
+    6178
+   ],
+   "cand_range": [
+    6175,
+    6176
+   ],
+   "orig_lines": "6178-6178",
+   "cand_lines": "6176-6176",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       6175,
+       6176
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #endregion = 黑标评分模块 */",
+   "first_added": "/* #endregion = ブラックハイライター系評価モジュール */"
+  },
+  {
+   "id": "B174",
+   "orig_range": [
+    6179,
+    6180
+   ],
+   "cand_range": [
+    6177,
+    6178
+   ],
+   "orig_lines": "6180-6180",
+   "cand_lines": "6178-6178",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       6177,
+       6178
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #region = 黑标Tabview / YUI-NAVSET */",
+   "first_added": "/* #region = ブラックハイライター系 Tabview / YUI-NAVSET */"
+  },
+  {
+   "id": "B175",
+   "orig_range": [
+    6197,
+    6198
+   ],
+   "cand_range": [
+    6195,
+    6196
+   ],
+   "orig_lines": "6198-6198",
+   "cand_lines": "6196-6196",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       6195,
+       6196
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #region == 黑标Tabview NORMALIZE */",
+   "first_added": "/* #region == ブラックハイライター系 Tabview NORMALIZE */"
+  },
+  {
+   "id": "B176",
+   "orig_range": [
+    6230,
+    6231
+   ],
+   "cand_range": [
+    6228,
+    6229
+   ],
+   "orig_lines": "6231-6231",
+   "cand_lines": "6229-6229",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       6228,
+       6229
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #endregion == 黑标Tabview NORMALIZE */",
+   "first_added": "/* #endregion == ブラックハイライター系 Tabview NORMALIZE */"
+  },
+  {
+   "id": "B177",
+   "orig_range": [
+    6411,
+    6412
+   ],
+   "cand_range": [
+    6409,
+    6410
+   ],
+   "orig_lines": "6412-6412",
+   "cand_lines": "6410-6410",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       6409,
+       6410
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #endregion = 黑标Tabview / YUI-NAVSET */",
+   "first_added": "/* #endregion = ブラックハイライター系 Tabview / YUI-NAVSET */"
+  },
+  {
+   "id": "B178",
+   "orig_range": [
+    6413,
+    6414
+   ],
+   "cand_range": [
+    6411,
+    6412
+   ],
+   "orig_lines": "6414-6414",
+   "cand_lines": "6412-6412",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       6411,
+       6412
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #region = 黑标移动端顶栏 */",
+   "first_added": "/* #region = ブラックハイライター系モバイルトップバー */"
+  },
+  {
+   "id": "B179",
+   "orig_range": [
+    6487,
+    6488
+   ],
+   "cand_range": [
+    6485,
+    6486
+   ],
+   "orig_lines": "6488-6488",
+   "cand_lines": "6486-6486",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       6485,
+       6486
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #endregion = 黑标移动端顶栏 */",
+   "first_added": "/* #endregion = ブラックハイライター系モバイルトップバー */"
+  },
+  {
+   "id": "B180",
+   "orig_range": [
+    6489,
+    6490
+   ],
+   "cand_range": [
+    6487,
+    6488
+   ],
+   "orig_lines": "6490-6490",
+   "cand_lines": "6488-6488",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       6487,
+       6488
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #region = 调整平板电脑(768px)时的显示效果 */",
+   "first_added": "/* #region = タブレット(768px)表示の調整 */"
+  },
+  {
+   "id": "B181",
+   "orig_range": [
+    6524,
+    6525
+   ],
+   "cand_range": [
+    6522,
+    6523
+   ],
+   "orig_lines": "6525-6525",
+   "cand_lines": "6523-6523",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       6522,
+       6523
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #endregion = 调整平板电脑(768px)时的显示效果 */",
+   "first_added": "/* #endregion = タブレット(768px)表示の調整 */"
+  },
+  {
+   "id": "B182",
+   "orig_range": [
+    6526,
+    6527
+   ],
+   "cand_range": [
+    6524,
+    6525
+   ],
+   "orig_lines": "6527-6527",
+   "cand_lines": "6525-6525",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       6524,
+       6525
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #region = 内置解决saving pages问题的模块 */",
+   "first_added": "/* #region = 「保存中」表示の内蔵対応ブロック */"
+  },
+  {
+   "id": "B183",
+   "orig_range": [
+    6555,
+    6556
+   ],
+   "cand_range": [
+    6553,
+    6554
+   ],
+   "orig_lines": "6556-6556",
+   "cand_lines": "6554-6554",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "CONTENT-STRING",
+    "DELIVERY-MOVE",
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "CONTENT-STRING": "B",
+    "TRANSLATION-ANCHORED": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "CONTENT-STRING": {
+     "orig": [
+      [
+       6555,
+       6556
+      ]
+     ],
+     "cand": [
+      [
+       6553,
+       6554
+      ]
+     ]
+    },
+    "TRANSLATION-ANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       6553,
+       6554
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "    content: '您握有一个独占的15 分钟锁定，这将会阻止其他人编辑您正在作业的页面。\\A这个锁定将在闲置 ';",
+   "first_added": "    content: 'あなたは15分間の占有ロックを保持しています。これにより、他の人が編集中のページを編集するのを防げます。\\Aこのロックは ';"
+  },
+  {
+   "id": "B184",
+   "orig_range": [
+    6570,
+    6571
+   ],
+   "cand_range": [
+    6568,
+    6569
+   ],
+   "orig_lines": "6571-6571",
+   "cand_lines": "6569-6569",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "CONTENT-STRING",
+    "DELIVERY-MOVE",
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "CONTENT-STRING": "B",
+    "TRANSLATION-ANCHORED": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "CONTENT-STRING": {
+     "orig": [
+      [
+       6570,
+       6571
+      ]
+     ],
+     "cand": [
+      [
+       6568,
+       6569
+      ]
+     ]
+    },
+    "TRANSLATION-ANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       6568,
+       6569
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "    content: ' 秒后失效。';",
+   "first_added": "    content: ' 秒で失効します。';"
+  },
+  {
+   "id": "B185",
+   "orig_range": [
+    6576,
+    6577
+   ],
+   "cand_range": [
+    6574,
+    6575
+   ],
+   "orig_lines": "6577-6577",
+   "cand_lines": "6575-6575",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "CONTENT-STRING",
+    "DELIVERY-MOVE",
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "CONTENT-STRING": "B",
+    "TRANSLATION-ANCHORED": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "CONTENT-STRING": {
+     "orig": [
+      [
+       6576,
+       6577
+      ]
+     ],
+     "cand": [
+      [
+       6574,
+       6575
+      ]
+     ]
+    },
+    "TRANSLATION-ANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       6574,
+       6575
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "    content: '保存页面中……\\A若此提示已经显示了很长时间，建议将编辑框中的内容复制到剪切板然后刷新本页重新编辑。';",
+   "first_added": "    content: 'ページを保存中……\\Aこの表示が長時間続く場合は、編集ボックスの内容をクリップボードにコピーしてからページを再読み込みして再編集してください。';"
+  },
+  {
+   "id": "B186",
+   "orig_range": [
+    6595,
+    6596
+   ],
+   "cand_range": [
+    6593,
+    6594
+   ],
+   "orig_lines": "6596-6596",
+   "cand_lines": "6594-6594",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       6593,
+       6594
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #endregion = 内置解决saving pages问题的模块 */",
+   "first_added": "/* #endregion = 「保存中」表示の内蔵対応ブロック */"
+  },
+  {
+   "id": "B187",
+   "orig_range": [
+    6597,
+    6598
+   ],
+   "cand_range": [
+    6595,
+    6596
+   ],
+   "orig_lines": "6598-6598",
+   "cand_lines": "6596-6596",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       6595,
+       6596
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #region = 修复ios设备上的显示效果 */",
+   "first_added": "/* #region = iOSデバイス表示の修復 */"
+  },
+  {
+   "id": "B188",
+   "orig_range": [
+    6600,
+    6601
+   ],
+   "cand_range": [
+    6598,
+    6599
+   ],
+   "orig_lines": "6601-6601",
+   "cand_lines": "6599-6599",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "ASSET-REHOST",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "ASSET-REHOST": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "ASSET-REHOST": {
+     "orig": [
+      [
+       6600,
+       6601
+      ]
+     ],
+     "cand": [
+      [
+       6598,
+       6599
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       6598,
+       6599
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "        border-image-source: url(\"https://wanderers-library.wdfiles.com/local--files/component%3Adustjacket-theme/wl_hr.png\");",
+   "first_added": "        border-image-source: url(\"https://scp-jp-storage.wdfiles.com/local--files/file%3A3438721-307-flvk/wl_hr.png\");"
+  },
+  {
+   "id": "B189",
+   "orig_range": [
+    6615,
+    6616
+   ],
+   "cand_range": [
+    6613,
+    6614
+   ],
+   "orig_lines": "6616-6616",
+   "cand_lines": "6614-6614",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       6613,
+       6614
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* #endregion = 修复ios设备上的显示效果 */",
+   "first_added": "/* #endregion = iOSデバイス表示の修復 */"
+  },
+  {
+   "id": "B190",
+   "orig_range": [
+    6620,
+    6620
+   ],
+   "cand_range": [
+    6618,
+    6619
+   ],
+   "orig_lines": "at 6621",
+   "cand_lines": "6619-6619",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": ""
+  }
+ ],
+ "derived_presence": {
+  "HTTP-KEPT": {
+   "class": "(ii) posting rewrite",
+   "count": 8,
+   "lines": [
+    "2142-2142",
+    "2143-2143",
+    "2144-2144",
+    "2145-2145",
+    "5599-5599"
+   ],
+   "example": "--rateup-mask: url(\"data:image/svg+xml;charset=utf-8,%3Csvg version='1.2' baseProfile='tiny' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200' overflow='visible' xml:space='preserve'%3E%3Cpath d='M200.1 86.6h-86.6V0h-27v86.6H-.1v26.8h86.6V200h27v-86.6h86.6z'/%3E%3C/svg%3E\");"
+  }
+ },
+ "summary": {
+  "blocks": 190,
+  "specific": 173,
+  "heuristic": 15,
+  "residue": 2,
+  "skipped": 0,
+  "reindent_blocks": 0,
+  "label_counts": {
+   "DELIVERY-MOVE": 144,
+   "FONT-IMPORT": 2,
+   "ASSET-REHOST": 14,
+   "HEADERVAR": 2,
+   "TRANSLATION-ANCHORED": 29,
+   "COMMENT-TEXT": 84,
+   "TRANS-UNANCHORED": 102,
+   "GLYPH-FORM": 7,
+   "SELECTOR-CORRECTION": 28,
+   "T7-CREDIT-CSS": 30,
+   "CONTENT-STRING": 6,
+   "DRAFT-HOST": 1,
+   "SELF-DELIVERY": 1,
+   "IFTAGS": 1,
+   "CSS-BODY": 1,
+   "BARE-RATE-DEL": 1,
+   "CREDIT-PREVIEW": 2,
+   "CREDIT-PROSE": 1,
+   "TASL-FIELDS": 1,
+   "INCLUDE-REPOINT": 2,
+   "LINK-REPOINT": 1,
+   "COMPONENT-SWAP": 1
+  }
+ },
+ "residue": [
+  "B76",
+  "B190"
+ ],
+ "skeleton": {
+  "sha256": "989edfe9b31be98fb305e80fc3378b549155d04eca8a50418f6bfbdd97ac9467",
+  "status": "written (new)"
+ }
+}

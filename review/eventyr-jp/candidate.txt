@@ -1,0 +1,789 @@
+[[module CSS]]
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aeventyr-jp/1');
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css
+]]
+[[include :scp-jp:component:interwiki-style
+| priority=2
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css
+]]
+[[include :scp-jp:component:interwiki-style
+| priority=3
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aeventyr-jp/1
+]]
+
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** エヴェンティール テーマ
+**翻訳責任者:** AI
+**翻訳年:** 2026
+**原題:** Eventyr Theme
+**著作権者:** [[*user FlyPurgatorio]]
+**作成年:** 2024
+**初訳時参照リビジョン:** 79
+**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:eventyr Eventyr Theme]
+[[include :scp-jp:credit:end-preview]]
+
+こんにちは！これはEventyr設定のために作られた[[[theme:black-highlighter-theme|Black Highlighter]]]テーマです。使用するには、ページに以下を置いてください:
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:black-highlighter-theme]]@@
+@@[[include :scp-jp:theme:eventyr-jp]]@@
+[[/div]]
+
+//訳注: 原語版ではこの位置に英語版のinfoモジュール（:scp-wiki:info:start〜end）の記入例があります。SCP-JPではCreditモジュールを使うため、記入例は省いています。//
+
++ 見本
+
+[[include component:image-block name=https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-logo-base.png|caption=Eventyr SCPロゴ|width=200px]]
+
+水平罫線は5つのハイフン「@@-----@@」で作成でき、何か（引用ブロックなど）の内側に置かない限りページ全体に広がります。この文書の各節を区切っている線が水平罫線です。[[footnote]]これは脚注です[[/footnote]]
+
+[http://www.google.com 一度は訪れたことのあるリンクでしょう、たぶん]
+[https://scp-wiki.wikidot.com/scp-2601789532645888881596 未訪問のリンク]
+
+見出しは、行の先頭に1〜6個の「+」を置くことで作成できます。
+
+[[collapsible show="+ 見出し" hide="- 見出し"]]
++ 1番目の見出し
+
+++ 2番目の見出し
+
++++ 3番目の見出し
+
+++++ 4番目の見出し
+
++++++ 5番目の見出し
+
+++++++ 6番目の見出し
+[[/collapsible]]
+
+@@ @@
+-----
+@@ @@
+
+[[tabview]]
+[[tab タブ化]]
+なぜシャベルはそんなに特別だったのでしょう？
+
+画期的な発明だったからです
+[[/tab]]
+[[tab タブ化の話]]
+テキストがもっと。
+
+なんとまあ。
+[[/tab]]
+[[tab 長いタブ]]
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+[[/tab]]
+[[tab この空のタブはとても長い名前を持っています。]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[/tabview]]
+@@ @@
+> これは引用ブロックです。各行の先頭に「> 」を置くことで作成できます。
+>
+> 続きのテキスト
+> -----
+> これが水平罫線です
+>
+>> 入れ子の引用ブロック
+
+||~ これが ||~ テーブルです ||
+||作り方は || もう ||
+||||ご存じでしょう ||
+
+[[footnoteblock]]
+@@ @@
+@@ @@
+
+[[=]]
++ Eventyrロゴの選択肢
+@@ @@
+[[div class="blockquote"]]
+ヘッダーロゴには複数の選択肢があります。ベース（レインボー）、アロマンティック、アセクシュアル、バイセクシュアル、ゲイ、レズビアン、ノンバイナリー、パンセクシュアル、トランスジェンダーの各旗をあしらったものがあります。変更するには、@@[[module css]]@@ に次の1行を含めてください:
+[[div class="code"]]
+   @@[[module CSS]]@@
+   @@:root{--logo-image: var(--eventyr-base);}@@
+   @@[[/module]]@@
+[[/div]]
+@@'--eventyr-base'@@ を以下のいずれかに置き換えてください:
+[[collapsible show="+ ロゴの選択肢" hide="- 閉じる"]]
+|| ベース || [[image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-logo-base.png]]|| @@--eventyr-base@@ ||
+|| ベース（レインボー） || [[image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-logo-base.png]] || @@--eventyr-base@@ ||
+|| アロマンティック || [[image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-logo-aro.png]] || @@--eventyr-aro@@ ||
+|| アセクシュアル || [[image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-logo-ace.png]] || @@--eventyr-ace@@ ||
+|| バイセクシュアル || [[image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-logo-bi.png]] || @@--eventyr-bi@@ ||
+|| ゲイ || [[image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-logo-gay.png]] || @@--eventyr-gay@@ ||
+|| レズビアン || [[image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-logo-lesbian.png]] || @@--eventyr-lesbian@@ ||
+|| ノンバイナリー || [[image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-logo-nb.png]] || @@--eventyr-nonbinary@@ ||
+|| パンセクシュアル || [[image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-logo-pan.png]] || @@--eventyr-pan@@ ||
+|| トランスジェンダー || [[image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-logo-trans.png]] || @@--eventyr-trans@@ ||
+|| アジェンダー || [[image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-logo-agender.png]] || @@--eventyr-agender@@ ||
+|| デミセクシュアル || [[image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-logo-demi.png]] || @@--eventyr-demisexual@@ ||
+|| ジェンダーフルイド || [[image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-logo-genderfluid.png]] || @@--eventyr-genderfluid@@ ||
+|| ジェンダークィア || [[image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-logo-genderqueer.png]] || @@--eventyr-genderqueer@@ ||
+|| インターセックス || [[image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-logo-intersex.png]] || @@--eventyr-intersex@@ ||
+|| LGBTQ || [[image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-logo-lgbtq.png]] || @@--eventyr-lgbtq@@ ||
+|| ポリアモリー || [[image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-logo-polyamorous.png]] || @@--eventyr-polyamorous@@ ||
+|| ポリセクシュアル || [[image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-logo-polysexual.png]] || @@--eventyr-polysexual@@ ||
+[[/collapsible]]
+[[/div]]
+@@ @@
++ Eventyrのdiv
+@@ @@
+
++ HCA: 絵本風の引用ブロック
+{{storybook-hca}} divを使います
+[[/=]]
+
+[[div class="storybook-hca"]]
+Vort Jordliv her er Evighedens Frø
+-----
+Our life here on earth is the seed of eternity.
+[[/div]]
+@@ @@
+[[=]]
+
++ タイプライター風の引用ブロック
+{{eventypewriter}} divを使います
+[[/=]]
+
+[[div class="eventypewriter"]]
+Vort Jordliv her er Evighedens Frø
+-----
+Our life here on earth is the seed of eternity.
+[[/div]]
+@@ @@
+[[=]]
+{{eventypewriter-left}} divを使います
+[[/=]]
+
+[[div class="eventypewriter-left"]]
+Vort Jordliv her
+-----
+Our life here on earth
+[[/div]]
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+
+[[=]]
+
+{{eventypewriter-right}} divを使います
+[[/=]]
+
+[[div class="eventypewriter-right"]]
+er Evighedens Frø
+-----
+is the seed of eternity.
+[[/div]]
+@@ @@
+[[=]]
+@@ @@
+@@ @@
+@@ @@
+{{evenflowery}} divを使います
+[[div class="evenflowery"]]
+Vort Jordliv her er Evighedens Frø
+
+Our life here on earth is the seed of eternity.
+[[/div]]
+[[/=]]
+@@ @@
+
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+[[=]]
+
++ HCA: EVENTYRの区切り飾り
+{{eventyr-butterfly-div}} divを使います
+[[div class="eventyr-butterfly-div"]]
+[[/div]]
+@@ @@
+{{eventyr-hr}} divを使います
+[[div class="eventyr-hr"]]
+[[/div]]
+@@ @@
+{{eventyr-hr-short}} divを使います
+[[div class="eventyr-hr-short"]]
+[[/div]]
+[[/=]]
+@@ @@
+
+
+[[=]]
++ HCA: EVENTYRのタイトル
+Lavishly Yoursフォントを使います
+{{eventyr-title}} divを使います
+[[/=]]
+
+[[div class="eventyr-title"]]
+Vort Jordliv her er Evighedens Frø
+[[/div]]
+
+@@ @@
+@@ @@
+
++ ソースコード
+
+@@ @@
+
+[[collapsible show="> コードを表示" hide="> コードを閉じる"]]
+[[code type="css"]]
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css");
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css");
+
+/* Eventyr Theme — ported for SCP-JP (theme:eventyr rev 79) */
+
+@import url('https://fonts.googleapis.com/css2?family=Cutive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+
+/* 日本語フォント (JP localization) */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
+
+:root {
+    /* ===S-CSS-P INTEGRATION=== */
+    --theme-base: "black-highlighter";
+    --theme-id: "eventyr-theme";
+    --theme-name: "Eventyr Theme";
+
+    /* ===HEADER ELEMENTS=== */
+   --logo-image: var(--eventyr-base);
+    --header-title: "Eventyr";
+    --header-subtitle: "The cycle continues, set to a new tune";
+
+    /* === Header Logo Options === */
+    --eventyr-base: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-logo-base.png);
+    --eventyr-aro: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-logo-aro.png);
+    --eventyr-ace: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-logo-ace.png);
+    --eventyr-bi: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-logo-bi.png);
+    --eventyr-gay: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-logo-gay.png);
+    --eventyr-lesbian: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-logo-lesbian.png);
+    --eventyr-nonbinary: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-logo-nb.png);
+    --eventyr-pan: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-logo-pan.png);
+    --eventyr-trans: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-logo-trans.png);
+    --eventyr-agender: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-logo-agender.png);
+    --eventyr-demisexual: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-logo-demi.png);
+    --eventyr-genderfluid: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-logo-genderfluid.png);
+    --eventyr-genderqueer: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-logo-genderqueer.png);
+    --eventyr-intersex: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-logo-intersex.png);
+    --eventyr-lgbtq: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-logo-lgbtq.png);
+    --eventyr-polyamorous: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-logo-polyamorous.png);
+    --eventyr-polysexual: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-logo-polysexual.png);
+
+
+
+
+    /* ===Fonts=== */
+    --UI-font: Cutive, "Noto Serif JP", serif;
+    --header-font: Lavishly Yours, "Noto Serif JP", serif;
+    --title-font: Cutive, "Noto Serif JP", serif;
+    --mono-font: Recursive, "Noto Sans JP", monospace;
+
+    /* ===LIGHT BROWNS=== */
+    --off-white: 253, 252, 251;
+    --yet-unwritten: 227, 219, 174;
+    --wooden-floor: 202, 182, 153;
+    --writing-pages: 190, 163, 99;
+    --book-binding: 237, 230, 220;
+    --writing-desk: 161, 145, 122;
+
+    /* ===DARKS=== */
+    --writing-ink: 96, 66, 48;
+    --the-void: 12, 12, 12;
+
+    /* ===GREENS=== */
+    --study-wall: 42, 55, 37;
+    --curtains: 201, 214, 195;
+
+    /* ===ACCENTS=== */
+    --hca-purple: 93, 15, 135;
+    --bronze-ornament: 179, 122, 18;
+
+    /* ===THEME ASSIGNMENTS=== */
+    /* white */
+    --white-monochrome: var(--off-white);
+    /* v light gray for blockquotes and stuff */
+    --pale-gray-monochrome: var(--book-binding);
+    /* very light pale gray for misc. use */
+    --light-pale-gray-monochrome: 244, 244, 244;
+    /* very light accent gray for misc. use */
+    --very-light-gray-monochrome: 215, 215, 215;
+    /* light accent gray for login status */
+    --light-gray-monochrome: var(--study-wall);
+    /* gray */
+    --gray-monochrome: var(--study-wall);
+    /* dark accent gray for sidebar background */
+    --dark-gray-monochrome: var(--curtains);
+    /* black */
+    --black-monochrome: var(--the-void);
+
+    /* subdued theme color */
+    --pale-accent: var(--writing-desk);
+    /* vivid theme color the "default" accent color */
+    --bright-accent: var(--writing-pages);
+    /* theme color */
+    --medium-accent: var(--wooden-floor);
+    /* darker theme color */
+    --dark-accent: var(--writing-ink);
+    /* alternate accent color for newpage links */
+    --alt-accent: var(--bronze-ornament);
+
+    /* ===GENERAL COLORS=== */
+    --swatch-border-color: var(--writing-ink);
+
+    /* ===MENU COLORS=== */
+    /* ===MENU BACKGROUND COLORS=== */
+    --swatch-menubg-dark-color: var(--light-gray-monochrome);
+    --swatch-menubg-black-color: var(--light-gray-monochrome);
+
+
+
+    /* ===HEADER TITLE FONT SIZES=== */
+    --header-h1-font-size: calc(var(--base-font-size) * (120 / 45));
+    --header-h2-font-size: var(--base-font-size);
+
+    /* ===OVERALL PAGE BACKGROUND COLOUR=== */
+    --swatch-background: var(--white-monochrome);
+
+    /* ===BACKGROUND GRADIENT=== */
+    /* Subtle gradient that begins just below the top-bar and header */
+    --background-gradient-color: var(--yet-unwritten);
+    --background-gradient-distance: 40rem;
+
+    /* ===LINK COLOURS=== */
+        --link-color: var(--alt-accent);
+        --visited-link-color: var(--hca-purple);
+        --hover-link-color: var(--hca-purple);
+        --newpage-color: 221, 102, 17;
+
+        --header-background-image-size: 100% var(--header-height-on-desktop);
+        --header-height-on-desktop: 12.25rem;
+        --header-height-on-mobile: 12.25rem;
+        --topbar-height-on-mobile: 2.5rem;
+}
+
+#header {
+    /* ===HEADER ELEMENTS=== */
+    /* ===HEADER TITLES=== */
+    /* Header H1 and H2 colors */
+    --swatch-headerh1-color: var(--dark-accent);
+    --swatch-headerh2-color: var(--dark-accent);
+    background-position: center top;
+    background-size:180px;
+
+    /* ===LOGIN BOX ELEMENT=== */
+    --login-line-divider-color: var(--study-wall);
+    --login-username-color: var(--study-wall);
+    --login-myaccount-color: var(--study-wall);
+    --login-myaccount-hover-color: var(--login-myaccount-color);
+    --login-arrow-color: var(--study-wall);
+
+    /* Dropdown Box when arrow is clicked */
+    --login-dropdown-bg-color: var(--study-wall);
+    --login-dropdown-bg-image: var(--study-wall);
+
+    /* ===SEARCH ELEMENT=== */
+    --search-icon-color: var(--study-wall);
+}
+
+#header h1 a, #header h1 a::before, #header h2 span, #header h2 span::before {
+    filter:drop-shadow(0px 0px 1px white);
+}
+
+
+#side-bar,
+#interwiki {
+    /* ===SIDE-BAR ELEMENTS=== */
+
+    /* ===SIDE-BAR GENERAL=== */
+    --sidebar-bg-color: var(--study-wall);
+    --sidebar-resources-bg-color: var(--curtains), 0.25;
+    --sidebar-media-bg-color: var(--curtains), 0.125;
+
+    --social-icon-hover-color: var(--swatch-primary);
+
+    /* ===SIDEBLOCK MENU=== */
+    --sideblock-bg-color: 0, 0, 0, 0; /* Transparent */
+    --sideblock-heading-border-color: var(--swatch-primary);
+    --sideblock-heading-bg-color: 0, 0, 0, 0; /* Transparent */
+    --sideblock-heading-text-color: var(--alt-accent);
+
+    /* ===MENU-ITEMS=== */
+    --sidebar-border-color: var(--yet-unwritten), 0.08;
+    --sidebar-subtext-color: var(--yet-unwritten);
+
+    --sidebar-links-text: var(--curtains);
+    --sidebar-links-bg-color: 0, 0, 0, 0; /* Transparent */
+    --sidebar-links-hover-bg-color: var(--swatch-primary);
+    --sidebar-links-hover-text-color: var(--swatch-text-secondary-color);
+
+    /* ===SIDEBAR COLLAPSIBLES=== */
+    /* Folded Colors */
+    --sidebar-collapsible-fld-link-bg: var(--swatch-primary-darker), 0.25;
+    --sidebar-collapsible-fld-link-color: var(--sideblock-heading-text-color);
+    --sidebar-collapsible-fld-link-hover-bg: var(--swatch-primary-darker);
+    --sidebar-collapsible-fld-link-hover-color: var(--swatch-text-secondary-color);
+    --sidebar-collapsible-fld-arrow-color: var(--swatch-text-tertiary-color);
+    --sidebar-collapsible-fld-arrow-hover-color: var(--swatch-text-secondary-color);
+
+    /* Unfolded Colors */
+    --sidebar-collapsible-ufld-link-bg: var(--sidebar-collapsible-fld-link-bg);
+    --sidebar-collapsible-ufld-link-color: var(--sideblock-heading-text-color);
+    --sidebar-collapsible-ufld-link-hover-bg: var(--swatch-primary);
+    --sidebar-collapsible-ufld-link-hover-color: var(--sidebar-collapsible-fld-link-hover-color);
+    --sidebar-collapsible-ufld-arrow-color: var(--sidebar-collapsible-fld-arrow-color);
+    --sidebar-collapsible-ufld-arrow-hover-color: var(--sidebar-collapsible-fld-arrow-hover-color);
+
+    /* Unfolded Body Colors */
+    --sidebar-collapsible-body-bg: var(--swatch-primary), 0.125;
+    --sidebar-collapsible-link-color: var(--sidebar-links-text);
+    --sidebar-collapsible-link-hover-bg: var(--sidebar-links-hover-bg-color);
+    --sidebar-collapsible-link-hover-color: var(--sidebar-links-hover-text-color);
+}
+
+#main-content {
+    /* ===TABLES=== */
+    --tables-header-bg: var(--writing-pages);
+}
+
+/* Center Header */
+#header h1, #header h2 {
+   width: 100%;
+}
+
+#header h1 a, #header h1 a::before, #header h2 span, #header h2 span::before {
+   display: block;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+#skrollr-body {
+  background-image: none;
+}
+
+:root {
+  --header-h1-font-size: 4rem;
+  --gradient-header: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-top-banner.png);
+  --header-background-image-size: auto var(--header-height-on-desktop);
+  background-position-x: center;
+}
+
+body {
+  background-position-x: center;
+}
+#footer {
+    position: relative;
+    background-color: transparent;
+    color: rgb(var(--dark-accent));
+    margin-top: 100px !important;
+    overflow: unset;
+    isolation: isolate;
+   --footer-link-color: var(--writing-ink);
+   --footer-link-hover-color: var(--writing-ink);
+}
+
+#footer .options a {
+    color: rgb(var(--dark-accent));
+    width: auto;
+    background-repeat: repeat-x;
+    background-size: inherit;
+}
+
+#footer::before {
+  position: absolute;
+  z-index: auto;
+
+  min-height: 100px;
+  content: "Vort Jordliv her er Evighedens Frø";
+  color: var(--writing-ink);
+  font-size: 3rem;
+  text-align: center;
+  font-family: Lavishly Yours, "Noto Serif JP", serif;
+  line-height: calc(1rem + 13.25vw); /* Same as the height */
+    bottom: 0; left: 0;
+    height: calc(1rem + 13.25vw); width: 100%;
+    background-image: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-footer-banner.png');
+    background-size: cover;
+    background-position: center top;
+    pointer-events: none;
+}
+
+@media only screen and (max-width: 56.25rem) {
+  :root {
+    --gradient-header: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-mobile-banner.png);
+  }
+   #footer::before {
+      font-size: 1.5rem;
+  content: "Evighedens Frø";
+   }
+#footer {
+    margin-top: 40px !important;}
+}
+
+/* VOTING BOX MARGIN CORRECTION */
+.number{
+margin-top:3px;
+}
+
+/* CUSTOM DIVS */
+
+.storybook-hca {
+     font-family: Philosopher, "Noto Serif JP", cursive;
+     background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-paper.png);
+     padding: 15px;
+     font-size: 105%;
+     border: 2px solid #5d0f87;
+}
+
+.eventypewriter{
+     font-family: Cutive, "Noto Serif JP", serif;
+     background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-paper.png);
+     padding: 15px;
+     font-size: 90%;
+     border: 2px solid #5d0f87;
+}
+
+.eventypewriter-left{
+     font-family: Cutive, "Noto Serif JP", serif;
+     background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-paper.png);
+     padding: 15px;
+     font-size: 80%;
+     float: left;  
+     width: 40%;
+     border: 2px solid #5d0f87;
+     margin: 20px;
+}
+
+.eventypewriter-right{
+     font-family: Cutive, "Noto Serif JP", serif;
+     background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-paper.png);
+     padding: 15px;
+     font-size: 80%;
+     float: right;  
+     width: 40%;
+     border: 2px solid #5d0f87;
+     margin: 20px;
+}
+
+.eventyr-title{
+     font-family: var(--header-font), cursive;
+     padding: 5px;
+     font-size: 300%;
+     text-align: center;
+     color: var(--writing-ink);
+}
+
+.eventyr-butterfly-div{
+    min-height: 200px;
+    background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-butterfly-divider.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.eventyr-hr{
+    min-height: 6em;
+    background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-hr.png);
+    background-size: cover;
+@media only screen and (max-width: 600px) {
+    background-size: contain;
+}
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.eventyr-hr-short{
+    min-height: 6em;
+    background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-hr-short.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.evenflowery{
+    background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-flowery-top.png), url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aeventyr-jp/eventyr-flowery-bottom.png);
+    background-repeat: no-repeat;
+    background-size: 24%;
+    background-position: top left, 102% 110%;
+    padding: 1em 1em 1em 2em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+[[/code]]
+[[/collapsible]]
+
+@@ @@
+
+[[include :scp-jp:component:license-box-backend
+|author=FlyPurgatorio]]
+
+このテーマは[[*user FlyPurgatorio]]が、[[*user Queerious]]、[[*user Fish^12]]、[[*user Uncle Nicolini]]の協力を得て作成しました。
+
+> **ファイル名:** eventyr-logo-base.png（原語版: Eventyr SCP Logo）
+> **作者:** [[*user FlyPurgatorio]]
+> **ライセンス:** [https://creativecommons.org/licenses/by-sa/3.0/deed.ja CC BY-SA 3.0]
+> **出典:** 作者自身の制作物（原語版クレジット）
+
+> **ファイル名:** eventyr-logo-aro.png（原語版: Eventyr SCP Logo Aro）
+> **作者:** [[*user FlyPurgatorio]]
+> **ライセンス:** [https://creativecommons.org/licenses/by-sa/3.0/deed.ja CC BY-SA 3.0]
+> **出典:** 作者自身の制作物（原語版クレジット）
+
+> **ファイル名:** eventyr-logo-ace.png（原語版: Eventyr SCP Logo Ace）
+> **作者:** [[*user FlyPurgatorio]]
+> **ライセンス:** [https://creativecommons.org/licenses/by-sa/3.0/deed.ja CC BY-SA 3.0]
+> **出典:** 作者自身の制作物（原語版クレジット）
+
+> **ファイル名:** eventyr-logo-bi.png（原語版: Eventyr SCP Logo Bi）
+> **作者:** [[*user FlyPurgatorio]]
+> **ライセンス:** [https://creativecommons.org/licenses/by-sa/3.0/deed.ja CC BY-SA 3.0]
+> **出典:** 作者自身の制作物（原語版クレジット）
+
+> **ファイル名:** eventyr-logo-gay.png（原語版: Eventyr SCP Logo Gay）
+> **作者:** [[*user FlyPurgatorio]]
+> **ライセンス:** [https://creativecommons.org/licenses/by-sa/3.0/deed.ja CC BY-SA 3.0]
+> **出典:** 作者自身の制作物（原語版クレジット）
+
+> **ファイル名:** eventyr-logo-lesbian.png（原語版: Eventyr SCP Logo Lesbian）
+> **作者:** [[*user FlyPurgatorio]]
+> **ライセンス:** [https://creativecommons.org/licenses/by-sa/3.0/deed.ja CC BY-SA 3.0]
+> **出典:** 作者自身の制作物（原語版クレジット）
+
+> **ファイル名:** eventyr-logo-nb.png（原語版: Eventyr SCP Logo NB）
+> **作者:** [[*user FlyPurgatorio]]
+> **ライセンス:** [https://creativecommons.org/licenses/by-sa/3.0/deed.ja CC BY-SA 3.0]
+> **出典:** 作者自身の制作物（原語版クレジット）
+
+> **ファイル名:** eventyr-logo-pan.png（原語版: Eventyr SCP Logo Pan）
+> **作者:** [[*user FlyPurgatorio]]
+> **ライセンス:** [https://creativecommons.org/licenses/by-sa/3.0/deed.ja CC BY-SA 3.0]
+> **出典:** 作者自身の制作物（原語版クレジット）
+
+> **ファイル名:** eventyr-logo-trans.png（原語版: Eventyr SCP Logo Trans）
+> **作者:** [[*user FlyPurgatorio]]
+> **ライセンス:** [https://creativecommons.org/licenses/by-sa/3.0/deed.ja CC BY-SA 3.0]
+> **出典:** 作者自身の制作物（原語版クレジット）
+
+> **ファイル名:** eventyr-logo-agender.png（原語版: Eventyr SCP Logo Agender）
+> **作者:** [[*user FlyPurgatorio]]
+> **ライセンス:** [https://creativecommons.org/licenses/by-sa/3.0/deed.ja CC BY-SA 3.0]
+> **出典:** 作者自身の制作物（原語版クレジット）
+
+> **ファイル名:** eventyr-logo-demi.png（原語版: Eventyr SCP Logo Demi）
+> **作者:** [[*user FlyPurgatorio]]
+> **ライセンス:** [https://creativecommons.org/licenses/by-sa/3.0/deed.ja CC BY-SA 3.0]
+> **出典:** 作者自身の制作物（原語版クレジット）
+
+> **ファイル名:** eventyr-logo-genderfluid.png（原語版: Eventyr SCP Logo Genderfluid）
+> **作者:** [[*user FlyPurgatorio]]
+> **ライセンス:** [https://creativecommons.org/licenses/by-sa/3.0/deed.ja CC BY-SA 3.0]
+> **出典:** 作者自身の制作物（原語版クレジット）
+
+> **ファイル名:** eventyr-logo-genderqueer.png（原語版: Eventyr SCP Logo Genderqueer）
+> **作者:** [[*user FlyPurgatorio]]
+> **ライセンス:** [https://creativecommons.org/licenses/by-sa/3.0/deed.ja CC BY-SA 3.0]
+> **出典:** 作者自身の制作物（原語版クレジット）
+
+> **ファイル名:** eventyr-logo-intersex.png（原語版: Eventyr SCP Logo Intersex）
+> **作者:** [[*user FlyPurgatorio]]
+> **ライセンス:** [https://creativecommons.org/licenses/by-sa/3.0/deed.ja CC BY-SA 3.0]
+> **出典:** 作者自身の制作物（原語版クレジット）
+
+> **ファイル名:** eventyr-logo-lgbtq.png（原語版: Eventyr SCP Logo LGBTQ）
+> **作者:** [[*user FlyPurgatorio]]
+> **ライセンス:** [https://creativecommons.org/licenses/by-sa/3.0/deed.ja CC BY-SA 3.0]
+> **出典:** 作者自身の制作物（原語版クレジット）
+
+> **ファイル名:** eventyr-logo-polyamorous.png（原語版: Eventyr SCP Logo Polyamorous）
+> **作者:** [[*user FlyPurgatorio]]
+> **ライセンス:** [https://creativecommons.org/licenses/by-sa/3.0/deed.ja CC BY-SA 3.0]
+> **出典:** 作者自身の制作物（原語版クレジット）
+
+> **ファイル名:** eventyr-logo-polysexual.png（原語版: Eventyr SCP Logo Polysexual）
+> **作者:** [[*user FlyPurgatorio]]
+> **ライセンス:** [https://creativecommons.org/licenses/by-sa/3.0/deed.ja CC BY-SA 3.0]
+> **出典:** 作者自身の制作物（原語版クレジット）
+
+> **ファイル名:** eventyr-top-banner.png, eventyr-mobile-banner.png, eventyr-footer-banner.png
+> **作者:** [[*user FlyPurgatorio]]
+> **ライセンス:** [https://creativecommons.org/licenses/by-sa/3.0/deed.ja CC BY-SA 3.0]
+> **出典:** 作者自身の制作物。以下の派生物です。
+
+> **ファイル名:** Hans Christian Andersen Dagbog 1831.jpg
+> **作者:** デンマーク王立図書館
+> **ライセンス:** [https://creativecommons.org/licenses/by-sa/3.0/deed.ja CC BY-SA 3.0]
+> **出典:** [https://commons.wikimedia.org/wiki/File:Hans_Christian_Andersen_Dagbog_1831.jpg Wikimedia Commons]
+
+> **ファイル名:** eventyr-paper.png（原語版: Paper effect）
+> **作者:** [[*user sailorenoch]]
+> **ライセンス:** [https://creativecommons.org/licenses/by-sa/3.0/deed.ja CC BY-SA 3.0]
+> **出典:** 作者自身の制作物
+> **補足:** 絵本風・タイプライター風divの背景に使用
+
+> **ファイル名:** eventyr-flowery-top.png, eventyr-flowery-bottom.png（原語版: Flowerytop / Flowerybottom）
+> **作者:** [[*user FlyPurgatorio]]
+> **ライセンス:** [https://creativecommons.org/licenses/by-sa/3.0/deed.ja CC BY-SA 3.0]
+> **出典:** 作者自身の制作物。L'Image cover 02 Auriol.png の派生物（パブリックドメイン、フランス国立図書館）
+
+> **ファイル名:** eventyr-hr.png, eventyr-hr-short.png, eventyr-butterfly-divider.png
+> **作者:** [[*user FlyPurgatorio]]（butterfly-divider の原案は [[*user sailorenoch]] の Eventyr Wing）
+> **ライセンス:** [https://creativecommons.org/licenses/by-sa/3.0/deed.ja CC BY-SA 3.0]
+> **出典:** 作者自身の制作物
+
+> **引用:** Vort Jordliv her er Evighedens Frø / Our life here on earth is the seed of Eternity
+> **名称:** Oldingen（詩）
+> **作者:** ハンス・クリスチャン・アンデルセン（原作）、[[*user FlyPurgatorio]]（英訳）
+> **ライセンス:** パブリックドメイン
+> **補足:** デンマーク語の一節はアンデルセンの墓碑にも刻まれています。
+
+> **フォント:** Cutive / Lavishly Yours / Philosopher
+> **ライセンス:** SIL Open Font License（Google Fonts から配信）
+
+[[include :scp-jp:component:license-box-end]]
+
+[[/iftags]]

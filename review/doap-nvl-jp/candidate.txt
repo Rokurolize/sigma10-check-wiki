@@ -1,0 +1,379 @@
+[[module CSS]]
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Adoap-nvl-jp/1');
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Anavla-style-jp/1
+]]
+[[include :scp-jp:component:interwiki-style
+| priority=2
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/component%3Anavla-jp/1
+]]
+[[include :scp-jp:component:interwiki-style
+| priority=3
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Adoap-nvl-jp/1
+]]
+
+[[iftags +テーマ]]
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** 分析心理学部ブラックハイライターテーマ
+**翻訳責任者:** AI
+**翻訳年:** 2026
+**原題:** 분석심리학부 블랙하이라이터 테마
+**著作権者:** [[*user Navla]]
+**作成年:** 2023
+**初訳時参照リビジョン:** 35
+**元記事リンク:** [*https://scpko.wikidot.com/theme:doap-nvl 분석심리학부 블랙하이라이터 테마]
+[[include :scp-jp:credit:end-preview]]
+
+これは[[[https://scpko.wikidot.com/theme:navla-style|Navlaスタイル（韓国語版）]]]テーマを基にした、[[[https://scpko.wikidot.com/department-of-analytical-psychology|分析心理学部（韓国語版）]]]専用テーマです。ロゴとパターンはいずれも[[*user Navla]]が制作しました。
+以前に[[[theme:doap-bhl-jp|]]]を作成していましたが、より軽く、エラーが少なく、互換性の心配がいらないバージョンとして別に作りました。
+
+このテーマはときどき少しずつ更新されます。大きなレイアウト変更は予定していないので、安心してご利用ください。
+
+> 移植注記: Navlaスタイル（theme:navla-style）は theme:navla-style-jp を include で読み込み、その中で component:navla（component:navla-jp）も include で読み込みます。詳しくは末尾のライセンス表記を参照してください。
+
++ 使い方
+このテーマを使用するには、下記のコードを作品に貼り付けてください。
+> @@[[include :scp-jp:theme:doap-nvl-jp]]@@
+
+このテーマはNavlaスタイルテーマを基にしています。そのため、このテーマ内でも同テーマとNavlaコンポーネントの要素を使用できます。
+
+[[include component:image-block
+| name=https://sigma10-jp-test.wdfiles.com/local--files/theme%3Adoap-bhl-jp/DoAP_Black.png
+| caption=画像ブロック
+| width=200px]]
+
++ 使用例
+水平線はハイフン5つ「@@-----@@」を入力すると作成でき、引用ブロックなどの中に置かれていない場合はページ全体を横切ります。このページでセクションを分けている線はすべてこの水平線です。
+
+いちばん外側に置かれた水平線には、このように見栄えのする太陽十字シンボルが刻まれて表示されます。折りたたみや引用文など、何らかの構文の内側に入ると、水平線は通常の書式に戻ります。
+
+-----
+
+見出しは、行頭に「+」を1個から6個まで入力すると適用できます。
+
+[[collapsible show="見出し一覧" hide="閉じる"]]
++ 見出しレベル1
+
+++ 見出しレベル2
+
++++ 見出しレベル3
+
+++++ 見出しレベル4
+
++++++ 見出しレベル5
+
+++++++ 見出しレベル6
+
+----
+ご覧のとおり、先ほど述べたように水平線は元の見た目に戻りました。
+[[/collapsible]]
+
+@@ @@
+
+[[tabview]]
+[[tab タブビュー]]
+タブビューです。
+[[/tab]]
+[[tab タブビュー]]
+ほら、文字がもう少しあります。
+
+すごいでしょう。
+[[/tab]]
+[[tab 長いタブ]]
+長いタブです。文字がたくさん入ります。
+
+長いタブです。文字がたくさん入ります。
+
+長いタブです。文字がたくさん入ります。
+
+長いタブです。文字がたくさん入ります。
+
+長いタブです。文字がたくさん入ります。
+
+長いタブです。文字がたくさん入ります。
+
+長いタブです。文字がたくさん入ります。
+
+長いタブです。文字がたくさん入ります。
+
+長いタブです。文字がたくさん入ります。
+
+長いタブです。文字がたくさん入ります。
+
+長いタブです。文字がたくさん入ります。
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+今日、勝利の女神は私にだけ口づける
+[[/tab]]
+[[/tabview]]
+
+> これは引用文です。各行の先頭に「>」を入れると機能します。
+>
+> 文字
+> -----
+> 区切り線
+>
+>> 二重引用
+>>> 三重引用[[footnote]]そしてこれは脚注です！[[/footnote]]
+
+||~ これは ||~ 表 ||
+|| 作り方は || もうご存じの ||
+|||| はずです ||
+
++ クラス
+分析心理学部の記事を書くときに便利な書式を、いくつかあらかじめ入れてあります。
+
++++ 分析心理学部テキストボックス
+[[div class="code"]]
+@@[[div class="box img"]]@@
+ここに内容を入力
+@@[[/div]]@@
+[[/div]]
+
+[[div class="box img"]]
+ボックスはこのような見た目です。
+背後の背景が見えますか？このように、分析心理学部のロゴが背景に敷かれます。
+分析心理学部のロゴは、人間の精神における4つの外的機能を形にしたものです。
+[[/div]]
+
++++ レッドブックテキストボックス
+[[div class="code"]]
+@@[[div class="redbook"]]@@
+ここに内容を入力
+@@[[/div]]@@
+[[/div]]
+
+[[div class="redbook"]]
+ボックスはこのような見た目です。
+背後の背景が見えますか？このように、特定のパターンが背景に敷かれます。
+
+このパターンは、カール・ユングの著書『赤の書』に収められた挿絵をモチーフにしています。
+彼の挿絵には、このような独特のパターンがよく使われます。
+[[/div]]
+
++++ 太陽十字ヘッダー
+分析心理学部の重要なシンボルである太陽十字を、簡単に呼び出せるコードです。
+[[div class="code"]]
+@@[[span class="suncross"]]ここに内容を入力[[/span]]@@
+[[/div]]
+
+こうすると、テキストの前に太陽十字シンボルが付いたヘッダーが出力されます。
+
+> [[span class="suncross"]]このように表示されます。[[/span]]
+> サイズは見出しレベル3と同じです。
+
++++ マンダラ
+[[div class="code"]]
+@@[[div class="mandala-box"]]@@
+ここに内容を入力
+@@[[/div]]@@
+[[/div]]
+
+[[div class="mandala-box"]]
+カール・ユングが自ら描いたマンダラ画像を含むテキストボックスです。
+
+カール・ユングは、マンダラとは私たちの精神の地図そのものだと考えていました。
+そのため彼は、患者にマンダラを描かせ、精神疾患の診断に用いることもありました。
+
+この画像のアドレスは@@https://sigma10-jp-test.wdfiles.com/local--files/theme%3Adoap-bhl-jp/mandala.png@@です。
+[[/div]]
+
++ ソースコード
+[[collapsible show="+ コードを表示" hide="- コードを隠す" hideLocation="both"]]
+[[code type="css"]]
+/* ========< doap-nvl overlay (theme:doap-nvl rev 35) >======== */
+:root {
+    --header-txt-color: 240, 240, 240;
+    --logo-image: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Adoap-bhl-jp/DoAP-blackline.png');
+    --theme-color: 168, 42, 67;
+    --theme-color-dark: 107, 16, 36;
+    --bg-color: 252, 249, 250;
+    --header-title: "分析心理学部";
+    --header-subtitle: "思考、感情、感覚、直観";
+    --title-outline:block;
+    --clrd: 1;
+    --suncross: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(107,16,36)' viewBox='0 0 100 100'%3E%3Cpath d='M929.21,506a50,50,0,1,0,50,50A50,50,0,0,0,929.21,506Zm33,42h-25v-25A34.12,34.12,0,0,1,962.25,548Zm-41-25v25h-25A34.11,34.11,0,0,1,921.21,522.93Zm-25,41h25v25A34.08,34.08,0,0,1,896.17,564Zm41,25V564h25A34.11,34.11,0,0,1,937.21,589Z' transform='translate(-879.21 -505.97)'/%3E%3C/svg%3E");
+}
+div#header-extra-div-1 {
+    opacity: 0.8;
+}
+div#header-extra-div-2 {
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.3)), repeating-linear-gradient(45deg, hsla(0,0%,100%,0), hsla(0,0%,100%,0) 0.5vh, rgba(88,88,88,.1) 0.7vh, rgba(88,88,88,.2) 1vh), url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Adoap-bhl-jp/rdbk_black.png), linear-gradient(171deg, rgb(168, 42, 67) 0%, rgb(18, 0, 5) 100%), linear-gradient(45deg, black, transparent);
+    box-shadow: 0 0 200px rgba(var(--theme-color),0.15);
+}
+div#header-extra-div-3 {
+    background: rgb(50 50 50);
+    outline: solid 1.5px rgb(20 20 20);
+}
+div#extra-div-4 {
+    background: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Adoap-bhl-jp/rdbk.png);
+    opacity: 0.2;
+}
+div#extra-div-5 {
+    background: linear-gradient(transparent 0%,rgb(var(--bg-color)) 15%, rgb(var(--bg-color)) 85%, transparent 100%);
+}
+.img {
+     --img: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Adoap-bhl-jp/DoAP_Black.png);
+}
+
+#page-content>hr {
+    border: none;
+    background-image: var(--suncross);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 25px;
+    margin: 2em 0;
+    display: flex;
+}
+#page-content>hr:before {
+    content: "";
+    background: linear-gradient(90deg, transparent, rgb(var(--theme-color)));
+    display: block;
+    height: 3px;
+    width: 45%;
+    margin: 11px auto 11px 1em;
+    z-index: -1;
+}
+#page-content>hr:after {
+    content:"";
+    background: linear-gradient(90deg, rgb(var(--theme-color)), transparent);
+    display: block;
+    height: 3px;
+    width: 45%;
+    margin: 11px 1em 11px auto;
+    z-index: -1;
+}
+
+.redbook {
+    background: linear-gradient(rgba(255,255,255,.78), white 100px, white calc(100% - 100px), rgba(255,255,255,.78)), url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Adoap-bhl-jp/rdbk.png) repeat 30% top;
+  border: solid 2px #000; 
+  padding: 5px 15px; 
+  box-shadow: 2px 3px 5px rgb(0 0 0 / 30%);
+  margin: 2em 1em;
+}
+ 
+/* Ꚛ Vocatus atque non vocatus deus aderit Ꚛ */
+.suncross {
+    line-height: 1.4;
+    font-family: var(--title-font);
+    font-size: 1.5375em;
+    font-weight: 700;
+    margin: 0 0 .5em;
+    background: linear-gradient(transparent 60%, rgba(var(--theme-color),.1) 60%, rgba(var(--theme-color),.1) 90%, transparent 90%, transparent 100%);
+    display: inline;
+}
+.suncross:before {
+    content: "";
+    background-color: rgb(var(--theme-color-dark));
+    mask: var(--suncross);
+    -webkit-mask: var(--suncross);
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    background-size: 1em 1em;
+    width: 1em;
+    height: 0.85em;
+    display: inline-block;
+}
+ 
+.mandala-box {
+  background: linear-gradient(white, #ffffffde 100px, #ffffffde calc(100% - 100px), white), url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Adoap-bhl-jp/mandala.png) center no-repeat;
+  background-size: 110%;
+  border: solid 2px #000; 
+  padding: 5px 15px; 
+  box-shadow: 2px 3px 5px rgb(0 0 0 / 30%);
+  margin: 2em 1em;
+}
+@media only screen and (max-width: 768px) {
+.mandala-box {
+  background-size: 300%;
+}
+}
+/*
+#page-content>hr {
+    border: none;
+    mask: var(--suncross);
+    -webkit-mask: var(--suncross);
+    background-color: rgb(var(--theme-color-dark));
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    background-size: 100%;
+    width: 2em;
+    height: 2em;
+}
+#page-content>hr:before {
+    border-image: linear-gradient(90deg,transparent,rgb(var(--theme-color-dark))) 1;
+}
+#page-content>hr:after {
+    border-image: linear-gradient(90deg,rgb(var(--theme-color-dark)),transparent) 1;
+}
+*/
+[[/code]]
+[[/collapsible]]
+
+[[include :scp-jp:component:license-box-backend
+|author=Navla]]
+
+> **ファイル名:** DoAP-blackline.png
+> **作者:** [[*user Navla]]
+> **ライセンス:** CC BY-SA 3.0
+> **出典:** [https://scpko.wdfiles.com/local--files/department-of-analytical-psychology/DoAP-blackline.png SCP-KO]。theme:doap-bhl-jpと共用のファイルです。
+
+> **ファイル名:** DoAP_Black.png
+> **作者:** [[*user Navla]]
+> **ライセンス:** CC BY-SA 3.0
+> **出典:** [https://scpko.wdfiles.com/local--files/department-of-analytical-psychology/DoAP_Black.png SCP-KO]。theme:doap-bhl-jpと共用のファイルです。
+
+> **ファイル名:** rdbk.png
+> **概要:** 背景に使用する反復パターンです。
+> **作者:** [[*user Navla]]
+> **ライセンス:** CC BY-SA 3.0
+> **出典:** Adobe Illustratorで直接制作しています。カール・ユングの『赤の書』の挿絵を参考にし、その様式を模しました。[https://scpko.wdfiles.com/local--files/theme%3Adoap-bhl/rdbk.png SCP-KO]。theme:doap-bhl-jpと共用のファイルです。
+
+> **ファイル名:** rdbk_black.png
+> **概要:** 背景に使用する反復パターンです（黒版）。
+> **作者:** [[*user Navla]]
+> **ライセンス:** CC BY-SA 3.0
+> **出典:** Adobe Illustratorで直接制作しています。カール・ユングの『赤の書』の挿絵を参考にし、その様式を模しました。[https://scpko.wdfiles.com/local--files/theme%3Adoap-bhl/rdbk_black.png SCP-KO]。theme:doap-bhl-jpと共用のファイルです。
+
+> **ファイル名:** mandala.png
+> **作者:** TheCreativePenn
+> **ライセンス:** CC BY 2.0
+> **出典:** [https://wordpress.org/openverse/image/6f44010b-1cf3-42d4-b8bc-21d6b3045dd5 Openverse] / [https://scpko.wdfiles.com/local--files/theme%3Adoap-bhl/mandala.png SCP-KO]。theme:doap-bhl-jpと共用のファイルです。
+
+> **ファイル名:** Cquote1_black.svg
+> **作者:** Rhanyeia（Cuahl作「Cquote1.svg」に基づく改変）
+> **ライセンス:** パブリックドメイン
+> **出典:** [https://commons.wikimedia.org/wiki/File:Cquote1_black.svg Wikimedia Commons]
+
+> **ファイル名:** Navlaスタイル（CSS）
+> **作者:** [[*user Navla]]
+> **ライセンス:** CC BY-SA 3.0
+> **出典:** theme:navla-style-jp（SCP-JP。原語版 theme:navla-style rev 162 準拠）。このページから include で読み込みます。
+
+> **ファイル名:** component:navla（CSS）
+> **作者:** [[*user Navla]]
+> **ライセンス:** CC BY-SA 3.0
+> **出典:** component:navla-jp（SCP-JP。原語版 component:navla rev 119 準拠）。theme:navla-style-jp から include で読み込みます。
+
+[[include :scp-jp:component:license-box-end]]
+
+[[/iftags]]
+[[div style="display: none;"]]
+[[include theme:navla-style-jp tocbox={$tocbox}|help={$help}]]
+[[/div]]
