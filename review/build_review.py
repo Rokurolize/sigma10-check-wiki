@@ -3,10 +3,22 @@
 
 Ownership model follows build_start.py and patterns/build_index.py: a
 package's diff.md is a generated file. The hand-maintained sources of a
-package are original.css (the frozen mirror of the original source) and
-candidate.css (the ported source); diff.md is derived from those two
-and must never be hand-edited. A package is any immediate subdirectory
-of review/ that holds both original.css and candidate.css.
+package are original.<ext> (the frozen mirror of the original source)
+and candidate.<ext> (the ported source); diff.md is derived from those
+two and must never be hand-edited. A package is any immediate
+subdirectory of review/ that holds both original.<ext> and
+candidate.<ext> for one shared extension (.css for site packages,
+.txt for page packages).
+
+Output shape follows the tiered format of the DIFF-PRESENTATION scout
+memo: Tier 1 (at most 400 changed lines and at most 20 hunks) is a
+summary table plus the full unified diff in one fenced block. Tier 2
+(larger) adds a summary header with per-class line counts, a
+change-block index, and the full diff split into <details> sections,
+with purely mechanical sections grouped into one collapsed section at
+the end. Auto-class labels in Tier 2 are heuristic (see classify());
+they are printed as heuristic wherever they appear and never upgrade
+or replace the hand-written explanation in the package README.md.
 
 Usage:
   python3 review/build_review.py           regenerate every diff.md
@@ -16,41 +28,107 @@ Usage:
 """
 import difflib
 import pathlib
+import re
 import sys
 
 HERE = pathlib.Path(__file__).resolve().parent
 
+TIER2_CHANGED_LINES = 400
+TIER2_HUNKS = 20
+
+# Tokens whose substitution does not change what a line does: branch
+# names, the old-BHL host's named rewrite target, and the -jp suffix
+# of a ported slug. Used only by the mechanical auto-class heuristic.
+_MECH_SUBS = [
+    (re.compile(r"scp-wiki-cn|backrooms-wiki-cn"), "scp-jp"),
+    (re.compile(r"nu-scptheme\.github\.io"), "scp-jp.github.io"),
+    (re.compile(r"((?:theme|fragment|component):[a-z0-9][a-z0-9-]*?)-jp\b"),
+     r"\1"),
+]
+_CJK = re.compile(r"[⺀-鿿가-힯＀-￯]")
+_SUPPLEMENT = re.compile(
+    r"credit:(start|end)(-preview)?|interwiki-style|license-box"
+    r"|local--code|@import|start-preview")
+
+
+def package_files(pkg):
+    """Return (original_path, candidate_path) for a package dir."""
+    for orig in sorted(pkg.glob("original.*")):
+        cand = pkg / ("candidate" + orig.suffix)
+        if cand.is_file():
+            return orig, cand
+    return None
+
 
 def packages():
-    return sorted(
-        d for d in HERE.iterdir()
-        if d.is_dir() and (d / "original.css").is_file()
-        and (d / "candidate.css").is_file())
+    found = []
+    for d in sorted(HERE.iterdir()):
+        if d.is_dir() and package_files(d):
+            found.append(d)
+    return found
 
 
-def generate(pkg):
-    original = (pkg / "original.css").read_text(encoding="utf-8")
-    candidate = (pkg / "candidate.css").read_text(encoding="utf-8")
-    o_lines = original.splitlines()
-    c_lines = candidate.splitlines()
-    diff = list(difflib.unified_diff(
-        o_lines, c_lines,
-        fromfile="original.css", tofile="candidate.css", lineterm=""))
-    added = sum(1 for l in diff if l.startswith("+") and not l.startswith("+++"))
-    removed = sum(1 for l in diff if l.startswith("-") and not l.startswith("---"))
-    hunks = sum(1 for l in diff if l.startswith("@@"))
+def _norm_mech(line):
+    s = " ".join(line.split())
+    for rx, rep in _MECH_SUBS:
+        s = rx.sub(rep, s)
+    return s
+
+
+def _skeleton(line):
+    """A line with every CJK/kana/hangul char and all punctuation and
+    whitespace removed: what remains is the language-neutral skeleton."""
+    return re.sub(r"[^A-Za-z0-9]", "", _CJK.sub("", line))
+
+
+def classify(removed, added):
+    """Heuristic auto-class for one change block. Order matters:
+    mechanical (same lines after token substitution), translation
+    (same skeleton after CJK removal), supplement (JP-frame signature
+    lines added), else residual."""
+    if all(not l.strip() for l in removed + added):
+        return "mechanical"
+    if sorted(map(_norm_mech, removed)) == sorted(map(_norm_mech, added)):
+        return "mechanical"
+    if any(_CJK.search(l) for l in removed + added):
+        sk_r = sorted(filter(None, map(_skeleton, removed)))
+        sk_a = sorted(filter(None, map(_skeleton, added)))
+        if sk_r == sk_a:
+            return "translation"
+    if any(_SUPPLEMENT.search(l) for l in added):
+        return "supplement"
+    return "residual"
+
+
+def _gist(removed, added):
+    for line in added + removed:
+        g = " ".join(line.split())
+        if g:
+            return (g[:77] + "…") if len(g) > 78 else g
+    return "(blank lines only)"
+
+
+def _header(pkg, oname, cname):
     out = []
-    out.append(f"# Diff — {pkg.name}: original.css → candidate.css")
+    out.append(f"# Diff — {pkg.name}: {oname} → {cname}")
     out.append("")
-    out.append("This file is GENERATED by build_review.py from original.css and")
-    out.append("candidate.css in this directory; do not hand-edit it. Regenerate")
+    out.append(f"This file is GENERATED by build_review.py from {oname} and")
+    out.append(f"{cname} in this directory; do not hand-edit it. Regenerate")
     out.append("with `python3 review/build_review.py`; verify with")
     out.append("`python3 review/build_review.py --check`.")
     out.append("")
+    return out
+
+
+def generate_tier1(pkg, oname, cname, o_lines, c_lines, diff):
+    added = sum(1 for l in diff if l.startswith("+") and not l.startswith("+++"))
+    removed = sum(1 for l in diff if l.startswith("-") and not l.startswith("---"))
+    hunks = sum(1 for l in diff if l.startswith("@@"))
+    out = _header(pkg, oname, cname)
     out.append("| | Lines |")
     out.append("|---|---|")
-    out.append(f"| original.css | {len(o_lines)} |")
-    out.append(f"| candidate.css | {len(c_lines)} |")
+    out.append(f"| {oname} | {len(o_lines)} |")
+    out.append(f"| {cname} | {len(c_lines)} |")
     out.append(f"| Added | +{added} |")
     out.append(f"| Removed | -{removed} |")
     out.append(f"| Hunks | {hunks} |")
@@ -60,6 +138,156 @@ def generate(pkg):
     out.append("```")
     out.append("")
     return "\n".join(out)
+
+
+def _format_range(start, stop):
+    beginning = start + 1
+    length = stop - start
+    if length == 1:
+        return str(beginning)
+    if not length:
+        beginning -= 1
+    return f"{beginning},{length}"
+
+
+def _section_text(group, o_lines, c_lines):
+    """Unified-diff text for one grouped-opcode section, built from the
+    same autojunk=False alignment as the index so header, index, and
+    diff text always describe one identical alignment."""
+    a0, a1 = group[0][1], group[-1][2]
+    b0, b1 = group[0][3], group[-1][4]
+    lines = [f"@@ -{_format_range(a0, a1)} +{_format_range(b0, b1)} @@"]
+    for tag, i1, i2, j1, j2 in group:
+        if tag == "equal":
+            lines.extend(" " + l for l in o_lines[i1:i2])
+        if tag in ("replace", "delete"):
+            lines.extend("-" + l for l in o_lines[i1:i2])
+        if tag in ("replace", "insert"):
+            lines.extend("+" + l for l in c_lines[j1:j2])
+    return lines
+
+
+def generate_tier2(pkg, oname, cname, o_lines, c_lines, diff):
+    sm = difflib.SequenceMatcher(a=o_lines, b=c_lines, autojunk=False)
+    groups = list(sm.get_grouped_opcodes(3))
+    sections = [_section_text(g, o_lines, c_lines) for g in groups]
+    # Change blocks with their section number and auto-class.
+    blocks = []  # (index, section, tag, i1, i2, j1, j2, cls)
+    sec_of = {}
+    for si, group in enumerate(groups, 1):
+        for op in group:
+            if op[0] != "equal":
+                sec_of[(op[1], op[3])] = si
+    for op in sm.get_opcodes():
+        if op[0] == "equal":
+            continue
+        tag, i1, i2, j1, j2 = op
+        cls = classify(o_lines[i1:i2], c_lines[j1:j2])
+        blocks.append((len(blocks) + 1, sec_of[(i1, j1)], tag,
+                       i1, i2, j1, j2, cls))
+    added = sum(b[6] - b[5] for b in blocks)
+    removed = sum(b[4] - b[3] for b in blocks)
+    class_lines = {}
+    class_blocks = {}
+    for b in blocks:
+        cls = b[7]
+        class_blocks[cls] = class_blocks.get(cls, 0) + 1
+        class_lines[cls] = class_lines.get(cls, 0) + (b[4] - b[3]) + (b[6] - b[5])
+    sec_classes = {}
+    for b in blocks:
+        sec_classes.setdefault(b[1], set()).add(b[7])
+    mech_sections = [si for si in range(1, len(groups) + 1)
+                     if sec_classes.get(si) == {"mechanical"}]
+
+    out = _header(pkg, oname, cname)
+    out.append("Tier 2 format (large diff): summary header, change-block")
+    out.append("index, then the full diff in collapsed sections. Purely")
+    out.append("mechanical sections are grouped into one collapsed section")
+    out.append("at the end. Auto-class labels are heuristic (token-level")
+    out.append("normalization only); the package README.md carries the")
+    out.append("adjudicated explanation.")
+    out.append("")
+    out.append("| | Lines |")
+    out.append("|---|---|")
+    out.append(f"| {oname} | {len(o_lines)} |")
+    out.append(f"| {cname} | {len(c_lines)} |")
+    out.append(f"| Added | +{added} |")
+    out.append(f"| Removed | -{removed} |")
+    out.append(f"| Changed | {added + removed} |")
+    out.append(f"| Change blocks | {len(blocks)} |")
+    out.append(f"| Diff sections (context 3) | {len(groups)} |")
+    out.append("")
+    out.append("## Changed lines by auto-class (heuristic)")
+    out.append("")
+    out.append("| Auto-class | Blocks | Changed lines |")
+    out.append("|---|---|---|")
+    for cls in ("mechanical", "translation", "supplement", "residual"):
+        if cls in class_blocks:
+            out.append(f"| {cls} | {class_blocks[cls]} | {class_lines[cls]} |")
+    out.append("")
+    out.append("## Change-block index")
+    out.append("")
+    out.append("| # | Section | Original | Candidate | +/− | Auto-class | Gist |")
+    out.append("|---|---|---|---|---|---|---|")
+    for (n, si, tag, i1, i2, j1, j2, cls) in blocks:
+        o_rng = f"{i1 + 1}–{i2}" if i2 > i1 else "—"
+        c_rng = f"{j1 + 1}–{j2}" if j2 > j1 else "—"
+        gist = _gist(o_lines[i1:i2], c_lines[j1:j2]).replace("|", "\\|")
+        out.append(f"| {n} | {si} | {o_rng} | {c_rng} | "
+                   f"+{j2 - j1}/−{i2 - i1} | {cls} | {gist} |")
+    out.append("")
+    out.append("## Full diff")
+    out.append("")
+    for si, group in enumerate(groups, 1):
+        if si in mech_sections:
+            continue
+        ga = sum(op[4] - op[3] for op in group if op[0] != "equal")
+        gr = sum(op[2] - op[1] for op in group if op[0] != "equal")
+        a_rng = f"{group[0][1] + 1}–{group[-1][2]}"
+        b_rng = f"{group[0][3] + 1}–{group[-1][4]}"
+        classes = ", ".join(sorted(sec_classes.get(si, set())))
+        out.append("<details>")
+        out.append(f"<summary>Section {si} — original {a_rng} · "
+                   f"candidate {b_rng} · +{ga}/−{gr} · {classes}</summary>")
+        out.append("")
+        out.append("```diff")
+        out.extend(sections[si - 1])
+        out.append("```")
+        out.append("")
+        out.append("</details>")
+        out.append("")
+    if mech_sections:
+        out.append("<details>")
+        out.append(f"<summary>Purely mechanical sections "
+                   f"({', '.join(str(s) for s in mech_sections)}) — "
+                   f"whitespace, host, and branch-token changes only "
+                   f"(heuristic)</summary>")
+        out.append("")
+        for si in mech_sections:
+            out.append("```diff")
+            out.extend(sections[si - 1])
+            out.append("```")
+            out.append("")
+        out.append("</details>")
+        out.append("")
+    return "\n".join(out)
+
+
+def generate(pkg):
+    orig, cand = package_files(pkg)
+    original = orig.read_text(encoding="utf-8")
+    candidate = cand.read_text(encoding="utf-8")
+    o_lines = original.splitlines()
+    c_lines = candidate.splitlines()
+    diff = list(difflib.unified_diff(
+        o_lines, c_lines,
+        fromfile=orig.name, tofile=cand.name, lineterm=""))
+    added = sum(1 for l in diff if l.startswith("+") and not l.startswith("+++"))
+    removed = sum(1 for l in diff if l.startswith("-") and not l.startswith("---"))
+    hunks = sum(1 for l in diff if l.startswith("@@"))
+    if added + removed <= TIER2_CHANGED_LINES and hunks <= TIER2_HUNKS:
+        return generate_tier1(pkg, orig.name, cand.name, o_lines, c_lines, diff)
+    return generate_tier2(pkg, orig.name, cand.name, o_lines, c_lines, diff)
 
 
 def main():
