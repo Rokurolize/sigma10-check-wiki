@@ -106,6 +106,82 @@ SUPPRESSIONS = {
         "a conditional-comment module serving a different delivery path is not "
         "a duplicate-import or a dropped gate (xmas shape)."
     ),
+    # --- adjudicated amendments (ADJ1 / ADJ2, 2026-11-18) ---
+    "KB-03:inherited-url-none": (
+        "url(none) byte-identical to the original is the original's closed "
+        "no-image idiom (relative 'none' request; the co-declared background "
+        "still paints), not a malformed resource; KB-03 only nominates its "
+        "literal url(null)/url()/elided/unbalanced forms."
+    ),
+    "KB-07:component-frame-scope": (
+        "the 'original has frame, candidate has none' pair fire is scoped to "
+        "theme packages; for a component/fragment/base-CSS package the wrapper "
+        "frame belongs to the companion theme package, not the fragment."
+    ),
+    "KB-21:inherited-scheme-route": (
+        "an include parameter byte-identical to the original except for the "
+        "scheme (https -> http), with '= ' spacing inherited and tolerated by "
+        "the module, is a KB-42 class-(ii) standing record, not a KB-21 defect."
+    ),
+    "KB-42:attribute-selector-match": (
+        "http:// inside a CSS [href=...]/[href*=...] attribute-selector MATCH "
+        "string selects the site's own link and loads nothing."
+    ),
+    "KB-42:doc-anchor-specimen": (
+        "http:// inside an [[a href=...]] inline-anchor syntax specimen is a "
+        "documentation example, not a delivered reference."
+    ),
+    "KB-42:escaped-wikilink-label": (
+        "http:// used as a wikilink display label inside an escaped/specimen "
+        "exhibit is prose, not a fetched URL."
+    ),
+    "KB-42:blank-evidence": (
+        "a KB-42 fire with an empty evidence line is corpus drift (package "
+        "refreshed after the run), not an adjudicable reference; skip it."
+    ),
+    "KB-42:kb21-defer": (
+        "a port-introduced 'name=\\s+http://' include parameter is KB-21's "
+        "shape; do not double-nominate under KB-42. The inherited-scheme-only "
+        "form is routed by KB-21:inherited-scheme-route to the KB-42 record."
+    ),
+    "KB-70:selector-coverage": (
+        "a sole [[code]] block carrying CSS declarations is the stylesheet even "
+        "with a universal/pseudo-element/pseudo-class selector or a gated "
+        "preset fragment; selector-shape blind spots are not port hits."
+    ),
+    "KB-71:aligned-block-boundaries": (
+        "css_channels boundaries are computed on a newline-preserving scrub and "
+        "index ctx['lines']; a multi-line @@...@@ span no longer shifts the "
+        "reported range or manufactures an unclosed comment."
+    ),
+    "KB-71:original-side-depth": (
+        "a depth_end>0 finding whose original block at the same ordinal ends at "
+        "the same depth is a recorded original-state shape (standing "
+        "disposition), not a port-introduced brace displacement."
+    ),
+    "KB-72:documented-face-match": (
+        "a documented face that matches a loaded/declared face (after stripping "
+        "Wikidot markup, the copula and span tails, and splitting face lists), "
+        "or a face-less prose/joke specimen, is not a KB-72 nomination."
+    ),
+    "KB-73:carried-gate-body": (
+        "a gate marker whose body is a non-blank module/wikitext slot (any case "
+        "of 'module css', interleaved [[ift{$p}gs]] and '[!{$p} --]' closers) "
+        "carries its content and is not an emptied slot."
+    ),
+    "KB-76:live-tail-only": (
+        "only live [[div]] blocks outside [[code]]/[[module]] and @@/{{ escapes "
+        "count as tail duplicates; exhibit/sample text is not a live div."
+    ),
+    "KB-76:original-region-pairing": (
+        "pair the duplicated signature against the original's whole-file count "
+        "(not a fixed last-60-line window) when the body was restructured."
+    ),
+    "KB-78:original-empty-pair": (
+        "a candidate empty collapsible whose original carries the same empty "
+        "pair (parameterized openers and blank lines included, compared by "
+        "proximity/label) is inherited, not a port hit; stay silent."
+    ),
 }
 
 # Hosts that are namespace identifiers, not resources (NL-07, model suppression).
@@ -153,8 +229,13 @@ def _scrub(lines):
         b = text.find("@@", a + 2)
         if b < 0:
             b = len(text)
+        # ADJ1 §3.3(a)/§4.1: preserve newlines in every mask so scrubbed-line
+        # indices stay aligned with ctx["lines"]. Replacing a newline with a
+        # space here shifted every later candidate.txt:N evidence line after a
+        # multi-line @@...@@ span (flopstyle-dark delta 975, KB-70/71/76 FPs).
         for k in range(a, min(b + 2, len(text))):
-            out[k] = " "
+            if text[k] != "\n":
+                out[k] = " "
             escaped[k] = 1
         i = b + 2
 
@@ -255,11 +336,46 @@ def css_channels(lines):
     return channels
 
 
+def code_block_spans(lines):
+    """ADJ1 §3.3: served-byte census of [[code]] blocks.
+
+    Channel markers are detected on escape-masked raw lines so a stray CSS
+    /* ... */ span in the prose cannot swallow a real [[code]] opener
+    (flopstyle-dark /1 at L1820 sits under a comment opened at L249). Gated
+    blocks are included; escaped @@/{{ examples are not.
+    """
+    _, escaped = _scrub(lines)
+    starts = []
+    off = 0
+    for line in lines:
+        starts.append(off)
+        off += len(line) + 1
+    spans = []
+    stack = None
+    for idx, line in enumerate(lines):
+        base = starts[idx]
+        for m in re.finditer(r"\[\[code[^\]]*\]\]", line):
+            if not escaped[base + m.start()]:
+                stack = idx
+        close = line.find("[[/code]]")
+        if close >= 0 and stack is not None and not escaped[base + close]:
+            spans.append((stack, idx))
+            stack = None
+    if stack is not None:
+        spans.append((stack, len(lines) - 1))
+    return [{"kind": "code-raw", "start": a, "end": b} for a, b in spans]
+
+
 def parse_includes(lines):
     """Return include blocks: {name,start,end,params:[(line,key,value)]}."""
     blocks = []
     i = 0
-    open_re = re.compile(r"\[\[include\s+([^\]\n|]+)")
+    # ADJ2 KB-07 (wikifot): stop the include-name capture at a whitespace-
+    # delimited key= token before | / ]] so an inline priority=1 on the opening
+    # line is parsed as a parameter instead of swallowed into the name.
+    open_re = re.compile(
+        r"\[\[include\s+([^\]\n|]+?)(?=\s+[\w-]+\s*=|\s*\]\]|\s*\||\s*$)"
+    )
     param_re = re.compile(r"^\s*\|\s*([^=]+?)\s*=\s*(.*?)\s*$")
     while i < len(lines):
         m = open_re.search(lines[i])
@@ -372,7 +488,10 @@ def lint_malformed_url(ctx):
         if i not in css_lines or "[[" in line:
             continue  # a wikitext inline-code example is not a CSS declaration
         low = s.lower()
-        if re.search(r"url\(\s*(null|none)\s*\)", low) or re.search(r"url\(\s*\)", low):
+        # ADJ1 §1: KB-03's literal recipe is url(null)/url()/elided/unbalanced;
+        # url(none) is the original's closed no-image idiom (suppression
+        # KB-03:inherited-url-none) and is never nominated.
+        if re.search(r"url\(\s*null\s*\)", low) or re.search(r"url\(\s*\)", low):
             yield Finding(ctx["package"], "KB-03", "lint_malformed_url", "candidate:",
                           "candidate.txt:%d" % (i + 1), line,
                           "empty/null resource; escapes+comments scrubbed")
@@ -401,9 +520,17 @@ def lint_interwiki_style(ctx):
     """
     incs = [b for b in ctx["includes"] if "interwiki-style" in b["name"].lower()]
     if not incs:
-        # Only nominate when the original had a frame (the port dropped it).
+        # Only nominate when the original had a frame (the port dropped it), and
+        # only for theme packages. ADJ2 KB-07 (peroxide-jp-base-css): the frame
+        # of a component/fragment/base-CSS package belongs to its companion
+        # theme wrapper, not to the fragment's own delivery.
         o = "".join(ctx["orig_lines"])
         if "interwiki-style" in o:
+            name = ctx["package"]
+            component_like = ("base-css" in name or "fragment" in name
+                              or "component" in name)
+            if component_like and "interwiki-style" not in "\n".join(ctx["lines"]):
+                return
             yield Finding(ctx["package"], "KB-07", "lint_interwiki_style", "pair",
                           "candidate.txt:0", "<<no interwiki-style include>>",
                           "original has frame, candidate has none")
@@ -437,11 +564,19 @@ def lint_interwiki_style(ctx):
 
 
 def _gate_exclusive(lines, a, b):
-    """True if two loads sit in distinct [!-- {$p} --] conditional gates."""
+    """True if two loads sit in distinct mutually exclusive conditional gates.
+
+    ADJ2 KB-07 (foxtrot): recognise the interleaved form
+    ``>[[iftags]][[/ift{$p}gs]]`` in addition to ``[!-- {$p} ...]``. Each
+    preset is gated by a distinct parameter, so at most one load renders.
+    """
     def gate_before(idx):
         for k in range(idx, max(-1, idx - 12), -1):
-            if re.search(r"\[!--\s*\{\$", lines[k]):
-                return lines[k].strip()
+            m = re.search(r"\[!--\s*\{\$([\w-]+)", lines[k])
+            if not m:
+                m = re.search(r"\[\[/ift\{\$([\w-]+)\}gs\]\]", lines[k])
+            if m:
+                return m.group(1)
         return None
     ga, gb = gate_before(a), gate_before(b)
     return bool(ga and gb and ga != gb)
@@ -502,6 +637,23 @@ def lint_oversize(ctx):
                   "approaching 200000 save limit with size growth consistent with inlined base")
 
 
+def _orig_scheme_include(ctx, line):
+    """Original include carrying the same target and the '= ' spacing.
+
+    The candidate's line number need not match the original's (the y2k doc
+    body moved), so the inherited spacing is matched by include target, not
+    by line index (ADJ1 §2).
+    """
+    m = re.search(r"\[\[include\s+([^\s|\]]+)", line)
+    if not m:
+        return ""
+    name = m.group(1)
+    for ol in ctx["orig_lines"]:
+        if name in ol and re.search(r"=\s+https?://", ol):
+            return ol
+    return ""
+
+
 def lint_fragile_param(ctx):
     """KB-21: include parameter '= ' (space before value) and http:// inside
     include params / [[image]] sources.
@@ -513,10 +665,20 @@ def lint_fragile_param(ctx):
         # http:// value, or an http:// scheme (not https) inside [[image ...]].
         # A plain https draft-host [[image ...]] is a normal draft-bucket asset
         # reference (KB-58), not this pattern.
-        if re.search(r"=\s+http://", s) or re.search(r"\[\[image\s+http://", s):
+        if re.search(r"\[\[image\s+http://", s):
             yield Finding(ctx["package"], "KB-21", "lint_fragile_param", "candidate:",
                           "candidate.txt:%d" % (i + 1), line,
-                          "space and/or http scheme inside asset parameter")
+                          "http scheme inside [[image ...]] asset parameter")
+        elif re.search(r"=\s+http://", s):
+            # ADJ1 §2 routing: when the original's corresponding include carries
+            # the same '= ' spacing, the stray space is inherited and tolerated
+            # by the module; the scheme delta is KB-42's class-(ii) standing
+            # record (suppression KB-21:inherited-scheme-route), not a KB-21
+            # defect. Only a port-introduced stray space is charged here.
+            if not _orig_scheme_include(ctx, line):
+                yield Finding(ctx["package"], "KB-21", "lint_fragile_param", "candidate:",
+                              "candidate.txt:%d" % (i + 1), line,
+                              "space inside asset parameter")
 
 
 def lint_preview_credit(ctx):
@@ -534,12 +696,36 @@ def lint_http_scheme(ctx):
     """KB-42: http:// in live references. NL-07 namespace identifiers and
     NL-15 CSS source-citation comments are scrubbed; byte-identical-to-original
     http lines are flagged as inherited (class (ii)), not candidate-inherent.
+
+    ADJ2 adds four suppressions: attribute-selector MATCH strings (chaos,
+    magazine, internal-affairs), [[a href=...]] syntax specimens (sci-fi,
+    scplive, share-future, steam-guide), wikilink labels in escaped exhibits
+    (paramycota), and empty evidence lines (magazine, flopstyle-dark). The
+    inherited-scheme-only include param (y2k) stays: ADJ1 §2 routes KB-21's
+    charge here as the class-(ii) standing record.
     """
     for i, line, s in split_scrubbed(ctx["scrubbed"], ctx["lines"]):
+        if not line.strip():
+            continue  # KB-42:blank-evidence: corpus drift, not a reference
         for m in re.finditer(r"http://([^\s\"'\)\|>\]]+)", s):
             host = m.group(1).split("/")[0]
             if any(h in m.group(1) for h in NL07_HTTP_HOSTS):
                 continue  # NL-07: namespace identifier, not a fetched URL
+            pre = s[max(0, m.start() - 80):m.start()]
+            post = s[m.end():m.end() + 12]
+            # CSS attribute-selector MATCH string: selects the site's own link.
+            if (re.search(r"href\*?=\s*[\"'][^\"']*$", pre)
+                    and post.startswith(("\"]", "']"))):
+                continue  # KB-42:attribute-selector-match
+            # [[a href="..."]] inline-anchor documentation specimen.
+            if (re.search(r"\[\[a[^\]]*href\*?=\s*[\"'][^\"']*$", pre)
+                    and post.startswith(("]]", "\"]", "']"))):
+                continue  # KB-42:doc-anchor-specimen
+            # http:// as the display label of a [[[...|...]]] wikilink exhibit.
+            if (re.search(r"\[\[\[[^\]]*\|$", pre) and post.startswith("]]]")):
+                continue  # KB-42:escaped-wikilink-label
+            if re.search(r"=\s+http://", s) and not _orig_scheme_include(ctx, line):
+                continue  # KB-42:kb21-defer: a port-introduced stray space
             inherited = bool(ctx["orig_lines"]) and i < len(ctx["orig_lines"]) and line.strip() == ctx["orig_lines"][i].strip()
             yield Finding(ctx["package"], "KB-42", "lint_http_scheme", "candidate:",
                           "candidate.txt:%d" % (i + 1), line,
@@ -607,15 +793,28 @@ def lint_codeaddr(ctx):
     fullname = ctx["fullname"]
     slug_encoded = fullname.replace(":", "%3A")
     slug_plain = fullname
-    code_chans = [c for c in css_channels(ctx["lines"]) if c["kind"].startswith("code-")]
+    code_chans = code_block_spans(ctx["lines"])
     # A delivered code block need not carry type="css" (sci-fi-jp's /1 is a
     # plain [[code]] that holds the stylesheet); judge by CSS markers.
+    # ADJ1 §3.1/§3.2: broaden selector coverage to the universal selector,
+    # pseudo-classes/pseudo-elements and arbitrary simple selectors, and treat
+    # a page's sole code block with CSS declarations as the stylesheet. Gated
+    # preset/fragment blocks stay in the census (they are delivered ordinals).
     def looks_css(c):
         body = "\n".join(ctx["lines"][c["start"]:c["end"] + 1])
-        return bool(re.search(r"(:root\s*\{|@import\b|font-family\s*:|[ #.][\w-]+\s*\{)", body))
-    chans = [c for c in code_chans if looks_css(c)]
+        css_re = (r"(:root\s*\{|@import\b|font-family\s*:"
+                  r"|[ #.][\w-]+(?:::?[\w-]+)*\s*\{|\*\s*\{|::?[\w-]+\s*\{)")
+        if re.search(css_re, body):
+            return True
+        return (len(code_chans) == 1
+                and bool(re.search(r"[\w-]+\s*:\s*[^;{}]+;", body)))
+    chans = [c for c in code_chans if looks_css(c)]  # gated blocks included
     self_refs = []
     for i, line, s in split_scrubbed(ctx["scrubbed"], ctx["lines"]):
+        # ADJ1 §3.3(b): only local--code/ is a code address; a local--files/
+        # asset URL is never parsed as an ordinal self-reference.
+        if "local--code/" not in s:
+            continue
         for m in re.finditer(r"local--code/([^\s/\)'\"]+?)/(?:(\d+))?", s):
             seg = m.group(1)
             if seg in (slug_encoded, slug_plain, fullname.replace(":", "%3A")):
@@ -720,16 +919,79 @@ def lint_block_structure(ctx):
                           "candidate.txt:%d" % (ch["start"] + 1), "<<unclosed /* comment>>",
                           "comment open at end of delivered block")
         if end_depth > 0:
+            # ADJ1 §4.1/§4.2: the pattern's own deciding step re-checks the
+            # delivered block against the original side before emitting. The
+            # original's corresponding stylesheet may be a [[module CSS]] or
+            # a [[code]] block at a different ordinal (immrama, pastel-skies,
+            # wikifot), so pair by the depth PROFILE (end depth + longest
+            # positive run), not by channel index. An identical profile is a
+            # recorded original-state shape; ink's port-introduced unclosed
+            # rule has no such counterpart and still fires.
+            note = "block ends above depth 0"
+            if ctx["orig_lines"]:
+                for och in css_channels(ctx["orig_lines"]):
+                    oblock = ctx["orig_lines"][och["start"]:och["end"] + 1]
+                    odepth = 0
+                    orun = 0
+                    olargest = 0
+                    for ol in oblock:
+                        odepth += ol.count("{") - ol.count("}")
+                        if odepth >= 1:
+                            orun += 1
+                            olargest = max(olargest, orun)
+                        else:
+                            orun = 0
+                    if odepth == end_depth and abs(olargest - longest) <= 2:
+                        note = ("DISPOSITION: original %s L%d ends depth=%d "
+                                "longest=%d - inherited original shape "
+                                "(KB-71:original-side-depth)"
+                                % (och["kind"], och["start"] + 1, odepth, olargest))
+                        break
             yield Finding(ctx["package"], "KB-71", "lint_block_structure", "candidate:",
                           "candidate.txt:%d-%d" % (ch["start"] + 1, ch["end"] + 1),
                           "brace_depth_end=%d longest_positive=%d" % (end_depth, longest),
-                          "block ends above depth 0")
+                          note)
+
+
+def _kb72_faces(raw):
+    """ADJ2 KB-72: extract ASCII font-face tokens from a documented value.
+
+    Strip Wikidot markup, wiki-link labels, the copula です/です。 and gloss
+    parentheses, then split a /-separated face list into individual faces.
+    A token mixing Latin letters with Japanese prose is not a face.
+    """
+    v = raw.strip()
+    v = re.sub(r"\[\[\[[^\]]*?\|([^\]]+)\]\]\]", r" \1 ", v)
+    v = re.sub(r"\[\[\*[^\]]*?\|([^\]]+)\]\]", r" \1 ", v)
+    # Remaining Wikidot tags ([[footnote]], [[span]], [[div]], ...) are
+    # furniture, not faces: cosmos L207's note text must not yield 'footnote'.
+    v = re.sub(r"\[\[/?[^\]]*\]\]", " ", v)
+    v = v.replace("**", " ").replace("//", " ").replace("@@", " ")
+    v = re.sub(r"です。?\s*$", "", v.strip())
+    v = re.sub(r"（[^）]*）|\([^)]*\)", " ", v)
+    trim = " 　「」\"'*/-{}[]。、.:;!?＋"
+    v = v.strip(trim)
+    faces = []
+    for part in v.split("/"):
+        p = part.strip(trim)
+        if re.fullmatch(r"[A-Za-z][A-Za-z0-9 ._+-]*", p):
+            faces.append(p)
+    return faces
+
+
+def _kb72_tokens(text):
+    """Case-/punctuation-insensitive token set (adelle-sans == Adelle Sans)."""
+    return set(re.findall(r"[a-z0-9]+", text.lower()))
 
 
 def lint_doc_default(ctx):
-    """KB-72: documented default contradicts the shipped :root variable / loaded font."""
+    """KB-72: documented default contradicts the shipped :root variable / loaded font.
+
+    ADJ2: compare extracted faces, not the linter's greedy capture of です /
+    ** / [[/span]]; a face-less prose/joke specimen is not a nomination.
+    Record-ground dispositions stay for the per-package report.
+    """
     text = "\n".join(ctx["lines"])
-    vars_text = "\n".join(re.findall(r"(?m)^[^\n]*:root[^\n]*\{[\s\S]*?\}", text))
     for i, line, s in split_scrubbed(ctx["scrubbed"], ctx["lines"]):
         # Require a documentation statement: keyword followed by a colon, or
         # the '本文フォントはX' prose form. CSS selector lines (.btn-default)
@@ -739,11 +1001,28 @@ def lint_doc_default(ctx):
             m = re.search(r"本文フォントは\s*([^\s、。]+)", s)
         if not m:
             continue
-        named = m.group(1)
-        if named and named not in vars_text and named not in text.replace(line, ""):
-            yield Finding(ctx["package"], "KB-72", "lint_doc_default", "candidate:",
-                          "candidate.txt:%d" % (i + 1), line,
-                          "documented value %r not found in :root/loads" % named)
+        raw = m.group(1)
+        full = re.search(r"本文フォントは\s*(.+)$", line)
+        if full:
+            raw = full.group(1)
+        faces = _kb72_faces(raw)
+        if not faces:
+            continue  # no named face: prose/joke specimen (KB-72:documented-face-match)
+        others = [l for k, l in enumerate(ctx["lines"]) if k != i]
+        delivered = "\n".join(re.findall(r"(?m)^[^\n]*:root[^\n]*\{[\s\S]*?\}",
+                                          "\n".join(others)))
+        delivered += "\n" + "\n".join(
+            l for l in others
+            if re.search(r"@import\b|font-family\s*:|--[\w-]*font[\w-]*\s*:", l, re.I))
+        dtokens = _kb72_tokens(delivered)
+        if all(_kb72_tokens(f) <= dtokens for f in faces):
+            continue  # every documented face is loaded/declared
+        # Record-ground dispositions (e.g. a carried translated specimen or a
+        # base-theme specimen) are adjudicated per package; the byte-level
+        # detector reports the nomination and does not invent that record.
+        yield Finding(ctx["package"], "KB-72", "lint_doc_default", "candidate:",
+                      "candidate.txt:%d" % (i + 1), line,
+                      "documented faces %r not found in :root/loads" % (faces,))
 
 
 def lint_param_gate(ctx):
@@ -759,31 +1038,62 @@ def lint_param_gate(ctx):
                       "original.txt:<gates> -> candidate.txt:<gates>", g,
                       "original gate token absent from candidate (a)")
     for i, line, s in split_scrubbed(ctx["scrubbed"], ctx["lines"]):
-        if re.search(r"\[!--\s*\{\$", s):
-            window = "\n".join(ctx["lines"][i:i + 6])
-            if "[[" not in window or "module CSS" not in window:
-                yield Finding(ctx["package"], "KB-73", "lint_param_gate", "candidate:",
-                              "candidate.txt:%d" % (i + 1), line,
-                              "slot marker with no module (b) - verify variant paths first")
+        if (re.search(r"\[!--\s*\{\$", s)
+                or re.search(r"\[\[/?ift[^\]]*\{\$", s)):
+            # ADJ2 KB-73 type (b): a gate carries its body when the span up to
+            # its closer holds a module (any case of 'module css') or any
+            # non-blank wikitext token. Recognise interleaved [[ift{$p}gs]]
+            # markers and the '[!{$p} --]' closer form as well.
+            j = i + 1
+            while j < len(ctx["lines"]) and not re.search(
+                    r"\[!--[^\]]*--\]|\[![^\]]*--\]", ctx["lines"][j]):
+                j += 1
+            body = ctx["lines"][i + 1:j] if j > i + 1 else []
+            window = "\n".join(body) if body else "\n".join(ctx["lines"][i + 1:i + 6])
+            if re.search(r"\[\[module\s+css\s*\]\]", window, re.I):
+                continue  # KB-73:carried-gate-body
+            if re.search(r"\S", window):
+                continue  # a non-blank wikitext slot carries its contents
+            yield Finding(ctx["package"], "KB-73", "lint_param_gate", "candidate:",
+                          "candidate.txt:%d" % (i + 1), line,
+                          "slot marker with no module (b) - verify variant paths first")
 
 
 def lint_dup_tail_block(ctx):
-    """KB-76: exact-duplicate short [[div]] block at the candidate tail where
-    the original carried one. Pair check on tail windows.
+    """KB-76: duplicate live [[div]] block at the candidate tail.
+
+    ADJ1 §5: build the tail census from a newline-preserving scrub (KB-71's
+    aligned boundaries), excluding [[code]]/[[module]] channels and @@/{{}
+    escapes, so exhibit/sample text is not counted as a live div. Pair the
+    signature against the ORIGINAL'S WHOLE-FILE count, not a fixed last-60-line
+    window: a restructured body moves the documentation region to the tail.
     """
     if not ctx["orig_lines"]:
         return
-    def tail_blocks(lines, n=60):
-        window = lines[-n:]
-        opens = [l.strip() for l in window if re.match(r"\s*\[\[div\b", l)]
-        return opens
-    c = tail_blocks(ctx["lines"])
-    o = tail_blocks(ctx["orig_lines"])
+
+    def live_div_opens(lines, window=None):
+        scrubbed = _scrub(lines)[0].split("\n")
+        covered = set()
+        for ch in css_channels(lines):
+            for k in range(ch["start"], ch["end"] + 1):
+                covered.add(k)
+        first = 0 if window is None else max(0, len(lines) - window)
+        out = []
+        for k in range(first, len(lines)):
+            s = scrubbed[k] if k < len(scrubbed) else ""
+            if k in covered:
+                continue
+            if re.match(r"\s*\[\[div\b", lines[k]) and re.match(r"\s*\[\[div\b", s):
+                out.append(lines[k].strip())
+        return out
+
+    c = live_div_opens(ctx["lines"], 60)
+    o = live_div_opens(ctx["orig_lines"])  # whole-file pairing
     for sig in set(c):
-        if c.count(sig) > max(o.count(sig), 1):
+        if c.count(sig) > 1 and c.count(sig) > o.count(sig):
             yield Finding(ctx["package"], "KB-76", "lint_dup_tail_block", "pair",
                           "candidate.txt:<tail>", sig[:200],
-                          "candidate tail count %d > original %d" %
+                          "candidate live tail count %d > original whole-file %d" %
                           (c.count(sig), o.count(sig)))
 
 
@@ -795,13 +1105,28 @@ def lint_empty_collapsible(ctx):
             while j < len(ctx["lines"]) and not ctx["lines"][j].strip():
                 j += 1
             if j < len(ctx["lines"]) and re.match(r"\s*\[\[/collapsible\]\]", ctx["lines"][j]):
+                # ADJ2 KB-78: the original-side test must also recognise a
+                # parameterized opener followed (after blank lines) by its
+                # close, and pair by proximity/label rather than the literal
+                # [[collapsible]][[/collapsible]] string. An inherited empty
+                # pair is original-state (KB-78:original-empty-pair) and stays
+                # silent; a candidate-only empty pair is the nomination.
                 oempty = False
-                if ctx["orig_lines"]:
-                    otext = "\n".join(ctx["orig_lines"])
-                    oempty = bool(re.search(r"\[\[collapsible\]\]\s*\[\[/collapsible\]\]", otext))
+                ol = ctx["orig_lines"]
+                for k in range(len(ol)):
+                    if not re.match(r"\s*\[\[collapsible\b", ol[k]):
+                        continue
+                    jj = k + 1
+                    while jj < len(ol) and not ol[jj].strip():
+                        jj += 1
+                    if jj < len(ol) and re.match(r"\s*\[\[/collapsible\]\]", ol[jj]):
+                        oempty = True
+                        break
+                if oempty:
+                    continue
                 yield Finding(ctx["package"], "KB-78", "lint_empty_collapsible", "pair",
                               "candidate.txt:%d-%d" % (i + 1, j + 1), line + " / " + ctx["lines"][j],
-                              "original also empty -> not a port hit" if oempty else "empty collapsible")
+                              "candidate-only empty collapsible (relocated content)")
 
 
 def lint_exhibit_leak(ctx):
@@ -847,22 +1172,27 @@ def lint_footnoteblock_added(ctx):
 # (kb, rule_name, scope, detector, source-section-short, suppressions)
 RULES = [
     ("KB-03", "lint_malformed_url", "candidate:", lint_malformed_url,
-     "Static detection: url(null)/url()/url(https://…)/unbalanced url( per declaration", []),
+     "Static detection: url(null)/url()/url(https://…)/unbalanced url( per declaration",
+     ["KB-03:inherited-url-none"]),
     ("KB-07", "lint_interwiki_style", "candidate:/pair", lint_interwiki_style,
      "Static detection: count interwiki-style includes, priorities, theme= args",
-     ["KB-07:mutually-exclusive-gate", "KB-07:original-identical-stack"]),
+     ["KB-07:mutually-exclusive-gate", "KB-07:original-identical-stack",
+      "KB-07:component-frame-scope"]),
     ("KB-13", "lint_modalbox_pin", "candidate:", lint_modalbox_pin,
      "Static detection: global .modalbox position:fixed + no .credit-static-view carve-out", []),
     ("KB-20", "lint_oversize", "candidate:", lint_oversize,
      "Static detection: character-count every candidate against 200000",
      ["KB-20:own-css-size"]),
     ("KB-21", "lint_fragile_param", "candidate:", lint_fragile_param,
-     "Static detection: include param '= ' and http:// inside include/image params", []),
+     "Static detection: include param '= ' and http:// inside include/image params",
+     ["KB-21:inherited-scheme-route"]),
     ("KB-32", "lint_preview_credit", "candidate:", lint_preview_credit,
      "Static detection (file-first disposition): credit:start-preview -> credit-modal is preview-form", []),
     ("KB-42", "lint_http_scheme", "candidate:", lint_http_scheme,
      "Static detection: grep http:// in live references; class (ii) on sight",
-     ["NL-07:xmlns-identifier", "NL-15:css-source-comment", "KB-42:inherited-http"]),
+     ["NL-07:xmlns-identifier", "NL-15:css-source-comment", "KB-42:inherited-http",
+      "KB-42:attribute-selector-match", "KB-42:doc-anchor-specimen",
+      "KB-42:escaped-wikilink-label", "KB-42:blank-evidence", "KB-42:kb21-defer"]),
     ("KB-50", "lint_hidden_rate_shape_a", "candidate:", lint_hidden_rate,
      "Static detection (shape a): no Rate and no real credit module settles hidden-rate",
      []),
@@ -876,19 +1206,22 @@ RULES = [
      "Static detection: detect exact @@[[footnoteblock]]@@ exhibit form", []),
     ("KB-70", "lint_codeaddr", "candidate:/pair", lint_codeaddr,
      "Static detection: self-addressed local--code/<own>/N vs [[code]] ordinals",
-     ["KB-70:inherited-self-import"]),
+     ["KB-70:inherited-self-import", "KB-70:selector-coverage"]),
     ("KB-71", "lint_block_structure", "candidate:", lint_block_structure,
      "Static detection: comment termination + brace-depth profile per delivered block",
-     ["NL-01/02:two-channel"]),
+     ["NL-01/02:two-channel", "KB-71:aligned-block-boundaries", "KB-71:original-side-depth"]),
     ("KB-72", "lint_doc_default", "candidate:", lint_doc_default,
-     "Static detection: documented default vs :root vars / loaded font set", []),
+     "Static detection: documented default vs :root vars / loaded font set",
+     ["KB-72:documented-face-match"]),
     ("KB-73", "lint_param_gate", "pair", lint_param_gate,
      "Static detection: original gate/slot dropped, emptied, or undocumented",
-     ["KB-73:param-gated-channel"]),
+     ["KB-73:param-gated-channel", "KB-73:carried-gate-body"]),
     ("KB-76", "lint_dup_tail_block", "pair", lint_dup_tail_block,
-     "Static detection: duplicate short [[div]] block at candidate tail > original", []),
+     "Static detection: duplicate short [[div]] block at candidate tail > original",
+     ["KB-76:live-tail-only", "KB-76:original-region-pairing"]),
     ("KB-78", "lint_empty_collapsible", "pair", lint_empty_collapsible,
-     "Static detection: [[collapsible]] open immediately followed by close", []),
+     "Static detection: [[collapsible]] open immediately followed by close",
+     ["KB-78:original-empty-pair"]),
     ("KB-79", "lint_exhibit_leak", "pair", lint_exhibit_leak,
      "Static detection: body headings with no exhibit + :root at delivered tail + depth>0", []),
     ("KB-80", "lint_footnoteblock_added", "pair", lint_footnoteblock_added,
