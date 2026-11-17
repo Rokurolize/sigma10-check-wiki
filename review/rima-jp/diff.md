@@ -15,13 +15,13 @@ adjudicated explanation.
 | | Lines |
 |---|---|
 | original.txt | 1317 |
-| candidate.txt | 1339 |
-| Added | +132 |
-| Review-stage comments | 0 of the +132 added lines |
-| Removed | -110 |
-| Changed | 242 |
+| candidate.txt | 1332 |
+| Added | +128 |
+| Review-stage comments | 0 of the +128 added lines |
+| Removed | -113 |
+| Changed | 241 |
 | Change blocks | 89 |
-| Diff sections (context 3) | 25 |
+| Diff sections (context 3) | 24 |
 
 ## Changed lines by auto-class (heuristic)
 
@@ -30,7 +30,7 @@ adjudicated explanation.
 | mechanical | 1 | 1 |
 | translation | 61 | 139 |
 | supplement | 5 | 24 |
-| residual | 22 | 78 |
+| residual | 22 | 77 |
 
 ## Change-block index
 
@@ -38,93 +38,93 @@ adjudicated explanation.
 |---|---|---|---|---|---|---|
 | 1 | 1 | 1–1 | 1–1 | +1/−1 | residual | [[include theme:peroxide-jp]] |
 | 2 | 2 | 13–13 | 13–18 | +6/−1 | supplement | [[include :scp-jp:component:interwiki-style |
-| 3 | 3 | 29–29 | 34–42 | +9/−1 | supplement | [[include :scp-jp:credit:start-preview]] |
-| 4 | 3 | 31–31 | 44–45 | +2/−1 | supplement | フォント: Afacad Flux、Noto Sans JP（いずれもGoogle Fonts、SIL Open Font License）、Font A… |
-| 5 | 3 | 33–33 | 47–47 | +1/−1 | residual | 月溪（Rima）テーマ版式へようこそ。これは[[[https://scp-wiki-cn.wikidot.com/semimonth-hub\|基金会半月刊… |
-| 6 | 3 | 35–35 | 49–49 | +1/−1 | residual | = {{[[include :scp-jp:theme:rima-jp label=2026.5 上弦]]}} |
-| 7 | 3 | 37–40 | 51–51 | +1/−4 | residual | + パラメータ設定 |
-| 8 | 3 | 42–42 | 53–53 | +1/−1 | translation | 「*」で有効化します。 |
-| 9 | 3 | 44–44 | 55–62 | +8/−1 | residual | * **{{no-page-title}}** - ページタイトルを隠す |
-| 10 | 4 | 68–68 | 86–86 | +1/−1 | translation | ++ ニュースdivブロック |
-| 11 | 4 | 72–72 | 90–90 | +1/−1 | residual | ++* 弦月さんのBilibiliアカウントにログインできない |
-| 12 | 4 | 74–74 | 92–92 | +1/−1 | residual | 半月刊永遠のマスコットであり看板娘、全基金会で最も権威ある青髪の少女の一人・弦月さんが、本日Bilibiliアカウントにログインできないことが発覚しました… |
-| 13 | 4 | 81–81 | 99–99 | +1/−1 | translation | @@++ タイトル@@ |
-| 14 | 5 | 94–94 | 112–112 | +1/−1 | translation | \|caption=青髪の少女が手を挙げています。 |
-| 15 | 5 | 97–97 | 115–115 | +1/−1 | translation | ++* 画像入りのニュースブロック |
-| 16 | 5 | 99–99 | 117–117 | +1/−1 | residual | 部門の破壊競争が4月下旬に開催されます。SCP文書と物語の2つのフォーマットでの投稿が可能です。本競争では1〜3篇を投稿し、3つの特定の内容を満たして、基… |
-| 17 | 5 | 101–101 | 119–119 | +1/−1 | translation | ただし、今回の競争には一つ大きな規則があります。破壊される部門は重複してはなりません。具体的には、競争には「エントリー」が設けられ、参加を希望する人やチー… |
-| 18 | 6 | 115–115 | 133–133 | +1/−1 | translation | @@++ タイトル@@ |
-| 19 | 7 | 127–127 | 145–145 | +1/−1 | translation | = 爆ぜた爆ぜた爆ぜた爆ぜた！ |
-| 20 | 7 | 132–132 | 150–150 | +1/−1 | residual | ++* 画像入りのトップ記事 |
-| 21 | 7 | 134–134 | 152–152 | +1/−1 | translation | 今日は爆ぜました。今、爆ぜた問題を解決することは非常にとても重要です。だから生活の中で爆ぜたものに出くわしたら、私たちはそれが現れたという事実を考慮せざる… |
-| 22 | 7 | 140–141 | 158–159 | +2/−2 | translation | @@[[image 画像URL]]@@ |
-| 23 | 7 | 145–145 | 163–163 | +1/−1 | translation | @@++ タイトル@@ |
-| 24 | 7 | 152–152 | 170–170 | +1/−1 | translation | ++ 複数のニュースブロックを並べる |
-| 25 | 7 | 157–158 | 175–176 | +2/−2 | translation | ++ タイトル |
-| 26 | 7 | 160–160 | 178–178 | +1/−1 | translation | これらの問題を抱えながら、私たちは弦月をもう一度よく見てみましょう。セネカは哲学的なことを言いました。勇気は天国へ、臆病は地獄へ通ず、と。これは私に深く考… |
-| 27 | 7 | 166–168 | 184–186 | +3/−3 | residual | ++ タイトル |
-| 28 | 8 | 176–177 | 194–195 | +2/−2 | translation | ++ タイトル |
-| 29 | 9 | 190–191 | 208–209 | +2/−2 | translation | @@++ タイトル1@@ |
-| 30 | 10 | 199–200 | 217–218 | +2/−2 | translation | @@++ タイトル2@@ |
-| 31 | 11 | 212–212 | 230–230 | +1/−1 | translation | ++ 編集部おすすめdiv |
-| 32 | 11 | 217–217 | 235–235 | +1/−1 | translation | +* ドキュメント |
-| 33 | 11 | 219–219 | 237–237 | +1/−1 | translation | ++* [[[SCP-XXXX]]] - コードネーム：墜母 |
-| 34 | 11 | 223–223 | 241–241 | +1/−1 | translation | とりあえず抜粋です |
-| 35 | 11 | 225–225 | 243–243 | +1/−1 | translation | **推薦者：**[[user OxygenNine]] |
-| 36 | 11 | 230–230 | 248–248 | +1/−1 | translation | +* GoIフォーマット |
-| 37 | 11 | 232–232 | 250–250 | +1/−1 | translation | ++* [[[SCP-173]]] - 彫像 |
-| 38 | 11 | 236–236 | 254–254 | +1/−1 | translation | SCPは組織であり、SCPは自分自身に関心がある。だからSCPはGoIだ。SCPフォーマットはGoIフォーマットだ。完璧だ！ |
-| 39 | 11 | 238–238 | 256–256 | +1/−1 | translation | **推薦者：**[[user TomJens]] |
-| 40 | 12 | 248–248 | 266–266 | +1/−1 | translation | @@+* ドキュメント@@ |
-| 41 | 12 | 250–251 | 268–269 | +2/−2 | translation | @@++* [[[SCP-XXXX]]] - タイトル@@ |
-| 42 | 12 | 254–254 | 272–272 | +1/−1 | translation | @@抜粋@@ |
-| 43 | 12 | 256–256 | 274–274 | +1/−1 | translation | @@**推薦者：**[[user ユーザー名]]@@ |
-| 44 | 12 | 261–261 | 279–279 | +1/−1 | translation | @@+* 作品タイプ@@ |
-| 45 | 12 | 263–264 | 281–282 | +2/−2 | translation | @@++* [[[SCP-XXXX\|タイトル]]]@@ |
-| 46 | 12 | 267–267 | 285–285 | +1/−1 | translation | @@抜粋@@ |
-| 47 | 12 | 269–269 | 287–287 | +1/−1 | translation | @@**推薦者：**[[user ユーザー名]]@@ |
-| 48 | 12 | 276–276 | 294–294 | +1/−1 | translation | ++ 新作紹介Tabview |
-| 49 | 12 | 280–280 | 298–298 | +1/−1 | translation | [[tab はじめに]] |
-| 50 | 12 | 282–282 | 300–300 | +1/−1 | translation | = CNサイトは活発なコミュニティで、毎月かなりの数の作品がサイトに投稿されます。 |
-| 51 | 12 | 284–284 | 302–302 | +1/−1 | translation | = SCPは誰にでも書きやすい題材ではなく、ましてや純粋な中文の題材でもありません。 |
-| 52 | 12 | 286–286 | 304–304 | +1/−1 | translation | = その後は忘れてしまいました。 |
-| 53 | 12 | 288–288 | 306–306 | +1/−1 | translation | = この版式は、半月刊で使用している抜粋カードコンポーネントに対応しています。 |
-| 54 | 12 | 292–292 | 310–310 | +1/−1 | translation | [[tab オリジナル作品]] |
-| 55 | 12 | 295–295 | 313–313 | +1/−1 | translation | ++* 2026年3月8日の週 |
-| 56 | 12 | 298–298 | 316–316 | +1/−1 | residual | [[include component:excerpts-tool-jp |
-| 57 | 12 | 304–304 | 322–322 | +1/−1 | residual | [[include component:excerpts-tool-jp |
-| 58 | 12 | 309–309 | 327–327 | +1/−1 | residual | [[include component:excerpts-tool-jp |
-| 59 | 12 | 314–318 | 332–332 | +1/−5 | residual | 訳注（訳）: 抜粋カードコンポーネントはSCP-JP向けに component:excerpts-tool-jp として移植しました（原語版 semimo… |
-| 60 | 12 | 322–322 | 336–336 | +1/−1 | residual | [[tab オリジナル物語]] |
-| 61 | 12 | 324–324 | 338–344 | +7/−1 | residual | 2つ貼れば、例としては十分でしょう？ |
-| 62 | 12 | 330–330 | 350–350 | +1/−1 | translation | ++ 汎用コンテンツdiv1 |
-| 63 | 12 | 334–334 | 354–354 | +1/−1 | translation | {{@@[[div class="columns-2"]]@@}}は汎用的な2列組の容器で、モバイルでは1列になります。 |
-| 64 | 12 | 340–340 | 360–360 | +1/−1 | translation | 当サイトのあらゆる動向を、シンプルで直接的なグラフに凝縮しました！気になる統計や数字はありますか？コメント欄でご提案ください！ |
-| 65 | 12 | 345–345 | 365–365 | +1/−1 | translation | 今期最高得点のドキュメントは…… |
-| 66 | 13 | 353–354 | 373–373 | +1/−2 | translation | = ネタ切れです |
-| 67 | 14 | 363–363 | 382–382 | +1/−1 | translation | ++ 汎用コンテンツdiv2 |
-| 68 | 14 | 367–367 | 386–386 | +1/−1 | translation | 半月刊に新設された「執筆プロンプト」コーナーへようこそ！これは--公然との剽窃--EN [https://scp-wiki.wikidot.com/new… |
-| 69 | 14 | 369–369 | 388–388 | +1/−1 | translation | 今月のプロンプトは以下の通りです： |
-| 70 | 15 | 379–379 | 398–398 | +1/−1 | translation | ++ ウォーターフォール画像表示モジュール |
-| 71 | 15 | 385–385 | 404–404 | +1/−1 | translation | = [[[SCP-5595]]]、画家は[https://x.com/FreshRiver40802/status/2033923786958143759… |
-| 72 | 15 | 390–390 | 409–409 | +1/−1 | translation | = 【Iceberg中字】24時間徹夜チャレンジ（しくじり！）（MTF招集！）、画家は[https://x.com/lottie__72/status/2… |
-| 73 | 15 | 395–395 | 414–414 | +1/−1 | translation | = Dr. GlassとDr. Clef、画家は[https://x.com/hotori70a5/status/2034268181167247715/… |
-| 74 | 15 | 400–400 | 419–419 | +1/−1 | translation | = 『SCP：迦流態勢』二次創作芸術作品、画家は[https://x.com/nightglow_33/status/203526006380033650… |
-| 75 | 16 | 409–410 | 428–429 | +2/−2 | translation | @@[[image 画像URL]]@@ |
-| 76 | 17 | 418–418 | 437–437 | +1/−1 | translation | + ソースコード |
-| 77 | 17 | 420–420 | 439–439 | +1/−1 | translation | [[collapsible show="+ソースコードを展開" hide="-ソースコードを閉じる"]] |
-| 78 | 17 | 424–424 | 443–443 | +1/−1 | supplement | @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..9… |
-| 79 | 18 | 451–455 | 470–474 | +5/−5 | residual | :root:lang(ja) { |
-| 80 | 19 | 464–464 | 483–483 | +1/−1 | residual | background-image: url('https://oxygennine.wikidot.com/local--files/system%3Af… |
-| 81 | 20 | 688–688 | 707–707 | +1/−1 | translation | /* ページ内容 */ |
-| 82 | 21 | 936–936 | 955–955 | +1/−1 | translation | display: none; /* 雑誌のソースコード由来（超古代文明の遺跡だと思う） */ |
-| 83 | 22 | — | 1122–1123 | +2/−0 | residual | [[/iftags]] |
-| 84 | 23 | 1144–1145 | — | +0/−2 | residual | [[/iftags]] |
-| 85 | 23 | 1148–1148 | 1167–1167 | +1/−1 | supplement | @import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Arima-jp/… |
-| 86 | 23 | 1150–1150 | 1169–1169 | +1/−1 | residual | :root:lang(ja) { |
-| 87 | 24 | 1240–1240 | — | +0/−1 | mechanical | (blank lines only) |
-| 88 | 24 | 1243–1243 | 1261–1261 | +1/−1 | translation | [[iftags +テーマ]] |
-| 89 | 25 | — | 1336–1339 | +4/−0 | residual | [[div class="side-menu"]] |
+| 3 | 3 | 22–24 | — | +0/−3 | residual | [[>]] |
+| 4 | 3 | 29–29 | 31–39 | +9/−1 | supplement | [[include :scp-jp:credit:start-preview]] |
+| 5 | 3 | 31–31 | 41–42 | +2/−1 | supplement | フォント: Afacad Flux、Noto Sans JP（いずれもGoogle Fonts、SIL Open Font License）、Font A… |
+| 6 | 3 | 33–33 | 44–44 | +1/−1 | residual | 月溪（Rima）テーマ版式へようこそ。これは[[[https://scp-wiki-cn.wikidot.com/semimonth-hub\|基金会半月刊… |
+| 7 | 3 | 35–35 | 46–46 | +1/−1 | residual | = {{[[include :scp-jp:theme:rima-jp label=2026.5 上弦]]}} |
+| 8 | 3 | 37–40 | 48–48 | +1/−4 | residual | + パラメータ設定 |
+| 9 | 3 | 42–42 | 50–50 | +1/−1 | translation | 「*」で有効化します。 |
+| 10 | 3 | 44–44 | 52–59 | +8/−1 | residual | * **{{no-page-title}}** - ページタイトルを隠す |
+| 11 | 4 | 68–68 | 83–83 | +1/−1 | translation | ++ ニュースdivブロック |
+| 12 | 4 | 72–72 | 87–87 | +1/−1 | residual | ++* 弦月さんのBilibiliアカウントにログインできない |
+| 13 | 4 | 74–74 | 89–89 | +1/−1 | residual | 半月刊永遠のマスコットであり看板娘、全基金会で最も権威ある青髪の少女の一人・弦月さんが、本日Bilibiliアカウントにログインできないことが発覚しました… |
+| 14 | 4 | 81–81 | 96–96 | +1/−1 | translation | @@++ タイトル@@ |
+| 15 | 5 | 94–94 | 109–109 | +1/−1 | translation | \|caption=青髪の少女が手を挙げています。 |
+| 16 | 5 | 97–97 | 112–112 | +1/−1 | translation | ++* 画像入りのニュースブロック |
+| 17 | 5 | 99–99 | 114–114 | +1/−1 | residual | 部門の破壊競争が4月下旬に開催されます。SCP文書と物語の2つのフォーマットでの投稿が可能です。本競争では1〜3篇を投稿し、3つの特定の内容を満たして、基… |
+| 18 | 5 | 101–101 | 116–116 | +1/−1 | translation | ただし、今回の競争には一つ大きな規則があります。破壊される部門は重複してはなりません。具体的には、競争には「エントリー」が設けられ、参加を希望する人やチー… |
+| 19 | 6 | 115–115 | 130–130 | +1/−1 | translation | @@++ タイトル@@ |
+| 20 | 7 | 127–127 | 142–142 | +1/−1 | translation | = 爆ぜた爆ぜた爆ぜた爆ぜた！ |
+| 21 | 7 | 132–132 | 147–147 | +1/−1 | residual | ++* 画像入りのトップ記事 |
+| 22 | 7 | 134–134 | 149–149 | +1/−1 | translation | 今日は爆ぜました。今、爆ぜた問題を解決することは非常にとても重要です。だから生活の中で爆ぜたものに出くわしたら、私たちはそれが現れたという事実を考慮せざる… |
+| 23 | 7 | 140–141 | 155–156 | +2/−2 | translation | @@[[image 画像URL]]@@ |
+| 24 | 7 | 145–145 | 160–160 | +1/−1 | translation | @@++ タイトル@@ |
+| 25 | 7 | 152–152 | 167–167 | +1/−1 | translation | ++ 複数のニュースブロックを並べる |
+| 26 | 7 | 157–158 | 172–173 | +2/−2 | translation | ++ タイトル |
+| 27 | 7 | 160–160 | 175–175 | +1/−1 | translation | これらの問題を抱えながら、私たちは弦月をもう一度よく見てみましょう。セネカは哲学的なことを言いました。勇気は天国へ、臆病は地獄へ通ず、と。これは私に深く考… |
+| 28 | 7 | 166–168 | 181–183 | +3/−3 | residual | ++ タイトル |
+| 29 | 8 | 176–177 | 191–192 | +2/−2 | translation | ++ タイトル |
+| 30 | 9 | 190–191 | 205–206 | +2/−2 | translation | @@++ タイトル1@@ |
+| 31 | 10 | 199–200 | 214–215 | +2/−2 | translation | @@++ タイトル2@@ |
+| 32 | 11 | 212–212 | 227–227 | +1/−1 | translation | ++ 編集部おすすめdiv |
+| 33 | 11 | 217–217 | 232–232 | +1/−1 | translation | +* ドキュメント |
+| 34 | 11 | 219–219 | 234–234 | +1/−1 | translation | ++* [[[SCP-XXXX]]] - コードネーム：墜母 |
+| 35 | 11 | 223–223 | 238–238 | +1/−1 | translation | とりあえず抜粋です |
+| 36 | 11 | 225–225 | 240–240 | +1/−1 | translation | **推薦者：**[[user OxygenNine]] |
+| 37 | 11 | 230–230 | 245–245 | +1/−1 | translation | +* GoIフォーマット |
+| 38 | 11 | 232–232 | 247–247 | +1/−1 | translation | ++* [[[SCP-173]]] - 彫像 |
+| 39 | 11 | 236–236 | 251–251 | +1/−1 | translation | SCPは組織であり、SCPは自分自身に関心がある。だからSCPはGoIだ。SCPフォーマットはGoIフォーマットだ。完璧だ！ |
+| 40 | 11 | 238–238 | 253–253 | +1/−1 | translation | **推薦者：**[[user TomJens]] |
+| 41 | 12 | 248–248 | 263–263 | +1/−1 | translation | @@+* ドキュメント@@ |
+| 42 | 12 | 250–251 | 265–266 | +2/−2 | translation | @@++* [[[SCP-XXXX]]] - タイトル@@ |
+| 43 | 12 | 254–254 | 269–269 | +1/−1 | translation | @@抜粋@@ |
+| 44 | 12 | 256–256 | 271–271 | +1/−1 | translation | @@**推薦者：**[[user ユーザー名]]@@ |
+| 45 | 12 | 261–261 | 276–276 | +1/−1 | translation | @@+* 作品タイプ@@ |
+| 46 | 12 | 263–264 | 278–279 | +2/−2 | translation | @@++* [[[SCP-XXXX\|タイトル]]]@@ |
+| 47 | 12 | 267–267 | 282–282 | +1/−1 | translation | @@抜粋@@ |
+| 48 | 12 | 269–269 | 284–284 | +1/−1 | translation | @@**推薦者：**[[user ユーザー名]]@@ |
+| 49 | 12 | 276–276 | 291–291 | +1/−1 | translation | ++ 新作紹介Tabview |
+| 50 | 12 | 280–280 | 295–295 | +1/−1 | translation | [[tab はじめに]] |
+| 51 | 12 | 282–282 | 297–297 | +1/−1 | translation | = CNサイトは活発なコミュニティで、毎月かなりの数の作品がサイトに投稿されます。 |
+| 52 | 12 | 284–284 | 299–299 | +1/−1 | translation | = SCPは誰にでも書きやすい題材ではなく、ましてや純粋な中文の題材でもありません。 |
+| 53 | 12 | 286–286 | 301–301 | +1/−1 | translation | = その後は忘れてしまいました。 |
+| 54 | 12 | 288–288 | 303–303 | +1/−1 | translation | = この版式は、半月刊で使用している抜粋カードコンポーネントに対応しています。 |
+| 55 | 12 | 292–292 | 307–307 | +1/−1 | translation | [[tab オリジナル作品]] |
+| 56 | 12 | 295–295 | 310–310 | +1/−1 | translation | ++* 2026年3月8日の週 |
+| 57 | 12 | 298–298 | 313–313 | +1/−1 | residual | [[include component:excerpts-tool-jp |
+| 58 | 12 | 304–304 | 319–319 | +1/−1 | residual | [[include component:excerpts-tool-jp |
+| 59 | 12 | 309–309 | 324–324 | +1/−1 | residual | [[include component:excerpts-tool-jp |
+| 60 | 12 | 314–318 | 329–329 | +1/−5 | residual | 訳注（訳）: 抜粋カードコンポーネントはSCP-JP向けに component:excerpts-tool-jp として移植しました（原語版 semimo… |
+| 61 | 12 | 322–322 | 333–333 | +1/−1 | residual | [[tab オリジナル物語]] |
+| 62 | 12 | 324–324 | 335–341 | +7/−1 | residual | 2つ貼れば、例としては十分でしょう？ |
+| 63 | 12 | 330–330 | 347–347 | +1/−1 | translation | ++ 汎用コンテンツdiv1 |
+| 64 | 12 | 334–334 | 351–351 | +1/−1 | translation | {{@@[[div class="columns-2"]]@@}}は汎用的な2列組の容器で、モバイルでは1列になります。 |
+| 65 | 12 | 340–340 | 357–357 | +1/−1 | translation | 当サイトのあらゆる動向を、シンプルで直接的なグラフに凝縮しました！気になる統計や数字はありますか？コメント欄でご提案ください！ |
+| 66 | 12 | 345–345 | 362–362 | +1/−1 | translation | 今期最高得点のドキュメントは…… |
+| 67 | 13 | 353–354 | 370–370 | +1/−2 | translation | = ネタ切れです |
+| 68 | 14 | 363–363 | 379–379 | +1/−1 | translation | ++ 汎用コンテンツdiv2 |
+| 69 | 14 | 367–367 | 383–383 | +1/−1 | translation | 半月刊に新設された「執筆プロンプト」コーナーへようこそ！これは--公然との剽窃--EN [https://scp-wiki.wikidot.com/new… |
+| 70 | 14 | 369–369 | 385–385 | +1/−1 | translation | 今月のプロンプトは以下の通りです： |
+| 71 | 15 | 379–379 | 395–395 | +1/−1 | translation | ++ ウォーターフォール画像表示モジュール |
+| 72 | 15 | 385–385 | 401–401 | +1/−1 | translation | = [[[SCP-5595]]]、画家は[https://x.com/FreshRiver40802/status/2033923786958143759… |
+| 73 | 15 | 390–390 | 406–406 | +1/−1 | translation | = 【Iceberg中字】24時間徹夜チャレンジ（しくじり！）（MTF招集！）、画家は[https://x.com/lottie__72/status/2… |
+| 74 | 15 | 395–395 | 411–411 | +1/−1 | translation | = Dr. GlassとDr. Clef、画家は[https://x.com/hotori70a5/status/2034268181167247715/… |
+| 75 | 15 | 400–400 | 416–416 | +1/−1 | translation | = 『SCP：迦流態勢』二次創作芸術作品、画家は[https://x.com/nightglow_33/status/203526006380033650… |
+| 76 | 16 | 409–410 | 425–426 | +2/−2 | translation | @@[[image 画像URL]]@@ |
+| 77 | 17 | 418–418 | 434–434 | +1/−1 | translation | + ソースコード |
+| 78 | 17 | 420–420 | 436–436 | +1/−1 | translation | [[collapsible show="+ソースコードを展開" hide="-ソースコードを閉じる"]] |
+| 79 | 17 | 424–424 | 440–440 | +1/−1 | supplement | @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..9… |
+| 80 | 18 | 451–455 | 467–471 | +5/−5 | residual | :root:lang(ja) { |
+| 81 | 19 | 464–464 | 480–480 | +1/−1 | residual | background-image: url('https://oxygennine.wikidot.com/local--files/system%3Af… |
+| 82 | 20 | 688–688 | 704–704 | +1/−1 | translation | /* ページ内容 */ |
+| 83 | 21 | 936–936 | 952–952 | +1/−1 | translation | display: none; /* 雑誌のソースコード由来（超古代文明の遺跡だと思う） */ |
+| 84 | 22 | — | 1119–1120 | +2/−0 | residual | [[/iftags]] |
+| 85 | 23 | 1144–1145 | — | +0/−2 | residual | [[/iftags]] |
+| 86 | 23 | 1148–1148 | 1164–1164 | +1/−1 | supplement | @import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Arima-jp/… |
+| 87 | 23 | 1150–1150 | 1166–1166 | +1/−1 | residual | :root:lang(ja) { |
+| 88 | 24 | 1240–1240 | — | +0/−1 | mechanical | (blank lines only) |
+| 89 | 24 | 1243–1243 | 1258–1258 | +1/−1 | translation | [[iftags +テーマ]] |
 
 ## Full diff
 
@@ -165,10 +165,17 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 3 — original 26–47 · candidate 31–65 · +23/−10 · residual, supplement, translation</summary>
+<summary>Section 3 — original 19–47 · candidate 24–62 · +23/−13 · residual, supplement, translation</summary>
 
 ```diff
-@@ -26,22 +31,35 @@
+@@ -19,29 +24,39 @@
+ @@@@
+ @@@@
+ 
+-[[>]]
+-[[module rate]]
+-[[/>]]
+ 
  @@@@
  @@@@
  
@@ -219,10 +226,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 4 — original 65–84 · candidate 83–102 · +4/−4 · residual, translation</summary>
+<summary>Section 4 — original 65–84 · candidate 80–99 · +4/−4 · residual, translation</summary>
 
 ```diff
-@@ -65,20 +83,20 @@
+@@ -65,20 +80,20 @@
  @@[[/div]]@@
  [[/div]]
  
@@ -252,10 +259,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 5 — original 91–104 · candidate 109–122 · +4/−4 · residual, translation</summary>
+<summary>Section 5 — original 91–104 · candidate 106–119 · +4/−4 · residual, translation</summary>
 
 ```diff
-@@ -91,14 +109,14 @@
+@@ -91,14 +106,14 @@
  name=https://scpsandboxcn.wikidot.com/local--files/solidify/QuarterMoon1
  |width=200px
  |align=center
@@ -279,10 +286,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 6 — original 112–118 · candidate 130–136 · +1/−1 · translation</summary>
+<summary>Section 6 — original 112–118 · candidate 127–133 · +1/−1 · translation</summary>
 
 ```diff
-@@ -112,7 +130,7 @@
+@@ -112,7 +127,7 @@
  |caption=
  @@]]@@
  @@@@
@@ -296,10 +303,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 7 — original 124–171 · candidate 142–189 · +13/−13 · residual, translation</summary>
+<summary>Section 7 — original 124–171 · candidate 139–186 · +13/−13 · residual, translation</summary>
 
 ```diff
-@@ -124,48 +142,48 @@
+@@ -124,48 +139,48 @@
  
  [[div class="banner"]]
  [[image https://scpsandboxcn.wikidot.com/local--files/semimonth/Blasting_of_a_chimney.png]]
@@ -366,10 +373,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 8 — original 173–180 · candidate 191–198 · +2/−2 · translation</summary>
+<summary>Section 8 — original 173–180 · candidate 188–195 · +2/−2 · translation</summary>
 
 ```diff
-@@ -173,8 +191,8 @@
+@@ -173,8 +188,8 @@
  [[/div]]
  
  [[div class="news-block"]]
@@ -385,10 +392,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 9 — original 187–194 · candidate 205–212 · +2/−2 · translation</summary>
+<summary>Section 9 — original 187–194 · candidate 202–209 · +2/−2 · translation</summary>
 
 ```diff
-@@ -187,8 +205,8 @@
+@@ -187,8 +202,8 @@
  ###00308b|@@[[div class="columns-2"]]@@##
  
  @@[[div class="news-block"]]@@
@@ -404,10 +411,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 10 — original 196–203 · candidate 214–221 · +2/−2 · translation</summary>
+<summary>Section 10 — original 196–203 · candidate 211–218 · +2/−2 · translation</summary>
 
 ```diff
-@@ -196,8 +214,8 @@
+@@ -196,8 +211,8 @@
  @@[[/div]]@@
  
  @@[[div class="news-block"]]@@
@@ -423,10 +430,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 11 — original 209–241 · candidate 227–259 · +9/−9 · translation</summary>
+<summary>Section 11 — original 209–241 · candidate 224–256 · +9/−9 · translation</summary>
 
 ```diff
-@@ -209,33 +227,33 @@
+@@ -209,33 +224,33 @@
  ###00308b|@@[[/div]]@@##
  [[/div]]
  
@@ -474,10 +481,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 12 — original 245–348 · candidate 263–368 · +34/−32 · residual, translation</summary>
+<summary>Section 12 — original 245–348 · candidate 260–365 · +34/−32 · residual, translation</summary>
 
 ```diff
-@@ -245,104 +263,106 @@
+@@ -245,104 +260,106 @@
  @@[[div class="columns-2"]]@@
  @@@@
  @@[[div class="featured-block"]]@@
@@ -621,10 +628,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 13 — original 350–357 · candidate 370–376 · +1/−2 · translation</summary>
+<summary>Section 13 — original 350–357 · candidate 367–373 · +1/−2 · translation</summary>
 
 ```diff
-@@ -350,8 +370,7 @@
+@@ -350,8 +367,7 @@
  -----
  
  [[=image https://scpsandboxcn.wikidot.com/local--files/semimonth/20260302S3]]
@@ -639,10 +646,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 14 — original 360–372 · candidate 379–391 · +3/−3 · translation</summary>
+<summary>Section 14 — original 360–372 · candidate 376–388 · +3/−3 · translation</summary>
 
 ```diff
-@@ -360,13 +379,13 @@
+@@ -360,13 +376,13 @@
  @@[[/div]]@@
  [[/div]]
  
@@ -664,10 +671,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 15 — original 376–403 · candidate 395–422 · +5/−5 · translation</summary>
+<summary>Section 15 — original 376–403 · candidate 392–419 · +5/−5 · translation</summary>
 
 ```diff
-@@ -376,28 +395,28 @@
+@@ -376,28 +392,28 @@
  @@[[/div]]@@
  [[/div]]
  
@@ -706,10 +713,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 16 — original 406–413 · candidate 425–432 · +2/−2 · translation</summary>
+<summary>Section 16 — original 406–413 · candidate 422–429 · +2/−2 · translation</summary>
 
 ```diff
-@@ -406,8 +425,8 @@
+@@ -406,8 +422,8 @@
  @@[[div class="stream"]]@@
  @@@@
  @@[[div class="stream-image"]]@@
@@ -725,10 +732,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 17 — original 415–427 · candidate 434–446 · +3/−3 · supplement, translation</summary>
+<summary>Section 17 — original 415–427 · candidate 431–443 · +3/−3 · supplement, translation</summary>
 
 ```diff
-@@ -415,13 +434,13 @@
+@@ -415,13 +431,13 @@
  
  -----
  
@@ -750,10 +757,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 18 — original 448–458 · candidate 467–477 · +5/−5 · residual</summary>
+<summary>Section 18 — original 448–458 · candidate 464–474 · +5/−5 · residual</summary>
 
 ```diff
-@@ -448,11 +467,11 @@
+@@ -448,11 +464,11 @@
    --p-header-logo-background: url('https://cdn.mer.run/i/2026/05/11/6a019930dc071.png');
  }
  
@@ -775,10 +782,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 19 — original 461–467 · candidate 480–486 · +1/−1 · residual</summary>
+<summary>Section 19 — original 461–467 · candidate 477–483 · +1/−1 · residual</summary>
 
 ```diff
-@@ -461,7 +480,7 @@
+@@ -461,7 +477,7 @@
  }
  
  div#container-wrap {
@@ -792,10 +799,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 20 — original 685–691 · candidate 704–710 · +1/−1 · translation</summary>
+<summary>Section 20 — original 685–691 · candidate 701–707 · +1/−1 · translation</summary>
 
 ```diff
-@@ -685,7 +704,7 @@
+@@ -685,7 +701,7 @@
  
  }
  
@@ -809,10 +816,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 21 — original 933–939 · candidate 952–958 · +1/−1 · translation</summary>
+<summary>Section 21 — original 933–939 · candidate 949–955 · +1/−1 · translation</summary>
 
 ```diff
-@@ -933,7 +952,7 @@
+@@ -933,7 +949,7 @@
  }
  
  .excerpts-wrap .excerpts-chapter[style*="{$"], .excerpts-wrap .excerpts-author[style*="{$"], .excerpts-wrap .excerpts-rate[style*="{$"], .excerpts-wrap .excerpts-comment[style*="{$"], .excerpts-wrap .excerpts-tags[style*="{$"], .excerpts-wrap .excerpts-trans[style*="{$"], .excerpts-interest, .excerpts-author .fa.fa-pencil-square-o {
@@ -826,10 +833,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 22 — original 1100–1105 · candidate 1119–1126 · +2/−0 · residual</summary>
+<summary>Section 22 — original 1100–1105 · candidate 1116–1123 · +2/−0 · residual</summary>
 
 ```diff
-@@ -1100,6 +1119,8 @@
+@@ -1100,6 +1116,8 @@
  [[/code]]
  [[/collapsible]]
  
@@ -843,10 +850,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 23 — original 1141–1153 · candidate 1162–1172 · +2/−4 · residual, supplement</summary>
+<summary>Section 23 — original 1141–1153 · candidate 1159–1169 · +2/−4 · residual, supplement</summary>
 
 ```diff
-@@ -1141,13 +1162,11 @@
+@@ -1141,13 +1159,11 @@
  
  [[/module]]
  
@@ -867,10 +874,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 24 — original 1237–1246 · candidate 1256–1264 · +1/−2 · mechanical, translation</summary>
+<summary>Section 24 — original 1237–1246 · candidate 1253–1261 · +1/−2 · mechanical, translation</summary>
 
 ```diff
-@@ -1237,10 +1256,9 @@
+@@ -1237,10 +1253,9 @@
  }
  
  /{$no-menu} */
@@ -882,22 +889,6 @@ adjudicated explanation.
  [[module css]]
  @media (min-width: 768px) {
  
-```
-
-</details>
-
-<details>
-<summary>Section 25 — original 1315–1317 · candidate 1333–1339 · +4/−0 · residual</summary>
-
-```diff
-@@ -1315,3 +1333,7 @@
- [[div class="side-menu"]]
- [[toc]]
- [[/div]]
-+
-+[[div class="side-menu"]]
-+[[toc]]
-+[[/div]]
 ```
 
 </details>

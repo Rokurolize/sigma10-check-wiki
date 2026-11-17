@@ -104,7 +104,7 @@ with `python3 review/build_review.py`; verify with
 -This theme is designed for use in Queerious' works, and is available to anyone else that prefers the subtle center alignment of BLANKSTYLE, but for works set outside of Site-43.
 +このテーマはQueeriousの作品で使うために設計されていますが、BLANKSTYLEの控えめな中央揃えを好みつつ、サイト-43以外を舞台にした作品で使いたい人なら誰でも利用できます。
 +
-+**フォント:** 使用している欧文・和文書体はいずれもGoogle Fontsで配信されるオープンライセンスの書体です（SIL Open Font License など）。日本語文字はNoto Sans JPにフォールバックします。
++**フォント:** 使用している欧文・和文書体はいずれもGoogle Fontsで配信されるオープンライセンスの書体です（SIL Open Font License など）。このテーマのpseudo-divスタイルでは、日本語文字はNoto Sans JPにフォールバックします。
  
  [[/iftags]]
  

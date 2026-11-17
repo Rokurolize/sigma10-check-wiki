@@ -3,7 +3,8 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:rima-jp — origin CN, population #221 [GOSIGN2-LEDGER (b) row 221]
-- Overall: PASS — NOT PASS at the ledger determination (section (e) register); both OPEN items re-judged FIXED / DISPOSITIONED by the FIX5 wave; go-sign issued 2026-11-17 (COMPLETION-REPORT §10) [GOSIGN2-LEDGER (b); GOSIGN2-LEDGER-SUPPLEMENT (d)]
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now b2d09d842ee0870b4205380e1935222561f4e8c50d2fe9e80836d99f4b75f8e0); verdict not carried over, re-judgement required
+> verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 19 errors / 3 warns / 2 infos (hotlink×15, foreign-include×3, pseudo-ref×1); standing classes dispositioned in register c1 [T1-ROWS row 246; GOSIGN2-LEDGER (b) row 221]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page-overflow 325px@320 + sidebar-unreachable (4 combos) + candidate-own runtime hosts (cdn.mer.run, oxygennine.wdfiles.com / oxygennine.wikidot.com, scpsandboxcn chain) recorded verbatim; sample T2 no machine verdict (exit 2, no summary). [RENDER-ROWS-2 (RENDER-S2-F (CN12))]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row (the row records inconclusive runs, carried verbatim above) [RENDER-ROWS-2 row]
@@ -11,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 2 [LOCALIZE-ROWS row 220, source LOCALIZE-S2-E]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 220]
 - FIX5 re-judgement: items 73 (class A) FIXED, 74 (class F) DISPOSITIONED — FIX5-FUNC §9, commit 59130a2: component:excerpts-tool-jp ported from semimonth rev 9 with TASL (ruling 4); three includes repointed; checker foreign-include errors 19 -> 16, the three targeted errors gone FIX5-FUNC §9 (no edit): hover-reveal sidebar block candidate L1181-1250 byte-identical to original L1162-1231 (diff IDENTICAL); neither version carries a .open-menu a; the machine line reflects the original design; spot-verified for this supplement [GOSIGN2-LEDGER-SUPPLEMENT (a) items 73–74; (c) check 6]
-- Computed against: canonical commit 59130a21b1612f1f0949594e760aaafbeadcdaac; candidate file pages/theme:rima-jp.txt sha256:1f56e1f3168fb94999af6738659d830850d107a3ae5330bf00b6d704104d3df8; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit b1e1fe95acabd16c1f83a1387c750c2bf8ba433e; candidate file pages/theme:rima-jp.txt sha256:b2d09d842ee0870b4205380e1935222561f4e8c50d2fe9e80836d99f4b75f8e0; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 Status: complete - explanation written by lane R-disp-10, 2026-11-17; all skeleton markers resolved
@@ -305,6 +306,10 @@ Second-reviewer walk. The ground is checkable from this package alone: extract t
 - T1 warn count: T1-ROWS row 246 (and the stamp) record the baseline as 19 errors / 3 warns / 2 infos; FIX5-FUNC section 9's own before-run records 19 / 2 / 2. Error and info counts agree everywhere; the warn count differs between records. Recorded, not resolved.
 - The ledger's line numbers for item 73's includes (L311/317/322) are the pre-fix candidate's; the fixed includes stand at candidate L316/322/327. No discrepancy of substance.
 - Sources.tsv note correction (for the coordinator's harvest): the rima row's note claims the original was "superseded upstream since the reference revision". Its own cited artifact (diff-rima-from10.txt) records scp-wiki-cn theme:rima revision 10 to revision 10, no changes. The correct form: "Upstream latest remains rev 10; the K5a-i artifact records rev10 to rev10, no changes; follow-up diff artifact diff-rima-from10.txt in the campaign record (K5a-i)". The companion-file clause of the note is correct and stands.
+
+### Repairs landed after this package was built
+
+- F1 and F2 repaired by FIX-RDISP10 (record R/review-scout/FIX-RDISP10.md), landed in commit b1e1fe9: the bare [[module rate]] block (old candidate L27-29) is removed in the shoebill form, so the credit:start-preview block is the sole rate-bearing form and the checker's double-rate info is resolved; the duplicated tail side-menu block (old candidate L1337-1339) is deleted, the standalone-block census is now 1, equal to the original, and the file ends with a trailing newline. Checker after-state: 16 errors / 2 warns / 1 info, the same finding multiset as before at shifted line numbers, no new finding of any class. candidate.txt is recopied from the repaired candidate in this refresh; the regenerated stamp reads STALE, no re-judgement is fabricated, and the frozen ledger remains the verdict record.
 
 ## Appendix - residue and heuristic blocks
 

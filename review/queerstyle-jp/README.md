@@ -3,7 +3,8 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:queerstyle-jp — origin EN, population #126 [GOSIGN2-LEDGER (b) row 126]
-- Overall: PASS — NOT PASS at the ledger determination (section (e) register); both OPEN items re-judged DISPOSITIONED with grounds by the FIX5 wave; go-sign issued 2026-11-17 (COMPLETION-REPORT §10) [GOSIGN2-LEDGER (b); GOSIGN2-LEDGER-SUPPLEMENT (d)]
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now a82832d74635c81c0c4474aaf60ce40ba2f5717f4661c8ab980a5be8c4726d2c); verdict not carried over, re-judgement required
+> verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 2 errors / 1 warn / 0 infos (pseudo-ref×2); standing classes dispositioned in register c1 [T1-ROWS row 151; GOSIGN2-LEDGER (b) row 126]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page hidden-rate (all combos) + runtime-hotlink site-theme chain; sample T2 no machine verdict (exit 2); T3 rainbow pride logo overprints the SCP財団 header wordmark and account/search links at 375/320 (both engines, candidate header interference); credit panel dark/blank at 1366. [RENDER-ROWS-2 (RENDER-S2-C (EN17))]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row (the row records inconclusive runs, carried verbatim above) [RENDER-ROWS-2 row]
@@ -11,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 2 [LOCALIZE-ROWS row 126, source LOCALIZE-S2-C]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 126]
 - FIX5 re-judgement: items 22 (class F) DISPOSITIONED, 23 (class F) DISPOSITIONED — FIX5-FUNC §5 (no edit): logo rule placement, height and identity unchanged vs original (diff shows only header language, ruling 2, and the asset host); overprint is the original fork's design; observation predates the FIX4-IWA interwiki frame now present at L9-12; the credit area is credit:start-preview (L16-25), whose rendering is a preview-form property (KB-32 class, ledger s(d) item 5); no re-measurement records persistence and no candidate-side cause is pointable. Narrowest disposition of this wave; see s(d) note [GOSIGN2-LEDGER-SUPPLEMENT (a) items 22–23]
-- Computed against: canonical commit 379eb44032d541453098c3177e0b1e3fc62c5964; candidate file pages/theme:queerstyle-jp.txt sha256:86c4d603464bf27b0bae451221a480bf670469ef7cd4f923497138607fc7b002; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit b1e1fe95acabd16c1f83a1387c750c2bf8ba433e; candidate file pages/theme:queerstyle-jp.txt sha256:a82832d74635c81c0c4474aaf60ce40ba2f5717f4661c8ab980a5be8c4726d2c; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 Status: complete - explanation written by lane R-disp-10, 2026-11-17; all skeleton markers resolved
@@ -251,6 +252,10 @@ Second-reviewer walk. This is, in the supplement's own words, the narrowest disp
 - The localize lane's report records the credit translator field under its earlier value; FIX-CREDIT-D (1869877) changed the field, and the current bytes carry the campaign's AI attribution. The bytes govern.
 - The T1 baseline's single warn (T1-ROWS row 151) is not itemized by kind in the record; the current checker run reports no warns (section 12). No discrepancy is charged.
 - The sources.tsv note field for this row is empty; the T4 follow-up confirms revision 51 remains current, so no supersession note arises.
+
+### Repair landed after this package was built
+
+- F1 repaired by FIX-RDISP10 (record R/review-scout/FIX-RDISP10.md), landed in commit b1e1fe9: the porter font note at candidate L65 is narrowed to the theme's own .pseudo-div stacks (its second sentence now states the Noto Sans JP fallback for this theme's pseudo-div styles only); no CSS was touched. One precision from the fix lane: this README's section 4 calls blankstyle-jp's stacks Latin-only, but blankstyle-jp's header and heading stacks do name 'Noto Sans JP' behind Montserrat (its body rule sets no font-family); the defect and remedy are unaffected, since the note claimed the fallback for queerstyle's own delivery, where it exists only in the .pseudo-div stacks. candidate.txt is recopied from the repaired candidate in this refresh; the regenerated stamp reads STALE, no re-judgement is fabricated, and the frozen ledger remains the verdict record.
 
 ## Appendix - residue and heuristic blocks
 
