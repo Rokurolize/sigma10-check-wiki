@@ -1,0 +1,602 @@
+{
+ "tool": "classify_hunks.py",
+ "classifier_version": "0.1.0",
+ "signature_table_version": "2026-11-17.1",
+ "theme": {
+  "dir": "3law-pride-jp",
+  "cand_fullname": "theme:3law-pride-jp",
+  "orig_fullname": "theme:3law-pride",
+  "wiki": "scp-wiki",
+  "revision": "7",
+  "kind": "standard",
+  "verdict": "PASS",
+  "original_file": "3law-pride-jp/original.txt",
+  "candidate_file": "3law-pride-jp/candidate.txt",
+  "original_sha256": "a551f8633159e87453d2ac513f53d5494171a587eb753243e51832d3092f9434",
+  "candidate_sha256": "f59fc9fa8227247d713c4c2f70d3149689dddeaf0467d03e834095f455a986c9",
+  "original_lines": 36,
+  "candidate_lines": 389
+ },
+ "topology": {
+  "original_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     1,
+     4
+    ],
+    "lines": 3
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     14,
+     31
+    ],
+    "lines": 17
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     33,
+     36
+    ],
+    "lines": 3
+   }
+  ],
+  "candidate_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     24,
+     387
+    ],
+    "lines": 363
+   }
+  ],
+  "moves": [
+   {
+    "from_kind": "code-css",
+    "to_kind": "module-css",
+    "orig_range": [
+     14,
+     31
+    ],
+    "cand_range": [
+     24,
+     387
+    ],
+    "similarity": 0.867,
+    "basis": "content"
+   },
+   {
+    "from_kind": "external-own-delivery",
+    "to_kind": "module-css",
+    "orig_range": null,
+    "cand_range": [
+     24,
+     387
+    ],
+    "similarity": null,
+    "basis": "candidate-side",
+    "caveat": "companion body unavailable; candidate-side only"
+   }
+  ],
+  "external_own_delivery": true
+ },
+ "blocks": [
+  {
+   "id": "B1",
+   "orig_range": [
+    0,
+    1
+   ],
+   "cand_range": [
+    0,
+    24
+   ],
+   "orig_lines": "1-1",
+   "cand_lines": "1-24",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "CREDIT-PREVIEW",
+    "DRAFT-HOST",
+    "IFTAGS",
+    "SELF-DELIVERY",
+    "TASL-FIELDS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "CREDIT-PREVIEW",
+   "primary_section": 1,
+   "label_prec": {
+    "CREDIT-PREVIEW": "A",
+    "TASL-FIELDS": "A",
+    "IFTAGS": "A",
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "CREDIT-PREVIEW": {
+     "cand": [
+      [
+       7,
+       8
+      ],
+      [
+       16,
+       17
+      ]
+     ]
+    },
+    "TASL-FIELDS": {
+     "cand": [
+      [
+       8,
+       16
+      ]
+     ]
+    },
+    "IFTAGS": {
+     "orig": [
+      [
+       0,
+       1
+      ]
+     ],
+     "cand": [
+      [
+       5,
+       6
+      ]
+     ]
+    },
+    "SELF-DELIVERY": {
+     "orig": [],
+     "cand": [
+      [
+       2,
+       3
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       2,
+       3
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "class (iii) draft-stage form",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[iftags +theme]]",
+   "first_added": "[[include :scp-jp:component:interwiki-style"
+  },
+  {
+   "id": "B2",
+   "orig_range": [
+    2,
+    4
+   ],
+   "cand_range": [
+    25,
+    25
+   ],
+   "orig_lines": "3-4",
+   "cand_lines": "at 26",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [
+    "CSS-BODY"
+   ],
+   "primary": "CSS-BODY",
+   "primary_section": 8,
+   "label_prec": {
+    "CSS-BODY": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "CSS-BODY": {}
+   },
+   "notes": [
+    "no other signature matched"
+   ],
+   "partial_notes": [
+    "BASE-DELIVERY/CROSS-IMPORT? theme:3law (include graph needed to decide base vs cross)"
+   ],
+   "first_removed": "@import url('https://scp-wiki.wdfiles.com/local--code/theme%3A3law/1');",
+   "first_added": ""
+  },
+  {
+   "id": "B3",
+   "orig_range": [
+    5,
+    8
+   ],
+   "cand_range": [
+    26,
+    28
+   ],
+   "orig_lines": "6-8",
+   "cand_lines": "27-28",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "BARE-RATE-DEL",
+    "DELIVERY-MOVE",
+    "JPFONT-LOAD"
+   ],
+   "primary": "BARE-RATE-DEL",
+   "primary_section": 1,
+   "label_prec": {
+    "BARE-RATE-DEL": "B",
+    "JPFONT-LOAD": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "BARE-RATE-DEL": {
+     "orig": [
+      [
+       6,
+       7
+      ]
+     ]
+    },
+    "JPFONT-LOAD": {
+     "cand": [
+      [
+       26,
+       27
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       26,
+       28
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "absence claim needs base subtraction (resolved base)"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[>]]",
+   "first_added": "@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');"
+  },
+  {
+   "id": "B4",
+   "orig_range": [
+    9,
+    10
+   ],
+   "cand_range": [
+    29,
+    38
+   ],
+   "orig_lines": "10-10",
+   "cand_lines": "30-38",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       29,
+       38
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "This is a variant theme for the [[[third-law-hub|Third Law]]] canon. Using this theme requires the base Third Law Theme. To use this theme, put the following on any page:",
+   "first_added": "/*"
+  },
+  {
+   "id": "B5",
+   "orig_range": [
+    11,
+    13
+   ],
+   "cand_range": [
+    39,
+    43
+   ],
+   "orig_lines": "12-13",
+   "cand_lines": "40-43",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       39,
+       43
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "> @@[[include theme:3law]]@@",
+   "first_added": "/* COMMON */"
+  },
+  {
+   "id": "B6",
+   "orig_range": [
+    14,
+    15
+   ],
+   "cand_range": [
+    44,
+    358
+   ],
+   "orig_lines": "15-15",
+   "cand_lines": "45-358",
+   "channel_pair": [
+    "code-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "EXHIBIT-RESTRUCTURE"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "EXHIBIT-RESTRUCTURE": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "EXHIBIT-RESTRUCTURE": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       44,
+       358
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[code type=\"css\"]]",
+   "first_added": "#page-title {"
+  },
+  {
+   "id": "B7",
+   "orig_range": [
+    21,
+    22
+   ],
+   "cand_range": [
+    364,
+    365
+   ],
+   "orig_lines": "22-22",
+   "cand_lines": "365-365",
+   "channel_pair": [
+    "code-css",
+    "module-css"
+   ],
+   "labels": [
+    "WS-ONLY"
+   ],
+   "primary": "WS-ONLY",
+   "primary_section": 9,
+   "label_prec": {
+    "WS-ONLY": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "WS-ONLY": {}
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": " "
+  },
+  {
+   "id": "B8",
+   "orig_range": [
+    26,
+    27
+   ],
+   "cand_range": [
+    369,
+    370
+   ],
+   "orig_lines": "27-27",
+   "cand_lines": "370-370",
+   "channel_pair": [
+    "code-css",
+    "module-css"
+   ],
+   "labels": [
+    "WS-ONLY"
+   ],
+   "primary": "WS-ONLY",
+   "primary_section": 9,
+   "label_prec": {
+    "WS-ONLY": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "WS-ONLY": {}
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": " "
+  },
+  {
+   "id": "B9",
+   "orig_range": [
+    30,
+    31
+   ],
+   "cand_range": [
+    373,
+    388
+   ],
+   "orig_lines": "31-31",
+   "cand_lines": "374-388",
+   "channel_pair": [
+    "code-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "T7-CREDIT-CSS"
+   ],
+   "primary": "T7-CREDIT-CSS",
+   "primary_section": 1,
+   "label_prec": {
+    "T7-CREDIT-CSS": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "T7-CREDIT-CSS": {
+     "cand": [
+      [
+       377,
+       381
+      ],
+      [
+       382,
+       385
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       373,
+       388
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "supplement-vs-inherited needs the production counterpart"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[/code]]",
+   "first_added": ""
+  },
+  {
+   "id": "B10",
+   "orig_range": [
+    32,
+    36
+   ],
+   "cand_range": [
+    389,
+    389
+   ],
+   "orig_lines": "33-36",
+   "cand_lines": "at 390",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "SELF-DELIVERY"
+   ],
+   "primary": "SELF-DELIVERY",
+   "primary_section": 3,
+   "label_prec": {
+    "SELF-DELIVERY": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "SELF-DELIVERY": {
+     "orig": [
+      [
+       34,
+       35
+      ]
+     ],
+     "cand": []
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": ""
+  }
+ ],
+ "derived_presence": {},
+ "summary": {
+  "blocks": 10,
+  "specific": 9,
+  "heuristic": 1,
+  "residue": 0,
+  "skipped": 0,
+  "reindent_blocks": 0,
+  "label_counts": {
+   "CREDIT-PREVIEW": 1,
+   "DRAFT-HOST": 1,
+   "IFTAGS": 1,
+   "SELF-DELIVERY": 2,
+   "TASL-FIELDS": 1,
+   "TRANS-UNANCHORED": 1,
+   "CSS-BODY": 1,
+   "BARE-RATE-DEL": 1,
+   "DELIVERY-MOVE": 5,
+   "JPFONT-LOAD": 1,
+   "EXHIBIT-RESTRUCTURE": 1,
+   "WS-ONLY": 2,
+   "T7-CREDIT-CSS": 1
+  }
+ },
+ "residue": [],
+ "skeleton": {
+  "sha256": "e62a6d39eeee0f8301b770b78d8b06b3d5df9bd3faf536acc9cbc76585bc2e4c",
+  "status": "written (new)"
+ }
+}

@@ -1,0 +1,942 @@
+{
+ "tool": "classify_hunks.py",
+ "classifier_version": "0.1.0",
+ "signature_table_version": "2026-11-17.1",
+ "theme": {
+  "dir": "aces-and-eights-jp",
+  "cand_fullname": "theme:aces-and-eights-jp",
+  "orig_fullname": "theme:aces-and-eights",
+  "wiki": "scp-wiki",
+  "revision": "26",
+  "kind": "standard",
+  "verdict": "PASS",
+  "original_file": "aces-and-eights-jp/original.txt",
+  "candidate_file": "aces-and-eights-jp/candidate.txt",
+  "original_sha256": "eebce8a7669023b3df948fc8b8340c493762f4de9e496fff7e6a0b62114fe208",
+  "candidate_sha256": "13cbd176aa385e5a491b34b0f5fbff3cd7fe954a7e1af8364aab246ef3d16e27",
+  "original_lines": 228,
+  "candidate_lines": 231
+ },
+ "topology": {
+  "original_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     0,
+     3
+    ],
+    "lines": 3
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     20,
+     226
+    ],
+    "lines": 206
+   }
+  ],
+  "candidate_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     24,
+     229
+    ],
+    "lines": 205
+   }
+  ],
+  "moves": [
+   {
+    "from_kind": "code-css",
+    "to_kind": "module-css",
+    "orig_range": [
+     20,
+     226
+    ],
+    "cand_range": [
+     24,
+     229
+    ],
+    "similarity": 0.953,
+    "basis": "content"
+   },
+   {
+    "from_kind": "external-own-delivery",
+    "to_kind": "module-css",
+    "orig_range": null,
+    "cand_range": [
+     24,
+     229
+    ],
+    "similarity": null,
+    "basis": "candidate-side",
+    "caveat": "companion body unavailable; candidate-side only"
+   }
+  ],
+  "external_own_delivery": true
+ },
+ "blocks": [
+  {
+   "id": "B1",
+   "orig_range": [
+    0,
+    5
+   ],
+   "cand_range": [
+    0,
+    1
+   ],
+   "orig_lines": "1-5",
+   "cand_lines": "1-1",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [
+    "EXHIBIT-RESTRUCTURE",
+    "INCLUDE-REPOINT",
+    "SELF-DELIVERY"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "INCLUDE-REPOINT": "A",
+    "SELF-DELIVERY": "A",
+    "EXHIBIT-RESTRUCTURE": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "INCLUDE-REPOINT": {
+     "orig": [
+      [
+       4,
+       5
+      ]
+     ],
+     "cand": [
+      [
+       0,
+       1
+      ]
+     ]
+    },
+    "SELF-DELIVERY": {
+     "orig": [
+      [
+       1,
+       2
+      ]
+     ],
+     "cand": []
+    },
+    "EXHIBIT-RESTRUCTURE": {}
+   },
+   "notes": [
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[module CSS]]",
+   "first_added": "[[include :scp-jp:component:interwiki-style"
+  },
+  {
+   "id": "B2",
+   "orig_range": [
+    6,
+    7
+   ],
+   "cand_range": [
+    2,
+    3
+   ],
+   "orig_lines": "7-7",
+   "cand_lines": "3-3",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "DELIVERY-HOST",
+    "DRAFT-HOST",
+    "SELF-DELIVERY"
+   ],
+   "primary": "DELIVERY-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-HOST": "A",
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DELIVERY-HOST": {
+     "orig": [
+      [
+       6,
+       7
+      ]
+     ],
+     "cand": [
+      [
+       2,
+       3
+      ]
+     ]
+    },
+    "SELF-DELIVERY": {
+     "orig": [
+      [
+       6,
+       7
+      ]
+     ],
+     "cand": [
+      [
+       2,
+       3
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       2,
+       3
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "| theme=https://scp-wiki.wdfiles.com/local--code/theme%3Aaces-and-eights/1",
+   "first_added": "| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aaces-and-eights-jp/1"
+  },
+  {
+   "id": "B3",
+   "orig_range": [
+    9,
+    9
+   ],
+   "cand_range": [
+    5,
+    6
+   ],
+   "orig_lines": "at 10",
+   "cand_lines": "6-6",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "IFTAGS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "IFTAGS",
+   "primary_section": 2,
+   "label_prec": {
+    "IFTAGS": "A",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "IFTAGS": {
+     "orig": [],
+     "cand": [
+      [
+       5,
+       6
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": "[[iftags +テーマ]]"
+  },
+  {
+   "id": "B4",
+   "orig_range": [
+    10,
+    11
+   ],
+   "cand_range": [
+    7,
+    17
+   ],
+   "orig_lines": "11-11",
+   "cand_lines": "8-17",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "CREDIT-PREVIEW",
+    "CREDIT-PROSE",
+    "IFTAGS",
+    "TASL-FIELDS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "CREDIT-PREVIEW",
+   "primary_section": 1,
+   "label_prec": {
+    "CREDIT-PREVIEW": "A",
+    "TASL-FIELDS": "A",
+    "IFTAGS": "A",
+    "TRANS-UNANCHORED": "C",
+    "CREDIT-PROSE": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "CREDIT-PREVIEW": {
+     "cand": [
+      [
+       7,
+       8
+      ],
+      [
+       16,
+       17
+      ]
+     ]
+    },
+    "TASL-FIELDS": {
+     "cand": [
+      [
+       8,
+       16
+      ]
+     ]
+    },
+    "IFTAGS": {
+     "orig": [
+      [
+       10,
+       11
+      ]
+     ],
+     "cand": []
+    },
+    "TRANS-UNANCHORED": {},
+    "CREDIT-PROSE": {}
+   },
+   "notes": [
+    "script delta without the anchor majority",
+    "position: inside the credit include pair"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[iftags +theme]]",
+   "first_added": "[[include :scp-jp:credit:start-preview]]"
+  },
+  {
+   "id": "B5",
+   "orig_range": [
+    12,
+    15
+   ],
+   "cand_range": [
+    18,
+    19
+   ],
+   "orig_lines": "13-15",
+   "cand_lines": "19-19",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "BARE-RATE-DEL",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "BARE-RATE-DEL",
+   "primary_section": 1,
+   "label_prec": {
+    "BARE-RATE-DEL": "B",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "B",
+   "label_spans": {
+    "BARE-RATE-DEL": {
+     "orig": [
+      [
+       13,
+       14
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[>]]",
+   "first_added": "西部劇とギャンブルをモチーフにしたテーマです。"
+  },
+  {
+   "id": "B6",
+   "orig_range": [
+    16,
+    17
+   ],
+   "cand_range": [
+    20,
+    21
+   ],
+   "orig_lines": "17-17",
+   "cand_lines": "21-21",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "This is a theme for the [[[aces-and-eights|Aces and Eights]]] canon. To use this theme, put the following on any page:",
+   "first_added": "**使い方:** @@[[include theme:aces-and-eights-jp]]@@"
+  },
+  {
+   "id": "B7",
+   "orig_range": [
+    18,
+    19
+   ],
+   "cand_range": [
+    22,
+    23
+   ],
+   "orig_lines": "19-19",
+   "cand_lines": "23-23",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "> @@[[include theme:aces-and-eights]]@@",
+   "first_added": "**基盤:** 単体"
+  },
+  {
+   "id": "B8",
+   "orig_range": [
+    20,
+    21
+   ],
+   "cand_range": [
+    24,
+    25
+   ],
+   "orig_lines": "21-21",
+   "cand_lines": "25-25",
+   "channel_pair": [
+    "code-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "EXHIBIT-RESTRUCTURE"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "EXHIBIT-RESTRUCTURE": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "EXHIBIT-RESTRUCTURE": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       24,
+       25
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[code type=\"css\"]]",
+   "first_added": "[[module CSS]]"
+  },
+  {
+   "id": "B9",
+   "orig_range": [
+    22,
+    22
+   ],
+   "cand_range": [
+    26,
+    27
+   ],
+   "orig_lines": "at 23",
+   "cand_lines": "27-27",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "JPFONT-LOAD"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "JPFONT-LOAD": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "JPFONT-LOAD": {
+     "cand": [
+      [
+       26,
+       27
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       26,
+       27
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "absence claim needs base subtraction (resolved base)"
+   ],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": "@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');"
+  },
+  {
+   "id": "B10",
+   "orig_range": [
+    30,
+    31
+   ],
+   "cand_range": [
+    35,
+    36
+   ],
+   "orig_lines": "31-31",
+   "cand_lines": "36-36",
+   "channel_pair": [
+    "code-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "FONT-IMPORT"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "FONT-IMPORT": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "FONT-IMPORT": {
+     "orig": [],
+     "cand": [
+      [
+       35,
+       36
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       35,
+       36
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "the deciding evidence is the load probe (KB-04)"
+   ],
+   "partial_notes": [],
+   "first_removed": "@import url('https://fonts.bunny.net/css?family=Playfair+Display+SC');",
+   "first_added": "@import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC');"
+  },
+  {
+   "id": "B11",
+   "orig_range": [
+    33,
+    36
+   ],
+   "cand_range": [
+    38,
+    39
+   ],
+   "orig_lines": "34-36",
+   "cand_lines": "39-39",
+   "channel_pair": [
+    "code-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       38,
+       39
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "#header{",
+   "first_added": "#header{}"
+  },
+  {
+   "id": "B12",
+   "orig_range": [
+    79,
+    80
+   ],
+   "cand_range": [
+    82,
+    83
+   ],
+   "orig_lines": "80-80",
+   "cand_lines": "83-83",
+   "channel_pair": [
+    "code-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "JPFONT-STACK"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "JPFONT-STACK": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "JPFONT-STACK": {
+     "orig": [
+      [
+       79,
+       80
+      ]
+     ],
+     "cand": [
+      [
+       82,
+       83
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       82,
+       83
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    font-family: 'Playfair Display SC', serif;",
+   "first_added": "    font-family: 'Playfair Display SC', \"Noto Sans JP\", serif;"
+  },
+  {
+   "id": "B13",
+   "orig_range": [
+    91,
+    92
+   ],
+   "cand_range": [
+    94,
+    95
+   ],
+   "orig_lines": "92-92",
+   "cand_lines": "95-95",
+   "channel_pair": [
+    "code-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "JPFONT-STACK"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "JPFONT-STACK": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "JPFONT-STACK": {
+     "orig": [
+      [
+       91,
+       92
+      ]
+     ],
+     "cand": [
+      [
+       94,
+       95
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       94,
+       95
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    font-family: 'Playfair Display SC', serif;",
+   "first_added": "    font-family: 'Playfair Display SC', \"Noto Sans JP\", serif;"
+  },
+  {
+   "id": "B14",
+   "orig_range": [
+    167,
+    168
+   ],
+   "cand_range": [
+    170,
+    171
+   ],
+   "orig_lines": "168-168",
+   "cand_lines": "171-171",
+   "channel_pair": [
+    "code-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "JPFONT-STACK"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "JPFONT-STACK": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "JPFONT-STACK": {
+     "orig": [
+      [
+       167,
+       168
+      ]
+     ],
+     "cand": [
+      [
+       170,
+       171
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       170,
+       171
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    font-family: 'Playfair Display SC', serif;",
+   "first_added": "    font-family: 'Playfair Display SC', \"Noto Sans JP\", serif;"
+  },
+  {
+   "id": "B15",
+   "orig_range": [
+    182,
+    183
+   ],
+   "cand_range": [
+    185,
+    186
+   ],
+   "orig_lines": "183-183",
+   "cand_lines": "186-186",
+   "channel_pair": [
+    "code-css",
+    "module-css"
+   ],
+   "labels": [
+    "WS-ONLY"
+   ],
+   "primary": "WS-ONLY",
+   "primary_section": 9,
+   "label_prec": {
+    "WS-ONLY": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "WS-ONLY": {}
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": " "
+  },
+  {
+   "id": "B16",
+   "orig_range": [
+    216,
+    217
+   ],
+   "cand_range": [
+    219,
+    220
+   ],
+   "orig_lines": "217-217",
+   "cand_lines": "220-220",
+   "channel_pair": [
+    "code-css",
+    "module-css"
+   ],
+   "labels": [
+    "WS-ONLY"
+   ],
+   "primary": "WS-ONLY",
+   "primary_section": 9,
+   "label_prec": {
+    "WS-ONLY": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "WS-ONLY": {}
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": " "
+  },
+  {
+   "id": "B17",
+   "orig_range": [
+    225,
+    226
+   ],
+   "cand_range": [
+    228,
+    229
+   ],
+   "orig_lines": "226-226",
+   "cand_lines": "229-229",
+   "channel_pair": [
+    "code-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       228,
+       229
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[/code]]",
+   "first_added": "[[/module]]"
+  }
+ ],
+ "derived_presence": {},
+ "summary": {
+  "blocks": 17,
+  "specific": 15,
+  "heuristic": 1,
+  "residue": 1,
+  "skipped": 0,
+  "reindent_blocks": 0,
+  "label_counts": {
+   "EXHIBIT-RESTRUCTURE": 2,
+   "INCLUDE-REPOINT": 1,
+   "SELF-DELIVERY": 2,
+   "DELIVERY-HOST": 1,
+   "DRAFT-HOST": 1,
+   "IFTAGS": 2,
+   "TRANS-UNANCHORED": 4,
+   "CREDIT-PREVIEW": 1,
+   "CREDIT-PROSE": 1,
+   "TASL-FIELDS": 1,
+   "BARE-RATE-DEL": 1,
+   "DELIVERY-MOVE": 8,
+   "JPFONT-LOAD": 1,
+   "FONT-IMPORT": 1,
+   "JPFONT-STACK": 3,
+   "WS-ONLY": 2
+  }
+ },
+ "residue": [
+  "B7"
+ ],
+ "skeleton": {
+  "sha256": "ad338ff665eb9f93b5484f1f911739367fb94f7532322b3be24b981ed1e1b735",
+  "status": "written (new)"
+ }
+}
