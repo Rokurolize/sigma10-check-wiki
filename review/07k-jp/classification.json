@@ -1,0 +1,618 @@
+{
+ "tool": "classify_hunks.py",
+ "classifier_version": "0.1.0",
+ "signature_table_version": "2026-11-17.1",
+ "theme": {
+  "dir": "07k-jp",
+  "cand_fullname": "theme:07k-jp",
+  "orig_fullname": "theme:07k",
+  "wiki": "scpko",
+  "revision": "3",
+  "kind": "standard",
+  "verdict": "PASS",
+  "original_file": "review/07k-jp/original.txt",
+  "candidate_file": "review/07k-jp/candidate.txt",
+  "original_sha256": "0ab68ddf3946c2ef2b3027e8143117ae51d31d81d9ad8006b6d93042ccc9c802",
+  "candidate_sha256": "742f7a142a89df69905fc2c8c7863654cd79d8fe23d217c655522bc8dda5ebdc",
+  "original_lines": 369,
+  "candidate_lines": 397
+ },
+ "topology": {
+  "original_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     4,
+     272
+    ],
+    "lines": 268
+   }
+  ],
+  "candidate_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     3,
+     6
+    ],
+    "lines": 3
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     118,
+     387
+    ],
+    "lines": 269
+   }
+  ],
+  "moves": [
+   {
+    "from_kind": "module-css",
+    "to_kind": "code-css",
+    "orig_range": [
+     4,
+     272
+    ],
+    "cand_range": [
+     118,
+     387
+    ],
+    "similarity": 0.932,
+    "basis": "content"
+   }
+  ],
+  "external_own_delivery": false
+ },
+ "blocks": [
+  {
+   "id": "B1",
+   "orig_range": [
+    0,
+    3
+   ],
+   "cand_range": [
+    0,
+    6
+   ],
+   "orig_lines": "1-3",
+   "cand_lines": "1-6",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "DRAFT-HOST",
+    "EXHIBIT-RESTRUCTURE",
+    "INCLUDE-REPOINT",
+    "SELF-DELIVERY"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "INCLUDE-REPOINT": "A",
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A",
+    "EXHIBIT-RESTRUCTURE": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "INCLUDE-REPOINT": {
+     "orig": [
+      [
+       0,
+       3
+      ]
+     ],
+     "cand": [
+      [
+       0,
+       3
+      ]
+     ]
+    },
+    "SELF-DELIVERY": {
+     "orig": [],
+     "cand": [
+      [
+       4,
+       5
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       4,
+       5
+      ]
+     ]
+    },
+    "EXHIBIT-RESTRUCTURE": {}
+   },
+   "notes": [
+    "class (iii) draft-stage form",
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[include :scpko:component:centered-header-sigma-9]]",
+   "first_added": "[[include :scp-jp:component:centered-header-sigma-9]]"
+  },
+  {
+   "id": "B2",
+   "orig_range": [
+    4,
+    11
+   ],
+   "cand_range": [
+    7,
+    12
+   ],
+   "orig_lines": "5-11",
+   "cand_lines": "8-12",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [
+    "DELIVERY-HOST",
+    "DELIVERY-MOVE",
+    "DRAFT-HOST",
+    "IFTAGS",
+    "SELF-DELIVERY",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "IFTAGS": "A",
+    "DELIVERY-HOST": "A",
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "IFTAGS": {
+     "orig": [],
+     "cand": [
+      [
+       11,
+       12
+      ]
+     ]
+    },
+    "DELIVERY-HOST": {
+     "orig": [
+      [
+       7,
+       8
+      ]
+     ],
+     "cand": [
+      [
+       9,
+       10
+      ]
+     ]
+    },
+    "SELF-DELIVERY": {
+     "orig": [],
+     "cand": [
+      [
+       9,
+       10
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       9,
+       10
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "orig": [
+      [
+       4,
+       11
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[module CSS]]",
+   "first_added": "[[include :scp-jp:component:interwiki-style"
+  },
+  {
+   "id": "B3",
+   "orig_range": [
+    12,
+    18
+   ],
+   "cand_range": [
+    13,
+    133
+   ],
+   "orig_lines": "13-18",
+   "cand_lines": "14-133",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "CREDIT-PREVIEW",
+    "DELIVERY-MOVE",
+    "FONT-IMPORT",
+    "JPFONT-LOAD",
+    "TASL-FIELDS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "CREDIT-PREVIEW",
+   "primary_section": 1,
+   "label_prec": {
+    "CREDIT-PREVIEW": "A",
+    "TASL-FIELDS": "A",
+    "JPFONT-LOAD": "A",
+    "FONT-IMPORT": "B",
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "CREDIT-PREVIEW": {
+     "cand": [
+      [
+       13,
+       14
+      ],
+      [
+       22,
+       23
+      ]
+     ]
+    },
+    "TASL-FIELDS": {
+     "cand": [
+      [
+       14,
+       22
+      ]
+     ]
+    },
+    "JPFONT-LOAD": {
+     "cand": [
+      [
+       119,
+       121
+      ]
+     ]
+    },
+    "FONT-IMPORT": {
+     "orig": [],
+     "cand": [
+      [
+       121,
+       122
+      ]
+     ]
+    },
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "orig": [
+      [
+       12,
+       18
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "absence claim needs base subtraction (resolved base)",
+    "the deciding evidence is the load probe (KB-04)",
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "@font-face {",
+   "first_added": "[[include :scp-jp:credit:start-preview]]"
+  },
+  {
+   "id": "B4",
+   "orig_range": [
+    24,
+    25
+   ],
+   "cand_range": [
+    139,
+    140
+   ],
+   "orig_lines": "25-25",
+   "cand_lines": "140-140",
+   "channel_pair": [
+    "module-css",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "DRAFT-HOST"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       139,
+       140
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       139,
+       140
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "  --lgurl: url('http://scpko.wdfiles.com/local--files/thd-glasses-art-works-page/Site-07K.png');",
+   "first_added": "  --lgurl: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3A07k-jp/site-07k.png');"
+  },
+  {
+   "id": "B5",
+   "orig_range": [
+    271,
+    272
+   ],
+   "cand_range": [
+    386,
+    388
+   ],
+   "orig_lines": "272-272",
+   "cand_lines": "387-388",
+   "channel_pair": [
+    "module-css",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       386,
+       388
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[/module]]",
+   "first_added": "[[/code]]"
+  },
+  {
+   "id": "B6",
+   "orig_range": [
+    273,
+    274
+   ],
+   "cand_range": [
+    389,
+    391
+   ],
+   "orig_lines": "274-274",
+   "cand_lines": "390-391",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "IFTAGS",
+    "LICENSE-BOX",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "LICENSE-BOX",
+   "primary_section": 1,
+   "label_prec": {
+    "LICENSE-BOX": "A",
+    "IFTAGS": "A",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "LICENSE-BOX": {
+     "cand": [
+      [
+       389,
+       390
+      ]
+     ]
+    },
+    "IFTAGS": {
+     "orig": [
+      [
+       273,
+       274
+      ]
+     ],
+     "cand": []
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "supplement (T4): the original carried no license box",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[iftags +테마]]",
+   "first_added": "[[include :scp-jp:component:license-box-backend"
+  },
+  {
+   "id": "B7",
+   "orig_range": [
+    275,
+    278
+   ],
+   "cand_range": [
+    392,
+    393
+   ],
+   "orig_lines": "276-278",
+   "cand_lines": "393-393",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "BARE-RATE-DEL",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "BARE-RATE-DEL",
+   "primary_section": 1,
+   "label_prec": {
+    "BARE-RATE-DEL": "B",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "B",
+   "label_spans": {
+    "BARE-RATE-DEL": {
+     "orig": [
+      [
+       276,
+       277
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[=]]",
+   "first_added": "> **画像・フォントの出典:** 原語版の theme:07k の記載に従います。KO 側の添付・ウェブフォントは候補ページに再ホストするか Google Fonts の同等書体に差し替えています。原語版にライセンス表記が無い画像は、投稿前に著者へ確認してください。"
+  },
+  {
+   "id": "B8",
+   "orig_range": [
+    279,
+    367
+   ],
+   "cand_range": [
+    394,
+    395
+   ],
+   "orig_lines": "280-367",
+   "cand_lines": "395-395",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "EXHIBIT-RESTRUCTURE",
+    "INFO-DEL",
+    "LICENSE-BOX"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "INFO-DEL": "A",
+    "LICENSE-BOX": "A",
+    "EXHIBIT-RESTRUCTURE": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "INFO-DEL": {
+     "orig": [
+      [
+       279,
+       280
+      ],
+      [
+       283,
+       284
+      ]
+     ]
+    },
+    "LICENSE-BOX": {
+     "cand": [
+      [
+       394,
+       395
+      ]
+     ]
+    },
+    "EXHIBIT-RESTRUCTURE": {}
+   },
+   "notes": [
+    "supplement (T4): the original carried no license box",
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[include :scpko:info:start]]",
+   "first_added": "[[include :scp-jp:component:license-box-end]]"
+  }
+ ],
+ "derived_presence": {},
+ "summary": {
+  "blocks": 8,
+  "specific": 8,
+  "heuristic": 0,
+  "residue": 0,
+  "skipped": 0,
+  "reindent_blocks": 0,
+  "label_counts": {
+   "DRAFT-HOST": 3,
+   "EXHIBIT-RESTRUCTURE": 2,
+   "INCLUDE-REPOINT": 1,
+   "SELF-DELIVERY": 2,
+   "DELIVERY-HOST": 1,
+   "DELIVERY-MOVE": 4,
+   "IFTAGS": 2,
+   "TRANS-UNANCHORED": 4,
+   "COMMENT-TEXT": 1,
+   "CREDIT-PREVIEW": 1,
+   "FONT-IMPORT": 1,
+   "JPFONT-LOAD": 1,
+   "TASL-FIELDS": 1,
+   "LICENSE-BOX": 2,
+   "BARE-RATE-DEL": 1,
+   "INFO-DEL": 1
+  }
+ },
+ "residue": [],
+ "skeleton": {
+  "sha256": "9b236b9faa6449d359e19458523917445c3d5ce6183bbc93edd75f2e786eff84",
+  "status": "written (new)"
+ }
+}

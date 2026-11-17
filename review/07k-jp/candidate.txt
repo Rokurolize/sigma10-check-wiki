@@ -1,0 +1,397 @@
+[[include :scp-jp:component:centered-header-sigma-9]]
+[[include :scp-jp:component:toggle-sidebar]]
+[[include :scp-jp:component:raisa-ribbon alt=1|side=right]]
+[[module CSS]]
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3A07k-jp/1');
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3A07k-jp/1
+]]
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** 建設者 テーマ（Site-07K）
+**翻訳責任者:** AI
+**翻訳年:** 2026
+**原題:** 건설자 테마
+**著作権者:** 原語版ページの作成者に同じ（scpko の theme:07k）
+**作成年:** 2024
+**初訳時参照リビジョン:** 3
+**元記事リンク:** [*https://scpko.wikidot.com/theme:07k 건설자 테마]
+[[include :scp-jp:credit:end-preview]]
+
+[[include :scp-jp:component:centered-header-sigma-9]]
+[[include :scp-jp:component:toggle-sidebar]]
+[[include :scp-jp:component:raisa-ribbon alt=1|side=1]]
+
+[[=]]
+
+[[/=]]
+
+[[div class="ch raisa" style="max-width: 100vw;"]]
++ 建設者CSSテーマ
+[[/div]]
+
+@@@@
+@@@@
+
+このテーマは大韓民国地域司令部第07K基地のためのCSSテーマです。使用するページに次のコードを貼り付けてください。
+
+> [[include :scp-jp:theme:07k-jp]]
+
+@@@@
+@@@@
+
+[[div class="ch raisa" style="max-width: 100vw;"]]
++ コンポーネント情報
+[[/div]]
+
+@@@@
+@@@@
+
+このテーマは、標準で次のコンポーネントを含みます。
+
+* [[[component:centered-header-sigma-9|]]]
+* [[[component:toggle-sidebar|]]]
+* [[[component:raisa-ribbon|]]]
+
+@@@@
+@@@@
+
+[[div class="ch raisa" style="max-width: 100vw;"]]
++ デザイン情報
+[[/div]]
+
+@@@@
+@@@@
+
+[[tabview]]
+[[tab 基本要素]]
+
+[[include :scp-jp:component:image-block
+|name=https://scpko.wdfiles.com/local--files/thd-glasses-art-works-page/Site-07K.png
+|caption=第07K基地のロゴ。
+|width=300px
+]]
+
++ 見出しレベル1
+++ 見出しレベル2
++++ 見出しレベル3
+++++ 見出しレベル4
++++++ 見出しレベル5
+++++++ 見出しレベル6
+
+----
+
+||これは||~ 表||です||
+||||使い方は||
+||||||= ご存じでしょう||
+
+~~~~
+
+[[/tab]]
+[[tab 応用要素]]
+
+このページで使われている小見出しリボンを使うには、このテーマを適用したページの任意の位置に次のコードを挿入してください。
+
+[[div class="blockquote"]]
+
+@@[[div class="ch raisa" style="max-width: 100vw;"]]@@
+@@+@@ **(小見出し)**
+@@[[/div]]@@
+
+@@@@@@@@
+@@@@@@@@
+
+[[/div]]
+
+[[/tab]]
+[[/tabview]]
+
+@@@@
+@@@@
+
++ ソースコード
+
+[[collapsible show="> コードを表示" hide="> コードを閉じる"]]
+[[code type="css"]]
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;700&display=swap');
+
+/*
+    건설자 / Site-07K Theme — Ported for SCP-JP (theme:07k rev 3 on scpko).
+    原語版は韓国の GongGothic ウェブフォントを jsDelivr から読み、KO のコンポーネント
+    （centered-header-sigma-9 / toggle-sidebar / raisa-ribbon）を併用します。SCP-JP には無いため、
+    フォントは Google の Gothic A1 で代替し、コンポーネントは JP 側の相当品か 訳注 に置き換えました。
+*/
+/* 日本語フォント (JP localization) */
+/* 原語版の jsDelivr ウェブフォントは Google の同等書体で代替 (JP localization) */
+
+/* 原語版の jsDelivr ウェブフォントは Google の同等書体で代替 (JP localization) */
+
+:root{
+  --header-title: "초도격리개발기지";
+  --header-subtitle: "회수 · 격리 · 배송";
+  --titleColor: #222;
+  --subtitleColor: #222;
+  --lgurl: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3A07k-jp/site-07k.png');
+}
+
+#header h1 a::before {
+  font-family: 'GongGothicBold', "Montserrat", "Arial", sans-serif;
+}
+
+#header h2::before, #page-title, h1, .modalbox div:not(.credit) h2 {
+  font-family: 'GongGothicMedium', "Montserrat", "Arial", sans-serif;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+a, #side-bar a, #side-bar a:visited {
+  color: #222;
+  font-weight: 600;
+}
+
+a:visited {
+  color: #444;
+}
+
+div#container-wrap {
+  background: none;
+}
+
+#header {
+  height: 220px;
+  background: #FFD400;
+  box-shadow: 50vw 0 0 #FFD400, -50vw 0 0 #FFD400, 25vw 0 0 #FFD400, -25vw 0 0 #FFD400;
+}
+
+#header::before {
+  background-position: center 10px;
+  opacity: 1;
+}
+
+#header h1, #header h2 {
+  transform: translateY(105px);
+}
+
+#login-status, #login-status a {
+  color: #222;
+}
+
+#account-topbutton {
+  border-color: #222;
+}
+
+#search-top-box-form input[type="submit"] {
+  color: #222;
+}
+
+#search-top-box-form input[type="submit"],
+#search-top-box-form input[type="submit"]:hover,
+#search-top-box-form input[type="submit"]:focus {
+  border-color: #222;
+  background: none;
+}
+
+#top-bar {
+  top: 230px;
+  background: #222;
+  box-shadow: 50vw 0 0 #222, -50vw 0 0 #222, 25vw 0 0 #222, -25vw 0 0 #222;
+}
+
+#page-title, h1 {
+  color: #222;
+}
+
+#page-title {
+  border-bottom: 2px solid #222;
+}
+
+hr {
+  height: 2px;
+  background-color: #222;
+}
+
+blockquote hr,
+div.blockquote hr {
+  height: 1px;
+}
+
+.page-rate-widget-box {
+  margin-right: 0;
+}
+.creditRate {
+  width: 100%;
+  justify-content: center;
+  margin-right: 0 !important;
+}
+
+.page-rate-widget-box, .rate-box-with-credit-button {
+  box-shadow: none !important;
+  border: none;
+}
+
+.page-rate-widget-box .rate-points,
+.page-rate-widget-box .cancel,
+.rate-box-with-credit-button {
+  background: #FFD400 !important;
+}
+
+.page-rate-widget-box .rate-points,
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown,
+.page-rate-widget-box .cancel,
+.rate-box-with-credit-button {
+  color: #222;
+}
+
+.rate-box-with-credit-button {
+  border: 2px solid #222 !important;
+}
+.page-rate-widget-box .rate-points,
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown,
+.page-rate-widget-box .cancel {
+  border-color: #222;
+  border-width: 2px;
+}
+
+.rate-box-with-credit-button .page-rate-widget-box .rate-points,
+.rate-box-with-credit-button .page-rate-widget-box .rateup,
+.rate-box-with-credit-button .page-rate-widget-box .ratedown,
+.rate-box-with-credit-button .page-rate-widget-box .cancel {
+  border-width: 0;
+}
+
+.rate-box-with-credit-button a,
+.page-rate-widget-box a {
+  font-weight: normal;
+}
+
+.rate-box-with-credit-button .page-rate-widget-box,
+.rate-box-with-credit-button .page-rate-widget-box .cancel,
+.rate-box-with-credit-button .page-rate-widget-box .cancel a {
+  border-radius: 0;
+}
+
+.page-rate-widget-box .rate-points a:hover,
+.page-rate-widget-box .cancel a:hover {
+  background: #FFF !important;
+}
+
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover {
+  background: #FFD400 !important;
+}
+
+.page-rate-widget-box a,
+.rate-box-with-credit-button a {
+  color: #222 !important;
+}
+
+.creditButton p a {
+  border: none !important;
+}
+
+.creditButton p a:hover {
+  color: #FFF !important;
+}
+
+.modalbox {
+  background: linear-gradient(#FFD400 51px,#fefefe 51px,#fefefe) !important;
+}
+
+#top-bar .open-menu a {
+  color: #222;
+  border-color: #222;
+}
+
+#side-bar {
+  background: #FFD400 !important;
+}
+
+#side-bar .red,
+#side-bar .green,
+#side-bar .blue {
+  background: #FFF;
+}
+
+.ch.raisa {
+  background: #FFD400;
+  border-color: #222;
+}
+
+.ch.raisa h1 {
+  padding: 0 15px;
+}
+
+.ch.raisa + p {
+  height: 70px;
+}
+
+blockquote, div.blockquote {
+  border: 1px solid #222;
+}
+
+.yui-nav {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.yui-nav li {
+  display: flex;
+  flex-grow: 2;
+  margin: 0;
+}
+
+.yui-nav li a {
+  width: 100%;
+  text-align: center;
+}
+
+.yui-navset .yui-nav a {
+  background: #FFF;
+  color: #222;
+}
+
+.yui-navset .yui-nav .selected {
+  margin-bottom: 0;
+}
+
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:focus,
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a:focus,
+.yui-navset .yui-nav .selected a:hover {
+  background: #FFD400;
+  color: #222;
+}
+
+.yui-navset .yui-nav {
+  border-color: #222;
+  border-bottom-width: 2px;
+}
+
+.yui-navset .yui-content {
+  background: #FFF;
+}
+[[/code]]
+[[/collapsible]]
+
+[[include :scp-jp:component:license-box-backend
+|author=scpko theme:07k の作者]]
+
+> **画像・フォントの出典:** 原語版の theme:07k の記載に従います。KO 側の添付・ウェブフォントは候補ページに再ホストするか Google Fonts の同等書体に差し替えています。原語版にライセンス表記が無い画像は、投稿前に著者へ確認してください。
+
+[[include :scp-jp:component:license-box-end]]
+
+[[/iftags]]

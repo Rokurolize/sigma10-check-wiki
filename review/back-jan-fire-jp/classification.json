@@ -1,0 +1,578 @@
+{
+ "tool": "classify_hunks.py",
+ "classifier_version": "0.1.0",
+ "signature_table_version": "2026-11-17.1",
+ "theme": {
+  "dir": "back-jan-fire-jp",
+  "cand_fullname": "theme:back-jan-fire-jp",
+  "orig_fullname": "theme:back-jan-fire",
+  "wiki": "scpko",
+  "revision": "9",
+  "kind": "standard",
+  "verdict": "PASS",
+  "original_file": "review/back-jan-fire-jp/original.txt",
+  "candidate_file": "review/back-jan-fire-jp/candidate.txt",
+  "original_sha256": "d1dee2f91cbdb5a3b19300c03f33c07bfdd2ad2304032e75046660e0e5e04def",
+  "candidate_sha256": "cb516e59f3e159edd06af641329d3470451268dbb2586739103e56b531eb053f",
+  "original_lines": 126,
+  "candidate_lines": 145
+ },
+ "topology": {
+  "original_components": [],
+  "candidate_components": [
+   {
+    "kind": "code-css",
+    "range": [
+     24,
+     134
+    ],
+    "lines": 110
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     138,
+     141
+    ],
+    "lines": 3
+   }
+  ],
+  "moves": [],
+  "external_own_delivery": false
+ },
+ "blocks": [
+  {
+   "id": "B1",
+   "orig_range": [
+    0,
+    1
+   ],
+   "cand_range": [
+    0,
+    1
+   ],
+   "orig_lines": "1-1",
+   "cand_lines": "1-1",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "IFTAGS",
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "IFTAGS",
+   "primary_section": 2,
+   "label_prec": {
+    "IFTAGS": "A",
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "IFTAGS": {
+     "orig": [
+      [
+       0,
+       1
+      ]
+     ],
+     "cand": [
+      [
+       0,
+       1
+      ]
+     ]
+    },
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[iftags +테마]]",
+   "first_added": "[[iftags +テーマ]]"
+  },
+  {
+   "id": "B2",
+   "orig_range": [
+    2,
+    5
+   ],
+   "cand_range": [
+    2,
+    12
+   ],
+   "orig_lines": "3-5",
+   "cand_lines": "3-12",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "BARE-RATE-DEL",
+    "CREDIT-PREVIEW",
+    "CREDIT-PROSE",
+    "TASL-FIELDS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "CREDIT-PREVIEW",
+   "primary_section": 1,
+   "label_prec": {
+    "CREDIT-PREVIEW": "A",
+    "TASL-FIELDS": "A",
+    "BARE-RATE-DEL": "B",
+    "TRANS-UNANCHORED": "C",
+    "CREDIT-PROSE": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "CREDIT-PREVIEW": {
+     "cand": [
+      [
+       2,
+       3
+      ],
+      [
+       11,
+       12
+      ]
+     ]
+    },
+    "TASL-FIELDS": {
+     "cand": [
+      [
+       3,
+       11
+      ]
+     ]
+    },
+    "BARE-RATE-DEL": {
+     "orig": [
+      [
+       3,
+       4
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {},
+    "CREDIT-PROSE": {}
+   },
+   "notes": [
+    "script delta without the anchor majority",
+    "position: inside the credit include pair"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[>]]",
+   "first_added": "[[include :scp-jp:credit:start-preview]]"
+  },
+  {
+   "id": "B3",
+   "orig_range": [
+    6,
+    7
+   ],
+   "cand_range": [
+    13,
+    14
+   ],
+   "orig_lines": "7-7",
+   "cand_lines": "14-14",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "+ 등잔불 CSS 테마",
+   "first_added": "+ 灯火CSSテーマ"
+  },
+  {
+   "id": "B4",
+   "orig_range": [
+    8,
+    11
+   ],
+   "cand_range": [
+    15,
+    18
+   ],
+   "orig_lines": "9-11",
+   "cand_lines": "16-18",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "COMPONENT-SWAP",
+    "ESCAPED-INCLUDE",
+    "INCLUDE-REPOINT",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "COMPONENT-SWAP",
+   "primary_section": 2,
+   "label_prec": {
+    "INCLUDE-REPOINT": "A",
+    "ESCAPED-INCLUDE": "B",
+    "COMPONENT-SWAP": "B",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "INCLUDE-REPOINT": {
+     "orig": [
+      [
+       9,
+       10
+      ]
+     ],
+     "cand": [
+      [
+       16,
+       17
+      ]
+     ]
+    },
+    "ESCAPED-INCLUDE": {
+     "orig": [
+      [
+       9,
+       10
+      ]
+     ],
+     "cand": [
+      [
+       16,
+       17
+      ]
+     ]
+    },
+    "COMPONENT-SWAP": {
+     "orig": [
+      [
+       9,
+       10
+      ]
+     ],
+     "cand": [
+      [
+       16,
+       17
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "본 테마는 누구나 자유롭게 사용하실수 있습니다.",
+   "first_added": "このテーマはどなたでも自由に使用できます。"
+  },
+  {
+   "id": "B5",
+   "orig_range": [
+    12,
+    13
+   ],
+   "cand_range": [
+    19,
+    20
+   ],
+   "orig_lines": "13-13",
+   "cand_lines": "20-20",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[/iftags]]",
+   "first_added": "----"
+  },
+  {
+   "id": "B6",
+   "orig_range": [
+    14,
+    16
+   ],
+   "cand_range": [
+    21,
+    22
+   ],
+   "orig_lines": "15-16",
+   "cand_lines": "22-22",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "IFTAGS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "IFTAGS",
+   "primary_section": 2,
+   "label_prec": {
+    "IFTAGS": "A",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "IFTAGS": {
+     "orig": [
+      [
+       14,
+       15
+      ]
+     ],
+     "cand": []
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[div [[iftags -테마]]style=\"display: none\"[[/iftags]]]]",
+   "first_added": "+ ソースコード"
+  },
+  {
+   "id": "B7",
+   "orig_range": [
+    17,
+    17
+   ],
+   "cand_range": [
+    23,
+    26
+   ],
+   "orig_lines": "at 18",
+   "cand_lines": "24-26",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": "[[collapsible show=\"ソースコードを表示\" hide=\"ソースコードを閉じる\"]]"
+  },
+  {
+   "id": "B8",
+   "orig_range": [
+    29,
+    30
+   ],
+   "cand_range": [
+    38,
+    39
+   ],
+   "orig_lines": "30-30",
+   "cand_lines": "39-39",
+   "channel_pair": [
+    "body",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC"
+   ],
+   "primary": "COLON-ENC",
+   "primary_section": 4,
+   "label_prec": {
+    "COLON-ENC": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       29,
+       30
+      ]
+     ],
+     "cand": [
+      [
+       38,
+       39
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: url(https://scpko.wikidot.com/local--files/theme:back-jan-fire/header) top left repeat-x;",
+   "first_added": "    background: url(https://scpko.wikidot.com/local--files/theme%3Aback-jan-fire/header) top left repeat-x;"
+  },
+  {
+   "id": "B9",
+   "orig_range": [
+    124,
+    124
+   ],
+   "cand_range": [
+    133,
+    140
+   ],
+   "orig_lines": "at 125",
+   "cand_lines": "134-140",
+   "channel_pair": [
+    "body",
+    "code-css"
+   ],
+   "labels": [
+    "DRAFT-HOST",
+    "SELF-DELIVERY"
+   ],
+   "primary": "SELF-DELIVERY",
+   "primary_section": 3,
+   "label_prec": {
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "SELF-DELIVERY": {
+     "orig": [],
+     "cand": [
+      [
+       139,
+       140
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       139,
+       140
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": "[[/code]]"
+  },
+  {
+   "id": "B10",
+   "orig_range": [
+    125,
+    126
+   ],
+   "cand_range": [
+    141,
+    145
+   ],
+   "orig_lines": "126-126",
+   "cand_lines": "142-145",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "DRAFT-HOST",
+    "SELF-DELIVERY"
+   ],
+   "primary": "SELF-DELIVERY",
+   "primary_section": 3,
+   "label_prec": {
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "SELF-DELIVERY": {
+     "orig": [],
+     "cand": [
+      [
+       143,
+       144
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       143,
+       144
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[/div]]",
+   "first_added": "[[include :scp-jp:component:interwiki-style"
+  }
+ ],
+ "derived_presence": {},
+ "summary": {
+  "blocks": 10,
+  "specific": 8,
+  "heuristic": 1,
+  "residue": 1,
+  "skipped": 0,
+  "reindent_blocks": 0,
+  "label_counts": {
+   "IFTAGS": 2,
+   "TRANSLATION-ANCHORED": 2,
+   "BARE-RATE-DEL": 1,
+   "CREDIT-PREVIEW": 1,
+   "CREDIT-PROSE": 1,
+   "TASL-FIELDS": 1,
+   "TRANS-UNANCHORED": 4,
+   "COMPONENT-SWAP": 1,
+   "ESCAPED-INCLUDE": 1,
+   "INCLUDE-REPOINT": 1,
+   "COLON-ENC": 1,
+   "DRAFT-HOST": 2,
+   "SELF-DELIVERY": 2
+  }
+ },
+ "residue": [
+  "B5"
+ ],
+ "skeleton": {
+  "sha256": "ab16685a71e6ce573e5951a75bcd55108348047515ec1bd5b4ba81c6ca83e32a",
+  "status": "written (new)"
+ }
+}
