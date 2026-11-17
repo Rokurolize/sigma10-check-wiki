@@ -1,0 +1,1739 @@
+[[module CSS]]
+/*
+ * 构成版式（Construct）/ Sigma-9
+ * 页眉、标志与背景图形内嵌于 CSS；无需额外附件或字体。
+ */
+
+:root {
+  --construct-red: #c9251c;
+  --construct-ink: #171714;
+  --construct-paper: #f2ecde;
+  --construct-yellow: #edbd32;
+  --construct-rule: #9b9485;
+  --construct-logo: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iX+WbvuWxgl8xIiBkYXRhLW5hbWU9IuWbvuWxgiAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MjAuODIgNDcxLjA2Ij4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAgICBmaWxsOiAjZjJlY2RlOwogICAgICB9CgogICAgICAuY2xzLTIgewogICAgICAgIGZpbGw6ICNiZTI4MjA7CiAgICAgIH0KCiAgICAgIC5jbHMtMyB7CiAgICAgICAgZmlsbDogIzIzMTgxNTsKICAgICAgfQogICAgPC9zdHlsZT4KICA8L2RlZnM+CiAgPGcgaWQ9Il/lm77lsYJfMiIgZGF0YS1uYW1lPSLlm77lsYIgMiI+CiAgICA8cG9seWdvbiBjbGFzcz0iY2xzLTEiIHBvaW50cz0iMjQ3LjcyIDE0Mi40NCAyMTYuMTkgMTMxLjgyIDE0Ny41MSAxOTYuOTMgMTQwLjM4IDI2Mi4zNyAxMjMuMzMgMjY2LjgyIDU1LjE1IDI4NC42IDQ5Ljg0IDI4NS45OCA0OS40NyAyODQuNzYgNDkuNDcgMjI3LjgyIDYzLjc3IDE2OS42MSA5Mi42MiAxMjAuODQgMTI2Ljc4IDg4LjE2IDE5Mi40NCA0Ni42OSAxOTcuNTYgNTUuNTUgMjMzLjc4IDExOC4yOSAyNDcuNzIgMTQyLjQ0Ii8+CiAgICA8cG9seWdvbiBjbGFzcz0iY2xzLTEiIHBvaW50cz0iNDA1LjQ3IDQxNS42NiAzNTMuNTYgNDQ2LjM4IDMwMy4yNiA0NjMuMjMgMjE5IDQ2My4yMyAxMzQuMjQgNDI3Ljc0IDEyNy40OSA0MTkuMDEgMTMwLjgyIDQxNS42NCAxODAuMzEgMzY1LjQ5IDE5MS41IDM1NC4xNCAyNjYuMjQgMzc4Ljk3IDM0MC41NCAzNTIuMTYgMzUwLjIxIDMxOS45NCAzNjQuMTQgMzQ0LjA3IDQwMC4zNiA0MDYuOCA0MDUuNDcgNDE1LjY2Ii8+CiAgPC9nPgogIDxwYXRoIGNsYXNzPSJjbHMtMyIgZD0iTTI0Ny43MiwxNDIuNDRsLTEzLjk0LTI0LjE1Yy02My42LDEyLjQ2LTExMS4wOSw2OC42Mi0xMTEuMDksMTM1LjE3LDAsNC40NS4yMSw4LjkyLjY0LDEzLjM2bDE3LjA1LTQuNDUsOC41MS0yLjIyYy0uMTMtMi4yMy0uMi00LjQ2LS4yLTYuNjksMC01Ny4wNyw0My4wNC0xMDQuNzEsOTkuMDMtMTExLjAyWk0zNTAuMjEsMzE5Ljk0Yy0yMS4wNywyOC40NC01NC4yLDQ1LjI0LTg5LjgsNDUuMjQtMjEuOTIsMC00My4zOS02LjUtNjEuNTUtMTguNDlsLTcuMzYsNy40NS0xMS4xOSwxMS4zNWMyMy4yNCwxNi42Miw1MS4zNiwyNS42OSw4MC4xLDI1LjY5LDQwLjE1LDAsNzcuNzQtMTcuMzMsMTAzLjczLTQ3LjExbC0xMy45My0yNC4xM1oiLz4KICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik00NzMuMDEsMjUzLjQ2YzAsMTkuMzMtMi41OCwzOC4wNi03LjQxLDU1Ljg2aC0xMDguNDNjMi42My01LjI1LDUuMjUtMTEuMzksNy40NS0xOC40LDQuNTctMTQuNTMsNS43Mi0yNy41OCw1LjczLTM3LjQ2LjMxLTkuMjIuMjktNDIuMTktMjMuNTItNzEuNzEtMzEuOTMtMzkuNTktODAuMDctNDAuMDUtODYuNDItNDAuMDFsNTQuMjEtOTMuOWM5MS4xNiwyMy45NiwxNTguMzksMTA2LjkzLDE1OC4zOSwyMDUuNjJaIi8+CiAgPHBhdGggY2xhc3M9ImNscy0zIiBkPSJNNTIuODIsMjUzLjQ2YzAsMTAuNDMuNzgsMjAuODcsMi4zMywzMS4xNGwtNS4zMSwxLjM4LTQuNDIsMS4xNmMtMS43My0xMS4xLTIuNi0yMi4zOS0yLjYtMzMuNjgsMC05NC40NSw2MC44OS0xNzcuNjksMTQ5LjYyLTIwNi43N2w1LjEyLDguODZDMTExLjgzLDgyLjY5LDUyLjgyLDE2Mi42NCw1Mi44MiwyNTMuNDZaIi8+CiAgPHBhdGggY2xhc3M9ImNscy0zIiBkPSJNNDA1LjQ3LDQxNS42NmMtMzkuOTMsMzUuODItOTAuOTUsNTUuNC0xNDUuMDYsNTUuNC00OS44OSwwLTk4LjAzLTE3LjA3LTEzNi42NS00OC4yN2wzLjczLTMuNzgsMy4zMy0zLjM3YzM2LjcxLDI5LjM2LDgyLjM0LDQ1LjQyLDEyOS41OSw0NS40Miw1Mi4zMywwLDEwMS42My0xOS4yLDEzOS45NS01NC4yNmw1LjExLDguODZaIi8+CiAgPHBvbHlnb24gY2xhc3M9ImNscy0zIiBwb2ludHM9IjM0Mi4yNCAwIDMxNC42MiA0Ny44NCAyNjcuOCAxMjguOTQgMjYwLjQxIDE0MS43NCAyNTMuMDIgMTI4Ljk0IDIwNi4yIDQ3Ljg0IDE3OC41OCAwIDM0Mi4yNCAwIi8+CiAgPHBvbHlnb24gY2xhc3M9ImNscy0zIiBwb2ludHM9IjUyMC44MiAzMDkuMzIgNDM5IDQ1MS4wNSA0MTEuMzUgNDAzLjE3IDM2NC41NiAzMjIuMTEgMzU3LjE3IDMwOS4zMiA1MjAuODIgMzA5LjMyIi8+CiAgPHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjI5OC41IDIzMS40NiAwIDMwOS4zMiA4MS44MyA0NTEuMDUgMjk4LjUgMjMxLjQ2Ii8+Cjwvc3ZnPg==");
+}
+
+body {
+  background: var(--construct-paper);
+  color: var(--construct-ink);
+  font-family: "Noto Sans CJK SC", "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
+}
+
+#container-wrap,
+#container-wrap-wrap {
+  background: none;
+}
+
+div#container-wrap {
+  background:
+    linear-gradient(to bottom, transparent 0 140px, var(--construct-ink) 140px 162px, var(--construct-paper) 162px),
+    url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iX+WbvuWxgl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDIwMDAgMTQwIj4KICA8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMjkuOC4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogMi4xLjEgQnVpbGQgMikgIC0tPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuc3QwIHsKICAgICAgICBvcGFjaXR5OiAuMTc7CiAgICAgIH0KCiAgICAgIC5zdDAsIC5zdDEsIC5zdDIgewogICAgICAgIGZpbGw6ICMxNzE3MTQ7CiAgICAgIH0KCiAgICAgIC5zdDAsIC5zdDMsIC5zdDQsIC5zdDIsIC5zdDUgewogICAgICAgIGlzb2xhdGlvbjogaXNvbGF0ZTsKICAgICAgfQoKICAgICAgLnN0NiwgLnN0MywgLnN0NCB7CiAgICAgICAgZmlsbDogI2M5MjUxYzsKICAgICAgfQoKICAgICAgLnN0MyB7CiAgICAgICAgb3BhY2l0eTogLjY2OwogICAgICB9CgogICAgICAuc3Q3IHsKICAgICAgICBzdHJva2U6ICNjOTI1MWM7CiAgICAgICAgc3Ryb2tlLXdpZHRoOiAzcHg7CiAgICAgIH0KCiAgICAgIC5zdDcsIC5zdDggewogICAgICAgIGZpbGw6IG5vbmU7CiAgICAgIH0KCiAgICAgIC5zdDggewogICAgICAgIHN0cm9rZTogIzE3MTcxNDsKICAgICAgICBzdHJva2Utd2lkdGg6IDJweDsKICAgICAgfQoKICAgICAgLnN0NCwgLnN0NSB7CiAgICAgICAgb3BhY2l0eTogLjM4OwogICAgICB9CgogICAgICAuc3QyIHsKICAgICAgICBvcGFjaXR5OiAuMTY7CiAgICAgIH0KCiAgICAgIC5zdDUgewogICAgICAgIGZpbGw6ICNlZGJkMzI7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgPC9kZWZzPgogIDxwYXRoIGNsYXNzPSJzdDYiIGQ9Ik0wLDE0MEwzMzAsMGg1MGwtMjA4LDE0MEgwWiIvPgogIDxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik0yNzguNTMsMjQuODFoMTQxbC0xMjIuMjMsOTAuMzgtMTguNzctOTAuMzhoMFoiLz4KICA8cGF0aCBjbGFzcz0ic3QyIiBkPSJNNjI2LDE0MEw3ODgsMGg5MmwtMTY3LDE0MGgtODdaIi8+CiAgPHBhdGggY2xhc3M9InN0NCIgZD0iTTgwNiwxMzJMMTExOCwwbDc1LDE0MC0zODctOFoiLz4KICA8cGF0aCBjbGFzcz0ic3Q1IiBkPSJNMTE3MS4zMiw2Ljc5aDM1djg3LjM4aC0zNVY2Ljc5WiIvPgogIDxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMzA3LDBsMTQyLDE0MGgtODJMMTIyNSwwaDgyWiIvPgogIDxwYXRoIGNsYXNzPSJzdDMiIGQ9Ik0xNDQxLjg3LDExNS43NGwxNjAuMTMtODEuNzQtODUuMTMsMTA1Ljc0cy03NS0yNC03NS0yNFoiLz4KICA8cGF0aCBjbGFzcz0ic3QyIiBkPSJNMTg5NiwwbC0xODcsMTQwaC0xMzlMMTc3MywwaDEyM1oiLz4KICA8cGF0aCBjbGFzcz0ic3Q2IiBkPSJNMTc4OSwwbDIxMSwxNDBoLTYwTDE3MzAsMGg1OVoiLz4KICA8Zz4KICAgIDxwYXRoIGNsYXNzPSJzdDgiIGQ9Ik0zNS41Nyw0M0wyMDIuMzQsNi45Nk0zNi4zNCw0Ny44M2wxODAtMjkuODciLz4KICAgIDxwYXRoIGNsYXNzPSJzdDgiIGQ9Ik02NDguNzksMjMuNWgxMTguMDJNNjYwLjY2LDMyLjVoMTI0LjE0TTEyMTMuNTcsOTQuMTdsMTY0LTYzLjE3TTEyMjMuNTcsMTA2LjE3bDE2Mi02My4xNyIvPgogICAgPHBhdGggY2xhc3M9InN0OCIgZD0iTTE3NDcuNjcsMTA2LjI0bDIyOS40MS05NC4wM00xNzU0LjY3LDExOC4yNGwyMjkuNDEtOTQuMDMiLz4KICA8L2c+CiAgPHBhdGggY2xhc3M9InN0NyIgZD0iTTEyMTMsMTI1aDEyME0xNjI5LjcsMTguNTdoODkiLz4KICA8cmVjdCBjbGFzcz0ic3QxIiB4PSI4OTIiIHk9IjE4IiB3aWR0aD0iODYuNDMiIGhlaWdodD0iMjkiLz4KICA8cmVjdCBjbGFzcz0ic3Q0IiB4PSIxNDM4LjE1IiB5PSIzMSIgd2lkdGg9IjcwIiBoZWlnaHQ9IjI0Ii8+CiAgPHJlY3QgY2xhc3M9InN0MyIgeD0iMTY2MSIgeT0iODEuMzgiIHdpZHRoPSIzMSIgaGVpZ2h0PSI0Ni4zNiIvPgogIDxwb2x5Z29uIGNsYXNzPSJzdDQiIHBvaW50cz0iMzQ5LjAzIDEwMi40MSA0NTMuOTcgOTguMDcgNDUzLjk3IDEyMi4wNyAzNDkuMDMgMTI2LjQxIDM0OS4wMyAxMDIuNDEiLz4KICA8bGluZSBjbGFzcz0ic3Q4IiB4MT0iNTYuNyIgeTE9IjExLjQiIHgyPSIxMzQuNDUiIHkyPSI2MS45NiIvPgo8L3N2Zz4=") center top / max(100%, 2000px) auto no-repeat,
+    linear-gradient(to bottom, var(--construct-paper) 0 140px, var(--construct-ink) 140px 162px, var(--construct-paper) 162px);
+}
+
+/* 前两层固定页眉范围；主体图案只在其下方可见。 */
+@media (min-width: 1400px) {
+  div#container-wrap {
+    --construct-body-art: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iX+WbvuWxgl8xIiBkYXRhLW5hbWU9IuWbvuWxgl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDI1MDAgNDcwMCI+CiAgPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI5LjguMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDIuMS4xIEJ1aWxkIDIpICAtLT4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLnN0MCwgLnN0MSwgLnN0MiwgLnN0MywgLnN0NCwgLnN0NSwgLnN0NiwgLnN0NywgLnN0OCwgLnN0OSwgLnN0MTAsIC5zdDExLCAuc3QxMiwgLnN0MTMsIC5zdDE0LCAuc3QxNSwgLnN0MTYsIC5zdDE3LCAuc3QxOCwgLnN0MTksIC5zdDIwLCAuc3QyMSwgLnN0MjIsIC5zdDIzLCAuc3QyNCwgLnN0MjUsIC5zdDI2LCAuc3QyNywgLnN0MjgsIC5zdDI5LCAuc3QzMCB7CiAgICAgICAgaXNvbGF0aW9uOiBpc29sYXRlOwogICAgICB9CgogICAgICAuc3QwLCAuc3QxLCAuc3QzLCAuc3Q1LCAuc3Q5LCAuc3QxMCwgLnN0MTMsIC5zdDE2LCAuc3QxNywgLnN0MjMsIC5zdDI0LCAuc3QyNSwgLnN0MjcsIC5zdDMwIHsKICAgICAgICBmaWxsOiBub25lOwogICAgICB9CgogICAgICAuc3QwLCAuc3Q5LCAuc3QyMiB7CiAgICAgICAgc3Ryb2tlOiAjYzkyNTFjOwogICAgICB9CgogICAgICAuc3QwLCAuc3QxNyB7CiAgICAgICAgb3BhY2l0eTogLjA3OwogICAgICB9CgogICAgICAuc3QwLCAuc3QxNywgLnN0MjMsIC5zdDI0LCAuc3QzMCB7CiAgICAgICAgc3Ryb2tlLXdpZHRoOiAycHg7CiAgICAgIH0KCiAgICAgIC5zdDEsIC5zdDMsIC5zdDQsIC5zdDUsIC5zdDcsIC5zdDEwLCAuc3QxMywgLnN0MTUsIC5zdDE2LCAuc3QxNywgLnN0MjAsIC5zdDIzLCAuc3QyNCwgLnN0MjUsIC5zdDI3LCAuc3QyOCwgLnN0MjksIC5zdDMwIHsKICAgICAgICBzdHJva2U6ICMxNzE3MTQ7CiAgICAgIH0KCiAgICAgIC5zdDEsIC5zdDMsIC5zdDksIC5zdDEzLCAuc3QyNSB7CiAgICAgICAgc3Ryb2tlLXdpZHRoOiA0cHg7CiAgICAgIH0KCiAgICAgIC5zdDEsIC5zdDIxLCAuc3QyNiB7CiAgICAgICAgb3BhY2l0eTogLjE2OwogICAgICB9CgogICAgICAuc3QyLCAuc3Q2LCAuc3QyNiB7CiAgICAgICAgZmlsbDogIzE3MTcxNDsKICAgICAgfQoKICAgICAgLnN0MiwgLnN0OSwgLnN0MjUgewogICAgICAgIG9wYWNpdHk6IC4xNzsKICAgICAgfQoKICAgICAgLnN0MywgLnN0NSwgLnN0MTEsIC5zdDI4LCAuc3QyOSB7CiAgICAgICAgb3BhY2l0eTogLjE0OwogICAgICB9CgogICAgICAuc3Q0LCAuc3Q3LCAuc3QxNSwgLnN0MjIsIC5zdDI3LCAuc3QyOCwgLnN0MjkgewogICAgICAgIHN0cm9rZS13aWR0aDogNXB4OwogICAgICB9CgogICAgICAuc3Q0LCAuc3Q4LCAuc3QxMCwgLnN0MTMsIC5zdDE2LCAuc3QxOSwgLnN0MjAgewogICAgICAgIG9wYWNpdHk6IC4xNTsKICAgICAgfQoKICAgICAgLnN0NCwgLnN0OCwgLnN0MTUsIC5zdDE4LCAuc3QyOCB7CiAgICAgICAgZmlsbDogI2VkYmQzMjsKICAgICAgfQoKICAgICAgLnN0NCwgLnN0MjAgewogICAgICAgIHN0cm9rZS1taXRlcmxpbWl0OiA0OwogICAgICB9CgogICAgICAuc3Q1IHsKICAgICAgICBzdHJva2Utd2lkdGg6IDNweDsKICAgICAgfQoKICAgICAgLnN0NiB7CiAgICAgICAgb3BhY2l0eTogLjA5OwogICAgICB9CgogICAgICAuc3Q3IHsKICAgICAgICBvcGFjaXR5OiAuMjI7CiAgICAgIH0KCiAgICAgIC5zdDcsIC5zdDExLCAuc3QxMiwgLnN0MTQsIC5zdDE5LCAuc3QyMSwgLnN0MjIgewogICAgICAgIGZpbGw6ICNjOTI1MWM7CiAgICAgIH0KCiAgICAgIC5zdDEwIHsKICAgICAgICBzdHJva2UtZGFzaGFycmF5OiAzODAgMjUwOwogICAgICAgIHN0cm9rZS1taXRlcmxpbWl0OiA0OwogICAgICAgIHN0cm9rZS13aWR0aDogNXB4OwogICAgICB9CgogICAgICAuc3QxMiB7CiAgICAgICAgb3BhY2l0eTogLjI7CiAgICAgIH0KCiAgICAgIC5zdDE0LCAuc3QyNyB7CiAgICAgICAgb3BhY2l0eTogLjEzOwogICAgICB9CgogICAgICAuc3QxNSwgLnN0MjIgewogICAgICAgIG9wYWNpdHk6IC4xODsKICAgICAgfQoKICAgICAgLnN0MTYgewogICAgICAgIHN0cm9rZS1kYXNoYXJyYXk6IDQ4MCAxNTA7CiAgICAgICAgc3Ryb2tlLW1pdGVybGltaXQ6IDQ7CiAgICAgICAgc3Ryb2tlLXdpZHRoOiA1cHg7CiAgICAgIH0KCiAgICAgIC5zdDE4IHsKICAgICAgICBvcGFjaXR5OiAuMjU7CiAgICAgIH0KCiAgICAgIC5zdDIwIHsKICAgICAgICBzdHJva2Utd2lkdGg6IDVweDsKICAgICAgfQoKICAgICAgLnN0MjAsIC5zdDI5IHsKICAgICAgICBmaWxsOiAjMjY2M2FmOwogICAgICB9CgogICAgICAuc3QyMyB7CiAgICAgICAgb3BhY2l0eTogLjE7CiAgICAgIH0KCiAgICAgIC5zdDI0IHsKICAgICAgICBvcGFjaXR5OiAuMTE7CiAgICAgIH0KCiAgICAgIC5zdDMwIHsKICAgICAgICBvcGFjaXR5OiAuMTI7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgPC9kZWZzPgogIDxwYXRoIGNsYXNzPSJzdDI1IiBkPSJNMTE0LjM0LDQyMGw0MjAtMjg5LjY2Ii8+CiAgPHBhdGggY2xhc3M9InN0MzAiIGQ9Ik0xMzUsNTIwbDI5MC0yMDAiLz4KICA8cmVjdCBjbGFzcz0ic3QyMSIgeD0iMzY3LjUiIHk9IjM4MCIgd2lkdGg9IjIyMi41IiBoZWlnaHQ9IjcwIi8+CiAgPHBhdGggY2xhc3M9InN0MjYiIGQ9Ik0yODAsODUwbDI3MC0yMDB2MjAwaC0yNzBaIi8+CiAgPHBhdGggY2xhc3M9InN0MTEiIGQ9Ik0xNzQuODUsOTYwbDQxNS4xNSw0NjIuODktNDE1LjE1LTIwMi44OXYtMjYwWiIvPgogIDxjaXJjbGUgY2xhc3M9InN0MTYiIGN4PSI1ODAiIGN5PSIxMTkwIiByPSIxMDAiLz4KICA8cGF0aCBjbGFzcz0ic3Q5IiBkPSJNMTcwLDE1MTBoNDUwIi8+CiAgPHBhdGggY2xhc3M9InN0MzAiIGQ9Ik0yMTUsMTUzMGgzMDUiLz4KICA8cmVjdCBjbGFzcz0ic3QyMCIgeD0iMjU5Ljg1IiB5PSIxNzgwLjAyIiB3aWR0aD0iMjIwIiBoZWlnaHQ9IjE1NSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTU1NS45MSAyMDUuMikgcm90YXRlKC0xOCkiLz4KICA8cGF0aCBjbGFzcz0ic3QzIiBkPSJNNDE1LDIyOTguOTNsMjMwLTE2MCIvPgogIDxwYXRoIGNsYXNzPSJzdDYiIGQ9Ik01MzAsMjIzOS4xNWgxODBsLTkwLDE4MC05MC0xODBaIi8+CiAgPGNpcmNsZSBjbGFzcz0ic3QyMiIgY3g9IjM4Mi40MiIgY3k9IjI0NjAiIHI9IjkwIi8+CiAgPHBhdGggY2xhc3M9InN0NSIgZD0iTTM0NC4zMiwyNzk1aDQzMCIvPgogIDxyZWN0IGNsYXNzPSJzdDE4IiB4PSIyNTAiIHk9IjMwNTAiIHdpZHRoPSIzMjUiIGhlaWdodD0iNzUiLz4KICA8cGF0aCBjbGFzcz0ic3QxNCIgZD0iTTExMCwzNTM0LjIzbDQxMC0yODB2MTUwbC00MTAsMjgwdi0xNTBaIi8+CiAgPHBhdGggY2xhc3M9InN0MTMiIGQ9Ik0xMDcuMTksMzc4NWwzNzAtMjcwIi8+CiAgPHBhdGggY2xhc3M9InN0MjciIGQ9Ik00NTAsMzE5NWgyODB2MjQwIi8+CiAgPHBhdGggY2xhc3M9InN0MjEiIGQ9Ik0xODUsMzk4MGwxMzAtMTMwdjI2MGwtMTMwLTEzMFoiLz4KICA8cGF0aCBjbGFzcz0ic3QxOSIgZD0iTTI0MDUsMzAwbC0yNzAtMTUwdjEzMGwyNzAsMTUwdi0xMzBaIi8+CiAgPHJlY3QgY2xhc3M9InN0MjgiIHg9IjE5NTkuMjQiIHk9IjQ2Ny41IiB3aWR0aD0iMTc1IiBoZWlnaHQ9IjM2NSIvPgogIDxwYXRoIGNsYXNzPSJzdDEzIiBkPSJNMjM1Ni43NCw5MjAuNjlsLTMxMC0xODAiLz4KICA8cGF0aCBjbGFzcz0ic3QyNCIgZD0iTTIzMDAsNzE1bC0yMTAtMTIwIi8+CiAgPGNpcmNsZSBjbGFzcz0ic3QxMCIgY3g9IjIxNjkuOTgiIGN5PSI5OTYuOTMiIHI9IjEwMCIvPgogIDxyZWN0IGNsYXNzPSJzdDEyIiB4PSIyMDE5LjkzIiB5PSIxNDgwIiB3aWR0aD0iMjUwIiBoZWlnaHQ9IjYwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNDI4LjI2IC0xMDEzLjMzKSByb3RhdGUoMzkpIi8+CiAgPHBhdGggY2xhc3M9InN0MSIgZD0iTTIzNjkuOTgsMTY3NS41N2gtNDAwIi8+CiAgPHBhdGggY2xhc3M9InN0MjMiIGQ9Ik0yMzI0Ljk4LDE2OTUuNTdoLTI2NSIvPgogIDxwYXRoIGNsYXNzPSJzdDExIiBkPSJNMTkwNC4xMSwxOTIwbC0xNi44NSwyMzIuMDgsNDEyLjc0LDg4Ljk4LTM5NS44OS0zMjEuMDZaIi8+CiAgPHBhdGggY2xhc3M9InN0NCIgZD0iTTIwMjAsMjE5MGwtMTUwLDEyMCwxODAsNjAtMzAtMTgwWiIvPgogIDxjaXJjbGUgY2xhc3M9InN0MiIgY3g9IjIzMjAiIGN5PSIyNzEwIiByPSI4NSIvPgogIDxwYXRoIGNsYXNzPSJzdDUiIGQ9Ik0yMzkzLjYzLDI4ODMuMDVsLTM4NS41NC0xNjYuNjEiLz4KICA8cmVjdCBjbGFzcz0ic3Q3IiB4PSIxOTEwIiB5PSIzMDcwIiB3aWR0aD0iNDQ4LjMyIiBoZWlnaHQ9IjY4Ii8+CiAgPHBhdGggY2xhc3M9InN0MyIgZD0iTTIyNTAsMzc3MGwtMzgwLTI2MCIvPgogIDxwYXRoIGNsYXNzPSJzdDI3IiBkPSJNMjMxNSwzMzU5LjIzaC0yNzB2MjIwIi8+CiAgPHBhdGggY2xhc3M9InN0MjEiIGQ9Ik0yNDM1LjY2LDM2MTVsLTMyMC0yMTB2MTQwbDMyMCw3MFoiLz4KICA8cGF0aCBjbGFzcz0ic3QxNyIgZD0iTTgyMCw4OTBsMjUwLTE4MCIvPgogIDxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xNjUwLDE3MDBsLTIxMC0xNTAiLz4KICA8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNzYwLDMwNTBsMjIwLTE2MCIvPgogIDxwYXRoIGNsYXNzPSJzdDE3IiBkPSJNMTc0MCwzODkwbC0yMzAtMTYwIi8+CiAgPHBhdGggY2xhc3M9InN0OCIgZD0iTTIzNzQuNCwzODc2LjA3bC00NTIuNjgtMTQ1LjczLDI3MC43NSwzMTQuODEsMTgxLjkzLTE2OS4wOFoiLz4KICA8cGF0aCBjbGFzcz0ic3QxMyIgZD0iTTIzMCwzNzUwbDM3MC0yNzAiLz4KICA8Y2lyY2xlIGNsYXNzPSJzdDE1IiBjeD0iNDkwIiBjeT0iNDI3OC43NSIgcj0iMTg2LjcxIi8+CiAgPHJlY3QgY2xhc3M9InN0MjkiIHg9IjIwMzkuMTUiIHk9IjQyMTUuNzIiIHdpZHRoPSIyNjEuNjYiIGhlaWdodD0iMzY1IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzNDkwLjkyIC0zMjQuOTQpIHJvdGF0ZSg0MS44OSkiLz4KICA8cGF0aCBjbGFzcz0ic3QxMyIgZD0iTTEwNy4zNSw0MzQ2LjlsMzkxLjg4LDIzNy4xMyIvPgogIDxwYXRoIGNsYXNzPSJzdDMiIGQ9Ik0xOTIxLjc5LDQxNTcuNDFsNDUyLjU1LTg0Ljg1Ii8+CiAgPHJlY3QgY2xhc3M9InN0MjYiIHg9IjI1Ni4yNSIgeT0iMTMyLjY2IiB3aWR0aD0iMjIyLjUiIGhlaWdodD0iNzAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI1Ny44OCAtMjIxLjEyKSByb3RhdGUoNDkuNzMpIi8+Cjwvc3ZnPg==");
+    background:
+      linear-gradient(to bottom, transparent 0 140px, var(--construct-ink) 140px 162px, var(--construct-paper) 162px 300px, transparent 300px),
+      url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iX+WbvuWxgl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDIwMDAgMTQwIj4KICA8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMjkuOC4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogMi4xLjEgQnVpbGQgMikgIC0tPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuc3QwIHsKICAgICAgICBvcGFjaXR5OiAuMTc7CiAgICAgIH0KCiAgICAgIC5zdDAsIC5zdDEsIC5zdDIgewogICAgICAgIGZpbGw6ICMxNzE3MTQ7CiAgICAgIH0KCiAgICAgIC5zdDAsIC5zdDMsIC5zdDQsIC5zdDIsIC5zdDUgewogICAgICAgIGlzb2xhdGlvbjogaXNvbGF0ZTsKICAgICAgfQoKICAgICAgLnN0NiwgLnN0MywgLnN0NCB7CiAgICAgICAgZmlsbDogI2M5MjUxYzsKICAgICAgfQoKICAgICAgLnN0MyB7CiAgICAgICAgb3BhY2l0eTogLjY2OwogICAgICB9CgogICAgICAuc3Q3IHsKICAgICAgICBzdHJva2U6ICNjOTI1MWM7CiAgICAgICAgc3Ryb2tlLXdpZHRoOiAzcHg7CiAgICAgIH0KCiAgICAgIC5zdDcsIC5zdDggewogICAgICAgIGZpbGw6IG5vbmU7CiAgICAgIH0KCiAgICAgIC5zdDggewogICAgICAgIHN0cm9rZTogIzE3MTcxNDsKICAgICAgICBzdHJva2Utd2lkdGg6IDJweDsKICAgICAgfQoKICAgICAgLnN0NCwgLnN0NSB7CiAgICAgICAgb3BhY2l0eTogLjM4OwogICAgICB9CgogICAgICAuc3QyIHsKICAgICAgICBvcGFjaXR5OiAuMTY7CiAgICAgIH0KCiAgICAgIC5zdDUgewogICAgICAgIGZpbGw6ICNlZGJkMzI7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgPC9kZWZzPgogIDxwYXRoIGNsYXNzPSJzdDYiIGQ9Ik0wLDE0MEwzMzAsMGg1MGwtMjA4LDE0MEgwWiIvPgogIDxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik0yNzguNTMsMjQuODFoMTQxbC0xMjIuMjMsOTAuMzgtMTguNzctOTAuMzhoMFoiLz4KICA8cGF0aCBjbGFzcz0ic3QyIiBkPSJNNjI2LDE0MEw3ODgsMGg5MmwtMTY3LDE0MGgtODdaIi8+CiAgPHBhdGggY2xhc3M9InN0NCIgZD0iTTgwNiwxMzJMMTExOCwwbDc1LDE0MC0zODctOFoiLz4KICA8cGF0aCBjbGFzcz0ic3Q1IiBkPSJNMTE3MS4zMiw2Ljc5aDM1djg3LjM4aC0zNVY2Ljc5WiIvPgogIDxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMzA3LDBsMTQyLDE0MGgtODJMMTIyNSwwaDgyWiIvPgogIDxwYXRoIGNsYXNzPSJzdDMiIGQ9Ik0xNDQxLjg3LDExNS43NGwxNjAuMTMtODEuNzQtODUuMTMsMTA1Ljc0cy03NS0yNC03NS0yNFoiLz4KICA8cGF0aCBjbGFzcz0ic3QyIiBkPSJNMTg5NiwwbC0xODcsMTQwaC0xMzlMMTc3MywwaDEyM1oiLz4KICA8cGF0aCBjbGFzcz0ic3Q2IiBkPSJNMTc4OSwwbDIxMSwxNDBoLTYwTDE3MzAsMGg1OVoiLz4KICA8Zz4KICAgIDxwYXRoIGNsYXNzPSJzdDgiIGQ9Ik0zNS41Nyw0M0wyMDIuMzQsNi45Nk0zNi4zNCw0Ny44M2wxODAtMjkuODciLz4KICAgIDxwYXRoIGNsYXNzPSJzdDgiIGQ9Ik02NDguNzksMjMuNWgxMTguMDJNNjYwLjY2LDMyLjVoMTI0LjE0TTEyMTMuNTcsOTQuMTdsMTY0LTYzLjE3TTEyMjMuNTcsMTA2LjE3bDE2Mi02My4xNyIvPgogICAgPHBhdGggY2xhc3M9InN0OCIgZD0iTTE3NDcuNjcsMTA2LjI0bDIyOS40MS05NC4wM00xNzU0LjY3LDExOC4yNGwyMjkuNDEtOTQuMDMiLz4KICA8L2c+CiAgPHBhdGggY2xhc3M9InN0NyIgZD0iTTEyMTMsMTI1aDEyME0xNjI5LjcsMTguNTdoODkiLz4KICA8cmVjdCBjbGFzcz0ic3QxIiB4PSI4OTIiIHk9IjE4IiB3aWR0aD0iODYuNDMiIGhlaWdodD0iMjkiLz4KICA8cmVjdCBjbGFzcz0ic3Q0IiB4PSIxNDM4LjE1IiB5PSIzMSIgd2lkdGg9IjcwIiBoZWlnaHQ9IjI0Ii8+CiAgPHJlY3QgY2xhc3M9InN0MyIgeD0iMTY2MSIgeT0iODEuMzgiIHdpZHRoPSIzMSIgaGVpZ2h0PSI0Ni4zNiIvPgogIDxwb2x5Z29uIGNsYXNzPSJzdDQiIHBvaW50cz0iMzQ5LjAzIDEwMi40MSA0NTMuOTcgOTguMDcgNDUzLjk3IDEyMi4wNyAzNDkuMDMgMTI2LjQxIDM0OS4wMyAxMDIuNDEiLz4KICA8bGluZSBjbGFzcz0ic3Q4IiB4MT0iNTYuNyIgeTE9IjExLjQiIHgyPSIxMzQuNDUiIHkyPSI2MS45NiIvPgo8L3N2Zz4=") center top / max(100%, 2000px) auto no-repeat,
+      linear-gradient(to bottom, var(--construct-paper) 0 300px, transparent 300px),
+      var(--construct-body-art) center 220px / 100vw auto repeat-y,
+      var(--construct-paper);
+  }
+
+  div#container-wrap:has(.construct-body-bg-off) {
+    --construct-body-art: linear-gradient(transparent, transparent);
+  }
+}
+
+.construct-body-bg-switch {
+  display: none !important;
+}
+/* 页眉文字与交互保留原位；几何背景横向贯穿整个视口。 */
+#header {
+  overflow: visible;
+  background: transparent;
+  isolation: isolate;
+}
+
+#header h1,
+#header h2 {
+  position: relative;
+  z-index: 1;
+}
+
+#header h1 { margin-top: 0; }
+
+#header h1::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -120px;
+  width: 120px;
+  height: 120px;
+  background: var(--construct-logo) center / contain no-repeat;
+  box-shadow: none;
+}
+
+#header h1 a {
+  color: var(--construct-ink);
+  font-family: "Arial Black", "Microsoft YaHei", sans-serif;
+  font-size: 190%;
+  font-weight: 900;
+  letter-spacing: .02em;
+  text-shadow: 3px 3px 0 var(--construct-red);
+}
+
+#header h2 span {
+  color: var(--construct-red);
+  text-shadow: none;
+  letter-spacing: .12em;
+}
+
+#login-status,
+#login-status a,
+#login-status a:visited { color: var(--construct-ink); }
+#login-status {
+  z-index: 50;
+  padding: 4px 6px;
+  border: 2px solid var(--construct-ink);
+  background: var(--construct-paper);
+  box-shadow: 3px 3px 0 var(--construct-red);
+  font-weight: 700;
+  white-space: nowrap;
+}
+#login-status .printuser img.small { vertical-align: middle; }
+#login-status #my-account { text-decoration: underline; text-decoration-color: var(--construct-red); }
+#account-topbutton {
+  display: inline-block;
+  min-width: 1.4em;
+  padding: 0 4px;
+  border: 2px solid var(--construct-ink);
+  border-radius: 0;
+  background-color: var(--construct-red) !important;
+  background-image: none !important;
+  color: var(--construct-paper) !important;
+  font-weight: 900;
+  line-height: 1.3;
+  text-align: center;
+  text-indent: 0;
+  text-decoration: none;
+}
+#account-topbutton:hover,
+#account-topbutton:focus {
+  background-color: var(--construct-yellow) !important;
+  color: var(--construct-ink) !important;
+}
+#account-options {
+  border: 2px solid var(--construct-ink);
+  border-radius: 0;
+  background: var(--construct-paper);
+  box-shadow: 4px 4px 0 var(--construct-red);
+}
+#account-options ul { margin: 0; padding: 4px; }
+#account-options li { list-style: none; }
+#account-options a,
+#account-options a:visited {
+  display: block;
+  padding: 5px 9px;
+  color: var(--construct-ink);
+  text-decoration: none;
+}
+#account-options a:hover,
+#account-options a:focus {
+  background: var(--construct-yellow);
+  color: var(--construct-ink);
+}
+
+/* 保留顶栏菜单、下拉菜单和搜索的可操作性。 */
+#top-bar {
+  background: var(--construct-ink);
+  border-bottom: 5px solid var(--construct-yellow);
+}
+
+#top-bar a,
+#top-bar a:visited {
+  color: var(--construct-paper);
+}
+
+#top-bar a:hover,
+#top-bar a:focus {
+  color: var(--construct-ink);
+  background: var(--construct-yellow);
+}
+
+#top-bar ul li ul {
+  background: var(--construct-ink);
+  border: 2px solid var(--construct-paper);
+}
+
+#top-bar ul li:hover > a,
+#top-bar ul li.sfhover > a,
+#top-bar ul li a:focus {
+  color: var(--construct-ink);
+  background: var(--construct-yellow);
+  border-color: var(--construct-ink);
+}
+
+/* Sigma-9 原有的圆角渐变搜索控件改为直角高对比控件。 */
+#search-top-box-input {
+  border: 2px solid var(--construct-ink);
+  border-radius: 0;
+  background: var(--construct-paper);
+  color: var(--construct-ink);
+  box-shadow: none;
+}
+
+#search-top-box-input:hover,
+#search-top-box-input:focus {
+  border-color: var(--construct-red);
+  background: #fffaf0;
+  color: var(--construct-ink);
+  box-shadow: none;
+}
+
+#search-top-box-form input[type=submit] {
+  border: 2px solid var(--construct-ink);
+  border-radius: 0;
+  background: var(--construct-red);
+  background-image: none;
+  color: var(--construct-paper);
+  box-shadow: 3px 3px 0 var(--construct-ink);
+  font-weight: 900;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+  border-color: var(--construct-ink);
+  background: var(--construct-yellow);
+  background-image: none;
+  color: var(--construct-ink);
+  box-shadow: 0 0 0 var(--construct-ink);
+  transform: translate(3px, 3px);
+}
+
+#side-bar {
+  border-top: 8px solid var(--construct-red);
+}
+
+#side-bar .side-block {
+  border: 2px solid var(--construct-ink);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: 3px 3px 0 var(--construct-ink);
+}
+
+#side-bar .heading {
+  color: var(--construct-red);
+  border-color: var(--construct-ink);
+  font-weight: 900;
+}
+
+a,
+a:visited,
+#side-bar a,
+#side-bar a:visited {
+  color: #a81d17;
+}
+
+a:hover,
+a:focus {
+  color: var(--construct-ink);
+  background: var(--construct-yellow);
+}
+
+#page-title {
+  color: var(--construct-ink);
+  border-bottom: 4px solid var(--construct-ink);
+  border-left: 12px solid var(--construct-red);
+  padding: .1em 0 .25em .45em;
+  font-family: "Arial Black", "Microsoft YaHei", sans-serif;
+  font-weight: 900;
+  line-height: 1.15;
+}
+
+#page-content {
+  background: rgba(242, 236, 222, .88);
+  font-family: Arial, "Microsoft YaHei", "PingFang SC", sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+}
+#page-content p,
+#page-content li { line-height: 1.8; }
+#page-content > p { margin: 1em 0; }
+#page-content a { text-underline-offset: .2em; }
+#page-content p a { text-decoration: underline; }
+#page-content a:focus-visible,
+#header a:focus-visible,
+#side-bar a:focus-visible {
+  outline: 3px solid var(--construct-red);
+  outline-offset: 3px;
+}
+
+#page-content h1,
+#page-content h2,
+#page-content h3 {
+  color: var(--construct-ink);
+  font-family: "Arial Black", "Microsoft YaHei", sans-serif;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+#page-content h1 {
+  border-bottom: 3px solid var(--construct-red);
+  padding-bottom: .15em;
+}
+
+#page-content h2 {
+  border-left: 8px solid var(--construct-red);
+  padding-left: .45em;
+}
+
+#page-content hr {
+  height: 2px;
+  border: 0;
+  background: var(--construct-ink);
+}
+
+#page-content blockquote,
+#page-content .blockquote {
+  margin: 1.2em 0;
+  padding: .8em 1.1em;
+  border: 0;
+  border-left: 8px solid var(--construct-red);
+  background: #e5dcc9;
+  box-shadow: none;
+}
+
+#page-content table.wiki-content-table {
+  width: 100%;
+  margin: 1.2em 0;
+  border: 2px solid var(--construct-ink);
+  border-collapse: collapse;
+  background: var(--construct-paper);
+}
+
+#page-content table.wiki-content-table th {
+  border: 2px solid var(--construct-ink);
+  background: var(--construct-ink);
+  color: var(--construct-paper);
+  text-align: left;
+  padding: .6em .8em;
+}
+
+#page-content table.wiki-content-table td {
+  border: 2px solid var(--construct-ink);
+  padding: .6em .8em;
+  vertical-align: top;
+}
+#page-content table.wiki-content-table tr:nth-child(odd) td {
+  background: rgba(23, 23, 20, .035);
+}
+
+#page-content .yui-navset .yui-nav a {
+  border-radius: 0;
+  background: var(--construct-ink);
+  color: var(--construct-paper);
+  box-shadow: 3px 3px 0 var(--construct-ink);
+}
+
+#page-content .yui-navset .yui-nav .selected a {
+  background: var(--construct-red);
+  color: #fff;
+}
+
+/* 专用内容块：旗帜、编号与两栏资料。 */
+/* 海报组件：无字 SVG 为底图，文字保持为可编辑的网页文字。 */
+#page-content .construct-poster,
+#page-content .construct-poster * { box-sizing: border-box; }
+.construct-poster {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 841.92 / 595.28;
+  container-type: inline-size;
+  margin: 1.5em 0 2em;
+  background: var(--construct-paper) url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iX+WbvuWxgl8yIiBkYXRhLW5hbWU9IuWbvuWxgiAyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4NDEuOTIgNTk1LjI4Ij4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAgICBmaWxsOiAjYmUyODIwOwogICAgICB9CgogICAgICAuY2xzLTIsIC5jbHMtMyB7CiAgICAgICAgZmlsbDogIzIzMTgxNTsKICAgICAgfQoKICAgICAgLmNscy0zIHsKICAgICAgICBmaWxsLXJ1bGU6IGV2ZW5vZGQ7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgPC9kZWZzPgogIDxnPgogICAgPHBhdGggY2xhc3M9ImNscy0zIiBkPSJNMzM1LjQ2LDMwNC4zMmgtMTUuMjdjLTcuOTUsNTQuMzQtMzguMTgsODYuNC05Mi4zNCw5NC41My0yMi4xNywxLjA4LTM5LjEyLTMuMDUtNTMuMDgtMTAuMTgtMy42NSwzLjM4LTUuNzYsOC4zLTgsMTMuMDktNC43Ny0uNTYtNi43LTMuOTctMTAuOTEtNS4wOSwyLjQ3LTQuOCw0Ljk4LTkuNTYsOC0xMy44Mi00LjAyLTMuMjUtNy45OS02LjU1LTEyLjM2LTkuNDUtMTkuMDEtMTkuNTMtMzQuNDYtNDIuNjEtMzIuNzItODIuODksNC4xNC0zNi4xLDIwLjg1LTU5LjYxLDQ1LjA4LTc1LjYyLTIuNTYtNC43MS01LjExLTkuNDQtOC0xMy44MiwzLjI5LTIuMjksNi4yOS00Ljg2LDEwLjkxLTUuODIsMS41LDUuMDUsNS4xNiw3LjkzLDYuNTQsMTMuMDksMTEuMTctNC4zNCwyMi40MS04LjYxLDM2LjM2LTEwLjE4LDY3LjgxLjI5LDEwMS4yOSwzNC45MywxMDkuOCw5NC41M2gxNnYxMS42M1pNMzAwLjU2LDI4NS40MWMtNi4wNC01MC44Ny02NC41Mi04NS41MS0xMTcuMDctNjEuODEsNC43OCwxMS43LDEyLjA5LDIwLjg4LDE3LjQ1LDMxLjk5LDUuMTYtMS4zOSw4LjA0LTUuMDUsMTMuMDktNi41NC0uMjIsMTUuMjUsMS43MywyOC4zMywxLjQ1LDQzLjYzLTExLjkzLTguMTktMjQuOTUtMTUuMjgtMzYuMzYtMjMuOTksMy45NC0yLjEyLDcuNTgtNC41NCwxMS42My02LjU0LTUuMDQtMTEuNDUtMTIuMzUtMjAuNjEtMTcuNDUtMzEuOTktMjEuMjgsMTQuMTEtMzUuNjEsMzUuMTYtMzcuMDgsNjkuMDgsMS45NiwzMi45NCwxNi4wNCw1My43NiwzNy4wOCw2Ny42Miw1LjExLTExLjM4LDEyLjQ2LTIwLjUsMTcuNDUtMzEuOTktMy45MS0yLjM5LTguNi00LTExLjYzLTcuMjcsMTIuMi02Ljk1LDI1LjIxLTE2Ljk2LDM2LjM2LTIyLjU0LS4yMSwxNC44Mi0uNzEsMjkuMzUtMi4xOCw0Mi45LTQuMjYtMi4wNC03LjU0LTUuMDYtMTIuMzYtNi41NC01LjM3LDExLjEyLTEyLjY3LDIwLjI5LTE3LjQ1LDMxLjk5LDEwLjM1LDQuNDQsMjEuOTcsNy42LDM2LjM2LDgsNDguMjItNC42MSw3NS41LTMwLjE4LDgxLjQ0LTc3LjA3aC0zNi4zNnYxNC41NGMtMTIuNTUtNy4wOC0yNi4yNi0xMy0zOC41NC0yMC4zNiwxMi4xMi02Ljc5LDI2Ljk0LTE0Ljc1LDM4LjU0LTE5LjYzdjEzLjgyaDM2LjM2Yy4xNC0yLjgxLjAzLTUuMzYtLjczLTcuMjdaIi8+CiAgICA8cGF0aCBjbGFzcz0iY2xzLTMiIGQ9Ik0zODkuMjcsMjQ5LjA2djk5LjYyYy05LjcxLDEuMi0xOC40LDMuNDItMjcuNjMsNS4wOS0yNyw1OC42LTc1LjQsMTAzLjQyLTE2NC4zMyw5NS4yNS03LjcxLDYuMTEtMTMuNDIsMTQuMjEtMTkuNjMsMjEuODEtMjguODYtMTYuNzEtNTguMDUtMzMuMDgtODYuNTMtNTAuMTcsMi40OS05LjE0LDYuMTYtMTcuMTEsOC43My0yNi4xOC0xNy44My0yNS4zMS0zMi4zOS01My45LTMzLjQ1LTk1Ljk4LDEuMjQtNDEuNjYsMTUuMS03MC43LDMzLjQ1LTk1LjI1LTIuMzMtOS4zLTUuOTEtMTcuMzUtOC43My0yNi4xOCwyNy4yNy0xOC4zLDU3Ljg1LTMzLjI4LDg1LjgtNTAuOSw2Ljg2LDYuOTUsMTIuNTEsMTUuMTIsMTkuNjMsMjEuODEsODguODItOC4wNSwxMzguMzUsMzUuNjMsMTY0LjMzLDk1LjI1LDkuNTEsMS44OSwxOS41OSwzLjIsMjguMzYsNS44MlpNMzU1LjA5LDI1MS4yNGMtMTEuNjMtMzItMzEuNDgtNTUuNzctNTcuNDQtNzMuNDQtMjQuNjYtMTYuMjMtNjQuNDktMjguODgtMTA0LjcxLTIwLjM2LTcuMzktNS45NC0xMS40OC0xNS4xOC0xOS42My0yMC4zNi0yMy44MSwxNC4wMS00Ny42OCwyNy45NC03MS45OCw0MS40NSwyLjc4LDguODUsNi4xNSwxNy4xMiw4LjczLDI2LjE4LTE5LjQxLDIzLjQ5LTMzLjgzLDUxLjk3LTM0LjksOTMuOC44Miw0Mi4zMiwxNi4xMiw3MC4xNywzNC45LDk0LjUzLTMuMDIsOC4zNy01Ljc2LDE3LjAzLTguNzMsMjUuNDUsMjQuMzMsMTMuNDksNDguMTIsMjcuNSw3MS45OCw0MS40NSw4LjUyLTUuMDUsMTEuOTUtMTUuMTksMjAuMzYtMjAuMzYsMzkuODUsOC4yMyw4MC4zOC0zLjgzLDEwMy45OC0yMS4wOSwyNy4yOC0xNi4zNSw0NS4wNi00Mi4xOSw1OC4xNy03Mi43MSw4LjM0LTIuMzMsMTguNTMtMi44LDI2LjE4LTUuODJ2LTgyLjE2Yy02Ljc2LTQuMzktMTguMjUtNC4wNS0yNi45LTYuNTRaIi8+CiAgPC9nPgogIDxnPgogICAgPHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMjEyLjU1LDM1LjY1djYzLjdjLTc4LjA4LDYuNDYtMTQzLjQyLDU3LjgxLTE3MC4xNywxMjguMTdoLS40NFYzNS42NWgxNzAuNjFaIi8+CiAgICA8cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iNzg5LjA0IDM1LjY1IDc4OS4wNCAxMzIuNzMgNjMxLjEzIDE5MC44MiA2MzEuMTMgMTI5LjkyIDcwMi40NSA5Ni41NCAyMTguNiA5Ni41NCAyMTguNiAzNS42NSA3ODkuMDQgMzUuNjUiLz4KICAgIDxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTY2OS4yNCwxMDUuMjhsLTI1OS41NywxMDcuMTdjLTI1LTUyLjMzLTcyLjEtOTIuMDgtMTI5LjIyLTEwNy4xN2gzODguNzlaIi8+CiAgICA8cG9seWdvbiBjbGFzcz0iY2xzLTEiIHBvaW50cz0iNzg2LjYxIDIwNy45IDYzMi42NiAyMzkuNjQgNjMyLjY2IDIwMi45NyA3ODYuNjEgMTQ0LjMzIDc4Ni42MSAyMDcuOSIvPgogICAgPHJlY3QgY2xhc3M9ImNscy0xIiB4PSIzOS45MyIgd2lkdGg9Ijc0OS4xIiBoZWlnaHQ9IjE2LjAzIi8+CiAgPC9nPgogIDxnPgogICAgPHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMjEyLjU1LDU1OS42M3YtNjMuN2MtNzguMDgtNi40Ni0xNDMuNDItNTcuODEtMTcwLjE3LTEyOC4xN2gtLjQ0djE5MS44N2gxNzAuNjFaIi8+CiAgICA8cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iNzg5LjA0IDU1OS42MyA3ODkuMDQgNDYyLjU1IDYzMS4xMyA0MDQuNDYgNjMxLjEzIDQ2NS4zNiA3MDIuNDUgNDk4Ljc0IDIxOC42IDQ5OC43NCAyMTguNiA1NTkuNjMgNzg5LjA0IDU1OS42MyIvPgogICAgPHBhdGggY2xhc3M9ImNscy0xIiBkPSJNNjY5LjI0LDQ5MGwtMjU5LjU3LTEwNy4xN2MtMjUsNTIuMzMtNzIuMSw5Mi4wOC0xMjkuMjIsMTA3LjE3aDM4OC43OVoiLz4KICAgIDxwb2x5Z29uIGNsYXNzPSJjbHMtMSIgcG9pbnRzPSI3ODYuNjEgMzg3LjM3IDYzMi42NiAzNTUuNjMgNjMyLjY2IDM5Mi4zMSA3ODYuNjEgNDUwLjk1IDc4Ni42MSAzODcuMzciLz4KICAgIDxyZWN0IGNsYXNzPSJjbHMtMSIgeD0iMzkuOTMiIHk9IjU3OS4yNSIgd2lkdGg9Ijc0OS4xIiBoZWlnaHQ9IjE2LjAzIi8+CiAgPC9nPgogIDxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSI2MjEuOTQgMTM0LjM3IDYyMS45NCA0NjAuOTEgNDE0LjI0IDM3NC4yNSAzMDIuNTMgMzI3LjYzIDMwMi41MyAyNjcuNjUgNDEzLjY0IDIyMS4yOSA2MjEuOTQgMTM0LjM3Ii8+CiAgPHBvbHlnb24gY2xhc3M9ImNscy0xIiBwb2ludHM9Ijc4Ni42MiAyMjQuMTcgNzg2LjYyIDM3MS4xMSA2MzIuNjYgMzQyLjc3IDYzMi42NiAyNTIuNTEgNzg2LjYyIDIyNC4xNyIvPgo8L3N2Zz4=") center / 100% 100% no-repeat;
+}
+.construct-poster-word {
+  position: absolute;
+  z-index: 2;
+  margin: 0;
+  font-family: Arial, "Microsoft YaHei", sans-serif;
+  font-weight: 900;
+  letter-spacing: -.045em;
+  line-height: 1;
+  white-space: nowrap;
+}
+#page-content .construct-poster-word p {
+  margin: 0;
+  line-height: inherit;
+  white-space: inherit;
+  overflow-wrap: inherit;
+  word-break: inherit;
+}
+.construct-poster-scp {
+  left: 6.5%;
+  color: var(--construct-ink);
+  font-size: 8cqw;
+  letter-spacing: -.07em;
+}
+.construct-poster-foundation {
+  left: 27%;
+  color: var(--construct-paper);
+  font-size: 7.4cqw;
+}
+.construct-poster-top { top: 5.5%; }
+.construct-poster-bottom { top: 83.5%; }
+.construct-poster-title {
+  left: 45%;
+  top: 29.5%;
+  width: 24.5%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  color: var(--construct-paper);
+  font-size: 11cqw;
+  letter-spacing: 0;
+  line-height: 1.08;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-all;
+  overflow: hidden;
+}
+/* 海报标题保持可编辑文字，透视由其容器控制。 */
+#page-content .construct-poster-title p {
+  width: 100%;
+  transform-origin: left center;
+  transform: perspective(37cqw) rotateY(-59deg);
+}
+.construct-poster-note {
+  left: 76.3%;
+  top: 44%;
+  width: 15.3%;
+  height: 17%;
+  color: var(--construct-ink);
+  font-size: 3cqw;
+  letter-spacing: -.06em;
+  line-height: 1.3;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-all;
+  overflow: hidden;
+}
+
+/* 对开资料卡、边注和提示条。颜色只用于强调，正文保持水平。 */
+.construct-dossier {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr);
+  gap: 0;
+  margin: 1.6em 0;
+  border: 2px solid var(--construct-ink);
+  box-shadow: 5px 5px 0 var(--construct-ink);
+}
+.construct-dossier > div { min-width: 0; padding: 1.2em; }
+.construct-index {
+  background: var(--construct-ink);
+  color: var(--construct-paper);
+  border-top: 7px solid var(--construct-red);
+}
+#page-content .construct-index p { margin: .2em 0; }
+.construct-index-label { color: var(--construct-yellow); font-size: .8em; letter-spacing: .08em; }
+.construct-index-number { font-size: 2.2em; font-weight: 900; line-height: 1.15; }
+.construct-summary { border-top: 7px solid var(--construct-ink); }
+#page-content .construct-summary p { margin: .3em 0; }
+.construct-annotated {
+  display: grid;
+  grid-template-columns: 7em minmax(0, 1fr);
+  gap: 1.2em;
+  margin: 2em 0;
+}
+.construct-margin-note {
+  border-top: 4px solid var(--construct-red);
+  color: #a81d17;
+  font-size: .8em;
+  font-weight: 700;
+}
+#page-content .construct-margin-note p { margin: .5em 0; }
+#page-content .construct-body p:first-child { margin-top: 0; }
+.construct-alert {
+  display: grid;
+  grid-template-columns: 4.5em minmax(0, 1fr);
+  margin: 1.5em 0;
+  border: 2px solid var(--construct-ink);
+}
+.construct-alert-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--construct-yellow);
+  font-weight: 900;
+}
+.construct-alert-text { padding: .8em 1em; }
+#page-content .construct-alert p { margin: 0; }
+#page-content .construct-alert-mark p { line-height: 1.2; }
+.construct-table-scroll { max-width: 100%; overflow-x: auto; }
+#page-content .construct-table-scroll table { margin-top: 0; }
+#page-content .construct-table-scroll:focus-visible {
+  outline: 3px solid var(--construct-red);
+  outline-offset: 2px;
+}
+#page-content .construct-dossier *,
+#page-content .construct-annotated *,
+#page-content .construct-alert * { box-sizing: border-box; }
+#page-content .construct-panel {
+  padding: 1em 1.2em;
+  border-left: 5px solid var(--construct-red);
+  background: #e5dcc9;
+}
+#page-content .construct-panel p { margin: .3em 0; }
+
+.construct-strip {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  margin: 1.4em 0;
+  border-top: 4px solid var(--construct-ink);
+  border-bottom: 4px solid var(--construct-ink);
+  background: linear-gradient(135deg, transparent 0 85%, rgba(201,37,28,.08) 85% 100%);
+}
+
+/* Wikidot 会自动在 strip 内包一层 p，布局必须落到这层上。 */
+.construct-strip p {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  margin: 0;
+}
+
+.construct-strip .construct-number {
+  display: flex;
+  align-items: center;
+  padding: .25em .7em .25em .35em;
+  background: var(--construct-red);
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 2.2em;
+  font-weight: 900;
+  line-height: 1;
+  white-space: nowrap;
+  clip-path: polygon(0 0, 100% 0, 82% 100%, 0 100%);
+}
+
+.construct-strip .construct-label {
+  align-self: center;
+  flex: 1;
+  padding: .65em .9em .65em .35em;
+  font-weight: 800;
+}
+
+.construct-note {
+  margin: 1.2em 0;
+  padding: .85em 1.1em;
+  border: 3px solid var(--construct-ink);
+  background: var(--construct-yellow);
+  font-weight: 700;
+}
+
+/* 海报式操作入口：实心 / 线框，共用直角描边与硬阴影。 */
+.construct-actions { margin: 1.25em 0 1.8em; }
+#page-content .construct-actions p {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 0;
+}
+#page-content .construct-actions a,
+#page-content .construct-actions a:visited {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.6em;
+  box-sizing: border-box;
+  padding: .45em 1em;
+  border: 2px solid var(--construct-ink);
+  border-radius: 0;
+  background: var(--construct-red);
+  color: var(--construct-paper);
+  box-shadow: 4px 4px 0 var(--construct-ink);
+  font-family: Arial, "Microsoft YaHei", sans-serif;
+  font-weight: 900;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: transform .15s ease, box-shadow .15s ease, background-color .15s ease;
+}
+#page-content .construct-actions a + a,
+#page-content .construct-actions a + a:visited {
+  background: var(--construct-paper);
+  color: var(--construct-ink);
+}
+#page-content .construct-actions a:hover,
+#page-content .construct-actions a:focus {
+  background: var(--construct-yellow);
+  color: var(--construct-ink);
+  box-shadow: 1px 1px 0 var(--construct-ink);
+  transform: translate(3px, 3px);
+}
+
+#page-content .yui-navset .yui-nav {
+  border-bottom: 3px solid var(--construct-ink);
+}
+#page-content .yui-navset .yui-nav a em { border: 0; }
+#page-content .yui-navset .yui-nav a:hover,
+#page-content .yui-navset .yui-nav a:focus {
+  background: var(--construct-yellow);
+  color: var(--construct-ink);
+  box-shadow: 0 0 0 var(--construct-ink);
+  transform: translate(2px, 2px);
+}
+#page-content .yui-navset .yui-nav .selected a,
+#page-content .yui-navset .yui-nav .selected a:hover,
+#page-content .yui-navset .yui-nav .selected a:focus {
+  background: var(--construct-red);
+  color: #fff;
+}
+#page-content .yui-navset .yui-content {
+  border: 1px solid var(--construct-ink);
+  background: transparent;
+  padding: 1em 1.2em;
+}
+#page-content .collapsible-block { margin: 1.4em 0; }
+#page-content .collapsible-block-link {
+  display: inline-block;
+  padding: .32em .65em;
+  border: 2px solid var(--construct-ink);
+  background: var(--construct-paper);
+  box-shadow: 3px 3px 0 var(--construct-ink);
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+#page-content .collapsible-block-link:hover,
+#page-content .collapsible-block-link:focus {
+  background: var(--construct-yellow);
+  color: var(--construct-ink);
+  box-shadow: 0 0 0 var(--construct-ink);
+  transform: translate(3px, 3px);
+}
+
+/* 常见 Wikidot 阅读组件：保留正文的平静，把几何语言放在边框和索引。 */
+#page-content #toc {
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 1.5em 0;
+  padding: .8em 1em 1em;
+  border: 2px solid var(--construct-ink);
+  border-left: 8px solid var(--construct-red);
+  border-radius: 0;
+  background: var(--construct-paper);
+  box-shadow: 4px 4px 0 var(--construct-ink);
+}
+#page-content #toc .title {
+  margin: 0 0 .5em;
+  padding: 0 0 .25em;
+  border-bottom: 2px solid var(--construct-ink);
+  color: var(--construct-ink);
+  font-size: 1.15em;
+  font-weight: 900;
+}
+#page-content #toc-action-bar { float: right; margin-left: 1em; }
+#page-content #toc-action-bar a {
+  padding: .15em .45em;
+  border: 1px solid var(--construct-ink);
+  background: var(--construct-yellow);
+  color: var(--construct-ink);
+  font-weight: 700;
+  text-decoration: none;
+}
+#page-content #toc-list > div {
+  max-width: 100%;
+  padding-left: .45em;
+  border-left: 2px solid var(--construct-rule);
+  overflow-wrap: anywhere;
+}
+#page-content #toc-list a { color: var(--construct-ink); text-decoration: none; }
+#page-content #toc-list a:hover,
+#page-content #toc-list a:focus { color: var(--construct-ink); background: var(--construct-yellow); }
+
+#page-content .code {
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 1.1em 0;
+  border: 2px solid var(--construct-ink);
+  border-top: 5px solid var(--construct-red);
+  border-radius: 0;
+  background: #eee7d8;
+  box-shadow: 3px 3px 0 var(--construct-rule);
+}
+#page-content .code pre {
+  max-width: 100%;
+  margin: 0;
+  padding: .8em 1em;
+  overflow-x: auto;
+  background: transparent;
+  color: var(--construct-ink);
+  white-space: pre;
+}
+#page-content .code code { background: transparent; color: inherit; }
+#page-content tt,
+#page-content p code,
+#page-content li code {
+  padding: .1em .25em;
+  border: 0;
+  border-radius: 0;
+  background: #eee7d8;
+  color: var(--construct-ink);
+  box-shadow: none;
+}
+#page-content .keycap {
+  padding: .1em .35em;
+  border: 2px solid var(--construct-ink);
+  border-radius: 0;
+  background: var(--construct-paper);
+  box-shadow: 2px 2px 0 var(--construct-rule);
+  color: var(--construct-ink);
+  font-family: monospace;
+}
+
+#page-content .wiki-note {
+  margin: 1.2em 0;
+  padding: .7em 1em;
+  border: 2px solid var(--construct-ink);
+  border-left: 8px solid var(--construct-red);
+  border-radius: 0;
+  background: #eee7d8;
+  color: var(--construct-ink);
+}
+#page-content .wiki-note p { margin: .35em 0; }
+#page-content blockquote blockquote { border-left-width: 3px; background: var(--construct-paper); }
+#page-content sup.footnoteref,
+#page-content a.footnoteref,
+#page-content a[id^="footnoteref-"] {
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+#page-content a.footnoteref,
+#page-content a.footnoteref:visited,
+#page-content a[id^="footnoteref-"],
+#page-content a[id^="footnoteref-"]:visited {
+  padding: 0;
+  color: #175b9a;
+  font-size: 1em;
+  font-weight: 700;
+  text-decoration: none;
+}
+#page-content a.footnoteref:hover,
+#page-content a.footnoteref:focus,
+#page-content a[id^="footnoteref-"]:hover,
+#page-content a[id^="footnoteref-"]:focus {
+  color: #103e6a;
+  background: transparent;
+  text-decoration: underline;
+}
+#page-content .footnotes-footer {
+  margin: 2em 0 1.2em;
+  padding: .75em 1em;
+  border-top: 4px solid var(--construct-ink);
+  background: #eee7d8;
+}
+#page-content .footnotes-footer .title {
+  margin: 0 0 .5em;
+  color: var(--construct-ink);
+  font-weight: 900;
+}
+#page-content .footnote-footer { padding: .35em 0; border-top: 1px solid var(--construct-rule); }
+#page-content .footnote-footer a,
+#page-content .footnote-footer a:visited { color: #175b9a; font-weight: 900; }
+#page-content .footnote-footer a:hover,
+#page-content .footnote-footer a:focus { color: #103e6a; }
+.hovertip:has(.footnote) {
+  border: 2px solid var(--construct-ink) !important;
+  background: var(--construct-paper) !important;
+}
+.hovertip:has(.footnote) > .content { padding: 0; }
+.hovertip .footnote {
+  border: 0;
+  padding: 8px 10px;
+  background: var(--construct-paper);
+  color: var(--construct-ink);
+}
+.hovertip .footnote .f-heading { display: none !important; }
+.hovertip .footnote .f-content { margin: 0; }
+.hovertip .footnote .f-footer {
+  display: block !important;
+  margin: .45em 0 0;
+  padding: 0;
+  border: 0;
+  color: #5b5448;
+  font-size: 0;
+  line-height: 0;
+}
+.hovertip .footnote .f-footer > * { display: none !important; }
+.hovertip .footnote .f-footer::after {
+  content: "点击编号跳转至页末脚注";
+  display: block;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+/* 列表和图片只获得适度的识别符号，不改变阅读顺序或遮挡图片。 */
+#page-content ul:not(.yui-nav) li::marker { color: var(--construct-red); }
+#page-content ol li::marker { color: var(--construct-red); font-weight: 900; }
+#page-content dl { border-left: 3px solid var(--construct-red); padding-left: 1em; }
+#page-content dt { color: var(--construct-ink); font-weight: 900; }
+#page-content dd { margin-bottom: .5em; }
+#page-content .scp-image-block,
+#page-content .image-block {
+  box-sizing: border-box;
+  max-width: 100%;
+  border: 2px solid var(--construct-ink);
+  border-radius: 0;
+  background: var(--construct-paper);
+  box-shadow: 4px 4px 0 var(--construct-rule);
+}
+#page-content .scp-image-block img,
+#page-content .image-block img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+#page-content .scp-image-block .scp-image-caption,
+#page-content .image-block .caption {
+  padding: .5em .7em;
+  border-top: 2px solid var(--construct-ink);
+  color: var(--construct-ink);
+  font-size: .85em;
+  line-height: 1.5;
+}
+#page-content > p img { max-width: 100%; height: auto; }
+
+/* 页面级操作保持原有链接和脚本，仅替换按钮表面；不触及评论正文。 */
+#page-options-container { margin-top: 2em; border-top: 4px solid var(--construct-ink); }
+#page-info { color: var(--construct-ink); }
+#page-options-container .page-options-bottom a.btn {
+  display: inline-block;
+  margin: .2em;
+  padding: .35em .65em;
+  border: 2px solid var(--construct-ink);
+  border-radius: 0;
+  background: var(--construct-paper);
+  background-image: none;
+  box-shadow: 2px 2px 0 var(--construct-ink);
+  color: var(--construct-ink);
+  font-weight: 700;
+  text-shadow: none;
+}
+#page-options-container .page-options-bottom a.btn:hover,
+#page-options-container .page-options-bottom a.btn:focus {
+  background: var(--construct-yellow);
+  color: var(--construct-ink);
+  box-shadow: none;
+}
+/* 评分模块：编号牌与三枚操作键共用一条基线。 */
+#page-content .page-rate-widget-box {
+  display: inline-flex;
+  align-items: stretch;
+  height: auto;
+  margin: .25em 4px 1em 0;
+  padding: 0;
+  border: 2px solid var(--construct-ink);
+  border-radius: 0;
+  background: var(--construct-paper);
+  box-shadow: 4px 4px 0 var(--construct-red);
+  color: var(--construct-ink);
+  font-weight: 700;
+  overflow: visible;
+}
+#page-content .page-rate-widget-box .rate-points,
+#page-content .page-rate-widget-box .rateup,
+#page-content .page-rate-widget-box .ratedown,
+#page-content .page-rate-widget-box .cancel {
+  float: none;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  line-height: 2.2;
+  white-space: nowrap;
+}
+#page-content .page-rate-widget-box .rate-points,
+#page-content .page-rate-widget-box .rateup,
+#page-content .page-rate-widget-box .ratedown { display: block; }
+#page-content .page-rate-widget-box .rate-points {
+  padding: 0 .8em;
+  background: var(--construct-ink) !important;
+  color: var(--construct-paper) !important;
+}
+#page-content .page-rate-widget-box .rateup,
+#page-content .page-rate-widget-box .ratedown,
+#page-content .page-rate-widget-box .cancel {
+  border-left: 2px solid var(--construct-ink);
+  background: var(--construct-paper);
+}
+#page-content .page-rate-widget-box .rateup { background: var(--construct-yellow); }
+#page-content .page-rate-widget-box .rateup a,
+#page-content .page-rate-widget-box .ratedown a,
+#page-content .page-rate-widget-box .cancel a {
+  display: block;
+  height: auto;
+  padding: 0 .65em;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--construct-ink);
+  font-weight: 900;
+  line-height: inherit;
+  text-decoration: none;
+  text-shadow: none;
+}
+#page-content .page-rate-widget-box .rateup a:hover,
+#page-content .page-rate-widget-box .ratedown a:hover,
+#page-content .page-rate-widget-box .cancel a:hover,
+#page-content .page-rate-widget-box .rateup a:focus,
+#page-content .page-rate-widget-box .ratedown a:focus,
+#page-content .page-rate-widget-box .cancel a:focus {
+  background: var(--construct-red);
+  color: var(--construct-paper);
+}
+
+/*
+ * 构成方块 / Construct Blocks
+ * 组合式方块、标题签及错位展示的构想参考 Turbo Vision 版式的
+ * “Turbo Blocks”公开示例与代码，作者 JakdragonX、Croquembouche：
+ * https://scp-wiki-cn.wikidot.com/theme:turbo-vision
+ * https://scp-wiki.wikidot.com/theme:turbo-vision
+ * 以下视觉与 CSS 为构成版式重新编写，并非移植原 CSS。
+ */
+#page-content .construct-block {
+  --cb-bg: var(--construct-paper);
+  --cb-fg: var(--construct-ink);
+  --cb-line: var(--construct-ink);
+  --cb-accent: var(--construct-red);
+  position: relative;
+  box-sizing: border-box;
+  min-width: 0;
+  max-width: 100%;
+  margin: 1.8em 0;
+  padding: 1.4em 1.2em 1.1em;
+  border: 3px solid var(--cb-line);
+  background: var(--cb-bg);
+  color: var(--cb-fg);
+  box-shadow: 7px 7px 0 var(--cb-accent);
+  overflow-wrap: anywhere;
+}
+#page-content .construct-block::before {
+  content: attr(data-label);
+  position: absolute;
+  top: -.85em;
+  left: .9em;
+  max-width: calc(100% - 1.8em);
+  padding: .12em .58em;
+  box-sizing: border-box;
+  background: var(--cb-line);
+  color: var(--cb-bg);
+  font-size: .75em;
+  font-weight: 900;
+  letter-spacing: .08em;
+  line-height: 1.4;
+}
+#page-content .construct-block:not([data-label])::before { display: none; }
+#page-content .construct-block.cb-label-hidden::before { display: none; }
+#page-content .construct-block p { margin: .55em 0; }
+#page-content .construct-block p:last-child { margin-bottom: 0; }
+#page-content .construct-block a,
+#page-content .construct-block a:visited { color: inherit; text-decoration: underline; }
+#page-content .construct-block a:hover,
+#page-content .construct-block a:focus { background: var(--construct-yellow); color: var(--construct-ink); }
+#page-content .construct-block img { display: block; max-width: 100%; height: auto; }
+#page-content .construct-block-visual {
+  position: relative;
+  height: clamp(110px, 20vw, 220px);
+  overflow: hidden;
+  background:
+    repeating-linear-gradient(0deg, transparent 0 24px, rgba(23,23,20,.12) 24px 26px),
+    var(--construct-paper);
+}
+#page-content .construct-block-visual::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 76%;
+  height: 95%;
+  top: 3%;
+  left: -5%;
+  clip-path: polygon(0 15%, 100% 50%, 0 85%);
+  background: var(--construct-red);
+}
+#page-content .construct-block-visual::after {
+  content: "";
+  position: absolute;
+  width: 27%;
+  aspect-ratio: 1;
+  top: -22%;
+  right: 7%;
+  border: clamp(10px, 3vw, 30px) solid var(--construct-ink);
+  border-radius: 50%;
+}
+#page-content .construct-block-visual-label {
+  position: absolute;
+  z-index: 2;
+  right: .8em;
+  bottom: .7em;
+  padding: .2em .5em;
+  background: var(--construct-ink);
+  color: var(--construct-paper);
+  font-size: .8em;
+  font-weight: 900;
+  letter-spacing: .12em;
+}
+#page-content .construct-block-heading {
+  margin: .15em 0 .7em;
+  padding: 0 0 .35em .55em;
+  border-left: .45em solid var(--cb-accent);
+  border-bottom: 2px solid var(--cb-line);
+  font-size: 1.25em;
+  font-weight: 900;
+  line-height: 1.2;
+}
+#page-content .construct-block-heading p { margin: 0; }
+#page-content .construct-block.cb-red {
+  --cb-bg: var(--construct-red);
+  --cb-fg: var(--construct-paper);
+  --cb-line: var(--construct-ink);
+  --cb-accent: var(--construct-ink);
+}
+#page-content .construct-block.cb-red::before { color: var(--construct-paper); }
+#page-content .construct-block.cb-ink {
+  --cb-bg: var(--construct-ink);
+  --cb-fg: var(--construct-paper);
+  --cb-line: var(--construct-red);
+  --cb-accent: var(--construct-yellow);
+}
+#page-content .construct-block.cb-ink::before { color: var(--construct-paper); }
+#page-content .construct-block.cb-yellow {
+  --cb-bg: var(--construct-yellow);
+  --cb-accent: var(--construct-ink);
+}
+#page-content .construct-block.cb-line-paper { --cb-line: var(--construct-paper); }
+#page-content .construct-block.cb-line-red { --cb-line: var(--construct-red); }
+#page-content .construct-block.cb-type-paper { --cb-fg: var(--construct-paper); }
+#page-content .construct-block.cb-type-ink { --cb-fg: var(--construct-ink); }
+#page-content .construct-block.cb-ink.cb-line-paper::before { color: var(--construct-ink); }
+#page-content .construct-block.cb-red.cb-line-paper::before { color: var(--construct-red); }
+#page-content .construct-block .construct-block {
+  margin: 1.15em 0 .4em;
+  padding: 1em;
+  box-shadow: 4px 4px 0 var(--cb-accent);
+}
+
+/* 错位宽度始终按正文容器计算，避免覆盖 Sigma-9 侧栏。 */
+#page-content .construct-offset { box-sizing: border-box; width: 78%; max-width: 100%; clear: both; }
+#page-content .construct-offset.cb-step-1 { width: 90%; }
+#page-content .construct-offset.cb-step-2 { width: 75%; }
+#page-content .construct-offset.cb-step-3 { width: 60%; }
+#page-content .construct-offset.cb-right { margin-left: auto; }
+#page-content .construct-offset.cb-left { margin-right: auto; }
+#page-content .construct-offset .construct-block { margin: 1.8em 0; }
+#page-content .construct-float-left,
+#page-content .construct-float-right { box-sizing: border-box; width: 43%; max-width: 100%; }
+#page-content .construct-float-left { float: left; margin: 0 1.7em .8em 0; }
+#page-content .construct-float-right { float: right; margin: 0 0 .8em 1.7em; }
+#page-content .construct-float-left .construct-block,
+#page-content .construct-float-right .construct-block { margin: .9em 0 1.3em; }
+#page-content .construct-flow { display: flow-root; }
+#page-content .construct-flow::after { content: ""; display: table; clear: both; }
+#page-content .construct-credit {
+  margin: 1.6em 0;
+  padding: .8em 1em;
+  border-left: 5px solid var(--construct-red);
+  background: #eee7d8;
+  font-size: .88em;
+}
+#page-content .construct-logo-specimen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 170px;
+  margin: 1.5em 0;
+  border: 3px solid var(--construct-ink);
+  background: var(--construct-paper);
+}
+#page-content .construct-logo-specimen::before {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 120px;
+  background: var(--construct-logo) center / contain no-repeat;
+}
+
+/* 中等宽度下标题与搜索分行，侧栏仍由 Sigma-9 自己管理。 */
+@media (min-width: 768px) and (max-width: 1023px) {
+  div#container-wrap {
+    background:
+      linear-gradient(to bottom, transparent 0 170px, var(--construct-ink) 170px 192px, var(--construct-paper) 192px),
+      url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iX+WbvuWxgl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDIwMDAgMTQwIj4KICA8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMjkuOC4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogMi4xLjEgQnVpbGQgMikgIC0tPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuc3QwIHsKICAgICAgICBvcGFjaXR5OiAuMTc7CiAgICAgIH0KCiAgICAgIC5zdDAsIC5zdDEsIC5zdDIgewogICAgICAgIGZpbGw6ICMxNzE3MTQ7CiAgICAgIH0KCiAgICAgIC5zdDAsIC5zdDMsIC5zdDQsIC5zdDIsIC5zdDUgewogICAgICAgIGlzb2xhdGlvbjogaXNvbGF0ZTsKICAgICAgfQoKICAgICAgLnN0NiwgLnN0MywgLnN0NCB7CiAgICAgICAgZmlsbDogI2M5MjUxYzsKICAgICAgfQoKICAgICAgLnN0MyB7CiAgICAgICAgb3BhY2l0eTogLjY2OwogICAgICB9CgogICAgICAuc3Q3IHsKICAgICAgICBzdHJva2U6ICNjOTI1MWM7CiAgICAgICAgc3Ryb2tlLXdpZHRoOiAzcHg7CiAgICAgIH0KCiAgICAgIC5zdDcsIC5zdDggewogICAgICAgIGZpbGw6IG5vbmU7CiAgICAgIH0KCiAgICAgIC5zdDggewogICAgICAgIHN0cm9rZTogIzE3MTcxNDsKICAgICAgICBzdHJva2Utd2lkdGg6IDJweDsKICAgICAgfQoKICAgICAgLnN0NCwgLnN0NSB7CiAgICAgICAgb3BhY2l0eTogLjM4OwogICAgICB9CgogICAgICAuc3QyIHsKICAgICAgICBvcGFjaXR5OiAuMTY7CiAgICAgIH0KCiAgICAgIC5zdDUgewogICAgICAgIGZpbGw6ICNlZGJkMzI7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgPC9kZWZzPgogIDxwYXRoIGNsYXNzPSJzdDYiIGQ9Ik0wLDE0MEwzMzAsMGg1MGwtMjA4LDE0MEgwWiIvPgogIDxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik0yNzguNTMsMjQuODFoMTQxbC0xMjIuMjMsOTAuMzgtMTguNzctOTAuMzhoMFoiLz4KICA8cGF0aCBjbGFzcz0ic3QyIiBkPSJNNjI2LDE0MEw3ODgsMGg5MmwtMTY3LDE0MGgtODdaIi8+CiAgPHBhdGggY2xhc3M9InN0NCIgZD0iTTgwNiwxMzJMMTExOCwwbDc1LDE0MC0zODctOFoiLz4KICA8cGF0aCBjbGFzcz0ic3Q1IiBkPSJNMTE3MS4zMiw2Ljc5aDM1djg3LjM4aC0zNVY2Ljc5WiIvPgogIDxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMzA3LDBsMTQyLDE0MGgtODJMMTIyNSwwaDgyWiIvPgogIDxwYXRoIGNsYXNzPSJzdDMiIGQ9Ik0xNDQxLjg3LDExNS43NGwxNjAuMTMtODEuNzQtODUuMTMsMTA1Ljc0cy03NS0yNC03NS0yNFoiLz4KICA8cGF0aCBjbGFzcz0ic3QyIiBkPSJNMTg5NiwwbC0xODcsMTQwaC0xMzlMMTc3MywwaDEyM1oiLz4KICA8cGF0aCBjbGFzcz0ic3Q2IiBkPSJNMTc4OSwwbDIxMSwxNDBoLTYwTDE3MzAsMGg1OVoiLz4KICA8Zz4KICAgIDxwYXRoIGNsYXNzPSJzdDgiIGQ9Ik0zNS41Nyw0M0wyMDIuMzQsNi45Nk0zNi4zNCw0Ny44M2wxODAtMjkuODciLz4KICAgIDxwYXRoIGNsYXNzPSJzdDgiIGQ9Ik02NDguNzksMjMuNWgxMTguMDJNNjYwLjY2LDMyLjVoMTI0LjE0TTEyMTMuNTcsOTQuMTdsMTY0LTYzLjE3TTEyMjMuNTcsMTA2LjE3bDE2Mi02My4xNyIvPgogICAgPHBhdGggY2xhc3M9InN0OCIgZD0iTTE3NDcuNjcsMTA2LjI0bDIyOS40MS05NC4wM00xNzU0LjY3LDExOC4yNGwyMjkuNDEtOTQuMDMiLz4KICA8L2c+CiAgPHBhdGggY2xhc3M9InN0NyIgZD0iTTEyMTMsMTI1aDEyME0xNjI5LjcsMTguNTdoODkiLz4KICA8cmVjdCBjbGFzcz0ic3QxIiB4PSI4OTIiIHk9IjE4IiB3aWR0aD0iODYuNDMiIGhlaWdodD0iMjkiLz4KICA8cmVjdCBjbGFzcz0ic3Q0IiB4PSIxNDM4LjE1IiB5PSIzMSIgd2lkdGg9IjcwIiBoZWlnaHQ9IjI0Ii8+CiAgPHJlY3QgY2xhc3M9InN0MyIgeD0iMTY2MSIgeT0iODEuMzgiIHdpZHRoPSIzMSIgaGVpZ2h0PSI0Ni4zNiIvPgogIDxwb2x5Z29uIGNsYXNzPSJzdDQiIHBvaW50cz0iMzQ5LjAzIDEwMi40MSA0NTMuOTcgOTguMDcgNDUzLjk3IDEyMi4wNyAzNDkuMDMgMTI2LjQxIDM0OS4wMyAxMDIuNDEiLz4KICA8bGluZSBjbGFzcz0ic3Q4IiB4MT0iNTYuNyIgeTE9IjExLjQiIHgyPSIxMzQuNDUiIHkyPSI2MS45NiIvPgo8L3N2Zz4=") center top / auto 170px no-repeat,
+      linear-gradient(to bottom, var(--construct-paper) 0 170px, var(--construct-ink) 170px 192px, var(--construct-paper) 192px);
+  }
+  #header { height: 170px; }
+  #header h1, #header h2 {
+    float: none;
+    clear: none;
+    max-height: none;
+    margin-left: 124px;
+  }
+  #header h1::before { top: 16px; left: -120px; width: 120px; height: 120px; }
+  #header h1 a {
+    padding: 60px 0 0;
+    max-height: none;
+    font-size: 26px;
+    line-height: 1.1;
+  }
+  #header h2 span { padding: .4em 0 0; max-height: none; line-height: 1.2; }
+  #search-top-box { top: 137px; }
+  #top-bar { top: 170px; }
+}
+
+@media (max-width: 767px) {
+  #login-status { padding: 2px 4px; font-size: 11px; }
+  #account-options a { padding: 7px 9px; }
+  div#container-wrap {
+    /* SVG 中约 x=500 的桌面 Logo 对位点，按 170px 页眉高度等比换算为 607px。 */
+    --construct-mobile-logo-center: calc(5vw + 4px);
+    --construct-svg-logo-anchor: 607px;
+    background:
+      linear-gradient(to bottom, transparent 0 170px, var(--construct-ink) 170px 192px, var(--construct-paper) 192px),
+      url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iX+WbvuWxgl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDIwMDAgMTQwIj4KICA8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMjkuOC4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogMi4xLjEgQnVpbGQgMikgIC0tPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuc3QwIHsKICAgICAgICBvcGFjaXR5OiAuMTc7CiAgICAgIH0KCiAgICAgIC5zdDAsIC5zdDEsIC5zdDIgewogICAgICAgIGZpbGw6ICMxNzE3MTQ7CiAgICAgIH0KCiAgICAgIC5zdDAsIC5zdDMsIC5zdDQsIC5zdDIsIC5zdDUgewogICAgICAgIGlzb2xhdGlvbjogaXNvbGF0ZTsKICAgICAgfQoKICAgICAgLnN0NiwgLnN0MywgLnN0NCB7CiAgICAgICAgZmlsbDogI2M5MjUxYzsKICAgICAgfQoKICAgICAgLnN0MyB7CiAgICAgICAgb3BhY2l0eTogLjY2OwogICAgICB9CgogICAgICAuc3Q3IHsKICAgICAgICBzdHJva2U6ICNjOTI1MWM7CiAgICAgICAgc3Ryb2tlLXdpZHRoOiAzcHg7CiAgICAgIH0KCiAgICAgIC5zdDcsIC5zdDggewogICAgICAgIGZpbGw6IG5vbmU7CiAgICAgIH0KCiAgICAgIC5zdDggewogICAgICAgIHN0cm9rZTogIzE3MTcxNDsKICAgICAgICBzdHJva2Utd2lkdGg6IDJweDsKICAgICAgfQoKICAgICAgLnN0NCwgLnN0NSB7CiAgICAgICAgb3BhY2l0eTogLjM4OwogICAgICB9CgogICAgICAuc3QyIHsKICAgICAgICBvcGFjaXR5OiAuMTY7CiAgICAgIH0KCiAgICAgIC5zdDUgewogICAgICAgIGZpbGw6ICNlZGJkMzI7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgPC9kZWZzPgogIDxwYXRoIGNsYXNzPSJzdDYiIGQ9Ik0wLDE0MEwzMzAsMGg1MGwtMjA4LDE0MEgwWiIvPgogIDxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik0yNzguNTMsMjQuODFoMTQxbC0xMjIuMjMsOTAuMzgtMTguNzctOTAuMzhoMFoiLz4KICA8cGF0aCBjbGFzcz0ic3QyIiBkPSJNNjI2LDE0MEw3ODgsMGg5MmwtMTY3LDE0MGgtODdaIi8+CiAgPHBhdGggY2xhc3M9InN0NCIgZD0iTTgwNiwxMzJMMTExOCwwbDc1LDE0MC0zODctOFoiLz4KICA8cGF0aCBjbGFzcz0ic3Q1IiBkPSJNMTE3MS4zMiw2Ljc5aDM1djg3LjM4aC0zNVY2Ljc5WiIvPgogIDxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMzA3LDBsMTQyLDE0MGgtODJMMTIyNSwwaDgyWiIvPgogIDxwYXRoIGNsYXNzPSJzdDMiIGQ9Ik0xNDQxLjg3LDExNS43NGwxNjAuMTMtODEuNzQtODUuMTMsMTA1Ljc0cy03NS0yNC03NS0yNFoiLz4KICA8cGF0aCBjbGFzcz0ic3QyIiBkPSJNMTg5NiwwbC0xODcsMTQwaC0xMzlMMTc3MywwaDEyM1oiLz4KICA8cGF0aCBjbGFzcz0ic3Q2IiBkPSJNMTc4OSwwbDIxMSwxNDBoLTYwTDE3MzAsMGg1OVoiLz4KICA8Zz4KICAgIDxwYXRoIGNsYXNzPSJzdDgiIGQ9Ik0zNS41Nyw0M0wyMDIuMzQsNi45Nk0zNi4zNCw0Ny44M2wxODAtMjkuODciLz4KICAgIDxwYXRoIGNsYXNzPSJzdDgiIGQ9Ik02NDguNzksMjMuNWgxMTguMDJNNjYwLjY2LDMyLjVoMTI0LjE0TTEyMTMuNTcsOTQuMTdsMTY0LTYzLjE3TTEyMjMuNTcsMTA2LjE3bDE2Mi02My4xNyIvPgogICAgPHBhdGggY2xhc3M9InN0OCIgZD0iTTE3NDcuNjcsMTA2LjI0bDIyOS40MS05NC4wM00xNzU0LjY3LDExOC4yNGwyMjkuNDEtOTQuMDMiLz4KICA8L2c+CiAgPHBhdGggY2xhc3M9InN0NyIgZD0iTTEyMTMsMTI1aDEyME0xNjI5LjcsMTguNTdoODkiLz4KICA8cmVjdCBjbGFzcz0ic3QxIiB4PSI4OTIiIHk9IjE4IiB3aWR0aD0iODYuNDMiIGhlaWdodD0iMjkiLz4KICA8cmVjdCBjbGFzcz0ic3Q0IiB4PSIxNDM4LjE1IiB5PSIzMSIgd2lkdGg9IjcwIiBoZWlnaHQ9IjI0Ii8+CiAgPHJlY3QgY2xhc3M9InN0MyIgeD0iMTY2MSIgeT0iODEuMzgiIHdpZHRoPSIzMSIgaGVpZ2h0PSI0Ni4zNiIvPgogIDxwb2x5Z29uIGNsYXNzPSJzdDQiIHBvaW50cz0iMzQ5LjAzIDEwMi40MSA0NTMuOTcgOTguMDcgNDUzLjk3IDEyMi4wNyAzNDkuMDMgMTI2LjQxIDM0OS4wMyAxMDIuNDEiLz4KICA8bGluZSBjbGFzcz0ic3Q4IiB4MT0iNTYuNyIgeTE9IjExLjQiIHgyPSIxMzQuNDUiIHkyPSI2MS45NiIvPgo8L3N2Zz4=") calc(var(--construct-mobile-logo-center) - var(--construct-svg-logo-anchor)) top / auto 170px no-repeat,
+      linear-gradient(to bottom, var(--construct-paper) 0 170px, var(--construct-ink) 170px 192px, var(--construct-paper) 192px);
+  }
+
+  #header {
+    width: 100%;
+    max-width: none;
+    height: 170px;
+    padding-bottom: 22px;
+  }
+
+  #header h1,
+  #header h2 {
+    position: absolute;
+    float: none;
+    clear: none;
+    max-height: none;
+    margin: 0;
+  }
+
+  #header h1 {
+    top: 0;
+    left: 20px;
+  }
+
+  #header h2 {
+    top: 100px;
+    left: 152px;
+  }
+
+  #header h1::before {
+    content: none;
+  }
+
+  #header h1 a::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 0;
+    width: 120px;
+    height: 120px;
+    background: var(--construct-logo) center / contain no-repeat;
+    box-shadow: none;
+  }
+
+  #header h1 a {
+    position: relative;
+    box-sizing: border-box;
+    min-height: 136px;
+    max-height: none;
+    padding: 66px 0 0 132px;
+    font-size: clamp(1.1rem, 4.5vw, 2rem);
+    line-height: 1.08;
+    white-space: nowrap;
+    text-shadow: 2px 2px 0 var(--construct-red);
+  }
+
+  #header h2 span {
+    max-height: none;
+    padding: 0;
+    font-size: .8em;
+    line-height: 1.2;
+  }
+
+  #search-top-box {
+    top: 137px;
+    right: 5%;
+    width: 90%;
+  }
+
+  #search-top-box-input {
+    width: min(34vw, 160px);
+  }
+
+  #top-bar {
+    top: 170px;
+  }
+
+  #top-bar .open-menu a {
+    border: 3px solid var(--construct-ink);
+    border-radius: 0;
+    background: var(--construct-yellow);
+    color: var(--construct-ink);
+    box-shadow: 4px 4px 0 var(--construct-red);
+  }
+
+  #top-bar .open-menu a:hover,
+  #top-bar .open-menu a:focus {
+    background: var(--construct-paper);
+    color: var(--construct-ink);
+    box-shadow: 1px 1px 0 var(--construct-red);
+    transform: translate(3px, 3px);
+  }
+
+  #page-content {
+  background: rgba(242, 236, 222, .88); font-size: 15px; }
+  .construct-poster { margin-top: 1em; }
+  .construct-dossier { grid-template-columns: 1fr; }
+  .construct-dossier > div { padding: 1em; }
+  .construct-summary { border-top: 0; }
+  .construct-annotated { grid-template-columns: 1fr; gap: .5em; }
+  .construct-margin-note { width: fit-content; padding-right: 2em; }
+  .construct-alert { grid-template-columns: 3.5em minmax(0, 1fr); }
+  #page-content table.wiki-content-table {
+    display: table;
+    width: 100%;
+    max-width: 100%;
+  }
+  #page-content #toc { padding: .65em .7em .8em; }
+  #page-options-container .page-options-bottom a.btn { margin: .25em; }
+  #side-bar { background: var(--construct-paper); }
+  /* Sigma-9 的关闭遮罩位于侧栏内部；卡片透明时会从下方透出灰色。 */
+  #side-bar .side-block { background: var(--construct-paper); }
+  #page-content .construct-offset,
+  #page-content .construct-offset.cb-step-1,
+  #page-content .construct-offset.cb-step-2,
+  #page-content .construct-offset.cb-step-3,
+  #page-content .construct-float-left,
+  #page-content .construct-float-right {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #search-top-box-form input[type=submit],
+  #page-content .construct-actions a,
+  #page-content .collapsible-block-link {
+    transition: none;
+  }
+}
+
+[[/module]]
+
+[[div class="construct-body-bg-switch construct-body-bg-{$bodybg}"]]
+&#x20;
+[[/div]]
+
+[[iftags +版式]]
+
+[[div class="construct-poster"]]
+[[div class="construct-poster-word construct-poster-scp construct-poster-top"]]
+SCP
+[[/div]]
+[[div class="construct-poster-word construct-poster-foundation construct-poster-top"]]
+Foundation
+[[/div]]
+[[div class="construct-poster-word construct-poster-title"]]
+构成
+[[/div]]
+[[div class="construct-poster-word construct-poster-note"]]
+控制、收容与保护
+[[/div]]
+[[div class="construct-poster-word construct-poster-scp construct-poster-bottom"]]
+SCP
+[[/div]]
+[[div class="construct-poster-word construct-poster-foundation construct-poster-bottom"]]
+Foundation
+[[/div]]
+[[/div]]
+
+
+[[>]]
+[[module Rate]]
+[[/>]]
+
+
+[[div class="construct-strip"]]
+[[span class="construct-number"]]01[[/span]][[span class="construct-label"]]版式说明 / 使用方法[[/span]]
+[[/div]]
+
++ 构成版式
+
+本版式以 Sigma-9 为基础，拙劣地模仿了构成主义的风格，将楔形、圆弧、斜线与色块随意地用于页眉和版面边缘。页眉采用人类重新绘制的 SCP-C 标志，上方海报保留可编辑的网页文字，正文使用米白色背景。
+
+本版式也可耻地抄袭了[[[https://scp-wiki-cn.wikidot.com/theme:turbo-vision|turbo vision]]]版式中的文本块，详情可查看第五部分。
+
+在文章开头加入以下代码即可启用。
+
+> @@[[include :scp-wiki-cn:theme:construct]]@@
+
+主体背景默认开启，在非宽屏模式下为保证阅读体验也进行了关闭。若觉得图案干扰阅读，可在启用版式时关闭：
+
+> @@[[include :scp-wiki-cn:theme:construct | bodybg=off]]@@
+
+改回 @@bodybg=on@@ 或省略参数即可重新启用。这个选项只控制正文区域的背景图案，不影响页眉和正文样式。
+
+简介就此结束，后半部分将展示本版式的标题、表格、引用、脚注、标签页与可复用的构成部件等样式。部件示例下方附有 Wikidot 源码，可以直接复制到已启用本版式的页面中。
+
+本版式可能还会进行优化，所以若存在不足之处或者bug请在讨论页指出。
+
+**章节编号条的源码**
+
+[[code]]
+[[div class="construct-strip"]]
+[[span class="construct-number"]]01[[/span]][[span class="construct-label"]]章节名称[[/span]]
+[[/div]]
+[[/code]]
+
+[[toc]]
+
+[[div class="construct-actions"]]
+[[[https://scp-wiki-cn.wikidot.com/|SCP 中文主页 →]]] [[[https://scpsandboxcn.wikidot.com/|中文沙盒 →]]]
+[[/div]]
+
+**按钮样式的源码（可以按！）**
+
+[[code]]
+[[div class="construct-actions"]]
+[[[https://scp-wiki-cn.wikidot.com/|SCP 中文主页 →]]] [[[https://scpsandboxcn.wikidot.com/|中文沙盒 →]]]
+[[/div]]
+[[/code]]
+
+[[div class="construct-strip"]]
+[[span class="construct-number"]]02[[/span]][[span class="construct-label"]]正文部分 / 文字与层级[[/span]]
+[[/div]]
+
++ 标题与正文
+
+↑只有一个加号的一级标题下方以红线分割。[[[https://scp-wiki-cn.wikidot.com/wiki-syntax|维基语法]]]的简要展示（这部分你都可以在[[[https://scp-wiki-cn.wikidot.com/wiki-syntax|维基语法]]]找到更好的学习示例，这里只是作为展示）：
+
+正文、[[[https://scp-wiki-cn.wikidot.com/|链接]]]、**粗体**、//斜体//、__下划线__、--删除线-- 与行内代码 {{SCP-CN-001}} 是可以在同一段中使用的行内格式。
+
+脚注编号使用蓝色文字[[footnote]]脚注会在页末列出，鼠标悬停可查看简短说明。[[/footnote]]。
+
+需要表示按键时，可使用键帽样式[[footnote]]依然来自维基语法[[/footnote]]：[[span class="keycap"]]Ctrl[[/span]] + [[span class="keycap"]]F[[/span]]。
+
+**提醒：键帽的源码**
+
+[[code]]
+[[span class="keycap"]]Ctrl[[/span]] + [[span class="keycap"]]F[[/span]]
+[[/code]]
+
+++ 二级标题 / 信息分区
+
+有两个嘉豪的二级标题以左侧短线标识；三级标题适合篇幅较短的信息组。
+
+如果你嫌原生的标题太丑，这里有一个有意思的用法，你用@@+*@@这种把标题隐藏起来（依然可以显示在toc目录里），然后用span或者其它什么东西（比如我的那个章节编号条）做一个假标题就好了。
+
++++ 三级标题（三个加号） / 看起来和二级标题差不多，但你可以看到前面没有设置那个平泽进样式的红色竖条以作区分
+
+上标如 2^^3^^，下标如 H,,2,,O，也还是沿用来自Wikidot的维基语法。
+
+----
+
+++ 列表与引用
+
+* 点状列表：用法是星号+空格
+* 点状列表：用法是星号+空格
+* 点状列表：用法是星号+空格
+ * 次级点状列表：用法是空格+星号+空格
+
+# 数字列表：用法是井号+空格
+# 数字列表：用法是井号+空格
+# 数字列表：用法是井号+空格
+
+: （自定义内容1）前面有红线的这种 : （自定义内容2）记得要用英文冒号:（不是：）
+: 用法是冒号+空格+自定义内容1+空格+冒号 : +自定义内容2
+
+> 引用块以边线与正文区分。较长的句子会自然换行，让引文仍可连续阅读。用法是>加一个空格。
+>> 嵌套引用是用更多个>加一个空格。
+
+[[div class="construct-annotated"]]
+[[div class="construct-margin-note"]]
+边注 / 01
+
+非常小的一块，桌面上并排，手机上顺序排列。
+[[/div]]
+[[div class="construct-body"]]
+边注与正文可以并排放置，用来安排章节编号、简短说明与主体内容。窄屏时两栏会顺序排列。（这段话是正文，但也并不是正文）
+[[/div]]
+[[/div]]
+
+**边注与正文的源码**
+
+[[code]]
+[[div class="construct-annotated"]]
+[[div class="construct-margin-note"]]
+边注 / 01
+[[/div]]
+[[div class="construct-body"]]
+这里是正文。
+[[/div]]
+[[/div]]
+[[/code]]
+
+[[div class="construct-strip"]]
+[[span class="construct-number"]]03[[/span]][[span class="construct-label"]]卡片与表格[[/span]]
+[[/div]]
+
++* 资料卡与强调信息
+
+[[div class="construct-dossier"]]
+[[div class="construct-index"]]
+[[span class="construct-index-label"]]上面的黄色文字[[/span]]
+
+[[span class="construct-index-number"]]中间的大字[[/span]]
+
+下面的文字
+[[/div]]
+[[div class="construct-summary"]]
+**用途** / 随意。
+
+**结构** / 一个框分两块。
+
+**窄屏** / 两栏**应该会**自动改为上下排列。
+[[/div]]
+[[/div]]
+
+**资料卡的源码**
+
+[[code]]
+[[div class="construct-dossier"]]
+[[div class="construct-index"]]
+[[span class="construct-index-label"]]档案 / FILE[[/span]]
+[[span class="construct-index-number"]]NO. 001[[/span]]
+档案标题
+[[/div]]
+[[div class="construct-summary"]]
+**用途** / 在这里写摘要。
+[[/div]]
+[[/div]]
+[[/code]]
+
+[[div class="construct-alert"]]
+[[div class="construct-alert-mark"]]
+注意
+[[/div]]
+[[div class="construct-alert-text"]]
+黄色提示块适合警示、章节引导与操作提示，文字较长时会自然换行。
+[[/div]]
+[[/div]]
+
+**提示块的源码**
+
+[[code]]
+[[div class="construct-alert"]]
+[[div class="construct-alert-mark"]]注意[[/div]]
+[[div class="construct-alert-text"]]这里写提示内容。[[/div]]
+[[/div]]
+[[/code]]
+
+[[div class="construct-panel"]]
+**补充说明** ： 这种简洁的方块适合短附注，也可与黄色提示块并用。
+[[/div]]
+
+**那种简洁的方块的源码**
+
+[[code]]
+[[div class="construct-panel"]]
+**补充说明** / 这里写附注。
+[[/div]]
+[[/code]]
+
+[[note]]
+这是维基语法的@@[[note]]...[[/note]]@@块，版式会调整其边框与留白。
+[[/note]]
+
+++ 表格
+
+[[div class="construct-table-scroll" tabindex="0" role="region" aria-label="配色与用途表"]]
+||~ 表头 ||~ 原本想加白色竖线的但很丑 ||
+|| 表格 || 表格表格表格 ||
+|| 表格 || 表格表格表格 ||
+|| 表格 || 格表格表格表 ||
+|| 表格 || 表格表格表格 ||
+[[/div]]
+
+较宽的表格可以放入滚动容器，在窄屏上保留横向滚动。
+
+**表格容器的源码**
+
+[[code]]
+[[div class="construct-table-scroll" tabindex="0" role="region" aria-label="资料表"]]
+||~ 项目 ||~ 说明 ||
+|| 示例 || 表格内容 ||
+[[/div]]
+[[/code]]
+
+[[div class="construct-strip"]]
+[[span class="construct-number"]]04[[/span]][[span class="construct-label"]]可交互组件[[/span]]
+[[/div]]
+
++ 可操作的组件
+
+[[tabview]]
+[[tab 第一页一页]]
+标签页内可以放普通文字、[[[https://scp-wiki-cn.wikidot.com/|链接]]]或其他 Wikidot 内容。
+[[/tab]]
+[[tab 第二页]]
+第二页内容。标签页会沿用本版式的直角边框和高对比配色，把鼠标放上去它会变黄。
+[[/tab]]
+[[tab 第三页]]
+* 第一项
+* 第二项
+[[/tab]]
+[[/tabview]]
+
+**标签页的源码**
+
+[[code]]
+[[tabview]]
+[[tab 第一页]]
+第一页内容。
+[[/tab]]
+[[tab 第二页]]
+第二页内容。
+[[/tab]]
+[[/tabview]]
+[[/code]]
+
+[[collapsible show="＋ 展开折叠快（其实可以不用+-号）" hide="折叠块，真的很快"]]
+[[div class="construct-panel"]]
+很多东西（比如这个）可以放在折叠区域内，但是别把collapsible写错。
+[[/div]]
+这里是正常的折叠块的内容，例子证明一切。
+再复习一下，collapsible。
+[[/collapsible]]
+
+**折叠块的源码**
+
+[[code]]
+[[collapsible show="＋ 显示里面的东西" hide="－ 收起里面的东西"]]
+这是里面的东西。
+[[/collapsible]]
+[[/code]]
+
+下面是完整代码方块，与行内代码采用不同的处理：
+
+[[code type="css"]]
+.construct-block {
+  color: #171714;
+  background: #f2ecde;
+}
+[[/code]]
+
+[[div class="construct-strip"]]
+[[span class="construct-number"]]05[[/span]][[span class="construct-label"]]构成の方块[[/span]]
+[[/div]]
+
++ 方块、标题签与组合
+
+如前文所述，构成方块的想法是抄袭的turbo vision，但你可以调整底色、文字颜色、边线、宽度与位置。左上角标题签由 @@data-label="..."@@ 指定，省略这一属性即可不显示标题签。
+
+下面逐一给出可复制的组合。
+
+[[div class="construct-block" data-label="00 / 图版"]]
+[[div class="construct-block-visual"]]
+[[span class="construct-block-visual-label"]]FORMA / 00[[/span]]
+[[/div]]
+**图版说明** / 由CSS随意绘制的图形占位。视觉区域也可替换成自己的图片或组件。
+[[/div]]
+
+**图片方块的源码**
+
+[[code]]
+[[div class="construct-block" data-label="00 / 图片"]]
+[[div class="construct-block-visual"]]（←你可以把这个换成图片块）
+[[span class="construct-block-visual-label"]]FORMA / 00[[/span]]
+[[/div]]
+图版说明写在这里。
+[[/div]]
+[[/code]]
+
+[[div class="construct-block cb-red" data-label="01 / 红色的东西"]]
+[[div class="construct-block-heading"]]
+红色是毁灭
+[[/div]]
+**红色方块**适合红红的东西。标题、正文和链接都能自由修改：[[[https://scp-wiki-cn.wikidot.com/|查看链接]]]。
+[[/div]]
+
+**红色方块的源码**
+
+[[code]]
+[[div class="construct-block cb-red" data-label="01 / 红色的东西"]]
+[[div class="construct-block-heading"]]红色是毁灭[[/div]]
+这里写正文。
+[[/div]]
+[[/code]]
+
+[[div class="construct-offset cb-right cb-step-2"]]
+[[div class="construct-block cb-ink cb-line-paper" data-label="02 / 黑色的东西"]]
+[[div class="construct-block-heading"]]
+低调的黑客
+[[/div]]
+**项目编号** / SCP-CN-XXXX
+
+**状态** / 已归档
+
+[[div class="construct-block cb-yellow cb-line-red cb-type-ink" data-label="内部附注"]]
+这里是嵌套进来的，由于都是div块，理论上能套114514层。
+内层仍可单独设置标题签、背景色与边线。
+[[/div]]
+[[/div]]
+[[/div]]
+
+**右移、深色与嵌套方块的源码**
+
+[[code]]
+[[div class="construct-offset cb-right cb-step-2"]]
+[[div class="construct-block cb-ink cb-line-paper" data-label="02 / 黑色的东西"]]
+[[div class="construct-block-heading"]]低调的黑客[[/div]]
+外层正文。
+[[div class="construct-block cb-yellow cb-line-red cb-type-ink" data-label="内部附注"]]
+内层正文。
+[[/div]]
+[[/div]]
+[[/div]]
+[[/code]]
+
+[[div class="construct-offset cb-left cb-step-3"]]
+[[div class="construct-block cb-yellow" data-label="03 / 注意"]]
+短而醒目的黄色提示，有点像便签条。但没做横线，可以开动脑筋自己加。
+[[/div]]
+[[/div]]
+
+**左移短提示的源码**
+
+[[code]]
+[[div class="construct-offset cb-left cb-step-3"]]
+[[div class="construct-block cb-yellow" data-label="03 / 注意"]]
+这里写提示。
+[[/div]]
+[[/div]]
+[[/code]]
+
+[[div class="construct-flow"]]
+[[div class="construct-float-right"]]
+[[div class="construct-block cb-line-red" data-label="04 / 浮木"]]
+浮木方块可让文字在桌面上绕排。为了方便手机用户，移动端它会恢复整栏长度，不会挤压正文。
+[[/div]]
+[[/div]]
+
+这是一段配合右侧浮动方块的正文。它将自然地占据剩余宽度，并在方块结束后回到正常行宽。继续加入文字，可以看到方块与正文如何共享一条阅读路线。
+[[/div]]
+
+**浮木方块的源码**
+
+[[code]]
+[[div class="construct-flow"]]
+[[div class="construct-float-right"]]
+[[div class="construct-block cb-line-red" data-label="04 / 浮木"]]
+这里是浮木。
+[[/div]]
+[[/div]]
+这里可以写围绕浮木的正文，也可以不写。
+[[/div]]
+[[/code]]
+
+[[div class="construct-block cb-label-hidden" data-label="这个标题已隐藏"]]
+**无标题签方块** / 不写 {{data-label}}即可省略标题签。若需要保留属性中的文字但暂时隐藏它，可加入 {{cb-label-hidden}}。
+[[/div]]
+
+**无标题签的源码**
+
+[[code]]
+[[div class="construct-block cb-label-hidden" data-label="这个标题已隐藏"]]
+这里写正文。
+[[/div]]
+[[/code]]
+
+这里有一些预设，可自行取用。颜色可选 {{cb-red}}、{{cb-ink}}、{{cb-yellow}}；边线可选 {{cb-line-paper}}、{{cb-line-red}}；文字颜色可选 {{cb-type-paper}}、{{cb-type-ink}}。偏移宽度可选 {{cb-step-1}}、{{cb-step-2}}、{{cb-step-3}}，与 {{cb-left}} 或 {{cb-right}} 配合使用。//当然也可以使用div魔法自己随意修改。//
+
+[[div class="construct-credit"]]
+**设计参考：**构成方块的组合方式、标题签、嵌套与错位展示，参考了 [[[https://scp-wiki-cn.wikidot.com/theme:turbo-vision|Turbo Vision 版式]]]（JakdragonX、Croquembouche）的公开示例与代码；方块的造型、配色及 CSS 按本版式重新绘制和编写。
+[[/div]]
+
+[[div class="construct-strip"]]
+[[span class="construct-number"]]06[[/span]][[span class="construct-label"]]图形 / 标志与图片[[/span]]
+[[/div]]
+
++ 页眉标志
+
+页眉中的 SCP-C 标志（以及海报）由能工智人[[*user Mr_J_AND]]绘制的 SVG ，并内嵌在版式 CSS 中（所以它不用附件）。下方展示其独立外观。
+
+[[div class="construct-logo-specimen"]]
+[[/div]]
+
+**上面这个黑色标志展示框的源码**
+
+[[code]]
+[[div class="construct-logo-specimen"]]
+这里放图片。对，虽然没什么用但也还是做成预设css样式了。
+[[/div]]
+[[/code]]
+
+版式页开头的海报以 SVG 图形作为底图（同样内嵌了，不用附件），SCP、Foundation、标题与旁注仍是可编辑文字。需要在文章中使用时，可以复制以下结构并替换文字。
+
+**海报的源码**
+
+[[code]]
+[[div class="construct-poster"]]
+[[div class="construct-poster-word construct-poster-scp construct-poster-top"]]SCP[[/div]]
+[[div class="construct-poster-word construct-poster-foundation construct-poster-top"]]Foundation[[/div]]
+[[div class="construct-poster-word construct-poster-title"]]构成[[/div]]
+[[div class="construct-poster-word construct-poster-note"]]控制、收容与保护[[/div]]
+[[div class="construct-poster-word construct-poster-scp construct-poster-bottom"]]SCP[[/div]]
+[[div class="construct-poster-word construct-poster-foundation construct-poster-bottom"]]Foundation[[/div]]
+[[/div]]
+[[/code]]
+
+++ 图片与图注
+
+[[div class="scp-image-block"]]
+[[div class="construct-block-visual"]]
+[[span class="construct-block-visual-label"]]IMAGE / 01[[/span]]
+[[/div]]
+[[div class="scp-image-caption"]]
+图注 / 这里用版式内置的几何图形展示图片卡片的边框、留白和图注位置，实际情况下可用使用wikidot的图片块。
+[[/div]]
+[[/div]]
+
+
+**图片卡片的源码**
+
+[[code]]
+[[div class="scp-image-block"]]
+[[image 示例图片文件名.jpg]]
+[[div class="scp-image-caption"]]
+这里写图片说明。
+[[/div]]
+[[/div]]
+[[/code]]
+
+图片文件需先上传为页面附件，或换成可访问的图片地址。普通脚注可继续使用 Wikidot 的 @@[[footnote]]...[[/footnote]]@@语法[[footnote]]页末脚注及悬浮提示沿用同一套配色。[[/footnote]]。
+
+[[/iftags]]
