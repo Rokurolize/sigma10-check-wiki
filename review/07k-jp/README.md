@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:07k-jp — origin KO, population #249 [GOSIGN2-LEDGER (b) row 249]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 742f7a142a89df69905fc2c8c7863654cd79d8fe23d217c655522bc8dda5ebdc); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now bd0cb3f4d98efa80155d2276b8ad6777cb73327de188b1bbd8f1441b757ae194); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 3 errors / 0 warns / 1 info (pseudo-ref×2, hotlink×1); standing classes dispositioned in register c1 [T1-ROWS row 232; GOSIGN2-LEDGER (b) row 249]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page runtime-hotlink site-theme chain + scpko.wdfiles.com; sample credit-modal (preview-form) + runtime-hotlink; T3 none beyond cross-cutting items. All 78 H targets produced a summary.md (no exit-2 incompleteness in this lane). [RENDER-ROWS-2 (RENDER-S2-H (KO1))]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 3 [LOCALIZE-ROWS row 248, source LOCALIZE-S2-F]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 248]
 - FIX5 re-judgement: item 99 (class C) FIXED — FIX5-INFO, commit 9a1c86a: info-module / duplicate credit residue removed [GOSIGN2-LEDGER-SUPPLEMENT (a) item 99]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:07k-jp.txt sha256:742f7a142a89df69905fc2c8c7863654cd79d8fe23d217c655522bc8dda5ebdc; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:07k-jp.txt sha256:bd0cb3f4d98efa80155d2276b8ad6777cb73327de188b1bbd8f1441b757ae194; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status

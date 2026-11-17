@@ -1,0 +1,3552 @@
+{
+ "tool": "classify_hunks.py",
+ "classifier_version": "0.1.0",
+ "signature_table_version": "2026-11-17.1",
+ "theme": {
+  "dir": "inkblot-jp",
+  "cand_fullname": "theme:inkblot-jp",
+  "orig_fullname": "theme:inkblot",
+  "wiki": "scp-wiki",
+  "revision": "59",
+  "kind": "standard",
+  "verdict": "PASS",
+  "original_file": "review/inkblot-jp/original.txt",
+  "candidate_file": "review/inkblot-jp/candidate.txt",
+  "original_sha256": "acbadac9583acd8c6b5c29cef9f17dc6e360fd48270ea64a9abba1f855aab682",
+  "candidate_sha256": "2db2fdd4ada19521ad6f67a83bf29a2312b81d8766ffb785a05e4d6c3c0908a3",
+  "original_lines": 1015,
+  "candidate_lines": 1016
+ },
+ "topology": {
+  "original_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     4,
+     11
+    ],
+    "lines": 7
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     28,
+     80
+    ],
+    "lines": 52
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     398,
+     1011
+    ],
+    "lines": 613
+   }
+  ],
+  "candidate_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     0,
+     7
+    ],
+    "lines": 7
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     35,
+     87
+    ],
+    "lines": 52
+   },
+   {
+    "kind": "code-other",
+    "range": [
+     125,
+     164
+    ],
+    "lines": 39
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     378,
+     992
+    ],
+    "lines": 614
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     997,
+     1003
+    ],
+    "lines": 6
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     1004,
+     1010
+    ],
+    "lines": 6
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     1011,
+     1016
+    ],
+    "lines": 5
+   }
+  ],
+  "moves": [
+   {
+    "from_kind": "module-css",
+    "to_kind": "code-other",
+    "orig_range": [
+     4,
+     11
+    ],
+    "cand_range": [
+     125,
+     164
+    ],
+    "similarity": 0.667,
+    "basis": "content"
+   }
+  ],
+  "external_own_delivery": false
+ },
+ "blocks": [
+  {
+   "id": "B1",
+   "orig_range": [
+    0,
+    4
+   ],
+   "cand_range": [
+    0,
+    0
+   ],
+   "orig_lines": "1-4",
+   "cand_lines": "at 1",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "EXHIBIT-RESTRUCTURE",
+    "IFTAGS"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "IFTAGS": "A",
+    "EXHIBIT-RESTRUCTURE": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "IFTAGS": {
+     "orig": [
+      [
+       0,
+       1
+      ]
+     ],
+     "cand": []
+    },
+    "EXHIBIT-RESTRUCTURE": {}
+   },
+   "notes": [
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[iftags +theme]]",
+   "first_added": ""
+  },
+  {
+   "id": "B2",
+   "orig_range": [
+    5,
+    6
+   ],
+   "cand_range": [
+    1,
+    2
+   ],
+   "orig_lines": "6-6",
+   "cand_lines": "2-2",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-HOST",
+    "DELIVERY-MOVE",
+    "DRAFT-HOST",
+    "SELF-DELIVERY"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-HOST": "A",
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DELIVERY-HOST": {
+     "orig": [
+      [
+       5,
+       6
+      ]
+     ],
+     "cand": [
+      [
+       1,
+       2
+      ]
+     ]
+    },
+    "SELF-DELIVERY": {
+     "orig": [
+      [
+       5,
+       6
+      ]
+     ],
+     "cand": [
+      [
+       1,
+       2
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       1,
+       2
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "orig": [
+      [
+       5,
+       6
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "@import url('https://scp-wiki.wdfiles.com/local--code/theme%3Ainkblot/1');",
+   "first_added": "@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Ainkblot-jp/2');"
+  },
+  {
+   "id": "B3",
+   "orig_range": [
+    12,
+    14
+   ],
+   "cand_range": [
+    8,
+    10
+   ],
+   "orig_lines": "13-14",
+   "cand_lines": "9-10",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "EXHIBIT-RESTRUCTURE",
+    "IFTAGS",
+    "INCLUDE-REPOINT",
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "INCLUDE-REPOINT": "A",
+    "IFTAGS": "A",
+    "EXHIBIT-RESTRUCTURE": "C",
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "INCLUDE-REPOINT": {
+     "orig": [
+      [
+       13,
+       14
+      ]
+     ],
+     "cand": [
+      [
+       9,
+       10
+      ]
+     ]
+    },
+    "IFTAGS": {
+     "orig": [
+      [
+       12,
+       13
+      ]
+     ],
+     "cand": [
+      [
+       8,
+       9
+      ]
+     ]
+    },
+    "EXHIBIT-RESTRUCTURE": {},
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced",
+    "anchored pairs 2/2"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[iftags -theme]]",
+   "first_added": "[[iftags -テーマ]]"
+  },
+  {
+   "id": "B4",
+   "orig_range": [
+    15,
+    16
+   ],
+   "cand_range": [
+    11,
+    12
+   ],
+   "orig_lines": "16-16",
+   "cand_lines": "12-12",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "DELIVERY-HOST",
+    "DRAFT-HOST",
+    "SELF-DELIVERY"
+   ],
+   "primary": "DELIVERY-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-HOST": "A",
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DELIVERY-HOST": {
+     "orig": [
+      [
+       15,
+       16
+      ]
+     ],
+     "cand": [
+      [
+       11,
+       12
+      ]
+     ]
+    },
+    "SELF-DELIVERY": {
+     "orig": [
+      [
+       15,
+       16
+      ]
+     ],
+     "cand": [
+      [
+       11,
+       12
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       11,
+       12
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "| theme=https://scp-wiki.wdfiles.com/local--code/theme%3Ainkblot/1",
+   "first_added": "| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Ainkblot-jp/2"
+  },
+  {
+   "id": "B5",
+   "orig_range": [
+    20,
+    21
+   ],
+   "cand_range": [
+    16,
+    17
+   ],
+   "orig_lines": "21-21",
+   "cand_lines": "17-17",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "IFTAGS",
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "IFTAGS",
+   "primary_section": 2,
+   "label_prec": {
+    "IFTAGS": "A",
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "IFTAGS": {
+     "orig": [
+      [
+       20,
+       21
+      ]
+     ],
+     "cand": [
+      [
+       16,
+       17
+      ]
+     ]
+    },
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[iftags +theme]]",
+   "first_added": "[[iftags +テーマ]]"
+  },
+  {
+   "id": "B6",
+   "orig_range": [
+    22,
+    23
+   ],
+   "cand_range": [
+    18,
+    30
+   ],
+   "orig_lines": "23-23",
+   "cand_lines": "19-30",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "CREDIT-PREVIEW",
+    "EXHIBIT-RESTRUCTURE",
+    "INCLUDE-REPOINT",
+    "TASL-FIELDS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "CREDIT-PREVIEW": "A",
+    "TASL-FIELDS": "A",
+    "INCLUDE-REPOINT": "A",
+    "EXHIBIT-RESTRUCTURE": "C",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "CREDIT-PREVIEW": {
+     "cand": [
+      [
+       18,
+       19
+      ],
+      [
+       27,
+       28
+      ]
+     ]
+    },
+    "TASL-FIELDS": {
+     "cand": [
+      [
+       19,
+       27
+      ]
+     ]
+    },
+    "INCLUDE-REPOINT": {
+     "orig": [
+      [
+       22,
+       23
+      ]
+     ],
+     "cand": [
+      [
+       29,
+       30
+      ]
+     ]
+    },
+    "EXHIBIT-RESTRUCTURE": {},
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[include :scp-wiki:component:interwiki-style",
+   "first_added": "[[include :scp-jp:credit:start-preview]]"
+  },
+  {
+   "id": "B7",
+   "orig_range": [
+    24,
+    25
+   ],
+   "cand_range": [
+    31,
+    32
+   ],
+   "orig_lines": "25-25",
+   "cand_lines": "32-32",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "DELIVERY-HOST",
+    "DRAFT-HOST",
+    "SELF-DELIVERY"
+   ],
+   "primary": "DELIVERY-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-HOST": "A",
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DELIVERY-HOST": {
+     "orig": [
+      [
+       24,
+       25
+      ]
+     ],
+     "cand": [
+      [
+       31,
+       32
+      ]
+     ]
+    },
+    "SELF-DELIVERY": {
+     "orig": [
+      [
+       24,
+       25
+      ]
+     ],
+     "cand": [
+      [
+       31,
+       32
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       31,
+       32
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "| theme=https://scp-wiki.wdfiles.com/local--code/theme%3Ainkblot/1",
+   "first_added": "| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Ainkblot-jp/2"
+  },
+  {
+   "id": "B8",
+   "orig_range": [
+    32,
+    33
+   ],
+   "cand_range": [
+    39,
+    40
+   ],
+   "orig_lines": "33-33",
+   "cand_lines": "40-40",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "HEADERVAR",
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "HEADERVAR",
+   "primary_section": 5,
+   "label_prec": {
+    "HEADERVAR": "A",
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "HEADERVAR": {
+     "orig": [
+      [
+       32,
+       33
+      ]
+     ],
+     "cand": [
+      [
+       39,
+       40
+      ]
+     ]
+    },
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "  --header-subtitle: \"connoisseurs of the unknown\";",
+   "first_added": "  --header-subtitle: \"我ら未知を鑑定する者\";"
+  },
+  {
+   "id": "B9",
+   "orig_range": [
+    91,
+    92
+   ],
+   "cand_range": [
+    98,
+    99
+   ],
+   "orig_lines": "92-92",
+   "cand_lines": "99-99",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "Theme.",
+   "first_added": "テーマ。"
+  },
+  {
+   "id": "B10",
+   "orig_range": [
+    96,
+    99
+   ],
+   "cand_range": [
+    103,
+    106
+   ],
+   "orig_lines": "97-99",
+   "cand_lines": "104-106",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "A theme for reviews.",
+   "first_added": "レビューのためのテーマ。"
+  },
+  {
+   "id": "B11",
+   "orig_range": [
+    100,
+    100
+   ],
+   "cand_range": [
+    107,
+    157
+   ],
+   "orig_lines": "at 101",
+   "cand_lines": "108-157",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "DRAFT-HOST",
+    "HEADERVAR",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A",
+    "HEADERVAR": "A",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       109,
+       110
+      ]
+     ]
+    },
+    "HEADERVAR": {
+     "orig": [],
+     "cand": [
+      [
+       130,
+       132
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       107,
+       157
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": ""
+  },
+  {
+   "id": "B12",
+   "orig_range": [
+    106,
+    164
+   ],
+   "cand_range": [
+    163,
+    164
+   ],
+   "orig_lines": "107-164",
+   "cand_lines": "164-164",
+   "channel_pair": [
+    "body",
+    "code-other"
+   ],
+   "labels": [
+    "BARE-RATE-DEL",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "BARE-RATE-DEL",
+   "primary_section": 1,
+   "label_prec": {
+    "BARE-RATE-DEL": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "BARE-RATE-DEL": {
+     "orig": [
+      [
+       108,
+       109
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       163,
+       164
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": "[[/code]]"
+  },
+  {
+   "id": "B13",
+   "orig_range": [
+    166,
+    167
+   ],
+   "cand_range": [
+    166,
+    167
+   ],
+   "orig_lines": "167-167",
+   "cand_lines": "167-167",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "If using alongside the Sigma-9 [[[component:toggle-sidebar | Toggle Sidebar]]] component:",
+   "first_added": "Sigma-9の[[[component:toggle-sidebar | Toggle Sidebar]]]コンポーネントと併用する場合:"
+  },
+  {
+   "id": "B14",
+   "orig_range": [
+    168,
+    169
+   ],
+   "cand_range": [
+    168,
+    169
+   ],
+   "orig_lines": "169-169",
+   "cand_lines": "169-169",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[collapsible show=\"+ Extra instructions specifically for Toggle Sidebar\"]]",
+   "first_added": "[[collapsible show=\"+ Toggle Sidebar専用の追加手順\"]]"
+  },
+  {
+   "id": "B15",
+   "orig_range": [
+    170,
+    171
+   ],
+   "cand_range": [
+    170,
+    171
+   ],
+   "orig_lines": "171-171",
+   "cand_lines": "171-171",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "Include this theme //after// the Toggle Sidebar component.",
+   "first_added": "このテーマはToggle Sidebarコンポーネントの//後//にincludeしてください。"
+  },
+  {
+   "id": "B16",
+   "orig_range": [
+    172,
+    173
+   ],
+   "cand_range": [
+    172,
+    173
+   ],
+   "orig_lines": "173-173",
+   "cand_lines": "173-173",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "Add this bit of compatibility CSS to the page:",
+   "first_added": "次の互換CSSをページに追加してください。"
+  },
+  {
+   "id": "B17",
+   "orig_range": [
+    185,
+    186
+   ],
+   "cand_range": [
+    185,
+    186
+   ],
+   "orig_lines": "186-186",
+   "cand_lines": "186-186",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "Preview this theme with a few different accent colours:",
+   "first_added": "いくつかの異なるアクセント色でこのテーマをプレビューできます。"
+  },
+  {
+   "id": "B18",
+   "orig_range": [
+    187,
+    207
+   ],
+   "cand_range": [
+    187,
+    187
+   ],
+   "orig_lines": "188-207",
+   "cand_lines": "at 188",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "EXHIBIT-RESTRUCTURE"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "EXHIBIT-RESTRUCTURE": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "EXHIBIT-RESTRUCTURE": {}
+   },
+   "notes": [
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[div class=\"picker\"]]",
+   "first_added": ""
+  },
+  {
+   "id": "B19",
+   "orig_range": [
+    210,
+    211
+   ],
+   "cand_range": [
+    190,
+    191
+   ],
+   "orig_lines": "211-211",
+   "cand_lines": "191-191",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "+ Preamble",
+   "first_added": "+ 前置き"
+  },
+  {
+   "id": "B20",
+   "orig_range": [
+    212,
+    213
+   ],
+   "cand_range": [
+    192,
+    193
+   ],
+   "orig_lines": "213-213",
+   "cand_lines": "193-193",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "In-universe, Waldon Studio replaces //`Michelin Guide Online, powered by the [[[the-dark-web-dke79-o2rg5-4jlw6 | Dark Web]]]'//[[footnote]]Ambrose-format articles that use this at the time of writing: [[[Ambrose Thorn Valley]]], [[[Ambrose Makiling]]], [[[Ambrose Backdoor Soho]]].[[/footnote]] in my headcanon because I don't much like the thought of being sued by the real Michelin Guide for IP infringement.",
+   "first_added": "私のヘッドカノンでは、宇宙内のウォルドン・スタジオは//`Michelin Guide Online, powered by the [[[the-dark-web-dke79-o2rg5-4jlw6 | Dark Web]]]'//[[footnote]]執筆時点でこれを用いているアンブローズ形式の記事: [[[Ambrose Thorn Valley]]]、[[[Ambrose Makiling]]]、[[[Ambrose Backdoor Soho]]]。[[/footnote]]を置き換えるものです。本物のミシュランガイドから知的財産権侵害で訴えられる、という考えがあまり好きではないからです。"
+  },
+  {
+   "id": "B21",
+   "orig_range": [
+    214,
+    215
+   ],
+   "cand_range": [
+    194,
+    195
+   ],
+   "orig_lines": "215-215",
+   "cand_lines": "195-195",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "The Ambrose format, currently, is doing itself a disservice. Many Ambrose articles consist of a set of unrelated menu items followed by a set of unrelated reviews. It's a shotgun approach[[footnote]]A 'shotgun SCP' is an article with no main anomaly, but a collection of smaller ones, in which the writer hopes that at least one of them will catch your interest enough to upvote.[[/footnote]] -- it's boring, there's no narrative thread to follow, there's nothing to catch your interest. It incentivises its readers to be disinterested. Lists repel attention. Even if you do it well and you exceed those constraints, why be constrained in the first place?",
+   "first_added": "現在のアンブローズ形式は、自分で自分の足を引っ張っています。多くのアンブローズ記事は、無関係なメニュー項目の集合に、無関係なレビューの集合が続く構成です。これはショットガン方式[[footnote]]“ショットガンSCP”とは、中心となるアノマリーを持たず、小さなアノマリーの集まりで構成される記事を指します。作者は、そのうち少なくとも一つが投票したくなるほど読者の興味を引くことを期待しています。[[/footnote]]です。退屈で、追うべき物語の筋がなく、興味を引っかけるものもありません。読者に無関心でいることを促してしまいます。リストは注意を遠ざけます。うまくやってその制約を超えられるとしても、そもそもなぜ制約されなければならないのでしょうか？"
+  },
+  {
+   "id": "B22",
+   "orig_range": [
+    216,
+    217
+   ],
+   "cand_range": [
+    196,
+    197
+   ],
+   "orig_lines": "217-217",
+   "cand_lines": "197-197",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "It's a shame, because the Ambrose format has so much promise. The reviews, if woven together, could tell an interconnected story. The menu is a fantastic idea -- no other GoI format encourages this kind of creativity! This is what the Ambrose format was originally supposed to be.[[footnote]]See the Ambrose Hub, tab 'Guide', collapsible 'Franchising Options'[[/footnote]] But it's hard to think about all the little details that make this format magical, and much easier to create something that looks right, but isn't.",
+   "first_added": "残念なことです。アンブローズ形式には大きな可能性があるからです。レビューは、織り合わせれば相互につながった物語を語れます。メニューは素晴らしい発想です。この種の創造性を促すGoIフォーマットは他にありません！ これこそ、本来のアンブローズ形式が目指していたものでした。[[footnote]]アンブローズ・ハブの“Guide”タブ、“Franchising Options”折り畳みを参照。[[/footnote]] しかし、この形式を魔法のようなものにしている細部すべてを考えるのは難しく、正しく見えるけれど実際にはそうではないものを作る方がずっと簡単です。"
+  },
+  {
+   "id": "B23",
+   "orig_range": [
+    218,
+    219
+   ],
+   "cand_range": [
+    198,
+    199
+   ],
+   "orig_lines": "219-219",
+   "cand_lines": "199-199",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "Waldon Studio is a different take on the Ambrose format. Waldon Studio takes one thing and they run with it -- a complex, in-depth review of one single thing and all of its aspects. One thread to focus on. No distractions. That means that in an Ambrose format that's written by Waldon Studio, you'll be seeing just one review. There are less moving parts to get in the way of writing a good story, while still being open for the same level of visual creativity.",
+   "first_added": "ウォルドン・スタジオは、アンブローズ形式への別の取り組みです。ウォルドン・スタジオは一つのものを取り上げ、それを徹底的に掘り下げます。一つの対象と、そのあらゆる側面についての、複雑で深いレビューです。集中する筋は一つ。邪魔はありません。つまり、ウォルドン・スタジオが書いたアンブローズ形式では、レビューは一つだけです。良い物語を書く邪魔になる可動部は少なくなり、それでも同じ水準の視覚的創造性には開かれています。"
+  },
+  {
+   "id": "B24",
+   "orig_range": [
+    220,
+    221
+   ],
+   "cand_range": [
+    200,
+    201
+   ],
+   "orig_lines": "221-221",
+   "cand_lines": "201-201",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "Waldon Studio doesn't have a hub page, because I just made them up, so I guess this will do. Waldon Studio is a small team of reviewers -- maybe ten people, tops -- trying to make their way in the reviews industry (trying and failing, but they'll never admit it). Their organisation is relaxed and without strong hierarchy. They focus on high-quality reviews of high-quality things. They have a deep appreciation of the little details, often at the cost of the bigger ones -- such as failing to notice that the restaurant they've walked into is actually an anomalous deathtrap. To that effect, a theme of a Waldon Studio review could be the conflict between something being obvious to the reader, but the in-universe reviewer themselves being totally oblivious to it.",
+   "first_added": "ウォルドン・スタジオにはハブページがありません。私が今でっち上げたばかりだからです。だから、これで代用できるでしょう。ウォルドン・スタジオは小さなレビュアーチームです。多くても十人くらいで、レビュー業界でどうにかやっていこうとしています（努力して失敗していますが、本人たちは決して認めません）。組織はゆるく、強い階層はありません。高品質なものを高品質にレビューすることへ集中しています。細かなディテールへの深い鑑賞眼を持ち、そのために大きなことを見落としがちです。たとえば、自分たちが足を踏み入れたレストランが実際には異常な死の罠であることに気づかない、という具合です。その意味で、ウォルドン・スタジオのレビューのテーマには、読者には明白なことを宇宙内のレビュアー本人だけがまったく理解していない、という対立があり得ます。"
+  },
+  {
+   "id": "B25",
+   "orig_range": [
+    222,
+    223
+   ],
+   "cand_range": [
+    202,
+    203
+   ],
+   "orig_lines": "223-223",
+   "cand_lines": "203-203",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "But hey, it's just a theme. You can do what you want.",
+   "first_added": "とはいえ、これはただのテーマです。好きに使ってください。"
+  },
+  {
+   "id": "B26",
+   "orig_range": [
+    226,
+    227
+   ],
+   "cand_range": [
+    206,
+    207
+   ],
+   "orig_lines": "227-227",
+   "cand_lines": "207-207",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "+ Usage",
+   "first_added": "+ 使用法"
+  },
+  {
+   "id": "B27",
+   "orig_range": [
+    228,
+    229
+   ],
+   "cand_range": [
+    208,
+    209
+   ],
+   "orig_lines": "229-229",
+   "cand_lines": "209-209",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "There's a few steps to using this theme:",
+   "first_added": "このテーマを使う手順はいくつかあります。"
+  },
+  {
+   "id": "B28",
+   "orig_range": [
+    230,
+    233
+   ],
+   "cand_range": [
+    210,
+    213
+   ],
+   "orig_lines": "231-233",
+   "cand_lines": "211-213",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "# Add the theme.",
+   "first_added": "# テーマを追加する。"
+  },
+  {
+   "id": "B29",
+   "orig_range": [
+    234,
+    235
+   ],
+   "cand_range": [
+    214,
+    215
+   ],
+   "orig_lines": "235-235",
+   "cand_lines": "215-215",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "++ Adding the theme",
+   "first_added": "++ テーマを追加する"
+  },
+  {
+   "id": "B30",
+   "orig_range": [
+    236,
+    237
+   ],
+   "cand_range": [
+    216,
+    217
+   ],
+   "orig_lines": "237-237",
+   "cand_lines": "217-217",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "To add this theme to a page, copy the following code into it, ideally near the top of the page along with any other CSS.",
+   "first_added": "このテーマをページに追加するには、次のコードをページへコピーしてください。できれば、他のCSSと一緒にページ上部付近へ置くのが理想です。"
+  },
+  {
+   "id": "B31",
+   "orig_range": [
+    239,
+    240
+   ],
+   "cand_range": [
+    219,
+    220
+   ],
+   "orig_lines": "240-240",
+   "cand_lines": "220-220",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "**##var(--c-keyword)|[[include##** ##var(--c-symbol)|:scp-wiki:theme:inkblot## ##var(--c-builtin)|accent##**##var(--c-keyword)|=##**##var(--c-string)|transparent##**##var(--c-keyword)|]]##**",
+   "first_added": "**##var(--c-keyword)|[[include##** ##var(--c-symbol)|:scp-jp:theme:inkblot-jp## ##var(--c-builtin)|accent##**##var(--c-keyword)|=##**##var(--c-string)|transparent##**##var(--c-keyword)|]]##**"
+  },
+  {
+   "id": "B32",
+   "orig_range": [
+    244,
+    245
+   ],
+   "cand_range": [
+    224,
+    225
+   ],
+   "orig_lines": "245-245",
+   "cand_lines": "225-225",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "@@  @@##var(--c-builtin)|@@--@@header-subtitle##: ##var(--c-string)|\"connoisseurs of the unknown\"##;",
+   "first_added": "@@  @@##var(--c-builtin)|@@--@@header-subtitle##: ##var(--c-string)|\"我ら未知を鑑定する者\"##;"
+  },
+  {
+   "id": "B33",
+   "orig_range": [
+    249,
+    250
+   ],
+   "cand_range": [
+    229,
+    230
+   ],
+   "orig_lines": "250-250",
+   "cand_lines": "230-230",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "(You can make a div shaped like the above by adding the {{inksplot}} class to it.)",
+   "first_added": "（上のような形のdivは、{{inksplot}}クラスを追加すれば作れます。）"
+  },
+  {
+   "id": "B34",
+   "orig_range": [
+    251,
+    252
+   ],
+   "cand_range": [
+    231,
+    232
+   ],
+   "orig_lines": "252-252",
+   "cand_lines": "232-232",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "++ Configuring the theme",
+   "first_added": "++ テーマを設定する"
+  },
+  {
+   "id": "B35",
+   "orig_range": [
+    253,
+    254
+   ],
+   "cand_range": [
+    233,
+    234
+   ],
+   "orig_lines": "254-254",
+   "cand_lines": "234-234",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "To set the page heading and subheading, change the two CSS variables (or leave them as-is for the OG Waldon Studio vibe).",
+   "first_added": "ページ見出しと副見出しを設定するには、二つのCSS変数を変更してください（元祖ウォルドン・スタジオ感を残したいなら、そのままでも構いません）。"
+  },
+  {
+   "id": "B36",
+   "orig_range": [
+    255,
+    256
+   ],
+   "cand_range": [
+    235,
+    236
+   ],
+   "orig_lines": "256-256",
+   "cand_lines": "236-236",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "The {{accent}} parameter in the include determines the colour of the little bubbles and stuff around the page, and also a darkened variant is used for links. If you leave it out, or don't change it from the code above, the default colour is 'transparent', meaning those little bubbles and stuff are invisible (and the links will just be standard Sigma-10 red).",
+   "first_added": "include内の{{accent}}パラメータは、ページ周辺の小さな泡などの色を決めます。また、その暗くしたバリエーションがリンクに使われます。省略した場合、または上のコードから変更しなかった場合、既定色は'transparent'です。つまり、それらの小さな泡などは見えません（リンクは標準のSigma-10赤になります）。"
+  },
+  {
+   "id": "B37",
+   "orig_range": [
+    257,
+    258
+   ],
+   "cand_range": [
+    237,
+    238
+   ],
+   "orig_lines": "258-258",
+   "cand_lines": "238-238",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "I have a request: **please don't use the same accent colour as another Inkblot article.** This theme page uses the colour '**##coral|coral##**', so that's taken. [https://htmlcolorcodes.com/color-names/ Pick a new colour.] There's not going to be that many pages using this theme so it shouldn't be a hard choice.",
+   "first_added": "お願いがあります。**他のInkblot記事と同じアクセント色は使わないでください。** このテーマページは'**##coral|coral##**'を使っているので、これは使用済みです。[https://htmlcolorcodes.com/color-names/ 新しい色を選んでください。] このテーマを使うページはそれほど多くならないはずなので、難しい選択にはならないでしょう。"
+  },
+  {
+   "id": "B38",
+   "orig_range": [
+    259,
+    260
+   ],
+   "cand_range": [
+    239,
+    240
+   ],
+   "orig_lines": "260-260",
+   "cand_lines": "240-240",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "(You can see which pages use this theme by going to the bottom of the page, opening '+ Options', then clicking 'Backlinks'.)",
+   "first_added": "（このテーマを使っているページは、ページ下部へ行き、'+ Options'を開いて'Backlinks'をクリックすると確認できます。）"
+  },
+  {
+   "id": "B39",
+   "orig_range": [
+    261,
+    262
+   ],
+   "cand_range": [
+    241,
+    242
+   ],
+   "orig_lines": "262-262",
+   "cand_lines": "242-242",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "Try to pick a colour that you could see black text over. If you must choose a dark colour, be sure to adjust the font colour of the rating buttons so that they're visible, and you can work out how to make the Inkblot header work with it yourself. If you pick a really light colour you might also need to tweak the links so that they have enough contrast.",
+   "first_added": "黒い文字を重ねても読める色を選ぶようにしてください。暗い色を選ばざるを得ない場合は、評価ボタンの文字色を見えるように調整してください。また、Inkblotヘッダーをその色で動かす方法は自分で考えてください。非常に明るい色を選ぶ場合も、リンクに十分なコントラストが出るよう調整が必要になるかもしれません。"
+  },
+  {
+   "id": "B40",
+   "orig_range": [
+    263,
+    264
+   ],
+   "cand_range": [
+    243,
+    244
+   ],
+   "orig_lines": "264-264",
+   "cand_lines": "244-244",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "++ Making the Inkblot header",
+   "first_added": "++ Inkblotヘッダーを作る"
+  },
+  {
+   "id": "B41",
+   "orig_range": [
+    265,
+    266
+   ],
+   "cand_range": [
+    245,
+    246
+   ],
+   "orig_lines": "266-266",
+   "cand_lines": "246-246",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "The Inkblot Theme hides the default page title, so you'll need to make your own. You can put whatever text you want in it, but I beg you, **please use the same text as the actual page title.** Please.",
+   "first_added": "Inkblotテーマは既定のページタイトルを非表示にするので、自分で作る必要があります。好きな文字を入れられますが、お願いです。**実際のページタイトルと同じ文字を使ってください。** 本当に。"
+  },
+  {
+   "id": "B42",
+   "orig_range": [
+    267,
+    268
+   ],
+   "cand_range": [
+    247,
+    248
+   ],
+   "orig_lines": "268-268",
+   "cand_lines": "248-248",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "You've seen a normal Inkblot header at the top of the page, so here's another one, except now it's labelled and every HTML element has an outline drawn around it.",
+   "first_added": "ページ上部に通常のInkblotヘッダーが表示されています。ここではもう一つ、ラベルを付け、すべてのHTML要素にアウトラインを引いたものを示します。"
+  },
+  {
+   "id": "B43",
+   "orig_range": [
+    280,
+    281
+   ],
+   "cand_range": [
+    260,
+    261
+   ],
+   "orig_lines": "281-281",
+   "cand_lines": "261-261",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "Put",
+   "first_added": "好きな"
+  },
+  {
+   "id": "B44",
+   "orig_range": [
+    283,
+    284
+   ],
+   "cand_range": [
+    263,
+    264
+   ],
+   "orig_lines": "284-284",
+   "cand_lines": "264-264",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "**Whatever**",
+   "first_added": "**どんな**"
+  },
+  {
+   "id": "B45",
+   "orig_range": [
+    286,
+    287
+   ],
+   "cand_range": [
+    266,
+    267
+   ],
+   "orig_lines": "287-287",
+   "cand_lines": "267-267",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "Text",
+   "first_added": "文字"
+  },
+  {
+   "id": "B46",
+   "orig_range": [
+    289,
+    290
+   ],
+   "cand_range": [
+    269,
+    270
+   ],
+   "orig_lines": "290-290",
+   "cand_lines": "270-270",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "//you want//.",
+   "first_added": "//でも//。"
+  },
+  {
+   "id": "B47",
+   "orig_range": [
+    298,
+    301
+   ],
+   "cand_range": [
+    278,
+    281
+   ],
+   "orig_lines": "299-301",
+   "cand_lines": "279-281",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "This is a blurb about the review.",
+   "first_added": "レビューについての紹介文です。"
+  },
+  {
+   "id": "B48",
+   "orig_range": [
+    308,
+    309
+   ],
+   "cand_range": [
+    288,
+    289
+   ],
+   "orig_lines": "309-309",
+   "cand_lines": "289-289",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "DRAFT-HOST"
+   ],
+   "primary": "DRAFT-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       288,
+       289
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[image pancakes.png]]",
+   "first_added": "[[image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Ainkblot-jp/pancakes.png]]"
+  },
+  {
+   "id": "B49",
+   "orig_range": [
+    314,
+    315
+   ],
+   "cand_range": [
+    294,
+    295
+   ],
+   "orig_lines": "315-315",
+   "cand_lines": "295-295",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "You can see, hopefully, that the title part of the header is made of four subsections, each of which contains a word or two. I think this is a pretty neat and visually-interesting way to break up the title.",
+   "first_added": "見て分かるとよいのですが、ヘッダーのタイトル部分は四つの小区画で構成されており、それぞれに一語か二語が入っています。タイトルを分割する、かなりすっきりして視覚的に面白い方法だと思います。"
+  },
+  {
+   "id": "B50",
+   "orig_range": [
+    316,
+    317
+   ],
+   "cand_range": [
+    296,
+    297
+   ],
+   "orig_lines": "317-317",
+   "cand_lines": "297-297",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "The info section should contain some information about the review. My suggestion -- what is this a review of? Who wrote it? How long will it take to read? And how good is the thing being reviewed?",
+   "first_added": "情報セクションには、レビューについての情報をいくらか入れるべきです。私からの提案としては、これは何のレビューなのか。誰が書いたのか。読むのにどれくらいかかるのか。そして、レビュー対象はどれくらい良いものなのか。"
+  },
+  {
+   "id": "B51",
+   "orig_range": [
+    318,
+    319
+   ],
+   "cand_range": [
+    298,
+    299
+   ],
+   "orig_lines": "319-319",
+   "cand_lines": "299-299",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "The picture can be anything. It's probably pretty normal to make it a picture of the person doing the reviewing. Maybe this theme was made by pancakes. I'd avoid making it a picture of the thing being reviewed -- save that for the article itself.",
+   "first_added": "画像は何でも構いません。おそらく、レビューしている人物の画像にするのがかなり普通でしょう。もしかすると、このテーマはパンケーキによって作られたのかもしれません。レビュー対象の画像にするのは避けた方がよいと思います。それは記事本体のために取っておいてください。"
+  },
+  {
+   "id": "B52",
+   "orig_range": [
+    320,
+    321
+   ],
+   "cand_range": [
+    300,
+    301
+   ],
+   "orig_lines": "321-321",
+   "cand_lines": "301-301",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "This header will have the three sections all in a row on desktop, but on mobile, the title will have a row all to itself, and the info section and the picture will be on the next row.",
+   "first_added": "デスクトップでは、このヘッダーの三つのセクションはすべて一列に並びます。一方、モバイルでは、タイトルが単独で一行を取り、情報セクションと画像が次の行に置かれます。"
+  },
+  {
+   "id": "B53",
+   "orig_range": [
+    322,
+    323
+   ],
+   "cand_range": [
+    302,
+    303
+   ],
+   "orig_lines": "323-323",
+   "cand_lines": "303-303",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "You can see how to make the above header, including the four title subsections, below. Note that you can miss out one of the title sections, and there will just be a gap there instead -- that's what I did for the title of this page.",
+   "first_added": "四つのタイトル小区画を含め、上のヘッダーを作る方法は以下で確認できます。なお、タイトルセクションの一つを省略しても構いません。その場合、そこには隙間が残ります。このページのタイトルで私がやったのがそれです。"
+  },
+  {
+   "id": "B54",
+   "orig_range": [
+    329,
+    330
+   ],
+   "cand_range": [
+    309,
+    310
+   ],
+   "orig_lines": "330-330",
+   "cand_lines": "310-310",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "Put",
+   "first_added": "好きな"
+  },
+  {
+   "id": "B55",
+   "orig_range": [
+    332,
+    333
+   ],
+   "cand_range": [
+    312,
+    313
+   ],
+   "orig_lines": "333-333",
+   "cand_lines": "313-313",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "@@**Whatever**@@",
+   "first_added": "@@**どんな**@@"
+  },
+  {
+   "id": "B56",
+   "orig_range": [
+    335,
+    336
+   ],
+   "cand_range": [
+    315,
+    316
+   ],
+   "orig_lines": "336-336",
+   "cand_lines": "316-316",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "Text",
+   "first_added": "文字"
+  },
+  {
+   "id": "B57",
+   "orig_range": [
+    338,
+    339
+   ],
+   "cand_range": [
+    318,
+    319
+   ],
+   "orig_lines": "339-339",
+   "cand_lines": "319-319",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "@@//you want//@@.",
+   "first_added": "@@//でも//@@。"
+  },
+  {
+   "id": "B58",
+   "orig_range": [
+    343,
+    346
+   ],
+   "cand_range": [
+    323,
+    326
+   ],
+   "orig_lines": "344-346",
+   "cand_lines": "324-326",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "This is a blurb about the review.",
+   "first_added": "レビューについての紹介文です。"
+  },
+  {
+   "id": "B59",
+   "orig_range": [
+    355,
+    356
+   ],
+   "cand_range": [
+    335,
+    336
+   ],
+   "orig_lines": "356-356",
+   "cand_lines": "336-336",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "Note that using this header and title layout presents a couple of problems.",
+   "first_added": "このヘッダーとタイトルレイアウトを使うと、いくつか問題があることに注意してください。"
+  },
+  {
+   "id": "B60",
+   "orig_range": [
+    357,
+    359
+   ],
+   "cand_range": [
+    337,
+    339
+   ],
+   "orig_lines": "358-359",
+   "cand_lines": "338-339",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 2/2"
+   ],
+   "partial_notes": [],
+   "first_removed": "* You need to be careful about how long your title is, or careful about breaking it up into four pieces. If it's too long, one of the title sections could wrap onto the next line, making it confusing to read. I recommend having a short title that can be easily broken into four roughly-equal segments.",
+   "first_added": "* タイトルの長さ、または四つへの分け方には注意が必要です。長すぎると、タイトルセクションの一つが次の行へ折り返され、読みづらくなる可能性があります。おおよそ均等な四つの区画へ簡単に分けられる、短いタイトルを推奨します。"
+  },
+  {
+   "id": "B61",
+   "orig_range": [
+    360,
+    361
+   ],
+   "cand_range": [
+    340,
+    341
+   ],
+   "orig_lines": "361-361",
+   "cand_lines": "341-341",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "You don't have to use the weird title grid, or the info section, or have a picture. You can add and remove them however you like. You don't even need to use the {{.inkblot-header}} class -- all that does is move the header halfway off the left side of the page on desktop.",
+   "first_added": "奇妙なタイトルグリッドも、情報セクションも、画像も、使う必要はありません。好きなように追加・削除できます。{{.inkblot-header}}クラスを使う必要すらありません。これはデスクトップでヘッダーをページ左側の外へ半分ずらすだけのものです。"
+  },
+  {
+   "id": "B62",
+   "orig_range": [
+    362,
+    363
+   ],
+   "cand_range": [
+    342,
+    343
+   ],
+   "orig_lines": "363-363",
+   "cand_lines": "343-343",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "Here's an example without the title grid, without the info, without the picture, and without {{.inkblot-header}}:",
+   "first_added": "タイトルグリッドなし、情報なし、画像なし、{{.inkblot-header}}なしの例を示します。"
+  },
+  {
+   "id": "B63",
+   "orig_range": [
+    365,
+    366
+   ],
+   "cand_range": [
+    345,
+    346
+   ],
+   "orig_lines": "366-366",
+   "cand_lines": "346-346",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "//Just// a **normal** title.",
+   "first_added": "//ただの// **普通の** タイトル。"
+  },
+  {
+   "id": "B64",
+   "orig_range": [
+    370,
+    371
+   ],
+   "cand_range": [
+    350,
+    351
+   ],
+   "orig_lines": "371-371",
+   "cand_lines": "351-351",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "@@//Just// a **normal** title.@@",
+   "first_added": "@@//ただの// **普通の** タイトル。@@"
+  },
+  {
+   "id": "B65",
+   "orig_range": [
+    376,
+    377
+   ],
+   "cand_range": [
+    356,
+    357
+   ],
+   "orig_lines": "377-377",
+   "cand_lines": "357-357",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "++ But how do I make an Ambrose menu?",
+   "first_added": "++ では、アンブローズのメニューはどう作るの？"
+  },
+  {
+   "id": "B66",
+   "orig_range": [
+    378,
+    379
+   ],
+   "cand_range": [
+    358,
+    359
+   ],
+   "orig_lines": "379-379",
+   "cand_lines": "359-359",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "Here's the thing. This theme might be designed for Ambrose reviews, but it doesn't come with an Ambrose menu.",
+   "first_added": "要点はこうです。このテーマはアンブローズのレビュー用に設計されているかもしれませんが、アンブローズのメニューは付属しません。"
+  },
+  {
+   "id": "B67",
+   "orig_range": [
+    380,
+    381
+   ],
+   "cand_range": [
+    360,
+    361
+   ],
+   "orig_lines": "381-381",
+   "cand_lines": "361-361",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "Why's that?",
+   "first_added": "なぜか？"
+  },
+  {
+   "id": "B68",
+   "orig_range": [
+    382,
+    383
+   ],
+   "cand_range": [
+    362,
+    363
+   ],
+   "orig_lines": "383-383",
+   "cand_lines": "363-363",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "I **strongly** believe that half the fun of writing an Ambrose format is making your own menu. I love seeing new designs for menus on each Ambrose format. So the onus is on you -- I want to see you use this theme with your own menu design. It doesn't matter if it's terrible! All it needs to be is something that you have fun making.",
+   "first_added": "私は、アンブローズ形式を書く楽しさの半分は、自分でメニューを作ることにあると**強く**信じています。アンブローズ形式ごとに新しいメニューデザインを見るのが大好きです。だから責任はあなたにあります。私は、あなた自身のメニューデザインでこのテーマを使うところを見たいのです。ひどい出来でも構いません。作っていて楽しいものでありさえすればよいのです。"
+  },
+  {
+   "id": "B69",
+   "orig_range": [
+    384,
+    385
+   ],
+   "cand_range": [
+    364,
+    365
+   ],
+   "orig_lines": "385-385",
+   "cand_lines": "365-365",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "If I shipped a menu design with this theme, don't lie to me and tell me you wouldn't use it. You would. //I// would. And, as the designer of this theme, I get to do what I want.",
+   "first_added": "もし私がこのテーマにメニューデザインを同梱したら、あなたがそれを使わないなんて嘘を私につかないでください。使うでしょう。//私//だって使います。そして、このテーマのデザイナーとして、私は自分のしたいことをしていいのです。"
+  },
+  {
+   "id": "B70",
+   "orig_range": [
+    386,
+    387
+   ],
+   "cand_range": [
+    366,
+    367
+   ],
+   "orig_lines": "387-387",
+   "cand_lines": "367-367",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "If you //really// must, you can copy a menu from another format and tweak the colours a little. But know that if you do that, I will strike you down with all the force of a single downvote and some light critique. Please don't do that.",
+   "first_added": "どうしても//本当に//必要なら、別のフォーマットからメニューをコピーして、色を少し調整しても構いません。ただし、そうした場合、私は一つのdownvoteと軽いクリティークの全力をもってあなたを打ち倒すと知っておいてください。どうかやらないでください。"
+  },
+  {
+   "id": "B71",
+   "orig_range": [
+    388,
+    389
+   ],
+   "cand_range": [
+    368,
+    369
+   ],
+   "orig_lines": "389-389",
+   "cand_lines": "369-369",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "Adding the menu for an Ambrose restaurant styled in your special way qualifies your article as a GoI Format for Ambrose Restaurants.",
+   "first_added": "あなた独自のやり方でスタイル付けしたアンブローズ・レストラン用メニューを追加すると、あなたの記事はアンブローズ・レストランのGoIフォーマットとして認められます。"
+  },
+  {
+   "id": "B72",
+   "orig_range": [
+    392,
+    393
+   ],
+   "cand_range": [
+    372,
+    373
+   ],
+   "orig_lines": "393-393",
+   "cand_lines": "373-373",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "+ Source code",
+   "first_added": "+ ソースコード"
+  },
+  {
+   "id": "B73",
+   "orig_range": [
+    394,
+    395
+   ],
+   "cand_range": [
+    374,
+    375
+   ],
+   "orig_lines": "395-395",
+   "cand_lines": "375-375",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "Okay, that's all I have to say. Here's the source code.",
+   "first_added": "よし、私から言うことはこれで全部です。以下がソースコードです。"
+  },
+  {
+   "id": "B74",
+   "orig_range": [
+    396,
+    397
+   ],
+   "cand_range": [
+    376,
+    377
+   ],
+   "orig_lines": "397-397",
+   "cand_lines": "377-377",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[collapsible show=\"+ Show source code\"]]",
+   "first_added": "[[collapsible show=\"+ ソースコードを表示\"]]"
+  },
+  {
+   "id": "B75",
+   "orig_range": [
+    403,
+    403
+   ],
+   "cand_range": [
+    383,
+    384
+   ],
+   "orig_lines": "at 404",
+   "cand_lines": "384-384",
+   "channel_pair": [
+    "body",
+    "code-css"
+   ],
+   "labels": [
+    "JPFONT-LOAD"
+   ],
+   "primary": "JPFONT-LOAD",
+   "primary_section": 4,
+   "label_prec": {
+    "JPFONT-LOAD": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "JPFONT-LOAD": {
+     "cand": [
+      [
+       383,
+       384
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "absence claim needs base subtraction (resolved base)"
+   ],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": "@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');"
+  },
+  {
+   "id": "B76",
+   "orig_range": [
+    406,
+    407
+   ],
+   "cand_range": [
+    387,
+    388
+   ],
+   "orig_lines": "407-407",
+   "cand_lines": "388-388",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "JPFONT-STACK"
+   ],
+   "primary": "JPFONT-STACK",
+   "primary_section": 4,
+   "label_prec": {
+    "JPFONT-STACK": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "JPFONT-STACK": {
+     "orig": [
+      [
+       406,
+       407
+      ]
+     ],
+     "cand": [
+      [
+       387,
+       388
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "body { font-family: 'Libre Baskerville', serif; }",
+   "first_added": "body { font-family: 'Libre Baskerville', 'Noto Sans JP', serif; }"
+  },
+  {
+   "id": "B77",
+   "orig_range": [
+    438,
+    439
+   ],
+   "cand_range": [
+    419,
+    420
+   ],
+   "orig_lines": "439-439",
+   "cand_lines": "420-420",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "JPFONT-STACK"
+   ],
+   "primary": "JPFONT-STACK",
+   "primary_section": 4,
+   "label_prec": {
+    "JPFONT-STACK": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "JPFONT-STACK": {
+     "orig": [
+      [
+       438,
+       439
+      ]
+     ],
+     "cand": [
+      [
+       419,
+       420
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "  font-family: 'Prata', serif;",
+   "first_added": "  font-family: 'Prata', 'Noto Sans JP', serif;"
+  },
+  {
+   "id": "B78",
+   "orig_range": [
+    484,
+    485
+   ],
+   "cand_range": [
+    465,
+    466
+   ],
+   "orig_lines": "485-485",
+   "cand_lines": "466-466",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "WS-ONLY"
+   ],
+   "primary": "WS-ONLY",
+   "primary_section": 9,
+   "label_prec": {
+    "WS-ONLY": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "WS-ONLY": {}
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": ".inkblot-info > p { ",
+   "first_added": ".inkblot-info > p {"
+  },
+  {
+   "id": "B79",
+   "orig_range": [
+    659,
+    660
+   ],
+   "cand_range": [
+    640,
+    641
+   ],
+   "orig_lines": "660-660",
+   "cand_lines": "641-641",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DRAFT-HOST"
+   ],
+   "primary": "DRAFT-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       640,
+       641
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "div#container-wrap { background: url(https://scp-wiki.wdfiles.com/local--files/theme%3Ainkblot/review-header.svg) top left/100% 648px no-repeat; }",
+   "first_added": "div#container-wrap { background: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Ainkblot-jp/review-header.svg) top left/100% 648px no-repeat; }"
+  },
+  {
+   "id": "B80",
+   "orig_range": [
+    673,
+    674
+   ],
+   "cand_range": [
+    654,
+    655
+   ],
+   "orig_lines": "674-674",
+   "cand_lines": "655-655",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "JPFONT-STACK"
+   ],
+   "primary": "JPFONT-STACK",
+   "primary_section": 4,
+   "label_prec": {
+    "JPFONT-STACK": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "JPFONT-STACK": {
+     "orig": [
+      [
+       673,
+       674
+      ]
+     ],
+     "cand": [
+      [
+       654,
+       655
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "  font-family: 'Montserrat', sans-serif;",
+   "first_added": "  font-family: 'Montserrat', 'Noto Sans JP', sans-serif;"
+  },
+  {
+   "id": "B81",
+   "orig_range": [
+    690,
+    692
+   ],
+   "cand_range": [
+    671,
+    673
+   ],
+   "orig_lines": "691-692",
+   "cand_lines": "672-673",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DRAFT-HOST"
+   ],
+   "primary": "DRAFT-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       672,
+       673
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "  background: ",
+   "first_added": "  background:"
+  },
+  {
+   "id": "B82",
+   "orig_range": [
+    778,
+    779
+   ],
+   "cand_range": [
+    759,
+    760
+   ],
+   "orig_lines": "779-779",
+   "cand_lines": "760-760",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "WS-ONLY"
+   ],
+   "primary": "WS-ONLY",
+   "primary_section": 9,
+   "label_prec": {
+    "WS-ONLY": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "WS-ONLY": {}
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background-image: ",
+   "first_added": "    background-image:"
+  },
+  {
+   "id": "B83",
+   "orig_range": [
+    934,
+    935
+   ],
+   "cand_range": [
+    915,
+    916
+   ],
+   "orig_lines": "935-935",
+   "cand_lines": "916-916",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "JPFONT-STACK"
+   ],
+   "primary": "JPFONT-STACK",
+   "primary_section": 4,
+   "label_prec": {
+    "JPFONT-STACK": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "JPFONT-STACK": {
+     "orig": [
+      [
+       934,
+       935
+      ]
+     ],
+     "cand": [
+      [
+       915,
+       916
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "  font-family: 'Libre Baskerville', serif;",
+   "first_added": "  font-family: 'Libre Baskerville', 'Noto Sans JP', serif;"
+  },
+  {
+   "id": "B84",
+   "orig_range": [
+    940,
+    941
+   ],
+   "cand_range": [
+    921,
+    922
+   ],
+   "orig_lines": "941-941",
+   "cand_lines": "922-922",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "JPFONT-STACK"
+   ],
+   "primary": "JPFONT-STACK",
+   "primary_section": 4,
+   "label_prec": {
+    "JPFONT-STACK": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "JPFONT-STACK": {
+     "orig": [
+      [
+       940,
+       941
+      ]
+     ],
+     "cand": [
+      [
+       921,
+       922
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "  font-family: 'Prata', serif; font-size: 3rem; text-align: center;",
+   "first_added": "  font-family: 'Prata', 'Noto Sans JP', serif; font-size: 3rem; text-align: center;"
+  },
+  {
+   "id": "B85",
+   "orig_range": [
+    997,
+    998
+   ],
+   "cand_range": [
+    978,
+    979
+   ],
+   "orig_lines": "998-998",
+   "cand_lines": "979-979",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "JPFONT-STACK"
+   ],
+   "primary": "JPFONT-STACK",
+   "primary_section": 4,
+   "label_prec": {
+    "JPFONT-STACK": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "JPFONT-STACK": {
+     "orig": [
+      [
+       997,
+       998
+      ]
+     ],
+     "cand": [
+      [
+       978,
+       979
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "  font-family: verdana, arial, helvetica, sans-serif;",
+   "first_added": "  font-family: verdana, arial, helvetica, 'Noto Sans JP', sans-serif;"
+  },
+  {
+   "id": "B86",
+   "orig_range": [
+    1015,
+    1015
+   ],
+   "cand_range": [
+    996,
+    1016
+   ],
+   "orig_lines": "at 1016",
+   "cand_lines": "997-1016",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "T7-CREDIT-CSS"
+   ],
+   "primary": "T7-CREDIT-CSS",
+   "primary_section": 1,
+   "label_prec": {
+    "T7-CREDIT-CSS": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "T7-CREDIT-CSS": {
+     "cand": [
+      [
+       1012,
+       1014
+      ],
+      [
+       1013,
+       1014
+      ],
+      [
+       1014,
+       1015
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "supplement-vs-inherited needs the production counterpart"
+   ],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": ""
+  }
+ ],
+ "derived_presence": {
+  "HTTP-KEPT": {
+   "class": "(ii) posting rewrite",
+   "count": 1,
+   "lines": [
+    "899-899"
+   ],
+   "example": "* http://scp-wiki.wikidot.com/component:image-features-source"
+  }
+ },
+ "summary": {
+  "blocks": 86,
+  "specific": 33,
+  "heuristic": 49,
+  "residue": 4,
+  "skipped": 0,
+  "reindent_blocks": 0,
+  "label_counts": {
+   "EXHIBIT-RESTRUCTURE": 4,
+   "IFTAGS": 3,
+   "DELIVERY-HOST": 3,
+   "DELIVERY-MOVE": 3,
+   "DRAFT-HOST": 7,
+   "SELF-DELIVERY": 3,
+   "INCLUDE-REPOINT": 2,
+   "TRANSLATION-ANCHORED": 13,
+   "CREDIT-PREVIEW": 1,
+   "TASL-FIELDS": 1,
+   "TRANS-UNANCHORED": 50,
+   "HEADERVAR": 2,
+   "BARE-RATE-DEL": 1,
+   "JPFONT-LOAD": 1,
+   "JPFONT-STACK": 6,
+   "WS-ONLY": 2,
+   "T7-CREDIT-CSS": 1
+  }
+ },
+ "residue": [
+  "B26",
+  "B31",
+  "B45",
+  "B56"
+ ],
+ "skeleton": {
+  "sha256": "583555f990ed8b839e15e387fc13ef06c780fcaf50f9c6b65a837569e24365a5",
+  "status": "written (new)"
+ }
+}

@@ -1,6 +1,6 @@
 [[include :scp-jp:component:centered-header-sigma-9]]
 [[include :scp-jp:component:toggle-sidebar]]
-[[include :scp-jp:component:raisa-ribbon alt=1|side=right]]
+[[include :scp-jp:component:raisa-ribbon alt=1|side=1]]
 [[module CSS]]
 @import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3A07k-jp/1');
 [[/module]]
@@ -16,7 +16,7 @@
 **翻訳責任者:** AI
 **翻訳年:** 2026
 **原題:** 건설자 테마
-**著作権者:** 原語版ページの作成者に同じ（scpko の theme:07k）
+**著作権者:** [[*user thd-glasses]]
 **作成年:** 2024
 **初訳時参照リビジョン:** 3
 **元記事リンク:** [*https://scpko.wikidot.com/theme:07k 건설자 테마]
@@ -117,20 +117,27 @@
 
 [[collapsible show="> コードを表示" hide="> コードを閉じる"]]
 [[code type="css"]]
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;700&display=swap');
+@font-face {
+    font-family: 'GongGothicMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GongGothicBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /*
     건설자 / Site-07K Theme — Ported for SCP-JP (theme:07k rev 3 on scpko).
     原語版は韓国の GongGothic ウェブフォントを jsDelivr から読み、KO のコンポーネント
-    （centered-header-sigma-9 / toggle-sidebar / raisa-ribbon）を併用します。SCP-JP には無いため、
-    フォントは Google の Gothic A1 で代替し、コンポーネントは JP 側の相当品か 訳注 に置き換えました。
+    （centered-header-sigma-9 / toggle-sidebar / raisa-ribbon）を併用します。フォントは
+    原語版どおり jsDelivr の GongGothic を @font-face で読み、コンポーネントは SCP-JP 側の
+    相当品に置き換えました。
 */
-/* 日本語フォント (JP localization) */
-/* 原語版の jsDelivr ウェブフォントは Google の同等書体で代替 (JP localization) */
-
-/* 原語版の jsDelivr ウェブフォントは Google の同等書体で代替 (JP localization) */
 
 :root{
   --header-title: "초도격리개발기지";
@@ -388,7 +395,7 @@ blockquote, div.blockquote {
 [[/collapsible]]
 
 [[include :scp-jp:component:license-box-backend
-|author=scpko theme:07k の作者]]
+|author=thd-glasses]]
 
 > **画像・フォントの出典:** 原語版の theme:07k の記載に従います。KO 側の添付・ウェブフォントは候補ページに再ホストするか Google Fonts の同等書体に差し替えています。原語版にライセンス表記が無い画像は、投稿前に著者へ確認してください。
 

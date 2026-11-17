@@ -1,0 +1,697 @@
+[[module css]]
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Ai57-theme-jp/1")
+[[/module]]
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme= https://sigma10-jp-test.wdfiles.com/local--code/theme%3Ai57-theme-jp/1
+]]
+
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** I57 Theme
+**翻訳責任者:** AI
+**翻訳年:** 2026
+**原題:** I57 Theme
+**著作権者:** Dc_Yerko, ROUNDERHOUSE
+**作成年:** 2019
+**初訳時参照リビジョン:** 40
+**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:i57-theme I57 Theme]
+[[include :scp-jp:credit:end-preview]]
+
++ 使い方
+
+このテーマを読み込むには、記事の最上部に次を置いてください:
+
+> @@[[include :scp-jp:theme:i57-theme-jp]]@@
+
+簡単です[[footnote]]ポン、ですね。[[/footnote]][[footnote]]そう、脚注はこんな見た目になります。[[/footnote]]
+
+----
+
+[[include :scp-jp:component:image-block name=https://scp-wiki.wikidot.com/local--files/theme%3Ai57-theme/I-57-Logo.webp|caption=キヤノンのアイソタイプ|width=225px]]
+
++ 例
+
+上の水平線は、ダッシュを4つ並べた「@@----@@」で作れます。太くて短い区切り線は、「@@+ -----@@」と置くと作れます。
+
+[[collapsible show="+ 見出し" hide="- 見出し"]]
++ 見出し1
+
+++ 見出し2
+
++++ 見出し3
+
+++++ 見出し4
+
++++++ 見出し5
+
+++++++ 見出し6
+
+これだけ見出しが並ぶと壮観ですね。
+[[/collapsible]]
+
+@@ @@
+
+@@ @@
+
+@@ @@
+
+@@ @@
+
+[[tabview]]
+[[tab タブ]]
+これはタブです。
+[[/tab]]
+[[tab タブ2]]
+おや、こっちにもテキストがあるぞ。
+
+興味深いですね。
+[[/tab]]
+[[tab 大きなタブ]]
+
+これは大きなタブです。たくさんのテキストが入ります。
+
+これは大きなタブです。たくさんのテキストが入ります。
+
+これは大きなタブです。たくさんのテキストが入ります。
+
+これは大きなタブです。たくさんのテキストが入ります。
+
+これは大きなタブです。たくさんのテキストが入ります。
+
+これは大きなタブです。たくさんのテキストが入ります。
+
+これは大きなタブです。たくさんのテキストが入ります。
+
+これは大きなタブです。たくさんのテキストが入ります。
+
+これは大きなタブです。たくさんのテキストが入ります。
+
+これは大きなタブです。たくさんのテキストが入ります。
+
+これは大きなタブです。たくさんのテキストが入ります。
+
+これは大きなタブです。たくさんのテキストが入ります。
+
+これは大きなタブです。たくさんのテキストが入ります。
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[=image https://scp-wiki.wikidot.com/local--files/theme%3Ai57-theme/pig_loader.gif style="width: 1px;"]]
+----
+**フェイクニュース。ここは空ではありませんでした。**
+----
+[[=image https://scp-wiki.wikidot.com/local--files/theme%3Ai57-theme/pig_loaded.webp style="width: 1px;"]]
+[[/tab]]
+[[/tabview]]
+
+> これは引用ブロックです。各行の行頭に「> 」を置いて作ります。記号のあとの空白は、空行で段落を区切るときでも必ず必要です。
+> 
+> 続きのテキスト
+> -----
+> これは水平線です。とても興味深い。
+> 
+>> そしてこれが、いわゆるインセプションです。
+
+||~ これは ||~ 表です ||
+|| 作り方を || いつも忘れる ||
+|||| 見た目ほど難しくはないのですが ||
+
++ 組み込みの div
+
+[[div class="groove"]]
+Lorem ipsum
+
+> @@[[div class="groove"]]@@
+> @@@@
+> @@[[/div]]@@
+[[/div]]
+
+[[div class="solid"]]
+Lorem ipsum
+
+> @@[[div class="solid"]]@@
+> @@@@
+> @@[[/div]]@@
+[[/div]]
+
+----
+
+[[collapsible show="+ コードを表示" hide="- コードを閉じる"]]
+
+[[code type="css"]]
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Play');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/*
+    Facility-57 Theme
+    [2019 Sigma-9 Theme]
+    [Made in the Spanish Branch (Ñ)]
+    Designed by Dc_Yerko with help from Uncle Nicolini
+    Ported to EN, edited and shinied by ROUNDERHOUSE
+    Updated in 2023 by Dc_Yerko
+*/
+
+/* BODY */
+
+body {
+    background-color: #f0f0f0;
+    color: #000000;
+}
+
+/* LINKS */
+
+a {
+    color: #004fa0;
+} 
+
+a:visited {
+    color: #00356c;
+}
+
+a:new-page {
+    color: #8791d9;
+}
+
+a.newpage {
+    color: #005fc1;
+}
+
+/* HEADER BACKGROUND */
+
+div#container-wrap {
+    background: url(https://scp-wiki.wikidot.com/local--files/theme%3Ai57-theme/opera.webp) top left repeat-x;
+}
+
+/* HEADER LOGO */
+
+#header {
+    background: url(https://scp-wiki.wikidot.com/local--files/theme%3Ai57-theme/SCP-LOGO-RENDER-HD.webp) 10px 35px no-repeat;
+}
+
+/* SEARCH BUTTON */
+
+#search-top-box-form input[type=submit] {
+    border: 1px solid #D6D6D6;
+    color: #FFFFFF;
+    background: linear-gradient(to bottom, #353535,#212121,#000000);
+}
+
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+    border: solid 1px #D6D6D6;
+    color: #f3cf08;
+    background: linear-gradient(to bottom, #353535,#212121,#000000);
+    box-shadow: 0px 0px 5px 6px rgba(243,207,8,.2);
+}
+
+/* LOGIN AND MY ACCOUNT */
+
+#login-status {
+    color: #dddddd;
+}
+
+#login-status a {
+    color: #FFF;
+}
+
+#login-status ul a {
+    color: #000;
+}
+
+#account-topbutton {
+    background: transparent;
+    color: #f3cf08;
+}
+
+/* HEADER TITLE */
+
+#header h1 a {
+    content: "Facility-57";
+    color: transparent;
+    font-family: 'Play', 'Open Sans', "Noto Sans JP", sans-serif;
+    text-shadow: none;
+}
+
+#header h1 a::before {
+    content: "Facility-57";
+    color: #DDBC05;
+    text-shadow: 3px 3px 5px #242424;
+}
+
+@media (max-width: 767px) {
+    #header h1 a::before {
+    margin-left: -57px;
+    font-size: 65%;
+    text-shadow:
+    -2px 0px 0px #111419,
+    2px 0px 0px #111419,
+    0px -2px 0px #111419,
+    0px 2px 0px #111419;
+    }
+}
+
+/* HEADER SUBTITLE */
+
+#header h2 span {
+    color: transparent;
+    text-shadow: none;
+}
+
+#header h2 span::before {
+    content: 'Security and Containment For Latinamerica';
+    color: #708090;
+    text-shadow: 1px 1px 1px #000000;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+}
+
+@media (max-width: 767px) {
+#header h2 span::before {
+    content: 'Security and Containment For LatAm';
+    margin-left: -57px;
+    text-shadow:
+    -2px 0px 0px #111419,
+    2px 0px 0px #111419,
+    0px -2px 0px #111419,
+    0px 2px 0px #111419;
+    }
+}
+
+/* TOP BAR */
+
+#top-bar a {
+    color: #C0C0C0;
+    background: transparent;
+}
+
+#top-bar ul li ul {
+    border: solid 1px #2F4F4F;
+    box-shadow: 0 2px 6px rgba(0,0,0,.5);
+}
+
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a {
+    background: #d6d6d6;
+    color: #2F4F4F;
+}
+
+#top-bar ul li.sfhover a:hover,
+#top-bar ul li:hover a:hover {
+    background: #C0C0C0;
+}
+
+/* BREADCRUMBS */
+
+#breadcrumbs {
+    margin-top: -1.5em;
+    margin-right: 0;
+    margin-bottom: 1em;
+    padding: 5px;
+    font-size: 10px;
+    border-top: 1px solid #000000;
+}
+
+#breadcrumbs a {
+    color: #F3CF08;
+    background-color: black;
+    padding: 5px;
+}
+
+#breadcrumbs a:visited {
+    color: #dabb0b;
+    background-color: black;
+    padding: 5px;
+}
+
+/* TITLES */
+
+h1, #page-title {
+    color: #000000;
+}
+
+/* SIDE BAR */
+
+#side-bar a {
+    color: #F3CF08;
+} 
+
+#side-bar a:visited { 
+    color: #F3CF08;
+}
+
+#side-bar a.newpage {
+    color: #F3CF08;
+}
+
+#side-bar a.collapsible-block-link {
+    color: #F3CF08;
+}
+
+#side-bar .side-block {
+    border: 1px solid #D6D6D6;
+    box-shadow: 0 2px 6px rgba(32,32,32,1);
+    background: #000000; 
+}
+
+#side-bar .heading {
+    color: #D6D6D6;
+    border-bottom: solid 1px #D6D6D6;
+}
+
+#side-bar div.menu-item.inactive a {
+    color: #D6D6D6;
+}
+
+#side-bar div.menu-item .sub-text {
+    color: #D6D6D6;
+}
+
+#side-bar .collapsible-block-unfolded-link {
+    border-bottom: solid 1px #D6D6D6;
+}
+
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link {
+    color: #D6D6D6;
+}
+
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link:hover {
+    color: #ddbc05;
+}
+
+#side-bar .side-block.resources,
+#side-bar .side-block.media {
+    border: 1px solid #D6D6D6;
+    box-shadow: 0 2px 6px rgba(32,32,32,1);
+    background: #000000;
+}
+
+/* SIDE BAR BACKGROUND ON MOBILE VIEW */
+
+@media (max-width: 767px) {
+    #side-bar {
+    background-color: rgba(255,255,255,.1);
+    }
+}
+
+/* SIDE BAR BUTTON */
+
+.open-menu a {
+    border: 0.2em solid #000 !important;
+    background-color: #F5F5F5 !important;
+    color: #000 !important;
+}
+
+.open-menu a:hover {
+    text-decoration: none !important;
+    -webkit-box-shadow: 0px 0px 20px 3px rgba(243,207,8,1);
+    -moz-box-shadow: 0px 0px 20px 3px rgba(243,207,8,1);
+    -ms-box-shadow: 0px 0px 20px 3px rgba(243,207,8,1);
+    -o-box-shadow: 0px 0px 20px 3px rgba(243,207,8,1);
+    box-shadow: 0px 0px 20px 3px rgba(243,207,8,1);
+}
+
+/* INTERWIKI */
+
+#interwiki .side-block {
+    padding: 10px;
+    border: 1px solid #D6D6D6;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(32,32,32,1);
+    background: #000000; 
+    margin-bottom: 15px;
+}
+
+#interwiki .heading {
+    color: #D6D6D6;
+    border-bottom: solid 1px #D6D6D6;
+    padding-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 8pt;
+    font-weight: bold;
+}
+
+#interwiki a,
+#interwiki a:visited,
+#interwiki a.newpage {
+    color: #F3CF08;
+}
+
+#interwiki .menu-item img {
+    filter: hue-rotate(210deg) brightness(150%);
+    -webkit-filter: hue-rotate(210deg) brightness(150%);
+}
+
+/* RATING */
+
+div.page-rate-widget-box .rate-points {
+    background-color: #000000;
+    border: solid 1px #000000;
+}
+
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+    background-color: ffffff;
+    border-top: solid 1px #000000;
+    border-bottom: solid 1px #000000;
+}
+
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a {
+    background: 000000;
+    color: #000000;
+}
+
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover {
+    background: #000000;
+    color: #ffffff;
+}
+
+.page-rate-widget-box .cancel {
+    background-color: #000000;
+    border: solid 1px #000000;
+}
+
+.page-rate-widget-box .cancel a {
+    color: #ffffff;
+}
+
+.page-rate-widget-box .cancel a:hover {
+    background: #000000;
+    color: #ffffff;
+}
+
+/* RATING WITH INFO */
+
+#page-content .rate-box-with-credit-button {
+    background-color: #000; 
+    border: 1px solid #000;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.5);
+}
+#page-content .rate-box-with-credit-button .creditButton p a {
+    border-left-color: #ffffff;
+}
+
+#page-content .rate-box-with-credit-button .fa-info {
+     border-color: #ffffff;
+     color: #ffffff;
+}
+#page-content .rate-box-with-credit-button .fa-info:hover {
+     color: #f7bb25;
+}
+
+.close-credits,
+.credit-back {
+    filter: hue-rotate(140deg);
+}
+
+#page-content .modalbox {
+    box-shadow: 0 2px 6px rgba(0,30,0,.5);
+}
+
+/* BLOCKQUOTE */
+
+blockquote,
+div.blockquote {
+    background-color: #e4e4e4;
+}
+
+/* IMAGE BLOCK */
+
+.scp-image-block .scp-image-caption {
+    background-color: #e1e1e1;
+    border-top: solid 1 px #2F4F4F;
+}
+
+.scp-image-block .scp-image-caption > p {
+    background-color: #e1e1e1;
+    border: solid 1 px #2F4F4F;
+}
+
+/* TABLES */
+
+table.wiki-content-table th {
+    border: 1px solid #888888;
+    padding: 0.3em 0.7em;
+    background-color: #000000;
+    color: #ddbc05 !important;
+}
+
+/* TABS */
+
+.yui-navset .yui-nav,
+.yui-navset .yui-navset-top .yui-nav {
+     border-color: #000000;
+     display: flex;
+     flex-wrap: wrap;
+     width: 100%;
+     margin: 0 auto;
+     box-shadow: none;
+}
+
+.yui-navset .yui-nav,
+.yui-navset .yui-navset-top .yui-nav {
+    border-color: #000000;
+}
+
+ .yui-navset .yui-nav a,
+ .yui-navset .yui-navset-top .yui-nav a {
+     border: unset;
+     box-shadow: none;
+}
+
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a:focus,
+.yui-navset .yui-nav .selected a:hover {
+    background: #000000;
+    color: white;
+    border: 0px solid #000000;
+    border-bottom: 2px solid #ddbc05;
+}
+
+.yui-navset .yui-nav a,
+.yui-navset .yui-navset-top .yui-nav a {
+    background: #484848;
+    color: white;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.yui-navset .yui-nav a:focus,
+.yui-navset .yui-nav a:hover {
+    background: #afafaf;
+    border-bottom: 2px solid #d2c88f;
+}
+
+.yui-navset .yui-nav a em,
+.yui-navset .yui-navset-top .yui-nav a em {
+     border: 0px;
+     padding: .35em .75em;
+     text-overflow: ellipsis;
+     overflow: hidden;
+     white-space: nowrap;
+}
+
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a em {
+     display: flex;
+     flex-grow: 2;
+     max-width: 100%;
+     align-items: center;
+     justify-content: center;
+}
+
+.yui-navset .yui-nav .selected, .yui-navset .yui-navset-top .yui-nav .selected {
+    margin: 0;
+}
+
+ .yui-navset .yui-nav li,
+ .yui-navset .yui-navset-top .yui-nav li {
+     position: relative;
+     display: flex;
+     flex-grow: 2;
+     max-width: 100%;
+     margin: 0;
+     padding: 0;
+}
+ .yui-navset .yui-nav li a,
+ .yui-navset-top .yui-nav li a,
+ .yui-navset-bottom .yui-nav li a {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+}
+ .yui-navset .yui-nav li em{
+     border: unset;
+}
+
+/* OWINDOW */
+
+.owindow.owait .content {
+    padding-bottom: 2rem;
+    background-image: url("https://scp-wiki.wikidot.com/local--files/theme%3Ai57-theme/pig_loader.gif");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 57px;
+    height: 40px;
+}
+
+.owindow.osuccess .content {
+    padding-bottom: 2rem;
+    background-image: url("https://scp-wiki.wikidot.com/local--files/theme%3Ai57-theme/pig_loaded.webp");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 50px;
+    height: 40px;
+}
+
+.owindow .title {
+    color: #f3cf08;
+    background-color: #000000;
+    border: solid 1px #000000:
+}
+
+/* FOOTER */
+
+#footer {
+    background-color: #000;
+}
+
+/* CUSTOM DIVS - BY ROUNDERHOUSE */
+
+.groove {
+    background-color: #929292;
+    border: groove 5px;
+    margin: .5rem 1rem .5rem;
+    padding: .25rem .5rem .25rem;
+}
+
+.solid { 
+    background-color: #bfbfbf; 
+    border: solid 3px #4c4c4c;
+    margin: .5rem 1rem .5rem;
+    padding: .25rem .5rem .25rem;
+}
+
+/* ROUNDERHOUSE. wuz here /// ROUNDERHOUSE. estuvo aquí */
+/* yo también */
+/* yo = dc_yerko */
+[[/code]]
+
+[[/collapsible]]
+
+[[/iftags]]
