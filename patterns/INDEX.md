@@ -40,7 +40,7 @@ swept would show `never`; every current pattern was swept on
 | KB-09 | [KB-09.md](KB-09.md) | Duplicate bare `[[module Rate]]` beside the rate-bearing preview credit module | A. Theme defect, file-provable | pure grep | FILE-PROVABLE | adopted | 1 (static-diff) | 0/0 |
 | KB-10 | [KB-10.md](KB-10.md) | Credit furniture missing or incomplete (no-credit, no-rate, credit-missing-fields) | A. Theme defect, file-provable | pure grep | FILE-PROVABLE | adopted | 1 (static-diff) | 2/0 |
 | KB-11 | [KB-11.md](KB-11.md) | JP credit-module localization supplement missing from the candidate (3law-pride class) | A. Theme defect, file-provable | cross-file diff | FILE-PROVABLE | adopted | 2 (owner-inspection, static-diff) | 5/47 |
-| KB-12 | [KB-12.md](KB-12.md) | JP credit-module supplement present but ineffective (night-rush class) | A. Theme defect, file-provable | cross-file diff | FILE-PROVABLE | adopted | 2 (static-diff, lane-report) | 0/36 |
+| KB-12 | [KB-12.md](KB-12.md) | JP credit-module supplement present but ineffective (night-rush class) | A. Theme defect, file-provable | cross-file diff | FILE-PROVABLE | adopted | 3 (static-diff, lane-report, measured-render) | 0/36 |
 | KB-13 | [KB-13.md](KB-13.md) | Global `.modalbox` fixed centering pins the static credit replica at viewport centre (space class) | A. Theme defect, file-provable | pure grep | FILE-PROVABLE | adopted | 1 (static-diff) | 1/0 |
 | KB-14 | [KB-14.md](KB-14.md) | Cross-theme / original-delivery code import (localize pattern 4) | A. Theme defect, file-provable | pure grep | FILE-PROVABLE | adopted | 1 (static-diff) | 9/0 |
 | KB-15 | [KB-15.md](KB-15.md) | Foreign include kept where a verified JP counterpart exists (pattern 1, live form); wrong-form and wrong-slug variants | A. Theme defect, file-provable | needs live probe | FILE-PROVABLE | adopted | 2 (static-diff, live-probe) | 9/4 |
@@ -94,9 +94,10 @@ swept would show `never`; every current pattern was swept on
 | KB-63 | [KB-63.md](KB-63.md) | JP license box dropped by a candidate whose original carried one | A. Theme defect, file-provable | cross-file diff | FILE-PROVABLE | adopted | 1 (static-diff) | 7/0 |
 | KB-64 | [KB-64.md](KB-64.md) | Bare component:sigma-plus include bypassing the JP port | A. Theme defect, file-provable | pure grep | FILE-PROVABLE | adopted | 1 (static-diff) | 7/0 |
 | KB-65 | [KB-65.md](KB-65.md) | Duplicated @import lines | A. Theme defect, file-provable | pure grep | FILE-PROVABLE | adopted | 1 (static-diff) | 40/0 |
+| KB-66 | [KB-66.md](KB-66.md) | Dead prose link to a page name that will not exist on scp-jp | A. Theme defect, file-provable | needs live probe | FILE-PROVABLE | adopted | 2 (live-probe, static-diff) | never |
 
 ## Totals
 
-- Patterns: 65 (KB-01 to KB-65), plus SWEEP-PROTOCOL.md, SUPPLEMENT-TYPES.md and NEGATIVE-LEDGER.md.
+- Patterns: 66 (KB-01 to KB-66), plus SWEEP-PROTOCOL.md, SUPPLEMENT-TYPES.md and NEGATIVE-LEDGER.md.
 - Total confirmed hits (SWEEP-RESULTS.tsv, first sweep 2026-11-17): 2038. For TRIAGE patterns this is a risk count, not a verdict count; units follow each source report (themes for most patterns, occurrences, rows or report mentions where the report counts those).
 - Total undecidable cells (SWEEP-RESULTS.tsv): 1861. This sum includes the whole-population by-design undecidable patterns KB-19 and KB-48 (287 each) and the probe queues KB-02 (80) and KB-05 (251).
