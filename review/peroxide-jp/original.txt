@@ -1,0 +1,450 @@
+[!-- https://scp-wiki-cn.wikidot.com/fragment:peroxide-code --]
+[!-- https://scp-wiki-cn.wikidot.com/fragment:peroxide-module-css --]
+
+[[module ThemePreviewer noUi="true" theme_url="https://oxygennine.github.io/Peroxide/peroxide.css"]]
+
+[[module CSS]]
+
+/* hot fix */
+
+.wd-editor-toolbar-panel ul li a:hover {
+    background-image: none;
+}
+
+[[/module]]
+
+[[include :scp-wiki-cn:component:interwiki-style
+| priority=2
+| type=sidebar
+| theme=https://cdn.scpwiki.com/theme/en/basalt/normalize-min.css
+]]
+
+[[include :scp-wiki-cn:component:interwiki-style
+| priority=2
+| type=sidebar
+| theme=https://oxygennine.github.io/Peroxide/CSS/Interwiki/Interwiki.css
+]]
+
+[[module CSS]]
+/* {$printFriendly}/
+@import url('https://cdn.scpwiki.com/theme/en/basalt/normalize-min.css');
+@import url('http://d3g0gp89917ko0.cloudfront.net/v--3e3a6f7dbcc9/common--theme/base/css/style.css');
+@import url('https://oxygennine.github.io/Peroxide/peroxide.css');
+/{$printFriendly} */
+[[/module]]
+
+[!-- {$moduleCSS}]
+
+[[include :scp-wiki-cn:fragment:peroxide-module-css]]
+
+[!{$moduleCSS} --]
+
+
+[[module CSS]]
+
+/* {$custom}/
+
+:root {
+    --p-header-title-content: {$title} !important;
+    --p-header-slogan-content: {$slogan} !important;
+    --p-header-logo-background: {$logo} !important;
+    --p-theme-color-light: {$colorLight} !important;
+    --p-theme-color: {$colorNormal} !important;
+    --p-theme-color-dark: {$colorDark} !important;
+}
+
+/{$custom} */
+
+/* {$logoInvert}/
+
+:root {
+    --p-header-logo-invert: 1;
+}
+
+#header h1 a::before {
+    filter: invert(var(--p-header-logo-invert)) hue-rotate(180deg);
+}
+
+/{$logoInvert} */
+
+[[/module]]
+
+[[div id="u-peroxide-savingpages-blocker"]]
+[[collapsible show="隐藏Saving Pages" hide="显示Saving Pages"]]
+[[/collapsible]]
+[[/div]]
+
+[[iftags +原创 +版式]]
+
+[[image https://cdn.mer.run/i/2026/03/06/69a9c5f12e120.png style="display: block; width: min(90%, 18rem); margin: 1rem auto;"]]
+
+= **v1.0.1**
+
+[[=]]
+[[module rate]]
+[[/=]]
+
+@@@@
+@@@@
+
+欢迎使用[[span class="ruby"]]过氧化物[[span class="rt"]]Peroxide[[/span]][[/span]]基础版式，这是一个不基于任何前置版式的美学版式，其前身为[[[theme:mox|一氧化物版式]]]，由[[*user OxygenNine]]开发。
+
+在任何页面上，通过在页面顶端插入以下代码以启用此版式：
+
+= [[size 1.25em]]{{@@[[include :scp-wiki-cn:@@**##theme|theme:peroxide##**@@]]@@}}[[/size]]
+
+@@@@
+@@@@
+
++ 预设
+
+推荐的引用顺序是：先引用过氧化物本体（可以调整参数），再引用布局方案，最后引用配色预设。配色预设会覆盖前面的设置。
+
+++ 布局方案
+
+[[module CSS]]
+img.img-showcase {
+    width: 100%;
+    border-radius: 0.5rem;
+    border: solid 0.1rem var(--p-gray-2);
+    box-shadow: var(--p-shadow-1);
+    margin: 2rem auto;
+}
+[[/module]]
+
+[[tabview]]
+[[tab 引用教程]]
+
+需要在引用过氧化物版式后，再引用布局方案，例如：
+
+[[div class="code"]]
+@@[[include :scp-wiki-cn:@@**##var(--p-theme-color-light)|theme:peroxide##**]]
+@@[[include@@ :oxygennine:**##var(--p-theme-color-light)|peroxide:layout-classic-header##**]]
+[[/div]]
+
+除了“页面内容布局”之外，不同的布局方案彼此互不兼容。
+
+[[/tab]]
+
+[[tab 经典布局]]
+[[image https://cdn.mer.run/i/2026/03/13/69b431d699ae9.png class="img-showcase"]]
+= {{[[include :oxygennine:peroxide:layout-classic-header]]}}
+[[/tab]]
+
+[[tab 经典布局 版头居中]]
+[[image https://cdn.mer.run/i/2026/03/13/69b4325a471f3.png class="img-showcase"]]
+= {{[[include :oxygennine:peroxide:layout-classic-header-center]]}}
+[[/tab]]
+
+[[tab 经典布局 切换侧边栏]]
+[[image https://cdn.mer.run/i/2026/03/13/69b434223e994.png class="img-showcase"]]
+= {{[[include :oxygennine:peroxide:layout-classic-header-no-sidebar]]}}
+[[/tab]]
+
+[[tab 版头居中]]
+[[image https://cdn.mer.run/i/2026/03/13/69b432803c595.png class="img-showcase"]]
+= {{[[include :oxygennine:peroxide:layout-header-center]]}}
+[[/tab]]
+
+[[tab 侧边栏常显]]
+[[image https://cdn.mer.run/i/2026/03/13/69b4333edc5e8.png class="img-showcase"]]
+= {{[[include :oxygennine:peroxide:layout-sidebar-nearby]]}}
+[[/tab]]
+
+[[tab 侧边栏切换位于版头]]
+[[image https://cdn.mer.run/i/2026/03/13/69b433011c0b3.png class="img-showcase"]]
+= {{[[include :oxygennine:peroxide:layout-header-sidebar]]}}
+[[/tab]]
+
+[[tab 页面内容布局]]
+
+= **将{{#page-content}}设置为12列grid布局**
+= {{[[include :oxygennine:peroxide:layout-page-content-grid]]}}
+
+= **将{{#page-content}}设置为{{display: block}}**
+= {{[[include :oxygennine:peroxide:layout-page-content-block]]}}
+
+[[/tab]]
+
+
+[[/tabview]]
+
+++ 配色方案
+
+[[tabview]]
+[[tab 引用教程]]
+
+需要在引用过氧化物版式后，再引用配色方案，例如：
+
+[[div class="code"]]
+@@[[include :scp-wiki-cn:@@**##var(--p-theme-color-light)|theme:peroxide##**]]
+@@[[include@@ :oxygennine:**##var(--p-theme-color-light)|peroxide:palette-dark##**]]
+[[/div]]
+
+如果需要将本来是黑色的LOGO变成白色，需要启用引用参数{{logoInvert=*}}，例如：
+
+[[div class="code"]]
+@@[[include :scp-wiki-cn:@@**##var(--p-theme-color-light)|theme:peroxide##** **##ff8f8f|logoInvert=*##**]]
+@@[[include@@ :oxygennine:**##var(--p-theme-color-light)|peroxide:palette-dark##**]]
+[[/div]]
+
+[[/tab]]
+
+[[tab 深色]]
+[[image https://cdn.mer.run/i/2026/03/14/69b445a708ea2.png class="img-showcase"]]
+= {{[[include :oxygennine:peroxide:palette-dark]]}}
+[[/tab]]
+
+[[tab 高对比度]]
+[[image https://cdn.mer.run/i/2026/03/14/69b445c0b399a.png class="img-showcase"]]
+= {{[[include :oxygennine:peroxide:palette-high-contrast]]}}
+[[/tab]]
+
+[[tab 铅封]]
+[[image https://cdn.mer.run/i/2026/03/14/69b5191700a4b.png class="img-showcase"]]
+= {{[[include :oxygennine:peroxide:palette-red]]}}
+[[/tab]]
+
+[[tab 水华]]
+[[image https://cdn.mer.run/i/2026/03/14/69b528dea6517.png class="img-showcase"]]
+= {{[[include :oxygennine:peroxide:palette-green]]}}
+[[/tab]]
+
+[[tab 极境]]
+[[image https://cdn.mer.run/i/2026/03/14/69b533819eb5d.png class="img-showcase"]]
+= {{[[include :oxygennine:peroxide:palette-blue]]}}
+[[/tab]]
+
+[[tab 覆巢]]
+[[image https://cdn.mer.run/i/2026/03/14/69b5372d6b67f.png class="img-showcase"]]
+= {{[[include :oxygennine:peroxide:palette-black]]}}
+[[/tab]]
+
+[[tab 薄荷]]
+[[image https://cdn.mer.run/i/2026/03/14/69b53c6993d2f.png class="img-showcase"]]
+= {{[[include :oxygennine:peroxide:palette-candy]]}}
+[[/tab]]
+
+[[tab 扫描]]
+[[image https://cdn.mer.run/i/2026/03/14/69b541f7dcb82.png class="img-showcase"]]
+= {{[[include :oxygennine:peroxide:palette-lime]]}}
+[[/tab]]
+
+[[/tabview]]
+
++ 自定义
+
+可以通过引用参数对过氧化物进行简单的自定义。请复制下面的引用模板。
+
+**在使用模板时不要删除参数——如果你只希望改动其中一两个参数，那就把剩下的完整保留。**
+
+[[div class="code"]]
+@@[[include :scp-wiki-cn:theme:peroxide@@
+|##ff8f8f|custom##=*
+[[span style="user-select: none; opacity: 0.4"]]↑ 启用自定义参数。[[/span]]
+|##ff8f8f|title##='SCP基金会'
+[[span style="user-select: none; opacity: 0.4"]]↑ 版头标题。左右使用半角引号括住。[[/span]]
+|##ff8f8f|slogan##='控制 / 收容 / 保护'
+[[span style="user-select: none; opacity: 0.4"]]↑ 版头副标题。左右使用半角引号括住。[[/span]]
+|##ff8f8f|logo##={{url('https://oxygennine.github.io/Peroxide/Images/scp-logo-line-black.svg')}}
+[[span style="user-select: none; opacity: 0.4"]]↑ 版头LOGO。以CSS url()格式引入。[[/span]]
+|##ff8f8f|colorLight=###3b69e4
+[[span style="user-select: none; opacity: 0.4"]]↑ 亮一些的主题色。[[/span]]
+|##ff8f8f|colorNormal=###3d5cab
+[[span style="user-select: none; opacity: 0.4"]]↑ 主题色。[[/span]]
+|##ff8f8f|colorDark=###354f96
+[[span style="user-select: none; opacity: 0.4"]]↑ 暗一些的主题色。[[/span]]
+|##ff8f8f|logoInvert=##
+[[span style="user-select: none; opacity: 0.4"]]↑ 是否将LOGO黑白反转；填“*”启用。[[/span]]
+]]
+[[/div]]
+
++ 排版元素
+
+++ 引用块和div元素
+
+[[div class="blockquote"]]
+= {{@@[[@@div class="blockquote"]]}}
+= [[size small]]或 {{@@[[@@div class="p-bq"]]}}[[/size]]
+默认引用块。
+> 默认引用块嵌套。
+[[/div]]
+
+[[div class="blockquote-clear"]]
+= {{@@[[@@div class="blockquote-clear"]]}}
+= [[size small]]或 {{@@[[@@div class="p-bqc"]]}}[[/size]]
+无边框引用块。
+[[/div]]
+
+[[div class="blockquote shadow"]]
+= {{@@[[@@div class="blockquote shadow"]]}}
+= [[size small]]或 {{@@[[@@div class="p-bq shadow"]]}}[[/size]]
+有阴影的引用块。
+任意div的class若加上{{shadow}}，则自动拥有阴影。
+[[/div]]
+
+[[div class="modal"]]
+= {{@@[[@@div class="modal"]]}}
+= [[size small]]或 {{@@[[@@div class="p-md"]]}}[[/size]]
+标准装饰块1。
+[[/div]]
+
+[[div class="notation"]]
+= {{@@[[@@div class="notation"]]}}
+= [[size small]]或 {{@@[[@@div class="p-no"]]}}[[/size]]
+标准装饰块2。
+[[/div]]
+
+[[div class="underline"]]
+= {{@@[[@@div class="underline"]]}}
+= [[size small]]或 {{@@[[@@div class="p-ud"]]}}[[/size]]
+下方划线的引用块。
+[[/div]]
+
+[[div class="doubleline smaller"]]
+= {{@@[[@@div class="doubleline"]]}}
+= [[size small]]或 {{@@[[@@div class="p-dl smaller"]]}}[[/size]]
+{{doubleline}}是上下都划线。
+{{smaller}}会缩短div的尺寸，对任何一个div都起效果。
+[[/div]]
+
+[[div class="doubleline dark"]]
+= {{@@[[@@div class="doubleline dark"]]}}
+= [[size small]]或 {{@@[[@@div class="p-db dark"]]}}[[/size]]
+{{dark}}会让div变成暗色，对任何一个div都起效果。
+[[/div]]
+
+[[div class="card"]]
+= {{@@[[@@div class="card"]]}}
+= [[size small]]或 {{@@[[@@div class="p-ca"]]}}[[/size]]
+标准装饰块3。
+[[/div]]
+
++ 特性
+
+++ 布局
+
+[[module CSS]]
+
+@media (max-width: 768px) {
+.mobileno {display: none;}
+}
+
+[[/module]]
+
+{{#page-content}}被设置成类似流明冲击的纵轨道，可以使用下列class的div制作整个页面宽度范围的布局：
+
+[[div class="fullwidth-start end-extrude-start mobileno"]]
+= **{{fullwidth}}**
+= 全宽
+[[/div]]
+[[div class="extrude-start end-content-start mobileno"]]
+= **{{extrude}}**
+= 突出
+[[/div]]
+[[div class="content mobileno"]]
+= **{{content}}**
+= 正文
+[[/div]]
+[[div class="start-content-end extrude-end mobileno"]]
+= **{{extrude}}**
+= 突出
+[[/div]]
+[[div class="start-extrude-end fullwidth-end mobileno"]]
+= **{{fullwidth}}**
+= 全宽
+[[/div]]
+
+[[div class="fullwidth-start end-extrude-start mobileno" style="background: #eef7fe;padding: 0.6rem 0rem;font-size: 80%;"]]
+= {{@@[[div class="fullwidth-start end-extrude-start"]]@@}}
+[[/div]]
+[[div class="extrude-start end-content-start mobileno" style="background: #dff1ff;padding: 0.6rem 0rem;font-size: 80%;"]]
+= {{@@[[div class="extrude-start end-content-start"]]@@}}
+[[/div]]
+[[div class="content" style="background: #cee9ff;padding: 0.6rem 0rem;"]]
+= {{@@[[div class="content"]]@@}}
+[[/div]]
+[[div class="start-content-end extrude-end mobileno" style="background: #dff1ff;padding: 0.6rem 0rem;font-size: 80%;"]]
+= {{@@[[div class="start-content-end extrude-end"]]@@}}
+[[/div]]
+[[div class="start-extrude-end fullwidth-end mobileno" style="background: #eef7fe;padding: 0.6rem 0rem;font-size: 80%;"]]
+= {{@@[[div class="start-extrude-end fullwidth-end"]]@@}}
+[[/div]]
+
+
+[[div class="extrude-start" style="background: #fff1ff;padding: 0.6rem 0rem;"]]
+= {{@@[[div class="extrude-start"]]@@}}
+[[/div]]
+[[div class="extrude-end" style="background: #fff1ff;padding: 0.6rem 0rem;"]]
+= {{@@[[div class="extrude-end"]]@@}}
+[[/div]]
+[[div class="extrude" style="background: #ffe6ff;padding: 0.6rem 0rem;"]]
+= {{@@[[div class="extrude"]]@@}}
+[[/div]]
+[[div class="fullwidth-start" style="background: #eaeaff;padding: 0.6rem 0rem;"]]
+= {{@@[[div class="fullwidth-start"]]@@}}
+[[/div]]
+[[div class="fullwidth-end" style="background: #eaeaff;padding: 0.6rem 0rem;"]]
+= {{@@[[div class="fullwidth-end"]]@@}}
+[[/div]]
+[[div class="extrude-start fullwidth-end" style="background: #ffe5e5;padding: 0.6rem 0rem;"]]
+= {{@@[[div class="extrude-start fullwidth-end"]]@@}}
+[[/div]]
+[[div class="fullwidth" style="background: #ddddff;padding: 0.6rem 0rem;"]]
+= {{@@[[div class="fullwidth"]]@@}}
+[[/div]]
+
+这使得插入全宽元素更方便，但亦导致过氧化物无法正确显示裸文本布局（例如，使用换行而非空行可能会让Wikidot错误解析为裸文本而非块级元素{{<p>}}），CSS float也会失效。为取得最大兼容性，可将所有内容包裹在一个{{[[div]]}}内，或使用{{[[include :oxygennine:peroxide:layout-page-content-block]]}}取消这一特性。
+
+++ 二级导航栏
+
+[[div class="modal"]]
+[[image https://cdn.mer.run/i/2026/03/08/69ad62d6d5fe4.png]]
+[[image https://cdn.mer.run/i/2026/03/08/69ad62d7a4c3b.png]]
+
+过氧化物支持在顶栏插入二级导航栏，使用如下格式即可：
+
+[[code]]
+* 标签1
+ * 二级列表项1
+ * 二级列表项2
+ * ……
+* 标签2
+* ……
+[[/code]]
+
+[[/div]]
+
+++ 隐藏“Saving Pages”
+
+在保存页面时，底部会出现一个“隐藏Saving Pages”的按钮。若遇到页面无响应，可点击此按钮，隐藏背景遮罩，将代码复制到安全的地方并刷新页面，重新编辑。
+
+++ 本地化
+
+部分Wikidot未在Translate Wikidot列出的文本通过CSS伪元素进行了翻译。
+
++ 打印
+
+由于过氧化物使用{{ThemePreviewer}}以提升加载速度，你可能会遇到使用Wikidot自带的打印预览时无法显示版式的问题。可以通过引用参数{{printFriendly}}解决此问题：
+
+[[div class="code"]]
+@@[[include :scp-wiki-cn:theme:peroxide @@
+|##ff8f8f|printFriendly##@@=*@@
+]]
+[[/div]]
+
++ 声明
+
+过氧化物的代码现在完全托管在Github上。原有的通过Module CSS方式引用版式的页面出于兼容性考虑暂时保留，但将在未来停止使用。
+
+此版式内置了[[*User Agent FS]]的[*https://fendsfox.wikidot.com/component:betterbetterfootnote 优化脚注组件]，并修改了部分代码。
+
+图标来自[*https://icons.bootcss.com/ Bootstrap图标库]和[*https://www.svgrepo.com/ SVG Repo]。
+
+正文字体为更纱黑体，等宽字体为JetBrains Mono，衬线字体为思源宋体。
+
+此版式的全部CSS代码采用的授权方式为[*https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans CC-BY-SA 4.0 International]。
+
+源代码参见[*https://github.com/OxygenNine/Peroxide GitHub仓库]。
+
+[[/iftags]]

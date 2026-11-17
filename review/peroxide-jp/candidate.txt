@@ -1,0 +1,504 @@
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css
+]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=2
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aperoxide-jp/1
+]]
+
+[[module CSS]]
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/fragment%3Aperoxide-jp-base-css/1");
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/fragment%3Aperoxide-jp-elements-css/1");
+[[/module]]
+
+[[module CSS]]
+
+/* hot fix */
+
+.wd-editor-toolbar-panel ul li a:hover {
+    background-image: none;
+}
+
+[[/module]]
+
+[[div id="u-peroxide-savingpages-blocker"]]
+[[collapsible show="Saving Pagesを隠す" hide="Saving Pagesを表示"]]
+[[/collapsible]]
+[[/div]]
+
+[!-- この版式のCSS本体（原語版 peroxide.css 相当）は Wikidot のページソース上限 200,000 文字に合わせて fragment:peroxide-jp-base-css / fragment:peroxide-jp-elements-css へ2分割し、このページから [[module css]] で @import しています。ライセンスは theme:peroxide-jp のクレジットを参照。 --]
+
+[!-- インターウィキ（他言語版ナビゲーション）のCSS。local--code/theme%3Aperoxide-jp/1 としてこのページに保持します --]
+[[code type="css"]]
+/*
+ * Interwiki.css
+ * 他言語版モジュールのカスタムスタイル
+ */
+
+/* Sidebar */
+
+:root {
+    --p-gray-0: #ffffff;
+    --p-gray-1: #fafafa;
+    --p-gray-2: #e8e8e8;
+    --p-gray-3: #707070;
+    --p-gray-4: #414141;
+    --p-gray-5: #1e1e1e;
+    --p-gray-6: #171717;
+    --p-gray-7: #000000;
+
+    --p-theme-color-light: #3b69e4;
+    --p-theme-color: #3d5cab;
+    --p-theme-color-dark: #354f96;
+
+    --p-sideblock-margin-bottom: 1.5rem;
+    --p-sideblock-padding: 0.5rem 1rem;
+    --p-sideblock-background-color: var(--p-gray-0);
+    --p-sideblock-border: 0.1rem solid var(--p-gray-2);
+    --p-sideblock-border-radius: var(--p-border-radius-medium);
+    --p-sideblock-border-bottom: 0.1rem solid var(--p-gray-2);
+    --p-sideblock-text-color: var(--p-gray-5);
+    --p-sideblock-link-color: var(--p-gray-4);
+    --p-sideblock-link-hover-color: var(--p-theme-color);
+
+    --p-border-radius-medium: 0.5rem;
+}
+
+#interwiki body {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+#interwiki div.side-block {
+    margin-bottom: var(--p-sideblock-margin-bottom);
+    padding: var(--p-sideblock-padding);
+    background-color: var(--p-sideblock-background-color) !important;
+    border: var(--p-sideblock-border);
+    border-radius: var(--p-sideblock-border-radius);
+    text-align: left;
+    direction: rtl;
+    font-size: 80%;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+#interwiki .side-block .heading {
+    margin-bottom: 0.25rem;
+    padding-bottom: 0.1rem;
+    border-bottom: var(--p-sideblock-border-bottom);
+    display: block;
+    flex-basis: 100%;
+}
+
+#interwiki .side-block .heading p {
+    margin: 0;
+    font-size: var(--p-font-size-large);
+    font-weight: 700;
+    color: var(--p-sideblock-link-color);
+    text-align: left;
+}
+
+#interwiki .side-block .menu-item {
+    display: inline-block;
+    padding-right: 0.55rem;
+    line-height: 1rem;
+}
+
+#interwiki .side-block .menu-item img.image {
+    display: none;
+}
+
+#interwiki .side-block .menu-item a {
+    color: var(--p-sideblock-link-color);
+    text-decoration: none;
+    transition: color var(--p-animation-duration-short);
+    flex-shrink: 0;
+}
+
+#interwiki .side-block .menu-item a:hover {
+    color: var(--p-theme-color);
+    text-decoration: underline;
+    text-decoration-thickness: 0.1rem;
+    text-underline-offset: 0.2rem;
+}
+
+#interwiki .side-block .menu-item a + a {
+    margin: 0rem 0.25rem;
+}
+[[/code]]
+
+[[iftags +テーマ]]
+
+[[image https://cdn.mer.run/i/2026/03/06/69a9c5f12e120.png style="display: block; width: min(90%, 18rem); margin: 1rem auto;"]]
+
+= **v1.0.1**
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** ペルオキシド テーマ版式
+**翻訳責任者:** AI
+**翻訳年:** 2026
+**原題:** 过氧化物 基础版式
+**著作権者:** [[*user OxygenNine]]
+**作成年:** 2026
+**初訳時参照リビジョン:** 27
+**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:peroxide 过氧化物 基础版式]
+
+この版式には [[*User Agent FS]] による[*https://fendsfox.wikidot.com/component:betterbetterfootnote 改良版脚注コンポーネント]が組み込まれ、一部のコードが変更されています。アイコンは[*https://icons.bootcss.com/ Bootstrapアイコンライブラリ]および[*https://www.svgrepo.com/ SVG Repo]に由来します。
+
+フォント: Noto Sans JP、Noto Serif JP、JetBrains Mono、M PLUS 1 Code（いずれもGoogle Fonts、SIL Open Font License）。原語版が使用していた Sarasa Gothic SC / zsft-hk / Noto Serif CJK は例外ホストで読み込めないため、Google Fonts の同等書体に置き換えています。
+
+この版式の全CSSコードは[*https://creativecommons.org/licenses/by-sa/4.0/deed.ja CC-BY-SA 4.0 International]でライセンスされています。ソースコードは[*https://github.com/OxygenNine/Peroxide GitHubリポジトリ]を参照してください。
+[[include :scp-jp:credit:end-preview]]
+
+[[span class="ruby"]]ペルオキシド[[span class="rt"]]Peroxide[[/span]][[/span]]ベーステーマへようこそ。これは先行テーマに依存しない美観重視のテーマです。前身は[[[https://scp-wiki-cn.wikidot.com/theme:mox|モノキシド版式]]]で、[[*user OxygenNine]]によって開発されました。
+
+任意のページの先頭に次のコードを挿入すると、このテーマを有効化できます。
+
+= [[size 1.25em]]{{@@[[include :scp-jp:@@**##theme|theme:peroxide-jp##**@@]]@@}}[[/size]]
+
+@@@@
+@@@@
+
++ プリセット
+
+推奨される読み込み順は、まずペルオキシド本体（パラメータ調整可）、次にレイアウト案、最後に配色プリセットです。配色プリセットは先に指定した設定を上書きします。
+
+++ レイアウト案
+
+[[module CSS]]
+img.img-showcase {
+    width: 100%;
+    border-radius: 0.5rem;
+    border: solid 0.1rem var(--p-gray-2);
+    box-shadow: var(--p-shadow-1);
+    margin: 2rem auto;
+}
+[[/module]]
+
+[[tabview]]
+[[tab 読み込み手順]]
+
+ペルオキシドテーマを読み込んだ後に、レイアウト案を読み込んでください。例を示します。
+
+[[div class="code"]]
+@@[[include :scp-jp:@@**##var(--p-theme-color-light)|theme:peroxide-jp##**]]
+@@[[include@@ :oxygennine:**##var(--p-theme-color-light)|peroxide:layout-classic-header##**]]
+[[/div]]
+
+「ページ内容レイアウト」を除き、複数のレイアウト案を併用することはできません。
+
+[[/tab]]
+
+[[tab クラシックレイアウト]]
+[[image https://cdn.mer.run/i/2026/03/13/69b431d699ae9.png class="img-showcase"]]
+= {{[[include :oxygennine:peroxide:layout-classic-header]]}}
+[[/tab]]
+
+[[tab クラシックレイアウト ヘッダー中央]]
+[[image https://cdn.mer.run/i/2026/03/13/69b4325a471f3.png class="img-showcase"]]
+= {{[[include :oxygennine:peroxide:layout-classic-header-center]]}}
+[[/tab]]
+
+[[tab クラシックレイアウト サイドバー切替]]
+[[image https://cdn.mer.run/i/2026/03/13/69b434223e994.png class="img-showcase"]]
+= {{[[include :oxygennine:peroxide:layout-classic-header-no-sidebar]]}}
+[[/tab]]
+
+[[tab ヘッダー中央]]
+[[image https://cdn.mer.run/i/2026/03/13/69b432803c595.png class="img-showcase"]]
+= {{[[include :oxygennine:peroxide:layout-header-center]]}}
+[[/tab]]
+
+[[tab サイドバー常時表示]]
+[[image https://cdn.mer.run/i/2026/03/13/69b4333edc5e8.png class="img-showcase"]]
+= {{[[include :oxygennine:peroxide:layout-sidebar-nearby]]}}
+[[/tab]]
+
+[[tab ヘッダー内サイドバー切替]]
+[[image https://cdn.mer.run/i/2026/03/13/69b433011c0b3.png class="img-showcase"]]
+= {{[[include :oxygennine:peroxide:layout-header-sidebar]]}}
+[[/tab]]
+
+[[tab ページ内容レイアウト]]
+
+= **{{#page-content}}を12列グリッドレイアウトにする**
+= {{[[include :oxygennine:peroxide:layout-page-content-grid]]}}
+
+= **{{#page-content}}を{{display: block}}にする**
+= {{[[include :oxygennine:peroxide:layout-page-content-block]]}}
+
+[[/tab]]
+
+
+[[/tabview]]
+
+++ 配色案
+
+[[tabview]]
+[[tab 読み込み手順]]
+
+ペルオキシドテーマを読み込んだ後に、配色案を読み込んでください。例を示します。
+
+[[div class="code"]]
+@@[[include :scp-jp:@@**##var(--p-theme-color-light)|theme:peroxide-jp##**]]
+@@[[include@@ :oxygennine:**##var(--p-theme-color-light)|peroxide:palette-dark##**]]
+[[/div]]
+
+本来は黒いロゴを白に変えたい場合は、読み込みパラメータ{{logoInvert=*}}を有効にしてください。例を示します。
+
+[[div class="code"]]
+@@[[include :scp-jp:@@**##var(--p-theme-color-light)|theme:peroxide-jp##** **##ff8f8f|logoInvert=*##**]]
+@@[[include@@ :oxygennine:**##var(--p-theme-color-light)|peroxide:palette-dark##**]]
+[[/div]]
+
+[[/tab]]
+
+[[tab ダーク]]
+[[image https://cdn.mer.run/i/2026/03/14/69b445a708ea2.png class="img-showcase"]]
+= {{[[include :oxygennine:peroxide:palette-dark]]}}
+[[/tab]]
+
+[[tab 高コントラスト]]
+[[image https://cdn.mer.run/i/2026/03/14/69b445c0b399a.png class="img-showcase"]]
+= {{[[include :oxygennine:peroxide:palette-high-contrast]]}}
+[[/tab]]
+
+[[tab 鉛封]]
+[[image https://cdn.mer.run/i/2026/03/14/69b5191700a4b.png class="img-showcase"]]
+= {{[[include :oxygennine:peroxide:palette-red]]}}
+[[/tab]]
+
+[[tab 水華]]
+[[image https://cdn.mer.run/i/2026/03/14/69b528dea6517.png class="img-showcase"]]
+= {{[[include :oxygennine:peroxide:palette-green]]}}
+[[/tab]]
+
+[[tab 極境]]
+[[image https://cdn.mer.run/i/2026/03/14/69b533819eb5d.png class="img-showcase"]]
+= {{[[include :oxygennine:peroxide:palette-blue]]}}
+[[/tab]]
+
+[[tab 覆巣]]
+[[image https://cdn.mer.run/i/2026/03/14/69b5372d6b67f.png class="img-showcase"]]
+= {{[[include :oxygennine:peroxide:palette-black]]}}
+[[/tab]]
+
+[[tab ミント]]
+[[image https://cdn.mer.run/i/2026/03/14/69b53c6993d2f.png class="img-showcase"]]
+= {{[[include :oxygennine:peroxide:palette-candy]]}}
+[[/tab]]
+
+[[tab スキャン]]
+[[image https://cdn.mer.run/i/2026/03/14/69b541f7dcb82.png class="img-showcase"]]
+= {{[[include :oxygennine:peroxide:palette-lime]]}}
+[[/tab]]
+
+[[/tabview]]
+
++ カスタマイズ
+
+読み込みパラメータを使って、ペルオキシドを簡単にカスタマイズできます。下の読み込みテンプレートをコピーしてください。
+
+**テンプレートを使うときはパラメータを削除しないでください。一部だけを変更したい場合も、残りの項目はそのまま残してください。**
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:peroxide-jp@@
+|##ff8f8f|custom##=*
+[[span style="user-select: none; opacity: 0.4"]]↑ カスタムパラメータを有効化します。[[/span]]
+|##ff8f8f|title##='SCP財団'
+[[span style="user-select: none; opacity: 0.4"]]↑ ヘッダーのタイトルです。左右を半角引用符で囲みます。[[/span]]
+|##ff8f8f|slogan##='確保・収容・保護'
+[[span style="user-select: none; opacity: 0.4"]]↑ ヘッダーの副題です。左右を半角引用符で囲みます。[[/span]]
+|##ff8f8f|logo##={{url('https://oxygennine.github.io/Peroxide/Images/scp-logo-line-black.svg')}}
+[[span style="user-select: none; opacity: 0.4"]]↑ ヘッダーのロゴです。CSSのurl()形式で読み込みます。[[/span]]
+|##ff8f8f|colorLight=###3b69e4
+[[span style="user-select: none; opacity: 0.4"]]↑ 明るめのテーマカラーです。[[/span]]
+|##ff8f8f|colorNormal=###3d5cab
+[[span style="user-select: none; opacity: 0.4"]]↑ テーマカラーです。[[/span]]
+|##ff8f8f|colorDark=###354f96
+[[span style="user-select: none; opacity: 0.4"]]↑ 暗めのテーマカラーです。[[/span]]
+|##ff8f8f|logoInvert=##
+[[span style="user-select: none; opacity: 0.4"]]↑ ロゴの白黒を反転するかどうかです。「*」を入れると有効になります。[[/span]]
+]]
+[[/div]]
+
++ 組版要素
+
+++ 引用ブロックとdiv要素
+
+[[div class="blockquote"]]
+= {{@@[[@@div class="blockquote"]]}}
+= [[size small]]または {{@@[[@@div class="p-bq"]]}}[[/size]]
+標準の引用ブロックです。
+> 標準の引用ブロックの入れ子です。
+[[/div]]
+
+[[div class="blockquote-clear"]]
+= {{@@[[@@div class="blockquote-clear"]]}}
+= [[size small]]または {{@@[[@@div class="p-bqc"]]}}[[/size]]
+枠線のない引用ブロックです。
+[[/div]]
+
+[[div class="blockquote shadow"]]
+= {{@@[[@@div class="blockquote shadow"]]}}
+= [[size small]]または {{@@[[@@div class="p-bq shadow"]]}}[[/size]]
+影付きの引用ブロックです。
+任意のdivのclassに{{shadow}}を加えると、自動的に影が付きます。
+[[/div]]
+
+[[div class="modal"]]
+= {{@@[[@@div class="modal"]]}}
+= [[size small]]または {{@@[[@@div class="p-md"]]}}[[/size]]
+標準装飾ブロック1です。
+[[/div]]
+
+[[div class="notation"]]
+= {{@@[[@@div class="notation"]]}}
+= [[size small]]または {{@@[[@@div class="p-no"]]}}[[/size]]
+標準装飾ブロック2です。
+[[/div]]
+
+[[div class="underline"]]
+= {{@@[[@@div class="underline"]]}}
+= [[size small]]または {{@@[[@@div class="p-ud"]]}}[[/size]]
+下側に線が付く引用ブロックです。
+[[/div]]
+
+[[div class="doubleline smaller"]]
+= {{@@[[@@div class="doubleline"]]}}
+= [[size small]]または {{@@[[@@div class="p-dl smaller"]]}}[[/size]]
+{{doubleline}}は上下に線を引きます。
+{{smaller}}はdivの幅を短くします。どのdivにも有効です。
+[[/div]]
+
+[[div class="doubleline dark"]]
+= {{@@[[@@div class="doubleline dark"]]}}
+= [[size small]]または {{@@[[@@div class="p-db dark"]]}}[[/size]]
+{{dark}}はdivを暗色にします。どのdivにも有効です。
+[[/div]]
+
+[[div class="card"]]
+= {{@@[[@@div class="card"]]}}
+= [[size small]]または {{@@[[@@div class="p-ca"]]}}[[/size]]
+標準装飾ブロック3です。
+[[/div]]
+
++ 機能
+
+++ レイアウト
+
+[[module CSS]]
+
+@media (max-width: 768px) {
+.mobileno {display: none;}
+}
+
+[[/module]]
+
+{{#page-content}}はLumen Shockに似た縦方向のトラックとして設定されます。次のclassを持つdivを使うと、ページ幅全体を使うレイアウトを作れます。
+
+[[div class="fullwidth-start end-extrude-start mobileno"]]
+= **{{fullwidth}}**
+= 全幅
+[[/div]]
+[[div class="extrude-start end-content-start mobileno"]]
+= **{{extrude}}**
+= はみ出し
+[[/div]]
+[[div class="content mobileno"]]
+= **{{content}}**
+= 本文
+[[/div]]
+[[div class="start-content-end extrude-end mobileno"]]
+= **{{extrude}}**
+= はみ出し
+[[/div]]
+[[div class="start-extrude-end fullwidth-end mobileno"]]
+= **{{fullwidth}}**
+= 全幅
+[[/div]]
+
+[[div class="fullwidth-start end-extrude-start mobileno" style="background: #eef7fe;padding: 0.6rem 0rem;font-size: 80%;"]]
+= {{@@[[div class="fullwidth-start end-extrude-start"]]@@}}
+[[/div]]
+[[div class="extrude-start end-content-start mobileno" style="background: #dff1ff;padding: 0.6rem 0rem;font-size: 80%;"]]
+= {{@@[[div class="extrude-start end-content-start"]]@@}}
+[[/div]]
+[[div class="content" style="background: #cee9ff;padding: 0.6rem 0rem;"]]
+= {{@@[[div class="content"]]@@}}
+[[/div]]
+[[div class="start-content-end extrude-end mobileno" style="background: #dff1ff;padding: 0.6rem 0rem;font-size: 80%;"]]
+= {{@@[[div class="start-content-end extrude-end"]]@@}}
+[[/div]]
+[[div class="start-extrude-end fullwidth-end mobileno" style="background: #eef7fe;padding: 0.6rem 0rem;font-size: 80%;"]]
+= {{@@[[div class="start-extrude-end fullwidth-end"]]@@}}
+[[/div]]
+
+
+[[div class="extrude-start" style="background: #fff1ff;padding: 0.6rem 0rem;"]]
+= {{@@[[div class="extrude-start"]]@@}}
+[[/div]]
+[[div class="extrude-end" style="background: #fff1ff;padding: 0.6rem 0rem;"]]
+= {{@@[[div class="extrude-end"]]@@}}
+[[/div]]
+[[div class="extrude" style="background: #ffe6ff;padding: 0.6rem 0rem;"]]
+= {{@@[[div class="extrude"]]@@}}
+[[/div]]
+[[div class="fullwidth-start" style="background: #eaeaff;padding: 0.6rem 0rem;"]]
+= {{@@[[div class="fullwidth-start"]]@@}}
+[[/div]]
+[[div class="fullwidth-end" style="background: #eaeaff;padding: 0.6rem 0rem;"]]
+= {{@@[[div class="fullwidth-end"]]@@}}
+[[/div]]
+[[div class="extrude-start fullwidth-end" style="background: #ffe5e5;padding: 0.6rem 0rem;"]]
+= {{@@[[div class="extrude-start fullwidth-end"]]@@}}
+[[/div]]
+[[div class="fullwidth" style="background: #ddddff;padding: 0.6rem 0rem;"]]
+= {{@@[[div class="fullwidth"]]@@}}
+[[/div]]
+
+これにより全幅要素の挿入が容易になりますが、ペルオキシドでは裸テキストのレイアウトが正しく表示されません（例：空行ではなく改行を使うと、Wikidotに裸テキストとして誤って解釈され、ブロック要素の{{<p>}}になりません）。CSSのfloatも効きません。最大限の互換性が必要な場合は、全ての内容を{{[[div]]}}で囲むか、{{[[include :oxygennine:peroxide:layout-page-content-block]]}}でこの特性を無効化してください。
+
+++ 第二階層ナビゲーション
+
+[[div class="modal"]]
+[[image https://cdn.mer.run/i/2026/03/08/69ad62d6d5fe4.png]]
+[[image https://cdn.mer.run/i/2026/03/08/69ad62d7a4c3b.png]]
+
+ペルオキシドでは、トップバーに第二階層ナビゲーションを挿入できます。次の形式で記述してください。
+
+[[code]]
+* タブ1
+ * 第二階層項目1
+ * 第二階層項目2
+ * ……
+* タブ2
+* ……
+[[/code]]
+
+[[/div]]
+
+++ 「Saving Pages」を隠す
+
+ページ保存時、下部に「Saving Pages」を隠すボタンが表示されます。ページが応答しなくなった場合は、このボタンで背景の覆いを隠し、コードを安全な場所へ退避してからページを再読み込みし、編集をやり直してください。
+
+++ ローカライズ
+
+Translate Wikidotに登録されていない一部のWikidot文言は、CSS疑似要素で翻訳されています。
+
++ 印刷
+
+この版式はModule CSSで直接読み込まれるため、Wikidot標準の印刷プレビューでも版式が表示されます。{{printFriendly}}パラメータによる切り替えは、この版式では不要です。
+
++ 声明
+
+ペルオキシドのコードは現在GitHubで完全にホストされています。従来のModule CSS方式で版式を読み込むページは互換性のため当面残されますが、将来的に使用停止となります。
+
+この版式の全体の性格、前身版式および開発者については、上部のクレジットを参照してください。
+
+訳注: 原語版の版式ページが使用していた{{ThemePreviewer}}モジュールおよび{{printFriendly}}パラメータ、wdfiles.com経由のフォールバックは、JP版では使用しません（例外ホストの制約と、JPではページ保存時にModule CSSが常に有効になるため、どちらも不要になりました）。
+
+[[/iftags]]
