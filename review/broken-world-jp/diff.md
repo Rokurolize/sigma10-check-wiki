@@ -101,7 +101,7 @@ adjudicated explanation.
 | 63 | 3 | 456–456 | 314–314 | +1/−1 | translation | > スマートフォン用の大きいタイトル ↦ |
 | 64 | 3 | 458–458 | 316–316 | +1/−1 | translation | > スマートフォン用のサブタイトル ↦ |
 | 65 | 3 | 460–464 | 318–318 | +1/−5 | translation | > 終わり ↦ |
-| 66 | 3 | 467–467 | 321–321 | +1/−1 | mechanical | > @@[[include :scp-jp:theme:broken-world@@ |
+| 66 | 3 | 467–467 | 321–321 | +1/−1 | mechanical | > @@[[include :scp-jp:theme:broken-world-jp@@ |
 | 67 | 3 | 471–471 | 325–325 | +1/−1 | translation | > \|header-title='半角の引用符で囲んでください' |
 | 68 | 3 | 478–481 | — | +0/−4 | residual | > |
 | 69 | 4 | 491–491 | 341–341 | +1/−1 | translation | > これは引用ブロックです。「> 」を文頭に付けて作成します。 |
@@ -468,7 +468,7 @@ adjudicated explanation.
 +[[div class="code"]]
 +@@[[include :scp-jp:theme:black-highlighter-theme]]@@
 +@@@@
-+@@[[include :scp-jp:theme:broken-world]]@@
++@@[[include :scp-jp:theme:broken-world-jp]]@@
 +[[/div]]
 +
 +**注意点：**
@@ -748,7 +748,7 @@ adjudicated explanation.
 +
 +[[div class="blockquote no-sel"]]
 +  @@     @@
-+@@[[include :scp-jp:theme:broken-world@@ {{ **include文の冒頭。完全な形でページの先頭に貼り付けてください** }}
++@@[[include :scp-jp:theme:broken-world-jp@@ {{ **include文の冒頭。完全な形でページの先頭に貼り付けてください** }}
 +{{以下のいずれか一つを選んでください：}}
 +|my-logo=true {{カスタムロゴを有効化}}
 +|set-logo=1~6 {{ロゴ番号（上記参照）}}
@@ -761,7 +761,7 @@ adjudicated explanation.
 +
 +[[div class="blockquote"]]
 +
-+@@[[include :scp-jp:theme:broken-world@@
++@@[[include :scp-jp:theme:broken-world-jp@@
 +|my-golden-header=true
 +]]
 +
@@ -860,7 +860,7 @@ adjudicated explanation.
  > 
  
 -> @@[[include :scp-wiki-cn:theme:broken-world@@
-+> @@[[include :scp-jp:theme:broken-world@@
++> @@[[include :scp-jp:theme:broken-world-jp@@
  > 
  > |my-title=true
  > 

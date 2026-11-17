@@ -8,16 +8,16 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 1496 |
-| candidate.txt | 1509 |
-| Added | +168 |
-| Review-stage comments | 0 of the +168 added lines |
+| candidate.txt | 1510 |
+| Added | +169 |
+| Review-stage comments | 0 of the +169 added lines |
 | Removed | -160 |
 | Hunks | 19 |
 
 ```diff
 --- original.txt
 +++ candidate.txt
-@@ -1,50 +1,51 @@
+@@ -1,50 +1,52 @@
 -[[iftags +版式]]
 +[[iftags +テーマ]]
 +
@@ -52,6 +52,7 @@ with `python3 review/build_review.py`; verify with
 +**初訳時参照リビジョン:** 10
 +**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:asagao 《朝颜文学报特刊》：实验性文章布局及其使用方法]
 +[[include :scp-jp:credit:end-preview]]
++**[[*user maki hisane]] が作成した図書館典籍『朝顔文学報』に基づきます。**
 +
 +『朝顔文学報』は創刊以来、各方面から広く好評を得てきました。『朝顔文学報』電子版は2020年12月に正式公開されましたが、現在に至るまで初期の電子書籍閲覧画面に見られた古いデザイン様式を引き継いでいました。筆者は『朝顔文学報』編集部に連絡し、新しいページデザインを共同で完成させました。本稿では、このデザインとその使用方法を簡単に紹介します。
  
@@ -102,7 +103,7 @@ with `python3 review/build_review.py`; verify with
  [[/collapsible]]
  
  @@@@
-@@ -59,95 +60,95 @@
+@@ -59,95 +61,95 @@
  ~~~~
  
  [[tabview]]
@@ -251,7 +252,7 @@ with `python3 review/build_review.py`; verify with
  [[/div]]
  
  ----
-@@ -155,15 +156,15 @@
+@@ -155,15 +157,15 @@
  [[div class="column-3"]]
  {{@@[[div class="column-3"]]@@}}
  
@@ -276,7 +277,7 @@ with `python3 review/build_review.py`; verify with
  [[/div]]
  
  ----
-@@ -171,15 +172,15 @@
+@@ -171,15 +173,15 @@
  [[div class="column-4"]]
  {{@@[[div class="column-4"]]@@}}
  
@@ -301,7 +302,7 @@ with `python3 review/build_review.py`; verify with
  [[/div]]
  
  ----
-@@ -187,24 +188,24 @@
+@@ -187,24 +189,24 @@
  [[div class="column-2 screen"]]
  {{@@[[div class="column-2 screen"]]@@}}
  
@@ -338,7 +339,7 @@ with `python3 review/build_review.py`; verify with
  
  @@@@
  @@@@
-@@ -217,86 +218,88 @@
+@@ -217,86 +219,88 @@
  
  + 使用方法
  
@@ -347,7 +348,7 @@ with `python3 review/build_review.py`; verify with
  
  [[div class="code"]]
 -@@[[include :scp-wiki-cn:theme:asagao]]@@
-+@@[[include :scp-jp:theme:asagao]]@@
++@@[[include :scp-jp:theme:asagao-jp]]@@
  
  @@[[div class="asagao-title"]]@@
 -@@[[image http://ah-sandbox.wikidot.com/local--files/theme:yasuharasuzu/asagao-title.svg]]@@
@@ -387,7 +388,7 @@ with `python3 review/build_review.py`; verify with
  
  [[div class="code"]]
 -@@[[include :scp-wiki-cn:theme:asagao]]@@
-+@@[[include :scp-jp:theme:asagao]]@@
++@@[[include :scp-jp:theme:asagao-jp]]@@
  
  @@[[div class="meta-title"]]@@
 -页面标题
@@ -456,7 +457,7 @@ with `python3 review/build_review.py`; verify with
  
  :root {
      --header-height: 4rem;
-@@ -311,7 +314,7 @@
+@@ -311,7 +315,7 @@
  
  body {
      font-size: 0.85rem;
@@ -465,7 +466,7 @@ with `python3 review/build_review.py`; verify with
      background-color: #000;
  }
  
-@@ -408,7 +411,7 @@
+@@ -408,7 +412,7 @@
      max-height: calc(0.375 * var(--header-height));
      line-height: calc(0.375 * var(--header-height));
      font-size: 1rem;
@@ -474,7 +475,7 @@ with `python3 review/build_review.py`; verify with
      width: calc(3.25 * var(--header-height));
      text-align: center;
      content: "做风的君王";
-@@ -654,7 +657,7 @@
+@@ -654,7 +658,7 @@
      width: var(--header-height);
      height: var(--header-height);
      font-size: calc(0.1875 * var(--header-height));
@@ -483,7 +484,7 @@ with `python3 review/build_review.py`; verify with
      font-weight: 700;
      text-shadow: 0.1rem 0.1rem 0 rgba(172, 127, 252, 0.4);
      transition: ease 0.1s;
-@@ -799,7 +802,7 @@
+@@ -799,7 +803,7 @@
      width: calc(1.2 * var(--header-height));
      max-width: 50%;
      height: calc(0.375 * var(--header-height));
@@ -492,7 +493,7 @@ with `python3 review/build_review.py`; verify with
      background-repeat: no-repeat;
      background-position: center center;
      background-size: calc(1.2 * var(--header-height)) auto;
-@@ -819,7 +822,7 @@
+@@ -819,7 +823,7 @@
      color: rgb(159, 207, 138);
      text-align: center;
      border-bottom: solid 1px rgb(159, 207, 138);
@@ -501,7 +502,7 @@ with `python3 review/build_review.py`; verify with
      font-weight: 900;
  }
  
-@@ -877,7 +880,7 @@
+@@ -877,7 +881,7 @@
  @media (max-width: 1039px) and (min-width: 768px) {
      div#login-status {
          max-width: calc(0.25 * var(--header-height));
@@ -510,7 +511,7 @@ with `python3 review/build_review.py`; verify with
          background-size: auto 100%;
          background-position: left center;
          background-repeat: no-repeat;
-@@ -886,7 +889,7 @@
+@@ -886,7 +890,7 @@
  
      div#search-top-box {
          max-width: calc(0.4 * var(--header-height));
@@ -519,7 +520,7 @@ with `python3 review/build_review.py`; verify with
          background-size: auto 100%;
          background-position: left center;
          background-repeat: no-repeat;
-@@ -901,7 +904,7 @@
+@@ -901,7 +905,7 @@
  @media (max-width: 575px) {
      div#login-status {
          max-width: calc(0.25 * var(--header-height));
@@ -528,7 +529,7 @@ with `python3 review/build_review.py`; verify with
          background-size: auto 100%;
          background-position: left center;
          background-repeat: no-repeat;
-@@ -910,7 +913,7 @@
+@@ -910,7 +914,7 @@
  
      div#search-top-box {
          max-width: calc(0.4 * var(--header-height));
@@ -537,7 +538,7 @@ with `python3 review/build_review.py`; verify with
          background-size: auto 100%;
          background-position: left center;
          background-repeat: no-repeat;
-@@ -989,12 +992,12 @@
+@@ -989,12 +993,12 @@
      text-align: center;
      border-bottom: solid 1px rgb(159, 207, 138);
      text-shadow: 1px 1px 1px rgb(172, 127, 252);
@@ -552,7 +553,7 @@ with `python3 review/build_review.py`; verify with
      color: rgb(159, 207, 138);
  }
  
-@@ -1003,7 +1006,7 @@
+@@ -1003,7 +1007,7 @@
  h4,
  h5,
  h6 {
@@ -561,7 +562,7 @@ with `python3 review/build_review.py`; verify with
  }
  
  /* RATE MODULE */
-@@ -1349,7 +1352,7 @@
+@@ -1349,7 +1353,7 @@
      width: calc(1.2 * var(--header-height));
      max-width: 50%;
      height: calc(0.375 * var(--header-height));
@@ -570,7 +571,7 @@ with `python3 review/build_review.py`; verify with
      background-repeat: no-repeat;
      background-position: center center;
      background-size: calc(1.2 * var(--header-height)) auto;
-@@ -1491,6 +1494,16 @@
+@@ -1491,6 +1495,16 @@
      border-radius: 0.5rem;
      box-shadow: 0 0 0.5rem rgba(172, 127, 252, 0.3);
  }

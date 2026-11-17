@@ -79,8 +79,8 @@ Adjudication for this README (every block was read against the bytes): the two E
 
 ### 2. Includes and components
 
-- **What:** Four includes in the candidate, all `:scp-jp:`: the credit pair (candidate L3, L12, section 1), the escaped usage exhibit `{{@@[[include :scp-jp:theme:ethic-committee]]@@}}` (candidate L23; the original's exhibit at original L515 named `:scp-wiki-cn:theme:ethic-committee`), and the interwiki-style frame (candidate L705–708, section 3). The original's live includes were its `:scp-wiki-cn:` credit pair. No foreign include is kept on either side of the diff, and no component had to be ported alongside this theme.
-- **Why:** P1 (KB-15): an include must name the JP counterpart that actually exists on scp-jp; a kept `:scp-wiki-cn:` include is a foreign-include error, class (i). Ruling 4 is not engaged.
+- **What:** Four includes in the candidate, all `:scp-jp:`: the credit pair (candidate L3, L12, section 1), the escaped usage exhibit as built `{{@@[[include :scp-jp:theme:ethic-committee]]@@}}` (candidate L23; the original's exhibit at original L515 named `:scp-wiki-cn:theme:ethic-committee`) — a repoint that changed the branch prefix but kept the plain slug, so the exhibit named a page that does not exist on scp-jp; the usage-example population sweep has since completed the name on the same line to `{{@@[[include :scp-jp:theme:ethic-committee-jp]]@@}}` (SWEEP-USAGE.md; canonical commit b5cb724), and the interwiki-style frame (candidate L705–708, section 3). The original's live includes were its `:scp-wiki-cn:` credit pair. No foreign include is kept on either side of the diff, and no component had to be ported alongside this theme.
+- **Why:** P1 (KB-15): an include must name the JP counterpart that actually exists on scp-jp; a kept `:scp-wiki-cn:` include is a foreign-include error, class (i). The exhibit's repoint as built satisfied the branch half of that rule only — its plain slug named no JP page — and the sweep's completion to the posting name is what brings it under the rule. Ruling 4 is not engaged.
 - **Verify:** `grep -n '\[\[include' candidate.txt` — four includes, all `:scp-jp:`.
 - **Disposition:** Applied; no foreign include kept, no named exception needed.
 
@@ -159,6 +159,10 @@ Adjudication for this README (every block was read against the bytes): the two E
 ### The delivery restructure, stated plainly
 
 A reviewer opening the diff cold sees 423 changed lines in 8 blocks and could read B5/B6 as the port deleting the original's exhibit body. The bytes say otherwise, and this package's sections 3 and 8 carry the census that proves it: every content family in the original (CSS body, credit prose, usage prose, both snippet exhibits in both of their roles) is present in the candidate exactly once per role, relocated into the JP delivery form. The one genuinely new furniture is the candidate's source-code collapsible wrapper (candidate L200 and L698), whose closing line is the appendix's residue block B7; the original presented its CSS as a live module and needed no such wrapper.
+
+### The usage example's posting name
+
+The usage example at candidate L23 as built read `> {{@@[[include :scp-jp:theme:ethic-committee]]@@}}`: the porting wave's repoint changed the branch prefix from `:scp-wiki-cn:` but left the plain name, so the example named a page that does not exist on scp-jp (the campaign's settled rule for usage examples, AGENTS.md §6). The usage-example population sweep has since completed the reference to `:scp-jp:theme:ethic-committee-jp` on the same line (sweep report SWEEP-USAGE.md in the campaign record, R/review-scout/; canonical commit b5cb724), one of its 287 repairs across 157 candidates. This package documents the corrected candidate; its stamp reads STALE against the pre-repair verdict, by design.
 
 ## Appendix — residue blocks
 

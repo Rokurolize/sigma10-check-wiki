@@ -166,6 +166,12 @@ Adjudication for this README: the 49 heuristic blocks are prose translations, co
 
 The diff covers two files; this port's record is larger than most. (1) `pages/theme-decoration-sample-broken-world-jp.txt` is the decoration sample the render checks ran against (its credit-modal reading is section 11(2)); the original-side sample `pages/theme-decoration-sample-broken-world.txt` is the campaign's mirror-side fixture. (2) The companion fragment candidate **fragment:broken-world-jp** is part of this port's composition (sources kind K5b-4): its /2 delivery is what the candidate's my-logo module imports (section 3), and its own record belongs to the fragment's package, not this one. (3) The re-hosted gallery images (section 4) are attachments of the candidate page itself, not separate repo files. There are no inbound-link repairs in other candidates for this theme.
 
+## Per-theme record
+
+### The usage example's posting name
+
+The usage examples at candidate L96, L269, L282, and L321 as built read `:scp-jp:theme:broken-world` — the first as a complete escaped include, `@@[[include :scp-jp:theme:broken-world]]@@`, the other three in the unclosed `@@[[include :scp-jp:theme:broken-world@@` exhibit forms the variant modules' documentation uses: the porting wave's repoint changed the branch prefix but left the plain name, so each example named a page that does not exist on scp-jp (the campaign's settled rule for usage examples, AGENTS.md §6). The usage-example population sweep has since completed each reference to `:scp-jp:theme:broken-world-jp` at the same lines (sweep report SWEEP-USAGE.md in the campaign record, R/review-scout/; canonical commit b5cb724), four of its 287 repairs across 157 candidates. This package documents the corrected candidate; its stamp reads STALE against the pre-repair verdict, by design.
+
 ## Appendix — residue blocks
 
 All 18 residue blocks, adjudicated (class M treatment: one table, no per-block slots). Spans are 1-based lines in the two package files.

@@ -83,7 +83,7 @@ with `python3 review/build_review.py`; verify with
 -언어 전환 버튼은 탭뷰를 활용한 응용 기능으로, 사용법이 매우 복잡할 수 있습니다. [[user thd-glasses]]는 SCP 재단 영어 위키의 [[[https://scp-wiki.wikidot.com/secure-facilities-locations|재단 시설]]] 허브에서 해당 사용법을 참조하였으며 응용을 원하는 사람은 [[[chat-guide|대화방]]]에서 [[user thd-glasses]]에게 도움을 구할 수 있습니다.
 -
 -위키닷 문서의 제목을 숨기는 코드는 다음과 같습니다.
-+@@[[include :scp-jp:theme:chatscp]]@@
++@@[[include :scp-jp:theme:chatscp-jp]]@@
 +[[/div]]
 +[[/div]]
 +

@@ -9,10 +9,10 @@ with `python3 review/build_review.py`; verify with
 |---|---|
 | original.txt | 466 |
 | candidate.txt | 517 |
-| Added | +157 |
-| Review-stage comments | 0 of the +157 added lines |
-| Removed | -111 |
-| Hunks | 15 |
+| Added | +161 |
+| Review-stage comments | 0 of the +161 added lines |
+| Removed | -115 |
+| Hunks | 13 |
 
 ```diff
 --- original.txt
@@ -62,7 +62,7 @@ with `python3 review/build_review.py`; verify with
 +作品の冒頭に以下を追加すると適用できます:
 +
 +[[div class="code"]]
-+@@[[include :scp-jp:theme:anniversary]]@@
++@@[[include :scp-jp:theme:anniversary-jp]]@@
 +[[/div]]
 +
 +//訳注: 原語版は `custom`（配色プリセット番号）、`subtitle`（ヘッダー副題）、`h`/`s`/`b`（色相・彩度・明度の回転）のパラメータを受け取ります。JP候補はテーマページ単体で完結させるため、既定値（custom=1 相当の配色と「年末競演専用テーマ」の副題）に固定しています。//
@@ -114,21 +114,24 @@ with `python3 review/build_review.py`; verify with
  
  /*
  sigma-9 기반 n주년 연말경연 테마
-@@ -25,32 +84,30 @@
+@@ -25,32 +84,31 @@
       min-height:1700px;
       height: auto;
  }
 -
 + 
   h1, #page-title {
-      font-family: 'GowunBatang-Bold', Arial, sans-serif;
-      color: var(--color-ip);
- }
+-     font-family: 'GowunBatang-Bold', Arial, sans-serif;
+-     color: var(--color-ip);
+-}
 -
++     font-family: 'Gowun Batang', Arial, sans-serif;
++     color: var(--color-ip);
++}
 + 
   #page-title {
       border-color: var(--color-ip);
--}
+ }
 -
  /* links */
 -
@@ -153,7 +156,7 @@ with `python3 review/build_review.py`; verify with
   body {
       background-color: #FFF;
       color: #000;
-@@ -63,12 +120,12 @@
+@@ -63,12 +121,12 @@
       margin-bottom: 1.2em;
  }
  
@@ -168,7 +171,7 @@ with `python3 review/build_review.py`; verify with
  div#extra-div-1 {
      height: 140px;
      width: 100%;
-@@ -76,7 +133,7 @@
+@@ -76,7 +134,7 @@
      position: absolute;
      background: var(--color-bg);
  }
@@ -177,7 +180,7 @@ with `python3 review/build_review.py`; verify with
  div#extra-div-2 {
      height: 22px;
      width: 100%;
-@@ -84,19 +141,19 @@
+@@ -84,19 +142,19 @@
      position: absolute;
      background: var(--color-ip);
  }
@@ -200,7 +203,7 @@ with `python3 review/build_review.py`; verify with
   #search-top-box-form input[type=submit] {
       border: transparent;
       color: var(--font);
-@@ -104,24 +161,24 @@
+@@ -104,24 +162,24 @@
       background: none !important;
       background-color:  var(--color-bg);
  }
@@ -229,7 +232,7 @@ with `python3 review/build_review.py`; verify with
   #login-status ul a {
       color: #444;
       text-shadow: none;
-@@ -139,7 +196,7 @@
+@@ -139,57 +197,57 @@
       top: 0px; bottom: 0px; left: 0px;
       width: 100px;
  }
@@ -237,8 +240,9 @@ with `python3 review/build_review.py`; verify with
 + 
   #header h1 a {
       color: transparent;
-      font-family: 'GowunBatang-Bold', Arial, sans-serif;
-@@ -147,13 +204,13 @@
+-     font-family: 'GowunBatang-Bold', Arial, sans-serif;
++     font-family: 'Gowun Batang', Arial, sans-serif;
+      font-size: 150%;
       text-shadow: none;
       letter-spacing: 0.5px;
  }
@@ -253,8 +257,9 @@ with `python3 review/build_review.py`; verify with
 + 
   #header h2 span {
       color: transparent;
-      font-family: 'GowunBatang-Bold', Arial, sans-serif;
-@@ -161,35 +218,35 @@
+-     font-family: 'GowunBatang-Bold', Arial, sans-serif;
++     font-family: 'Gowun Batang', Arial, sans-serif;
+      font-size: 120%;
       text-shadow: none;
       margin-left: 5px;
  }
@@ -297,7 +302,7 @@ with `python3 review/build_review.py`; verify with
   #top-bar ul li ul a, #top-bar a:hover, .c_topbar_arrow {
       color: #444;
  }
-@@ -197,7 +254,7 @@
+@@ -197,7 +255,7 @@
   #top-bar ul li ul li ul {
       border: none;
  }
@@ -306,7 +311,7 @@ with `python3 review/build_review.py`; verify with
  /* SIDE MENU */
   #side-bar {
       background: #FFF;
-@@ -206,12 +263,12 @@
+@@ -206,12 +264,12 @@
   #side-bar .side-block .menu-item img {
    display: none;
  }
@@ -321,7 +326,7 @@ with `python3 review/build_review.py`; verify with
  #side-bar .side-block {
    border: none;
    box-shadow: none !important;
-@@ -223,41 +280,41 @@
+@@ -223,41 +281,41 @@
  #side-bar .blue {
    background: #FFF;
  }
@@ -372,7 +377,7 @@ with `python3 review/build_review.py`; verify with
   .yui-navset .yui-nav a, .yui-navset .yui-navset-top .yui-nav a {
      background: #EEE url(none) repeat-x;
      border-top: solid #333 1px;
-@@ -265,14 +322,14 @@
+@@ -265,14 +323,14 @@
      border-right: solid #444 1px;
      color:#000;
  }
@@ -389,7 +394,7 @@ with `python3 review/build_review.py`; verify with
   .yui-navset .yui-nav a:hover,
   .yui-navset .yui-nav a:focus {
       background: #DDD;
-@@ -282,80 +339,80 @@
+@@ -282,80 +340,80 @@
   .yui-navset .yui-navset-top .yui-nav {
       border-color: #444;
  }
@@ -487,7 +492,7 @@ with `python3 review/build_review.py`; verify with
  /* Mobile Media Query */
  
  @media (max-width: 767px) {
-@@ -427,40 +484,34 @@
+@@ -427,40 +485,33 @@
      }
  }
  
@@ -503,7 +508,6 @@ with `python3 review/build_review.py`; verify with
 +
 +}
 +
-+}
  [[/code]]
 +[[/collapsible]]
 +

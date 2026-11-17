@@ -16,7 +16,7 @@
 
 + 使用方法
 
-> @@[[include :scp-jp:theme:bulgunae]]@@
+> @@[[include :scp-jp:theme:bulgunae-jp]]@@
 
 ----
 
@@ -1279,6 +1279,24 @@ textarea {
 
 [[module css]]
 @import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Abulgunae-jp/1")
+[[/module]]
+[[module css]]
+:root {
+    --rating-module-text-color: var(--swatch-menutxt-light-color);
+    --rating-module-button-color:  var(--swatch-menutxt-light-color);
+}
+
+#page-content > div:nth-child(1) {
+    padding: 0.75rem;
+}
+
+.page-rate-widget-box {
+    margin: 0;
+    background:
+     linear-gradient(0deg,
+     rgba(var(--black-monochrome),.55) 0,
+     rgba(var(--swatch-primary-darkest),.45)) !important;
+}
 [[/module]]
 [[include :scp-jp:component:interwiki-style
 | priority=3

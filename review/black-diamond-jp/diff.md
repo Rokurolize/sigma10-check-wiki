@@ -54,7 +54,7 @@ with `python3 review/build_review.py`; verify with
  
  [[=]]
 -[[module rate]]
-+> @@[[include :scp-jp:theme:black-diamond]]@@
++> @@[[include :scp-jp:theme:black-diamond-jp]]@@
  [[/=]]
  
 -+ HOW DO I MAKE MONEY?

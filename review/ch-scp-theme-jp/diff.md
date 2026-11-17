@@ -124,7 +124,7 @@ with `python3 review/build_review.py`; verify with
 -@@[[include :scp-wiki:theme:black-highlighter-theme]]@@
 -@@[[include :scp-wiki:theme:ch-scp-theme]]@@
 +@@[[include :scp-jp:theme:black-highlighter-theme]]@@
-+@@[[include :scp-jp:theme:ch-scp-theme]]@@
++@@[[include :scp-jp:theme:ch-scp-theme-jp]]@@
  [[/div]]
  
  
@@ -136,7 +136,7 @@ with `python3 review/build_review.py`; verify with
 -@@[[include :scp-wiki:theme:ch-scp-theme]]@@
 -@@[[include :scp-wiki:component:centered-header-bhl  |ch-scp=--]]]@@
 +@@[[include :scp-jp:theme:black-highlighter-theme]]@@
-+@@[[include :scp-jp:theme:ch-scp-theme]]@@
++@@[[include :scp-jp:theme:ch-scp-theme-jp]]@@
 +@@[[include :scp-jp:component:centered-header-bhl  |ch-scp=--]]]@@
  [[/div]]
  

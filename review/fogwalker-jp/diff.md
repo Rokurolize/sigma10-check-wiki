@@ -70,7 +70,7 @@ with `python3 review/build_review.py`; verify with
 +* これは[[[https://scpko.wikidot.com/mujin-yarn|霧津奇譚（韓国語版）]]]カノン専用のテーマです。
 +* このテーマを適用するには、ページの最上部に以下のコードを追加してください。
 +
-+> @@[[include :scp-jp:theme:fogwalker]]@@
++> @@[[include :scp-jp:theme:fogwalker-jp]]@@
  
  [[tabview]]
 -[[tab 미리보기]]
@@ -131,11 +131,11 @@ with `python3 review/build_review.py`; verify with
 +[[tab ダークモード]]
 +
 +[[=image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Afogwalker-jp/fogwalker-light.png]]
-+> @@[[include :scp-jp:theme:fogwalker]]@@
++> @@[[include :scp-jp:theme:fogwalker-jp]]@@
 +
 +
 +[[=image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Afogwalker-jp/fogwalker-dark.png]]
-+> @@[[include :scp-jp:theme:fogwalker dark=a]]@@
++> @@[[include :scp-jp:theme:fogwalker-jp dark=a]]@@
  
  [[/tab]]
  [[/tabview]]

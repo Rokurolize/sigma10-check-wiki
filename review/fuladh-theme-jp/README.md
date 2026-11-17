@@ -87,8 +87,8 @@ Adjudication for this README (every non-WS specific block was read against the b
 
 ### 2. Includes and components
 
-- **What:** Every live foreign include is repointed: the two head frames and the tail frame to `:scp-jp:component:interwiki-style` (B3, B5, B154), the hidden tail div's `:scp-jp:theme:extra-black-highlighter-theme` (candidate L892, B152 — its neighbours toggle-sidebar-bhl and betterfootnotes were already `:scp-jp:`-form in the original's tail div and stand unchanged), the credit pair and license pair (section 1), and the base include `:scp-jp:theme:black-highlighter-theme` (candidate L2). The usage exhibit's escaped BHL include follows (`@@[[include :scp-jp:theme:black-highlighter-theme]]@@`, candidate L52–53, B14). No live include in the candidate names a `:scp-wiki:` target.
-- **Why:** P1 (KB-15) for the component repoints; T9 for the base include — a dependent theme imports the base's JP port candidate, never the raw upstream delivery.
+- **What:** Every live foreign include is repointed: the two head frames and the tail frame to `:scp-jp:component:interwiki-style` (B3, B5, B154), the hidden tail div's `:scp-jp:theme:extra-black-highlighter-theme` (candidate L892, B152 — its neighbours toggle-sidebar-bhl and betterfootnotes were already `:scp-jp:`-form in the original's tail div and stand unchanged), the credit pair and license pair (section 1), and the base include `:scp-jp:theme:black-highlighter-theme` (candidate L2). The usage exhibit's escaped includes follow (candidate L52–53, B14): the BHL line `@@[[include :scp-jp:theme:black-highlighter-theme]]@@` at candidate L52, and the theme's own line at candidate L53. As built the own line read `@@[[include :scp-jp:theme:fuladh-theme]]@@`: the repoint changed the branch prefix but kept the plain slug, naming a page that does not exist on scp-jp; the usage-example population sweep has since completed it to `@@[[include :scp-jp:theme:fuladh-theme-jp]]@@` (see the per-theme record). No live include in the candidate names a `:scp-wiki:` target.
+- **Why:** P1 (KB-15) for the component repoints; T9 for the base include — a dependent theme imports the base's JP port candidate, never the raw upstream delivery. For the usage exhibit's own line, the as-built repoint satisfied the branch half of P1 only; the sweep's completion to the posting name is what brings it under the rule.
 - **Verify:** `grep -n '\[\[include' candidate.txt` against the list above.
 - **Disposition:** Applied.
 
@@ -161,6 +161,12 @@ Adjudication for this README (every non-WS specific block was read against the b
 - **Why:** Verification claims name the cheapest deciding check and its result, not a general assurance; a check that never ran is reported as never run.
 - **Verify:** Re-run the checker on `pages/theme:fuladh-theme-jp.txt` and `python3 review/build_review.py --check` in this repo.
 - **Disposition:** PASS (GOSIGN2-LEDGER (b) row 92; go-sign, COMPLETION-REPORT §10), with the render coverage caveat recorded above.
+
+## Per-theme record
+
+### The usage example's posting name
+
+The usage example at candidate L53 as built read `@@[[include :scp-jp:theme:fuladh-theme]]@@`: the porting wave's repoint changed the branch prefix but left the plain name, so the example named a page that does not exist on scp-jp (the campaign's settled rule for usage examples, AGENTS.md §6). The usage-example population sweep has since completed the reference to this candidate's posting name, `:scp-jp:theme:fuladh-theme-jp` — candidate L53 now reads `@@[[include :scp-jp:theme:fuladh-theme-jp]]@@` (sweep report SWEEP-USAGE.md in the campaign record, R/review-scout/; canonical commit b5cb724), one of its 287 repairs across 157 candidates. This package documents the corrected candidate; its stamp reads STALE against the pre-repair verdict, by design.
 
 ## Appendix — heuristic and residue mass, resolved by shape
 

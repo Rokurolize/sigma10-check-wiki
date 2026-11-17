@@ -86,8 +86,8 @@ Adjudication for this README (every block was read against the bytes): the 19 he
 
 ### 2. Includes and components
 
-- **What:** The candidate's includes: the JP BHL theme include at the head (candidate L1, outside the gate — the frame form this theme shares with jiha); the credit pair (section 1); three interwiki-style includes (candidate L7–18, section 3); the image-block for the Site-JP-12 logo example (candidate L104, repointed to `:scp-jp:` with its asset argument re-hosted, section 4); and the license-box pair (section 1). The escaped usage example (candidate L44–45) teaches the posting form: `:scp-jp:theme:black-highlighter-theme` plus `:scp-jp:theme:broken-light`. Every live include names a `:scp-jp:` target.
-- **Why:** P1 (KB-15): an include must name the JP counterpart that actually exists on scp-jp. Ruling 4 is not engaged: no new component had to be ported for this theme.
+- **What:** The candidate's includes: the JP BHL theme include at the head (candidate L1, outside the gate — the frame form this theme shares with jiha); the credit pair (section 1); three interwiki-style includes (candidate L7–18, section 3); the image-block for the Site-JP-12 logo example (candidate L104, repointed to `:scp-jp:` with its asset argument re-hosted, section 4); and the license-box pair (section 1). The escaped usage example (candidate L44–45) as built taught the JP branch form with the plain slug: `:scp-jp:theme:black-highlighter-theme` (candidate L44, the production JP page, correct as built and not a sweep line) plus `:scp-jp:theme:broken-light` (candidate L45), which named a page that does not exist on scp-jp, not the posting form. The usage-example population sweep has since completed the second name to the posting form, `:scp-jp:theme:broken-light-jp` (candidate L45; SWEEP-USAGE.md; canonical commit b5cb724). Every live include names a `:scp-jp:` target.
+- **Why:** P1 (KB-15): an include must name the JP counterpart that actually exists on scp-jp. The usage example's self-repoint as built satisfied the branch half of that rule only; the sweep's completion is what brings it under it. Ruling 4 is not engaged: no new component had to be ported for this theme.
 - **Verify:** `grep -n '\[\[include' candidate.txt` — all `:scp-jp:`.
 - **Disposition:** Applied; no foreign include kept, no named exception needed.
 
@@ -163,7 +163,9 @@ Adjudication for this README (every block was read against the bytes): the 19 he
 
 ## Per-theme record
 
-None. This theme's record is complete in the standing sections: its wave history is two commits, it has no §(e) entry, no FIX wave touched it, and its dispositioned items are stated with their grounds in section 11.
+### The usage example's posting name
+
+The usage example at candidate L45 as built read `@@[[include :scp-jp:theme:broken-light]]@@`: the porting wave's repoint changed the branch prefix but left the plain name, so the example named a page that does not exist on scp-jp (the campaign's settled rule for usage examples, AGENTS.md §6). The usage-example population sweep has since completed the reference to `:scp-jp:theme:broken-light-jp` (sweep report SWEEP-USAGE.md in the campaign record, R/review-scout/; canonical commit b5cb724), one of its 287 repairs across 157 candidates. The companion line above it (candidate L44) names `:scp-jp:theme:black-highlighter-theme`, the production JP page, which is correct as built and was not a sweep line. This package documents the corrected candidate; its stamp reads STALE against the pre-repair verdict, by design.
 
 ## Change set outside the two diffed files
 

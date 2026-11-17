@@ -86,9 +86,9 @@ Adjudication for this README (every block was read against the bytes): the singl
 
 ### 2. Includes and components
 
-- **What:** One live repoint, in the usage exhibit: `@@[[include :scp-jp:theme:fogwalker]]@@` (candidate L27, B6), the escaped form of the original's own-theme include. Two further repoints are exhibit text, not live includes: the preview tab's image-block parameters are re-hosted (section 4), and the sample include forms inside the usage text name `:scp-jp:` targets. The candidate's remaining includes are the frame, credit, and license-box includes of sections 1 and 3; every live include in the candidate names a `:scp-jp:` target. No component swap (T8) occurs on either side.
-- **Why:** P1 (KB-15): an include must name the JP counterpart that actually exists on scp-jp. Ruling 4 is not engaged: no component had to be ported alongside this theme.
-- **Verify:** `grep -n '\[\[include' candidate.txt` — five includes plus the escaped usage form, all `:scp-jp:`.
+- **What:** The usage exhibit's own-theme includes are escaped text, not live includes. As built they read `@@[[include :scp-jp:theme:fogwalker]]@@` at candidate L27 (B6) and L63, and `@@[[include :scp-jp:theme:fogwalker dark=a]]@@` at candidate L67 (the third in its `dark=a` parameter form): the porting wave's repoint changed the branch prefix but kept the plain slug, so each named a page that does not exist on scp-jp. The usage-example population sweep has since completed all three names to the posting form (candidate L27 and L63 now read `@@[[include :scp-jp:theme:fogwalker-jp]]@@`; candidate L67 now reads `@@[[include :scp-jp:theme:fogwalker-jp dark=a]]@@`; see the per-theme record). Two further repoints are exhibit text, not live includes: the preview tab's image-block parameters are re-hosted (section 4), and the sample include forms inside the usage text name `:scp-jp:` targets. The candidate's remaining includes are the frame, credit, and license-box includes of sections 1 and 3, plus the preview tab's unprefixed image-block include at candidate L32. No component swap (T8) occurs on either side.
+- **Why:** P1 (KB-15): an include must name the JP counterpart that actually exists on scp-jp. As built, the usage exhibit's repoint satisfied the branch half of that rule only, keeping the plain slug; the sweep's completion to the posting name is what brings the three examples under the rule. Ruling 4 is not engaged: no component had to be ported alongside this theme.
+- **Verify:** `grep -n '\[\[include' candidate.txt` — nine hits: six live includes (five `:scp-jp:` plus the unprefixed image-block at candidate L32) and the three escaped usage forms at candidate L27, L63, and L67, all `:scp-jp:` in their completed form.
 - **Disposition:** Applied; no foreign include kept, no named exception needed.
 
 ### 3. Delivery and code loading
@@ -160,6 +160,12 @@ Adjudication for this README (every block was read against the bytes): the singl
 - **Why:** Verification claims name the cheapest deciding check and its result, not a general assurance.
 - **Verify:** Re-run the checker on `pages/theme:fogwalker-jp.txt` and `python3 review/build_review.py --check` in this repo.
 - **Disposition:** PASS (GOSIGN2-LEDGER (b) row 263; go-sign, COMPLETION-REPORT §10).
+
+## Per-theme record
+
+### The usage example's posting name
+
+The usage examples at candidate L27, L63, and L67 as built read `@@[[include :scp-jp:theme:fogwalker]]@@` (L27 and L63) and `@@[[include :scp-jp:theme:fogwalker dark=a]]@@` (L67, the third in its `dark=a` parameter form): the porting wave's repoint changed the branch prefix but left the plain name, so each example named a page that does not exist on scp-jp (the campaign's settled rule for usage examples, AGENTS.md §6). The usage-example population sweep has since completed all three references to this candidate's posting name, `:scp-jp:theme:fogwalker-jp` — candidate L27 and L63 now read `@@[[include :scp-jp:theme:fogwalker-jp]]@@`, and candidate L67 now reads `@@[[include :scp-jp:theme:fogwalker-jp dark=a]]@@` (sweep report SWEEP-USAGE.md in the campaign record, R/review-scout/; canonical commit b5cb724), one of its 287 repairs across 157 candidates. This package documents the corrected candidate; its stamp reads STALE against the pre-repair verdict, by design.
 
 ## Change set outside the two diffed files
 

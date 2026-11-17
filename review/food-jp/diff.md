@@ -118,7 +118,7 @@ with `python3 review/build_review.py`; verify with
 +
 +[[div class="code"]]
 +@@[[include :scp-jp:theme:black-highlighter-theme]]@@
-+@@[[include :scp-jp:theme:food]]@@
++@@[[include :scp-jp:theme:food-jp]]@@
 +@@[[include :scp-jp:component:centered-header-bhl]]
 +@@
 +[[/div]]

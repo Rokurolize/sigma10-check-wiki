@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:construct-jp — origin CN, population #176 [GOSIGN2-LEDGER (b) row 176]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 226cdf3fdffb1a03eea4b5163234a47c5eb2e125577e795332f1c2a55a2d771b); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now d1a2ec22db7c47dbefd94d22243633b01bbad815cf1187ae17498cd676a9dfe5); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 1 error / 2 warns / 1 info (pseudo-ref×1); standing classes dispositioned in register c1 [T1-ROWS row 201; GOSIGN2-LEDGER (b) row 176]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page runtime-hotlink site-theme chain only; sample hidden-* cluster confined to webkit-1366, whose only hotlink host is http.cat = transient 503 capture, not a result; sample credit-modal (preview-form) + 884px@768 overflow. [RENDER-ROWS-2 (RENDER-S2-E (CN3))]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 2 [LOCALIZE-ROWS row 175, source LOCALIZE-S2-D]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 175]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 176]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:construct-jp.txt sha256:226cdf3fdffb1a03eea4b5163234a47c5eb2e125577e795332f1c2a55a2d771b; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 4176cc76aa668e42056010548f62a1db8d06a32e; candidate file pages/theme:construct-jp.txt sha256:d1a2ec22db7c47dbefd94d22243633b01bbad815cf1187ae17498cd676a9dfe5; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status

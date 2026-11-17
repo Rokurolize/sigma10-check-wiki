@@ -63,7 +63,7 @@ with `python3 review/build_review.py`; verify with
 +
 +テーマを使うには、次を挿入してください:
 +
-+> {{@@[[include :scp-jp:theme:fossil]]@@}}
++> {{@@[[include :scp-jp:theme:fossil-jp]]@@}}
 +
 +Fossil Theme は [[[component:sigma-plus|sigma-plus]]] を土台にしたテーマです。
  

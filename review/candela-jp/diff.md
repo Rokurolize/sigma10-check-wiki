@@ -76,9 +76,9 @@ with `python3 review/build_review.py`; verify with
 -[[/div]]
 -
 -若要使用流明冲击的蓝色风格，请引入如下代码：
-+@@[[include :scp-jp:theme:parallel redstone=*]]@@
-+@@[[include :scp-jp:theme:lumina]]@@
-+@@[[include :scp-jp:theme:candela]]@@
++@@[[include :scp-jp:theme:parallel-jp redstone=*]]@@
++@@[[include :scp-jp:theme:lumina-jp]]@@
++@@[[include :scp-jp:theme:candela-jp]]@@
 +[[/div]]
 +
 +Lumina Crashの青系スタイルを使うには、次のコードを読み込んでください。
@@ -90,9 +90,9 @@ with `python3 review/build_review.py`; verify with
 -[[/div]]
 -
 -若要使用收窄的页面宽度，请引入如下代码：
-+@@[[include :scp-jp:theme:parallel redstone=*]]@@
-+@@[[include :scp-jp:theme:lumina]]@@
-+@@[[include :scp-jp:theme:candela classic=*]]@@
++@@[[include :scp-jp:theme:parallel-jp redstone=*]]@@
++@@[[include :scp-jp:theme:lumina-jp]]@@
++@@[[include :scp-jp:theme:candela-jp classic=*]]@@
 +[[/div]]
 +
 +ページ幅を狭くするには、次のコードを読み込んでください。
@@ -104,9 +104,9 @@ with `python3 review/build_review.py`; verify with
 -[[/div]]
 -
 -若要使用蓝色风格的同时使用收窄的页面宽度，请引入如下代码：
-+@@[[include :scp-jp:theme:parallel redstone=*]]@@
-+@@[[include :scp-jp:theme:lumina]]@@
-+@@[[include :scp-jp:theme:candela narrow=*]]@@
++@@[[include :scp-jp:theme:parallel-jp redstone=*]]@@
++@@[[include :scp-jp:theme:lumina-jp]]@@
++@@[[include :scp-jp:theme:candela-jp narrow=*]]@@
 +[[/div]]
 +
 +青系スタイルと狭いページ幅を同時に使うには、次のコードを読み込んでください。
@@ -120,9 +120,9 @@ with `python3 review/build_review.py`; verify with
 -+ 自定义元素
 -
 -[[div class="blockquote warning-panel" data-title="通知标题" style="--warning-logo: url("https://scp-wiki.wikidot.com/local--files/theme:basalt/RAISA_DARKLOGO.png"); --logo-opacity: 1;"]]
-+@@[[include :scp-jp:theme:parallel redstone=*]]@@
-+@@[[include :scp-jp:theme:lumina]]@@
-+@@[[include :scp-jp:theme:candela classic=* | narrow=*]]@@
++@@[[include :scp-jp:theme:parallel-jp redstone=*]]@@
++@@[[include :scp-jp:theme:lumina-jp]]@@
++@@[[include :scp-jp:theme:candela-jp classic=* | narrow=*]]@@
 +[[/div]]
 +
 ++ カスタム要素

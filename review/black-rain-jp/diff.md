@@ -76,7 +76,7 @@ with `python3 review/build_review.py`; verify with
 +
 +[[div class="code"]]
 +@@[[include :scp-jp:theme:black-highlighter-theme]]@@
-+@@[[include :scp-jp:theme:black-rain]]@@
++@@[[include :scp-jp:theme:black-rain-jp]]@@
  [[/div]]
  
 -[[>]]

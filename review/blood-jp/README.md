@@ -82,8 +82,8 @@ Adjudication for this README (every block was read against the bytes): the 31 he
 
 ### 2. Includes and components
 
-- **What:** The candidate's includes: the credit pair (section 1), one interwiki-style include (candidate L5–8, section 3), and the license-box pair (section 1). The usage line teaches the posting form as a blockquoted include, `:scp-jp:theme:blood` (candidate L27). The original's includes are the EN info pair (deleted, section 1) and its license-box component reference inside prose. Every live include in the candidate names a `:scp-jp:` target. The grid demonstration module inside the prose (candidate L29–72, "Grid CSS - NOT part of theme", carried over from the original's second module at L508–551) is a module, not an include, and is unchanged in role.
-- **Why:** P1 (KB-15): an include must name the JP counterpart that actually exists on scp-jp. Ruling 4 is not engaged: no new component had to be ported for this theme.
+- **What:** The candidate's includes: the credit pair (section 1), one interwiki-style include (candidate L5–8, section 3), and the license-box pair (section 1). The usage line as built taught a blockquoted include, `:scp-jp:theme:blood` (candidate L27): the repoint changed the branch prefix but kept the plain slug, so it named a page that does not exist on scp-jp, not the posting form. The usage-example population sweep has since completed the name to the posting form, `:scp-jp:theme:blood-jp` (candidate L27; SWEEP-USAGE.md; canonical commit b5cb724). The original's includes are the EN info pair (deleted, section 1) and its license-box component reference inside prose. Every live include in the candidate names a `:scp-jp:` target. The grid demonstration module inside the prose (candidate L29–72, "Grid CSS - NOT part of theme", carried over from the original's second module at L508–551) is a module, not an include, and is unchanged in role.
+- **Why:** P1 (KB-15): an include must name the JP counterpart that actually exists on scp-jp. The usage line's repoint as built satisfied the branch half of that rule only; the sweep's completion is what brings it under it. Ruling 4 is not engaged: no new component had to be ported for this theme.
 - **Verify:** `grep -n '\[\[include' candidate.txt` — five includes, all `:scp-jp:`.
 - **Disposition:** Applied; no foreign include kept, no named exception needed.
 
@@ -159,7 +159,9 @@ Adjudication for this README (every block was read against the bytes): the 31 he
 
 ## Per-theme record
 
-None. This theme's record is complete in the standing sections: its wave history is three commits (section Provenance), it has no §(e) entry, no FIX wave touched it beyond the credit sweep, and its dispositioned items are stated with their grounds in section 11.
+### The usage example's posting name
+
+The usage example at candidate L27 as built read `> @@[[include :scp-jp:theme:blood]]@@`: the porting wave's repoint changed the branch prefix but left the plain name, so the example named a page that does not exist on scp-jp (the campaign's settled rule for usage examples, AGENTS.md §6). The usage-example population sweep has since completed the reference to `:scp-jp:theme:blood-jp` (sweep report SWEEP-USAGE.md in the campaign record, R/review-scout/; canonical commit b5cb724), one of its 287 repairs across 157 candidates. This package documents the corrected candidate; its stamp reads STALE against the pre-repair verdict, by design.
 
 ## Change set outside the two diffed files
 

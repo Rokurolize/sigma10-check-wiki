@@ -94,8 +94,8 @@ Residue appendix (all five blocks, adjudicated):
 
 ### 2. Includes and components
 
-- **What:** The candidate's includes: the added `:scp-jp:theme:black-highlighter-theme` include inside the head wrapper (candidate L2); the credit pair (section 1); one interwiki-style include (candidate L628–631, section 3); the image-block for the street photograph (candidate L47, repointed to `:scp-jp:` with its asset argument unchanged, section 4); and the two tail components after the exhibits — `:scp-jp:component:toggle-sidebar-bhl` (candidate L617) and `:scp-jp:component:customizable-acs` (candidate L619) — both repointed from their EN-namespace forms. The escaped usage examples (candidate L28–29, L35–36) teach the posting form, including the SPC variant's parameter form (`:scp-jp:theme:borealis-constant-theme |spc=--`). The 5 INCLUDE-REPOINT blocks are these repoints; every live include names a `:scp-jp:` target.
-- **Why:** P1 (KB-15): an include must name the JP counterpart that actually exists on scp-jp. Ruling 4 is not engaged: the components named already exist on the JP side.
+- **What:** The candidate's includes: the added `:scp-jp:theme:black-highlighter-theme` include inside the head wrapper (candidate L2); the credit pair (section 1); one interwiki-style include (candidate L628–631, section 3); the image-block for the street photograph (candidate L47, repointed to `:scp-jp:` with its asset argument unchanged, section 4); and the two tail components after the exhibits — `:scp-jp:component:toggle-sidebar-bhl` (candidate L617) and `:scp-jp:component:customizable-acs` (candidate L619) — both repointed from their EN-namespace forms. The escaped usage examples (candidate L28–29, L35–36) as built taught the JP branch form with the plain slug, `:scp-jp:theme:borealis-constant-theme` — including the SPC variant's parameter form at candidate L36 (`:scp-jp:theme:borealis-constant-theme |spc=--`) — so each self-reference named a page that does not exist on scp-jp, not the posting form. The usage-example population sweep has since completed both self-references to the posting name, `:scp-jp:theme:borealis-constant-theme-jp` (candidate L29 and L36, the second keeping its `|spc=--` parameter; SWEEP-USAGE.md; canonical commit b5cb724). The Black Highlighter lines in the same examples (candidate L28, L35) name the production JP page and were not sweep lines. The 5 INCLUDE-REPOINT blocks are these repoints; every live include names a `:scp-jp:` target.
+- **Why:** P1 (KB-15): an include must name the JP counterpart that actually exists on scp-jp. The usage examples' self-repoints as built satisfied the branch half of that rule only; the sweep's completions are what bring them under it. Ruling 4 is not engaged: the components named already exist on the JP side.
 - **Verify:** `grep -n '\[\[include' candidate.txt` — all `:scp-jp:`.
 - **Disposition:** Applied; no foreign include kept, no named exception needed.
 
@@ -171,7 +171,11 @@ Residue appendix (all five blocks, adjudicated):
 
 ## Per-theme record
 
-One wave-mechanical entry beyond the standing sections: commit a497307 (FIX4-MECH) removed a duplicated Noto Sans JP @import from this candidate (KB-65, duplicate-import removal across 29 themes). The stamp is computed against that commit, and the file today loads the supplement exactly once (section 4). No other theme-specific record exists: the theme has no §(e) entry, and no FIX5 wave touched it.
+One wave-mechanical entry beyond the standing sections: commit a497307 (FIX4-MECH) removed a duplicated Noto Sans JP @import from this candidate (KB-65, duplicate-import removal across 29 themes). The stamp is computed against that commit, and the file today loads the supplement exactly once (section 4). Apart from the usage-example record below, the theme has no §(e) entry, and no FIX5 wave touched it.
+
+### The usage example's posting name
+
+The usage examples at candidate L29 and L36 as built named this theme by its plain slug on the JP branch, `:scp-jp:theme:borealis-constant-theme` — the second in its `|spc=--` parameter form — a page that does not exist on scp-jp, under the campaign's settled rule for usage examples (AGENTS.md §6). The usage-example population sweep has since completed both names to this candidate's posting name, `:scp-jp:theme:borealis-constant-theme-jp` (candidate L29 and L36, the second keeping its `|spc=--` parameter) (sweep report SWEEP-USAGE.md in the campaign record, R/review-scout/; canonical commit b5cb724), two of its 287 repairs across 157 candidates. This package documents the corrected candidate; its stamp reads STALE against the pre-repair verdict, by design.
 
 ## Change set outside the two diffed files
 

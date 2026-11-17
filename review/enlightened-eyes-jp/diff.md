@@ -15,12 +15,12 @@ adjudicated explanation.
 | | Lines |
 |---|---|
 | original.txt | 2722 |
-| candidate.txt | 2611 |
-| Added | +541 |
-| Review-stage comments | 0 of the +541 added lines |
-| Removed | -652 |
-| Changed | 1193 |
-| Change blocks | 175 |
+| candidate.txt | 2634 |
+| Added | +542 |
+| Review-stage comments | 0 of the +542 added lines |
+| Removed | -630 |
+| Changed | 1172 |
+| Change blocks | 176 |
 | Diff sections (context 3) | 7 |
 
 ## Changed lines by auto-class (heuristic)
@@ -29,7 +29,7 @@ adjudicated explanation.
 |---|---|---|
 | mechanical | 14 | 28 |
 | supplement | 5 | 73 |
-| residual | 156 | 1092 |
+| residual | 157 | 1071 |
 
 ## Change-block index
 
@@ -209,7 +209,8 @@ adjudicated explanation.
 | 172 | 6 | 2266–2266 | 2181–2181 | +1/−1 | mechanical | (blank lines only) |
 | 173 | 7 | — | 2608–2609 | +2/−0 | residual | [[/code]] |
 | 174 | 7 | 2694–2697 | — | +0/−4 | residual | [[/code]] |
-| 175 | 7 | 2699–2722 | — | +0/−24 | residual | [[module css]] |
+| 175 | 7 | 2699–2700 | — | +0/−2 | residual | [[module css]] |
+| 176 | 7 | — | 2613–2613 | +1/−0 | residual | [[module CSS]] |
 
 ## Full diff
 
@@ -223,7 +224,7 @@ adjudicated explanation.
 -@import url('https://cdn.scpwiki.com/theme/en/basalt/normalize-min.css');
 -@import url('https://cdn.scpwiki.com/theme/en/basalt/basalt-bedrock-min.css');
 +[[module CSS]]
-+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aenlightened-eyes-jp/1');
++@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aenlightened-eyes-jp/6');
  [[/module]]
 +
 +[[include :scp-jp:component:interwiki-style
@@ -236,7 +237,7 @@ adjudicated explanation.
 +]]
 +[[include :scp-jp:component:interwiki-style
 +| priority=3
-+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aenlightened-eyes-jp/1
++| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aenlightened-eyes-jp/6
 +]]
 +
 +[[iftags +テーマ]]
@@ -1617,10 +1618,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 7 — original 2690–2722 · candidate 2605–2611 · +2/−28 · residual</summary>
+<summary>Section 7 — original 2690–2704 · candidate 2605–2616 · +3/−6 · residual</summary>
 
 ```diff
-@@ -2690,33 +2605,7 @@
+@@ -2690,15 +2605,12 @@
  .owindow .button-bar>a[onclick*="cleanAll"]:is(:hover)::after {
      background: rgb(var(--basalt-primary-color));
  }
@@ -1634,28 +1635,11 @@ adjudicated explanation.
  [[/iftags]]
 -[[module css]]
 -@import url('https://scp-wiki.wikidot.com/local--code/theme:enlightened-eyes/10');
--
--body {
--    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='M12 3v6M12 15v6M3 12h6M15 12h6' fill='none' stroke='%230E0E0E' stroke-width='3' stroke-opacity='.6'/%3E%3Cpath d='M12 3v6M12 15v6M3 12h6M15 12h6' fill='none' stroke='%23F35541' stroke-width='1.25'/%3E%3Crect x='11' y='11' width='2' height='2' fill='%23EAE3DE'/%3E%3C/svg%3E") 12 12, crosshair;
--}
--
--#page-title,
--div.parapost-body,
--#page-content :is(p, li, dd, dt, td, th, blockquote, h1, h2, h3, h4, h5, h6, .code) {
--    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='M12 6v12' fill='none' stroke='%230E0E0E' stroke-width='3' stroke-opacity='.6'/%3E%3Crect x='10.5' y='3' width='3' height='3' fill='%230E0E0E' fill-opacity='.6'/%3E%3Crect x='10.5' y='18' width='3' height='3' fill='%230E0E0E' fill-opacity='.6'/%3E%3Cpath d='M12 6v12' fill='none' stroke='%23EAE3DE' stroke-width='1.25'/%3E%3Crect x='11' y='3.5' width='2' height='2' fill='%23EAE3DE'/%3E%3Crect x='11' y='18.5' width='2' height='2' fill='%23EAE3DE'/%3E%3C/svg%3E") 12 12, text;
--}
--
--a, button, .collapsible-block-link, .yui-nav li a, .page-rate-widget-box a {
--    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5' fill='none' stroke='%230E0E0E' stroke-width='3' stroke-opacity='.6'/%3E%3Cpath d='M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5' fill='none' stroke='%23F35541' stroke-width='1.25'/%3E%3Crect x='11' y='11' width='2' height='2' fill='%23EAE3DE'/%3E%3C/svg%3E") 12 12, pointer;
--}
--
--textarea,
--input:not([type]),
--input:is([type=text], [type=search], [type=email], [type=password], [type=url]),
--[contenteditable] {
--    cursor: text;
--}
--[[/module]]
+ 
++[[module CSS]]
+ body {
+     cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='M12 3v6M12 15v6M3 12h6M15 12h6' fill='none' stroke='%230E0E0E' stroke-width='3' stroke-opacity='.6'/%3E%3Cpath d='M12 3v6M12 15v6M3 12h6M15 12h6' fill='none' stroke='%23F35541' stroke-width='1.25'/%3E%3Crect x='11' y='11' width='2' height='2' fill='%23EAE3DE'/%3E%3C/svg%3E") 12 12, crosshair;
+ }
 ```
 
 </details>

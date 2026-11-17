@@ -88,8 +88,8 @@ Adjudication for this README (every block was read against the bytes): the 2 res
 
 ### 2. Includes and components
 
-- **What:** One live repoint, in the usage exhibit: `@@[[include :scp-jp:theme:fmaf-theme]]@@` (candidate L29), the escaped form of the original's own-theme include (B6, INCLUDE-REPOINT + ESCAPED-INCLUDE spans). The candidate's remaining includes are the frame, credit, and license-box includes of sections 1 and 3; every include in the candidate names a `:scp-jp:` target. No component swap (T8) occurs: this theme includes no sigma-plus or other ported component on either side.
-- **Why:** P1 (KB-15): an include must name the JP counterpart that actually exists on scp-jp; the theme's own JP candidate is that counterpart. Ruling 4 is not engaged: no component had to be ported alongside this theme.
+- **What:** One live repoint, in the usage exhibit: as built, `@@[[include :scp-jp:theme:fmaf-theme]]@@` (candidate L29), the escaped form of the original's own-theme include (B6, INCLUDE-REPOINT + ESCAPED-INCLUDE spans) — that repoint kept the original's plain slug on the JP branch, naming a page that does not exist on scp-jp. The usage-example population sweep has since completed the name to this candidate's posting form, so candidate L29 now reads `@@[[include :scp-jp:theme:fmaf-theme-jp]]@@` (per-theme record). The candidate's remaining includes are the frame, credit, and license-box includes of sections 1 and 3; every include in the candidate names a `:scp-jp:` target. No component swap (T8) occurs: this theme includes no sigma-plus or other ported component on either side.
+- **Why:** P1 (KB-15): an include must name the JP counterpart that actually exists on scp-jp. As built, the repoint satisfied the branch half of that rule only; the sweep's completion is what brings the example under it, the counterpart being this candidate itself under its posting name. Ruling 4 is not engaged: no component had to be ported alongside this theme.
 - **Verify:** `grep -n '\[\[include' candidate.txt` — five includes plus the escaped usage form, all `:scp-jp:`.
 - **Disposition:** Applied; no foreign include kept, no named exception needed.
 
@@ -162,6 +162,12 @@ Adjudication for this README (every block was read against the bytes): the 2 res
 - **Why:** Verification claims name the cheapest deciding check and its result, not a general assurance.
 - **Verify:** Re-run the checker on `pages/theme:fmaf-theme-jp.txt` and `python3 review/build_review.py --check` in this repo.
 - **Disposition:** PASS (GOSIGN2-LEDGER (b) row 262; go-sign, COMPLETION-REPORT §10).
+
+## Per-theme record
+
+### The usage example's posting name
+
+The usage example at candidate L29 as built read `@@[[include :scp-jp:theme:fmaf-theme]]@@`: the porting wave's repoint changed the branch prefix but left the plain name, so the example named a page that does not exist on scp-jp (the campaign's settled rule for usage examples, AGENTS.md §6). The usage-example population sweep has since completed the reference to `:scp-jp:theme:fmaf-theme-jp` (sweep report SWEEP-USAGE.md in the campaign record, R/review-scout/; canonical commit b5cb724), one of its 287 repairs across 157 candidates. This package documents the corrected candidate; its stamp reads STALE against the pre-repair verdict, by design.
 
 ## Change set outside the two diffed files
 

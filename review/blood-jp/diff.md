@@ -124,7 +124,7 @@ adjudicated explanation.
 +
 +このテーマを使用するには、記事のいちばん上に以下の構文を置いてください:
 +
-+> @@[[include :scp-jp:theme:blood]]@@
++> @@[[include :scp-jp:theme:blood-jp]]@@
 +
  [[module css]]
 +/* Grid CSS - NOT part of theme */

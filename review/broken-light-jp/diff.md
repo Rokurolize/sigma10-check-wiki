@@ -102,7 +102,7 @@ with `python3 review/build_review.py`; verify with
 -@@[[include :scp-wiki-cn:theme:black-highlighter-theme]]@@
 -@@[[include :scp-wiki-cn:theme:broken-light]]@@
 +@@[[include :scp-jp:theme:black-highlighter-theme]]@@
-+@@[[include :scp-jp:theme:broken-light]]@@
++@@[[include :scp-jp:theme:broken-light-jp]]@@
  [[/div]]
  
  -----

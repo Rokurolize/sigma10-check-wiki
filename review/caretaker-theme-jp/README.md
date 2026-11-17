@@ -82,8 +82,8 @@ Adjudication for this README (every block was read against the bytes): the 24 he
 
 ### 2. Includes and components
 
-- **What:** The candidate's includes: the added `:scp-jp:theme:black-highlighter-theme` include inside the head wrapper (candidate L2); the credit pair (section 1); two interwiki-style includes for the base layers (candidate L11–19, section 3); and the image-block component for the feesh illustration (candidate L51, repointed to the `:scp-jp:` namespace; its asset argument is section 4's item). The escaped usage example (candidate L43–44) teaches the posting form: `:scp-jp:theme:black-highlighter-theme` plus `:scp-jp:theme:caretaker-theme`. The original's only component include is the same image-block, in the bare EN namespace. Every live include in the candidate names a `:scp-jp:` target.
-- **Why:** P1 (KB-15): an include must name the JP counterpart that actually exists on scp-jp. The BHL base include is added because the JP form of a BHL-based theme includes the JP base page rather than only importing its CSS (the original relies on the imports alone, which section 3 keeps as well). Ruling 4 is not engaged: no new component had to be ported for this theme.
+- **What:** The candidate's includes: the added `:scp-jp:theme:black-highlighter-theme` include inside the head wrapper (candidate L2); the credit pair (section 1); two interwiki-style includes for the base layers (candidate L11–19, section 3); and the image-block component for the feesh illustration (candidate L51, repointed to the `:scp-jp:` namespace; its asset argument is section 4's item). The escaped usage example (candidate L43–44) teaches the two-line form: `:scp-jp:theme:black-highlighter-theme` plus, as built, `:scp-jp:theme:caretaker-theme` — the repoint changed the branch prefix but kept the plain slug, naming a page that does not exist on scp-jp; the usage-example population sweep has since completed the second line to this candidate's posting name, `:scp-jp:theme:caretaker-theme-jp` (candidate L44; per-theme record). The original's only component include is the same image-block, in the bare EN namespace. Every live include in the candidate names a `:scp-jp:` target.
+- **Why:** P1 (KB-15): an include must name the JP counterpart that actually exists on scp-jp. As built, the usage example's repoint satisfied the branch half of that rule only; the sweep's completion of its name is what brings it under the rule. The BHL base include is added because the JP form of a BHL-based theme includes the JP base page rather than only importing its CSS (the original relies on the imports alone, which section 3 keeps as well). Ruling 4 is not engaged: no new component had to be ported for this theme.
 - **Verify:** `grep -n '\[\[include' candidate.txt` — seven includes, all `:scp-jp:`.
 - **Disposition:** Applied; no foreign include kept, no named exception needed.
 
@@ -159,7 +159,9 @@ Adjudication for this README (every block was read against the bytes): the 24 he
 
 ## Per-theme record
 
-None. This theme's record is complete in the standing sections: its wave history is two commits, it has no §(e) entry, no FIX wave touched it, and its three dispositioned items are stated with their grounds in section 11.
+### The usage example's posting name
+
+The usage example at candidate L44 as built read `@@[[include :scp-jp:theme:caretaker-theme]]@@`: the porting wave's repoint changed the branch prefix but left the plain name, so the example named a page that does not exist on scp-jp (the campaign's settled rule for usage examples, AGENTS.md §6). The usage-example population sweep has since completed the reference to `:scp-jp:theme:caretaker-theme-jp` (sweep report SWEEP-USAGE.md in the campaign record, R/review-scout/; canonical commit b5cb724), one of its 287 repairs across 157 candidates. This package documents the corrected candidate; its stamp reads STALE against the pre-repair verdict, by design.
 
 ## Change set outside the two diffed files
 

@@ -8,29 +8,23 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 211 |
-| candidate.txt | 154 |
-| Added | +27 |
-| Review-stage comments | 0 of the +27 added lines |
-| Removed | -82 |
-| Hunks | 6 |
+| candidate.txt | 227 |
+| Added | +58 |
+| Review-stage comments | 0 of the +58 added lines |
+| Removed | -47 |
+| Hunks | 8 |
 
 ```diff
 --- original.txt
 +++ candidate.txt
-@@ -1,18 +1,29 @@
+@@ -1,18 +1,32 @@
 -[[iftags +theme]]
--[[module CSS]]
--@import url("https://nu-scptheme.github.io/Black-Highlighter/css/min/normalize.min.css");
--@import url("https://nu-scptheme.github.io/Black-Highlighter/css/min/black-highlighter.min.css");
--[[/module]]
--[[/iftags]]
++[[include :scp-jp:theme:black-highlighter-theme]]
++
 +[[include :scp-jp:component:interwiki-style
-+| priority=1
-+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aashes-to-ashes-jp/1
++| priority=3
 +]]
- 
--[[include :scp-wiki:component:toggle-sidebar-bhl]]
--[[include :scp-wiki:component:centered-header-bhl]]
++
 +[[iftags +テーマ]]
 +
 +[[include :scp-jp:credit:start-preview]]
@@ -48,18 +42,27 @@ with `python3 review/build_review.py`; verify with
 +
 +**使い方:** @@[[include theme:ashes-to-ashes-jp]]@@
 +
-+**基盤:** BHL（インライン）
- 
++**基盤:** Black Highlighter（:scp-jp:theme:black-highlighter-theme をインクルード。独自レイヤーはフレームのpriority=3）
++
  [[module CSS]]
+-@import url("https://nu-scptheme.github.io/Black-Highlighter/css/min/normalize.min.css");
+-@import url("https://nu-scptheme.github.io/Black-Highlighter/css/min/black-highlighter.min.css");
+-[[/module]]
+-[[/iftags]]
 -
--@import url('https://fonts.bunny.net/css2?family=Protest+Revolution&display=swap');
--@import url('https://fonts.bunny.net/css2?family=Fredericka+the+Great&display=swap');
+-[[include :scp-wiki:component:toggle-sidebar-bhl]]
+-[[include :scp-wiki:component:centered-header-bhl]]
+-
+-[[module CSS]]
 -
 +@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+ @import url('https://fonts.bunny.net/css2?family=Protest+Revolution&display=swap');
+ @import url('https://fonts.bunny.net/css2?family=Fredericka+the+Great&display=swap');
+-
  :root {
      /* ACT-SPECIFIC CSS */
      --head-prelude: "YOSHIHIDE'S PROPOSAL";
-@@ -55,7 +66,7 @@
+@@ -55,7 +69,7 @@
      --swatch-topmenu-border-color: 150, 0, 0;
  
      --diagonal-stripes: unset;
@@ -68,7 +71,7 @@ with `python3 review/build_review.py`; verify with
  }
  
  #license-area {
-@@ -71,7 +82,7 @@
+@@ -71,7 +85,7 @@
  }
  
  #container {
@@ -77,7 +80,7 @@ with `python3 review/build_review.py`; verify with
      background-position-x: 0%;
      background-position-y: 0%;
      background-repeat: repeat;
-@@ -88,7 +99,7 @@
+@@ -88,7 +102,7 @@
      top: 0;
      width: 100%;
      height: 100%;
@@ -86,7 +89,7 @@ with `python3 review/build_review.py`; verify with
      z-index: -1;
      opacity: 0.05;
      background-position: center center;
-@@ -102,7 +113,7 @@
+@@ -102,7 +116,7 @@
      width: 100%;
      height: 100%;
      z-index: -2;
@@ -95,30 +98,33 @@ with `python3 review/build_review.py`; verify with
      background-position: center center;
      background-size: cover;
      opacity: 0.12;
-@@ -138,74 +149,6 @@
+@@ -138,16 +152,18 @@
  :is(blockquote, .blockquote, div.blockquote, [class*="blockquote"]) {
      box-shadow: inset 0 0 0 .0625rem rgba(150, 100, 100, .5),inset .0625rem 0 0 0 rgba(150, 100, 100, .5),inset 0 -.0625rem 0 0 rgba(150, 100, 100, .75);
  }
 -
  [[/module]]
 -[[iftags +theme]]
--[[=]]
--[[module Rate]]
--[[/=]]
--
++
++[[/iftags]]
++
++[[iftags +テーマ]]
+ [[=]]
+ [[module Rate]]
+ [[/=]]
+ 
 -> Oh yes, this was it: for the sake of painting this one image, the terrible event occurred. Otherwise, how could even the great Yoshihide have painted hell's torments so vividly? It was his cruel fate to lose his life in exchange for completing the screen. 
--> 
++> ああ、そうだったのだ。この一図を描くために、あの恐ろしい出来事が起こったのだ。でなければ、あの良秀ほどの絵師でも、どうして地獄の責め苦をこれほどありありと描けたろう。屏風を完成させることと引き換えに命を落とすとは、なんと残酷な運命だったことか。
+ > 
 -> In a sense, the hell in his painting was the hell into which Yoshihide himself, the greatest painter in the realm, was doomed one day to fall.
--
--@@ @@
--@@ @@
--@@ @@
--@@ @@
--@@ @@
--@@ @@
--
------
--
++> ある意味で、彼の絵の中の地獄は、天下第一の絵師である良秀自身が、いつか落ちる定めにあった地獄だったのだ。
+ 
+ @@ @@
+ @@ @@
+@@ -158,15 +174,15 @@
+ 
+ ----
+ 
 -This theme was made for Yoshihide's Proposal, written for the [https://scp-wiki.wikidot.com/pdcontest2025 Public Domain Contest 2025]. It is not recommended for usage outside this context.
 -
 -If you //do// want to use this theme regardless of that context, you can import it with the following code:
@@ -128,16 +134,22 @@ with `python3 review/build_review.py`; verify with
 -This theme also has four different presents, specified through the {{act}} parameter: {{prelude}}, {{1}}, {{2}}, and {{3}}.
 -
 -Below are examples of different properties of this theme.
--
------
--
--@@ @@
--@@ @@
--@@ @@
--@@ @@
--@@ @@
--@@ @@
--
++このテーマは、[https://scp-wiki.wikidot.com/pdcontest2025 Public Domain Contest 2025]のために書かれたYoshihide's Proposal向けに作られたものです。この文脈以外での使用は推奨されません。
++
++それでもこのテーマを使いたい場合は、次のコードでインポートできます。
++
++{{@@    [[include theme:ashes-to-ashes-jp]]@@}}
++
++このテーマには、{{act}}パラメータで指定できる4種類のプリセットもあります: {{prelude}}、{{1}}、{{2}}、{{3}}です。
++
++以下、このテーマのさまざまな要素の例を示します。
+ 
+ ----
+ 
+@@ -177,32 +193,32 @@
+ @@ @@
+ @@ @@
+ 
 -[[include component:image-block name=https://scp-wiki.wikidot.com/local--files/theme:ashes-to-ashes/overseer4.webp|caption=Was it worth it?]]
 -
 -+ Header 1
@@ -151,23 +163,38 @@ with `python3 review/build_review.py`; verify with
 -+++++ Header 5
 -
 -++++++ Header 6
--
--Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. [https://scp-wiki.wikidot.com/scp-5993 Ut enim ad minim veniam], //quis nostrud// **exercitation ullamco** //**laboris nisi ut aliquip**// ex ea commodo consequat. [[[9828d03c-c0b4-40d2-a6fb-600c8e08b8d3|Duis aute irure dolor]]] in reprehenderit[[footnote]]Footnote[[/footnote]] in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
--
++[[include component:image-block name=https://scp-wiki.wikidot.com/local--files/theme%3Aashes-to-ashes/overseer4.webp|caption=その価値はあったのか？]]
++
+++ 見出しレベル1
++
++++ 見出しレベル2
++
+++++ 見出しレベル3
++
++++++ 見出しレベル4
++
+++++++ 見出しレベル5
++
++++++++ 見出しレベル6
+ 
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. [https://scp-wiki.wikidot.com/scp-5993 Ut enim ad minim veniam], //quis nostrud// **exercitation ullamco** //**laboris nisi ut aliquip**// ex ea commodo consequat. [[[9828d03c-c0b4-40d2-a6fb-600c8e08b8d3|Duis aute irure dolor]]] in reprehenderit[[footnote]]Footnote[[/footnote]] in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+ 
 -[[collapsible show="Collapsible" hide="Hide Collapsible"]]
 -
 -= Surprise!
--
--[[/collapsible]]
--
--@@ @@
--
++[[collapsible show="折りたたみ" hide="折りたたみを隠す"]]
++
++= サプライズ！
+ 
+ [[/collapsible]]
+ 
+ @@ @@
+ 
 -> This is a blockquote. Tada!
 ->> Woah... blockquoteception!
--
--@@ @@
--
--[[footnoteblock]]
++> これは引用ブロックです。じゃーん！
++>> わあ……引用の中の引用！
  
- [[/iftags]]
+ @@ @@
+ 
 ```

@@ -8,10 +8,10 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 692 |
-| candidate.txt | 618 |
-| Added | +36 |
-| Review-stage comments | 0 of the +36 added lines |
-| Removed | -110 |
+| candidate.txt | 691 |
+| Added | +58 |
+| Review-stage comments | 0 of the +58 added lines |
+| Removed | -59 |
 | Hunks | 5 |
 
 ```diff
@@ -31,7 +31,7 @@ with `python3 review/build_review.py`; verify with
 +[[include :scp-jp:component:interwiki-style
  | priority=1
 -| theme=https://cdn.scpwiki.com/theme/en/basalt/normalize-min.css
-+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aadmo-jp/1
++| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Abasalt-jp/1
  ]]
  
 -[[include :scp-wiki:component:interwiki-style
@@ -45,7 +45,7 @@ with `python3 review/build_review.py`; verify with
 +**翻訳責任者:** AI
 +**翻訳年:** 2026
 +**原題:** ADMONITION Theme
-+**著作権者:** Liryn
++**著作権者:** Liryn & Placeholder McD
 +**作成年:** 2023
 +**初訳時参照リビジョン:** 66
 +**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:admo ソース]
@@ -62,17 +62,7 @@ with `python3 review/build_review.py`; verify with
  /* ADMONITION Theme           */
  /* [2023 Wikidot Theme]       */
  /*                            */
-@@ -23,9 +37,6 @@
- /*---- IMPORTS ----*/
- /*-----------------*/
- 
--@import url('https://fonts.bunny.net/css2?family=Poppins:wght@700&display=swap');
--@import url('https://fonts.bunny.net/css2?family=Spline+Sans:wght@400;700&display=swap');
--@import url('https://fonts.bunny.net/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
- 
- :root {
- 
-@@ -33,14 +44,14 @@
+@@ -33,14 +47,14 @@
      /*---- BEDROCK VARS ----*/
      /*----------------------*/
  
@@ -89,7 +79,7 @@ with `python3 review/build_review.py`; verify with
      --UI-font-primary: 'Spline Sans';
  
      --basalt-overtone: 100, 100, 100;
-@@ -438,19 +449,13 @@
+@@ -438,19 +452,13 @@
      font-weight: 450;
  }
  
@@ -106,11 +96,11 @@ with `python3 review/build_review.py`; verify with
  :root {
  
 -    --logo: url('http://scptestwiki.wikidot.com/local--files/sigma:basalt/basalt_scp_logo-for_lightmode.svg');
-+    --logo: url('http://scptestwiki.wikidot.com/local--files/sigma%3Abasalt/basalt_scp_logo-for_lightmode.svg');
++    --logo: url('https://scp-wiki.wikidot.com/local--files/theme%3Abasalt/basalt_scp_logo-for_lightmode.svg');
  
      --basalt-overtone: 73, 73, 73;
      --basalt-light-text-color: var(--admo-color-dark);
-@@ -582,111 +587,32 @@
+@@ -582,69 +590,60 @@
  }
  
  div.raisa_memo {
@@ -154,13 +144,25 @@ with `python3 review/build_review.py`; verify with
 ->[[/ift{$astral}gs]]
 -
 -[[iftags +theme]]
--
--[[=]]
++
++[[/iftags]]
++
++[[iftags +テーマ]]
++
++@@ @@
++
++[[=image https://scp-wiki.wikidot.com/local--files/theme%3Aadmo/basalt-theme-logo.svg style="max-width: 30rem; filter: invert(0.7);"]]
++
++@@ @@
+ 
+ [[=]]
 -[[module Rate]]
--[[/=]]
--
--@@ @@
--
++[[size 120%]]**任意のページで:**[[/size]]
++[[size 160%]]**{{@@[[include theme:admo-jp]]@@}}**[[/size]]
+ [[/=]]
+ 
+ @@ @@
+ 
 -[[=image https://scp-wiki.wikidot.com/local--files/theme:admo/basalt-theme-logo.svg style="max-width: 30rem; filter: invert(0.7);"]]
 -
 -@@ @@
@@ -185,49 +187,25 @@ with `python3 review/build_review.py`; verify with
 -+ Astral Variant
 -
 -**{{@@[[include @@[[span style="opacity: 70%;"]]@@:scp-wiki:@@[[/span]]@@theme:admo @@##lime|astral=a##@@]]@@}}**
--
--@@ @@
--
--@@ @@
--
--= [[span class="cond"]]@@[[span class="@@**cond**@@"]]@@[[/span]]
--
--= [[span class="ctrl"]]@@[[span class="@@**ctrl**@@"]]@@[[/span]]
--
--@@ @@
--
--[[div class="admo-end_card"]]
--[[div class="admo-credits"]]
--[[div]]
--+ [[span class="ctrl"]]ADMO[[/span]]
--[[/div]]
--[[div]]
--[[span class="cond"]]FEATURING @@ @@ **LIRYN**[[/span]]
--[[span class="cond"]]MORE @@ @@ **STUFF HERE**[[/span]]
--[[/div]]
--[[/div]]
--[[/div]]
--
--@@ @@
--
--[[=]]
--[[collapsible show="+ Show formatting" hide="- Hide"]]
--[[<]]
--[[code]]
--[[div class="admo-end_card"]]
--[[div class="admo-credits"]]
--[[div]]
--+ [[span class="ctrl"]]ADMO[[/span]]
--[[/div]]
--[[div]]
--[[span class="cond"]]FEATURING @@ @@ **AUTHOR**[[/span]]
--[[/div]]
--[[/div]]
--[[/div]]
--[[/code]]
--[[/<]]
--[[/collapsible]]
--[[/=]]
+++ 情報
++
++@@ @@
++
++@@ @@
++
+++ Astralバリアント
++
++**{{@@[[include theme:admo-jp @@##lime|astral=a##@@]]@@}}**
  
- [[/iftags]]
+ @@ @@
+ 
+@@ -671,7 +670,7 @@
+ @@ @@
+ 
+ [[=]]
+-[[collapsible show="+ Show formatting" hide="- Hide"]]
++[[collapsible show="+ 書式を表示" hide="- 隠す"]]
+ [[<]]
+ [[code]]
+ [[div class="admo-end_card"]]
 ```

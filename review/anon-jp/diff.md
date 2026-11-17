@@ -15,12 +15,12 @@ adjudicated explanation.
 | | Lines |
 |---|---|
 | original.txt | 568 |
-| candidate.txt | 419 |
-| Added | +45 |
-| Review-stage comments | 0 of the +45 added lines |
-| Removed | -194 |
-| Changed | 239 |
-| Change blocks | 14 |
+| candidate.txt | 441 |
+| Added | +62 |
+| Review-stage comments | 0 of the +62 added lines |
+| Removed | -189 |
+| Changed | 251 |
+| Change blocks | 19 |
 | Diff sections (context 3) | 2 |
 
 ## Changed lines by auto-class (heuristic)
@@ -28,8 +28,8 @@ adjudicated explanation.
 | Auto-class | Blocks | Changed lines |
 |---|---|---|
 | mechanical | 4 | 8 |
-| supplement | 4 | 42 |
-| residual | 6 | 189 |
+| supplement | 6 | 45 |
+| residual | 9 | 198 |
 
 ## Change-block index
 
@@ -38,25 +38,30 @@ adjudicated explanation.
 | 1 | 1 | 1–8 | 1–3 | +3/−8 | supplement | [[include :scp-jp:component:interwiki-style |
 | 2 | 1 | 11–22 | 6–6 | +1/−12 | residual | [[iftags +テーマ]] |
 | 3 | 1 | 24–30 | 8–17 | +10/−7 | supplement | [[include :scp-jp:credit:start-preview]] |
-| 4 | 1 | 32–36 | 19–19 | +1/−5 | residual | Parawatch Anon向けのCreepypastaベーステーマです。 |
-| 5 | 1 | 38–45 | 21–21 | +1/−8 | residual | **使い方:** @@[[include theme:anon-jp]]@@ |
-| 6 | 1 | 47–52 | 23–23 | +1/−6 | supplement | **基盤:** Creepypasta（theme:creepypasta-jp を @import で読み込み） |
-| 7 | 1 | 54–55 | 25–25 | +1/−2 | residual | [[module CSS]] |
-| 8 | 1 | 57–62 | 27–27 | +1/−6 | supplement | @import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Acreepypa… |
-| 9 | 1 | 64–196 | — | +0/−133 | residual | [[div class="code"]] |
-| 10 | 2 | 547–547 | 379–379 | +1/−1 | mechanical | (blank lines only) |
-| 11 | 2 | 551–551 | 383–383 | +1/−1 | mechanical | (blank lines only) |
-| 12 | 2 | 556–556 | 388–388 | +1/−1 | mechanical | (blank lines only) |
-| 13 | 2 | 560–560 | 392–392 | +1/−1 | mechanical | (blank lines only) |
-| 14 | 2 | 565–567 | 397–418 | +22/−3 | residual | @@ |
+| 4 | 1 | 32–36 | 19–19 | +1/−5 | supplement | [[include :scp-jp:component:license-box-backend \|author=The Great Hippo]] |
+| 5 | 1 | 38–45 | 21–25 | +5/−8 | residual | > **ファイル名:** gradient-anon.png |
+| 6 | 1 | 47–52 | 27–31 | +5/−6 | residual | > **ファイル名:** parawatchPRIDE.png |
+| 7 | 1 | 54–55 | 33–37 | +5/−2 | residual | > **ファイル名:** rook-anon.png |
+| 8 | 1 | 57–62 | 39–39 | +1/−6 | supplement | [[include :scp-jp:component:license-box-end]] |
+| 9 | 1 | 64–67 | 41–41 | +1/−4 | residual | Parawatch Anon向けのCreepypastaベーステーマです。 |
+| 10 | 1 | 69–69 | 43–43 | +1/−1 | residual | **使い方:** @@[[include theme:anon-jp]]@@ |
+| 11 | 1 | 71–71 | 45–45 | +1/−1 | supplement | **基盤:** Creepypasta（theme:creepypasta-jp を @import で読み込み） |
+| 12 | 1 | 73–73 | 47–47 | +1/−1 | residual | [[module CSS]] |
+| 13 | 1 | 75–75 | 49–49 | +1/−1 | supplement | @import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Acreepypa… |
+| 14 | 1 | 77–196 | — | +0/−120 | residual | If, for some reason, you wish to continue using the pastel yellow from the Cr… |
+| 15 | 2 | 547–547 | 401–401 | +1/−1 | mechanical | (blank lines only) |
+| 16 | 2 | 551–551 | 405–405 | +1/−1 | mechanical | (blank lines only) |
+| 17 | 2 | 556–556 | 410–410 | +1/−1 | mechanical | (blank lines only) |
+| 18 | 2 | 560–560 | 414–414 | +1/−1 | mechanical | (blank lines only) |
+| 19 | 2 | 565–567 | 419–440 | +22/−3 | residual | @@ |
 
 ## Full diff
 
 <details>
-<summary>Section 1 — original 1–199 · candidate 1–31 · +19/−187 · residual, supplement</summary>
+<summary>Section 1 — original 1–199 · candidate 1–53 · +36/−182 · residual, supplement</summary>
 
 ```diff
-@@ -1,199 +1,31 @@
+@@ -1,199 +1,53 @@
 -[[module CSS]]
 -@import url(https://scp-wiki.wdfiles.com/local--code/theme%3Acreepypasta/1);
 -@import url(https://scp-wiki.wdfiles.com/local--code/theme%3Aanon/1);
@@ -107,7 +112,7 @@ adjudicated explanation.
 -> **License:** [https://creativecommons.org/licenses/by-sa/3.0/ Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)]
 -> **Source Link:** https://scp-wiki.wdfiles.com/local--files/theme%3Aanon/parawatch-anon.png
 -> **Note:** Edited by [[*user Lt Flops]]. Recoloured logo.
-+Parawatch Anon向けのCreepypastaベーステーマです。
++[[include :scp-jp:component:license-box-backend |author=The Great Hippo]]
  
 -> **Filename:** rook-anon.png
 -> **Author:** [[*user The Great Hippo]]
@@ -117,7 +122,11 @@ adjudicated explanation.
 -[[/<]]
 -[[include :scp-wiki:info:end]]
 -[[/>]]
-+**使い方:** @@[[include theme:anon-jp]]@@
++> **ファイル名:** gradient-anon.png
++> **作者:** [[*user The Great Hippo]]
++> **ライセンス:** CC BY-SA 3.0
++> **ソースリンク:** https://scp-wiki.wdfiles.com/local--files/theme%3Aanon/gradient-anon.png
++> **備考:** [[*user Lt Flops]]により編集。グラデーションの色調を変更。
  
 -[[div class="blockquote"]]
 -[[=]]
@@ -125,11 +134,19 @@ adjudicated explanation.
 -[[/=]]
 -----
 -This is the Parawatch Anon Theme, by [[*user Lt Flops]].
-+**基盤:** Creepypasta（theme:creepypasta-jp を @import で読み込み）
++> **ファイル名:** parawatchPRIDE.png
++> **作者:** [[*user The Great Hippo]]
++> **ライセンス:** CC BY-SA 3.0
++> **ソースリンク:** https://scp-wiki.wdfiles.com/local--files/mkwhiteout-cia-pride/parawatchPRIDE.png
++> **備考:** 原語版のエントリは parawatch-anon.png を対象とする（[[*user Lt Flops]]により再配色）。候補が実際に読み込むのはそのPRIDE版ファイルであり、原語版のCSSも同じファイルを読み込んでいる。
  
 -It is a variant version of the **[[[theme:creepypasta|Creepypasta Theme]]]**, created by [[*user The Great Hippo]].
 -[[/div]]
-+[[module CSS]]
++> **ファイル名:** rook-anon.png
++> **作者:** [[*user The Great Hippo]]
++> **ライセンス:** CC BY-SA 3.0
++> **ソースリンク:** https://scp-wiki.wdfiles.com/local--files/theme%3Aanon/rook-anon.png
++> **備考:** [[*user Lt Flops]]により編集。ロゴを再配色。なお、このファイルは原語版のデモ展示でのみ使用されており、候補は読み込んでいない。
  
 -[[div class="blockquote"]]
 -[[=]]
@@ -137,21 +154,26 @@ adjudicated explanation.
 -[[/=]]
 -----
 -To use this theme, please copy this syntax onto the top of your page:
-+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Acreepypasta-jp/1');
++[[include :scp-jp:component:license-box-end]]
  
 -[[div class="code"]]
 -@@[[include :scp-wiki:theme:creepypasta]]@@
 -@@[[include :scp-wiki:theme:anon]]@@
 -[[/div]]
--
++Parawatch Anon向けのCreepypastaベーステーマです。
+ 
 -[[span class="title"]]What is this theme used for?[[/span]]
--
++**使い方:** @@[[include theme:anon-jp]]@@
+ 
 -This theme provides a different colour scheme for the **[[[parawatch-hub|Parawatch Wiki]]]** forum structure.
--
++**基盤:** Creepypasta（theme:creepypasta-jp を @import で読み込み）
+ 
 -It is suitable for use in Parawatch articles.
--
++[[module CSS]]
+ 
 -[[span class="title"]][OPTIONAL][[/span]]
--
++@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Acreepypasta-jp/1');
+ 
 -If, for some reason, you wish to continue using the pastel yellow from the Creepypasta Theme, copy this onto your page //under// the above code:
 -
 -[[div class="code"]]
@@ -280,10 +302,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 2 — original 544–568 · candidate 376–419 · +26/−7 · mechanical, residual</summary>
+<summary>Section 2 — original 544–568 · candidate 398–441 · +26/−7 · mechanical, residual</summary>
 
 ```diff
-@@ -544,25 +376,44 @@
+@@ -544,25 +398,44 @@
   .hl-brackets{
       color: var(--fg);
  }

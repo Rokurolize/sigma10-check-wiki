@@ -276,7 +276,7 @@ adjudicated explanation.
 -@@[[include :scp-wiki:theme:black-highlighter-theme]]@@
 -@@[[include :scp-wiki:theme:fuladh-theme]]@@
 +@@[[include :scp-jp:theme:black-highlighter-theme]]@@
-+@@[[include :scp-jp:theme:fuladh-theme]]@@
++@@[[include :scp-jp:theme:fuladh-theme-jp]]@@
  [[/div]]
  
  @@ @@

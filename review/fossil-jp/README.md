@@ -85,8 +85,8 @@ Adjudication for this README (every specific block was read against the bytes): 
 
 ### 2. Includes and components
 
-- **What:** Two include changes. (1) The base: `:scp-wiki:component:sigma-plus` (original L1) becomes `[[include component:sigma-plus-jp]]` (candidate L1, B1) — the JP port candidate of the sigma-plus component in its bare include form; the same swap is this file's FIX-P4 hunk (pattern-4 repoint of base-theme delivery to JP port candidates). The usage prose's component link follows in text form (candidate L32: `Fossil Theme は [[[component:sigma-plus|sigma-plus]]] を土台にしたテーマです。`, B9). (2) The image exhibit's include is repointed `:scp-jp:component:image-block` (candidate L36, B10) while its `name=` asset stays on EN storage (section 4). The candidate's remaining includes are the frame (section 3) and the credit pair (section 1); its usage line names the candidate itself (candidate L30: `[[include :scp-jp:theme:fossil]]`, the recorded convention of section 11).
-- **Why:** P1 (KB-15) for the exhibit repoint; T8/KB-64 for the sigma-plus base form — the port's base is the JP sigma-plus candidate, and the include's final posted form is the posting-procedure convention the ledger dispositions.
+- **What:** Two include changes. (1) The base: `:scp-wiki:component:sigma-plus` (original L1) becomes `[[include component:sigma-plus-jp]]` (candidate L1, B1) — the JP port candidate of the sigma-plus component in its bare include form; the same swap is this file's FIX-P4 hunk (pattern-4 repoint of base-theme delivery to JP port candidates). The usage prose's component link follows in text form (candidate L32: `Fossil Theme は [[[component:sigma-plus|sigma-plus]]] を土台にしたテーマです。`, B9). (2) The image exhibit's include is repointed `:scp-jp:component:image-block` (candidate L36, B10) while its `name=` asset stays on EN storage (section 4). The candidate's remaining includes are the frame (section 3) and the credit pair (section 1); its usage line names the candidate itself. As built that line (candidate L30) read `> {{@@[[include :scp-jp:theme:fossil]]@@}}`, inside the `{{@@...@@}}` braces: the repoint changed the branch prefix but kept the plain slug, naming a page that does not exist on scp-jp. The usage-example population sweep has since completed it to `> {{@@[[include :scp-jp:theme:fossil-jp]]@@}}` (see the per-theme record). That plain form was not the posting-procedure convention recorded in section 11, which concerns the sigma-plus base include only.
+- **Why:** P1 (KB-15) for the exhibit repoint; T8/KB-64 for the sigma-plus base form — the port's base is the JP sigma-plus candidate, and the include's final posted form is the posting-procedure convention the ledger dispositions. For the usage line, the as-built repoint satisfied the branch half of P1 only; the sweep's completion to the posting name is what brings it under the rule.
 - **Verify:** `grep -n '\[\[include' candidate.txt` — five live includes plus the escaped usage line, as listed.
 - **Disposition:** DISPOSITIONED (the sigma-plus item, P1, posting-procedure convention class; section 11); the exhibit repoint is applied.
 
@@ -159,6 +159,12 @@ Adjudication for this README (every specific block was read against the bytes): 
 - **Why:** Verification claims name the cheapest deciding check and its result, not a general assurance.
 - **Verify:** Re-run the checker on `pages/theme:fossil-jp.txt` and `python3 review/build_review.py --check` in this repo.
 - **Disposition:** PASS (GOSIGN2-LEDGER (b) row 90; go-sign, COMPLETION-REPORT §10).
+
+## Per-theme record
+
+### The usage example's posting name
+
+The usage example at candidate L30 as built read `> {{@@[[include :scp-jp:theme:fossil]]@@}}`, inside the `{{@@...@@}}` braces: the porting wave's repoint changed the branch prefix but left the plain name, so the example named a page that does not exist on scp-jp (the campaign's settled rule for usage examples, AGENTS.md §6). The usage-example population sweep has since completed the reference to this candidate's posting name, `:scp-jp:theme:fossil-jp` — candidate L30 now reads `> {{@@[[include :scp-jp:theme:fossil-jp]]@@}}` (sweep report SWEEP-USAGE.md in the campaign record, R/review-scout/; canonical commit b5cb724), one of its 287 repairs across 157 candidates. This package documents the corrected candidate; its stamp reads STALE against the pre-repair verdict, by design.
 
 ## Appendix — heuristic and residue mass, resolved by shape
 

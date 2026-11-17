@@ -136,7 +136,7 @@ with `python3 review/build_review.py`; verify with
 -@@[[include :scp-wiki:theme:black-highlighter-theme]]@@
 -@@[[include :scp-wiki:theme:galactic-theme]]@@
 +@@[[include :scp-jp:theme:black-highlighter-theme]]@@
-+@@[[include :scp-jp:theme:galactic-theme]]@@
++@@[[include :scp-jp:theme:galactic-theme-jp]]@@
  [[/div]]
  
 -+ Examples

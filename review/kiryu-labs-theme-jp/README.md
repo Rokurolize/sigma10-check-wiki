@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:kiryu-labs-theme-jp — origin EN, population #104 [GOSIGN2-LEDGER (b) row 104]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 01c72c4c65e02882d4ef97fa5a9ef883d9b907d3c8ea97d63adf6127b7bf6fa0); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 0682b577c0b8e4574bb57ea0127da93e2cdca77dc7ddf6145af41718344616e0); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 3 errors / 0 warns / 1 info (hotlink×2, pseudo-ref×1); standing classes dispositioned in register c1 [T1-ROWS row 94; GOSIGN2-LEDGER (b) row 104]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — notice clip ≤375 + 768px sidebar×notice + WebKit CC "S" (all cross-cutting); sample 884px@768 static-credit-replica overflow; webkit `url-https` 404 = shared artifact; no candidate-CSS defect. [RENDER-ROWS-1 (RENDER-S2-B)]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 104, source LOCALIZE-S2-B]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 104]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 104]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:kiryu-labs-theme-jp.txt sha256:01c72c4c65e02882d4ef97fa5a9ef883d9b907d3c8ea97d63adf6127b7bf6fa0; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit fe4e737eb6776e692b2d9d77c779f7afbcdc4389; candidate file pages/theme:kiryu-labs-theme-jp.txt sha256:0682b577c0b8e4574bb57ea0127da93e2cdca77dc7ddf6145af41718344616e0; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status

@@ -73,7 +73,7 @@ with `python3 review/build_review.py`; verify with
 ++ 使用方法: 機動航空部隊CSSテーマ
 +* これは[[[https://scpko.wikidot.com/fmaf-hub|機動航空部隊（韓国語版）]]]用のオリジナルテーマです。
 +* このテーマを適用するには、ページの最上部に以下のコードを追加してください。
-+> @@[[include :scp-jp:theme:fmaf-theme]]@@
++> @@[[include :scp-jp:theme:fmaf-theme-jp]]@@
  
  [[/tab]]
 -[[tab design]]

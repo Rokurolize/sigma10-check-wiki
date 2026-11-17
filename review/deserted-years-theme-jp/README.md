@@ -3,7 +3,8 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:deserted-years-theme-jp — origin CN, population #182 [GOSIGN2-LEDGER (b) row 182]
-- Overall: PASS — passed at the ledger determination; no OPEN items [GOSIGN2-LEDGER (b) row 182]
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 26cebb6b1e42b8bb405f2617e8d29d333a6f37eb4637f1fe9628ab78ac4d6290); verdict not carried over, re-judgement required
+> verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 7 errors / 1 warn / 1 info (hotlink×7); standing classes dispositioned in register c1 [T1-ROWS row 217; GOSIGN2-LEDGER (b) row 182]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page runtime-hotlink site-theme chain only (cleanest run of the 17); sample credit-modal (preview-form), page-overflow 335px@320 chromium + 334px@320 webkit + 884px@768 both engines (cross-cutting static-credit), runtime-hotlink site-theme chain + sample font host; T3 complete in the final report (pending in the partial) and clean on both pages (page credit modal opens; sample black-on-black redaction by design; subtitle doubling + preview-notice clipping cross-cutting). [RENDER-ROWS-RERUN16 (CN5) — supersedes the RENDER-ROWS-2 row for this theme, rule S1]
 - Engine coverage: full (chromium+webkit, both pages) [RENDER-ROWS-RERUN16 (CN5)]
@@ -11,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 2 [LOCALIZE-ROWS row 181, source LOCALIZE-S2-D]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 181]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 182]
-- Computed against: canonical commit 8c62b7b5207f684c8373dfe00f28b90427d28027; candidate file pages/theme:deserted-years-theme-jp.txt sha256:610f5be5af13798f8034b6b7150688a72ef789a5abb3beefbd1727e45b2e4d11; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 722ceb5c949172bb5185d51ef56ce4119ee4fa91; candidate file pages/theme:deserted-years-theme-jp.txt sha256:26cebb6b1e42b8bb405f2617e8d29d333a6f37eb4637f1fe9628ab78ac4d6290; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 

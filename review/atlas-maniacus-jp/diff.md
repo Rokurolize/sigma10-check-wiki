@@ -8,16 +8,16 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 383 |
-| candidate.txt | 414 |
-| Added | +133 |
-| Review-stage comments | 0 of the +133 added lines |
-| Removed | -107 |
+| candidate.txt | 411 |
+| Added | +131 |
+| Review-stage comments | 0 of the +131 added lines |
+| Removed | -108 |
 | Hunks | 6 |
 
 ```diff
 --- original.txt
 +++ candidate.txt
-@@ -1,141 +1,156 @@
+@@ -1,141 +1,154 @@
 -[[include :scpko:component:toggle-sidebar]]
 -
 -[[iftags +테마]]
@@ -50,13 +50,11 @@ with `python3 review/build_review.py`; verify with
 +**翻訳責任者:** AI
 +**翻訳年:** 2026
 +**原題:** 아틀라스 마니아쿠스 테마
-+**著作権者:** 原語版ページの作成者に同じ（scpko の theme:atlas-maniacus）
++**著作権者:** thd-glasses
 +**作成年:** 2025
 +**初訳時参照リビジョン:** 4
 +**元記事リンク:** [*https://scpko.wikidot.com/theme:atlas-maniacus 아틀라스 마니아쿠스 테마]
 +[[include :scp-jp:credit:end-preview]]
-+
-+[[include :scp-jp:component:toggle-sidebar]]
 +
 +[[include :scp-jp:info:start]]
 +
@@ -92,7 +90,7 @@ with `python3 review/build_review.py`; verify with
 +* このテーマは[[[atlas-maniacus|アトラス・マニアクスカノン]]]用のCSSテーマです。
 +* 使用するページの最上部に、次の構文を挿入してください。
 +
-+> @@[[include :scp-jp:theme:atlas-maniacus]]@@
++> @@[[include :scp-jp:theme:atlas-maniacus-jp]]@@
 +
 +* より多様な使い方については、下の「応用方法」タブを参照してください。
  
@@ -164,7 +162,7 @@ with `python3 review/build_review.py`; verify with
  [[div class="blockquote"]]
  
 -@@[[include :scpko:theme:atlas-maniacus@@
-+@@[[include :scp-jp:theme:atlas-maniacus@@
++@@[[include :scp-jp:theme:atlas-maniacus-jp@@
  |alt=**1**
 -|icon=**(헤더 아이콘 주소)**
 -|title=**(헤더 제목)**
@@ -182,7 +180,7 @@ with `python3 review/build_review.py`; verify with
  [[div class="blockquote"]]
  
 -@@[[include :scpko:theme:atlas-maniacus@@
-+@@[[include :scp-jp:theme:atlas-maniacus@@
++@@[[include :scp-jp:theme:atlas-maniacus-jp@@
  |alt=**2**
 -|goi=**(요주의 단체 식별자)**
 +|goi=**(要注意団体識別子)**
@@ -265,7 +263,7 @@ with `python3 review/build_review.py`; verify with
  --]
  
  [[/div]]
-@@ -146,14 +161,28 @@
+@@ -146,14 +159,27 @@
  @@@@
  @@@@
  
@@ -279,6 +277,7 @@ with `python3 review/build_review.py`; verify with
  
  [[div class="hiding-codes"]]
 -[[module CSS show="true"]]
+-@import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
 +[[/div]]
 +
 +[[/collapsible]]
@@ -290,7 +289,6 @@ with `python3 review/build_review.py`; verify with
 +@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 +@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
 +@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
- @import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
 +
 +/*
 +    아틀라스 마니아쿠스 / Atlas Maniacus — Ported for SCP-JP (theme:atlas-maniacus rev 4 on scpko).
@@ -299,7 +297,7 @@ with `python3 review/build_review.py`; verify with
  
  :root {
    --icon-{$alt}: url('{$icon}');
-@@ -164,7 +193,7 @@
+@@ -164,7 +190,7 @@
    --title-goi-{$alt}: var(--title-{$goi});
    --sub-title-goi-{$alt}: var(--sub-title-{$goi});
  
@@ -308,7 +306,7 @@ with `python3 review/build_review.py`; verify with
    --title-scp: "아틀라스＆재단";
    --sub-title-scp: "도시의 평화를 지킵니다"; /* Securing the City's Peace */
  
-@@ -187,7 +216,7 @@
+@@ -187,7 +213,7 @@
  }
  
  div#container-wrap {
@@ -317,7 +315,7 @@ with `python3 review/build_review.py`; verify with
    background-size: auto 300px;
  }
  
-@@ -316,13 +345,7 @@
+@@ -316,13 +342,7 @@
    }
  }
  
@@ -332,7 +330,7 @@ with `python3 review/build_review.py`; verify with
  .hiding-codes {
    display: block;
  }
-@@ -378,6 +401,14 @@
+@@ -378,6 +398,14 @@
  #wiki-tab-0-1 table.wiki-content-table:nth-of-type(3) tr:nth-child(4n-1) th:last-child {
    background-color: #F8F;
  }
@@ -342,7 +340,7 @@ with `python3 review/build_review.py`; verify with
 +[[/collapsible]]
 +
 +[[include :scp-jp:component:license-box-backend
-+|author=scpko theme:atlas-maniacus の作者]]
++|author=thd-glasses]]
 +
 +> **画像・フォントの出典:** 原語版の theme:atlas-maniacus の記載に従います。KO 側の添付・ウェブフォントは候補ページに再ホストするか Google Fonts の同等書体に差し替えています。原語版にライセンス表記が無い画像は、投稿前に著者へ確認してください。
 +

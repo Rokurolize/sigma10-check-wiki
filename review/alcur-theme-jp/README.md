@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:alcur-theme-jp — origin EN, population #53 [GOSIGN2-LEDGER (b) row 53]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now a95c0d15e17f069373b91d394f271a8ef582f3023ab029878937a932b8bce4ad); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 36b0ed118831768bd5ced220e31de8d2a59caa1fba275a5dfe24ff9e63b0c753); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 12 errors / 1 warn / 1 info (hotlink×10, pseudo-ref×2); standing classes dispositioned in register c1 [T1-ROWS row 53; GOSIGN2-LEDGER (b) row 53]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — candidate-inherent page-overflow 435–437px@320/375 + Alcur Hospital wordmark clipped at 320; cdn.scpwiki.com direct link. [RENDER-ROWS-1 (RENDER-S2-A)]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 53, source LOCALIZE-S2-A]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 53]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 53]
-- Computed against: canonical commit 0f708c39834813a98ffed2a6c96f4d5c38c9cdfb; candidate file pages/theme:alcur-theme-jp.txt sha256:a95c0d15e17f069373b91d394f271a8ef582f3023ab029878937a932b8bce4ad; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 722ceb5c949172bb5185d51ef56ce4119ee4fa91; candidate file pages/theme:alcur-theme-jp.txt sha256:36b0ed118831768bd5ced220e31de8d2a59caa1fba275a5dfe24ff9e63b0c753; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 Status: complete — skeleton by classify_hunks.py 0.1.0; every SLOT in the skeleton is resolved in the sections below and the Appendix.

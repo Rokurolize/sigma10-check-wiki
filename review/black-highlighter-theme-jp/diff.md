@@ -8,9 +8,9 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 240 |
-| candidate.txt | 315 |
-| Added | +228 |
-| Review-stage comments | 0 of the +228 added lines |
+| candidate.txt | 314 |
+| Added | +227 |
+| Review-stage comments | 0 of the +227 added lines |
 | Removed | -162 |
 | Hunks | 3 |
 
@@ -120,7 +120,7 @@ with `python3 review/build_review.py`; verify with
  .title-font {
      font-family: var(--title-font);
      font-weight: 700;
-@@ -50,56 +87,88 @@
+@@ -50,56 +87,87 @@
      --CRSV: 0;
      font-family: var(--mono-font);
  }
@@ -147,7 +147,6 @@ with `python3 review/build_review.py`; verify with
 +**原題:** Black Highlighter Theme
 +**著作権者:** Woedenaz、Croquembouche
 +**作成年:** 2019
-+**初訳時参照リビジョン:** 135
 +**改訳時参照リビジョン:** 135
 +**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:black-highlighter-theme ソース]
 +[[include :scp-jp:credit:end-preview]]
@@ -253,7 +252,7 @@ with `python3 review/build_review.py`; verify with
  | color1-name=Payne's Grey
  | color1-variable=--gray-monochrome
  | color1-info=(66, 66, 72)
-@@ -131,110 +200,116 @@
+@@ -131,110 +199,116 @@
  | subcolor6-info=(221, 102, 17)
  ]]
  

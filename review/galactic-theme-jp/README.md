@@ -86,8 +86,8 @@ Adjudication for this README (every specific block was read against the bytes): 
 
 ### 2. Includes and components
 
-- **What:** Every live foreign include is repointed: the two head frames and the tail frame to `:scp-jp:component:interwiki-style` (B3, B5, B70), the colors exhibit's `:scp-jp:component:theme-squares` (candidate L37–38, B9), the tail furniture pair `:scp-jp:component:toggle-sidebar-bhl` and `:scp-jp:component:centered-header-bhl` (candidate L1048–1049, B68), the credit pair (section 1), and the base include `:scp-jp:theme:black-highlighter-theme` (candidate L2). The usage exhibit's escaped BHL include follows (candidate L89–90, B23). No live include in the candidate names a `:scp-wiki:` target.
-- **Why:** P1 (KB-15) for the component repoints; T9 for the base include — a dependent theme imports the base's JP port candidate, never the raw upstream delivery.
+- **What:** Every live foreign include is repointed: the two head frames and the tail frame to `:scp-jp:component:interwiki-style` (B3, B5, B70), the colors exhibit's `:scp-jp:component:theme-squares` (candidate L37–38, B9), the tail furniture pair `:scp-jp:component:toggle-sidebar-bhl` and `:scp-jp:component:centered-header-bhl` (candidate L1048–1049, B68), the credit pair (section 1), and the base include `:scp-jp:theme:black-highlighter-theme` (candidate L2). The usage exhibit's escaped includes follow (candidate L89–90, B23): the BHL line `@@[[include :scp-jp:theme:black-highlighter-theme]]@@` at candidate L89, and the theme's own line at candidate L90. As built the own line read `@@[[include :scp-jp:theme:galactic-theme]]@@`: the repoint changed the branch prefix but kept the plain slug, naming a page that does not exist on scp-jp; the usage-example population sweep has since completed it to `@@[[include :scp-jp:theme:galactic-theme-jp]]@@` (see the per-theme record). No live include in the candidate names a `:scp-wiki:` target.
+- **Why:** P1 (KB-15) for the component repoints; T9 for the base include — a dependent theme imports the base's JP port candidate, never the raw upstream delivery. For the usage exhibit's own line, the as-built repoint satisfied the branch half of P1 only; the sweep's completion to the posting name is what brings it under the rule.
 - **Verify:** `grep -n '\[\[include' candidate.txt` against the list above.
 - **Disposition:** Applied.
 
@@ -160,6 +160,12 @@ Adjudication for this README (every specific block was read against the bytes): 
 - **Why:** Verification claims name the cheapest deciding check and its result, not a general assurance.
 - **Verify:** Re-run the checker on `pages/theme:galactic-theme-jp.txt` and `python3 review/build_review.py --check` in this repo.
 - **Disposition:** PASS (GOSIGN2-LEDGER (b) row 93; go-sign, COMPLETION-REPORT §10).
+
+## Per-theme record
+
+### The usage example's posting name
+
+The usage example at candidate L90 as built read `@@[[include :scp-jp:theme:galactic-theme]]@@`: the porting wave's repoint changed the branch prefix but left the plain name, so the example named a page that does not exist on scp-jp (the campaign's settled rule for usage examples, AGENTS.md §6). The usage-example population sweep has since completed the reference to this candidate's posting name, `:scp-jp:theme:galactic-theme-jp` — candidate L90 now reads `@@[[include :scp-jp:theme:galactic-theme-jp]]@@` (sweep report SWEEP-USAGE.md in the campaign record, R/review-scout/; canonical commit b5cb724), one of its 287 repairs across 157 candidates. This package documents the corrected candidate; its stamp reads STALE against the pre-repair verdict, by design.
 
 ## Appendix — heuristic and residue mass, resolved by shape
 

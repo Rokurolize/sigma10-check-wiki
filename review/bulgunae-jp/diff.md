@@ -8,9 +8,9 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 1283 |
-| candidate.txt | 1286 |
-| Added | +47 |
-| Review-stage comments | 0 of the +47 added lines |
+| candidate.txt | 1304 |
+| Added | +65 |
+| Review-stage comments | 0 of the +65 added lines |
 | Removed | -44 |
 | Hunks | 9 |
 
@@ -40,7 +40,7 @@ with `python3 review/build_review.py`; verify with
 +
 ++ 使用方法
 +
-+> @@[[include :scp-jp:theme:bulgunae]]@@
++> @@[[include :scp-jp:theme:bulgunae-jp]]@@
 +
 +----
 +
@@ -140,7 +140,7 @@ with `python3 review/build_review.py`; verify with
      :root:lang(ko) {
      --swatch-background: var(--black-monochrome);
      --header-subtitle: "재단 대한민국 지역사령부 제21K 기지";
-@@ -1269,15 +1272,15 @@
+@@ -1269,15 +1272,33 @@
  .page-source {
     background: rgb(var(----swatch-background));
  }
@@ -163,6 +163,24 @@ with `python3 review/build_review.py`; verify with
 -> @@[[include :scpko:theme:bulgunae]]@@
 -
 -[[/iftags]]
++[[module css]]
++:root {
++    --rating-module-text-color: var(--swatch-menutxt-light-color);
++    --rating-module-button-color:  var(--swatch-menutxt-light-color);
++}
++
++#page-content > div:nth-child(1) {
++    padding: 0.75rem;
++}
++
++.page-rate-widget-box {
++    margin: 0;
++    background:
++     linear-gradient(0deg,
++     rgba(var(--black-monochrome),.55) 0,
++     rgba(var(--swatch-primary-darkest),.45)) !important;
++}
++[[/module]]
 +[[include :scp-jp:component:interwiki-style
 +| priority=3
 +| theme= https://sigma10-jp-test.wdfiles.com/local--code/theme%3Abulgunae-jp/1

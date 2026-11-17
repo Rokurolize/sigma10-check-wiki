@@ -60,7 +60,7 @@ with `python3 review/build_review.py`; verify with
 +このテーマを自分のページに読み込むには、ページ内の好きな場所に次のテキストを置いてください:
  [[div class="code"]]
 -@@[[include :scp-wiki:theme:golden-feast]]@@
-+@@[[include :scp-jp:theme:golden-feast]]@@
++@@[[include :scp-jp:theme:golden-feast-jp]]@@
  [[/div]]
  @@@@
  -----

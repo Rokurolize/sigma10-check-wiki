@@ -59,14 +59,14 @@ with `python3 review/build_review.py`; verify with
 -在你的作品开头添加如下文本以应用此版式：
 -> [[include :scp-wiki-cn:theme:blackinblack]]
 +このテーマを適用するには、作品の冒頭に次のテキストを追加してください。
-+> @@[[include :scp-jp:theme:blackinblack]]@@
++> @@[[include :scp-jp:theme:blackinblack-jp]]@@
  
 -本版式同样也与[[[theme:basalt|玄武岩]]]版式兼容，在你的作品开头添加如下文本以同时应用此版式与玄武岩版式：
 -> [[include :scp-wiki-cn:theme:blackinblack]]
 -> [[include :scp-wiki-cn:theme:basalt]]
 +このテーマは[[[https://scp-wiki.wikidot.com/theme:basalt|玄武岩]]]テーマとも互換性があります。両方を同時に適用するには、作品の冒頭に次のテキストを追加してください。
-+> @@[[include :scp-jp:theme:blackinblack]]@@
-+> @@[[include :scp-jp:theme:basalt]]@@
++> @@[[include :scp-jp:theme:blackinblack-jp]]@@
++> @@[[include :scp-jp:theme:basalt-jp]]@@
  
 -本版式同样也与[[[theme:black-highlighter-theme|黑色标记笔]]]版式兼容，但你不应该使用黑标，他妈的黑标。
 +このテーマは[[[theme:black-highlighter-theme|ブラック・ハイライター]]]テーマとも互換性があります。ただし、ブラック・ハイライターは使うべきではありません。あんなものは知りません。

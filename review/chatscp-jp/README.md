@@ -83,8 +83,8 @@ Adjudication for this README (every block was read against the bytes): the 15 he
 
 ### 2. Includes and components
 
-- **What:** One live include change and the frame includes. The usage example inside the Q&A (candidate L29, escaped) is repointed `:scpko:theme:chatscp` → `:scp-jp:theme:chatscp`. The credit includes (section 1) and the interwiki-style include (section 3) complete the candidate's include list; every include names a `:scp-jp:` target. The original's info pair is deleted, not repointed (section 1). No component include exists on either side beyond those.
-- **Why:** P1 (KB-15): an include must name the JP counterpart that actually exists on scp-jp; the theme's own JP candidate is the counterpart. Ruling 4 is not engaged: no component had to be ported alongside this theme.
+- **What:** One live include change and the frame includes. The usage example inside the Q&A (candidate L29, escaped) is repointed `:scpko:theme:chatscp` → `:scp-jp:theme:chatscp` as built: that repoint changed the branch prefix but kept the plain slug, so the example named a page that does not exist on scp-jp. The usage-example population sweep has since completed the reference to this candidate's posting name, `:scp-jp:theme:chatscp-jp` (per-theme record). The credit includes (section 1) and the interwiki-style include (section 3) complete the candidate's include list; every include names a `:scp-jp:` target. The original's info pair is deleted, not repointed (section 1). No component include exists on either side beyond those.
+- **Why:** P1 (KB-15): an include must name the JP counterpart that actually exists on scp-jp. As built, the repoint satisfied the branch half of that rule only; the sweep's completion is what brings the example under it, the counterpart being this candidate itself under its posting name. Ruling 4 is not engaged: no component had to be ported alongside this theme.
 - **Verify:** `grep -n '\[\[include' candidate.txt` — four includes, all `:scp-jp:`.
 - **Disposition:** Applied; no foreign include kept, no named exception needed.
 
@@ -157,6 +157,12 @@ Adjudication for this README (every block was read against the bytes): the 15 he
 - **Why:** Verification claims name the cheapest deciding check and its result, not a general assurance.
 - **Verify:** Re-run the checker on `pages/theme:chatscp-jp.txt` and `python3 review/build_review.py --check` in this repo.
 - **Disposition:** PASS (GOSIGN2-LEDGER (b) row 256; go-sign, COMPLETION-REPORT §10).
+
+## Per-theme record
+
+### The usage example's posting name
+
+The usage example at candidate L29 as built read `@@[[include :scp-jp:theme:chatscp]]@@`: the porting wave's repoint changed the branch prefix from `:scpko:` but left the plain name, so the example named a page that does not exist on scp-jp (the campaign's settled rule for usage examples, AGENTS.md §6). The usage-example population sweep has since completed the reference to `:scp-jp:theme:chatscp-jp` (sweep report SWEEP-USAGE.md in the campaign record, R/review-scout/; canonical commit b5cb724), one of its 287 repairs across 157 candidates. This package documents the corrected candidate; its stamp reads STALE against the pre-repair verdict, by design.
 
 ## Change set outside the two diffed files
 

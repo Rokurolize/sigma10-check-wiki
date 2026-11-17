@@ -85,8 +85,8 @@ Adjudication for this README (every specific block was read against the bytes): 
 
 ### 2. Includes and components
 
-- **What:** Two include changes: the frame include repointed to `:scp-jp:component:interwiki-style` (candidate L4, B2) and the image exhibit's include repointed to `:scp-jp:component:image-block` (candidate L34, B9) while its `name=` asset stays on EN storage (section 4). The usage exhibit's escaped include names the candidate in the recorded convention form (candidate L28: `@@[[include :scp-jp:theme:golden-feast]]@@`, B7). The candidate's remaining includes are the credit pair (section 1). No live include in the candidate names a `:scp-wiki:` target.
-- **Why:** P1 (KB-15) for the component repoints.
+- **What:** Two include changes: the frame include repointed to `:scp-jp:component:interwiki-style` (candidate L4, B2) and the image exhibit's include repointed to `:scp-jp:component:image-block` (candidate L34, B9) while its `name=` asset stays on EN storage (section 4). The usage exhibit's escaped include names the candidate itself. As built it read `@@[[include :scp-jp:theme:golden-feast]]@@` (candidate L28, B7): the repoint changed the branch prefix but kept the plain slug, naming a page that does not exist on scp-jp — not a recorded convention form. The usage-example population sweep has since completed it to `@@[[include :scp-jp:theme:golden-feast-jp]]@@` (see the per-theme record). The candidate's remaining includes are the credit pair (section 1). No live include in the candidate names a `:scp-wiki:` target.
+- **Why:** P1 (KB-15) for the component repoints. For the usage exhibit's own line, the as-built repoint satisfied the branch half of P1 only; the sweep's completion to the posting name is what brings it under the rule.
 - **Verify:** `grep -n '\[\[include' candidate.txt` — four live includes plus the escaped usage line, as listed.
 - **Disposition:** Applied.
 
@@ -159,6 +159,12 @@ Adjudication for this README (every specific block was read against the bytes): 
 - **Why:** Verification claims name the cheapest deciding check and its result, not a general assurance.
 - **Verify:** Re-run the checker on `pages/theme:golden-feast-jp.txt` and `python3 review/build_review.py --check` in this repo.
 - **Disposition:** PASS (GOSIGN2-LEDGER (b) row 94; go-sign, COMPLETION-REPORT §10).
+
+## Per-theme record
+
+### The usage example's posting name
+
+The usage example at candidate L28 as built read `@@[[include :scp-jp:theme:golden-feast]]@@`: the porting wave's repoint changed the branch prefix but left the plain name, so the example named a page that does not exist on scp-jp (the campaign's settled rule for usage examples, AGENTS.md §6). The usage-example population sweep has since completed the reference to this candidate's posting name, `:scp-jp:theme:golden-feast-jp` — candidate L28 now reads `@@[[include :scp-jp:theme:golden-feast-jp]]@@` (sweep report SWEEP-USAGE.md in the campaign record, R/review-scout/; canonical commit b5cb724), one of its 287 repairs across 157 candidates. This package documents the corrected candidate; its stamp reads STALE against the pre-repair verdict, by design.
 
 ## Appendix — heuristic and residue mass, resolved by shape
 

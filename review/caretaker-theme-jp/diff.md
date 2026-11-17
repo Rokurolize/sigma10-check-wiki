@@ -81,7 +81,7 @@ with `python3 review/build_review.py`; verify with
 -@@[[include :scp-wiki:theme:black-highlighter-theme]]@@
 -@@[[include :scp-wiki:theme:caretaker-theme]]@@
 +@@[[include :scp-jp:theme:black-highlighter-theme]]@@
-+@@[[include :scp-jp:theme:caretaker-theme]]@@
++@@[[include :scp-jp:theme:caretaker-theme-jp]]@@
  [[/div]]
  
 -//Note: This is a Black Highlighter based theme, so be sure to include that theme too, as you can see right above me. To learn more, go [https://scp-wiki.wikidot.com/theme:black-highlighter-theme here.]//

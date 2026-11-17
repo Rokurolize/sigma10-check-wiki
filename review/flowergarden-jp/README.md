@@ -87,8 +87,8 @@ Adjudication for this README (every A-tier block and every primary family was re
 
 ### 2. Includes and components
 
-- **What:** The candidate's live includes are the frame (section 3), the credit pair, and the license-box pair. The usage exhibit's escaped include is repointed `:scpko:theme:flowergarden` → `:scp-jp:theme:flowergarden` (block B5, candidate L27). No component includes needed repointing: the theme is self-contained CSS over the base it assumes, on both sides.
-- **Why:** P1 (KB-15) for the exhibit repoint: it names the JP counterpart that exists.
+- **What:** The candidate's live includes are the frame (section 3), the credit pair, and the license-box pair. The usage exhibit's escaped include is repointed `:scpko:theme:flowergarden` → `:scp-jp:theme:flowergarden` as built (block B5, candidate L27) — a repoint that changed the branch prefix but kept the plain slug, so the exhibit named a page that does not exist on scp-jp; the usage-example population sweep has since completed the name on the same line to `:scp-jp:theme:flowergarden-jp` (SWEEP-USAGE.md; canonical commit b5cb724). No component includes needed repointing: the theme is self-contained CSS over the base it assumes, on both sides.
+- **Why:** P1 (KB-15) for the exhibit repoint: it names the JP counterpart that exists. The repoint as built satisfied the branch half of that rule only — its plain slug named no JP page — and the sweep's completion to the posting name is what brings it under the rule.
 - **Verify:** `grep -n '\[\[include' candidate.txt` — six includes, all `:scp-jp:` forms; no `:scpko:` include survives.
 - **Disposition:** Applied; no foreign include kept, no named exception needed.
 
@@ -167,6 +167,10 @@ Adjudication for this README (every A-tier block and every primary family was re
 ### The port that writes down what the original left unsaid
 
 Flowergarden's original is an unusually quiet source: it does not document its own classes and does not license its image files. A mechanical port would have carried that silence across, and the JP page would have inherited two invisible gaps. This candidate instead marks both gaps at the exact places a reader meets them — a supplied class section whose heading admits the original says nothing, and license entries that say "not stated in the original; confirm with the author before posting" six times over. That is the difference between a translation and a port, and it is why this theme's package, despite a block count dominated by whitespace, is one of the batch's most instructive: the semantic content of the port is largely the judgment calls, and every one of them is written down in the file itself.
+
+### The usage example's posting name
+
+The usage example at candidate L27 as built read `@@[[include :scp-jp:theme:flowergarden]]@@`: the porting wave's repoint changed the branch prefix from `:scpko:` but left the plain name, so the example named a page that does not exist on scp-jp (the campaign's settled rule for usage examples, AGENTS.md §6). The usage-example population sweep has since completed the reference to `:scp-jp:theme:flowergarden-jp` on the same line (sweep report SWEEP-USAGE.md in the campaign record, R/review-scout/; canonical commit b5cb724), one of its 287 repairs across 157 candidates. This package documents the corrected candidate; its stamp reads STALE against the pre-repair verdict, by design.
 
 ## Appendix — residue blocks
 
