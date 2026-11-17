@@ -1,0 +1,1271 @@
+{
+ "tool": "classify_hunks.py",
+ "classifier_version": "0.1.0",
+ "signature_table_version": "2026-11-17.1",
+ "theme": {
+  "dir": "blankstyle-jp",
+  "cand_fullname": "theme:blankstyle-jp",
+  "orig_fullname": "theme:blankstyle",
+  "wiki": "scp-wiki",
+  "revision": "119",
+  "kind": "K6",
+  "verdict": "PASS",
+  "original_file": "review/blankstyle-jp/original.txt",
+  "candidate_file": "review/blankstyle-jp/candidate.txt",
+  "original_sha256": "c53c5675acd9bc1b58cf892a3f150b5465a1cbd0c486e4118cb231b7272cc1a2",
+  "candidate_sha256": "cad8a8250396fa900d6a03137c96ab643d9c64f5b6f0aa92749f72ea46681aaa",
+  "original_lines": 703,
+  "candidate_lines": 687
+ },
+ "topology": {
+  "original_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     2,
+     7
+    ],
+    "lines": 5
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     686,
+     697
+    ],
+    "lines": 11
+   }
+  ],
+  "candidate_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     0,
+     654
+    ],
+    "lines": 654
+   }
+  ],
+  "moves": [],
+  "external_own_delivery": false
+ },
+ "blocks": [
+  {
+   "id": "B1",
+   "orig_range": [
+    0,
+    1
+   ],
+   "cand_range": [
+    0,
+    3
+   ],
+   "orig_lines": "1-1",
+   "cand_lines": "1-3",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "FONT-IMPORT",
+    "IFTAGS",
+    "JPFONT-LOAD"
+   ],
+   "primary": "IFTAGS",
+   "primary_section": 2,
+   "label_prec": {
+    "IFTAGS": "A",
+    "JPFONT-LOAD": "A",
+    "FONT-IMPORT": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "IFTAGS": {
+     "orig": [
+      [
+       0,
+       1
+      ]
+     ],
+     "cand": []
+    },
+    "JPFONT-LOAD": {
+     "cand": [
+      [
+       2,
+       3
+      ]
+     ]
+    },
+    "FONT-IMPORT": {
+     "orig": [],
+     "cand": [
+      [
+       1,
+       2
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "absence claim needs base subtraction (resolved base)",
+    "the deciding evidence is the load probe (KB-04)"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[iftags +theme]]",
+   "first_added": "[[module CSS]]"
+  },
+  {
+   "id": "B2",
+   "orig_range": [
+    2,
+    136
+   ],
+   "cand_range": [
+    4,
+    4
+   ],
+   "orig_lines": "3-136",
+   "cand_lines": "at 5",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [
+    "EXHIBIT-RESTRUCTURE",
+    "IFTAGS",
+    "INFO-DEL"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "INFO-DEL": "A",
+    "IFTAGS": "A",
+    "EXHIBIT-RESTRUCTURE": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "INFO-DEL": {
+     "orig": [
+      [
+       26,
+       27
+      ],
+      [
+       33,
+       34
+      ]
+     ]
+    },
+    "IFTAGS": {
+     "orig": [
+      [
+       120,
+       121
+      ]
+     ],
+     "cand": []
+    },
+    "EXHIBIT-RESTRUCTURE": {}
+   },
+   "notes": [
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[module css]]",
+   "first_added": ""
+  },
+  {
+   "id": "B3",
+   "orig_range": [
+    143,
+    143
+   ],
+   "cand_range": [
+    11,
+    13
+   ],
+   "orig_lines": "at 144",
+   "cand_lines": "12-13",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": ""
+  },
+  {
+   "id": "B4",
+   "orig_range": [
+    145,
+    146
+   ],
+   "cand_range": [
+    15,
+    16
+   ],
+   "orig_lines": "146-146",
+   "cand_lines": "16-16",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "CSS-BODY"
+   ],
+   "primary": "CSS-BODY",
+   "primary_section": 8,
+   "label_prec": {
+    "CSS-BODY": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "CSS-BODY": {}
+   },
+   "notes": [
+    "no other signature matched"
+   ],
+   "partial_notes": [],
+   "first_removed": "@import url('https://fonts.bunny.net/css2?family=Montserrat:ital,wght@0,800;1,800&display=swap');",
+   "first_added": ""
+  },
+  {
+   "id": "B5",
+   "orig_range": [
+    155,
+    156
+   ],
+   "cand_range": [
+    25,
+    26
+   ],
+   "orig_lines": "156-156",
+   "cand_lines": "26-26",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "WS-ONLY"
+   ],
+   "primary": "WS-ONLY",
+   "primary_section": 9,
+   "label_prec": {
+    "WS-ONLY": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "WS-ONLY": {}
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "     background-image: none;",
+   "first_added": "    background-image: none;"
+  },
+  {
+   "id": "B6",
+   "orig_range": [
+    168,
+    169
+   ],
+   "cand_range": [
+    38,
+    39
+   ],
+   "orig_lines": "169-169",
+   "cand_lines": "39-39",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "JPFONT-STACK"
+   ],
+   "primary": "JPFONT-STACK",
+   "primary_section": 4,
+   "label_prec": {
+    "JPFONT-STACK": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "JPFONT-STACK": {
+     "orig": [
+      [
+       168,
+       169
+      ]
+     ],
+     "cand": [
+      [
+       38,
+       39
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    font-family: 'Montserrat', sans-serif !important;",
+   "first_added": "    font-family: 'Montserrat', 'Noto Sans JP', verdana, arial, helvetica, sans-serif !important;"
+  },
+  {
+   "id": "B7",
+   "orig_range": [
+    173,
+    176
+   ],
+   "cand_range": [
+    43,
+    46
+   ],
+   "orig_lines": "174-176",
+   "cand_lines": "44-46",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "HEADERVAR",
+    "WS-ONLY"
+   ],
+   "primary": "HEADERVAR",
+   "primary_section": 5,
+   "label_prec": {
+    "HEADERVAR": "A",
+    "WS-ONLY": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "HEADERVAR": {
+     "orig": [
+      [
+       173,
+       174
+      ]
+     ],
+     "cand": [
+      [
+       43,
+       44
+      ]
+     ]
+    },
+    "WS-ONLY": {}
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "  content: var(--header-title, \"R\\0026 C SITE-43\");",
+   "first_added": "    content: var(--header-title, \"R\\0026 C SITE-43\");"
+  },
+  {
+   "id": "B8",
+   "orig_range": [
+    179,
+    182
+   ],
+   "cand_range": [
+    49,
+    52
+   ],
+   "orig_lines": "180-182",
+   "cand_lines": "50-52",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "HEADERVAR",
+    "WS-ONLY"
+   ],
+   "primary": "HEADERVAR",
+   "primary_section": 5,
+   "label_prec": {
+    "HEADERVAR": "A",
+    "WS-ONLY": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "HEADERVAR": {
+     "orig": [
+      [
+       179,
+       180
+      ]
+     ],
+     "cand": [
+      [
+       49,
+       50
+      ]
+     ]
+    },
+    "WS-ONLY": {}
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "  content: var(--header-subtitle, \"SUBVERTING COMMON PRACTICE\");",
+   "first_added": "    content: var(--header-subtitle, \"SUBVERTING COMMON PRACTICE\");"
+  },
+  {
+   "id": "B9",
+   "orig_range": [
+    222,
+    223
+   ],
+   "cand_range": [
+    92,
+    93
+   ],
+   "orig_lines": "223-223",
+   "cand_lines": "93-93",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "CSS-BODY"
+   ],
+   "primary": "CSS-BODY",
+   "primary_section": 8,
+   "label_prec": {
+    "CSS-BODY": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "CSS-BODY": {}
+   },
+   "notes": [
+    "no other signature matched"
+   ],
+   "partial_notes": [],
+   "first_removed": "    top: 2.3rem!important;",
+   "first_added": "    top: 2.3rem !important;"
+  },
+  {
+   "id": "B10",
+   "orig_range": [
+    226,
+    231
+   ],
+   "cand_range": [
+    96,
+    101
+   ],
+   "orig_lines": "227-231",
+   "cand_lines": "97-101",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "WS-ONLY"
+   ],
+   "primary": "WS-ONLY",
+   "primary_section": 9,
+   "label_prec": {
+    "WS-ONLY": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "WS-ONLY": {}
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "#top-bar { ",
+   "first_added": "#top-bar {"
+  },
+  {
+   "id": "B11",
+   "orig_range": [
+    243,
+    244
+   ],
+   "cand_range": [
+    113,
+    114
+   ],
+   "orig_lines": "244-244",
+   "cand_lines": "114-114",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "JPFONT-STACK"
+   ],
+   "primary": "JPFONT-STACK",
+   "primary_section": 4,
+   "label_prec": {
+    "JPFONT-STACK": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "JPFONT-STACK": {
+     "orig": [
+      [
+       243,
+       244
+      ]
+     ],
+     "cand": [
+      [
+       113,
+       114
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    font-family: 'Montserrat', sans-serif;",
+   "first_added": "    font-family: 'Montserrat', 'Noto Sans JP', verdana, arial, helvetica, sans-serif;"
+  },
+  {
+   "id": "B12",
+   "orig_range": [
+    261,
+    262
+   ],
+   "cand_range": [
+    131,
+    132
+   ],
+   "orig_lines": "262-262",
+   "cand_lines": "132-132",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "ASSET-REHOST"
+   ],
+   "primary": "ASSET-REHOST",
+   "primary_section": 4,
+   "label_prec": {
+    "ASSET-REHOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "ASSET-REHOST": {
+     "orig": [
+      [
+       261,
+       262
+      ]
+     ],
+     "cand": [
+      [
+       131,
+       132
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: url('https://scp-wiki.wdfiles.com/local--files/theme%3Ablankstyle/43Head.png');",
+   "first_added": "    background: url('https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-45-51f1/43Head.png');"
+  },
+  {
+   "id": "B13",
+   "orig_range": [
+    275,
+    280
+   ],
+   "cand_range": [
+    145,
+    146
+   ],
+   "orig_lines": "276-280",
+   "cand_lines": "146-146",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "CSS-BODY"
+   ],
+   "primary": "CSS-BODY",
+   "primary_section": 8,
+   "label_prec": {
+    "CSS-BODY": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "CSS-BODY": {}
+   },
+   "notes": [
+    "no other signature matched"
+   ],
+   "partial_notes": [],
+   "first_removed": "    background-image: linear-gradient(",
+   "first_added": "    background-image: linear-gradient(to bottom, #e0e0e0, #e0e0e0 90px, #e0e0e0 90px, #ffffff 200px, #ffffff 200px, #ffffff 100%);"
+  },
+  {
+   "id": "B14",
+   "orig_range": [
+    284,
+    288
+   ],
+   "cand_range": [
+    150,
+    154
+   ],
+   "orig_lines": "285-288",
+   "cand_lines": "151-154",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "WS-ONLY"
+   ],
+   "primary": "WS-ONLY",
+   "primary_section": 9,
+   "label_prec": {
+    "WS-ONLY": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "WS-ONLY": {}
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "  --timeScale: 1.5;",
+   "first_added": "    --timeScale: 1.5;"
+  },
+  {
+   "id": "B15",
+   "orig_range": [
+    305,
+    306
+   ],
+   "cand_range": [
+    171,
+    172
+   ],
+   "orig_lines": "306-306",
+   "cand_lines": "172-172",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "WS-ONLY"
+   ],
+   "primary": "WS-ONLY",
+   "primary_section": 9,
+   "label_prec": {
+    "WS-ONLY": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "WS-ONLY": {}
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "#page-content .sidebox tr td, ",
+   "first_added": "#page-content .sidebox tr td,"
+  },
+  {
+   "id": "B16",
+   "orig_range": [
+    319,
+    319
+   ],
+   "cand_range": [
+    185,
+    186
+   ],
+   "orig_lines": "at 320",
+   "cand_lines": "186-186",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "CSS-BODY"
+   ],
+   "primary": "CSS-BODY",
+   "primary_section": 8,
+   "label_prec": {
+    "CSS-BODY": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "CSS-BODY": {}
+   },
+   "notes": [
+    "no other signature matched"
+   ],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": "    background-color: #FDF6D7;"
+  },
+  {
+   "id": "B17",
+   "orig_range": [
+    322,
+    323
+   ],
+   "cand_range": [
+    189,
+    190
+   ],
+   "orig_lines": "323-323",
+   "cand_lines": "190-190",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "CSS-BODY"
+   ],
+   "primary": "CSS-BODY",
+   "primary_section": 8,
+   "label_prec": {
+    "CSS-BODY": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "CSS-BODY": {}
+   },
+   "notes": [
+    "no other signature matched"
+   ],
+   "partial_notes": [],
+   "first_removed": "    border: 1px solid #333;",
+   "first_added": "    border: 1px solid #333 !important;"
+  },
+  {
+   "id": "B18",
+   "orig_range": [
+    332,
+    345
+   ],
+   "cand_range": [
+    199,
+    199
+   ],
+   "orig_lines": "333-345",
+   "cand_lines": "at 200",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "}",
+   "first_added": ""
+  },
+  {
+   "id": "B19",
+   "orig_range": [
+    426,
+    427
+   ],
+   "cand_range": [
+    280,
+    281
+   ],
+   "orig_lines": "427-427",
+   "cand_lines": "281-281",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "CSS-BODY"
+   ],
+   "primary": "CSS-BODY",
+   "primary_section": 8,
+   "label_prec": {
+    "CSS-BODY": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "CSS-BODY": {}
+   },
+   "notes": [
+    "no other signature matched"
+   ],
+   "partial_notes": [],
+   "first_removed": "    height:0;",
+   "first_added": "    height: 0;"
+  },
+  {
+   "id": "B20",
+   "orig_range": [
+    578,
+    583
+   ],
+   "cand_range": [
+    432,
+    437
+   ],
+   "orig_lines": "579-583",
+   "cand_lines": "433-437",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "WS-ONLY"
+   ],
+   "primary": "WS-ONLY",
+   "primary_section": 9,
+   "label_prec": {
+    "WS-ONLY": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "WS-ONLY": {}
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "  .imagediv {",
+   "first_added": "    .imagediv {"
+  },
+  {
+   "id": "B21",
+   "orig_range": [
+    664,
+    665
+   ],
+   "cand_range": [
+    518,
+    519
+   ],
+   "orig_lines": "665-665",
+   "cand_lines": "519-519",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "CSS-BODY"
+   ],
+   "primary": "CSS-BODY",
+   "primary_section": 8,
+   "label_prec": {
+    "CSS-BODY": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "CSS-BODY": {}
+   },
+   "notes": [
+    "no other signature matched"
+   ],
+   "partial_notes": [],
+   "first_removed": ".fancyhr hr {",
+   "first_added": "#page-content .fancyhr hr {"
+  },
+  {
+   "id": "B22",
+   "orig_range": [
+    669,
+    670
+   ],
+   "cand_range": [
+    523,
+    524
+   ],
+   "orig_lines": "670-670",
+   "cand_lines": "524-524",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "ASSET-REHOST"
+   ],
+   "primary": "ASSET-REHOST",
+   "primary_section": 4,
+   "label_prec": {
+    "ASSET-REHOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "ASSET-REHOST": {
+     "orig": [
+      [
+       669,
+       670
+      ]
+     ],
+     "cand": [
+      [
+       523,
+       524
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    border-image-source: url('https://scp-wiki.wdfiles.com/local--files/theme%3Aflopstyle-dark/wl_hr.png');",
+   "first_added": "    border-image-source: url('https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-46-ec6z/wl_hr.png');"
+  },
+  {
+   "id": "B23",
+   "orig_range": [
+    676,
+    677
+   ],
+   "cand_range": [
+    530,
+    531
+   ],
+   "orig_lines": "677-677",
+   "cand_lines": "531-531",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "CSS-BODY"
+   ],
+   "primary": "CSS-BODY",
+   "primary_section": 8,
+   "label_prec": {
+    "CSS-BODY": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "CSS-BODY": {}
+   },
+   "notes": [
+    "no other signature matched"
+   ],
+   "partial_notes": [],
+   "first_removed": ".fancyborder {",
+   "first_added": "#page-content .fancyborder {"
+  },
+  {
+   "id": "B24",
+   "orig_range": [
+    679,
+    680
+   ],
+   "cand_range": [
+    533,
+    534
+   ],
+   "orig_lines": "680-680",
+   "cand_lines": "534-534",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "ASSET-REHOST"
+   ],
+   "primary": "ASSET-REHOST",
+   "primary_section": 4,
+   "label_prec": {
+    "ASSET-REHOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "ASSET-REHOST": {
+     "orig": [
+      [
+       679,
+       680
+      ]
+     ],
+     "cand": [
+      [
+       533,
+       534
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    border-image: url('https://scp-wiki.wdfiles.com/local--files/theme%3Aflopstyle-dark/wl_border.png') 600 round;",
+   "first_added": "    border-image: url('https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-47-mqmb/wl_border.png') 600 round;"
+  },
+  {
+   "id": "B25",
+   "orig_range": [
+    683,
+    683
+   ],
+   "cand_range": [
+    537,
+    653
+   ],
+   "orig_lines": "at 684",
+   "cand_lines": "538-653",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "T7-CREDIT-CSS"
+   ],
+   "primary": "T7-CREDIT-CSS",
+   "primary_section": 1,
+   "label_prec": {
+    "T7-CREDIT-CSS": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "T7-CREDIT-CSS": {
+     "cand": [
+      [
+       545,
+       554
+      ],
+      [
+       554,
+       557
+      ],
+      [
+       559,
+       562
+      ],
+      [
+       562,
+       566
+      ],
+      [
+       566,
+       575
+      ],
+      [
+       575,
+       582
+      ],
+      [
+       584,
+       591
+      ],
+      [
+       591,
+       598
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "supplement-vs-inherited needs the production counterpart"
+   ],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": ""
+  },
+  {
+   "id": "B26",
+   "orig_range": [
+    685,
+    691
+   ],
+   "cand_range": [
+    655,
+    659
+   ],
+   "orig_lines": "686-691",
+   "cand_lines": "656-659",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "HEADERVAR",
+    "IFTAGS"
+   ],
+   "primary": "IFTAGS",
+   "primary_section": 2,
+   "label_prec": {
+    "IFTAGS": "A",
+    "HEADERVAR": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "IFTAGS": {
+     "orig": [
+      [
+       685,
+       686
+      ]
+     ],
+     "cand": []
+    },
+    "HEADERVAR": {
+     "orig": [
+      [
+       688,
+       690
+      ]
+     ],
+     "cand": []
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[iftags +s&c-plastics]]",
+   "first_added": "[[include :scp-jp:component:interwiki-style"
+  },
+  {
+   "id": "B27",
+   "orig_range": [
+    692,
+    697
+   ],
+   "cand_range": [
+    660,
+    686
+   ],
+   "orig_lines": "693-697",
+   "cand_lines": "661-686",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [
+    "CREDIT-PREVIEW",
+    "IFTAGS",
+    "TASL-FIELDS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "CREDIT-PREVIEW",
+   "primary_section": 1,
+   "label_prec": {
+    "CREDIT-PREVIEW": "A",
+    "TASL-FIELDS": "A",
+    "IFTAGS": "A",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "CREDIT-PREVIEW": {
+     "cand": [
+      [
+       661,
+       662
+      ],
+      [
+       672,
+       673
+      ]
+     ]
+    },
+    "TASL-FIELDS": {
+     "cand": [
+      [
+       662,
+       665
+      ],
+      [
+       666,
+       672
+      ],
+      [
+       681,
+       683
+      ]
+     ]
+    },
+    "IFTAGS": {
+     "orig": [],
+     "cand": [
+      [
+       660,
+       661
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "div#extra-div-1 {",
+   "first_added": "[[iftags +テーマ]]"
+  },
+  {
+   "id": "B28",
+   "orig_range": [
+    698,
+    703
+   ],
+   "cand_range": [
+    687,
+    687
+   ],
+   "orig_lines": "699-703",
+   "cand_lines": "at 688",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[/<]]",
+   "first_added": ""
+  }
+ ],
+ "derived_presence": {},
+ "summary": {
+  "blocks": 28,
+  "specific": 17,
+  "heuristic": 8,
+  "residue": 3,
+  "skipped": 0,
+  "reindent_blocks": 0,
+  "label_counts": {
+   "FONT-IMPORT": 1,
+   "IFTAGS": 4,
+   "JPFONT-LOAD": 1,
+   "EXHIBIT-RESTRUCTURE": 1,
+   "INFO-DEL": 1,
+   "CSS-BODY": 8,
+   "WS-ONLY": 7,
+   "JPFONT-STACK": 2,
+   "HEADERVAR": 3,
+   "ASSET-REHOST": 3,
+   "T7-CREDIT-CSS": 1,
+   "CREDIT-PREVIEW": 1,
+   "TASL-FIELDS": 1,
+   "TRANS-UNANCHORED": 1
+  }
+ },
+ "residue": [
+  "B3",
+  "B18",
+  "B28"
+ ],
+ "r4_signal": {
+  "cand_prod": 0.953,
+  "cand_orig": 0.768
+ },
+ "skeleton": {
+  "sha256": "3c75843db8ecae18a8d952c76a66571e57ce0bf8e30784279f4b44f53906d502",
+  "status": "written (new)"
+ }
+}
