@@ -1,0 +1,1720 @@
+{
+ "tool": "classify_hunks.py",
+ "classifier_version": "0.1.0",
+ "signature_table_version": "2026-11-17.1",
+ "theme": {
+  "dir": "lumina-jp",
+  "cand_fullname": "theme:lumina-jp",
+  "orig_fullname": "theme:lumina",
+  "wiki": "scp-wiki",
+  "revision": "27",
+  "kind": "K5b-3",
+  "verdict": "PASS",
+  "original_file": "review/lumina-jp/original.txt",
+  "candidate_file": "review/lumina-jp/candidate.txt",
+  "original_sha256": "e9116a6ace87e15a07402662c8039ee73535282ec5740223048854dad6541c99",
+  "candidate_sha256": "c3629fe0d2802ab63b640443c3078f98ce43f63917a8024df5237a7fb9462542",
+  "original_lines": 712,
+  "candidate_lines": 717
+ },
+ "topology": {
+  "original_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     1,
+     5
+    ],
+    "lines": 4
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     75,
+     700
+    ],
+    "lines": 625
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     703,
+     706
+    ],
+    "lines": 3
+   }
+  ],
+  "candidate_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     0,
+     3
+    ],
+    "lines": 3
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     81,
+     706
+    ],
+    "lines": 625
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     710,
+     713
+    ],
+    "lines": 3
+   }
+  ],
+  "moves": [],
+  "external_own_delivery": true
+ },
+ "blocks": [
+  {
+   "id": "B1",
+   "orig_range": [
+    0,
+    1
+   ],
+   "cand_range": [
+    0,
+    0
+   ],
+   "orig_lines": "1-1",
+   "cand_lines": "at 1",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "IFTAGS"
+   ],
+   "primary": "IFTAGS",
+   "primary_section": 2,
+   "label_prec": {
+    "IFTAGS": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "IFTAGS": {
+     "orig": [
+      [
+       0,
+       1
+      ]
+     ],
+     "cand": []
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[iftags +theme]]",
+   "first_added": ""
+  },
+  {
+   "id": "B2",
+   "orig_range": [
+    2,
+    4
+   ],
+   "cand_range": [
+    1,
+    2
+   ],
+   "orig_lines": "3-4",
+   "cand_lines": "2-2",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-HOST",
+    "DRAFT-HOST"
+   ],
+   "primary": "DELIVERY-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-HOST": "A",
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DELIVERY-HOST": {
+     "orig": [
+      [
+       2,
+       4
+      ]
+     ],
+     "cand": [
+      [
+       1,
+       2
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       1,
+       2
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [
+    "BASE-DELIVERY/CROSS-IMPORT? theme:basalt-jp (include graph needed to decide base vs cross)"
+   ],
+   "first_removed": "@import url('https://cdn.scpwiki.com/theme/en/basalt/normalize-min.css');",
+   "first_added": "@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Abasalt-jp/1');"
+  },
+  {
+   "id": "B3",
+   "orig_range": [
+    6,
+    10
+   ],
+   "cand_range": [
+    4,
+    5
+   ],
+   "orig_lines": "7-10",
+   "cand_lines": "5-5",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "BARE-RATE-DEL",
+    "IFTAGS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "BARE-RATE-DEL",
+   "primary_section": 1,
+   "label_prec": {
+    "BARE-RATE-DEL": "B",
+    "IFTAGS": "A",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "BARE-RATE-DEL": {
+     "orig": [
+      [
+       8,
+       9
+      ]
+     ]
+    },
+    "IFTAGS": {
+     "orig": [],
+     "cand": [
+      [
+       4,
+       5
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[>]]",
+   "first_added": "[[iftags +テーマ]]"
+  },
+  {
+   "id": "B4",
+   "orig_range": [
+    11,
+    12
+   ],
+   "cand_range": [
+    6,
+    16
+   ],
+   "orig_lines": "12-12",
+   "cand_lines": "7-16",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "CREDIT-PREVIEW",
+    "CREDIT-PROSE",
+    "TASL-FIELDS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "CREDIT-PREVIEW",
+   "primary_section": 1,
+   "label_prec": {
+    "CREDIT-PREVIEW": "A",
+    "TASL-FIELDS": "A",
+    "TRANS-UNANCHORED": "C",
+    "CREDIT-PROSE": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "CREDIT-PREVIEW": {
+     "cand": [
+      [
+       6,
+       7
+      ],
+      [
+       15,
+       16
+      ]
+     ]
+    },
+    "TASL-FIELDS": {
+     "cand": [
+      [
+       7,
+       15
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {},
+    "CREDIT-PROSE": {}
+   },
+   "notes": [
+    "script delta without the anchor majority",
+    "position: inside the credit include pair"
+   ],
+   "partial_notes": [],
+   "first_removed": "**Lumina Crash** is a [[[theme:bedrock|Bedrock]]]-based theme created by [[*user EstrellaYoshte]], for personal use.",
+   "first_added": "[[include :scp-jp:credit:start-preview]]"
+  },
+  {
+   "id": "B5",
+   "orig_range": [
+    13,
+    14
+   ],
+   "cand_range": [
+    17,
+    18
+   ],
+   "orig_lines": "14-14",
+   "cand_lines": "18-18",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "To import this theme to your page, put the following text anywhere inside it:",
+   "first_added": "**Lumina Crash**は[[[theme:bedrock-jp|Bedrock]]]ベースのテーマです。[[*user EstrellaYoshte]]が個人利用向けに作成しました。"
+  },
+  {
+   "id": "B6",
+   "orig_range": [
+    15,
+    17
+   ],
+   "cand_range": [
+    19,
+    23
+   ],
+   "orig_lines": "16-17",
+   "cand_lines": "20-23",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "COMPONENT-SWAP",
+    "ESCAPED-INCLUDE",
+    "INCLUDE-REPOINT",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "COMPONENT-SWAP",
+   "primary_section": 2,
+   "label_prec": {
+    "INCLUDE-REPOINT": "A",
+    "ESCAPED-INCLUDE": "B",
+    "COMPONENT-SWAP": "B",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "INCLUDE-REPOINT": {
+     "orig": [
+      [
+       15,
+       17
+      ]
+     ],
+     "cand": [
+      [
+       21,
+       23
+      ]
+     ]
+    },
+    "ESCAPED-INCLUDE": {
+     "orig": [
+      [
+       15,
+       17
+      ]
+     ],
+     "cand": [
+      [
+       21,
+       23
+      ]
+     ]
+    },
+    "COMPONENT-SWAP": {
+     "orig": [
+      [
+       15,
+       16
+      ],
+      [
+       15,
+       17
+      ],
+      [
+       16,
+       17
+      ]
+     ],
+     "cand": [
+      [
+       21,
+       23
+      ],
+      [
+       21,
+       23
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "> {{@@[[include :scp-wiki:theme:bedrock]]@@}}",
+   "first_added": "このテーマをページに読み込むには、ページ内の任意の場所に次のテキストを置いてください。"
+  },
+  {
+   "id": "B7",
+   "orig_range": [
+    20,
+    21
+   ],
+   "cand_range": [
+    26,
+    27
+   ],
+   "orig_lines": "21-21",
+   "cand_lines": "27-27",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "Lumina Crash is generally not meant for easy, drop-in use — it may break layouts for some pre-existing components.",
+   "first_added": "Lumina Crashは、一般的なテーマのように簡単に差し替えて使うことを想定していません。既存コンポーネントの一部ではレイアウトが崩れる場合があります。"
+  },
+  {
+   "id": "B8",
+   "orig_range": [
+    22,
+    23
+   ],
+   "cand_range": [
+    28,
+    29
+   ],
+   "orig_lines": "23-23",
+   "cand_lines": "29-29",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "{{#page-content}} has been converted into grid layout, with the following column tracks:",
+   "first_added": "{{#page-content}}はグリッドレイアウトへ変換されており、列トラックは次のとおりです。"
+  },
+  {
+   "id": "B9",
+   "orig_range": [
+    46,
+    47
+   ],
+   "cand_range": [
+    52,
+    53
+   ],
+   "orig_lines": "47-47",
+   "cand_lines": "53-53",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "By default, children of {{#page-content}} live in the content zone. To change grid tracks, add the stated classes respectively.",
+   "first_added": "既定では、{{#page-content}}の子要素はcontent領域に配置されます。グリッドトラックを変えるには、対応するクラスを追加してください。"
+  },
+  {
+   "id": "B10",
+   "orig_range": [
+    48,
+    49
+   ],
+   "cand_range": [
+    54,
+    55
+   ],
+   "orig_lines": "49-49",
+   "cand_lines": "55-55",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "For maximum compatibility to use as a normal theme, you can contain everything in a wrapper div, optionally with the above classes. Otherwise, expect a lot of manual styling.",
+   "first_added": "通常のテーマとして最大限の互換性を保つには、必要に応じて上記クラスを付けたラッパーdivですべてを囲んでください。そうしない場合は、多くの手動スタイリングが必要になると考えてください。"
+  },
+  {
+   "id": "B11",
+   "orig_range": [
+    50,
+    51
+   ],
+   "cand_range": [
+    56,
+    57
+   ],
+   "orig_lines": "51-51",
+   "cand_lines": "57-57",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "+++ Custom Syntax",
+   "first_added": "+++ カスタム構文"
+  },
+  {
+   "id": "B12",
+   "orig_range": [
+    52,
+    53
+   ],
+   "cand_range": [
+    58,
+    59
+   ],
+   "orig_lines": "53-53",
+   "cand_lines": "59-59",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[div class=\"filebox\" data-title=\"Personnel Dossier\"]]",
+   "first_added": "[[div class=\"filebox\" data-title=\"人事ファイル\"]]"
+  },
+  {
+   "id": "B13",
+   "orig_range": [
+    54,
+    55
+   ],
+   "cand_range": [
+    60,
+    61
+   ],
+   "orig_lines": "55-55",
+   "cand_lines": "61-61",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "{{@@[[div class=\"filebox\" data-title=\"Personnel Dossier\"]]@@}}",
+   "first_added": "{{@@[[div class=\"filebox\" data-title=\"人事ファイル\"]]@@}}"
+  },
+  {
+   "id": "B14",
+   "orig_range": [
+    62,
+    63
+   ],
+   "cand_range": [
+    68,
+    69
+   ],
+   "orig_lines": "63-63",
+   "cand_lines": "69-69",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "+++* Header font is Space Grotesk.",
+   "first_added": "+++* ヘッダーフォントはSpace Groteskです。"
+  },
+  {
+   "id": "B15",
+   "orig_range": [
+    64,
+    65
+   ],
+   "cand_range": [
+    70,
+    71
+   ],
+   "orig_lines": "65-65",
+   "cand_lines": "71-71",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "Body font is Inter.",
+   "first_added": "本文フォントはInterです。"
+  },
+  {
+   "id": "B16",
+   "orig_range": [
+    66,
+    67
+   ],
+   "cand_range": [
+    72,
+    73
+   ],
+   "orig_lines": "67-67",
+   "cand_lines": "73-73",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[span style=\"font-family: var(--UI-font)\"]]UI font is Barlow Semi Condensed.[[/span]]",
+   "first_added": "[[span style=\"font-family: var(--UI-font)\"]]UIフォントはBarlow Semi Condensedです。[[/span]]"
+  },
+  {
+   "id": "B17",
+   "orig_range": [
+    68,
+    69
+   ],
+   "cand_range": [
+    74,
+    75
+   ],
+   "orig_lines": "69-69",
+   "cand_lines": "75-75",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "{{Monospace font is JetBrains Mono.}}",
+   "first_added": "{{等幅フォントはJetBrains Monoです。}}"
+  },
+  {
+   "id": "B18",
+   "orig_range": [
+    73,
+    74
+   ],
+   "cand_range": [
+    79,
+    80
+   ],
+   "orig_lines": "74-74",
+   "cand_lines": "80-80",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "+++ Source Code",
+   "first_added": "+++ ソースコード"
+  },
+  {
+   "id": "B19",
+   "orig_range": [
+    75,
+    76
+   ],
+   "cand_range": [
+    81,
+    82
+   ],
+   "orig_lines": "76-76",
+   "cand_lines": "82-82",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": null,
+   "label_prec": {
+    "__WRAPPER__": "C"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "wrapper-only block; absorbs the wrapped body's label at skeleton build",
+    "absorbed wrapper label from B18"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[code type=\"CSS\"]]",
+   "first_added": "[[code type=\"css\"]]"
+  },
+  {
+   "id": "B20",
+   "orig_range": [
+    77,
+    78
+   ],
+   "cand_range": [
+    83,
+    84
+   ],
+   "orig_lines": "78-78",
+   "cand_lines": "84-84",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "    Lumina Crash Theme",
+   "first_added": "    Lumina Crashテーマ"
+  },
+  {
+   "id": "B21",
+   "orig_range": [
+    79,
+    83
+   ],
+   "cand_range": [
+    85,
+    89
+   ],
+   "orig_lines": "80-83",
+   "cand_lines": "86-89",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "    By EstrellaYoshte",
+   "first_added": "    作者: EstrellaYoshte"
+  },
+  {
+   "id": "B22",
+   "orig_range": [
+    85,
+    88
+   ],
+   "cand_range": [
+    91,
+    94
+   ],
+   "orig_lines": "86-88",
+   "cand_lines": "92-94",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "FONT-IMPORT",
+    "JPFONT-LOAD"
+   ],
+   "primary": "JPFONT-LOAD",
+   "primary_section": 4,
+   "label_prec": {
+    "JPFONT-LOAD": "A",
+    "FONT-IMPORT": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "JPFONT-LOAD": {
+     "cand": [
+      [
+       93,
+       94
+      ]
+     ]
+    },
+    "FONT-IMPORT": {
+     "orig": [],
+     "cand": [
+      [
+       91,
+       93
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "absence claim needs base subtraction (resolved base)",
+    "the deciding evidence is the load probe (KB-04)"
+   ],
+   "partial_notes": [],
+   "first_removed": "@import url(https://fonts.bunny.net/css?family=barlow-semi-condensed:300,300i,400,400i,700,700i);",
+   "first_added": "@import url(https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:300,300i,400,400i,700,700i);"
+  },
+  {
+   "id": "B23",
+   "orig_range": [
+    89,
+    92
+   ],
+   "cand_range": [
+    95,
+    98
+   ],
+   "orig_lines": "90-92",
+   "cand_lines": "96-98",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "CSS-BODY"
+   ],
+   "primary": "CSS-BODY",
+   "primary_section": 8,
+   "label_prec": {
+    "CSS-BODY": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "CSS-BODY": {}
+   },
+   "notes": [
+    "no other signature matched"
+   ],
+   "partial_notes": [],
+   "first_removed": "    --header-font-primary: 'Space Grotesk';",
+   "first_added": "    --header-font-primary: 'Space Grotesk', 'Noto Sans JP';"
+  },
+  {
+   "id": "B24",
+   "orig_range": [
+    137,
+    139
+   ],
+   "cand_range": [
+    143,
+    145
+   ],
+   "orig_lines": "138-139",
+   "cand_lines": "144-145",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "HEADERVAR",
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "HEADERVAR",
+   "primary_section": 5,
+   "label_prec": {
+    "HEADERVAR": "A",
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "HEADERVAR": {
+     "orig": [
+      [
+       137,
+       139
+      ]
+     ],
+     "cand": [
+      [
+       143,
+       145
+      ]
+     ]
+    },
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 2/2"
+   ],
+   "partial_notes": [],
+   "first_removed": "    --header-title: \"LUNAR AREA-32\";",
+   "first_added": "    --header-title: \"月面エリア-32\";"
+  },
+  {
+   "id": "B25",
+   "orig_range": [
+    166,
+    167
+   ],
+   "cand_range": [
+    172,
+    173
+   ],
+   "orig_lines": "167-167",
+   "cand_lines": "173-173",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/*-------- HEADER --------*/",
+   "first_added": "/*-------- ヘッダー --------*/"
+  },
+  {
+   "id": "B26",
+   "orig_range": [
+    246,
+    247
+   ],
+   "cand_range": [
+    252,
+    253
+   ],
+   "orig_lines": "247-247",
+   "cand_lines": "253-253",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "WS-ONLY"
+   ],
+   "primary": "WS-ONLY",
+   "primary_section": 9,
+   "label_prec": {
+    "WS-ONLY": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "WS-ONLY": {}
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    transition: width var(--header-link-transition-2nd);    ",
+   "first_added": "    transition: width var(--header-link-transition-2nd);"
+  },
+  {
+   "id": "B27",
+   "orig_range": [
+    254,
+    255
+   ],
+   "cand_range": [
+    260,
+    261
+   ],
+   "orig_lines": "255-255",
+   "cand_lines": "261-261",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "WS-ONLY"
+   ],
+   "primary": "WS-ONLY",
+   "primary_section": 9,
+   "label_prec": {
+    "WS-ONLY": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "WS-ONLY": {}
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    transition: width var(--header-link-transition-2nd);    ",
+   "first_added": "    transition: width var(--header-link-transition-2nd);"
+  },
+  {
+   "id": "B28",
+   "orig_range": [
+    266,
+    267
+   ],
+   "cand_range": [
+    272,
+    273
+   ],
+   "orig_lines": "267-267",
+   "cand_lines": "273-273",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/*-------- SIDEBAR --------*/",
+   "first_added": "/*-------- サイドバー --------*/"
+  },
+  {
+   "id": "B29",
+   "orig_range": [
+    325,
+    326
+   ],
+   "cand_range": [
+    331,
+    332
+   ],
+   "orig_lines": "326-326",
+   "cand_lines": "332-332",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "/*-------- MAIN --------*/",
+   "first_added": "/*-------- 本文 --------*/"
+  },
+  {
+   "id": "B30",
+   "orig_range": [
+    403,
+    404
+   ],
+   "cand_range": [
+    409,
+    410
+   ],
+   "orig_lines": "404-404",
+   "cand_lines": "410-410",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/*-------- PAGE ELEMENTS --------*/",
+   "first_added": "/*-------- ページ要素 --------*/"
+  },
+  {
+   "id": "B31",
+   "orig_range": [
+    522,
+    523
+   ],
+   "cand_range": [
+    528,
+    529
+   ],
+   "orig_lines": "523-523",
+   "cand_lines": "529-529",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/*-------- CODE COLORS --------*/",
+   "first_added": "/*-------- コード色 --------*/"
+  },
+  {
+   "id": "B32",
+   "orig_range": [
+    593,
+    594
+   ],
+   "cand_range": [
+    599,
+    600
+   ],
+   "orig_lines": "594-594",
+   "cand_lines": "600-600",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "/*-------- BOTTOM AREA --------*/",
+   "first_added": "/*-------- 下部領域 --------*/"
+  },
+  {
+   "id": "B33",
+   "orig_range": [
+    652,
+    653
+   ],
+   "cand_range": [
+    658,
+    659
+   ],
+   "orig_lines": "653-653",
+   "cand_lines": "659-659",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/*-------- MOBILE QUERY --------*/",
+   "first_added": "/*-------- モバイルクエリ --------*/"
+  },
+  {
+   "id": "B34",
+   "orig_range": [
+    701,
+    701
+   ],
+   "cand_range": [
+    707,
+    708
+   ],
+   "orig_lines": "at 702",
+   "cand_lines": "708-708",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": ""
+  },
+  {
+   "id": "B35",
+   "orig_range": [
+    704,
+    705
+   ],
+   "cand_range": [
+    711,
+    712
+   ],
+   "orig_lines": "705-705",
+   "cand_lines": "712-712",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-HOST",
+    "DRAFT-HOST",
+    "SELF-DELIVERY"
+   ],
+   "primary": "DELIVERY-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-HOST": "A",
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DELIVERY-HOST": {
+     "orig": [
+      [
+       704,
+       705
+      ]
+     ],
+     "cand": [
+      [
+       711,
+       712
+      ]
+     ]
+    },
+    "SELF-DELIVERY": {
+     "orig": [
+      [
+       704,
+       705
+      ]
+     ],
+     "cand": [
+      [
+       711,
+       712
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       711,
+       712
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "@import url('https://scp-wiki.wdfiles.com/local--code/theme%3Alumina/1');",
+   "first_added": "@import url(\"https://sigma10-jp-test.wdfiles.com/local--code/theme%3Alumina-jp/1\")"
+  },
+  {
+   "id": "B36",
+   "orig_range": [
+    706,
+    708
+   ],
+   "cand_range": [
+    713,
+    714
+   ],
+   "orig_lines": "707-708",
+   "cand_lines": "714-714",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "EXHIBIT-RESTRUCTURE",
+    "INCLUDE-REPOINT"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "INCLUDE-REPOINT": "A",
+    "EXHIBIT-RESTRUCTURE": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "INCLUDE-REPOINT": {
+     "orig": [
+      [
+       707,
+       708
+      ]
+     ],
+     "cand": [
+      [
+       713,
+       714
+      ]
+     ]
+    },
+    "EXHIBIT-RESTRUCTURE": {}
+   },
+   "notes": [
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[div_]]",
+   "first_added": "[[include :scp-jp:component:interwiki-style"
+  },
+  {
+   "id": "B37",
+   "orig_range": [
+    709,
+    710
+   ],
+   "cand_range": [
+    715,
+    716
+   ],
+   "orig_lines": "710-710",
+   "cand_lines": "716-716",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "DELIVERY-HOST",
+    "DRAFT-HOST",
+    "SELF-DELIVERY"
+   ],
+   "primary": "DELIVERY-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-HOST": "A",
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DELIVERY-HOST": {
+     "orig": [
+      [
+       709,
+       710
+      ]
+     ],
+     "cand": [
+      [
+       715,
+       716
+      ]
+     ]
+    },
+    "SELF-DELIVERY": {
+     "orig": [
+      [
+       709,
+       710
+      ]
+     ],
+     "cand": [
+      [
+       715,
+       716
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       715,
+       716
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "| theme=https://scp-wiki.wdfiles.com/local--code/theme%3Alumina/1",
+   "first_added": "| theme= https://sigma10-jp-test.wdfiles.com/local--code/theme%3Alumina-jp/1"
+  },
+  {
+   "id": "B38",
+   "orig_range": [
+    711,
+    712
+   ],
+   "cand_range": [
+    717,
+    717
+   ],
+   "orig_lines": "712-712",
+   "cand_lines": "at 718",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[/div]]",
+   "first_added": ""
+  }
+ ],
+ "derived_presence": {
+  "HTTP-KEPT": {
+   "class": "(ii) posting rewrite",
+   "count": 1,
+   "lines": [
+    "149-149"
+   ],
+   "example": "--side-bar-button-mask: url(\"data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' data-name='Layer 1' viewBox='0 0 419.8 419.8'%3E%3Cpath d='M209.9 300.6c0-44-46.7-90.8-90.7-90.8 44 0 90.7-46.6 90.7-90.5 0 44 46.7 90.6 90.7 90.6-44 0-90.8 46.7-90.8 90.7z'/%3E%3C/svg%3E\");"
+  }
+ },
+ "summary": {
+  "blocks": 38,
+  "specific": 21,
+  "heuristic": 13,
+  "residue": 4,
+  "skipped": 0,
+  "reindent_blocks": 0,
+  "label_counts": {
+   "IFTAGS": 2,
+   "DELIVERY-HOST": 3,
+   "DRAFT-HOST": 3,
+   "BARE-RATE-DEL": 1,
+   "TRANS-UNANCHORED": 15,
+   "CREDIT-PREVIEW": 1,
+   "CREDIT-PROSE": 1,
+   "TASL-FIELDS": 1,
+   "COMPONENT-SWAP": 1,
+   "ESCAPED-INCLUDE": 1,
+   "INCLUDE-REPOINT": 2,
+   "TRANSLATION-ANCHORED": 10,
+   "COMMENT-TEXT": 7,
+   "FONT-IMPORT": 1,
+   "JPFONT-LOAD": 1,
+   "CSS-BODY": 1,
+   "HEADERVAR": 1,
+   "WS-ONLY": 2,
+   "SELF-DELIVERY": 2,
+   "EXHIBIT-RESTRUCTURE": 1
+  }
+ },
+ "residue": [
+  "B29",
+  "B32",
+  "B34",
+  "B38"
+ ],
+ "skeleton": {
+  "sha256": null,
+  "status": "REFUSED: README.md is human-edited (or of unknown provenance); untouched"
+ }
+}

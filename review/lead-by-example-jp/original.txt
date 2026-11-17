@@ -1,0 +1,2695 @@
+[[iftags +版式]]
+[[module CSS]]
+@import url("https://bhl.scpwikicn.com/css/min/normalize.min.css");
+@import url("https://bhl.scpwikicn.com/css/min/black-highlighter.min.css");
+[[/module]]
+[[/iftags]]
+
+[[module CSS]]
+@import url('https://fastly.jsdelivr.net/gh/hoah2333/Fonts@main/Typeface-VonwaonBitmap-12px.css');
+@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap');
+
+/*Base*/
+@supports(display: grid) {
+:root:lang(cn) {
+    /* S-CSS-P Integration */
+    /* If you're making a new CSS theme, please include the following three variables at minimum. */
+        --theme-base: "nuscp";
+    /* must be either "nuscp" or "sigma9" */
+        --theme-id: "lead-by-example";
+    /* set this to the URL of your theme's page - eg for "component:ar-theme", set it javascript:;to "ar-theme" */
+        --theme-name: "LeadByExample";
+    /* set this to your theme's full name */
+        --header-title: "基金会武装部队";
+        --header-subtitle: "搜索，作战，守护";
+
+        /* Standard theme colors */
+        --bright-accent: 143,151,121;
+        --medium-accent: 108,124,89;
+        --dark-accent: 68,76,56;
+        --newpage-color: 181,195,0;
+        --sidebar-quotes: 232, 237, 225;
+        --header-gradient-color-bottom: 108,124,89;
+
+    /* Primary Header Colors */
+    --swatch-topmenu-border-color: var(--dark-accent);
+    --swatch-topmenu-bg-color: transparent;
+    --mobile-desktop-sidebar-button-color: var(--medium-accent);
+    --diagonal-stripes: unset;
+        /* ===SIDE-BAR GENERAL=== */
+    --sidebar-bg-color: var(--sidebar-quotes);
+    --sidebar-resources-bg-color: var(--bright-accent);
+    --sidebar-media-bg-color: var(--bright-accent);
+
+        /* ===SIDEBLOCK MENU=== */
+    --sideblock-heading-border-color: transparent;
+    --sideblock-heading-bg-color: var(--dark-accent);
+    --rating-module-button-color: var(--bright-accent);
+    --rating-module-button-color: var(--gray-monochrome);
+
+        /* ===MENU-ITEMS=== */
+    --sidebar-border-color: transparent;
+    --sidebar-subtest-color: transparent;
+
+    --sidebar-links-text: var(--bright-accent);
+    --sidebar-links-hover-bg-color: var(--bright-accent);
+    --sidebar-links-hover-text-color: var(--medium-accent);
+    }
+}
+
+
+/* Sidebar */
+#side-bar {
+    background-color: rgba(var(--sidebar-quotes));
+}
+
+#side-bar .heading p,
+#interwiki .heading p {
+    border-top: 3px rgb(var(--medium-accent));
+    width: 100%;
+    text-align: center;
+    padding: 0.5em;
+    background-color: rgb(var(--medium-accent));
+    color: rgb(255,255,255);
+}
+
+#extra-div-1 {
+    height: calc(var(--header-height-on-desktop) + var(--topbar-height-on-desktop));
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 7;
+    background-image:
+        linear-gradient(to top, black, rgb(var(--medium-accent)));
+}
+
+#extra-div-5 {
+    height: calc(var(--header-height-on-desktop) + var(--topbar-height-on-desktop));
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 8;
+
+    background-image:
+        repeating-linear-gradient(135deg, rgba(255,255,255,0.12) 0px, rgba(255,255,255,0.12) 2px, transparent 4px),
+        linear-gradient(rgba(255,255,255,0.09) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.09) 1px, transparent 1px);
+    background-size: 8px 8px, 40px 40px, 40px 40px;
+    opacity: 0.55;
+    animation: hud-scan 9s linear infinite;
+}
+
+@keyframes hud-scan {
+    0% { background-position: 0 0, 0 0, 0 0; }
+    100% { background-position: -200px 200px, 0 40px, 40px 0; }
+}
+
+/* Scan adapts on mobile */
+@media (max-width: 768px) {
+    #extra-div-1,
+    #extra-div-5 {
+        height: calc(var(--header-height-on-mobile) + var(--topbar-height-on-mobile));
+    }
+
+
+:root:lang(cn) {
+    --swatch-topmenu-border-color: var(--dark-accent);
+    --swatch-topmenu-bg-color: var(--gray-monochrome);
+}
+}
+
+h1, h2 {
+    color: rgb(var(--medium-accent));
+    font-weight: 700;
+}
+
+/* Base blockquote */
+.blockquote-s {
+    min-width: 85% !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    position: relative;
+    font-weight: 500;
+    padding: 1em;
+    margin: 1.2em 0;
+    background-color: rgb(var(--sidebar-quotes)) !important;
+    border: 1px solid rgb(var(--dark-accent));
+    pointer-events: auto;
+    background-image: none;
+    box-shadow: none;
+}
+.blockquote-s::before {
+    content: "";
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 0;
+    border: none !important;
+}
+.blockquote > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Time and place title */
+
+.title-a {
+    position: relative;
+    width: 100%;
+    display: block;
+    margin: auto;
+    font-family: 'VonwaonBitmap 12px';
+    color: rgb(var(--medium-accent));
+    font-weight: 750;
+    font-size: 1.2em;
+
+    padding: 0.1em 0.5em;
+    border-top: 3px solid rgb(var(--gray-monochrome));
+    border-bottom: 3px solid rgb(var(--gray-monochrome));
+    border-left: none;
+    border-right: none;
+    overflow: hidden;
+    width: 100%;
+    background-image: 
+        repeating-linear-gradient(to right, rgba(var(--medium-accent),0.1) 0, rgba(var(--dark-accent),0.1) 1px, transparent 1px, transparent 10px),
+        repeating-linear-gradient(to bottom, rgba(var(--medium-accent),0.1) 0, rgba(var(--dark-accent),0.1) 1px, transparent 1px, transparent 10px);
+    background-size: 100% 100%;
+}
+
+.title-a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+
+    background: linear-gradient(
+        90deg,
+        rgba(var(--medium-accent), 0) 0%, 
+        rgba(var(--medium-accent), 0.35) 40%, 
+        rgba(var(--medium-accent), 0.5) 50%,
+        rgba(var(--medium-accent), 0.35) 51%,
+        rgba(var(--medium-accent), 0.1) 52%,  
+        rgba(var(--medium-accent), 0.05) 60%,  
+        rgba(var(--medium-accent), 0) 100%
+    );
+    filter: drop-shadow(0 0 4px rgba(var(--medium-accent), 0.6));
+    animation: scan-horizontal-neon 3s linear infinite;
+}
+
+@keyframes scan-horizontal-neon {
+    0%   { left: -100%; opacity: 0.5; }
+    25%  { opacity: 1; }
+    50%  { left: 50%; opacity: 0.7; }
+    75%  { opacity: 1; }
+    100% { left: 150%; opacity: 0.5; }
+}
+
+/* Titles A and B */
+.title-b {
+    position: relative;
+    width: 100%;
+    display: block;
+    margin: auto;
+    font-family: 'VonwaonBitmap 12px';
+    color: rgb(var(--dark-accent));
+    font-weight: 800;
+    font-size: 1.2em;
+
+    padding: 0.1em 0.5em;
+    border-top: 3px solid rgb(var(--gray-monochrome));
+    border-bottom: 3px solid rgb(var(--gray-monochrome));
+    border-left: none;
+    border-right: none;
+    overflow: hidden;
+
+    background-color: rgba(var(--bright-accent), 0.2);
+
+    background-image: 
+        background: linear-gradient(to bottom, black, rgb(var(--medium-accent)));
+        repeating-linear-gradient(to right, rgba(var(--medium-accent),0.5) 0, rgba(var(--medium-accent),0.05) 1px, transparent 1px, transparent 10px),
+        repeating-linear-gradient(to bottom, rgba(var(--medium-accent),0.5) 0, rgba(var(--medium-accent),0.05) 1px, transparent 1px, transparent 10px);
+    background-size: 100% 100%;
+}
+
+.title-b::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+
+    background: linear-gradient(
+        90deg,
+        rgba(var(--pale-gray-monochrome), 0) 0%, 
+        rgba(var(--pale-gray-monochrome), 0.85) 40%, 
+        rgba(var(--pale-gray-monochrome), 1) 50%,
+        rgba(var(--pale-gray-monochrome), 0.85) 51%,
+        rgba(var(--pale-gray-monochrome), 0.5) 55%,  
+        rgba(var(--pale-gray-monochrome), 0.3) 60%,  
+        rgba(var(--pale-gray-monochrome), 0) 100%
+    );
+    filter: drop-shadow(0 0 4px rgba(var(--medium-accent), 0.6));
+    animation: scan-horizontal-neon 3s linear infinite;
+}
+
+@keyframes scan-horizontal-neon {
+    0%   { left: -100%; opacity: 0.5; }
+    25%  { opacity: 1; }
+    50%  { left: 50%; opacity: 0.7; }
+    75%  { opacity: 1; }
+    100% { left: 150%; opacity: 0.5; }
+}
+
+.title-a-noscan {
+    position: relative;
+    width: 100%;
+    display: block;
+    margin: auto;
+    font-family: 'VonwaonBitmap 12px';
+    color: rgb(var(--medium-accent));
+    font-weight: 750;
+    font-size: 1.2em;
+
+    padding: 0.1em 0.5em;
+    border-top: 3px solid rgb(var(--gray-monochrome));
+    border-bottom: 3px solid rgb(var(--gray-monochrome));
+    border-left: none;
+    border-right: none;
+    overflow: hidden;
+    width: 100%;
+    background-image: 
+        repeating-linear-gradient(to right, rgba(var(--medium-accent),0.1) 0, rgba(var(--dark-accent),0.1) 1px, transparent 1px, transparent 10px),
+        repeating-linear-gradient(to bottom, rgba(var(--medium-accent),0.1) 0, rgba(var(--dark-accent),0.1) 1px, transparent 1px, transparent 10px);
+    background-size: 100% 100%;
+}
+
+.title-b-noscan {
+    position: relative;
+    width: 100%;
+    display: block;
+    margin: auto;
+    font-family: 'VonwaonBitmap 12px';
+    color: rgb(var(--dark-accent));
+    font-weight: 800;
+    font-size: 1.2em;
+
+    padding: 0.1em 0.5em;
+    border-top: 3px solid rgb(var(--gray-monochrome));
+    border-bottom: 3px solid rgb(var(--gray-monochrome));
+    border-left: none;
+    border-right: none;
+    overflow: hidden;
+
+    background-color: rgba(var(--bright-accent), 0.2);
+
+    background-image: 
+        repeating-linear-gradient(to right, rgba(var(--medium-accent),0.5) 0, rgba(var(--medium-accent),0.05) 1px, transparent 1px, transparent 10px),
+        repeating-linear-gradient(to bottom, rgba(var(--medium-accent),0.5) 0, rgba(var(--medium-accent),0.05) 1px, transparent 1px, transparent 10px);
+    background-size: 100% 100%;
+}
+
+/* Title C and D */
+
+/* Title C */
+.title-c {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    font-family: 'VonwaonBitmap 12px';
+    font-size: 2.1em;
+    font-weight: 900;
+    text-align: left;
+    letter-spacing: 0.12em;
+    color: rgb(var(--pale-gray-monochrome));
+    line-height: 1;
+    z-index: 1; /* base */
+}
+
+.title-c span {
+    position: relative;
+    color: transparent;
+    display: inline-block;
+}
+
+.title-c span::before {
+    content: attr(data-char);
+    position: absolute;
+    top: 0; left: 0;
+    color: rgb(var(--pale-gray-monochrome));
+    animation: char-roll 20s infinite;
+    animation-delay: calc(var(--i) * 0.15s);
+    z-index: 2; /* below borders */
+    text-shadow:
+       -1px -1px 0 rgb(var(--medium-accent)),
+        1px -1px 0 rgb(var(--medium-accent)),
+       -1px  1px 0 rgb(var(--medium-accent)),
+        1px  1px 0 rgb(var(--medium-accent)),
+        0  -1px 0 rgb(var(--medium-accent)),
+        0   1px 0 rgb(var(--medium-accent)),
+       -1px  0  0 rgb(var(--medium-accent)),
+        1px  0  0 rgb(var(--medium-accent));
+}
+
+/* Animation */
+@keyframes char-roll {
+0% { content: "▓"; opacity: 0; } 
+5% { content: "▓"; opacity: 0; } 
+10% { content: "▓"; opacity: 1; } 
+15% { content: "%"; opacity: 1; } 
+20% { content: "#"; opacity: 1; } 
+25% { content: "□"; opacity: 1; } 
+30% { content: "?"; opacity: 1; } 
+35% { content: "$"; opacity: 1; } 
+40% { content: "@"; opacity: 1; } 
+41%,89% { content: attr(data-char); opacity: 1; } 
+90% { content: "▓"; opacity: 1; } 
+93% { content: "▓"; opacity: 0; } 
+100% { content: "▓"; opacity: 0; }
+}
+
+.title-c::before,
+.title-c::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: rgb(var(--dark-accent));
+    z-index: 3; /* above glitch */
+}
+.title-c::before { bottom: 0.55em; height: 3px; }
+.title-c::after  { bottom: 0.7em; height: 1px; }
+
+/* Title D */
+.title-d {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    font-family: 'VonwaonBitmap 12px';
+    font-size: 2.1em;
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: 0.12em;
+    color: rgb(var(--pale-gray-monochrome));
+    line-height: 1;
+
+    text-shadow:
+       -1px -1px 0 rgb(var(--medium-accent)),
+        1px -1px 0 rgb(var(--medium-accent)),
+       -1px  1px 0 rgb(var(--medium-accent)),
+        1px  1px 0 rgb(var(--medium-accent)),
+        0  -1px 0 rgb(var(--medium-accent)),
+        0   1px 0 rgb(var(--medium-accent)),
+       -1px  0  0 rgb(var(--medium-accent)),
+        1px  0  0 rgb(var(--medium-accent));
+}
+
+.title-d::before,
+.title-d::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: rgb(var(--dark-accent));
+    z-index: 1;
+}
+.title-d::before { bottom: 0.55em; height: 3px; }
+.title-d::after  { bottom: 0.7em; height: 1px; }
+
+
+/* Title D with grid */
+.title-d-grid {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    font-family: 'VonwaonBitmap 12px';
+    font-size: 2.1em;
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: 0.12em;
+    color: rgb(var(--pale-gray-monochrome));
+    line-height: 1;
+    margin: 0;
+    padding-bottom: 0.7em; /* for borders */
+
+    text-shadow:
+       -1px -1px 0 rgb(var(--medium-accent)),
+        1px -1px 0 rgb(var(--medium-accent)),
+       -1px  1px 0 rgb(var(--medium-accent)),
+        1px  1px 0 rgb(var(--medium-accent)),
+        0  -1px 0 rgb(var(--medium-accent)),
+        0   1px 0 rgb(var(--medium-accent)),
+       -1px  0  0 rgb(var(--medium-accent)),
+        1px  0  0 rgb(var(--medium-accent));
+
+    background-image: 
+        linear-gradient(to top, rgba(var(--newpage-color), 0.6), rgba(var(--newpage-color), 0.2)),
+        repeating-linear-gradient(
+            0deg,
+            rgba(var(--pale-gray-monochrome), 1) 0px,
+            rgba(var(--pale-gray-monochrome), 1) 1px,
+            transparent 1px,
+            transparent 20px
+        ),
+        repeating-linear-gradient(
+            90deg,
+            rgba(var(--pale-gray-monochrome), 1) 0px,
+            rgba(var(--pale-gray-monochrome), 1) 1px,
+            transparent 1px,
+            transparent 20px
+        );
+    background-blend-mode: overlay;
+    background-repeat: repeat;
+    background-size: auto;
+    background-clip: content-box;
+}
+
+/* Double border for grid */
+.title-d-grid::before,
+.title-d-grid::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: rgb(var(--dark-accent));
+    z-index: 1;
+}
+.title-d-grid::before { bottom: 0.55em; height: 3px; }
+.title-d-grid::after  { bottom: 0.7em; height: 1px; }
+
+/* Notebook Container */
+
+.notebook {
+    border: 4px solid rgb(var(--dark-accent));
+    background: rgba(var(--medium-accent), 0.7);
+    margin: 1.5em 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 10px;
+    width: 97%;
+    border-right: 17px solid rgb(var(--dark-accent));
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+
+}
+
+.notebook::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+    pointer-events: none;
+    z-index: 0;
+    display: none;
+}
+
+.notebook > * {
+    position: relative;
+    z-index: 1;
+}
+
+.notebook-grid {
+    flex: 0 0 60px;
+    width: 80%;
+    margin: auto;
+    background-image:
+        repeating-linear-gradient(
+            0deg,
+            rgba(var(--medium-accent), 0.9) 0px,
+            rgba(var(--medium-accent), 0.9) 1px,
+            transparent 1px,
+            transparent 15px
+        ),
+        repeating-linear-gradient(
+            90deg,
+            rgba(var(--medium-accent), 0.9) 0px,
+            rgba(var(--medium-accent), 0.9) 1px,
+            transparent 1px,
+            transparent 15px
+        );
+    background-color: rgb(var(--sidebar-quotes));
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 30px;
+    border-top: 1px solid rgb(var(--dark-accent));
+    border-left: 1px solid rgb(var(--dark-accent));
+    border-right: 1px solid rgb(var(--dark-accent));
+    box-shadow: 4px 0 6px -2px rgba(0,0,0,0.3);
+}
+
+
+.notebook-divider {
+    height: 5px;
+    background-color: rgb(var(--dark-accent));
+    width: 80%;
+    margin: auto;
+    border-left: 1px solid rgb(var(--dark-accent));
+    border-right: 1px solid rgb(var(--dark-accent));
+    box-shadow: 4px 0 6px -2px rgba(0,0,0,0.3);
+}
+
+.notebook-lines {
+    width: 80%;
+    margin: auto;
+    display: block;
+    overflow: hidden;
+    font-family: 'Ma Shan Zheng', cursive;
+    font-size: 1.2em;
+    font-style: normal;
+
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: linear-gradient(to top ,rgb(var(--medium-accent)) 0%, rgb(var(--sidebar-quotes)) 8%);
+    background-origin: padding-box;
+    background-position: 0px 8px;
+    background-repeat: repeat;
+    background-size: 100% 20px;
+
+    border-bottom: 1px solid rgb(var(--dark-accent));
+    border-left: 1px solid rgb(var(--dark-accent));
+    border-right: 1px solid rgb(var(--dark-accent));
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px 10px;
+    margin-bottom: 30px;
+
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5)
+    }
+.notebook-lines p,
+.notebook-lines ul {
+    line-height: 20px;
+    margin: 0;
+}
+    text-shadow:
+        0 0 1px rgba(var(--pale-gray-monochrome), 0.3),
+        0.4px 0.4px 0 rgba(var(--black-monochrome), 0.4),
+        -0.3px -0.3px 0 rgba(var(--black-monochrome), 0.4);
+    opacity: 0.92;
+}
+
+.notebook-lines::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+        repeating-linear-gradient(
+            45deg,
+            rgba(255, 255, 255, 0.02) 0px,
+            rgba(255, 255, 255, 0.02) 2px,
+            transparent 2px,
+            transparent 4px
+        );
+    mix-blend-mode: overlay;
+    opacity: 0.05;
+    pointer-events: none;
+}
+
+.notebook-grid,
+.notebook-divider,
+.notebook-lines {
+    box-sizing: border-box;
+}
+
+.divider-fortified {
+    position: relative;
+    height: 4px;
+    background-color: rgb(var(--medium-accent));
+    margin-top: 35px;
+    margin-bottom: 20px;
+    width: 100%;
+    overflow: visible;
+}
+
+.divider-fortified::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 87.5%;
+    height: 12px;
+
+    background-image:
+        repeating-linear-gradient(
+            90deg,
+            rgb(var(--medium-accent)) 0 12px,
+            transparent 12px 20px
+        );
+
+    background-size: 20px 12px;
+    background-repeat: repeat-x;
+    -webkit-mask-image: linear-gradient(to top, transparent 30%, black 30%);
+    mask-image: linear-gradient(to top, transparent 30%, black 30%);
+    background-position: center bottom;
+    pointer-events: none;
+}
+
+.divider-concertina {
+    position: relative;
+    height: 3px;
+    background-color: rgb(var(--medium-accent));
+    overflow: visible;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.divider-concertina::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -1px;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 30px;
+
+
+    background-image: radial-gradient(
+        ellipse 7px 15px at center 60%,
+        transparent 49%,
+        rgb(var(--medium-accent)) 50%,
+        rgb(var(--medium-accent)) 70%,
+        transparent 71%
+    );
+
+    background-size: 15px 30px; 
+    background-repeat: repeat-x;
+    background-position: center bottom; 
+}
+
+.divider-bound {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: rgb(var(--medium-accent));
+    font-weight: bold;
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+.divider-bound::before,
+.divider-bound::after {
+    content: "";
+    flex: 1;
+    border-bottom: 3px solid rgb(var(--medium-accent));
+    margin: 0 10px; /* space between line and text */
+}
+
+.divider-bound.thick {
+    font-size: 1.2em;
+}
+
+.divider-bound.thim {
+    font-size: 0.8em;
+}
+
+.divider-bound.thick::before,
+.divider-bound.thick::after {
+    border-bottom-width: 5px;
+}
+
+.divider-bound.thin::before,
+.divider-bound.thin::after {
+    border-bottom-width: 1px;
+}
+
+/* Link colors */
+a {
+    color: rgb(var(--medium-accent));
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+a:hover { text-decoration: underline; color: rgb(var(--bright-accent)); }
+
+a:active { color: rgb(var(--sidebar-quotes)); }
+
+a:visited { color: rgb(var(--dark-accent)); }
+
+a.new-page {
+    color: rgb(var(--newpage-color));
+}
+
+/* Header text shadow */
+#header h1 a::before,
+#header h2 span:before {
+    text-shadow: 2px 2px #000;
+}
+
+@media screen and (max-width: 768px) {
+  html, body, #page-title {
+    overflow-x: hidden !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+[[/module]]
+
+
+
+[[iftags [[#ifexpr {$army} == (true) | - ]]]]
+[[module CSS]]
+/*Army*/
+
+:root:lang(cn) {
+        --header-title: "基金会陆军";
+        --header-subtitle: "侦察，占领，投送";
+        --swatch-topmenu-bg-color: transparent;
+}
+#extra-div-1 { display: none !important; }
+
+#extra-div-5 { display: none !important; }
+
+#extra-div-3 {
+height: calc(var(--header-height-on-desktop) + var(--topbar-height-on-desktop));
+width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+pointer-events: none;
+background-image: url("https://scpsandboxcn.wdfiles.com/local--files/theme%3Aeatshit/tropmulti.png");
+background-size: 120% auto;
+background-repeat: no-repeat;
+background-position: left top;
+}
+
+#extra-div-6 {
+    height: calc(var(--header-height-on-desktop) + var(--topbar-height-on-desktop));
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 7;
+    background-image:
+        linear-gradient(to top, black, transparent);
+}
+
+/* Scan adapts on mobile */
+@media (max-width: 768px) {
+    #extra-div-2 {
+        height: calc(var(--header-height-on-mobile) + var(--topbar-height-on-mobile));
+    }
+
+    #extra-div-6 {
+        height: calc(var(--header-height-on-mobile) + var(--topbar-height-on-mobile));
+    }
+}
+
+.blockquote-s {
+    background-image: url(https://scpsandboxcn.wdfiles.com/local--files/theme%3Aeatshit/tropmulti.png);
+    background-size: cover;
+    background-position: right;
+    border: 1px solid rgb(var(--dark-accent)); 
+    color: black !important;
+}
+
+.blockquote-s::before {
+    display: block;
+    background-color: rgba(255,255,255,0.8);
+    border: 2px solid rgb(var(--dark-accent));
+}
+
+.blockquote-s > * {
+    position: relative;
+    z-index: 1;
+}
+
+.notebook {
+    background-image: url(https://scpsandboxcn.wdfiles.com/local--files/theme%3Aeatshit/tropmulti.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.notebook::before {
+    display: block;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.notebook > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+
+
+[[/module]]
+[[/iftags]]
+
+[[iftags [[#ifexpr {$navy} == (true) | - ]]]]\
+[[module CSS]]
+/*Navy*/
+
+@supports(display: grid) {
+:root:lang(cn) {
+        --header-title: "基金会海军";
+        --header-subtitle: "航行，拒止，巡逻";
+        --bright-accent: 75,156,211;
+        --medium-accent: 38,97,156;
+        --dark-accent: 0,35,102;
+        --newpage-color: 153,102,204;
+        --sidebar-quotes: 213, 234, 250;
+        --header-gradient-color-bottom: 38,97,156;
+    }
+}
+
+#extra-div-1 { display: none; }
+#extra-div-5 { display: none !important; }
+
+#extra-div-3 {
+    height: calc(var(--header-height-on-desktop) + var(--topbar-height-on-desktop));
+    width: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    pointer-events: none;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/57/NFP-navy.jpg");
+    background-size: 100% auto;
+    background-position: center top;
+}
+
+#extra-div-6 {
+    height: calc(var(--header-height-on-desktop) + var(--topbar-height-on-desktop));
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 7;
+    background-image:
+        linear-gradient(to top, black, transparent);
+}
+
+/* Scan adapts on mobile */
+@media (max-width: 768px) {
+
+    #extra-div-6 {
+        height: calc(var(--header-height-on-mobile) + var(--topbar-height-on-mobile));
+    }
+
+:root:lang(cn) {
+    --swatch-topmenu-border-color: var(--dark-accent);
+    --swatch-topmenu-bg-color: var(--gray-monochrome);
+}
+}
+
+.blockquote-s {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/57/NFP-navy.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 1px solid rgb(var(--dark-accent));
+}
+
+.blockquote-s::before {
+    display: block;
+    background-color: rgba(255,255,255,0.8);
+    border: 2px solid rgb(var(--dark-accent));
+}
+
+.blockquote-s > * {
+    position: relative;
+    z-index: 1;
+}
+
+.notebook {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/57/NFP-navy.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.notebook::before {
+    display: block;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.notebook > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Navy links */
+a:hover {
+    color: rgb(50,120,180);
+}
+
+[[/module]]
+[[/iftags]]
+
+
+[[iftags [[#ifexpr {$alert} == (true) | - ]]]]\
+[[module CSS]]
+/*Alert*/
+
+@supports(display: grid) {
+:root:lang(cn) {
+        --header-title: "基金会武装部队";
+        --header-subtitle: "箭在弦上";
+        /* ===STANDARD THEME COLORS=== */
+        --bright-accent: 237, 41, 57;
+        --medium-accent: 237, 27, 36;
+        --dark-accent: 150, 0, 24;
+        --sidebar-quotes: 241, 219, 216;
+        --newpage-color: 202, 31, 123;
+        /* ===HEADER GRADIENT=== */
+        --header-gradient-color-bottom: 237, 27, 36;
+        --header-height-on-desktop: 500px;
+        --logo-image: none;
+
+        --swatch-menubg-extra-dark-color: 30, 30, 32;
+
+        /* Old Vars */
+        --black-monochrome: 20, 22, 24;
+        --light-pale-gray-monochrome: 250, 250, 250;
+        --bright-accent: var(--pale-accent);
+        /* Primary Theme Colors */
+        --swatch-background: var(--swatch-menubg-black-color);
+        /* Background and Header Colors */
+        --background-gradient-color: 10, 10, 10;
+        /* Primary Text Colors */
+        --swatch-text-light: var(--light-pale-gray-monochrome);
+        --swatch-text-general: var(--swatch-text-light);
+        /* Primary Menu Colors */
+        --swatch-menubg-color: var(--swatch-menubg-black-color);
+        --swatch-menutxt-general-color: var(--swatch-menutxt-light-color);
+        /* Colors for Secondary & Tertiary items like Blockquote and YUI Tabs */
+        --swatch-secondary-color: var(--swatch-menubg-dark-color);
+        --swatch-tertiary-color: var(--swatch-menubg-medium-dark-color);
+        --swatch-alternate-color: var(--swatch-primary);
+
+        /* Text Colors for Secondary & Tertiary items like Sidebar Headers and Top-Bar Menu Text */
+        --swatch-text-secondary-color: var(--swatch-menutxt-light-color);
+        --swatch-text-tertiary-color: var(--swatch-menutxt-light-color);
+
+        --rating-module-text-color: var(--swatch-text-general);
+        --rating-module-button-color: var(--swatch-text-general);
+        --rating-module-button-cancel-color: 100, 100, 100;
+
+        --ui-wght: 500;
+        --ui-hvr-wght: 600;
+
+
+    }
+
+    #main-content {
+        --pagetags-title-text: var(--swatch-text-secondary-color);
+    }
+
+    #header {
+        --search-icon-color: var(--swatch-text-tertiary-color);
+    }
+
+    #top-bar {
+        /* ===DROPDOWN MENU=== */
+        --dropdown-bg-color: var(--swatch-menubg-extra-dark-color), 0.9;
+    }
+
+    ::-moz-selection {
+        background: rgb(var(--swatch-primary-darkest));
+    }
+
+    ::selection {
+        background: rgb(var(--swatch-primary-darkest));
+    }
+
+    body {
+        -webkit-font-smoothing: subpixel-antialiased;
+        -moz-osx-font-smoothing: auto;
+    }
+
+    #search-top-box-input {
+        background-color: rgb(var(--swatch-menubg-extra-dark-color));
+    }
+
+    #account-options {
+        background: var(--gradient-header);
+    }
+
+    #login-status {
+        color: rgba(var(--swatch-menutxt-light-color), 0.5);
+    }
+
+    #login-status ul a {
+        color: rgb(var(--swatch-menutxt-light-color));
+    }
+
+    span.printuser {
+        color: rgb(var(--swatch-menutxt-light-color));
+    }
+
+    .page-rate-widget-box {
+        background: linear-gradient(to bottom,
+                rgba(var(--header-gradient-color-bottom), 0.5) 0%,
+                rgba(var(--header-gradient-color-middle), 0.15) 90%,
+                rgba(var(--header-gradient-color-top), 0.15) 100%);
+        border: 0.0625rem solid rgba(var(--swatch-menubg-medium-color), 0.25);
+    }
+
+    #top-bar div.mobile-top-bar>ul>li>ul>li>a,
+    #top-bar div.top-bar>ul>li>ul>li>a {
+        box-shadow: inset 0 0 0 0.0625rem rgba(var(--swatch-menubg-medium-color), 0.15);
+    }
+
+    #side-bar .heading p,
+    #side-bar .collapsible-block .collapsible-block-link {
+        color: rgb(var(--swatch-menutxt-light-color));
+    }
+
+    blockquote,
+    .blockquote,
+    .code {
+        --swatch-border-color: var(--swatch-menubg-light-color);
+        border-color: rgba(var(--swatch-border-color), 0.25);
+    }
+
+    .yui-navset .yui-nav,
+    .yui-navset .yui-navset-top .yui-nav {
+        --box-shadow: rgb(var(--swatch-primary-darkest));
+        border-color: rgb(var(--swatch-primary-darkest));
+    }
+
+    .yui-navset .yui-nav li,
+    .yui-navset .yui-navset-top .yui-nav li {
+        --box-shadow: rgb(var(--swatch-primary-darkest));
+    }
+
+    .yui-navset .yui-nav a,
+    .yui-navset .yui-navset-top .yui-nav a {
+        background-color: rgb(var(--swatch-menubg-extra-dark-color));
+        color: rgb(var(--swatch-text-general));
+    }
+
+    .yui-navset .yui-nav .selected,
+    .yui-navset .yui-navset-top .yui-nav .selected {
+        background-color: rgb(var(--swatch-primary-darkest));
+    }
+
+    table.wiki-content-table th {
+        background: rgb(var(--swatch-secondary-color));
+    }
+
+    table.wiki-content-table th,
+    table.wiki-content-table tr {
+        border: 0.0625rem solid rgba(var(--swatch-menubg-medium-color), 0.25) !important;
+    }
+
+    table.wiki-content-table td {
+        border: 0.0625rem solid rgba(var(--swatch-menubg-light-color), 0.25) !important;
+    }
+
+    textarea,
+    input.text,
+    input.checkbox,
+    div.note,
+    #lock-info {
+        border: 0.0625rem solid rgba(var(--swatch-menubg-light-color), 0.25);
+        background-color: rgb(var(--swatch-menubg-extra-dark-color));
+        color: rgb(var(--swatch-text-light));
+    }
+
+    .code pre span[class*="hl-"] {
+        -webkit-filter: invert(1) hue-rotate(180deg);
+        filter: invert(1) hue-rotate(180deg);
+    }
+
+    .owindow .modal-body img {
+        background-color: transparent !important;
+    }
+
+    .hovertip {
+        border: 0.0625rem solid rgba(var(--swatch-menubg-light-color), 0.25);
+        background-color: rgb(var(--swatch-menubg-extra-dark-color)) !important;
+        color: rgb(var(--swatch-text-light)) !important;
+    }
+
+    #main-content .page-tags span a:not([href^="/system:page-tags/tag/_"]),
+    #main-content .page-tags span a:visited:not([href^="/system:page-tags/tag/_"]) {
+        color: rgb(var(--swatch-primary-secondary-color));
+    }
+
+    #footer,
+    #license-area {
+        --link-color: var(--swatch-text-tertiary-color);
+        --hover-link-color: var(--swatch-text-tertiary-color);
+        --visited-link-color: var(--swatch-text-tertiary-color);
+        color: rgb(var(--swatch-text-general));
+    }
+
+    div[id*="page-options-bottom"]>a::after {
+        background-color: rgb(var(--swatch-text-secondary-color));
+    }
+
+    /* ===BUTTONS=== */
+    div[id*="page-options-bottom"]>a::after {
+        background-color: rgb(var(--swatch-text-tertiary-color));
+    }
+}
+
+    }
+
+
+#extra-div-1 { display: none; }
+#extra-div-5 { display: none; }
+
+#extra-div-4 {
+    height: calc(var(--header-height-on-desktop) + var(--topbar-height-on-desktop));
+width: 105%;
+position: absolute;
+top: 0;
+left: 0;
+pointer-events: none;
+background-image: url("https://upload.wikimedia.org/wikipedia/commons/2/28/HMS_Belfast_-_Operations_room_4.jpg");
+background-size: 95% auto;
+background-repeat: no-repeat;
+background-position: left top;
+z-index: 7;
+}
+
+#extra-div-6 {
+    height: calc(var(--header-height-on-desktop) + var(--topbar-height-on-desktop));
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 8;
+    background-image:
+        linear-gradient(to top, rgb(0, 0, 0), transparent);
+    display: block !important;
+}
+
+@media (max-width: 768px) {
+
+    #extra-div-6 {
+        height: calc(var(--header-height-on-mobile) + var(--topbar-height-on-mobile));
+    }
+}
+
+/* ===Blockquote=== */
+.blockquote-s {
+    background-image: none !important;
+    border: 1px solid rgb(var(--dark-accent)) !important;
+    background-color: rgb(var(--sidebar-quotes)) !important;
+}
+
+.blockquote-s::before {
+    display: none !important;
+}
+
+.blockquote-s a,
+.blockquote-s {
+    color: rgb(var(--dark-accent)); 
+}
+
+/* === Link Colors=== */
+a {
+    color: rgb(var(--bright-accent)); /* base red */
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: rgb(200, 30, 45);
+    text-decoration: underline;
+}
+
+a:active {
+    color: rgb(150, 0, 24);
+}
+
+a:visited {
+    color: rgb(180, 20, 35);
+}
+
+a.new-page {
+    color: rgb(var(--newpage-color));
+}
+
+
+
+[[/module]]
+[[/iftags]]
+
+
+[[iftags +版式]]
+[[image https://scp-wiki.wdfiles.com/local--files/theme%3Ablack-highlighter-theme/black-highlighter-logo.svg]]
+
+[[>]]
+**评分模块：**
+[[module Rate]]
+[[/>]]
+
+[[>]]
+**评分模块与著作信息模块：**
+[[/>]]
+
+[[include :scp-wiki-cn:credit:start]]
+页面信息
+[[include :scp-wiki-cn:credit:more]]
+更多页面信息
+[[include :scp-wiki-cn:credit:end]]
+
+[[>]]
+**著作信息模块：**
+[[/>]]
+
+[[include :scp-wiki-cn:credit:start-standalone]]
+页面信息
+[[include :scp-wiki-cn:credit:more-standalone]]
+更多页面信息
+[[include :scp-wiki-cn:credit:end-standalone]]
+
++ 这是什么？
+
+这是一个由[[*user Agt Darkwall]]制作的有关[https://scp-wiki-cn.wikidot.com/slipping-desolation 荏苒荒凉]设定的主题板式。
+
+本板式基于[https://scp-wiki-cn.wikidot.com/theme:black-highlighter-theme 黑色标记笔]。
+
+在你的作品开头添加如下语法以应用此版式：
+
+[[div class="code"]]
+@@[[include :scp-wiki-cn:theme:black-highlighter-theme]]@@
+@@[[include :scp-wiki-cn:theme:lead-by-example]]@@
+[[/div]]
+
+考虑到荏苒荒凉设定的适用范围较小，如果有作者想要在基金会武装部队之外的背景使用本板式，本板式同样支持自定义标题与标志。
+
+换句话说：如果你觉得，”我真喜欢这个板式，但是基金会标志不彳亍，必须换成我心仪的演绎部/圆头耄耋/侯国玉/丰川祥子“，那就在以上代码的后面再加一个这玩意，然后放手一搏吧。
+
+[[div class="code"]]
+@@[[module CSS]]@@
+@@:root {@@
+@@     --lgurl: url('图源放这 url');@@
+@@}@@
+@@:root:lang(cn) {@@
+@@     --header-title: "标题";@@
+@@     --header-subtitle: "副标题";@@
+@@}@@
+@@[[/module]]@@
+[[/div]]
+@@@@
+@@@@
+@@@@
++ 预设项
+
+本板式内置了一些预设的视觉效果，可以通过在引入时修改参数来改变其外观。
+@@@@
+@@@@
+[[include component:image-block name=https://scpsandboxcn.wdfiles.com/local--files/theme%3Aeatshit-0/navy2.png|caption=SCP 海军迷彩 预设|width=100%]]
+引入方式：
+[[div class="code"]]
+@@[[include :scp-wiki-cn:theme:black-highlighter-theme]]@@
+@@[[include :scp-wiki-cn:theme:lead-by-example |navy=true]]@@
+[[/div]]
+@@@@
+[[include component:image-block name=https://scpsandboxcn.wdfiles.com/local--files/theme%3Aeatshit-0/army2.png|caption=SCP 陆军迷彩 预设|width=100%]]
+引入方式：
+[[div class="code"]]
+@@[[include :scp-wiki-cn:theme:black-highlighter-theme]]@@
+@@[[include :scp-wiki-cn:theme:lead-by-example |army=true]]@@
+[[/div]]
+@@@@
+@@@@
+@@@@
++ 主题颜色
+
+[[include :scp-wiki:component:theme-squares -=-
+| color1-name=Payne's Grey
+| color1-variable=--gray-monochrome
+| color1-info=(66, 66, 72)
+| color1-has-light-text=1
+| color2-name=Asparagus
+| color2-variable=--bright-accent
+| color2-info=(143, 151, 121)
+| color2-has-light-text=1
+| subcolor1-name=Alto
+| subcolor1-variable=--very-light-gray-monochrome
+| subcolor1-info=(215, 215, 215)
+| subcolor2-name=White Smoke
+| subcolor2-variable=--pale-gray-monochrome
+| subcolor2-info=(244, 244, 244)
+| subcolor3-name=Bastille
+| subcolor3-variable=--dark-gray-monochrome
+| subcolor3-info=(48, 48, 52)
+| subcolor3-has-light-text=1
+| subcolor4-name=Resada Green
+| subcolor4-variable=--medium-accent
+| subcolor4-info=(108, 124, 89)
+| subcolor4-has-light-text=1
+| subcolor5-name=Rifle Green
+| subcolor5-variable=--dark-accent
+| subcolor5-info=(68, 76, 56)
+| subcolor5-has-light-text=1
+| subcolor6-name=Olive Chatreuse
+| subcolor6-variable=--newpage-color
+| subcolor6-info=(181, 195, 0)
+]]
+@@@@
+@@@@
+@@@@
++ 示例
+
+可通过五个连字符“@@-----@@”创建水平分割线。若它未被放在其他部件（诸如引用块）中，则会左右延伸贯穿页面。这种将文件分割为多个部分的线就是分割线。
+
+-----
+
+标题可通过在一行字起始处输入 1 至 6 个加号“+”来创建。
+
+[[collapsible show="+ 标题" hide="- 标题"]]
++ 1 级标题
+
+++ 2 级标题
+
++++ 3 级标题
+
+++++ 4 级标题
+
++++++ 5 级标题
+
+++++++ 6 级标题
+[[/collapsible]]
+@@@@
+@@@@
+@@@@
+[[tabview]]
+[[tab 分页]]
+此为分页（tab view）。
+[[/tab]]
+[[tab 分页]]
+看，这有更多文字。
+
+多么精巧绝伦。
+[[/tab]]
+[[tab 长 Tab]]
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+[[/tab]]
+[[tab 由于一些奇怪的原因，这个空 tab 有一个很长的名字。我想知道为什么？这很奇怪。]]
+[[/tab]]
+[[tab 空 Tab]]
+[[/tab]]
+[[tab 空 Tab]]
+[[/tab]]
+[[tab 空 Tab]]
+[[/tab]]
+[[tab 自然段]]
+99式主战坦克（编号ZTZ-99，工程代号WZ-123）是中国人民解放军最新的主战坦克。与另一款较新的主战坦克96式相比，其制造成本与性能更高，它具备优异的防弹外型，其炮塔和车体均采用第三代复合装甲，是中国陆军集团军重型合成旅的主要突击力量，被称为中国陆战王牌。99式主战坦克及其后续型号在1999年国庆50周年阅兵式以来历次阅兵上均为装甲方阵第一方队，体现出99式在解放军中的重要地位。其重大改进型99A式坦克在2014年“和平使命-2014”联合军演中首次公开亮相。（摘自维基百科）
+[[/tab]]
+[[tab 神秘链接]]
+https://www.bilibili.com/video/BV1GJ411x7h7
+会是什么呢？真好奇呀
+[[/tab]]
+[[/tabview]]
+@@@@
+@@@@
+@@@@
+> 这是一个引用块，在一行字的起始处加上“> ”来创建。
+>
+> 更多文字
+> -----
+> 一条分割线
+>
+>> 嵌套引用块
+@@@@
+||~ 这是 ||~ 表格 ||
+|| 你应该老早 || 就知道怎么 ||
+|||| 做这个了吧 ||
+@@@@
+@@@@
+@@@@
+
+@@@@
+@@@@
+@@@@
++ 特殊元素
+本版式有包含标题、内容、分割线等多种特殊元素。
+
+**如下一般使用div可提供另一种风格的引用块：**
+[[div class="code"]]
+@@[[div class="blockquote-s"]]@@
+这是另一种引用块。
+第34特遣舰队现在何处？重复一遍，现在何处？全世界都想知道。
+在使用海军或者陆军预设效果时，背景会变为迷彩。
+注意：在使用海军或者陆军预设效果时使用此div时行数尽量放在40行以下，否则迷彩背景会过度拉伸或过度放大。我正在想办法解决这个问题。
+@@[[/div]]@@
+[[/div]]
+[[div class="blockquote-s"]]
+这是另一种引用块。
+第34特遣舰队现在何处？重复一遍，现在何处？全世界都想知道。
+在使用海军或者陆军预设效果时，背景会变为迷彩。
+注意：在使用海军或者陆军预设效果时使用此div时行数尽量放在40行以下，否则迷彩背景会过度拉伸或过度放大。我正在想办法解决这个问题。
+[[/div]]
+@@@@
+@@@@
+@@@@
+**“扫描”效果标题：**
+[[div class="code"]]
+此为浅色背景扫描：
+@@[[div class="title-a"]]@@
+2027年5月9日 0332 | 加拿大东部，安蒂科斯蒂岛
+@@[[/div]]@@
+此为深色背景扫描：
+@@[[div class="title-b"]]@@
+2027年5月9日 0332 | 加拿大东部，安蒂科斯蒂岛
+@@[[/div]]@@
+
+[[/div]]
+[[div class="title-a"]]
+2027年5月9日 0332 | 加拿大东部，安蒂科斯蒂岛
+[[/div]]
+@@@@
+[[div class="title-b"]]
+2027年5月9日 0332 | 加拿大东部，安蒂科斯蒂岛
+[[/div]]
+@@@@
+@@@@
+@@@@
+**不带“扫描”效果但是保留排版的标题：**
+[[div class="code"]]
+此为浅色背景：
+@@[[div class="title-a-noscan"]]@@
+2027年5月9日 0332 | 加拿大东部，安蒂科斯蒂岛
+@@[[/div]]@@
+此为深色背景：
+@@[[div class="title-b-scan"]]@@
+2027年5月9日 0332 | 加拿大东部，安蒂科斯蒂岛
+@@[[/div]]@@
+[[/div]]
+
+[[div class="title-a-noscan"]]
+2027年5月9日 0332 | 加拿大东部，安蒂科斯蒂岛
+[[/div]]
+@@@@
+[[div class="title-b-noscan"]]
+2027年5月9日 0332 | 加拿大东部，安蒂科斯蒂岛
+[[/div]]
+@@@@
+@@@@
+@@@@
+**乱码滚动效果标题 --公然借鉴COD4--：**
+[[div class="code"]]
+@@[[div class="title-c"]]@@
+@@[[span class="glitch" style="--i:0" data-char="“"]]“[[/span]][[span class="glitch" style="--i:1" data-char="沙"]]沙[[/span]][[span class="glitch" style="--i:2" data-char="漠"]]漠[[/span]][[span class="glitch" style="--i:3" data-char="飓"]]飓[[/span]][[span class="glitch" style="--i:4" data-char="风"]]风[[/span]][[span class="glitch" style="--i:5" data-char="”"]]”[[/span]][[span class="glitch" style="--i:6" data-char="行"]]行[[/span]][[span class="glitch" style="--i:7" data-char="动"]]动[[/span]]@@
+@@[[/div]]@@
+[[/div]]
+**注意：使用时要十分小心，每输入一个字符就需要将"--i:数字"的值+1，无论哪个字符输错或是出现的两次不对应都有可能导致显示错误。**
+
+[[div class="title-c"]]
+[[span class="glitch" style="--i:0" data-char="“"]]“[[/span]][[span class="glitch" style="--i:1" data-char="沙"]]沙[[/span]][[span class="glitch" style="--i:2" data-char="漠"]]漠[[/span]][[span class="glitch" style="--i:3" data-char="飓"]]飓[[/span]][[span class="glitch" style="--i:4" data-char="风"]]风[[/span]][[span class="glitch" style="--i:5" data-char="”"]]”[[/span]][[span class="glitch" style="--i:6" data-char="行"]]行[[/span]][[span class="glitch" style="--i:7" data-char="动"]]动[[/span]]
+[[/div]]
+@@@@
+@@@@
+@@@@
+**没有乱码滚动效果但是保留排版的标题 --啊这就简单多了--：**
+[[div class="code"]]
+@@[[div class="title-d"]]@@
+“沙漠飓风”行动
+@@[[/div]]@@
+[[/div]]
+@@@@
+[[div class="title-d"]]
+“沙漠飓风”行动
+[[/div]]
+@@@@
+@@@@
+@@@@
+**加入网格渐变的类似标题：**
+[[div class="code"]]
+@@[[div class="title-d-grid"]]@@
+“沙漠飓风”行动
+@@[[/div]]@@
+[[/div]]
+@@@@
+[[div class="title-d-grid"]]
+“沙漠飓风”行动
+[[/div]]
+@@@@
+@@@@
+@@@@
+**“军事笔记本”内容框：**
+[[div class="code"]]
+@@[[div class="notebook"]]@@
+    @@[[div class="notebook-grid"]]@@
+    @@[[/div]]@@
+
+    @@[[div class="notebook-divider"]]@@
+    @@[[/div]]@@
+
+    @@[[div class="notebook-lines"]]@@
+在使用海军或者陆军预设效果时，背景会变为迷彩。
+你从丹东来
+换的我一身雪白
+想吃广东菜
+······
+你从丹东来
+换的我一身雪白
+想吃广东菜
+    @@[[/div]]@@
+@@[[/div]]@@
+[[/div]]
+@@@@
+[[div class="notebook"]]
+    [[div class="notebook-grid"]]
+    [[/div]]
+
+    [[div class="notebook-divider"]]
+    [[/div]]
+
+    [[div class="notebook-lines"]]
+在使用海军或者陆军预设效果时，背景会变为迷彩。
+你从丹东来
+换的我一身雪白
+想吃广东菜
+你从丹东来
+换的我一身雪白
+想吃广东菜
+你从丹东来
+换的我一身雪白
+想吃广东菜
+你从丹东来
+换的我一身雪白
+想吃广东菜
+你从丹东来
+换的我一身雪白
+想吃广东菜
+你从丹东来
+换的我一身雪白
+想吃广东菜
+你从丹东来
+换的我一身雪白
+想吃广东菜
+    [[/div]]
+[[/div]]
+@@@@
+@@@@
+@@@@
+**“筑垒防线”分割线（参考北约标准军事符号系统APP-6中的“Fortified Line”）：**
+[[div class="code"]]
+这是文字
+@@~~~~@@
+@@[[div class="divider-fortified"]]@@
+@@[[/div]]@@
+@@~~~~@@
+这是蚊子，嗡——嗡——
+[[/div]]
+@@@@
+这是文字
+~~~~
+[[div class="divider-fortified"]]
+[[/div]]
+~~~~
+这是蚊子，嗡——嗡——
+@@@@
+@@@@
+@@@@
+**“蛇腹铁丝网”分割线（参考北约标准军事符号系统APP-6中的“Wire Obstacle (Single Strand Concertina)”）：**
+[[div class="code"]]
+这是文字
+@@~~~~@@
+@@[[div class="divider-fortified"]]@@
+@@[[/div]]@@
+@@~~~~@@
+这是蚊子（谐音梗扣钱）
+[[/div]]
+@@@@
+这是文字
+~~~~
+[[div class="divider-concertina"]]
+[[/div]]
+~~~~
+这是蚊子（谐音梗扣钱）
+~~~~
+@@@@
+@@@@
+@@@@
+**“部队分界线”分割线（参考北约标准军事符号系统APP-6中的“Sector Boundaries”）：**
+[[div class="code"]]
+本分割线有粗、中、细三种版本，以下为粗版。
+@@~~~~@@
+@@[[div class="divider-bound thick"]]@@
+XXXXXX
+@@[[/div]]@@
+@@~~~~@@
+以下为中版。
+@@~~~~@@
+@@[[div class="divider-bound"]]@@
+XXXXXX
+@@[[/div]]@@
+@@~~~~@@
+以下为细版。
+@@~~~~@@
+@@[[div class="divider-bound thin"]]@@
+XXXXXX
+@@[[/div]]@@
+@@~~~~@@
+[[/div]]
+@@@@
+这是粗版。在军事地图中，这种分界线通常用来分割一条战线上不同部队负责的区域。
+在北约标准军事符号系统中，XXXXX表示集团军群。
+~~~~
+[[div class="divider-bound thick"]]
+XXXXX
+[[/div]]
+~~~~
+这是中版。通常来说，越大的部队之间分界线也会越粗，反之亦然。
+在北约标准军事符号系统中，III表示团。
+~~~~
+[[div class="divider-bound "]]
+III
+[[/div]]
+~~~~
+这是细版。军事编制并非完全是死板的“军师旅团营连排班”。许多国家拥有自己独特的军事编制，例如“分队”（Section）在美军中表示比班大而比排小的单位。
+在北约标准军事符号系统中，••表示分队。
+~~~~
+[[div class="divider-bound thin"]]
+••
+[[/div]]
+~~~~
+这是文字。
+@@@@
+@@@@
+@@@@
+[[=]]
+一切版式非特殊元素字体与[[[theme:black-highlighter-theme |黑色标记笔主题]]]相同
+部分元素使用[https://timothyqiu.itch.io/vonwaon-bitmap 凤凰点阵体]。
+部分元素使用[https://fonts.google.com/specimen/Ma+Shan+Zheng 马善政毛笔楷书]。
+部分元素使用[https://fonts.google.com/noto/specimen/Noto+Sans+SC Noto Sans SC]。
+所有字体均基于[https://openfontlicense.org  SIL 开源字体许可 Ver. 1.1]。
+ChatGPT提供了部分代码支持与帮助。
+[[/=]]
+@@@@
+------
+@@@@
+[[collapsible show="+ 显示源代码" hide="- 隐藏源代码"]]
+
+[[code type="css"]]
+[[module CSS]]
+@import url('https://fastly.jsdelivr.net/gh/hoah2333/Fonts@main/Typeface-VonwaonBitmap-12px.css');
+@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap');
+
+/*Base*/
+@supports(display: grid) {
+:root:lang(cn) {
+    /* S-CSS-P Integration */
+    /* If you're making a new CSS theme, please include the following three variables at minimum. */
+        --theme-base: "nuscp";
+    /* must be either "nuscp" or "sigma9" */
+        --theme-id: "lead-by-example";
+    /* set this to the URL of your theme's page - eg for "component:ar-theme", set it to "ar-theme" */
+        --theme-name: "LeadByExample";
+    /* set this to your theme's full name */
+        --header-title: "基金会武装部队";
+        --header-subtitle: "搜索，作战，守护";
+
+        /* Standard theme colors */
+        --bright-accent: 143,151,121;
+        --medium-accent: 108,124,89;
+        --dark-accent: 68,76,56;
+        --newpage-color: 181,195,0;
+        --sidebar-quotes: 215,218,210;
+        --header-gradient-color-bottom: 108,124,89;
+
+    /* Primary Menu Colors */
+    --swatch-border-color: var(--medium-accent);
+    /* Primary Header Colors */
+    --swatch-topmenu-border-color: var(--bright-accent);
+    --swatch-topmenu-bg-color: var(--gray-monochrome);
+    --rating-module-button-color: var(--bright-accent);
+    --rating-module-button-color: var(--gray-monochrome);
+
+        --diagonal-stripes: unset;
+    }
+}
+
+/* Sidebar */
+#side-bar {
+    background-color: rgba(var(--sidebar-quotes));
+}
+
+/* Scan overlay */
+#extra-div-1 {
+    height: var(--header-height-on-desktop);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 8;
+
+    background-image:
+        repeating-linear-gradient(135deg, rgba(255,255,255,0.12) 0px, rgba(255,255,255,0.12) 2px, transparent 4px),
+        linear-gradient(rgba(255,255,255,0.09) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.09) 1px, transparent 1px);
+
+    background-size: 8px 8px, 40px 40px, 40px 40px;
+    opacity: 0.55;
+    animation: hud-scan 9s linear infinite;
+}
+
+@keyframes hud-scan {
+    0% { background-position: 0 0, 0 0, 0 0; }
+    100% { background-position: -200px 200px, 0 40px, 40px 0; }
+}
+
+/* Header Titles */
+h1, h2 {
+    color: rgb(var(--medium-accent));
+    font-weight: 700;
+}
+
+/* Base blockquote */
+.blockquote-s {
+    min-width: 85% !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    position: relative;
+    font-weight: 600;
+    padding: 1em;
+    margin: 1.2em 0;
+    background-color: rgb(var(--sidebar-quotes)) !important;
+    border: 1px solid rgb(var(--dark-accent));
+    pointer-events: auto;
+    background-image: none;
+    box-shadow: none;
+}
+.blockquote-s::before {
+    content: "";
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 0;
+    border: none !important;
+}
+.blockquote > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Time and place title */
+
+.title-a {
+    position: relative;
+    width: 100%;
+    display: block;
+    margin: auto;
+    font-family: 'VonwaonBitmap 12px';
+    color: rgb(var(--medium-accent));
+    font-weight: 750;
+    font-size: 1.2em;
+
+    padding: 0.1em 0.5em;
+    border-top: 3px solid rgb(var(--gray-monochrome));
+    border-bottom: 3px solid rgb(var(--gray-monochrome));
+    border-left: none;
+    border-right: none;
+    overflow: hidden;
+    width: 100%;
+    background-image: 
+        repeating-linear-gradient(to right, rgba(var(--medium-accent),0.1) 0, rgba(var(--dark-accent),0.1) 1px, transparent 1px, transparent 10px),
+        repeating-linear-gradient(to bottom, rgba(var(--medium-accent),0.1) 0, rgba(var(--dark-accent),0.1) 1px, transparent 1px, transparent 10px);
+    background-size: 100% 100%;
+}
+
+.title-a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+
+    background: linear-gradient(
+        90deg,
+        rgba(var(--medium-accent), 0) 0%, 
+        rgba(var(--medium-accent), 0.35) 40%, 
+        rgba(var(--medium-accent), 0.5) 50%,
+        rgba(var(--medium-accent), 0.35) 51%,
+        rgba(var(--medium-accent), 0.1) 52%,  
+        rgba(var(--medium-accent), 0.05) 60%,  
+        rgba(var(--medium-accent), 0) 100%
+    );
+    filter: drop-shadow(0 0 4px rgba(var(--medium-accent), 0.6));
+    animation: scan-horizontal-neon 3s linear infinite;
+}
+
+@keyframes scan-horizontal-neon {
+    0%   { left: -100%; opacity: 0.5; }
+    25%  { opacity: 1; }
+    50%  { left: 50%; opacity: 0.7; }
+    75%  { opacity: 1; }
+    100% { left: 150%; opacity: 0.5; }
+}
+
+/* Titles A and B */
+.title-b {
+    position: relative;
+    width: 100%;
+    display: block;
+    margin: auto;
+    font-family: 'VonwaonBitmap 12px';
+    color: rgb(var(--dark-accent));
+    font-weight: 800;
+    font-size: 1.2em;
+
+    padding: 0.1em 0.5em;
+    border-top: 3px solid rgb(var(--gray-monochrome));
+    border-bottom: 3px solid rgb(var(--gray-monochrome));
+    border-left: none;
+    border-right: none;
+    overflow: hidden;
+
+    background-color: rgba(var(--bright-accent), 0.2);
+
+    background-image: 
+        repeating-linear-gradient(to right, rgba(var(--medium-accent),0.5) 0, rgba(var(--medium-accent),0.05) 1px, transparent 1px, transparent 10px),
+        repeating-linear-gradient(to bottom, rgba(var(--medium-accent),0.5) 0, rgba(var(--medium-accent),0.05) 1px, transparent 1px, transparent 10px);
+    background-size: 100% 100%;
+}
+
+.title-b::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+
+    background: linear-gradient(
+        90deg,
+        rgba(var(--pale-gray-monochrome), 0) 0%, 
+        rgba(var(--pale-gray-monochrome), 0.85) 40%, 
+        rgba(var(--pale-gray-monochrome), 1) 50%,
+        rgba(var(--pale-gray-monochrome), 0.85) 51%,
+        rgba(var(--pale-gray-monochrome), 0.5) 55%,  
+        rgba(var(--pale-gray-monochrome), 0.3) 60%,  
+        rgba(var(--pale-gray-monochrome), 0) 100%
+    );
+    filter: drop-shadow(0 0 4px rgba(var(--medium-accent), 0.6));
+    animation: scan-horizontal-neon 3s linear infinite;
+}
+
+@keyframes scan-horizontal-neon {
+    0%   { left: -100%; opacity: 0.5; }
+    25%  { opacity: 1; }
+    50%  { left: 50%; opacity: 0.7; }
+    75%  { opacity: 1; }
+    100% { left: 150%; opacity: 0.5; }
+}
+
+.title-a-noscan {
+    position: relative;
+    width: 100%;
+    display: block;
+    margin: auto;
+    font-family: 'VonwaonBitmap 12px';
+    color: rgb(var(--medium-accent));
+    font-weight: 750;
+    font-size: 1.2em;
+
+    padding: 0.1em 0.5em;
+    border-top: 3px solid rgb(var(--gray-monochrome));
+    border-bottom: 3px solid rgb(var(--gray-monochrome));
+    border-left: none;
+    border-right: none;
+    overflow: hidden;
+    width: 100%;
+    background-image: 
+        repeating-linear-gradient(to right, rgba(var(--medium-accent),0.1) 0, rgba(var(--dark-accent),0.1) 1px, transparent 1px, transparent 10px),
+        repeating-linear-gradient(to bottom, rgba(var(--medium-accent),0.1) 0, rgba(var(--dark-accent),0.1) 1px, transparent 1px, transparent 10px);
+    background-size: 100% 100%;
+}
+
+.title-b-noscan {
+    position: relative;
+    width: 100%;
+    display: block;
+    margin: auto;
+    font-family: 'VonwaonBitmap 12px';
+    color: rgb(var(--dark-accent));
+    font-weight: 800;
+    font-size: 1.2em;
+
+    padding: 0.1em 0.5em;
+    border-top: 3px solid rgb(var(--gray-monochrome));
+    border-bottom: 3px solid rgb(var(--gray-monochrome));
+    border-left: none;
+    border-right: none;
+    overflow: hidden;
+
+    background-color: rgba(var(--bright-accent), 0.2);
+
+    background-image: 
+        repeating-linear-gradient(to right, rgba(var(--medium-accent),0.5) 0, rgba(var(--medium-accent),0.05) 1px, transparent 1px, transparent 10px),
+        repeating-linear-gradient(to bottom, rgba(var(--medium-accent),0.5) 0, rgba(var(--medium-accent),0.05) 1px, transparent 1px, transparent 10px);
+    background-size: 100% 100%;
+}
+
+/* Title C and D */
+
+/* Title C */
+.title-c {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    font-family: 'VonwaonBitmap 12px';
+    font-size: 2.1em;
+    font-weight: 900;
+    text-align: left;
+    letter-spacing: 0.12em;
+    color: rgb(var(--pale-gray-monochrome));
+    line-height: 1;
+    z-index: 1; /* base */
+}
+
+.title-c span {
+    position: relative;
+    color: transparent;
+    display: inline-block;
+}
+
+.title-c span::before {
+    content: attr(data-char);
+    position: absolute;
+    top: 0; left: 0;
+    color: rgb(var(--pale-gray-monochrome));
+    animation: char-roll 20s infinite;
+    animation-delay: calc(var(--i) * 0.15s);
+    z-index: 2; /* below borders */
+    text-shadow:
+       -1px -1px 0 rgb(var(--medium-accent)),
+        1px -1px 0 rgb(var(--medium-accent)),
+       -1px  1px 0 rgb(var(--medium-accent)),
+        1px  1px 0 rgb(var(--medium-accent)),
+        0  -1px 0 rgb(var(--medium-accent)),
+        0   1px 0 rgb(var(--medium-accent)),
+       -1px  0  0 rgb(var(--medium-accent)),
+        1px  0  0 rgb(var(--medium-accent));
+}
+
+/* Animation */
+@keyframes char-roll {
+0% { content: "▓"; opacity: 0; } 
+5% { content: "▓"; opacity: 0; } 
+10% { content: "▓"; opacity: 1; } 
+15% { content: "%"; opacity: 1; } 
+20% { content: "#"; opacity: 1; } 
+25% { content: "□"; opacity: 1; } 
+30% { content: "?"; opacity: 1; } 
+35% { content: "$"; opacity: 1; } 
+40% { content: "@"; opacity: 1; } 
+41%,89% { content: attr(data-char); opacity: 1; } 
+90% { content: "▓"; opacity: 1; } 
+93% { content: "▓"; opacity: 0; } 
+100% { content: "▓"; opacity: 0; }
+}
+
+.title-c::before,
+.title-c::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: rgb(var(--dark-accent));
+    z-index: 3; /* above glitch */
+}
+.title-c::before { bottom: 0.55em; height: 3px; }
+.title-c::after  { bottom: 0.7em; height: 1px; }
+
+/* Title D */
+.title-d {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    font-family: 'VonwaonBitmap 12px';
+    font-size: 2.1em;
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: 0.12em;
+    color: rgb(var(--pale-gray-monochrome));
+    line-height: 1;
+
+    text-shadow:
+       -1px -1px 0 rgb(var(--medium-accent)),
+        1px -1px 0 rgb(var(--medium-accent)),
+       -1px  1px 0 rgb(var(--medium-accent)),
+        1px  1px 0 rgb(var(--medium-accent)),
+        0  -1px 0 rgb(var(--medium-accent)),
+        0   1px 0 rgb(var(--medium-accent)),
+       -1px  0  0 rgb(var(--medium-accent)),
+        1px  0  0 rgb(var(--medium-accent));
+}
+
+.title-d::before,
+.title-d::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: rgb(var(--dark-accent));
+    z-index: 1;
+}
+.title-d::before { bottom: 0.55em; height: 3px; }
+.title-d::after  { bottom: 0.7em; height: 1px; }
+
+
+/* Title D with grid */
+.title-d-grid {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    font-family: 'VonwaonBitmap 12px';
+    font-size: 2.1em;
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: 0.12em;
+    color: rgb(var(--pale-gray-monochrome));
+    line-height: 1;
+    margin: 0;
+    padding-bottom: 0.7em; /* for borders */
+
+    text-shadow:
+       -1px -1px 0 rgb(var(--medium-accent)),
+        1px -1px 0 rgb(var(--medium-accent)),
+       -1px  1px 0 rgb(var(--medium-accent)),
+        1px  1px 0 rgb(var(--medium-accent)),
+        0  -1px 0 rgb(var(--medium-accent)),
+        0   1px 0 rgb(var(--medium-accent)),
+       -1px  0  0 rgb(var(--medium-accent)),
+        1px  0  0 rgb(var(--medium-accent));
+
+    background-image: 
+        linear-gradient(to top, rgba(var(--newpage-color), 0.6), rgba(var(--newpage-color), 0.2)),
+        repeating-linear-gradient(
+            0deg,
+            rgba(var(--pale-gray-monochrome), 1) 0px,
+            rgba(var(--pale-gray-monochrome), 1) 1px,
+            transparent 1px,
+            transparent 20px
+        ),
+        repeating-linear-gradient(
+            90deg,
+            rgba(var(--pale-gray-monochrome), 1) 0px,
+            rgba(var(--pale-gray-monochrome), 1) 1px,
+            transparent 1px,
+            transparent 20px
+        );
+    background-blend-mode: overlay;
+    background-repeat: repeat;
+    background-size: auto;
+    background-clip: content-box;
+}
+
+/* Double border for grid */
+.title-d-grid::before,
+.title-d-grid::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: rgb(var(--dark-accent));
+    z-index: 1;
+}
+.title-d-grid::before { bottom: 0.55em; height: 3px; }
+.title-d-grid::after  { bottom: 0.7em; height: 1px; }
+
+/* Notebook Container */
+
+.notebook {
+    border: 4px solid rgb(var(--dark-accent));
+    background: rgba(var(--medium-accent), 0.7);
+    margin: 1.5em 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 10px;
+    width: 97%;
+    border-right: 17px solid rgb(var(--dark-accent));
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+
+}
+
+.notebook::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+    pointer-events: none;
+    z-index: 0;
+    display: none;
+}
+
+.notebook > * {
+    position: relative;
+    z-index: 1;
+}
+
+.notebook-grid {
+    flex: 0 0 60px;
+    width: 80%;
+    margin: auto;
+    background-image:
+        repeating-linear-gradient(
+            0deg,
+            rgba(var(--medium-accent), 0.9) 0px,
+            rgba(var(--medium-accent), 0.9) 1px,
+            transparent 1px,
+            transparent 15px
+        ),
+        repeating-linear-gradient(
+            90deg,
+            rgba(var(--medium-accent), 0.9) 0px,
+            rgba(var(--medium-accent), 0.9) 1px,
+            transparent 1px,
+            transparent 15px
+        );
+    background-color: rgb(var(--sidebar-quotes));
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 30px;
+    border-top: 1px solid rgb(var(--dark-accent));
+    border-left: 1px solid rgb(var(--dark-accent));
+    border-right: 1px solid rgb(var(--dark-accent));
+    box-shadow: 4px 0 6px -2px rgba(0,0,0,0.3);
+}
+
+
+.notebook-divider {
+    height: 5px;
+    background-color: rgb(var(--dark-accent));
+    width: 80%;
+    margin: auto;
+    border-left: 1px solid rgb(var(--dark-accent));
+    border-right: 1px solid rgb(var(--dark-accent));
+    box-shadow: 4px 0 6px -2px rgba(0,0,0,0.3);
+}
+
+.notebook-lines {
+    width: 80%;
+    margin: auto;
+    display: block;
+    overflow: hidden;
+    font-family: 'Ma Shan Zheng', cursive;
+    font-size: 1.2em;
+    font-style: normal;
+
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: linear-gradient(to top ,rgb(var(--medium-accent)) 0%, rgb(var(--sidebar-quotes)) 8%);
+    background-origin: padding-box;
+    background-position: 0px 8px;
+    background-repeat: repeat;
+    background-size: 100% 20px;
+
+    border-bottom: 1px solid rgb(var(--dark-accent));
+    border-left: 1px solid rgb(var(--dark-accent));
+    border-right: 1px solid rgb(var(--dark-accent));
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px 10px;
+    margin-bottom: 30px;
+
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5)
+    }
+.notebook-lines p,
+.notebook-lines ul {
+    line-height: 20px;
+    margin: 0;
+}
+    text-shadow:
+        0 0 1px rgba(var(--pale-gray-monochrome), 0.3),
+        0.4px 0.4px 0 rgba(var(--black-monochrome), 0.4),
+        -0.3px -0.3px 0 rgba(var(--black-monochrome), 0.4);
+    opacity: 0.92;
+}
+
+.notebook-lines::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+        repeating-linear-gradient(
+            45deg,
+            rgba(255, 255, 255, 0.02) 0px,
+            rgba(255, 255, 255, 0.02) 2px,
+            transparent 2px,
+            transparent 4px
+        );
+    mix-blend-mode: overlay;
+    opacity: 0.05;
+    pointer-events: none;
+}
+
+.notebook-grid,
+.notebook-divider,
+.notebook-lines {
+    box-sizing: border-box;
+}
+
+.divider-fortified {
+    position: relative;
+    height: 4px;
+    background-color: rgb(var(--medium-accent));
+    margin-top: 35px;
+    margin-bottom: 20px;
+    width: 100%;
+    overflow: visible;
+}
+
+.divider-fortified::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 87.5%;
+    height: 12px;
+
+    background-image:
+        repeating-linear-gradient(
+            90deg,
+            rgb(var(--medium-accent)) 0 12px,
+            transparent 12px 20px
+        );
+
+    background-size: 20px 12px;
+    background-repeat: repeat-x;
+    -webkit-mask-image: linear-gradient(to top, transparent 30%, black 30%);
+    mask-image: linear-gradient(to top, transparent 30%, black 30%);
+    background-position: center bottom;
+    pointer-events: none;
+}
+
+.divider-concertina {
+    position: relative;
+    height: 3px;
+    background-color: rgb(var(--medium-accent));
+    overflow: visible;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.divider-concertina::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -1px; /* controls vertical alignment with wire */
+    transform: translateX(-50%);
+    width: 100%;
+    height: 30px;
+
+
+    background-image: radial-gradient(
+        ellipse 7px 15px at center 60%,
+        transparent 49%,
+        rgb(var(--medium-accent)) 50%,
+        rgb(var(--medium-accent)) 70%,
+        transparent 71%
+    );
+
+    background-size: 15px 30px; /* controls oval spacing */
+    background-repeat: repeat-x;
+    background-position: center bottom; /* centers horizontally */
+}
+
+.divider-bound {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: rgb(var(--medium-accent));
+    font-weight: bold;
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+.divider-bound::before,
+.divider-bound::after {
+    content: "";
+    flex: 1;
+    border-bottom: 3px solid rgb(var(--medium-accent));
+    margin: 0 10px; /* space between line and text */
+}
+
+.divider-bound.thick {
+    font-size: 1.2em;
+}
+
+.divider-bound.thim {
+    font-size: 0.8em;
+}
+
+
+
+.divider-bound.thick::before,
+.divider-bound.thick::after {
+    border-bottom-width: 5px;
+}
+
+.divider-bound.thin::before,
+.divider-bound.thin::after {
+    border-bottom-width: 1px;
+}
+
+
+
+
+
+/* Link colors */
+a {
+    color: rgb(var(--medium-accent));
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+a:hover { text-decoration: underline; color: rgb(var(--bright-accent)); }
+
+a:active { color: rgb(var(--sidebar-quotes)); }
+
+a:visited { color: rgb(var(--dark-accent)); }
+
+a.new-page {
+    color: rgb(var(--newpage-color));
+}
+
+/* Header text shadow */
+#header h1 a::before,
+#header h2 span:before {
+    text-shadow: 2px 2px #000;
+}
+
+/* Scan adapts on mobile */
+@media (max-width: 768px) {
+    #extra-div-1 {
+        background-size: 6px 6px, 30px 30px, 30px 30px;
+        opacity: 0.65;
+        animation-duration: 7s;
+    }
+}
+
+
+
+
+[[/module]]
+
+
+
+[[iftags [[#ifexpr {$army} == (true) | - ]]]]
+[[module CSS]]
+/*Army*/
+
+:root:lang(cn) {
+        --header-title: "基金会陆军";
+        --header-subtitle: "侦察，占领，投送";
+}
+#extra-div-1 { display: none; }
+
+#extra-div-2 {
+height: var(--header-height-on-desktop);
+width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+pointer-events: none;
+background-image: url("https://scpsandboxcn.wdfiles.com/local--files/theme%3Aeatshit/multi.svg");
+background-size: 100% auto;
+background-repeat: no-repeat;
+background-position: center top;
+}
+
+
+.blockquote-s {
+    background-image: url(https://scpsandboxcn.wdfiles.com/local--files/theme%3Aeatshit/multi.svg);
+    background-size: cover;
+    background-position: center;
+    border: 1px solid rgb(var(--dark-accent)); 
+    color: black !important;
+}
+
+.blockquote-s::before {
+    display: block;
+    background-color: rgba(255,255,255,0.8);
+    border: 2px solid rgb(var(--dark-accent));
+}
+
+.blockquote-s > * {
+    position: relative;
+    z-index: 1;
+}
+
+.notebook {
+    background-image: url(https://scpsandboxcn.wdfiles.com/local--files/theme%3Aeatshit/multi.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.notebook::before {
+    display: block;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.notebook > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+
+
+[[/module]]
+[[/iftags]]
+
+[[iftags [[#ifexpr {$navy} == (true) | - ]]]]\
+[[module CSS]]
+/*Navy*/
+
+@supports(display: grid) {
+:root:lang(cn) {
+        --header-title: "基金会海军";
+        --header-subtitle: "航行，拒止，巡逻";
+        --bright-accent: 75,156,211;
+        --medium-accent: 38,97,156;
+        --dark-accent: 0,35,102;
+        --newpage-color: 153,102,204;
+        --sidebar-quotes: 213, 234, 250;
+        --header-gradient-color-bottom: 38,97,156;
+    }
+}
+
+#extra-div-1 { display: none; }
+
+#extra-div-3 {
+    height: var(--header-height-on-desktop);
+    width: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    pointer-events: none;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/57/NFP-navy.jpg");
+    background-size: 100% auto;
+    background-position: center top;
+}
+
+.blockquote-s {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/57/NFP-navy.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 1px solid rgb(var(--dark-accent));
+}
+
+.blockquote-s::before {
+    display: block;
+    background-color: rgba(255,255,255,0.8);
+    border: 2px solid rgb(var(--dark-accent));
+}
+
+.blockquote-s > * {
+    position: relative;
+    z-index: 1;
+}
+
+.notebook {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/57/NFP-navy.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.notebook::before {
+    display: block;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.notebook > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Navy links */
+a:hover {
+    color: rgb(50,120,180);
+}
+
+[[/module]]
+[[/iftags]]
+
+
+[[iftags [[#ifexpr {$alert} == (true) | - ]]]]\
+[[module CSS]]
+/*Alert*/
+
+@supports(display: grid) {
+:root:lang(cn) {
+        --header-title: "基金会武装部队";
+        --header-subtitle: "箭在弦上";
+        /* ===STANDARD THEME COLORS=== */
+        --bright-accent: 237, 41, 57;
+        --medium-accent: 237, 27, 36;
+        --dark-accent: 150, 0, 24;
+        --sidebar-quotes: 241, 219, 216;
+        --newpage-color: 202, 31, 123;
+        /* ===HEADER GRADIENT=== */
+        /* ===HEADER GRADIENT=== */
+        --header-gradient-color-bottom: 237, 27, 36;
+    }
+
+
+#extra-div-1 { display: none; }
+
+#extra-div-4 {
+    content: ""; /* required */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--header-height-on-desktop);
+    pointer-events: none;
+    z-index: 0; /* below header text */
+
+    /* Background gradient + stripes */
+    background: linear-gradient(
+        90deg,
+        rgba(var(--bright-accent),0.4) 0%,
+        rgba(var(--medium-accent),0.2) 50%,
+        rgba(var(--bright-accent),0.4) 100%
+    );
+    background-size: 20px 20px;
+    background-repeat: repeat;
+
+    /* Animation: flashing and movement */
+    animation: alert-flash 1.5s ease-in-out infinite, alert-move 2s linear infinite;
+}
+
+/* Flashing opacity */
+@keyframes alert-flash {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.7; }
+}
+
+/* Slight diagonal movement */
+@keyframes alert-move {
+    0% { background-position: 0 0; }
+    100% { background-position: 40px 40px; }
+}
+
+/* Optional mobile adaptation */
+@media (max-width: 768px) {
+    #extra-div-3 {
+        background-size: 15px 15px;
+    }
+}
+
+/* ===Blockquote=== */
+.blockquote-s {
+    background-image: none !important;
+    border: 1px solid rgb(var(--dark-accent)) !important;
+    background-color: rgb(var(--sidebar-quotes)) !important;
+}
+
+.blockquote-s::before {
+    display: none !important;
+}
+
+.blockquote-s a,
+.blockquote-s {
+    color: rgb(var(--dark-accent)); /* base alert red */
+}
+
+/* === Link Colors=== */
+a {
+    color: rgb(var(--bright-accent)); /* base red */
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: rgb(200, 30, 45);
+    text-decoration: underline;
+}
+
+a:active {
+    color: rgb(150, 0, 24);
+}
+
+a:visited {
+    color: rgb(180, 20, 35);
+}
+
+a.new-page {
+    color: rgb(var(--newpage-color));
+}
+
+[[/module]]
+[[/iftags]]
+
+[[/code]]
+[[/collapsible]]
+[[/iftags]]
