@@ -1,0 +1,383 @@
+[[include :scpko:component:toggle-sidebar]]
+
+[[iftags +테마]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
+
+[[include :scpko:info:start]]
+
+**아틀라스 마니아쿠스 테마**
+
+**제작:** [[*user thd-glasses]]
+* 요주의 단체별 설정 원안/타이틀 텍스트 제공자는 비고란 참조
+
+**사용 글꼴**
+# https://fonts.google.com/specimen/Do+Hyeon
+
+**사용 이미지**
+# https://pixabay.com/photos/wall-bricks-white-construction-769963/
+# 아틀라스&재단 로고 by [[*user thd-glasses]]
+
+[[include :scpko:info:end]]
+
++ 아틀라스 마니아쿠스 CSS 테마
+
+* 이 테마는 [[[atlas-maniacus|아틀라스 마니아쿠스 카논]]]을 위한 CSS 테마입니다.
+* 사용하려는 페이지 최상단에 다음 구문을 삽입하세요.
+
+> @@[[include :scpko:theme:atlas-maniacus]]@@
+
+* 더 다양한 사용 방법은 아래 **응용 방법** 탭을 참고하세요.
+
+@@@@
+@@@@
+
+[[tabview]]
+[[tab 구문 예시]]
+
+[[include :scpko:component:image-block
+|name=atlasandfoundation.png
+|caption=아틀라스&재단 로고
+|width=250px; max-width:50%]]
+
++ 1단 제목
+++ 2단 제목
++++ 3단 제목
+++++ 4단 제목
++++++ 5단 제목
+++++++ 6단 제목
+
+하이픈(-) 5개를 입력하면 가로줄을 생성합니다.
+
+-----
+
+||~ 이것은||~ 표입니다||
+|| 어떻게 || 쓰는지는 ||
+||||= 이미 아실 겁니다 ||
+
+[[collapsible show="+ 접기 열기" hide="- 접기 닫기"]]
+
+[#asdf 링크]
+
+[[/collapsible]]
+
+~~~~
+
+[[/tab]]
+[[tab 응용 방법]]
+
+아틀라스 마니아쿠스, 통칭 **히어로 카논**은 천부적인 슈퍼히어로 **아틀라스**의 등장으로 인해 재단이 히어로 사무소로 노선을 바꾼 세계에서 펼쳐지는 What If 카논입니다. 이 세계에서 장막은 부분적으로 유지되고 있지만 초능력자의 존재는 세상에 알려졌고. 재단 뿐만 아니라 수많은 요주의 단체들이 히어로와 빌런 활동에 나서고 있습니다. 따라서 이 테마는 다양한 요주의 단체에 대응할 수 있도록 고안되었습니다.
+
+기본값은 SCP 재단, 즉 **아틀라스＆재단**입니다. 그 외 단체로 헤더 아이콘과 타이틀을 변경하고 싶다면 테마 구문을 아래와 같이 수정해 입력해주세요.
+
+[[div class="blockquote"]]
+
+@@[[include :scpko:theme:atlas-maniacus@@
+|alt=**1**
+|icon=**(헤더 아이콘 주소)**
+|title=**(헤더 제목)**
+|sub-title=**(헤더 부제목)**
+]]
+
+[[/div]]
+
+설정이 이미 확립되어 아이콘과 타이틀이 준비된 단체의 경우 아래와 같이 더 간편하게 사용할 수 있습니다.
+
+[[div class="blockquote"]]
+
+@@[[include :scpko:theme:atlas-maniacus@@
+|alt=**2**
+|goi=**(요주의 단체 식별자)**
+]]
+
+[[/div]]
+
+= **현재 제공되는 요주의 단체 식별자 목록:**
+
+[[div class="blockquote" style="position: relative; left: 50%; transform: translateX(-50%); max-width: 100vw; width: 100%; margin: 0;"]]
+
+||~ 히어로 측 ||           . ||~ 원본 단체 ||||~ 작중 단체 ||~ 식별자 ||
+||.||.||.||.||.||.||
+||~ 단체 ||    . ||~ SCP 재단 ||||~ 아틀라스＆재단 ||~ scp ||
+||~ 부제목 || . ||||||||= **도시의 평화를 지킵니다** - by thd-glasses ||
+||~ 비고 ||    . ||||= 설정: payroy ||||= 로고: thd-glasses ||
+||.||
+||~ 단체 ||    . ||~ 세계 오컬트 연합 ||||~ 세계 자경단 연합 ||~ goc ||
+||~ 부제목 || . ||||||||= **총단장의 책상에서** - by thd-glasses ||
+||~ 비고 ||    . ||||= 설정: thd-glasses ||||= 로고 없음 ||
+||.||
+||~ 단체 ||    . ||~ 국가초상방재원 ||||~ 국가초인관리원 ||~ npes ||
+||~ 부제목 || . ||||||||= **대한민국을 지키는 가장 멋진 힘** - by thd-glasses ||
+||~ 비고 ||    . ||||= 설정: thd-glasses ||||= 로고 없음 ||
+
+@@@@
+@@@@
+
+||~ 빌런 측 ||           . ||~ 원본 단체 ||||~ 작중 단체 ||~ 식별자 ||
+||.||.||.||.||.||.||
+||~ 단체 ||    . ||||||~ 혼돈의 반란 ||~ ci ||
+||~ 부제목 || . ||||||||= **세상을 쟁취하라** - by thd-glasses ||
+||~ 비고 ||    . ||||= 설정: thd-glasses ||||= 로고 없음 ||
+
+@@@@
+@@@@
+
+||~ 중립/혼합 ||           . ||~ 원본 단체 ||||~ 작중 단체 ||~ 식별자 ||
+||.||.||.||.||.||.||
+||~ 단체 ||    . ||||||~ 유한회사 마셜, 카터 ＆ 다크  ||~ mcd ||
+||~ 부제목 || . ||||||||= **없음** - by thd-glasses ||
+||~ 비고 ||    . ||||= 설정: thd-glasses ||||= 로고 없음 ||
+
+
+[!--
+||.||
+||~ 단체 ||    . ||~ 원본단체명  ||||~ 카논단체명  ||~ 식별자 ||
+||~ 부제목 || . ||||||||= **부제목** - by user ||
+||~ 비고 ||    . ||||= 설정: user ||||= 로고 제작: user ||
+--]
+
+[[/div]]
+
+[[/tab]]
+[[/tabview]]
+
+@@@@
+@@@@
+
++ 소스 코드
+
+[[collapsible show="+ 소스 코드 보기" hide="- 소스 코드 숨기기"]]
+[[/iftags]]
+
+[[div class="hiding-codes"]]
+[[module CSS show="true"]]
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
+
+:root {
+  --icon-{$alt}: url('{$icon}');
+  --title-{$alt}: "{$title}";
+  --sub-title-{$alt}: "{$sub-title}";
+
+  --icon-goi-{$alt}: var(--icon-{$goi});
+  --title-goi-{$alt}: var(--title-{$goi});
+  --sub-title-goi-{$alt}: var(--sub-title-{$goi});
+
+  --icon-scp: url('https://scpko.wdfiles.com/local--files/theme%3Aatlas-maniacus/atlasandfoundation.png');
+  --title-scp: "아틀라스＆재단";
+  --sub-title-scp: "도시의 평화를 지킵니다"; /* Securing the City's Peace */
+
+  --icon-goc: url('none');
+  --title-goc: "세계 자경단 연합";
+  --sub-title-goc: "총단장의 책상에서";
+}
+
+::selection {
+  background-color: #222;
+  color: #FFF;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  color: #222;
+}
+
+div#container-wrap {
+  background-image: url('https://scpko.wdfiles.com/local--files/theme%3Aatlas-maniacus/hero-theme-bg1.jpg');
+  background-size: auto 300px;
+}
+
+div#header {
+  background-image: var(--icon-1, var(--icon-goi-2, var(--icon-scp)));
+  background-size: min(100px, 13vw);
+  background-position-x: 0;
+}
+
+#header h1 a, #header h2 span, #page-title, h1, .close-credits {
+  font-family: 'Do Hyeon', san-serif;
+  font-weight: 100;
+  color: #222;
+}
+
+#header h1 a, #header h2 span {
+  color: transparent;
+  text-shadow: none;
+}
+
+#header h1 a::before {
+  content: var(--title-1, var(--title-goi-2, var(--title-scp)));
+  color: #FFF;
+  background: #222;
+  padding: 0 5px;
+}
+
+#header h2 span::before {
+  content: var(--sub-title-1, var(--sub-title-goi-2, var(--sub-title-scp)));
+  font-size: 1.5em;
+  color: #222;
+  padding: 0 5px;
+}
+
+#page-title {
+  font-size: 3em;
+  text-align: center;
+  padding-top: 1em;
+}
+
+#breadcrumbs {
+    text-align: center;
+}
+
+#top-bar ul li a, #login-status, #login-status a, #login-status ul a, .close-credits a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #222;
+}
+
+#search-top-box-form input[type="submit"] {
+  color: #FFF;
+}
+
+#search-top-box-form input[type="submit"],
+#top-bar ul, #side-bar .side-block, .interwiki-stylable,
+.rate-box-with-credit-button, .page-rate-widget-box, .yui-nav {
+  filter: grayscale(1);
+  box-shadow: none;
+}
+
+.close-credits a {
+  color: #FFF;
+  background: #222;
+  border-radius: 2em;
+  width: 1.6em;
+  display: inline-block;
+  text-align: center;
+  line-height: 1.6;
+  position: absolute;
+  right: 0;
+}
+
+a, a:visited {
+  color: #222;
+  text-decoration: underline;
+}
+
+blockquote, div.blockquote {
+  border-color: #222;
+  background-color: #FFF;
+  box-shadow: 3px 3px #EEE, 3px -3px #EEE, -3px 3px #EEE, -3px -3px #EEE;
+}
+
+table.wiki-content-table th {
+  background-color: #DDD;
+}
+
+table.wiki-content-table td {
+  background-color: #FFF;
+}
+
+#top-bar .open-menu a, .goto-top a {
+  text-decoration: none;
+  color: #FFF;
+  background-color: #222;
+  border: 0.1em solid #222;
+  border-radius: 0.5em;
+  box-shadow: 1px 1px 1px #FFF, 1px -1px 1px #FFF, -1px 1px 1px #FFF, -1px -1px 1px #FFF;
+  line-height: 0.9;
+  -webkit-tap-highlight-color: transparent;
+  transition: 0.2s ease-in-out;
+  transition-property: color, background-color;
+}
+
+#page-options-bottom-2 {
+  border-top: 1px solid #222;
+}
+
+.hiding-codes {
+  display: none;
+}
+
+@media (max-width: 580px) {
+  div#header {
+    background-position-y: 4.5em;
+  }
+  #header h1 a {
+    font-size: 150%;
+  }
+}
+
+@media (max-width: 385px) {
+  div#header {
+    background-position-x: 5%;
+  }
+}
+
+[[/module]]
+[[/div]]
+
+[[iftags +테마]]
+[[/collapsible]]
+
+[[module CSS]]
+.hiding-codes {
+  display: block;
+}
+
+#wiki-tab-0-1 table.wiki-content-table { width: 100%; margin: 1em auto; }
+
+#wiki-tab-0-1 table.wiki-content-table th,
+#wiki-tab-0-1 table.wiki-content-table td {
+  border: 2px solid #888; height: 2em; word-break: keep-all;
+}
+
+#wiki-tab-0-1 table.wiki-content-table tr:first-child th:nth-child(n+3) { width: 26%; }
+
+#wiki-tab-0-1 table.wiki-content-table tr:nth-child(4n-2) td {
+  background-color: transparent; border-width: 2px 0; color: transparent; font-size: 50%;
+}
+#wiki-tab-0-1 table.wiki-content-table tr:nth-child(2) td {
+  border-width:  0  0 2px 0;
+}
+#wiki-tab-0-1 table.wiki-content-table tr td:nth-child(2) {
+  background-color: transparent; border-width: 0; color: transparent; padding: 0;
+}
+#wiki-tab-0-1 table.wiki-content-table tr td strong { font-style: italic; }
+#wiki-tab-0-1 table.wiki-content-table tr td strong::before,
+#wiki-tab-0-1 table.wiki-content-table tr td strong::after { content: '"'; }
+
+#wiki-tab-0-1 table.wiki-content-table:nth-of-type(1) tr:first-child th:first-child,
+#wiki-tab-0-1 table.wiki-content-table:nth-of-type(1) tr:nth-child(4n-1) th:nth-child(n+3),
+#wiki-tab-0-1 table.wiki-content-table:nth-of-type(1) tr:nth-child(4n) td:nth-child(n+3),
+#wiki-tab-0-1 table.wiki-content-table:nth-of-type(1) tr:nth-child(4n+1) td:nth-child(n+3) {
+  background-color: #CFF;
+}
+#wiki-tab-0-1 table.wiki-content-table:nth-of-type(1) tr:nth-child(4n-1) th:last-child {
+  background-color: #5FF;
+}
+
+#wiki-tab-0-1 table.wiki-content-table:nth-of-type(2) tr:first-child th:first-child,
+#wiki-tab-0-1 table.wiki-content-table:nth-of-type(2) tr:nth-child(4n-1) th:nth-child(n+3),
+#wiki-tab-0-1 table.wiki-content-table:nth-of-type(2) tr:nth-child(4n) td:nth-child(n+3),
+#wiki-tab-0-1 table.wiki-content-table:nth-of-type(2) tr:nth-child(4n+1) td:nth-child(n+3) {
+  background-color: #FDD;
+}
+#wiki-tab-0-1 table.wiki-content-table:nth-of-type(2) tr:nth-child(4n-1) th:last-child {
+  background-color: #F88;
+}
+
+#wiki-tab-0-1 table.wiki-content-table:nth-of-type(3) tr:first-child th:first-child,
+#wiki-tab-0-1 table.wiki-content-table:nth-of-type(3) tr:nth-child(4n-1) th:nth-child(n+3),
+#wiki-tab-0-1 table.wiki-content-table:nth-of-type(3) tr:nth-child(4n) td:nth-child(n+3),
+#wiki-tab-0-1 table.wiki-content-table:nth-of-type(3) tr:nth-child(4n+1) td:nth-child(n+3) {
+  background-color: #FFE5FF;
+}
+#wiki-tab-0-1 table.wiki-content-table:nth-of-type(3) tr:nth-child(4n-1) th:last-child {
+  background-color: #F8F;
+}
+
+[[/module]]
+[[/iftags]]

@@ -1,0 +1,132 @@
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aa-problematic-theme-jp/1
+]]
+
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** 問題作テーマ
+**翻訳責任者:** AI
+**翻訳年:** 2026
+**原題:** A Problematic Theme
+**著作権者:** winkwonkboi
+**作成年:** 2024
+**初訳時参照リビジョン:** 14
+**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:a-problematic-theme ソース]
+[[include :scp-jp:credit:end-preview]]
+
+Black Highlighterを基盤にした実験的テーマです。独特のタイポグラフィと配色を持ちます。
+
+**使い方:** @@[[include theme:a-problematic-theme-jp]]@@
+
+**基盤:** BHL（インライン）
+
+[[module CSS]]
+
+/* Standard Version */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Podkova:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+
+    :root {
+        /* S-CSS-P INTEGRATION */
+        --theme-base: "black-highlighter";
+        --theme-id: "a-problematic-theme";
+        --theme-name: "A Problematic Theme";
+
+        /* Black & White */
+        --white: 252, 252, 252;
+        --darker: 48, 48, 52;
+        --yet-darker: 27, 28, 31;
+        --darkest: 20, 22, 24;
+        --black: 0, 0, 0;
+
+        /* STANDARD Colors */
+        --main-green: 151, 206, 142;
+        --sage-green: 103, 146, 103;
+        --christmas-green: 0, 135, 62;
+        --celadon: 172, 225, 175;
+        --chetwode: 240, 255, 240;
+        --artichoke: 75, 111, 68;
+
+        /* DARK Colors */
+        --gloomy-green: 74, 93, 35;
+        --laurel-green: 169, 186, 157;
+        --army-green: 75, 83, 32;
+        --kombu-green: 53, 66, 48;
+        --gin: 216, 228, 188;
+
+        /* RED Colors */
+        --bloody-stain: 186, 9, 42;
+        --light-red: 255, 204, 203;
+        --salmon: 250, 128, 114;
+        --desire: 234, 60, 83;
+        --maroon: 128, 0, 0;
+        --sangria: 94, 25, 20;
+        --prismatic: 208, 61, 51;
+        --light-coral: 240, 128, 128;
+
+        /* Fonts */
+        --header-font: "IBM Plex Sans Condensed", sans-serif;
+        --title-font: "Podkova", serif;
+        --body-font: "Open Sans", sans-serif;
+        --mono-font: "Nanum Gothic Coding", monospace;
+        --UI-font: var(--title-font);
+
+        /* Header Elements */
+        --logo-image: url("https://scp-wiki.wdfiles.com/local--files/theme%3Aa-problematic-theme/standard37.svg");
+        --header-title: "FOUNDATION SITE-37";
+        --header-subtitle: "We've Got Problems";
+
+        /* Header Gradient */
+        --header-gradient-color-bottom: var(--main-green);
+        --header-gradient-color-middle: var(--main-green);
+        --header-gradient-color-top: var(--main-green);
+        --diagonal-stripes: unset;
+
+        /* Theme Colors */
+        --bright-accent: var(--celadon);
+        --medium-accent: var(--main-green);
+        --dark-accent: var(--main-green);
+        --gray-monochrome: var(--sage-green);
+        --dark-gray-monochrome: var(--artichoke);
+
+        --link-color: var(--christmas-green);
+        --hover-link-color: var(--sage-green);
+        --visited-link-color: var(--artichoke);
+
+        /* Menu Colors */
+        --swatch-menubg-color: var(--artichoke);
+    }
+
+    #header {
+        --swatch-headerh1-color: var(--black);
+        --swatch-headerh2-color: var(--black);
+        --search-icon-color: var(--black);
+
+        --login-line-divider-color: var(--black);
+        --login-username-color: var(--black);
+        --login-myaccount-color: var(--black);
+
+        --login-dropdown-text-color: var(--black);
+        --login-mobile-icon-color: var(--black);
+    }
+ 
+    #interwiki,
+    #side-bar {
+        --sidebar-media-bg-color: var(--chetwode);
+        --sidebar-links-text: var(--white);
+    }
+
+    #main-content {
+        --toc-body-link-color: var(--white);
+        --toc-body-link-hover-color: var(--white);
+        --toc-body-hover-arrow-color: var(--white);
+    }
+
+[[/module]]
+
+[[/iftags]]

@@ -1,0 +1,540 @@
+{
+ "tool": "classify_hunks.py",
+ "classifier_version": "0.1.0",
+ "signature_table_version": "2026-11-17.1",
+ "theme": {
+  "dir": "a-problematic-theme-jp",
+  "cand_fullname": "theme:a-problematic-theme-jp",
+  "orig_fullname": "theme:a-problematic-theme",
+  "wiki": "scp-wiki",
+  "revision": "14",
+  "kind": "standard",
+  "verdict": "PASS",
+  "original_file": "a-problematic-theme-jp/original.txt",
+  "candidate_file": "a-problematic-theme-jp/candidate.txt",
+  "original_sha256": "db7375878496825ba2239ee61ba756e4e6b87bc0607ba3380d603e9fcf0df5d9",
+  "candidate_sha256": "c5c8078bd20f812802d859a49f29bc685fc7ff5802240432c4d6801ec94f740d",
+  "original_lines": 457,
+  "candidate_lines": 132
+ },
+ "topology": {
+  "original_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     2,
+     6
+    ],
+    "lines": 4
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     173,
+     277
+    ],
+    "lines": 104
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     280,
+     357
+    ],
+    "lines": 77
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     360,
+     438
+    ],
+    "lines": 78
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     443,
+     447
+    ],
+    "lines": 4
+   }
+  ],
+  "candidate_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     24,
+     130
+    ],
+    "lines": 106
+   }
+  ],
+  "moves": [
+   {
+    "from_kind": "code-css",
+    "to_kind": "module-css",
+    "orig_range": [
+     173,
+     277
+    ],
+    "cand_range": [
+     24,
+     130
+    ],
+    "similarity": 0.931,
+    "basis": "content"
+   },
+   {
+    "from_kind": "external-own-delivery",
+    "to_kind": "module-css",
+    "orig_range": null,
+    "cand_range": [
+     24,
+     130
+    ],
+    "similarity": null,
+    "basis": "candidate-side",
+    "caveat": "companion body unavailable; candidate-side only"
+   }
+  ],
+  "external_own_delivery": true
+ },
+ "blocks": [
+  {
+   "id": "B1",
+   "orig_range": [
+    0,
+    1
+   ],
+   "cand_range": [
+    0,
+    23
+   ],
+   "orig_lines": "1-1",
+   "cand_lines": "1-23",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "CREDIT-PREVIEW",
+    "DRAFT-HOST",
+    "IFTAGS",
+    "SELF-DELIVERY",
+    "TASL-FIELDS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "CREDIT-PREVIEW",
+   "primary_section": 1,
+   "label_prec": {
+    "CREDIT-PREVIEW": "A",
+    "TASL-FIELDS": "A",
+    "IFTAGS": "A",
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "CREDIT-PREVIEW": {
+     "cand": [
+      [
+       7,
+       8
+      ],
+      [
+       16,
+       17
+      ]
+     ]
+    },
+    "TASL-FIELDS": {
+     "cand": [
+      [
+       8,
+       16
+      ]
+     ]
+    },
+    "IFTAGS": {
+     "orig": [
+      [
+       0,
+       1
+      ]
+     ],
+     "cand": [
+      [
+       5,
+       6
+      ]
+     ]
+    },
+    "SELF-DELIVERY": {
+     "orig": [],
+     "cand": [
+      [
+       2,
+       3
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       2,
+       3
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "class (iii) draft-stage form",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[iftags +theme]]",
+   "first_added": "[[include :scp-jp:component:interwiki-style"
+  },
+  {
+   "id": "B2",
+   "orig_range": [
+    3,
+    6
+   ],
+   "cand_range": [
+    25,
+    25
+   ],
+   "orig_lines": "4-6",
+   "cand_lines": "at 26",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [
+    "CSS-BODY"
+   ],
+   "primary": "CSS-BODY",
+   "primary_section": 8,
+   "label_prec": {
+    "CSS-BODY": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "CSS-BODY": {}
+   },
+   "notes": [
+    "no other signature matched"
+   ],
+   "partial_notes": [],
+   "first_removed": "@import url(\"https://nu-scptheme.github.io/Black-Highlighter/css/min/normalize.min.css\");",
+   "first_added": ""
+  },
+  {
+   "id": "B3",
+   "orig_range": [
+    7,
+    174
+   ],
+   "cand_range": [
+    26,
+    26
+   ],
+   "orig_lines": "8-174",
+   "cand_lines": "at 27",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "EXHIBIT-RESTRUCTURE"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "EXHIBIT-RESTRUCTURE": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "EXHIBIT-RESTRUCTURE": {}
+   },
+   "notes": [
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[include :scp-wiki:component:interwiki-style",
+   "first_added": ""
+  },
+  {
+   "id": "B4",
+   "orig_range": [
+    176,
+    180
+   ],
+   "cand_range": [
+    28,
+    32
+   ],
+   "orig_lines": "177-180",
+   "cand_lines": "29-32",
+   "channel_pair": [
+    "code-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "FONT-IMPORT"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "FONT-IMPORT": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "FONT-IMPORT": {
+     "orig": [],
+     "cand": [
+      [
+       28,
+       32
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       28,
+       32
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "the deciding evidence is the load probe (KB-04)"
+   ],
+   "partial_notes": [],
+   "first_removed": "@import url('https://fonts.bunny.net/css2?family=IBM+Plex+Sans+Condensed:wght@700&display=swap');",
+   "first_added": "@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@700&display=swap');"
+  },
+  {
+   "id": "B5",
+   "orig_range": [
+    264,
+    265
+   ],
+   "cand_range": [
+    116,
+    117
+   ],
+   "orig_lines": "265-265",
+   "cand_lines": "117-117",
+   "channel_pair": [
+    "code-css",
+    "module-css"
+   ],
+   "labels": [
+    "WS-ONLY"
+   ],
+   "primary": "WS-ONLY",
+   "primary_section": 9,
+   "label_prec": {
+    "WS-ONLY": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "WS-ONLY": {}
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": " "
+  },
+  {
+   "id": "B6",
+   "orig_range": [
+    276,
+    277
+   ],
+   "cand_range": [
+    128,
+    128
+   ],
+   "orig_lines": "277-277",
+   "cand_lines": "at 129",
+   "channel_pair": [
+    "code-css",
+    "body"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "orig": [
+      [
+       276,
+       277
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[/code]]",
+   "first_added": ""
+  },
+  {
+   "id": "B7",
+   "orig_range": [
+    278,
+    440
+   ],
+   "cand_range": [
+    129,
+    130
+   ],
+   "orig_lines": "279-440",
+   "cand_lines": "130-130",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "EXHIBIT-RESTRUCTURE",
+    "HEADERVAR"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "HEADERVAR": "A",
+    "EXHIBIT-RESTRUCTURE": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "HEADERVAR": {
+     "orig": [
+      [
+       285,
+       286
+      ],
+      [
+       365,
+       366
+      ]
+     ],
+     "cand": []
+    },
+    "EXHIBIT-RESTRUCTURE": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       129,
+       130
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced"
+   ],
+   "partial_notes": [],
+   "first_removed": "@@ @@",
+   "first_added": "[[/module]]"
+  },
+  {
+   "id": "B8",
+   "orig_range": [
+    442,
+    457
+   ],
+   "cand_range": [
+    132,
+    132
+   ],
+   "orig_lines": "443-457",
+   "cand_lines": "at 133",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "EXHIBIT-RESTRUCTURE",
+    "SELF-DELIVERY"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "SELF-DELIVERY": "A",
+    "EXHIBIT-RESTRUCTURE": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "SELF-DELIVERY": {
+     "orig": [
+      [
+       444,
+       446
+      ],
+      [
+       450,
+       451
+      ],
+      [
+       455,
+       456
+      ]
+     ],
+     "cand": []
+    },
+    "EXHIBIT-RESTRUCTURE": {}
+   },
+   "notes": [
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced"
+   ],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": ""
+  }
+ ],
+ "derived_presence": {},
+ "summary": {
+  "blocks": 8,
+  "specific": 6,
+  "heuristic": 2,
+  "residue": 0,
+  "skipped": 0,
+  "reindent_blocks": 0,
+  "label_counts": {
+   "CREDIT-PREVIEW": 1,
+   "DRAFT-HOST": 1,
+   "IFTAGS": 1,
+   "SELF-DELIVERY": 2,
+   "TASL-FIELDS": 1,
+   "TRANS-UNANCHORED": 1,
+   "CSS-BODY": 1,
+   "EXHIBIT-RESTRUCTURE": 3,
+   "DELIVERY-MOVE": 3,
+   "FONT-IMPORT": 1,
+   "WS-ONLY": 1,
+   "HEADERVAR": 1
+  }
+ },
+ "residue": [],
+ "skeleton": {
+  "sha256": "667e7471cfef2f52244d892175031267464f05bef2ebe995e94bc1c4fab1ab3d",
+  "status": "written (new)"
+ }
+}

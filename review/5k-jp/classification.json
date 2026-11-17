@@ -1,0 +1,625 @@
+{
+ "tool": "classify_hunks.py",
+ "classifier_version": "0.1.0",
+ "signature_table_version": "2026-11-17.1",
+ "theme": {
+  "dir": "5k-jp",
+  "cand_fullname": "theme:5k-jp",
+  "orig_fullname": "theme:5k",
+  "wiki": "scp-wiki",
+  "revision": "13",
+  "kind": "standard",
+  "verdict": "PASS",
+  "original_file": "5k-jp/original.txt",
+  "candidate_file": "5k-jp/candidate.txt",
+  "original_sha256": "e95f93a9fce1541042c318eb2ce2979162bd14fe727a1d60a084747aa874325f",
+  "candidate_sha256": "7263313ea50bd1cb450f8cbb1c571ddd8528804ce23aea4341f3de8cf3e8132d",
+  "original_lines": 306,
+  "candidate_lines": 213
+ },
+ "topology": {
+  "original_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     4,
+     161
+    ],
+    "lines": 157
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     164,
+     196
+    ],
+    "lines": 32
+   },
+   {
+    "kind": "code-other",
+    "range": [
+     267,
+     280
+    ],
+    "lines": 13
+   }
+  ],
+  "candidate_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     28,
+     211
+    ],
+    "lines": 183
+   }
+  ],
+  "moves": [],
+  "external_own_delivery": false
+ },
+ "blocks": [
+  {
+   "id": "B1",
+   "orig_range": [
+    1,
+    2
+   ],
+   "cand_range": [
+    1,
+    2
+   ],
+   "orig_lines": "2-2",
+   "cand_lines": "2-2",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "COMPONENT-SWAP",
+    "INCLUDE-REPOINT"
+   ],
+   "primary": "COMPONENT-SWAP",
+   "primary_section": 2,
+   "label_prec": {
+    "INCLUDE-REPOINT": "A",
+    "COMPONENT-SWAP": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "INCLUDE-REPOINT": {
+     "orig": [
+      [
+       1,
+       2
+      ]
+     ],
+     "cand": [
+      [
+       1,
+       2
+      ]
+     ]
+    },
+    "COMPONENT-SWAP": {
+     "orig": [
+      [
+       1,
+       2
+      ]
+     ],
+     "cand": [
+      [
+       1,
+       2
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[include :scp-wiki:theme:basalt darkmode=a|wide=a]]",
+   "first_added": "[[include theme:basalt-jp darkmode=a|wide=a]]"
+  },
+  {
+   "id": "B2",
+   "orig_range": [
+    4,
+    4
+   ],
+   "cand_range": [
+    4,
+    28
+   ],
+   "orig_lines": "at 5",
+   "cand_lines": "5-28",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "CREDIT-PREVIEW",
+    "DRAFT-HOST",
+    "IFTAGS",
+    "SELF-DELIVERY",
+    "TASL-FIELDS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "CREDIT-PREVIEW",
+   "primary_section": 1,
+   "label_prec": {
+    "CREDIT-PREVIEW": "A",
+    "TASL-FIELDS": "A",
+    "IFTAGS": "A",
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "CREDIT-PREVIEW": {
+     "cand": [
+      [
+       11,
+       12
+      ],
+      [
+       20,
+       21
+      ]
+     ]
+    },
+    "TASL-FIELDS": {
+     "cand": [
+      [
+       12,
+       20
+      ]
+     ]
+    },
+    "IFTAGS": {
+     "orig": [],
+     "cand": [
+      [
+       9,
+       10
+      ]
+     ]
+    },
+    "SELF-DELIVERY": {
+     "orig": [],
+     "cand": [
+      [
+       6,
+       7
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       6,
+       7
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "class (iii) draft-stage form",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": "[[include :scp-jp:component:interwiki-style"
+  },
+  {
+   "id": "B3",
+   "orig_range": [
+    5,
+    6
+   ],
+   "cand_range": [
+    29,
+    30
+   ],
+   "orig_lines": "6-6",
+   "cand_lines": "30-30",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "JPFONT-LOAD"
+   ],
+   "primary": "JPFONT-LOAD",
+   "primary_section": 4,
+   "label_prec": {
+    "JPFONT-LOAD": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "JPFONT-LOAD": {
+     "cand": [
+      [
+       29,
+       30
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "absence claim needs base subtraction (resolved base)"
+   ],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": "@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');"
+  },
+  {
+   "id": "B4",
+   "orig_range": [
+    15,
+    17
+   ],
+   "cand_range": [
+    39,
+    39
+   ],
+   "orig_lines": "16-17",
+   "cand_lines": "at 40",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [
+    "CSS-BODY"
+   ],
+   "primary": "CSS-BODY",
+   "primary_section": 8,
+   "label_prec": {
+    "CSS-BODY": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "CSS-BODY": {}
+   },
+   "notes": [
+    "no other signature matched"
+   ],
+   "partial_notes": [],
+   "first_removed": "@import url('https://fonts.bunny.net/css2?family=Barlow:ital@400;700&display=swap');",
+   "first_added": ""
+  },
+  {
+   "id": "B5",
+   "orig_range": [
+    24,
+    25
+   ],
+   "cand_range": [
+    46,
+    47
+   ],
+   "orig_lines": "25-25",
+   "cand_lines": "47-47",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "COLON-ENC"
+   ],
+   "primary": "COLON-ENC",
+   "primary_section": 4,
+   "label_prec": {
+    "COLON-ENC": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       24,
+       25
+      ]
+     ],
+     "cand": [
+      [
+       46,
+       47
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    --logo: url(https://scp-wiki.wikidot.com/local--files/theme:5k/a12-logo.webp);",
+   "first_added": "    --logo: url(https://scp-wiki.wikidot.com/local--files/theme%3A5k/a12-logo.webp);"
+  },
+  {
+   "id": "B6",
+   "orig_range": [
+    43,
+    44
+   ],
+   "cand_range": [
+    65,
+    66
+   ],
+   "orig_lines": "44-44",
+   "cand_lines": "66-66",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "WS-ONLY"
+   ],
+   "primary": "WS-ONLY",
+   "primary_section": 9,
+   "label_prec": {
+    "WS-ONLY": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "WS-ONLY": {}
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": "    "
+  },
+  {
+   "id": "B7",
+   "orig_range": [
+    65,
+    66
+   ],
+   "cand_range": [
+    87,
+    88
+   ],
+   "orig_lines": "66-66",
+   "cand_lines": "88-88",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "JPFONT-STACK"
+   ],
+   "primary": "JPFONT-STACK",
+   "primary_section": 4,
+   "label_prec": {
+    "JPFONT-STACK": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "JPFONT-STACK": {
+     "orig": [
+      [
+       65,
+       66
+      ]
+     ],
+     "cand": [
+      [
+       87,
+       88
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    font-family: 'Barlow', sans-serif !important;",
+   "first_added": "    font-family: 'Barlow', \"Noto Sans JP\", sans-serif !important;"
+  },
+  {
+   "id": "B8",
+   "orig_range": [
+    160,
+    166
+   ],
+   "cand_range": [
+    182,
+    182
+   ],
+   "orig_lines": "161-166",
+   "cand_lines": "at 183",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [
+    "IFTAGS"
+   ],
+   "primary": "IFTAGS",
+   "primary_section": 2,
+   "label_prec": {
+    "IFTAGS": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "IFTAGS": {
+     "orig": [
+      [
+       163,
+       164
+      ]
+     ],
+     "cand": []
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[/module]]",
+   "first_added": ""
+  },
+  {
+   "id": "B9",
+   "orig_range": [
+    168,
+    169
+   ],
+   "cand_range": [
+    184,
+    185
+   ],
+   "orig_lines": "169-169",
+   "cand_lines": "185-185",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "COLON-ENC"
+   ],
+   "primary": "COLON-ENC",
+   "primary_section": 4,
+   "label_prec": {
+    "COLON-ENC": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       168,
+       169
+      ]
+     ],
+     "cand": [
+      [
+       184,
+       185
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    --logo: url(https://scp-wiki.wikidot.com/local--files/theme:5k/a12-logo.webp);",
+   "first_added": "    --logo: url(https://scp-wiki.wikidot.com/local--files/theme%3A5k/a12-logo.webp);"
+  },
+  {
+   "id": "B10",
+   "orig_range": [
+    194,
+    195
+   ],
+   "cand_range": [
+    210,
+    210
+   ],
+   "orig_lines": "195-195",
+   "cand_lines": "at 211",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": ""
+  },
+  {
+   "id": "B11",
+   "orig_range": [
+    196,
+    304
+   ],
+   "cand_range": [
+    211,
+    211
+   ],
+   "orig_lines": "197-304",
+   "cand_lines": "at 212",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "BARE-RATE-DEL",
+    "EXHIBIT-RESTRUCTURE",
+    "IFTAGS"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "BARE-RATE-DEL": "B",
+    "IFTAGS": "A",
+    "EXHIBIT-RESTRUCTURE": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "BARE-RATE-DEL": {
+     "orig": [
+      [
+       202,
+       203
+      ],
+      [
+       295,
+       296
+      ]
+     ]
+    },
+    "IFTAGS": {
+     "orig": [
+      [
+       199,
+       200
+      ]
+     ],
+     "cand": []
+    },
+    "EXHIBIT-RESTRUCTURE": {}
+   },
+   "notes": [
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced"
+   ],
+   "partial_notes": [],
+   "first_removed": ">[[/iftags]]",
+   "first_added": ""
+  }
+ ],
+ "derived_presence": {},
+ "summary": {
+  "blocks": 11,
+  "specific": 9,
+  "heuristic": 1,
+  "residue": 1,
+  "skipped": 0,
+  "reindent_blocks": 0,
+  "label_counts": {
+   "COMPONENT-SWAP": 1,
+   "INCLUDE-REPOINT": 1,
+   "CREDIT-PREVIEW": 1,
+   "DRAFT-HOST": 1,
+   "IFTAGS": 3,
+   "SELF-DELIVERY": 1,
+   "TASL-FIELDS": 1,
+   "TRANS-UNANCHORED": 1,
+   "JPFONT-LOAD": 1,
+   "CSS-BODY": 1,
+   "COLON-ENC": 2,
+   "WS-ONLY": 1,
+   "JPFONT-STACK": 1,
+   "BARE-RATE-DEL": 1,
+   "EXHIBIT-RESTRUCTURE": 1
+  }
+ },
+ "residue": [
+  "B10"
+ ],
+ "skeleton": {
+  "sha256": "5cae921050fa0e9de0cc823f8ff570916f6dd57ad6a37836713cc1c31055a126",
+  "status": "written (new)"
+ }
+}

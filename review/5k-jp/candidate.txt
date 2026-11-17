@@ -1,0 +1,213 @@
+[[div style="display: none;"]]
+[[include theme:basalt-jp darkmode=a|wide=a]]
+[[/div]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3A5k-jp/1
+]]
+
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** 5Kテーマ
+**翻訳責任者:** AI
+**翻訳年:** 2026
+**原題:** 5K Theme
+**著作権者:** Liryn
+**作成年:** 2023
+**初訳時参照リビジョン:** 13
+**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:5k ソース]
+[[include :scp-jp:credit:end-preview]]
+
+5Kコンテスト向けのテーマです。専用ロゴと配色を提供します。
+
+**使い方:** @@[[include theme:5k-jp]]@@
+
+**基盤:** Basalt — theme:basalt-jp（原語版 theme:basalt、Liryn 作）をこのページ冒頭の display:none div でincludeします。Basalt の CSS は basalt-jp 側が持ちます
+
+[[module CSS]]
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+/* SCP: 5K Theme              */
+/* [2023 Wikidot Theme]       */
+/*                            */
+/* by Liryn & Placeholder McD */
+
+/*-----------------*/
+/*---- IMPORTS ----*/
+/*-----------------*/
+
+
+:root {
+
+    /*----------------------*/
+    /*---- BEDROCK VARS ----*/
+    /*----------------------*/
+
+    --logo: url(https://scp-wiki.wikidot.com/local--files/theme%3A5k/a12-logo.webp);
+
+    --title: "SCP: 5K";
+
+    --subtitle-size: 0rem;
+    --title-size: 2rem;
+    --base-header-height: calc((var(--title-size) + var(--subtitle-size))*1.5 + 0.5rem);
+    --header-border-width: 0rem;
+
+    --UI-font-primary: 'Saira';
+
+    --basalt-UI-dark-palette: 45, 45, 45;
+    --basalt-bright-element-color: 228, 33, 33;
+    --basalt-dark-element-color: 203, 77, 77;
+    --basalt-primary-color: 3, 3, 3;
+    --basalt-secondary-color: 8, 8, 8;
+    --basalt-tertiary-color: 30, 30, 30;
+    --general-border-color: 40, 40, 40;
+    --basalt-main-text-color: 210, 210, 210;
+    
+    --basalt-focus-color: var(--basalt-bright-element-color);
+    --selection-text-color: var(--basalt-main-text-color);
+    --header-background-color: var(--basalt-primary-color);
+    --header-title-color: 240, 240, 240;
+    --top-bar-dropdown-link-color-hover: var(--basalt-main-text-color);
+    --top-bar-link-background-hover: var(--top-bar-link-background-hover-alt);
+    --side-bar-link-color-hover: var(--basalt-main-text-color);
+    --side-bar-background-color: var(--basalt-primary-color);
+    --bottom-area-background-color: var(--basalt-primary-color);
+
+}
+
+/*--------------------*/
+/*---- 5K CLASSES ----*/
+/*--------------------*/
+
+#page-content .quint {
+    font-family: var(--UI-font);
+}
+
+#page-content .metam {
+    font-family: 'Barlow', "Noto Sans JP", sans-serif !important;
+    color: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+#page-content .metam :is(th, td) {
+    color: transparent !important;
+}
+
+.a12_memo {
+    --memo-heading: "! INTERNAL SECURITY NOTICE !";
+    --memo-logo: url(https://smlt.wdfiles.com/local--files/collab:dr-moist:theatre/O4);
+    --memo-color: var(--basalt-bright-element-color);
+    font-family: var(--UI-font);
+    font-size: 1.1em;
+    background-blend-mode: soft-light;
+}
+
+.series-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: baseline;
+
+    margin: 1rem 0;
+    padding: .02rem 1rem;
+    background: rgb(var(--basalt-tertiary-color));
+
+    border-top-right-radius: .67rem;
+    border-top-left-radius: .67rem;
+
+    font-size: 1.2em;
+    font-family: var(--UI-font);
+}
+
+.series-nav>* {
+    margin: 0 0.3em;
+}
+
+.end_card {
+    background: linear-gradient(145deg, rgba(var(--basalt-dark-element-color), 0.5) 0%, rgb(var(--basalt-tertiary-color)) 80%);
+    padding: 1.25rem 2rem;
+    text-align: center;
+}
+
+/*--------------*/
+/*---- MISC ----*/
+/*--------------*/
+
+#content-wrap {
+    background-image: radial-gradient(rgb(30, 30, 30) 10%, transparent 10%);
+    background-position: 1px 1px;
+    background-size: 16px 16px;
+}
+
+/* MISC --> Header alterations */
+
+#header h1 a span::before {
+    margin-inline: 6px;
+    letter-spacing: -2px;
+}
+
+/* MISC --> UI alterations */
+
+#main-content>.page-tags>span a {
+    color: rgb(var(--basalt-main-text-color));
+    background: none !important;
+}
+
+#main-content>.page-tags>span a:is(:hover, :focus) {
+    color: rgb(var(--basalt-bright-element-color));
+    box-shadow: none;
+}
+
+/* MISC --> Content alterations */
+
+#page-title, .meta-title {
+    border-bottom: none;
+    color: rgba(var(--basalt-main-text-color), 0.9);
+}
+
+.fncon::before {
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.fnnum:hover::after {
+    color: black;
+}
+
+::selection {
+    background-color: rgba(var(--selection-background-color), 0.4);
+}
+
+:root {
+
+    --logo: url(https://scp-wiki.wikidot.com/local--files/theme%3A5k/a12-logo.webp);
+
+    --header-title: "AREA-12";
+
+    --title-size: 2.4rem;
+    --base-header-height: calc((var(--title-size) + var(--subtitle-size))*1.15 + 0.5rem);
+
+    --basalt-bright-element-color: 0, 175, 50;
+    --basalt-dark-element-color: 88, 167, 102;
+
+    --side-bar-link-color-hover: var(--basalt-light-text-color);
+    --top-bar-dropdown-link-color-hover: var(--basalt-light-text-color);
+    --login-status-text-color-hover: var(--basalt-light-text-color);
+    --button-hover-text-color: var(--basalt-light-text-color);
+
+    --one-color: var(--basalt-bright-element-color) !important;
+
+}
+
+#header h1 a span::after {
+    display: none;
+}
+
+div#account-options>ul>li>a {
+    transition: color 0.4s;
+}
+[[/module]]
+
+[[/iftags]]

@@ -1,0 +1,782 @@
+[[div style="display: none;"]]
+[[include theme:basalt-jp darkmode=a]]
+[[/div]]
+
+[[module css]]
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aanother-night-jp/1");
+
+/* {$half-height}/
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aanother-night-jp/2");
+/{$half-height} */
+
+/* {$low-height}/
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aanother-night-jp/3");
+/{$low-height} */
+
+/* {$auto-blur}/
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aanother-night-jp/4");
+/{$auto-blur} */
+
+/* {$sn-bg}/
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aanother-night-jp/5");
+/{$sn-bg} */
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aanother-night-jp/1
+]]
+
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** 迷离夜 版式
+**翻訳責任者:** AI
+**翻訳年:** 2026
+**原題:** 迷离夜 版式
+**著作権者:** Gumillea
+**作成年:** 2025
+**初訳時参照リビジョン:** 1
+**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:another-night 迷离夜 版式]
+[[include :scp-jp:credit:end-preview]]
+
++* 画像の出典
+
+> **ファイル名:** bg-another-night.jpg、bg-another-night_blurred.jpg
+> **画像名:** HK night panorama stitch
+> **画像作者:** Riosolar
+> **ライセンス:** CC BY-SA 4.0
+> **出典:** [[https://commons.wikimedia.org/wiki/File:HK_night_panorama_stitch.jpg]]
+=====
+> **ファイル名:** bg-subway2.jpg
+> **画像名:** In a Beijing subway car 4521
+> **画像作者:** Vmenkov
+> **ライセンス:** CC BY-SA 3.0
+> **出典:** [[https://commons.wikimedia.org/wiki/File:In_a_Beijing_subway_car_4521.jpg]]
+=====
+> **ファイル名:** Radevormwald - Raindrops on a window 11 (1) ies.webm
+> **画像名:** Radevormwald - Raindrops on a window 11 (1) ies
+> **画像作者:** Frank Vincentz
+> **ライセンス:** CC BY-SA 3.0
+> **出典:** [[https://commons.wikimedia.org/wiki/File:Radevormwald_-_Raindrops_on_a_window_11_(1)_ies.webm]]
+
+=====
+[[=]]
+[[size 120%]]**任意のページで:**[[/size]]
+[[size 160%]]**{{@@[[include @@[[span style="opacity: 70%;"]]@@:scp-jp:@@[[/span]]@@theme:another-night]]@@}}**[[/size]]
+[[/=]]
+@@ @@
++* 情報
+これは美学系テーマです。[[[theme:shivering-night|夜琉璃]]]を[[[theme:basalt|玄武岩]]]上で分岐させたものと考えてください。元の意匠を引き継ぎつつ、視覚効果と、おそらく性能面にも関わる部分を調整しています。さらに、雰囲気作りを主な目的としたプロローグ演出を追加しました。プロローグにマウスを重ねると、具体的な効果を確認できます。
+@@ @@
++* テーマ設定
+
+@@[[include]]@@モジュールに**テーマ設定**を追加すると、「Another Night」の各部を変更できます。
+@@ @@
+
+**{{@@[[include @@[[span style="opacity: 70%;"]]@@:scp-jp:@@[[/span]]@@theme:another-night @@##87CEEB|テーマ設定##@@]]@@}}**
+
+**{{@@[[include @@[[span style="opacity: 70%;"]]@@:scp-jp:@@[[/span]]@@theme:another-night @@##87CEEB|テーマ設定##|##52cf81|別のテーマ設定##@@]]@@}}**
+@@ @@
+
+現在の版で利用できるテーマ設定は次のとおりです。
+* **{{half-height=*}}**[[span class="noclick"]]@@ @@ @@ @@[[/span]]ヘッダーの高さを既定値の半分にします。プロローグ演出は既定で無効になります
+* **{{low-height=*}}**[[span class="noclick"]]@@ @@ @@ @@[[/span]]ヘッダーを極端に低くします。プロローグと演出は既定で無効になります
+* **{{auto-blur=*}}**[[span class="noclick"]]@@ @@ @@ @@[[/span]]記事本文を閲覧しているあいだ、CSSフィルターで背景画像を暗くぼかします。性能への影響が大きいため、あらかじめぼかした背景画像を用意する方法を推奨します
+* **{{sn-bg=*}}**[[span class="noclick"]]@@ @@ @@ @@[[/span]]雨滴効果を「夜琉璃」原版の破片が漂う効果に変更します
+
+上記以外にも、次の構文を追加するとある程度デザインをカスタマイズできます。
+[[div class="blockquote"]]
+{{@@[[module CSS]]@@}}
+{{@@:root {@@}}
+
+{{@@  --bg-img: url(https://scp-sandbox-3.wikidot.com/local--files/theme%3Aanother-night/bg-another-night.jpg); /* 背景画像 */ @@}}
+{{@@  --bg-img-blurred: url(https://scp-sandbox-3.wikidot.com/local--files/theme%3Aanother-night/bg-another-night_blurred.jpg); /* 本文にマウスを重ねたときに使う背景画像のぼかし版。自動ぼかしを使う場合、またはぼかさない場合は空欄にしてください */ @@}}
+
+{{@@  --shards-img: url(https://scp-sandbox-3.wdfiles.com/local--files/theme%3Aanother-night/rain.gif); /* 動的背景画像 */ @@}}
+{{@@  --shards-hover-img: url(https://scpsandboxcn.wikidot.com/local--files/theme%3Aanother-night/bg-subway2.jpg);  /* ヘッダー中央の標語にマウスを重ねたとき表示する画像 */ @@}}
+
+{{@@  --bg-blur-filter: 1.5px; /* 自動ぼかし設定での背景ぼかし強度 */ @@}}
+
+{{@@  --prologue: "群衆の中に、ふと浮かぶ顔たち"; /* ヘッダー標語 */ @@}}
+{{@@  --prologue-setting: visible; /* hiddenにすると中央の標語を隠せます */@@}}
+{{@@  --prologue-author: "――エズラ・パウンド『地下鉄の駅にて』"; /* 標語の作者/出典 */ @@}}
+{{@@  --prologue-author-setting: visible; /* hiddenにすると標語の作者/出典を隠せます */@@}}
+
+{{@@  --introduction: ""; /* ヘッダー中央の標語にマウスを重ねたとき表示する内容 */@@}}
+{{@@  --introduction-setting: auto; /* noneにするとテキスト変化効果を無効にできます */@@}}
+{{@@  --introduction-bg-setting: block; /* noneにするとテキスト変化後に現れる画像を無効にできます */@@}}
+
+{{@@  --title-setting: flex; /* noneにするとタイトルとサブタイトルを非表示にします。主にACSコンポーネントへの適合用です */@@}}
+{{@@  --subtitle-content: "- 群衆 -"; /* サブタイトルの内容 */@@}}
+{{@@  --subtitle-setting: flex; /* noneにするとサブタイトルだけを非表示にできます */@@}}
+
+{{@@  --link-color: 120, 140, 255; /* リンク色。タブなどのテーマカラーにも影響します */ @@}}
+
+{{@@ }@@}}
+{{@@[[/module]]@@}}
+[[/div]]
+@@ @@
++* ページ要素
+[[=]]
+[[div class="blockquote"]]
+@@ @@
+= {{@@[[div class="blockquote"]]@@}}
+= これは既定の引用ブロックです。背景とその動的効果を少し強調します
+@@ @@
+@@ @@
+[[/div]]
+
+[[div class="blockquote dark"]]
+@@ @@
+= {{@@[[div class="blockquote dark"]]@@}}
+= これは暗色の引用ブロックです
+@@ @@
+@@ @@
+[[/div]]
+
+[[div class="blockquote porthole"]]
+@@ @@
+= {{@@[[div class="blockquote porthole"]]@@}}
+= これはレトロなガラス窓のような質感を持つ引用ブロックです。Aero Glassテーマから着想を得ています
+= 多用するとブラウザの動作が重くなる可能性があります。また、SafariをはじめとするiOSブラウザでは互換性がないことが分かっています
+@@ @@
+[[/div]]
+
+[[div class="blockquote rainyday"]]
+@@ @@
+= {{@@[[div class="blockquote rainyday"]]@@}}
+= これは使用中の動的背景にかかわらず、常に目立つ雨のエフェクトが入る引用ブロックです
+= //そしてまた、この偉大な都市に雨が降る//
+@@ @@
+[[/div]]
+
+[[/=]]
+
+@@ @@
+[[include component:image-block name=https://scp-wiki.wikidot.com/local--files/theme%3Abasalt/basalt_scp_logo-for_darkmode.svg|caption=三本の矢印を持つ円環の図案が描かれたブロックの夢|width=280px]]
+夜のホームに人波が流れ、ネオンの反射が濡れた窓を横切っていく。遠くの車内放送は輪郭を失い、薄い雨音だけが背景の奥で途切れずに続いていた。
+
+[[div class="floatbox"]]
+**{{@@[[div class="floatbox"]]@@}}**
+
+これはフロートボックスです。今のところ、よりよい脚注以外ならほとんど何でも入れられます。中に入れた内容は、周囲の本文に対してページの片側へ回り込むように表示されます。
+
+[[/div]]
+
+街路灯の下では、傘の列がゆっくりと交差する。硝子越しの光は淡くにじみ、読み手の視線を本文から都市の奥行きへ引き戻す。
+
+[[div class="floatbox right"]]
+**{{@@[[div class="floatbox right"]]@@}}**
+[[/div]]
+
+この段落はテーマ表示の確認用テキストです。長い文章、句読点、漢字とかなの混在、リンク色、行間、回り込みの余白が自然に見えるかを確認するために置かれています。
+
+@@ @@
+------
+@@ @@
+
+ハイフンを4つ並べた「@@----@@」で水平線を作成できます。引用ブロックなどの部品内に置かれていなければ、水平線は左右に伸びてページを横切ります。
+
+@@ @@
+
+このテーマでは、よく使われるACSコンポーネントにもスタイル調整を加えています。{{@@[[div class="shivering-acs"]]@@}}の中に配置するだけで効果を適用できます。
+[[tabview]]
+[[tab 元の配色]]
+[[div class="shivering-acs"]]
+[[include :scp-jp:component:anomaly-class-bar-source
+|lang= jp
+|item-number= 2105
+|clearance= 2
+|container-class= euclid
+|secondary-class= none
+|disruption-class= vlam
+|risk-class= 要観察
+]]
+@@ @@
+[[include :scp-jp:component:anomaly-class-bar-source
+|lang= jp
+|item-number= 3000
+|clearance= 5
+|container-class= 機密
+|secondary-class= thaumiel
+|secondary-icon= https://scp-wiki.wdfiles.com/local--files/component%3Aanomaly-class-bar/thaumiel-icon.svg
+|disruption-class= ekhi
+|risk-class= 危急
+]]
+@@ @@
+[[include :scp-jp:component:anomaly-class-bar-source
+|lang= jp
+|item-number= 4511
+|clearance= 4
+|container-class= 分類待ち
+|secondary-class= none
+|disruption-class= none
+|risk-class= none
+]]
+[[/div]]
+@@ @@
+[[/tab]]
+[[tab 配色変更]]
+[[div class="shivering-acs color"]]
+コンポーネントを{{@@[[div class="shivering-acs color"]]@@}}の中に置くと、対応する調整が適用されます。次のコードを変更して色をカスタマイズすることもできます。
+
+[[div class="blockquote"]]
+{{@@[[module CSS]]@@}}
+{{@@div.shivering-acs.color {@@}}
+{{@@  --five-color: 220, 70, 141;@@}}
+{{@@  --four-color: 162, 78, 200;@@}}
+{{@@  --three-color: 105, 92, 196;@@}}
+{{@@  --two-color: 92, 147, 196;@@}}
+{{@@  --one-color: 92, 196, 171;@@}}
+{{@@}@@}}
+{{@@[[/module]]@@}}
+[[/div]]
+
+[[include :scp-jp:component:anomaly-class-bar-source
+|lang= jp
+|item-number= 2105
+|clearance= 2
+|container-class= euclid
+|secondary-class= none
+|disruption-class= vlam
+|risk-class= 要観察
+]]
+@@ @@
+[[include :scp-jp:component:anomaly-class-bar-source
+|lang= jp
+|item-number= 3000
+|clearance= 5
+|container-class= 機密
+|secondary-class= thaumiel
+|secondary-icon= https://scp-wiki.wdfiles.com/local--files/component%3Aanomaly-class-bar/thaumiel-icon.svg
+|disruption-class= ekhi
+|risk-class= 危急
+]]
+@@ @@
+[[include :scp-jp:component:anomaly-class-bar-source
+|lang= jp
+|item-number= 4511
+|clearance= 4
+|container-class= 分類待ち
+|secondary-class= none
+|disruption-class= none
+|risk-class= none
+]]
+[[/div]]
+[[/tab]]
+[[/tabview]]
+
+[[include component:coltop show=ソースコード ▶|hide=ソースコード ▼]]
+[[code type="css"]]
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux&display=swap');
+
+:root {
+  --title-font: 'Afacad Flux', 'Source Han Serif CN VF', serif;
+
+  --bg-img: url(https://scp-sandbox-3.wikidot.com/local--files/theme%3Aanother-night/bg-another-night.jpg);
+  --bg-img-blurred: url(https://scp-sandbox-3.wikidot.com/local--files/theme%3Aanother-night/bg-another-night_blurred.jpg);
+  --shards-img: url(https://scp-sandbox-3.wdfiles.com/local--files/theme%3Aanother-night/rain.gif);
+  --shards-hover-img: url(https://scpsandboxcn.wikidot.com/local--files/theme%3Aanother-night/bg-subway2.jpg);
+
+  --auto-bg-blur-filter: 1.5px;
+
+  --prologue: "面庞在人潮中明灭";
+  --prologue-setting: visible;
+  --prologue-author: "—埃兹拉·庞德《在一个地铁车站》";
+  --prologue-author-setting: visible;
+  --introduction: "湿黑枝条上，花瓣朵朵";
+  --introduction-setting: auto;
+
+  --title-setting: flex;
+  --subtitle-content: "- 芸芸众生 -";
+  --subtitle-setting: flex;
+
+  --primary-color: 16, 15, 20;
+
+  --link-color: 120, 140, 255;
+  --basalt-undertone: var(--link-color);
+  --basalt-bright-element-color: var(--link-color);
+  --basalt-dark-element-color: var(--link-color);
+  --new-link-color: 111, 144, 206;
+
+  --display-mode: 78vh;
+}
+
+#page-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3.5em;
+    font-family: var(--title-font);
+
+    color: rgb(var(--secondary-color));
+    border-color: transparent;
+
+    display: var(--title-setting) !important;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-transform:uppercase;
+}
+
+#page-title::after {
+   content: var(--subtitle-content);
+
+   display: var(--subtitle-setting);
+   width: 100%;
+   height: 2.5rem;
+
+   margin-top: -1.5rem;
+   justify-content: center;
+   align-items: center;
+   font-size: 30%;
+   letter-spacing: 1px;
+}
+
+#content-wrap {
+    position: relative;
+
+    overflow: hidden; 
+    top: var(--display-mode);
+
+    background: linear-gradient(to bottom, transparent, rgb(var(--primary-color), .65) 15vh, rgb(var(--primary-color), .65));
+}
+
+@media not all and (max-width: 767px) {
+  #main-content {
+    max-width: 57.5rem !important;
+  }
+}
+
+#content-wrap::before {
+    content: " ";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: var(--shards-img) top center no-repeat;
+    background-size: cover;
+    mix-blend-mode: overlay;
+    pointer-events: none;
+    will-change: transform;
+    opacity: .5;
+}
+
+div.creditButtonStandalone > p > a::before, 
+div.rate-box-with-credit-button .creditButton > p > a::before,
+div[id*=page-options-bottom] {
+  background-color: transparent !important;
+}
+
+#license-area, #footer {
+  top: var(--display-mode);
+  position: relative;
+}
+
+#extrac-div-1 {
+    position: fixed;
+    display: block;
+    z-index: -3;
+
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--bg-img);
+    background-size: cover;
+    background-position: center;
+}
+
+#extrac-div-1::before {
+    content: "";
+    position: fixed;
+    display: block;
+
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--bg-img-blurred);
+    background-size: cover;
+    background-position: center;
+    transition: all 1s ease-in-out;
+}
+
+#extrac-div-2 {
+    position: absolute;
+    top: calc(var(--display-mode) / 2);
+    left: 50%;
+    transform: translateX(-50%);
+    padding-left: 1em;
+    padding-right: 1em;
+    z-index: 2;
+    pointer-events: var(--introduction-setting);
+    width: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#extrac-div-2::before {
+    line-height: 1.5em;
+    font-size: 1.5em;
+    font-family: var(--mono-font);
+    font-weight: 400;
+    text-shadow: 0 0 3px black, 0 0 5px black, 0 0 10px black, 0 0 15px black;
+
+    content: var(--prologue);
+    color: rgb(var(--basalt-main-text-color));
+    visibility: var(--prologue-setting);
+
+    text-align: center;
+    transition: font-size 0.3s ease, background-size 0.3s ease;
+}
+
+#extrac-div-2:hover::before {
+    font-size: 1.25em;
+    content: var(--introduction);
+}
+
+#extrac-div-2::after {
+    line-height: 1.5em;
+    font-size: 1.25em;
+    font-family: var(--mono-font);
+    text-shadow: 0 0 3px black, 0 0 5px black, 0 0 10px black, 0 0 15px black;
+
+    content: var(--prologue-author);
+    color: rgb(var(--basalt-main-text-color));
+    visibility: var(--prologue-author-setting);
+
+    text-align: center;
+    transition: font-size 0.3s ease, background-size 0.3s ease;
+}
+
+#extrac-div-3 {
+    position: fixed;
+    display: var(--introduction-bg-setting);
+    z-index: -3;
+
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    transition: all 1s ease-in-out;
+    background: var(--shards-hover-img, linear-gradient(to bottom, rgba(var(--basalt-secondary-color), 0.8) 0%, rgba(var(--basalt-secondary-color), 0) 100%));
+    background-size: 120%;
+    background-position: right center;
+    pointer-events: none;
+    will-change: transform;
+    opacity: 0;
+}
+
+@keyframes backgroundBounce2 {
+    0%, 100% {
+        background-position: right center;
+    }
+    50% {
+        background-position: left center;
+    }
+}
+
+#container:has(#extrac-div-2:hover) #extrac-div-3 {
+  animation: backgroundBounce2 180s linear infinite;
+  opacity: .7;
+}
+
+#container:has(#content-wrap:hover) #extrac-div-1::before {
+  opacity: 1;
+}
+
+:is(.image-block, .scp-image-block) :is(.image-caption, .scp-image-caption),
+#header {
+  background: transparent;
+}
+
+#header {
+  box-shadow: none;
+}
+
+#header h1 a::before {
+  display: none;
+}
+
+.yui-navset.yui-navset-top .yui-content,
+div.page-rate-widget-box, 
+div.rate-box-with-credit-button,
+#page-content div.floatbox,
+blockquote,
+div.blockquote,
+div#toc,
+#lock-info,
+.scp-image-block {
+    border: 0.1px dashed transparent;
+    border-radius: 5px;
+    position: relative;
+    background: rgb(var(--basalt-undertone),.175);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+div.blockquote.porthole,
+div#toc.porthole {
+    background: linear-gradient(rgba(var(--primary-color), 0.1), rgba(var(--primary-color), 0.1)), var(--bg-img);
+    background-size: cover;
+    background-attachment:fixed;
+    background-position: center;
+    box-shadow: none;
+    backdrop-filter: brightness(2) contrast(1.1);
+    -webkit-backdrop-filter: brightness(2) contrast(1.1);
+}
+
+div.blockquote.porthole::before,
+div#toc.porthole::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(var(--primary-color));
+    mix-blend-mode: overlay;
+    pointer-events: none;
+    opacity: 0.7;
+    text-shadow: none;
+}
+
+div.blockquote.dark,
+div#toc.dark {
+  background: rgba(31, 31, 53, 0.5);
+  backdrop-filter: contrast(1.1);
+    -webkit-backdrop-filter: contrast(1.1);
+}
+
+div.blockquote.rainyday::before,
+div#toc.rainyday::before {
+  content: " ";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--shards-img) top center;
+  background-size: cover;
+  pointer-events: none;
+  opacity: .15;
+  filter: invert(1) contrast(1.4);
+  position: absolute;
+}
+
+
+.yui-navset.yui-navset-top .yui-content {
+  background: rgb(var(--basalt-undertone),.1);
+  border-radius: 0px 0px 5px 5px;
+  box-shadow:
+     0 8px 10px -4px rgba(0,0,0,.35),
+     8px 0 10px -4px rgba(0,0,0,.25),
+     -8px 0 10px -4px rgba(0,0,0,.25);
+}
+
+hr {
+  background: rgb(var(--basalt-main-text-color), .15);
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  backdrop-filter: brightness(3) contrast(1.1);
+  -webkit-backdrop-filter: brightness(3) contrast(1.1);
+}
+
+@media (max-width: 767px) {
+  #extrac-div-2 {
+    width: 80%;
+  }
+
+  #extrac-div-3 {
+    background-size: cover;
+  }
+}
+
+/* ACS Tweaks*/
+div.shivering-acs {
+  --swatch-menutxt-dark-color: var(--basalt-main-text-color);
+}
+
+div.shivering-acs.color {
+  --five-color: 220, 70, 141;
+  --four-color: 162, 78, 200;
+  --three-color: 105, 92, 196;
+  --two-color: 92, 147, 196;
+  --one-color: 92, 196, 171;
+}
+
+div.shivering-acs .danger-diamond a {
+  background: none;
+}
+
+div.shivering-acs .top-box .top-center-box {
+  height: 80%;
+  opacity: 0.65;
+}
+
+div.shivering-acs .anom-bar > .bottom-box {
+  box-shadow: none;
+  margin-top: -1.5rem !important;
+}
+
+div.shivering-acs .bottom-box > .diamond-part {
+  box-shadow: none;
+}
+
+div.shivering-acs .text-part > .main-class {
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  backdrop-filter: brightness(2) contrast(1.1);
+  -webkit-backdrop-filter: brightness(2) contrast(1.1);
+  border-radius: 5px;
+}
+
+div.shivering-acs .text-part > .main-class::before {
+  border: 0.25rem solid transparent !important;
+}
+
+div.shivering-acs .top-center-box > .bar-one,
+div.shivering-acs .top-center-box > .bar-two,
+div.shivering-acs .top-center-box > .bar-three,
+div.shivering-acs .top-center-box > .bar-four,
+div.shivering-acs .top-center-box > .bar-five {
+  box-shadow: 0 0 3px rgb(0, 0, 0);
+  border-radius: 0px 10px 0px 10px;
+}
+
+div.shivering-acs .text-part > .disrupt-class,
+div.shivering-acs .text-part > .risk-class {
+  box-shadow: 0 0 5px rgb(0, 0, 0);
+  backdrop-filter: brightness(2) contrast(1.1);
+  -webkit-backdrop-filter: brightness(2) contrast(1.1);
+  border-radius: 5px;
+}
+
+div.shivering-acs .danger-diamond > .quadrants > div {
+  clip-path: polygon(25% 0%, 74% 0%, 97% 31%, 50% 95%, 3% 31%);
+  backdrop-filter: brightness(3);
+}
+
+div.shivering-acs .text-part .disrupt-class::before,
+div.shivering-acs .text-part .risk-class::before {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+div.shivering-acs .text-part .disrupt-class::after,
+div.shivering-acs .text-part .risk-class::after {
+  border: 0.25rem solid rgb(255, 255, 255);
+}
+
+div.shivering-acs .danger-diamond > .arrows {
+  display: none;
+}
+
+div.shivering-acs .danger-diamond > .top-icon,
+div.shivering-acs .danger-diamond > .right-icon,
+div.shivering-acs .danger-diamond > .left-icon,
+div.shivering-acs .danger-diamond > .bottom-icon {
+  border: 0.1875rem solid transparent !important;
+}
+
+div.shivering-acs .danger-diamond > .top-icon::before,
+div.shivering-acs .danger-diamond > .left-icon::before,
+div.shivering-acs .danger-diamond > .right-icon::before,
+div.shivering-acs .danger-diamond > .bottom-icon::before {
+  background-color: transparent !important;
+}
+
+div.shivering-acs .danger-diamond > .top-quad,
+div.shivering-acs .danger-diamond > .right-quad,
+div.shivering-acs .danger-diamond > .left-quad,
+div.shivering-acs .danger-diamond > .bottom-quad{
+  box-shadow: 0 0 5px rgb(0, 0, 0);
+  backdrop-filter: brightness(2) contrast(1.1);
+  -webkit-backdrop-filter: brightness(2) contrast(1.1);
+}
+
+div.shivering-acs .danger-diamond .top-quad::before,
+div.shivering-acs .danger-diamond .right-quad::before,
+div.shivering-acs .danger-diamond .left-quad::before,
+div.shivering-acs .danger-diamond .bottom-quad::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  z-index: 10;
+}
+
+.bottom-box > div.diamond-part::before,
+.anom-bar > div.bottom-box::before {
+  background-color: transparent;
+}
+[[/code]]
+
+[[code type="css"]]
+/* 布局方案 - 半高版头*/
+:root {
+  --display-mode: 43vh;
+  --introduction-bg-setting: none;
+}
+[[/code]]
+
+[[code type="css"]]
+/* 布局方案 - 低版头*/
+:root {
+  --display-mode: 3em;
+  --prologue-setting: hidden;
+  --prologue-author-setting: hidden;
+}
+
+div#extrac-div-1 {
+  pointer-events: none;
+}
+
+#footer {
+  margin-top: 15px;
+}
+
+#license-area {
+  top: 0;
+}
+[[/code]]
+
+[[code type="css"]]
+/* 布局方案 - 自动模糊*/
+#extrac-div-1 {
+  filter: blur(0px);
+  will-change: filter; 
+}
+
+#container:has(#content-wrap:hover) #extrac-div-1 {
+  filter: blur(var(--auto-bg-blur-filter)) brightness(.33);
+}
+[[/code]]
+
+[[code type="css"]]
+/* 布局方案 - 夜琉璃背景*/
+:root {
+  --shards-img: url(https://scp-sandbox-3.wikidot.com/local--files/theme%3Aanother-night/glass_bg.png);
+}
+
+#content-wrap::before {
+    animation: backgroundBounce 180s linear infinite;
+    opacity: 1;
+}
+
+@keyframes backgroundBounce {
+    0%, 100% {
+        background-position: center bottom;
+    }
+    50% {
+        background-position: center top;
+    }
+}
+[[/code]]
+
+[[include component:colend]]
+
+[[/iftags]]

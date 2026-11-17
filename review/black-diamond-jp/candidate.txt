@@ -1,0 +1,568 @@
+[[include component:sigma-plus-jp]]
+[[include :scp-jp:component:toggle-sidebar]]
+
+[[module CSS]]
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Ablack-diamond-jp/1');
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Ablack-diamond-jp/1
+]]
+
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** ブラック・ダイヤモンド テーマ
+**翻訳責任者:** AI
+**翻訳年:** 2026
+**原題:** Black Diamond Theme
+**著作権者:** [[*user Fish^12]]
+**作成年:** 2025
+**初訳時参照リビジョン:** 16
+**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:black-diamond Black Diamond Theme]
+[[include :scp-jp:credit:end-preview]]
+
++ どうやって儲けるのか？
+
+これは、資本主義が根本から壊れているさまを描くシリーズ、[[[https://scp-wiki.wikidot.com/black-diamond-billions-hub|ブラック・ダイヤモンド・ビリオネア]]]（[[*user xexnoncores]]作成）のための美的テーマです。たとえ取り仕切るのが女社長たちであっても。このテーマは[[*user Fish^12]]が作成しました。
+
+このテーマは[[[https://scp-wiki.wikidot.com/component:sigma-plus|Sigma Plus]]]テーマで、[[[https://scp-wiki.wikidot.com/component:toggle-sidebar|トグル式サイドバー]]]コンポーネントを使用しています。見た目はMC&Dの通例の紫の配色から離れ、主に青と金のハイライトを用いています。
+
+このテーマをページに含めるには、以下のコードを使用してください:
+
+[[=]]
+> @@[[include :scp-jp:theme:black-diamond]]@@
+[[/=]]
+
+@@ @@
+
+@@ @@
+
+このテーマには、大きい順に3種類の独自の区切り記号があります:
+
+> @@[[div class="ornament1"]]@@
+> @@[[/div]]@@
+[[div class="ornament1"]]
+[[/div]]
+
+> @@[[div class="ornament2"]]@@
+> @@[[/div]]@@
+[[div class="ornament2"]]
+[[/div]]
+
+> @@[[div class="ornament3"]]@@
+> @@[[/div]]@@
+[[div class="ornament3"]]
+[[/div]]
+
+@@ @@
+
+@@ @@
+
+それ以外に、このテーマに大きな特徴はありません。どうぞお楽しみください。
+
+@@ @@
+
+@@ @@
+
+[[collapsible show="テーマのソース" hide="テーマのソース"]]
+[[code type="css"]]
+/*
+    Black Diamond Theme
+    [2025 Wikidot Theme]
+    by Fish^12
+    Ported for SCP-JP (theme:black-diamond rev 16)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;700&display=swap');
+
+/* 日本語フォント (JP localization) */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
+
+/* Root & Sigma+ */
+
+:root {
+    --royalblue: #0b1926;
+    --navyblue: #193855;
+    --yellow: #efd67a;
+    --royalpurple: #b083de;
+    --grey: #e9e9e9;
+    --trans: transparent;
+
+    --gold: linear-gradient(60deg, #b78a49, #dbb560, #f5efb5, #dbb560, #b78a49);
+    --timer: 200ms;
+    --diamond: polygon(80% 0, 100% 20%, 50% 100%, 0 20%, 20% 0);
+
+    --stix: "STIX Two Text", "Noto Serif JP", serif;
+    --robo: "Roboto Flex", "Noto Sans JP", sans-serif;
+    --zolm: "Zen Old Mincho", "Noto Serif JP", serif;
+
+    --header-title: "Black Diamond Billions";
+    --header-subtitle: "";
+    --sp_header-logo: none;
+    --sp_header-title-size: clamp(3rem, -0.714rem + 7.738vw, 6.25rem);
+    --sp_header-subtitle-size: 0;
+
+    --sp_header-height: 20rem;
+    --sp_top-bar-height: 2rem;
+
+    --sp_top-bar-gradient-top-color: var(--royalblue);
+    --sp_top-bar-gradient-bottom-color: var(--royalblue);
+    
+    --sp_top-bar-link-color: var(--yellow);
+    --sp_top-bar-link-hover-color: var(--royalblue);
+    --sp_top-bar-link-hover-background: var(--yellow);
+
+    --sp_dropdown-link-color: var(--royalblue);
+    --sp_dropdown-link-hover-color: var(--yellow);
+    --sp_dropdown-link-background: var(--yellow);
+    --sp_dropdown-link-hover-background: var(--royalblue);
+    --sp_dropdown-link-border: none;
+
+    --sp_hovertip-background: var(--royalblue);
+    --sp_hovertip-border: 0.2em dotted var(--navyblue);
+
+    --sp_rate-module-background: var(--royalblue);
+    --sp_rate-module-text-color: var(--yellow);
+    --sp_rate-module-button-color: var(--yellow);
+    --sp_rate-module-button-background: var(--royalblue);
+    --sp_rate-module-sub-color: var(--yellow);
+    --sp_rate-module-button-hover-color: var(--navyblue);
+    --sp_rate-module-button-hover-background: var(--yellow);
+
+    --sp_tab-text-color: var(--yellow);
+    --sp_tab-background: var(--royalblue);
+    --sp_tab-border-color: var(--yellow);
+    --sp_tab-hover-text-color: var(--yellow);
+    --sp_tab-hover-background: var(--navyblue);
+    --sp_tab-hover-border-color: var(--yellow);
+    --sp_tab-selected-text-color: var(--royalblue);
+    --sp_tab-selected-background: var(--yellow);
+    --sp_tab-selected-border-color: var(--yellow);
+}
+
+/* From the top! */
+
+#login-status {
+    padding-right: 12px;
+    font-family: var(--zolm);
+    font-size: 16px;
+    color: var(--grey);
+}
+#login-status a:hover {
+    text-decoration-style: dotted;
+    text-underline-offset: 5px;
+}
+#login-status a, #login-status ul a {
+    color: var(--yellow);
+}
+
+/* Pop-up page. */
+
+.owindow {
+    background-color: var(--royalblue);
+    border: none;
+}
+.owindow .title {
+    cursor: auto;
+    background-color: var(--trans);
+    border-bottom: 0.2em solid var(--navyblue);
+    text-align: right;
+    font-family: var(--zolm);
+    padding: 1em;
+    text-transform: capitalize;
+}
+.owindow img {
+    background-color: var(--trans) !important;
+    padding: 0 !important;
+    border: var(--doubleking);
+    margin-right: 1em;
+}
+.owindow td img {
+    display: none;
+}
+.owindow .button-bar a {
+    border-color: var(--navyblue);
+    border-width: 0.2em;
+    background-color: var(--royalblue);
+    color: var(--grey);
+}
+.owindow .button-bar a:hover {
+    background-color: var(--navyblue);
+}
+
+/* Account and search buttons. */
+
+#account-options {
+    margin-top: 3px;
+    margin-right: 12px;
+    text-align: center;
+    border: none;
+    border-color: var(--trans);
+    background-color: var(--yellow);
+    width: fit-content;
+}
+#account-topbutton {
+    font-size: 80%;
+    border: none;
+    margin-left: 0;
+    transition: var(--timer);
+}
+#account-topbutton:hover {
+    color: var(--royalpurple);
+}
+#account-options li a {
+    color: var(--yellow);
+    background-color: var(--royalblue);
+    text-transform: capitalize;
+    transition: var(--timer);
+}
+#account-options li a:hover {
+    color: var(--royalblue);
+    background: var(--yellow);
+    text-decoration: none;
+}
+#search-top-box {
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    padding: 8px 12px 0 0;
+    font-family: var(--zolm);
+}
+#search-top-box-form input[type=submit] {
+    background-color: var(--yellow);
+    background-image: none;
+    color: var(--navyblue);
+    border: 0.15em dotted var(--yellow);
+    box-shadow: none;
+    border-radius: 0;
+    transition: var(--timer);
+}
+#search-top-box-form input[type=submit]:hover {
+    background-color: var(--navyblue);
+    border: 0.15em dotted var(--yellow);
+    background-image: none;
+    color: var(--yellow);
+    box-shadow: none;
+}
+
+/* Header. */
+
+#header {
+grid-template-areas:
+    ". . login login login"
+    ". . . . search"
+    "h1 h1 h1 h1 h1"
+    "h2 h2 h2 h2 h2"
+    ". . . . ."
+    "top-bar top-bar top-bar top-bar top-bar";
+    grid-template-columns: repeat(5, 1fr);
+    background-image: linear-gradient(10deg, var(--royalblue), var(--navyblue));
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+}
+#header h1, #header h2 {
+    padding-inline-start: 0;
+    text-align: center;
+    position: relative;
+}
+#header h1::before {
+    position: absolute;
+    content: "";
+    background-color: black;
+    clip-path: var(--diamond);
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    height: 10em;
+    width: 10em;
+}
+#header h1 a::before {
+    font-family: var(--stix);
+    background-image: var(--gold);
+    color: var(--trans);
+    background-clip: text;
+    text-shadow: none;
+    position: relative;
+    z-index: 5;
+}
+#header h2::before, #header h1::after {
+    display: none;
+}
+
+/* Top bar. */
+
+#top-bar, #footer {
+    font-family: var(--teac);
+    max-width: 100%;
+    background-color: var(--royalblue);
+    border-image: var(--gold);
+    border-image-slice: 1;
+    border-width: 0.2em;
+    border-style: solid;
+    border-left: 0px;
+    border-right: 0px;
+}
+#top-bar ul li {
+    flex-grow: 1;
+}
+#top-bar ul li a {
+    transition: var(--timer);
+}
+#top-bar div[class*="top-bar"] > ul {
+    justify-content: center;
+}
+#top-bar ul li ul {
+    border-width: 0 0;
+    box-shadow: 0 0.5em 1em -0.5em black;
+    border-bottom: 0.2em solid var(--yellow);
+}
+#top-bar :is(.top-bar, .mobile-top-bar) ul li ul li a {
+    line-height: 2;
+    text-align: center;
+}
+
+/* Side bar and side bar button. */
+
+#top-bar .open-menu a {
+    border: 0.07em dotted var(--yellow);
+    border-radius: 0;
+    background-color: var(--yellow);
+    color: var(--navyblue);
+    transition: var(--timer);
+}
+#top-bar .open-menu a:hover {
+    background-color: var(--navyblue);
+    color: var(--yellow);
+}
+#side-bar {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#interwiki .heading, #side-bar .heading {
+    color: mintcream;
+    border-bottom: dotted 3px mintcream;
+}
+#side-bar .side-block.media, #side-bar .side-block.resources, #side-bar .side-block, #interwiki .side-block {
+    background-color: var(--navyblue);
+    border-radius: 0;
+    box-shadow: none;
+    border: solid 1px var(--royalblue);
+}
+
+/* Body content. */
+
+body, html {
+    color: var(--grey);
+    background-color: var(--royalblue);
+    font-family: var(--robo);
+}
+#container {
+    background-image:
+        linear-gradient(140deg, var(--trans) 50.9vw, var(--navyblue) 50.9vw 51vw, var(--trans) 51vw),
+        linear-gradient(195deg, var(--trans) 50.9vw, var(--navyblue) 50.9vw 51vw, var(--trans) 51vw),
+        linear-gradient(113deg, var(--trans) 50.9vw, var(--navyblue) 50.9vw 51vw, var(--trans) 51vw),
+        linear-gradient(34deg, var(--trans) 55.9vw, var(--navyblue) 55.9vw 56vw, var(--trans) 56vw),
+        linear-gradient(-30deg, var(--trans) 55.9vw, var(--navyblue) 55.9vw 56vw, var(--trans) 56vw);
+}
+#page-title, .meta-title {
+    font-family: var(--stix);
+    font-weight: bold;
+    background-image: var(--gold);
+    color: var(--trans);
+    background-clip: text;
+    font-size: clamp(1.5rem, 0.786rem + 1.905vw, 2.5rem);
+    border-color: var(--trans);
+    margin: auto;
+    width: fit-content;
+}
+#breadcrumbs {
+    margin: 1em 0em 1em;
+}
+.preview-message {
+    color: black;
+    background-color: var(--royalblue);
+    border: solid 1px var(--yellow);
+}
+
+/* Stuff you make. */
+
+blockquote, div.blockquote {
+    background-image: linear-gradient(10deg, var(--royalblue), var(--navyblue));
+    border-image: var(--gold);
+    border-image-slice: 1;
+    border-width: 0.2em;
+    border-style: solid;
+}
+div.page-rate-widget-box, .page-rate-widget-box {
+    box-shadow: none;
+    border-radius: 0;
+    border-bottom: dotted 0.2em var(--yellow);
+    text-transform: capitalize;
+}
+div.rate-box-with-credit-button .page-rate-widget-box {
+    border-radius: 0;
+}
+div.page-rate-widget-box .rate-points {
+    padding: 0 .675em 0 0;
+}
+div.page-rate-widget-box .cancel a {
+    padding: 0 0 0 5px;
+}
+.modalbox, div.modalbox {
+    background-color: var(--royalblue);
+    background: var(--royalblue);
+}
+.creditButton p a:hover {
+    background: var(--yellow);
+}
+div.creditButton p a {
+    border-inline-start: none;
+    margin-left: 4px;
+}
+table.wiki-content-table th {
+    border: 0.2em solid var(--yellow);
+    background-color: var(--navyblue);
+}
+table.wiki-content-table td {
+    border: 0.2em solid var(--yellow);
+    background-color: var(--royalblue);
+}
+.scp-image-block .scp-image-caption {
+    color: black;
+}
+hr {
+    border-image:
+        linear-gradient(90deg, var(--yellow) 40%,
+        var(--trans) 40% 42%, var(--yellow) 42% 44%,
+        var(--trans) 44% 46%, var(--yellow) 46% 48%,
+        var(--trans) 48% 50%, var(--yellow) 50% 52%,
+        var(--trans) 52% 54%, var(--yellow) 54% 56%,
+        var(--trans) 56% 58%, var(--yellow) 58% 60%,
+        var(--trans) 60% 62%, var(--yellow) 62% 100%) 1;
+    border-width: 2px;
+    border-style: solid;
+    height: 0;
+    background: var(--trans);
+}
+a, a.newpage, a:visited, #interwiki a, #side-bar a {
+    color: var(--yellow);
+    transition: var(--timer);
+}
+a:hover, a:visited:hover, #interwiki a:hover, #side-bar a:hover {
+    color: var(--yellow);
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 5px;
+}
+#toc {
+    background-color: var(--navyblue);
+    border: none;
+    border-bottom: 0.2em dotted var(--yellow);
+}
+#toc a:hover {
+    background-color: var(--yellow);
+    color: var(--royalblue);
+    text-decoration: none;
+}
+#toc #toc-action-bar {
+    text-align: center;
+}
+#toc-list div:before {
+    background-color: var(--yellow);
+    width: 0.7rem;
+    height: 0.7rem;
+    content: "";
+    display: inline-block;
+    margin-right: 0.5em;
+    clip-path: var(--diamond);
+}
+h1, h2, h3, h4, h5 {
+    font-family: var(--zolm);
+    color: var(--yellow);
+}
+h1::before, h2::before, h3::before, h4::before, h5::before, h1::after, h2::after, h3::after, h4::after, h5::after {
+    background-color: var(--yellow);
+    width: 1rem;
+    height: 1rem;
+    content: "";
+    display: inline-block;
+    margin-right: 0.2em;
+    clip-path: var(--diamond);
+}
+h1::before, h2::before, h3::before, h4::before, h5::before {
+    margin-right: 0.2em;
+}
+h1::after, h2::after, h3::after, h4::after, h5::after {
+    margin-left: 0.2em;
+}
+.yui-navset .yui-nav {
+    border-width: 0;
+}
+.yui-navset .yui-content {
+    background-color: var(--royalblue);
+}
+
+/* Custom divs. */
+
+.ornament1, .ornament2, .ornament3 {
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+.ornament1 {
+    width: 80px;
+    height: 57px;
+    background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Ablack-diamond-jp/ornamenta.png);
+}
+.ornament2 {
+    width: 72px;
+    height: 64px;
+    background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Ablack-diamond-jp/ornamentb.png);
+}
+.ornament3 {
+    width: 50px;
+    height: 50px;
+    background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Ablack-diamond-jp/ornamentc.png);
+}
+
+/* Bottom of page and editor. */
+
+#lock-info {
+    color: black;
+}
+#license-area {
+    color: white;
+}
+[[/code]]
+[[/collapsible]]
+
+[[include :scp-jp:component:license-box-backend
+|author=Fish^12]]
+
+> **ファイル名:** ornamenta.png
+> **元のファイル名:** TugsC Ornament Gold.png
+> **作者:** 不明（アンティークの装飾画）
+> **ライセンス:** CC0 1.0
+> **出典:** [[[https://commons.m.wikimedia.org/wiki/File:TugsC_Ornament_Gold.png|WIKIMEDIA COMMONS]]]
+
+> **ファイル名:** ornamentb.png
+> **元のファイル名:** Fence Ornament Gold D.png
+> **作者:** 不明（壁や柵のアンティーク装飾）
+> **ライセンス:** CC0 1.0
+> **出典:** [[[https://commons.m.wikimedia.org/wiki/File:Fence_Ornament_Gold_D.png|WIKIMEDIA COMMONS]]]
+
+> **ファイル名:** ornamentc.png
+> **元のファイル名:** FenceW Ornament Gold U.png
+> **作者:** 不明（壁や柵のアンティーク装飾）
+> **ライセンス:** CC0 1.0
+> **出典:** [[[https://commons.m.wikimedia.org/wiki/File:FenceW_Ornament_Gold_U.png|WIKIMEDIA COMMONS]]]
+
+[[include :scp-jp:component:license-box-end]]
+
+[[/iftags]]

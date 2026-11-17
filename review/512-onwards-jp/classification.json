@@ -1,0 +1,2975 @@
+{
+ "tool": "classify_hunks.py",
+ "classifier_version": "0.1.0",
+ "signature_table_version": "2026-11-17.1",
+ "theme": {
+  "dir": "512-onwards-jp",
+  "cand_fullname": "theme:512-onwards-jp",
+  "orig_fullname": "theme:512-onwards",
+  "wiki": "scp-wiki",
+  "revision": "10",
+  "kind": "K5b-3",
+  "verdict": "PASS",
+  "original_file": "512-onwards-jp/original.txt",
+  "candidate_file": "512-onwards-jp/candidate.txt",
+  "original_sha256": "f231a50fc40d3290b44090a5828033d2248c11f5faf795459a2d06dfc2e427bd",
+  "candidate_sha256": "bb0714240d769dcc00be675f9e1db888c2cfa5f526d7bc0654ead4f81e218aca",
+  "original_lines": 496,
+  "candidate_lines": 1356
+ },
+ "topology": {
+  "original_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     1,
+     6
+    ],
+    "lines": 5
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     219,
+     486
+    ],
+    "lines": 267
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     493,
+     496
+    ],
+    "lines": 3
+   }
+  ],
+  "candidate_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     24,
+     1354
+    ],
+    "lines": 1330
+   }
+  ],
+  "moves": [
+   {
+    "from_kind": "code-css",
+    "to_kind": "module-css",
+    "orig_range": [
+     219,
+     486
+    ],
+    "cand_range": [
+     24,
+     1354
+    ],
+    "similarity": 0.991,
+    "basis": "content"
+   },
+   {
+    "from_kind": "external-own-delivery",
+    "to_kind": "module-css",
+    "orig_range": null,
+    "cand_range": [
+     24,
+     1354
+    ],
+    "similarity": null,
+    "basis": "candidate-side",
+    "caveat": "companion body unavailable; candidate-side only"
+   }
+  ],
+  "external_own_delivery": true
+ },
+ "blocks": [
+  {
+   "id": "B1",
+   "orig_range": [
+    0,
+    6
+   ],
+   "cand_range": [
+    0,
+    4
+   ],
+   "orig_lines": "1-6",
+   "cand_lines": "1-4",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "DELIVERY-HOST",
+    "DRAFT-HOST",
+    "IFTAGS",
+    "SELF-DELIVERY"
+   ],
+   "primary": "DELIVERY-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "IFTAGS": "A",
+    "DELIVERY-HOST": "A",
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "IFTAGS": {
+     "orig": [
+      [
+       0,
+       1
+      ]
+     ],
+     "cand": []
+    },
+    "DELIVERY-HOST": {
+     "orig": [
+      [
+       2,
+       5
+      ]
+     ],
+     "cand": [
+      [
+       2,
+       3
+      ]
+     ]
+    },
+    "SELF-DELIVERY": {
+     "orig": [],
+     "cand": [
+      [
+       2,
+       3
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       2,
+       3
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [
+    "BASE-DELIVERY/CROSS-IMPORT? theme:basalt (include graph needed to decide base vs cross)"
+   ],
+   "first_removed": "[[iftags +theme]]",
+   "first_added": "[[include :scp-jp:component:interwiki-style"
+  },
+  {
+   "id": "B2",
+   "orig_range": [
+    7,
+    9
+   ],
+   "cand_range": [
+    5,
+    6
+   ],
+   "orig_lines": "8-9",
+   "cand_lines": "6-6",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "BARE-RATE-DEL",
+    "IFTAGS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "BARE-RATE-DEL",
+   "primary_section": 1,
+   "label_prec": {
+    "BARE-RATE-DEL": "B",
+    "IFTAGS": "A",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "BARE-RATE-DEL": {
+     "orig": [
+      [
+       8,
+       9
+      ]
+     ]
+    },
+    "IFTAGS": {
+     "orig": [],
+     "cand": [
+      [
+       5,
+       6
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[=]]",
+   "first_added": "[[iftags +テーマ]]"
+  },
+  {
+   "id": "B3",
+   "orig_range": [
+    10,
+    13
+   ],
+   "cand_range": [
+    7,
+    17
+   ],
+   "orig_lines": "11-13",
+   "cand_lines": "8-17",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "CREDIT-PREVIEW",
+    "CREDIT-PROSE",
+    "INFO-DEL",
+    "TASL-FIELDS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "CREDIT-PREVIEW",
+   "primary_section": 1,
+   "label_prec": {
+    "CREDIT-PREVIEW": "A",
+    "TASL-FIELDS": "A",
+    "INFO-DEL": "A",
+    "TRANS-UNANCHORED": "C",
+    "CREDIT-PROSE": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "CREDIT-PREVIEW": {
+     "cand": [
+      [
+       7,
+       8
+      ],
+      [
+       16,
+       17
+      ]
+     ]
+    },
+    "TASL-FIELDS": {
+     "cand": [
+      [
+       8,
+       16
+      ]
+     ]
+    },
+    "INFO-DEL": {
+     "orig": [
+      [
+       10,
+       11
+      ],
+      [
+       12,
+       13
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {},
+    "CREDIT-PROSE": {}
+   },
+   "notes": [
+    "script delta without the anchor majority",
+    "position: inside the credit include pair"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[include :scp-wiki:info:start]]",
+   "first_added": "[[include :scp-jp:credit:start-preview]]"
+  },
+  {
+   "id": "B4",
+   "orig_range": [
+    14,
+    16
+   ],
+   "cand_range": [
+    18,
+    19
+   ],
+   "orig_lines": "15-16",
+   "cand_lines": "19-19",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "------",
+   "first_added": "Basaltを基盤に、512以降の記事群向けの赤いアクセントとヘッダーを加えたテーマです。"
+  },
+  {
+   "id": "B5",
+   "orig_range": [
+    17,
+    21
+   ],
+   "cand_range": [
+    20,
+    21
+   ],
+   "orig_lines": "18-21",
+   "cand_lines": "21-21",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "COMPONENT-SWAP",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "COMPONENT-SWAP",
+   "primary_section": 2,
+   "label_prec": {
+    "COMPONENT-SWAP": "B",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMPONENT-SWAP": {
+     "orig": [
+      [
+       18,
+       20
+      ]
+     ],
+     "cand": [
+      [
+       20,
+       21
+      ],
+      [
+       20,
+       21
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[size 110%]]**On any page:**[[/size]]",
+   "first_added": "**使い方:** @@[[include theme:512-onwards-jp]]@@"
+  },
+  {
+   "id": "B6",
+   "orig_range": [
+    22,
+    23
+   ],
+   "cand_range": [
+    22,
+    23
+   ],
+   "orig_lines": "23-23",
+   "cand_lines": "23-23",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "This is the Site-512 Theme by [[*user WaylandLaurencePan]], dubbed the 512 Onwards Theme. It is a [[[theme:basalt|Basalt]]]-based theme for [[[secure-facility-dossier-site-512|Site-512]]] and associated articles; in particular, the series [[[https://scp-wiki.wikidot.com/512-means-onwards-hub|512 Means Onwards]]] (did not exist as of writing; now exists as of reading). It shamelessly grabs CSS from [[[SCP-9628]]] by [[*user sprawlingstar]] (an incredible article, by the way).",
+   "first_added": "**基盤:** Basalt（インライン）"
+  },
+  {
+   "id": "B7",
+   "orig_range": [
+    24,
+    25
+   ],
+   "cand_range": [
+    24,
+    25
+   ],
+   "orig_lines": "25-25",
+   "cand_lines": "25-25",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       24,
+       25
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "It is wholly shaped by my personal preferences. Especially regarding the presence of ITEM#: in ACS and page titles.",
+   "first_added": "[[module CSS]]"
+  },
+  {
+   "id": "B8",
+   "orig_range": [
+    26,
+    28
+   ],
+   "cand_range": [
+    26,
+    44
+   ],
+   "orig_lines": "27-28",
+   "cand_lines": "27-44",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "JPFONT-LOAD"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "JPFONT-LOAD": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "JPFONT-LOAD": {
+     "cand": [
+      [
+       26,
+       27
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       26,
+       44
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "absence claim needs base subtraction (resolved base)"
+   ],
+   "partial_notes": [],
+   "first_removed": "Yes, it is an incredibly red theme. When your country's flag is dichromatic, there's only so much you can do.",
+   "first_added": "@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');"
+  },
+  {
+   "id": "B9",
+   "orig_range": [
+    29,
+    30
+   ],
+   "cand_range": [
+    45,
+    48
+   ],
+   "orig_lines": "30-30",
+   "cand_lines": "46-48",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       45,
+       48
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "------",
+   "first_added": "/*-----------------*/"
+  },
+  {
+   "id": "B10",
+   "orig_range": [
+    31,
+    32
+   ],
+   "cand_range": [
+    49,
+    50
+   ],
+   "orig_lines": "32-32",
+   "cand_lines": "50-50",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "DRAFT-HOST"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       49,
+       50
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       49,
+       50
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [
+    "BASE-DELIVERY/CROSS-IMPORT? theme:basalt-jp (include graph needed to decide base vs cross)"
+   ],
+   "first_removed": "+ __Settings__",
+   "first_added": "@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Abasalt-jp/1');"
+  },
+  {
+   "id": "B11",
+   "orig_range": [
+    33,
+    34
+   ],
+   "cand_range": [
+    51,
+    52
+   ],
+   "orig_lines": "34-34",
+   "cand_lines": "52-52",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "FONT-IMPORT"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "FONT-IMPORT": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "FONT-IMPORT": {
+     "orig": [],
+     "cand": [
+      [
+       51,
+       52
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       51,
+       52
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "the deciding evidence is the load probe (KB-04)"
+   ],
+   "partial_notes": [],
+   "first_removed": "There are no easy buttons or dials, given this theme's intent to be used solely for Site-512 articles. Typical Basalt variables remain exposed. Modify CSS as needed. Feel free to contact me if you need help.",
+   "first_added": "@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');"
+  },
+  {
+   "id": "B12",
+   "orig_range": [
+    35,
+    44
+   ],
+   "cand_range": [
+    53,
+    54
+   ],
+   "orig_lines": "36-44",
+   "cand_lines": "54-54",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       53,
+       54
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "A few new variables have been added:",
+   "first_added": ":root {"
+  },
+  {
+   "id": "B13",
+   "orig_range": [
+    45,
+    46
+   ],
+   "cand_range": [
+    55,
+    58
+   ],
+   "orig_lines": "46-46",
+   "cand_lines": "56-58",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       55,
+       58
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "------",
+   "first_added": "    /*----------------------*/"
+  },
+  {
+   "id": "B14",
+   "orig_range": [
+    47,
+    48
+   ],
+   "cand_range": [
+    59,
+    61
+   ],
+   "orig_lines": "48-48",
+   "cand_lines": "60-61",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       59,
+       61
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "+ __Elements__",
+   "first_added": "    --header-logo: var(--logo);"
+  },
+  {
+   "id": "B15",
+   "orig_range": [
+    49,
+    55
+   ],
+   "cand_range": [
+    62,
+    66
+   ],
+   "orig_lines": "50-55",
+   "cand_lines": "63-66",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "HEADERVAR"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "HEADERVAR": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "HEADERVAR": {
+     "orig": [],
+     "cand": [
+      [
+       62,
+       64
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       62,
+       66
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "+* Header 1",
+   "first_added": "    --header-title: var(--title);"
+  },
+  {
+   "id": "B16",
+   "orig_range": [
+    56,
+    67
+   ],
+   "cand_range": [
+    67,
+    74
+   ],
+   "orig_lines": "57-67",
+   "cand_lines": "68-74",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "EXHIBIT-RESTRUCTURE"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "EXHIBIT-RESTRUCTURE": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "EXHIBIT-RESTRUCTURE": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       67,
+       74
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[tabview]]",
+   "first_added": "    --main-content-width: 60rem;"
+  },
+  {
+   "id": "B17",
+   "orig_range": [
+    68,
+    69
+   ],
+   "cand_range": [
+    75,
+    77
+   ],
+   "orig_lines": "69-69",
+   "cand_lines": "76-77",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       75,
+       77
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "You can use footnotes too.[[footnote]]etc...[[/footnote]]",
+   "first_added": "    --header-font-primary: var(--UI-font-primary);"
+  },
+  {
+   "id": "B18",
+   "orig_range": [
+    70,
+    73
+   ],
+   "cand_range": [
+    78,
+    88
+   ],
+   "orig_lines": "71-73",
+   "cand_lines": "79-88",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       78,
+       88
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[collapsible]]",
+   "first_added": "    --basalt-overtone: 10, 10, 11;"
+  },
+  {
+   "id": "B19",
+   "orig_range": [
+    74,
+    75
+   ],
+   "cand_range": [
+    89,
+    98
+   ],
+   "orig_lines": "75-75",
+   "cand_lines": "90-98",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       89,
+       98
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "------",
+   "first_added": "    --title-border-color: var(--basalt-overtone);"
+  },
+  {
+   "id": "B20",
+   "orig_range": [
+    76,
+    77
+   ],
+   "cand_range": [
+    99,
+    105
+   ],
+   "orig_lines": "77-77",
+   "cand_lines": "100-105",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       99,
+       105
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "+ __Custom Divs__",
+   "first_added": "    --side-bar-heading-background-color: 0, 0, 2, 0.07;"
+  },
+  {
+   "id": "B21",
+   "orig_range": [
+    78,
+    79
+   ],
+   "cand_range": [
+    106,
+    109
+   ],
+   "orig_lines": "79-79",
+   "cand_lines": "107-109",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       106,
+       109
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "The typical Basalt divs are available under this theme:",
+   "first_added": "    /*---------------------*/"
+  },
+  {
+   "id": "B22",
+   "orig_range": [
+    80,
+    81
+   ],
+   "cand_range": [
+    110,
+    117
+   ],
+   "orig_lines": "81-81",
+   "cand_lines": "111-117",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       110,
+       117
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[div class=\"blockquote\"]]",
+   "first_added": "    --basalt-UI-background-color: var(--basalt-secondary-color);"
+  },
+  {
+   "id": "B23",
+   "orig_range": [
+    82,
+    83
+   ],
+   "cand_range": [
+    118,
+    129
+   ],
+   "orig_lines": "83-83",
+   "cand_lines": "119-129",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "HEADERVAR"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "HEADERVAR": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "HEADERVAR": {
+     "orig": [],
+     "cand": [
+      [
+       119,
+       121
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       118,
+       129
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "= {{@@[[div class=\"blockquote\"]]@@}}",
+   "first_added": "    --basalt-UI-text-color: var(--basalt-main-text-color);"
+  },
+  {
+   "id": "B24",
+   "orig_range": [
+    84,
+    85
+   ],
+   "cand_range": [
+    130,
+    138
+   ],
+   "orig_lines": "85-85",
+   "cand_lines": "131-138",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       130,
+       138
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[/div]]",
+   "first_added": "    --ACS-font: var(--header-font);"
+  },
+  {
+   "id": "B25",
+   "orig_range": [
+    86,
+    87
+   ],
+   "cand_range": [
+    139,
+    141
+   ],
+   "orig_lines": "87-87",
+   "cand_lines": "140-141",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       139,
+       141
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[div class=\"jotting\"]]",
+   "first_added": "    --header-drop-shadow-opacity: 0.1;"
+  },
+  {
+   "id": "B26",
+   "orig_range": [
+    88,
+    89
+   ],
+   "cand_range": [
+    142,
+    145
+   ],
+   "orig_lines": "89-89",
+   "cand_lines": "143-145",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       142,
+       145
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "= {{@@[[div class=\"jotting\"]]@@}}",
+   "first_added": "    /*-----------------------*/"
+  },
+  {
+   "id": "B27",
+   "orig_range": [
+    90,
+    91
+   ],
+   "cand_range": [
+    146,
+    150
+   ],
+   "orig_lines": "91-91",
+   "cand_lines": "147-150",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       146,
+       150
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[/div]]",
+   "first_added": "    /* Info Bar */"
+  },
+  {
+   "id": "B28",
+   "orig_range": [
+    92,
+    93
+   ],
+   "cand_range": [
+    151,
+    154
+   ],
+   "orig_lines": "93-93",
+   "cand_lines": "152-154",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       151,
+       154
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[div class=\"modal\"]]",
+   "first_added": "    /* BetterFootnotes */"
+  },
+  {
+   "id": "B29",
+   "orig_range": [
+    94,
+    95
+   ],
+   "cand_range": [
+    155,
+    162
+   ],
+   "orig_lines": "95-95",
+   "cand_lines": "156-162",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       155,
+       162
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "= {{@@[[div class=\"modal\"]]@@}}",
+   "first_added": "    /* ACS */"
+  },
+  {
+   "id": "B30",
+   "orig_range": [
+    96,
+    97
+   ],
+   "cand_range": [
+    163,
+    164
+   ],
+   "orig_lines": "97-97",
+   "cand_lines": "164-164",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       163,
+       164
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[/div]]",
+   "first_added": "}"
+  },
+  {
+   "id": "B31",
+   "orig_range": [
+    98,
+    99
+   ],
+   "cand_range": [
+    165,
+    168
+   ],
+   "orig_lines": "99-99",
+   "cand_lines": "166-168",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       165,
+       168
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[div class=\"smallmodal\"]]",
+   "first_added": "/*------------------------*/"
+  },
+  {
+   "id": "B32",
+   "orig_range": [
+    100,
+    101
+   ],
+   "cand_range": [
+    169,
+    173
+   ],
+   "orig_lines": "101-101",
+   "cand_lines": "170-173",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       169,
+       173
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "= {{@@[[div class=\"smallmodal\"]]@@}}",
+   "first_added": ":is(div.blockquote, blockquote) {"
+  },
+  {
+   "id": "B33",
+   "orig_range": [
+    102,
+    103
+   ],
+   "cand_range": [
+    174,
+    177
+   ],
+   "orig_lines": "103-103",
+   "cand_lines": "175-177",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       174,
+       177
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[/div]]",
+   "first_added": ":is(div.blockquote, blockquote):has(div.floatbox) {"
+  },
+  {
+   "id": "B34",
+   "orig_range": [
+    104,
+    105
+   ],
+   "cand_range": [
+    178,
+    181
+   ],
+   "orig_lines": "105-105",
+   "cand_lines": "179-181",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       178,
+       181
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[div class=\"papernote\"]]",
+   "first_added": "#page-content div.notation {"
+  },
+  {
+   "id": "B35",
+   "orig_range": [
+    106,
+    107
+   ],
+   "cand_range": [
+    182,
+    193
+   ],
+   "orig_lines": "107-107",
+   "cand_lines": "183-193",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       182,
+       193
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "= {{@@[[div class=\"papernote\"]]@@}}",
+   "first_added": "div.notation {"
+  },
+  {
+   "id": "B36",
+   "orig_range": [
+    108,
+    109
+   ],
+   "cand_range": [
+    194,
+    197
+   ],
+   "orig_lines": "109-109",
+   "cand_lines": "195-197",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       194,
+       197
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[/div]]",
+   "first_added": "#page-content div.modal {"
+  },
+  {
+   "id": "B37",
+   "orig_range": [
+    110,
+    111
+   ],
+   "cand_range": [
+    198,
+    208
+   ],
+   "orig_lines": "111-111",
+   "cand_lines": "199-208",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       198,
+       208
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[div class=\"raisa_memo\"]]",
+   "first_added": "div.modal {"
+  },
+  {
+   "id": "B38",
+   "orig_range": [
+    112,
+    113
+   ],
+   "cand_range": [
+    209,
+    212
+   ],
+   "orig_lines": "113-113",
+   "cand_lines": "210-212",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       209,
+       212
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "= {{@@[[div class=\"raisa_memo\"]]@@}}",
+   "first_added": "#page-content div.smallmodal {"
+  },
+  {
+   "id": "B39",
+   "orig_range": [
+    114,
+    115
+   ],
+   "cand_range": [
+    213,
+    223
+   ],
+   "orig_lines": "115-115",
+   "cand_lines": "214-223",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       213,
+       223
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[/div]]",
+   "first_added": "div.smallmodal {"
+  },
+  {
+   "id": "B40",
+   "orig_range": [
+    116,
+    117
+   ],
+   "cand_range": [
+    224,
+    227
+   ],
+   "orig_lines": "117-117",
+   "cand_lines": "225-227",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       224,
+       227
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "In addition, some new memos have been added:",
+   "first_added": "#page-content div:is(.jotting, .transcript) {"
+  },
+  {
+   "id": "B41",
+   "orig_range": [
+    118,
+    119
+   ],
+   "cand_range": [
+    228,
+    238
+   ],
+   "orig_lines": "119-119",
+   "cand_lines": "229-238",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       228,
+       238
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[div class=\"hq_memo\"]]",
+   "first_added": "div:is(.jotting, .transcript) {"
+  },
+  {
+   "id": "B42",
+   "orig_range": [
+    120,
+    121
+   ],
+   "cand_range": [
+    239,
+    242
+   ],
+   "orig_lines": "121-121",
+   "cand_lines": "240-242",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       239,
+       242
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "= {{@@[[div class=\"hq_memo\"]]@@}}",
+   "first_added": "#page-content div.papernote {"
+  },
+  {
+   "id": "B43",
+   "orig_range": [
+    122,
+    123
+   ],
+   "cand_range": [
+    243,
+    251
+   ],
+   "orig_lines": "123-123",
+   "cand_lines": "244-251",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       243,
+       251
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[/div]]",
+   "first_added": "div.papernote {"
+  },
+  {
+   "id": "B44",
+   "orig_range": [
+    124,
+    125
+   ],
+   "cand_range": [
+    252,
+    255
+   ],
+   "orig_lines": "125-125",
+   "cand_lines": "253-255",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       252,
+       255
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[div class=\"insp_memo\"]]",
+   "first_added": "#page-content div:is(.document, .darkdocument) {"
+  },
+  {
+   "id": "B45",
+   "orig_range": [
+    126,
+    127
+   ],
+   "cand_range": [
+    256,
+    264
+   ],
+   "orig_lines": "127-127",
+   "cand_lines": "257-264",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       256,
+       264
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "= {{@@[[div class=\"insp_memo\"]]@@}}",
+   "first_added": "div:is(.document, .darkdocument) {"
+  },
+  {
+   "id": "B46",
+   "orig_range": [
+    128,
+    129
+   ],
+   "cand_range": [
+    265,
+    270
+   ],
+   "orig_lines": "129-129",
+   "cand_lines": "266-270",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       265,
+       270
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[/div]]",
+   "first_added": "div.document {"
+  },
+  {
+   "id": "B47",
+   "orig_range": [
+    130,
+    131
+   ],
+   "cand_range": [
+    271,
+    276
+   ],
+   "orig_lines": "131-131",
+   "cand_lines": "272-276",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       271,
+       276
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[div class=\"tnn_memo\"]]",
+   "first_added": "div.darkdocument {"
+  },
+  {
+   "id": "B48",
+   "orig_range": [
+    132,
+    133
+   ],
+   "cand_range": [
+    277,
+    285
+   ],
+   "orig_lines": "133-133",
+   "cand_lines": "278-285",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       277,
+       285
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "= {{@@[[div class=\"tnn_memo\"]]@@}}",
+   "first_added": "div:is(.document, .darkdocument)::before,"
+  },
+  {
+   "id": "B49",
+   "orig_range": [
+    134,
+    135
+   ],
+   "cand_range": [
+    286,
+    489
+   ],
+   "orig_lines": "135-135",
+   "cand_lines": "287-489",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       286,
+       489
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[/div]]",
+   "first_added": "div:is(.document, .darkdocument)::before {"
+  },
+  {
+   "id": "B50",
+   "orig_range": [
+    137,
+    138
+   ],
+   "cand_range": [
+    491,
+    496
+   ],
+   "orig_lines": "138-138",
+   "cand_lines": "492-496",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       491,
+       496
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[div class=\"tnl_memo\"]]",
+   "first_added": "body,"
+  },
+  {
+   "id": "B51",
+   "orig_range": [
+    139,
+    140
+   ],
+   "cand_range": [
+    497,
+    498
+   ],
+   "orig_lines": "140-140",
+   "cand_lines": "498-498",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       497,
+       498
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "= {{@@[[div class=\"tnl_memo\"]]@@}}",
+   "first_added": "@supports (font-feature-settings: inherit) {"
+  },
+  {
+   "id": "B52",
+   "orig_range": [
+    141,
+    142
+   ],
+   "cand_range": [
+    499,
+    1046
+   ],
+   "orig_lines": "142-142",
+   "cand_lines": "500-1046",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       499,
+       1046
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[/div]]",
+   "first_added": "    *,"
+  },
+  {
+   "id": "B53",
+   "orig_range": [
+    144,
+    145
+   ],
+   "cand_range": [
+    1048,
+    1049
+   ],
+   "orig_lines": "145-145",
+   "cand_lines": "1049-1049",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       1048,
+       1049
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[div class=\"elnr_memo\"]]",
+   "first_added": "@supports (-webkit-touch-callout: none) /* Targets iOS only */ {"
+  },
+  {
+   "id": "B54",
+   "orig_range": [
+    146,
+    147
+   ],
+   "cand_range": [
+    1050,
+    1055
+   ],
+   "orig_lines": "147-147",
+   "cand_lines": "1051-1055",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       1050,
+       1055
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "= {{@@[[div class=\"elnr_memo\"]]@@}}",
+   "first_added": "    :is(#page-content table:not(.form), table.wiki-content-table) {"
+  },
+  {
+   "id": "B55",
+   "orig_range": [
+    148,
+    149
+   ],
+   "cand_range": [
+    1056,
+    1057
+   ],
+   "orig_lines": "149-149",
+   "cand_lines": "1057-1057",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       1056,
+       1057
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[/div]]",
+   "first_added": "}"
+  },
+  {
+   "id": "B56",
+   "orig_range": [
+    150,
+    151
+   ],
+   "cand_range": [
+    1058,
+    1067
+   ],
+   "orig_lines": "151-151",
+   "cand_lines": "1059-1067",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       1058,
+       1067
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[div class=\"cnm_memo\"]]",
+   "first_added": ":is(#page-content table:not(.form), table.wiki-content-table) th {"
+  },
+  {
+   "id": "B57",
+   "orig_range": [
+    152,
+    153
+   ],
+   "cand_range": [
+    1068,
+    1071
+   ],
+   "orig_lines": "153-153",
+   "cand_lines": "1069-1071",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       1068,
+       1071
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "= {{@@[[div class=\"cnm_memo\"]]@@}}",
+   "first_added": ":where(#page-content) table:not(.form), table.wiki-content-table {"
+  },
+  {
+   "id": "B58",
+   "orig_range": [
+    154,
+    155
+   ],
+   "cand_range": [
+    1072,
+    1076
+   ],
+   "orig_lines": "155-155",
+   "cand_lines": "1073-1076",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       1072,
+       1076
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[/div]]",
+   "first_added": "#page-content .quadrants > div {"
+  },
+  {
+   "id": "B59",
+   "orig_range": [
+    156,
+    157
+   ],
+   "cand_range": [
+    1077,
+    1080
+   ],
+   "orig_lines": "157-157",
+   "cand_lines": "1078-1080",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       1077,
+       1080
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[div class=\"ss_memo\"]]",
+   "first_added": ".printuser a {"
+  },
+  {
+   "id": "B60",
+   "orig_range": [
+    158,
+    161
+   ],
+   "cand_range": [
+    1081,
+    1084
+   ],
+   "orig_lines": "159-161",
+   "cand_lines": "1082-1084",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       1081,
+       1084
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "= {{@@[[div class=\"ss_memo\"]]@@}}",
+   "first_added": "/*-------------------------------------------------*/"
+  },
+  {
+   "id": "B61",
+   "orig_range": [
+    163,
+    214
+   ],
+   "cand_range": [
+    1086,
+    1086
+   ],
+   "orig_lines": "164-214",
+   "cand_lines": "at 1087",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[div class=\"hr_memo\"]]",
+   "first_added": ""
+  },
+  {
+   "id": "B62",
+   "orig_range": [
+    216,
+    220
+   ],
+   "cand_range": [
+    1088,
+    1088
+   ],
+   "orig_lines": "217-220",
+   "cand_lines": "at 1089",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "EXHIBIT-RESTRUCTURE"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "EXHIBIT-RESTRUCTURE": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "EXHIBIT-RESTRUCTURE": {},
+    "DELIVERY-MOVE": {
+     "orig": [
+      [
+       216,
+       220
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[collapsible]]",
+   "first_added": ""
+  },
+  {
+   "id": "B63",
+   "orig_range": [
+    310,
+    311
+   ],
+   "cand_range": [
+    1178,
+    1179
+   ],
+   "orig_lines": "311-311",
+   "cand_lines": "1179-1179",
+   "channel_pair": [
+    "code-css",
+    "module-css"
+   ],
+   "labels": [
+    "WS-ONLY"
+   ],
+   "primary": "WS-ONLY",
+   "primary_section": 9,
+   "label_prec": {
+    "WS-ONLY": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "WS-ONLY": {}
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": "    "
+  },
+  {
+   "id": "B64",
+   "orig_range": [
+    325,
+    326
+   ],
+   "cand_range": [
+    1193,
+    1194
+   ],
+   "orig_lines": "326-326",
+   "cand_lines": "1194-1194",
+   "channel_pair": [
+    "code-css",
+    "module-css"
+   ],
+   "labels": [
+    "WS-ONLY"
+   ],
+   "primary": "WS-ONLY",
+   "primary_section": 9,
+   "label_prec": {
+    "WS-ONLY": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "WS-ONLY": {}
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": " "
+  },
+  {
+   "id": "B65",
+   "orig_range": [
+    348,
+    349
+   ],
+   "cand_range": [
+    1216,
+    1217
+   ],
+   "orig_lines": "349-349",
+   "cand_lines": "1217-1217",
+   "channel_pair": [
+    "code-css",
+    "module-css"
+   ],
+   "labels": [
+    "WS-ONLY"
+   ],
+   "primary": "WS-ONLY",
+   "primary_section": 9,
+   "label_prec": {
+    "WS-ONLY": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "WS-ONLY": {}
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": " "
+  },
+  {
+   "id": "B66",
+   "orig_range": [
+    370,
+    371
+   ],
+   "cand_range": [
+    1238,
+    1239
+   ],
+   "orig_lines": "371-371",
+   "cand_lines": "1239-1239",
+   "channel_pair": [
+    "code-css",
+    "module-css"
+   ],
+   "labels": [
+    "WS-ONLY"
+   ],
+   "primary": "WS-ONLY",
+   "primary_section": 9,
+   "label_prec": {
+    "WS-ONLY": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "WS-ONLY": {}
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": "  "
+  },
+  {
+   "id": "B67",
+   "orig_range": [
+    485,
+    490
+   ],
+   "cand_range": [
+    1353,
+    1354
+   ],
+   "orig_lines": "486-490",
+   "cand_lines": "1354-1354",
+   "channel_pair": [
+    "code-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       1353,
+       1354
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[/code]]",
+   "first_added": "[[/module]]"
+  },
+  {
+   "id": "B68",
+   "orig_range": [
+    492,
+    496
+   ],
+   "cand_range": [
+    1356,
+    1356
+   ],
+   "orig_lines": "493-496",
+   "cand_lines": "at 1357",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "SELF-DELIVERY"
+   ],
+   "primary": "SELF-DELIVERY",
+   "primary_section": 3,
+   "label_prec": {
+    "SELF-DELIVERY": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "SELF-DELIVERY": {
+     "orig": [
+      [
+       494,
+       495
+      ]
+     ],
+     "cand": []
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": ""
+  }
+ ],
+ "derived_presence": {},
+ "summary": {
+  "blocks": 68,
+  "specific": 65,
+  "heuristic": 2,
+  "residue": 1,
+  "skipped": 0,
+  "reindent_blocks": 0,
+  "label_counts": {
+   "DELIVERY-HOST": 1,
+   "DRAFT-HOST": 2,
+   "IFTAGS": 2,
+   "SELF-DELIVERY": 2,
+   "BARE-RATE-DEL": 1,
+   "TRANS-UNANCHORED": 5,
+   "CREDIT-PREVIEW": 1,
+   "CREDIT-PROSE": 1,
+   "INFO-DEL": 1,
+   "TASL-FIELDS": 1,
+   "COMPONENT-SWAP": 1,
+   "DELIVERY-MOVE": 56,
+   "JPFONT-LOAD": 1,
+   "FONT-IMPORT": 1,
+   "HEADERVAR": 2,
+   "EXHIBIT-RESTRUCTURE": 2,
+   "WS-ONLY": 4
+  }
+ },
+ "residue": [
+  "B61"
+ ],
+ "skeleton": {
+  "sha256": "6b36b9b7542a072fcac1148f5c4b313ab619c939971f8f3759817767804f04be",
+  "status": "written (new)"
+ }
+}
