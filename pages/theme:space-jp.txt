@@ -28,7 +28,7 @@
 
 > {{@@[[include :scp-jp:theme:space]]@@}}
 
-普遍的宇宙テーマは[[[component:sigma-plus|]]]テーマです。
+普遍的宇宙テーマは[[[component:sigma-plus-jp|Sigma+]]]テーマです。
 
 ------
 
@@ -594,6 +594,19 @@ div.modalbox {
     top: 50%;
     transform: translateX(-50%)
              translateY(-50%);
+}
+/* SCP-JP check composition: keep the shared static credit replica in flow when this global .modalbox centering would pin it at viewport centre (KB-13). Same carve-out as theme:cosmos-jp. */
+.credit-static-view .modalcontainer {
+    position: relative !important;
+    top: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    right: auto !important;
+    height: auto !important;
+    margin: 0 auto !important;
+}
+.credit-static-view .modalbox {
+    position: relative !important;
 }
 #u-credit-otherwise .modalbox {
   background-color: rgb(var(--space-void)) !important;
