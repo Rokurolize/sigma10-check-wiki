@@ -3,7 +3,7 @@
 The per-theme review explanations (`review/<theme>/README.md`) cite governing
 authorities constantly: the rulings their fixes follow, the test definitions
 their verdicts were judged under, the register their dispositions come from.
-The six files in this directory are verbatim copies of the frozen campaign
+The seven files in this directory are verbatim copies of the frozen campaign
 records that otherwise live outside this repo, vendored so that every such
 citation resolves inside the repo and can be checked mechanically
 (`review/build_review.py --check` recomputes the hashes below and resolves
@@ -69,6 +69,16 @@ plus the file name.
   of the earlier go-sign determination; section 10 issues the go-sign
   itself. See the reader warnings below before citing either.
 
+### REPORT24.md — RECORD
+
+- SHA-256: `694cb3320012c58745b2e9e89b1a417bab2f1815affee5f6070d6ac24db27bea`
+- Role: the phase-24 audit of the SB3 (scp-jp-sandbox3) and FS
+  (scp-jp-storage) site themes: the capture record (§1), the SB3 and FS
+  adjustment inventories (§2 S1–S11, §3 F1–F8), the per-wiki migration
+  requirements (§4), and the questions only site-admin access can settle
+  (§5). The FS review package's F1–F8 citations resolve here, as will the
+  SB3 package's S-citations when that package is built.
+
 ## Reader warnings
 
 1. **RULINGS #5 is superseded in application.** The frozen text of ruling 5
@@ -96,6 +106,7 @@ always with a locator that resolves to a specific place:
 | Ledger | `LEDGER (b) row <n>` / `LEDGER c<1-4>` / `LEDGER (d)` / `LEDGER (e) item <n>` | `LEDGER (e) item 73` |
 | Supplement | `SUPPLEMENT item <n>` / `SUPPLEMENT (d)` | `SUPPLEMENT item 73` |
 | Completion report | `COMPLETION-REPORT §<n>` | `COMPLETION-REPORT §10` |
+| Phase-24 site-theme audit | `REPORT24 §<n>` / `REPORT24 F<n>` / `REPORT24 S<n>` | `REPORT24 F5` |
 | AGENTS.md | `AGENTS §<n> "<exact heading text>"` | `AGENTS §5 "JP fonts (pattern 7) and font hosts (pattern 5)"` |
 | Patterns | `KB-<nn> @ <commit>` (ID + patterns commit hash; bodies never copied) | `KB-11 @ 0eef991` |
 | Supplement types | `SUPPLEMENT-TYPES T<n>` | `SUPPLEMENT-TYPES T7` |
