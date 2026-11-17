@@ -1,0 +1,452 @@
+[[iftags +theme]]
+
+[[module CSS]]
+@import url("https://nu-scptheme.github.io/Black-Highlighter/stable/styles/normalize.min.css");
+@import url("https://nu-scptheme.github.io/Black-Highlighter/stable/styles/black-highlighter.min.css");
+[[/module]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
+
+[[div style="display: flex; opacity: 60%;"]]
+[[image https://scp-wiki.wdfiles.com/local--files/theme%3Ablack-highlighter-theme/black-highlighter-logo.svg]]
+[[/div]]
+
+----
+
+[[=]]
++ Theme Colors
+[[/=]]
+
+[[include :scp-wiki:component:theme-squares -=-
+| color1-name=Medium Sea Green
+| color1-variable=--dark-accent
+| color1-info=(0, 153, 75)
+| color1-has-light-text=1
+| color2-name=Medium Aquamarine
+| color2-variable=--bright-accent
+| color2-info=(102, 205, 170)
+| color2-has-light-text=1
+| subcolor1-name=Bubbles
+| subcolor1-variable=--white-monochrome
+| subcolor1-info=(231, 254, 255)
+| subcolor2-name=Pakistan Green
+| subcolor2-variable=--medium-accent
+| subcolor2-info=(0, 102, 0)
+]]
+
+----
+
+[[=]]
++ What is This?
+[[/=]]
+
+This is the Vanguard Theme, created by [[*user MisterFrown]] for the [[[no-return-hub|Vanguard]]] organization based on their sub-theme within [[[theme:foxtrot|Foxtrot]]].
+
+Put the following code above any page to use:
+
+> [[include :scp-wiki:theme:black-highlighter-theme]]
+> [[include :scp-wiki:theme:vanguard]]
+
+This theme also has a built-in dark mode. Put the following to use it:
+
+> [[include :scp-wiki:theme:black-highlighter-theme]]
+> [[include :scp-wiki:theme:vanguard
+> @@|dark=--]@@
+> ]]
+
+[[div style="height: 10px"]]
+[[/div]]
+
+As this is a Black Highlighter based theme, you are required to utilize it as well if you wish to use this one. Please consult [https://scp-wiki.wikidot.com/theme:black-highlighter-theme this page] for more information.
+
+----
+
+[[=]]
++ Examples
+[[/=]]
+
+[[div style="height: 10px"]]
+[[/div]]
+
+[[include :scp-wiki:component:image-block name=https://scp-wiki.wdfiles.com/local--files/theme%3Aborealis-constant-theme/street|
+    caption=Here's an image block.|
+     align=right
+]]
+
+[[[misterfrown |Example Link]]][[footnote]] Example Footnote [[/footnote]]
+
+[[div style="height: 10px"]]
+[[/div]]
+
++ Heading Level 1
+
+++ Heading Level 2
+
++++ Heading Level 3
+
+++++ Heading Level 4
+
++++++ Heading Level 5
+
+[[div style="height: 20px"]]
+[[/div]]
+
+[[div class="blockquote"]]
+
+Here's what blockquotes look like.
+
+> And here's a nested one.
+
+[[/div]]
+
+[[div style="height: 10px"]]
+[[/div]]
+
+||~ Table ||~ Example ||
+|| cell-content || cell-content ||
+
+[[div style="height: 10px"]]
+[[/div]]
+
+[[tabview]]
+
+[[tab Example Tab 1]]
+
+test
+
+[[/tab]]
+
+[[tab Example Tab 2]]
+
+test
+
+[[/tab]]
+
+[[tab Example Tab 3]]
+
+test
+
+[[/tab]]
+
+[[/tabview]]
+
+[[div style="height: 10px"]]
+[[/div]]
+
+----
+
+[[=]]
+
++ Divs & Spans
+
+[[/=]]
+
+[[div style="height: 10px"]]
+[[/div]]
+
+[[div class="twosideblock"]]
+
+div class="twosideblock"
+
+[[/div]]
+
+= [[span class="vantitle"]] span class="vantitle" [[/span]]
+
+----
+
+[[=]]
+
++ Source Code
+
+[[div style="height: 10px"]]
+[[/div]]
+
+[[collapsible show="Show Theme Code" hide="Hide Theme Code"]]
+
+[[/=]]
+
+[[<]]
+
+[[code type="css"]]
+
+/* Vanguard Theme by MisterFrown */
+
+/* Fonts */
+
+@import url('https://fonts.bunny.net/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.bunny.net/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap');
+
+/* Main Root Block */
+
+:root {
+
+--theme-base: "black-highlighter";
+--theme-id: "vanguard";
+--theme-name: "Vanguard Theme";
+
+--logo-image: url("https://scp-wiki.wikidot.com/local--files/grigori-karpin-s-author-page/vanguard%20transparent.png");
+--header-title: "ANGUARD";
+--header-subtitle: "SHELTER, NORMALIZE, INFORM";
+--header-h2-font-size: 1.1em;
+--header-font: 'Zilla Slab', serif;
+
+--medium-accent: 0, 102, 0;
+--dark-accent: 0, 153, 75;
+--bright-accent: 102, 205, 170;
+--white-monochrome: 240, 255, 255;
+--gray-monochrome: var(--dark-accent);
+
+--swatch-secondary-color: 248, 248, 255;
+--swatch-tertiary-color: var(--dark-accent);
+
+--link-color: var(--dark-accent);
+--visited-link-color: var(--bright-accent);
+--hover-link-color: var(--medium-accent);
+--newpage-color: var(--medium-accent);
+
+--rating-module-bg-color: var(--swatch-secondary-color);
+--rating-module-bottom-border-color: var(--dark-accent);
+
+--header-height-on-desktop: 11rem;
+--header-height-on-mobile: 11rem;
+--background-gradient-color: var(--dark-accent);
+--background-gradient-distance: 18rem;
+--diagonal-stripes: none;
+
+--gradient-topmenu: linear-gradient(180deg, rgb(var(--medium-accent)) 0%, rgb(var(--dark-accent)) 5%, rgb(var(--dark-accent)) 95%, rgb(var(--medium-accent)) 100%);
+
+--toggle-border-color: rgb(var(--dark-accent));
+--toggle-icon-color: rgb(var(--dark-accent));
+--toggle-roundness: 1%;
+
+--zero: 0;
+
+}
+
+/* Main Content Block */
+
+#main-content {
+
+--tabs-bg: var(--dark-accent);
+
+}
+
+/* Header Code modified from SCP-6500 */
+
+#header::before {
+
+left: -9.5rem;
+filter: brightness(125%);
+opacity: 1;
+
+}
+
+@media (max-width: 767px) {
+
+#header::before {
+
+left: -7rem;
+
+}
+
+#header h1 {
+
+top: 0.5em;
+left: 0.5em;
+
+}
+
+}
+
+/* Header */
+
+#extra-div-2 {
+
+height: var(--header-height-on-desktop);
+width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+pointer-events: none;
+background-color: rgb(72,209,204);
+background-image: linear-gradient(180deg, rgba(72,209,204,1) 4%, rgba(153,230,179,1) 48%, rgba(253,253,150,1) 80%);
+
+}
+
+@media (max-width: 400px) {
+
+#extra-div-2 {
+
+background-size: calc(var(--header-height-on-desktop) * 3);
+
+}
+
+}
+
+/* Image Block */
+
+:is(div.image-block, div.scp-image-block) :is(.image-caption, .scp-image-caption) {
+
+color: #ffffff;
+background: rgb(var(--dark-accent));
+font-family: var(--header-font);
+
+}
+
+/* Divs */
+
+:is(blockquote, div.blockquote, [class*="blockquote"]) {
+
+background-color: rgb(var(--swatch-secondary-color));
+border-left: 5px solid rgb(var(--dark-accent));
+
+}
+
+/* Spans */
+
+.vantitle {
+
+font-family: 'Copperplate Gothic', 'Alegreya SC', sans-serif;
+color: #1328B4;
+font-size: 280%;
+font-weight: bold;
+
+}
+
+.twosideblock {
+
+margin-left: auto;
+margin-right: auto;
+width: 90%;
+background: rgb(var(--swatch-secondary-color));
+border-left: solid 3.5px rgb(var(--dark-accent));
+border-right: solid 3.5px rgb(var(--dark-accent));
+margin-bottom: 7px;
+padding-right: 15px;
+padding-left: 15px;
+padding-top: 5px;
+padding-bottom: 5px;
+box-shadow: 0px 0px 2px rgb(var(--bright-accent));
+
+}
+
+[[/code]]
+
+[[code type="css"]]
+
+/* Dark Mode */
+
+:root {
+
+--medium-accent: 0, 102, 0;
+--dark-accent: 50,205,50;
+--bright-accent: 102,205,170;
+--white-monochrome: 19, 42, 74;
+--gray-monochrome: var(--dark-accent);
+
+--swatch-secondary-color: 12, 26, 46;
+
+--rating-module-text-color: var(--swatch-text-light);
+
+--swatch-text-light: var(--light-pale-gray-monochrome);
+--swatch-text-general: var(--swatch-text-light);
+--swatch-menutxt-general-color: var(--swatch-menutxt-light-color);
+--swatch-menutxt-light-color: var(--swatch-text-light);
+
+--gradient-topmenu: linear-gradient(180deg, rgb(var(--medium-accent)) 0%, rgb(var(--dark-accent)) 2%, rgb(var(--dark-accent)) 98%, rgb(var(--medium-accent)) 100%);
+
+--hoverblock-bg: var(--white-monochrome);
+--hoverblock-txt: var(--swatch-text-light);
+--hoverblock-header-bg: var(--dark-accent);
+--hoverblock-header-txt: var(--white-monochrome);
+
+}
+
+#main-content {
+
+--ui-button-bg-color: var(--rating-module-bg-color);
+--ui-icon-color: var(--medium-accent);
+--ui-icon-hover-color: var(--dark-accent);
+--ui-button-txt: var(--swatch-text-light);
+--ui-button-hover-txt: var(--swatch-text-light);
+
+}
+
+#header {
+
+--login-username-color: var(--swatch-text-light);
+--login-myaccount-color: var(--swatch-text-light);
+--search-icon-color: var(--swatch-text-light);
+--login-dropdown-text-hover-color: var(--swatch-text-light);
+--login-line-divider-color: var(--swatch-text-light);
+
+}
+
+#top-bar {
+
+--dropdown-links-hover-color: var(--swatch-text-light);
+--topmenu-category-hover-color: var(--swatch-text-light);
+--topmenu-category-color: var(--swatch-text-light);
+--mobile-topmenu-sidebar-button-color: var(--swatch-text-light);
+
+}
+
+#interwiki .heading p,
+#side-bar .heading p,
+#side-bar .collapsible-block .collapsible-block-link {
+
+color: rgb(var(--dark-accent));
+
+}
+
+.bibitems,
+.footnotes-footer {
+
+background-color: rgb(var(--swatch-secondary-color));
+
+}
+
+.bibitems .bibitem::after,
+.footnotes-footer a[href*="javascript"]::before {
+
+background-color: rgb(var(--swatch-secondary-color));
+
+}
+
+.vantitle {
+
+color: rgb(var(--dark-accent));
+
+}
+
+[[/code]]
+
+[[/<]]
+
+[[/collapsible]]
+
+[[include :scp-wiki:component:license-box-theme]]
+> Filename: Example image
+> Name: Glowing Bar City Street Night Lights
+> Author: epSos.de
+> License: CC by-SA 2.0
+> Source Link: https://commons.wikimedia.org/wiki/File:Glowing_Bar_City_Street_Night_Lights.jpg
+
+[[include :scp-wiki:component:license-box-end]]
+
+[[/iftags]]
+
+[[include :scp-wiki:component:centered-header-bhl]]
+[[include :scp-wiki:component:toggle-sidebar-bhl]]
+
+[[module CSS]]
+@import url(https://scp-wiki.wikidot.com/theme:vanguard/code/1);
+[[/module]]
+
+[!-- {$dark}
+[[module CSS]]
+@import url(https://scp-wiki.wikidot.com/theme:vanguard/code/2);
+[[/module]]
+[!-- --]
