@@ -1,4 +1,4 @@
-[[include component:sigma-plus]]
+[[include component:sigma-plus-jp]]
 [[module CSS]]
 @import url("https://hoah.backroomswiki.cn/SCP/theme-share-future-community/main.css");
 @import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Ashare-future-community-jp/1');
@@ -21,9 +21,9 @@
 **元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:share-future-community 命运共同体 版式]
 [[include :scp-jp:credit:end-preview]]
 
-[[include component:sigma-plus]]
+[[include component:sigma-plus-jp]]
 [[include :scp-jp:component:interwiki-style
-| priority=1
+| priority=2
 | type=sidebar
 | theme=（作者の個人ドメインのCSS）
 | css=%23interwiki%2Cbody%7Bbackground-color%3Atransparent%7D
@@ -192,6 +192,31 @@
     そのまま @import で読み込みます。画像も原語版と同じく元ホスト（7bye.com 等）への直リンクです。
 */
 /* 日本語フォント (JP localization) */
+
+/* JP localize — credit-module rules. Restored from the original
+   pages/theme:share-future-community.txt lines 492-519 (the candidate had
+   dropped them entirely, KB-11). The original's SCSS nesting is flattened to
+   plain CSS; its @at-root rate rules keep the #page-content scope, and the two
+   modal rules are lifted out of the original's #page-content nesting because
+   the JP credit modal (#u-credit-view) is a sibling of #page-content. The
+   theme's own --sfc_* variables are preserved. */
+#page-content .page-rate-widget-box {
+    border-radius: 0;
+}
+#page-content .page-rate-widget-box :is(.rateup, .ratedown) a {
+    transition: background-color var(--sfc_transition), color var(--sfc_transition);
+}
+#page-content .creditRate .rate-box-with-credit-button {
+    border-radius: 0;
+}
+#u-credit-view .fader {
+    background-color: var(--sfc_modalbox-fader-background);
+    backdrop-filter: blur(2px);
+}
+#u-credit-view .modalcontainer .modalbox {
+    background-image: none;
+    background-color: var(--sfc_modalbox-background);
+}
 [[/code]]
 [[/collapsible]]
 

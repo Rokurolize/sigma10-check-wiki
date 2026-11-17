@@ -519,6 +519,26 @@ a:hover, a.newpage:hover, a:visited:hover, #side-bar a:not(.close-menu):hover {
     color: var(--darkerColor);
     background: var(--accentColor);
 }
+
+/* Credit Module for JP — carried from the production counterpart
+   pages-existing/existing:theme-penumbra.txt lines 758-772, palette-adapted
+   to this variant: production slate #21252E -> this theme's --darkerColor
+   (rgb(18,25,35)), production cyan accent -> this theme's --accentColor
+   (rgb(255,253,208)). The candidate otherwise carried zero credit-module
+   rules (KB-11). */
+#page-content .creditRate.creditModule .rate-box-with-credit-button {
+    background-color: var(--darkerColor) !important;
+}
+
+#page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton {
+    background-color: unset;
+    border: unset;
+    box-shadow: unset;
+}
+
+#page-content .creditRate.creditModule ~ #u-credit-view .modalbox .modalbox-title {
+    background: var(--darkerColor);
+}
 [[/code]]
 [[/collapsible]]
 
@@ -536,3 +556,7 @@ a:hover, a.newpage:hover, a:visited:hover, #side-bar a:not(.close-menu):hover {
 [[include :scp-jp:component:license-box-end]]
 
 [[/iftags]]
+
+[[div style="display:none"]]
+[[include component:betterbetterfootnote-jp]]
+[[/div]]
