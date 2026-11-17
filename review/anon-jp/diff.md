@@ -15,11 +15,11 @@ adjudicated explanation.
 | | Lines |
 |---|---|
 | original.txt | 568 |
-| candidate.txt | 441 |
-| Added | +62 |
-| Review-stage comments | 0 of the +62 added lines |
+| candidate.txt | 440 |
+| Added | +61 |
+| Review-stage comments | 0 of the +61 added lines |
 | Removed | -189 |
-| Changed | 251 |
+| Changed | 250 |
 | Change blocks | 19 |
 | Diff sections (context 3) | 2 |
 
@@ -28,40 +28,40 @@ adjudicated explanation.
 | Auto-class | Blocks | Changed lines |
 |---|---|---|
 | mechanical | 4 | 8 |
-| supplement | 6 | 45 |
+| supplement | 6 | 44 |
 | residual | 9 | 198 |
 
 ## Change-block index
 
 | # | Section | Original | Candidate | +/− | Auto-class | Gist |
 |---|---|---|---|---|---|---|
-| 1 | 1 | 1–8 | 1–3 | +3/−8 | supplement | [[include :scp-jp:component:interwiki-style |
-| 2 | 1 | 11–22 | 6–6 | +1/−12 | residual | [[iftags +テーマ]] |
-| 3 | 1 | 24–30 | 8–17 | +10/−7 | supplement | [[include :scp-jp:credit:start-preview]] |
-| 4 | 1 | 32–36 | 19–19 | +1/−5 | supplement | [[include :scp-jp:component:license-box-backend \|author=The Great Hippo]] |
-| 5 | 1 | 38–45 | 21–25 | +5/−8 | residual | > **ファイル名:** gradient-anon.png |
-| 6 | 1 | 47–52 | 27–31 | +5/−6 | residual | > **ファイル名:** parawatchPRIDE.png |
-| 7 | 1 | 54–55 | 33–37 | +5/−2 | residual | > **ファイル名:** rook-anon.png |
-| 8 | 1 | 57–62 | 39–39 | +1/−6 | supplement | [[include :scp-jp:component:license-box-end]] |
-| 9 | 1 | 64–67 | 41–41 | +1/−4 | residual | Parawatch Anon向けのCreepypastaベーステーマです。 |
-| 10 | 1 | 69–69 | 43–43 | +1/−1 | residual | **使い方:** @@[[include theme:anon-jp]]@@ |
-| 11 | 1 | 71–71 | 45–45 | +1/−1 | supplement | **基盤:** Creepypasta（theme:creepypasta-jp を @import で読み込み） |
-| 12 | 1 | 73–73 | 47–47 | +1/−1 | residual | [[module CSS]] |
-| 13 | 1 | 75–75 | 49–49 | +1/−1 | supplement | @import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Acreepypa… |
+| 1 | 1 | 1–8 | 1–2 | +2/−8 | supplement | [[include :scp-jp:component:interwiki-style |
+| 2 | 1 | 11–22 | 5–5 | +1/−12 | residual | [[iftags +テーマ]] |
+| 3 | 1 | 24–30 | 7–16 | +10/−7 | supplement | [[include :scp-jp:credit:start-preview]] |
+| 4 | 1 | 32–36 | 18–18 | +1/−5 | supplement | [[include :scp-jp:component:license-box-backend \|author=The Great Hippo]] |
+| 5 | 1 | 38–45 | 20–24 | +5/−8 | residual | > **ファイル名:** gradient-anon.png |
+| 6 | 1 | 47–52 | 26–30 | +5/−6 | residual | > **ファイル名:** parawatchPRIDE.png |
+| 7 | 1 | 54–55 | 32–36 | +5/−2 | residual | > **ファイル名:** rook-anon.png |
+| 8 | 1 | 57–62 | 38–38 | +1/−6 | supplement | [[include :scp-jp:component:license-box-end]] |
+| 9 | 1 | 64–67 | 40–40 | +1/−4 | residual | Parawatch Anon向けのCreepypastaベーステーマです。 |
+| 10 | 1 | 69–69 | 42–42 | +1/−1 | residual | **使い方:** @@[[include theme:anon-jp]]@@ |
+| 11 | 1 | 71–71 | 44–44 | +1/−1 | supplement | **基盤:** Creepypasta（theme:creepypasta-jp を @import で読み込み） |
+| 12 | 1 | 73–73 | 46–46 | +1/−1 | residual | [[module CSS]] |
+| 13 | 1 | 75–75 | 48–48 | +1/−1 | supplement | @import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Acreepypa… |
 | 14 | 1 | 77–196 | — | +0/−120 | residual | If, for some reason, you wish to continue using the pastel yellow from the Cr… |
-| 15 | 2 | 547–547 | 401–401 | +1/−1 | mechanical | (blank lines only) |
-| 16 | 2 | 551–551 | 405–405 | +1/−1 | mechanical | (blank lines only) |
-| 17 | 2 | 556–556 | 410–410 | +1/−1 | mechanical | (blank lines only) |
-| 18 | 2 | 560–560 | 414–414 | +1/−1 | mechanical | (blank lines only) |
-| 19 | 2 | 565–567 | 419–440 | +22/−3 | residual | @@ |
+| 15 | 2 | 547–547 | 400–400 | +1/−1 | mechanical | (blank lines only) |
+| 16 | 2 | 551–551 | 404–404 | +1/−1 | mechanical | (blank lines only) |
+| 17 | 2 | 556–556 | 409–409 | +1/−1 | mechanical | (blank lines only) |
+| 18 | 2 | 560–560 | 413–413 | +1/−1 | mechanical | (blank lines only) |
+| 19 | 2 | 565–567 | 418–439 | +22/−3 | residual | @@ |
 
 ## Full diff
 
 <details>
-<summary>Section 1 — original 1–199 · candidate 1–53 · +36/−182 · residual, supplement</summary>
+<summary>Section 1 — original 1–199 · candidate 1–52 · +35/−182 · residual, supplement</summary>
 
 ```diff
-@@ -1,199 +1,53 @@
+@@ -1,199 +1,52 @@
 -[[module CSS]]
 -@import url(https://scp-wiki.wdfiles.com/local--code/theme%3Acreepypasta/1);
 -@import url(https://scp-wiki.wdfiles.com/local--code/theme%3Aanon/1);
@@ -72,7 +72,6 @@ adjudicated explanation.
 -|theme=https://scp-wiki.wdfiles.com/local--code/theme%3Aanon/1
 +[[include :scp-jp:component:interwiki-style
 +| priority=1
-+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aanon-jp/1
  ]]
  
 -[[iftags +theme]]
@@ -302,10 +301,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 2 — original 544–568 · candidate 398–441 · +26/−7 · mechanical, residual</summary>
+<summary>Section 2 — original 544–568 · candidate 397–440 · +26/−7 · mechanical, residual</summary>
 
 ```diff
-@@ -544,25 +398,44 @@
+@@ -544,25 +397,44 @@
   .hl-brackets{
       color: var(--fg);
  }

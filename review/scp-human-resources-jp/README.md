@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:scp-human-resources-jp — origin EN, population #32 [GOSIGN2-LEDGER (b) row 32]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now feb319c1f764bdffb79a5d793bdc825245e3fa8bd38e9a719b96e5666b2d6cd9); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 7b69ea3d432865ab3d909ebed984467e60e4117835f64499a4b795efcf638bc7); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): PASS — baseline 2026-11-16: exit 0, 0 errors / 1 warn / 0 infos (no error codes) [T1-ROWS row 32; GOSIGN2-LEDGER (b) row 32]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — sidebar x=0, mobile notice/logo clip, WebKit CC "S", page credit modal overflows at 320, sample credit-modal + overflow 337–419px, near-black section swallows its text. [RENDER-ROWS-1 (RENDER-C row 32)]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 2 [LOCALIZE-ROWS row 32, source LOCALIZE-B]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 32]
 - FIX5 re-judgement: item 6 (class D) FIXED — FIX5-FONTSA, commit 8eacd6e: pattern-7 fix; checker code-multiset identical before/after [GOSIGN2-LEDGER-SUPPLEMENT (a) item 6]
-- Computed against: canonical commit 5d951775998e4a1eeccf8e8695a6518b328962ee; candidate file pages/theme:scp-human-resources-jp.txt sha256:feb319c1f764bdffb79a5d793bdc825245e3fa8bd38e9a719b96e5666b2d6cd9; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 8c935d39aab93c2784fc512f9e5cd4203b08fa36; candidate file pages/theme:scp-human-resources-jp.txt sha256:7b69ea3d432865ab3d909ebed984467e60e4117835f64499a4b795efcf638bc7; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -169,15 +169,28 @@ The ledger charge (§(e) item 6): pattern 7 — the header subtitle sits in a La
 
 ### Flag 1 — the SCP Offices delivery layer is not loaded
 
-The original is an extension of the SCP Offices theme and loads it: a hidden include at original L281–285 (`[[include :scp-wiki:theme:scp-offices-theme]]` inside a `display: none` div, the BHL-era layering form), on top of BHL. The production page loads the same layer as CSS (its priority-3 interwiki-style include naming `https://scp-jp.github.io/files/theme/scp-offices-theme/style0.css`). The candidate loads neither form: `grep -c offices candidate.txt` is 0, and its layering is BHL (module imports + priorities 1/2) plus its own inlined CSS. A JP candidate for the layer exists in this repo (`pages/theme:scp-offices-theme-jp.txt`). The candidate's prose declares a standalone form ("Black Highlighter を基盤としています", candidate L118), which states the choice but does not disposition it: no ledger row charges or dispositions this layer for this theme (the T4 row's charges were P3/P6/P7). Recorded for the coordinator: either the standalone declaration is accepted as the theme's JP form (and this flag closes as a disposition with that ground), or the Offices layer is restored in one of its two attested forms.
+The original is an extension of the SCP Offices theme and loads it: a hidden include at original L281–285 (`[[include :scp-wiki:theme:scp-offices-theme]]` inside a `display: none` div, the BHL-era layering form), on top of BHL. The production page loads the same layer as CSS (its priority-3 interwiki-style include naming `https://scp-jp.github.io/files/theme/scp-offices-theme/style0.css`). The candidate loads neither form: `grep -c offices candidate.txt` is 0, and its layering is BHL (module imports + priorities 1/2) plus its own inlined CSS. A JP candidate for the layer exists in this repo (`pages/theme:scp-offices-theme-jp.txt`). The candidate's prose declares a standalone form ("Black Highlighter を基盤としています", candidate L118), which states the choice but does not disposition it: no ledger row charges or dispositions this layer for this theme (the T4 row's charges were P3/P6/P7). Recorded for the coordinator: either the standalone declaration is accepted as the theme's JP form (and this flag closes as a disposition with that ground), or the Offices layer is restored in one of its two attested forms. This is the as-built state; the layer has since been restored in the hidden-include form (FIX-RFIX10 HR-1, landing 8c935d3) — see Post-package repairs (REFRESH3-E).
 
 ### Flag 2 — the head module's `.scp-image-block` rules are dropped
 
-The original's live head module carries four rules styling floated image blocks (original L9–30: `.scp-image-block.block-right` margins, `.scp-image-block a` width, `.scp-image-block img` border, and the two `#page-content > div.scp-image-block` background/padding rules). The production page carries the same rules in its own head module (6 `scp-image-block` occurrences). The candidate carries none: `grep -c 'scp-image-block' candidate.txt` is 0. These rules are live theme CSS, not exhibits: they style any floated image block on any page using the theme. Their absence is a rendering difference from both sources in this package. The candidate's own body uses no image block, which is why nothing on the candidate page itself shows it. Recorded for the coordinator with the loci above; not edited here.
+The original's live head module carries four rules styling floated image blocks (original L9–30: `.scp-image-block.block-right` margins, `.scp-image-block a` width, `.scp-image-block img` border, and the two `#page-content > div.scp-image-block` background/padding rules). The production page carries the same rules in its own head module (6 `scp-image-block` occurrences). The candidate carries none: `grep -c 'scp-image-block' candidate.txt` is 0. These rules are live theme CSS, not exhibits: they style any floated image block on any page using the theme. Their absence is a rendering difference from both sources in this package. The candidate's own body uses no image block, which is why nothing on the candidate page itself shows it. Recorded for the coordinator with the loci above; not edited here. This is the as-built state; the five rules have since been restored verbatim (FIX-RFIX10 HR-2, landing 8c935d3) — see Post-package repairs (REFRESH3-E).
 
 ### The priority-3 slot
 
 Recorded in section 3: the empty priority-3 include is the frame-address audit's sub-shape (D) remedy (commit 5d95177, FIX-FRAMED record), applied because the candidate has no code block for the parameter to name. It is also the whole explanation of this package's STALE stamp: the verdict-era file (435a6bb) still carried the parameter; the remedy postdates the verdict.
+
+### Post-package repairs (REFRESH3-E)
+
+The items above describe this package as built. The repairs recorded below postdate the package; `candidate.txt` has been recopied from the current canonical `pages/theme:scp-human-resources-jp.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**Frame sub-shape (D) treated as (B) — already in this package.** For the record chain: the priority-3 slot recorded above is this theme's FIX-FRAMED remedy. Its frame was sub-shape (D) — `theme=` named its own /1 code block, which the candidate (no `[[code]]` block; CSS in live `[[module CSS]]`) cannot contain — treated as (B) with the minimal remedy of dropping the `theme=` line and keeping the include, priority, and all else; the priorities 1 and 2 frames name the BHL GitHub Pages files and are untouched. The remedy landed at 5d95177 and predates this package's build (4b0f499), so no frame byte postdates the build.
+
+**FIX-RFIX10 — the two open Flags closed (landing 8c935d3).** `FIX-RFIX10.md` records two repairs to this file, both postdating the package; the commit is +27/−0 in two hunks:
+
+- **HR-1 (closes Flag 1 — SCP Offices layer).** The original's hidden include form is restored in the candidate's own frame structure: after the interwiki-style includes and before the `[[iftags +テーマ]]` gate, `[[div style="display: none"]]` / `[[include :scp-jp:theme:scp-offices-theme-jp]]` / `[[/div]]` (target repointed to the `-jp` candidate per cross-theme-delivery ruling 1). The candidate's empty priority-3 slot was deliberately not used — it remains the separate frame (D) remedy above.
+- **HR-2 (closes Flag 2 — `.scp-image-block` rules).** The 22-line block from the original's head module (original L9–30, extracted programmatically, not retyped) is inserted verbatim in the candidate's head module after the `@supports`/`:root` block, before `[[/module]]`. The candidate now has 5 `scp-image-block` occurrences (the five restored rules).
+
+The checker finding set is unchanged (error 0 / warn 0 / info 0 before and after; no new class (i) finding). Flags 1 and 2 above are recorded as the as-built state and are closed by these repairs; the recopied candidate carries the restored Offices layer and image-block rules.
 
 ## Change set outside the two diffed files
 

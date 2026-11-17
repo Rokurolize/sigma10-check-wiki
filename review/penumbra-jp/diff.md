@@ -16,10 +16,10 @@ adjudicated explanation.
 |---|---|
 | original.txt | 1453 |
 | candidate.txt | 1257 |
-| Added | +404 |
-| Review-stage comments | 0 of the +404 added lines |
-| Removed | -600 |
-| Changed | 1004 |
+| Added | +403 |
+| Review-stage comments | 0 of the +403 added lines |
+| Removed | -599 |
+| Changed | 1002 |
 | Change blocks | 214 |
 | Diff sections (context 3) | 31 |
 
@@ -27,9 +27,9 @@ adjudicated explanation.
 
 | Auto-class | Blocks | Changed lines |
 |---|---|---|
-| mechanical | 3 | 3 |
+| mechanical | 4 | 4 |
 | supplement | 5 | 66 |
-| residual | 206 | 935 |
+| residual | 205 | 932 |
 
 ## Change-block index
 
@@ -101,7 +101,7 @@ adjudicated explanation.
 | 64 | 5 | 210–210 | 228–228 | +1/−1 | residual | {{limit}}ブロックがないと、{{anchor}}ブロックが指定した場所を離れてしまった時にページ全体に波及してしまいます。 |
 | 65 | 5 | 212–212 | 230–230 | +1/−1 | residual | **{{sidebox}}は幅1290px以下のウィンドウ/スクリーンでは最小化されます。**(woedenazが作ってくれました！) |
 | 66 | 5 | 219–221 | 237–240 | +4/−3 | residual | +++ ヘッダーフォントはJosefin Sans |
-| 67 | 5 | 226–227 | 245–245 | +1/−2 | residual | @@[[footnoteblock]]@@ |
+| 67 | 5 | 227–227 | — | +0/−1 | mechanical | (blank lines only) |
 | 68 | 5 | — | 249–251 | +3/−0 | residual | @@ @@ |
 | 69 | 5 | 232–233 | 253–253 | +1/−2 | residual | [[div [[iftags -テーマ]]style="display: none"[[/iftags]]]] |
 | 70 | 5 | 235–235 | 255–257 | +3/−1 | residual | [[include :scp-jp:component:toggle-sidebar]] |
@@ -565,7 +565,7 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 5 — original 207–238 · candidate 225–260 · +14/−10 · residual</summary>
+<summary>Section 5 — original 207–238 · candidate 225–260 · +13/−9 · mechanical, residual</summary>
 
 ```diff
 @@ -207,32 +225,36 @@
@@ -594,9 +594,8 @@ adjudicated explanation.
  
  @@ @@
  
--[[footnoteblock]]
+ [[footnoteblock]]
 -
-+@@[[footnoteblock]]@@
  ------
  
  

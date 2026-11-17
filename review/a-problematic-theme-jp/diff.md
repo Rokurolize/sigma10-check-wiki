@@ -8,20 +8,19 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 457 |
-| candidate.txt | 132 |
-| Added | +29 |
-| Review-stage comments | 0 of the +29 added lines |
+| candidate.txt | 131 |
+| Added | +28 |
+| Review-stage comments | 0 of the +28 added lines |
 | Removed | -348 |
 | Hunks | 3 |
 
 ```diff
 --- original.txt
 +++ candidate.txt
-@@ -1,183 +1,35 @@
+@@ -1,183 +1,34 @@
 -[[iftags +theme]]
 +[[include :scp-jp:component:interwiki-style
 +| priority=1
-+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aa-problematic-theme-jp/1
 +]]
 +
 +[[iftags +テーマ]]
@@ -228,7 +227,7 @@ with `python3 review/build_review.py`; verify with
  
      :root {
          /* S-CSS-P INTEGRATION */
-@@ -262,7 +114,7 @@
+@@ -262,7 +113,7 @@
          --login-dropdown-text-color: var(--black);
          --login-mobile-icon-color: var(--black);
      }
@@ -237,7 +236,7 @@ with `python3 review/build_review.py`; verify with
      #interwiki,
      #side-bar {
          --sidebar-media-bg-color: var(--chetwode);
-@@ -274,184 +126,7 @@
+@@ -274,184 +125,7 @@
          --toc-body-link-hover-color: var(--white);
          --toc-body-hover-arrow-color: var(--white);
      }

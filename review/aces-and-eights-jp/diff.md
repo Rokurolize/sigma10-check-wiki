@@ -8,19 +8,18 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 228 |
-| candidate.txt | 231 |
-| Added | +36 |
-| Review-stage comments | 0 of the +36 added lines |
+| candidate.txt | 230 |
+| Added | +35 |
+| Review-stage comments | 0 of the +35 added lines |
 | Removed | -33 |
 | Hunks | 8 |
 
 ```diff
 --- original.txt
 +++ candidate.txt
-@@ -1,25 +1,30 @@
+@@ -1,25 +1,29 @@
 +[[include :scp-jp:component:interwiki-style
 +| priority=1
-+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aaces-and-eights-jp/1
 +]]
 +
 +[[iftags +テーマ]]
@@ -69,7 +68,7 @@ with `python3 review/build_review.py`; verify with
  /*
      Aces and Eights Theme
      [2018 Wikidot Theme]
-@@ -28,12 +33,10 @@
+@@ -28,12 +32,10 @@
      The Aces and Eights logo was created by Rounderhouse, based off : https://thenounproject.com/term/poker-chip/170698/ . Licensed under CC BY 3.0
  */
  
@@ -86,7 +85,7 @@ with `python3 review/build_review.py`; verify with
  
  #header:before{
  display:block;
-@@ -77,7 +80,7 @@
+@@ -77,7 +79,7 @@
  }
  
  #header h1 a::before {
@@ -95,7 +94,7 @@ with `python3 review/build_review.py`; verify with
      content: "Aces and Eights";
      color: #000000;
      padding-bottom: 50px;
-@@ -89,7 +92,7 @@
+@@ -89,7 +91,7 @@
      text-shadow: none;
  }
  #header h2 span::before {
@@ -104,7 +103,7 @@ with `python3 review/build_review.py`; verify with
      content: "Astounding Tales: Fresh from the west!";
      color: #000000;
      padding: 0px 0px 00px;
-@@ -165,7 +168,7 @@
+@@ -165,7 +167,7 @@
      padding: 0 0 0.25em;
      margin: 0 0 0.6em;
      font-weight: heavy;
@@ -113,7 +112,7 @@ with `python3 review/build_review.py`; verify with
  }
  
  blockquote,
-@@ -180,7 +183,7 @@
+@@ -180,7 +182,7 @@
  #top-bar ul li:hover ul li a {
      border-top: 1px solid #000000;
  }
@@ -122,7 +121,7 @@ with `python3 review/build_review.py`; verify with
  #top-bar ul li.sfhover a,
  #top-bar ul li:hover a {
      background: #bc9055;
-@@ -214,7 +217,7 @@
+@@ -214,7 +216,7 @@
      background-position: 0 5.5em;
      background-size: 55px 55px;
  }
@@ -131,7 +130,7 @@ with `python3 review/build_review.py`; verify with
  #header:before{
  width: 60%;
  height: 50%;
-@@ -223,6 +226,6 @@
+@@ -223,6 +225,6 @@
  }
  }
  

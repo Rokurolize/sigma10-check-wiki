@@ -8,16 +8,16 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 882 |
-| candidate.txt | 708 |
-| Added | +38 |
-| Review-stage comments | 0 of the +38 added lines |
+| candidate.txt | 707 |
+| Added | +37 |
+| Review-stage comments | 0 of the +37 added lines |
 | Removed | -210 |
 | Hunks | 5 |
 
 ```diff
 --- original.txt
 +++ candidate.txt
-@@ -1,209 +1,47 @@
+@@ -1,209 +1,46 @@
 -[[iftags +theme]]
 -
 -[[=]]
@@ -198,7 +198,6 @@ with `python3 review/build_review.py`; verify with
 +
 +[[include :scp-jp:component:interwiki-style
 +| priority=1
-+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aad-abyssum-penumbra-jp/1
 +]]
 +
 +[[iftags +テーマ]]
@@ -260,7 +259,7 @@ with `python3 review/build_review.py`; verify with
      --header-font: "Finlandica", serif;
      --body-font: "verdana", sans-serif;
      --textColor: #FDFDFD;
-@@ -318,7 +156,7 @@
+@@ -318,7 +155,7 @@
      background-clip: text;
      color: transparent;
      filter: drop-shadow(0 0.375rem 0.3rem rgba(0,0,0,0.6));
@@ -269,7 +268,7 @@ with `python3 review/build_review.py`; verify with
      font-size: 120%;
      font-weight: bold;
      -webkit-background-clip: text;
-@@ -333,7 +171,7 @@
+@@ -333,7 +170,7 @@
      background-clip: text;
      color: transparent;
      filter: drop-shadow(0 0.2rem 0.2rem rgba(0, 0, 0, 0.8));
@@ -278,7 +277,7 @@ with `python3 review/build_review.py`; verify with
      font-size: 120%;
      letter-spacing: 0.313rem;
      margin-top: 0.375rem;
-@@ -853,7 +691,7 @@
+@@ -853,7 +690,7 @@
      #header h1 a::before {
          font-size: 100%;
      }
@@ -287,7 +286,7 @@ with `python3 review/build_review.py`; verify with
      #header h2::before {
          font-size: 100%;
      }
-@@ -865,18 +703,6 @@
+@@ -865,18 +702,6 @@
  
  }
  

@@ -8,19 +8,18 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 546 |
-| candidate.txt | 508 |
-| Added | +103 |
-| Review-stage comments | 0 of the +103 added lines |
+| candidate.txt | 507 |
+| Added | +102 |
+| Review-stage comments | 0 of the +102 added lines |
 | Removed | -140 |
 | Hunks | 16 |
 
 ```diff
 --- original.txt
 +++ candidate.txt
-@@ -1,75 +1,30 @@
+@@ -1,75 +1,29 @@
 +[[include :scp-jp:component:interwiki-style
 +| priority=1
-+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aambrose-chapter-two-jp/1
 +]]
 +
 +[[iftags +テーマ]]
@@ -119,7 +118,7 @@ with `python3 review/build_review.py`; verify with
  /*
  
      "Ambrose Chapter two" theme, based on colours for Ambrose: Under Johannesburg.
-@@ -79,24 +34,24 @@
+@@ -79,24 +33,24 @@
  
      Header Code adopted from The Buck Stops Here CSS Theme by thd-glasses
      Info Bar and Page Rating Code adopted from Technoblast Theme by EstrellaYoshte
@@ -151,7 +150,7 @@ with `python3 review/build_review.py`; verify with
  div#container-wrap {
      background: url(https://scp-wiki.wdfiles.com/local--files/theme%3Aambrose-chapter-two/background.png) center top repeat-x;
      background-size: 224px 400px;
-@@ -109,14 +64,14 @@
+@@ -109,14 +63,14 @@
      clear: both;
      float: none;
  }
@@ -169,7 +168,7 @@ with `python3 review/build_review.py`; verify with
  #header h1 a::before {
      display: inline-block;
      width: 100%;
-@@ -131,7 +86,7 @@
+@@ -131,7 +85,7 @@
      top: 0;
      padding-top: 75px;
  }
@@ -178,7 +177,7 @@ with `python3 review/build_review.py`; verify with
  #header h2::before {
      position: absolute;
      left: 70%;
-@@ -155,7 +110,7 @@
+@@ -155,7 +109,7 @@
      top: 0;
      margin-top: 0px;
  }
@@ -187,7 +186,7 @@ with `python3 review/build_review.py`; verify with
  #header #header-extra-div-1::before{
      z-index: -1;
      content: "";
-@@ -167,32 +122,32 @@
+@@ -167,32 +121,32 @@
      background-size : 280px
      flex: 1;
  }
@@ -226,7 +225,7 @@ with `python3 review/build_review.py`; verify with
  #search-top-box {
    position: absolute;
    top: 105px;
-@@ -201,7 +156,7 @@
+@@ -201,7 +155,7 @@
    text-align: right;
    z-index: 1;
  }
@@ -235,7 +234,7 @@ with `python3 review/build_review.py`; verify with
  #search-top-box-input{
      border: solid 1px #EACC54;
      border-radius: 5px;
-@@ -209,7 +164,7 @@
+@@ -209,7 +163,7 @@
      background-color: #332B2E;
      box-shadow: inset 1px 1px 3px rgba(0,0,0,.5);
  }
@@ -244,7 +243,7 @@ with `python3 review/build_review.py`; verify with
  #search-top-box-input:hover,
  #search-top-box-input:focus,
  #search-top-box-form input[type=submit]:hover,
-@@ -228,58 +183,58 @@
+@@ -228,58 +182,58 @@
      background: #332B2E;
      box-shadow: 0 1px 3px rgba(0,0,0,.5);
  }
@@ -319,7 +318,7 @@ with `python3 review/build_review.py`; verify with
  #side-bar .side-block,
  #side-bar .side-block.media,
  #side-bar .side-block.resources,
-@@ -294,51 +249,51 @@
+@@ -294,51 +248,51 @@
      color: #C4B73B;
      border-bottom: solid 3px #C4B73B;
  }
@@ -382,7 +381,7 @@ with `python3 review/build_review.py`; verify with
  div.page-rate-widget-box .rate-points {
      background-color: #8A7500!important;
      color: #ffffff;
-@@ -348,37 +303,37 @@
+@@ -348,37 +302,37 @@
      background: #ffffff;
      color: #8A7500;
  }
@@ -427,7 +426,7 @@ with `python3 review/build_review.py`; verify with
  #page-content .creditRate{
       margin: unset;
  }
-@@ -387,46 +342,46 @@
+@@ -387,46 +341,46 @@
      border: solid 1px #8A7500;
      box-shadow: none;
  }
@@ -483,7 +482,7 @@ with `python3 review/build_review.py`; verify with
  blockquote,
  blockquote p,
  div.blockquote,
-@@ -434,17 +389,17 @@
+@@ -434,17 +388,17 @@
      background: #AB6643;
      color: #FFFFFF;
  }
@@ -504,7 +503,7 @@ with `python3 review/build_review.py`; verify with
  @media (max-width: 499px) {
    #header h1 a::before {
      content: var(--short_title);
-@@ -452,7 +407,7 @@
+@@ -452,7 +406,7 @@
      padding-top: 80px;
    }
  }
@@ -513,7 +512,7 @@ with `python3 review/build_review.py`; verify with
  @media (max-width: 767px) {
    #content-wrap {
      margin: 43px auto 0;
-@@ -471,7 +426,7 @@
+@@ -471,7 +425,7 @@
  #toc{
      background-color: #876D6D;
      border: 2px solid #A38800;
@@ -522,7 +521,7 @@ with `python3 review/build_review.py`; verify with
  }
  
  /* Code */
-@@ -541,6 +496,13 @@
+@@ -541,6 +495,13 @@
  #main-content {
      color: #FFFFFF;
  }

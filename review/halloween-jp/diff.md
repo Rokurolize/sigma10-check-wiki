@@ -8,9 +8,9 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 629 |
-| candidate.txt | 580 |
-| Added | +33 |
-| Review-stage comments | 0 of the +33 added lines |
+| candidate.txt | 579 |
+| Added | +32 |
+| Review-stage comments | 0 of the +32 added lines |
 | Removed | -80 |
 | Hunks | 4 |
 
@@ -118,7 +118,7 @@ with `python3 review/build_review.py`; verify with
  #interwiki .heading {
      color: var(--fg-accent-2-light);
      border-bottom: 1px solid var(--fg-accent-2-light);
-@@ -624,6 +547,34 @@
+@@ -624,6 +547,33 @@
  }
  
  }
@@ -128,7 +128,6 @@ with `python3 review/build_review.py`; verify with
 +
 +[[include :scp-jp:component:interwiki-style
 +| priority=1
-+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Ahalloween-jp/1
 +]]
 +
 +[[iftags +テーマ]]

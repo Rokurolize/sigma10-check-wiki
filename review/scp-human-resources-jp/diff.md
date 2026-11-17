@@ -8,62 +8,129 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 295 |
-| candidate.txt | 127 |
-| Added | +87 |
-| Review-stage comments | 0 of the +87 added lines |
-| Removed | -252 |
-| Hunks | 1 |
+| candidate.txt | 154 |
+| Added | +113 |
+| Review-stage comments | 0 of the +113 added lines |
+| Removed | -251 |
+| Hunks | 2 |
 
 ```diff
 --- original.txt
 +++ candidate.txt
-@@ -1,295 +1,127 @@
+@@ -1,9 +1,88 @@
 -[[iftags +theme]]
 -[[module css]]
 -@import url("https://nu-scptheme.github.io/Black-Highlighter/css/min/normalize.min.css");
 -@import url("https://nu-scptheme.github.io/Black-Highlighter/css/min/black-highlighter.min.css");
 -:root {
 -    --logo-image: url("https://scp-wiki.wdfiles.com/local--files/theme%3Ascp-human-resources/hrlogo.png");
--}
 +[[module CSS]]
 +/* Black Highlighter base (SCP-JP distribution) */
 +@import url("https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css");
 +@import url("https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css");
- 
--.scp-image-block.block-right {
--    margin: 1em 0 1em 2em;
--}
++
 +@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
++
++/* 日本語フォント
++   JP localization: Zilla Slab has no Japanese glyphs, so the Japanese face
++   Noto Sans JP (Google Fonts, SIL Open Font License) is appended to the
++   header/title stacks. The Latin face itself is unchanged. */
++@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
++
++@supports(--css: variables) {
++
++    :root {
++     /* Typefaces */
++     --header-font: 'Zilla Slab', 'Noto Sans JP', serif;
++     --title-font: 'Zilla Slab', 'Noto Sans JP', monospace;
++
++     /* Standard Colors */
++
++     --white-monochrome: 207, 223, 245;
++     --pale-gray-monochrome: 157, 186, 226;
++     --light-gray-monochrome: 112, 149, 201;
++     --gray-monochrome: 75, 115, 171;
++     --dark-gray-monochrome: 49, 91, 150;
++     --black-monochrome: 7, 7, 40;
++     --bright-accent: 128, 184, 116;
++     --medium-accent: 61, 139, 44;
++     --dark-accent: 28, 104, 12;
++
++     --swatch-text-general: var(--swatch-text-dark);
++
++     --link-color: var(--medium-accent);
++
++     --logo-image: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-44-ziy1/hrlogo.png");
++     --header-subtitle: "人事部門";
++
++     --background-gradient-color: 255, 242, 219;
++     --rating-module-bg-color: var(--dark-accent);
++     --rating-module-text-color: var(--bright-accent);
++     --rating-module-plus-color: var(--bright-accent);
++     --rating-module-negative-color: var(--bright-accent);
++
++     scrollbar-color: rgba(var(--pale-gray-monochrome), 1) rgba(var(--dark-gray-monochrome), 0.50);
++
++     --offset-from-page-top: 0rem;
++    }
++
++    #side-bar .heading p,
++    #interwiki .heading p {
++     color: rgba(var(--black-monochrome), 1);
++     font-family: 'Zilla Slab', 'Noto Sans JP', serif;
++     --text-shadow: none;
++    }
++
++    #interwiki div.menu-item a,
++    #side-bar div.menu-item a,
++    #side-bar div.menu-item .text {
++     --wght: 500;
++     font-weight: 500;
++    }
++
++    #search-top-box input.empty {
++     color: rgba(var(--white-monochrome), 1);
++    }
++
++    #search-top-box-form input[type="submit"],
++    #search-top-box-form input[type="submit"]:focus,
++    #search-top-box-form input[type="submit"]:hover {
++     color: rgb(var(--dark-accent));
++    }
++
++    #footer a {
++     background: inherit;
++     color: rgba(var(--white-monochrome), 1);
++    }
++
++    .collapsible-block-link {
++     -webkit-text-decoration-color: rgb(var(--medium-accent));
++     text-decoration-color: rgb(var(--medium-accent));
++     -webkit-text-decoration: rgb(var(--medium-accent));
++     text-decoration: rgb(var(--medium-accent));
++    }
+ }
  
--.scp-image-block a {
--    width: 100%;
--    min-width: 100%;
--}
--
--.scp-image-block img {
--    min-width: 100%;
--    border: 0.5rem solid rgba(var(--pale-gray-monochrome));
--    box-sizing: border-box;
--}
--
--#page-content > div.scp-image-block.block-right > a {
--    background-color: rgb(var(--gray-monochrome));
--}
--
--#page-content > div.scp-image-block.block-right > a > img {
--    padding: 1em;
--}
--[[/module]]
+ .scp-image-block.block-right {
+@@ -29,267 +108,47 @@
+     padding: 1em;
+ }
+ [[/module]]
 -[[include :scp-wiki:component:interwiki-style
--| priority=1
++
++[[include :scp-jp:component:interwiki-style
+ | priority=1
 -| theme=https://nu-scptheme.github.io/Black-Highlighter/css/min/normalize.min.css
--]]
--
++| theme=https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css
+ ]]
+ 
 -[[include :scp-wiki:component:interwiki-style
--| priority=2
++[[include :scp-jp:component:interwiki-style
+ | priority=2
 -| theme=https://nu-scptheme.github.io/Black-Highlighter/css/min/black-highlighter.min.css
--]]
--
++| theme=https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css
+ ]]
+ 
 -[[>]]
 -[[module Rate]]
 -[[/>]]
@@ -102,27 +169,48 @@ with `python3 review/build_review.py`; verify with
 -| subcolor6-variable=--dark-accent
 -| subcolor6-info=(28,104,1)
 -| subcolor6-has-light-text=1
--]]
--
++[[include :scp-jp:component:interwiki-style
++| priority=3
+ ]]
+ 
 -[[div class="scp-image-block block-right" style="max-width:300px;"]]
 -[[image https://scp-wiki.wdfiles.com/local--files/theme%3Ascp-human-resources/hrlogo.png width="300px" link="http://dorktoast.wdfiles.com/local--files/scp%3Ahuman-resources/hrlogo.png"]]
 -[[div class="scp-image-caption" style="max-width: 300px;"]]
 -SCP Human Resources theme
 -[[/div]]
--[[/div]]
--
++[[div style="display: none"]]
++[[include :scp-jp:theme:scp-offices-theme-jp]]
+ [[/div]]
+ 
 -+ Usage
--
++[[iftags +テーマ]]
++[[include :scp-jp:credit:start-preview]]
++**タイトル:** 人事部門テーマ
++**翻訳責任者:** KanekoLiku
++**翻訳年:** 2022
++**翻訳について:** KanekoLiku による既存の翻訳を基に改変したものです。
++**原題:** Human Resources Theme
++**著作権者:** ©CityToast
++**作成年:** 2021
++**初訳時参照リビジョン:** 14
++**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:scp-human-resources ソース]
++[[include :scp-jp:credit:end-preview]]
+ 
 -[[div_ style="display:flex;"]]
 -[[image https://scp-wiki.wdfiles.com/local--files/theme%3Ablack-highlighter-theme/black-highlighter-logo.svg]]
 -[[/div]]
--
+++ 人事部門テーマ（SCP Human Resources）（SCP-JP 移植）
+ 
 -This theme is an extension of [[[theme:scp-offices-theme|SCP Offices Theme]]] by [[*user Woedenaz]].
--
++本テーマは SCP-JP の人事部門テーマ（SCP Human Resources）を、外部サイトのテーマページに依存せず単体で適用できる形に移植したものです。Black Highlighter を基盤としています。
+ 
 -++ Note: This is a Black Highlighter based theme. You will need to import the Black Highlighter theme as well in order to use this theme. [[[theme:black-highlighter-theme|To learn more go here]]].
--
++**使い方:** ページ先頭に @@[[include theme:scp-human-resources-jp]]@@ を記述してください。
+ 
 -On any wiki:
--
++**クレジット:** SCP-JP の人事部門テーマ作者、Black Highlighter の作者ならびに SCP Foundation Wiki に感謝します。
++**改訳時参照リビジョン:** 14
+ 
 -[[div class="code"]]
 -@@[[include :scp-wiki:theme:black-highlighter-theme]]@@
 -@@[[include :scp-wiki:theme:scp-offices-theme]]@@
@@ -225,25 +313,16 @@ with `python3 review/build_review.py`; verify with
 -[[collapsible show="+ Show theme code" hide="- Hide theme code"]]
 -[[code type="css"]]
 -@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
-+/* 日本語フォント
-+   JP localization: Zilla Slab has no Japanese glyphs, so the Japanese face
-+   Noto Sans JP (Google Fonts, SIL Open Font License) is appended to the
-+   header/title stacks. The Latin face itself is unchanged. */
-+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
- 
- @supports(--css: variables) {
- 
-     :root {
+-
+-@supports(--css: variables) {
+-
+-    :root {
 -    	/* Typefaces */
 -    	--header-font: 'Zilla Slab', serif;
 -    	--title-font: 'Zilla Slab', monospace;
-+     /* Typefaces */
-+     --header-font: 'Zilla Slab', 'Noto Sans JP', serif;
-+     --title-font: 'Zilla Slab', 'Noto Sans JP', monospace;
- 
+-
 -    	/* Standard Colors */
-+     /* Standard Colors */
- 
+-
 -    	--white-monochrome: 207, 223, 245;
 -    	--pale-gray-monochrome: 157, 186, 226;
 -    	--light-gray-monochrome: 112, 149, 201;
@@ -253,134 +332,63 @@ with `python3 review/build_review.py`; verify with
 -    	--bright-accent: 128, 184, 116;
 -    	--medium-accent: 61, 139, 44;
 -    	--dark-accent: 28, 104, 12;
-+     --white-monochrome: 207, 223, 245;
-+     --pale-gray-monochrome: 157, 186, 226;
-+     --light-gray-monochrome: 112, 149, 201;
-+     --gray-monochrome: 75, 115, 171;
-+     --dark-gray-monochrome: 49, 91, 150;
-+     --black-monochrome: 7, 7, 40;
-+     --bright-accent: 128, 184, 116;
-+     --medium-accent: 61, 139, 44;
-+     --dark-accent: 28, 104, 12;
- 
+-
 -    	--swatch-text-general: var(--swatch-text-dark);
-+     --swatch-text-general: var(--swatch-text-dark);
- 
+-
 -    	--link-color: var(--medium-accent);
-+     --link-color: var(--medium-accent);
- 
+-
 -    	--logo-image: url("https://scp-wiki.wdfiles.com/local--files/theme%3Ascp-human-resources/hrlogo.png");
 -    	--header-subtitle: "HUMAN RESOURCES DEPARTMENT";
-+     --logo-image: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-44-ziy1/hrlogo.png");
-+     --header-subtitle: "人事部門";
- 
+-
 -    	--background-gradient-color: 255, 242, 219;
 -    	--rating-module-bg-color: var(--dark-accent);
 -    	--rating-module-text-color: var(--bright-accent);
 -    	--rating-module-plus-color: var(--bright-accent);
 -    	--rating-module-negative-color: var(--bright-accent);
-+     --background-gradient-color: 255, 242, 219;
-+     --rating-module-bg-color: var(--dark-accent);
-+     --rating-module-text-color: var(--bright-accent);
-+     --rating-module-plus-color: var(--bright-accent);
-+     --rating-module-negative-color: var(--bright-accent);
- 
+-
 -    	scrollbar-color: rgba(var(--pale-gray-monochrome), 1) rgba(var(--dark-gray-monochrome), 0.50);
-+     scrollbar-color: rgba(var(--pale-gray-monochrome), 1) rgba(var(--dark-gray-monochrome), 0.50);
- 
+-
 -    	--offset-from-page-top: 0rem;
-+     --offset-from-page-top: 0rem;
-     }
- 
-     #side-bar .heading p,
-     #interwiki .heading p {
+-    }
+-
+-    #side-bar .heading p,
+-    #interwiki .heading p {
 -    	color: rgba(var(--black-monochrome), 1);
 -    	font-family: 'Zilla Slab', serif;
 -    	--text-shadow: none;
-+     color: rgba(var(--black-monochrome), 1);
-+     font-family: 'Zilla Slab', 'Noto Sans JP', serif;
-+     --text-shadow: none;
-     }
- 
-     #interwiki div.menu-item a,
-     #side-bar div.menu-item a,
-     #side-bar div.menu-item .text {
+-    }
+-
+-    #interwiki div.menu-item a,
+-    #side-bar div.menu-item a,
+-    #side-bar div.menu-item .text {
 -    	--wght: 500;
 -    	font-weight: 500;
-+     --wght: 500;
-+     font-weight: 500;
-     }
- 
-     #search-top-box input.empty {
+-    }
+-
+-    #search-top-box input.empty {
 -    	color: rgba(var(--white-monochrome), 1);
-+     color: rgba(var(--white-monochrome), 1);
-     }
- 
-     #search-top-box-form input[type="submit"],
-     #search-top-box-form input[type="submit"]:focus,
-     #search-top-box-form input[type="submit"]:hover {
+-    }
+-
+-    #search-top-box-form input[type="submit"],
+-    #search-top-box-form input[type="submit"]:focus,
+-    #search-top-box-form input[type="submit"]:hover {
 -    	color: rgb(var(--dark-accent));
-+     color: rgb(var(--dark-accent));
-     }
- 
-     #footer a {
+-    }
+-
+-    #footer a {
 -    	background: inherit;
 -    	color: rgba(var(--white-monochrome), 1);
-+     background: inherit;
-+     color: rgba(var(--white-monochrome), 1);
-     }
- 
-     .collapsible-block-link {
+-    }
+-
+-    .collapsible-block-link {
 -    	-webkit-text-decoration-color: rgb(var(--medium-accent));
 -    	text-decoration-color: rgb(var(--medium-accent));
 -    	-webkit-text-decoration: rgb(var(--medium-accent));
 -    	text-decoration: rgb(var(--medium-accent));
-+     -webkit-text-decoration-color: rgb(var(--medium-accent));
-+     text-decoration-color: rgb(var(--medium-accent));
-+     -webkit-text-decoration: rgb(var(--medium-accent));
-+     text-decoration: rgb(var(--medium-accent));
-     }
- }
+-    }
+-}
 -[[/code]]
 -[[/collapsible]]
-+[[/module]]
-+
-+[[include :scp-jp:component:interwiki-style
-+| priority=1
-+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css
-+]]
-+
-+[[include :scp-jp:component:interwiki-style
-+| priority=2
-+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css
-+]]
-+
-+[[include :scp-jp:component:interwiki-style
-+| priority=3
-+]]
-+
-+[[iftags +テーマ]]
-+[[include :scp-jp:credit:start-preview]]
-+**タイトル:** 人事部門テーマ
-+**翻訳責任者:** KanekoLiku
-+**翻訳年:** 2022
-+**翻訳について:** KanekoLiku による既存の翻訳を基に改変したものです。
-+**原題:** Human Resources Theme
-+**著作権者:** ©CityToast
-+**作成年:** 2021
-+**初訳時参照リビジョン:** 14
-+**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:scp-human-resources ソース]
-+[[include :scp-jp:credit:end-preview]]
-+
-++ 人事部門テーマ（SCP Human Resources）（SCP-JP 移植）
-+
-+本テーマは SCP-JP の人事部門テーマ（SCP Human Resources）を、外部サイトのテーマページに依存せず単体で適用できる形に移植したものです。Black Highlighter を基盤としています。
-+
-+**使い方:** ページ先頭に @@[[include theme:scp-human-resources-jp]]@@ を記述してください。
-+
-+**クレジット:** SCP-JP の人事部門テーマ作者、Black Highlighter の作者ならびに SCP Foundation Wiki に感謝します。
-+**改訳時参照リビジョン:** 14
-+
 +----
 +//出典: https://scp-jp.wikidot.com/theme:scp-human-resources（CC BY-SA 3.0）//
  [[/iftags]]

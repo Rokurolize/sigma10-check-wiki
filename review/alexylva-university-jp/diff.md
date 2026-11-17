@@ -8,19 +8,18 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 281 |
-| candidate.txt | 289 |
-| Added | +42 |
-| Review-stage comments | 0 of the +42 added lines |
+| candidate.txt | 288 |
+| Added | +41 |
+| Review-stage comments | 0 of the +41 added lines |
 | Removed | -34 |
 | Hunks | 11 |
 
 ```diff
 --- original.txt
 +++ candidate.txt
-@@ -1,23 +1,30 @@
+@@ -1,23 +1,29 @@
 +[[include :scp-jp:component:interwiki-style
 +| priority=1
-+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aalexylva-university-jp/1
 +]]
 +
 +[[iftags +テーマ]]
@@ -67,7 +66,7 @@ with `python3 review/build_review.py`; verify with
  /*
      Alexylva University Theme
      [2018 Wikidot Theme]
-@@ -29,9 +36,9 @@
+@@ -29,9 +35,9 @@
  
     /* FONTS */
  
@@ -80,7 +79,7 @@ with `python3 review/build_review.py`; verify with
  
     /* HEADER */
  
-@@ -54,7 +61,7 @@
+@@ -54,7 +60,7 @@
  
  #header h2 span::before {
      content: "GO VISIGOTHS!";
@@ -89,7 +88,7 @@ with `python3 review/build_review.py`; verify with
      font-weight: 700;
      font-weight: bold;
      color: #ffffff;
-@@ -62,7 +69,7 @@
+@@ -62,7 +68,7 @@
  
  #header h1 a::before {
      content: "Alexylva U.";
@@ -98,7 +97,7 @@ with `python3 review/build_review.py`; verify with
      font-weight: 700;
      color: white;
      font-style: normal;
-@@ -78,7 +85,7 @@
+@@ -78,7 +84,7 @@
  div#page-content {
      color: white;
      transform: rotatez(1deg);
@@ -107,7 +106,7 @@ with `python3 review/build_review.py`; verify with
  }
  */
  
-@@ -88,17 +95,17 @@
+@@ -88,17 +94,17 @@
      color: #9c3111;
      text-decoration: bold;
  }
@@ -128,7 +127,7 @@ with `python3 review/build_review.py`; verify with
  a:visited {
      color: #4c3c26;
  }
-@@ -111,7 +118,7 @@
+@@ -111,7 +117,7 @@
  }
  
  .scp-image-block .scp-image-caption {
@@ -137,7 +136,7 @@ with `python3 review/build_review.py`; verify with
     background-color:  #9c3111;
     color: white;
  }
-@@ -121,12 +128,12 @@
+@@ -121,12 +127,12 @@
  }
  
  #page-title {
@@ -152,7 +151,7 @@ with `python3 review/build_review.py`; verify with
      font-style: italic;
      color: black;
      font-weight: bold;
-@@ -139,7 +146,7 @@
+@@ -139,7 +145,7 @@
  .blockquote, blockquote {
      background-color:  #9c3111;
      color: black;
@@ -161,7 +160,7 @@ with `python3 review/build_review.py`; verify with
      border: 4px solid #d84519;
  }
  
-@@ -153,7 +160,7 @@
+@@ -153,7 +159,7 @@
  }
  
  .main-body-div{
@@ -170,7 +169,7 @@ with `python3 review/build_review.py`; verify with
      font-size: 1.5em;
      display: block;
      padding: 10px 25px;
-@@ -277,5 +284,6 @@
+@@ -277,5 +283,6 @@
      background: #B6925E;
  }
  

@@ -8,16 +8,16 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 864 |
-| candidate.txt | 834 |
-| Added | +42 |
-| Review-stage comments | 0 of the +42 added lines |
+| candidate.txt | 833 |
+| Added | +41 |
+| Review-stage comments | 0 of the +41 added lines |
 | Removed | -71 |
 | Hunks | 4 |
 
 ```diff
 --- original.txt
 +++ candidate.txt
-@@ -1,61 +1,41 @@
+@@ -1,61 +1,40 @@
 -[[iftags +theme]]
 -
 -[[>]]
@@ -71,7 +71,6 @@ with `python3 review/build_review.py`; verify with
 +
 +[[include :scp-jp:component:interwiki-style
 +| priority=1
-+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aart-deco-jp/1
 +]]
 +
 +[[iftags +テーマ]]
@@ -111,7 +110,7 @@ with `python3 review/build_review.py`; verify with
  
  :root {
      --white: #eee;
-@@ -68,9 +48,9 @@
+@@ -68,9 +47,9 @@
      --80per: calc(100% - 2rem);
      --90per: calc(100% - 1rem);
  
@@ -124,7 +123,7 @@ with `python3 review/build_review.py`; verify with
  
      --gold: linear-gradient(135deg, #ad7f3a, #bc9247, #e3c893, #faf7c5, #f5e29d, #d9b85a, #aa7f37, #9f6f30, #c58f44, #996c34, #6d461a, #754c1d, #906222);
      --gold2: linear-gradient(60deg, #b78a49, #dbb560, #f5efb5, #dbb560, #b78a49);
-@@ -118,7 +98,7 @@
+@@ -118,7 +97,7 @@
      --sp_tab-selected-text-color: var(--black);
      --sp_tab-selected-background: var(--yellow);
      --sp_tab-selected-border-color: var(--yellow);
@@ -133,7 +132,7 @@ with `python3 review/build_review.py`; verify with
      --sp_hovertip-background: var(--black);
      --sp_hovertip-border: 2px solid var(--yellow);
  }
-@@ -844,21 +824,11 @@
+@@ -844,21 +823,11 @@
      flex-basis: 30%;
      }
  }

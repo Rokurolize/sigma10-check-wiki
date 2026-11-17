@@ -84,6 +84,29 @@
      text-decoration: rgb(var(--medium-accent));
     }
 }
+
+.scp-image-block.block-right {
+    margin: 1em 0 1em 2em;
+}
+
+.scp-image-block a {
+    width: 100%;
+    min-width: 100%;
+}
+
+.scp-image-block img {
+    min-width: 100%;
+    border: 0.5rem solid rgba(var(--pale-gray-monochrome));
+    box-sizing: border-box;
+}
+
+#page-content > div.scp-image-block.block-right > a {
+    background-color: rgb(var(--gray-monochrome));
+}
+
+#page-content > div.scp-image-block.block-right > a > img {
+    padding: 1em;
+}
 [[/module]]
 
 [[include :scp-jp:component:interwiki-style
@@ -99,6 +122,10 @@
 [[include :scp-jp:component:interwiki-style
 | priority=3
 ]]
+
+[[div style="display: none"]]
+[[include :scp-jp:theme:scp-offices-theme-jp]]
+[[/div]]
 
 [[iftags +テーマ]]
 [[include :scp-jp:credit:start-preview]]
