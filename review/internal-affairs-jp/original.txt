@@ -1,0 +1,840 @@
+[[iftags +theme]]
+[[image https://scp-wiki.wdfiles.com/local--files/theme%3Ainternal-affairs/Internal%20Affairs%20Logo.png class="crom-thumbnail" style="display: none"]]
+
+[[module CSS]]
+@import url("https://nu-scptheme.github.io/Black-Highlighter/css/min/normalize.min.css");
+@import url("https://nu-scptheme.github.io/Black-Highlighter/css/min/black-highlighter.min.css");
+@import url("https://scp-wiki.wdfiles.com/local--code/theme%3Ajakstyle/1");
+[[/module]]
+[[include :scp-wiki:component:interwiki-style
+| priority=1
+| theme=https://nu-scptheme.github.io/Black-Highlighter/css/min/normalize.min.css
+]]
+[[include :scp-wiki:component:interwiki-style
+| priority=2
+| theme=https://nu-scptheme.github.io/Black-Highlighter/css/min/black-highlighter.min.css
+]]
+[[include :scp-wiki:component:interwiki-style
+| priority=3
+| theme=https://scp-wiki.wdfiles.com/local--code/theme%3Ajakstyle/1
+]]
+[[/iftags]]
+
+[[include :scp-wiki:component:centered-header-bhl]]
+[[include :scp-wiki:component:toggle-sidebar-bhl]]
+[[include :scp-wiki:component:betterfootnotes]]
+
+[[module CSS]]
+@import url(https://scp-wiki.wdfiles.com/local--code/theme%3Ainternal-affairs/1);
+[[/module]]
+[[include :scp-wiki:component:interwiki-style
+| priority=4
+| theme=https://scp-wiki.wdfiles.com/local--code/theme%3Ainternal-affairs/1
+]]
+
+[[iftags +theme]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
+
+[[include :scp-wiki:component:author-label-source start=--
+|name=badooga
+|no-right-margin=*]]
+
+[[[badooga-author-page|More By Badooga]]]
+
+[[include :scp-wiki:component:author-label-source end=--]]
+
+This is the Internal Affairs Theme by [[*user badooga]]. This [[[theme:jakstyle|JAKSTYLE]]]-derived theme is meant for works centering the Department of Internal Affairs, which is introduced in [[[SCP-9000]]] as an internal intelligence gathering group within the Foundation[[span class="fnnum"]].[[/span]][[span class="fncon"]]Though irrelevant to this theme, I personally envision Internal Affairs as having [[[fire-suppression-department-hub|Fire Suppression]]], Human Resources, and [[[Internal Affairs|Internal Security]]] as some of its subdivisions.[[/span]].
+
+[[div class="jotting" style="text-align: center"]]
+**On any page:**
+**{{@@[[include @@[[span style="opacity: 70%;"]]@@:scp-wiki:@@[[/span]]@@theme:@@##rgb(237, 113, 121)|black-highlighter-theme##]]}}**
+**{{@@[[include @@[[span style="opacity: 70%;"]]@@:scp-wiki:@@[[/span]]@@theme:@@##rgb(205, 205, 209)|jakstyle##]]}}**
+**{{@@[[include @@[[span style="opacity: 70%;"]]@@:scp-wiki:@@[[/span]]@@theme:@@##rgb(var(--bright-accent))|internal-affairs##]]}}**
+[[/div]]
+
+-----
+
++ __Usage__
+
+[[module css]]
+.colors-container .colors .color:nth-child(4),
+.colors-container .subcolors .color:nth-child(5) {
+  box-shadow: inset 0 0 0 0.12rem rgb(var(--medium-accent));
+}
+[[/module]]
+
+[[include :scp-wiki:component:theme-squares -=-
+| color1-name=Bright Accent
+| color1-variable=--bright-accent
+| color1-info=100, 140, 60
+| color2-name=Medium Accent
+| color2-variable=--medium-accent
+| color2-info=45, 82, 0
+| color2-has-light-text=1
+| color3-name=Gray Accent
+| color3-variable=--gray-accent
+| color3-info=78, 78, 83
+| color3-has-light-text=1
+| color4-name=Dark Accent
+| color4-variable=--dark-accent
+| color4-info=26, 26, 26
+| color4-has-light-text=1
+| subcolor1-name=Light Accent
+| subcolor1-variable=--light-accent
+| subcolor1-info=128, 187, 56
+| subcolor2-name=White Accent
+| subcolor2-variable=--white-accent
+| subcolor2-info=228, 228, 230
+| subcolor3-name=Pale Accent
+| subcolor3-variable=--pale-accent
+| subcolor3-info=213, 220, 204
+| subcolor4-name=Dark Gray Monochrome
+| subcolor4-variable=--dark-gray-monochrome
+| subcolor4-info=66, 66, 70
+| subcolor4-has-light-text=1
+| subcolor5-name=Black Monochrome
+| subcolor5-variable=--black-monochrome
+| subcolor5-info=33, 35, 37
+| subcolor5-has-light-text=1
+]]
+
+@@ @@
+
+[[include component:image-block name=https://scp-wiki.wikidot.com/local--files/theme:internal-affairs/Internal%20Affairs%20Logo.png|caption=Internal Affairs Logo by PlaguePJP|width=200px]]
+
+This theme includes and styles the [[[component:betterfootnotes|BetterFootnotes]]] component by [[*user EstrellaYoshte]] by default[[span class="fnnum"]].[[/span]][[span class="fncon"]]This is a footnote.[[/span]].
+
+A horizontal rule (see below) can be created with 5 hyphens "@@-----@@" and extends across the whole page if it's not placed inside anything (e.g. a blockquote). The lines separating sections of this document are horizontal rules.
+
+-----
+
+If you wrap those 5 hyphens in {{@@[[div class="default-hr"]]@@}}, you get a horizontal rule without the Internal Affairs logo:
+
+[[div class="default-hr"]]
+-----
+[[/div]]
+
+[http://www.google.com A link you probably visited once, idk]
+
+Titles can be created by putting between one and six plus "+" at the start of the line
+
+[[collapsible show="+ Titles" hide="- Titles"]]
++ First Title
+
+++ Second Title
+
++++ Third Title
+
+++++ Fourth Title
+
++++++ Fifth Title
+
+++++++ Sixth Title
+[[/collapsible]]
+
+@@ @@
+
+[[tabview]]
+[[tab Tabulator]]
+Why was the shovel so special?
+
+Because it was a groundbreaking invention
+[[/tab]]
+[[tab Tabulation]]
+More text.
+
+How quaint.
+[[/tab]]
+[[tab Long Tab]]
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+[[/tab]]
+[[tab This empty tab right here has a really long name.]]
+[[/tab]]
+[[tab Empty Tab]]
+[[/tab]]
+[[tab Empty Tab]]
+[[/tab]]
+[[tab Empty Tab]]
+[[/tab]]
+[[tab Empty Tab]]
+[[div class="blockquote"]]
+Why don't you trust me?
+[[div class="blockquote"]]
+Why don't you trust me?
+[[div class="blockquote"]]
+Why don't you trust me?
+[[/div]]
+[[/div]]
+[[/div]]
+[[/tab]]
+[[tab Empty Tab]]
+[[/tab]]
+[[/tabview]]
+@@ @@
+
+||~ This is a ||~ table ||
+||You should know || how to make these ||
+||||already ||
+||||= But do you?||
+
+Fun CSS additions:
+# Add the {{alt-accent}} class to a {{div}} to change its accent color from {{@@--bright-accent@@}} to {{@@--medium-accent@@}}. (You can also just edit {{@@--div-accent@@}} directly.)
+# Put {{@@[[span class="dblock"]]@@}} around your text to [[span class="dblock"]]redact[[/span]] it.
+# Put {{@@[[span class="bblock"]]@@}} around your text to [[span class="bblock"]]label[[/span]] it.
+# Add the {{rounded}} class to a {{div}} to make its borders rounded. (Also works with [[span class="dblock rounded"]]redactions[[/span]] and [[span class="bblock rounded"]]labels[[/span]].)
+
+[[div class="blockquote"]]
+
+= {{@@[[div class="blockquote"]]@@}}
+
+[[/div]]
+
+[[div class="notation"]]
+
+= {{@@[[div class="notation"]]@@}}
+
+[[/div]]
+
+[[div class="vertbox"]]
+
+= {{@@[[div class="vertbox"]]@@}}
+
+[[/div]]
+
+[[div class="jotting"]]
+
+= {{@@[[div class="jotting"]]@@}}
+
+[[/div]]
+
+[[div class="modal"]]
+
+= {{@@[[div class="modal"]]@@}}
+
+[[/div]]
+
+[[div class="smallmodal"]]
+
+= {{@@[[div class="smallmodal"]]@@}}
+
+[[/div]]
+
+[[div class="papernote"]]
+
+= {{@@[[div class="papernote"]]@@}}
+
+[[/div]]
+
+[[div class="emergency"]]
+
+= {{@@[[div class="emergency"]]@@}}
+
+[[/div]]
+
+@@ @@
+
+
+[[div_ class="scp-header default-hr"]]
+-----
+
+[[div_ class="scp-header-row"]]
+[[span]]**Item #:** SCP-XXXX[[/span]] ##rgb(var(--bright-accent))|**Level 2/XXXX**##
+[[/div]]
+
+[[div_ class="scp-header-row"]]
+[[span]]**Object Class:** Keter[[/span]] ##rgb(var(--bright-accent))|**Classified**##
+[[/div]]
+
+-----
+[[/div]]
+
+[[collapsible show="+ Example Code"]]
+[[div class="jotting alt-accent"]]
+
+{{@@[[div_ class="scp-header default-hr"]]@@}}
+{{@@-----@@}}
+
+{{@@[[div_ class="scp-header-row"]]@@}}
+{{@@[[span]]**Item #:** SCP-XXXX[[/span]] ##rgb(var(--bright-accent))|**Level 2/XXXX**##@@}}
+{{@@[[/div]]@@}}
+
+{{@@[[div_ class="scp-header-row"]]@@}}
+{{@@[[span]]**Object Class:** Keter[[/span]] ##rgb(var(--bright-accent))|**Classified**##@@}}
+{{@@[[/div]]@@}}
+
+{{@@-----@@}}
+{{@@[[/div]]@@}}
+
+[[/div]]
+[[/collapsible]]
+
+[[div class="vertbox alt-accent"]]
+
+[[div class="warning"]]
+[[div class="warninglogo" style="/* --spin-anim: none */"]]
+
+[[/div]]
+[[div class="warningtitle"]]
++* OPERATIONAL DEFICIENCY WARNING
+++* ID: 9000/TOTEM
+[[/div]]
+[[/div]]
+
+[[div class="papernote" style="max-width: 100%"]]
+Here's a recreation of a warning block you might find in [[[SCP-9000]]]. To disable the logo's spinning, set {{@@style="--spin-anim: none"@@}}.
+[[/div]]
+
+[[div style="margin-inline: auto"]]
+[[collapsible show="+ Example Code" hide="- Example Code"]]
+[[div class="jotting"]]
+{{@@[[div class="vertbox alt-accent"]]@@}}
+
+{{@@[[div class="warning"]]@@}}
+{{@@[[div class="warninglogo" style="/* --spin-anim: none */"]]@@}}
+
+{{@@[[/div]]@@}}
+{{@@[[div class="warningtitle"]]@@}}
+{{@@+* OPERATIONAL DEFICIENCY WARNING@@}}
+{{@@++* ID: 9000/TOTEM@@}}
+{{@@[[/div]]@@}}
+{{@@[[/div]]@@}}
+
+{{@@[[div class="papernote" style="max-width: 100%"]]@@}}
+{{@@Here's a recreation of a warning block you might find in [[[SCP-9000]]]. To disable the logo's spinning, set style="--spin-anim: none"@@}}.
+{{@@[[/div]]@@}}
+
+{{@@[[/div]]@@}}
+[[/div]]
+[[/collapsible]]
+[[/div]]
+
+[[/div]]
+
+-----
+
++ Source Code
+
+[[collapsible show="+ Source Code" hide="- Source Code"]]
+[[code type="css"]]
+/*
+    Internal Affairs Theme
+    [2026 Wikidot Theme]
+    Created by badooga.
+    Based on the Jakstyle theme created by JakdragonX.
+*/
+
+/*--- Root Variables ---*/
+:root {
+  --header-title: "INTERNAL AFFAIRS";
+  --header-subtitle: "SURVEIL - CONTROL - PERVADE";
+  --lgurl: url('https://scp-wiki.wikidot.com/local--files/theme:internal-affairs/Internal%20Affairs%20Logo.png');
+  --logo-image: var(--lgurl);
+
+  --white-accent: 228, 228, 230;
+  --pale-accent: 213, 220, 204;
+  --light-accent: 128, 187, 56;
+  --bright-accent: 100, 140, 60; /* main one */
+  --gray-accent: 78, 78, 83;
+  --medium-accent: 45, 82, 0;
+  --dark-accent: 26, 26, 26;
+
+  --black-monochrome: 33, 35, 37;
+  --gray-monochrome: 215, 215, 215;
+  --dark-gray-monochrome: 66, 66, 70;
+  --pale-gray-monochrome: var(--pale-accent);
+  
+  --swatch-tertiary-color: var(--light-accent), 0.8;
+  --swatch-text-light: var(--white-accent);
+  --swatch-text-general: var(--swatch-text-light);
+  --swatch-border-color: var(--bright-accent);
+  --blockquote-bg-color-fallback: 39, 39, 40; /* --blockquote-bg-color + 0.75 * --dark-accent */
+
+  --link-color: var(--bright-accent);
+  --rating-module-text-color: var(--white-accent);
+  --fnColor: #75a641; /* link text color */
+
+  --header-h1-font-size: clamp(1rem, calc(0.9rem + 3.5vw), 2.8125rem);
+  --header-h2-font-size: clamp(0.75rem, calc(0.75rem + 0.5vw), 1rem);
+
+  --ui-button-hover-bg: var(--medium-accent);
+}
+
+#main-content {
+  --div-accent: var(--bright-accent);
+  --blockquote-bg-color: var(--gray-accent), 0.25;
+
+  --ui-icon-color: var(--bright-accent);
+  --tabs-hover-bg: var(--bright-accent), 0.8;
+  --tabs-hover-txt: var(--dark-accent);
+
+  --tables-border: var(--medium-accent);
+  --tables-body-bg: var(--blockquote-bg-color);
+}
+
+/*--- Undo Grayscale ---*/
+body,
+.yui-navset .yui-content,
+.yui-navset .yui-navset-top .yui-content {
+  color: rgb(var(--swatch-text-light));
+}
+
+::selection {
+  background: rgba(var(--light-accent), 0.25);
+}
+
+/*--- Front Matter ---*/
+#login-status {
+  color: transparent;
+}
+
+#side-bar, #interwiki {
+  --sideblock-heading-text-color: var(--bright-accent);
+}
+
+/*- Header -*/
+#header {
+  --swatch-headerh2-color: var(--pale-gray-monochrome);
+}
+
+#header::before {
+  --header-gap: 1rem;
+  top: var(--header-gap);
+  background-size: auto calc(var(--header-height-on-desktop) - var(--header-gap) * 2);
+  opacity: 0.35;
+}
+
+#header h1 a::after {
+    color: rgb(var(--bright-accent));
+}
+
+#header #login-status #account-options {
+  --login-dropdown-bg-color: var(--blockquote-bg-color-fallback);
+}
+
+div#page-title, div.meta-title {
+  color: rgb(var(--bright-accent));
+}
+
+#page-content .meta-title {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  margin-block: -0.55rem;
+  grid-template-rows: 2rem 1.5lh;
+  column-gap: 1.25rem;
+}
+#page-content .meta-title::before,
+#page-content .meta-title::after {
+  background: rgba(var(--swatch-primary), 0.5);
+  margin-inline: 0;
+}
+
+/*- Rating Module and Author Info Components -*/
+.authorlink-wrapper {
+  --author-top-adjust: -0.3rem;
+  /* --author-bottom-adjust: -0.9rem; */
+}
+
+.authorbox {
+  --swatch-text-general: var(--swatch-text-light);
+  --swatch-background: var(--blockquote-bg-color-fallback);
+}
+
+/*- Breadcrumbs -*/
+#page-content :is(#breadcrumbs, .pseudocrumbs) {
+  font-family: var(--UI-font);
+  margin-block: -2.5em 1.5em;
+  line-height: 1.5;
+  display: block;
+}
+#page-content :is(#breadcrumbs, .pseudocrumbs) > p {
+  margin-block: 0.35lh;
+}
+
+#page-content :is(#breadcrumbs, .pseudocrumbs) a {
+  display: inline-block;
+  box-shadow: none;
+  position: relative;
+  margin-inline: 0.35em;
+  padding-inline: 0.15em 0.3em;
+  padding-block: 0;
+}
+#page-content :is(#breadcrumbs, .pseudocrumbs) a:first-child,
+#page-content :is(#breadcrumbs, .pseudocrumbs) a:first-child:is(:focus, :hover) {
+  margin-inline: 0 0.35em;
+}
+#page-content :is(#breadcrumbs, .pseudocrumbs) a:is(:focus, :hover) {
+  margin-inline: 0.35em;
+  padding-inline: 0.15em 0.3em;
+}
+
+#page-content :is(#breadcrumbs, .pseudocrumbs) a::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  display: inline-block;
+  box-shadow: none;
+  border-bottom: 0.125rem solid rgb(var(--bright-accent));
+  border-right: 0.125rem solid rgb(var(--bright-accent));
+}
+#page-content :is(#breadcrumbs, .pseudocrumbs) a:is(:focus, :hover)::before {
+  box-shadow: inset 0 -1.5em 0 0 rgba(var(--bright-accent));
+  transition: all 400ms cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+/*--- Back Matter ---*/
+div[id*="page-options-bottom"]:not(:is(.page-rate-widget-box, #search-top-box-form)) > a.btn:is(:hover, :active, :focus, :focus-within) {
+  border: solid 0.05rem rgba(var(--white-accent), 0.35);
+  --ui-button-hover-bg: var(--blockquote-bg-color);
+}
+
+/*--- Page Contents ---*/
+h1 {
+  color: rgb(var(--bright-accent));
+}
+
+/*- Links -*/
+#page-content a:not([href*="user"], [href*="javascript:;"], :where(.fa-info), [href*="http://www.scp-wiki.net/classification-committee-memo"], [href="http://scp-wiki.wikidot.com/anomaly-classification-system-guide"], [href="/classification-committee-memo"]) {
+  box-shadow: inset 0 -0.125rem 0 0rem rgba(var(--link-color));
+}
+
+/*- Horizontal Rule from Cosmos Theme -*/
+#page-content hr:not(.default-hr hr) {
+  --hr-icon-size: 2.5rem;
+  margin: .5rem 0;
+  background: transparent;
+  height: var(--hr-icon-size);
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  border-color: transparent !important;
+}
+#page-content hr:not(.default-hr hr)::before,
+#page-content hr:not(.default-hr hr)::after {
+  content: "";
+  display: grid;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+#page-content hr:not(.default-hr hr)::before {
+  height: 0.05rem;
+  width: 100%;
+  background-image: linear-gradient(90deg, rgb(var(--bright-accent)) calc(50% - var(--hr-icon-size)/2 - 0.35rem), transparent calc(50% - var(--hr-icon-size)/2 - 0.35rem), transparent calc(50% + var(--hr-icon-size)/2 + 0.35rem), rgb(var(--bright-accent)) calc(50% + var(--hr-icon-size)/2 + 0.35rem));
+}
+#page-content hr:not(.default-hr hr)::after {
+  width: var(--hr-icon-size);
+  height: var(--hr-icon-size);
+  background-image: var(--lgurl);
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.8;
+}
+
+/*- Tables -*/
+#page-content div.b-tables table.wiki-content-table th,
+#page-content table.wiki-content-table th {
+  color: rgb(var(--tabs-hover-txt));
+  background: rgb(var(--bright-accent));
+  --tables-border: revert;
+}
+
+/*- Image Blocks -*/
+#page-content div:is(.image-block, .scp-image-block) img {
+  background: unset;
+}
+
+:is(div.image-block, div.scp-image-block) :is(.image-caption, .scp-image-caption) {
+  background-color: rgb(var(--medium-accent));
+  color: rgb(var(--white-accent));
+}
+
+/*- Tabviews -*/
+:is(.yui-navset, .yui-navset-top, .yui-navset-bottom) .yui-nav li a {
+  color: rgb(var(--white-accent));
+}
+
+:is(.yui-navset, .yui-navset-top, .yui-navset-bottom) .yui-nav .selected {
+  box-shadow: unset;
+  translate: 0;
+}
+
+:is(.yui-navset, .yui-navset-top, .yui-navset-bottom) .yui-nav li a::before {
+  clip-path: unset;
+  background-color: rgb(var(--blockquote-bg-color-fallback));
+  transition: inherit;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.yui-navset .yui-content, .yui-navset .yui-navset-top .yui-content {
+  background: rgb(var(--blockquote-bg-color));
+  border: none;
+  border-top: solid rgb(var(--bright-accent));
+  border-top-width: 5px;
+}
+
+/* Tab Animation by Croquembouche */
+:is(.yui-navset, .yui-navset-top, .yui-navset-bottom) .yui-nav :is(li, a) {
+  transition: all calc(1s/3);
+}
+:is(.yui-navset, .yui-navset-top, .yui-navset-bottom) .yui-nav li a em {
+  transition: none;
+}
+
+.yui-content > div {
+    display: block;
+    top: 0;
+    overflow: hidden;
+    transform-origin: 0 0;
+}
+.yui-content > div[style*="none"] {
+    display: block !important; /* necessary to override CSS in style attribute */
+    flex: 0;
+    max-height: 0;
+    padding: 0 0.5em;
+    border-width: 0;
+    /* The following transition affects the one that DISAPPEARS */
+    transition: padding 0s linear 0.5s,
+          border-width 0s linear 0.5s,
+          flex 0.5s cubic-bezier(.18,.51,.54,.9) 0s;
+    animation: tab-disappear 0.5s ease-in-out 0s 1 both;
+}
+.yui-content > div[style*="block"] {
+    display: block !important; /* necessary to override CSS in style attribute */
+    flex: 1;
+    max-height: 9999rem;
+    /* The following transition affects the one that APPEARS */
+    transition: padding 0s linear 0.5s,
+          border-width 0s linear 0.5s,
+          flex 0.5s cubic-bezier(.18,.51,.54,.9) 0.5s;
+    animation: tab-appear 0.5s ease-in-out 0.5s 1 both;
+}
+
+@keyframes tab-disappear {
+    0% { max-height: 9999rem; }
+    1% { max-height: 100vh; }
+    100% { max-height: 0; }
+}
+@keyframes tab-appear {
+    0% { max-height: 0; }
+    99% { max-height: 100vh; }
+    100% { max-height: 9999rem; }
+}
+
+/*- Divs -*/
+:is(blockquote, .blockquote),
+.darkbox, .notation, .vertbox, .jotting,
+.modal, .smallmodal, .papernote, .emergency {
+  display: block;
+  margin-inline: auto;
+  margin-block: 1.4rem;
+}
+
+:is(blockquote, div.blockquote)  {
+  background: rgb(var(--blockquote-bg-color));
+  border-left: solid 0.15rem rgb(var(--div-accent));
+  box-shadow: none;
+}
+
+div.darkbox, div.notation {
+  background: rgb(var(--blockquote-bg-color));
+  max-width: 38rem;
+  padding-inline: 1.1rem;
+  padding-block: 0.9rem;
+  border-left: solid 0.2rem rgb(var(--div-accent));
+  border-right: solid 0.2rem rgb(var(--div-accent));
+}
+
+div.vertbox {
+  background: rgb(var(--blockquote-bg-color));
+  max-width: 38rem;
+  padding-inline: 1.1rem;
+  padding-block: 0.9rem;
+  border-top: solid 0.2rem rgb(var(--div-accent));
+  border-bottom: solid 0.2rem rgb(var(--div-accent));
+}
+
+div.jotting {
+  background: rgb(var(--blockquote-bg-color));
+  max-width: 36rem;
+  padding-inline: 1.5rem;
+  padding-block: 0.2rem;
+  border: dashed 0.15rem rgb(var(--div-accent));
+}
+
+div.modal {
+  padding-inline: 1.5rem;
+  padding-block: 0.5rem;
+  border: solid 0.2rem rgb(var(--div-accent));
+}
+
+div.smallmodal {
+  max-width: 40rem;
+  padding-inline: 1rem;
+  padding-block: 0.2rem;
+  border: solid 0.15rem rgb(var(--div-accent));
+}
+
+div.papernote {
+  max-width: 30rem;
+  padding: 1em 2em;
+  background: rgb(var(--medium-accent));
+}
+
+div.emergency { /* From SCP-9001 */
+  position: relative;
+  background: rgba(var(--div-accent), 0.075);
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, .2);
+  max-width: 38rem;
+  padding-inline: 1.1rem;
+  padding-block: 0.9rem;
+}
+div.emergency::before, div.emergency::after {
+  content: "";
+  height: 0.3rem;
+  left: 0;
+  right: 0;
+  background-image: repeating-linear-gradient(135deg, rgb(var(--bright-accent)) 0ch, rgb(var(--bright-accent)) 1ch, rgb(var(--medium-accent)) 1ch, rgb(var(--medium-accent)) 1.75ch, rgb(var(--medium-accent)) 1.75ch);
+  position: absolute;
+}
+div.emergency::before { top: 0 }
+div.emergency::after { bottom: 0 }
+
+#page-content div.alt-accent {
+  --div-accent: var(--medium-accent);
+}
+
+#page-content :is(.round, .rounded) {
+  border-radius: 0.4rem;
+}
+
+/*- Internal Affairs-Specific Entries -*/
+
+/* Warning Banner from SCP-9000 */
+div.warning {
+  display: grid;
+  grid-template-columns: 0.75fr 1fr;
+  align-items: center;
+  grid-column-gap: 1rem;
+}
+
+div.warning .warningtitle {
+  text-align: center;
+}
+div.warning .warningtitle h1 {
+  color: rgb(var(--light-accent));
+  font-size: clamp(1.375em, 5vw, 2.5em);
+  line-height: 1.1;
+}
+div.warning .warningtitle h2 {
+  color: rgb(var(--light-accent));
+  margin-top: 1rem;
+  line-height: 1.1;
+  font-size: clamp(1.125em, 4.2vw, 2.125em);
+}
+
+div.warning .warninglogo {
+  aspect-ratio: 1 / 1;
+  margin: 1.5em;
+  background-image: var(--lgurl);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: var(--spin-anim, ia-spin) 20s cubic-bezier(1, 1, 1, 1) infinite;
+}
+@keyframes ia-spin {
+  100% { transform: rotate(360deg); }
+}
+
+/* SCP Header from SCP-9001-A */
+.scp-header {
+  font-size: 125%;
+}
+.scp-header > .scp-header-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0 1ch;
+}
+
+/* Labels and Redactions */
+span.bblock, span.bblock::selection {
+  --swatch-menubg-black-color: var(--bright-accent);
+  padding: .125em;
+  color: black;
+  background: rgb(var(--bright-accent));
+}
+
+span.dblock {
+  padding: 0.15em 0;
+  color: rgb(var(--white-accent));
+  background-color: rgb(var(--white-accent));
+  transition-duration: 1s;
+}
+
+.label {
+  color: black;
+  padding: .125em;
+  white-space: nowrap;
+  background: rgb(var(--bright-accent));
+}
+
+/*- Better Footnotes -*/
+.fnnum {
+  --wght: 700;
+}
+
+.fncon {
+  background: rgb(var(--blockquote-bg-color-fallback));
+  border-color: rgb(var(--bright-accent));
+}
+.fncon::before {
+  color: rgb(var(--black-monochrome));
+}
+[[/code]]
+[[/collapsible]]
+
+@@ @@
+
+-----
+
+[[=]]
+[[module Rate]]
+
+[[include :scp-wiki:component:license-box-theme | author=badooga]]
+> **Name:** [https://scp-wiki.wdfiles.com/local--files/theme%3Ainternal-affairs/Internal%20Affairs%20Logo.png Internal Affairs Logo.png]
+> **Author:** [[*user plaguepjp]]
+> **License:** CC BY-SA 3.0
+> **Source:** [[[SCP-9000]]]
+[[include :scp-wiki:component:license-box-end]]
+[[/=]]
+
+[[/iftags]]

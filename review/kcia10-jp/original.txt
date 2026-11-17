@@ -1,0 +1,645 @@
+[[module CSS]]
+@import url(https://scpko.wikidot.com/local--code/theme%3Akcia10/0);
+[[/module]]
+
+[[iftags +테마]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
+
+[[include info:start]]
+**중앙정보부 제10국 테마**
+**제작:** [[*user thd-glasses]]
+
+**이미지 출처**
+* 사용된 모든 이미지는 [[*user thd-glasses]]가 직접 제작함.
+* 로고는 [https://commons.wikimedia.org/wiki/File:Flag_of_Korean_Central_Intelligence_Agency.svg 중앙정보부 기]를 참고해 제작함.
+
+@@@@
+@@@@
+@@@@
+@@@@
+
+[[div style="border-radius: 15px; border:solid 3px #663333; background-color: #DDDDDD; width: 250px; margin: auto; padding: 0px; text-align: center;"]]
++++++ [[[thd-glasses-hub|thd-glasses의 작품 더 보기]]]
+[[/div]]
+
+@@@@
+@@@@
+
+[[include info:end]]
+
++ 사용 방법: 중앙정보부 제10국 CSS 테마
+* [[[kcia10|중앙정보부 10국]]]을 위한 전용 테마입니다.
+* 본 테마를 적용할 페이지 최상단에 다음 구문을 삽입하세요.
+> [[include :scpko:theme:kcia10]]
+* 탭뷰에 표지 탭을 사용하는 경우, 해당 탭뷰를 "fancytab" 클래스의 div 박스로 감싸세요.
+
++ How to use: KCIA the 10th Bureau CSS THEME
+* This is the original theme for the KCIA the 10th Bureau.
+* Add the following code on the top of your page.
+> [[include :scpko:theme:kcia10]]
+* If your tabview have a cover tab, wrap the tabview with a div class="fancytab".
+
+[[code type="CSS"]]
+/*
+    중앙정보부 제10국 CSS 테마
+    [2020 Wikidot Theme]
+    Based on SCP Sigma 9 Theme created by Aelanna and Dr Devan.
+    Code adopted from Wilsons Theme created by stormbreath.
+*/
+
+@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+.nanummyeongjo * { font-family: 'Nanum Myeongjo', serif;}
+@font-face {
+     font-family: 'locus_sangsang';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/locus_sangsang.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+@font-face {
+    font-family: 'ChosunGu';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BBTreeCB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeCB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+ :root {
+     --kcia: "중앙정보부";
+     --10th: "제10국";
+     --motto: "우리는 음지에서 일하고 양지를 지향한다";
+     --font: 'locus_sangsang';
+     --weight: 500;
+     --space: 2px;
+
+/*  EN translation
+     --kcia: "KCIA";
+     --10th: "the 10th Bureau";
+     --motto: "⠀We work in the dark to serve the light";
+     --font: 'locus_sangsang';
+     --weight: 700;
+     --space: 0.5px;
+*/
+}
+
+/* COMMON */
+#page-title {
+     font-family: var(--font), Arial, sans-serif;
+     font-size: 250%;
+     font-weight: 100;
+     color: #012060;
+}
+
+body {
+     background: #FFF;
+     font-family: 'ChosunGu', Arial, sans-serif;
+     -webkit-tap-highlight-color: transparent;
+}
+
+.page-rate-widget-box .rate-points,
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown,
+.page-rate-widget-box .cancel,
+.nofont {
+  font-family: verdana, "Nanum Gothic", arial, helvetica, sans-serif;
+}
+
+#page-content {
+  font-size: 1.1em;
+}
+
+#page-content .creditButton p a, #page-content .nofont > * {
+  font-size: 1.05em;
+}
+
+h1 {
+     font-size: 180%;
+     font-weight: 400;
+     color: #012060;
+}
+
+h2 {
+     font-size: 140%;
+}
+
+h1, h2 {
+     font-family: var(--font), Arial, sans-serif;
+}
+
+ #side-bar a, #side-bar a:visited, #side-bar a.newpage {
+     color: #012060;
+}
+
+ a, a:visited, a.newpage {
+     color: #F80;
+}
+
+#page-content ul li {
+  list-style: "― ";
+  word-break: keep-all;
+}
+
+.expunged {
+  color: #000;
+  background: #000;
+  padding: 0 1px 0 1px;
+}
+
+/* HEADER */
+div#container-wrap {
+    background: none;
+}
+
+div#extra-div-1 {
+    height: 162px;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    background: #012060;
+}
+
+div#extra-div-2 {
+    display: none;
+    height: 138px;
+    width: 7%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: #FFF;
+}
+
+ #search-top-box-input {
+     border: transparent;
+     color: #FFF;
+     background-color: #012060;
+     box-shadow: none;
+}
+
+ #search-top-box-input:hover, #search-top-box-input:focus {
+     border: transparent;
+     color: #FFF;
+     background-color: #012060;
+     box-shadow: inset 1px 1px 3px rgba(0,0,0,.5);
+}
+
+ #search-top-box-form input[type=submit] {
+     border: transparent;
+     color: #FFF;
+     background: #012060;
+     box-shadow: none;
+}
+
+ #search-top-box-form input[type=submit]:hover, #search-top-box-form input[type=submit]:focus {
+     border: solid 1px #FFF;
+     color: #FFF;
+     background: #012060;
+}
+
+ #header {
+     background: url(https://scpko.wdfiles.com/local--files/theme%3Akcia10/kcia10_title.png) no-repeat;
+     -webkit-background-size: 240px;
+     background-size: 240px;
+     background-position: 0px -10px;
+}
+
+ #header h1 {
+     margin-left: 230px;
+}
+ #header h2 {
+     margin-left: 230px;
+}
+
+ #header h1 a {
+     color: transparent;
+     font-family: var(--font), Arial, sans-serif;
+     font-size: 170%;
+     font-weight: var(--weight);
+     text-shadow: none;
+     letter-spacing: var(--space);
+}
+
+ #header h1 a::before {
+     content: var(--kcia) " " var(--10th);
+     color: white;
+     text-shadow: none;
+}
+
+ #header h2 span {
+     color: transparent;
+     font-family: 'Merriweather', 'Nanum Myeongjo', Arial, sans-serif;
+     font-size: 120%;
+     text-shadow: none;
+     margin-left: 5px;
+}
+
+ #header h2 span::before {
+     content: var(--motto);
+     color: white;
+     text-shadow: none;
+}
+
+ #top-bar a {
+     color: #FFF;
+}
+
+ #top-bar ul li ul {
+     border: solid 1px #012060;
+     box-shadow: none;
+}
+
+ #top-bar ul li.sfhover a, #top-bar ul li:hover a {
+     background: #012060;
+     color: #F80;
+}
+
+ #top-bar ul li.sfhover ul li a, #top-bar ul li:hover ul li a {
+     border-top: 1px solid #012060;
+}
+
+ #top-bar ul li.sfhover a:hover, #top-bar ul li:hover a:hover {
+     background: #FFF;
+}
+
+ #top-bar ul li ul a, #top-bar a:hover {
+     color: #F80;
+}
+
+
+/* SIDE MENU */
+ #side-bar {
+     background: none;
+}
+ #side-bar img {
+     filter: hue-rotate(226deg);
+     -webkit-filter: hue-rotate(226deg);
+}
+ #side-bar .side-block {
+     border: 1px solid #444;
+     background: #FFF !important;
+     box-shadow: none !important;
+}
+ #side-bar .collapsible-block-folded {
+     background: none;
+}
+ #side-bar .heading {
+     color: #012060;
+     border-bottom: solid 1px #012060;
+}
+
+/* Rating Module */
+ .page-rate-widget-box{
+     box-shadow: none;
+}
+
+ .page-rate-widget-box .rate-points {
+     background-color: #012060 !important;
+     border: solid 1px #012060;
+     color: #F80;
+}
+
+ .page-rate-widget-box .rateup, .page-rate-widget-box .ratedown {
+     background-color: #FFF;
+     border-top: solid 1px #012060;
+     border-bottom: solid 1px #012060;
+}
+
+ .page-rate-widget-box .rateup a, .page-rate-widget-box .ratedown a {
+     color: #F80;
+     font-weight: 900;
+}
+
+ .page-rate-widget-box .rateup a:hover, .page-rate-widget-box .ratedown a:hover {
+     background: #DDD;
+     color: #F80;
+     font-weight: 900;
+}
+
+ .page-rate-widget-box .cancel {
+     background-color: #012060;
+     border: solid 1px #012060;
+}
+
+ .page-rate-widget-box .cancel a {
+     color: #F80;
+}
+
+ .page-rate-widget-box .cancel a:hover {
+     background-color: #012060;
+     color: #FFF;
+}
+
+/* Info Rating Module */
+
+ .rate-box-with-credit-button {
+     background-color: #012060 !important;
+     border: 1px solid #012060 !important;
+     border-radius: 5px !important;
+     box-shadow: none !important;
+}
+
+ .rate-box-with-credit-button .creditButton p a {
+     border-left-color: #012060 !important;
+     color: #F80;
+}
+
+ .rate-box-with-credit-button .creditButton p a:hover {
+     color: #FFF;
+}
+
+ .rate-box-with-credit-button .page-rate-widget-box .cancel {
+     border-radius: 0;
+}
+
+ .rate-box-with-credit-button .page-rate-widget-box .rate-points {
+     border-left: 0;
+}
+
+/* Heritage Collection Rating Module */
+
+ .heritage-rating-module {
+     background-color: #012060;
+     box-shadow: none;
+}
+
+/* table */
+
+ table.wiki-content-table {
+    text-align: center;
+    width: 100%;
+    line-height: 18px;
+    word-break: keep-all;
+}
+
+/* tabview */
+
+.yui-navset .yui-nav {
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: flex-start;
+  width: 100%;
+  overflow: hidden;
+  background: #012060;
+}
+
+.yui-navset .yui-nav a, .yui-navset .yui-nav .selected a {
+  padding: 0.1em 0.7em 0;
+}
+.yui-navset .yui-nav a em, .yui-navset .yui-nav .selected a em {
+  border: none;
+  padding: 0 0.7em;
+}
+
+.yui-navset .yui-nav .selected a em {
+  background: #F80;
+  color: #012060;
+  margin: 0;
+}
+
+.yui-navset .yui-nav a {
+  background: #012060;
+  border: none;
+  font-size: 1em;
+  font-weight: 500;
+  color: #F80;
+  text-shadow: 0.5px 0;
+  position: relative;
+}
+
+.yui-navset .yui-nav .selected,
+.yui-navset .yui-nav li {
+  margin: 0.1em 0;
+  max-width: 100%;
+}
+
+.yui-navset .yui-nav a:hover, .yui-navset .yui-nav a:focus {
+  background: #012060;
+  filter: brightness(1.1);
+  z-index: 1;
+}
+
+.yui-navset .yui-nav .selected a, .yui-navset .yui-nav .selected a:focus, .yui-navset .yui-nav .selected a:hover {
+  background: #012060;
+  filter: brightness(1);
+  color: #F80;
+  z-index: 2;
+}
+
+.fancytab .yui-nav li:first-child {
+  width: 100%;
+  background: #FFF;
+  pointer-events: none;
+  margin: 0;
+  padding: 0.1em 0 0;
+}
+
+.fancytab .yui-nav li:first-child a {
+  clip-path: polygon(10px 0%, 0% 105%, 100% 105%, calc(100% - 10px) 0%);
+  pointer-events: auto;
+}
+
+.fancytab .yui-nav li:first-child a em {
+  padding: 0 0.5em;
+  margin: 0.1em 0.3em;
+}
+
+.yui-navset .yui-content {
+  border-bottom: 2px solid #012060;
+  box-size: border-box;
+  background: #FFF;
+  padding: 0.5em 1em;
+  z-index: 3;
+}
+
+.yui-content blockquote,
+.yui-content div.blockquote,
+blockquote blockquote,
+blockquote div.blockquote,
+div.blockquote blockquote,
+div.blockquote div.blockquote {
+  background: #E5E5E2;
+}
+
+.yui-content a, blockquote a, div.blockquote a {
+  filter: brightness(0.9);
+}
+
+/* RAISA box */
+
+.raisa {
+  position: relative;
+  height: fit-content;
+  background: #f2f2c2;
+  border: solid 1px #999;
+  padding: 0.5em 1em;
+  overflow: hidden;
+  font-size: 0.75rem;
+}
+
+#page-content .raisa ul li {
+  list-style: square;
+}
+
+.raisa > ul {
+  margin: 0.5em 0;
+  padding-left: 2em;
+}
+
+.raisa.chronicle > ul > li:first-child {
+  letter-spacing: -1px;
+}
+
+@media (max-width: 767px) {
+  #page-content ul li ul,
+  .raisa > ul {
+    padding-left: 1em;
+  }
+}
+
+#page-content .memoR, #page-content .memoL {
+  font-family: 'BBTreeCB';
+  font-size: 150%;
+  line-height: 10%;
+  word-break: keep-all;
+  font-style: italic;
+  max-width: 500px;
+  width: 70%;
+  clear: both;
+}
+
+.memoR {
+  text-align: right;
+  float: right;
+  transform: rotate(-3deg);
+}
+
+.memoL {
+  text-align: left;
+  float: left;
+  transform: rotate(3deg);
+  margin-top: -1em;
+}
+
+
+@media (max-width: 767px) {
+  .contents, .memoR, .memoL {
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+  }
+}
+
+@media (max-width: 479px) {
+  .memoR, .memoL {
+    max-width: 390px;
+  }
+}
+
+/* Mobile Media Query */
+ @media (max-width: 519px) {
+    div#extra-div-2 {
+        display: block;
+    }
+     #header {
+         width: 100%;
+         background-position: -65px -10px;
+    }
+     #header h1 a::before {
+         content: var(--kcia);
+    }
+     #header h2 span:before {
+         font-family: var(--font), Arial, sans-serif;
+         content: var(--10th);
+    }
+     #header h1 {
+         margin-left: 150px;
+         margin-top: 5px;
+    }
+     #header h2 {
+         margin-left: 150px;
+         margin-top: -5px;
+    }
+}
+/* Small Mobile Media Query */
+ @media (max-width: 385px) {
+     #search-top-box {
+         top: 110px;
+    }
+}
+/* Note Media Query */
+ @media (min-width: 520px) and (max-width: 580px) {
+    div#extra-div-2 {
+        display: block;
+    }
+     #header {
+         width: 100%;
+         background-position: -65px -10px;
+    }
+     #header h1 a {
+         font-size: 125%;
+    }
+     #header h2 span {
+        font-size: 90%;
+    }
+     #header h1 {
+         margin-left: 28%;
+         margin-top: 5px;
+    }
+     #header h2 {
+         margin-left: 28%;
+         margin-top: -5px;
+    }
+}
+/* Mini Tablet Media Query */
+ @media (min-width: 581px) and (max-width: 767px) {
+    div#extra-div-2 {
+        display: block;
+    }
+     #header {
+         width: 100%;
+         background-position: -60px -10px;
+    }
+     #header h1, #header h2 {
+         margin-left: 25%;
+    }
+}
+
+/* Control */
+ @media (max-width: 850px) {
+     #header {
+         max-width: 100%;
+    }
+     #search-top-box-input {
+        display: none;
+    }
+}
+
+/* Interwiki */
+ #side-bar .scpnet-interwiki-wrapper iframe.scpnet-interwiki-frame {
+     border: none;
+     padding: 0;
+     box-radius: 0px;
+     box-shadow: none;
+     background-color: #FFF !important;
+     -webkit-filter: hue-rotate(220deg) brightness(126%);
+     filter: hue-rotate(220deg) brightness(126%);
+}
+
+ @media (max-width: 767px) {
+     #side-bar {
+        background: #FFF;
+    }
+
+     #side-bar .scpnet-interwiki-wrapper iframe.scpnet-interwiki-frame {
+        background-color: transparent !important;
+    }
+}
+[[/code]]
+[[/iftags]]
