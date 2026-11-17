@@ -5,18 +5,124 @@ candidate.txt in this directory; do not hand-edit it. Regenerate
 with `python3 review/build_review.py`; verify with
 `python3 review/build_review.py --check`.
 
+Tier 2 format (large diff): summary header, change-block
+index, then the full diff in collapsed sections. Purely
+mechanical sections are grouped into one collapsed section
+at the end. Auto-class labels are heuristic (token-level
+normalization only); the package README.md carries the
+adjudicated explanation.
+
 | | Lines |
 |---|---|
 | original.txt | 916 |
-| candidate.txt | 1008 |
+| candidate.txt | 1046 |
 | Added | +240 |
 | Review-stage comments | 0 of the +240 added lines |
-| Removed | -154 |
-| Hunks | 17 |
+| Removed | -110 |
+| Changed | 350 |
+| Change blocks | 81 |
+| Diff sections (context 3) | 16 |
+
+## Changed lines by auto-class (heuristic)
+
+| Auto-class | Blocks | Changed lines |
+|---|---|---|
+| mechanical | 4 | 5 |
+| supplement | 8 | 35 |
+| residual | 69 | 310 |
+
+## Change-block index
+
+| # | Section | Original | Candidate | +/− | Auto-class | Gist |
+|---|---|---|---|---|---|---|
+| 1 | 1 | 1–1 | 1–1 | +1/−1 | residual | [[include component:sigma-plus-jp]] |
+| 2 | 1 | 3–3 | 3–3 | +1/−1 | supplement | @import url(https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aspace-jp/… |
+| 3 | 1 | 6–6 | 6–6 | +1/−1 | supplement | [[include :scp-jp:component:interwiki-style |
+| 4 | 1 | 8–8 | 8–8 | +1/−1 | supplement | \| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aspace-jp/1 |
+| 5 | 1 | 12–15 | 12–23 | +12/−4 | supplement | [[iftags +テーマ]] |
+| 6 | 1 | 17–17 | 25–25 | +1/−1 | residual | これはEstrellaYoshteによって作られた美しさを追求したテーマです。 |
+| 7 | 1 | 19–19 | 27–27 | +1/−1 | residual | このテーマを使用するには、以下を挿入してください: |
+| 8 | 1 | 21–21 | 29–29 | +1/−1 | residual | > {{@@[[include :scp-jp:theme:space-jp]]@@}} |
+| 9 | 1 | 23–23 | 31–31 | +1/−1 | residual | 普遍的宇宙テーマは[[[component:sigma-plus-jp\|Sigma+]]]テーマです。 |
+| 10 | 1 | 27–27 | 35–35 | +1/−1 | residual | [[include :scp-jp:component:image-block name= https://scp-jp-storage.wdfiles.… |
+| 11 | 1 | 29–29 | 37–37 | +1/−1 | residual | 上の装飾付きの罫線は、5つのハイフン「- - - - - 」を使用して作成できます。 |
+| 12 | 1 | 31–31 | 39–39 | +1/−1 | residual | 見出しは、行の先頭に1～6文字の「+」を置くことで作成できます。 |
+| 13 | 1 | 34–35 | 42–43 | +2/−2 | residual | [[collapsible show="+ 折りたたみ - 私をクリックして！" hide="- 折りたたみ - 私をクリックして！"]] |
+| 14 | 1 | 37–37 | 45–45 | +1/−1 | residual | ++ 2番目の見出し |
+| 15 | 1 | 39–39 | 47–47 | +1/−1 | residual | +++ 3番目の見出し |
+| 16 | 1 | 41–41 | 49–49 | +1/−1 | residual | ++++ 4番目の見出し |
+| 17 | 1 | 43–43 | 51–51 | +1/−1 | residual | +++++ 5番目の見出し |
+| 18 | 1 | 45–45 | 53–53 | +1/−1 | residual | ++++++ 6番目の見出し |
+| 19 | 1 | 51–52 | 59–60 | +2/−2 | residual | [[tab タブを作る]] |
+| 20 | 1 | 54–55 | 62–63 | +2/−2 | residual | [[tab タブが作られた]] |
+| 21 | 1 | 57–57 | 65–65 | +1/−1 | residual | なんと奇妙な。 |
+| 22 | 1 | 59–60 | 67–68 | +2/−2 | residual | [[tab 長いタブ]] |
+| 23 | 1 | 62–62 | 70–70 | +1/−1 | residual | これは長いタブです。テキストがたくさん入っています。 |
+| 24 | 1 | 64–64 | 72–72 | +1/−1 | residual | これは長いタブです。テキストがたくさん入っています。 |
+| 25 | 1 | 66–66 | 74–74 | +1/−1 | residual | これは長いタブです。テキストがたくさん入っています。 |
+| 26 | 1 | 68–68 | 76–76 | +1/−1 | residual | これは長いタブです。テキストがたくさん入っています。 |
+| 27 | 1 | 70–70 | 78–78 | +1/−1 | residual | これは長いタブです。テキストがたくさん入っています。 |
+| 28 | 1 | 72–72 | 80–80 | +1/−1 | residual | これは長いタブです。テキストがたくさん入っています。 |
+| 29 | 1 | 74–74 | 82–82 | +1/−1 | residual | これは長いタブです。テキストがたくさん入っています。 |
+| 30 | 1 | 77–78 | 85–86 | +2/−2 | residual | [[tab もっと長いタブ]] |
+| 31 | 1 | 80–80 | 88–88 | +1/−1 | residual | これも長いタブです。テキストがたくさん入っています。 |
+| 32 | 1 | 82–82 | 90–90 | +1/−1 | residual | これも長いタブです。テキストがたくさん入っています。 |
+| 33 | 1 | 84–84 | 92–92 | +1/−1 | residual | これも長いタブです。テキストがたくさん入っています。 |
+| 34 | 1 | 86–86 | 94–94 | +1/−1 | residual | これも長いタブです。テキストがたくさん入っています。 |
+| 35 | 1 | 88–88 | 96–96 | +1/−1 | residual | これも長いタブです。テキストがたくさん入っています。 |
+| 36 | 1 | 90–90 | 98–98 | +1/−1 | residual | これも長いタブです。テキストがたくさん入っています。 |
+| 37 | 1 | 92–92 | 100–100 | +1/−1 | residual | これも長いタブです。テキストがたくさん入っています。 |
+| 38 | 1 | 94–94 | 102–102 | +1/−1 | residual | これも長いタブです。テキストがたくさん入っています。 |
+| 39 | 1 | 96–96 | 104–104 | +1/−1 | residual | これも長いタブです。テキストがたくさん入っています。 |
+| 40 | 1 | 98–98 | 106–106 | +1/−1 | residual | これも長いタブです。テキストがたくさん入っています。 |
+| 41 | 1 | 100–100 | 108–108 | +1/−1 | residual | これも長いタブです。テキストがたくさん入っています。 |
+| 42 | 1 | 102–102 | 110–110 | +1/−1 | residual | これも長いタブです。テキストがたくさん入っています。 |
+| 43 | 1 | 104–104 | 112–112 | +1/−1 | residual | これも長いタブです。テキストがたくさん入っています。 |
+| 44 | 1 | 107–107 | 115–115 | +1/−1 | residual | [[tab 空のタブ]] |
+| 45 | 1 | 113–113 | 121–121 | +1/−1 | residual | > これは引用ブロックです。各行の先頭に半角の「> 」を置くことで作成されます。 |
+| 46 | 1 | 115–115 | 123–123 | +1/−1 | residual | > 追加のテキスト |
+| 47 | 1 | 117–117 | 125–125 | +1/−1 | residual | > これは罫線です |
+| 48 | 1 | 119–119 | 127–127 | +1/−1 | residual | >> 入れ子になった引用ブロック |
+| 49 | 1 | 123–125 | 131–133 | +3/−3 | residual | \|\|~ これは \|\|~ テーブルです \|\| |
+| 50 | 1 | 127–127 | 135–137 | +3/−1 | residual | @@[[footnoteblock]]@@ |
+| 51 | 1 | 129–130 | 139–139 | +1/−2 | residual | BodyフォントはM PLUS 1p[[footnote]] 訳注: 原語版ではDM Sansだが、日本語非対応のため変更。 [[/footnote]]。 |
+| 52 | 1 | 132–134 | 141–141 | +1/−3 | residual | {{等幅フォントはMartian Mono。}} |
+| 53 | 1 | 139–139 | 146–146 | +1/−1 | residual | ++* ソースコード |
+| 54 | 2 | — | 155–156 | +2/−0 | residual | Edited for SCP-JP by nebula2700 |
+| 55 | 2 | — | 159–161 | +3/−0 | supplement | @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,40… |
+| 56 | 2 | 151–153 | 163–163 | +1/−3 | supplement | /* @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,… |
+| 57 | 3 | 162–162 | 172–172 | +1/−1 | residual | --sp_header-logo: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A… |
+| 58 | 4 | 193–196 | 203–206 | +4/−4 | residual | --space-body-bg: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A8… |
+| 59 | 5 | 210–210 | 220–220 | +1/−1 | residual | --body-font: "M PLUS 1p", sans-serif; |
+| 60 | 6 | 299–299 | — | +0/−1 | mechanical | (blank lines only) |
+| 61 | 7 | — | 464–466 | +3/−0 | residual | .side-block.sns, .side-block[style="background-color: #fff0f0;"], [style="bac… |
+| 62 | 8 | 472–472 | 484–484 | +1/−1 | residual | border: none !important; |
+| 63 | 8 | 474–475 | 486–487 | +2/−2 | residual | background-color: rgb(var(--space-void)) !important; |
+| 64 | 9 | — | 517–534 | +18/−0 | residual | div.page-rate-widget-box, .creditButton { |
+| 65 | 9 | — | 540–555 | +16/−0 | residual | } |
+| 66 | 10 | — | 565–579 | +15/−0 | residual | div.creditButton { |
+| 67 | 10 | — | 584–584 | +1/−0 | residual | color: rgb(var(--space-starlight)); |
+| 68 | 11 | — | 592–612 | +21/−0 | residual | position: fixed; |
+| 69 | 12 | — | 620–625 | +6/−0 | residual | } |
+| 70 | 13 | 583–583 | — | +0/−1 | mechanical | (blank lines only) |
+| 71 | 14 | 668–668 | — | +0/−1 | mechanical | (blank lines only) |
+| 72 | 15 | 786–786 | 873–873 | +1/−1 | mechanical | background-color: rgb(var(--space-void)); |
+| 73 | 16 | 881–882 | 968–968 | +1/−2 | supplement | [[include :scp-jp:component:license-box-backend \|author=EstrellaYoshte]] |
+| 74 | 16 | 884–887 | 970–973 | +4/−4 | residual | > **ファイル名:** Milky_way.jpg |
+| 75 | 16 | 889–892 | 975–978 | +4/−4 | residual | > **ファイル名:** spacehead-layer1.png |
+| 76 | 16 | 894–897 | 980–983 | +4/−4 | residual | > **ファイル名:** spacebg.jpg |
+| 77 | 16 | 899–902 | 985–989 | +5/−4 | residual | > **ファイル名:** constellation |
+| 78 | 16 | 904–907 | 991–995 | +5/−4 | residual | > **ファイル名:** astronomy |
+| 79 | 16 | 909–912 | 997–1000 | +4/−4 | residual | > **ファイル名:** spacefooter.png |
+| 80 | 16 | 914–915 | 1002–1002 | +1/−2 | supplement | [[include :scp-jp:component:license-box-end]] |
+| 81 | 16 | — | 1004–1046 | +43/−0 | residual | [[module CSS]] |
+
+## Full diff
+
+<details>
+<summary>Section 1 — original 1–142 · candidate 1–149 · +73/−66 · residual, supplement</summary>
 
 ```diff
---- original.txt
-+++ candidate.txt
 @@ -1,142 +1,149 @@
 -[[include :scp-wiki:component:sigma-plus]]
 +[[include component:sigma-plus-jp]]
@@ -37,14 +143,6 @@ with `python3 review/build_review.py`; verify with
 -[[>]]
 -[[module rate]]
 -[[/>]]
--
--This is an aesthetic theme made by [[*user EstrellaYoshte]].
--
--To use the theme, insert the following:
--
--> {{@@[[include :scp-wiki:theme:space]]@@}}
--
--Generic Space Theme is a [[[component:sigma-plus|]]] theme.
 +[[iftags +テーマ]]
 +[[include :scp-jp:credit:start-preview]]
 +**タイトル:** 普遍的宇宙テーマ
@@ -57,52 +155,49 @@ with `python3 review/build_review.py`; verify with
 +**改訳時参照リビジョン:** 32
 +**元記事リンク:** [https://scp-wiki.wikidot.com/theme:space ソース]
 +[[include :scp-jp:credit:end-preview]]
-+
+ 
+-This is an aesthetic theme made by [[*user EstrellaYoshte]].
 +これはEstrellaYoshteによって作られた美しさを追求したテーマです。
-+
+ 
+-To use the theme, insert the following:
 +このテーマを使用するには、以下を挿入してください:
-+
+ 
+-> {{@@[[include :scp-wiki:theme:space]]@@}}
 +> {{@@[[include :scp-jp:theme:space-jp]]@@}}
-+
+ 
+-Generic Space Theme is a [[[component:sigma-plus|]]] theme.
 +普遍的宇宙テーマは[[[component:sigma-plus-jp|Sigma+]]]テーマです。
  
  ------
  
 -[[include component:image-block name= https://scp-wiki.wikidot.com/local--files/theme:space/spacelogo.webp |caption=Image.|width=270px]]
--
--An ornamental horizontal rule can be created with 5 hyphens "- - - - -" as above.
--
--Titles can be created by putting between one and six plus "+" at the start of the line.
 +[[include :scp-jp:component:image-block name= https://scp-jp-storage.wdfiles.com/local--files/file%3A8260379-48-3e2m/spacelogo.png |caption=画像。|width=270px]]
-+
+ 
+-An ornamental horizontal rule can be created with 5 hyphens "- - - - -" as above.
 +上の装飾付きの罫線は、5つのハイフン「- - - - - 」を使用して作成できます。
-+
+ 
+-Titles can be created by putting between one and six plus "+" at the start of the line.
 +見出しは、行の先頭に1～6文字の「+」を置くことで作成できます。
  @@ @@
  
 -[[collapsible show="+ Collapsible - Click me" hide="- Collapsible - Click me"]]
 -+ First Title
--
--++ Second Title
--
--+++ Third Title
--
--++++ Fourth Title
--
--+++++ Fifth Title
--
--++++++ Sixth Title
 +[[collapsible show="+ 折りたたみ - 私をクリックして！" hide="- 折りたたみ - 私をクリックして！"]]
 ++ 1番目の見出し
-+
+ 
+-++ Second Title
 +++ 2番目の見出し
-+
+ 
+-+++ Third Title
 ++++ 3番目の見出し
-+
+ 
+-++++ Fourth Title
 +++++ 4番目の見出し
-+
+ 
+-+++++ Fifth Title
 ++++++ 5番目の見出し
-+
+ 
+-++++++ Sixth Title
 +++++++ 6番目の見出し
  [[/collapsible]]
  
@@ -116,102 +211,81 @@ with `python3 review/build_review.py`; verify with
  [[/tab]]
 -[[tab Tabulation]]
 -Hey look, more text here.
--
--How quaint.
 +[[tab タブが作られた]]
 +見てください、ここにもテキストがあります。
-+
+ 
+-How quaint.
 +なんと奇妙な。
  [[/tab]]
 -[[tab Long Tab]]
 -This is a long tab. It contains a lot of text.[[footnote]] This is a footnote. [[/footnote]]
--
--This is a long tab. It contains a lot of text.
--
--This is a long tab. It contains a lot of text.
--
--This is a long tab. It contains a lot of text.
--
--This is a long tab. It contains a lot of text.
--
--This is a long tab. It contains a lot of text.
--
--This is a long tab. It contains a lot of text.
--
--This is a long tab. It contains a lot of text.
 +[[tab 長いタブ]]
 +これは長いタブです。テキストがたくさん入っています。[[footnote]] これは脚注です。 [[/footnote]]
-+
+ 
+-This is a long tab. It contains a lot of text.
 +これは長いタブです。テキストがたくさん入っています。
-+
+ 
+-This is a long tab. It contains a lot of text.
 +これは長いタブです。テキストがたくさん入っています。
-+
+ 
+-This is a long tab. It contains a lot of text.
 +これは長いタブです。テキストがたくさん入っています。
-+
+ 
+-This is a long tab. It contains a lot of text.
 +これは長いタブです。テキストがたくさん入っています。
-+
+ 
+-This is a long tab. It contains a lot of text.
 +これは長いタブです。テキストがたくさん入っています。
-+
+ 
+-This is a long tab. It contains a lot of text.
 +これは長いタブです。テキストがたくさん入っています。
-+
+ 
+-This is a long tab. It contains a lot of text.
 +これは長いタブです。テキストがたくさん入っています。
  [[/tab]]
  
 -[[tab Longer Tab]]
 -This is also a long tab. It contains a lot of text.
--
--This is also a long tab. It contains a lot of text.
--
--This is also a long tab. It contains a lot of text.
--
--This is also a long tab. It contains a lot of text.
--
--This is also a long tab. It contains a lot of text.
--
--This is also a long tab. It contains a lot of text.
--
--This is also a long tab. It contains a lot of text.
--
--This is also a long tab. It contains a lot of text.
--
--This is also a long tab. It contains a lot of text.
--
--This is also a long tab. It contains a lot of text.
--
--This is also a long tab. It contains a lot of text.
--
--This is also a long tab. It contains a lot of text.
--
--This is also a long tab. It contains a lot of text.
--
--This is also a long tab. It contains a lot of text.
 +[[tab もっと長いタブ]]
 +これも長いタブです。テキストがたくさん入っています。
-+
+ 
+-This is also a long tab. It contains a lot of text.
 +これも長いタブです。テキストがたくさん入っています。
-+
+ 
+-This is also a long tab. It contains a lot of text.
 +これも長いタブです。テキストがたくさん入っています。
-+
+ 
+-This is also a long tab. It contains a lot of text.
 +これも長いタブです。テキストがたくさん入っています。
-+
+ 
+-This is also a long tab. It contains a lot of text.
 +これも長いタブです。テキストがたくさん入っています。
-+
+ 
+-This is also a long tab. It contains a lot of text.
 +これも長いタブです。テキストがたくさん入っています。
-+
+ 
+-This is also a long tab. It contains a lot of text.
 +これも長いタブです。テキストがたくさん入っています。
-+
+ 
+-This is also a long tab. It contains a lot of text.
 +これも長いタブです。テキストがたくさん入っています。
-+
+ 
+-This is also a long tab. It contains a lot of text.
 +これも長いタブです。テキストがたくさん入っています。
-+
+ 
+-This is also a long tab. It contains a lot of text.
 +これも長いタブです。テキストがたくさん入っています。
-+
+ 
+-This is also a long tab. It contains a lot of text.
 +これも長いタブです。テキストがたくさん入っています。
-+
+ 
+-This is also a long tab. It contains a lot of text.
 +これも長いタブです。テキストがたくさん入っています。
-+
+ 
+-This is also a long tab. It contains a lot of text.
 +これも長いタブです。テキストがたくさん入っています。
-+
+ 
+-This is also a long tab. It contains a lot of text.
 +これも長いタブです。テキストがたくさん入っています。
  [[/tab]]
  
@@ -239,24 +313,22 @@ with `python3 review/build_review.py`; verify with
 -||~ This is a ||~ table ||
 -||You should know || how to make these ||
 -||||already ||
--
--[[footnoteblock]]
--
 +||~ これは ||~ テーブルです ||
 +||もう || 作り方は ||
 +||||知っているはずです ||
-+
+ 
+-[[footnoteblock]]
 +@@[[footnoteblock]]@@
- [[=]]
++[[=]]
+++++* ヘッダーフォントはUrbanist。
+ 
+-[[=]]
 -+++* Header font is Urbanist.
--
++BodyフォントはM PLUS 1p[[footnote]] 訳注: 原語版ではDM Sansだが、日本語非対応のため変更。 [[/footnote]]。
+ 
 -Body font is DM Sans.
 -
 -{{Monospace font is Martian Mono.}}
-++++* ヘッダーフォントはUrbanist。
-+
-+BodyフォントはM PLUS 1p[[footnote]] 訳注: 原語版ではDM Sansだが、日本語非対応のため変更。 [[/footnote]]。
-+
 +{{等幅フォントはMartian Mono。}}
  [[/=]]
  
@@ -267,6 +339,14 @@ with `python3 review/build_review.py`; verify with
  [[collapsible]]
  [[code type="CSS"]]
  /*
+```
+
+</details>
+
+<details>
+<summary>Section 2 — original 145–156 · candidate 152–166 · +6/−3 · residual, supplement</summary>
+
+```diff
 @@ -145,12 +152,15 @@
      By EstrellaYoshte
      Based on:
@@ -275,18 +355,25 @@ with `python3 review/build_review.py`; verify with
 +    Edited for SCP-JP by nebula2700
  */
  
--
--@import url(https://fonts.bunny.net/css?family=urbanist:400,400i,700,700i);
--@import url(https://fonts.bunny.net/css?family=dm-sans:400,400i,700,700i);
--@import url(https://fonts.bunny.net/css?family=martian-mono:400,700);
 +@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 +@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap');
 +@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300;700&display=swap');
-+
+ 
+-@import url(https://fonts.bunny.net/css?family=urbanist:400,400i,700,700i);
+-@import url(https://fonts.bunny.net/css?family=dm-sans:400,400i,700,700i);
+-@import url(https://fonts.bunny.net/css?family=martian-mono:400,700);
 +/* @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap'); */
  
  :root {
      --header-title: "SCP FOUNDATION";
+```
+
+</details>
+
+<details>
+<summary>Section 3 — original 159–165 · candidate 169–175 · +1/−1 · residual</summary>
+
+```diff
 @@ -159,7 +169,7 @@
      --sp_area-max-width: 67.25rem;
      --sp_side-bar-width: 14.675rem;
@@ -296,6 +383,14 @@ with `python3 review/build_review.py`; verify with
      --sp_header-height: calc(22.5rem + 14.5vw);
      --sp_header-title-scale: 1.375;
      --sp_header-subtitle-scale: 1.75;
+```
+
+</details>
+
+<details>
+<summary>Section 4 — original 190–199 · candidate 200–209 · +4/−4 · residual</summary>
+
+```diff
 @@ -190,10 +200,10 @@
      --sp_tab-selected-text-color: rgb(var(--space-void));
      --sp_tab-selected-background: rgb(var(--space-planet));
@@ -311,6 +406,14 @@ with `python3 review/build_review.py`; verify with
      --space-blackhole: 0 0 0;
      --space-void: 22 23 33;
      --space-starlight: 255 255 255;
+```
+
+</details>
+
+<details>
+<summary>Section 5 — original 207–213 · candidate 217–223 · +1/−1 · residual</summary>
+
+```diff
 @@ -207,7 +217,7 @@
      --space-orbit-mask: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 468.1 468.1'%3E%3Cpath d='M234 468.1c-8.2 0-16.6-.4-24.7-1.3a11 11 0 1 1 2.3-21.7 212.7 212.7 0 0 0 150-41.4 21 21 0 0 1-.7-5.6 28.5 28.5 0 0 1 35.6-27.5A212.4 212.4 0 0 0 213.9 22.8 11 11 0 0 1 211.8 1a232.5 232.5 0 0 1 187.8 67.5A232.5 232.5 0 0 1 468 234.2c0 58.2-21.5 114-60.5 157a11 11 0 0 1-14.5 1.7 6.5 6.5 0 0 0-10.3 5.3c0 1.3.4 2.4 1 3.5a11 11 0 0 1-2.4 14.3 234.6 234.6 0 0 1-147.2 52zm-76.7-13.5c-1.3 0-2.5-.2-3.8-.7A233.5 233.5 0 0 1 0 234.1C0 135 62.6 46.4 155.9 13.4a11 11 0 0 1 7.3 20.6A212.6 212.6 0 0 0 21.9 234 213 213 0 0 0 161 433.5a11 11 0 0 1-3.7 21.2z'/%3E%3Cpath d='M234 424.4A190.5 190.5 0 0 1 76.8 127a28.3 28.3 0 0 1 34.5-38.3 189.6 189.6 0 0 1 88-41.8 11 11 0 1 1 4 21.5c-30.9 5.7-59.5 20-82.8 41.3a11 11 0 0 1-13.8.8 6.6 6.6 0 0 0-8.7 9.7 11 11 0 0 1 .6 13.7A168.6 168.6 0 0 0 234 402.5a168.4 168.4 0 0 0 20.3-335.7 11 11 0 0 1 2.6-21.7 190.3 190.3 0 0 1-22.8 379.3z'/%3E%3Cpath d='M247.8 423.9a11 11 0 0 1-.8-21.9 169 169 0 0 0 155.5-168A169.2 169.2 0 0 0 234.1 65.7a168 168 0 0 0-106 37.5 28.4 28.4 0 0 1-35.4 39.4 167 167 0 0 0-27 91.6c0 78.9 53.5 146.4 130.3 164a11 11 0 1 1-5 21.4A190.8 190.8 0 0 1 81 121a11 11 0 0 1 17-.7c.8.8 2.4 2.2 5 2.2a6.6 6.6 0 0 0 3.7-11.9 11 11 0 0 1-1-17 189.8 189.8 0 0 1 131.7-49.8c50.2.8 97.2 21 132.4 56.8A189.2 189.2 0 0 1 424.4 234c0 48.3-18.1 94.3-51 129.6A189.6 189.6 0 0 1 247.8 424z'/%3E%3Cpath d='M234 332.5a98.6 98.6 0 0 1-27.5-193 28.5 28.5 0 0 1 55.1 0A98.7 98.7 0 0 1 313 293a99.3 99.3 0 0 1-49.6 35.2 11 11 0 0 1-6.5-21 76.7 76.7 0 0 0-7.6-148.1 11 11 0 0 1-8.7-12.4 6.6 6.6 0 1 0-13 .6 11 11 0 0 1-8.8 11.8A76.7 76.7 0 0 0 234 310.6a11 11 0 0 1 0 22z'/%3E%3Cpath d='M234 332.5a98.6 98.6 0 0 1-19.5-195 11 11 0 0 1 13 9.7 6.5 6.5 0 0 0 6.6 6c3.4 0 6.2-2.6 6.5-6a11 11 0 0 1 21.7-.6 11 11 0 0 1 12.2-2.3A98.6 98.6 0 0 1 234 332.5zm-24.2-171a76.7 76.7 0 1 0 55.8 2.8 10.9 10.9 0 0 1-5.7-5.8 28.3 28.3 0 0 1-25.8 16.5 28.3 28.3 0 0 1-24.3-13.6z'/%3E%3Cpath d='M234 175a28.3 28.3 0 0 1-28.4-28.4 28.5 28.5 0 1 1 28.5 28.4zm0-35a6.6 6.6 0 1 0 0 13.1 6.6 6.6 0 0 0 0-13zm155.4 286.6a28.3 28.3 0 0 1-28.5-28.5 28.5 28.5 0 1 1 28.5 28.5zm0-35a6.6 6.6 0 1 0 0 13.1 6.6 6.6 0 0 0 0-13.1ZM102.8 144.4a28.5 28.5 0 1 1 0-57 28.5 28.5 0 0 1 0 57zm0-35a6.6 6.6 0 1 0 0 13.1 6.6 6.6 0 0 0 0-13.1zm132.4 175a49.3 49.3 0 1 1 0-98.6 49.3 49.3 0 0 1 0 98.6zm0-76.6a27.4 27.4 0 1 0 0 54.8 27.4 27.4 0 0 0 0-54.8z'/%3E%3C/svg%3E");
  
@@ -320,14 +423,14 @@ with `python3 review/build_review.py`; verify with
      --mono-font: 'Martian Mono', monospace;
  }
  
-@@ -296,7 +306,6 @@
-      background-attachment: scroll;
- }
- }
--
- 
- #header {
-     background: none;
+```
+
+</details>
+
+<details>
+<summary>Section 7 — original 452–457 · candidate 461–469 · +3/−0 · residual</summary>
+
+```diff
 @@ -452,6 +461,9 @@
  #side-bar .side-block.resources {
      background-color: rgb(var(--space-planet) / 0.175);
@@ -338,6 +441,14 @@ with `python3 review/build_review.py`; verify with
  
  :is(#side-bar, #interwiki) .heading {
      color: rgb(var(--space-moon));
+```
+
+</details>
+
+<details>
+<summary>Section 8 — original 469–478 · candidate 481–490 · +3/−3 · residual</summary>
+
+```diff
 @@ -469,10 +481,10 @@
  
  #top-bar div.open-menu a {
@@ -352,7 +463,15 @@ with `python3 review/build_review.py`; verify with
  }
  
  div.scpnet-interwiki-wrapper {
-@@ -502,6 +514,24 @@
+```
+
+</details>
+
+<details>
+<summary>Section 9 — original 502–512 · candidate 514–558 · +34/−0 · residual</summary>
+
+```diff
+@@ -502,11 +514,45 @@
      border-bottom: solid 0.05em rgb(var(--space-sun));
  }
  
@@ -377,10 +496,10 @@ with `python3 review/build_review.py`; verify with
  .page-rate-widget-box :is(.rateup, .ratedown, .cancel) a {
      display: block;
      height: 100%;
-@@ -509,6 +539,22 @@
+     width: 0.95em;
      text-align: center;
- }
- 
++}
++
 +.page-rate-widget-box .cancel a {
 +    margin-bottom: 4px !important;
 +    width: 10px;
@@ -395,11 +514,17 @@ with `python3 review/build_review.py`; verify with
 +.page-rate-widget-box .ratedown a {
 +    padding: 0 0.25rem;
 +    margin: 0 0.25rem;
-+}
-+
+ }
+ 
  div.creditButton p a {
-     border: none;
-     padding: 0;
+```
+
+</details>
+
+<details>
+<summary>Section 10 — original 516–525 · candidate 562–587 · +16/−0 · residual</summary>
+
+```diff
 @@ -516,10 +562,26 @@
      --sp_rate-module-button-hover-color:  rgb(var(--space-planet));
  }
@@ -427,6 +552,14 @@ with `python3 review/build_review.py`; verify with
      background: rgb(var(--space-void));
      padding: 0.25rem 0.75rem;
      border: none;
+```
+
+</details>
+
+<details>
+<summary>Section 11 — original 527–532 · candidate 589–615 · +21/−0 · residual</summary>
+
+```diff
 @@ -527,6 +589,27 @@
      box-shadow: none;
      display: flex;
@@ -455,6 +588,14 @@ with `python3 review/build_review.py`; verify with
  }
  .modalbox hr {
      margin: 0;
+```
+
+</details>
+
+<details>
+<summary>Section 12 — original 534–539 · candidate 617–628 · +6/−0 · residual</summary>
+
+```diff
 @@ -534,6 +617,12 @@
  }
  .modalbox > .credit {
@@ -468,73 +609,81 @@ with `python3 review/build_review.py`; verify with
  }
  
  /*--------- TABS----------*/
-@@ -580,7 +669,6 @@
- .hl-reserved {
-     color: rgb(var(--space-planet));
- }
--
+```
+
+</details>
+
+<details>
+<summary>Section 16 — original 878–916 · candidate 965–1046 · +71/−28 · residual, supplement</summary>
+
+```diff
+@@ -878,39 +965,82 @@
  
- /*--------- LINK ----------*/
+ ------
  
-@@ -666,7 +754,6 @@
-     color: rgb(var(--space-void));
- }
- 
--
- /*--------- HR ----------*/
- 
- hr {
-@@ -783,7 +870,7 @@
-     font-family: var(--mono-font);
-     font-size: 0.825em;
-     border: none;
--    background-color: rgb(var(--space-void));   
-+    background-color: rgb(var(--space-void));
- }
- 
- div.buttons input, input.button, button, a.button, .owindow .button-bar a {
-@@ -875,42 +962,47 @@
- }
- [[/code]]
- [[/collapsible]]
--
--------
--
 -[[include :scp-wiki:component:license-box-theme]]
 -=====
--
++[[include :scp-jp:component:license-box-backend |author=EstrellaYoshte]]
+ 
 -> **Filename:** Milky_way.jpg
 -> **Author:** Mabdullah.mak
 -> **License:** CC BY-SA 3.0
 -> **Source Link:** [https://commons.wikimedia.org/wiki/File:Eid_Gah_Milky_way.jpg Wikimedia Commons]
--
++> **ファイル名:** Milky_way.jpg
++> **作者:** Mabdullah.mak
++> **ライセンス:** CC BY-SA 3.0
++> **ソースリンク:** [https://commons.wikimedia.org/wiki/File:Eid_Gah_Milky_way.jpg Wikimedia Commons]
+ 
 -> **Filename:** spacehead-layer1.png
 -> **Author:** Pixabay
 -> **License:** CC0 Public Domain
 -> **Source Link:** [https://www.pexels.com/photo/plants-under-starry-sky-355887/ Pexels]
--
++> **ファイル名:** spacehead-layer1.png
++> **作者:** Pixabay
++> **ライセンス:** CC0 Public Domain
++> **ソースリンク:** [https://www.pexels.com/photo/plants-under-starry-sky-355887/ Pexels]
+ 
 -> **Filename:** spacebg.jpg
 -> **Author:** Shay Wood
 -> **License:** CC0 Public Domain
 -> **Source Link:** [https://www.pexels.com/photo/starry-night-574116/ Pexels]
--
++> **ファイル名:** spacebg.jpg
++> **作者:** Shay Wood
++> **ライセンス:** CC0 Public Domain
++> **ソースリンク:** [https://www.pexels.com/photo/starry-night-574116/ Pexels]
+ 
 -> **Filename:** constellation
 -> **Author:** Setyo Ari Wibowo
 -> **License:** CC BY 3.0
 -> **Source Link:** [https://thenounproject.com/icon/constellation-1217197/ Noun Project]
--
++> **ファイル名:** constellation
++> **作者:** Setyo Ari Wibowo
++> **ライセンス:** CC BY 3.0
++> **ソースリンク:** [https://thenounproject.com/icon/constellation-1217197/ Noun Project]
++> **備考:** ファイルとしては読み込まれず、原語版・候補ともにCSS内のインラインSVG（データURI）として埋め込まれている。
+ 
 -> **Filename:** astronomy
 -> **Author:** Flatart
 -> **License:** CC BY 3.0
 -> **Source Link:** [https://thenounproject.com/icon/astronomy-2359563/ Noun Project]
--
++> **ファイル名:** astronomy
++> **作者:** Flatart
++> **ライセンス:** CC BY 3.0
++> **ソースリンク:** [https://thenounproject.com/icon/astronomy-2359563/ Noun Project]
++> **備考:** 候補はこのファイルを読み込んでいない（原語版でも本エントリ以外に参照はない）。
+ 
 -> **Filename:** spacefooter.png
 -> **Author:** Pixabay
 -> **License:** CC0 Public Domain
 -> **Source Link:** [https://www.pexels.com/photo/astronomy-blue-blue-sky-dark-358528/ Pexels]
--
++> **ファイル名:** spacefooter.png
++> **作者:** Pixabay
++> **ライセンス:** CC0 Public Domain
++> **ソースリンク:** [https://www.pexels.com/photo/astronomy-blue-blue-sky-dark-358528/ Pexels]
+ 
 -=====
 -[[include :scp-wiki:component:license-box-end]]
++[[include :scp-jp:component:license-box-end]]
  [[/iftags]]
 +
 +[[module CSS]]
@@ -580,3 +729,55 @@ with `python3 review/build_review.py`; verify with
 +}
 +[[/module]]
 ```
+
+</details>
+
+<details>
+<summary>Purely mechanical sections (6, 13, 14, 15) — whitespace, host, and branch-token changes only (heuristic)</summary>
+
+```diff
+@@ -296,7 +306,6 @@
+      background-attachment: scroll;
+ }
+ }
+-
+ 
+ #header {
+     background: none;
+```
+
+```diff
+@@ -580,7 +669,6 @@
+ .hl-reserved {
+     color: rgb(var(--space-planet));
+ }
+-
+ 
+ /*--------- LINK ----------*/
+ 
+```
+
+```diff
+@@ -665,7 +753,6 @@
+     background-color: rgb(var(--space-nebula));
+     color: rgb(var(--space-void));
+ }
+-
+ 
+ /*--------- HR ----------*/
+ 
+```
+
+```diff
+@@ -783,7 +870,7 @@
+     font-family: var(--mono-font);
+     font-size: 0.825em;
+     border: none;
+-    background-color: rgb(var(--space-void));   
++    background-color: rgb(var(--space-void));
+ }
+ 
+ div.buttons input, input.button, button, a.button, .owindow .button-bar a {
+```
+
+</details>

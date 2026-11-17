@@ -15,11 +15,11 @@ adjudicated explanation.
 | | Lines |
 |---|---|
 | original.txt | 755 |
-| candidate.txt | 1619 |
-| Added | +982 |
-| Review-stage comments | 0 of the +982 added lines |
+| candidate.txt | 1615 |
+| Added | +978 |
+| Review-stage comments | 0 of the +978 added lines |
 | Removed | -118 |
-| Changed | 1100 |
+| Changed | 1096 |
 | Change blocks | 73 |
 | Diff sections (context 3) | 7 |
 
@@ -29,8 +29,8 @@ adjudicated explanation.
 |---|---|---|
 | mechanical | 15 | 29 |
 | translation | 24 | 57 |
-| supplement | 4 | 910 |
-| residual | 30 | 104 |
+| supplement | 4 | 908 |
+| residual | 30 | 102 |
 
 ## Change-block index
 
@@ -86,29 +86,29 @@ adjudicated explanation.
 | 48 | 3 | 176–176 | 149–149 | +1/−1 | translation | >> ネストした引用ブロック[[footnote]]脚注です。[[/footnote]] |
 | 49 | 3 | 178–181 | 151–153 | +3/−4 | translation | \|\|~ これは \|\|~ 表です \|\| |
 | 50 | 3 | 184–186 | 156–158 | +3/−3 | residual | 本文フォントはNoto Sans JPです。 |
-| 51 | 3 | 191–191 | 163–164 | +2/−1 | residual | [[collapsible show="+ コードを表示" hide="- コードを隠す" hideLocation="both"]] |
-| 52 | 3 | 193–193 | 166–1048 | +883/−1 | supplement | + ソースコード |
-| 53 | 4 | 216–216 | 1071–1071 | +1/−1 | residual | --logo: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Athe-tra… |
-| 54 | 5 | 370–370 | 1225–1225 | +1/−1 | residual | background-image: url("https://sigma10-jp-test.wdfiles.com/local--files/theme… |
-| 55 | 6 | 409–409 | 1264–1264 | +1/−1 | residual | background-image: url("https://sigma10-jp-test.wdfiles.com/local--files/theme… |
-| 56 | 7 | 687–687 | 1542–1542 | +1/−1 | mechanical | (blank lines only) |
-| 57 | 7 | 691–691 | 1546–1546 | +1/−1 | mechanical | (blank lines only) |
-| 58 | 7 | 695–695 | 1550–1550 | +1/−1 | mechanical | (blank lines only) |
-| 59 | 7 | 699–699 | 1554–1554 | +1/−1 | mechanical | (blank lines only) |
-| 60 | 7 | 704–704 | 1559–1559 | +1/−1 | mechanical | (blank lines only) |
-| 61 | 7 | 710–710 | 1565–1565 | +1/−1 | mechanical | (blank lines only) |
-| 62 | 7 | 712–712 | 1567–1567 | +1/−1 | translation | content: 'あなたは15分間の占有ロックを保持しています。これにより、他の人が編集中のページを編集するのを防げます。\Aこのロックは '; |
-| 63 | 7 | 717–717 | 1572–1572 | +1/−1 | mechanical | (blank lines only) |
-| 64 | 7 | 721–721 | 1576–1576 | +1/−1 | mechanical | (blank lines only) |
-| 65 | 7 | 725–725 | 1580–1580 | +1/−1 | mechanical | (blank lines only) |
-| 66 | 7 | 727–727 | 1582–1582 | +1/−1 | translation | content: ' 秒で失効します。'; |
-| 67 | 7 | 731–731 | 1586–1586 | +1/−1 | mechanical | (blank lines only) |
-| 68 | 7 | 733–733 | 1588–1588 | +1/−1 | translation | content: 'ページを保存中……\Aこの表示が長時間続く場合は、編集ボックスの内容をクリップボードにコピーしてからページを再読み込みして再編集してく… |
-| 69 | 7 | 739–739 | 1594–1594 | +1/−1 | mechanical | (blank lines only) |
-| 70 | 7 | 743–743 | 1598–1598 | +1/−1 | mechanical | (blank lines only) |
-| 71 | 7 | 747–747 | 1602–1602 | +1/−1 | mechanical | (blank lines only) |
-| 72 | 7 | — | 1608–1608 | +1/−0 | mechanical | (blank lines only) |
-| 73 | 7 | — | 1611–1618 | +8/−0 | supplement | [[include :scp-jp:component:license-box-backend |
+| 51 | 3 | 191–191 | — | +0/−1 | residual | [[collapsible show="+ 显示代码" hide="- 隐藏代码" hideLocation="both"]] |
+| 52 | 3 | 193–193 | 164–1044 | +881/−1 | supplement | + ソースコード |
+| 53 | 4 | 216–216 | 1067–1067 | +1/−1 | residual | --logo: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Athe-tra… |
+| 54 | 5 | 370–370 | 1221–1221 | +1/−1 | residual | background-image: url("https://sigma10-jp-test.wdfiles.com/local--files/theme… |
+| 55 | 6 | 409–409 | 1260–1260 | +1/−1 | residual | background-image: url("https://sigma10-jp-test.wdfiles.com/local--files/theme… |
+| 56 | 7 | 687–687 | 1538–1538 | +1/−1 | mechanical | (blank lines only) |
+| 57 | 7 | 691–691 | 1542–1542 | +1/−1 | mechanical | (blank lines only) |
+| 58 | 7 | 695–695 | 1546–1546 | +1/−1 | mechanical | (blank lines only) |
+| 59 | 7 | 699–699 | 1550–1550 | +1/−1 | mechanical | (blank lines only) |
+| 60 | 7 | 704–704 | 1555–1555 | +1/−1 | mechanical | (blank lines only) |
+| 61 | 7 | 710–710 | 1561–1561 | +1/−1 | mechanical | (blank lines only) |
+| 62 | 7 | 712–712 | 1563–1563 | +1/−1 | translation | content: 'あなたは15分間の占有ロックを保持しています。これにより、他の人が編集中のページを編集するのを防げます。\Aこのロックは '; |
+| 63 | 7 | 717–717 | 1568–1568 | +1/−1 | mechanical | (blank lines only) |
+| 64 | 7 | 721–721 | 1572–1572 | +1/−1 | mechanical | (blank lines only) |
+| 65 | 7 | 725–725 | 1576–1576 | +1/−1 | mechanical | (blank lines only) |
+| 66 | 7 | 727–727 | 1578–1578 | +1/−1 | translation | content: ' 秒で失効します。'; |
+| 67 | 7 | 731–731 | 1582–1582 | +1/−1 | mechanical | (blank lines only) |
+| 68 | 7 | 733–733 | 1584–1584 | +1/−1 | translation | content: 'ページを保存中……\Aこの表示が長時間続く場合は、編集ボックスの内容をクリップボードにコピーしてからページを再読み込みして再編集してく… |
+| 69 | 7 | 739–739 | 1590–1590 | +1/−1 | mechanical | (blank lines only) |
+| 70 | 7 | 743–743 | 1594–1594 | +1/−1 | mechanical | (blank lines only) |
+| 71 | 7 | 747–747 | 1598–1598 | +1/−1 | mechanical | (blank lines only) |
+| 72 | 7 | — | 1604–1604 | +1/−0 | mechanical | (blank lines only) |
+| 73 | 7 | — | 1607–1614 | +8/−0 | supplement | [[include :scp-jp:component:license-box-backend |
 
 ## Full diff
 
@@ -136,7 +136,7 @@ adjudicated explanation.
 +**翻訳責任者:** AI
 +**翻訳年:** 2026
 +**原題:** 变轨 版式
-+**著作権者:** 原語版ページの作成者に同じ（scp-wiki-cn の theme:the-track-changers）
++**著作権者:** [[*user Mercuresphere]]
 +**作成年:** 2022
 +**初訳時参照リビジョン:** 34
 +**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:the-track-changers 变轨 版式]
@@ -337,10 +337,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 3 — original 163–196 · candidate 136–1051 · +896/−14 · residual, supplement, translation</summary>
+<summary>Section 3 — original 163–196 · candidate 136–1047 · +892/−14 · residual, supplement, translation</summary>
 
 ```diff
-@@ -163,34 +136,916 @@
+@@ -163,34 +136,912 @@
  ░░░░░░░░░░▀▀▄▄░▒▒▒▒▒▒▒▒▒▒░░░░█░
  ░░░░░░░░░░░░░░▀▄▄▄▄▄░░░░░░░░█░░
  [[/tab]]
@@ -381,8 +381,6 @@ adjudicated explanation.
  -----
  
 -[[collapsible show="+ 显示代码" hide="- 隐藏代码" hideLocation="both"]]
-+[[collapsible show="+ コードを表示" hide="- コードを隠す" hideLocation="both"]]
-+[[/collapsible]]
  
 -[[code type="CSS"]]
 ++ ソースコード
@@ -392,10 +390,8 @@ adjudicated explanation.
 +
 +@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 +@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
-+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 +@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
 +@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
-+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 +@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap');
 +@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap');
 +@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&amp;display=swap');
@@ -1276,10 +1272,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 4 — original 213–219 · candidate 1068–1074 · +1/−1 · residual</summary>
+<summary>Section 4 — original 213–219 · candidate 1064–1070 · +1/−1 · residual</summary>
 
 ```diff
-@@ -213,7 +1068,7 @@
+@@ -213,7 +1064,7 @@
      /* Header */
      --title: " 变轨者";
      --subtitle: " 点燃烛火 划破夜幕";
@@ -1293,10 +1289,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 5 — original 367–373 · candidate 1222–1228 · +1/−1 · residual</summary>
+<summary>Section 5 — original 367–373 · candidate 1218–1224 · +1/−1 · residual</summary>
 
 ```diff
-@@ -367,7 +1222,7 @@
+@@ -367,7 +1218,7 @@
      -webkit-background-clip: text;
      background-clip: text;
      background-color: rgb(var(--swatch-primary-darker));
@@ -1310,10 +1306,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 6 — original 406–412 · candidate 1261–1267 · +1/−1 · residual</summary>
+<summary>Section 6 — original 406–412 · candidate 1257–1263 · +1/−1 · residual</summary>
 
 ```diff
-@@ -406,7 +1261,7 @@
+@@ -406,7 +1257,7 @@
      width: 10%;
      height: 0.35rem;
      transform: translateX(-50%);
@@ -1327,10 +1323,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 7 — original 684–755 · candidate 1539–1619 · +25/−16 · mechanical, supplement, translation</summary>
+<summary>Section 7 — original 684–755 · candidate 1535–1615 · +25/−16 · mechanical, supplement, translation</summary>
 
 ```diff
-@@ -684,72 +1539,81 @@
+@@ -684,72 +1535,81 @@
  body[class="wait"] #odialog-shader-iframe, body[class="wait"] #odialog-shader {
      display: none !important;
  }
@@ -1421,7 +1417,7 @@ adjudicated explanation.
  [[/collapsible]]
 +
 +[[include :scp-jp:component:license-box-backend
-+|author=scp-wiki-cn theme:the-track-changers の作者]]
++|author=Mercuresphere]]
 +
 +> **画像・フォントの出典:** 原語版の theme:the-track-changers の記載に従います。sandbox・他Wiki・個人サイトの添付は候補ページに再ホストしています。原語版にライセンス表記が無い画像は、投稿前に著者へ確認してください。
 +

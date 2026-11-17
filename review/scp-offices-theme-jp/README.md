@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:scp-offices-theme-jp — origin EN, population #33 [GOSIGN2-LEDGER (b) row 33]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now b21b40a713fbb092055088bb598075fd7be67b74aa31f5e11808f34af01a5ea1); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 44c33f3dd9cadd62805c5e0d94f6a99c574901163e2600fb2c875db53c25c7ed); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 4 errors / 1 warn / 2 infos (pseudo-ref×4); standing classes dispositioned in register c1 [T1-ROWS row 33; GOSIGN2-LEDGER (b) row 33]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — header logo clipped at ≤768, notice left-clip, WebKit rate「価:0」missing + stray "S", sidebar x=0, "ソース" washed out (1.84), sample credit-modal + overflow 337–419px, interwiki box absent. [RENDER-ROWS-1 (RENDER-C row 33)]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 33, source LOCALIZE-B]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 33]
 - FIX5 re-judgement: item 7 (class D) FIXED — FIX5-FONTSA, commit 8eacd6e: pattern-7 fix; checker code-multiset identical before/after [GOSIGN2-LEDGER-SUPPLEMENT (a) item 7]
-- Computed against: canonical commit 358955eb4013dac2399c414ba8ec2a6e416a3c11; candidate file pages/theme:scp-offices-theme-jp.txt sha256:b21b40a713fbb092055088bb598075fd7be67b74aa31f5e11808f34af01a5ea1; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit c1ba76a4aa2bdaa34cc62e1f9fa3c6b433c4df4c; candidate file pages/theme:scp-offices-theme-jp.txt sha256:44c33f3dd9cadd62805c5e0d94f6a99c574901163e2600fb2c875db53c25c7ed; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 Status: complete (hand-written explanation over the classifier skeleton; the verdict stamp above is generated)
@@ -165,6 +165,12 @@ This instance: two annotations stand. The translator's footnote at candidate lin
 The theme's own verdict is the stamp above: overall STALE by design (the candidate changed after the verdict; the frozen record remains the verdict for the bytes it judged). Independent checks run for this package: the FIX5 closure is re-derived from the commit and the current bytes in the per-theme record; a fresh T1 run (check_source.py --kind theme --translation, 2026-11-17) on the candidate returns error 4 / warn 0 / info 2, every error the pseudo-ref class (iii) of section 11(a) (the baseline recorded in the stamp additionally carried 1 warn under its link-check configuration); a brace-depth scan of both code blocks ends at depth 0 with no negative excursion; `python3 review/build_review.py --check` lists this package as current after generation (the batch acceptance compares the stale set against the pre-existing refresh population).
 
 Change set outside the two diffed files (K6): pages/phase17-diff-scp-offices-theme-jp.txt (the migration instruction page for the production page: record reference revision 58 in its credit block, define --offset-from-page-top, set the page-options --min-font-size, keep Google Fonts delivery), pages/theme-decoration-sample-scp-offices-theme-jp.txt (the render sample the (c2) row measured), the production page itself (pages-existing/existing:theme-scp-offices-theme.txt) as the third source this package's provenance argument rests on, and the hosted stylesheet scp-jp.github.io/files/theme/scp-offices-theme/style0.css that the tail module delivers.
+
+## Post-package repairs (REFRESH3-J)
+
+The items above describe this package as built. The repair recorded below postdates the package build; `candidate.txt` has been recopied from the current canonical `pages/theme:scp-offices-theme-jp.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**FIX-RFIX11 Item 1 — escaped footnoteblock unescaped (landing c1ba76a, "pages: R-fix-11 flags repaired (offices, declassified, scplive)"; record FIX-RFIX11.md).** As built, candidate L559 read `@@[[footnoteblock]]@@`; the original (original.txt L537) and production carry it live in identical standalone context after `[[/collapsible]]`, while the candidate's only footnote (the translator's note, L204) is live, so the literal string displayed. The remedy unescaped that one line to `[[footnoteblock]]` — a single-line change, nothing else in the file. Per FIX-RFIX11.md the T1 finding set is unchanged (error 4 / warn 0 / info 2 before and after; class (i) 0 → 0), so the repair is a display fix, not a checker change. The section-11(c) open flag is now resolved on current bytes.
 
 ## Appendix — residue blocks
 

@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:space-jp — origin EN, population #40 [GOSIGN2-LEDGER (b) row 40]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 831533b4ef466aaec20fc7fd79eb69380a6554410a79f279a209e8ba0b0ac246); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now da81447b08d90c187d8bc24ae44297363e5a35bc47211799b7a48f7b6ad29352); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 1 error / 2 warns / 1 info (pseudo-ref×1); standing classes dispositioned in register c1 [T1-ROWS row 40; GOSIGN2-LEDGER (b) row 40]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — starfield overflow 575–859px@≤768; real candidate defect: static credit replica pinned at viewport center (theme↔sample interaction, both engines), credit-modal-overflow at 320, sample credit-modal. [RENDER-ROWS-1 (RENDER-D2 row 40)]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 2 [LOCALIZE-ROWS row 40, source LOCALIZE-B]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 40]
 - FIX5 re-judgement: items 8 (class G) FIXED, 9 (class H) FIXED — FIX5-FUNC §11, commit 59130a2: KB-13 carve-out inserted after the div.modalbox rule, matching the cosmos precedent verbatim; L31 prose link -> [[[component:sigma-plus-jp|Sigma+]]]; spot-verified for this supplement [GOSIGN2-LEDGER-SUPPLEMENT (a) items 8–9; (c) check 7]
-- Computed against: canonical commit 358955eb4013dac2399c414ba8ec2a6e416a3c11; candidate file pages/theme:space-jp.txt sha256:831533b4ef466aaec20fc7fd79eb69380a6554410a79f279a209e8ba0b0ac246; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit e3dd8ac64c79cd6aa2822d1ca9ad035db4c942b5; candidate file pages/theme:space-jp.txt sha256:da81447b08d90c187d8bc24ae44297363e5a35bc47211799b7a48f7b6ad29352; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -151,6 +151,12 @@ Post-verdict change: the stamp reads STALE because the snippet audit (canonical 
 - Why: T5 judges translated text; for an adopted page the judgment was the T4 lane's pair enumeration (LOCALIZE-B row 40), which read the candidate against both the original and production and recorded its patterns.
 - Verify: LOCALIZE-B row 40; the credit block's two revision fields at candidate L13–23.
 - Disposition: LOCALIZE-ROWS row 40 (T4/T5 joint) records two display-affecting findings, P1 and P11; P1 is closed by FIX4-SIGMA (§2) and P11 by item 9 (per-theme record).
+
+## Post-package repairs (REFRESH3-J)
+
+The items above describe this package as built. The repair recorded below postdates the package build; `candidate.txt` has been recopied from the current canonical `pages/theme:space-jp.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**FIX-SPACE — dropped license box restored (landing e3dd8ac, "pages: space license box restored"; record FIX-SPACE.md).** As built, the candidate had no license box while still loading four of the artwork files (spacebg.jpg, Milky_way.jpg, spacehead-layer1.png, spacefooter.png); the original closes with a box (original L881–915) holding six attribution entries. The remedy is a pure +38-line insertion after candidate L964 (`[[/collapsible]]`), before `[[/iftags]]`, at the original's corresponding locus inside the `[[iftags +テーマ]]` gate: the `------` separator, `[[include :scp-jp:component:license-box-backend |author=EstrellaYoshte]]`, six entries in the original's order (Milky_way.jpg, spacehead-layer1.png, spacebg.jpg, constellation, astronomy, spacefooter.png) with the population's Japanese labels, and `[[include :scp-jp:component:license-box-end]]`. constellation carries a 備考 that it is an inline SVG data URI rather than a loaded file; astronomy carries a 備考 that the candidate does not load it and the original references it nowhere else (the anon rook-entry precedent); no entry was invented for spacelogo.png, which the original's box does not list. The `=====` separators are dropped per the JP form. Per FIX-SPACE.md the T1 finding set is identical line for line before and after (error 1 / warn 2 / info 1, the single error the standing draft-host pseudo-ref), so no new class (i) error was introduced. The section-1 license-box flag is now resolved on current bytes.
 
 ## Appendix: residue and heuristic blocks
 

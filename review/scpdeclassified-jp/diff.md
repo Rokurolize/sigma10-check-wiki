@@ -8,16 +8,16 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 663 |
-| candidate.txt | 692 |
-| Added | +132 |
-| Review-stage comments | 0 of the +132 added lines |
+| candidate.txt | 688 |
+| Added | +128 |
+| Review-stage comments | 0 of the +128 added lines |
 | Removed | -108 |
 | Hunks | 12 |
 
 ```diff
 --- original.txt
 +++ candidate.txt
-@@ -1,153 +1,172 @@
+@@ -1,153 +1,168 @@
  [[module CSS]]
 -@import url(https://scp-wiki-cn.wdfiles.com/local--code/theme%3Ascpdeclassified/1);
 +@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Ascpdeclassified-jp/1');
@@ -55,7 +55,7 @@ with `python3 review/build_review.py`; verify with
 +**翻訳責任者:** AI
 +**翻訳年:** 2026
 +**原題:** 版式：SCP 解密
-+**著作権者:** 原語版ページの作成者に同じ（scp-wiki-cn の theme:scpdeclassified）
++**著作権者:** [[*user Ambersight]]
 +**作成年:** 2022
 +**初訳時参照リビジョン:** 14
 +**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:scpdeclassified 版式：SCP 解密]
@@ -245,10 +245,6 @@ with `python3 review/build_review.py`; verify with
  @@@@
 -[[collapsible show="+ 源代码" hide="- 源代码"]]
 -[[code type="CSS"]]
-+[[collapsible show="+ ソースコード" hide="- ソースコード"]]
-+[[/collapsible]]
-+
-++ ソースコード
 +
 +[[collapsible show="> コードを表示" hide="> コードを閉じる"]]
 +[[code type="css"]]
@@ -283,7 +279,7 @@ with `python3 review/build_review.py`; verify with
  }
  
  a,a:visited {
-@@ -199,7 +218,7 @@
+@@ -199,7 +214,7 @@
  #header {
    background: none;
  }
@@ -292,7 +288,7 @@ with `python3 review/build_review.py`; verify with
  div#container-wrap {
    background: none;
  }
-@@ -209,7 +228,7 @@
+@@ -209,7 +224,7 @@
    width: 100%;
    top: 0;
    position: absolute;
@@ -301,7 +297,7 @@ with `python3 review/build_review.py`; verify with
    background-size: cover;
    background-position: left top;
  }
-@@ -329,7 +348,7 @@
+@@ -329,7 +344,7 @@
  }
  
  #side-bar .collapsible-block-folded {
@@ -310,7 +306,7 @@ with `python3 review/build_review.py`; verify with
  }
  
  #side-bar .collapsible-block-unfolded-link .collapsible-block-link,
-@@ -344,7 +363,7 @@
+@@ -344,7 +359,7 @@
  .yui-navset .yui-nav a,.yui-navset .yui-navset-top .yui-nav a{background-color:inherit;background-image:inherit}.yui-navset .yui-nav a:hover,.yui-navset .yui-nav a:focus{background:inherit;text-decoration:inherit}.yui-navset .yui-nav .selected a,.yui-navset .yui-nav .selected a:focus,.yui-navset .yui-nav .selected a:hover{color:inherit;background:inherit}.yui-navset .yui-nav,.yui-navset .yui-navset-top .yui-nav{border-color:inherit}.yui-navset li{line-height:inherit}
  
  /* ---- YUI TAB CUSTOMIZATION ----*/
@@ -319,7 +315,7 @@ with `python3 review/build_review.py`; verify with
   .yui-navset .yui-nav,
   .yui-navset .yui-navset-top .yui-nav{
       display: flex;
-@@ -485,7 +504,7 @@
+@@ -485,7 +500,7 @@
  }
  
  .code {
@@ -328,7 +324,7 @@ with `python3 review/build_review.py`; verify with
  }
  
  /* 分割线 */
-@@ -498,7 +517,7 @@
+@@ -498,7 +513,7 @@
  /* 标题 */
  h1, h2, h3, h4, h5, h6 {
      color: #000000;
@@ -337,7 +333,7 @@ with `python3 review/build_review.py`; verify with
      font-weight: bold;
  }
  
-@@ -513,17 +532,17 @@
+@@ -513,17 +528,17 @@
      box-shadow: none;
      border-radius: 0;
  }
@@ -358,7 +354,7 @@ with `python3 review/build_review.py`; verify with
  .rate-box-with-credit-button .cancel {
      border: solid 1px white;
  }
-@@ -546,25 +565,25 @@
+@@ -546,25 +561,25 @@
      border-top: solid 1px white;
      border-bottom: solid 1px white;
  }
@@ -388,7 +384,7 @@ with `python3 review/build_review.py`; verify with
  .page-rate-widget-box .cancel a {
       color: rgb(113, 71, 121);
  }
-@@ -580,7 +599,7 @@
+@@ -580,7 +595,7 @@
    z-index:-10;
    top: 0;
    position: fixed;
@@ -397,7 +393,7 @@ with `python3 review/build_review.py`; verify with
    background-size: cover;
    background-position: center;
  }
-@@ -629,7 +648,7 @@
+@@ -629,7 +644,7 @@
  
  @media only screen and (max-width: 768px) {
  div#extra-div-1 {
@@ -406,7 +402,7 @@ with `python3 review/build_review.py`; verify with
    background-size: cover;
    background-position: left top;
  }
-@@ -658,6 +677,16 @@
+@@ -658,6 +673,16 @@
  }
  
  }
@@ -416,7 +412,7 @@ with `python3 review/build_review.py`; verify with
  [[/collapsible]]
 +
 +[[include :scp-jp:component:license-box-backend
-+|author=scp-wiki-cn theme:scpdeclassified の作者]]
++|author=Ambersight]]
 +
 +> **画像・フォントの出典:** 原語版の theme:scpdeclassified の記載に従います。sandbox 等の外部ホストの添付は候補ページに再ホストしています。原語版にライセンス表記が無い画像は、投稿前に著者へ確認してください。
 +

@@ -16,12 +16,12 @@ adjudicated explanation.
 |---|---|
 | original.txt | 2464 |
 | candidate.txt | 2425 |
-| Added | +1250 |
-| Review-stage comments | 0 of the +1250 added lines |
-| Removed | -1289 |
-| Changed | 2539 |
-| Change blocks | 10 |
-| Diff sections (context 3) | 4 |
+| Added | +1253 |
+| Review-stage comments | 0 of the +1253 added lines |
+| Removed | -1292 |
+| Changed | 2545 |
+| Change blocks | 11 |
+| Diff sections (context 3) | 5 |
 
 ## Changed lines by auto-class (heuristic)
 
@@ -30,7 +30,7 @@ adjudicated explanation.
 | mechanical | 1 | 2 |
 | translation | 1 | 2 |
 | supplement | 4 | 153 |
-| residual | 4 | 2382 |
+| residual | 5 | 2388 |
 
 ## Change-block index
 
@@ -41,11 +41,12 @@ adjudicated explanation.
 | 3 | 1 | 6–6 | 28–28 | +1/−1 | supplement | \| theme=https://scp-jp.wdfiles.com/local--code/theme%3Afossil/1 |
 | 4 | 1 | 11–11 | 33–151 | +119/−1 | supplement | @@@@ |
 | 5 | 1 | 14–16 | 154–1249 | +1096/−3 | residual | /* |
-| 6 | 2 | 37–37 | 1270–1270 | +1/−1 | translation | content: "タグ"; |
-| 7 | 3 | 94–94 | 1327–1327 | +1/−1 | residual | --fossil-header: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3… |
-| 8 | 3 | 96–96 | 1329–1329 | +1/−1 | residual | --fossil-footer: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3… |
-| 9 | 4 | 1182–2460 | — | +0/−1279 | residual | [[/module]] |
-| 10 | 4 | — | 2418–2424 | +7/−0 | supplement | [[include :scp-jp:component:license-box-backend |
+| 6 | 2 | 25–27 | 1258–1260 | +3/−3 | residual | --header-font: 'Poltawski Nowy', "Noto Sans JP", Garamond, "New Century Schoo… |
+| 7 | 3 | 37–37 | 1270–1270 | +1/−1 | translation | content: "タグ"; |
+| 8 | 4 | 94–94 | 1327–1327 | +1/−1 | residual | --fossil-header: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3… |
+| 9 | 4 | 96–96 | 1329–1329 | +1/−1 | residual | --fossil-footer: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3… |
+| 10 | 5 | 1182–2460 | — | +0/−1279 | residual | [[/module]] |
+| 11 | 5 | — | 2418–2424 | +7/−0 | supplement | [[include :scp-jp:component:license-box-backend |
 
 ## Full diff
 
@@ -71,7 +72,7 @@ adjudicated explanation.
 +**翻訳責任者:** AI
 +**翻訳年:** 2026
 +**原題:** 山城 版式
-+**著作権者:** 原語版ページの作成者に同じ（scp-wiki-cn の theme:shancheng）
++**著作権者:** [[*user Odeo]]
 +**作成年:** 2025
 +**初訳時参照リビジョン:** 14
 +**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:shancheng 山城 版式]
@@ -1318,7 +1319,28 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 2 — original 34–40 · candidate 1267–1273 · +1/−1 · translation</summary>
+<summary>Section 2 — original 22–30 · candidate 1255–1263 · +3/−3 · residual</summary>
+
+```diff
+@@ -22,9 +1255,9 @@
+ 
+ :root {
+     --header-title: 0;
+-    --header-font: 'Poltawski Nowy', Garamond, "New Century Schoolbook", "Century Schoolbook", Georgia, serif;
+-    --body-font: 'Public Sans', 'Noto Sans SC', Inter, Nanum Gothic, Arial, sans-serif;
+-    --mono-font: 'Sometype Mono', 'Noto Serif SC', 'Courier New', Courier, monospace;
++    --header-font: 'Poltawski Nowy', "Noto Sans JP", Garamond, "New Century Schoolbook", "Century Schoolbook", Georgia, serif;
++    --body-font: 'Public Sans', 'Noto Sans JP', 'Noto Sans SC', Inter, Nanum Gothic, Arial, sans-serif;
++    --mono-font: 'Sometype Mono', 'Noto Serif JP', 'Noto Serif SC', 'Courier New', Courier, monospace;
+ }
+ 
+ :is(#side-bar, #interwiki) .side-block div.menu-item > img,
+```
+
+</details>
+
+<details>
+<summary>Section 3 — original 34–40 · candidate 1267–1273 · +1/−1 · translation</summary>
 
 ```diff
 @@ -34,7 +1267,7 @@
@@ -1335,7 +1357,7 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 3 — original 91–99 · candidate 1324–1332 · +2/−2 · residual</summary>
+<summary>Section 4 — original 91–99 · candidate 1324–1332 · +2/−2 · residual</summary>
 
 ```diff
 @@ -91,9 +1324,9 @@
@@ -1355,7 +1377,7 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 4 — original 1179–2464 · candidate 2412–2425 · +7/−1279 · residual, supplement</summary>
+<summary>Section 5 — original 1179–2464 · candidate 2412–2425 · +7/−1279 · residual, supplement</summary>
 
 ```diff
 @@ -1179,1286 +2412,14 @@
@@ -2645,7 +2667,7 @@ adjudicated explanation.
  [[/collapsible]]
  
 +[[include :scp-jp:component:license-box-backend
-+|author=scp-wiki-cn theme:shancheng の作者]]
++|author=Odeo]]
 +
 +> **画像・フォントの出典:** 原語版の theme:shancheng の記載に従います。sandbox 等の外部ホストの添付は候補ページに再ホストしています。原語版にライセンス表記が無い画像は、投稿前に著者へ確認してください。
 +

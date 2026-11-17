@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:scpdeclassified-jp — origin CN, population #223 [GOSIGN2-LEDGER (b) row 223]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now f5678fb68cddc936343144e4a02f930adf2aea80b09820fcd698fda68bbf94e3); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now a614bc84d4a8b0a377e7246ab040241dec3a3f3df327bdd75ca48b9225780a5f); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 6 errors / 1 warn / 1 info (pseudo-ref×6); standing classes dispositioned in register c1 [T1-ROWS row 188; GOSIGN2-LEDGER (b) row 223]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page runtime-hotlink site-theme chain only; sample credit-modal (preview-form) + page-overflow 333px@320 + 851px@768 (one sample hotlink line also lists http.cat among other hosts, no hidden-* cluster); T3 .open-menu toggle overlaps body text at ≤375 on both pages, webkit-768 sample render unstyled from a transient 503 (not theme); full-engine coverage. [RENDER-ROWS-G (CN13)]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 222, source LOCALIZE-S2-E]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 222]
 - FIX5 re-judgement: items 76 (class H) FIXED, 77 (class D) FIXED — FIX5-FONTSB, commit 3911f7b: live probes CN hub HTTP 200 vs JP 404; link rewritten to the serving CN original per the FIX3-B precedent, with Japanese label and untranslated note; stacks rewired to loaded JP faces. Lane recorded a premise correction: the ledger said JP faces appear only in a non-delivering [[code]] exhibit, but the file's single code block is delivered via the /1 import at L2 [GOSIGN2-LEDGER-SUPPLEMENT (a) items 76–77]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:scpdeclassified-jp.txt sha256:f5678fb68cddc936343144e4a02f930adf2aea80b09820fcd698fda68bbf94e3; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit c1ba76a4aa2bdaa34cc62e1f9fa3c6b433c4df4c; candidate file pages/theme:scpdeclassified-jp.txt sha256:a614bc84d4a8b0a377e7246ab040241dec3a3f3df327bdd75ca48b9225780a5f; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 Status: complete (hand-written explanation over the classifier skeleton; the verdict stamp above is generated)
@@ -170,6 +170,14 @@ This instance: the banner comment inside the code block (candidate lines 149–1
 The theme's own verdict is the stamp above: overall STALE by design (the candidate changed after the verdict; the frozen record remains the verdict for the bytes it judged). Independent checks run for this package: both FIX5 closures are re-derived from the commit and the current bytes in the per-theme record; a fresh T1 run (check_source.py --kind theme --translation, 2026-11-17) returns error 6 / warn 0 / info 1, every error the pseudo-ref class (iii) of section 11(a) (the baseline recorded in the stamp additionally carried 1 warn under its link-check configuration); a brace-depth scan of both code blocks ends at depth 0 with no negative excursion; `python3 review/build_review.py --check` lists this package as current after generation (the batch acceptance compares the stale set against the pre-existing refresh population).
 
 Change set outside the two diffed files: pages/theme-decoration-sample-scpdeclassified-jp.txt (the render sample the (c2) row measured). No other change-set files: the theme is single-page with one code block.
+
+## Post-package repairs (REFRESH3-J)
+
+The items above describe this package as built. The repairs recorded below postdate the package build; `candidate.txt` has been recopied from the current canonical `pages/theme:scpdeclassified-jp.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**FIX-RFIX11 Item 2 — credit pointer, both carriers named (landing c1ba76a; record FIX-RFIX11.md).** As built, the credit block's 著作権者 field (candidate L17) read 「原語版ページの作成者に同じ（scp-wiki-cn の theme:scpdeclassified）」, naming nobody, and the block had no 著者 field; the license-box author parameter (candidate L686) repeated the pointer. The original names the author in prose (original L21, `[[*user Ambersight]]`) and so does the candidate's own prose (L26). The remedy named him in both carriers: credit L17 → `**著作権者:** [[*user Ambersight]]`, license-box parameter → `|author=Ambersight]]`. No pointer form remains.
+
+**FIX-RFIX11 Item 3 — empty collapsible removed (landing c1ba76a; record FIX-RFIX11.md).** As built, candidate L138–139 opened and immediately closed an empty `+ ソースコード` collapsible, followed by a blank and a bare duplicated `+ ソースコード` heading (L141), ahead of the load-bearing `> コードを表示` collapsible wrapping the code block. The original has one collapsible wrapping the code block (original L133–134) and no empty furniture to restore into, so the remedy deleted the four lines (empty pair, blank, duplicate heading). The surviving collapsible and code block, and the live `[[footnoteblock]]` at L134, are byte-untouched. Per FIX-RFIX11.md the T1 finding set is unchanged (error 6 / warn 0 / info 1 before and after; class (i) 0 → 0); only the `!important` info's line reference moved (L177 → L173). The section-11(c) open flags are now resolved on current bytes.
 
 ## Appendix — residue blocks
 

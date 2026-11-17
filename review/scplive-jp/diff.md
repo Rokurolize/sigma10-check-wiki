@@ -9,9 +9,9 @@ with `python3 review/build_review.py`; verify with
 |---|---|
 | original.txt | 491 |
 | candidate.txt | 524 |
-| Added | +163 |
-| Review-stage comments | 0 of the +163 added lines |
-| Removed | -135 |
+| Added | +164 |
+| Review-stage comments | 0 of the +164 added lines |
+| Removed | -136 |
 | Hunks | 7 |
 
 ```diff
@@ -44,7 +44,7 @@ with `python3 review/build_review.py`; verify with
 +**翻訳責任者:** AI
 +**翻訳年:** 2026
 +**原題:** SCPLive版式
-+**著作権者:** 原語版ページの作成者に同じ（scp-wiki-cn の theme:scplive）
++**著作権者:** [[*user Zihao Huang]]
 +**作成年:** 2022
 +**初訳時参照リビジョン:** 34
 +**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:scplive SCPLive版式]
@@ -55,7 +55,8 @@ with `python3 review/build_review.py`; verify with
 +このテーマを適用するには、作品の冒頭に以下の構文を追加してください。
  
  > @@[[module css]]@@
- > @@@import url(/theme:scplive/code/1);@@
+-> @@@import url(/theme:scplive/code/1);@@
++> @@@import url(/theme:scplive-jp/code/1);@@
  > @@[[/module]]@@
  ----
 -+ 示例
@@ -434,7 +435,7 @@ with `python3 review/build_review.py`; verify with
 +[[/collapsible]]
 +
 +[[include :scp-jp:component:license-box-backend
-+|author=scp-wiki-cn theme:scplive の作者]]
++|author=Zihao Huang]]
 +
 +> **画像・フォントの出典:** 原語版の theme:scplive の記載に従います。sandbox 等の外部ホストの添付は候補ページに再ホストしています。原語版にライセンス表記が無い画像は、投稿前に著者へ確認してください。
 +

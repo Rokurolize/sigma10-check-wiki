@@ -3,7 +3,8 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:scplive-jp — origin CN, population #224 [GOSIGN2-LEDGER (b) row 224]
-- Overall: PASS — NOT PASS at the ledger determination (section (e) register); both OPEN items re-judged FIXED by the FIX5 wave; go-sign issued 2026-11-17 (COMPLETION-REPORT §10) [GOSIGN2-LEDGER (b); GOSIGN2-LEDGER-SUPPLEMENT (d)]
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now d5b263916636fd97d70d253223eceae28c406e3dc22661f7cb8087c699178564); verdict not carried over, re-judgement required
+> verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 2 errors / 2 warns / 1 info (pseudo-ref×2); standing classes dispositioned in register c1 [T1-ROWS row 189; GOSIGN2-LEDGER (b) row 224]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page runtime-hotlink site-theme chain only; sample credit-modal (preview-form) + page-overflow 884px@768; T3 none seen, no candidate-specific visual defect; broken board.png (deferred asset); full-engine coverage. [RENDER-ROWS-G (CN13)]
 - Engine coverage: full (chromium+webkit, both pages) [RENDER-ROWS-G row, findings cell]
@@ -11,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 223, source LOCALIZE-S2-E]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 223]
 - FIX5 re-judgement: items 78 (class H) FIXED, 79 (class D) FIXED — FIX5-FONTSB, commit 3911f7b: live probes CN hub HTTP 200 vs JP 404; link rewritten to the serving CN original per the FIX3-B precedent; body font replaced with loaded Noto Sans JP [GOSIGN2-LEDGER-SUPPLEMENT (a) items 78–79]
-- Computed against: canonical commit 3911f7b2f69cc4e5a4d7611024cf3d96b5b73e92; candidate file pages/theme:scplive-jp.txt sha256:f99b319d3ef0a01b7450f857a8b742a88a5acf6fd98511f749600bb2e0461880; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit c1ba76a4aa2bdaa34cc62e1f9fa3c6b433c4df4c; candidate file pages/theme:scplive-jp.txt sha256:d5b263916636fd97d70d253223eceae28c406e3dc22661f7cb8087c699178564; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 Status: complete (hand-written explanation over the classifier skeleton; the verdict stamp above is generated)
@@ -150,6 +151,14 @@ This instance: the banner comment at the code block's head (candidate lines 169�
 The theme's own verdict is the stamp above: overall PASS, computed against the FIX5 commit itself; the candidate has not changed since. Independent checks run for this package: both FIX5 closures are re-derived from the commit and the current bytes in the per-theme record; a fresh T1 run (check_source.py --kind theme --translation, 2026-11-17) returns error 2 / warn 0 / info 1, both errors the pseudo-ref class (iii) of section 11(a) (the baseline recorded in the stamp additionally carried 2 warns under its link-check configuration); a brace-depth scan of both code blocks ends at depth 0 with no negative excursion; `python3 review/build_review.py --check` lists this package as current after generation (the batch acceptance compares the stale set against the pre-existing refresh population).
 
 Change set outside the two diffed files: pages/theme-decoration-sample-scplive-jp.txt (the render sample the (c2) row measured). No other change-set files: the theme is single-page with one code block.
+
+## Post-package repairs (REFRESH3-J)
+
+The items above describe this package as built. The repairs recorded below postdate the package build; `candidate.txt` has been recopied from the current canonical `pages/theme:scplive-jp.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record. This package is the one whose as-built stamp read PASS (the candidate was unchanged since the verdict at build time); landing c1ba76a is its first post-verdict change, so its stamp now reads STALE like the others'.
+
+**FIX-RFIX11 Item 4 — credit pointer, both carriers named (landing c1ba76a; record FIX-RFIX11.md).** As built, the credit block's 著作権者 field (candidate L16) read 「原語版ページの作成者に同じ（scp-wiki-cn の theme:scplive）」, naming nobody, with no 著者 field; the license-box author parameter (candidate L518) repeated the pointer. The original names Zihao Huang in prose (original L10) and so does the candidate's prose (L22). The remedy: credit L16 → `**著作権者:** [[*user Zihao Huang]]`, license-box parameter → `|author=Zihao Huang]]`. No pointer form remains.
+
+**FIX-RFIX11 Item 5 — install snippet names the candidate's own fragment (landing c1ba76a; record FIX-RFIX11.md).** As built, the usage exhibit (candidate L26–28) kept the original's install snippet byte-for-byte, including `@import url(/theme:scplive/code/1);` (L27), which names the original wiki's page and cannot resolve as an instruction on SCP-JP. The candidate carries exactly one `[[code]]` block (L163–514, its CSS, hence block 1), imported at L2 as `https://sigma10-jp-test.wdfiles.com/local--code/theme%3Ascplive-jp/1` and named by the interwiki frame at L7. The remedy repointed the relative address to L27 `> @@@import url(/theme:scplive-jp/code/1);@@`, every other byte of the snippet unchanged. Per FIX-RFIX11.md the T1 finding set is unchanged (error 2 / warn 0 / info 1 before and after; class (i) 0 → 0). The section-11(c) open flags are now resolved on current bytes.
 
 ## Appendix — residue blocks
 

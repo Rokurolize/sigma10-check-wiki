@@ -44,7 +44,7 @@ adjudicated explanation.
 | 6 | 1 | 15–18 | 34–34 | +1/−4 | residual | **評価モジュールおよびクレジットモジュール:** |
 | 7 | 1 | 20–22 | 36–36 | +1/−3 | residual | これは[[*user hoah2333]]が[[*user Agent Phage]]のために制作した「運命共同体」テーマです。 |
 | 8 | 1 | 24–28 | 38–39 | +2/−5 | residual | このテーマを使用するには、使用したい記事の冒頭に以下のコードを追加してください。 |
-| 9 | 1 | 30–35 | 41–41 | +1/−6 | residual | 「運命共同体」テーマは[[[component:sigma-plus\|Sigma+]]]テーマです。 |
+| 9 | 1 | 30–35 | 41–41 | +1/−6 | residual | 「運命共同体」テーマは[[[component:sigma-plus-jp\|Sigma+]]]テーマです。 |
 | 10 | 1 | 38–38 | 44–44 | +1/−1 | translation | + 例 |
 | 11 | 1 | 40–40 | 46–46 | +1/−1 | residual | [[include component:image-block name=https://sigma10-jp-test.wdfiles.com/loca… |
 | 12 | 1 | 42–42 | 48–48 | +1/−1 | residual | 5個のハイフン「@@-----@@」で水平分割線を作成できます。引用ブロックなどの他の部品の中に置かれていなければ、ページを左右に貫いて伸びます。このよう… |
@@ -137,7 +137,7 @@ adjudicated explanation.
 +**翻訳責任者:** AI
 +**翻訳年:** 2026
 +**原題:** 命运共同体 版式
-+**著作権者:** 原語版ページの作成者に同じ（scp-wiki-cn の theme:share-future-community）
++**著作権者:** hoah2333 & Agent Phage
 +**作成年:** 2025
 +**初訳時参照リビジョン:** 1
 +**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:share-future-community 命运共同体 版式]
@@ -180,7 +180,7 @@ adjudicated explanation.
 -> {{@@[[include :scp-wiki-cn:theme:share-future-community]]@@}}
 -
 -命运共同体版式是一个 [[[component:sigma-plus|Sigma+]]] 版式。
-+「運命共同体」テーマは[[[component:sigma-plus|Sigma+]]]テーマです。
++「運命共同体」テーマは[[[component:sigma-plus-jp|Sigma+]]]テーマです。
  
  ----
 -+ 示例
@@ -866,7 +866,7 @@ adjudicated explanation.
  [[/collapsible]]
 +
 +[[include :scp-jp:component:license-box-backend
-+|author=scp-wiki-cn theme:share-future-community の作者]]
++|author=hoah2333 & Agent Phage]]
 +
 +> **画像・フォントの出典:** 原語版の theme:share-future-community の記載に従います。sandbox 等の外部ホストの添付は候補ページに再ホストしています。原語版にライセンス表記が無い画像は、投稿前に著者へ確認してください。
 +

@@ -16,12 +16,12 @@ adjudicated explanation.
 |---|---|
 | original.txt | 545 |
 | candidate.txt | 569 |
-| Added | +311 |
-| Review-stage comments | 0 of the +311 added lines |
-| Removed | -287 |
-| Changed | 598 |
-| Change blocks | 121 |
-| Diff sections (context 3) | 4 |
+| Added | +310 |
+| Review-stage comments | 0 of the +310 added lines |
+| Removed | -286 |
+| Changed | 596 |
+| Change blocks | 120 |
+| Diff sections (context 3) | 5 |
 
 ## Changed lines by auto-class (heuristic)
 
@@ -29,7 +29,7 @@ adjudicated explanation.
 |---|---|---|
 | mechanical | 66 | 390 |
 | supplement | 7 | 66 |
-| residual | 48 | 142 |
+| residual | 47 | 140 |
 
 ## Change-block index
 
@@ -153,9 +153,8 @@ adjudicated explanation.
 | 116 | 4 | 521–523 | 543–545 | +3/−3 | mechanical | 75% { |
 | 117 | 4 | 525–527 | 547–549 | +3/−3 | mechanical | 79% { |
 | 118 | 4 | 529–531 | 551–553 | +3/−3 | mechanical | 100% { |
-| 119 | 4 | 537–537 | 559–559 | +1/−1 | residual | @@[[footnoteblock]]@@ |
-| 120 | 4 | 539–540 | 561–563 | +3/−2 | supplement | [[module CSS]] |
-| 121 | 4 | 542–544 | 565–568 | +4/−3 | supplement | [[include :scp-jp:component:interwiki-style |
+| 119 | 5 | 539–540 | 561–563 | +3/−2 | supplement | [[module CSS]] |
+| 120 | 5 | 542–544 | 565–568 | +4/−3 | supplement | [[include :scp-jp:component:interwiki-style |
 
 ## Full diff
 
@@ -567,10 +566,36 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 4 — original 281–545 · candidate 303–569 · +164/−162 · mechanical, residual, supplement</summary>
+<summary>Section 5 — original 536–545 · candidate 558–569 · +7/−5 · supplement</summary>
 
 ```diff
-@@ -281,265 +303,267 @@
+@@ -536,10 +558,12 @@
+ [[/collapsible]]
+ [[footnoteblock]]
+ [[/iftags]]
+-[[module css]]
+-@import url("https://scp-wiki.wdfiles.com/local--code/theme%3Ascp-offices-theme/1")
++
++[[module CSS]]
++@import url("https://scp-jp.github.io/files/theme/scp-offices-theme/style0.css")
+ [[/module]]
+-[[include :scp-wiki:component:interwiki-style
+-| priority=3
+-| theme=https://scp-wiki.wdfiles.com/local--code/theme%3Ascp-offices-theme/1
++
++[[include :scp-jp:component:interwiki-style
++|priority=3
++|theme=https://scp-jp.github.io/files/theme/scp-offices-theme/style0.css
+ ]]
+```
+
+</details>
+
+<details>
+<summary>Purely mechanical sections (4) — whitespace, host, and branch-token changes only (heuristic)</summary>
+
+```diff
+@@ -281,254 +303,254 @@
      #page-title:hover,
      #search-top-box-form input[type="submit"]:hover,
      #search-top-box-form input[type="submit"]:focus {
@@ -981,25 +1006,6 @@ adjudicated explanation.
      }
  }
  
- [[/code]]
- [[/collapsible]]
--[[footnoteblock]]
-+@@[[footnoteblock]]@@
- [[/iftags]]
--[[module css]]
--@import url("https://scp-wiki.wdfiles.com/local--code/theme%3Ascp-offices-theme/1")
-+
-+[[module CSS]]
-+@import url("https://scp-jp.github.io/files/theme/scp-offices-theme/style0.css")
- [[/module]]
--[[include :scp-wiki:component:interwiki-style
--| priority=3
--| theme=https://scp-wiki.wdfiles.com/local--code/theme%3Ascp-offices-theme/1
-+
-+[[include :scp-jp:component:interwiki-style
-+|priority=3
-+|theme=https://scp-jp.github.io/files/theme/scp-offices-theme/style0.css
- ]]
 ```
 
 </details>
