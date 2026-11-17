@@ -235,7 +235,7 @@ adjudicated explanation.
 -@@[[include :scp-wiki:theme:black-highlighter-theme]]@@
 -@@[[include :scp-wiki:theme:extra-black-highlighter-theme]]@@
 +@@[[include :scp-jp:theme:black-highlighter-theme]]@@
-+@@[[include :scp-jp:theme:extra-black-highlighter-theme]]@@
++@@[[include :scp-jp:theme:extra-black-highlighter-theme-jp]]@@
  [[/div]]
  [[/div]]
 -

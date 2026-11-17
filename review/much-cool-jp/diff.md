@@ -9,10 +9,10 @@ with `python3 review/build_review.py`; verify with
 |---|---|
 | original.txt | 592 |
 | candidate.txt | 632 |
-| Added | +75 |
-| Review-stage comments | 0 of the +75 added lines |
-| Removed | -40 |
-| Hunks | 8 |
+| Added | +76 |
+| Review-stage comments | 0 of the +76 added lines |
+| Removed | -41 |
+| Hunks | 7 |
 
 ```diff
 --- original.txt
@@ -68,7 +68,7 @@ with `python3 review/build_review.py`; verify with
 +このテーマをページにインポートするには、ページの中に下のテキストを入力してくれ:
  [[div class="code"]]
 -@@[[include :scp-wiki:theme:much-cool]]@@
-+@@[[include :scp-jp:theme:much-cool]]@@
++@@[[include :scp-jp:theme:much-cool-jp]]@@
  [[/div]]
  @@@@
  -----
@@ -161,7 +161,7 @@ with `python3 review/build_review.py`; verify with
      border-radius: 5px;
      box-shadow: none;
  }
-@@ -448,24 +459,25 @@
+@@ -448,43 +459,60 @@
  }
  
  .page-rate-widget-box .cancel a {
@@ -190,7 +190,14 @@ with `python3 review/build_review.py`; verify with
  }
  
  .rate-box-with-credit-button .page-rate-widget-box {
-@@ -479,12 +491,28 @@
+     border: none;
+ }
+ 
+-.creditButton p a {
++.creditButton > a {
+     border-left: none !important;
+     color: #000000 !important;
+ }
  
  #page-content .rate-box-with-credit-button .fa-info {
      padding: 3px 0 1px;

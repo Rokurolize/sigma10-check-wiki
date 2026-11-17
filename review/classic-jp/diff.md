@@ -15,11 +15,11 @@ adjudicated explanation.
 | | Lines |
 |---|---|
 | original.txt | 727 |
-| candidate.txt | 568 |
-| Added | +479 |
-| Review-stage comments | 0 of the +479 added lines |
+| candidate.txt | 566 |
+| Added | +477 |
+| Review-stage comments | 0 of the +477 added lines |
 | Removed | -638 |
-| Changed | 1117 |
+| Changed | 1115 |
 | Change blocks | 53 |
 | Diff sections (context 3) | 1 |
 
@@ -27,7 +27,7 @@ adjudicated explanation.
 
 | Auto-class | Blocks | Changed lines |
 |---|---|---|
-| supplement | 4 | 30 |
+| supplement | 4 | 28 |
 | residual | 49 | 1087 |
 
 ## Change-block index
@@ -40,61 +40,61 @@ adjudicated explanation.
 | 4 | 1 | 10–12 | 10–10 | +1/−3 | residual | [[iftags +テーマ]] |
 | 5 | 1 | 14–16 | 12–13 | +2/−3 | residual | /* ---- PRESENTATION ---- */ |
 | 6 | 1 | 19–21 | 16–17 | +2/−3 | residual | background: hsl(0, 0%, 100%); |
-| 7 | 1 | 25–25 | 21–35 | +15/−1 | supplement | [[>]] |
-| 8 | 1 | 27–29 | 37–43 | +7/−3 | supplement | これを見てくれたstormbreathとCroquemboucheに感謝します。 |
-| 9 | 1 | 31–36 | 45–45 | +1/−6 | residual | [[=image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aclassic-jp/… |
-| 10 | 1 | 38–39 | 47–50 | +4/−2 | residual | [[div class="templateInfo"]] |
-| 11 | 1 | — | 52–57 | +6/−0 | residual | これはクラシックSCP財団テーマのモダンバージョンです。 |
-| 12 | 1 | 42–42 | 59–59 | +1/−1 | residual | +* 使い方 |
-| 13 | 1 | 44–44 | 61–62 | +2/−1 | residual | ---- |
-| 14 | 1 | 46–49 | 64–106 | +43/−4 | residual | [[div class="code"]] |
-| 15 | 1 | 53–56 | 110–111 | +2/−4 | residual | 4つのハイフン("@@----@@")を入力して罫線を作成します: |
+| 7 | 1 | 25–25 | 21–33 | +13/−1 | supplement | [[>]] |
+| 8 | 1 | 27–29 | 35–41 | +7/−3 | supplement | これを見てくれたstormbreathとCroquemboucheに感謝します。 |
+| 9 | 1 | 31–36 | 43–43 | +1/−6 | residual | [[=image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aclassic-jp/… |
+| 10 | 1 | 38–39 | 45–48 | +4/−2 | residual | [[div class="templateInfo"]] |
+| 11 | 1 | — | 50–55 | +6/−0 | residual | これはクラシックSCP財団テーマのモダンバージョンです。 |
+| 12 | 1 | 42–42 | 57–57 | +1/−1 | residual | +* 使い方 |
+| 13 | 1 | 44–44 | 59–60 | +2/−1 | residual | ---- |
+| 14 | 1 | 46–49 | 62–104 | +43/−4 | residual | [[div class="code"]] |
+| 15 | 1 | 53–56 | 108–109 | +2/−4 | residual | 4つのハイフン("@@----@@")を入力して罫線を作成します: |
 | 16 | 1 | 58–61 | — | +0/−4 | residual | This is a modern version of the Classic SCP Foundation Theme. |
-| 17 | 1 | 65–70 | 116–117 | +2/−6 | residual | > 引用ブロック |
-| 18 | 1 | 72–73 | 119–127 | +9/−2 | residual | \|\|~ ヘッダー\|\|~ ヘッダー\|\|~ ヘッダー\|\|~ ヘッダー\|\|~ ヘッダー\|\|~ ヘッダー\|\| |
-| 19 | 1 | 76–76 | 130–130 | +1/−1 | residual | [[[http://scp-jp.wikidot.com/#\|リンク]]] ([https://google.com アクセスしたことがあるであろうリンク… |
-| 20 | 1 | 78–78 | 132–134 | +3/−1 | residual | [[collapsible show="+ 折り畳み" hide="- 折り畳み"]] |
-| 21 | 1 | 80–80 | 136–138 | +3/−1 | residual | # 番号付きリスト |
-| 22 | 1 | 82–83 | 140–142 | +3/−2 | residual | * 箇条書きリスト |
-| 23 | 1 | 85–85 | 144–160 | +17/−1 | residual | [[tabview]] |
-| 24 | 1 | 89–89 | 164–164 | +1/−1 | residual | +* ソースコード |
-| 25 | 1 | 93–97 | 168–171 | +4/−5 | residual | [[=]] |
+| 17 | 1 | 65–70 | 114–115 | +2/−6 | residual | > 引用ブロック |
+| 18 | 1 | 72–73 | 117–125 | +9/−2 | residual | \|\|~ ヘッダー\|\|~ ヘッダー\|\|~ ヘッダー\|\|~ ヘッダー\|\|~ ヘッダー\|\|~ ヘッダー\|\| |
+| 19 | 1 | 76–76 | 128–128 | +1/−1 | residual | [[[http://scp-jp.wikidot.com/#\|リンク]]] ([https://google.com アクセスしたことがあるであろうリンク… |
+| 20 | 1 | 78–78 | 130–132 | +3/−1 | residual | [[collapsible show="+ 折り畳み" hide="- 折り畳み"]] |
+| 21 | 1 | 80–80 | 134–136 | +3/−1 | residual | # 番号付きリスト |
+| 22 | 1 | 82–83 | 138–140 | +3/−2 | residual | * 箇条書きリスト |
+| 23 | 1 | 85–85 | 142–158 | +17/−1 | residual | [[tabview]] |
+| 24 | 1 | 89–89 | 162–162 | +1/−1 | residual | +* ソースコード |
+| 25 | 1 | 93–97 | 166–169 | +4/−5 | residual | [[=]] |
 | 26 | 1 | 99–217 | — | +0/−119 | residual | @@ @@ |
-| 27 | 1 | 222–222 | 177–177 | +1/−1 | residual | * Edited for SCP財団 by MikuKaneko |
-| 28 | 1 | 225–231 | 180–183 | +4/−7 | residual | /* ---- PAGE WRAP ---- */ |
-| 29 | 1 | 234–252 | 186–205 | +20/−19 | residual | /* ---- HEADERS ---- */ |
-| 30 | 1 | 255–278 | 208–228 | +21/−24 | residual | /* ---- SITE HEADER ---- */ |
-| 31 | 1 | 281–284 | 231–268 | +38/−4 | residual | /* ---- TOP MENU ---- */ |
-| 32 | 1 | 287–292 | 271–303 | +33/−6 | residual | /* ---- SEARCH BOX ---- */ |
-| 33 | 1 | 295–300 | 306–333 | +28/−6 | residual | /* ---- SIDE MENU ---- */ |
-| 34 | 1 | 303–304 | 336–338 | +3/−2 | residual | /* ---- INFO BAR ---- */ |
-| 35 | 1 | 307–309 | 341–370 | +30/−3 | residual | /* ---- CREDIT MODULE ---- */ |
-| 36 | 1 | 312–313 | 373–412 | +40/−2 | residual | /* ---- PAGE RATING ---- */ |
-| 37 | 1 | 316–319 | 415–427 | +13/−4 | residual | /* ----- GENERAL ----- */ |
-| 38 | 1 | 322–324 | 430–433 | +4/−3 | residual | /* ---- IMAGE BLOCK ---- */ |
-| 39 | 1 | 327–329 | 436–441 | +6/−3 | residual | /* ---- CLASSIC IMAGE BLOCK DIV ---- */ |
-| 40 | 1 | 332–334 | 444–465 | +22/−3 | residual | /* ---- YUI TABS ---- */ |
-| 41 | 1 | 337–339 | 468–480 | +13/−3 | residual | /* --- INTERWIKI --- */ |
-| 42 | 1 | 342–351 | 483–485 | +3/−10 | residual | /* --- SELECTION --- */ |
-| 43 | 1 | 354–359 | 488–495 | +8/−6 | residual | /* ---- MOBILE MEDIA QUERIES ---- */ |
-| 44 | 1 | — | 497–516 | +20/−0 | residual | @media (max-width: 479px), |
-| 45 | 1 | 362–362 | 518–529 | +12/−1 | residual | >[[ift{$engtitle}gs -テーマ]] |
-| 46 | 1 | 364–366 | 531–534 | +4/−3 | residual | [[module CSS]] |
-| 47 | 1 | — | 536–536 | +1/−0 | residual | [[/module]] |
-| 48 | 1 | 369–372 | 538–541 | +4/−4 | residual | [[module CSS]] |
-| 49 | 1 | — | 543–543 | +1/−0 | residual | [[/module]] |
-| 50 | 1 | 375–378 | 545–555 | +11/−4 | residual | [[module CSS]] |
-| 51 | 1 | — | 557–557 | +1/−0 | residual | [[/module]] |
-| 52 | 1 | 381–448 | 559–563 | +5/−68 | residual | [[module CSS]] |
-| 53 | 1 | 453–727 | 568–568 | +1/−275 | residual | [[/module]] |
+| 27 | 1 | 222–222 | 175–175 | +1/−1 | residual | * Edited for SCP財団 by MikuKaneko |
+| 28 | 1 | 225–231 | 178–181 | +4/−7 | residual | /* ---- PAGE WRAP ---- */ |
+| 29 | 1 | 234–252 | 184–203 | +20/−19 | residual | /* ---- HEADERS ---- */ |
+| 30 | 1 | 255–278 | 206–226 | +21/−24 | residual | /* ---- SITE HEADER ---- */ |
+| 31 | 1 | 281–284 | 229–266 | +38/−4 | residual | /* ---- TOP MENU ---- */ |
+| 32 | 1 | 287–292 | 269–301 | +33/−6 | residual | /* ---- SEARCH BOX ---- */ |
+| 33 | 1 | 295–300 | 304–331 | +28/−6 | residual | /* ---- SIDE MENU ---- */ |
+| 34 | 1 | 303–304 | 334–336 | +3/−2 | residual | /* ---- INFO BAR ---- */ |
+| 35 | 1 | 307–309 | 339–368 | +30/−3 | residual | /* ---- CREDIT MODULE ---- */ |
+| 36 | 1 | 312–313 | 371–410 | +40/−2 | residual | /* ---- PAGE RATING ---- */ |
+| 37 | 1 | 316–319 | 413–425 | +13/−4 | residual | /* ----- GENERAL ----- */ |
+| 38 | 1 | 322–324 | 428–431 | +4/−3 | residual | /* ---- IMAGE BLOCK ---- */ |
+| 39 | 1 | 327–329 | 434–439 | +6/−3 | residual | /* ---- CLASSIC IMAGE BLOCK DIV ---- */ |
+| 40 | 1 | 332–334 | 442–463 | +22/−3 | residual | /* ---- YUI TABS ---- */ |
+| 41 | 1 | 337–339 | 466–478 | +13/−3 | residual | /* --- INTERWIKI --- */ |
+| 42 | 1 | 342–351 | 481–483 | +3/−10 | residual | /* --- SELECTION --- */ |
+| 43 | 1 | 354–359 | 486–493 | +8/−6 | residual | /* ---- MOBILE MEDIA QUERIES ---- */ |
+| 44 | 1 | — | 495–514 | +20/−0 | residual | @media (max-width: 479px), |
+| 45 | 1 | 362–362 | 516–527 | +12/−1 | residual | >[[ift{$engtitle}gs -テーマ]] |
+| 46 | 1 | 364–366 | 529–532 | +4/−3 | residual | [[module CSS]] |
+| 47 | 1 | — | 534–534 | +1/−0 | residual | [[/module]] |
+| 48 | 1 | 369–372 | 536–539 | +4/−4 | residual | [[module CSS]] |
+| 49 | 1 | — | 541–541 | +1/−0 | residual | [[/module]] |
+| 50 | 1 | 375–378 | 543–553 | +11/−4 | residual | [[module CSS]] |
+| 51 | 1 | — | 555–555 | +1/−0 | residual | [[/module]] |
+| 52 | 1 | 381–448 | 557–561 | +5/−68 | residual | [[module CSS]] |
+| 53 | 1 | 453–727 | 566–566 | +1/−275 | residual | [[/module]] |
 
 ## Full diff
 
 <details>
-<summary>Section 1 — original 1–727 · candidate 1–568 · +479/−638 · residual, supplement</summary>
+<summary>Section 1 — original 1–727 · candidate 1–566 · +477/−638 · residual, supplement</summary>
 
 ```diff
-@@ -1,727 +1,568 @@
+@@ -1,727 +1,566 @@
  [[module CSS]]
 -@import url(https://scp-wiki.wdfiles.com/local--code/theme%3Aclassic/1);
 +@import url("https://scp-jp.github.io/files/theme/classic/style0.css");
@@ -129,8 +129,6 @@ adjudicated explanation.
  
 -[[=image scp_foundation_logo.png style="width: 160px"]]
 +[[>]]
-+**評価モジュール:**
-+[[module Rate]]
 +**クレジットモジュール:**
 +[[include :scp-jp:credit:start-preview]]
 +**タイトル:** Classic SCP Foundation Theme
@@ -189,13 +187,13 @@ adjudicated explanation.
 -[[include :scp-wiki:info:end-standalone]]
 -[[/>]]
 +[[div class="code"]]
-+@@[[include :scp-jp:theme:classic]]@@
++@@[[include :scp-jp:theme:classic-jp]]@@
 +[[/div]]
 +
 +また、日本語版テーマ独自の仕様で左上のタイトルを英語に変更することが出来ます:
 +
 +[[div class="code"]]
-+@@[[include :scp-jp:theme:classic engtitle=a]]@@
++@@[[include :scp-jp:theme:classic-jp engtitle=a]]@@
 +[[/div]]
 +
 +他のテーマとは異なり、このテーマはロゴがありません。

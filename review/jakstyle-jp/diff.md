@@ -264,7 +264,7 @@ adjudicated explanation.
 -> [[include :scp-wiki:theme:jakstyle]]
 -To edit the header, subheader, and background image, please use the following code after including the above:
 +> @@[[include :scp-jp:theme:black-highlighter-theme]]@@
-+> @@[[include :scp-jp:theme:jakstyle]]@@
++> @@[[include :scp-jp:theme:jakstyle-jp]]@@
 +ヘッダー、サブヘッダー、そして背景画像を編集するには、上のやつをincludeした後に下のコードを使ってくれ:
  [[/=]]
 -> [[module CSS]]

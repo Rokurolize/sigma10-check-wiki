@@ -159,9 +159,15 @@ Adjudication for this README (every block was read against the bytes): the heuri
 
 ## Per-theme record
 
-### The usage example names a page that does not exist (defect flag, repaired)
+### The usage example names a page that does not exist (defect flag, repaired) A second, independent repair postdates this package: FIX-SNIPPET (commit 358955e) corrected the base-layer exhibit at L59 to theme:space-jp; see the post-package repairs item below.
 
 Candidate L60, the second of the two stacked install examples, reads `{{@@[[include :scp-jp:theme:cosmos]]@@}}`. Probe made for this package (2026-11-17): `https://scp-jp.wikidot.com/theme:cosmos` returns 404; the candidate posts to scp-jp under its own name, theme:cosmos-jp, so the example as written cannot be followed. The example directly above it (candidate L59) is correct: it names `:scp-jp:theme:space` for the base layer, and that production page returns 200 — the pair shows the porter applying the production name where the base keeps its name, and the original's slug where the port renames. The campaign's settled rule (AGENTS.md §6) names this exact shape a finding: usage examples inside candidate docs naming `theme:<slug>` instead of `theme:<slug>-jp` break every copy-paste install. The localize lane did not record it, and the ledger's determination for this theme is PASS; this package carries the item as a flagged defect with its probe evidence, for the coordinator's repair wave. The candidate is documented as it stands; no byte of it was edited here. The repair has since landed: the usage-example population sweep (sweep report SWEEP-USAGE.md in the campaign record, R/review-scout/; canonical commit b5cb724), which repaired this shape across all 157 affected candidates; candidate L60 now reads `{{@@[[include :scp-jp:theme:cosmos-jp]]@@}}`, and this package documents the corrected candidate (its stamp reads STALE against the pre-repair verdict, by design).
+
+### Post-package repairs (REFRESH3-C)
+
+The items above describe this package as built. The repairs recorded below postdate the package; `candidate.txt` has been recopied from the current canonical `pages/<fullname>.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**FIX-SNIPPET — production-predecessor reference audit (landing 358955e).** `FIX-SNIPPET.md` records the base-layer usage exhibit as DRIFT ground D4 (the candidate delivers its `space` base from the JP port: `@import` of `theme%3Aspace-jp/1` and frame `theme=`). Commit 358955e inserted `-jp` after the target at candidate L59, `:scp-jp:theme:space` → `:scp-jp:theme:space-jp`. The item already in this record (the theme's own L60 example) is the separate earlier usage sweep (b5cb724); both repairs now coexist in this candidate.
 
 ## Change set outside the two diffed files
 

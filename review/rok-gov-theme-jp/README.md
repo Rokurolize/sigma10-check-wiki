@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:rok-gov-theme-jp — origin KO, population #283 [GOSIGN2-LEDGER (b) row 283]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 1bcbe3b79f9ccb599624be5602ec400b068d867b0639f4877ef4f15a937fb64d); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 6952a8fcc5c50b50c02e093edd76b21951820d022bc486bf95efcf8895f698e4); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 1 error / 2 warns / 0 infos (pseudo-ref×1); standing classes dispositioned in register c1 [T1-ROWS row 253; GOSIGN2-LEDGER (b) row 283]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page runtime-hotlink site-theme chain only; sample credit-modal (preview-form) + 884px@768 overflow; T3 none beyond cross-cutting items. [RENDER-ROWS-2 (RENDER-S2-H (KO7))]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 282, source LOCALIZE-S2-F]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 282]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 283]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:rok-gov-theme-jp.txt sha256:1bcbe3b79f9ccb599624be5602ec400b068d867b0639f4877ef4f15a937fb64d; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 967ec2f4a240dfaf825b2c3152610ed8c4a23b5a; candidate file pages/theme:rok-gov-theme-jp.txt sha256:6952a8fcc5c50b50c02e093edd76b21951820d022bc486bf95efcf8895f698e4; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -158,9 +158,15 @@ Adjudication for this README (both blocks were read against the bytes): B1's EXH
 
 The candidate changed once after the FIX5 head: the usage sweep (commit b5cb724) corrected the escaped usage example at candidate L33 from `@@[[include :scp-jp:theme:rok-gov-theme]]@@` to `@@[[include :scp-jp:theme:rok-gov-theme-jp]]@@`, naming this candidate's actual posting name. That is the whole of the drift the stamp reports: one documentation line, no delivery, credit, or CSS change. This package documents the corrected candidate; its diff and stamp are computed against the corrected bytes, and the verdict lines under the stamp describe the file as judged, one line earlier.
 
-### The agency name's rendering (a T5 observation, recorded not charged)
+### The agency name's rendering (a T5 observation, recorded not charged) Corrected after this package was built: commit 967ec2f replaced the glyphs with 国家超常防災院 in both loci; see the post-package repairs item below.
 
 The candidate renders 국가초상방재원 as 国家初像防災院 (candidate L18, L28). The Korean is 超常 (초상: supernormal — the file's own English subtitle, candidate L6, says "National Paranormal Emergency Service"), and another candidate in this repo renders the same name 国家超常防災院 (theme:atlas-maniacus-jp). The two renderings cannot both be the established form; 初像 does not correspond to the Korean morphemes. T4/T5 judged this theme FINDINGS on the three items recorded above and the ledger determined PASS without naming this string, so this package records the observation with its evidence and makes no edit: if the coordinator's translation standard confirms 超常， the correction is two lines on this page (and the same check belongs on the sample and any page quoting the title field).
+
+### Post-package repairs (REFRESH3-C)
+
+The items above describe this package as built. The repairs recorded below postdate the package; `candidate.txt` has been recopied from the current canonical `pages/<fullname>.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**FIX-JININ — agency-name glyphs (landing 967ec2f, 2026-11-17).** `FIX-JININ.md` records that the candidate rendered 국가초상방재원 with the wrong glyphs 国家初像防災院. Commit 967ec2f corrected 2 occurrences to the population's established 国家超常防災院 (as in theme:atlas-maniacus-jp, agreeing with the file's own English subtitle "National Paranormal Emergency Service"): candidate L18 (credit title field) and L28 (NPES hub link text). The earlier record item that records the wrong rendering describes the as-built state; the delivered candidate carries the correction. T1 before/after identical (1/0/0).
 
 ## Change set outside the two diffed files
 

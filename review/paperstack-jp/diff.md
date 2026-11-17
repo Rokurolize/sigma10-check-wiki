@@ -15,12 +15,12 @@ adjudicated explanation.
 | | Lines |
 |---|---|
 | original.txt | 608 |
-| candidate.txt | 872 |
-| Added | +649 |
-| Review-stage comments | 0 of the +649 added lines |
-| Removed | -385 |
-| Changed | 1034 |
-| Change blocks | 110 |
+| candidate.txt | 868 |
+| Added | +648 |
+| Review-stage comments | 0 of the +648 added lines |
+| Removed | -388 |
+| Changed | 1036 |
+| Change blocks | 111 |
 | Diff sections (context 3) | 5 |
 
 ## Changed lines by auto-class (heuristic)
@@ -29,7 +29,7 @@ adjudicated explanation.
 |---|---|---|
 | mechanical | 3 | 3 |
 | supplement | 2 | 27 |
-| residual | 105 | 1004 |
+| residual | 106 | 1006 |
 
 ## Change-block index
 
@@ -37,122 +37,123 @@ adjudicated explanation.
 |---|---|---|---|---|---|---|
 | 1 | 1 | 1–1 | 1–17 | +17/−1 | supplement | [[include :scp-jp:component:interwiki-style |
 | 2 | 1 | 4–4 | 20–20 | +1/−1 | residual | [[image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Apaperstack-j… |
-| 3 | 1 | 11–14 | 27–28 | +2/−4 | residual | [[div class="header-container"]] |
-| 4 | 1 | 16–16 | 30–30 | +1/−1 | residual | [[size 90%]]##grey\|**アイテム番号:**##[[/size]] |
-| 5 | 1 | 20–20 | — | +0/−1 | mechanical | (blank lines only) |
-| 6 | 1 | 22–22 | 35–35 | +1/−1 | residual | [[size 90%]]##grey\|**収容クラス:**##[[/size]] |
-| 7 | 1 | 26–27 | 39–42 | +4/−2 | residual | [[div class="grid-item"]] |
-| 8 | 1 | 30–30 | 45–45 | +1/−1 | residual | [[/div]] |
-| 9 | 1 | 32–32 | 47–48 | +2/−1 | residual | [[div class="textbox"]] |
-| 10 | 1 | 34–34 | 50–50 | +1/−1 | residual | このテキストは、"//textbox//"ブロックに含まれています。画像ブロックを含む"//grid-item//"ブロックの後に使用して、左側の余白を埋… |
-| 11 | 1 | 36–36 | 52–55 | +4/−1 | residual | //Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tem… |
-| 12 | 1 | 40–40 | 59–59 | +1/−1 | residual | このテーマは、Containment Breachのインターフェースに着想を得て、EstrellaYoshteによって作成されました。このテーマを使用する… |
-| 13 | 1 | 42–42 | — | +0/−1 | residual | To use this theme, put the following text at the start: |
-| 14 | 1 | 45–45 | 63–64 | +2/−1 | residual | @@[[include :scp-jp:theme:paperstack]]@@ |
-| 15 | 1 | 47–47 | 66–66 | +1/−1 | residual | @@[[image lgtrans.png]]@@ |
-| 16 | 1 | 49–49 | 68–68 | +1/−1 | residual | @@ @@ |
-| 17 | 1 | 53–57 | 72–73 | +2/−5 | residual | @@ @@ |
-| 18 | 1 | 59–61 | 75–77 | +3/−3 | residual | @@[[size 90%]]##grey\|**アイテム番号:**##[[/size]]@@ |
-| 19 | 1 | 63–63 | 79–79 | +1/−1 | residual | @@ @@ |
-| 20 | 1 | 65–67 | 81–87 | +7/−3 | residual | @@[[size 90%]]##grey\|**収容クラス:**##[[/size]]@@ |
-| 21 | 1 | — | 90–92 | +3/−0 | residual | @@ @@ |
-| 22 | 1 | 71–72 | — | +0/−2 | residual | @@[[/div]]@@ |
-| 23 | 1 | 75–75 | 96–96 | +1/−1 | residual | 使用する"//text-item//"ブロックの数を増減させることもできます。(4つ以下にすることを推奨します) |
-| 24 | 1 | 78–78 | 99–100 | +2/−1 | residual | @@[[include :scp-jp:theme:paperstack]]@@ |
-| 25 | 1 | 80–80 | 102–102 | +1/−1 | residual | @@[[image lgtrans.png]]@@ |
-| 26 | 1 | 82–82 | 104–104 | +1/−1 | residual | @@ @@ |
-| 27 | 1 | 86–89 | 108–109 | +2/−4 | residual | @@ @@ |
-| 28 | 1 | 91–93 | 111–111 | +1/−3 | residual | @@ ここに文章を入力@@ |
-| 29 | 1 | — | 116–151 | +36/−0 | residual | [[include component:image-block |
-| 30 | 1 | 103–104 | 157–158 | +2/−2 | residual | [[tab タブ]] |
-| 31 | 1 | 106–107 | 160–161 | +2/−2 | residual | [[tab タブ]] |
-| 32 | 1 | 109–109 | 163–163 | +1/−1 | residual | 不思議ですね。 |
-| 33 | 1 | 111–112 | 165–166 | +2/−2 | residual | [[tab 長いタブ]] |
-| 34 | 1 | 114–114 | 168–168 | +1/−1 | residual | これは長いタブです。こんなに長い文章を含んでいます。 |
-| 35 | 1 | 116–116 | 170–170 | +1/−1 | residual | これは長いタブです。こんなに長い文章を含んでいます。 |
-| 36 | 1 | 118–118 | 172–172 | +1/−1 | residual | これは長いタブです。こんなに長い文章を含んでいます。 |
-| 37 | 1 | 120–120 | 174–174 | +1/−1 | residual | これは長いタブです。こんなに長い文章を含んでいます。 |
-| 38 | 1 | 122–122 | 176–176 | +1/−1 | residual | これは長いタブです。こんなに長い文章を含んでいます。 |
-| 39 | 1 | 124–124 | 178–178 | +1/−1 | residual | これは長いタブです。こんなに長い文章を含んでいます。 |
-| 40 | 1 | 126–126 | 180–180 | +1/−1 | residual | これは長いタブです。こんなに長い文章を含んでいます。 |
-| 41 | 1 | 128–129 | 182–182 | +1/−2 | residual | [[tab 空のタブ]] |
-| 42 | 1 | 133–133 | 186–186 | +1/−1 | residual | > これは引用ブロックで。, 各行頭に"> "を置くことで作ることができます。 |
-| 43 | 1 | 135–135 | 188–188 | +1/−1 | residual | > さらなる文字列 |
-| 44 | 1 | 137–137 | 190–190 | +1/−1 | residual | > これは分割線 |
-| 45 | 1 | 139–139 | 192–192 | +1/−1 | residual | >> 入れ子にされた引用ブロック |
-| 46 | 1 | 141–143 | 194–196 | +3/−3 | residual | \|\|~ これは \|\|~ テーブルです \|\| |
-| 47 | 1 | 149–152 | 202–205 | +4/−4 | residual | +++ 見出しフォント: Sawarabi Gothic / [[span style="font-family: 'Josefin Sans'"]]Jo… |
-| 48 | 1 | 155–155 | 208–209 | +2/−1 | residual | +++ ソースコード: |
-| 49 | 1 | 157–159 | 211–212 | +2/−3 | residual | [[div [[iftags -テーマ]]style="display: none"[[/iftags]]]] |
-| 50 | 1 | 162–162 | 215–215 | +1/−1 | residual | [2020 Wikidot Theme] |
-| 51 | 1 | — | 222–223 | +2/−0 | residual | Edited by ukwhatn for SCP-JP |
-| 52 | 1 | 171–172 | 226–232 | +7/−2 | supplement | /* Japanese Font */ |
-| 53 | 1 | 174–242 | 234–235 | +2/−69 | residual | #page-content { |
-| 54 | 1 | 246–255 | 239–249 | +11/−10 | residual | font-family: "Noto Sans JP", "Oxygen", sans-serif; |
-| 55 | 1 | — | 251–255 | +5/−0 | residual | } |
-| 56 | 1 | 262–262 | — | +0/−1 | residual | .page-source, .code, tt { font-size: 0.9625em; } |
-| 57 | 1 | 264–264 | — | +0/−1 | residual | #content-wrap { margin-top: 0.25rem; } |
-| 58 | 1 | 266–268 | 263–266 | +4/−3 | residual | /* ---- HEADER ---- */ |
-| 59 | 1 | 270–270 | 268–271 | +4/−1 | residual | div#header { |
-| 60 | 1 | — | 274–275 | +2/−0 | residual | margin-left: 0; |
-| 61 | 1 | 274–282 | — | +0/−9 | residual | grid-column: 2/4; |
-| 62 | 1 | 285–287 | 279–281 | +3/−3 | residual | /* Move the subtitle down a smidge */ |
-| 63 | 1 | 290–290 | 284–288 | +5/−1 | residual | /* Hide the existing text */ |
-| 64 | 1 | 292–293 | 290–312 | +23/−2 | residual | /* Style the new text */ |
-| 65 | 1 | — | 317–321 | +5/−0 | residual | } |
-| 66 | 2 | 307–307 | 331–331 | +1/−1 | residual | background: #333333; |
-| 67 | 2 | 310–310 | 334–334 | +1/−1 | residual | color: #efefef; |
-| 68 | 2 | 313–314 | 337–338 | +2/−2 | residual | #search-top-box input.empty { |
-| 69 | 2 | — | 340–359 | +20/−0 | residual | #search-top-box { |
-| 70 | 2 | 319–319 | 363–363 | +1/−1 | residual | #side-bar .side-block { |
-| 71 | 2 | 322–323 | 366–367 | +2/−2 | residual | box-shadow: 0px 0px 7px #999999; |
-| 72 | 2 | 325–325 | — | +0/−1 | residual | #interwiki body { background-image: none; } |
-| 73 | 3 | 333–335 | — | +0/−3 | residual | color: var(--paper-faded-color); |
-| 74 | 3 | 337–337 | 377–378 | +2/−1 | residual | box-shadow: 0px 1px 4px 0 rgba(0, 0, 0, 0.2), 0px 3px 10px 0 rgba(0, 0, 0, 0.… |
-| 75 | 3 | 340–342 | 381–567 | +187/−3 | residual | @media (max-width: 767px) { |
-| 76 | 3 | 346–347 | 571–572 | +2/−2 | residual | body { |
-| 77 | 3 | 350–354 | 575–576 | +2/−5 | residual | .info-container .collapsible-block-content { |
-| 78 | 3 | 357–362 | 579–580 | +2/−6 | residual | .info-container .collapsible-block-content .wiki-content-table { |
-| 79 | 3 | 365–365 | 583–583 | +1/−1 | residual | /* ---- INFO PANE ---- */ |
-| 80 | 3 | 367–368 | 585–663 | +79/−2 | residual | #page-content .creditRate { |
-| 81 | 4 | 378–379 | 673–674 | +2/−2 | residual | color: #333333; |
-| 82 | 5 | 387–389 | 682–684 | +3/−3 | residual | background-color: #F8F8F8; |
-| 83 | 5 | 393–394 | 688–689 | +2/−2 | residual | border: solid 8px #ffffff; |
-| 84 | 5 | — | 692–692 | +1/−0 | mechanical | (blank lines only) |
-| 85 | 5 | 398–401 | 694–696 | +3/−4 | residual | background-color: #ffffff; |
-| 86 | 5 | 405–406 | 700–701 | +2/−2 | residual | border: solid 1px #999999; |
-| 87 | 5 | — | 704–704 | +1/−0 | mechanical | (blank lines only) |
-| 88 | 5 | 410–410 | 706–706 | +1/−1 | residual | border: solid 1px #999999; |
-| 89 | 5 | 414–417 | 710–714 | +5/−4 | residual | /*-- tags --*/ |
-| 90 | 5 | 420–421 | 717–727 | +11/−2 | residual | #main-content .page-tags a { |
-| 91 | 5 | 423–440 | 729–742 | +14/−18 | residual | #main-content .page-tags a:before { |
-| 92 | 5 | 444–446 | 746–765 | +20/−3 | residual | /* ---- CUSTOM SYNTAX ---- */ |
-| 93 | 5 | 450–453 | 769–769 | +1/−4 | residual | .grid-item { |
-| 94 | 5 | 455–457 | 771–773 | +3/−3 | residual | min-width: 25%; |
-| 95 | 5 | 460–464 | 776–779 | +4/−5 | residual | @media (max-width: 1200px) { |
-| 96 | 5 | 466–489 | — | +0/−24 | residual | /* ---- BOTTOM AREA ---- */ |
-| 97 | 5 | 493–495 | 784–786 | +3/−3 | residual | width: 180px; |
-| 98 | 5 | 497–505 | — | +0/−9 | residual | pointer-events: none; |
-| 99 | 5 | 508–541 | 790–794 | +5/−34 | residual | @media (max-width: 767px) { |
-| 100 | 5 | 545–545 | 798–802 | +5/−1 | residual | .textbox { |
-| 101 | 5 | 547–551 | 804–808 | +5/−5 | residual | @media (max-width: 960px) and (min-width: 767px), (max-width: 666px) { |
-| 102 | 5 | — | 812–819 | +8/−0 | residual | /* CreditModule対応 by ukwhatn */ |
-| 103 | 5 | — | 821–826 | +6/−0 | residual | .creditRate.creditModule .creditButton a { |
-| 104 | 5 | — | 828–836 | +9/−0 | residual | [[module CSS]] |
-| 105 | 5 | — | 838–843 | +6/−0 | residual | [[module CSS]] |
-| 106 | 5 | 559–571 | 845–853 | +9/−13 | residual | [[module CSS]] |
-| 107 | 5 | 573–577 | 855–866 | +12/−5 | residual | [[/module]] |
-| 108 | 5 | 579–582 | 868–870 | +3/−4 | residual | div.creditButton a:is(:hover,:focus) { |
-| 109 | 5 | 584–601 | — | +0/−18 | residual | .textbox { |
-| 110 | 5 | 603–608 | — | +0/−6 | residual | [[div_]] |
+| 3 | 1 | 7–9 | 23–23 | +1/−3 | residual | [[div class="header-container"]] |
+| 4 | 1 | 11–14 | — | +0/−4 | residual | [[div class="header-container-ex"]] |
+| 5 | 1 | 16–16 | 26–26 | +1/−1 | residual | [[size 90%]]##grey\|**アイテム番号:**##[[/size]] |
+| 6 | 1 | 20–20 | — | +0/−1 | mechanical | (blank lines only) |
+| 7 | 1 | 22–22 | 31–31 | +1/−1 | residual | [[size 90%]]##grey\|**収容クラス:**##[[/size]] |
+| 8 | 1 | 26–27 | 35–38 | +4/−2 | residual | [[div class="grid-item"]] |
+| 9 | 1 | 30–30 | 41–41 | +1/−1 | residual | [[/div]] |
+| 10 | 1 | 32–32 | 43–44 | +2/−1 | residual | [[div class="textbox"]] |
+| 11 | 1 | 34–34 | 46–46 | +1/−1 | residual | このテキストは、"//textbox//"ブロックに含まれています。画像ブロックを含む"//grid-item//"ブロックの後に使用して、左側の余白を埋… |
+| 12 | 1 | 36–36 | 48–51 | +4/−1 | residual | //Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tem… |
+| 13 | 1 | 40–40 | 55–55 | +1/−1 | residual | このテーマは、Containment Breachのインターフェースに着想を得て、EstrellaYoshteによって作成されました。このテーマを使用する… |
+| 14 | 1 | 42–42 | — | +0/−1 | residual | To use this theme, put the following text at the start: |
+| 15 | 1 | 45–45 | 59–60 | +2/−1 | residual | @@[[include :scp-jp:theme:paperstack-jp]]@@ |
+| 16 | 1 | 47–47 | 62–62 | +1/−1 | residual | @@[[image lgtrans.png]]@@ |
+| 17 | 1 | 49–49 | 64–64 | +1/−1 | residual | @@ @@ |
+| 18 | 1 | 53–57 | 68–69 | +2/−5 | residual | @@ @@ |
+| 19 | 1 | 59–61 | 71–73 | +3/−3 | residual | @@[[size 90%]]##grey\|**アイテム番号:**##[[/size]]@@ |
+| 20 | 1 | 63–63 | 75–75 | +1/−1 | residual | @@ @@ |
+| 21 | 1 | 65–67 | 77–83 | +7/−3 | residual | @@[[size 90%]]##grey\|**収容クラス:**##[[/size]]@@ |
+| 22 | 1 | — | 86–88 | +3/−0 | residual | @@ @@ |
+| 23 | 1 | 71–72 | — | +0/−2 | residual | @@[[/div]]@@ |
+| 24 | 1 | 75–75 | 92–92 | +1/−1 | residual | 使用する"//text-item//"ブロックの数を増減させることもできます。(4つ以下にすることを推奨します) |
+| 25 | 1 | 78–78 | 95–96 | +2/−1 | residual | @@[[include :scp-jp:theme:paperstack-jp]]@@ |
+| 26 | 1 | 80–80 | 98–98 | +1/−1 | residual | @@[[image lgtrans.png]]@@ |
+| 27 | 1 | 82–82 | 100–100 | +1/−1 | residual | @@ @@ |
+| 28 | 1 | 86–89 | 104–105 | +2/−4 | residual | @@ @@ |
+| 29 | 1 | 91–93 | 107–107 | +1/−3 | residual | @@ ここに文章を入力@@ |
+| 30 | 1 | — | 112–147 | +36/−0 | residual | [[include component:image-block |
+| 31 | 1 | 103–104 | 153–154 | +2/−2 | residual | [[tab タブ]] |
+| 32 | 1 | 106–107 | 156–157 | +2/−2 | residual | [[tab タブ]] |
+| 33 | 1 | 109–109 | 159–159 | +1/−1 | residual | 不思議ですね。 |
+| 34 | 1 | 111–112 | 161–162 | +2/−2 | residual | [[tab 長いタブ]] |
+| 35 | 1 | 114–114 | 164–164 | +1/−1 | residual | これは長いタブです。こんなに長い文章を含んでいます。 |
+| 36 | 1 | 116–116 | 166–166 | +1/−1 | residual | これは長いタブです。こんなに長い文章を含んでいます。 |
+| 37 | 1 | 118–118 | 168–168 | +1/−1 | residual | これは長いタブです。こんなに長い文章を含んでいます。 |
+| 38 | 1 | 120–120 | 170–170 | +1/−1 | residual | これは長いタブです。こんなに長い文章を含んでいます。 |
+| 39 | 1 | 122–122 | 172–172 | +1/−1 | residual | これは長いタブです。こんなに長い文章を含んでいます。 |
+| 40 | 1 | 124–124 | 174–174 | +1/−1 | residual | これは長いタブです。こんなに長い文章を含んでいます。 |
+| 41 | 1 | 126–126 | 176–176 | +1/−1 | residual | これは長いタブです。こんなに長い文章を含んでいます。 |
+| 42 | 1 | 128–129 | 178–178 | +1/−2 | residual | [[tab 空のタブ]] |
+| 43 | 1 | 133–133 | 182–182 | +1/−1 | residual | > これは引用ブロックで。, 各行頭に"> "を置くことで作ることができます。 |
+| 44 | 1 | 135–135 | 184–184 | +1/−1 | residual | > さらなる文字列 |
+| 45 | 1 | 137–137 | 186–186 | +1/−1 | residual | > これは分割線 |
+| 46 | 1 | 139–139 | 188–188 | +1/−1 | residual | >> 入れ子にされた引用ブロック |
+| 47 | 1 | 141–143 | 190–192 | +3/−3 | residual | \|\|~ これは \|\|~ テーブルです \|\| |
+| 48 | 1 | 149–152 | 198–201 | +4/−4 | residual | +++ 見出しフォント: Sawarabi Gothic / [[span style="font-family: 'Josefin Sans'"]]Jo… |
+| 49 | 1 | 155–155 | 204–205 | +2/−1 | residual | +++ ソースコード: |
+| 50 | 1 | 157–159 | 207–208 | +2/−3 | residual | [[div [[iftags -テーマ]]style="display: none"[[/iftags]]]] |
+| 51 | 1 | 162–162 | 211–211 | +1/−1 | residual | [2020 Wikidot Theme] |
+| 52 | 1 | — | 218–219 | +2/−0 | residual | Edited by ukwhatn for SCP-JP |
+| 53 | 1 | 171–172 | 222–228 | +7/−2 | supplement | /* Japanese Font */ |
+| 54 | 1 | 174–242 | 230–231 | +2/−69 | residual | #page-content { |
+| 55 | 1 | 246–255 | 235–245 | +11/−10 | residual | font-family: "Noto Sans JP", "Oxygen", sans-serif; |
+| 56 | 1 | — | 247–251 | +5/−0 | residual | } |
+| 57 | 1 | 262–262 | — | +0/−1 | residual | .page-source, .code, tt { font-size: 0.9625em; } |
+| 58 | 1 | 264–264 | — | +0/−1 | residual | #content-wrap { margin-top: 0.25rem; } |
+| 59 | 1 | 266–268 | 259–262 | +4/−3 | residual | /* ---- HEADER ---- */ |
+| 60 | 1 | 270–270 | 264–267 | +4/−1 | residual | div#header { |
+| 61 | 1 | — | 270–271 | +2/−0 | residual | margin-left: 0; |
+| 62 | 1 | 274–282 | — | +0/−9 | residual | grid-column: 2/4; |
+| 63 | 1 | 285–287 | 275–277 | +3/−3 | residual | /* Move the subtitle down a smidge */ |
+| 64 | 1 | 290–290 | 280–284 | +5/−1 | residual | /* Hide the existing text */ |
+| 65 | 1 | 292–293 | 286–308 | +23/−2 | residual | /* Style the new text */ |
+| 66 | 1 | — | 313–317 | +5/−0 | residual | } |
+| 67 | 2 | 307–307 | 327–327 | +1/−1 | residual | background: #333333; |
+| 68 | 2 | 310–310 | 330–330 | +1/−1 | residual | color: #efefef; |
+| 69 | 2 | 313–314 | 333–334 | +2/−2 | residual | #search-top-box input.empty { |
+| 70 | 2 | — | 336–355 | +20/−0 | residual | #search-top-box { |
+| 71 | 2 | 319–319 | 359–359 | +1/−1 | residual | #side-bar .side-block { |
+| 72 | 2 | 322–323 | 362–363 | +2/−2 | residual | box-shadow: 0px 0px 7px #999999; |
+| 73 | 2 | 325–325 | — | +0/−1 | residual | #interwiki body { background-image: none; } |
+| 74 | 3 | 333–335 | — | +0/−3 | residual | color: var(--paper-faded-color); |
+| 75 | 3 | 337–337 | 373–374 | +2/−1 | residual | box-shadow: 0px 1px 4px 0 rgba(0, 0, 0, 0.2), 0px 3px 10px 0 rgba(0, 0, 0, 0.… |
+| 76 | 3 | 340–342 | 377–563 | +187/−3 | residual | @media (max-width: 767px) { |
+| 77 | 3 | 346–347 | 567–568 | +2/−2 | residual | body { |
+| 78 | 3 | 350–354 | 571–572 | +2/−5 | residual | .info-container .collapsible-block-content { |
+| 79 | 3 | 357–362 | 575–576 | +2/−6 | residual | .info-container .collapsible-block-content .wiki-content-table { |
+| 80 | 3 | 365–365 | 579–579 | +1/−1 | residual | /* ---- INFO PANE ---- */ |
+| 81 | 3 | 367–368 | 581–659 | +79/−2 | residual | #page-content .creditRate { |
+| 82 | 4 | 378–379 | 669–670 | +2/−2 | residual | color: #333333; |
+| 83 | 5 | 387–389 | 678–680 | +3/−3 | residual | background-color: #F8F8F8; |
+| 84 | 5 | 393–394 | 684–685 | +2/−2 | residual | border: solid 8px #ffffff; |
+| 85 | 5 | — | 688–688 | +1/−0 | mechanical | (blank lines only) |
+| 86 | 5 | 398–401 | 690–692 | +3/−4 | residual | background-color: #ffffff; |
+| 87 | 5 | 405–406 | 696–697 | +2/−2 | residual | border: solid 1px #999999; |
+| 88 | 5 | — | 700–700 | +1/−0 | mechanical | (blank lines only) |
+| 89 | 5 | 410–410 | 702–702 | +1/−1 | residual | border: solid 1px #999999; |
+| 90 | 5 | 414–417 | 706–710 | +5/−4 | residual | /*-- tags --*/ |
+| 91 | 5 | 420–421 | 713–723 | +11/−2 | residual | #main-content .page-tags a { |
+| 92 | 5 | 423–440 | 725–738 | +14/−18 | residual | #main-content .page-tags a:before { |
+| 93 | 5 | 444–446 | 742–761 | +20/−3 | residual | /* ---- CUSTOM SYNTAX ---- */ |
+| 94 | 5 | 450–453 | 765–765 | +1/−4 | residual | .grid-item { |
+| 95 | 5 | 455–457 | 767–769 | +3/−3 | residual | min-width: 25%; |
+| 96 | 5 | 460–464 | 772–775 | +4/−5 | residual | @media (max-width: 1200px) { |
+| 97 | 5 | 466–489 | — | +0/−24 | residual | /* ---- BOTTOM AREA ---- */ |
+| 98 | 5 | 493–495 | 780–782 | +3/−3 | residual | width: 180px; |
+| 99 | 5 | 497–505 | — | +0/−9 | residual | pointer-events: none; |
+| 100 | 5 | 508–541 | 786–790 | +5/−34 | residual | @media (max-width: 767px) { |
+| 101 | 5 | 545–545 | 794–798 | +5/−1 | residual | .textbox { |
+| 102 | 5 | 547–551 | 800–804 | +5/−5 | residual | @media (max-width: 960px) and (min-width: 767px), (max-width: 666px) { |
+| 103 | 5 | — | 808–815 | +8/−0 | residual | /* CreditModule対応 by ukwhatn */ |
+| 104 | 5 | — | 817–822 | +6/−0 | residual | .creditRate.creditModule .creditButton a { |
+| 105 | 5 | — | 824–832 | +9/−0 | residual | [[module CSS]] |
+| 106 | 5 | — | 834–839 | +6/−0 | residual | [[module CSS]] |
+| 107 | 5 | 559–571 | 841–849 | +9/−13 | residual | [[module CSS]] |
+| 108 | 5 | 573–577 | 851–862 | +12/−5 | residual | [[/module]] |
+| 109 | 5 | 579–582 | 864–866 | +3/−4 | residual | div.creditButton a:is(:hover,:focus) { |
+| 110 | 5 | 584–601 | — | +0/−18 | residual | .textbox { |
+| 111 | 5 | 603–608 | — | +0/−6 | residual | [[div_]] |
 
 ## Full diff
 
 <details>
-<summary>Section 1 — original 1–300 · candidate 1–324 · +203/−179 · mechanical, residual, supplement</summary>
+<summary>Section 1 — original 1–300 · candidate 1–320 · +202/−182 · mechanical, residual, supplement</summary>
 
 ```diff
-@@ -1,300 +1,324 @@
+@@ -1,300 +1,320 @@
 -[[iftags +theme]]
 +[[include :scp-jp:component:interwiki-style
 +| priority=1
@@ -177,16 +178,15 @@ adjudicated explanation.
 +[[image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Apaperstack-jp/lgtrans.png]]
  [[/div]]
  
- [[>]]
- [[module Rate]]
- [[/>]]
+-[[>]]
+-[[module Rate]]
+-[[/>]]
++[[div class="header-container"]]
  
 -[[div class="header-container-ex"]]
 -[[include component:image-block name=https://scp-wiki.wdfiles.com/local--files/theme:paperstack/test.png|caption=(CAPTION HERE)|width=300px|align=right]]
 -[[div class="header-info"]]
 -[[div class="header-info-flex"]]
-+[[div class="header-container"]]
-+
  [[div class="text-item"]]
 -[[size 90%]]##grey|**ITEM #:**##[[/size]]
 +[[size 90%]]##grey|**アイテム番号:**##[[/size]]
@@ -233,7 +233,7 @@ adjudicated explanation.
  
  [[div class="code"]]
 -@@[[include :scp-wiki:theme:paperstack]]@@
-+@@[[include :scp-jp:theme:paperstack]]@@
++@@[[include :scp-jp:theme:paperstack-jp]]@@
 +@@ @@
  @@[[div class="logo"]]@@
 -@@[[image https://scp-wiki.wdfiles.com/local--files/theme%3Apaperstack/lgtrans.png]]@@
@@ -287,7 +287,7 @@ adjudicated explanation.
  
  [[div class="code"]]
 -@@[[include :scp-wiki:theme:paperstack]]@@
-+@@[[include :scp-jp:theme:paperstack]]@@
++@@[[include :scp-jp:theme:paperstack-jp]]@@
 +@@ @@
  @@[[div class="logo"]]@@
 -@@[[image https://scp-wiki.wdfiles.com/local--files/theme%3Apaperstack/lgtrans.png]]@@
@@ -661,10 +661,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 2 — original 304–328 · candidate 328–371 · +27/−8 · residual</summary>
+<summary>Section 2 — original 304–328 · candidate 324–367 · +27/−8 · residual</summary>
 
 ```diff
-@@ -304,25 +328,44 @@
+@@ -304,25 +324,44 @@
  #search-top-box-form input[type=submit]:hover,
  #search-top-box-form input[type=submit]:focus {
      border: none;
@@ -722,10 +722,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 3 — original 330–371 · candidate 373–666 · +275/−23 · residual</summary>
+<summary>Section 3 — original 330–371 · candidate 369–662 · +275/−23 · residual</summary>
 
 ```diff
-@@ -330,42 +373,294 @@
+@@ -330,42 +369,294 @@
  }
  
  #top-bar div.open-menu a {
@@ -1048,10 +1048,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 4 — original 375–382 · candidate 670–677 · +2/−2 · residual</summary>
+<summary>Section 4 — original 375–382 · candidate 666–673 · +2/−2 · residual</summary>
 
 ```diff
-@@ -375,8 +670,8 @@
+@@ -375,8 +666,8 @@
  h4,
  h5,
  h6 {
@@ -1067,10 +1067,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 5 — original 384–608 · candidate 679–872 · +142/−173 · mechanical, residual</summary>
+<summary>Section 5 — original 384–608 · candidate 675–868 · +142/−173 · mechanical, residual</summary>
 
 ```diff
-@@ -384,225 +679,194 @@
+@@ -384,225 +675,194 @@
  div.blockquote,
  #toc,
  .code {

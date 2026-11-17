@@ -184,6 +184,12 @@ Nine blocks, resolved here by shape:
 | B76 | orig 321-321 → cand 356-356 | Raw-HTML exhibit link line, host repointed to scp-jp (airgap; section 7). |
 | B78 | orig 330-330 → cand 365-365 | Raw-HTML exhibit link line, host repointed to scp-jp (airgap; section 7). |
 
+### Post-package repairs (REFRESH3-C)
+
+The items above describe this package as built. The repairs recorded below postdate the package; `candidate.txt` has been recopied from the current canonical `pages/<fullname>.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**FIX-SNIPPET — production-predecessor reference audit (landing 358955e).** `FIX-SNIPPET.md` records the self-reference at candidate L120 as DRIFT ground D1 (own code addresses under `theme%3Aredtape-jp`, L52/L60/L1422/L1426/L1431). Commit 358955e inserted `-jp` after the target, `theme:redtape` → `theme:redtape-jp`. The BHL exhibit at L119 is COHERENT ground C1 and was not touched. T1 before/after unchanged (4/0/1).
+
 ## Change set outside the two diffed files
 
 The diff covers two files; the port's record is one file larger in the repo and several files larger in the world. `pages/theme-decoration-sample-redtape-jp.txt` is the decoration sample the render checks ran against (its findings are the sample half of section 11(2)); it belongs to this theme's record but carries no port change of its own to explain here. Outside the repo, the theme's delivery depends on the two fragment pages (fragment:redtape-light / fragment:redtape-dark on scp-jp, named in the header comment) and on the storage-wiki uploads of section 4; both are part of the production lineage's standing state, not changes made by this package. There are no companion fragments inside the repo, no shared base file, and no inbound-link repairs in other candidates for this theme.

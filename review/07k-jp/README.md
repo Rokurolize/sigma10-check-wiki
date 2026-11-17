@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:07k-jp — origin KO, population #249 [GOSIGN2-LEDGER (b) row 249]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now bd0cb3f4d98efa80155d2276b8ad6777cb73327de188b1bbd8f1441b757ae194); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now b486662b51d9fe8a1e8e29244cd84c0809b6fed6c73bd1e36c95d63e4272a91d); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 3 errors / 0 warns / 1 info (pseudo-ref×2, hotlink×1); standing classes dispositioned in register c1 [T1-ROWS row 232; GOSIGN2-LEDGER (b) row 249]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page runtime-hotlink site-theme chain + scpko.wdfiles.com; sample credit-modal (preview-form) + runtime-hotlink; T3 none beyond cross-cutting items. All 78 H targets produced a summary.md (no exit-2 incompleteness in this lane). [RENDER-ROWS-2 (RENDER-S2-H (KO1))]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 3 [LOCALIZE-ROWS row 248, source LOCALIZE-S2-F]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 248]
 - FIX5 re-judgement: item 99 (class C) FIXED — FIX5-INFO, commit 9a1c86a: info-module / duplicate credit residue removed [GOSIGN2-LEDGER-SUPPLEMENT (a) item 99]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:07k-jp.txt sha256:bd0cb3f4d98efa80155d2276b8ad6777cb73327de188b1bbd8f1441b757ae194; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 05dd295f2874b21920630066cf955283d2b77d5d; candidate file pages/theme:07k-jp.txt sha256:b486662b51d9fe8a1e8e29244cd84c0809b6fed6c73bd1e36c95d63e4272a91d; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -171,6 +171,15 @@ At ledger time the candidate rendered two rating areas: the JP preview credit bl
 ### The usage example's posting name
 
 The usage example at candidate L42 as built read `> [[include :scp-jp:theme:07k]]`: the porting wave's repoint changed the branch prefix from `:scpko:` but left the plain name, so the example named a page that does not exist on scp-jp (the campaign's settled rule for usage examples, AGENTS.md §6). The usage-example population sweep has since completed the reference to `:scp-jp:theme:07k-jp` (sweep report SWEEP-USAGE.md in the campaign record, R/review-scout/; canonical commit b5cb724), one of its 287 repairs across 157 candidates. This package documents the corrected candidate; its stamp reads STALE against the pre-repair verdict, by design.
+
+### Post-package repairs (REFRESH3-C)
+
+The items above describe this package as built. The repairs recorded below postdate the package; `candidate.txt` has been recopied from the current canonical `pages/<fullname>.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**FIX-07K items 1–3 — font loads, creator name, raisa parameter (landing 05dd295, 2026-11-17).** `FIX-07K.md` records three repairs, all in commit 05dd295 (review+pages: U-7 and R-fix-3 packages; foundom, navla, 07k repairs). (1) The original's two jsDelivr `@font-face` blocks (GongGothicMedium/Bold) were restored byte-identically at the head of the delivered code block (candidate L120–132), the three Google Fonts `@import`s removed, and the porter comment reworded to say what the bytes do; the two duplicate substitution notes and the orphaned JP-font header went with the imports. (2) The 著作権者 field (L19) and license-box `author=` (L397–398) were set to `[[*user thd-glasses]]` / `thd-glasses`, the established form for this author. (3) The raisa-ribbon head copy's `side=right` became `side=1`, matching the in-gate copy and the original. 1 file, 19 insertions / 12 deletions.
+
+**This refresh's candidate edit — the L400 license-box source note (flagged in FIX-07K.md's Adjacent observation).** FIX-07K recorded that the note at candidate L400 still said the KO-side webfonts were "re-hosted on the candidate page or replaced with Google Fonts equivalents", which item 1's repair made false: the GongGothic load is the original's jsDelivr URL carried over unchanged. This refresh applies that one-line correction to `review/07k-jp/candidate.txt`: the font clause now reads `KO 側のウェブフォント（GongGothic）は原語版の jsDelivr 読み込みをそのまま引き継いでいます`, with the image-licence sentence and the rest of the line untouched. **This is a candidate edit made by this lane**: after recopy, `candidate.txt` differs from the canonical `pages/theme:07k-jp.txt` by this single note line and nothing else; it is flagged prominently in the REFRESH3-C report. The verdict stamp is computed from the canonical file by the generator and is unaffected by this candidate-only edit.
+**Coordinator landing note (refresh-3 slice C).** The one-line correction above was applied to the canonical `pages/theme:07k-jp.txt` itself in the slice-C landing commit, so `candidate.txt` is again byte-identical to the candidate page and the stamp regenerated at landing is computed from the corrected bytes. The lane's candidate-only framing above is the pre-landing state it reported.
 
 ## Change set outside the two diffed files
 

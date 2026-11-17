@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:paperstack-jp — origin EN, population #26 [GOSIGN2-LEDGER (b) row 26]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now b3a7b8fc54c8396a6237e85361ee586fa7691c7de93e94da8072da8f4c62ee95); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 9144ac0a445e361c4ed83178b59bc9ab3c71d3fbf3c13ec5c339db5ba60cdbee); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 5 errors / 1 warn / 5 infos (http×3, pseudo-ref×2); standing classes dispositioned in register c1 [T1-ROWS row 26; GOSIGN2-LEDGER (b) row 26]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — sample T2 incomplete (webkit-320 screenshot >32767px ×4, no summary), notice×sidebar/clip, WebKit CC "S", giant "9999"/"THEME-IEL" demo text over intro, 875px@768 overflow, heading wrap, sample credit-modal. [RENDER-ROWS-1 (RENDER-C row 26)]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 0 [LOCALIZE-ROWS row 26, source LOCALIZE-B]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 26]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 26]
-- Computed against: canonical commit 20ce29060e6a2c7bb8d61386fdb136c73ae808b3; candidate file pages/theme:paperstack-jp.txt sha256:b3a7b8fc54c8396a6237e85361ee586fa7691c7de93e94da8072da8f4c62ee95; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 1c96ee4f6dbe58243d8c4ba0136a4a4dde806972; candidate file pages/theme:paperstack-jp.txt sha256:9144ac0a445e361c4ed83178b59bc9ab3c71d3fbf3c13ec5c339db5ba60cdbee; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -164,7 +164,7 @@ Adjudication for this README (every block was read against the bytes, and the CS
 
 ## Per-theme record
 
-### The head frame names a fragment this page does not contain (defect flag, probe-verified)
+### The head frame names a fragment this page does not contain (defect flag, probe-verified) After this package was built the head frame's `theme=` was removed (c3e658f), the two snippets re-applied in the `-jp` form (20ce290), and the head bare Rate deleted (1c96ee4); see the post-package repairs item below.
 
 Candidate L1–4 is the standard frame: `:scp-jp:component:interwiki-style`, priority=1, `theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Apaperstack-jp/1`. The candidate contains no `[[code]]` block (census: zero; its stylesheet is the live module at candidate L213–826 plus the six correction modules). Probe made for this package (2026-11-17): that URL returns the 25-byte plain text "No valid codeblock found." The history explains how the frame got here: T4 charged the candidate's production-form state with a missing interwiki-style include (LOCALIZE-ROWS row 26, item (a)), and the fix waves supplied the standard frame — the same templated repair as ragnarok-theme-jp's, onto the same live-module topology, with the same result. Two facts bound the flag's weight. First, the theme works: production has run for years on the live module alone, and the candidate inherits that delivery intact. Second, the production migration does not carry the frame: the phase-22 diff artifact adds only the credit record to theme:paperstack, so the broken delivery claim exists only in the candidate vehicle, not in anything scheduled to reach the live wiki. The flag is therefore recorded against the candidate as a posting text — if the candidate were ever posted as-is (for instance as the vehicle of the deferred re-port), its first four lines would assert a delivery that serves nothing — and the repair decision (remove the frame from live-module candidates, or annotate it) belongs to the coordinator's fix lane, together with the family sweep proposed in the batch report. This package makes no edit.
 
@@ -179,6 +179,14 @@ Twenty-one blocks carried no label. Read against the three sources, they resolve
 | B79, B84, B87, B102, B103 | Single-rule and blank-line pairs deep in the stylesheet (original L364–555 ↔ candidate L583–827), production-lineage ordering against the mirror's |
 
 No residue block carries a delivery, credit, or asset change; each is accounted for by the section its span belongs to (6, 8, or 9).
+
+### Post-package repairs (REFRESH3-C)
+
+The items above describe this package as built. The repairs recorded below postdate the package; `candidate.txt` has been recopied from the current canonical `pages/<fullname>.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**FIX-SNIPPET — production-predecessor reference audit (landing 358955e).** `FIX-SNIPPET.md` records two self-reference exhibits as DRIFT ground D1 (own code addresses under `theme%3Apaperstack-jp`). Commit 358955e inserted `-jp` after the target at the then L64 and L100 lines, `theme:paperstack` → `theme:paperstack-jp`.
+
+**Sequelae — c3e658f, 20ce290, 1c96ee4.** Commit c3e658f (frame (D) remedy re-applied to paperstack and penumbra) removed the `theme=` line from the head interwiki-style frame and reverted the two snippets to the plain form; commit 20ce290 (snippet repairs in paperstack and penumbra re-applied) re-applied the `-jp` insertion at the current L59 and L95; commit 1c96ee4 (head-zone bare Rates removed) deleted the 4-line head Rate block. The current candidate therefore has no `theme=` parameter in its head frame, the two snippets in the `-jp` form, and no head bare Rate — three repair layers over the package's as-built copy.
 
 ## Change set outside the two diffed files
 

@@ -15,228 +15,227 @@ adjudicated explanation.
 | | Lines |
 |---|---|
 | original.txt | 3472 |
-| candidate.txt | 3068 |
-| Added | +366 |
-| Review-stage comments | 0 of the +366 added lines |
-| Removed | -770 |
-| Changed | 1136 |
-| Change blocks | 195 |
-| Diff sections (context 3) | 20 |
+| candidate.txt | 3531 |
+| Added | +391 |
+| Review-stage comments | 0 of the +391 added lines |
+| Removed | -332 |
+| Changed | 723 |
+| Change blocks | 194 |
+| Diff sections (context 3) | 26 |
 
 ## Changed lines by auto-class (heuristic)
 
 | Auto-class | Blocks | Changed lines |
 |---|---|---|
-| supplement | 12 | 121 |
-| residual | 183 | 1015 |
+| supplement | 11 | 72 |
+| residual | 183 | 651 |
 
 ## Change-block index
 
 | # | Section | Original | Candidate | +/− | Auto-class | Gist |
 |---|---|---|---|---|---|---|
 | 1 | 1 | 1–4 | 1–2 | +2/−4 | supplement | [[module CSS]] |
-| 2 | 1 | 7–22 | 5–16 | +12/−16 | supplement | [[include :scp-jp:component:interwiki-style |
-| 3 | 1 | 24–24 | 18–18 | +1/−1 | residual | [[iftags +テーマ]] |
-| 4 | 1 | 26–76 | 20–29 | +10/−51 | supplement | [[include :scp-jp:credit:start-preview]] |
-| 5 | 1 | 79–79 | 32–32 | +1/−1 | residual | //[[[https://scp-wiki.wikidot.com/theme:bedrock\|Bedrock]]]を基盤に構築。関連: [[[https… |
-| 6 | 1 | 82–84 | — | +0/−3 | residual | [[>]] |
-| 7 | 1 | 87–87 | 37–37 | +1/−1 | residual | //[[span class="inkcolor teal"]][[[https://scp-wiki.wikidot.com/ordopharm-hub… |
-| 8 | 2 | 95–95 | 45–45 | +1/−1 | residual | このテーマをページに読み込むには、ページ内の好きな場所に以下のテキストを置いてください: |
-| 9 | 2 | 97–98 | 47–47 | +1/−2 | residual | > {{@@[[include :scp-jp:theme:ordopharm-jp]]@@}} |
-| 10 | 2 | 100–101 | 49–49 | +1/−2 | residual | //訳注: 原語版では基盤テーマ（Bedrock）の読み込みも必要ですが、JP版はコードファイル側でBasalt基盤を読み込むため、テーマページのincl… |
-| 11 | 2 | 103–104 | 51–52 | +2/−2 | residual | //intranet//モードを使う場合は次のパラメータを追加します: |
-| 12 | 2 | 106–106 | 54–55 | +2/−1 | residual | //legacy//モードを使う場合は次のパラメータを追加します: |
-| 13 | 2 | 108–108 | 57–59 | +3/−1 | residual | + 基本 |
-| 14 | 2 | 111–111 | 62–62 | +1/−1 | residual | [[collapsible show="見出しを見る" hide="閉じる"]] |
-| 15 | 2 | 113–113 | 64–64 | +1/−1 | residual | +* 第一見出し |
-| 16 | 2 | 115–115 | 66–66 | +1/−1 | residual | ++* 第二見出し |
-| 17 | 2 | 117–117 | 68–68 | +1/−1 | residual | +++* 第三見出し |
-| 18 | 2 | 119–119 | 70–70 | +1/−1 | residual | ++++* 第四見出し |
-| 19 | 2 | 121–121 | 72–72 | +1/−1 | residual | +++++* 第五見出し |
-| 20 | 2 | 123–123 | 74–74 | +1/−1 | residual | ++++++* 第六見出し |
-| 21 | 2 | 128–128 | 79–79 | +1/−1 | residual | [[span class="s-title"]]タブ[[/span]] |
-| 22 | 2 | 130–130 | 81–81 | +1/−1 | residual | 標準のタブはこのように表示されます: |
-| 23 | 2 | 134–134 | 85–85 | +1/−1 | residual | [[tab 概要]] |
-| 24 | 2 | 137–138 | 88–89 | +2/−2 | residual | [[tab ガバナンス]] |
-| 25 | 2 | 140–140 | 91–91 | +1/−1 | residual | [[tab 開示]] |
-| 26 | 2 | 147–147 | 98–98 | +1/−1 | residual | [[[theme:ordopharm-jp\|そしてリンク。]]] lorem ipsum |
-| 27 | 2 | 152–152 | 103–103 | +1/−1 | residual | 色クラスを付けると表示を変えられます。タブ専用の修飾子もいくつかあります（「タブ修飾子」参照）。 |
-| 28 | 2 | 155–155 | 106–106 | +1/−1 | residual | [[tab 概要]] |
-| 29 | 2 | 158–159 | 109–110 | +2/−2 | residual | [[tab ガバナンス]] |
-| 30 | 2 | 161–161 | 112–112 | +1/−1 | residual | [[tab 開示]] |
-| 31 | 2 | 168–168 | 119–119 | +1/−1 | residual | [[[theme:ordopharm-jp\|そしてリンク。]]] lorem ipsum |
-| 32 | 2 | 174–174 | 125–125 | +1/−1 | residual | {{mapview}}で包むと、最大12個の「タブ」を持つノードベースの地図表示になります。座標系で位置を決め（「ルート変数」参照）、前述の修飾子で見た目… |
-| 33 | 2 | 178–179 | 129–130 | +2/−2 | residual | [[tab 概要]] |
-| 34 | 2 | 181–182 | 132–133 | +2/−2 | residual | [[tab ガバナンス]] |
-| 35 | 2 | 184–185 | 135–136 | +2/−2 | residual | [[tab 開示]] |
-| 36 | 2 | 190–190 | 141–141 | +1/−1 | residual | [[span class="s-title"]]引用[[/span]] |
-| 37 | 2 | 192–192 | 143–143 | +1/−1 | residual | > これは引用ブロックです。 |
-| 38 | 2 | 194–194 | 145–145 | +1/−1 | residual | > さらにテキスト |
-| 39 | 2 | 196–196 | 147–147 | +1/−1 | residual | > これが水平線です。 |
-| 40 | 2 | 198–198 | 149–149 | +1/−1 | residual | >> 入れ子の引用ブロック |
-| 41 | 2 | 200–200 | 151–151 | +1/−1 | residual | >>> さらに入れ子。 |
-| 42 | 2 | 202–202 | 153–153 | +1/−1 | residual | 色クラスで包むと見た目を変えられます: |
-| 43 | 3 | 210–210 | 161–161 | +1/−1 | residual | [[span class="s-title"]]表[[/span]] |
-| 44 | 3 | 212–215 | 163–166 | +4/−4 | residual | \|\|~ 地域 \|\|~ 契約面積（ヘクタール） \|\|~ 収量指数 \|\| |
-| 45 | 3 | 222–222 | 173–173 | +1/−1 | residual | + 独自のdivとspan |
-| 46 | 3 | 224–224 | 175–175 | +1/−1 | residual | [[span class="s-title"]]ヒーロー[[/span]] |
-| 47 | 3 | 226–226 | 177–177 | +1/−1 | residual | {{hero}}は目を引くタイトルブロック、つまり目立つバナーです。 |
-| 48 | 3 | 229–231 | 180–182 | +3/−3 | residual | [[span class="eyebrow"]]作物科学[[/span]] |
-| 49 | 3 | 233–233 | 184–184 | +1/−1 | residual | //[[[theme:ordopharm-jp\|さもなくば。]]]// |
-| 50 | 3 | 236–236 | 187–187 | +1/−1 | residual | [[collapsible show="コード"]] |
-| 51 | 3 | 239–240 | 190–191 | +2/−2 | residual | @@[[span class="eyebrow"]]作物科学[[/span]]@@ |
-| 52 | 3 | 242–242 | 193–193 | +1/−1 | residual | ここに導入文が入ります。 |
-| 53 | 3 | 245–245 | 196–196 | +1/−1 | residual | //[[[theme:ordopharm-jp\|リンク。]]]// |
-| 54 | 3 | 252–253 | 203–204 | +2/−2 | residual | [[span class="eyebrow"]]種子システム[[/span]] |
-| 55 | 3 | 255–255 | 206–206 | +1/−1 | residual | ,,//報告書全文をお読みください。//,, |
-| 56 | 3 | 258–258 | 209–209 | +1/−1 | residual | [[collapsible show="コード"]] |
-| 57 | 3 | 261–262 | 212–213 | +2/−2 | residual | @@[[span class="eyebrow"]]種子システム[[/span]]@@ |
-| 58 | 3 | 264–264 | 215–215 | +1/−1 | residual | @@,,//報告書全文をお読みください。//,,@@ |
-| 59 | 3 | 270–270 | 221–221 | +1/−1 | residual | [[span class="s-title"]]バンド[[/span]] |
-| 60 | 3 | 272–272 | 223–223 | +1/−1 | residual | {{band}}は短いテキストのブロックを、色の帯で区切って（{{rule}}を併用）表示します。 |
-| 61 | 3 | 275–275 | 226–226 | +1/−1 | residual | [[span class="eyebrow azure"]]私たちの約束[[/span]] |
-| 62 | 4 | 287–287 | 238–238 | +1/−1 | residual | [[span class="s-title"]]ペイン[[/span]] |
-| 63 | 4 | 289–289 | 240–240 | +1/−1 | residual | {{panes}}は子要素を並べるレスポンシブなグリッドです。各{{pane}}は独自の色クラス・サイズ・等間隔を持ちます。{{duo}}や{{quad}… |
-| 64 | 4 | 293–294 | 244–245 | +2/−2 | residual | +++* 作物科学 |
-| 65 | 4 | 297–298 | 248–249 | +2/−2 | residual | +++* 消費者健康 |
-| 66 | 4 | 301–302 | 252–253 | +2/−2 | residual | +++* 医薬品 |
-| 67 | 4 | 307–307 | 258–258 | +1/−1 | residual | 単独のペイン。 |
-| 68 | 4 | 312–313 | 263–264 | +2/−2 | residual | +++* 投資家向け情報 |
-| 69 | 4 | 316–317 | 267–268 | +2/−2 | residual | +++* サステナビリティ |
-| 70 | 4 | 323–323 | 274–274 | +1/−1 | residual | +++* 一 |
-| 71 | 4 | 327–328 | 278–279 | +2/−2 | residual | +++* 二 |
-| 72 | 4 | 331–331 | 282–282 | +1/−1 | residual | +++* 三 |
-| 73 | 4 | 335–335 | 286–286 | +1/−1 | residual | +++* 四 |
-| 74 | 4 | 341–341 | 292–292 | +1/−1 | residual | [[span class="s-title"]]プルクォート[[/span]] |
-| 75 | 4 | 343–343 | 294–294 | +1/−1 | residual | {{pullquote}}は、独立したブロックで強調される短い引用です。 |
-| 76 | 4 | 346–347 | 297–298 | +2/−2 | residual | 私たちは心の平穏を売っています。しかもヘクタール単位で。 |
-| 77 | 4 | 351–351 | 302–302 | +1/−1 | residual | [[span class="s-title"]]ティッカー[[/span]] |
-| 78 | 4 | 353–353 | 304–304 | +1/−1 | residual | {{ticker}}は投資家向け情報の雰囲気を出す等幅の帯です。各項目を{{up}}・{{down}}・{{flat}}で包むと矢印が付きます。 |
-| 79 | 5 | 361–361 | 312–312 | +1/−1 | residual | [[collapsible show="コード"]] |
-| 80 | 6 | 369–369 | 320–320 | +1/−1 | residual | {{ticker}}に{{scroll}}を足すと流れる帯になります。速度は{{--ticker-speed}}（秒）で設定します。 |
-| 81 | 7 | 379–379 | 330–330 | +1/−1 | residual | [[span class="s-title"]]分割とサイドボックス[[/span]] |
-| 82 | 7 | 381–381 | 332–332 | +1/−1 | residual | {{split}}は2列のグリッドで、狭い画面では1列になります。{{weighted}}を足すと1列目が広くなります。 |
-| 83 | 7 | 385–386 | 336–337 | +2/−2 | residual | +++* 左の列 |
-| 84 | 7 | 389–390 | 340–341 | +2/−2 | residual | +++* 右の列 |
-| 85 | 7 | 396–396 | 347–347 | +1/−1 | residual | {{split weighted}}はこの列を1.6frにし、サイドバーを1frにします。{{pane}}と組み合わせると収まりが良いです。 |
-| 86 | 7 | 400–401 | 351–352 | +2/−2 | residual | +++* サイドバー |
-| 87 | 7 | 406–406 | 357–357 | +1/−1 | residual | {{sidebox}}は既定で画面右に浮くパネルです。指定が無ければテキストはその周りを回り込みます。 |
-| 88 | 7 | 409–413 | 360–364 | +5/−5 | residual | = **一目でわかる数字** |
-| 89 | 7 | 416–416 | 367–367 | +1/−1 | residual | lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque f… |
-| 90 | 7 | 419–422 | 370–373 | +4/−4 | residual | = **フィールドノート** |
-| 91 | 7 | 425–425 | 376–376 | +1/−1 | residual | {{sidebox}}に{{left}}を足すと反対側に浮きます。lorem ipsum dolor sit amet, consectetur adip… |
-| 92 | 7 | 430–430 | 381–381 | +1/−1 | residual | [[span class="s-title"]]指標[[/span]] |
-| 93 | 7 | 432–432 | 383–383 | +1/−1 | residual | {{metrics}}は見出し数字を並べるレスポンシブなグリッドで、こうした種類のサイトでは非常によく見られます。各子要素は{{figure}}・{{la… |
-| 94 | 7 | 436–437 | 387–388 | +2/−2 | residual | [[span class="label"]]{{counter-element}}を足すと、ある数から別の数までカウントアップします。[[/span]] |
-| 95 | 7 | 444–444 | 395–395 | +1/−1 | residual | [[span class="label"]]この行にある数字の数。[[/span]] |
-| 96 | 7 | 450–450 | 401–401 | +1/−1 | residual | [[span class="label"]]この区画で表された数字の数。[[/span]] |
-| 97 | 7 | 454–454 | 405–405 | +1/−1 | residual | [[span class="label"]]この区画ですでに表された数字の数。[[/span]] |
-| 98 | 7 | 458–458 | 409–409 | +1/−1 | residual | [[span class="label"]]並び順の中での数字の値。[[/span]] |
-| 99 | 7 | 462–462 | 413–413 | +1/−1 | residual | [[span class="label"]]この並びで最後の数字。[[/span]] |
-| 100 | 7 | 466–466 | 417–417 | +1/−1 | residual | [[span class="s-title"]]パイプライン[[/span]] |
-| 101 | 7 | 468–468 | 419–419 | +1/−1 | residual | {{pipeline}}はプロジェクトのライフサイクルの各段階に自動で番号を振ります。段階は{{done}}・{{now}}・{{halted}}で指定し… |
-| 102 | 7 | 472–472 | 423–423 | +1/−1 | residual | 温室スクリーニング |
-| 103 | 7 | 475–475 | 426–426 | +1/−1 | residual | 隔離圃場試験 |
-| 104 | 7 | 478–478 | 429–429 | +1/−1 | residual | 規制当局への申請書類 |
-| 105 | 7 | 481–481 | 432–432 | +1/−1 | residual | 圃場への開放 |
-| 106 | 7 | 484–484 | 435–435 | +1/−1 | residual | 商用展開 |
-| 107 | 7 | 488–488 | 439–439 | +1/−1 | residual | [[span class="s-title"]]更新履歴[[/span]] |
-| 108 | 7 | 490–490 | 441–441 | +1/−1 | residual | {{updates}}は縦方向のタイムラインです。各子要素は{{date}}と色クラスを持ち、色クラスはマーカーと日付線に色を付けます。 |
-| 109 | 7 | 494–495 | 445–446 | +2/−2 | residual | [[span class="date"]]3月12日[[/span]] |
-| 110 | 7 | 498–499 | 449–450 | +2/−2 | residual | [[span class="date"]]3月4日[[/span]] |
-| 111 | 7 | 502–503 | 453–454 | +2/−2 | residual | [[span class="date"]]2月27日[[/span]] |
-| 112 | 7 | 507–507 | 458–458 | +1/−1 | residual | [[span class="s-title"]]ファクトシート[[/span]] |
-| 113 | 7 | 509–509 | 460–460 | +1/−1 | residual | {{factsheet}}は関連する詳細の要約を表示します。 |
-| 114 | 7 | 512–515 | 463–466 | +4/−4 | residual | \|\|~ 登録名称 \|\| Ordopharm Agronomics N.V. \|\| |
-| 115 | 7 | 518–518 | 469–469 | +1/−1 | residual | [[span class="s-title"]]タイル[[/span]] |
-| 116 | 7 | 520–520 | 471–471 | +1/−1 | residual | {{tiles}}は角に矢印の付いたナビゲーションカードのグリッドです。{{--tile-min}}で折り返し幅を変えられます。 |
-| 117 | 7 | 524–525 | 475–476 | +2/−2 | residual | +++* 投資家向け情報 |
-| 118 | 7 | 528–529 | 479–480 | +2/−2 | residual | +++* 作物科学 |
-| 119 | 7 | 532–533 | 483–484 | +2/−2 | residual | +++* 医薬品 |
-| 120 | 7 | 537–537 | 488–488 | +1/−1 | residual | [[span class="s-title"]]ジャンボトロン[[/span]] |
-| 121 | 7 | 539–539 | 490–490 | +1/−1 | residual | ジャンボトロンは「全幅」の画像バナーで、ページ上部の目を引くアートとして、その上に他の要素を重ねて使うためのものです。たぶん。これは実際のBayer-Mo… |
-| 122 | 7 | — | 492–492 | +1/−0 | residual | [[collapsible show="サイズ指定を見る" hide="閉じる" hideLocation="both"]] |
-| 123 | 8 | — | 538–538 | +1/−0 | residual | [[/collapsible]] |
-| 124 | 8 | 587–587 | 540–540 | +1/−1 | residual | + 注意表示とフラグ |
-| 125 | 8 | 589–589 | 542–542 | +1/−1 | residual | [[span class="s-title"]]注意[[/span]] |
-| 126 | 8 | 591–591 | 544–544 | +1/−1 | residual | {{notice}}は色付きのコールアウトです。バナーの語は{{--notice-word}}で変えられます。 |
-| 127 | 8 | 594–594 | 547–547 | +1/−1 | residual | 製品の入手可否は地域によって異なります。現地の登録状況をご確認ください。 |
-| 128 | 8 | 597–598 | 550–551 | +2/−2 | residual | [[div class="notice hazard" style="--notice-word: '警告';"]] |
-| 129 | 8 | 601–602 | 554–555 | +2/−2 | residual | [[div class="notice teal" style="--notice-word: '勧告';"]] |
-| 130 | 8 | 605–605 | 558–558 | +1/−1 | residual | [[span class="s-title"]]バッジ[[/span]] |
-| 131 | 8 | 607–607 | 560–560 | +1/−1 | residual | {{badge}}はインラインのチップです。{{hollow}}を足すと輪郭線のみになります。 |
-| 132 | 8 | 609–609 | 562–562 | +1/−1 | residual | 状態: [[span class="badge leaf"]]承認済み[[/span]] [[span class="badge amber"]]審査中[… |
-| 133 | 8 | 611–611 | 564–564 | +1/−1 | residual | [[span class="s-title"]]テープ[[/span]] |
-| 134 | 8 | 613–613 | 566–566 | +1/−1 | residual | {{tape}}は危険帯の区切りです。{{thick}}を足すと高さが倍になります。 |
-| 135 | 9 | 621–621 | 574–574 | +1/−1 | residual | [[span class="s-title"]]成長バー[[/span]] |
-| 136 | 9 | 623–623 | 576–576 | +1/−1 | residual | [[collapsible show="開いて試す" hide="閉じて試す" folded="no"]] |
-| 137 | 10 | 632–632 | 585–585 | +1/−1 | residual | [[collapsible show="コード"]] |
-| 138 | 11 | 641–641 | 594–594 | +1/−1 | residual | [[span class="s-title"]]ローディングバー[[/span]] |
-| 139 | 11 | 643–643 | 596–596 | +1/−1 | residual | [[collapsible show="第4四半期決算プレビュー" hide="第4四半期決算プレビュー"]] |
-| 140 | 12 | 652–652 | 605–605 | +1/−1 | residual | [[span class="caps"]]審査待ちのため数値は非公開[[/span]] |
-| 141 | 12 | 656–656 | 609–609 | +1/−1 | residual | [[span class="s-title"]]製品ラベル[[/span]] |
-| 142 | 12 | 660–660 | 613–613 | +1/−1 | residual | = //選択性茎葉処理除草剤。// |
-| 143 | 12 | 665–665 | 618–618 | +1/−1 | residual | + 文書 |
-| 144 | 12 | 667–667 | 620–620 | +1/−1 | residual | [[span class="s-title"]]メモ[[/span]] |
-| 145 | 13 | 689–691 | 642–644 | +3/−3 | residual | [[span class="s-title"]]色クラス[[/span]] |
-| 146 | 14 | — | 902–904 | +3/−0 | residual | @@ @@ |
-| 147 | 14 | 950–950 | 906–906 | +1/−1 | residual | [[span class="s-title"]]組版ユーティリティ[[/span]] |
-| 148 | 14 | 952–960 | 908–916 | +9/−9 | residual | \|\| [[span class="eyebrow"]]eyebrow[[/span]] \|\| 見出しの上に置く小さな大文字のキッカー \|\| |
-| 149 | 14 | 962–962 | 918–918 | +1/−1 | residual | [[span class="s-title"]]修飾子[[/span]] |
-| 150 | 14 | 964–972 | 920–928 | +9/−9 | residual | \|\| {{tiny}} / {{medium}} / {{large}} / {{full}} \|\| ブロックの幅を制限する \|\| |
-| 151 | 14 | 975–975 | 931–931 | +1/−1 | residual | [[span class="s-title"]]タブ修飾子[[/span]] |
-| 152 | 14 | 977–977 | 933–933 | +1/−1 | residual | {{tabview}}を次のdiv修飾子のいずれかで包むと、タブ帯の挙動が変わります。 |
-| 153 | 14 | 979–981 | 935–937 | +3/−3 | residual | \|\| {{tabs-flush}} \|\| パネルの枠と背景を消し、タブだけ残す \|\| |
-| 154 | 15 | 1037–1037 | — | +0/−1 | residual | [[span class="s-title"]]Map Modifiers[[/span]] |
-| 155 | 15 | 1039–1047 | 994–1005 | +12/−9 | residual | [[span class="s-title"]]地図修飾子[[/span]] |
-| 156 | 16 | 1102–1102 | 1060–1060 | +1/−1 | residual | + ルート変数 |
-| 157 | 16 | 1104–1104 | 1062–1062 | +1/−1 | residual | ルート変数を変更するには、記事に次のようにCSSモジュールを追加します。 |
-| 158 | 16 | 1111–1111 | 1069–1069 | +1/−1 | residual | そのうえで{{:root}}疑似クラスを書き、その中に変数と値を入れます。 |
-| 159 | 17 | 1119–1120 | 1077–1078 | +2/−2 | residual | = //とくに重要なルート変数:// |
-| 160 | 17 | 1122–1122 | 1080–1080 | +1/−1 | residual | \|\|\|\|\|\| ワードマークの前半。タイトル色で表示 \|\| |
-| 161 | 17 | 1124–1124 | 1082–1082 | +1/−1 | residual | \|\|\|\|\|\| ワードマークの後半。部門色で表示 \|\| |
-| 162 | 17 | 1126–1126 | 1084–1084 | +1/−1 | residual | \|\|\|\|\|\| ワードマークの下に置くキャッチコピー \|\| |
-| 163 | 17 | 1128–1142 | 1086–1100 | +15/−15 | residual | \|\|\|\|\|\| 狭い画面でのワードマーク（キャッチコピーは非表示になる） \|\| |
-| 164 | 17 | 1144–1144 | 1102–1102 | +1/−1 | residual | \|\|\|\|\|\| ペイン・バンド・見出しのアクセント罫線の太さ \|\| |
-| 165 | 17 | 1146–1146 | 1104–1104 | +1/−1 | residual | \|\|\|\|\|\| テーマ全体の角の丸み。コーポレート既定は直角 \|\| |
-| 166 | 17 | 1148–1148 | 1106–1106 | +1/−1 | residual | \|\|\|\|\|\| {{band}}内側の上下の余白 \|\| |
-| 167 | 17 | 1150–1150 | 1108–1108 | +1/−1 | residual | \|\|\|\|\|\| グリッドが折り返す前のペインの最小幅 \|\| |
-| 168 | 17 | 1152–1156 | 1110–1114 | +5/−5 | residual | \|\|\|\|\|\| {{hero}}の背景画像。{{tint}}クラスと併用 \|\| |
-| 169 | 17 | 1158–1162 | 1116–1120 | +5/−5 | residual | \|\|\|\|\|\| {{custom_memo}}の見出し \|\| |
-| 170 | 17 | 1164–1164 | 1122–1122 | +1/−1 | residual | \|\|\|\|\|\| {{stamped}}クラスが付ける斜めスタンプの文字 \|\| |
-| 171 | 17 | 1166–1170 | 1124–1128 | +5/−5 | residual | \|\|\|\|\|\| {{product_label}}のバナー語 \|\| |
-| 172 | 17 | 1172–1184 | 1130–1142 | +13/−13 | residual | \|\|\|\|\|\| 成長バーの高さ \|\| |
-| 173 | 17 | 1186–1194 | 1144–1152 | +9/−9 | residual | \|\|\|\|\|\| 本文カラムの幅 \|\| |
-| 174 | 17 | 1196–1196 | 1154–1154 | +1/−1 | residual | \|\|\|\|\|\|~ //全リストはソースコードを参照してください。// \|\| |
-| 175 | 17 | 1198–1198 | 1156–1156 | +1/−1 | residual | + フォント |
-| 176 | 17 | 1201–1205 | 1159–1163 | +5/−5 | residual | \|\|~ フォント \|\|~ 用途 \|\|~ クラス \|\| |
-| 177 | 17 | 1208–1208 | 1166–1166 | +1/−1 | residual | + ソースコード |
-| 178 | 17 | 1210–1210 | 1168–1175 | +8/−1 | residual | [[collapsible show="ソースコードを見る" hide="閉じる"]] |
-| 179 | 17 | 1212–1213 | 1177–1184 | +8/−2 | supplement | @import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Abasalt-j… |
-| 180 | 18 | 1307–1307 | 1278–1278 | +1/−1 | residual | --jumbo-image: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3A… |
-| 181 | 19 | 1342–1345 | 1313–1316 | +4/−4 | residual | --header-font-primary: 'Archivo', 'Noto Sans JP', sans-serif; |
-| 182 | 20 | 3053–3053 | 3024–3024 | +1/−1 | residual | [[/collapsible]] |
-| 183 | 20 | 3055–3055 | 3026–3027 | +2/−1 | supplement | [[include :scp-jp:component:license-box-backend |
-| 184 | 20 | — | 3029–3032 | +4/−0 | residual | > **ファイル名:** banner.jpg |
-| 185 | 20 | 3058–3079 | 3034–3036 | +3/−22 | residual | > **フォント:** Archivo / Inter / IBM Plex Mono / Abhaya Libre |
-| 186 | 20 | — | 3038–3038 | +1/−0 | supplement | [[include :scp-jp:component:license-box-end]] |
-| 187 | 20 | 3082–3434 | — | +0/−353 | residual | --surface: 31, 41, 48; |
-| 188 | 20 | 3438–3447 | 3043–3043 | +1/−10 | residual | >[[ift{$intranet}gs -テーマ]] |
-| 189 | 20 | 3450–3450 | 3046–3046 | +1/−1 | supplement | @import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aordophar… |
-| 190 | 20 | 3452–3452 | 3048–3048 | +1/−1 | supplement | [[include :scp-jp:component:interwiki-style |
-| 191 | 20 | 3454–3454 | 3050–3050 | +1/−1 | supplement | \| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aordopharm-jp/2 |
-| 192 | 20 | 3459–3459 | 3055–3055 | +1/−1 | residual | >[[ift{$legacy}gs -テーマ]] |
-| 193 | 20 | 3462–3462 | 3058–3058 | +1/−1 | supplement | @import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aordophar… |
-| 194 | 20 | 3464–3464 | 3060–3060 | +1/−1 | supplement | [[include :scp-jp:component:interwiki-style |
-| 195 | 20 | 3466–3466 | 3062–3062 | +1/−1 | supplement | \| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aordopharm-jp/3 |
+| 2 | 2 | 15–15 | 13–13 | +1/−1 | residual | --map-image: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aor… |
+| 3 | 3 | — | 76–101 | +26/−0 | supplement | [[include :scp-jp:component:interwiki-style |
+| 4 | 3 | 79–79 | 103–103 | +1/−1 | residual | //[[[https://scp-wiki.wikidot.com/theme:bedrock\|Bedrock]]]を基盤に構築。関連: [[[https… |
+| 5 | 3 | 82–84 | — | +0/−3 | residual | [[>]] |
+| 6 | 3 | 87–87 | 108–108 | +1/−1 | residual | //[[span class="inkcolor teal"]][[[https://scp-wiki.wikidot.com/ordopharm-hub… |
+| 7 | 4 | 95–95 | 116–116 | +1/−1 | residual | このテーマをページに読み込むには、ページ内の好きな場所に以下のテキストを置いてください: |
+| 8 | 4 | 97–98 | 118–118 | +1/−2 | residual | > {{@@[[include :scp-jp:theme:ordopharm-jp]]@@}} |
+| 9 | 4 | 100–101 | 120–120 | +1/−2 | residual | //訳注: 原語版では基盤テーマ（Bedrock）の読み込みも必要ですが、JP版はコードファイル側でBasalt基盤を読み込むため、テーマページのincl… |
+| 10 | 4 | 103–104 | 122–123 | +2/−2 | residual | //intranet//モードを使う場合は次のパラメータを追加します: |
+| 11 | 4 | 106–106 | 125–126 | +2/−1 | residual | //legacy//モードを使う場合は次のパラメータを追加します: |
+| 12 | 4 | 108–108 | 128–130 | +3/−1 | residual | + 基本 |
+| 13 | 4 | 111–111 | 133–133 | +1/−1 | residual | [[collapsible show="見出しを見る" hide="閉じる"]] |
+| 14 | 4 | 113–113 | 135–135 | +1/−1 | residual | +* 第一見出し |
+| 15 | 4 | 115–115 | 137–137 | +1/−1 | residual | ++* 第二見出し |
+| 16 | 4 | 117–117 | 139–139 | +1/−1 | residual | +++* 第三見出し |
+| 17 | 4 | 119–119 | 141–141 | +1/−1 | residual | ++++* 第四見出し |
+| 18 | 4 | 121–121 | 143–143 | +1/−1 | residual | +++++* 第五見出し |
+| 19 | 4 | 123–123 | 145–145 | +1/−1 | residual | ++++++* 第六見出し |
+| 20 | 4 | 128–128 | 150–150 | +1/−1 | residual | [[span class="s-title"]]タブ[[/span]] |
+| 21 | 4 | 130–130 | 152–152 | +1/−1 | residual | 標準のタブはこのように表示されます: |
+| 22 | 4 | 134–134 | 156–156 | +1/−1 | residual | [[tab 概要]] |
+| 23 | 4 | 137–138 | 159–160 | +2/−2 | residual | [[tab ガバナンス]] |
+| 24 | 4 | 140–140 | 162–162 | +1/−1 | residual | [[tab 開示]] |
+| 25 | 4 | 147–147 | 169–169 | +1/−1 | residual | [[[theme:ordopharm-jp\|そしてリンク。]]] lorem ipsum |
+| 26 | 4 | 152–152 | 174–174 | +1/−1 | residual | 色クラスを付けると表示を変えられます。タブ専用の修飾子もいくつかあります（「タブ修飾子」参照）。 |
+| 27 | 4 | 155–155 | 177–177 | +1/−1 | residual | [[tab 概要]] |
+| 28 | 4 | 158–159 | 180–181 | +2/−2 | residual | [[tab ガバナンス]] |
+| 29 | 4 | 161–161 | 183–183 | +1/−1 | residual | [[tab 開示]] |
+| 30 | 4 | 168–168 | 190–190 | +1/−1 | residual | [[[theme:ordopharm-jp\|そしてリンク。]]] lorem ipsum |
+| 31 | 4 | 174–174 | 196–196 | +1/−1 | residual | {{mapview}}で包むと、最大12個の「タブ」を持つノードベースの地図表示になります。座標系で位置を決め（「ルート変数」参照）、前述の修飾子で見た目… |
+| 32 | 4 | 178–179 | 200–201 | +2/−2 | residual | [[tab 概要]] |
+| 33 | 4 | 181–182 | 203–204 | +2/−2 | residual | [[tab ガバナンス]] |
+| 34 | 4 | 184–185 | 206–207 | +2/−2 | residual | [[tab 開示]] |
+| 35 | 4 | 190–190 | 212–212 | +1/−1 | residual | [[span class="s-title"]]引用[[/span]] |
+| 36 | 4 | 192–192 | 214–214 | +1/−1 | residual | > これは引用ブロックです。 |
+| 37 | 4 | 194–194 | 216–216 | +1/−1 | residual | > さらにテキスト |
+| 38 | 4 | 196–196 | 218–218 | +1/−1 | residual | > これが水平線です。 |
+| 39 | 4 | 198–198 | 220–220 | +1/−1 | residual | >> 入れ子の引用ブロック |
+| 40 | 4 | 200–200 | 222–222 | +1/−1 | residual | >>> さらに入れ子。 |
+| 41 | 4 | 202–202 | 224–224 | +1/−1 | residual | 色クラスで包むと見た目を変えられます: |
+| 42 | 5 | 210–210 | 232–232 | +1/−1 | residual | [[span class="s-title"]]表[[/span]] |
+| 43 | 5 | 212–215 | 234–237 | +4/−4 | residual | \|\|~ 地域 \|\|~ 契約面積（ヘクタール） \|\|~ 収量指数 \|\| |
+| 44 | 5 | 222–222 | 244–244 | +1/−1 | residual | + 独自のdivとspan |
+| 45 | 5 | 224–224 | 246–246 | +1/−1 | residual | [[span class="s-title"]]ヒーロー[[/span]] |
+| 46 | 5 | 226–226 | 248–248 | +1/−1 | residual | {{hero}}は目を引くタイトルブロック、つまり目立つバナーです。 |
+| 47 | 5 | 229–231 | 251–253 | +3/−3 | residual | [[span class="eyebrow"]]作物科学[[/span]] |
+| 48 | 5 | 233–233 | 255–255 | +1/−1 | residual | //[[[theme:ordopharm-jp\|さもなくば。]]]// |
+| 49 | 5 | 236–236 | 258–258 | +1/−1 | residual | [[collapsible show="コード"]] |
+| 50 | 5 | 239–240 | 261–262 | +2/−2 | residual | @@[[span class="eyebrow"]]作物科学[[/span]]@@ |
+| 51 | 5 | 242–242 | 264–264 | +1/−1 | residual | ここに導入文が入ります。 |
+| 52 | 5 | 245–245 | 267–267 | +1/−1 | residual | //[[[theme:ordopharm-jp\|リンク。]]]// |
+| 53 | 5 | 252–253 | 274–275 | +2/−2 | residual | [[span class="eyebrow"]]種子システム[[/span]] |
+| 54 | 5 | 255–255 | 277–277 | +1/−1 | residual | ,,//報告書全文をお読みください。//,, |
+| 55 | 5 | 258–258 | 280–280 | +1/−1 | residual | [[collapsible show="コード"]] |
+| 56 | 5 | 261–262 | 283–284 | +2/−2 | residual | @@[[span class="eyebrow"]]種子システム[[/span]]@@ |
+| 57 | 5 | 264–264 | 286–286 | +1/−1 | residual | @@,,//報告書全文をお読みください。//,,@@ |
+| 58 | 5 | 270–270 | 292–292 | +1/−1 | residual | [[span class="s-title"]]バンド[[/span]] |
+| 59 | 5 | 272–272 | 294–294 | +1/−1 | residual | {{band}}は短いテキストのブロックを、色の帯で区切って（{{rule}}を併用）表示します。 |
+| 60 | 5 | 275–275 | 297–297 | +1/−1 | residual | [[span class="eyebrow azure"]]私たちの約束[[/span]] |
+| 61 | 6 | 287–287 | 309–309 | +1/−1 | residual | [[span class="s-title"]]ペイン[[/span]] |
+| 62 | 6 | 289–289 | 311–311 | +1/−1 | residual | {{panes}}は子要素を並べるレスポンシブなグリッドです。各{{pane}}は独自の色クラス・サイズ・等間隔を持ちます。{{duo}}や{{quad}… |
+| 63 | 6 | 293–294 | 315–316 | +2/−2 | residual | +++* 作物科学 |
+| 64 | 6 | 297–298 | 319–320 | +2/−2 | residual | +++* 消費者健康 |
+| 65 | 6 | 301–302 | 323–324 | +2/−2 | residual | +++* 医薬品 |
+| 66 | 6 | 307–307 | 329–329 | +1/−1 | residual | 単独のペイン。 |
+| 67 | 6 | 312–313 | 334–335 | +2/−2 | residual | +++* 投資家向け情報 |
+| 68 | 6 | 316–317 | 338–339 | +2/−2 | residual | +++* サステナビリティ |
+| 69 | 6 | 323–323 | 345–345 | +1/−1 | residual | +++* 一 |
+| 70 | 6 | 327–328 | 349–350 | +2/−2 | residual | +++* 二 |
+| 71 | 6 | 331–331 | 353–353 | +1/−1 | residual | +++* 三 |
+| 72 | 6 | 335–335 | 357–357 | +1/−1 | residual | +++* 四 |
+| 73 | 6 | 341–341 | 363–363 | +1/−1 | residual | [[span class="s-title"]]プルクォート[[/span]] |
+| 74 | 6 | 343–343 | 365–365 | +1/−1 | residual | {{pullquote}}は、独立したブロックで強調される短い引用です。 |
+| 75 | 6 | 346–347 | 368–369 | +2/−2 | residual | 私たちは心の平穏を売っています。しかもヘクタール単位で。 |
+| 76 | 6 | 351–351 | 373–373 | +1/−1 | residual | [[span class="s-title"]]ティッカー[[/span]] |
+| 77 | 6 | 353–353 | 375–375 | +1/−1 | residual | {{ticker}}は投資家向け情報の雰囲気を出す等幅の帯です。各項目を{{up}}・{{down}}・{{flat}}で包むと矢印が付きます。 |
+| 78 | 7 | 361–361 | 383–383 | +1/−1 | residual | [[collapsible show="コード"]] |
+| 79 | 8 | 369–369 | 391–391 | +1/−1 | residual | {{ticker}}に{{scroll}}を足すと流れる帯になります。速度は{{--ticker-speed}}（秒）で設定します。 |
+| 80 | 9 | 379–379 | 401–401 | +1/−1 | residual | [[span class="s-title"]]分割とサイドボックス[[/span]] |
+| 81 | 9 | 381–381 | 403–403 | +1/−1 | residual | {{split}}は2列のグリッドで、狭い画面では1列になります。{{weighted}}を足すと1列目が広くなります。 |
+| 82 | 9 | 385–386 | 407–408 | +2/−2 | residual | +++* 左の列 |
+| 83 | 9 | 389–390 | 411–412 | +2/−2 | residual | +++* 右の列 |
+| 84 | 9 | 396–396 | 418–418 | +1/−1 | residual | {{split weighted}}はこの列を1.6frにし、サイドバーを1frにします。{{pane}}と組み合わせると収まりが良いです。 |
+| 85 | 9 | 400–401 | 422–423 | +2/−2 | residual | +++* サイドバー |
+| 86 | 9 | 406–406 | 428–428 | +1/−1 | residual | {{sidebox}}は既定で画面右に浮くパネルです。指定が無ければテキストはその周りを回り込みます。 |
+| 87 | 9 | 409–413 | 431–435 | +5/−5 | residual | = **一目でわかる数字** |
+| 88 | 9 | 416–416 | 438–438 | +1/−1 | residual | lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque f… |
+| 89 | 9 | 419–422 | 441–444 | +4/−4 | residual | = **フィールドノート** |
+| 90 | 9 | 425–425 | 447–447 | +1/−1 | residual | {{sidebox}}に{{left}}を足すと反対側に浮きます。lorem ipsum dolor sit amet, consectetur adip… |
+| 91 | 9 | 430–430 | 452–452 | +1/−1 | residual | [[span class="s-title"]]指標[[/span]] |
+| 92 | 9 | 432–432 | 454–454 | +1/−1 | residual | {{metrics}}は見出し数字を並べるレスポンシブなグリッドで、こうした種類のサイトでは非常によく見られます。各子要素は{{figure}}・{{la… |
+| 93 | 9 | 436–437 | 458–459 | +2/−2 | residual | [[span class="label"]]{{counter-element}}を足すと、ある数から別の数までカウントアップします。[[/span]] |
+| 94 | 9 | 444–444 | 466–466 | +1/−1 | residual | [[span class="label"]]この行にある数字の数。[[/span]] |
+| 95 | 9 | 450–450 | 472–472 | +1/−1 | residual | [[span class="label"]]この区画で表された数字の数。[[/span]] |
+| 96 | 9 | 454–454 | 476–476 | +1/−1 | residual | [[span class="label"]]この区画ですでに表された数字の数。[[/span]] |
+| 97 | 9 | 458–458 | 480–480 | +1/−1 | residual | [[span class="label"]]並び順の中での数字の値。[[/span]] |
+| 98 | 9 | 462–462 | 484–484 | +1/−1 | residual | [[span class="label"]]この並びで最後の数字。[[/span]] |
+| 99 | 9 | 466–466 | 488–488 | +1/−1 | residual | [[span class="s-title"]]パイプライン[[/span]] |
+| 100 | 9 | 468–468 | 490–490 | +1/−1 | residual | {{pipeline}}はプロジェクトのライフサイクルの各段階に自動で番号を振ります。段階は{{done}}・{{now}}・{{halted}}で指定し… |
+| 101 | 9 | 472–472 | 494–494 | +1/−1 | residual | 温室スクリーニング |
+| 102 | 9 | 475–475 | 497–497 | +1/−1 | residual | 隔離圃場試験 |
+| 103 | 9 | 478–478 | 500–500 | +1/−1 | residual | 規制当局への申請書類 |
+| 104 | 9 | 481–481 | 503–503 | +1/−1 | residual | 圃場への開放 |
+| 105 | 9 | 484–484 | 506–506 | +1/−1 | residual | 商用展開 |
+| 106 | 9 | 488–488 | 510–510 | +1/−1 | residual | [[span class="s-title"]]更新履歴[[/span]] |
+| 107 | 9 | 490–490 | 512–512 | +1/−1 | residual | {{updates}}は縦方向のタイムラインです。各子要素は{{date}}と色クラスを持ち、色クラスはマーカーと日付線に色を付けます。 |
+| 108 | 9 | 494–495 | 516–517 | +2/−2 | residual | [[span class="date"]]3月12日[[/span]] |
+| 109 | 9 | 498–499 | 520–521 | +2/−2 | residual | [[span class="date"]]3月4日[[/span]] |
+| 110 | 9 | 502–503 | 524–525 | +2/−2 | residual | [[span class="date"]]2月27日[[/span]] |
+| 111 | 9 | 507–507 | 529–529 | +1/−1 | residual | [[span class="s-title"]]ファクトシート[[/span]] |
+| 112 | 9 | 509–509 | 531–531 | +1/−1 | residual | {{factsheet}}は関連する詳細の要約を表示します。 |
+| 113 | 9 | 512–515 | 534–537 | +4/−4 | residual | \|\|~ 登録名称 \|\| Ordopharm Agronomics N.V. \|\| |
+| 114 | 9 | 518–518 | 540–540 | +1/−1 | residual | [[span class="s-title"]]タイル[[/span]] |
+| 115 | 9 | 520–520 | 542–542 | +1/−1 | residual | {{tiles}}は角に矢印の付いたナビゲーションカードのグリッドです。{{--tile-min}}で折り返し幅を変えられます。 |
+| 116 | 9 | 524–525 | 546–547 | +2/−2 | residual | +++* 投資家向け情報 |
+| 117 | 9 | 528–529 | 550–551 | +2/−2 | residual | +++* 作物科学 |
+| 118 | 9 | 532–533 | 554–555 | +2/−2 | residual | +++* 医薬品 |
+| 119 | 9 | 537–537 | 559–559 | +1/−1 | residual | [[span class="s-title"]]ジャンボトロン[[/span]] |
+| 120 | 9 | 539–539 | 561–561 | +1/−1 | residual | ジャンボトロンは「全幅」の画像バナーで、ページ上部の目を引くアートとして、その上に他の要素を重ねて使うためのものです。たぶん。これは実際のBayer-Mo… |
+| 121 | 9 | — | 563–563 | +1/−0 | residual | [[collapsible show="サイズ指定を見る" hide="閉じる" hideLocation="both"]] |
+| 122 | 10 | — | 609–609 | +1/−0 | residual | [[/collapsible]] |
+| 123 | 10 | 587–587 | 611–611 | +1/−1 | residual | + 注意表示とフラグ |
+| 124 | 10 | 589–589 | 613–613 | +1/−1 | residual | [[span class="s-title"]]注意[[/span]] |
+| 125 | 10 | 591–591 | 615–615 | +1/−1 | residual | {{notice}}は色付きのコールアウトです。バナーの語は{{--notice-word}}で変えられます。 |
+| 126 | 10 | 594–594 | 618–618 | +1/−1 | residual | 製品の入手可否は地域によって異なります。現地の登録状況をご確認ください。 |
+| 127 | 10 | 597–598 | 621–622 | +2/−2 | residual | [[div class="notice hazard" style="--notice-word: '警告';"]] |
+| 128 | 10 | 601–602 | 625–626 | +2/−2 | residual | [[div class="notice teal" style="--notice-word: '勧告';"]] |
+| 129 | 10 | 605–605 | 629–629 | +1/−1 | residual | [[span class="s-title"]]バッジ[[/span]] |
+| 130 | 10 | 607–607 | 631–631 | +1/−1 | residual | {{badge}}はインラインのチップです。{{hollow}}を足すと輪郭線のみになります。 |
+| 131 | 10 | 609–609 | 633–633 | +1/−1 | residual | 状態: [[span class="badge leaf"]]承認済み[[/span]] [[span class="badge amber"]]審査中[… |
+| 132 | 10 | 611–611 | 635–635 | +1/−1 | residual | [[span class="s-title"]]テープ[[/span]] |
+| 133 | 10 | 613–613 | 637–637 | +1/−1 | residual | {{tape}}は危険帯の区切りです。{{thick}}を足すと高さが倍になります。 |
+| 134 | 11 | 621–621 | 645–645 | +1/−1 | residual | [[span class="s-title"]]成長バー[[/span]] |
+| 135 | 11 | 623–623 | 647–647 | +1/−1 | residual | [[collapsible show="開いて試す" hide="閉じて試す" folded="no"]] |
+| 136 | 12 | 632–632 | 656–656 | +1/−1 | residual | [[collapsible show="コード"]] |
+| 137 | 13 | 641–641 | 665–665 | +1/−1 | residual | [[span class="s-title"]]ローディングバー[[/span]] |
+| 138 | 13 | 643–643 | 667–667 | +1/−1 | residual | [[collapsible show="第4四半期決算プレビュー" hide="第4四半期決算プレビュー"]] |
+| 139 | 14 | 652–652 | 676–676 | +1/−1 | residual | [[span class="caps"]]審査待ちのため数値は非公開[[/span]] |
+| 140 | 14 | 656–656 | 680–680 | +1/−1 | residual | [[span class="s-title"]]製品ラベル[[/span]] |
+| 141 | 14 | 660–660 | 684–684 | +1/−1 | residual | = //選択性茎葉処理除草剤。// |
+| 142 | 14 | 665–665 | 689–689 | +1/−1 | residual | + 文書 |
+| 143 | 14 | 667–667 | 691–691 | +1/−1 | residual | [[span class="s-title"]]メモ[[/span]] |
+| 144 | 15 | 689–691 | 713–715 | +3/−3 | residual | [[span class="s-title"]]色クラス[[/span]] |
+| 145 | 16 | — | 973–975 | +3/−0 | residual | @@ @@ |
+| 146 | 16 | 950–950 | 977–977 | +1/−1 | residual | [[span class="s-title"]]組版ユーティリティ[[/span]] |
+| 147 | 16 | 952–960 | 979–987 | +9/−9 | residual | \|\| [[span class="eyebrow"]]eyebrow[[/span]] \|\| 見出しの上に置く小さな大文字のキッカー \|\| |
+| 148 | 16 | 962–962 | 989–989 | +1/−1 | residual | [[span class="s-title"]]修飾子[[/span]] |
+| 149 | 16 | 964–972 | 991–999 | +9/−9 | residual | \|\| {{tiny}} / {{medium}} / {{large}} / {{full}} \|\| ブロックの幅を制限する \|\| |
+| 150 | 16 | 975–975 | 1002–1002 | +1/−1 | residual | [[span class="s-title"]]タブ修飾子[[/span]] |
+| 151 | 16 | 977–977 | 1004–1004 | +1/−1 | residual | {{tabview}}を次のdiv修飾子のいずれかで包むと、タブ帯の挙動が変わります。 |
+| 152 | 16 | 979–981 | 1006–1008 | +3/−3 | residual | \|\| {{tabs-flush}} \|\| パネルの枠と背景を消し、タブだけ残す \|\| |
+| 153 | 17 | 1037–1037 | — | +0/−1 | residual | [[span class="s-title"]]Map Modifiers[[/span]] |
+| 154 | 17 | 1039–1047 | 1065–1076 | +12/−9 | residual | [[span class="s-title"]]地図修飾子[[/span]] |
+| 155 | 18 | 1102–1102 | 1131–1131 | +1/−1 | residual | + ルート変数 |
+| 156 | 18 | 1104–1104 | 1133–1133 | +1/−1 | residual | ルート変数を変更するには、記事に次のようにCSSモジュールを追加します。 |
+| 157 | 18 | 1111–1111 | 1140–1140 | +1/−1 | residual | そのうえで{{:root}}疑似クラスを書き、その中に変数と値を入れます。 |
+| 158 | 19 | 1119–1120 | 1148–1149 | +2/−2 | residual | = //とくに重要なルート変数:// |
+| 159 | 19 | 1122–1122 | 1151–1151 | +1/−1 | residual | \|\|\|\|\|\| ワードマークの前半。タイトル色で表示 \|\| |
+| 160 | 19 | 1124–1124 | 1153–1153 | +1/−1 | residual | \|\|\|\|\|\| ワードマークの後半。部門色で表示 \|\| |
+| 161 | 19 | 1126–1126 | 1155–1155 | +1/−1 | residual | \|\|\|\|\|\| ワードマークの下に置くキャッチコピー \|\| |
+| 162 | 19 | 1128–1142 | 1157–1171 | +15/−15 | residual | \|\|\|\|\|\| 狭い画面でのワードマーク（キャッチコピーは非表示になる） \|\| |
+| 163 | 19 | 1144–1144 | 1173–1173 | +1/−1 | residual | \|\|\|\|\|\| ペイン・バンド・見出しのアクセント罫線の太さ \|\| |
+| 164 | 19 | 1146–1146 | 1175–1175 | +1/−1 | residual | \|\|\|\|\|\| テーマ全体の角の丸み。コーポレート既定は直角 \|\| |
+| 165 | 19 | 1148–1148 | 1177–1177 | +1/−1 | residual | \|\|\|\|\|\| {{band}}内側の上下の余白 \|\| |
+| 166 | 19 | 1150–1150 | 1179–1179 | +1/−1 | residual | \|\|\|\|\|\| グリッドが折り返す前のペインの最小幅 \|\| |
+| 167 | 19 | 1152–1156 | 1181–1185 | +5/−5 | residual | \|\|\|\|\|\| {{hero}}の背景画像。{{tint}}クラスと併用 \|\| |
+| 168 | 19 | 1158–1162 | 1187–1191 | +5/−5 | residual | \|\|\|\|\|\| {{custom_memo}}の見出し \|\| |
+| 169 | 19 | 1164–1164 | 1193–1193 | +1/−1 | residual | \|\|\|\|\|\| {{stamped}}クラスが付ける斜めスタンプの文字 \|\| |
+| 170 | 19 | 1166–1170 | 1195–1199 | +5/−5 | residual | \|\|\|\|\|\| {{product_label}}のバナー語 \|\| |
+| 171 | 19 | 1172–1184 | 1201–1213 | +13/−13 | residual | \|\|\|\|\|\| 成長バーの高さ \|\| |
+| 172 | 19 | 1186–1194 | 1215–1223 | +9/−9 | residual | \|\|\|\|\|\| 本文カラムの幅 \|\| |
+| 173 | 19 | 1196–1196 | 1225–1225 | +1/−1 | residual | \|\|\|\|\|\|~ //全リストはソースコードを参照してください。// \|\| |
+| 174 | 19 | 1198–1198 | 1227–1227 | +1/−1 | residual | + フォント |
+| 175 | 19 | 1201–1205 | 1230–1234 | +5/−5 | residual | \|\|~ フォント \|\|~ 用途 \|\|~ クラス \|\| |
+| 176 | 19 | 1208–1208 | 1237–1237 | +1/−1 | residual | + ソースコード |
+| 177 | 19 | 1210–1210 | 1239–1246 | +8/−1 | residual | [[collapsible show="ソースコードを見る" hide="閉じる"]] |
+| 178 | 19 | 1212–1213 | 1248–1255 | +8/−2 | supplement | @import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Abasalt-j… |
+| 179 | 20 | 1307–1307 | 1349–1349 | +1/−1 | residual | --jumbo-image: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3A… |
+| 180 | 21 | 1342–1345 | 1384–1387 | +4/−4 | residual | --header-font-primary: 'Archivo', 'Noto Sans JP', sans-serif; |
+| 181 | 22 | — | 3096–3101 | +6/−0 | residual | /* |
+| 182 | 23 | 3168–3168 | 3216–3216 | +1/−1 | residual | --UI-font-primary: 'IBM Plex Mono', 'Noto Sans JP', monospace; |
+| 183 | 24 | — | 3297–3302 | +6/−0 | residual | /* |
+| 184 | 24 | 3250–3251 | 3304–3304 | +1/−2 | supplement | @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:ital,wght@… |
+| 185 | 25 | 3360–3362 | 3413–3415 | +3/−3 | residual | --header-font-primary: 'Bitter', 'Noto Serif JP', serif; |
+| 186 | 26 | — | 3488–3502 | +15/−0 | supplement | [[include :scp-jp:component:license-box-backend |
+| 187 | 26 | 3438–3447 | 3506–3506 | +1/−10 | residual | >[[ift{$intranet}gs -テーマ]] |
+| 188 | 26 | 3450–3450 | 3509–3509 | +1/−1 | supplement | @import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aordophar… |
+| 189 | 26 | 3452–3452 | 3511–3511 | +1/−1 | supplement | [[include :scp-jp:component:interwiki-style |
+| 190 | 26 | 3454–3454 | 3513–3513 | +1/−1 | supplement | \| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aordopharm-jp/2 |
+| 191 | 26 | 3459–3459 | 3518–3518 | +1/−1 | residual | >[[ift{$legacy}gs -テーマ]] |
+| 192 | 26 | 3462–3462 | 3521–3521 | +1/−1 | supplement | @import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aordophar… |
+| 193 | 26 | 3464–3464 | 3523–3523 | +1/−1 | supplement | [[include :scp-jp:component:interwiki-style |
+| 194 | 26 | 3466–3466 | 3525–3525 | +1/−1 | supplement | \| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aordopharm-jp/3 |
 
 ## Full diff
 
 <details>
-<summary>Section 1 — original 1–90 · candidate 1–40 · +27/−77 · residual, supplement</summary>
+<summary>Section 1 — original 1–7 · candidate 1–5 · +2/−4 · supplement</summary>
 
 ```diff
-@@ -1,90 +1,40 @@
+@@ -1,7 +1,5 @@
 -[[iftags +theme]]
 -[[module css]]
 -@import url("https://cdn.scpwiki.com/theme/en/basalt/normalize-min.css");
@@ -245,22 +244,36 @@ adjudicated explanation.
 +@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aordopharm-jp/1');
  [[/module]]
  
--[[module CSS]]
--:root {
--    --x1: 300px;
--    --y1: 44px;
--    --x2: 150px;
--    --y2: 100px;
--    --x3: 250px;
--    --y3: 263px;
+ [[module CSS]]
+```
+
+</details>
+
+<details>
+<summary>Section 2 — original 12–18 · candidate 10–16 · +1/−1 · residual</summary>
+
+```diff
+@@ -12,7 +10,7 @@
+     --y2: 100px;
+     --x3: 250px;
+     --y3: 263px;
 -    --map-image: url('http://scp-wiki.wikidot.com/local--files/theme:ordopharm/banner.jpg');
--    --from: 0;
--    --to: 75;
--}
--.tocy {
--    float: right;
--    padding-left: 10px;
--}
++    --map-image: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aordopharm-jp/banner.jpg');
+     --from: 0;
+     --to: 75;
+ }
+```
+
+</details>
+
+<details>
+<summary>Section 3 — original 75–90 · candidate 73–111 · +28/−5 · residual, supplement</summary>
+
+```diff
+@@ -75,16 +73,39 @@
+ }
+ [[/module]]
+ 
 +[[include :scp-jp:component:interwiki-style
 +| priority=1
 +| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Abasalt-jp/1
@@ -273,61 +286,9 @@ adjudicated explanation.
 +| priority=3
 +| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aordopharm-jp/1
 +]]
- 
--#toc .title { font-size: 1em; }
++
 +[[iftags +テーマ]]
- 
--.swatchset {
--    display: grid;
--    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
--    gap: 0 1.25rem;
--    margin: 1rem 0;
--}
--
--.chip {
--    display: flex;
--    align-items: center;
--    gap: .5rem;
--    font-family: var(--mono-font);
--    font-size: .72rem;
--    padding: .12rem 0;
--}
--
--.chip::before {
--    content: "";
--    flex: none;
--    width: 1.5rem;
--    height: 1.5rem;
--    background-color: rgb(var(--active-color));
--    border: solid .0625rem rgb(128, 128, 128, .45);
--}
--
--.setname {
--    font-family: var(--UI-font);
--    font-size: .72rem;
--    font-weight: 700;
--    letter-spacing: .16em;
--    text-transform: uppercase;
--    border-bottom: solid .0625rem rgb(var(--general-border-color));
--    padding-bottom: .25rem;
--    margin-bottom: .5rem;
--}
--
--@media all and (max-width: 800px) {
--    #page-content div:is(.tocy) {
--        float: none;
--        display: table;
--        margin: 0 auto;
--        padding-left: 0;
--    }
--
--    :where(.table_wrap) table {
--        table-layout: fixed;
--        width: fit-content;
--        overflow-x: auto;
--    }
--}
--[[/module]]
++
 +[[include :scp-jp:credit:start-preview]]
 +**タイトル:** オルドファーム アグロノミクス テーマ
 +**翻訳責任者:** AI
@@ -338,7 +299,7 @@ adjudicated explanation.
 +**初訳時参照リビジョン:** 22
 +**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:ordopharm Ordopharm Agronomics Theme]
 +[[include :scp-jp:credit:end-preview]]
- 
++
  [[div class="pseudocrumbs"]]
 -//Built on [[[theme:bedrock|Bedrock]]]. See also: [[[theme:basalt|Basalt]]], [[[theme:eigenmachine|Eigenmachine]]],  [[[theme:eigenvector|Eigenvector]]]//
 +//[[[https://scp-wiki.wikidot.com/theme:bedrock|Bedrock]]]を基盤に構築。関連: [[[https://scp-wiki.wikidot.com/theme:basalt|Basalt]]]、[[[https://scp-wiki.wikidot.com/theme:eigenmachine|Eigenmachine]]]、[[[https://scp-wiki.wikidot.com/theme:eigenvector|Eigenvector]]]（いずれも英語版）//
@@ -359,10 +320,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 2 — original 92–205 · candidate 42–156 · +44/−43 · residual</summary>
+<summary>Section 4 — original 92–205 · candidate 113–227 · +44/−43 · residual</summary>
 
 ```diff
-@@ -92,114 +42,115 @@
+@@ -92,114 +113,115 @@
  [[/div]]
  @@ @@
  
@@ -526,10 +487,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 3 — original 207–278 · candidate 158–229 · +27/−27 · residual</summary>
+<summary>Section 5 — original 207–278 · candidate 229–300 · +27/−27 · residual</summary>
 
 ```diff
-@@ -207,72 +158,72 @@
+@@ -207,72 +229,72 @@
  
  
  
@@ -634,10 +595,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 4 — original 284–356 · candidate 235–307 · +24/−24 · residual</summary>
+<summary>Section 6 — original 284–356 · candidate 306–378 · +24/−24 · residual</summary>
 
 ```diff
-@@ -284,73 +235,73 @@
+@@ -284,73 +306,73 @@
  band teal bleed
  [[/div]]
  
@@ -740,10 +701,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 5 — original 358–364 · candidate 309–315 · +1/−1 · residual</summary>
+<summary>Section 7 — original 358–364 · candidate 380–386 · +1/−1 · residual</summary>
 
 ```diff
-@@ -358,7 +309,7 @@
+@@ -358,7 +380,7 @@
  [[span class="flat"]]Volume 4.1M[[/span]]
  [[/div]]
  
@@ -757,10 +718,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 6 — original 366–372 · candidate 317–323 · +1/−1 · residual</summary>
+<summary>Section 8 — original 366–372 · candidate 388–394 · +1/−1 · residual</summary>
 
 ```diff
-@@ -366,7 +317,7 @@
+@@ -366,7 +388,7 @@
  @@[[/div]]@@
  [[/collapsible]]
  
@@ -774,10 +735,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 7 — original 376–543 · candidate 327–495 · +62/−61 · residual</summary>
+<summary>Section 9 — original 376–543 · candidate 398–566 · +62/−61 · residual</summary>
 
 ```diff
-@@ -376,168 +327,169 @@
+@@ -376,168 +398,169 @@
  [[/div]]
  
  @@ @@
@@ -1013,10 +974,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 8 — original 583–616 · candidate 535–569 · +14/−13 · residual</summary>
+<summary>Section 10 — original 583–616 · candidate 606–640 · +14/−13 · residual</summary>
 
 ```diff
-@@ -583,34 +535,35 @@
+@@ -583,34 +606,35 @@
  //class {{jumbo crest}}//
  [[/div]]
  [[/collapsible]]
@@ -1070,10 +1031,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 9 — original 618–626 · candidate 571–579 · +2/−2 · residual</summary>
+<summary>Section 11 — original 618–626 · candidate 642–650 · +2/−2 · residual</summary>
 
 ```diff
-@@ -618,9 +571,9 @@
+@@ -618,9 +642,9 @@
  [[div class="tape thick amber"]]
  [[/div]]
  
@@ -1090,10 +1051,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 10 — original 629–635 · candidate 582–588 · +1/−1 · residual</summary>
+<summary>Section 12 — original 629–635 · candidate 653–659 · +1/−1 · residual</summary>
 
 ```diff
-@@ -629,7 +582,7 @@
+@@ -629,7 +653,7 @@
  [[/div]]
  [[/collapsible]]
  
@@ -1107,10 +1068,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 11 — original 638–646 · candidate 591–599 · +2/−2 · residual</summary>
+<summary>Section 13 — original 638–646 · candidate 662–670 · +2/−2 · residual</summary>
 
 ```diff
-@@ -638,9 +591,9 @@
+@@ -638,9 +662,9 @@
  @@[[/div]]@@
  [[/collapsible]]
  
@@ -1127,10 +1088,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 12 — original 649–670 · candidate 602–623 · +5/−5 · residual</summary>
+<summary>Section 14 — original 649–670 · candidate 673–694 · +5/−5 · residual</summary>
 
 ```diff
-@@ -649,22 +602,22 @@
+@@ -649,22 +673,22 @@
  [[/div]]
  [[/div]]
  [[div class="fade-in2 pane filled hazard medium center"]]
@@ -1163,10 +1124,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 13 — original 686–694 · candidate 639–647 · +3/−3 · residual</summary>
+<summary>Section 15 — original 686–694 · candidate 710–718 · +3/−3 · residual</summary>
 
 ```diff
-@@ -686,9 +639,9 @@
+@@ -686,9 +710,9 @@
  {{memo stamped}}
  [[/div]]
  
@@ -1184,10 +1145,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 14 — original 946–984 · candidate 899–940 · +28/−25 · residual</summary>
+<summary>Section 16 — original 946–984 · candidate 970–1011 · +28/−25 · residual</summary>
 
 ```diff
-@@ -946,39 +899,42 @@
+@@ -946,39 +970,42 @@
  = As with Eigenmachine, you can borrow a shade from another mode by invoking {{color#}}, where {{color}} is the name of the color and {{#}} is the set number. 
  @@ @@
  [[/collapsible]]
@@ -1260,10 +1221,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 15 — original 1034–1050 · candidate 990–1008 · +12/−10 · residual</summary>
+<summary>Section 17 — original 1034–1050 · candidate 1061–1079 · +12/−10 · residual</summary>
 
 ```diff
-@@ -1034,17 +990,19 @@
+@@ -1034,17 +1061,19 @@
  
  [[/collapsible]]
  
@@ -1298,10 +1259,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 16 — original 1099–1114 · candidate 1057–1072 · +3/−3 · residual</summary>
+<summary>Section 18 — original 1099–1114 · candidate 1128–1143 · +3/−3 · residual</summary>
 
 ```diff
-@@ -1099,16 +1057,16 @@
+@@ -1099,16 +1128,16 @@
  [[/div]]
  [[/collapsible]]
  
@@ -1326,10 +1287,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 17 — original 1116–1216 · candidate 1074–1187 · +86/−73 · residual, supplement</summary>
+<summary>Section 19 — original 1116–1216 · candidate 1145–1258 · +86/−73 · residual, supplement</summary>
 
 ```diff
-@@ -1116,101 +1074,114 @@
+@@ -1116,101 +1145,114 @@
  > {{@@}@@}}
  > {{@@[[/module]]@@}}
  
@@ -1522,10 +1483,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 18 — original 1304–1310 · candidate 1275–1281 · +1/−1 · residual</summary>
+<summary>Section 20 — original 1304–1310 · candidate 1346–1352 · +1/−1 · residual</summary>
 
 ```diff
-@@ -1304,7 +1275,7 @@
+@@ -1304,7 +1346,7 @@
      --ordo4-void: 6, 7, 4;
     
  
@@ -1539,10 +1500,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 19 — original 1339–1348 · candidate 1310–1319 · +4/−4 · residual</summary>
+<summary>Section 21 — original 1339–1348 · candidate 1381–1390 · +4/−4 · residual</summary>
 
 ```diff
-@@ -1339,10 +1310,10 @@
+@@ -1339,10 +1381,10 @@
  
  /*------- Fonts -------*/
  
@@ -1562,406 +1523,112 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 20 — original 3050–3469 · candidate 3021–3065 · +19/−394 · residual, supplement</summary>
+<summary>Section 22 — original 3051–3056 · candidate 3093–3104 · +6/−0 · residual</summary>
 
 ```diff
-@@ -3050,420 +3021,45 @@
-     .stamped::after { display: none; }
+@@ -3051,6 +3093,12 @@
  }
  [[/code]]
--[[code type="css"]]
-+[[/collapsible]]
+ [[code type="css"]]
++/*
++    Ordopharm Agronomics Theme — part 2 of 3 (intranet mode)
++    Ported for SCP-JP (theme:ordopharm rev 22).
++    The original page serves three code files: 1 = base, 2 = intranet mode, 3 = legacy mode.
++    JP版も同じ3分割でアップロードしてください（INTEGRATION.md §2）。
++*/
  
--:root {
+ :root {
+ 
+```
+
+</details>
+
+<details>
+<summary>Section 23 — original 3165–3171 · candidate 3213–3219 · +1/−1 · residual</summary>
+
+```diff
+@@ -3165,7 +3213,7 @@
+     --rate-module-background-color: var(--surface-alt);
+ 
+ 
+-    --UI-font-primary: 'IBM Plex Mono';
++    --UI-font-primary: 'IBM Plex Mono', 'Noto Sans JP', monospace;
+     --brand-weight: 700;
+     --division-weight: 500;
+     --title-size: 1.35rem;
+```
+
+</details>
+
+<details>
+<summary>Section 24 — original 3246–3254 · candidate 3294–3307 · +7/−2 · residual, supplement</summary>
+
+```diff
+@@ -3246,9 +3294,14 @@
+ }
+ [[/code]]
+ [[code type="css"]]
++/*
++    Ordopharm Agronomics Theme — part 3 of 3 (legacy mode)
++    Ported for SCP-JP (theme:ordopharm rev 22).
++    The original page serves three code files: 1 = base, 2 = intranet mode, 3 = legacy mode.
++    JP版も同じ3分割でアップロードしてください（INTEGRATION.md §2）。
++*/
+ 
+-
+-@import url('https://fonts.bunny.net/css2?family=Abhaya-Libre:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
++@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+ 
+ :root {
+ 
+```
+
+</details>
+
+<details>
+<summary>Section 25 — original 3357–3365 · candidate 3410–3418 · +3/−3 · residual</summary>
+
+```diff
+@@ -3357,9 +3410,9 @@
+ 
+ 
+ 
+-    --header-font-primary: 'Bitter';
+-    --UI-font-primary: 'Bitter';
+-    --body-font-primary: 'Bitter';
++    --header-font-primary: 'Bitter', 'Noto Serif JP', serif;
++    --UI-font-primary: 'Bitter', 'Noto Serif JP', serif;
++    --body-font-primary: 'Bitter', 'Noto Serif JP', serif;
+     --brand-weight: 700;
+     --division-weight: 400;
+     --rule-weight: .1875rem;
+```
+
+</details>
+
+<details>
+<summary>Section 26 — original 3432–3469 · candidate 3485–3528 · +23/−17 · residual, supplement</summary>
+
+```diff
+@@ -3432,38 +3485,44 @@
+ }
+ [[/code]]
+ [[/collapsible]]
++
 +[[include :scp-jp:component:license-box-backend
 +|author=Billith]]
- 
++
 +> **ファイル名:** banner.jpg
 +> **作者:** [[*user Billith]]
 +> **ライセンス:** 原語版に記載なし（原語版ページにライセンス表記がありません。投稿前に著者へ確認してください）
 +> **出典:** [https://scp-wiki.wikidot.com/local--files/theme:ordopharm/banner.jpg SCP Foundation Wiki]
- 
--    --tab-accent: var(--ordo-azure);
--    --map-mat: var(--ordo-void);
--    --node-color: var(--ordo-sky);
--    --ordo-frost: 226, 232, 236;
--    --ordo-mist: 38, 48, 56;
--    --ordo-line: 52, 66, 76;
--    --ordo-slate: 131, 148, 158;
--    --ordo-graphite: 27, 35, 41;
--    --ordo-navy: 7, 26, 35;
--    --ordo-azure: 61, 165, 226;
--    --ordo-sky: 106, 199, 243;
--    --ordo-teal: 32, 168, 158;
--    --ordo-sprout: 155, 219, 76;
--    --ordo-leaf: 118, 191, 44;
--    --ordo-moss: 79, 130, 56;
--    --ordo-wheat: 226, 194, 104;
--    --ordo-amber: 240, 178, 88;
--    --ordo-rust: 199, 105, 54;
--    --ordo-loam: 97, 76, 58;
--    --ordo-bloom: 218, 88, 168;
--    --ordo-hazard: 226, 60, 84;
--    --ordo-void: 3, 8, 11;
++
 +> **フォント:** Archivo / Inter / IBM Plex Mono / Abhaya Libre
 +> **ライセンス:** SIL Open Font License（Google Fonts から配信）
 +> **訳注:** 原語版は Archivo と IBM Plex Mono / Abhaya Libre を bunny.net から、本文の InterVariable は読み込み元の記載がありません。JP版では Google Fonts から読み込み、和文には Noto Sans JP / Noto Serif JP を併記しています。
- 
++
 +[[include :scp-jp:component:license-box-end]]
- 
--    --surface: 31, 41, 48;
--    --surface-alt: 24, 33, 39;
--    --ink: 226, 232, 236;
--    --ink-soft: var(--ordo-slate);
--    --on-dark: 226, 232, 236;
--    --shadow-color: 0, 0, 0;
--
--
--    --basalt-primary-color: 20, 28, 34;
--    --basalt-secondary-color: var(--surface-alt);
--    --basalt-tertiary-color: var(--ordo-line);
--    --basalt-main-text-color: var(--on-dark);
--    --basalt-background-color: 20, 28, 34;
--    --basalt-sub-text-color: var(--ordo-slate);
--    --basalt-light-text-color: var(--ink);
--    --basalt-UI-dark-palette: var(--ordo-void);
--    --basalt-overtone: var(--ordo-void);
--    --basalt-undertone: var(--ordo-azure);
--    --basalt-bright-element-color: var(--ordo-sky);
--    --basalt-focus-color: var(--ordo-azure);
--    --basalt-UI-opacity: .985;
--
--    --link-color: var(--ordo-sky);
--    --link-visited-color: var(--ordo-teal);
--    --link-newpage-color: var(--ordo-amber);
--
--    --header-background-color: var(--ordo-navy);
--    --header-border-color: var(--ordo-azure);
--    --header-border-width: .125rem;
--    --header-title-color: var(--ink);
--    --header-subtitle-color: var(--ordo-sky);
--    --header-tagline-color: var(--ordo-slate);
--    --header-title: "ORDONET";
--    --header-subtitle: "\2571 INTERNAL";
--    --header-tagline: "Authorized personnel. Session is logged.";
--    --mobile-title: "ORDONET";
--    --mobile-subtitle: "\2571";
--
--    --header-logo: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='none' stroke='%233da5e2' stroke-width='5'/%3E%3Cpath d='M32 13c-11 11-11 29 0 38 11-9 11-27 0-38z' fill='%2376bf2c'/%3E%3Cpath d='M32 13c-11 11-11 29 0 38V13z' fill='%23e2e8ec'/%3E%3C/svg%3E");
--
--    --top-bar-link-color: var(--ink);
--    --top-bar-link-color-hover: var(--ordo-sky);
--    --top-bar-link-background-hover: transparent;
--    --top-bar-link-background-hover-alt: var(--ordo-void);
--    --top-bar-dropdown-background: var(--surface);
--    --top-bar-dropdown-link-color: var(--ink);
--    --top-bar-dropdown-background-hover: var(--ordo-azure);
--    --search-icon-color: var(--ordo-sky);
--    --user-icon-button-color: var(--ink);
--    --side-bar-background-color: var(--surface-alt);
--    --side-bar-link-color: var(--ordo-sky);
--    --side-bar-button-color: var(--ink);
--    --side-bar-heading-background-color: var(--ordo-void);
--    --login-status-background-color: var(--ordo-void);
--
--    --general-border-color: var(--ordo-line);
--    --title-border-color: var(--ordo-azure);
--    --hr-color: var(--ordo-line);
--    --blockquote-background-color: var(--surface-alt);
--    --code-background-color: var(--ordo-void);
--    --toc-background-color: var(--surface-alt);
--    --tab-background-color: var(--surface-alt);
--    --tab-hover-background-color: var(--ordo-line);
--    --tab-selected-background-color: var(--ordo-azure);
--    --tab-focus-text-color: var(--ordo-void) !important;
--    --image-caption-background-color: var(--surface-alt);
--    --footnote-background-color: var(--active color, var(--surface-alt));
--    --tag-background-color: var(--surface-alt);
--    --bottom-area-background-color: var(--ordo-void);
--    --bottom-area-text-color: var(--ordo-slate);
--    --footer-link-color: var(--ordo-sky);
--    --footer-divider-color: var(--ordo-line);
--    --license-area-divider-color: var(--ordo-line);
--    --scrollbar-track-color: var(--surface-alt);
--    --scrollbar-thumb-color: var(--ordo-azure);
--    --selection-background-color: var(--ordo-azure);
--    --selection-text-color: var(--ordo-void);
--    --button-background-color: var(--surface);
--    --button-border-color: var(--ordo-line);
--    --button-text-color: var(--ink);
--    --button-hover-background-color: var(--ordo-azure);
--    --button-hover-border-color: var(--ordo-azure);
--    --button-hover-text-color: var(--ordo-void);
--    --rate-module-background-color: var(--surface-alt);
--
--
--    --UI-font-primary: 'IBM Plex Mono';
--    --brand-weight: 700;
--    --division-weight: 500;
--    --title-size: 1.35rem;
--    --subtitle-size: 1.35rem;
--    --custom-color: var(--ordo-azure);
--    --custom-header: "OrdoNet - Internal Communication";
--    --custom-logo: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='none' stroke='%233da5e2' stroke-width='5'/%3E%3Cpath d='M32 13c-11 11-11 29 0 38 11-9 11-27 0-38z' fill='%233da5e2'/%3E%3C/svg%3E");
--    --stamp-text: "INTERNAL USE ONLY";
--    --backdrop: linear-gradient(rgb(255, 255, 255, .022) .0625rem, transparent .0625rem), linear-gradient(90deg, rgb(255, 255, 255, .022) .0625rem, transparent .0625rem);
--    --backdrop-size: 2.5rem 2.5rem;
--    --backdrop-attachment: fixed;
--    --watermark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='none' stroke='%23ffffff' stroke-width='5'/%3E%3Cpath d='M32 13c-11 11-11 29 0 38 11-9 11-27 0-38z' fill='%23ffffff'/%3E%3C/svg%3E");
--}
--
--
--#page-content div.pane {
--    background-color: rgb(var(--surface));
--    border-color: rgb(var(--general-border-color));
--}
--
--#page-content div.pane:is(:hover, :focus-within) {
--    box-shadow: 0 0 0 .0625rem rgb(var(--active-color), .5);
--}
--
--#top-bar div[class*='top-bar'] > ul > li > a {
--    text-transform: uppercase;
--    font-size: .72rem;
--    letter-spacing: .1em;
--}
--
--#page-title, .meta-title {
--    font-family: var(--mono-font);
--    font-weight: 500;
--    font-size: 1.9em;
--    letter-spacing: -.01em;
--}
--
--#page-content :is(h1, h2, h3, h4, h5, h6) {
--    font-family: var(--mono-font);
--    font-weight: 500;
--}
--
--.eyebrow, .attrib, #breadcrumbs, .pseudocrumbs {
--    font-family: var(--mono-font);
--}
--
--.sidebox, .factsheet table th { background-color: transparent; }
--
--.sidebox {
--    background-color: rgb(var(--surface-alt));
--    border: solid .0625rem rgb(var(--general-border-color));
--    border-top: solid var(--rule-weight) rgb(var(--active-color));
--}
--
--div.memo, div.custom_memo, div.compliance_memo, div.legal_memo {
--    background-color: rgb(var(--surface));
--    box-shadow: none;
--}
--
--.product_label { background-color: rgb(var(--surface)); }
--
--div.memo {
--    --custom-header: "Ordopharm Agronomics - Internal Memorandum";
--    --custom-color: var(--ordo-sky);
--}
--
--.redact { background-color: rgb(var(--ordo-void)); color: rgb(var(--ordo-void)); }
--.redact:is(:hover, :focus) { color: rgb(var(--ordo-hazard)); }
--
--.gridlines {
--    background-image:
--        linear-gradient(rgb(var(--ordo-line), .5) .0625rem, transparent .0625rem),
--        linear-gradient(90deg, rgb(var(--ordo-line), .5) .0625rem, transparent .0625rem);
--}
--
--@media only screen and (max-width: 40rem) {
--    :root { --title-size: 1.05rem; --subtitle-size: 1.05rem; }
--}
--[[/code]]
--[[code type="css"]]
--
--
--@import url('https://fonts.bunny.net/css2?family=Abhaya-Libre:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
--
--:root {
--
--      --tab-accent: var(--ordo-rust);
--      --jumbo-mat: var(--ordo-mist);
--      --map-mat: var(--ordo-loam);
--      --node-color: var(--ordo-frost);
--
--    --ordo-frost: 246, 240, 226;
--    --ordo-mist: 234, 224, 202;
--    --ordo-line: 198, 184, 156;
--    --ordo-slate: 132, 118, 96;
--    --ordo-graphite: 74, 64, 50;
--    --ordo-navy: 46, 38, 28;
--    --ordo-azure: 39, 86, 122;
--    --ordo-sky: 86, 133, 163;
--    --ordo-teal: 52, 120, 108;
--    --ordo-sprout: 158, 176, 78;
--    --ordo-leaf: 122, 143, 56;
--    --ordo-moss: 84, 98, 44;
--    --ordo-wheat: 198, 156, 66;
--    --ordo-amber: 204, 132, 40;
--    --ordo-rust: 162, 74, 34;
--    --ordo-loam: 92, 68, 44;
--    --ordo-bloom: 166, 76, 96;
--    --ordo-hazard: 172, 44, 34;
--    --ordo-void: 26, 22, 16;
--
--
--    --surface: 250, 246, 234;
--    --surface-alt: var(--ordo-mist);
--    --ink: var(--ordo-graphite);
--    --ink-soft: var(--ordo-slate);
--    --on-dark: 250, 246, 234;
--    --shadow-color: var(--ordo-loam);
--
--    --basalt-primary-color: var(--surface);
--    --basalt-secondary-color: var(--ordo-mist);
--    --basalt-tertiary-color: var(--ordo-line);
--    --basalt-main-text-color: var(--ordo-void);
--    --basalt-background-color: var(--ordo-frost);
--    --basalt-sub-text-color: var(--ordo-slate);
--    --basalt-light-text-color: var(--surface);
--    --basalt-UI-dark-palette: var(--ordo-navy);
--    --basalt-overtone: var(--ordo-navy);
--    --basalt-undertone: var(--ordo-rust);
--    --basalt-bright-element-color: var(--ordo-rust);
--    --basalt-alternate-color: var(--ordo-moss);
--    --basalt-focus-color: var(--ordo-rust);
--
--    --link-color: var(--ordo-rust);
--    --link-visited-color: var(--ordo-loam);
--    --link-newpage-color: var(--ordo-hazard);
--    --link-decor: underline;
--    --link-weight: 600;
--
--    --header-background-color: var(--surface);
--    --header-border-color: var(--ordo-loam);
--    --header-border-width: .1875rem;
--    --header-title-color: var(--ordo-navy);
--    --header-subtitle-color: var(--ordo-rust);
--    --header-tagline-color: var(--ordo-slate);
--    --header-title: "ORDOPHARM";
--    --header-subtitle: "LABORATORIES";
--    --header-tagline: "Chemische Werke - Founded 1912";
--    --mobile-title: "ORDOPHARM";
--    --mobile-subtitle: "LAB.";
--
--    --header-logo: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='none' stroke='%232e261c' stroke-width='4'/%3E%3Ccircle cx='32' cy='32' r='22' fill='none' stroke='%232e261c' stroke-width='1.5'/%3E%3Cpath d='M32 15c-9 10-9 26 0 34 9-8 9-24 0-34z' fill='%23a24a22'/%3E%3C/svg%3E");
--
--    --top-bar-link-color: var(--ordo-navy);
--    --top-bar-link-color-hover: var(--surface);
--    --top-bar-link-background-hover: var(--ordo-rust);
--    --top-bar-link-background-hover-alt: var(--ordo-loam);
--    --top-bar-dropdown-background: var(--surface);
--    --top-bar-dropdown-link-color: var(--ordo-navy);
--    --top-bar-dropdown-background-hover: var(--ordo-rust);
--    --search-icon-color: var(--ordo-loam);
--    --side-bar-background-color: var(--surface);
--    --side-bar-link-color: var(--ordo-rust);
--    --side-bar-heading-background-color: var(--ordo-loam);
--    --login-status-background-color: var(--ordo-loam);
--
--    --general-border-color: var(--ordo-line);
--    --title-border-color: var(--ordo-rust);
--    --hr-color: var(--ordo-line);
--    --blockquote-background-color: var(--ordo-mist);
--    --code-background-color: var(--ordo-mist);
--    --tab-selected-background-color: var(--ordo-loam);
--    --tab-focus-text-color: var(--surface);
--    --image-caption-background-color: var(--ordo-mist);
--    --bottom-area-background-color: var(--ordo-mist);
--    --bottom-area-text-color: var(--ordo-graphite);
--    --footer-link-color: var(--ordo-loam);
--    --scrollbar-track-color: var(--ordo-mist);
--    --scrollbar-thumb-color: var(--ordo-loam);
--    --selection-background-color: var(--ordo-rust);
--    --selection-text-color: var(--surface);
--    --button-border-color: var(--ordo-loam);
--    --button-text-color: var(--ordo-navy);
--    --button-background-color: var(--surface);
--    --button-hover-background-color: var(--ordo-loam);
--    --button-hover-border-color: var(--ordo-loam);
--    --button-hover-text-color: var(--surface);
--    --rate-module-background-color: var(--ordo-mist);
--
--
--
--    --header-font-primary: 'Bitter';
--    --UI-font-primary: 'Bitter';
--    --body-font-primary: 'Bitter';
--    --brand-weight: 700;
--    --division-weight: 400;
--    --rule-weight: .1875rem;
--    --corner: 0rem;
--    --custom-color: var(--ordo-loam);
--    --custom-header: "Ordopharm Laboratories - Interoffice Memorandum";
--    --custom-logo: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='none' stroke='%235c442c' stroke-width='4'/%3E%3Cpath d='M32 15c-9 10-9 26 0 34 9-8 9-24 0-34z' fill='%235c442c'/%3E%3C/svg%3E");
--    --stamp-text: "COMPANY PRIVATE";
--    --backdrop: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='%235c442c' fill-opacity='0.045'%3E%3Ccircle cx='12' cy='18' r='1.4'/%3E%3Ccircle cx='58' cy='42' r='1.1'/%3E%3Ccircle cx='94' cy='14' r='1.6'/%3E%3Ccircle cx='30' cy='78' r='1.2'/%3E%3Ccircle cx='76' cy='96' r='1.5'/%3E%3Ccircle cx='108' cy='68' r='1.1'/%3E%3C/g%3E%3C/svg%3E");
--    --backdrop-size: 120px 120px;
--    --watermark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='none' stroke='%23ffffff' stroke-width='4'/%3E%3Cpath d='M32 15c-9 10-9 26 0 34 9-8 9-24 0-34z' fill='%23ffffff'/%3E%3C/svg%3E");
--}
--
--
--#page-title, .meta-title {
--    font-family: var(--header-font);
--    font-weight: 700;
--    font-size: 2.1em;
--    letter-spacing: -.005em;
--}
--
--#page-content :is(h1, h2, h3, h4, h5, h6) { letter-spacing: 0; }
--
--.headline {
--    font-weight: 400;
--    letter-spacing: -.01em;
--    font-size: clamp(1.6rem, 3.6vw, 2.5rem);
--}
--
--.eyebrow { letter-spacing: .28em; }
--
--#top-bar div[class*='top-bar'] > ul > li > a {
--    text-transform: uppercase;
--    font-size: .7rem;
--    letter-spacing: .12em;
--    font-weight: 600;
--}
--
--#top-bar div[class*='top-bar'] > ul > li > a:is(:hover, :focus),
--#top-bar div[class*='top-bar'] > ul > li:is(:hover, :focus-within) > a {
--    background-color: rgb(var(--ordo-rust));
--    color: rgb(var(--surface));
--    box-shadow: none;
--}
--
--#page-content div.pane {
--    background-color: rgb(var(--surface));
--    border: solid .0625rem rgb(var(--ordo-line));
--    border-top: solid var(--rule-weight) rgb(var(--active-color));
--}
--
--#page-content div.pane:is(:hover, :focus-within) {
--    transform: none;
--    box-shadow: .25rem .25rem 0 rgb(var(--ordo-line));
--}
--
--.hero, .band { box-shadow: inset 0 0 0 .1875rem rgb(var(--surface), .12); }
--
--.pullquote { font-style: italic; font-weight: 400; }
--
--.ticker { font-family: var(--mono-font); letter-spacing: .06em; }
--
--div.memo, div.custom_memo, div.compliance_memo, div.legal_memo {
--    background-color: rgb(var(--surface));
--    box-shadow: .3rem .3rem 0 rgb(var(--ordo-line), .7);
--}
--
--@media only screen and (max-width: 40rem) {
--    :root { --title-size: 1.15rem; --subtitle-size: 1.15rem; }
--}
--[[/code]]
--[[/collapsible]]
++
  [[/iftags]]
  
  [[div_]]

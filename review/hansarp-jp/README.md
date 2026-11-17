@@ -182,6 +182,12 @@ Class M treatment: the 25 heuristic blocks are not listed one by one; they fall 
 | CSS body and comment mass | CSS-BODY ×3 and the CSS portions of mixed blocks | the delivered CSS body | Stack and rule carry-over; no behaviour change beyond sections 1, 4, 5 |
 | Residue: heading translation | B16 | candidate L75 (`+ 例`) | P10 translation of the `+ Examples` heading |
 
+### Post-package repairs (REFRESH3-C)
+
+The items above describe this package as built. The repairs recorded below postdate the package; `candidate.txt` has been recopied from the current canonical `pages/<fullname>.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**FIX-SNIPPET — production-predecessor reference audit (landing 358955e).** `FIX-SNIPPET.md` records the self-reference at candidate L72 as DRIFT ground D1 (own code addresses under `theme%3Ahansarp-jp`). Commit 358955e inserted `-jp` after the target, `theme:hansarp` → `theme:hansarp-jp`. The BHL exhibit at L71 is COHERENT ground C1 and was not touched. T1 before/after unchanged (2/0/5).
+
 ## Change set outside the two diffed files
 
 The diff covers two files; this theme's record is larger than any other in the batch. `pages-existing/existing:theme-hansarp.txt` is the production page, the candidate's parent (Per-theme record). `pages/phase17-diff-hansarp-jp.txt` is the migration delivery that brought the production page to the rev 14 basis. `pages/theme-decoration-sample-hansarp-jp.txt` is the decoration sample the render checks ran against, and `pages/theme-decoration-sample-hansarp.txt` is its production-side counterpart. The base include `:scp-jp:theme:black-highlighter-theme` is another candidate in the population with its own package; this theme's record names it as a dependency, not a change.

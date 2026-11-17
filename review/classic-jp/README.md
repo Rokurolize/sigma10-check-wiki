@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:classic-jp — origin EN, population #7 [GOSIGN2-LEDGER (b) row 7]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now bfceb60c3da7bdcb697b7d4c0b681a673821e278163c660eff57801177e29c77); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 0798ff7ac8ddc4aa977c0a31a80d1b7a93bd31d5b4bfac4a6b99c331fefadcf6); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 2 errors / 0 warns / 2 infos (pseudo-ref×2); standing classes dispositioned in register c1 [T1-ROWS row 7; GOSIGN2-LEDGER (b) row 7]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — 768px sidebar×preview-notice overlap hiding notice text, 768px overflow 884px, sample credit-modal; 3 runs to complete (network). [RENDER-ROWS-1 (RENDER-A row 7)]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 8, source LOCALIZE-A]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 8]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 7]
-- Computed against: canonical commit 358955eb4013dac2399c414ba8ec2a6e416a3c11; candidate file pages/theme:classic-jp.txt sha256:bfceb60c3da7bdcb697b7d4c0b681a673821e278163c660eff57801177e29c77; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 1c96ee4f6dbe58243d8c4ba0136a4a4dde806972; candidate file pages/theme:classic-jp.txt sha256:0798ff7ac8ddc4aa977c0a31a80d1b7a93bd31d5b4bfac4a6b99c331fefadcf6; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -173,6 +173,14 @@ Classic is the only theme in this batch with two reference revisions, and the re
 | B16 | L57–61 → L112 | A prose passage whose counterpart sits after the inserted info exhibit (section 8): position shift from the conversion, text translated |
 | B27 | L221–222 → L176–177 | The CSS header comment: the EN fork line → the production editor line (section 10; the R4 evidence) |
 | B40 | L331–334 → L443–465 | A drift region inside the adopted CSS body (Class summary): the production stylesheet's expanded rules against the mirror's shorter form |
+
+### Post-package repairs (REFRESH3-C)
+
+The items above describe this package as built. The repairs recorded below postdate the package; `candidate.txt` has been recopied from the current canonical `pages/<fullname>.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**FIX-SNIPPET — production-predecessor reference audit (landing 358955e).** `FIX-SNIPPET.md` records this theme's two usage exhibits as DRIFT ground D2 (name-neutral static CSS payload; the file's own page-level assets are under the candidate name). Commit 358955e inserted `-jp` after the target on both lines (`:scp-jp:theme:classic` → `:scp-jp:theme:classic-jp`); after the sequelae the lines stand at current candidate L63 and L69 (the `engtitle=a` variant is the second).
+
+**Sequela — head-zone bare Rate removal (landing 1c96ee4).** Commit 1c96ee4 (pages: head-zone bare Rates removed in five themes) deleted the two lines `**評価モジュール:**` and `[[module Rate]]` from the head block, leaving the preview credit module as the single rate-bearing form (AGENTS.md §5 Rate rule). This is 2 deletions, nothing else; it is why the candidate is 2 lines shorter than the package's as-built copy.
 
 ## Change set outside the two diffed files
 

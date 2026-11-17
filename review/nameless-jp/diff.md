@@ -9,10 +9,10 @@ with `python3 review/build_review.py`; verify with
 |---|---|
 | original.txt | 725 |
 | candidate.txt | 742 |
-| Added | +179 |
-| Review-stage comments | 0 of the +179 added lines |
-| Removed | -167 |
-| Hunks | 19 |
+| Added | +180 |
+| Review-stage comments | 0 of the +180 added lines |
+| Removed | -168 |
+| Hunks | 20 |
 
 ```diff
 --- original.txt
@@ -472,6 +472,15 @@ with `python3 review/build_review.py`; verify with
  #page-content .page-rate-widget-box {
      font-size: .8rem;
  }
+@@ -553,7 +555,7 @@
+     border-bottom: solid 1px #dbac53;
+ }
+ 
+-#page-content .rate-box-with-credit-button .creditButton p a {
++#page-content .rate-box-with-credit-button .creditButton > a {
+     border-left-color: transparent;
+ }
+ #page-content .rate-box-with-credit-button .creditButton a {
 @@ -564,7 +566,7 @@
      color: white !important;
  }

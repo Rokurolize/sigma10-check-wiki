@@ -175,6 +175,12 @@ For class M the residue set is resolved in one table, not per-block slots.
 | B14 (no signature) | Original L62–63 → candidate L89: a blank-line seam between the usage exhibits | Formatting seam where the candidate's head furniture (credit block, longer frame) re-flows the page (section 9's class, at body level) |
 | B17 (no signature) | Original L101–102 → candidate L127–128: the exhibit heading `+ 例` against the original's heading line | A one-line heading translation the differ left unlabeled; counted in section 6 |
 
+### Post-package repairs (REFRESH3-C)
+
+The items above describe this package as built. The repairs recorded below postdate the package; `candidate.txt` has been recopied from the current canonical `pages/<fullname>.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**FIX-SNIPPET — production-predecessor reference audit (landing 358955e).** `FIX-SNIPPET.md` records the self-reference at candidate L87 as DRIFT ground D1 (own code delivered from `theme%3Aextra-black-highlighter-theme-jp/1`). Commit 358955e inserted `-jp` after the target, `theme:extra-black-highlighter-theme` → `theme:extra-black-highlighter-theme-jp`. The adjacent BHL exhibit (L86) is COHERENT ground C2 and was not touched. Before/after T1 counts are unchanged (2/0/1).
+
 ## Change set outside the two diffed files
 
 The diff covers two files; the port's record is larger. `pages/phase17-diff-extra-black-highlighter-theme-jp.txt` is the migration deliverable itself (the diff to apply to the production page), and `pages-existing/existing:theme-extra-black-highlighter-theme.txt` is the production copy the adoption was measured against (similarity 0.9557, section 0). `pages/theme-decoration-sample-extra-black-highlighter-theme-jp.txt` is the decoration sample the render checks ran against (its items are section 11(2)). The follow-up diff artifact for the upstream drift since rev 21 (`diff-extra-black-highlighter-theme-from21.txt`) sits in the campaign record, outside this repo. There are no companion fragments for this theme.

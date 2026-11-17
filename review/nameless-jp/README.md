@@ -165,13 +165,19 @@ Adjudication for this README (every specific block was read against the bytes; t
 
 ## Per-theme record
 
-### Item 1 — the inherited `.creditButton p a` selector (flagged)
+### Item 1 — the inherited `.creditButton p a` selector (flagged) Repaired after this package was built (FIX-CREDITBTN item 1, commit 1db8300): the selector now reads `.creditButton > a`; see the post-package repairs item below.
 
 Exhibit /1 carries the theme's own credit-rule group, including `#page-content .rate-box-with-credit-button .creditButton p a` (original L556 → candidate L558), byte-identical on both sides. The campaign's T7 record (SUPPLEMENT-TYPES T7; KB-11) states the JP credit module emits the anchor as a direct child of `.creditButton`, without the `<p>` wrapper this selector requires, and sibling ports corrected exactly this shape (theme:sodium-jp in place, theme:jiha-jp by restatement). Here the rule stands uncorrected, so on the JP DOM it cannot match. The same flag is recorded for theme:mr-reprisal-jp and theme:oneiroi-west-jp in this batch (in oneiroi's case in both of its CSS copies); three occurrences in one batch of ten suggests the correction was applied only where a wave happened to touch the file, and that the inherited copies form a population a single sweep could settle. This package flags the selector with its evidence and does not edit the candidate; the theme's T4 row does not charge it.
 
 ### Item 2 — the holder field's provenance (note)
 
 The candidate's credit block names Re_spectators as 著作権者 (candidate L13). The frozen original names no author anywhere: its credit trio carried placeholder bodies (页面信息, original L12–14), its exhibits carry no banner, and no byline appears in its prose (the only person it names is Dr Hormress, credited with the base work). The field's value therefore rests on evidence outside this package — the live page's authorship metadata or the wave's own record — and this package can neither confirm nor contradict it from the bytes. Recorded so a reviewer does not mistake the field for a value checked against the original; the based-on credit that the original does carry (Dr Hormress) is preserved in prose and in the kept base import, so no dropped-creator flag of the sibling standing arises.
+
+### Post-package repairs (REFRESH3-C)
+
+The items above describe this package as built. The repairs recorded below postdate the package; `candidate.txt` has been recopied from the current canonical `pages/<fullname>.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**FIX-CREDITBTN item 1 — KB-11 selector correction (landing 1db8300).** Commit 1db8300 changed candidate L558 from `#page-content .rate-box-with-credit-button .creditButton p a {` to `#page-content .rate-box-with-credit-button .creditButton > a {`, declarations untouched. The adjacent `.creditButton a`/`a:hover` descendant rules (L561, L564) are the original's mixed form and were left as inherited; the flagged rule takes KB-11's canonical `> a` form. T1 before/after identical (10/0/1).
 
 ## Change set outside the two diffed files
 

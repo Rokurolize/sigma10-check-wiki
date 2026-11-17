@@ -125,7 +125,7 @@ with `python3 review/build_review.py`; verify with
 +
 +> //訳注: 原語版はここに CN のフェードイン用コンポーネントの include 例を掲載しています。SCP-JP には無いため省略しています。//
 +> [[include :scp-jp:theme:black-highlighter-theme]]
-+> [[include :scp-jp:theme:jakstyle]]
++> [[include :scp-jp:theme:jakstyle-jp]]
 +> [[include :scp-jp:theme:gsk-jp]]
 +
 +//訳注: 原語版はここに CN のフェードイン用コンポーネント（CN 側のフェードイン用コンポーネント）の include 例を掲載しています。SCP-JP には同コンポーネントが無いため省略しています。// 原語版では speed の値で表示時間を調整できます。
@@ -301,7 +301,7 @@ with `python3 review/build_review.py`; verify with
 +[[collapsible show="+ ページソース" hide="- 隠す"]]
 +//訳注: 原語版はここに CN のフェードイン用コンポーネント（CN 側のフェードイン用コンポーネント）の include 例を掲載しています。SCP-JP には同コンポーネントが無いため省略しています。//
 +@@[[include :scp-jp:theme:black-highlighter-theme]]@@
-+@@[[include :scp-jp:theme:jakstyle]]@@
++@@[[include :scp-jp:theme:jakstyle-jp]]@@
 +[[/collapsible]]
 +
 ++ ソースコード
@@ -311,7 +311,7 @@ with `python3 review/build_review.py`; verify with
 +/*
 +    GSK项目主题版式 / GSK Project Theme
 +    Ported for SCP-JP (theme:gsk rev 7 on scp-wiki-cn).
-+    基盤（CN theme:jakstyle、code file 1・2）は theme:jakstyle-jp の code file を @import で読み込みます
++    基盤（CN theme:jakstyle）は theme:jakstyle-jp の code file 1 のみを @import で読み込みます
 +    （このファイルには GSK 固有のカスタマイズのみを収録しています）。BHL は scp-jp.github.io の配信に置換。
 +*/
 +

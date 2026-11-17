@@ -163,17 +163,25 @@ Adjudication for this README (every block was read against the bytes): the DELIV
 
 ## Per-theme record
 
-### Item 1 — the holder field and Feitag (flagged)
+### Item 1 — the holder field and Feitag (flagged) Adjudicated after this package was built (FIX-CREDITBTN item 2, commit 1db8300): Feitag stands in both banners and the prose; attribution stands, no edit. See the post-package repairs item below.
 
 The original credits Feitag in two places: its about prose ("由 [[*user Mercuresphere]] 基于 [[*user Feitag]] 的 [[[oneiroi-food-guide-ambrose-dreams-teashop| ]]] 制作", original L26 — made by Mercuresphere, based on Feitag's page) and its exhibit banner ("Based on "Oneiroi Food Guide: Ambrose Dreams Teashop" by Feitag", original L144). The candidate's credit block names Mercuresphere alone in the 著作権者 field (candidate L304). Feitag's credit survives in the candidate's translated prose (candidate L314, with the link to the CN page) and in the carried banner (both copies). The distinction from the sibling flags in this campaign is real — Feitag authored the underlying work this theme is based on, not this theme, and the prose credit is a reader-visible place, not only a comment — but the shape is the family the U-1 and U-2 batches repaired (a contributor the original names in its credit furniture, absent from the TASL field). This package flags the gap with both sides' text and does not edit the candidate; the ledger's determination for this theme is PASS and its T4 row charges only the P5 image item.
 
-### Item 2 — the inherited `.creditButton p a` selector (flagged)
+### Item 2 — the inherited `.creditButton p a` selector (flagged) Repaired after this package was built (FIX-CREDITBTN item 1, commit 1db8300): both copies now read `.creditButton > a`; see the post-package repairs item below.
 
 The theme's own credit-rule group is carried in both candidate copies (module, candidate L138; exhibit, candidate L555), including `#page-content .creditButton p a`, byte-identical to the original's exhibit (original L270). The campaign's T7 record (SUPPLEMENT-TYPES T7; KB-11) states the JP credit module emits the anchor as a direct child of `.creditButton`, without the `<p>` wrapper this selector requires, and sibling ports corrected exactly this shape (theme:sodium-jp in place, theme:jiha-jp by restatement). Here the rule stands uncorrected in both copies, so on the JP DOM it cannot match. The same flag is recorded for theme:mr-reprisal-jp in this batch; the pair suggests the in-place correction was applied only where a wave happened to touch the file. This package flags the selector with its evidence and does not edit the candidate; the theme's T4 row does not charge it.
 
 ### Item 3 — the two-copy delivery state (note)
 
 Section 3 records the fact; this item records the risk a reviewer should weigh. The candidate carries its CSS twice in one file, and the copies are not byte-identical: the module copy alone loads the JP fonts (candidate L16–17), so the framed delivery (the exhibit copy, the form a posting user actually applies) depends on the module copy's loads arriving on the same page. They do, in the include path, because including the theme page brings its module with it. But any future edit made to one copy and not the other will silently split the theme's appearance between the theme page and the pages that apply it, and the diff record will not show it, because this package's diff compares the original against the candidate as wholes. The original's single-copy form did not have this failure mode. Recorded as a note, not a defect: the framed delivery the original used survives in posting form, and the module copy is the draft composition's rendering device.
+
+### Post-package repairs (REFRESH3-C)
+
+The items above describe this package as built. The repairs recorded below postdate the package; `candidate.txt` has been recopied from the current canonical `pages/<fullname>.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**FIX-CREDITBTN item 1 — KB-11 selector correction (landing 1db8300).** Commit 1db8300 retargeted both copies of the inherited selector: the module copy (candidate L138) and the exhibit copy (L555), `#page-content .creditButton p a {` → `#page-content .creditButton > a {`, declarations byte-untouched. T1 before/after identical (6/2/1).
+
+**FIX-CREDITBTN item 2 — base-work contributor adjudication (no edits).** `FIX-CREDITBTN.md` item 2 adjudicates Feitag as STANDING. The loci are the banner in both CSS copies (candidate L10–11 and L429–430: `Edited by Mercuresphere` / `Based on "Oneiroi Food Guide: Ambrose Dreams Teashop" by Feitag`) and the translated prose (candidate L313, `[[*user Mercuresphere]] が [[*user Feitag]] による『夢神の食事ガイド…』…をもとに制作したものです`), against the 著作権者 field (L305) naming Mercuresphere. Feitag authored the base work, not this theme; attribution stands, no edit.
 
 ## Change set outside the two diffed files
 

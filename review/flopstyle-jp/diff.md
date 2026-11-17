@@ -734,7 +734,7 @@ adjudicated explanation.
 +[[div class="templateInfo"]]
 ++ 使い方
 +----
-+このテーマを使用するには、以下のコードをあなたの記事の一番上にコピーしてください[[footnote]]訳注: 原文ではenにアップロードされたテーマを参照しており、コードは@@[[include :scp-jp:theme:flopstyle]]@@になる[[/footnote]]:
++このテーマを使用するには、以下のコードをあなたの記事の一番上にコピーしてください[[footnote]]訳注: 原文ではenにアップロードされたテーマを参照しており、コードは@@[[include :scp-jp:theme:flopstyle-jp]]@@になる[[/footnote]]:
  
 -[[div class="templateInfo"]]
 -+++* Dark Mode Counterpart

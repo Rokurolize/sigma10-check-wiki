@@ -326,7 +326,7 @@ adjudicated explanation.
 -@@|dark=--]@@ <- This is an optional argument if you would like to use the dark mode version of the theme. If you omit this, it will default to light mode.
 -@@|years=XX@@ <- This sets the minutes to midnight in the subheader and the clock. For all articles that subscribe to the REDTAPE timeline, midnight is 2043.
 +@@[[include :scp-jp:theme:black-highlighter-theme]]@@
-+@@[[include :scp-jp:theme:redtape@@
++@@[[include :scp-jp:theme:redtape-jp@@
 +@@|dark=--]@@ <- これはテーマのダークモードを使用したい場合のオプション引数です。これを省略すると、デフォルトのライトモードになります。
 +@@|years=XX@@ <- これにより、サブヘッダーと時計の真夜中までの時間が設定されます。REDTAPEの年表に従う全ての記事において、真夜中は2043年となります。
  @@]]@@

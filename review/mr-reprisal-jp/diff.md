@@ -9,10 +9,10 @@ with `python3 review/build_review.py`; verify with
 |---|---|
 | original.txt | 626 |
 | candidate.txt | 639 |
-| Added | +53 |
-| Review-stage comments | 0 of the +53 added lines |
-| Removed | -45 |
-| Hunks | 5 |
+| Added | +54 |
+| Review-stage comments | 0 of the +54 added lines |
+| Removed | -46 |
+| Hunks | 6 |
 
 ```diff
 --- original.txt
@@ -157,6 +157,15 @@ with `python3 review/build_review.py`; verify with
  }
  
  /* Login & Search & Top Bar */
+@@ -510,7 +509,7 @@
+     border: none;
+ }
+ 
+-.creditButton p a {
++.creditButton > a {
+     border-left: 1px #000 !important;
+     color: #000 !important;
+ }
 @@ -623,4 +622,18 @@
  
  [[/code]]

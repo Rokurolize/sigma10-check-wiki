@@ -163,13 +163,21 @@ Adjudication for this README (every block was read against the bytes): the nine 
 
 ## Per-theme record
 
-### Item 1 — the inherited `.creditButton p a` selector (flagged)
+### Item 1 — the inherited `.creditButton p a` selector (flagged) Repaired after this package was built (FIX-CREDITBTN item 1, commit 1db8300): the selector now reads `.creditButton > a`; see the post-package repairs item below.
 
 The candidate's credit group was actively restated (section 1: the box selector rewritten, the `.fa-info` rules strengthened, modal rules added), yet `.creditButton p a` survives verbatim inside it (original L475–478 → candidate L487–490). The campaign's T7 record (SUPPLEMENT-TYPES T7; KB-11) states the JP credit module emits the anchor as a direct child of `.creditButton`, without the `<p>` wrapper this selector requires, and sibling ports corrected exactly this shape (theme:sodium-jp in place, theme:jiha-jp by restatement). This is the batch's fourth occurrence (theme:mr-reprisal-jp, theme:oneiroi-west-jp in both of its copies, theme:nameless-jp), and the sharpest: the group around the selector was rewritten while the selector itself was carried. The likely mechanism is visible in the provenance — the restatement is the production page's own CSS, maintained outside the campaign's T7 wave — but on the JP DOM the rule cannot match either way. This package flags the selector with its evidence and does not edit the candidate; the theme's T4 row does not charge it.
 
 ### Item 2 — the kept bare Rate exhibit (note)
 
 Every S2-wave port in this campaign deletes the original's bare `[[module Rate]]` when it installs the preview credit block, on the ground that the JP credit form is the rate-bearing one (P3; a kept Rate would be the KB-09 duplicate). This candidate keeps its Rate exhibit (candidate L13–16) next to the credit block. The ground is the provenance: the furniture is the production page's standing form, the Phase 17 migration carried it unchanged, and neither T1 nor T4 charges it (T4 records 0 display-affecting findings for this theme). Recorded as a note so the contrast with the population is visible to a reviewer rather than smoothed over; if the coordinator's credit-content pass later harmonizes furniture across the population, this theme's Rate is the line that decision will touch.
+
+### Post-package repairs (REFRESH3-C)
+
+The items above describe this package as built. The repairs recorded below postdate the package; `candidate.txt` has been recopied from the current canonical `pages/<fullname>.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**FIX-SNIPPET — production-predecessor reference audit (landing 358955e).** `FIX-SNIPPET.md` records the self-reference at candidate L38 as DRIFT ground D1 (own code addresses under `theme%3Amuch-cool-jp`). Commit 358955e inserted `-jp` after the target, `theme:much-cool` → `theme:much-cool-jp`.
+
+**Sequelae — 1db8300, then 5ddc1a6.** The creditbtn landing 1db8300 (below) reverted this line to the plain form in the same edit that corrected the `.creditButton` selector; commit 5ddc1a6 (pages: much-cool snippet insertion restored) re-applied the `-jp` insertion at L38 and added the file's final newline. The current candidate therefore has the `-jp` exhibit and ends with a trailing LF (the package's as-built copy did not).
 
 ## Change set outside the two diffed files
 

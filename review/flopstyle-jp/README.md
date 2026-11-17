@@ -175,6 +175,12 @@ For class M the residue set is resolved in one table, not per-block slots. All e
 | B6, B12, B18 (no signature) | Small body/exhibit seams (original L593–594, L607–611, L682–687) | Seams of the body adoption: the production body and the rev-510 documentation body diverge at these points; the content is present in production form (section 6) |
 | B5, B15, B16, B22, B48 (heuristic, EXHIBIT-RESTRUCTURE) | The original's documentation body, license exhibits, and closing furniture | Replaced by the production translation's body and the candidate's head frame; adjudicated in section 8, not deletions |
 
+### Post-package repairs (REFRESH3-C)
+
+The items above describe this package as built. The repairs recorded below postdate the package; `candidate.txt` has been recopied from the current canonical `pages/<fullname>.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**FIX-SNIPPET — production-predecessor reference audit (landing 358955e).** `FIX-SNIPPET.md` records this theme's translator footnote at candidate L58 as DRIFT ground D2: the file's operative usage code block at L61 already read `@@[[include theme:flopstyle-jp]]@@`, so the footnote stating the code in plain form contradicted the file's own block. Commit 358955e inserted `-jp` after the target in the footnote, bringing both into agreement. T1 before/after unchanged (2/0/1).
+
 ## Change set outside the two diffed files
 
 The diff covers two files; the theme's record is three files larger. `pages/phase17-diff-flopstyle-jp.txt` is the migration deliverable for the production page and carries the Phase 22 decision (per-theme record). `pages-existing/existing:theme-flopstyle.txt` is the production counterpart the candidate adopts (section 0). `pages/theme-decoration-sample-flopstyle-jp.txt` is the decoration sample the render checks ran against (its findings are the sample half of section 11). The sibling theme flopstyle-dark is a separate row with its own package; nothing in this theme's record depends on it.

@@ -303,7 +303,7 @@ adjudicated explanation.
 -@@[[include :scp-wiki:theme:black-highlighter-theme]]@@
 -@@[[include :scp-wiki:theme:aesthetic-theme]]@@
 +@@[[include :scp-jp:theme:black-highlighter-theme]]@@
-+@@[[include :scp-jp:theme:aesthetic-theme]]@@
++@@[[include :scp-jp:theme:aesthetic-theme-jp]]@@
  [[/div]]
  
 -+ Examples

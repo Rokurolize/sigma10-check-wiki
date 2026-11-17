@@ -36,7 +36,7 @@ with `python3 review/build_review.py`; verify with
 +[[iftags +テーマ]]
 +
 +[[include :scp-jp:credit:start-preview]]
-+**タイトル:** 大韓民国政府 テーマ（国家初像防災院）
++**タイトル:** 大韓民国政府 テーマ（国家超常防災院）
 +**翻訳責任者:** AI
 +**翻訳年:** 2026
 +**原題:** 대한민국 정부 테마 (국가초상방재원 테마)
@@ -46,7 +46,7 @@ with `python3 review/build_review.py`; verify with
 +**元記事リンク:** [*https://scpko.wikidot.com/theme:rok-gov-theme 대한민국 정부 테마]
 +[[include :scp-jp:credit:end-preview]]
 +
-+**大韓民国政府 CSS テーマ**は、韓国語圏の要注意団体[[[https://scpko.wikidot.com/npes-hub|国家初像防災院（NPES）]]]をはじめとする韓国の政府機関向けに作られたテーマです。画像はすべて作者 [[*user thd-glasses]] の制作、書体は 눈누（noonnu）配布のものを使用しています。
++**大韓民国政府 CSS テーマ**は、韓国語圏の要注意団体[[[https://scpko.wikidot.com/npes-hub|国家超常防災院（NPES）]]]をはじめとする韓国の政府機関向けに作られたテーマです。画像はすべて作者 [[*user thd-glasses]] の制作、書体は 눈누（noonnu）配布のものを使用しています。
 +
 +適用するには、作品の冒頭に次の構文を追加してください。
 +

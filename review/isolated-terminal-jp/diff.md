@@ -233,7 +233,7 @@ adjudicated explanation.
 -> @@[[include :scp-wiki:theme:black-highlighter-theme]]@@
 -> @@[[include :scp-wiki:theme:isolated-terminal]]@@
 +> @@[[include :scp-jp:theme:black-highlighter-theme]]@@
-+> @@[[include :scp-jp:theme:isolated-terminal]]@@
++> @@[[include :scp-jp:theme:isolated-terminal-jp]]@@
  
  ~~~~
  
@@ -468,7 +468,7 @@ adjudicated explanation.
 +あるいは、[[[*esoteric-syntax#toc20|Ayu18]]]を利用して以下のようにする方法もあります。
 +[[div class="blockquote" style="font-family: 'profontwindowsregular', monospace;"]]
 +@@[[include :scp-jp:theme:black-highlighter-theme]]@@
-+@@[[include :scp-jp:theme:isolated-terminal]]@@
++@@[[include :scp-jp:theme:isolated-terminal-jp]]@@
 +@@[[include :scp-jp:component:ayu18]]@@
 +@@[[module CSS]]@@
 +:root {

@@ -16,12 +16,12 @@ adjudicated explanation.
 |---|---|
 | original.txt | 966 |
 | candidate.txt | 987 |
-| Added | +121 |
-| Review-stage comments | 0 of the +121 added lines |
-| Removed | -100 |
-| Changed | 221 |
-| Change blocks | 64 |
-| Diff sections (context 3) | 31 |
+| Added | +122 |
+| Review-stage comments | 0 of the +122 added lines |
+| Removed | -101 |
+| Changed | 223 |
+| Change blocks | 65 |
+| Diff sections (context 3) | 32 |
 
 ## Changed lines by auto-class (heuristic)
 
@@ -29,7 +29,7 @@ adjudicated explanation.
 |---|---|---|
 | translation | 32 | 84 |
 | supplement | 3 | 42 |
-| residual | 29 | 95 |
+| residual | 30 | 97 |
 
 ## Change-block index
 
@@ -79,26 +79,27 @@ adjudicated explanation.
 | 42 | 21 | 548–548 | 569–569 | +1/−1 | translation | /* 情報バー↓ */ |
 | 43 | 22 | 560–560 | 581–581 | +1/−1 | translation | /* 情報バーパッチ↓（by Monkatraz） */ |
 | 44 | 23 | 576–576 | 597–597 | +1/−1 | translation | /* クレジットブロック↓ */ |
-| 45 | 24 | 627–627 | 648–648 | +1/−1 | translation | /* 評価モジュール↓ */ |
-| 46 | 25 | 673–673 | 694–694 | +1/−1 | translation | /* ページ要素↓ */ |
-| 47 | 25 | 675–675 | 696–696 | +1/−1 | residual | font-family: "Fira Code", 'Noto Sans Mono', monospace; |
-| 48 | 25 | 679–679 | 700–700 | +1/−1 | residual | font-family: "Fira Code", 'Noto Sans Mono', monospace; |
-| 49 | 25 | 685–685 | 706–706 | +1/−1 | residual | font-family: 'Josefin Sans', 'Noto Sans JP', sans-serif; |
-| 50 | 25 | 690–690 | 711–711 | +1/−1 | residual | font-family: 'Josefin Sans', 'Noto Sans JP', sans-serif; |
-| 51 | 25 | 695–695 | 716–716 | +1/−1 | residual | font-family: 'Josefin Sans', 'Noto Sans JP', sans-serif; |
-| 52 | 25 | 701–701 | 722–722 | +1/−1 | translation | /* リンクトリガー↓ */ |
-| 53 | 26 | 713–713 | 734–734 | +1/−1 | translation | /* サイドバーメディア・折りたたみ・ACS・情報ボタン・Ayersモジュールのパッチ。リンクが上書きされないようにします↓ */ |
-| 54 | 27 | 759–759 | 780–780 | +1/−1 | translation | background-color: #E9E9EB;/* ←テーブルヘッダーの枠線 */ |
-| 55 | 27 | 762–762 | 783–783 | +1/−1 | translation | border: solid 1px #E9E9EB;/* ←テーブルセルの枠線 */ |
-| 56 | 27 | 765–765 | 786–786 | +1/−1 | translation | /* 折りたたみブロック↓ */ |
-| 57 | 28 | 797–797 | 818–818 | +1/−1 | translation | /* 選択要素↓ */ |
-| 58 | 28 | 803–803 | 824–824 | +1/−1 | translation | /* 脚注ブロック↓ */ |
-| 59 | 29 | 831–831 | 852–852 | +1/−1 | translation | /* ページポップアップ↓ */ |
-| 60 | 30 | 856–856 | 877–877 | +1/−1 | translation | /* 編集ボタン↓ */ |
-| 61 | 31 | 868–868 | 889–889 | +1/−1 | translation | /* 編集ロック情報ブロック↓ */ |
-| 62 | 31 | 874–874 | 895–895 | +1/−1 | translation | /* ページソース・評価などの閉じるボタン↓ */ |
-| 63 | 31 | 879–879 | 900–900 | +1/−1 | translation | /* ページ履歴↓ */ |
-| 64 | 31 | 885–885 | 906–906 | +1/−1 | translation | /* Sideboxモバイル最適化↓（courtesy of Woed） */ |
+| 45 | 24 | 589–589 | 610–610 | +1/−1 | residual | #page-content .rate-box-with-credit-button .creditButton > a { |
+| 46 | 25 | 627–627 | 648–648 | +1/−1 | translation | /* 評価モジュール↓ */ |
+| 47 | 26 | 673–673 | 694–694 | +1/−1 | translation | /* ページ要素↓ */ |
+| 48 | 26 | 675–675 | 696–696 | +1/−1 | residual | font-family: "Fira Code", 'Noto Sans Mono', monospace; |
+| 49 | 26 | 679–679 | 700–700 | +1/−1 | residual | font-family: "Fira Code", 'Noto Sans Mono', monospace; |
+| 50 | 26 | 685–685 | 706–706 | +1/−1 | residual | font-family: 'Josefin Sans', 'Noto Sans JP', sans-serif; |
+| 51 | 26 | 690–690 | 711–711 | +1/−1 | residual | font-family: 'Josefin Sans', 'Noto Sans JP', sans-serif; |
+| 52 | 26 | 695–695 | 716–716 | +1/−1 | residual | font-family: 'Josefin Sans', 'Noto Sans JP', sans-serif; |
+| 53 | 26 | 701–701 | 722–722 | +1/−1 | translation | /* リンクトリガー↓ */ |
+| 54 | 27 | 713–713 | 734–734 | +1/−1 | translation | /* サイドバーメディア・折りたたみ・ACS・情報ボタン・Ayersモジュールのパッチ。リンクが上書きされないようにします↓ */ |
+| 55 | 28 | 759–759 | 780–780 | +1/−1 | translation | background-color: #E9E9EB;/* ←テーブルヘッダーの枠線 */ |
+| 56 | 28 | 762–762 | 783–783 | +1/−1 | translation | border: solid 1px #E9E9EB;/* ←テーブルセルの枠線 */ |
+| 57 | 28 | 765–765 | 786–786 | +1/−1 | translation | /* 折りたたみブロック↓ */ |
+| 58 | 29 | 797–797 | 818–818 | +1/−1 | translation | /* 選択要素↓ */ |
+| 59 | 29 | 803–803 | 824–824 | +1/−1 | translation | /* 脚注ブロック↓ */ |
+| 60 | 30 | 831–831 | 852–852 | +1/−1 | translation | /* ページポップアップ↓ */ |
+| 61 | 31 | 856–856 | 877–877 | +1/−1 | translation | /* 編集ボタン↓ */ |
+| 62 | 32 | 868–868 | 889–889 | +1/−1 | translation | /* 編集ロック情報ブロック↓ */ |
+| 63 | 32 | 874–874 | 895–895 | +1/−1 | translation | /* ページソース・評価などの閉じるボタン↓ */ |
+| 64 | 32 | 879–879 | 900–900 | +1/−1 | translation | /* ページ履歴↓ */ |
+| 65 | 32 | 885–885 | 906–906 | +1/−1 | translation | /* Sideboxモバイル最適化↓（courtesy of Woed） */ |
 
 ## Full diff
 
@@ -667,7 +668,24 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 24 — original 624–630 · candidate 645–651 · +1/−1 · translation</summary>
+<summary>Section 24 — original 586–592 · candidate 607–613 · +1/−1 · residual</summary>
+
+```diff
+@@ -586,7 +607,7 @@
+     border-radius: 0;
+     box-shadow: 3px 0px 0px 0px #EF4B4C, -3px 0px 0px 0px #EF4B4C;
+ }
+-#page-content .rate-box-with-credit-button .creditButton p a {
++#page-content .rate-box-with-credit-button .creditButton > a {
+     border-left-color: transparent;
+ }
+ #page-content .rate-box-with-credit-button .page-rate-widget-box .cancel {
+```
+
+</details>
+
+<details>
+<summary>Section 25 — original 624–630 · candidate 645–651 · +1/−1 · translation</summary>
 
 ```diff
 @@ -624,7 +645,7 @@
@@ -684,7 +702,7 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 25 — original 670–704 · candidate 691–725 · +7/−7 · residual, translation</summary>
+<summary>Section 26 — original 670–704 · candidate 691–725 · +7/−7 · residual, translation</summary>
 
 ```diff
 @@ -670,35 +691,35 @@
@@ -735,7 +753,7 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 26 — original 710–716 · candidate 731–737 · +1/−1 · translation</summary>
+<summary>Section 27 — original 710–716 · candidate 731–737 · +1/−1 · translation</summary>
 
 ```diff
 @@ -710,7 +731,7 @@
@@ -752,7 +770,7 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 27 — original 756–768 · candidate 777–789 · +3/−3 · translation</summary>
+<summary>Section 28 — original 756–768 · candidate 777–789 · +3/−3 · translation</summary>
 
 ```diff
 @@ -756,13 +777,13 @@
@@ -777,7 +795,7 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 28 — original 794–806 · candidate 815–827 · +2/−2 · translation</summary>
+<summary>Section 29 — original 794–806 · candidate 815–827 · +2/−2 · translation</summary>
 
 ```diff
 @@ -794,13 +815,13 @@
@@ -801,7 +819,7 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 29 — original 828–834 · candidate 849–855 · +1/−1 · translation</summary>
+<summary>Section 30 — original 828–834 · candidate 849–855 · +1/−1 · translation</summary>
 
 ```diff
 @@ -828,7 +849,7 @@
@@ -818,7 +836,7 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 30 — original 853–859 · candidate 874–880 · +1/−1 · translation</summary>
+<summary>Section 31 — original 853–859 · candidate 874–880 · +1/−1 · translation</summary>
 
 ```diff
 @@ -853,7 +874,7 @@
@@ -835,7 +853,7 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 31 — original 865–888 · candidate 886–909 · +4/−4 · translation</summary>
+<summary>Section 32 — original 865–888 · candidate 886–909 · +4/−4 · translation</summary>
 
 ```diff
 @@ -865,24 +886,24 @@

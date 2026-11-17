@@ -163,17 +163,25 @@ Adjudication for this README (every block was read against the bytes): the two E
 
 ## Per-theme record
 
-### Item 1 — the holder field and Denevola (flagged)
+### Item 1 — the holder field and Denevola (flagged) Adjudicated after this package was built (FIX-CREDITBTN item 2, commit 1db8300): Denevola stands in the banner; attribution stands, no edit. See the post-package repairs item below.
 
 The original credits two people in two places: its prose names c_bonefish as the theme's maker (original L26), and its CSS banner reads "Created by c_bonefish / Base Code by Denevola" (original L66–67). The candidate's credit block names c_bonefish alone in the 著作権者 field (candidate L16), and the license box's `author=` parameter likewise names c_bonefish alone (candidate L626). Denevola's credit survives in the candidate only inside the carried banner comment (candidate L66–67), in the delivered CSS itself. The distinction from the sibling flags in this campaign is real — Denevola is credited with the base code, not with the theme's authorship, and the field does name the author of record — but the shape is the family the U-1 and U-2 batches repaired (a contributor the original names in its credit furniture, absent from the TASL field, surviving in a comment). This package flags the gap with both sides' text and does not edit the candidate; the ledger's determination for this theme is PASS and its T4 row charges nothing.
 
-### Item 2 — the inherited `.creditButton p a` selector (flagged)
+### Item 2 — the inherited `.creditButton p a` selector (flagged) Repaired after this package was built (FIX-CREDITBTN item 1, commit 1db8300): the selector now reads `.creditButton > a`; see the post-package repairs item below.
 
 The theme's own credit-rule group is carried byte-identical (original L499–524 → candidate L498–523), including `.creditButton p a` (original L513 → candidate L512), which sets the credit anchor's `border-left` and `color` declarations. The campaign's T7 record (SUPPLEMENT-TYPES T7; KB-11) states the JP credit module emits the anchor as a direct child of `.creditButton`, without the `<p>` wrapper this selector requires, and sibling ports corrected exactly this shape: theme:sodium-jp in place (`.creditButton p a` → `.creditButton > a`, the R6 form) and theme:jiha-jp by an appended restatement module. In this candidate the rule stands uncorrected, so on the JP DOM it cannot match, and the credit anchor loses those two declarations. The theme's T4 row is PASS and no ledger line charges it; the render row's credit-modal item is the preview-form disposition, a different matter. This package flags the selector with its evidence and does not edit the candidate.
 
 ### Item 3 — the license box's license-absence entries (judgment call, recorded)
 
 The original states no license for its two images anywhere (its only license text is the banner's "CC BY-SA 3.0" for the theme code itself). The appended license box (candidate L625–638) therefore records, for each image, ライセンス: 原語版に記載なし — "not stated in the original version" — with the parenthetical that the original page carries no license statement and the author should be confirmed with before posting. The alternative (copying the theme code's CC BY-SA 3.0 onto the images) would have invented a license the author never stated; the box documents the absence instead, which is the KB-60 form-uncertainty discipline applied to content. A reviewer can re-derive the absence from this package's original.txt: no license statement for back.png or logo.png exists in it.
+
+### Post-package repairs (REFRESH3-C)
+
+The items above describe this package as built. The repairs recorded below postdate the package; `candidate.txt` has been recopied from the current canonical `pages/<fullname>.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**FIX-CREDITBTN item 1 — KB-11 selector correction (landing 1db8300, 2026-11-17).** `FIX-CREDITBTN.md` records that the JP credit component emits the anchor as a direct child of `.creditButton`, so the inherited `.creditButton p a` selector cannot match. Commit 1db8300 changed candidate L512 from `.creditButton p a {` to `.creditButton > a {` (the in-place, declaration-block-untouched form of theme:sodium-jp); no declaration moved. T1 before/after identical (4/1/1).
+
+**FIX-CREDITBTN item 2 — base-work contributor adjudication (no edits).** `FIX-CREDITBTN.md` item 2 adjudicates Denevola as STANDING. The adjudication loci are the candidate's authorship banner (L66–67, `Created by c_bonefish` / `Base Code by Denevola`, verbatim from the original L66–67) and, in the credit apparatus, the 著作権者 field (L16) and license-box `author=` (L626) naming c_bonefish. Denevola is a base-code contributor, not a theme co-author, so naming the theme author alone in the field is correct; the existing record item that calls this a gap described the package as built and is closed by this adjudication, with no candidate edit.
 
 ## Change set outside the two diffed files
 

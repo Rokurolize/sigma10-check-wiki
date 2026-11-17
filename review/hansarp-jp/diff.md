@@ -97,7 +97,7 @@ with `python3 review/build_review.py`; verify with
 -@@[[include :scp-wiki:theme:black-highlighter-theme]]@@
 -@@[[include :scp-wiki:theme:hansarp]]@@
 +@@[[include :scp-jp:theme:black-highlighter-theme]]@@
-+@@[[include :scp-jp:theme:hansarp]]@@
++@@[[include :scp-jp:theme:hansarp-jp]]@@
  [[/div]]
  
 -+ Examples

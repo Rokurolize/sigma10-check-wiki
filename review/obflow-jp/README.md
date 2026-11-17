@@ -163,13 +163,21 @@ Adjudication for this README (every specific block was read against the bytes; t
 
 ## Per-theme record
 
-### Item 1 — the holder field and EstrellaYoshte (flagged)
+### Item 1 — the holder field and EstrellaYoshte (flagged) Adjudicated after this package was built (FIX-CREDITBTN item 2, commit 1db8300): EstrellaYoshte stands in the banner; attribution stands, no edit. See the post-package repairs item below.
 
 The original credits EstrellaYoshte in its exhibit banner ("Based on Penumbra by EstrellaYoshte", original L86); the theme's own about prose credits her theme without naming her (original L25), and the candidate's translated prose does the same (candidate L46). The candidate's credit block names AI_Mayca alone in the 著作権者 field (candidate L40). EstrellaYoshte's credit survives in the carried banner (candidate L107 zone). The distinction from the sibling flags in this campaign is real — she authored the base theme this one modifies, not this theme — but the shape is the family the U-1 and U-2 batches repaired (a contributor the original names in its credit furniture, absent from the TASL field), and the same item is recorded for theme:mr-reprisal-jp (Denevola) and theme:oneiroi-west-jp (Feitag) in this batch. This package flags the gap with both sides' text and does not edit the candidate; the ledger's determination for this theme is PASS and its T4 row charges only the P4 delivery item.
 
-### Item 2 — the inherited `.creditButton p a` selector (flagged)
+### Item 2 — the inherited `.creditButton p a` selector (flagged) Repaired after this package was built (FIX-CREDITBTN item 1, commit 1db8300): the selector now reads `.creditButton > a`; see the post-package repairs item below.
 
 The exhibit carries the theme's own credit-rule group, including `#page-content .rate-box-with-credit-button .creditButton p a` (original L589 → candidate L610), byte-identical on both sides. The campaign's T7 record (SUPPLEMENT-TYPES T7; KB-11) states the JP credit module emits the anchor as a direct child of `.creditButton`, without the `<p>` wrapper this selector requires, and sibling ports corrected exactly this shape (theme:sodium-jp in place, theme:jiha-jp by restatement). Here the rule stands uncorrected, so on the JP DOM it cannot match. The same flag is recorded for theme:mr-reprisal-jp, theme:oneiroi-west-jp, theme:nameless-jp, and theme:much-cool-jp in this batch — five of the batch's ten themes, every one that carries its own credit CSS — which suggests the correction was applied only where a wave happened to touch the file, and that the inherited copies form a population a single sweep could settle. The group's `.creditButtonStandalone p a` pair (original L607–617 → candidate L628–638) is a different component's shape and is not charged here. This package flags the rate-box selector with its evidence and does not edit the candidate; the theme's T4 row does not charge it.
+
+### Post-package repairs (REFRESH3-C)
+
+The items above describe this package as built. The repairs recorded below postdate the package; `candidate.txt` has been recopied from the current canonical `pages/<fullname>.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**FIX-CREDITBTN item 1 — KB-11 selector correction (landing 1db8300).** Commit 1db8300 changed candidate L610 from `#page-content .rate-box-with-credit-button .creditButton p a {` to `#page-content .rate-box-with-credit-button .creditButton > a {`, declarations untouched. The `.creditButtonStandalone p a` rules (L628, L635) are a different component and were deliberately left; KB-11's ground covers only the rate-box `.creditButton`. T1 before/after identical (6/0/1).
+
+**FIX-CREDITBTN item 2 — base-work contributor adjudication (no edits).** `FIX-CREDITBTN.md` item 2 adjudicates EstrellaYoshte as STANDING. The locus is the authorship banner heading the code exhibit (candidate L103–110, `By AI_Mayca` / `Based on Penumbra by EstrellaYoshte` at L106–107, verbatim from the original L85–86), with the 著作権者 field (L40) naming AI_Mayca. EstrellaYoshte authored the base theme, not this one; attribution stands, no edit.
 
 ## Change set outside the two diffed files
 

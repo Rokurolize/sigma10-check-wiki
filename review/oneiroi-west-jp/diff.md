@@ -16,11 +16,11 @@ adjudicated explanation.
 |---|---|
 | original.txt | 429 |
 | candidate.txt | 713 |
-| Added | +441 |
-| Review-stage comments | 0 of the +441 added lines |
-| Removed | -157 |
-| Changed | 598 |
-| Change blocks | 22 |
+| Added | +442 |
+| Review-stage comments | 0 of the +442 added lines |
+| Removed | -158 |
+| Changed | 600 |
+| Change blocks | 23 |
 | Diff sections (context 3) | 10 |
 
 ## Changed lines by auto-class (heuristic)
@@ -30,7 +30,7 @@ adjudicated explanation.
 | mechanical | 8 | 16 |
 | translation | 4 | 8 |
 | supplement | 3 | 426 |
-| residual | 7 | 148 |
+| residual | 8 | 150 |
 
 ## Change-block index
 
@@ -48,16 +48,17 @@ adjudicated explanation.
 | 10 | 3 | 186–186 | 54–54 | +1/−1 | mechanical | (blank lines only) |
 | 11 | 3 | 188–188 | 56–56 | +1/−1 | translation | content: '万 般 皆 幻 夢'; |
 | 12 | 4 | 202–202 | 70–70 | +1/−1 | residual | background: url(https://kaktuskontainer.wdfiles.com/local--files/stormbreath-… |
-| 13 | 5 | 273–273 | 141–141 | +1/−1 | mechanical | (blank lines only) |
-| 14 | 5 | 278–278 | 146–146 | +1/−1 | mechanical | (blank lines only) |
-| 15 | 5 | 282–282 | 150–150 | +1/−1 | mechanical | (blank lines only) |
-| 16 | 6 | 296–296 | 164–164 | +1/−1 | mechanical | (blank lines only) |
-| 17 | 6 | 301–301 | 169–169 | +1/−1 | mechanical | (blank lines only) |
-| 18 | 7 | 352–352 | 220–220 | +1/−1 | residual | background-image: url(https://scpsandboxcn.wikidot.com/local--files/mercuresp… |
-| 19 | 8 | 395–395 | 263–263 | +1/−1 | residual | content: 'このページには編集用の15分間の排他的ロックが設定されています。\A他のユーザーは、このロックが有効な間はこのページを編集できません。… |
-| 20 | 9 | 407–407 | 275–275 | +1/−1 | translation | content: ' 秒後に解除されます。'; |
-| 21 | 9 | 412–412 | 280–280 | +1/−1 | translation | content: 'ページを保存中……\Aこの表示が長時間続く場合は、編集内容をクリップボードにコピーしてから、ページを再読み込みしてやり直してください。… |
-| 22 | 10 | — | 296–711 | +416/−0 | supplement | [[/module]] |
+| 13 | 5 | 270–270 | 138–138 | +1/−1 | residual | #page-content .creditButton > a { |
+| 14 | 5 | 273–273 | 141–141 | +1/−1 | mechanical | (blank lines only) |
+| 15 | 5 | 278–278 | 146–146 | +1/−1 | mechanical | (blank lines only) |
+| 16 | 5 | 282–282 | 150–150 | +1/−1 | mechanical | (blank lines only) |
+| 17 | 6 | 296–296 | 164–164 | +1/−1 | mechanical | (blank lines only) |
+| 18 | 6 | 301–301 | 169–169 | +1/−1 | mechanical | (blank lines only) |
+| 19 | 7 | 352–352 | 220–220 | +1/−1 | residual | background-image: url(https://scpsandboxcn.wikidot.com/local--files/mercuresp… |
+| 20 | 8 | 395–395 | 263–263 | +1/−1 | residual | content: 'このページには編集用の15分間の排他的ロックが設定されています。\A他のユーザーは、このロックが有効な間はこのページを編集できません。… |
+| 21 | 9 | 407–407 | 275–275 | +1/−1 | translation | content: ' 秒後に解除されます。'; |
+| 22 | 9 | 412–412 | 280–280 | +1/−1 | translation | content: 'ページを保存中……\Aこの表示が長時間続く場合は、編集内容をクリップボードにコピーしてから、ページを再読み込みしてやり直してください。… |
+| 23 | 10 | — | 296–711 | +416/−0 | supplement | [[/module]] |
 
 ## Full diff
 
@@ -302,6 +303,38 @@ adjudicated explanation.
  
  /* neon */
  .neon {
+```
+
+</details>
+
+<details>
+<summary>Section 5 — original 267–285 · candidate 135–153 · +4/−4 · mechanical, residual</summary>
+
+```diff
+@@ -267,19 +135,19 @@
+     border-radius: 5px;
+     box-shadow: 1px 1px 3px rgba(0,0,0,.5);
+ }
+-#page-content .creditButton p a {
++#page-content .creditButton > a {
+     border-left-color: #dccdea;
+ }
+-
++ 
+ .close-credits,
+ .credit-back {
+     filter: hue-rotate(294deg);
+ }
+-
++ 
+ #page-content .modalbox {
+     box-shadow: 0 2px 6px rgba(28, 0, 31, 0.5);
+ }
+-
++ 
+ 
+ /* title */
+ h1, #page-title {
 ```
 
 </details>
@@ -630,7 +663,7 @@ adjudicated explanation.
 +    border-radius: 5px;
 +    box-shadow: 1px 1px 3px rgba(0,0,0,.5);
 +}
-+#page-content .creditButton p a {
++#page-content .creditButton > a {
 +    border-left-color: #dccdea;
 +}
 + 
@@ -794,30 +827,7 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Purely mechanical sections (5, 6) — whitespace, host, and branch-token changes only (heuristic)</summary>
-
-```diff
-@@ -270,16 +138,16 @@
- #page-content .creditButton p a {
-     border-left-color: #dccdea;
- }
--
-+ 
- .close-credits,
- .credit-back {
-     filter: hue-rotate(294deg);
- }
--
-+ 
- #page-content .modalbox {
-     box-shadow: 0 2px 6px rgba(28, 0, 31, 0.5);
- }
--
-+ 
- 
- /* title */
- h1, #page-title {
-```
+<summary>Purely mechanical sections (6) — whitespace, host, and branch-token changes only (heuristic)</summary>
 
 ```diff
 @@ -293,12 +161,12 @@

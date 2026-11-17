@@ -157,6 +157,14 @@ Adjudications applied for this README: the CSS-BODY mass is the code exhibit's r
 - **Verify:** Re-run the checker on `pages/theme:jakstyle-jp.txt` and `python3 review/build_review.py --check` in this repo.
 - **Disposition:** PASS (GOSIGN2-LEDGER (b) row 18; go-sign, COMPLETION-REPORT §10).
 
+## Per-theme record
+
+### Post-package repairs (REFRESH3-C)
+
+The items above describe this package as built. The repairs recorded below postdate the package; `candidate.txt` has been recopied from the current canonical `pages/<fullname>.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**FIX-SNIPPET — production-predecessor reference audit (landing 358955e).** `FIX-SNIPPET.md` records the self-reference at candidate L55 as DRIFT ground D1 (own code `@import`s under `theme%3Ajakstyle-jp`, the same delivery gsk imports as its base). Commit 358955e inserted `-jp` after the target, `theme:jakstyle` → `theme:jakstyle-jp`. The BHL exhibit at L54 is COHERENT ground C1 and was not touched. T1 before/after unchanged (1/0/1).
+
 ## Change set outside the two diffed files
 
 The diff covers two files; this theme's record is three. `pages/phase17-diff-jakstyle-jp.txt` is the Phase 17 migration record for this theme (the revision recording of commit 8dcac74). `pages/theme-decoration-sample-jakstyle-jp.txt` is the decoration sample the render checks ran against (its credit-modal and overflow items are in section 11(3)). This candidate is also a change in another theme's record: theme:internal-affairs-jp's delivery imports this theme's production delivery (that package's section 3), a dependency created by this page's production standing, not by an edit to this file. The gosign2 credit commits (b816e10, 5c32672) touched the rows 1–44 and rows 1–22 files respectively in single waves; the other files are those themes' own records.

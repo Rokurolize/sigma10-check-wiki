@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:path-of-jinin-jp — origin KO, population #281 [GOSIGN2-LEDGER (b) row 281]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 7f1b0d747f711bc7952ab621d72b642f07cc101c66742f7df6acf37a7dd13b75); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now d39bac770b807e80428a7b11decc2a1306c7632c72654e46ed936fa2c7f17058); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 6 errors / 1 warn / 1 info (pseudo-ref×6); standing classes dispositioned in register c1 [T1-ROWS row 251; GOSIGN2-LEDGER (b) row 281]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page hidden-* cluster confined to webkit-768, whose only hotlink host is http.cat = transient 503 capture, not a result; page runtime-hotlink site-theme chain otherwise; sample credit-modal (preview-form) + runtime-hotlink; T3 none beyond cross-cutting items. [RENDER-ROWS-2 (RENDER-S2-H (KO7))]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 280, source LOCALIZE-S2-F]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 280]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 281]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:path-of-jinin-jp.txt sha256:7f1b0d747f711bc7952ab621d72b642f07cc101c66742f7df6acf37a7dd13b75; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 967ec2f4a240dfaf825b2c3152610ed8c4a23b5a; candidate file pages/theme:path-of-jinin-jp.txt sha256:d39bac770b807e80428a7b11decc2a1306c7632c72654e46ed936fa2c7f17058; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -164,17 +164,23 @@ Adjudication for this README (every block was read against the bytes): the 16 WS
 
 ## Per-theme record
 
-### The in-gate frame names a fragment that does not exist (defect flag, probe-verified)
+### The in-gate frame names a fragment that does not exist (defect flag, probe-verified) Repaired after this package was built: commit 967ec2f repointed the in-gate `theme=` to the candidate's own `/1` on the draft host; see the post-package repairs item below.
 
 Candidate L22–25 is a second interwiki-style include, inside the gate, at priority=1, naming `https://scp-jp.wikidot.com/local--code/theme%3Apath-of-jinin/1`. Probe made for this package (2026-11-17): `https://scp-jp.wikidot.com/theme:path-of-jinin` returns 404 — the page does not exist on the production wiki — and the fragment URL itself, followed through its redirect, serves twelve bytes of plain text: "No such page". The fragment exists nowhere else either: this repo's composition carries the candidate under its `-jp` name, and the check wikis mirror the repo. T4 recorded the shape before the fix waves (LOCALIZE-ROWS row 280, type 6: the in-gate interwiki replica points at a nonexistent local--code, display-affecting). The fix the campaign then landed (FIX4-IWB, commit 5559209; register c2) repaired the duplicate priority — the head frame now sits at priority=2 — and the ledger's c3 line records P6 FIXED. That repair is real, and it is the half of the finding that concerned the frame stack's integrity. The target's nonexistence is the other half, and it is unchanged in the current bytes: at posting, the priority=1 layer of any page using this theme would request a fragment that serves "No such page". Whether the replica was meant to bind the production original (the T10 layering reading), a posting-name the porters expected the original to take, or is simply a duplicated frame line whose target was never corrected, the records do not say; the bytes say what it does today. The repair is small (the replica's removal, or its repointing at a target that exists); this package makes neither edit, per the review protocol, and flags the defect with its evidence for the coordinator's fix lane.
 
-### The credit author field names no one (defect flag)
+### The credit author field names no one (defect flag) Repaired after this package was built: commit 967ec2f named c_bonefish & thd-glasses in both carriers; see the post-package repairs item below.
 
 The original names its creators in two places a credit check reads: the prose (original L24, c_bonefish and thd-glasses, for the Seulga GoI format) and the exhibit banner ("Created by c_bonefish and thd-glasses. Base Code by Denevola"). The candidate's 著作権者 field (candidate L16) reads 原語版ページの作成者に同じ（scpko の theme:path-of-jinin) — "same as the original page's creators" — and the license box's author parameter (candidate L645) repeats the pointer form. T4 charged exactly this (LOCALIZE-ROWS row 280, type 3: 著作権者 vague); the ledger's c3 line records P3 FIXED by the credit waves, whose population-wide completion filled the eight fields in every candidate — and for this theme the filled value is the pointer. The names are not lost to the file (the prose at candidate L33 names both creators, and the banner is carried verbatim in the exhibit), but the field whose purpose is to carry the attribution carries a direction to look elsewhere instead. Under the campaign's own credit standard — the field is checked against the original's credit, including attribution lines beyond the field itself — that is a defect in the field, recorded here with both sides' text; the one-line repair (naming c_bonefish & thd-glasses, with Denevola's base-code credit already preserved in the banner) is the coordinator's to land.
 
 ### The post-verdict line (why the stamp reads STALE)
 
 The candidate changed once after the FIX5 head: the usage sweep (commit b5cb724) corrected the escaped usage example at candidate L36 from `@@[[include :scp-jp:theme:path-of-jinin]]@@` to the `-jp` posting name. That is the whole of the drift the stamp reports: one documentation line inside a blockquote, no delivery, credit, or CSS change. This package documents the corrected candidate; the verdict lines under the stamp describe the file as judged, one line earlier.
+
+### Post-package repairs (REFRESH3-C)
+
+The items above describe this package as built. The repairs recorded below postdate the package; `candidate.txt` has been recopied from the current canonical `pages/<fullname>.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**FIX-JININ — frame target and credit author (landing 967ec2f, 2026-11-17).** `FIX-JININ.md` records two repairs, both in commit 967ec2f (pages: path-of-jinin frame and credit, rok-gov agency name). (1) The in-gate frame's `theme=` (candidate L24) was repointed from the nonexistent production `theme%3Apath-of-jinin/1` to the draft-host `https://sigma10-jp-test.wdfiles.com/local--code/theme%3Apath-of-jinin-jp/1`, byte-identical to the head frame's line (L7); the priority=1 parameter and the frame include are untouched. (2) The 著作権者 field (L16) and license-box `author=` (L645) changed from the pointer form to `c_bonefish & thd-glasses`; Denevola's base-code credit stays in the exhibit banner. The earlier record items that flag the dead frame and the empty author field describe the as-built state; this candidate carries both repairs. T1 before/after identical (6/0/1).
 
 ## Change set outside the two diffed files
 

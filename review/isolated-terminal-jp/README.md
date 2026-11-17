@@ -161,6 +161,14 @@ Adjudications applied for this README: the six CSS-BODY blocks are P7 font-stack
 - **Verify:** Re-run the checker on `pages/theme:isolated-terminal-jp.txt` and `python3 review/build_review.py --check` in this repo.
 - **Disposition:** PASS (GOSIGN2-LEDGER (b) row 17; go-sign, COMPLETION-REPORT §10).
 
+## Per-theme record
+
+### Post-package repairs (REFRESH3-C)
+
+The items above describe this package as built. The repairs recorded below postdate the package; `candidate.txt` has been recopied from the current canonical `pages/<fullname>.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+**FIX-SNIPPET — production-predecessor reference audit (landing 358955e).** `FIX-SNIPPET.md` records two self-references (candidate L67 and L230) as DRIFT ground D1 (own code addresses under `theme%3Aisolated-terminal-jp`). Commit 358955e inserted `-jp` after the target on both lines, `theme:isolated-terminal` → `theme:isolated-terminal-jp`. The BHL exhibits at L66/L229 are COHERENT ground C1 and were not edited. T1 before/after unchanged (2/0/2).
+
 ## Change set outside the two diffed files
 
 The diff covers two files; this theme's record is three. `pages/phase17-diff-isolated-terminal-jp.txt` is the Phase 17 migration record for this theme (the revision recording and drift incorporation of commit 8dcac74) — part of this theme's provenance, cited in the Provenance table. `pages/theme-decoration-sample-isolated-terminal-jp.txt` is the decoration sample the render checks ran against (its blank-white run and exit-2 gap are in section 11(3)). The gosign2 T1 fix commit (b816e10) touched the T1 rows 1–44 files in one wave; the other files are those themes' own records, not this one's change set. There are no companion fragments.
