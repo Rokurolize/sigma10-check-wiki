@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:tfnac-jp — origin CN, population #236 [GOSIGN2-LEDGER (b) row 236]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 1a72d49301d78b8d12d4bc2d4eb6288806687f07e1ff6c5166fcff3a38c1b1bd); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now abec21eaf0bbfd529c8824651e62e9c4a4a3675c615071328f985c1e7e5b5d3e); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 4 errors / 2 warns / 0 infos (old-bhl×2, hotlink×1, pseudo-ref×1); standing classes dispositioned in register c1 [T1-ROWS row 196; GOSIGN2-LEDGER (b) row 236]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page-overflow 507px@320/375 + 782px@768 (page) and 519px@320/375 + 883px@768 (sample) + runtime-hotlink site-theme chain + candidate hosts nu-scptheme.github.io, s1.ax1x.com; sample credit-modal (preview-form); T3 re-run, no new screenshot-grounded visual finding; chromium-only coverage (no WebKit verdict). [RENDER-ROWS-G (CN15)]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 235, source LOCALIZE-S2-E]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 235]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 236]
-- Computed against: canonical commit 2dbb83da26b94a9c4a2e7de3a1562025f3552358; candidate file pages/theme:tfnac-jp.txt sha256:1a72d49301d78b8d12d4bc2d4eb6288806687f07e1ff6c5166fcff3a38c1b1bd; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 2dbb83da26b94a9c4a2e7de3a1562025f3552358; candidate file pages/theme:tfnac-jp.txt sha256:abec21eaf0bbfd529c8824651e62e9c4a4a3675c615071328f985c1e7e5b5d3e; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -568,3 +568,7 @@ convention it is resolved here by shape.
 | Block | Lines (orig → cand) | Resolution |
 |---|---|---|
 | B7 | 22 → 23 | The usage exhibit line itself: the repoint `:scp-wiki-cn:theme:tfnac` → `:scp-jp:theme:tfnac` (section 2; the plain-slug flag is item 3). The classifier's repoint signature did not fire on the @@-escaped form here. |
+
+## Post-adjudication repair (2026-11-18)
+
+The pattern linter's KB-70 nomination, adjudicated in the campaign record (theme-lint/ADJ1.md section 3.4), confirmed a code-address defect: the candidate delivers its stylesheet as code block /2, but both self-addresses (the [[module CSS]] @import and the interwiki-style include's theme= parameter) pointed at /1, which holds the credits exhibit. Both addresses are repointed to /2 in the canonical page; no other byte changed. T1 finding counts are unchanged (error 4 / warn 2 before and after); the page is reflected to the Wikidot check wiki.

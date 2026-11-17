@@ -286,12 +286,12 @@ with `python3 review/build_review.py`; verify with
 +[[/iftags]]
 +
 +[[module css]]
-+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Atfnac-jp/1")
++@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Atfnac-jp/2")
  [[/module]]
 -[[/collapsible]]
 -[[/div]]
 +[[include :scp-jp:component:interwiki-style
 +| priority=1
-+| theme= https://sigma10-jp-test.wdfiles.com/local--code/theme%3Atfnac-jp/1
++| theme= https://sigma10-jp-test.wdfiles.com/local--code/theme%3Atfnac-jp/2
 +]]
 ```

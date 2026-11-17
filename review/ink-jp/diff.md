@@ -15,11 +15,11 @@ adjudicated explanation.
 | | Lines |
 |---|---|
 | original.txt | 1520 |
-| candidate.txt | 3155 |
-| Added | +1770 |
-| Review-stage comments | 0 of the +1770 added lines |
+| candidate.txt | 3156 |
+| Added | +1771 |
+| Review-stage comments | 0 of the +1771 added lines |
 | Removed | -135 |
-| Changed | 1905 |
+| Changed | 1906 |
 | Change blocks | 98 |
 | Diff sections (context 3) | 17 |
 
@@ -29,7 +29,7 @@ adjudicated explanation.
 |---|---|---|
 | mechanical | 1 | 1 |
 | translation | 74 | 175 |
-| supplement | 5 | 1678 |
+| supplement | 5 | 1679 |
 | residual | 18 | 51 |
 
 ## Change-block index
@@ -39,100 +39,100 @@ adjudicated explanation.
 | 1 | 1 | — | 2–5 | +4/−0 | supplement | @import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aink-jp/1… |
 | 2 | 1 | 3–3 | 7–18 | +12/−1 | supplement | [[include :scp-jp:component:interwiki-style |
 | 3 | 1 | — | 20–20 | +1/−0 | residual | [[module CSS]] |
-| 4 | 2 | 43–43 | 59–1684 | +1626/−1 | supplement | [[iftags +テーマ]] |
-| 5 | 2 | 47–56 | 1688–1699 | +12/−10 | supplement | [[include :scp-jp:credit:start-preview]] |
-| 6 | 2 | 62–62 | 1705–1705 | +1/−1 | translation | + 概要 |
-| 7 | 2 | 64–64 | 1707–1707 | +1/−1 | residual | **潑墨テーマ**は、中華異学会設定向けのSigma-Plus基盤テーマです。 |
-| 8 | 2 | 66–66 | 1709–1709 | +1/−1 | translation | 任意のページで適用するには： |
-| 9 | 2 | 68–68 | 1711–1711 | +1/−1 | residual | = [[size 1.25em]]**{{[[include theme:ink-jp]]}}**[[/size]] |
-| 10 | 2 | 70–70 | 1713–1713 | +1/−1 | translation | + パラメータ |
-| 11 | 2 | 72–73 | 1715–1716 | +2/−2 | residual | {{[[include theme:ink-jp \|xinyihui=*]]}} |
-| 12 | 2 | 75–76 | 1718–1719 | +2/−2 | residual | {{[[include theme:ink-jp \|center=*]]}} |
-| 13 | 2 | 80–80 | 1723–1723 | +1/−1 | translation | + 例 |
-| 14 | 2 | 82–82 | 1725–1725 | +1/−1 | translation | ++ 基本的なウィキ文法 |
-| 15 | 2 | 86–86 | 1729–1729 | +1/−1 | residual | [[include component:image-block |
-| 16 | 2 | 89–90 | 1732–1733 | +2/−2 | translation | 「異学会、すごい」「新異会、すごい」 |
-| 17 | 2 | 94–94 | 1737–1737 | +1/−1 | residual | 9個のハイフン「@@---------@@[[footnote]]これはWikidot全体を怒らせるためのものです。[[/footnote]]」で水平線を… |
-| 18 | 3 | 106–106 | 1749–1749 | +1/−1 | translation | 見出しは、行頭に1個から6個のプラス記号「+」を入力して作成できます。 |
-| 19 | 3 | 108–108 | 1751–1751 | +1/−1 | translation | [[collapsible show="見出し" hide="見出し"]] |
-| 20 | 3 | 110–110 | 1753–1753 | +1/−1 | translation | +* レベル1見出し |
-| 21 | 3 | 112–112 | 1755–1755 | +1/−1 | translation | ++* レベル2見出し |
-| 22 | 3 | 114–114 | 1757–1757 | +1/−1 | translation | +++* レベル3見出し |
-| 23 | 3 | 116–116 | 1759–1759 | +1/−1 | translation | ++++* レベル4見出し |
-| 24 | 3 | 118–118 | 1761–1761 | +1/−1 | translation | +++++* レベル5見出し |
-| 25 | 3 | 120–120 | 1763–1763 | +1/−1 | translation | ++++++* レベル6見出し |
-| 26 | 3 | 123–123 | 1766–1766 | +1/−1 | translation | DeepSeekによる作例 |
-| 27 | 3 | 125–125 | 1768–1768 | +1/−1 | translation | 永平の里に、王二という農夫がいた。家は貧しく妻もなく、山麓に一人で住んでいた。ある日、鍬を担いで帰ると、垣根のそばに黒い猫が横たわっているのを見つけた。毛… |
-| 28 | 3 | 127–127 | 1770–1770 | +1/−1 | translation | その夜、王二は戸を叩く音を聞いた。戸を開けると、十八、九ほどの女が立っていた。衣は烏の羽のように黒く、裾の間には霜色の文様がほの見えた。女は襟を正して言っ… |
-| 29 | 3 | 129–129 | 1772–1772 | +1/−1 | residual | 鶏が鳴くころ、女は突然黒い猫に変じ、窓から飛び出していった。掛け布団には黒髪が一房だけ残っていた。王二はひどく驚き、その髪を拾い上げて眺めた。すると髪は思… |
-| 30 | 3 | 131–131 | 1774–1774 | +1/−1 | residual | 昼どきになると、果たして黒い猫が野の果実をくわえて家へ入ってきた。猫は地面を転がると、先夜の女に姿を変えた。まさに炊事を始めようとしたその時、王二が急に姿… |
-| 31 | 3 | 133–133 | 1776–1776 | +1/−1 | translation | そこで、二人は草庵を建てて一緒に住むことになった。女は機織りが得意で、夜に織るときは窓や戸に蝋燭を灯さなくても自然と明るくなった。近所の人はこれを不思議に… |
-| 32 | 3 | 135–135 | 1778–1778 | +1/−1 | translation | それから三年後、女は急に泣いて別れを告げた。「わたしの劫数が近づいています。終南山へ行き、雷劫を渡らねばなりません」。首に掛けていた玉の鈴を外して王二に贈… |
-| 33 | 3 | 137–137 | 1780–1780 | +1/−1 | translation | 十年が過ぎたころ、王二はたまたま市場を通りかかり、幼い小間使いが黒猫を抱いているのを見た。猫の尾の先は霜のように白く、王二を見るなりその懐へ飛び込んできた… |
-| 34 | 3 | 139–139 | 1782–1782 | +1/−1 | translation | それから阿苓は二度と去らなかった。村人たちはよく、王二の妻が猫の尾で机の塵を払ったり、爪で算盤の珠をはじいたりするのを見たが、ほかは常人と変わらなかった。… |
-| 35 | 3 | 141–141 | 1784–1784 | +1/−1 | translation | 異史氏曰く、人は猫を「狸奴」と呼び、世人に媚びるものだという。けれど阿苓の事を見るに、それは媚びだけではなく、まことに義があったのだ。世には一飯を受けても… |
-| 36 | 3 | 145–145 | 1788–1788 | +1/−1 | translation | > 引用ブロック |
-| 37 | 3 | 149–150 | 1792–1793 | +2/−2 | translation | [[tab ページ]] |
-| 38 | 3 | 153–153 | 1796–1796 | +1/−1 | translation | [[tab ページ]] |
-| 39 | 3 | 156–156 | 1799–1799 | +1/−1 | translation | [[tab ページ]] |
-| 40 | 3 | 160–160 | 1803–1803 | +1/−1 | residual | [[tab 長いタブ]] |
-| 41 | 3 | 162–162 | 1805–1805 | +1/−1 | translation | たくさんのテキスト |
-| 42 | 3 | 164–164 | 1807–1807 | +1/−1 | translation | たくさんのテキスト |
-| 43 | 3 | 166–166 | 1809–1809 | +1/−1 | translation | たくさんのテキスト |
-| 44 | 3 | 168–168 | 1811–1811 | +1/−1 | translation | たくさんのテキスト |
-| 45 | 3 | 170–170 | 1813–1813 | +1/−1 | translation | たくさんのテキスト |
-| 46 | 3 | 172–172 | 1815–1815 | +1/−1 | translation | たくさんのテキスト |
-| 47 | 3 | 174–174 | 1817–1817 | +1/−1 | translation | たくさんのテキスト |
-| 48 | 3 | 176–176 | 1819–1819 | +1/−1 | translation | たくさんのテキスト |
-| 49 | 3 | 178–178 | 1821–1821 | +1/−1 | translation | たくさんのテキスト |
-| 50 | 3 | 180–180 | 1823–1824 | +2/−1 | translation | たくさんのテキスト |
-| 51 | 3 | 184–184 | 1828–1828 | +1/−1 | translation | [[tab ページ]] |
-| 52 | 3 | 191–191 | 1835–1835 | +1/−1 | translation | + 互換性移植 |
-| 53 | 3 | 193–193 | 1837–1837 | +1/−1 | translation | この版式は[[[https://scp-wiki-cn.wikidot.com/theme:magazine\|雑誌版式]]]の機能を一部移植しています。 |
-| 54 | 3 | 195–195 | 1839–1839 | +1/−1 | translation | ++ 画像枠 |
-| 55 | 4 | 217–218 | 1861–1862 | +2/−2 | residual | [[include component:image-block |
-| 56 | 5 | 226–227 | 1870–1871 | +2/−2 | residual | [[include component:image-block |
-| 57 | 6 | 235–236 | 1879–1880 | +2/−2 | residual | [[include component:image-block |
-| 58 | 7 | 244–245 | 1888–1889 | +2/−2 | residual | [[include component:image-block |
-| 59 | 8 | 254–254 | 1898–1898 | +1/−1 | translation | ++ 特殊水平線 |
-| 60 | 9 | 262–265 | 1906–1909 | +4/−4 | translation | * 線のサイズを縮小：hr-contract |
-| 61 | 10 | 285–285 | 1929–1929 | +1/−1 | translation | ++ Flex水平線レイアウト |
-| 62 | 11 | 296–296 | 1940–1940 | +1/−1 | translation | テキストまたは画像 |
+| 4 | 2 | 43–43 | 59–1685 | +1627/−1 | supplement | [[iftags +テーマ]] |
+| 5 | 2 | 47–56 | 1689–1700 | +12/−10 | supplement | [[include :scp-jp:credit:start-preview]] |
+| 6 | 2 | 62–62 | 1706–1706 | +1/−1 | translation | + 概要 |
+| 7 | 2 | 64–64 | 1708–1708 | +1/−1 | residual | **潑墨テーマ**は、中華異学会設定向けのSigma-Plus基盤テーマです。 |
+| 8 | 2 | 66–66 | 1710–1710 | +1/−1 | translation | 任意のページで適用するには： |
+| 9 | 2 | 68–68 | 1712–1712 | +1/−1 | residual | = [[size 1.25em]]**{{[[include theme:ink-jp]]}}**[[/size]] |
+| 10 | 2 | 70–70 | 1714–1714 | +1/−1 | translation | + パラメータ |
+| 11 | 2 | 72–73 | 1716–1717 | +2/−2 | residual | {{[[include theme:ink-jp \|xinyihui=*]]}} |
+| 12 | 2 | 75–76 | 1719–1720 | +2/−2 | residual | {{[[include theme:ink-jp \|center=*]]}} |
+| 13 | 2 | 80–80 | 1724–1724 | +1/−1 | translation | + 例 |
+| 14 | 2 | 82–82 | 1726–1726 | +1/−1 | translation | ++ 基本的なウィキ文法 |
+| 15 | 2 | 86–86 | 1730–1730 | +1/−1 | residual | [[include component:image-block |
+| 16 | 2 | 89–90 | 1733–1734 | +2/−2 | translation | 「異学会、すごい」「新異会、すごい」 |
+| 17 | 2 | 94–94 | 1738–1738 | +1/−1 | residual | 9個のハイフン「@@---------@@[[footnote]]これはWikidot全体を怒らせるためのものです。[[/footnote]]」で水平線を… |
+| 18 | 3 | 106–106 | 1750–1750 | +1/−1 | translation | 見出しは、行頭に1個から6個のプラス記号「+」を入力して作成できます。 |
+| 19 | 3 | 108–108 | 1752–1752 | +1/−1 | translation | [[collapsible show="見出し" hide="見出し"]] |
+| 20 | 3 | 110–110 | 1754–1754 | +1/−1 | translation | +* レベル1見出し |
+| 21 | 3 | 112–112 | 1756–1756 | +1/−1 | translation | ++* レベル2見出し |
+| 22 | 3 | 114–114 | 1758–1758 | +1/−1 | translation | +++* レベル3見出し |
+| 23 | 3 | 116–116 | 1760–1760 | +1/−1 | translation | ++++* レベル4見出し |
+| 24 | 3 | 118–118 | 1762–1762 | +1/−1 | translation | +++++* レベル5見出し |
+| 25 | 3 | 120–120 | 1764–1764 | +1/−1 | translation | ++++++* レベル6見出し |
+| 26 | 3 | 123–123 | 1767–1767 | +1/−1 | translation | DeepSeekによる作例 |
+| 27 | 3 | 125–125 | 1769–1769 | +1/−1 | translation | 永平の里に、王二という農夫がいた。家は貧しく妻もなく、山麓に一人で住んでいた。ある日、鍬を担いで帰ると、垣根のそばに黒い猫が横たわっているのを見つけた。毛… |
+| 28 | 3 | 127–127 | 1771–1771 | +1/−1 | translation | その夜、王二は戸を叩く音を聞いた。戸を開けると、十八、九ほどの女が立っていた。衣は烏の羽のように黒く、裾の間には霜色の文様がほの見えた。女は襟を正して言っ… |
+| 29 | 3 | 129–129 | 1773–1773 | +1/−1 | residual | 鶏が鳴くころ、女は突然黒い猫に変じ、窓から飛び出していった。掛け布団には黒髪が一房だけ残っていた。王二はひどく驚き、その髪を拾い上げて眺めた。すると髪は思… |
+| 30 | 3 | 131–131 | 1775–1775 | +1/−1 | residual | 昼どきになると、果たして黒い猫が野の果実をくわえて家へ入ってきた。猫は地面を転がると、先夜の女に姿を変えた。まさに炊事を始めようとしたその時、王二が急に姿… |
+| 31 | 3 | 133–133 | 1777–1777 | +1/−1 | translation | そこで、二人は草庵を建てて一緒に住むことになった。女は機織りが得意で、夜に織るときは窓や戸に蝋燭を灯さなくても自然と明るくなった。近所の人はこれを不思議に… |
+| 32 | 3 | 135–135 | 1779–1779 | +1/−1 | translation | それから三年後、女は急に泣いて別れを告げた。「わたしの劫数が近づいています。終南山へ行き、雷劫を渡らねばなりません」。首に掛けていた玉の鈴を外して王二に贈… |
+| 33 | 3 | 137–137 | 1781–1781 | +1/−1 | translation | 十年が過ぎたころ、王二はたまたま市場を通りかかり、幼い小間使いが黒猫を抱いているのを見た。猫の尾の先は霜のように白く、王二を見るなりその懐へ飛び込んできた… |
+| 34 | 3 | 139–139 | 1783–1783 | +1/−1 | translation | それから阿苓は二度と去らなかった。村人たちはよく、王二の妻が猫の尾で机の塵を払ったり、爪で算盤の珠をはじいたりするのを見たが、ほかは常人と変わらなかった。… |
+| 35 | 3 | 141–141 | 1785–1785 | +1/−1 | translation | 異史氏曰く、人は猫を「狸奴」と呼び、世人に媚びるものだという。けれど阿苓の事を見るに、それは媚びだけではなく、まことに義があったのだ。世には一飯を受けても… |
+| 36 | 3 | 145–145 | 1789–1789 | +1/−1 | translation | > 引用ブロック |
+| 37 | 3 | 149–150 | 1793–1794 | +2/−2 | translation | [[tab ページ]] |
+| 38 | 3 | 153–153 | 1797–1797 | +1/−1 | translation | [[tab ページ]] |
+| 39 | 3 | 156–156 | 1800–1800 | +1/−1 | translation | [[tab ページ]] |
+| 40 | 3 | 160–160 | 1804–1804 | +1/−1 | residual | [[tab 長いタブ]] |
+| 41 | 3 | 162–162 | 1806–1806 | +1/−1 | translation | たくさんのテキスト |
+| 42 | 3 | 164–164 | 1808–1808 | +1/−1 | translation | たくさんのテキスト |
+| 43 | 3 | 166–166 | 1810–1810 | +1/−1 | translation | たくさんのテキスト |
+| 44 | 3 | 168–168 | 1812–1812 | +1/−1 | translation | たくさんのテキスト |
+| 45 | 3 | 170–170 | 1814–1814 | +1/−1 | translation | たくさんのテキスト |
+| 46 | 3 | 172–172 | 1816–1816 | +1/−1 | translation | たくさんのテキスト |
+| 47 | 3 | 174–174 | 1818–1818 | +1/−1 | translation | たくさんのテキスト |
+| 48 | 3 | 176–176 | 1820–1820 | +1/−1 | translation | たくさんのテキスト |
+| 49 | 3 | 178–178 | 1822–1822 | +1/−1 | translation | たくさんのテキスト |
+| 50 | 3 | 180–180 | 1824–1825 | +2/−1 | translation | たくさんのテキスト |
+| 51 | 3 | 184–184 | 1829–1829 | +1/−1 | translation | [[tab ページ]] |
+| 52 | 3 | 191–191 | 1836–1836 | +1/−1 | translation | + 互換性移植 |
+| 53 | 3 | 193–193 | 1838–1838 | +1/−1 | translation | この版式は[[[https://scp-wiki-cn.wikidot.com/theme:magazine\|雑誌版式]]]の機能を一部移植しています。 |
+| 54 | 3 | 195–195 | 1840–1840 | +1/−1 | translation | ++ 画像枠 |
+| 55 | 4 | 217–218 | 1862–1863 | +2/−2 | residual | [[include component:image-block |
+| 56 | 5 | 226–227 | 1871–1872 | +2/−2 | residual | [[include component:image-block |
+| 57 | 6 | 235–236 | 1880–1881 | +2/−2 | residual | [[include component:image-block |
+| 58 | 7 | 244–245 | 1889–1890 | +2/−2 | residual | [[include component:image-block |
+| 59 | 8 | 254–254 | 1899–1899 | +1/−1 | translation | ++ 特殊水平線 |
+| 60 | 9 | 262–265 | 1907–1910 | +4/−4 | translation | * 線のサイズを縮小：hr-contract |
+| 61 | 10 | 285–285 | 1930–1930 | +1/−1 | translation | ++ Flex水平線レイアウト |
+| 62 | 11 | 296–296 | 1941–1941 | +1/−1 | translation | テキストまたは画像 |
 | 63 | 11 | 298–298 | — | +0/−1 | residual | [[module rate]] |
-| 64 | 11 | 301–301 | 1944–1944 | +1/−1 | translation | ++ 多スタイル引用ブロック |
-| 65 | 12 | 311–311 | 1954–1954 | +1/−1 | translation | 既定の引用ブロック |
-| 66 | 12 | 316–316 | 1959–1959 | +1/−1 | translation | 引用ブロックスタイル1 |
-| 67 | 12 | 321–321 | 1964–1964 | +1/−1 | translation | 引用ブロックスタイル2 |
-| 68 | 12 | 326–326 | 1969–1969 | +1/−1 | translation | 引用ブロックスタイル3 |
-| 69 | 12 | 331–331 | 1974–1974 | +1/−1 | translation | 引用ブロックスタイル4 |
-| 70 | 12 | 336–336 | 1979–1979 | +1/−1 | translation | 引用ブロックスタイル5 |
-| 71 | 12 | 341–341 | 1984–1984 | +1/−1 | translation | ペーパークリップ引用ブロック |
-| 72 | 12 | 344–344 | 1987–1987 | +1/−1 | translation | ++ 横断見出し |
-| 73 | 12 | 348–349 | 1991–1992 | +2/−2 | translation | @@+ 横断見出し@@ |
-| 74 | 12 | 354–355 | 1997–1998 | +2/−2 | translation | +* 横断見出し |
-| 75 | 12 | 360–360 | 2003–2003 | +1/−1 | residual | 使用フォントは Noto Sans JP、Noto Serif JP、JetBrains Mono です（すべて Google Fonts、SIL Ope… |
-| 76 | 12 | 364–364 | 2007–2007 | +1/−1 | translation | [[collapsible show="+ ソースコード" hide="- ソースコード"]] |
-| 77 | 12 | 366–375 | 2009–2010 | +2/−10 | supplement | [[code type="css"]] |
-| 78 | 12 | 379–380 | 2014–2015 | +2/−2 | translation | --ink-title-a: '中華異学会'; |
-| 79 | 12 | 382–382 | 2017–2017 | +1/−1 | translation | --ink-subtitle: '格異・治学・融会'; |
-| 80 | 13 | 392–396 | 2027–2031 | +5/−5 | translation | --ink-red-dark: #ab372f; /* 鵝血石レッド */ |
-| 81 | 14 | 410–412 | 2045–2047 | +3/−3 | residual | --ink-font-sans-serif: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Hiragino… |
-| 82 | 15 | 523–523 | 2158–2159 | +2/−1 | residual | font-family: 'Noto Serif JP', var(--ink-font-serif); |
-| 83 | 16 | 941–941 | 2577–2577 | +1/−1 | translation | color: #ABB2BF; /* 既定のテキスト：明るい灰色 */ |
-| 84 | 16 | 944–944 | 2580–2580 | +1/−1 | translation | color: #ABB2BF; /* コードテキストは既定と同じ */ |
-| 85 | 16 | 947–947 | 2583–2583 | +1/−1 | translation | color: #E5C07B; /* 括弧：暖色の黄 */ |
-| 86 | 16 | 950–950 | 2586–2586 | +1/−1 | translation | color: #5C6370; /* コメント：暗い灰緑 */ |
-| 87 | 16 | 953–953 | 2589–2589 | +1/−1 | translation | color: #98C379; /* 引用符：明るい緑 */ |
-| 88 | 16 | 956–956 | 2592–2592 | +1/−1 | translation | color: #98C379; /* 文字列は引用符と同じ */ |
-| 89 | 16 | 959–959 | 2595–2595 | +1/−1 | translation | color: #E06C75; /* 識別子：淡い赤（必要に応じ調整可） */ |
-| 90 | 16 | 962–962 | 2598–2598 | +1/−1 | translation | color: #61AFEF; /* 組み込み関数：明るい青 */ |
-| 91 | 16 | 965–965 | 2601–2601 | +1/−1 | translation | color: #C678DD; /* キーワード：淡い紫 */ |
-| 92 | 16 | 968–968 | 2604–2604 | +1/−1 | translation | color: #7FDBFF; /* ドキュメントコメント：薄い青 */ |
-| 93 | 16 | 971–971 | 2607–2607 | +1/−1 | translation | color: #E06C75; /* 変数：淡い赤 */ |
-| 94 | 16 | 974–974 | 2610–2610 | +1/−1 | translation | color: #61AFEF; /* URL：明るい青 */ |
-| 95 | 16 | 977–977 | 2613–2613 | +1/−1 | translation | color: #F08D49; /* 特殊要素：橙黄 */ |
-| 96 | 16 | 984–984 | 2620–2620 | +1/−1 | translation | color: #E06C75; /* インラインタグ：淡い赤 */ |
-| 97 | 16 | 988–989 | 2624–2625 | +2/−2 | translation | background-color: #3E4451; /* 行番号領域背景：濃い灰 */ |
+| 64 | 11 | 301–301 | 1945–1945 | +1/−1 | translation | ++ 多スタイル引用ブロック |
+| 65 | 12 | 311–311 | 1955–1955 | +1/−1 | translation | 既定の引用ブロック |
+| 66 | 12 | 316–316 | 1960–1960 | +1/−1 | translation | 引用ブロックスタイル1 |
+| 67 | 12 | 321–321 | 1965–1965 | +1/−1 | translation | 引用ブロックスタイル2 |
+| 68 | 12 | 326–326 | 1970–1970 | +1/−1 | translation | 引用ブロックスタイル3 |
+| 69 | 12 | 331–331 | 1975–1975 | +1/−1 | translation | 引用ブロックスタイル4 |
+| 70 | 12 | 336–336 | 1980–1980 | +1/−1 | translation | 引用ブロックスタイル5 |
+| 71 | 12 | 341–341 | 1985–1985 | +1/−1 | translation | ペーパークリップ引用ブロック |
+| 72 | 12 | 344–344 | 1988–1988 | +1/−1 | translation | ++ 横断見出し |
+| 73 | 12 | 348–349 | 1992–1993 | +2/−2 | translation | @@+ 横断見出し@@ |
+| 74 | 12 | 354–355 | 1998–1999 | +2/−2 | translation | +* 横断見出し |
+| 75 | 12 | 360–360 | 2004–2004 | +1/−1 | residual | 使用フォントは Noto Sans JP、Noto Serif JP、JetBrains Mono です（すべて Google Fonts、SIL Ope… |
+| 76 | 12 | 364–364 | 2008–2008 | +1/−1 | translation | [[collapsible show="+ ソースコード" hide="- ソースコード"]] |
+| 77 | 12 | 366–375 | 2010–2011 | +2/−10 | supplement | [[code type="css"]] |
+| 78 | 12 | 379–380 | 2015–2016 | +2/−2 | translation | --ink-title-a: '中華異学会'; |
+| 79 | 12 | 382–382 | 2018–2018 | +1/−1 | translation | --ink-subtitle: '格異・治学・融会'; |
+| 80 | 13 | 392–396 | 2028–2032 | +5/−5 | translation | --ink-red-dark: #ab372f; /* 鵝血石レッド */ |
+| 81 | 14 | 410–412 | 2046–2048 | +3/−3 | residual | --ink-font-sans-serif: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Hiragino… |
+| 82 | 15 | 523–523 | 2159–2160 | +2/−1 | residual | font-family: 'Noto Serif JP', var(--ink-font-serif); |
+| 83 | 16 | 941–941 | 2578–2578 | +1/−1 | translation | color: #ABB2BF; /* 既定のテキスト：明るい灰色 */ |
+| 84 | 16 | 944–944 | 2581–2581 | +1/−1 | translation | color: #ABB2BF; /* コードテキストは既定と同じ */ |
+| 85 | 16 | 947–947 | 2584–2584 | +1/−1 | translation | color: #E5C07B; /* 括弧：暖色の黄 */ |
+| 86 | 16 | 950–950 | 2587–2587 | +1/−1 | translation | color: #5C6370; /* コメント：暗い灰緑 */ |
+| 87 | 16 | 953–953 | 2590–2590 | +1/−1 | translation | color: #98C379; /* 引用符：明るい緑 */ |
+| 88 | 16 | 956–956 | 2593–2593 | +1/−1 | translation | color: #98C379; /* 文字列は引用符と同じ */ |
+| 89 | 16 | 959–959 | 2596–2596 | +1/−1 | translation | color: #E06C75; /* 識別子：淡い赤（必要に応じ調整可） */ |
+| 90 | 16 | 962–962 | 2599–2599 | +1/−1 | translation | color: #61AFEF; /* 組み込み関数：明るい青 */ |
+| 91 | 16 | 965–965 | 2602–2602 | +1/−1 | translation | color: #C678DD; /* キーワード：淡い紫 */ |
+| 92 | 16 | 968–968 | 2605–2605 | +1/−1 | translation | color: #7FDBFF; /* ドキュメントコメント：薄い青 */ |
+| 93 | 16 | 971–971 | 2608–2608 | +1/−1 | translation | color: #E06C75; /* 変数：淡い赤 */ |
+| 94 | 16 | 974–974 | 2611–2611 | +1/−1 | translation | color: #61AFEF; /* URL：明るい青 */ |
+| 95 | 16 | 977–977 | 2614–2614 | +1/−1 | translation | color: #F08D49; /* 特殊要素：橙黄 */ |
+| 96 | 16 | 984–984 | 2621–2621 | +1/−1 | translation | color: #E06C75; /* インラインタグ：淡い赤 */ |
+| 97 | 16 | 988–989 | 2625–2626 | +2/−2 | translation | background-color: #3E4451; /* 行番号領域背景：濃い灰 */ |
 | 98 | 17 | 1515–1515 | — | +0/−1 | mechanical | (blank lines only) |
 
 ## Full diff
@@ -171,10 +171,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 2 — original 40–97 · candidate 56–1740 · +1653/−26 · residual, supplement, translation</summary>
+<summary>Section 2 — original 40–97 · candidate 56–1741 · +1654/−26 · residual, supplement, translation</summary>
 
 ```diff
-@@ -40,58 +56,1685 @@
+@@ -40,58 +56,1686 @@
  
  [[/module]]
  
@@ -1791,6 +1791,7 @@ adjudicated explanation.
 +.printuser.avatarhover > a > img {
 +    -webkit-user-select: none;
 +    user-select: none;
++}
 +[[/code]]
 +[[/div]]
 +
@@ -1891,10 +1892,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 3 — original 103–198 · candidate 1746–1842 · +39/−38 · residual, translation</summary>
+<summary>Section 3 — original 103–198 · candidate 1747–1843 · +39/−38 · residual, translation</summary>
 
 ```diff
-@@ -103,96 +1746,97 @@
+@@ -103,96 +1747,97 @@
  
  -----
  
@@ -2035,10 +2036,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 4 — original 214–221 · candidate 1858–1865 · +2/−2 · residual</summary>
+<summary>Section 4 — original 214–221 · candidate 1859–1866 · +2/−2 · residual</summary>
 
 ```diff
-@@ -214,8 +1858,8 @@
+@@ -214,8 +1859,8 @@
      justify-content: space-around;"]]
  
  [[div class="mz-img-wrap img-tt"]]
@@ -2054,10 +2055,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 5 — original 223–230 · candidate 1867–1874 · +2/−2 · residual</summary>
+<summary>Section 5 — original 223–230 · candidate 1868–1875 · +2/−2 · residual</summary>
 
 ```diff
-@@ -223,8 +1867,8 @@
+@@ -223,8 +1868,8 @@
  [[/div]]
  
  [[div class="mz-img-wrap img-frame"]]
@@ -2073,10 +2074,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 6 — original 232–239 · candidate 1876–1883 · +2/−2 · residual</summary>
+<summary>Section 6 — original 232–239 · candidate 1877–1884 · +2/−2 · residual</summary>
 
 ```diff
-@@ -232,8 +1876,8 @@
+@@ -232,8 +1877,8 @@
  [[/div]]
  
  [[div class="mz-img-wrap img-b3d"]]
@@ -2092,10 +2093,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 7 — original 241–248 · candidate 1885–1892 · +2/−2 · residual</summary>
+<summary>Section 7 — original 241–248 · candidate 1886–1893 · +2/−2 · residual</summary>
 
 ```diff
-@@ -241,8 +1885,8 @@
+@@ -241,8 +1886,8 @@
  [[/div]]
  
  [[div class="mz-img-wrap img-border"]]
@@ -2111,10 +2112,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 8 — original 251–257 · candidate 1895–1901 · +1/−1 · translation</summary>
+<summary>Section 8 — original 251–257 · candidate 1896–1902 · +1/−1 · translation</summary>
 
 ```diff
-@@ -251,7 +1895,7 @@
+@@ -251,7 +1896,7 @@
  
  [[/div]]
  
@@ -2128,10 +2129,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 9 — original 259–268 · candidate 1903–1912 · +4/−4 · translation</summary>
+<summary>Section 9 — original 259–268 · candidate 1904–1913 · +4/−4 · translation</summary>
 
 ```diff
-@@ -259,10 +1903,10 @@
+@@ -259,10 +1904,10 @@
  @@[[/div]]@@
  [[/div]]
  
@@ -2151,10 +2152,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 10 — original 282–288 · candidate 1926–1932 · +1/−1 · translation</summary>
+<summary>Section 10 — original 282–288 · candidate 1927–1933 · +1/−1 · translation</summary>
 
 ```diff
-@@ -282,7 +1926,7 @@
+@@ -282,7 +1927,7 @@
  -----
  [[/div]]
  
@@ -2168,10 +2169,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 11 — original 293–304 · candidate 1937–1947 · +2/−3 · residual, translation</summary>
+<summary>Section 11 — original 293–304 · candidate 1938–1948 · +2/−3 · residual, translation</summary>
 
 ```diff
-@@ -293,12 +1937,11 @@
+@@ -293,12 +1938,11 @@
  [[/div]]
  
  [[div class="mz-hr"]]
@@ -2191,10 +2192,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 12 — original 308–385 · candidate 1951–2020 · +19/−27 · residual, supplement, translation</summary>
+<summary>Section 12 — original 308–385 · candidate 1952–2021 · +19/−27 · residual, supplement, translation</summary>
 
 ```diff
-@@ -308,78 +1951,70 @@
+@@ -308,78 +1952,70 @@
  
  [[div class="blockquote"]]
  {{blockquote}}
@@ -2297,10 +2298,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 13 — original 389–399 · candidate 2024–2034 · +5/−5 · translation</summary>
+<summary>Section 13 — original 389–399 · candidate 2025–2035 · +5/−5 · translation</summary>
 
 ```diff
-@@ -389,11 +2024,11 @@
+@@ -389,11 +2025,11 @@
      --ink-black-gray: #262626;
      --ink-black: #000000;
  
@@ -2322,10 +2323,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 14 — original 407–415 · candidate 2042–2050 · +3/−3 · residual</summary>
+<summary>Section 14 — original 407–415 · candidate 2043–2051 · +3/−3 · residual</summary>
 
 ```diff
-@@ -407,9 +2042,9 @@
+@@ -407,9 +2043,9 @@
      --ink-logo-b: url(https://cdn.mer.run/i/2026/02/22/699b0d4f43dbe.png);
      --ink-bg-g: url(https://cdn.mer.run/i/2026/02/23/699bd58337a58.png);
  
@@ -2343,10 +2344,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 15 — original 520–526 · candidate 2155–2162 · +2/−1 · residual</summary>
+<summary>Section 15 — original 520–526 · candidate 2156–2163 · +2/−1 · residual</summary>
 
 ```diff
-@@ -520,7 +2155,8 @@
+@@ -520,7 +2156,8 @@
  
  #header h1 a::before {
      letter-spacing: 0.7rem;
@@ -2361,10 +2362,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 16 — original 938–992 · candidate 2574–2628 · +16/−16 · translation</summary>
+<summary>Section 16 — original 938–992 · candidate 2575–2629 · +16/−16 · translation</summary>
 
 ```diff
-@@ -938,55 +2574,55 @@
+@@ -938,55 +2575,55 @@
  }
  
  .hl-default {
@@ -2444,7 +2445,7 @@ adjudicated explanation.
 <summary>Purely mechanical sections (17) — whitespace, host, and branch-token changes only (heuristic)</summary>
 
 ```diff
-@@ -1512,7 +3148,6 @@
+@@ -1512,7 +3149,6 @@
          color: var(--ink-black);
      }
  }

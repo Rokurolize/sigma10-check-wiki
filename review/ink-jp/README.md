@@ -3,7 +3,8 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:ink-jp — origin CN, population #198 [GOSIGN2-LEDGER (b) row 198]
-- Overall: PASS — NOT PASS at the ledger determination (section (e) register); its one OPEN item re-judged FIXED by the FIX5 wave; go-sign issued 2026-11-17 (COMPLETION-REPORT §10) [GOSIGN2-LEDGER (b); GOSIGN2-LEDGER-SUPPLEMENT (d)]
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 54e481fa402c820c7e42157c1585ad01ec1b22dfb4d5f772be7571ae1cfafd26); verdict not carried over, re-judgement required
+> verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 20 errors / 5 warns / 4 infos (hotlink×16, pseudo-ref×4); standing classes dispositioned in register c1 [T1-ROWS row 228; GOSIGN2-LEDGER (b) row 198]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page-overflow 606–610px@320/375 + 931px@768 + runtime-hotlink site-theme chain; sample T2 no machine verdict (exit 2, no summary). [RENDER-ROWS-2 (RENDER-S2-F (CN8))]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row (the row records inconclusive runs, carried verbatim above) [RENDER-ROWS-2 row]
@@ -11,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 3 [LOCALIZE-ROWS row 197, source LOCALIZE-S2-D]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 197]
 - FIX5 re-judgement: item 62 (class B) FIXED — FIX5-FURNB, commit 25bb0b4: both live bare Rates removed. Residual checker double-rate at L1743 is the escaped literal example, identical to orig L100 (KB-09 false-positive class), dispositioned within the item on that evidence [GOSIGN2-LEDGER-SUPPLEMENT (a) item 62]
-- Computed against: canonical commit 25bb0b40f10153f1f8bdda252283bb7aa7a76875; candidate file pages/theme:ink-jp.txt sha256:5852f588fd3bb468b354b04dd4049e3f474a31fc1c32dc71361a8b3dbc7859ac; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 25bb0b40f10153f1f8bdda252283bb7aa7a76875; candidate file pages/theme:ink-jp.txt sha256:54e481fa402c820c7e42157c1585ad01ec1b22dfb4d5f772be7571ae1cfafd26; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -159,3 +160,7 @@ The candidate's current state is the product of successive waves: the S2 localiz
 - **B13** (GLYPH-FORM): original `+ 示例` → candidate `+ 例` — a heading translation, the glyph change being the translation itself.
 - **B59** (GLYPH-FORM): same adjudication class as B13/B78 — glyph-form differences inside translated or proper-noun strings (§5).
 - The 17 COMMENT-TEXT blocks are the delivered layers' CSS comments in translation; the 39 TRANS-UNANCHORED blocks are exhibit prose and specimen text, each present in both files. Resolved by shape, as the standing lessons prescribe.
+
+## Post-adjudication repair (2026-11-18)
+
+The pattern linter's KB-71 nomination, adjudicated in the campaign record (theme-lint/ADJ1.md section 4.3), confirmed a structural defect: the delivered stylesheet's final rule (.printuser.avatarhover > a > img) was missing its closing brace, leaving the block at brace depth 1; the original ends at depth 0 and has no such rule. The single missing brace is added in the canonical page; no other byte changed. T1 finding counts are unchanged (error 20 / warn 5 / info 4 before and after); the page is reflected to the Wikidot check wiki.
