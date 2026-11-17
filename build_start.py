@@ -172,7 +172,7 @@ def render_parity(rows, parity):
         "[[/div]]",
         "[[/div]]",
         "",
-        "**Measured build eaefd8bf27 (partly re-measured on f7e6cd103).** In the reproduction-state column, 一致 means what the reader sees is identical between Wikidot and Wikijump, and 不一致 means there is a difference, of the kind named in parentheses.",
+        "**Measured build eaefd8bf27 (partly re-measured on f7e6cd103).** In the reproduction-state column, \"match\" means what the reader sees is identical between Wikidot and Wikijump, and \"mismatch\" means there is a difference, of the kind named in parentheses.",
         "",
         "+ Categories of mismatch",
         "",
