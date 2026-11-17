@@ -1,0 +1,695 @@
+{
+ "tool": "classify_hunks.py",
+ "classifier_version": "0.1.0",
+ "signature_table_version": "2026-11-17.1",
+ "theme": {
+  "dir": "parallel-jp",
+  "cand_fullname": "theme:parallel-jp",
+  "orig_fullname": "theme:parallel",
+  "wiki": "scp-wiki-cn",
+  "revision": "41",
+  "kind": "K5b-5",
+  "verdict": "PASS",
+  "original_file": "parallel-jp/original.txt",
+  "candidate_file": "parallel-jp/candidate.txt",
+  "original_sha256": "994ff16ac7616ae6032cdcb2e30b875a654031bd50b6775b3898c5377d9ee102",
+  "candidate_sha256": "b7b98a7cf0ff2a7e0169f68e67075164209b59257d22f8641cd774c51d7249a1",
+  "original_lines": 762,
+  "candidate_lines": 873
+ },
+ "topology": {
+  "original_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     0,
+     27
+    ],
+    "lines": 27
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     40,
+     307
+    ],
+    "lines": 267
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     668,
+     747
+    ],
+    "lines": 79
+   }
+  ],
+  "candidate_components": [
+   {
+    "kind": "code-css",
+    "range": [
+     390,
+     862
+    ],
+    "lines": 472
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     866,
+     869
+    ],
+    "lines": 3
+   }
+  ],
+  "moves": [
+   {
+    "from_kind": "module-css",
+    "to_kind": "code-css",
+    "orig_range": [
+     0,
+     27
+    ],
+    "cand_range": [
+     390,
+     862
+    ],
+    "similarity": 0.667,
+    "basis": "content"
+   },
+   {
+    "from_kind": "module-css",
+    "to_kind": "code-css",
+    "orig_range": [
+     40,
+     307
+    ],
+    "cand_range": [
+     390,
+     862
+    ],
+    "similarity": 0.991,
+    "basis": "content"
+   },
+   {
+    "from_kind": "module-css",
+    "to_kind": "code-css",
+    "orig_range": [
+     668,
+     747
+    ],
+    "cand_range": [
+     390,
+     862
+    ],
+    "similarity": 0.975,
+    "basis": "content"
+   }
+  ],
+  "external_own_delivery": false
+ },
+ "blocks": [
+  {
+   "id": "B1",
+   "orig_range": [
+    0,
+    1
+   ],
+   "cand_range": [
+    0,
+    391
+   ],
+   "orig_lines": "1-1",
+   "cand_lines": "1-391",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [
+    "ANNOTATION",
+    "CREDIT-PREVIEW",
+    "DELIVERY-MOVE",
+    "IFTAGS",
+    "TASL-FIELDS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "CREDIT-PREVIEW",
+   "primary_section": 1,
+   "label_prec": {
+    "CREDIT-PREVIEW": "A",
+    "TASL-FIELDS": "A",
+    "IFTAGS": "A",
+    "ANNOTATION": "B",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "CREDIT-PREVIEW": {
+     "cand": [
+      [
+       2,
+       3
+      ],
+      [
+       11,
+       12
+      ]
+     ]
+    },
+    "TASL-FIELDS": {
+     "cand": [
+      [
+       3,
+       11
+      ]
+     ]
+    },
+    "IFTAGS": {
+     "orig": [],
+     "cand": [
+      [
+       0,
+       1
+      ]
+     ]
+    },
+    "ANNOTATION": {
+     "cand": [
+      [
+       35,
+       36
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "orig": [
+      [
+       0,
+       1
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[module CSS]]",
+   "first_added": "[[iftags +テーマ]]"
+  },
+  {
+   "id": "B2",
+   "orig_range": [
+    4,
+    4
+   ],
+   "cand_range": [
+    394,
+    497
+   ],
+   "orig_lines": "at 5",
+   "cand_lines": "395-497",
+   "channel_pair": [
+    "body",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "HEADERVAR",
+    "RESTORATION",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "RESTORATION",
+   "primary_section": 8,
+   "label_prec": {
+    "HEADERVAR": "A",
+    "COMMENT-TEXT": "C",
+    "RESTORATION": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "HEADERVAR": {
+     "orig": [],
+     "cand": [
+      [
+       431,
+       433
+      ],
+      [
+       460,
+       462
+      ],
+      [
+       486,
+       488
+      ]
+     ]
+    },
+    "COMMENT-TEXT": {},
+    "RESTORATION": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       394,
+       497
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "added content matches the original's own earlier region; diff-only signal, supplement decides",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": "/* ===== parallel：原語版の CSS をまとめたもの ===== */"
+  },
+  {
+   "id": "B3",
+   "orig_range": [
+    5,
+    6
+   ],
+   "cand_range": [
+    498,
+    499
+   ],
+   "orig_lines": "6-6",
+   "cand_lines": "499-499",
+   "channel_pair": [
+    "module-css",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "orig": [
+      [
+       5,
+       6
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [
+    "BASE-DELIVERY/CROSS-IMPORT? fragment:parallel (include graph needed to decide base vs cross)"
+   ],
+   "first_removed": "@import url(\"https://scp-wiki-cn.wikidot.com/fragment:parallel/code/2\");",
+   "first_added": ""
+  },
+  {
+   "id": "B4",
+   "orig_range": [
+    9,
+    10
+   ],
+   "cand_range": [
+    502,
+    503
+   ],
+   "orig_lines": "10-10",
+   "cand_lines": "503-503",
+   "channel_pair": [
+    "module-css",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "orig": [
+      [
+       9,
+       10
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [
+    "BASE-DELIVERY/CROSS-IMPORT? fragment:parallel (include graph needed to decide base vs cross)"
+   ],
+   "first_removed": "@import url(\"https://scp-wiki-cn.wikidot.com/fragment:parallel/code/3\");",
+   "first_added": ""
+  },
+  {
+   "id": "B5",
+   "orig_range": [
+    13,
+    14
+   ],
+   "cand_range": [
+    506,
+    507
+   ],
+   "orig_lines": "14-14",
+   "cand_lines": "507-507",
+   "channel_pair": [
+    "module-css",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "orig": [
+      [
+       13,
+       14
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [
+    "BASE-DELIVERY/CROSS-IMPORT? fragment:parallel (include graph needed to decide base vs cross)"
+   ],
+   "first_removed": "@import url(\"https://scp-wiki-cn.wikidot.com/fragment:parallel/code/4\");",
+   "first_added": ""
+  },
+  {
+   "id": "B6",
+   "orig_range": [
+    17,
+    18
+   ],
+   "cand_range": [
+    510,
+    511
+   ],
+   "orig_lines": "18-18",
+   "cand_lines": "511-511",
+   "channel_pair": [
+    "module-css",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "orig": [
+      [
+       17,
+       18
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [
+    "BASE-DELIVERY/CROSS-IMPORT? fragment:parallel (include graph needed to decide base vs cross)"
+   ],
+   "first_removed": "@import url(\"https://scp-wiki-cn.wikidot.com/fragment:parallel/code/5\");",
+   "first_added": ""
+  },
+  {
+   "id": "B7",
+   "orig_range": [
+    21,
+    22
+   ],
+   "cand_range": [
+    514,
+    515
+   ],
+   "orig_lines": "22-22",
+   "cand_lines": "515-515",
+   "channel_pair": [
+    "module-css",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "orig": [
+      [
+       21,
+       22
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [
+    "BASE-DELIVERY/CROSS-IMPORT? fragment:parallel (include graph needed to decide base vs cross)"
+   ],
+   "first_removed": "@import url(\"https://scp-wiki-cn.wikidot.com/fragment:parallel/code/6\");",
+   "first_added": ""
+  },
+  {
+   "id": "B8",
+   "orig_range": [
+    26,
+    41
+   ],
+   "cand_range": [
+    519,
+    519
+   ],
+   "orig_lines": "27-41",
+   "cand_lines": "at 520",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [
+    "EXHIBIT-RESTRUCTURE",
+    "IFTAGS"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "IFTAGS": "A",
+    "EXHIBIT-RESTRUCTURE": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "IFTAGS": {
+     "orig": [
+      [
+       39,
+       40
+      ]
+     ],
+     "cand": []
+    },
+    "EXHIBIT-RESTRUCTURE": {}
+   },
+   "notes": [
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[/module]]",
+   "first_added": ""
+  },
+  {
+   "id": "B9",
+   "orig_range": [
+    306,
+    669
+   ],
+   "cand_range": [
+    784,
+    784
+   ],
+   "orig_lines": "307-669",
+   "cand_lines": "at 785",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [
+    "EXHIBIT-RESTRUCTURE"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "EXHIBIT-RESTRUCTURE": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "EXHIBIT-RESTRUCTURE": {}
+   },
+   "notes": [
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[/module]]",
+   "first_added": ""
+  },
+  {
+   "id": "B10",
+   "orig_range": [
+    746,
+    760
+   ],
+   "cand_range": [
+    861,
+    863
+   ],
+   "orig_lines": "747-760",
+   "cand_lines": "862-863",
+   "channel_pair": [
+    "module-css",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       861,
+       863
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[/module]]",
+   "first_added": "[[/code]]"
+  },
+  {
+   "id": "B11",
+   "orig_range": [
+    762,
+    762
+   ],
+   "cand_range": [
+    865,
+    873
+   ],
+   "orig_lines": "at 763",
+   "cand_lines": "866-873",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "DRAFT-HOST",
+    "SELF-DELIVERY"
+   ],
+   "primary": "SELF-DELIVERY",
+   "primary_section": 3,
+   "label_prec": {
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "SELF-DELIVERY": {
+     "orig": [],
+     "cand": [
+      [
+       867,
+       868
+      ],
+      [
+       871,
+       872
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       867,
+       868
+      ],
+      [
+       871,
+       872
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": ""
+  }
+ ],
+ "derived_presence": {},
+ "summary": {
+  "blocks": 11,
+  "specific": 10,
+  "heuristic": 1,
+  "residue": 0,
+  "skipped": 0,
+  "reindent_blocks": 0,
+  "label_counts": {
+   "ANNOTATION": 1,
+   "CREDIT-PREVIEW": 1,
+   "DELIVERY-MOVE": 8,
+   "IFTAGS": 2,
+   "TASL-FIELDS": 1,
+   "TRANS-UNANCHORED": 2,
+   "COMMENT-TEXT": 1,
+   "HEADERVAR": 1,
+   "RESTORATION": 1,
+   "EXHIBIT-RESTRUCTURE": 2,
+   "DRAFT-HOST": 1,
+   "SELF-DELIVERY": 1
+  }
+ },
+ "residue": [],
+ "skeleton": {
+  "sha256": "0351d884ccef48b3119a725f62eebbf638a8b8330823797b20724cade7c70b7b",
+  "status": "written (new)"
+ }
+}

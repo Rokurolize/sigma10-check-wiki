@@ -1,0 +1,873 @@
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** 平行 版式
+**翻訳責任者:** AI
+**翻訳年:** 2026
+**原題:** 平行 版式
+**著作権者:** Dr Hormress
+**作成年:** 2024
+**初訳時参照リビジョン:** 41
+**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:parallel 平行 版式]
+[[include :scp-jp:credit:end-preview]]
+
+@@@@
+[[=]]
+[[/=]]
+@@@@
+[[div style="position: relative; margin: auto; max-width: 30rem; background-color: rgb(254, 254, 254); border-radius: 1rem;"]]
+[[image https://hormress.github.io/Parallel/images/parallel-theme-logo.svg style="padding: 1rem;"]]
+[[div class="hover" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"]]
+[[image https://hormress.github.io/Parallel/images/parallel-theme-logo-zh.svg style="padding: 1rem;"]]
+[[/div]]
+[[/div]]
+[[div class="theme-title"]]
+2.0.0
+
+@@[[include @@[[span style="opacity: 70%; color: #F00;"]]@@:scp-wiki-cn:@@[[/span]]@@theme:parallel]]@@
+[[/div]]
+
++ 情報
+
+**平行**はSCP-CN Wiki向けに制作されたCSSテーマです。[[[theme:basalt|玄武岩]]]プロジェクトの基本テーマ[[[theme:bedrock|基岩]]]を大きく改変したもので、[[*user Dr Hormress]]が二次開発に使いやすい、作業感のある見た目と複数の配色プリセットを提供します。平行はもともと直接includeされることを主目的としていませんでしたが、もちろん誰でもそう使えます。
+
+平行は基岩から大量のコードを引用しています。ただし安定性を確保するため、メンテナは初期版で採っていた「外部依存型」の設計を取りやめ、基岩と相互に組み込む形へ切り替えて独立開発しやすくしました。Github上の小さなプレースホルダは[[[*https://hormress.github.io/Parallel/|こちら]]]で確認できます。もちろん、[[[*https://github.com/Hormress/Parallel|平行のGithubリポジトリ]]]もあります。
+
+[!-- このテーマには、単独使用を推奨している派生プロジェクト[[[theme:normal|法向投影]]]があります。 --]
+
++ テーマプラグイン
+
+**平行コンポーネント**は、平行テーマのさまざまな面を変更するために作られたコンポーネントです。通常は平行から切り離して使えません。
+
+[[div class="blockquote b-tb bwidth-base bcolor-overtone"]]
+++ [[[component:parallel-classic-header|クラシックヘッダー]]]
+
+{{@@[[include :scp-wiki-cn:component:parallel-classic-header]]@@}}
+[[/div]]
+
++ テーマプリセット
+
+玄武岩と同じように、{{@@[[include]]@@}}構文へ**プリセット**を追加すると、平行の配色を小規模に変更できます。
+
+これらの配色プリセットは、主に二次デザイン用の扱いやすいスタイル基盤として用意されています。単独でincludeすることもできます。以下のプリセットアイコンをクリックすると、このページのプレビュー状態と、表示される{{@@[[include]]@@}}構文例が切り替わります。
+
+[[div class="presets"]]
+[[tabview]]
+[[tab デフォルト]]
+[[div class="code"]]
+{{@@[[include :scp-jp:theme:parallel-jp]]@@}}
+[[/div]]
+[[/tab]]
+[[tab 基岩]]
+[[div class="code"]]
+{{@@[[include :scp-jp:theme:parallel-jp bedrock=*]]@@}}
+[[/div]]
+[[/tab]]
+[[tab レッドストーン]]
+[[div class="code"]]
+{{@@[[include :scp-jp:theme:parallel-jp redstone=*]]@@}}
+[[/div]]
+[[/tab]]
+[[tab 深層岩]]
+[[div class="code"]]
+{{@@[[include :scp-jp:theme:parallel-jp deepslate=*]]@@}}
+[[/div]]
+[[/tab]]
+[[tab 深層ダイヤモンド]]
+[[div class="code"]]
+{{@@[[include :scp-jp:theme:parallel-jp deep-diamond=*]]@@}}
+[[/div]]
+[[/tab]]
+[[tab 深層金鉱]]
+[[div class="code"]]
+{{@@[[include :scp-jp:theme:parallel-jp deep-gold=*]]@@}}
+[[/div]]
+[[/tab]]
+[[/tabview]]
+[[/div]]
+
++ 基本要素の例
+
+> これは引用ブロックです
+> ----
+>> 入れ子の引用
+
+[[include :scp-jp:component:image-block name=https://scp-wiki.wikidot.com/local--files/theme%3Abasalt/basalt_scp_logo-for_lightmode.svg|caption=画像ブロック。|width=280px]]
+
+4つ以上のハイフン「@@----@@」[[footnote]]多くのチュートリアルではハイフンを6つ使っていますが、実際には余分です。[[/footnote]]で水平線を作れます。他の部品、たとえば引用ブロックの中に置かれていなければ、ページを左右いっぱいに横切ります。
+
+見出しは、行頭に1個から6個のプラス記号「+」を入力すると作れます。
+
+[[div]]
+
++* レベル1見出し
+
+++* レベル2見出し
+
++++* レベル3見出し
+
+++++* レベル4見出し
+
++++++* レベル5見出し
+
+++++++* レベル6見出し
+
+[[/div]]
+
+[[tabview]]
+[[tab タブ]]
+これはタブビューです。
+[[/tab]]
+[[tab タブ]]
+見てください。ここにはさらに文章があります。
+
+なんとも精巧です。
+[[/tab]]
+[[tab 長いタブ]]
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+
+これは長いタブです。たくさんの文字があります。
+[[/tab]]
+[[tab このタブには、何か妙な理由でとてもとても長い名前が付いています。なぜでしょう？本当に不思議です。]]
+これは脚注付きのタブです[[footnote]]これは別の脚注です。[[/footnote]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[/tabview]]
+
+[[footnoteblock]]
+
+||~ これは ||~ 表です ||
+||使い方は || 一言では説明しきれません ||
+||||しかもセルを行方向に結合できません。困ったものです ||
+
++ ユーティリティクラス
+
+Tailwind CSSの設計思想と似た形で、平行が提供する基本的な組版要素には一連の**ユーティリティクラス**が含まれます。ただし、Tailwind CSSのように各クラスがほぼ完全に独立しているわけではありません。インラインスタイルをほぼ代替できるほど多様なユーティリティクラスを生成するスクリプトもありません。平行のユーティリティクラスの多くは{{blockquote}}クラス向けに設計されており、先に導入しておく必要があります。主要な組版要素はいずれも{{div.blockquote}}要素の変種です。平行2.0ではこれらのクラスの使い方をほぼ全面的に再設計しましたが、旧版のクラス名も引き続きサポートしています。以下では現行版の標準リファレンスだけを示します。
+
+++ 例
+
+HTML構文に似た{{@@[[div class="クラス名"]]@@}}構文を使うと、クラス付きの{{div}}要素を作れます。{{div}}の内容を{{@@[[/div]]@@}}で囲むのを忘れないでください。
+
+[[div class="blockquote"]]
+{{@@[[div class="blockquote ユーティリティクラス1 ユーティリティクラス2"]]@@}}
+[[/div]]
+
+[[div class="blockquote round-l bwidth-base bcolor-undertone shadow-thick"]]
+{{@@[[div class="blockquote round-l bwidth-base bcolor-undertone shadow-thick"]]@@}}
+[[/div]]
+
+[[div class="blockquote bg-pri b-l bwidth-base bcolor-overtone w-625"]]
+{{@@[[div class="blockquote bg-pri b-l bwidth-base bcolor-overtone w-625"]]@@}}
+[[/div]]
+
+++ 汎用
+
+ブロックレベルのスタイルを扱う一部のユーティリティクラスと、テキストスタイルだけを扱う大半のユーティリティクラスは汎用です。一覧は以下のとおりです。
+
+[[div class="table w-875"]]
+||||~ テキスト揃え||
+||||= 要素内テキストの揃え方を調整します||
+||{{t-left}}||テキストを左揃えにします||
+||{{t-center}}||テキストを中央揃えにします||
+||{{t-right}}||テキストを右揃えにします||
+||{{t-justify}}||テキストを両端揃えにします||
+||||~ オーバーフロー処理||
+||||= 要素内で内容がはみ出す場合の処理を指定します||
+||{{scroll-x}}||要素内の幅が広すぎる場合にスクロールバーを追加します||
+[[/div]]
+
+++ 引用ブロック
+
+[[div class="table w-875"]]
+||||~ 幅の制御||
+||||= 引用ブロックの幅を調整します。幅は{{ページ本文の総幅 * 相対係数}}で計算されます||
+||{{w-125}}||相対係数 = 0.125||
+||{{w-25}}||相対係数 = 0.25||
+||{{w-375}}||相対係数 = 0.375||
+||{{w-50}}||相対係数 = 0.50||
+||{{w-625}}||相対係数 = 0.625||
+||{{w-75}}||相対係数 = 0.75||
+||{{w-875}}||相対係数 = 0.875||
+||{{w-full}}||相対係数 = 1||
+||||~ ボーダー||
+||||= 引用ブロックのボーダーを調整します。引用ブロックには標準で背景色と同じ色のボーダーがあり、ユーティリティクラス{{b}}は特殊な場合にだけ使います||
+||{{b-n}}||引用ブロックにボーダーを付けません||
+||{{b}}||引用ブロックにボーダーを付けます||
+||{{b-l}}||左ボーダー||
+||{{b-r}}||右ボーダー||
+||{{b-lr}}||左右ボーダー||
+||{{b-t}}||上ボーダー||
+||{{b-b}}||下ボーダー||
+||{{b-tb}}||上下ボーダー||
+||||~ ボーダー幅||
+||||= 引用ブロックのボーダー幅を調整します||
+||{{bwidth-base}}||ボーダー幅を{{@@--@@base-border-width}}にします||
+||{{bwidth-thin}}||ボーダー幅を{{@@--@@thin-border-width}}にします||
+||||~ ボーダー色||
+||||= 引用ブロックのボーダー色を調整します||
+||{{bcolor-pri}}||ボーダー色を{{@@--@@basalt-primary-color}}にします||
+||{{bcolor-sec}}||ボーダー色を{{@@--@@basalt-secondary-color}}にします||
+||{{bcolor-ter}}||ボーダー色を{{@@--@@basalt-tertiary-color}}にします||
+||{{bcolor-overtone}}||ボーダー色を{{@@--@@basalt-overtone}}にします||
+||{{bcolor-undertone}}||ボーダー色を{{@@--@@basalt-undertone}}にします||
+||{{bcolor-dark}}||ボーダー色を{{@@--@@basalt-dark-element-color}}にします||
+||{{bcolor-darker}}||ボーダー色を{{@@--@@basalt-darker-element-color}}にします||
+||||~ 角丸||
+||||= 引用ブロックの角丸を調整します。四隅が同時に変化し、現時点では特定の角だけへ適用できません||
+||{{round}}||角丸サイズを{{@@--@@base-border-radius}}にします||
+||{{round-s}}||小さめの角丸||
+||{{round-m}}||中程度の角丸||
+||{{round-l}}||大きめの角丸||
+||||~ 影||
+||||= 引用ブロックの影を調整します。暗色テーマでは影が発光表現に変わります||
+||{{shadow}}||通常の影||
+||{{shadow-thin}}||軽めの影||
+||{{shadow-thick}}||重めの影||
+||||~ 背景色||
+||||= 引用ブロックの背景色を調整します||
+||{{bg-pri}}||背景色を{{@@--@@basalt-primary-color}}にします||
+||{{bg-sec}}||背景色を{{@@--@@basalt-secondary-color}}にします||
+||{{bg-ter}}||背景色を{{@@--@@basalt-tertiary-color}}にします||
+||{{bg-overtone}}||背景色を{{@@--@@basalt-overtone}}にします||
+||{{bg-undertone}}||背景色を{{@@--@@basalt-undertone}}にします||
+||{{bg-dark}}||背景色を{{@@--@@basalt-dark-element-color}}にします||
+||{{bg-darker}}||背景色を{{@@--@@basalt-darker-element-color}}にします||
+||{{bg-alter}}||背景色を{{@@--@@basalt-alternate-color}}、透明度0.075にします||
+||||~ テキスト色||
+||{{color-light}}||明色のテキスト||
+[[/div]]
+
+++ ノートブロック
+
+{{div.wiki-note}}要素と{{note}}要素には、特別なユーティリティクラスは含まれていません。この節であえて取り上げているのは、{{div.wiki-note}}要素が見た目の上ではスタイル付きの{{div.blockquote}}要素と同等だからです。利用者は、スタイル付きの{{div.blockquote}}要素で{{div.wiki-note}}要素を完全に置き換えられます。
+
+[[note]]
+{{@@[[note]]@@}}
+[[/note]]
+
+[[div class="wiki-note"]]
+{{@@[[div class="wiki-note"]]@@}}
+[[/div]]
+
+[[div class="blockquote w-50 b-n bg-alter t-justify"]]
+{{@@[[div class="blockquote w-50 b-n bg-alter t-justify"]]@@}}
+[[/div]]
+
+++ Wikiコンテンツ表
+
+これまでの例とは異なり、通常、{{div.table}}に使うユーティリティクラスはこの{{div}}要素そのものではなく、その中に置かれたWikiコンテンツ表、つまり{{table.wiki-content-table}}要素に作用します。例外として、幅を変更するユーティリティクラスは{{div}}要素に作用し、その中の表を{{div}}の幅いっぱいに広げます。
+
+以下の属性を有効にするには、あらかじめ{{table}}クラスを追加し、これが表を処理するための{{div}}要素であることを宣言してください。表に使えるユーティリティクラスの一覧は以下のとおりです。
+
+[[div class="table w-875"]]
+||||~ オーバーフロー処理||
+||||= 要素内で内容がはみ出す場合の処理を指定します||
+||{{scroll-x}}||要素内の幅が広すぎる場合にスクロールバーを追加します||
+||||~ 幅の制御||
+||||= 幅を調整します。幅は{{ページ本文の総幅 * 相対係数}}で計算されます||
+||{{w-125}}||相対係数 = 0.125||
+||{{w-25}}||相対係数 = 0.25||
+||{{w-375}}||相対係数 = 0.375||
+||{{w-50}}||相対係数 = 0.50||
+||{{w-625}}||相対係数 = 0.625||
+||{{w-75}}||相対係数 = 0.75||
+||{{w-875}}||相対係数 = 0.875||
+||{{w-full}}||相対係数 = 1||
+||||~ 特殊スタイル||
+||||= 表へ特殊なスタイルを付与します||
+||{{b-d}}||表の罫線を表頭の色に合わせて強調します||
+||{{b-3}}||三線表に変更します||
+[[/div]]
+
++ その他
+
+平行に過去追加された細かな変更やコンポーネント対応は、現在も有効です。ただし、一部の機能は今のところ開発・保守を続ける予定がなく、将来的に変わる可能性もあります。以下では、これらの変更とカスタム要素を列挙します。
+
+++ 現時点ではユーティリティクラスで置き換えられないカスタム引用ブロック
+
+[[div class="blockquote title" data-title="サンプル見出し"]]
+{{@@[[div class="blockquote title" data-title="サンプル見出し"]]@@}}
+
+コードの一部は[[[theme:lumina|流明冲击]]]から移植されています。
+[[/div]]
+
+[[div class="blockquote title"]]
+{{@@[[div class="blockquote title"]]@@}}
+
+実は見出しを書かなくても使えます。
+[[/div]]
+
+[[div class="blockquote warning-panel" data-title="異常宗教表現部情報システムからの通知" style="--warning-logo: url("https://ah-sandbox.wikidot.com/local--files/hormress-s-logos/ARED_2.svg");"]]
+
+{{@@[[div class="blockquote warning-panel" data-title="通知見出し" style="--warning-logo: url("背景アイコンのリンク");"]]@@}}
+
+コード内のリンクと見出しを差し替えると、警告または通知を作れます。
+
+[[/div]]
+
+++ 代替ヘッダー形式のサポート（AIMおよびACS）
+
+これら2つのコンポーネントの{{@@[[include]]@@}}構文を、それぞれ{{@@[[div class="Parallel-AIM"]]@@}}と{{@@[[div class="Parallel-ACS"]]@@}}の中に置くと、対応モードを有効にできます。それぞれ特徴的な配色案と視覚スタイルの変更を提供します。
+
+++ Earthwormナビゲーション
+
+このテーマでは、Earthwormナビゲーションがより簡潔なスタイルへ変更されます。
+
+[[div class="earthworm"]]
+[[div class="first {$first}"]]
+  [[div class="inner"]]
+    [[image https://scp-wiki.wdfiles.com/local--files/component%3Aearthworm/Transparent.gif]]
+
+    [[div class="arrow"]]
+    [[/div]]
+
+  [[/div]]
+
+  [[[scp-cn-2808| ]]]
+[[/div]]
+[[div class="hub yes"]]
+  [[[ared-hub| ]]]
+[[/div]]
+[[div class="last {$last}"]]
+  [[div class="inner"]]
+    [[image https://scp-wiki.wdfiles.com/local--files/component%3Aearthworm/Transparent.gif]]
+
+    [[div class="arrow"]]
+    [[/div]]
+
+  [[/div]]
+
+  [[[scp-cn-2900| ]]]
+[[/div]]
+[[/div]]
+
+[[div style="height: 10rem;"]]
+[[/div]]
+
++ 謝辞
+
+このテーマは基本的に、[[*user EstrellaYoshte]]、[[*user Liryn]]、[[*user Placeholder-mcd]]が制作した[[[theme:bedrock|基岩テーマ]]]の再創作です。このテーマのスタイルは[[*user woedenaz]]の[[[theme:black-highlighter-theme|黒色標識ペンテーマ]]]からも大きな影響を受けており、平行が現在使用しているSCPロゴも、そのテーマロゴを基にしています。
+
+中国語支部の[[*user hoah2333]]は、開発構想の最初期、起点新贵族の段階で多くの建設的な意見を寄せてくれました。
+
+上記の方々の貢献は、平行の開発に直接的で大きな影響を与えました。もちろん、問題を報告してくれた利用者の皆さん、各種グループチャットで出会った友人たちもいます。皆さんがいなければ、平行テーマが今日まで歩んでくることはできませんでした！
+
+[[=image https://hormress.github.io/Parallel/images/project-parallel.svg style="width: 60%; padding: 1rem; border-radius: 1rem; background-color: rgb(254, 254, 254);"]]
+
+----
+
++ ソースコード
+
+[[collapsible show="ソースコードを表示" hide="ソースコードを閉じる"]]
+[[code type="css"]]
+@import url('https://hormress.github.io/Parallel/normalize-min.css');
+@import url('https://hormress.github.io/Parallel/parallel-min.css');
+
+/* ===== parallel：原語版の CSS をまとめたもの ===== */
+/* 配色方案：基岩 */
+
+:root {
+    --basalt-primary-color: 254, 254, 254;
+    --basalt-secondary-color: 247, 248, 250;
+    --basalt-tertiary-color: 218, 219, 222;
+    --basalt-main-text-color: 20, 20, 20;
+    --basalt-overtone: 50, 50, 50;
+    --basalt-undertone: 61, 71, 202;
+
+    --basalt-bright-element-color: 16, 76, 184;
+    --basalt-dark-element-color: 18, 20, 150;
+    --basalt-darker-element-color: 8, 10, 60;
+    --basalt-alternate-color: 255, 132, 0;
+    --basalt-positive-color: 24, 163, 20;
+    --basalt-negative-color: 255, 48, 48;
+    --basalt-sub-text-color: 155, 154, 162;
+}
+/* 配色方案：红石 */
+
+:root {
+    --basalt-primary-color: 20, 20, 20;
+    --basalt-secondary-color: 32, 29, 28;
+    --basalt-tertiary-color: 40, 39, 38;
+    --basalt-main-text-color: 254, 254, 254;
+    --basalt-overtone: 254, 254, 254;
+    --basalt-undertone: 202, 20, 20;
+
+    --basalt-bright-element-color: 255, 20, 20;
+    --basalt-dark-element-color: 144, 20, 20;
+    --basalt-darker-element-color: 202, 50, 50;
+    --basalt-alternate-color: 132, 132, 20;
+    --basalt-positive-color: 24, 163, 20;
+    --basalt-negative-color: 255, 48, 48;
+    --basalt-sub-text-color: 162, 154, 155;
+
+    --header-title-color: var(--main-text-color);
+    --header-subtitle-color: var(--main-text-color);
+
+    --top-bar-link-color: var(--basalt-overtone);
+
+    --UI-title-color: var(--basalt-darker-element-color);
+    --UI-title-background-color: var(--basalt-secondary-color);
+}
+/* 配色方案：深板岩 */
+
+:root {
+    --basalt-primary-color: 46, 46, 52;
+    --basalt-secondary-color: 62, 58, 64;
+    --basalt-tertiary-color: 74, 72, 82;
+    --basalt-main-text-color: 254, 254, 254;
+    --basalt-overtone: 254, 254, 254;
+    --basalt-undertone: 144, 144, 152;
+
+    --basalt-bright-element-color: 129, 128, 132;
+    --basalt-dark-element-color: 112, 112, 118;
+    --basalt-darker-element-color: 161, 160, 164;
+    --basalt-alternate-color: 132, 132, 20;
+    --basalt-positive-color: 24, 163, 20;
+    --basalt-negative-color: 255, 48, 48;
+    --basalt-sub-text-color: 162, 154, 155;
+
+    --link-color: 220, 220, 224;
+    --link-visited-color: 195, 195, 199;
+
+    --header-title-color: var(--main-text-color);
+    --header-subtitle-color: var(--main-text-color);
+
+    --top-bar-link-color: var(--basalt-overtone);
+
+    --UI-title-color: var(--basalt-darker-element-color);
+    --UI-title-background-color: var(--basalt-secondary-color);
+}
+/* 配色方案：深板岩钻石 */
+
+:root {
+    --basalt-primary-color: 46, 46, 52;
+    --basalt-secondary-color: 62, 58, 64;
+    --basalt-tertiary-color: 74, 72, 82;
+    --basalt-main-text-color: 254, 254, 254;
+    --basalt-overtone: 254, 254, 254;
+    --basalt-undertone: 144, 204, 254;
+
+    --basalt-bright-element-color: 142, 192, 232;
+    --basalt-dark-element-color: 128, 178, 222;
+    --basalt-darker-element-color: 138, 188, 234;
+    --basalt-alternate-color: 132, 132, 20;
+    --basalt-positive-color: 24, 163, 20;
+    --basalt-negative-color: 255, 48, 48;
+    --basalt-sub-text-color: 162, 154, 155;
+
+    --header-title-color: var(--main-text-color);
+    --header-subtitle-color: var(--main-text-color);
+    --header-color-one: 32, 64, 128;
+    --header-color-two: 64, 128, 254;
+
+    --top-bar-link-color: var(--basalt-overtone);
+
+    --UI-title-color: var(--basalt-darker-element-color);
+    --UI-title-background-color: var(--basalt-secondary-color);
+}
+
+/* {$bedrock}/
+
+/{$bedrock} */
+
+/* {$redstone}/
+
+/{$redstone} */
+
+/* {$deepslate}/
+
+/{$deepslate} */
+
+/* {$deep-diamond}/
+
+/{$deep-diamond} */
+
+/* {$deep-gold}/
+
+/{$deep-gold} */
+
+:root {--set-safari-mode-disabled: set;}
+p:has(iframe) {margin: 0;}
+body {
+    transition: background-color 0.125s;
+}
+
+:where(#page-content) tt {
+    padding: 0 0.25em;
+    border-radius: 0.25em;
+    background-color: rgb(var(--basalt-secondary-color));
+}
+
+div.Parallel-ACS tt {
+    background-color: transparent;
+}
+
+div.hover {
+    opacity: 0;
+    background-color: rgb(254, 254, 254);
+    transition: ease 0.25s;
+    border-radius: 1rem;
+}
+
+div.hover:hover {
+    opacity: 1;
+}
+
+div#page-content > h1 {
+    margin-top: 4rem;
+}
+
+div.theme-title {
+    text-align: center;
+    font-weight: 700;
+    font-family: var(--mono-font);
+    font-size: 1.2em;
+}
+
+div.presets .yui-navset.yui-navset-top > ul.yui-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0.5rem;
+    background-color: transparent;
+}
+
+div.presets .yui-navset.yui-navset-top > div.yui-content {
+    border: none;
+    padding: 0.5rem 0;
+}
+
+div.presets .yui-navset.yui-navset-top > div.yui-content div.code {
+    margin: 0;
+}
+
+div.presets .yui-navset.yui-navset-top > ul.yui-nav > li a {
+    flex-direction: column;
+    padding: 0.5rem;
+    background-color: rgb(var(--basalt-secondary-color));
+}
+
+div.presets .yui-navset.yui-navset-top > ul.yui-nav > li a em {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.25rem 0.5rem;
+    color: rgb(var(--block-color));
+    background-color: rgb(var(--block-bg));
+}
+
+div.presets .yui-navset.yui-navset-top > ul.yui-nav > li a::before {
+    content: "";
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-image: var(--logo), repeating-linear-gradient(var(--diagonal-stripes-angle), rgba(var(--diagonal-stripes-color), var(--diagonal-stripes-opacity)), rgba(var(--diagonal-stripes-color), var(--diagonal-stripes-opacity)) var(--diagonal-stripes-width), transparent var(--diagonal-stripes-width), transparent var(--diagonal-stripes-gap)), linear-gradient(var(--header-gradient-rotation), rgba(var(--header-color-one), 0.75) 0%, rgb(var(--header-color-two)) 100%);
+    background-size: 80% auto, 100%, 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    --diagonal-stripes-color: var(--block-bg);
+}
+
+div.presets .yui-navset.yui-navset-top > ul.yui-nav > li:nth-child(1) {
+    --block-color: 20, 20, 20;
+    --block-bg: 254, 254, 254;
+    --block-border: 239, 239, 240;
+
+    --header-color-one: 144, 20, 20;
+    --header-color-two: 72, 20, 20;
+}
+
+div.presets .yui-navset.yui-navset-top > ul.yui-nav > li:nth-child(2) {
+    --block-color: 20, 20, 20;
+    --block-bg: 254, 254, 254;
+    --block-border: 247, 248, 250;
+
+    --header-color-one: 18, 20, 150;
+    --header-color-two: 8, 10, 60;
+}
+
+div.presets .yui-navset.yui-navset-top > ul.yui-nav > li:nth-child(3) {
+    --block-color: 254, 254, 254;
+    --block-bg: 20, 20, 20;
+    --block-border: 32, 29, 28;
+
+    --header-color-one: 144, 20, 20;
+    --header-color-two: 202, 50, 50;
+}
+
+div.presets .yui-navset.yui-navset-top > ul.yui-nav > li:nth-child(4),
+div.presets .yui-navset.yui-navset-top > ul.yui-nav > li:nth-child(5),
+div.presets .yui-navset.yui-navset-top > ul.yui-nav > li:nth-child(6) {
+    --block-color: 254, 254, 254;
+    --block-bg: 46, 46, 52;
+    --block-border: 62, 58, 64;
+}
+
+div.presets .yui-navset.yui-navset-top > ul.yui-nav > li:nth-child(4) {
+    --header-color-one: 112, 112, 118;
+    --header-color-two: 161, 160, 164;
+}
+
+div.presets .yui-navset.yui-navset-top > ul.yui-nav > li:nth-child(5) {
+    --header-color-one: 32, 64, 128;
+    --header-color-two: 64, 128, 254;
+}
+
+div.presets .yui-navset.yui-navset-top > ul.yui-nav > li:nth-child(6) {
+    --header-color-two: 244, 188, 102;
+    --header-color-one: 254, 218, 124;
+}
+
+:root:has(div.presets ul.yui-nav > li.selected:nth-child(2)) {
+    --basalt-primary-color: 254, 254, 254;
+    --basalt-secondary-color: 247, 248, 250;
+    --basalt-tertiary-color: 218, 219, 222;
+    --basalt-main-text-color: 20, 20, 20;
+    --basalt-overtone: 50, 50, 50;
+    --basalt-undertone: 61, 71, 202;
+
+    --basalt-bright-element-color: 16, 76, 184;
+    --basalt-dark-element-color: 18, 20, 150;
+    --basalt-darker-element-color: 8, 10, 60;
+    --basalt-alternate-color: 255, 132, 0;
+    --basalt-positive-color: 24, 163, 20;
+    --basalt-negative-color: 255, 48, 48;
+    --basalt-sub-text-color: 155, 154, 162;
+}
+
+:root:has(div.presets ul.yui-nav > li.selected:nth-child(3)) {
+    --basalt-primary-color: 20, 20, 20;
+    --basalt-secondary-color: 32, 29, 28;
+    --basalt-tertiary-color: 40, 39, 38;
+    --basalt-main-text-color: 254, 254, 254;
+    --basalt-overtone: 254, 254, 254;
+    --basalt-undertone: 202, 20, 20;
+
+    --basalt-bright-element-color: 255, 20, 20;
+    --basalt-dark-element-color: 144, 20, 20;
+    --basalt-darker-element-color: 202, 50, 50;
+    --basalt-alternate-color: 132, 132, 20;
+    --basalt-positive-color: 24, 163, 20;
+    --basalt-negative-color: 255, 48, 48;
+    --basalt-sub-text-color: 162, 154, 155;
+
+    --header-title-color: var(--main-text-color);
+    --header-subtitle-color: var(--main-text-color);
+
+    --top-bar-link-color: var(--basalt-overtone);
+
+    --UI-title-color: var(--basalt-darker-element-color);
+    --UI-title-background-color: var(--basalt-secondary-color);
+}
+
+:root:has(div.presets ul.yui-nav > li.selected:nth-child(4)) {
+    --basalt-primary-color: 46, 46, 52;
+    --basalt-secondary-color: 62, 58, 64;
+    --basalt-tertiary-color: 74, 72, 82;
+    --basalt-main-text-color: 254, 254, 254;
+    --basalt-overtone: 254, 254, 254;
+    --basalt-undertone: 144, 144, 152;
+
+    --basalt-bright-element-color: 129, 128, 132;
+    --basalt-dark-element-color: 112, 112, 118;
+    --basalt-darker-element-color: 161, 160, 164;
+    --basalt-alternate-color: 132, 132, 20;
+    --basalt-positive-color: 24, 163, 20;
+    --basalt-negative-color: 255, 48, 48;
+    --basalt-sub-text-color: 162, 154, 155;
+
+    --link-color: 220, 220, 224;
+    --link-visited-color: 195, 195, 199;
+
+    --header-title-color: var(--main-text-color);
+    --header-subtitle-color: var(--main-text-color);
+
+    --top-bar-link-color: var(--basalt-overtone);
+
+    --UI-title-color: var(--basalt-darker-element-color);
+    --UI-title-background-color: var(--basalt-secondary-color);
+}
+
+:root:has(div.presets ul.yui-nav > li.selected:nth-child(5)) {
+    --basalt-primary-color: 46, 46, 52;
+    --basalt-secondary-color: 62, 58, 64;
+    --basalt-tertiary-color: 74, 72, 82;
+    --basalt-main-text-color: 254, 254, 254;
+    --basalt-overtone: 254, 254, 254;
+    --basalt-undertone: 144, 204, 254;
+
+    --basalt-bright-element-color: 142, 192, 232;
+    --basalt-dark-element-color: 128, 178, 222;
+    --basalt-darker-element-color: 138, 188, 234;
+    --basalt-alternate-color: 132, 132, 20;
+    --basalt-positive-color: 24, 163, 20;
+    --basalt-negative-color: 255, 48, 48;
+    --basalt-sub-text-color: 162, 154, 155;
+
+    --header-title-color: var(--main-text-color);
+    --header-subtitle-color: var(--main-text-color);
+    --header-color-one: 32, 64, 128;
+    --header-color-two: 64, 128, 254;
+
+    --top-bar-link-color: var(--basalt-overtone);
+
+    --UI-title-color: var(--basalt-darker-element-color);
+    --UI-title-background-color: var(--basalt-secondary-color);
+}
+
+:root:has(div.presets ul.yui-nav > li.selected:nth-child(6)) {
+    --basalt-primary-color: 46, 46, 52;
+    --basalt-secondary-color: 62, 58, 64;
+    --basalt-tertiary-color: 74, 72, 82;
+    --basalt-main-text-color: 254, 254, 254;
+    --basalt-overtone: 254, 254, 254;
+    --basalt-undertone: 254, 234, 152;
+
+    --basalt-bright-element-color: 232, 152, 80;
+    --basalt-dark-element-color: 244, 188, 102;
+    --basalt-darker-element-color: 254, 218, 124;
+    --basalt-alternate-color: 132, 132, 20;
+    --basalt-positive-color: 24, 163, 20;
+    --basalt-negative-color: 255, 48, 48;
+    --basalt-sub-text-color: 162, 154, 155;
+
+    --header-title-color: var(--main-text-color);
+    --header-subtitle-color: var(--main-text-color);
+    --header-color-one: var(--basalt-darker-element-color);
+    --header-color-two: var(--basalt-dark-element-color);
+
+    --UI-title-color: var(--basalt-darker-element-color);
+    --UI-title-background-color: var(--basalt-secondary-color);
+}
+
+.table[class*="w-"] :is(table, table.wiki-content-table) {
+    width: 100%;
+}
+
+.table[class*="w-"] {
+    margin-inline: auto;
+    width: calc(var(--main-content-width) * var(--_relative-width));
+}
+
+@media (max-width: 580px) {
+    div.presets .yui-navset.yui-navset-top > ul.yui-nav {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+.earthworm {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin: 1em 0;
+    clear: both;
+    z-index: 0;
+    min-height: 36px;
+}
+.earthworm > div {
+    display: flex;
+    align-items: center;
+}
+.earthworm p {
+    margin: 0 0.8em;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+}
+.earthworm .first {
+    border-top: 2px rgba(150,150,150,0.5) solid;
+    border-bottom: 2px rgba(150,150,150,0.5) solid;
+    position: relative;
+}
+.earthworm .first:not(.true) img {
+    height: 100%;
+    width: auto;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -1.5px;
+    border: 2.8px rgba(150,150,150,0.5) solid;
+    transform: scale(0.707) rotate(-45deg);
+    border-width: 2.8px 0 0 2.8px;
+    transform-origin: 0% 100%;
+}
+.earthworm .hub {
+    margin: -3px 0;
+    border: 3px rgba(150,150,150,0.5) solid;
+    background: linear-gradient(10deg, rgba(150,150,150,0.1), rgba(150,150,150,0));
+    position: relative;
+    z-index: 5;
+}
+.earthworm .hub.no a,
+.earthworm a[href="/"] {
+    color: #333;
+    text-decoration: none;
+    cursor: text;
+    pointer-events: none;
+}
+.earthworm .last {
+    border-top: 2px rgba(150,150,150,0.5) solid;
+    border-bottom: 2px rgba(150,150,150,0.5) solid;
+    position: relative;
+}
+.earthworm .last:not(.true) img {
+    height: 100%;
+    width: auto;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: -1.5px;
+    border: 2.8px rgba(150,150,150,0.5) solid;
+    transform: scale(0.707) rotate(45deg);
+    border-width: 2.8px 2.8px 0 0;
+    transform-origin: 100% 100%;
+}
+.earthworm div.true {
+    width: 0;
+}
+.earthworm div.true p {
+    display: none;
+}
+.earthworm a {
+    word-break: normal;
+}
+[[/code]]
+[[/collapsible]]
+
+[[/iftags]]
+
+[[module css]]
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aparallel-jp/1")
+[[/module]]
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme= https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aparallel-jp/1
+]]

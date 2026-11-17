@@ -1,0 +1,2041 @@
+[[include :bettersandbox:pnmcss]]
+
+[[module CSS]]
+
+@charset "utf-8";
+
+/*
+
+
+    ParaBlue Theme
+    [2022 Wikidot Theme]
+    By OxygenNine
+    Based on:
+       Penumbra Theme by EstrellaYoshte
+
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap'); @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('http://scpsandboxcn.wikidot.com/local--files/oxygen9-files/AiDeep%20%281%29.otf');
+
+@import url('https://scpsandboxcn.wikidot.com/local--files/oxygen9-files/pnmcss.css')
+
+
+.printuser a {
+    margin-right: 0px;
+}
+
+/* toggle sidebar */
+
+#top-bar .open-menu a {
+        position: fixed;
+        top: 0.5em;
+        left: 0.5em;
+        z-index: 5;
+        font-family: 'Nanum Gothic', san-serif;
+        font-size: 30px;
+        font-weight: 700;
+        width: 30px;
+        height: 30px;
+        line-height: 0.9em;
+        text-align: center;
+        border: 0.2em solid #888;
+        background-color: #fff;
+        border-radius: 3em;
+        color: #888;
+}
+
+@media (min-width: 768px) {
+
+    #top-bar .mobile-top-bar {
+        display: block;
+    }
+
+    #top-bar .mobile-top-bar li {
+        display: none;
+    }
+
+    #main-content {
+        max-width: 708px;
+        margin: 0 auto;
+        padding: 0;
+        transition: max-width 0.2s ease-in-out;
+    }
+
+    #side-bar {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -20em;
+        width: 17.75em;
+        height: 100%;
+        margin: 0;
+        overflow-y: auto;
+        z-index: 10;
+        padding: 1em 1em 0 1em;
+        background-color: rgba(0,0,0,0.1);
+        transition: left 0.4s ease-in-out;
+
+        scrollbar-width: thin;
+    }
+
+    #side-bar:target {
+        left: 0;
+    }
+
+     #side-bar:focus-within:not(:target) {
+        left: 0;
+    }
+
+    #side-bar:target .close-menu {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        margin-left: 19.75em;
+        opacity: 0;
+        z-index: -1;
+        visibility: visible;
+    }
+    #side-bar:not(:target) .close-menu { display: none; }
+
+    #top-bar .open-menu a:hover {
+        text-decoration: none;
+    }
+
+    /* FIREFOX-SPECIFIC COMPATIBILITY METHOD */
+
+    @supports (-moz-appearance:none) {
+    #top-bar .open-menu a {
+        pointer-events: none;
+    }
+    #side-bar:not(:target) .close-menu {
+        display: block;
+        pointer-events: none;
+        user-select: none;
+        z-index: -1;
+    }
+
+    /* This pseudo-element is meant to overlay the regular sidebar button
+    so the fixed positioning (top, left, right and/or bottom) has to match */
+
+    #side-bar .close-menu::before {
+        content: "";
+        position: fixed;
+        z-index: 5;
+        display: block;
+
+        top: 0.5em;
+        left: 0.5em;
+
+        border: 0.2em solid transparent;
+        width: 30px;
+        height: 30px;
+        font-size: 30px;
+        line-height: 0.9em;
+
+        pointer-events: all;
+        cursor: pointer;
+    }
+    #side-bar:focus-within {
+        left: 0;
+    }
+    #side-bar:focus-within .close-menu::before {
+        pointer-events: none;
+    }
+    }
+
+}
+
+:root {
+  --header-title: "SCP基金会";
+  --header-subtitle: "控制 ◉ 收容 ◉ 保护";
+  --lgurl: url("https://scp-wiki.wdfiles.com/local--files/theme%3Apenumbra/logo.png");
+  --accentColor: #7B68EE;
+  --accentColor2: #1c46f7;
+  --alpha: 1;
+}
+
+body {
+    font-family: 'Noto Sans SC', sans-serif;
+    background-color: #000000;
+    background-image: linear-gradient(45deg, black, transparent);
+}
+
+#header h1 a::before, #header h2::before {
+    letter-spacing: 16px;
+    font-family: 'AiDeep','Work Sans', sans-serif !important;
+    font-weight: 700 !important;
+    filter: drop-shadow(0px 0px 6px rgba(0,0,0,1));
+    background-color: var(--accentColor);
+    background-image: linear-gradient(0deg, var(--accentColor) 0%, var(--accentColor2) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#header h1, #header h2 {
+    margin-left: 15px;
+    float: none;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Work Sans', sans-serif !important;
+font-weight: 700 !important;
+text-transform: uppercase !important;
+}
+
+#header h2::before {
+font-size: 1em;
+}
+
+#header h1 a::before {
+font-size: 1em;
+letter-spacing: 5px;
+}
+
+.allmont, .allmont *, .allmont *::before, .allmont *:before, .allmont *::after, .allmont *:after {
+font-family: 'Work Sans', sans-serif !important;
+font-weight: 600;
+}
+
+#content-wrap {
+    position: relative;
+    margin: 2em auto 0;
+    max-width: 95vw;
+    min-height: 1300px;
+    height: auto !important;
+}
+
+#main-content {
+    max-width: 90%;
+    margin: 0 auto;
+    transition: max-width 0.2s ease-in-out !important;
+    border: solid 3px #4b4b4b;
+    background-image: linear-gradient(0deg, #2b2b2b, #313131);
+    padding: 4em 15px 15px 15px !important;
+    font-size: 105%;
+    top: -2em;
+}
+
+@media (max-width: 768px) {
+    #main-content {
+    max-width: 98% !important;
+    }
+}
+
+#page-title {
+    color: #ededed;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.65rem;
+    text-align: left;
+    border-color: #ededed;
+    padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+    border-bottom: solid 3px #595959;
+}
+
+hr {
+    background-color: #595959;
+    max-width: 90%;
+    margin: 0 auto !important;
+    position: relative;
+}
+
+#page-content {
+    font-size: .99rem;
+    background: #262626;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#page-info {
+    color: #707070;
+}
+
+a:hover {text-decoration:none;}
+
+#top-bar ul li ul, #top-bar ul li ul li ul {
+    border-color: var(--accentColor);
+    box-shadow: none;
+    border-left: solid 5px var(--accentColor);
+    border-right: none;
+}
+
+#top-bar {
+    top: 11.4rem;
+}
+
+#header-extra-div-1 {
+    width: 95%;
+    background: #454545;
+    height: 2em;
+    top: 4.9em;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 1em;
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 25%);
+}
+
+div#extra-div-1 {
+    height: 164px;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    background: var(--lgurl);
+    background-size: 25em;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    z-index: -3;
+    opacity: var(--alpha);
+}
+
+div#extra-div-2 {
+    height: 164px;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    background: linear-gradient(0deg, #0000005c 10%, transparent 100%);
+    background-size: 45em;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    z-index: -3;
+    opacity: 1;
+}
+
+/* ACTION AREA */
+
+#action-area {
+    width: 96%;
+    background: #000;
+    border: solid 3px var(--accentColor);
+    padding: 1em;
+    margin: 0 auto;
+}
+
+input.text {
+    border: solid 2px var(--accentColor);
+    margin: 0 1px;
+    padding: 0.2rem;
+    background-color: #3f3f3f;
+    color: #fff;
+    text-align: center;
+    width: 95%;
+}
+
+table.form {
+    margin: 0 auto !important;
+    padding: 0;
+}
+
+table.form td, table.form th {
+    vertical-align: top;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+.wd-editor-toolbar-panel {
+    align-items: center;
+}
+
+.wd-editor-toolbar-panel div {
+    height: 40px;
+    display: flex;
+}
+
+.wd-editor-toolbar-panel ul li a {
+    height: 22px;
+    width: 22px;
+    padding: 0px;
+    margin: 0em 0.2em 0em 0.2em;
+    display: block;
+    transition: box-shadow 0.2s , filter 0.3s;
+}
+
+.wd-editor-toolbar-panel li.hseparator {
+    width: 2px;
+    height: 33px;
+    margin: 0 5px;
+    background-color: #efefef;
+}
+
+#edit-page-comments {
+    width: 100%;
+    height: 4rem;
+}
+
+.wd-editor-toolbar-panel a {
+    background-image: url(http://paraarc-sandbox.wikidot.com/local--files/files/eidicons1.svg);
+    background-size: 969px;
+    zoom: 1.4;
+}
+
+.wd-editor-toolbar-panel a:hover {
+    background-image: url(http://paraarc-sandbox.wikidot.com/local--files/files/eidicons1.svg);
+    filter: brightness(1) contrast(1.5) invert(1);
+    box-shadow: 2px 2px 0px rgb(0 0 0 / 50%);
+}
+
+.wd-editor-toolbar-panel ul {
+    padding: 0;
+    margin: 0 auto;
+    float: left;
+    list-style: none;
+}
+
+@media (max-width: 768px) {
+    .wd-editor-toolbar-panel li.hseparator {
+        width: 2px !important;
+        height: 23p !importantx;
+        margin: 5px 3px !important;
+        background-color: #efefef !important;
+    }
+    .wd-editor-toolbar-panel ul li {
+        padding: 0 !important;
+        margin: 0px !important;
+        float: left !important;
+    }
+    .wd-editor-toolbar-panel ul {
+        padding: 0 !important;
+        margin: 0 auto !important;
+        float: left !important;
+        list-style: none !important;
+    }
+    .wd-editor-toolbar-panel div {
+        height: 30px !important;
+    }
+}
+
+textarea {
+    padding: 10px;
+    font-size: 100%;
+    border: solid 2px var(--accentColor);
+    background-color: #232323;
+    color: #f0f0f0;
+    font-family: "Fira Code", '幼圆', monospace;
+}
+
+change-textarea-size a {
+    color: var(--accentColor);
+    background-color: #000;
+    border: solid 2px var(--accentColor);
+    padding: 4px 4px;
+    font-size: 1.3em;
+    text-decoration: none;
+    top: 0.4em;
+    position: relative;
+}
+
+#lock-info {
+    background-color: var(--darkerColor);
+    border-color: #ededed;
+    border: solid 2px var(--accentColor);
+    display: inline-block;
+    position: relative;
+    right: -5em;
+}
+
+div#lock-info {
+    font-size: 0;
+    margin: 0.8rem 0;
+    padding: 0.4rem 0.8rem;
+    margin-left: 2rem;
+    height: 4.4rem;
+}
+
+div#lock-info > strong {
+    font-size: 0.82rem;
+    color: var(--accentColor);
+    font-family: 'Fira Code' , monospace;
+}
+
+#edit-save-button {
+    color: #33ff33;
+    border: solid 2px #11aa11;
+    transition: color 0.15s linear;
+}
+
+#edit-save-button:hover {
+    color: #000000;
+    background-color: #33ff33;
+}
+
+#edit-cancel-button {
+    color: #ff3333;
+    border: solid 2px #aa1111;
+    transition: color 0.15s linear;
+}
+
+#edit-cancel-button:hover {
+    color: #000000;
+    background-color: #ff3333;
+}
+
+.buttons .btn {
+    width: 7em;
+    display: inline;
+}
+
+div.buttons.alignleft {
+    text-align: center;
+}
+
+.page-options-bottom {
+    margin: 4px 0;
+    text-align: right;
+    height: 1%;
+    line-height: 230%;
+}
+
+.yui-ac-content {
+    border: solid 2px var(--accentColor);
+    background: #2c2c2c;
+}
+
+.autocomplete-list li {
+    padding: 0 0.5em;
+    cursor: pointer;
+}
+
+.autocomplete-list li.yui-ac-highlight {
+    background-color: #4a4a4a;
+}
+
+/* Code Block */
+
+.code {
+    background-color: #000000;
+    border: solid 3px var(--accentColor);
+    box-shadow: 0px 0px 10px var(--accentColor);
+}
+
+.code pre, .code p, .code {
+    color: #fff;
+}
+
+.hl-code {color: #c1c1c1;}
+.hl-var {color: #6dff6d;}
+.hl-identifier {color: #ffffff;}
+.hl-identifier {color: #ffffff;}
+.hl-reserved {color: #9898ff;}
+.hl-number {color: #de80ff;font-style:italic;}
+.hl-string {color: #fffb3e;}
+.hl-brackets {color: #969696;}
+.hl-special {color: #5b5bff;font-weight: bold;}
+
+/* Others */
+
+#main-content .page-tags a::before {
+    content:'◌'
+}
+
+#main-content .page-tags a:hover::before {
+    content:'◉'
+}
+
+#main-content .page-tags a {
+    margin-top: 0.18rem;
+    background: #6e6e6e;
+    padding: 0.1em 0.3em;
+    font-size: 1.2em;
+    color: #fff;
+    border-radius: 0.4em;
+    border: solid 2px #4d4d4d;
+    position: relative;
+    top: 0em;
+    display: inline-block;
+    transition:color 0.3s, border 0.3s, background 0.3s, font-weight 0.3s; box-shadow 0.3s
+}
+
+#main-content .page-tags a:hover {
+    background: var(--accentColor);
+    color: #000;
+    border: solid 2px #a99eef;
+    font-weight: bolder;
+    box-shadow: 0px 0px 10px var(--accentColor);
+}
+
+.page-tags span {
+    border-top: none;
+}
+
+.page-tags span::before {
+    content:'TAGS:';
+    font-weight: bolder;
+    color:#fff;
+    font-size:1.2em;
+}
+
+#main-content .page-tags {
+    margin: 1em 0 0;
+    padding: 0.5rem;
+    background: #3e3e3e;
+    border-radius: 2em;
+}
+
+.page-options-bottom a {
+    font-size: 105%;
+    border: solid 1px var(--accentColor);
+    padding: 2px 8px;
+    margin-top: 0.7em;
+    word-break: keep-all;
+}
+
+.keycap {
+    border: 2px solid;
+    border-color: #dfdfdf #8d8d8d #bbb #ddd;
+    border-bottom-width: 2px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 5px;
+    background-color: #696969;
+    padding: 1px 3px;
+    font-family: inherit;
+    font-size: .85em;
+    white-space: nowrap;
+}
+
+a.newpage {
+    filter: hue-rotate(90deg) !important;
+}
+
+a.newpage::after {
+    content:'（尚不存在）';
+}
+
+a.newpage:hover::after {
+    content:'（点击建立）' !important;
+}
+
+/* Custom Divs */
+
+div.note {
+    background: #4f4f4f;
+    border-left: dashed 6px var(--accentColor);
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    padding: 0.2em 0.2em 0.2em 0.5em;
+    box-shadow: 5px 5px 0px #404040;
+    max-width:
+}
+
+div.typer {
+    background: #000;
+    border-top: solid 3px #7f7;
+    padding: 1rem;
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: solid 3px #7f7;
+    transition:box-shadow 0.5s;
+    box-shadow:0px 0px 0px rgba(0,0,0,0);
+    margin-top: 0.5em;
+}
+
+div.blockquote {
+    box-shadow:-3px 0px 0px var(--accentColor) !important;
+}
+
+div.typer:hover {
+    box-shadow:0px 0px 15px rgba(0,255,0,0.5);
+}
+
+div.typer blockquote {
+    border-left:solid 3px #0c0;
+    box-shadow:none;
+}
+
+div.typer div.note {
+    border-left: dashed 6px #0c0;
+}
+
+div.typer a {
+    color:#00ff00;
+}
+
+div.typer a:hover {
+    color:#ffffff;
+    background-color:#00dd00;
+    text-decoration: underline !important;
+
+}
+
+div.typer a:hover::before {
+    content:'>'
+}
+
+div.modal {
+    background: #4b4b4b;
+    padding: 0.3em 1em 0.3em 1em;
+    margin-top: 0.5em;
+    border: solid 2px #5d5d5d;
+}
+
+div.modal2 {
+    background: #4b4b4b;
+    padding: 0.3em 1em 0.3em 1em;
+    margin-top: 0.5em;
+    border: solid 2px #5d5d5d;
+    border-radius: 12px;
+}
+
+div.modal3 {
+    background: #292929;
+    padding: 0.3em 1em 0.3em 1em;
+    margin-top: 0.5em;
+    border-left: solid 5px #999999;
+    border-right: solid 5px #999999;
+}
+span.type-cursor::after {
+    content: '_';
+    background: rgba(255,255,255,0);
+    animation: typeblink 0.6s infinite;
+    -webkit-animation: typeblink 1s infinite;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+}
+
+@keyframes typeblink {
+    0% {background:rgba(255,255,255,1);}
+    100% {background:rgba(255,255,255,0);}
+}
+
+@-webkit-keyframes typeblink {
+    0% {background:rgba(255,255,255,1);}
+    100% {background:rgba(255,255,255,0);}
+}
+
+.round {
+    border-radius:12px !important;
+}
+
+/* wikidot divs */
+
+#page-content .wiki-content-table tr th {
+    border: solid 1px var(--accentColor);
+    color: #000;
+    background-color: var(--accentColor);
+}
+
+@media (max-width: 768px) {
+.wd-editor-toolbar-panel div {
+    height: 30px !important;
+    display: block !important;
+}
+}
+
+@media (min-width: 768px) {
+    .smalltab .yui-navset {
+        max-width: 75% !important;
+        margin: 0.5em auto;
+    }
+    div.modal, div.note, div.modal2, div.modal3 {
+        max-width:90% !important;
+        margin:0.5em auto;
+    }
+    #main-content .page-tags span {
+    max-width: 100%;
+    }
+}
+
+/* forum */
+
+.forum-group div.head {
+    background-color: #515151;
+    color: #FFF;
+    padding: 0.5em 1em;
+    margin: 0;
+    border: 3px solid #717171;
+}
+
+.forum-group table,.forum-category-box table {
+    border-spacing: 0px;
+}
+
+.forum-category-box table {
+    border:none;
+}
+
+.forum-group table td {
+    border: 2px solid rgba(255,255,255,0.3);
+    padding: 2px 10px;
+}
+
+.forum-group table tr.head td,.forum-category-box table tr.head td {
+    text-align: center;
+    font-size: 85%;
+    background-color: var(--accentColor);
+}
+
+.forum-category-box .description-block {
+    border: 3px solid #656565;
+    margin: 1em 4em;
+    padding: 0.5em;
+    background-color: #3a3a3a;
+    height: 100%;
+    overflow: hidden;
+}
+
+div.new-post {
+    text-align: center;
+    margin: 20px 0;
+}
+
+div.new-post a {
+    border: 6px solid var(--accentColor);
+    background-color: #000000;
+    padding: 5px 10px;
+    font-size: 100%;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 18px;
+    transition:background-color 0.4s, color 0.4s, padding 0.4s
+}
+
+div.new-post a:hover {
+    background-color: var(--accentColor);
+    color: #000;
+    padding: 5px 50px;
+}
+
+.forum-thread-box .description-block {
+    padding: 0.5em 1em;
+    border-radius: 0px;
+    box-shadow: none;
+    background: #000;
+    border: solid 3px var(--accentColor);
+}
+
+.thread-container .post .head {
+    padding: 0.5em 1em;
+    background-color: #606060;
+    background-image: linear-gradient(63deg, #2b2b2b, #3e3e3e);
+    box-shadow: inset 2px 3px 6px rgb(0 0 0 / 15%);
+    border-radius: 0px;
+}
+
+.thread-container .post {
+    padding: 10px 0 10px 0;
+    width: 99%;
+    border-left: solid 4px var(--accentColor);
+    padding-left: 1em;
+    margin-top: 1em;
+}
+
+.thread-container .post .long .head .info {
+    background-image: linear-gradient(45deg, #493e8d85, transparent);
+    padding: 3px;
+    border-radius: 1em;
+    padding: 0px;
+    font-size: 0.8rem;
+    left: -2em;
+    position: relative;
+}
+
+div.info .printuser img.small {
+    vertical-align: -1.7em;
+    margin: 0px;
+    width: 32px;
+    height: 32px;
+    z-index: 0;
+    padding: 11px 11px 11px 11px;
+    background-repeat: no-repeat;
+    background-position: 395% 80%;
+    border-radius: 50%;
+    background-size: 45px 17px;
+}
+
+/* Component:http://scp-jp-sandbox3.wikidot.com/component:non-savingpage by yuuki410 */
+
+body[class="wait"] #odialog-shader-iframe, body[class="wait"] #odialog-shader {
+  display: none !important;
+}
+#odialog-container {
+  position: fixed !important;
+}
+body[class="wait"] #odialog-container {
+  z-index: -1;
+}
+body[class="wait"] #odialog-container #owindow-1 {
+  display: none !important;
+}
+body[class="wait"] a[name="page-top"][target]+div #main-content #action-area div#lock-info {
+  background-color: #ffcdd2;
+  border: 1px solid #e53935;
+}
+div#lock-info {
+  font-size: 0;
+  margin: .8rem 0;
+  padding: 0.4rem .8rem;
+}
+div#lock-info::before {
+  content: '您握有一个独占的15 分钟锁定，这将会阻止其他人编辑您正在作业的页面。\A这个锁定将在闲置 ';
+  display: inline;
+  font-size: .82rem;
+  white-space: pre-wrap;
+}
+div#lock-info > strong {
+  font-size: .82rem;
+}
+div#lock-info > br {
+  display: none;
+}
+div#lock-info::after {
+  content: ' 秒后失效。';
+  display: inline;
+  font-size: .82rem;
+}
+body[class="wait"] a[name="page-top"][target]+div #main-content #action-area div#lock-info::before {
+  content: '保存页面中……\A若此提示已经显示了很长时间，建议将编辑框中的内容复制到剪切板然后刷新本页重新编辑。';
+  display: inline;
+  font-size: .82rem;
+  color: red;
+  white-space: pre-wrap;
+}
+body[class="wait"] a[name="page-top"][target]+div #main-content #action-area div#lock-info::after {
+  font-size: 0;
+}
+body[class="wait"] a[name="page-top"][target]+div #main-content #action-area div#lock-info>strong {
+  font-size: 0;
+}
+body[class="wait"] a[name="page-top"][target]+div #main-content #action-area div#lock-info::after {
+  font-size: 0;
+}
+
+div.scroll {
+    max-width:100%;
+    overflow-x:scroll;
+    word-break: keep-all;
+}
+
+[[/module]]
+
+[[iftags +版式 +原创]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
+
+这是为[*http://paraarc.wikidot.com 互联网超自然档案馆]所做的CSS版式，基于半影魔改。
+
+它是一个美学版式，并不与任何GoI/设定挂钩。
+
+= 引用此版式：
+[[=]]
+> {{@@[[include :scp-wiki-cn:theme:parablue]]@@}}
+[[/=]]
+
+若需引用亮色版本，在后面加上：
+[[=]]
+> {{@@[[include :paraarc:theme:light-parablue]]@@}}
+[[/=]]
+
+= [http://paraarc.wikidot.com/theme:light-parablue 预览亮色模式]
+
+[[code type="CSS"]]
+:root {
+  --header-title: "版头大标题";
+  --header-subtitle: "版头副标题";
+  --lgurl: url("LOGO url");
+  --accentColor: 强调色1;
+  --accentColor2: 强调色2;
+  --alpha: LOGO不透明度（0~1）
+}
+[[/code]]
+
+[[div class="blockquote"]]
+引用块。
+> 嵌套引用块
+>> 再次嵌套
+[[span class="type-cursor"]]{{@@[[span @@class="##00ccff|type-cursor##"]]}}的后面闪烁着光标[[/span]]
+[[/div]]
+
+
+[[div class="note"]]
+= {{@@[[div @@class="##00ccff|note##"]]}}
+一个装饰性的Div方块。
+[[/div]]
+
+[[div class="typer"]]
+= {{@@[[div @@class="##00ccff|typer##"]]}}
+一个装饰性的Div方块。
+> 自适应的引用块颜色。
+> [[[main |链接样式]]]在此Div中被更改。
+
+[[div class="note"]]
+= {{@@[[div class="note"]]@@}}
+{{@@[[div class="note"]]@@}}也是如此。
+[[/div]]
+
+[[/div]]
+
+[[div class="modal"]]
+= {{@@[[div @@class="##00ccff|modal##"]]}}
+一个装饰性的Div方块。
+[[/div]]
+
+[[div class="modal2"]]
+= {{@@[[div @@class="##00ccff|modal2##"]]}}
+一个装饰性的Div方块。
+[[/div]]
+
+[[div class="modal3"]]
+= {{@@[[div @@class="##00ccff|modal3##"]]}}
+一个装饰性的Div方块。
+[[/div]]
+
+= 若需要为一个div添加圆角，在它的类中添加“round”：
+
+[[div class="modal3 round"]]
+= {{@@[[div class="modal3 @@##00ccff|round##"]]}}
+一个装饰性的Div方块。
+[[/div]]
+
+||~ 你应该 ||~ 已经知道 ||~ 怎么 ||~ 制作表格了吧 ||
+||||包括这个 |||| 东西 ||||
+|| 114 || 514 || 1919 || 810 ||
+
+@@@@
+
+[[div class="scroll"]]
+||过长的表格可以包裹在{{@@[[div@@ class="##00ccff|scroll##"]]}}中 || 就像这样 || 就像这样 || 就像这样 || 就像这样 || 就像这样 || 就像这样 || 就像这样 || 就像这样 || 就像这样 || 就像这样 || 就像这样 || 就像这样 ||
+|| 就像这样eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee || 就像这样 || 就像这样 || 就像这样 || 就像这样 || 就像这样 || 就像这样 || 就像这样 || 就像这样 || 就像这样 || 就像这样 || 就像这样 || E ||
+|| 就像这样 || 就像这样 || 就像这样 || 就像这样 || 就像这样 || 就像这样 || 就像这样 || 就像这样 || 就像这样 || 就像这样 || 就像这样 || 就像这样 || E ||
+[[/div]]
+
+@@@@
+
+[[tabview]]
+[[tab 分页]]
+为什么这把铲子这么特别？
+
+因为它是一项突破性的发明。
+
+
+[[/tab]]
+[[tab 分页]]
+更多文本。
+
+多么精巧绝伦。
+[[/tab]]
+[[tab 长 Tab]]
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+[[/tab]]
+[[tab 这里的空 tab 有着一个特别特别长的名字。]]
+[[/tab]]
+[[tab 空 Tab]]
+[[/tab]]
+[[tab 空 Tab]]
+[[/tab]]
+[[tab 空 Tab]]
+[[/tab]]
+[[tab 空 Tab]]
+真的什么都没有。--[[*user fuor_clover]]是我站最大烧零，欢迎各位透他。--
+[[/tab]]
+[[tab 空 Tab]]
+[[/tab]]
+[[/tabview]]
+
+[[div class="smalltab"]]
+[[tabview]]
+[[tab smalltab]]
+感到tab很长？那你可以把它包裹在类为“smalltab”的div中：
+
+= {{@@[[div class@@="##00ccff|smalltab##"]]}}
+= {{@@[[tabview]]@@}}
+= {{@@[[/tabview]]@@}}
+= {{@@[[/div]]@@}}
+
+但手机端不会起效。
+
+[[/tab]]
+[[tab smalltab2]]
+感到tab很短？那你可以不把它包裹在类为“smalltab”的div中。
+[[/tab]]
+[[tab smalltab3]]
+
+[[/tab]]
+[[tab smalltab4]]
+
+[[/tab]]
+[[/tabview]]
+[[/div]]
+
+
+@@ @@
+
+[[=]]
+[[span style="font-family:'WorkSans';font-weight:800;"]]页眉字体为 Work Sans[[/span]]/[[span style="font-family:'AiDeep'"]]AiDeep[[/span]]。
+
+正文字体为 思源黑体。
+
+{{等宽字为 Fira Code / 幼圆。}}
+[[/=]]
+
+@@ @@
+
+
+
+
+++ 来看下讨论区的样式：
+
+[[module comments]]
+
+[[collapsible show="源代码"]]
+
+[[code type="css"]]
+
+
+
+@charset "utf-8";
+
+/*
+
+
+    ParaBlue Theme
+    [2022 Wikidot Theme]
+    By OxygenNine
+    Based on:
+       Penumbra Theme by EstrellaYoshte
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap'); @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('http://scpsandboxcn.wikidot.com/local--files/oxygen9-files/AiDeep%20%281%29.otf');
+
+/* @import url('http://paraarc.wikidot.com/local--files/component:theme/s9.css'); */
+
+/* @import url('http://paraarc.wikidot.com/local--files/component:theme/pn.css'); */
+
+.printuser a {
+    margin-right: 0px;
+}
+
+/* toggle sidebar */
+
+#top-bar .open-menu a {
+        position: fixed;
+        top: 0.5em;
+        left: 0.5em;
+        z-index: 5;
+        font-family: 'Nanum Gothic', san-serif;
+        font-size: 30px;
+        font-weight: 700;
+        width: 30px;
+        height: 30px;
+        line-height: 0.9em;
+        text-align: center;
+        border: 0.2em solid #888;
+        background-color: #fff;
+        border-radius: 3em;
+        color: #888;
+}
+
+@media (min-width: 768px) {
+
+    #top-bar .mobile-top-bar {
+        display: block;
+    }
+
+    #top-bar .mobile-top-bar li {
+        display: none;
+    }
+
+    #main-content {
+        max-width: 708px;
+        margin: 0 auto;
+        padding: 0;
+        transition: max-width 0.2s ease-in-out;
+    }
+
+    #side-bar {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -20em;
+        width: 17.75em;
+        height: 100%;
+        margin: 0;
+        overflow-y: auto;
+        z-index: 10;
+        padding: 1em 1em 0 1em;
+        background-color: rgba(0,0,0,0.1);
+        transition: left 0.4s ease-in-out;
+
+        scrollbar-width: thin;
+    }
+
+    #side-bar:target {
+        left: 0;
+    }
+
+     #side-bar:focus-within:not(:target) {
+        left: 0;
+    }
+
+    #side-bar:target .close-menu {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        margin-left: 19.75em;
+        opacity: 0;
+        z-index: -1;
+        visibility: visible;
+    }
+    #side-bar:not(:target) .close-menu { display: none; }
+
+    #top-bar .open-menu a:hover {
+        text-decoration: none;
+    }
+
+    /* FIREFOX-SPECIFIC COMPATIBILITY METHOD */
+
+    @supports (-moz-appearance:none) {
+    #top-bar .open-menu a {
+        pointer-events: none;
+    }
+    #side-bar:not(:target) .close-menu {
+        display: block;
+        pointer-events: none;
+        user-select: none;
+        z-index: -1;
+    }
+
+    /* This pseudo-element is meant to overlay the regular sidebar button
+    so the fixed positioning (top, left, right and/or bottom) has to match */
+
+    #side-bar .close-menu::before {
+        content: "";
+        position: fixed;
+        z-index: 5;
+        display: block;
+
+        top: 0.5em;
+        left: 0.5em;
+
+        border: 0.2em solid transparent;
+        width: 30px;
+        height: 30px;
+        font-size: 30px;
+        line-height: 0.9em;
+
+        pointer-events: all;
+        cursor: pointer;
+    }
+    #side-bar:focus-within {
+        left: 0;
+    }
+    #side-bar:focus-within .close-menu::before {
+        pointer-events: none;
+    }
+    }
+
+}
+
+:root {
+  --header-title: "互联网超自然档案馆";
+  --header-subtitle: "闻所未闻 ◈ 见所未见";
+  --lgurl: url("http://paraarc-sandbox.wikidot.com/local--files/files/arc.svg");
+  --accentColor: #7B68EE;
+  --accentColor2: #1c46f7;
+  --alpha: 1;
+}
+
+body {
+    font-family: 'Noto Sans SC', sans-serif;
+    background-color: #000000;
+    background-image: linear-gradient(45deg, black, transparent);
+}
+
+#header h1 a::before, #header h2::before {
+    letter-spacing: 16px;
+    font-family: 'AiDeep','Work Sans', sans-serif !important;
+    font-weight: 700 !important;
+    filter: drop-shadow(0px 0px 6px rgba(0,0,0,1));
+    background-color: var(--accentColor);
+    background-image: linear-gradient(0deg, var(--accentColor) 0%, var(--accentColor2) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#header h1, #header h2 {
+    margin-left: 15px;
+    float: none;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Work Sans', sans-serif !important;
+font-weight: 700 !important;
+text-transform: uppercase !important;
+}
+
+#header h2::before {
+font-size: 1em;
+}
+
+#header h1 a::before {
+font-size: 1em;
+letter-spacing: 5px;
+}
+
+.allmont, .allmont *, .allmont *::before, .allmont *:before, .allmont *::after, .allmont *:after {
+font-family: 'Work Sans', sans-serif !important;
+font-weight: 600;
+}
+
+#content-wrap {
+    position: relative;
+    margin: 2em auto 0;
+    max-width: 95vw;
+    min-height: 1300px;
+    height: auto !important;
+}
+
+#main-content {
+    max-width: 90%;
+    margin: 0 auto;
+    transition: max-width 0.2s ease-in-out !important;
+    border: solid 3px #4b4b4b;
+    background-image: linear-gradient(0deg, #2b2b2b, #313131);
+    padding: 4em 15px 15px 15px !important;
+    font-size: 105%;
+    top: -2em;
+}
+
+@media (max-width: 768px) {
+    #main-content {
+    max-width: 98% !important;
+    }
+}
+
+#page-title {
+    color: #ededed;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.65rem;
+    text-align: left;
+    border-color: #ededed;
+    padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+    border-bottom: solid 3px #595959;
+}
+
+hr {
+    background-color: #595959;
+    max-width: 90%;
+    margin: 0 auto !important;
+    position: relative;
+}
+
+#page-content {
+    font-size: .99rem;
+    background: #262626;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#page-info {
+    color: #707070;
+}
+
+a:hover {text-decoration:none;}
+
+#top-bar ul li ul, #top-bar ul li ul li ul {
+    border-color: var(--accentColor);
+    box-shadow: none;
+    border-left: solid 5px var(--accentColor);
+    border-right: none;
+}
+
+#top-bar {
+    top: 11.4rem;
+}
+
+#header-extra-div-1 {
+    width: 95%;
+    background: #454545;
+    height: 2em;
+    top: 4.9em;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 1em;
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 25%);
+}
+
+div#extra-div-1 {
+    height: 164px;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    background: var(--lgurl);
+    background-size: 25em;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    z-index: -3;
+    opacity: var(--alpha);
+}
+
+div#extra-div-2 {
+    height: 164px;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    background: linear-gradient(0deg, #0000005c 10%, transparent 100%);
+    background-size: 45em;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    z-index: -3;
+    opacity: 1;
+}
+
+/* ACTION AREA */
+
+#action-area {
+    width: 96%;
+    background: #000;
+    border: solid 3px var(--accentColor);
+    padding: 1em;
+    margin: 0 auto;
+}
+
+input.text {
+    border: solid 2px var(--accentColor);
+    margin: 0 1px;
+    padding: 0.2rem;
+    background-color: #3f3f3f;
+    color: #fff;
+    text-align: center;
+    width: 95%;
+}
+
+table.form {
+    margin: 0 auto !important;
+    padding: 0;
+}
+
+table.form td, table.form th {
+    vertical-align: top;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+.wd-editor-toolbar-panel {
+    align-items: center;
+}
+
+.wd-editor-toolbar-panel div {
+    height: 40px;
+    display: flex;
+}
+
+.wd-editor-toolbar-panel ul li a {
+    height: 22px;
+    width: 22px;
+    padding: 0px;
+    margin: 0em 0.2em 0em 0.2em;
+    display: block;
+    transition: box-shadow 0.2s , filter 0.3s;
+}
+
+.wd-editor-toolbar-panel li.hseparator {
+    width: 2px;
+    height: 33px;
+    margin: 0 5px;
+    background-color: #efefef;
+}
+
+#edit-page-comments {
+    width: 100%;
+    height: 4rem;
+}
+
+.wd-editor-toolbar-panel a {
+    background-image: url(http://paraarc-sandbox.wikidot.com/local--files/files/eidicons1.svg);
+    background-size: 969px;
+    zoom: 1.4;
+}
+
+.wd-editor-toolbar-panel a:hover {
+    background-image: url(http://paraarc-sandbox.wikidot.com/local--files/files/eidicons1.svg);
+    filter: brightness(1) contrast(1.5) invert(1);
+    box-shadow: 2px 2px 0px rgb(0 0 0 / 50%);
+}
+
+.wd-editor-toolbar-panel ul {
+    padding: 0;
+    margin: 0 auto;
+    float: left;
+    list-style: none;
+}
+
+@media (max-width: 768px) {
+    .wd-editor-toolbar-panel li.hseparator {
+        width: 2px;
+        height: 23px;
+        margin: 5px 3px;
+        background-color: #efefef;
+    }
+    .wd-editor-toolbar-panel ul li {
+        padding: 0;
+        margin: 0px;
+        float: left;
+    }
+    .wd-editor-toolbar-panel ul {
+        padding: 0;
+        margin: 0 auto;
+        float: left;
+        list-style: none;
+    }
+    .wd-editor-toolbar-panel div {
+        height: 30px;
+    }
+    .wd-editor-toolbar-panel a {
+        zoom:1;
+    }
+    .wd-editor-toolbar-panel div {
+        display: block !important;
+    }
+}
+
+textarea {
+    padding: 10px;
+    font-size: 100%;
+    border: solid 2px var(--accentColor);
+    background-color: #232323;
+    color: #f0f0f0;
+    font-family: "Fira Code", '幼圆', monospace;
+}
+
+change-textarea-size a {
+    color: var(--accentColor);
+    background-color: #000;
+    border: solid 2px var(--accentColor);
+    padding: 4px 4px;
+    font-size: 1.3em;
+    text-decoration: none;
+    top: 0.4em;
+    position: relative;
+}
+
+#lock-info {
+    background-color: var(--darkerColor);
+    border-color: #ededed;
+    border: solid 2px var(--accentColor);
+    display: inline-block;
+    position: relative;
+    right: -5em;
+}
+
+div#lock-info {
+    font-size: 0;
+    margin: 0.8rem 0;
+    padding: 0.4rem 0.8rem;
+    margin-left: 2rem;
+    height: 4.4rem;
+}
+
+div#lock-info > strong {
+    font-size: 0.82rem;
+    color: var(--accentColor);
+    font-family: 'Fira Code' , monospace;
+}
+
+#edit-save-button {
+    color: #33ff33;
+    border: solid 2px #11aa11;
+    transition: color 0.15s linear;
+}
+
+#edit-save-button:hover {
+    color: #000000;
+    background-color: #33ff33;
+}
+
+#edit-cancel-button {
+    color: #ff3333;
+    border: solid 2px #aa1111;
+    transition: color 0.15s linear;
+}
+
+#edit-cancel-button:hover {
+    color: #000000;
+    background-color: #ff3333;
+}
+
+.buttons .btn {
+    width: 7em;
+    display: inline;
+}
+
+div.buttons.alignleft {
+    text-align: center;
+}
+
+.page-options-bottom {
+    margin: 4px 0;
+    text-align: right;
+    height: 1%;
+    line-height: 230%;
+}
+
+.yui-ac-content {
+    border: solid 2px var(--accentColor);
+    background: #2c2c2c;
+}
+
+.autocomplete-list li {
+    padding: 0 0.5em;
+    cursor: pointer;
+}
+
+.autocomplete-list li.yui-ac-highlight {
+    background-color: #4a4a4a;
+}
+
+/* Code Block */
+
+.code {
+    background-color: #000000;
+    border: solid 3px var(--accentColor);
+    box-shadow: 0px 0px 10px var(--accentColor);
+}
+
+.code pre, .code p, .code {
+    color: #fff;
+}
+
+.hl-code {color: #c1c1c1;}
+.hl-var {color: #6dff6d;}
+.hl-identifier {color: #ffffff;}
+.hl-identifier {color: #ffffff;}
+.hl-reserved {color: #9898ff;}
+.hl-number {color: #de80ff;font-style:italic;}
+.hl-string {color: #fffb3e;}
+.hl-brackets {color: #969696;}
+.hl-special {color: #5b5bff;font-weight: bold;}
+
+/* Others */
+
+#main-content .page-tags a::before {
+    content:'◌'
+}
+
+#main-content .page-tags a:hover::before {
+    content:'◉'
+}
+
+#main-content .page-tags a {
+    margin-top: 0.18rem;
+    background: #6e6e6e;
+    padding: 0.1em 0.3em;
+    font-size: 1.2em;
+    color: #fff;
+    border-radius: 0.4em;
+    border: solid 2px #4d4d4d;
+    position: relative;
+    top: 0em;
+    display: inline-block;
+    transition:color 0.3s, border 0.3s, background 0.3s, font-weight 0.3s; box-shadow 0.3s
+}
+
+#main-content .page-tags a:hover {
+    background: var(--accentColor);
+    color: #000;
+    border: solid 2px #a99eef;
+    font-weight: bolder;
+    box-shadow: 0px 0px 10px var(--accentColor);
+}
+
+.page-tags span {
+    border-top: none;
+}
+
+.page-tags span::before {
+    content:'TAGS:';
+    font-weight: bolder;
+    color:#fff;
+    font-size:1.2em;
+}
+
+#main-content .page-tags {
+    margin: 1em 0 0;
+    padding: 0.5rem;
+    background: #3e3e3e;
+    border-radius: 2em;
+}
+
+.page-options-bottom a {
+    font-size: 105%;
+    border: solid 1px var(--accentColor);
+    padding: 2px 8px;
+    margin-top: 0.7em;
+    word-break: keep-all;
+}
+
+.keycap {
+    border: 2px solid;
+    border-color: #dfdfdf #8d8d8d #bbb #ddd;
+    border-bottom-width: 2px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 5px;
+    background-color: #696969;
+    padding: 1px 3px;
+    font-family: inherit;
+    font-size: .85em;
+    white-space: nowrap;
+}
+
+a.newpage {
+    filter: hue-rotate(90deg) !important;
+}
+
+a.newpage::after {
+    content:'（尚不存在）';
+}
+
+a.newpage:hover::after {
+    content:'（点击建立）' !important;
+}
+
+/* Custom Divs */
+
+div.note {
+    background: #4f4f4f;
+    border-left: dashed 6px var(--accentColor);
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    padding: 0.2em 0.2em 0.2em 0.5em;
+    box-shadow: 5px 5px 0px #404040;
+    max-width:
+}
+
+div.typer {
+    background: #000;
+    border-top: solid 3px #7f7;
+    padding: 1rem;
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: solid 3px #7f7;
+    transition:box-shadow 0.5s;
+    box-shadow:0px 0px 0px rgba(0,0,0,0);
+    margin-top: 0.5em;
+}
+
+div.blockquote {
+    box-shadow:-3px 0px 0px var(--accentColor) !important;
+}
+
+div.typer:hover {
+    box-shadow:0px 0px 15px rgba(0,255,0,0.5);
+}
+
+div.typer blockquote {
+    border-left:solid 3px #0c0;
+    box-shadow:none;
+}
+
+div.typer div.note {
+    border-left: dashed 6px #0c0;
+}
+
+div.typer a {
+    color:#00ff00;
+}
+
+div.typer a:hover {
+    color:#ffffff;
+    background-color:#00dd00;
+    text-decoration: underline !important;
+
+}
+
+div.typer a:hover::before {
+    content:'>'
+}
+
+div.modal {
+    background: #4b4b4b;
+    padding: 0.3em 1em 0.3em 1em;
+    margin-top: 0.5em;
+    border: solid 2px #5d5d5d;
+}
+
+div.modal2 {
+    background: #4b4b4b;
+    padding: 0.3em 1em 0.3em 1em;
+    margin-top: 0.5em;
+    border: solid 2px #5d5d5d;
+    border-radius: 12px;
+}
+
+div.modal3 {
+    background: #292929;
+    padding: 0.3em 1em 0.3em 1em;
+    margin-top: 0.5em;
+    border-left: solid 5px #999999;
+    border-right: solid 5px #999999;
+}
+span.type-cursor::after {
+    content: '_';
+    background: rgba(255,255,255,0);
+    animation: typeblink 0.6s infinite;
+    -webkit-animation: typeblink 1s infinite;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+}
+
+@keyframes typeblink {
+    0% {background:rgba(255,255,255,1);}
+    100% {background:rgba(255,255,255,0);}
+}
+
+@-webkit-keyframes typeblink {
+    0% {background:rgba(255,255,255,1);}
+    100% {background:rgba(255,255,255,0);}
+}
+
+.round {
+    border-radius:12px !important;
+}
+
+/* wikidot divs */
+
+#page-content .wiki-content-table tr th {
+    border: solid 1px var(--accentColor);
+    color: #000;
+    background-color: var(--accentColor);
+}
+
+@media (min-width: 768px) {
+    .smalltab .yui-navset {
+        max-width: 75% !important;
+        margin: 0.5em auto;
+    }
+    div.modal, div.note, div.modal2, div.modal3 {
+        max-width:90% !important;
+        margin:0.5em auto;
+    }
+    #main-content .page-tags span {
+    max-width: 100%;
+    }
+}
+
+/* forum */
+
+.forum-group div.head {
+    background-color: #515151;
+    color: #FFF;
+    padding: 0.5em 1em;
+    margin: 0;
+    border: 3px solid #717171;
+}
+
+.forum-group table,.forum-category-box table {
+    border-spacing: 0px;
+}
+
+.forum-category-box table {
+    border:none;
+}
+
+.forum-group table td {
+    border: 2px solid rgba(255,255,255,0.3);
+    padding: 2px 10px;
+}
+
+.forum-group table tr.head td,.forum-category-box table tr.head td {
+    text-align: center;
+    font-size: 85%;
+    background-color: var(--accentColor);
+}
+
+.forum-category-box .description-block {
+    border: 3px solid #656565;
+    margin: 1em 4em;
+    padding: 0.5em;
+    background-color: #3a3a3a;
+    height: 100%;
+    overflow: hidden;
+}
+
+div.new-post {
+    text-align: center;
+    margin: 20px 0;
+}
+
+div.new-post a {
+    border: 6px solid var(--accentColor);
+    background-color: #000000;
+    padding: 5px 10px;
+    font-size: 100%;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 18px;
+    transition:background-color 0.4s, color 0.4s, padding 0.4s
+}
+
+div.new-post a:hover {
+    background-color: var(--accentColor);
+    color: #000;
+    padding: 5px 50px;
+}
+
+.forum-thread-box .description-block {
+    padding: 0.5em 1em;
+    border-radius: 0px;
+    box-shadow: none;
+    background: #000;
+    border: solid 3px var(--accentColor);
+}
+
+.thread-container .post .head {
+    padding: 0.5em 1em;
+    background-color: #606060;
+    background-image: linear-gradient(63deg, #2b2b2b, #3e3e3e);
+    box-shadow: inset 2px 3px 6px rgb(0 0 0 / 15%);
+    border-radius: 0px;
+}
+
+.thread-container .post {
+    padding: 10px 0 10px 0;
+    width: 99%;
+    border-left: solid 4px var(--accentColor);
+    padding-left: 1em;
+    margin-top: 1em;
+}
+
+.thread-container .post .long .head .info {
+    background-image: linear-gradient(45deg, #493e8d85, transparent);
+    padding: 3px;
+    border-radius: 1em;
+    padding: 0px;
+    font-size: 0.8rem;
+    left: -2em;
+    position: relative;
+}
+
+div.info .printuser img.small {
+    vertical-align: -1.7em;
+    margin: 0px;
+    width: 32px;
+    height: 32px;
+    z-index: 0;
+    padding: 11px 11px 11px 11px;
+    background-repeat: no-repeat;
+    background-position: 395% 80%;
+    border-radius: 50%;
+    background-size: 45px 17px;
+}
+
+/* Component:http://scp-jp-sandbox3.wikidot.com/component:non-savingpage by yuuki410 */
+
+body[class="wait"] #odialog-shader-iframe, body[class="wait"] #odialog-shader {
+  display: none !important;
+}
+#odialog-container {
+  position: fixed !important;
+}
+body[class="wait"] #odialog-container {
+  z-index: -1;
+}
+body[class="wait"] #odialog-container #owindow-1 {
+  display: none !important;
+}
+body[class="wait"] a[name="page-top"][target]+div #main-content #action-area div#lock-info {
+  background-color: #ffcdd2;
+  border: 1px solid #e53935;
+}
+div#lock-info {
+  font-size: 0;
+  margin: .8rem 0;
+  padding: 0.4rem .8rem;
+}
+div#lock-info::before {
+  content: '您握有一个独占的15 分钟锁定，这将会阻止其他人编辑您正在作业的页面。\A这个锁定将在闲置 ';
+  display: inline;
+  font-size: .82rem;
+  white-space: pre-wrap;
+}
+div#lock-info > strong {
+  font-size: .82rem;
+}
+div#lock-info > br {
+  display: none;
+}
+div#lock-info::after {
+  content: ' 秒后失效。';
+  display: inline;
+  font-size: .82rem;
+}
+body[class="wait"] a[name="page-top"][target]+div #main-content #action-area div#lock-info::before {
+  content: '保存页面中……\A若此提示已经显示了很长时间，建议将编辑框中的内容复制到剪切板然后刷新本页重新编辑。';
+  display: inline;
+  font-size: .82rem;
+  color: red;
+  white-space: pre-wrap;
+}
+body[class="wait"] a[name="page-top"][target]+div #main-content #action-area div#lock-info::after {
+  font-size: 0;
+}
+body[class="wait"] a[name="page-top"][target]+div #main-content #action-area div#lock-info>strong {
+  font-size: 0;
+}
+body[class="wait"] a[name="page-top"][target]+div #main-content #action-area div#lock-info::after {
+  font-size: 0;
+}
+
+div.scroll {
+    max-width:100%;
+    overflow-x:scroll;
+    word-break: keep-all;
+}
+
+
+[[/code]]
+
+[[/collapsible]]
+
+
+[[/iftags]]

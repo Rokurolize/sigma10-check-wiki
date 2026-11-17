@@ -1,0 +1,516 @@
+[[module CSS]]
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Apast-oriented-jp/1');
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Apast-oriented-jp/1
+]]
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** 過去志向 テーマ
+**翻訳責任者:** AI
+**翻訳年:** 2026
+**原題:** 과거지향 테마
+**著作権者:** 原語版ページの作成者に同じ（scpko の theme:past-oriented）
+**作成年:** 2024
+**初訳時参照リビジョン:** 20
+**元記事リンク:** [*https://scpko.wikidot.com/theme:past-oriented 과거지향 테마]
+[[include :scp-jp:credit:end-preview]]
+
++ 過去志向CSSテーマ
+
+このテーマは準要注意団体**弘益寺**専用のテーマです。使用したいページに以下のコードを入力してください。
+> @@[[include :scp-jp:theme:past-oriented-jp dark=a]]@@
+
+弘益寺の内部、すなわち弘益歴史研究会を描写する場合は、以下のようにdark引数を外してください。
+> @@[[include :scp-jp:theme:past-oriented-jp]]@@
+
+[[tabview]]
+[[tab 基本構文]]
+[[include :scp-jp:component:image-block
+|name=홍익사.png
+|caption=弘益寺のシンボル。
+]]
++ 見出しレベル1
+++ 見出しレベル2
++++ 見出しレベル3
+++++ 見出しレベル4
++++++ 見出しレベル5
+++++++ 見出しレベル6
+
+||~ これは||表です。||
+||~ どのように||書くのかは||
+||||もうご存じでしょう。||
+
+水平線を使うには、ハイフン4つ（@@----@@）を入力してください。
+----
+
+[[collapsible show="+ 開く" hide="- 閉じる"]]
+折り畳み内の内容は普通です。
+[[/collapsible]]
+
+> 次のタブでは、別テーマと弘益寺書式についての追加情報を確認できます。
+
+[[/tab]]
+[[tab 書式構文]]
+
+[[div style="background: #FFF; width: 94%; margin: 1em auto;"]]
+[[div class="format paper" style="width: 100%; margin: 0;"]]
++ 在野異常史学研究集団としての弘益寺の再解釈
+----
+++ thd-glasses, 2misi
+
+> 弘益歴史研究会は、弘益寺を新たに活用するために提案された設定である。弘益寺は内実として弘益歴史研究会という姿を持ち、各自が探求課題を定めて研究し、成果を共有する一種の学会的性格を帯びる。報告書は要旨、序論、本論、結論からなる略式論文の形で作成される。
+> 
+> **Keywords:** //弘益寺、弘益歴史研究会、在野異常史学、要注意団体書式//
+
+@@@@
+@@@@
+
++ 序論
+
+弘益寺は本来、いわゆる「ファンパ」と呼ばれる、韓国古代史に対する荒唐無稽な誇張説を歴史的真実として歪曲する人々を風刺して作られた団体である。しかし、SCP財団という物語空間において弘益寺がそうした風刺元の属性をそのまま引き継ぐなら、真剣で有意義な活用は不可能になるだろう。筆者は本稿を通じ、弘益寺の新たな活用案として「弘益歴史研究会」を提案すると同時に、この在野異常史学研究集団としての弘益寺を表すための専用書式を提示する。
+
+@@@@
+@@@@
+
++ 弘益歴史研究会とテーマについて
+
+弘益歴史研究会（弘益歷史硏究會）は、民間社会の正常な歴史学界にも、財団などヴェール内の研究機関にも属さない、多数のアマチュア韓国超常史研究者が集まって結成した団体である。彼らは広く知られた正常史学と財団が隠す超常史学の双方を包括し、さらに一歩踏み込み、誰も到達していない古代韓国史の秘密を明らかにしようとしている。弘益寺（弘益寺）は、研究会の会員が自称する愛称であり、神秘主義を装う対外名でもある。
+
+通念に反し、彼らは偽書と正史を明確に区別し、可能な限り真実を探究したいと考えている。そのため、ヴェール外の在野史学者を認めず、彼らが探究する『桓檀古記』などの歴史的価値を否定する。しかし彼らもまた、遠い昔に「偉大なる古代韓国の異常文明」が存在し、大陸を号令する帝国を築いたと信じており、その信念を明らかにする方向で歴史に取り組んでいる。この根本的な問題のため、彼らは相当な研究成果を上げても、その結果を誤って解釈したり、誤謬を犯したりする傾向が強い。
+
+[[include :scp-jp:component:image-block
+|align=center
+|width=100%
+|name=홍익역사연구회테마.png
+|caption=弘益歴史研究会ホームページ。
+]]
+
+弘益寺専用CSSテーマである「過去志向テーマ」には二つの表現型があり、{{dark}}引数で制御できる。この引数を無効化すると、過去志向テーマは弘益歴史研究会ホームページの外観になり、書式を提示するのに適した状態となる。
+
+@@@@
+@@@@
+
++ 探求提案および報告書式
+
+探求提案および報告書式とは、弘益歴史研究会の会員が自らの探求課題を他の会員に知らせるために作成する文書である。着手しようとする課題の意義と必要性を説明する場合は探求提案、着手した課題の進捗または結果を共有する場合は探求報告の書式となる。報告書本文は、本稿に示すように略式論文の形式と文体で作成できる。
+
+過去志向テーマを適用していれば、以下のコードで簡単に弘益歴史研究会書式を利用できる。コード適用時に表示される書式の外観は、本稿の見た目を参照されたい。
+
+[[div class="blockquote"]]
+@@[[div class="format paper"]]@@
+@@+@@ **(探求題名)**
+@@----@@
+@@++@@ **(作中著者)**
+
+@@>@@ **(要旨)**
+@@> @@
+@@> **keywords:** //@@**(キーワード)**@@//@@
+
+@@@@@@@@
+@@@@@@@@
+
+@@+@@ **(小見出し)**
+
+**(本文)**
+
+@@@@@@@@
+@@@@@@@@
+
+@@+++@@ **(ページ数)**
+
+@@[[/div]]@@
+[[/div]]
+
+@@@@
+@@@@
+
++ 交流会とコメント書式
+
+弘益歴史研究会は、探求提案書や報告書を共有し、互いにフィードバックを残す交流会を定期的に開催する。交流会に提出された提案書や報告書には、他の会員によるコメントが付随する。同志の研究者が読了の挨拶や応援を残すこともあれば、助言や批評を残すこともあるだろう。こうしたコメント書式も弘益寺書式の一部だが、作成方法は失伝したという文献以外に手がかりを見つけられなかった。追加の探求が必要と思われる。
+
+@@@@
+@@@@
+
++++ 1
+[[/div]]
+[[/div]]
+
+[[div style="background: #FFF; width: 89%; margin: 1em 3% 1em 8%;"]]
+[[div class="format comment" style="width: 100%; margin: 0;"]]
++ re:在野異常史学研究集団としての弘益寺の再解釈
+拝読しました。弘益寺を弘益歴史研究会として再解釈し、財団世界観における活用性を高め、モチーフから切り離された独自のアイデンティティを確立することは、重要な試みだと思われます。
+[[/div]]
+[[/div]]
+
+[[div style="background: #FFF; width: 89%; margin: 1em 3% 1em 8%;"]]
+[[div class="format comment" style="width: 100%; margin: 0;"]]
++ コメント書式の作成方法
+コメント書式の作成方法が失伝したという文献引用は誤りでした。近年の古文献研究によると、コメント書式は一部地域で完全に伝承されており、具体的な作成方法も判明しています。以下はその説明を引用したものです。
+
+[[div class="blockquote"]]
+@@[[div class="format comment"]]@@
+@@+@@ **(コメント題名)**
+**コメント本文**
+@@[[/div]]@@
+[[/div]]
+
+コメント題名は別途決めて記入してもよく、なければ「{{re:(コメントした書式の題名)}}」という形で代用できます。また、コメントにさらにコメントを付けたい場合は、divのclassを{{class="format comment reply"}}へ変更すれば済みます。
+
+[[/div]]
+[[/div]]
+
+[[div style="background: #FFF; width: 84%; margin: 1em 3% 1em 13%;"]]
+[[div class="format comment reply" style="width: 100%; margin: 0;"]]
++ re:コメント書式の作成方法
+
+このような資料が残っているとはまったく知りませんでした。教えてくださりありがとうございます。
+[[/div]]
+[[/div]]
+
+[[/tab]]
+[[/tabview]]
+[[/collapsible]]
+
++ ソースコード
+
+[[collapsible show="+ コードを表示" hide="- コードを隠す"]]
+
++ ソースコード
+
+[[collapsible show="> コードを表示" hide="> コードを閉じる"]]
+[[code type="css"]]
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
+
+/*
+    과거지향 / Past-Oriented — Ported for SCP-JP (theme:past-oriented rev 20 on scpko).
+    原語版は本体 CSS を code file 0・2・3 に分割して @import しています。JP 候補は 1 本のコード
+    ファイルに統合しました。書体は KO の UnJamoBatang / Shilla Culture 系を Google の
+    Gowun Batang で代替しています。
+*/
+/* 日本語フォント (JP localization) */
+html, body, #container {
+  overflow-x: hidden;
+}
+
+:root {
+  --main: 100, 100, 150;
+  --dark: 25, 25, 70;
+  --light: 150, 150, 200;
+  --bg: 255, 255, 255;
+  --text: 20, 20, 20;
+}
+
+div#container-wrap {
+  background: rgb(var(--bg));
+  color: rgb(var(--text));
+}
+
+#page-title, h1, a, a:visited, #side-bar a {
+  color: rgb(var(--main));
+}
+
+a.newpage {
+  color: rgb(var(--light));
+}
+
+#header {
+  background: rgb(var(--main));
+  background-image: none;
+  box-shadow: 50vw 0 0 rgb(var(--main)), -50vw 0 0 rgb(var(--main)), 20vw 0 0 rgb(var(--main)), -20vw 0 0 rgb(var(--main));
+}
+
+#header h1 a, #header h2 span {
+  color: transparent;
+  text-shadow: none;
+}
+
+#header h1 {
+  position: relative;
+  z-index: 10;
+}
+
+#header h1 a::before {
+  content: "사단법인 홍익역사연구회";
+  color: #FFF;
+  text-shadow: 2px 2px 1px rgb(var(--dark)), -2px 2px 1px rgb(var(--dark)), 2px -2px 1px rgb(var(--dark)), -2px -2px 1px rgb(var(--dark)), 3px 0 1px rgb(var(--dark)), 0 3px 1px rgb(var(--dark)), -3px 0 1px rgb(var(--dark)), 0 -3px 1px rgb(var(--dark));
+}
+
+#header-extra-div-1 {
+  position: absolute;
+  top: 12px;
+  left: -15px;
+  width: 120px;
+  height: 120px;
+  background: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Apast-oriented-jp/hongik-history.png') center/contain no-repeat;
+  z-index: 5;
+}
+
+#top-bar {
+  background: rgb(var(--dark, 25, 25, 70));
+  box-shadow: 50vw 0 0 rgb(var(--dark)), -50vw 0 0 rgb(var(--dark)), 20vw 0 0 rgb(var(--dark)), -20vw 0 0 rgb(var(--dark)), 50vw 1px 0 rgb(var(--dark)), -50vw 1px 0 rgb(var(--dark)), 20vw 1px 0 rgb(var(--dark)), -20vw 1px 0 rgb(var(--dark));
+}
+
+#top-bar ul li.sfhover a, #top-bar ul li:hover a, #login-status ul a {
+  color: rgb(var(--main));
+  background: #FFF;
+}
+
+#top-bar ul li:hover a:hover {
+  background: rgb(var(--main));
+  color: #FFF;
+}
+
+#search-top-box-form input[type="submit"] {
+  background: rgb(var(--dark));
+  border: none;
+  box-shadow: none;
+}
+
+#search-top-box-form input[type="submit"]:hover {
+  background: rgb(var(--dark));
+}
+
+#side-bar .side-block {
+  border: none;
+  box-shadow: none;
+}
+
+#side-bar .side-block, #side-bar .red, #side-bar .green, #side-bar .blue {
+  background: rgb(var(--bg));
+}
+
+#side-bar .side-block, #side-bar .collapsible-block-folded, #side-bar .collapsible-block-unfolded-link, #side-bar .collapsible-block-unfolded, #side-bar .heading {
+  color: rgba(var(--main), 0.8);
+  border-color: rgba(var(--main), 0.8);
+}
+
+#page-content .rate-box-with-credit-button,
+#page-content .page-rate-widget-box .rate-points,
+#page-content .page-rate-widget-box .cancel {
+  background-color: rgb(var(--dark));
+  border-color: rgb(var(--dark));
+}
+
+#page-content .page-rate-widget-box .rateup,
+#page-content .page-rate-widget-box .ratedown {
+  background-color: rgb(var(--main));
+  border-color: rgb(var(--main));
+}
+
+#page-content .page-rate-widget-box a,
+#page-content .rate-box-with-credit-button a {
+  color: #FFF !important;
+}
+
+#page-content .page-rate-widget-box a:hover {
+  background-color: rgb(var(--dark)) !important;
+}
+
+#page-content .modalbox {
+  color: #333;
+}
+
+#page-content .modalbox ul {
+  display: block !important;
+}
+
+blockquote, div.blockquote,
+.yui-navset .yui-content {
+  border: none;
+  background: rgba(var(--light), 0.15);
+  padding: 0.5em 2em;
+}
+
+.yui-navset .yui-nav a, .yui-navset .yui-navset-top .yui-nav a {
+  background: rgba(var(--light), 0.5);
+}
+
+.yui-navset .yui-nav a, .yui-navset .yui-navset-top .yui-nav a,
+.yui-navset .yui-nav a em, .yui-navset .yui-navset-top .yui-nav a em {
+  border-width: 0;
+}
+
+.yui-navset .yui-nav a:hover, .yui-navset .yui-nav a:focus {
+  background: rgb(var(--main));
+}
+
+.yui-navset .yui-nav .selected a, .yui-navset .yui-nav .selected a:focus, .yui-navset .yui-nav .selected a:hover {
+  background: rgb(var(--dark));
+}
+
+table.wiki-content-table th {
+  background-color: rgba(var(--main), 0.5);
+}
+
+@media (min-width: 768px) {
+  #content-wrap {
+    position: static;
+  }
+  #side-bar {
+    position: absolute;
+    top: 200px;
+    left: 1em;
+  }
+  #main-content {
+    max-width: 44.5rem;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1250px) {
+  #main-content {
+    margin: 0 auto;
+    padding-left: 19em;
+  }
+}
+
+@media (max-width: 767px) {
+  #side-bar {
+    background-color: rgb(var(--main));
+  }
+  #header h1 a::before {
+    content: "홍익역사연구회";
+  }
+}
+
+@font-face {
+    font-family: 'Shilla_CultureB-Bold';
+    font-weight: 700;
+    font-style: normal;
+}
+
+:root {
+  --main: 150, 50, 50;
+  --dark: 70, 25, 25;
+  --light: 200, 150, 150;
+  --bg: 20, 20, 20;
+  --text: 255, 200, 200;
+}
+
+#header h1 {
+  margin-left: 150px;
+}
+
+#header h1 a::before {
+  content: "홍익 사";
+  font-family: 'Shilla_CultureB-Bold', serif;
+  font-size: min(15vw, 100px);
+  letter-spacing: min(0.6vw, 20px);
+}
+
+#header-extra-div-1 {
+  background-image: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Apast-oriented-jp/hongik.png');
+  filter: drop-shadow(0 0 30px rgb(30, 0, 0));
+}
+
+#header-extra-div-2 {
+  position: absolute;
+  top: 0;
+  height: 150px;
+  width: max(100vw, 1300px);
+  left: 45px;
+  transform: translateX(-50%);
+  background: repeating-radial-gradient(circle at 50% 72px, rgba(var(--dark), 0.1), rgba(var(--dark), 0.5) 10px, transparent 10px, transparent 20px);
+  filter: blur(6px);
+}
+
+#header-extra-div-3 {
+  position: absolute;
+  top: 0;
+  height: 150px;
+  width: 50vw;
+  left: 400px;
+  background: linear-gradient(to right, rgba(var(--main), 0.1), rgb(var(--main)) 40%);
+}
+
+#side-bar img {
+  opacity: 0.5;
+}
+
+.scp-image-block .scp-image-caption {
+  background: rgba(var(--light), 0.15);
+}
+
+@media (max-width: 767px) {
+  #header h1 {
+    margin-left: 130px;
+  }
+}
+
+div.format {
+  --main: 100, 100, 150;
+  --dark: 25, 25, 70;
+  --light: 150, 150, 200;
+  --bg: 255, 255, 255;
+  --text: 20, 20, 20;
+
+  background: rgba(var(--light), 0.1);
+  color: rgb(var(--text));
+  padding: 2em;
+  box-sizing: border-box;
+}
+
+div.format.paper {
+  width: 90%;
+  margin: 1em auto;
+}
+
+div.format.paper > h1, div.format.paper > h2, div.format.paper > h3 {
+  text-align: center;
+}
+
+div.format.paper > h1:first-of-type {
+  font-size: 210%;
+  font-weight: 900;
+}
+
+div.format.comment {
+  position: relative;
+  width: 85%;
+  margin: 1em 5% 1em 10%;
+}
+
+div.format.comment.reply {
+  width: 80%;
+  margin: 1em 5% 1em 15%;
+}
+
+div.format.comment > h1:first-of-type {
+  background: rgb(var(--main));
+  color: #EEF;
+  margin: -1.1em -1.1em 1em -1.1em;
+  padding: 0.4em;
+  width: calc(100% + 1.4em);
+  font-size: 140%;
+}
+
+div.format.comment::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: max(calc(-2vw - 10px), -25px);
+  width: min(2vw, 15px);
+  height: 15px;
+  border: solid rgb(var(--main));
+  border-width: 0 0 3px 3px;
+}
+
+
+
+[[/code]]
+[[/collapsible]]
+
+[[include :scp-jp:component:license-box-backend
+|author=scpko theme:past-oriented の作者]]
+
+> **画像・フォントの出典:** 原語版の theme:past-oriented の記載に従います。KO 側の添付は候補ページに再ホストし、ウェブフォントは Google Fonts の同等書体に差し替えています。原語版にライセンス表記が無い画像は、投稿前に著者へ確認してください。
+
+[[include :scp-jp:component:license-box-end]]
+
+[[/iftags]]

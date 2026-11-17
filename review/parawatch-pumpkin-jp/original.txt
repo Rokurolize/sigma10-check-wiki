@@ -1,0 +1,124 @@
+[[iftags +theme]]
+[[div style="display: none;"]]
+[[include :scp-wiki:theme:creepypasta]]
+[[include :scp-wiki:theme:anon]]
+[[/div]]
+
+[[>]]
+**Rating:**
+[[module Rate]]
+[[/>]]
+
+[[div class="blockquote"]]
+This is the Parawatch Pumpkin Theme by [[*user stormbreath]]. It is a variant of the **[[[theme:anon|Parawatch Anon Theme]]]** by [[*user Lt Flops]], which is itself a variant of the **[[[theme:creepypasta|Creepypasta Theme]]]** by [[*user The Great Hippo]].
+
+This theme is mostly built upon the base of the Parawatch Anon Theme, but recolors the blues of that theme for oranges. It can be used for any purpose, but is especially appropriate as a Halloween-themed version of the Parawatch Theme.
+
+To use this theme, please copy this syntax onto the top of your page:
+
+[[div class="code"]]
+@@[[include :scp-wiki:theme:creepypasta]]@@
+@@[[include :scp-wiki:theme:anon]]@@
+@@[[include :scp-wiki:theme:parawatch-pumpkin]]@@
+[[/div]]
+[[/div]]
+
+
+[[code type="css"]]
+:root {
+     --bg: hsl(14, 6%, 12%);
+     --bg-dark: hsl(17, 5%, 10%);
+
+     --fg-dark: hsl(19, 82%, 65%);
+
+     --fg-dark-2: hsl(19, 100%, 58%);
+
+     --fg-accent-light: hsl(19, 100%, 70%);
+     --fg-accent: hsl(19, 100%, 65%);
+     --fg-accent-dark: hsl(19, 100%, 60%);
+
+     --fg-accent-dark-2: hsl(19, 61%, 49%);
+}
+
+#page-content{
+     font-size: .8rem;
+}
+
+a.newpage {
+    color: hsl(346, 27%, 68%);
+}
+
+div.parapost {
+     border-color: var(--bg-light);
+}
+
+::selection {
+    background: hsl(22, 11%, 27%);
+}
+
+/* -------------- HEADER -------------- */
+div#container-wrap{
+     background-image: linear-gradient(to bottom, #010000, #201e1d);
+     background-size: auto 130px;
+}
+
+div#header h1{
+     background: url(https://scp-wiki.wdfiles.com/local--files/theme%3Aparawatch-pumpkin/parawatch-orange.png) no-repeat;
+}
+
+#top-bar li:hover ul,
+#top-bar li.sfhover ul {
+    border-bottom: 1px solid var(--fg-light);
+}
+
+#top-bar ul li.sfhover a:hover,
+#top-bar ul li:hover a:hover {
+    background: hsl(25, 40%, 20%);
+}
+
+ #top-bar .open-menu a{
+     color: var(--fg-dark);
+     background-color: var(--bg-dark);
+     border-color: var(--fg-dark);
+}
+
+
+/* -------------- SIDE-BAR -------------- */
+div#side-bar .collapsible-block-unfolded-link,
+div#side-bar .collapsible-block-unfolded-link .collapsible-block-link {
+     color: var(--fg-dark-2);
+}
+
+#interwiki div.side-block {
+     border-color: var(--fg-dark-2);
+}
+
+#interwiki div.side-block div.heading {
+     color: var(--fg-dark-2);
+     border-color: var(--fg-dark-2);
+}
+
+#interwiki div.menu-item img {
+    filter: hue-rotate(8deg) brightness(4.5) saturate(200%);
+}
+[[/code]]
+
+[[include :scp-wiki:component:license-box-theme]]
+====
+> **Filename:** parawatch-orange.png
+> **Author:** [[*user stormbreath]]
+> **License:** CC BY-SA 3.0
+> **Derivative Of:** [[[https://scp-wiki.wikidot.com/theme:creepypasta|parawatch.png]]] by [[*user The Great Hippo]]
+====
+[[include :scp-wiki:component:license-box-end]]
+
+[[/iftags]]
+
+[[module CSS]]
+@import url('https://scp-wiki.wdfiles.com/local--code/theme%3Aparawatch-pumpkin/1');
+[[/module]]
+
+[[include :scp-wiki:component:interwiki-style
+| priority=3
+| theme=https://scp-wiki.wdfiles.com/local--code/theme%3Aparawatch-pumpkin/1
+]]
