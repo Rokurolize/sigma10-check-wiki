@@ -28,9 +28,9 @@ adjudicated explanation.
 | Auto-class | Blocks | Changed lines |
 |---|---|---|
 | mechanical | 3 | 6 |
-| translation | 46 | 114 |
+| translation | 45 | 112 |
 | supplement | 5 | 115 |
-| residual | 29 | 161 |
+| residual | 30 | 163 |
 
 ## Change-block index
 
@@ -60,7 +60,7 @@ adjudicated explanation.
 | 22 | 2 | 141–141 | 92–92 | +1/−1 | translation | **太字** \| //斜体// \| __下線__ \| --取り消し線-- \| {{teletype text}} ^^上付き^^,,下付き,, |
 | 23 | 2 | 143–143 | 94–94 | +1/−1 | residual | 5つのハイフン「@@-----@@」で水平分割線を作成できます。 |
 | 24 | 2 | 147–150 | 98–101 | +4/−4 | translation | \|\|~ 見出し \|\|~ 見出し \|\|~ 見出し \|\|~ 見出し \|\|~ 見出し \|\|~ 見出し \|\| |
-| 25 | 2 | 152–152 | 103–103 | +1/−1 | translation | [# 未訪問リンク]（[[[greyday\|訪問済みリンク]]]） |
+| 25 | 2 | 152–152 | 103–103 | +1/−1 | residual | [# 未訪問リンク]（[[[greyday-jp\|訪問済みリンク]]]） |
 | 26 | 2 | 154–155 | 105–106 | +2/−2 | translation | [[collapsible show="+ 折り畳み" hide="- 折り畳み"]] |
 | 27 | 2 | 159–160 | 110–111 | +2/−2 | translation | [[tab タブ 1]] |
 | 28 | 2 | 162–163 | 113–114 | +2/−2 | translation | [[tab タブ 2]] |
@@ -333,7 +333,7 @@ adjudicated explanation.
 +|| サブ内容 || サブ内容 || サブ内容 || サブ内容 || サブ内容 || サブ内容 ||
  
 -[# 未访问的链接]（[[[greyday|已访问的链接]]]）
-+[# 未訪問リンク]（[[[greyday|訪問済みリンク]]]）
++[# 未訪問リンク]（[[[greyday-jp|訪問済みリンク]]]）
  
 -[[collapsible show="+ 一个折叠" hide="- 一个折叠"]]
 -某些东西隐藏在这个折叠块里

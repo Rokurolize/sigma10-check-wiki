@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:greyday-jp — origin CN, population #194 [GOSIGN2-LEDGER (b) row 194]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 6b244210624e02011bbd9d614af895771bd654e3962906038e9da815859d7a66); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 8c6e6551e4b056601ec7357a67954f06e69a47548ceadc0f73e075446eb350dd); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 7 errors / 1 warn / 2 infos (pseudo-ref×7); standing classes dispositioned in register c1 [T1-ROWS row 177; GOSIGN2-LEDGER (b) row 194]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — hidden-login (4 combos) on page and sample + runtime-hotlink site-theme chain; sample credit-modal (preview-form). [RENDER-ROWS-2 (RENDER-S2-F (CN7))]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 3 [LOCALIZE-ROWS row 193, source LOCALIZE-S2-D]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 193]
 - FIX5 re-judgement: items 60 (class D) FIXED, 61 (class H) FIXED — FIX5-FONTSB, commit 3911f7b: body stack rewired to loaded faces; Chinese edit-lock strings translated using petrifaction's exact accepted Japanese wording [GOSIGN2-LEDGER-SUPPLEMENT (a) items 60–61]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:greyday-jp.txt sha256:6b244210624e02011bbd9d614af895771bd654e3962906038e9da815859d7a66; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 9e0c700e350cc97ee0f0c009d6ac8a4f6c44a595; candidate file pages/theme:greyday-jp.txt sha256:8c6e6551e4b056601ec7357a67954f06e69a47548ceadc0f73e075446eb350dd; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -161,6 +161,10 @@ The diff covers two files; the port's record is slightly larger. (1) `pages/them
 ## Multi-wave provenance
 
 The candidate's current state is the product of successive waves: the S2 localization wave produced the initial port (delivery consolidation, exhibit translation, and, as later found, the broken body stack it inherited from the original's deleted load and the untranslated lock strings); FIX5-FONTSB fixed both blocking items (commit 3911f7b); the usage sweep then repointed the two usage exhibits (commit b5cb724), which is the stamp's STALE cause and the file's last change. Citations, in place of a changelog: GOSIGN2-LEDGER.md §(c2)/(c3) rows and §(e) items 60/61; GOSIGN2-LEDGER-SUPPLEMENT.md items 60–61; REPORT-GOSIGN2-FIX5-FONTSB.md, greyday section. The go-sign re-run over that record is what the Status block certifies.
+
+### Repair landed after this package was built
+
+- Repaired by FIX-GP item 3 (record R/review-scout/FIX-GP.md), landed in commit 9e0c700: the visited-link exhibit at candidate L103 named the plain form greyday while the file's delivery layer uses theme:greyday-jp; it now reads [[[greyday-jp|訪問済みリンク]]], the single -jp insertion of the snippet-drift family. The checker's link-target-missing warn persists in its altered form (it now names greyday-jp), which the fix record adjudicates as the standing resolution-at-posting class. candidate.txt is recopied from the repaired candidate in this refresh; the regenerated stamp reads STALE, no re-judgement is fabricated, and the frozen ledger remains the verdict record.
 
 ## Appendix — residue and heuristic adjudication
 
