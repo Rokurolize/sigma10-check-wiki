@@ -1,0 +1,688 @@
+[[iftags +テーマ]]
+[[module css]]
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css");
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css");
+
+#page-title {
+    text-align: center !important;
+    font-family: var(--header-font);
+    font-size: 270%;
+}
+
+@media only screen and (max-width: 765px) {
+  #page-title {
+  font-size: 170%;
+  letter-spacing: -0.15em;
+  white-space: nowrap;
+  }
+ }
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css
+]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=2
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css
+]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** RAISAテーマ
+**翻訳責任者:** AI
+**翻訳年:** 2026
+**原題:** RAISA Theme
+**著作権者:** Rounderhouse
+**作成年:** 2019
+**初訳時参照リビジョン:** 56
+**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:raisa RAISA Theme]
+[[include :scp-jp:credit:end-preview]]
+
+[[div_ style=""filter: display:flex;"]]
+[[image https://scp-jp.wdfiles.com/local--files/theme%3Ablack-highlighter-theme/black-highlighter-logo.svg]]
+[[/div]]
+
+----
+
+[[=]]
++ テーマカラー
+[[/=]]
+
+[[include :scp-jp:component:theme-squares -=-
+| color1-name=Madras
+| color1-variable=--dark-accent
+| color1-info=#222200
+| color1-has-light-text=1
+| color2-name=Chenin
+| color2-variable=--bright-accent
+| color2-info=#DDDD77
+| subcolor1-name=Pacifika
+| subcolor1-variable=--terminal-medium
+| subcolor1-info=#857625
+| subcolor2-name=Anzak
+| subcolor2-variable=--medium-accent
+| subcolor2-info=#E0C447
+]]
+
+----
+
+[[div class="scp-image-block block-right" style="max-width:300px;"]]
+[[image https://scp-wiki.wdfiles.com/local--files/theme%3Araisa/raisa-logo-vs2.svg style="max-width:300px"]]
+[[div class="scp-image-caption"]]
+RAISAロゴ
+[[/div]]
+[[/div]]
+
+++ 注: これはBlack Highlighterベースのテーマです。このテーマを使うには、Black Highlighterテーマも読み込む必要があります。[[[https://scp-wiki.wikidot.com/theme:black-highlighter-theme|詳細はこちら]]]。
+
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+
+どのウィキでも、以下のようにします。
+
+[[div class="code"]]
+@@[[include theme:black-highlighter-theme-jp]]@@
+@@[[include theme:raisa-jp]]@@
+[[/div]]
+
++ 例
+
+罫線は、5つのハイフン「@@-----@@」で作成できます。何かの内側（例: 引用ブロック）に置かれていなければ、ページ全体に伸びます。このドキュメントのセクションを区切る線は罫線です。
+
+-----
+
+見出しは、行頭に1～6個の「+」を置くことで作成できます。
+
+[[collapsible show="+ 見出し" hide="- 見出し"]]
++ 1番目の見出し
+
+++ 2番目の見出し
+
++++ 3番目の見出し
+
+++++ 4番目の見出し
+
++++++ 5番目の見出し
+
+++++++ 6番目の見出し
+[[/collapsible]]
+
+@@ @@
+
+[[tabview]]
+[[tab タビュレーター]]
+ここに`Lorem Ipsum`があるつもりで想像してください。
+[[/tab]]
+[[tab タビュレーション]]
+見てください、ここにもテキストがあります。
+
+趣がありますね。
+[[/tab]]
+[[tab 長いタブ]]
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+草
+[[/tab]]
+[[/tabview]]
+
+> これは引用ブロックです。各行の先頭に半角の「> 」を置くことで作成されます。
+>
+> 追加のテキスト
+> -----
+> これは罫線です
+>
+>> 入れ子になった引用ブロック
+>>> さらにもう1つ[[footnote]] 脚注もあります！ [[/footnote]]
+
+||~ これは ||~ テーブルです ||
+||もう || 作り方は ||
+||||分かるはずです ||
+
+----
+
+[[=]]
+[[span style="font-family: var(--header-font);"]]ヘッダーフォントはShare Tech Monoです。[[/span]]
+[[span style="font-family: var(--title-font);"]]タイトルと本文フォントはOxaniumです。[[/span]]
+[[span style="font-family: var(--mono-font);"]]等幅フォントはPT Monoです。[[/span]]
+[[/=]]
+
+-----
+-----
+
+[[collapsible show="+ テーマコードを表示" hide="- テーマコードを非表示"]]
+[[code type="css"]]
+/*
+    RAISAテーマ
+    [2019年Wikidotテーマ]
+    Rounderhouse作成。Woedenazによる多大な協力を受けています。
+    WoedenazとCroquemboucheが作成したBlack Highlighterテーマをベースにしています。
+    RAISAロゴはCroquembouche作成。CC BY SA 3.0の下でライセンスされています。
+*/
+
+/* フォント */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=PT+Mono&family=Poppins:wght@600;800&family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600&display=swap');
+
+/* 使用する全変数 */
+
+:root {
+    /* S-CSS-P連携 */
+    /* 新しいCSSテーマを作る場合は、最低でも以下の3変数を含めてください。 */
+    --theme-base: "nuscp";
+    /* "nuscp"か"sigma9"のどちらかにしてください。 */
+    --theme-id: "raisa-theme";
+    /* テーマページURLに合わせてください。例: "component:ar-theme"なら"ar-theme"です。 */
+    --theme-name: "RAISAテーマ";
+    /* テーマの正式名称を入れてください。 */
+
+    /* ヘッダー */
+    --logo-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' id='RAISA_Logo' x='0' y='0' baseProfile='tiny' overflow='visible' version='1.2' viewBox='0 0 2318.9 2200' xml:space='preserve'%3E%3Cpath id='Outer_Ring' fill='%23E3E2D6' d='M2141.9 1272.1c5-40.5 7.5-81.3 7.5-122.1 0-410-249.3-761.8-604.6-912.2L1486.4 60h-654L774 237.8C418.7 388.2 169.4 740 169.4 1150c0 40.8 2.5 81.6 7.5 122.1L52 1411.8l327 566.4 183.5-38.4c166 125.7 372.8 200.2 597 200.2s431-74.5 597-200.2l183.5 38.4 327-566.4-125.1-139.7zm-242.8 616.7-164.2-34.4c-156.7 128.5-357.1 205.6-575.5 205.6-218.4 0-418.8-77.1-575.5-205.6l-164.2 34.4-270-467.7L262 1295.8c-7.6-47.5-11.6-96.1-11.6-145.8 0-389 243.9-721.1 586.9-851.2L889.4 140h540l52.1 158.8C1824.6 429 2068.4 761 2068.4 1150c0 49.6-4 98.3-11.6 145.8l112.3 125.4-270 467.6z'/%3E%3Cpath id='Outer_Dark_Ring' d='M2068.4 1150c0-389.1-243.9-721.1-586.9-851.2L1429.4 140h-540l-52.1 158.8C494.3 428.9 250.4 761 250.4 1150c0 49.6 4 98.3 11.6 145.8l-112.3 125.4 270 467.7 164.2-34.4C740.7 1982.9 941 2060 1159.4 2060c218.4 0 418.8-77.1 575.5-205.6l164.2 34.4 270-467.7-112.3-125.4c7.6-47.4 11.6-96.1 11.6-145.7zm-284.6 406.6-82.4-47.6c-116.4 175.3-315.7 290.9-541.9 290.9S734 1684.3 617.6 1509l-82.4 47.6-40-69.3 82.4-47.5c-43.5-87.3-68-185.7-68-289.8 0-345.6 269.6-628.1 610-648.8V406h80v95.2c340.4 20.7 610 303.2 610 648.8 0 104.1-24.5 202.6-68 289.8l82.4 47.5-40.2 69.3z'/%3E%3Cpath id='Inner_Ring' fill='%23E3E2D6' d='M1741.4 1439.8c43.5-87.3 68-185.7 68-289.8 0-345.6-269.6-628.1-610-648.8V406h-80v95.2c-340.4 20.7-610 303.2-610 648.8 0 104.1 24.5 202.6 68 289.8l-82.4 47.5 40 69.3 82.4-47.6c116.4 175.3 315.7 290.9 541.9 290.9s425.5-115.6 541.9-290.9l82.4 47.6 40-69.3-82.2-47.5zm-104.2-60.1c-11.6 24.2-25.1 47.3-40.1 69.2-95.5 139.5-255.9 231.1-437.7 231.1s-342.3-91.6-437.7-231.1c-15-22-28.4-45.1-40.1-69.2-33.5-69.5-52.2-147.4-52.2-229.7 0-279.3 216-508.1 490-528.5 13.2-1 26.5-1.5 40-1.5s26.8.5 40 1.5c274 20.4 490 249.3 490 528.5 0 82.3-18.7 160.2-52.2 229.7z'/%3E%3Cpath id='Inner_Circle' d='M1199.4 621.5c-13.2-1-26.5-1.5-40-1.5s-26.8.5-40 1.5c-274 20.4-490 249.3-490 528.5 0 82.3 18.8 160.2 52.2 229.7 11.6 24.2 25.1 47.3 40.1 69.2 95.5 139.5 255.9 231.1 437.7 231.1s342.3-91.6 437.7-231.1c15-22 28.4-45.1 40.1-69.2 33.5-69.5 52.2-147.4 52.2-229.7 0-279.3-215.9-508.1-490-528.5zm268.2 752.1H834.9l58.6-417.1-60.6 417.1V908.7h291.6l43.6 47.8h358.1l-58.6 417.1z'/%3E%3Cg id='File'%3E%3Cpath fill='%23E3E2D6' d='m1168.8 957.3-275.3-.8-58.6 417.1h632.7l58.6-417.1h-358.1z'/%3E%3Cpath fill='%23848484' d='m1168.1 956.5-43.6-47.8H832.9v464.9l60.6-417.1 275.3.8z'/%3E%3C/g%3E%3Cg id='Bevel'%3E%3Cpath fill='%23636363' d='M1544.8 237.8c355.3 150.3 604.6 502.1 604.6 912.2 0 40.8-2.5 81.6-7.5 122.1l125 139.7 44.7-40-107.1-119.7c3.3-33.9 4.9-68.1 4.9-102.1 0-210.4-62-413.4-179.3-587.1-56.5-83.7-124.7-158.7-202.7-223.1-71.4-58.9-150-108-233.9-146.2l-50.1-152.4-57 18.7 58.4 177.9z'/%3E%3Cpath fill='%23848484' d='M1802.4 1680h654v60h-654z' transform='matrix(0.5 -0.866 0.866 0.5 -416.2155 2699.0933)'/%3E%3Cpath fill='%23474747' d='m1543.4 41.3-57-41.3v60z'/%3E%3Cpath fill='%236B6B6B' d='m2266.9 1411.8 52 30-7.3-70-44.7 40z'/%3E%3Cpath fill='%23939393' d='m1927.6 2036.9 64.3-28.7-52-30z'/%3E%3Cpath fill='%23636363' d='M379 1978.2 52 1411.8l-52 30 327 566.4 64.2 28.7z'/%3E%3Cpath fill='%23848484' d='M1756.4 1939.8c-166 125.7-372.8 200.2-597 200.2s-431-74.5-597-200.2l-14 64.2c83.3 59.7 174.4 106.7 271.2 139.8 109.1 37.3 223.4 56.2 339.7 56.2 116.3 0 230.6-18.9 339.7-56.2 96.8-33.1 187.9-80.1 271.2-139.8l157.2 32.9 12.3-58.7-183.3-38.4z'/%3E%3Cpath fill='%236D6D6D' d='m379 1978.2 12.2 58.7 157.3-32.9 13.9-64.2z'/%3E%3Cpath d='m832.4 0-57 41.3-50.1 152.4c-83.9 38.1-162.5 87.2-233.9 146.2-78 64.3-146.2 139.4-202.7 223.1-117.3 173.6-179.3 376.6-179.3 587 0 33.9 1.7 68.2 4.9 102.1L7.2 1371.8l44.7 40 125-139.7c-5-40.5-7.5-81.3-7.5-122.1 0-410 249.3-761.8 604.6-912.2L832.4 60h654V0h-654z'/%3E%3Cpath fill='%23474747' d='m7.2 1371.8-7.2 70 52-30z'/%3E%3Cpath fill='%23E3E2D6' d='M2266.9 1411.8z'/%3E%3C/g%3E%3C/svg%3E");
+    --header-title: "RAISAアーカイブ";
+    --header-subtitle: "記録・情報保安管理局";
+
+    /* 書体 */
+    --body-font: 'Oxanium', 'Noto Sans JP', sans-serif;
+    --header-font: 'Share Tech Mono', 'Noto Sans JP', monospace;
+    --title-font: 'Oxanium', 'Noto Sans JP', sans-serif;
+    --mono-font: "PT Mono", "Noto Sans JP", "Andale Mono", "Courier New", Courier, monospace;
+    --UI-font: var(--mono-font);
+
+    /* 標準色 */
+    --white-monochrome: 252, 252, 252;
+    /* 白 */
+    --pale-gray-monochrome: 244, 244, 244;
+    /* 引用ブロックなどに使うごく薄い灰色 */
+    --light-gray-monochrome: 170, 170, 170;
+    /* ログイン状態に使う薄いアクセント灰色 */
+    --gray-monochrome: 66, 66, 72;
+    /* 灰色 */
+    --dark-gray-monochrome: 48, 48, 52;
+    /* サイドバー背景に使う濃いアクセント灰色 */
+    --black-monochrome: 12, 12, 12;
+    /* 黒 */
+    --bright-accent: 221, 221, 119;
+    /* ヘッダー用の明るい黄色 */
+    --medium-accent: 224, 196, 71;
+    /* ヘッダー用の中間黄色 */
+    --dark-accent: 34, 34, 0;
+    /* 濃い黄褐色 */
+    --newpage-color: 99, 190, 255;
+    /* 明るい青 */
+    --terminal-medium: 170, 170, 85;
+    /* 端末風の境界線に使うくすんだ黄色 */
+    --pale-accent: 96, 96, 0;
+    /* 濃い黄褐色 */
+
+    /* 主要テーマ色 */
+    --swatch-primary: var(--bright-accent);
+    --swatch-primary-darker: var(--medium-accent);
+    --swatch-primary-darkest: var(--dark-accent);
+    /* 主要テキスト色 */
+    --swatch-text-dark: var(--black-monochrome);
+    --swatch-text-light: var(--white-monochrome);
+    --swatch-important-text: var(--bright-accent);
+
+    /* 主要メニュー色 */
+    --swatch-menubg-color: var(--dark-accent);
+    --swatch-menubg-light-color: var(--bright-accent);
+    --swatch-menubg-medium-color: var(--bright-accent);
+    --swatch-menubg-medium-dark-color: var(--black-monochrome);
+    --swatch-menubg-dark-color: var(--dark-accent);
+    --swatch-menubg-black-color: var(--black-monochrome);
+    --swatch-menubg-hover-color: var(--terminal-medium);
+    --swatch-menutxt-dark-color: var(--dark-accent);
+    --swatch-menutxt-light-color: var(--bright-accent);
+    --swatch-border-color: var(--terminal-medium);
+    /* 主要ヘッダー色 */
+    --swatch-topmenu-border-color: var(--dark-accent);
+    --swatch-topmenu-bg-color: var(--dark-accent);
+
+    /* ===第2・第3色=== */
+    /* ここを編集すると、大半のテーマ要素が変わります。暗色テーマを作る際に有用です。 */
+
+    /* 引用ブロックやYUIタブなど、第2・第3要素用の色 */
+    --swatch-secondary-color: var(--swatch-menubg-light-color);
+    --swatch-tertiary-color: var(--swatch-menubg-dark-color);
+    --swatch-alternate-color: var(--swatch-primary);
+
+    /* サイドバー見出しやトップバーメニューテキストなど、第2・第3要素用のテキスト色 */
+    --swatch-text-secondary-color: var(--swatch-menutxt-dark-color);
+    --swatch-text-tertiary-color: var(--swatch-menutxt-light-color);
+
+    /* ヘッダーのグラデーション */
+
+    --gradient-header: linear-gradient(to bottom,
+     rgba(var(--medium-accent), 0.97) 10%,
+     rgba(var(--medium-accent), 0.97) 40%,
+     rgb(var(--bright-accent)) 100%);
+    --gradient-topmenu: linear-gradient(to bottom,
+     rgb(var(--white-monochrome)) 0%,
+     rgb(var(--white-monochrome)) 7.5rem,
+     rgba(var(--swatch-topmenu-border-color), 1) 7.5rem,
+     rgba(var(--swatch-topmenu-bg-color), 1) 7.625rem,
+     rgba(var(--swatch-topmenu-bg-color), 0.95) calc(100% - 0.125rem),
+     rgba(var(--swatch-topmenu-bg-color), 1) calc(100% - 0.125rem),
+     rgba(var(--swatch-topmenu-border-color), 1) 100%);
+    --gradient-topmenu-mobile: linear-gradient(to bottom,
+     rgba(var(--swatch-topmenu-border-color), 1) 0,
+     rgba(var(--swatch-topmenu-bg-color), 1) 0.125rem,
+     rgba(var(--swatch-topmenu-bg-color), 1) calc(3rem - 0.125rem),
+     rgba(var(--swatch-topmenu-bg-color), 1) calc(3rem - 0.125rem),
+     rgba(var(--swatch-topmenu-border-color), 1) 3rem);
+    --diagonal-stripes: repeating-linear-gradient(180deg,
+     hsla(0, 0%, 100%, 0),
+     hsla(0, 0%, 100%, 0) 0.25vh,
+     rgba(88, 88, 88, 0.1) 0.35vh,
+     rgba(88, 88, 88, 0.2) 0.5vh);
+    --gradient-sidemenu-header: linear-gradient(10deg,
+     rgba(var(--medium-accent), 0.45) 0%,
+     rgba(var(--medium-accent), 0.55) 100%);
+    --header-background-image-size: 100% 7.5rem;
+
+    /* サイドバー */
+    --sidebar-transition-timing: 0.5s ease-in-out 0.1s;
+    --sidebar-internal-border-thickness: 0.16rem;
+
+    --background-gradient-distance: 30rem;
+}
+
+/*  ===============================
+    ======= 個別色 =======
+    ===============================
+/* ボタン、タブ、表、脚注ホバー、モーダルなどの色 */
+
+:root {
+    /* ===背景グラデーション=== */
+
+    /* ===全体背景=== */
+    /* ページ全体の背景色 */
+    --swatch-background: var(--white-monochrome);
+    /* --gradient-background変数で使うグラデーション色 */
+    --background-gradient-color: 242, 242, 120;
+
+    /* ===リンク色=== */
+    --link-color: 126, 116, 38;
+    --visited-link-color: 75, 98, 66;
+    --hover-link-color: var(--swatch-primary-darkest);
+}
+
+#header {
+    /* ===ヘッダー要素=== */
+    /* ===ヘッダータイトル=== */
+    /* ヘッダーH1とH2の色 */
+    --swatch-headerh1-color: var(--dark-accent);
+    --swatch-headerh2-color: var(--dark-accent);
+
+    /* フォーカスは検索ボックスがクリックされた状態を指す */
+    --search-icon-focus-color: var(--swatch-primary-darkest);
+    --search-icon-focus-bg-color: var(--swatch-primary);
+    --search-focus-outline-color: var(--swatch-primary-darkest);
+    --search-focus-textbox-bg-color: var(--swatch-alternate-color);
+
+    /* ===ログインボックス要素=== */
+    --login-line-divider-color: var(--swatch-text-secondary-color);
+    --login-username-color: var(--swatch-text-secondary-color);
+    --login-myaccount-color: var(--swatch-text-secondary-color);
+    --login-myaccount-underline-color: var(--swatch-primary);
+    --login-myaccount-hover-bg-color: var(--swatch-primary);
+    --login-arrow-color: var(--swatch-text-light);
+}
+
+#top-bar {
+    /* ===トップバー要素=== */
+
+    /* ===トップバーのカテゴリ=== */
+    --topmenu-category-color: var(--terminal-medium);
+    --topmenu-category-hover-color: var(--terminal-medium);
+
+    --mobile-topmenu-sidebar-button-color: var(--terminal-medium);
+}
+
+#side-bar,
+#interwiki {
+    /* ===サイドバー要素=== */
+
+    /* ===メニュー項目=== */
+    --sidebar-links-text: var(--swatch-text-tertiary-color);
+    --sidebar-links-hover-bg-color: var(--terminal-medium);
+    --sidebar-links-hover-text-color: var(--swatch-text-secondary-color);
+
+    /* ===サイドバー折り畳み=== */
+    /* 折り畳み時の色 */
+    --sidebar-collapsible-fld-link-hover-color: var(--swatch-text-secondary-color);
+    --sidebar-collapsible-fld-arrow-hover-color: var(--swatch-text-secondary-color);
+
+    /* 展開時の色 */
+    --sidebar-collapsible-ufld-link-hover-color: var(--swatch-text-secondary-color);
+    --sidebar-collapsible-ufld-arrow-hover-color: var(--swatch-text-secondary-color);
+
+    /* 展開本文の色 */
+    --sidebar-collapsible-link-hover-color: var(--swatch-text-secondary-color);
+}
+
+/* ===フッター=== */
+#footer {
+    --footer-bg-color: var(--terminal-medium);
+    --footer-text-color: var(--swatch-text-secondary-color);
+    --footer-link-color: var(--swatch-text-secondary-color);
+    --footer-link-hover-color: var(--swatch-primary);
+    --footer-link-hover-bg-color: var(--swatch-tertiary-color);
+}
+
+/* ===ライセンス領域=== */
+#license-area {
+    --license-bg-color: var(--dark-accent);
+    --license-text-color: var(--swatch-text-tertiary-color);
+    --license-link-color: var(--bright-accent);
+    --license-link-hover-color: var(--dark-accent);
+    --license-link-hover-bg-color: var(--bright-accent);
+}
+
+#main-content {
+    /* ===本文UI要素 */
+    /* ===UIアイコン=== */
+    /* ===ページオプションアイコン=== */
+    --ui-icon-color: var(--swatch-text-tertiary-color);
+    --ui-icon-bg: var(--terminal-medium);
+
+    /* ===テキストエディタアイコン=== */
+    --editor-icon-hover-color: var(--swatch-menutxt-general-color);
+
+    /* ===タブ=== */
+    --tabs-txt: var(--white-monochrome);
+    --tabs-bg: var(--dark-accent);
+    --tabs-hover-txt: var(--dark-accent);
+
+    --tabs-content-bg-color: var(--swatch-tertiary-color), 0.25;
+
+    /* ===脚注・参考文献フッター=== */
+    --footnotes-footer-title-text-color: var(--swatch-text-tertiary-color);
+    --footnotes-footer-num-color: var(--dark-accent);
+    --footnotes-footer-num-hover-color: var(--dark-accent);
+
+    /* ===ページタグ=== */
+    --pagetags-title-text: var(--swatch-text-tertiary-color);
+    --pagetags-text-color: var(--swatch-primary-darkest);
+    --pagetags-text-hover-color: var(--swatch-text-secondary-color);
+    --pagetags-text-hover-bg-color: var(--swatch-primary);
+}
+
+/* ===全体要素=== */
+:root {
+    /* ===UIボタン=== */
+    --ui-button-bg: var(--swatch-tertiary-color);
+    --ui-button-hover-bg: var(--terminal-medium);
+    --ui-button-hover-outline: var(--dark-accent);
+
+    /* ===評価モジュール=== */
+    --rating-module-button-plus-color: var(--bright-accent);
+    --rating-module-button-negative-color: var(--bright-accent);
+    --rating-module-button-cancel-color: var(--bright-accent);
+    --rating-module-button-credit-color: var(--bright-accent);
+    --rating-module-bg-color: var(--swatch-primary-darkest);
+    --rating-module-bottom-border-color: 0, 0, 0, 0;
+
+    --rating-module-text-color: var(--swatch-menutxt-dark-color);
+    --rating-module-text-hover-color: var(--swatch-menutxt-dark-color);
+
+    /* ===モーダル=== */
+    --modal-bg: var(--swatch-tertiary-color);
+    --modal-body-text: var(--swatch-text-tertiary-color);
+
+    --modal-header-txt: var(--swatch-text-tertiary-color);
+    --modal-header-stripe: var(--terminal-medium);
+
+    /* ===脚注ホバーブロック=== */
+    --hoverblock-bg: var(--swatch-tertiary-color);
+    --hoverblock-txt: var(--swatch-text-tertiary-color);
+    --hoverblock-header-txt: var(--swatch-text-secondary-color);
+    --hoverblock-footer-txt: var(--swatch-text-tertiary-color);
+
+    /* ===ListPagesページャー=== */
+    --pager-text: var(--swatch-text-general);
+    --pager-link: var(--link-color);
+
+    --pager-link-hover: var(--swatch-text-secondary-color);
+    --pager-hover-bg: var(--swatch-primary-darkest);
+
+    --pager-selected-bg: var(--swatch-primary);
+    --pager-selected-link: var(--swatch-text-secondary-color);
+}
+
+::-moz-selection {
+    background: rgba(var(--swatch-primary), 1);
+    color: rgb(var(--black-monochrome)) !important;
+    text-shadow: none;
+}
+
+::selection {
+    background: rgba(var(--swatch-primary), 1);
+    color: rgb(var(--black-monochrome)) !important;
+    text-shadow: none;
+}
+
+html,
+body,
+#side-bar:hover {
+    scrollbar-color: rgb(var(--terminal-medium)) rgb(var(--dark-accent));
+}
+
+::-webkit-scrollbar,
+#side-bar:hover::-webkit-scrollbar {
+    background-color: rgb(var(--dark-accent));
+}
+
+::-webkit-scrollbar-thumb,
+#side-bar:hover::-webkit-scrollbar-thumb {
+    background-color: rgb(var(--terminal-medium));
+}
+
+:is(div.image-block, div.scp-image-block) :is(.image-caption, .scp-image-caption) {
+    background-color: rgb(var(--dark-accent));
+    color: rgb(var(--bright-accent));
+    font-size: .8em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+}
+
+a[href*="/random:random-tale"],
+a[href*="/most-recently-edited"] {
+    min-width: calc((var(--base-font-size) * (14 / 15)) * 6);
+}
+
+.code {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px 5px 5px 15px;
+    border: 2px dashed rgb(var(--terminal-medium));
+    background-color: rgb(var(--dark-accent));
+    color: rgb(var(--bright-accent));
+    font-family: var(--header-font);
+    font-size: 1.1em;
+}
+
+.hl-main {
+    -webkit-filter: invert(1) hue-rotate(180deg);
+    filter: invert(1) hue-rotate(180deg);
+}
+
+#page-content table.wiki-content-table th,
+#page-content table.wiki-content-table tr,
+#page-content table.wiki-content-table td {
+    border: 1px solid rgb(var(--terminal-medium)) !important;
+    background-color: rgb(var(--dark-accent)) !important;
+    color: rgb(var(--bright-accent));
+}
+
+:is(.footnotes-footer, .bibitems) {
+    width: 100%;
+    border: 3px solid rgb(var(--terminal-medium));
+    background-color: rgb(var(--dark-accent));
+    color: rgb(var(--bright-accent));
+    font-family: var(--header-font);
+    font-size: 1.1em;
+}
+
+table.wiki-content-table {
+    border: 2px solid rgb(var(--terminal-medium));
+}
+
+hr {
+    background-color: rgb(var(--bright-accent));
+}
+
+.page-rate-widget-box .rate-points {
+    color: rgb(var(--bright-accent)) !important;
+}
+
+div.rate-box-with-credit-button div.page-rate-widget-box :is(.rateup, .ratedown, .cancel) a,
+div.page-rate-widget-box :is(.rateup, .ratedown, .cancel) a {
+    background-color: rgb(var(--terminal-medium)) !important;
+}
+
+#page-content div.rate-box-with-credit-button > div.creditButton > p > a::before {
+    background-color: rgb(var(--pale-gray-monochrome));
+}
+
+#page-content div.rate-box-with-credit-button > div.creditButton:hover {
+    background: rgba(var(--bright-accent), 0.8);
+}
+
+div.rate-box-with-credit-button div.page-rate-widget-box :is(.rateup, .ratedown, .cancel) a:is(:hover, :active, :focus),
+div.page-rate-widget-box :is(.rateup, .ratedown, .cancel) a:is(:hover, :active, :focus) {
+    background-color: rgb(var(--bright-accent)) !important;
+}
+
+div.image-block,
+div.scp-image-block {
+    border: solid .1625rem rgb(var(--terminal-medium));
+}
+
+:is(blockquote, .blockquote, div.blockquote, [class*="blockquote"]) {
+    margin: 10px auto;
+    border: 3px solid rgb(var(--terminal-medium));
+    background-color: rgb(var(--dark-accent));
+    color: rgb(var(--bright-accent));
+    font-size: 1rem;
+}
+
+:is(blockquote, .blockquote, div.blockquote, [class*="blockquote"]) a {
+    color: rgb(227, 237, 33);
+}
+
+:is(blockquote, .blockquote, div.blockquote, [class*="blockquote"]) a:visited {
+    color: rgb(149, 156, 13);
+}
+
+#search-top-box form[id="search-top-box-form"]:not(:focus-within) input[type="text"] {
+    background-color: rgb(var(--dark-accent));
+}
+
+#search-top-box:not(:focus-within)::before {
+    color: rgb(var(--terminal-medium));
+}
+
+@-webkit-keyframes marquee {
+    0% {
+     transform: translateX(100%)
+    }
+
+    100% {
+     transform: translateX(-100%)
+    }
+}
+
+@keyframes marquee {
+    0% {
+     transform: translateX(100%)
+    }
+
+    100% {
+     transform: translateX(-100%)
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #header h2 {
+     height: 100%;
+     overflow: hidden;
+     pointer-events: none;
+    }
+
+    #header h2 span {
+     width: 150% !important;
+     margin-right: 0;
+     margin-left: 0;
+     padding: 0;
+     -webkit-animation: marquee linear 10s infinite;
+     animation: marquee linear 10s infinite;
+    }
+
+    #header h1 span {
+     font-size: 75%;
+    }
+
+    #top-bar {
+     font-size: calc(var(--base-font-size)*0.70);
+    }
+}
+
+[[/code]]
+[[/collapsible]]
+**フォント:** 使用している欧文・和文書体はいずれもGoogle Fontsで配信されるオープンライセンスの書体です（SIL Open Font License など）。日本語文字はNoto Sans JPにフォールバックします。
+
+[[/iftags]]
+
+[[module css]]
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Araisa-jp/1")
+[[/module]]
+[[include :scp-jp:component:interwiki-style
+| priority=3
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Araisa-jp/1
+]]
