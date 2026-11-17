@@ -1,0 +1,150 @@
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** ダイヤモンド・ハイライター・テーマ
+**翻訳責任者:** AI
+**翻訳年:** 2026
+**原題:** Diamond Highlighter Theme
+**著作権者:** tetsusquared
+**作成年:** 2022
+**初訳時参照リビジョン:** 11
+**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:diamond-highlighter ソース]
+[[include :scp-jp:credit:end-preview]]
+
+[[module css]]
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css");
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css");
+[[/module]]
+
+[[include component:interwiki-style
+| priority=1
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css
+]]
+
+[[include component:interwiki-style
+| priority=2
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css
+]]
+
+これは[[*user tetsusquared]]によるダイヤモンド・ハイライター・テーマです。
+
+このテーマは[[[theme:black-highlighter-theme|Black Highlighter]]]を拡張し、最小限の変更を加えたものです。主に[[[https://scp-wiki.wikidot.com/secure-facility-dossier-site-418|Minecraft部門]]]テーマをページ間で統一するために作られました[[footnote]]実際に使っているのは6468とSite-418だけですが、もっと増える予定です。[[/footnote]]。
+
+ヘッダーは**CN**、**FR**、**JP**、**KO**、**PL**、**VN**、**ZH**[[footnote]]CNとZHで表記を統一するため、Site-418の報告書のCN語訳の表記を基準としています。[[/footnote]]の各Wikiで自動的に翻訳されます。これらは、Minecraft部門の翻訳記事が少なくとも1つ存在するWikiです。ここに挙げられていない支部でMinecraft部門の記事を翻訳される方は、私（[[*user tetsusquared]]）にWikidotのPMを送り、記事へのリンクを添えてください。その後、テーマの翻訳を「公式化」します。それまでの間は、{{header-title}}パラメータと{{header-subtitle}}パラメータで上書きできます。
+
+このテーマを翻訳された場合は、私（[[*user tetsusquared]]）にWikidotのPMを送ってください。テーマの更新情報をお伝えします。なお、更新を継続して受け取るには、静的に複製したコードではなく、このページをincludeしてください。
+
+このテーマを使用するには、ページの先頭に以下を記述してください:
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:black-highlighter-theme]]@@
+@@[[include theme:diamond-highlighter-jp]]@@
+[[/div]]
+
+以下の特殊機能が含まれます:
+
+++ MCDiv引用ブロック
+
+[[div class="mcdiv-blockquote"]]
+[[=]]
+[[size 150%]] **Minecraft部門メモ** [[/size]]
+[[/=]]
+[# Site-418-ε]の外側で異常な大きさのクリーパー・ウィザーハイブリッドが目撃されています。収容チームが状況を評価するために派遣されました。冷静に行動してください。
+
+[[>]]
+Rhiannon Leighton、Site-418-ε 管理チーム
+[[/>]]
+[[/div]]
+
+この機能を使うには、以下のコードを使用してください
+[[div class="code"]]
+@@[[div class="mcdiv-blockquote"]]@@
+@@... ここに内容 ...@@
+@@[[/div]]@@
+[[/div]]
+
+------
+
+[[collapsible show="+ テーマのコードを表示" hide="- テーマのコードを隠す"]]
+[[code type="css"]]
+/* DIAMOND HIGHLIGHTER THEME
+BHL based theme by tetsusquared
+feel free to use for all Minecraft Division articles */
+
+:root:lang(en) {
+    --header-title: "Minecraft Division";
+    --header-subtitle: "Systematic Containment with Playability";
+}
+
+:root:lang(cn) {
+    --header-title: "Minecraft部门";
+    --header-subtitle: "有可玩性的系统性收容";
+}
+
+:root:lang(cs) {
+    --header-title: "Minecraft Divize";
+    --header-title: "Systematická zadržení hrou";
+}
+
+:root:lang(fr) {
+    --header-title: "Division Minecraft";
+    --header-subtitle: "Systématicité du Confinement Pratique";
+}
+
+:root:lang(ja) {
+    --header-title: "Minecraft部門";
+    --header-subtitle: "Systematic Containment with Playability";
+}
+
+:root:lang(ko) {
+    --header-title: "마인크래프트과";
+    --header-subtitle: "확립된 격리는 비디오게임과 함께";
+}
+
+:root:lang(pl) {
+    --header-title: "Wydział Minecrafta";
+    --header-subtitle: "Systematyczne Czynności z Pogrywaniem";
+}
+
+:root:lang(vi) {
+    --header-title: "Phân khu Minecraft";
+    --header-subtitle: "Quản thúc Hệ thống các Đối tượng Trò chơi";
+}
+
+:root:lang(zh) {
+    --header-title: "Minecraft部門";
+    --header-subtitle: "有可玩性的系統性收容";
+}
+
+
+:root {
+    /* ===HEADER ELEMENTS=== */
+    --logo-image: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Adiamond-highlighter-jp/mcdiv_logo.png");
+    --header-title: "Minecraft Division";
+    --header-subtitle: "Systematic Containment with Playability";
+
+    /* ===STANDARD THEME COLORS=== */
+    --pale-accent: 114, 157, 203;
+    --bright-accent: 97, 145, 197;
+    --medium-accent: 56, 100, 148;
+    --dark-accent: 39, 70, 104;
+
+    /* ===HEADER GRADIENT=== */
+    --gradient-header: linear-gradient(to bottom, rgb(53, 173, 30), rgb(40, 160, 20) 10%, rgb(151, 104, 21) 10%, rgb(90, 61, 12));
+}
+
+.mcdiv-blockquote {
+    background: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Adiamond-highlighter-jp/mcdiv_watermark.png") 50% 50%/10rem no-repeat, linear-gradient(to bottom, rgb(217, 248, 211), rgb(180, 240, 168) 15px, rgb(255, 234, 215) 15px, rgb(234, 214, 200) 170px);
+    padding-top: 20px;
+}
+[[/code]]
+[[/collapsible]]
+[[/iftags]]
+
+[[module css]]
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Adiamond-highlighter-jp/1")
+[[/module]]
+[[include component:interwiki-style
+| priority=3
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Adiamond-highlighter-jp/1
+]]

@@ -3,7 +3,8 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:isolated-terminal-jp — origin EN, population #17 [GOSIGN2-LEDGER (b) row 17]
-- Overall: PASS — passed at the ledger determination; no OPEN items [GOSIGN2-LEDGER (b) row 17]
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 667482550a6e0789984acfaf7cdb973234d63d70e60705452a4d503f54395ac2); verdict not carried over, re-judgement required
+> verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 2 errors / 1 warn / 2 infos (pseudo-ref×2); standing classes dispositioned in register c1 [T1-ROWS row 17; GOSIGN2-LEDGER (b) row 17]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — sample lower half blank white (possible stale-cache, not a defect), T2 sample incomplete (exit 2, no summary), runtime-hotlink; page credit modal opens. [RENDER-ROWS-1 (RENDER-B row 17)]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row (the row records inconclusive runs, carried verbatim above) [RENDER-ROWS-1 row]
@@ -11,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 2 [LOCALIZE-ROWS row 18, source LOCALIZE-A]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 18]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 17]
-- Computed against: canonical commit b816e106f0a812ea6fd2640a0eff3359ce20e8c8; candidate file pages/theme:isolated-terminal-jp.txt sha256:298eeb9faa06f59869c4a91939f973d9a55fb4cf1ada6b6752ae2ce272ef8e58; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 358955eb4013dac2399c414ba8ec2a6e416a3c11; candidate file pages/theme:isolated-terminal-jp.txt sha256:667482550a6e0789984acfaf7cdb973234d63d70e60705452a4d503f54395ac2; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status

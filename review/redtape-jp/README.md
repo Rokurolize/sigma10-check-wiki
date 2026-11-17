@@ -3,7 +3,8 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:redtape-jp — origin EN, population #30 [GOSIGN2-LEDGER (b) row 30]
-- Overall: PASS — passed at the ledger determination; no OPEN items [GOSIGN2-LEDGER (b) row 30]
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 900c530a6c958de95e535336539ef893e0131d4fab08087dd521b2e93fe37978); verdict not carried over, re-judgement required
+> verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 4 errors / 1 warn / 1 info (pseudo-ref×4); standing classes dispositioned in register c1 [T1-ROWS row 30; GOSIGN2-LEDGER (b) row 30]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — WebKit CC "S", "ソース" low contrast 3.23, sample credit-modal + overflow 337–419px, panel-body contrast 1.23. [RENDER-ROWS-1 (RENDER-C row 30)]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row [RENDER-ROWS-1 row]
@@ -11,7 +12,7 @@
 - T4 (localize patterns + follow-up): PASS — display-affecting findings: 0 [LOCALIZE-ROWS row 30, source LOCALIZE-B]
 - T5 (translation text): PASS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 30]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 30]
-- Computed against: canonical commit d3e541ea321c76cd85fb62c34c7dac3b29ecebfe; candidate file pages/theme:redtape-jp.txt sha256:7ac4edf80c601ad46a83c3b027274dc5b355663b91132f3f97fe6b90fe42362e; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 358955eb4013dac2399c414ba8ec2a6e416a3c11; candidate file pages/theme:redtape-jp.txt sha256:900c530a6c958de95e535336539ef893e0131d4fab08087dd521b2e93fe37978; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status

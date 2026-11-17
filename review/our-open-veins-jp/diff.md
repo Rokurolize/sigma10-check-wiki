@@ -5,114 +5,18 @@ candidate.txt in this directory; do not hand-edit it. Regenerate
 with `python3 review/build_review.py`; verify with
 `python3 review/build_review.py --check`.
 
-Tier 2 format (large diff): summary header, change-block
-index, then the full diff in collapsed sections. Purely
-mechanical sections are grouped into one collapsed section
-at the end. Auto-class labels are heuristic (token-level
-normalization only); the package README.md carries the
-adjudicated explanation.
-
 | | Lines |
 |---|---|
 | original.txt | 1151 |
-| candidate.txt | 968 |
-| Added | +108 |
-| Review-stage comments | 0 of the +108 added lines |
-| Removed | -291 |
-| Changed | 399 |
-| Change blocks | 71 |
-| Diff sections (context 3) | 12 |
-
-## Changed lines by auto-class (heuristic)
-
-| Auto-class | Blocks | Changed lines |
-|---|---|---|
-| mechanical | 2 | 2 |
-| supplement | 6 | 52 |
-| residual | 63 | 345 |
-
-## Change-block index
-
-| # | Section | Original | Candidate | +/− | Auto-class | Gist |
-|---|---|---|---|---|---|---|
-| 1 | 1 | 2–2 | 2–2 | +1/−1 | supplement | @import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aour-open… |
-| 2 | 1 | 5–5 | 5–5 | +1/−1 | residual | [[include :scp-jp:component:toggle-sidebar]] |
-| 3 | 1 | 9–9 | 9–9 | +1/−1 | supplement | [[include :scp-jp:component:interwiki-style |
-| 4 | 1 | 11–11 | 11–11 | +1/−1 | supplement | \| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aour-open-vein… |
-| 5 | 1 | 14–17 | 14–14 | +1/−4 | residual | [[iftags +テーマ]] |
-| 6 | 1 | 19–27 | 16–25 | +10/−9 | supplement | [[include :scp-jp:credit:start-preview]] |
-| 7 | 1 | 31–31 | 29–29 | +1/−1 | residual | + 使用方法 |
-| 8 | 1 | 33–33 | 31–31 | +1/−1 | residual | これはOur Open Veinsテーマです。[[*user Dc_Yerko]]が[[*user Kilerpoyo]]の助言を受けて作成したテーマで、… |
-| 9 | 1 | 35–35 | 33–33 | +1/−1 | residual | このテーマをインポートするには、記事の上部に次の行を置くだけです。 |
-| 10 | 1 | 39–39 | 37–37 | +1/−1 | residual | 簡単ですね[[footnote]]私たちの開かれた静脈の血が、私たちの歴史を書くでしょう[[/footnote]][[footnote]]ああ、そうです。… |
-| 11 | 1 | 41–41 | 39–39 | +1/−1 | residual | + カラーバリエーションの使用 |
-| 12 | 1 | 43–43 | 41–41 | +1/−1 | residual | このテーマにはカラーバリエーションがあります。つまり、同じテーマの別バージョンであり、一部またはすべての色が変更されています。このテーマには1種類のカラー… |
-| 13 | 1 | 45–45 | 43–43 | +1/−1 | residual | [[include component:image-block name=https://sigma10-jp-test.wdfiles.com/loca… |
-| 14 | 1 | 49–49 | 47–47 | +1/−1 | residual | このバリエーションは、血のような細部を添えて、夜の暗い色をもたらします。 |
-| 15 | 1 | 51–51 | 49–49 | +1/−1 | residual | 暗めのTaleに向いています。 |
-| 16 | 1 | 53–53 | 51–51 | +1/−1 | residual | Our Dark Veinsバリエーションをインポートするには、記事の上部に次のものを置いてください。 |
-| 17 | 1 | 59–59 | 57–57 | +1/−1 | residual | [[include component:image-block name=https://sigma10-jp-test.wdfiles.com/loca… |
-| 18 | 1 | 61–61 | 59–59 | +1/−1 | residual | +* 例 |
-| 19 | 1 | 63–63 | 61–61 | +1/−1 | residual | 上のような水平線は、このように4つのダッシュで作成できます。@@“----”@@。小さいながら太い区切りのハイフンは、次のものを置くことで作成できます。“… |
-| 20 | 1 | 67–67 | 65–65 | +1/−1 | residual | 下のような特殊な水平線を作るには、次のコードを使えます。 |
-| 21 | 2 | 79–80 | 77–78 | +2/−2 | residual | [[collapsible show="タイトル" hide="タイトル"]] |
-| 22 | 2 | 82–82 | 80–80 | +1/−1 | residual | ++* タイトル2 |
-| 23 | 2 | 84–84 | 82–82 | +1/−1 | residual | +++* タイトル3 |
-| 24 | 2 | 86–86 | 84–84 | +1/−1 | residual | ++++* タイトル4 |
-| 25 | 2 | 88–88 | 86–86 | +1/−1 | residual | +++++* タイトル5 |
-| 26 | 2 | 90–90 | 88–88 | +1/−1 | residual | ++++++* タイトル6 |
-| 27 | 2 | 94–95 | 92–93 | +2/−2 | residual | [[tab タブ]] |
-| 28 | 2 | 97–98 | 95–96 | +2/−2 | residual | [[tab タブ化]] |
-| 29 | 2 | 100–100 | 98–98 | +1/−1 | residual | 撃て！ |
-| 30 | 2 | 102–102 | 100–100 | +1/−1 | residual | [[tab 長いタブ]] |
-| 31 | 2 | 104–104 | 102–102 | +1/−1 | residual | これは長いタブです。たくさんのテキストを含んでいます。 |
-| 32 | 2 | 106–106 | 104–104 | +1/−1 | residual | これは長いタブです。たくさんのテキストを含んでいます。 |
-| 33 | 2 | 108–108 | 106–106 | +1/−1 | residual | これは長いタブです。たくさんのテキストを含んでいます。 |
-| 34 | 2 | 110–110 | 108–108 | +1/−1 | residual | これは長いタブです。たくさんのテキストを含んでいます。 |
-| 35 | 2 | 112–112 | 110–110 | +1/−1 | residual | これは長いタブです。たくさんのテキストを含んでいます。 |
-| 36 | 2 | 114–114 | 112–112 | +1/−1 | residual | これは長いタブです。たくさんのテキストを含んでいます。 |
-| 37 | 2 | 116–116 | 114–114 | +1/−1 | residual | これは長いタブです。たくさんのテキストを含んでいます。 |
-| 38 | 2 | 118–118 | 116–116 | +1/−1 | residual | これは長いタブです。たくさんのテキストを含んでいます。 |
-| 39 | 2 | 120–120 | 118–118 | +1/−1 | residual | これは長いタブです。たくさんのテキストを含んでいます。 |
-| 40 | 2 | 122–122 | 120–120 | +1/−1 | residual | これは長いタブです。たくさんのテキストを含んでいます。 |
-| 41 | 2 | 124–124 | 122–122 | +1/−1 | residual | これは長いタブです。たくさんのテキストを含んでいます。 |
-| 42 | 2 | 126–126 | 124–124 | +1/−1 | residual | これは長いタブです。たくさんのテキストを含んでいます。 |
-| 43 | 2 | 128–128 | 126–126 | +1/−1 | residual | これは長いタブです。たくさんのテキストを含んでいます。 |
-| 44 | 2 | 130–131 | 128–129 | +2/−2 | residual | [[tab ここで分かるように実際とても長い、さらに長いタブ]] |
-| 45 | 2 | 133–133 | 131–131 | +1/−1 | residual | 寂しいです。 |
-| 46 | 2 | 135–135 | 133–133 | +1/−1 | residual | [[tab 空のタブ]] |
-| 47 | 2 | 137–137 | 135–135 | +1/−1 | residual | [[tab 空のタブ]] |
-| 48 | 2 | 139–139 | 137–137 | +1/−1 | residual | [[tab 空のタブ]] |
-| 49 | 2 | 141–141 | 139–139 | +1/−1 | residual | [[tab 空のタブ]] |
-| 50 | 2 | 145–145 | 143–143 | +1/−1 | residual | **これは空ではありませんでした。ワタリガラスたちはあなたの位置を特定し、そちらへ向かっています。** |
-| 51 | 2 | 152–152 | 150–150 | +1/−1 | residual | > これは引用ボックスです。各行の先頭に“> ”を置くことで作成できます。段落を区切るために空行だけを使う場合でも、記号の後ろの空白は常に必要です。 |
-| 52 | 2 | 154–154 | 152–152 | +1/−1 | residual | > さらにテキスト。 |
-| 53 | 2 | 156–156 | 154–154 | +1/−1 | residual | > これは水平線です。実におしゃれです。 |
-| 54 | 2 | 158–158 | 156–156 | +1/−1 | residual | >> そしてこれが、私たちの呼ぶ//インセプション//です[[footnote]]または、お望みならインセプヴェインです。[[/footnote]]。 |
-| 55 | 2 | 160–162 | 158–160 | +3/−3 | residual | \|\|~ これは \|\|~ 表です \|\| |
-| 56 | 2 | 168–168 | 166–166 | +1/−1 | residual | + ソースコード |
-| 57 | 2 | 170–171 | 168–168 | +1/−2 | residual | [[collapsible show="コードを表示" hide="コードを隠す"]] |
-| 58 | 2 | 173–173 | — | +0/−1 | mechanical | (blank lines only) |
-| 59 | 2 | — | 173–177 | +5/−0 | supplement | /* 日本語フォント (JP localization) */ |
-| 60 | 3 | 188–188 | 189–189 | +1/−1 | residual | background: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aour-… |
-| 61 | 4 | 206–206 | 207–207 | +1/−1 | residual | font-family: "Jost", "Noto Sans JP", serif; |
-| 62 | 5 | 346–346 | 347–347 | +1/−1 | residual | font-family: "Rubik Distressed", "Noto Serif JP", serif; |
-| 63 | 6 | 399–399 | 400–400 | +1/−1 | residual | font-family: "Road Rage", "Noto Serif JP", serif; |
-| 64 | 7 | 415–415 | 416–416 | +1/−1 | residual | background-image: url("https://sigma10-jp-test.wdfiles.com/local--files/theme… |
-| 65 | 8 | 664–664 | 665–665 | +1/−1 | residual | font-family: "Rubik Distressed", "Noto Serif JP", serif; |
-| 66 | 9 | 677–677 | 678–678 | +1/−1 | residual | font-family: "Rubik Distressed", "Noto Serif JP", serif; |
-| 67 | 10 | 903–903 | 904–904 | +1/−1 | residual | background-image: url("https://sigma10-jp-test.wdfiles.com/local--files/theme… |
-| 68 | 11 | 924–924 | 925–925 | +1/−1 | residual | background-image: url('https://sigma10-jp-test.wdfiles.com/local--files/theme… |
-| 69 | 12 | 942–942 | — | +0/−1 | mechanical | (blank lines only) |
-| 70 | 12 | — | 946–967 | +22/−0 | supplement | [[include :scp-jp:component:license-box-backend |
-| 71 | 12 | 947–1151 | — | +0/−205 | residual | [!-- {$our-dark-veins} |
-
-## Full diff
-
-<details>
-<summary>Section 1 — original 1–70 · candidate 1–68 · +29/−31 · residual, supplement</summary>
+| candidate.txt | 1173 |
+| Added | +136 |
+| Review-stage comments | 0 of the +136 added lines |
+| Removed | -119 |
+| Hunks | 13 |
 
 ```diff
+--- original.txt
++++ candidate.txt
 @@ -1,70 +1,68 @@
  [[module CSS]]
 -@import url(https://scp-wiki.wikidot.com/theme:our-open-veins/code/1);
@@ -135,8 +39,7 @@ adjudicated explanation.
 -| priority=1
 -| theme=https://scp-wiki.wdfiles.com/local--code/theme:our-open-veins/1
 -]]
-+[[iftags +テーマ]]
- 
+-
 -[[iftags +theme]]
 -
 -[[include :scp-wiki:info:start]]
@@ -146,6 +49,8 @@ adjudicated explanation.
 -[[>]]
 -[[module Rate]]
 -[[/>]]
++[[iftags +テーマ]]
++
 +[[include :scp-jp:credit:start-preview]]
 +**タイトル:** アワー・オープン・ヴェインズ テーマ
 +**翻訳責任者:** AI
@@ -160,37 +65,44 @@ adjudicated explanation.
  [[f>toc]]
  
 -+ Use
-++ 使用方法
- 
+-
 -This is the Our Open Veins Theme, , a theme created by [[*user Dc_Yerko]] with indications of [[*user Kilerpoyo]] to be used in articles which setting is the [https://scp-wiki.wikidot.com/our-open-veins-hub Our Open Veins canon].
-+これはOur Open Veinsテーマです。[[*user Dc_Yerko]]が[[*user Kilerpoyo]]の助言を受けて作成したテーマで、[https://scp-wiki.wikidot.com/our-open-veins-hub Our Open Veinsカノン]を舞台とする記事で使用するためのものです。
- 
+-
 -To import this theme, just put this line in the upper part of your article:
+++ 使用方法
++
++これはOur Open Veinsテーマです。[[*user Dc_Yerko]]が[[*user Kilerpoyo]]の助言を受けて作成したテーマで、[https://scp-wiki.wikidot.com/our-open-veins-hub Our Open Veinsカノン]を舞台とする記事で使用するためのものです。
++
 +このテーマをインポートするには、記事の上部に次の行を置くだけです。
  
  > @@[[include theme:our-open-veins]]@@
  
 -Easy[[footnote]]The Blood Of Our Open Veins Will Write Our History[[/footnote]][[footnote]]Ah, yeah, and this is how footnotes looks like.[[/footnote]]
-+簡単ですね[[footnote]]私たちの開かれた静脈の血が、私たちの歴史を書くでしょう[[/footnote]][[footnote]]ああ、そうです。脚注はこんなふうに表示されます。[[/footnote]]
- 
+-
 -+ Usage of Color Variations
-++ カラーバリエーションの使用
- 
+-
 -This theme has color variations, that is, alternative versions of the same theme but with some, or all, of its colors changed. This theme has 1 different color variation
-+このテーマにはカラーバリエーションがあります。つまり、同じテーマの別バージョンであり、一部またはすべての色が変更されています。このテーマには1種類のカラーバリエーションがあります。
- 
+-
 -[[include component:image-block name=https://scp-wiki.wdfiles.com/local--files/theme:our-open-veins/Dark%20Mode.png|caption=Our Dark Veins|width=225px]]
++簡単ですね[[footnote]]私たちの開かれた静脈の血が、私たちの歴史を書くでしょう[[/footnote]][[footnote]]ああ、そうです。脚注はこんなふうに表示されます。[[/footnote]]
++
+++ カラーバリエーションの使用
++
++このテーマにはカラーバリエーションがあります。つまり、同じテーマの別バージョンであり、一部またはすべての色が変更されています。このテーマには1種類のカラーバリエーションがあります。
++
 +[[include component:image-block name=https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aour-open-veins-jp/Dark%20Mode.png|caption=Our Dark Veins|width=225px]]
  
  ++ Our Dark Veins
  
 -This variation brings the dark colors of the night with some bloody details.
-+このバリエーションは、血のような細部を添えて、夜の暗い色をもたらします。
- 
+-
 -Good for darker tales.
-+暗めのTaleに向いています。
- 
+-
 -To import the Our Dark Veins variation, put the following at the upper part of your article:
++このバリエーションは、血のような細部を添えて、夜の暗い色をもたらします。
++
++暗めのTaleに向いています。
++
 +Our Dark Veinsバリエーションをインポートするには、記事の上部に次のものを置いてください。
  
  > @@[[include theme:our-open-veins |our-dark-veins= --]]]@@
@@ -198,12 +110,14 @@ adjudicated explanation.
  ----
  
 -[[include component:image-block name=https://scp-wiki.wdfiles.com/local--files/theme:our-open-veins/Florcita.png|caption=Bloom|width=225px]]
-+[[include component:image-block name=https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aour-open-veins-jp/Florcita.png|caption=Bloom|width=225px]]
- 
+-
 -+* Examples
-++* 例
- 
+-
 -A horizontal line like the one above can be created with four dashes, like this: @@“----”@@. A small but thick separator hyphen can be created by placing the following: “@@+ -----@@”.
++[[include component:image-block name=https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aour-open-veins-jp/Florcita.png|caption=Bloom|width=225px]]
++
+++* 例
++
 +上のような水平線は、このように4つのダッシュで作成できます。@@“----”@@。小さいながら太い区切りのハイフンは、次のものを置くことで作成できます。“@@+ -----@@”。
  
  ----
@@ -213,36 +127,33 @@ adjudicated explanation.
  
  [[div style="background-color: rgba(224, 255, 239, 0.7); border: dotted 1px black; padding: 0 1em; display: block; margin: 1em; width: 55%;"]]
  @@[[div class="serpiente"]]@@
-```
-
-</details>
-
-<details>
-<summary>Section 2 — original 76–179 · candidate 74–180 · +48/−45 · mechanical, residual, supplement</summary>
-
-```diff
-@@ -76,104 +74,107 @@
+@@ -76,105 +74,108 @@
  [[div class="serpiente"]]
  [[/div]]
  
 -[[collapsible show="Titles" hide="Titles"]]
 -+* Title 1
+-
+-++* Title 2
+-
+-+++* Title 3
+-
+-++++* Title 4
+-
+-+++++* Title 5
+-
+-++++++* Title 6
 +[[collapsible show="タイトル" hide="タイトル"]]
 ++* タイトル1
- 
--++* Title 2
++
 +++* タイトル2
- 
--+++* Title 3
++
 ++++* タイトル3
- 
--++++* Title 4
++
 +++++* タイトル4
- 
--+++++* Title 5
++
 ++++++* タイトル5
- 
--++++++* Title 6
++
 +++++++* タイトル6
  [[/collapsible]]
  
@@ -254,60 +165,75 @@ adjudicated explanation.
  [[/tab]]
 -[[tab Tabulation]]
 -Hey, there's more text over here!
+-
+-Open fire!
 +[[tab タブ化]]
 +おっと、こっちにはさらにテキストがあります！
- 
--Open fire!
++
 +撃て！
  [[/tab]]
 -[[tab Long Tab]]
+-
+-This is a long tab. It contains a lot of text.
+-
+-This is a long tab. It contains a lot of text.
+-
+-This is a long tab. It contains a lot of text.
+-
+-This is a long tab. It contains a lot of text.
+-
+-This is a long tab. It contains a lot of text.
+-
+-This is a long tab. It contains a lot of text.
+-
+-This is a long tab. It contains a lot of text.
+-
+-This is a long tab. It contains a lot of text.
+-
+-This is a long tab. It contains a lot of text.
+-
+-This is a long tab. It contains a lot of text.
+-
+-This is a long tab. It contains a lot of text.
+-
+-This is a long tab. It contains a lot of text.
+-
+-This is a long tab. It contains a lot of text.
 +[[tab 長いタブ]]
- 
--This is a long tab. It contains a lot of text.
++
 +これは長いタブです。たくさんのテキストを含んでいます。
- 
--This is a long tab. It contains a lot of text.
++
 +これは長いタブです。たくさんのテキストを含んでいます。
- 
--This is a long tab. It contains a lot of text.
++
 +これは長いタブです。たくさんのテキストを含んでいます。
- 
--This is a long tab. It contains a lot of text.
++
 +これは長いタブです。たくさんのテキストを含んでいます。
- 
--This is a long tab. It contains a lot of text.
++
 +これは長いタブです。たくさんのテキストを含んでいます。
- 
--This is a long tab. It contains a lot of text.
++
 +これは長いタブです。たくさんのテキストを含んでいます。
- 
--This is a long tab. It contains a lot of text.
++
 +これは長いタブです。たくさんのテキストを含んでいます。
- 
--This is a long tab. It contains a lot of text.
++
 +これは長いタブです。たくさんのテキストを含んでいます。
- 
--This is a long tab. It contains a lot of text.
++
 +これは長いタブです。たくさんのテキストを含んでいます。
- 
--This is a long tab. It contains a lot of text.
++
 +これは長いタブです。たくさんのテキストを含んでいます。
- 
--This is a long tab. It contains a lot of text.
++
 +これは長いタブです。たくさんのテキストを含んでいます。
- 
--This is a long tab. It contains a lot of text.
++
 +これは長いタブです。たくさんのテキストを含んでいます。
- 
--This is a long tab. It contains a lot of text.
++
 +これは長いタブです。たくさんのテキストを含んでいます。
  [[/tab]]
 -[[tab Longer Tab That's Actually Very Long As You Can See Here, Yeah]]
 -But just for the tab, here down there's nothing aside from me...
+-
+-I feel lonely.
 +[[tab ここで分かるように実際とても長い、さらに長いタブ]]
 +でもこのタブだけの話です。この下には、私以外は何もありません……
- 
--I feel lonely.
++
 +寂しいです。
  [[/tab]]
 -[[tab Empty Tab]]
@@ -342,11 +268,12 @@ adjudicated explanation.
 +> これは水平線です。実におしゃれです。
  >
 ->> And this is what we call //Inception//[[footnote]]Or Incepveins if you please.[[/footnote]].
-+>> そしてこれが、私たちの呼ぶ//インセプション//です[[footnote]]または、お望みならインセプヴェインです。[[/footnote]]。
- 
+-
 -||~ This is ||~ a table ||
 -|| I always forgot || how to use this things ||
 -|||| although it is not as difficult as it seems ||
++>> そしてこれが、私たちの呼ぶ//インセプション//です[[footnote]]または、お望みならインセプヴェインです。[[/footnote]]。
++
 +||~ これは ||~ 表です ||
 +|| 私はいつも || こういうものの使い方を忘れます ||
 +|||| 見た目ほど難しくはないのですが ||
@@ -356,32 +283,26 @@ adjudicated explanation.
  ----
  
 -+ Source Code
-++ ソースコード
- 
+-
 -[[collapsible show="Show Code" hide="Hide Code"]]
 -
+++ ソースコード
++
 +[[collapsible show="コードを表示" hide="コードを隠す"]]
  [[code type="css"]]
 -
  @import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Road+Rage&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
-+
+ 
 +/* 日本語フォント (JP localization) */
 +@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 +@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
 +
- 
++
  /* ROOT */
  
-```
-
-</details>
-
-<details>
-<summary>Section 3 — original 185–191 · candidate 186–192 · +1/−1 · residual</summary>
-
-```diff
+ :root {
 @@ -185,7 +186,7 @@
  /* HEADER */
  
@@ -391,14 +312,6 @@ adjudicated explanation.
  }
  
  #header {
-```
-
-</details>
-
-<details>
-<summary>Section 4 — original 203–209 · candidate 204–210 · +1/−1 · residual</summary>
-
-```diff
 @@ -203,7 +204,7 @@
  body {
      background-color: #EEFFF6;
@@ -408,14 +321,6 @@ adjudicated explanation.
  }
  
  #container-wrap-wrap {
-```
-
-</details>
-
-<details>
-<summary>Section 5 — original 343–349 · candidate 344–350 · +1/−1 · residual</summary>
-
-```diff
 @@ -343,7 +344,7 @@
      left: 0%;
      top: 150%;
@@ -425,14 +330,6 @@ adjudicated explanation.
      font-weight: 400;
      font-style: normal;
      text-shadow: rgb(0, 0, 0) 6px 0px 0px, rgb(0, 0, 0) 5.91686px 0.995377px 0px, rgb(0, 0, 0) 5.66974px 1.96317px 0px, rgb(0, 0, 0) 5.2655px 2.87655px 0px, rgb(0, 0, 0) 4.71532px 3.71022px 0px, rgb(0, 0, 0) 4.03447px 4.44106px 0px, rgb(0, 0, 0) 3.24181px 5.04883px 0px, rgb(0, 0, 0) 2.35931px 5.51667px 0px, rgb(0, 0, 0) 1.41143px 5.83163px 0px, rgb(0, 0, 0) 0.424423px 5.98497px 0px, rgb(0, 0, 0) -0.574341px 5.97245px 0px, rgb(0, 0, 0) -1.55719px 5.79441px 0px, rgb(0, 0, 0) -2.49688px 5.45578px 0px, rgb(0, 0, 0) -3.36738px 4.96596px 0px, rgb(0, 0, 0) -4.14455px 4.33852px 0px, rgb(0, 0, 0) -4.80686px 3.59083px 0px, rgb(0, 0, 0) -5.33596px 2.74364px 0px, rgb(0, 0, 0) -5.71718px 1.8204px 0px, rgb(0, 0, 0) -5.93996px 0.84672px 0px, rgb(0, 0, 0) -5.99811px -0.150428px 0px, rgb(0, 0, 0) -5.89004px -1.14341px 0px, rgb(0, 0, 0) -5.61874px -2.1047px 0px, rgb(0, 0, 0) -5.19172px -3.00766px 0px, rgb(0, 0, 0) -4.62082px -3.82727px 0px, rgb(0, 0, 0) -3.92186px -4.54081px 0px, rgb(0, 0, 0) -3.11421px -5.12852px 0px, rgb(0, 0, 0) -2.22026px -5.57409px 0px, rgb(0, 0, 0) -1.26477px -5.86518px 0px, rgb(0, 0, 0) -0.274238px -5.99373px 0px, rgb(0, 0, 0) 0.723898px -5.95617px 0px, rgb(0, 0, 0) 1.70197px -5.75355px 0px, rgb(0, 0, 0) 2.63288px -5.39147px 0px, rgb(0, 0, 0) 3.49082px -4.87998px 0px, rgb(0, 0, 0) 4.25202px -4.23324px 0px, rgb(0, 0, 0) 4.89538px -3.46919px 0px, rgb(0, 0, 0) 5.40307px -2.60899px 0px, rgb(0, 0, 0) 5.76102px -1.67649px 0px, rgb(0, 0, 0) 5.95932px -0.697531px 0px;
-```
-
-</details>
-
-<details>
-<summary>Section 6 — original 396–402 · candidate 397–403 · +1/−1 · residual</summary>
-
-```diff
 @@ -396,7 +397,7 @@
      left: 0%;
      top: 60%;
@@ -442,14 +339,6 @@ adjudicated explanation.
      font-weight: 400;
      font-style: normal;
  }
-```
-
-</details>
-
-<details>
-<summary>Section 7 — original 412–418 · candidate 413–419 · +1/−1 · residual</summary>
-
-```diff
 @@ -412,7 +413,7 @@
  /* SIDE-BAR */
  
@@ -459,14 +348,6 @@ adjudicated explanation.
      background-position: center center;
      background-repeat: repeat-y;
      background-color: #000;
-```
-
-</details>
-
-<details>
-<summary>Section 8 — original 661–667 · candidate 662–668 · +1/−1 · residual</summary>
-
-```diff
 @@ -661,7 +662,7 @@
  #page-title {
      text-align: center;
@@ -476,14 +357,6 @@ adjudicated explanation.
      font-weight: 400;
      font-style: normal;
      font-size: 250%;
-```
-
-</details>
-
-<details>
-<summary>Section 9 — original 674–680 · candidate 675–681 · +1/−1 · residual</summary>
-
-```diff
 @@ -674,7 +675,7 @@
  /* H1 TITLE */
  
@@ -493,14 +366,6 @@ adjudicated explanation.
      font-weight: 400;
      font-style: normal;
      text-shadow: 0px 0px 0px #901;
-```
-
-</details>
-
-<details>
-<summary>Section 10 — original 900–906 · candidate 901–907 · +1/−1 · residual</summary>
-
-```diff
 @@ -900,7 +901,7 @@
  }
   
@@ -510,14 +375,6 @@ adjudicated explanation.
      background-position: center center;
      background-size: contain;
  }
-```
-
-</details>
-
-<details>
-<summary>Section 11 — original 921–927 · candidate 922–928 · +1/−1 · residual</summary>
-
-```diff
 @@ -921,7 +922,7 @@
  /* SPECIAL HORIZONTAL LINE */
  
@@ -527,22 +384,14 @@ adjudicated explanation.
      background-position: center center;
      background-repeat: no-repeat;
      background-size: 100%;
-```
-
-</details>
-
-<details>
-<summary>Section 12 — original 939–1151 · candidate 940–968 · +22/−206 · mechanical, residual, supplement</summary>
-
-```diff
-@@ -939,213 +940,29 @@
+@@ -939,9 +940,30 @@
      unicode-bidi: isolate;
      overflow: hidden;
  }
 -
  [[/code]]
  [[/collapsible]]
- 
++
 +[[include :scp-jp:component:license-box-backend
 +|author=Dc_Yerko]]
 +
@@ -564,213 +413,16 @@ adjudicated explanation.
 +> **補足:** 和文には Noto Sans JP / Noto Serif JP（同じく Google Fonts）を併記しています。
 +
 +[[include :scp-jp:component:license-box-end]]
-+
+ 
  [[/iftags]]
--
--[!-- {$our-dark-veins}
--[[module css]]
--
--:root {
--    --hover-color: rgb(100,7,14);
--    --hover-color-gradient: linear-gradient(151deg, rgba(100,7,14,1) 50%, rgba(198,17,37,1) 100%);
--}
--
--/* HEADER */
--
--div#container-wrap {
+ 
+@@ -956,7 +978,7 @@
+ /* HEADER */
+ 
+ div#container-wrap {
 -    background: url(https://scp-wiki.wdfiles.com/local--files/theme:our-open-veins/header-coso-darks.png) top center repeat-x;
--}
--
--/* BODY */
--
--body {
--    background-color: #0F0F0F;
--    color: #DBDBDB;
--    box-shadow: none;
--}
--
--/* SIDE-BAR */
--
--#side-bar .side-block {
--    border: solid 2px #bb722e;
--} 
--
--#side-bar .side-block.media {
--    border: solid 2px #bb722e;
--}
--
--/* RATING */
-- 
--div.page-rate-widget-box .rate-points {
--    border: solid 1px #bb722e;
--}
-- 
--.page-rate-widget-box .rateup,
--.page-rate-widget-box .ratedown {
--    border-top: solid 1px #bb722e;
--    border-bottom: solid 1px #bb722e;
--}
--
--.page-rate-widget-box .cancel {
--    border: solid 1px #bb722e;
--}
-- 
--/* RATING WITH INFO MODULE */
-- 
--#page-content .rate-box-with-credit-button {
--    border: 1px solid #bb722e;
--}
-- 
--.close-credits,
--.credit-back {
--    filter: hue-rotate(113deg);
--}
--
--/* TABS */
--
--.yui-navset .yui-content {
--    background: rgb(36,29,29,0.7);
--    color: #DBDBDB;
--}
--
--/* SPECIAL HORIZONTAL LINE */
--
--.serpiente {
--    filter: brightness(0) saturate(100%) invert(100%) sepia(3%) saturate(11%) hue-rotate(100deg) brightness(104%) contrast(100%);
--}
--
--/* BLOCKQUOTE */
--
--blockquote,
--div.blockquote {
--    background-color: rgb(36,29,29,0.7);
--}
--
--/* TOC */
-- 
--#toc {
--    background-color: rgb(36,29,29,0.7);
--}
--
--/* IMAGE CAPTION */
--
--.scp-image-block {
--    border: solid 1px rgba(36,29,29,0.7);
--}
--
--.scp-image-block .scp-image-caption {
--    background: #1d1818;
--}
--
--/* TABLES */
--
--table.wiki-content-table td {
--    border: solid 1px #1d1818;
--}
--
--table.wiki-content-table td {
--    border: solid 1px #1d1818;
--    background: rgba(36,29,29,0.7);
--}
--
--/* SELECTION */
-- 
--::selection {
--    color: #000;
--}
--
--/* FOOTNOTE */
--
--.hovertip {
--    color: #DBDBDB;
--    background-color: #1d1818 !important;
--}
--
--/* OWINDOW */
-- 
--.owindow {
--    background-color: #1d1818;
--}
--
--/* MODALBOX */
--
--.modalbox {
--    background: linear-gradient(#1d1818 51px, #1d1818 51px, #2f1313) !important;
--}
--
--/* H1 */
--
--h1 {
--    color: #FF1F31;
--}
--
--/* LINKS */
--
--a {
--    color: FF1F31;
--}
--
--a:visited {
--    color: FF1F31;
--}
--
--/* CODE */
--
--.code {
--    background-color: #1d1818;
--}
--
--.hl-identifier,
--.hl-brackets,
--.hl-code {
--    color: #DBDBDB;
--}
--
--/* TEXT EDITOR */
-- 
-- input.text,
-- input.text:focus,
-- input.text:hover{
--     color: #A3A3A3;
--     border: none;
--     background-color: #212121;
--}
-- 
--.wd-editor-toolbar-panel div {
--     filter: hue-rotate(62deg) invert(83%);
--}
-- 
-- textarea {
--     color: #A3A3A3;
--     border-color: #A3A3A3;
--     background-color: #212121;
--}
-- 
--.change-textarea-size a{
--     color: #A3A3A3;
--     border-color: #A3A3A3;
--     background-color: #212121;
--}
-- 
-- div#lock-info {
--     background-color: #000;
--     color: #B5B5B5;
--}
-- div#lock-info span#lock-timer {
--     color: #901;
--}
-- 
-- div.buttons input, input.button, button, file, a.button {
--     color: #FFF;
--     background-color: #000;
--}
--
-- div.buttons input:hover, input.button:hover, button:hover, file:hover, a.button:hover {
--     color: #FFF;
--}
--
--[[/module]]
--[!----]
++    background: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aour-open-veins-jp/header-coso-darks.png) top center repeat-x;
+ }
+ 
+ /* BODY */
 ```
-
-</details>

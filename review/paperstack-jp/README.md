@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:paperstack-jp — origin EN, population #26 [GOSIGN2-LEDGER (b) row 26]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 27d51e79789d828c9ded1582ec0696050ae15fc50073cf3a0e95c5ec3d34d3fc); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now b3a7b8fc54c8396a6237e85361ee586fa7691c7de93e94da8072da8f4c62ee95); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 5 errors / 1 warn / 5 infos (http×3, pseudo-ref×2); standing classes dispositioned in register c1 [T1-ROWS row 26; GOSIGN2-LEDGER (b) row 26]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — sample T2 incomplete (webkit-320 screenshot >32767px ×4, no summary), notice×sidebar/clip, WebKit CC "S", giant "9999"/"THEME-IEL" demo text over intro, 875px@768 overflow, heading wrap, sample credit-modal. [RENDER-ROWS-1 (RENDER-C row 26)]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 0 [LOCALIZE-ROWS row 26, source LOCALIZE-B]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 26]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 26]
-- Computed against: canonical commit 5d951775998e4a1eeccf8e8695a6518b328962ee; candidate file pages/theme:paperstack-jp.txt sha256:27d51e79789d828c9ded1582ec0696050ae15fc50073cf3a0e95c5ec3d34d3fc; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 20ce29060e6a2c7bb8d61386fdb136c73ae808b3; candidate file pages/theme:paperstack-jp.txt sha256:b3a7b8fc54c8396a6237e85361ee586fa7691c7de93e94da8072da8f4c62ee95; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status

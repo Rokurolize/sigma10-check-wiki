@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:gsk-jp — origin CN, population #195 [GOSIGN2-LEDGER (b) row 195]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 1f48167077485be5f9f4c44a536d6eb02ab5c55be5485d56928973f5d2c3b245); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 6ef4b5ebef5237b10503c72d9351c14978327fb2e70d495b8a5aa663e5b0a5f3); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 11 errors / 4 warns / 1 info (pseudo-ref×11); standing classes dispositioned in register c1 [T1-ROWS row 178; GOSIGN2-LEDGER (b) row 195]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page runtime-hotlink site-theme chain only; sample credit-modal (preview-form), page-overflow 337px@320 + 389px@375 chromium and 416px@320 + 419px@375 webkit (cross-cutting static-credit), runtime-hotlink site-theme chain + sample font host; T3 clean on both pages; the original sample webkit 320x640 capture was a transient 503 (http.cat + hidden-* block), re-run once per rule 2 and the fresh capture carries no 503 signature; site-logo.png 404 (broken alt-text header logo clipped at mobile) = deferred asset. [RENDER-ROWS-RERUN16 (CN7) — supersedes the RENDER-ROWS-2 row for this theme, rule S1]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 3 [LOCALIZE-ROWS row 194, source LOCALIZE-S2-D]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 194]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 195]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:gsk-jp.txt sha256:1f48167077485be5f9f4c44a536d6eb02ab5c55be5485d56928973f5d2c3b245; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 358955eb4013dac2399c414ba8ec2a6e416a3c11; candidate file pages/theme:gsk-jp.txt sha256:6ef4b5ebef5237b10503c72d9351c14978327fb2e70d495b8a5aa663e5b0a5f3; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status

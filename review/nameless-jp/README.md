@@ -3,7 +3,8 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:nameless-jp — origin CN, population #207 [GOSIGN2-LEDGER (b) row 207]
-- Overall: PASS — passed at the ledger determination; no OPEN items [GOSIGN2-LEDGER (b) row 207]
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 507cf3aaf2a62b6f1c6cc139eb40e3e5932a297d35d91790136135926f5d1360); verdict not carried over, re-judgement required
+> verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 10 errors / 1 warn / 1 info (hotlink×10); standing classes dispositioned in register c1 [T1-ROWS row 222; GOSIGN2-LEDGER (b) row 207]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page-overflow 344px@320 on page and sample; candidate-own runtime hosts (fastly.jsdelivr.net, p.typekit.net / use.typekit.net, pokm.wdfiles.com, wanderers-library and scp-wiki-cn chains) recorded verbatim; sample credit-modal (preview-form). [RENDER-ROWS-2 (RENDER-S2-F (CN10))]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row [RENDER-ROWS-2 row]
@@ -11,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 206, source LOCALIZE-S2-E]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 206]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 207]
-- Computed against: canonical commit 8c62b7b5207f684c8373dfe00f28b90427d28027; candidate file pages/theme:nameless-jp.txt sha256:77d032c59dfebe615000bee70fe1b37aa4056b3cde46d2db371450dc3e0406c1; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 1db8300464d032875c6f8cc6ab61a5cafc6b7433; candidate file pages/theme:nameless-jp.txt sha256:507cf3aaf2a62b6f1c6cc139eb40e3e5932a297d35d91790136135926f5d1360; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status

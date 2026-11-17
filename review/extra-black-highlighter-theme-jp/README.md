@@ -3,7 +3,8 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:extra-black-highlighter-theme-jp — origin EN, population #10 [GOSIGN2-LEDGER (b) row 10]
-- Overall: PASS — passed at the ledger determination; no OPEN items [GOSIGN2-LEDGER (b) row 10]
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 36edd54937643f2626a9c9b986812351f6d819912739fa42ec26b7d7e6a6a611); verdict not carried over, re-judgement required
+> verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 2 errors / 0 warns / 2 infos (pseudo-ref×2); standing classes dispositioned in register c1 [T1-ROWS row 10; GOSIGN2-LEDGER (b) row 10]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — preview-notice rating widget「価:0」missing, mobile overflow 337–419px, sidebar x=0, sample credit-modal. [RENDER-ROWS-1 (RENDER-A row 10)]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row [RENDER-ROWS-1 row]
@@ -11,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 3 [LOCALIZE-ROWS row 11, source LOCALIZE-A]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 11]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 10]
-- Computed against: canonical commit 19ae059fb6dc405206a7c26de53dd4264f50dc97; candidate file pages/theme:extra-black-highlighter-theme-jp.txt sha256:246973dd9589113f2c63e64d591443ca6719da2e20913a3a483b8549555d99f0; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 358955eb4013dac2399c414ba8ec2a6e416a3c11; candidate file pages/theme:extra-black-highlighter-theme-jp.txt sha256:36edd54937643f2626a9c9b986812351f6d819912739fa42ec26b7d7e6a6a611; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
