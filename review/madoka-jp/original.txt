@@ -1,0 +1,895 @@
+[[module ThemePreviewer noUi="true" theme_url="http://d3g0gp89917ko0.cloudfront.net/v--3e3a6f7dbcc9/common--theme/base/css/style.css"]]
+
+
+[[module CSS]]
+
+
+@import url(https://scp-wiki-cn.wdfiles.com/local--code/theme:mox/8);
+@import url(https://scp-wiki-cn.wdfiles.com/local--code/theme%3Amadoka/1);
+
+[[/module]]
+
+[[iftags +版式 +原创]]
+
+[[module CSS]]
+
+.madoka-block {
+    background-color: var(--mox-layer-light-2);
+    width: min(26rem, 70vw);
+    margin: 3rem auto;
+    padding: 0;
+    display: flex
+;
+    justify-content: flex-start;
+    background-image: url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/mdk-bg-7.svg);
+    background-position: 18rem 7rem;
+    background-size: 31rem;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.madoka-color {
+    width: 5rem;
+    height: 5rem;
+}
+
+.madoka-label {
+    padding-left: 1rem;
+    width: calc(100% - 5rem);
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: inset 0rem 0rem 0 0.1rem var(--mox-layer-light-1);
+}
+
+span.madoka-label1 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+span.madoka-label2 {
+    font-family: var(--mox-mono-font);
+}
+
+.madoka-block.dark>.madoka-label {
+    background: #000000d4;
+    box-shadow: none;
+    color: var(--mox-layer-light-1);
+}
+
+.madoka-color:before {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    background: url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/mdk-bg-7.svg) no-repeat;
+    background-size: 8rem;
+    background-position: -4rem -3rem;
+    opacity: 0.25;
+    filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.4));
+}
+
+[[/module]]
+
+[[>]]
+[[module rate]]
+[[/>]]
+
+**魔法联盟 特种版式**是为2025幻想月作品《吾等即战争：魔法少女们的1944》所做的CSS版式，基于[[[theme:mox |一氧化物 基础版式]]]。
+
+在任何页面上使用
+
+= {{@@[[include :scp-wiki-cn:theme:madoka]]@@}}
+
+使用此版式。
+
+-----
+
++ 引用参数
+
+[[div class="madoka-block"]]
+[[div class="madoka-color" style="background: linear-gradient(90deg, rgba(255,181,0,1) 0%, rgba(255,218,120,1) 100%);"]]
+[[/div]]
+[[div class="madoka-label"]]
+[[span class="madoka-label1"]]秀色[[/span]]
+[[span class="madoka-label2"]]|mami=*[[/span]]
+[[/div]]
+[[/div]]
+
+[[div class="madoka-block"]]
+[[div class="madoka-color" style="background: linear-gradient(50deg, rgb(47 122 202) 0%, rgb(80 182 255) 100%);"]]
+[[/div]]
+[[div class="madoka-label"]]
+[[span class="madoka-label1"]]人鱼[[/span]]
+[[span class="madoka-label2"]]|sayaka=*[[/span]]
+[[/div]]
+[[/div]]
+
+[[div class="madoka-block"]]
+[[div class="madoka-color" style="background: linear-gradient(90deg, rgba(190,63,63,1) 0%, rgba(218,0,0,1) 100%);"]]
+[[/div]]
+[[div class="madoka-label"]]
+[[span class="madoka-label1"]]武旦[[/span]]
+[[span class="madoka-label2"]]|kyoko=*[[/span]]
+[[/div]]
+[[/div]]
+
+[[div class="madoka-block dark"]]
+[[div class="madoka-color" style="background: linear-gradient(50deg, rgba(255,157,186,1) 0%, rgba(255,189,209,1) 100%);"]]
+[[/div]]
+[[div class="madoka-label"]]
+[[span class="madoka-label1"]]救济[[/span]]
+[[span class="madoka-label2"]]|madoka=*[[/span]]
+[[/div]]
+[[/div]]
+
+[[div class="madoka-block dark"]]
+[[div class="madoka-color" style="background: linear-gradient(50deg, rgb(101 0 203) 0%, rgb(156 0 234) 100%)"]]
+[[/div]]
+[[div class="madoka-label"]]
+[[span class="madoka-label1"]]彼岸[[size smaller]]（默认暗色）[[/size]][[/span]]
+[[span class="madoka-label2"]]|homura=*[[/span]]
+[[/div]]
+[[/div]]
+
+[[div class="madoka-block"]]
+[[div class="madoka-color" style="background: linear-gradient(50deg, rgb(123 123 123) 0%, rgb(50 50 50) 100%)"]]
+[[/div]]
+[[div class="madoka-label"]]
+[[span class="madoka-label1"]]小说模式[[size smaller]]（可以与配色参数同时引用）[[/size]][[/span]]
+[[span class="madoka-label2"]]|novel=*[[/span]]
+[[/div]]
+[[/div]]
+
+启用小说模式后，页面内文字的行距、字号、字距均会适当加大，并且缩进2字符大小，字体切换为思源宋体，适宜长文本阅读。
+
+另外，你可以启用{{|qb=*}}关闭这个高100vh的动画版头。
+
+
+-----
+
++ 页面元素展示
+
+++ 新增
+
+使用如下代码创建一个华丽的分割线：
+
+{{@@[[div class="hr"]]@@}}
+{{@@-----@@}}
+{{@@[[/div]]@@}}
+
+效果：
+
+
+[[div class="hr"]]
+-----
+[[/div]]
+
+
+[[div class="modal magic"]]
+
+= {{@@[[div class="modal magic"]]@@}}
+
+[[/div]]
+
+++ 预设div元素
+
+[[div class="blockquote"]]
+
+= @@[[div class="blockquote"]]@@
+
+[[/div]]
+
+[[div class="mox-modal"]]
+
+= @@[[div class="modal"]]，[[div class="wiki-note"]]，[[note]]@@
+= 或
+= @@[[div class="mox-modal"]]@@
+
+[[/div]]
+
+[[div class="mox-smallmodal"]]
+
+= @@[[div class="smallmodal"]]@@
+= 或
+= @@[[div class="mox-smallmodal"]]@@
+
+[[/div]]
+
+[[div class="mox-note"]]
+
+= @@[[div class="notation"]] 或 [[div class="mox-note"]]@@
+
+[[/div]]
+
+[[div class="mox-notice"]]
+
+= @@[[div class="jotting"]]，[[div class="papernote"]]@@
+= 或
+= @@[[div class="mox-notice"]]@@
+
+[[/div]]
+
+[[div class="mox-card"]]
+
+= @@[[div class="document"]] 或 [[div class="mox-card"]]@@
+
+[[/div]]
+
+[[div class="mox-card mox-dark"]]
+
+= @@[[div class="darkdocument"]] 或 [[div class="mox-card mox-dark"]]@@
+
+[[/div]]
+
+[[div class="mox-float mox-f-left"]]
+
+= @@[[div class="floatbox"]] 或 [[div class="mox-float mox-f-left"]]@@
+
+[[/div]]
+
+[[div class="mox-float mox-f-right"]]
+
+= @@[[div class="floatbox right"]] 或 [[div class="mox-float mox-f-right"]]@@
+
+[[/div]]
+
+~~~~
+
+@@@@
+
+
+
+-----
+
+= [[size 1.5em]]UI字体为[[span style="font-family:'Noto Serif' , serif;"]]**思源宋体 SC** [[/span]]/ [[span style="font-family:'ZSFT-q' , serif;"]]**Cinzel**[[/span]]。[[/size]]
+
+= [[size 1.5em]]正文字体为**思源黑体**。[[/size]]
+
+= [[size 1.5em]]等宽字体为{{**Oxygen Mono**/**思源黑体**}}。[[/size]]
+
+[[collapsible show="展开源代码" hide="收起源代码"]]
+
+[[code type="CSS"]]
+
+:root {
+    --mox-theme-color: #8F69ED;
+    --mox-theme-dark-color: #634d99;
+    --mox-theme-light-color: #a07aff;
+    --mox-bg-color: #ffffff;
+    --mox-text-color: #141414;
+    --mox-layer-dark-1: #262626;
+    --mox-layer-dark-2: #404040;
+    --mox-layer-dark-3: #595959;
+    --mox-layer-light-1: #F2F2F2;
+    --mox-layer-light-2: #D9D9D9;
+    --mox-layer-light-3: #BFBFBF;
+    --mox-bgblur-front-color: rgba(255, 255, 255, 0.85);
+    --mox-warn-color: #bd3651;
+    --mox-accept-color: #37b55d;
+    --mox-alter-color: #debf44;
+    --mox-header-title: "I. A. M. A.";
+    --mox-header-subtitle: "国际反法西斯魔法少女联盟";
+    --mox-header-logo: url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/iama-logo-dark.svg);
+    --mox-page-width: 75vw;
+    --mox-header-height: 3rem;
+    --mox-anim-duration: 0.2s;
+    --mox-ui-font: 'ZSFT-q', 'Noto Serif SC', serif;
+    --mox-text-font: 'Noto Sans', Segoe UI, Arial, sans-serif;
+    --mox-mono-font: 'Oxygen Mono', 'Noto Sans', Consolas;
+}
+
+:root {
+    --madoka-serif: 'ZSFT-q', 'Noto Serif SC', serif;
+    --madoka-content-serif: 'Noto Serif SC', serif;
+}
+
+@import url("https://fontsapi.zeoseven.com/285/main/result.css");
+
+@font-face {
+    font-family: "ZSFT-q";
+    src: url("https://fontsapi.zeoseven.com/q/main.woff2") format('woff2'),
+        url("https://fontsapi-storage.zeoseven.com/q/main.woff2") format('woff2');
+    font-display: swap;
+}
+
+div#container {
+    background-image: linear-gradient(180deg, var(--mox-bg-color), rgba(255, 255, 255, 0.7) 300vh), url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/madoka-bg.jpg);
+    background-size: contain;
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat repeat;
+}
+
+#header h1 a span::after {
+    /* transform: scaleX(0.7) translateX(-2rem); */
+    font-family: var(--madoka-serif);
+    font-weight: normal;
+}
+
+#header h1 a span::before {
+    font-family: 'Noto Serif SC';
+    font-weight: bolder;
+}
+
+div#page-title {
+    font-family: var(--madoka-serif);
+    font-weight: bolder;
+    text-align: center;
+}
+
+div#header {
+    position: sticky;
+    margin-top: 100vh;
+}
+
+/* 页面元素 */
+
+div.hr {
+    background: url(https://scpsandboxcn.wikidot.com/local--files/oxygen9-files-2/mdk-hr.svg) no-repeat;
+    padding: 2rem 0rem;
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    margin: 2rem 0rem;
+}
+
+div.hr hr {
+    display: none;
+}
+
+.modal.magic::before {
+    content: '';
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    background: url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/mdk-deco1.svg) no-repeat;
+    background-position: center;
+    background-size: 1.8rem;
+    position: absolute;
+    right: -1rem;
+    top: -1rem;
+}
+
+.modal.magic {
+    border: solid 0.15rem transparent;
+    background-image: linear-gradient(#FFF), radial-gradient(circle at 100% 0%, transparent 1.5rem, var(--mox-theme-color) 1.5rem);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+
+#page-content h1 {
+    font-weight: 600;
+}
+
+#page-content :is(h2,h3,h4,h5,h6) {
+    font-weight: 400;
+}
+
+/* 版头 */
+
+div#extra-div-1 {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -20;
+    background-image: url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/mdk-bg-1.svg), url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/mdk-bg-5.svg), url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/mdk-bg-6.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 9vw, 141vw, 97vw;
+}
+
+div#extra-div-2 {
+    background-image: url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/mdk-bg-2.svg);
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -20;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 72vh;
+    transform: rotate(0deg);
+    animation: rota 50s linear infinite;
+    will-change: transform;
+    backface-visibility: hidden;
+}
+
+div#extra-div-3 {
+    background-image: url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/mdk-bg-3.svg), url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/mdk-bg-4.svg);
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -20;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 76vh;
+    transform: rotate(0deg);
+    animation: rota 80s linear infinite;
+    animation-direction: reverse;
+    will-change: transform;
+    backface-visibility: hidden;
+}
+
+div#extra-div-4 {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -23;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/mdk-bg-7.svg);
+    background-size: 256vw;
+    animation: div4 8s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+    will-change: transform;
+    backface-visibility: hidden;
+}
+
+div#extra-div-5 {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -19;
+    background-repeat: no-repeat;
+    background-position: -42vw 46vh, 62vw 46vh;
+    background-image: url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/mdk-bg-8a.svg), url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/mdk-bg-8a.svg);
+    background-size: 79vw, 79vw;
+    animation: div5 5s both;
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out;
+    will-change: transform;
+    backface-visibility: hidden;
+    opacity: 0;
+    transform: scale(2) translateY(30vw);
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.1));
+}
+
+div#extra-div-6 {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -21;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/mdk-bg-8b.svg);
+    background-size: 300vw;
+    animation: div6 5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.1));
+    animation-delay: 4s;
+    will-change: transform;
+    backface-visibility: hidden;
+    opacity: 0;
+}
+
+div#extrac-div-1 {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -14;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/iama-logo-dark.svg);
+    background-size: 27vh;
+    animation: exd1 2.5s both;
+    animation-delay: 4s;
+    transform: scale(0.5) translateY(10vh) rotate(45deg);
+    opacity: 0;
+    animation-timing-function: ease-in-out;
+    will-change: transform;
+    backface-visibility: hidden;
+    filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 1));
+}
+
+div#extrac-div-2 {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -14;
+    background-repeat: no-repeat;
+    background-position: center 69vh;
+    background-image: url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/mdk-bg-text.svg);
+    background-size: 36vh;
+    animation: exd2 2.5s both;
+    animation-delay: 4.5s;
+    transform: scale(1.5) translateY(10vh);
+    opacity: 0;
+    animation-timing-function: ease-in-out;
+    will-change: transform;
+    backface-visibility: hidden;
+}
+
+#footer {
+    margin-top: -1px;
+}
+
+div#content-wrap::after {
+    background-image: url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/mdk-end1.svg), url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/mdk-end2.svg);
+    display: block;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    position: relative;
+    bottom: 0;
+    content: '';
+    background-size: auto 76vh, auto 88vh;
+    margin: 0vh 0rem 0rem 0rem;
+    background-position: center 45vh, center 8vh;
+    background-repeat: repeat-x;
+}
+
+
+div#footer::before {
+    filter: invert(1.1) grayscale(1);
+    content: '战争永不停歇';
+}
+
+/* 版头动画 */
+
+@keyframes rota {
+0% {transform: rotate(0deg) translateZ(0);}
+100% {transform: rotate(360deg) translateZ(0);}
+}
+
+@keyframes div4 {
+0% {background-size: 256vw;}
+100% {background-size: 66vw;}
+}
+
+@keyframes div5 {
+0% {transform: scale(2) translateY(30vw) translateZ(0); opacity: 0;}
+100% {transform: scale(1) translateY(0vw) translateZ(0); opacity: 1;}
+}
+
+@keyframes div6 {
+0% {background-size: 300vw; opacity: 0;}
+100% {background-size: 133vw; opacity: 1;}
+}
+
+@keyframes exd1 {
+0% {transform: scale(0.5) translateY(10vh) rotate(45deg) translateZ(0);
+    opacity: 0;}
+100% {transform: scale(1) translateY(0vh) rotate(0deg) translateZ(0);
+    opacity: 1;}
+}
+
+@keyframes exd2 {
+0% {transform: scale(1.5) translateY(10vh) translateZ(0);
+    opacity: 0;}
+100% {transform: scale(1) translateY(0vh) translateZ(0);
+    opacity: 1;}
+}
+
+div#header::before {
+    content: '';
+    display: block;
+    width: 100vw;
+    height: var(--mox-header-height);
+    background-image: url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/mdk-header-top.svg);
+    background-size: cover;
+    background-repeat: repeat-x;
+    position: relative;
+    bottom: calc(var(--mox-header-height) * 2);
+    background-position: center bottom;
+    /* border: solid; */
+    filter: drop-shadow(0px -24px 15px rgba(0, 0, 0, 0.1));
+    /* clip-path: polygon(0 0, 100% 0%, 100% calc(100% - 15px), 0 calc(100% - 15px)); */
+}
+
+@media screen and (max-width: 876px) {
+    div#header::before {
+    bottom: calc(var(--mox-header-height) * 4);
+    }
+}
+
+
+
+#page-content h1::before {
+    content: '';
+    color: unset;
+    font-size: unset;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background: url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/mdk-deco1.svg) no-repeat;
+    background-position: center;
+    background-size: 1.8rem;
+    position: relative;
+    margin: 0rem -0.7rem 1rem 0rem;
+}
+
+#page-content h1 span::after {
+    content: '';
+    display: inline-block;
+    width: 5rem;
+    height: 0.25rem;
+    background-color: var(--mox-theme-color);
+    margin: 0rem 0rem -0.8rem -4rem;
+}
+
+@media (max-width: 876px) {
+
+    div#extra-div-3 {
+        background-size: 90vw, 70vw;
+    }
+
+    div#extra-div-5 {
+        background-position: -50vw 68vh, 0vw 3vh;
+        background-size: 200vw, 100vw;
+    }
+
+    #header h1 a span::after {
+        font-size: calc(var(--mox-header-height) * 0.25) !important;
+        bottom: calc(var(--mox-header-height) * 0.115 + 0.125rem);
+    }
+
+}
+
+/* light-mode */
+
+div#side-bar::after{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(var(--mox-header-height) * -1) / cover !important}#header #search-top-box input.button{background:url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(var(--mox-header-height)* -2) center / cover !important}a.weditor-bold::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 3) center / cover !important}a.weditor-italic::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 4) center / cover !important}a.weditor-underline::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 22) center / cover !important}a.weditor-strikethrough::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 5) center / cover !important}a.weditor-quote::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 6) center / cover !important}a.weditor-superscript::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 7) center / cover !important}a.weditor-subscript::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 8) center / cover !important}a.weditor-table::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 9) center / cover !important}a.weditor-code::before,a.weditor-codewiz::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 10) center / cover !important}a.weditor-uri::before,a.weditor-uriwiz::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 11) center / cover !important}a.weditor-pagelink::before,a.weditor-pagelinkwiz::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 12) center / cover !important}a.weditor-image::before,a.weditor-imagewiz::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 13) center / cover !important}a.weditor-html::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 14) center / cover !important}a.weditor-numlist::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 15) center / cover !important}a.weditor-bullist::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 15.8) center / cover !important}a.weditor-incindent::before,a.weditor-decindent::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 16) center / cover !important}a.weditor-deflist::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 17) center / cover !important}a.weditor-footnote::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 18) center / cover !important}a.weditor-bib::before,a.weditor-bibcite::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 20.8) center / cover !important}:where(a.weditor-imagewiz,a.weditor-codewiz,a.weditor-uriwiz,a.weditor-pagelinkwiz,a.weditor-incindent,a.weditor-decindent,a.weditor-eqref,a.weditor-bibcite)::after{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 20) center / cover}:where(a.weditor-imagewiz,a.weditor-codewiz,a.weditor-uriwiz,a.weditor-pagelinkwiz,a.weditor-incindent,a.weditor-decindent,a.weditor-eqref,a.weditor-bibcite)::after{background-color:var(--mox-layer-dark-1);background-image:url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2);background-repeat:no-repeat;background-position:left center !important;background-size:cover;background-position:-20.055rem !important;background-origin:content-box}.wd-editor-toolbar-panel ul li a::before{font-family:var(--mox-mono-font) !important;letter-spacing:-0.15rem}
+
+[[/code]]
+
+[[/collapsible]]
+
+
+
+[[/iftags]]
+
+[[module CSS]]
+
+/* {$mami}/
+
+:root {
+    --mox-theme-color: #e2b61b;
+    --mox-theme-dark-color: #b89d40;
+    --mox-theme-light-color: #ffce21;
+}
+
+.hr, .modal.magic::before, #page-content h1::before {
+    filter: hue-rotate(150deg) brightness(1.3);
+}
+
+div#extra-div-1, div#extra-div-2, div#extra-div-3 {
+    filter: hue-rotate(150deg) brightness(1.4);
+}
+
+div#content-wrap::after {
+    filter: hue-rotate(150deg) brightness(1);
+}
+
+/{$mami} */
+
+/* {$sayaka}/
+
+:root {
+    --mox-theme-color: #3b6ab4;
+    --mox-theme-dark-color: #4066b8;
+    --mox-theme-light-color: #3c88ff;
+}
+
+.hr, .modal.magic::before, #page-content h1::before {
+    filter: hue-rotate(-20deg) brightness(1);
+}
+
+div#extra-div-1, div#extra-div-2, div#extra-div-3 {
+    filter: hue-rotate(-16deg) brightness(1);
+}
+
+div#content-wrap::after {
+    filter: hue-rotate(-16deg) brightness(1);
+}
+
+/{$sayaka} */
+
+/* {$kyoko}/
+
+:root {
+    --mox-theme-color: #d53333;
+    --mox-theme-dark-color: #b84040;
+    --mox-theme-light-color: #ff3c3c;
+}
+
+.hr, .modal.magic::before, #page-content h1::before {
+    filter: hue-rotate(93deg) brightness(0.9);
+}
+
+div#extra-div-1, div#extra-div-2, div#extra-div-3 {
+    filter: hue-rotate(86deg) brightness(0.8);
+}
+
+div#content-wrap::after {
+    filter: hue-rotate(86deg) brightness(1);
+}
+
+/{$kyoko} */
+
+/* {$madoka}/
+
+:root {
+    --mox-theme-color: #f374b3;
+    --mox-theme-dark-color: #a94e7b;
+    --mox-theme-light-color: #ff89c3;
+    --mox-bg-color: #000000;
+    --mox-text-color: #cecece;
+    --mox-layer-dark-1: #dcdcdc;
+    --mox-layer-dark-2: #d5d5d5;
+    --mox-layer-dark-3: #a3a3a3;
+    --mox-layer-light-1: #191919;
+    --mox-layer-light-2: #212121;
+    --mox-layer-light-3: #2f2f2f;
+    --mox-bgblur-front-color: rgb(25 25 25 / 85%);
+}
+
+.hr, .modal.magic::before, #page-content h1::before {
+    filter: hue-rotate(0deg) brightness(1.1) contrast(0.7);
+}
+
+div#extra-div-1, div#extra-div-2, div#extra-div-3 {
+    filter: hue-rotate(0deg) brightness(2.1) contrast(0.7);
+}
+
+div#extra-div-5 {
+    filter: drop-shadow(0px 0px 10px white);
+}
+
+div#extrac-div-3 {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: -100vh;
+    left: 0;
+    backdrop-filter: invert(1) hue-rotate(201deg) saturate(1.5);
+    z-index: 10;
+}
+
+body {
+    background-color: #fff;
+}
+
+div#container {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.95) 300vh), url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/madoka-bg.jpg);
+}
+
+::-webkit-scrollbar {
+    width: 0.4rem !important;
+    background: var(--mox-layer-light-1) !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--mox-layer-light-3) !important;
+}
+
+div#content-wrap::after {
+    filter: invert(1) hue-rotate(201deg) brightness(0.115);
+}
+
+div#header::before {
+    filter: brightness(0.95);
+}
+
+div#side-bar::after{background:url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(var(--mox-header-height) * -1) / cover !important}#header #search-top-box input.button{background:url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(var(--mox-header-height)* -2) center / cover !important}a.weditor-bold::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 3) center / cover !important}a.weditor-italic::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 4) center / cover !important}a.weditor-underline::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 22) center / cover !important}a.weditor-strikethrough::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 5) center / cover !important}a.weditor-quote::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 6) center / cover !important}a.weditor-superscript::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 7) center / cover !important}a.weditor-subscript::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 8) center / cover !important}a.weditor-table::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 9) center / cover !important}a.weditor-code::before,a.weditor-codewiz::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 10) center / cover !important}a.weditor-uri::before,a.weditor-uriwiz::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 11) center / cover !important}a.weditor-pagelink::before,a.weditor-pagelinkwiz::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 12) center / cover !important}a.weditor-image::before,a.weditor-imagewiz::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 13) center / cover !important}a.weditor-html::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 14) center / cover !important}a.weditor-numlist::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 15) center / cover !important}a.weditor-bullist::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 15.8) center / cover !important}a.weditor-incindent::before,a.weditor-decindent::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 16) center / cover !important}a.weditor-deflist::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 17) center / cover !important}a.weditor-footnote::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 18) center / cover !important}a.weditor-bib::before,a.weditor-bibcite::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 20.8) center / cover !important}:where(a.weditor-imagewiz,a.weditor-codewiz,a.weditor-uriwiz,a.weditor-pagelinkwiz,a.weditor-incindent,a.weditor-decindent,a.weditor-eqref,a.weditor-bibcite)::after{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 20) center / cover}:where(a.weditor-imagewiz,a.weditor-codewiz,a.weditor-uriwiz,a.weditor-pagelinkwiz,a.weditor-incindent,a.weditor-decindent,a.weditor-eqref,a.weditor-bibcite)::after{background-color:var(--mox-layer-dark-1);background-image:url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1);background-repeat:no-repeat;background-position:left center !important;background-size:cover;background-position:-20.055rem !important;background-origin:content-box}#license-area{color:var(--mox-layer-light-3);background:var(--mox-layer-light-1)}#footer{background:var(--mox-layer-light-1);color:var(--mox-layer-dark-3);box-shadow:0rem -0.2rem 0rem 0rem var(--mox-layer-light-2)}#footer a{color:var(--mox-layer-dark-1)}
+
+/{$madoka} */
+
+/* {$homura}/
+
+:root {
+    --mox-theme-color: #9574f3;
+    --mox-theme-dark-color: #8451bd;
+    --mox-theme-light-color: #b089ff;
+    --mox-bg-color: #000000;
+    --mox-text-color: #cecece;
+    --mox-layer-dark-1: #dcdcdc;
+    --mox-layer-dark-2: #d5d5d5;
+    --mox-layer-dark-3: #a3a3a3;
+    --mox-layer-light-1: #191919;
+    --mox-layer-light-2: #212121;
+    --mox-layer-light-3: #2f2f2f;
+    --mox-bgblur-front-color: rgb(25 25 25 / 85%);
+}
+
+.hr, .modal.magic::before, #page-content h1::before {
+    filter: hue-rotate(0deg) brightness(1.1) contrast(0.7);
+}
+
+div#extra-div-1, div#extra-div-2, div#extra-div-3 {
+    filter: hue-rotate(0deg) brightness(2.1) contrast(0.7);
+}
+
+div#extra-div-5 {
+    filter: drop-shadow(0px 0px 10px white);
+}
+
+div#extrac-div-3 {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: -100vh;
+    left: 0;
+    backdrop-filter: invert(1) hue-rotate(150deg);
+    z-index: 10;
+}
+
+body {
+    background-color: #fff;
+}
+
+div#container {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.95) 300vh), url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/madoka-bg.jpg);
+}
+
+::-webkit-scrollbar {
+    width: 0.4rem !important;
+    background: var(--mox-layer-light-1) !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--mox-layer-light-3) !important;
+}
+
+div#content-wrap::after {
+    filter: invert(1) hue-rotate(150deg) brightness(0.115);
+}
+
+div#header::before {
+    filter: brightness(0.95);
+}
+
+div#side-bar::after{background:url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(var(--mox-header-height) * -1) / cover !important}#header #search-top-box input.button{background:url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(var(--mox-header-height)* -2) center / cover !important}a.weditor-bold::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 3) center / cover !important}a.weditor-italic::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 4) center / cover !important}a.weditor-underline::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 22) center / cover !important}a.weditor-strikethrough::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 5) center / cover !important}a.weditor-quote::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 6) center / cover !important}a.weditor-superscript::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 7) center / cover !important}a.weditor-subscript::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 8) center / cover !important}a.weditor-table::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 9) center / cover !important}a.weditor-code::before,a.weditor-codewiz::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 10) center / cover !important}a.weditor-uri::before,a.weditor-uriwiz::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 11) center / cover !important}a.weditor-pagelink::before,a.weditor-pagelinkwiz::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 12) center / cover !important}a.weditor-image::before,a.weditor-imagewiz::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 13) center / cover !important}a.weditor-html::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 14) center / cover !important}a.weditor-numlist::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 15) center / cover !important}a.weditor-bullist::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 15.8) center / cover !important}a.weditor-incindent::before,a.weditor-decindent::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 16) center / cover !important}a.weditor-deflist::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 17) center / cover !important}a.weditor-footnote::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 18) center / cover !important}a.weditor-bib::before,a.weditor-bibcite::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 20.8) center / cover !important}:where(a.weditor-imagewiz,a.weditor-codewiz,a.weditor-uriwiz,a.weditor-pagelinkwiz,a.weditor-incindent,a.weditor-decindent,a.weditor-eqref,a.weditor-bibcite)::after{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 20) center / cover}:where(a.weditor-imagewiz,a.weditor-codewiz,a.weditor-uriwiz,a.weditor-pagelinkwiz,a.weditor-incindent,a.weditor-decindent,a.weditor-eqref,a.weditor-bibcite)::after{background-color:var(--mox-layer-dark-1);background-image:url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1);background-repeat:no-repeat;background-position:left center !important;background-size:cover;background-position:-20.055rem !important;background-origin:content-box}#license-area{color:var(--mox-layer-light-3);background:var(--mox-layer-light-1)}#footer{background:var(--mox-layer-light-1);color:var(--mox-layer-dark-3);box-shadow:0rem -0.2rem 0rem 0rem var(--mox-layer-light-2)}#footer a{color:var(--mox-layer-dark-1)}
+
+/{$homura} */
+
+/* {$novel}/
+
+#page-content p {
+    font-size: 1.25em;
+    line-height: 2.8em;
+    text-indent: 2.5em;
+    font-weight: lighter;
+    letter-spacing: 0.1em;
+    font-family: var(--madoka-content-serif);
+}
+
+/{$novel} */
+
+/* {$qb}/
+
+div#extrac-div-1, div#extrac-div-2, div#extrac-div-3, div#extra-div-1, div#extra-div-2, div#extra-div-3, div#extra-div-4, div#extra-div-5, div#extra-div-6 {
+    display: none !important;
+}
+
+div#header {
+    margin-top: 0 !important;
+}
+
+/{$qb} */
+
+[[/module]]

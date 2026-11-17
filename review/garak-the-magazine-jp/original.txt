@@ -1,0 +1,1051 @@
+[[include :scpko:component:u-navstyle]]
+[[div id="u-side"]]
+[[div]]
+[[include nav:side]]
+[[/div]]
+[[/div]]
+
+[[module CSS]]
+@import url('https://scpko.wdfiles.com/local--code/theme:garak-the-magazine/0');
+
+:root {
+  --main-{$color}: {$main};
+  --bg-{$color}: {$bg};
+  --issue-{$alt}: "{$issue}";
+  --feature-{$alt}: "{$feature}";
+  --index: {$index};
+  --title-{$title}: {$title};
+}
+[[/module]]
+
+[[iftags +테마]]
+
+[[module CSS]]
+:root {
+  --issue-1: "필진모집";
+  --feature-1: "야 너두 가락 할 수 있어";
+  --index: "CSS";
+}
+
+#main-content {
+  padding-top: 6em;
+}
+
+#page-content .creditRate {
+  top: 1.5em;
+}
+
+#page-content > div > .page-rate-widget-box {
+  top: 3.5em;
+}
+[[/module]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
+
+[[include :scpko:info:start]]
+**월간 가락꾼 CSS 테마**
+
+**제작:** [[*user thd-glasses]]
+
+**이미지 출처**
+* https://pixabay.com/ko/photos/%EC%A1%B0%EC%A7%81-%EC%A2%85%EC%9D%B4-%EB%B2%BD%EC%A7%80-%EB%B0%B0%EA%B2%BD-%EB%AF%B8%EC%88%A0-2061709/
+* 월간 가락꾼 타이틀 로고 by [[*user thd-glasses]]
+
+**폰트 출처**
+* https://noonnu.cc/font_page/38
+* https://noonnu.cc/font_page/1456
+[[include :scpko:info:end]]
+
+이 테마는 한국어 요주의 단체 [[[garak-the-hub|가락겨루기]]]와 관련한 작중 잡지인 "월간 가락꾼"을 묘사하기 위한 전용 CSS 테마입니다. 이 테마를 사용하려면 문서 아무 곳에나 다음 코드를 붙여넣으세요.
+
+> @@[[include :scpko:theme:garak-the-magazine]]@@
+
+@@@@
+@@@@
+
++ 변수 사용법
+헤더 부제목, 색인명, 테마 색상을 변경할 수 있습니다.
+
+[[div class="blockquote"]]
+@@[[include :scpko:theme:garak-the-magazine@@
+|alt=**1**
+|issue=**(n월호)**
+|feature=**(해당호 특집 주제)**
+]]
+[[/div]]
+
+[[div class="blockquote"]]
+@@[[include :scpko:theme:garak-the-magazine@@
+|index="**(색인명)**"
+]]
+[[/div]]
+
+[[div class="blockquote"]]
+@@[[include :scpko:theme:garak-the-magazine@@
+|color=**1**
+|main=**(34, 34, 34)**
+|bg=**(255, 255, 255)**
+]]
+[[/div]]
+
+부제목 변경시 alt 변수를, 색상 변경시 color 변수를 반드시 입력해야 합니다. 색인명은 반드시 따옴표로 감싸서 입력해야 합니다. 여러 요소를 동시에 바꾼다면 바꾸려는 요소에 관여하는 각 변수를 모두 입력하시면 됩니다.
+
+변수에 입력해야 할 내용이나 기타 지원 기능에 대한 설명은 [[[garak-the-hub|허브]]]를 참고하세요. 하나만 미리 말해두자면 {{200, 200, 200}}을 기준으로 main은 그보다 어둡게, bg는 그것보다 밝게, 가급적 같은 색조에서 선택하세요. 숫자는 RGB 코드입니다.
+
+@@@@
+@@@@
+
++ 대체 제목
+
+페이지의 실제 제목을 표시하지 않고 싶다면 title 변수를 0으로 선언하세요.
+
+[[div class="blockquote"]]
+@@[[include :scpko:theme:garak-the-magazine@@
+|title=**0**
+]]
+[[/div]]
+
+실제 제목을 대신해 원하는 텍스트를 제목으로 표시할 수 있습니다.
+
+[[div class="blockquote"]]
+@@[[div_ class="pseudo-title"]]@@
+**(대체 제목)**
+@@[[div_ class="index"]]@@
+**(색인명)**
+@@[[/div]]@@
+@@[[/div]]@@
+[[/div]]
+
+@@@@
+@@@@
+
++ 소스 코드
+[[collapsible show="+ 코드 보이기" hide="- 코드 숨기기"]]
+
+[[code type="CSS"]]
+
+/* 월간 가락꾼 테마 by thd-glasses */
+/* based on Sigma-9 theme */
+
+@font-face { font-family: "Paperlogy"; src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-1Thin.woff2") format("woff2"); font-style: normal; font-weight: 100; }
+@font-face { font-family: "Paperlogy"; src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-2ExtraLight.woff2") format("woff2"); font-style: normal; font-weight: 200; }
+@font-face { font-family: "Paperlogy"; src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-3Light.woff2") format("woff2"); font-style: normal; font-weight: 300; }
+@font-face { font-family: "Paperlogy"; src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-4Regular.woff2") format("woff2"); font-style: normal; font-weight: 400; }
+@font-face { font-family: "Paperlogy"; src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-5Medium.woff2") format("woff2"); font-style: normal; font-weight: 500; }
+@font-face { font-family: "Paperlogy"; src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-6SemiBold.woff2") format("woff2"); font-style: normal; font-weight: 600; }
+@font-face { font-family: "Paperlogy"; src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-7Bold.woff2") format("woff2"); font-style: normal; font-weight: 700; }
+@font-face { font-family: "Paperlogy"; src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2") format("woff2"); font-style: normal; font-weight: 800; }
+@font-face { font-family: "Paperlogy"; src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-9Black.woff2") format("woff2"); font-style: normal; font-weight: 900; }
+
+@font-face { font-family: "NanumSquareRound"; src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff") format("woff"); font-style: normal; font-weight: normal; }
+
+:root {
+  --main: var(--main-1, 34, 34, 34);
+  --bg: var(--bg-1, 255, 255, 255);
+  --issue: "특별호";
+  --feature: "가락을 만나다 심층 인터뷰 대특집";
+  --index: {$index};
+  --title: var(--title-0, 200%);
+  --padding-top: var(--title-0, 1em);
+  --body-bg: url('https://scpko.wdfiles.com/local--files/theme:garak-the-magazine/body_bg.png');
+}
+
+html {
+  overflow-x: hidden;
+  scrollbar-color: rgba(var(--main),0.2) rgba(var(--main),0.15);
+}
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(var(--main),0.2);
+}
+::-webkit-scrollbar-track {
+  background: rgba(var(--main),0.15);
+}
+
+html div {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(var(--main),0.3) transparent;
+}
+html div::-webkit-scrollbar {
+  width: 8px;
+}
+html div::-webkit-scrollbar-thumb {
+  background: rgba(var(--main),0.3);
+}
+html div::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body {
+  font-family: 'NanumSquareRound', san-serif;
+  font-size: 1em;
+}
+
+div#container-wrap {
+  background: rgba(var(--main), 0.5) var(--body-bg) center/cover repeat;
+}
+#license-area {
+  background: #999 var(--body-bg) center/cover repeat;
+  position: relative;
+  z-index: 5;
+}
+
+#main-content {
+  padding-top: 5em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#main-content > div {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  order: 2;
+}
+
+#page-options-container {
+  display: grid;
+}
+
+#header {
+  background: url('https://scpko.wdfiles.com/local--files/theme:garak-the-magazine/garak-the-magazine.png') center/contain no-repeat;
+  height: 170px;
+  margin-bottom: 66px;
+  padding-bottom: 25px;
+}
+
+div#header-extra-div-1 {
+  position: absolute;
+  inset: 0;
+  -webkit-mask: url('https://scpko.wdfiles.com/local--files/theme:garak-the-magazine/garak-the-magazine.png') center/contain no-repeat;
+  mask: url('https://scpko.wdfiles.com/local--files/theme:garak-the-magazine/garak-the-magazine.png') center/contain no-repeat;
+  pointer-events: none;
+}
+
+div#header-extra-div-1 span {
+  position: absolute;
+  inset: 0;
+  background: rgb(var(--main));
+}
+
+#header h1 a {
+  display: block;
+  position: absolute;
+  color: transparent;
+  text-shadow: none;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(510px, 80%);
+  height: 120px;
+  max-height: 150px;
+  padding: 0;
+}
+
+#header h2 {
+  display: block;
+  position: absolute;
+  top: max(min(180px, 27vw), 170px);
+  left: 50%;
+  transform: translateX(-50%);
+  margin-left: 0;
+  width: 95%;
+  text-align: center;
+}
+
+#header h2 span {
+  display: flex;
+  color: unset;
+  font-size: 0px;
+  text-shadow: none;
+  line-height: 1.3;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  word-break: keep-all;
+}
+
+#header h2 span::before {
+  display: block;
+  content: "【" var(--issue-1, '특별호') "】";
+  font-size: 20px;
+}
+
+#header h2 span::after{
+  display: block;
+  content: var(--feature-1, '가락을 만나다 심층 인터뷰 대특집');
+  font-size: 25px;
+}
+
+#page-title, .pseudo-title, h1, h2, h3, h4, h5, h6 {
+  font-family: "Paperlogy", san-serif;
+  color: rgb(var(--main));
+}
+
+#page-content p em {
+  font-family: "Paperlogy", san-serif;
+  margin-right: 0.2em;
+}
+
+#page-title,
+#page-content .pseudo-title {
+  position: relative;
+  padding: 1.25em 1em 0.5em;
+  font-size: 200%;
+  text-align: center;
+  word-break: keep-all;
+  margin-bottom: 1em;
+}
+
+#page-title {
+  font-size: var(--title);
+}
+
+#main-content > #page-title {
+  order: 1;
+  margin-top: -0.12rem;
+  margin-bottom: 0;
+  border: 2px solid rgb(var(--main));
+  border-bottom: none;
+  background: rgb(var(--bg));
+}
+
+#page-content .pseudo-title {
+  left: -0.8rem;
+  width: calc(100% + 1.6rem);
+  max-width: 100vw;
+  box-sizing: border-box;
+}
+
+#page-title::before,
+.pseudo-title:not(.empty)::before {
+  content: "";
+  position: absolute;
+  inset: 0 calc(1.6rem + 1em);
+  border-bottom: 1px solid rgba(var(--main), 0.5);
+  pointer-events: none;
+}
+#page-title::before {
+  content: var(--title-0, "");
+}
+
+.pseudo-title:not(.empty)::before {
+  inset: 0 1em;
+}
+
+#page-content .pseudo-title.empty {
+  margin-bottom: 0;
+  padding-top: 0.5em;
+}
+
+#page-title::after,
+.index {
+  display: block;
+  position: absolute;
+  top: -2px;
+  right: -1em;
+  font-size: 1.1rem;
+  background: rgb(var(--main));
+  color: rgb(var(--bg));
+  padding: 5px 1.5em;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 0.75em) 100%, 0.75em 100%);
+}
+
+#page-title::after {
+  content: var(--index);
+  right: 0;
+}
+
+#main-content > #breadcrumbs {
+  font-size: 0;
+  order: 0;
+  overflow: hidden;
+  border-left: 2px solid rgb(var(--main));
+}
+
+#breadcrumbs a {
+  display: inline-block;
+  position: relative;
+  font-size: 15px;
+  padding: 5px 20px 7px 15px;
+  margin-bottom: 0.12rem;
+  transform: translateX(-4px);
+  background: rgb(var(--main));
+  color: rgb(var(--bg));
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-bottom: none;
+  clip-path: polygon(0 0, calc(100% - 16px) 0, calc(100% - 1px) 15px, calc(100% - 1px) 100%, 0 100%);
+}
+
+#breadcrumbs a::before {
+  content: "";
+  position: absolute;
+  background-color: rgb(var(--main));
+  inset: 0;
+  left: -2px;
+  z-index: -1;
+  clip-path: polygon(0 0, calc(100% - 15px) 0, calc(100% - 1px) 14px, calc(100% - 1px) 100%, 0 100%);
+}
+
+#breadcrumbs a:not(:first-child) {
+  padding-left: 25px;
+  margin-left: -11px;
+  clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 13px 100%, 13px 14px);
+}
+
+#breadcrumbs a:not(:first-child)::before {
+  clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 0 100%);
+}
+
+#breadcrumbs a:hover::before {
+  background-color: rgb(var(--bg));
+  opacity: 0.25;
+}
+
+#page-content {
+  padding: 1em 2em;
+  border: 2px solid rgb(var(--main));
+  border-top: none;
+  background: rgb(var(--bg));
+  text-align: justify;
+  min-height: 1250px;
+}
+
+#page-content {
+  padding-top: var(--padding-top);
+}
+
+#page-content hr {
+  margin: 1em 1.3em;
+}
+
+#page-content ul:not(.yui-nav) li,
+#page-content ol li {
+  margin-bottom: 0.5em;
+}
+
+#page-content ul li ul,
+#page-content ol li ul,
+#page-content ul li ol,
+#page-content ol li ol {
+  margin-top: 0.5em;
+}
+
+#action-area {
+  padding: 1em;
+  border: 2px solid rgb(var(--main));
+  background: rgb(var(--bg));
+  box-sizing: border-box;
+}
+
+#action-area textarea {
+  width: 99% !important;
+}
+
+table.form td {
+  max-width: 80vw;
+}
+
+#page-content .gap {
+  position: relative;
+  left: calc(-2em - 2px);
+  width: calc(100% + 4em + 4px);
+  max-width: 100vw;
+  height: auto;
+  padding: 2em 0;
+  margin-top: 2em;
+  border: solid rgb(var(--main));
+  border-width: 2px 0;
+  background: rgb(var(--bg)) var(--body-bg) center/300% repeat;
+}
+
+#page-content .gap::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(var(--main), 0.5) var(--body-bg) center/300% repeat;
+}
+
+#page-content > .cover:not(.gap) {
+  position: relative;
+  margin: -2px calc(-2em);
+  max-width: unset;
+  width: calc(100% + 4em);
+  box-sizing: border-box;
+}
+#page-content > .cover img {
+  width: 100%;
+}
+
+.cover p {
+  display: inline-block;
+  position: absolute;
+  inset: 0; bottom: unset;
+  text-align: right;
+  padding-right: 15px;
+  color: rgb(var(--main));
+  font-size: min(3vw, 20px);
+  word-break: keep-all;
+  text-shadow: 2px 2px 2px var(--shadow), 2px -2px 2px var(--shadow), -2px 2px 2px var(--shadow), -2px -2px 2px var(--shadow), 2px 0px 2px var(--shadow), 0px 2px 2px var(--shadow), -2px 0px 2px var(--shadow), 0px -2px 2px var(--shadow);
+  --shadow: rgb(var(--bg));
+}
+
+.cover .barcode {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  width: 8em;
+  height: 0em;
+  padding-top: 4em;
+  text-align: center;
+  color: #000;
+}
+.cover.dark .barcode {
+  color: #FFF;
+}
+
+.cover .barcode::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #000;
+  clip-path: polygon(0 0, 0 100%, 6% 100%, 6% 0, 10% 0, 10% 100%, 12% 100%, 12% 0, 14% 0, 14% 100%, 18% 100%, 18% 0, 20% 0, 20% 100%, 22% 100%, 22% 0, 24% 0, 24% 100%, 26% 100%, 26% 0, 28% 0, 28% 100%, 34% 100%, 34% 0, 38% 0, 38% 100%, 40% 100%, 40% 0, 42% 0, 42% 100%, 48% 100%, 48% 0, 50% 0, 50% 100%, 54% 100%, 54% 0, 58% 0, 58% 100%, 60% 100%, 60% 0, 62% 0, 62% 100%, 64% 100%, 64% 0, 66% 0, 66% 100%, 70% 100%, 70% 0, 74% 0, 74% 100%, 78% 100%, 78% 0, 80% 0, 80% 100%, 82% 100%, 82% 0, 86% 0, 86% 100%, 88% 100%, 88% 0, 90% 0, 90% 100%, 92% 100%, 92% 0, 94% 0, 94% 100%, 100% 100%, 100% 0);
+}
+.cover.dark .barcode::after {
+  background: #FFF;
+}
+
+#page-content .gap.cover {
+  margin-top: 0;
+}
+
+.gap.cover::after,
+.gap > .cover {
+  position: absolute;
+  bottom: 4.5rem;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  box-sizing: border-box;
+  padding: 10px;
+  content: var(--issue-1, '특별호') "】 " var(--feature-1, '가락을 만나다 심층 인터뷰 대특집') "】";
+  writing-mode: vertical-lr;
+  text-orientation: sideways;
+  direction: rtl;
+  white-space: nowrap;
+  text-align: right;
+  color: rgb(var(--main));
+  font-size: min(50px, 5vw);
+  font-family: "Paperlogy", san-serif;
+  font-weight: 800;
+  --shadow: rgb(var(--bg));
+}
+
+.gap.cover::after {
+  background: url('https://scpko.wdfiles.com/local--files/theme:garak-the-magazine/garak-the-magazine.png') bottom right/90% auto no-repeat;
+  filter: drop-shadow(0 3px 1px var(--shadow)) drop-shadow(0 -3px 1px var(--shadow)) drop-shadow(3px 0 1px var(--shadow)) drop-shadow(-3px 0 1px var(--shadow));
+}
+
+.gap > div.cover {
+  -webkit-mask: url('https://scpko.wdfiles.com/local--files/theme:garak-the-magazine/garak-the-magazine.png') bottom right/90% auto no-repeat;
+  mask: url('https://scpko.wdfiles.com/local--files/theme:garak-the-magazine/garak-the-magazine.png') bottom right/90% auto no-repeat;
+  z-index: 2;
+}
+
+.gap > .cover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgb(var(--main));
+}
+
+.cover.dark p,
+.gap.cover.dark::after {
+  color: rgb(var(--bg));
+  --shadow: rgb(var(--main));
+}
+.gap.dark > .cover::before {
+  background: rgb(var(--bg));
+}
+
+strong {
+  font-family: "Paperlogy", san-serif;
+  color: rgb(var(--main));
+}
+
+a, a:visited {
+  font-family: "Paperlogy", san-serif;
+  color: rgb(var(--main));
+  text-decoration: underline;
+}
+
+a:hover {
+  background: rgb(var(--main), 0.15);
+}
+
+#login-status a,
+#login-status,
+#side-bar a,
+#u-side a {
+  color: rgb(var(--main));
+  text-decoration: none;
+}
+
+a.newpage {
+  color: rgb(var(--main), 0.5);
+}
+
+#top-bar {
+  background: rgb(var(--main));
+  top: 230px;
+  right: 0;
+  box-shadow: 50vw 0 0 rgb(var(--main)), -50vw 0 0 rgb(var(--main)), 25vw 0 0 rgb(var(--main)), -25vw 0 0 rgb(var(--main));
+  height: 31px;
+  font-size: 0.8em;
+}
+
+#header #top-bar > div > ul > li:not(:hover) > a {
+  color: rgb(var(--bg));
+}
+
+#top-bar ul li ul li ul {
+    z-index: 1;
+}
+
+#header #top-bar a,
+.c_topbar_arrow {
+  color: rgb(var(--main));
+}
+
+#top-bar > div > ul {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#top-bar ul li a {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#top-bar .open-menu a {
+  border-color: rgb(var(--main));
+  color: rgb(var(--main));
+  text-decoration: none;
+}
+
+#login-status {
+  right: unset;
+  left: 10px;
+}
+
+#search-top-box {
+  top: 10px;
+  right: 10px;
+}
+
+#search-top-box-form input[type="submit"] {
+  background: rgb(var(--main));
+  border-color: rgb(var(--bg));
+  color: rgb(var(--bg));
+}
+
+#search-top-box-form input[type="submit"]:hover,
+#search-top-box-form input[type="submit"]:focus {
+  background: rgb(var(--main));
+}
+
+#side-bar .side-block,
+#u-side .side-block {
+  border: none;
+  box-shadow: none;
+}
+
+#side-bar .side-block, #side-bar .red, #side-bar .green, #side-bar .blue,
+#u-side .side-block, #u-side .red, #u-side .green, #u-side .blue {
+  background: none;
+}
+
+#side-bar .side-block, #side-bar .collapsible-block-folded, #side-bar .collapsible-block-unfolded-link, #side-bar .collapsible-block-unfolded, #side-bar .heading,
+#u-side .side-block, #u-side .collapsible-block-folded, #u-side .collapsible-block-unfolded-link, #u-side .collapsible-block-unfolded, #u-side .heading {
+  color: rgba(var(--main), 0.8);
+  border-color: rgba(var(--main), 0.8);
+}
+
+#side-bar .heading,
+#u-side .heading {
+  font-size: 1em;
+}
+
+blockquote,
+div.blockquote {
+  background: rgba(var(--main), 0.05);
+  border: solid rgb(var(--main));
+  border-width: 2px 0;
+  padding: 0.5em 1em;
+  margin: 1em 2em;
+}
+
+.writer {
+  margin: -1.5em 1em 0;
+  font-family: "Paperlogy", san-serif;
+  font-size: 1.1em;
+  text-align: right;
+  color: rgb(var(--main));
+}
+.writer strong {
+  font-size: 1.1em;
+}
+
+.gasa {
+  text-align: center;
+  font-family: "Paperlogy", san-serif;
+  margin: 3em auto;
+  padding: 0.5em 0;
+  width: min(95%, 500px);
+  background: rgba(var(--main), 0.1);
+  box-shadow: 0.5em 0.5em 1em rgba(var(--main),0.05), 0.5em -0.5em 1em rgba(var(--main), 0.05), -0.5em 0.5em 1em rgba(var(--main), 0.05), -0.5em -0.5em 1em rgba(var(--main), 0.05);
+  border-radius: 1em;
+}
+
+.gasa > p {
+  font-style: italic;
+}
+
+.gasa > p:first-of-type {
+  margin-top: 2em;
+}
+
+.gasa p, gasa span {
+  word-break: keep-all;
+}
+
+.image-container.floatright {
+  width: 300px;
+  padding-left: 2em;
+}
+
+.yui-navset {
+  margin: 2em 0;
+}
+
+.gap .yui-navset + script + script + .yui-navset {
+  margin-top: 4em;
+}
+
+.yui-navset .yui-nav {
+  border-bottom: none;
+  border-left: 2px solid rgb(var(--main));
+  overflow: hidden;
+}
+
+.yui-navset .yui-nav li,
+.yui-navset .yui-nav li.selected {
+  margin: -0.1em 0.16em 0.1em 0;
+}
+
+#page-content .yui-navset .yui-nav a {
+  position: relative;
+  border: 2px solid transparent;
+  border-bottom: none;
+  background-color: rgb(var(--main));
+  background-image: none;
+}
+
+.yui-navset .yui-nav a {
+  color: rgb(var(--main));
+  padding: 5px 20px 5px 15px;
+  clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 0 100%);
+}
+
+.yui-navset .yui-nav a::before {
+  content: "";
+  position: absolute;
+  background-color: rgb(var(--bg));
+  inset: 0;
+  left: -2px;
+  z-index: 0;
+  clip-path: polygon(0 1px, calc(100% - 13px) 1px, 100% 14px, 100% 100%, 0 100%);
+}
+
+.yui-navset .yui-nav li:not(:first-child) a {
+  padding-left: 25px;
+  margin-left: -14px;
+  clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 14px 100%, 14px 14px);
+}
+
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a:focus,
+.yui-navset .yui-nav .selected a:hover {
+  color: rgb(var(--bg));
+}
+
+.yui-navset .yui-nav a:focus,
+.yui-navset .yui-nav a:hover {
+  color: rgb(var(--main));
+}
+
+.yui-navset .yui-nav .selected a::before {
+  background-color: rgb(var(--main));
+}
+
+.yui-navset .yui-nav a:hover::before {
+  background-color: rgb(var(--bg));
+  opacity: 0.75;
+}
+
+.yui-navset .yui-nav .selected a:hover::before {
+  opacity: 0.25;
+}
+
+#page-content .yui-navset .yui-nav a em {
+  position: relative;
+  border: none;
+  padding: 0;
+  z-index: 1;
+}
+
+.yui-navset .yui-content {
+  border: 2px solid rgb(var(--main));
+  background: rgb(var(--bg));
+  padding: 0 2em 2em;
+  margin-top: -4px;
+  z-index: 2;
+  position: relative;
+}
+
+#page-content .creditRate,
+#page-content > .page-rate-widget-box,
+#page-content > div > .page-rate-widget-box {
+  position: absolute;
+  top: 1.7em;
+  right: 1em;
+  margin-right: 0;
+}
+
+#page-content .rate-box-with-credit-button,
+#page-content .creditButton p a,
+#page-content .page-rate-widget-box span {
+  background-color: rgb(var(--main));
+  border-color: rgb(var(--main));
+  color: rgb(var(--bg));
+}
+
+#page-content .rate-box-with-credit-button a,
+#page-content .page-rate-widget-box span a {
+  color: rgb(var(--bg));
+}
+
+#page-content .rate-box-with-credit-button a:hover,
+#page-content .page-rate-widget-box span a:hover {
+  background-color: rgb(var(--bg));
+  color: rgb(var(--main));
+}
+
+.creditButton p a:hover {
+  color: var(--main);
+  background: #FFF;
+  padding-top: 3.5px;
+  border-radius: 0 4px 4px 0;
+}
+
+div:not(.rate-box-with-credit-button) > .page-rate-widget-box > span {
+  border: 3px solid rgb(var(--main));
+}
+
+#page-content .modalbox {
+  background: none;
+  background-color: rgb(var(--bg));
+  background-image: linear-gradient(rgb(var(--main)) 3.2em,transparent 3.2em,transparent);
+  padding: 0;
+}
+
+.modalbox > div:first-child h2 {
+  color: rgb(var(--bg));
+}
+
+.modalbox hr {
+  margin: 0;
+}
+
+.close-credits a {
+  color: rgb(var(--bg));
+  text-decoration: none;
+}
+
+.modalbox .credit {
+  padding: 1em 0 2em;
+}
+
+.creditBottomRate {
+  margin: 0.5em;
+}
+
+.ko-footer > hr,
+.ko-footer + br {
+  display: none;
+}
+#comments-options-hidden {
+  text-align: center;
+}
+#comments-options-shown {
+  border-top: 1px solid rgba(var(--main), 0.5);
+  padding-top: 0.5em;
+}
+.thread-container {
+  margin-top: 0 !important;
+}
+.thread-container a {
+  text-decoration: none;
+}
+.thread-container .post .head,
+.thread-container .post .short {
+  background: rgb(var(--main));
+  color: rgb(var(--bg));
+  border-radius: 0;
+  padding: 0.5em 1em;
+}
+.thread-container .post .head a,
+.thread-container .post .short a,
+.thread-container .post .short .options {
+  color: rgb(var(--bg));
+}
+#comments-options-hidden a,
+#new-post-button {
+  display: block;
+  text-decoration: none;
+  padding: 5px 0;
+  text-align: center;
+  border-top: 1px solid rgba(var(--main), 0.5);
+}
+.thread-container .post .title {
+  font-family: "Paperlogy", san-serif;
+}
+.odate {
+  font-size: 80%;
+  display: block;
+}
+
+#page-options-container a.btn {
+  white-space: nowrap;
+  display: inline-block;
+}
+
+#u-side {
+  position: absolute;
+  width: 16em;
+  height: calc(100% + 47px);
+  top: -17px;
+}
+#u-side > div {
+  position: sticky;
+  top: -17px;
+  height: 100dvh;
+  padding: 17px 0;
+  overflow-y: scroll;
+  direction: rtl;
+  scrollbar-width: auto;
+}
+#u-side > div::-webkit-scrollbar {
+  width: 16px;
+}
+#u-side > div > div {
+  direction: ltr;
+}
+
+#main-content { padding-bottom: 15px; }
+#footer { margin-top: 0; position: relative; z-index: 5; }
+
+@media (min-width: 768px) {
+  #content-wrap {
+    position: static;
+  }
+
+  #side-bar { display: none; }
+  #u-side {
+    left: 50%;
+    transform: translateX(-50vw);
+  }
+
+  #main-content {
+    max-width: 44.5rem;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1250px) {
+  #main-content {
+    margin: 0 auto;
+    padding-left: 16.5em;
+  }
+}
+
+@media (max-width: 767px) {
+  #u-side { display: none; }
+
+  #side-bar {
+    background-color: rgb(var(--main));
+  }
+
+  #side-bar .side-block, #side-bar .red, #side-bar .green, #side-bar .blue {
+    background: rgb(var(--bg));
+  }
+
+  #page-content {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  #page-content > .cover:not(.gap) {
+    margin: -2px calc(-1em);
+    width: calc(100% + 2em);
+  }
+
+  #page-content .gap {
+    left: calc(-1em - 2px);
+    width: calc(100% + 2em + 4px);
+  }
+
+  .index {
+    right: 0em;
+  }
+
+  .yui-navset .yui-content {
+    padding: 0 1em 2em;
+  }
+}
+
+@media (max-width: 580px) {
+  .image-container.floatright {
+    width: 100%;
+    clear: both;
+    display: flex;
+    justify-content: center;
+  }
+  .image-container.floatright img{
+    width: 300px;
+  }
+}
+@media (min-width: 768px) and (max-width: 850px) {
+  .image-container.floatright {
+    width: 100%;
+    clear: both;
+    display: flex;
+    justify-content: center;
+  }
+  .image-container.floatright img{
+    width: 300px;
+  }
+}
+
+
+[[/code]]
+
+[[/collapsible]]
+
+[[/iftags]]

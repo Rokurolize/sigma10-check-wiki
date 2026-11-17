@@ -1,0 +1,2728 @@
+{
+ "tool": "classify_hunks.py",
+ "classifier_version": "0.1.0",
+ "signature_table_version": "2026-11-17.1",
+ "theme": {
+  "dir": "madoka-jp",
+  "cand_fullname": "theme:madoka-jp",
+  "orig_fullname": "theme:madoka",
+  "wiki": "scp-wiki-cn",
+  "revision": "4",
+  "kind": "K5b-3",
+  "verdict": "PASS",
+  "original_file": "review/madoka-jp/original.txt",
+  "candidate_file": "review/madoka-jp/candidate.txt",
+  "original_sha256": "8868ba0d397b2c897ef228c1c3f0d64c9f2a4f9c48c5429b2b06d90cfae7646a",
+  "candidate_sha256": "132f483118bb9b779d37dc08888f9e0bd9da3cedc2ba17b4b5fac71d8d9e7696",
+  "original_lines": 895,
+  "candidate_lines": 899
+ },
+ "topology": {
+  "original_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     3,
+     10
+    ],
+    "lines": 7
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     13,
+     70
+    ],
+    "lines": 57
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     250,
+     656
+    ],
+    "lines": 406
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     663,
+     895
+    ],
+    "lines": 232
+   }
+  ],
+  "candidate_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     0,
+     7
+    ],
+    "lines": 7
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     15,
+     72
+    ],
+    "lines": 57
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     261,
+     660
+    ],
+    "lines": 399
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     667,
+     899
+    ],
+    "lines": 232
+   }
+  ],
+  "moves": [],
+  "external_own_delivery": false
+ },
+ "blocks": [
+  {
+   "id": "B1",
+   "orig_range": [
+    0,
+    3
+   ],
+   "cand_range": [
+    0,
+    0
+   ],
+   "orig_lines": "1-3",
+   "cand_lines": "at 1",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "DELIVERY-HOST"
+   ],
+   "primary": "DELIVERY-HOST",
+   "primary_section": null,
+   "label_prec": {
+    "__WRAPPER__": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DELIVERY-HOST": {}
+   },
+   "notes": [
+    "wrapper-only block; absorbs the wrapped body's label at skeleton build",
+    "absorbed wrapper label from B2"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[module ThemePreviewer noUi=\"true\" theme_url=\"http://d3g0gp89917ko0.cloudfront.net/v--3e3a6f7dbcc9/common--theme/base/css/style.css\"]]",
+   "first_added": ""
+  },
+  {
+   "id": "B2",
+   "orig_range": [
+    6,
+    8
+   ],
+   "cand_range": [
+    3,
+    5
+   ],
+   "orig_lines": "7-8",
+   "cand_lines": "4-5",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-HOST",
+    "DRAFT-HOST",
+    "SELF-DELIVERY"
+   ],
+   "primary": "DELIVERY-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-HOST": "A",
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DELIVERY-HOST": {
+     "orig": [
+      [
+       6,
+       8
+      ]
+     ],
+     "cand": [
+      [
+       3,
+       5
+      ]
+     ]
+    },
+    "SELF-DELIVERY": {
+     "orig": [
+      [
+       7,
+       8
+      ]
+     ],
+     "cand": [
+      [
+       4,
+       5
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       3,
+       5
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [
+    "BASE-DELIVERY/CROSS-IMPORT? theme:mox-jp (include graph needed to decide base vs cross)",
+    "BASE-DELIVERY/CROSS-IMPORT? theme:mox (include graph needed to decide base vs cross)"
+   ],
+   "first_removed": "@import url(https://scp-wiki-cn.wdfiles.com/local--code/theme:mox/8);",
+   "first_added": "@import url(\"https://sigma10-jp-test.wdfiles.com/local--code/theme%3Amox-jp/8\");"
+  },
+  {
+   "id": "B3",
+   "orig_range": [
+    11,
+    12
+   ],
+   "cand_range": [
+    8,
+    14
+   ],
+   "orig_lines": "12-12",
+   "cand_lines": "9-14",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "DRAFT-HOST",
+    "IFTAGS",
+    "SELF-DELIVERY",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "SELF-DELIVERY",
+   "primary_section": 3,
+   "label_prec": {
+    "IFTAGS": "A",
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "IFTAGS": {
+     "orig": [
+      [
+       11,
+       12
+      ]
+     ],
+     "cand": [
+      [
+       13,
+       14
+      ]
+     ]
+    },
+    "SELF-DELIVERY": {
+     "orig": [],
+     "cand": [
+      [
+       10,
+       11
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       10,
+       11
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "class (iii) draft-stage form",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[iftags +版式 +原创]]",
+   "first_added": "[[include :scp-jp:component:interwiki-style"
+  },
+  {
+   "id": "B4",
+   "orig_range": [
+    23,
+    24
+   ],
+   "cand_range": [
+    25,
+    26
+   ],
+   "orig_lines": "24-24",
+   "cand_lines": "26-26",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "DRAFT-HOST"
+   ],
+   "primary": "DRAFT-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       25,
+       26
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "    background-image: url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/mdk-bg-7.svg);",
+   "first_added": "    background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/mdk-bg-7.svg);"
+  },
+  {
+   "id": "B5",
+   "orig_range": [
+    62,
+    63
+   ],
+   "cand_range": [
+    64,
+    65
+   ],
+   "orig_lines": "63-63",
+   "cand_lines": "65-65",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "DRAFT-HOST"
+   ],
+   "primary": "DRAFT-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       64,
+       65
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "    background: url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/mdk-bg-7.svg) no-repeat;",
+   "first_added": "    background: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/mdk-bg-7.svg) no-repeat;"
+  },
+  {
+   "id": "B6",
+   "orig_range": [
+    72,
+    73
+   ],
+   "cand_range": [
+    74,
+    84
+   ],
+   "orig_lines": "73-73",
+   "cand_lines": "75-84",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "CREDIT-PREVIEW",
+    "CREDIT-PROSE",
+    "TASL-FIELDS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "CREDIT-PREVIEW",
+   "primary_section": 1,
+   "label_prec": {
+    "CREDIT-PREVIEW": "A",
+    "TASL-FIELDS": "A",
+    "TRANS-UNANCHORED": "C",
+    "CREDIT-PROSE": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "CREDIT-PREVIEW": {
+     "cand": [
+      [
+       74,
+       75
+      ],
+      [
+       83,
+       84
+      ]
+     ]
+    },
+    "TASL-FIELDS": {
+     "cand": [
+      [
+       75,
+       83
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {},
+    "CREDIT-PROSE": {}
+   },
+   "notes": [
+    "script delta without the anchor majority",
+    "position: inside the credit include pair"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[module rate]]",
+   "first_added": "[[include :scp-jp:credit:start-preview]]"
+  },
+  {
+   "id": "B7",
+   "orig_range": [
+    75,
+    76
+   ],
+   "cand_range": [
+    86,
+    87
+   ],
+   "orig_lines": "76-76",
+   "cand_lines": "87-87",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "LINK-REPOINT",
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "LINK-REPOINT": "C",
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "LINK-REPOINT": {
+     "orig": [
+      [
+       75,
+       76
+      ]
+     ],
+     "cand": [
+      [
+       86,
+       87
+      ]
+     ]
+    },
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "**魔法联盟 特种版式**是为2025幻想月作品《吾等即战争：魔法少女们的1944》所做的CSS版式，基于[[[theme:mox |一氧化物 基础版式]]]。",
+   "first_added": "**魔法同盟 特殊テーマ**は、2025年幻想月作品『我らは戦争なり：魔法少女たちの1944』のために作成されたCSSテーマで、[[[theme:mox-jp|mox基礎テーマ]]]を基にしています。"
+  },
+  {
+   "id": "B8",
+   "orig_range": [
+    77,
+    78
+   ],
+   "cand_range": [
+    88,
+    89
+   ],
+   "orig_lines": "78-78",
+   "cand_lines": "89-89",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "在任何页面上使用",
+   "first_added": "任意のページで"
+  },
+  {
+   "id": "B9",
+   "orig_range": [
+    79,
+    80
+   ],
+   "cand_range": [
+    90,
+    91
+   ],
+   "orig_lines": "80-80",
+   "cand_lines": "91-91",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "COMPONENT-SWAP",
+    "INCLUDE-REPOINT"
+   ],
+   "primary": "COMPONENT-SWAP",
+   "primary_section": 2,
+   "label_prec": {
+    "INCLUDE-REPOINT": "A",
+    "COMPONENT-SWAP": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "INCLUDE-REPOINT": {
+     "orig": [
+      [
+       79,
+       80
+      ]
+     ],
+     "cand": [
+      [
+       90,
+       91
+      ]
+     ]
+    },
+    "COMPONENT-SWAP": {
+     "orig": [
+      [
+       79,
+       80
+      ]
+     ],
+     "cand": [
+      [
+       90,
+       91
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "= {{@@[[include :scp-wiki-cn:theme:madoka]]@@}}",
+   "first_added": "= {{@@[[include theme:madoka-jp]]@@}}"
+  },
+  {
+   "id": "B10",
+   "orig_range": [
+    81,
+    82
+   ],
+   "cand_range": [
+    92,
+    93
+   ],
+   "orig_lines": "82-82",
+   "cand_lines": "93-93",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "使用此版式。",
+   "first_added": "と記述すると、このテーマを使用できます。"
+  },
+  {
+   "id": "B11",
+   "orig_range": [
+    85,
+    86
+   ],
+   "cand_range": [
+    96,
+    97
+   ],
+   "orig_lines": "86-86",
+   "cand_lines": "97-97",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "+ 引用参数",
+   "first_added": "+ インクルード引数"
+  },
+  {
+   "id": "B12",
+   "orig_range": [
+    91,
+    92
+   ],
+   "cand_range": [
+    102,
+    103
+   ],
+   "orig_lines": "92-92",
+   "cand_lines": "103-103",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[span class=\"madoka-label1\"]]秀色[[/span]]",
+   "first_added": "[[span class=\"madoka-label1\"]]巴マミ[[/span]]"
+  },
+  {
+   "id": "B13",
+   "orig_range": [
+    100,
+    101
+   ],
+   "cand_range": [
+    111,
+    112
+   ],
+   "orig_lines": "101-101",
+   "cand_lines": "112-112",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[span class=\"madoka-label1\"]]人鱼[[/span]]",
+   "first_added": "[[span class=\"madoka-label1\"]]美樹さやか[[/span]]"
+  },
+  {
+   "id": "B14",
+   "orig_range": [
+    109,
+    110
+   ],
+   "cand_range": [
+    120,
+    121
+   ],
+   "orig_lines": "110-110",
+   "cand_lines": "121-121",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "GLYPH-FORM",
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "GLYPH-FORM": "B",
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "GLYPH-FORM": {},
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "fold-compare: glyph forms only",
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[span class=\"madoka-label1\"]]武旦[[/span]]",
+   "first_added": "[[span class=\"madoka-label1\"]]佐倉杏子[[/span]]"
+  },
+  {
+   "id": "B15",
+   "orig_range": [
+    118,
+    119
+   ],
+   "cand_range": [
+    129,
+    130
+   ],
+   "orig_lines": "119-119",
+   "cand_lines": "130-130",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[span class=\"madoka-label1\"]]救济[[/span]]",
+   "first_added": "[[span class=\"madoka-label1\"]]鹿目まどか[[/span]]"
+  },
+  {
+   "id": "B16",
+   "orig_range": [
+    127,
+    128
+   ],
+   "cand_range": [
+    138,
+    139
+   ],
+   "orig_lines": "128-128",
+   "cand_lines": "139-139",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[span class=\"madoka-label1\"]]彼岸[[size smaller]]（默认暗色）[[/size]][[/span]]",
+   "first_added": "[[span class=\"madoka-label1\"]]暁美ほむら[[size smaller]]（既定の暗色）[[/size]][[/span]]"
+  },
+  {
+   "id": "B17",
+   "orig_range": [
+    136,
+    137
+   ],
+   "cand_range": [
+    147,
+    148
+   ],
+   "orig_lines": "137-137",
+   "cand_lines": "148-148",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[span class=\"madoka-label1\"]]小说模式[[size smaller]]（可以与配色参数同时引用）[[/size]][[/span]]",
+   "first_added": "[[span class=\"madoka-label1\"]]小説モード[[size smaller]]（配色引数と併用可能）[[/size]][[/span]]"
+  },
+  {
+   "id": "B18",
+   "orig_range": [
+    141,
+    142
+   ],
+   "cand_range": [
+    152,
+    153
+   ],
+   "orig_lines": "142-142",
+   "cand_lines": "153-153",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "启用小说模式后，页面内文字的行距、字号、字距均会适当加大，并且缩进2字符大小，字体切换为思源宋体，适宜长文本阅读。",
+   "first_added": "小説モードを有効にすると、ページ本文の行間、文字サイズ、字間がやや広がり、2字分の字下げが入ります。本文フォントはNoto Serif JP系に切り替わり、長文を読みやすくします。"
+  },
+  {
+   "id": "B19",
+   "orig_range": [
+    143,
+    144
+   ],
+   "cand_range": [
+    154,
+    155
+   ],
+   "orig_lines": "144-144",
+   "cand_lines": "155-155",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "另外，你可以启用{{|qb=*}}关闭这个高100vh的动画版头。",
+   "first_added": "また、{{|qb=*}}を有効にすると、高さ100vhのアニメーション付きヘッダーを無効化できます。"
+  },
+  {
+   "id": "B20",
+   "orig_range": [
+    148,
+    149
+   ],
+   "cand_range": [
+    159,
+    160
+   ],
+   "orig_lines": "149-149",
+   "cand_lines": "160-160",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "+ 页面元素展示",
+   "first_added": "+ ページ要素の表示例"
+  },
+  {
+   "id": "B21",
+   "orig_range": [
+    150,
+    151
+   ],
+   "cand_range": [
+    161,
+    162
+   ],
+   "orig_lines": "151-151",
+   "cand_lines": "162-162",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "++ 新增",
+   "first_added": "++ 追加要素"
+  },
+  {
+   "id": "B22",
+   "orig_range": [
+    152,
+    153
+   ],
+   "cand_range": [
+    163,
+    164
+   ],
+   "orig_lines": "153-153",
+   "cand_lines": "164-164",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "使用如下代码创建一个华丽的分割线：",
+   "first_added": "以下のコードで装飾的な区切り線を作成できます。"
+  },
+  {
+   "id": "B23",
+   "orig_range": [
+    158,
+    159
+   ],
+   "cand_range": [
+    169,
+    170
+   ],
+   "orig_lines": "159-159",
+   "cand_lines": "170-170",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "效果：",
+   "first_added": "表示例："
+  },
+  {
+   "id": "B24",
+   "orig_range": [
+    172,
+    173
+   ],
+   "cand_range": [
+    183,
+    184
+   ],
+   "orig_lines": "173-173",
+   "cand_lines": "184-184",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "++ 预设div元素",
+   "first_added": "++ プリセットdiv要素"
+  },
+  {
+   "id": "B25",
+   "orig_range": [
+    183,
+    184
+   ],
+   "cand_range": [
+    194,
+    195
+   ],
+   "orig_lines": "184-184",
+   "cand_lines": "195-195",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "= 或",
+   "first_added": "= または"
+  },
+  {
+   "id": "B26",
+   "orig_range": [
+    191,
+    192
+   ],
+   "cand_range": [
+    202,
+    203
+   ],
+   "orig_lines": "192-192",
+   "cand_lines": "203-203",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "= 或",
+   "first_added": "= または"
+  },
+  {
+   "id": "B27",
+   "orig_range": [
+    198,
+    199
+   ],
+   "cand_range": [
+    209,
+    210
+   ],
+   "orig_lines": "199-199",
+   "cand_lines": "210-210",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "= @@[[div class=\"notation\"]] 或 [[div class=\"mox-note\"]]@@",
+   "first_added": "= @@[[div class=\"notation\"]] または [[div class=\"mox-note\"]]@@"
+  },
+  {
+   "id": "B28",
+   "orig_range": [
+    205,
+    206
+   ],
+   "cand_range": [
+    216,
+    217
+   ],
+   "orig_lines": "206-206",
+   "cand_lines": "217-217",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "= 或",
+   "first_added": "= または"
+  },
+  {
+   "id": "B29",
+   "orig_range": [
+    212,
+    213
+   ],
+   "cand_range": [
+    223,
+    224
+   ],
+   "orig_lines": "213-213",
+   "cand_lines": "224-224",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "= @@[[div class=\"document\"]] 或 [[div class=\"mox-card\"]]@@",
+   "first_added": "= @@[[div class=\"document\"]] または [[div class=\"mox-card\"]]@@"
+  },
+  {
+   "id": "B30",
+   "orig_range": [
+    218,
+    219
+   ],
+   "cand_range": [
+    229,
+    230
+   ],
+   "orig_lines": "219-219",
+   "cand_lines": "230-230",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "= @@[[div class=\"darkdocument\"]] 或 [[div class=\"mox-card mox-dark\"]]@@",
+   "first_added": "= @@[[div class=\"darkdocument\"]] または [[div class=\"mox-card mox-dark\"]]@@"
+  },
+  {
+   "id": "B31",
+   "orig_range": [
+    224,
+    225
+   ],
+   "cand_range": [
+    235,
+    236
+   ],
+   "orig_lines": "225-225",
+   "cand_lines": "236-236",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "= @@[[div class=\"floatbox\"]] 或 [[div class=\"mox-float mox-f-left\"]]@@",
+   "first_added": "= @@[[div class=\"floatbox\"]] または [[div class=\"mox-float mox-f-left\"]]@@"
+  },
+  {
+   "id": "B32",
+   "orig_range": [
+    230,
+    231
+   ],
+   "cand_range": [
+    241,
+    242
+   ],
+   "orig_lines": "231-231",
+   "cand_lines": "242-242",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "= @@[[div class=\"floatbox right\"]] 或 [[div class=\"mox-float mox-f-right\"]]@@",
+   "first_added": "= @@[[div class=\"floatbox right\"]] または [[div class=\"mox-float mox-f-right\"]]@@"
+  },
+  {
+   "id": "B33",
+   "orig_range": [
+    242,
+    243
+   ],
+   "cand_range": [
+    253,
+    254
+   ],
+   "orig_lines": "243-243",
+   "cand_lines": "254-254",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "= [[size 1.5em]]UI字体为[[span style=\"font-family:'Noto Serif' , serif;\"]]**思源宋体 SC** [[/span]]/ [[span style=\"font-family:'ZSFT-q' , serif;\"]]**Cinzel**[[/span]]。[[/size]]",
+   "first_added": "= [[size 1.5em]]UIフォントは[[span style=\"font-family:'Noto Serif JP' , serif;\"]]**Noto Serif JP** [[/span]]/ [[span style=\"font-family:'ZSFT-q' , serif;\"]]**Cinzel**[[/span]]。[[/size]]"
+  },
+  {
+   "id": "B34",
+   "orig_range": [
+    244,
+    245
+   ],
+   "cand_range": [
+    255,
+    256
+   ],
+   "orig_lines": "245-245",
+   "cand_lines": "256-256",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "= [[size 1.5em]]正文字体为**思源黑体**。[[/size]]",
+   "first_added": "= [[size 1.5em]]本文フォントは**Noto Sans JP**。[[/size]]"
+  },
+  {
+   "id": "B35",
+   "orig_range": [
+    246,
+    247
+   ],
+   "cand_range": [
+    257,
+    258
+   ],
+   "orig_lines": "247-247",
+   "cand_lines": "258-258",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "= [[size 1.5em]]等宽字体为{{**Oxygen Mono**/**思源黑体**}}。[[/size]]",
+   "first_added": "= [[size 1.5em]]等幅フォントは{{**Oxygen Mono**/**Noto Sans JP**}}。[[/size]]"
+  },
+  {
+   "id": "B36",
+   "orig_range": [
+    248,
+    249
+   ],
+   "cand_range": [
+    259,
+    260
+   ],
+   "orig_lines": "249-249",
+   "cand_lines": "260-260",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[collapsible show=\"展开源代码\" hide=\"收起源代码\"]]",
+   "first_added": "[[collapsible show=\"ソースコードを表示\" hide=\"ソースコードを隠す\"]]"
+  },
+  {
+   "id": "B37",
+   "orig_range": [
+    269,
+    271
+   ],
+   "cand_range": [
+    280,
+    282
+   ],
+   "orig_lines": "270-271",
+   "cand_lines": "281-282",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DRAFT-HOST",
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "DRAFT-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A",
+    "COMMENT-TEXT": "C",
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       281,
+       282
+      ]
+     ]
+    },
+    "COMMENT-TEXT": {},
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "class (iii) draft-stage form",
+    "porter-visible only; labeled and skipped by design",
+    "anchored pairs 2/2"
+   ],
+   "partial_notes": [],
+   "first_removed": "    --mox-header-subtitle: \"国际反法西斯魔法少女联盟\";",
+   "first_added": "    --mox-header-subtitle: \"国際反ファシスト魔法少女同盟\";"
+  },
+  {
+   "id": "B38",
+   "orig_range": [
+    274,
+    277
+   ],
+   "cand_range": [
+    285,
+    288
+   ],
+   "orig_lines": "275-277",
+   "cand_lines": "286-288",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "CSS-BODY"
+   ],
+   "primary": "CSS-BODY",
+   "primary_section": 8,
+   "label_prec": {
+    "CSS-BODY": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "CSS-BODY": {}
+   },
+   "notes": [
+    "no other signature matched"
+   ],
+   "partial_notes": [],
+   "first_removed": "    --mox-ui-font: 'ZSFT-q', 'Noto Serif SC', serif;",
+   "first_added": "    --mox-ui-font: 'ZSFT-q', 'Noto Serif JP', 'Noto Serif CJK JP', serif;"
+  },
+  {
+   "id": "B39",
+   "orig_range": [
+    280,
+    282
+   ],
+   "cand_range": [
+    291,
+    293
+   ],
+   "orig_lines": "281-282",
+   "cand_lines": "292-293",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "CSS-BODY"
+   ],
+   "primary": "CSS-BODY",
+   "primary_section": 8,
+   "label_prec": {
+    "CSS-BODY": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "CSS-BODY": {}
+   },
+   "notes": [
+    "no other signature matched"
+   ],
+   "partial_notes": [],
+   "first_removed": "    --madoka-serif: 'ZSFT-q', 'Noto Serif SC', serif;",
+   "first_added": "    --madoka-serif: 'ZSFT-q', 'Noto Serif JP', 'Noto Serif CJK JP', serif;"
+  },
+  {
+   "id": "B40",
+   "orig_range": [
+    284,
+    292
+   ],
+   "cand_range": [
+    295,
+    296
+   ],
+   "orig_lines": "285-292",
+   "cand_lines": "296-296",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "JPFONT-LOAD"
+   ],
+   "primary": "JPFONT-LOAD",
+   "primary_section": 4,
+   "label_prec": {
+    "JPFONT-LOAD": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "JPFONT-LOAD": {
+     "cand": [
+      [
+       295,
+       296
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "absence claim needs base subtraction (resolved base)"
+   ],
+   "partial_notes": [],
+   "first_removed": "@import url(\"https://fontsapi.zeoseven.com/285/main/result.css\");",
+   "first_added": "@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@400;500;700&family=Oxygen+Mono&display=swap');"
+  },
+  {
+   "id": "B41",
+   "orig_range": [
+    294,
+    295
+   ],
+   "cand_range": [
+    298,
+    299
+   ],
+   "orig_lines": "295-295",
+   "cand_lines": "299-299",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DRAFT-HOST"
+   ],
+   "primary": "DRAFT-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       298,
+       299
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "    background-image: linear-gradient(180deg, var(--mox-bg-color), rgba(255, 255, 255, 0.7) 300vh), url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/madoka-bg.jpg);",
+   "first_added": "    background-image: linear-gradient(180deg, var(--mox-bg-color), rgba(255, 255, 255, 0.7) 300vh), url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/madoka-bg.jpg);"
+  },
+  {
+   "id": "B42",
+   "orig_range": [
+    308,
+    309
+   ],
+   "cand_range": [
+    312,
+    313
+   ],
+   "orig_lines": "309-309",
+   "cand_lines": "313-313",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "CSS-BODY"
+   ],
+   "primary": "CSS-BODY",
+   "primary_section": 8,
+   "label_prec": {
+    "CSS-BODY": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "CSS-BODY": {}
+   },
+   "notes": [
+    "no other signature matched"
+   ],
+   "partial_notes": [],
+   "first_removed": "    font-family: 'Noto Serif SC';",
+   "first_added": "    font-family: 'Noto Serif JP', 'Noto Serif CJK JP';"
+  },
+  {
+   "id": "B43",
+   "orig_range": [
+    323,
+    324
+   ],
+   "cand_range": [
+    327,
+    328
+   ],
+   "orig_lines": "324-324",
+   "cand_lines": "328-328",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* 页面元素 */",
+   "first_added": "/* ページ要素 */"
+  },
+  {
+   "id": "B44",
+   "orig_range": [
+    326,
+    327
+   ],
+   "cand_range": [
+    330,
+    331
+   ],
+   "orig_lines": "327-327",
+   "cand_lines": "331-331",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DRAFT-HOST"
+   ],
+   "primary": "DRAFT-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       330,
+       331
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "    background: url(https://scpsandboxcn.wikidot.com/local--files/oxygen9-files-2/mdk-hr.svg) no-repeat;",
+   "first_added": "    background: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/mdk-hr.svg) no-repeat;"
+  },
+  {
+   "id": "B45",
+   "orig_range": [
+    343,
+    344
+   ],
+   "cand_range": [
+    347,
+    348
+   ],
+   "orig_lines": "344-344",
+   "cand_lines": "348-348",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DRAFT-HOST"
+   ],
+   "primary": "DRAFT-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       347,
+       348
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "    background: url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/mdk-deco1.svg) no-repeat;",
+   "first_added": "    background: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/mdk-deco1.svg) no-repeat;"
+  },
+  {
+   "id": "B46",
+   "orig_range": [
+    366,
+    367
+   ],
+   "cand_range": [
+    370,
+    371
+   ],
+   "orig_lines": "367-367",
+   "cand_lines": "371-371",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* 版头 */",
+   "first_added": "/* ヘッダー */"
+  },
+  {
+   "id": "B47",
+   "orig_range": [
+    376,
+    377
+   ],
+   "cand_range": [
+    380,
+    381
+   ],
+   "orig_lines": "377-377",
+   "cand_lines": "381-381",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DRAFT-HOST"
+   ],
+   "primary": "DRAFT-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       380,
+       381
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "    background-image: url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/mdk-bg-1.svg), url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/mdk-bg-5.svg), url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/mdk-bg-6.svg);",
+   "first_added": "    background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/mdk-bg-1.svg), url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/mdk-bg-5.svg), url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/mdk-bg-6.svg);"
+  },
+  {
+   "id": "B48",
+   "orig_range": [
+    383,
+    384
+   ],
+   "cand_range": [
+    387,
+    388
+   ],
+   "orig_lines": "384-384",
+   "cand_lines": "388-388",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DRAFT-HOST"
+   ],
+   "primary": "DRAFT-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       387,
+       388
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "    background-image: url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/mdk-bg-2.svg);",
+   "first_added": "    background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/mdk-bg-2.svg);"
+  },
+  {
+   "id": "B49",
+   "orig_range": [
+    401,
+    402
+   ],
+   "cand_range": [
+    405,
+    406
+   ],
+   "orig_lines": "402-402",
+   "cand_lines": "406-406",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DRAFT-HOST"
+   ],
+   "primary": "DRAFT-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       405,
+       406
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "    background-image: url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/mdk-bg-3.svg), url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/mdk-bg-4.svg);",
+   "first_added": "    background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/mdk-bg-3.svg), url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/mdk-bg-4.svg);"
+  },
+  {
+   "id": "B50",
+   "orig_range": [
+    429,
+    430
+   ],
+   "cand_range": [
+    433,
+    434
+   ],
+   "orig_lines": "430-430",
+   "cand_lines": "434-434",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DRAFT-HOST"
+   ],
+   "primary": "DRAFT-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       433,
+       434
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "    background-image: url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/mdk-bg-7.svg);",
+   "first_added": "    background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/mdk-bg-7.svg);"
+  },
+  {
+   "id": "B51",
+   "orig_range": [
+    448,
+    449
+   ],
+   "cand_range": [
+    452,
+    453
+   ],
+   "orig_lines": "449-449",
+   "cand_lines": "453-453",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DRAFT-HOST"
+   ],
+   "primary": "DRAFT-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       452,
+       453
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "    background-image: url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/mdk-bg-8a.svg), url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/mdk-bg-8a.svg);",
+   "first_added": "    background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/mdk-bg-8a.svg), url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/mdk-bg-8a.svg);"
+  },
+  {
+   "id": "B52",
+   "orig_range": [
+    470,
+    471
+   ],
+   "cand_range": [
+    474,
+    475
+   ],
+   "orig_lines": "471-471",
+   "cand_lines": "475-475",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DRAFT-HOST"
+   ],
+   "primary": "DRAFT-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       474,
+       475
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "    background-image: url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/mdk-bg-8b.svg);",
+   "first_added": "    background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/mdk-bg-8b.svg);"
+  },
+  {
+   "id": "B53",
+   "orig_range": [
+    492,
+    493
+   ],
+   "cand_range": [
+    496,
+    497
+   ],
+   "orig_lines": "493-493",
+   "cand_lines": "497-497",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DRAFT-HOST"
+   ],
+   "primary": "DRAFT-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       496,
+       497
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "    background-image: url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/iama-logo-dark.svg);",
+   "first_added": "    background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/iama-logo-dark.svg);"
+  },
+  {
+   "id": "B54",
+   "orig_range": [
+    514,
+    515
+   ],
+   "cand_range": [
+    518,
+    519
+   ],
+   "orig_lines": "515-515",
+   "cand_lines": "519-519",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DRAFT-HOST"
+   ],
+   "primary": "DRAFT-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       518,
+       519
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "    background-image: url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/mdk-bg-text.svg);",
+   "first_added": "    background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/mdk-bg-text.svg);"
+  },
+  {
+   "id": "B55",
+   "orig_range": [
+    530,
+    531
+   ],
+   "cand_range": [
+    534,
+    535
+   ],
+   "orig_lines": "531-531",
+   "cand_lines": "535-535",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DRAFT-HOST"
+   ],
+   "primary": "DRAFT-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       534,
+       535
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "    background-image: url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/mdk-end1.svg), url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/mdk-end2.svg);",
+   "first_added": "    background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/mdk-end1.svg), url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/mdk-end2.svg);"
+  },
+  {
+   "id": "B56",
+   "orig_range": [
+    547,
+    548
+   ],
+   "cand_range": [
+    551,
+    552
+   ],
+   "orig_lines": "548-548",
+   "cand_lines": "552-552",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "CONTENT-STRING",
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "CONTENT-STRING",
+   "primary_section": 6,
+   "label_prec": {
+    "CONTENT-STRING": "B",
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "CONTENT-STRING": {
+     "orig": [
+      [
+       547,
+       548
+      ]
+     ],
+     "cand": [
+      [
+       551,
+       552
+      ]
+     ]
+    },
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "    content: '战争永不停歇';",
+   "first_added": "    content: '戦争は決して止まない';"
+  },
+  {
+   "id": "B57",
+   "orig_range": [
+    550,
+    551
+   ],
+   "cand_range": [
+    554,
+    555
+   ],
+   "orig_lines": "551-551",
+   "cand_lines": "555-555",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* 版头动画 */",
+   "first_added": "/* ヘッダーアニメーション */"
+  },
+  {
+   "id": "B58",
+   "orig_range": [
+    591,
+    592
+   ],
+   "cand_range": [
+    595,
+    596
+   ],
+   "orig_lines": "592-592",
+   "cand_lines": "596-596",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DRAFT-HOST"
+   ],
+   "primary": "DRAFT-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       595,
+       596
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "    background-image: url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/mdk-header-top.svg);",
+   "first_added": "    background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/mdk-header-top.svg);"
+  },
+  {
+   "id": "B59",
+   "orig_range": [
+    617,
+    618
+   ],
+   "cand_range": [
+    621,
+    622
+   ],
+   "orig_lines": "618-618",
+   "cand_lines": "622-622",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DRAFT-HOST"
+   ],
+   "primary": "DRAFT-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       621,
+       622
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "    background: url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/mdk-deco1.svg) no-repeat;",
+   "first_added": "    background: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/mdk-deco1.svg) no-repeat;"
+  },
+  {
+   "id": "B60",
+   "orig_range": [
+    653,
+    654
+   ],
+   "cand_range": [
+    657,
+    658
+   ],
+   "orig_lines": "654-654",
+   "cand_lines": "658-658",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DRAFT-HOST"
+   ],
+   "primary": "DRAFT-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       657,
+       658
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "div#side-bar::after{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(var(--mox-header-height) * -1) / cover !important}#header #search-top-box input.button{background:url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(var(--mox-header-height)* -2) center / cover !important}a.weditor-bold::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 3) center / cover !important}a.weditor-italic::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 4) center / cover !important}a.weditor-underline::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 22) center / cover !important}a.weditor-strikethrough::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 5) center / cover !important}a.weditor-quote::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 6) center / cover !important}a.weditor-superscript::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 7) center / cover !important}a.weditor-subscript::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 8) center / cover !important}a.weditor-table::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 9) center / cover !important}a.weditor-code::before,a.weditor-codewiz::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 10) center / cover !important}a.weditor-uri::before,a.weditor-uriwiz::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 11) center / cover !important}a.weditor-pagelink::before,a.weditor-pagelinkwiz::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 12) center / cover !important}a.weditor-image::before,a.weditor-imagewiz::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 13) center / cover !important}a.weditor-html::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 14) center / cover !important}a.weditor-numlist::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 15) center / cover !important}a.weditor-bullist::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 15.8) center / cover !important}a.weditor-incindent::before,a.weditor-decindent::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 16) center / cover !important}a.weditor-deflist::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 17) center / cover !important}a.weditor-footnote::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 18) center / cover !important}a.weditor-bib::before,a.weditor-bibcite::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 20.8) center / cover !important}:where(a.weditor-imagewiz,a.weditor-codewiz,a.weditor-uriwiz,a.weditor-pagelinkwiz,a.weditor-incindent,a.weditor-decindent,a.weditor-eqref,a.weditor-bibcite)::after{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 20) center / cover}:where(a.weditor-imagewiz,a.weditor-codewiz,a.weditor-uriwiz,a.weditor-pagelinkwiz,a.weditor-incindent,a.weditor-decindent,a.weditor-eqref,a.weditor-bibcite)::after{background-color:var(--mox-layer-dark-1);background-image:url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2);background-repeat:no-repeat;background-position:left center !important;background-size:cover;background-position:-20.055rem !important;background-origin:content-box}.wd-editor-toolbar-panel ul li a::before{font-family:var(--mox-mono-font) !important;letter-spacing:-0.15rem}",
+   "first_added": "div#side-bar::after{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-2) no-repeat local calc(var(--mox-header-height) * -1) / cover !important}#header #search-top-box input.button{background:url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-2) no-repeat local calc(var(--mox-header-height)* -2) center / cover !important}a.weditor-bold::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-2) no-repeat local calc(-2.3rem* 3) center / cover !important}a.weditor-italic::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-2) no-repeat local calc(-2.3rem* 4) center / cover !important}a.weditor-underline::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-2) no-repeat local calc(-2.3rem* 22) center / cover !important}a.weditor-strikethrough::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-2) no-repeat local calc(-2.3rem* 5) center / cover !important}a.weditor-quote::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-2) no-repeat local calc(-2.3rem* 6) center / cover !important}a.weditor-superscript::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-2) no-repeat local calc(-2.3rem* 7) center / cover !important}a.weditor-subscript::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-2) no-repeat local calc(-2.3rem* 8) center / cover !important}a.weditor-table::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-2) no-repeat local calc(-2.3rem* 9) center / cover !important}a.weditor-code::before,a.weditor-codewiz::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-2) no-repeat local calc(-2.3rem* 10) center / cover !important}a.weditor-uri::before,a.weditor-uriwiz::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-2) no-repeat local calc(-2.3rem* 11) center / cover !important}a.weditor-pagelink::before,a.weditor-pagelinkwiz::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-2) no-repeat local calc(-2.3rem* 12) center / cover !important}a.weditor-image::before,a.weditor-imagewiz::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-2) no-repeat local calc(-2.3rem* 13) center / cover !important}a.weditor-html::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-2) no-repeat local calc(-2.3rem* 14) center / cover !important}a.weditor-numlist::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-2) no-repeat local calc(-2.3rem* 15) center / cover !important}a.weditor-bullist::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-2) no-repeat local calc(-2.3rem* 15.8) center / cover !important}a.weditor-incindent::before,a.weditor-decindent::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-2) no-repeat local calc(-2.3rem* 16) center / cover !important}a.weditor-deflist::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-2) no-repeat local calc(-2.3rem* 17) center / cover !important}a.weditor-footnote::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-2) no-repeat local calc(-2.3rem* 18) center / cover !important}a.weditor-bib::before,a.weditor-bibcite::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-2) no-repeat local calc(-2.3rem* 20.8) center / cover !important}:where(a.weditor-imagewiz,a.weditor-codewiz,a.weditor-uriwiz,a.weditor-pagelinkwiz,a.weditor-incindent,a.weditor-decindent,a.weditor-eqref,a.weditor-bibcite)::after{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-2) no-repeat local calc(-2.3rem* 20) center / cover}:where(a.weditor-imagewiz,a.weditor-codewiz,a.weditor-uriwiz,a.weditor-pagelinkwiz,a.weditor-incindent,a.weditor-decindent,a.weditor-eqref,a.weditor-bibcite)::after{background-color:var(--mox-layer-dark-1);background-image:url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-2);background-repeat:no-repeat;background-position:left center !important;background-size:cover;background-position:-20.055rem !important;background-origin:content-box}.wd-editor-toolbar-panel ul li a::before{font-family:var(--mox-mono-font) !important;letter-spacing:-0.15rem}"
+  },
+  {
+   "id": "B61",
+   "orig_range": [
+    776,
+    777
+   ],
+   "cand_range": [
+    780,
+    781
+   ],
+   "orig_lines": "777-777",
+   "cand_lines": "781-781",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "DRAFT-HOST"
+   ],
+   "primary": "DRAFT-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       780,
+       781
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "    background-image: linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.95) 300vh), url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/madoka-bg.jpg);",
+   "first_added": "    background-image: linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.95) 300vh), url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/madoka-bg.jpg);"
+  },
+  {
+   "id": "B62",
+   "orig_range": [
+    796,
+    797
+   ],
+   "cand_range": [
+    800,
+    801
+   ],
+   "orig_lines": "797-797",
+   "cand_lines": "801-801",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "DRAFT-HOST"
+   ],
+   "primary": "DRAFT-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       800,
+       801
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "div#side-bar::after{background:url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(var(--mox-header-height) * -1) / cover !important}#header #search-top-box input.button{background:url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(var(--mox-header-height)* -2) center / cover !important}a.weditor-bold::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 3) center / cover !important}a.weditor-italic::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 4) center / cover !important}a.weditor-underline::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 22) center / cover !important}a.weditor-strikethrough::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 5) center / cover !important}a.weditor-quote::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 6) center / cover !important}a.weditor-superscript::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 7) center / cover !important}a.weditor-subscript::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 8) center / cover !important}a.weditor-table::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 9) center / cover !important}a.weditor-code::before,a.weditor-codewiz::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 10) center / cover !important}a.weditor-uri::before,a.weditor-uriwiz::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 11) center / cover !important}a.weditor-pagelink::before,a.weditor-pagelinkwiz::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 12) center / cover !important}a.weditor-image::before,a.weditor-imagewiz::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 13) center / cover !important}a.weditor-html::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 14) center / cover !important}a.weditor-numlist::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 15) center / cover !important}a.weditor-bullist::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 15.8) center / cover !important}a.weditor-incindent::before,a.weditor-decindent::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 16) center / cover !important}a.weditor-deflist::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 17) center / cover !important}a.weditor-footnote::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 18) center / cover !important}a.weditor-bib::before,a.weditor-bibcite::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 20.8) center / cover !important}:where(a.weditor-imagewiz,a.weditor-codewiz,a.weditor-uriwiz,a.weditor-pagelinkwiz,a.weditor-incindent,a.weditor-decindent,a.weditor-eqref,a.weditor-bibcite)::after{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 20) center / cover}:where(a.weditor-imagewiz,a.weditor-codewiz,a.weditor-uriwiz,a.weditor-pagelinkwiz,a.weditor-incindent,a.weditor-decindent,a.weditor-eqref,a.weditor-bibcite)::after{background-color:var(--mox-layer-dark-1);background-image:url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1);background-repeat:no-repeat;background-position:left center !important;background-size:cover;background-position:-20.055rem !important;background-origin:content-box}#license-area{color:var(--mox-layer-light-3);background:var(--mox-layer-light-1)}#footer{background:var(--mox-layer-light-1);color:var(--mox-layer-dark-3);box-shadow:0rem -0.2rem 0rem 0rem var(--mox-layer-light-2)}#footer a{color:var(--mox-layer-dark-1)}",
+   "first_added": "div#side-bar::after{background:url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1) no-repeat local calc(var(--mox-header-height) * -1) / cover !important}#header #search-top-box input.button{background:url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1) no-repeat local calc(var(--mox-header-height)* -2) center / cover !important}a.weditor-bold::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1) no-repeat local calc(-2.3rem* 3) center / cover !important}a.weditor-italic::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1) no-repeat local calc(-2.3rem* 4) center / cover !important}a.weditor-underline::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1) no-repeat local calc(-2.3rem* 22) center / cover !important}a.weditor-strikethrough::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1) no-repeat local calc(-2.3rem* 5) center / cover !important}a.weditor-quote::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1) no-repeat local calc(-2.3rem* 6) center / cover !important}a.weditor-superscript::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1) no-repeat local calc(-2.3rem* 7) center / cover !important}a.weditor-subscript::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1) no-repeat local calc(-2.3rem* 8) center / cover !important}a.weditor-table::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1) no-repeat local calc(-2.3rem* 9) center / cover !important}a.weditor-code::before,a.weditor-codewiz::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1) no-repeat local calc(-2.3rem* 10) center / cover !important}a.weditor-uri::before,a.weditor-uriwiz::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1) no-repeat local calc(-2.3rem* 11) center / cover !important}a.weditor-pagelink::before,a.weditor-pagelinkwiz::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1) no-repeat local calc(-2.3rem* 12) center / cover !important}a.weditor-image::before,a.weditor-imagewiz::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1) no-repeat local calc(-2.3rem* 13) center / cover !important}a.weditor-html::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1) no-repeat local calc(-2.3rem* 14) center / cover !important}a.weditor-numlist::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1) no-repeat local calc(-2.3rem* 15) center / cover !important}a.weditor-bullist::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1) no-repeat local calc(-2.3rem* 15.8) center / cover !important}a.weditor-incindent::before,a.weditor-decindent::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1) no-repeat local calc(-2.3rem* 16) center / cover !important}a.weditor-deflist::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1) no-repeat local calc(-2.3rem* 17) center / cover !important}a.weditor-footnote::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1) no-repeat local calc(-2.3rem* 18) center / cover !important}a.weditor-bib::before,a.weditor-bibcite::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1) no-repeat local calc(-2.3rem* 20.8) center / cover !important}:where(a.weditor-imagewiz,a.weditor-codewiz,a.weditor-uriwiz,a.weditor-pagelinkwiz,a.weditor-incindent,a.weditor-decindent,a.weditor-eqref,a.weditor-bibcite)::after{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1) no-repeat local calc(-2.3rem* 20) center / cover}:where(a.weditor-imagewiz,a.weditor-codewiz,a.weditor-uriwiz,a.weditor-pagelinkwiz,a.weditor-incindent,a.weditor-decindent,a.weditor-eqref,a.weditor-bibcite)::after{background-color:var(--mox-layer-dark-1);background-image:url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1);background-repeat:no-repeat;background-position:left center !important;background-size:cover;background-position:-20.055rem !important;background-origin:content-box}#license-area{color:var(--mox-layer-light-3);background:var(--mox-layer-light-1)}#footer{background:var(--mox-layer-light-1);color:var(--mox-layer-dark-3);box-shadow:0rem -0.2rem 0rem 0rem var(--mox-layer-light-2)}#footer a{color:var(--mox-layer-dark-1)}"
+  },
+  {
+   "id": "B63",
+   "orig_range": [
+    845,
+    846
+   ],
+   "cand_range": [
+    849,
+    850
+   ],
+   "orig_lines": "846-846",
+   "cand_lines": "850-850",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "DRAFT-HOST"
+   ],
+   "primary": "DRAFT-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       849,
+       850
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "    background-image: linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.95) 300vh), url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/madoka-bg.jpg);",
+   "first_added": "    background-image: linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.95) 300vh), url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/madoka-bg.jpg);"
+  },
+  {
+   "id": "B64",
+   "orig_range": [
+    865,
+    866
+   ],
+   "cand_range": [
+    869,
+    870
+   ],
+   "orig_lines": "866-866",
+   "cand_lines": "870-870",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "DRAFT-HOST"
+   ],
+   "primary": "DRAFT-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       869,
+       870
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "div#side-bar::after{background:url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(var(--mox-header-height) * -1) / cover !important}#header #search-top-box input.button{background:url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(var(--mox-header-height)* -2) center / cover !important}a.weditor-bold::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 3) center / cover !important}a.weditor-italic::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 4) center / cover !important}a.weditor-underline::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 22) center / cover !important}a.weditor-strikethrough::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 5) center / cover !important}a.weditor-quote::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 6) center / cover !important}a.weditor-superscript::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 7) center / cover !important}a.weditor-subscript::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 8) center / cover !important}a.weditor-table::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 9) center / cover !important}a.weditor-code::before,a.weditor-codewiz::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 10) center / cover !important}a.weditor-uri::before,a.weditor-uriwiz::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 11) center / cover !important}a.weditor-pagelink::before,a.weditor-pagelinkwiz::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 12) center / cover !important}a.weditor-image::before,a.weditor-imagewiz::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 13) center / cover !important}a.weditor-html::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 14) center / cover !important}a.weditor-numlist::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 15) center / cover !important}a.weditor-bullist::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 15.8) center / cover !important}a.weditor-incindent::before,a.weditor-decindent::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 16) center / cover !important}a.weditor-deflist::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 17) center / cover !important}a.weditor-footnote::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 18) center / cover !important}a.weditor-bib::before,a.weditor-bibcite::before{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 20.8) center / cover !important}:where(a.weditor-imagewiz,a.weditor-codewiz,a.weditor-uriwiz,a.weditor-pagelinkwiz,a.weditor-incindent,a.weditor-decindent,a.weditor-eqref,a.weditor-bibcite)::after{background:var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 20) center / cover}:where(a.weditor-imagewiz,a.weditor-codewiz,a.weditor-uriwiz,a.weditor-pagelinkwiz,a.weditor-incindent,a.weditor-decindent,a.weditor-eqref,a.weditor-bibcite)::after{background-color:var(--mox-layer-dark-1);background-image:url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1);background-repeat:no-repeat;background-position:left center !important;background-size:cover;background-position:-20.055rem !important;background-origin:content-box}#license-area{color:var(--mox-layer-light-3);background:var(--mox-layer-light-1)}#footer{background:var(--mox-layer-light-1);color:var(--mox-layer-dark-3);box-shadow:0rem -0.2rem 0rem 0rem var(--mox-layer-light-2)}#footer a{color:var(--mox-layer-dark-1)}",
+   "first_added": "div#side-bar::after{background:url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1) no-repeat local calc(var(--mox-header-height) * -1) / cover !important}#header #search-top-box input.button{background:url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1) no-repeat local calc(var(--mox-header-height)* -2) center / cover !important}a.weditor-bold::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1) no-repeat local calc(-2.3rem* 3) center / cover !important}a.weditor-italic::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1) no-repeat local calc(-2.3rem* 4) center / cover !important}a.weditor-underline::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1) no-repeat local calc(-2.3rem* 22) center / cover !important}a.weditor-strikethrough::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1) no-repeat local calc(-2.3rem* 5) center / cover !important}a.weditor-quote::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1) no-repeat local calc(-2.3rem* 6) center / cover !important}a.weditor-superscript::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1) no-repeat local calc(-2.3rem* 7) center / cover !important}a.weditor-subscript::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1) no-repeat local calc(-2.3rem* 8) center / cover !important}a.weditor-table::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1) no-repeat local calc(-2.3rem* 9) center / cover !important}a.weditor-code::before,a.weditor-codewiz::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1) no-repeat local calc(-2.3rem* 10) center / cover !important}a.weditor-uri::before,a.weditor-uriwiz::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1) no-repeat local calc(-2.3rem* 11) center / cover !important}a.weditor-pagelink::before,a.weditor-pagelinkwiz::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1) no-repeat local calc(-2.3rem* 12) center / cover !important}a.weditor-image::before,a.weditor-imagewiz::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1) no-repeat local calc(-2.3rem* 13) center / cover !important}a.weditor-html::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1) no-repeat local calc(-2.3rem* 14) center / cover !important}a.weditor-numlist::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1) no-repeat local calc(-2.3rem* 15) center / cover !important}a.weditor-bullist::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1) no-repeat local calc(-2.3rem* 15.8) center / cover !important}a.weditor-incindent::before,a.weditor-decindent::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1) no-repeat local calc(-2.3rem* 16) center / cover !important}a.weditor-deflist::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1) no-repeat local calc(-2.3rem* 17) center / cover !important}a.weditor-footnote::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1) no-repeat local calc(-2.3rem* 18) center / cover !important}a.weditor-bib::before,a.weditor-bibcite::before{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1) no-repeat local calc(-2.3rem* 20.8) center / cover !important}:where(a.weditor-imagewiz,a.weditor-codewiz,a.weditor-uriwiz,a.weditor-pagelinkwiz,a.weditor-incindent,a.weditor-decindent,a.weditor-eqref,a.weditor-bibcite)::after{background:var(--mox-layer-light-1) url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1) no-repeat local calc(-2.3rem* 20) center / cover}:where(a.weditor-imagewiz,a.weditor-codewiz,a.weditor-uriwiz,a.weditor-pagelinkwiz,a.weditor-incindent,a.weditor-decindent,a.weditor-eqref,a.weditor-bibcite)::after{background-color:var(--mox-layer-dark-1);background-image:url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amadoka-jp/icons-1);background-repeat:no-repeat;background-position:left center !important;background-size:cover;background-position:-20.055rem !important;background-origin:content-box}#license-area{color:var(--mox-layer-light-3);background:var(--mox-layer-light-1)}#footer{background:var(--mox-layer-light-1);color:var(--mox-layer-dark-3);box-shadow:0rem -0.2rem 0rem 0rem var(--mox-layer-light-2)}#footer a{color:var(--mox-layer-dark-1)}"
+  }
+ ],
+ "derived_presence": {},
+ "summary": {
+  "blocks": 64,
+  "specific": 41,
+  "heuristic": 23,
+  "residue": 0,
+  "skipped": 0,
+  "reindent_blocks": 0,
+  "label_counts": {
+   "DELIVERY-HOST": 2,
+   "DRAFT-HOST": 24,
+   "SELF-DELIVERY": 2,
+   "IFTAGS": 1,
+   "TRANS-UNANCHORED": 22,
+   "CREDIT-PREVIEW": 1,
+   "CREDIT-PROSE": 1,
+   "TASL-FIELDS": 1,
+   "LINK-REPOINT": 1,
+   "TRANSLATION-ANCHORED": 14,
+   "COMPONENT-SWAP": 1,
+   "INCLUDE-REPOINT": 1,
+   "GLYPH-FORM": 1,
+   "COMMENT-TEXT": 6,
+   "CSS-BODY": 3,
+   "JPFONT-LOAD": 1,
+   "CONTENT-STRING": 1
+  }
+ },
+ "residue": [],
+ "skeleton": {
+  "sha256": "4b521cf5ab2f73c2974e466fa3396832b764da0155454f24c0873d879e04964d",
+  "status": "written (new)"
+ }
+}

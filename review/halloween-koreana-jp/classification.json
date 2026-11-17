@@ -1,0 +1,506 @@
+{
+ "tool": "classify_hunks.py",
+ "classifier_version": "0.1.0",
+ "signature_table_version": "2026-11-17.1",
+ "theme": {
+  "dir": "halloween-koreana-jp",
+  "cand_fullname": "theme:halloween-koreana-jp",
+  "orig_fullname": "theme:halloween-koreana",
+  "wiki": "scpko",
+  "revision": "35",
+  "kind": "standard",
+  "verdict": "PASS",
+  "original_file": "review/halloween-koreana-jp/original.txt",
+  "candidate_file": "review/halloween-koreana-jp/candidate.txt",
+  "original_sha256": "853391c38017816e811d06166a34cca4665fe66b9d0d6b06690061f857bc528d",
+  "candidate_sha256": "4dcb0c71bd04c54063eb7dd4ee3c6bfe7fc5e17eb5bc55809d6215d6cb04ceb3",
+  "original_lines": 49,
+  "candidate_lines": 55
+ },
+ "topology": {
+  "original_components": [
+   {
+    "kind": "code-css",
+    "range": [
+     1,
+     42
+    ],
+    "lines": 41
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     46,
+     49
+    ],
+    "lines": 3
+   }
+  ],
+  "candidate_components": [
+   {
+    "kind": "code-css",
+    "range": [
+     21,
+     48
+    ],
+    "lines": 27
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     52,
+     55
+    ],
+    "lines": 3
+   }
+  ],
+  "moves": [],
+  "external_own_delivery": true
+ },
+ "blocks": [
+  {
+   "id": "B1",
+   "orig_range": [
+    0,
+    1
+   ],
+   "cand_range": [
+    0,
+    21
+   ],
+   "orig_lines": "1-1",
+   "cand_lines": "1-21",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "CREDIT-PREVIEW",
+    "DRAFT-HOST",
+    "IFTAGS",
+    "SELF-DELIVERY",
+    "TASL-FIELDS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "CREDIT-PREVIEW",
+   "primary_section": 1,
+   "label_prec": {
+    "CREDIT-PREVIEW": "A",
+    "TASL-FIELDS": "A",
+    "IFTAGS": "A",
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "CREDIT-PREVIEW": {
+     "cand": [
+      [
+       7,
+       8
+      ],
+      [
+       16,
+       17
+      ]
+     ]
+    },
+    "TASL-FIELDS": {
+     "cand": [
+      [
+       8,
+       16
+      ]
+     ]
+    },
+    "IFTAGS": {
+     "orig": [
+      [
+       0,
+       1
+      ]
+     ],
+     "cand": [
+      [
+       5,
+       6
+      ]
+     ]
+    },
+    "SELF-DELIVERY": {
+     "orig": [],
+     "cand": [
+      [
+       2,
+       3
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       2,
+       3
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "class (iii) draft-stage form",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[iftags +테마]]",
+   "first_added": "[[include :scp-jp:component:interwiki-style"
+  },
+  {
+   "id": "B2",
+   "orig_range": [
+    2,
+    3
+   ],
+   "cand_range": [
+    22,
+    23
+   ],
+   "orig_lines": "3-3",
+   "cand_lines": "23-23",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "FONT-IMPORT"
+   ],
+   "primary": "FONT-IMPORT",
+   "primary_section": 4,
+   "label_prec": {
+    "FONT-IMPORT": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "FONT-IMPORT": {
+     "orig": [],
+     "cand": [
+      [
+       22,
+       23
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "the deciding evidence is the load probe (KB-04)"
+   ],
+   "partial_notes": [
+    "BASE-DELIVERY/CROSS-IMPORT? component:theme (include graph needed to decide base vs cross)"
+   ],
+   "first_removed": "@import url('https://scpko.wikidot.com/component:theme/code/1');",
+   "first_added": "@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&family=Yuji+Syuku&display=swap');"
+  },
+  {
+   "id": "B3",
+   "orig_range": [
+    4,
+    9
+   ],
+   "cand_range": [
+    24,
+    26
+   ],
+   "orig_lines": "5-9",
+   "cand_lines": "25-26",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DRAFT-HOST"
+   ],
+   "primary": "DRAFT-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       25,
+       26
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "@font-face {",
+   "first_added": "div#container-wrap {"
+  },
+  {
+   "id": "B4",
+   "orig_range": [
+    11,
+    23
+   ],
+   "cand_range": [
+    28,
+    29
+   ],
+   "orig_lines": "12-23",
+   "cand_lines": "29-29",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "@font-face {",
+   "first_added": "/* ヘッダー */"
+  },
+  {
+   "id": "B5",
+   "orig_range": [
+    28,
+    30
+   ],
+   "cand_range": [
+    34,
+    36
+   ],
+   "orig_lines": "29-30",
+   "cand_lines": "35-36",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DRAFT-HOST",
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "DRAFT-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A",
+    "COMMENT-TEXT": "C",
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       35,
+       36
+      ]
+     ]
+    },
+    "COMMENT-TEXT": {},
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "class (iii) draft-stage form",
+    "porter-visible only; labeled and skipped by design",
+    "anchored pairs 1/2"
+   ],
+   "partial_notes": [],
+   "first_removed": "    /* FOR MENU */",
+   "first_added": "    /* メニュー用 */"
+  },
+  {
+   "id": "B6",
+   "orig_range": [
+    34,
+    35
+   ],
+   "cand_range": [
+    40,
+    41
+   ],
+   "orig_lines": "35-35",
+   "cand_lines": "41-41",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "CSS-BODY"
+   ],
+   "primary": "CSS-BODY",
+   "primary_section": 8,
+   "label_prec": {
+    "CSS-BODY": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "CSS-BODY": {}
+   },
+   "notes": [
+    "no other signature matched"
+   ],
+   "partial_notes": [],
+   "first_removed": "    font-family: '열사체', sans-serif;",
+   "first_added": "    font-family: 'New Tegomin', 'Yu Mincho', 'Hiragino Mincho ProN', serif;"
+  },
+  {
+   "id": "B7",
+   "orig_range": [
+    39,
+    40
+   ],
+   "cand_range": [
+    45,
+    46
+   ],
+   "orig_lines": "40-40",
+   "cand_lines": "46-46",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "CSS-BODY"
+   ],
+   "primary": "CSS-BODY",
+   "primary_section": 8,
+   "label_prec": {
+    "CSS-BODY": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "CSS-BODY": {}
+   },
+   "notes": [
+    "no other signature matched"
+   ],
+   "partial_notes": [],
+   "first_removed": "    font-family: '정선아리랑뿌리체', sans-serif;",
+   "first_added": "    font-family: 'Yuji Syuku', 'Yu Mincho', 'Hiragino Mincho ProN', serif;"
+  },
+  {
+   "id": "B8",
+   "orig_range": [
+    47,
+    48
+   ],
+   "cand_range": [
+    53,
+    54
+   ],
+   "orig_lines": "48-48",
+   "cand_lines": "54-54",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-HOST",
+    "DRAFT-HOST",
+    "SELF-DELIVERY"
+   ],
+   "primary": "DELIVERY-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-HOST": "A",
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DELIVERY-HOST": {
+     "orig": [
+      [
+       47,
+       48
+      ]
+     ],
+     "cand": [
+      [
+       53,
+       54
+      ]
+     ]
+    },
+    "SELF-DELIVERY": {
+     "orig": [
+      [
+       47,
+       48
+      ]
+     ],
+     "cand": [
+      [
+       53,
+       54
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       53,
+       54
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "@import url('https://scpko.wikidot.com/theme:halloween-koreana/code/1');",
+   "first_added": "@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Ahalloween-koreana-jp/1');"
+  }
+ ],
+ "derived_presence": {},
+ "summary": {
+  "blocks": 8,
+  "specific": 5,
+  "heuristic": 3,
+  "residue": 0,
+  "skipped": 0,
+  "reindent_blocks": 0,
+  "label_counts": {
+   "CREDIT-PREVIEW": 1,
+   "DRAFT-HOST": 4,
+   "IFTAGS": 1,
+   "SELF-DELIVERY": 2,
+   "TASL-FIELDS": 1,
+   "TRANS-UNANCHORED": 2,
+   "FONT-IMPORT": 1,
+   "COMMENT-TEXT": 2,
+   "TRANSLATION-ANCHORED": 1,
+   "CSS-BODY": 2,
+   "DELIVERY-HOST": 1
+  }
+ },
+ "residue": [],
+ "skeleton": {
+  "sha256": "3c010a3ac6a2a77a10ddae30a5c7a46205570f72e3bfa91f90781fe309dc2381",
+  "status": "written (new)"
+ }
+}

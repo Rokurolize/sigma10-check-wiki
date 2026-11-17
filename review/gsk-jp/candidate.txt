@@ -1,0 +1,600 @@
+[[include :scp-jp:theme:black-highlighter-theme]]
+
+[[module CSS]]
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Ajakstyle-jp/1');
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Agsk-jp/1');
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css
+]]
+[[include :scp-jp:component:interwiki-style
+| priority=2
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css
+]]
+[[include :scp-jp:component:interwiki-style
+| priority=3
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Ajakstyle-jp/1
+]]
+[[include :scp-jp:component:interwiki-style
+| priority=4
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Agsk-jp/1
+]]
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** GSKプロジェクト テーマ
+**翻訳責任者:** AI
+**翻訳年:** 2026
+**原題:** GSK项目主题版式
+**著作権者:** 原語版ページの作成者に同じ（scp-wiki-cn の theme:gsk）
+**作成年:** 2022
+**初訳時参照リビジョン:** 7
+**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:gsk GSK项目主题版式]
+[[include :scp-jp:credit:end-preview]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=2
+| override=1
+| type=sidebar
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css
+]]
+
+**評価:**
+
+**評価モジュールと著作情報モジュール:**
+
+これは[[[theme:black-highlighter-theme|Black Highlighter]]]および[[[theme:jakstyle|JAKSTYLE]]]を基にしたCSSです。使いたい場所で自由に利用できます。
+主に[[[gsk-center|GSKプロジェクト]]]と[[[site-514|Site-514]]]で使うためのテーマです。
+このテーマを適用するには、作品の冒頭に次の構文を追加してください。
+
+> //訳注: 原語版はここに CN のフェードイン用コンポーネントの include 例を掲載しています。SCP-JP には無いため省略しています。//
+> [[include :scp-jp:theme:black-highlighter-theme]]
+> [[include :scp-jp:theme:jakstyle]]
+> [[include :scp-jp:theme:gsk-jp]]
+
+//訳注: 原語版はここに CN のフェードイン用コンポーネント（CN 側のフェードイン用コンポーネント）の include 例を掲載しています。SCP-JP には同コンポーネントが無いため省略しています。// 原語版では speed の値で表示時間を調整できます。
+
++ 例
+
+[[include component:image-block name=https://sigma10-jp-test.wdfiles.com/local--files/theme%3Agsk-jp/site-logo.png|caption=GSKプロジェクトのロゴ|width=200px]]
+
+水平分割線は5つのハイフン「@@-----@@」で作成できます。引用ブロックなどの部品の中に置かれていなければ、ページの左右いっぱいまで伸びます。このように文書を複数の部分へ区切る線が分割線です。[[footnote]]これは脚注です[[/footnote]]
+
+[https://www.google.com おそらく一度はアクセスしたことのあるリンクです。たぶん。]
+
+見出しは、行頭に1個から6個のプラス記号「+」を入力すると作成できます。
+
+[[collapsible show="+ 見出し" hide="- 見出し"]]
++ レベル1見出し
+
+++ レベル2見出し
+
++++ レベル3見出し
+
+++++ レベル4見出し
+
++++++ レベル5見出し
+
+++++++ レベル6見出し
+[[/collapsible]]
+
+@@ @@
+
+[[tabview]]
+[[tab タブ]]
+シャベルの何がそんなに特別なのですか？
+
+画期的な発明だからです。
+[[/tab]]
+[[tab タブ]]
+さらに文章。
+
+なんとも精巧です。
+[[/tab]]
+[[tab 長いタブ]]
+これは長いタブです。たくさんの文章があります。
+
+これは長いタブです。たくさんの文章があります。
+
+これは長いタブです。たくさんの文章があります。
+
+これは長いタブです。たくさんの文章があります。
+
+これは長いタブです。たくさんの文章があります。
+
+これは長いタブです。たくさんの文章があります。
+
+これは長いタブです。たくさんの文章があります。
+
+これは長いタブです。たくさんの文章があります。
+
+これは長いタブです。たくさんの文章があります。
+
+これは長いタブです。たくさんの文章があります。
+
+これは長いタブです。たくさんの文章があります。
+[[/tab]]
+[[tab これは本当に名前がとても長いタブです。]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[/tabview]]
+@@ @@
+> これは引用ブロックです。行頭に「> 」を付けると作成できます。
+>
+> さらに文章
+> -----
+> 分割線
+>
+>> ネストした引用ブロック
+
+||~ これは ||~ 表です ||
+|| あなたはもう || 作り方を ||
+|||| 知っているはずです ||
+
+@@ @@
+@@ @@
+@@ @@
++ 高度な構文とコンポーネントのプレビューと改善
+
++++++ ここでは大半の書式をプレビューでき、便利なコンポーネントもいくつか見つけられます
++++++ 詳細: （原語版の sandbox ページ）
+
+大半は私たちのオリジナルではないため、サンドボックスページに置いてあります。
+コードはガイドセンターの次のページに由来します。
+Wikidot構文: http://scp-jp.wikidot.com/wiki-syntax
+SCP書式リソース: http://scp-jp.wikidot.com/scp-style-resource
+
+@@ @@
+
+[[collapsible show="+ ページソース" hide="- 隠す"]]
+//訳注: 原語版はここに CN のフェードイン用コンポーネント（CN 側のフェードイン用コンポーネント）の include 例を掲載しています。SCP-JP には同コンポーネントが無いため省略しています。//
+@@[[include :scp-jp:theme:black-highlighter-theme]]@@
+@@[[include :scp-jp:theme:jakstyle]]@@
+[[/collapsible]]
+
++ ソースコード
+
+[[collapsible show="> コードを表示" hide="> コードを閉じる"]]
+[[code type="css"]]
+/*
+    GSK项目主题版式 / GSK Project Theme
+    Ported for SCP-JP (theme:gsk rev 7 on scp-wiki-cn).
+    基盤（CN theme:jakstyle、code file 1・2）は theme:jakstyle-jp の code file を @import で読み込みます
+    （このファイルには GSK 固有のカスタマイズのみを収録しています）。BHL は scp-jp.github.io の配信に置換。
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
+
+
+/* ===== gsk ===== */
+:root {
+    --header-title: "GSK Project";
+    --header-subtitle: "Supervise, Cooperation, Protect";     
+    /* 这里的和上一行只有英文阅读者才能看到 */
+    
+    --dark-accent: 26, 26, 26;
+    --pale-accent: 94, 219, 148;
+    --bright-accent: 94, 219, 148;
+    --light-gray-monochrome: 152, 154, 162;
+    --dark-gray-monochrome: 26, 26, 26;
+    --black-monochrome: 26, 26, 26;
+    --medium-accent: 228, 228, 228;
+    --tab-border-color: 94, 219, 148;
+    --rating-module-button-color: 94, 219, 148;
+    --rating-module-button-credit-color: 94, 219, 148;
+    --swatch-background: var(--dark-accent);
+    --swatch-menutxt-general-color: 94, 219, 148;
+    --swatch-menubg-black-color: var(--dark-gray-monochrome);
+    --barColour: var(--dark-accent);
+    /* 主题颜色设置 */
+
+     --header-height-on-desktop: 12.4rem;
+     --header-height-on-mobile: 12rem;
+
+    /* 这里是LOGO */
+    --logo-image: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Agsk-jp/site-logo.png');
+    --logo-image-size: 200px auto;
+    --lgurl: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Agsk-jp/site-logo.png');
+    --accentColor: 30,181,232;
+    --ui-wght: 800;
+    --ui-hvr-wght: 500;
+    
+    /* 背景和标题颜色 */
+    --background-color: var(--dark-accent);
+    
+    /* 主要文本颜色 */
+    --swatch-text-light: 228, 228, 228;
+    --swatch-text-general: 228, 228, 228;
+    
+    /* 主菜单颜色 */
+    --swatch-menubg-color: var(--dark-accent);
+    
+    /* 二级和三级项目的颜色，如 Blockquote 和 UI Tabs */
+    --swatch-secondary-color: var(--swatch-menubg-dark-color);
+    --swatch-tertiary-color: var(--swatch-menubg-medium-dark-color);
+    --swatch-alternate-color: var(--swatch-menubg-medium-color);
+    --sidebar-links-hover-text-color: var(--dark-accent);
+     
+    /* 辅助和第三项的文本颜色，例如侧边栏标题和顶栏菜单文本 */
+    --swatch-text-tertiary-color: var(--swatch-menutxt-light-color);
+ 
+    /* 主要标题颜色 */
+    --swatch-topmenu-border-color: 94, 219, 148;
+    --swatch-topmenu-bg-color: var(--swatch-menubg-extra-dark-color);
+ 
+    --rating-module-text-color: 94, 219, 148;
+    --rating-module-button-cancel-color: 94, 219, 148;
+    ;
+ 
+    --gradient-header: linear-gradient(to bottom,
+            rgb(94, 219, 148) 0%,
+            rgb(94, 219, 148) 90%,
+            rgb(94, 219, 148) 100%);
+ 
+    --diagonal-stripes: repeating-linear-gradient(45deg,
+            hsla(0, 0%, 100%, 0),
+            hsla(0, 0%, 100%, 0) 0.25vh,
+            rgba(var(--swatch-menubg-extra-dark-color), 0.1) 0.35vh,
+            rgba(var(--swatch-menubg-extra-dark-color), 0.2) 0.5vh);
+ 
+  /* 侧边栏按钮 */
+  --toggle-button-bg: ;
+  --toggle-border-width: 0;
+  --toggle-icon-color: rgb(94, 219, 148);
+  --toggle-roundness: 0;
+}
+
+
+
+:root:lang(cn) {
+    --header-title: "GSK项目";
+    --header-subtitle: "监视，合作，保护";
+    --logo-image: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Agsk-jp/site-logo.png');
+    --logo-image-size: 200px auto;
+    --lgurl: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Agsk-jp/site-logo.png');
+    --accentColor: 30,181,232;
+     --ui-wght: 800;
+    --ui-hvr-wght: 500;
+    /* ↑这里是LOGO和标题，防止加载不出，再来一次↑ */
+
+    --body-font: 'Times New Roman', '黑体';
+    --header-font: 'Times New Roman', '黑体';
+    --title-font: 'Times New Roman', '黑体';
+    --mono-font: 'Times New Roman', '黑体';
+    --UI-font: 'Times New Roman', '黑体';
+    
+    --swatch-text-light: 228, 228, 228;
+    --swatch-text-general: 228, 228, 228;
+}
+    /* ↑这里是页面标题（中文）↑ */
+
+
+#extra-div-1 {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--header-height-on-desktop);
+    pointer-events: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+    /* ↑这里是替换banner图片↑ */
+
+body {
+    color: #e4e4e4;
+}
+blockquote {
+    color: #e4e4e4
+}
+/* ↑正文颜色↑ */
+
+.yui-navset .yui-nav .selected a {
+    border-color: #e4e4e4;
+    color: rgb(var(--dark-accent)) !important;
+}
+.yui-navset .yui-content,
+.yui-navset .yui-navset-top .yui-content {
+    background: rgb(var(--dark-accent));
+    color: #e4e4e4;
+}
+.yui-navset-bottom .yui-nav li a,
+.yui-navset-top .yui-nav li a,
+.yui-navset .yui-nav li a {
+    background: rgb(var(--dark-gray-monochrome));
+    color: #e4e4e4;
+}
+/* ↑tab栏颜色↑ */
+
+    a.footnoteref {
+        padding: 0.05em;
+        color: rgb(var(--swatch-primary));
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+        box-shadow: inset 0 0 0 0rem rgba(var(--swatch-primary), 1);
+        transition:
+            box-shadow 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            color 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            padding 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            margin 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+    }
+     a.footnoteref:hover {
+        box-shadow: inset 0 -1.25em 0 0 rgba(var(--swatch-primary), 1);
+        text-decoration: none;
+        color: rgb(var(--black-monochrome))
+    }
+     .footnotes-footer a[href*="javascript"]::before,
+    .bibitems .bibitem::after,
+    .footnotes-footer {
+        background-color: rgb(var(--black-monochrome));
+    }
+/* ↑脚注颜色↑ */
+
+#page-content div.b-tables table.wiki-content-table td, #page-content div.b-tables table.wiki-content-table th, #page-content table.wiki-content-table td, #page-content table.wiki-content-table th {
+    border: .0625rem solid rgb(80, 58, 246) !important;
+}
+ 
+#page-content div.b-tables table.wiki-content-table th, #page-content table.wiki-content-table th {
+    background: rgb(80, 58, 246);
+}
+/* ↑表格颜色↑ */
+
+    #header::before {
+    background-image: var(--lgurl);
+    background-size: 15rem;
+    background-position-y: -2.5rem;
+    opacity: 0.20;
+    }
+    #header h1,
+    #header h1 a {
+    },
+        #header h1 a::before {
+        opacity: 1;
+    }
+    #header h1 a::after {
+        opacity: 1;
+    }
+    #header h2,
+    #header h2 span{
+    },
+    #header h2 apan::before {
+       opacity: 1;
+    }
+    #header h2 apan::after {
+       opacity: 1;
+    }
+    /* ↑标题偏移↑ */
+
+/* ===== page modules ===== */
+/* page module css */
+
+
+
+/* page module css */
+
+
+/* page module css */
+:root {
+    --header-title: "GSK Project";
+    --header-subtitle: "Supervise, Cooperation, Protect";     
+    /* 这里的和上一行只有英文阅读者才能看到 */
+
+    --dark-accent: 26, 26, 26;
+    --pale-accent: 94, 219, 148;
+    --bright-accent: 94, 219, 148;
+    --light-gray-monochrome: 152, 154, 162;
+    --dark-gray-monochrome: 26, 26, 26;
+    --black-monochrome: 26, 26, 26;
+    --medium-accent: 228, 228, 228;
+    --tab-border-color: 94, 219, 148;
+    --rating-module-button-color: 94, 219, 148;
+    --rating-module-button-credit-color: 94, 219, 148;
+    --swatch-background: var(--dark-accent);
+    --swatch-menutxt-general-color: 94, 219, 148;
+    --swatch-menubg-black-color: var(--dark-gray-monochrome);
+    --barColour: var(--dark-accent);
+    /* 主题颜色设置 */
+
+     --header-height-on-desktop: 12.4rem;
+     --header-height-on-mobile: 12rem;
+
+    /* 这里是LOGO */
+    --logo-image: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Agsk-jp/site-logo.png');
+    --logo-image-size: 200px auto;
+    --lgurl: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Agsk-jp/site-logo.png');
+    --accentColor: 30,181,232;
+    --ui-wght: 800;
+    --ui-hvr-wght: 500;
+
+    /* 背景和标题颜色 */
+    --background-color: var(--dark-accent);
+
+    /* 主要文本颜色 */
+    --swatch-text-light: 228, 228, 228;
+    --swatch-text-general: 228, 228, 228;
+
+    /* 主菜单颜色 */
+    --swatch-menubg-color: var(--dark-accent);
+
+    /* 二级和三级项目的颜色，如 Blockquote 和 UI Tabs */
+    --swatch-secondary-color: var(--swatch-menubg-dark-color);
+    --swatch-tertiary-color: var(--swatch-menubg-medium-dark-color);
+    --swatch-alternate-color: var(--swatch-menubg-medium-color);
+    --sidebar-links-hover-text-color: var(--dark-accent);
+
+    /* 辅助和第三项的文本颜色，例如侧边栏标题和顶栏菜单文本 */
+    --swatch-text-tertiary-color: var(--swatch-menutxt-light-color);
+
+    /* 主要标题颜色 */
+    --swatch-topmenu-border-color: 94, 219, 148;
+    --swatch-topmenu-bg-color: var(--swatch-menubg-extra-dark-color);
+
+    --rating-module-text-color: 94, 219, 148;
+    --rating-module-button-cancel-color: 94, 219, 148;
+    ;
+
+    --gradient-header: linear-gradient(to bottom,
+            rgb(94, 219, 148) 0%,
+            rgb(94, 219, 148) 90%,
+            rgb(94, 219, 148) 100%);
+
+    --diagonal-stripes: repeating-linear-gradient(45deg,
+            hsla(0, 0%, 100%, 0),
+            hsla(0, 0%, 100%, 0) 0.25vh,
+            rgba(var(--swatch-menubg-extra-dark-color), 0.1) 0.35vh,
+            rgba(var(--swatch-menubg-extra-dark-color), 0.2) 0.5vh);
+
+  /* 侧边栏按钮 */
+  --toggle-button-bg: ;
+  --toggle-border-width: 0;
+  --toggle-icon-color: rgb(94, 219, 148);
+  --toggle-roundness: 0;
+}
+
+
+
+:root:lang(cn) {
+    --header-title: "GSK项目";
+    --header-subtitle: "监视，合作，保护";
+    --logo-image: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Agsk-jp/site-logo.png');
+    --logo-image-size: 200px auto;
+    --lgurl: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Agsk-jp/site-logo.png');
+    --accentColor: 30,181,232;
+     --ui-wght: 800;
+    --ui-hvr-wght: 500;
+    /* ↑这里是LOGO和标题，防止加载不出，再来一次↑ */
+
+    --body-font: 'Times New Roman', '黑体';
+    --header-font: 'Times New Roman', '黑体';
+    --title-font: 'Times New Roman', '黑体';
+    --mono-font: 'Times New Roman', '黑体';
+    --UI-font: 'Times New Roman', '黑体';
+
+    --swatch-text-light: 228, 228, 228;
+    --swatch-text-general: 228, 228, 228;
+}
+    /* ↑这里是页面标题（中文）↑ */
+
+
+#extra-div-1 {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--header-height-on-desktop);
+    pointer-events: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+    /* ↑这里是替换banner图片↑ */
+
+body {
+    color: #e4e4e4;
+}
+blockquote {
+    color: #e4e4e4
+}
+/* ↑正文颜色↑ */
+
+.yui-navset .yui-nav .selected a {
+    border-color: #e4e4e4;
+    color: rgb(var(--dark-accent)) !important;
+}
+.yui-navset .yui-content,
+.yui-navset .yui-navset-top .yui-content {
+    background: rgb(var(--dark-accent));
+    color: #e4e4e4;
+}
+.yui-navset-bottom .yui-nav li a,
+.yui-navset-top .yui-nav li a,
+.yui-navset .yui-nav li a {
+    background: rgb(var(--dark-gray-monochrome));
+    color: #e4e4e4;
+}
+/* ↑tab栏颜色↑ */
+
+    a.footnoteref {
+        padding: 0.05em;
+        color: rgb(var(--swatch-primary));
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+        box-shadow: inset 0 0 0 0rem rgba(var(--swatch-primary), 1);
+        transition:
+            box-shadow 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            color 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            padding 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+            margin 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+    }
+     a.footnoteref:hover {
+        box-shadow: inset 0 -1.25em 0 0 rgba(var(--swatch-primary), 1);
+        text-decoration: none;
+        color: rgb(var(--black-monochrome))
+    }
+     .footnotes-footer a[href*="javascript"]::before,
+    .bibitems .bibitem::after,
+    .footnotes-footer {
+        background-color: rgb(var(--black-monochrome));
+    }
+/* ↑脚注颜色↑ */
+
+#page-content div.b-tables table.wiki-content-table td, #page-content div.b-tables table.wiki-content-table th, #page-content table.wiki-content-table td, #page-content table.wiki-content-table th {
+    border: .0625rem solid rgb(80, 58, 246) !important;
+}
+
+#page-content div.b-tables table.wiki-content-table th, #page-content table.wiki-content-table th {
+    background: rgb(80, 58, 246);
+}
+/* ↑表格颜色↑ */
+
+    #header::before {
+    background-image: var(--lgurl);
+    background-size: 15rem;
+    background-position-y: -2.5rem;
+    opacity: 0.20;
+    }
+    #header h1,
+    #header h1 a {
+    },
+        #header h1 a::before {
+        opacity: 1;
+    }
+    #header h1 a::after {
+        opacity: 1;
+    }
+    #header h2,
+    #header h2 span{
+    },
+    #header h2 apan::before {
+       opacity: 1;
+    }
+    #header h2 apan::after {
+       opacity: 1;
+    }
+    /* ↑标题偏移↑ */
+[[/code]]
+[[/collapsible]]
+
+[[include :scp-jp:component:license-box-backend
+|author=scp-wiki-cn theme:gsk の作者]]
+
+> **画像・フォントの出典:** 原語版の theme:gsk の記載に従います。sandbox 等の外部ホストの添付は候補ページに再ホストしています。原語版にライセンス表記が無い画像は、投稿前に著者へ確認してください。
+
+[[include :scp-jp:component:license-box-end]]
+
+[[/iftags]]

@@ -1,0 +1,230 @@
+[[iftags +테마]]
+[[>]]
+[[module Rate]]
+[[/>]]
+[[include info:start]]
+**재단지 테마**
+**저자:** [[*user Denevola]]
+[[include info:end]]
+SCP 재단 한국어 위키 [[[news|이달의 소식]]]을 위한 전용 테마입니다.
+테마의 로고[[footnote]] Created by [[user Denevola]], [https://creativecommons.org/licenses/by-sa/3.0/deed.ko CC BY-SA 3.0] [[/footnote]]는 [https://commons.wikimedia.org/wiki/File:SCP_Foundation_(emblem).svg SCP 재단 엠블럼][[footnote]] Designed by [[user Aelanna]], [https://creativecommons.org/licenses/by-sa/3.0/deed.ko CC BY-SA 3.0] [[/footnote]]과 [https://thenounproject.com/term/newspaper/1858229/ 신문 아이콘][[footnote]] Created by [https://thenounproject.com/vectorstall/ Vectorstall], [https://creativecommons.org/licenses/by/3.0/deed.ko CC BY 3.0] [[/footnote]]을 조합해 만들어졌습니다.
+
+++ 사용법
+본 테마를 적용할 페이지 상단에 다음 구문을 붙여넣으세요.
+[[div class="code"]]
+@@[[include :scpko:theme:foundation-paper]]@@
+[[/div]]
+
+++ 사용례
+수평줄은 하이픈 5개 "@@------@@"를 치면 만들어지며, 따로 들어 있는 곳 (인용 블록 등) 이 없다면 페이지 전체를 가로지릅니다. 이 글에서 섹션을 나누는 줄은 모두 이 수평줄입니다.
+
+-----
+
+제목은 문장 처음에 "+"을 1개부터 6개까지 입력해서 적용할 수 있습니다.
+
+[[collapsible show="▼ 제목들" hide="▲ 닫기"]]
++ 제목 1단계
+
+++ 제목 2단계
+
++++ 제목 3단계
+
+++++ 제목 4단계
+
++++++ 제목 5단계
+
+++++++ 제목 6단계
+[[/collapsible]]
+
+@@ @@
+
+[[tabview]]
+[[tab 탭 뷰]]
+첫 탭은 '사이트 소식'이 올 자리로, 아이콘이 미리 설정되어 있습니다.
++++ 주제
+탭 뷰 속에 제목 3단계,,(@@+++ 텍스트@@),,를 삽입해 만듭니다.
+* **작품 블록**
+* 탭 뷰 속에 목록,,(@@* 텍스트@@),,을 삽입해 만듭니다.
+[[/tab]]
+[[tab 탭 뷰]]
+둘째 탭은 '이달의 새 작품'이 올 자리로, 아이콘이 미리 설정되어 있습니다.
+[[/tab]]
+[[tab 탭 뷰]]
+셋째 탭은 '프로젝트'가 올 자리로, 아이콘이 미리 설정되어 있습니다.
+[[/tab]]
+[[tab 탭 뷰]]
+넷째 탭부터는 별도로 설정된 아이콘이 없습니다.
+[[/tab]]
+[[tab 빈 탭]]
+[[/tab]]
+[[tab 빈 탭]]
+[[/tab]]
+[[tab 빈 탭]]
+[[/tab]]
+[[tab 빈 탭]]
+[[/tab]]
+[[tab 빈 탭]]
+𝐍𝐄𝐖𝐒
+[[/tab]]
+[[/tabview]]
+
+> 이것은 인용구로 각 줄의 시작에 ">"를 넣으면 작동합니다.
+>
+> 글자
+> -----
+> 구분선
+>
+>> 이중 인용문
+>>> 삼중 인용문[[footnote]] 그리고 이건 각주! [[/footnote]]
+
+||~ 이것은 ||~ 표 ||
+|| 만드는 법은 || 이미 아실 거라 ||
+|||| 생각합니다 ||
+[[/iftags]]
+
+[[div [[iftags -테마]]style="display: none"[[/iftags]]]]
+++ 소스 코드
+[[collapsible show="+ 코드 보이기" hide="-코드 숨기기"]]
+[[include :scpko:component:toggle-sidebar]]
+[[module CSS show="true"]]
+/*
+    Foundation Paper Theme
+    [2021 Wikidot Theme]
+    Created by Denevola.
+    Based on Sigma-9 Theme created by Aelanna and Dr Devan.
+*/
+
+#header {
+    background-image: url('https://scpko.wdfiles.com/local--files/theme%3Afoundation-paper/logo.min.svg');
+}
+
+#header h1 a {
+    visibility: hidden;
+}
+
+#header h1 a::before {
+    visibility: visible;
+    content: 'SCP 뉴스';
+}
+
+#header h2 span {
+    visibility: hidden;
+}
+
+#header h2 span::before {
+    visibility: visible;
+    content: '신속, 정확, 신뢰';
+}
+
+#page-title {
+    display: none;
+}
+
+#page-content {
+    font-size: 1.1em;
+}
+
+#page-content img.image {
+    border: 2px solid white;
+    border-radius: .5em;
+    box-shadow: rgba(0, 0, 0, .35) 0 5px 15px;
+}
+
+#page-content img.image + br + [style="text-align: right;"] > p > sup {
+    opacity: .5;
+}
+
+.yui-navset .yui-nav,
+.yui-navset .yui-navset-top .yui-nav {
+    text-align: center;
+}
+
+.yui-navset .yui-nav li em::before {
+    margin-right: .5em;
+    font-family: 'FontAwesome';
+}
+
+.yui-navset .yui-nav li:nth-child(1) em::before {
+    content: '\f024';
+}
+
+.yui-navset .yui-nav li:nth-child(2) em::before {
+    content: '\f02d';
+}
+
+.yui-navset .yui-nav li:nth-child(3) em::before {
+    content: '\f135';
+}
+
+.yui-navset .yui-content,
+.yui-navset .yui-navset-top .yui-content {
+    padding: 1em 2em;
+    border-width: 1px 0 1px 0;
+    box-shadow: rgba(0, 0, 0, .35) 0 2px 5px;
+}
+
+.yui-navset .yui-content li,
+.yui-navset .yui-navset-top .yui-content li,
+.yui-navset .yui-content p,
+.yui-navset .yui-navset-top .yui-content p {
+    line-height: 160%
+}
+
+.yui-navset .yui-content li:not(:last-child),
+.yui-navset .yui-navset-top .yui-content li:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+.yui-navset .yui-content h3,
+.yui-navset .yui-navset-top .yui-content h3 {
+    display: inline-block;
+    position: relative;
+    margin-top: 2em;
+    margin-bottom: 0;
+    padding: .5rem;
+    background-color: rgb(119, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.yui-navset .yui-content h3::after,
+.yui-navset .yui-navset-top .yui-content h3::after {
+    position: absolute;
+    top: 0;
+    right: -2rem;
+    width: 2rem;
+    height: 100%;
+    background-color: rgb(119, 0, 0);
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+    content: '';
+}
+
+.yui-navset .yui-content ul,
+.yui-navset .yui-navset-top .yui-content ul {
+    padding: 1em 1em 1em 40px;
+    background-color: rgba(0, 0, 0, .06);
+}
+
+.footnotes-footer {
+    margin-top: 1em;
+    padding: 1em 2em 2em;
+    background-color: rgb(245, 245, 245);
+    border-color: rgb(128, 128, 128);
+    border-style: solid;
+    border-width: 1px 0;
+}
+
+@media (min-width: 768px) {
+    #main-content {
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 767px) {
+    .yui-navset .yui-content,
+    .yui-navset .yui-navset-top .yui-content {
+        box-shadow: none;
+    }
+}
+[[/module]]
+[[/collapsible]]
+[[/div]]

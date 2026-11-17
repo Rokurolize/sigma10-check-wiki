@@ -1,0 +1,2582 @@
+{
+ "tool": "classify_hunks.py",
+ "classifier_version": "0.1.0",
+ "signature_table_version": "2026-11-17.1",
+ "theme": {
+  "dir": "gsk-jp",
+  "cand_fullname": "theme:gsk-jp",
+  "orig_fullname": "theme:gsk",
+  "wiki": "scp-wiki-cn",
+  "revision": "7",
+  "kind": "K5b-3",
+  "verdict": "PASS",
+  "original_file": "review/gsk-jp/original.txt",
+  "candidate_file": "review/gsk-jp/candidate.txt",
+  "original_sha256": "a8afda782969eaa60395c65b300ae1390bdb846a99b98c51daf37fc1e3672ce1",
+  "candidate_sha256": "071e86657e725613989d6686725bccc23b60a8101d267b6313336b8911c55cd3",
+  "original_lines": 565,
+  "candidate_lines": 600
+ },
+ "topology": {
+  "original_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     1,
+     5
+    ],
+    "lines": 4
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     144,
+     347
+    ],
+    "lines": 203
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     353,
+     356
+    ],
+    "lines": 3
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     362,
+     565
+    ],
+    "lines": 203
+   }
+  ],
+  "candidate_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     2,
+     6
+    ],
+    "lines": 4
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     168,
+     590
+    ],
+    "lines": 422
+   }
+  ],
+  "moves": [
+   {
+    "from_kind": "module-css",
+    "to_kind": "code-css",
+    "orig_range": [
+     362,
+     565
+    ],
+    "cand_range": [
+     168,
+     590
+    ],
+    "similarity": 0.96,
+    "basis": "content"
+   }
+  ],
+  "external_own_delivery": false
+ },
+ "blocks": [
+  {
+   "id": "B1",
+   "orig_range": [
+    0,
+    4
+   ],
+   "cand_range": [
+    0,
+    5
+   ],
+   "orig_lines": "1-4",
+   "cand_lines": "1-5",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "DELIVERY-HOST",
+    "DRAFT-HOST",
+    "IFTAGS",
+    "SELF-DELIVERY"
+   ],
+   "primary": "DELIVERY-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "IFTAGS": "A",
+    "DELIVERY-HOST": "A",
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "IFTAGS": {
+     "orig": [
+      [
+       0,
+       1
+      ]
+     ],
+     "cand": []
+    },
+    "DELIVERY-HOST": {
+     "orig": [
+      [
+       2,
+       4
+      ]
+     ],
+     "cand": [
+      [
+       3,
+       5
+      ]
+     ]
+    },
+    "SELF-DELIVERY": {
+     "orig": [],
+     "cand": [
+      [
+       4,
+       5
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       3,
+       5
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [
+    "BASE-DELIVERY/CROSS-IMPORT? theme:jakstyle-jp (include graph needed to decide base vs cross)"
+   ],
+   "first_removed": "[[iftags +版式]]",
+   "first_added": "[[include :scp-jp:theme:black-highlighter-theme]]"
+  },
+  {
+   "id": "B2",
+   "orig_range": [
+    6,
+    8
+   ],
+   "cand_range": [
+    7,
+    38
+   ],
+   "orig_lines": "7-8",
+   "cand_lines": "8-38",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "CREDIT-PREVIEW",
+    "DRAFT-HOST",
+    "EXHIBIT-RESTRUCTURE",
+    "IFTAGS",
+    "INCLUDE-REPOINT",
+    "SELF-DELIVERY",
+    "TASL-FIELDS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "CREDIT-PREVIEW": "A",
+    "TASL-FIELDS": "A",
+    "INCLUDE-REPOINT": "A",
+    "IFTAGS": "A",
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A",
+    "EXHIBIT-RESTRUCTURE": "C",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "CREDIT-PREVIEW": {
+     "cand": [
+      [
+       25,
+       26
+      ],
+      [
+       34,
+       35
+      ]
+     ]
+    },
+    "TASL-FIELDS": {
+     "cand": [
+      [
+       26,
+       34
+      ]
+     ]
+    },
+    "INCLUDE-REPOINT": {
+     "orig": [
+      [
+       6,
+       7
+      ],
+      [
+       6,
+       7
+      ],
+      [
+       6,
+       7
+      ],
+      [
+       6,
+       7
+      ],
+      [
+       6,
+       7
+      ]
+     ],
+     "cand": [
+      [
+       7,
+       8
+      ],
+      [
+       11,
+       12
+      ],
+      [
+       15,
+       16
+      ],
+      [
+       19,
+       20
+      ],
+      [
+       36,
+       37
+      ]
+     ]
+    },
+    "IFTAGS": {
+     "orig": [],
+     "cand": [
+      [
+       23,
+       24
+      ]
+     ]
+    },
+    "SELF-DELIVERY": {
+     "orig": [],
+     "cand": [
+      [
+       21,
+       22
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       17,
+       18
+      ],
+      [
+       21,
+       22
+      ]
+     ]
+    },
+    "EXHIBIT-RESTRUCTURE": {},
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "class (iii) draft-stage form",
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [
+    "BASE-DELIVERY/CROSS-IMPORT? theme:jakstyle-jp (include graph needed to decide base vs cross)"
+   ],
+   "first_removed": "[[include :scp-wiki-cn:component:interwiki-style",
+   "first_added": "[[include :scp-jp:component:interwiki-style"
+  },
+  {
+   "id": "B3",
+   "orig_range": [
+    10,
+    11
+   ],
+   "cand_range": [
+    40,
+    41
+   ],
+   "orig_lines": "11-11",
+   "cand_lines": "41-41",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "| theme=https://interwiki.scpwikicn.com/css/style-bhl.css",
+   "first_added": "| theme=https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css"
+  },
+  {
+   "id": "B4",
+   "orig_range": [
+    13,
+    13
+   ],
+   "cand_range": [
+    43,
+    44
+   ],
+   "orig_lines": "at 14",
+   "cand_lines": "44-44",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": "**評価:**"
+  },
+  {
+   "id": "B5",
+   "orig_range": [
+    14,
+    14
+   ],
+   "cand_range": [
+    45,
+    46
+   ],
+   "orig_lines": "at 15",
+   "cand_lines": "46-46",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": "**評価モジュールと著作情報モジュール:**"
+  },
+  {
+   "id": "B6",
+   "orig_range": [
+    15,
+    18
+   ],
+   "cand_range": [
+    47,
+    50
+   ],
+   "orig_lines": "16-18",
+   "cand_lines": "48-50",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "BARE-RATE-DEL",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "BARE-RATE-DEL",
+   "primary_section": 1,
+   "label_prec": {
+    "BARE-RATE-DEL": "B",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "B",
+   "label_spans": {
+    "BARE-RATE-DEL": {
+     "orig": [
+      [
+       17,
+       18
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[>]]",
+   "first_added": "これは[[[theme:black-highlighter-theme|Black Highlighter]]]および[[[theme:jakstyle|JAKSTYLE]]]を基にしたCSSです。使いたい場所で自由に利用できます。"
+  },
+  {
+   "id": "B7",
+   "orig_range": [
+    19,
+    26
+   ],
+   "cand_range": [
+    51,
+    55
+   ],
+   "orig_lines": "20-26",
+   "cand_lines": "52-55",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "**评分模块与著作信息模块：**",
+   "first_added": "> //訳注: 原語版はここに CN のフェードイン用コンポーネントの include 例を掲載しています。SCP-JP には無いため省略しています。//"
+  },
+  {
+   "id": "B8",
+   "orig_range": [
+    27,
+    30
+   ],
+   "cand_range": [
+    56,
+    57
+   ],
+   "orig_lines": "28-30",
+   "cand_lines": "57-57",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "这是一个基于[[[http://scp-wiki-cn.wikidot.com/theme:black-highlighter-theme|黑色标记笔]]]、[[[http://scp-wiki-cn.wikidot.com/theme:jakstyle|jak风格]]]的CSS，可用于任何你想使用的地方。",
+   "first_added": "//訳注: 原語版はここに CN のフェードイン用コンポーネント（CN 側のフェードイン用コンポーネント）の include 例を掲載しています。SCP-JP には同コンポーネントが無いため省略しています。// 原語版では speed の値で表示時間を調整できます。"
+  },
+  {
+   "id": "B9",
+   "orig_range": [
+    31,
+    35
+   ],
+   "cand_range": [
+    58,
+    59
+   ],
+   "orig_lines": "32-35",
+   "cand_lines": "59-59",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "EXHIBIT-RESTRUCTURE"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "EXHIBIT-RESTRUCTURE": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "EXHIBIT-RESTRUCTURE": {}
+   },
+   "notes": [
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced"
+   ],
+   "partial_notes": [],
+   "first_removed": "> [[include :scp-wiki:component:fade-in speed=1]]",
+   "first_added": "+ 例"
+  },
+  {
+   "id": "B10",
+   "orig_range": [
+    36,
+    37
+   ],
+   "cand_range": [
+    60,
+    61
+   ],
+   "orig_lines": "37-37",
+   "cand_lines": "61-61",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "DRAFT-HOST",
+    "EXHIBIT-RESTRUCTURE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "DRAFT-HOST": "A",
+    "EXHIBIT-RESTRUCTURE": "C",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       60,
+       61
+      ]
+     ]
+    },
+    "EXHIBIT-RESTRUCTURE": {},
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "class (iii) draft-stage form",
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "其中的@@[[include :scp-wiki:component:fade-in speed=1]]@@是渐入，可以通过speed数值调整时间",
+   "first_added": "[[include component:image-block name=https://sigma10-jp-test.wdfiles.com/local--files/theme%3Agsk-jp/site-logo.png|caption=GSKプロジェクトのロゴ|width=200px]]"
+  },
+  {
+   "id": "B11",
+   "orig_range": [
+    38,
+    39
+   ],
+   "cand_range": [
+    62,
+    63
+   ],
+   "orig_lines": "39-39",
+   "cand_lines": "63-63",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "+ 示例",
+   "first_added": "水平分割線は5つのハイフン「@@-----@@」で作成できます。引用ブロックなどの部品の中に置かれていなければ、ページの左右いっぱいまで伸びます。このように文書を複数の部分へ区切る線が分割線です。[[footnote]]これは脚注です[[/footnote]]"
+  },
+  {
+   "id": "B12",
+   "orig_range": [
+    40,
+    41
+   ],
+   "cand_range": [
+    64,
+    65
+   ],
+   "orig_lines": "41-41",
+   "cand_lines": "65-65",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "EXHIBIT-RESTRUCTURE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "EXHIBIT-RESTRUCTURE": "C",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "EXHIBIT-RESTRUCTURE": {},
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[include component:image-block name=https://scpsandboxcn.wikidot.com/local--files/eastcountry-center/site-logo.png|caption=GSK项目标志|width=200px]]",
+   "first_added": "[https://www.google.com おそらく一度はアクセスしたことのあるリンクです。たぶん。]"
+  },
+  {
+   "id": "B13",
+   "orig_range": [
+    42,
+    43
+   ],
+   "cand_range": [
+    66,
+    67
+   ],
+   "orig_lines": "43-43",
+   "cand_lines": "67-67",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "可通过五个连字符“@@-----@@”创建水平分割线。若它未被放在其他部件（诸如引用块）中，则会左右延伸贯穿页面。这种将文件分割为多个部分的线就是分割线。[[footnote]]这是一个脚注[[/footnote]]",
+   "first_added": "見出しは、行頭に1個から6個のプラス記号「+」を入力すると作成できます。"
+  },
+  {
+   "id": "B14",
+   "orig_range": [
+    44,
+    45
+   ],
+   "cand_range": [
+    68,
+    70
+   ],
+   "orig_lines": "45-45",
+   "cand_lines": "69-70",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[https://www.baidu.com 一个你可能已经访问过一次的链接，我不知道]",
+   "first_added": "[[collapsible show=\"+ 見出し\" hide=\"- 見出し\"]]"
+  },
+  {
+   "id": "B15",
+   "orig_range": [
+    46,
+    47
+   ],
+   "cand_range": [
+    71,
+    72
+   ],
+   "orig_lines": "47-47",
+   "cand_lines": "72-72",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "标题可通过在一行字起始处输入 1 至 6 个加号“+”来创建。",
+   "first_added": "++ レベル2見出し"
+  },
+  {
+   "id": "B16",
+   "orig_range": [
+    48,
+    50
+   ],
+   "cand_range": [
+    73,
+    74
+   ],
+   "orig_lines": "49-50",
+   "cand_lines": "74-74",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[collapsible show=\"+ 标题\" hide=\"- 标题\"]]",
+   "first_added": "+++ レベル3見出し"
+  },
+  {
+   "id": "B17",
+   "orig_range": [
+    51,
+    52
+   ],
+   "cand_range": [
+    75,
+    76
+   ],
+   "orig_lines": "52-52",
+   "cand_lines": "76-76",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "++ 2 级标题",
+   "first_added": "++++ レベル4見出し"
+  },
+  {
+   "id": "B18",
+   "orig_range": [
+    53,
+    54
+   ],
+   "cand_range": [
+    77,
+    78
+   ],
+   "orig_lines": "54-54",
+   "cand_lines": "78-78",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "+++ 3 级标题",
+   "first_added": "+++++ レベル5見出し"
+  },
+  {
+   "id": "B19",
+   "orig_range": [
+    55,
+    60
+   ],
+   "cand_range": [
+    79,
+    80
+   ],
+   "orig_lines": "56-60",
+   "cand_lines": "80-80",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "++++ 4 级标题",
+   "first_added": "++++++ レベル6見出し"
+  },
+  {
+   "id": "B20",
+   "orig_range": [
+    65,
+    67
+   ],
+   "cand_range": [
+    85,
+    87
+   ],
+   "orig_lines": "66-67",
+   "cand_lines": "86-87",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/2"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[tab 分页]]",
+   "first_added": "[[tab タブ]]"
+  },
+  {
+   "id": "B21",
+   "orig_range": [
+    68,
+    69
+   ],
+   "cand_range": [
+    88,
+    89
+   ],
+   "orig_lines": "69-69",
+   "cand_lines": "89-89",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "因为这是一项突破性的发明。",
+   "first_added": "画期的な発明だからです。"
+  },
+  {
+   "id": "B22",
+   "orig_range": [
+    70,
+    72
+   ],
+   "cand_range": [
+    90,
+    92
+   ],
+   "orig_lines": "71-72",
+   "cand_lines": "91-92",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/2"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[tab 分页]]",
+   "first_added": "[[tab タブ]]"
+  },
+  {
+   "id": "B23",
+   "orig_range": [
+    73,
+    74
+   ],
+   "cand_range": [
+    93,
+    94
+   ],
+   "orig_lines": "74-74",
+   "cand_lines": "94-94",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "多么精巧绝伦。",
+   "first_added": "なんとも精巧です。"
+  },
+  {
+   "id": "B24",
+   "orig_range": [
+    75,
+    77
+   ],
+   "cand_range": [
+    95,
+    97
+   ],
+   "orig_lines": "76-77",
+   "cand_lines": "96-97",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/2"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[tab 长 Tab]]",
+   "first_added": "[[tab 長いタブ]]"
+  },
+  {
+   "id": "B25",
+   "orig_range": [
+    78,
+    79
+   ],
+   "cand_range": [
+    98,
+    99
+   ],
+   "orig_lines": "79-79",
+   "cand_lines": "99-99",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "这是一个长的 tab，它有很多文字。",
+   "first_added": "これは長いタブです。たくさんの文章があります。"
+  },
+  {
+   "id": "B26",
+   "orig_range": [
+    80,
+    81
+   ],
+   "cand_range": [
+    100,
+    101
+   ],
+   "orig_lines": "81-81",
+   "cand_lines": "101-101",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "这是一个长的 tab，它有很多文字。",
+   "first_added": "これは長いタブです。たくさんの文章があります。"
+  },
+  {
+   "id": "B27",
+   "orig_range": [
+    82,
+    83
+   ],
+   "cand_range": [
+    102,
+    103
+   ],
+   "orig_lines": "83-83",
+   "cand_lines": "103-103",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "这是一个长的 tab，它有很多文字。",
+   "first_added": "これは長いタブです。たくさんの文章があります。"
+  },
+  {
+   "id": "B28",
+   "orig_range": [
+    84,
+    85
+   ],
+   "cand_range": [
+    104,
+    105
+   ],
+   "orig_lines": "85-85",
+   "cand_lines": "105-105",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "这是一个长的 tab，它有很多文字。",
+   "first_added": "これは長いタブです。たくさんの文章があります。"
+  },
+  {
+   "id": "B29",
+   "orig_range": [
+    86,
+    87
+   ],
+   "cand_range": [
+    106,
+    107
+   ],
+   "orig_lines": "87-87",
+   "cand_lines": "107-107",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "这是一个长的 tab，它有很多文字。",
+   "first_added": "これは長いタブです。たくさんの文章があります。"
+  },
+  {
+   "id": "B30",
+   "orig_range": [
+    88,
+    89
+   ],
+   "cand_range": [
+    108,
+    109
+   ],
+   "orig_lines": "89-89",
+   "cand_lines": "109-109",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "这是一个长的 tab，它有很多文字。",
+   "first_added": "これは長いタブです。たくさんの文章があります。"
+  },
+  {
+   "id": "B31",
+   "orig_range": [
+    90,
+    91
+   ],
+   "cand_range": [
+    110,
+    111
+   ],
+   "orig_lines": "91-91",
+   "cand_lines": "111-111",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "这是一个长的 tab，它有很多文字。",
+   "first_added": "これは長いタブです。たくさんの文章があります。"
+  },
+  {
+   "id": "B32",
+   "orig_range": [
+    92,
+    93
+   ],
+   "cand_range": [
+    112,
+    113
+   ],
+   "orig_lines": "93-93",
+   "cand_lines": "113-113",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "这是一个长的 tab，它有很多文字。",
+   "first_added": "これは長いタブです。たくさんの文章があります。"
+  },
+  {
+   "id": "B33",
+   "orig_range": [
+    94,
+    95
+   ],
+   "cand_range": [
+    114,
+    115
+   ],
+   "orig_lines": "95-95",
+   "cand_lines": "115-115",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "这是一个长的 tab，它有很多文字。",
+   "first_added": "これは長いタブです。たくさんの文章があります。"
+  },
+  {
+   "id": "B34",
+   "orig_range": [
+    96,
+    97
+   ],
+   "cand_range": [
+    116,
+    117
+   ],
+   "orig_lines": "97-97",
+   "cand_lines": "117-117",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "这是一个长的 tab，它有很多文字。",
+   "first_added": "これは長いタブです。たくさんの文章があります。"
+  },
+  {
+   "id": "B35",
+   "orig_range": [
+    98,
+    99
+   ],
+   "cand_range": [
+    118,
+    119
+   ],
+   "orig_lines": "99-99",
+   "cand_lines": "119-119",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[tab 这是一个名字真的非常长的 Tab。]]",
+   "first_added": "[[tab これは本当に名前がとても長いタブです。]]"
+  },
+  {
+   "id": "B36",
+   "orig_range": [
+    100,
+    101
+   ],
+   "cand_range": [
+    120,
+    121
+   ],
+   "orig_lines": "101-101",
+   "cand_lines": "121-121",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[tab 空 Tab]]",
+   "first_added": "[[tab 空のタブ]]"
+  },
+  {
+   "id": "B37",
+   "orig_range": [
+    102,
+    103
+   ],
+   "cand_range": [
+    122,
+    123
+   ],
+   "orig_lines": "103-103",
+   "cand_lines": "123-123",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[tab 空 Tab]]",
+   "first_added": "[[tab 空のタブ]]"
+  },
+  {
+   "id": "B38",
+   "orig_range": [
+    104,
+    105
+   ],
+   "cand_range": [
+    124,
+    125
+   ],
+   "orig_lines": "105-105",
+   "cand_lines": "125-125",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[tab 空 Tab]]",
+   "first_added": "[[tab 空のタブ]]"
+  },
+  {
+   "id": "B39",
+   "orig_range": [
+    106,
+    107
+   ],
+   "cand_range": [
+    126,
+    127
+   ],
+   "orig_lines": "107-107",
+   "cand_lines": "127-127",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[tab 空 Tab]]",
+   "first_added": "[[tab 空のタブ]]"
+  },
+  {
+   "id": "B40",
+   "orig_range": [
+    108,
+    109
+   ],
+   "cand_range": [
+    128,
+    129
+   ],
+   "orig_lines": "109-109",
+   "cand_lines": "129-129",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[tab 空 Tab]]",
+   "first_added": "[[tab 空のタブ]]"
+  },
+  {
+   "id": "B41",
+   "orig_range": [
+    112,
+    113
+   ],
+   "cand_range": [
+    132,
+    133
+   ],
+   "orig_lines": "113-113",
+   "cand_lines": "133-133",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "> 这是一个引用块，在一行字的起始处加上“> ”来创建。",
+   "first_added": "> これは引用ブロックです。行頭に「> 」を付けると作成できます。"
+  },
+  {
+   "id": "B42",
+   "orig_range": [
+    114,
+    115
+   ],
+   "cand_range": [
+    134,
+    135
+   ],
+   "orig_lines": "115-115",
+   "cand_lines": "135-135",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "> 更多文字",
+   "first_added": "> さらに文章"
+  },
+  {
+   "id": "B43",
+   "orig_range": [
+    116,
+    117
+   ],
+   "cand_range": [
+    136,
+    137
+   ],
+   "orig_lines": "117-117",
+   "cand_lines": "137-137",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "> 一条分割线",
+   "first_added": "> 分割線"
+  },
+  {
+   "id": "B44",
+   "orig_range": [
+    118,
+    119
+   ],
+   "cand_range": [
+    138,
+    139
+   ],
+   "orig_lines": "119-119",
+   "cand_lines": "139-139",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": ">> 嵌套引用块",
+   "first_added": ">> ネストした引用ブロック"
+  },
+  {
+   "id": "B45",
+   "orig_range": [
+    120,
+    123
+   ],
+   "cand_range": [
+    140,
+    143
+   ],
+   "orig_lines": "121-123",
+   "cand_lines": "141-143",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 3/3"
+   ],
+   "partial_notes": [],
+   "first_removed": "||~ 这是 ||~ 表格 ||",
+   "first_added": "||~ これは ||~ 表です ||"
+  },
+  {
+   "id": "B46",
+   "orig_range": [
+    127,
+    128
+   ],
+   "cand_range": [
+    147,
+    148
+   ],
+   "orig_lines": "128-128",
+   "cand_lines": "148-148",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "+ 针对高级语法和组件的预览与改进",
+   "first_added": "+ 高度な構文とコンポーネントのプレビューと改善"
+  },
+  {
+   "id": "B47",
+   "orig_range": [
+    129,
+    131
+   ],
+   "cand_range": [
+    149,
+    151
+   ],
+   "orig_lines": "130-131",
+   "cand_lines": "150-151",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 2/2"
+   ],
+   "partial_notes": [],
+   "first_removed": "+++++ 你可以在这里对大部分格式进行预览、以及找到一些有用的组件",
+   "first_added": "+++++ ここでは大半の書式をプレビューでき、便利なコンポーネントもいくつか見つけられます"
+  },
+  {
+   "id": "B48",
+   "orig_range": [
+    132,
+    136
+   ],
+   "cand_range": [
+    152,
+    156
+   ],
+   "orig_lines": "133-136",
+   "cand_lines": "153-156",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "由于大部分不是我们原创的，因此放在了沙盒页中",
+   "first_added": "大半は私たちのオリジナルではないため、サンドボックスページに置いてあります。"
+  },
+  {
+   "id": "B49",
+   "orig_range": [
+    139,
+    143
+   ],
+   "cand_range": [
+    159,
+    164
+   ],
+   "orig_lines": "140-143",
+   "cand_lines": "160-164",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "ESCAPED-INCLUDE",
+    "EXHIBIT-RESTRUCTURE",
+    "INCLUDE-REPOINT",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "INCLUDE-REPOINT": "A",
+    "ESCAPED-INCLUDE": "B",
+    "EXHIBIT-RESTRUCTURE": "C",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "INCLUDE-REPOINT": {
+     "orig": [
+      [
+       141,
+       143
+      ]
+     ],
+     "cand": [
+      [
+       161,
+       163
+      ]
+     ]
+    },
+    "ESCAPED-INCLUDE": {
+     "orig": [
+      [
+       141,
+       143
+      ]
+     ],
+     "cand": [
+      [
+       161,
+       163
+      ]
+     ]
+    },
+    "EXHIBIT-RESTRUCTURE": {},
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[collapsible show=\"+ 页面源代码\" hide=\"- 隐藏\"]]",
+   "first_added": "[[collapsible show=\"+ ページソース\" hide=\"- 隠す\"]]"
+  },
+  {
+   "id": "B50",
+   "orig_range": [
+    144,
+    145
+   ],
+   "cand_range": [
+    165,
+    390
+   ],
+   "orig_lines": "145-145",
+   "cand_lines": "166-390",
+   "channel_pair": [
+    "code-css",
+    "body"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "DRAFT-HOST",
+    "HEADERVAR",
+    "JPFONT-LOAD",
+    "RESTORATION",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "RESTORATION",
+   "primary_section": 8,
+   "label_prec": {
+    "DRAFT-HOST": "A",
+    "JPFONT-LOAD": "A",
+    "HEADERVAR": "A",
+    "COMMENT-TEXT": "C",
+    "RESTORATION": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       206,
+       207
+      ],
+      [
+       208,
+       209
+      ],
+      [
+       263,
+       264
+      ],
+      [
+       265,
+       266
+      ]
+     ]
+    },
+    "JPFONT-LOAD": {
+     "cand": [
+      [
+       176,
+       178
+      ]
+     ]
+    },
+    "HEADERVAR": {
+     "orig": [],
+     "cand": [
+      [
+       182,
+       184
+      ],
+      [
+       206,
+       208
+      ],
+      [
+       261,
+       265
+      ]
+     ]
+    },
+    "COMMENT-TEXT": {},
+    "RESTORATION": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       165,
+       390
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form",
+    "absence claim needs base subtraction (resolved base)",
+    "porter-visible only; labeled and skipped by design",
+    "added content matches the original's own earlier region; diff-only signal, supplement decides",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[code type=\"CSS\"]]",
+   "first_added": "+ ソースコード"
+  },
+  {
+   "id": "B51",
+   "orig_range": [
+    170,
+    171
+   ],
+   "cand_range": [
+    415,
+    416
+   ],
+   "orig_lines": "171-171",
+   "cand_lines": "416-416",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "DRAFT-HOST",
+    "HEADERVAR"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A",
+    "HEADERVAR": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       415,
+       416
+      ]
+     ]
+    },
+    "HEADERVAR": {
+     "orig": [
+      [
+       170,
+       171
+      ]
+     ],
+     "cand": [
+      [
+       415,
+       416
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       415,
+       416
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "    --logo-image: url('https://scpsandboxcn.wikidot.com/local--files/eastcountry-center/site-logo.png');",
+   "first_added": "    --logo-image: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Agsk-jp/site-logo.png');"
+  },
+  {
+   "id": "B52",
+   "orig_range": [
+    172,
+    173
+   ],
+   "cand_range": [
+    417,
+    418
+   ],
+   "orig_lines": "173-173",
+   "cand_lines": "418-418",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "DRAFT-HOST"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       417,
+       418
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       417,
+       418
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "    --lgurl: url('https://scpsandboxcn.wikidot.com/local--files/eastcountry-center/site-logo.png');",
+   "first_added": "    --lgurl: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Agsk-jp/site-logo.png');"
+  },
+  {
+   "id": "B53",
+   "orig_range": [
+    227,
+    228
+   ],
+   "cand_range": [
+    472,
+    473
+   ],
+   "orig_lines": "228-228",
+   "cand_lines": "473-473",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "DRAFT-HOST",
+    "HEADERVAR"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A",
+    "HEADERVAR": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       472,
+       473
+      ]
+     ]
+    },
+    "HEADERVAR": {
+     "orig": [
+      [
+       227,
+       228
+      ]
+     ],
+     "cand": [
+      [
+       472,
+       473
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       472,
+       473
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "    --logo-image: url('https://scpsandboxcn.wikidot.com/local--files/eastcountry-center/site-logo.png');",
+   "first_added": "    --logo-image: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Agsk-jp/site-logo.png');"
+  },
+  {
+   "id": "B54",
+   "orig_range": [
+    229,
+    230
+   ],
+   "cand_range": [
+    474,
+    475
+   ],
+   "orig_lines": "230-230",
+   "cand_lines": "475-475",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "DRAFT-HOST"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       474,
+       475
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       474,
+       475
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "    --lgurl: url('https://scpsandboxcn.wikidot.com/local--files/eastcountry-center/site-logo.png');",
+   "first_added": "    --lgurl: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Agsk-jp/site-logo.png');"
+  },
+  {
+   "id": "B55",
+   "orig_range": [
+    255,
+    256
+   ],
+   "cand_range": [
+    500,
+    500
+   ],
+   "orig_lines": "256-256",
+   "cand_lines": "at 501",
+   "channel_pair": [
+    "code-css",
+    "body"
+   ],
+   "labels": [
+    "CSS-BODY"
+   ],
+   "primary": "CSS-BODY",
+   "primary_section": 8,
+   "label_prec": {
+    "CSS-BODY": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "CSS-BODY": {}
+   },
+   "notes": [
+    "no other signature matched"
+   ],
+   "partial_notes": [],
+   "first_removed": "    background-image: url('https://scpsandboxcn.wikidot.com/local--files/eastcountry-center/hubble.png');",
+   "first_added": ""
+  },
+  {
+   "id": "B56",
+   "orig_range": [
+    345,
+    346
+   ],
+   "cand_range": [
+    589,
+    589
+   ],
+   "orig_lines": "346-346",
+   "cand_lines": "at 590",
+   "channel_pair": [
+    "code-css",
+    "body"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": ""
+  },
+  {
+   "id": "B57",
+   "orig_range": [
+    349,
+    349
+   ],
+   "cand_range": [
+    592,
+    599
+   ],
+   "orig_lines": "at 350",
+   "cand_lines": "593-599",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "LICENSE-BOX",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "LICENSE-BOX",
+   "primary_section": 1,
+   "label_prec": {
+    "LICENSE-BOX": "A",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "LICENSE-BOX": {
+     "cand": [
+      [
+       592,
+       593
+      ],
+      [
+       597,
+       598
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "supplement (T4): the original carried no license box",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": "[[include :scp-jp:component:license-box-backend"
+  },
+  {
+   "id": "B58",
+   "orig_range": [
+    350,
+    565
+   ],
+   "cand_range": [
+    600,
+    600
+   ],
+   "orig_lines": "351-565",
+   "cand_lines": "at 601",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "EXHIBIT-RESTRUCTURE",
+    "HEADERVAR"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "HEADERVAR": "A",
+    "EXHIBIT-RESTRUCTURE": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "HEADERVAR": {
+     "orig": [
+      [
+       364,
+       366
+      ],
+      [
+       388,
+       390
+      ],
+      [
+       443,
+       447
+      ]
+     ],
+     "cand": []
+    },
+    "EXHIBIT-RESTRUCTURE": {},
+    "DELIVERY-MOVE": {
+     "orig": [
+      [
+       350,
+       565
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced"
+   ],
+   "partial_notes": [
+    "BASE-DELIVERY/CROSS-IMPORT? theme:jakstyle (include graph needed to decide base vs cross)"
+   ],
+   "first_removed": "",
+   "first_added": ""
+  }
+ ],
+ "derived_presence": {},
+ "summary": {
+  "blocks": 58,
+  "specific": 24,
+  "heuristic": 31,
+  "residue": 3,
+  "skipped": 0,
+  "reindent_blocks": 0,
+  "label_counts": {
+   "DELIVERY-HOST": 1,
+   "DRAFT-HOST": 8,
+   "IFTAGS": 2,
+   "SELF-DELIVERY": 2,
+   "CREDIT-PREVIEW": 1,
+   "EXHIBIT-RESTRUCTURE": 6,
+   "INCLUDE-REPOINT": 2,
+   "TASL-FIELDS": 1,
+   "TRANS-UNANCHORED": 35,
+   "BARE-RATE-DEL": 1,
+   "TRANSLATION-ANCHORED": 12,
+   "ESCAPED-INCLUDE": 1,
+   "COMMENT-TEXT": 1,
+   "DELIVERY-MOVE": 6,
+   "HEADERVAR": 4,
+   "JPFONT-LOAD": 1,
+   "RESTORATION": 1,
+   "CSS-BODY": 1,
+   "LICENSE-BOX": 1
+  }
+ },
+ "residue": [
+  "B3",
+  "B4",
+  "B56"
+ ],
+ "skeleton": {
+  "sha256": "9be2655046f992aa3ecb8848aa8c60baf659c1e7054550953784514ff83c29b1",
+  "status": "written (new)"
+ }
+}
