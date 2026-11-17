@@ -15,11 +15,11 @@ adjudicated explanation.
 | | Lines |
 |---|---|
 | original.txt | 840 |
-| candidate.txt | 2434 |
-| Added | +1689 |
-| Review-stage comments | 0 of the +1689 added lines |
+| candidate.txt | 1400 |
+| Added | +655 |
+| Review-stage comments | 0 of the +655 added lines |
 | Removed | -95 |
-| Changed | 1784 |
+| Changed | 750 |
 | Change blocks | 68 |
 | Diff sections (context 3) | 11 |
 
@@ -29,89 +29,89 @@ adjudicated explanation.
 |---|---|---|
 | mechanical | 2 | 2 |
 | translation | 2 | 2 |
-| supplement | 5 | 1625 |
-| residual | 59 | 155 |
+| supplement | 6 | 595 |
+| residual | 58 | 151 |
 
 ## Change-block index
 
 | # | Section | Original | Candidate | +/− | Auto-class | Gist |
 |---|---|---|---|---|---|---|
 | 1 | 1 | 1–2 | 1–2 | +2/−2 | residual | [[iftags +テーマ]] |
-| 2 | 1 | 5–7 | 5–1602 | +1598/−3 | supplement | [[iftags +テーマ]] |
-| 3 | 1 | 10–12 | 1605–1608 | +4/−3 | supplement | [[include :scp-jp:component:interwiki-style |
-| 4 | 1 | 14–16 | 1610–1619 | +10/−3 | supplement | [[include :scp-jp:credit:start-preview]] |
-| 5 | 1 | 18–20 | 1621–1621 | +1/−3 | residual | これは[[*user badooga]]によるSecond Second Hytothテーマです——別名、Second Theme for the Sec… |
-| 6 | 1 | 22–22 | 1623–1623 | +1/−1 | residual | [[*https://scp-wiki.wikidot.com/theme:basalt Basalt]]ベースのテーマで、[*https://scp-w… |
-| 7 | 1 | 24–25 | 1625–1625 | +1/−2 | residual | また、[[*user Liryn]]の[*https://scp-wiki.wikidot.com/theme:foxtrot Foxtrot]と[[*u… |
-| 8 | 1 | 27–40 | 1627–1628 | +2/−14 | residual | [[size 110%]]**任意のページで:**[[/size]] |
-| 9 | 1 | 46–46 | 1634–1634 | +1/−1 | residual | + __設定__ |
-| 10 | 1 | — | 1636–1636 | +1/−0 | translation | //（聖なる第四者は最も優れた戦略家である。彼らは戦いに無闇に突撃することはない。状況を分析し、動くときは必ず勝利して帰ってくる。）// |
-| 11 | 1 | 49–49 | 1638–1638 | +1/−1 | residual | ++ 設定方法 |
-| 12 | 1 | 51–51 | 1640–1640 | +1/−1 | residual | 親テーマと同様に、{{[[include]]}}モジュールに**テーマ設定**を追加して、このテーマの各項目を変更できます。 |
-| 13 | 1 | 53–53 | 1642–1642 | +1/−1 | residual | **{{@@[[include theme:hytoth-two-jp @@##green\|themesetting##@@]]@@}}** |
-| 14 | 1 | 55–55 | 1644–1644 | +1/−1 | residual | **{{@@[[include theme:hytoth-two-jp @@##green\|themesetting##\|##purple\|another… |
-| 15 | 1 | 57–60 | 1646–1649 | +4/−4 | residual | このテーマの設定: |
-| 16 | 1 | 62–63 | 1651–1652 | +2/−2 | residual | ++ 色 |
-| 17 | 2 | 72–72 | 1661–1661 | +1/−1 | residual | [[include :scp-jp:component:theme-squares -=- |
-| 18 | 3 | 100–100 | 1689–1689 | +1/−1 | residual | また、最初の4色には{{@@--hytoth-yellow@@}}、{{@@--hytoth-pink@@}}、{{@@--hytoth-red@@}}、… |
-| 19 | 3 | 104–104 | 1693–1693 | +1/−1 | residual | + __要素__ |
-| 20 | 3 | — | 1695–1695 | +1/−0 | residual | //（平和こそが我々の生存を導く。平和であり続けることが、Ortothanであり続けることだ。）// |
-| 21 | 4 | 116–116 | 1706–1706 | +1/−1 | residual | これはタブビューです。コンテンツ自体には枠が付かないことに注意してください。意図としては、次のセクションのカスタム div のいずれかと組み合わせて使って… |
-| 22 | 4 | 120–120 | 1710–1710 | +1/−1 | residual | {{Modal}} divはかなり幅が広いので、{{tab}}の中にネストするとよく機能します。 |
-| 23 | 4 | 125–125 | 1715–1715 | +1/−1 | residual | これは{{smallmodal}} divを使ったものです。{{tab}}のデフォルトの枠線が好きなら、次のセクションを見てください。 |
-| 24 | 4 | 132–132 | 1722–1722 | +1/−1 | residual | + __さらなるカスタマイズ__ |
-| 25 | 4 | — | 1725–1725 | +1/−0 | translation | //（好奇心をもって、我々は世界と、それが我々に送るかもしれないあらゆるものに気づき続ける。）// |
-| 26 | 4 | 136–136 | 1727–1727 | +1/−1 | residual | ++ 色の壁 |
-| 27 | 4 | 138–138 | 1729–1729 | +1/−1 | residual | 以下は、便宜のために用意された、色付きの背景を持つ14種類のプリセット div です。 |
-| 28 | 4 | 140–140 | 1731–1731 | +1/−1 | residual | [[collapsible show="+ 色付きdiv" hide="- 色付きdiv"]] |
-| 29 | 4 | 142–142 | 1733–1733 | +1/−1 | residual | {{@@[[div class="opening"]]@@}} または {{@@[[div class="ortothan-1"]]@@}} |
-| 30 | 4 | 146–146 | 1737–1737 | +1/−1 | residual | {{@@[[div class="saduj"]]@@}} または {{@@[[div class="ortothan-2"]]@@}} |
-| 31 | 4 | 150–150 | 1741–1741 | +1/−1 | residual | {{@@[[div class="nicole"]]@@}} または {{@@[[div class="ortothan-3"]]@@}} |
-| 32 | 4 | 154–154 | 1745–1745 | +1/−1 | residual | {{@@[[div class="sarah"]]@@}} または {{@@[[div class="ortothan-4"]]@@}} |
-| 33 | 4 | 158–158 | 1749–1749 | +1/−1 | residual | {{@@[[div class="bleu"]]@@}} または {{@@[[div class="ortothan-5"]]@@}} |
-| 34 | 4 | 162–162 | 1753–1753 | +1/−1 | residual | {{@@[[div class="fondation"]]@@}} または {{@@[[div class="ortothan-6"]]@@}} |
-| 35 | 4 | 166–166 | 1757–1757 | +1/−1 | residual | {{@@[[div class="inconnu"]]@@}} または {{@@[[div class="ortothan-7"]]@@}} |
-| 36 | 4 | 170–170 | 1761–1761 | +1/−1 | residual | {{@@[[div class="merle"]]@@}} または {{@@[[div class="ortothan-8"]]@@}} |
-| 37 | 4 | 174–174 | 1765–1765 | +1/−1 | residual | {{@@[[div class="affiche"]]@@}} または {{@@[[div class="ortothan-9"]]@@}} |
-| 38 | 4 | 178–178 | 1769–1769 | +1/−1 | residual | {{@@[[div class="quatrieme"]]@@}} または {{@@[[div class="ortothan-10"]]@@}} |
-| 39 | 4 | 182–182 | 1773–1773 | +1/−1 | residual | {{@@[[div class="samarah"]]@@}} または {{@@[[div class="ortothan-11"]]@@}} |
-| 40 | 4 | 186–186 | 1777–1777 | +1/−1 | residual | {{@@[[div class="st-hubert"]]@@}} または {{@@[[div class="ortothan-12"]]@@}} |
-| 41 | 4 | 190–190 | 1781–1781 | +1/−1 | residual | {{@@[[div class="comptine"]]@@}} または {{@@[[div class="ortothan-13"]]@@}} |
-| 42 | 4 | 194–194 | 1785–1785 | +1/−1 | residual | {{@@[[div class="void"]]@@}} または {{@@[[div class="ortothan-14"]]@@}} |
-| 43 | 4 | 199–199 | 1790–1790 | +1/−1 | residual | これらをBasaltの豊富な div と組み合わせて使えます！ 以下にいくつか例を示します。また、角を丸くするには{{round}}または{{rounde… |
-| 44 | 5 | 231–232 | 1822–1823 | +2/−2 | residual | ++ CSSを制限する |
-| 45 | 5 | 237–237 | 1828–1828 | +1/−1 | residual | 枠線はありますが、独自の背景はありません。さらにカスタマイズしたければ、CSSをいじることになるでしょう。 |
-| 46 | 5 | 241–241 | 1832–1832 | +1/−1 | residual | {{@@------@@}}による水平線もスタイルされなくなります。 |
-| 47 | 5 | 245–245 | 1836–1836 | +1/−1 | residual | タブの切り替えアニメーションもありません！ |
-| 48 | 5 | 248–248 | 1839–1839 | +1/−1 | residual | 折りたたみのスタイルもアニメーションもここにはありません。 |
-| 49 | 5 | 254–254 | 1845–1845 | +1/−1 | residual | トランジションだけを無効にして、他のスタイルはそのままにしたい場合は、代わりに{{no-animation}}クラスで囲んでください。 |
-| 50 | 5 | 256–257 | 1847–1848 | +2/−2 | residual | ++ GoIフォーマット・スニペット |
-| 51 | 5 | 259–260 | 1850–1851 | +2/−2 | residual | [[collapsible show="+ Ortothanメモ" hide="- Ortothanメモ"]] |
-| 52 | 5 | 267–267 | 1858–1858 | +1/−1 | residual | //You requested that I point you toward Ortothan [[[*https://scp-wiki.wikidot… |
-| 53 | 6 | 278–279 | 1869–1870 | +2/−2 | residual | [[collapsible show="+ Staticフィルター" hide="- Staticフィルター"]] |
-| 54 | 6 | 283–283 | 1874–1874 | +1/−1 | residual | —lost. All near Ortothans must unite at [Unknown Symbol 31], cannons have bee… |
-| 55 | 7 | 293–294 | 1884–1885 | +2/−2 | residual | [[collapsible show="+ 反ミーム的テキスト" hide="- 反ミーム的テキスト"]] |
-| 56 | 7 | 299–299 | 1890–1890 | +1/−1 | residual | そしてネスターが彷徨ううちに、彼はすぐに、自分が宇宙で[[*https://scp-wiki.wikidot.com/three-musings 迷ってい… |
-| 57 | 7 | 301–301 | 1892–1892 | +1/−1 | residual | //あなたは確かに、ここの者ではありませんね?// |
-| 58 | 7 | 303–303 | 1894–1894 | +1/−1 | residual | 用心深いネスターは答えました: |
-| 59 | 7 | 305–305 | 1896–1896 | +1/−1 | residual | 「ここ『とは』、いったいどこですか？ この場所は何ですか？」 |
-| 60 | 7 | 307–307 | 1898–1898 | +1/−1 | residual | //おそらく、この場所は位置の記述子では概念化できないのでしょう。私には、ここは存在の果てに見えます。// |
-| 61 | 8 | 316–316 | 1907–1907 | +1/−1 | residual | + __ソースコード__ |
-| 62 | 8 | 318–318 | 1909–1909 | +1/−1 | residual | //Rakmou-leusanの希望は決して失われたことはなく、これからも永遠に失われることはありません。// |
-| 63 | 8 | 320–320 | 1911–1913 | +3/−1 | residual | [[collapsible show="+ ソースコードを表示" hide="- ソースコードを隠す"]] |
-| 64 | 8 | — | 1916–1916 | +1/−0 | mechanical | (blank lines only) |
+| 2 | 1 | 5–7 | 5–568 | +564/−3 | supplement | [[iftags +テーマ]] |
+| 3 | 1 | 10–12 | 571–574 | +4/−3 | supplement | [[include :scp-jp:component:interwiki-style |
+| 4 | 1 | 14–16 | 576–585 | +10/−3 | supplement | [[include :scp-jp:credit:start-preview]] |
+| 5 | 1 | 18–20 | 587–587 | +1/−3 | residual | これは[[*user badooga]]によるSecond Second Hytothテーマです——別名、Second Theme for the Sec… |
+| 6 | 1 | 22–22 | 589–589 | +1/−1 | residual | [[*https://scp-wiki.wikidot.com/theme:basalt Basalt]]ベースのテーマで、[*https://scp-w… |
+| 7 | 1 | 24–25 | 591–591 | +1/−2 | residual | また、[[*user Liryn]]の[*https://scp-wiki.wikidot.com/theme:foxtrot Foxtrot]と[[*u… |
+| 8 | 1 | 27–40 | 593–594 | +2/−14 | residual | [[size 110%]]**任意のページで:**[[/size]] |
+| 9 | 1 | 46–46 | 600–600 | +1/−1 | residual | + __設定__ |
+| 10 | 1 | — | 602–602 | +1/−0 | translation | //（聖なる第四者は最も優れた戦略家である。彼らは戦いに無闇に突撃することはない。状況を分析し、動くときは必ず勝利して帰ってくる。）// |
+| 11 | 1 | 49–49 | 604–604 | +1/−1 | residual | ++ 設定方法 |
+| 12 | 1 | 51–51 | 606–606 | +1/−1 | residual | 親テーマと同様に、{{[[include]]}}モジュールに**テーマ設定**を追加して、このテーマの各項目を変更できます。 |
+| 13 | 1 | 53–53 | 608–608 | +1/−1 | residual | **{{@@[[include theme:hytoth-two-jp @@##green\|themesetting##@@]]@@}}** |
+| 14 | 1 | 55–55 | 610–610 | +1/−1 | residual | **{{@@[[include theme:hytoth-two-jp @@##green\|themesetting##\|##purple\|another… |
+| 15 | 1 | 57–60 | 612–615 | +4/−4 | residual | このテーマの設定: |
+| 16 | 1 | 62–63 | 617–618 | +2/−2 | residual | ++ 色 |
+| 17 | 2 | 72–72 | 627–627 | +1/−1 | residual | [[include :scp-jp:component:theme-squares -=- |
+| 18 | 3 | 100–100 | 655–655 | +1/−1 | residual | また、最初の4色には{{@@--hytoth-yellow@@}}、{{@@--hytoth-pink@@}}、{{@@--hytoth-red@@}}、… |
+| 19 | 3 | 104–104 | 659–659 | +1/−1 | residual | + __要素__ |
+| 20 | 3 | — | 661–661 | +1/−0 | residual | //（平和こそが我々の生存を導く。平和であり続けることが、Ortothanであり続けることだ。）// |
+| 21 | 4 | 116–116 | 672–672 | +1/−1 | residual | これはタブビューです。コンテンツ自体には枠が付かないことに注意してください。意図としては、次のセクションのカスタム div のいずれかと組み合わせて使って… |
+| 22 | 4 | 120–120 | 676–676 | +1/−1 | residual | {{Modal}} divはかなり幅が広いので、{{tab}}の中にネストするとよく機能します。 |
+| 23 | 4 | 125–125 | 681–681 | +1/−1 | residual | これは{{smallmodal}} divを使ったものです。{{tab}}のデフォルトの枠線が好きなら、次のセクションを見てください。 |
+| 24 | 4 | 132–132 | 688–688 | +1/−1 | residual | + __さらなるカスタマイズ__ |
+| 25 | 4 | — | 691–691 | +1/−0 | translation | //（好奇心をもって、我々は世界と、それが我々に送るかもしれないあらゆるものに気づき続ける。）// |
+| 26 | 4 | 136–136 | 693–693 | +1/−1 | residual | ++ 色の壁 |
+| 27 | 4 | 138–138 | 695–695 | +1/−1 | residual | 以下は、便宜のために用意された、色付きの背景を持つ14種類のプリセット div です。 |
+| 28 | 4 | 140–140 | 697–697 | +1/−1 | residual | [[collapsible show="+ 色付きdiv" hide="- 色付きdiv"]] |
+| 29 | 4 | 142–142 | 699–699 | +1/−1 | residual | {{@@[[div class="opening"]]@@}} または {{@@[[div class="ortothan-1"]]@@}} |
+| 30 | 4 | 146–146 | 703–703 | +1/−1 | residual | {{@@[[div class="saduj"]]@@}} または {{@@[[div class="ortothan-2"]]@@}} |
+| 31 | 4 | 150–150 | 707–707 | +1/−1 | residual | {{@@[[div class="nicole"]]@@}} または {{@@[[div class="ortothan-3"]]@@}} |
+| 32 | 4 | 154–154 | 711–711 | +1/−1 | residual | {{@@[[div class="sarah"]]@@}} または {{@@[[div class="ortothan-4"]]@@}} |
+| 33 | 4 | 158–158 | 715–715 | +1/−1 | residual | {{@@[[div class="bleu"]]@@}} または {{@@[[div class="ortothan-5"]]@@}} |
+| 34 | 4 | 162–162 | 719–719 | +1/−1 | residual | {{@@[[div class="fondation"]]@@}} または {{@@[[div class="ortothan-6"]]@@}} |
+| 35 | 4 | 166–166 | 723–723 | +1/−1 | residual | {{@@[[div class="inconnu"]]@@}} または {{@@[[div class="ortothan-7"]]@@}} |
+| 36 | 4 | 170–170 | 727–727 | +1/−1 | residual | {{@@[[div class="merle"]]@@}} または {{@@[[div class="ortothan-8"]]@@}} |
+| 37 | 4 | 174–174 | 731–731 | +1/−1 | residual | {{@@[[div class="affiche"]]@@}} または {{@@[[div class="ortothan-9"]]@@}} |
+| 38 | 4 | 178–178 | 735–735 | +1/−1 | residual | {{@@[[div class="quatrieme"]]@@}} または {{@@[[div class="ortothan-10"]]@@}} |
+| 39 | 4 | 182–182 | 739–739 | +1/−1 | residual | {{@@[[div class="samarah"]]@@}} または {{@@[[div class="ortothan-11"]]@@}} |
+| 40 | 4 | 186–186 | 743–743 | +1/−1 | residual | {{@@[[div class="st-hubert"]]@@}} または {{@@[[div class="ortothan-12"]]@@}} |
+| 41 | 4 | 190–190 | 747–747 | +1/−1 | residual | {{@@[[div class="comptine"]]@@}} または {{@@[[div class="ortothan-13"]]@@}} |
+| 42 | 4 | 194–194 | 751–751 | +1/−1 | residual | {{@@[[div class="void"]]@@}} または {{@@[[div class="ortothan-14"]]@@}} |
+| 43 | 4 | 199–199 | 756–756 | +1/−1 | residual | これらをBasaltの豊富な div と組み合わせて使えます！ 以下にいくつか例を示します。また、角を丸くするには{{round}}または{{rounde… |
+| 44 | 5 | 231–232 | 788–789 | +2/−2 | residual | ++ CSSを制限する |
+| 45 | 5 | 237–237 | 794–794 | +1/−1 | residual | 枠線はありますが、独自の背景はありません。さらにカスタマイズしたければ、CSSをいじることになるでしょう。 |
+| 46 | 5 | 241–241 | 798–798 | +1/−1 | residual | {{@@------@@}}による水平線もスタイルされなくなります。 |
+| 47 | 5 | 245–245 | 802–802 | +1/−1 | residual | タブの切り替えアニメーションもありません！ |
+| 48 | 5 | 248–248 | 805–805 | +1/−1 | residual | 折りたたみのスタイルもアニメーションもここにはありません。 |
+| 49 | 5 | 254–254 | 811–811 | +1/−1 | residual | トランジションだけを無効にして、他のスタイルはそのままにしたい場合は、代わりに{{no-animation}}クラスで囲んでください。 |
+| 50 | 5 | 256–257 | 813–814 | +2/−2 | residual | ++ GoIフォーマット・スニペット |
+| 51 | 5 | 259–260 | 816–817 | +2/−2 | residual | [[collapsible show="+ Ortothanメモ" hide="- Ortothanメモ"]] |
+| 52 | 5 | 267–267 | 824–824 | +1/−1 | residual | //You requested that I point you toward Ortothan [[[*https://scp-wiki.wikidot… |
+| 53 | 6 | 278–279 | 835–836 | +2/−2 | residual | [[collapsible show="+ Staticフィルター" hide="- Staticフィルター"]] |
+| 54 | 6 | 283–283 | 840–840 | +1/−1 | residual | —lost. All near Ortothans must unite at [Unknown Symbol 31], cannons have bee… |
+| 55 | 7 | 293–294 | 850–851 | +2/−2 | residual | [[collapsible show="+ 反ミーム的テキスト" hide="- 反ミーム的テキスト"]] |
+| 56 | 7 | 299–299 | 856–856 | +1/−1 | residual | そしてネスターが彷徨ううちに、彼はすぐに、自分が宇宙で[[*https://scp-wiki.wikidot.com/three-musings 迷ってい… |
+| 57 | 7 | 301–301 | 858–858 | +1/−1 | residual | //あなたは確かに、ここの者ではありませんね?// |
+| 58 | 7 | 303–303 | 860–860 | +1/−1 | residual | 用心深いネスターは答えました: |
+| 59 | 7 | 305–305 | 862–862 | +1/−1 | residual | 「ここ『とは』、いったいどこですか？ この場所は何ですか？」 |
+| 60 | 7 | 307–307 | 864–864 | +1/−1 | residual | //おそらく、この場所は位置の記述子では概念化できないのでしょう。私には、ここは存在の果てに見えます。// |
+| 61 | 8 | 316–316 | 873–873 | +1/−1 | residual | + __ソースコード__ |
+| 62 | 8 | 318–318 | 875–875 | +1/−1 | residual | //Rakmou-leusanの希望は決して失われたことはなく、これからも永遠に失われることはありません。// |
+| 63 | 8 | 320–320 | 877–879 | +3/−1 | supplement | [[collapsible show="+ ソースコードを表示" hide="- ソースコードを隠す"]] |
+| 64 | 8 | — | 882–882 | +1/−0 | mechanical | (blank lines only) |
 | 65 | 9 | 331–331 | — | +0/−1 | residual | @import url('https://fonts.bunny.net/css?family=Charm'); |
-| 66 | 10 | — | 2415–2415 | +1/−0 | mechanical | (blank lines only) |
-| 67 | 10 | 826–826 | 2420–2420 | +1/−1 | supplement | [[include :scp-jp:component:license-box-theme]] |
-| 68 | 11 | 838–838 | 2432–2432 | +1/−1 | supplement | [[include :scp-jp:component:license-box-end]] |
+| 66 | 10 | — | 1381–1381 | +1/−0 | mechanical | (blank lines only) |
+| 67 | 10 | 826–826 | 1386–1386 | +1/−1 | supplement | [[include :scp-jp:component:license-box-theme]] |
+| 68 | 11 | 838–838 | 1398–1398 | +1/−1 | supplement | [[include :scp-jp:component:license-box-end]] |
 
 ## Full diff
 
 <details>
-<summary>Section 1 — original 1–66 · candidate 1–1655 · +1631/−42 · residual, supplement, translation</summary>
+<summary>Section 1 — original 1–66 · candidate 1–621 · +597/−42 · residual, supplement, translation</summary>
 
 ```diff
-@@ -1,66 +1,1655 @@
+@@ -1,66 +1,621 @@
 -[[iftags +theme]]
 -[[image logo_sh_2.png class="crom-thumbnail" style="display: none"]]
 +[[iftags +テーマ]]
@@ -125,1063 +125,29 @@ adjudicated explanation.
 +[[module CSS]]
 +@import url('https://fonts.googleapis.com/css2?family=Charm&display=swap');
 +@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
-+/*  ____                  _ _     */
-+/* |  _ \                | | |    */
-+/* | |_) | __ _ ___  __ _| | |_   */
-+/* |  _ < / _` / __|/ _` | | __|  */
-+/* | |_) | (_| \__ \ (_| | | |_   */
-+/* |____/ \__,_|___/\__,_|_|\__|  */
-+/*                                */
-+/* ============================== */
-+/*                                */
-+/* [2021 Wikidot Theme]           */
-+/* Version 2.1.0                  */
-+/*                                */
-+/* by Liryn & Placeholder McD     */
-+/* with thanks to EstrellaYoshte  */
-+/*                                */
-+/* Built on Bedrock               */
-+/*                                */
-+
-+/*-----------------*/
-+/*---- IMPORTS ----*/
-+/*-----------------*/
-+
 +@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Abasalt-jp/1');
-+
 +@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 +
-+:root {
-+
-+    /*----------------------*/
-+    /*---- BEDROCK VARS ----*/
-+    /*----------------------*/
-+
-+    --header-logo: var(--logo);
-+    --logo: url('https://scp-wiki.wikidot.com/local--files/theme%3Abasalt/basalt_scp_logo-for_lightmode.svg');
-+
-+    --header-title: var(--title);
-+    --header-subtitle: var(--subtitle);
-+    --title: "SCP Foundation";
-+    --subtitle: "SECURE - CONTAIN - PROTECT";
-+
-+    --main-content-width: 60rem;
-+    --main-content-top-margin: 1.5rem;
-+    --base-font-size: .875rem;
-+    --page-content-font-size: calc(var(--true-font-size) * 1.13);
-+    --bottom-area-padding: calc(var(--true-font-size)*2);
-+    --side-bar-width: 17rem;
-+    --basalt-page-content-font-weight: 440;
-+
-+    --header-font-primary: var(--UI-font-primary);
-+    --UI-font-primary: 'Sofia Sans', 'Noto Sans JP';
-+
-+    --basalt-overtone: 10, 10, 11;
-+    --basalt-undertone: var(--basalt-bright-element-color);
-+    --basalt-UI-dark-palette: 50, 50, 51;
-+    --basalt-bright-element-color: 150, 24, 43;
-+    --basalt-dark-element-color: 105, 17, 30;
-+    --basalt-alternate-color: 221, 119, 17;
-+    --basalt-primary-color: 252, 252, 252;
-+    --basalt-secondary-color: 240, 240, 244;
-+    --basalt-tertiary-color: 229, 229, 238;
-+    --basalt-main-text-color: 35, 35, 38;
-+
-+    --title-border-color: var(--basalt-overtone);
-+    --license-area-divider-color: var(--basalt-overtone);
-+    --footer-divider-color: var(--basalt-overtone);
-+    --search-icon-color: var(--basalt-overtone);
-+    --hr-color: var(--general-border-color);
-+    --general-border-color: 220, 220, 220;
-+    --rate-module-cancel-color: var(--basalt-alternate-color);
-+    --scrollbar-thumb-color: var(--basalt-dark-element-color);
-+    --modal-fader-background-color: 0, 0, 0;
-+
-+    --side-bar-heading-background-color: 0, 0, 2, 0.07;
-+    --side-bar-media-background-color: none; /* Disabled by default */
-+    --side-bar-resources-background-color: none; /* Disabled by default */
-+    --side-bar-button-background-hover: none; /* Disabled by default */
-+    --side-bar-heading-text-color-hover: 255, 255, 255, 0.4;
-+    --side-bar-button-color-hover: var(--side-bar-button-color);
-+
-+    /*---------------------*/
-+    /*---- BASALT VARS ----*/
-+    /*---------------------*/
-+
-+    --basalt-UI-background-color: var(--basalt-secondary-color);
-+    --header-background-color: var(--basalt-UI-background-color);
-+    --side-bar-background-color: var(--basalt-UI-background-color);
-+    --bottom-area-background-color: var(--basalt-UI-background-color);
-+    --edit-area-ancillary-background-color: var(--basalt-UI-background-color);
-+    --edit-area-toolbar-background-color: var(--basalt-UI-background-color);
-+    --button-background-color: var(--basalt-UI-background-color);
-+
-+    --basalt-UI-text-color: var(--basalt-main-text-color);
-+    --header-title-color: var(--basalt-UI-text-color);
-+    --header-subtitle-color: var(--basalt-UI-text-color);
-+    --top-bar-link-color: var(--basalt-UI-text-color);
-+    --search-icon-color: var(--basalt-UI-text-color);
-+    --side-bar-heading-text-color: var(--basalt-UI-text-color);
-+    --side-bar-link-color: var(--basalt-UI-text-color);
-+    --bottom-area-text-color: var(--basalt-UI-text-color);
-+    --edit-area-ancillary-text-color: var(--basalt-UI-text-color);
-+    --button-text-color: var(--basalt-UI-text-color);
-+    --basalt-sub-text-color: var(--basalt-UI-text-color);
-+
-+    --ACS-font: var(--header-font);
-+    --basalt-th-background-color: var(--basalt-UI-dark-palette);
-+    --basalt-th-text-color: var(--basalt-light-text-color);
-+    --image-caption-text-color: var(--basalt-main-text-color);
-+    --authorbox-background-color: var(--basalt-primary-color);
-+    --floatbox-background-color: var(--basalt-secondary-color);
-+    --document-background-color: 253, 253, 253;
-+    --darkdocument-background-color: 30, 30, 35;
-+
-+    --header-drop-shadow-opacity: 0.1;
-+    --window-border-radius: 8px;
-+
-+    /*-----------------------*/
-+    /*---- EXTERNAL VARS ----*/
-+    /*-----------------------*/
-+
-+    /* Info Bar */
-+    --linkColour: rgb(var(--basalt-light-text-color)) !important;
-+    --barColour: rgb(var(--basalt-undertone)) !important;
-+    --fnColor: rgb(var(--basalt-bright-element-color));
-+
-+    /* BetterFootnotes */
-+    --posX: 6vw;
-+    --fnLinger: 0.33s;
-+
-+    /* ACS */
-+    --one-color: 0, 159, 107;
-+    --two-color: 0, 135, 189;
-+    --three-color: 255, 211, 0;
-+    --four-color: 255, 109, 0;
-+    --five-color: 196, 2, 51;
-+    --six-color: 173, 77, 191;
-+
-+}
-+
-+/*------------------------*/
-+/*---- BASALT CLASSES ----*/
-+/*------------------------*/
-+
-+:is(div.blockquote, blockquote) {
-+    color: rgb(var(--basalt-main-text-color));
-+    overflow: auto;
-+}
-+
-+:is(div.blockquote, blockquote):has(div.floatbox) {
-+    overflow: unset;
-+}
-+
-+#page-content div.notation {
-+    max-width: 45rem;
-+}
-+
-+div.notation {
-+    display: block;
-+    margin-inline: auto;
-+    margin-block: 1.4rem;
-+    padding-inline: 1.1rem;
-+    padding-block: 0.9rem;
-+    background-color: rgb(var(--basalt-secondary-color));
-+    border-left: solid 0.25rem rgb(var(--general-border-color));
-+    border-right: solid 0.25rem rgb(var(--general-border-color));
-+    color: rgb(var(--basalt-main-text-color));
-+}
-+
-+#page-content div.modal {
-+    max-width: 57rem;
-+}
-+
-+div.modal {
-+    display: block;
-+    margin-inline: auto;
-+    margin-block: 1.4rem;
-+    padding-inline: 1.5rem;
-+    padding-block: 0.5rem;
-+    background-color: rgb(var(--basalt-primary-color));
-+    border: solid 0.2rem rgb(var(--general-border-color));
-+    color: rgb(var(--basalt-main-text-color));
-+}
-+
-+#page-content div.smallmodal {
-+    max-width: 47rem;
-+}
-+
-+div.smallmodal {
-+    display: block;
-+    margin-inline: auto;
-+    margin-block: 1.4rem;
-+    padding-inline: 1rem;
-+    padding-block: 0.2rem;
-+    background-color: rgb(var(--basalt-primary-color));
-+    border: solid 0.15rem rgb(var(--general-border-color));
-+    color: rgb(var(--basalt-main-text-color));
-+}
-+
-+#page-content div:is(.jotting, .transcript) {
-+    max-width: 42rem;
-+}
-+
-+div:is(.jotting, .transcript) {
-+    display: block;
-+    margin-inline: auto;
-+    margin-block: 1.4rem;
-+    padding-inline: 1.5rem;
-+    padding-block: 0.2rem;
-+    background-color: rgb(var(--basalt-secondary-color));
-+    border: dashed 0.15rem rgb(var(--general-border-color));
-+    color: rgb(var(--basalt-main-text-color));
-+}
-+
-+#page-content div.papernote {
-+    max-width: 30rem;
-+}
-+
-+div.papernote {
-+    display: block;
-+    margin-inline: auto;
-+    margin-block: 1.4rem;
-+    padding: 1rem 2rem;
-+    background-color: rgb(var(--basalt-tertiary-color));
-+    color: rgb(var(--basalt-main-text-color));
-+}
-+
-+#page-content div:is(.document, .darkdocument) {
-+    max-width: 45rem;
-+}
-+
-+div:is(.document, .darkdocument) {
-+    display: block;
-+    margin-inline: auto;
-+    margin-block: 1.5em;
-+    padding: 1.5rem;
-+    position: relative;
-+    --posX: -20vw;
-+}
-+
-+div.document {
-+    background-color: rgb(var(--document-background-color));
-+    box-shadow: 0px 1px 1.9px -4px rgba(0, 0, 0, 0.1), 0px 6px 15px -4px rgba(0, 0, 0, 0.2);
-+    color: rgb(50, 50, 53);
-+}
-+
-+div.darkdocument {
-+    background-color: rgb(var(--darkdocument-background-color));
-+    box-shadow: 0px 1px 1.9px -4px rgba(0, 0, 10, 0.8), 0px 6px 15px -4px rgba(0, 0, 7, 0.9);
-+    color: rgb(195, 195, 200);
-+}
-+
-+div:is(.document, .darkdocument)::before,
-+div:is(.document, .darkdocument)::after {
-+    content: "";
-+    height: 98%;
-+    position: absolute;
-+    width: 98%;
-+    z-index: -1;
-+}
-+
-+div:is(.document, .darkdocument)::before {
-+    left: -5px;
-+    top: 4px;
-+    transform: rotate(-2.5deg);
-+}
-+
-+div:is(.document, .darkdocument)::after {
-+    right: -3px;
-+    top: 1px;
-+    transform: rotate(1.4deg);
-+}
-+
-+div:is(.document)::before,
-+div:is(.document)::after {
-+    background-color: rgb(var(--document-background-color));
-+}
-+
-+div:is(.darkdocument)::before,
-+div:is(.darkdocument)::after {
-+    background-color: rgb(var(--darkdocument-background-color));
-+    opacity: 90%;
-+}
-+
-+div.document::before {
-+    box-shadow: 0px 1px 1.9px -4px rgba(0, 0, 0, 0.1), 0px 6px 15px -4px rgba(0, 0, 0, 0.1);
-+}
-+
-+div.document::after {
-+    box-shadow: 0px 1px 1.9px -4px rgba(0, 0, 0, 0.1), 0px 6px 15px -4px rgba(0, 0, 0, 0.05);
-+}
-+
-+div.darkdocument::before {
-+    box-shadow: 0px 1px 1.9px -4px rgba(0, 0, 10, 0.8), 0px 6px 15px -4px rgba(0, 0, 7, 0.9);
-+}
-+
-+div.darkdocument::after {
-+    box-shadow: 0px 1px 1.9px -4px rgba(0, 0, 10, 0.8), 0px 6px 15px -4px rgba(0, 0, 7, 0.05);
-+}
-+
-+@media only screen and (max-width: 1020px) {
-+
-+    div:is(.document, .darkdocument)::before,
-+    div:is(.document, .darkdocument)::after {
-+    	display: none;
-+    }
-+}
-+
-+div[class$="_memo"] {
-+    background: var(--memo-logo) rgba(var(--memo-color), 1);
-+    background-size: contain;
-+    background-position: top center;
-+    background-repeat: no-repeat;
-+    min-height: 4rem;
-+    margin-inline: auto;
-+    margin-block: 2rem;
-+    padding-inline: 20px;
-+    padding-block: 10px;
-+    border: solid 2px rgba(0, 0, 0, 0.1);
-+    text-align: center;
-+}
-+
-+div[class$="_memo"]::before {
-+    content: var(--memo-heading);
-+    font-family: var(--UI-font);
-+    font-weight: 900;
-+    font-size: 1.3em;
-+    text-align: center;
-+    margin: 0 auto 1rem auto;
-+    display: flex;
-+    flex-direction: column;
-+    padding-top: 0.5em;
-+}
-+
-+div.raisa_memo {
-+    --memo-heading: "NOTICE FROM THE RECORDS AND INFORMATION SECURITY ADMINISTRATION";
-+    --memo-logo: url(https://scp-wiki.wikidot.com/local--files/theme%3Abasalt/RAISA_LIGHTLOGO.png);
-+    --memo-color: 255, 243, 173;
-+}
-+
-+div.classification_memo {
-+    --memo-heading: "CLASSIFICATION COMMITTEE MEMORANDUM";
-+    --memo-logo: url(https://scp-wiki.wikidot.com/local--files/theme%3Abasalt/CLASSIFICATION_LIGHTLOGO.png);
-+    --memo-color: 237, 245, 243;
-+}
-+
-+div.ettra_memo {
-+    --memo-heading: "NOTICE FROM THE EMERGENT THREAT TACTICAL RESPONSE AUTHORITY";
-+    --memo-logo: url(https://scp-wiki.wikidot.com/local--files/theme%3Abasalt/ETTRA_LIGHTLOGO.png);
-+    --memo-color: 245, 215, 215;
-+}
-+
-+div.ethics_memo {
-+    --memo-heading: "ETHICS COMMITTEE MEMORANDUM";
-+    --memo-logo: url(https://scp-wiki.wikidot.com/local--files/theme%3Abasalt/ETHICS_LIGHTLOGO.png);
-+    --memo-color: 255, 219, 196;
-+}
-+
-+div.temporal_memo {
-+    --memo-heading: "TEMPORAL ANOMALIES DEPARTMENT";
-+    --memo-logo: url(https://scp-wiki.wikidot.com/local--files/theme%3Abasalt/DELTA_T_LIGHTLOGO.png);
-+    --memo-color: 255, 255, 255;
-+}
-+
-+div.overwatch_memo {
-+    --memo-heading: "OVERWATCH COMMAND";
-+    --memo-logo: url(https://scp-wiki.wikidot.com/local--files/theme%3Abasalt/O5_LIGHTLOGO.png);
-+    --memo-color: 227, 227, 227;
-+}
-+
-+div.miscomm_memo {
-+    --memo-heading: "NOTICE FROM THE DEPARTMENT OF MISCOMMUNICATIONS";
-+    --memo-logo: url(https://scp-wiki.wikidot.com/local--files/theme%3Abasalt/MISCOMM_LIGHTLOGO.png);
-+    --memo-color: 238, 237, 250;
-+}
-+
-+.table1 {
-+    --basalt-th-background-color: var(--one-color);
-+}
-+
-+.table2 {
-+    --basalt-th-background-color: var(--two-color);
-+}
-+
-+.table3 {
-+    --basalt-th-background-color: var(--three-color);
-+    --basalt-th-text-color: var(--basalt-main-text-color);
-+}
-+
-+.table4 {
-+    --basalt-th-background-color: var(--four-color);
-+}
-+
-+.table5 {
-+    --basalt-th-background-color: var(--five-color);
-+}
-+
-+.table6 {
-+    --basalt-th-background-color: var(--six-color);
-+}
-+
-+div:is(.table1, .table2, .table3, .table4, .table5, .table6) .scp-image-block {
-+    border-bottom-color: rgba(var(--basalt-th-background-color), 0.75);
-+}
-+
-+div.tableb :is(#page-content table:not(.form), table.wiki-content-table) {
-+    border-collapse: separate;
-+    border-spacing: 4px;
-+}
-+
-+span:is(.bigtext, .bt) {
-+    font-family: var(--header-font);
-+    font-weight: bold;
-+}
-+
-+span:is(.specialtext, .st) {
-+    font-family: var(--UI-font);
-+    font-weight: bold;
-+}
-+
-+:is(.table1, .table2, .table3, .table4, .table5, .table6) span:is(.st, .specialtext) {
-+    color: rgb(var(--basalt-th-background-color));
-+}
-+
-+#page-content div.floatbox {
-+    background-color: rgb(var(--floatbox-background-color));
-+    float: left;
-+    max-width: calc(var(--main-content-width)/2.25);
-+    box-sizing: border-box;
-+    margin: 0.25rem 1.25rem;
-+    margin-left: clamp(calc(var(--main-content-width)/-4.5), calc((87.5vw - 95%)/-2), 0rem);
-+    padding-inline: 1.2rem;
-+    padding-block: 0.5rem;
-+    font-size: 0.9125em;
-+    border-radius: 7px;
-+    border: solid 0.12rem rgba(var(--general-border-color), 0.4);
-+}
-+
-+#page-content div.floatbox.right {
-+    float: right;
-+    margin-left: 1.25rem;
-+    margin-right: clamp(calc(var(--main-content-width)/-4.5), calc((87.5vw - 95%)/-2), 0rem);
-+}
-+
-+@media only screen and (max-width: 640px) {
-+    #page-content div:is(.floatbox, .floatbox.right) {
-+    	float: none;
-+    	margin: 0.5rem auto;
-+    	width: 100%;
-+    }
-+}
-+
-+:is(.table-no-border, .authorbox) td {
-+    border-color: transparent !important;
-+}
-+
-+/*--------------*/
-+/*---- MISC ----*/
-+/*--------------*/
-+
-+html {
-+    scroll-behavior: smooth;
-+    overflow-x: hidden;
-+}
-+
-+
-+body,
-+li,
-+p {
-+    line-height: 1.55;
-+}
-+
-+@supports (font-feature-settings: inherit) {
-+
-+    *,
-+    *::before,
-+    *::after {
-+    	font-feature-settings:
-+    		"zero" var(--zero, 0);
-+    }
-+
-+}
-+
-+::selection {
-+    text-shadow: none !important;
-+}
-+
-+#page-content {
-+    font-size: var(--page-content-font-size);
-+}
-+
-+:where(#main-content) [id] {
-+    scroll-margin-top: calc(var(--header-final-height) + 1rem);
-+}
-+
-+/* MISC --> Header alterations */
-+
-+#header {
-+    background: linear-gradient(0deg, rgba(var(--header-background-color), 0.85) 0%, rgb(var(--header-background-color)) 100%);
-+    border-bottom: none;
-+    box-shadow: 0px 0px 8.5px -1px rgba(0, 0, 0, var(--header-drop-shadow-opacity)), 0px 0px 68px -21px rgba(0, 0, 0, calc(var(--header-drop-shadow-opacity) * 4));
-+    -webkit-backdrop-filter: blur(var(--basalt-UI-blur));
-+    backdrop-filter: blur(var(--basalt-UI-blur));
-+    font-family: var(--header-font);
-+}
-+
-+#header h1 a {
-+    padding-left: calc(var(--base-header-height)*0.25);
-+    padding-right: calc(var(--base-header-height)*0.5);
-+}
-+
-+#header h1 a span::before {
-+    font-weight: 900;
-+}
-+
-+#header h1 a span::after {
-+    margin-bottom: 6px;
-+    font-weight: 600;
-+}
-+
-+#header h1 a span {
-+    align-items: unset;
-+    text-align: unset;
-+}
-+
-+#top-bar div[class*="top-bar"] ul li ul li a {
-+    box-shadow: none;
-+}
-+
-+#login-status a:is(.login-status-create-account, .login-status-sign-in) {
-+    transition: color 0.4s;
-+}
-+
-+#login-status a:is(.login-status-create-account, .login-status-sign-in):hover {
-+    color: rgb(var(--login-status-text-color-hover));
-+}
-+
-+#login-status span.printuser>a img {
-+    filter: drop-shadow(0rem 0.2rem 0.35rem rgba(0, 0, 0, 0.19));
-+}
-+
-+div#account-options>ul>li>a {
-+    transition: color 0.4s;
-+}
-+
-+/* MISC --> Side bar alterations */
-+
-+#side-bar:is(:hover, :focus-within)::before {
-+    height: calc(var(--base-header-height) + var(--header-border-width));
-+}
-+
-+:is(#side-bar, #interwiki) .heading {
-+    background-color: rgb(var(--side-bar-heading-background-color));
-+    font-weight: 900;
-+    color: rgba(var(--side-bar-heading-text-color), 0.8);
-+}
-+
-+#side-bar:is(:hover, :focus-within)::after {
-+    opacity: 40%;
-+}
-+
-+#side-bar::after {
-+    transition: background-color var(--side-bar-transition), opacity var(--side-bar-transition);
-+}
-+
-+/* MISC --> Various UI alterations */
-+
-+form#edit-page-form table.form td:nth-of-type(1) {
-+    display: none;
-+}
-+
-+#edit-page-title {
-+    background-color: rgba(var(--edit-area-ancillary-background-color)) !important;
-+    border: solid var(--edit-area-border-width) rgb(var(--edit-area-border-color), 0.5) !important;
-+    border-top-right-radius: var(--window-border-radius);
-+    border-top-left-radius: var(--window-border-radius);
-+    font-family: var(--UI-font);
-+    font-weight: 900;
-+    text-align: center;
-+}
-+
-+#edit-page-textarea {
-+    font-family: var(--mono-font);
-+    font-size: 110%;
-+    height: 47vh;
-+}
-+
-+#edit-page-comments {
-+    font-family: var(--mono-font);
-+}
-+
-+#edit-page-form .wd-editor-toolbar-panel a::after {
-+    -webkit-mask-size: 70%;
-+    mask-size: 70%;
-+}
-+
-+#wd-editor-toolbar-panel>div {
-+    grid-gap: calc(var(--edit-area-toolbar-icon-size)/1.6);
-+}
-+
-+#edit-page-form>.buttons.alignleft>input[type="button"] {
-+    font-size: var(--true-font-size);
-+    padding: 1ch;
-+}
-+
-+#edit-page-title,
-+#lock-info,
-+#edit-page-comments {
-+    color: rgb(var(--edit-area-ancillary-text-color));
-+}
-+
-+#lock-info {
-+    border: solid 0.12rem rgba(var(--general-border-color), 0.4);
-+}
-+
-+#lock-timer {
-+    font-family: var(--mono-font);
-+}
-+
-+#action-area div.buttons> :is([name="save"], [name="save-continue"], [onclick*="PageTagsModule.listeners.save(event)"]) {
-+    --button-text-color: var(--basalt-positive-color);
-+    font-weight: bold;
-+}
-+
-+#footer {
-+    color: rgb(var(--bottom-area-text-color));
-+    border-top: solid 2px rgb(var(--basalt-tertiary-color));
-+}
-+
-+#footer-bar {
-+    display: none;
-+}
-+
-+#license-area::before,
-+#license-area::after {
-+    margin-bottom: 10px;
-+}
-+
-+div[id*="page-options-bottom"]>a {
-+    font-family: var(--UI-font);
-+    color: rgb(var(--basalt-main-text-color));
-+}
-+
-+#more-options-button {
-+    background-color: rgb(var(--basalt-tertiary-color));
-+    color: inherit;
-+}
-+
-+form#edit-page-form>table.form {
-+    position: relative;
-+}
-+
-+form#edit-page-form>table.form::before {
-+    content: "Title";
-+    display: block;
-+    position: absolute;
-+    bottom: 30%;
-+    width: calc(100% - 15px);
-+    padding-left: 15px;
-+    pointer-events: none;
-+    opacity: 50%;
-+    font-family: var(--mono-font);
-+    font-size: 11px;
-+    color: rgb(var(--edit-area-ancillary-text-color));
-+}
-+
-+#edit-page-textarea:focus-visible {
-+    border-color: rgb(var(--basalt-dark-element-color));
-+}
-+
-+#action-area>h1 {
-+    font-weight: 900;
-+}
-+
-+#action-area>p {
-+    font-size: 0.9em;
-+    text-align: center;
-+}
-+
-+#footer .options {
-+    border-right: solid var(--footer-divider-thickness) rgba(var(--footer-divider-color), 0.1);
-+}
-+
-+#license-area::before {
-+    background: rgba(var(--license-area-divider-color), 0.1);
-+}
-+
-+.autocomplete-list li.yui-ac-highlight {
-+    background-color: rgb(var(--basalt-secondary-color));
-+}
-+
-+#revision-list .page-history tr[id*="revision-row"] td:nth-child(1)::before {
-+    background-color: rgb(var(--basalt-undertone));
-+}
-+
-+#revision-list .page-history tr[id*="revision-row"]::before {
-+    background: rgb(var(--basalt-undertone));
-+}
++/*
++  Delivery note: the Basalt base (incl. Bedrock) is delivered by the
++  @import of theme:basalt-jp code block 1 above; it is not inlined.
++  The three rules following this note have no counterpart in the
++  current basalt-jp block 1: they are rules of the EN Basalt base
++  snapshot that basalt-jp has since dropped, preserved verbatim from
++  the former inlined copy so this theme keeps their effect.
++*/
 +
 +#revision-list .page-history tr[id*="revision-row"] td:nth-child(7) {
 +    font-family: var(--mono-font);
-+}
-+
-+.owindow {
-+    border-radius: var(--window-border-radius);
-+    font-family: var(--UI-font);
-+}
-+
-+.owindow .button-bar>a[onclick*="cleanAll"] {
-+    border-top-right-radius: var(--window-border-radius);
-+}
-+
-+.owindow .title {
-+    font-family: var(--UI-font);
-+    background-color: transparent;
-+    height: 2rem;
-+    justify-content: center;
-+    opacity: 60%;
-+    color: rgb(var(--basalt-main-text-color));
-+}
-+
-+.owindow div[style*="margin-top"] {
-+    margin-bottom: 12px;
-+    margin-top: 20px !important;
-+}
-+
-+.owindow> :not(.button-bar, .title)>img {
-+    height: 5em;
-+    border-radius: var(--window-border-radius);
-+}
-+
-+.owindow .button-bar>a[onclick*="cleanAll"]::after {
-+    background: rgb(var(--basalt-main-text-color));
-+    transition-property: background;
-+    transition-duration: 0.3s;
-+}
-+
-+.owindow .button-bar>a[onclick*="cleanAll"]:hover::after {
-+    background: rgb(var(--basalt-light-text-color));
-+}
-+
-+.owindow>.content.modal-body>img+h1+table>tbody>tr>td {
-+    text-align: inherit;
-+}
-+
-+#odialog-container[style*="block"] {
-+    background-color: rgb(var(--modal-fader-background-color), 0.65);
-+}
-+
-+#search-top-box::before {
-+    background-color: rgb(var(--basalt-UI-dark-palette));
-+}
-+
-+#search-top-box-input {
-+    outline: solid 0 rgb(var(--basalt-UI-dark-palette));
-+}
-+
-+#main-content .page-tags span::before {
-+    content: "TAGS";
-+    font-weight: 800;
-+    opacity: 80%;
-+    margin-inline: 10px;
-+    align-self: center;
-+    font-size: 10px;
-+}
-+
-+#main-content>.page-tags>span {
-+    grid-gap: 0.6rem;
-+    font-family: var(--UI-font);
-+    font-size: calc(var(--true-font-size)*0.85);
-+}
-+
-+#history-subarea,
-+#action-area {
-+    font-family: var(--UI-font);
-+}
-+
-+#action-area>h1 {
-+    margin: 0.425rem 0 1rem;
-+}
-+
-+.preview-message {
-+    border: 0.15rem dashed rgb(var(--general-border-color));
-+    background-color: rgba(var(--basalt-secondary-color));
-+}
-+
-+.diff-box table.page-compare th {
-+    font-family: unset;
-+}
-+
-+input[type="checkbox"],
-+[type="radio"] {
-+    cursor: pointer;
-+}
-+
-+.warning-top-box {
-+    background-color: rgb(var(--basalt-primary-color));
-+    border: 0.2rem solid rgb(var(--general-border-color));
-+    border-radius: 0.5rem;
-+    padding: 0.7rem 1.5rem;
-+}
-+
-+.warning-top-box h1 {
-+    color: rgb(var(--basalt-main-text-color));
-+}
-+
-+/* MISC --> Content alterations */
-+
-+#page-content {
-+    padding-block: 2em;
-+    font-weight: var(--basalt-page-content-font-weight);
-+}
-+
-+#page-title,
-+.meta-title {
-+    border-bottom: solid 0.15rem rgba(var(--title-border-color), 0.1);
-+    font-weight: 800;
-+    color: rgba(var(--basalt-main-text-color), 0.75);
-+    letter-spacing: -0.05rem;
-+}
-+
-+#page-title {
-+    display: block !important;
-+}
-+
-+#breadcrumbs,
-+.pseudocrumbs {
-+    font-size: 1em;
-+    margin: 0.7em 0 0 0;
-+}
-+
-+h1,
-+h2 {
-+    font-weight: 800;
-+}
-+
-+h3,
-+h4,
-+h5,
-+h6 {
-+    font-weight: 700;
-+}
-+
-+.footer-wikiwalk-nav {
-+    margin-top: 3em;
-+    font-family: var(--UI-font);
-+    font-size: 0.9em;
-+    font-weight: 800;
-+    word-spacing: 0.3em;
-+}
-+
-+.licensebox {
-+    margin-bottom: 1rem;
-+    font-size: 0.9em;
-+    text-align: center;
-+}
-+
-+.licensebox :is(blockquote, .blockquote) {
-+    text-align: left;
-+}
-+
-+hr {
-+    height: 2px;
-+    margin-block: 1rem;
-+    margin-inline: 1rem;
-+    overflow: auto;
-+}
-+
-+.bibitems .title,
-+.footnotes-footer .title {
-+    text-transform: none;
-+}
-+
-+.bibitems,
-+.footnotes-footer {
-+    margin: 4rem 0;
-+}
-+
-+.anom-bar-esoteric .text-part > .main-class > .second-class > .class-category {
-+    font-size: 0.75em !important;
-+}
-+
-+:is(.anom-bar-container, .anom-bar-esoteric) + :not(.acs-extra),
-+.acs-extra + * {
-+    margin-top: 1.2rem !important;
-+}
-+
-+.anom-bar-container,
-+.anom-bar-container *,
-+.acs-extra {
-+    font-family: var(--ACS-font), var(--body-font) !important;
-+    font-weight: 800;
 +}
 +
 +div.anom-bar > div.top-box {
 +    grid-template-columns: auto 1fr auto;
 +}
 +
-+.anom-bar-container.ekhi .danger-diamond>.quadrants>.left-quad,
-+.anom-bar-container.danger .danger-diamond>.quadrants>.right-quad {
-+    background-color: rgba(255, 109, 0, 0.25);
-+    background-color: rgb(var(--four-color), 0.25) !important;
-+}
-+
-+div:is(.class1, .item1)>div {
-+    font-family: var(--ACS-font), var(--header-font);
-+    font-weight: 900;
-+}
-+
-+div.class1>div {
-+    font-size: 2em;
-+}
-+
-+div.item1>div {
-+    font-size: 1.7em;
-+    text-transform: uppercase;
-+}
-+
-+#delete-button:is(:hover, :focus) {
-+    background-color: rgb(var(--basalt-negative-color));
-+}
-+
-+.yui-ac-content {
-+    background: rgb(var(--basalt-primary-color));
-+    border: 1px solid rgb(var(--basalt-tertiary-color));
-+}
-+
-+/* BetterFootnotes adjusted to make better use of space on wider screens, at the cost of slide-in animation */
-+
-+/* Plus some cosmetic adjustments */
-+
-+.fncon {
-+    background-color: rgb(var(--basalt-primary-color));
-+    border: solid 2px rgb(var(--basalt-tertiary-color));
-+    border-left: none;
-+    box-shadow: -8px 0px var(--fnColor);
-+    line-height: inherit;
-+    font-size: 0.9em;
-+    font-weight: var(--basalt-page-content-font-weight);
-+    right: var(--posX);
-+    transition: opacity 0.15s linear var(--fnLinger), visibility 0.01s linear var(--fnInteract);
-+}
-+
-+.fnnum:hover+.fncon,
-+.fncon:hover {
-+    transition: opacity 0.15s linear;
-+}
-+
-+.fncon::before {
-+    color: rgba(255, 255, 255, 0.8);
-+    top: -2px;
-+    left: initial;
-+    right: 100%;
-+    transform: none;
-+    font-size: 1.125rem;
-+    text-align: right;
-+    font-family: var(--mono-font);
-+}
-+
-+@media only screen and (max-width: 1279px) {
-+    .fncon {
-+    	left: 10%;
-+    }
-+}
-+
-+.collection .collapsible-block {
-+    background-color: rgb(var(--basalt-background-color));
-+    border: none;
-+}
-+
-+.collection :is(.collapsible-block-unfolded-link, .collapsible-block-folded) a {
-+    border: none;
-+}
-+
-+sub,
-+sup {
-+    line-height: inherit;
-+}
-+
-+.scp-image-block.block-left,
-+.scp-image-block.block-right {
-+    clear: both;
-+}
-+
-+.scp-image-block .scp-image-caption {
-+    font-weight: 600;
-+    color: rgb(var(--image-caption-text-color));
-+}
-+
-+/*
-+.scp-image-block>a {
-+    pointer-events: none;
-+}
-+*/
-+
-+.authorbox {
-+    background-color: rgb(var(--authorbox-background-color)) !important;
-+    color: rgb(var(--basalt-main-text-color)) !important;
-+    filter: drop-shadow(0rem 0.4rem 0.7rem rgba(0,0,0,0.2)) !important;
-+}
-+
-+.authorbox::before {
-+    border-color: transparent transparent rgb(var(--authorbox-background-color)) transparent !important;
-+}
-+
-+.authorlink-wrapper {
-+    --author-top-adjust: 0rem;
-+    --author-bottom-adjust: 1.5rem;
-+}
-+
-+.authorlink-wrapper>a {
-+    margin-left: 0.4em;
-+    font-weight: bold !important;
-+    font-size: 80%;
-+}
-+
-+.authorlink-wrapper>a::after {
-+    width: 0.7rem !important;
-+    height: 0.7rem !important;
-+    margin-left: 0.4em !important;
-+}
-+
-+
-+@supports (-webkit-touch-callout: none) /* Targets iOS only */ {
-+
-+    :is(#page-content table:not(.form), table.wiki-content-table) {
-+    	max-width: none;
-+    	width: auto;
-+    	min-width: 100%;
-+    }
-+
-+}
-+
-+:is(#page-content table:not(.form), table.wiki-content-table) th {
-+    font-family: var(--body-font);
-+    padding: 0.45em 0.7em;
-+    background-color: rgb(var(--basalt-th-background-color));
-+    border-color: rgb(var(--basalt-th-background-color));
-+    color: rgb(var(--basalt-th-text-color));
-+    letter-spacing: 0.033rem;
-+    text-align: center;
-+}
-+
 +:where(#page-content) table:not(.form), table.wiki-content-table {
 +    margin: 0rem auto;
 +}
-+
-+#page-content .quadrants > div {
-+    top: 2.25%;
-+    left: 18.5%;
-+}
-+
-+.printuser a {
-+    font-weight: 600;
-+}
-+
-+/*-------------------------------------------------*/
-+/*----- END OF DEFAULT STYLING ("LIGHT MODE") -----*/
-+/*-------------------------------------------------*/
 +
 +/*
 +    Second Second Hytoth Theme
@@ -1814,10 +780,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 2 — original 69–75 · candidate 1658–1664 · +1/−1 · residual</summary>
+<summary>Section 2 — original 69–75 · candidate 624–630 · +1/−1 · residual</summary>
 
 ```diff
-@@ -69,7 +1658,7 @@
+@@ -69,7 +624,7 @@
  }
  [[/module]]
  
@@ -1831,10 +797,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 3 — original 97–108 · candidate 1686–1698 · +3/−2 · residual</summary>
+<summary>Section 3 — original 97–108 · candidate 652–664 · +3/−2 · residual</summary>
 
 ```diff
-@@ -97,12 +1686,13 @@
+@@ -97,12 +652,13 @@
  | subcolor3-has-light-text=1
  ]]
  
@@ -1855,10 +821,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 4 — original 113–202 · candidate 1703–1793 · +23/−22 · residual, translation</summary>
+<summary>Section 4 — original 113–202 · candidate 669–759 · +23/−22 · residual, translation</summary>
 
 ```diff
-@@ -113,90 +1703,91 @@
+@@ -113,90 +669,91 @@
  
  [[tabview]]
  [[tab Test]]
@@ -1977,10 +943,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 5 — original 228–270 · candidate 1819–1861 · +12/−12 · residual</summary>
+<summary>Section 5 — original 228–270 · candidate 785–827 · +12/−12 · residual</summary>
 
 ```diff
-@@ -228,43 +1819,43 @@
+@@ -228,43 +785,43 @@
  
  [[/div]]
  
@@ -2041,10 +1007,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 6 — original 275–286 · candidate 1866–1877 · +3/−3 · residual</summary>
+<summary>Section 6 — original 275–286 · candidate 832–843 · +3/−3 · residual</summary>
 
 ```diff
-@@ -275,12 +1866,12 @@
+@@ -275,12 +832,12 @@
  
  [[/collapsible]]
  
@@ -2065,10 +1031,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 7 — original 290–310 · candidate 1881–1901 · +7/−7 · residual</summary>
+<summary>Section 7 — original 290–310 · candidate 847–867 · +7/−7 · residual</summary>
 
 ```diff
-@@ -290,21 +1881,21 @@
+@@ -290,21 +847,21 @@
  
  [[/collapsible]]
  
@@ -2102,10 +1068,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 8 — original 313–325 · candidate 1904–1919 · +6/−3 · mechanical, residual</summary>
+<summary>Section 8 — original 313–325 · candidate 870–885 · +6/−3 · mechanical, residual, supplement</summary>
 
 ```diff
-@@ -313,13 +1904,16 @@
+@@ -313,13 +870,16 @@
  
  ------
  
@@ -2118,7 +1084,7 @@ adjudicated explanation.
 -[[collapsible show="+ Source Code" hide="- Source Code"]]
 +[[collapsible show="+ ソースコードを表示" hide="- ソースコードを隠す"]]
 +
-+このテーマのCSSはこのページにインラインされています。基盤のBasalt 2.1.0（Bedrockを含む）もこのページにインラインされています。テーマ固有の部分は以下の通りです:
++このテーマのCSSはページ冒頭のモジュールで配信されており、基盤のBasalt 2.1.0（Bedrockを含む）はtheme:basalt-jpから@importで読み込まれます。テーマ固有の部分は以下の通りです:
  
  [[code type="css"]]
 +
@@ -2130,10 +1096,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 9 — original 328–334 · candidate 1922–1927 · +0/−1 · residual</summary>
+<summary>Section 9 — original 328–334 · candidate 888–893 · +0/−1 · residual</summary>
 
 ```diff
-@@ -328,7 +1922,6 @@
+@@ -328,7 +888,6 @@
      The Second Hytoth logo is by Taoka.
  */
  
@@ -2146,10 +1112,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 10 — original 819–829 · candidate 2412–2423 · +2/−1 · mechanical, supplement</summary>
+<summary>Section 10 — original 819–829 · candidate 1378–1389 · +2/−1 · mechanical, supplement</summary>
 
 ```diff
-@@ -819,11 +2412,12 @@
+@@ -819,11 +1378,12 @@
  }
  
  [[/code]]
@@ -2168,10 +1134,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 11 — original 835–840 · candidate 2429–2434 · +1/−1 · supplement</summary>
+<summary>Section 11 — original 835–840 · candidate 1395–1400 · +1/−1 · supplement</summary>
 
 ```diff
-@@ -835,6 +2429,6 @@
+@@ -835,6 +1395,6 @@
  > **License:** CC BY-SA 3.0
  > **Source:** [https://scp-wiki.wikidot.com/theme:hytoth Second Hytoth Theme]
  ======

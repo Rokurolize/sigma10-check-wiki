@@ -8,9 +8,9 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 630 |
-| candidate.txt | 670 |
-| Added | +92 |
-| Review-stage comments | 0 of the +92 added lines |
+| candidate.txt | 671 |
+| Added | +93 |
+| Review-stage comments | 0 of the +93 added lines |
 | Removed | -52 |
 | Hunks | 10 |
 
@@ -39,7 +39,7 @@ with `python3 review/build_review.py`; verify with
 +**翻訳責任者:** AI
 +**翻訳年:** 2026
 +**原題:** 黄金之风 版式
-+**著作権者:** 原語版ページの作成者に同じ（scp-wiki-cn の theme:golden-wind）
++**著作権者:** Dr Roger_F_XL
 +**作成年:** 2025
 +**初訳時参照リビジョン:** 29
 +**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:golden-wind 黄金之风 版式]
@@ -136,7 +136,7 @@ with `python3 review/build_review.py`; verify with
  > ......
  > [[div class="content-panel centered standalone"]]
  > [[/div]]
-@@ -78,25 +90,45 @@
+@@ -78,25 +90,46 @@
  @@@@
  @@@@
  
@@ -150,8 +150,9 @@ with `python3 review/build_review.py`; verify with
 +/*
 +    黄金之风 / Golden Wind Theme
 +    Ported for SCP-JP (theme:golden-wind rev 29 on scp-wiki-cn).
-+    原語版の添付は sandbox / 別Wiki（roger, scp-wiki-cloud）に分散していたため、すべて候補ページの
-+    添付として再ホストしています。
++    原語版の添付は sandbox / 別Wiki（roger, scp-wiki-cloud）に分散していたため、候補ページの
++    添付として再ホストしています。例外は冒頭の画像ブロックの rojo で、これは再ホストせず、
++    scp-wiki-cloud 上の原語版 URL のまま参照しています。
 +*/
 +
 +/* 日本語フォント (JP localization): Noto Sans JP / Noto Serif JP are loaded
@@ -187,7 +188,7 @@ with `python3 review/build_review.py`; verify with
      background-size: 100px 93px;
  }
  
-@@ -106,7 +138,7 @@
+@@ -106,7 +139,7 @@
  
  div#header h1 a:before {
      content: "SCP基金会";
@@ -196,7 +197,7 @@ with `python3 review/build_review.py`; verify with
      color: #d22d7f;
      text-shadow:
          1px 1px 0px white,
-@@ -116,7 +148,7 @@
+@@ -116,7 +149,7 @@
  }
  
  #header h2 span {
@@ -205,7 +206,7 @@ with `python3 review/build_review.py`; verify with
      color: transparent;
      text-shadow: none;
  }
-@@ -134,7 +166,7 @@
+@@ -134,7 +167,7 @@
  
  /* GLOBAL WIDTH */
  div#container-wrap {
@@ -214,7 +215,7 @@ with `python3 review/build_review.py`; verify with
      background-size: 400px 400px;
  }
  
-@@ -267,20 +299,20 @@
+@@ -267,20 +300,20 @@
      border: solid 1px #ff007f;
      background-color: #000;
  }
@@ -238,7 +239,7 @@ with `python3 review/build_review.py`; verify with
  #search-top-box-form input[type=submit]:hover,
  #search-top-box-form input[type=submit]:focus {
      border: solid 1px #7f003f;
-@@ -440,7 +472,7 @@
+@@ -440,7 +473,7 @@
      border: 6px double #ff007f;
      padding: 0 1em;
      color: #000;
@@ -247,7 +248,7 @@ with `python3 review/build_review.py`; verify with
      background-position: center;
      background-repeat: no-repeat;
      background-color: #fff;
-@@ -459,14 +491,14 @@
+@@ -459,14 +492,14 @@
      border: 5px dashed #000;
      padding: 0 1em;
      color: #000;
@@ -264,7 +265,7 @@ with `python3 review/build_review.py`; verify with
      background-color: #fff;
  }
  
-@@ -610,21 +642,29 @@
+@@ -610,21 +643,29 @@
  .printuser img.small {
      margin-right: 1px;
      background-size: 33px 18px;
@@ -293,9 +294,9 @@ with `python3 review/build_review.py`; verify with
 +[[/collapsible]]
 +
 +[[include :scp-jp:component:license-box-backend
-+|author=scp-wiki-cn theme:golden-wind の作者]]
++|author=Dr Roger_F_XL]]
 +
-+> **画像・フォントの出典:** 原語版の theme:golden-wind の記載に従います。sandbox 等の外部ホストの添付は候補ページに再ホストしています。原語版にライセンス表記が無い画像は、投稿前に著者へ確認してください。
++> **画像・フォントの出典:** 原語版の theme:golden-wind の記載に従います。sandbox 等の外部ホストの添付は候補ページに再ホストしています（ただし、冒頭の画像ブロックの rojo は scp-wiki-cloud 上の原語版 URL のままです）。原語版にライセンス表記が無い画像は、投稿前に著者へ確認してください。
 +
 +[[include :scp-jp:component:license-box-end]]
 +

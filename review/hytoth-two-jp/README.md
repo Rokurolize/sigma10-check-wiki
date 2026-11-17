@@ -3,7 +3,8 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:hytoth-two-jp — origin EN, population #98 [GOSIGN2-LEDGER (b) row 98]
-- Overall: PASS — passed at the ledger determination; no OPEN items [GOSIGN2-LEDGER (b) row 98]
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 563ecdb78f79efa877608ee901b627700ffbe971fcdf4c16fc5061204242824e); verdict not carried over, re-judgement required
+> verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 15 errors / 0 warns / 1 info (hotlink×13, pseudo-ref×2); standing classes dispositioned in register c1 [T1-ROWS row 108; GOSIGN2-LEDGER (b) row 98]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — hidden-rate contradicted by eye; massive page-overflow 533/548px@320/375 and desktop 1433–1438px@1366 + 972px@768; header tagline/財団 clipped ≤375; WebKit-only IMMRAMA header clip ≤375; cdn.scpwiki.com carried over (Basalt exception). [RENDER-ROWS-1 (RENDER-S2-B)]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row [RENDER-ROWS-1 row]
@@ -11,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 98, source LOCALIZE-S2-B]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 98]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 98]
-- Computed against: canonical commit a497307c6e7eedc2580739ba55d2c3212d9cacd2; candidate file pages/theme:hytoth-two-jp.txt sha256:7e3d8b5d44b2a09e4051b564ce6c368c2d729639f7a9f19821f5a8d109b83364; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 45976a8f2cf8f9266e96fa5399f3a3bbeb254f7b; candidate file pages/theme:hytoth-two-jp.txt sha256:563ecdb78f79efa877608ee901b627700ffbe971fcdf4c16fc5061204242824e; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 Status: complete — skeleton by classify_hunks.py 0.1.0; every SLOT in the skeleton is resolved in the sections below and the Appendix.
@@ -182,6 +183,19 @@ Ledger (c3) records P7 as "FIXED (font wave)". No font-wave commit touches this 
 ### Item 3 — localize item (d) has no traceable outcome
 
 LOCALIZE-ROWS row 98 charges, as item (d), two untranslated display-visible in-fiction samples and mixed EN control labels in the settings-documentation region. Ledger (c3)'s outcome line for this theme names P4, P5 and P7 only. No commit after creation touches the region, and the current bytes show the samples translated or bilingual (section 6). Either the lane examined a pre-integration draft of the EN11 delivery, or the bilingual form is the answer it accepted without a (c3) line; the integrated file's history cannot decide between the two. Recorded as a record gap, with the current byte state stated in section 6 so a reviewer need not take the gap on trust.
+
+### Post-package repairs (REFRESH3-I) — hytoth-two rebuilt on its original's import form (landing 45976a8)
+
+The flag in Item 1 above described this package as built; the coordinator has since ruled on it and landed the repair. `FIX-HYTOTH.md` (campaign scout folder) is the item record and `GOSIGN2-SUPERVISOR-STATE.md` §"Main-chat rulings landed 2026-11-17" carries the ruling's grounds (brief level: **main-chat ruling 8** / hytoth branch 2a). The landing is canonical commit `45976a8f2cf8f9266e96fa5399f3a3bbeb254f7b` ("pages: hytoth-two rebuilt on its original's import form", 2026-11-17), which postdates this package's build at `7c640f1` (U-6 batch). `candidate.txt` has been recopied from the current canonical `pages/theme:hytoth-two-jp.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`; the regenerated stamp reads **STALE** by design — no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+The ruling's topology test held branch 2a: the original includes the Basalt theme page (orig L11) and never copies it; its single code block (orig L322–821) is the theme's own layer with `--basalt-*` overrides that presuppose an imported base; the "Version 2.1.0 / Built on Bedrock" Basalt banner and body existed only in the port. "Alcur with better manners": the full rebuild follows the alcur terms (precedent `FIX-ALCUR.md`, 5506feb), with the candidate's existing `theme%3Abasalt-jp/1` @import as the sole base channel. What changed in the candidate, 2,434 → 1,400 lines (+9/−1,043):
+
+- The 1,068-line inlined Basalt copy (old module L35–1066, 159 rules) was deleted. Its four head @imports stay in their old relative order — Charm (L7), Noto Sans JP (L8), `theme%3Abasalt-jp/1` (L9, the sole base channel), Sofia Sans (L10) — followed by a short delivery-note comment (L12–19) in place of the departed Basalt banner.
+- Three rules with no counterpart in current basalt-jp/1 were preserved verbatim at the head of the override layer (L21–31): the `#revision-list` history-column rule, the `div.anom-bar > div.top-box` grid rule, and the `table` margin rule — the same three selectors alcur preserved.
+- The theme's own layer (83 rules + 2 keyframes, including its banner) is byte-verbatim, relocated from old L1067–1575 to L33–541.
+- The source-code prose line (old L1913) was corrected from the false declaration that the CSS and Basalt base were inlined to the delivered form: the theme's CSS is served from the head module and Basalt 2.1.0 is @imported from theme:basalt-jp.
+- Cascade gate (FIX-HYTOTH §4): identical expanded import multisets and 667 winner keys in both forms, 0 keys unique to either side, and exactly 8 winner differences — D1–D7 the memo-logo `--memo-logo` stops being shadowed by the copy's stale EN-host URL and takes basalt-jp's JP-host URL, D8 the porter-era `--UI-font-primary` `'Sofia Sans', 'Noto Sans JP'` → `'Sofia Sans'` (JP glyphs remain delivered via basalt-jp's separate fallback variables). No `theme%3Abasalt/` EN-host path survives.
+- Checker (FIX-HYTOTH §7): 14 → 6 errors (the 8 inlined-copy hotlinks removed), no new finding of any class, 0 class (i) before and after. The remaining 5 hotlinks + 1 pseudo-ref are the theme's own standing asset/delivery classes.
 
 ## Change set outside the two diffed files
 

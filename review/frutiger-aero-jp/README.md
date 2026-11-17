@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:frutiger-aero-jp — origin CN, population #191 [GOSIGN2-LEDGER (b) row 191]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now df8304e23a048fd4ea5008054892071b39f5a45ecaefae8aa1955bdbe05c4924); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now fc443f531c00ee7db81d591e8f75febd1a218a3b554f3a9f40c4fed98a5ca928); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 4 errors / 1 warn / 1 info (hotlink×3, pseudo-ref×1); standing classes dispositioned in register c1 [T1-ROWS row 169; GOSIGN2-LEDGER (b) row 191]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page hidden-login (6 combos) + sidebar-not-opening (webkit) + runtime-hotlink site-theme chain; sample T2 no machine verdict (exit 2, no summary). [RENDER-ROWS-2 (RENDER-S2-E (CN6))]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 3 [LOCALIZE-ROWS row 190, source LOCALIZE-S2-D]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 190]
 - FIX5 re-judgement: item 57 (class D) FIXED — FIX5-FONTSA, commit 8eacd6e: CN OS faces replaced with JP faces [GOSIGN2-LEDGER-SUPPLEMENT (a) item 57]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:frutiger-aero-jp.txt sha256:df8304e23a048fd4ea5008054892071b39f5a45ecaefae8aa1955bdbe05c4924; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit c923abfb13007617bf34dd8cbde0512171d5cf10; candidate file pages/theme:frutiger-aero-jp.txt sha256:fc443f531c00ee7db81d591e8f75febd1a218a3b554f3a9f40c4fed98a5ca928; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 Status: complete (hand-written explanation; verdict stamp and diff.md are generated and must not be hand-edited).
@@ -147,6 +147,16 @@ The ledger's blocking item 57 reads: LOCALIZE-S2-D row, pattern 7 in the display
 Re-derivation from the bytes. The commit's diff for this file adds the bilingual comment and the two Google Fonts imports (Noto Sans JP, Noto Serif JP) after the Font Awesome import, replaces 'Microsoft YaHei' with 'Noto Sans JP' in the h1 stack (candidate L236) and the body stack (candidate L252), replaces Simhei with 'Noto Sans JP' in the Bauhaus stack (candidate L411), and appends a JP face to eight further stacks, including the two FlyFlowerSong stacks (candidate L1220, L1232). Every edited line is present in the current candidate, and no stack names 'Microsoft YaHei' or Simhei any more (the names survive only inside the FIX5 comment). The supplement's account is exact for the CN OS faces its sentence names. The FIXED judgement is confirmed from the package's own bytes, with one precision the supplement does not make: the FlyFlowerSong stacks were suffixed with a loaded JP face, not stripped of the dead face name (section 4).
 
 Discrepancies and standing items recorded by this package: (1) the sources.tsv supersession note is wrong against its own cited artifact (section 0). (2) The credit block's original-title field misquotes the original's title (section 1); no record dispositions it. (3) The greyday prose link names a page the JP production set does not contain (section 2). (4) The empty collapsible and duplicated source heading are the candidate's own introduction (section 8).
+
+### Post-package repairs (REFRESH3-I) — R-fix-4 (landing c923abf)
+
+The discrepancies in items (2)–(4) above and the Summary's "two stacks still lead with a font face the port itself removed" describe this package as built; the coordinator has since repaired them. Item record `FIX-RFIX4.md` in R/review-scout/ (its frutiger section, F-1…F-4), landing canonical commit `c923abfc` ("pages: R-fix-4 flags repaired (fmd, frutiger, golden-wind)", 2026-11-17), which postdates this package's build at `ded82a8`. `candidate.txt` has been recopied from the current canonical `pages/theme:frutiger-aero-jp.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`; the stamp reads **STALE** by design — no re-judgement is fabricated, and the frozen ledger remains the verdict record. What changed in the candidate (+6/−14):
+
+- **F-1** — all three title fields (タイトル L4, 原題 L7, 元記事リンク label L11) now quote the original's title character for character: 我们曾被许诺过的未来 Frutiger Aero主题版式 (previously 过 dropped, a slash inserted, 主题版式 shortened to 版式). Closes item (2) above. The holder field (Meowait) was already correct.
+- **F-2** — the dead face name stripped from both title stacks (now L1209, L1221): `font-family: 'FlyFlowerSong', 'Noto Serif JP', serif;` → `font-family: 'Noto Serif JP', serif;`. Rendering is unchanged (the loaded second face already governed). **Brief-vs-bytes discrepancy (F-2), recorded as instructed:** the brief directed aligning the stacks to "the suffixed form the port itself uses for this face", but that form has no referent in the bytes — the only FlyFlower token is the unsuffixed name FlyFlowerSong (73 occurrences), and the two stacks already carried FIX5's only suffixed shape. The remedy applied instead is the port's own dominant treatment of dead face names in FIX5's parent commit 8eacd6e (where 'Microsoft YaHei' and Simhei were stripped from their stacks): strip the unloaded name, leaving the loaded JP face to govern; 'FlyFlowerSong' now survives only in the @font-face-removal note and the FIX5 comment. Recorded in FIX-RFIX4.md so the coordinator can re-direct if a different form was intended. Closes the Summary's dead-face item.
+- **F-3** — the duplicate source furniture removed (8 lines): the premature `[[/collapsible]]`, ---- separator, second + ソースコード heading and second collapsible opener, so the `[[code]]` block stands directly in the original-form collapsible (now the file's only one, balance 1/1). Closes item (4) above; no code line moved.
+- **F-4** — the greyday prose link repointed `[[[theme:greyday|Greyday]]]` → `[[[theme:greyday-jp|Greyday]]]` (now L14), the JP candidate harvested in commit 583285b. Closes item (3) above. The checker's one warn is unchanged in code and count (link-target-missing), now naming theme:greyday-jp, a known posting-resolution class.
+- Checker (FIX-RFIX4): 4/1/1 → 4/1/1, finding codes identical; 0 class (i) before and after.
 
 ## Change set
 

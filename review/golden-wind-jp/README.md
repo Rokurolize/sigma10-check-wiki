@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:golden-wind-jp — origin CN, population #192 [GOSIGN2-LEDGER (b) row 192]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 24e92ce7e49b2df6106dbb2054218adb398a730c6c41dfe981e71001c7808bdc); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now f7755f340827e5ebf2d6eeb3e09dd32069914a9204c1aca89565378e788cc2bb); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 12 errors / 0 warns / 2 infos (pseudo-ref×11, hotlink×1); standing classes dispositioned in register c1 [T1-ROWS row 175; GOSIGN2-LEDGER (b) row 192]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page runtime-hotlink site-theme chain only; sample credit-modal (preview-form) + 884px@768 overflow. [RENDER-ROWS-2 (RENDER-S2-F (CN7))]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 3 [LOCALIZE-ROWS row 191, source LOCALIZE-S2-D]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 191]
 - FIX5 re-judgement: item 58 (class D) FIXED — FIX5-FONTSA, commit 8eacd6e: loaded-but-unused JP faces now named in stacks; CN faces replaced by Noto Serif JP [GOSIGN2-LEDGER-SUPPLEMENT (a) item 58]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:golden-wind-jp.txt sha256:24e92ce7e49b2df6106dbb2054218adb398a730c6c41dfe981e71001c7808bdc; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit c923abfb13007617bf34dd8cbde0512171d5cf10; candidate file pages/theme:golden-wind-jp.txt sha256:f7755f340827e5ebf2d6eeb3e09dd32069914a9204c1aca89565378e788cc2bb; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 Status: complete (hand-written explanation; verdict stamp and diff.md are generated and must not be hand-edited).
@@ -147,6 +147,15 @@ The ledger's blocking item 58 reads: LOCALIZE-S2-D row, pattern 7, JP fonts decl
 Re-derivation from the bytes. The imports predate the fix (they are the original port's, candidate L110-111). The commit's diff for this file expands the porter comment above them and makes exactly three stack edits: 'Arial Black', '华文新魏', cursive becomes 'Arial Black', 'Noto Serif JP', cursive (candidate L124); 'SJQY', '华文楷体', cursive becomes 'SJQY', 'Noto Serif JP', cursive (candidate L141); and the same 华文新魏 replacement in the #header h2 stack (candidate L151). All three lines are present in the current candidate, and the Chinese face names survive only inside the FIX5 comment (candidate L108). The supplement's account is exact for the display stacks and for Noto Serif JP. One precision it does not make: Noto Sans JP, the other loaded face, is still named in no stack (section 4); the item's charge was that the display stacks named CN faces while the loaded JP faces went unused, and for the display stacks that charge is fully cured. The FIXED judgement is confirmed from the package's own bytes with that precision recorded.
 
 Discrepancies and standing items recorded by this package: (1) the sources.tsv supersession note is wrong against its own cited artifact (section 0). (2) The credit holder field and the license-box author parameter are pointers although the file names Dr Roger_F_XL twice; no register dispositions them (section 1). (3) The banner comment and license-box note claim complete re-hosting; one image was not re-hosted (section 4). (4) The credit creation year (2025) and the banner year (2023) disagree, and the file offers no ground to prefer either (section 1).
+
+### Post-package repairs (REFRESH3-I) — R-fix-4 (landing c923abf)
+
+Items (2) and (3) above and the Summary's corresponding standing items describe this package as built; the coordinator has since repaired them. Item record `FIX-RFIX4.md` in R/review-scout/ (its golden-wind section, G-1…G-3), landing canonical commit `c923abfc` ("pages: R-fix-4 flags repaired (fmd, frutiger, golden-wind)", 2026-11-17), which postdates this package's build at `ded82a8`. `candidate.txt` has been recopied from the current canonical `pages/theme:golden-wind-jp.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`; the stamp reads **STALE** by design — no re-judgement is fabricated, and the frozen ledger remains the verdict record. What changed in the candidate (+6/−5):
+
+- **G-1** — both attribution carriers now name the author: the credit field (now L16) reads `**著作権者:** Dr Roger_F_XL` and the license-box parameter (now L664) reads `|author=Dr Roger_F_XL]]`, each in the population's established plain-name form (compare frutiger's 著作権者: Meowait and fmd's `|author=AI_Mayca]]`). Closes item (2) above. The name is evidenced twice in the file itself (body L62, code banner L119) and in the original.
+- **G-2** — both re-hosting claims corrected to state the delivered exception (the banner comment, now L101–105, and the license-box note, now L666): the attachments are re-hosted except the opening image block's `rojo`, which is still referenced at its original scp-wiki-cloud URL (the file's sole hotlink, candidate L23). The image itself is not moved. Closes item (3) above.
+- **G-3 (year record — no edit).** The credit block's 作成年 (candidate L17) reads 2025 while the code banner (candidate L118, carried from original L85) reads `[2023 Wikidot Theme]`. Nothing in either file settles which year the credit field should carry: the banner's 2023 is the theme's own creation stamp, the campaign's 作成年 elsewhere records the original page's creation year, and the original has no credit block or other dated statement to check 2025 against (its only other date-bearing line is the same banner). Per the brief no edit was made; the discrepancy stands recorded here, in item (4) above and in FIX-RFIX4.md G-3 for the coordinator. This is a recorded, not a fixed, item.
+- Checker (FIX-RFIX4): 12/0/2 → 12/0/2, finding codes identical; 0 class (i) before and after.
 
 ## Change set
 

@@ -9,10 +9,10 @@ with `python3 review/build_review.py`; verify with
 |---|---|
 | original.txt | 541 |
 | candidate.txt | 557 |
-| Added | +131 |
-| Review-stage comments | 0 of the +131 added lines |
-| Removed | -115 |
-| Hunks | 3 |
+| Added | +133 |
+| Review-stage comments | 0 of the +133 added lines |
+| Removed | -117 |
+| Hunks | 4 |
 
 ```diff
 --- original.txt
@@ -66,7 +66,7 @@ with `python3 review/build_review.py`; verify with
 +**翻訳責任者:** AI
 +**翻訳年:** 2026
 +**原題:** 플러그소프트™ 테마
-+**著作権者:** 原語版ページの作成者に同じ（scpko の theme:plugsoft）
++**著作権者:** [[*user thd-glasses]]
 +**作成年:** 2022
 +**初訳時参照リビジョン:** 20
 +**元記事リンク:** [*https://scpko.wikidot.com/theme:plugsoft 플러그소프트™ 테마]
@@ -254,15 +254,15 @@ with `python3 review/build_review.py`; verify with
 +
 +[[collapsible show="> コードを表示" hide="> コードを閉じる"]]
 +[[code type="css"]]
++@import url('https://scpko.wdfiles.com/local--files/korean-font/GmarketSans.css');
 +@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 +@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
-+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;700&display=swap');
 +
 +/*
 +    플러그소프트™ / Plugsoft™ — Ported for SCP-JP (theme:plugsoft rev 20 on scpko).
 +    原語版の CSS はページ内のモジュールにあり、{$theme} / {$alt} / {$custom} / {$subtitle} の
 +    パラメータを受け取ります。JP 候補は単体で完結させるため既定値に固定しています（訳注参照）。
-+    原語版の Gmarket Sans は Google の Gothic A1 で代替しています。
++    原語版の Gmarket Sans は、原語版と同じ scpko のホストからそのまま読み込んでいます。
 +*/
 +/* 日本語フォント (JP localization) */
  
@@ -301,6 +301,21 @@ with `python3 review/build_review.py`; verify with
       --black-font: #FFF;
       --space-font: #EEF;
  }
+@@ -441,12 +461,12 @@
+      box-shadow: none !important;
+ }
+ 
+- .rate-box-with-credit-button .creditButton p a {
++ .rate-box-with-credit-button .creditButton > a {
+      border-left-color: #DDD !important;
+      color: #888;
+ }
+ 
+- .rate-box-with-credit-button .creditButton p a:hover {
++ .rate-box-with-credit-button .creditButton > a:hover {
+      color: #AAA;
+ }
+ 
 @@ -524,18 +544,14 @@
           margin-left: 106px;
      }
@@ -324,9 +339,9 @@ with `python3 review/build_review.py`; verify with
 +[[/collapsible]]
 +
 +[[include :scp-jp:component:license-box-backend
-+|author=scpko theme:plugsoft の作者]]
++|author=thd-glasses]]
 +
-+> **画像・フォントの出典:** 原語版の theme:plugsoft の記載に従います。KO 側の添付は候補ページに再ホストし、ウェブフォントは Google Fonts の同等書体に差し替えています。原語版にライセンス表記が無い画像は、投稿前に著者へ確認してください。
++> **画像・フォントの出典:** 原語版の theme:plugsoft の記載に従います。KO 側の添付は候補ページに再ホストしています。原語版のウェブフォント（Gmarket Sans）は原語版と同じホストから読み込み、日本語書体は Google Fonts から読み込んでいます。原語版にライセンス表記が無い画像は、投稿前に著者へ確認してください。
 +
 +[[include :scp-jp:component:license-box-end]]
 +

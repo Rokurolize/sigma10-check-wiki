@@ -5,6 +5,19 @@
 [[module css]]
 @import url("https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css");
 @import url("https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css");
+
+#page-title {
+    text-align: center !important;
+    font-family: var(--header-font);
+    font-size: 270%;
+}
+
+@media only screen and (max-width: 765px) {
+  #page-title {
+  font-size: 170%;
+  white-space: nowrap;
+  }
+ }
 [[/module]]
 
 [[include :scp-jp:component:interwiki-style
@@ -30,6 +43,9 @@
 **元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:fmd-bhl-theme 药品监管部 主题版式]
 [[include :scp-jp:credit:end-preview]]
 
+[[image https://scpsandboxcn.wdfiles.com/local--files/collab%3Amayca/fmdBHL]]
+
+[[=]]
 + テーマカラー
 [[/=]]
 
@@ -63,8 +79,6 @@
 
 + 注: これはBlack Highlighterベースのテーマです。このテーマを使用するには、Black Highlighterテーマもインポートする必要があります。[[[theme:black-highlighter-theme|詳しくはこちらを参照してください]]]。
 
-[[>]]
-[[/>]]
 [[*user ai_mayca]]
 財団薬品規制部門
 @@ @@
@@ -173,16 +187,8 @@
 -----
 
 [[collapsible show="+ テーマコード" hide="- テーマコード"]]
-
-[[/collapsible]]
-
-----
-
-+ ソースコード
-
-[[collapsible show="ソースコードを表示" hide="ソースコードを閉じる"]]
 [[code type="css"]]
-/* ===== fmd-bhl-theme：原語版の CSS（モジュール＋コードブロック）をまとめたもの ===== */
+/* ===== fmd-bhl-theme：原語版のコードブロックの CSS（冒頭モジュールの CSS は本ページ冒頭のモジュールに収録） ===== */
 /* SCPF FMD
     [2020 Wikidot Theme]
     By AI_Mayca

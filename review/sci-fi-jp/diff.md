@@ -8,10 +8,10 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 1818 |
-| candidate.txt | 1843 |
-| Added | +171 |
-| Review-stage comments | 0 of the +171 added lines |
-| Removed | -151 |
+| candidate.txt | 1844 |
+| Added | +173 |
+| Review-stage comments | 0 of the +173 added lines |
+| Removed | -152 |
 | Hunks | 4 |
 
 ```diff
@@ -33,7 +33,7 @@ with `python3 review/build_review.py`; verify with
 +**翻訳責任者:** AI
 +**翻訳年:** 2026
 +**原題:** 科幻小说 版式
-+**著作権者:** 原語版ページの作成者に同じ（scp-wiki-cn の theme:sci-fi）
++**著作権者:** [[*user hoah2333]]
 +**作成年:** 2023
 +**初訳時参照リビジョン:** 4
 +**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:sci-fi 科幻小说 版式]
@@ -100,7 +100,7 @@ with `python3 review/build_review.py`; verify with
 +
 +**クレジットモジュール:**
 +
-+これは[[*user hoah2333]]が制作した美学テーマであり、いかなるSCP、Tale、GoIフォーマット、設定にも紐づきません。デザイン上は[[[theme:ar|アンダーソン・ロボティクス・テーマ]]]と[[[theme:bedrock|Bedrockテーマ]]]を参考にしています。
++これは[[*user hoah2333]]が制作した美学テーマであり、いかなるSCP、Tale、GoIフォーマット、設定にも紐づきません。デザイン上は[[[theme:ar|アンダーソン・ロボティクス・テーマ]]]と[[[theme:bedrock-jp|Bedrockテーマ]]]を参考にしています。
 +
 +このテーマを使用するには、使用したい記事の冒頭に以下のコードを追加してください:
  [[div class="code"]]
@@ -356,7 +356,7 @@ with `python3 review/build_review.py`; verify with
  [[div_ class="achi-container"]]
  [[div_ class="achi-border"]]
  [[div_ class="achi-text"]]
-@@ -216,34 +213,48 @@
+@@ -216,34 +213,47 @@
  [[/div]]
  [[/div]]
  
@@ -403,7 +403,7 @@ with `python3 review/build_review.py`; verify with
 -@import url("https://rsms.me/inter/inter.css");
  @import url("https://fonts.googleapis.com/css2?family=Teko:wght@400;700&display=swap");
  @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
- @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 +
 +/*
 +    科幻小说 / Sci-Fi Theme — Ported for SCP-JP (theme:sci-fi rev 4 on scp-wiki-cn).
@@ -417,7 +417,7 @@ with `python3 review/build_review.py`; verify with
    --title: "SCP基金会";
    --subtitle: "控制 · 收容 · 保护";
    --header-font: "Lexend", "Noto Sans SC", Arial, sans-serif;
-@@ -1811,8 +1822,22 @@
+@@ -1811,8 +1821,24 @@
    max-width: 42.5%;
    margin: 5px 0 0 0;
    color: var(--text-color);
@@ -427,14 +427,16 @@ with `python3 review/build_review.py`; verify with
 +
 +/* page module css */
 +
-+/* JP port note: the original file has one unclosed rule; a closing brace is appended so the
-+   remaining declarations parse. */
++/* JP port note: no brace is added or removed by this port. The original's code block is
++   brace-balanced (225 open / 225 close, verified by count), as is this one; only its final
++   closing brace's line differs, since it shares the original's last line with the
++   sourceMappingURL comment, which is not carried here. */
 +}
  [[/code]]
  [[/collapsible]]
  
 +[[include :scp-jp:component:license-box-backend
-+|author=scp-wiki-cn theme:sci-fi の作者]]
++|author=hoah2333]]
 +
 +> **画像・フォントの出典:** 原語版の theme:sci-fi の記載に従います。sandbox 等の外部ホストの添付は候補ページに再ホストしています。原語版にライセンス表記が無い画像は、投稿前に著者へ確認してください。
 +

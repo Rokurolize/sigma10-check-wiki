@@ -8,16 +8,16 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 2014 |
-| candidate.txt | 2028 |
-| Added | +139 |
-| Review-stage comments | 0 of the +139 added lines |
+| candidate.txt | 2020 |
+| Added | +131 |
+| Review-stage comments | 0 of the +131 added lines |
 | Removed | -130 |
 | Hunks | 16 |
 
 ```diff
 --- original.txt
 +++ candidate.txt
-@@ -1,197 +1,203 @@
+@@ -1,197 +1,195 @@
 -[[module CSS]]
 -@import url(https://scp-wiki-cn.wikidot.com/theme:frutiger-aero/code/1);
 -[[/module]]
@@ -43,17 +43,17 @@ with `python3 review/build_review.py`; verify with
 +[[iftags +テーマ]]
 +
 +[[include :scp-jp:credit:start-preview]]
-+**タイトル:** 我们曾被许诺的未来/Frutiger Aero版式
++**タイトル:** 我们曾被许诺过的未来 Frutiger Aero主题版式
 +**翻訳責任者:** AI
 +**翻訳年:** 2026
-+**原題:** 我们曾被许诺的未来/Frutiger Aero版式
++**原題:** 我们曾被许诺过的未来 Frutiger Aero主题版式
 +**著作権者:** Meowait
 +**作成年:** 2026
 +**初訳時参照リビジョン:** 24
-+**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:frutiger-aero 我们曾被许诺的未来/Frutiger Aero版式]
++**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:frutiger-aero 我们曾被许诺过的未来 Frutiger Aero主题版式]
 +[[include :scp-jp:credit:end-preview]]
 +
-+これはSigma9を改造したテーマです。[[[theme:greyday|Greyday]]]テーマを雛形に、21世紀初頭のWindows XP風の意匠を取り入れて[[*user meowait]]が制作しました。
++これはSigma9を改造したテーマです。[[[theme:greyday-jp|Greyday]]]テーマを雛形に、21世紀初頭のWindows XP風の意匠を取り入れて[[*user meowait]]が制作しました。
 +
 +このテーマを使用するには、作品の冒頭に次の構文を追加してください:
  [[div class="code"]]
@@ -308,14 +308,6 @@ with `python3 review/build_review.py`; verify with
 -[[collapsible show="> 显示代码" hide="> 隐藏代码"]]
 ++ ソースコード
 +[[collapsible show="> コードを表示" hide="> コードを隠す"]]
-+
-+[[/collapsible]]
-+
-+----
-+
-++ ソースコード
-+
-+[[collapsible show="ソースコードを表示" hide="ソースコードを閉じる"]]
  [[code type="css"]]
 -@font-face {
 -    font-family: 'FlyFlowerSong';
@@ -337,7 +329,7 @@ with `python3 review/build_review.py`; verify with
  
  /* --基本样式↓-- */
  
-@@ -227,7 +233,7 @@
+@@ -227,7 +225,7 @@
  
  h1 {
      color: #0f75b9;
@@ -346,7 +338,7 @@ with `python3 review/build_review.py`; verify with
      font-weight: bold;
      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
  }
-@@ -243,7 +249,7 @@
+@@ -243,7 +241,7 @@
      color: #222; /* 提高文字黑度，增加清晰度 */
      background-color: transparent; 
      background:transparent; 
@@ -355,7 +347,7 @@ with `python3 review/build_review.py`; verify with
      font-weight: 400;
      font-size: 102%;
      /* 修正：消除可能存在的默认边距，防止玻璃边框对不齐 */
-@@ -323,7 +329,7 @@
+@@ -323,7 +321,7 @@
      border-radius: 10px 10px 0 0;
  
      color: #ffffff;
@@ -364,7 +356,7 @@ with `python3 review/build_review.py`; verify with
      font-weight: bold;
      text-align: center;
      line-height: 32px;
-@@ -402,7 +408,7 @@
+@@ -402,7 +400,7 @@
      max-height: 0;
      color: transparent;
      background: transparent;
@@ -373,7 +365,7 @@ with `python3 review/build_review.py`; verify with
      font-size: 0%;
      text-decoration: none;
  
-@@ -418,7 +424,7 @@
+@@ -418,7 +416,7 @@
      display: block;
      width: 100px;
      height: 100px;
@@ -382,7 +374,7 @@ with `python3 review/build_review.py`; verify with
      background-repeat: no-repeat;
      background-position: 50% 50%;
      background-size: 100% 100%;
-@@ -803,7 +809,7 @@
+@@ -803,7 +801,7 @@
  
      /* 3. 字体与阴影参数同步 */
      color: #ffffff;
@@ -391,7 +383,7 @@ with `python3 review/build_review.py`; verify with
      font-weight: bold;
      text-align: center;
      line-height: 32px;
-@@ -875,7 +881,7 @@
+@@ -875,7 +873,7 @@
      border-radius: 5px; 
  
      color: #ffffff !important;
@@ -400,7 +392,7 @@ with `python3 review/build_review.py`; verify with
      font-weight: bold;
      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
  
-@@ -942,7 +948,7 @@
+@@ -942,7 +940,7 @@
      border: none;
      border-right: 1px solid rgba(255, 255, 255, 0.2);
      color: #ffffff !important;
@@ -409,7 +401,7 @@ with `python3 review/build_review.py`; verify with
      font-size: 12px;
      font-weight: bold;
      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-@@ -1097,7 +1103,7 @@
+@@ -1097,7 +1095,7 @@
      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
      border-radius: 10px 10px 0 0;
      color: #ffffff;
@@ -418,25 +410,25 @@ with `python3 review/build_review.py`; verify with
      font-weight: bold;
      text-align: center;
      line-height: 32px;
-@@ -1211,7 +1217,7 @@
+@@ -1211,7 +1209,7 @@
  
  #page-title {
      color: #0f75b9;
 -    font-family: 'FlyFlowerSong', serif;
-+    font-family: 'FlyFlowerSong', 'Noto Serif JP', serif;
++    font-family: 'Noto Serif JP', serif;
      font-size: 220%;
      font-weight: 900;
      letter-spacing: 0.1em;
-@@ -1223,7 +1229,7 @@
+@@ -1223,7 +1221,7 @@
  }
  #page-title, h1 {
      color: #0f75b9;
 -    font-family: 'FlyFlowerSong', serif;
-+    font-family: 'FlyFlowerSong', 'Noto Serif JP', serif;
++    font-family: 'Noto Serif JP', serif;
      font-size: 220%;
      font-weight: 900;
      letter-spacing: 0.1em;
-@@ -1274,7 +1280,7 @@
+@@ -1274,7 +1272,7 @@
      border-radius: 8px 8px 0 0;
  
      color: #ffffff;
@@ -445,7 +437,7 @@ with `python3 review/build_review.py`; verify with
      font-size: 12px;
      font-weight: bold;
      line-height: 32px;
-@@ -1493,7 +1499,7 @@
+@@ -1493,7 +1491,7 @@
  
      /* 统一文字样式：白字 + 阴影 */
      color: #ffffff !important;
@@ -454,7 +446,7 @@ with `python3 review/build_review.py`; verify with
      font-size: 12px;
      font-weight: bold;
      text-shadow: 0 1px 2px rgba(0,0,0,0.5);
-@@ -1855,7 +1861,7 @@
+@@ -1855,7 +1853,7 @@
      height: 30px;
      line-height: 30px;
      padding-left: 12px;
@@ -463,7 +455,7 @@ with `python3 review/build_review.py`; verify with
      font-size: 13px;
      font-weight: bold;
      color: white;
-@@ -2012,3 +2018,11 @@
+@@ -2012,3 +2010,11 @@
  [[/collapsible]]
  
  [[/iftags]]

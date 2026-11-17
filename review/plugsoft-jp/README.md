@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:plugsoft-jp — origin KO, population #282 [GOSIGN2-LEDGER (b) row 282]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now ea2ddebe31ff3984528a32084ebb9ff2700442e8808316f1f48c9d0df2f2547c); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now bce62b37e286949e59b7a92fa26dca524c57246a15e930859d0968a667afcf5f); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 3 errors / 1 warn / 1 info (pseudo-ref×2, hotlink×1); standing classes dispositioned in register c1 [T1-ROWS row 252; GOSIGN2-LEDGER (b) row 282]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — sample credit-modal (preview-form) + 884px@768 overflow + runtime-hotlink incl. scpko.wdfiles.com on both pages; T3 none beyond cross-cutting items. [RENDER-ROWS-2 (RENDER-S2-H (KO7))]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 5 [LOCALIZE-ROWS row 281, source LOCALIZE-S2-F]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 281]
 - FIX5 re-judgement: item 107 (class C) FIXED — FIX5-INFO, commit 9a1c86a: info-module / duplicate credit residue removed [GOSIGN2-LEDGER-SUPPLEMENT (a) item 107]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:plugsoft-jp.txt sha256:ea2ddebe31ff3984528a32084ebb9ff2700442e8808316f1f48c9d0df2f2547c; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 6660ec54e07a141648515df0ad6f1659fd2442aa; candidate file pages/theme:plugsoft-jp.txt sha256:bce62b37e286949e59b7a92fa26dca524c57246a15e930859d0968a667afcf5f; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -50,6 +50,15 @@ A Korean Sigma-9 theme for the Plugsoft group of interest, designed as a paramet
 - **Re-derivation from this package's bytes.** (1) The fix commit's diff for this file is exactly −25 lines at one locus: the `:scp-jp:info:start` include, the translated info body (title, 制作 line, font/image source lines, spacer lines, the hub div), and the `:scp-jp:info:end` include, removed from between the credit block and the usage heading. (2) Current bytes: `grep -n 'info:start\|info:end' candidate.txt` returns no matches; exactly one credit furniture set stands (candidate L11–20). (3) Completeness: nothing else in the file references the info module's rendering; the CSS that styled it is a separate question, flagged below as flag 3. The closure holds on the current bytes.
 - **A consequence the reviewer should see.** The removed info body carried the candidate's only *named* author line in the credit apparatus (制作： [[*user thd-glasses]], from original L5). After the removal, the credit block's author field is the pointer of flag 1. The FIX5 removal was correct; the pointer predates it (the credit waves set the field), but the removal is what left the pointer as the apparatus's only author statement.
 - **Post-verdict change.** The usage-example population sweep (b5cb724) completed the usage examples' posting names to `:scp-jp:theme:plugsoft-jp` (candidate L25 and the seven tab exhibits). The generated stamp therefore reads STALE rather than carrying the PASS onto changed bytes; the sweep lines are outside item 107's scope.
+
+### Post-package repairs (REFRESH3-I) — R-fix-9 (landing 6660ec5)
+
+Flags 1–3 and the "Flagged in this package" row above describe this package as built; the coordinator has since repaired all three. Item record `FIX-RFIX89.md` in R/review-scout/ (its plugsoft sections, items 2–4 — FLAG RFIX9-1/2/3), landing canonical commit `6660ec5f` ("pages: penumbra footnoteblock, plugsoft credit, fonts, button form", 2026-11-17), which postdates this package's build at `c92a320`. `candidate.txt` has been recopied from the current canonical `pages/theme:plugsoft-jp.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`; the stamp reads **STALE** by design — no re-judgement is fabricated, and the frozen ledger remains the verdict record. What changed in the candidate (+7/−7):
+
+- **Flag 1 / item 2 — credit pointer.** The 著作権者 field (now L16) reads `**著作権者:** [[*user thd-glasses]]` and the license-box parameter (now L551) reads `|author=thd-glasses]]`, each in the population's repaired form (the original names thd-glasses at original L5 and in the CSS banner at original L143; the credit waves and FIX5's info removal had left pointers naming nobody). Two lines.
+- **Flag 2 / item 3 — font state (KB-16, both directions).** The original's own Gmarket Sans load restored as the first @import of the code block (now L146: `@import url('https://scpko.wdfiles.com/local--files/korean-font/GmarketSans.css');`; HEAD 200, text/css, 3,513,942 bytes, declaring exactly GmarketSansLight/Medium/Bold, covering the three stacks that named them). The unused, falsely-claimed Gothic A1 import removed and the porter comment (now L154) corrected to state the delivered load. Noto Sans JP / Noto Serif JP imports retained — they are the file's claimed JP-localization faces (section comment + license note), so the unreferenced-and-unclaimed removal condition does not hold. The license-box font note (now L554) had made the same false substitution claim; its font clause was corrected in the same item (a disclosed edit inside the item's scope). Checker delta: 3/0/1 → 4/0/1, the one new finding being the restored Gmarket import's class-(ii) hotlink, same family as the pre-existing ps_logo hotlink; 0 class (i).
+- **Flag 3 / item 4 — prefixed credit-button form.** Both selectors corrected in place from `.rate-box-with-credit-button .creditButton p a` (+`:hover`) to `.rate-box-with-credit-button .creditButton > a` (+`:hover`) (now L464/L469), the KB-11 child form the JP credit module's markup takes after FIX5 removed the info module; the prefix and every declaration are unchanged. Two lines, no new finding.
+- The Status row, sections 1, 4, 8, 10, 11 and 12's flag references above are the package's as-built record; this subsection is the closed state and governs.
 
 ## 0. Header / provenance
 

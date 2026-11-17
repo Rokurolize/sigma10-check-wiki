@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:sci-fi-jp — origin CN, population #222 [GOSIGN2-LEDGER (b) row 222]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 8e01f6ce53cd7e629417c9bc7da939dcf6f648d8f2fc08c5bb367f2498505471); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 1fc079bc395837474788143983e600c6a0c121b2f47809bc53f9f43ffa9f3803); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 3 errors / 6 warns / 1 info (pseudo-ref×3); standing classes dispositioned in register c1 [T1-ROWS row 187; GOSIGN2-LEDGER (b) row 222]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page-overflow 452–471px@320/375 + 771px@768 (both engines) + runtime-hotlink site-theme chain; sample credit-modal (preview-form) + page-overflow incl. 884px@768; T3 .open-menu toggle overlaps code text at ≤375 on both pages; full-engine (chromium+webkit) coverage. [RENDER-ROWS-G (CN13)]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 221, source LOCALIZE-S2-E]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 221]
 - FIX5 re-judgement: item 75 (class H) FIXED — FIX5-TEXTB §4, commit 3f328d8: dead sci-fi-hub link (probe HTTP 404, no JP counterpart) converted to plain text with a translator's note; checker link-target-missing warning cleared [GOSIGN2-LEDGER-SUPPLEMENT (a) item 75]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:sci-fi-jp.txt sha256:8e01f6ce53cd7e629417c9bc7da939dcf6f648d8f2fc08c5bb367f2498505471; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 8c935d39aab93c2784fc512f9e5cd4203b08fa36; candidate file pages/theme:sci-fi-jp.txt sha256:1fc079bc395837474788143983e600c6a0c121b2f47809bc53f9f43ffa9f3803; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -184,6 +184,16 @@ This row's sources.tsv note claims the original was "superseded upstream since t
 2. **Duplicated font import** (section 4): Font Awesome 4.7.0 from cdnjs at candidate L241 and L248; the original loads it once. Repair: delete one copy.
 3. **Tail port note refuted by the bytes** (section 10): candidate L1830–1832 claims an unclosed rule in the original and an appended brace; both blocks count 225/225 balanced. Repair: correct or remove the note.
 4. **Bedrock prose link** (section 7): candidate L54 links theme:bedrock (404 on SCP-JP, probed 2026-11-17) while theme:bedrock-jp exists in this repo. Repair shape: repoint to the -jp name, as the FIX5 wave did for the stellar and paradigm-sigma sibling links. The theme:ar link on the same line resolves (200) and needs nothing.
+
+### Post-package repairs (REFRESH3-I) — R-fix-10 (landing 8c935d3)
+
+Flags 1–4 and the "Flags from this package" row above describe this package as built; the coordinator has since repaired all four. Item record `FIX-RFIX10.md` in R/review-scout/ (its sci-fi sections, SF-1…SF-4), landing canonical commit `8c935d3e` ("pages: R-fix-10 flags repaired (human-resources, sci-fi)", 2026-11-17), which postdates this package's build at `4b0f499`. `candidate.txt` has been recopied from the current canonical `pages/theme:sci-fi-jp.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`; the stamp reads **STALE** by design — no re-judgement is fabricated, and the frozen ledger remains the verdict record. What changed in the candidate (+7/−6, four hunks):
+
+- **SF-1 / flag 1 — credit pointer.** The credit field (now L16) reads `**著作権者:** [[*user hoah2333]]` and the license-box parameter (now L1837) reads `|author=hoah2333]]`, each in the population's repaired plain-username form (the original names hoah2333 at original L57 and the candidate's own prose at L54). Two lines.
+- **SF-2 / flag 2 — duplicated Font Awesome import.** The second cdnjs Font Awesome 4.7.0 @import (as-built L248) deleted; one remains (now L245). One line.
+- **SF-3 / flag 3 — false brace note.** The tail note (now L1826–1831) replaced with the verified state: both blocks are brace-balanced (225 open / 225 close, final and minimum depth 0, counts by this lane), and the only tail difference is that the original's final brace shares its line with the sourceMappingURL comment (which this port drops) while the candidate puts it on its own line. No brace added or removed; post-edit recount still 225/225.
+- **SF-4 / flag 4 — bedrock prose link.** `[[[theme:bedrock|Bedrockテーマ]]]` → `[[[theme:bedrock-jp|Bedrockテーマ]]]` (now L54); label and the rest of the line unchanged, theme:ar untouched. One line.
+- Checker (FIX-RFIX10): 3/2/1 → 3/2/1, the identical finding set (all three errors pseudo-ref, class (ii)/(iii)); the only movement is line numbers L257→L256 and L639→L638 from the deleted import. 0 class (i) before and after.
 
 ## Change set outside the two diffed files
 

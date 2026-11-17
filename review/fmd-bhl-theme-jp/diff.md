@@ -8,16 +8,16 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 502 |
-| candidate.txt | 521 |
-| Added | +135 |
-| Review-stage comments | 0 of the +135 added lines |
-| Removed | -120 |
-| Hunks | 8 |
+| candidate.txt | 527 |
+| Added | +129 |
+| Review-stage comments | 0 of the +129 added lines |
+| Removed | -108 |
+| Hunks | 9 |
 
 ```diff
 --- original.txt
 +++ candidate.txt
-@@ -1,32 +1,40 @@
+@@ -1,7 +1,10 @@
 -[[iftags +版式]]
 +[[iftags]]
 +[[include :scp-jp:theme:black-highlighter-theme]]
@@ -26,29 +26,18 @@ with `python3 review/build_review.py`; verify with
  [[module css]]
 -@import url("https://bhl.scpwikicn.com/css/min/normalize.min.css");
 -@import url("https://bhl.scpwikicn.com/css/min/black-highlighter.min.css");
--
--#page-title {
--    text-align: center !important;
--    font-family: var(--header-font);
--    font-size: 270%;
--}
--
--@media only screen and (max-width: 765px) {
--  #page-title {
--  font-size: 170%;
--  white-space: nowrap;
--  }
-- }
 +@import url("https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css");
 +@import url("https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css");
+ 
+ #page-title {
+     text-align: center !important;
+@@ -17,16 +20,37 @@
+  }
  [[/module]]
  
 -[[image http://scpsandboxcn.wdfiles.com/local--files/collab%3Amayca/fmdBHL]]
 -
 -----
--
--[[=]]
--+ 主题颜色
 +[[include :scp-jp:component:interwiki-style
 +| priority=1
 +| theme=https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css
@@ -72,6 +61,10 @@ with `python3 review/build_review.py`; verify with
 +**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:fmd-bhl-theme 药品监管部 主题版式]
 +[[include :scp-jp:credit:end-preview]]
 +
++[[image https://scpsandboxcn.wdfiles.com/local--files/collab%3Amayca/fmdBHL]]
+ 
+ [[=]]
+-+ 主题颜色
 ++ テーマカラー
  [[/=]]
  
@@ -82,7 +75,7 @@ with `python3 review/build_review.py`; verify with
  | color1-variable=--dark-accent
  | color1-info=#DAE1D9
  | color2-name=墨色
-@@ -45,132 +53,136 @@
+@@ -45,132 +69,126 @@
  ----
  
  [[div class="scp-image-block block-right" style="width:300px;"]]
@@ -97,14 +90,15 @@ with `python3 review/build_review.py`; verify with
 -+ 使用方法
 -
 -++ 注意：这是一个基于黑色标记笔的主题版式。若你想使用此版式，你还需要导入黑色标记笔版式。[[[theme:black-highlighter-theme|点击这里了解更多]]]。
+-
+-[[>]]
+-[[module Rate]]
+-[[/>]]
+-[[include :scp-wiki-cn:credit:start]]
 ++ 使い方
 +
 ++ 注: これはBlack Highlighterベースのテーマです。このテーマを使用するには、Black Highlighterテーマもインポートする必要があります。[[[theme:black-highlighter-theme|詳しくはこちらを参照してください]]]。
- 
- [[>]]
--[[module Rate]]
- [[/>]]
--[[include :scp-wiki-cn:credit:start]]
++
  [[*user ai_mayca]]
 -基金会药品监管部门
 -[[include :scp-wiki-cn:credit:end]]
@@ -292,21 +286,13 @@ with `python3 review/build_review.py`; verify with
  
 -[[collapsible show="+ 主题代码" hide="- 主题代码"]]
 +[[collapsible show="+ テーマコード" hide="- テーマコード"]]
-+
-+[[/collapsible]]
-+
-+----
-+
-++ ソースコード
-+
-+[[collapsible show="ソースコードを表示" hide="ソースコードを閉じる"]]
  [[code type="css"]]
 -
-+/* ===== fmd-bhl-theme：原語版の CSS（モジュール＋コードブロック）をまとめたもの ===== */
++/* ===== fmd-bhl-theme：原語版のコードブロックの CSS（冒頭モジュールの CSS は本ページ冒頭のモジュールに収録） ===== */
  /* SCPF FMD
      [2020 Wikidot Theme]
      By AI_Mayca
-@@ -183,6 +195,9 @@
+@@ -183,6 +201,9 @@
  @import url('https://fonts.googleapis.com/css?family=PT+Mono');
  @import url('https://fonts.googleapis.com/css?family=Exo:400,800');
  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500');
@@ -316,7 +302,7 @@ with `python3 review/build_review.py`; verify with
  
  /* All Vars Used */
  
-@@ -197,15 +212,15 @@
+@@ -197,15 +218,15 @@
      /* set this to your theme's full name */
  
      /* Header */
@@ -337,7 +323,7 @@ with `python3 review/build_review.py`; verify with
  
      /* Standard Colors */
      --white-monochrome: 245, 250, 243;
-@@ -317,7 +332,7 @@
+@@ -317,7 +338,7 @@
      position: absolute;
      top: 0;
      left: 0;
@@ -346,7 +332,7 @@ with `python3 review/build_review.py`; verify with
      background-repeat: repeat-x;
      background-size: inherit;
  }
-@@ -420,7 +435,7 @@
+@@ -420,7 +441,7 @@
      }
      #skrollr-body {
          width: 100%;
@@ -355,7 +341,7 @@ with `python3 review/build_review.py`; verify with
          background-size: inherit;
          overflow: hidden;
      }
-@@ -436,7 +451,7 @@
+@@ -436,7 +457,7 @@
      border: 2px dashed #50616D;
      background-color: transparent;
  
@@ -364,7 +350,7 @@ with `python3 review/build_review.py`; verify with
      font-size: 14px;
  }
  
-@@ -492,11 +507,15 @@
+@@ -492,11 +513,15 @@
  ins {
      color: #333;
  }
