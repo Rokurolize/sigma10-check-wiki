@@ -3,7 +3,8 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:a-problematic-theme-jp — origin EN, population #49 [GOSIGN2-LEDGER (b) row 49]
-- Overall: PASS — passed at the ledger determination; no OPEN items [GOSIGN2-LEDGER (b) row 49]
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 2622fa334c30029475128ce5f6cd5c5db7b19a1dcc969fa1490e7f1eb5210a34); verdict not carried over, re-judgement required
+> verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 1 error / 1 warn / 0 infos (hotlink×1); standing classes dispositioned in register c1 [T1-ROWS row 49; GOSIGN2-LEDGER (b) row 49]
 - T2/T3 (render, combined verdict): PASS-WITH-NOTES — [combined T2/T3] report `NO candidate-specific defect established` — no candidate-specific defect; all lines cross-cutting preview/draft-form/by-design, FINDINGS limited to shared X2 preview-static-credit panel (not a per-theme fault). [RENDER-ROWS-1 (RENDER-S2-A)]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row [RENDER-ROWS-1 row]
@@ -11,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 5 [LOCALIZE-ROWS row 49, source LOCALIZE-S2-A]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 49]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 49]
-- Computed against: canonical commit 1869877ffdcd33cb214b8dc421fb39e3de8d7e8d; candidate file pages/theme:a-problematic-theme-jp.txt sha256:c5c8078bd20f812802d859a49f29bc685fc7ff5802240432c4d6801ec94f740d; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 5d951775998e4a1eeccf8e8695a6518b328962ee; candidate file pages/theme:a-problematic-theme-jp.txt sha256:2622fa334c30029475128ce5f6cd5c5db7b19a1dcc969fa1490e7f1eb5210a34; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status

@@ -3,7 +3,8 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:ambrose-chapter-two-jp — origin EN, population #55 [GOSIGN2-LEDGER (b) row 55]
-- Overall: PASS — passed at the ledger determination; no OPEN items [GOSIGN2-LEDGER (b) row 55]
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 9375d8f246703545263d99e8ef59bf543610d4a04a46e86e3346cbe7cfe060ac); verdict not carried over, re-judgement required
+> verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 2 errors / 1 warn / 1 info (hotlink×2); standing classes dispositioned in register c1 [T1-ROWS row 55; GOSIGN2-LEDGER (b) row 55]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — candidate-inherent 328px@320 page overflow (8px) + 320 header clip (wordmark/account links clipped, 検索 overlaps); 503/http.cat transient capture, not a defect. [RENDER-ROWS-1 (RENDER-S2-A)]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row [RENDER-ROWS-1 row]
@@ -11,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 4 [LOCALIZE-ROWS row 55, source LOCALIZE-S2-A]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 55]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 55]
-- Computed against: canonical commit 1869877ffdcd33cb214b8dc421fb39e3de8d7e8d; candidate file pages/theme:ambrose-chapter-two-jp.txt sha256:2de80325edb68114d2d947572c2ae48f697057e7c921788c92e1f50739dcd855; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 5d951775998e4a1eeccf8e8695a6518b328962ee; candidate file pages/theme:ambrose-chapter-two-jp.txt sha256:9375d8f246703545263d99e8ef59bf543610d4a04a46e86e3346cbe7cfe060ac; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 Status: complete — skeleton by classify_hunks.py 0.1.0; every SLOT in the skeleton is resolved in the sections below and the Appendix.

@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:pastel-skies-jp — origin EN, population #122 [GOSIGN2-LEDGER (b) row 122]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 0d8f6fab08978acb0e1053b452f20234ca8cdc9cecbbe7d60073fa14cff9061f); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now de2424bca53f5c57eae01915fdf0406ae1f3b3121a35546b16c534eedda09500); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 11 errors / 1 warn / 1 info (pseudo-ref×11); standing classes dispositioned in register c1 [T1-ROWS row 157; GOSIGN2-LEDGER (b) row 122]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page-overflow 467–478px@320/375 + 792–803px@768 (page) and 479–490px@320/375 + 953px@768 (sample); T3 overflow visually confirmed as content extending past the pastel frame; sample credit-modal (preview-form); broken logo deferred. [RENDER-ROWS-2 (RENDER-S2-C (EN16))]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 122, source LOCALIZE-S2-B]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 122]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 122]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:pastel-skies-jp.txt sha256:0d8f6fab08978acb0e1053b452f20234ca8cdc9cecbbe7d60073fa14cff9061f; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit a2bd1fb983b56a82b69d82c9350a628c2e32197d; candidate file pages/theme:pastel-skies-jp.txt sha256:de2424bca53f5c57eae01915fdf0406ae1f3b3121a35546b16c534eedda09500; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status

@@ -3,7 +3,8 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:art-deco-jp — origin EN, population #58 [GOSIGN2-LEDGER (b) row 58]
-- Overall: PASS — passed at the ledger determination; no OPEN items [GOSIGN2-LEDGER (b) row 58]
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now b184b23d97f665d368d6d31d770756916f66eeae1901961355e074d161843c80); verdict not carried over, re-judgement required
+> verdicts below describe the pre-change file
 - T1 (source check): PASS — baseline 2026-11-16: exit 0, 0 errors / 1 warn / 1 info (no error codes) [T1-ROWS row 58; GOSIGN2-LEDGER (b) row 58]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — malformed Google Fonts `@import` URLs (fonts never load, HTTP 400/ORB, §3) + gold-frame×default-header collisions at PC and 320. [RENDER-ROWS-1 (RENDER-S2-A)]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row [RENDER-ROWS-1 row]
@@ -11,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 58, source LOCALIZE-S2-A]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 58]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 58]
-- Computed against: canonical commit c2a8bee9d16b617b214f78f99e32d0f4be6a1c94; candidate file pages/theme:art-deco-jp.txt sha256:f841d0b31ddaa76ace8859db848c9a5cb09cadf1a051759e41db36495182b321; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 5d951775998e4a1eeccf8e8695a6518b328962ee; candidate file pages/theme:art-deco-jp.txt sha256:b184b23d97f665d368d6d31d770756916f66eeae1901961355e074d161843c80; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status

@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:wish-for-miracle-jp — origin CN, population #247 [GOSIGN2-LEDGER (b) row 247]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 1428a6f7f87c5bee53ea33bc2a29098d0d8cecb1e69614c24dfc3280f5477c3a); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now c187a27d2a47fd07ff5a40a28fcd588f2b5dd78abc29d0de9b840300762cd9d6); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 9 errors / 0 warns / 1 info (hotlink×6, pseudo-ref×3); standing classes dispositioned in register c1 [T1-ROWS row 247; GOSIGN2-LEDGER (b) row 247]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page-overflow 579px@320/375 on page and sample + sidebar-unreachable at 375/320 on both pages + runtime-hotlink site-theme chain + candidate hosts cdn.jsdelivr.net, uploadfile.wdfiles.com, uploadfile.wikidot.com; sample carries NO credit-modal machine line and the report verdict likewise omits it (recorded as-is, unlike the other samples); T3 re-run, no new screenshot-grounded visual finding; chromium-only coverage (no WebKit verdict). [RENDER-ROWS-G (CN18)]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 246, source LOCALIZE-S2-E]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 246]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 247]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:wish-for-miracle-jp.txt sha256:1428a6f7f87c5bee53ea33bc2a29098d0d8cecb1e69614c24dfc3280f5477c3a; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 9b0eb99e5078fae699307945cd45d3f3566f6920; candidate file pages/theme:wish-for-miracle-jp.txt sha256:c187a27d2a47fd07ff5a40a28fcd588f2b5dd78abc29d0de9b840300762cd9d6; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
