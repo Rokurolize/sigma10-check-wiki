@@ -22,6 +22,10 @@
 **元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:betwixt 夹缝间 版式]
 [[include :scp-jp:credit:end-preview]]
 
+[[div class="meta-title"]]
+##darkblue|{{**@@//@@**}}##狭間のテーマ
+[[/div]]
+
 [[div style="display: grid; grid-template-columns: 3fr 5fr; grid-template-areas: 'a b'; max-width: 44rem; margin: auto; align-items: center;"]]
 
 [[div style="grid-area: a; filter: invert(100%) hue-rotate(180deg) brightness(150%); -webkit-filter: invert(100%) hue-rotate(180deg) brightness(150%);"]]
@@ -37,7 +41,7 @@
 
 [[/div]]
 
-これはロケーション「山城」のために制作されたテーマです。[[[https://scp-wiki-cn.wikidot.com/theme:parallel|平行]]]をベースに、[[*user odeo]]制作の[[[https://scp-wiki-cn.wikidot.com/theme:shancheng|山城テーマ]]]と映画『流転の地球2』から美学上の着想を得ています。
+これはロケーション「山城」のために制作されたテーマです。[[[theme:parallel-jp|平行]]]をベースに、[[*user odeo]]制作の[[[https://scp-wiki-cn.wikidot.com/theme:shancheng|山城テーマ（中国語版）]]]と映画『流転の地球2』から美学上の着想を得ています。
 
 [[div class="code"]]
 @@[[include :scp-jp:theme:betwixt-jp]]@@
@@ -292,7 +296,18 @@ https://commons.wikimedia.org/wiki/File:%E9%A3%9E%E9%98%81%E5%A4%96%E5%85%A8%E6%
 */
 
 
+div#page-title {
+    display: none;
+}
 
+div.ctn > img {
+    opacity: 1;
+    transition: ease 0.25s;
+}
+
+div.ctn:hover > img {
+    opacity: 0;
+}
 
 :root {
     --header-height: 15rem;
