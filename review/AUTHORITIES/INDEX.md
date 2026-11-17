@@ -3,11 +3,12 @@
 The per-theme review explanations (`review/<theme>/README.md`) cite governing
 authorities constantly: the rulings their fixes follow, the test definitions
 their verdicts were judged under, the register their dispositions come from.
-The seven files in this directory are verbatim copies of the frozen campaign
-records that otherwise live outside this repo, vendored so that every such
-citation resolves inside the repo and can be checked mechanically
-(`review/build_review.py --check` recomputes the hashes below and resolves
-citation locators against these files).
+The seven files in this directory, and the ledger parts vendored in its
+`ledger-parts/` subdirectory (final section below), are verbatim copies of
+the frozen campaign records that otherwise live outside this repo, vendored
+so that every such citation resolves inside the repo and can be checked
+mechanically (`review/build_review.py --check` recomputes the hashes below
+and resolves citation locators against these files).
 
 ## Immutability rule
 
@@ -136,3 +137,63 @@ One adjacent debt, stated so it is not mistaken as discharged: the
 repo-level TASL attribution record owed before any public upload of this
 repo is separate from this vendoring, and this vendoring does not
 discharge it.
+
+## Ledger parts (vendored with the verdict-stamp generator)
+
+The verdict stamp's data model names the ledger parts as the authoritative
+source for the T1 baseline numbers, the LOCALIZE row data, and the render
+findings cells that the stamps quote. Those parts were not in the seven-file
+vendoring set above; without them the stamp generator cannot run from this
+repo alone. They are therefore vendored verbatim in the `ledger-parts/`
+subdirectory, copied on 2026-11-17 from the campaign directory's
+`ledger-parts/`, under the same immutability rule as the seven files above.
+`review/build_review.py --check` verifies these hashes together with the seven
+above.
+
+### `ledger-parts/T1-ROWS.md`
+
+- SHA-256: `03921b0f67683e43268d7f43e419f9b51bc9754428267b5bcce36cffed73fe36`
+- Role: T1 baseline rows (exit, error/warn/info counts, error-code multiset)
+  for all 287 themes.
+
+### `ledger-parts/LOCALIZE-ROWS.md`
+
+- SHA-256: `c3e00118eb9e06f45c98611f28b2d0b8acc9ddd69b993ab9c934a444fd95d827`
+- Role: T4/T5 combined verdict word, display-affecting count, and source
+  report per theme.
+
+### `ledger-parts/RENDER-ROWS-1.md`
+
+- SHA-256: `1c72d48b9c19b81a0d293ce73c766443541ae0bf2be1293ef727a748832b538c`
+- Role: render rows for 104 themes (reports RENDER-A to RENDER-S2-B).
+
+### `ledger-parts/RENDER-ROWS-2.md`
+
+- SHA-256: `c8c45a7d7c779c3ffb4cde6244fdfaef1ff017573f08a3e12f1d4e23411bd5ed`
+- Role: render rows for 156 themes; the 17 rows superseded by
+  RENDER-ROWS-RERUN16 are discarded wholesale by the generator (rule S1).
+
+### `ledger-parts/RENDER-ROWS-G.md`
+
+- SHA-256: `4c744eaac2ab8e70307ea04ba9022508375064622c2ef1f99e5c19e2eeb02a81`
+- Role: render rows for the 27 CN13-CN18 themes, with per-row engine
+  coverage stated in each findings cell (rule S4).
+
+### `ledger-parts/RENDER-ROWS-RERUN16.md`
+
+- SHA-256: `ae3e5786861d62c9a483bc42cf772a7d146aae36d2b41d749c7ad522930229fd`
+- Role: the final re-measurement rows for the 17 themes whose
+  RENDER-ROWS-2 rows carried no machine verdict (rule S1).
+
+### `ledger-parts/LEDGER-POPULATION-CHECK.md`
+
+- SHA-256: `8b4f35ef41a8f4f50b7cb85bc66359b5a80550c638f67ce89fe5fd683530aed5`
+- Role: the population reconciliation and the section 2 alias/exception
+  seed table (amethyst E3, sigma-10 E2, telecom long form) the stamp
+  generator's seed data is checked against.
+
+`RENDER-ROWS-RERUN16-PARTIAL.md` is deliberately NOT vendored: it is a
+superseded mid-run artifact (10 mid-run rows plus static predictions for the
+other 7), the final RENDER-ROWS-RERUN16 states that it supersedes the
+partial in full, and the stamp generator's part list is an explicit allowlist
+that excludes it by name. It remains in the campaign record only.

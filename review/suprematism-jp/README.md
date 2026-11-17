@@ -1,5 +1,19 @@
 # Review package — theme:suprematism-jp (CN → JP port)
 
+<!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
+## Verdict stamp
+- Theme: theme:suprematism-jp — origin CN, population #235 [GOSIGN2-LEDGER (b) row 235]
+- Overall: PASS — NOT PASS at the ledger determination (section (e) register); both OPEN items re-judged FIXED by the FIX5 wave; go-sign issued 2026-11-17 (COMPLETION-REPORT §10) [GOSIGN2-LEDGER (b); GOSIGN2-LEDGER-SUPPLEMENT (d)]
+- T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 14 errors / 0 warns / 0 infos (hotlink×11, pseudo-ref×2, old-bhl×1); standing classes dispositioned in register c1 [T1-ROWS row 195; GOSIGN2-LEDGER (b) row 235]
+- T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page-overflow 454px@320/375 on page and sample + sidebar-unreachable at 375/320 + runtime-hotlink site-theme chain + candidate hosts cdn.jsdelivr.net, lemoncat233.github.io, nu-scptheme.github.io; sample credit-modal (preview-form); T3 re-run, no new screenshot-grounded visual finding; chromium-only coverage (no WebKit verdict). [RENDER-ROWS-G (CN15)]
+- Engine coverage: chromium-only, both pages (no WebKit verdict) [RENDER-ROWS-G row, findings cell]
+- Credit modal: sample credit-modal errors dispositioned preview-form (credit:start-preview has no modal mechanism; GOSIGN-TESTS T2 amendment, 2026-11-16) [RENDER-ROWS-G (CN15)]
+- T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 234, source LOCALIZE-S2-E]
+- T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 234]
+- FIX5 re-judgement: items 91 (class H) FIXED, 92 (class I) FIXED — FIX5-STRUCTA, commit 8c0cd35: credit title -> (JP form matching the body); credit author field -> LemonCat233 & Liurd; all 11 #ifexpr preset bodies restored verbatim from original L669-972 into the existing shells, one JP adaptation in the restored scp preset (old-BHL host -> scp-jp.github.io, the KB-17 named rewrite); spot-verified for this supplement [GOSIGN2-LEDGER-SUPPLEMENT (a) items 91–92; (c) check 5]
+- Computed against: canonical commit 8c0cd3506a464a3286f3481b1720a051b4f7e0e6; candidate file pages/theme:suprematism-jp.txt sha256:7fccdaa1e8432bd5c4d0602cdd1258126383474655ae988ac3513ea6b4ac09a4; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+<!-- END GENERATED VERDICT STAMP -->
+
 ## Status
 
 | | |

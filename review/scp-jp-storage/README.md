@@ -2,12 +2,15 @@
 
 ## Status
 
+<!-- BEGIN GENERATED STATUS STAMP — do not hand-edit; regenerate with review/build_review.py -->
 | Field | Value |
 |---|---|
-| Package status | Pilot — this package is the first of the per-theme review packages, a trial that settles the format for all the rest. |
-| Candidate status | Authored, not deployed — created for this package on 2026-11-17. It is deployed nowhere, and production FS still serves the original today. |
-| Verification status | Source-level only — the check on an attachment file page (the render check the requirement calls for) has not been performed, and nothing in this package claims that it has. |
-| Governing requirement | The FS row of the site-operations-wikis table in `/start` (canonical repo: `pages/start.txt`). Quoted verbatim below. |
+| Package status | Pilot — the first package of the per-theme review documentation pass; the format for the remaining packages is settled on this example. |
+| Candidate status | Authored, not deployed — authored for this package on 2026-11-17; production FS still serves the original. |
+| Verification status | Source-level only — the attachment-page render check the governing requirement calls for has not been run, and no part of this package claims that it has. |
+| Governing requirement | The FS row of the site-operations table in /start (canonical source: pages/start.txt), quoted verbatim in this section. |
+| Canonical commit | c196257f30e20aa8b56c0a7d0bd17083271345be |
+<!-- END GENERATED STATUS STAMP -->
 
 Requirement (FS row, requirement cell):
 

@@ -10,6 +10,7 @@ with `python3 review/build_review.py`; verify with
 | original.css | 46 |
 | candidate.css | 44 |
 | Added | +14 |
+| Review-stage comments | 6 of the +14 added lines |
 | Removed | -16 |
 | Hunks | 3 |
 
