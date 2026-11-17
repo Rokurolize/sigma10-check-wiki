@@ -424,6 +424,9 @@ __フ__ァイル@@       @@__受__信箱
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+/* JP 字形: 読み込んだ Noto Sans JP / Noto Serif JP を各フォントスタックのフォールバックとして指定する。 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
 
 :root {
     --theme-base: "black-highlighter";
@@ -437,16 +440,16 @@ __フ__ァイル@@       @@__受__信箱
     --body-font: 'Jost', 'Noto Sans JP', sans-serif;
     --header-font: 'Rubik', 'Noto Sans JP', sans-serif;
     --title-font: 'Archivo', 'Noto Sans JP', sans-serif;
-    --mono-font: 'IBM Plex Mono', 'Noto Sans Mono CJK JP', monospace;
+    --mono-font: 'IBM Plex Mono', 'Noto Sans JP', 'Noto Sans Mono CJK JP', monospace;
     --UI-font: var(--printer-paper-font);
 
-    --manila-tabs-font: 'Telegraphem', 'Noto Sans Mono CJK JP', monospace;
+    --manila-tabs-font: 'Telegraphem', 'Noto Sans JP', 'Noto Sans Mono CJK JP', monospace;
     --manila-body-font: 'Remington Noiseless', 'Noto Serif JP', serif;
     --blokquote-alt-font: var(--printer-paper-font);
-    --ticker-font: 'Nouveau IBM', 'Noto Sans Mono CJK JP', monospace;
+    --ticker-font: 'Nouveau IBM', 'Noto Sans JP', 'Noto Sans Mono CJK JP', monospace;
     --printer-paper-font: 'Alte Haas Grotesk', 'Noto Sans JP', sans-serif;
     --handwriting-font: 'Sedgwick Ave', cursive;
-    --windows-font: 'Modern DOS 8x16', 'Noto Sans Mono CJK JP', sans-serif;
+    --windows-font: 'Modern DOS 8x16', 'Noto Sans JP', 'Noto Sans Mono CJK JP', sans-serif;
     --logs-header-font: 'Commodore 64 Angled', 'Noto Sans JP', sans-serif;
     --logs-text-font: 'BabelSans', 'Noto Sans JP', sans-serif;
     --logs-dialogue-font: 'Arimo', 'Noto Sans JP', sans-serif;

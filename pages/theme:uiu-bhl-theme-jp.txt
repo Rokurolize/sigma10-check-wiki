@@ -197,6 +197,8 @@ UIUロゴは[[*user Zhange]]が作成し、[[*user Woedenaz]]が軽微に編集�
 [[collapsible show="+ テーマコードを表示" hide="- テーマコードを非表示"]]
 [[code type="css"]]
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,700,900|Roboto+Mono:400,500,700|Source+Sans+Pro:400,400i,600,600i,700,700i,900,900i&display=swap&subset=latin-ext');
+/* JP 字形: 本文/見出しスタックの Noto Sans JP を読み込み、Latin-only だった等幅スタックにも JP フォールバックを追加する。 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 
 @supports(display:grid) {
     :root {
@@ -218,7 +220,7 @@ UIUロゴは[[*user Zhange]]が作成し、[[*user Woedenaz]]が軽微に編集�
         --body-font: 'Source Sans Pro', 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', 'Meiryo', sans-serif;
         --header-font: 'Source Sans Pro', 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', 'Meiryo', sans-serif;
         --title-font: 'Merriweather', 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', serif;
-        --mono-font: 'Roboto Mono', "Andale Mono", "Courier New", Courier, monospace;
+        --mono-font: 'Roboto Mono', 'Noto Sans JP', "Andale Mono", "Courier New", Courier, monospace;
 
         --ui-wght: 550;
         --ui-hvr-wght: 700;

@@ -375,7 +375,8 @@ h1 {
 body {
     color: #CAD1D1;
     background: #161615F5;
-    font-family: 'NotoSansSC-Light';
+    /* 読み込み済みの JP / SC フォントを指定（原語版の NotoSansSC-Light はロードが削除されたため未配信）。 */
+    font-family: 'Noto Sans JP', 'Noto Sans SC', sans-serif;
     font-weight: lighter;
 }
 html {
@@ -1352,7 +1353,7 @@ div#lock-info {
     padding: 0.4rem .8rem !important;
 }
 div#lock-info::before {
-    content: '您握有一个独占的15 分钟锁定，这将会阻止其他人编辑您正在作业的页面。\A这个锁定将在闲置 ';
+    content: '編集中の間、他のユーザーによるこのページの編集を防ぐ15分間の排他ロックを取得しています。\Aロックは';
     display: inline;
     font-size: .82rem;
     white-space: pre-wrap;
@@ -1364,12 +1365,12 @@ div#lock-info>br {
     display: none;
 }
 div#lock-info::after {
-    content: ' 秒后失效。';
+    content: '秒間の無操作で期限切れになります。';
     display: inline;
     font-size: .82rem;
 }
 body[class="wait"] a[name="page-top"][target]+div #main-content #action-area div#lock-info::before {
-    content: '保存页面中……\A若此提示已经显示了很长时间，建议将编辑框中的内容复制到剪切板然后刷新本页重新编辑。';
+    content: '保存中です。\Aこの表示が長い間表示されている場合、編集エリアのテキストを一時的にクリップボードに移しておくことをお勧めします。';
     display: inline;
     font-size: .82rem;
     color: rgb(var(--bright-accent));

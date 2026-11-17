@@ -195,6 +195,9 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Mono');
 @import url('https://fonts.googleapis.com/css?family=Exo:400,800');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500');
+/* JP 字形: 説明文のフォント表示（Noto Sans JP / BIZ UDゴシック）に合わせて JP フォントを読み込み、CN OS フォント（仿宋）を差し替える。 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap');
 
 /* All Vars Used */
 
@@ -214,10 +217,10 @@
     --header-subtitle: "风雨将至，恶隐于渊";
 
     /* Typefaces */
-    --body-font: "Noto Sans SC", sans-serif;
-    --header-font: 'Roboto', "Noto Sans SC", sans-serif;
-    --title-font: 'Exo', sans-serif;
-    --mono-font: "PT Mono", "Andale Mono", "Courier New", Courier, '仿宋', monospace;
+    --body-font: 'Noto Sans JP', "Noto Sans SC", sans-serif;
+    --header-font: 'Roboto', 'Noto Sans JP', "Noto Sans SC", sans-serif;
+    --title-font: 'Exo', 'Noto Sans JP', sans-serif;
+    --mono-font: "PT Mono", 'BIZ UDPGothic', "Andale Mono", "Courier New", Courier, monospace;
 
     /* Standard Colors */
     --white-monochrome: 245, 250, 243;
@@ -448,7 +451,7 @@ element > .img {
     border: 2px dashed #50616D;
     background-color: transparent;
 
-    font-family: "Consolas", "Courier New", "Roboto Mono", '仿宋', monospace;
+    font-family: "Consolas", "Courier New", "Roboto Mono", 'BIZ UDPGothic', 'Noto Sans JP', monospace;
     font-size: 14px;
 }
 
