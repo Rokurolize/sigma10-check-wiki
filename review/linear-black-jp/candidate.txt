@@ -1,0 +1,431 @@
+[[include component:sigma-plus-jp]]
+[[include :scp-jp:component:toggle-sidebar]]
+
+[[module CSS]]
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Alinear-black-jp/1');
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Alinear-black-jp/1
+]]
+
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** リニア・ブラック テーマ
+**翻訳責任者:** AI
+**翻訳年:** 2026
+**原題:** Linear Black Theme
+**著作権者:** [[*user Queerious]]
+**作成年:** 2025
+**初訳時参照リビジョン:** 10
+**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:linear-black Linear Black Theme]
+[[include :scp-jp:credit:end-preview]]
+
+これは[[*user Queerious]]によるLinear Blackテーマで、SCP-9000コンテスト出品作「[[[https://scp-wiki.wikidot.com/scp-9900|SCP-9900（英語版）]]]」のために作られました。
+
+このテーマを使用するには、ページの先頭に以下を置いてください:
+
+[[div class="blockquote"]]
+@@[[include :scp-jp:theme:linear-black-jp]]@@
+[[/div]]
+
+------
+
+死んだリンク: [[[リンク1]]]
+訪問済み: [[[https://scp-wiki.wikidot.com/scp-9900]]]
+
+[[include component:image-block name=https://sigma10-jp-test.wdfiles.com/local--files/theme%3Alinear-black-jp/9kconSketch.png|caption=画像。|width=200px]]
+
+水平罫線は5つのハイフン「@@-----@@」で作成でき、何か（引用ブロックなど）の内側に置かない限りページ全体に広がります。この文書の各節を区切っている線が水平罫線です。
+
+
+見出しは、行の先頭に1〜6個の「+」を置くことで作成できます。
+@@ @@
+-----
+
+[[collapsible show="折りたたみ - ここをクリック" hide="折りたたみ - ここをクリック"]]
++ 1番目の見出し
+
+++ 2番目の見出し
+
++++ 3番目の見出し
+
+++++ 4番目の見出し
+
++++++ 5番目の見出し
+
+++++++ 6番目の見出し
+[[/collapsible]]
+
+@@ @@
+
+[[tabview]]
+[[tab タブ化]]
+これはタブビューです。
+[[/tab]]
+[[tab タブ化の話]]
+おや、テキストがまだありますね。
+
+なんとまあ。
+[[/tab]]
+[[tab 長いタブ]]
+これは長いタブです。たくさんのテキストが入っています。[[footnote]]これは脚注です。[[/footnote]]
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+[[/tab]]
+
+[[tab もっと長いタブ]]
+これも長いタブです。たくさんのテキストが入っています。
+
+これも長いタブです。たくさんのテキストが入っています。
+
+これも長いタブです。たくさんのテキストが入っています。
+
+これも長いタブです。たくさんのテキストが入っています。
+
+これも長いタブです。たくさんのテキストが入っています。
+
+これも長いタブです。たくさんのテキストが入っています。
+
+これも長いタブです。たくさんのテキストが入っています。
+
+これも長いタブです。たくさんのテキストが入っています。
+
+これも長いタブです。たくさんのテキストが入っています。
+
+これも長いタブです。たくさんのテキストが入っています。
+
+これも長いタブです。たくさんのテキストが入っています。
+
+これも長いタブです。たくさんのテキストが入っています。
+
+これも長いタブです。たくさんのテキストが入っています。
+
+これも長いタブです。たくさんのテキストが入っています。
+[[/tab]]
+
+[[tab 空のタブ]]
+[[/tab]]
+[[/tabview]]
+
+
+> これは引用ブロックです。各行の先頭に「> 」を置くことで作成できます。
+>
+> 続きのテキスト
+> -----
+> これが水平罫線です
+>
+>> 入れ子の引用ブロック
+
+
+||~ これが ||~ テーブルです ||
+||作り方は || もう ||
+||||ご存じでしょう ||
+@@ @@
+-----
+[[=]]
+本文フォントはMartian Monoです。和文にはM PLUS 1 Codeを併記しています。
+[[/=]]
+-----
+
++ ソースコード
+
+@@ @@
+[[=]]
+[[collapsible show="+ コード" hide="- コード"]]
+[[<]]
+[[code type="css"]]
+/*
+    LINEAR BLACK THEME
+    By Queerious
+*/
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
+
+/* 日本語フォント (JP localization) */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code&display=swap');
+
+#page-title {
+    display: none;
+}
+
+:root {
+    --sp_top-bar-gradient-top-color: #373737;
+    --sp_top-bar-gradient-bottom-color: #171717;
+
+    --sp_top-bar-link-hover-color: var(--vividLighter);
+    --sp_top-bar-link-hover-background: #1E1E24;
+
+    --sp_dropdown-background: #060607;
+    --sp_dropdown-link-color: var(--sp_top-bar-link-hover-color);
+    --sp_dropdown-link-hover-color: var(--sp_top-bar-link-hover-color);
+    --sp_dropdown-link-background: transparent;
+    --sp_dropdown-link-border: 0.05rem solid #ddd;
+    --sp_dropdown-link-hover-background: var(--sp_top-bar-link-hover-background);
+
+    --sp_header-logo-size: 8.25rem;
+    --sp_rate-module-background: rgba(255,255,255,0.2);
+    --sp_rate-module-sub-color: #FFF;
+    --accentColor: #6d6d77;
+    --vividAccentColor: #ACACD2;
+    --vividLighter: #D5D3FF;
+    --vividDarker: #8986B1;
+    --accentRed: #BB7672;
+    --sp_tab-text-color: var(--vividAccentColor);
+    --sp_tab-background: rgba(255,255,255,0.1);
+    --sp_tab-border-color: var(--accentColor);
+    --sp_tab-hover-background: rgba(0,0,0,0.3);
+    --sp_tab-selected-text-color: black;
+    --sp_tab-selected-background: white;
+    --sp_tab-selected-border-color: var(--accentColor);
+    --sp_top-bar-link-hover-color: var(--vividAccentColor);
+
+    --sp_rate-module-button-color: black;
+
+    --sp_hovertip-background: #060607;
+    --sp_hovertip-border: 0.05rem solid black;
+}
+
+.hovertip {
+    color: white;
+}
+
+h1 {
+    color: var(--vividAccentColor);
+}
+
+:where(#page-content) a {
+    color: var(--vividAccentColor);
+}
+
+:where(#page-content) a.newpage {
+    color: var(--accentRed);
+}
+
+:where(#page-content) a.newpage:hover {
+    text-decoration: underline;
+    border-color: var(--accentRed);
+}
+
+:where(#page-content) a:visited {
+    color: var(--vividDarker);
+}
+
+/* Sidebar */
+
+#content-wrap #side-bar .side-block, #interwiki .side-block {
+    background-color: #060607;
+    color: white !important;
+    border: 1px solid var(--vividAccentColor);
+}
+
+#content-wrap #side-bar .heading, #interwiki .heading {
+    color: var(--vividAccentColor);
+    border-bottom: solid 1px var(--vividDarker);
+}
+
+#content-wrap #side-bar a, #interwiki a {
+    color: var(--vividAccentColor);
+}
+
+#content-wrap #side-bar .side-block .menu-item img, #interwiki .side-block .menu-item img {
+    filter: hue-rotate(185deg) brightness(12) saturate(0.3);
+}
+
+@media (max-width: 767px) {
+    #content-wrap #side-bar {
+        background-color: rgba(255,255,255,0.5);
+    }
+}
+
+/* Color Correction Bottom Area */
+
+#page-info a, .page-watch-options a, .page-options-bottom a, .page-tags a, .edit-help-34 a, #action-area a {
+    color: var(--accentRed);
+}
+
+#license-area {
+    color: white;
+}
+
+#account-options {
+    margin-top: -3.45em;
+}
+
+/* Tabview */
+
+#page-content .yui-navset .yui-nav .selected {
+    font-weight: bold !important;
+}
+
+#page-content .yui-navset .yui-content {
+    background-color: rgba(255,255,255,0.1);
+}
+
+/* Page Options */
+
+#action-area, #page-options-container {
+    color: white;
+}
+
+#lock-info {
+    color:black;
+}
+
+#page-content {
+    background: rgba(0,0,0,0.35);
+    padding: 0.3em 1.5em;
+    border-radius: 30px;
+}
+
+#page-content hr {
+    background-color: var(--accentColor);
+}
+
+#page-content :is(.blockquote, blockquote) {
+    background: rgba(255,255,255,0.1);
+    border-style: solid;
+}
+
+#page-content :is(.blockquote, blockquote) > :is(.blockquote, blockquote) {
+    background: rgba(0,0,0,0.3);
+    border-style: dashed;
+    border-color: var(--accentColor);
+}
+
+#page-content .licensebox .blockquote, .licensebox blockquote {
+    background: rgba(255,255,255,0.1);
+    border-style: solid;
+    margin: 1rem 1.5rem;
+}
+#page-content .licensebox .blockquote > .blockquote {
+    background: inherit;
+    border-style: inherit;
+    border-color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    margin: 1rem 1.5rem;
+}
+
+#header {
+    background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Alinear-black-jp/mountain_pattern_stretch.jpg);
+    background-color: #2b2930;
+    background-blend-mode: hard-light;
+    background-position-x: center;
+    background-size: 1200px;
+    height: 250px;
+    background-position-y: center;
+    grid-template-rows: 1.5fr 1.5fr auto auto 0.75fr auto;
+}
+
+#header::before {
+    margin: 0em auto;
+    grid-row: 1 / 5;
+    grid-column: 1/5;
+    z-index: 2;
+}
+
+#header h1, #header h2 {
+    padding-inline-start: initial;
+    grid-column: 1/5;
+    margin: 0em auto;
+    z-index: 1;
+}
+
+#header h1 {
+    grid-row: 3 / 5;
+}
+
+#header h2 {
+    grid-row: 5;
+}
+
+#container {
+    background: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Alinear-black-jp/trianglify-lowres_dark.webp);
+    background-repeat: round;
+    background-position-x: left;
+    background-position-y: 26em;
+    background-size: 40em;
+}
+
+#page-content {
+    color: white;
+    font-family: 'Martian Mono', 'M PLUS 1 Code', monospace;
+    font-weight: 200;
+}
+
+#page-content th {
+    color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Martian Mono', 'M PLUS 1 Code', monospace;
+}
+
+.scp-image-block {
+    margin-top: 1.5em;
+    border-width: 2px;
+}
+
+:is(.blockquote,blockquote) .scp-image-block .scp-image-caption {
+    background-color: rgba(255,255,255,0.1);
+}
+
+#page-content .scp-image-block .scp-image-caption {
+    background-color: rgba(255,255,255,0.1);
+}
+
+#page-content table.wiki-content-table td {
+    padding: 0.5em 0.7em;
+}
+
+.ratingModuleAlign {
+    text-align: right;
+    margin-bottom: -1em;
+    margin-top: 0.5em;
+}
+
+#search-top-box-form :is(input[type="submit"], input[type="submit"]:hover) {
+    background-color: var(--vividDarker);
+    color: white;
+    background-image: linear gradient (to bottom, var(--vividLighter), var(--vividAccentColor), var(--vividDarker));
+}
+[[/code]]
+[[/<]]
+[[/collapsible]]
+[[/=]]
+
+[[include :scp-jp:component:license-box-backend
+|author=Queerious]]
+
+> **ファイル名:** mountain_pattern_stretch.jpg
+> **作者:** [[*user Queerious]]
+> **ライセンス:** 原語版に記載なし（原語版ページにライセンス表記がありません。投稿前に著者へ確認してください）
+> **出典:** [https://scp-wiki.wikidot.com/local--files/theme:linear-black/mountain_pattern_stretch.jpg SCP Foundation Wiki]
+
+> **ファイル名:** trianglify-lowres_dark.webp
+> **作者:** [[*user Queerious]]
+> **ライセンス:** 原語版に記載なし（原語版ページにライセンス表記がありません。投稿前に著者へ確認してください）
+> **出典:** [https://scp-wiki.wikidot.com/local--files/theme:linear-black/trianglify-lowres_dark.webp SCP Foundation Wiki]
+
+> **ファイル名:** 9kconSketch.png
+> **作者:** 原語版では記事「SCP-9900」の添付ファイルとして配布
+> **ライセンス:** 原語版に記載なし（記事側のライセンス表記を確認してください）
+> **出典:** [https://scp-wiki.wikidot.com/local--files/SCP-9900/9kconSketch.png SCP Foundation Wiki]
+
+[[include :scp-jp:component:license-box-end]]
+
+[[/iftags]]
