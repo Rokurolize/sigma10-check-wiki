@@ -1,0 +1,698 @@
+{
+ "tool": "classify_hunks.py",
+ "classifier_version": "0.1.0",
+ "signature_table_version": "2026-11-17.1",
+ "theme": {
+  "dir": "minimal-scp-foundation-by-cocoonist-jp",
+  "cand_fullname": "theme:minimal-scp-foundation-by-cocoonist-jp",
+  "orig_fullname": "theme:minimal-scp-foundation-by-cocoonist",
+  "wiki": "scpko",
+  "revision": "5",
+  "kind": "standard",
+  "verdict": "PASS",
+  "original_file": "review/minimal-scp-foundation-by-cocoonist-jp/original.txt",
+  "candidate_file": "review/minimal-scp-foundation-by-cocoonist-jp/candidate.txt",
+  "original_sha256": "f099dd3500badc91434dc82c87a9eacd856baa75637f9e665c0801b1d277265c",
+  "candidate_sha256": "2b7886bfcda2094725915b2d1975ff5bd81e694725b3ab9721dcec8b829e6be2",
+  "original_lines": 729,
+  "candidate_lines": 618
+ },
+ "topology": {
+  "original_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     21,
+     729
+    ],
+    "lines": 708
+   }
+  ],
+  "candidate_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     0,
+     3
+    ],
+    "lines": 3
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     47,
+     614
+    ],
+    "lines": 567
+   }
+  ],
+  "moves": [
+   {
+    "from_kind": "module-css",
+    "to_kind": "code-css",
+    "orig_range": [
+     21,
+     729
+    ],
+    "cand_range": [
+     47,
+     614
+    ],
+    "similarity": 0.988,
+    "basis": "content"
+   }
+  ],
+  "external_own_delivery": false
+ },
+ "blocks": [
+  {
+   "id": "B1",
+   "orig_range": [
+    0,
+    1
+   ],
+   "cand_range": [
+    0,
+    10
+   ],
+   "orig_lines": "1-1",
+   "cand_lines": "1-10",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DRAFT-HOST",
+    "IFTAGS",
+    "SELF-DELIVERY",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "SELF-DELIVERY",
+   "primary_section": 3,
+   "label_prec": {
+    "IFTAGS": "A",
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "IFTAGS": {
+     "orig": [
+      [
+       0,
+       1
+      ]
+     ],
+     "cand": [
+      [
+       9,
+       10
+      ]
+     ]
+    },
+    "SELF-DELIVERY": {
+     "orig": [],
+     "cand": [
+      [
+       1,
+       2
+      ],
+      [
+       6,
+       7
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       1,
+       2
+      ],
+      [
+       6,
+       7
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "class (iii) draft-stage form",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[iftags +테마 -nobhl]]",
+   "first_added": "[[module CSS]]"
+  },
+  {
+   "id": "B2",
+   "orig_range": [
+    2,
+    3
+   ],
+   "cand_range": [
+    11,
+    12
+   ],
+   "orig_lines": "3-3",
+   "cand_lines": "12-12",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "++ **누에의 미니멀 테마 템플릿 페이지**",
+   "first_added": "++ **CocoonistのSCP財団ミニマルテーマページ**"
+  },
+  {
+   "id": "B3",
+   "orig_range": [
+    5,
+    7
+   ],
+   "cand_range": [
+    14,
+    24
+   ],
+   "orig_lines": "6-7",
+   "cand_lines": "15-24",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "CREDIT-PREVIEW",
+    "CREDIT-PROSE",
+    "TASL-FIELDS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "CREDIT-PREVIEW",
+   "primary_section": 1,
+   "label_prec": {
+    "CREDIT-PREVIEW": "A",
+    "TASL-FIELDS": "A",
+    "TRANS-UNANCHORED": "C",
+    "CREDIT-PROSE": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "CREDIT-PREVIEW": {
+     "cand": [
+      [
+       14,
+       15
+      ],
+      [
+       23,
+       24
+      ]
+     ]
+    },
+    "TASL-FIELDS": {
+     "cand": [
+      [
+       15,
+       23
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {},
+    "CREDIT-PROSE": {}
+   },
+   "notes": [
+    "script delta without the anchor majority",
+    "position: inside the credit include pair"
+   ],
+   "partial_notes": [],
+   "first_removed": "+++ 설명",
+   "first_added": "[[include :scp-jp:credit:start-preview]]"
+  },
+  {
+   "id": "B4",
+   "orig_range": [
+    8,
+    10
+   ],
+   "cand_range": [
+    25,
+    30
+   ],
+   "orig_lines": "9-10",
+   "cand_lines": "26-30",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "+++ 사용 방법",
+   "first_added": "+++ 説明"
+  },
+  {
+   "id": "B5",
+   "orig_range": [
+    11,
+    12
+   ],
+   "cand_range": [
+    31,
+    32
+   ],
+   "orig_lines": "12-12",
+   "cand_lines": "32-32",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "COMPONENT-SWAP",
+    "ESCAPED-INCLUDE",
+    "INCLUDE-REPOINT"
+   ],
+   "primary": "COMPONENT-SWAP",
+   "primary_section": 2,
+   "label_prec": {
+    "INCLUDE-REPOINT": "A",
+    "ESCAPED-INCLUDE": "B",
+    "COMPONENT-SWAP": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "INCLUDE-REPOINT": {
+     "orig": [
+      [
+       11,
+       12
+      ]
+     ],
+     "cand": [
+      [
+       31,
+       32
+      ]
+     ]
+    },
+    "ESCAPED-INCLUDE": {
+     "orig": [
+      [
+       11,
+       12
+      ]
+     ],
+     "cand": [
+      [
+       31,
+       32
+      ]
+     ]
+    },
+    "COMPONENT-SWAP": {
+     "orig": [
+      [
+       11,
+       12
+      ]
+     ],
+     "cand": [
+      [
+       31,
+       32
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "@@[[include :scpko:theme:minimal-scp-foundation-by-cocoonist]]@@",
+   "first_added": "@@[[include :scp-jp:theme:minimal-scp-foundation-by-cocoonist-jp]]@@"
+  },
+  {
+   "id": "B6",
+   "orig_range": [
+    14,
+    16
+   ],
+   "cand_range": [
+    34,
+    36
+   ],
+   "orig_lines": "15-16",
+   "cand_lines": "35-36",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/2"
+   ],
+   "partial_notes": [],
+   "first_removed": "+++ 외부 링크",
+   "first_added": "+++ 外部リンク"
+  },
+  {
+   "id": "B7",
+   "orig_range": [
+    17,
+    20
+   ],
+   "cand_range": [
+    37,
+    39
+   ],
+   "orig_lines": "18-20",
+   "cand_lines": "38-39",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "* **오리지널 테마:** https://userstyles.org/styles/137508/minimal-scp-foundation-by-cocoonist",
+   "first_added": "* **原テーマ:** https://userstyles.org/styles/137508/minimal-scp-foundation-by-cocoonist"
+  },
+  {
+   "id": "B8",
+   "orig_range": [
+    21,
+    22
+   ],
+   "cand_range": [
+    40,
+    50
+   ],
+   "orig_lines": "22-22",
+   "cand_lines": "41-50",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "JPFONT-LOAD",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "JPFONT-LOAD": "A",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "JPFONT-LOAD": {
+     "cand": [
+      [
+       49,
+       50
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "orig": [
+      [
+       21,
+       22
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "absence claim needs base subtraction (resolved base)",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[module CSS]]",
+   "first_added": "+++ 使用フォント（SCP-JP 版）"
+  },
+  {
+   "id": "B9",
+   "orig_range": [
+    47,
+    191
+   ],
+   "cand_range": [
+    75,
+    75
+   ],
+   "orig_lines": "48-191",
+   "cand_lines": "at 76",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "orig": [
+      [
+       47,
+       191
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "@font-face {",
+   "first_added": ""
+  },
+  {
+   "id": "B10",
+   "orig_range": [
+    207,
+    208
+   ],
+   "cand_range": [
+    91,
+    92
+   ],
+   "orig_lines": "208-208",
+   "cand_lines": "92-92",
+   "channel_pair": [
+    "module-css",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       91,
+       92
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    font-family: Lora, Georgia, Garamond, Times, JejuMyeongjo, KopubBatang, 'Kopub Batang', nanummyeongjo, 'Nanum Myeongjo', Batang, Gungseo, serif;",
+   "first_added": "    font-family: Lora, 'Noto Serif JP', 'Yu Mincho', 'Hiragino Mincho ProN', Georgia, Garamond, Times, serif;"
+  },
+  {
+   "id": "B11",
+   "orig_range": [
+    656,
+    657
+   ],
+   "cand_range": [
+    540,
+    541
+   ],
+   "orig_lines": "657-657",
+   "cand_lines": "541-541",
+   "channel_pair": [
+    "module-css",
+    "code-css"
+   ],
+   "labels": [
+    "CONTENT-STRING",
+    "DELIVERY-MOVE",
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "CONTENT-STRING": "B",
+    "TRANSLATION-ANCHORED": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "CONTENT-STRING": {
+     "orig": [
+      [
+       656,
+       657
+      ]
+     ],
+     "cand": [
+      [
+       540,
+       541
+      ]
+     ]
+    },
+    "TRANSLATION-ANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       540,
+       541
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "    content: 'Non-titled Post';",
+   "first_added": "    content: 'タイトルなしの投稿';"
+  },
+  {
+   "id": "B12",
+   "orig_range": [
+    728,
+    729
+   ],
+   "cand_range": [
+    612,
+    618
+   ],
+   "orig_lines": "729-729",
+   "cand_lines": "613-618",
+   "channel_pair": [
+    "module-css",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "orig": [
+      [
+       728,
+       729
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[/module]]",
+   "first_added": ""
+  }
+ ],
+ "derived_presence": {},
+ "summary": {
+  "blocks": 12,
+  "specific": 10,
+  "heuristic": 2,
+  "residue": 0,
+  "skipped": 0,
+  "reindent_blocks": 0,
+  "label_counts": {
+   "DRAFT-HOST": 1,
+   "IFTAGS": 1,
+   "SELF-DELIVERY": 1,
+   "TRANS-UNANCHORED": 5,
+   "TRANSLATION-ANCHORED": 3,
+   "CREDIT-PREVIEW": 1,
+   "CREDIT-PROSE": 1,
+   "TASL-FIELDS": 1,
+   "COMPONENT-SWAP": 1,
+   "ESCAPED-INCLUDE": 1,
+   "INCLUDE-REPOINT": 1,
+   "DELIVERY-MOVE": 5,
+   "JPFONT-LOAD": 1,
+   "CONTENT-STRING": 1
+  }
+ },
+ "residue": [],
+ "skeleton": {
+  "sha256": "60026b6c7681d5ed76956c3e02bad7b8916a24c2516d59418d787dbaefde3551",
+  "status": "written (new)"
+ }
+}

@@ -1,0 +1,219 @@
+[[iftags +테마]]
+[[module CSS]]
+@import url('https://cdn.jsdelivr.net/gh/Nu-SCPTheme/Black-Highlighter@gh-pages/css/min/normalize.min.css');
+@import url('https://cdn.jsdelivr.net/gh/Nu-SCPTheme/Black-Highlighter@gh-pages/css/min/black-highlighter.min.css');
+@import url('https://cdn.jsdelivr.net/gh/XCninety/xcninety.github.io/Black-Highlighter/NanumBarunCatsi.css');
+[[/module]]
+
+[[include info:start]]
+**존재학부 하이라이터**
+**저자:** [[*user Denevola]]
+[[include info:end]]
+
+이건 [[[http://scpkosb.wikidot.com/collab:shark-bytes-44-5bde|존재학부]]]를 위한 전용 테마입니다.
+존재학부 로고는 [[*user Didic]]이 디자인하였습니다.
+
++ 사용법
+이 테마를 사용하려면 아래 코드를 작품에 붙여넣으세요.
+[[div class="code"]]
+@@[[include :scpko:theme:black-highlighter-theme]]@@
+@@[[include :scpko:theme:ontology-department]]@@
+[[/div]]
+어두운 사이드바 적용
+[[div class="code"]]
+@@[[include :scpko:theme:black-highlighter-theme]]@@
+@@[[include :scpko:theme:ontology-department]]@@
+@@[[include :scpko:component:bhl-dark-sidebar]]@@
+[[/div]]
+
++ 사용례
+수평줄은 하이픈 5개 "@@------@@"를 치면 만들어지며, 따로 들어 있는 곳 (인용 블록 등) 이 없다면 페이지 전체를 가로지릅니다. 이 글에서 섹션을 나누는 줄은 모두 이 수평줄입니다.
+
+-----
+
+제목은 문장 처음에 "+"을 1개부터 6개까지 입력해서 적용할 수 있습니다.
+
+[[collapsible show="▼ 제목들" hide="▲ 닫기"]]
++ 제목 1단계
+
+++ 제목 2단계
+
++++ 제목 3단계
+
+++++ 제목 4단계
+
++++++ 제목 5단계
+
+++++++ 제목 6단계
+[[/collapsible]]
+
+@@ @@
+
+[[tabview]]
+[[tab 탭 뷰]]
+탭 뷰입니다.
+[[/tab]]
+[[tab 탭 뷰]]
+봐요, 글자 더 있음.
+
+대단하죠.
+[[/tab]]
+[[tab 긴 탭]]
+긴 탭입니다. 많은 글자가 들어가죠.
+
+긴 탭입니다. 많은 글자가 들어가죠.
+
+긴 탭입니다. 많은 글자가 들어가죠.
+
+긴 탭입니다. 많은 글자가 들어가죠.
+
+긴 탭입니다. 많은 글자가 들어가죠.
+
+긴 탭입니다. 많은 글자가 들어가죠.
+
+긴 탭입니다. 많은 글자가 들어가죠.
+
+긴 탭입니다. 많은 글자가 들어가죠.
+
+긴 탭입니다. 많은 글자가 들어가죠.
+
+긴 탭입니다. 많은 글자가 들어가죠.
+
+긴 탭입니다. 많은 글자가 들어가죠.
+
+긴 탭입니다. 많은 글자가 들어가죠.
+[[/tab]]
+[[tab 빈 탭]]
+[[/tab]]
+[[tab 빈 탭]]
+[[/tab]]
+[[tab 빈 탭]]
+[[/tab]]
+[[tab 빈 탭]]
+[[/tab]]
+[[tab 빈 탭]]
+[[/tab]]
+[[tab 빈 탭]]
+weed lmao
+[[/tab]]
+[[/tabview]]
+
+> 이것은 인용구로 각 줄의 시작에 ">"를 넣으면 작동합니다.
+>
+> 글자
+> -----
+> 구분선
+>
+>> 이중 인용문
+>>> 삼중 인용문[[footnote]] 그리고 이건 각주! [[/footnote]]
+
+||~ 이것은 ||~ 표 ||
+|| 만드는 법은 || 이미 아실 거라 ||
+|||| 생각합니다 ||
+
++ 소스 코드
+[[collapsible show="+ 코드 보이기" hide="- 코드 숨기기" hideLocation="both"]]
+[[code type="css"]]
+/*
+    Ontology Department Highlighter Theme
+    [2021 Wikidot Theme]
+    Created by Denevola.
+    Based on Black Highlighter Theme created by Woedenaz and Croquembouche.
+    The Ontology Department logo was created by Didic and vectorized by Denevola. Licensed under CC BY-SA 3.0.
+*/
+
+@font-face {
+    font-family: "GmarketSansBold";
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root:lang(ko) {
+    --theme-base: "black-highlighter";
+    --theme-id: "ontology-department";
+    --theme-name: "Ontology Department Highlighter Theme";
+
+    /* Header */
+    --logo-image: url('https://scpko.wdfiles.com/local--files/theme%3Aontology-department/department-logo.svg');
+    --header-title: "존재학부";
+    --header-subtitle: "인과, 개념, 물질";
+
+    /* Typefaces */
+    --body-font: proxima-nova,Verdana,Geneva,NanumBarunCatsi,sans-serif;
+    --header-font: "GmarketSansBold","Poppins",Franklin Gothic Medium,Franklin Gothic,ITC Franklin Gothic,Arial,NanumBarunCatsi,sans-serif;
+    --title-font: "GmarketSansBold","Poppins",Franklin Gothic Medium,Franklin Gothic,ITC Franklin Gothic,NanumBarunCatsi,Arial,sans-serif;
+    --mono-font: "Space Mono",Consolas,monaco,"Nanum Gothic Coding",monospace;
+
+    /* Standard Colors */
+    --white-monochrome: 247, 250, 252;
+    --pale-gray-monochrome: 250, 250, 250;
+    --light-pale-gray-monochrome: 250, 250, 250;
+    --pale-accent: 157, 157, 212;
+    --bright-accent: 100, 100, 135;
+    --medium-accent: 34, 46, 89;
+    --dark-accent: 100, 100, 135;
+
+    /* Header Gradients */
+    --gradient-header: linear-gradient(
+     180deg,
+     rgb(var(--header-gradient-color-bottom)) 0%,
+     rgb(var(--header-gradient-color-middle)) 90%,
+     rgb(var(--header-gradient-color-top)) 100%
+    );
+    --diagonal-stripes: repeating-linear-gradient(
+     to top,
+     hsla(0, 0%, 100%, 0),
+     hsla(0, 0%, 100%, 0) 0.25vh,
+     rgba(88, 88, 88, 0.1) 0.35vh,
+     rgba(88, 88, 88, 0.2) 0.5vh
+    );
+}
+
+#header h1 a {
+    margin-top: calc(var(--header-height-on-desktop)/2 - .75em);
+}
+
+#header h2 {
+    font-family: "Poppins", Franklin Gothic Medium, Franklin Gothic, ITC Franklin Gothic, Arial, NanumBarunCatsi, sans-serif;
+}
+
+#header h2 span {
+    margin-top: calc(var(--header-height-on-desktop)/2 + var(--header-h1-font-size)/2 - var(--header-h2-font-size) + .75rem);
+}
+
+@media only screen and (max-width: 768px) {
+
+    #header h1 a {
+        margin-top: calc(var(--header-height-on-mobile)/2 - 1.345rem);
+    }
+
+    #header h2 span {
+        margin-top: calc(var(--header-height-on-mobile)/2 + var(--header-h1-font-size)/2 + .5rem);
+    }
+}
+
+#page-title,
+.meta-title {
+    flex-direction: column;
+    border-bottom: none;
+    text-align: center;
+}
+
+#page-title::after,
+.meta-title::after {
+    display: block;
+    width: 100%;
+    height: .5rem;
+    border-radius: 50%;
+    background-color: rgba(var(--swatch-menubg-medium-dark-color,66,66,72),.2);
+    content: "";
+}
+[[/code]]
+[[/collapsible]]
+
+[[/iftags]]
+
+[[module CSS]]
+@import url('https://scpko.wdfiles.com/local--code/theme%3Aontology-department/1');
+[[/module]]
