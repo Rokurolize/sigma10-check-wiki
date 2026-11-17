@@ -1,6 +1,11 @@
 [[module CSS]]
 @import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Adrunken-alley-jp/1");
 [[/module]]
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Adrunken-alley-jp/1
+]]
+
 [[iftags +テーマ]]
 [[include :scp-jp:credit:start-preview]]
 
@@ -50,10 +55,6 @@ div#header {
     background: url(https://scp-wiki-cloud.wdfiles.com/local--files/roger/drunk-logo) 10px 40px no-repeat;
     background-size: 100px 93px;
 }
-div#container-wrap {
-    background-image: url();
-}
-
 /* サイバーパンクの基調色 */
 :root {
     --neon-green: #39FF14;
@@ -181,7 +182,6 @@ button:hover, input[type="submit"]:hover {
     border: 5px solid #000;
     padding: 0 1em;
     color: #000;
-    background-image: url("");
     background-color: #fff;
     position: relative;
     overflow: hidden;
