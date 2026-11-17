@@ -43,3 +43,18 @@ it is never silently read as "nothing there". See SWEEP-PROTOCOL.md.
 - Recipe version: KB-42 @ 5eb3957, run by SWEEP-C (2026-11-17)
 - Miss kind: recipe hazard (false-positive class)
 - Record: a raw grep for http:// inside CSS channels returns 319 hits dominated by w3.org namespace identifiers (http://www.w3.org/2000/svg, .../1999/xlink). Those are XML namespace identifiers, not fetched URLs. Every http recipe must classify by context and exclude namespace identifiers before counting; the fetched-asset count for KB-42 is 7 files / 25 assets, not 319.
+
+### NL-08 — Translated CSS comments (porter-visible text)
+- Recipe version: KB-18 @ patterns v2 (0eef991), documentation-pass taxonomy classification (2026-11-17)
+- Miss kind: observation, no pattern founded (known non-finding)
+- Record: the taxonomy classification found CSS comments translated in place across the sample (sodium, uiu-bhl-theme, ink, magazine comment blocks). Comments are porter-visible only; they render for no reader, so they sit outside KB-18's defect surface even after its string-variable extension. Recorded so future sweeps do not file comment translation as an untranslated-text miss in either direction: translated comments are not a finding, and untranslated comments are not a KB-18 charge. The explanation model carries comment translation in its Text translation section for completeness.
+
+### NL-09 — Porter annotation additions
+- Recipe version: documentation-pass taxonomy classification (2026-11-17); no pattern recipe covers the shape
+- Miss kind: observation, no pattern founded (known non-finding)
+- Record: candidates carry text with no original counterpart added by the porter: [!-- ... --] translator notes (magazine's collapsible-sidebar provenance note) and editor lines ("Edited for SCP-JP by..." in penumbra). P10 sanctions **訳注:** footnotes in body text; it does not name the comment-form annotations or editor lines. These are legitimate port apparatus, not defects and not translation residue; they belong to the review protocol (the explanation's Porter annotations section), where they are listed so they are never mistaken for original content. Recorded so a diff census does not file them as unexplained additions.
+
+### NL-10 — Wholesale re-indentation defeats follow-up diffs
+- Recipe version: documentation-pass taxonomy classification (2026-11-17); localize.md's closing structural rule is the governing text
+- Miss kind: observation, no pattern founded (disclosure duty, not a defect)
+- Record: uiu-bhl-theme's candidate re-indents wholesale (107 of the sample's 142 whitespace-only change blocks; tab-to-space), and whitespace-only change is 9.3% of all sampled blocks. Re-indentation changes no rendering, so it is not a theme defect; its cost lands on the next reviewer, because a follow-up diff against the original no longer applies cleanly, against the spirit of localize.md's closing rule (structure preserved so follow-up diffs apply). Not a pattern: the remedy is disclosure, not repair. Explanations state whitespace and re-indentation block and line counts in their Formatting-only section, so the hazard is on record per theme.

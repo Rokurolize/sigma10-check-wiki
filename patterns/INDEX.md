@@ -95,9 +95,11 @@ swept would show `never`; every current pattern was swept on
 | KB-64 | [KB-64.md](KB-64.md) | Bare component:sigma-plus include bypassing the JP port | A. Theme defect, file-provable | pure grep | FILE-PROVABLE | adopted | 1 (static-diff) | 7/0 |
 | KB-65 | [KB-65.md](KB-65.md) | Duplicated @import lines | A. Theme defect, file-provable | pure grep | FILE-PROVABLE | adopted | 1 (static-diff) | 40/0 |
 | KB-66 | [KB-66.md](KB-66.md) | Dead prose link to a page name that will not exist on scp-jp | A. Theme defect, file-provable | needs live probe | FILE-PROVABLE | adopted | 2 (live-probe, static-diff) | never |
+| KB-67 | [KB-67.md](KB-67.md) | Documentation or sample exhibit dropped or replaced without a recorded ground | A. Theme defect, file-provable | cross-file diff | FILE-PROVABLE | adopted | 2 (static-diff, lane-report) | never |
+| KB-68 | [KB-68.md](KB-68.md) | Candidate adopted from the production JP counterpart (provenance route undeclared) | C. Cross-cutting, not a defect | cross-file diff | FILE-PROVABLE | adopted | 1 (static-diff) | never |
 
 ## Totals
 
-- Patterns: 66 (KB-01 to KB-66), plus SWEEP-PROTOCOL.md, SUPPLEMENT-TYPES.md and NEGATIVE-LEDGER.md.
+- Patterns: 68 (KB-01 to KB-68), plus SWEEP-PROTOCOL.md, SUPPLEMENT-TYPES.md and NEGATIVE-LEDGER.md.
 - Total confirmed hits (SWEEP-RESULTS.tsv, first sweep 2026-11-17): 2038. For TRIAGE patterns this is a risk count, not a verdict count; units follow each source report (themes for most patterns, occurrences, rows or report mentions where the report counts those).
 - Total undecidable cells (SWEEP-RESULTS.tsv): 1861. This sum includes the whole-population by-design undecidable patterns KB-19 and KB-48 (287 each) and the probe queues KB-02 (80) and KB-05 (251).
