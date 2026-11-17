@@ -1,0 +1,999 @@
+[[include :scp-wiki-cn:component:sigma-plus]]
+[[include :scp-wiki:component:toggle-sidebar]]
+
+[[iftags +版式]]
+[[>]]
+[[module rate]]
+[[/>]]
+
+终极阅读器版式是一个[[[component:sigma-plus|Sigma+]]]版式，旨在提供更简洁的页面布局，以及适于阅读的大字号正文区域。
+
+使用以下代码引入终极阅读器版式：
+
+[[div class="code"]]
+@@[[include :scp-wiki-cn:theme:ultimate-reader]]@@
+[[/div]]
+
+终极阅读器版式自带一个“终极模式”，包含折叠式版头、更宽的页面内容区域以及启用思源宋体作为正文字体，这将使得页面整体视觉效果与常见的阅读器版式相类似。你可以使用如下代码引入版式并启用“终极模式”：
+
+[[div class="code"]]
+@@[[include :scp-wiki-cn:theme:ultimate-reader ultimate-mode=*]]@@
+[[/div]]
+
+或者，若你只希望使用“终极模式”的一部分特性，下面这些代码可以帮助你进行调整：
+
+**只启用切换版头：**
+
+[[div class="code"]]
+@@[[include :scp-wiki-cn:theme:ultimate-reader toggle-header=*]]@@
+[[/div]]
+
+**更多CSS变量：**（以下提供的是不启用“终极模式”时的默认值）
+
+[[code type="CSS"]]
+:root {
+    --header-title: "SCP基金会";
+    /* 主标题 */
+    --header-subtitle: "控制，收容，保护";
+    /* 副标题 */
+    --sp_area-max-width: 45rem;
+    /* 正文宽度 */
+
+    --ur_title-font: "Noto Serif SC", serif;
+    /* 标题字体 */
+    --ur_body-font: "Noto Sans SC", sans-serif;
+    /* 正文字体 */
+
+    --ur_marble: #DDE;
+    /* 主题颜色：大理石 */
+    --ur_concrete: #FFF;
+    /* 主题颜色：混凝土 */
+    --ur_redstone: #F05F57;
+    /* 主题颜色：红石 */
+    --ur_basalt: #360940;
+    /* 主题颜色：玄武岩 */
+    --ur_bedrock: #222;
+    /* 主题颜色：基岩 */
+    --ur_stone: #333;
+    /* 主题颜色：石头 */
+}
+[[/code]]
+
+----
+
+[[=]]
++ 示例
+[[/=]]
+
+[[include :scp-wiki-cn:component:image-block
+|name=https://ah-sandbox.wdfiles.com/local--files/hormress-s-logos/ARED_2_i.svg
+|caption=一张图片
+|width=100px
+]]
+
++ 一级标题
+++ 二级标题
++++ 三级标题
+++++ 四级标题
++++++ 五级标题
+++++++ 六级标题
+
+||~ 标题 ||~ 标题 ||~ 标题 ||~ 标题 ||~ 标题 ||~ 标题 ||
+|| 子内容 || 子内容 || 子内容 || 子内容 || 子内容 || 子内容 ||
+
+[[tabview]]
+
+[[tab 标签 1]]
+标签内容
+[[/tab]]
+
+[[tab 标签 2]]
+标签内容
+[[/tab]]
+
+[[tab 标签 3]]
+标签内容
+[[/tab]]
+
+[[tab 标签 4]]
+标签内容
+[[/tab]]
+
+[[tab 标签 5]]
+标签内容
+[[/tab]]
+
+[[/tabview]]
+
+[[toc]]
+
+> 引用
+> ----
+>> 嵌套引用
+
+[[/iftags]]
+
+[[div [[iftags -版式]]style="display: none;"[[/iftags]] ]]
+
+[[collapsible show="+ 展开源代码" hide="- 隐藏源代码"]]
+
+[[module CSS show="true"]]
+/* ULTIMATE READER Theme
+    by Dr Hormress
+    Based on Sigma+ by EstrellaYoshte
+    SCP Logo by Woedenaz
+    [2023 Wikidot Theme] */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;700;900');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900');
+
+:root {
+    --sp_header-title-scale: 0.8;
+    --sp_header-height: 7rem;
+
+    --sp_header-logo: url(https://sigma9.scpwikicn.com/cn/img/logo.png);
+    --sp_header-logo-size: 5rem;
+    --sp_header-logo-adaptive-size: min(var(--sp_header-logo-size), calc(var(--sp_header-logo-size)*0.575 + 5vw));
+
+    --sp_header-gradient-top-color: var(--ur_basalt);
+    --sp_header-gradient-top-stop: 0;
+    --sp_header-gradient-bottom-color: var(--ur_bedrock);
+    --sp_header-gradient-bottom-stop: 1;
+
+    --sp_diagonal-stripes-angle: 45deg;
+    --sp_diagonal-stripes-width: .22rem;
+    --sp_diagonal-stripes-gap: .44rem;
+    --sp_diagonal-stripes-color: var(--ur_basalt);
+
+    --sp_top-bar-height: 1.75rem;
+    --sp_top-bar-gradient-top-color: var(--ur_stone);
+    --sp_top-bar-gradient-bottom-color: var(--ur_stone);
+
+    --sp_top-bar-link-color: var(--ur_concrete);
+    --sp_top-bar-link-hover-color: var(--ur_redstone);
+    --sp_top-bar-link-hover-background: var(--ur_basalt);
+
+    --sp_dropdown-width: calc(8.25rem + 2.25vw);
+    --sp_dropdown-background: var(--ur_stone);
+    --sp_dropdown-link-color: var(--ur_marble);
+    --sp_dropdown-link-hover-color: var(--sp_top-bar-link-hover-color);
+    --sp_dropdown-link-background: transparent;
+    --sp_dropdown-link-border: 0.05rem solid transparent;
+
+    --sp_side-bar-width: 15rem;
+
+    --sp_area-max-width: 45rem;
+    --sp_area-min-margin: 1.5rem;
+
+    --sp_rate-module-text-color: inherit;
+    --sp_rate-module-background: var(--ur_stone);
+    --sp_rate-module-sub-color: transparent;
+
+    --sp_rate-module-button-color: var(--ur_marble);
+    --sp_rate-module-button-background: transparent;
+    --sp_rate-module-button-hover-color: var(--ur_concrete);
+    --sp_rate-module-button-hover-background: transparent;
+
+    --sp_tab-text-color: inherit;
+    --sp_tab-background: var(--ur_basalt);
+    --sp_tab-border-color: transparent;
+    --sp_tab-hover-text-color: var(--sp_tab-text-color);
+    --sp_tab-hover-background: var(--ur_basalt);
+    --sp_tab-hover-border-color: var(--sp_tab-border-color);
+    --sp_tab-selected-text-color: var(--ur_concrete);
+    --sp_tab-selected-background: var(--ur_redstone);
+    --sp_tab-selected-border-color: transparent;
+
+    --sp_hovertip-background: var(--ur_stone);
+    --sp_hovertip-border: 0.05rem solid transparent;
+
+    --title-font: var(--ur_title-font);
+    --black-monochrome: 255, 255, 255;
+
+    --ur_title-font: "Noto Serif SC", serif;
+    --ur_body-font: "Noto Sans SC", sans-serif;
+
+    --ur_marble: #DDE;
+    --ur_concrete: #FFF;
+    --ur_redstone: #F05F57;
+    --ur_basalt: #360940;
+    --ur_bedrock: #222;
+    --ur_stone: #333;
+
+    --ur_circle-mask: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0%29 --%3E%3Csvg version='1.1' id='SCP_Logo' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px'%0AviewBox='0 0 2215 2080' style='enable-background:new 0 0 2215 2080;' xml:space='preserve'%3E%3Cpath id='Outer_Circle' d='M2215,1351.8l-125-139.7c5-40.5,7.5-81.3,7.5-122.1c0-410-249.3-761.8-604.6-912.2L1434.5,0h-654%0Al-58.4,177.9C366.8,328.2,117.5,680,117.5,1090c0,40.8,2.5,81.6,7.5,122.1L0,1351.8l327,566.4l183.5-38.4%0Ac166,125.7,372.8,200.2,597,200.2s431-74.5,597-200.2l183.5,38.4L2215,1351.8L2215,1351.8z M1683,1794.4%0Ac-156.7,128.5-357.1,205.6-575.5,205.6c-218.4,0-418.8-77.1-575.5-205.6l-164.2,34.4l-270-467.7l112.3-125.4%0Ac-7.6-47.5-11.6-96.1-11.6-145.8c0-389,243.9-721.1,586.9-851.2L837.5,80h540l52.1,158.8c343.1,130.2,586.9,462.2,586.9,851.2%0Ac0,49.6-4,98.3-11.6,145.8l112.3,125.4l-270,467.7L1683,1794.4z'/%3E%3C/svg%3E");
+    --ur_arrow-mask: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0%29 --%3E%3Csvg version='1.1' id='SCP_Logo' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px'%0AviewBox='0 0 2215 2080' style='enable-background:new 0 0 2215 2080;' xml:space='preserve'%3E%3Cpath d='M1771.8,1427.4l-82.4-47.5c43.5-87.3,68-185.7,68-289.8c0-345.6-269.6-628.1-610-648.8V346h-80v95.2%0Ac-340.4,20.7-610,303.2-610,648.8c0,104.1,24.5,202.6,68,289.8l-82.4,47.5l40,69.3l82.4-47.6C682,1624.4,881.3,1740,1107.5,1740%0As425.5-115.6,541.9-290.9l82.4,47.6L1771.8,1427.4z M1107.5,1620c-181.8,0-342.3-91.6-437.7-231.1l206.6-119.3l42.5,73.6l154-233.3%0Al-279,16.7l42.5,73.6l-206.6,119.3c-33.5-69.5-52.2-147.4-52.2-229.7c0-279.3,216-508.1,490-528.5V800h-85l125,250l125-250h-85%0AV561.5c274,20.4,490,249.3,490,528.5c0,82.3-18.8,160.2-52.2,229.7l-206.6-119.3l42.5-73.6l-279-16.7l154,233.3l42.5-73.6%0Al206.6,119.3C1449.8,1528.4,1289.3,1620,1107.5,1620z'/%3E%3C/svg%3E");
+}
+
+/* MAIN */
+
+body {
+    font-size: 1rem;
+    color: var(--ur_marble);
+    font-family: var(--ur_body-font);
+    background-color: var(--ur_bedrock);
+}
+
+* {
+    font-family: inherit;
+}
+
+a,
+a:visited,
+a:hover,
+a.newpage {
+    color: inherit;
+    text-decoration: none;
+}
+
+div#main-content a,
+div#main-content a:link,
+div#main-content a:visited,
+div#main-content a.newpage,
+div#side-bar a:visited,
+a.btn {
+    color: inherit;
+    border: none;
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, transparent calc(50% - 0.125rem), var(--ur_redstone) calc(50% - 0.125rem), var(--ur_redstone) 100%, transparent 100%);
+    background-size: 100% 200%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    transition: ease 0.125s;
+}
+
+div#main-content a:hover,
+div#main-content a:focus,
+a.btn:hover,
+a.btn:focus {
+    color: var(--ur_concrete);
+    border: none;
+    background-color: transparent;
+    text-decoration: none;
+    background-position: center bottom;
+}
+
+div#main-content {
+    max-width: min(100%, var(--sp_area-max-width));
+}
+
+/* BUTTON LINK FIX */
+
+a.button.btn,
+div.owindow a.btn,
+div.options input.btn,
+div.options input.btn.btn-default,
+div.options input.btn.btn-primary,
+div.options input.btn.btn-sm,
+div.options input.btn.btn-small,
+div.options a.btn,
+div.options a.btn.btn-default,
+div.options a.btn.btn-primary,
+div.options a.btn.btn-sm,
+div.options a.btn.btn-small,
+div.buttons input.btn,
+div.buttons input.btn.btn-default,
+div.buttons input.btn.btn-primary,
+div.buttons input.btn.btn-sm,
+div.buttons input.btn.btn-small,
+div.buttons a.btn,
+div.buttons a.btn.btn-default,
+div.buttons a.btn.btn-primary,
+div.buttons a.btn.btn-sm,
+div.buttons a.btn.btn-small,
+div.button-bar input.btn,
+div.button-bar a.btn,
+div.button-bar a,
+div.page-options-bottom input.btn,
+div.page-options-bottom a.btn {
+    color: inherit;
+    border: none;
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, transparent calc(50% - 0.125rem), var(--ur_redstone) calc(50% - 0.125rem), var(--ur_redstone) 100%, transparent 100%);
+    background-size: 100% 200%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    transition: ease 0.125s;
+}
+
+a.button.btn:hover,
+div.owindow a.btn:hover,
+div.options input.btn:hover,
+div.options a.btn:hover,
+div.buttons input.btn:hover,
+div.buttons a.btn:hover,
+div.button-bar input.btn:hover,
+div.button-bar a.btn:hover,
+div.button-bar a:hover,
+div.page-options-bottom input.btn:hover,
+div.page-options-bottom a.btn:hover,
+a.button.btn:focus,
+div.owindow a.btn:focus,
+div.options input.btn:focus,
+div.options a.btn:focus,
+div.buttons input.btn:focus,
+div.buttons a.btn:focus,
+div.button-bar input.btn:focus,
+div.button-bar a.btn:focus,
+div.button-bar a:focus,
+div.page-options-bottom input.btn:focus,
+div.page-options-bottom a.btn:focus {
+    color: var(--ur_concrete);
+    border: none;
+    background-color: transparent;
+    text-decoration: none;
+    background-position: center bottom;
+}
+
+/* SEARCH BOX FIX */
+
+#search-top-box-input {
+    display: none;
+}
+
+div#search-top-box input[type="submit"],
+div#search-top-box input[type="submit"]:hover {
+    color: var(--ur_marble);
+    border-color: transparent;
+    border-radius: 0;
+    background-image: none;
+    box-shadow: none;
+    background-color: var(--ur_stone);
+    transition: ease 0.125s;
+}
+
+div#search-top-box input[type="submit"]:hover {
+    color: var(--ur_concrete);
+    background-color: var(--ur_redstone);
+}
+
+/* HEADER LOGO */
+
+div#header::before,
+div#header div#header-extra-div-1 {
+    content: "";
+    display: block;
+    background-image: none;
+    mask: var(--ur_circle-mask) no-repeat center;
+    mask-size: contain;
+    -webkit-mask: var(--ur_circle-mask) no-repeat center;
+    -webkit-mask-size: contain;
+    grid-row: 2/6;
+    grid-column: 2/3;
+    width: var(--sp_header-logo-adaptive-size);
+    background-color: var(--ur_concrete);
+}
+
+div#header div#header-extra-div-1 {
+    mask: var(--ur_arrow-mask) no-repeat center;
+    -webkit-mask: var(--ur_arrow-mask) no-repeat center;
+    background-color: var(--ur_redstone);
+}
+
+/* HEADER */
+
+div#header h1 a {
+    color: var(--ur_redstone);
+    font-family: var(--ur_title-font);
+    font-weight: 900;
+    text-shadow: none;
+}
+
+div#header h2 span {
+    color: var(--ur_marble);
+    font-family: var(--ur_title-font);
+    text-shadow: none;
+}
+
+/* TOP BAR */
+
+div#top-bar ul li ul {
+    border: none;
+    box-shadow: none;
+}
+
+/* SIDE BAR */
+
+div#top-bar div.open-menu a {
+    border: solid 0.05rem transparent;
+    background-color: var(--ur_stone);
+    border-radius: 0;
+    color: var(--ur_concrete);
+    transition: ease 0.125s;
+    opacity: 0.6;
+    box-shadow: none;
+}
+
+div#top-bar div.open-menu a:hover {
+    opacity: 1;
+    box-shadow: none;
+}
+
+div#side-bar,
+div#side-bar:target {
+    border: none;
+    width: var(--sp_side-bar-width);
+    background: var(--ur_bedrock);
+}
+
+div#side-bar a {
+    color: var(--ur_redstone);
+}
+
+div#side-bar div.side-block {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: var(--ur_bedrock) !important;
+}
+
+div#side-bar .side-block:not(.media) .menu-item img {
+    display: none;
+}
+
+div#side-bar .collapsible-block-folded {
+    background-image: none;
+}
+
+div#side-bar .collapsible-block-link {
+    margin: 0;
+}
+
+div#side-bar .heading,
+div#side-bar .collapsible-block-unfolded-link,
+div#side-bar .collapsible-block-unfolded-link .collapsible-block-link,
+div#side-bar .collapsible-block-unfolded-link .collapsible-block-link:hover {
+    padding-left: 0;
+    margin-left: 0;
+    text-align: center;
+    color: var(--ur_concrete);
+    border-color: var(--ur_stone);
+    border-width: 0.125rem;
+    font-size: 1.125rem;
+    font-weight: normal;
+    font-family: var(--ur_title-font);
+}
+
+/* PAGE CONTENT */
+
+div#page-title {
+    text-align: center;
+    font-family: var(--ur_title-font);
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--ur_concrete);
+    border-color: var(--ur_stone);
+}
+
+div#page-content {
+    font-family: var(--ur_body-font);
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.15rem;
+    text-align: justify;
+    justify-align: both;
+}
+
+h1 {
+    color: var(--ur_redstone);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--ur_title-font);
+    font-weight: 700;
+}
+
+strong {
+    font-weight: 700;
+}
+
+div.page-rate-widget-box,
+div.rate-box-with-credit-button,
+div.page-rate-widget-box span.cancel a:hover {
+    border: none;
+    border-radius: 0;
+}
+
+div.page-rate-widget-box,
+div.rate-box-with-credit-button {
+    box-shadow: 0 0 0 0.25rem var(--ur_bedrock);
+}
+
+div.modalbox {
+    background-image: none;
+    background-color: var(--ur_bedrock);
+    border: none;
+}
+
+div.scp-image-block {
+    background-color: var(--ur_stone);
+    border: solid 0.25rem var(--ur_stone);
+    box-shadow: 0 0 0 0.25rem var(--ur_bedrock);
+}
+
+div.scp-image-block.block-right {
+    margin-right: 0;
+}
+
+div.scp-image-block.block-left {
+    margin-left: 0;
+}
+
+div.scp-image-block img {
+    width: auto !important;
+}
+
+div.scp-image-block div.scp-image-caption {
+    width: auto !important;
+    background-color: var(--ur_bedrock);
+    border-top: solid 0.25rem var(--ur_stone);
+}
+
+blockquote,
+div.blockquote,
+#toc {
+    background-color: var(--ur_stone);
+    border: none;
+    padding: 0.25rem 1.325rem;
+    box-shadow: 0 0 0 0.25rem var(--ur_bedrock);
+}
+
+div.code {
+    border-color: var(--ur_stone);
+    background-color: transparent;
+    box-shadow: 0 0 0 0.25rem var(--ur_bedrock);
+}
+
+/* CODE HIGHLIGHT */
+
+.hl-identifier,
+.hl-code,
+.hl-brackets {
+    color: var(--ur_marble);
+}
+
+.hl-var {
+    color: var(--ur_redstone);
+}
+
+.hl-special,
+.hl-quotes {
+    color: var(--ur_redstone);
+}
+
+.hl-reserved {
+    color: var(--ur_concrete);
+}
+
+.hl-number,
+.hl-string {
+    color: var(--ur_redstone);
+}
+
+hr {
+    margin-left: 0;
+    margin-right: 0;
+    height: 0.125rem;
+    background-color: var(--ur_stone);
+    box-shadow: 0 0.125rem 0 var(--ur_bedrock);
+}
+
+.anom-bar-container a {
+    opacity: 0;
+}
+
+/* TABLES */
+
+table.wiki-content-table {
+    border: solid 0.25rem var(--ur_stone);
+    box-shadow: 0 0 0 0.25rem var(--ur_bedrock);
+}
+
+table.wiki-content-table th {
+    background-color: var(--ur_stone);
+    border: solid 0.125rem var(--ur_stone);
+}
+
+table.wiki-content-table td {
+    border: solid 0.125rem var(--ur_stone);
+}
+
+/* YUI TABS */
+
+.yui-navset {
+    border: solid 0.25rem var(--ur_stone);
+}
+
+.yui-navset .yui-nav {
+    border: none;
+}
+
+.yui-nav * {
+    flex-grow: 1;
+}
+
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a:hover,
+.yui-navset .yui-nav .selected a:focus {
+    background-color: var(--ur_redstone) !important;
+}
+
+.yui-navset .yui-content {
+    border: none;
+    background-color: var(--ur_stone);
+}
+
+.yui-navset.yui-navset-top .yui-nav li a {
+    border: none;
+}
+
+/* OWINDOW */
+
+div.owindow {
+    border: none;
+    background-color: var(--ur_stone);
+    box-shadow: none;
+}
+
+div.owindow div.title.modal-header {
+    background-color: var(--ur_basalt);
+}
+
+/* EDITOR */
+
+input#edit-page-title {
+    max-width: 100%;
+    width: 100%;
+}
+
+input,
+input#np-title,
+input#ep-title,
+input#edit-page-title,
+input#page-tags-input,
+input#upload-userfile,
+input#upload-dfilename,
+input#move-new-page-name,
+input.text,
+textarea,
+textarea#np-text,
+textarea#ep-text,
+textarea#edit-page-textarea,
+table.edit-page-bottomtable td div:not(.sub) textarea#edit-page-comments[name="comments"] {
+    border: solid 0.125rem var(--ur_stone);
+    background-color: var(--ur_bedrock);
+    color: var(--ur_marble);
+}
+
+div#main-content div.change-textarea-size a.btn,
+div#main-content div.change-textarea-size a.btn:hover,
+div#main-content div.change-textarea-size a.btn:focus {
+    border: none;
+    background-color: var(--ur_stone);
+}
+
+table.edit-page-bottomtable td div#lock-info {
+    border: none;
+    background-color: var(--ur_stone);
+}
+
+.wd-editor-toolbar-panel a {
+    position: relative;
+    display: inline-block;
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+    padding: 0 !important;
+    background-color: var(--ur_stone) !important;
+}
+
+.wd-editor-toolbar-panel ul ul {
+    border: none !important;
+    background-color: var(--ur_bedrock);
+}
+
+.wd-editor-toolbar-panel a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    text-align: center;
+    line-height: 1.5rem;
+    white-space: nowrap;
+    font-size: 0.8rem;
+    z-index: 5;
+}
+
+.wd-editor-toolbar-panel a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    text-align: center;
+    line-height: 1.5rem;
+    white-space: nowrap;
+    font-size: 0.8rem;
+}
+
+.wd-editor-toolbar-panel a.weditor-codewiz::after,
+.wd-editor-toolbar-panel a.weditor-uriwiz::after,
+.wd-editor-toolbar-panel a.weditor-pagelinkwiz::after,
+.wd-editor-toolbar-panel a.weditor-imagewiz::after {
+    background-image:
+         repeating-linear-gradient(var(--sp_diagonal-stripes-angle),
+            var(--sp_diagonal-stripes-color), var(--sp_diagonal-stripes-color) var(--sp_diagonal-stripes-width),
+            transparent var(--sp_diagonal-stripes-width), transparent var(--sp_diagonal-stripes-gap));
+    opacity: 0.3;
+}
+
+.wd-editor-toolbar-panel a.weditor-h1::before,
+.wd-editor-toolbar-panel a.weditor-h2::before,
+.wd-editor-toolbar-panel a.weditor-h3::before,
+.wd-editor-toolbar-panel a.weditor-h4::before,
+.wd-editor-toolbar-panel a.weditor-h5::before,
+.wd-editor-toolbar-panel a.weditor-h6::before {
+    content: "H1";
+    font-size: 0.65rem;
+    font-family: var(--ur_title-font);
+    font-weight: 700;
+}
+
+.wd-editor-toolbar-panel a.weditor-h2::before {
+    content: "H2";
+}
+
+.wd-editor-toolbar-panel a.weditor-h3::before {
+    content: "H3";
+}
+
+.wd-editor-toolbar-panel a.weditor-h4::before {
+    content: "H4";
+}
+
+.wd-editor-toolbar-panel a.weditor-h5::before {
+    content: "H5";
+}
+
+.wd-editor-toolbar-panel a.weditor-h6::before {
+    content: "H6";
+}
+
+.wd-editor-toolbar-panel a.weditor-bold::before {
+    content: "B";
+    font-weight: 900;
+}
+
+.wd-editor-toolbar-panel a.weditor-italic::before {
+    content: "i";
+    font-style: italic;
+}
+
+.wd-editor-toolbar-panel a.weditor-underline::before {
+    content: "U";
+    text-decoration: underline;
+}
+
+.wd-editor-toolbar-panel a.weditor-strikethrough::before {
+    content: "S";
+    text-decoration: line-through;
+}
+
+.wd-editor-toolbar-panel a.weditor-teletype::before {
+    content: "tt";
+    font-size: 0.7rem;
+    font-family: monospace;
+}
+
+.wd-editor-toolbar-panel a.weditor-quote::before {
+    content: "\f10e";
+    font-family: "FontAwesome";
+}
+
+.wd-editor-toolbar-panel a.weditor-superscript::before {
+    content: "\f12b";
+    font-family: "FontAwesome";
+}
+
+.wd-editor-toolbar-panel a.weditor-subscript::before {
+    content: "\f12c";
+    font-family: "FontAwesome";
+}
+
+.wd-editor-toolbar-panel a.weditor-raw::before {
+    content: "R";
+}
+
+.wd-editor-toolbar-panel a.weditor-hr::before {
+    content: "—";
+}
+
+.wd-editor-toolbar-panel a.weditor-div::before {
+    content: "div";
+    font-size: 0.7rem;
+    font-family: monospace;
+}
+
+.wd-editor-toolbar-panel a.weditor-clearfloat::before {
+    content: "\f0ec";
+    font-family: "FontAwesome";
+}
+
+.wd-editor-toolbar-panel a.weditor-clearfloatleft::before {
+    content: "\f177";
+    font-family: "FontAwesome";
+}
+
+.wd-editor-toolbar-panel a.weditor-clearfloatright::before {
+    content: "\f178";
+    font-family: "FontAwesome";
+}
+
+.wd-editor-toolbar-panel a.weditor-table::before {
+    content: "\f0ce";
+    font-family: "FontAwesome";
+}
+
+.wd-editor-toolbar-panel a.weditor-toc::before {
+    content: "toc";
+    font-size: 0.7rem;
+    font-family: monospace;
+}
+
+.wd-editor-toolbar-panel a.weditor-code::before,
+.wd-editor-toolbar-panel a.weditor-codewiz::before  {
+    content: "\003c\002f\003e";
+    font-size: 0.7rem;
+    font-family: monospace;
+}
+
+.wd-editor-toolbar-panel a.weditor-uri::before,
+.wd-editor-toolbar-panel a.weditor-uriwiz::before {
+    content: "\f0c6";
+    font-family: "FontAwesome";
+}
+
+.wd-editor-toolbar-panel a.weditor-pagelink::before,
+.wd-editor-toolbar-panel a.weditor-pagelinkwiz::before {
+    content: "\f0c1";
+    font-family: "FontAwesome";
+}
+
+.wd-editor-toolbar-panel a.weditor-image::before,
+.wd-editor-toolbar-panel a.weditor-imagewiz::before {
+    content: "\f03e";
+    font-family: "FontAwesome";
+}
+
+.wd-editor-toolbar-panel a.weditor-html::before {
+    content: "\f1c9";
+    font-family: "FontAwesome";
+}
+
+.wd-editor-toolbar-panel a.weditor-numlist::before {
+    content: "\f0cb";
+    font-family: "FontAwesome";
+}
+
+.wd-editor-toolbar-panel a.weditor-bullist::before {
+    content: "\f0ca";
+    font-family: "FontAwesome";
+}
+
+.wd-editor-toolbar-panel a.weditor-incindent::before {
+    content: "\f03c";
+    font-family: "FontAwesome";
+}
+
+.wd-editor-toolbar-panel a.weditor-decindent::before {
+    content: "\f03b";
+    font-family: "FontAwesome";
+}
+
+.wd-editor-toolbar-panel a.weditor-deflist::before {
+    content: "\f03a";
+    font-family: "FontAwesome";
+}
+
+.wd-editor-toolbar-panel a.weditor-footnote::before {
+    content: "\f1ea";
+    font-family: "FontAwesome";
+}
+
+.wd-editor-toolbar-panel a.weditor-math::before {
+    content: "√x";
+    font-size: 0.7rem;
+    font-family: monospace;
+}
+
+.wd-editor-toolbar-panel a.weditor-mathinline::before {
+    content: "x/2";
+    font-size: 0.7rem;
+    font-family: monospace;
+}
+
+.wd-editor-toolbar-panel a.weditor-eqref::before {
+    content: "Eq";
+    font-size: 0.7rem;
+    font-family: monospace;
+}
+
+.wd-editor-toolbar-panel a.weditor-bib::before {
+    content: "Bib";
+    font-size: 0.7rem;
+    font-family: monospace;
+}
+
+.wd-editor-toolbar-panel a.weditor-bibcite::before {
+    content: "[n]";
+    font-size: 0.7rem;
+    font-family: monospace;
+}
+
+/* {$ultimate-mode}/
+
+:root {
+    --sp_area-max-width: 60rem;
+    --ur_body-font: var(--ur_title-font);
+}
+
+div#header {
+    z-index: 5;
+    position: relative;
+    top: calc(var(--sp_final-header-height) * -1);
+    margin-bottom: calc(var(--sp_final-header-height) * -1);
+    transition: ease 0.5s;
+}
+
+div#header:hover {
+    top: 0;
+}
+
+div#header::after {
+     content: "顶部导航";
+     display: block;
+     width: 6rem;
+     text-align: center;
+     background-color: var(--ur_stone);
+     position: absolute;
+     top: var(--sp_final-header-height);
+     left: calc(50% - 3rem);
+}
+
+/{$ultimate-mode} */
+
+/* {$toggle-header}/
+
+div#header {
+    z-index: 5;
+    position: relative;
+    top: calc(var(--sp_final-header-height) * -1);
+    margin-bottom: calc(var(--sp_final-header-height) * -1);
+    transition: ease 0.5s;
+}
+
+div#header:hover {
+    top: 0;
+}
+
+div#header::after {
+     content: "顶部导航";
+     display: block;
+     width: 6rem;
+     text-align: center;
+     background-color: var(--ur_stone);
+     position: absolute;
+     top: var(--sp_final-header-height);
+     left: calc(50% - 3rem);
+}
+
+/{$toggle-header} */
+[[/module]]
+
+[[/collapsible]]
+
+[[/div]]

@@ -1,0 +1,844 @@
+{
+ "tool": "classify_hunks.py",
+ "classifier_version": "0.1.0",
+ "signature_table_version": "2026-11-17.1",
+ "theme": {
+  "dir": "walk-in-the-dark-jp",
+  "cand_fullname": "theme:walk-in-the-dark-jp",
+  "orig_fullname": "theme:walk-in-the-dark",
+  "wiki": "scp-wiki-cn",
+  "revision": "72",
+  "kind": "standard",
+  "verdict": "PASS",
+  "original_file": "review/walk-in-the-dark-jp/original.txt",
+  "candidate_file": "review/walk-in-the-dark-jp/candidate.txt",
+  "original_sha256": "1e947ddde12ece0af412f061b8ee5745b46dc966a356e2255dc02fe3edf0bf3e",
+  "candidate_sha256": "d7ccd40536c6b8e4f87cf508b03b04faa3fac20536daac99971ee066f2d0f7c2",
+  "original_lines": 1202,
+  "candidate_lines": 1188
+ },
+ "topology": {
+  "original_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     2,
+     21
+    ],
+    "lines": 19
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     25,
+     991
+    ],
+    "lines": 966
+   },
+   {
+    "kind": "code-other",
+    "range": [
+     1081,
+     1086
+    ],
+    "lines": 5
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     1193,
+     1196
+    ],
+    "lines": 3
+   }
+  ],
+  "candidate_components": [
+   {
+    "kind": "code-css",
+    "range": [
+     207,
+     1177
+    ],
+    "lines": 970
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     1181,
+     1184
+    ],
+    "lines": 3
+   }
+  ],
+  "moves": [
+   {
+    "from_kind": "code-other",
+    "to_kind": "code-css",
+    "orig_range": [
+     1081,
+     1086
+    ],
+    "cand_range": [
+     207,
+     1177
+    ],
+    "similarity": 0.8,
+    "basis": "content"
+   }
+  ],
+  "external_own_delivery": true
+ },
+ "blocks": [
+  {
+   "id": "B1",
+   "orig_range": [
+    0,
+    4
+   ],
+   "cand_range": [
+    0,
+    1
+   ],
+   "orig_lines": "1-4",
+   "cand_lines": "1-1",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "IFTAGS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "IFTAGS",
+   "primary_section": 2,
+   "label_prec": {
+    "IFTAGS": "A",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "IFTAGS": {
+     "orig": [
+      [
+       0,
+       1
+      ]
+     ],
+     "cand": [
+      [
+       0,
+       1
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[iftags +版式]]",
+   "first_added": "[[iftags +テーマ]]"
+  },
+  {
+   "id": "B2",
+   "orig_range": [
+    5,
+    10
+   ],
+   "cand_range": [
+    2,
+    12
+   ],
+   "orig_lines": "6-10",
+   "cand_lines": "3-12",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [
+    "CREDIT-PREVIEW",
+    "CREDIT-PROSE",
+    "TASL-FIELDS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "CREDIT-PREVIEW",
+   "primary_section": 1,
+   "label_prec": {
+    "CREDIT-PREVIEW": "A",
+    "TASL-FIELDS": "A",
+    "TRANS-UNANCHORED": "C",
+    "CREDIT-PROSE": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "CREDIT-PREVIEW": {
+     "cand": [
+      [
+       2,
+       3
+      ],
+      [
+       11,
+       12
+      ]
+     ]
+    },
+    "TASL-FIELDS": {
+     "cand": [
+      [
+       3,
+       11
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {},
+    "CREDIT-PROSE": {}
+   },
+   "notes": [
+    "script delta without the anchor majority",
+    "position: inside the credit include pair"
+   ],
+   "partial_notes": [],
+   "first_removed": ".unmargined{",
+   "first_added": "[[include :scp-jp:credit:start-preview]]"
+  },
+  {
+   "id": "B3",
+   "orig_range": [
+    11,
+    14
+   ],
+   "cand_range": [
+    13,
+    17
+   ],
+   "orig_lines": "12-14",
+   "cand_lines": "14-17",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [
+    "CSS-BODY"
+   ],
+   "primary": "CSS-BODY",
+   "primary_section": 8,
+   "label_prec": {
+    "CSS-BODY": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "CSS-BODY": {}
+   },
+   "notes": [
+    "no other signature matched"
+   ],
+   "partial_notes": [],
+   "first_removed": "#breadcrumbs{",
+   "first_added": "@@@@"
+  },
+  {
+   "id": "B4",
+   "orig_range": [
+    15,
+    15
+   ],
+   "cand_range": [
+    18,
+    21
+   ],
+   "orig_lines": "at 16",
+   "cand_lines": "19-21",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": "[[/=]]"
+  },
+  {
+   "id": "B5",
+   "orig_range": [
+    16,
+    19
+   ],
+   "cand_range": [
+    22,
+    53
+   ],
+   "orig_lines": "17-19",
+   "cand_lines": "23-53",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [
+    "RESTORATION",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "RESTORATION",
+   "primary_section": 8,
+   "label_prec": {
+    "RESTORATION": "C",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "RESTORATION": {},
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "added content matches the original's own earlier region; diff-only signal, supplement decides",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "#page-content .unmargined + hr{   ",
+   "first_added": "[[include :scp-jp:component:theme-squares -=-"
+  },
+  {
+   "id": "B6",
+   "orig_range": [
+    20,
+    21
+   ],
+   "cand_range": [
+    54,
+    55
+   ],
+   "orig_lines": "21-21",
+   "cand_lines": "55-55",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[/module]] ",
+   "first_added": "------"
+  },
+  {
+   "id": "B7",
+   "orig_range": [
+    22,
+    22
+   ],
+   "cand_range": [
+    56,
+    62
+   ],
+   "orig_lines": "at 23",
+   "cand_lines": "57-62",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": "[[div style=\"font-family:'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif;font-size: 120%;\"]]"
+  },
+  {
+   "id": "B8",
+   "orig_range": [
+    23,
+    23
+   ],
+   "cand_range": [
+    63,
+    65
+   ],
+   "orig_lines": "at 24",
+   "cand_lines": "64-65",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": "@@@@"
+  },
+  {
+   "id": "B9",
+   "orig_range": [
+    24,
+    25
+   ],
+   "cand_range": [
+    66,
+    207
+   ],
+   "orig_lines": "25-25",
+   "cand_lines": "67-207",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[collapsible show=\"+ 主题代码\" hide=\"- 主题代码\"]]",
+   "first_added": "[[div class=\"scp-image-block block-right\" style=\"width:300px;\"]]"
+  },
+  {
+   "id": "B10",
+   "orig_range": [
+    26,
+    26
+   ],
+   "cand_range": [
+    208,
+    209
+   ],
+   "orig_lines": "at 27",
+   "cand_lines": "209-209",
+   "channel_pair": [
+    "body",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       208,
+       209
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": "/* ===== walk-in-the-dark ===== */"
+  },
+  {
+   "id": "B11",
+   "orig_range": [
+    44,
+    46
+   ],
+   "cand_range": [
+    227,
+    229
+   ],
+   "orig_lines": "45-46",
+   "cand_lines": "228-229",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "GLYPH-FORM",
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "GLYPH-FORM": "B",
+    "TRANSLATION-ANCHORED": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "GLYPH-FORM": {},
+    "TRANSLATION-ANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       227,
+       229
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "fold-compare: glyph forms only",
+    "anchored pairs 2/2"
+   ],
+   "partial_notes": [],
+   "first_removed": "    --header-font: '思源宋体 CN', 'Noto Serif SC', lisu,kaiti,sans-serif;",
+   "first_added": "    --header-font: '思源宋体 CN', 'Noto Serif JP', lisu,kaiti,sans-serif;"
+  },
+  {
+   "id": "B12",
+   "orig_range": [
+    47,
+    48
+   ],
+   "cand_range": [
+    230,
+    231
+   ],
+   "orig_lines": "48-48",
+   "cand_lines": "231-231",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "GLYPH-FORM",
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "GLYPH-FORM": "B",
+    "TRANSLATION-ANCHORED": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "GLYPH-FORM": {},
+    "TRANSLATION-ANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       230,
+       231
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "fold-compare: glyph forms only",
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "    --title-font: '思源宋体 CN', 'Noto Serif SC',  lisu,kaiti,sans-serif;",
+   "first_added": "    --title-font: '思源宋体 CN', 'Noto Serif JP',  lisu,kaiti,sans-serif;"
+  },
+  {
+   "id": "B13",
+   "orig_range": [
+    990,
+    1082
+   ],
+   "cand_range": [
+    1173,
+    1173
+   ],
+   "orig_lines": "991-1082",
+   "cand_lines": "at 1174",
+   "channel_pair": [
+    "code-css",
+    "body"
+   ],
+   "labels": [
+    "EXHIBIT-RESTRUCTURE"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "EXHIBIT-RESTRUCTURE": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "EXHIBIT-RESTRUCTURE": {}
+   },
+   "notes": [
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[/code]]",
+   "first_added": ""
+  },
+  {
+   "id": "B14",
+   "orig_range": [
+    1086,
+    1110
+   ],
+   "cand_range": [
+    1177,
+    1177
+   ],
+   "orig_lines": "1087-1110",
+   "cand_lines": "at 1178",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": ""
+  },
+  {
+   "id": "B15",
+   "orig_range": [
+    1112,
+    1191
+   ],
+   "cand_range": [
+    1179,
+    1179
+   ],
+   "orig_lines": "1113-1191",
+   "cand_lines": "at 1180",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "EXHIBIT-RESTRUCTURE"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "EXHIBIT-RESTRUCTURE": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "EXHIBIT-RESTRUCTURE": {}
+   },
+   "notes": [
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced"
+   ],
+   "partial_notes": [],
+   "first_removed": "@@ @@",
+   "first_added": ""
+  },
+  {
+   "id": "B16",
+   "orig_range": [
+    1194,
+    1195
+   ],
+   "cand_range": [
+    1182,
+    1183
+   ],
+   "orig_lines": "1195-1195",
+   "cand_lines": "1183-1183",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-HOST",
+    "DRAFT-HOST",
+    "SELF-DELIVERY"
+   ],
+   "primary": "DELIVERY-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-HOST": "A",
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DELIVERY-HOST": {
+     "orig": [
+      [
+       1194,
+       1195
+      ]
+     ],
+     "cand": [
+      [
+       1182,
+       1183
+      ]
+     ]
+    },
+    "SELF-DELIVERY": {
+     "orig": [
+      [
+       1194,
+       1195
+      ]
+     ],
+     "cand": [
+      [
+       1182,
+       1183
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       1182,
+       1183
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "@import url(\"https://scp-wiki-cn.wikidot.com/theme:walk-in-the-dark/code/1\");",
+   "first_added": "@import url(\"https://sigma10-jp-test.wdfiles.com/local--code/theme%3Awalk-in-the-dark-jp/1\")"
+  },
+  {
+   "id": "B17",
+   "orig_range": [
+    1196,
+    1202
+   ],
+   "cand_range": [
+    1184,
+    1188
+   ],
+   "orig_lines": "1197-1202",
+   "cand_lines": "1185-1188",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "DRAFT-HOST",
+    "SELF-DELIVERY"
+   ],
+   "primary": "SELF-DELIVERY",
+   "primary_section": 3,
+   "label_prec": {
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "SELF-DELIVERY": {
+     "orig": [],
+     "cand": [
+      [
+       1186,
+       1187
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       1186,
+       1187
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": "[[include :scp-jp:component:interwiki-style"
+  }
+ ],
+ "derived_presence": {
+  "HTTP-KEPT": {
+   "class": "(ii) posting rewrite",
+   "count": 2,
+   "lines": [
+    "1132-1132",
+    "1133-1133"
+   ],
+   "example": "-webkit-mask-image: url(\"data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg version='1.2' baseProfile='tiny' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 630 23' xml:space='preserve'%3E%3Cpath fill='%23E6EAF6' d='M0,0v23h630V0H0z M334.9,15.9l1.4,4.6l-13.9,2.3h-14.8l-13.9-2.3l1.4-4.6l0.8-2.6l-2.1-1.6l-3.9-2.9l4.9-0.1 l2.7-0.1l0.9-2.5l1.6-4.6L315,0.1l15.1,1.4l1.6,4.6l0.9,2.5l2.7,0.1l4.9,0.1l-3.9,2.9l-2.1,1.6L334.9,15.9z'/%3E%3C/svg%3E%0A\");"
+  }
+ },
+ "summary": {
+  "blocks": 17,
+  "specific": 7,
+  "heuristic": 6,
+  "residue": 4,
+  "skipped": 0,
+  "reindent_blocks": 0,
+  "label_counts": {
+   "IFTAGS": 1,
+   "TRANS-UNANCHORED": 5,
+   "CREDIT-PREVIEW": 1,
+   "CREDIT-PROSE": 1,
+   "TASL-FIELDS": 1,
+   "CSS-BODY": 1,
+   "RESTORATION": 1,
+   "COMMENT-TEXT": 1,
+   "DELIVERY-MOVE": 3,
+   "GLYPH-FORM": 2,
+   "TRANSLATION-ANCHORED": 2,
+   "EXHIBIT-RESTRUCTURE": 2,
+   "DELIVERY-HOST": 1,
+   "DRAFT-HOST": 2,
+   "SELF-DELIVERY": 2
+  }
+ },
+ "residue": [
+  "B4",
+  "B6",
+  "B8",
+  "B14"
+ ],
+ "skeleton": {
+  "sha256": "5412bf7cb2f4e4816a6a171b4dcf74f8b2e94d38b620e1a06b7a936425a87b02",
+  "status": "written (new)"
+ }
+}

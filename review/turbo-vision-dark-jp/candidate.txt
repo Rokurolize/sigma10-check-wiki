@@ -1,0 +1,929 @@
+[[include :scp-jp:component:toggle-sidebar]]
+
+[[module CSS]]
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aturbo-vision-jp/1");
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aturbo-vision-jp/2");
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aturbo-vision-dark-jp/1");
+[[/module]]
+
+[[include component:interwiki-style
+| priority=1
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aturbo-vision-dark-jp/1
+]]
+
+[[iftags +テーマ]]
+
+[[module CSS]]
+
+.font1 {
+   font-family: "Jost", "Noto Sans JP", sans-serif;
+}
+
+.font2 {
+   font-family: "Hermit", "Noto Sans JP", sans-serif;
+}
+
+.font3 {
+   font-family: "Terminus", "Noto Sans JP", sans-serif;
+   font-size: 21px;
+}
+
+.font4 {
+  font-family: "Michroma", "Noto Sans JP", sans-serif;
+}
+
+[[/module]]
+
+[[include credit:start-preview]]
+**タイトル:** ターボ・ビジョン・ダークテーマ
+**翻訳責任者:** AI
+**翻訳年:** 2026
+**原題:** Turbo Vision Dark Theme
+**著作権者:** [[*user JackalRelated]]
+**作成年:** 2022
+**初訳時参照リビジョン:** 50
+**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:turbo-vision-dark Turbo Vision Dark Theme]
+[[include credit:end-preview]]
+-----
+[[=]]
+++ これは何？
+[[/=]]
+
+[[div class="turbo-block bg-cyan-dark border-white text-white"]]
+ターボ・ビジョン・ダークテーマは、[*https://scp-jp.wikidot.com/theme:turbo-vision ターボ・ビジョンテーマ]を土台に、すっきりした少し「更新済み」な見た目を与えたダークテーマです。どの記事にも使えますが、特に現代からレトロを呼び戻すような記事に向いています。通常版ターボ・ビジョンよりこちらが好みなら、それでも構いません。
+[[/div]]
+----
+@@ @@
+[[div class="scp-image-block block-center" style="width:95%; box-shadow:none; border: none;"]]
+[[image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aturbo-vision-dark-jp/spread-log.png style="width:100%;" link=#]]
+[[div class="scp-image-caption" style="width:100%; background-color: #ADADAD; color: #000000;"]]
+SCP財団 / 財団メディア部門 代替ロゴ
+[[/div]]
+[[/div]]
+@@ @@
+-----
+[[=]]
++ テーマの読み込み
+[[/=]]
+
+[[div class="turbo-block bg-grey-light border-black text-black"]]
+このテーマをページで使うには、次のコードをincludeしてください。
+
+[[div class="turbo-block bg-red-dark border-white text-white"]]
+@@[[include theme:turbo-vision-dark-jp]]@@
+[[/div]]
+-----
+このテーマにはToggle SidebarとTurbo Visionが組み込まれているため、あらためてincludeする必要はありません。ただし、元のターボ・ビジョンテーマのような、テーマ本体/「テーマモード」と色付きdiv/「コンポーネントモード」の区別はありません（そのためBHL互換もありません）。全適用か未使用かの二択です。すみません。
+
+[[/div]]
+-----
+[[=]]
+++ 新要素
+[[/=]]
+
+[[div class="turbo-block bg-grey-dark border-white text-white"]]
+
+ロゴ、フォント変更、背景色といった明らかな違いに加えて、**TURBO DARK**には色付きdivの新しいDARK版とLIGHT版も入っています。標準の色付きdivは変えていないので、そちらを使いたければそのまま使えます。使いたい色付きdivの末尾に「**-dark**」または「**-light**」を付けるだけです（例：__bg-cyan-dark__、__bg-red-light__）。
+-----
+**DARK**版は、読みやすさのために白い境界線と白い文字だけで使う想定です。
+@@ @@
+**LIGHT**版は、読みやすさのために黒い境界線と黒い文字だけで使う想定です。
+-----
+新しいdivの見本は下の通りです。
+[[/div]]
+[[=]]
+[[collapsible show="« シアンブロック »" hide="» シアンブロック «"]]
+[[div class="turbo-block bg-cyan-dark border-white text-white"]]
+@@[[div class="turbo-block bg-cyan-dark"]]@@
+[[[link|リンク]]]はこのように表示されます。
+[[/div]]
+
+[[div class="turbo-block bg-cyan-light border-black text-black"]]
+@@[[div class="turbo-block bg-cyan-light"]]@@
+[[[link|リンク]]]はこのように表示されます。
+[[/div]]
+[[/collapsible]]
+
+[[collapsible show="« グレーブロック »" hide="» グレーブロック «"]]
+[[div class="turbo-block bg-grey-dark border-white text-white"]]
+@@[[div class="turbo-block bg-grey-dark"]]@@
+[[[link|リンク]]]はこのように表示されます。
+[[/div]]
+
+[[div class="turbo-block bg-grey-light border-black text-black"]]
+@@[[div class="turbo-block bg-grey-light"]]@@
+[[[link|リンク]]]はこのように表示されます。
+[[/div]]
+[[/collapsible]]
+
+[[collapsible show="« レッドブロック »" hide="» レッドブロック «"]]
+[[div class="turbo-block bg-red-dark border-white text-white"]]
+@@[[div class="turbo-block bg-red-dark"]]@@
+[[[link|リンク]]]はこのように表示されます。
+[[/div]]
+
+[[div class="turbo-block bg-red-light border-black text-black"]]
+@@[[div class="turbo-block bg-red-light"]]@@
+[[[link|リンク]]]はこのように表示されます。
+[[/div]]
+[[/collapsible]]
+
+[[collapsible show="« オレンジブロック »" hide="» オレンジブロック «"]]
+[[div class="turbo-block bg-orange-dark border-white text-white"]]
+@@[[div class="turbo-block bg-orange-dark"]]@@
+[[[link|リンク]]]はこのように表示されます。
+[[/div]]
+
+[[div class="turbo-block bg-orange-light border-black text-black"]]
+@@[[div class="turbo-block bg-orange-light"]]@@
+[[[link|リンク]]]はこのように表示されます。
+[[/div]]
+[[/collapsible]]
+
+[[collapsible show="« グリーンブロック »" hide="» グリーンブロック «"]]
+[[div class="turbo-block bg-green-dark border-white text-white"]]
+@@[[div class="turbo-block bg-green-dark"]]@@
+[[[link|リンク]]]はこのように表示されます。
+[[/div]]
+
+[[div class="turbo-block bg-green-light border-black text-black"]]
+@@[[div class="turbo-block bg-green-light"]]@@
+[[[link|リンク]]]はこのように表示されます。
+[[/div]]
+[[/collapsible]]
+
+[[collapsible show="« パープルブロック »" hide="» パープルブロック «"]]
+[[div class="turbo-block bg-purple-dark border-white text-white"]]
+@@[[div class="turbo-block bg-purple-dark"]]@@
+[[[link|リンク]]]はこのように表示されます。
+[[/div]]
+
+[[div class="turbo-block bg-purple-light border-black text-black"]]
+@@[[div class="turbo-block bg-purple-light"]]@@
+[[[link|リンク]]]はこのように表示されます。
+[[/div]]
+[[/collapsible]]
+
+[[collapsible show="« イエローブロック »" hide="» 「小便色」と呼ぶのはやめろ «"]]
+[[div class="turbo-block bg-yellow-dark border-white text-white"]]
+@@[[div class="turbo-block bg-yellow-dark"]]@@
+[[[link|リンク]]]はこのように表示されます。
+[[/div]]
+
+[[div class="turbo-block bg-yellow-light border-black text-black"]]
+@@[[div class="turbo-block bg-yellow-light"]]@@
+[[[link|リンク]]]はこのように表示されます。
+[[/div]]
+[[/collapsible]]
+[[/=]]
+@@ @@
+
+[[div class="turbo-block bg-grey-dark border-white text-white"]]
+
+引用ブロック、表、タブ/タブビューにも変更があります。
+
+標準タブと表には、本文と同じくJostフォントファミリーを使っています。引用ブロックは色付きdivと同じHermitを使い、タブ見出しはトップバー用フォントのTerminusを使います。影は状態に応じて暗すぎず明るすぎないよう個別に変更し、3つすべての背景色は統一感を出すためGrey Lightの色付きdivと同じ色にしました。
+-----
+例を示します。
+[[/div]]
+[[tabview]]
+[[tab 基本書式]]
+水平線はハイフン5つ、@@"-----"@@で作成できます。引用ブロックなどの中に置かなければ、ページ全体に伸びます。この文書でセクションを区切っている線も水平線です。[[footnote]]脚注の例です！[[/footnote]]
+-----
+**これは太字のテキストです。**
+
+//これは斜体のテキストです。//
+
+{{これは等幅のテキストです。}}
+[[/tab]]
+[[tab 見出し]]
+行頭に1個から6個のプラス記号「+」を置くと、見出しを作れます。
+
++ 第一見出し
+
+++ 第二見出し
+
++++ 第三見出し
+
+++++ 第四見出し
+
++++++ 第五見出し
+
+++++++ 第六見出し
+[[/tab]]
+[[tab 引用ブロック]]
+[[div class="blockquote"]]
+これは引用ブロックです。テキストをclass "blockquote"のdivで囲むと作成できます。
+
+[[div class="blockquote"]]
+さらにテキスト
+-----
+これは水平線です
+
+[[div class="blockquote"]]
+入れ子の引用ブロック
+
+気に入りましたか？
+----
+おっと……
+[[/div]]
+[[/div]]
+[[/div]]
+[[/tab]]
+[[tab 表]]
+||~ 表 ||~ 見出しセル ||
+|| 通常セル || 別の通常セル ||
+|||| 結合セル ||
+[[/tab]]
+[[/tabview]]
+-----
+[[=]]
+++ 追加フォント
+@@ @@
+[[div class="font1"]]
+[[size 150%]]**JOST**[[/size]]
+
+いろはにほへと、ちりぬるを
+あめつちほしそら、やまかわみねたに
+
+**太字**と//斜体//
+**太字**と//斜体//
+[[/div]]
+@@ @@
+[[div class="font2"]]
+[[size 150%]]**HERMIT**[[/size]]
+
+いろはにほへと、ちりぬるを
+あめつちほしそら、やまかわみねたに
+
+**太字**と//斜体//
+**太字**と//斜体//
+[[/div]]
+@@ @@
+[[div class="font3"]]
+[[size 150%]]**TERMINUS** (@21px)[[/size]]
+
+いろはにほへと、ちりぬるを
+あめつちほしそら、やまかわみねたに
+
+**太字**と//斜体//
+**太字**と//斜体//
+[[/div]]
+@@ @@
+[[div class="font4"]]
+[[size 150%]]**MICHROMA**[[/size]]
+
+いろはにほへと、ちりぬるを
+あめつちほしそら、やまかわみねたに
+
+**太字**と//斜体//
+**太字**と//斜体//
+[[/div]]
+[[/=]]
+
+-----
+[[=]]
+++ ソースコード
+[[/=]]
+[[collapsible show="» ソースを表示" hide="« ソースを隠す"]]
+[[code type="css"]]
+/*
+    ターボ・ビジョン・ダークテーマ
+    [2022年Wikidotテーマバリエーション]
+    JackalRelated作
+       JakdragonXとCroquemboucheによるTurbo Vision Themeを基に作成
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+@import url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aturbo-vision-dark-jp/stylesheet.css');
+
+/* リンク色の調整 */
+a {
+  color: #0B9D85;
+}
+
+a.footnoteref {
+  color: #073C34;
+}
+
+a:hover{
+  background-color: #18BFA3;
+}
+
+a:visited {
+    color: #00B39B;
+}
+
+a:visited:hover {
+    color: #000000;
+}
+
+/* 本文まわり */
+body {
+  font-family: "Jost", "Noto Sans JP", "IBM Plex Mono", sans-serif;
+  background-color: #01020D;
+  image-rendering: initial;
+}
+
+.scp-image-block .scp-image-caption {
+   background-color: #ADADAD;
+   color: #000000;
+}
+
+hr {
+  margin: 1em 0em 1em 0em;
+}
+
+#page-title {
+  border-color: #18BFA3;
+}
+
+#main-content {
+  color: #EDEDED;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+#page-title {
+  font-family: "Michroma", "Noto Sans JP", "Mx437 IBM VGA 8x16", monospace;
+  color: #18BFA3;
+}
+
+h1,
+#page-title {
+  font-weight: bold;
+}
+
+/* ヘッダー */
+div#container-wrap {
+  background: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aturbo-vision-dark-jp/tb-bga.png")
+    top left repeat-x;
+}
+
+div#header {
+  background: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aturbo-vision-dark-jp/logo-new.png")
+      3.675em 1.25em no-repeat;
+  background-size: auto 100px;
+}
+
+#account-options {
+  background-color: #000000;
+}
+
+#login-status ul a {
+  color: #BCBCBC;
+}
+
+#login-status ul a::first-letter {
+  color: #038A74;
+}
+
+#login-status ul li a:hover {
+  background-color: #0B9D85 !important;
+  color: #000000;
+  font-style: oblique;
+}
+
+#login-status ul li a:hover::first-letter {
+  color: #004037;
+}
+
+#login-status {
+  border: 2px solid #EDEDED;
+  padding: 0.5ex 1ex 0.5ex 1ex;
+  color: #EDEDED;
+  background: #001133;
+}
+
+#login-status a {
+  background: transparent;
+  color: #0B9D85;
+}
+
+#login-status a:hover {
+  background: #038A74 !important;
+  color: #EDEDED;
+}
+
+#search-top-box-input,
+#search-top-box-input:hover,
+#search-top-box-input:focus,
+#search-top-box-form input[type="submit"],
+#search-top-box-form input[type="submit"]:hover,
+#search-top-box-form input[type="submit"]:focus {
+  border: #EDEDED solid 2px;
+  background: #001133;
+  color: #EDEDED;
+}
+
+#search-top-box input.empty {
+  color: #001133;
+}
+
+/* サイドバー */
+#side-bar .side-block,
+#interwiki .side-block {
+  box-shadow: 0.5em 0.85em 0 0 #1E1E24;
+}
+
+#side-bar .side-block.media {
+  background: #001133;
+}
+
+#side-bar div.menu-item a,
+#side-bar .collapsible-block-link,
+#interwiki div.menu-item a,
+#interwiki .collapsible-block-link {
+  color: #18BFA3;
+}
+
+#side-bar div.menu-item a:hover,
+#side-bar .collapsible-block-link:hover,
+#interwiki div.menu-item a:hover,
+#interwiki .collapsible-block-link:hover {
+  padding: 0 0.5rem 0 0.5rem;
+  font-style: oblique;
+  color: #000000;
+}
+
+#side-bar .side-block,
+#side-bar .side-block .heading p,
+#interwiki .side-block,
+#interwiki .side-block .heading p {
+  background-color: #000000;
+  color: #EDEDED;
+}
+
+#side-bar .side-block.resources, #interwiki .side-block.resources,
+#side-bar .side-block.resources .heading p, #interwiki .side-block.resources .heading p {
+  background-color: #001133;
+}
+
+#side-bar {
+  background-color: #01020D;
+}
+
+#side-bar .menu-item,
+#interwiki .menu-item {
+  color: #18BFA3;
+}
+
+/* トップバー */
+#top-bar ul li a {
+  font-family: "Terminus", "Noto Sans JP", "Mx437 IBM VGA 8x16", monospace;
+  padding: 0 1ex 0 1ex;
+  color: #B3B3B3;
+}
+
+#top-bar ul li a:hover,
+#top-bar ul li:hover a {
+  padding: 0 1.5ex 0 1.5ex;
+  background-color: #18BFA3 !important;
+  color: #000000;
+}
+
+#top-bar ul li a:hover::first-letter,
+#top-bar ul li:hover a::first-letter {
+  color: #004037;
+}
+
+#top-bar ul li a:hover::before,
+#top-bar ul li a:hover::after {
+  background-color: #00D6AF;
+  color: #B3B3B3;
+}
+
+#top-bar ul li a:visited:hover {
+  color: #000000 !important;
+}
+
+#top-bar ul li a::first-letter {
+  color: #0B9D85;
+}
+
+#top-bar .open-menu a {
+  border: 2px solid #EDEDED;
+  border-radius: 0;
+  background-color: #00021B;
+  color: #B3B3B3 !important;
+}
+
+#top-bar ul li.sfhover ul li a, #top-bar ul li:hover ul li a {
+  background-color: #000000 !important;
+  color: #B3B3B3;
+  padding-left: 1ex;
+}
+
+#top-bar ul li a:visited,
+#top-bar ul li.sfhover ul li a:visited,
+#top-bar ul li.sfhover ul li a:visited,
+#top-bar ul li.sfhover ul li a:visited:hover,
+#top-bar ul li:hover ul li a:visited:hover {
+  color: #B3B3B3 !important;
+}
+
+#top-bar ul li.sfhover a:hover, #top-bar ul li:hover a:hover {
+  font-style: oblique !important;
+}
+
+#top-bar ul li.sfhover ul li a::first-letter, #top-bar ul li:hover ul li a::first-letter {
+  color: #0B9D85;
+}
+
+/* YUIタブ */
+div.yui-navset div.yui-content {
+  box-shadow: 0.5em 1em 0 0 #1E1E24;
+}
+
+div.yui-navset div.yui-content blockquote,
+div.yui-navset div.yui-content div.blockquote {
+  box-shadow: 0.5em 1em 0 0 #282834;
+  font-family: "Hermit", "Noto Sans JP", "Jost", sans-serif;
+}
+
+div.yui-navset div.yui-content h1 {
+  color: #073C34;
+  font-weight: bold;
+}
+
+div.yui-navset div.yui-content h2,
+div.yui-navset div.yui-content h3,
+div.yui-navset div.yui-content h4,
+div.yui-navset div.yui-content h5,
+div.yui-navset div.yui-content h6 {
+  color: #000000;
+}
+
+.yui-navset .yui-nav,
+.yui-navset .yui-navset-top .yui-nav {
+  font-family: "Terminus", "Noto Sans JP", "Mx437 IBM VGA 8x16", monospace;
+}
+
+div.yui-navset ul.yui-nav a,
+div.yui-navset div.yui-navset-top ul.yui-nav a {
+  background: #ADADAD;
+  border: #444444 solid 2px;
+  border-bottom: transparent 0;
+}
+
+div.yui-navset ul.yui-nav a:hover,
+div.yui-navset ul.yui-nav a:focus {
+  background: #09E381;
+  border: #EDEDED solid 2px;
+  border-bottom: transparent 0;
+}
+
+div.yui-navset ul.yui-nav .selected a,
+div.yui-navset ul.yui-nav .selected a:focus,
+div.yui-navset ul.yui-nav .selected a:hover {
+  background: #00005E;
+  border: #444444 solid 2px;
+  color: #EDEDED;
+  border-bottom: transparent 0;
+}
+
+div.yui-navset div.yui-content hr,
+blockquote hr,
+div.blockquote hr{
+  background-color: #073C34;
+  margin: 2em 0 2em 0;
+}
+
+table.wiki-content-table {
+  box-shadow: 0.5em 1em 0 0 #3E3E51;
+}
+
+table.wiki-content-table td {
+  border: 1px solid #000000;
+}
+
+/* 評価モジュール */
+
+#page-content .page-rate-widget-box {
+  font-family: "Terminus", "Noto Sans JP", "Mx437 IBM VGA 8x16", monospace;
+  background-color: #01020D;
+}
+
+div.page-rate-widget-box .rate-points {
+  background-color: #01020D;
+  border: 2px solid #01020D;
+  color: #B3B3B3;
+}
+
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+  background-color: #B3B3B3;
+  border: 2px solid #01020D;
+}
+
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a {
+  color: #01020D;
+  font-family: "Mx437 IBM VGA 8x16", monospace;
+  font-weight: 400;
+}
+
+.page-rate-widget-box .rateup a:hover {
+  color: #1A9400;
+}
+
+.page-rate-widget-box .ratedown a:hover {
+  color: #D60000;
+}
+
+.page-rate-widget-box .cancel {
+  border: 2px dashed #01020D;
+  background-color: #01020D;
+}
+
+.page-rate-widget-box .cancel a {
+  color: #B3B3B3;
+}
+
+.page-rate-widget-box .cancel a:hover {
+  background-color: transparent;
+  color: #D60000;
+}
+
+/* 編集モジュール */
+#lock-info {
+  color: #000000;
+}
+
+/* 下部表示 */
+#license-area {
+  color: #828282;
+}
+
+.hovertip {
+  background-color: #01020D !important;
+  color: #EDEDED !important;
+  border: solid 1px #EDEDED !important;
+}
+
+.footnotes-footer {
+  background-color: #ADADAD;
+  color: #000000;
+  padding: 0.4rem 0.15rem 0.5rem 0.4rem;
+  border-left: 1rem solid #073C34;
+}
+
+.footnotes-footer a {
+  color: #073C34;
+}
+
+.footnotes-footer a:hover {
+  background-color: #127354;
+  color: #ADADAD;
+}
+
+.footnotes-footer .title {
+  margin: 0 0 0.5em 0;
+  font-family: "Michroma", "Noto Sans JP", sans-serif;
+  color: #073C34;
+}
+
+.page-tags a:hover {
+  padding: 0 1ex 0 1ex;
+}
+
+/* モバイル表示の補正 */
+
+@media (max-width: 767px) {
+  #top-bar ul li {
+    height: 1.45em;
+    font-size: 85%;
+  }
+
+  #top-bar ul li ul li {
+    height: 1.25em;
+    font-size: 1rem;
+    padding: 0 0 1ex 0;
+    background-color: #000000;
+  }
+}
+
+/* カスタム色div */
+:root {
+  --turbo-block-shadow: 0.5em 1em 0 0 #1E1E24;
+}
+
+.turbo-block {
+  font-family: "Hermit", "Noto Sans JP", sans-serif;
+}
+
+.turbo-block a:hover {
+  font-weight: bold;
+}
+
+
+.turbo-block.bg-cyan-dark,
+.turbo-block.bg-cyan-dark::after,
+.turbo-block.bg-cyan-dark .heading p {
+  background: #176E6D;
+}
+
+.turbo-block.bg-cyan-light,
+.turbo-block.bg-cyan-light::after,
+.turbo-block.bg-cyan-light .heading p {
+  background: #209795;
+}
+
+.turbo-block.bg-cyan-dark a {
+  color: #176E6D;
+}
+
+.turbo-block.bg-cyan-light a {
+  color: #209795;
+}
+
+.turbo-block.bg-cyan-dark a:hover {
+  background-color: #09E381;
+}
+
+.turbo-block.bg-cyan-light a:hover {
+  background-color: #00FC61;
+}
+
+
+.turbo-block.bg-grey-dark,
+.turbo-block.bg-grey-dark::after,
+.turbo-block.bg-grey-dark .heading p {
+  background: #6E6E6E;
+}
+
+.turbo-block.bg-grey-light,
+.turbo-block.bg-grey-light::after,
+.turbo-block.bg-grey-light .heading p {
+  background: #ADADAD;
+}
+
+.turbo-block.bg-grey-dark a {
+  color: #6E6E6E;
+}
+
+.turbo-block.bg-grey-light a {
+  color: #ADADAD;
+}
+
+.turbo-block.bg-grey-dark a:hover {
+  background-color: #09E381;
+}
+
+.turbo-block.bg-grey-light a:hover {
+  background-color: #127354;
+}
+
+/* 赤ブロック */
+.turbo-block.bg-red-dark,
+.turbo-block.bg-red-dark::after,
+.turbo-block.bg-red-dark .heading p {
+  background: #A80000;
+}
+
+.turbo-block.bg-red-light,
+.turbo-block.bg-red-light::after,
+.turbo-block.bg-red-light .heading p {
+  background: #E62842;
+}
+
+.turbo-block.bg-red-dark a {
+  color: #A80000;
+}
+
+.turbo-block.bg-red-light a {
+  color: #E62842;
+}
+
+.turbo-block.bg-red-dark a:hover {
+  background-color: #F7980A;
+}
+
+.turbo-block.bg-red-light a:hover {
+  background-color: #520000;
+}
+
+/* オレンジブロック */
+.turbo-block.bg-orange-dark,
+.turbo-block.bg-orange-dark::after,
+.turbo-block.bg-orange-dark .heading p {
+  background: #BF540D;
+}
+
+.turbo-block.bg-orange-light,
+.turbo-block.bg-orange-light::after,
+.turbo-block.bg-orange-light .heading p {
+  background: #EF801F;
+}
+
+.turbo-block.bg-orange-dark a {
+  color: #BF540D;
+}
+
+.turbo-block.bg-orange-light a {
+  color: #EF801F;
+}
+
+.turbo-block.bg-orange-dark a:hover {
+  background-color: #D1BD0A;
+}
+
+.turbo-block.bg-orange-light a:hover {
+  background-color: #8C4719;
+}
+
+/* 緑ブロック */
+.turbo-block.bg-green-dark,
+.turbo-block.bg-green-dark::after,
+.turbo-block.bg-green-dark .heading p {
+  background: #0F6119;
+}
+
+.turbo-block.bg-green-light,
+.turbo-block.bg-green-light::after,
+.turbo-block.bg-green-light .heading p {
+  background: #30B01C;
+}
+
+.turbo-block.bg-green-dark a {
+  color: #0F6119;
+}
+
+.turbo-block.bg-green-light a {
+  color: #30B01C;
+}
+
+.turbo-block.bg-green-dark a:hover {
+  background-color: #09E381;
+}
+
+.turbo-block.bg-green-light a:hover {
+  background-color: #28544D;
+}
+
+/* 紫ブロック */
+.turbo-block.bg-purple-dark,
+.turbo-block.bg-purple-dark::after,
+.turbo-block.bg-purple-dark .heading p {
+  background: #65097B;
+}
+
+.turbo-block.bg-purple-light,
+.turbo-block.bg-purple-light::after,
+.turbo-block.bg-purple-light .heading p {
+  background: #9C58C6;
+}
+
+.turbo-block.bg-purple-dark a {
+  color: #65097B;
+}
+
+.turbo-block.bg-purple-light a {
+  color: #9C58C6;
+}
+
+.turbo-block.bg-purple-dark a:hover {
+  background-color: #09E381;
+}
+
+.turbo-block.bg-purple-light a:hover {
+  background-color: #041959;
+}
+
+/* 黄色ブロック */
+.turbo-block.bg-yellow-dark,
+.turbo-block.bg-yellow-dark::after,
+.turbo-block.bg-yellow-dark .heading p {
+  background: #8B6E1D;
+}
+
+.turbo-block.bg-yellow-light,
+.turbo-block.bg-yellow-light::after,
+.turbo-block.bg-yellow-light .heading p {
+  background: #F5DC00;
+}
+
+.turbo-block.bg-yellow-dark a {
+  color: #8B6E1D;
+}
+
+.turbo-block.bg-yellow-light a {
+  color: #F5DC00;
+}
+
+.turbo-block.bg-yellow-dark a:hover {
+  background-color: #FFD43B;
+}
+
+.turbo-block.bg-yellow-light a:hover {
+  background-color: #124F6B;
+}
+[[/code]]
+[[/collapsible]]
+-----
+[[/iftags]]

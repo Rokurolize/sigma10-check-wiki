@@ -1,0 +1,558 @@
+[[module css]]
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aunusual-cargo-jp/1');
+[[/module]]
+
+[[include component:interwiki-style
+| priority=1
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aunusual-cargo-jp/1
+]]
+
+[[iftags +テーマ]]
+
+[[include credit:start-preview]]
+**タイトル:** 異常貨物委員会テーマ
+**翻訳責任者:** AI
+**翻訳年:** 2026
+**原題:** Unusual Cargo
+**著作権者:** [[*user CityToast]]
+**作成年:** 2020
+**初訳時参照リビジョン:** 83
+**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:unusual-cargo Unusual Cargo]
+[[include credit:end-preview]]
+
+[[=]]
+[[image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aunusual-cargo-jp/COUC_logo.png width="50%"]]
+[[/=]]
+
+CityToast作 異常貨物テーマ
+[*https://scp-wiki.wikidot.com/the-letters-of-the-commission-on-unusual-cargo 異常貨物委員会（英語版）]のために作成
+
+これはrounderhouseによるAces and Eights Theme、AelannaとDr Devanが作成したSCP Sigma 9 Theme、Randominiが作成したMC&D Themeのリミックスです。
+
+このテーマを使用するには、ページの先頭に以下を記述してください。
+
+[[div class="code"]]
+@@[[include theme:unusual-cargo-jp]]@@
+[[/div]]
+
+-----
+
++ テーマ機能: インライン文書
+
+このテーマの引用ブロックには枠線がなく、文書を表すためのものです。
+
+ほとんどのテキストは、新しい"paper" divクラス内に収められます。
+
+[[div class="code"]]
+@@[[div class="paper"]]@@
+@@+ テキスト@@
+@@++ テキスト@@
+@@通常のテキスト。@@
+@@> paper内の引用ブロック。@@
+@@[[/div]]@@
+[[/div]]
+
+これは次のように表示されます。
+[[div class="paper"]]
++ テキスト
+++ テキスト
+通常のテキスト。
+> paper内の引用ブロック。
+[[/div]]
+
+さらに、画像へのリンクを追加すると、引用ブロックと揃うようにインデントされます。次のように記述します。
+
+[[div class="code"]]
+@@> 文書テキスト文書テキスト@@
+@@> 文書テキスト@@
+@@[[div class="letter"]]@@
+@@[[collapsible show="文書" hide="隠す"]]@@
+@@[[image <画像リンク>]]@@
+@@[[/collapsible]]@@
+@@[[/div]]@@
+[[/div]]
+
+例:
+
+> これは引用ブロックです。各行の先頭に">"を置くと作成できます。
+>
+> いくらかのテキスト。
+> ええ、その通りです。
+>
+>> 入れ子の引用ブロック
+>> 本当にメタな文書向け
+> そしてメインの紙面に戻ります
+> ありがとう
+[[div class="letter"]]
+[[collapsible show="文書" hide="隠す"]]
+[[image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aunusual-cargo-jp/Unusual9.jpg]]
+[[/collapsible]]
+[[/div]]
+
+
+行頭に1個から6個の"+"を置くと、見出しを作成できます。
+
++ 1番目の見出し
+
+++ 2番目の見出し
+
++++ 3番目の見出し
+
+++++ 4番目の見出し
+
++++++ 5番目の見出し
+
+++++++ 6番目の見出し
+
+
+[[collapsible show="+ tabview" hide="- tabview"]]
+
+[[tabview]]
+[[tab タブレーター]]
+これはタブ表示です。
+[[/tab]]
+[[tab タブ化]]
+ほら、ここにもテキストがあります。
+
+なんとも趣がありますね。
+[[/tab]]
+[[tab 長いタブ]]
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+
+これは長いタブです。たくさんのテキストが入っています。
+[[/tab]]
+[[tab この空タブには、なぜか本当に長い名前が付いています。どうしてでしょう？とても不思議です。]]
+[[/tab]]
+[[tab 空タブ]]
+[[/tab]]
+[[tab 空タブ]]
+[[/tab]]
+[[tab 空タブ]]
+[[/tab]]
+[[tab 空タブ]]
+[[/tab]]
+[[tab 空タブ]]
+[[/tab]]
+[[/tabview]]
+
+[[/collapsible]]
+||~ これは ||~ 表です ||
+||この作り方は || もう ||
+||||知っているでしょう ||
+
+-----
+
+[[code type="css"]]
+/*
+CityToast作 異常貨物委員会テーマ
+
+rounderhouseによるAces and Eights Theme、AelannaとDr Devanが作成したSCP Sigma 9 Theme、Randominiが作成したMC&D Themeを基にしています。
+*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Caladea|IM+Fell+DW+Pica|IM+Fell+DW+Pica+SC|Tangerine');
+
+/* リンク色 */
+:root {
+    --hyperlink: #824565;
+    --hyperlink-visited: #63173f;
+}
+
+#header {
+    background: none; /* デフォルトのヘッダー画像を止める */
+}
+
+#header:before {
+    display:block;
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    z-index: -1;
+    top: 15%;
+    left: 2%;
+    content: "";
+    background: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aunusual-cargo-jp/COUC_logo.png");
+    background-repeat: no-repeat;
+    background-size: 110px 109px;
+    background-position: 0px 0px 0px;
+}
+
+/* 本文 */
+body {
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aunusual-cargo-jp/TOAST-PAPER.jpg');
+}
+
+.main-body-div {
+    width: 92.7%;
+    line-height: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    vertical-align: top;
+    transition: all .7s;
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aunusual-cargo-jp/TOAST-PAPER.jpg");
+}
+
+#header h1 a {
+    color: transparent;
+    font-size: 100%;
+    padding: 60px 0 25px;
+    text-shadow: none;
+}
+
+div#container-wrap {
+    background: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aunusual-cargo-jp/toast_header.png") top left repeat-x;
+}
+/* Sigmaからヘッダー表示を入れ替える。このテーマでは上段テキストのほうが小さい */
+
+
+#header h1 a::before {
+    font-family: 'IM Fell DW Pica SC', 'Yu Mincho', serif;
+    padding: 35px 0 25px;
+    font-weight: normal;
+    content: "正統にして栄光なる";
+    color: #000000;
+}
+
+#header h2 span {
+    font-size: 175%;
+    color: transparent;
+    text-shadow: none;
+}
+#header h2 span::before {
+    font-family: 'Tangerine', 'Yu Mincho', cursive;
+    font-size: 230%;
+    content: "異常貨物委員会";
+    color: #000000;
+    padding: 0px 20px 00px;
+}
+
+/* モバイル/レスポンシブ用。以下の変更は565px未満で発生する */
+@media (min-width: 566px) and (max-width: 801px) {
+    #header h1 a::before {
+    content: "正統にして栄光なる";
+    padding: 35px 0 25px 45px;
+    }
+}
+@media (max-width: 565px) {
+    #search-top-box-input,
+    #search-top-box-form {
+    display: none;
+    }
+    /* 入れ替え後のサイズに合わせてヘッダーを更新し、文字が収まりやすいよう変更する */
+    #header h1 a {
+    font-size: 65%;
+    }
+
+    #header h1 a::before {
+    content: "正統にして栄光なる";
+    padding: 35px 0 25px 40px;
+    }
+
+    #header h2 span{
+    font-size: 140%;
+    }
+
+    #header h2 span::before {
+    padding: 0 0 0 40px;
+    }
+
+    #header {
+    background-position: 0 5.5em;
+    background-size: 55px 55px;
+    }
+
+    #side-bar {
+    background-color: transparent;
+    background: linear-gradient(rgba(255, 220, 220, 0.7), rgba(255, 220, 220, 0.5)), url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aunusual-cargo-jp/TOAST-PAPER.jpg");
+    }
+    #side-bar:target .close-menu {
+    width: calc(100% - 19em);
+    right: 0;
+    left: auto;
+    opacity: 1;
+    pointer-events: auto;
+    }
+
+}
+/* 細かな色とスタイルの調整 */
+
+table.wiki-content-table {
+    border: 1px solid rgba(50, 50, 50, 0.2);
+}
+
+table.wiki-content-table th {
+    padding: 0.3em 0.7em;
+    background-color: rgba(240, 240, 240, 0.2);
+}
+
+#search-top-box-input, #search-top-box input.empty,
+#search-top-box-form input[type=submit] {
+    transition: 0.2s linear;
+}
+
+#search-top-box-input, #search-top-box input.empty {
+    background-color: transparent;
+    border: 1px solid #DBC39F;
+    border-radius: 0;
+    color: #000;
+}
+
+#search-top-box-input:hover, #search-top-box-input:focus,
+#search-top-box input.empty:hover, #search-top-box input.empty:focus {
+    outline: 0;
+    color:#FFFFFF;
+    border: 1px solid #000;
+    background-color: #000000;
+    box-shadow: 0 1px 3px rgba(0,0,0,.8);
+}
+
+#search-top-box-form input[type=submit] {
+    outline: 0;
+    height: 1.65em;
+    border: none;
+    border-radius: 0;
+    color: #000;
+    background: none;
+
+    position: relative;
+    top: -1px;
+
+    box-shadow: none;
+}
+
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+    border: none;
+    border-radius: 0;
+    background: none;
+}
+
+#search-top-box-form input[type=submit]:active {
+    padding: 0 0.5em;
+    border: none;
+    border-radius: 0;
+    color: #000;
+    background: #B6925E;
+}
+
+#login-status, #login-status a {
+    color: #000;
+    border-color: #000;
+}
+/* 本文見出しグループ関連 */
+
+h2, h3, h4, h5, h6 {
+    font-family:'IM Fell DW Pica SC', 'Yu Mincho', serif;}
+
+h1, #page-title {
+    color: #000;
+    padding: 0 0 0.25em;
+    margin: 0 0 0.6em;
+    font-weight: bold;
+    font-family: 'IM Fell DW Pica', 'Yu Mincho', serif;
+}
+/* 引用ブロックの枠線を消し、新しい紙背景の上に影とグラデーションを追加する */
+blockquote, div.blockquote {
+    border: none;
+    padding: .5em;
+    box-shadow: 4px 6px 8px #a98;
+    background: linear-gradient(rgba(255, 255, 245, 0.3), rgba(245, 230, 205, 0.5)), url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aunusual-cargo-jp/TOAST-PAPER.jpg");
+}
+
+/* 新しいpaperクラス */
+
+div.paper {
+    background: linear-gradient(rgba(220, 240, 240, 0.3), rgba(240, 240, 220, 0.5)), url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aunusual-cargo-jp/TOAST-PAPER.jpg");
+    box-shadow: 4px 6px 8px #a98;
+    padding: 1em .5em 1em .5em;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+
+@media (max-width: 478px) {
+    div.paper {
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    Margin: .5em 0em .5em 0em;
+    }
+}
+
+/* 入力欄 */
+#top-bar ul li.sfhover ul li a,
+#top-bar ul li:hover ul li a {
+    border-top: 1px solid #000000;
+}
+
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a {
+    background: #bc9055;
+    color: #ffffff;
+}
+#top-bar ul li ul a, #top-bar a:hover {
+    color: #8db600;
+}
+#top-bar ul li.sfhover a:hover,
+#top-bar ul li:hover a:hover {
+    background: #000000; /* トップバーのホバー背景色 */
+}
+
+/* #side-bar: 色を変更し、枠線を消し、フォントサイズと全体の見た目を調整する。
+左メニューが左余白に「書き込まれた」ように見せる */
+
+#side-bar .side-block {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: transparent; /* 枠線なし */
+    box-shadow: none !important; /* 影なし */
+    background: none !important; /* 背景なし */
+    margin-bottom: 15px;
+    color: black;
+}
+
+/* ソーシャルメディアバー関連 */
+
+#side-bar .side-block:first-child {
+    filter: sepia(100%) opacity(35%);
+    padding: 0;
+    margin: 0;
+}
+
+#side-bar .side-block:first-child:hover {
+    filter: sepia(100%);
+}
+
+#side-bar .heading {
+    font-family: 'Tangerine', 'Yu Mincho', cursive;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#side-bar .menu-item {
+    font-family: 'Caladea', 'Yu Mincho', serif;
+    font-weight: normal;
+    box-shadow: none !important;
+    margin-bottom: 15px;
+    color: black;
+}
+
+#side-bar div.menu-item a {
+    font-weight:normal;
+}
+
+ #side-bar a{
+     color: #430;
+}
+/* #top-bar: 色を変更し、枠線を消し、フォントサイズと全体の見た目を調整する */
+#top-bar li a{
+    text-align: center;
+    font-family: 'Caladea', 'Yu Mincho', serif;
+    display: block;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 1px .5em;
+    text-decoration: none;
+}
+
+a {
+    color: #530;
+    text-decoration: none;
+    background: transparent;
+}
+
+/* 関連する引用ブロックと折り畳み表示を揃えやすくする"letter"クラスを追加する */
+div.letter {
+    margin: 1em 3em;
+    padding: 1em .5em;
+}
+@media (max-width: 479px) {
+    div.letter {
+    margin: 1em 0;
+    padding: .5em .25em;
+    }
+}
+@media (min-width: 480px) and (max-width: 580px) {
+    div.letter {
+    margin: 0.5em;
+    padding: .25em 0;
+    }
+}
+
+/* YUIタブ */
+.yui-navset .yui-content{
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5)), url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aunusual-cargo-jp/TOAST-PAPER.jpg") !important;
+}
+.yui-navset .yui-nav a,
+.yui-navset .yui-navset-top .yui-nav a {
+    background-color:#d8d8d8;
+    background-image: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aunusual-cargo-jp/TOAST-PAPER.jpg") !important;
+}
+.yui-navset .yui-nav .selected a {
+    background:#920 url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aunusual-cargo-jp/TOAST-PAPER.jpg") repeat-x left -1400px !important; /* 選択中タブの背景 */
+    }
+.yui-navset .yui-nav .selected a:focus, /* 選択中タブにはフォーカス効果なし */
+.yui-navset .yui-nav .selected a:hover { /* 選択中タブにはホバー効果なし */
+background:#920 url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aunusual-cargo-jp/TOAST-PAPER.jpg") repeat-x left -1400px !important; /* 選択中タブの背景 */
+}
+.yui-navset .yui-nav a:hover, .yui-navset .yui-nav a:focus {
+    background:#da8 url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aunusual-cargo-jp/TOAST-PAPER.jpg") repeat-x left -1300px !important;
+    text-decoration: none;
+}
+
+/* 関連記事ボックス（以前はインライン） */
+.UC_footing {
+    width: 80%;
+    margin: auto;
+    padding: .2em;
+
+    background:
+    linear-gradient(
+    hsla(0, 0%, 88%, .3),
+    hsla(240, 100%, 94%, .5)),
+    url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aunusual-cargo-jp/TOAST-PAPER.jpg);
+
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .UC_footing {
+        width: 100%;
+    }
+}
+
+.UC_footing p {
+    font-size: .8em;
+}
+
+.UC_footing h2 {
+    font: 2.1em "Tangerine", cursive;
+}
+
+[[/code]]
+[[/iftags]]

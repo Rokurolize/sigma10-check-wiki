@@ -1,0 +1,1528 @@
+{
+ "tool": "classify_hunks.py",
+ "classifier_version": "0.1.0",
+ "signature_table_version": "2026-11-17.1",
+ "theme": {
+  "dir": "ultimate-reader-jp",
+  "cand_fullname": "theme:ultimate-reader-jp",
+  "orig_fullname": "theme:ultimate-reader",
+  "wiki": "scp-wiki-cn",
+  "revision": "8",
+  "kind": "standard",
+  "verdict": "PASS",
+  "original_file": "review/ultimate-reader-jp/original.txt",
+  "candidate_file": "review/ultimate-reader-jp/candidate.txt",
+  "original_sha256": "8610f62462cdda873f30b2eebcc4bf1e8082efba9f282f3c3f5cc67296a618b9",
+  "candidate_sha256": "fa7fee42f90f1868758a06f4e90aa4bd7fa2fb976990b8c7ad20d5a55a0db062",
+  "original_lines": 999,
+  "candidate_lines": 1008
+ },
+ "topology": {
+  "original_components": [
+   {
+    "kind": "code-css",
+    "range": [
+     32,
+     60
+    ],
+    "lines": 28
+   }
+  ],
+  "candidate_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     3,
+     6
+    ],
+    "lines": 3
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     108,
+     993
+    ],
+    "lines": 885
+   }
+  ],
+  "moves": [],
+  "external_own_delivery": false
+ },
+ "blocks": [
+  {
+   "id": "B1",
+   "orig_range": [
+    0,
+    2
+   ],
+   "cand_range": [
+    0,
+    2
+   ],
+   "orig_lines": "1-2",
+   "cand_lines": "1-2",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "COMPONENT-SWAP",
+    "EXHIBIT-RESTRUCTURE",
+    "INCLUDE-REPOINT",
+    "SIGMA-PLUS-JP"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "INCLUDE-REPOINT": "A",
+    "SIGMA-PLUS-JP": "A",
+    "COMPONENT-SWAP": "B",
+    "EXHIBIT-RESTRUCTURE": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "INCLUDE-REPOINT": {
+     "orig": [
+      [
+       0,
+       2
+      ]
+     ],
+     "cand": [
+      [
+       0,
+       2
+      ]
+     ]
+    },
+    "SIGMA-PLUS-JP": {
+     "cand": [
+      [
+       0,
+       1
+      ]
+     ],
+     "orig": [
+      [
+       0,
+       1
+      ]
+     ]
+    },
+    "COMPONENT-SWAP": {
+     "orig": [
+      [
+       0,
+       2
+      ]
+     ],
+     "cand": [
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       1
+      ]
+     ]
+    },
+    "EXHIBIT-RESTRUCTURE": {}
+   },
+   "notes": [
+    "bare form removed",
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[include :scp-wiki-cn:component:sigma-plus]]",
+   "first_added": "[[include component:sigma-plus-jp]]"
+  },
+  {
+   "id": "B2",
+   "orig_range": [
+    3,
+    7
+   ],
+   "cand_range": [
+    3,
+    6
+   ],
+   "orig_lines": "4-7",
+   "cand_lines": "4-6",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DRAFT-HOST",
+    "IFTAGS",
+    "SELF-DELIVERY"
+   ],
+   "primary": "SELF-DELIVERY",
+   "primary_section": 3,
+   "label_prec": {
+    "IFTAGS": "A",
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "IFTAGS": {
+     "orig": [
+      [
+       3,
+       4
+      ]
+     ],
+     "cand": []
+    },
+    "SELF-DELIVERY": {
+     "orig": [],
+     "cand": [
+      [
+       4,
+       5
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       4,
+       5
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[iftags +版式]]",
+   "first_added": "[[module CSS]]"
+  },
+  {
+   "id": "B3",
+   "orig_range": [
+    8,
+    9
+   ],
+   "cand_range": [
+    7,
+    11
+   ],
+   "orig_lines": "9-9",
+   "cand_lines": "8-11",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "DRAFT-HOST",
+    "SELF-DELIVERY"
+   ],
+   "primary": "SELF-DELIVERY",
+   "primary_section": 3,
+   "label_prec": {
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "SELF-DELIVERY": {
+     "orig": [],
+     "cand": [
+      [
+       9,
+       10
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       9,
+       10
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "终极阅读器版式是一个[[[component:sigma-plus|Sigma+]]]版式，旨在提供更简洁的页面布局，以及适于阅读的大字号正文区域。",
+   "first_added": "[[include :scp-jp:component:interwiki-style"
+  },
+  {
+   "id": "B4",
+   "orig_range": [
+    10,
+    11
+   ],
+   "cand_range": [
+    12,
+    28
+   ],
+   "orig_lines": "11-11",
+   "cand_lines": "13-28",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "CREDIT-PREVIEW",
+    "IFTAGS",
+    "TASL-FIELDS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "CREDIT-PREVIEW",
+   "primary_section": 1,
+   "label_prec": {
+    "CREDIT-PREVIEW": "A",
+    "TASL-FIELDS": "A",
+    "IFTAGS": "A",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "CREDIT-PREVIEW": {
+     "cand": [
+      [
+       14,
+       15
+      ],
+      [
+       23,
+       24
+      ]
+     ]
+    },
+    "TASL-FIELDS": {
+     "cand": [
+      [
+       15,
+       23
+      ]
+     ]
+    },
+    "IFTAGS": {
+     "orig": [],
+     "cand": [
+      [
+       12,
+       13
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "使用以下代码引入终极阅读器版式：",
+   "first_added": "[[iftags +テーマ]]"
+  },
+  {
+   "id": "B5",
+   "orig_range": [
+    13,
+    14
+   ],
+   "cand_range": [
+    30,
+    31
+   ],
+   "orig_lines": "14-14",
+   "cand_lines": "31-31",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "COMPONENT-SWAP",
+    "ESCAPED-INCLUDE",
+    "INCLUDE-REPOINT"
+   ],
+   "primary": "COMPONENT-SWAP",
+   "primary_section": 2,
+   "label_prec": {
+    "INCLUDE-REPOINT": "A",
+    "ESCAPED-INCLUDE": "B",
+    "COMPONENT-SWAP": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "INCLUDE-REPOINT": {
+     "orig": [
+      [
+       13,
+       14
+      ]
+     ],
+     "cand": [
+      [
+       30,
+       31
+      ]
+     ]
+    },
+    "ESCAPED-INCLUDE": {
+     "orig": [
+      [
+       13,
+       14
+      ]
+     ],
+     "cand": [
+      [
+       30,
+       31
+      ]
+     ]
+    },
+    "COMPONENT-SWAP": {
+     "orig": [
+      [
+       13,
+       14
+      ]
+     ],
+     "cand": [
+      [
+       30,
+       31
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "@@[[include :scp-wiki-cn:theme:ultimate-reader]]@@",
+   "first_added": "@@[[include :scp-jp:theme:ultimate-reader-jp]]@@"
+  },
+  {
+   "id": "B6",
+   "orig_range": [
+    16,
+    17
+   ],
+   "cand_range": [
+    33,
+    34
+   ],
+   "orig_lines": "17-17",
+   "cand_lines": "34-34",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "终极阅读器版式自带一个“终极模式”，包含折叠式版头、更宽的页面内容区域以及启用思源宋体作为正文字体，这将使得页面整体视觉效果与常见的阅读器版式相类似。你可以使用如下代码引入版式并启用“终极模式”：",
+   "first_added": "アルティメット・リーダー・テーマには「アルティメットモード」が付属しています。このモードでは折り畳み式ヘッダー、より広い本文領域、日本語本文向けの明朝体フォントが有効になり、一般的なリーダー表示に近い見た目になります。テーマを導入し、「アルティメットモード」を有効にするには以下のコードを使用してください。"
+  },
+  {
+   "id": "B7",
+   "orig_range": [
+    19,
+    20
+   ],
+   "cand_range": [
+    36,
+    37
+   ],
+   "orig_lines": "20-20",
+   "cand_lines": "37-37",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "COMPONENT-SWAP",
+    "ESCAPED-INCLUDE",
+    "INCLUDE-REPOINT"
+   ],
+   "primary": "COMPONENT-SWAP",
+   "primary_section": 2,
+   "label_prec": {
+    "INCLUDE-REPOINT": "A",
+    "ESCAPED-INCLUDE": "B",
+    "COMPONENT-SWAP": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "INCLUDE-REPOINT": {
+     "orig": [
+      [
+       19,
+       20
+      ]
+     ],
+     "cand": [
+      [
+       36,
+       37
+      ]
+     ]
+    },
+    "ESCAPED-INCLUDE": {
+     "orig": [
+      [
+       19,
+       20
+      ]
+     ],
+     "cand": [
+      [
+       36,
+       37
+      ]
+     ]
+    },
+    "COMPONENT-SWAP": {
+     "orig": [
+      [
+       19,
+       20
+      ]
+     ],
+     "cand": [
+      [
+       36,
+       37
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "@@[[include :scp-wiki-cn:theme:ultimate-reader ultimate-mode=*]]@@",
+   "first_added": "@@[[include :scp-jp:theme:ultimate-reader-jp ultimate-mode=*]]@@"
+  },
+  {
+   "id": "B8",
+   "orig_range": [
+    22,
+    23
+   ],
+   "cand_range": [
+    39,
+    40
+   ],
+   "orig_lines": "23-23",
+   "cand_lines": "40-40",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "或者，若你只希望使用“终极模式”的一部分特性，下面这些代码可以帮助你进行调整：",
+   "first_added": "また、「アルティメットモード」の一部の機能だけを使いたい場合は、以下のコードで調整できます。"
+  },
+  {
+   "id": "B9",
+   "orig_range": [
+    24,
+    25
+   ],
+   "cand_range": [
+    41,
+    42
+   ],
+   "orig_lines": "25-25",
+   "cand_lines": "42-42",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "**只启用切换版头：**",
+   "first_added": "**ヘッダー切り替えのみを有効化:**"
+  },
+  {
+   "id": "B10",
+   "orig_range": [
+    27,
+    28
+   ],
+   "cand_range": [
+    44,
+    45
+   ],
+   "orig_lines": "28-28",
+   "cand_lines": "45-45",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "COMPONENT-SWAP",
+    "ESCAPED-INCLUDE",
+    "INCLUDE-REPOINT"
+   ],
+   "primary": "COMPONENT-SWAP",
+   "primary_section": 2,
+   "label_prec": {
+    "INCLUDE-REPOINT": "A",
+    "ESCAPED-INCLUDE": "B",
+    "COMPONENT-SWAP": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "INCLUDE-REPOINT": {
+     "orig": [
+      [
+       27,
+       28
+      ]
+     ],
+     "cand": [
+      [
+       44,
+       45
+      ]
+     ]
+    },
+    "ESCAPED-INCLUDE": {
+     "orig": [
+      [
+       27,
+       28
+      ]
+     ],
+     "cand": [
+      [
+       44,
+       45
+      ]
+     ]
+    },
+    "COMPONENT-SWAP": {
+     "orig": [
+      [
+       27,
+       28
+      ]
+     ],
+     "cand": [
+      [
+       44,
+       45
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "@@[[include :scp-wiki-cn:theme:ultimate-reader toggle-header=*]]@@",
+   "first_added": "@@[[include :scp-jp:theme:ultimate-reader-jp toggle-header=*]]@@"
+  },
+  {
+   "id": "B11",
+   "orig_range": [
+    30,
+    60
+   ],
+   "cand_range": [
+    47,
+    48
+   ],
+   "orig_lines": "31-60",
+   "cand_lines": "48-48",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "EXHIBIT-RESTRUCTURE",
+    "HEADERVAR",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "HEADERVAR": "A",
+    "EXHIBIT-RESTRUCTURE": "C",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "HEADERVAR": {
+     "orig": [
+      [
+       34,
+       35
+      ],
+      [
+       36,
+       37
+      ]
+     ],
+     "cand": []
+    },
+    "EXHIBIT-RESTRUCTURE": {},
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "**更多CSS变量：**（以下提供的是不启用“终极模式”时的默认值）",
+   "first_added": "**追加のCSS変数:**（以下は「アルティメットモード」を有効にしない場合のデフォルト値です）"
+  },
+  {
+   "id": "B12",
+   "orig_range": [
+    64,
+    65
+   ],
+   "cand_range": [
+    52,
+    53
+   ],
+   "orig_lines": "65-65",
+   "cand_lines": "53-53",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "+ 示例",
+   "first_added": "+ 使用例"
+  },
+  {
+   "id": "B13",
+   "orig_range": [
+    67,
+    70
+   ],
+   "cand_range": [
+    55,
+    58
+   ],
+   "orig_lines": "68-70",
+   "cand_lines": "56-58",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "DRAFT-HOST",
+    "EXHIBIT-RESTRUCTURE",
+    "INCLUDE-REPOINT",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "INCLUDE-REPOINT": "A",
+    "DRAFT-HOST": "A",
+    "EXHIBIT-RESTRUCTURE": "C",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "INCLUDE-REPOINT": {
+     "orig": [
+      [
+       67,
+       68
+      ]
+     ],
+     "cand": [
+      [
+       55,
+       56
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       56,
+       57
+      ]
+     ]
+    },
+    "EXHIBIT-RESTRUCTURE": {},
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "class (iii) draft-stage form",
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[include :scp-wiki-cn:component:image-block",
+   "first_added": "[[include :scp-jp:component:image-block"
+  },
+  {
+   "id": "B14",
+   "orig_range": [
+    73,
+    79
+   ],
+   "cand_range": [
+    61,
+    67
+   ],
+   "orig_lines": "74-79",
+   "cand_lines": "62-67",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 6/6"
+   ],
+   "partial_notes": [],
+   "first_removed": "+ 一级标题",
+   "first_added": "+ 第一階層見出し"
+  },
+  {
+   "id": "B15",
+   "orig_range": [
+    80,
+    82
+   ],
+   "cand_range": [
+    68,
+    70
+   ],
+   "orig_lines": "81-82",
+   "cand_lines": "69-70",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 2/2"
+   ],
+   "partial_notes": [],
+   "first_removed": "||~ 标题 ||~ 标题 ||~ 标题 ||~ 标题 ||~ 标题 ||~ 标题 ||",
+   "first_added": "||~ 見出し ||~ 見出し ||~ 見出し ||~ 見出し ||~ 見出し ||~ 見出し ||"
+  },
+  {
+   "id": "B16",
+   "orig_range": [
+    85,
+    87
+   ],
+   "cand_range": [
+    73,
+    75
+   ],
+   "orig_lines": "86-87",
+   "cand_lines": "74-75",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/2"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[tab 标签 1]]",
+   "first_added": "[[tab タブ1]]"
+  },
+  {
+   "id": "B17",
+   "orig_range": [
+    89,
+    91
+   ],
+   "cand_range": [
+    77,
+    79
+   ],
+   "orig_lines": "90-91",
+   "cand_lines": "78-79",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/2"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[tab 标签 2]]",
+   "first_added": "[[tab タブ2]]"
+  },
+  {
+   "id": "B18",
+   "orig_range": [
+    93,
+    95
+   ],
+   "cand_range": [
+    81,
+    83
+   ],
+   "orig_lines": "94-95",
+   "cand_lines": "82-83",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/2"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[tab 标签 3]]",
+   "first_added": "[[tab タブ3]]"
+  },
+  {
+   "id": "B19",
+   "orig_range": [
+    97,
+    99
+   ],
+   "cand_range": [
+    85,
+    87
+   ],
+   "orig_lines": "98-99",
+   "cand_lines": "86-87",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/2"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[tab 标签 4]]",
+   "first_added": "[[tab タブ4]]"
+  },
+  {
+   "id": "B20",
+   "orig_range": [
+    101,
+    103
+   ],
+   "cand_range": [
+    89,
+    91
+   ],
+   "orig_lines": "102-103",
+   "cand_lines": "90-91",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/2"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[tab 标签 5]]",
+   "first_added": "[[tab タブ5]]"
+  },
+  {
+   "id": "B21",
+   "orig_range": [
+    109,
+    110
+   ],
+   "cand_range": [
+    97,
+    98
+   ],
+   "orig_lines": "110-110",
+   "cand_lines": "98-98",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "GLYPH-FORM",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "GLYPH-FORM",
+   "primary_section": 6,
+   "label_prec": {
+    "GLYPH-FORM": "B",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "B",
+   "label_spans": {
+    "GLYPH-FORM": {},
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "fold-compare: glyph forms only",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "> 引用",
+   "first_added": "> 引用文"
+  },
+  {
+   "id": "B22",
+   "orig_range": [
+    111,
+    112
+   ],
+   "cand_range": [
+    99,
+    100
+   ],
+   "orig_lines": "112-112",
+   "cand_lines": "100-100",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": ">> 嵌套引用",
+   "first_added": ">> 入れ子の引用"
+  },
+  {
+   "id": "B23",
+   "orig_range": [
+    113,
+    114
+   ],
+   "cand_range": [
+    101,
+    102
+   ],
+   "orig_lines": "114-114",
+   "cand_lines": "102-102",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "IFTAGS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "IFTAGS",
+   "primary_section": 2,
+   "label_prec": {
+    "IFTAGS": "A",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "IFTAGS": {
+     "orig": [],
+     "cand": [
+      [
+       101,
+       102
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[/iftags]]",
+   "first_added": "[[div [[iftags -テーマ]]style=\"display: none;\"[[/iftags]] ]]"
+  },
+  {
+   "id": "B24",
+   "orig_range": [
+    115,
+    116
+   ],
+   "cand_range": [
+    103,
+    104
+   ],
+   "orig_lines": "116-116",
+   "cand_lines": "104-104",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "IFTAGS"
+   ],
+   "primary": "IFTAGS",
+   "primary_section": 2,
+   "label_prec": {
+    "IFTAGS": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "IFTAGS": {
+     "orig": [
+      [
+       115,
+       116
+      ]
+     ],
+     "cand": []
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[div [[iftags -版式]]style=\"display: none;\"[[/iftags]] ]]",
+   "first_added": "[[/div]]"
+  },
+  {
+   "id": "B25",
+   "orig_range": [
+    117,
+    118
+   ],
+   "cand_range": [
+    105,
+    106
+   ],
+   "orig_lines": "118-118",
+   "cand_lines": "106-106",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[collapsible show=\"+ 展开源代码\" hide=\"- 隐藏源代码\"]]",
+   "first_added": "+ ソースコード"
+  },
+  {
+   "id": "B26",
+   "orig_range": [
+    119,
+    120
+   ],
+   "cand_range": [
+    107,
+    120
+   ],
+   "orig_lines": "120-120",
+   "cand_lines": "108-120",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "JPFONT-LOAD",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "JPFONT-LOAD",
+   "primary_section": 4,
+   "label_prec": {
+    "JPFONT-LOAD": "A",
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "JPFONT-LOAD": {
+     "cand": [
+      [
+       109,
+       113
+      ]
+     ]
+    },
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "absence claim needs base subtraction (resolved base)",
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[module CSS show=\"true\"]]",
+   "first_added": "[[collapsible show=\"> コードを表示\" hide=\"> コードを閉じる\"]]"
+  },
+  {
+   "id": "B27",
+   "orig_range": [
+    126,
+    128
+   ],
+   "cand_range": [
+    126,
+    126
+   ],
+   "orig_lines": "127-128",
+   "cand_lines": "at 127",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "DUPIMPORT-DEL"
+   ],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {
+    "DUPIMPORT-DEL": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "DUPIMPORT-DEL": {
+     "orig": [
+      [
+       126,
+       128
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "every surviving copy sits inside an iftags gate; downgraded to heuristic for writer confirmation (parameter-gated preset shape)"
+   ],
+   "partial_notes": [],
+   "first_removed": "@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;700;900');",
+   "first_added": ""
+  },
+  {
+   "id": "B28",
+   "orig_range": [
+    133,
+    134
+   ],
+   "cand_range": [
+    131,
+    132
+   ],
+   "orig_lines": "134-134",
+   "cand_lines": "132-132",
+   "channel_pair": [
+    "body",
+    "code-css"
+   ],
+   "labels": [
+    "DRAFT-HOST"
+   ],
+   "primary": "DRAFT-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       131,
+       132
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "    --sp_header-logo: url(https://sigma9.scpwikicn.com/cn/img/logo.png);",
+   "first_added": "    --sp_header-logo: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aultimate-reader-jp/logo.png);"
+  },
+  {
+   "id": "B29",
+   "orig_range": [
+    994,
+    996
+   ],
+   "cand_range": [
+    992,
+    993
+   ],
+   "orig_lines": "995-996",
+   "cand_lines": "993-993",
+   "channel_pair": [
+    "body",
+    "code-css"
+   ],
+   "labels": [
+    "CSS-BODY"
+   ],
+   "primary": "CSS-BODY",
+   "primary_section": 8,
+   "label_prec": {
+    "CSS-BODY": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "CSS-BODY": {}
+   },
+   "notes": [
+    "no other signature matched"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[/module]]",
+   "first_added": "[[/code]]"
+  },
+  {
+   "id": "B30",
+   "orig_range": [
+    998,
+    999
+   ],
+   "cand_range": [
+    995,
+    1008
+   ],
+   "orig_lines": "999-999",
+   "cand_lines": "996-1008",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "LICENSE-BOX",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "LICENSE-BOX",
+   "primary_section": 1,
+   "label_prec": {
+    "LICENSE-BOX": "A",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "LICENSE-BOX": {
+     "cand": [
+      [
+       995,
+       996
+      ],
+      [
+       1005,
+       1006
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "supplement (T4): the original carried no license box",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[/div]]",
+   "first_added": "[[include :scp-jp:component:license-box-backend"
+  }
+ ],
+ "derived_presence": {
+  "HTTP-KEPT": {
+   "class": "(ii) posting rewrite",
+   "count": 2,
+   "lines": [
+    "201-201",
+    "202-202"
+   ],
+   "example": "--ur_circle-mask: url(\"data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0%29 --%3E%3Csvg version='1.1' id='SCP_Logo' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px'%0AviewBox='0 0 2215 2080' style='enable-background:new 0 0 2215 2080;' xml:space='preserve'%3E%3Cpath id='Outer_Circle' d='M2215,1351.8l-125-139.7c5-40.5,7.5-81.3,7.5-122.1c0-410-249.3-761.8-604.6-912.2L1434.5,0h-654%0Al-58.4,177.9C366.8,328.2,117.5,680,117.5,1090c0,40.8,2.5,81.6,7.5,122.1L0,1351.8l327,566.4l183.5-38.4%0Ac166,125.7,372.8,200.2,597,200.2s431-74.5,597-200.2l183.5,38.4L2215,1351.8L2215,1351.8z M1683,1794.4%0Ac-156.7,128.5-357.1,205.6-575.5,205.6c-218.4,0-418.8-77.1-575.5-205.6l-164.2,34.4l-270-467.7l112.3-125.4%0Ac-7.6-47.5-11.6-96.1-11.6-145.8c0-389,243.9-721.1,586.9-851.2L837.5,80h540l52.1,158.8c343.1,130.2,586.9,462.2,586.9,851.2%0Ac0,49.6-4,98.3-11.6,145.8l112.3,125.4l-270,467.7L1683,1794.4z'/%3E%3C/svg%3E\");"
+  }
+ },
+ "summary": {
+  "blocks": 30,
+  "specific": 24,
+  "heuristic": 6,
+  "residue": 0,
+  "skipped": 0,
+  "reindent_blocks": 0,
+  "label_counts": {
+   "COMPONENT-SWAP": 4,
+   "EXHIBIT-RESTRUCTURE": 3,
+   "INCLUDE-REPOINT": 5,
+   "SIGMA-PLUS-JP": 1,
+   "DRAFT-HOST": 4,
+   "IFTAGS": 4,
+   "SELF-DELIVERY": 2,
+   "CREDIT-PREVIEW": 1,
+   "TASL-FIELDS": 1,
+   "TRANS-UNANCHORED": 11,
+   "ESCAPED-INCLUDE": 3,
+   "TRANSLATION-ANCHORED": 9,
+   "HEADERVAR": 1,
+   "GLYPH-FORM": 1,
+   "COMMENT-TEXT": 1,
+   "JPFONT-LOAD": 1,
+   "DUPIMPORT-DEL": 1,
+   "CSS-BODY": 1,
+   "LICENSE-BOX": 1
+  }
+ },
+ "residue": [],
+ "skeleton": {
+  "sha256": "612115502f3f0549e21547516e14d42d818786ee95ed56c0c4f6a61f991c2b15",
+  "status": "written (new)"
+ }
+}
