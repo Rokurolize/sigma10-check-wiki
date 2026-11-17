@@ -1,0 +1,1281 @@
+{
+ "tool": "classify_hunks.py",
+ "classifier_version": "0.1.0",
+ "signature_table_version": "2026-11-17.1",
+ "theme": {
+  "dir": "sunside-jp",
+  "cand_fullname": "theme:sunside-jp",
+  "orig_fullname": "theme:sunside",
+  "wiki": "scp-wiki",
+  "revision": "17",
+  "kind": "standard",
+  "verdict": "PASS",
+  "original_file": "review/sunside-jp/original.txt",
+  "candidate_file": "review/sunside-jp/candidate.txt",
+  "original_sha256": "38a13da3acb34a25fe5ad1a67a3fff76ea299aab37500d91c5fde61ea9c81e25",
+  "candidate_sha256": "4d20f7847d8fc847091958cee022e50b79596cfe18cc3812bbfd2e511a353123",
+  "original_lines": 1487,
+  "candidate_lines": 2679
+ },
+ "topology": {
+  "original_components": [
+   {
+    "kind": "code-css",
+    "range": [
+     164,
+     1445
+    ],
+    "lines": 1281
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     1478,
+     1481
+    ],
+    "lines": 3
+   }
+  ],
+  "candidate_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     0,
+     1241
+    ],
+    "lines": 1241
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     1424,
+     2649
+    ],
+    "lines": 1225
+   }
+  ],
+  "moves": [
+   {
+    "from_kind": "code-css",
+    "to_kind": "module-css",
+    "orig_range": [
+     164,
+     1445
+    ],
+    "cand_range": [
+     0,
+     1241
+    ],
+    "similarity": 0.977,
+    "basis": "content"
+   },
+   {
+    "from_kind": "external-own-delivery",
+    "to_kind": "module-css",
+    "orig_range": null,
+    "cand_range": [
+     0,
+     1241
+    ],
+    "similarity": null,
+    "basis": "candidate-side",
+    "caveat": "companion body unavailable; candidate-side only"
+   }
+  ],
+  "external_own_delivery": true
+ },
+ "blocks": [
+  {
+   "id": "B1",
+   "orig_range": [
+    0,
+    4
+   ],
+   "cand_range": [
+    0,
+    4
+   ],
+   "orig_lines": "1-4",
+   "cand_lines": "1-4",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "FONT-IMPORT",
+    "IFTAGS"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "IFTAGS": "A",
+    "FONT-IMPORT": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "IFTAGS": {
+     "orig": [
+      [
+       0,
+       1
+      ]
+     ],
+     "cand": []
+    },
+    "FONT-IMPORT": {
+     "orig": [],
+     "cand": [
+      [
+       1,
+       4
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       0,
+       4
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "the deciding evidence is the load probe (KB-04)"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[iftags +theme]]",
+   "first_added": "[[module CSS]]"
+  },
+  {
+   "id": "B2",
+   "orig_range": [
+    5,
+    6
+   ],
+   "cand_range": [
+    5,
+    11
+   ],
+   "orig_lines": "6-6",
+   "cand_lines": "6-11",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "JPFONT-LOAD",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "JPFONT-LOAD": "A",
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "JPFONT-LOAD": {
+     "cand": [
+      [
+       10,
+       11
+      ]
+     ]
+    },
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       5,
+       11
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "absence claim needs base subtraction (resolved base)",
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "This is an aesthetic theme for [[[esterberg-city-wikipedia|Esterberg]]], made by [[*user EstrellaYoshte]] for [[*user Ralliston]].",
+   "first_added": "/* 日本語フォント"
+  },
+  {
+   "id": "B3",
+   "orig_range": [
+    7,
+    8
+   ],
+   "cand_range": [
+    12,
+    19
+   ],
+   "orig_lines": "8-8",
+   "cand_lines": "13-19",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "HEADERVAR",
+    "SIGMA-PLUS-JP",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "SIGMA-PLUS-JP": "A",
+    "HEADERVAR": "A",
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "SIGMA-PLUS-JP": {
+     "cand": [
+      [
+       12,
+       14
+      ]
+     ]
+    },
+    "HEADERVAR": {
+     "orig": [],
+     "cand": [
+      [
+       15,
+       17
+      ]
+     ]
+    },
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       12,
+       19
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "To use the theme, insert the following:",
+   "first_added": "/* === Sigma-Plus (EstrellaYoshte) — component:sigma-plus-jp 経由で読み込み（原語版 rev.38 由来） === */"
+  },
+  {
+   "id": "B4",
+   "orig_range": [
+    9,
+    165
+   ],
+   "cand_range": [
+    20,
+    21
+   ],
+   "orig_lines": "10-165",
+   "cand_lines": "21-21",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "EXHIBIT-RESTRUCTURE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "EXHIBIT-RESTRUCTURE": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "EXHIBIT-RESTRUCTURE": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       20,
+       21
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[div class=\"city-block\"]]",
+   "first_added": "/* === Sunside 本体（以下のコードは、「ソースコード」表示のものと同一です） === */"
+  },
+  {
+   "id": "B5",
+   "orig_range": [
+    175,
+    178
+   ],
+   "cand_range": [
+    31,
+    31
+   ],
+   "orig_lines": "176-178",
+   "cand_lines": "at 32",
+   "channel_pair": [
+    "code-css",
+    "body"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "orig": [
+      [
+       175,
+       178
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "/*-----------------------------*/",
+   "first_added": ""
+  },
+  {
+   "id": "B6",
+   "orig_range": [
+    179,
+    181
+   ],
+   "cand_range": [
+    32,
+    32
+   ],
+   "orig_lines": "180-181",
+   "cand_lines": "at 33",
+   "channel_pair": [
+    "code-css",
+    "body"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "orig": [
+      [
+       179,
+       181
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "@import url('https://api.fonts.coollabs.io/css2?family=Sora:wght@400;700&display=swap');",
+   "first_added": ""
+  },
+  {
+   "id": "B7",
+   "orig_range": [
+    182,
+    210
+   ],
+   "cand_range": [
+    33,
+    33
+   ],
+   "orig_lines": "183-210",
+   "cand_lines": "at 34",
+   "channel_pair": [
+    "code-css",
+    "body"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "orig": [
+      [
+       182,
+       210
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "@font-face {",
+   "first_added": ""
+  },
+  {
+   "id": "B8",
+   "orig_range": [
+    211,
+    239
+   ],
+   "cand_range": [
+    34,
+    34
+   ],
+   "orig_lines": "212-239",
+   "cand_lines": "at 35",
+   "channel_pair": [
+    "code-css",
+    "body"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "orig": [
+      [
+       211,
+       239
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "@font-face {",
+   "first_added": ""
+  },
+  {
+   "id": "B9",
+   "orig_range": [
+    269,
+    270
+   ],
+   "cand_range": [
+    64,
+    65
+   ],
+   "orig_lines": "270-270",
+   "cand_lines": "65-65",
+   "channel_pair": [
+    "code-css",
+    "module-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       269,
+       270
+      ]
+     ],
+     "cand": [
+      [
+       64,
+       65
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       64,
+       65
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    --sp_header-logo: url(https://scp-wiki.wdfiles.com/local--files/theme:sunside/esterberg-sun.png);",
+   "first_added": "    --sp_header-logo: url(https://scp-wiki.wdfiles.com/local--files/theme%3Asunside/esterberg-sun.png);"
+  },
+  {
+   "id": "B10",
+   "orig_range": [
+    282,
+    288
+   ],
+   "cand_range": [
+    77,
+    83
+   ],
+   "orig_lines": "283-288",
+   "cand_lines": "78-83",
+   "channel_pair": [
+    "code-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "HEADERVAR",
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "HEADERVAR": "A",
+    "TRANSLATION-ANCHORED": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "HEADERVAR": {
+     "orig": [
+      [
+       286,
+       288
+      ]
+     ],
+     "cand": [
+      [
+       81,
+       83
+      ]
+     ]
+    },
+    "TRANSLATION-ANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       77,
+       83
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "anchored pairs 6/6"
+   ],
+   "partial_notes": [],
+   "first_removed": "    --header-font: 'Sora', Nanum Gothic, sans-serif;",
+   "first_added": "    --header-font: 'Sora', 'Noto Sans JP', 'Nanum Gothic', sans-serif;"
+  },
+  {
+   "id": "B11",
+   "orig_range": [
+    1062,
+    1063
+   ],
+   "cand_range": [
+    857,
+    858
+   ],
+   "orig_lines": "1063-1063",
+   "cand_lines": "858-858",
+   "channel_pair": [
+    "code-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "WS-ONLY"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "WS-ONLY": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "WS-ONLY": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       857,
+       858
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "        100% var(--cut), ",
+   "first_added": "        100% var(--cut),"
+  },
+  {
+   "id": "B12",
+   "orig_range": [
+    1384,
+    1385
+   ],
+   "cand_range": [
+    1179,
+    1180
+   ],
+   "orig_lines": "1385-1385",
+   "cand_lines": "1180-1180",
+   "channel_pair": [
+    "code-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "WS-ONLY"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "WS-ONLY": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "WS-ONLY": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       1179,
+       1180
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    margin-right: clamp(calc(var(--main-content-width)/-4.5), calc((90vw - 95%)/-2), 0rem); ",
+   "first_added": "    margin-right: clamp(calc(var(--main-content-width)/-4.5), calc((90vw - 95%)/-2), 0rem);"
+  },
+  {
+   "id": "B13",
+   "orig_range": [
+    1444,
+    1444
+   ],
+   "cand_range": [
+    1239,
+    2648
+   ],
+   "orig_lines": "at 1445",
+   "cand_lines": "1240-2648",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "CONTENT-STRING",
+    "CREDIT-PREVIEW",
+    "DRAFT-HOST",
+    "HEADERVAR",
+    "IFTAGS",
+    "RESTORATION",
+    "SELF-DELIVERY",
+    "SIGMA-PLUS-JP",
+    "T7-CREDIT-CSS",
+    "TASL-FIELDS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "RESTORATION",
+   "primary_section": 8,
+   "label_prec": {
+    "CREDIT-PREVIEW": "A",
+    "TASL-FIELDS": "A",
+    "T7-CREDIT-CSS": "B",
+    "SIGMA-PLUS-JP": "A",
+    "IFTAGS": "A",
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A",
+    "HEADERVAR": "A",
+    "CONTENT-STRING": "B",
+    "RESTORATION": "C",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "CREDIT-PREVIEW": {
+     "cand": [
+      [
+       1252,
+       1253
+      ],
+      [
+       1261,
+       1262
+      ]
+     ]
+    },
+    "TASL-FIELDS": {
+     "cand": [
+      [
+       1253,
+       1261
+      ]
+     ]
+    },
+    "T7-CREDIT-CSS": {
+     "cand": [
+      [
+       2095,
+       2099
+      ],
+      [
+       2100,
+       2109
+      ],
+      [
+       2101,
+       2109
+      ],
+      [
+       2113,
+       2124
+      ],
+      [
+       2164,
+       2168
+      ],
+      [
+       2168,
+       2173
+      ],
+      [
+       2173,
+       2181
+      ]
+     ]
+    },
+    "SIGMA-PLUS-JP": {
+     "cand": [
+      [
+       1242,
+       1243
+      ],
+      [
+       1271,
+       1272
+      ]
+     ]
+    },
+    "IFTAGS": {
+     "orig": [],
+     "cand": [
+      [
+       1250,
+       1251
+      ]
+     ]
+    },
+    "SELF-DELIVERY": {
+     "orig": [],
+     "cand": [
+      [
+       1247,
+       1248
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       1247,
+       1248
+      ]
+     ]
+    },
+    "HEADERVAR": {
+     "orig": [],
+     "cand": [
+      [
+       1489,
+       1491
+      ]
+     ]
+    },
+    "CONTENT-STRING": {
+     "orig": [],
+     "cand": [
+      [
+       1678,
+       1679
+      ],
+      [
+       1715,
+       1716
+      ],
+      [
+       1761,
+       1762
+      ],
+      [
+       1800,
+       1801
+      ],
+      [
+       1885,
+       1886
+      ],
+      [
+       1912,
+       1913
+      ],
+      [
+       1966,
+       1967
+      ],
+      [
+       1991,
+       1992
+      ],
+      [
+       2036,
+       2037
+      ],
+      [
+       2067,
+       2068
+      ],
+      [
+       2114,
+       2115
+      ],
+      [
+       2140,
+       2141
+      ],
+      [
+       2282,
+       2283
+      ],
+      [
+       2299,
+       2300
+      ],
+      [
+       2326,
+       2327
+      ],
+      [
+       2360,
+       2361
+      ],
+      [
+       2388,
+       2389
+      ],
+      [
+       2399,
+       2400
+      ],
+      [
+       2425,
+       2426
+      ],
+      [
+       2444,
+       2445
+      ],
+      [
+       2539,
+       2540
+      ],
+      [
+       2574,
+       2575
+      ]
+     ]
+    },
+    "RESTORATION": {},
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "supplement-vs-inherited needs the production counterpart",
+    "class (iii) draft-stage form",
+    "added content matches the original's own earlier region; diff-only signal, supplement decides",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": ""
+  },
+  {
+   "id": "B14",
+   "orig_range": [
+    1447,
+    1452
+   ],
+   "cand_range": [
+    2651,
+    2656
+   ],
+   "orig_lines": "1448-1452",
+   "cand_lines": "2652-2656",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "EXHIBIT-RESTRUCTURE",
+    "LICENSE-BOX",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "LICENSE-BOX": "A",
+    "EXHIBIT-RESTRUCTURE": "C",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "LICENSE-BOX": {
+     "cand": [
+      [
+       2651,
+       2652
+      ]
+     ]
+    },
+    "EXHIBIT-RESTRUCTURE": {},
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "restoration (KB-63): the original carried a license box",
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[include :scp-wiki:component:license-box-theme]]",
+   "first_added": "[[include :scp-jp:component:license-box-backend |author=EstrellaYoshte]]"
+  },
+  {
+   "id": "B15",
+   "orig_range": [
+    1453,
+    1457
+   ],
+   "cand_range": [
+    2657,
+    2661
+   ],
+   "orig_lines": "1454-1457",
+   "cand_lines": "2658-2661",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "> **Name:** Edinburgh Old Town Skyline P-EDI Banner",
+   "first_added": "> **名称:** Edinburgh Old Town Skyline P-EDI Banner"
+  },
+  {
+   "id": "B16",
+   "orig_range": [
+    1458,
+    1462
+   ],
+   "cand_range": [
+    2662,
+    2666
+   ],
+   "orig_lines": "1459-1462",
+   "cand_lines": "2663-2666",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "> **Name:** Tuggeranong Town Centre skyline April 2020",
+   "first_added": "> **名称:** Tuggeranong Town Centre skyline April 2020"
+  },
+  {
+   "id": "B17",
+   "orig_range": [
+    1463,
+    1467
+   ],
+   "cand_range": [
+    2667,
+    2671
+   ],
+   "orig_lines": "1464-1467",
+   "cand_lines": "2668-2671",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "> **Name:** PoznańCentrum1",
+   "first_added": "> **名称:** PoznańCentrum1"
+  },
+  {
+   "id": "B18",
+   "orig_range": [
+    1468,
+    1474
+   ],
+   "cand_range": [
+    2672,
+    2678
+   ],
+   "orig_lines": "1469-1474",
+   "cand_lines": "2673-2678",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "EXHIBIT-RESTRUCTURE",
+    "INCLUDE-REPOINT",
+    "LICENSE-BOX",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "LICENSE-BOX": "A",
+    "INCLUDE-REPOINT": "A",
+    "EXHIBIT-RESTRUCTURE": "C",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "LICENSE-BOX": {
+     "cand": [
+      [
+       2677,
+       2678
+      ]
+     ]
+    },
+    "INCLUDE-REPOINT": {
+     "orig": [
+      [
+       1473,
+       1474
+      ]
+     ],
+     "cand": [
+      [
+       2677,
+       2678
+      ]
+     ]
+    },
+    "EXHIBIT-RESTRUCTURE": {},
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "restoration (KB-63): the original carried a license box",
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "> **Name:** Esterberg Flag",
+   "first_added": "> **名称:** エスターバーグ旗"
+  },
+  {
+   "id": "B19",
+   "orig_range": [
+    1475,
+    1487
+   ],
+   "cand_range": [
+    2679,
+    2679
+   ],
+   "orig_lines": "1476-1487",
+   "cand_lines": "at 2680",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "EXHIBIT-RESTRUCTURE",
+    "SELF-DELIVERY",
+    "SIGMA-PLUS-JP"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "SIGMA-PLUS-JP": "A",
+    "SELF-DELIVERY": "A",
+    "EXHIBIT-RESTRUCTURE": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "SIGMA-PLUS-JP": {
+     "orig": [
+      [
+       1476,
+       1477
+      ]
+     ]
+    },
+    "SELF-DELIVERY": {
+     "orig": [
+      [
+       1479,
+       1480
+      ],
+      [
+       1484,
+       1485
+      ]
+     ],
+     "cand": []
+    },
+    "EXHIBIT-RESTRUCTURE": {}
+   },
+   "notes": [
+    "bare form removed",
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced"
+   ],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": ""
+  }
+ ],
+ "derived_presence": {
+  "HTTP-KEPT": {
+   "class": "(ii) posting rewrite",
+   "count": 4,
+   "lines": [
+    "150-150",
+    "151-151",
+    "152-152",
+    "573-573"
+   ],
+   "example": "--esterberg-header-layer1: url(\"data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2045 1150.06'%3E%3Cg data-name='Layer 2'%3E%3Cpath d='M0 1150.06v-937a55 55 0 0 0 7-2l16-9 24-9 10-6 13-7 9-3 37-22c12-7 22-16 32-25 4-4 8-10 15-9a4 4 0 0 0 3-1c5-6 13-8 20-11h6l17 3a34 34 0 0 1 7 2l6 4 22 10 34 22 27 15 36 21c9 6 18 11 28 14 14 4 29 7 43 12a120 120 0 0 0 35 4h13a8 8 0 0 0 7-1c6-5 12-7 20-6l9-2 7-1 12 4a4 4 0 0 0 3 0l10-5c4-1 8-4 12-4a37 37 0 0 0 22-6l3-1a8 8 0 0 0 7 1h10c5-2 10-4 14 1 3-2 5-5 8-5 8 0 16-1 23 5a2 2 0 0 0 1 0l15-6c4-2 7-5 12-3a10 10 0 0 0 6 0c3-2 6-2 9 0h5l25-7 9-1c1 .1 2 .1 3 0 9-2 19 1 28 2a6 6 0 0 0 3 0c5-3 9-8 16-4a3 3 0 0 0 2 0l31-7 22-6a51 51 0 0 0 16-5 56 56 0 0 1 9-3l27-9 19-4 22-4 18-3c6-1 13-1 19-3 6-1 11-4 18-4a20 20 0 0 0 8-1l17-7 28-11 16-5c4 0 7-2 11-4l3-3 17-12 17-10 12-6c1-1 2-2 3-1 4 1 8 0 12-1l11-4c18.67-10.67 37-22 55-34l27-18c6-4 12-9 19-10h5c3 2 5 2 8 1l10-3a38 38 0 0 1 11 1l9 3 9 1c10 4 21 7 33 8 4 0 8 0 12 2a204 204 0 0 0 20 10 65 65 0 0 0 13 3l17 2 26 3c6 1 11 1 15 4l12 6 29 16c4 2 8 7 13 7 7 0 13 5 21 5a26 26 0 0 1 7 2l21 7 19 5a45 45 0 0 1 22 8l18 12 42 18 34 11 11 3c5 3 10 2 15 2l9 2a14 14 0 0 0 9 2c6 0 12 2 16 5 6 3 11 2 17 1a44 44 0 0 1 11-2h16a20 20 0 0 1 4 1c9 2 18 4 27 4a181 181 0 0 1 19 0 115 115 0 0 1 13 2l14 3 26 5 14 3 21 4c9 2 18 6 27 6 13 0 26 3 38 7l35 9 31 11 23 9c3 1 5 1 5 5v934z' data-name='Layer 1'/%3E%3C/g%3E%3C/svg%3E\");"
+  }
+ },
+ "summary": {
+  "blocks": 19,
+  "specific": 16,
+  "heuristic": 3,
+  "residue": 0,
+  "skipped": 0,
+  "reindent_blocks": 0,
+  "label_counts": {
+   "DELIVERY-MOVE": 12,
+   "FONT-IMPORT": 1,
+   "IFTAGS": 2,
+   "COMMENT-TEXT": 3,
+   "JPFONT-LOAD": 1,
+   "TRANS-UNANCHORED": 9,
+   "HEADERVAR": 3,
+   "SIGMA-PLUS-JP": 3,
+   "EXHIBIT-RESTRUCTURE": 4,
+   "COLON-ENC": 1,
+   "TRANSLATION-ANCHORED": 1,
+   "WS-ONLY": 2,
+   "CONTENT-STRING": 1,
+   "CREDIT-PREVIEW": 1,
+   "DRAFT-HOST": 1,
+   "RESTORATION": 1,
+   "SELF-DELIVERY": 2,
+   "T7-CREDIT-CSS": 1,
+   "TASL-FIELDS": 1,
+   "LICENSE-BOX": 2,
+   "INCLUDE-REPOINT": 1
+  }
+ },
+ "residue": [],
+ "skeleton": {
+  "sha256": "b900f5597cd4cda666c0cbfc2773453a7319fc39ec78a77895de5791db554d12",
+  "status": "written (new)"
+ }
+}
