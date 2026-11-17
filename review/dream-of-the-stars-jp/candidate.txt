@@ -1,0 +1,763 @@
+[[module css]]
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css");
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css");
+[[/module]]
+
+[!--  {$unfold-sidebar}]
+
+[[module css]]
+
+/* Unfold Sidebar */
+
+#content-wrap {
+    grid-template-areas: "side-bar . content .";
+    grid-template-columns: var(--sidebar-width-on-desktop) calc(50% - var(--body-width-on-desktop)/2 - (var(--sidebar-width-on-desktop))*3/2) 1fr calc(50% - var(--body-width-on-desktop)/2 - var(--sidebar-width-on-desktop)/2);
+}
+
+
+@media only screen and (min-width: 56.25rem) {
+    #side-bar .close-menu {
+        display: none;
+        position: static;
+        top: auto;
+        left: auto;
+        width: auto;
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+        #side-bar .close-menu::before, #side-bar .close-menu::after {
+            content:none;
+        }
+
+    #side-bar:focus-within .close-menu {
+        pointer-events: auto;
+    }
+
+
+    #side-bar {
+        display: flex;
+        position: sticky;
+        z-index: 9;
+        top: 0;
+        left: inherit;
+        height: 100vh;
+        margin-top: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+        transition: background-color .15s cubic-bezier(.4,0,.2,1),scrollbar-color .15s cubic-bezier(.4,0,.2,1),border-color .15s cubic-bezier(.4,0,.2,1);
+    }
+
+        #side-bar:focus-within {
+            left: inherit;
+        }
+
+        #side-bar .side-block {
+            margin-top: 0.5rem;
+            overflow: visible;
+            border-right-width: 0rem;
+            border-left-width: 0rem;
+            border-radius: 0;
+            background-color: rgba(var(--dark-accent),.15)!important;
+        }
+
+    #main-content::before {
+        content: none;
+        display: block;
+        position: absolute;
+        z-index: -1;
+        z-index: 99;
+        top: var(--final-header-height-on-desktop, 0);
+        right: 0;
+        width: var(--sidebar-width-on-desktop, 17em);;
+        height: calc(100% - var(--final-header-height-on-desktop, 0.688rem) - 2.313rem);
+        margin-left: 0;
+        padding-right: 0;
+        transition: transform 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+        opacity 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+        -webkit-transform 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+        -moz-transform 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+        -o-transform 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+        opacity: 0.5;
+        background: rgb(var(--swatch-alternate-color, 0, 0, 0));
+        pointer-events: none;
+
+    }
+    #side-bar:focus-within ~ #main-content::before {
+        width: var(--sidebar-width-on-desktop, 17em);
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+[[/module]]
+
+[!--   --]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Adream-of-the-stars-jp/1
+]]
+
+[[iftags +テーマ]]
+
+[[module css]]
+.scp-image-block.block-right {
+    margin: 1em 0 1.1em 2em;
+}
+
+.scp-image-block img {
+    min-width: 100%;
+    border: 0.5rem solid rgba(var(--pale-gray-monochrome));
+    box-sizing: border-box;
+}
+.colors_container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    font-weight: 700;
+    font-family: 'Zen Old Mincho', serif;
+}
+
+.colors_container >  .colors,
+.colors_container >  .subcolors {
+    width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.colors > .color,
+.subcolors > .color {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 2;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+.colors > .color > .sub,
+.subcolors > .color > .sub,
+.colors > .color > .sub > .css-variable,
+.subcolors > .color > .sub > .css-variable {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.colors > .color {
+    height: 7rem;
+    flex-basis: calc((100%/2) - 2rem);
+}
+
+.colors > .color.one {
+    background-color: rgba(var(--gray-monochrome),1);
+}
+
+.colors > .color.two {
+    background-color: rgba(var(--bright-accent),1);
+}
+
+.subcolors > .color {
+    height: 4.3rem;
+    font-size: 75%;
+    text-align: center;
+    flex-basis: calc((100%/6) - 2rem);
+}
+
+.colors > .color.one,
+.subcolors > .color.two,
+.subcolors > .color.three,
+.subcolors > .color.four,
+.subcolors > .color.five,
+.subcolors > .color.six {
+    color: rgba(var(--swatch-text-light),1);
+}
+
+.subcolors > .color.one {
+    background-color: rgba(var(--pale-gray-monochrome),1);
+}
+
+.subcolors > .color.two {
+    background-color: rgba(var(--light-gray-monochrome),1);
+}
+
+.subcolors > .color.three {
+    background-color: rgba(var(--dark-gray-monochrome),1);
+}
+
+.subcolors > .color.four {
+    background-color: rgba(var(--medium-accent),1);
+}
+
+.subcolors > .color.five {
+    background-color: rgba(var(--dark-accent),1);
+}
+
+.subcolors > .color.six {
+    background-color: rgba(var(--newpage-color),1);
+}
+
+.color > .sub > .css-variable {
+    font-size: 75%;
+    letter-spacing: 0.1em;
+    font-family: var(--body-font);
+}
+
+[[/module]]
+
+[[div_ style="display:none"]]
+[[embed]]
+<iframe src="//interwiki.scp-jp.org/styleFrame.html?bhl" name="typeFrame"></iframe>
+[[/embed]]
+[[/div]]
+
+[[include :scp-jp:credit:start-preview]]
+
+**タイトル:** 星の夢テーマ
+**翻訳責任者:** AI
+**翻訳年:** 2026
+**原題:** 星之梦 主题版式
+**著作権者:** [[*user Mercuresphere]]
+**作成年:** 2022
+**初訳時参照リビジョン:** 13
+**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:dream-of-the-stars ソース]
+**ヘッダー画像:** https://pixabay.com/illustrations/banner-header-sky-night-stars-1557834/
+
+[[include :scp-jp:credit:end-preview]]
+
+[[=]]
++ テーマカラー
+[[/=]]
+
+[[div_ class="colors_container"]]
+[[div_ class="colors"]]
+[[div_ class="color one"]]
+[[div_ class="color sub"]]
+[[span class="css-variable"]]@@--gray-monochrome@@[[/span]][[span class="css-variable"]]@@(43, 14, 116)@@[[/span]]
+[[/div]]
+[[/div]]
+[[div_ class="color two"]]
+[[div_ class="color sub"]]
+[[span class="css-variable"]]@@--bright-accent@@[[/span]][[span class="css-variable"]]@@(255, 219, 90)@@[[/span]]
+[[/div]]
+[[/div]]
+[[/div]]
+[[div_ class="subcolors"]]
+[[div_ class="color one"]]
+[[div_ class="color sub"]]
+[[span class="css-variable"]]@@--pale-gray-monochrome@@[[/span]][[span class="css-variable"]]@@(233, 240, 255)@@[[/span]]
+[[/div]]
+[[/div]]
+[[div_ class="color two"]]
+[[div_ class="color sub"]]
+[[span class="css-variable"]]@@--light-gray-monochrome@@[[/span]][[span class="css-variable"]]@@(91, 97, 138)@@[[/span]]
+[[/div]]
+[[/div]]
+[[div_ class="color three"]]
+[[div_ class="color sub"]]
+[[span class="css-variable"]]@@--dark-gray-monochrome@@[[/span]][[span class="css-variable"]]@@(41, 26, 91)@@[[/span]]
+[[/div]]
+[[/div]]
+[[div_ class="color four"]]
+[[div_ class="color sub"]]
+[[span class="css-variable"]]@@--medium-accent@@[[/span]][[span class="css-variable"]]@@(228, 180, 28)@@[[/span]]
+[[/div]]
+[[/div]]
+[[div_ class="color five"]]
+[[div_ class="color sub"]]
+[[span class="css-variable"]]@@--dark-accent@@[[/span]][[span class="css-variable"]]@@(41, 26, 91)@@[[/span]]
+[[/div]]
+[[/div]]
+[[div_ class="color six"]]
+[[div_ class="color sub"]]
+[[span class="css-variable"]]@@--newpage-color@@[[/span]][[span class="css-variable"]]@@(153, 0, 255)@@[[/span]]
+[[/div]]
+[[/div]]
+[[/div]]
+[[/div]]
+
++ このページについて
+
+これは星空をモチーフにしたテーマです。特定の設定には結びついていないため、自由に使用できます。ヘッダー背景はwallowingによる[[[https://scp-wiki-cn.wikidot.com/theme:the-flowing-night-sky|流れる夜空（中国語版）]]]テーマに由来します。
+
+[[[https://scp-wiki-cn.wikidot.com/wanderers:wanderers-station|放浪者ステーション（中国語版）]]]テーマとは異なり、このテーマの設計思想は宇宙空間に身を置くというより、地上から星空を見上げる感覚に近いものです。そのため、深色の背景は採用していません。
+
+このテーマを使用するには、作品の冒頭に次の構文を追加してください。
+
+> @@[[include theme:dream-of-the-stars-jp]]@@
+
+次のコードを使うとサイドバーが展開され、Black Highlighter系の暗色サイドバーに近い外観になります。
+
+> @@[[include theme:dream-of-the-stars-jp unfold-sidebar=--]]@@
+
++ サンプル
+
+5つのハイフン「@@-----@@」で水平線を作成できます。引用ブロックなど別の要素の中に置かれていない場合、この線はページを横切って左右いっぱいに伸びます。ページを複数の区画に分ける線が水平線です。
+
+-----
+
+「@@-----@@」をclassが“fancyhr”のdiv要素内に置くと、次のように別形式の水平線を表示できます。
+> @@[[div_ class="fancyhr"]]@@
+> @@-----@@
+> @@[[/div]]@@
+
+表示結果は次のとおりです。
+
+[[div_ class="fancyhr"]]
+-----
+[[/div]]
+
+[[div_ class="fancyborder"]]
+任意の要素に“fancyborder” classを追加すると、特殊な枠線を表示できます。たとえば、このブロックのコードは次のとおりです。
+[[div_ class="code"]]
+@@[[div_ class="fancyborder"]]@@
+@@テキスト内容@@
+@@[[/div]]@@
+[[/div]]
+[[/div]]
+
+見出しは、行頭に1個から6個のプラス記号「+」を入力すると作成できます。
+
+[[collapsible show="+ 見出し" hide="- 見出し"]]
++ レベル1見出し
+
+++ レベル2見出し
+
++++ レベル3見出し
+
+++++ レベル4見出し
+
++++++ レベル5見出し
+
+++++++ レベル6見出し
+[[/collapsible]]
+
+@@ @@
+
+[[tabview]]
+[[tab タブ]]
+これはタブビューです。
+
+[[/tab]]
+[[tab タブ]]
+ほら、こちらにはさらに文字があります。
+
+なんと精巧なことでしょう。
+[[/tab]]
+[[tab 長いタブ]]
+これは長いタブです。たくさんの文字が入っています。
+
+これは長いタブです。たくさんの文字が入っています。
+
+これは長いタブです。たくさんの文字が入っています。
+
+これは長いタブです。たくさんの文字が入っています。
+
+これは長いタブです。たくさんの文字が入っています。
+
+これは長いタブです。たくさんの文字が入っています。
+
+これは長いタブです。たくさんの文字が入っています。
+
+これは長いタブです。たくさんの文字が入っています。
+
+これは長いタブです。たくさんの文字が入っています。
+
+これは長いタブです。たくさんの文字が入っています。
+
+これは長いタブです。たくさんの文字が入っています。
+
+これは長いタブです。たくさんの文字が入っています。
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[/tabview]]
+
+> これは引用ブロックです。行頭に「> 」を追加すると作成できます。
+>
+> さらに文字
+> -----
+> 水平線
+>
+>> ネストされた引用ブロック[[footnote]] 脚注です [[/footnote]]
+
+||~ これは ||~ 表です ||
+||もうとっくに || 作り方は ||
+||||分かっているはずです ||
+
+
+[[=]]
+本文フォントはTexturina / ブラウザ既定フォントです。
+[[span style="font-family: var(--header-font);"]]ヘッダーフォントはYuji Syuku / Yu Mincho / Big Caslonです。[[/span]]
+[[span style="font-family: var(--title-font);"]]タイトルフォントはEB Garamond / Yuji Syuku / Yu Minchoです。[[/span]]
+[[span style="font-family: var(--mono-font);"]]等幅フォントはRecursive / BIZ UDP明朝およびNoto Serif JPです。[[/span]]
+[[/=]]
+
+-----
+
+[[collapsible show="+ コードを表示" hide="- コードを隠す" hideLocation="both"]]
+[[code type="css"]]
+/* ===== dream-of-the-stars-jp：テーマ独自の CSS（Dustjacket 基盤は @import で読み込みます） ===== */
+/* ============================================================
+   Sister Luvere's Dream of the Stars Theme (overrides)
+   By Mercuresphere — the theme this page ports.
+   Applied on top of the base above.
+   ============================================================ */
+
+/* Sister Luvere's Dream of the Stars Theme */
+/* 2022 Wikidot Theme */
+/* By Mercuresphere, Based off The Flowing Night Sky Theme by wallowing and Dustjacket Theme by Woedenaz and Croquembouche */
+/* Header Image: https://pixabay.com/illustrations/banner-header-sky-night-stars-1557834/ */
+/* CC BY-SA 3.0 */
+
+
+/* ----BEGIN---- */
+
+:root {
+
+    /* S-CSS-P Integration */
+    /* If you're making a new CSS theme, please include the following three variables at minimum. */
+    --theme-base: "nuscp";
+    /* must be either "nuscp" or "sigma9" */
+    --theme-id: "dream-of-the-stars";
+    /* set this to the URL of your theme's page - eg for "component:ar-theme", set it to "ar-theme" */
+    --theme-name: "Sister Luvere's Dream of the Stars Theme";
+    /* set this to your theme's full name */
+
+    /* ===STANDARD THEME COLORS=== */
+    --white-monochrome: 252, 252, 252;
+    --pale-gray-monochrome: 233, 240, 255;
+    --light-pale-gray-monochrome: 251, 242, 255;
+    --very-light-gray-monochrome: 220, 222, 230;
+    --light-gray-monochrome: 91, 97, 138;
+    --gray-monochrome: 43, 14, 116;
+    --dark-gray-monochrome: 41, 26, 91;
+    --alt-accent: 153, 0, 255;
+    --light-alt-accent: 117,89,136;
+
+    --gradient-header: url("https://evernight-aquarium.wdfiles.com/local--files/tale%3Aextracts/flowing.jpg");
+    --header-background-image-size: auto var(--header-height-on-desktop);
+
+    --link-color: 48, 0, 171;
+    --visited-link-color: 48, 0, 171;
+    --hover-link-color: 205, 0, 189;
+}
+
+:root:lang(ja) {
+    --header-title: "放浪者の図書館";
+    --body-font: Texturina, Optima, Segoe, Segoe UI, Candara, Calibri, Arial, 'Noto Sans JP', sans-serif;
+    --header-font: 'Yuji Syuku', 'Yu Mincho', 'Hiragino Mincho ProN', 'Noto Serif JP', Big Caslon, Book Antiqua, Palatino Linotype, Georgia, serif;
+    --title-font: "EB Garamond", 'Yuji Syuku', 'Yu Mincho', 'Hiragino Mincho ProN', 'Noto Serif JP', Big Caslon, Book Antiqua, Palatino Linotype, Georgia, serif;
+    --UI-font: "EB Garamond", Big Caslon, Book Antiqua, Palatino Linotype, 'Noto Serif JP', Georgia, serif;
+    --mono-font: Recursive, Consolas, monaco, 'BIZ UDPMincho', 'Noto Serif JP', monospace;
+}
+
+/* ===yui-tabs=== */
+
+#main-content {
+    --tabs-bg: var(--swatch-secondary-color);
+    --tabs-txt: var(--swatch-text-tertiary-color);
+    --tabs-hover-bg: var(--gray-monochrome);
+    --tabs-hover-txt: var(--swatch-text-secondary-color);
+    --tabs-selected-bg: var(--dark-gray-monochrome);
+    --tabs-selected-txt: var(--swatch-text-secondary-color);
+    --tabs-selected-outline: var(--dark-gray-monochrome);
+    --tabs-bottom-border-color: var(--gray-monochrome);
+    --tabs-content-bg-color: var(--swatch-secondary-color), 0.25;
+    --tabs-content-border-color: var(--swatch-tertiary-color);
+}
+
+.yui-navset .yui-nav .selected {
+    background-color: rgb(var(--dark-gray-monochrome));
+}
+
+#header h1, #header h1 a, #header h1 a::before, #header h1 a::after {
+    top: -0.1rem;
+}
+
+/* ===compatibility patch=== */
+div.earthworm div.inner,
+div.earthworm div.inner > div {
+    display: contents;
+}
+
+/* ===hr and border=== */
+hr:not(.fancyhr hr), #page-title::before, .meta-title::before, #page-title::after, .meta-title::after {
+    filter: hue-rotate(207deg) saturate(109.23%) brightness(36%);
+}
+
+.fancyhr hr {
+    border-image-source: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A3438721-307-flvk/wl_hr.png");
+}
+
+.fancyborder {
+    box-sizing: border-box;
+    padding: 2vw;
+    border: 2vw solid rgba(0, 0, 0, 0.5);
+    border-image: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A3438721-307-yhhi/wl_border.png") 600 round;
+    border-image-width: 6;
+}
+
+blockquote, .blockquote, div.blockquote, [class*="blockquote"] {
+    border: 0.1875rem outset rgb(131, 124, 156);
+}
+
+/* ===link hover=== */
+div.page-watch-options a, div.page-watch-options a:visited {
+    --hover-link-color: var(--hover-link-color);
+}
+
+#footer {
+    --footer-link-hover-color: var(--dark-gray-monochrome);
+}
+
+#license-area {
+    --license-link-hover-color: var(--dark-gray-monochrome);
+}
+
+div#extra-div-1 {
+    background-position: center;
+}
+
+#breadcrumbs a:before, #breadcrumbs a:visited:before, .pseudocrumbs a:before, .pseudocrumbs a:visited:before {
+    box-shadow: .0625rem .0625rem 0 0 rgba(var(--dark-gray-monochrome),1),.25rem .0625rem 0 0 rgba(255,255,255,.85),.25rem .0625rem 0 0 rgba(var(--dark-gray-monochrome),1),.3125rem .0625rem 0 0 rgba(var(--dark-gray-monochrome),1);
+}
+
+#breadcrumbs a:active:before, #breadcrumbs a:hover:before, .pseudocrumbs a:active:before, .pseudocrumbs a:hover:before {
+    background-color: rgb(var(--gray-monochrome));
+    box-shadow: 0 0 0 .25rem rgba(var(--gray-monochrome),1),0 0 0 0 rgba(var(--background-gradient-color),0),0 0 0 0 rgba(var(--swatch-background),0),0 0 0 0 rgba(var(--gray-monochrome),0)
+}
+
+#breadcrumbs a:focus-within:before,.pseudocrumbs a:focus-within:before {
+    background-color: rgb(var(--gray-monochrome));
+    box-shadow: 0 0 0 .25rem rgba(var(--gray-monochrome),1),0 0 0 0 rgba(var(--background-gradient-color),0),0 0 0 0 rgba(var(--swatch-background),0),0 0 0 0 rgba(var(--gray-monochrome),0)
+}
+
+#breadcrumbs,.pseudocrumbs {
+    --swatch-text-secondary-color: var(--bright-accent);
+}
+
+#page-content .rate-box-with-credit-button > .creditButton > a:after { /* SCP-JP credit module: anchor is a direct child of .creditButton, not wrapped in <p> */
+    background-color: rgba(var(--light-alt-accent), 0.75);
+}
+
+/* ===mobile header font size=== */
+@media only screen and (max-width: 375px) {
+    #header h1 a {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    div[id*=page-options-bottom] > a:after {
+        left: 0.125rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    div[id*=page-options-bottom] > a:after {
+        left: 0.25rem;
+    }
+}
+
+@media (max-width: 375px) {
+    #odialog-container div.owindow {
+        width: 100%!important;
+    }
+}
+
+@media only screen and (max-width: 56.25rem) {
+    #search-top-box form[id="search-top-box-form"]:not(:focus-within) input[type="text"] {
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
+
+/* ===ユーザー情報欄と検索欄を既定で折り畳む=== */
+
+@media only screen and (min-width: 56.25rem) {
+    #search-top-box {
+        top: 2em;
+        right: 3%
+    }
+
+    #login-status {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        top: 2em;
+        right: calc(3% + var(--account-height) + .25em);
+        color: transparent;
+        pointer-events: none;
+        transition: color .2s cubic-bezier(.4,0,.2,1);
+        user-select: none
+    }
+
+    #login-status:active, #login-status:hover {
+        -webkit-user-select: initial;
+        -moz-user-select: initial;
+        -ms-user-select: initial;
+        color: rgb(var(--login-line-divider-color));
+        pointer-events: all;
+        user-select: auto
+    }
+
+    #login-status:focus-within {
+        -webkit-user-select: initial;
+        -moz-user-select: initial;
+        -ms-user-select: initial;
+        color: rgb(var(--login-line-divider-color));
+        pointer-events: all;
+        user-select: auto
+    }
+
+    #login-status:active #account-options, #login-status:hover #account-options {
+        pointer-events: all
+    }
+
+    #login-status:focus-within #account-options {
+        pointer-events: all
+    }
+
+    #login-status > :not(#account-topbutton):not([href*="account/messages"]) {
+        --clip-path: polygon(100% 0,100% 0,100% 100%,100% 100%);
+        -webkit-clip-path: var(--clip-path);
+        clip-path: var(--clip-path);
+        opacity: 0;
+        transition: box-shadow .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1),opacity .2s cubic-bezier(.4,0,.2,1),-webkit-text-decoration .2s cubic-bezier(.4,0,.2,1),-webkit-clip-path .2s cubic-bezier(.4,0,.2,1);
+        transition: box-shadow .2s cubic-bezier(.4,0,.2,1),text-decoration .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1),clip-path .2s cubic-bezier(.4,0,.2,1),opacity .2s cubic-bezier(.4,0,.2,1);
+        transition: box-shadow .2s cubic-bezier(.4,0,.2,1),text-decoration .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1),clip-path .2s cubic-bezier(.4,0,.2,1),opacity .2s cubic-bezier(.4,0,.2,1),-webkit-text-decoration .2s cubic-bezier(.4,0,.2,1),-webkit-clip-path .2s cubic-bezier(.4,0,.2,1)
+    }
+
+    #login-status:active > :not(#account-topbutton):not([href*="account/messages"]), #login-status:hover > :not(#account-topbutton):not([href*="account/messages"]) {
+        --clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+        -webkit-clip-path: var(--clip-path);
+        clip-path: var(--clip-path);
+        opacity: 1
+    }
+
+    #login-status:focus-within > :not(#account-topbutton):not([href*="account/messages"]) {
+        --clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+        -webkit-clip-path: var(--clip-path);
+        clip-path: var(--clip-path);
+        opacity: 1
+    }
+
+    #login-status #account-topbutton {
+        margin-left: 0;
+        background-color: initial;
+        pointer-events: all;
+        transition: background-color .15s cubic-bezier(.4,0,.2,1),-webkit-clip-path .15s cubic-bezier(.4,0,.2,1);
+        transition: clip-path .15s cubic-bezier(.4,0,.2,1),background-color .15s cubic-bezier(.4,0,.2,1);
+        transition: clip-path .15s cubic-bezier(.4,0,.2,1),background-color .15s cubic-bezier(.4,0,.2,1),-webkit-clip-path .15s cubic-bezier(.4,0,.2,1)
+    }
+
+    #login-status:hover #account-topbutton {
+        background-color: rgb(var(--login-arrow-color))
+    }
+
+    #login-status:before {
+        -webkit-mask-image: var(--user-account-mask);
+        -webkit-mask-size: calc(var(--account-height) - .5em);
+        -webkit-mask-position: center right;
+        -webkit-mask-repeat: no-repeat;
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(var(--login-mobile-icon-color),0);
+        background-color: rgba(var(--login-mobile-icon-color),1);
+        content: "";
+        cursor: pointer;
+        mask-image: var(--user-account-mask);
+        mask-position: center right;
+        mask-repeat: no-repeat;
+        mask-size: calc(var(--account-height) - .5em);
+        pointer-events: all;
+        transition: background-color .15s cubic-bezier(.4,0,.2,1)
+    }
+
+    #login-status:hover:before {
+        background-color: rgba(var(--login-mobile-icon-hover-color),1)
+    }
+
+    #login-status:active:after, #login-status:active:before, #login-status:hover:after, #login-status:hover:before {
+        background-color: rgba(var(--login-mobile-icon-hover-bg-color),0);
+        cursor: auto;
+        pointer-events: none
+    }
+
+    #login-status:focus-within:after, #login-status:focus-within:before {
+        background-color: rgba(var(--login-mobile-icon-hover-bg-color),0);
+        cursor: auto;
+        pointer-events: none
+    }
+
+    #login-status #account-topbutton {
+        --clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+        -webkit-clip-path: var(--clip-path);
+        background-color: rgba(var(--login-arrow-color),0);
+        clip-path: var(--clip-path)
+    }
+
+    #login-status:active #account-topbutton, #login-status:hover #account-topbutton {
+        --clip-path: polygon(30% 35%,70% 35%,50% 60%,50% 60%);
+        -webkit-clip-path: var(--clip-path);
+        background-color: rgb(var(--login-arrow-color));
+        clip-path: var(--clip-path)
+    }
+
+    #login-status:focus-within #account-topbutton {
+        --clip-path: polygon(30% 35%,70% 35%,50% 60%,50% 60%);
+        -webkit-clip-path: var(--clip-path);
+        background-color: rgb(var(--login-arrow-color));
+        clip-path: var(--clip-path)
+    }
+
+    #login-status #account-options {
+        margin: 0
+    }
+
+    #login-status a[href*="account/messages"] {
+        color: rgb(var(--login-myaccount-color));
+        pointer-events: all
+    }
+}
+
+@media only screen and (min-width: 980px) {
+    #search-top-box {
+        right: calc(3% + (-100vw + var(--header-width-on-desktop)) / 2);
+    }
+
+    #login-status {
+        right: calc(3% + var(--search-height) + .25em + (-100vw + var(--header-width-on-desktop)) / 2);
+    }
+}
+/* ----END---- */
+[[/code]]
+
+[[/collapsible]]
+
+[[/iftags]]
+
+[[module css]]
+@import url("https://fastly.jsdelivr.net/gh/Crimone/crimson-anemone@2.3.16/dustjacket.css");
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Adream-of-the-stars-jp/1")
+[[/module]]

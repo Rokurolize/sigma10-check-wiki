@@ -1,0 +1,708 @@
+[[include :scp-jp:theme:penumbra]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aad-abyssum-penumbra-jp/1
+]]
+
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** Ad Abyssum（Penumbra）
+**翻訳責任者:** AI
+**翻訳年:** 2026
+**原題:** Ad Abyssum Theme (Penumbra)
+**著作権者:** Yossipossi
+**作成年:** 2023
+**初訳時参照リビジョン:** 25
+**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:ad-abyssum-penumbra ソース]
+[[include :scp-jp:credit:end-preview]]
+
+Penumbraを基盤にしたAd Abyssum向けテーマです。
+
+**使い方:** @@[[include theme:ad-abyssum-penumbra-jp]]@@
+
+**基盤:** Penumbra（インライン）
+
+[[module CSS]]
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+/* -=- FONTS / PENUMBRA -=- */
+
+
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Cut&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finlandica&display=swap');
+
+:root {
+    --header-title: "TACTICAL THEOLOGY";
+    --header-subtitle: "INVENIENT NOVUM NUMEN";
+    
+    --accentColor: #F0A400;
+    --accentColorLite: #FFBA24;
+    --hue: 30deg;
+    
+    --header-font: "Finlandica", serif;
+    --body-font: "verdana", sans-serif;
+    --textColor: #FDFDFD;
+    --textColorAlt: #FFFFFF;
+
+    /* Defining the subheaders for different divisions. */
+    --abrahamics: "ABRAHAMICS DIVISION";
+    --east_asian: "EAST ASIAN DIVISION";
+    --vedic_indus: "VEDIC-INDUS DIVISION";
+    --shamanism_animalism: "SHAMANISM & ANIMISM DIVISION"; /* TYPO; kept for backwards-comparability. */
+    --shamanism_animism: "SHAMANISM & ANIMISM DIVISION";
+    --neopaganism: "NEOPAGANISM DIVISION";
+    --parareligions: "PARARELIGIONS DIVISION";
+    --demonology: "DEMONOLOGY DIVISION";
+}
+
+
+/* -=- WIDE CHANGES -=- */
+
+
+body {
+    background-attachment: fixed;
+    background-color: #20242C;
+    background-image: linear-gradient(180deg, #4A3933 0%, #4A393385 70%, #4A3933 100%), url(https://scp-wiki.wdfiles.com/local--files/theme%3Aad-abyssum/tacttheo_sidebar_small_compressed.png), linear-gradient(to right, #FF8D36, #FF8D36);
+    background-size: cover;
+    font-size: 0.81rem;
+}
+
+/* Selection Color */
+::selection {
+    color: var(--darkerColor);
+}
+
+/* -- Headers -- */
+
+h1, h2, h3 {
+    color: var(--accentColor);
+}
+
+h1 {
+    font-size: 1.95rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.35rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+h5 {
+    font-size: 1.05rem;
+}
+
+h6 {
+    font-size: 0.95rem;
+}
+
+#main-content :is(h1, h2, h3, h4, h5, h6) {
+    filter: drop-shadow(0 0.375rem 0.688rem rgba(0, 0, 0, 0.6));
+    text-align: center;
+}
+
+/* Link Colors */
+a:hover, a.newpage:hover, a:visited:hover, #side-bar a:not(.close-menu):hover {
+    color: var(--darkerColor);
+}
+
+a.newpage {
+    filter: none;
+}
+
+/* Adds an "underline" to links in the page content. */
+#page-content :not(.avatarhover, .btn) > a {
+    border-bottom: thin solid var(--accentColorLite);
+}
+
+
+strong {
+    color: var(--accentColor);
+}
+
+tt {
+    font-size: 110%;
+}
+
+ul {
+    list-style-type: "❖ "
+}
+
+ol li, ul li {
+    margin: .27rem 0 .53rem;
+}
+
+
+/* -=- HEADER -=- */
+
+
+#header {
+    height: 9.688rem;
+}
+
+/* -- Website Title / Subtitle -- */
+
+#header h1 a::before {
+    background: linear-gradient(45deg, #F2DC7A 0%, var(--accentColor) 50%, #F2DC7A 100%);
+    background-clip: text;
+    color: transparent;
+    filter: drop-shadow(0 0.375rem 0.3rem rgba(0,0,0,0.6));
+    font-family: "Nova Cut", "Noto Sans JP", sans-serif;
+    font-size: 120%;
+    font-weight: bold;
+    -webkit-background-clip: text;
+}
+
+#header h2 {
+    margin-top: 0.8rem;
+}
+
+#header h2::before {
+    background: linear-gradient(45deg, #F2DC7A 0%, var(--accentColor) 50%, #F2DC7A 100%);
+    background-clip: text;
+    color: transparent;
+    filter: drop-shadow(0 0.2rem 0.2rem rgba(0, 0, 0, 0.8));
+    font-family: "New Rocker", "Noto Sans JP", sans-serif;
+    font-size: 120%;
+    letter-spacing: 0.313rem;
+    margin-top: 0.375rem;
+    -webkit-background-clip: text;
+}
+
+/* Logo Effect */
+#extra-div-1 {
+    filter: opacity(.33) drop-shadow(0 0.625rem 0.188rem #000000);
+}
+
+/* -- User Information -- */
+
+#my-account {
+    display: none;
+}
+
+/* Increase size and add glow to user profile pic. */
+.printuser img.small {
+    background-color: var(--darkerColor);
+    background-image: none !important;
+    border: 1px solid var(--accentColor);
+    box-shadow: 0 0 2px var(--accentColor);
+    height: 18px;
+    margin-right: 7px;
+    padding: 0 0 0 0;
+    transition-duration: 0.2s;
+    width: 18px;
+}
+
+.printuser img.small:hover {
+  box-shadow: 0 0 5px var(--accentColor);
+  transition-duration: 0.2s;
+}
+
+#login-status {
+    color: transparent; /* Removes the pipe after the account name. */
+    right: initial;
+    text-align: left;
+    top: 1em;
+    width: auto;
+    z-index: 1;
+    margin-left: calc(max(6em - 5vw, 0px));
+}
+
+#login-status > a {
+    background-color: var(--darkerColor);
+    border: 1px solid var(--accentColor);
+    margin-left: -7px;
+}
+
+.printuser {
+    color: var(--textColor);
+}
+
+#account-topbutton::before {
+    background-color: transparent;
+}
+
+#account-options::before {
+    background-color: var(--darkerColor);
+}
+
+#account-options::after {
+    background-color: transparent;
+    mix-blend-mode: initial;
+}
+
+div#account-options {
+    border: 1px solid var(--accentColor);
+    width: 6.5em;
+}
+
+/* -- Search Box -- */
+
+#search-top-box {
+    top: 1.1em !important;
+}
+
+#search-top-box-form input[type="submit"]:focus, #search-top-box-form input[type="submit"]:hover {
+    box-shadow: none;
+    text-shadow: none;
+}
+
+#search-top-box-form input[type="submit"] {
+    border: 1px solid var(--accentColor);
+    color: var(--textColor);
+    font-size: unset;
+}
+
+/* -- Top Bar -- */
+
+#top-bar {
+    top: 9.75rem;
+}
+
+#top-bar div.open-menu a {
+    background-color: var(--darkerColor);
+    border: 1px solid var(--accentColor);
+    border-radius: 0;
+    box-shadow: 0 0 10px var(--darkerColor);
+    filter: drop-shadow(0 0.375rem 0.688rem rgba(0, 0, 0, 0.4));
+    height: 1.15em;
+    line-height: 1.1em;
+    width: 1.15em;
+}
+
+/* Add bottom border for top bar pop-up. */
+#top-bar ul li li:last-child, #top-bar ul li li:last-child:hover {
+    border-bottom: 1px solid var(--accentColorLite);
+}
+
+/* Add top border for top bar pop-up. */
+#top-bar ul li li:first-child, #top-bar ul li li:first-child:hover {
+    border-top: 1px solid var(--accentColorLite);
+}
+
+/* -- Title / Meta-Title -- */
+
+#page-title {
+    display: none;
+}
+
+.meta-title {
+    font-size: 238%;
+    margin: 0;
+    padding: 0;
+}
+
+.meta-title p {
+    border-bottom: none;
+}
+
+/* -- Hovertip / Footnote -- */
+
+.hovertip .f-content{
+    font-size: 0.81rem;
+}
+
+#page-content a.footnoteref {
+    border: 0;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.footnotes-footer {
+    border: 2px solid var(--accentColor);
+    box-shadow: none;
+}
+
+/* Add space between the footnotes. */
+.footnote-footer:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.footnote-footer a {
+    font-weight: bold;
+}
+
+.footnotes-footer .title {
+    color: var(--accentColor);
+    font-size: 1.5em;
+}
+
+
+/* -=- SIDEBAR -=- */
+
+#side-bar {
+    background: #4A3933;
+    border-right: 0.25em solid var(--accentColor);
+    box-shadow: 3px 0 20px black; 
+    padding: 1em 0;
+}
+
+#side-bar .heading {
+    border-bottom-color: var(--textColor);
+    color: var(--textColor);
+    font: bold 125% "Josefin Sans", sans-serif;
+    padding-left: 0;
+}
+
+#side-bar .side-block.media {
+    background-color: #05080B;
+    padding-bottom: 0;
+    border: solid 2px var(--accentColor);
+    box-sizing: border-box;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+#side-bar .side-block.media::before,
+#side-bar .side-block.media::after {
+    display: none;
+}
+
+#side-bar,
+#side-bar .side-block {
+    background-color: #14181D;
+}
+
+
+#side-bar .side-block {
+    border: 0;
+    box-shadow: none;
+}
+
+
+#side-bar .media .menu-item img {
+    display: initial;
+}
+
+#side-bar .side-block.resources {
+    background: #4A3933;
+}
+
+
+/* -=- RATING MODULE -=- */
+
+
+div.page-rate-widget-box {
+    border: none;
+    border-left: 3px solid var(--accentColor);
+    border-right: 3px solid var(--accentColor);
+    box-shadow: none;
+    font-size: 80%;
+    padding: 4px;
+}
+
+
+/* -=- TABBERS -=- */
+
+
+.yui-navset .yui-nav a, .yui-navset .yui-navset-top .yui-nav a {
+    font-family: var(--header-font);
+    font-size: 130%;
+    font-weight: inherit;
+}
+
+.yui-navset .yui-content, .yui-navset .yui-navset-top .yui-content {
+    padding: .53em;
+}
+
+.yui-navset .yui-content {
+    line-height: 1.5;
+}
+
+
+/* -=- SCP IMAGE BLOCKS -=- */
+
+
+.scp-image-block {
+    border: 1px solid var(--accentColorLite);
+    box-shadow: none;
+}
+
+.scp-image-block div.scp-image-caption {
+    border: none;
+    border-top: 1px solid var(--accentColorLite);
+}
+
+
+/* -=- COLLAPSIBLES -=- */
+
+
+#page-content .collapsible-block-folded .collapsible-block-link::before {
+    content: "▼ "
+}
+
+#page-content .collapsible-block-folded .collapsible-block-link::after {
+    content: " ▼"
+}
+
+#page-content .collapsible-block-unfolded .collapsible-block-link::before {
+    content: "▲ "
+}
+
+#page-content .collapsible-block-unfolded .collapsible-block-link::after {
+    content: " ▲"
+}
+
+#page-content .collapsible-block-unfolded-link {
+    box-shadow: none;
+}
+
+#page-content .collapsible-block-link {
+    color: var(--accentColorLite);
+    font-size: 125%;
+}
+
+#page-content .collapsible-block .collapsible-block-link:hover {
+    color: var(--darkerColor);
+}
+
+
+/* -=- CODE BLOCKS -=- */
+
+
+.code {
+    background-color: var(--darkColor);
+}
+
+.code :is(.hl-code, .hl-identifier, .hl-string, .hl-special, .hl-quotes, .hl-brackets) {
+    color: var(--textColor);
+}
+
+.code .hl-var, .code .hl-number {
+    color: #FFE8B7; /* Look I'm running out of colors here. */
+}
+
+.code .hl-reserved {
+    color: var(--accentColor);
+}
+
+
+/* -=- PAGE EDITOR -=- */
+
+
+.wd-editor-toolbar-panel ul li a {
+    opacity: 0.4;
+}
+
+.wd-editor-toolbar-panel ul li a:hover {
+    opacity: 1;
+}
+
+#edit-page-textarea {
+    background-color: var(--darkColor);
+    border: 2px solid var(--accentColor);
+    color: var(--textColor);
+    padding: 3px;
+}
+
+#edit-page-form textarea, #edit-page-form #edit-page-title{
+    background-color: var(--darkColor);
+    border-color: var(--accentColorLite);
+    color: var(--textColor);
+}
+
+#lock-timer {
+    color: var(--accentColor);
+}
+
+#lock-info {
+    border-color: var(--accentColor);
+}
+
+.change-textarea-size a {
+    background-color: var(--darkerColor);
+    border-color: var(--accentColor);
+    color: var(--textColor);
+}
+
+.edit-help-34 {
+    font-size: 11px;
+}
+
+
+/* -=- MISCELLANEOUS -=- */
+
+
+/* General Modal Box */
+.modal {
+    background: #20242C;
+    box-shadow: 0 0 0.188rem rgba(0, 0, 0, 0.3);
+    border: solid 0.25rem var(--accentColor);
+    margin: 1.5rem 0.5rem 0.5rem 0.5rem;
+    padding: 0.938rem 0.938rem 0.938rem 0.938rem;
+    width: auto;
+}
+
+/* Blockquotes */
+blockquote, div.blockquote, #toc {
+    border: solid 2px var(--accentColor);
+    box-shadow: none;
+}
+
+/* -- Preview Message -- */
+
+.preview-message:hover {
+    opacity: 1;
+    transition-duration: 0.5s;
+}
+
+.preview-message {
+    background-color: var(--darkerColor);
+    border: 2px solid var(--darkColor);
+    opacity: 0.6;
+    right: -23em;
+    transition-duration: 0.3s;
+}
+
+/* -- Page Options -- */
+
+#page-options-container {
+    opacity: 0.7;
+    margin-top: 5px;
+    transition-duration: 0.3s;
+}
+
+#page-options-container:hover {
+    opacity: 1;
+    transition-duration: 0.3s;
+}
+
+/* Wikiwalk Footer */
+.footer-wikiwalk-nav {
+    background: var(--darkerColor);
+    border: 2px solid var(--accentColor);
+    margin: 10px auto;
+    padding: 0 10px 0 10px;
+    width: fit-content;
+}
+
+/* -- Adult Content Splash Fixing -- */
+
+ul.modal-wrapper {
+    padding: 0;
+}
+
+li.unfolded {
+    list-style: none;
+}
+
+#page-content div#u-adult-warning a {
+    border-bottom: none;
+}
+
+#page-content div#u-adult-warning a:hover {
+    background-color: transparent;
+}
+
+#u-adult-warning .footer-wikiwalk-nav {
+    border: none;
+}
+
+/* Changes the color of the little line above page tags. */
+.page-tags span {
+    border-top: 1px solid var(--accentColorLite);
+}
+
+/* Makes the +'s and -'s white in the "who rated" tab. */
+#who-rated-page-area > div span {
+    color: var(--textColour) !important;
+}
+
+/* -- Small joke in the table listing Wikidot account details. -- */
+
+.modal-body table tbody tr:last-child td:first-child, .modal-body table tbody tr:first-child td:first-child {
+    font-size: 0;
+}
+
+.modal-body table tbody tr:last-child td:first-child::before {
+    content: "Date of Damnation:";
+    font-size: 0.81rem;
+    font-weight: bold;
+}
+
+.modal-body table tbody tr:first-child td:first-child::before {
+    content: "Date of Creation:";
+    font-weight: bold;
+    font-size: 0.81rem;
+}
+
+/* Make "sub" text white. */
+.edit-page-bottomtable .sub, #page-tags-input ~ .sub, #upload-dfilename ~ .sub, #file-comments ~ .sub {
+    color: var(--textColor);
+}
+
+/* -- Wikidot footer in the corner. -- */
+
+#footer {
+    opacity: 0.4;
+    transition-duration: 0.3s;
+    margin-top: 1.5em;
+}
+
+#footer:hover {
+    opacity: 1;
+    transition-duration: 0.3s;
+}
+
+/* Adds a period to the end of the licensing notice. I won't forget it, Michal. */
+#license-area a::after {
+    content: "."
+}
+
+/* Baruch Shem K'vod */
+#license-area::after {
+    content: "ברוך שם כבוד מלכותו לעולם ועד.";
+}
+
+/* Besiyata Dishmaya! */
+body::before {
+    content: "בס״ד";
+    opacity: 0.2;
+    padding-right: 5px;
+    position: fixed;
+    right: 0;
+    z-index: 9999;
+}
+
+
+/* -=- MOBILE CHANGES -=- */
+
+
+@media (min-width: 768px) {
+    #page-content {
+        font-size: inherit;
+    }
+}
+
+@media (max-width: 460px) {
+    .modalsignature p {
+        font-size: 80%;
+    }
+
+    #header h1 a::before {
+        font-size: 100%;
+    }
+    
+    #header h2::before {
+        font-size: 100%;
+    }
+
+    body::before {
+        font-size: 80%;
+        opacity: 0.1;
+    }
+
+}
+
+[[/module]]
+
+[[/iftags]]

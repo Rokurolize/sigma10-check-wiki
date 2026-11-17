@@ -1,0 +1,566 @@
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aared-jp/1
+]]
+
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** 异常宗教表现部 版式
+**翻訳責任者:** AI
+**翻訳年:** 2026
+**原題:** 异常宗教表现部 版式
+**著作権者:** Dr Hormress
+**作成年:** 2021
+**初訳時参照リビジョン:** 8
+**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:ared 异常宗教表现部 版式]
+[[include :scp-jp:credit:end-preview]]
+
+----
+
+[[include component:image-block name=https://ah-sandbox.wikidot.com/local--files/hormress-s-logos/ARED_2_w.svg|caption=AREDロゴ|width=150px]]
+
+このテーマは、逆ミーム部門設定内の部門「異常宗教表現部」のために[[*user dr-hormress]]が制作した美的テーマです。
+
+~~~~
+
+----
+
+このテーマを使用するには、次のコードを挿入してください。
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:ared]]@@
+[[/div]]
+
+このテーマをダークモードで使用するには、次のコードを挿入してください。
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:ared dark=*]]@@
+[[/div]]
+
+----
+
+> 引用ブロック
+> 
+> ----
+> 水平線
+>> 入れ子の引用ブロック
+
+[[tabview]]
+[[tab 面倒なタブ]]
+内容
+[[/tab]]
+[[tab 別のタブ]]
+[[div class="whitebox"]]
+{{@@[[div class="whitebox"]]@@}}
+[[/div]]
+[[/tab]]
+[[tab 別のタブ]]
+内容
+[[/tab]]
+[[tab 別のタブ]]
+内容
+[[/tab]]
+[[tab 別のタブ]]
+内容
+[[/tab]]
+[[tab 別のタブ]]
+内容
+[[/tab]]
+[[tab 別のタブ]]
+内容
+[[/tab]]
+[!-- [[tab 別のタブ]]
+内容
+[[/tab]] --]
+[[/tabview]]
+
+----
+
+[[code type="css"]]
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@900");
+
+div#container-wrap {
+    background-image: linear-gradient(to bottom, #666 0, #666 96%, #555 100%), linear-gradient(#999, #999), linear-gradient(#666, #666), linear-gradient(#999, #999), linear-gradient(to bottom, #555, transparent);
+    background-repeat: repeat-x;
+    background-size: 100% 139px, 100% 1px, 100% 21px, 100% 1px, 100% 120px;
+    background-position: center top, center 139px, center 140px, center 161px, center 162px;
+}
+
+body {
+    color: #000;
+}
+
+a {
+    color: #999;
+}
+
+a.newpage,
+a:visited {
+    color: #999;
+}
+
+#header {
+    background-image: url("https://ah-sandbox.wikidot.com/local--files/hormress-s-logos/ARED_2_w.svg");
+}
+
+@media (max-width: 479px) {
+#header h1 a {
+    padding: 90px 0 15px;
+}
+}
+
+@media (min-width: 767px) {
+#header {
+    background-size: 100px auto;
+}
+}
+
+#header h1 a span {
+    display: none;
+}
+
+#header h1 a::before {
+    content: "异常宗教表现部";
+    color: #FFF;
+    text-shadow: 0 1px 2px #000;
+    font-family: 'Noto Serif JP', serif;
+}
+
+#header h2 span {
+    color: #FFF;
+    text-shadow: 0 1px 2px #000;
+}
+
+#search-top-box-input {
+    display: none;
+}
+
+#search-top-box input[type=submit],
+#search-top-box input[type=submit]:hover,
+#search-top-box input[type=submit]:focus {
+    background-image: none;
+    background-color: #666;
+}
+
+#top-bar div {
+    width: 100%;
+    text-align: center;
+}
+
+#top-bar div > ul {
+    float: none;
+    width: 100%;
+    display: flex;
+}
+
+#top-bar div > ul > li {
+    flex-grow: 1;
+}
+
+#top-bar div > ul > li:hover a,
+#top-bar div > ul > li.sfhover a {
+    color: #FFF;
+    background-color: #666;
+    border-color: transparent;
+}
+
+#top-bar div > ul > li:hover a:hover,
+#top-bar div > ul > li.sfhover a:hover {
+    background-color: #555;
+}
+
+#top-bar div > ul > li > a {
+    font-weight: bold;
+    border-color: transparent;
+    padding-bottom: 11px;
+    margin-bottom: -1px;
+}
+
+#top-bar div > ul > li:hover > a,
+#top-bar div > ul > li.sfhover > a {
+    font-weight: bold;
+    text-shadow: 0px 1px 1px #000;
+    border-color: #999;
+    z-index: 14;
+}
+
+#top-bar div > ul > li > ul {
+    border: solid 1px #999;
+    z-index: -1;
+}
+
+#top-bar div > ul > li:hover > ul > li > a,
+#top-bar div > ul > li.sfhover > ul > li > a {
+    border-color: #666;
+}
+
+#page-title, .meta-title {
+    border: none;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    text-shadow: 0 1px 2px #000;
+}
+
+h1 {
+    border: none;
+    color: #999;
+    font-weight: bold;
+    text-shadow: 0 1px 2px #000;
+}
+
+.code h1, blockquote h1, div.blockquote h1, .yui-content h1 {
+    color: #FFF;
+}
+
+.whitebox h1 {
+    color: #666;
+}
+
+#header .open-menu a {
+    border-radius: 5px;
+    border: solid 1px #999;
+    color: #999;
+    background-color: #666;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#side-bar .close-menu {
+    transition: opacity ease 1s;
+    -webkit-transition: opacity ease 1s;
+}
+
+#side-bar .side-block {
+    background-color: #666 !important;
+    border: solid 1px #999;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    color: #FFF;
+}
+
+#side-bar .side-block a,
+#side-bar .side-block a.newpage {
+    color: #FFF;
+}
+
+#side-bar .side-block .heading {
+    color: #999;
+    border-color: #999;
+}
+
+#side-bar .side-block:not(.media) {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+@media (max-width: 767px) {
+
+#side-bar {
+    background-color: #666;
+}
+
+#side-bar .close-menu {
+    display: block;
+    opacity: 0;
+}
+
+#side-bar:target {
+    border: none;
+}
+
+#side-bar:target .close-menu {
+    opacity: 1;
+}
+
+}
+
+.page-rate-widget-box, #page-content .creditRate .rate-box-with-credit-button .page-rate-widget-box {
+    background-color: #666;
+    border: solid 1px #999;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px #000;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.page-rate-widget-box .rate-points {
+    color: #FFF;
+    background-color: transparent !important;
+    border-radius: 0;
+    border: none;
+}
+
+.page-rate-widget-box .rateup.btn,
+.page-rate-widget-box .ratedown.btn,
+.page-rate-widget-box .cancel {
+    border: none;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.page-rate-widget-box .rateup.btn a,
+.page-rate-widget-box .ratedown.btn a,
+.page-rate-widget-box .cancel a {
+    border: none;
+    background-color: transparent;
+    border-radius: 0;
+    color: #999;
+}
+
+.page-rate-widget-box .rateup.btn a:hover,
+.page-rate-widget-box .ratedown.btn a:hover,
+.page-rate-widget-box .cancel a:hover {
+    border: none;
+    background-color: transparent;
+    border-radius: 0;
+    color: #FFF;
+}
+
+#page-content .rate-box-with-credit-button {
+    border-radius: 0;
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+#page-content .creditRate {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#page-content .rate-box-with-credit-button .creditButton p a {
+    display: inline-block;
+    margin: 0;
+    margin-left: 5px;
+    padding-top: 3px;
+    padding-bottom: 2px;
+    width: 20px;
+    height: 100%;
+    font-size: 12px;
+    text-align: center;
+    color: #999;
+    background-color: #666;
+    border: solid 1px #999;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px #000;
+    position: static;
+}
+
+#page-content .rate-box-with-credit-button .creditButton p a:hover {
+    color: #FFF;
+}
+
+.scp-image-block {
+    border: none;
+    box-shadow: none;
+}
+
+.scp-image-block .image,
+.scp-image-block .scp-image-caption {
+    border: solid 1px #999;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px #000;
+}
+
+.scp-image-block .scp-image-caption {
+    margin-top: 6px;
+    background-color: #666;
+    color: #FFF;
+}
+
+/* from ad-astra theme */
+.code, div.code {
+    border: solid 1px #999;
+    background-color: #666;
+    font-size: 12px;
+    color: #FFF;
+    filter: drop-shadow(0 1px 2px #000);
+    -webkit-filter: drop-shadow(0 1px 2px #000);
+}
+
+.hl-identifier,
+.hl-code,
+.hl-brackets {
+    color: #FFF;
+}
+
+.hl-var {
+    color: lightgreen;
+}
+
+.hl-special,
+.hl-quotes {
+    color: lightyellow;
+}
+
+.hl-reserved {
+    color: #DDF;
+}
+
+.hl-number,
+.hl-string {
+    color: #FDD;
+}
+
+.yui-navset {
+    background-color: transparent;
+    box-shadow: 0 1px 2px #000;
+}
+
+.yui-navset .yui-nav {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-left: solid 1px #999;
+    border-bottom: solid 1px #999;
+}
+
+.yui-navset .yui-nav > * {
+    flex-grow: 1;
+}
+
+.yui-navset .yui-nav .selected a em,
+.yui-navset .yui-nav a em {
+    display: block;
+    width: auto;
+    padding: 0.25em .75em;
+    top: 0px;
+    margin-bottom: 0px;
+    border: none;
+}
+
+.yui-navset .yui-nav li,
+.yui-navset .yui-nav .selected {
+    margin: 0;
+    padding: 0;
+}
+
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a:focus,
+.yui-navset .yui-nav .selected a:hover,
+.yui-navset .yui-nav .selected a {
+    text-align: center;
+    background-image: none;
+    background-color: #666;
+    border: none;
+    border-right: solid 1px #999;
+    border-top: solid 1px #999;
+    margin-bottom: -1px;
+    padding-bottom: 1px;
+    height: 2em;
+    color: #FFF;
+    text-shadow: 0 1px 2px #000;
+}
+
+.yui-navset .yui-nav a,
+.yui-navset .yui-navset-top .yui-nav a {
+    text-align: center;
+    background-color: #555;
+    background-image: none;
+    border: none;
+    border-right: solid 1px #999;
+    border-top: solid 1px #999;
+    height: 2em;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:focus {
+    background-image: none;
+    background-color: #666;
+}
+
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a:focus,
+.yui-navset .yui-nav .selected a:hover,
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav a,
+.yui-navset .yui-navset-top .yui-nav a {
+    display: block !important;
+    width: auto !important;
+    background-image: none;
+}
+
+.yui-navset .yui-content {
+    border: solid 1px #999;
+    border-top: solid 0px transparent;
+    padding: 12px;
+    color: #FFF;
+    background-color: #666;
+}
+
+.yui-navset .yui-content > div > :nth-child(1) {
+    margin-top: 0;
+}
+
+.yui-navset .yui-content > div > :nth-last-child(1) {
+    margin-bottom: 0;
+}
+
+blockquote, div.blockquote {
+    background-color: #666;
+    border: solid 1px #999;
+    border-radius: 3px;
+    box-shadow: 0 0 3px #555;
+    color: #FFF;
+}
+
+.whitebox {
+    border: solid 1px #999;
+    background-color: #FFF;
+    color: #000;
+    padding: 0 12px;
+    box-shadow: inset 0 1px 2px #000;
+}
+
+hr, .whitebox hr {
+    background-color: #666;
+}
+
+.code hr, blockquote hr, div.blockquote hr, .yui-content hr {
+    background-color: #999;
+}
+
+/* {$dark}/
+body {
+    background-color: #666;
+    color: #FFF;
+}
+
+h1 {
+    color: #FFF;
+}
+
+hr {
+    background-color: #999;
+}
+/{$dark} */
+[[/code]]
+
+----
+
+[[/iftags]]
+
+[[module css]]
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aared-jp/1");
+
+/* {$dark}/
+body {
+    background-color: #666;
+    color: #FFF;
+}
+
+h1 {
+    color: #FFF;
+}
+
+hr {
+    background-color: #999;
+}
+/{$dark} */
+[[/module]]
