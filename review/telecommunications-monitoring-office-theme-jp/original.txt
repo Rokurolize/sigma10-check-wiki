@@ -1,0 +1,63 @@
+[[iftags +theme]]
+
+[[module CSS]]
+@import url("https://nu-scptheme.github.io/Black-Highlighter/stable/styles/normalize.min.css");
+@import url("https://nu-scptheme.github.io/Black-Highlighter/stable/styles/black-highlighter.min.css");
+[[/module]]
+
+[[>]]
+[[module rate]]
+[[/>]]
+
+This is the Telecommunications Monitoring Office Theme by [[*user BattleblockB0ss]].
+
+To use this theme, please put the following at the top of your page:
+
+[[div class="code"]]
+@@[[include :scp-wiki:theme:black-highlighter-theme]]@@
+@@[[include :scp-wiki:theme:telecommunications-monitoring-office-theme]]@@
+[[/div]]
+
+This theme is designed for Telecommunications Monitoring Office articles. It uses the Black Highlighter Theme, so please include that theme as well, as shown above.
+
+[[code type="css"]]
+@supports(display: grid) {
+    :root {
+        /* ===S-CSS-P INTEGRATION=== */
+        /* If you're making a new CSS theme, please include the following three variables at minimum. */
+        --theme-base: "black-highlighter";
+        /* must be either "black-highlighter" or "sigma9" */
+        --theme-id: "telecommunications-monitoring-office-theme";
+        /* set this to the URL of your theme's page - eg for "component:ar-theme", set it to "ar-theme" */
+        --theme-name: "Telecommunications Monitoring Office Theme";
+        /* set this to your theme's full name */
+
+        /* ===HEADER ELEMENTS=== */
+        --logo-image: url("http://scp-wiki.wikidot.com/local--files/theme:telecommunications-monitoring-office-theme/TMO%20Logo%20Battle.png");
+        --header-subtitle: "Telecommunications Monitoring Department";
+
+        /* ===STANDARD THEME COLORS=== */
+        --bright-accent: 183, 18, 52;
+        --medium-accent: 183, 18, 52;
+        --dark-accent: 183, 18, 52;
+
+        /* ===HEADER GRADIENT=== */
+        --header-gradient-color-bottom: 183, 18, 52;
+
+        /* ===PRIMARY GRADIENTS=== */
+        --diagonal-stripes: unset;
+    }
+h3,h6 {
+    color: darkred;
+}
+.blockquote {
+    background: rgb(var(--white-monochrome)) !important;
+    border: rgb(183, 18, 52) solid !important;
+}
+[[/code]]
+
+[[/iftags]]
+
+[[module CSS]]
+@import url(https://scp-wiki.wikidot.com/theme:telecommunications-monitoring-office-theme/code/1);
+[[/module]]

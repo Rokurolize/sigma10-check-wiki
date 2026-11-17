@@ -1,0 +1,393 @@
+[[module css]]
+.hl-identifier{
+     color: white;
+}
+.hl-code{
+     color: white;
+}
+.hl-brackets{
+     color: white;
+}
+[[/module]]
+[[iftags +theme]]
+[[module css]]
+@import url("https://nu-scptheme.github.io/Black-Highlighter/css/min/normalize.min.css");
+@import url("https://nu-scptheme.github.io/Black-Highlighter/css/min/black-highlighter.min.css");
+[[/module]]
+
+[[include :scp-wiki:component:interwiki-style
+| priority=1
+| theme=https://nu-scptheme.github.io/Black-Highlighter/css/min/normalize.min.css
+]]
+
+[[include :scp-wiki:component:interwiki-style
+| priority=2
+| theme=https://nu-scptheme.github.io/Black-Highlighter/css/min/black-highlighter.min.css
+]]
+
+[[>]]
+[[module rate]]
+[[/>]]
+[[include :scp-wiki:component:author-label-source start=--
+|name=Fish^12]]
+It's my first theme! And this here is the [http://scp-wiki.wikidot.com/hotfish| Author Page]!
+[[include :scp-wiki:component:author-label-source end=--]]
+
+----
+[[=]]
+++ Dive deep, deep diver.
+[[/=]]
+[[div class="blockquote"]]
+@@ @@ @@ @@ [[size 200%]]tha·las·so·pho·bi·a.[[/size]]
+
+@@ @@ @@ @@ /θˌalɐsəfˈə͡ʊbi͡ə/
+
+//noun//
+
+@@ @@ the irrational fear of the ocean or deep bodies of water.
+[[/div]]
+----
+[[=]]
+The purpose of this theme is for the Fish Council's Deep Sea Site-72, a collaborative project about an ocean based Foundation facility in the mid-1900s, dedicated to research and containment, ten thousand meters below the surface. Think bathyscaphes, acoustic sonar technology, and copper diving suits you'd see out of //Bioshock//.
+
+Although it's not limited to just that. If you want anything to do with deep sea analog horror, or just underwater vibes in general, you've come to the right place. Slap this theme on it and you're good to go.
+[[/=]]
+----
+[[=]]
++ It's getting so cold and dark. 
+[[/=]]
+
+[[include :scp-wiki:component:theme-squares -=-
+| color1-name=Bronze
+| color1-variable=--bronze
+| color1-info=#BA7F00
+| color1-has-light-text=0
+| color2-name=Sky Blue
+| color2-variable=--sky-blue
+| color2-info=#00AABD
+| color2-has-light-text=0
+| subcolor1-name=Light Bronze
+| subcolor1-variable=--light-bronze
+| subcolor1-info=#E8BA56
+| subcolor1-has-light-text=0
+| subcolor2-name=Dark Bronze
+| subcolor2-variable=--dark-bronze
+| subcolor2-info=#6E4B00
+| subcolor2-has-light-text=1
+| subcolor3-name=Sea Black
+| subcolor3-variable=--sea-black
+| subcolor3-info=#010507
+| subcolor3-has-light-text=1
+| subcolor4-name=Black
+| subcolor4-variable=--black
+| subcolor4-info=#000000
+| subcolor4-has-light-text=1
+| subcolor5-name=Deep Blue
+| subcolor5-variable=--deep-blue
+| subcolor5-info=#0A5180
+| subcolor5-has-light-text=1
+| subcolor6-name=Dark Blue
+| subcolor6-variable=--dark-blue
+| subcolor6-info=#052942
+| subcolor6-has-light-text=1
+]]
+
+-----
+-----
+
+[[div class="scp-image-block block-right" style="width:300px;"]]
+[[image https://scp-wiki.wdfiles.com/local--files/theme%3Athalassophobia/thalassophobiaimage.png]]
+[[div class="scp-image-caption" style="width:width:300px;;"]]
+Tangled icon. Lost. Irretrievable. 
+[[/div]]
+[[/div]]
+
+[[size 200%]]As with all Black Highlighter themes, this theme needs the code for Black Highlighter placed before it. Without it, it breaks. You don't want stuff breaking, do you?[[/size]]
+
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+
+Copy paste this in there to get the theme:
+
+[[div class="code"]]
+@@[[include :scp-wiki:theme:black-highlighter-theme]]@@
+@@[[include :scp-wiki:theme:thalassophobia]]@@
+[[/div]]
+
+This theme comes with [[*user Woedenaz]]'s [[[https://scp-wiki.wikidot.com/component:toggle-sidebar-bhl| BHL Toggle Sidebar]]] and [[[https://scp-wiki.wikidot.com/component:centered-header-bhl| BHL Centered Header]]]. It looks very bad without those things. This theme also extends from his [[[https://scp-wiki.wikidot.com/theme:extra-black-highlighter-theme| Extra Black Highlighter Theme]]].
+
+[[=]]
++ Formatting Examples
+[[/=]]
+
+What's this? A horizontal line! "@@-----@@" You make it with four, technically, but five is nicer.
+
+-----
+
+Titles. But not subtitles. Or header titles. Use the "+" to make 'em.
+
+[[collapsible show="+ Titles" hide="- seltiT"]]
++ 1 meter
+
+++ 10 meter 
+
++++ 100 meter
+
+++++ 1000 meter
+
++++++ 10000 meter
+
+++++++ 100000 meter
+
+[[/collapsible]]
+
+@@ @@
+
+[[tabview]]
+
+
+[[tab tabs :)]]
+How deep can we go?
+[[/tab]]
+[[tab tabs :(]]
+Not that deep, unfortunately.
+[[/tab]]
+[[/tabview]]
+@@ @@
+> Did you know that you can make these without the stupid looking >?
+>
+> Observe this horizontal line.
+> -----
+>
+> Like this! @@[[div class="blockquote"]]@@
+>> What? It goes deeper!
+>>> Deeper! All the way down to the bottom![[footnote]]Surprise! I live here! But you haven't gone down far enough yet.[[/footnote]]
+@@ @@
+||~ Why ||~ would ||
+|| you || use ||
+|||| tables? ||
+
+
+----
+
+[[=]]
+[[span style="font-family: var(--header-font); font-size: 1.2em;"]]The header, body, and title font is Miriam Libre.[[/span]]
+[[span style="font-family: var(--mono-font); font-size: 1.2em;"]]The monospace font is Anonymous Pro.[[/span]]
+[[/=]]
+
+-----
+[[collapsible show="+ Show theme code" hide="- Hide theme code"]]
+[[code type="css"]]
+/*
+   Thalassophobia Theme
+   [2021 Wikidot Theme]
+   by Fish^12
+          Glory to the Homeland.
+*/
+
+@import url('https://fonts.bunny.net/css2?family=Anonymous+Pro&family=Miriam+Libre:wght@700&display=swap');
+
+::-moz-selection {
+    background: #1745a9;
+}
+
+::selection {
+    background: #1745a9;
+}
+
+body {
+    background: linear-gradient(-90deg, #010507, #000000, #001012, #020411);
+    background-size: 150% 1%;
+    -webkit-animation: gradient 15s ease infinite;
+            animation: gradient 15s ease infinite;
+    background-color: #010507;
+}
+
+@-webkit-keyframes gradient {
+    0% {
+    	background-position: 0% 50%;
+    }
+
+    50% {
+    	background-position: 100% 50%;
+    }
+
+    100% {
+    	background-position: 0% 50%;
+    }
+}
+
+@keyframes gradient {
+    0% {
+    	background-position: 0% 50%;
+    }
+
+    50% {
+    	background-position: 100% 50%;
+    }
+
+    100% {
+    	background-position: 0% 50%;
+    }
+}
+
+div#container-wrap {
+    background-image: url('https://scp-wiki.wdfiles.com/local--files/theme%3Athalassophobia/thalassophobiagradient.png');
+}
+
+:root {
+    --theme-base: "black-highlighter";
+    --theme-id: "thalassophobia";
+    --theme-name: "Thalassophobia Theme";
+
+    --logo-image: url("https://scp-wiki.wdfiles.com/local--files/theme%3Athalassophobia/thalassophobiaheader.svg");
+    --header-title: "DEEP SEA SITE-72";
+    --header-subtitle: "Abyssus Custodiens Sub Lumine";
+
+    --body-font: 'Miriam Libre', sans-serif;
+    --header-font: var(--body-font), sans-serif;
+    --title-font: var(--body-font), sans-serif;
+    --mono-font: 'Anonymous Pro', monospace;
+    --UI-font: var(--body-font);
+
+    /* THEME ASSIGNMENTS */
+    --sea-black: 1, 5, 7;
+    --black: 0, 0, 0;
+    --bronze: 186, 127, 0;
+    --dark-bronze: 110, 75, 0;
+    --light-bronze: 232, 186, 86;
+    --sky-blue: 0, 170, 189;
+    --deep-blue: 10, 81, 128;
+    --dark-blue: 5, 41, 66;
+    --neon-blue: 0, 229, 255;
+
+    --dark-gray-monochrome: 12, 13, 14;
+    --black-monochrome: 1, 5, 7;
+    --light-pale-gray-monochrome: 232, 186, 86;
+    --bright-accent: var(--pale-accent);
+
+    --swatch-primary: var(--dark-bronze);
+    --swatch-primary-darker: var(--bronze);
+    --swatch-primary-darkest: var(--bronze);
+    --swatch-background: var(--swatch-menubg-black-color);
+    --swatch-border-color: var(--light-bronze);
+
+    --swatch-text-light: var(--light-pale-gray-monochrome);
+    --swatch-text-general: var(--swatch-text-light);
+
+    --swatch-menubg-color: var(--swatch-menubg-black-color);
+    --swatch-menubg-extra-dark-color: var(--black-monochrome);
+    --swatch-menutxt-general-color: var(--swatch-menutxt-light-color);
+
+    --swatch-secondary-color: var(--swatch-menubg-dark-color);
+    --swatch-tertiary-color: var(--swatch-menubg-medium-dark-color);
+    --swatch-alternate-color: var(--swatch-primary);
+
+    --swatch-text-secondary-color: var(--sea-black);
+    --swatch-text-tertiary-color: var(--light-bronze);
+
+    --swatch-topmenu-bg-color: var(--sea-black);
+
+}
+
+#header {
+    --search-icon-color: var(--light-bronze);
+    --search-icon-hover-color: var(--light-bronze);
+
+    --search-focus-textbox-text-color: var(--light-bronze);
+    --search-textbox-text-color: var(--sky-blue) --login-line-divider-color: var(--light-bronze);
+    --login-username-color: var(--sky-blue);
+    --login-myaccount-color: var(--light-bronze);
+    --login-dropdown-text-color: var(--light-bronze);
+    --login-dropdown-text-hover-color: var(--light-bronze);
+}
+
+#top-bar {
+    --dropdown-bg-color: var(--swatch-menubg-extra-dark-color), 0.9;
+    --mobile-topmenu-sidebar-button-color: var(--sky-blue);
+
+    --topmenu-category-color: var(--light-bronze);
+    --topmenu-category-hover-color: var(--light-bronze);
+    --dropdown-links-color: var(--light-bronze);
+    --dropdown-links-hover-color: var(--light-bronze);
+}
+
+#side-bar,
+#interwiki {
+    --sideblock-heading-border-color: var(--deep-blue);
+    --sideblock-heading-text-color: var(--sky-blue);
+
+    --sidebar-bg-color: var(--sea-black);
+
+    --sidebar-border-color: var(--dark-blue), 0.08;
+    --sidebar-subtest-color: var(--dark-blue);
+
+    --sidebar-links-text: var(--sky-blue);
+    --sidebar-links-hover-bg-color: var(--sky-blue);
+    --sidebar-links-hover-text-color: var(--sea-black);
+}
+
+#search-top-box-input {
+    background-color: rgb(var(--sky-blue));
+}
+
+hr {
+    background-color: rgb(var(--light-bronze));
+}
+
+:root {
+    --link-color: var(--sky-blue);
+    --hover-link-color: var(--sky-blue);
+    --visited-link-color: var(--sky-blue);
+    color: rgb(var(--swatch-text-general));
+}
+
+#main-content {
+    --footnotes-footer-title-text-color: var(--sea-black);
+    --hoverblock-header-txt: var(--sea-black);
+
+    --tabs-hover-bg: var(--bronze);
+    --tabs-selected-bg: var(--dark-gray-monochrome);
+    --tabs-selected-txt: var(--light-bronze);
+    --tabs-selected-outline: var(--dark-bronze);
+}
+
+input[type=checkbox]:checked {
+    outline: 0 solid rgb(var(--bronze));
+    box-shadow: 0 0 0 .125rem rgb(var(--bronze));
+}
+
+input[type=checkbox]:checked:after,
+input[type=checkbox]:checked:before {
+    background-color: rgba(var(--bronze), 1);
+}
+
+.pager .current,
+.pager .current:before {
+    background-color: rgb(var(--bronze));
+}
+
+input[type=radio] {
+    background: rgb(var(--bronze));
+    box-shadow: 0 0 0 .0625rem rgb(var(--bronze));
+}
+
+table.page-history tr:nth-of-type(2) td:not(:nth-of-type(7))::before {
+    background-color: rgb(var(--bronze));
+}
+[[/code]]
+[[/collapsible]]
+[[/iftags]]
+
+[[include :scp-wiki:component:toggle-sidebar-bhl]]
+[[include :scp-wiki:component:centered-header-bhl]]
+
+[[module css]]
+@import url("https://scp-wiki.wdfiles.com/local--code/theme%3Athalassophobia/1")
+[[/module]]
+[[include :scp-wiki:component:interwiki-style
+| priority=3
+| theme=https://scp-wiki.wdfiles.com/local--code/theme%3Athalassophobia/1
+]]

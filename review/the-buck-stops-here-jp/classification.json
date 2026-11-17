@@ -1,0 +1,231 @@
+{
+ "tool": "classify_hunks.py",
+ "classifier_version": "0.1.0",
+ "signature_table_version": "2026-11-17.1",
+ "theme": {
+  "dir": "the-buck-stops-here-jp",
+  "cand_fullname": "theme:the-buck-stops-here-jp",
+  "orig_fullname": "theme:the-buck-stops-here",
+  "wiki": "scpko",
+  "revision": "29",
+  "kind": "K5b-1",
+  "verdict": "PASS",
+  "original_file": "review/the-buck-stops-here-jp/original.txt",
+  "candidate_file": "review/the-buck-stops-here-jp/candidate.txt",
+  "original_sha256": "08cdb161bd9eafcac568635f7d7cae677543eed262b2d7fb28eeb2e08b35383a",
+  "candidate_sha256": "a37e04f21ad9c4597d8f1b20655d8bd8e15e8873695e8cc2f276dd326377c171",
+  "original_lines": 6,
+  "candidate_lines": 55
+ },
+ "topology": {
+  "original_components": [],
+  "candidate_components": [],
+  "moves": [],
+  "external_own_delivery": false
+ },
+ "blocks": [
+  {
+   "id": "B1",
+   "orig_range": [
+    0,
+    1
+   ],
+   "cand_range": [
+    0,
+    1
+   ],
+   "orig_lines": "1-1",
+   "cand_lines": "1-1",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "COMPONENT-SWAP",
+    "EXHIBIT-RESTRUCTURE",
+    "INCLUDE-REPOINT"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "INCLUDE-REPOINT": "A",
+    "COMPONENT-SWAP": "B",
+    "EXHIBIT-RESTRUCTURE": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "INCLUDE-REPOINT": {
+     "orig": [
+      [
+       0,
+       1
+      ]
+     ],
+     "cand": [
+      [
+       0,
+       1
+      ]
+     ]
+    },
+    "COMPONENT-SWAP": {
+     "orig": [
+      [
+       0,
+       1
+      ]
+     ],
+     "cand": [
+      [
+       0,
+       1
+      ]
+     ]
+    },
+    "EXHIBIT-RESTRUCTURE": {}
+   },
+   "notes": [
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[include :scpko:component:the-buck-stops-here-base-1",
+   "first_added": "[[include :scp-jp:component:the-buck-stops-here-base-1-jp"
+  },
+  {
+   "id": "B2",
+   "orig_range": [
+    4,
+    5
+   ],
+   "cand_range": [
+    4,
+    5
+   ],
+   "orig_lines": "5-5",
+   "cand_lines": "5-5",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "|n={$n}|n=01|sa={$sa}|sa=기지",
+   "first_added": "|n={$n}|n=01|sa={$sa}|sa=基地"
+  },
+  {
+   "id": "B3",
+   "orig_range": [
+    6,
+    6
+   ],
+   "cand_range": [
+    6,
+    55
+   ],
+   "orig_lines": "at 7",
+   "cand_lines": "7-55",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "CREDIT-PREVIEW",
+    "DRAFT-HOST",
+    "IFTAGS",
+    "TASL-FIELDS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "CREDIT-PREVIEW",
+   "primary_section": 1,
+   "label_prec": {
+    "CREDIT-PREVIEW": "A",
+    "TASL-FIELDS": "A",
+    "IFTAGS": "A",
+    "DRAFT-HOST": "A",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "CREDIT-PREVIEW": {
+     "cand": [
+      [
+       13,
+       14
+      ],
+      [
+       22,
+       23
+      ]
+     ]
+    },
+    "TASL-FIELDS": {
+     "cand": [
+      [
+       14,
+       22
+      ]
+     ]
+    },
+    "IFTAGS": {
+     "orig": [],
+     "cand": [
+      [
+       11,
+       12
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       9,
+       10
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "class (iii) draft-stage form",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [
+    "BASE-DELIVERY/CROSS-IMPORT? component:the-buck-stops-here-base-1-jp (include graph needed to decide base vs cross)"
+   ],
+   "first_removed": "",
+   "first_added": ""
+  }
+ ],
+ "derived_presence": {},
+ "summary": {
+  "blocks": 3,
+  "specific": 2,
+  "heuristic": 0,
+  "residue": 1,
+  "skipped": 0,
+  "reindent_blocks": 0,
+  "label_counts": {
+   "COMPONENT-SWAP": 1,
+   "EXHIBIT-RESTRUCTURE": 1,
+   "INCLUDE-REPOINT": 1,
+   "CREDIT-PREVIEW": 1,
+   "DRAFT-HOST": 1,
+   "IFTAGS": 1,
+   "TASL-FIELDS": 1,
+   "TRANS-UNANCHORED": 1
+  }
+ },
+ "residue": [
+  "B2"
+ ],
+ "skeleton": {
+  "sha256": "33883f86a2ae31858503bd8019e5a3c8be2afba3ba00ddbaa7251af5c98fcb9c",
+  "status": "written (new)"
+ }
+}

@@ -1,0 +1,801 @@
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** 어떤 길잡이 CSS 테마
+**翻訳責任者:** AI
+**翻訳年:** 2026
+**原題:** 어떤 길잡이 CSS 테마
+**著作権者:** CN 支部の作者
+**作成年:** 2023
+**初訳時参照リビジョン:** 17
+**元記事リンク:** [*https://scpko.wikidot.com/theme%3Asome-guider 어떤 길잡이 CSS 테마]
+[[include :scp-jp:credit:end-preview]]
+
++ とある導き手テーマ
+
+[[>]]
+**評価：**
+[[/>]]
+
+[[>]]
+**評価モジュールとクレジットモジュール：**
+[[/>]]
+**タイトル：**とある導き手CSSテーマ
+**翻訳者：**[[*user kkaacc]]
+**作者：**c_bonefish、またあなたですか？
+
+とある導き手テーマは、[[*user c_bonefish]]が輝暮の導き手GoIフォーマット、またはそれに近い作品のために制作したテーマです。
+
+このテーマを適用するには、作品の冒頭に次の構文を追加してください：
+> @@[[include :scp-jp:theme:some-guider-jp]]@@
+@@@@
+-----
++ ページ要素
+@@@@
+[[include component:image-block name=https://scpko.wikidot.com/local--files/theme%3Asome-guider/logo1.png|caption=画像ブロック|width=200px]]
+
++ レベル1見出し
+++ レベル2見出し
++++ レベル3見出し
+++++ レベル4見出し
++++++ レベル5見出し
+++++++ レベル6見出し
+@@@@
+@@@@
+@@@@
+[[tabview]] [[tab tab1]]
+[[=]]
+ㅁㄴㅇㄹ
+
+> + Link
+> [# 未訪問のリンク] | [[[theme:some-guider|訪問済みのリンク]]]
+> -----
+>> テキスト[[footnote]]実に賢い[[/footnote]]
+[[/=]]
+[[/tab]] [[tab tab2]]
+[[/tab]] [[/tabview]]
+@@@@
+-----
++ CSSテーマコード
+
+@@@@
+
+----
+
++ ソースコード
+
+[[collapsible show="ソースコードを表示" hide="ソースコードを閉じる"]]
+[[code type="css"]]
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+/* ===== some-guider ===== */
+/*
+    Some Guider CSS Theme
+    [2023 Wikidot Theme]
+
+    Created by c_bonefish
+    Base Code by Denevola
+    Logo Image: https://pixabay.com/vectors/eyes-brown-macro-close-up-organ-41076/
+
+    CC BY-SA 3.0
+*/
+
+
+
+:root {
+   --color-1: #181824;
+   --color-2: #E4E4E9;
+
+   --color-3: #484856;
+   --color-4: #232333;
+
+   --color-5: #D8D8E6;
+   --color-6: #B8ACC4;
+
+   --color-7: #33335B;
+   --color-8: #48487F; 
+
+   --color-9: #0C0C11;
+}
+
+/* Header */
+div#container-wrap {
+    background: url('https://scpko.wikidot.com/local--files/theme%3Asome-guider/background.png') center top repeat-x;
+    background-size: 150px;
+}
+
+#header {
+    height: 200px;
+    z-index: 2;
+    display: block;
+    background: none !important;
+}
+
+#header-extra-div-1 {
+    z-index: 3;
+    display: block;
+    position: absolute;
+    width: 500px;
+    height: 100%;
+    top: 23px;
+    left: -110px;
+    background-repeat: no-repeat;
+    background-size: 400px auto;
+    background-position: left top;
+    background-image: url('https://scpko.wikidot.com/local--files/theme%3Asome-guider/logo1.png');
+    animation-name: eye-1;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+#header-extra-div-2 {
+    z-index: 4;
+    display: block;
+    position: absolute;
+    width: 500px;
+    height: 100%;
+    top: 23px;
+    left: -110px;
+    background-repeat: no-repeat;
+    background-size: 400px auto;
+    background-position: left top;
+    background-image: url('https://scpko.wikidot.com/local--files/theme%3Asome-guider/logo2.png');
+    transform-origin: 0 0 0;
+    transform: scale(1.0, 0);
+    animation-name: eye-2;
+    animation-duration:  5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+#header h1 a span,
+#header h2 span {
+    display: none;
+}
+
+#header h1 a {
+    position: absolute;
+    font-size: 60px;
+    text-shadow: 3px 0 var(--color-4), -3px 0 var(--color-4), 0 3px var(--color-4), 0 -3px var(--color-4), 3px 3px var(--color-4), -3px 3px var(--color-4), 3px -3px var(--color-4), -3px -3px var(--color-4);
+    left: 280px;
+    top: 25px;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+
+#header h1 a::before {
+    content: "조요의 인도자";
+    font-family: 'YoonDokrip', sans-serif;
+    font-weight: normal;
+    letter-spacing: 0px;
+    color: var(--color-5);
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+
+#header h2::after {
+    display: inline-block;
+    position: absolute;
+    color: var(--color-5);
+    top: 150px;
+    left: 10px;
+    font-size: 30px;
+    width: 100%;
+    height: 15%;
+    font-weight: normal;
+    text-shadow: 2px 0 var(--color-4), -2px 0 var(--color-4), 0 2px var(--color-4), 0 -2px var(--color-4), 2px 2px var(--color-4), -2px 2px var(--color-4), 2px -2px var(--color-4), -2px -2px var(--color-4);
+    letter-spacing: 0px;
+    font-family: 'YoonDokrip', sans-serif;
+    content: "언젠가 다시 올 빛을 따라 묵묵히 여명을 탐닉한다";
+}
+
+/* Login & Search & Top Bar */
+#login-status {
+    position: absolute;
+    top: 3px;
+    color: var(--color-2);
+    z-index: 8;
+}
+
+#login-status a {
+    color: var(--color-2);
+}
+
+#account-options {
+    background-color: var(--color-2) !important;
+    border: 1px solid var(--color-6) !important;
+    color: var(--color-1) !important;
+    font-weight: bold !important;
+}
+
+#account-topbutton {
+    border-color: var(--color-2);
+}
+
+#login-status ul a {
+    color: var(--color-1) !important;
+}
+
+#search-top-box {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 250px;
+    text-align: right;
+    z-index: 7;
+}
+
+#search-top-box-form {
+    display: inline-flex;
+}
+
+#search-top-box-form > input {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    border-radius: 5px;
+}
+
+#search-top-box-input,
+#search-top-box-input:hover,
+#search-top-box-input:focus {
+    display: none;
+}
+
+#search-top-box-form input[type=submit] {
+    padding: 2px 5px;
+    background: var(--color-1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+    border: solid 1px var(--color-2);
+    color: var(--color-2);
+    font-size: 90%;
+}
+
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+    background: var(--color-3);
+}
+
+#top-bar {
+    display: flex;
+    top: 198px;
+    width: 100%;
+    z-index: 6;
+}
+
+#top-bar a {
+    color: var(--color-2);
+}
+
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a {
+    background: var(--color-5);
+    border-color: var(--color-1);
+    color: var(--color-1);
+}
+
+#top-bar ul li.sfhover a:hover,
+#top-bar ul li:hover a:hover {
+    background: var(--color-2);
+    color: var(--color-1);
+}
+
+#top-bar ul li ul,
+#top-bar ul li ul li ul {
+    border-color: rgba(0, 0, 0, .4);
+}
+
+#top-bar ul li.sfhover ul li a,
+#top-bar ul li:hover ul li a {
+    border-color: rgba(0, 0, 0, .1);
+}
+
+#top-bar ul li.sfhover ul li ul a,
+#top-bar ul li:hover ul li ul a {
+    border-top: none;
+}
+
+.top-bar {
+    position: relative;
+    margin: 0 auto;
+}
+.c_topbar_arrow {
+    color: var(--color-1);
+}
+
+/* Page Elements */
+#page-title,
+.meta-title {
+    color: var(--color-3);
+    font-size: 2.1em;
+    font-weight: bold;
+}
+
+#content-wrap {
+    margin: 30px auto 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-3);
+    font-weight: bold;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--color-2);
+    color: var(--color-1);
+}
+
+a:link {
+    color: var(--color-7);
+}
+
+a:visited {
+    color: var(--color-8);
+}
+
+.hovertip {
+    background-color: var(--color-2) !important;
+    border: 2px solid var(--color-1) !important;
+    color: var(--color-1) !important;
+}
+
+.scp-image-block {
+    background: var(--color-2);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+    border: 1px solid var(--color-5);
+}
+
+.scp-image-block .scp-image-caption {
+    background: var(--color-5);
+    border-top: none;
+    font-size: 85%;
+}
+
+.scp-image-block img {
+    box-shadow: 0 0 1px black;
+}
+
+/* ---- SCROLLBAR ---- */
+::-webkit-scrollbar {
+    width: unset;
+    height: unset;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-2);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-1);
+    border: none;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-3);
+}
+
+textarea::-webkit-scrollbar-track {
+    background: var(--color-5);
+}
+
+/* Side Bar */
+#side-bar {
+    background: none;
+}
+
+#side-bar .side-block,
+#side-bar .side-block.media,
+#side-bar .side-block.resources,
+#interwiki .side-block {
+    background: var(--color-2) !important;
+    border: 4px solid var(--color-9);
+    border-radius: 0 0;
+}
+
+div#side-bar .side-block,
+div#side-bar .side-block.media,
+div#side-bar .side-block.resources,
+div#interwiki .side-block  {
+    background-image: url('https://scpko.wikidot.com/local--files/theme%3Asome-guider/sidebar-background.png'), url('https://scpko.wikidot.com/local--files/theme%3Asome-guider/sidebar-lt.png'), url('https://scpko.wikidot.com/local--files/theme%3Asome-guider/sidebar-rt.png'), url('https://scpko.wikidot.com/local--files/theme%3Asome-guider/sidebar-lb.png'), url('https://scpko.wikidot.com/local--files/theme%3Asome-guider/sidebar-rb.png') !important;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-position: 0% 0%, 0% 0%, 100% 0%, 0% 100%, 100% 100% !important;
+    background-size: 100px 100px, 15px 15px, 15px 15px, 15px 15px, 15px 15px !important;
+    background-repeat: repeat, no-repeat, no-repeat, no-repeat, no-repeat !important;
+}
+
+#side-bar .heading,
+#interwiki .heading,
+#side-bar .collapsible-block-unfolded-link {
+    border-bottom: solid 2px var(--color-1);
+    color: var(--color-1);
+}
+
+#side-bar .collapsible-block-folded-link .collapsible-block-link:hover,
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link:hover {
+    color: var(--color-7);
+}
+
+#side-bar .collapsible-block-folded-link .collapsible-block-link,
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link {
+    color: var(--color-7);
+}
+
+#side-bar .menu-item .image,
+#interwiki .menu-item .image,
+#side-bar .collapsible-block-folded,
+#side-bar .collapsible-block-unfolded-link .collapsible-block-content .image {
+    filter: grayscale(80%);
+}
+
+#side-bar .collapsible-block-folded a:link {
+    filter: grayscale(80%);
+}
+
+#side-bar a:link,
+#interwiki a:link {
+    color: var(--color-7);
+}
+
+#side-bar a:visited,
+#interwiki a:visited {
+    color: var(--color-8);
+}
+
+#side-bar a:link:hover,
+#side-bar a:visited:hover,
+#interwiki a:link:hover,
+#interwiki a:visited:hover {
+    color: var(--color-3);
+}
+
+#top-bar .open-menu a {
+    background: var(--color-2);
+    border-color: var(--color-9);
+    color: var(--color-1);
+}
+
+/* Tab */
+div.yui-navset ul.yui-nav a,
+div.yui-navset ul.yui-nav a:hover,
+div.yui-navset ul.yui-nav .selected a,
+div.yui-navset ul.yui-nav .selected a:hover,
+div.yui-navset ul.yui-nav .selected a:focus {
+    background: none;
+    border: none;
+}
+
+.yui-navset {
+    clear: both;
+    margin-bottom: 1em;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .5);
+}
+
+.yui-navset .yui-nav {
+    background: var(--color-5);
+    border: 1px solid gainsboro;
+    border-bottom: none;
+}
+
+.yui-navset .yui-nav li {
+    margin-right: 10px !important;
+}
+
+.yui-navset .yui-nav li:first-child {
+    margin-left: 1.5em;
+}
+
+.yui-navset .yui-nav li a em {
+    padding: 10px .75em .25em;
+    margin-bottom: -1px;
+    background: none;
+    border: none;
+    color: var(--color-4);
+    transition: .2s;
+}
+
+.yui-navset .yui-nav li a em:hover {
+    background: none;
+}
+
+.yui-navset .yui-nav .selected a em {
+    padding: 10px .75em .25em;
+    background: var(--color-5);
+    border: none;
+    border-bottom: 4px solid var(--color-4);
+    color: var(--color-1);
+    font-weight: bold;
+}
+
+.yui-navset .yui-nav .selected a em:hover {
+    padding: 10px .75em .25em;
+    background: var(--color-2);
+    border: none;
+    border-bottom: 4px solid var(--color-6);
+    color: var(--color-4);
+    font-weight: bold;
+}
+
+div.yui-navset div.yui-content {
+    background: var(--color-2);
+    border: 1px solid var(--color-5);
+}
+
+/* Rate Module */
+.page-rate-widget-box {
+    margin-right: 0;
+    background-color: var(--color-2);
+    border: 2px solid var(--color-2);
+    border-radius: 0px;
+}
+
+.page-rate-widget-box > span {
+    border: none !important;
+}
+
+.page-rate-widget-box .rate-points {
+    background: var(--color-2) !important;
+    color: var(--color-1) !important;
+}
+
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+    background: var(--color-2);
+}
+
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a {
+    color: var(--color-1);
+}
+
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover {
+    background-color: var(--color-4);
+    color: var(--color-2);
+}
+
+.page-rate-widget-box .cancel {
+    background: var(--color-2);
+}
+
+.page-rate-widget-box .cancel a {
+    color: var(--color-1);
+    font-weight: bold;
+}
+
+.page-rate-widget-box .cancel a:hover {
+    background: var(--color-4);
+    border-radius: 0;
+    color: var(--color-2);
+}
+
+.creditRate {
+    margin-right: 0 !important;
+}
+
+.rate-box-with-credit-button {
+    background: var(--color-2) !important;
+    border: 2px solid var(--color-2) !important;
+    border-radius: 0px !important;
+}
+
+.rate-box-with-credit-button .page-rate-widget-box {
+    border: none;
+}
+
+.creditButton p a {
+    border-left: 1px var(--color-2) !important;
+    color: var(--color-1) !important;
+}
+
+#page-content .rate-box-with-credit-button .fa-info {
+    padding: 3px 0 1px;
+}
+
+#page-content .rate-box-with-credit-button .fa-info:hover {
+    background: var(--color-4);
+    border-radius: 0 0 0 0;
+    color: var(--color-2) !important;
+}
+
+/* ---- EDITING WINDOWS ---- */
+.owindow {
+    background-color: var(--color-2);
+    border-color: var(--color-4);
+}
+
+.owindow .modal-header {
+    background-color: var(--color-2);
+}
+
+.owindow .modal-body img {
+    background-color: var(--color-2) !important;
+    color: var(--color-1);
+}
+
+.owindow .title {
+    background-color: var(--color-2);
+}
+
+.owindow a,
+.owindow a:visited {
+    color: #var(--color-7);
+}
+
+.owindow .active {
+    color: var(--color-9);
+}
+
+.owindow .content.modal-body img {
+    background-color: var(--color-6) !important;
+}
+
+.owindow .button-bar a {
+    background-color: var(--color-2);
+    color: var(--color-1);
+}
+
+.owindow .button-bar a:hover,
+.owindow .button-bar a:focus {
+    background-color: var(--color-2) !important;
+    border-color: var(--color-5);
+    color: var(--color-1);
+}
+
+table.page-files .highlight {
+    background-color: #EAEAEF;
+}
+
+input.text,
+input.text:focus,
+input.text:hover {
+    background-color: var(--color-2) !important;
+    border-color: var(--color-5);
+    color: var(--color-1);
+}
+
+textarea {
+    background-color: #EAEAEF;
+    color: var(--color-1);
+}
+
+.change-textarea-size a {
+    background-color: var(--color-2);
+    color: var(--color-1);
+}
+
+#lock-info {
+    background-color: var(--color-2);
+}
+
+/* Blockquote */
+blockquote,
+div.blockquote {
+    background-color: #EAEAEF;
+    border-style: dotted;
+}
+
+/* media */
+@media (min-width: 480px) and (max-width: 767px) {
+  .yui-navset {
+    z-index: 0 !important;
+  }
+    #top-bar .open-menu a {
+      background: url('https://scpko.wikidot.com/local--files/theme%3Asome-guider/sidebar-menu-1.png');
+      border: none !important;
+      border-radius: 0em !important;
+      background-size: 40px auto;
+      color: rgba(0, 0, 0, 0);
+      width: 40px;
+      height: 40px;
+      content: none !important;
+    }
+    #top-bar .open-menu a:hover {
+      background-image: url('https://scpko.wikidot.com/local--files/theme%3Asome-guider/sidebar-menu-2.png');
+      border: none !important;
+      border-radius: 0em !important;
+      background-size: 40px auto;
+      color: rgba(0, 0, 0, 0);
+      width: 40px;
+      height: 40px;
+      content: none !important;
+    }
+}
+
+@media (min-width: 578px) and (max-width: 678px) {
+    #header h1 a {
+      font-size: 44px;
+    }
+    #header h2::after {
+      content: "언젠가 다시 올 빛을 따라 여명을 탐닉한다";
+    }
+}
+
+@media (min-width: 496px) and (max-width: 577px) {
+    #header h1 a {
+      font-size: 38px;
+      top: 45px;
+      left: 240px;
+    }
+    #header h2::after {
+      content: "빛을 따라 여명을 탐닉한다";
+    }
+}
+
+@media (min-width: 298px) and (max-width: 495px) {
+    #header h1 a {
+      font-size: 45px;
+      top: 90px;
+      left: 20px;
+    }
+    #header h2::after {
+      content: none;
+    }
+}
+
+@media (max-width: 297px) {
+    #header h1 a {
+      font-size: 35px;
+      top: 90px;
+      left: 20px;
+    }
+    #header h2::after {
+      content: none;
+    }
+}
+
+/* keyframes */
+@keyframes eye-1 {
+    0% {
+      transform-origin: 0 0 0;
+      transform: scale(1.0, 1.0);
+    }
+    6% {
+      transform-origin: 0 0 0;
+      transform: scale(1.0, 0.97);
+    }
+    15% {
+      transform-origin: 0 0 0;
+      transform: scale(1.0, 1.0);
+    }
+    100% {
+      transform-origin: 0 0 0;
+      transform: scale(1.0, 1.0);
+    }
+}
+
+@keyframes eye-2 {
+    0% {
+      transform-origin: 0 0 0;
+      transform: scale(1.0, 0);
+    }
+    6% {
+      transform-origin: 0 0 0;
+      transform: scale(1.0, 0.97);
+    }
+    15% {
+      transform-origin: 0 0 0;
+      transform: scale(1.0, 0);
+    }
+    100% {
+      transform-origin: 0 0 0;
+      transform: scale(1.0, 0);
+    }
+}
+[[/code]]
+[[/collapsible]]
+
+[[/iftags]]
+
+[[module css]]
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Asome-guider-jp/1")
+[[/module]]
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme= https://sigma10-jp-test.wdfiles.com/local--code/theme%3Asome-guider-jp/1
+]]
