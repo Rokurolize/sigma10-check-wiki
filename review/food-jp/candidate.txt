@@ -1,0 +1,381 @@
+[[iftags]]
+[[include :scp-jp:theme:black-highlighter-theme]]
+[[/iftags]]
+
+[[module css]]
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css");
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css");
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css
+]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=2
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css
+]]
+
+[[include :scp-jp:component:centered-header-bhl]]
+
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** 异常美食部 主题版式
+**翻訳責任者:** AI
+**翻訳年:** 2026
+**原題:** 异常美食部 主题版式
+**著作権者:** fishalt
+**作成年:** 2023
+**初訳時参照リビジョン:** 40
+**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:food 异常美食部 主题版式]
+[[include :scp-jp:credit:end-preview]]
+
++ 食物
+[[/=]]
+[[div class="blockquote"]]
+[[=]]
+
++++ しょくもつ
+
+[[/=]]
+
+[[=]]
+
++++ 唐・元稹『酬楽天早夏』より。「食物風土異なり、衾裯時節殊なり。」
+
+[[/=]]
+
+------
+
+//引用解釈。//
+
+//食べ物、またはその他のもの。//
+[[/div]]
+----
+[[=]]
+このテーマは、[[*user fishalt]]がまだ腹の中で温めている記事のために設計されたテーマです。
+
+[[/=]]
+----
+[[=]]
+++ 『後漢書・韋彪伝』より。「乃ち彪に珍羞食物を賜ふ。」
+[[/=]]
+
+-----
+-----
+
+[[include component:image-block
+| name=https://scpsandboxcn.wikidot.com/local--files/fishalt-2/%E6%A0%87%E8%AE%B0%E9%9B%86
+| caption=盤著
+]]
+
+[[size 200%]]ほかのBlack Highlighterテーマと同じく、このテーマでも先にBHLコードを置く必要があります。これがないと、全部崩れます。崩れてほしくはないですよね？[[/size]]
+
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+
+以下のコードを記事に貼り付けてください。
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:black-highlighter-theme]]@@
+@@[[include :scp-jp:theme:food]]@@
+@@[[include :scp-jp:component:centered-header-bhl]]
+@@
+[[/div]]
+
+このテーマは[[*user Woedenaz]]の[[[component:centered-header-bhl|Black Highlighter中央寄せヘッダー]]]と組み合わせて使用されています。これがないと、どうにも食欲をそそりません。
+[[=]]
++ サンプル
+[[/=]]
+
+これは何でしょう？ 水平区切り線です！「@@-----@@」は技術的にはハイフン4本でも十分ですが、5本のほうが見栄えがいいです。
+
+-----
+
+見出しです。ただし副題やヘッダー見出しではありません。作成には+を使います。
+
+[[collapsible show="+ 見出し" hide="- テスト"]]
++ 第一見出し
+
+++ 第二見出し
+
++++ 第三見出し
+
+++++ 第四見出し
+
++++++ 第五見出し
+
+++++++ 第六見出し
+
+[[/collapsible]]
+
+@@ @@
+
+[[tabview]]
+
+[[tab ページ :)]]
+メニューの1ページ目
+[[/tab]]
+[[tab ページ :(]]
+ありうるメニューの2ページ目
+[[/tab]]
+[[/tabview]]
+@@ @@
+> 引用ブロックは、何かの小さな紙片のように見えます。
+> 
+> どう見ても区切り線です。
+> -----
+> 
+>> 小さな紙片の上の小さな紙片
+>>> さらに小さな紙片[[footnote]]脚注[[/footnote]]
+@@ @@
+||~ 表||~ なら||
+|| 材料を|| 並べられます||
+|||| 表です！ ||
+
+----
+
++ ソースコード
+
+[[collapsible show="ソースコードを表示" hide="ソースコードを閉じる"]]
+[[code type="css"]]
+/* ===== food：原語版の CSS（モジュール＋コードブロック）をまとめたもの ===== */
+/*
+    Powered on 2023/02/25 11:10:42
+    [2023 Wikidot Theme]
+    Created by fishalt
+    CC BY-SA 3.0
+*/
+
+blockquote {
+
+    background-image: radial-gradient(#FFE4B5 60%, #D2B48C);
+    box-shadow: 0 0 6px 1px  rgb(63, 63, 63)
+}
+
+
+
+:root {
+  --logo-image: url("https://scpsandboxcn.wikidot.com/local--files/fishalt-2/%E6%A0%87%E8%AE%B0%E9%9B%86");
+/* Typefaces */
+   --body-font:  'IBM Plex Mono', '仿宋',  monospace;
+   --header-font:  'ZCOOL XiaoWei', serif;
+   --title-font:  'IBM Plex Mono', '仿宋',  monospace;
+   --mono-font:  'IBM Plex Mono', '仿宋',  monospace;
+   --UI-font: 'ZCOOL XiaoWei', serif;
+
+
+   --black: 0, 0, 0;
+   --PeachPuff: 255, 218, 185;  
+   --Burlywood2: 238, 197, 145;  
+   --Goldenrod4: 139, 105, 20;
+   --Wheat4: 145, 120, 7, 0.5;  
+   --LightGoldenrod3: 205, 190, 112;
+   --neon-blue: 0, 229, 255;
+
+--swatch-primary: var(--PeachPuff);
+     --swatch-primary-darker: var(--Wheat4);
+     --swatch-primary-darkest: var(--Burlywood2);
+        --swatch-background: var(--Burlywood2);
+     --swatch-border-color: var(--PeachPuff);
+
+        --swatch-text-light: var(--PeachPuff);
+        --swatch-text-general: var(--Goldenrod4);
+
+        --swatch-menubg-color: var(--Goldenrod4);
+        --swatch-menubg-extra-dark-color: var(--Burlywood2);
+        --swatch-menutxt-general-color: var(--PeachPuff);
+
+        --swatch-secondary-color: var(--Burlywood2);
+        --swatch-tertiary-color: var(--PeachPuff);
+        --swatch-alternate-color: var(--Goldenrod4);
+
+        --swatch-text-secondary-color: var(--Wheat4);
+        --swatch-text-tertiary-color: var(--Wheat4);
+
+        --swatch-topmenu-bg-color: var(--PeachPuff);
+}
+
+:root:lang(cn) {
+    --header-title: "异常美食部";
+    --header-subtitle: "民以食为天";
+}
+
+#header {
+--login-line-divider-color: var(--PeachPuff);
+    --login-username-color: var(--LightGoldenrod3);
+    --login-myaccount-color: var(--LightGoldenrod3);
+    --login-dropdown-text-color: var(--PeachPuff);
+    --login-dropdown-text-hover-color: var(--Goldenrod4);
+    }
+
+#main-content {
+    --footnotes-footer-title-text-color: var(--PeachPuff);
+    --hoverblock-header-txt: var(--PeachPuff);
+
+    --tabs-hover-bg: var(--PeachPuff);
+    --tabs-selected-bg: var(--Burlywood2);
+    --tabs-selected-txt: var(--Goldenrod4);
+    --tabs-selected-outline: var(--Goldenrod4);
+    }
+
+#top-bar {
+        --dropdown-bg-color: var(--Goldenrod4);
+     --mobile-topmenu-sidebar-button-color: var(--Goldenrod4);
+
+     --topmenu-category-color: var(--Burlywood2);
+     --topmenu-category-hover-color: var(--Goldenrod4) ;
+     --dropdown-links-color: var(--Burlywood2);
+     --dropdown-links-hover-color:  var(--Goldenrod4);
+    }
+
+
+
+body {
+background: rgb(255, 242, 204);
+}
+
+a,a:visited {
+    color: rgb(210, 117, 20);
+}    
+
+h1,h2,h3,h4,h5,h6 {
+    color: rgb(120, 63, 4);
+    font-family: 'ZCOOL XiaoWei', serif;
+}
+
+div#container-wrap {
+    background-image: url('https://scpsandboxcn.wikidot.com/local--files/fishalt-2/%E6%B6%88%E6%9D%A1%E5%AD%90');
+}
+/*
+    Powered on 2023/02/25 11:10:42
+    [2023 Wikidot Theme]
+    Created by fishalt
+    CC BY-SA 3.0
+*/
+
+blockquote {
+
+    background-image: radial-gradient(#FFE4B5 60%, #D2B48C);
+    box-shadow: 0 0 6px 1px  rgb(63, 63, 63)
+}
+
+
+
+:root {
+  --logo-image: url("https://scpsandboxcn.wikidot.com/local--files/fishalt-2/%E6%A0%87%E8%AE%B0%E9%9B%86");
+/* Typefaces */
+   --body-font:  'IBM Plex Mono', '仿宋',  monospace;
+   --header-font:  'ZCOOL XiaoWei', serif;
+   --title-font:  'IBM Plex Mono', '仿宋',  monospace;
+   --mono-font:  'IBM Plex Mono', '仿宋',  monospace;
+   --UI-font: 'ZCOOL XiaoWei', serif;
+
+
+   --black: 0, 0, 0;
+   --PeachPuff: 255, 218, 185;  
+   --Burlywood2: 238, 197, 145;  
+   --Goldenrod4: 139, 105, 20;
+   --Wheat4: 139, 126, 102;  
+   --LightGoldenrod3: 205, 190, 112;
+   --neon-blue: 0, 229, 255;
+
+--swatch-primary: var(--Goldenrod4);
+     --swatch-primary-darker: var(--Burlywood2);
+     --swatch-primary-darkest: var(--Burlywood2);
+        --swatch-background: var(--Burlywood2);
+     --swatch-border-color: var(--PeachPuff);
+
+        --swatch-text-light: var(--PeachPuff);
+        --swatch-text-general: var(--Goldenrod4);
+
+        --swatch-menubg-color: var(--Goldenrod4);
+        --swatch-menubg-extra-dark-color: var(--Burlywood2);
+        --swatch-menutxt-general-color: var(--Goldenrod4);
+
+        --swatch-secondary-color: var(--Burlywood2);
+        --swatch-tertiary-color: var(--PeachPuff);
+        --swatch-alternate-color: var(--PeachPuff);
+
+        --swatch-text-secondary-color: var(--Goldenrod4);
+        --swatch-text-tertiary-color: var(--Wheat4);
+
+        --swatch-topmenu-bg-color: var(--PeachPuff);
+}
+
+:root:lang(cn) {
+    --header-title: "异常美食部";
+    --header-subtitle: "民以食为天";
+}
+
+#header {
+--login-line-divider-color: var(--PeachPuff);
+    --login-username-color: var(--LightGoldenrod3);
+    --login-myaccount-color: var(--LightGoldenrod3);
+    --login-dropdown-text-color: var(--PeachPuff);
+    --login-dropdown-text-hover-color: var(--Goldenrod4);
+    }
+
+#main-content {
+    --footnotes-footer-title-text-color: var(--PeachPuff);
+    --hoverblock-header-txt: var(--PeachPuff);
+
+    --tabs-hover-bg: var(--PeachPuff);
+    --tabs-selected-bg: var(--Burlywood2);
+    --tabs-selected-txt: var(--Goldenrod4);
+    --tabs-selected-outline: var(--Goldenrod4);
+    }
+
+#top-bar {
+        --dropdown-bg-color: var(--Goldenrod4);
+     --mobile-topmenu-sidebar-button-color: var(--Goldenrod4);
+
+     --topmenu-category-color: var(--Burlywood2);
+     --topmenu-category-hover-color: var(--Goldenrod4) ;
+     --dropdown-links-color: var(--Burlywood2);
+     --dropdown-links-hover-color:  var(--Goldenrod4);
+    }
+
+#side-bar, .side-block {
+    --sideblock-heading-border-color: var(--Wheat4);
+    --sideblock-heading-text-color: var(--Goldenrod4);
+
+   --sidebar-bg-color: #FFE4B5;
+
+    --sidebar-border-color: var(--Goldenrod4), 0.08;
+    --sidebar-subtest-color: var(--Burlywood2);
+
+    --sidebar-links-text: var(--Goldenrod4);
+    --sidebar-links-hover-bg-color: var(--Goldenrod4);
+    --sidebar-links-hover-text-color: var(--PeachPuff);
+ }
+
+
+body {
+background: rgb(255, 242, 204);
+}
+
+a,a:visited {
+    color: rgb(210, 117, 20);
+}    
+
+h1,h2,h3,h4,h5,h6 {
+    color: rgb(120, 63, 4);
+    font-family: 'ZCOOL XiaoWei', serif;
+}
+[[/code]]
+[[/collapsible]]
+
+[[/iftags]]
+
+[[module css]]
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Afood-jp/1")
+[[/module]]
+[[include :scp-jp:component:interwiki-style
+| priority=3
+| theme= https://sigma10-jp-test.wdfiles.com/local--code/theme%3Afood-jp/1
+]]

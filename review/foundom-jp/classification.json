@@ -1,0 +1,3111 @@
+{
+ "tool": "classify_hunks.py",
+ "classifier_version": "0.1.0",
+ "signature_table_version": "2026-11-17.1",
+ "theme": {
+  "dir": "foundom-jp",
+  "cand_fullname": "theme:foundom-jp",
+  "orig_fullname": "theme:foundom",
+  "wiki": "scp-wiki-cn",
+  "revision": "7",
+  "kind": "standard",
+  "verdict": "PASS",
+  "original_file": "foundom-jp/original.txt",
+  "candidate_file": "foundom-jp/candidate.txt",
+  "original_sha256": "7372c610893fdef3e2e61e50cbc66ae05979be3e3718be54ac0800c9190eb35f",
+  "candidate_sha256": "b398c66ee2cbba88fb1cf24300e0018bb9e3208e9e6798bd05d61469d02912a4",
+  "original_lines": 1007,
+  "candidate_lines": 951
+ },
+ "topology": {
+  "original_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     1,
+     4
+    ],
+    "lines": 3
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     7,
+     10
+    ],
+    "lines": 3
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     30,
+     57
+    ],
+    "lines": 27
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     285,
+     291
+    ],
+    "lines": 6
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     333,
+     969
+    ],
+    "lines": 636
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     970,
+     1004
+    ],
+    "lines": 34
+   }
+  ],
+  "candidate_components": [
+   {
+    "kind": "code-css",
+    "range": [
+     271,
+     940
+    ],
+    "lines": 669
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     944,
+     947
+    ],
+    "lines": 3
+   }
+  ],
+  "moves": [],
+  "external_own_delivery": false
+ },
+ "blocks": [
+  {
+   "id": "B1",
+   "orig_range": [
+    0,
+    5
+   ],
+   "cand_range": [
+    0,
+    1
+   ],
+   "orig_lines": "1-5",
+   "cand_lines": "1-1",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "SELF-DELIVERY"
+   ],
+   "primary": "SELF-DELIVERY",
+   "primary_section": 3,
+   "label_prec": {
+    "SELF-DELIVERY": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "SELF-DELIVERY": {
+     "orig": [
+      [
+       2,
+       3
+      ]
+     ],
+     "cand": []
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[!-- {$inc-css}",
+   "first_added": "[[include theme:parallel-jp]]"
+  },
+  {
+   "id": "B2",
+   "orig_range": [
+    6,
+    11
+   ],
+   "cand_range": [
+    2,
+    3
+   ],
+   "orig_lines": "7-11",
+   "cand_lines": "3-3",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "IFTAGS",
+    "SELF-DELIVERY",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "SELF-DELIVERY",
+   "primary_section": 3,
+   "label_prec": {
+    "IFTAGS": "A",
+    "SELF-DELIVERY": "A",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "IFTAGS": {
+     "orig": [],
+     "cand": [
+      [
+       2,
+       3
+      ]
+     ]
+    },
+    "SELF-DELIVERY": {
+     "orig": [
+      [
+       8,
+       9
+      ]
+     ],
+     "cand": []
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[!-- {$inc-color}",
+   "first_added": "[[iftags +テーマ]]"
+  },
+  {
+   "id": "B3",
+   "orig_range": [
+    12,
+    20
+   ],
+   "cand_range": [
+    4,
+    14
+   ],
+   "orig_lines": "13-20",
+   "cand_lines": "5-14",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "CREDIT-PREVIEW",
+    "CREDIT-PROSE",
+    "TASL-FIELDS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "CREDIT-PREVIEW",
+   "primary_section": 1,
+   "label_prec": {
+    "CREDIT-PREVIEW": "A",
+    "TASL-FIELDS": "A",
+    "TRANS-UNANCHORED": "C",
+    "CREDIT-PROSE": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "CREDIT-PREVIEW": {
+     "cand": [
+      [
+       4,
+       5
+      ],
+      [
+       13,
+       14
+      ]
+     ]
+    },
+    "TASL-FIELDS": {
+     "cand": [
+      [
+       5,
+       13
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {},
+    "CREDIT-PROSE": {}
+   },
+   "notes": [
+    "script delta without the anchor majority",
+    "position: inside the credit include pair"
+   ],
+   "partial_notes": [],
+   "first_removed": "[!-- {$inc-chara-start}",
+   "first_added": "[[include :scp-jp:credit:start-preview]]"
+  },
+  {
+   "id": "B4",
+   "orig_range": [
+    21,
+    28
+   ],
+   "cand_range": [
+    15,
+    16
+   ],
+   "orig_lines": "22-28",
+   "cand_lines": "16-16",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[!-- {$inc-chara-end}",
+   "first_added": "これは[[[letters|Lettersエンターテインメント]]]のGoIフォーマット用に作成されたテーマです。[[[theme:parallel|Parallel]]]を基に、Fandom風のWikiスタイルを再現できます。このテーマを導入するには、以下のコードを使用してください。"
+  },
+  {
+   "id": "B5",
+   "orig_range": [
+    29,
+    61
+   ],
+   "cand_range": [
+    17,
+    19
+   ],
+   "orig_lines": "30-61",
+   "cand_lines": "18-19",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "IFTAGS",
+    "SELF-DELIVERY"
+   ],
+   "primary": "SELF-DELIVERY",
+   "primary_section": 3,
+   "label_prec": {
+    "IFTAGS": "A",
+    "SELF-DELIVERY": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "IFTAGS": {
+     "orig": [
+      [
+       29,
+       30
+      ]
+     ],
+     "cand": []
+    },
+    "SELF-DELIVERY": {
+     "orig": [
+      [
+       32,
+       34
+      ]
+     ],
+     "cand": []
+    }
+   },
+   "notes": [],
+   "partial_notes": [
+    "BASE-DELIVERY/CROSS-IMPORT? fragment:parallel (include graph needed to decide base vs cross)"
+   ],
+   "first_removed": "[[iftags +版式]]",
+   "first_added": "[[div class=\"code\"]]"
+  },
+  {
+   "id": "B6",
+   "orig_range": [
+    63,
+    64
+   ],
+   "cand_range": [
+    21,
+    22
+   ],
+   "orig_lines": "64-64",
+   "cand_lines": "22-22",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[div style=\"display: grid; grid-template-columns: 1.5fr 5fr; grid-template-areas: 'a b'; max-width: 44rem; margin: auto; align-items: center;\"]]",
+   "first_added": "財団標準の配色を使用する場合は、以下のコードでこのテーマを導入してください。"
+  },
+  {
+   "id": "B7",
+   "orig_range": [
+    65,
+    67
+   ],
+   "cand_range": [
+    23,
+    25
+   ],
+   "orig_lines": "66-67",
+   "cand_lines": "24-25",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[div style=\"grid-area: a;\"]]",
+   "first_added": "[[div class=\"code\"]]"
+  },
+  {
+   "id": "B8",
+   "orig_range": [
+    69,
+    93
+   ],
+   "cand_range": [
+    27,
+    28
+   ],
+   "orig_lines": "70-93",
+   "cand_lines": "28-28",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[div class=\"ctn\" style=\"position: relative; opacity: 0.85; grid-area: b;\"]]",
+   "first_added": "このテーマのトップナビゲーションバーはSCP-CN Wiki向けに設計されています。他のWikiで使用する場合は、各Wikiのトップナビゲーションバーに合わせて再調整してください。"
+  },
+  {
+   "id": "B9",
+   "orig_range": [
+    97,
+    98
+   ],
+   "cand_range": [
+    32,
+    33
+   ],
+   "orig_lines": "98-98",
+   "cand_lines": "33-33",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "+ 页面元素",
+   "first_added": "+ ページ要素"
+  },
+  {
+   "id": "B10",
+   "orig_range": [
+    99,
+    100
+   ],
+   "cand_range": [
+    34,
+    35
+   ],
+   "orig_lines": "100-100",
+   "cand_lines": "35-35",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "++ 基础元素",
+   "first_added": "++ 基本要素"
+  },
+  {
+   "id": "B11",
+   "orig_range": [
+    101,
+    102
+   ],
+   "cand_range": [
+    36,
+    37
+   ],
+   "orig_lines": "102-102",
+   "cand_lines": "37-37",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "GLYPH-FORM",
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "GLYPH-FORM": "B",
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "GLYPH-FORM": {},
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "fold-compare: glyph forms only",
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[collapsible show=\"+ 基础元素\" hide=\"- 基础元素\"]]",
+   "first_added": "[[collapsible show=\"+ 基本要素\" hide=\"- 基本要素\"]]"
+  },
+  {
+   "id": "B12",
+   "orig_range": [
+    103,
+    104
+   ],
+   "cand_range": [
+    38,
+    39
+   ],
+   "orig_lines": "104-104",
+   "cand_lines": "39-39",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "> 这是引用块",
+   "first_added": "> これは引用ブロックです"
+  },
+  {
+   "id": "B13",
+   "orig_range": [
+    105,
+    106
+   ],
+   "cand_range": [
+    40,
+    41
+   ],
+   "orig_lines": "106-106",
+   "cand_lines": "41-41",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": ">> 嵌套引用",
+   "first_added": ">> 入れ子の引用"
+  },
+  {
+   "id": "B14",
+   "orig_range": [
+    108,
+    109
+   ],
+   "cand_range": [
+    43,
+    44
+   ],
+   "orig_lines": "109-109",
+   "cand_lines": "44-44",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "暗色引用块",
+   "first_added": "暗色引用ブロック"
+  },
+  {
+   "id": "B15",
+   "orig_range": [
+    115,
+    116
+   ],
+   "cand_range": [
+    50,
+    51
+   ],
+   "orig_lines": "116-116",
+   "cand_lines": "51-51",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "EXHIBIT-RESTRUCTURE",
+    "INCLUDE-REPOINT",
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "INCLUDE-REPOINT": "A",
+    "EXHIBIT-RESTRUCTURE": "C",
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "INCLUDE-REPOINT": {
+     "orig": [
+      [
+       115,
+       116
+      ]
+     ],
+     "cand": [
+      [
+       50,
+       51
+      ]
+     ]
+    },
+    "EXHIBIT-RESTRUCTURE": {},
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced",
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[include :scp-wiki-cn:component:image-block name=https://ah-sandbox.wdfiles.com/local--files/hormress-s-logos/ARED_2.svg|caption=随处可见的图像|width=280px]]",
+   "first_added": "[[include :scp-jp:component:image-block name=https://ah-sandbox.wdfiles.com/local--files/hormress-s-logos/ARED_2.svg|caption=どこにでもありそうな画像|width=280px]]"
+  },
+  {
+   "id": "B16",
+   "orig_range": [
+    117,
+    118
+   ],
+   "cand_range": [
+    52,
+    53
+   ],
+   "orig_lines": "118-118",
+   "cand_lines": "53-53",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "可通过四至六个连字符“@@----@@”、“@@-----@@”或“@@------@@”[[footnote]][[*user Placeholder McD]]是哪位来着？[[/footnote]]创建水平分割线。若它未被放在其他部件（诸如引用块）中，则会左右延伸贯穿页面。",
+   "first_added": "4個から6個のハイフン「@@----@@」「@@-----@@」「@@------@@」[[footnote]][[*user Placeholder McD]]って誰でしたっけ？[[/footnote]]で水平線を作成できます。引用ブロックなどの別要素内に置かれていない場合、水平線は左右に伸びてページを横断します。"
+  },
+  {
+   "id": "B17",
+   "orig_range": [
+    119,
+    120
+   ],
+   "cand_range": [
+    54,
+    55
+   ],
+   "orig_lines": "120-120",
+   "cand_lines": "55-55",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "标题可通过在一行字起始处输入 1 至 6 个加号“+”来创建。",
+   "first_added": "見出しは、行頭に1個から6個のプラス記号「+」を入力すると作成できます。"
+  },
+  {
+   "id": "B18",
+   "orig_range": [
+    121,
+    122
+   ],
+   "cand_range": [
+    56,
+    57
+   ],
+   "orig_lines": "122-122",
+   "cand_lines": "57-57",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "+* 1 级标题",
+   "first_added": "+* レベル1見出し"
+  },
+  {
+   "id": "B19",
+   "orig_range": [
+    123,
+    124
+   ],
+   "cand_range": [
+    58,
+    59
+   ],
+   "orig_lines": "124-124",
+   "cand_lines": "59-59",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "++* 2 级标题",
+   "first_added": "++* レベル2見出し"
+  },
+  {
+   "id": "B20",
+   "orig_range": [
+    125,
+    126
+   ],
+   "cand_range": [
+    60,
+    61
+   ],
+   "orig_lines": "126-126",
+   "cand_lines": "61-61",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "+++* 3 级标题",
+   "first_added": "+++* レベル3見出し"
+  },
+  {
+   "id": "B21",
+   "orig_range": [
+    127,
+    128
+   ],
+   "cand_range": [
+    62,
+    63
+   ],
+   "orig_lines": "128-128",
+   "cand_lines": "63-63",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "++++* 4 级标题",
+   "first_added": "++++* レベル4見出し"
+  },
+  {
+   "id": "B22",
+   "orig_range": [
+    129,
+    130
+   ],
+   "cand_range": [
+    64,
+    65
+   ],
+   "orig_lines": "130-130",
+   "cand_lines": "65-65",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "+++++* 5 级标题",
+   "first_added": "+++++* レベル5見出し"
+  },
+  {
+   "id": "B23",
+   "orig_range": [
+    131,
+    132
+   ],
+   "cand_range": [
+    66,
+    67
+   ],
+   "orig_lines": "132-132",
+   "cand_lines": "67-67",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "++++++* 6 级标题",
+   "first_added": "++++++* レベル6見出し"
+  },
+  {
+   "id": "B24",
+   "orig_range": [
+    136,
+    138
+   ],
+   "cand_range": [
+    71,
+    73
+   ],
+   "orig_lines": "137-138",
+   "cand_lines": "72-73",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/2"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[tab 分页]]",
+   "first_added": "[[tab タブ]]"
+  },
+  {
+   "id": "B25",
+   "orig_range": [
+    139,
+    141
+   ],
+   "cand_range": [
+    74,
+    76
+   ],
+   "orig_lines": "140-141",
+   "cand_lines": "75-76",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/2"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[tab 分页]]",
+   "first_added": "[[tab タブ]]"
+  },
+  {
+   "id": "B26",
+   "orig_range": [
+    142,
+    143
+   ],
+   "cand_range": [
+    77,
+    78
+   ],
+   "orig_lines": "143-143",
+   "cand_lines": "78-78",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "多么精巧绝伦。",
+   "first_added": "なんとも凝った作りですね。"
+  },
+  {
+   "id": "B27",
+   "orig_range": [
+    144,
+    146
+   ],
+   "cand_range": [
+    79,
+    81
+   ],
+   "orig_lines": "145-146",
+   "cand_lines": "80-81",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/2"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[tab 长 Tab]]",
+   "first_added": "[[tab 長いタブ]]"
+  },
+  {
+   "id": "B28",
+   "orig_range": [
+    147,
+    148
+   ],
+   "cand_range": [
+    82,
+    83
+   ],
+   "orig_lines": "148-148",
+   "cand_lines": "83-83",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "这是一个长的 tab，它有很多文字。",
+   "first_added": "これは長いタブです。たくさんの文字があります。"
+  },
+  {
+   "id": "B29",
+   "orig_range": [
+    149,
+    150
+   ],
+   "cand_range": [
+    84,
+    85
+   ],
+   "orig_lines": "150-150",
+   "cand_lines": "85-85",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "这是一个长的 tab，它有很多文字。",
+   "first_added": "これは長いタブです。たくさんの文字があります。"
+  },
+  {
+   "id": "B30",
+   "orig_range": [
+    151,
+    152
+   ],
+   "cand_range": [
+    86,
+    87
+   ],
+   "orig_lines": "152-152",
+   "cand_lines": "87-87",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "这是一个长的 tab，它有很多文字。",
+   "first_added": "これは長いタブです。たくさんの文字があります。"
+  },
+  {
+   "id": "B31",
+   "orig_range": [
+    153,
+    154
+   ],
+   "cand_range": [
+    88,
+    89
+   ],
+   "orig_lines": "154-154",
+   "cand_lines": "89-89",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "这是一个长的 tab，它有很多文字。",
+   "first_added": "これは長いタブです。たくさんの文字があります。"
+  },
+  {
+   "id": "B32",
+   "orig_range": [
+    155,
+    156
+   ],
+   "cand_range": [
+    90,
+    91
+   ],
+   "orig_lines": "156-156",
+   "cand_lines": "91-91",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "这是一个长的 tab，它有很多文字。",
+   "first_added": "これは長いタブです。たくさんの文字があります。"
+  },
+  {
+   "id": "B33",
+   "orig_range": [
+    157,
+    158
+   ],
+   "cand_range": [
+    92,
+    93
+   ],
+   "orig_lines": "158-158",
+   "cand_lines": "93-93",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "这是一个长的 tab，它有很多文字。",
+   "first_added": "これは長いタブです。たくさんの文字があります。"
+  },
+  {
+   "id": "B34",
+   "orig_range": [
+    159,
+    160
+   ],
+   "cand_range": [
+    94,
+    95
+   ],
+   "orig_lines": "160-160",
+   "cand_lines": "95-95",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "这是一个长的 tab，它有很多文字。",
+   "first_added": "これは長いタブです。たくさんの文字があります。"
+  },
+  {
+   "id": "B35",
+   "orig_range": [
+    161,
+    162
+   ],
+   "cand_range": [
+    96,
+    97
+   ],
+   "orig_lines": "162-162",
+   "cand_lines": "97-97",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "这是一个长的 tab，它有很多文字。",
+   "first_added": "これは長いタブです。たくさんの文字があります。"
+  },
+  {
+   "id": "B36",
+   "orig_range": [
+    163,
+    164
+   ],
+   "cand_range": [
+    98,
+    99
+   ],
+   "orig_lines": "164-164",
+   "cand_lines": "99-99",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "这是一个长的 tab，它有很多文字。",
+   "first_added": "これは長いタブです。たくさんの文字があります。"
+  },
+  {
+   "id": "B37",
+   "orig_range": [
+    165,
+    166
+   ],
+   "cand_range": [
+    100,
+    101
+   ],
+   "orig_lines": "166-166",
+   "cand_lines": "101-101",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "这是一个长的 tab，它有很多文字。",
+   "first_added": "これは長いタブです。たくさんの文字があります。"
+  },
+  {
+   "id": "B38",
+   "orig_range": [
+    167,
+    168
+   ],
+   "cand_range": [
+    102,
+    103
+   ],
+   "orig_lines": "168-168",
+   "cand_lines": "103-103",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "这是一个长的 tab，它有很多文字。",
+   "first_added": "これは長いタブです。たくさんの文字があります。"
+  },
+  {
+   "id": "B39",
+   "orig_range": [
+    169,
+    171
+   ],
+   "cand_range": [
+    104,
+    106
+   ],
+   "orig_lines": "170-171",
+   "cand_lines": "105-106",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/2"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[tab 这个 tab 因为某些古怪的原因而拥有一个特别特别长的名字。我想知道为什么？这真的很奇怪。]]",
+   "first_added": "[[tab このタブには、どういうわけか妙に長い名前が付いています。なぜでしょう？本当に変ですね。]]"
+  },
+  {
+   "id": "B40",
+   "orig_range": [
+    172,
+    173
+   ],
+   "cand_range": [
+    107,
+    108
+   ],
+   "orig_lines": "173-173",
+   "cand_lines": "108-108",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[tab 空 Tab]]",
+   "first_added": "[[tab 空のタブ]]"
+  },
+  {
+   "id": "B41",
+   "orig_range": [
+    174,
+    175
+   ],
+   "cand_range": [
+    109,
+    110
+   ],
+   "orig_lines": "175-175",
+   "cand_lines": "110-110",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[tab 空 Tab]]",
+   "first_added": "[[tab 空のタブ]]"
+  },
+  {
+   "id": "B42",
+   "orig_range": [
+    176,
+    177
+   ],
+   "cand_range": [
+    111,
+    112
+   ],
+   "orig_lines": "177-177",
+   "cand_lines": "112-112",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[tab 空 Tab]]",
+   "first_added": "[[tab 空のタブ]]"
+  },
+  {
+   "id": "B43",
+   "orig_range": [
+    178,
+    179
+   ],
+   "cand_range": [
+    113,
+    114
+   ],
+   "orig_lines": "179-179",
+   "cand_lines": "114-114",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[tab 空 Tab]]",
+   "first_added": "[[tab 空のタブ]]"
+  },
+  {
+   "id": "B44",
+   "orig_range": [
+    180,
+    182
+   ],
+   "cand_range": [
+    115,
+    117
+   ],
+   "orig_lines": "181-182",
+   "cand_lines": "116-117",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/2"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[tab 空 Tab]]",
+   "first_added": "[[tab 空のタブ]]"
+  },
+  {
+   "id": "B45",
+   "orig_range": [
+    185,
+    188
+   ],
+   "cand_range": [
+    120,
+    123
+   ],
+   "orig_lines": "186-188",
+   "cand_lines": "121-123",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 3/3"
+   ],
+   "partial_notes": [],
+   "first_removed": "||~ 这是 ||~ 表格 ||",
+   "first_added": "||~ これは ||~ 表です ||"
+  },
+  {
+   "id": "B46",
+   "orig_range": [
+    194,
+    195
+   ],
+   "cand_range": [
+    129,
+    130
+   ],
+   "orig_lines": "195-195",
+   "cand_lines": "130-130",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "++ 进阶元素",
+   "first_added": "++ 応用要素"
+  },
+  {
+   "id": "B47",
+   "orig_range": [
+    196,
+    197
+   ],
+   "cand_range": [
+    131,
+    132
+   ],
+   "orig_lines": "197-197",
+   "cand_lines": "132-132",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "+++ 带评分模块的标题",
+   "first_added": "+++ 評価モジュール付き見出し"
+  },
+  {
+   "id": "B48",
+   "orig_range": [
+    200,
+    202
+   ],
+   "cand_range": [
+    135,
+    137
+   ],
+   "orig_lines": "201-202",
+   "cand_lines": "136-137",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "@@[[span class=\"title\"]]标题文本[[/span]]@@",
+   "first_added": "@@[[span class=\"title\"]]見出しテキスト[[/span]]@@"
+  },
+  {
+   "id": "B49",
+   "orig_range": [
+    205,
+    206
+   ],
+   "cand_range": [
+    140,
+    141
+   ],
+   "orig_lines": "206-206",
+   "cand_lines": "141-141",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "+++ 悬浮块",
+   "first_added": "+++ フロートボックス"
+  },
+  {
+   "id": "B50",
+   "orig_range": [
+    213,
+    214
+   ],
+   "cand_range": [
+    148,
+    149
+   ],
+   "orig_lines": "214-214",
+   "cand_lines": "149-149",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "COLON-ENC"
+   ],
+   "primary": "COLON-ENC",
+   "primary_section": 4,
+   "label_prec": {
+    "COLON-ENC": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       213,
+       214
+      ]
+     ],
+     "cand": [
+      [
+       148,
+       149
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[image https://ah-sandbox.wikidot.com/local--files/secret:super-crush-personnels/Main_Screen.png width=\"100%\"]]",
+   "first_added": "[[image https://ah-sandbox.wikidot.com/local--files/secret%3Asuper-crush-personnels/Main_Screen.png width=\"100%\"]]"
+  },
+  {
+   "id": "B51",
+   "orig_range": [
+    215,
+    219
+   ],
+   "cand_range": [
+    150,
+    154
+   ],
+   "orig_lines": "216-219",
+   "cand_lines": "151-154",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 4/4"
+   ],
+   "partial_notes": [],
+   "first_removed": "||~ 类型 || 格斗游戏 ||",
+   "first_added": "||~ ジャンル || 格闘ゲーム ||"
+  },
+  {
+   "id": "B52",
+   "orig_range": [
+    221,
+    222
+   ],
+   "cand_range": [
+    156,
+    157
+   ],
+   "orig_lines": "222-222",
+   "cand_lines": "157-157",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[collapsible show=\"+ 展开代码\" hide=\"- 隐藏代码\"]]",
+   "first_added": "[[collapsible show=\"+ コードを展開\" hide=\"- コードを隠す\"]]"
+  },
+  {
+   "id": "B53",
+   "orig_range": [
+    229,
+    230
+   ],
+   "cand_range": [
+    164,
+    165
+   ],
+   "orig_lines": "230-230",
+   "cand_lines": "165-165",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "@@[[image https://ah-sandbox.wikidot.com/local--files/secret:super-crush-personnels/Main_Screen.png width=\"100%\"]]@@",
+   "first_added": "@@[[image https://ah-sandbox.wikidot.com/local--files/secret%3Asuper-crush-personnels/Main_Screen.png width=\"100%\"]]@@"
+  },
+  {
+   "id": "B54",
+   "orig_range": [
+    231,
+    235
+   ],
+   "cand_range": [
+    166,
+    170
+   ],
+   "orig_lines": "232-235",
+   "cand_lines": "167-170",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "@@||~ 类型 || 格斗游戏 ||@@",
+   "first_added": "@@||~ ジャンル || 格闘ゲーム ||@@"
+  },
+  {
+   "id": "B55",
+   "orig_range": [
+    239,
+    240
+   ],
+   "cand_range": [
+    174,
+    175
+   ],
+   "orig_lines": "240-240",
+   "cand_lines": "175-175",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "使用{{@@[[div class=\"float-box box-left\"]]@@}}创建靠左的悬浮块，使用{{@@[[div class=\"float-box box-right\"]]@@}}创建靠右的悬浮块。悬浮块内部的表格会自动隐去边框，使用{{@@[[div class=\"box-title\"]]@@}}则可使用暗色背景的悬浮块标题。",
+   "first_added": "{{@@[[div class=\"float-box box-left\"]]@@}}で左寄せのフロートボックスを、{{@@[[div class=\"float-box box-right\"]]@@}}で右寄せのフロートボックスを作成できます。フロートボックス内の表は自動的に罫線が隠れます。{{@@[[div class=\"box-title\"]]@@}}を使うと、暗色背景のフロートボックス見出しを使用できます。"
+  },
+  {
+   "id": "B56",
+   "orig_range": [
+    241,
+    242
+   ],
+   "cand_range": [
+    176,
+    177
+   ],
+   "orig_lines": "242-242",
+   "cand_lines": "177-177",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "靠米约题蛋绝击错。画例济占越证另众食千持商硫喜。杨粒协面增观型客杂你一杀宗顾黑离油。职具布轻王殖杨范到门故。象哥尼课太党事己处守朝才批洲游线拉跟，花义历妒况经更虽乙速担点第。助西离季溶缩味很实师吗，亚取创去及背敌案信宽。河响据量苏富德声，贵死损量众靠审层胡对鱼简和身胡眼层万，神措天明心田父地娘儿。班较易待二呀深架尔成洋。言客里思心秋现良说。茶产轮够阳没读会善足步功编识括河。",
+   "first_added": "これはダミーテキストです。テーマの余白、行送り、折り返し、フロートボックス周辺の本文回り込みを確認するために置いています。長めの段落を配置すると、画像や表が本文を押し出さず、画面幅が変わっても読みやすさを保てるかを確認できます。"
+  },
+  {
+   "id": "B57",
+   "orig_range": [
+    243,
+    244
+   ],
+   "cand_range": [
+    178,
+    179
+   ],
+   "orig_lines": "244-244",
+   "cand_lines": "179-179",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "积夫械性慢区宜调商苦。住组无殖孙弦变鱼福陆候针聚苏乡两。弦叶居道著流便亲赶工底率白地取，征门空呢考略杂影其念石花。掉伟将民他商宗专席考底季几略增学金南剂。沿余哪项所终做绝害燃治次握天乡几交极述。照级月教烈右志机高吃术白低油里相间号药。艺下她益皮怀周脸曲配假诉亚肉。型井人考些刚肥引克认祖烟地正企固足，司甲打记宁族服投权训这扩散叶叶较雷苗胞。九跳世肥末收数袁均央。兵施校报末直球营村存山足赵修导简。长钟急族没绍木采块令。",
+   "first_added": "さらに別のダミーテキストです。日本語と英数字が混在する段落でも、文字詰め、行間、句読点の位置、リンクや強調表示の見え方が破綻しないかを確認します。Foundomテーマの背景色、影、見出し、表、引用ブロックが本文の流れに自然に馴染むかを見るための文章です。"
+  },
+  {
+   "id": "B58",
+   "orig_range": [
+    247,
+    248
+   ],
+   "cand_range": [
+    182,
+    183
+   ],
+   "orig_lines": "248-248",
+   "cand_lines": "183-183",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "+++ 维基版头",
+   "first_added": "+++ Wikiヘッダー"
+  },
+  {
+   "id": "B59",
+   "orig_range": [
+    249,
+    250
+   ],
+   "cand_range": [
+    184,
+    185
+   ],
+   "orig_lines": "250-250",
+   "cand_lines": "185-185",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "你可以制作一个自定义的维基版头！使用如下代码：",
+   "first_added": "カスタムWikiヘッダーを作成できます。以下のコードを使用してください。"
+  },
+  {
+   "id": "B60",
+   "orig_range": [
+    253,
+    254
+   ],
+   "cand_range": [
+    188,
+    189
+   ],
+   "orig_lines": "254-254",
+   "cand_lines": "189-189",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "@@[[image 图片链接]]@@",
+   "first_added": "@@[[image 画像リンク]]@@"
+  },
+  {
+   "id": "B61",
+   "orig_range": [
+    257,
+    258
+   ],
+   "cand_range": [
+    192,
+    193
+   ],
+   "orig_lines": "258-258",
+   "cand_lines": "193-193",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "这样做会将相应的图片显示在页面内容区域上方。",
+   "first_added": "この操作により、対応する画像がページ内容領域の上部に表示されます。"
+  },
+  {
+   "id": "B62",
+   "orig_range": [
+    261,
+    262
+   ],
+   "cand_range": [
+    196,
+    197
+   ],
+   "orig_lines": "262-262",
+   "cand_lines": "197-197",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "++ Chara组件",
+   "first_added": "++ Charaコンポーネント"
+  },
+  {
+   "id": "B63",
+   "orig_range": [
+    263,
+    264
+   ],
+   "cand_range": [
+    198,
+    199
+   ],
+   "orig_lines": "264-264",
+   "cand_lines": "199-199",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "这是一个**极端复杂**的组件，用于生成带有图标的悬浮折叠块，具体使用效果参见[[[pedialpha-super-crush-personnels|这篇GoI格式]]]的“角色”部分。由于组件基于一个折叠块工作，因此组件内部的折叠容器必须使用[[[colmod-magic-and-you|多重折叠组件]]]。",
+   "first_added": "これはアイコン付きのフロート型折りたたみブロックを生成する、非常に複雑なコンポーネントです。具体的な使用例は[[[pedialpha-super-crush-personnels|このGoIフォーマット]]]の「キャラクター」節を参照してください。このコンポーネントは折りたたみブロックを基に動作するため、コンポーネント内部の折りたたみコンテナには[[[colmod-magic-and-you|多重折りたたみコンポーネント]]]を使用する必要があります。"
+  },
+  {
+   "id": "B64",
+   "orig_range": [
+    265,
+    266
+   ],
+   "cand_range": [
+    200,
+    201
+   ],
+   "orig_lines": "266-266",
+   "cand_lines": "201-201",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "+++ 结构",
+   "first_added": "+++ 構造"
+  },
+  {
+   "id": "B65",
+   "orig_range": [
+    267,
+    268
+   ],
+   "cand_range": [
+    202,
+    203
+   ],
+   "orig_lines": "268-268",
+   "cand_lines": "203-203",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "Chara组件由一个外容器和可重复使用的子容器构成。外容器是一个带有内联参数的{{@@[[div]]@@}}元素，子容器则通过两个{{@@[[include]]@@}}语法前后包裹，两者的参数设置方法并不一致。",
+   "first_added": "Charaコンポーネントは、外側コンテナと再利用可能な子コンテナで構成されます。外側コンテナはインライン引数を持つ{{@@[[div]]@@}}要素で、子コンテナは2つの{{@@[[include]]@@}}構文で前後を囲みます。両者では引数の設定方法が異なります。"
+  },
+  {
+   "id": "B66",
+   "orig_range": [
+    270,
+    271
+   ],
+   "cand_range": [
+    205,
+    206
+   ],
+   "orig_lines": "271-271",
+   "cand_lines": "206-206",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "@@[[div class=\"charaContainer\" style=\"@@[[span style=\"color: red;\"]]@@flex-wrap: wrap; --chara-image: url(\"https://ah-sandbox.wikidot.com/local--files/secret:super-crush-personnels/Sprite.png\"); --sprite-full-image-size: 2176px 3920px; --sprite-width: 272px; --sprite-height: 280px; --left-transform: -72px; --top-transform: -12px;@@[[/span]]@@\"]]@@",
+   "first_added": "@@[[div class=\"charaContainer\" style=\"@@[[span style=\"color: red;\"]]@@flex-wrap: wrap; --chara-image: url(\"https://ah-sandbox.wikidot.com/local--files/secret%3Asuper-crush-personnels/Sprite.png\"); --sprite-full-image-size: 2176px 3920px; --sprite-width: 272px; --sprite-height: 280px; --left-transform: -72px; --top-transform: -12px;@@[[/span]]@@\"]]@@"
+  },
+  {
+   "id": "B67",
+   "orig_range": [
+    273,
+    274
+   ],
+   "cand_range": [
+    208,
+    209
+   ],
+   "orig_lines": "274-274",
+   "cand_lines": "209-209",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "ESCAPED-INCLUDE",
+    "INCLUDE-REPOINT"
+   ],
+   "primary": "INCLUDE-REPOINT",
+   "primary_section": 2,
+   "label_prec": {
+    "INCLUDE-REPOINT": "A",
+    "ESCAPED-INCLUDE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "INCLUDE-REPOINT": {
+     "orig": [
+      [
+       273,
+       274
+      ]
+     ],
+     "cand": [
+      [
+       208,
+       209
+      ]
+     ]
+    },
+    "ESCAPED-INCLUDE": {
+     "orig": [
+      [
+       273,
+       274
+      ]
+     ],
+     "cand": [
+      [
+       208,
+       209
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "@@[[include :scp-wiki-cn:theme:foundom inc-chara-start=--]@@[[span style=\"color: green;\"]]@@ | id=1 | x=0 | y=0 | ani=8-4@@[[/span]]@@]] @@",
+   "first_added": "@@[[include :scp-jp:theme:foundom inc-chara-start=--]@@[[span style=\"color: green;\"]]@@ | id=1 | x=0 | y=0 | ani=8-4@@[[/span]]@@]] @@"
+  },
+  {
+   "id": "B68",
+   "orig_range": [
+    275,
+    276
+   ],
+   "cand_range": [
+    210,
+    211
+   ],
+   "orig_lines": "276-276",
+   "cand_lines": "211-211",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "@@++ 特工八川@@",
+   "first_added": "@@++ エージェント八川@@"
+  },
+  {
+   "id": "B69",
+   "orig_range": [
+    277,
+    278
+   ],
+   "cand_range": [
+    212,
+    213
+   ],
+   "orig_lines": "278-278",
+   "cand_lines": "213-213",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "ESCAPED-INCLUDE",
+    "INCLUDE-REPOINT"
+   ],
+   "primary": "INCLUDE-REPOINT",
+   "primary_section": 2,
+   "label_prec": {
+    "INCLUDE-REPOINT": "A",
+    "ESCAPED-INCLUDE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "INCLUDE-REPOINT": {
+     "orig": [
+      [
+       277,
+       278
+      ]
+     ],
+     "cand": [
+      [
+       212,
+       213
+      ]
+     ]
+    },
+    "ESCAPED-INCLUDE": {
+     "orig": [
+      [
+       277,
+       278
+      ]
+     ],
+     "cand": [
+      [
+       212,
+       213
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "@@[[include :scp-wiki-cn:theme:foundom inc-chara-end=--]]] @@",
+   "first_added": "@@[[include :scp-jp:theme:foundom inc-chara-end=--]]] @@"
+  },
+  {
+   "id": "B70",
+   "orig_range": [
+    283,
+    284
+   ],
+   "cand_range": [
+    218,
+    219
+   ],
+   "orig_lines": "284-284",
+   "cand_lines": "219-219",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "以上**黑色**部分为外部容器，使用此组件需要用这一容器包裹所有子容器；##blue|**蓝色**##部分为子容器，对应每一个折叠块（例如文豪野拳中的每个角色，都使用了一次这段代码），外部容器是一组{{@@[[div]]@@}}语法，子容器则被两个分别标记为start和end的{{@@[[include]]@@}}语法包裹。##red|**红色**##部分为外部容器的参数，在此处设置的参数会影响到每一个子容器；##green|**绿色**##部分为子容器参数，在此处设置的参数只会影响到相对应的容器。",
+   "first_added": "上記の**黒色**部分が外側コンテナです。このコンポーネントを使用するには、このコンテナですべての子コンテナを包む必要があります。##blue|**青色**##部分は子コンテナで、各折りたたみブロックに対応します（たとえば文豪野拳の各キャラクターには、このコードが1回ずつ使われています）。外側コンテナは一組の{{@@[[div]]@@}}構文で、子コンテナはstartとendで示された2つの{{@@[[include]]@@}}構文に囲まれます。##red|**赤色**##部分は外側コンテナの引数で、ここで設定した引数は各子コンテナすべてに影響します。##green|**緑色**##部分は子コンテナ引数で、対応するコンテナのみに影響します。"
+  },
+  {
+   "id": "B71",
+   "orig_range": [
+    285,
+    291
+   ],
+   "cand_range": [
+    220,
+    221
+   ],
+   "orig_lines": "286-291",
+   "cand_lines": "221-221",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[module CSS]]",
+   "first_added": "+++ ##red|外側コンテナ引数##"
+  },
+  {
+   "id": "B72",
+   "orig_range": [
+    292,
+    295
+   ],
+   "cand_range": [
+    222,
+    223
+   ],
+   "orig_lines": "293-295",
+   "cand_lines": "223-223",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "+++ ##red|外部容器参数##",
+   "first_added": "外側コンテナ引数はCSS引数を使用します。引数名と値はコロンで接続し、異なる引数はセミコロンで区切ります。具体的な形式は前述の例に従ってください。既定値がなく、特別な説明もないものは必須項目です。"
+  },
+  {
+   "id": "B73",
+   "orig_range": [
+    297,
+    311
+   ],
+   "cand_range": [
+    225,
+    239
+   ],
+   "orig_lines": "298-311",
+   "cand_lines": "226-239",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 14/14"
+   ],
+   "partial_notes": [],
+   "first_removed": "||~ 属性名 ||~ 解释 ||~ 默认值 ||",
+   "first_added": "||~ プロパティ名 ||~ 説明 ||~ 既定値 ||"
+  },
+  {
+   "id": "B74",
+   "orig_range": [
+    313,
+    314
+   ],
+   "cand_range": [
+    241,
+    242
+   ],
+   "orig_lines": "314-314",
+   "cand_lines": "242-242",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "+++ ##red|子容器参数##",
+   "first_added": "+++ ##red|子コンテナ引数##"
+  },
+  {
+   "id": "B75",
+   "orig_range": [
+    315,
+    316
+   ],
+   "cand_range": [
+    243,
+    244
+   ],
+   "orig_lines": "316-316",
+   "cand_lines": "244-244",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "外部容器参数使用include参数，使用等于号连接参数名和参数值，使用竖线分隔不同参数，具体格式可仿照前述示例。若无默认值且无特别说明则为必填项。",
+   "first_added": "子コンテナ引数はinclude引数を使用します。引数名と値は等号で接続し、異なる引数は縦棒で区切ります。具体的な形式は前述の例に従ってください。既定値がなく、特別な説明もないものは必須項目です。"
+  },
+  {
+   "id": "B76",
+   "orig_range": [
+    318,
+    325
+   ],
+   "cand_range": [
+    246,
+    253
+   ],
+   "orig_lines": "319-325",
+   "cand_lines": "247-253",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 7/7"
+   ],
+   "partial_notes": [],
+   "first_removed": "||~ 属性名 ||~ 解释 ||~ 默认值 ||",
+   "first_added": "||~ プロパティ名 ||~ 説明 ||~ 既定値 ||"
+  },
+  {
+   "id": "B77",
+   "orig_range": [
+    330,
+    331
+   ],
+   "cand_range": [
+    258,
+    259
+   ],
+   "orig_lines": "331-331",
+   "cand_lines": "259-259",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "+ 源代码",
+   "first_added": "+ ソースコード"
+  },
+  {
+   "id": "B78",
+   "orig_range": [
+    332,
+    334
+   ],
+   "cand_range": [
+    260,
+    273
+   ],
+   "orig_lines": "333-334",
+   "cand_lines": "261-273",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[collapsible show=\"+ 查看源码\" hide=\"- 隐藏源码\"]]",
+   "first_added": "[[collapsible show=\"+ ソースコードを表示\" hide=\"- ソースコードを隠す\"]]"
+  },
+  {
+   "id": "B79",
+   "orig_range": [
+    968,
+    971
+   ],
+   "cand_range": [
+    907,
+    907
+   ],
+   "orig_lines": "969-971",
+   "cand_lines": "at 908",
+   "channel_pair": [
+    "code-css",
+    "body"
+   ],
+   "labels": [
+    "EXHIBIT-RESTRUCTURE"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "EXHIBIT-RESTRUCTURE": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "EXHIBIT-RESTRUCTURE": {}
+   },
+   "notes": [
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[/code]]",
+   "first_added": ""
+  },
+  {
+   "id": "B80",
+   "orig_range": [
+    1007,
+    1007
+   ],
+   "cand_range": [
+    943,
+    951
+   ],
+   "orig_lines": "at 1008",
+   "cand_lines": "944-951",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "DRAFT-HOST",
+    "SELF-DELIVERY"
+   ],
+   "primary": "SELF-DELIVERY",
+   "primary_section": 3,
+   "label_prec": {
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "SELF-DELIVERY": {
+     "orig": [],
+     "cand": [
+      [
+       945,
+       946
+      ],
+      [
+       949,
+       950
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       945,
+       946
+      ],
+      [
+       949,
+       950
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": ""
+  }
+ ],
+ "derived_presence": {
+  "HTTP-KEPT": {
+   "class": "(ii) posting rewrite",
+   "count": 11,
+   "lines": [
+    "297-297",
+    "298-298",
+    "299-299",
+    "301-301",
+    "302-302"
+   ],
+   "example": "--logo-foundom: url(\"data:image/svg+xml,%3Csvg version='1.1' id='图层_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 500 500' style='enable-background:new 0 0 500 500;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%23FFFFFF;%7D .st1%7Bfill:none;stroke:%23FFFFFF;stroke-width:22.6671677;stroke-miterlimit:10;%7D .st2%7Bfill:none;stroke:%23FFFFFF;stroke-width:15.1114445;stroke-miterlimit:10;%7D%0A%3C/style%3E%3Cg%3E%3Cpath class='st0' d='M76.6972656,475.2001953c-0.5288086,0-0.9609375-0.1679688-1.2958984-0.5039063 c-0.3364258-0.3349609-0.5043945-0.7675781-0.5043945-1.2958984v-46.7998047c0-0.5283203,0.1679688-0.9599609,0.5043945-1.296875 c0.3349609-0.3349609,0.7670898-0.5039063,1.2958984-0.5039063h32.7597656c0.527832,0,0.972168,0.1689453,1.3320313,0.5039063 c0.3598633,0.3369141,0.5400391,0.7685547,0.5400391,1.296875v6.9111328c0,0.4804688-0.1801758,0.9003906-0.5400391,1.2607422 c-0.3598633,0.359375-0.8041992,0.5400391-1.3320313,0.5400391H87.137207v11.0878906h20.8798828 c0.527832,0,0.972168,0.1796875,1.3320313,0.5400391c0.3598633,0.359375,0.5400391,0.8037109,0.5400391,1.3320313v6.7675781 c0,0.5292969-0.1801758,0.9609375-0.5400391,1.2958984c-0.3598633,0.3369141-0.8041992,0.5039063-1.3320313,0.5039063H87.137207 v16.5605469c0,0.5283203-0.1689453,0.9609375-0.5039063,1.2958984c-0.3364258,0.3359375-0.7685547,0.5039063-1.2963867,0.5039063 H76.6972656z'/%3E%3Cpath class='st0' d='M139.1928711,475.9199219c-4.3681641,0-8.171875-0.7197266-11.4116211-2.1601563 c-3.2402344-1.4394531-5.7602539-3.6103516-7.5600586-6.515625c-1.800293-2.9033203-2.796875-6.5400391-2.9882813-10.9082031 c-0.0483398-2.0634766-0.0717773-4.1269531-0.0717773-6.1914063c0-2.0634766,0.0234375-4.1513672,0.0717773-6.2646484 c0.1914063-4.3193359,1.2119141-7.9560547,3.0600586-10.9072266c1.847168-2.9521484,4.3920898-5.171875,7.6323242-6.6601563 c3.2397461-1.4873047,6.9951172-2.2324219,11.2675781-2.2324219c4.3203125,0,8.1000977,0.7451172,11.340332,2.2324219 c3.2397461,1.4882813,5.7958984,3.7080078,7.6679688,6.6601563c1.8720703,2.9511719,2.8798828,6.5878906,3.0239258,10.9072266 c0.0957031,2.1132813,0.144043,4.2011719,0.144043,6.2646484c0,2.0644531-0.0483398,4.1279297-0.144043,6.1914063 c-0.1923828,4.3681641-1.2001953,8.0048828-3.0239258,10.9082031c-1.824707,2.9052734-4.3447266,5.0761719-7.5600586,6.515625 C147.4248047,475.2001953,143.6088867,475.9199219,139.1928711,475.9199219z M139.1928711,465.9121094 c2.6396484,0,4.7993164-0.7919922,6.4799805-2.3759766c1.6796875-1.5839844,2.5673828-4.1279297,2.6640625-7.6318359 c0.0957031-2.1113281,0.144043-4.0917969,0.144043-5.9404297c0-1.8466797-0.0483398-3.8037109-0.144043-5.8671875 c-0.0483398-2.3515625-0.4799805-4.2597656-1.2958984-5.7246094c-0.8168945-1.4638672-1.8842773-2.5439453-3.2041016-3.2402344 c-1.3208008-0.6953125-2.8686523-1.0439453-4.644043-1.0439453c-1.6806641,0-3.1923828,0.3486328-4.5356445,1.0439453 c-1.3447266,0.6962891-2.4121094,1.7763672-3.2041016,3.2402344c-0.7919922,1.4648438-1.2363281,3.3730469-1.3320313,5.7246094 c-0.0483398,2.0634766-0.0717773,4.0205078-0.0717773,5.8671875c0,1.8486328,0.0234375,3.8291016,0.0717773,5.9404297 c0.144043,3.5039063,1.0439453,6.0478516,2.7001953,7.6318359 C134.4770508,465.1201172,136.6010742,465.9121094,139.1928711,465.9121094z'/%3E%3Cpath class='st0' d='M190.8173828,475.9199219c-4.2729492,0-8.0166016-0.7080078-11.2319336-2.1240234 c-3.2163086-1.4150391-5.7128906-3.5996094-7.487793-6.5517578c-1.7768555-2.9521484-2.6640625-6.7070313-2.6640625-11.2675781 v-29.3759766c0-0.5283203,0.1674805-0.9599609,0.5039063-1.296875c0.3349609-0.3349609,0.7670898-0.5039063,1.2958984-0.5039063 h8.7841797c0.5273438,0,0.9716797,0.1689453,1.3320313,0.5039063c0.3598633,0.3369141,0.5400391,0.7685547,0.5400391,1.296875 v29.3037109c0,3.2646484,0.7792969,5.7001953,2.3398438,7.3076172c1.559082,1.609375,3.7553711,2.4121094,6.5878906,2.4121094 c2.7832031,0,4.9555664-0.8027344,6.5161133-2.4121094c1.559082-1.6074219,2.3398438-4.0429688,2.3398438-7.3076172v-29.3037109 c0-0.5283203,0.1801758-0.9599609,0.5400391-1.296875c0.3598633-0.3349609,0.8032227-0.5039063,1.3320313-0.5039063h8.7841797 c0.5273438,0,0.9594727,0.1689453,1.2958984,0.5039063c0.3349609,0.3369141,0.5039063,0.7685547,0.5039063,1.296875v29.3759766 c0,4.5605469-0.8764648,8.3154297-2.6279297,11.2675781c-1.7529297,2.9521484-4.2246094,5.1367188-7.4160156,6.5517578 C198.8925781,475.2119141,195.137207,475.9199219,190.8173828,475.9199219z'/%3E%3Cpath class='st0' d='M223.7207031,475.2001953c-0.5288086,0-0.9609375-0.1679688-1.2958984-0.5039063 c-0.3364258-0.3349609-0.5043945-0.7675781-0.5043945-1.2958984v-46.7998047c0-0.5283203,0.1679688-0.9599609,0.5043945-1.296875 c0.3349609-0.3349609,0.7670898-0.5039063,1.2958984-0.5039063h7.2719727c0.7670898,0,1.3320313,0.1806641,1.6923828,0.5400391 c0.359375,0.3603516,0.5859375,0.6123047,0.6835938,0.7568359l18.1445313,28.5117188v-28.0078125 c0-0.5283203,0.1679688-0.9599609,0.5039063-1.296875c0.3339844-0.3349609,0.7675781-0.5039063,1.2949219-0.5039063h8.1367188 c0.5273438,0,0.9726563,0.1689453,1.3320313,0.5039063c0.359375,0.3369141,0.5390625,0.7685547,0.5390625,1.296875v46.7998047 c0,0.4804688-0.1796875,0.8994141-0.5390625,1.2597656s-0.78125,0.5400391-1.2597656,0.5400391h-7.34375 c-0.7695313,0-1.3222656-0.1796875-1.65625-0.5400391c-0.3359375-0.3603516-0.5761719-0.6123047-0.7207031-0.7558594 l-18.0722656-27.5039063v27c0,0.5283203-0.1679688,0.9609375-0.5039063,1.2958984 c-0.3359375,0.3359375-0.7680664,0.5039063-1.2954102,0.5039063H223.7207031z'/%3E%3Cpath class='st0' d='M275.3442383,475.2001953c-0.5292969,0-0.9609375-0.1679688-1.2958984-0.5039063 c-0.3369141-0.3349609-0.5039063-0.7675781-0.5039063-1.2958984v-46.7998047c0-0.5283203,0.1669922-0.9599609,0.5039063-1.296875 c0.3349609-0.3349609,0.7666016-0.5039063,1.2958984-0.5039063h18.5039063c4.7519531,0,8.7587891,0.7568359,12.0244141,2.2685547 c3.2636719,1.5117188,5.7832031,3.7197266,7.5595703,6.6240234c1.7753906,2.9042969,2.7109375,6.4921875,2.8076172,10.7636719 c0.0957031,2.1132813,0.1445313,3.9599609,0.1445313,5.5439453s-0.0488281,3.4091797-0.1445313,5.4726563 c-0.1435547,4.4638672-1.0556641,8.1601563-2.7353516,11.0878906c-1.6806641,2.9277344-4.1289063,5.1005859-7.3447266,6.515625 c-3.2158203,1.4160156-7.1992188,2.1240234-11.9511719,2.1240234H275.3442383z M286.0004883,465.1923828h7.8476563 c2.2070313,0,4.0195313-0.3349609,5.4355469-1.0078125c1.4160156-0.671875,2.484375-1.7285156,3.2041016-3.1679688 c0.7207031-1.4404297,1.1035156-3.3359375,1.1523438-5.6884766c0.046875-1.3916016,0.0830078-2.6396484,0.1083984-3.7441406 c0.0234375-1.1035156,0.0234375-2.2070313,0-3.3115234c-0.0253906-1.1035156-0.0615234-2.328125-0.1083984-3.671875 c-0.0966797-3.359375-0.9716797-5.8320313-2.6279297-7.4160156s-4.1650391-2.3759766-7.5244141-2.3759766h-7.4873047V465.1923828z' /%3E%3Cpath class='st0' d='M345.3276367,475.9199219c-4.3691406,0-8.171875-0.7197266-11.4121094-2.1601563 c-3.2402344-1.4394531-5.7597656-3.6103516-7.5605469-6.515625c-1.7998047-2.9033203-2.7958984-6.5400391-2.9873047-10.9082031 c-0.0488281-2.0634766-0.0722656-4.1269531-0.0722656-6.1914063c0-2.0634766,0.0234375-4.1513672,0.0722656-6.2646484 c0.1914063-4.3193359,1.2109375-7.9560547,3.0595703-10.9072266c1.8476563-2.9521484,4.3925781-5.171875,7.6318359-6.6601563 c3.2402344-1.4873047,6.9951172-2.2324219,11.2685547-2.2324219c4.3193359,0,8.0996094,0.7451172,11.3398438,2.2324219 c3.2402344,1.4882813,5.7958984,3.7080078,7.6679688,6.6601563c1.8720703,2.9511719,2.8798828,6.5878906,3.0234375,10.9072266 c0.0957031,2.1132813,0.1445313,4.2011719,0.1445313,6.2646484c0,2.0644531-0.0488281,4.1279297-0.1445313,6.1914063 c-0.1923828,4.3681641-1.2001953,8.0048828-3.0234375,10.9082031c-1.8251953,2.9052734-4.3447266,5.0761719-7.5605469,6.515625 C353.559082,475.2001953,349.7426758,475.9199219,345.3276367,475.9199219z M345.3276367,465.9121094 c2.6386719,0,4.7988281-0.7919922,6.4794922-2.3759766c1.6796875-1.5839844,2.5673828-4.1279297,2.6640625-7.6318359 c0.0957031-2.1113281,0.1445313-4.0917969,0.1445313-5.9404297c0-1.8466797-0.0488281-3.8037109-0.1445313-5.8671875 c-0.0478516-2.3515625-0.4804688-4.2597656-1.2958984-5.7246094c-0.8164063-1.4638672-1.8847656-2.5439453-3.2041016-3.2402344 c-1.3203125-0.6953125-2.8681641-1.0439453-4.6435547-1.0439453c-1.6806641,0-3.1933594,0.3486328-4.5361328,1.0439453 c-1.3447266,0.6962891-2.4121094,1.7763672-3.2041016,3.2402344c-0.7919922,1.4648438-1.2363281,3.3730469-1.3320313,5.7246094 c-0.0488281,2.0634766-0.0722656,4.0205078-0.0722656,5.8671875c0,1.8486328,0.0234375,3.8291016,0.0722656,5.9404297 c0.1435547,3.5039063,1.0439453,6.0478516,2.7001953,7.6318359S342.7358398,465.9121094,345.3276367,465.9121094z'/%3E%3Cpath class='st0' d='M377.7993164,475.2001953c-0.4804688,0-0.9003906-0.1679688-1.2597656-0.5039063 c-0.3603516-0.3349609-0.5400391-0.7675781-0.5400391-1.2958984v-46.7998047c0-0.5283203,0.1796875-0.9599609,0.5400391-1.296875 c0.359375-0.3349609,0.7792969-0.5039063,1.2597656-0.5039063h7.4882813c0.7197266,0,1.2705078,0.2050781,1.6552734,0.6123047 c0.3837891,0.4082031,0.6240234,0.7089844,0.7207031,0.9003906l12.8876953,23.328125l12.9599609-23.328125 c0.0957031-0.1914063,0.3349609-0.4921875,0.7197266-0.9003906c0.3837891-0.4072266,0.9599609-0.6123047,1.7285156-0.6123047 h7.34375c0.5273438,0,0.9599609,0.1689453,1.2958984,0.5039063c0.3349609,0.3369141,0.5039063,0.7685547,0.5039063,1.296875 v46.7998047c0,0.5283203-0.1689453,0.9609375-0.5039063,1.2958984c-0.3359375,0.3359375-0.7685547,0.5039063-1.2958984,0.5039063 h-8.2080078c-0.4804688,0-0.8886719-0.1679688-1.2236328-0.5039063c-0.3369141-0.3349609-0.5039063-0.7675781-0.5039063-1.2958984 v-27.7197266l-8.4960938,15.7675781c-0.2412109,0.4316406-0.5527344,0.8164063-0.9365234,1.1523438 c-0.3847656,0.3359375-0.9121094,0.5039063-1.5839844,0.5039063h-3.5996094c-0.6728516,0-1.1884766-0.1679688-1.5478516-0.5039063 c-0.3603516-0.3359375-0.6611328-0.7207031-0.9003906-1.1523438l-8.4960938-15.7675781v27.7197266 c0,0.5283203-0.1689453,0.9609375-0.5039063,1.2958984c-0.3359375,0.3359375-0.7685547,0.5039063-1.2958984,0.5039063H377.7993164z '/%3E%3C/g%3E%3Cpath class='st1' d='M361.5979919,219.6902161c0,61.5504456-49.8964539,111.4468994-111.4468994,111.4468994 s-111.4468994-49.8964539-111.4468994-111.4468994l42.5383453,11.2761841c0,0-25.3082275-90.7985229,58.4290009-149.6598206 c0,0-4.9051208,52.2043839,62.3649597,120.5255508l34.3357544-42.7445374 C336.3722534,159.0875854,361.5979919,183.1751862,361.5979919,219.6902161z'/%3E%3Cpath class='st2' d='M249.9999695,398.8930664c-21.0615692,0-41.6887054-3.6267395-61.314682-10.7669067 c-17.8126068-6.4979248-34.3974152-15.7348022-49.3388672-27.4839478l-32.8862839,6.8945923L50,269.6902161l22.4971619-25.1227875 c-1.1522446-8.3301849-1.7567062-16.7737122-1.7567062-25.1416626c0-37.1363678,11.2391434-72.7805023,32.5085068-103.078949 c10.237999-14.5825424,22.5538254-27.5406036,36.6074677-38.4963989 c13.2225189-10.3324585,27.7483978-18.7004166,43.2376251-24.9338875l10.4268951-31.8095894H306.460144l10.4458008,31.8095894 c15.4892273,6.2334709,30.0151062,14.6203194,43.2376099,24.9527779 c14.0536499,10.9746857,26.3694763,23.9327469,36.6074829,38.5152893 c21.2693481,30.2795563,32.5084839,65.9236755,32.5084839,103.0600586c0,8.3868561-0.5855713,16.8114777-1.7567139,25.1416626 L450,269.7090759l-56.4790344,97.8277283l-32.886261-6.9134827c-14.9414368,11.7491455-31.5262756,21.0049133-49.3388977,27.4839478 C291.6886902,395.2663269,271.061554,398.8930664,249.9999695,398.8930664z'/%3E%3C/svg%3E\");"
+  }
+ },
+ "summary": {
+  "blocks": 80,
+  "specific": 40,
+  "heuristic": 37,
+  "residue": 3,
+  "skipped": 0,
+  "reindent_blocks": 0,
+  "label_counts": {
+   "SELF-DELIVERY": 4,
+   "IFTAGS": 2,
+   "TRANS-UNANCHORED": 38,
+   "CREDIT-PREVIEW": 1,
+   "CREDIT-PROSE": 1,
+   "TASL-FIELDS": 1,
+   "TRANSLATION-ANCHORED": 32,
+   "GLYPH-FORM": 1,
+   "EXHIBIT-RESTRUCTURE": 2,
+   "INCLUDE-REPOINT": 3,
+   "COLON-ENC": 1,
+   "ESCAPED-INCLUDE": 2,
+   "COMMENT-TEXT": 1,
+   "DRAFT-HOST": 1
+  }
+ },
+ "residue": [
+  "B7",
+  "B53",
+  "B66"
+ ],
+ "skeleton": {
+  "sha256": "f3989ae906a337d153228c44442d21b864f109512436832c105b446ea82925f5",
+  "status": "written (new)"
+ }
+}

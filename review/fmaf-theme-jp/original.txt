@@ -1,0 +1,163 @@
+[[module CSS]]
+@import url(https://scpko.wdfiles.com/local--code/theme%3Afmaf-theme/1);
+[[/module]]
+
+[[iftags +테마]]
+
+[[>]]
+[[module rate]]
+[[/>]]
+
+[[include :scpko:info:start]]
+**기동항공대 테마**
+
+**제작:** [[*user thd-glasses]]
+
+**사용 이미지:**
+* [[*user thd-glasses]]가 제작함.
+
+**사용 폰트:**
+# https://fonts.google.com/specimen/Chakra+Petch
+# https://noonnu.cc/font_page/920
+[[include :scpko:info:end]]
+
+[[tabview]]
+[[tab Instruction]]
+
++ 사용 방법: 기동항공대 CSS 테마
+* [[[fmaf-hub|기동항공대]]]를 위한 전용 테마입니다.
+* 본 테마를 적용할 페이지 최상단에 다음 구문을 삽입하세요.
+> @@[[include :scpko:theme:fmaf-theme]]@@
+
++ How to use: MOBILE AIR FORCE CSS THEME
+* This is the original theme for [[[fmaf-hub|Mobile Air Force]]].
+* Add the following code on the top of your page.
+> @@[[include :scpko:theme:fmaf-theme]]@@
+
+[[/tab]]
+[[tab design]]
+[[table style="width: 90%; margin: 0 auto;"]]
+[[row]][[cell style="width: 50%;"]]
+[[=image https://scpko.wdfiles.com/local--files/fmaf-hub/FMAF-a-17.png]]
+[[/cell]][[cell]]
+[[=image https://scpko.wdfiles.com/local--files/fmaf-hub/FMAF.png]]
+[[/cell]][[/row]]
+[[/table]]
+[[/tab]]
+[[/tabview]]
+
+@@@@
+@@@@
+
+[[code type="css"]]
+@charset "utf-8";
+
+/*
+    기동항공대 CSS 테마
+    [2020 Wikidot Theme]
+    Created for SCP FMAF by thd-glasses
+    The FMAF Logos were created by thd-glasses and is licensed under CC-BY-SA 3.0.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap');
+@font-face {
+    font-family: 'EliceDigitalBaeum_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EliceDigitalBaeum_Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+ #header {
+     background-image: url(https://scpko.wdfiles.com/local--files/theme%3Afmaf-theme/FMAF_logo.png);
+}
+
+ #header h1 a {
+     color: transparent;
+     font-size: 150%;
+     text-shadow: none;
+}
+
+ #header h1 a::before {
+    content: "기동항공대";
+    font-family: "Chakra Petch", "EliceDigitalBaeum_Bold", sans-serif;
+    font-weight: 700;
+    color: #eee;
+    text-shadow: 3px 3px 5px #000000;
+}
+
+ #header h2 span {
+     font-size: 120%;
+     color: transparent;
+     text-shadow: none;
+}
+ #header h2 span::before {
+    content: '알파-17 작전사령부';
+    font-family: "Chakra Petch", "EliceDigitalBaeum_Bold", sans-serif;
+    color: #f0f0c0;
+    text-shadow: 1px 1px 1px #000000;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+}
+
+ #side-bar .side-block {
+     border-radius: 0px;
+}
+
+.yui-nav {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.yui-nav li {
+  display: flex;
+  flex-grow: 2;
+  margin: 0;
+}
+
+.yui-nav li a {
+  width: 100%;
+  text-align: center;
+}
+
+.yui-navset .yui-content {
+  border: none;
+  border-bottom: 2px solid #641527;
+  background-color: #F9F9F9;
+  padding: 15px;
+}
+
+.yui-navset .yui-nav a, .yui-navset .yui-navset-top .yui-nav a {
+  background:#FFF;
+  border-top: solid #641527 2px;
+  border-left: solid #EDD 1px;
+  border-right: solid #EDD 1px;
+  border-bottom: none;
+  color:#000;
+}
+
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a:focus, /* no focus effect for selected */
+.yui-navset .yui-nav .selected a:hover { /* no hover effect for selected */
+  background: linear-gradient(to bottom, #782637,#641527); /* selected tab background */
+  color: #FFF;
+}
+
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:focus {
+  background: #DDD;
+  text-decoration: none;
+}
+
+.yui-navset .yui-nav,
+.yui-navset .yui-navset-top .yui-nav {
+  border-color: #641527;
+}
+
+@media (min-width: 979px) {
+  #header { background-position: 10px 30px; }
+}
+[[/code]]
+
+[[/iftags]]

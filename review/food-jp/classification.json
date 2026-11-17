@@ -1,0 +1,521 @@
+{
+ "tool": "classify_hunks.py",
+ "classifier_version": "0.1.0",
+ "signature_table_version": "2026-11-17.1",
+ "theme": {
+  "dir": "food-jp",
+  "cand_fullname": "theme:food-jp",
+  "orig_fullname": "theme:food",
+  "wiki": "scp-wiki-cn",
+  "revision": "40",
+  "kind": "standard",
+  "verdict": "PASS",
+  "original_file": "food-jp/original.txt",
+  "candidate_file": "food-jp/candidate.txt",
+  "original_sha256": "2e73fa341f96e111a7d00cd1f615ef79e425880aa8d2128b2f75b127dbbf1ce3",
+  "candidate_sha256": "80e75915a5259c3be6c8ff2eac88a4f59a64d07909a31468ee27bbfea4ba8d77",
+  "original_lines": 370,
+  "candidate_lines": 381
+ },
+ "topology": {
+  "original_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     5,
+     11
+    ],
+    "lines": 6
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     12,
+     16
+    ],
+    "lines": 4
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     17,
+     129
+    ],
+    "lines": 112
+   },
+   {
+    "kind": "code-other",
+    "range": [
+     245,
+     368
+    ],
+    "lines": 123
+   }
+  ],
+  "candidate_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     4,
+     8
+    ],
+    "lines": 4
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     144,
+     370
+    ],
+    "lines": 226
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     374,
+     377
+    ],
+    "lines": 3
+   }
+  ],
+  "moves": [
+   {
+    "from_kind": "module-css",
+    "to_kind": "code-css",
+    "orig_range": [
+     17,
+     129
+    ],
+    "cand_range": [
+     144,
+     370
+    ],
+    "similarity": 0.976,
+    "basis": "content"
+   },
+   {
+    "from_kind": "code-other",
+    "to_kind": "code-css",
+    "orig_range": [
+     245,
+     368
+    ],
+    "cand_range": [
+     144,
+     370
+    ],
+    "similarity": 0.989,
+    "basis": "content"
+   }
+  ],
+  "external_own_delivery": false
+ },
+ "blocks": [
+  {
+   "id": "B1",
+   "orig_range": [
+    0,
+    3
+   ],
+   "cand_range": [
+    0,
+    3
+   ],
+   "orig_lines": "1-3",
+   "cand_lines": "1-3",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "BARE-RATE-DEL"
+   ],
+   "primary": "BARE-RATE-DEL",
+   "primary_section": 1,
+   "label_prec": {
+    "BARE-RATE-DEL": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "BARE-RATE-DEL": {
+     "orig": [
+      [
+       1,
+       2
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[>]]",
+   "first_added": "[[iftags]]"
+  },
+  {
+   "id": "B2",
+   "orig_range": [
+    4,
+    10
+   ],
+   "cand_range": [
+    4,
+    7
+   ],
+   "orig_lines": "5-10",
+   "cand_lines": "5-7",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "CSS-BODY"
+   ],
+   "primary": "CSS-BODY",
+   "primary_section": 8,
+   "label_prec": {
+    "CSS-BODY": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "CSS-BODY": {}
+   },
+   "notes": [
+    "no other signature matched"
+   ],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": "[[module css]]"
+  },
+  {
+   "id": "B3",
+   "orig_range": [
+    12,
+    14
+   ],
+   "cand_range": [
+    9,
+    13
+   ],
+   "orig_lines": "13-14",
+   "cand_lines": "10-13",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[module css]]",
+   "first_added": "[[include :scp-jp:component:interwiki-style"
+  },
+  {
+   "id": "B4",
+   "orig_range": [
+    15,
+    16
+   ],
+   "cand_range": [
+    14,
+    18
+   ],
+   "orig_lines": "16-16",
+   "cand_lines": "15-18",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[/module]]",
+   "first_added": "[[include :scp-jp:component:interwiki-style"
+  },
+  {
+   "id": "B5",
+   "orig_range": [
+    17,
+    18
+   ],
+   "cand_range": [
+    19,
+    146
+   ],
+   "orig_lines": "18-18",
+   "cand_lines": "20-146",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "CREDIT-PREVIEW",
+    "DELIVERY-MOVE",
+    "IFTAGS",
+    "TASL-FIELDS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "CREDIT-PREVIEW",
+   "primary_section": 1,
+   "label_prec": {
+    "CREDIT-PREVIEW": "A",
+    "TASL-FIELDS": "A",
+    "IFTAGS": "A",
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "CREDIT-PREVIEW": {
+     "cand": [
+      [
+       23,
+       24
+      ],
+      [
+       32,
+       33
+      ]
+     ]
+    },
+    "TASL-FIELDS": {
+     "cand": [
+      [
+       24,
+       32
+      ]
+     ]
+    },
+    "IFTAGS": {
+     "orig": [],
+     "cand": [
+      [
+       21,
+       22
+      ]
+     ]
+    },
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "orig": [
+      [
+       17,
+       18
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[module CSS]]",
+   "first_added": "[[include :scp-jp:component:centered-header-bhl]]"
+  },
+  {
+   "id": "B6",
+   "orig_range": [
+    125,
+    247
+   ],
+   "cand_range": [
+    253,
+    253
+   ],
+   "orig_lines": "126-247",
+   "cand_lines": "at 254",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [
+    "EXHIBIT-RESTRUCTURE",
+    "IFTAGS"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "IFTAGS": "A",
+    "EXHIBIT-RESTRUCTURE": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "IFTAGS": {
+     "orig": [
+      [
+       132,
+       133
+      ]
+     ],
+     "cand": []
+    },
+    "EXHIBIT-RESTRUCTURE": {}
+   },
+   "notes": [
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced"
+   ],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": ""
+  },
+  {
+   "id": "B7",
+   "orig_range": [
+    363,
+    367
+   ],
+   "cand_range": [
+    369,
+    369
+   ],
+   "orig_lines": "364-367",
+   "cand_lines": "at 370",
+   "channel_pair": [
+    "code-other",
+    "body"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": ""
+  },
+  {
+   "id": "B8",
+   "orig_range": [
+    368,
+    368
+   ],
+   "cand_range": [
+    370,
+    371
+   ],
+   "orig_lines": "at 369",
+   "cand_lines": "371-371",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": "[[/collapsible]]"
+  },
+  {
+   "id": "B9",
+   "orig_range": [
+    370,
+    370
+   ],
+   "cand_range": [
+    373,
+    381
+   ],
+   "orig_lines": "at 371",
+   "cand_lines": "374-381",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "DRAFT-HOST",
+    "SELF-DELIVERY"
+   ],
+   "primary": "SELF-DELIVERY",
+   "primary_section": 3,
+   "label_prec": {
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "SELF-DELIVERY": {
+     "orig": [],
+     "cand": [
+      [
+       375,
+       376
+      ],
+      [
+       379,
+       380
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       375,
+       376
+      ],
+      [
+       379,
+       380
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": ""
+  }
+ ],
+ "derived_presence": {},
+ "summary": {
+  "blocks": 9,
+  "specific": 4,
+  "heuristic": 1,
+  "residue": 4,
+  "skipped": 0,
+  "reindent_blocks": 0,
+  "label_counts": {
+   "BARE-RATE-DEL": 1,
+   "CSS-BODY": 1,
+   "COMMENT-TEXT": 1,
+   "CREDIT-PREVIEW": 1,
+   "DELIVERY-MOVE": 1,
+   "IFTAGS": 2,
+   "TASL-FIELDS": 1,
+   "TRANS-UNANCHORED": 1,
+   "EXHIBIT-RESTRUCTURE": 1,
+   "DRAFT-HOST": 1,
+   "SELF-DELIVERY": 1
+  }
+ },
+ "residue": [
+  "B3",
+  "B4",
+  "B7",
+  "B8"
+ ],
+ "skeleton": {
+  "sha256": "fb1299345321e80cefec53b9c79dfeb4824ed8caa77009e022203d36093ec0f0",
+  "status": "written (new)"
+ }
+}

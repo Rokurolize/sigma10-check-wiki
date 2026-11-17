@@ -1,0 +1,177 @@
+[[module CSS]]
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Afmaf-theme-jp/1');
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Afmaf-theme-jp/1
+]]
+
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** 機動航空部隊CSSテーマ
+**翻訳責任者:** AI
+**翻訳年:** 2026
+**原題:** 기동항공대 테마
+**著作権者:** [[*user thd-glasses]]
+**作成年:** 2020
+**初訳時参照リビジョン:** 38
+**元記事リンク:** [*https://scpko.wikidot.com/theme:fmaf-theme 기동항공대 테마]
+[[include :scp-jp:credit:end-preview]]
+
+[[tabview]]
+[[tab 使用方法]]
+
++ 使用方法: 機動航空部隊CSSテーマ
+* これは[[[https://scpko.wikidot.com/fmaf-hub|機動航空部隊（韓国語版）]]]用のオリジナルテーマです。
+* このテーマを適用するには、ページの最上部に以下のコードを追加してください。
+> @@[[include :scp-jp:theme:fmaf-theme]]@@
+
+[[/tab]]
+[[tab デザイン]]
+[[table style="width: 90%; margin: 0 auto;"]]
+[[row]][[cell style="width: 50%;"]]
+[[=image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Afmaf-theme-jp/FMAF-a-17.png]]
+[[/cell]][[cell]]
+[[=image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Afmaf-theme-jp/FMAF.png]]
+[[/cell]][[/row]]
+[[/table]]
+[[/tab]]
+[[/tabview]]
+
+@@@@
+@@@@
+
++ ソースコード
+[[collapsible show="+ コードを表示" hide="- コードを隠す"]]
+[[code type="css"]]
+@charset "utf-8";
+
+/*
+    機動航空部隊CSSテーマ
+    [2020 Wikidot Theme]
+    Created for SCP FMAF by thd-glasses
+    The FMAF Logos were created by thd-glasses and is licensed under CC-BY-SA 3.0.
+    Ported for SCP-JP (theme:fmaf-theme rev 38)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Noto+Sans+JP:wght@400;700&display=swap'); /* [JP] Noto Sans JP (Google Fonts) replaces the original Korean web font (not on an exception host) */
+
+ #header {
+     background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Afmaf-theme-jp/FMAF_logo.png);
+}
+
+ #header h1 a {
+     color: transparent;
+     font-size: 150%;
+     text-shadow: none;
+}
+
+ #header h1 a::before {
+    content: "機動航空部隊";
+    font-family: "Chakra Petch", "Noto Sans JP", sans-serif; /* [JP] */
+    font-weight: 700;
+    color: #eee;
+    text-shadow: 3px 3px 5px #000000;
+}
+
+ #header h2 span {
+     font-size: 120%;
+     color: transparent;
+     text-shadow: none;
+}
+ #header h2 span::before {
+    content: 'アルファ-17作戦司令部';
+    font-family: "Chakra Petch", "Noto Sans JP", sans-serif; /* [JP] */
+    color: #f0f0c0;
+    text-shadow: 1px 1px 1px #000000;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+}
+
+ #side-bar .side-block {
+     border-radius: 0px;
+}
+
+.yui-nav {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.yui-nav li {
+  display: flex;
+  flex-grow: 2;
+  margin: 0;
+}
+
+.yui-nav li a {
+  width: 100%;
+  text-align: center;
+}
+
+.yui-navset .yui-content {
+  border: none;
+  border-bottom: 2px solid #641527;
+  background-color: #F9F9F9;
+  padding: 15px;
+}
+
+.yui-navset .yui-nav a, .yui-navset .yui-navset-top .yui-nav a {
+  background:#FFF;
+  border-top: solid #641527 2px;
+  border-left: solid #EDD 1px;
+  border-right: solid #EDD 1px;
+  border-bottom: none;
+  color:#000;
+}
+ 
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a:focus, /* no focus effect for selected */
+.yui-navset .yui-nav .selected a:hover { /* no hover effect for selected */
+  background: linear-gradient(to bottom, #782637,#641527); /* selected tab background */
+  color: #FFF;
+}
+ 
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:focus {
+  background: #DDD;
+  text-decoration: none;
+}
+
+.yui-navset .yui-nav,
+.yui-navset .yui-navset-top .yui-nav {
+  border-color: #641527;
+}
+
+@media (min-width: 979px) {
+  #header { background-position: 10px 30px; }
+}
+[[/code]]
+[[/collapsible]]
+
+[[include :scp-jp:component:license-box-backend
+|author=thd-glasses]]
+
+> **ファイル名:** FMAF_logo.png
+> **作者:** [[*user thd-glasses]]
+> **ライセンス:** CC BY-SA 3.0
+> **出典:** [https://scpko.wdfiles.com/local--files/theme%3Afmaf-theme/FMAF_logo.png SCP-KO]
+
+> **ファイル名:** FMAF-a-17.png
+> **作者:** [[*user thd-glasses]]
+> **ライセンス:** CC BY-SA 3.0
+> **出典:** [https://scpko.wikidot.com/local--files/fmaf-hub/FMAF-a-17.png SCP-KO]
+
+> **ファイル名:** FMAF.png
+> **作者:** [[*user thd-glasses]]
+> **ライセンス:** CC BY-SA 3.0
+> **出典:** [https://scpko.wikidot.com/local--files/fmaf-hub/FMAF.png SCP-KO]
+
+> **フォント:** Chakra Petch（Google Fonts、SIL Open Font License）、Noto Sans JP（Google Fonts、SIL Open Font License）。原語版のEliceDigitalBaeum_Boldに相当するKoreanフォントは配信元の都合により差し替えています。
+
+[[include :scp-jp:component:license-box-end]]
+
+[[/iftags]]
