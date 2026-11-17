@@ -1,0 +1,3068 @@
+[[module CSS]]
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aordopharm-jp/1');
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Abasalt-jp/1
+]]
+[[include :scp-jp:component:interwiki-style
+| priority=2
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Abasalt-jp/1
+]]
+[[include :scp-jp:component:interwiki-style
+| priority=3
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aordopharm-jp/1
+]]
+
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** オルドファーム アグロノミクス テーマ
+**翻訳責任者:** AI
+**翻訳年:** 2026
+**原題:** Ordopharm Agronomics Theme
+**著作権者:** [[*user Billith]]
+**作成年:** 2026
+**初訳時参照リビジョン:** 22
+**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:ordopharm Ordopharm Agronomics Theme]
+[[include :scp-jp:credit:end-preview]]
+
+[[div class="pseudocrumbs"]]
+//[[[https://scp-wiki.wikidot.com/theme:bedrock|Bedrock]]]を基盤に構築。関連: [[[https://scp-wiki.wikidot.com/theme:basalt|Basalt]]]、[[[https://scp-wiki.wikidot.com/theme:eigenmachine|Eigenmachine]]]、[[[https://scp-wiki.wikidot.com/theme:eigenvector|Eigenvector]]]（いずれも英語版）//
+[[/div]]
+
+@@ @@
+
+//[[span class="inkcolor teal"]][[[https://scp-wiki.wikidot.com/ordopharm-hub|Ordopharm Agronomics]]][[/span]]//テーマのホームページへようこそ！私たちはあなたの飢えの問題を解決するためにここにいます。
+
+@@ @@
+[[div class="tocy"]]
+[[toc]]
+[[/div]]
+@@ @@
+
+このテーマをページに読み込むには、ページ内の好きな場所に以下のテキストを置いてください:
+
+> {{@@[[include :scp-jp:theme:ordopharm-jp]]@@}}
+
+//訳注: 原語版では基盤テーマ（Bedrock）の読み込みも必要ですが、JP版はコードファイル側でBasalt基盤を読み込むため、テーマページのincludeだけで表示できます。//
+
+//intranet//モードを使う場合は次のパラメータを追加します:
+> {{@@[[include :scp-jp:theme:ordopharm-jp intranet=a]]@@}}
+
+//legacy//モードを使う場合は次のパラメータを追加します:
+> {{@@[[include :scp-jp:theme:ordopharm-jp legacy=a]]@@}}
+
++ 基本
+
+[[span class="s-title"]]見出し[[/span]]
+
+
+[[collapsible show="見出しを見る" hide="閉じる"]]
+@@ @@
++* 第一見出し
+
+++* 第二見出し
+
++++* 第三見出し
+
+++++* 第四見出し
+
++++++* 第五見出し
+
+++++++* 第六見出し
+@@ @@
+[[/collapsible]]
+
+~~~~
+[[span class="s-title"]]タブ[[/span]]
+
+標準のタブはこのように表示されます:
+
+[[div class=""]]
+[[tabview]]
+[[tab 概要]]
+lorem ipsum
+[[/tab]]
+[[tab ガバナンス]]
+lorem ipsum、もう一度
+[[/tab]]
+[[tab 開示]]
+lorem ipsum
+
+lorem ipsum
+
+lorem ipsum
+
+[[[theme:ordopharm-jp|そしてリンク。]]] lorem ipsum
+[[/tab]]
+[[/tabview]]
+[[/div]]
+@@ @@
+色クラスを付けると表示を変えられます。タブ専用の修飾子もいくつかあります（「タブ修飾子」参照）。
+[[div class="teal"]]
+[[tabview]]
+[[tab 概要]]
+lorem ipsum
+[[/tab]]
+[[tab ガバナンス]]
+lorem ipsum、もう一度
+[[/tab]]
+[[tab 開示]]
+lorem ipsum
+
+lorem ipsum
+
+lorem ipsum
+
+[[[theme:ordopharm-jp|そしてリンク。]]] lorem ipsum
+[[/tab]]
+[[/tabview]]
+[[/div]]
+@@ @@
+
+{{mapview}}で包むと、最大12個の「タブ」を持つノードベースの地図表示になります。座標系で位置を決め（「ルート変数」参照）、前述の修飾子で見た目を変えられます。
+
+[[div class="mapview"]]
+[[tabview]]
+[[tab 概要]]
+ノードをクリックすると、対応するテキストが表示されます。
+[[/tab]]
+[[tab ガバナンス]]
+選択したノードは広がり、色が変わります。
+[[/tab]]
+[[tab 開示]]
+ノードのアイコンやフェードの挙動はルート変数で変更できます。
+[[/tab]]
+[[/tabview]]
+[[/div]]
+
+[[span class="s-title"]]引用[[/span]]
+
+> これは引用ブロックです。
+>
+> さらにテキスト
+> -----
+> これが水平線です。
+>
+>> 入れ子の引用ブロック
+>>
+>>> さらに入れ子。
+@@ @@
+色クラスで包むと見た目を変えられます:
+
+[[div class="blockquote hazard"]]
+{{blockquote hazard}}
+[[/div]]
+
+
+
+[[span class="s-title"]]表[[/span]]
+
+||~ 地域 ||~ 契約面積（ヘクタール） ||~ 収量指数 ||
+|| 北米 || 41,200,000 || 118 ||
+|| 南米 || 38,700,000 || 124 ||
+|| 欧州・中東・アフリカ || 22,900,000 || 109[[footnote]]サイト監視下の検疫区域を除く。[[/footnote]] ||
+@@ @@
+[[div class="hazard"]]
+[[footnoteblock]]
+[[/div]]
+@@ @@
+
++ 独自のdivとspan
+
+[[span class="s-title"]]ヒーロー[[/span]]
+
+{{hero}}は目を引くタイトルブロック、つまり目立つバナーです。
+
+[[div class="hero navy crest"]]
+[[span class="eyebrow"]]作物科学[[/span]]
+[[span class="headline"]]増え続ける世界に、食を届ける。[[/span]]
+[[span class="lede"]]2050年、地球には100億人が住み、耕作可能な土地は今と同じです。私たちの種子と作物保護のポートフォリオは、その算術のために、そして季節ごとにそれを解かなければならない農家のために作られています。[[/span]]
+[[div class="cta"]]
+//[[[theme:ordopharm-jp|さもなくば。]]]//
+[[/div]]
+[[/div]]
+[[collapsible show="コード"]]
+
+@@[[div class="hero navy crest"]]@@
+@@[[span class="eyebrow"]]作物科学[[/span]]@@
+@@[[span class="headline"]]増え続ける世界に、食を届ける。[[/span]]@@
+@@[[span class="lede"]]@@
+ここに導入文が入ります。
+@@[[/span]]@@
+@@[[div class="cta"]]@@
+//[[[theme:ordopharm-jp|リンク。]]]//
+@@[[/div]]@@
+@@[[/div]]@@
+
+[[/collapsible]]
+
+[[div class="hero leaf"]]
+[[span class="eyebrow"]]種子システム[[/span]]
+[[span class="headline heavy"]]一粒の種。九十年分の算術。[[/span]]
+[[div class="cta solid"]]
+,,//報告書全文をお読みください。//,,
+[[/div]]
+[[/div]]
+[[collapsible show="コード"]]
+
+@@[[div class="hero leaf"]]@@
+@@[[span class="eyebrow"]]種子システム[[/span]]@@
+@@[[span class="headline heavy"]]一粒の種。九十年分の算術。[[/span]]@@
+@@[[div class="cta solid"]]@@
+@@,,//報告書全文をお読みください。//,,@@
+@@[[/div]]@@
+@@[[/div]]@@
+
+[[/collapsible]]
+
+[[span class="s-title"]]バンド[[/span]]
+
+{{band}}は短いテキストのブロックを、色の帯で区切って（{{rule}}を併用）表示します。
+
+[[div class="band mist"]]
+[[span class="eyebrow azure"]]私たちの約束[[/span]]
+{{band mist}}
+[[/div]]
+
+[[div class="band rule azure"]]
+{{band rule azure}}
+[[/div]]
+
+[[div class="band teal bleed"]]
+band teal bleed
+[[/div]]
+
+[[span class="s-title"]]ペイン[[/span]]
+
+{{panes}}は子要素を並べるレスポンシブなグリッドです。各{{pane}}は独自の色クラス・サイズ・等間隔を持ちます。{{duo}}や{{quad}}をグリッドに足すと列の密度が変わり、{{filled}}をペインに足すと反転します。
+
+[[div class="panes"]]
+[[div class="pane leaf"]]
++++* 作物科学
+種子遺伝学、作物保護、そして41の地域にわたるデジタル農業。
+[[/div]]
+[[div class="pane azure"]]
++++* 消費者健康
+市販薬、栄養補助食品、そしてすでにあなたがお持ちの小売ブランド。
+[[/div]]
+[[div class="pane bloom"]]
++++* 医薬品
+元祖の事業。今も他のすべてを支えている事業です。
+[[/div]]
+[[/div]]
+[[div class="panes"]]
+[[div class="pane teal"]]
+単独のペイン。
+[[/div]]
+[[/div]]
+[[div class="panes duo"]]
+[[div class="pane filled navy"]]
++++* 投資家向け情報
+{{pane filled navy}}、強調のために反転。
+[[/div]]
+[[div class="pane wheat"]]
++++* サステナビリティ
+{{pane wheat}}、色の罫線を添えた標準表示。
+[[/div]]
+[[/div]]
+
+[[div class="panes quad"]]
+[[div class="pane leaf"]]
++++* 一
+{{panes quad}}
+[[/div]]
+[[div class="pane azure"]]
++++* 二
+広い画面では4列になります。
+[[/div]]
+[[div class="pane amber"]]
++++* 三
+lorem ipsum
+[[/div]]
+[[div class="pane hazard"]]
++++* 四
+lorem ipsum
+[[/div]]
+[[/div]]
+
+@@ @@
+[[span class="s-title"]]プルクォート[[/span]]
+
+{{pullquote}}は、独立したブロックで強調される短い引用です。
+
+[[div class="pullquote azure"]]
+私たちは心の平穏を売っています。しかもヘクタール単位で。
+[[span class="attrib"]]最高経営責任者、年次報告書より[[/span]]
+[[/div]]
+
+@@ @@
+[[span class="s-title"]]ティッカー[[/span]]
+
+{{ticker}}は投資家向け情報の雰囲気を出す等幅の帯です。各項目を{{up}}・{{down}}・{{flat}}で包むと矢印が付きます。
+
+[[div class="ticker navy"]]
+[[span class="up"]]ORDO 214.55 +1.24%[[/span]]
+[[span class="down"]]Seed Futures 88.10 -0.42%[[/span]]
+[[span class="flat"]]Volume 4.1M[[/span]]
+[[/div]]
+
+[[collapsible show="コード"]]
+@@[[div class="ticker navy"]]@@
+@@[[span class="up"]]ORDO 214.55 +1.24%[[/span]]@@
+@@[[span class="down"]]Seed Futures 88.10 -0.42%[[/span]]@@
+@@[[span class="flat"]]Volume 4.1M[[/span]]@@
+@@[[/div]]@@
+[[/collapsible]]
+
+{{ticker}}に{{scroll}}を足すと流れる帯になります。速度は{{--ticker-speed}}（秒）で設定します。
+
+[[div class="ticker scroll navy"]]
+[[span class="up"]]ORDO 214.55 +1.24%[[/span]]
+[[span class="down"]]Seed Futures 88.10 -0.42%[[/span]]
+[[span class="flat"]]Volume 4.1M[[/span]]
+[[span class="up"]]Crop Science 41.02 +0.88%[[/span]]
+[[/div]]
+
+@@ @@
+[[span class="s-title"]]分割とサイドボックス[[/span]]
+
+{{split}}は2列のグリッドで、狭い画面では1列になります。{{weighted}}を足すと1列目が広くなります。
+
+[[div class="split"]]
+[[div]]
++++* 左の列
+等幅の列です。各子要素はただのdivなので、何でも入れられます。
+[[/div]]
+[[div]]
++++* 右の列
+17remを下回ると1列に折りたたまれます。
+[[/div]]
+[[/div]]
+
+[[div class="split weighted"]]
+[[div]]
+{{split weighted}}はこの列を1.6frにし、サイドバーを1frにします。{{pane}}と組み合わせると収まりが良いです。
+
+[[/div]]
+[[div class="pane azure"]]
++++* サイドバー
+{{pane}}と組み合わせると収まりが良いです。
+[[/div]]
+
+[[/div]]
+
+{{sidebox}}は既定で画面右に浮くパネルです。指定が無ければテキストはその周りを回り込みます。
+
+[[div class="sidebox teal"]]
+= **一目でわかる数字**
+||創業||1912年||
+||本社||非公開||
+||従業員||109,000人||
+||部門||3[[footnote]]公表分。[[/footnote]]||
+[[/div]]
+
+lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque felis eu vulputate suscipit. Vestibulum dui elit, ornare eget eros ut, gravida finibus velit. Pellentesque et diam vel turpis semper ullamcorper. Integer scelerisque malesuada enim, a semper risus molestie eget. Fusce luctus ex in ante feugiat fermentum. In nec sodales nibh. Suspendisse potenti. Aenean in volutpat turpis, in dictum sapien.
+
+[[div class="sidebox left amber"]]
+= **フィールドノート**
+||区画||C-14||
+||播種||4月||
+||状態||検疫中||
+[[/div]]
+
+{{sidebox}}に{{left}}を足すと反対側に浮きます。lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dui elit, ornare eget eros ut, gravida finibus velit. Pellentesque et diam vel turpis semper ullamcorper.
+
+[[div style="clear:both;"]]
+[[/div]]
+
+[[span class="s-title"]]指標[[/span]]
+
+{{metrics}}は見出し数字を並べるレスポンシブなグリッドで、こうした種類のサイトでは非常によく見られます。各子要素は{{figure}}・{{label}}・独自の色クラスを持ちます。{{--stat-min}}で折り返し幅を変えられます。
+
+[[div class="metrics"]]
+[[div class="leaf"]]
+[[span class="label"]]{{counter-element}}を足すと、ある数から別の数までカウントアップします。[[/span]]
+[[collapsible show="試してみる" hide="隠す"]]
+[[span class="counter-element figure"]]
+[[/span]]
+[[/collapsible]]
+[[/div]]
+[[div class="azure"]]
+[[span class="figure"]]2[[/span]]
+[[span class="label"]]この行にある数字の数。[[/span]]
+[[/div]]
+[[/div]]
+[[div class="metrics"]]
+[[div class="leaf"]]
+[[span class="figure"]]1[[/span]]
+[[span class="label"]]この区画で表された数字の数。[[/span]]
+[[/div]]
+[[div class="azure"]]
+[[span class="figure"]]2 of 4[[/span]]
+[[span class="label"]]この区画ですでに表された数字の数。[[/span]]
+[[/div]]
+[[div class="wheat"]]
+[[span class="figure"]]3[[/span]]
+[[span class="label"]]並び順の中での数字の値。[[/span]]
+[[/div]]
+[[div class="hazard"]]
+[[span class="figure"]]4th[[/span]]
+[[span class="label"]]この並びで最後の数字。[[/span]]
+[[/div]]
+[[/div]]
+
+[[span class="s-title"]]パイプライン[[/span]]
+
+{{pipeline}}はプロジェクトのライフサイクルの各段階に自動で番号を振ります。段階は{{done}}・{{now}}・{{halted}}で指定します。{{--stage-min}}で折り返し幅を変えられます。
+
+[[div class="pipeline"]]
+[[div class="done leaf"]]
+温室スクリーニング
+[[/div]]
+[[div class="done leaf"]]
+隔離圃場試験
+[[/div]]
+[[div class="now azure"]]
+規制当局への申請書類
+[[/div]]
+[[div class="halted"]]
+圃場への開放
+[[/div]]
+[[div]]
+商用展開
+[[/div]]
+[[/div]]
+
+[[span class="s-title"]]更新履歴[[/span]]
+
+{{updates}}は縦方向のタイムラインです。各子要素は{{date}}と色クラスを持ち、色クラスはマーカーと日付線に色を付けます。
+
+[[div class="updates"]]
+[[div class="hazard"]]
+[[span class="date"]]3月12日[[/span]]
+最新の段階。
+[[/div]]
+[[div class="amber"]]
+[[span class="date"]]3月4日[[/span]]
+その前の段階。
+[[/div]]
+[[div class="leaf"]]
+[[span class="date"]]2月27日[[/span]]
+最も古い段階。
+[[/div]]
+[[/div]]
+
+[[span class="s-title"]]ファクトシート[[/span]]
+
+{{factsheet}}は関連する詳細の要約を表示します。
+
+[[div class="factsheet navy"]]
+||~ 登録名称 || Ordopharm Agronomics N.V. ||
+||~ 上場 || ORDO ||
+||~ 部門 || 作物科学、消費者健康、医薬品 ||
+||~ 異常保有資産 || [[span class="redact"]]命令により黒塗り[[/span]] ||
+[[/div]]
+
+[[span class="s-title"]]タイル[[/span]]
+
+{{tiles}}は角に矢印の付いたナビゲーションカードのグリッドです。{{--tile-min}}で折り返し幅を変えられます。
+
+[[div class="tiles"]]
+[[div class="azure"]]
++++* 投資家向け情報
+四半期決算、提出書類、年次報告書。
+[[/div]]
+[[div class="leaf"]]
++++* 作物科学
+種子遺伝学、作物保護、デジタル農業。
+[[/div]]
+[[div class="bloom"]]
++++* 医薬品
+治療パイプラインとライセンスに関する問い合わせ。
+[[/div]]
+[[/div]]
+
+[[span class="s-title"]]ジャンボトロン[[/span]]
+
+ジャンボトロンは「全幅」の画像バナーで、ページ上部の目を引くアートとして、その上に他の要素を重ねて使うためのものです。たぶん。これは実際のBayer-Monsantoのページ要素の再現です。
+
+[[collapsible show="サイズ指定を見る" hide="閉じる" hideLocation="both"]]
+[[collapsible show="view sizing options" hide="close" hideLocation="both"]]
+[[div class="jumbo short"]]
+//class {{jumbo short}}//
+[[/div]]
+
+[[div class="jumbo"]]
+//class {{jumbo}}//
+[[/div]]
+
+[[div class="jumbo ratio"]]
+//class {{jumbo ratio}}//
+[[/div]]
+
+[[div class="jumbo tall"]]
+//class {{jumbo tall}}//
+[[/div]]
+
+[[div class="jumbo bleed"]]
+//class {{jumbo bleed}}//
+[[/div]]
+
+[[div class="jumbo contain"]]
+**//class {{jumbo contain}}//**
+[[/div]]
+
+[[div class="jumbo top"]]
+//class {{jumbo top}}//
+[[/div]]
+
+[[div class="jumbo middle"]]
+//class {{jumbo middle}}//
+[[/div]]
+
+[[div class="jumbo centered"]]
+//class {{jumbo centered}}//
+[[/div]]
+
+[[div class="jumbo tint leaf"]]
+//class {{jumbo tint leaf}}//
+[[/div]]
+
+[[div class="jumbo crest"]]
+//class {{jumbo crest}}//
+[[/div]]
+[[/collapsible]]
+[[/collapsible]]
+
++ 注意表示とフラグ
+
+[[span class="s-title"]]注意[[/span]]
+
+{{notice}}は色付きのコールアウトです。バナーの語は{{--notice-word}}で変えられます。
+
+[[div class="notice"]]
+製品の入手可否は地域によって異なります。現地の登録状況をご確認ください。
+[[/div]]
+
+[[div class="notice hazard" style="--notice-word: '警告';"]]
+水域から3km以内では使用しないでください。
+[[/div]]
+
+[[div class="notice teal" style="--notice-word: '勧告';"]]
+あなたは死にます。
+[[/div]]
+
+[[span class="s-title"]]バッジ[[/span]]
+
+{{badge}}はインラインのチップです。{{hollow}}を足すと輪郭線のみになります。
+
+状態: [[span class="badge leaf"]]承認済み[[/span]] [[span class="badge amber"]]審査中[[/span]] [[span class="badge hazard"]]撤回済み[[/span]] [[span class="badge hollow navy"]]アーカイブ[[/span]]
+
+[[span class="s-title"]]テープ[[/span]]
+
+{{tape}}は危険帯の区切りです。{{thick}}を足すと高さが倍になります。
+
+[[div class="tape"]]
+[[/div]]
+
+[[div class="tape thick amber"]]
+[[/div]]
+
+[[span class="s-title"]]成長バー[[/span]]
+
+[[collapsible show="開いて試す" hide="閉じて試す" folded="no"]]
+[[div class="growth-wrap"]]
+[[div class="growth-track leaf"]]
+[[div class="growth-fill" style="--fill-to: 78%;"]]
+[[/div]]
+[[/div]]
+[[/div]]
+[[/collapsible]]
+
+[[collapsible show="コード"]]
+@@[[div class="growth-wrap"]]@@
+@@[[div class="growth-track leaf"]]@@
+@@[[div class="growth-fill" style="--fill-to: 78%;"]]@@
+@@[[/div]]@@
+@@[[/div]]@@
+@@[[/div]]@@
+[[/collapsible]]
+
+[[span class="s-title"]]ローディングバー[[/span]]
+
+[[collapsible show="第4四半期決算プレビュー" hide="第4四半期決算プレビュー"]]
+@@ @@
+[[div class="growth-wrap fade-out3"]]
+[[div class="growth-track azure"]]
+[[div class="growth-fill"]]
+[[/div]]
+[[/div]]
+[[/div]]
+[[div class="fade-in2 pane filled hazard medium center"]]
+[[span class="caps"]]審査待ちのため数値は非公開[[/span]]
+[[/div]]
+[[/collapsible]]
+
+[[span class="s-title"]]製品ラベル[[/span]]
+
+[[div class="product_label amber medium"]]
+= **ORDOSAN-9**
+= //選択性茎葉処理除草剤。//
+-----
+{{product_label amber medium}}
+[[/div]]
+
++ 文書
+
+[[span class="s-title"]]メモ[[/span]]
+
+[[div class="memo"]]
+{{memo}}
+[[/div]]
+
+[[div class="compliance_memo"]]
+{{compliance_memo}}
+[[/div]]
+
+[[div class="legal_memo"]]
+{{legal_memo}}
+[[/div]]
+
+[[div class="custom_memo teal"]]
+{{custom_memo teal}}
+[[/div]]
+
+[[div class="memo stamped"]]
+{{memo stamped}}
+[[/div]]
+
+[[span class="s-title"]]色クラス[[/span]]
+
+以下の色コレクションは最大限の楽しさのために調合されています。
+
+[[collapsible show="view color options" hide="close"]]
+@@ @@
+[[div class="swatchset"]]
+[[div]]
+[[div class="setname"]]
+Set 1
+[[/div]]
+[[div class="chip frost"]]
+{{frost}}
+[[/div]]
+[[div class="chip mist"]]
+{{mist}}
+[[/div]]
+[[div class="chip line"]]
+{{line}}
+[[/div]]
+[[div class="chip slate"]]
+{{slate}}
+[[/div]]
+[[div class="chip graphite"]]
+{{graphite}}
+[[/div]]
+[[div class="chip navy"]]
+{{navy}}
+[[/div]]
+[[div class="chip azure"]]
+{{azure}}
+[[/div]]
+[[div class="chip sky"]]
+{{sky}}
+[[/div]]
+[[div class="chip teal"]]
+{{teal}}
+[[/div]]
+[[div class="chip sprout"]]
+{{sprout}}
+[[/div]]
+[[div class="chip leaf"]]
+{{leaf}}
+[[/div]]
+[[div class="chip moss"]]
+{{moss}}
+[[/div]]
+[[div class="chip wheat"]]
+{{wheat}}  :c
+[[/div]]
+[[div class="chip amber"]]
+{{amber}}
+[[/div]]
+[[div class="chip rust"]]
+{{rust}}
+[[/div]]
+[[div class="chip loam"]]
+{{loam}}
+[[/div]]
+[[div class="chip bloom"]]
+{{bloom}}
+[[/div]]
+[[div class="chip hazard"]]
+{{hazard}}
+[[/div]]
+[[div class="chip void"]]
+{{void}}
+[[/div]]
+[[/div]]
+[[div]]
+[[div class="setname"]]
+Set 2 (Intranet)
+[[/div]]
+[[div class="chip frost2"]]
+{{frost}}
+[[/div]]
+[[div class="chip mist2"]]
+{{mist}}
+[[/div]]
+[[div class="chip line2"]]
+{{line}}
+[[/div]]
+[[div class="chip slate2"]]
+{{slate}}
+[[/div]]
+[[div class="chip graphite2"]]
+{{graphite}}
+[[/div]]
+[[div class="chip navy2"]]
+{{navy}}
+[[/div]]
+[[div class="chip azure2"]]
+{{azure}}
+[[/div]]
+[[div class="chip sky2"]]
+{{sky}}
+[[/div]]
+[[div class="chip teal2"]]
+{{teal}}
+[[/div]]
+[[div class="chip sprout2"]]
+{{sprout}}
+[[/div]]
+[[div class="chip leaf2"]]
+{{leaf}}
+[[/div]]
+[[div class="chip moss2"]]
+{{moss}}
+[[/div]]
+[[div class="chip wheat2"]]
+{{wheat}}  :c
+[[/div]]
+[[div class="chip amber2"]]
+{{amber}}
+[[/div]]
+[[div class="chip rust2"]]
+{{rust}}
+[[/div]]
+[[div class="chip loam2"]]
+{{loam}}
+[[/div]]
+[[div class="chip bloom2"]]
+{{bloom}}
+[[/div]]
+[[div class="chip hazard2"]]
+{{hazard}}
+[[/div]]
+[[div class="chip void2"]]
+{{void}}
+[[/div]]
+[[/div]]
+[[div]]
+[[div class="setname"]]
+Set 3 (Legacy)
+[[/div]]
+[[div class="chip frost3"]]
+{{frost}}
+[[/div]]
+[[div class="chip mist3"]]
+{{mist}}
+[[/div]]
+[[div class="chip line3"]]
+{{line}}
+[[/div]]
+[[div class="chip slate3"]]
+{{slate}}
+[[/div]]
+[[div class="chip graphite3"]]
+{{graphite}}
+[[/div]]
+[[div class="chip navy3"]]
+{{navy}}
+[[/div]]
+[[div class="chip azure3"]]
+{{azure}}
+[[/div]]
+[[div class="chip sky3"]]
+{{sky}}
+[[/div]]
+[[div class="chip teal3"]]
+{{teal}}
+[[/div]]
+[[div class="chip sprout3"]]
+{{sprout}}
+[[/div]]
+[[div class="chip leaf3"]]
+{{leaf}}
+[[/div]]
+[[div class="chip moss3"]]
+{{moss}}
+[[/div]]
+[[div class="chip wheat3"]]
+{{wheat}}  :c
+[[/div]]
+[[div class="chip amber3"]]
+{{amber}}
+[[/div]]
+[[div class="chip rust3"]]
+{{rust}}
+[[/div]]
+[[div class="chip loam3"]]
+{{loam}}
+[[/div]]
+[[div class="chip bloom3"]]
+{{bloom}}
+[[/div]]
+[[div class="chip hazard3"]]
+{{hazard}}
+[[/div]]
+[[div class="chip void3"]]
+{{void}}
+[[/div]]
+[[/div]]
+[[div]]
+[[div class="setname"]]
+Set 4 (Unused)
+[[/div]]
+[[div class="chip frost4"]]
+{{frost}}
+[[/div]]
+[[div class="chip mist4"]]
+{{mist}}
+[[/div]]
+[[div class="chip line4"]]
+{{line}}
+[[/div]]
+[[div class="chip slate4"]]
+{{slate}}
+[[/div]]
+[[div class="chip graphite4"]]
+{{graphite}}
+[[/div]]
+[[div class="chip navy4"]]
+{{navy}}
+[[/div]]
+[[div class="chip azure4"]]
+{{azure}}
+[[/div]]
+[[div class="chip sky4"]]
+{{sky}}
+[[/div]]
+[[div class="chip teal4"]]
+{{teal}}
+[[/div]]
+[[div class="chip sprout4"]]
+{{sprout}}
+[[/div]]
+[[div class="chip leaf4"]]
+{{leaf}}
+[[/div]]
+[[div class="chip moss4"]]
+{{moss}}
+[[/div]]
+[[div class="chip wheat4"]]
+{{wheat}}  :c
+[[/div]]
+[[div class="chip amber4"]]
+{{amber}}
+[[/div]]
+[[div class="chip rust4"]]
+{{rust}}
+[[/div]]
+[[div class="chip loam4"]]
+{{loam}}
+[[/div]]
+[[div class="chip bloom4"]]
+{{bloom}}
+[[/div]]
+[[div class="chip hazard4"]]
+{{hazard}}
+[[/div]]
+[[div class="chip void4"]]
+{{void}}
+[[/div]]
+[[/div]]
+[[/div]]
+@@ @@
+= As with Eigenmachine, you can borrow a shade from another mode by invoking {{color#}}, where {{color}} is the name of the color and {{#}} is the set number. 
+@@ @@
+[[/collapsible]]
+@@ @@
+= Eigenmachineと同様に、他のモードの色合いを借りることもできます。{{色名#}}（{{色名}}は色の名前、{{#}}はセット番号）と書いてください。
+@@ @@
+
+[[span class="s-title"]]組版ユーティリティ[[/span]]
+
+|| [[span class="eyebrow"]]eyebrow[[/span]] || 見出しの上に置く小さな大文字のキッカー ||
+|| [[span class="headline"]]headline[[/span]] || 字間を詰めた大きな表示書体。[[span class="headline heavy"]]heavy[[/span]]で太字 ||
+|| [[span class="lede"]]lede[[/span]] || わずかに大きくした導入段落 ||
+|| [[span class="attrib"]]attrib[[/span]] || {{pullquote}}の下に置く帰属行 ||
+|| [[span class="smallprint"]]smallprint[[/span]] || 等幅の法的な細字 ||
+|| [[span class="s-title"]]s-title[[/span]] || このページ全体で使っている小見出しラベル ||
+|| [[span class="mono"]]mono[[/span]] / [[span class="ui"]]ui[[/span]] / [[span class="display"]]display[[/span]] || 書体を強制する ||
+|| [[span class="caps"]]caps[[/span]] || 字間を空けた大文字 ||
+|| [[span class="inkcolor"]]inkcolor[[/span]] || 有効な色でテキストを染める ||
+
+[[span class="s-title"]]修飾子[[/span]]
+
+|| {{tiny}} / {{medium}} / {{large}} / {{full}} || ブロックの幅を制限する ||
+|| {{left}} / {{center}} / {{right}} || ブロックを寄せる ||
+|| {{align-l}} / {{align-r}} / {{align-c}} || テキストの揃え ||
+|| {{bleed}} || {{hero}} / {{band}} / {{jumbo}}を表示領域の端まで広げる ||
+|| {{flattened}} / {{raised}} || 浮き彫りを消す／足す ||
+|| {{round}} || 1つのブロックの角を丸める ||
+|| {{opaque}} || 有効な色で塗る ||
+|| {{gridlines}} || 薄い技術グリッドを重ねる ||
+|| {{stamped}} || 斜めのスタンプを足す ||
+
+
+[[span class="s-title"]]タブ修飾子[[/span]]
+
+{{tabview}}を次のdiv修飾子のいずれかで包むと、タブ帯の挙動が変わります。
+
+|| {{tabs-flush}} || パネルの枠と背景を消し、タブだけ残す ||
+|| {{tabs-underline}} || 選択中のタブの下にアクセント罫線を引く ||
+|| {{tabs-small}} || タブ帯の余白を詰める ||
+
+[[collapsible show="see in action" hide="collapse action"]]
+
+[[div class="tabs-flush moss"]]
+[[tabview]]
+[[tab 1]]
+{{tabs-flush}}
+[[/tab]]
+[[tab 2]]
+Sits directly on the page background.
+[[/tab]]
+[[/tabview]]
+[[/div]]
+
+[[div class="tabs-underline hazard"]]
+[[tabview]]
+[[tab 1]]
+{{tabs-underline}}.
+[[/tab]]
+[[tab 2]]
+Pairs well with {{tabs-flush}}.
+[[/tab]]
+[[tab 3]]
+lorem ipsum
+[[/tab]]
+[[/tabview]]
+[[/div]]
+
+[[div class="tabs-small teal"]]
+[[tabview]]
+[[tab A]]
+with {{tabs-small}}, the tabs are small.
+[[/tab]]
+[[tab B]]
+lorem ipsum
+[[/tab]]
+[[tab C]]
+lorem ipsum
+[[/tab]]
+[[tab D]]
+lorem ipsum
+[[/tab]]
+[[tab E]]
+lorem ipsum
+[[/tab]]
+[[tab F]]
+lorem ipsum
+[[/tab]]
+[[/tabview]]
+[[/div]]
+
+
+
+[[/collapsible]]
+
+
+
+[[span class="s-title"]]地図修飾子[[/span]]
+
+|| {{reveal-rise}} || パネルのテキストが下から浮かび上がる ||
+|| {{reveal-wipe}} || パネルのテキストが左から右へ現れる ||
+|| {{reveal-slide}} || パネルのテキストが左から滑り込む ||
+|| {{reveal-pulse}} || パネルのテキストが一度明滅してから落ち着く ||
+|| {{reveal-none}} || 表示アニメーションなし ||
+|| {{panelled}} || テキストパネルに面・枠・アクセント罫線を与える ||
+|| {{labelled}} || 各タブ名をノードの下に表示する ||
+|| {{map-left}} || 地図を左、パネルを右に置く ||
+|| {{wide}} || 地図をパネルの上に全幅で積む ||
+
+[[collapsible show="see in action" hide="collapse action"]]
+
+[[div class="mapview labelled panelled reveal-rise teal"]]
+[[tabview]]
+[[tab Sector A]]
+{{reveal-rise}} with {{panelled}} and {{labelled}}.
+[[/tab]]
+[[tab Sector B]]
+The panel now has its own surface and border.
+[[/tab]]
+[[tab Sector C]]
+Node labels sit beneath each marker.
+[[/tab]]
+[[/tabview]]
+[[/div]]
+-----
+[[div class="mapview map-left reveal-wipe"]]
+[[tabview]]
+[[tab 1]]
+{{map-left}}
+[[/tab]]
+[[tab 2]]
+{{reveal-wipe}} uncovers the text left to right.
+[[/tab]]
+[[/tabview]]
+[[/div]]
+-----
+[[div class="mapview wide reveal-slide hazard"]]
+[[tabview]]
+[[tab 1]]
+{{wide}}
+[[/tab]]
+[[tab 2]]
+{{reveal-slide}} enters from the left.
+[[/tab]]
+[[tab 3]]
+{{hazard}} color class dyes the node color.
+[[/tab]]
+[[/tabview]]
+[[/div]]
+-----
+[[div class="mapview reveal-none"]]
+[[tabview]]
+[[tab 1]]
+{{reveal-none}} disables the reveal animation entirely, leaving a quick on/off.
+[[/tab]]
+[[tab 2]]
+Use this when the panel holds a long document.
+[[/tab]]
+[[/tabview]]
+[[/div]]
+[[/collapsible]]
+
++ ルート変数
+
+ルート変数を変更するには、記事に次のようにCSSモジュールを追加します。
+
+> {{@@[[module CSS]]@@}}
+>
+>
+> {{@@[[/module]]@@}}
+
+そのうえで{{:root}}疑似クラスを書き、その中に変数と値を入れます。
+
+> {{@@[[module CSS]]@@}}
+> {{@@:root {@@}}
+> {{@@--variable-name: value;@@}}
+> {{@@}@@}}
+> {{@@[[/module]]@@}}
+
+= //とくに重要なルート変数://
+||~ 変数 ||~ 既定値 ||~ 単位 ||
+|| {{@@--header-title@@}} || "ORDOPHARM" || "text" ||
+|||||| ワードマークの前半。タイトル色で表示 ||
+|| {{@@--header-subtitle@@}} || "AGRONOMICS" || "text" ||
+|||||| ワードマークの後半。部門色で表示 ||
+|| {{@@--header-tagline@@}} || "Solving hunger. One problem at a time." || "text" ||
+|||||| ワードマークの下に置くキャッチコピー ||
+|| {{@@--mobile-title@@}} / {{@@--mobile-subtitle@@}} || "ORDOPHARM" / "AGR." || "text" ||
+|||||| 狭い画面でのワードマーク（キャッチコピーは非表示になる） ||
+|| {{@@--header-logo@@}} || 内蔵マーク || url("x") ||
+|||||| 左上のコーポレートマーク ||
+|| {{@@--header-title-color@@}} || 11, 43, 57 || RGB値 ||
+|||||| ワードマーク前半の色 ||
+|| {{@@--header-subtitle-color@@}} || 8, 121, 190 || RGB値 ||
+|||||| ワードマーク後半の色 ||
+|| {{@@--brand-weight@@}} / {{@@--division-weight@@}} || 800 / 400 || フォントの太さ ||
+|||||| ワードマーク各半分の太さ ||
+|| {{@@--surface@@}} || 255, 255, 255 || RGB値 ||
+|||||| ペイン・メモ・ラベルの背景 ||
+|| {{@@--ink@@}} || 45, 55, 61 || RGB値 ||
+|||||| 面の上での既定の文字色 ||
+|| {{@@--on-dark@@}} || 255, 255, 255 || RGB値 ||
+|||||| 塗りつぶしたパネルの上での文字色 ||
+|| {{@@--rule-weight@@}} || .25 || rem ||
+|||||| ペイン・バンド・見出しのアクセント罫線の太さ ||
+|| {{@@--corner@@}} || 0 || rem ||
+|||||| テーマ全体の角の丸み。コーポレート既定は直角 ||
+|| {{@@--band-pad@@}} || 2.25 || rem ||
+|||||| {{band}}内側の上下の余白 ||
+|| {{@@--pane-min@@}} || 15 || rem ||
+|||||| グリッドが折り返す前のペインの最小幅 ||
+|| {{@@--hero-image@@}} || none || url("x") ||
+|||||| {{hero}}の背景画像。{{tint}}クラスと併用 ||
+|| {{@@--backdrop@@}} || none || url("x") または グラデーション ||
+|||||| ページ背景のテクスチャ ||
+|| {{@@--watermark@@}} || 内蔵マーク || url("x") ||
+|||||| {{crest}}クラスが使うマーク ||
+|| {{@@--custom-header@@}} || "Internal Communication" || "text" ||
+|||||| {{custom_memo}}の見出し ||
+|| {{@@--custom-logo@@}} || 内蔵マーク || url("x") ||
+|||||| メモのヘッダー右側に出すマーク ||
+|| {{@@--custom-color@@}} || 11, 43, 57 || RGB値 ||
+|||||| {{custom_memo}}のアクセント。色クラスでも指定可 ||
+|| {{@@--stamp-text@@}} || "CONFIDENTIAL" || "text" ||
+|||||| {{stamped}}クラスが付ける斜めスタンプの文字 ||
+|| {{@@--signal-word@@}} || "CAUTION" || "text" ||
+|||||| {{product_label}}のバナー語 ||
+|| {{@@--fill-time@@}} || 2.5 || 秒 ||
+|||||| 成長バーが伸びきるまでの時間 ||
+|| {{@@--fill-to@@}} || 100% || パーセント ||
+|||||| 成長バーがどこまで伸びるか ||
+|| {{@@--track-height@@}} || .5 || rem ||
+|||||| 成長バーの高さ ||
+|| {{@@--scale1@@}} / {{@@--scale2@@}} / {{@@--scale3@@}} || 1.2 / 1 / 1.6 || 秒 ||
+|||||| 各アニメーション対の長さ ||
+|| {{@@--delay1@@}} / {{@@--delay2@@}} / {{@@--delay3@@}} || 0 / 1 / 2 || 秒 ||
+|||||| 各アニメーション対が始まるまでの遅延 ||
+|| {{@@--loop1@@}} / {{@@--loop2@@}} / {{@@--loop3@@}} || 1 || 回数（infinite可） ||
+|||||| 各アニメーション対の繰り返し回数 ||
+|| {{@@--link-volume@@}} || none || 任意の [https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform text-transform] 値 ||
+|||||| リンクの体裁と大文字化 ||
+|| {{@@--link-decor@@}} || none || 任意の [https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration text-decoration] 値 ||
+|||||| リンクの下線の体裁 ||
+|| {{@@--abstractor@@}} || visible || {{visible}} / {{hidden}} ||
+|||||| ページタイトルの表示切り替え ||
+|| {{@@--main-content-width@@}} || 70 || rem ||
+|||||| 本文カラムの幅 ||
+|| {{@@--node-icon@@}} || 葉／炎を囲んだ記号 || url("x") ||
+|||||| {{mapview}}のノードのアイコン ||
+|| {{@@--counterTime@@}} || （代入まで無効） || 秒 ||
+|||||| {{counter-element}}が{{@@--from@@}}から{{@@--to@@}}まで数えるのにかかる時間。未指定なら5秒 ||
+|| {{@@--symbol-dna@@}} || （代入まで無効） || url("x") ||
+|||||| 2色の二重螺旋ロゴ。{{@@--header-logo@@}}や{{@@--node-icon@@}}に代入 ||
+|| {{@@--symbol-dna-mono@@}} || （代入まで無効） || url("x") ||
+|||||| 同じマークの単色版。{{@@--watermark@@}}／{{crest}}用 ||
+@@ @@
+||||||~ //全リストはソースコードを参照してください。// ||
+
++ フォント
+
+[[=]]
+||~ フォント ||~ 用途 ||~ クラス ||
+|| [[span class="display"]]Archivo[[/span]] || ワードマーク、見出し、ヘッドライン、UI || {{display}}、{{ui}} ||
+|| Inter || 本文、既定 || ||
+|| [[span class="mono"]]IBM Plex Mono[[/span]] || ティッカー、細字、intranetモード || {{mono}} ||
+|| [[span class="caps"]]tracked capitals[[/span]] || キッカーとラベル || {{caps}} ||
+[[/=]]
+
++ ソースコード
+
+[[collapsible show="ソースコードを見る" hide="閉じる"]]
+[[code type="css"]]
+/*
+    Ordopharm Agronomics Theme — part 1 of 3 (base)
+    Ported for SCP-JP (theme:ordopharm rev 22).
+    The original page serves three code files: 1 = base, 2 = intranet mode, 3 = legacy mode.
+    JP版も同じ3分割でアップロードしてください（INTEGRATION.md §2）。
+*/
+
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Abasalt-jp/1');
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* 日本語フォント (JP localization) */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
+
+:root {
+
+/*------- Palette------*/
+
+    --ordo-frost: 255, 255, 255;
+    --ordo-mist: 240, 245, 248;
+    --ordo-line: 213, 222, 228;
+    --ordo-slate: 106, 120, 128;
+    --ordo-graphite: 45, 55, 61;
+    --ordo-navy: 11, 43, 57;
+    --ordo-azure: 8, 121, 190;
+    --ordo-sky: 0, 145, 223;
+    --ordo-teal: 0, 133, 125;
+    --ordo-sprout: 137, 211, 41;
+    --ordo-leaf: 102, 181, 18;
+    --ordo-moss: 61, 107, 41;
+    --ordo-wheat: 217, 180, 74;
+    --ordo-amber: 232, 163, 61;
+    --ordo-rust: 180, 83, 31;
+    --ordo-loam: 74, 55, 40;
+    --ordo-bloom: 198, 49, 142;
+    --ordo-hazard: 200, 16, 46;
+    --ordo-void: 10, 13, 15;
+
+
+/*------- Set 2------*/
+
+    --ordo2-frost: 226, 232, 236;
+    --ordo2-mist: 38, 48, 56;
+    --ordo2-line: 52, 66, 76;
+    --ordo2-slate: 131, 148, 158;
+    --ordo2-graphite: 27, 35, 41;
+    --ordo2-navy: 7, 26, 35;
+    --ordo2-azure: 61, 165, 226;
+    --ordo2-sky: 106, 199, 243;
+    --ordo2-teal: 32, 168, 158;
+    --ordo2-sprout: 155, 219, 76;
+    --ordo2-leaf: 118, 191, 44;
+    --ordo2-moss: 79, 130, 56;
+    --ordo2-wheat: 226, 194, 104;
+    --ordo2-amber: 240, 178, 88;
+    --ordo2-rust: 199, 105, 54;
+    --ordo2-loam: 97, 76, 58;
+    --ordo2-bloom: 218, 88, 168;
+    --ordo2-hazard: 226, 60, 84;
+    --ordo2-void: 3, 8, 11;
+
+/*------- Set 3  -------*/
+
+    --ordo3-frost: 246, 240, 226;
+    --ordo3-mist: 234, 224, 202;
+    --ordo3-line: 198, 184, 156;
+    --ordo3-slate: 132, 118, 96;
+    --ordo3-graphite: 74, 64, 50;
+    --ordo3-navy: 46, 38, 28;
+    --ordo3-azure: 39, 86, 122;
+    --ordo3-sky: 86, 133, 163;
+    --ordo3-teal: 52, 120, 108;
+    --ordo3-sprout: 158, 176, 78;
+    --ordo3-leaf: 122, 143, 56;
+    --ordo3-moss: 84, 98, 44;
+    --ordo3-wheat: 198, 156, 66;
+    --ordo3-amber: 204, 132, 40;
+    --ordo3-rust: 162, 74, 34;
+    --ordo3-loam: 92, 68, 44;
+    --ordo3-bloom: 166, 76, 96;
+    --ordo3-hazard: 172, 44, 34;
+    --ordo3-void: 26, 22, 16;
+
+/*------- Set 4-------*/
+
+    --ordo4-frost: 214, 214, 196;
+    --ordo4-mist: 46, 48, 38;
+    --ordo4-line: 74, 76, 58;
+    --ordo4-slate: 128, 130, 108;
+    --ordo4-graphite: 34, 36, 28;
+    --ordo4-navy: 18, 20, 15;
+    --ordo4-azure: 108, 128, 96;
+    --ordo4-sky: 152, 168, 112;
+    --ordo4-teal: 94, 122, 92;
+    --ordo4-sprout: 186, 196, 78;
+    --ordo4-leaf: 152, 158, 54;
+    --ordo4-moss: 96, 100, 40;
+    --ordo4-wheat: 202, 176, 72;
+    --ordo4-amber: 214, 150, 44;
+    --ordo4-rust: 158, 88, 30;
+    --ordo4-loam: 68, 58, 36;
+    --ordo4-bloom: 146, 96, 108;
+    --ordo4-hazard: 190, 52, 34;
+    --ordo4-void: 6, 7, 4;
+   
+
+    --jumbo-image: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aordopharm-jp/banner.jpg');
+    --surface: var(--ordo-frost);
+    --surface-alt: var(--ordo-mist);
+    --ink: var(--ordo-graphite);
+    --ink-soft: var(--ordo-slate);
+    --on-dark: var(--ordo-frost);
+    --shadow-color: var(--ordo-navy);
+
+    --basalt-primary-color: var(--ordo-frost);
+    --basalt-secondary-color: var(--ordo-mist);
+    --basalt-tertiary-color: var(--ordo-line);
+    --basalt-main-text-color: var(--ordo-void);
+    --basalt-overtone: var(--ordo-navy);
+    --basalt-undertone: var(--ordo-azure);
+    --basalt-bright-element-color: var(--ordo-sky);
+    --basalt-dark-element-color: var(--ordo-navy);
+    --basalt-alternate-color: var(--ordo-leaf);
+    --basalt-positive-color: var(--ordo-leaf);
+    --basalt-negative-color: var(--ordo-hazard);
+    --basalt-sub-text-color: var(--ordo-slate);
+    --basalt-light-text-color: var(--ordo-frost);
+    --basalt-UI-dark-palette: var(--ordo-navy);
+    --basalt-UI-opacity: .97;
+    --basalt-focus-color: var(--ordo-azure);
+    --basalt-background-color: var(--ordo-frost);
+
+    --link-color: var(--ordo-azure);
+    --link-visited-color: var(--ordo-navy);
+    --link-newpage-color: var(--ordo-rust);
+    --link-weight: 600;
+    --link-volume: none;
+    --link-decor: none;
+
+/*------- Fonts -------*/
+
+    --header-font-primary: 'Archivo', 'Noto Sans JP', sans-serif;
+    --UI-font-primary: 'Archivo', 'Noto Sans JP', sans-serif;
+    --body-font-primary: 'InterVariable', 'Inter', 'Noto Sans JP', sans-serif;
+    --mono-font-primary: 'IBM Plex Mono', 'Noto Sans JP', monospace;
+    --display-font: var(--header-font);
+
+    --tab-accent: var(--ordo-navy);
+    --tab-face: var(--surface);
+    --tab-pad: .6rem 1.15rem;
+
+    --jumbo-mat: 247, 248, 240; 
+    --jumbo-height: clamp(10rem, 30vw, 26rem);
+    --jumbo-fit: cover;
+    --jumbo-focus: center;
+    --map-mat: var(--ordo-moss);
+    --map-ratio: 2 / 1;
+    --map-fit: cover;
+    --node-size: 2rem;
+    --node-color: var(--ordo-frost);
+    --reveal-time: var(--scale2);
+    --reveal-delay: 0;  
+    --reveal-ease: ease-out;
+
+    --header-logo: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='none' stroke='%230879be' stroke-width='5'/%3E%3Cpath d='M32 13c-11 11-11 29 0 38 11-9 11-27 0-38z' fill='%2366b512'/%3E%3Cpath d='M32 13c-11 11-11 29 0 38V13z' fill='%230b2b39'/%3E%3C/svg%3E");
+    --header-logo-size: contain;
+    --node-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='none' stroke='%230879be' stroke-width='2'/%3E%3Cpath d='M32 13c-11 11-11 29 0 38 11-9 11-27 0-38z' fill='%2366b512'/%3E%3Cpath d='M32 13c-11 11-11 29 0 38V13z' fill='%230b2b39'/%3E%3C/svg%3E");
+    --symbol-dna: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 700 700'%3E%3Cg transform='translate(0,700) scale(.1,-.1)' stroke='none'%3E%3Cpath fill='%230879be' d='M2257 5942 c-29 -31 -19 -59 47 -141 107 -132 165 -277 181 -454 5 -63 11 -80 28 -92 51 -36 97 -1 97 73 0 189 -97 429 -231 576 -56 61 -91 72 -122 38z'/%3E%3Cpath fill='%230b2b39' d='M2780 5004 c-213 -38 -357 -109 -516 -253 -183 -168 -341 -233 -564 -233 -193 0 -349 55 -501 178 -84 67 -114 77 -142 46 -31 -35 -21 -66 39 -121 156 -143 387 -231 604 -231 231 0 444 86 631 255 191 173 350 239 574 238 170 -1 336 -55 459 -149 l48 -37 -553 -554 -554 -554 -28 33 c-78 91 -140 248 -158 404 -7 58 -18 106 -27 117 -20 23 -57 22 -83 -4 -20 -20 -21 -29 -16 -105 11 -159 61 -302 151 -439 166 -249 457 -405 756 -405 231 0 444 86 631 255 191 173 350 239 574 238 170 -1 336 -55 459 -149 l48 -37 -553 -554 -554 -554 -28 33 c-79 92 -140 249 -158 404 -12 106 -26 134 -66 134 -39 0 -63 -34 -63 -87 0 -129 54 -312 128 -438 63 -107 210 -254 317 -317 137 -80 309 -128 465 -128 231 0 444 86 631 255 191 173 350 239 574 238 188 -1 347 -58 496 -179 84 -67 114 -77 142 -46 30 33 21 66 -32 115 -102 95 -246 173 -397 213 -97 26 -331 26 -428 0 -162 -43 -288 -113 -422 -235 -183 -168 -341 -233 -564 -233 -175 0 -339 52 -464 148 l-48 37 553 554 554 554 28 -33 c79 -92 140 -249 158 -404 12 -108 26 -134 69 -134 58 0 72 57 49 200 -58 360 -324 650 -685 746 -52 14 -105 18 -214 18 -109 0 -162 -4 -214 -18 -162 -43 -288 -113 -422 -235 -183 -168 -341 -233 -564 -233 -175 0 -339 52 -464 148 l-48 37 553 554 554 554 28 -33 c79 -92 140 -250 158 -404 8 -78 15 -103 31 -116 48 -42 98 -6 98 70 0 131 -57 320 -133 443 -124 202 -318 347 -552 411 -68 19 -286 33 -345 22z'/%3E%3Cpath fill='%230879be' d='M4410 1740 c-54 -54 9 -343 111 -509 68 -111 143 -191 178 -191 33 0 61 27 61 58 0 12 -26 55 -59 95 -109 133 -162 260 -182 433 -7 61 -17 106 -27 117 -20 23 -57 22 -82 -3z'/%3E%3C/g%3E%3C/svg%3E");
+     --symbol-dna-mono: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 700 700'%3E%3Cg transform='translate(0,700) scale(.1,-.1)' stroke='none'%3E%3Cpath fill='%23ffffff' d='M2257 5942 c-29 -31 -19 -59 47 -141 107 -132 165 -277 181 -454 5 -63 11 -80 28 -92 51 -36 97 -1 97 73 0 189 -97 429 -231 576 -56 61 -91 72 -122 38z'/%3E%3Cpath fill='%23ffffff' d='M2780 5004 c-213 -38 -357 -109 -516 -253 -183 -168 -341 -233 -564 -233 -193 0 -349 55 -501 178 -84 67 -114 77 -142 46 -31 -35 -21 -66 39 -121 156 -143 387 -231 604 -231 231 0 444 86 631 255 191 173 350 239 574 238 170 -1 336 -55 459 -149 l48 -37 -553 -554 -554 -554 -28 33 c-78 91 -140 248 -158 404 -7 58 -18 106 -27 117 -20 23 -57 22 -83 -4 -20 -20 -21 -29 -16 -105 11 -159 61 -302 151 -439 166 -249 457 -405 756 -405 231 0 444 86 631 255 191 173 350 239 574 238 170 -1 336 -55 459 -149 l48 -37 -553 -554 -554 -554 -28 33 c-79 92 -140 249 -158 404 -12 106 -26 134 -66 134 -39 0 -63 -34 -63 -87 0 -129 54 -312 128 -438 63 -107 210 -254 317 -317 137 -80 309 -128 465 -128 231 0 444 86 631 255 191 173 350 239 574 238 188 -1 347 -58 496 -179 84 -67 114 -77 142 -46 30 33 21 66 -32 115 -102 95 -246 173 -397 213 -97 26 -331 26 -428 0 -162 -43 -288 -113 -422 -235 -183 -168 -341 -233 -564 -233 -175 0 -339 52 -464 148 l-48 37 553 554 554 554 28 -33 c79 -92 140 -249 158 -404 12 -108 26 -134 69 -134 58 0 72 57 49 200 -58 360 -324 650 -685 746 -52 14 -105 18 -214 18 -109 0 -162 -4 -214 -18 -162 -43 -288 -113 -422 -235 -183 -168 -341 -233 -564 -233 -175 0 -339 52 -464 148 l-48 37 553 554 554 554 28 -33 c79 -92 140 -250 158 -404 8 -78 15 -103 31 -116 48 -42 98 -6 98 70 0 131 -57 320 -133 443 -124 202 -318 347 -552 411 -68 19 -286 33 -345 22z'/%3E%3Cpath fill='%23ffffff' d='M4410 1740 c-54 -54 9 -343 111 -509 68 -111 143 -191 178 -191 33 0 61 27 61 58 0 12 -26 55 -59 95 -109 133 -162 260 -182 433 -7 61 -17 106 -27 117 -20 23 -57 22 -82 -3z'/%3E%3C/g%3E%3C/svg%3E");
+
+
+    --header-title: "ORDOPHARM";
+    --header-subtitle: "AGRONOMICS";
+    --header-tagline: "Solving hunger. One problem at a time.";
+    --header-title-color: var(--ordo-navy);
+    --header-subtitle-color: var(--ordo-azure);
+    --header-tagline-color: var(--ordo-slate);
+    --mobile-title: "ORDOPHARM";
+    --mobile-subtitle: "AGR.";
+    --title-size: 1.5rem;
+    --subtitle-size: 1.5rem;
+    --tagline-size: .8rem;
+    --brand-weight: 800;
+    --division-weight: 400;
+
+    --header-background-color: var(--ordo-frost);
+    --header-border-color: var(--ordo-line);
+    --header-border-width: .0625rem;
+    --top-bar-link-color: var(--ordo-navy);
+    --top-bar-link-color-hover: var(--ordo-azure);
+    --top-bar-link-background-hover: var(--ordo-frost);
+    --top-bar-link-background-hover-alt: var(--ordo-mist);
+    --top-bar-dropdown-background: var(--ordo-frost);
+    --top-bar-dropdown-background-hover: var(--ordo-navy);
+    --top-bar-dropdown-link-color: var(--ordo-navy);
+    --top-bar-dropdown-link-color-hover: var(--ordo-frost);
+    --search-icon-color: var(--ordo-navy);
+    --login-status-background-color: var(--ordo-navy);
+    --user-icon-button-color: var(--ordo-navy);
+    --side-bar-background-color: var(--ordo-frost);
+    --side-bar-link-color: var(--ordo-navy);
+    --side-bar-heading-background-color: var(--ordo-navy);
+    --side-bar-media-background-color: var(--ordo-azure), .1;
+    --side-bar-resources-background-color: var(--ordo-leaf), .1;
+    --side-bar-button-color: var(--ordo-navy);
+    --login-status-text-color-hover: var(--ordo-navy);
+    --general-border-color: var(--ordo-line);
+    --title-border-color: var(--ordo-azure);
+    --hr-color: var(--ordo-line);
+    --blockquote-background-color: var(--ordo-mist);
+    --blockquote-border-color: var(--ordo-line);
+    --blockquote-border-width: .0625rem;
+    --code-background-color: var(--ordo-mist);
+    --toc-background-color: var(--ordo-mist);
+    --tab-background-color: var(--ordo-mist);
+    --tab-hover-background-color: var(--ordo-line);
+    --tab-selected-background-color: var(--ordo-navy);
+    --tab-focus-text-color: var(--ordo-frost);
+    --image-caption-background-color: var(--ordo-mist);
+    --image-block-border-color: var(--ordo-line);
+     --footnote-background-color: var(--active color, var(--ordo-mist));
+    --tag-background-color: var(--ordo-mist);
+    --bottom-area-background-color: var(--ordo-navy);
+    --bottom-area-text-color: var(--ordo-frost);
+    --footer-link-color: var(--ordo-mist);
+    --footer-divider-color: var(--ordo-azure);
+    --license-area-divider-color: var(--ordo-line);
+    --scrollbar-track-color: var(--ordo-mist);
+    --scrollbar-thumb-color: var(--ordo-azure);
+    --selection-background-color: var(--ordo-azure);
+    --selection-text-color: var(--ordo-frost);
+    --button-background-color: var(--ordo-frost);
+    --button-border-color: var(--ordo-navy);
+    --button-text-color: var(--ordo-navy);
+    --button-hover-background-color: var(--ordo-navy);
+    --button-hover-border-color: var(--ordo-navy);
+    --button-hover-text-color: var(--ordo-frost);
+    --rate-module-background-color: var(--ordo-mist);
+
+
+    --main-content-width: 70rem;
+    --base-font-size: 1rem;
+    --header-UI-font-size: calc(var(--true-font-size) *.8);
+    --corner: 0rem;
+    --rule-weight: .25rem;
+    --band-pad: 2.25rem;
+    --pane-min: 15rem;
+    --abstractor: visible;
+
+    --backdrop: none;
+    --backdrop-size: auto;
+    --backdrop-position: center;
+    --backdrop-attachment: scroll;
+    --watermark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='none' stroke='%23ffffff' stroke-width='5'/%3E%3Cpath d='M32 13c-11 11-11 29 0 38 11-9 11-27 0-38z' fill='%23ffffff'/%3E%3C/svg%3E");
+
+
+    --custom-header: "Internal Communication";
+    --custom-logo: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='none' stroke='%230b2b39' stroke-width='5'/%3E%3Cpath d='M32 13c-11 11-11 29 0 38 11-9 11-27 0-38z' fill='%230b2b39'/%3E%3C/svg%3E");
+    --custom-color: var(--ordo-navy);
+    --stamp-text: "CONFIDENTIAL";
+
+
+    --scale1: 1.2;
+    --scale2: 1;
+    --scale3: 1.6;
+    --delay1: 0;
+    --delay2: 1;
+    --delay3: 2;
+    --loop1: 1;
+    --loop2: 1;
+    --loop3: 1;
+    --fill-time: 2.5;
+    --track-height: .5rem;
+    --ticker-speed: 32;
+}
+
+
+body {
+    background-color: rgb(var(--basalt-background-color));
+    background-image: var(--backdrop);
+    background-size: var(--backdrop-size);
+    background-position: var(--backdrop-position);
+    background-attachment: var(--backdrop-attachment);
+}
+
+#page-content {
+    font-size: 1.0125em;
+    line-height: 1.65;
+}
+
+#main-content, body.print-body #main-content {
+    max-width: calc(100% - var(--main-content-side-margin) *2.5);
+}
+
+a:any-link {
+    text-transform: var(--link-volume, none);
+    text-decoration: var(--link-decor, none);
+    font-weight: var(--link-weight, 600);
+}
+
+#page-content a:any-link:not(.collapsible-block-link, .btn):is(:hover, :focus) {
+    text-decoration: underline;
+    text-underline-offset: .2em;
+}
+
+hr {
+    height: .0625rem;
+    background-color: rgb(var(--hr-color));
+}
+
+#header h1 a {
+    display: grid;
+    grid-template-areas: "mark brand" "mark tagline";
+    grid-template-columns: max-content max-content;
+    grid-template-rows: max-content max-content;
+    align-content: center;
+    column-gap: .625rem;
+    row-gap: .1rem;
+    padding-left: .75rem;
+    padding-right: 1rem;
+    letter-spacing: normal;
+    width: max-content;
+}
+
+#header h1 a::before {
+    grid-area: mark;
+    align-self: center;
+    height: calc(var(--base-header-height) *.5);
+    width: calc(var(--base-header-height) *.5);
+    min-width: unset;
+}
+
+#header h1 a span {
+    grid-area: brand;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    column-gap: .38rem;
+    height: auto;
+    text-align: left;
+    line-height: 1;
+}
+
+#header h1 a span::before {
+    content: var(--header-title, "ORDOPHARM");
+    color: rgb(var(--header-title-color));
+    font-family: var(--header-font);
+    font-size: var(--title-size);
+    font-weight: var(--brand-weight, 800);
+    letter-spacing: -.015em;
+}
+
+#header h1 a span::after {
+    content: var(--header-subtitle, "AGRONOMICS");
+    color: rgb(var(--header-subtitle-color));
+    font-family: var(--header-font);
+    font-size: var(--subtitle-size);
+    font-weight: var(--division-weight, 400);
+    letter-spacing: -.015em;
+}
+
+#header h1 a::after {
+    grid-area: tagline;
+    content: var(--header-tagline, "");
+    color: rgb(var(--header-tagline-color));
+    font-family: var(--body-font);
+    font-size: var(--tagline-size);
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: normal;
+}
+
+
+
+#top-bar div[class*='top-bar'] > ul > li > a {
+    text-transform: none;
+    font-family: var(--UI-font);
+    font-weight: 700;
+    letter-spacing: -.005em;
+    transition: color .12s ease-out, box-shadow .12s ease-out;
+}
+
+#top-bar div[class*='top-bar'] > ul > li > a:is(:hover, :focus),
+#top-bar div[class*='top-bar'] > ul > li:is(:hover, :focus-within) > a {
+    background-color: transparent;
+    color: rgb(var(--ordo-azure));
+    box-shadow: inset 0 calc(var(--rule-weight) *-1) 0 rgb(var(--ordo-azure));
+}
+
+#top-bar div[class*='top-bar'] ul li ul {
+    border: solid .0625rem rgb(var(--general-border-color));
+    box-shadow: 0 .5rem 1.25rem rgb(var(--shadow-color), .12);
+    box-sizing: border-box;
+}
+
+#top-bar div[class*='top-bar'] ul li ul li a {
+    font-weight: 500;
+}
+
+
+#side-bar {
+    border-right: solid .0625rem rgb(var(--general-border-color));
+}
+
+:is(#side-bar, #interwiki) .heading {
+    font-family: var(--UI-font);
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    font-size: .7rem;
+}
+
+
+#page-title, .meta-title {
+    visibility: var(--abstractor, visible);
+    font-family: var(--display-font);
+    font-weight: 500;
+    font-size: 2.5em;
+    line-height: 1.1;
+    letter-spacing: -.025em;
+    border-bottom: none;
+    margin-bottom: .5rem;
+    padding-bottom: 0;
+}
+
+#page-title::before {
+    content: "";
+    display: block;
+    width: 3.25rem;
+    border-top: solid var(--rule-weight) rgb(var(--title-border-color));
+    margin-bottom: .75rem;
+}
+
+#breadcrumbs, .pseudocrumbs {
+    font-family: var(--UI-font);
+    font-size: .8em;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: rgb(var(--basalt-sub-text-color));
+}
+
+#page-content :is(h1, h2, h3, h4, h5, h6) {
+    font-family: var(--display-font);
+    letter-spacing: -.02em;
+    display: flow-root;
+}
+
+#page-content :is(h1, h2) {
+    font-weight: 500;
+    border-bottom: solid .0625rem rgb(var(--general-border-color));
+    padding-bottom: .25rem;
+}
+
+#page-content :is(h3, h4, h5, h6) {
+    font-weight: 700;
+    border-bottom: none;
+}
+
+#main-content > .page-tags {
+    border-top: solid .0625rem rgb(var(--general-border-color));
+    padding-top: .5rem;
+}
+
+#main-content > .page-tags > span a {
+    border-radius: var(--corner);
+    font-family: var(--UI-font);
+    font-size: .75em;
+    font-weight: 600;
+}
+
+div.page-rate-widget-box, div.rate-box-with-credit-button {
+    border: solid .0625rem rgb(var(--general-border-color));
+    border-radius: var(--corner);
+}
+
+blockquote, div.blockquote {
+    border-width: 0;
+    border-left: solid var(--rule-weight) rgb(var(--active-color, var(--ordo-azure)));
+    border-radius: 0;
+    padding: .75rem 1.25rem;
+}
+
+.image-block, .scp-image-block {
+    border: solid .0625rem rgb(var(--general-border-color));
+    border-radius: var(--corner);
+    padding: .25rem;
+}
+
+:is(.image-block, .scp-image-block) :is(.image-caption, .scp-image-caption) {
+    font-family: var(--UI-font);
+    font-size: .78rem;
+    line-height: 1.4;
+    text-align: left;
+    padding: .5rem;
+    color: rgb(var(--basalt-sub-text-color));
+}
+
+:is(#page-content table:not(.form), table.wiki-content-table) th {
+    background-color: rgb(var(--ordo-navy));
+    color: rgb(var(--on-dark));
+    font-family: var(--UI-font);
+    font-weight: 600;
+    text-align: left;
+    border-color: rgb(var(--ordo-navy));
+}
+
+:is(#page-content table:not(.form), table.wiki-content-table) td {
+    border-color: rgb(var(--general-border-color));
+}
+
+
+#page-content div.yui-navset {
+    --tab-ink: var(--active-color, var(--tab-accent), black);
+    margin: 1.5rem 0;
+    position: relative;
+}
+
+#page-content div.yui-navset > ul.yui-nav {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin: 0 0 -.0625rem;
+    padding: 0;
+    border-top: none !important;
+    background: none;
+    list-style: none;
+}
+
+.yui-navset.yui-navset-top > ul.yui-nav li a em {
+    font-family: var(--UI-font);
+    font-weight: 600;
+    letter-spacing: .01em;
+    text-transform: none;
+}
+
+#page-content div.yui-navset > ul.yui-nav > li {
+    padding: 0;
+    border: none;
+    list-style: none;
+    
+}
+
+#page-content div.yui-navset {
+    --tab-ink: var(--active-color, var(--tab-accent, var(--ordo-navy)));
+}
+
+#page-content div.yui-navset.yui-navset-top>ul.yui-nav li.selected {
+background:inherit;
+}
+
+#page-content div.yui-navset.yui-navset-top>ul.yui-nav li:not(.selected) {
+color: rgb(var(--tab-ink)) ;
+}
+
+#page-content div.yui-navset.yui-navset-top>ul.yui-nav li {
+background: rgb(var(--tab-ink)) ;
+}
+
+#page-content div.yui-navset > ul.yui-nav > li > a:is(:hover, :focus) {
+    text-decoration: underline;
+    text-underline-offset: .25em;
+}
+
+#page-content div.yui-navset > ul.yui-nav > li > a {
+    color: rgb(var(--tab-face));
+    display: block;
+    box-sizing: border-box;
+    margin: 0;
+    padding: var(--tab-pad);
+    background-color: rgb(var(--tab-ink)) ;
+    background-image: none;
+    box-shadow: none;
+    border: solid .0625rem rgb(var(--tab-ink));
+    border-radius: var(--corner) var(--corner) 0 0;
+    text-decoration: none;
+    transition: background-color .12s ease-out, color .12s ease-out;
+}
+#page-content div.yui-navset > ul.yui-nav > li > a em {
+    font-family: var(--UI-font);
+    font-size: .92rem;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: .01em;
+    text-transform: none;
+    border: none;
+}
+
+
+#page-content div.yui-navset.yui-navset-top>ul.yui-nav li.selected a {
+color: rgb(var(--tab-ink)) !important;
+}
+
+#page-content div.yui-navset > ul.yui-nav > li::before,
+#page-content div.yui-navset > ul.yui-nav > li::after,
+#page-content div.yui-navset > ul.yui-nav > li > a::before,
+#page-content div.yui-navset > ul.yui-nav > li > a::after {
+    content: none;
+    display: none;
+}
+
+
+#page-content div.yui-navset > div.yui-content {
+    position: relative;
+    z-index: 0;
+    box-sizing: border-box;
+    padding: clamp(1rem, 3vw, 1.65rem);
+    background-color: rgb(var(--surface));
+    border: solid .0625rem rgb(var(--tab-ink));
+    border-radius: 0 var(--corner) var(--corner) var(--corner);
+    border-top: none !important;
+}
+
+#page-content div.yui-navset > div.yui-content > div > :first-child { margin-top: 0; }
+#page-content div.yui-navset > div.yui-content > div > :last-child { margin-bottom: 0; }
+
+#page-content a.collapsible-block-link {
+    font-family: var(--UI-font);
+    font-weight: 700;
+    text-transform: none;
+}
+
+.yui-navset .yui-nav .selected a, .yui-navset .yui-nav .selected a em { border-bottom: none !important; }
+
+#page-content .tabs-flush div.yui-navset > div.yui-content {
+    padding: 1.1rem 0 0;
+    background: none;
+    border: none;
+}
+
+#page-content .tabs-underline div.yui-navset > ul.yui-nav {
+    border-bottom-color: rgb(var(--general-border-color));
+}
+
+#page-content .tabs-underline div.yui-navset > ul.yui-nav > li > a {
+    background: none;
+    border: none;
+    box-shadow: inset 0 calc(var(--rule-weight) * -1) 0 transparent;
+
+}
+
+#page-content .tabs-underline div.yui-navset > ul.yui-nav > li.selected > a {
+    background: none;
+    box-shadow: inset 0 calc(var(--rule-weight) * -1) 0 rgb(var(--tab-ink));
+
+}
+
+.tabs-small div.yui-navset > ul.yui-nav {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.tabs-small div.yui-navset > ul.yui-nav > li { flex: none; }
+
+@media only screen and (max-width: 40rem) {
+    :root { --tab-pad: .5rem .8rem; }
+    #page-content div.yui-navset > ul.yui-nav > li > a em { font-size: .82rem; }
+}
+
+#page-content .mapview div.yui-navset {
+    display: grid;
+    grid-template-areas: "map" "panel";
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+
+#page-content .mapview div.yui-navset > ul.yui-nav {
+    grid-area: map;
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    aspect-ratio: var(--map-ratio);
+    margin: 0;
+    padding: 0;
+    background-color: rgb(var(--map-mat));
+    background-image: var(--map-image, none);
+    background-size: var(--map-fit);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: var(--corner);
+    overflow: clip;
+    overflow-clip-margin: 2.5rem;
+}
+
+#page-content .mapview div.yui-navset > ul.yui-nav > li {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+#page-content .mapview div.yui-navset > ul.yui-nav > li > a {
+    position: relative;
+    display: block;
+    box-sizing: content-box;
+    width: var(--node-size);
+    height: var(--node-size);
+    padding: 0;
+    background-image: var(--node-icon) !important;
+    border-radius: 50%;
+    transition: transform .18s ease-out, background-color .18s ease-out;
+    background-color:rgb(var(--surface));
+    background-blend-mode: luminosity;
+}
+
+#page-content .mapview div.yui-navset > ul.yui-nav > li > a::before {
+    content: "";
+    position: absolute;
+    inset: calc((2.75rem - var(--node-size)) / -2);
+    border-radius: 50%;
+}
+
+#page-content .mapview div.yui-navset > ul.yui-nav > li > a:hover,
+#page-content .mapview div.yui-navset > ul.yui-nav > li > a:focus {
+    transform: scale(1.2);
+
+}
+
+#page-content .mapview div.yui-navset > ul.yui-nav > li.selected > a {
+    background-color: rgb(var(--active-color, var(--ordo-void))) !important;
+    border-color: rgb(var(--node-color));
+    transform: scale(1.45);
+}
+
+#page-content .mapview div.yui-navset > ul.yui-nav > li > a em {
+    position: absolute;
+    width: .0625rem;
+    height: .0625rem;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+#page-content .mapview.labelled div.yui-navset > ul.yui-nav > li > a em {
+    position: absolute;
+    left: 50%;
+    top: calc(100% + .45rem);
+    width: auto;
+    height: auto;
+    clip-path: none;
+    transform: translateX(-50%);
+    font-family: var(--UI-font);
+    font-size: .62rem;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: rgb(var(--on-dark));
+    text-shadow: 0 .0625rem .1875rem rgb(var(--ordo-void), .85);
+    pointer-events: none;
+    overflow: visible;
+    z-index: 2;
+}
+
+#page-content .mapview div.yui-navset > ul.yui-nav > li:nth-child(1) { left: var(--x1, 50%);  top: var(--y1, 50%); }
+#page-content .mapview div.yui-navset > ul.yui-nav > li:nth-child(2) { left: var(--x2, 50%); top: var(--y2, 50%); }
+#page-content .mapview div.yui-navset > ul.yui-nav > li:nth-child(3) { left: var(--x3, 50%); top: var(--y3, 50%); }
+#page-content .mapview div.yui-navset > ul.yui-nav > li:nth-child(4) { left: var(--x4, 50%); top: var(--y4, 50%); }
+#page-content .mapview div.yui-navset > ul.yui-nav > li:nth-child(5) { left: var(--x5, 50%); top: var(--y5, 50%); }
+#page-content .mapview div.yui-navset > ul.yui-nav > li:nth-child(6) { left: var(--x6, 50%); top: var(--y6, 50%); }
+#page-content .mapview div.yui-navset > ul.yui-nav > li:nth-child(7) { left: var(--x7, 50%); top: var(--y7, 50%); }
+#page-content .mapview div.yui-navset > ul.yui-nav > li:nth-child(8) { left: var(--x8, 50%); top: var(--y8, 50%); }
+#page-content .mapview div.yui-navset > ul.yui-nav > li:nth-child(9) { left: var(--x9, 50%); top: var(--y9, 50%); }
+#page-content .mapview div.yui-navset > ul.yui-nav > li:nth-child(10) { left: var(--x10, 50%); top: var(--y10, 50%); }
+#page-content .mapview div.yui-navset > ul.yui-nav > li:nth-child(11) { left: var(--x11, 50%); top: var(--y11, 50%); }
+#page-content .mapview div.yui-navset > ul.yui-nav > li:nth-child(12) { left: var(--x12, 50%); top: var(--y12, 50%); }
+
+#page-content .mapview div.yui-navset > div.yui-content {
+    grid-area: panel;
+    padding: 1rem 0 0;
+    background: none;
+    border: none;
+    border-top: solid var(--rule-weight) rgb(var(--active-color, var(--ordo-azure)));
+}
+
+
+#page-content .mapview.panelled div.yui-navset > div.yui-content {
+    padding: 1.15rem 1.25rem !important;
+    background-color: rgb(var(--surface)) !important;
+    border: solid .0625rem rgb(var(--general-border-color)) !important;
+    border-top: solid var(--rule-weight) rgb(var(--active-color, var(--ordo-azure))) !important;
+}
+
+@media only screen and (min-width: 48rem) {
+    #page-content .mapview div.yui-navset {
+        grid-template-areas: "panel map";
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1.7fr);
+        gap: clamp(1rem, 3vw, 2.25rem);
+        align-items: start;
+    }
+    #page-content .mapview.map-left div.yui-navset {
+        grid-template-areas: "map panel";
+        grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr);
+    }
+    #page-content .mapview.wide div.yui-navset {
+        grid-template-areas: "map" "panel";
+        grid-template-columns: 1fr;
+    }
+}
+
+.metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--stat-min, 8.5rem), 1fr));
+    gap: .65rem;
+    margin: 1.5rem 0;
+}
+
+#page-content .metrics > div {
+    box-sizing: border-box;
+    padding: .85rem 1rem;
+    background-color: rgb(var(--surface));
+    border: solid .0625rem rgb(var(--general-border-color));
+    border-left: solid var(--rule-weight) rgb(var(--active-color, var(--ordo-azure)));
+    border-radius: var(--corner);
+}
+
+#page-content .metrics > div .figure { font-size: clamp(1.5rem, 5vw, 2.25rem); }
+
+
+.label {
+    display: block;
+    margin-top: .2rem;
+    font-family: var(--UI-font);
+    font-size: .66rem;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: rgb(var(--ink-soft));
+}
+
+.pipeline {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--stage-min, 7.5rem), 1fr));
+    gap: .3rem;
+    margin: 1.5rem 0;
+    counter-reset: stage;
+}
+
+#page-content .pipeline > div {
+    box-sizing: border-box;
+    padding: .65rem .8rem .7rem;
+    background-color: rgb(var(--surface-alt));
+    border-top: solid var(--rule-weight) rgb(var(--general-border-color));
+    border-radius: var(--corner);
+    font-family: var(--UI-font);
+    font-size: .8rem;
+    line-height: 1.25;
+}
+
+#page-content .pipeline > div::before {
+    counter-increment: stage;
+    content: counter(stage, decimal-leading-zero);
+    display: block;
+    margin-bottom: .2rem;
+    font-family: var(--mono-font);
+    font-size: .62rem;
+    letter-spacing: .1em;
+    color: rgb(var(--ink-soft));
+}
+
+#page-content .pipeline > div.done {
+    border-top-color: rgb(var(--active-color, var(--ordo-leaf)));
+    opacity: .72;
+}
+
+#page-content .pipeline > div.now {
+    background-color: rgb(var(--active-color, var(--ordo-azure)));
+    border-top-color: rgb(var(--active-color, var(--ordo-azure)));
+    color: rgb(var(--on-dark));
+    font-weight: 700;
+}
+#page-content .pipeline > div.now::before { color: inherit; opacity: .75; }
+
+#page-content .pipeline > div.halted {
+    border-top-color: rgb(var(--ordo-hazard));
+    color: rgb(var(--ordo-hazard));
+}
+
+.updates {
+    margin: 1.5rem 0;
+    padding-left: 1.15rem;
+    border-left: solid .0625rem rgb(var(--general-border-color));
+}
+
+#page-content .updates > div {
+    position: relative;
+    padding-bottom: 1.1rem;
+}
+#page-content .updates > div:last-child { padding-bottom: 0; }
+
+#page-content .updates > div::before {
+    content: "";
+    position: absolute;
+    left: -1.475rem;
+    top: .5rem;
+    width: .5rem;
+    height: .5rem;
+    background-color: rgb(var(--active-color, var(--ordo-hazard)));
+    border-radius: 50%;
+    box-shadow: 0 0 0 .2rem rgb(var(--basalt-background-color));
+}
+
+.date {
+    display: block;
+    font-family: var(--mono-font);
+    font-size: .7rem;
+    font-weight: 600;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: rgb(var(--active-color, var(--ordo-hazard)));
+}
+
+#page-content div.notice {
+    box-sizing: border-box;
+    margin: 1.25rem 0;
+    padding: .8rem 1rem;
+    background-color: rgb(var(--active-color, var(--ordo-amber)), .1);
+    border-left: solid var(--rule-weight) rgb(var(--active-color, var(--ordo-amber)));
+    border-radius: var(--corner);
+    font-size: .94em;
+}
+
+#page-content div.notice::before {
+    content: var(--notice-word, "NOTICE");
+    display: block;
+    margin-bottom: .25rem;
+    font-family: var(--UI-font);
+    font-size: .66rem;
+    font-weight: 700;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: rgb(var(--active-color, var(--ordo-amber)));
+}
+
+#page-content div.notice > :last-child { margin-bottom: 0; }
+
+.tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--tile-min, 13rem), 1fr));
+    gap: .7rem;
+    margin: 1.5rem 0;
+}
+
+#page-content .tiles > div {
+    position: relative;
+    box-sizing: border-box;
+    padding: 1rem 1.1rem 2.4rem;
+    background-color: rgb(var(--surface));
+    border: solid .0625rem rgb(var(--general-border-color));
+    border-radius: var(--corner);
+    transition: box-shadow .15s ease-out, border-color .15s ease-out;
+}
+
+#page-content .tiles > div h1,
+#page-content .tiles > div h2,
+#page-content .tiles > div h3,
+#page-content .tiles > div h4,
+#page-content .tiles > div h5,
+#page-content .tiles > div h6 {
+    margin-top: 0;
+    font-size: 1.05em;
+    border-bottom: none;
+}
+
+#page-content .tiles > div::after {
+    content: "\2192";
+    position: absolute;
+    right: 1.1rem;
+    bottom: .8rem;
+    color: rgb(var(--active-color, var(--ordo-azure)));
+    font-size: 1.1rem;
+    transition: transform .15s ease-out;
+}
+
+#page-content .tiles > div:hover,
+#page-content .tiles > div:focus-within {
+    border-color: rgb(var(--active-color, var(--ordo-azure)));
+    box-shadow: 0 .4rem 1.25rem rgb(var(--shadow-color), .12);
+}
+
+#page-content .tiles > div:hover::after,
+#page-content .tiles > div:focus-within::after { transform: translateX(.25rem); }
+
+.ticker.scroll {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#page-content .ticker.scroll p {
+    display: inline-block;
+    margin: 0;
+    padding-left: 100%;
+    animation: ordo-crawl calc(var(--ticker-speed) * 1s) linear infinite;
+}
+
+#page-content .ticker.scroll br { display: none; }
+#page-content .ticker.scroll span { margin-right: 1.75rem; }
+
+@keyframes ordo-crawl {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-100%); }
+}
+
+.tape {
+    height: var(--tape-height, .6rem);
+    margin: 1.35rem 0;
+    background: repeating-linear-gradient(135deg,
+        rgb(var(--active-color, var(--ordo-hazard))) 0 .55rem,
+        transparent .55rem 1.1rem);
+}
+
+.tape.thick { --tape-height: 1.1rem; }
+
+
+.badge {
+    display: inline-block;
+    padding: .1rem .5rem;
+    background-color: rgb(var(--active-color, var(--ordo-navy)));
+    border-radius: var(--corner);
+    color: rgb(var(--on-dark));
+    font-family: var(--UI-font);
+    font-size: .64rem;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    vertical-align: .1em;
+}
+.badge.hollow {
+    background: none;
+    border: solid .0625rem rgb(var(--active-color, var(--ordo-navy)));
+    color: rgb(var(--active-color, var(--ordo-navy)));
+}
+
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+.counter-element {
+  
+  animation: countUp var(--counterTime, 5s) forwards ease-out;
+  counter-reset: score var(--num);
+}
+
+.counter-element::before {
+  content: counter(score);
+}
+
+@keyframes countUp {
+  from {
+    --num: var(--from.);
+  }
+  to {
+    --num: var(--to);
+  }
+}
+
+
+/*------- Default Corpo Webpage Elements -------*/
+
+
+.hero, .factsheet, .ticker { --active-color: var(--ordo-navy); }
+.band { --active-color: var(--ordo-mist); }
+.pane, .pullquote, .sidebox, .growth-track { --active-color: var(--ordo-azure); }
+.product_label { --active-color: var(--ordo-leaf); }
+.hero, .pane.filled { --cta-ink: var(--on-dark); --cta-on: var(--active-color); }
+
+
+.hero {
+    position: relative;
+    box-sizing: border-box;
+    margin: 1.5rem auto 2rem;
+    padding: clamp(1.5rem, 4vw, 3.25rem);
+    background-color: rgb(var(--active-color));
+    background-image: var(--hero-image, none);
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--corner);
+    color: rgb(var(--on-dark));
+    overflow: hidden;
+}
+
+#page-content div.hero :is(h1, h2, h3, h4, h5, h6) {
+    color: inherit;
+    border-bottom: none;
+}
+
+#page-content div.hero a:any-link {
+    color: inherit;
+}
+
+.hero.tint::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgb(var(--active-color), .78);
+    z-index: 0;
+}
+
+.hero.tint > * { position: relative; z-index: 1; }
+
+.hero.crest::after {
+    content: "";
+    position: absolute;
+    right: -4rem;
+    bottom: -6rem;
+    width: 22rem;
+    height: 22rem;
+    background-image: var(--watermark);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: .05;
+    pointer-events: none;
+}
+
+
+.eyebrow {
+    display: block;
+    font-family: var(--UI-font);
+    font-size: .7rem;
+    font-weight: 700;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: rgb(var(--active-color, var(--ordo-azure)));
+    margin-bottom: .65rem;
+}
+
+.hero .eyebrow, .band .eyebrow { color: inherit; }
+
+.headline {
+    display: block;
+    font-family: var(--display-font);
+    font-weight: 400;
+    font-size: clamp(1.75rem, 4.25vw, 3rem);
+    line-height: 1.06;
+    letter-spacing: -.03em;
+    margin: 0 0 .85rem;
+    text-wrap: balance;
+}
+
+.headline.heavy { font-weight: 700; }
+
+.lede {
+    display: block;
+    font-size: 1.1em;
+    line-height: 1.55;
+    max-width: 46rem;
+    margin-bottom: 1rem;
+}
+
+.smallprint {
+    display: block;
+    font-family: var(--mono-font);
+    font-size: .7rem;
+    line-height: 1.5;
+    color: rgb(var(--basalt-sub-text-color));
+    letter-spacing: -.01em;
+}
+
+.figure {
+    display: block;
+    font-family: var(--display-font);
+    font-size: clamp(2rem, 5vw, 3.25rem);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -.04em;
+    color: rgb(var(--active-color, var(--ordo-azure)));
+}
+
+.cta a:any-link, a.cta {
+    display: inline-block;
+    font-family: var(--UI-font);
+    font-weight: 700;
+    text-decoration: none !important;
+    text-transform: none;
+    padding: .55rem 1.4rem;
+    margin: .25rem .35rem .25rem 0;
+    color: rgb(var(--cta-ink, var(--ordo-navy)));
+    border: solid .125rem rgb(var(--cta-ink, var(--ordo-navy)));
+    border-radius: var(--corner);
+    transition: background-color .12s ease-out, color .12s ease-out;
+}
+
+.cta a:any-link:is(:hover, :focus), a.cta:is(:hover, :focus) {
+    background-color: rgb(var(--cta-ink, var(--ordo-navy)));
+    color: rgb(var(--cta-on, var(--surface))) !important;
+}
+
+.cta.solid a:any-link {
+    background-color: rgb(var(--cta-ink, var(--ordo-navy)));
+    border-color: rgb(var(--cta-ink, var(--ordo-navy)));
+    color: rgb(var(--cta-on, var(--surface)));
+}
+
+.cta.solid a:any-link:is(:hover, :focus) {
+    filter: brightness(.88);
+}
+
+
+.band {
+    box-sizing: border-box;
+    color: rgb(var(--on-dark));
+    margin: 1.5rem auto;
+    padding: var(--band-pad) clamp(1rem, 3vw, 2.25rem);
+    background-color: rgb(var(--active-color));
+    border-radius: var(--corner);
+}
+
+#page-content div.band:not(.rule) :is(a:any-link, h1, h2, h3, h4, h5, h6) {
+    color: inherit;
+}
+
+.band.rule {
+    color: inherit;
+    background-color: transparent;
+    border-top: solid var(--rule-weight) rgb(var(--active-color));
+    padding-top: 1.25rem;
+    padding-bottom: 0;
+}
+
+
+.panes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--pane-min), 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+    align-items: stretch;
+}
+
+.panes.duo { --pane-min: 20rem; }
+.panes.quad { --pane-min: 11rem; }
+
+#page-content div.pane {
+    box-sizing: border-box;
+    padding: 1.15rem 1.35rem 1.35rem;
+    background-color: rgb(var(--surface));
+    border: solid .0625rem rgb(var(--general-border-color));
+    border-top: solid var(--rule-weight) rgb(var(--active-color));
+    border-radius: var(--corner);
+    transition: box-shadow .15s ease-out, transform .15s ease-out;
+}
+
+#page-content div.pane:is(:hover, :focus-within) {
+    box-shadow: 0 .5rem 1.5rem rgb(var(--shadow-color), .13);
+    transform: translateY(-.15rem);
+}
+
+#page-content div.pane :is(h1, h2, h3, h4, h5, h6) {
+    margin-top: 0;
+    border-bottom: none;
+    font-size: 1.15em;
+}
+
+#page-content div.pane.filled {
+    background-color: rgb(var(--active-color));
+    border-color: rgb(var(--active-color));
+    color: rgb(var(--on-dark));
+}
+
+#page-content div.pane.filled :is(a:any-link, h1, h2, h3, h4, h5, h6) { color: inherit; }
+
+.s-title {
+    font-size: 1.15em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0.4rem 0;
+    letter-spacing: 0.09rem;
+}
+.pullquote {
+    box-sizing: border-box;
+    margin: 1.75rem auto;
+    padding: .25rem 0 .25rem 1.5rem;
+    border-left: solid var(--rule-weight) rgb(var(--active-color));
+    font-family: var(--display-font);
+    font-size: 1.4em;
+    font-weight: 300;
+    line-height: 1.3;
+    letter-spacing: -.02em;
+    max-width: 48rem;
+}
+
+.attrib {
+    display: block;
+    margin-top: .75rem;
+    font-family: var(--UI-font);
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: rgb(var(--basalt-sub-text-color));
+}
+
+
+.split {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    gap: clamp(1rem, 3vw, 2.5rem);
+    align-items: start;
+    margin: 1.5rem 0;
+}
+
+.split.weighted { grid-template-columns: 1.6fr 1fr; }
+
+@media only screen and (max-width: 46rem) {
+    .split.weighted { grid-template-columns: 1fr; }
+}
+
+/*------- Sidebox -------*/
+
+.sidebox {
+    float: right;
+    clear: right;
+    width: 17.5rem;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: .5rem 0 1rem 1.5rem;
+    padding: .875rem 1rem;
+    background-color: rgb(var(--surface-alt));
+    border-top: solid var(--rule-weight) rgb(var(--active-color));
+    border-radius: var(--corner);
+    font-size: .875em;
+    line-height: 1.5;
+}
+
+.sidebox.left { float: left; clear: left; margin: .5rem 1.5rem 1rem 0; }
+
+.sidebox table { width: 100%; margin: 0; }
+
+.sidebox table td {
+    border: none;
+    border-bottom: solid .0625rem rgb(var(--general-border-color));
+    padding: .3em .2em;
+    background-color: transparent;
+}
+
+@media only screen and (max-width: 36rem) {
+    .sidebox, .sidebox.left { float: none; margin-inline: auto; width: 100%; }
+}
+
+/*-------Bayer JUMBOTRON Recreation-------*/
+
+.jumbo {
+    --cta-ink: var(--on-dark);
+    --cta-on: var(--jumbo-mat);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: var(--jumbo-align, flex-end);
+    box-sizing: border-box;
+    width: 100%;
+    min-height: var(--jumbo-height);
+    margin: 1.5rem auto 2rem;
+    padding: clamp(1.1rem, 3.5vw, 3rem);
+    background-color: rgb(var(--jumbo-mat));
+    background-image: var(--jumbo-image, none);
+    background-size: var(--jumbo-fit);
+    background-position: var(--jumbo-focus);
+    background-repeat: no-repeat;
+    border-radius: var(--corner);
+    color: rgb(var(--on-dark));
+    overflow: hidden;
+}
+
+#page-content div.jumbo h1,
+#page-content div.jumbo h2,
+#page-content div.jumbo h3,
+#page-content div.jumbo h4,
+#page-content div.jumbo h5,
+#page-content div.jumbo h6,
+#page-content div.jumbo a:any-link,
+#page-content div.jumbo .eyebrow,
+#page-content div.jumbo .lede {
+    color: inherit;
+    border-bottom: none;
+}
+
+.jumbo.ratio { min-height: 0; aspect-ratio: var(--jumbo-ratio, 21 / 9); }
+.jumbo.short { --jumbo-height: clamp(7rem, 20vw, 15rem); }
+.jumbo.tall { --jumbo-height: clamp(15rem, 55vw, 40rem); }
+
+.jumbo.contain {
+    --jumbo-fit: contain;
+    --cta-ink: var(--ordo-navy);
+    --cta-on: var(--jumbo-mat);
+    padding-block: clamp(.6rem, 2vw, 1.4rem);
+    color: rgb(var(--ink));
+}
+
+.jumbo.top { --jumbo-align: flex-start; }
+.jumbo.middle { --jumbo-align: center; }
+.jumbo.centered { text-align: center; align-items: center; }
+
+.jumbo.tint::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top,
+        rgb(var(--active-color, var(--ordo-navy)), var(--tint-strength, .82)) 0%,
+        rgb(var(--active-color, var(--ordo-navy)), 0) 78%);
+}
+.jumbo.tint > * { position: relative; }
+
+.jumbo.rule { border-bottom: solid var(--rule-weight) rgb(var(--active-color, var(--ordo-leaf))); }
+
+#page-content .bleed:is(.hero, .jumbo, .band) {
+    width: 100vw;
+    max-width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    border-radius: 0;
+}
+
+
+.jumbo.crest::after {
+    content: "";
+    position: absolute;
+    right: -3rem;
+    bottom: -5rem;
+    width: 20rem;
+    height: 20rem;
+    background-image: var(--watermark);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: .06;
+    pointer-events: none;
+}
+
+
+.factsheet {
+    margin: 1.5rem 0;
+    border-top: solid var(--rule-weight) rgb(var(--active-color));
+}
+
+.factsheet table { width: 100%; margin: 0; }
+
+.factsheet table :is(td, th) {
+    border: none;
+    border-bottom: solid .0625rem rgb(var(--general-border-color));
+    padding: .55em .65em;
+    background-color: transparent;
+    color: inherit;
+}
+
+.factsheet table th {
+    font-family: var(--UI-font);
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: rgb(var(--basalt-sub-text-color));
+    background-color: transparent;
+    width: 34%;
+}
+
+
+
+.ticker {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 1.75rem;
+    box-sizing: border-box;
+    margin: 1rem 0;
+    padding: .55rem .9rem;
+    background-color: rgb(var(--active-color));
+    color: rgb(var(--on-dark));
+    border-radius: var(--corner);
+    font-family: var(--mono-font);
+    font-size: .8rem;
+    font-weight: 500;
+    letter-spacing: .02em;
+    overflow: hidden;
+}
+
+.ticker .up::before { content: "\25B2\00A0"; color: rgb(var(--ordo-sprout)); }
+.ticker .down::before { content: "\25BC\00A0"; color: rgb(var(--ordo-hazard)); }
+.ticker .flat::before { content: "\2014\00A0 "; color: rgb(var(--ordo-slate)); }
+
+
+.growth-wrap { position: relative; margin: .75rem 0; }
+
+.growth-track {
+    width: 100%;
+    height: var(--track-height);
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: rgb(var(--active-color), .15);
+    border-radius: var(--corner);
+}
+
+
+div.memo, div.custom_memo, div.compliance_memo, div.legal_memo {
+    --active-color: var(--custom-color);
+    --memo-heading: var(--custom-header, "Internal Communication");
+    --memo-logo: var(--custom-logo);
+    box-sizing: border-box;
+    margin: 1.75rem auto;
+    padding: 0 0 1.1rem;
+    background-color: rgb(var(--on-dark));
+    border: solid .0625rem rgb(var(--general-border-color));
+    border-top: solid var(--rule-weight) rgb(var(--active-color));
+    border-radius: var(--corner);
+    box-shadow: 0 .35rem 1.25rem rgb(var(--shadow-color), .08);
+}
+
+div.memo::before, div.custom_memo::before, div.compliance_memo::before, div.legal_memo::before {
+    content: var(--memo-heading);
+    display: flex;
+    align-items: center;
+    gap: .55rem;
+    box-sizing: border-box;
+    padding: .7rem 1.1rem;
+    margin-bottom: .9rem;
+    background-color: rgb(var(--active-color), .08);
+    border-bottom: solid .0625rem rgb(var(--general-border-color));
+    background-image: var(--memo-logo);
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1.5rem;
+    font-family: var(--UI-font);
+    font-size: .78rem;
+    font-weight: 700;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: rgb(var(--active-color));
+}
+
+div.memo > *, div.custom_memo > *, div.compliance_memo > *, div.legal_memo > * {
+    margin-left: 1.1rem;
+    margin-right: 1.1rem;
+}
+
+div.memo {
+    --custom-header: "Ordopharm Agronomics - Internal Memorandum";
+    --custom-color: var(--ordo-navy);
+}
+
+div.compliance_memo {
+    --custom-header: "Regulatory & Compliance Notice";
+    --custom-color: var(--ordo-amber);
+}
+
+div.legal_memo {
+    --custom-header: "Office of the General Counsel - Privileged";
+    --custom-color: var(--ordo-hazard);
+    font-family: var(--mono-font);
+    font-size: .82rem;
+}
+
+
+
+.stamped { position: relative; overflow: hidden; }
+
+.stamped::after {
+    content: var(--stamp-text, "CONFIDENTIAL");
+    position: absolute;
+    top: 1.75rem;
+    right: -3.25rem;
+    width: 14rem;
+    text-align: center;
+    transform: rotate(38deg);
+    background-color: rgb(var(--ordo-hazard), .9);
+    color: rgb(var(--on-dark));
+    font-family: var(--UI-font);
+    font-size: .68rem;
+    font-weight: 700;
+    letter-spacing: .18em;
+    padding: .2rem 0;
+    pointer-events: none;
+}
+
+
+.product_label {
+    --signal-word: "CAUTION";
+    box-sizing: border-box;
+    max-width: 30rem;
+    margin: 1.5rem auto;
+    padding: 0 0 1rem;
+    background-color: rgb(var(--on-dark));
+    border: solid .1875rem rgb(var(--active-color));
+    border-radius: var(--corner);
+    color: rgb(var(--ink));
+    text-align: center;
+}
+
+.product_label::before {
+    content: var(--signal-word);
+    display: block;
+    padding: .45rem;
+    margin-bottom: .9rem;
+    background-color: rgb(var(--active-color));
+    color: rgb(var(--on-dark));
+    font-family: var(--UI-font);
+    font-size: .95rem;
+    font-weight: 800;
+    letter-spacing: .3em;
+}
+
+.product_label > * { margin-left: 1rem; margin-right: 1rem; }
+
+.product_label::after {
+    content: "";
+    display: block;
+    height: .55rem;
+    margin: 1rem 1rem -1rem;
+    background: repeating-linear-gradient(135deg, rgb(var(--active-color)) 0 .5rem, transparent .5rem 1rem);
+}
+
+
+
+.redact {
+    background-color: rgb(var(--ink));
+    color: rgb(var(--ink));
+    padding: 0 .15em;
+    user-select: none;
+}
+
+.redact:is(:hover, :focus) { color: rgb(var(--surface)); }
+
+#page-content div:is(.tiny) { max-width: 16rem; }
+#page-content div:is(.medium) { max-width: 28rem; }
+#page-content div:is(.large) { max-width: 46rem; }
+#page-content div:is(.full) { max-width: 100%; }
+div.center { margin: 1.5rem auto; }
+div.left { float: left; margin-right: 1.5rem; clear: left; }
+div.right { float: right; margin-left: 1.5rem; clear: right; }
+div.align-l { text-align: left; }
+div.align-r { text-align: right; }
+div.align-c { text-align: center; }
+
+.flattened { box-shadow: none; }
+
+.raised { box-shadow: 0 .5rem 1.75rem rgb(var(--shadow-color), .14); }
+
+.round { --corner: .375rem; border-radius: .375rem; }
+
+.opaque { background-color: rgb(var(--active-color)); color: rgb(var(--on-dark)); }
+
+.gridlines {
+    background-image:
+        linear-gradient(rgb(var(--ordo-line), .55) .0625rem, transparent .0625rem),
+        linear-gradient(90deg, rgb(var(--ordo-line), .55) .0625rem, transparent .0625rem);
+    background-size: 2rem 2rem;
+}
+
+.mono { font-family: var(--mono-font); }
+.ui { font-family: var(--UI-font); }
+.display { font-family: var(--display-font); letter-spacing: -.02em; }
+.caps { text-transform: uppercase; letter-spacing: .14em; }
+.tight { line-height: 1.15; }
+
+.inkcolor { color: rgb(var(--active-color, var(--ordo-azure))); font-weight: 600; }
+
+/*---- Animations & Keyframes ----*/
+
+.fade-in1 { opacity: 0; animation: ordo-in calc(1s * var(--scale1)) ease-out calc(1s * var(--delay1)) var(--loop1) forwards; }
+.fade-in2 { opacity: 0; animation: ordo-in calc(1s * var(--scale2)) ease-out calc(1s * var(--delay2)) var(--loop2) forwards; }
+.fade-in3 { opacity: 0; animation: ordo-in calc(1s * var(--scale3)) ease-out calc(1s * var(--delay3)) var(--loop3) forwards; }
+.fade-out1 { opacity: 1; animation: ordo-out calc(1s * var(--scale1)) ease-out calc(1s * var(--delay1)) var(--loop1) forwards; }
+.fade-out2 { opacity: 1; animation: ordo-out calc(1s * var(--scale2)) ease-out calc(1s * var(--delay2)) var(--loop2) forwards; }
+.fade-out3 { opacity: 1; animation: ordo-out calc(1s * var(--scale3)) ease-out calc(1s * var(--delay3)) var(--loop3) forwards; }
+
+.rise1 { opacity: 0; animation: ordo-rise calc(1s * var(--scale1)) ease-out calc(1s * var(--delay1)) 1 forwards; }
+.rise2 { opacity: 0; animation: ordo-rise calc(1s * var(--scale2)) ease-out calc(1s * var(--delay2)) 1 forwards; }
+.rise3 { opacity: 0; animation: ordo-rise calc(1s * var(--scale3)) ease-out calc(1s * var(--delay3)) 1 forwards; }
+
+.pulse { animation: ordo-pulse calc(1s * var(--scale1)) ease-in-out infinite alternate; }
+
+.growth-fill {
+    height: 100%;
+    width: 0%;
+    background-color: rgb(var(--active-color, var(--ordo-azure)));
+    animation: ordo-fill calc(var(--fill-time) *1s) ease-in-out forwards;
+}
+
+#page-content .mapview div.yui-content > div {
+    animation: ordo-in calc(var(--reveal-time) * 1s) var(--reveal-ease)
+               calc(var(--reveal-delay) * 1s) 1 both;
+}
+
+#page-content .mapview.reveal-rise  div.yui-content > div { animation-name: ordo-rise; }
+#page-content .mapview.reveal-wipe  div.yui-content > div { animation-name: ordo-wipe; }
+#page-content .mapview.reveal-slide div.yui-content > div { animation-name: ordo-slide; }
+#page-content .mapview.reveal-none  div.yui-content > div { animation: none; }
+
+#page-content .mapview.reveal-pulse div.yui-content > div { animation-name: ordo-flash; }
+
+@keyframes ordo-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes ordo-out { from { opacity: 1; } to { opacity: 0; } }
+@keyframes ordo-rise {
+    from { opacity: 0; transform: translateY(1.25rem); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes ordo-pulse { from { opacity: 1; } to { opacity: .35; } }
+@keyframes ordo-fill {
+    from { width: 0%; }
+    to { width: var(--fill-to, 100%); }
+}
+@keyframes ordo-wipe {
+    from { opacity: 0; clip-path: inset(0 100% 0 0); }
+    to { opacity: 1; clip-path: inset(0 0 0 0); }
+}
+@keyframes ordo-slide {
+    from { opacity: 0; transform: translateX(-1.25rem); }
+    to { opacity: 1; transform: translateX(0); }
+}
+@keyframes ordo-flash {
+    0% { opacity: 0; }
+    45% { opacity: 1; }
+    70% { opacity: .5; }
+    100% { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .pulse, .rise1, .rise2, .rise3, .growth-fill {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+    .growth-fill { width: var(--fill-to, 100%); }
+    #page-content div.pane:is(:hover, :focus-within) { transform: none; }
+
+    #page-content .mapview div.yui-content > div,
+    .ticker.scroll > span {
+        animation: none !important;
+        opacity: 1 !important;
+    }
+    .ticker.scroll > span { transform: none !important; }
+    #page-content .mapview div.yui-navset > ul.yui-nav > li > a { transition: none; }
+
+}
+
+@media print {
+    .jumbo { background-image: none !important; color: rgb(var(--ink)) !important; }
+    .ticker.scroll > span { animation: none; transform: none; }
+    #page-content .mapview div.yui-navset > ul.yui-nav { display: none; }
+}
+
+
+.frost { --active-color: var(--ordo-frost); }
+.mist { --active-color: var(--ordo-mist); }
+.line { --active-color: var(--ordo-line); }
+.slate { --active-color: var(--ordo-slate); }
+.graphite { --active-color: var(--ordo-graphite); }
+.navy { --active-color: var(--ordo-navy); }
+.azure { --active-color: var(--ordo-azure); }
+.sky { --active-color: var(--ordo-sky); }
+.teal { --active-color: var(--ordo-teal); }
+.sprout { --active-color: var(--ordo-sprout); }
+.leaf { --active-color: var(--ordo-leaf); }
+.moss { --active-color: var(--ordo-moss); }
+.wheat { --active-color: var(--ordo-wheat); }
+.amber { --active-color: var(--ordo-amber); }
+.rust { --active-color: var(--ordo-rust); }
+.loam { --active-color: var(--ordo-loam); }
+.bloom { --active-color: var(--ordo-bloom); }
+.hazard { --active-color: var(--ordo-hazard); }
+.void { --active-color: var(--ordo-void); }
+
+.frost2 { --active-color: var(--ordo2-frost); }
+.mist2 { --active-color: var(--ordo2-mist); }
+.line2 { --active-color: var(--ordo2-line); }
+.slate2 { --active-color: var(--ordo2-slate); }
+.graphite2 { --active-color: var(--ordo2-graphite); }
+.navy2 { --active-color: var(--ordo2-navy); }
+.azure2 { --active-color: var(--ordo2-azure); }
+.sky2 { --active-color: var(--ordo2-sky); }
+.teal2 { --active-color: var(--ordo2-teal); }
+.sprout2 { --active-color: var(--ordo2-sprout); }
+.leaf2 { --active-color: var(--ordo2-leaf); }
+.moss2 { --active-color: var(--ordo2-moss); }
+.wheat2 { --active-color: var(--ordo2-wheat); }
+.amber2 { --active-color: var(--ordo2-amber); }
+.rust2 { --active-color: var(--ordo2-rust); }
+.loam2 { --active-color: var(--ordo2-loam); }
+.bloom2 { --active-color: var(--ordo2-bloom); }
+.hazard2 { --active-color: var(--ordo2-hazard); }
+.void2 { --active-color: var(--ordo2-void); }
+
+.frost3 { --active-color: var(--ordo3-frost); }
+.mist3 { --active-color: var(--ordo3-mist); }
+.line3 { --active-color: var(--ordo3-line); }
+.slate3 { --active-color: var(--ordo3-slate); }
+.graphite3 { --active-color: var(--ordo3-graphite); }
+.navy3 { --active-color: var(--ordo3-navy); }
+.azure3 { --active-color: var(--ordo3-azure); }
+.sky3 { --active-color: var(--ordo3-sky); }
+.teal3 { --active-color: var(--ordo3-teal); }
+.sprout3 { --active-color: var(--ordo3-sprout); }
+.leaf3 { --active-color: var(--ordo3-leaf); }
+.moss3 { --active-color: var(--ordo3-moss); }
+.wheat3 { --active-color: var(--ordo3-wheat); }
+.amber3 { --active-color: var(--ordo3-amber); }
+.rust3 { --active-color: var(--ordo3-rust); }
+.loam3 { --active-color: var(--ordo3-loam); }
+.bloom3 { --active-color: var(--ordo3-bloom); }
+.hazard3 { --active-color: var(--ordo3-hazard); }
+.void3 { --active-color: var(--ordo3-void); }
+
+.frost4 { --active-color: var(--ordo4-frost); }
+.mist4 { --active-color: var(--ordo4-mist); }
+.line4 { --active-color: var(--ordo4-line); }
+.slate4 { --active-color: var(--ordo4-slate); }
+.graphite4 { --active-color: var(--ordo4-graphite); }
+.navy4 { --active-color: var(--ordo4-navy); }
+.azure4 { --active-color: var(--ordo4-azure); }
+.sky4 { --active-color: var(--ordo4-sky); }
+.teal4 { --active-color: var(--ordo4-teal); }
+.sprout4 { --active-color: var(--ordo4-sprout); }
+.leaf4 { --active-color: var(--ordo4-leaf); }
+.moss4 { --active-color: var(--ordo4-moss); }
+.wheat4 { --active-color: var(--ordo4-wheat); }
+.amber4 { --active-color: var(--ordo4-amber); }
+.rust4 { --active-color: var(--ordo4-rust); }
+.loam4 { --active-color: var(--ordo4-loam); }
+.bloom4 { --active-color: var(--ordo4-bloom);}
+.hazard4 { --active-color: var(--ordo4-hazard);}
+.void4 { --active-color: var(--ordo4-void);}
+
+
+#page-content div:is(.hero, .band, .pane.filled, .ticker, .opaque):is(.frost, .mist, .line, .sprout, .wheat, .amber, .frost2, .mist3, .frost3, .frost4), div.yui-navset > ul.yui-nav > li > a:is(.frost, .mist, .line, .sprout, .wheat, .amber, .frost2, .mist3, .frost3, .frost4) {
+    color: rgb(var(--ink));
+}
+
+
+@media only screen and (max-width: 40rem) {
+    :root {
+        --title-size: 1.15rem;
+        --subtitle-size: 1.15rem;
+        --band-pad: 1.35rem;
+    }
+
+    #header h1 a span::before { content: var(--mobile-title, "ORDOPHARM"); }
+    #header h1 a span::after { content: var(--mobile-subtitle, "AGR."); }
+    #header h1 a::after { content: ""; display: none; }
+    #header h1 a { grid-template-areas: "mark brand"; }
+}
+
+@media print {
+    .hero, .band { background-color: transparent !important; color: rgb(var(--ink)) !important; }
+    .stamped::after { display: none; }
+}
+[[/code]]
+[[/collapsible]]
+
+[[include :scp-jp:component:license-box-backend
+|author=Billith]]
+
+> **ファイル名:** banner.jpg
+> **作者:** [[*user Billith]]
+> **ライセンス:** 原語版に記載なし（原語版ページにライセンス表記がありません。投稿前に著者へ確認してください）
+> **出典:** [https://scp-wiki.wikidot.com/local--files/theme:ordopharm/banner.jpg SCP Foundation Wiki]
+
+> **フォント:** Archivo / Inter / IBM Plex Mono / Abhaya Libre
+> **ライセンス:** SIL Open Font License（Google Fonts から配信）
+> **訳注:** 原語版は Archivo と IBM Plex Mono / Abhaya Libre を bunny.net から、本文の InterVariable は読み込み元の記載がありません。JP版では Google Fonts から読み込み、和文には Noto Sans JP / Noto Serif JP を併記しています。
+
+[[include :scp-jp:component:license-box-end]]
+
+[[/iftags]]
+
+[[div_]]
+>[[ift{$intranet}gs -テーマ]]
+>[[iftags]]
+[[module css]]
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aordopharm-jp/2");
+[[/module]]
+[[include :scp-jp:component:interwiki-style
+| priority=4
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aordopharm-jp/2
+]]
+>[[/iftags]]
+>[[/ift{$intranet}gs]]
+
+>[[ift{$legacy}gs -テーマ]]
+>[[iftags]]
+[[module css]]
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aordopharm-jp/3");
+[[/module]]
+[[include :scp-jp:component:interwiki-style
+| priority=5
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aordopharm-jp/3
+]]
+>[[/iftags]]
+>[[/ift{$legacy}gs]]
+
+
+[[/div]]

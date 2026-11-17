@@ -1,0 +1,1382 @@
+{
+ "tool": "classify_hunks.py",
+ "classifier_version": "0.1.0",
+ "signature_table_version": "2026-11-17.1",
+ "theme": {
+  "dir": "much-cool-jp",
+  "cand_fullname": "theme:much-cool-jp",
+  "orig_fullname": "theme:much-cool",
+  "wiki": "scp-wiki",
+  "revision": "19",
+  "kind": "K6",
+  "verdict": "PASS",
+  "original_file": "review/much-cool-jp/original.txt",
+  "candidate_file": "review/much-cool-jp/candidate.txt",
+  "original_sha256": "864f46ed5ca549ad6cf3c1c7c75d825db16942402ab6386dcd572255f4a05f1a",
+  "candidate_sha256": "fb64e90fcece1cec51c2edd0f0bced307e9a7a7a6ae96ad26b41e48eba4b42ae",
+  "original_lines": 592,
+  "candidate_lines": 632
+ },
+ "topology": {
+  "original_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     0,
+     3
+    ],
+    "lines": 3
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     54,
+     590
+    ],
+    "lines": 536
+   }
+  ],
+  "candidate_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     0,
+     3
+    ],
+    "lines": 3
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     68,
+     618
+    ],
+    "lines": 550
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     621,
+     627
+    ],
+    "lines": 6
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     628,
+     632
+    ],
+    "lines": 4
+   }
+  ],
+  "moves": [],
+  "external_own_delivery": true
+ },
+ "blocks": [
+  {
+   "id": "B1",
+   "orig_range": [
+    1,
+    2
+   ],
+   "cand_range": [
+    1,
+    2
+   ],
+   "orig_lines": "2-2",
+   "cand_lines": "2-2",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-HOST",
+    "DRAFT-HOST",
+    "SELF-DELIVERY"
+   ],
+   "primary": "DELIVERY-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-HOST": "A",
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DELIVERY-HOST": {
+     "orig": [
+      [
+       1,
+       2
+      ]
+     ],
+     "cand": [
+      [
+       1,
+       2
+      ]
+     ]
+    },
+    "SELF-DELIVERY": {
+     "orig": [
+      [
+       1,
+       2
+      ]
+     ],
+     "cand": [
+      [
+       1,
+       2
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       1,
+       2
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "@import url('https://scp-wiki.wikidot.com//local--code/theme:much-cool/1');",
+   "first_added": "@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Amuch-cool-jp/1');"
+  },
+  {
+   "id": "B2",
+   "orig_range": [
+    4,
+    5
+   ],
+   "cand_range": [
+    4,
+    8
+   ],
+   "orig_lines": "5-5",
+   "cand_lines": "5-8",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "DRAFT-HOST",
+    "IFTAGS",
+    "SELF-DELIVERY"
+   ],
+   "primary": "SELF-DELIVERY",
+   "primary_section": 3,
+   "label_prec": {
+    "IFTAGS": "A",
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "IFTAGS": {
+     "orig": [
+      [
+       4,
+       5
+      ]
+     ],
+     "cand": []
+    },
+    "SELF-DELIVERY": {
+     "orig": [],
+     "cand": [
+      [
+       6,
+       7
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       6,
+       7
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[iftags +theme]]",
+   "first_added": "[[include :scp-jp:component:interwiki-style"
+  },
+  {
+   "id": "B3",
+   "orig_range": [
+    6,
+    7
+   ],
+   "cand_range": [
+    9,
+    12
+   ],
+   "orig_lines": "7-7",
+   "cand_lines": "10-12",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "IFTAGS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "IFTAGS",
+   "primary_section": 2,
+   "label_prec": {
+    "IFTAGS": "A",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "IFTAGS": {
+     "orig": [],
+     "cand": [
+      [
+       9,
+       10
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "+ Much Cool CSS Theme",
+   "first_added": "[[iftags +テーマ]]"
+  },
+  {
+   "id": "B4",
+   "orig_range": [
+    9,
+    10
+   ],
+   "cand_range": [
+    14,
+    15
+   ],
+   "orig_lines": "10-10",
+   "cand_lines": "15-15",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "**Rating:**",
+   "first_added": "**評価モジュール:**"
+  },
+  {
+   "id": "B5",
+   "orig_range": [
+    14,
+    15
+   ],
+   "cand_range": [
+    19,
+    20
+   ],
+   "orig_lines": "15-15",
+   "cand_lines": "20-20",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "**Rating w/ Info Pane:**",
+   "first_added": "**クレジットモジュール:**"
+  },
+  {
+   "id": "B6",
+   "orig_range": [
+    16,
+    18
+   ],
+   "cand_range": [
+    21,
+    32
+   ],
+   "orig_lines": "17-18",
+   "cand_lines": "22-32",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "CREDIT-PREVIEW",
+    "CREDIT-PROSE",
+    "INFO-DEL",
+    "TASL-FIELDS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "CREDIT-PREVIEW",
+   "primary_section": 1,
+   "label_prec": {
+    "CREDIT-PREVIEW": "A",
+    "TASL-FIELDS": "A",
+    "INFO-DEL": "A",
+    "TRANS-UNANCHORED": "C",
+    "CREDIT-PROSE": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "CREDIT-PREVIEW": {
+     "cand": [
+      [
+       21,
+       22
+      ],
+      [
+       31,
+       32
+      ]
+     ]
+    },
+    "TASL-FIELDS": {
+     "cand": [
+      [
+       22,
+       25
+      ],
+      [
+       26,
+       31
+      ]
+     ]
+    },
+    "INFO-DEL": {
+     "orig": [
+      [
+       16,
+       18
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {},
+    "CREDIT-PROSE": {}
+   },
+   "notes": [
+    "script delta without the anchor majority",
+    "position: inside the credit include pair"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[include info:start]]",
+   "first_added": "[[include :scp-jp:credit:start-preview]]"
+  },
+  {
+   "id": "B7",
+   "orig_range": [
+    19,
+    20
+   ],
+   "cand_range": [
+    33,
+    34
+   ],
+   "orig_lines": "20-20",
+   "cand_lines": "34-34",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "LINK-REPOINT",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "LINK-REPOINT",
+   "primary_section": 7,
+   "label_prec": {
+    "LINK-REPOINT": "C",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "LINK-REPOINT": {
+     "orig": [
+      [
+       19,
+       20
+      ]
+     ],
+     "cand": [
+      [
+       33,
+       34
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "This is Much Cool CSS Theme made by [[*user c_bonefish]] for the [[[https://scp-wiki.wikidot.com/are-we-cool-yet-hub|Are We Cool Yet]]] GoIF or something like that.",
+   "first_added": "このテーマは[[[http://scp-jp.wikidot.com/are-we-cool-yet-hub|Are We Cool Yet]]] GoIFとかのためにc_bonefishが作ったんだ。"
+  },
+  {
+   "id": "B8",
+   "orig_range": [
+    21,
+    22
+   ],
+   "cand_range": [
+    35,
+    36
+   ],
+   "orig_lines": "22-22",
+   "cand_lines": "36-36",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "To import this theme to your page, put the following text anywhere inside it:",
+   "first_added": "このテーマをページにインポートするには、ページの中に下のテキストを入力してくれ:"
+  },
+  {
+   "id": "B9",
+   "orig_range": [
+    23,
+    24
+   ],
+   "cand_range": [
+    37,
+    38
+   ],
+   "orig_lines": "24-24",
+   "cand_lines": "38-38",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "ESCAPED-INCLUDE",
+    "INCLUDE-REPOINT"
+   ],
+   "primary": "INCLUDE-REPOINT",
+   "primary_section": 2,
+   "label_prec": {
+    "INCLUDE-REPOINT": "A",
+    "ESCAPED-INCLUDE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "INCLUDE-REPOINT": {
+     "orig": [
+      [
+       23,
+       24
+      ]
+     ],
+     "cand": [
+      [
+       37,
+       38
+      ]
+     ]
+    },
+    "ESCAPED-INCLUDE": {
+     "orig": [
+      [
+       23,
+       24
+      ]
+     ],
+     "cand": [
+      [
+       37,
+       38
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "@@[[include :scp-wiki:theme:much-cool]]@@",
+   "first_added": "@@[[include :scp-jp:theme:much-cool]]@@"
+  },
+  {
+   "id": "B10",
+   "orig_range": [
+    27,
+    28
+   ],
+   "cand_range": [
+    41,
+    42
+   ],
+   "orig_lines": "28-28",
+   "cand_lines": "42-42",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "+ Page Elements",
+   "first_added": "+ ページ要素"
+  },
+  {
+   "id": "B11",
+   "orig_range": [
+    29,
+    30
+   ],
+   "cand_range": [
+    43,
+    44
+   ],
+   "orig_lines": "30-30",
+   "cand_lines": "44-44",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "ASSET-REHOST",
+    "EXHIBIT-RESTRUCTURE"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "ASSET-REHOST": "A",
+    "EXHIBIT-RESTRUCTURE": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "ASSET-REHOST": {
+     "orig": [
+      [
+       29,
+       30
+      ]
+     ],
+     "cand": [
+      [
+       43,
+       44
+      ]
+     ]
+    },
+    "EXHIBIT-RESTRUCTURE": {}
+   },
+   "notes": [
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[include component:image-block name=https://scp-wiki.wikidot.com/local--files/theme:much-cool/logo.png|caption=asdf|width=200px]]",
+   "first_added": "[[include :scp-jp:component:image-block name=https://scp-jp-storage.wdfiles.com/local--files/file%3A8260379-45-w138/logo.png|caption=asdf|width=200px]]"
+  },
+  {
+   "id": "B12",
+   "orig_range": [
+    31,
+    37
+   ],
+   "cand_range": [
+    45,
+    51
+   ],
+   "orig_lines": "32-37",
+   "cand_lines": "46-51",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 6/6"
+   ],
+   "partial_notes": [],
+   "first_removed": "+ Title1",
+   "first_added": "+ 見出し1"
+  },
+  {
+   "id": "B13",
+   "orig_range": [
+    40,
+    41
+   ],
+   "cand_range": [
+    54,
+    55
+   ],
+   "orig_lines": "41-41",
+   "cand_lines": "55-55",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[tabview]] [[tab tab1]]",
+   "first_added": "[[tabview]] [[tab タブ1]]"
+  },
+  {
+   "id": "B14",
+   "orig_range": [
+    42,
+    44
+   ],
+   "cand_range": [
+    56,
+    58
+   ],
+   "orig_lines": "43-44",
+   "cand_lines": "57-58",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "> + Link",
+   "first_added": "> + リンク"
+  },
+  {
+   "id": "B15",
+   "orig_range": [
+    45,
+    46
+   ],
+   "cand_range": [
+    59,
+    60
+   ],
+   "orig_lines": "46-46",
+   "cand_lines": "60-60",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": ">> text[[footnote]]knocknock[[/footnote]]",
+   "first_added": ">> テキスト[[footnote]]ノックノック ##909090|(訳注: 原文表記では\"knocknock\"。nockは脱字か別の単語か判断できないが、knock knockジョークを意図したものと思われる。)##[[/footnote]]"
+  },
+  {
+   "id": "B16",
+   "orig_range": [
+    47,
+    48
+   ],
+   "cand_range": [
+    61,
+    62
+   ],
+   "orig_lines": "48-48",
+   "cand_lines": "62-62",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[/tab]] [[tab tab2]]",
+   "first_added": "[[/tab]] [[tab タブ2]]"
+  },
+  {
+   "id": "B17",
+   "orig_range": [
+    51,
+    52
+   ],
+   "cand_range": [
+    65,
+    66
+   ],
+   "orig_lines": "52-52",
+   "cand_lines": "66-66",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "+ CSS Theme Code",
+   "first_added": "+ CSSテーマコード"
+  },
+  {
+   "id": "B18",
+   "orig_range": [
+    73,
+    74
+   ],
+   "cand_range": [
+    87,
+    88
+   ],
+   "orig_lines": "74-74",
+   "cand_lines": "88-88",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "ASSET-REHOST"
+   ],
+   "primary": "ASSET-REHOST",
+   "primary_section": 4,
+   "label_prec": {
+    "ASSET-REHOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "ASSET-REHOST": {
+     "orig": [
+      [
+       73,
+       74
+      ]
+     ],
+     "cand": [
+      [
+       87,
+       88
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: url('https://scp-wiki.wikidot.com//local--files/theme:much-cool/background.png') center top repeat-x;",
+   "first_added": "    background: url('https://scp-jp-storage.wdfiles.com/local--files/file%3A8260379-45-fiuq/background.png') center top repeat-x;"
+  },
+  {
+   "id": "B19",
+   "orig_range": [
+    79,
+    80
+   ],
+   "cand_range": [
+    93,
+    94
+   ],
+   "orig_lines": "80-80",
+   "cand_lines": "94-94",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "ASSET-REHOST"
+   ],
+   "primary": "ASSET-REHOST",
+   "primary_section": 4,
+   "label_prec": {
+    "ASSET-REHOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "ASSET-REHOST": {
+     "orig": [
+      [
+       79,
+       80
+      ]
+     ],
+     "cand": [
+      [
+       93,
+       94
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background-image: url('https://scp-wiki.wikidot.com//local--files/theme:much-cool/logo.png');",
+   "first_added": "    background-image: url('https://scp-jp-storage.wdfiles.com/local--files/file%3A8260379-45-w138/logo.png');"
+  },
+  {
+   "id": "B20",
+   "orig_range": [
+    305,
+    306
+   ],
+   "cand_range": [
+    319,
+    321
+   ],
+   "orig_lines": "306-306",
+   "cand_lines": "320-321",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "CSS-BODY"
+   ],
+   "primary": "CSS-BODY",
+   "primary_section": 8,
+   "label_prec": {
+    "CSS-BODY": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "CSS-BODY": {}
+   },
+   "notes": [
+    "no other signature matched"
+   ],
+   "partial_notes": [],
+   "first_removed": "#side-bar .side-block.resources {",
+   "first_added": "#side-bar .side-block.resources,"
+  },
+  {
+   "id": "B21",
+   "orig_range": [
+    348,
+    352
+   ],
+   "cand_range": [
+    363,
+    363
+   ],
+   "orig_lines": "349-352",
+   "cand_lines": "at 364",
+   "channel_pair": [
+    "code-css",
+    "body"
+   ],
+   "labels": [
+    "CSS-BODY"
+   ],
+   "primary": "CSS-BODY",
+   "primary_section": 8,
+   "label_prec": {
+    "CSS-BODY": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "CSS-BODY": {}
+   },
+   "notes": [
+    "no other signature matched"
+   ],
+   "partial_notes": [],
+   "first_removed": "}",
+   "first_added": ""
+  },
+  {
+   "id": "B22",
+   "orig_range": [
+    420,
+    421
+   ],
+   "cand_range": [
+    431,
+    432
+   ],
+   "orig_lines": "421-421",
+   "cand_lines": "432-432",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "CSS-BODY"
+   ],
+   "primary": "CSS-BODY",
+   "primary_section": 8,
+   "label_prec": {
+    "CSS-BODY": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "CSS-BODY": {}
+   },
+   "notes": [
+    "no other signature matched"
+   ],
+   "partial_notes": [],
+   "first_removed": "    border: 2px solid #AD8C45;",
+   "first_added": "    border: 2px solid #AD8C45 !important;"
+  },
+  {
+   "id": "B23",
+   "orig_range": [
+    450,
+    451
+   ],
+   "cand_range": [
+    461,
+    462
+   ],
+   "orig_lines": "451-451",
+   "cand_lines": "462-462",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "CSS-BODY"
+   ],
+   "primary": "CSS-BODY",
+   "primary_section": 8,
+   "label_prec": {
+    "CSS-BODY": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "CSS-BODY": {}
+   },
+   "notes": [
+    "no other signature matched"
+   ],
+   "partial_notes": [],
+   "first_removed": "    color: #000000;",
+   "first_added": "    color: #000000 !important;"
+  },
+  {
+   "id": "B24",
+   "orig_range": [
+    457,
+    458
+   ],
+   "cand_range": [
+    468,
+    469
+   ],
+   "orig_lines": "458-458",
+   "cand_lines": "469-469",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "CSS-BODY"
+   ],
+   "primary": "CSS-BODY",
+   "primary_section": 8,
+   "label_prec": {
+    "CSS-BODY": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "CSS-BODY": {}
+   },
+   "notes": [
+    "no other signature matched"
+   ],
+   "partial_notes": [],
+   "first_removed": "    color: #E5D7B7;",
+   "first_added": "    color: #E5D7B7 !important;"
+  },
+  {
+   "id": "B25",
+   "orig_range": [
+    464,
+    465
+   ],
+   "cand_range": [
+    475,
+    476
+   ],
+   "orig_lines": "465-465",
+   "cand_lines": "476-476",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "T7-CREDIT-CSS"
+   ],
+   "primary": "T7-CREDIT-CSS",
+   "primary_section": 1,
+   "label_prec": {
+    "T7-CREDIT-CSS": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "T7-CREDIT-CSS": {
+     "cand": [
+      [
+       475,
+       476
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "supplement-vs-inherited needs the production counterpart"
+   ],
+   "partial_notes": [],
+   "first_removed": ".rate-box-with-credit-button {",
+   "first_added": ".rate-box-with-credit-button .creditButton {"
+  },
+  {
+   "id": "B26",
+   "orig_range": [
+    468,
+    468
+   ],
+   "cand_range": [
+    479,
+    480
+   ],
+   "orig_lines": "at 469",
+   "cand_lines": "480-480",
+   "channel_pair": [
+    "body",
+    "code-css"
+   ],
+   "labels": [
+    "CSS-BODY"
+   ],
+   "primary": "CSS-BODY",
+   "primary_section": 8,
+   "label_prec": {
+    "CSS-BODY": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "CSS-BODY": {}
+   },
+   "notes": [
+    "no other signature matched"
+   ],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": "    color: #000000 !important;"
+  },
+  {
+   "id": "B27",
+   "orig_range": [
+    481,
+    481
+   ],
+   "cand_range": [
+    493,
+    494
+   ],
+   "orig_lines": "at 482",
+   "cand_lines": "494-494",
+   "channel_pair": [
+    "body",
+    "code-css"
+   ],
+   "labels": [
+    "CSS-BODY"
+   ],
+   "primary": "CSS-BODY",
+   "primary_section": 8,
+   "label_prec": {
+    "CSS-BODY": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "CSS-BODY": {}
+   },
+   "notes": [
+    "no other signature matched"
+   ],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": "    color: #000000 !important;"
+  },
+  {
+   "id": "B28",
+   "orig_range": [
+    484,
+    485
+   ],
+   "cand_range": [
+    497,
+    498
+   ],
+   "orig_lines": "485-485",
+   "cand_lines": "498-498",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "CSS-BODY"
+   ],
+   "primary": "CSS-BODY",
+   "primary_section": 8,
+   "label_prec": {
+    "CSS-BODY": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "CSS-BODY": {}
+   },
+   "notes": [
+    "no other signature matched"
+   ],
+   "partial_notes": [],
+   "first_removed": "    background: #AD8C45;",
+   "first_added": "    background: #AD8C45 !important;"
+  },
+  {
+   "id": "B29",
+   "orig_range": [
+    487,
+    487
+   ],
+   "cand_range": [
+    500,
+    515
+   ],
+   "orig_lines": "at 488",
+   "cand_lines": "501-515",
+   "channel_pair": [
+    "body",
+    "code-css"
+   ],
+   "labels": [
+    "RESTORATION",
+    "T7-CREDIT-CSS"
+   ],
+   "primary": "RESTORATION",
+   "primary_section": 8,
+   "label_prec": {
+    "T7-CREDIT-CSS": "B",
+    "RESTORATION": "C"
+   },
+   "tier": "B",
+   "label_spans": {
+    "T7-CREDIT-CSS": {
+     "cand": [
+      [
+       513,
+       515
+      ]
+     ]
+    },
+    "RESTORATION": {}
+   },
+   "notes": [
+    "supplement-vs-inherited needs the production counterpart",
+    "added content matches the original's own earlier region; diff-only signal, supplement decides"
+   ],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": "}"
+  },
+  {
+   "id": "B30",
+   "orig_range": [
+    592,
+    592
+   ],
+   "cand_range": [
+    620,
+    632
+   ],
+   "orig_lines": "at 593",
+   "cand_lines": "621-632",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "CSS-BODY"
+   ],
+   "primary": "CSS-BODY",
+   "primary_section": 8,
+   "label_prec": {
+    "CSS-BODY": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "CSS-BODY": {}
+   },
+   "notes": [
+    "no other signature matched"
+   ],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": ""
+  }
+ ],
+ "derived_presence": {},
+ "summary": {
+  "blocks": 30,
+  "specific": 16,
+  "heuristic": 14,
+  "residue": 0,
+  "skipped": 0,
+  "reindent_blocks": 0,
+  "label_counts": {
+   "DELIVERY-HOST": 1,
+   "DRAFT-HOST": 2,
+   "SELF-DELIVERY": 2,
+   "IFTAGS": 2,
+   "TRANS-UNANCHORED": 7,
+   "TRANSLATION-ANCHORED": 6,
+   "CREDIT-PREVIEW": 1,
+   "CREDIT-PROSE": 1,
+   "INFO-DEL": 1,
+   "TASL-FIELDS": 1,
+   "LINK-REPOINT": 1,
+   "ESCAPED-INCLUDE": 1,
+   "INCLUDE-REPOINT": 1,
+   "ASSET-REHOST": 3,
+   "EXHIBIT-RESTRUCTURE": 1,
+   "CSS-BODY": 9,
+   "T7-CREDIT-CSS": 2,
+   "RESTORATION": 1
+  }
+ },
+ "residue": [],
+ "skeleton": {
+  "sha256": "81a5f8952877a74e8c7780a6dddd488d4c7484e9e517f1d522d10c3d63341720",
+  "status": "written (new)"
+ }
+}

@@ -1,0 +1,1136 @@
+[[iftags +版式]]
+
+[[module CSS]]
+@import url('https://hormress.github.io/Parallel/normalize-min.css');
+@import url('https://hormress.github.io/Parallel/parallel-min.css');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@700&display=swap');
+@import url("https://hormress.github.io/Parallel/branch/normal_projection/widget_layout_plus.css");
+
+:where(#page-content) h1[id*="toc"]:not(#toc0) {
+    margin-top: 6.5rem;
+}
+
+.preset .yui-navset.yui-navset-top > ul.yui-nav li,
+.preset .yui-navset > ul.yui-nav li {
+    flex-basis: 0%;
+    white-space: nowrap;
+}
+
+.preset .yui-navset.yui-navset-top > ul.yui-nav li a,
+.preset .yui-navset > ul.yui-nav li a {
+    padding-inline: 0.5em;
+}
+
+.preset .yui-navset > ul.yui-nav li a em {
+    display: block;
+    margin: 0 auto;
+    padding: 0 1.5em;
+    width: max-content;
+    height: 1.8em;
+    align-content: center;
+    border-radius: 0.9em;
+    border: solid var(--thin-border-width) rgb(var(--basalt-secondary-color));
+    transition: border-color ease 0.125s;
+}
+
+.preset .yui-navset > ul.yui-nav li.selected a em {
+    border-color: rgb(var(--basalt-overtone));
+}
+
+.preset .yui-navset > ul.yui-nav li:nth-child(1) a em {
+    color: rgb(188, 30, 20);
+    background-color: rgb(239, 239, 240);
+}
+
+.preset .yui-navset > ul.yui-nav li:nth-child(2) a em {
+    color: rgb(20, 20, 20);
+    background-color: rgb(254, 254, 254);
+}
+
+.preset .yui-navset > ul.yui-nav li:nth-child(3) a em {
+    color: rgb(184, 71, 61);
+    background-color: rgb(218, 219, 222);
+}
+
+.preset .yui-navset > ul.yui-nav li:nth-child(4) a em {
+    color: rgb(66, 66, 72);
+    background-color: rgb(198, 199, 207);
+}
+
+.preset .yui-navset > ul.yui-nav li:nth-child(5) a em {
+    color: rgb(252, 78, 78);
+    background-color: rgb(48, 48, 50);
+}
+
+.preset .yui-navset > ul.yui-nav li:nth-child(6) a em {
+    color: rgb(202, 202, 202);
+    background-color: rgb(71, 54, 130);
+}
+
+.preset .yui-navset > ul.yui-nav li:nth-child(7) a em {
+    color: rgb(254, 104, 104);
+    background-color: rgb(10, 10, 12);
+}
+
+.preset .yui-navset.yui-navset-top > ul.yui-nav li a em::before,
+.preset .yui-navset > ul.yui-nav li a em::before {
+    display: none;
+}
+
+:root:has(.preset .yui-navset > ul.yui-nav li.selected:nth-child(2)) {
+    --logo: url("https://hormress.github.io/SCP/image/logo/main/black.svg");
+
+    --basalt-primary-color: 254, 254, 254;
+    --basalt-secondary-color: 241, 242, 244;
+    --basalt-tertiary-color: 218, 219, 222;
+    --basalt-main-text-color: 20, 20, 20;
+    --basalt-overtone: 50, 50, 50;
+    --basalt-undertone: 61, 71, 202;
+
+    --basalt-bright-element-color: 16, 76, 184;
+    --basalt-dark-element-color: 18, 20, 150;
+    --basalt-darker-element-color: 8, 10, 60;
+    --basalt-alternate-color: 255, 132, 0;
+    --basalt-positive-color: 24, 163, 20;
+    --basalt-negative-color: 255, 48, 48;
+    --basalt-sub-text-color: 155, 154, 162;
+
+    --header-title-color: var(--basalt-main-text-color);
+    --header-subtitle-color: var(--basalt-main-text-color);
+    --header-color-one: var(--basalt-secondary-color);
+    --header-color-two: var(--basalt-primary-color);
+    --top-bar-link-color: var(--basalt-main-text-color);
+    --UI-title-color: var(--basalt-main-text-color);
+
+    --side-bar-button-color-hover: var(--basalt-light-text-color);
+    --search-icon-color-hover: var(--basalt-light-text-color);
+    --user-icon-button-color-hover: var(--basalt-light-text-color);
+
+    --hr-gradient: linear-gradient(var(--header-gradient-rotation), rgb(var(--hr-color-one), 0.75) 0%, rgb(var(--hr-color-two)) 100%);
+    --hr-color-one: var(--basalt-undertone);
+    --hr-color-two: var(--basalt-undertone);
+}
+
+:root:has(.preset .yui-navset > ul.yui-nav li.selected:nth-child(3)) {
+    --logo: url("https://hormress.github.io/SCP/image/logo/main/white.svg");
+
+    --basalt-primary-color: 254, 254, 254;
+    --basalt-secondary-color: 241, 242, 244;
+    --basalt-tertiary-color: 218, 219, 222;
+    --basalt-main-text-color: 20, 20, 20;
+    --basalt-overtone: 20, 20, 20;
+    --basalt-undertone: 184, 71, 61;
+
+    --basalt-bright-element-color: 174, 76, 16;
+    --basalt-dark-element-color: 150, 20, 18;
+    --basalt-darker-element-color: 60, 10, 8;
+    --basalt-alternate-color: 255, 132, 0;
+    --basalt-positive-color: 24, 163, 20;
+    --basalt-negative-color: 255, 48, 48;
+    --basalt-sub-text-color: 155, 154, 162;
+
+    --header-title-color: var(--basalt-light-text-color);
+    --header-subtitle-color: var(--basalt-light-text-color);
+    --header-color-one: var(--basalt-dark-element-color);
+    --header-color-two: var(--basalt-darker-element-color);
+    --top-bar-link-color: var(--basalt-light-text-color);
+    --UI-title-color: var(--basalt-light-text-color);
+
+    --side-bar-button-color-hover: var(--basalt-light-text-color);
+    --search-icon-color-hover: var(--basalt-light-text-color);
+    --user-icon-button-color-hover: var(--basalt-light-text-color);
+
+    --hr-gradient: var(--header-gradient);
+    --hr-color-one: var(--header-color-one);
+    --hr-color-two: var(--header-color-two);
+}
+
+:root:has(.preset .yui-navset > ul.yui-nav li.selected:nth-child(4)) {
+    --logo: url("https://hormress.github.io/SCP/image/logo/main/white.svg");
+
+    --basalt-primary-color: 254, 254, 254;
+    --basalt-secondary-color: 227, 228, 234;
+    --basalt-tertiary-color: 198, 199, 207;
+    --basalt-main-text-color: 20, 20, 20;
+    --basalt-overtone: 20, 20, 20;
+    --basalt-undertone: 57, 114, 164;
+
+    --basalt-bright-element-color: 16, 104, 144;
+    --basalt-dark-element-color: 66, 66, 72;
+    --basalt-darker-element-color: 44, 44, 48;
+    --basalt-alternate-color: 255, 132, 0;
+    --basalt-positive-color: 24, 163, 20;
+    --basalt-negative-color: 255, 48, 48;
+    --basalt-sub-text-color: 155, 154, 162;
+
+    --header-title-color: var(--basalt-light-text-color);
+    --header-subtitle-color: var(--basalt-light-text-color);
+    --header-color-one: var(--basalt-dark-element-color);
+    --header-color-two: var(--basalt-darker-element-color);
+    --top-bar-link-color: var(--basalt-light-text-color);
+    --UI-title-color: var(--basalt-light-text-color);
+
+    --side-bar-button-color-hover: var(--basalt-light-text-color);
+    --search-icon-color-hover: var(--basalt-light-text-color);
+    --user-icon-button-color-hover: var(--basalt-light-text-color);
+
+    --diagonal-stripes-width: 0.5rem;
+    --diagonal-stripes-gap: 0.75rem;
+    --diagonal-stripes-opacity: 0.04;
+
+    --hr-gradient: var(--header-gradient);
+    --hr-color-one: var(--header-color-one);
+    --hr-color-two: var(--header-color-two);
+}
+
+:root:has(.preset .yui-navset > ul.yui-nav li.selected:nth-child(5)) {
+    --logo: url("https://hormress.github.io/SCP/image/logo/main/white.svg");
+
+    --basalt-primary-color: 29, 28, 32;
+    --basalt-secondary-color: 66, 66, 69;
+    --basalt-tertiary-color: 78, 78, 80;
+    --basalt-main-text-color: 254, 254, 254;
+    --basalt-overtone: 254, 254, 254;
+    --basalt-undertone: 232, 20, 20;
+
+    --basalt-bright-element-color: 255, 20, 20;
+    --basalt-dark-element-color: 184, 46, 46;
+    --basalt-darker-element-color: 232, 75, 75;
+    --basalt-alternate-color: 132, 132, 20;
+    --basalt-positive-color: 24, 163, 20;
+    --basalt-negative-color: 255, 48, 48;
+    --basalt-sub-text-color: 162, 154, 155;
+
+    --side-bar-button-color-hover: var(--basalt-light-text-color);
+    --search-icon-color-hover: var(--basalt-light-text-color);
+    --user-icon-button-color-hover: var(--basalt-light-text-color);
+
+    --header-title-color: var(--main-text-color);
+    --header-subtitle-color: var(--main-text-color);
+    --header-color-one: var(--basalt-secondary-color);
+    --header-color-two: var(--basalt-primary-color);
+
+    --top-bar-link-color: var(--basalt-overtone);
+
+    --UI-title-color: var(--basalt-bright-element-color);
+    --UI-title-background-color: var(--basalt-secondary-color);
+
+    --hr-gradient: linear-gradient(var(--header-gradient-rotation), rgb(var(--hr-color-one), 0.75) 0%, rgb(var(--hr-color-two)) 100%);
+    --hr-color-one: var(--basalt-secondary-color);
+    --hr-color-two: var(--basalt-tertiary-color);
+}
+
+:root:has(.preset .yui-navset > ul.yui-nav li.selected:nth-child(6)) {
+    --logo: url("https://hormress.github.io/SCP/image/logo/main/white.svg");
+
+    --basalt-primary-color: 26, 24, 28;
+    --basalt-secondary-color: 58, 56, 58;
+    --basalt-tertiary-color: 70, 68, 71;
+    --basalt-main-text-color: 254, 254, 254;
+    --basalt-overtone: 204, 204, 204;
+    --basalt-undertone: 136, 112, 223;
+
+    --basalt-bright-element-color: 156, 144, 245;
+    --basalt-dark-element-color: 74, 51, 130;
+    --basalt-darker-element-color: 52, 45, 112;
+    --basalt-alternate-color: 132, 132, 20;
+    --basalt-positive-color: 24, 163, 20;
+    --basalt-negative-color: 255, 48, 48;
+    --basalt-sub-text-color: 162, 154, 155;
+
+    --link-visited-color: 84, 71, 160;
+
+    --side-bar-button-color-hover: var(--basalt-light-text-color);
+    --search-icon-color-hover: var(--basalt-light-text-color);
+    --user-icon-button-color-hover: var(--basalt-light-text-color);
+
+    --header-title-color: var(--main-text-color);
+    --header-subtitle-color: var(--main-text-color);
+    --header-color-one: var(--basalt-dark-element-color);
+    --header-color-two: var(--basalt-darker-element-color);
+
+    --top-bar-link-color: var(--basalt-overtone);
+    --top-bar-dropdown-link-color: var(--basalt-overtone);
+    --bottom-area-text-color: var(--basalt-overtone);
+    --footer-link-color: var(--basalt-overtone);
+
+    --UI-title-color: var(--basalt-main-text-color);
+    --UI-title-background-color: var(--basalt-secondary-color);
+
+    --hr-gradient: var(--header-gradient);
+    --hr-color-one: var(--header-color-one);
+    --hr-color-two: var(--header-color-two);
+}
+
+:root:has(.preset .yui-navset > ul.yui-nav li.selected:nth-child(7)) {
+    --logo: url("https://hormress.github.io/SCP/image/logo/main/white.svg");
+
+    --basalt-primary-color: 10, 10, 12;
+    --basalt-secondary-color: 48, 48, 52;
+    --basalt-tertiary-color: 66, 66, 72;
+    --basalt-main-text-color: 254, 254, 254;
+    --basalt-overtone: 254, 254, 254;
+    --basalt-undertone: 254, 104, 104;
+
+    --basalt-bright-element-color: 255, 72, 72;
+    --basalt-dark-element-color: 225, 56, 56;
+    --basalt-darker-element-color: 242, 95, 95;
+    --basalt-alternate-color: 132, 132, 20;
+    --basalt-positive-color: 24, 163, 20;
+    --basalt-negative-color: 255, 48, 48;
+    --basalt-sub-text-color: 162, 154, 155;
+
+    --side-bar-button-color-hover: var(--basalt-light-text-color);
+    --search-icon-color-hover: var(--basalt-light-text-color);
+    --user-icon-button-color-hover: var(--basalt-light-text-color);
+
+    --header-title-color: var(--main-text-color);
+    --header-subtitle-color: var(--main-text-color);
+    --header-color-one: var(--basalt-primary-color);
+    --header-color-two: var(--basalt-primary-color);
+    --diagonal-stripes-color: var(--basalt-main-text-color);
+    --diagonal-stripes-angle: 30deg;
+    --diagonal-stripes-width: 0.2rem;
+    --diagonal-stripes-gap: 0.5rem;
+    --diagonal-stripes-opacity: 0.03;
+
+    --top-bar-link-color: var(--basalt-overtone);
+
+    --UI-title-color: var(--basalt-main-text-color);
+    --UI-title-background-color: var(--basalt-secondary-color);
+
+    --hr-gradient: linear-gradient(var(--header-gradient-rotation), rgb(var(--hr-color-one), 0.75) 0%, rgb(var(--hr-color-two)) 100%);
+    --hr-color-one: var(--basalt-main-text-color);
+    --hr-color-two: var(--basalt-main-text-color);
+}
+
+#page-content img.image {
+    filter: invert(0) hue-rotate(0deg) saturate(1);
+    transition: filter ease 0.15s;
+}
+
+:root:has(.preset .yui-navset > ul.yui-nav li.selected:nth-child(5)) #page-content img.image,
+:root:has(.preset .yui-navset > ul.yui-nav li.selected:nth-child(6)) #page-content img.image,
+:root:has(.preset .yui-navset > ul.yui-nav li.selected:nth-child(7)) #page-content img.image {
+    filter: invert(1) hue-rotate(180deg) saturate(10);
+}
+
+:where(#page-content .table) tt,
+:where(.normal-content > p) tt,
+:where(#page-content) li > tt {
+    padding: 0 0.25em;
+    border-radius: 0.25em;
+    background-color: rgb(var(--basalt-secondary-color));
+}
+
+:where(#page-content .table) tr > :nth-child(1) {
+    width: 10%;
+    white-space: nowrap;
+}
+
+.widgets li > tt:nth-child(1) {
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+.grid-3 {
+    margin: -1rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    text-align: center;
+}
+
+div#main-content div.grid-3.wide-content {
+    max-width: calc(100dvw - 2 * var(--main-content-side-margin));
+}
+
+.grid-3 div.document,
+.grid-3 div.lightdocument,
+.grid-3 div.darkdocument {
+    margin: 1.25rem 0;
+}
+
+@media (max-width: 512px) {
+    .grid-3 {
+        display: block;
+        margin: 0;
+    }
+}
+
+.block-example {
+    text-align: center;
+}
+[[/module]]
+
+[[div class="normal-content"]]
+
+[[>]]
+[[module rate]]
+[[/>]]
+
+[[include :scp-wiki-cn:credit:start]]
+[[=]]
+[[include :scp-wiki-cn:fragment:hormress]]
+[[/=]]
+[[include :scp-wiki-cn:credit:end]]
+
+[[image https://hormress.github.io/Parallel/images/normal-projection-min.svg style="display: block; width: max(18rem, 60%); margin: 1rem auto;"]]
+
+[[div style="height: 3.5rem"]]
+[[/div]]
+
+= **在任何页面上：**
+
+[[div_ class="code" style="max-width: max-content; margin: 0 auto; font-weight: bold; font-size: 1.1em; white-space: nowrap;"]]
+@@[[include@@ [[span style="opacity: 70%; color: #F00;"]]:scp-wiki-cn:[[/span]]@@theme:parallel]]@@
+@@[[include@@ [[span style="opacity: 70%; color: #F00;"]]:scp-wiki-cn:[[/span]]@@theme:normal]]@@
+[[/div]]
+
+[[div style="height: 3.5rem"]]
+[[/div]]
+
++ 信息
+
+法向投影版式是平行项目的衍生项目，在平行的基础上进行了更多差异化修改，从各处导航细节到编辑体验均进行了改动，旨在为用户直接提供简洁、现代、易于阅读的体验；与作为开发基板制作的平行不同，法向投影是完全为了直接引入使用而设计的。相比平行，法向投影具有更多圆角，采用更加扁平化、卡通化的设计基调。
+
+此版式一定程度上参考了[[[theme:basalt|玄武岩]]]1.5与[[[theme:monotypical|单色型]]]的设计。
+
++ 版式选项
+
+在{{[[include]]}}语法中的{{theme:normal}}之后加入参数以启用版式选项。
+
+[[div_ class="code"]]
+@@[[include@@ [[span style="opacity: 70%; color: #F00;"]]:scp-wiki-cn:[[/span]]@@theme:parallel]]@@
+@@[[include@@ [[span style="opacity: 70%; color: #F00;"]]:scp-wiki-cn:[[/span]]@@theme:normal@@ **##rgb(var(--basalt-undertone))|颜色预设=-##**
+**##rgb(var(--basalt-undertone))||第1个参数=-##**
+**##rgb(var(--basalt-undertone))||第2个参数=*##**
+@@]]@@
+[[/div]]
+
+版式选项的参数中填写连字符{{-}}或星号{{*}}都是合法的，不过对于颜色预设，推荐使用连字符{{-}}，以启用侧边栏Interwiki样式注入适配。
+
+**颜色预设：**
+
+[[div class="preset"]]
+[[tabview]]
+[[tab 默认]]
+与平行相同的基础颜色
+[[div_ class="code"]]
+@@[[include@@ [[span style="opacity: 70%; color: #F00;"]]:scp-wiki-cn:[[/span]]@@theme:parallel]]@@
+@@[[include@@ [[span style="opacity: 70%; color: #F00;"]]:scp-wiki-cn:[[/span]]@@theme:normal]]@@
+[[/div]]
+[[/tab]]
+[[tab 银装]]
+性能可以匹敌杰刚和基拉·多加
+[[div_ class="code"]]
+@@[[include@@ [[span style="opacity: 70%; color: #F00;"]]:scp-wiki-cn:[[/span]]@@theme:parallel]]@@
+@@[[include@@ [[span style="opacity: 70%; color: #F00;"]]:scp-wiki-cn:[[/span]]@@theme:normal @@##00F|silver=-##@@]]@@
+[[/div]]
+[[/tab]]
+[[tab 深邃]]
+大概不能满足人们的黑暗幻想
+[[div_ class="code"]]
+@@[[include@@ [[span style="opacity: 70%; color: #F00;"]]:scp-wiki-cn:[[/span]]@@theme:parallel]]@@
+@@[[include@@ [[span style="opacity: 70%; color: #F00;"]]:scp-wiki-cn:[[/span]]@@theme:normal @@##00F|deep=-##@@]]@@
+[[/div]]
+[[/tab]]
+[[tab 碳纤维]]
+地平线里我最常用的车漆材料之一
+[[div_ class="code"]]
+@@[[include@@ [[span style="opacity: 70%; color: #F00;"]]:scp-wiki-cn:[[/span]]@@theme:parallel]]@@
+@@[[include@@ [[span style="opacity: 70%; color: #F00;"]]:scp-wiki-cn:[[/span]]@@theme:normal @@##00F|carbon=-##@@]]@@
+[[/div]]
+[[/tab]]
+[[tab 烟尘]]
+Asche zu Asche, Staub zu Staub
+[[div_ class="code"]]
+@@[[include@@ [[span style="opacity: 90%; color: #F99;"]]:scp-wiki-cn:[[/span]]@@theme:parallel]]@@
+@@[[include@@ [[span style="opacity: 90%; color: #F99;"]]:scp-wiki-cn:[[/span]]@@theme:normal @@##99F|indust=-##@@]]@@
+[[/div]]
+[[/tab]]
+[[tab 夜]]
+It's Paradise……今晚，就这样吧？
+[[div_ class="code"]]
+@@[[include@@ [[span style="opacity: 90%; color: #F99;"]]:scp-wiki-cn:[[/span]]@@theme:parallel]]@@
+@@[[include@@ [[span style="opacity: 90%; color: #F99;"]]:scp-wiki-cn:[[/span]]@@theme:normal @@##99F|night=-##@@]]@@
+[[/div]]
+[[/tab]]
+[[tab 彗星]]
+新时代的预兆——「黑色彗星」
+[[div_ class="code"]]
+@@[[include@@ [[span style="opacity: 90%; color: #F99;"]]:scp-wiki-cn:[[/span]]@@theme:parallel]]@@
+@@[[include@@ [[span style="opacity: 90%; color: #F99;"]]:scp-wiki-cn:[[/span]]@@theme:normal @@##99F|cometic=-##@@]]@@
+[[/div]]
+[[/tab]]
+[[/tabview]]
+[[/div]]
+
+**工具选项：**
+
+目前法向投影支持以下的工具选项；未来可能进行更新。
+
+[[div class="widgets"]]
+* {{|footnoteplus=-}}使脚注和参考文献等生存的悬浮提示固定在右下角，并可被鼠标选中。
+
+* {{|hidetitle=-}}隐藏页面标题和面包屑导航。[[span class="table"]]可以使用{{meta-title}}和{{pseudocrumbs}}类创建替代元素。[[/span]]
+
+* {{|centertitle=-}}居中页面标题和面包屑导航。
+
+* {{|classictitle=-}}将页面标题替换为带下方分割线的传统样式。
+[[/div]]
+
+**页面布局：**
+
+[[div class="widgets"]]
+* {{|layoutplus=-}}启用特殊页面布局。
+[[/div]]
+
+特殊页面布局是法向投影为大版头中心页等需求提供的选项。启用后，默认的页面内容宽度会占满整个屏幕，与隐藏页面标题一同使用则可供轻松放置贴合顶端与两侧的横幅图像。启用特殊页面布局后，需要通过以下方式来调整元素宽度：
+
+[[/div]]
+
+[[div style="background-color: rgb(var(--basalt-undertone), 0.7); color: rgb(var(--basalt-light-text-color)); padding: 0.125rem 1.45rem;"]]
+一般元素将以全宽显示
+[[/div]]
+
+[[div class="wide-content" style="background-color: rgb(var(--basalt-undertone), 0.25); padding: 0.125rem 1.45rem;"]]
+{{@@[[div class="wide-content"]]@@}}
+[[/div]]
+
+[[div class="normal-content" style="background-color: rgb(var(--basalt-undertone), 0.05); padding: 0.125rem 1.45rem;"]]
+{{@@[[div class="normal-content"]]@@}}
+[[/div]]
+
+[[div class="normal-content"]]
+
+例如，若只需要展示页面顶部的横幅，则可以把其他所有页面内容放置在{{@@[[div class="normal-content"]]@@}}内部。
+
++ 示例
+
+[[include :scp-wiki-cn:component:image-block
+|name=https://hormress.github.io/SCP/image/logo/main/black.svg
+|caption=一张图片
+]]
+
+法向投影是指一个向量在其法向上的投影[[footnote]]注意到[[$ \mathrm{proj}_{\vec{a}_\perp}\vec{a}=\vec{0} $]]，因而法向投影同时是一个注重冰冷（“零度”）的版式。你就当真的听。[[/footnote]]。这段文本并不意味着此页面正在向读者介绍数学概念，实际上“法向投影”这个名词在数学上似乎没有实用价值，而这段文本其实是一个示例，用于展示法向投影环境下的文本段落视觉效果，包括基本的脚注和参考文献^^[((bibcite a))]^^。有趣的是，法向投影修改了文本的默认尺寸和行间距、段间距，并优化了[[span class="ruby"]]文本上方标记[[span class="rt"]]ruby/红宝石[[/span]][[/span]]的显示效果，让其前后文保持平齐。
+
+法向投影的核心设计理念之一是保证最佳的阅读和编辑体验，因此本版式对页面的诸多细节进行了微调。其中重要的一点在于：此版式将段落默认设置为两端对齐，同时开启了中西文间距空白，使多语言混排更加舒适，请确保您使用了最新的浏览器以渲染这些特性。与平行一致，法向投影也是针对中文环境特化的，以中文为主的混排文本表现最佳。
+
+可通过四个连字符“{{@@----@@}}”创建水平分割线。在法向投影中，{{@@divhr@@}}类的{{@@[[div]]@@}}元素也可作为替代。
+
+标题可通过在一行字起始处输入1至6个加号“{{@@+@@}}”来创建。
+
+[[collapsible show="▷ 标题" hide="▽ 标题"]]
+
++* 一级标题
+
+++* 二级标题
+
++++* 三级标题
+
+++++* 四级标题
+
++++++* 五级标题
+
+++++++* 六级标题
+
+**加粗文本**
+
+[[/collapsible]]
+
+~~~~
+
+[[tabview]]
+[[tab 分页]]
+这是分页（Tab View）。
+[[/tab]]
+[[tab 分页]]
+嘿看，这里有更多的文本。
+
+多么精巧绝伦。
+[[/tab]]
+[[tab 长Tab]]
+这是一个长的tab，它有很多文字。
+
+这是一个长的tab，它有很多文字。
+
+这是一个长的tab，它有很多文字。
+
+这是一个长的tab，它有很多文字。
+
+这是一个长的tab，它有很多文字。
+
+这是一个长的tab，它有很多文字。
+
+这是一个长的tab，它有很多文字。
+
+这是一个长的tab，它有很多文字。
+
+这是一个长的tab，它有很多文字。
+
+这是一个长的tab，它有很多文字。
+
+这是一个长的tab，它有很多文字。
+
+这是一个长的tab，它有很多文字。
+[[/tab]]
+[[tab 这个tab因为某些古怪的原因而拥有一个特别特别长的名字。我想知道为什么？这真的很奇怪。]]
+这是一个有脚注的tab[[footnote]]这是另一个脚注。[[/footnote]]
+[[/tab]]
+[[tab 空Tab]]
+[[/tab]]
+[[tab 空Tab]]
+[[/tab]]
+[[tab 空Tab]]
+有人知道其实[[span class="ruby"]]平行[[span class="rt"]]Parallel[[/span]][[/span]]-[[span class="ruby"]]法向投影[[span class="rt"]]Normal Projection[[/span]][[/span]]的缩写是[[$ P-NP $]]吗？
+[[/tab]]
+[[tab 空Tab]]
+[[/tab]]
+[[tab 空Tab]]
+[[/tab]]
+[[/tabview]]
+
+||~ 这是 ||~ 表格 ||
+||它的使用方法 || 一句话讲不完 ||
+||||而且单元格不能跨行，这很可恶 ||
+
++ 块级元素
+
+**脚注方块：**
+
+[[footnoteblock]]
+
+**参考文献方块：**
+
+[[bibliography]]
+: a : SPECTATORS R, WLFT, HORMRESS D. SCP-CN-3001[J]. //SCPCN3KON//, 2021(2): 1-2.
+[[/bibliography]]
+
+**引用块及其变体：**
+
+[[div class="table w-full"]]
+
+法向投影为引用块添加了一系列工具类，使用逻辑与平行一致。同时，新增{{box}}基础类，其基本样式等价于{{blockquote w-full proj}}，不过宽度固定为全宽，不支持平行{{blockquote}}的宽度工具类。以下列出的工具类可以使用在{{blockquote}}和{{box}}上。
+
+__基础语法__
+
+[[div_ class="code"]]
+@@[[div class="@@##rgb(var(--basalt-overtone))|**基础类**## ##rgb(var(--basalt-undertone))|**工具类1 工具类2@@...@@**##@@"]]@@
+内容
+@@[[/div]]@@
+[[/div]]
+
+__可用工具类列表__
+
+[[table class="wiki-content-table"]]
+
+[[row]]
+[[hcell]]
+工具类
+[[/hcell]]
+[[hcell]]
+效果
+[[/hcell]]
+[[/row]]
+
+[[row]]
+[[cell]]
+{{proj}}
+[[/cell]]
+[[cell]]
+[[div class="box"]]
+创建阴影。只在{{blockquote}}上有效。
+[[/div]]
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[cell]]
+{{inset}}
+[[/cell]]
+[[cell]]
+[[div class="box inset"]]
+若元素已有如上所示的阴影，使阴影位于内侧。
+[[/div]]
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[cell]]
+{{round}}
+[[/cell]]
+[[cell rowspan="2"]]
+[[div class="box round"]]
+添加半径为{{--base-border-radius}}的圆角，与平行提供的{{round}}一致，同时兼容别名{{roc}}。
+[[/div]]
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[cell]]
+{{roc}}
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[cell]]
+{{round-thin}}
+[[/cell]]
+[[cell]]
+[[div class="box round-thin"]]
+添加半径为{{--thin-border-radius}}的圆角。
+[[/div]]
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[cell]]
+{{light}}
+[[/cell]]
+[[cell]]
+[[div class="box light"]]
+在所有配色预设下启用亮色元素。
+[[/div]]
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[cell]]
+{{dark}}
+[[/cell]]
+[[cell]]
+[[div class="box dark"]]
+在所有配色预设下启用暗色元素。
+[[/div]]
+[[/cell]]
+[[/row]]
+
+[[/table]]
+[[/div]]
+
+**其他块级元素：**
+
+法向投影兼容玄武岩提供的大部分类名，并全部进行了风格化的重新设计。
+
+__文件格式__
+
+[[/div]]
+
+[[div class="wide-content grid-3"]]
+
+[[div class="document"]]
+{{@@[[div class="document"]]@@}}
+
+或
+{{@@[[div class="doc"]]@@}}
+[[/div]]
+
+[[div class="lightdocument"]]
+{{@@[[div class="lightdocument"]]@@}}
+
+或
+{{@@[[div class="document light"]]@@}}
+{{@@[[div class="lightdoc"]]@@}}
+[[/div]]
+
+[[div class="darkdocument"]]
+{{@@[[div class="darkdocument"]]@@}}
+
+或
+{{@@[[div class="document dark"]]@@}}
+{{@@[[div class="darkdoc"]]@@}}
+[[/div]]
+
+[[/div]]
+
+[[div class="normal-content"]]
+
+__玄武岩格式__
+
+[[div class="block-example"]]
+
+[[div class="blockquote"]]
+{{@@[[div class="blockquote"]]@@}}
+[[/div]]
+
+[[div class="notation"]]
+{{@@[[div class="notation"]]@@}}
+[[/div]]
+
+[[div class="jotting"]]
+{{@@[[div class="jotting"]]@@}}
+[[/div]]
+
+[[div class="modal"]]
+{{@@[[div class="modal"]]@@}}
+[[/div]]
+
+[[div class="smallmodal"]]
+{{@@[[div class="smallmodal"]]@@}}
+[[/div]]
+
+[[div class="papernote"]]
+{{@@[[div class="papernote"]]@@}}
+[[/div]]
+
+[[/div]]
+
+__法向投影格式__
+
+法向投影对许多祖传的元素，以及[[[scp-style-resource|SCP格式资源]]]中提供的元素进行了现代化改造，并统一了风格，用户或许会在下方列出的示例中看到许多眼熟的设计。
+
+[[div class="block-example"]]
+
+[[div class="warning"]]
+{{@@[[div class="warning"]]@@}}
+[[/div]]
+
+[[div class="blockwarning"]]
+{{@@[[div class="blockwarning"]]@@}}
+[[/div]]
+
+[[div class="terminal"]]
+{{@@[[div class="terminal"]]@@}}
+[[<]]
+@@ @@
+在这一元素中，需要使用@@@@@@ @@@@@@来空行。此外，这一元素还预置了如下的行内小工具：
+C:\Users\The Administrator>[[span class="input"]]_[[/span]]
+↑\Users\The Administrator>@@[[span class="input"]]_[[/span]]@@
+[[/<]]
+[[/div]]
+
+[[/div]]
+
+__各机构备忘录__
+
+备忘录类名中的连接符支持连字符“{{-}}”和下划线“{{_}}”。加入{{notitle}}类可以隐藏默认显示的标题，方便起见，标题样式等效于三级标题，因此隐藏默认标题后可以用{{+++ 标题}}来放置规格统一的替换标题。
+
+[[div class="raisa_memo"]]
+{{@@[[div class="raisa_memo"]]@@}}
+或{{@@[[div class="raisa-memo"]]@@}}
+[[/div]]
+
+[[div class="classification_memo"]]
+{{@@[[div class="classification_memo"]]@@}}
+或{{@@[[div class="classification-memo"]]@@}}
+[[/div]]
+
+[[div class="ettra_memo"]]
+{{@@[[div class="ettra_memo"]]@@}}
+或{{@@[[div class="ettra-memo"]]@@}}
+[[/div]]
+
+[[div class="ethics_memo"]]
+{{@@[[div class="ethics_memo"]]@@}}
+或{{@@[[div class="ethics-memo"]]@@}}
+[[/div]]
+
+[[div class="temporal_memo"]]
+{{@@[[div class="temporal_memo"]]@@}}
+或{{@@[[div class="temporal-memo"]]@@}}
+[[/div]]
+
+[[div class="overwatch_memo"]]
+{{@@[[div class="overwatch_memo"]]@@}}
+或{{@@[[div class="overwatch-memo"]]@@}}
+[[/div]]
+
+[[div class="miscomm_memo"]]
+{{@@[[div class="miscomm_memo"]]@@}}
+或{{@@[[div class="miscomm-memo"]]@@}}
+或{{@@[[div class="domc_memo"]]@@}}
+或{{@@[[div class="domc-memo"]]@@}}
+[[/div]]
+
+[[div class="pata_memo"]]
+{{@@[[div class="pata_memo"]]@@}}
+或{{@@[[div class="pata-memo"]]@@}}
+[[/div]]
+
++ 分割线
+
+法向投影提供一些替代分割线样式，以下所有样式均有两种使用方法：
+
+__方案1__
+
+[[div_ class="code"]]
+@@[[div class="hr@@ **##rgb(var(--basalt-undertone))|样式类##**@@"]]@@
+@@----@@
+@@[[/div]]@@
+[[/div]]
+
+__方案2__
+
+[[div_ class="code"]]
+@@[[div class="divhr@@ **##rgb(var(--basalt-undertone))|样式类##**@@"]]@@
+@@[[/div]]@@
+[[/div]]
+
+方案1的{{@@[[div]]@@}}元素会使其内部的普通分割线显示为替代样式，适用于一次性修改多处分割线的需求，此时用相应的元素将整个正文包裹即可。方案2的{{@@[[div]]@@}}元素本身会显示为对应的分割线，在文中所需的位置放置即可。
+
+__可用样式类列表__
+
+[[div class="table w-full"]]
+[[table class="wiki-content-table"]]
+
+[[row]]
+[[hcell]]
+样式类
+[[/hcell]]
+[[hcell]]
+效果
+[[/hcell]]
+[[/row]]
+
+[[row]]
+[[cell]]
+{{fc}}
+[[/cell]]
+[[cell]]
+[[div class="divhr fc"]]
+[[/div]]
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[cell]]
+{{ac}}
+[[/cell]]
+[[cell]]
+[[div class="divhr ac"]]
+[[/div]]
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[cell]]
+{{lg}}
+[[/cell]]
+[[cell style="background-color: rgb(var(--basalt-tertiary-color));"]]
+[[div class="divhr lg"]]
+[[/div]]
+= （自动跟随版头Logo）
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[cell]]
+{{lg invert}}
+[[/cell]]
+[[cell style="background-color: rgb(var(--basalt-tertiary-color));"]]
+[[div class="divhr lg invert"]]
+[[/div]]
+= （自动跟随版头Logo并反色）
+[[/cell]]
+[[/row]]
+
+[[/table]]
+[[/div]]
+
++ 行内元素
+
+法向投影提供了一些写作时相当实用的行内元素，并对一些Sigma-9版式中已经提供的行内元素进行了修改，用以提升排版效果。请在合适的地方使用这些元素！
+
+**黑条及其变体**
+
+一定意义上灵感来自[[[SCP-CN-1353]]]。用于快速创建确定宽度的黑色编辑条，像这样：{{@@[[span class="bbar"]]被编辑的内容[[/span]]@@}}。当然，读者总是能看到黑条下的内容，如果确实是留白，可以用无意义内容占位。
+
+[[div class="widgets"]]
+
+* {{@@[[span class="bbar"]]@@}}[[span class="bbar"]]普通黑条[[/span]]
+
+* {{@@[[span class="bbar noselect"]]@@}}[[span class="bbar noselect"]]特殊黑条[[/span]]，无法选中的类型
+
+* {{@@[[span class="bbar hoverani"]]@@}}[[span class="bbar hoverani"]]特殊黑条[[/span]]，鼠标悬停时显示
+
+* {{@@[[span class="bbar hoverani dark"]]@@}}[[span class="bbar hoverani dark"]]特殊黑条[[/span]]，鼠标悬停时微弱显示
+
+* {{@@[[span class="bbar colored"]]@@}}[[span class="bbar colored"]]彩条[[/span]]，真的有人需要这个吗？
+
+[[/div]]
+
+**按键**
+
+Sigma-9版式内置了来自[[*user devanos]]的键盘按键元素，法向投影也对其进行了适配和扩展。尽管用处不大，在撰写[[[letters|Letters娱乐]]]相关文章类似物时也许有用……？计划添加摇杆和鼠标的小图标。
+
+[[div class="widgets"]]
+
+* {{@@[[span class="keycap"]]@@}}[[span class="keycap"]]Ctrl[[/span]]
+
+* {{@@[[span class="keycap button"]]@@}}[[span class="keycap button"]]A[[/span]]
+
+[[/div]]
+
+**悬停提示**
+
+代码来自[[[component:hoverlinks|悬停链接]]]组件，进行了样式适配。使用说明与格式创建工具详见组建页；由于已经内置并进行了适配，除非希望使用原版组件的样式，否则无需添加额外的组件{{@@[[include]]@@}}语法。
+
+__示例__：[[span class="hoverlink"]][[[scp-cn-4000-ex|SCP-CN-4000𝄇-EX]]]^^ⓘ^^[[span class="hoverlink-card"]][[span class="hoverlink-title"]]剧终[[/span]][[span class="hoverlink-text"]]如果SCP基金会的胜利意味着SCP基金会从根本上都不再存在，胜利还有意义吗？[[/span]][[span class="hoverlink-image" style="--src: url(https://ah-sandbox.wdfiles.com/local--files/scp-cn-4000/BG_Sunset.jpg)"]]-[[/span]][[/span]][[/span]]
+
++ 兼容性提示
+
+* 法向投影与[[[component:parallel-classic-header|平行经典版头]]]兼容性良好，请在法向投影的两行{{[[include]]}}语法之后使用这一组件。
+
+* 法向投影与绝大多数在基本版式下改变版头和页面布局的组件，如[[[component:toggle-sidebar|切换侧边栏]]]不兼容，相信版式自身的处理已经足以使用。
+
+* 法向投影与[[[https://fendsfox.wikidot.com/component:betterbetterfootnote|更更更好的脚注]]]不兼容，请使用相应的版式选项。
+
+* 法向投影与需要注释的[[[esoteric-syntax#toc21|单页迭代]]]不完全兼容，具体而言，法向投影无法在注释内部工作，但当{{[[include]]}}语法位于注释之外、对所有迭代生效时，可以正常工作。这是由于法向投影自身使用注释作为版式选项的切换方式，如需在特定的单独迭代使用法向投影，请使用普通迭代。当然，避免使用迭代可以防止一切问题。
+
+[[=]]
+[[div style="font-size: 1.25em; margin-block: 8em 2.5em;"]]
+[[span style="font-family: var(--header-font);"]]页眉字体为**Red Hat Display** / **思源黑体**[[/span]]
+[[span style="font-family: var(--title-font);"]]标题字体与用户界面字体为**Red Hat Text** / **思源黑体**[[/span]]
+正文字体为**Inter** / **思源黑体**
+{{等宽字体为**JetBrains Mono** / **獅尾圓體SC**}}
+图标为[[span class="material-symbols-outlined" style="vertical-align: text-top;"]]design_services[[/span]][[span style="font-family: 'Google Sans'; font-weight: bold;"]]Google [[[https://fonts.google.com/icons|Material Symbols]]][[/span]]
+[[/div]]
+[[/=]]
+
+[[=image https://hormress.github.io/Parallel/images/project-parallel.svg style="width: 60%; padding: 1rem; border-radius: 1rem; background-color: rgb(254, 254, 254);" class="" link="https://github.com/Hormress/Parallel"]]
+
+[[/div]]
+
+[[/iftags]]
+
+[[module CSS]]
+@import url("https://hormress.github.io/Parallel/branch/normal_projection/main.css");
+@import url("https://hormress.github.io/Parallel/branch/normal_projection/elements.css");
+[[/module]]
+
+[[include :scp-wiki-cn:component:interwiki-style
+| type=sidebar
+| priority=3
+| theme=https://hormress.github.io/Parallel/branch/normal_projection/main.css
+]]
+
+[[module CSS]]
+/* {$silver}/
+@import url("https://hormress.github.io/Parallel/branch/normal_projection/preset_silver.css");
+/{$silver} */
+
+/* {$deep}/
+@import url("https://hormress.github.io/Parallel/branch/normal_projection/preset_deep.css");
+/{$deep} */
+
+/* {$carbon}/
+@import url("https://hormress.github.io/Parallel/branch/normal_projection/preset_carbon.css");
+/{$carbon} */
+
+/* {$indust}/
+@import url("https://hormress.github.io/Parallel/branch/normal_projection/preset_indust.css");
+/{$indust} */
+
+/* {$night}/
+@import url("https://hormress.github.io/Parallel/branch/normal_projection/preset_night.css");
+/{$night} */
+
+/* {$cometic}/
+@import url("https://hormress.github.io/Parallel/branch/normal_projection/preset_cometic.css");
+/{$cometic} */
+
+/* {$footnoteplus}/
+@import url("https://hormress.github.io/Parallel/branch/normal_projection/widget_footnote_plus.css");
+/{$footnoteplus} */
+
+/* {$hidetitle}/
+@import url("https://hormress.github.io/Parallel/branch/normal_projection/widget_hide_title.css");
+/{$hidetitle} */
+
+/* {$centertitle}/
+@import url("https://hormress.github.io/Parallel/branch/normal_projection/widget_center_title.css");
+/{$centertitle} */
+
+/* {$classictitle}/
+@import url("https://hormress.github.io/Parallel/branch/normal_projection/widget_classic_title.css");
+/{$classictitle} */
+
+/* {$layoutplus}/
+@import url("https://hormress.github.io/Parallel/branch/normal_projection/widget_layout_plus.css");
+/{$layoutplus} */
+[[/module]]
+
+[!-- {$silver}-]
+[[module CSS]]
+@import url("https://hormress.github.io/Parallel/branch/normal_projection/preset_silver.css");
+[[/module]]
+[[embed]]
+<iframe src="//interwiki.scpwikicn.com/styleFrame.html?priority=4&type=sidebar&theme=https://hormress.github.io/Parallel/branch/normal_projection/preset_silver.css" style="display: none"></iframe>
+[[/embed]]
+[!-{$silver} --]
+
+[!-- {$deep}-]
+[[module CSS]]
+@import url("https://hormress.github.io/Parallel/branch/normal_projection/preset_deep.css");
+[[/module]]
+[[embed]]
+<iframe src="//interwiki.scpwikicn.com/styleFrame.html?priority=4&type=sidebar&theme=https://hormress.github.io/Parallel/branch/normal_projection/preset_deep.css" style="display: none"></iframe>
+[[/embed]]
+[!-{$deep} --]
+
+[!-- {$carbon}-]
+[[module CSS]]
+@import url("https://hormress.github.io/Parallel/branch/normal_projection/preset_carbon.css");
+[[/module]]
+[[embed]]
+<iframe src="//interwiki.scpwikicn.com/styleFrame.html?priority=4&type=sidebar&theme=https://hormress.github.io/Parallel/branch/normal_projection/preset_carbon.css" style="display: none"></iframe>
+[[/embed]]
+[!-{$carbon} --]
+
+[!-- {$indust}-]
+[[module CSS]]
+@import url("https://hormress.github.io/Parallel/branch/normal_projection/preset_indust.css");
+[[/module]]
+[[embed]]
+<iframe src="//interwiki.scpwikicn.com/styleFrame.html?priority=4&type=sidebar&theme=https://hormress.github.io/Parallel/branch/normal_projection/preset_indust.css" style="display: none"></iframe>
+[[/embed]]
+[!-{$indust} --]
+
+[!-- {$night}-]
+[[module CSS]]
+@import url("https://hormress.github.io/Parallel/branch/normal_projection/preset_night.css");
+[[/module]]
+[[embed]]
+<iframe src="//interwiki.scpwikicn.com/styleFrame.html?priority=4&type=sidebar&theme=https://hormress.github.io/Parallel/branch/normal_projection/preset_night.css" style="display: none"></iframe>
+[[/embed]]
+[!-{$night} --]
+
+[!-- {$cometic}-]
+[[module CSS]]
+@import url("https://hormress.github.io/Parallel/branch/normal_projection/preset_cometic.css");
+[[/module]]
+[[embed]]
+<iframe src="//interwiki.scpwikicn.com/styleFrame.html?priority=4&type=sidebar&theme=https://hormress.github.io/Parallel/branch/normal_projection/preset_cometic.css" style="display: none"></iframe>
+[[/embed]] 
+[!-{$cometic} --]
+
+[!-- {$footnoteplus}-]
+[[module CSS]]
+@import url("https://hormress.github.io/Parallel/branch/normal_projection/widget_footnote_plus.css");
+[[/module]]
+[!-{$footnoteplus} --]
+
+[!-- {$hidetitle}-]
+[[module CSS]]
+@import url("https://hormress.github.io/Parallel/branch/normal_projection/widget_hide_title.css");
+[[/module]]
+[!-{$hidetitle} --]
+
+[!-- {$centertitle}-]
+[[module CSS]]
+@import url("https://hormress.github.io/Parallel/branch/normal_projection/widget_center_title.css");
+[[/module]]
+[!-{$centertitle} --]
+
+[!-- {$classictitle}-]
+[[module CSS]]
+@import url("https://hormress.github.io/Parallel/branch/normal_projection/widget_classic_title.css");
+[[/module]]
+[!-{$classictitle} --]
+
+[!-- {$layoutplus}-]
+[[module CSS]]
+@import url("https://hormress.github.io/Parallel/branch/normal_projection/widget_layout_plus.css");
+[[/module]]
+[!-{$layoutplus} --]

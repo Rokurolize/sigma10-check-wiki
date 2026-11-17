@@ -1,0 +1,3472 @@
+[[iftags +theme]]
+[[module css]]
+@import url("https://cdn.scpwiki.com/theme/en/basalt/normalize-min.css");
+@import url("https://cdn.scpwiki.com/theme/en/basalt/basalt-bedrock-min.css");
+[[/module]]
+
+[[module CSS]]
+:root {
+    --x1: 300px;
+    --y1: 44px;
+    --x2: 150px;
+    --y2: 100px;
+    --x3: 250px;
+    --y3: 263px;
+    --map-image: url('http://scp-wiki.wikidot.com/local--files/theme:ordopharm/banner.jpg');
+    --from: 0;
+    --to: 75;
+}
+.tocy {
+    float: right;
+    padding-left: 10px;
+}
+
+#toc .title { font-size: 1em; }
+
+.swatchset {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+    gap: 0 1.25rem;
+    margin: 1rem 0;
+}
+
+.chip {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-family: var(--mono-font);
+    font-size: .72rem;
+    padding: .12rem 0;
+}
+
+.chip::before {
+    content: "";
+    flex: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: rgb(var(--active-color));
+    border: solid .0625rem rgb(128, 128, 128, .45);
+}
+
+.setname {
+    font-family: var(--UI-font);
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    border-bottom: solid .0625rem rgb(var(--general-border-color));
+    padding-bottom: .25rem;
+    margin-bottom: .5rem;
+}
+
+@media all and (max-width: 800px) {
+    #page-content div:is(.tocy) {
+        float: none;
+        display: table;
+        margin: 0 auto;
+        padding-left: 0;
+    }
+
+    :where(.table_wrap) table {
+        table-layout: fixed;
+        width: fit-content;
+        overflow-x: auto;
+    }
+}
+[[/module]]
+
+[[div class="pseudocrumbs"]]
+//Built on [[[theme:bedrock|Bedrock]]]. See also: [[[theme:basalt|Basalt]]], [[[theme:eigenmachine|Eigenmachine]]],  [[[theme:eigenvector|Eigenvector]]]//
+[[/div]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
+@@ @@
+
+Welcome to the home page of the //[[span class="inkcolor teal"]][[[ordopharm-hub|Ordopharm Agronomics]]][[/span]]// theme! We are here to solve your hunger problems. 
+
+@@ @@
+[[div class="tocy"]]
+[[toc]]
+[[/div]]
+@@ @@
+
+To import this theme to your page, put the following text anywhere inside it:
+
+> {{@@[[include :scp-wiki:theme:bedrock]]@@}}
+> {{@@[[include :scp-wiki:theme:ordopharm]]@@}}
+
+Insert the following parameter for //intranet// mode
+> {{@@[[include :scp-wiki:theme:ordopharm intranet=a]]@@}}  //[https://scpdsandbox.wikidot.com/ordopharm-intranet-test see it in action here!]//
+
+Insert the following parameter for //legacy// mode
+> {{@@[[include :scp-wiki:theme:ordopharm legacy=a]]@@}}  //[https://scpdsandbox.wikidot.com/ordopharm-legacy-test see it in action here!]//
+
++ The Basics
+
+[[span class="s-title"]]Titles[[/span]]
+
+
+[[collapsible show="view titles" hide="close"]]
+@@ @@
++* FIRST TITLE
+
+++* SECOND TITLE
+
++++* THIRD TITLE
+
+++++* FOURTH TITLE
+
++++++* FIFTH TITLE
+
+++++++* SIXTH TITLE
+@@ @@
+[[/collapsible]]
+
+~~~~
+[[span class="s-title"]]Tabs[[/span]]
+
+Plain tabs look like such:
+
+[[div class=""]]
+[[tabview]]
+[[tab Overview]]
+lorem ipsum
+[[/tab]]
+[[tab Governance]]
+lorem ipsum, again
+[[/tab]]
+[[tab Disclosure]]
+lorem ipsum
+
+lorem ipsum
+
+lorem ipsum
+
+[[[theme:ordopharm|And a link.]]] lorem ipsum
+[[/tab]]
+[[/tabview]]
+[[/div]]
+@@ @@
+However, you can add color classes to change their presentation, as well as with a few unique modifiers //(see tab modifiers)//.
+[[div class="teal"]]
+[[tabview]]
+[[tab Overview]]
+lorem ipsum
+[[/tab]]
+[[tab Governance]]
+lorem ipsum, again
+[[/tab]]
+[[tab Disclosure]]
+lorem ipsum
+
+lorem ipsum
+
+lorem ipsum
+
+[[[theme:ordopharm|And a link.]]] lorem ipsum
+[[/tab]]
+[[/tabview]]
+[[/div]]
+@@ @@
+
+By wrapping it in {{mapview}}, you get an interactive node-based map display that supports up to 12 "tabs" which can be positioned using a coordinate system //(see root variables)// and customized using the aforementioned modifiers. 
+
+[[div class="mapview"]]
+[[tabview]]
+[[tab Overview]]
+By clicking on a node, relevant text appears.
+[[/tab]]
+[[tab Governance]]
+The nodes expand when selected, and change color.
+[[/tab]]
+[[tab Disclosure]]
+You can customize the node icons and fade behavior by changing root variables.
+[[/tab]]
+[[/tabview]]
+[[/div]]
+
+[[span class="s-title"]]Quotes[[/span]]
+
+> This is a blockquote.
+>
+> More text
+> -----
+> That is a horizontal rule.
+>
+>> Nested blockquotes
+>>
+>>> keep on nesting.
+@@ @@
+wrap in a color class to customize:
+
+[[div class="blockquote hazard"]]
+{{blockquote hazard}}
+[[/div]]
+
+
+
+[[span class="s-title"]]Tables[[/span]]
+
+||~ Region ||~ Hectares under contract ||~ Yield index ||
+|| North America || 41,200,000 || 118 ||
+|| South America || 38,700,000 || 124 ||
+|| Europe, Middle East, Africa || 22,900,000 || 109[[footnote]]Excludes territories under Site-monitored quarantine.[[/footnote]] ||
+@@ @@
+[[div class="hazard"]]
+[[footnoteblock]]
+[[/div]]
+@@ @@
+
++ Custom Divs & Spans
+
+[[span class="s-title"]]Heros[[/span]]
+
+A {{hero}} is an eye-catching title block/prominent banner of sorts.
+
+[[div class="hero navy crest"]]
+[[span class="eyebrow"]]Crop Science[[/span]]
+[[span class="headline"]]Feeding a world that keeps asking for more.[[/span]]
+[[span class="lede"]]By 2050 the planet will hold ten billion people and the same amount of arable land. Our seed and crop protection portfolio is built for that arithmetic, and for the farmers who have to solve it one season at a time.[[/span]]
+[[div class="cta"]]
+//[[[theme:ordopharm|Or else.]]]//
+[[/div]]
+[[/div]]
+[[collapsible show="code"]]
+
+@@[[div class="hero navy crest"]]@@
+@@[[span class="eyebrow"]]Crop Science[[/span]]@@
+@@[[span class="headline"]]Feeding a world that keeps asking for more.[[/span]]@@
+@@[[span class="lede"]]@@
+lorum ipso mattero factum
+@@[[/span]]@@
+@@[[div class="cta"]]@@
+//[[[theme:ordopharm|a link.]]]//
+@@[[/div]]@@
+@@[[/div]]@@
+
+[[/collapsible]]
+
+[[div class="hero leaf"]]
+[[span class="eyebrow"]]Seed Systems[[/span]]
+[[span class="headline heavy"]]One kernel. Ninety years of arithmetic.[[/span]]
+[[div class="cta solid"]]
+,,//read our entire report.//,,
+[[/div]]
+[[/div]]
+[[collapsible show="code"]]
+
+@@[[div class="hero leaf"]]@@
+@@[[span class="eyebrow"]]Seed Systems[[/span]]@@
+@@[[span class="headline heavy"]]One kernel. Ninety years of arithmetic.[[/span]]@@
+@@[[div class="cta solid"]]@@
+@@,,//read our entire report.//,,@@
+@@[[/div]]@@
+@@[[/div]]@@
+
+[[/collapsible]]
+
+[[span class="s-title"]]Bands[[/span]]
+
+{{band}} can be used to create a short block of text in / separated by ({{rule}}) a band of color. 
+
+[[div class="band mist"]]
+[[span class="eyebrow azure"]]Our Commitment[[/span]]
+{{band mist}}
+[[/div]]
+
+[[div class="band rule azure"]]
+{{band rule azure}}
+[[/div]]
+
+[[div class="band teal bleed"]]
+band teal bleed
+[[/div]]
+
+[[span class="s-title"]]panes[[/span]]
+
+{{panes}} is a responsive child containing grid; each child {{pane}} takes its own color class, size, and equal spacing. Add {{duo}} or {{quad}} to the grid to change the column density, and {{filled}} to a pane to invert it.
+
+[[div class="panes"]]
+[[div class="pane leaf"]]
++++* Crop Science
+Seed genetics, crop protection, and digital farming across forty-one territories.
+[[/div]]
+[[div class="pane azure"]]
++++* Consumer Health
+Over-the-counter therapeutics, nutritionals, and the retail brands you already own.
+[[/div]]
+[[div class="pane bloom"]]
++++* Pharmaceuticals
+The original business. Still the one that pays for everything else.
+[[/div]]
+[[/div]]
+[[div class="panes"]]
+[[div class="pane teal"]]
+A singular pane.
+[[/div]]
+[[/div]]
+[[div class="panes duo"]]
+[[div class="pane filled navy"]]
++++* Investor Relations
+{{pane filled navy}}, inverted for emphasis.
+[[/div]]
+[[div class="pane wheat"]]
++++* Sustainability
+{{pane wheat}}, standard treatment with a color rule.
+[[/div]]
+[[/div]]
+
+[[div class="panes quad"]]
+[[div class="pane leaf"]]
++++* One
+{{panes quad}}
+[[/div]]
+[[div class="pane azure"]]
++++* Two
+Four across on a wide screen.
+[[/div]]
+[[div class="pane amber"]]
++++* Three
+lorem ipsum
+[[/div]]
+[[div class="pane hazard"]]
++++* Four
+lorem ipsum
+[[/div]]
+[[/div]]
+
+@@ @@
+[[span class="s-title"]]Pull Quote[[/span]]
+
+{{pullquote}} is a short, snappy quote that is emphasized in its own block.
+
+[[div class="pullquote azure"]]
+We sell peace of mind, and we sell it by the hectare.
+[[span class="attrib"]]Chief Executive Officer, Annual Report[[/span]]
+[[/div]]
+
+@@ @@
+[[span class="s-title"]]Ticker[[/span]]
+
+{{ticker}} is a monospace strip for investor-relations flavor. Wrap individual entries in {{up}}, {{down}}, or {{flat}} for an arrow.
+
+[[div class="ticker navy"]]
+[[span class="up"]]ORDO 214.55 +1.24%[[/span]]
+[[span class="down"]]Seed Futures 88.10 -0.42%[[/span]]
+[[span class="flat"]]Volume 4.1M[[/span]]
+[[/div]]
+
+[[collapsible show="code"]]
+@@[[div class="ticker navy"]]@@
+@@[[span class="up"]]ORDO 214.55 +1.24%[[/span]]@@
+@@[[span class="down"]]Seed Futures 88.10 -0.42%[[/span]]@@
+@@[[span class="flat"]]Volume 4.1M[[/span]]@@
+@@[[/div]]@@
+[[/collapsible]]
+
+Add {{scroll}} to a {{ticker}} for a crawling strip. Speed is set by {{--ticker-speed}}, in seconds.
+
+[[div class="ticker scroll navy"]]
+[[span class="up"]]ORDO 214.55 +1.24%[[/span]]
+[[span class="down"]]Seed Futures 88.10 -0.42%[[/span]]
+[[span class="flat"]]Volume 4.1M[[/span]]
+[[span class="up"]]Crop Science 41.02 +0.88%[[/span]]
+[[/div]]
+
+@@ @@
+[[span class="s-title"]]Split & Sidebox[[/span]]
+
+{{split}} is a two-column grid that collapses to one on narrow screens. Add {{weighted}} to make the first column wider.
+
+[[div class="split"]]
+[[div]]
++++* Left column
+Equal columns. Each child is a plain div; put anything inside.
+[[/div]]
+[[div]]
++++* Right column
+Collapses to a single column below 17rem.
+[[/div]]
+[[/div]]
+
+[[div class="split weighted"]]
+[[div]]
+{{split weighted}} gives this column 1.6fr against the sidebar's 1fr. This pairs neatly with a {{pane}}:
+
+[[/div]]
+[[div class="pane azure"]]
++++* Sidebar
+Pairs neatly with a {{pane}}.
+[[/div]]
+
+[[/div]]
+
+{{sidebox}} is a floating panel, which defaults to the right of screen. Text wraps around it unless otherwise specified.
+
+[[div class="sidebox teal"]]
+= **AT A GLANCE**
+||Founded||1912||
+||Headquarters||Undisclosed||
+||Employees||109,000||
+||Divisions||3[[footnote]]Publicly. [[/footnote]]||
+[[/div]]
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque felis eu vulputate suscipit. Vestibulum dui elit, ornare eget eros ut, gravida finibus velit. Pellentesque et diam vel turpis semper ullamcorper. Integer scelerisque malesuada enim, a semper risus molestie eget. Fusce luctus ex in ante feugiat fermentum. In nec sodales nibh. Suspendisse potenti. Aenean in volutpat turpis, in dictum sapien.
+
+[[div class="sidebox left amber"]]
+= **FIELD NOTE**
+||Plot||C-14||
+||Sown||April||
+||Status||Quarantined||
+[[/div]]
+
+Add {{left}} to a {{sidebox}} to float it the other way. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dui elit, ornare eget eros ut, gravida finibus velit. Pellentesque et diam vel turpis semper ullamcorper.
+
+[[div style="clear:both;"]]
+[[/div]]
+
+[[span class="s-title"]]Metrics[[/span]]
+
+{{metrics}} is a responsive grid of headline figures, very common for these types of websites. Each child takes a {{figure}}, a {{label}}, and its own color class. Set {{--stat-min}} to change the reflow width.
+
+[[div class="metrics"]]
+[[div class="leaf"]]
+[[span class="label"]]Add {{counter-element}} to count up from one number to another.[[/span]]
+[[collapsible show="try it out" hide="hide"]]
+[[span class="counter-element figure"]]
+[[/span]]
+[[/collapsible]]
+[[/div]]
+[[div class="azure"]]
+[[span class="figure"]]2[[/span]]
+[[span class="label"]]Number of numbers in this row.[[/span]]
+[[/div]]
+[[/div]]
+[[div class="metrics"]]
+[[div class="leaf"]]
+[[span class="figure"]]1[[/span]]
+[[span class="label"]]Number of numbers expressed in this segment.[[/span]]
+[[/div]]
+[[div class="azure"]]
+[[span class="figure"]]2 of 4[[/span]]
+[[span class="label"]]Number of numbers already expressed in this segment.[[/span]]
+[[/div]]
+[[div class="wheat"]]
+[[span class="figure"]]3[[/span]]
+[[span class="label"]]Value of the number in sequence.[[/span]]
+[[/div]]
+[[div class="hazard"]]
+[[span class="figure"]]4th[[/span]]
+[[span class="label"]]Last number when number is in this sequence.[[/span]]
+[[/div]]
+[[/div]]
+
+[[span class="s-title"]]Pipeline[[/span]]
+
+{{pipeline}} numbers each stage in a project's lifecycle, automatically. Mark a stage {{done}}, {{now}}, or {{halted}}. Set {{--stage-min}} to change the reflow width.
+
+[[div class="pipeline"]]
+[[div class="done leaf"]]
+Greenhouse screen
+[[/div]]
+[[div class="done leaf"]]
+Contained field trial
+[[/div]]
+[[div class="now azure"]]
+Regulatory dossier
+[[/div]]
+[[div class="halted"]]
+Open-field release
+[[/div]]
+[[div]]
+Commercial launch
+[[/div]]
+[[/div]]
+
+[[span class="s-title"]]Updates[[/span]]
+
+{{updates}} is a vertical timeline. Each child takes a {{date}} and its own color class, which tints the marker and the date line.
+
+[[div class="updates"]]
+[[div class="hazard"]]
+[[span class="date"]]12 March[[/span]]
+Most recent stage.
+[[/div]]
+[[div class="amber"]]
+[[span class="date"]]04 March[[/span]]
+Previous stage.
+[[/div]]
+[[div class="leaf"]]
+[[span class="date"]]27 February[[/span]]
+Least recent stage.
+[[/div]]
+[[/div]]
+
+[[span class="s-title"]]Factsheet[[/span]]
+
+{{factsheet}} displays a summary of relevant details.
+
+[[div class="factsheet navy"]]
+||~ Registered name || Ordopharm Agronomics N.V. ||
+||~ Listing || ORDO ||
+||~ Segments || Crop Science, Consumer Health, Pharmaceuticals ||
+||~ Anomalous holdings || [[span class="redact"]]REDACTED BY ORDER[[/span]] ||
+[[/div]]
+
+[[span class="s-title"]]Tiles[[/span]]
+
+{{tiles}} is a grid of navigational cards, each with an arrow in the corner. Set {{--tile-min}} to change the reflow width.
+
+[[div class="tiles"]]
+[[div class="azure"]]
++++* Investor Relations
+Quarterly results, filings, and the annual report.
+[[/div]]
+[[div class="leaf"]]
++++* Crop Science
+Seed genetics, crop protection, digital farming.
+[[/div]]
+[[div class="bloom"]]
++++* Pharmaceuticals
+Therapeutic pipeline and licensing enquiries.
+[[/div]]
+[[/div]]
+
+[[span class="s-title"]]Jumbotron[[/span]]
+
+Jumbotron is a "full width" image banner, meant to be used as an "eye-catching" top-of-page art that the other elements can be placed on top of, as a title thing. I think. This is a recreation of an actual Bayer-Monsanto page element
+
+[[collapsible show="view sizing options" hide="close" hideLocation="both"]]
+[[div class="jumbo short"]]
+//class {{jumbo short}}//
+[[/div]]
+
+[[div class="jumbo"]]
+//class {{jumbo}}//
+[[/div]]
+
+[[div class="jumbo ratio"]]
+//class {{jumbo ratio}}//
+[[/div]]
+
+[[div class="jumbo tall"]]
+//class {{jumbo tall}}//
+[[/div]]
+
+[[div class="jumbo bleed"]]
+//class {{jumbo bleed}}//
+[[/div]]
+
+[[div class="jumbo contain"]]
+**//class {{jumbo contain}}//**
+[[/div]]
+
+[[div class="jumbo top"]]
+//class {{jumbo top}}//
+[[/div]]
+
+[[div class="jumbo middle"]]
+//class {{jumbo middle}}//
+[[/div]]
+
+[[div class="jumbo centered"]]
+//class {{jumbo centered}}//
+[[/div]]
+
+[[div class="jumbo tint leaf"]]
+//class {{jumbo tint leaf}}//
+[[/div]]
+
+[[div class="jumbo crest"]]
+//class {{jumbo crest}}//
+[[/div]]
+[[/collapsible]]
+
++ Notices & Flags
+
+[[span class="s-title"]]Notice[[/span]]
+
+{{notice}} is a tinted callout. Change the banner word with {{--notice-word}}.
+
+[[div class="notice"]]
+Product availability varies by territory. Consult your local registration.
+[[/div]]
+
+[[div class="notice hazard" style="--notice-word: 'WARNING';"]]
+Do not apply within 3 km of standing water.
+[[/div]]
+
+[[div class="notice teal" style="--notice-word: 'ADVISORY';"]]
+You are going to die.
+[[/div]]
+
+[[span class="s-title"]]Badge[[/span]]
+
+{{badge}} is an inline chip. Add {{hollow}} for the outlined version.
+
+Status: [[span class="badge leaf"]]cleared[[/span]] [[span class="badge amber"]]under review[[/span]] [[span class="badge hazard"]]withdrawn[[/span]] [[span class="badge hollow navy"]]archived[[/span]]
+
+[[span class="s-title"]]Tape[[/span]]
+
+{{tape}} is a hazard-stripe divider. Add {{thick}} to double its height.
+
+[[div class="tape"]]
+[[/div]]
+
+[[div class="tape thick amber"]]
+[[/div]]
+
+[[span class="s-title"]]Growth Bar[[/span]]
+
+[[collapsible show="open to test" hide="close to test" folded="no"]]
+[[div class="growth-wrap"]]
+[[div class="growth-track leaf"]]
+[[div class="growth-fill" style="--fill-to: 78%;"]]
+[[/div]]
+[[/div]]
+[[/div]]
+[[/collapsible]]
+
+[[collapsible show="code"]]
+@@[[div class="growth-wrap"]]@@
+@@[[div class="growth-track leaf"]]@@
+@@[[div class="growth-fill" style="--fill-to: 78%;"]]@@
+@@[[/div]]@@
+@@[[/div]]@@
+@@[[/div]]@@
+[[/collapsible]]
+
+[[span class="s-title"]]Loading Bar[[/span]]
+
+[[collapsible show="Q4 EARNINGS PREVIEW" hide="Q4 EARNINGS PREVIEW"]]
+@@ @@
+[[div class="growth-wrap fade-out3"]]
+[[div class="growth-track azure"]]
+[[div class="growth-fill"]]
+[[/div]]
+[[/div]]
+[[/div]]
+[[div class="fade-in2 pane filled hazard medium center"]]
+[[span class="caps"]]Figures withheld pending review[[/span]]
+[[/div]]
+[[/collapsible]]
+
+[[span class="s-title"]]Product Label[[/span]]
+
+[[div class="product_label amber medium"]]
+= **ORDOSAN-9**
+= //Selective post-emergent herbicide.//
+-----
+{{product_label amber medium}}
+[[/div]]
+
++ Documents
+
+[[span class="s-title"]]Memos[[/span]]
+
+[[div class="memo"]]
+{{memo}}
+[[/div]]
+
+[[div class="compliance_memo"]]
+{{compliance_memo}}
+[[/div]]
+
+[[div class="legal_memo"]]
+{{legal_memo}}
+[[/div]]
+
+[[div class="custom_memo teal"]]
+{{custom_memo teal}}
+[[/div]]
+
+[[div class="memo stamped"]]
+{{memo stamped}}
+[[/div]]
+
+[[span class="s-title"]]color Classes[[/span]]
+ 
+The following color collections have been formulated for maximal enjoyment.
+
+[[collapsible show="view color options" hide="close"]]
+@@ @@
+[[div class="swatchset"]]
+[[div]]
+[[div class="setname"]]
+Set 1
+[[/div]]
+[[div class="chip frost"]]
+{{frost}}
+[[/div]]
+[[div class="chip mist"]]
+{{mist}}
+[[/div]]
+[[div class="chip line"]]
+{{line}}
+[[/div]]
+[[div class="chip slate"]]
+{{slate}}
+[[/div]]
+[[div class="chip graphite"]]
+{{graphite}}
+[[/div]]
+[[div class="chip navy"]]
+{{navy}}
+[[/div]]
+[[div class="chip azure"]]
+{{azure}}
+[[/div]]
+[[div class="chip sky"]]
+{{sky}}
+[[/div]]
+[[div class="chip teal"]]
+{{teal}}
+[[/div]]
+[[div class="chip sprout"]]
+{{sprout}}
+[[/div]]
+[[div class="chip leaf"]]
+{{leaf}}
+[[/div]]
+[[div class="chip moss"]]
+{{moss}}
+[[/div]]
+[[div class="chip wheat"]]
+{{wheat}}  :c
+[[/div]]
+[[div class="chip amber"]]
+{{amber}}
+[[/div]]
+[[div class="chip rust"]]
+{{rust}}
+[[/div]]
+[[div class="chip loam"]]
+{{loam}}
+[[/div]]
+[[div class="chip bloom"]]
+{{bloom}}
+[[/div]]
+[[div class="chip hazard"]]
+{{hazard}}
+[[/div]]
+[[div class="chip void"]]
+{{void}}
+[[/div]]
+[[/div]]
+[[div]]
+[[div class="setname"]]
+Set 2 (Intranet)
+[[/div]]
+[[div class="chip frost2"]]
+{{frost}}
+[[/div]]
+[[div class="chip mist2"]]
+{{mist}}
+[[/div]]
+[[div class="chip line2"]]
+{{line}}
+[[/div]]
+[[div class="chip slate2"]]
+{{slate}}
+[[/div]]
+[[div class="chip graphite2"]]
+{{graphite}}
+[[/div]]
+[[div class="chip navy2"]]
+{{navy}}
+[[/div]]
+[[div class="chip azure2"]]
+{{azure}}
+[[/div]]
+[[div class="chip sky2"]]
+{{sky}}
+[[/div]]
+[[div class="chip teal2"]]
+{{teal}}
+[[/div]]
+[[div class="chip sprout2"]]
+{{sprout}}
+[[/div]]
+[[div class="chip leaf2"]]
+{{leaf}}
+[[/div]]
+[[div class="chip moss2"]]
+{{moss}}
+[[/div]]
+[[div class="chip wheat2"]]
+{{wheat}}  :c
+[[/div]]
+[[div class="chip amber2"]]
+{{amber}}
+[[/div]]
+[[div class="chip rust2"]]
+{{rust}}
+[[/div]]
+[[div class="chip loam2"]]
+{{loam}}
+[[/div]]
+[[div class="chip bloom2"]]
+{{bloom}}
+[[/div]]
+[[div class="chip hazard2"]]
+{{hazard}}
+[[/div]]
+[[div class="chip void2"]]
+{{void}}
+[[/div]]
+[[/div]]
+[[div]]
+[[div class="setname"]]
+Set 3 (Legacy)
+[[/div]]
+[[div class="chip frost3"]]
+{{frost}}
+[[/div]]
+[[div class="chip mist3"]]
+{{mist}}
+[[/div]]
+[[div class="chip line3"]]
+{{line}}
+[[/div]]
+[[div class="chip slate3"]]
+{{slate}}
+[[/div]]
+[[div class="chip graphite3"]]
+{{graphite}}
+[[/div]]
+[[div class="chip navy3"]]
+{{navy}}
+[[/div]]
+[[div class="chip azure3"]]
+{{azure}}
+[[/div]]
+[[div class="chip sky3"]]
+{{sky}}
+[[/div]]
+[[div class="chip teal3"]]
+{{teal}}
+[[/div]]
+[[div class="chip sprout3"]]
+{{sprout}}
+[[/div]]
+[[div class="chip leaf3"]]
+{{leaf}}
+[[/div]]
+[[div class="chip moss3"]]
+{{moss}}
+[[/div]]
+[[div class="chip wheat3"]]
+{{wheat}}  :c
+[[/div]]
+[[div class="chip amber3"]]
+{{amber}}
+[[/div]]
+[[div class="chip rust3"]]
+{{rust}}
+[[/div]]
+[[div class="chip loam3"]]
+{{loam}}
+[[/div]]
+[[div class="chip bloom3"]]
+{{bloom}}
+[[/div]]
+[[div class="chip hazard3"]]
+{{hazard}}
+[[/div]]
+[[div class="chip void3"]]
+{{void}}
+[[/div]]
+[[/div]]
+[[div]]
+[[div class="setname"]]
+Set 4 (Unused)
+[[/div]]
+[[div class="chip frost4"]]
+{{frost}}
+[[/div]]
+[[div class="chip mist4"]]
+{{mist}}
+[[/div]]
+[[div class="chip line4"]]
+{{line}}
+[[/div]]
+[[div class="chip slate4"]]
+{{slate}}
+[[/div]]
+[[div class="chip graphite4"]]
+{{graphite}}
+[[/div]]
+[[div class="chip navy4"]]
+{{navy}}
+[[/div]]
+[[div class="chip azure4"]]
+{{azure}}
+[[/div]]
+[[div class="chip sky4"]]
+{{sky}}
+[[/div]]
+[[div class="chip teal4"]]
+{{teal}}
+[[/div]]
+[[div class="chip sprout4"]]
+{{sprout}}
+[[/div]]
+[[div class="chip leaf4"]]
+{{leaf}}
+[[/div]]
+[[div class="chip moss4"]]
+{{moss}}
+[[/div]]
+[[div class="chip wheat4"]]
+{{wheat}}  :c
+[[/div]]
+[[div class="chip amber4"]]
+{{amber}}
+[[/div]]
+[[div class="chip rust4"]]
+{{rust}}
+[[/div]]
+[[div class="chip loam4"]]
+{{loam}}
+[[/div]]
+[[div class="chip bloom4"]]
+{{bloom}}
+[[/div]]
+[[div class="chip hazard4"]]
+{{hazard}}
+[[/div]]
+[[div class="chip void4"]]
+{{void}}
+[[/div]]
+[[/div]]
+[[/div]]
+@@ @@
+= As with Eigenmachine, you can borrow a shade from another mode by invoking {{color#}}, where {{color}} is the name of the color and {{#}} is the set number. 
+@@ @@
+[[/collapsible]]
+
+[[span class="s-title"]]Typographic Utilities[[/span]]
+
+|| [[span class="eyebrow"]]eyebrow[[/span]] || small uppercase kicker above a headline ||
+|| [[span class="headline"]]headline[[/span]] || large display type, tightly tracked; add [[span class="headline heavy"]]heavy[[/span]] for bold ||
+|| [[span class="lede"]]lede[[/span]] || slightly enlarged introductory paragraph ||
+|| [[span class="attrib"]]attrib[[/span]] || attribution line under a {{pullquote}} ||
+|| [[span class="smallprint"]]smallprint[[/span]] || monospace legal fine print ||
+|| [[span class="s-title"]]s-title[[/span]] || subsection label, as used throughout this page ||
+|| [[span class="mono"]]mono[[/span]] / [[span class="ui"]]ui[[/span]] / [[span class="display"]]display[[/span]] || force a font family ||
+|| [[span class="caps"]]caps[[/span]] || uppercase with tracking ||
+|| [[span class="inkcolor"]]inkcolor[[/span]] || tint text with the active color ||
+
+[[span class="s-title"]]Modifiers[[/span]]
+
+|| {{tiny}} / {{medium}} / {{large}} / {{full}} || constrain a block's width ||
+|| {{left}} / {{center}} / {{right}} || float a block ||
+|| {{align-l}} / {{align-r}} / {{align-c}} || text alignment ||
+|| {{bleed}} || run a {{hero}} / {{band}} / {{jumbo}} to the viewport edge ||
+|| {{flattened}} / {{raised}} || remove or add elevation ||
+|| {{round}} || soften corners on one block ||
+|| {{opaque}} || fill with the active color ||
+|| {{gridlines}} || overlay a faint technical grid ||
+|| {{stamped}} || add a diagonal stamp ||
+
+
+[[span class="s-title"]]Tab Modifiers[[/span]]
+
+Wrap {{tabview}} in one of these div modifiers to change how the tab strip behaves.
+
+|| {{tabs-flush}} || removes the panel's border and background, keeping the tabs ||
+|| {{tabs-underline}} || active tab has an accent rule beneath it ||
+|| {{tabs-small}} || tab strip has less padding ||
+
+[[collapsible show="see in action" hide="collapse action"]]
+
+[[div class="tabs-flush moss"]]
+[[tabview]]
+[[tab 1]]
+{{tabs-flush}}
+[[/tab]]
+[[tab 2]]
+Sits directly on the page background.
+[[/tab]]
+[[/tabview]]
+[[/div]]
+
+[[div class="tabs-underline hazard"]]
+[[tabview]]
+[[tab 1]]
+{{tabs-underline}}.
+[[/tab]]
+[[tab 2]]
+Pairs well with {{tabs-flush}}.
+[[/tab]]
+[[tab 3]]
+lorem ipsum
+[[/tab]]
+[[/tabview]]
+[[/div]]
+
+[[div class="tabs-small teal"]]
+[[tabview]]
+[[tab A]]
+with {{tabs-small}}, the tabs are small.
+[[/tab]]
+[[tab B]]
+lorem ipsum
+[[/tab]]
+[[tab C]]
+lorem ipsum
+[[/tab]]
+[[tab D]]
+lorem ipsum
+[[/tab]]
+[[tab E]]
+lorem ipsum
+[[/tab]]
+[[tab F]]
+lorem ipsum
+[[/tab]]
+[[/tabview]]
+[[/div]]
+
+
+
+[[/collapsible]]
+
+[[span class="s-title"]]Map Modifiers[[/span]]
+
+|| {{reveal-rise}} || panel text fades upward into place ||
+|| {{reveal-wipe}} || panel text is revealed from left to right ||
+|| {{reveal-slide}} || panel text slides in from the left ||
+|| {{reveal-pulse}} || panel text flashes once before settling ||
+|| {{reveal-none}} || no reveal animation ||
+|| {{panelled}} || gives the text panel a surface, border, and accent rule ||
+|| {{labelled}} || prints each tab name beneath its node ||
+|| {{map-left}} || puts the map on the left and the panel on the right ||
+|| {{wide}} || stacks the map above the panel at full width ||
+
+[[collapsible show="see in action" hide="collapse action"]]
+
+[[div class="mapview labelled panelled reveal-rise teal"]]
+[[tabview]]
+[[tab Sector A]]
+{{reveal-rise}} with {{panelled}} and {{labelled}}.
+[[/tab]]
+[[tab Sector B]]
+The panel now has its own surface and border.
+[[/tab]]
+[[tab Sector C]]
+Node labels sit beneath each marker.
+[[/tab]]
+[[/tabview]]
+[[/div]]
+-----
+[[div class="mapview map-left reveal-wipe"]]
+[[tabview]]
+[[tab 1]]
+{{map-left}}
+[[/tab]]
+[[tab 2]]
+{{reveal-wipe}} uncovers the text left to right.
+[[/tab]]
+[[/tabview]]
+[[/div]]
+-----
+[[div class="mapview wide reveal-slide hazard"]]
+[[tabview]]
+[[tab 1]]
+{{wide}}
+[[/tab]]
+[[tab 2]]
+{{reveal-slide}} enters from the left.
+[[/tab]]
+[[tab 3]]
+{{hazard}} color class dyes the node color.
+[[/tab]]
+[[/tabview]]
+[[/div]]
+-----
+[[div class="mapview reveal-none"]]
+[[tabview]]
+[[tab 1]]
+{{reveal-none}} disables the reveal animation entirely, leaving a quick on/off.
+[[/tab]]
+[[tab 2]]
+Use this when the panel holds a long document.
+[[/tab]]
+[[/tabview]]
+[[/div]]
+[[/collapsible]]
+
++ Root Variables
+
+To change a root variable, add a CSS module to your article like so.
+
+> {{@@[[module CSS]]@@}}
+>
+>
+> {{@@[[/module]]@@}}
+
+Then add a {{:root}} pseudo-class, and inside it the variable and the value you want.
+
+> {{@@[[module CSS]]@@}}
+> {{@@:root {@@}}
+> {{@@--variable-name: value;@@}}
+> {{@@}@@}}
+> {{@@[[/module]]@@}}
+
+= //the most relevant root variables://
+||~ variable ||~ default ||~ unit ||
+|| {{@@--header-title@@}} || "ORDOPHARM" || "text" ||
+|||||| First half of the wordmark, in the title color ||
+|| {{@@--header-subtitle@@}} || "AGRONOMICS" || "text" ||
+|||||| Second half of the wordmark, in the division color ||
+|| {{@@--header-tagline@@}} || "Solving hunger. One problem at a time." || "text" ||
+|||||| Strapline beneath the wordmark ||
+|| {{@@--mobile-title@@}} / {{@@--mobile-subtitle@@}} || "ORDOPHARM" / "AGR." || "text" ||
+|||||| Wordmark on narrow screens, where the strapline is hidden ||
+|| {{@@--header-logo@@}} || Included mark || url("x") ||
+|||||| Corporate mark at the top left ||
+|| {{@@--header-title-color@@}} || 11, 43, 57 || RGB values ||
+|||||| color of the first half of the wordmark ||
+|| {{@@--header-subtitle-color@@}} || 8, 121, 190 || RGB values ||
+|||||| color of the second half of the wordmark ||
+|| {{@@--brand-weight@@}} / {{@@--division-weight@@}} || 800 / 400 || font weight ||
+|||||| Weight of each half of the wordmark ||
+|| {{@@--surface@@}} || 255, 255, 255 || RGB values ||
+|||||| Background of panes, memos, and labels ||
+|| {{@@--ink@@}} || 45, 55, 61 || RGB values ||
+|||||| Default text color on a surface ||
+|| {{@@--on-dark@@}} || 255, 255, 255 || RGB values ||
+|||||| Text color used over filled panels ||
+|| {{@@--rule-weight@@}} || .25 || rem ||
+|||||| Thickness of the accent rule on panes, bands, and headings ||
+|| {{@@--corner@@}} || 0 || rem ||
+|||||| Corner radius across the theme. Corporate default is square ||
+|| {{@@--band-pad@@}} || 2.25 || rem ||
+|||||| Vertical padding inside a {{band}} ||
+|| {{@@--pane-min@@}} || 15 || rem ||
+|||||| Minimum pane width before the grid reflows ||
+|| {{@@--hero-image@@}} || none || url("x") ||
+|||||| Background image for a {{hero}}; pair with class {{tint}} ||
+|| {{@@--backdrop@@}} || none || url("x") or gradient ||
+|||||| Page background texture ||
+|| {{@@--watermark@@}} || Included mark || url("x") ||
+|||||| Mark used by class {{crest}} ||
+|| {{@@--custom-header@@}} || "Internal Communication" || "text" ||
+|||||| Heading of the {{custom_memo}} ||
+|| {{@@--custom-logo@@}} || Included mark || url("x") ||
+|||||| Mark shown at the right of a memo header ||
+|| {{@@--custom-color@@}} || 11, 43, 57 || RGB values ||
+|||||| Accent of the {{custom_memo}}; also settable by color class ||
+|| {{@@--stamp-text@@}} || "CONFIDENTIAL" || "text" ||
+|||||| Text of the diagonal stamp added by class {{stamped}} ||
+|| {{@@--signal-word@@}} || "CAUTION" || "text" ||
+|||||| Banner word on a {{product_label}} ||
+|| {{@@--fill-time@@}} || 2.5 || seconds (s) ||
+|||||| Time taken by the growth bar to fill ||
+|| {{@@--fill-to@@}} || 100% || percent ||
+|||||| How far the growth bar fills ||
+|| {{@@--track-height@@}} || .5 || rem ||
+|||||| Height of the growth bar ||
+|| {{@@--scale1@@}} / {{@@--scale2@@}} / {{@@--scale3@@}} || 1.2 / 1 / 1.6 || seconds (s) ||
+|||||| Duration of each animation pair ||
+|| {{@@--delay1@@}} / {{@@--delay2@@}} / {{@@--delay3@@}} || 0 / 1 / 2 || seconds (s) ||
+|||||| Delay before each animation pair begins ||
+|| {{@@--loop1@@}} / {{@@--loop2@@}} / {{@@--loop3@@}} || 1 || count (accepts infinite) ||
+|||||| Repetitions of each animation pair ||
+|| {{@@--link-volume@@}} || none || any [https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform text-transform] value ||
+|||||| Link style and capitalization ||
+|| {{@@--link-decor@@}} || none || any [https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration text-decoration] value ||
+|||||| Underline style of links ||
+|| {{@@--abstractor@@}} || visible || accepts {{visible}}, {{hidden}} ||
+|||||| Toggles the page title ||
+|| {{@@--main-content-width@@}} || 70 || rem ||
+|||||| Width of the content column ||
+|| {{@@--node-icon@@}} || encircled leaf/flame symbol. || url("x") ||
+|||||| Icon for {{mapview}} nodes. ||
+|| {{@@--counterTime@@}} || (inert until assigned) || s ||
+||||||  Time it takes the {{counter-element}} to count from {{@@--from@@}} to {{@@--to@@}}. Defaults to 5s if undefined. || 
+|| {{@@--symbol-dna@@}} || (inert until assigned) || url("x") ||
+|||||| Two-tone double-helix logo. Assign to {{@@--header-logo@@}} or {{@@--node-icon@@}}. ||
+|| {{@@--symbol-dna-mono@@}} || (inert until assigned) || url("x") ||
+|||||| Monochrome version of the same mark, for {{@@--watermark@@}}/{{crest}} use. ||
+@@ @@
+||||||~ //to view a full list, please see the source code.// ||
+
++ Fonts
+
+[[=]]
+||~ font ||~ use ||~ custom class ||
+|| [[span class="display"]]Archivo[[/span]] || wordmark, headings, headlines, UI || {{display}}, {{ui}} ||
+|| Inter || body text, default || ||
+|| [[span class="mono"]]IBM Plex Mono[[/span]] || tickers, fine print, intranet mode || {{mono}} ||
+|| [[span class="caps"]]tracked capitals[[/span]] || eyebrows and labels || {{caps}} ||
+[[/=]]
+
++ Source Code
+
+[[collapsible show="view source code" hide="close"]]
+
+[[code type="css"]]
+@import url('https://fonts.bunny.net/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+:root {
+
+/*------- Palette------*/
+
+    --ordo-frost: 255, 255, 255;
+    --ordo-mist: 240, 245, 248;
+    --ordo-line: 213, 222, 228;
+    --ordo-slate: 106, 120, 128;
+    --ordo-graphite: 45, 55, 61;
+    --ordo-navy: 11, 43, 57;
+    --ordo-azure: 8, 121, 190;
+    --ordo-sky: 0, 145, 223;
+    --ordo-teal: 0, 133, 125;
+    --ordo-sprout: 137, 211, 41;
+    --ordo-leaf: 102, 181, 18;
+    --ordo-moss: 61, 107, 41;
+    --ordo-wheat: 217, 180, 74;
+    --ordo-amber: 232, 163, 61;
+    --ordo-rust: 180, 83, 31;
+    --ordo-loam: 74, 55, 40;
+    --ordo-bloom: 198, 49, 142;
+    --ordo-hazard: 200, 16, 46;
+    --ordo-void: 10, 13, 15;
+
+
+/*------- Set 2------*/
+
+    --ordo2-frost: 226, 232, 236;
+    --ordo2-mist: 38, 48, 56;
+    --ordo2-line: 52, 66, 76;
+    --ordo2-slate: 131, 148, 158;
+    --ordo2-graphite: 27, 35, 41;
+    --ordo2-navy: 7, 26, 35;
+    --ordo2-azure: 61, 165, 226;
+    --ordo2-sky: 106, 199, 243;
+    --ordo2-teal: 32, 168, 158;
+    --ordo2-sprout: 155, 219, 76;
+    --ordo2-leaf: 118, 191, 44;
+    --ordo2-moss: 79, 130, 56;
+    --ordo2-wheat: 226, 194, 104;
+    --ordo2-amber: 240, 178, 88;
+    --ordo2-rust: 199, 105, 54;
+    --ordo2-loam: 97, 76, 58;
+    --ordo2-bloom: 218, 88, 168;
+    --ordo2-hazard: 226, 60, 84;
+    --ordo2-void: 3, 8, 11;
+
+/*------- Set 3  -------*/
+
+    --ordo3-frost: 246, 240, 226;
+    --ordo3-mist: 234, 224, 202;
+    --ordo3-line: 198, 184, 156;
+    --ordo3-slate: 132, 118, 96;
+    --ordo3-graphite: 74, 64, 50;
+    --ordo3-navy: 46, 38, 28;
+    --ordo3-azure: 39, 86, 122;
+    --ordo3-sky: 86, 133, 163;
+    --ordo3-teal: 52, 120, 108;
+    --ordo3-sprout: 158, 176, 78;
+    --ordo3-leaf: 122, 143, 56;
+    --ordo3-moss: 84, 98, 44;
+    --ordo3-wheat: 198, 156, 66;
+    --ordo3-amber: 204, 132, 40;
+    --ordo3-rust: 162, 74, 34;
+    --ordo3-loam: 92, 68, 44;
+    --ordo3-bloom: 166, 76, 96;
+    --ordo3-hazard: 172, 44, 34;
+    --ordo3-void: 26, 22, 16;
+
+/*------- Set 4-------*/
+
+    --ordo4-frost: 214, 214, 196;
+    --ordo4-mist: 46, 48, 38;
+    --ordo4-line: 74, 76, 58;
+    --ordo4-slate: 128, 130, 108;
+    --ordo4-graphite: 34, 36, 28;
+    --ordo4-navy: 18, 20, 15;
+    --ordo4-azure: 108, 128, 96;
+    --ordo4-sky: 152, 168, 112;
+    --ordo4-teal: 94, 122, 92;
+    --ordo4-sprout: 186, 196, 78;
+    --ordo4-leaf: 152, 158, 54;
+    --ordo4-moss: 96, 100, 40;
+    --ordo4-wheat: 202, 176, 72;
+    --ordo4-amber: 214, 150, 44;
+    --ordo4-rust: 158, 88, 30;
+    --ordo4-loam: 68, 58, 36;
+    --ordo4-bloom: 146, 96, 108;
+    --ordo4-hazard: 190, 52, 34;
+    --ordo4-void: 6, 7, 4;
+   
+
+    --jumbo-image: url('http://scp-wiki.wikidot.com/local--files/theme:ordopharm/banner.jpg');
+    --surface: var(--ordo-frost);
+    --surface-alt: var(--ordo-mist);
+    --ink: var(--ordo-graphite);
+    --ink-soft: var(--ordo-slate);
+    --on-dark: var(--ordo-frost);
+    --shadow-color: var(--ordo-navy);
+
+    --basalt-primary-color: var(--ordo-frost);
+    --basalt-secondary-color: var(--ordo-mist);
+    --basalt-tertiary-color: var(--ordo-line);
+    --basalt-main-text-color: var(--ordo-void);
+    --basalt-overtone: var(--ordo-navy);
+    --basalt-undertone: var(--ordo-azure);
+    --basalt-bright-element-color: var(--ordo-sky);
+    --basalt-dark-element-color: var(--ordo-navy);
+    --basalt-alternate-color: var(--ordo-leaf);
+    --basalt-positive-color: var(--ordo-leaf);
+    --basalt-negative-color: var(--ordo-hazard);
+    --basalt-sub-text-color: var(--ordo-slate);
+    --basalt-light-text-color: var(--ordo-frost);
+    --basalt-UI-dark-palette: var(--ordo-navy);
+    --basalt-UI-opacity: .97;
+    --basalt-focus-color: var(--ordo-azure);
+    --basalt-background-color: var(--ordo-frost);
+
+    --link-color: var(--ordo-azure);
+    --link-visited-color: var(--ordo-navy);
+    --link-newpage-color: var(--ordo-rust);
+    --link-weight: 600;
+    --link-volume: none;
+    --link-decor: none;
+
+/*------- Fonts -------*/
+
+    --header-font-primary: 'Archivo';
+    --UI-font-primary: 'Archivo';
+    --body-font-primary: 'InterVariable';
+    --mono-font-primary: 'IBM Plex Mono';
+    --display-font: var(--header-font);
+
+    --tab-accent: var(--ordo-navy);
+    --tab-face: var(--surface);
+    --tab-pad: .6rem 1.15rem;
+
+    --jumbo-mat: 247, 248, 240; 
+    --jumbo-height: clamp(10rem, 30vw, 26rem);
+    --jumbo-fit: cover;
+    --jumbo-focus: center;
+    --map-mat: var(--ordo-moss);
+    --map-ratio: 2 / 1;
+    --map-fit: cover;
+    --node-size: 2rem;
+    --node-color: var(--ordo-frost);
+    --reveal-time: var(--scale2);
+    --reveal-delay: 0;  
+    --reveal-ease: ease-out;
+
+    --header-logo: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='none' stroke='%230879be' stroke-width='5'/%3E%3Cpath d='M32 13c-11 11-11 29 0 38 11-9 11-27 0-38z' fill='%2366b512'/%3E%3Cpath d='M32 13c-11 11-11 29 0 38V13z' fill='%230b2b39'/%3E%3C/svg%3E");
+    --header-logo-size: contain;
+    --node-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='none' stroke='%230879be' stroke-width='2'/%3E%3Cpath d='M32 13c-11 11-11 29 0 38 11-9 11-27 0-38z' fill='%2366b512'/%3E%3Cpath d='M32 13c-11 11-11 29 0 38V13z' fill='%230b2b39'/%3E%3C/svg%3E");
+    --symbol-dna: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 700 700'%3E%3Cg transform='translate(0,700) scale(.1,-.1)' stroke='none'%3E%3Cpath fill='%230879be' d='M2257 5942 c-29 -31 -19 -59 47 -141 107 -132 165 -277 181 -454 5 -63 11 -80 28 -92 51 -36 97 -1 97 73 0 189 -97 429 -231 576 -56 61 -91 72 -122 38z'/%3E%3Cpath fill='%230b2b39' d='M2780 5004 c-213 -38 -357 -109 -516 -253 -183 -168 -341 -233 -564 -233 -193 0 -349 55 -501 178 -84 67 -114 77 -142 46 -31 -35 -21 -66 39 -121 156 -143 387 -231 604 -231 231 0 444 86 631 255 191 173 350 239 574 238 170 -1 336 -55 459 -149 l48 -37 -553 -554 -554 -554 -28 33 c-78 91 -140 248 -158 404 -7 58 -18 106 -27 117 -20 23 -57 22 -83 -4 -20 -20 -21 -29 -16 -105 11 -159 61 -302 151 -439 166 -249 457 -405 756 -405 231 0 444 86 631 255 191 173 350 239 574 238 170 -1 336 -55 459 -149 l48 -37 -553 -554 -554 -554 -28 33 c-79 92 -140 249 -158 404 -12 106 -26 134 -66 134 -39 0 -63 -34 -63 -87 0 -129 54 -312 128 -438 63 -107 210 -254 317 -317 137 -80 309 -128 465 -128 231 0 444 86 631 255 191 173 350 239 574 238 188 -1 347 -58 496 -179 84 -67 114 -77 142 -46 30 33 21 66 -32 115 -102 95 -246 173 -397 213 -97 26 -331 26 -428 0 -162 -43 -288 -113 -422 -235 -183 -168 -341 -233 -564 -233 -175 0 -339 52 -464 148 l-48 37 553 554 554 554 28 -33 c79 -92 140 -249 158 -404 12 -108 26 -134 69 -134 58 0 72 57 49 200 -58 360 -324 650 -685 746 -52 14 -105 18 -214 18 -109 0 -162 -4 -214 -18 -162 -43 -288 -113 -422 -235 -183 -168 -341 -233 -564 -233 -175 0 -339 52 -464 148 l-48 37 553 554 554 554 28 -33 c79 -92 140 -250 158 -404 8 -78 15 -103 31 -116 48 -42 98 -6 98 70 0 131 -57 320 -133 443 -124 202 -318 347 -552 411 -68 19 -286 33 -345 22z'/%3E%3Cpath fill='%230879be' d='M4410 1740 c-54 -54 9 -343 111 -509 68 -111 143 -191 178 -191 33 0 61 27 61 58 0 12 -26 55 -59 95 -109 133 -162 260 -182 433 -7 61 -17 106 -27 117 -20 23 -57 22 -82 -3z'/%3E%3C/g%3E%3C/svg%3E");
+     --symbol-dna-mono: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 700 700'%3E%3Cg transform='translate(0,700) scale(.1,-.1)' stroke='none'%3E%3Cpath fill='%23ffffff' d='M2257 5942 c-29 -31 -19 -59 47 -141 107 -132 165 -277 181 -454 5 -63 11 -80 28 -92 51 -36 97 -1 97 73 0 189 -97 429 -231 576 -56 61 -91 72 -122 38z'/%3E%3Cpath fill='%23ffffff' d='M2780 5004 c-213 -38 -357 -109 -516 -253 -183 -168 -341 -233 -564 -233 -193 0 -349 55 -501 178 -84 67 -114 77 -142 46 -31 -35 -21 -66 39 -121 156 -143 387 -231 604 -231 231 0 444 86 631 255 191 173 350 239 574 238 170 -1 336 -55 459 -149 l48 -37 -553 -554 -554 -554 -28 33 c-78 91 -140 248 -158 404 -7 58 -18 106 -27 117 -20 23 -57 22 -83 -4 -20 -20 -21 -29 -16 -105 11 -159 61 -302 151 -439 166 -249 457 -405 756 -405 231 0 444 86 631 255 191 173 350 239 574 238 170 -1 336 -55 459 -149 l48 -37 -553 -554 -554 -554 -28 33 c-79 92 -140 249 -158 404 -12 106 -26 134 -66 134 -39 0 -63 -34 -63 -87 0 -129 54 -312 128 -438 63 -107 210 -254 317 -317 137 -80 309 -128 465 -128 231 0 444 86 631 255 191 173 350 239 574 238 188 -1 347 -58 496 -179 84 -67 114 -77 142 -46 30 33 21 66 -32 115 -102 95 -246 173 -397 213 -97 26 -331 26 -428 0 -162 -43 -288 -113 -422 -235 -183 -168 -341 -233 -564 -233 -175 0 -339 52 -464 148 l-48 37 553 554 554 554 28 -33 c79 -92 140 -249 158 -404 12 -108 26 -134 69 -134 58 0 72 57 49 200 -58 360 -324 650 -685 746 -52 14 -105 18 -214 18 -109 0 -162 -4 -214 -18 -162 -43 -288 -113 -422 -235 -183 -168 -341 -233 -564 -233 -175 0 -339 52 -464 148 l-48 37 553 554 554 554 28 -33 c79 -92 140 -250 158 -404 8 -78 15 -103 31 -116 48 -42 98 -6 98 70 0 131 -57 320 -133 443 -124 202 -318 347 -552 411 -68 19 -286 33 -345 22z'/%3E%3Cpath fill='%23ffffff' d='M4410 1740 c-54 -54 9 -343 111 -509 68 -111 143 -191 178 -191 33 0 61 27 61 58 0 12 -26 55 -59 95 -109 133 -162 260 -182 433 -7 61 -17 106 -27 117 -20 23 -57 22 -82 -3z'/%3E%3C/g%3E%3C/svg%3E");
+
+
+    --header-title: "ORDOPHARM";
+    --header-subtitle: "AGRONOMICS";
+    --header-tagline: "Solving hunger. One problem at a time.";
+    --header-title-color: var(--ordo-navy);
+    --header-subtitle-color: var(--ordo-azure);
+    --header-tagline-color: var(--ordo-slate);
+    --mobile-title: "ORDOPHARM";
+    --mobile-subtitle: "AGR.";
+    --title-size: 1.5rem;
+    --subtitle-size: 1.5rem;
+    --tagline-size: .8rem;
+    --brand-weight: 800;
+    --division-weight: 400;
+
+    --header-background-color: var(--ordo-frost);
+    --header-border-color: var(--ordo-line);
+    --header-border-width: .0625rem;
+    --top-bar-link-color: var(--ordo-navy);
+    --top-bar-link-color-hover: var(--ordo-azure);
+    --top-bar-link-background-hover: var(--ordo-frost);
+    --top-bar-link-background-hover-alt: var(--ordo-mist);
+    --top-bar-dropdown-background: var(--ordo-frost);
+    --top-bar-dropdown-background-hover: var(--ordo-navy);
+    --top-bar-dropdown-link-color: var(--ordo-navy);
+    --top-bar-dropdown-link-color-hover: var(--ordo-frost);
+    --search-icon-color: var(--ordo-navy);
+    --login-status-background-color: var(--ordo-navy);
+    --user-icon-button-color: var(--ordo-navy);
+    --side-bar-background-color: var(--ordo-frost);
+    --side-bar-link-color: var(--ordo-navy);
+    --side-bar-heading-background-color: var(--ordo-navy);
+    --side-bar-media-background-color: var(--ordo-azure), .1;
+    --side-bar-resources-background-color: var(--ordo-leaf), .1;
+    --side-bar-button-color: var(--ordo-navy);
+    --login-status-text-color-hover: var(--ordo-navy);
+    --general-border-color: var(--ordo-line);
+    --title-border-color: var(--ordo-azure);
+    --hr-color: var(--ordo-line);
+    --blockquote-background-color: var(--ordo-mist);
+    --blockquote-border-color: var(--ordo-line);
+    --blockquote-border-width: .0625rem;
+    --code-background-color: var(--ordo-mist);
+    --toc-background-color: var(--ordo-mist);
+    --tab-background-color: var(--ordo-mist);
+    --tab-hover-background-color: var(--ordo-line);
+    --tab-selected-background-color: var(--ordo-navy);
+    --tab-focus-text-color: var(--ordo-frost);
+    --image-caption-background-color: var(--ordo-mist);
+    --image-block-border-color: var(--ordo-line);
+     --footnote-background-color: var(--active color, var(--ordo-mist));
+    --tag-background-color: var(--ordo-mist);
+    --bottom-area-background-color: var(--ordo-navy);
+    --bottom-area-text-color: var(--ordo-frost);
+    --footer-link-color: var(--ordo-mist);
+    --footer-divider-color: var(--ordo-azure);
+    --license-area-divider-color: var(--ordo-line);
+    --scrollbar-track-color: var(--ordo-mist);
+    --scrollbar-thumb-color: var(--ordo-azure);
+    --selection-background-color: var(--ordo-azure);
+    --selection-text-color: var(--ordo-frost);
+    --button-background-color: var(--ordo-frost);
+    --button-border-color: var(--ordo-navy);
+    --button-text-color: var(--ordo-navy);
+    --button-hover-background-color: var(--ordo-navy);
+    --button-hover-border-color: var(--ordo-navy);
+    --button-hover-text-color: var(--ordo-frost);
+    --rate-module-background-color: var(--ordo-mist);
+
+
+    --main-content-width: 70rem;
+    --base-font-size: 1rem;
+    --header-UI-font-size: calc(var(--true-font-size) *.8);
+    --corner: 0rem;
+    --rule-weight: .25rem;
+    --band-pad: 2.25rem;
+    --pane-min: 15rem;
+    --abstractor: visible;
+
+    --backdrop: none;
+    --backdrop-size: auto;
+    --backdrop-position: center;
+    --backdrop-attachment: scroll;
+    --watermark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='none' stroke='%23ffffff' stroke-width='5'/%3E%3Cpath d='M32 13c-11 11-11 29 0 38 11-9 11-27 0-38z' fill='%23ffffff'/%3E%3C/svg%3E");
+
+
+    --custom-header: "Internal Communication";
+    --custom-logo: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='none' stroke='%230b2b39' stroke-width='5'/%3E%3Cpath d='M32 13c-11 11-11 29 0 38 11-9 11-27 0-38z' fill='%230b2b39'/%3E%3C/svg%3E");
+    --custom-color: var(--ordo-navy);
+    --stamp-text: "CONFIDENTIAL";
+
+
+    --scale1: 1.2;
+    --scale2: 1;
+    --scale3: 1.6;
+    --delay1: 0;
+    --delay2: 1;
+    --delay3: 2;
+    --loop1: 1;
+    --loop2: 1;
+    --loop3: 1;
+    --fill-time: 2.5;
+    --track-height: .5rem;
+    --ticker-speed: 32;
+}
+
+
+body {
+    background-color: rgb(var(--basalt-background-color));
+    background-image: var(--backdrop);
+    background-size: var(--backdrop-size);
+    background-position: var(--backdrop-position);
+    background-attachment: var(--backdrop-attachment);
+}
+
+#page-content {
+    font-size: 1.0125em;
+    line-height: 1.65;
+}
+
+#main-content, body.print-body #main-content {
+    max-width: calc(100% - var(--main-content-side-margin) *2.5);
+}
+
+a:any-link {
+    text-transform: var(--link-volume, none);
+    text-decoration: var(--link-decor, none);
+    font-weight: var(--link-weight, 600);
+}
+
+#page-content a:any-link:not(.collapsible-block-link, .btn):is(:hover, :focus) {
+    text-decoration: underline;
+    text-underline-offset: .2em;
+}
+
+hr {
+    height: .0625rem;
+    background-color: rgb(var(--hr-color));
+}
+
+#header h1 a {
+    display: grid;
+    grid-template-areas: "mark brand" "mark tagline";
+    grid-template-columns: max-content max-content;
+    grid-template-rows: max-content max-content;
+    align-content: center;
+    column-gap: .625rem;
+    row-gap: .1rem;
+    padding-left: .75rem;
+    padding-right: 1rem;
+    letter-spacing: normal;
+    width: max-content;
+}
+
+#header h1 a::before {
+    grid-area: mark;
+    align-self: center;
+    height: calc(var(--base-header-height) *.5);
+    width: calc(var(--base-header-height) *.5);
+    min-width: unset;
+}
+
+#header h1 a span {
+    grid-area: brand;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    column-gap: .38rem;
+    height: auto;
+    text-align: left;
+    line-height: 1;
+}
+
+#header h1 a span::before {
+    content: var(--header-title, "ORDOPHARM");
+    color: rgb(var(--header-title-color));
+    font-family: var(--header-font);
+    font-size: var(--title-size);
+    font-weight: var(--brand-weight, 800);
+    letter-spacing: -.015em;
+}
+
+#header h1 a span::after {
+    content: var(--header-subtitle, "AGRONOMICS");
+    color: rgb(var(--header-subtitle-color));
+    font-family: var(--header-font);
+    font-size: var(--subtitle-size);
+    font-weight: var(--division-weight, 400);
+    letter-spacing: -.015em;
+}
+
+#header h1 a::after {
+    grid-area: tagline;
+    content: var(--header-tagline, "");
+    color: rgb(var(--header-tagline-color));
+    font-family: var(--body-font);
+    font-size: var(--tagline-size);
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: normal;
+}
+
+
+
+#top-bar div[class*='top-bar'] > ul > li > a {
+    text-transform: none;
+    font-family: var(--UI-font);
+    font-weight: 700;
+    letter-spacing: -.005em;
+    transition: color .12s ease-out, box-shadow .12s ease-out;
+}
+
+#top-bar div[class*='top-bar'] > ul > li > a:is(:hover, :focus),
+#top-bar div[class*='top-bar'] > ul > li:is(:hover, :focus-within) > a {
+    background-color: transparent;
+    color: rgb(var(--ordo-azure));
+    box-shadow: inset 0 calc(var(--rule-weight) *-1) 0 rgb(var(--ordo-azure));
+}
+
+#top-bar div[class*='top-bar'] ul li ul {
+    border: solid .0625rem rgb(var(--general-border-color));
+    box-shadow: 0 .5rem 1.25rem rgb(var(--shadow-color), .12);
+    box-sizing: border-box;
+}
+
+#top-bar div[class*='top-bar'] ul li ul li a {
+    font-weight: 500;
+}
+
+
+#side-bar {
+    border-right: solid .0625rem rgb(var(--general-border-color));
+}
+
+:is(#side-bar, #interwiki) .heading {
+    font-family: var(--UI-font);
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    font-size: .7rem;
+}
+
+
+#page-title, .meta-title {
+    visibility: var(--abstractor, visible);
+    font-family: var(--display-font);
+    font-weight: 500;
+    font-size: 2.5em;
+    line-height: 1.1;
+    letter-spacing: -.025em;
+    border-bottom: none;
+    margin-bottom: .5rem;
+    padding-bottom: 0;
+}
+
+#page-title::before {
+    content: "";
+    display: block;
+    width: 3.25rem;
+    border-top: solid var(--rule-weight) rgb(var(--title-border-color));
+    margin-bottom: .75rem;
+}
+
+#breadcrumbs, .pseudocrumbs {
+    font-family: var(--UI-font);
+    font-size: .8em;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: rgb(var(--basalt-sub-text-color));
+}
+
+#page-content :is(h1, h2, h3, h4, h5, h6) {
+    font-family: var(--display-font);
+    letter-spacing: -.02em;
+    display: flow-root;
+}
+
+#page-content :is(h1, h2) {
+    font-weight: 500;
+    border-bottom: solid .0625rem rgb(var(--general-border-color));
+    padding-bottom: .25rem;
+}
+
+#page-content :is(h3, h4, h5, h6) {
+    font-weight: 700;
+    border-bottom: none;
+}
+
+#main-content > .page-tags {
+    border-top: solid .0625rem rgb(var(--general-border-color));
+    padding-top: .5rem;
+}
+
+#main-content > .page-tags > span a {
+    border-radius: var(--corner);
+    font-family: var(--UI-font);
+    font-size: .75em;
+    font-weight: 600;
+}
+
+div.page-rate-widget-box, div.rate-box-with-credit-button {
+    border: solid .0625rem rgb(var(--general-border-color));
+    border-radius: var(--corner);
+}
+
+blockquote, div.blockquote {
+    border-width: 0;
+    border-left: solid var(--rule-weight) rgb(var(--active-color, var(--ordo-azure)));
+    border-radius: 0;
+    padding: .75rem 1.25rem;
+}
+
+.image-block, .scp-image-block {
+    border: solid .0625rem rgb(var(--general-border-color));
+    border-radius: var(--corner);
+    padding: .25rem;
+}
+
+:is(.image-block, .scp-image-block) :is(.image-caption, .scp-image-caption) {
+    font-family: var(--UI-font);
+    font-size: .78rem;
+    line-height: 1.4;
+    text-align: left;
+    padding: .5rem;
+    color: rgb(var(--basalt-sub-text-color));
+}
+
+:is(#page-content table:not(.form), table.wiki-content-table) th {
+    background-color: rgb(var(--ordo-navy));
+    color: rgb(var(--on-dark));
+    font-family: var(--UI-font);
+    font-weight: 600;
+    text-align: left;
+    border-color: rgb(var(--ordo-navy));
+}
+
+:is(#page-content table:not(.form), table.wiki-content-table) td {
+    border-color: rgb(var(--general-border-color));
+}
+
+
+#page-content div.yui-navset {
+    --tab-ink: var(--active-color, var(--tab-accent), black);
+    margin: 1.5rem 0;
+    position: relative;
+}
+
+#page-content div.yui-navset > ul.yui-nav {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin: 0 0 -.0625rem;
+    padding: 0;
+    border-top: none !important;
+    background: none;
+    list-style: none;
+}
+
+.yui-navset.yui-navset-top > ul.yui-nav li a em {
+    font-family: var(--UI-font);
+    font-weight: 600;
+    letter-spacing: .01em;
+    text-transform: none;
+}
+
+#page-content div.yui-navset > ul.yui-nav > li {
+    padding: 0;
+    border: none;
+    list-style: none;
+    
+}
+
+#page-content div.yui-navset {
+    --tab-ink: var(--active-color, var(--tab-accent, var(--ordo-navy)));
+}
+
+#page-content div.yui-navset.yui-navset-top>ul.yui-nav li.selected {
+background:inherit;
+}
+
+#page-content div.yui-navset.yui-navset-top>ul.yui-nav li:not(.selected) {
+color: rgb(var(--tab-ink)) ;
+}
+
+#page-content div.yui-navset.yui-navset-top>ul.yui-nav li {
+background: rgb(var(--tab-ink)) ;
+}
+
+#page-content div.yui-navset > ul.yui-nav > li > a:is(:hover, :focus) {
+    text-decoration: underline;
+    text-underline-offset: .25em;
+}
+
+#page-content div.yui-navset > ul.yui-nav > li > a {
+    color: rgb(var(--tab-face));
+    display: block;
+    box-sizing: border-box;
+    margin: 0;
+    padding: var(--tab-pad);
+    background-color: rgb(var(--tab-ink)) ;
+    background-image: none;
+    box-shadow: none;
+    border: solid .0625rem rgb(var(--tab-ink));
+    border-radius: var(--corner) var(--corner) 0 0;
+    text-decoration: none;
+    transition: background-color .12s ease-out, color .12s ease-out;
+}
+#page-content div.yui-navset > ul.yui-nav > li > a em {
+    font-family: var(--UI-font);
+    font-size: .92rem;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: .01em;
+    text-transform: none;
+    border: none;
+}
+
+
+#page-content div.yui-navset.yui-navset-top>ul.yui-nav li.selected a {
+color: rgb(var(--tab-ink)) !important;
+}
+
+#page-content div.yui-navset > ul.yui-nav > li::before,
+#page-content div.yui-navset > ul.yui-nav > li::after,
+#page-content div.yui-navset > ul.yui-nav > li > a::before,
+#page-content div.yui-navset > ul.yui-nav > li > a::after {
+    content: none;
+    display: none;
+}
+
+
+#page-content div.yui-navset > div.yui-content {
+    position: relative;
+    z-index: 0;
+    box-sizing: border-box;
+    padding: clamp(1rem, 3vw, 1.65rem);
+    background-color: rgb(var(--surface));
+    border: solid .0625rem rgb(var(--tab-ink));
+    border-radius: 0 var(--corner) var(--corner) var(--corner);
+    border-top: none !important;
+}
+
+#page-content div.yui-navset > div.yui-content > div > :first-child { margin-top: 0; }
+#page-content div.yui-navset > div.yui-content > div > :last-child { margin-bottom: 0; }
+
+#page-content a.collapsible-block-link {
+    font-family: var(--UI-font);
+    font-weight: 700;
+    text-transform: none;
+}
+
+.yui-navset .yui-nav .selected a, .yui-navset .yui-nav .selected a em { border-bottom: none !important; }
+
+#page-content .tabs-flush div.yui-navset > div.yui-content {
+    padding: 1.1rem 0 0;
+    background: none;
+    border: none;
+}
+
+#page-content .tabs-underline div.yui-navset > ul.yui-nav {
+    border-bottom-color: rgb(var(--general-border-color));
+}
+
+#page-content .tabs-underline div.yui-navset > ul.yui-nav > li > a {
+    background: none;
+    border: none;
+    box-shadow: inset 0 calc(var(--rule-weight) * -1) 0 transparent;
+
+}
+
+#page-content .tabs-underline div.yui-navset > ul.yui-nav > li.selected > a {
+    background: none;
+    box-shadow: inset 0 calc(var(--rule-weight) * -1) 0 rgb(var(--tab-ink));
+
+}
+
+.tabs-small div.yui-navset > ul.yui-nav {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.tabs-small div.yui-navset > ul.yui-nav > li { flex: none; }
+
+@media only screen and (max-width: 40rem) {
+    :root { --tab-pad: .5rem .8rem; }
+    #page-content div.yui-navset > ul.yui-nav > li > a em { font-size: .82rem; }
+}
+
+#page-content .mapview div.yui-navset {
+    display: grid;
+    grid-template-areas: "map" "panel";
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+
+#page-content .mapview div.yui-navset > ul.yui-nav {
+    grid-area: map;
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    aspect-ratio: var(--map-ratio);
+    margin: 0;
+    padding: 0;
+    background-color: rgb(var(--map-mat));
+    background-image: var(--map-image, none);
+    background-size: var(--map-fit);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: var(--corner);
+    overflow: clip;
+    overflow-clip-margin: 2.5rem;
+}
+
+#page-content .mapview div.yui-navset > ul.yui-nav > li {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+#page-content .mapview div.yui-navset > ul.yui-nav > li > a {
+    position: relative;
+    display: block;
+    box-sizing: content-box;
+    width: var(--node-size);
+    height: var(--node-size);
+    padding: 0;
+    background-image: var(--node-icon) !important;
+    border-radius: 50%;
+    transition: transform .18s ease-out, background-color .18s ease-out;
+    background-color:rgb(var(--surface));
+    background-blend-mode: luminosity;
+}
+
+#page-content .mapview div.yui-navset > ul.yui-nav > li > a::before {
+    content: "";
+    position: absolute;
+    inset: calc((2.75rem - var(--node-size)) / -2);
+    border-radius: 50%;
+}
+
+#page-content .mapview div.yui-navset > ul.yui-nav > li > a:hover,
+#page-content .mapview div.yui-navset > ul.yui-nav > li > a:focus {
+    transform: scale(1.2);
+
+}
+
+#page-content .mapview div.yui-navset > ul.yui-nav > li.selected > a {
+    background-color: rgb(var(--active-color, var(--ordo-void))) !important;
+    border-color: rgb(var(--node-color));
+    transform: scale(1.45);
+}
+
+#page-content .mapview div.yui-navset > ul.yui-nav > li > a em {
+    position: absolute;
+    width: .0625rem;
+    height: .0625rem;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+#page-content .mapview.labelled div.yui-navset > ul.yui-nav > li > a em {
+    position: absolute;
+    left: 50%;
+    top: calc(100% + .45rem);
+    width: auto;
+    height: auto;
+    clip-path: none;
+    transform: translateX(-50%);
+    font-family: var(--UI-font);
+    font-size: .62rem;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: rgb(var(--on-dark));
+    text-shadow: 0 .0625rem .1875rem rgb(var(--ordo-void), .85);
+    pointer-events: none;
+    overflow: visible;
+    z-index: 2;
+}
+
+#page-content .mapview div.yui-navset > ul.yui-nav > li:nth-child(1) { left: var(--x1, 50%);  top: var(--y1, 50%); }
+#page-content .mapview div.yui-navset > ul.yui-nav > li:nth-child(2) { left: var(--x2, 50%); top: var(--y2, 50%); }
+#page-content .mapview div.yui-navset > ul.yui-nav > li:nth-child(3) { left: var(--x3, 50%); top: var(--y3, 50%); }
+#page-content .mapview div.yui-navset > ul.yui-nav > li:nth-child(4) { left: var(--x4, 50%); top: var(--y4, 50%); }
+#page-content .mapview div.yui-navset > ul.yui-nav > li:nth-child(5) { left: var(--x5, 50%); top: var(--y5, 50%); }
+#page-content .mapview div.yui-navset > ul.yui-nav > li:nth-child(6) { left: var(--x6, 50%); top: var(--y6, 50%); }
+#page-content .mapview div.yui-navset > ul.yui-nav > li:nth-child(7) { left: var(--x7, 50%); top: var(--y7, 50%); }
+#page-content .mapview div.yui-navset > ul.yui-nav > li:nth-child(8) { left: var(--x8, 50%); top: var(--y8, 50%); }
+#page-content .mapview div.yui-navset > ul.yui-nav > li:nth-child(9) { left: var(--x9, 50%); top: var(--y9, 50%); }
+#page-content .mapview div.yui-navset > ul.yui-nav > li:nth-child(10) { left: var(--x10, 50%); top: var(--y10, 50%); }
+#page-content .mapview div.yui-navset > ul.yui-nav > li:nth-child(11) { left: var(--x11, 50%); top: var(--y11, 50%); }
+#page-content .mapview div.yui-navset > ul.yui-nav > li:nth-child(12) { left: var(--x12, 50%); top: var(--y12, 50%); }
+
+#page-content .mapview div.yui-navset > div.yui-content {
+    grid-area: panel;
+    padding: 1rem 0 0;
+    background: none;
+    border: none;
+    border-top: solid var(--rule-weight) rgb(var(--active-color, var(--ordo-azure)));
+}
+
+
+#page-content .mapview.panelled div.yui-navset > div.yui-content {
+    padding: 1.15rem 1.25rem !important;
+    background-color: rgb(var(--surface)) !important;
+    border: solid .0625rem rgb(var(--general-border-color)) !important;
+    border-top: solid var(--rule-weight) rgb(var(--active-color, var(--ordo-azure))) !important;
+}
+
+@media only screen and (min-width: 48rem) {
+    #page-content .mapview div.yui-navset {
+        grid-template-areas: "panel map";
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1.7fr);
+        gap: clamp(1rem, 3vw, 2.25rem);
+        align-items: start;
+    }
+    #page-content .mapview.map-left div.yui-navset {
+        grid-template-areas: "map panel";
+        grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr);
+    }
+    #page-content .mapview.wide div.yui-navset {
+        grid-template-areas: "map" "panel";
+        grid-template-columns: 1fr;
+    }
+}
+
+.metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--stat-min, 8.5rem), 1fr));
+    gap: .65rem;
+    margin: 1.5rem 0;
+}
+
+#page-content .metrics > div {
+    box-sizing: border-box;
+    padding: .85rem 1rem;
+    background-color: rgb(var(--surface));
+    border: solid .0625rem rgb(var(--general-border-color));
+    border-left: solid var(--rule-weight) rgb(var(--active-color, var(--ordo-azure)));
+    border-radius: var(--corner);
+}
+
+#page-content .metrics > div .figure { font-size: clamp(1.5rem, 5vw, 2.25rem); }
+
+
+.label {
+    display: block;
+    margin-top: .2rem;
+    font-family: var(--UI-font);
+    font-size: .66rem;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: rgb(var(--ink-soft));
+}
+
+.pipeline {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--stage-min, 7.5rem), 1fr));
+    gap: .3rem;
+    margin: 1.5rem 0;
+    counter-reset: stage;
+}
+
+#page-content .pipeline > div {
+    box-sizing: border-box;
+    padding: .65rem .8rem .7rem;
+    background-color: rgb(var(--surface-alt));
+    border-top: solid var(--rule-weight) rgb(var(--general-border-color));
+    border-radius: var(--corner);
+    font-family: var(--UI-font);
+    font-size: .8rem;
+    line-height: 1.25;
+}
+
+#page-content .pipeline > div::before {
+    counter-increment: stage;
+    content: counter(stage, decimal-leading-zero);
+    display: block;
+    margin-bottom: .2rem;
+    font-family: var(--mono-font);
+    font-size: .62rem;
+    letter-spacing: .1em;
+    color: rgb(var(--ink-soft));
+}
+
+#page-content .pipeline > div.done {
+    border-top-color: rgb(var(--active-color, var(--ordo-leaf)));
+    opacity: .72;
+}
+
+#page-content .pipeline > div.now {
+    background-color: rgb(var(--active-color, var(--ordo-azure)));
+    border-top-color: rgb(var(--active-color, var(--ordo-azure)));
+    color: rgb(var(--on-dark));
+    font-weight: 700;
+}
+#page-content .pipeline > div.now::before { color: inherit; opacity: .75; }
+
+#page-content .pipeline > div.halted {
+    border-top-color: rgb(var(--ordo-hazard));
+    color: rgb(var(--ordo-hazard));
+}
+
+.updates {
+    margin: 1.5rem 0;
+    padding-left: 1.15rem;
+    border-left: solid .0625rem rgb(var(--general-border-color));
+}
+
+#page-content .updates > div {
+    position: relative;
+    padding-bottom: 1.1rem;
+}
+#page-content .updates > div:last-child { padding-bottom: 0; }
+
+#page-content .updates > div::before {
+    content: "";
+    position: absolute;
+    left: -1.475rem;
+    top: .5rem;
+    width: .5rem;
+    height: .5rem;
+    background-color: rgb(var(--active-color, var(--ordo-hazard)));
+    border-radius: 50%;
+    box-shadow: 0 0 0 .2rem rgb(var(--basalt-background-color));
+}
+
+.date {
+    display: block;
+    font-family: var(--mono-font);
+    font-size: .7rem;
+    font-weight: 600;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: rgb(var(--active-color, var(--ordo-hazard)));
+}
+
+#page-content div.notice {
+    box-sizing: border-box;
+    margin: 1.25rem 0;
+    padding: .8rem 1rem;
+    background-color: rgb(var(--active-color, var(--ordo-amber)), .1);
+    border-left: solid var(--rule-weight) rgb(var(--active-color, var(--ordo-amber)));
+    border-radius: var(--corner);
+    font-size: .94em;
+}
+
+#page-content div.notice::before {
+    content: var(--notice-word, "NOTICE");
+    display: block;
+    margin-bottom: .25rem;
+    font-family: var(--UI-font);
+    font-size: .66rem;
+    font-weight: 700;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: rgb(var(--active-color, var(--ordo-amber)));
+}
+
+#page-content div.notice > :last-child { margin-bottom: 0; }
+
+.tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--tile-min, 13rem), 1fr));
+    gap: .7rem;
+    margin: 1.5rem 0;
+}
+
+#page-content .tiles > div {
+    position: relative;
+    box-sizing: border-box;
+    padding: 1rem 1.1rem 2.4rem;
+    background-color: rgb(var(--surface));
+    border: solid .0625rem rgb(var(--general-border-color));
+    border-radius: var(--corner);
+    transition: box-shadow .15s ease-out, border-color .15s ease-out;
+}
+
+#page-content .tiles > div h1,
+#page-content .tiles > div h2,
+#page-content .tiles > div h3,
+#page-content .tiles > div h4,
+#page-content .tiles > div h5,
+#page-content .tiles > div h6 {
+    margin-top: 0;
+    font-size: 1.05em;
+    border-bottom: none;
+}
+
+#page-content .tiles > div::after {
+    content: "\2192";
+    position: absolute;
+    right: 1.1rem;
+    bottom: .8rem;
+    color: rgb(var(--active-color, var(--ordo-azure)));
+    font-size: 1.1rem;
+    transition: transform .15s ease-out;
+}
+
+#page-content .tiles > div:hover,
+#page-content .tiles > div:focus-within {
+    border-color: rgb(var(--active-color, var(--ordo-azure)));
+    box-shadow: 0 .4rem 1.25rem rgb(var(--shadow-color), .12);
+}
+
+#page-content .tiles > div:hover::after,
+#page-content .tiles > div:focus-within::after { transform: translateX(.25rem); }
+
+.ticker.scroll {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#page-content .ticker.scroll p {
+    display: inline-block;
+    margin: 0;
+    padding-left: 100%;
+    animation: ordo-crawl calc(var(--ticker-speed) * 1s) linear infinite;
+}
+
+#page-content .ticker.scroll br { display: none; }
+#page-content .ticker.scroll span { margin-right: 1.75rem; }
+
+@keyframes ordo-crawl {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-100%); }
+}
+
+.tape {
+    height: var(--tape-height, .6rem);
+    margin: 1.35rem 0;
+    background: repeating-linear-gradient(135deg,
+        rgb(var(--active-color, var(--ordo-hazard))) 0 .55rem,
+        transparent .55rem 1.1rem);
+}
+
+.tape.thick { --tape-height: 1.1rem; }
+
+
+.badge {
+    display: inline-block;
+    padding: .1rem .5rem;
+    background-color: rgb(var(--active-color, var(--ordo-navy)));
+    border-radius: var(--corner);
+    color: rgb(var(--on-dark));
+    font-family: var(--UI-font);
+    font-size: .64rem;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    vertical-align: .1em;
+}
+.badge.hollow {
+    background: none;
+    border: solid .0625rem rgb(var(--active-color, var(--ordo-navy)));
+    color: rgb(var(--active-color, var(--ordo-navy)));
+}
+
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+.counter-element {
+  
+  animation: countUp var(--counterTime, 5s) forwards ease-out;
+  counter-reset: score var(--num);
+}
+
+.counter-element::before {
+  content: counter(score);
+}
+
+@keyframes countUp {
+  from {
+    --num: var(--from.);
+  }
+  to {
+    --num: var(--to);
+  }
+}
+
+
+/*------- Default Corpo Webpage Elements -------*/
+
+
+.hero, .factsheet, .ticker { --active-color: var(--ordo-navy); }
+.band { --active-color: var(--ordo-mist); }
+.pane, .pullquote, .sidebox, .growth-track { --active-color: var(--ordo-azure); }
+.product_label { --active-color: var(--ordo-leaf); }
+.hero, .pane.filled { --cta-ink: var(--on-dark); --cta-on: var(--active-color); }
+
+
+.hero {
+    position: relative;
+    box-sizing: border-box;
+    margin: 1.5rem auto 2rem;
+    padding: clamp(1.5rem, 4vw, 3.25rem);
+    background-color: rgb(var(--active-color));
+    background-image: var(--hero-image, none);
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--corner);
+    color: rgb(var(--on-dark));
+    overflow: hidden;
+}
+
+#page-content div.hero :is(h1, h2, h3, h4, h5, h6) {
+    color: inherit;
+    border-bottom: none;
+}
+
+#page-content div.hero a:any-link {
+    color: inherit;
+}
+
+.hero.tint::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgb(var(--active-color), .78);
+    z-index: 0;
+}
+
+.hero.tint > * { position: relative; z-index: 1; }
+
+.hero.crest::after {
+    content: "";
+    position: absolute;
+    right: -4rem;
+    bottom: -6rem;
+    width: 22rem;
+    height: 22rem;
+    background-image: var(--watermark);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: .05;
+    pointer-events: none;
+}
+
+
+.eyebrow {
+    display: block;
+    font-family: var(--UI-font);
+    font-size: .7rem;
+    font-weight: 700;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: rgb(var(--active-color, var(--ordo-azure)));
+    margin-bottom: .65rem;
+}
+
+.hero .eyebrow, .band .eyebrow { color: inherit; }
+
+.headline {
+    display: block;
+    font-family: var(--display-font);
+    font-weight: 400;
+    font-size: clamp(1.75rem, 4.25vw, 3rem);
+    line-height: 1.06;
+    letter-spacing: -.03em;
+    margin: 0 0 .85rem;
+    text-wrap: balance;
+}
+
+.headline.heavy { font-weight: 700; }
+
+.lede {
+    display: block;
+    font-size: 1.1em;
+    line-height: 1.55;
+    max-width: 46rem;
+    margin-bottom: 1rem;
+}
+
+.smallprint {
+    display: block;
+    font-family: var(--mono-font);
+    font-size: .7rem;
+    line-height: 1.5;
+    color: rgb(var(--basalt-sub-text-color));
+    letter-spacing: -.01em;
+}
+
+.figure {
+    display: block;
+    font-family: var(--display-font);
+    font-size: clamp(2rem, 5vw, 3.25rem);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -.04em;
+    color: rgb(var(--active-color, var(--ordo-azure)));
+}
+
+.cta a:any-link, a.cta {
+    display: inline-block;
+    font-family: var(--UI-font);
+    font-weight: 700;
+    text-decoration: none !important;
+    text-transform: none;
+    padding: .55rem 1.4rem;
+    margin: .25rem .35rem .25rem 0;
+    color: rgb(var(--cta-ink, var(--ordo-navy)));
+    border: solid .125rem rgb(var(--cta-ink, var(--ordo-navy)));
+    border-radius: var(--corner);
+    transition: background-color .12s ease-out, color .12s ease-out;
+}
+
+.cta a:any-link:is(:hover, :focus), a.cta:is(:hover, :focus) {
+    background-color: rgb(var(--cta-ink, var(--ordo-navy)));
+    color: rgb(var(--cta-on, var(--surface))) !important;
+}
+
+.cta.solid a:any-link {
+    background-color: rgb(var(--cta-ink, var(--ordo-navy)));
+    border-color: rgb(var(--cta-ink, var(--ordo-navy)));
+    color: rgb(var(--cta-on, var(--surface)));
+}
+
+.cta.solid a:any-link:is(:hover, :focus) {
+    filter: brightness(.88);
+}
+
+
+.band {
+    box-sizing: border-box;
+    color: rgb(var(--on-dark));
+    margin: 1.5rem auto;
+    padding: var(--band-pad) clamp(1rem, 3vw, 2.25rem);
+    background-color: rgb(var(--active-color));
+    border-radius: var(--corner);
+}
+
+#page-content div.band:not(.rule) :is(a:any-link, h1, h2, h3, h4, h5, h6) {
+    color: inherit;
+}
+
+.band.rule {
+    color: inherit;
+    background-color: transparent;
+    border-top: solid var(--rule-weight) rgb(var(--active-color));
+    padding-top: 1.25rem;
+    padding-bottom: 0;
+}
+
+
+.panes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--pane-min), 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+    align-items: stretch;
+}
+
+.panes.duo { --pane-min: 20rem; }
+.panes.quad { --pane-min: 11rem; }
+
+#page-content div.pane {
+    box-sizing: border-box;
+    padding: 1.15rem 1.35rem 1.35rem;
+    background-color: rgb(var(--surface));
+    border: solid .0625rem rgb(var(--general-border-color));
+    border-top: solid var(--rule-weight) rgb(var(--active-color));
+    border-radius: var(--corner);
+    transition: box-shadow .15s ease-out, transform .15s ease-out;
+}
+
+#page-content div.pane:is(:hover, :focus-within) {
+    box-shadow: 0 .5rem 1.5rem rgb(var(--shadow-color), .13);
+    transform: translateY(-.15rem);
+}
+
+#page-content div.pane :is(h1, h2, h3, h4, h5, h6) {
+    margin-top: 0;
+    border-bottom: none;
+    font-size: 1.15em;
+}
+
+#page-content div.pane.filled {
+    background-color: rgb(var(--active-color));
+    border-color: rgb(var(--active-color));
+    color: rgb(var(--on-dark));
+}
+
+#page-content div.pane.filled :is(a:any-link, h1, h2, h3, h4, h5, h6) { color: inherit; }
+
+.s-title {
+    font-size: 1.15em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0.4rem 0;
+    letter-spacing: 0.09rem;
+}
+.pullquote {
+    box-sizing: border-box;
+    margin: 1.75rem auto;
+    padding: .25rem 0 .25rem 1.5rem;
+    border-left: solid var(--rule-weight) rgb(var(--active-color));
+    font-family: var(--display-font);
+    font-size: 1.4em;
+    font-weight: 300;
+    line-height: 1.3;
+    letter-spacing: -.02em;
+    max-width: 48rem;
+}
+
+.attrib {
+    display: block;
+    margin-top: .75rem;
+    font-family: var(--UI-font);
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: rgb(var(--basalt-sub-text-color));
+}
+
+
+.split {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    gap: clamp(1rem, 3vw, 2.5rem);
+    align-items: start;
+    margin: 1.5rem 0;
+}
+
+.split.weighted { grid-template-columns: 1.6fr 1fr; }
+
+@media only screen and (max-width: 46rem) {
+    .split.weighted { grid-template-columns: 1fr; }
+}
+
+/*------- Sidebox -------*/
+
+.sidebox {
+    float: right;
+    clear: right;
+    width: 17.5rem;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: .5rem 0 1rem 1.5rem;
+    padding: .875rem 1rem;
+    background-color: rgb(var(--surface-alt));
+    border-top: solid var(--rule-weight) rgb(var(--active-color));
+    border-radius: var(--corner);
+    font-size: .875em;
+    line-height: 1.5;
+}
+
+.sidebox.left { float: left; clear: left; margin: .5rem 1.5rem 1rem 0; }
+
+.sidebox table { width: 100%; margin: 0; }
+
+.sidebox table td {
+    border: none;
+    border-bottom: solid .0625rem rgb(var(--general-border-color));
+    padding: .3em .2em;
+    background-color: transparent;
+}
+
+@media only screen and (max-width: 36rem) {
+    .sidebox, .sidebox.left { float: none; margin-inline: auto; width: 100%; }
+}
+
+/*-------Bayer JUMBOTRON Recreation-------*/
+
+.jumbo {
+    --cta-ink: var(--on-dark);
+    --cta-on: var(--jumbo-mat);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: var(--jumbo-align, flex-end);
+    box-sizing: border-box;
+    width: 100%;
+    min-height: var(--jumbo-height);
+    margin: 1.5rem auto 2rem;
+    padding: clamp(1.1rem, 3.5vw, 3rem);
+    background-color: rgb(var(--jumbo-mat));
+    background-image: var(--jumbo-image, none);
+    background-size: var(--jumbo-fit);
+    background-position: var(--jumbo-focus);
+    background-repeat: no-repeat;
+    border-radius: var(--corner);
+    color: rgb(var(--on-dark));
+    overflow: hidden;
+}
+
+#page-content div.jumbo h1,
+#page-content div.jumbo h2,
+#page-content div.jumbo h3,
+#page-content div.jumbo h4,
+#page-content div.jumbo h5,
+#page-content div.jumbo h6,
+#page-content div.jumbo a:any-link,
+#page-content div.jumbo .eyebrow,
+#page-content div.jumbo .lede {
+    color: inherit;
+    border-bottom: none;
+}
+
+.jumbo.ratio { min-height: 0; aspect-ratio: var(--jumbo-ratio, 21 / 9); }
+.jumbo.short { --jumbo-height: clamp(7rem, 20vw, 15rem); }
+.jumbo.tall { --jumbo-height: clamp(15rem, 55vw, 40rem); }
+
+.jumbo.contain {
+    --jumbo-fit: contain;
+    --cta-ink: var(--ordo-navy);
+    --cta-on: var(--jumbo-mat);
+    padding-block: clamp(.6rem, 2vw, 1.4rem);
+    color: rgb(var(--ink));
+}
+
+.jumbo.top { --jumbo-align: flex-start; }
+.jumbo.middle { --jumbo-align: center; }
+.jumbo.centered { text-align: center; align-items: center; }
+
+.jumbo.tint::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top,
+        rgb(var(--active-color, var(--ordo-navy)), var(--tint-strength, .82)) 0%,
+        rgb(var(--active-color, var(--ordo-navy)), 0) 78%);
+}
+.jumbo.tint > * { position: relative; }
+
+.jumbo.rule { border-bottom: solid var(--rule-weight) rgb(var(--active-color, var(--ordo-leaf))); }
+
+#page-content .bleed:is(.hero, .jumbo, .band) {
+    width: 100vw;
+    max-width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    border-radius: 0;
+}
+
+
+.jumbo.crest::after {
+    content: "";
+    position: absolute;
+    right: -3rem;
+    bottom: -5rem;
+    width: 20rem;
+    height: 20rem;
+    background-image: var(--watermark);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: .06;
+    pointer-events: none;
+}
+
+
+.factsheet {
+    margin: 1.5rem 0;
+    border-top: solid var(--rule-weight) rgb(var(--active-color));
+}
+
+.factsheet table { width: 100%; margin: 0; }
+
+.factsheet table :is(td, th) {
+    border: none;
+    border-bottom: solid .0625rem rgb(var(--general-border-color));
+    padding: .55em .65em;
+    background-color: transparent;
+    color: inherit;
+}
+
+.factsheet table th {
+    font-family: var(--UI-font);
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: rgb(var(--basalt-sub-text-color));
+    background-color: transparent;
+    width: 34%;
+}
+
+
+
+.ticker {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 1.75rem;
+    box-sizing: border-box;
+    margin: 1rem 0;
+    padding: .55rem .9rem;
+    background-color: rgb(var(--active-color));
+    color: rgb(var(--on-dark));
+    border-radius: var(--corner);
+    font-family: var(--mono-font);
+    font-size: .8rem;
+    font-weight: 500;
+    letter-spacing: .02em;
+    overflow: hidden;
+}
+
+.ticker .up::before { content: "\25B2\00A0"; color: rgb(var(--ordo-sprout)); }
+.ticker .down::before { content: "\25BC\00A0"; color: rgb(var(--ordo-hazard)); }
+.ticker .flat::before { content: "\2014\00A0 "; color: rgb(var(--ordo-slate)); }
+
+
+.growth-wrap { position: relative; margin: .75rem 0; }
+
+.growth-track {
+    width: 100%;
+    height: var(--track-height);
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: rgb(var(--active-color), .15);
+    border-radius: var(--corner);
+}
+
+
+div.memo, div.custom_memo, div.compliance_memo, div.legal_memo {
+    --active-color: var(--custom-color);
+    --memo-heading: var(--custom-header, "Internal Communication");
+    --memo-logo: var(--custom-logo);
+    box-sizing: border-box;
+    margin: 1.75rem auto;
+    padding: 0 0 1.1rem;
+    background-color: rgb(var(--on-dark));
+    border: solid .0625rem rgb(var(--general-border-color));
+    border-top: solid var(--rule-weight) rgb(var(--active-color));
+    border-radius: var(--corner);
+    box-shadow: 0 .35rem 1.25rem rgb(var(--shadow-color), .08);
+}
+
+div.memo::before, div.custom_memo::before, div.compliance_memo::before, div.legal_memo::before {
+    content: var(--memo-heading);
+    display: flex;
+    align-items: center;
+    gap: .55rem;
+    box-sizing: border-box;
+    padding: .7rem 1.1rem;
+    margin-bottom: .9rem;
+    background-color: rgb(var(--active-color), .08);
+    border-bottom: solid .0625rem rgb(var(--general-border-color));
+    background-image: var(--memo-logo);
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1.5rem;
+    font-family: var(--UI-font);
+    font-size: .78rem;
+    font-weight: 700;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: rgb(var(--active-color));
+}
+
+div.memo > *, div.custom_memo > *, div.compliance_memo > *, div.legal_memo > * {
+    margin-left: 1.1rem;
+    margin-right: 1.1rem;
+}
+
+div.memo {
+    --custom-header: "Ordopharm Agronomics - Internal Memorandum";
+    --custom-color: var(--ordo-navy);
+}
+
+div.compliance_memo {
+    --custom-header: "Regulatory & Compliance Notice";
+    --custom-color: var(--ordo-amber);
+}
+
+div.legal_memo {
+    --custom-header: "Office of the General Counsel - Privileged";
+    --custom-color: var(--ordo-hazard);
+    font-family: var(--mono-font);
+    font-size: .82rem;
+}
+
+
+
+.stamped { position: relative; overflow: hidden; }
+
+.stamped::after {
+    content: var(--stamp-text, "CONFIDENTIAL");
+    position: absolute;
+    top: 1.75rem;
+    right: -3.25rem;
+    width: 14rem;
+    text-align: center;
+    transform: rotate(38deg);
+    background-color: rgb(var(--ordo-hazard), .9);
+    color: rgb(var(--on-dark));
+    font-family: var(--UI-font);
+    font-size: .68rem;
+    font-weight: 700;
+    letter-spacing: .18em;
+    padding: .2rem 0;
+    pointer-events: none;
+}
+
+
+.product_label {
+    --signal-word: "CAUTION";
+    box-sizing: border-box;
+    max-width: 30rem;
+    margin: 1.5rem auto;
+    padding: 0 0 1rem;
+    background-color: rgb(var(--on-dark));
+    border: solid .1875rem rgb(var(--active-color));
+    border-radius: var(--corner);
+    color: rgb(var(--ink));
+    text-align: center;
+}
+
+.product_label::before {
+    content: var(--signal-word);
+    display: block;
+    padding: .45rem;
+    margin-bottom: .9rem;
+    background-color: rgb(var(--active-color));
+    color: rgb(var(--on-dark));
+    font-family: var(--UI-font);
+    font-size: .95rem;
+    font-weight: 800;
+    letter-spacing: .3em;
+}
+
+.product_label > * { margin-left: 1rem; margin-right: 1rem; }
+
+.product_label::after {
+    content: "";
+    display: block;
+    height: .55rem;
+    margin: 1rem 1rem -1rem;
+    background: repeating-linear-gradient(135deg, rgb(var(--active-color)) 0 .5rem, transparent .5rem 1rem);
+}
+
+
+
+.redact {
+    background-color: rgb(var(--ink));
+    color: rgb(var(--ink));
+    padding: 0 .15em;
+    user-select: none;
+}
+
+.redact:is(:hover, :focus) { color: rgb(var(--surface)); }
+
+#page-content div:is(.tiny) { max-width: 16rem; }
+#page-content div:is(.medium) { max-width: 28rem; }
+#page-content div:is(.large) { max-width: 46rem; }
+#page-content div:is(.full) { max-width: 100%; }
+div.center { margin: 1.5rem auto; }
+div.left { float: left; margin-right: 1.5rem; clear: left; }
+div.right { float: right; margin-left: 1.5rem; clear: right; }
+div.align-l { text-align: left; }
+div.align-r { text-align: right; }
+div.align-c { text-align: center; }
+
+.flattened { box-shadow: none; }
+
+.raised { box-shadow: 0 .5rem 1.75rem rgb(var(--shadow-color), .14); }
+
+.round { --corner: .375rem; border-radius: .375rem; }
+
+.opaque { background-color: rgb(var(--active-color)); color: rgb(var(--on-dark)); }
+
+.gridlines {
+    background-image:
+        linear-gradient(rgb(var(--ordo-line), .55) .0625rem, transparent .0625rem),
+        linear-gradient(90deg, rgb(var(--ordo-line), .55) .0625rem, transparent .0625rem);
+    background-size: 2rem 2rem;
+}
+
+.mono { font-family: var(--mono-font); }
+.ui { font-family: var(--UI-font); }
+.display { font-family: var(--display-font); letter-spacing: -.02em; }
+.caps { text-transform: uppercase; letter-spacing: .14em; }
+.tight { line-height: 1.15; }
+
+.inkcolor { color: rgb(var(--active-color, var(--ordo-azure))); font-weight: 600; }
+
+/*---- Animations & Keyframes ----*/
+
+.fade-in1 { opacity: 0; animation: ordo-in calc(1s * var(--scale1)) ease-out calc(1s * var(--delay1)) var(--loop1) forwards; }
+.fade-in2 { opacity: 0; animation: ordo-in calc(1s * var(--scale2)) ease-out calc(1s * var(--delay2)) var(--loop2) forwards; }
+.fade-in3 { opacity: 0; animation: ordo-in calc(1s * var(--scale3)) ease-out calc(1s * var(--delay3)) var(--loop3) forwards; }
+.fade-out1 { opacity: 1; animation: ordo-out calc(1s * var(--scale1)) ease-out calc(1s * var(--delay1)) var(--loop1) forwards; }
+.fade-out2 { opacity: 1; animation: ordo-out calc(1s * var(--scale2)) ease-out calc(1s * var(--delay2)) var(--loop2) forwards; }
+.fade-out3 { opacity: 1; animation: ordo-out calc(1s * var(--scale3)) ease-out calc(1s * var(--delay3)) var(--loop3) forwards; }
+
+.rise1 { opacity: 0; animation: ordo-rise calc(1s * var(--scale1)) ease-out calc(1s * var(--delay1)) 1 forwards; }
+.rise2 { opacity: 0; animation: ordo-rise calc(1s * var(--scale2)) ease-out calc(1s * var(--delay2)) 1 forwards; }
+.rise3 { opacity: 0; animation: ordo-rise calc(1s * var(--scale3)) ease-out calc(1s * var(--delay3)) 1 forwards; }
+
+.pulse { animation: ordo-pulse calc(1s * var(--scale1)) ease-in-out infinite alternate; }
+
+.growth-fill {
+    height: 100%;
+    width: 0%;
+    background-color: rgb(var(--active-color, var(--ordo-azure)));
+    animation: ordo-fill calc(var(--fill-time) *1s) ease-in-out forwards;
+}
+
+#page-content .mapview div.yui-content > div {
+    animation: ordo-in calc(var(--reveal-time) * 1s) var(--reveal-ease)
+               calc(var(--reveal-delay) * 1s) 1 both;
+}
+
+#page-content .mapview.reveal-rise  div.yui-content > div { animation-name: ordo-rise; }
+#page-content .mapview.reveal-wipe  div.yui-content > div { animation-name: ordo-wipe; }
+#page-content .mapview.reveal-slide div.yui-content > div { animation-name: ordo-slide; }
+#page-content .mapview.reveal-none  div.yui-content > div { animation: none; }
+
+#page-content .mapview.reveal-pulse div.yui-content > div { animation-name: ordo-flash; }
+
+@keyframes ordo-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes ordo-out { from { opacity: 1; } to { opacity: 0; } }
+@keyframes ordo-rise {
+    from { opacity: 0; transform: translateY(1.25rem); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes ordo-pulse { from { opacity: 1; } to { opacity: .35; } }
+@keyframes ordo-fill {
+    from { width: 0%; }
+    to { width: var(--fill-to, 100%); }
+}
+@keyframes ordo-wipe {
+    from { opacity: 0; clip-path: inset(0 100% 0 0); }
+    to { opacity: 1; clip-path: inset(0 0 0 0); }
+}
+@keyframes ordo-slide {
+    from { opacity: 0; transform: translateX(-1.25rem); }
+    to { opacity: 1; transform: translateX(0); }
+}
+@keyframes ordo-flash {
+    0% { opacity: 0; }
+    45% { opacity: 1; }
+    70% { opacity: .5; }
+    100% { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .pulse, .rise1, .rise2, .rise3, .growth-fill {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+    .growth-fill { width: var(--fill-to, 100%); }
+    #page-content div.pane:is(:hover, :focus-within) { transform: none; }
+
+    #page-content .mapview div.yui-content > div,
+    .ticker.scroll > span {
+        animation: none !important;
+        opacity: 1 !important;
+    }
+    .ticker.scroll > span { transform: none !important; }
+    #page-content .mapview div.yui-navset > ul.yui-nav > li > a { transition: none; }
+
+}
+
+@media print {
+    .jumbo { background-image: none !important; color: rgb(var(--ink)) !important; }
+    .ticker.scroll > span { animation: none; transform: none; }
+    #page-content .mapview div.yui-navset > ul.yui-nav { display: none; }
+}
+
+
+.frost { --active-color: var(--ordo-frost); }
+.mist { --active-color: var(--ordo-mist); }
+.line { --active-color: var(--ordo-line); }
+.slate { --active-color: var(--ordo-slate); }
+.graphite { --active-color: var(--ordo-graphite); }
+.navy { --active-color: var(--ordo-navy); }
+.azure { --active-color: var(--ordo-azure); }
+.sky { --active-color: var(--ordo-sky); }
+.teal { --active-color: var(--ordo-teal); }
+.sprout { --active-color: var(--ordo-sprout); }
+.leaf { --active-color: var(--ordo-leaf); }
+.moss { --active-color: var(--ordo-moss); }
+.wheat { --active-color: var(--ordo-wheat); }
+.amber { --active-color: var(--ordo-amber); }
+.rust { --active-color: var(--ordo-rust); }
+.loam { --active-color: var(--ordo-loam); }
+.bloom { --active-color: var(--ordo-bloom); }
+.hazard { --active-color: var(--ordo-hazard); }
+.void { --active-color: var(--ordo-void); }
+
+.frost2 { --active-color: var(--ordo2-frost); }
+.mist2 { --active-color: var(--ordo2-mist); }
+.line2 { --active-color: var(--ordo2-line); }
+.slate2 { --active-color: var(--ordo2-slate); }
+.graphite2 { --active-color: var(--ordo2-graphite); }
+.navy2 { --active-color: var(--ordo2-navy); }
+.azure2 { --active-color: var(--ordo2-azure); }
+.sky2 { --active-color: var(--ordo2-sky); }
+.teal2 { --active-color: var(--ordo2-teal); }
+.sprout2 { --active-color: var(--ordo2-sprout); }
+.leaf2 { --active-color: var(--ordo2-leaf); }
+.moss2 { --active-color: var(--ordo2-moss); }
+.wheat2 { --active-color: var(--ordo2-wheat); }
+.amber2 { --active-color: var(--ordo2-amber); }
+.rust2 { --active-color: var(--ordo2-rust); }
+.loam2 { --active-color: var(--ordo2-loam); }
+.bloom2 { --active-color: var(--ordo2-bloom); }
+.hazard2 { --active-color: var(--ordo2-hazard); }
+.void2 { --active-color: var(--ordo2-void); }
+
+.frost3 { --active-color: var(--ordo3-frost); }
+.mist3 { --active-color: var(--ordo3-mist); }
+.line3 { --active-color: var(--ordo3-line); }
+.slate3 { --active-color: var(--ordo3-slate); }
+.graphite3 { --active-color: var(--ordo3-graphite); }
+.navy3 { --active-color: var(--ordo3-navy); }
+.azure3 { --active-color: var(--ordo3-azure); }
+.sky3 { --active-color: var(--ordo3-sky); }
+.teal3 { --active-color: var(--ordo3-teal); }
+.sprout3 { --active-color: var(--ordo3-sprout); }
+.leaf3 { --active-color: var(--ordo3-leaf); }
+.moss3 { --active-color: var(--ordo3-moss); }
+.wheat3 { --active-color: var(--ordo3-wheat); }
+.amber3 { --active-color: var(--ordo3-amber); }
+.rust3 { --active-color: var(--ordo3-rust); }
+.loam3 { --active-color: var(--ordo3-loam); }
+.bloom3 { --active-color: var(--ordo3-bloom); }
+.hazard3 { --active-color: var(--ordo3-hazard); }
+.void3 { --active-color: var(--ordo3-void); }
+
+.frost4 { --active-color: var(--ordo4-frost); }
+.mist4 { --active-color: var(--ordo4-mist); }
+.line4 { --active-color: var(--ordo4-line); }
+.slate4 { --active-color: var(--ordo4-slate); }
+.graphite4 { --active-color: var(--ordo4-graphite); }
+.navy4 { --active-color: var(--ordo4-navy); }
+.azure4 { --active-color: var(--ordo4-azure); }
+.sky4 { --active-color: var(--ordo4-sky); }
+.teal4 { --active-color: var(--ordo4-teal); }
+.sprout4 { --active-color: var(--ordo4-sprout); }
+.leaf4 { --active-color: var(--ordo4-leaf); }
+.moss4 { --active-color: var(--ordo4-moss); }
+.wheat4 { --active-color: var(--ordo4-wheat); }
+.amber4 { --active-color: var(--ordo4-amber); }
+.rust4 { --active-color: var(--ordo4-rust); }
+.loam4 { --active-color: var(--ordo4-loam); }
+.bloom4 { --active-color: var(--ordo4-bloom);}
+.hazard4 { --active-color: var(--ordo4-hazard);}
+.void4 { --active-color: var(--ordo4-void);}
+
+
+#page-content div:is(.hero, .band, .pane.filled, .ticker, .opaque):is(.frost, .mist, .line, .sprout, .wheat, .amber, .frost2, .mist3, .frost3, .frost4), div.yui-navset > ul.yui-nav > li > a:is(.frost, .mist, .line, .sprout, .wheat, .amber, .frost2, .mist3, .frost3, .frost4) {
+    color: rgb(var(--ink));
+}
+
+
+@media only screen and (max-width: 40rem) {
+    :root {
+        --title-size: 1.15rem;
+        --subtitle-size: 1.15rem;
+        --band-pad: 1.35rem;
+    }
+
+    #header h1 a span::before { content: var(--mobile-title, "ORDOPHARM"); }
+    #header h1 a span::after { content: var(--mobile-subtitle, "AGR."); }
+    #header h1 a::after { content: ""; display: none; }
+    #header h1 a { grid-template-areas: "mark brand"; }
+}
+
+@media print {
+    .hero, .band { background-color: transparent !important; color: rgb(var(--ink)) !important; }
+    .stamped::after { display: none; }
+}
+[[/code]]
+[[code type="css"]]
+
+:root {
+
+
+    --tab-accent: var(--ordo-azure);
+    --map-mat: var(--ordo-void);
+    --node-color: var(--ordo-sky);
+    --ordo-frost: 226, 232, 236;
+    --ordo-mist: 38, 48, 56;
+    --ordo-line: 52, 66, 76;
+    --ordo-slate: 131, 148, 158;
+    --ordo-graphite: 27, 35, 41;
+    --ordo-navy: 7, 26, 35;
+    --ordo-azure: 61, 165, 226;
+    --ordo-sky: 106, 199, 243;
+    --ordo-teal: 32, 168, 158;
+    --ordo-sprout: 155, 219, 76;
+    --ordo-leaf: 118, 191, 44;
+    --ordo-moss: 79, 130, 56;
+    --ordo-wheat: 226, 194, 104;
+    --ordo-amber: 240, 178, 88;
+    --ordo-rust: 199, 105, 54;
+    --ordo-loam: 97, 76, 58;
+    --ordo-bloom: 218, 88, 168;
+    --ordo-hazard: 226, 60, 84;
+    --ordo-void: 3, 8, 11;
+
+
+    --surface: 31, 41, 48;
+    --surface-alt: 24, 33, 39;
+    --ink: 226, 232, 236;
+    --ink-soft: var(--ordo-slate);
+    --on-dark: 226, 232, 236;
+    --shadow-color: 0, 0, 0;
+
+
+    --basalt-primary-color: 20, 28, 34;
+    --basalt-secondary-color: var(--surface-alt);
+    --basalt-tertiary-color: var(--ordo-line);
+    --basalt-main-text-color: var(--on-dark);
+    --basalt-background-color: 20, 28, 34;
+    --basalt-sub-text-color: var(--ordo-slate);
+    --basalt-light-text-color: var(--ink);
+    --basalt-UI-dark-palette: var(--ordo-void);
+    --basalt-overtone: var(--ordo-void);
+    --basalt-undertone: var(--ordo-azure);
+    --basalt-bright-element-color: var(--ordo-sky);
+    --basalt-focus-color: var(--ordo-azure);
+    --basalt-UI-opacity: .985;
+
+    --link-color: var(--ordo-sky);
+    --link-visited-color: var(--ordo-teal);
+    --link-newpage-color: var(--ordo-amber);
+
+    --header-background-color: var(--ordo-navy);
+    --header-border-color: var(--ordo-azure);
+    --header-border-width: .125rem;
+    --header-title-color: var(--ink);
+    --header-subtitle-color: var(--ordo-sky);
+    --header-tagline-color: var(--ordo-slate);
+    --header-title: "ORDONET";
+    --header-subtitle: "\2571 INTERNAL";
+    --header-tagline: "Authorized personnel. Session is logged.";
+    --mobile-title: "ORDONET";
+    --mobile-subtitle: "\2571";
+
+    --header-logo: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='none' stroke='%233da5e2' stroke-width='5'/%3E%3Cpath d='M32 13c-11 11-11 29 0 38 11-9 11-27 0-38z' fill='%2376bf2c'/%3E%3Cpath d='M32 13c-11 11-11 29 0 38V13z' fill='%23e2e8ec'/%3E%3C/svg%3E");
+
+    --top-bar-link-color: var(--ink);
+    --top-bar-link-color-hover: var(--ordo-sky);
+    --top-bar-link-background-hover: transparent;
+    --top-bar-link-background-hover-alt: var(--ordo-void);
+    --top-bar-dropdown-background: var(--surface);
+    --top-bar-dropdown-link-color: var(--ink);
+    --top-bar-dropdown-background-hover: var(--ordo-azure);
+    --search-icon-color: var(--ordo-sky);
+    --user-icon-button-color: var(--ink);
+    --side-bar-background-color: var(--surface-alt);
+    --side-bar-link-color: var(--ordo-sky);
+    --side-bar-button-color: var(--ink);
+    --side-bar-heading-background-color: var(--ordo-void);
+    --login-status-background-color: var(--ordo-void);
+
+    --general-border-color: var(--ordo-line);
+    --title-border-color: var(--ordo-azure);
+    --hr-color: var(--ordo-line);
+    --blockquote-background-color: var(--surface-alt);
+    --code-background-color: var(--ordo-void);
+    --toc-background-color: var(--surface-alt);
+    --tab-background-color: var(--surface-alt);
+    --tab-hover-background-color: var(--ordo-line);
+    --tab-selected-background-color: var(--ordo-azure);
+    --tab-focus-text-color: var(--ordo-void) !important;
+    --image-caption-background-color: var(--surface-alt);
+    --footnote-background-color: var(--active color, var(--surface-alt));
+    --tag-background-color: var(--surface-alt);
+    --bottom-area-background-color: var(--ordo-void);
+    --bottom-area-text-color: var(--ordo-slate);
+    --footer-link-color: var(--ordo-sky);
+    --footer-divider-color: var(--ordo-line);
+    --license-area-divider-color: var(--ordo-line);
+    --scrollbar-track-color: var(--surface-alt);
+    --scrollbar-thumb-color: var(--ordo-azure);
+    --selection-background-color: var(--ordo-azure);
+    --selection-text-color: var(--ordo-void);
+    --button-background-color: var(--surface);
+    --button-border-color: var(--ordo-line);
+    --button-text-color: var(--ink);
+    --button-hover-background-color: var(--ordo-azure);
+    --button-hover-border-color: var(--ordo-azure);
+    --button-hover-text-color: var(--ordo-void);
+    --rate-module-background-color: var(--surface-alt);
+
+
+    --UI-font-primary: 'IBM Plex Mono';
+    --brand-weight: 700;
+    --division-weight: 500;
+    --title-size: 1.35rem;
+    --subtitle-size: 1.35rem;
+    --custom-color: var(--ordo-azure);
+    --custom-header: "OrdoNet - Internal Communication";
+    --custom-logo: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='none' stroke='%233da5e2' stroke-width='5'/%3E%3Cpath d='M32 13c-11 11-11 29 0 38 11-9 11-27 0-38z' fill='%233da5e2'/%3E%3C/svg%3E");
+    --stamp-text: "INTERNAL USE ONLY";
+    --backdrop: linear-gradient(rgb(255, 255, 255, .022) .0625rem, transparent .0625rem), linear-gradient(90deg, rgb(255, 255, 255, .022) .0625rem, transparent .0625rem);
+    --backdrop-size: 2.5rem 2.5rem;
+    --backdrop-attachment: fixed;
+    --watermark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='none' stroke='%23ffffff' stroke-width='5'/%3E%3Cpath d='M32 13c-11 11-11 29 0 38 11-9 11-27 0-38z' fill='%23ffffff'/%3E%3C/svg%3E");
+}
+
+
+#page-content div.pane {
+    background-color: rgb(var(--surface));
+    border-color: rgb(var(--general-border-color));
+}
+
+#page-content div.pane:is(:hover, :focus-within) {
+    box-shadow: 0 0 0 .0625rem rgb(var(--active-color), .5);
+}
+
+#top-bar div[class*='top-bar'] > ul > li > a {
+    text-transform: uppercase;
+    font-size: .72rem;
+    letter-spacing: .1em;
+}
+
+#page-title, .meta-title {
+    font-family: var(--mono-font);
+    font-weight: 500;
+    font-size: 1.9em;
+    letter-spacing: -.01em;
+}
+
+#page-content :is(h1, h2, h3, h4, h5, h6) {
+    font-family: var(--mono-font);
+    font-weight: 500;
+}
+
+.eyebrow, .attrib, #breadcrumbs, .pseudocrumbs {
+    font-family: var(--mono-font);
+}
+
+.sidebox, .factsheet table th { background-color: transparent; }
+
+.sidebox {
+    background-color: rgb(var(--surface-alt));
+    border: solid .0625rem rgb(var(--general-border-color));
+    border-top: solid var(--rule-weight) rgb(var(--active-color));
+}
+
+div.memo, div.custom_memo, div.compliance_memo, div.legal_memo {
+    background-color: rgb(var(--surface));
+    box-shadow: none;
+}
+
+.product_label { background-color: rgb(var(--surface)); }
+
+div.memo {
+    --custom-header: "Ordopharm Agronomics - Internal Memorandum";
+    --custom-color: var(--ordo-sky);
+}
+
+.redact { background-color: rgb(var(--ordo-void)); color: rgb(var(--ordo-void)); }
+.redact:is(:hover, :focus) { color: rgb(var(--ordo-hazard)); }
+
+.gridlines {
+    background-image:
+        linear-gradient(rgb(var(--ordo-line), .5) .0625rem, transparent .0625rem),
+        linear-gradient(90deg, rgb(var(--ordo-line), .5) .0625rem, transparent .0625rem);
+}
+
+@media only screen and (max-width: 40rem) {
+    :root { --title-size: 1.05rem; --subtitle-size: 1.05rem; }
+}
+[[/code]]
+[[code type="css"]]
+
+
+@import url('https://fonts.bunny.net/css2?family=Abhaya-Libre:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+
+:root {
+
+      --tab-accent: var(--ordo-rust);
+      --jumbo-mat: var(--ordo-mist);
+      --map-mat: var(--ordo-loam);
+      --node-color: var(--ordo-frost);
+
+    --ordo-frost: 246, 240, 226;
+    --ordo-mist: 234, 224, 202;
+    --ordo-line: 198, 184, 156;
+    --ordo-slate: 132, 118, 96;
+    --ordo-graphite: 74, 64, 50;
+    --ordo-navy: 46, 38, 28;
+    --ordo-azure: 39, 86, 122;
+    --ordo-sky: 86, 133, 163;
+    --ordo-teal: 52, 120, 108;
+    --ordo-sprout: 158, 176, 78;
+    --ordo-leaf: 122, 143, 56;
+    --ordo-moss: 84, 98, 44;
+    --ordo-wheat: 198, 156, 66;
+    --ordo-amber: 204, 132, 40;
+    --ordo-rust: 162, 74, 34;
+    --ordo-loam: 92, 68, 44;
+    --ordo-bloom: 166, 76, 96;
+    --ordo-hazard: 172, 44, 34;
+    --ordo-void: 26, 22, 16;
+
+
+    --surface: 250, 246, 234;
+    --surface-alt: var(--ordo-mist);
+    --ink: var(--ordo-graphite);
+    --ink-soft: var(--ordo-slate);
+    --on-dark: 250, 246, 234;
+    --shadow-color: var(--ordo-loam);
+
+    --basalt-primary-color: var(--surface);
+    --basalt-secondary-color: var(--ordo-mist);
+    --basalt-tertiary-color: var(--ordo-line);
+    --basalt-main-text-color: var(--ordo-void);
+    --basalt-background-color: var(--ordo-frost);
+    --basalt-sub-text-color: var(--ordo-slate);
+    --basalt-light-text-color: var(--surface);
+    --basalt-UI-dark-palette: var(--ordo-navy);
+    --basalt-overtone: var(--ordo-navy);
+    --basalt-undertone: var(--ordo-rust);
+    --basalt-bright-element-color: var(--ordo-rust);
+    --basalt-alternate-color: var(--ordo-moss);
+    --basalt-focus-color: var(--ordo-rust);
+
+    --link-color: var(--ordo-rust);
+    --link-visited-color: var(--ordo-loam);
+    --link-newpage-color: var(--ordo-hazard);
+    --link-decor: underline;
+    --link-weight: 600;
+
+    --header-background-color: var(--surface);
+    --header-border-color: var(--ordo-loam);
+    --header-border-width: .1875rem;
+    --header-title-color: var(--ordo-navy);
+    --header-subtitle-color: var(--ordo-rust);
+    --header-tagline-color: var(--ordo-slate);
+    --header-title: "ORDOPHARM";
+    --header-subtitle: "LABORATORIES";
+    --header-tagline: "Chemische Werke - Founded 1912";
+    --mobile-title: "ORDOPHARM";
+    --mobile-subtitle: "LAB.";
+
+    --header-logo: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='none' stroke='%232e261c' stroke-width='4'/%3E%3Ccircle cx='32' cy='32' r='22' fill='none' stroke='%232e261c' stroke-width='1.5'/%3E%3Cpath d='M32 15c-9 10-9 26 0 34 9-8 9-24 0-34z' fill='%23a24a22'/%3E%3C/svg%3E");
+
+    --top-bar-link-color: var(--ordo-navy);
+    --top-bar-link-color-hover: var(--surface);
+    --top-bar-link-background-hover: var(--ordo-rust);
+    --top-bar-link-background-hover-alt: var(--ordo-loam);
+    --top-bar-dropdown-background: var(--surface);
+    --top-bar-dropdown-link-color: var(--ordo-navy);
+    --top-bar-dropdown-background-hover: var(--ordo-rust);
+    --search-icon-color: var(--ordo-loam);
+    --side-bar-background-color: var(--surface);
+    --side-bar-link-color: var(--ordo-rust);
+    --side-bar-heading-background-color: var(--ordo-loam);
+    --login-status-background-color: var(--ordo-loam);
+
+    --general-border-color: var(--ordo-line);
+    --title-border-color: var(--ordo-rust);
+    --hr-color: var(--ordo-line);
+    --blockquote-background-color: var(--ordo-mist);
+    --code-background-color: var(--ordo-mist);
+    --tab-selected-background-color: var(--ordo-loam);
+    --tab-focus-text-color: var(--surface);
+    --image-caption-background-color: var(--ordo-mist);
+    --bottom-area-background-color: var(--ordo-mist);
+    --bottom-area-text-color: var(--ordo-graphite);
+    --footer-link-color: var(--ordo-loam);
+    --scrollbar-track-color: var(--ordo-mist);
+    --scrollbar-thumb-color: var(--ordo-loam);
+    --selection-background-color: var(--ordo-rust);
+    --selection-text-color: var(--surface);
+    --button-border-color: var(--ordo-loam);
+    --button-text-color: var(--ordo-navy);
+    --button-background-color: var(--surface);
+    --button-hover-background-color: var(--ordo-loam);
+    --button-hover-border-color: var(--ordo-loam);
+    --button-hover-text-color: var(--surface);
+    --rate-module-background-color: var(--ordo-mist);
+
+
+
+    --header-font-primary: 'Bitter';
+    --UI-font-primary: 'Bitter';
+    --body-font-primary: 'Bitter';
+    --brand-weight: 700;
+    --division-weight: 400;
+    --rule-weight: .1875rem;
+    --corner: 0rem;
+    --custom-color: var(--ordo-loam);
+    --custom-header: "Ordopharm Laboratories - Interoffice Memorandum";
+    --custom-logo: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='none' stroke='%235c442c' stroke-width='4'/%3E%3Cpath d='M32 15c-9 10-9 26 0 34 9-8 9-24 0-34z' fill='%235c442c'/%3E%3C/svg%3E");
+    --stamp-text: "COMPANY PRIVATE";
+    --backdrop: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='%235c442c' fill-opacity='0.045'%3E%3Ccircle cx='12' cy='18' r='1.4'/%3E%3Ccircle cx='58' cy='42' r='1.1'/%3E%3Ccircle cx='94' cy='14' r='1.6'/%3E%3Ccircle cx='30' cy='78' r='1.2'/%3E%3Ccircle cx='76' cy='96' r='1.5'/%3E%3Ccircle cx='108' cy='68' r='1.1'/%3E%3C/g%3E%3C/svg%3E");
+    --backdrop-size: 120px 120px;
+    --watermark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='none' stroke='%23ffffff' stroke-width='4'/%3E%3Cpath d='M32 15c-9 10-9 26 0 34 9-8 9-24 0-34z' fill='%23ffffff'/%3E%3C/svg%3E");
+}
+
+
+#page-title, .meta-title {
+    font-family: var(--header-font);
+    font-weight: 700;
+    font-size: 2.1em;
+    letter-spacing: -.005em;
+}
+
+#page-content :is(h1, h2, h3, h4, h5, h6) { letter-spacing: 0; }
+
+.headline {
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-size: clamp(1.6rem, 3.6vw, 2.5rem);
+}
+
+.eyebrow { letter-spacing: .28em; }
+
+#top-bar div[class*='top-bar'] > ul > li > a {
+    text-transform: uppercase;
+    font-size: .7rem;
+    letter-spacing: .12em;
+    font-weight: 600;
+}
+
+#top-bar div[class*='top-bar'] > ul > li > a:is(:hover, :focus),
+#top-bar div[class*='top-bar'] > ul > li:is(:hover, :focus-within) > a {
+    background-color: rgb(var(--ordo-rust));
+    color: rgb(var(--surface));
+    box-shadow: none;
+}
+
+#page-content div.pane {
+    background-color: rgb(var(--surface));
+    border: solid .0625rem rgb(var(--ordo-line));
+    border-top: solid var(--rule-weight) rgb(var(--active-color));
+}
+
+#page-content div.pane:is(:hover, :focus-within) {
+    transform: none;
+    box-shadow: .25rem .25rem 0 rgb(var(--ordo-line));
+}
+
+.hero, .band { box-shadow: inset 0 0 0 .1875rem rgb(var(--surface), .12); }
+
+.pullquote { font-style: italic; font-weight: 400; }
+
+.ticker { font-family: var(--mono-font); letter-spacing: .06em; }
+
+div.memo, div.custom_memo, div.compliance_memo, div.legal_memo {
+    background-color: rgb(var(--surface));
+    box-shadow: .3rem .3rem 0 rgb(var(--ordo-line), .7);
+}
+
+@media only screen and (max-width: 40rem) {
+    :root { --title-size: 1.15rem; --subtitle-size: 1.15rem; }
+}
+[[/code]]
+[[/collapsible]]
+[[/iftags]]
+
+[[div_]]
+[[module css]]
+@import url("https://scp-wiki.wdfiles.com/local--code/theme%3Aordopharm/1");
+[[/module]]
+
+[[include :scp-wiki:component:interwiki-style
+| priority=3
+| theme=https://scp-wiki.wdfiles.com/local--code/theme%3Aordopharm/1
+]]
+
+>[[ift{$intranet}gs -theme]]
+>[[iftags]]
+[[module css]]
+@import url("https://scp-wiki.wdfiles.com/local--code/theme%3Aordopharm/2");
+[[/module]]
+[[include :scp-wiki:component:interwiki-style
+| priority=4
+| theme=https://scp-wiki.wdfiles.com/local--code/theme%3Aordopharm/2
+]]
+>[[/iftags]]
+>[[/ift{$intranet}gs]]
+
+>[[ift{$legacy}gs -theme]]
+>[[iftags]]
+[[module css]]
+@import url("https://scp-wiki.wdfiles.com/local--code/theme%3Aordopharm/3");
+[[/module]]
+[[include :scp-wiki:component:interwiki-style
+| priority=5
+| theme=https://scp-wiki.wdfiles.com/local--code/theme%3Aordopharm/3
+]]
+>[[/iftags]]
+>[[/ift{$legacy}gs]]
+
+
+[[/div]]

@@ -1,0 +1,713 @@
+[[include :scp-jp:component:interwiki-style
+| priority=3
+| theme=https://scp-jp.wdfiles.com/local--code/theme%3Aoneiroi-west-jp/1
+]]
+
+[[module css]]
+/*
+    Oneiroi West Theme
+    [2022 Wikidot Theme]
+    Edited by Mercuresphere
+    Based on "Oneiroi Food Guide: Ambrose Dreams Teashop" by Feitag
+    Based on SCP Sigma 9 Theme created by Aelanna and Dr Devan
+    CC BY-SA 3.0
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');
+
+/* header */
+
+#header {background-image: url(https://scpsandboxcn.wdfiles.com/local--files/feitag/go.png);}
+#header h1 a {
+    display: block;
+    margin: 0;
+    padding: 80px 0 25px;
+    line-height: 0px;
+    max-height: 0px;
+    color: transparent;
+    background: transparent;
+    font-family: 'Noto Serif JP', serif;
+    text-decoration: none;
+    text-shadow: none;
+    letter-spacing: 0.9px;
+}
+ 
+#header h1 a::before {
+    content: "西 部 夢 神";
+    color: #fff;
+    letter-spacing: -0.02em;
+    text-shadow: 3px 3px 5px #000;
+}
+ 
+#header h2 span {
+    display: block;
+    margin: 0;
+    padding: 19px 0;
+    line-height: 0px;
+    max-height: 0px;
+    font-family: 'Noto Sans JP';
+    font-weight: bold;
+    color: transparent;
+    text-shadow: none;
+}
+ 
+#header h2 span::before {
+    content: '万 般 皆 幻 夢';
+    color: #fff;
+    font-style: italic;
+    text-shadow: 1px 1px 1px #000;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+}
+
+sup {
+  vertical-align: top;
+  position: relative;
+  top: -0.5em;
+}
+
+div#container-wrap {
+    background: url(https://kaktuskontainer.wdfiles.com/local--files/stormbreath-hub-page/body_bg.png) top left repeat-x;}
+
+/* neon */
+.neon {
+color:#8ec3f9;
+text-shadow: 0 0 5px #f0f, 0 0 1px #00f, 0 0 1px #f00, 0 0 1px #00f,
+0 0 5px #0ff, 0 0 10px #0ff, 0 0 1px #f0f, 0 0 1px #fff;
+}
+
+/* link-color */
+
+a{color: #2200AA}
+a:link{color: #2200AA}
+a:visited{color: #2200AA}
+a:hover{color: #cd00bd}
+a.newpage{color: #9900FF}
+
+#side-bar a:visited{color: #2200AA}
+#side-bar a:hover{color: #cd00bd}
+
+#login-status ul a {color: #2200AA}
+#login-status ul a:hover{color: #cd00bd}
+
+#top-bar ul li.sfhover a, #top-bar ul li:hover a,#top-bar ul li ul a, #top-bar a:hover{color: #2200AA}
+
+.underline-on-hover a:link{color: black}
+
+.blur {color: transparent; text-shadow: 0 0 6px rgba(0,0,0,.3); }
+
+/* rate-box */
+.page-rate-widget-box .rate-points {
+background-color: #61006c !important;
+border: solid 1px #61006c;
+}
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+background-color: #f0f8ff;
+border-top: solid 1px #61006c;
+border-bottom: solid 1px #61006c;
+}
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a {
+color: #61006c;
+}
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover {
+background: #61006c;
+color: #f0f8ff;
+}
+.page-rate-widget-box .cancel {
+background-color: #61006c;
+border: solid 1px #61006c;
+}
+.page-rate-widget-box .cancel a {
+color: #f0f8ff;
+}
+.page-rate-widget-box .cancel a:hover {
+background: #dccdea;
+color: #f0f8ff;
+}
+
+/* info-module-compatibility */
+#page-content .rate-box-with-credit-button {
+    background-color: #61006c;
+    border-color: #61006c;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.5);
+}
+#page-content .creditButton p a {
+    border-left-color: #dccdea;
+}
+ 
+.close-credits,
+.credit-back {
+    filter: hue-rotate(294deg);
+}
+ 
+#page-content .modalbox {
+    box-shadow: 0 2px 6px rgba(28, 0, 31, 0.5);
+}
+ 
+
+/* title */
+h1, #page-title {
+    color: #61006c;
+}
+
+/* search-bar */
+#search-top-box-input,
+#search-top-box-input:hover,
+#search-top-box-input:focus {
+    filter: hue-rotate(294deg);
+-webkit-filter: hue-rotate(294deg);
+}
+ 
+#search-top-box-form input[type=submit] {
+    filter: hue-rotate(294deg);
+-webkit-filter: hue-rotate(294deg);
+}
+ 
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+    filter: hue-rotate(294deg);
+-webkit-filter: hue-rotate(294deg);
+}
+
+/* yui-tabs */
+.yui-navset .yui-nav a,
+.yui-navset .yui-navset-top .yui-nav a {
+    filter: hue-rotate(294deg);
+-webkit-filter: hue-rotate(294deg);
+}
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a:focus, /* no focus effect for selected */
+.yui-navset .yui-nav .selected a:hover { /* no hover effect for selected */
+    filter: hue-rotate(294deg);
+-webkit-filter: hue-rotate(294deg);
+}
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:focus {
+    filter: hue-rotate(294deg);
+-webkit-filter: hue-rotate(294deg);
+}
+
+
+/* side-bar */
+
+#side-bar .heading {
+    color: #5c0066;
+    border-bottom: solid 1px #5c0066;
+    width: 80%;
+    margin: auto;
+    margin-top: 1em;
+}
+
+#side-bar .side-block {
+    border: 1px solid #5a0c38;
+    box-shadow: 0 2px 6px rgb(90 12 56 / 50%);
+}
+
+.side-block .menu-item > .image {
+    filter: hue-rotate(294deg);
+    -webkit-filter: hue-rotate(294deg);
+}
+div.scpnet-interwiki-wrapper {
+    filter: hue-rotate(294deg);
+    -webkit-filter: hue-rotate(294deg);
+}
+
+#side-bar .collapsible-block-folded {
+    background-image: url(https://scpsandboxcn.wikidot.com/local--files/mercuresphere/expand.png);
+}
+
+#side-bar .collapsible-block-unfolded-link {
+    border-bottom: solid 1px #5c0066;
+}
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link {
+    color: #2200AA;
+}
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link:hover {
+    color: #cd00bd;
+}
+
+@media (max-width: 767px){
+#side-bar {
+    background-color: #8b7a8c;
+}
+}
+
+/* Non Savingpage Module, by R74 */
+
+body[class="wait"] #odialog-shader-iframe, body[class="wait"] #odialog-shader {
+  display: none !important;
+}
+#odialog-container {
+  position: fixed !important;
+}
+body[class="wait"] #odialog-container {
+  z-index: -1;
+}
+body[class="wait"] #odialog-container #owindow-1 {
+  display: none !important;
+}
+body[class="wait"] a[name="page-top"][target]+div #main-content #action-area div#lock-info {
+  background-color: #ffcdd2;
+  border: 1px solid #e53935;
+}
+div#lock-info {
+  font-size: 0;
+  margin: .8rem 0;
+  padding: 0.4rem .8rem;
+}
+div#lock-info::before {
+  content: 'このページには編集用の15分間の排他的ロックが設定されています。\A他のユーザーは、このロックが有効な間はこのページを編集できません。\Aロックは ';
+  display: inline;
+  font-size: .82rem;
+  white-space: pre-wrap;
+}
+div#lock-info > strong {
+  font-size: .82rem;
+}
+div#lock-info > br {
+  display: none;
+}
+div#lock-info::after {
+  content: ' 秒後に解除されます。';
+  display: inline;
+  font-size: .82rem;
+}
+body[class="wait"] a[name="page-top"][target]+div #main-content #action-area div#lock-info::before {
+  content: 'ページを保存中……\Aこの表示が長時間続く場合は、編集内容をクリップボードにコピーしてから、ページを再読み込みしてやり直してください。';
+  display: inline;
+  font-size: .82rem;
+  color: red;
+  white-space: pre-wrap;
+}
+body[class="wait"] a[name="page-top"][target]+div #main-content #action-area div#lock-info::after {
+  font-size: 0;
+}
+body[class="wait"] a[name="page-top"][target]+div #main-content #action-area div#lock-info>strong {
+  font-size: 0;
+}
+body[class="wait"] a[name="page-top"][target]+div #main-content #action-area div#lock-info::after {
+  font-size: 0;
+}
+
+[[/module]]
+
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** 西部夢神テーマ
+**翻訳責任者:** AI
+**翻訳年:** 2026
+**原題:** 西部梦神 主题版式
+**著作権者:** Mercuresphere
+**作成年:** 2022
+**初訳時参照リビジョン:** 10
+**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:oneiroi-west ソース]
+[[include :scp-jp:credit:end-preview]]
+
++ このページについて
+
+これは夢神（Oneiroi）関連のページに使用できるテーマで、[[*user Mercuresphere]] が [[*user Feitag]] による[*https://scp-wiki-cn.wikidot.com/oneiroi-food-guide-ambrose-dreams-teashop 『夢神の食事ガイド: アンブローズ夢の茶屋』（中国語版）]をもとに制作したものです。
+
+このテーマは夢神GoIに対する一つの解釈にすぎません。夢神GoI専用というわけではなく、夢神GoI形式のページに必ずしもこのテーマを適用する必要もありません。
+
+作品の冒頭に次の構文を追加すると、このテーマを適用できます：
+
+> @@[[include theme:oneiroi-west-jp]]@@
+
+左上のタイトルとサブタイトルは、次の構文で変更できます：
+
+> @@[[module CSS]]@@
+> @@#header h1 a::before {@@
+> @@    content: "タイトル";@@
+> @@}@@
+> @@#header h2 span::before {@@
+> @@    content: "サブタイトル";@@
+> @@}@@
+> @@[[/module]]@@
+
++ 例
+
+5個のハイフン「@@-----@@」で水平線を作成できます。引用ブロックなど他の要素内に置かれていない場合、この線はページを左右いっぱいに横切ります。文書を複数の部分へ分けるこの線が区切り線です。
+
+-----
+
+見出しは、行頭に1個から6個のプラス記号「+」を入力すると作成できます。
+
+[[collapsible show="+ 見出し" hide="- 見出し"]]
++ レベル1見出し
+
+++ レベル2見出し
+
++++ レベル3見出し
+
+++++ レベル4見出し
+
++++++ レベル5見出し
+
+++++++ レベル6見出し
+[[/collapsible]]
+
+@@@@
+@@@@
+@@@@
+
+~~~~
+
+[[tabview]]
+[[tab タブ]]
+これはタブビューです。
+[[/tab]]
+[[tab タブ]]
+ほら、ここにはもっとテキストがあります。
+
+なんと精巧なことでしょう。
+[[/tab]]
+[[tab 長いタブ]]
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+[[/tab]]
+[[tab なぜかこの空タブには、とてもとても長い名前が付いています。なんででしょう？本当に奇妙です。]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[/tabview]]
+
+> これは引用ブロックです。行頭に「> 」を加えると作成できます。
+>
+> {{さらにテキスト}}
+> -----
+> 区切り線
+>
+>> 入れ子の引用ブロック
+
+要素に「neon」クラス（class）を追加すると、青い光の文字で表示できます。例：
+
+> @@[[span class="neon"]] 青い光の文字 [[/span]]@@
+
+表示例：
+
+[[span class="neon"]] 青い光の文字 [[/span]]
+@@ @@
+----
+[[code type="css"]]
+/*
+    Oneiroi West Theme
+    [2022 Wikidot Theme]
+    Edited by Mercuresphere
+    Based on "Oneiroi Food Guide: Ambrose Dreams Teashop" by Feitag
+    Based on SCP Sigma 9 Theme created by Aelanna and Dr Devan
+    CC BY-SA 3.0
+*/
+
+
+/* header */
+
+#header {background-image: url(https://scpsandboxcn.wdfiles.com/local--files/feitag/go.png);}
+#header h1 a {
+    display: block;
+    margin: 0;
+    padding: 80px 0 25px;
+    line-height: 0px;
+    max-height: 0px;
+    color: transparent;
+    background: transparent;
+    font-family: 'Noto Serif JP', serif;
+    text-decoration: none;
+    text-shadow: none;
+    letter-spacing: 0.9px;
+}
+ 
+#header h1 a::before {
+    content: "西 部 夢 神";
+    color: #fff;
+    letter-spacing: -0.02em;
+    text-shadow: 3px 3px 5px #000;
+}
+ 
+#header h2 span {
+    display: block;
+    margin: 0;
+    padding: 19px 0;
+    line-height: 0px;
+    max-height: 0px;
+    font-family: 'Noto Sans JP';
+    font-weight: bold;
+    color: transparent;
+    text-shadow: none;
+}
+ 
+#header h2 span::before {
+    content: '万 般 皆 幻 夢';
+    color: #fff;
+    font-style: italic;
+    text-shadow: 1px 1px 1px #000;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+}
+
+sup {
+  vertical-align: top;
+  position: relative;
+  top: -0.5em;
+}
+
+div#container-wrap {
+    background: url(https://kaktuskontainer.wdfiles.com/local--files/stormbreath-hub-page/body_bg.png) top left repeat-x;}
+
+/* neon */
+.neon {
+color:#8ec3f9;
+text-shadow: 0 0 5px #f0f, 0 0 1px #00f, 0 0 1px #f00, 0 0 1px #00f,
+0 0 5px #0ff, 0 0 10px #0ff, 0 0 1px #f0f, 0 0 1px #fff;
+}
+
+/* link-color */
+
+a{color: #2200AA}
+a:link{color: #2200AA}
+a:visited{color: #2200AA}
+a:hover{color: #cd00bd}
+a.newpage{color: #9900FF}
+
+#side-bar a:visited{color: #2200AA}
+#side-bar a:hover{color: #cd00bd}
+
+#login-status ul a {color: #2200AA}
+#login-status ul a:hover{color: #cd00bd}
+
+#top-bar ul li.sfhover a, #top-bar ul li:hover a,#top-bar ul li ul a, #top-bar a:hover{color: #2200AA}
+
+.underline-on-hover a:link{color: black}
+
+.blur {color: transparent; text-shadow: 0 0 6px rgba(0,0,0,.3); }
+
+/* rate-box */
+.page-rate-widget-box .rate-points {
+background-color: #61006c !important;
+border: solid 1px #61006c;
+}
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+background-color: #f0f8ff;
+border-top: solid 1px #61006c;
+border-bottom: solid 1px #61006c;
+}
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a {
+color: #61006c;
+}
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover {
+background: #61006c;
+color: #f0f8ff;
+}
+.page-rate-widget-box .cancel {
+background-color: #61006c;
+border: solid 1px #61006c;
+}
+.page-rate-widget-box .cancel a {
+color: #f0f8ff;
+}
+.page-rate-widget-box .cancel a:hover {
+background: #dccdea;
+color: #f0f8ff;
+}
+
+/* info-module-compatibility */
+#page-content .rate-box-with-credit-button {
+    background-color: #61006c;
+    border-color: #61006c;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.5);
+}
+#page-content .creditButton p a {
+    border-left-color: #dccdea;
+}
+ 
+.close-credits,
+.credit-back {
+    filter: hue-rotate(294deg);
+}
+ 
+#page-content .modalbox {
+    box-shadow: 0 2px 6px rgba(28, 0, 31, 0.5);
+}
+ 
+
+/* title */
+h1, #page-title {
+    color: #61006c;
+}
+
+/* search-bar */
+#search-top-box-input,
+#search-top-box-input:hover,
+#search-top-box-input:focus {
+    filter: hue-rotate(294deg);
+-webkit-filter: hue-rotate(294deg);
+}
+ 
+#search-top-box-form input[type=submit] {
+    filter: hue-rotate(294deg);
+-webkit-filter: hue-rotate(294deg);
+}
+ 
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+    filter: hue-rotate(294deg);
+-webkit-filter: hue-rotate(294deg);
+}
+
+/* yui-tabs */
+.yui-navset .yui-nav a,
+.yui-navset .yui-navset-top .yui-nav a {
+    filter: hue-rotate(294deg);
+-webkit-filter: hue-rotate(294deg);
+}
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a:focus, /* no focus effect for selected */
+.yui-navset .yui-nav .selected a:hover { /* no hover effect for selected */
+    filter: hue-rotate(294deg);
+-webkit-filter: hue-rotate(294deg);
+}
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:focus {
+    filter: hue-rotate(294deg);
+-webkit-filter: hue-rotate(294deg);
+}
+
+
+/* side-bar */
+
+#side-bar .heading {
+    color: #5c0066;
+    border-bottom: solid 1px #5c0066;
+    width: 80%;
+    margin: auto;
+    margin-top: 1em;
+}
+
+#side-bar .side-block {
+    border: 1px solid #5a0c38;
+    box-shadow: 0 2px 6px rgb(90 12 56 / 50%);
+}
+
+.side-block .menu-item > .image {
+    filter: hue-rotate(294deg);
+    -webkit-filter: hue-rotate(294deg);
+}
+div.scpnet-interwiki-wrapper {
+    filter: hue-rotate(294deg);
+    -webkit-filter: hue-rotate(294deg);
+}
+
+#side-bar .collapsible-block-folded {
+    background-image: url(https://scpsandboxcn.wikidot.com/local--files/mercuresphere/expand.png);
+}
+
+#side-bar .collapsible-block-unfolded-link {
+    border-bottom: solid 1px #5c0066;
+}
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link {
+    color: #2200AA;
+}
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link:hover {
+    color: #cd00bd;
+}
+
+@media (max-width: 767px){
+#side-bar {
+    background-color: #8b7a8c;
+}
+}
+
+/* Non Savingpage Module, by R74 */
+
+body[class="wait"] #odialog-shader-iframe, body[class="wait"] #odialog-shader {
+  display: none !important;
+}
+#odialog-container {
+  position: fixed !important;
+}
+body[class="wait"] #odialog-container {
+  z-index: -1;
+}
+body[class="wait"] #odialog-container #owindow-1 {
+  display: none !important;
+}
+body[class="wait"] a[name="page-top"][target]+div #main-content #action-area div#lock-info {
+  background-color: #ffcdd2;
+  border: 1px solid #e53935;
+}
+div#lock-info {
+  font-size: 0;
+  margin: .8rem 0;
+  padding: 0.4rem .8rem;
+}
+div#lock-info::before {
+  content: 'このページには編集用の15分間の排他的ロックが設定されています。\A他のユーザーは、このロックが有効な間はこのページを編集できません。\Aロックは ';
+  display: inline;
+  font-size: .82rem;
+  white-space: pre-wrap;
+}
+div#lock-info > strong {
+  font-size: .82rem;
+}
+div#lock-info > br {
+  display: none;
+}
+div#lock-info::after {
+  content: ' 秒後に解除されます。';
+  display: inline;
+  font-size: .82rem;
+}
+body[class="wait"] a[name="page-top"][target]+div #main-content #action-area div#lock-info::before {
+  content: 'ページを保存中……\Aこの表示が長時間続く場合は、編集内容をクリップボードにコピーしてから、ページを再読み込みしてやり直してください。';
+  display: inline;
+  font-size: .82rem;
+  color: red;
+  white-space: pre-wrap;
+}
+body[class="wait"] a[name="page-top"][target]+div #main-content #action-area div#lock-info::after {
+  font-size: 0;
+}
+body[class="wait"] a[name="page-top"][target]+div #main-content #action-area div#lock-info>strong {
+  font-size: 0;
+}
+body[class="wait"] a[name="page-top"][target]+div #main-content #action-area div#lock-info::after {
+  font-size: 0;
+}
+[[/code]]
+[[/iftags]]
