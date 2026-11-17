@@ -1,0 +1,659 @@
+[[include component:sigma-plus-jp]]
+[[module CSS]]
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aretrofutura-jp/1');
+[[/module]]
+
+[[include :scp-jp:component:toggle-sidebar]]
+
+[[include component:interwiki-style
+| priority=1
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aretrofutura-jp/1
+]]
+
+[[iftags +テーマ]]
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** Retro Futura Theme
+**翻訳責任者:** AI
+**翻訳年:** 2026
+**原題:** Retro Futura Theme
+**著作権者:** [[*user Fish^12]]
+**作成年:** 2025
+**初訳時参照リビジョン:** 18
+**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:retrofutura ソース]
+[[include :scp-jp:credit:end-preview]]
+
++ 何見てんだよ？
+
+これはチーム「IN SPACE, NEMO CAN HEAR YOU SCREAM」のための美的テーマです。[[*user Guaire]]船長と[[*user FlyPurgatorio]]舵手をフィーチャーしています。2人は[*https://scp-wiki.wikidot.com/pdcontest2025 Public Domain Contest（英語版）]でネモ船長を初登場させました。このテーマはエンジニア[[*user Fish^12]]が作成しました。
+
+このテーマは[[[component:sigma-plus|Sigma Plus]]]テーマであり、[[[component:toggle-sidebar|トグル式サイドバー]]]を使用しています。美的にはレトロフューチャリズムであり、ユーザーが独自のスタイルを追加することを前提としています。
+
+このテーマをページに組み込むには、次のコードを使用してください。
+
+[[=]]
+> {{@@[[include :scp-jp:theme:retrofutura-jp]]@@}}
+[[/=]]
+
+それ以外、このテーマにはあまり多くの要素はありません。私は記事ごとに個別のスタイリングを行う意図でこのテーマを設計しました。つまり、多かれ少なかれ十分なCSS知識が必要です。楽しめるようにカスタムdivをいくつか用意していますが、あまり頼りすぎないでください。
+
+頼ったら分かります。
+
+@@ @@
+
+[[div class="panelbox"]]
+@@[[div class="panelbox"]]@@
+**Dr. Yaoi:** Can you even?
+@@[[/div]]@@
+[[/div]]
+
+@@ @@
+
+[[div class="talkbox"]]
+@@[[div class="talkbox"]]@@
+**Dr. Yaoi:** Could us even?
+@@[[/div]]@@
+[[/div]]
+
+@@ @@
+
+[[div class="testbox"]]
+@@[[div class="testbox"]]@@
+**Dr. Yaoi:** Could //our// even?
+@@[[/div]]@@
+[[/div]]
+
+@@ @@
+
+[[=]]
+[[span style="font-family:var(--jose);font-size:150%"]]ヘッダーとタイトルのフォントはJosefin Sansです。[[/span]]
+[[span style="font-family:var(--majo);font-size:150%"]]サブヘッダーのフォントはMajor Mono Displayです。[[/span]]
+[[span style="font-family:var(--nuni);font-size:150%"]]本文フォントはNunitoです。[[/span]]
+[[span style="font-family:var(--teac);font-size:150%"]]ナビゲーションフォントはTeachersです。[[/span]]
+[[/=]]
+
+[[div style="margin:400px"]]
+[[/div]]
+
+
+
+
+
+
+
+
+
+
+
+[[collapsible show="テーマソース" hide="テーマソース"]]
+[[code type="CSS"]]
+/*
+    Retro Futura Theme
+    [2025 Wikidot Theme]
+    by Fish^12
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teachers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+/* Root with Sigma plus styles. */
+
+:root {
+    --creamy: #f3eddf;
+    --cacao: #181818;
+    --cherry: #7e2522;
+    --caramel: #bb8537;
+    --cyan: #5e7f71;
+    --char: #4e1715;
+    --chiasma: #88ccbf;
+
+    --doubleking: 0.4em double var(--creamy);
+
+    --jose: "Josefin Sans", "Noto Sans JP", sans-serif;
+    --nuni: "Nunito", "Noto Sans JP", sans-serif;
+    --teac: "Teachers", "Noto Sans JP", sans-serif;
+    --majo: "Major Mono Display", "Noto Sans JP", monospace;
+
+    --header-title: "Nautilus";
+    --header-subtitle: "Mobilis in Mobili";
+    --sp_header-logo: none;
+    --sp_header-title-size: clamp(3rem, 0.5rem + 13.333vw, 12.5rem);
+    --sp_header-subtitle-size: 2rem;
+
+    --sp_header-height: 22rem;
+    --sp_top-bar-height: 1.5rem;
+
+    --sp_top-bar-gradient-top-color: var(--creamy);
+    --sp_top-bar-gradient-bottom-color: var(--creamy);
+
+    --sp_top-bar-link-color: var(--cacao);
+    --sp_top-bar-link-hover-color: var(--creamy);
+    --sp_top-bar-link-hover-background: var(--cacao);
+
+    --sp_dropdown-link-color: var(--cacao);
+    --sp_dropdown-link-hover-color: var(--creamy);
+    --sp_dropdown-link-background: var(--creamy);
+    --sp_dropdown-link-hover-background: var(--cacao);
+    --sp_dropdown-link-border: none;
+
+    --sp_rate-module-background: var(--cherry);
+    --sp_rate-module-text-color: var(--creamy);
+    --sp_rate-module-button-color: var(--chiasma);
+    --sp_rate-module-button-background: var(--char);
+    --sp_rate-module-sub-color: var(--chiasma);
+    --sp_rate-module-button-hover-color: var(--char);
+    --sp_rate-module-button-hover-background: var(--chiasma);
+
+    --sp_tab-selected-text-color: var(--cacao);
+    --sp_tab-selected-background: var(--creamy);
+    --sp_tab-selected-border-color: var(--creamy);
+
+    --sp_tab-text-color: var(--creamy);
+    --sp_tab-background: var(--cacao);
+    --sp_tab-border-color: var(--creamy);
+
+    --sp_tab-hover-text-color: var(--sp_tab-selected-text-color);
+    --sp_tab-hover-background: var(--sp_tab-selected-background);
+    --sp_tab-hover-border-color: var(--sp_tab-selected-border-color);
+
+    --sp_hovertip-background: var(--cacao);
+    --sp_hovertip-border: var(--doubleking);
+}
+
+/* Styled from top to bottom. */
+
+#login-status {
+    padding-right: 12px;
+    font-family: var(--teac);
+    text-transform: capitalize;
+}
+#login-status .printuser {
+    font-family: var(--nuni);
+    text-transform: uppercase;
+}
+#login-status a:hover {
+    text-decoration-style: double;
+}
+#login-status a, #login-status ul a {
+    color: var(--creamy);
+}
+
+/* For the user page. */
+
+.owindow {
+    background-color: var(--cacao);
+    border: var(--doubleking);
+    color: var(--creamy);
+}
+.owindow .title {
+    cursor: auto;
+    background-color: var(--cacao);
+    text-align: center;
+    font-family: var(--majo);
+    padding: 1em;
+}
+.owindow img {
+    background-color: transparent !important;
+    padding: 0 !important;
+    border: var(--doubleking);
+    margin-right: 1em;
+}
+.owindow td img {
+    display: none;
+}
+#account-options {
+    margin-top: 3px;
+    margin-right: 12px;
+    text-align: center;
+    border: none;
+    border-color: var(--carbon);
+    background-color: var(--creamy);
+}
+#account-topbutton {
+    font-size: 100%;
+    border: 5px double var(--creamy);
+    background-color: var(--cacao) !important;
+    padding: 0 21px;
+    transition: 200ms;
+}
+#account-topbutton:hover {
+    background-color: var(--creamy) !important;
+    color: var(--cacao);
+}
+#account-options ul {
+    background: var(--creamy);
+    transition: 200ms;
+}
+#account-options li a {
+    color: var(--cacao);
+    transition: 200ms;
+}
+#account-options li a:hover {
+    color: var(--creamy);
+    background: var(--cacao);
+    text-decoration: none;
+}
+#search-top-box {
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    padding: 8px 12px 0 0;
+    font-family: var(--teac);
+}
+#search-top-box-form input[type=submit] {
+    background-color: var(--cacao);
+    background-image: none;
+    color: var(--creamy);
+    box-shadow: none;
+    border: var(--doubleking);
+    border-radius: 0;
+    transition: 200ms;
+}
+#search-top-box-form input[type=submit]:hover {
+    background-color: var(--creamy);
+    background-image: none;
+    border: var(--doubleking);
+    color: var(--cacao);
+    box-shadow: none;
+}
+
+/* Header proper. */
+
+#header {
+grid-template-areas:
+    ". . login login login"
+    ". . . . search"
+    "h1 h1 h1 h1 h1"
+    "h2 h2 h2 h2 h2"
+    ". . . . ."
+    "top-bar top-bar top-bar top-bar top-bar";
+    grid-template-columns: repeat(5, 1fr);
+    background-color: var(--cacao);
+    background-image: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aretrofutura-jp/bannerfutura.png");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-bottom: 0px;
+}
+#header h1, #header h2 {
+    padding-inline-start: 1em;
+}
+#header h2 {
+    text-align: right;
+    margin-right: 1em;
+}
+#header h1 a, #header h2 span {
+    line-height: 0.8;
+    font-style: italic;
+}
+#header h1 a {
+    font-family: var(--jose);
+    text-transform: uppercase;
+    letter-spacing: -1vw;
+}
+#header h2 span {
+    font-family: var(--majo);
+    color: var(--chiasma);
+}
+
+/* Top bar. */
+
+#top-bar {
+    font-family: var(--teac);
+    max-width: 100%;
+}
+#top-bar ul li {
+    flex-grow: 1;
+}
+#top-bar ul li a {
+    transition: 200ms;
+}
+#top-bar div[class*="top-bar"] > ul {
+    justify-content: center;
+}
+#top-bar ul li ul {
+    border-width: 0 0;
+}
+#top-bar ul li ul li:nth-child(odd), #account-options li:nth-child(odd) {
+    border-left: 5px solid var(--cherry);
+}
+#top-bar ul li ul li:nth-child(even), #account-options li:nth-child(even) {
+    border-left: 5px solid var(--caramel);
+}
+#top-bar ul li ul li:nth-child(3n), #account-options li:nth-child(3n) {
+    border-left: 5px solid var(--cyan);
+}
+#top-bar .open-menu a {
+    border: 0.2em double var(--creamy);
+    border-radius: 0;
+    background-color: var(--cacao);
+    color: var(--creamy);
+    transition: 200ms;
+}
+#top-bar .open-menu a:hover {
+    background-color: var(--creamy);
+    color: var(--cacao);
+}
+
+/* Side bar and the toggle. */
+
+#side-bar {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#side-bar img {
+    filter: invert(1);
+    transition: 200ms;
+}
+#side-bar img:hover {
+    filter: invert(0);
+}
+#side-bar .heading, #interwiki .heading {
+    margin: 0.6rem 0 0.5rem;
+    padding: 0;
+    color: var(--creamy);
+    height: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+}
+#side-bar .menu-item {
+    display: flex;
+}
+#side-bar .menu-item a {
+    flex-grow: 1;
+    text-align: center;
+}
+#side-bar .heading::before, #side-bar .heading::after, #interwiki .heading::before, #interwiki .heading::after {
+    content: "";
+    height: 1px;
+    box-sizing: border-box;
+    margin: 0.1rem 0.5rem 0;
+    border-bottom: 5px double var(--creamy);
+    flex: 1 1 0;
+}
+#side-bar .side-block.media, #side-bar .side-block.resources, #side-bar .side-block, #interwiki .side-block {
+    border: var(--doubleking);
+    border-radius: 0;
+    background-color: var(--cacao);
+    box-shadow: none;
+}
+#interwiki .menu-item img {
+    filter: invert(1);
+}
+
+/* Links. */
+
+a, a:visited, #interwiki a, #side-bar a {
+    color: var(--chiasma);
+    transition: 200ms;
+}
+a:hover, a:visited:hover, #interwiki a:hover, #side-bar a:hover {
+    color: var(--chiasma);
+    text-decoration: underline;
+    text-decoration-style: double;
+    text-underline-offset: 5px;
+}
+
+/* The part with all the stuff people write. */
+
+#content-wrap {
+    background-image: linear-gradient(90deg, var(--cherry) 1vw, var(--caramel) 1vw 2vw, var(--cyan) 2vw 3vw, transparent 3vw);
+    background-color: var(--cacao);
+    margin: 0;
+    width: inherit;
+    max-width: inherit;
+    padding: 1.5rem;
+    box-shadow: inset -5px 5px 5px black;
+}
+#page-content {
+    color: var(--creamy);
+    font-family: var(--nuni);
+}
+#page-title, .meta-title {
+    color: var(--creamy);
+    font-family: var(--jose);
+    font-size: clamp(1.875rem, 1.546rem + 1.754vw, 3.125rem);
+    font-weight: 700;
+    border-image: linear-gradient(90deg, var(--cherry) 33%, var(--caramel) 33% 66%, var(--cyan) 66% 100%);
+    border-width: 6px;
+    border-style: solid;
+    border-image-slice: 1;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 2rem;
+}
+
+/* Built-in Wikidot elements. */
+
+.page-rate-widget-box {
+    border-radius: 0;
+    font-family: var(--teac);
+    text-transform: capitalize;
+    box-shadow: -10px 10px var(--caramel), 10px -8px var(--cyan), 10px 10px var(--cyan);
+}
+div.page-rate-widget-box .rate-points, .page-rate-widget-box .cancel {
+    border-radius: 0;
+}
+div.page-rate-widget-box, div.rate-box-with-credit-button {
+    padding: 0;
+}
+div.page-rate-widget-box .cancel a {
+    background-color: var(--char);
+}
+blockquote, div.blockquote {
+    border: var(--doubleking);
+    border-radius: 0;
+    background: none;
+}
+h1, h2, h3, h4, h5 {
+    font-family: var(--jose);
+    color: var(--creamy);
+}
+#toc {
+    background-color: transparent;
+    border: var(--doubleking);
+    border-image: linear-gradient(180deg, var(--char) 33%, var(--caramel) 33% 66%, var(--cyan) 66% 100%);
+    box-shadow: 0px 10px var(--caramel), 10px 0px var(--cherry), 10px 10px var(--cyan);
+    border-width: 10px;
+    border-style: solid;
+    border-image-slice: 1;
+    border-left: 0;
+    border-top: 0;
+}
+#toc-action-bar {
+    margin-bottom: 0.5em;
+}
+#toc-action-bar a {
+    border: var(--doubleking);
+    background-color: var(--cacao);
+    color: var(--creamy);
+    padding: 0 0.5em;
+    text-decoration: none;
+    transition: 200ms;
+}
+#toc-action-bar a:hover {
+    background-color: var(--creamy);
+    color: var(--cacao);
+    text-decoration: none;
+}
+#toc-list {
+    margin: 0.5em 0 0.5em -0.5em;
+}
+#toc-list div:before {
+    content: "▶ ";
+}
+.yui-navset .yui-nav {
+    border-bottom: var(--doubleking);
+    padding-bottom: 3px;
+}
+.yui-navset .yui-content {
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom: var(--doubleking);
+}
+
+/* Secret custom divs. */
+
+.panelbox {
+    position: relative;
+    color: var(--cacao);
+    background: #fff7e3;
+    padding: 5px 24px;
+    border-radius: 0 20px;
+    background-image: linear-gradient(#ededed 1px, transparent 1px), linear-gradient(to right, #ededed 1px, transparent 1px);
+    background-size: 50px 50px;
+    background-position: center;
+    margin: 10px;
+}
+.panelbox:before, .panelbox:after {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 5px;
+    background: #bcc245;
+    border-radius: 50%;
+}
+.panelbox:before {
+    left: 10px;
+    top: 10px;
+    box-shadow: 0px 7px #bcc245, 7px 7px #bcc245, 7px 0px #bcc245, 0px 14px #bcc245, 14px 0px #bcc245;
+}
+.panelbox:after {
+    right: 10px;
+    bottom: 10px;
+    box-shadow: 0px -7px #bcc245, -7px -7px #bcc245, -7px 0px #bcc245, 0px -14px #bcc245, -14px 0px #bcc245;
+}
+
+.testbox{
+    position: relative;
+    border: solid 2px #2f2f2d;
+    background: linear-gradient(45deg, transparent 49%, #2b2b29 49% 51%, transparent 51%), linear-gradient(-45deg, transparent 49%, #3e3c3b 49% 51%, transparent 51%), linear-gradient(0deg, transparent 49%, #303030 49% 51%, transparent 51%), linear-gradient(90deg, transparent 49%, #303030 49% 51%, transparent 51%);
+    background-size: 60px 60px;
+    background-position: center;
+    padding: 15px;
+    margin: 15px;
+}
+
+.talkbox {
+    position: relative;
+    background: #5a5a5a;
+    padding: 20px 10px 10px 10px;
+    background-image: radial-gradient(circle at top center, #0e0e1f, #494949), repeating-radial-gradient(circle at top center, #494949, #494949, 10px, transparent 20px, transparent 10px);
+    background-blend-mode: multiply;
+    border-radius: 0 0 20px 20px;
+    border-bottom: solid 5px #d6764d;
+    margin: 20px;
+}
+.talkbox:before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background-image: radial-gradient(ellipse farthest-corner at 10px 10px, #d6764d, #802f2d 50%, rgba(0, 0, 0, 0.8) 50%);
+    background-size: 12px 12px;
+    box-shadow: -5px -5px 15px #802f2d;
+}
+
+/* Bottom of the page stuff. */
+
+#main-content .page-tags span {
+    border-image: linear-gradient(90deg, var(--cherry) 33%, var(--caramel) 33% 66%, var(--cyan) 66% 100%);
+    border-width: 6px;
+    border-style: solid;
+    border-image-slice: 1;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+#action-area, #page-info {
+    color: var(--creamy);
+}
+#page-info, .page-watch-options, .page-options-bottom {
+    text-align: center;
+}
+.page-options-bottom {
+    margin: 0;
+}
+.page-options-bottom a, .owindow .button-bar a {
+    border: var(--doubleking);
+    background-color: var(--cacao);
+    color: var(--creamy);
+    text-decoration: none;
+    transition: 200ms;
+}
+.page-options-bottom a:hover, .owindow .button-bar a:hover {
+    border: var(--doubleking);
+    background: var(--creamy);
+    color: var(--cacao);
+}
+#lock-info {
+    color: var(--cacao);
+}
+#footer {
+    margin-top: 0px;
+    background-image: linear-gradient(90deg, var(--cherry) 1vw, var(--caramel) 1vw 2vw, var(--cyan) 2vw 3vw);
+    margin: 0;
+    padding-left: 3vw;
+    padding-top: 6px;
+}
+.footnote {
+    color: var(--creamy);
+    padding: 1em;
+}
+.hovertip {
+    background-color: var(--cacao) !important;
+    color: var(--creamy) !important;
+    border: var(--doubleking) !important;
+}
+#license-area {
+    background-image: linear-gradient(90deg, var(--cherry) 1vw, var(--caramel) 1vw 2vw);
+    font-size: 0.77em;
+    color: white;
+    margin-bottom: 16px;
+    box-shadow: 0px 16px var(--cherry);
+}
+#license-area a {
+    color: var(--cacao);
+    font-weight: 700;
+}
+
+/* Stuff to make this work on mobile. */
+
+@media only screen and (max-width: 767px) {
+:root {
+    --sp_header-height: 18rem;
+    }
+#side-bar {
+    background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+@media only screen and (max-width: 450px) {
+#account-topbutton {
+    border: 1px solid var(--creamy);
+    padding: 0 25px;
+    }
+}
+[[/code]]
+[[/collapsible]]
+
+-----
+
+[[div class="blockquote"]]
+**画像のクレジット:**
+**ファイル名:** bannerfutura.png
+**名称:** Blurred flowers at Beer Heights Light Railway.jpg
+**作者:** The wub
+**ライセンス:** CC BY-SA 4.0
+**ソースリンク:** [*https://commons.wikimedia.org/wiki/File:Blurred_flowers_at_Beer_Heights_Light_Railway.jpg ウィキメディア・コモンズ]
+[[/div]]
+[[/iftags]]
