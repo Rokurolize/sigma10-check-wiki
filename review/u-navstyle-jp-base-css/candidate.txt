@@ -1,0 +1,152 @@
+[!--代替サイドバー基盤 ――― 月刊カラククン（theme:garak-the-magazine-jp）用
+このページは theme:garak-the-magazine-jp から [[module CSS]] の @import で読み込まれる機械用ページです。
+原語版（scpko:component:u-navstyle、rev 4、作者: thd-glasses、CC BY-SA 4.0）のCSS本体を逐語で収録しています。
+原語版コンポーネントの記述子部分（iftags +構成要素 の説明文書と display:none の module CSS ラッパ）は
+この機械ページには収録していません。このCSSは KO Sigma-9 基盤向けに書かれたものですが、
+theme:garak-the-magazine-jp 側が #u-side 配下の配色を自前の変数（rgb(var(--main)) / rgb(var(--bg))）で
+上書きするため、JP版では基盤の構造（メニュー字重・折りたたみ矢印・リストリセット等）のみが有効に働きます。
+原語版のライセンスは CC BY-SA 4.0、クレジットは theme:garak-the-magazine-jp ページのクレジットを参照してください。
+原語版ソースの取得: lane-oc-ko4（2026-11-16、read-only プローブ）によりライブ取得され
+stage2-lanes/lane-oc-ko4/work/live-component_u-navstyle.txt に保存されたものを使用しています（再取得は行っていません）。--]
+
+[[code type="CSS"]]
+
+ #u-top .top-bar > ul > li,
+ #u-side .side-block {
+     padding: 10px;
+     border: 1px solid #000;
+     border-radius: 10px;
+     box-shadow: 0 2px 6px rgba(102,0,0,.5);
+     background: #fff;
+     margin-bottom: 15px;
+}
+ #u-top a,
+ #u-side a {
+     color: #b01;
+}
+ #u-side .red {
+    background-color: #fff0f0;
+}
+ #u-side .green {
+    background-color: #f0fff6;
+}
+ #u-side .blue {
+    background-color: #E5E5FF;
+}
+ #u-side .side-area {
+     padding: 10px;
+}
+ #u-side .heading {
+     color: #000;
+     border-bottom: solid 1px #000;
+     padding-left: 15px;
+     margin-top: 10px;
+     margin-bottom: 5px;
+     font-size: 8pt;
+     font-weight: bold;
+}
+ #u-top p,
+ #u-side p {
+     margin: 0;
+}
+ #u-side div.menu-item {
+     margin: 2px 0;
+     word-break: keep-all;
+}
+
+ #u-side div.menu-item img {
+     width: 13px;
+     height: 13px;
+     border: 0;
+     margin-right: 2px;
+     position: relative;
+     bottom: -2px;
+}
+ #u-top .top-bar a,
+ #u-top .mobile-top-bar a,
+ #u-side div.menu-item a {
+     font-weight: bold;
+     word-break: keep-all;
+     line-height: 1.6;
+}
+ #u-side div.menu-item.inactive img {
+     opacity: 0.25;
+}
+ #u-side div.menu-item.inactive a {
+     color: #999;
+}
+ #u-side div.menu-item .sub-text {
+     font-size: 80%;
+     color: #666;
+}
+ #u-side div.menu-item.sub-item {
+}
+
+ #u-side div.collapsible-block div.collapsible-block-folded > a.collapsible-block-link::after {
+     content: "▼";
+     position: absolute;
+     top: 2px;
+     right: 5px;
+     font-size: 80%;
+}
+ #u-side .collapsible-block-folded {
+     padding: 2px;
+     margin-bottom: 5px;
+     position: relative;
+     border-bottom: solid 1px #000;
+}
+
+ #u-side div.collapsible-block div.collapsible-block-unfolded-link a.collapsible-block-link::after {
+     content: "▲";
+     position: absolute;
+     top: 0;
+     right: 5px;
+     font-size: 80%;
+}
+
+ #u-side .collapsible-block-folded , 
+ #u-side .collapsible-block-unfolded-link {
+     position: relative;
+     border-bottom: solid 1px #000;
+}
+
+ #u-side .collapsible-block-link {
+     font-weight: bold;
+}
+ #u-side div.collapsible-block div.collapsible-block-folded > .collapsible-block-link {
+     width: 100%;
+     display: inline-grid;
+}
+
+ #u-side .collapsible-block-unfolded {
+     margin: 10px 0;
+     border-bottom: 1px solid #000;
+}
+
+ #u-side .collapsible-block-content {
+     margin: 5px;
+}
+
+ #u-side .collapsible-block-unfolded-link .collapsible-block-link {
+     margin-top: 10px;
+     margin-bottom: 5px;
+     padding: 2px 0;
+}
+
+ #u-side .collapsible-block-unfolded-link .collapsible-block-link:hover {
+     text-decoration: none;
+}
+ #u-side ul{
+     list-style-type: none;
+     padding: 0 5px 0;
+}
+
+/* 샌드박스 */
+#u-side blockquote,
+#u-side div.blockquote {
+  display: none;
+}
+#u-side .content-panel.standalone.user-hub {
+  box-shadow: none;
+}
+[[/code]]

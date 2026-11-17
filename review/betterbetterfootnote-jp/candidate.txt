@@ -1,0 +1,143 @@
+[!--
+    component:betterbetterfootnote-jp — Sigma-10 JP 版 fendsfox 製「もっと良い脚注」受信ページ（receiver）
+
+    このページはテーマからの [[include component:betterbetterfootnote-jp]] 展開、および
+    @import（local--code/component%3Abetterbetterfootnote-jp/1）で読み込まれる機械用ページです。
+    [[include component:betterbetterfootnote-jp]] は、原語版の [[include :fendsfox:component:betterbetterfootnote]] と
+    同様に、hovertip のスタイルを local--code/component%3Abetterbetterfootnote-jp/1 経由でページに適用します。
+
+    CSS のみが必要な場合は、次の @import でも同じ内容を読み込めます:
+        @import url(https://sigma10-jp-test.wdfiles.com/local--code/component%3Abetterbetterfootnote-jp/1);
+
+    原語版: https://fendsfox.wikidot.com/component:betterbetterfootnote
+    収録 CSS: betterbetterfootnote/code/1 — 2,402 B / 96 行、本ファイルのコードブロック1に verbatim で収録
+    取得元: audit-inline cache（2026-11-16 に live Wikidot から1回取得してキャッシュされたものを再利用）
+              externals/fendsfox__component:betterbetterfootnote__code__1
+
+    この受信ページは日本語の説明文と注釈コメントのみを加え、CSS 本体には一切手を入れていません。
+    ライセンス・利用条件は原ページを参照してください。作者: fendsfox。
+    ライセンス・著作権表示・クレジットは、このページを include する各テーマページのクレジットを参照してください。
+--]
+
+[[module css]]
+@import url(https://sigma10-jp-test.wdfiles.com/local--code/component%3Abetterbetterfootnote-jp/1);
+[[/module]]
+
+[[iftags +component]]
+
++ これは何？
+
+これはコンポーネントです。このコンポーネントは hovertip のスタイルを変更し、画面右下に滑らかに出現するようにします。[[footnote]]おそらく一部の Black-Highlighter 系で hovertip が閉じられなくなるバグを解決します。[[/footnote]] [[footnote]]betterfootnotes よりもさらに better！[[/footnote]]
+
+ページに次のコードを追加すると、このコンポーネントが適用されます:
+
+[[div class="code"]]
+[[in@@clude component:betterbetterfootnote-jp]]
+[[/div]]
+
+{{:root}} 内の変数を変更することで、外観をカスタマイズできます（色・フォントのみ）。
+
+[[footnoteblock]]
+
++ ソースコード：
+
+[[code type="CSS"]]
+@font-face {
+    font-family: Jost;
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url('https://cdn.scpwiki.com/theme/en/basalt/fonts/Jost-Book.woff2') format('woff2')
+}
+@font-face {
+    font-family: Jost;
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: url('https://cdn.scpwiki.com/theme/en/basalt/fonts/Jost-Bold.woff2') format('woff2')
+}
+
+:root {
+    --bg_color1: 153, 0, 17;
+    --bg_color2: 46, 46, 46;
+    --bg_color3: var(--text_color1);
+    --text_color1: 255, 255, 255;
+    --text_color2: 0, 0, 0;
+    --shadow_color: var(--text_color2);
+    --font1: 'Jost';
+}
+
+div.hovertip {
+    border-radius: 0;
+    box-shadow: 0 0 .25em rgba(var(--shadow_color),0.3);
+    box-sizing: border-box;
+    background-color: rgb(var(--bg_color3))!important;
+    border: none!important;
+    color: rgb(var(--text_color2));
+    padding: 1em;
+    width: min(25em, 30em)!important;
+    top: initial!important;
+    left: initial!important;
+    position: fixed!important;
+    display: block!important;
+    bottom: 2em;
+    right: -26em;
+    transition: right .45s cubic-bezier(.6,.18,.27,.88);
+    transition-delay: 0.5s;
+    z-index: 29;
+}
+div.hovertip:not(:has(div[class*="-heading"])) {
+    border-bottom: rgb(var(--bg_color2)) 0.25em solid !important;
+}
+div.hovertip::before {
+    content: "";
+    display: block;
+    background-color: rgb(var(--bg_color2));
+    height: 0.25em;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: -0.125em;
+}
+div.hovertip:not(:has(div[class*="-heading"]))::before {
+    display: none;
+}
+div.hovertip:is(:hover, [style*="display: block"]) {
+    z-index: 30;
+    right: 1em;
+    transition-delay: 0s;
+}
+div.hovertip div.content {
+    padding: 0;
+}
+div.hovertip div.content div[class] div[class*="-heading"] {
+    background-color: rgb(var(--bg_color1));
+    color: rgb(var(--text_color1));
+    font-family: var(--font1);
+    font-size: 1em;
+    line-height: 1.5em;
+    height: 1.5em;
+    inset-block-start: -1.5em;
+    inset-inline-start: 0;
+    margin-block-end: -1em;
+    padding: 0 0.5em;
+    position: absolute;
+    width: max-content;
+    z-index: -1;
+}
+div.hovertip div.content div[class] div[class*="-content"] {
+    margin: 0;
+    padding: 0;
+}
+div.hovertip div[class*="-footer"] {
+    display: none;
+}
+
+@media (max-width: 30em) {
+    div.hovertip {
+        width: min(20em, 25em)!important;
+    }
+}
+[[/code]]
+
+[[/iftags]]

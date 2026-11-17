@@ -128,6 +128,14 @@ def packages():
     return found
 
 
+# Packages whose diff.md is hand-authored because the generator's
+# single-original/single-candidate model does not fit the record:
+# license-box-theme-jp is a thin receiver (no diff by design; a generated
+# diff against its named counterpart would prove nothing), and
+# peroxide-jp-base-css presents one mirror against two candidate files.
+HAND_AUTHORED_DIFFS = {"license-box-theme-jp", "peroxide-jp-base-css"}
+
+
 def _norm_mech(line):
     s = " ".join(line.split())
     for rx, rep in _MECH_SUBS:
@@ -1027,6 +1035,8 @@ def main():
     stale = []
     problems = []
     for pkg in packages():
+        if pkg.name in HAND_AUTHORED_DIFFS:
+            continue
         generated = generate(pkg)
         target = pkg / "diff.md"
         if check:
