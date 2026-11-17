@@ -1,0 +1,436 @@
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** Caretaker Theme（Sigma版）
+**翻訳責任者:** AI
+**翻訳年:** 2026
+**原題:** Caretaker Theme (Sigma Version)
+**著作権者:** winkwonkboi
+**作成年:** 2025
+**初訳時参照リビジョン:** 10
+**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:caretaker-sigma Caretaker Theme (Sigma Version)]
+[[include :scp-jp:credit:end-preview]]
+
++ これは何？
+
+winkwonkboi が、[*https://scp-wiki.wikidot.com/anomalous-entity-engagement-division-hub 異常存在接触部（AEED、英語版）]配下の記事のために作成した Caretaker Theme（Sigma版）です。
+
+> @@[[include :scp-jp:theme:caretaker-sigma-jp]]@@
+
+どのウィキでも、上記のコードをページの最上部に置いてください。
+
+----
+
+[[include :scp-jp:component:image-block name=https://scp-wiki.wdfiles.com/local--files/theme%3Acaretaker-sigma/feesh.png|caption=わぁ、私だ|width=250px]]
+
++ 例
+
+ハイフンを5つ並べた @@-----@@ で水平線を作れます。divブロック（引用ブロックなど）の内側に置かなければ、ページの幅いっぱいに広がります。このページの各節を区切っているのが水平線です。
+
+[# 未訪問のリンク。]
+[[[theme:caretaker-sigma|訪問済みのリンク。]]]
+
+[[collapsible show="+ これは折りたたみです。" hide="- 折りたたみを閉じる。"]]
+行頭に「+」を1つから6つ置くと見出しになります。
+
++ 見出し1
+++ 見出し2
++++ 見出し3
+++++ 見出し4
++++++ 見出し5
+++++++ 見出し6
+[[/collapsible]]
+
+----
+
+[[tabview]]
+[[tab タブ]]
+ここに1行。
+[[/tab]]
+[[tab タブ2]]
+ここに1行、
+
+そしてもう1行。
+[[/tab]]
+[[tab タブ3]]
+ここにはかなりの行数があります。
+
+ここにはかなりの行数があります。
+
+ここにはかなりの行数があります。
+
+ここにはかなりの行数があります。
+
+ここにはかなりの行数があります。
+
+ここにはかなりの行数があります。
+
+ここにはかなりの行数があります。
+
+ここにはかなりの行数があります。
+
+ここにはかなりの行数があります。
+
+ここにはかなりの行数があります。
+
+ここにはかなりの行数があります。
+
+ここにはかなりの行数があります。
+
+ここにはかなりの行数があります。
+
+ここにはかなりの行数があります。
+
+ここにはかなりの行数があります。
+[[/tab]]
+[[tab ご覧のとおり、これはタブビューの4番目のタブです。]]
+そしてどこかに何かがありました。
+[[/tab]]
+[[tab など。]]
+
+[[/tab]]
+[[tab など。]]
+
+[[/tab]]
+[[tab など。]]
+
+[[/tab]]
+[[tab など。]]
+
+[[/tab]]
+[[tab など。]]
+
+[[/tab]]
+[[tab など。]]
+
+[[/tab]]
+[[tab など。]]
+
+[[/tab]]
+[[tab など。]]
+おい、昼飯代を出せ。
+[[/tab]]
+[[/tabview]]
+
+@@ @@
+
+[[div class="blockquote"]]
+こんにちは、これは引用ブロックです。
+----
+divブロックを使って作ることもできます。
+
+> あるいは行頭に「>」を置いて作ります。
+>> 入れ子の引用ブロック。[[footnote]]これは脚注です。[[/footnote]]
+[[/div]]
+
+@@ @@
+
+||~ ええ、そうです。 ||~ これは表です。 ||
+|| きっと || 作り方は ||
+|||| ご存じですよね？ ||
+
+----
+
++ ソースコード
+
+[[collapsible show="ソースコードを表示" hide="ソースコードを閉じる"]]
+[[code type="CSS"]]
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap');
+
+div#container-wrap {
+  background-image: url('https://scp-wiki.wdfiles.com/local--files/theme%3Acaretaker-sigma/carebody.png');
+}
+
+#header {
+  background-image: url('https://scp-wiki.wdfiles.com/local--files/theme%3Acaretaker-sigma/AEEDLogoWhite.png');
+}
+
+#header h1 span,
+#header h2 span {
+  text-shadow: none;
+  color: transparent;
+}
+
+#header h1 span::before {
+  content: 'SCP Foundation';
+  font-family: "Fredericka the Great", serif;
+  color: #ffffff;
+  text-shadow: 0rem 0rem 0.3125rem #a3006b;
+}
+
+#header h2 span::before {
+  content: 'Anomalous Entity Engagement Division';
+  color: #ffffff;
+  font-family: "Delius Swash Caps", cursive;
+  font-style: italic;
+  text-shadow: 0rem 0rem 0.3125rem #a3006b;
+}
+
+#search-top-box-input,
+#search-top-box-input:hover,
+#search-top-box-input:focus {
+  background-color: #a3006b;
+  color: #ffffff;
+}
+
+#search-top-box-form input[type=submit],
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+  background-color: #a3006b;
+  border: none;
+  color: #ffffff;
+  background-image: none;
+}
+
+#login-status,
+#login-status a {
+  color: #ffffff;
+  text-shadow: 0.0625rem 0.0625rem 0.0625rem #a3006b;
+}
+
+#account-options li a,
+#account-options li a:hover {
+  color: #a3006b;
+  text-shadow: none;
+}
+
+#account-options {
+  border: 1px solid #a3006b;
+}
+
+#account-options ul {
+  background-color: #ffffff;
+}
+
+#top-bar ul li:hover a:hover {
+  color: #a3006b;
+}
+
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a {
+  color: #a3006b;
+}
+
+div.page-rate-widget-box .rate-points {
+  background-color: #a3006b;
+  color: #ffffff;
+  border: solid 1px #a3006b;
+}
+
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+  background-color: #ffffff;
+  border-top: solid 1px #a3006b;
+  border-bottom: solid 1px #a3006b;
+}
+
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a {
+  background: transparent;
+  color: #a3006b;
+}
+
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover {
+  background: #b3446d;
+  color: #ffffff;
+}
+
+.page-rate-widget-box .cancel {
+  background-color: #a3006b;
+  border: solid 1px #a3006b;
+}
+
+.page-rate-widget-box .cancel a {
+  color: #f4c2c2;
+}
+
+.page-rate-widget-box .cancel a:hover {
+  background: #a3006b;
+  color: #f4c2c2;
+}
+
+#page-content .rate-box-with-credit-button {
+  background-color: #a3006b;
+  border: solid 1px #a3006b;
+}
+
+#page-content .rate-box-with-credit-button .creditButton p a {
+  border-left-color: #b3446d;
+}
+
+#page-content .rate-box-with-credit-button .creditButton a {
+  color: #f4c2c2;
+}
+
+#page-content .modalbox {
+  border: solid 1px #a3006b;
+  box-shadow: none;
+}
+
+#side-bar .heading,
+#interwiki .heading {
+  color: #b3446d;
+  border-color: #a3006b;
+}
+
+#side-bar div.side-block,
+#side-bar .side-block.media,
+#side-bar .side-block.resources,
+#interwiki .side-block {
+  background: #fef9f9;
+  border: 1px solid #a3006b;
+}
+
+#page-title,
+.meta-title {
+  color: #b3446d;
+  font-family: "Fredericka the Great", serif;
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #a3006b;
+  font-family: "Delius Swash Caps", cursive;
+  font-weight: bold;
+}
+
+a,
+#side-bar a,
+#interwiki a {
+  color: #b3446d;
+}
+
+a:visited,
+#side-bar a:visited,
+#interwiki a:visited {
+  color: #8b008b;
+}
+
+div.yui-navset div.yui-content {
+  background: #fef9f9;
+  border: dotted 1px #b3446d;
+}
+
+div.yui-navset ul.yui-nav a,
+div.yui-navset div.yui-navset-top ul.yui-nav a {
+  background: #fefefe;
+  border: solid 1px #b3446d;
+  color: #000000;
+}
+
+div.yui-navset ul.yui-nav a:hover,
+div.yui-navset ul.yui-nav a:focus {
+  background: #f4c2c2;
+}
+
+div.yui-navset ul.yui-nav .selected a,
+div.yui-navset ul.yui-nav .selected a:focus,
+div.yui-navset ul.yui-nav .selected a:hover {
+  background: #a3006b;
+  color: #ffffff;
+}
+
+.yui-navset .yui-nav {
+  border: none;
+  padding-bottom: 1px;
+}
+
+#toc {
+  background-color: #fef9f9;
+  border: 2px dashed #b3446d;
+}
+
+blockquote,
+div.blockquote {
+  background: #fef9f9;
+  border: 2px dashed #b3446d;
+}
+
+table.wiki-content-table th {
+  background: #a3006b;
+  border: 1px solid #b3446d;
+  color: #ffffff;
+}
+
+.scp-image-block .scp-image-caption {
+  background-color: #fef9f9;
+  color: #a3006b;
+  border: 1px solid #b3446d;
+}
+
+@media only screen and (max-width: 56.25rem) {
+  #header h1 span::before {
+    font-size: 1.5rem;
+  }
+
+  #header h2 span::before {
+    content: 'Engagement Division';
+  }
+
+  #top-bar .open-menu a {
+      border: 0.2em solid #a3006b;
+      background-color: #ffffff;
+      color: #a3006b;
+  }
+
+  #side-bar {
+    background-color: #a3006b;
+  }
+}
+
+@media only screen and (max-width: 22.5rem) {
+  #header h1 span::before {
+    font-size: 1rem;
+  }
+
+  #header h2 span::before {
+    content: 'AEED';
+  }
+}
+
+/* ===== SCP-JP ローカライズ補正（原語版への追記） ===== */
+/* 和文フォント: 特例内の配信元（Google Fonts）から Noto Sans JP を読み、見出しの
+   フォントスタックに和文フォールバックとして加える。 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+#page-title,
+.meta-title {
+  font-family: "Delius Swash Caps", "Noto Sans JP", cursive;
+}
+[[/code]]
+[[/collapsible]]
+
+[[include :scp-jp:component:license-box-backend]]
+
+* **ファイル名:** feesh.png, carebody.png
+* **著作権者:** winkwonkboi
+* **ライセンス:** CC BY-SA 3.0
+* **ソースリンク:** SCP Foundation
+* **ファイル名:** AEEDLogoWhite.png
+* **著作権者:** GreenGolem
+* **ライセンス:** CC BY-SA 3.0
+* **ソースリンク:** SCP Foundation
+
+[[include :scp-jp:component:license-box-end]]
+
+[[/iftags]]
+
+[[module css]]
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Acaretaker-sigma-jp/1")
+[[/module]]
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme= https://sigma10-jp-test.wdfiles.com/local--code/theme%3Acaretaker-sigma-jp/1
+]]

@@ -1,0 +1,637 @@
+[[module CSS]]
+@import url('https://scp-wiki.wdfiles.com/local--code/theme:decom-dept/1');
+[[/module]]
+
+[[module CSS]]
+
+#header {
+    background: url('https://scp-wiki.wdfiles.com/local--files/theme%3Adecom-dept/DeDPride.png') 13px 41px no-repeat!important;
+    background-size: 100px 100px!important;
+}
+
+[[/module]]
+
+[[include :scp-wiki:component:interwiki-style
+|priority=1
+|theme=https://scp-wiki.wdfiles.com/local--code/theme:decom-dept/1
+]]
+
+[[iftags +theme]]
+
+[[>]]
+**Rating Module:**
+
+[[module Rate]]
+[[/>]]
+
+[[include :scp-wiki:component:author-label-source start=--
+|name=Calibold
+|no-right-margin=*]]
+[[=]]
+[[module ListPages range="."]]
+**%%title%%**
+[[/module]]
+
+**[[[Calibri Bold's Mega Cool Author Page|Calibold's Mega Cool Author Page]]]**
+[[/=]]
+[[include :scp-wiki:component:author-label-source end=--]]
+
+[[>]]
+**Info Rating Module:**
+[[/>]]
+
+[[include :scp-wiki:info:start]]
+Info about your page.
+[[include :scp-wiki:info:more]]
+More information about your page.
+[[include :scp-wiki:info:end]]
+
++ Usage
+
+This is a theme page made for the [[[Decom. Dept. Hub|Decommissioning Department]]], created by [[*user Calibold]]
+
+To import this theme to your page, put the following anywhere inside it:
+
+> @@[[include :scp-wiki:theme:decom-dept]]@@
+
+If you'd prefer a pride logo instead of the normal one, put this instead:
+
+> @@[[include :scp-wiki:theme:decom-dept |inc-pride= --]]]@@
+
+[[include component:image-block
+| name=https://scp-wiki.wdfiles.com/local--files/theme%3Adecom-dept/DeDLogo.svg
+| caption=This is an image block.
+| width=200px]]
+
+You can view any page's Backlinks by clicking "+ Options" at the bottom of the page, then "Backlinks".
+
++ Examples
+
+A horizontal rule can be created with 4 hyphens "@@----@@" and extends across the whole page if it's not placed inside anything (eg a blockquote). The lines separating sections of this document are horizontal rules.
+
+----
+
+Titles can be created by putting between one and six plus "+" at the start of the line
+
+[[collapsible show="+ Titles" hide="- Titles"]]
++ First Title
+
+++ Second Title
+
++++ Third Title
+
+++++ Fourth Title
+
++++++ Fifth Title
+
+++++++ Sixth Title
+[[/collapsible]]
+
+@@ @@
+
+[[tabview]]
+[[tab Tabulator]]
+This is a tab view.[[footnote]]Special thanks to [[*user Lt Flops]] and [[*user stormbreath]] for the tab code![[/footnote]]
+
+[[/tab]]
+[[tab Tabulation]]
+Hey look, more text here.
+
+How quaint.
+[[/tab]]
+[[tab Long Tab]]
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+[[/tab]]
+[[tab Empty Tab]]
+[[/tab]]
+[[tab Empty Tab]]
+[[/tab]]
+[[tab Empty Tab]]
+[[/tab]]
+[[/tabview]]
+
+> This is a blockquote, created by putting "> " at the start of each line.
+>
+> More text
+> -----
+> That's a horizontal rule
+>
+>> Nested blockquotes
+
+||~ This is a ||~ table ||
+||You should know || how to make these ||
+|||| already ||
+
+------
+
+[[collapsible show="+ View Source Code" hide="- View Source Code"]]
+
+[[code type="css"]]
+
+@import url('https://fonts.bunny.net/css2?family=Poppins&display=swap');
+@import url('https://fonts.bunny.net/css2?family=Roboto+Slab:wght@400;700&display=swap');
+@import url('https://grombald.github.io/Common-Theme/font/font-awesome.min.css');
+
+:root {
+    --lightest-gray: #fbfbfb;
+    --lighter-gray: #f2f2f2;
+    --light-gray: #e8e8e8;
+    --normal-gray: #c4c4c4;
+}
+body {
+    background: var(--lighter-gray);
+    font-size: 0.8em;
+}
+a {
+    color: #0000ff;
+}
+a:visited {
+    color: #0000dd;
+}
+a.newpage {
+    color:#7777ff;
+}
+h1,h2,h3,h4,h5,h6,#page-title,.meta-title {
+    font-family: 'Roboto Slab', serif;
+}
+h1,h2,h3,h4,h5,h6 {
+    color: #000000;
+    font-weight: 400;
+}
+#page-title,
+.meta-title {
+    border-color: #000000;
+    color: #000000;
+    font-weight: 400;
+}
+
+.scp-image-block.block-left {
+  box-shadow: none;
+}
+.scp-image-block.block-center {
+  box-shadow: none;
+}
+.scp-image-block.block-right {
+  box-shadow: none;
+}
+.scp-image-block .scp-image-caption{
+    background-color: var(--light-gray);
+}
+blockquote,
+div.blockquote{
+    background-color: var(--light-gray);
+}
+
+/* ---- HEADER ---- */
+
+#header {
+    background: url('https://scp-wiki.wdfiles.com/local--files/theme%3Adecom-dept/DeDLogo.svg') 13px 41px no-repeat;
+    background-size: 94px 86px;
+}
+div#header h1 a span {
+    font-size: 0px;
+}
+div#header h1 a:before {
+    content: "Decommissioning Dept.";
+    color: #ffffff;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+}
+div#header h2 span {
+    font-size:0px;
+    padding: 4px;
+}
+div#header h2:after {
+    content: "Secured, Contained, Protected";
+    font-weight: bold;
+    color: #ffffff;
+    padding: 19px 0;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
+    white-space: pre;
+}
+@media (max-width: 1000px){
+    div#header h1 a:before {
+    content: "Decom. Dept.";
+    color: #ffffff;
+    }
+}
+div#container-wrap {
+    background: url(https://scp-wiki.wdfiles.com/local--files/theme:decom-dept/DeDWrapGradient.png) top left repeat-x;
+}
+
+/* ---- SEARCH ---- */
+
+#search-top-box-input,
+#search-top-box-form input[type=submit],
+#search-top-box-form input[type=submit]:focus {
+  background-color: #c3c3c3!important;
+  background-image: none!important;
+  border-color: #000000;
+  border-radius: 0;
+  border-width: 1px;
+  color: #000000;
+  font-size: 1em;
+  outline: 0;
+  box-shadow: none;
+}
+#search-top-box-input:focus,
+#search-top-box-input:hover {
+  background-color: #838383;
+  box-shadow: none;
+}
+#search-top-box-form input[type=submit] {
+  background-color: #909090;
+  border-color: #000000;
+  border-width: 1px;
+}
+#search-top-box-form input[type=submit]:hover {
+  background-color: #aaaaaa;
+  border-color: #000000;
+  border-width: 1px;
+  box-shadow: none;
+}
+
+/* ---- TOP BAR ---- */
+
+#top-bar, #top-bar a {
+     color: #ffffff;
+}
+#top-bar ul li a,
+#top-bar ul li a {
+    color: #ffffff;
+}
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a {
+    color: #0000ff;
+}
+#top-bar ul li ul {
+    box-shadow: none;
+}
+
+/* ---- SIDEBAR ---- */
+
+div#side-bar div.side-block {
+    background: var(--lightest-gray);
+    border-radius: 0px;
+    color: #000000;
+    border-color: #000000;
+    box-shadow: none;
+}
+div#side-bar div.side-block div.heading,
+div#side-bar div.collapsible-block-unfolded-link,
+div#side-bar div.collapsible-block-unfolded-link div.collapsible-block-link {
+    color: #000000;
+    border-color: #000000;
+}
+
+#side-bar .side-block.media,
+#side-bar .side-block.resources {
+    background-color: var(--lightest-gray);
+    border-color: 000000;
+}
+#side-bar .side-block.media a>img {
+    margin-right: 2px;
+    margin-left: 2px;
+}
+#side-bar a,
+#side-bar a:visited {
+  color: #0000ff;
+}
+.side-block .menu-item > .image {
+  filter: hue-rotate(240deg);
+}
+@media (max-width: 767px) {
+  #side-bar {
+    background-color: var(--normal-gray);
+  }
+}
+div.open-menu a {
+    color: #00000!important;
+    border-color: #000000!important;
+}
+#side-bar .side-block, #interwiki .side-block {
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 0px;
+    box-shadow: 0 2px 6px rgba(102, 0, 0, 0);
+    background: var(--lightest-gray);
+    margin-bottom: 15px;
+}
+
+/* ---- RATE MODULE ---- */
+
+.page-rate-widget-box {
+    margin-right: 0px;
+}
+
+.creditRate {
+    margin-right: 0px!important;
+}
+
+.page-rate-widget-box .rate-points,
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown,
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a,
+.page-rate-widget-box .cancel a {
+  background-color: transparent !important;
+  border: 0;
+  color: #000000!important;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+div.page-rate-widget-box {
+    background-color: var(--lightest-gray)!important;
+    border: solid #000000 1px!important;
+    border-radius: 0px;
+    box-shadow: none;
+}
+div.page-rate-widget-box span.rate-points,
+div.page-rate-widget-box span.cancel {
+    background-color: var(--lightest-gray)!important;
+    border: 1px var(--lightest-gray);
+}
+div.page-rate-widget-box span.rateup,
+div.page-rate-widget-box span.ratedown {
+    background-color: var(--lightest-gray)!important;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+div.page-rate-widget-box span.rateup a,
+div.page-rate-widget-box span.ratedown a {
+    color: #000000!important;
+}
+div.page-rate-widget-box span.rateup a:hover {
+    background: #00ff00!important;
+    color: var(--lightest-gray)!important;
+}
+div.page-rate-widget-box span.ratedown a:hover {
+    background: #ff0000!important;
+    color: var(--lightest-gray)!important;
+}
+div.page-rate-widget-box span.cancel a {
+    color: #000000!important;
+}
+div.page-rate-widget-box span.cancel a:hover {
+    background: #888888!important;
+    color: var(--lightest-gray)!important;
+    border-radius: 0px;
+}
+
+/* ---- INFO RATE MODULE ---- */
+
+.rate-box-with-credit-button > div.page-rate-widget-box {
+     border-width: 0px!important;
+}
+#page-content .rate-box-with-credit-button {
+    background-color: var(--lightest-gray);
+    border: solid 1px #000000;
+    border-radius: 0;
+    box-shadow: none;
+    overflow: hidden;
+}
+#page-content .rate-box-with-credit-button .creditButton p a {
+    border-left-color: transparent;
+}
+ #page-content .rate-box-with-credit-button .page-rate-widget-box .cancel {
+    border-radius: 0;
+}
+#page-content .rate-box-with-credit-button .page-rate-widget-box .rate-points {
+    border-left: 0;
+}
+.rate-box-with-credit-button .page-rate-widget-box .cancel a:hover {
+    border-radius: 0;
+}
+#page-content .rate-box-with-credit-button .fa-info {
+     color: #000000;
+     line-height: 15px;
+     padding-top: 1px;
+}
+@media (max-width: 450px) {
+#page-content .rate-box-with-credit-button .fa-info { 
+        line-height: 14px;
+    }
+}
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+    #page-content .rate-box-with-credit-button .fa-info { 
+        line-height: 14px;
+        padding-top: 2px;
+    }
+}}
+#page-content .rate-box-with-credit-button .fa-info:hover {
+     color: var(--lightest-gray);
+     background-color: #0000ff;
+}
+#page-content .creditButtonStandalone p a {
+    background-color: #f4f4f4;
+    border: solid 1px #000000;
+    border-radius: 0;
+    box-shadow: none;
+    color: #000000;
+}
+#page-content .creditButtonStandalone p a:hover {
+    color: #ff0000;
+}
+
+#page-content .modalbox {
+     background: #f4f4f4 !important;
+     color: #000000;
+     box-shadow: none;
+}
+.close-credits,
+.credit-back {
+     filter: hue-rotate(240deg);
+}
+
+/* ---- INFO BAR ---- */
+
+body{
+    --barColour: #888888;
+    --linkColour: #f4f4f4;
+}
+.translation_block {
+    filter: hue-rotate(240deg) brightness(98%);
+}
+#u-author_block > p > a: {
+    box-shadow: none!important;
+    transition: none!important;
+}
+#u-author_block > p > a:hover {
+    box-shadow: none!important;
+    background: var(--normal-gray)!important;
+}
+.info-container .collapsible-block-folded:hover,
+.info-container .collapsible-block-unfolded-link:hover {
+    background: var(--normal-gray)!important;
+}
+
+/* -------- YUI TAB BASE -------- */
+ .yui-navset .yui-nav a,.yui-navset .yui-navset-top .yui-nav a{background-color:inherit;background-image:inherit}.yui-navset .yui-nav a:hover,.yui-navset .yui-nav a:focus{background:inherit;text-decoration:inherit}.yui-navset .yui-nav .selected a,.yui-navset .yui-nav .selected a:focus,.yui-navset .yui-nav .selected a:hover{color:inherit;background:inherit}.yui-navset .yui-nav,.yui-navset .yui-navset-top .yui-nav{border-color:inherit}.yui-navset li{line-height:inherit}
+
+/* -------- YUI TAB CUSTOMIZATION --------
+ * Adapted From 'Black Highlighter Theme'
+**/
+ .yui-navset .yui-nav,
+ .yui-navset .yui-navset-top .yui-nav{
+     display: flex;
+     flex-wrap: wrap;
+     width: calc(100% - .125rem);
+     margin: 0 auto;
+
+     border-color: #000000;
+     box-shadow: 0 calc(.0625rem * 5) 0 0 #000000;
+}
+ .yui-navset .yui-nav {
+     border-bottom-width: 1px;
+}
+ .yui-navset .yui-content {
+     border-top-width: 5px;
+}
+ .yui-navset .yui-nav a, /* ---- Link Modifier ---- */
+ .yui-navset .yui-navset-top .yui-nav a{
+     color: hsl(0, 0%, 5%);
+     /* ---- Tab Background Colour | [UNSELECTED] ---- */
+     background-color: var(--light-gray);
+     /* -------- */
+     background-image: none;
+     border: unset;
+}
+ .yui-navset .yui-nav a:hover,
+ .yui-navset .yui-nav a:focus{
+     color: #000000;
+     /* ---- Tab Background Colour | [HOVER] ---- */
+     background-color: var(--normal-gray);
+     /* -------- */
+}
+ .yui-navset .yui-nav li, /* ---- Listitem Modifier ---- */
+ .yui-navset .yui-navset-top .yui-nav li{
+     position: relative;
+     display: flex;
+     flex-grow: 2;
+     max-width: 100%;
+     margin: 0;
+     padding: 0;
+
+     background-color: hsl(0, 0%, 96%);
+     border-color: transparent;
+     box-shadow: 0 0 0 .0625rem #000000;
+}
+ .yui-navset .yui-nav li a,
+ .yui-navset-top .yui-nav li a,
+ .yui-navset-bottom .yui-nav li a{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+}
+ .yui-navset .yui-nav li em{
+     border: unset;
+}
+ .yui-navset .yui-nav a em,
+ .yui-navset .yui-navset-top .yui-nav a em{
+     padding: .35em .75em;
+
+     text-overflow: ellipsis;
+     overflow: hidden;
+     white-space: nowrap;
+}
+ .yui-navset .yui-nav .selected, /* ---- Selection Modifier ---- */
+ .yui-navset .yui-navset-top .yui-nav .selected{
+     flex-grow: 2;
+     margin: 0;
+     padding: 0;
+
+     /* ---- Tab Background Colour | [SELECTED] ---- */
+     background-color: #000000;
+     /* -------- */
+}
+ .yui-navset .yui-nav .selected a,
+ .yui-navset .yui-nav .selected a em{
+     border: #000000;
+}
+ .yui-navset .yui-nav .selected a{
+     width: 100%;
+
+     color: hsl(0, 0%, 96%) !important;
+     background-image: none;
+}
+ .yui-navset .yui-nav .selected a:focus,
+ .yui-navset .yui-nav .selected a:active{
+     color: hsl(0, 0%, 96%);
+     background-color: #000000;
+}
+ .yui-navset .yui-nav .selected a:hover{
+     cursor: default;
+}
+ .yui-navset-left .yui-content{
+     /* ---- Content Background ---- */
+     background-color: var(--light-gray);
+     /* -------- */
+}
+ .yui-navset .yui-content,
+ .yui-navset .yui-navset-top .yui-content{
+     padding: .5em;
+     border-color: #000000;
+}
+
+/* ---- TABLES ---- */
+
+table.wiki-content-table th {
+    background-color: var(--light-gray);
+    border-color: #000000;
+}
+
+table.wiki-content-table td {
+    border-color: #000000;
+}
+
+/* ---- WIKIMODULE ---- */
+
+.collection .collapsible-block-unfolded-link a , .collection .collapsible-block-folded a {
+  color: rgba(0, 0, 255, 1)!important;
+  background-color: rgba(0, 0, 0, 0.15)!important;
+}
+
+.titlecolumn {
+  background-color: rgba(0, 0, 0, 0.15)!important;
+}
+
+.namerow {
+  background-color: rgba(0, 0, 0, 0.15)!important;
+}
+
+[[/code]]
+
+[[/collapsible]]
+
+[[include :scp-wiki:more-by:calibold]]
+
+[[/iftags]]
