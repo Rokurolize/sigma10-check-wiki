@@ -93,9 +93,10 @@
  *
  * FR source: Cauchynambour; international/English adaptation credited upstream
  * to Cyrielle Centori. Cross-branch Sigma-9 compatibility structure is derived
- * from the existing SCP-KO port by XCninety. The JP port keeps the original
- * `sous-titre` include parameter because the current SCP-JP hub documents that
- * contract.
+ * from the existing SCP-KO port by XCninety. The SCP-JP hub documents the
+ * original `sous-titre` include parameter; the candidate supplies a fixed
+ * default subtitle below so the header renders cleanly on direct views and on
+ * the display-check sample (KB-06), which pass no include argument.
  */
 
 :root {
@@ -104,7 +105,7 @@
   --ct_fns_header-txt: 0;
   --ct_fns_slogan-txt: 0;
   --ct_fns_alt-slogan-txt: var(--step--1, clamp(0.88rem, calc(1.02rem + -0.20vw), 0.98rem));
-  --ct_cnt_alt-slogan-txt: "{$sous-titre}";
+  --ct_cnt_alt-slogan-txt: "太陽が沈む時"; /* 既定のサブタイトル。sous-titre 変数が渡されない直接表示・見本ページで変数名が見出しにそのまま出る問題への対処（KB-06: give the fragment a sane default）。*/
   --ct_bg_header-logo: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aquand-le-soleil-se-couche/header-logo.png");
   --ct_col_link: black;
   --ct_col_link-visited: black;

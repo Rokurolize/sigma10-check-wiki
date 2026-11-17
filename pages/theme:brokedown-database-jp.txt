@@ -245,6 +245,28 @@ __ここに置くと__
 
 ------
 
+[[div class="scanline-wrap scanline-logo"]]
+[[div class="scanline-cell scanline-text"]]
+[[div class="scanline-intext"]]
+
+[[size 260%]]**警 告**[[/size]]
+
+あなたは故障したデータベースを開こうとしています。
+
+異常の影響により、光過敏性の視覚的危険を伴います。
+
+安全のため、気分が悪くなった場合は直ちにログアウトしてください。
+
+[[/div]]
+[[/div]]
+[[div class="scanline-cell scanline-animation"]]
+[[div class="scanline-place" ]]
+[[/div]]
+[[/div]]
+[[/div]]
+
+------
+
 [[div class="scanline-wrap"]]
 [[div class="scanline-cell scanline-text"]]
 [[div class="scanline-intext"]]
@@ -1600,4 +1622,83 @@ table.wiki-content-table td {
 
 [[include :scp-jp:component:license-box-end]]
 
+[[/iftags]]
+
+[!-----------------
+（以下は原語版 pages/theme:brokedown-database.txt L1623–1698 の実装ブロックを日本語化して復元したもの。使用方法の no-animation / my-logo パラメータは、これらのブロックが無いと効果を持たなかった。パラメータ名・セレクタ・プロパティは原語版どおり。）
+------------------------]
+
+[[iftags [[#ifexpr {$no-animation} == (true) | - ]]]]
+[[module CSS]]
+/*
+============================================
+アニメーション停止
+============================================
+*/
+
+
+#container-wrap-wrap::before,
+#header-extra-div-1:before,
+#header-extra-div-1:after,
+#extra-div-6:before,
+#header h1 a::after, #header h2 span::before {
+-webkit-animation: none;
+  animation:none;
+}
+
+/* ------------- 背景とロゴ -------------------*/
+#header-extra-div-1:after,
+#extra-div-6:before{
+-webkit-animation: none;
+  animation:none;
+  display: none;
+}
+
+#header-extra-div-1 ,
+#header-extra-div-1::before {
+  background: none;
+}
+
+/* ------------- ヘッダータイトル -------------------*/
+#header h1 a::after,
+#header h2 span::before {
+  -webkit-filter: none;
+  filter: none;
+  background-image: none;
+  background-color:rgba(var(--pale-blue),1);
+
+    filter:brightness(100%) drop-shadow(0px 0px 5px rgba(0,10,80,0.5));
+
+-webkit-text-stroke:0.01rem rgba(var(--pale-blue),0.5);
+  font-weight: 900;
+}
+
+#header h2 span::before {
+  background-color:rgba(var(--swatch-primary),1);
+}
+[[/module]]
+[[/iftags]]
+
+
+[[iftags [[#ifexpr {$my-logo} == (true) | - ]]]]
+[[module CSS]]
+/*
+============================================
+ロゴ変更
+============================================
+*/
+
+#header-extra-div-1,
+#header-extra-div-1:after,
+#header-extra-div-1:before{
+  mask: none;
+  -webkit-mask:none;
+  background: var(--logo-image);
+  background: {$logo-url};
+  background-size: contain;
+  background-repeat:  no-repeat;
+  background-position: center;
+}
+
+[[/module]]
 [[/iftags]]
