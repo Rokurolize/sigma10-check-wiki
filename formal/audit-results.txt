@@ -1,0 +1,133 @@
+{
+ "root": "/home/roku/src/Rokurolize/sigma10-check-wiki",
+ "invariants": {
+  "I1": {
+   "name": "stamp truthfulness",
+   "method": "build_review.assemble_stamp (expected overall word) + candidate/canonical byte comparison",
+   "checked": 283,
+   "pass": 46,
+   "named_exceptions": [
+    {
+     "subject": "amethyst-v2",
+     "grounds": "named go-sign EXCEPTION: no candidate can be produced; build_review.AMETHYST_LINES is the stamp special case; the package holds original.txt only."
+    },
+    {
+     "subject": "scp-jp-sandbox3",
+     "grounds": "site packages (status.tsv, .css artifacts): their status stamp is generated from status.tsv by build_review.render_status_block; they have no verdict stamp and no canonical pages/*.txt candidate."
+    },
+    {
+     "subject": "scp-jp-storage",
+     "grounds": "site packages (status.tsv, .css artifacts): their status stamp is generated from status.tsv by build_review.render_status_block; they have no verdict stamp and no canonical pages/*.txt candidate."
+    },
+    {
+     "subject": "unstamped packages (22)",
+     "grounds": "component/fragment/base-CSS/JP-original packages carry hand-written verdict prose, not a generated verdict stamp (no '- Overall:' region delimited by STAMP_BEGIN/END)."
+    }
+   ],
+   "violations": []
+  },
+  "I2": {
+   "name": "diff fidelity",
+   "method": "build_review.generate (imported) byte-for-byte vs diff.md; HAND_AUTHORED_DIFFS presence only",
+   "checked": 303,
+   "pass": 305,
+   "named_exceptions": [
+    {
+     "subject": "license-box-theme-jp",
+     "grounds": "build_review.HAND_AUTHORED_DIFFS: license-box-theme-jp (thin receiver) and peroxide-jp-base-css (one mirror, two candidates); diff.md is hand-authored and checked for presence only."
+    },
+    {
+     "subject": "peroxide-jp-base-css",
+     "grounds": "build_review.HAND_AUTHORED_DIFFS: license-box-theme-jp (thin receiver) and peroxide-jp-base-css (one mirror, two candidates); diff.md is hand-authored and checked for presence only."
+    }
+   ],
+   "violations": []
+  },
+  "I3": {
+   "name": "mirror integrity",
+   "method": "sha256(original.*) and byte count vs review/sources.tsv mirror_sha256 / mirror_bytes",
+   "checked": 287,
+   "pass": 287,
+   "named_exceptions": [],
+   "violations": []
+  },
+  "I4": {
+   "name": "/start consistency",
+   "method": "start-themes.tsv row -> package via sources.tsv/classification fullnames + named aliases; reverse coverage; build_start --check",
+   "checked": 287,
+   "pass": 287,
+   "named_exceptions": [
+    {
+     "subject": "amethyst-v2 (row Amethyst V2 Layout)",
+     "grounds": "named go-sign EXCEPTION: no candidate can be produced; build_review.AMETHYST_LINES is the stamp special case; the package holds original.txt only."
+    },
+    {
+     "subject": "review/existing-pages/",
+     "grounds": "review/existing-pages/ holds the collapsed-form record README only (no original.*/candidate.*) - not a package under any invariant."
+    },
+    {
+     "subject": "review/AUTHORITIES/",
+     "grounds": "review/AUTHORITIES/ is the vendored campaign record consumed by build_review.Records, not a package."
+    }
+   ],
+   "violations": [],
+   "build_start_check": {
+    "returncode": 0,
+    "output": "OK: 287 rows on 8 subpages + parity ledger"
+   }
+  },
+  "I5": {
+   "name": "coverage accounting",
+   "method": "LINT-WAVE section-2 coverage ledger recomputed against lint_patterns.RULES / SUPPRESSIONS and the KB/NL corpus; build_index.py --check",
+   "checked": 96,
+   "pass": 96,
+   "named_exceptions": [],
+   "violations": [],
+   "counts": {
+    "kb_files": 81,
+    "nl_entries": 15,
+    "ledger_kb_rows": 81,
+    "ledger_nl_rows": 15,
+    "rules": 19,
+    "suppressions": 28
+   },
+   "coverage_ledger": "/home/roku/src/Rokurolize/sigma10-check-wiki/formal/coverage-ledger.md",
+   "build_index_check": {
+    "returncode": 0,
+    "output": "INDEX.md is up to date"
+   }
+  },
+  "I6": {
+   "name": "candidate sync",
+   "method": "candidate.* sha256 byte-equal to canonical page (sources.tsv candidate_path, else unique byte-identical pages/*.txt)",
+   "checked": 303,
+   "pass": 303,
+   "named_exceptions": [
+    {
+     "subject": "scp-jp-sandbox3",
+     "grounds": "site packages (status.tsv, .css artifacts): their status stamp is generated from status.tsv by build_review.render_status_block; they have no verdict stamp and no canonical pages/*.txt candidate."
+    },
+    {
+     "subject": "scp-jp-storage",
+     "grounds": "site packages (status.tsv, .css artifacts): their status stamp is generated from status.tsv by build_review.render_status_block; they have no verdict stamp and no canonical pages/*.txt candidate."
+    }
+   ],
+   "violations": []
+  }
+ },
+ "exceptions": {
+  "amethyst-v2": "named go-sign EXCEPTION: no candidate can be produced; build_review.AMETHYST_LINES is the stamp special case; the package holds original.txt only.",
+  "site-packages": "site packages (status.tsv, .css artifacts): their status stamp is generated from status.tsv by build_review.render_status_block; they have no verdict stamp and no canonical pages/*.txt candidate.",
+  "hand-authored-diffs": "build_review.HAND_AUTHORED_DIFFS: license-box-theme-jp (thin receiver) and peroxide-jp-base-css (one mirror, two candidates); diff.md is hand-authored and checked for presence only.",
+  "collapsed-records": "review/existing-pages/ holds the collapsed-form record README only (no original.*/candidate.*) - not a package under any invariant.",
+  "authorities": "review/AUTHORITIES/ is the vendored campaign record consumed by build_review.Records, not a package.",
+  "unstamped-packages": "component/fragment/base-CSS/JP-original packages carry hand-written verdict prose, not a generated verdict stamp (no '- Overall:' region delimited by STAMP_BEGIN/END)."
+ },
+ "totals": {
+  "packages": 305,
+  "sources_rows": 287,
+  "start_rows": 287,
+  "violations": 0
+ },
+ "ok": true
+}
