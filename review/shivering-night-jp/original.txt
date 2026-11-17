@@ -1,0 +1,1622 @@
+[[module CSS]]
+@import url(https://scp-wiki-cn.wikidot.com/local--code/theme:shivering-night/1);
+
+/* {$half-height}/
+@import url("https://scp-wiki-cn.wikidot.com/local--code/theme:shivering-night/2");
+/{$half-height} */
+
+/* {$low-height}/
+@import url("https://scp-wiki-cn.wikidot.com/local--code/theme:shivering-night/3");
+/{$low-height} */
+
+/* {$mo}/
+@import url("https://scp-wiki-cn.wikidot.com/local--code/theme:shivering-night/4");
+/{$mo} */
+
+/* {$kl}/
+@import url("https://scp-wiki-cn.wikidot.com/local--code/theme:shivering-night/5");
+/{$kl} */
+
+/* {$dub}/
+@import url("https://scp-wiki-cn.wikidot.com/local--code/theme:shivering-night/6");
+/{$dub} */
+
+/* {$ba}/
+@import url("https://scp-wiki-cn.wikidot.com/local--code/theme:shivering-night/7");
+/{$ba} */
+
+/* {$ct}/
+@import url("https://scp-wiki-cn.wikidot.com/local--code/theme:shivering-night/8");
+/{$ct} */
+[[/module]]
+[[iftags +版式]]
+[[>]]
+**评分：**
+[[module Rate]]
+**评分模块与著作信息模块：**
+[[include :scp-wiki-cn:credit:start]]
+引言与Tabs实例文本引用自《极乐迪斯科》中天人感应技能相关文本。导言悬停文本引用自张爱玲《沉香屑·第一炉香》。
+
+**标题：**夜琉璃 版式
+**维护者：**[[*user Picramnia]]  / [[*user Gumillea]] 
+**发布年份：**2024
+
+**搜索框・维基帐户的样式**
+Created at 2020
+Created by [[*user dog_punch]]
+CC BY-SA 3.0
+https://1nu.wikidot.com/iikanji
+
+**边栏组件**
+Created at 2021
+Created by [[*user EstrellaYoshte]]
+CC BY-SA 3.0
+https://scp-wiki.wikidot.com/component:toggle-sidebar
+
+**四角边框样式**
+Created at 2024
+Created by 百事无成_影黎君
+CC BY-SA 4.0
+https://blog.csdn.net/LY_z_/article/details/140805190
+
+**页眉媒体 - 维多利亚港**
+Created by Ank Kumar
+CC BY-SA 4.0
+https://commons.wikimedia.org/wiki/File:Hongkong_Victoria_Harbour-_View_from_Sky100_(Ank_Kumar)_08.jpg
+
+**页眉媒体 - 玻璃片**
+Created by Freepik
+[https://www.freepik.com/legal/terms-of-use Freepik Terms of use]
+https://www.freepik.com/free-vector/realistic-polygonal-background_13223084.html
+
+**演示图片 - 入梦小猫**
+Created by רינת מינדליס
+CC BY-SA 4.0
+Creative Commons Attribution-Share Alike 4.0 International
+https://commons.wikimedia.org/wiki/File:A_sweet_sleeping_cat.jpg
+[[include :scp-wiki-cn:credit:end]]
+**著作信息模块：**
+[[include :scp-wiki-cn:credit:start-standalone]]
+[[include :scp-wiki-cn:credit:end-standalone]]
+[[/>]]
+这是一个Sigma-9美学版式，设计风格及氛围基调受启发自[[[theme:aero-glass|Aero Glass 版式]]]与[[[k-s-g-hub|港．城．江设定]]]。部分代码参考/采用自Aero Glass、[[[theme:basalt|玄武岩]]]、[[[theme:parallel|平行]]]及[[*user Agent FS]]的藏青版式（尚待公开发布）。
+
+本版式的默认设计方案适合用于任何具备城市/都市传说/夜晚特质的文章，譬如港城江设定。不过其亦支持自定义调整，你可以通过下文给出的代码设计适合自己作品的风格与氛围。
+
+在你的作品开头添加如下文本以应用此版式：
+[[div class="blockquote"]]
+{{@@[[include :scp-wiki-cn:theme:shivering-night]]@@}}
+[[/div]]
+版式的--大脑门--大版头布局并非强制性，你可以选择另两种预设方案以修改版头大小：
+[[gallery]]
+: https://scpsandboxcn.wikidot.com/local--files/echoaphaniptera6/hhsn
+: https://scpsandboxcn.wdfiles.com/local--files/echoaphaniptera6/%E7%81%AB%E7%8B%90%E6%88%AA%E5%9B%BE_2024-10-19T14-02-07.244Z.png
+[[/gallery]] 
+[[div class="blockquote"]]
+{{@@[[include :scp-wiki-cn:theme:shivering-night half-height=*]]@@}} - 版头高度为默认值的一半
+@@ @@
+{{@@[[include :scp-wiki-cn:theme:shivering-night low-height=*]]@@}} - 版头高度极低，引言默认不启用
+[[/div]]
+通过添加如下语法，可实现一定程度的自定义设计：
+[[div class="blockquote dark"]]
+{{@@[[module CSS]]@@}}
+{{@@:root {@@}}
+
+{{@@  --bg-img: url(https://scpsandboxcn.wikidot.com/local--files/echoaphaniptera3/sn_bg_R.jpg); /* 修改背景图片 */@@}}
+
+{{@@  --blur-mode: block; /* 是否开启正文部分背景模糊模式，默认启用，修改为none以关闭 */ @@}}
+{{@@  --bg-blur-filter: 2px; /* 上述模式开启时，背景图片的模糊程度 */ @@}}
+
+{{@@  --background-gradient: linear-gradient(to bottom, rgb(var(--primary-color), 0.75) 20%, transparent); /* 调整背景末尾的渐变效果 */ @@}}
+
+{{@@  --prologue: "喵喵喵"; /* 修改版头正中标语内容 */@@}}
+{{@@  --prologue-setting: visible; /* 修改为hidden可隐藏正中标语 */@@}}
+
+{{@@  --prologue-author: "—奇异的夜晚生命"; /* 修改版头正中标语作者/来源内容 */@@}}
+{{@@  --prologue-author-setting: visible; /* 修改为hidden可隐藏正中标语作者/来源 */@@}}
+
+{{@@  --introduction: "会就着梦中的霓虹灯吞噬車站下行人的影子。"; /* 修改鼠标悬浮于版头正中标语后显示内容 */@@}}
+{{@@  --introduction-setting: auto; /* 修改为none可关闭文本变化效果 */@@}}
+
+{{@@  --title-setting: flex; /* 修改为none将不显示标题与副标题，此项主要为适配ACS组件 */@@}}
+{{@@  --subtitle-content: "- SHIVERING NIGHT THEME -"; /* 修改副标题内容 */@@}}
+{{@@  --subtitle-setting: flex; /* 修改为none以单独关闭副标题 */@@}}
+
+{{@@  --primary-color: 16, 15, 20; /* 页面背景颜色，默认为略浅的黑色 */@@}}
+{{@@  --secondary-color: 236, 246, 253; /* 页面文字颜色，默认为白色 */@@}}
+
+{{@@  --link-color: 120, 140, 255; /* 页面链接颜色，此项修改亦将影响Tabs等格式的样式 */@@}}
+{{@@  --new-link-color: 111, 144, 206; /* 未建立页面链接颜色 */@@}}
+{{@@ }@@}}
+{{@@[[/module]]@@}}
+[[/div]]
++ 版式示例
+
+在使用此版式时各种页面元素的外观如下所示。
+
+[[include component:image-block name=https://scpsandboxcn.wikidot.com/local--files/echoaphaniptera3/A_sweet_sleeping_cat.jpg|caption=天黑了，该摸啦[[footnote]]zZZZZZZZ[[/footnote]]|width=250px|align=right]]
+
+[[toc]]
+
++ 1 级标题
+
+++ 2 级标题
+
++++ 3 级标题
+
+++++ 4 级标题
+
++++++ 5 级标题
+
+++++++ 6 级标题
+
+**粗体** | //斜体// | __下划线__ | --删除线-- | {{teletype text}} ^^上标^^,,下标,,
+
+可通过五个连字符“@@-----@@”创建水平分割线。
+
+-----
+
+[[tabview]]
+[[tab 分页]]
+屋外，融化的白雪渗入墙上的裂缝和街道上的鹅卵石中。一路流向下水道......地面上，第一朵铃兰正绽放开来。你能感觉到，一阵巨大的寒意游过全身。
+[[/tab]]
+[[tab 分页]]
+一股冷气环绕着你，沿着院子的轮廓缓缓上升;周围满是开裂的灰泥墙体，窗户，以及海鸥栖息的空调外机。在宛如畜栏的公寓楼之间，有一片面积狭窄的绿色围栏:圈起了岬岸公寓、褴褛飞旋和货运站 B 的围墙。海滨地区特有的海洋层云覆盖其上，如同一张薄毯。在云层之上的高空中，漂浮着联盟的飞空艇，那些武装镇守着特别行政区的二十一道警戒线。无线电信号在空气中纵横交错，令你脖子上的汗毛直竖......
+[[/tab]]
+[[tab 长 Tab]]
+天人感应 — 淅淅沥沥的雨水坠落在伟大的瑞瓦肖城。雨滴从屋檐滑落，淹没了水沟，把脏东西冲刷得一干二净。一定是到了春季解冻的时间。雪花正在融化。
+
+你 — 我在做什么?
+
+天人感应 — 抬头望向天空，冰冷的雨水从你的头发上滴落。
+
+你 — 我看见什么了?
+
+天人感应 — 像大战舰一样的灰色天空，白色的云朵互相碰撞着。雨点降落在这个世界上。
+
+你 — 感觉怎么样?
+
+天人感应 — 潮湿。外套帮你挡住了雨水，周围的整座城市都在随你一起颤抖。
+
+你 — 西边有什么?
+
+天人感应 — 雨滴坠落在水面上。一段楼梯延伸入海。大海的波浪冲刷着马丁内斯海岸，还有那些停靠在岸边的摩托艇和微微轻摆的芦苇丛。海湾入口的海堡早已崩塌瓦解，只剩废墟半沉在水中。瑞瓦肖的海湾之上，幽灵慢慢升往天空。
+
+你 — 你是谁，幽灵?
+
+天人感应 — 金融区德尔塔的摩天大楼。办公室的窗户渗出微弱的金色光芒。
+
+内陆帝国【成功】 — 你会去那里吗?
+
+你 — 我会吗?
+
+天人感应 — 不。你只是千百万人中的一个，看着它们每天从马丁内斯海湾的对岸升起。
+[[/tab]]
+[[tab 空 Tab]]
+[[/tab]]
+[[tab 空 Tab]]
+[[/tab]]
+[[tab 空 Tab]]
+[[/tab]]
+[[tab 空 Tab]]
+[[/tab]]
+[[tab 空 Tab]]
+//保持警惕，我爱你。//
+[[/tab]]
+[[/tabview]]
+
+||~ 标题 ||~ 标题 ||~ 标题 ||~ 标题 ||~ 标题 ||~ 标题 ||
+|| 子内容 || 子内容 || 子内容 || 子内容 || 子内容 || 子内容 ||
+|| 子内容 |||||||||| 长内容 ||||
+|| 子内容 || 子内容 || 子内容 || 子内容 || 子内容 || 子内容 ||
+
+= [# 一个链接] · [[[theme:shivering-night|一个已访问的链接]]] · [[[SCP-CN-10000|一个新的链接]]]
+
+[[div class="blockquote"]]
+@@ @@
+= {{@@[[div class="blockquote"]]@@}}
+= 这是一个默认引用块，略微突出背景与其动态效果
+@@ @@
+@@ @@
+[[/div]]
+
+[[div class="blockquote porthole"]]
+@@ @@
+= {{@@[[div class="blockquote porthole"]]@@}}
+= 这是一个质地类似于玻璃窗的引用块，理所当然的受启发自Aero Glass版式
+= 需注意频繁使用可能会导致浏览器卡顿，且已知无法与Safari为首的ios端浏览器兼容
+@@ @@
+[[/div]]
+
+[[div class="blockquote dark"]]
+@@ @@
+= {{@@[[div class="blockquote dark"]]@@}}
+= 这是一个深色引用块，背景相对来说不是那么的清晰
+@@ @@
+@@ @@
+[[/div]]
+
+@@ @@
+ACS组件适配：
+将组建置于{{@@[[div class="Shivering-ACS"]]@@}}当中以应用相关适配。
+[[tabview]]
+[[tab 原配色]]
+[[div class="Shivering-ACS"]]
+[[include :scp-wiki-cn:component:anomaly-class-bar-source
+|lang= cn
+|item-number= 2105
+|clearance= 2
+|container-class= euclid
+|secondary-class= none
+|disruption-class= vlam
+|risk-class= 待观察
+]]
+@@ @@
+[[include :scp-wiki-cn:component:anomaly-class-bar-source
+|lang= cn
+|item-number= 3000
+|clearance= 5
+|container-class= 机密
+|secondary-class= thaumiel
+|secondary-icon= http://scp-wiki.wdfiles.com/local--files/component%3Aanomaly-class-bar/thaumiel-icon.svg
+|disruption-class= ekhi
+|risk-class= 危急
+]]
+@@ @@
+[[include :scp-wiki-cn:component:anomaly-class-bar-source
+|lang= cn
+|item-number= 4511
+|clearance= 4
+|container-class= 等待分级
+|secondary-class= none
+|disruption-class= none
+|risk-class= none
+]]
+[[/div]]
+@@ @@
+[[/tab]]
+[[tab 修改配色]]
+[[div class="Shivering-ACS color"]]
+将组建置于{{@@[[div class="Shivering-ACS color"]]@@}}当中以应用相关适配，你也可以通过修改如下代码自定义颜色：
+
+[[div class="blockquote"]]
+{{@@[[module CSS]]@@}}
+{{@@div.Shivering-ACS.color {@@}}
+{{@@  --five-color: 220, 70, 141;@@}}
+{{@@  --four-color: 162, 78, 200;@@}}
+{{@@  --three-color: 105, 92, 196;@@}}
+{{@@  --two-color: 92, 147, 196;@@}}
+{{@@  --one-color: 92, 196, 171;@@}}
+{{@@}@@}}
+{{@@[[/module]]@@}}
+[[/div]]
+
+[[include :scp-wiki-cn:component:anomaly-class-bar-source
+|lang= cn
+|item-number= 2105
+|clearance= 2
+|container-class= euclid
+|secondary-class= none
+|disruption-class= vlam
+|risk-class= 待观察
+]]
+@@ @@
+[[include :scp-wiki-cn:component:anomaly-class-bar-source
+|lang= cn
+|item-number= 3000
+|clearance= 5
+|container-class= 机密
+|secondary-class= thaumiel
+|secondary-icon= http://scp-wiki.wdfiles.com/local--files/component%3Aanomaly-class-bar/thaumiel-icon.svg
+|disruption-class= ekhi
+|risk-class= 危急
+]]
+@@ @@
+[[include :scp-wiki-cn:component:anomaly-class-bar-source
+|lang= cn
+|item-number= 4511
+|clearance= 4
+|container-class= 等待分级
+|secondary-class= none
+|disruption-class= none
+|risk-class= none
+]]
+[[/div]]
+[[/tab]]
+[[/tabview]]
+@@ @@
+此外，本版式预设了五种基于世界各地城市的风格主题以供使用和设计参考：
+[[div class="blockquote"]]
+= [[size 150%]]中国 澳门 🇲🇴[[/size]]
+[[=image https://scpsandboxcn.wikidot.com/local--files/echoaphaniptera6/mo.jpg width="100%"]]
+= {{@@[[include :scp-wiki-cn:theme:shivering-night mo=*]]@@}}
+[[/div]]
+@@ @@
+[[div class="blockquote"]]
+= [[size 150%]]马来西亚 吉隆坡 🇲🇾[[/size]]
+[[=image https://scpsandboxcn.wikidot.com/local--files/echoaphaniptera6/kl.jpg width="100%"]]
+= {{@@[[include :scp-wiki-cn:theme:shivering-night kl=*]]@@}}
+[[/div]]
+@@ @@
+[[div class="blockquote"]]
+= [[size 150%]]爱尔兰 都柏林 🇮🇪[[/size]]
+[[=image https://scpsandboxcn.wikidot.com/local--files/echoaphaniptera6/dub.png width="100%"]]
+= {{@@[[include :scp-wiki-cn:theme:shivering-night dub=*]]@@}}
+[[/div]]
+@@ @@
+[[div class="blockquote"]]
+= [[size 150%]]南非 开普敦 🇿🇦[[/size]]
+[[=image https://scpsandboxcn.wikidot.com/local--files/echoaphaniptera6/ct.png width="100%"]]
+= {{@@[[include :scp-wiki-cn:theme:shivering-night ct=*]]@@}}
+[[/div]]
+@@ @@
+[[div class="blockquote"]]
+= [[size 150%]]阿根廷 布宜诺斯艾利斯 🇦🇷[[/size]]
+[[=image https://scpsandboxcn.wikidot.com/local--files/echoaphaniptera6/ba.png width="100%"]]
+= {{@@[[include :scp-wiki-cn:theme:shivering-night ba=*]]@@}}
+[[/div]]
+@@ @@
+[[include component:coltop show=源代码 ▶|hide=源代码 ▼]]
+[[code type="css"]]
+@import url('https://chinese-fonts-cdn.deno.dev/packages/syst/dist/SourceHanSerifCN/result.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+:root {
+  --title-font: 'Afacad Flux', 'Source Han Serif CN VF', serif;
+  --body-font:  'Titillium Web', 'Noto Sans SC', sans-serif;
+
+  --bg-img: url(https://scpsandboxcn.wikidot.com/local--files/picramnia/sn_bg_R.jpg);
+
+  --blur-mode: block;
+  --bg-blur-filter: 2px;
+
+  --prologue: "倾 / 听 / 城 / 市 / 之 / 音";
+  --prologue-setting: visible;
+  --prologue-author: "—通衢与窄巷交界，一阵寒意";
+  --prologue-author-setting: visible;
+  --introduction: "太阳已经偏了西，山背后大红大紫，金丝交错，热闹非凡，倒像雪茄烟盒盖上的商标画。满山的棕榈、芭蕉，都被毒日头烘焙得干黄松鬈，像雪茄烟丝。南方的日落是快的，黄昏只是一刹那，这边太阳还没有下去，那边，在山路的尽头，烟树迷离，青溶溶地，早有一撇月影儿。";
+  --introduction-setting: auto;
+
+  --title-setting: flex;
+  --subtitle-content: "- SHIVERING NIGHT THEME -";
+  --subtitle-setting: flex;
+
+  --primary-color: 16, 15, 20;
+  --secondary-color: 236, 246, 253;
+
+  --link-color: 120, 140, 255;
+  --new-link-color: 111, 144, 206;
+
+  --display-mode: 86vh;
+  --background-gradient: linear-gradient(to bottom, rgb(var(--primary-color), 0.75) 20%, transparent);
+}
+
+body {
+    background: black;
+    color: rgb(var(--secondary-color));
+
+    font-family: var(--body-font);
+    font-weight: 200;
+    font-size: 0.925em;
+}
+
+#extrac-div-1 {
+    position: fixed;
+    display: block;
+    z-index: -3;
+
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--bg-img);
+    background-size: cover;
+    background-position: center;
+    transition: filter 1s ease-in-out;
+}
+
+
+#container:has(#content-wrap:hover) #extrac-div-1 {
+  filter: brightness(.65);
+}
+
+a, a:visited, h1  {
+    color: rgb(var(--link-color));
+}
+
+#side-bar a:visited {
+  color: unset;
+  color: rgb(var(--link-color));
+}
+
+a.newpage {
+    color: rgb(var(--new-link-color));
+}
+
+hr {
+  background: rgb(var(--secondary-color), .15);
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  backdrop-filter: brightness(3) contrast(1.1);
+  -webkit-backdrop-filter: brightness(3) contrast(1.1);
+}
+
+strong {
+  font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6, #page-title {
+    font-family: var(--title-font);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(var(--link-color))  rgb(var(--primary-color));
+}
+
+#avatar-hover-container {
+  display:none !important;
+}
+
+div#container-wrap {
+    background: none;
+}
+
+#header {
+  display: grid;
+  grid-template-columns: 3rem 1fr 3rem 3rem;
+  grid-template-areas:'open-menu top-bar search user';
+
+  justify-items: center;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  height: 3em;
+  grid-template-rows: 3em;
+}
+
+#top-bar .open-menu a {
+  grid-area:open-menu;
+  display: flex;
+  justify-content: center;
+}
+
+#top-bar {
+  grid-area:top-bar;
+  top: 1rem !important;
+  left: 0;
+  margin-left: 1rem;
+
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+#search-top-box {
+  grid-area:search;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#login-status {
+  grid-area:user;
+  top: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+#top-bar ul {
+  float: unset;
+}
+
+#top-bar ul {
+  flex: 1 0 100px;
+}
+
+#top-bar ul li ul {
+  flex-direction: column;
+}
+
+#top-bar ul li.sfhover a, #top-bar ul li:hover a {
+  background: transparent;
+  color: rgb(var(--link-color));
+  border-left: solid 1px transparent;
+  border-right: solid 1px transparent;
+}
+
+#top-bar ul li ul {
+  border: transparent;
+  box-shadow: none;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+#top-bar ul li a {
+  border-left: solid 1px transparent;
+  border-right: solid 1px transparent;
+    text-shadow: 0 0 3px black, 0 0 5px black, 0 0 10px black, 0 0 15px black;
+}
+
+#top-bar ul li.sfhover ul li a, #top-bar ul li:hover ul li a {
+  border-top: 1px solid rgba(var(--secondary-color), 0.33);
+    text-shadow: 0 0 3px black, 0 0 5px black, 0 0 10px black, 0 0 15px black;
+}
+
+@media (max-width: 767px) {
+.mobile-top-bar {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
+  width: 100%;
+  flex-direction: row;
+  }
+}
+
+@media (max-width: 479px) {
+  .mobile-top-bar {
+    font-size: 67%;
+  }
+}
+
+#header h1 span, #header h2 span {
+    display:none;
+}
+
+#extrac-div-2 {
+    position: absolute;
+    top: calc(var(--display-mode) / 2);
+    left: 50%;
+    transform: translateX(-50%);
+    padding-left: 1em;
+    padding-right: 1em;
+    z-index: 2;
+    pointer-events: var(--introduction-setting);
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#extrac-div-2::before {
+    line-height: 1.5em;
+    font-size: 1.5em;
+    font-family: var(--title-font);
+    font-weight: 400;
+    text-shadow: 0 0 3px black, 0 0 5px black, 0 0 10px black, 0 0 15px black;
+
+    content: var(--prologue);
+    color: rgb(var(--secondary-color));
+    visibility: var(--prologue-setting);
+    display: block;
+
+    text-align: center;
+    transition: font-size 0.3s ease, background-size 0.3s ease;
+}
+
+#extrac-div-2:hover::before {
+    font-size: 1.25em;
+    content: var(--introduction);
+    background:
+        linear-gradient(rgb(var(--secondary-color)), rgb(var(--secondary-color))) left top,
+        linear-gradient(rgb(var(--secondary-color)), rgb(var(--secondary-color))) left top,
+        linear-gradient(rgb(var(--secondary-color)), rgb(var(--secondary-color))) right bottom,
+        linear-gradient(rgb(var(--secondary-color)), rgb(var(--secondary-color))) right bottom;
+    background-position:
+        left top, left top,
+        right bottom, right bottom;
+    background-repeat: no-repeat;
+    background-size:
+        1px 5px, 5px 1px,
+        1px 5px, 5px 1px;
+}
+
+#extrac-div-2::after {
+    line-height: 1.5em;
+    font-size: 1.25em;
+    font-family: var(--title-font);
+    text-shadow: 0 0 3px black, 0 0 5px black, 0 0 10px black, 0 0 15px black;
+
+    content: var(--prologue-author);
+    color: rgb(var(--secondary-color));
+    visibility: var(--prologue-author-setting);
+    display: block;
+
+    text-align: right;
+    transition: font-size 0.3s ease, background-size 0.3s ease;
+}
+
+@media (min-width: 1px) and (max-width: 1000px) {
+  #extrac-div-2{
+    width: 80%;
+ }
+
+ #page-title {
+     font-size: 4em;
+ }
+
+ #top-bar {
+   top: 1rem !important;
+ }
+
+ #top-bar li {
+  margin-left: -0.6rem;
+ }
+
+#top-bar li a {
+  padding: 1px 0.9em;
+ }
+}
+
+#page-title,
+#action-area h1 {
+    margin: 0;
+    text-align: center;
+}
+
+#page-title {
+    margin-top: -0.35rem;
+    font-weight: bold;
+    font-size: 4.5em;
+
+    color: rgb(var(--secondary-color));
+    border-color: transparent;
+
+    display: var(--title-setting) !important;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#page-title::after {
+   content: var(--subtitle-content);
+
+   display: var(--subtitle-setting);
+   width: 100%;
+   height: 2rem;
+
+   margin-top: -1.5rem;
+   justify-content: center;
+   align-items: center;
+   font-size: 30%;
+   letter-spacing: 1px;
+}
+
+#breadcrumbs, .pseudocrumbs {
+    margin: 1em 0 -1em;
+}
+
+#content-wrap {
+    position: relative;
+
+    max-width: none;
+    margin: 0;
+
+    overflow: hidden; 
+    top: var(--display-mode);
+
+    background: linear-gradient(to bottom, transparent, rgb(var(--primary-color), 0.75) 15vh, rgb(var(--primary-color), 0.75));
+}
+
+@media not all and (max-width: 767px) {
+  #main-content {
+    max-width: 57.5rem !important;
+  }
+}
+
+#content-wrap::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    display: var(--blur-mode);
+}
+
+#content-wrap::before {
+    content: " ";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: 
+    url('https://scpsandboxcn.wikidot.com/local--files/picramnia/glass_bg.png') top center no-repeat;
+    background-size: cover;
+    mix-blend-mode: overlay;
+    animation: backgroundBounce 240s linear infinite;
+    pointer-events: none;
+    will-change: transform;
+}
+
+@keyframes backgroundBounce {
+    0%, 100% {
+        background-position: center bottom;
+    }
+    50% {
+        background-position: center top;
+    }
+}
+
+#license-area, #footer {
+  top: var(--display-mode);
+  position: relative;
+  color: rgb(var(--secondary-color));
+}
+
+#footer {
+  margin-top: 0px;
+  background: rgb(var(--primary-color), 0.75);
+}
+
+#license-area {
+  background: var(--background-gradient);
+}
+
+#side-bar a:visited:hover,
+div.buttons input:hover, 
+input.button:hover, 
+button:hover, 
+a.button:hover,
+a:hover {
+  text-decoration: none;
+  background-color: rgb(var(--link-color));
+  color: rgb(var(--primary-color));
+  border-radius: 5px;
+  text-shadow: none !important;
+}
+
+#top-bar ul li.sfhover a:hover, #top-bar ul li:hover a:hover {
+  background: rgb(var(--link-color));
+  color: rgb(var(--primary-color));
+}
+
+#main-content .page-tags a {
+  text-transform: uppercase;
+  padding: 0 2px;
+}
+
+.license-area a,
+.page-options-bottom a {
+  text-shadow: 0px 0px 5px rgba(var(--primary-color));
+}
+
+blockquote,
+div.blockquote,
+div#toc,
+#lock-info,
+.scp-image-block {
+    border: 0.1px dashed transparent;
+    border-radius: 5px;
+    position: relative; 
+    background: transparent;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    backdrop-filter: brightness(2) contrast(1.1);
+    -webkit-backdrop-filter: brightness(2) contrast(1.1);
+}
+
+blockquote blockquote {
+    backdrop-filter: brightness(1.25) contrast(1);
+}
+
+div.blockquote.porthole,
+div#toc.porthole {
+    background: linear-gradient(rgba(var(--primary-color), 0.1), rgba(var(--primary-color), 0.1)), var(--bg-img);
+    background-size: cover;
+    background-attachment:fixed;
+    background-position: center;
+    box-shadow: none;
+    text-shadow: 0 0 3px black, 0 0 5px black, 0 0 10px black, 0 0 15px black;
+}
+
+div.blockquote.porthole::before,
+div#toc.porthole::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(var(--primary-color));
+    mix-blend-mode: overlay;
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+div.blockquote.dark,
+div#toc.dark {
+  background: rgba(31, 31, 53, 0.5);
+  backdrop-filter: contrast(1.1);
+    -webkit-backdrop-filter: contrast(1.1);
+}
+
+.hovertip, .owindow, .preview-message {
+    position: fixed;
+    z-index: 100;
+    border: 2px solid transparent;
+    border-radius: 5px;
+
+    background-color: rgb(var(--primary-color), 0.5)  !important;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.preview-message {
+  opacity: 1;
+  bottom: 1em;
+}
+
+.owindow .title {
+  background-color: transparent;
+  text-align: center;
+}
+
+.owindow > :not(.button-bar, .title) > img {
+  background: transparent !important;
+  padding-right: 6px;
+  margin-right: 4px;
+}
+
+.owindow .button-bar a:hover {
+  background-color: rgb(var(--link-color));
+  color: rgb(var(--primary-color));
+}
+
+#lock-info, textarea, input.text, .owindow .button-bar a {
+  color: rgb(var(--secondary-color));
+  background-color: transparent;
+  backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+}
+
+
+.owindow .button-bar a {
+  border-color:transparent;
+}
+
+.odialog-shader {
+  background-color: #171619;
+}
+
+.scp-image-block img {
+  position: relative;
+}
+
+.scp-image-block .scp-image-caption {
+  background-color: transparent;
+  border-top: solid 1px transparent;
+  font-size: 90%;
+  font-weight: normal;
+}
+
+div.buttons input, input.button, button, file, a.button {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: rgb(var(--secondary-color));
+  font-size: 90%;
+}
+
+table.page-history td.optionstd a, .pager a {
+  border: 1px solid transparent;
+}
+
+.pager .current {
+  background-color: rgb(var(--link-color));
+  color: rgb(var(--primary-color));
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.page-source {
+  border: 0.1px dashed transparent;
+}
+
+/* 评分栏 */
+
+div.page-rate-widget-box .rate-points {
+border: transparent;
+}
+
+.rate-box-with-credit-button,
+.page-rate-widget-box {
+  border-radius: 10px !important;
+  background-color: rgba(var(--secondary-color), .05) !important;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  backdrop-filter: brightness(2) contrast(1.1) blur(2px);
+  -webkit-backdrop-filter: brightness(2) contrast(1.1) blur(2px);
+
+  padding-right: 0.45em;
+}
+
+.rate-box-with-credit-button {
+  border: none !important;
+}
+
+.rate-box-with-credit-button .page-rate-widget-box {
+  border-radius: 0;
+  background-color: transparent !important;
+  box-shadow: none;
+  backdrop-filter: unset;
+  -webkit-backdrop-filter: unset;
+
+  padding-right: 0;
+}
+
+.page-rate-widget-box .cancel, .page-rate-widget-box .ratedown, .page-rate-widget-box .rateup,
+.page-rate-widget-box .rate-points {
+  background-color: transparent !important;
+  border: 1px transparent;
+}
+
+.page-rate-widget-box .cancel a, .page-rate-widget-box .ratedown a, .page-rate-widget-box .rateup a {
+  color: rgb(var(--secondary-color));
+  text-transform: none;
+  border-left: none;
+}
+
+.creditButton p a {
+  margin-left: 0 !important;
+  border-left: solid 1px transparent !important;
+}
+
+.creditButton p a:hover, .page-rate-widget-box .cancel a:hover, .page-rate-widget-box .ratedown a:hover, .page-rate-widget-box .rateup a:hover {
+  background: transparent;
+  color: rgb(var(--link-color)) !important;
+  border-left: none;
+}
+
+.modalbox {
+  border: 2px solid transparent !important;
+  border-radius: 5px;
+  background: rgb(var(--primary-color), 0.5) !important;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) !important;
+}
+
+.modalbox .credit p {
+  margin-right: 0.75em;
+  overflow-x: unset;
+}
+
+table.wiki-content-table th {
+  background-color: rgba aliceblue(var(--primary-color) 0.25);
+}
+
+.creditButtonStandalone p a {
+  background-color: rgba(var(--secondary-color), .05) !important;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  backdrop-filter: brightness(2) contrast(1.1) blur(2px);
+  -webkit-backdrop-filter: brightness(2) contrast(1.1) blur(2px);
+}
+
+.creditButtonStandalone p a:hover {
+  color: var(--link-color);
+}
+
+/* TABS */
+.yui-navset .yui-content,
+.yui-content {
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+
+.yui-navset .yui-nav, .yui-navset .yui-navset-top .yui-nav {
+  border-color: transparent !important;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.yui-navset .yui-nav .selected, .yui-navset .yui-navset-top .yui-nav .selected,
+.yui-navset .yui-nav li, .yui-navset .yui-navset-top .yui-nav li {
+  flex: 1 0 100px;
+  margin: 0;
+}
+
+.yui-navset .yui-nav .selected, .yui-navset .yui-navset-top .yui-nav .selected {
+  margin: 0;
+}
+
+yui-navset .yui-nav li a, .yui-navset-top .yui-nav li a, .yui-navset-bottom .yui-nav li a {
+  display: block;
+}
+
+.yui-navset .yui-nav a, .yui-navset .yui-navset-top .yui-nav a {
+  background-color: unset;
+  background-image: none;
+}
+
+.yui-navset .yui-nav a, .yui-navset .yui-navset-top .yui-nav a {
+  background: rgba(31, 31, 53, 0.5) !important;
+  border: solid transparent;
+  border-radius: 5px 5px 0px 0px;
+  backdrop-filter: contrast(1.1);
+  -webkit-backdrop-filter: contrast(1.1);
+  text-shadow: 0px 0px 5px black;
+  color: rbg(var(--secondary-color)) !important;
+}
+
+.yui-navset .yui-nav a em, .yui-navset .yui-navset-top .yui-nav a em {
+  border: solid transparent;
+}
+
+.yui-navset .yui-nav .selected a, .yui-navset .yui-nav .selected a em {
+  border: unset;
+  background-color: rgba(var(--link-color));
+  border-radius: 5px 5px 0px 0px;
+  text-shadow:none;
+}
+
+.yui-navset .yui-content, .yui-content {
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 0 10px 10px -10px rgb(0, 0, 0);
+  background: rgba(31, 31, 53, 0.5);
+  backdrop-filter: contrast(1.1);
+  border: none;
+
+  margin-top: -0.55em;
+  border-top: 0.75rem solid rgba(var(--link-color));
+}
+
+.yui-navset .yui-nav .selected a em {
+  padding: 0.65em 0.75em;
+}
+/* 搜索栏/用户信息 */
+
+div#search-top-box {
+  top: 8px;
+  width: 28px;
+  right: 0;
+}
+
+div#search-top-box form {
+    display: flex;
+    justify-content: flex-end;
+}
+
+div#search-top-box form input[type="text"],
+div#search-top-box form input[type="text"]:hover {
+    background-color: rgba(var(--primary-color), 0.2) !IMPORTANT;
+    display: inline-block;
+    height: 1.1rem;
+    width: 8rem;
+    transition: width .25s;
+    outline: none;
+    filter: brightness(120%);
+}
+
+_::-webkit-full-page-media,
+_:future, 
+:root div#search-top-box form input[type="text"] {
+    font-size: 16px
+}
+
+div#search-top-box form input[type="text"]:not(:focus),
+div#search-top-box form input[type="text"]:not(:focus):not(:hover) {
+    background-color: var(--primary-color);
+    color: transparent;
+    cursor: pointer;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: none;
+    background-position: center;
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20fill%3D%22%23ddd%22%20d%3D%22M505%20442.7L405.3%20343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3%2044-79.7%2044-128C416%2093.1%20322.9%200%20208%200S0%2093.1%200%20208s93.1%20208%20208%20208c48.3%200%2092.7-16.4%20128-44v16.3c0%206.4%202.5%2012.5%207%2017l99.7%2099.7c9.4%209.4%2024.6%209.4%2033.9%200l28.3-28.3c9.4-9.4%209.4-24.6.1-34zM208%20336c-70.7%200-128-57.2-128-128%200-70.7%2057.2-128%20128-128%2070.7%200%20128%2057.2%20128%20128%200%2070.7-57.2%20128-128%20128z%22%2F%3E%3C%2Fsvg%3E");
+
+  top: initial;
+  right: initial;
+  position: relative;
+}
+
+div#search-top-box form input[type="submit"] {
+    display: none
+}
+
+#search-top-box-input {
+    border: solid 1px var(--background);
+    border-radius: 5px
+}
+
+#login-status {
+    top: 2px
+
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    font-size: 0
+}
+
+#login-status .printuser {
+    margin: 0;
+    background-color: none;
+    position: absolute;
+    top: 8px;
+    right: 0px;
+    width: 28px;
+    padding: 0;
+}
+
+#login-status .printuser img.small {
+    background: none !important;
+    margin: 0;
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #3f3f3f;
+}
+
+#login-status [id] {
+    font-size: .72rem
+}
+
+#login-status>a[href="javascript:;"] {
+    font-size: 0;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    background: none;
+    width: 21.8px;
+    position: absolute;
+    top: 20px;
+    height: 0;
+    right: 0;
+    border: none;
+    opacity: 0;
+}
+
+div#login-status a.login-status-create-account {
+    top: 8px;
+    opacity: 1;
+}
+
+#login-status>a[href="javascript:;"]:before {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 1.3rem;
+    margin: 4px 3px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    transform: translate(0, 0);
+}
+
+#header #login-status #account-topbutton + #account-options:focus, #header #login-status #account-topbutton + #account-options:focus-within, #header #login-status #account-topbutton + #account-options:hover, #header #login-status #account-topbutton + #account-options:active {
+  top: 3.5em;
+}
+
+#login-status #account-topbutton:before {
+    content: "\f013";
+    color: var(--base-color)
+}
+
+#login-status .login-status-sign-in {
+    right: 35px !important;
+}
+
+#login-status .login-status-sign-in:before {
+    content: "\f13e";
+    color: var(--base-color)
+}
+
+#login-status .login-status-create-account {
+    right: 11px !important;
+    margin: 0 0 .25rem;
+}
+
+div#login-status a.login-status-create-account {
+    right: 11px;
+}
+
+#login-status .login-status-create-account:before {
+    content: "\f067";
+    color: var(--base-color)
+}
+
+#login-status #my-account {
+    display: none
+}
+
+#login-status a strong {
+    position: absolute;
+    top: 0;
+    right: 2.25rem;
+    font-family: var(--bauhaus);
+    font-size: 1rem;
+    var(--lightColor)-space: nowrap
+}
+
+#login-status #account-topbutton:not(:focus):not(:focus-within):not(:hover):not(:active)+#account-options {
+    display: none !important
+}
+
+#header #login-status #account-topbutton+#account-options:focus,
+#header #login-status #account-topbutton+#account-options:focus-within,
+#header #login-status #account-topbutton+#account-options:hover,
+#header #login-status #account-topbutton+#account-options:active {
+    display: block !important
+}
+
+#account-options ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around
+}
+
+#account-options ul>li {
+    flex-grow: 1;
+    text-align: center;
+    width: 40%
+}
+
+#account-options ul>li a {
+    transition: all .25s ease-in-out
+}
+
+#account-options ul>li a:hover {
+    background-color: var(--base-color);
+    color: var(--background);
+    text-decoration: none
+}
+
+#login-status ul a {
+    color: #000
+}
+
+/* Sidebar组件 */
+/* source: https://ah-sandbox.wikidot.com/component:collapsible-sidebar-x1 */
+
+#top-bar .open-menu a {
+        position: fixed;
+        top: 0.4em;
+        left: 0.5em;
+        z-index: 5;
+        font-family: 'Nanum Gothic', san-serif;
+        font-size: 30px;
+        font-weight: 700;
+        width: 30px;
+        height: 30px;
+        line-height: 0.9em;
+        text-align: center;
+        border: transparent;
+        background-color: transparent;
+        border-radius: 0em;
+        color: var(--lightColor);
+        pointer-events: auto;
+}
+
+@media not all and (max-width: 767px) {
+    #top-bar .mobile-top-bar {
+        display: block;
+        pointer-events: none;
+    }
+
+    #top-bar .mobile-top-bar li {
+        display: none;
+    }
+
+    #main-content {
+        max-width: 44.5rem;
+        margin: 0 auto;
+        padding: 0;
+        transition: max-width 0.2s ease-in-out;
+    }
+
+    #side-bar {
+        display: block;
+        position: fixed;
+        top: 3em;
+        left: -18rem;
+        width: 15.25rem;
+        height: 100%;
+        margin: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+        z-index: 10;
+        padding: 1em 1em 0 1em;
+        background-color: transparent;
+        transition: left 0.4s ease-in-out;
+    }
+
+    #side-bar:target {
+        left: 0;
+    }
+    #side-bar:focus-within {
+        left: 0;
+    }
+
+    #side-bar:target .close-menu {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        margin-left: 17rem;
+        opacity: 0;
+        z-index: -1;
+        visibility: visible;
+    }
+    #side-bar:not(:target) .close-menu { display: none; }
+
+    #top-bar .open-menu a:hover {
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 767px) {
+    #side-bar {
+        background-color: rgba(34, 32, 46, 0.75);
+    }
+}
+
+#side-bar .side-block {
+    border: 0.1px dashed transparent;
+    border-radius: 5px;
+    position: relative; 
+    background: rgb(var(--primary-color), 0.5) !important;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+#side-bar .side-block {
+  border: 1.5px solid transparent;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+#side-bar div.menu-item a {
+  font-weight: normal;
+  font-size: 95%;
+}
+
+#side-bar div.menu-item img {
+  display: none;
+}
+
+#side-bar .heading {
+  color: rgb(var(--secondary-color));
+  border-bottom: solid 1px rgb(var(--secondary-color));
+  font-size: 95%;
+  font-weight: bold;
+  font-family: var(--title-font);
+  text-align: center;
+}
+
+#side-bar .collapsible-block-folded {
+  background: none;
+}
+
+/*组件兼容*/
+div.obj {
+  color: rgb(var(--primary-color)) !important;
+  background-color: rgb(var(--secondary-color)) !important;
+}
+
+div.class1 > div {
+  color: rgb(var(--secondary-color)) !important;
+  font-family: rift, 'Noto Sans SC', 'Noto Sans TC', sans-serif;
+  font-size: 2.90em;
+  line-height: 0.9em;
+}
+
+div.scale {
+  --woedbar-lvl1-color: rgba(var(--secondary-color,12, 12, 12),0.1) !important;
+  --woedbar-lvl2-color: rgba(var(--secondary-color,12, 12, 12),0.3) !important;
+  --woedbar-lvl3-color: rgba(var(--secondary-color,12, 12, 12),0.55) !important;
+  --woedbar-lvl4-color: rgba(var(--secondary-color,12, 12, 12),0.75) !important;
+  --woedbar-lvl5-color: rgba(var(--secondary-color,12, 12, 12),1) !important;
+  --woedbar-lvl6-color: rgba(var(--secondary-color,140, 25, 26),1) !important;
+}
+
+/* ACS适配，感谢平行 */
+div.Shivering-ACS {
+  --swatch-menutxt-dark-color: var(--secondary-color);
+}
+
+div.Shivering-ACS.color {
+  --five-color: 220, 70, 141;
+  --four-color: 162, 78, 200;
+  --three-color: 105, 92, 196;
+  --two-color: 92, 147, 196;
+  --one-color: 92, 196, 171;
+}
+
+div.Shivering-ACS .danger-diamond a {
+  background: none;
+}
+
+div.Shivering-ACS .top-box .top-center-box {
+  height: 80%;
+  opacity: 0.65;
+}
+
+div.Shivering-ACS .anom-bar > .bottom-box {
+  box-shadow: none;
+  margin-top: -1.5rem !important;
+}
+
+div.Shivering-ACS .bottom-box > .diamond-part {
+  box-shadow: none;
+}
+
+div.Shivering-ACS .text-part > .main-class {
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  backdrop-filter: brightness(2) contrast(1.1);
+  -webkit-backdrop-filter: brightness(2) contrast(1.1);
+  border-radius: 5px;
+}
+
+div.Shivering-ACS .text-part > .main-class::before {
+  border: 0.25rem solid transparent !important;
+}
+
+div.Shivering-ACS .top-center-box > .bar-one,
+div.Shivering-ACS .top-center-box > .bar-two, 
+div.Shivering-ACS .top-center-box > .bar-three,
+div.Shivering-ACS .top-center-box > .bar-four, 
+div.Shivering-ACS .top-center-box > .bar-five {
+  box-shadow: 0 0 3px rgb(0, 0, 0);
+  border-radius: 0px 10px 0px 10px;
+}
+
+div.Shivering-ACS .text-part > .disrupt-class, 
+div.Shivering-ACS .text-part > .risk-class {
+  box-shadow: 0 0 5px rgb(0, 0, 0);
+  backdrop-filter: brightness(2) contrast(1.1);
+  -webkit-backdrop-filter: brightness(2) contrast(1.1);
+  border-radius: 5px;
+}
+
+div.Shivering-ACS .danger-diamond > .quadrants > div {
+  clip-path: polygon(25% 0%, 74% 0%, 97% 31%, 50% 95%, 3% 31%);
+  backdrop-filter: brightness(3);
+}
+
+div.Shivering-ACS .text-part .disrupt-class::before,
+div.Shivering-ACS .text-part .risk-class::before {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+div.Shivering-ACS .text-part .disrupt-class::after,
+div.Shivering-ACS .text-part .risk-class::after {
+  border: 0.25rem solid rgb(255, 255, 255);
+}
+
+div.Shivering-ACS .danger-diamond > .arrows {
+  display: none;
+}
+
+div.Shivering-ACS .danger-diamond > .top-icon, 
+div.Shivering-ACS .danger-diamond > .right-icon, 
+div.Shivering-ACS .danger-diamond > .left-icon, 
+div.Shivering-ACS .danger-diamond > .bottom-icon {
+  border: 0.1875rem solid transparent !important;
+}
+
+div.Shivering-ACS .danger-diamond > .top-icon::before,
+div.Shivering-ACS .danger-diamond > .left-icon::before,
+div.Shivering-ACS .danger-diamond > .right-icon::before,
+div.Shivering-ACS .danger-diamond > .bottom-icon::before {
+  background-color: transparent !important;
+}
+
+div.Shivering-ACS .danger-diamond > .top-quad, 
+div.Shivering-ACS .danger-diamond > .right-quad, 
+div.Shivering-ACS .danger-diamond > .left-quad, 
+div.Shivering-ACS .danger-diamond > .bottom-quad{
+  box-shadow: 0 0 5px rgb(0, 0, 0);
+  backdrop-filter: brightness(2) contrast(1.1);
+  -webkit-backdrop-filter: brightness(2) contrast(1.1);
+}
+
+div.Shivering-ACS .danger-diamond .top-quad::before, 
+div.Shivering-ACS .danger-diamond .right-quad::before, 
+div.Shivering-ACS .danger-diamond .left-quad::before, 
+div.Shivering-ACS .danger-diamond .bottom-quad::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  z-index: 10;
+}
+[[/code]]
+
+[[code type="CSS"]]
+/* 布局方案 - 半高版头*/
+:root {
+  --display-mode: 43vh;
+}
+[[/code]]
+
+[[code type="CSS"]]
+/* 布局方案 - 低版头*/
+:root {
+  --display-mode: 3em;
+  --prologue-setting: hidden;
+  --prologue-author-setting: hidden;
+}
+
+div#extrac-div-2 {
+  pointer-events: none;
+}
+
+#footer {
+  margin-top: 15px;
+}
+
+#license-area {
+  top: 0;
+}
+[[/code]]
+
+/* 主题风格 */
+[[code type="CSS"]]
+/* 主题 - 澳门*/
+:root {
+  --bg-img: url(https://scpsandboxcn.wikidot.com/local--files/echoaphaniptera6/Macau_Skyline_%28157820121%29.jpg);
+  --link-color: 65, 165, 155;
+  --new-link-color: 95, 170, 150;
+}
+[[/code]]
+
+[[code type="CSS"]]
+/* 主题 - 吉隆坡*/
+:root {
+  --bg-img: url(http://scpsandboxcn.wikidot.com/local--files/echoaphaniptera/jlp.jpg);
+  --link-color: 173, 203, 64;
+  --new-link-color: 235, 255, 0;
+}
+[[/code]]
+
+[[code type="CSS"]]
+/* 主题 - 都柏林*/
+:root {
+  --bg-img: url(http://scpsandboxcn.wikidot.com/local--files/echoaphaniptera/1920px-Samuel_Beckett_Bridge_at_Sunset_%289618233806%29.jpg);
+  --link-color: 219, 48, 43;
+  --new-link-color: 215, 85, 70;
+}
+[[/code]]
+
+[[code type="CSS"]]
+/* 主题 - 布宜诺斯艾利斯*/
+:root {
+  --bg-img: url(http://scpsandboxcn.wikidot.com/local--files/echoaphaniptera/1280px-Buenos_Aires_Nachts_Hafeneinfahrt.jpg);
+  --link-color: 64, 124, 238;
+  --new-link-color: 95, 158, 214;
+}
+[[/code]]
+
+[[code type="CSS"]]
+/* 主题 - 开普敦*/
+:root {
+  --bg-img: url(http://scpsandboxcn.wikidot.com/local--files/echoaphaniptera/Cape_Town_%28ZA%29%2C_Sea_Point%2C_Nachtansicht_--_2024_--_1867-70_-_2.jpg);
+  --link-color: 225, 171, 43;
+  --new-link-color: 240, 222, 135;
+}
+[[/code]]
+
+[[include component:colend]]
+[[/iftags]]
