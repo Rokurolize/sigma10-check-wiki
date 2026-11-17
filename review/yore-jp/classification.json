@@ -1,0 +1,830 @@
+{
+ "tool": "classify_hunks.py",
+ "classifier_version": "0.1.0",
+ "signature_table_version": "2026-11-17.1",
+ "theme": {
+  "dir": "yore-jp",
+  "cand_fullname": "theme:yore-jp",
+  "orig_fullname": "theme:yore",
+  "wiki": "scp-wiki-cn",
+  "revision": "9",
+  "kind": "K5b-3",
+  "verdict": "PASS",
+  "original_file": "review/yore-jp/original.txt",
+  "candidate_file": "review/yore-jp/candidate.txt",
+  "original_sha256": "f0ee36a6dce9abd1c2a3bebbd951779a09c4e789090190c3c46e180e8f5ee267",
+  "candidate_sha256": "30b077a5a91d580b88576f6276559f749410bd06ba344ce70940435a937eb0c7",
+  "original_lines": 1155,
+  "candidate_lines": 1177
+ },
+ "topology": {
+  "original_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     2,
+     29
+    ],
+    "lines": 27
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     72,
+     82
+    ],
+    "lines": 10
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     85,
+     99
+    ],
+    "lines": 14
+   },
+   {
+    "kind": "html",
+    "range": [
+     226,
+     1155
+    ],
+    "lines": 929
+   }
+  ],
+  "candidate_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     0,
+     4
+    ],
+    "lines": 4
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     37,
+     844
+    ],
+    "lines": 807
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     878,
+     888
+    ],
+    "lines": 10
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     891,
+     905
+    ],
+    "lines": 14
+   },
+   {
+    "kind": "html",
+    "range": [
+     1032,
+     1177
+    ],
+    "lines": 145
+   }
+  ],
+  "moves": [
+   {
+    "from_kind": "module-css",
+    "to_kind": "code-css",
+    "orig_range": [
+     2,
+     29
+    ],
+    "cand_range": [
+     37,
+     844
+    ],
+    "similarity": 0.857,
+    "basis": "content"
+   }
+  ],
+  "external_own_delivery": false
+ },
+ "blocks": [
+  {
+   "id": "B1",
+   "orig_range": [
+    0,
+    1
+   ],
+   "cand_range": [
+    0,
+    4
+   ],
+   "orig_lines": "1-1",
+   "cand_lines": "1-4",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DRAFT-HOST",
+    "IFTAGS",
+    "SELF-DELIVERY"
+   ],
+   "primary": "SELF-DELIVERY",
+   "primary_section": 3,
+   "label_prec": {
+    "IFTAGS": "A",
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "IFTAGS": {
+     "orig": [
+      [
+       0,
+       1
+      ]
+     ],
+     "cand": []
+    },
+    "SELF-DELIVERY": {
+     "orig": [],
+     "cand": [
+      [
+       2,
+       3
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       1,
+       3
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [
+    "BASE-DELIVERY/CROSS-IMPORT? theme:parallel-jp (include graph needed to decide base vs cross)"
+   ],
+   "first_removed": "[[iftags +版式]]",
+   "first_added": "[[module CSS]]"
+  },
+  {
+   "id": "B2",
+   "orig_range": [
+    2,
+    4
+   ],
+   "cand_range": [
+    5,
+    38
+   ],
+   "orig_lines": "3-4",
+   "cand_lines": "6-38",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [
+    "CREDIT-PREVIEW",
+    "DELIVERY-HOST",
+    "DELIVERY-MOVE",
+    "DRAFT-HOST",
+    "IFTAGS",
+    "SELF-DELIVERY",
+    "TASL-FIELDS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "CREDIT-PREVIEW",
+   "primary_section": 1,
+   "label_prec": {
+    "CREDIT-PREVIEW": "A",
+    "TASL-FIELDS": "A",
+    "IFTAGS": "A",
+    "DELIVERY-HOST": "A",
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "CREDIT-PREVIEW": {
+     "cand": [
+      [
+       24,
+       25
+      ],
+      [
+       34,
+       35
+      ]
+     ]
+    },
+    "TASL-FIELDS": {
+     "cand": [
+      [
+       25,
+       33
+      ]
+     ]
+    },
+    "IFTAGS": {
+     "orig": [],
+     "cand": [
+      [
+       22,
+       23
+      ]
+     ]
+    },
+    "DELIVERY-HOST": {
+     "orig": [
+      [
+       3,
+       4
+      ]
+     ],
+     "cand": [
+      [
+       7,
+       8
+      ],
+      [
+       12,
+       13
+      ],
+      [
+       17,
+       18
+      ]
+     ]
+    },
+    "SELF-DELIVERY": {
+     "orig": [],
+     "cand": [
+      [
+       17,
+       18
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       7,
+       8
+      ],
+      [
+       12,
+       13
+      ],
+      [
+       17,
+       18
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "orig": [
+      [
+       2,
+       4
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [
+    "BASE-DELIVERY/CROSS-IMPORT? theme:parallel-jp (include graph needed to decide base vs cross)",
+    "BASE-DELIVERY/CROSS-IMPORT? fragment:parallel (include graph needed to decide base vs cross)"
+   ],
+   "first_removed": "[[module CSS]]",
+   "first_added": "[[include :scp-jp:component:interwiki-style"
+  },
+  {
+   "id": "B3",
+   "orig_range": [
+    28,
+    29
+   ],
+   "cand_range": [
+    62,
+    62
+   ],
+   "orig_lines": "29-29",
+   "cand_lines": "at 63",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "orig": [
+      [
+       28,
+       29
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[/module]]",
+   "first_added": ""
+  },
+  {
+   "id": "B4",
+   "orig_range": [
+    30,
+    374
+   ],
+   "cand_range": [
+    63,
+    63
+   ],
+   "orig_lines": "31-374",
+   "cand_lines": "at 64",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "EXHIBIT-RESTRUCTURE"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "EXHIBIT-RESTRUCTURE": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "EXHIBIT-RESTRUCTURE": {}
+   },
+   "notes": [
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[div class=\"meta-title\"]]",
+   "first_added": ""
+  },
+  {
+   "id": "B5",
+   "orig_range": [
+    376,
+    377
+   ],
+   "cand_range": [
+    65,
+    66
+   ],
+   "orig_lines": "377-377",
+   "cand_lines": "66-66",
+   "channel_pair": [
+    "html",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       65,
+       66
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": ":root:lang(cn) {",
+   "first_added": ":root:lang(ja) {"
+  },
+  {
+   "id": "B6",
+   "orig_range": [
+    378,
+    379
+   ],
+   "cand_range": [
+    67,
+    68
+   ],
+   "orig_lines": "379-379",
+   "cand_lines": "68-68",
+   "channel_pair": [
+    "html",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       67,
+       68
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "    --subtitle: \"凡人终不朽\";",
+   "first_added": "    --subtitle: \"死すべき者はついに不朽ならず\";"
+  },
+  {
+   "id": "B7",
+   "orig_range": [
+    402,
+    403
+   ],
+   "cand_range": [
+    91,
+    92
+   ],
+   "orig_lines": "403-403",
+   "cand_lines": "92-92",
+   "channel_pair": [
+    "html",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       402,
+       403
+      ]
+     ],
+     "cand": [
+      [
+       91,
+       92
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       91,
+       92
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    --yore-bg: url(\"https://ah-sandbox.wikidot.com/local--files/theme:yore/yore_bg.jpg\");",
+   "first_added": "    --yore-bg: url(\"https://ah-sandbox.wikidot.com/local--files/theme%3Ayore/yore_bg.jpg\");"
+  },
+  {
+   "id": "B8",
+   "orig_range": [
+    655,
+    656
+   ],
+   "cand_range": [
+    344,
+    345
+   ],
+   "orig_lines": "656-656",
+   "cand_lines": "345-345",
+   "channel_pair": [
+    "html",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       344,
+       345
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* 自定义 DIVs */",
+   "first_added": "/* カスタム DIV */"
+  },
+  {
+   "id": "B9",
+   "orig_range": [
+    1047,
+    1048
+   ],
+   "cand_range": [
+    736,
+    737
+   ],
+   "orig_lines": "1048-1048",
+   "cand_lines": "737-737",
+   "channel_pair": [
+    "html",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       736,
+       737
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* 页面标签 */",
+   "first_added": "/* ページタグ */"
+  },
+  {
+   "id": "B10",
+   "orig_range": [
+    1061,
+    1062
+   ],
+   "cand_range": [
+    750,
+    751
+   ],
+   "orig_lines": "1062-1062",
+   "cand_lines": "751-751",
+   "channel_pair": [
+    "html",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       750,
+       751
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "/* 数不清的适配 */",
+   "first_added": "/* 数え切れないほどの調整 */"
+  },
+  {
+   "id": "B11",
+   "orig_range": [
+    1128,
+    1129
+   ],
+   "cand_range": [
+    817,
+    818
+   ],
+   "orig_lines": "1129-1129",
+   "cand_lines": "818-818",
+   "channel_pair": [
+    "html",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "WS-ONLY"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "WS-ONLY": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "WS-ONLY": {},
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       817,
+       818
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    'h-link h-link h-link search user' ",
+   "first_added": "    'h-link h-link h-link search user'"
+  },
+  {
+   "id": "B12",
+   "orig_range": [
+    1154,
+    1154
+   ],
+   "cand_range": [
+    843,
+    886
+   ],
+   "orig_lines": "at 1155",
+   "cand_lines": "844-886",
+   "channel_pair": [
+    "body",
+    "code-css"
+   ],
+   "labels": [
+    "RESTORATION",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "RESTORATION",
+   "primary_section": 8,
+   "label_prec": {
+    "RESTORATION": "C",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "RESTORATION": {},
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "added content matches the original's own earlier region; diff-only signal, supplement decides",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": "[[/code]]"
+  },
+  {
+   "id": "B13",
+   "orig_range": [
+    1155,
+    1155
+   ],
+   "cand_range": [
+    887,
+    1177
+   ],
+   "orig_lines": "at 1156",
+   "cand_lines": "888-1177",
+   "channel_pair": [
+    "body",
+    "code-css"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": "[[/code]]"
+  }
+ ],
+ "derived_presence": {},
+ "summary": {
+  "blocks": 13,
+  "specific": 10,
+  "heuristic": 3,
+  "residue": 0,
+  "skipped": 0,
+  "reindent_blocks": 0,
+  "label_counts": {
+   "DRAFT-HOST": 2,
+   "IFTAGS": 2,
+   "SELF-DELIVERY": 2,
+   "CREDIT-PREVIEW": 1,
+   "DELIVERY-HOST": 1,
+   "DELIVERY-MOVE": 9,
+   "TASL-FIELDS": 1,
+   "TRANS-UNANCHORED": 6,
+   "EXHIBIT-RESTRUCTURE": 1,
+   "TRANSLATION-ANCHORED": 1,
+   "COLON-ENC": 1,
+   "COMMENT-TEXT": 3,
+   "WS-ONLY": 1,
+   "RESTORATION": 1
+  }
+ },
+ "residue": [],
+ "skeleton": {
+  "sha256": "026bf69877a4c79704299f0d907bca20f06a8178f3854d26509eee607fc53c22",
+  "status": "written (new)"
+ }
+}

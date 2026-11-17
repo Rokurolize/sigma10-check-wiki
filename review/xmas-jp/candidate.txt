@@ -1,0 +1,331 @@
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Axmas-jp/1
+]]
+
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** Xmasテーマ
+**翻訳責任者:** AI
+**翻訳年:** 2026
+**原題:** Christmas Theme
+**著作権者:** [[*user Dc_Yerko]]、[[*user stormbreath]]、[[*user EstrellaYoshte]]
+**作成年:** 2020
+**初訳時参照リビジョン:** 51
+**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:xmas Christmas Theme]
+[[include :scp-jp:credit:end-preview]]
+
+これは[[*user Dc_Yerko]]が[[[http://lafundacionscp.wikidot.com|スペイン語翻訳サイト]]]向けに作成し、[[*user stormbreath]]が移植したテーマです。雪片のコードは[[*user EstrellaYoshte]]が調整しました。
+
+自分の記事で使うには、次のように記述します。
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:xmas-jp@@
+@@|xmas-header= --]@@
+@@|xmas-snow= --]]]@@
+[[/div]]
+
+ヘッダーだけを使う場合は、次のように記述します。
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:xmas-jp@@
+@@|xmas-header= --]]]@@
+[[/div]]
+
+雪だけを使う場合は、次のように記述します。
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:xmas-jp@@
+@@|xmas-snow= --]]]@@
+[[/div]]
+
+同様に、Black Highlighterと併用する場合は次のようにします。
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:black-highlighter-theme]]@@
+@@[[include :scp-jp:theme:xmas-jp@@
+@@|xmas-header-bhl= --]@@
+@@|xmas-snow-bhl= --]]]@@
+[[/div]]
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:black-highlighter-theme]]@@
+@@[[include :scp-jp:theme:xmas-jp@@
+@@|xmas-header-bhl= --]]]@@
+[[/div]]
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:black-highlighter-theme]]@@
+@@[[include :scp-jp:theme:xmas-jp@@
+@@|xmas-snow-bhl= --]]]@@
+[[/div]]
+
+------
+
+[[collapsible show="テーマのソース" hide="テーマのソース"]]
+[[code type="CSS"]]
+/*
+    Xmas Theme
+    [2020 Wikidot Theme]
+       Originally made by Dc_Yerko for the Spanish Branch
+       Ported to -EN by stormbreath
+       Ported for SCP-JP (theme:xmas rev 51)
+*/
+
+div#container-wrap {
+    background-image: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Axmas-jp/GIF-111.gif');
+}
+#header {
+    background-image: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Axmas-jp/logo-xmas.png');
+}
+
+#top-bar div.open-menu a {
+    color: #990011;
+    border-color: #33552D;
+}
+[[/code]]
+
+[[code type="CSS"]]
+#header-extra-div-1, #header-extra-div-2, #header-extra-div-3 {
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0));
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0));
+    background-repeat: repeat;
+    height: 270px;
+    width: 99.4vw;
+    position: absolute;
+    left: calc((-100vw + 100%)/2);
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* ---- SNOWFALL, adapted from https://github.com/elena-in-code/Css-Snow-Fall-Animation ---- */
+
+#header-extra-div-1 {
+    background-image: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Axmas-jp/sn2.png');
+    background-size: 230px;
+    animation: snowOne 83s infinite linear;
+    filter: blur(1.3px);
+}
+#header-extra-div-2 {
+    background-image: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Axmas-jp/sn.png');
+    background-size: 370px;
+    animation: snowTwo 39s infinite linear;
+    filter: blur(0.4px);
+}
+#header-extra-div-3 {
+    background: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Axmas-jp/sn.png');
+    background-size: 720px;
+    animation: snowThree 21s infinite linear;
+    filter: blur(2.4px);
+}
+
+[[/code]]
+
+[[code type="CSS"]]
+@keyframes snowOne{
+    0%
+    {
+     background-position: 0px 0px;
+            opacity: 0;
+    }
+    10%
+    {
+            opacity: 0.6;
+    }
+    90%
+    {
+            opacity: 0.5;
+     }
+    100%
+    {
+     background-position: 100px 750px;
+     opacity:0;
+    }
+}
+@keyframes snowTwo{
+    0%
+    {
+     background-position: 0px -100px;
+     opacity: 0;
+    }
+    8%
+    {
+            opacity: 0.74;
+    }
+    90%
+    {
+            opacity: 0.65;
+     }
+    100%
+    {
+     background-position: -50px 700px;
+     opacity: 0;
+    }
+}
+@keyframes snowThree{
+    0%
+    {
+     background-position: 0px 100px;
+     opacity: 0;
+    }
+    13%
+    {
+            opacity: 0.9;
+    }
+    91%
+    {
+            opacity: 0.8;
+    }
+    100%
+    {
+     background-position: 240px 750px;
+     opacity: 0;
+    }
+}
+[[/code]]
+
+[[code type="CSS"]]
+:root {
+    --logo-image: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Axmas-jp/logo-xmas-bhl.png");
+}
+
+#extra-div-1,#extra-div-2 {
+    height: 2rem;
+    width: 100%;
+    position: absolute;
+    top: calc(var(--final-header-height-on-desktop) - 0.3125rem);
+    background-repeat: repeat-x;
+    background-size: 6.2rem;
+    pointer-events: none;
+    z-index: 9;
+}
+#extra-div-1 {
+    background-image: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Axmas-jp/n1.png');
+    animation: lightOne 3s infinite steps(1, end);
+}
+#extra-div-2 {
+    background-image: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Axmas-jp/n2.png');
+    animation: lightTwo 3s infinite steps(1, end);
+}
+@media (max-width: 767px) {
+  #extra-div-1, #extra-div-2 {
+       top: calc(var(--header-height-on-mobile) + var(--topbar-height-on-mobile) - 0.3125rem);
+  }
+}
+@keyframes lightOne {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+@keyframes lightTwo {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+[[/code]]
+
+[[code type="css"]]
+#extrac-div-1, #extrac-div-2, #extrac-div-3 {
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0));
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0));
+    height: 24rem;
+    width: 100%;
+    position: absolute;
+    background-repeat: repeat;
+    z-index: 10;
+    pointer-events: none;
+}
+
+#extrac-div-1 {
+    background-image: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Axmas-jp/sn2.png');
+    background-size: 230px;
+    animation: snowOne 83s infinite linear;
+    filter: blur(1.3px);
+}
+#extrac-div-2 {
+    background-image: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Axmas-jp/sn.png');
+    background-size: 370px;
+    animation: snowTwo 39s infinite linear;
+    filter: blur(0.4px);
+}
+#extrac-div-3 {
+    background-image: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Axmas-jp/sn.png');
+    background-size: 720px;
+    animation: snowThree 21s infinite linear;
+    filter: blur(2.4px);
+}
+@media (max-width: 767px) {
+   #extrac-div-1, #extrac-div-2, #extrac-div-3 {
+       height: 10.5rem;
+   }
+}
+[[/code]]
+
+[[/collapsible]]
+
+[[module css]]
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Axmas-jp/1");
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Axmas-jp/2");
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Axmas-jp/3");
+[[/module]]
+
+[[include :scp-jp:component:license-box-backend
+|author=Dc_Yerko]]
+
+> **ファイル名:** GIF-111.gif
+> **作者:** Dc_Yerko
+> **ライセンス:** CC BY-SA 3.0（SCP ウィキのコンテンツの既定。原語版の個別ファイル指定なし）
+> **出典:** 原語版（[[[https://scp-wiki.wikidot.com/theme:xmas|theme:xmas]]]、rev. 51）の添付ファイル
+
+> **ファイル名:** logo-xmas.png
+> **作者:** Dc_Yerko
+> **ライセンス:** CC BY-SA 3.0（SCP ウィキのコンテンツの既定。原語版の個別ファイル指定なし）
+> **出典:** 原語版（[[[https://scp-wiki.wikidot.com/theme:xmas|theme:xmas]]]、rev. 51）の添付ファイル
+
+> **ファイル名:** logo-xmas-bhl.png
+> **作者:** EstrellaYoshte
+> **ライセンス:** CC BY-SA 3.0（SCP ウィキのコンテンツの既定。原語版の個別ファイル指定なし）
+> **出典:** 原語版（[[[https://scp-wiki.wikidot.com/theme:xmas|theme:xmas]]]、rev. 51）の添付ファイル
+
+> **ファイル名:** sn.png
+> **作者:** EstrellaYoshte（Css-Snow-Fall-Animation を基に調整）
+> **ライセンス:** CC BY-SA 3.0（SCP ウィキのコンテンツの既定。原語版の個別ファイル指定なし）
+> **出典:** 原語版（[[[https://scp-wiki.wikidot.com/theme:xmas|theme:xmas]]]、rev. 51）の添付ファイル。元コード: [[[https://github.com/elena-in-code/Css-Snow-Fall-Animation|Css-Snow-Fall-Animation]]]
+
+> **ファイル名:** sn2.png
+> **作者:** EstrellaYoshte（Css-Snow-Fall-Animation を基に調整）
+> **ライセンス:** CC BY-SA 3.0（SCP ウィキのコンテンツの既定。原語版の個別ファイル指定なし）
+> **出典:** 原語版（[[[https://scp-wiki.wikidot.com/theme:xmas|theme:xmas]]]、rev. 51）の添付ファイル。元コード: [[[https://github.com/elena-in-code/Css-Snow-Fall-Animation|Css-Snow-Fall-Animation]]]
+
+> **ファイル名:** n1.png
+> **作者:** EstrellaYoshte
+> **ライセンス:** CC BY-SA 3.0（SCP ウィキのコンテンツの既定。原語版の個別ファイル指定なし）
+> **出典:** 原語版（[[[https://scp-wiki.wikidot.com/theme:xmas|theme:xmas]]]、rev. 51）の添付ファイル
+
+> **ファイル名:** n2.png
+> **作者:** EstrellaYoshte
+> **ライセンス:** CC BY-SA 3.0（SCP ウィキのコンテンツの既定。原語版の個別ファイル指定なし）
+> **出典:** 原語版（[[[https://scp-wiki.wikidot.com/theme:xmas|theme:xmas]]]、rev. 51）の添付ファイル
+
+[[include :scp-jp:component:license-box-end]]
+
+[[/iftags]]
+
+[!-- {$xmas-header}
+[!-- --]
+
+[!-- {$xmas-snow}
+[!-- --]
+
+[!-- {$xmas-header-bhl}
+[[module css]]
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Axmas-jp/4");
+[[/module]]
+[!-- --]
+
+[!-- {$xmas-snow-bhl}
+[[module css]]
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Axmas-jp/5");
+[[/module]]
+[!-- --]

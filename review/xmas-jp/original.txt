@@ -1,0 +1,282 @@
+[[iftags +theme]]
+[[>]]
+[[module Rate]]
+[[/>]]
+
+This is a theme originally created by [[*user Dc_Yerko]] for the [[[http://lafundacionscp.wikidot.com|Spanish Translation Site]]] and adapted by [[*user stormbreath]]. Code for the snow flakes adapted by [[*user EstrellaYoshte]].
+
+Use it on your own article with the following:
+
+[[div class="code"]]
+@@[[include :scp-wiki:theme:xmas@@
+@@|xmas-header= --]@@
+@@|xmas-snow= --]]]@@
+[[/div]]
+
+If you only want to use the header, use the following:
+
+[[div class="code"]]
+@@[[include :scp-wiki:theme:xmas@@
+@@|xmas-header= --]]]@@
+[[/div]]
+
+If you only want to use the snow, use the following:
+
+[[div class="code"]]
+@@[[include :scp-wiki:theme:xmas@@
+@@|xmas-snow= --]]]@@
+[[/div]]
+
+Likewise, to use with Black Highlighter:
+
+[[div class="code"]]
+@@[[include :scp-wiki:theme:black-highlighter-theme]]@@
+@@[[include :scp-wiki:theme:xmas@@
+@@|xmas-header-bhl= --]@@
+@@|xmas-snow-bhl= --]]]@@
+[[/div]]
+
+[[div class="code"]]
+@@[[include :scp-wiki:theme:black-highlighter-theme]]@@
+@@[[include :scp-wiki:theme:xmas@@
+@@|xmas-header-bhl= --]]]@@
+[[/div]]
+
+[[div class="code"]]
+@@[[include :scp-wiki:theme:black-highlighter-theme]]@@
+@@[[include :scp-wiki:theme:xmas@@
+@@|xmas-snow-bhl= --]]]@@
+[[/div]]
+
+------
+
+[[code type="CSS"]]
+/*
+    Xmas Theme
+    [2020 Wikidot Theme]
+       Originally made by Dc_Yerko for the Spanish Branch
+       Ported to -EN by stormbreath
+*/
+
+div#container-wrap {
+    background-image: url('https://scp-wiki.wdfiles.com/local--files/theme%3Axmas/GIF-111.gif');
+}
+#header {
+    background-image: url('https://scp-wiki.wdfiles.com/local--files/theme%3Axmas/logo-xmas.png');
+}
+
+#top-bar div.open-menu a {
+    color: #990011;
+    border-color: #33552D;
+}
+[[/code]]
+
+[[code type="CSS"]]
+#header-extra-div-1, #header-extra-div-2, #header-extra-div-3 {
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0));
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0));
+    background-repeat: repeat;
+    height: 270px;
+    width: 99.4vw;
+    position: absolute;
+    left: calc((-100vw + 100%)/2);
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* ---- SNOWFALL, adapted from https://github.com/elena-in-code/Css-Snow-Fall-Animation ---- */
+
+#header-extra-div-1 {
+    background-image: url('https://scp-wiki.wdfiles.com/local--files/theme%3Axmas/sn2.png');
+    background-size: 230px;
+    animation: snowOne 83s infinite linear;
+    filter: blur(1.3px);
+}
+#header-extra-div-2 {
+    background-image: url('https://scp-wiki.wdfiles.com/local--files/theme%3Axmas/sn.png');
+    background-size: 370px;
+    animation: snowTwo 39s infinite linear;
+    filter: blur(0.4px);
+}
+#header-extra-div-3 {
+    background: url('https://scp-wiki.wdfiles.com/local--files/theme%3Axmas/sn.png');
+    background-size: 720px;
+    animation: snowThree 21s infinite linear;
+    filter: blur(2.4px);
+}
+
+[[/code]]
+
+[[code type="CSS"]]
+@keyframes snowOne{
+    0%
+    {
+     background-position: 0px 0px;
+            opacity: 0;
+    }
+    10%
+    {
+            opacity: 0.6;
+    }
+    90%
+    {
+            opacity: 0.5;
+     }
+    100%
+    {
+     background-position: 100px 750px;
+     opacity:0;
+    }
+}
+@keyframes snowTwo{
+    0%
+    {
+     background-position: 0px -100px;
+     opacity: 0;
+    }
+    8%
+    {
+            opacity: 0.74;
+    }
+    90%
+    {
+            opacity: 0.65;
+     }
+    100%
+    {
+     background-position: -50px 700px;
+     opacity: 0;
+    }
+}
+@keyframes snowThree{
+    0%
+    {
+     background-position: 0px 100px;
+     opacity: 0;
+    }
+    13%
+    {
+            opacity: 0.9;
+    }
+    91%
+    {
+            opacity: 0.8;
+    }
+    100%
+    {
+     background-position: 240px 750px;
+     opacity: 0;
+    }
+}
+[[/code]]
+
+[[code type="CSS"]]
+:root {
+    --logo-image: url("https://scp-wiki.wdfiles.com/local--files/theme%3Axmas/logo-xmas-bhl.png");
+}
+
+#extra-div-1,#extra-div-2 {
+    height: 2rem;
+    width: 100%;
+    position: absolute;
+    top: calc(var(--final-header-height-on-desktop) - 0.3125rem);
+    background-repeat: repeat-x;
+    background-size: 6.2rem;
+    pointer-events: none;
+    z-index: 9;
+}
+#extra-div-1 {
+    background-image: url('https://scp-wiki.wdfiles.com/local--files/theme%3Axmas/n1.png');
+    animation: lightOne 3s infinite steps(1, end);
+}
+#extra-div-2 {
+    background-image: url('https://scp-wiki.wdfiles.com/local--files/theme%3Axmas/n2.png');
+    animation: lightTwo 3s infinite steps(1, end);
+}
+@media (max-width: 767px) {
+  #extra-div-1, #extra-div-2 {
+       top: calc(var(--header-height-on-mobile) + var(--topbar-height-on-mobile) - 0.3125rem);
+  }
+}
+@keyframes lightOne {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+@keyframes lightTwo {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+[[/code]]
+
+[[code type="css"]]
+#extrac-div-1, #extrac-div-2, #extrac-div-3 {
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0));
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0));
+    height: 24rem;
+    width: 100%;
+    position: absolute;
+    background-repeat: repeat;
+    z-index: 10;
+    pointer-events: none;
+}
+
+#extrac-div-1 {
+    background-image: url('https://scp-wiki.wdfiles.com/local--files/theme%3Axmas/sn2.png');
+    background-size: 230px;
+    animation: snowOne 83s infinite linear;
+    filter: blur(1.3px);
+}
+#extrac-div-2 {
+    background-image: url('https://scp-wiki.wdfiles.com/local--files/theme%3Axmas/sn.png');
+    background-size: 370px;
+    animation: snowTwo 39s infinite linear;
+    filter: blur(0.4px);
+}
+#extrac-div-3 {
+    background-image: url('https://scp-wiki.wdfiles.com/local--files/theme%3Axmas/sn.png');
+    background-size: 720px;
+    animation: snowThree 21s infinite linear;
+    filter: blur(2.4px);
+}
+@media (max-width: 767px) {
+   #extrac-div-1, #extrac-div-2, #extrac-div-3 {
+       height: 10.5rem;
+   }
+}
+[[/code]]
+
+[[module css]]
+@import url("https://scp-wiki.wdfiles.com/local--code/theme%3Axmas/1");
+@import url("https://scp-wiki.wdfiles.com/local--code/theme%3Axmas/2");
+@import url("https://scp-wiki.wdfiles.com/local--code/theme%3Axmas/3");
+[[/module]]
+
+[[/iftags]]
+
+[!-- {$xmas-header}
+[[module css]]
+@import url("https://scp-wiki.wdfiles.com/local--code/theme%3Axmas/1");
+[[/module]]
+[!-- --]
+
+[!-- {$xmas-snow}
+[[module css]]
+@import url("https://scp-wiki.wdfiles.com/local--code/theme%3Axmas/2");
+@import url("https://scp-wiki.wdfiles.com/local--code/theme%3Axmas/3");
+[[/module]]
+[!-- --]
+
+[!-- {$xmas-header-bhl}
+[[module css]]
+@import url("https://scp-wiki.wdfiles.com/local--code/theme%3Axmas//4");
+[[/module]]
+[!-- --]
+
+[!-- {$xmas-snow-bhl}
+[[module css]]
+@import url("https://scp-wiki.wdfiles.com/local--code/theme%3Axmas/3");
+@import url("https://scp-wiki.wdfiles.com/local--code/theme%3Axmas/5");
+[[/module]]
+[!-- --]
