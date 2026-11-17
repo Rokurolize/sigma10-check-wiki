@@ -1,11 +1,11 @@
 [[iftags +テーマ]]
 
 [[include :scp-jp:credit:start-preview]]
-**タイトル:** 至上主义 美学版式
+**タイトル:** 至上主義 美学テーマ
 **翻訳責任者:** AI
 **翻訳年:** 2026
 **原題:** 至上主义 美学版式
-**著作権者:** Liurd
+**著作権者:** LemonCat233 & Liurd
 **作成年:** 2025
 **初訳時参照リビジョン:** 7
 **元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:suprematism 至上主义 美学版式]
@@ -380,47 +380,302 @@
 [[/iftags]]
 
 [[iftags [[#ifexpr {$static-header} == (true) | - ]]]]
+[[module css]]
+:root {
+    --openmenu-bg: var(--header-bg);
+}
 
+#header, #header h1, #search-top-box, #top-bar, #header-extra-div-1 {
+    position: static;
+}
+
+#login-status {
+    position: relative;
+}
+[[/module]]
 [[/iftags]]
 
 [[iftags [[#ifexpr {$left-header} == (true) | - ]]]]
+[[module css]]
 
+#header h1 a {
+    justify-content: flex-start;
+}
+[[/module]]
 [[/iftags]]
 
 [[iftags [[#ifexpr {$no-header-desktop} == (true) | - ]]]]
+[[module css]]
+@media (min-width: 768px) {
+  :root{
+    --header-height: 0px;
+    --topbar-height: 3rem;
+    --header-ui-size: var(--topbar-height);
+  }
 
+  #header h1 {
+    display: none;
+  }
+
+  #login-status, #search-top-box {
+    grid-row: 1 / 3;
+  }
+
+  #top-bar {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+  }
+}
+[[/module]]
 [[/iftags]]
 
 [[iftags [[#ifexpr {$collapse-sidebar-desktop} == (true) | - ]]]]
+[[module css]]
 
+@media (min-width: 768px) {
+  :root {
+    --openmenu-bg: var(--header-bg), .8;
+  }
+
+  #side-bar::before {
+    height: 100%;
+  }
+
+  #side-bar::after {
+    top: calc(50% - 7.5rem);
+    height: 15rem;
+    border-radius: 0 var(--header-ui-size) var(--header-ui-size) 0;
+    backdrop-filter: blur(0.1rem);
+  }
+}
+[[/module]]
 [[/iftags]]
 
 [[iftags [[#ifexpr {$show-sidebar} == (true) | - ]]]]
+[[module css]]
 
+@media (min-width: 64rem) {
+  #content-wrap {
+    gap: 1rem;
+    margin: calc(0px - var(--header-height) - var(--topbar-height)) auto 0;
+  }
+
+  #side-bar {
+    position: sticky;
+    top: calc(var(--header-height) + var(--topbar-height));
+    left: 0;
+    z-index: initial;
+  }
+
+  #side-bar::before, #side-bar::after {
+    display: none;
+  }
+}
+[[/module]]
 [[/iftags]]
 
 [[iftags [[#ifexpr {$fullscreen} == (true) | - ]]]]
-
+[[module css]]
+:root {
+    --content-width: 100%;
+}
+[[/module]]
 [[/iftags]]
 
 [[iftags [[#ifexpr {$big-banner} == (true) | - ]]]]
+[[module CSS]]
+:root {
+    --banner-height: calc(100vh - var(--header-height) - var(--topbar-height));
+}
 
+/* 没必要加但是这个很好看所以我留下来了 —— 柠檬猫
+#header h2::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: calc(100vh * 0.5 - 11rem);
+    right: calc(46vw);
+    width: 24rem;
+    height: 24rem;
+    border: 1px solid rgb(var(--dark-ui-bg));
+    transform: rotate(30deg);
+    opacity: 0.5;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    pointer-events: none;
+} */
+[[/module]]
 [[/iftags]]
 
 [[iftags [[#ifexpr {$minecraft} == (true) | - ]]]]
+[[module CSS]]
+:root {
+    --banner-subtitle-size: 1.25rem;
+    --header-title: "中文 MINECRAFT WIKI";
+    --banner-title: "SUPREMATISCRAFTS.";
+    --banner-subtitle: "几何至上！";
+}
 
+@keyframes mc-subtitle {
+    from {
+        transform: rotate(-20deg) scale(1, 1);
+    }
+    to {
+        transform: rotate(-20deg) scale(1.5, 1.5);
+    }
+}
+
+#header h2 span {
+    position: relative;
+}
+
+#header h2 span::after {
+    position: absolute;
+    right: -4rem;
+    bottom: 3.25rem;
+    color: rgb(255, 237, 102);
+    text-shadow: 1px 0 rgb(var(--global-dark-color)), -1px 0 rgb(var(--global-dark-color)), 0 1px rgb(var(--global-dark-color)), 0 -1px rgb(var(--global-dark-color));
+    animation: mc-subtitle 0.5s infinite ease-in-out alternate-reverse;
+}
+
+.owindow.owait .content p {
+    font-size: 0;
+}
+
+.owindow.owait .content p::before {
+    content: "保存世界中 . . . ";
+    font-size: var(--global-font-size);
+}
+
+.owindow.owait .content::after {
+    background: linear-gradient(to bottom, LawnGreen 0%, LawnGreen 30%, SaddleBrown 30%, SaddleBrown 100%, Brown 100%);
+}
+[[/module]]
 [[/iftags]]
 
 [[iftags [[#ifexpr {$no-banner} == (true) | - ]]]]
+[[module css]]
+#header h2 {
+    display: none;
+}
 
+#header {
+    top: calc(0px - var(--header-height) - var(--topbar-height));
+}
+[[/module]]
 [[/iftags]]
 
 [[iftags [[#ifexpr {$evernight} == (true) | - ]]]]
+[[module css]]
+:root {
+    --global-light-color: 90, 90, 90;
+    --global-dark-color: 60, 60, 60;
+    --global-accent-1: 68, 123, 230;
+    --global-accent-2: 94, 150, 255;
+    --global-accent-3: 113, 114, 190;
 
+    --global-bg: var(--global-black-color);
+    --global-txt: var(--global-white-color);
+    --light-ui-bg: var(--global-black-color);
+    --light-ui-txt: var(--global-pale-color);
+    --dark-ui-bg: var(--global-dark-color);
+    --dark-ui-txt: var(--global-white-color);
+}
+
+#side-bar .side-block.media > div > a > img {
+    filter: invert(1);
+}
+[[/module]]
 [[/iftags]]
 
 [[iftags [[#ifexpr {$scp} == (true) | - ]]]]
+[[module css]]
+:root {
+    --global-white-color: 252, 252, 252;
+    --global-pale-color: 244, 244, 244;
+    --global-light-color: 215, 215, 215;
+    --global-dark-color: 48, 48, 52;
+    --global-black-color: 25, 20, 16;
+    --global-accent-1: 100, 3, 15;
+    --global-accent-2: 133, 0, 5;
+    --global-accent-3: 100, 46, 44;
 
+    --header-bg: var(--dark-ui-bg);
+    --header-txt: var(--dark-ui-txt);
+    --topbar-hover-bg: 48, 48, 52;
+    --topbar-border: var(--global-txt);
+
+    --dropdown-bg: var(--topbar-hover-bg);
+
+    --th-bg: var(--dark-ui-bg);
+    --th-txt: var(--dark-ui-txt);
+
+    --btn-bg: var(--dark-ui-bg);
+    --btn-txt: var(--dark-ui-txt);
+    --btn-hover-bg: var(--bright-ui-bg);
+    --btn-hover-txt: var(--bright-ui-txt);
+
+    --bottombar-bg: var(--dark-ui-bg);
+    --bottombar-txt: var(--dark-ui-txt);
+
+    --banner-title: "SCP 基金会";
+    --banner-subtitle: "控制·收容·保护";
+
+     --logo-image: url(https://nu-scptheme.github.io/Black-Highlighter/img/logo.svg);
+
+    --banner-font: var(--ui-font);
+}
+
+#header-extra-div-1 {
+    background: repeating-linear-gradient(-45deg, rgba(var(--light-ui-bg), 0.05) 0, rgba(var(--light-ui-bg), 0.1) .5rem, rgba(var(--dark-ui-bg), 0.1) .5rem, rgba(var(--dark-ui-bg), 0.05) 1rem), linear-gradient(to right,rgba(var(--bright-ui-bg), 1), rgba(var(--bright-ui-bg), 0.6));
+    background-repeat: no-repeat;
+    box-shadow: 0 0.2rem 0.5rem 0rem rgba(var(--global-dark-color), 0.6);
+}
+
+#header h2 {
+    position: relative;
+}
+
+#header h2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(var(--global-txt), 0), rgba(var(--global-txt), 0.2));
+    -webkit-mask-image: var(--logo-image);
+    mask-image: var(--logo-image);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: min(100%, 24rem);
+    mask-size: min(100%, 24rem);
+    -webkit-mask-position: center;
+    mask-position: center;
+    z-index: -1;
+}
+
+#header h2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(var(--header-bg), 0), rgba(var(--header-bg), 0.2));
+    z-index: -2;
+}
+
+#header h2 span::before {
+    font-weight: 300;
+}
+
+#license-area {
+    --link-primary: var(--dark-ui-txt);
+    --link-hover: var(--dark-ui-txt);
+    --link-visited: var(--dark-ui-txt);
+}
+[[/module]]
 ----
 
 + ソースコード
@@ -554,7 +809,7 @@
     --banner-title: "SCP 基金会";
     --banner-subtitle: "控制·收容·保护";
 
-     --logo-image: url(https://nu-scptheme.github.io/Black-Highlighter/img/logo.svg);
+     --logo-image: url(https://scp-jp.github.io/Black-Highlighter/img/logo.svg);
 
     --banner-font: var(--ui-font);
 }
