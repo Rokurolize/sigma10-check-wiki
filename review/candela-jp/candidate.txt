@@ -1,0 +1,390 @@
+[[module CSS]]
+/* 基盤テーマへの依存。parallel は JP 候補 theme:parallel-jp のチェックWiki配信（bundle /1）を読み込み、その直後の明示的な上書きブロックで CN 原語版 code/1+code/3（base+紅石）シーケンスが最終的に作っていた変数状態を復元する（bundle 単体の最後の素の :root は深層ダイヤモンド配色で、link/header のアクセントが変わるため。詳細は REPORT-GOSIGN2-FIX3-PC.md 参照）。lumina は JP 候補 theme:lumina-jp のチェックWiki配信へ付け替え済み。JP への移植を要する項目は MANIFEST.md を参照。 */
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aparallel-jp/1');
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Alumina-jp/1');
+@import url(https://sigma10-jp-test.wdfiles.com/local--code/theme%3Acandela-jp/1);
+/* CN code/1+code/3（base+紅石）相当の最終状態を復元。bundle の深層ダイヤモンド値（--basalt-darker-element-color:138,188,234 / --header-color-one:32,64,128 / --header-color-two:64,128,254 / --link-color:220,220,224 / --link-visited-color:195,195,199）を原語版どおりに戻す。--basalt-undertone は lumina が 252,248,222 で上書きするため両者で既に同一（上書き不要）。CSS の @import は他の規則より前に置く必要があるため、この上書きは全 @import の後に配置。 */
+:root {
+    --basalt-darker-element-color: 202, 50, 50;
+    --header-color-one: var(--basalt-dark-element-color);
+    --header-color-two: var(--basalt-darker-element-color);
+    --link-color: var(--basalt-bright-element-color);
+    --link-visited-color: var(--basalt-dark-element-color);
+}
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Acandela-jp/1
+]]
+
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** 標準カンデラ テーマ
+**翻訳責任者:** AI
+**翻訳年:** 2026
+**原題:** 标准烛光 版式
+**著作権者:** Dr Hormress
+**作成年:** 2024
+**初訳時参照リビジョン:** 6
+**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:candela ソース]
+[[include :scp-jp:credit:end-preview]]
+
+**標準カンデラ**は、[[*user dr hormress]]によって制作された個人用テーマです。[https://scp-wiki-cn.wikidot.com/theme:parallel Parallel]を基盤とする[https://scp-wiki.wikidot.com/theme:lumina Lumina Crash]のバリエーションで、Lumina Crashに近い外観を導入しつつ、Parallelに付属する各種組版要素と、このテーマ固有の要素を利用できます。
+
+このテーマを適用するには、次の3行をすべて読み込んでください。
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:parallel redstone=*]]@@
+@@[[include :scp-jp:theme:lumina]]@@
+@@[[include :scp-jp:theme:candela]]@@
+[[/div]]
+
+Lumina Crashの青系スタイルを使うには、次のコードを読み込んでください。
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:parallel redstone=*]]@@
+@@[[include :scp-jp:theme:lumina]]@@
+@@[[include :scp-jp:theme:candela classic=*]]@@
+[[/div]]
+
+ページ幅を狭くするには、次のコードを読み込んでください。
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:parallel redstone=*]]@@
+@@[[include :scp-jp:theme:lumina]]@@
+@@[[include :scp-jp:theme:candela narrow=*]]@@
+[[/div]]
+
+青系スタイルと狭いページ幅を同時に使うには、次のコードを読み込んでください。
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:parallel redstone=*]]@@
+@@[[include :scp-jp:theme:lumina]]@@
+@@[[include :scp-jp:theme:candela classic=* | narrow=*]]@@
+[[/div]]
+
++ カスタム要素
+
+[[div class="blockquote warning-panel" data-title="通知タイトル" style="--warning-logo: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abasalt-jp/RAISA_DARKLOGO.png"); --logo-opacity: 1;"]]
+
+[[/div]]
+
+[[div class="blockquote candela-mail"]]
+[[div class="blockquote candela-mailInfo"]]
+宛先:
+差出人:
+[[/div]]
+----
+
+{{@@[[div class="blockquote candela-mail"]]@@}}
+{{@@[[div class="blockquote candela-mailInfo"]]@@}}
+宛先:
+差出人:
+{{@@[[/div]]@@}}
+{{@@----@@}}
+メール本文
+{{@@[[/div]]@@}}
+
+[[/div]]
+
+[[div class="blockquote candela-story"]]
+{{@@[[div class="blockquote candela-story"]]@@}}
+[[/div]]
+
+[[div class="blockquote candela-document"]]
+{{@@[[div class="blockquote candela-document"]]@@}}
+[[/div]]
+
++ ソースコード
+
+[[collapsible show="+ コードを表示" hide="- コードを隠す"]]
+[[code type="CSS"]]
+/* CANDELA Theme */
+/* [2024 Wikidot Theme] */
+/* Based on Lumina Crash Theme */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;700;900&display=swap');
+
+:root:lang(ja) {
+    --header-title: "深宇宙探査部";
+    --header-subtitle: "確保 - 収容 - 保護";
+}
+
+:root {
+    --header-logo: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Acandela-jp/spacelogo.png');
+
+    --base-header-height: min(calc(12.5rem + 14.5vmin), 24.5rem);
+    --title-size: min(calc(1.5rem + 3.75vw), 4.25rem);
+    --subtitle-size: min(calc(1.25rem + 1.75vw), 2.75rem);
+
+    --base-border-width: 0.175rem;
+
+    --lumina-background: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Acandela-jp/bg_r.jpg");
+    --lumina-footer-image: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Acandela-jp/spacefooter.png");
+
+    --basalt-sub-text-color: 216,213,190;
+    --basalt-bright-element-color: 255,182,72;
+    --basalt-dark-element-color: 233,120,20;
+
+
+    --basalt-primary-color: 34,28,20;
+    --basalt-secondary-color: 130,114,102,.1325;
+    --basalt-tertiary-color: 65, 57, 51;
+    --basalt-alternate-color: 199, 199, 199;
+
+    --basalt-UI-dark-palette: var(--basalt-undertone);
+
+    --login-status-background-color: var(--basalt-primary-color);
+    --top-bar-link-color: var(--basalt-main-text-color);
+    --top-bar-dropdown-link-color: var(--basalt-main-text-color);
+    --top-bar-dropdown-link-color-hover: var(--link-color);
+
+    --title-border-color: var(--basalt-undertone);
+
+    --footer-link-color: var(--basalt-undertone);
+    --bottom-area-text-color: var(--basalt-main-text-color);
+
+    --header-title-color: Made by;
+    --header-subtitle-color: Dr Hormress;
+
+    --side-bar-button-mask: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNzUycHQiIGhlaWdodD0iNzUycHQiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDc1MiA3NTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiA8Zz4KICA8cGF0aCBkPSJtMjE4LjE0IDM5NS43M2gzMTUuNzJjNy4wNDY5IDAgMTMuNTYyLTMuNzYxNyAxNy4wODYtOS44NjcyIDMuNTI3My02LjEwNTUgMy41MjczLTEzLjYyNSAwLTE5LjczLTMuNTIzNC02LjEwNTUtMTAuMDM5LTkuODY3Mi0xNy4wODYtOS44NjcyaC0zMTUuNzJjLTcuMDUwOCAwLTEzLjU2MiAzLjc2MTctMTcuMDkgOS44NjcyLTMuNTIzNCA2LjEwNTUtMy41MjM0IDEzLjYyNSAwIDE5LjczIDMuNTI3MyA2LjEwNTUgMTAuMDM5IDkuODY3MiAxNy4wOSA5Ljg2NzJ6Ii8+CiAgPHBhdGggZD0ibTUzMy44NiAyMzcuODhoLTMxNS43MmMtNy4wNTA4IDAtMTMuNTYyIDMuNzU3OC0xNy4wOSA5Ljg2MzMtMy41MjM0IDYuMTA1NS0zLjUyMzQgMTMuNjI5IDAgMTkuNzM0IDMuNTI3MyA2LjEwNTUgMTAuMDM5IDkuODY3MiAxNy4wOSA5Ljg2NzJoMzE1LjcyYzcuMDQ2OSAwIDEzLjU2Mi0zLjc2MTcgMTcuMDg2LTkuODY3MiAzLjUyNzMtNi4xMDU1IDMuNTI3My0xMy42MjkgMC0xOS43MzQtMy41MjM0LTYuMTA1NS0xMC4wMzktOS44NjMzLTE3LjA4Ni05Ljg2MzN6Ii8+CiAgPHBhdGggZD0ibTIxOC4xNCA1MTQuMTNoMzE1LjcyYzcuMDQ2OSAwIDEzLjU2Mi0zLjc2MTcgMTcuMDg2LTkuODY3MiAzLjUyNzMtNi4xMDU1IDMuNTI3My0xMy42MjUgMC0xOS43My0zLjUyMzQtNi4xMDU1LTEwLjAzOS05Ljg2NzItMTcuMDg2LTkuODY3MmgtMzE1LjcyYy03LjA1MDggMC0xMy41NjIgMy43NjE3LTE3LjA5IDkuODY3Mi0zLjUyMzQgNi4xMDU1LTMuNTIzNCAxMy42MjUgMCAxOS43MyAzLjUyNzMgNi4xMDU1IDEwLjAzOSA5Ljg2NzIgMTcuMDkgOS44NjcyeiIvPgogPC9nPgo8L3N2Zz4K');
+}
+
+div#header {
+    background-image: none;
+    box-shadow: none;
+}
+
+div#header h1 a::before {
+    width: calc(var(--base-header-height) * 0.6);
+    margin: 0;
+}
+
+div#header h1 a span {
+    text-align: center;
+}
+
+div#header h1 a span::before {
+    font-weight: 100;
+}
+
+div#header h1 a span::after {
+    font-weight: 900;
+}
+
+div#top-bar div[class*=top-bar]:not(:has(ul ul ul)) ul li ul {
+    max-height: unset;
+}
+
+div#top-bar div[class*=top-bar] > ul > li > ul::before {
+    display: none;
+}
+
+#top-bar div[class*="top-bar"] > ul > li:focus-within > ul,
+#top-bar div[class*="top-bar"] > ul > li:hover > ul,
+#top-bar div[class*="top-bar"] > ul > li > ul:focus-within,
+#top-bar div[class*="top-bar"] > ul > li > ul:hover {
+    box-shadow: none;
+}
+
+.owindow .title,
+#side-bar .side-block .heading,
+#side-bar .collapsible-block-unfolded a.collapsible-block-link,
+#side-bar .collapsible-block-folded a.collapsible-block-link {
+    color: rgb(var(--basalt-undertone));
+    background-color: transparent;
+    border-bottom: none;
+}
+
+#side-bar .side-block.admin {
+    background-color: transparent !important;
+}
+
+.owindow .button-bar > a[onclick*="cleanAll"]::after {
+    background-color: rgb(var(--basalt-undertone));
+}
+
+div#page-content {
+    grid-template-columns: [full-width-start] var(--main-content-side-margin) [breakout-start] minmax(0,1fr) [content-start] minmax(0,4fr) [content-end] minmax(0,1fr) [breakout-end] var(--main-content-side-margin) [full-width-end];
+}
+
+:is(.blockquote, blockquote, .code) :is(.blockquote, blockquote, .code) {
+    box-shadow: none;
+    background-color: transparent;
+}
+
+:is(:where(#page-content) table:not(.form), table.wiki-content-table) th {
+    color: rgb(var(--basalt-light-text-color));
+}
+
+div#main-content > .page-tags > span a {
+    border-radius: 0;
+}
+
+a#more-options-button {
+    background-color: rgb(var(--basalt-primary-color));
+}
+
+.bibitems .title,
+.footnotes-footer .title,
+.hovertip .content .footnote .f-heading,
+.hovertip .content .reference .r-heading {
+    --basalt-light-text-color: var(--basalt-primary-color);
+}
+
+div#footer {
+    border-top: none;
+}
+
+/* YUI TAB */
+
+.yui-navset.yui-navset-top > ul.yui-nav {
+    font-family: var(--title-font);
+    gap: 0;
+    background-color: rgb(var(--tab-background-color));
+}
+
+.yui-navset.yui-navset-top > ul.yui-nav li {
+    background-color: transparent;
+    border-bottom: none;
+}
+
+.yui-navset.yui-navset-top > ul.yui-nav {
+    font-size: 1.1em;
+}
+
+/* DIVs */
+
+.hor {
+    height: 10rem;
+}
+
+.hors {
+    height: 5rem;
+}
+
+blockquote,
+.blockquote,
+div.blockquote {
+    background-color: rgba(var(--basalt-secondary-color));
+}
+
+div.blockquote.warning-panel {
+    width: 36rem;
+    max-width: 95%;
+    border: solid var(--thin-border-width) rgb(var(--basalt-undertone));
+}
+
+div.blockquote.warning-panel::before {
+    color: rgb(var(--basalt-undertone));
+}
+
+div.blockquote.warning-panel::after {
+    pointer-events: none;
+    opacity: var(--logo-opacity, 0.1);
+}
+
+.blockquote.candela-mail {
+    position: relative;
+    width: auto;
+    margin-inline: min(4rem, 4vw);
+    border: solid var(--thin-border-width) transparent;
+    background-color: rgba(var(--basalt-primary-color), 0.8);
+}
+
+.blockquote.candela-mail::before {
+    content: "";
+    position: absolute;
+    left: calc(var(--thin-border-width) * -1);
+    top: calc(var(--thin-border-width) * -1);
+    width: 100%;
+    height: 100%;
+    border: solid var(--thin-border-width) rgb(var(--basalt-undertone));
+    mask-image: linear-gradient(to right, #000, transparent);
+    -webkit-mask-image: linear-gradient(to right, #000, transparent);
+    pointer-events: none;
+}
+
+.blockquote.candela-mailInfo {
+    border-left-width: var(--thin-border-width);
+    padding: 0 1rem;
+}
+
+.blockquote.candela-story {
+    border-left: none;
+    background-color: rgba(var(--basalt-secondary-color));
+}
+
+.blockquote.candela-document {
+    border-radius: 3rem;
+    border-inline-end: solid 0.175rem rgb(var(--basalt-undertone));
+    padding: 1.125rem 2.45rem;
+}
+
+:is(.image-block, .scp-image-block) img {
+  border: solid var(--thin-border-width) rgb(var(--basalt-undertone));
+}
+
+/* {$classic}/
+
+:root {
+    --lumina-background: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Acandela-jp/bg-galaxy.jpg);
+    --lumina-footer-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Acandela-jp/earth.png);
+
+    --basalt-sub-text-color: 190, 213, 216;
+    --basalt-bright-element-color: 72, 182, 255;
+    --basalt-dark-element-color: 20, 120, 233;
+
+    --basalt-primary-color: 20,28,34;
+    --basalt-secondary-color: 102,114,130,.1325;
+    --basalt-tertiary-color: 51, 57, 65;
+}
+
+/{$classic} */
+
+/* {$narrow}/
+
+div#page-content {
+    grid-template-columns: [full-width-start] var(--main-content-side-margin) [breakout-start] minmax(0,1fr) [content-start] minmax(0,3.6fr) [content-end] minmax(0,1fr) [breakout-end] var(--main-content-side-margin) [full-width-end];
+}
+
+/{$narrow} */
+
+@media screen and (max-width: 1024px) {
+    div#page-content {
+        grid-template-columns: [full-width-start] var(--main-content-side-margin) [breakout-start] minmax(0,1fr) [content-start] minmax(0,11fr) [content-end] minmax(0,1fr) [breakout-end] var(--main-content-side-margin) [full-width-end];
+    }
+}
+
+[[/code]]
+[[/collapsible]]
+[[/iftags]]
+
+[[module CSS]]
+/* {$classic}/
+
+:root {
+    --lumina-background: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Acandela-jp/bg-galaxy.jpg);
+    --lumina-footer-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Acandela-jp/earth.png);
+
+    --basalt-sub-text-color: 190, 213, 216;
+    --basalt-bright-element-color: 72, 182, 255;
+    --basalt-dark-element-color: 20, 120, 233;
+
+    --basalt-primary-color: 20,28,34;
+    --basalt-secondary-color: 102,114,130,.1325;
+    --basalt-tertiary-color: 51, 57, 65;
+}
+
+/{$classic} */
+
+/* {$narrow}/
+
+div#page-content {
+    grid-template-columns: [full-width-start] var(--main-content-side-margin) [breakout-start] minmax(0,1fr) [content-start] minmax(0,3.6fr) [content-end] minmax(0,1fr) [breakout-end] var(--main-content-side-margin) [full-width-end];
+}
+
+/{$narrow} */
+[[/module]]

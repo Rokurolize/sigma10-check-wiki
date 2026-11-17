@@ -1,0 +1,128 @@
+[[module CSS]]
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Ablackinblack-jp/1');
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Ablackinblack-jp/1
+]]
+
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** 黑影中（くろかげのなか）テーマ
+**翻訳責任者:** AI
+**翻訳年:** 2026
+**原題:** 黑影中 版式
+**著作権者:** 作者不詳（原語版ページの作成者は blackinblack）
+**作成年:** 2026
+**初訳時参照リビジョン:** 11
+**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:blackinblack 黑影中 版式]
+[[include :scp-jp:credit:end-preview]]
+
+[[div style="font-size: 1.2rem; text-align: center;"]]
+@@>>@@ [[[/theme:blackinblack-jp/norender/true|アクセシビリティモードを表示]]] @@<<@@
+[[/div]]
+
+**黒の中の黒テーマ**は、[[*user blackinblack]]が[[*user blackinblack]]のために制作した、[[[https://scp-wiki.wikidot.com/component:theme|Sigma-9]]]ベースの美的テーマです。果てしない暗闇の中で見えるものが赤い光だけになる情景を再現するために作られています。
+
+着想元は[[[https://scp-wiki.wikidot.com/scp-3001|SCP-3001]]]ですが[[footnote]]SCP-3001は私がいちばん好きなSCPのひとつです。これほど多くのファンアートが存在しているのを見ると、とても嬉しくなります。ただ残念なことに、ほとんどの作品では原文の描写に比べて光が明るすぎます。そこで、実際の状況にもっと近い絵を描きました。気に入ってもらえれば幸いです。[[/footnote]]、このテーマ自体は特定のSCP、GoI、カノン、[[[https://scp-wiki.wikidot.com/maybe-artwork-im-not-sure|物語]]]に紐づくものではありません。
+
+このテーマを適用するには、作品の冒頭に次のテキストを追加してください。
+> @@[[include :scp-jp:theme:blackinblack]]@@
+
+このテーマは[[[https://scp-wiki.wikidot.com/theme:basalt|玄武岩]]]テーマとも互換性があります。両方を同時に適用するには、作品の冒頭に次のテキストを追加してください。
+> @@[[include :scp-jp:theme:blackinblack]]@@
+> @@[[include :scp-jp:theme:basalt]]@@
+
+このテーマは[[[theme:black-highlighter-theme|ブラック・ハイライター]]]テーマとも互換性があります。ただし、ブラック・ハイライターは使うべきではありません。あんなものは知りません。
+
++ テーマ設定
+
+次のコードを追加すると、このテーマに機能を追加できます。
+
+* @@[[include component:toggle-sidebar]]@@：サイドバーを切り替えます。
+* //訳注: 原語版には「Saving page」が無限に続く状態を防ぐための別Wikiのコンポーネント（:evernight-aquarium:component:non-savingpage）の案内があります。SCP-JPには同コンポーネントが無いため、この項目は省いています。//
+
++ テーマ例
+
+このテーマを使用すると、各種ページ要素は次のように表示されます。
+
+[[include :scp-jp:component:image-block name=https://sigma10-jp-test.wdfiles.com/local--files/theme%3Ablackinblack-jp/red-reality.png|caption=自分でも本当にネタ切れだと思います。|width=250px|align=right]]
+
+[[toc]]
+@@ @@
+**太字** | //斜体// | __下線__ | --取り消し線-- | {{等幅テキスト}} ^^上付き^^,,下付き,,
+@@ @@
+10個のハイフン「@@----------@@」で水平線を作成できます[[footnote]]この水平線は[[*user Placeholder McD]]を苛立たせるためのものです。このページはあなたを苛立たせるためにあります。[[/footnote]]。
+
+----------
+
+見出しは、行頭に1個から6個のプラス記号「+」を入力すると作成できます。
+
++ 見出し1
+++ 見出し2
++++ 見出し3
+++++ 見出し4
++++++ 見出し5
+++++++ 見出し6
+@@ @@
+[[tabview]]
+[[tab タブ]]
+これはタブビューです。
+[[/tab]]
+[[tab タブ]]
+人類は絶滅しましたか？
+[[/tab]]
+[[tab 長いタブ、別名アレックス・ソーリーが韓国人セールスマンを拒否する]]
+//訳注: 原語版ではこのタブに、中国語・韓国語・日本語が混ざった長文のジョークが入っています。翻訳では再現せず、原文の趣旨（意味のない長文）を保ったまま省略しています。//
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[/tabview]]
+@@ @@
+> これは引用ブロックです。行頭に「> 」を付けると作成できます。
+> 
+> さらにテキスト
+> ----------
+> 水平線
+> 
+>> 入れ子の引用ブロック
+@@ @@
+||~ これは ||~ 表です ||
+|| もうとっくに || 分かっている ||
+|||| はずですよね ||
+|| なぜテーマごとに毎回これを書かなければならない || のでしょうか ||
+@@ @@
+[[=]]
+本文フォントはSigma-9本文で使用されるフォントです。
+{{等幅フォントはSigma-9等幅で使用されるフォントです。}}
+[[/=]]
+
++ ソースコード
+
+[[collapsible show="ソースコードを開く" hide="ソースコードを閉じる"]]
+[[code type="css"]]
+/*
+    黑影中 版式 / Black-in-Black Theme
+    Ported for SCP-JP (theme:blackinblack rev 11 on scp-wiki-cn)
+    Sigma-9 の全要素を黒く塗るだけのジョークテーマです。原語版の本文をそのまま訳しています。
+*/
+
+* {
+    background: black !important;
+}
+[[/code]]
+[[/collapsible]]
+
+[[include :scp-jp:component:license-box-backend
+|author=blackinblack]]
+
+> **ファイル名:** red-reality.png
+> **作者:** [[*user blackinblack]]
+> **ライセンス:** 原語版に記載なし（原語版ページにライセンス表記がありません。投稿前に著者へ確認してください）
+> **出典:** [https://scp-wiki-cn.wdfiles.com/local--files/theme%3Ablackinblack/ SCP-CN Wiki]
+
+[[include :scp-jp:component:license-box-end]]
+
+[[/iftags]]

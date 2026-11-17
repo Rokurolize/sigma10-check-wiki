@@ -1,0 +1,192 @@
+[[iftags +theme]]
+
+[[module CSS]]
+@import url("https://nu-scptheme.github.io/Black-Highlighter/stable/styles/normalize.min.css");
+@import url("https://nu-scptheme.github.io/Black-Highlighter/stable/styles/black-highlighter.min.css");
+[[/module]]
+
+[[>]]
+[[module rate]]
+[[/>]]
+
++ What's This?
+
+This is the Caretaker Theme by [[*user winkwonkboi]].
+
+This theme is specially designed for articles pertaining to the [https://scp-wiki.wikidot.com/anomalous-entity-engagement-division-hub Anomalous Entity Engagement Division (AEED),] a branch of the SCP Foundation.
+
++ How to Use
+
+On any wiki, just apply the following code at the top of your page:
+
+[[div class="code"]]
+@@[[include :scp-wiki:theme:black-highlighter-theme]]@@
+@@[[include :scp-wiki:theme:caretaker-theme]]@@
+[[/div]]
+
+//Note: This is a Black Highlighter based theme, so be sure to include that theme too, as you can see right above me. To learn more, go [https://scp-wiki.wikidot.com/theme:black-highlighter-theme here.]//
+
+----
+
+[[include component:image-block name=https://scp-wiki.wikidot.com/local--files/theme:caretaker-theme/feesh.png|caption=Wow, it's me!|width=300px]]
+
++ Examples
+
+A horizontal rule can be created using five hyphens @@"-----"@@ and extends across the page if not placed inside, let's say, a blockquote. Lines separating sections of this page are horizontal rules.
+
+[[collapsible show="+ Oh hey, a collapsible!" hide="- So this is what it looks like."]]
+Titles can be created by putting between one and six pluses "+" at the beginning of the line.
+
++ First Title
+++ Second Title
++++ Third Title
+++++ Fourth Title
++++++ Fifth Title
+++++++ And so on
+[[/collapsible]]
+
+----
+
+@@ @@
+
+[[tabview]]
+[[tab Tab One]]
+What? Just //one// line of text?
+[[/tab]]
+[[tab Tab Two]]
+Why have one-
+
+-when you can have //two?//
+[[/tab]]
+[[tab Long Tab]]
+Spams same line of text in your tab cutely.
+
+Spams same line of text in your tab cutely.
+
+Spams same line of text in your tab cutely.
+
+Spams same line of text in your tab cutely.
+
+Spams same line of text in your tab cutely.
+
+Spams same line of text in your tab cutely.
+
+Spams same line of text in your tab cutely.
+
+Spams same line of text in your tab cutely.
+
+Spams same line of text in your tab cutely.
+
+Spams same line of text in your tab cutely.
+
+Spams same line of text in your tab cutely.
+
+Spams same line of text in your tab cutely.
+[[/tab]]
+[[tab Tab With an Obnoxiously Long Title for Some Reason]]
+
+[[/tab]]
+[[tab Empty Tab]]
+
+[[/tab]]
+
+[[tab Empty Tab]]
+
+[[/tab]]
+
+[[tab Empty Tab]]
+
+[[/tab]]
+
+[[tab Empty Tab]]
+
+[[/tab]]
+
+[[tab Empty Tab]]
+
+[[/tab]]
+
+[[tab Empty Tab]]
+ooga booga
+[[/tab]]
+[[/tabview]]
+
+@@ @@
+
+[[div class="blockquote"]]
+This blockquote was made using a div block.
+----
+Cool, horizontal rule.
+
+> Nested blockquote, made using ">" at the start of the line.
+>> And another one to seal the deal.[[footnote]]There's even a footnote here![[/footnote]]
+[[/div]]
+
+@@ @@
+
+||~ hi, table here ||~ nice to meet you ||
+|| i'm sure || you know ||
+|||| how to make one, yeah? ||
+
+@@ @@
+
+----
++ Source Code
+
+@@ @@
+
+[[collapsible show="+ Don't Mind Me!" hide="- Nevermind Then"]]
+[[code type="css"]]
+    :root {
+        /* S-CSS-P INTEGRATION */
+        /* If you're making a new CSS theme, please include the following three variables at minimum. */
+        --theme-base: "black-highlighter";
+        /* must be either "black-highlighter" or "sigma9" */
+        --theme-id: "caretaker-theme";
+        /* set this to the URL of your theme's page - eg for "component:ar-theme", set it to "ar-theme" */
+        --theme-name: "Caretaker Theme";
+        /* set this to your theme's full name */
+
+        /* Header Elements */
+        --logo-image: url("https://scp-wiki.wikidot.com/local--files/theme:caretaker-theme/AEEDLogoWhite.png");
+        --header-subtitle: "Anomalous Entity Engagement Division";
+
+        /* Theme Colors */
+        --bright-accent: 255, 96, 144;
+        --medium-accent: 255, 96, 144;
+        --dark-accent: 255, 96, 144;
+        --gray-monochrome: 163, 0, 107;
+        --dark-gray-monochrome: 83, 0, 52;
+
+        /* Header Gradient */
+        --header-gradient-color-bottom: 179, 68, 109;
+        --header-gradient-color-middle: 225, 21, 133;
+        --header-gradient-color-top: 225, 21, 133;
+        --diagonal-stripes: unset;
+
+        /* Background Gradient */
+        --background-gradient-color: 244, 194, 194;
+
+        /* Link Colors */
+        --link-color: var(--bright-accent);
+        --visited-link-color: var(--header-gradient-color-bottom);
+        --hover-link-color: var(--header-gradient-color-bottom);
+
+        /* Menu Colors */
+        --swatch-menubg-color: 83, 0, 52;
+    }
+
+    #interwiki,
+    #side-bar {
+        --sidebar-links-text: 255, 255, 255;
+}
+[[/code]]
+[[/collapsible]]
+
+@@ @@
+
+[[/iftags]]
+
+[[module CSS]]
+@import url(https://scp-wiki.wikidot.com/theme:caretaker-theme/code/1);
+[[/module]]

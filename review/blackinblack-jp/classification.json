@@ -1,0 +1,1438 @@
+{
+ "tool": "classify_hunks.py",
+ "classifier_version": "0.1.0",
+ "signature_table_version": "2026-11-17.1",
+ "theme": {
+  "dir": "blackinblack-jp",
+  "cand_fullname": "theme:blackinblack-jp",
+  "orig_fullname": "theme:blackinblack",
+  "wiki": "scp-wiki-cn",
+  "revision": "11",
+  "kind": "standard",
+  "verdict": "PASS",
+  "original_file": "blackinblack-jp/original.txt",
+  "candidate_file": "blackinblack-jp/candidate.txt",
+  "original_sha256": "e9c2a9bc08799a67716a05cbc1148f698205eafeaca5cdf2f50a09a11161ca1c",
+  "candidate_sha256": "36544f30bd06fe5ecc6b1cf598a19ecdbb52f77610d9ac04b928d224f1f96f4a",
+  "original_lines": 100,
+  "candidate_lines": 128
+ },
+ "topology": {
+  "original_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     0,
+     3
+    ],
+    "lines": 3
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     93,
+     98
+    ],
+    "lines": 5
+   }
+  ],
+  "candidate_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     0,
+     3
+    ],
+    "lines": 3
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     104,
+     115
+    ],
+    "lines": 11
+   }
+  ],
+  "moves": [],
+  "external_own_delivery": true
+ },
+ "blocks": [
+  {
+   "id": "B1",
+   "orig_range": [
+    1,
+    2
+   ],
+   "cand_range": [
+    1,
+    2
+   ],
+   "orig_lines": "2-2",
+   "cand_lines": "2-2",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-HOST",
+    "DRAFT-HOST",
+    "SELF-DELIVERY"
+   ],
+   "primary": "DELIVERY-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-HOST": "A",
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DELIVERY-HOST": {
+     "orig": [
+      [
+       1,
+       2
+      ]
+     ],
+     "cand": [
+      [
+       1,
+       2
+      ]
+     ]
+    },
+    "SELF-DELIVERY": {
+     "orig": [
+      [
+       1,
+       2
+      ]
+     ],
+     "cand": [
+      [
+       1,
+       2
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       1,
+       2
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "@import url(https://scp-wiki-cn.wikidot.com/local--code/theme:blackinblack/1);",
+   "first_added": "@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Ablackinblack-jp/1');"
+  },
+  {
+   "id": "B2",
+   "orig_range": [
+    4,
+    8
+   ],
+   "cand_range": [
+    4,
+    21
+   ],
+   "orig_lines": "5-8",
+   "cand_lines": "5-21",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "BARE-RATE-DEL",
+    "CREDIT-PREVIEW",
+    "DRAFT-HOST",
+    "IFTAGS",
+    "SELF-DELIVERY",
+    "TASL-FIELDS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "CREDIT-PREVIEW",
+   "primary_section": 1,
+   "label_prec": {
+    "CREDIT-PREVIEW": "A",
+    "TASL-FIELDS": "A",
+    "BARE-RATE-DEL": "B",
+    "IFTAGS": "A",
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "CREDIT-PREVIEW": {
+     "cand": [
+      [
+       11,
+       12
+      ],
+      [
+       20,
+       21
+      ]
+     ]
+    },
+    "TASL-FIELDS": {
+     "cand": [
+      [
+       12,
+       20
+      ]
+     ]
+    },
+    "BARE-RATE-DEL": {
+     "orig": [
+      [
+       6,
+       7
+      ]
+     ]
+    },
+    "IFTAGS": {
+     "orig": [
+      [
+       4,
+       5
+      ]
+     ],
+     "cand": [
+      [
+       9,
+       10
+      ]
+     ]
+    },
+    "SELF-DELIVERY": {
+     "orig": [],
+     "cand": [
+      [
+       6,
+       7
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       6,
+       7
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "class (iii) draft-stage form",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[iftags 版式]]",
+   "first_added": "[[include :scp-jp:component:interwiki-style"
+  },
+  {
+   "id": "B3",
+   "orig_range": [
+    10,
+    11
+   ],
+   "cand_range": [
+    23,
+    24
+   ],
+   "orig_lines": "11-11",
+   "cand_lines": "24-24",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "LINK-REPOINT",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "LINK-REPOINT",
+   "primary_section": 7,
+   "label_prec": {
+    "LINK-REPOINT": "C",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "LINK-REPOINT": {
+     "orig": [
+      [
+       10,
+       11
+      ]
+     ],
+     "cand": [
+      [
+       23,
+       24
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "@@>>@@ [[[/theme:blackinblack/norender/true|查看无障碍模式]]] @@<<@@",
+   "first_added": "@@>>@@ [[[/theme:blackinblack-jp/norender/true|アクセシビリティモードを表示]]] @@<<@@"
+  },
+  {
+   "id": "B4",
+   "orig_range": [
+    13,
+    14
+   ],
+   "cand_range": [
+    26,
+    27
+   ],
+   "orig_lines": "14-14",
+   "cand_lines": "27-27",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "LINK-REPOINT",
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "LINK-REPOINT": "C",
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "LINK-REPOINT": {
+     "orig": [
+      [
+       13,
+       14
+      ]
+     ],
+     "cand": [
+      [
+       26,
+       27
+      ]
+     ]
+    },
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "**黑影中 版式**是由[[*user blackinblack]]为[[*user blackinblack]]制作的基于[[[component:theme|Sigma-9]]]的美学版式，旨在模拟无垠黑暗之中所见之物唯有红光。",
+   "first_added": "**黒の中の黒テーマ**は、[[*user blackinblack]]が[[*user blackinblack]]のために制作した、[[[https://scp-wiki.wikidot.com/component:theme|Sigma-9]]]ベースの美的テーマです。果てしない暗闇の中で見えるものが赤い光だけになる情景を再現するために作られています。"
+  },
+  {
+   "id": "B5",
+   "orig_range": [
+    15,
+    16
+   ],
+   "cand_range": [
+    28,
+    29
+   ],
+   "orig_lines": "16-16",
+   "cand_lines": "29-29",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "LINK-REPOINT",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "LINK-REPOINT",
+   "primary_section": 7,
+   "label_prec": {
+    "LINK-REPOINT": "C",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "LINK-REPOINT": {
+     "orig": [
+      [
+       15,
+       16
+      ]
+     ],
+     "cand": [
+      [
+       28,
+       29
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "尽管创作灵感来自于[[[SCP-3001]]][[footnote]] SCP-3001是我最喜欢的SCP之一，很高兴看到它拥有着数量如此众多的同人艺作。然而，美中不足的是，绝大多数艺作中描绘的景象与原文描述相比，光线都显得太亮了，所以我画了一幅更加贴近实际情况的。希望你喜欢。 [[/footnote]]，该版式并不与任何SCP/GoI/设定/[[[maybe-artwork-im-not-sure|故事]]]绑定。",
+   "first_added": "着想元は[[[https://scp-wiki.wikidot.com/scp-3001|SCP-3001]]]ですが[[footnote]]SCP-3001は私がいちばん好きなSCPのひとつです。これほど多くのファンアートが存在しているのを見ると、とても嬉しくなります。ただ残念なことに、ほとんどの作品では原文の描写に比べて光が明るすぎます。そこで、実際の状況にもっと近い絵を描きました。気に入ってもらえれば幸いです。[[/footnote]]、このテーマ自体は特定のSCP、GoI、カノン、[[[https://scp-wiki.wikidot.com/maybe-artwork-im-not-sure|物語]]]に紐づくものではありません。"
+  },
+  {
+   "id": "B6",
+   "orig_range": [
+    17,
+    19
+   ],
+   "cand_range": [
+    30,
+    32
+   ],
+   "orig_lines": "18-19",
+   "cand_lines": "31-32",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "INCLUDE-REPOINT",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "INCLUDE-REPOINT",
+   "primary_section": 2,
+   "label_prec": {
+    "INCLUDE-REPOINT": "A",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "INCLUDE-REPOINT": {
+     "orig": [
+      [
+       18,
+       19
+      ]
+     ],
+     "cand": [
+      [
+       31,
+       32
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "在你的作品开头添加如下文本以应用此版式：",
+   "first_added": "このテーマを適用するには、作品の冒頭に次のテキストを追加してください。"
+  },
+  {
+   "id": "B7",
+   "orig_range": [
+    20,
+    23
+   ],
+   "cand_range": [
+    33,
+    36
+   ],
+   "orig_lines": "21-23",
+   "cand_lines": "34-36",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "INCLUDE-REPOINT",
+    "LINK-REPOINT",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "INCLUDE-REPOINT",
+   "primary_section": 2,
+   "label_prec": {
+    "INCLUDE-REPOINT": "A",
+    "LINK-REPOINT": "C",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "INCLUDE-REPOINT": {
+     "orig": [
+      [
+       21,
+       23
+      ]
+     ],
+     "cand": [
+      [
+       34,
+       36
+      ]
+     ]
+    },
+    "LINK-REPOINT": {
+     "orig": [
+      [
+       20,
+       21
+      ]
+     ],
+     "cand": [
+      [
+       33,
+       34
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "本版式同样也与[[[theme:basalt|玄武岩]]]版式兼容，在你的作品开头添加如下文本以同时应用此版式与玄武岩版式：",
+   "first_added": "このテーマは[[[https://scp-wiki.wikidot.com/theme:basalt|玄武岩]]]テーマとも互換性があります。両方を同時に適用するには、作品の冒頭に次のテキストを追加してください。"
+  },
+  {
+   "id": "B8",
+   "orig_range": [
+    24,
+    25
+   ],
+   "cand_range": [
+    37,
+    38
+   ],
+   "orig_lines": "25-25",
+   "cand_lines": "38-38",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "本版式同样也与[[[theme:black-highlighter-theme|黑色标记笔]]]版式兼容，但你不应该使用黑标，他妈的黑标。",
+   "first_added": "このテーマは[[[theme:black-highlighter-theme|ブラック・ハイライター]]]テーマとも互換性があります。ただし、ブラック・ハイライターは使うべきではありません。あんなものは知りません。"
+  },
+  {
+   "id": "B9",
+   "orig_range": [
+    26,
+    27
+   ],
+   "cand_range": [
+    39,
+    40
+   ],
+   "orig_lines": "27-27",
+   "cand_lines": "40-40",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "+ 版式设置",
+   "first_added": "+ テーマ設定"
+  },
+  {
+   "id": "B10",
+   "orig_range": [
+    28,
+    29
+   ],
+   "cand_range": [
+    41,
+    42
+   ],
+   "orig_lines": "29-29",
+   "cand_lines": "42-42",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "你可以通过添加以下代码来为该版式加入更多的功能。",
+   "first_added": "次のコードを追加すると、このテーマに機能を追加できます。"
+  },
+  {
+   "id": "B11",
+   "orig_range": [
+    30,
+    32
+   ],
+   "cand_range": [
+    43,
+    45
+   ],
+   "orig_lines": "31-32",
+   "cand_lines": "44-45",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "EXHIBIT-RESTRUCTURE",
+    "INCLUDE-REPOINT",
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "INCLUDE-REPOINT": "A",
+    "EXHIBIT-RESTRUCTURE": "C",
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "INCLUDE-REPOINT": {
+     "orig": [
+      [
+       30,
+       31
+      ]
+     ],
+     "cand": [
+      [
+       43,
+       44
+      ]
+     ]
+    },
+    "EXHIBIT-RESTRUCTURE": {},
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced",
+    "anchored pairs 2/2"
+   ],
+   "partial_notes": [],
+   "first_removed": "* [[include :scp-wiki-cn:component:toggle-sidebar]]：切换侧边栏。",
+   "first_added": "* @@[[include component:toggle-sidebar]]@@：サイドバーを切り替えます。"
+  },
+  {
+   "id": "B12",
+   "orig_range": [
+    33,
+    34
+   ],
+   "cand_range": [
+    46,
+    47
+   ],
+   "orig_lines": "34-34",
+   "cand_lines": "47-47",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "+ 版式示例",
+   "first_added": "+ テーマ例"
+  },
+  {
+   "id": "B13",
+   "orig_range": [
+    35,
+    36
+   ],
+   "cand_range": [
+    48,
+    49
+   ],
+   "orig_lines": "36-36",
+   "cand_lines": "49-49",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "在使用此版式时各种页面元素的外观如下所示。",
+   "first_added": "このテーマを使用すると、各種ページ要素は次のように表示されます。"
+  },
+  {
+   "id": "B14",
+   "orig_range": [
+    37,
+    38
+   ],
+   "cand_range": [
+    50,
+    51
+   ],
+   "orig_lines": "38-38",
+   "cand_lines": "51-51",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "DRAFT-HOST",
+    "EXHIBIT-RESTRUCTURE",
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "DRAFT-HOST": "A",
+    "EXHIBIT-RESTRUCTURE": "C",
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       50,
+       51
+      ]
+     ]
+    },
+    "EXHIBIT-RESTRUCTURE": {},
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "class (iii) draft-stage form",
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced",
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[include component:image-block name=https://scp-wiki-cn.wdfiles.com/local--files/theme%3Ablackinblack/%E7%BA%A2%E7%8E%B0%E5%AE%9E%E8%89%BA%E4%BD%9C.png|caption=我也觉得自己真的没活了。|width=250px|align=right]]",
+   "first_added": "[[include :scp-jp:component:image-block name=https://sigma10-jp-test.wdfiles.com/local--files/theme%3Ablackinblack-jp/red-reality.png|caption=自分でも本当にネタ切れだと思います。|width=250px|align=right]]"
+  },
+  {
+   "id": "B15",
+   "orig_range": [
+    41,
+    42
+   ],
+   "cand_range": [
+    54,
+    55
+   ],
+   "orig_lines": "42-42",
+   "cand_lines": "55-55",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "**粗体** | //斜体// | __下划线__ | --删除线-- | {{teletype text}} ^^上标^^,,下标,,",
+   "first_added": "**太字** | //斜体// | __下線__ | --取り消し線-- | {{等幅テキスト}} ^^上付き^^,,下付き,,"
+  },
+  {
+   "id": "B16",
+   "orig_range": [
+    43,
+    44
+   ],
+   "cand_range": [
+    56,
+    57
+   ],
+   "orig_lines": "44-44",
+   "cand_lines": "57-57",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "可通过十个连字符“@@----------@@”创建水平分割线[[footnote]]这条分割线是为了激怒 [[*user Placeholder McD]]。这个页面是为了激怒你。[[/footnote]]。",
+   "first_added": "10個のハイフン「@@----------@@」で水平線を作成できます[[footnote]]この水平線は[[*user Placeholder McD]]を苛立たせるためのものです。このページはあなたを苛立たせるためにあります。[[/footnote]]。"
+  },
+  {
+   "id": "B17",
+   "orig_range": [
+    47,
+    48
+   ],
+   "cand_range": [
+    60,
+    61
+   ],
+   "orig_lines": "48-48",
+   "cand_lines": "61-61",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "标题可通过在一行字起始处输入1至6个加号“+”来创建。",
+   "first_added": "見出しは、行頭に1個から6個のプラス記号「+」を入力すると作成できます。"
+  },
+  {
+   "id": "B18",
+   "orig_range": [
+    49,
+    55
+   ],
+   "cand_range": [
+    62,
+    68
+   ],
+   "orig_lines": "50-55",
+   "cand_lines": "63-68",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 6/6"
+   ],
+   "partial_notes": [],
+   "first_removed": "+ 1级标题",
+   "first_added": "+ 見出し1"
+  },
+  {
+   "id": "B19",
+   "orig_range": [
+    57,
+    59
+   ],
+   "cand_range": [
+    70,
+    72
+   ],
+   "orig_lines": "58-59",
+   "cand_lines": "71-72",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/2"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[tab 分页]]",
+   "first_added": "[[tab タブ]]"
+  },
+  {
+   "id": "B20",
+   "orig_range": [
+    60,
+    62
+   ],
+   "cand_range": [
+    73,
+    75
+   ],
+   "orig_lines": "61-62",
+   "cand_lines": "74-75",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/2"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[tab 分页]]",
+   "first_added": "[[tab タブ]]"
+  },
+  {
+   "id": "B21",
+   "orig_range": [
+    63,
+    67
+   ],
+   "cand_range": [
+    76,
+    78
+   ],
+   "orig_lines": "64-67",
+   "cand_lines": "77-78",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[tab 长Tab，又名Alex Thorley拒绝韩国推销员]]",
+   "first_added": "[[tab 長いタブ、別名アレックス・ソーリーが韓国人セールスマンを拒否する]]"
+  },
+  {
+   "id": "B22",
+   "orig_range": [
+    68,
+    69
+   ],
+   "cand_range": [
+    79,
+    80
+   ],
+   "orig_lines": "69-69",
+   "cand_lines": "80-80",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[tab 空Tab]]",
+   "first_added": "[[tab 空のタブ]]"
+  },
+  {
+   "id": "B23",
+   "orig_range": [
+    72,
+    73
+   ],
+   "cand_range": [
+    83,
+    84
+   ],
+   "orig_lines": "73-73",
+   "cand_lines": "84-84",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "> 这是一个引用块，在一行字的起始处加上“> ”来创建。",
+   "first_added": "> これは引用ブロックです。行頭に「> 」を付けると作成できます。"
+  },
+  {
+   "id": "B24",
+   "orig_range": [
+    74,
+    75
+   ],
+   "cand_range": [
+    85,
+    86
+   ],
+   "orig_lines": "75-75",
+   "cand_lines": "86-86",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "> 更多文字",
+   "first_added": "> さらにテキスト"
+  },
+  {
+   "id": "B25",
+   "orig_range": [
+    76,
+    77
+   ],
+   "cand_range": [
+    87,
+    88
+   ],
+   "orig_lines": "77-77",
+   "cand_lines": "88-88",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "> 一条分割线",
+   "first_added": "> 水平線"
+  },
+  {
+   "id": "B26",
+   "orig_range": [
+    78,
+    79
+   ],
+   "cand_range": [
+    89,
+    90
+   ],
+   "orig_lines": "79-79",
+   "cand_lines": "90-90",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": ">> 嵌套引用块",
+   "first_added": ">> 入れ子の引用ブロック"
+  },
+  {
+   "id": "B27",
+   "orig_range": [
+    80,
+    84
+   ],
+   "cand_range": [
+    91,
+    95
+   ],
+   "orig_lines": "81-84",
+   "cand_lines": "92-95",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 4/4"
+   ],
+   "partial_notes": [],
+   "first_removed": "||~ 这是 ||~ 表格 ||",
+   "first_added": "||~ これは ||~ 表です ||"
+  },
+  {
+   "id": "B28",
+   "orig_range": [
+    86,
+    88
+   ],
+   "cand_range": [
+    97,
+    99
+   ],
+   "orig_lines": "87-88",
+   "cand_lines": "98-99",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/2"
+   ],
+   "partial_notes": [],
+   "first_removed": "正文字体为Sigma-9正文使用的字体。",
+   "first_added": "本文フォントはSigma-9本文で使用されるフォントです。"
+  },
+  {
+   "id": "B29",
+   "orig_range": [
+    90,
+    91
+   ],
+   "cand_range": [
+    101,
+    102
+   ],
+   "orig_lines": "91-91",
+   "cand_lines": "102-102",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "+ 源代码",
+   "first_added": "+ ソースコード"
+  },
+  {
+   "id": "B30",
+   "orig_range": [
+    92,
+    94
+   ],
+   "cand_range": [
+    103,
+    111
+   ],
+   "orig_lines": "93-94",
+   "cand_lines": "104-111",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[collapsible show=\"展开源代码\" hide=\"关闭源代码\"]]",
+   "first_added": "[[collapsible show=\"ソースコードを開く\" hide=\"ソースコードを閉じる\"]]"
+  },
+  {
+   "id": "B31",
+   "orig_range": [
+    99,
+    99
+   ],
+   "cand_range": [
+    116,
+    127
+   ],
+   "orig_lines": "at 100",
+   "cand_lines": "117-127",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "LICENSE-BOX",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "LICENSE-BOX",
+   "primary_section": 1,
+   "label_prec": {
+    "LICENSE-BOX": "A",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "LICENSE-BOX": {
+     "cand": [
+      [
+       117,
+       118
+      ],
+      [
+       125,
+       126
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "supplement (T4): the original carried no license box",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": ""
+  }
+ ],
+ "derived_presence": {},
+ "summary": {
+  "blocks": 31,
+  "specific": 18,
+  "heuristic": 13,
+  "residue": 0,
+  "skipped": 0,
+  "reindent_blocks": 0,
+  "label_counts": {
+   "DELIVERY-HOST": 1,
+   "DRAFT-HOST": 3,
+   "SELF-DELIVERY": 2,
+   "BARE-RATE-DEL": 1,
+   "CREDIT-PREVIEW": 1,
+   "IFTAGS": 1,
+   "TASL-FIELDS": 1,
+   "TRANS-UNANCHORED": 17,
+   "LINK-REPOINT": 4,
+   "TRANSLATION-ANCHORED": 13,
+   "INCLUDE-REPOINT": 3,
+   "EXHIBIT-RESTRUCTURE": 2,
+   "COMMENT-TEXT": 1,
+   "LICENSE-BOX": 1
+  }
+ },
+ "residue": [],
+ "skeleton": {
+  "sha256": "b62962cd249cd8a62385b11781053f05e4a378a52383e373fd54ef31e3eb529b",
+  "status": "written (new)"
+ }
+}
