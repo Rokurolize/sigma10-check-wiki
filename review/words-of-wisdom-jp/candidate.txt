@@ -1,0 +1,342 @@
+[[include :scp-jp:component:interwiki-style
+| priority=1
+]]
+
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** Words Of Wisdom Theme
+**翻訳責任者:** AI
+**翻訳年:** 2026
+**著者:** Cole 13（親テーマ: Shattered Thoughts Theme / yossipossi作、CC BY-SA 3.0、拡張許可済み）
+**原題:** [https://scp-wiki.wikidot.com/theme:words-of-wisdom Words Of Wisdom Theme]
+**著作権者:** [[*user Cole 13]]
+**作成年:** 2021
+**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:words-of-wisdom ソース（rev 12）]
+**初訳時参照リビジョン:** 12
+[[include :scp-jp:credit:end-preview]]
+
+このページで使うフォントはすべて SIL Open Font License の下で配布され、Google Fonts から読み込まれます。日本語テキストには Noto Sans JP が使われます。
+
++*  これは何？
+
+>
+> ようこそ、鳥類の友人たち。これは私、[[*user Cole 13]]が、[[*user chaucer345]]の要注意団体「堂守連盟」のために作成したWords Of Wisdomテーマです。
+>
+
+>
+> [[*user yossipossi]]から、彼のShattered Thoughts[https://scp-wiki.wikidot.com/theme:shattered-thoughts テーマ]（英語版）の拡張版を作成する許可を得ています。この移植版は親テーマ（theme:shattered-thoughts-jp）のコードファイルを @import で読み込んで動作します。
+>
++*  任意のwikiで:
+
+
+[[span style="padding: 1px; margin-left: 10px;"]]{{@@[[include :scp-jp:theme:words-of-wisdom-jp]]@@}}[[/span]]
+
+[[tabview]]
+[[tab 通常タブ]]
+本文..[[footnote]]これが脚注です[[/footnote]]
+[[/tab]]
+[[tab 長いタブ]]
+本文..
+本文..
+本文..
+本文..
+本文..
+本文..
+本文..
+[[/tab]]
+[[tab 空のタブ]]
+
+[[/tab]]
+[[/tabview]]
+@@ @@
+||~ これは ||~ 表です ||
+|| こういうものの作り方は |||| もう知っているはずです ||
+|||||| よね||
+@@ @@
+
+[[include :scp-jp:component:license-box-backend
+|author=Cole 13]]
+
+> **名称:** Words Of Wisdom Theme（CSS・ページ添付画像を含む）
+> **作者:** Cole 13
+> **ライセンス:** CC BY-SA 3.0
+
+> **名称:** Shattered Thoughts Theme（theme:shattered-thoughts-jp を @import で参照。Rev 34 で原版を読み取り）
+> **作者:** yossipossi
+> **ライセンス:** CC BY-SA 3.0
+> **出典:** [https://scp-wiki.wikidot.com/theme:shattered-thoughts SCP-Wiki「Shattered Thoughts Theme」]
+> **補足:** Cole 13 は yossipossi から拡張版の作成許可を得ています。親テーマ Shattered Thoughts Theme は theme:shattered-thoughts-jp としてSCP-JPに投稿済みのため、このページはそのコードファイルを @import で読み込んで動作します。
+
+> **ファイル名:** shatteredthoughtsbackground_smaller.png、diamondblue.png
+> **作者:** yossipossi
+> **ライセンス:** CC BY-SA 3.0
+> **出典:** [https://scp-wiki.wikidot.com/theme:shattered-thoughts SCP-Wiki「Shattered Thoughts Theme」] より転載
+
+> **ファイル名:** WANDPNG .png、MRSTAR23.webp
+> **作者:** 記載なし（EN版ソース・ライセンス表示に記載なし）
+> **ライセンス:** 記載なし
+
+[[include :scp-jp:component:license-box-end]]
+
+[[/iftags]]
+
+[[div [[iftags -テーマ]]style="display: none"[[/iftags]]]]
+
+[[module CSS show="true"]]
+
+@charset "utf-8";
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Ashattered-thoughts-jp/1');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Noto+Sans+JP:wght@400;700&display=swap');
+
+/* ===== Words Of Wisdom Theme（本テーマ） ===== */
+/*
+    Words Of Wisdom theme
+    [2021 Wikidot Theme]
+    Created by Cole 13
+    CC BY-SA 3.0
+*/
+
+/*
+    Words of Wisdom theme
+    [2021 Wikidot Theme]
+    Created by Cole 13
+    CC BY-SA 3.0
+*/
+
+
+#header-extra-div-1{  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 10px;
+    margin-top: 5px;
+    pointer-events: none;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
+
+/* -=- HEADER -=- */
+
+#header {
+    background-image: none;
+    padding-bottom: 1.860rem;
+}
+
+#header h1 a::before {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    content: "The Wandsmen";
+    color: #ffffff;
+    font-family: 'Mate SC', 'Noto Sans JP', serif;
+    font-size: 2.3rem;
+    text-shadow: 0rem 0rem 0.3125rem #000000;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    padding-top: 56px;
+}
+
+#header h2::before {
+    content: "";
+}
+#header #header-extra-div-1 {
+    background: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Awords-of-wisdom-jp/WANDPNG%20.png) center top no-repeat;
+    background-size :195px;
+    height: 195px;
+}
+@media (prefers-reduced-motion) {
+    #header-extra-div-1 {
+        animation: none;
+    }
+}
+/* -=- HEADER BACKGROUND -=- */
+
+div#container-wrap {
+    background: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Awords-of-wisdom-jp/MRSTAR23.webp) top left repeat-x;
+    background-size: 100%;
+}
+
+/* -=- LINKS -=- */
+
+a, a.newpage {
+    color: #D196eb;
+}
+
+a:visited {
+    color: #D196eb;
+}
+
+/* -=- BLOCKQUOTE -=- */
+
+div.blockquote,
+blockquote {
+    background: rgba(38, 0, 95, 0.5);
+    border: 0.125rem dotted #624693;
+}
+
+/* -=- OWINDOWS -=- */
+
+
+/* This simply changed the karma bar colors in that user info pop-up menu. No functional purpose besides it looks neat, really. */
+img[src*="userkarma.php"] {
+    filter: hue-rotate(-0.39turn);
+}
+
+.owindow ::selection {
+    background: #9477c7;
+}
+
+/* -=- RATING MODULE -=- */
+
+.page-rate-widget-box .rate-points,
+.page-rate-widget-box > *,
+.rate-box-with-credit-button {
+    background-color: #533a7f !important;
+}
+
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover,
+.page-rate-widget-box .cancel a:hover {
+    background: #533a7f;
+}
+
+/* -=- SEARCH BAR -=- */
+
+#search-top-box-input,
+#search-top-box-input:hover,
+#search-top-box-input:focus {
+    background-color: #825ec0;
+}
+
+#search-top-box-form input[type=submit],
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+    background-color: #825ec0;
+}
+#search-top-box-form input[type=submit] {
+    background-color: #825ec0;
+}
+
+/* -=- TOP BAR -=- */
+
+#top-bar {
+    background: linear-gradient(to right, transparent 50%, #6b5295 75%, transparent 100%);
+}
+
+#top-bar ul li a {
+    color: #FFFFFF;
+}
+
+
+#top-bar ul li:hover a,
+#top-bar ul li:hover ul li a {
+    background: #9477c7;
+    border: none;
+    color: #ffffff;
+}
+
+#top-bar ul li:hover a:hover {
+    background: #7853b8;
+    color: #e6e6e6;
+}
+
+#top-bar ul li ul {
+    border: none;
+}
+#top-bar .open-menu a {
+    background-color: #7853b8;
+    border-color: none;
+    color: #FFFFFF;
+}
+
+/* -=- SIDEBAR -=- */
+
+#side-bar .heading, #interwiki .heading {
+     font-family: 'Mate SC', 'Noto Sans JP', serif;
+}
+
+#side-bar div.menu-item img, #interwiki div.menu-item img {
+    display: none;
+}
+
+#side-bar div.side-block, #interwiki div.side-block,
+#side-bar .side-block.media, #interwiki .side-block.media,
+#side-bar .side-block.resources, #interwiki .side-block.resources {
+    padding-left: 0.8125rem;
+}
+
+#side-bar a, #side-bar a:visited,
+#interwiki a, #interwiki a:visited {
+    color: #D196eb;
+}
+
+/* -=- TABBERS -=- */
+
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a:focus,
+.yui-navset .yui-nav .selected a:hover {
+    background-color: rgba(38, 0, 95, 0.5);
+}
+
+.yui-navset .yui-nav a,
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:focus {
+    background-color: #825ec0;
+    background-image: none;
+    border: none;
+    color: #ffffff;
+}
+
+.yui-navset .yui-content {
+    background:rgba(38, 0, 95, 0.5);
+    border: 0.125rem dotted #624693;
+}
+
+/* -=- USER INFO -=- */
+
+#login-status,
+#login-status a {
+    color: #EDBAF5;
+}
+
+#account-options ul {
+    background-color: #825ec0;
+}
+
+/* -=- TABLES -=- */
+
+table.wiki-content-table td {
+    border: 0.0625rem solid #000000;
+}
+
+table.wiki-content-table th {
+    border: 0.0625rem solid #000000;
+    background: #825ec0;
+}
+
+/* -=- MISCELLANEOUS -=- */
+
+/* Changes the top border of the tags section, which is typically colored #888, to match the theme better. */
+.page-tags span {
+    border-top: solid 0.0625rem #000000;
+}
+
+
+/* While the page is saving and loading, there is a popup on the screen. This popup was difficult to read due to the body's properties (color being white), so this changed the background to be more thematically appropriate and legible. */
+.owait,
+.osuccess {
+    background-color: #825ec0;
+    border: solid 0.0625rem #825ec0;
+}
+
+[[/module]]
+[[/div]]

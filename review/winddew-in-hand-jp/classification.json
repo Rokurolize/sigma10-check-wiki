@@ -1,0 +1,548 @@
+{
+ "tool": "classify_hunks.py",
+ "classifier_version": "0.1.0",
+ "signature_table_version": "2026-11-17.1",
+ "theme": {
+  "dir": "winddew-in-hand-jp",
+  "cand_fullname": "theme:winddew-in-hand-jp",
+  "orig_fullname": "theme:winddew-in-hand",
+  "wiki": "scp-wiki-cn",
+  "revision": "3",
+  "kind": "standard",
+  "verdict": "PASS",
+  "original_file": "review/winddew-in-hand-jp/original.txt",
+  "candidate_file": "review/winddew-in-hand-jp/candidate.txt",
+  "original_sha256": "cf99b42a9e92b316feacaa26cf72dec0372c81391815d927db4dd2dfc479798b",
+  "candidate_sha256": "c3154305b4b131491497ada3db4a86b5cba0ff53781281dc6ab35f109f56460f",
+  "original_lines": 458,
+  "candidate_lines": 450
+ },
+ "topology": {
+  "original_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     3,
+     116
+    ],
+    "lines": 113
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     267,
+     272
+    ],
+    "lines": 5
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     275,
+     280
+    ],
+    "lines": 5
+   }
+  ],
+  "candidate_components": [
+   {
+    "kind": "code-css",
+    "range": [
+     320,
+     439
+    ],
+    "lines": 119
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     443,
+     446
+    ],
+    "lines": 3
+   }
+  ],
+  "moves": [
+   {
+    "from_kind": "module-css",
+    "to_kind": "code-css",
+    "orig_range": [
+     3,
+     116
+    ],
+    "cand_range": [
+     320,
+     439
+    ],
+    "similarity": 0.959,
+    "basis": "content"
+   }
+  ],
+  "external_own_delivery": false
+ },
+ "blocks": [
+  {
+   "id": "B1",
+   "orig_range": [
+    0,
+    2
+   ],
+   "cand_range": [
+    0,
+    36
+   ],
+   "orig_lines": "1-2",
+   "cand_lines": "1-36",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "COMPONENT-SWAP",
+    "CREDIT-PREVIEW",
+    "IFTAGS",
+    "TASL-FIELDS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "CREDIT-PREVIEW",
+   "primary_section": 1,
+   "label_prec": {
+    "CREDIT-PREVIEW": "A",
+    "TASL-FIELDS": "A",
+    "COMPONENT-SWAP": "B",
+    "IFTAGS": "A",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "CREDIT-PREVIEW": {
+     "cand": [
+      [
+       2,
+       3
+      ],
+      [
+       11,
+       12
+      ]
+     ]
+    },
+    "TASL-FIELDS": {
+     "cand": [
+      [
+       3,
+       11
+      ]
+     ]
+    },
+    "COMPONENT-SWAP": {
+     "orig": [
+      [
+       1,
+       2
+      ]
+     ],
+     "cand": [
+      [
+       17,
+       18
+      ]
+     ]
+    },
+    "IFTAGS": {
+     "orig": [],
+     "cand": [
+      [
+       0,
+       1
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[div style=\"display: none;\"]]",
+   "first_added": "[[iftags +テーマ]]"
+  },
+  {
+   "id": "B2",
+   "orig_range": [
+    3,
+    4
+   ],
+   "cand_range": [
+    37,
+    322
+   ],
+   "orig_lines": "4-4",
+   "cand_lines": "38-322",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "orig": [
+      [
+       3,
+       4
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[module css]]",
+   "first_added": ""
+  },
+  {
+   "id": "B3",
+   "orig_range": [
+    7,
+    8
+   ],
+   "cand_range": [
+    325,
+    326
+   ],
+   "orig_lines": "8-8",
+   "cand_lines": "326-326",
+   "channel_pair": [
+    "module-css",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       325,
+       326
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    --header-logo: url(\"http://scpsandboxcn.wdfiles.com/local--files/breaddddd/wdh.png\");",
+   "first_added": "    --header-logo: url(\"https://scpsandboxcn.wdfiles.com/local--files/breaddddd/wdh.png\");"
+  },
+  {
+   "id": "B4",
+   "orig_range": [
+    44,
+    45
+   ],
+   "cand_range": [
+    362,
+    363
+   ],
+   "orig_lines": "45-45",
+   "cand_lines": "363-363",
+   "channel_pair": [
+    "module-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       44,
+       45
+      ]
+     ],
+     "cand": [
+      [
+       362,
+       363
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       362,
+       363
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    --bg-img: url(https://scpsandboxcn.wikidot.com/local--files/collab:zhongfenzhutibanshi/xs);",
+   "first_added": "    --bg-img: url(https://scpsandboxcn.wikidot.com/local--files/collab%3Azhongfenzhutibanshi/xs);"
+  },
+  {
+   "id": "B5",
+   "orig_range": [
+    114,
+    268
+   ],
+   "cand_range": [
+    432,
+    432
+   ],
+   "orig_lines": "115-268",
+   "cand_lines": "at 433",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [
+    "EXHIBIT-RESTRUCTURE",
+    "IFTAGS"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "IFTAGS": "A",
+    "EXHIBIT-RESTRUCTURE": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "IFTAGS": {
+     "orig": [
+      [
+       117,
+       118
+      ]
+     ],
+     "cand": []
+    },
+    "EXHIBIT-RESTRUCTURE": {}
+   },
+   "notes": [
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced"
+   ],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": ""
+  },
+  {
+   "id": "B6",
+   "orig_range": [
+    271,
+    276
+   ],
+   "cand_range": [
+    435,
+    435
+   ],
+   "orig_lines": "272-276",
+   "cand_lines": "at 436",
+   "channel_pair": [
+    "code-css",
+    "body"
+   ],
+   "labels": [
+    "EXHIBIT-RESTRUCTURE"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "EXHIBIT-RESTRUCTURE": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "EXHIBIT-RESTRUCTURE": {}
+   },
+   "notes": [
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[/code]]",
+   "first_added": ""
+  },
+  {
+   "id": "B7",
+   "orig_range": [
+    280,
+    301
+   ],
+   "cand_range": [
+    439,
+    439
+   ],
+   "orig_lines": "281-301",
+   "cand_lines": "at 440",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "EXHIBIT-RESTRUCTURE"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "EXHIBIT-RESTRUCTURE": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "EXHIBIT-RESTRUCTURE": {}
+   },
+   "notes": [
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced"
+   ],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": ""
+  },
+  {
+   "id": "B8",
+   "orig_range": [
+    303,
+    304
+   ],
+   "cand_range": [
+    441,
+    442
+   ],
+   "orig_lines": "304-304",
+   "cand_lines": "442-442",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "@@ @@",
+   "first_added": "[[/iftags]]"
+  },
+  {
+   "id": "B9",
+   "orig_range": [
+    305,
+    458
+   ],
+   "cand_range": [
+    443,
+    450
+   ],
+   "orig_lines": "306-458",
+   "cand_lines": "444-450",
+   "channel_pair": [
+    "body",
+    "module-css"
+   ],
+   "labels": [
+    "DRAFT-HOST",
+    "EXHIBIT-RESTRUCTURE",
+    "SELF-DELIVERY"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A",
+    "EXHIBIT-RESTRUCTURE": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "SELF-DELIVERY": {
+     "orig": [],
+     "cand": [
+      [
+       444,
+       445
+      ],
+      [
+       448,
+       449
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       444,
+       445
+      ],
+      [
+       448,
+       449
+      ]
+     ]
+    },
+    "EXHIBIT-RESTRUCTURE": {}
+   },
+   "notes": [
+    "class (iii) draft-stage form",
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[tabview]]",
+   "first_added": "[[module css]]"
+  }
+ ],
+ "derived_presence": {},
+ "summary": {
+  "blocks": 9,
+  "specific": 6,
+  "heuristic": 2,
+  "residue": 1,
+  "skipped": 0,
+  "reindent_blocks": 0,
+  "label_counts": {
+   "COMPONENT-SWAP": 1,
+   "CREDIT-PREVIEW": 1,
+   "IFTAGS": 2,
+   "TASL-FIELDS": 1,
+   "TRANS-UNANCHORED": 2,
+   "DELIVERY-MOVE": 3,
+   "COLON-ENC": 1,
+   "EXHIBIT-RESTRUCTURE": 4,
+   "DRAFT-HOST": 1,
+   "SELF-DELIVERY": 1
+  }
+ },
+ "residue": [
+  "B8"
+ ],
+ "skeleton": {
+  "sha256": "bd92c8f68186014eb2bd079c6b2d30e36e02e499e109b1c7678000dd2fd53067",
+  "status": "written (new)"
+ }
+}
