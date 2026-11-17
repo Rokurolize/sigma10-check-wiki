@@ -1,0 +1,580 @@
+[[module ThemePreviewer noUi="true" theme_url="http://d3g0gp89917ko0.cloudfront.net/v--3e3a6f7dbcc9/common--theme/base/css/style.css"]]
+
+[[module CSS]]
+
+@import url("https://scp-wiki-cn.wikidot.com/theme:sound/code/2");
+
+[[/module]]
+
+[[iftags +版式 +原创]]
+
+[[>]]
+[[module rate]]
+[[/>]]
+
++ 简介
+
+这是**虚拟之音**主题版式，为祝贺[[[kawaii-o5-3|这篇故事]]]达到+1000分而作。当然，此版式并不与任何设定绑定，你也可以修改一下标题和Logo，把它用在其它氛围合适的场景。
+
+它基于[[[theme:mox|一氧化物III基础版式]]]的“魅影”配色方案，以及如下预设：{{logoInvert}}、{{disableFooterInvert}}、{{sigma}}。具体可参考一氧化物版式展示页的说明。
+
+我差点忘了写该怎么引用版式了，不过你应该知道吧？就是在页面最前面加一行：
+
+> {{[[include :scp-wiki-cn:theme:sound]]}}
+
++ CSS变量
+
+[[code type="CSS"]]
+
+:root {
+    --mox-theme-color: #ce5471;
+    --mox-theme-dark-color: #9e5b74;
+    --mox-theme-light-color: #e27aa1;
+    --mox-bg-color: #252130;
+    --mox-text-color: #e7f4f3;
+    --mox-layer-dark-1: #ffdcf9;
+    --mox-layer-dark-2: #c0aabd;
+    --mox-layer-dark-3: #bd9db7;
+    --mox-layer-light-1: #332d44;
+    --mox-layer-light-2: #47344c;
+    --mox-layer-light-3: #67476f;
+    --mox-bgblur-front-color: rgb(78 45 82 / 78%);
+
+    --mox-header-logo: url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/projectfantasy.svg);
+    --mox-header-subtitle: "遮蔽无形，统御虚幻";
+    --mox-header-title: "幻象计划";
+}
+
+[[/code]]
+
++ 示例
+
+> 引用块
+
+[[div class="modal"]]
+
+= 这个是典中典modal，哎呀跳过剩下的吧，我啥都没改
+
+
+[[/div]]
+
+
+[[collapsible show="标题"]]
+
++ 1级标题
+
+++ 2级标题
+
++++ 3级标题
+
+++++ 4级标题
+
++++++ 5级标题
+
+++++++ 6级标题
+
+[[/collapsible]]
+
+[[module CSS]]
+#u-logo1 img {filter: invert(1)};
+[[/module]]
+[[div id="u-logo1"]]
+[[include :scp-wiki-cn:component:image-block
+|name=https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/projectfantasy.svg
+|caption=我们和EN的一个设定撞名了，但零个人在意。
+|width=200px
+]]
+[[/div]]
+
+你说得对，但《O5-3实在太烧辣》是一篇欢乐基金会设定下的荒诞喜剧短篇小说，故事围绕 SCP 基金会面临的经济危机展开，讲述了基金会为解决经济困境而采取的一系列行动。
+
+长久以来，虽有流言称基金会操控世界政治经济，但实际上其在经济领域控制薄弱，主要靠异常科技和抢劫 GoI 维持，前台公司业绩不佳，收入不稳定。一次连锁收容失效导致稳定锚生产中心和记忆删除剂仓库被毁，基金会经济雪上加霜。
+
+为此，监督者议会成员 O5-1、O5-3 和 O5-12 商讨对策，O5-12 提出发展第三产业，O5-3 心中早有计划，会后迅速成立空壳公司，决定涉足互联网娱乐产业。他启动 “幻象计划”，打算结合二次元与直播产业优势，打造动漫虚拟偶像。
+
+该计划起初由 O5-3 亲自参与，后由 Fanta.AIC 负责策划，实施后大获成功，从各 GoI 处获取大量资金，基金会收入曲线回升，甚至引起了 GOC 的关注。O5-3 还准备进一步推进计划，利用互联网特性，通过划分消费群体身份来劫掠财富，将陷阱延伸至帷幕外。
+
+[[include :scp-wiki-cn:component:image-block
+|name=https://oxygennine.wikidot.com/local--files/theme:53hot/531k.jpg
+|caption=版头背景图
+|width=100%
+]]
+
+= [[size 1.5em]]版头/标题字体为[[span style="font-family: '摇醒青年黑1.0', sans-serif;"]]摇醒青年黑[[/span]]。[[/size]]
+
+= 版头图片为自制，遵循CC-BY-SA 4.0协议。
+
+
++ 源代码
+
+[[collapsible show="展开源代码" hide="关闭源代码"]]
+
+[[code type="CSS"]]
+
+/* MOX Include */
+
+@import url("https://scp-wiki-cn.wdfiles.com/local--code/theme%3Amox/8");
+
+@import url("https://fontsapi.zeoseven.com/403/main/result.css");
+
+:root {
+    --mox-theme-color: #ce5471;
+    --mox-theme-dark-color: #9e5b74;
+    --mox-theme-light-color: #e27aa1;
+    --mox-bg-color: #252130;
+    --mox-text-color: #e7f4f3;
+    --mox-layer-dark-1: #ffdcf9;
+    --mox-layer-dark-2: #c0aabd;
+    --mox-layer-dark-3: #bd9db7;
+    --mox-layer-light-1: #332d44;
+    --mox-layer-light-2: #47344c;
+    --mox-layer-light-3: #67476f;
+    --mox-bgblur-front-color: rgb(78 45 82 / 78%);
+
+    --mox-header-logo: url(https://scpsandboxcn.wdfiles.com/local--files/oxygen9-files-2/projectfantasy.svg);
+    --mox-header-subtitle: "遮蔽无形，统御虚幻";
+    --mox-header-title: "幻象计划";
+}
+
+div#side-bar::after {
+    background: url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(var(--mox-header-height) * -1) / cover !important;
+}
+
+#header #search-top-box input.button {
+    background: url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(var(--mox-header-height)* -2) center / cover !important;
+}
+
+a.weditor-bold::before {
+    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 3) center / cover !important;
+}
+
+a.weditor-italic::before {
+    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 4) center / cover !important;
+}
+
+a.weditor-underline::before {
+    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 22) center / cover !important;
+}
+
+a.weditor-strikethrough::before {
+    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 5) center / cover !important;
+}
+
+a.weditor-quote::before {
+    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 6) center / cover !important;
+}
+
+a.weditor-superscript::before {
+    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 7) center / cover !important;
+}
+
+a.weditor-subscript::before {
+    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 8) center / cover !important;
+}
+
+a.weditor-table::before {
+    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 9) center / cover !important;
+}
+
+a.weditor-code::before, a.weditor-codewiz::before {
+    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 10) center / cover !important;
+}
+
+a.weditor-uri::before, a.weditor-uriwiz::before {
+    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 11) center / cover !important;
+}
+
+a.weditor-pagelink::before, a.weditor-pagelinkwiz::before {
+    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 12) center / cover !important;
+}
+
+a.weditor-image::before, a.weditor-imagewiz::before {
+    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 13) center / cover !important;
+}
+
+a.weditor-html::before {
+    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 14) center / cover !important;
+}
+
+a.weditor-numlist::before {
+    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 15) center / cover !important;
+}
+
+a.weditor-bullist::before {
+    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 15.8) center / cover !important;
+}
+
+a.weditor-incindent::before, a.weditor-decindent::before {
+    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 16) center / cover !important;
+}
+
+a.weditor-deflist::before {
+    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 17) center / cover !important;
+}
+
+a.weditor-footnote::before {
+    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 18) center / cover !important;
+}
+
+a.weditor-bib::before, a.weditor-bibcite::before {
+    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 20.8) center / cover !important;
+}
+
+:where(a.weditor-imagewiz, a.weditor-codewiz, a.weditor-uriwiz, a.weditor-pagelinkwiz, a.weditor-incindent, a.weditor-decindent, a.weditor-eqref,a.weditor-bibcite)::after {
+    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 20) center / cover;
+}
+
+:where(a.weditor-imagewiz, a.weditor-codewiz, a.weditor-uriwiz, a.weditor-pagelinkwiz, a.weditor-incindent, a.weditor-decindent, a.weditor-eqref,a.weditor-bibcite)::after {
+    background-color: var(--mox-layer-dark-1);
+    background-image: url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1);
+    background-repeat: no-repeat;
+    background-position: left center !important;
+    background-size: cover;
+    background-position: -20.055rem !important;
+    background-origin: content-box;
+}
+
+#license-area {
+    color: var(--mox-layer-light-3);
+    background: var(--mox-layer-light-1);
+}
+
+#footer {
+    background: var(--mox-layer-light-1);
+    color: var(--mox-layer-dark-3);
+    box-shadow: 0rem -0.2rem 0rem 0rem var(--mox-layer-light-2);
+}
+
+#footer a {
+    color: var(--mox-layer-dark-1);
+}
+
+
+:root {
+    --moxi-header-height: calc(var(--mox-header-height)* 3);
+}
+
+
+
+@media (min-width: 876px) {
+
+        #header {
+        position: relative;
+        margin-top: unset;
+        grid-template-areas:
+        'logo title user .'
+        'topbar . search .';
+        height: calc(var(--mox-header-height) + var(--moxi-header-height));
+        top: calc(var(--moxi-header-height) * 0);
+        display: grid
+;
+        align-content: stretch;
+        grid-template-rows: 1fr var(--mox-header-height);
+        grid-template-columns: 1fr var(--mox-header-height) var(--mox-header-height) var(--mox-header-height);
+        justify-content: space-between;
+        justify-items: stretch;
+        align-items: center;
+    }
+
+    div#header-extra-div-1, div#side-bar::after, div#side-bar::before {
+        display: none;
+    }
+
+    #header h1 a::before {
+        grid-area: logo;
+        position: relative;
+        top: calc(var(--mox-header-height) * 0);
+        left: calc(((100vw - var(--mox-page-width)) / 2) + 1rem);
+        width: calc(var(--mox-header-height) * 2);
+        height: calc(var(--mox-header-height) * 2);
+    }
+
+    #header h1 a span {
+        font-size: 0;
+        grid-area: logo;
+        display: flex
+;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        height: var(--mox-header-height);
+        top: calc(var(--mox-header-height) * 0);
+        left: calc(((100vw - var(--mox-page-width)) / 2) + (var(--mox-header-height) * 2.5));
+        position: relative;
+    }
+
+    #header h1 a span::before {
+        font-size: calc(var(--mox-header-height) * 0.85) !important;
+        position: relative;
+        left: calc(var(--mox-header-height) * 0);
+        top: calc(var(--mox-header-height) * 0.05);
+    }
+
+    #header h1 a span::after {
+        font-size: calc(var(--mox-header-height) * 0.45) !important;
+        bottom: calc(var(--mox-header-height) * 0.115 - 0.125rem);
+        position: relative;
+        left: calc(var(--mox-header-height) * 0);
+        display: block;
+    }
+
+    .top-bar {
+        display: grid
+    ;
+
+        justify-content: end;
+    }
+
+}
+
+
+
+@media (min-width: 876px) {
+
+    div#side-bar {
+        position: relative;
+        left: 0;
+        top: 0;
+        transition: none;
+        box-shadow: unset;
+        width: min(16rem, 30vw);
+        min-width: 16rem;
+    }
+
+    div#side-bar:hover {
+        left: unset;
+        box-shadow: unset;
+    }
+
+    div#content-wrap {
+        display: flex
+;
+        column-gap: 1rem;
+        width: var(--mox-page-width);
+        margin: 0 auto;
+    }
+
+    div#main-content {
+        width: calc(var(--mox-page-width) - min(16rem, 30vw) - 3rem);
+        max-width: unset !important;
+        margin: 2rem 2rem 0rem 0rem;
+    }
+
+}
+
+
+
+@media (max-width: 876px) {
+
+    div#side-bar::after {
+        display: block;
+    }
+
+    div#side-bar {
+        min-height: 100vh;
+    }
+
+}
+
+#header h1 a::before, div#side-bar::before {filter: invert(1) hue-rotate(180deg);}
+
+div#footer::before {
+    filter: invert(0);
+}
+
+
+:root {
+    --mox-text-color: #ccc2c9;
+    --mox-page-width: 82vw;
+    --mox-header-height: 3rem;
+}
+
+body#html-body {
+    background-color: #000000;
+    background-image: linear-gradient(180deg, #000000e3 50vh, var(--mox-bg-color) 250vh), url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxwYXR0ZXJuIGlkPSJhIiB3aWR0aD0iODciIGhlaWdodD0iNTAuMjMyIiBwYXR0ZXJuVHJhbnNmb3JtPSJzY2FsZSgyKSIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIvPjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzQ3MzQ0YyIgc3Ryb2tlLWxpbmVjYXA9InNxdWFyZSIgc3Ryb2tlLXdpZHRoPSIyLjUiIGQ9Im0wIDU0LjQyNCAxNC41LTguMzczYzQuODEzIDIuNzY3IDkuNzA1IDUuNTczIDE0LjUgOC4zN2wxNC41LTguMzczVjI5LjMwM00wIDQuMTkzdjE2Ljc0NGwtMTQuNSA4LjM3M0wwIDM3LjY4bDE0LjUtOC4zNzRWMTIuNTYybDI5LTE2Ljc0Nm00My41IDU4LjYtMTQuNS04LjM3di0zMy40OWMtNC43OTUtMi43OTctOS42ODctNS42MDMtMTQuNS04LjM3bTQzLjUgMjUuMTExTDg3IDM3LjY3Yy00Ljc5NS0yLjc5Ny0yNC4xODctMTMuOTczLTI5LTE2Ljc0bC0xNC41IDguMzczLTE0LjUtOC4zN3YtMzMuNDg5bTcyLjUgOC4zNjVMODcgNC4xODNsLTE0LjUtOC4zN004NyA0LjE4M3YxNi43NDVMNTggMzcuNjczdjE2Ljc0NG0wLTY2Ljk3NlY0LjE4NUw0My41IDEyLjU2Yy00Ljc5NS0yLjc5Ny0yNC4xODctMTMuOTczLTI5LTE2Ljc0TDAgNC4xOTJsLTE0LjUtOC4zN20yOSAzMy40ODRjNC44MTMgMi43NjcgOS43MDUgNS41NzMgMTQuNSA4LjM3VjU0LjQyIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iODAwJSIgaGVpZ2h0PSI4MDAlIiBmaWxsPSJ1cmwoI2EpIi8+PC9zdmc+);
+}
+
+#page-content p {
+    line-height: 1.75rem;
+}
+
+div#header {
+    background-image: url(https://oxygennine.wikidot.com/local--files/theme:53hot/531k.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000;
+    height: calc(var(--mox-header-height) * 6);
+}
+
+#header h1 a span::before {
+    font-family: '摇醒青年黑1.0';
+    font-weight: normal;
+    color: #ffffff;
+}
+
+
+#header h1 a span::after {
+    color: #ffffff;
+}
+
+#header h1 a::before, div#side-bar::before {
+    filter: drop-shadow(0px 0px 7px black) invert(1);
+}
+
+#header #search-top-box input.button:hover {
+    filter: invert(0.95) hue-rotate(180deg) brightness(2);
+}
+
+#top-bar li a {
+    color: #fff;
+}
+
+#header h1 a span::before, #header h1 a span::after {
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.5));
+}
+
+
+div.blockquote, blockquote {
+    background-color: #c0aabd14;
+    backdrop-filter: blur(3px);
+}
+
+
+div#page-title, #page-content :is(h1, h2, h3, h4, h5, h6) {
+    font-family: '摇醒青年黑1.0';
+    font-weight: normal;
+}
+
+div#page-title {
+    font-size: 2.3rem;
+    text-align: center;
+    padding: 0rem 1rem 1.7rem 1rem;
+}
+
+@media (min-width: 876px) {
+
+
+    #side-bar {
+        background: transparent;
+    }
+
+    .side-block {
+        background-color: #332d444d !important;
+        backdrop-filter: blur(3px);
+    }
+
+    #side-bar h2, #side-block h1, .heading {
+        background: #47344c5e;
+    }
+
+    #side-bar .side-block a {
+        border-left: solid 0.2rem #4431487d;
+    }
+
+    #side-bar .side-block a:hover {
+        border-left: solid 0.2rem #793243;
+    }
+}
+
+
+@media (max-width: 876px) {
+
+
+
+    #header h1 a span::after {
+        bottom: calc(var(--mox-header-height) * 0.115 + -0.475rem);
+    }
+
+    #header {
+        height: calc(var(--mox-header-height) * 5) !important;
+        top: calc(var(--mox-header-height) * -4);
+    }
+
+    .mobile-top-bar {
+        margin-bottom: calc(var(--mox-header-height) * -1.3);
+    }
+
+    #header h1 a span {
+        background-image: none;
+    }
+
+    div#page-title {
+        font-size: 1.7rem;
+        text-align: center;
+        padding-bottom: 1.4rem;
+    }
+
+    #header h1 a::before, div#side-bar::before {
+        filter: drop-shadow(0px 0px 7px black) invert(1) hue-rotate(180deg);
+    }
+
+}
+
+@keyframes logo-fade-in {
+    0% {opacity:0; transform: translate(3rem, 0rem) rotateY(90deg) scale(0); }
+    100% {opacity:1; transform: translate(0rem, 0rem) rotateY(0deg) scale(1); }
+}
+
+@keyframes text-fade-in {
+    0% {opacity:0; transform: translate(0rem, 1rem); }
+    100% {opacity:1; transform: translate(0rem, 0rem); }
+}
+
+@media (min-width: 876px) {
+
+    #header h1 a span::before {
+        font-size: calc(var(--mox-header-height) * 1.1) !important;
+        letter-spacing: -0.1rem;
+    }
+
+    #header h1 a::before {
+        animation: logo-fade-in 2s ease forwards;
+        animation-delay: 1s;
+        opacity: 0;
+    }
+
+    #header h1 a span::before {
+        animation: text-fade-in 2s ease forwards;
+        animation-delay: 2.5s;
+        opacity: 0;
+    }
+
+    #header h1 a span::after {
+        animation: text-fade-in 2s ease forwards;
+        animation-delay: 3.5s;
+        opacity: 0;
+    }
+
+
+}
+
+.code {
+    background-image: linear-gradient(#e0e0e0 1.7em, #ffffff 1.7em);
+    filter: invert(1) hue-rotate(180deg);
+    border: none;
+}
+
+.code::before {
+    filter: invert(1) hue-rotate(180deg);
+}
+
+/* JP侧边栏暴力修复 */
+
+#side-bar :is(li,ul) {
+    list-style-image: none !important;
+}
+
+[[/code]]
+
+[[/collapsible]]
+
+[[/iftags]]
+
+[[include :scp-wiki-cn:component:interwiki-style
+| priority=1
+| type=sidebar
+| override=
+| theme=https://scp-wiki-cn.wdfiles.com/local--code/theme:mox/9
+| css=%3Aroot%20%7B%0A%20%20%20%20--mox-theme-color%3A%20%23ce5471%3B%0A%20%20%20%20--mox-theme-dark-color%3A%20%239e5b74%3B%0A%20%20%20%20--mox-theme-light-color%3A%20%23e27aa1%3B%0A%20%20%20%20--mox-bg-color%3A%20%23252130%3B%0A%20%20%20%20--mox-text-color%3A%20%23e7f4f3%3B%0A%20%20%20%20--mox-layer-dark-1%3A%20%23ffdcf9%3B%0A%20%20%20%20--mox-layer-dark-2%3A%20%23c0aabd%3B%0A%20%20%20%20--mox-layer-dark-3%3A%20%23bd9db7%3B%0A%20%20%20%20--mox-layer-light-1%3A%20%23332d44%3B%0A%20%20%20%20--mox-layer-light-2%3A%20%2347344c%3B%0A%20%20%20%20--mox-layer-light-3%3A%20%2367476f%3B%0A%7D
+]]
