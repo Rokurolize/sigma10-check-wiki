@@ -3,7 +3,8 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:jiha-jp — origin KO, population #269 [GOSIGN2-LEDGER (b) row 269]
-- Overall: PASS — passed at the ledger determination; no OPEN items [GOSIGN2-LEDGER (b) row 269]
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 53affd0acd1bcc6189ef4a2b08a6eeec207cb9141c6c75101f9271e64448364c); verdict not carried over, re-judgement required
+> verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 7 errors / 3 warns / 1 info (pseudo-ref×7); standing classes dispositioned in register c1 [T1-ROWS row 273; GOSIGN2-LEDGER (b) row 269]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page runtime-hotlink site-theme chain only; sample hidden-* cluster + sidebar-unreachable confined to chromium-320, whose only hotlink host is http.cat = transient 503 capture, not a result; sample credit-modal (preview-form); T3 none beyond cross-cutting items. [RENDER-ROWS-2 (RENDER-S2-H (KO5))]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row [RENDER-ROWS-2 row]
@@ -11,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 268, source LOCALIZE-S2-F]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 268]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 269]
-- Computed against: canonical commit f1138e4f4c7bcce523971efdee87d55f90302d3c; candidate file pages/theme:jiha-jp.txt sha256:796568cb888a61560d1ed56f7e0fbf526a7836f6117ed9c10b1026231804e2cf; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 2a8a125f7b5e3438a2d5d8c9a920714eaadbcecf; candidate file pages/theme:jiha-jp.txt sha256:53affd0acd1bcc6189ef4a2b08a6eeec207cb9141c6c75101f9271e64448364c; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
