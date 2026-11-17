@@ -97,9 +97,22 @@ swept would show `never`; every current pattern was swept on
 | KB-66 | [KB-66.md](KB-66.md) | Dead prose link to a page name that will not exist on scp-jp | A. Theme defect, file-provable | needs live probe | FILE-PROVABLE | adopted | 2 (live-probe, static-diff) | never |
 | KB-67 | [KB-67.md](KB-67.md) | Documentation or sample exhibit dropped or replaced without a recorded ground | A. Theme defect, file-provable | cross-file diff | FILE-PROVABLE | adopted | 2 (static-diff, lane-report) | never |
 | KB-68 | [KB-68.md](KB-68.md) | Candidate adopted from the production JP counterpart (provenance route undeclared) | C. Cross-cutting, not a defect | cross-file diff | FILE-PROVABLE | adopted | 1 (static-diff) | never |
+| KB-69 | [KB-69.md](KB-69.md) | Language-bearing title artwork retired for a text title | F. Named exception / standing disposition | pure grep | FILE-PROVABLE | adopted | 1 (lane-report) | never |
+| KB-70 | [KB-70.md](KB-70.md) | Code-block delivery address not recounted after block edits | A. Theme defect, file-provable | cross-file diff | FILE-PROVABLE | adopted | 2 (static-diff, live-probe) | never |
+| KB-71 | [KB-71.md](KB-71.md) | Delivered CSS block structurally voids its own rules | A. Theme defect, file-provable | pure grep | FILE-PROVABLE | adopted | 3 (static-diff, lane-report) | never |
+| KB-72 | [KB-72.md](KB-72.md) | Documented default contradicts the shipped variable | A. Theme defect, file-provable | cross-file diff | FILE-PROVABLE | adopted | 2 (static-diff) | never |
+| KB-73 | [KB-73.md](KB-73.md) | Parameter-gated delivery dropped or emptied in the candidate | A. Theme defect, file-provable | cross-file diff | FILE-PROVABLE | adopted | 3 (static-diff) | never |
+| KB-74 | [KB-74.md](KB-74.md) | Original module selectors lost in delivery consolidation | A. Theme defect, file-provable | cross-file diff | FILE-PROVABLE | adopted | 3 (static-diff) | never |
+| KB-75 | [KB-75.md](KB-75.md) | Split delivery whose parts live outside the canonical repo | F. Named exception / standing disposition | pure grep | FILE-PROVABLE | adopted | 1 (lane-report) | never |
+| KB-76 | [KB-76.md](KB-76.md) | Duplicated short block at the file tail | A. Theme defect, file-provable | pure grep | FILE-PROVABLE | adopted | 1 (static-diff) | never |
+| KB-77 | [KB-77.md](KB-77.md) | Original variable dropped while the resolved base defines a different value | A. Theme defect, file-provable | cross-file diff | FILE-PROVABLE | adopted | 2 (static-diff) | never |
+| KB-78 | [KB-78.md](KB-78.md) | Empty collapsible beside a duplicated heading | A. Theme defect, file-provable | pure grep | FILE-PROVABLE | adopted | 2 (static-diff) | never |
+| KB-79 | [KB-79.md](KB-79.md) | Documentation exhibits leaked into the delivered code block | A. Theme defect, file-provable | cross-file diff | FILE-PROVABLE | adopted | 2 (static-diff) | never |
+| KB-80 | [KB-80.md](KB-80.md) | footnoteblock added where the original used inline footnotes | C. Cross-cutting, not a defect | pure grep | FILE-PROVABLE | adopted | 1 (static-diff) | never |
+| KB-81 | [KB-81.md](KB-81.md) | Wikilink converted to a third-party absolute URL that does not resolve | A. Theme defect, file-provable | needs live probe | FILE-PROVABLE | adopted | 1 (live-probe, static-diff) | never |
 
 ## Totals
 
-- Patterns: 68 (KB-01 to KB-68), plus SWEEP-PROTOCOL.md, SUPPLEMENT-TYPES.md and NEGATIVE-LEDGER.md.
+- Patterns: 81 (KB-01 to KB-81), plus SWEEP-PROTOCOL.md, SUPPLEMENT-TYPES.md and NEGATIVE-LEDGER.md.
 - Total confirmed hits (SWEEP-RESULTS.tsv, first sweep 2026-11-17): 2038. For TRIAGE patterns this is a risk count, not a verdict count; units follow each source report (themes for most patterns, occurrences, rows or report mentions where the report counts those).
 - Total undecidable cells (SWEEP-RESULTS.tsv): 1861. This sum includes the whole-population by-design undecidable patterns KB-19 and KB-48 (287 each) and the probe queues KB-02 (80) and KB-05 (251).
