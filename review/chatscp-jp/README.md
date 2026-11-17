@@ -3,7 +3,8 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:chatscp-jp — origin KO, population #256 [GOSIGN2-LEDGER (b) row 256]
-- Overall: PASS — passed at the ledger determination; no OPEN items [GOSIGN2-LEDGER (b) row 256]
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 9cac88d942d351ab13bcf45c395217a19766bb7ae676a1d305877692a6f46e6b); verdict not carried over, re-judgement required
+> verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 1 error / 3 warns / 1 info (pseudo-ref×1); standing classes dispositioned in register c1 [T1-ROWS row 239; GOSIGN2-LEDGER (b) row 256]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — hidden-license on both pages (all combos) + page sidebar-not-opening; sample credit-modal (preview-form); T3 Wikidot footer/license bar renders as a fixed overlay at left-centre over the body at every viewport (theme-specific; machine hidden-license agrees). [RENDER-ROWS-2 (RENDER-S2-H (KO2))]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row [RENDER-ROWS-2 row]
@@ -11,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 2 [LOCALIZE-ROWS row 255, source LOCALIZE-S2-F]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 255]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 256]
-- Computed against: canonical commit 1869877ffdcd33cb214b8dc421fb39e3de8d7e8d; candidate file pages/theme:chatscp-jp.txt sha256:f53ca2d47e926e24698e54b0be5b7487e17808cc883566754db8832081d69d7a; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:chatscp-jp.txt sha256:9cac88d942d351ab13bcf45c395217a19766bb7ae676a1d305877692a6f46e6b; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status

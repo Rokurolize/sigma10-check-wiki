@@ -43,7 +43,7 @@ adjudicated explanation.
 | 5 | 1 | 12–20 | 24–26 | +3/−9 | residual | **使用フォント（SCP-JP 版）** |
 | 6 | 1 | 26–26 | 32–32 | +1/−1 | translation | + 埋もれたCSSテーマ |
 | 7 | 1 | 28–28 | 34–34 | +1/−1 | translation | このテーマは第50ネクサスカノンのために作られたテーマです。使用するページに以下のコードを貼り付けてください。 |
-| 8 | 1 | 30–30 | 36–36 | +1/−1 | residual | > [[include :scp-jp:theme:jiha]] |
+| 8 | 1 | 30–30 | 36–36 | +1/−1 | residual | > [[include :scp-jp:theme:jiha-jp]] |
 | 9 | 1 | 32–32 | 38–38 | +1/−1 | translation | 情報モジュールより下に配置してください。 |
 | 10 | 2 | 41–41 | 47–47 | +1/−1 | translation | [[tab 対応構文一覧]] |
 | 11 | 2 | 45–45 | 51–51 | +1/−1 | translation | [[tab 基本構文]] |
@@ -157,7 +157,7 @@ adjudicated explanation.
 +このテーマは第50ネクサスカノンのために作られたテーマです。使用するページに以下のコードを貼り付けてください。
  
 -> [[include :scpko:theme:jiha]]
-+> [[include :scp-jp:theme:jiha]]
++> [[include :scp-jp:theme:jiha-jp]]
  
 -정보 모듈보다 아래에 넣어야 합니다.
 +情報モジュールより下に配置してください。

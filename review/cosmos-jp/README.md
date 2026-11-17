@@ -3,7 +3,8 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:cosmos-jp — origin EN, population #73 [GOSIGN2-LEDGER (b) row 73]
-- Overall: PASS — passed at the ledger determination; no OPEN items [GOSIGN2-LEDGER (b) row 73]
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now c9843a53ff0e2bb6ea1668bca856fe585de9d433d8359eed8eb783a969c8c835); verdict not carried over, re-judgement required
+> verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 6 errors / 1 warn / 2 infos (pseudo-ref×6); standing classes dispositioned in register c1 [T1-ROWS row 63; GOSIGN2-LEDGER (b) row 73]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — candidate-inherent page-overflow at 320/375 + `credit-modal-overflow` at 320 (both engines). [RENDER-ROWS-1 (RENDER-S2-A)]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row [RENDER-ROWS-1 row]
@@ -11,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 73, source LOCALIZE-S2-A]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 73]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 73]
-- Computed against: canonical commit 666f54356acb463c56016c967dc52464b25ba4a2; candidate file pages/theme:cosmos-jp.txt sha256:c1464931f7d7f601164f965d7b1a2b614aa51417bfef4545c5d9efd1b17ad549; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:cosmos-jp.txt sha256:c9843a53ff0e2bb6ea1668bca856fe585de9d433d8359eed8eb783a969c8c835; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -81,7 +82,7 @@ Adjudication for this README (every block was read against the bytes): the heuri
 
 ### 2. Includes and components
 
-- **What:** The frame pair and credit pair are sections 3 and 1. The license pair is section 8's furniture (LICENSE-BOX ×2): `license-box-backend` repointed to `:scp-jp:` with its author parameter kept (candidate L462), `license-box-end` likewise (candidate L487). The image-block include is repointed to `:scp-jp:` (candidate L64) with its image served from the JP storage host (section 4). The two escaped usage examples (ESCAPED-INCLUDE): candidate L59 names `:scp-jp:theme:space` for the base — correct, the production JP page exists (probed for this package, 2026-11-17: 200) — and candidate L60 names `:scp-jp:theme:cosmos`, the per-theme record's flagged defect.
+- **What:** The frame pair and credit pair are sections 3 and 1. The license pair is section 8's furniture (LICENSE-BOX ×2): `license-box-backend` repointed to `:scp-jp:` with its author parameter kept (candidate L462), `license-box-end` likewise (candidate L487). The image-block include is repointed to `:scp-jp:` (candidate L64) with its image served from the JP storage host (section 4). The two escaped usage examples (ESCAPED-INCLUDE): candidate L59 names `:scp-jp:theme:space` for the base — correct, the production JP page exists (probed for this package, 2026-11-17: 200) — and candidate L60 named `:scp-jp:theme:cosmos` as built, the per-theme record's flagged defect, since repaired by the population sweep (it now names `:scp-jp:theme:cosmos-jp`).
 - **Why:** P1 (KB-15) for the live includes; the usage examples under the campaign's settled rule (AGENTS.md §6).
 - **Verify:** `grep -n '\[\[include' candidate.txt` — the frame, the credit pair, the license pair, the image-block line, the two escaped examples.
 - **Disposition:** Live includes applied; the self-example is flagged in the per-theme record (not edited here; the coordinator lands repairs).
@@ -158,9 +159,9 @@ Adjudication for this README (every block was read against the bytes): the heuri
 
 ## Per-theme record
 
-### The usage example names a page that does not exist (defect flag)
+### The usage example names a page that does not exist (defect flag, repaired)
 
-Candidate L60, the second of the two stacked install examples, reads `{{@@[[include :scp-jp:theme:cosmos]]@@}}`. Probe made for this package (2026-11-17): `https://scp-jp.wikidot.com/theme:cosmos` returns 404; the candidate posts to scp-jp under its own name, theme:cosmos-jp, so the example as written cannot be followed. The example directly above it (candidate L59) is correct: it names `:scp-jp:theme:space` for the base layer, and that production page returns 200 — the pair shows the porter applying the production name where the base keeps its name, and the original's slug where the port renames. The campaign's settled rule (AGENTS.md §6) names this exact shape a finding: usage examples inside candidate docs naming `theme:<slug>` instead of `theme:<slug>-jp` break every copy-paste install. The localize lane did not record it, and the ledger's determination for this theme is PASS; this package carries the item as a flagged defect with its probe evidence, for the coordinator's repair wave. The candidate is documented as it stands; no byte of it was edited here.
+Candidate L60, the second of the two stacked install examples, reads `{{@@[[include :scp-jp:theme:cosmos]]@@}}`. Probe made for this package (2026-11-17): `https://scp-jp.wikidot.com/theme:cosmos` returns 404; the candidate posts to scp-jp under its own name, theme:cosmos-jp, so the example as written cannot be followed. The example directly above it (candidate L59) is correct: it names `:scp-jp:theme:space` for the base layer, and that production page returns 200 — the pair shows the porter applying the production name where the base keeps its name, and the original's slug where the port renames. The campaign's settled rule (AGENTS.md §6) names this exact shape a finding: usage examples inside candidate docs naming `theme:<slug>` instead of `theme:<slug>-jp` break every copy-paste install. The localize lane did not record it, and the ledger's determination for this theme is PASS; this package carries the item as a flagged defect with its probe evidence, for the coordinator's repair wave. The candidate is documented as it stands; no byte of it was edited here. The repair has since landed: the usage-example population sweep (sweep report SWEEP-USAGE.md in the campaign record, R/review-scout/; canonical commit b5cb724), which repaired this shape across all 157 affected candidates; candidate L60 now reads `{{@@[[include :scp-jp:theme:cosmos-jp]]@@}}`, and this package documents the corrected candidate (its stamp reads STALE against the pre-repair verdict, by design).
 
 ## Change set outside the two diffed files
 

@@ -73,7 +73,7 @@ with `python3 review/build_review.py`; verify with
 +
 +このテーマを使用するには、ページ上部に次のコードを挿入してください。
 +
-+> @@[[include :scp-jp:theme:cyber-specter@@
++> @@[[include :scp-jp:theme:cyber-specter-jp@@
  > @@|alt=0@@
  > @@|subtitle=@@
  > @@]]@@
@@ -83,7 +83,7 @@ with `python3 review/build_review.py`; verify with
 -> @@[[include theme:cyber-specter@@
 +テーマのサブタイトルを変更するには、ページ上部に次のコードを挿入してください。
 +
-+> @@[[include :scp-jp:theme:cyber-specter@@
++> @@[[include :scp-jp:theme:cyber-specter-jp@@
  > @@|alt=1@@
 -> @@|subtitle=넣고 싶은 부제를 여기 넣으세요!@@
 +> @@|subtitle=ここにカスタムサブタイトルを入力！@@

@@ -3,7 +3,8 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:bulgunae-jp — origin KO, population #255 [GOSIGN2-LEDGER (b) row 255]
-- Overall: PASS — passed at the ledger determination; no OPEN items [GOSIGN2-LEDGER (b) row 255]
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 5aa8804acb9772442a0619015e566544c9ce8900e70784b8157d17057c87c614); verdict not carried over, re-judgement required
+> verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 10 errors / 0 warns / 7 infos (hotlink×6, old-bhl×2, http×1, pseudo-ref×1); standing classes dispositioned in register c1 [T1-ROWS row 238; GOSIGN2-LEDGER (b) row 255]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page sidebar-not-opening + candidate-own runtime hosts (nu-scptheme.github.io, scp-wiki.wikidot.com / www.scp-wiki.net) recorded verbatim; sample credit-modal (preview-form) + page-overflow 493–500px@320/375; T3 custom red/black header lettering collides and is partly illegible at 375/320 (both engines; possibly intended stylization). [RENDER-ROWS-2 (RENDER-S2-H (KO2))]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row [RENDER-ROWS-2 row]
@@ -11,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 254, source LOCALIZE-S2-F]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 254]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 255]
-- Computed against: canonical commit 443c60879a7c53fa5dfe6e5fc9f72e8785196d05; candidate file pages/theme:bulgunae-jp.txt sha256:0ef4bd6abf8f984c8c5c13f99db1969d9e7335059e1a66c263bef97cfd9b0773; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 9351aeca23caafb64ffd3201c5862abf36eb1f74; candidate file pages/theme:bulgunae-jp.txt sha256:5aa8804acb9772442a0619015e566544c9ce8900e70784b8157d17057c87c614; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status

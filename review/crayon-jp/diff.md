@@ -33,7 +33,7 @@ with `python3 review/build_review.py`; verify with
 +このテーマを使用するには、任意のページに以下の構文を記述してください:
  
 -> @@[[include :scp-wiki:theme:crayon]]@@
-+> @@[[include :scp-jp:theme:crayon]]@@
++> @@[[include :scp-jp:theme:crayon-jp]]@@
  
 -Header banner by stormbreath. Header logo by UncertaintyCrossing.
 +ヘッダーバナー: stormbreath。ヘッダーロゴ: UncertaintyCrossing。

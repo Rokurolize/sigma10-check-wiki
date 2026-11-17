@@ -3,7 +3,8 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:cyber-specter-jp — origin KO, population #258 [GOSIGN2-LEDGER (b) row 258]
-- Overall: PASS — passed at the ledger determination; no OPEN items [GOSIGN2-LEDGER (b) row 258]
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now ec3ce81023d9aa4e0ef09b73dd357b227e638f078260577a67041dc9b42fb02c); verdict not carried over, re-judgement required
+> verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 4 errors / 2 warns / 1 info (hotlink×3, pseudo-ref×1); standing classes dispositioned in register c1 [T1-ROWS row 241; GOSIGN2-LEDGER (b) row 258]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — sample credit-modal (preview-form) + 884px@768 overflow + runtime-hotlink incl. scpko hosts (one combo http.cat among other hosts); T3 none beyond cross-cutting items. [RENDER-ROWS-2 (RENDER-S2-H (KO2))]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row [RENDER-ROWS-2 row]
@@ -11,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 3 [LOCALIZE-ROWS row 257, source LOCALIZE-S2-F]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 257]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 258]
-- Computed against: canonical commit 1869877ffdcd33cb214b8dc421fb39e3de8d7e8d; candidate file pages/theme:cyber-specter-jp.txt sha256:d34eacf99103de4041921d2819882827c529f18b5d587bc06b83113ee74af1a7; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:cyber-specter-jp.txt sha256:ec3ce81023d9aa4e0ef09b73dd357b227e638f078260577a67041dc9b42fb02c; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -38,7 +39,7 @@ Wave history: the candidate was created by the Stage 2 KO2 integration (commit d
 
 ## Summary
 
-A Korean fandom-division theme (for the WoI research division) whose original has no delivery frame at all: it opens with its tag gate and its rate/info exhibits and carries its CSS inline. The port adds the JP furniture without disturbing that shape — the preview credit block goes in at the head of the gated body (candidate L3–12), the exhibits' live modules come out (the Rate deleted, the info pair deleted; their translated headings remain as the exhibit labels), and the delivery frame is appended at the file's end (candidate L747–751), the closing-rule position for a theme whose original has no head frame. The theme's own assets stay on the scpko host with only their colons percent-encoded — the T1 hotlink item, dispositioned as a posting-time re-host — and the header defaults keep their Korean strings under ruling 2. Both usage examples (candidate L35, L42) name `:scp-jp:theme:cyber-specter`, a page that does not exist; that is the per-theme record's flagged defect. Measured churn (diff.md: +63/−59, 122 changed lines in 30 change blocks / 3 diff sections).
+A Korean fandom-division theme (for the WoI research division) whose original has no delivery frame at all: it opens with its tag gate and its rate/info exhibits and carries its CSS inline. The port adds the JP furniture without disturbing that shape — the preview credit block goes in at the head of the gated body (candidate L3–12), the exhibits' live modules come out (the Rate deleted, the info pair deleted; their translated headings remain as the exhibit labels), and the delivery frame is appended at the file's end (candidate L747–751), the closing-rule position for a theme whose original has no head frame. The theme's own assets stay on the scpko host with only their colons percent-encoded — the T1 hotlink item, dispositioned as a posting-time re-host — and the header defaults keep their Korean strings under ruling 2. Both usage examples (candidate L35, L42) named `:scp-jp:theme:cyber-specter` as built, a page that does not exist; that was the per-theme record's flagged defect, since repaired by the population sweep (both now name `:scp-jp:theme:cyber-specter-jp`). Measured churn (diff.md: +63/−59, 122 changed lines in 30 change blocks / 3 diff sections).
 
 ## Class summary
 
@@ -80,7 +81,7 @@ Adjudication for this README (every block was read against the bytes): the one E
 
 ### 2. Includes and components
 
-- **What:** The frame pair (section 3) and the credit pair (section 1). The image-block include inside the exhibits is repointed to `:scp-jp:` (candidate L50), while its image name stays on the scpko host with the colon percent-encoded (candidate L51, section 4). The two escaped usage examples (candidate L35 and L42, each opening a multi-line include with parameters) name `:scp-jp:theme:cyber-specter` — the original's slug, not this candidate's posting name, and the per-theme record's flagged defect.
+- **What:** The frame pair (section 3) and the credit pair (section 1). The image-block include inside the exhibits is repointed to `:scp-jp:` (candidate L50), while its image name stays on the scpko host with the colon percent-encoded (candidate L51, section 4). The two escaped usage examples (candidate L35 and L42, each opening a multi-line include with parameters) named `:scp-jp:theme:cyber-specter` as built — the original's slug, not this candidate's posting name, and the per-theme record's flagged defect, since repaired by the population sweep (both now name `:scp-jp:theme:cyber-specter-jp`).
 - **Why:** P1 (KB-15) for the live includes; the usage examples under the campaign's settled rule (AGENTS.md §6).
 - **Verify:** `grep -n '\[\[include' candidate.txt` — the credit pair, the image-block line, the tail frame, and the two escaped examples.
 - **Disposition:** Live includes applied; the usage examples are flagged in the per-theme record (not edited here; the coordinator lands repairs).
@@ -157,9 +158,9 @@ Adjudication for this README (every block was read against the bytes): the one E
 
 ## Per-theme record
 
-### The usage examples name a page that does not exist (defect flag)
+### The usage examples name a page that does not exist (defect flag, repaired)
 
-Both install examples name the original's slug on scp-jp: candidate L35 and candidate L42 each open `@@[[include :scp-jp:theme:cyber-specter@@` (the include continues with parameters on the following lines). Probe made for this package (2026-11-17): `https://scp-jp.wikidot.com/theme:cyber-specter` returns 404; the candidate posts to scp-jp under its own name, theme:cyber-specter-jp, so neither example can be followed on the site it instructs for. The campaign's settled rule (AGENTS.md §6) names this exact shape a finding: usage examples inside candidate docs naming `theme:<slug>` instead of `theme:<slug>-jp` break every copy-paste install. The localize lane did not record it, and the ledger's determination for this theme is PASS; this package carries the item as a flagged defect with its probe evidence, for the coordinator's repair wave. The candidate is documented as it stands; no byte of it was edited here.
+Both install examples name the original's slug on scp-jp: candidate L35 and candidate L42 each open `@@[[include :scp-jp:theme:cyber-specter@@` (the include continues with parameters on the following lines). Probe made for this package (2026-11-17): `https://scp-jp.wikidot.com/theme:cyber-specter` returns 404; the candidate posts to scp-jp under its own name, theme:cyber-specter-jp, so neither example can be followed on the site it instructs for. The campaign's settled rule (AGENTS.md §6) names this exact shape a finding: usage examples inside candidate docs naming `theme:<slug>` instead of `theme:<slug>-jp` break every copy-paste install. The localize lane did not record it, and the ledger's determination for this theme is PASS; this package carries the item as a flagged defect with its probe evidence, for the coordinator's repair wave. The candidate is documented as it stands; no byte of it was edited here. The repair has since landed: the usage-example population sweep (sweep report SWEEP-USAGE.md in the campaign record, R/review-scout/; canonical commit b5cb724), which repaired this shape across all 157 affected candidates; candidate L35 and L42 now open `@@[[include :scp-jp:theme:cyber-specter-jp@@`, and this package documents the corrected candidate (its stamp reads STALE against the pre-repair verdict, by design).
 
 ## Appendix — residue blocks adjudicated
 

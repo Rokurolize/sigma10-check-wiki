@@ -3,7 +3,8 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:broken-world-jp — origin CN, population #172 [GOSIGN2-LEDGER (b) row 172]
-- Overall: PASS — passed at the ledger determination; no OPEN items [GOSIGN2-LEDGER (b) row 172]
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 3f81a42331723ef836e7dce3cbb3235c6ed17ae9266fe223eb287f5ba46ee690); verdict not carried over, re-judgement required
+> verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 14 errors / 4 warns / 2 infos (pseudo-ref×13, hotlink×1); standing classes dispositioned in register c1 [T1-ROWS row 197; GOSIGN2-LEDGER (b) row 172]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — `hidden-interwiki` on all 8 combos on both pages (translation module hidden, theme-level; T3: explicitly documented in the page text as an original quirk), page-overflow 374px@320 + 425px@375 + 810px@768 chromium and 450px@320 + 478px@375 webkit, runtime-hotlink site-theme chain only; sample adds credit-modal (preview-form); T3 complete in the final report (pending in the partial), no further finding (desktop sidebar collapsed with no visible reopen tab, mobile hamburger opens in both engines; low-contrast credit title and 404 logos intended/deferred). [RENDER-ROWS-RERUN16 (CN3) — supersedes the RENDER-ROWS-2 row for this theme, rule S1]
 - Engine coverage: full (chromium+webkit, both pages) [RENDER-ROWS-RERUN16 (CN3)]
@@ -11,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 2 [LOCALIZE-ROWS row 171, source LOCALIZE-S2-D]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 171]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 172]
-- Computed against: canonical commit f1138e4f4c7bcce523971efdee87d55f90302d3c; candidate file pages/theme:broken-world-jp.txt sha256:1109d499f9ba8b02352bb76db4cc952974f44bcd4811aaf1e122cc443aea6741; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:broken-world-jp.txt sha256:3f81a42331723ef836e7dce3cbb3235c6ed17ae9266fe223eb287f5ba46ee690; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status

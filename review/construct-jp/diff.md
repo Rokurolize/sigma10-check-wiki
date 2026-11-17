@@ -134,11 +134,11 @@ adjudicated explanation.
 +
 +記事の冒頭に以下のコードを加えてください。
 +
-+> @@[[include :scp-jp:theme:construct]]@@
++> @@[[include :scp-jp:theme:construct-jp]]@@
 +
 +背景パターンは既定で表示され、非ワイドスクリーンでは読書体験を優先して非表示になります。図案が邪魔だと感じる場合は、テーマ適用時に無効化できます。
 +
-+> @@[[include :scp-jp:theme:construct | bodybg=off]]@@
++> @@[[include :scp-jp:theme:construct-jp | bodybg=off]]@@
 +
 +@@bodybg=on@@ に戻すか、パラメータを省略すれば再び有効になります。このオプションは本文領域の背景パターンのみを制御し、ヘッダーと本文のスタイルには影響しません。
 +

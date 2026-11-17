@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:ared-jp — origin CN, population #165 [GOSIGN2-LEDGER (b) row 165]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now d21b43d776d369a9fb29d97575ed17a163f17c41ce3601285ebc92d61389fe0c); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 3668556339075889d15440ddfe52c1b6c9dc11440281f4e44d11ba1a883188c5); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 3 errors / 1 warn / 1 info (hotlink×2, pseudo-ref×1); standing classes dispositioned in register c1 [T1-ROWS row 142; GOSIGN2-LEDGER (b) row 165]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page page-overflow 328px@320 only (8px), runtime-hotlink site-theme chain + candidate-own ah-sandbox.wdfiles.com, ah-sandbox.wikidot.com (judgment-required); sample credit-modal (preview-form), page-overflow 328px@320 + 884px@768 (cross-cutting static-credit), runtime-hotlink incl. the ah-sandbox hosts + sample font host; T3 clean on both pages (sidebar at left JP position, opens in both engines; subtitle doubling + preview-notice clipping cross-cutting). [RENDER-ROWS-RERUN16 (CN1) — supersedes the RENDER-ROWS-2 row for this theme, rule S1]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 4 [LOCALIZE-ROWS row 164, source LOCALIZE-S2-D]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 164]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 165]
-- Computed against: canonical commit 2437825cf71d8418899216ebad736265789f95f2; candidate file pages/theme:ared-jp.txt sha256:d21b43d776d369a9fb29d97575ed17a163f17c41ce3601285ebc92d61389fe0c; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 13b5725f80aba2d622b96662fe2257ccbed5749d; candidate file pages/theme:ared-jp.txt sha256:3668556339075889d15440ddfe52c1b6c9dc11440281f4e44d11ba1a883188c5; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 
@@ -83,8 +83,8 @@ Adjudication for this README (every block was read against the bytes): the 5 heu
 
 ### 2. Includes and components
 
-- **What:** Two escaped-include repoints in the usage exhibits (blocks B6, B8): `@@[[include :scp-wiki-cn:theme:ared]]@@` → `@@[[include :scp-jp:theme:ared]]@@` (candidate L32) and its dark-mode form `@@[[include :scp-jp:theme:ared dark=*]]@@` (candidate L38). The image-block exhibit (candidate L21) is a bare `component:image-block` include, unchanged in form on both sides; only its caption was translated (section 6). The candidate's remaining includes are the frame (section 3) and the credit pair (section 1); every named include in the candidate is `:scp-jp:` or the site-local component form.
-- **Why:** P1 (KB-15): an include must name the JP counterpart that actually exists on scp-jp, and the escaped usage examples are repointed on the same rule, because the snippet a user pastes must name the JP theme page — including its `dark=*` parameter form. Ruling 4 is not engaged: no component had to be ported alongside this theme.
+- **What:** Two escaped-include repoints in the usage exhibits (blocks B6, B8): `@@[[include :scp-wiki-cn:theme:ared]]@@` → `@@[[include :scp-jp:theme:ared]]@@` as built (candidate L32) and its dark-mode form `@@[[include :scp-jp:theme:ared dark=*]]@@` (candidate L38). As built, both repoints changed the branch prefix but kept the original's slug, naming a page that does not exist on scp-jp; the population sweep has since completed both to this candidate's posting name (`:scp-jp:theme:ared-jp`, the second as `:scp-jp:theme:ared-jp dark=*`) — see the per-theme record. The image-block exhibit (candidate L21) is a bare `component:image-block` include, unchanged in form on both sides; only its caption was translated (section 6). The candidate's remaining includes are the frame (section 3) and the credit pair (section 1); every named include in the candidate is `:scp-jp:` or the site-local component form.
+- **Why:** P1 (KB-15): an include must name the JP counterpart that actually exists on scp-jp, and the escaped usage examples are repointed on the same rule, because the snippet a user pastes must name the JP theme page — including its `dark=*` parameter form. As built, the repoint satisfied the branch half of that rule only; the sweep's completion of the two names is what brings the snippets under it. Ruling 4 is not engaged: no component had to be ported alongside this theme.
 - **Verify:** `grep -n '\[\[include' candidate.txt` — the frame, the credit pair, the image-block exhibit, and the two escaped usage lines.
 - **Disposition:** Applied; no foreign include kept, no named exception needed.
 
@@ -163,6 +163,10 @@ Adjudication for this README (every block was read against the bytes): the 5 heu
 ### The header string that still renders in Chinese glyph forms
 
 LOCALIZE-ROWS row 164 records the T4 lane's lead finding for this theme: the CSS `content:` string at the header keeps the Chinese department name (display-affecting), with glyph variance against the candidate's Japanese text. The bytes at the FIX5 head bear it out exactly. Candidate L124 reads `content: "异常宗教表现部";`, byte-identical to original L121 — the string was carried, not converted. The candidate's own prose writes the same name in Japanese glyph form (異常宗教表現部, candidate L23), and its credit title fields keep the Chinese title as the work's original name (candidate L9, L12), so the file contains both forms, each in a defensible place except this one: the `content:` string is reader-visible rendered text (it is the header's department label), and KB-18 governs reader-visible strings. No ledger outcome line for this theme dispositions it (the §(c3) line covers P5 and P6 only). The repair a future editor should make is a one-line glyph conversion of that string to 異常宗教表現部, matching the prose. Making it here is outside this package's remit, which is to document the candidate as it stands; the flag is recorded so a reviewer following the header today sees the variance the T4 lane saw.
+
+### The usage examples' posting name
+
+The two escaped usage examples (candidate L32 and L38, the second in its `dark=*` parameter form) as built named this theme by its original's slug on the JP branch, `:scp-jp:theme:ared` — a page that does not exist on scp-jp, under the campaign's settled rule for usage examples (AGENTS.md §6). The usage-example population sweep has since completed both names to this candidate's posting name, `:scp-jp:theme:ared-jp` (sweep report SWEEP-USAGE.md in the campaign record, R/review-scout/; canonical commits b5cb724 and 13b5725 — this file's two sweep lines were re-applied in 13b5725 after a restore briefly reverted them). This package documents the corrected candidate; its stamp reads STALE against the pre-repair verdict, by design.
 
 ## Appendix — residue blocks
 

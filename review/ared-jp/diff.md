@@ -68,7 +68,7 @@ with `python3 review/build_review.py`; verify with
  
  [[div class="code"]]
 -@@[[include :scp-wiki-cn:theme:ared]]@@
-+@@[[include :scp-jp:theme:ared]]@@
++@@[[include :scp-jp:theme:ared-jp]]@@
  [[/div]]
  
 -使用以下代码引入此版式（暗色模式）：
@@ -76,7 +76,7 @@ with `python3 review/build_review.py`; verify with
  
  [[div class="code"]]
 -@@[[include :scp-wiki-cn:theme:ared dark=*]]@@
-+@@[[include :scp-jp:theme:ared dark=*]]@@
++@@[[include :scp-jp:theme:ared-jp dark=*]]@@
  [[/div]]
  
  ----

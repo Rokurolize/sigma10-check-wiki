@@ -87,7 +87,7 @@ with `python3 review/build_review.py`; verify with
 -
 -그리고 이 테마는 다음 컴포넌트를 포함하고 있습니다.
 +@@[[include :scp-jp:theme:black-highlighter-theme]]@@
-+@@[[include :scp-jp:theme:doap-bhl]]@@
++@@[[include :scp-jp:theme:doap-bhl-jp]]@@
 +[[/div]]
 +
 +また、このテーマには次のコンポーネントが含まれています。

@@ -3,7 +3,8 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:cleaning-services-jp — origin EN, population #71 [GOSIGN2-LEDGER (b) row 71]
-- Overall: PASS — passed at the ledger determination; no OPEN items [GOSIGN2-LEDGER (b) row 71]
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now bb23a404f9ca205b5a818377c7261a167d9bd0c7ba9ba8f0c43f51e01e101312); verdict not carried over, re-judgement required
+> verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 4 errors / 2 warns / 2 infos (pseudo-ref×4); standing classes dispositioned in register c1 [T1-ROWS row 61; GOSIGN2-LEDGER (b) row 71]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` (minor) — BHL min-width overflow 337–419px@≤375 on sample; 503/http.cat lines are transient capture, not a defect. [RENDER-ROWS-1 (RENDER-S2-A)]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row [RENDER-ROWS-1 row]
@@ -11,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 71, source LOCALIZE-S2-A]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 71]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 71]
-- Computed against: canonical commit 666f54356acb463c56016c967dc52464b25ba4a2; candidate file pages/theme:cleaning-services-jp.txt sha256:5e79417cf31f28243aa81d99846feca68acba3ffec154c6568c6aa021a6cf117; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:cleaning-services-jp.txt sha256:bb23a404f9ca205b5a818377c7261a167d9bd0c7ba9ba8f0c43f51e01e101312; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -38,7 +39,7 @@ Wave history: the candidate was created by the Stage 2 EN6 integration (commit 2
 
 ## Summary
 
-A Black Highlighter theme whose port moves the whole delivery chain to the JP side: the base CSS imports leave the EN CDN for the JP BHL distribution on scp-jp.github.io, the interwiki frame's theme URLs follow, the fonts leave bunny.net for Google Fonts with the Noto Sans JP load the original declared but never imported, and the tail self-delivery closes the file. The credit block is installed in preview form with the eight ruling-3 fields, and the live `[[module rate]]` the original carried beside it is deleted (the FIX3-S2EN duplicate-Rate removal). The prose is exhibit-heavy — some thirty one-line specimen translations, including the same anomaly sentence repeated thirteen times — and two lane-noted items stand in the bytes as recorded: the header strings stay English by design, and the image exhibit's joke caption is replaced by a neutral specimen label. One item is flagged for repair in the per-theme record: the self-referential usage example at candidate L38 names `:scp-jp:theme:cleaning-services`, a page that does not exist (probe evidence there); its companion example for the base theme (candidate L37) is correct. Measured churn (diff.md: +155/−149, 304 changed lines in 67 change blocks / 10 diff sections).
+A Black Highlighter theme whose port moves the whole delivery chain to the JP side: the base CSS imports leave the EN CDN for the JP BHL distribution on scp-jp.github.io, the interwiki frame's theme URLs follow, the fonts leave bunny.net for Google Fonts with the Noto Sans JP load the original declared but never imported, and the tail self-delivery closes the file. The credit block is installed in preview form with the eight ruling-3 fields, and the live `[[module rate]]` the original carried beside it is deleted (the FIX3-S2EN duplicate-Rate removal). The prose is exhibit-heavy — some thirty one-line specimen translations, including the same anomaly sentence repeated thirteen times — and two lane-noted items stand in the bytes as recorded: the header strings stay English by design, and the image exhibit's joke caption is replaced by a neutral specimen label. One item was flagged for repair in the per-theme record and has since been repaired by the population sweep: the self-referential usage example at candidate L38 named `:scp-jp:theme:cleaning-services`, a page that does not exist (probe evidence there), and now names `:scp-jp:theme:cleaning-services-jp`; its companion example for the base theme (candidate L37) is correct. Measured churn (diff.md: +155/−149, 304 changed lines in 67 change blocks / 10 diff sections).
 
 ## Class summary
 
@@ -82,7 +83,7 @@ Adjudication for this README (every block was read against the bytes): the heuri
 
 ### 2. Includes and components
 
-- **What:** The frame pair and credit pair are section 3's and section 1's. The image-block include inside the exhibits is repointed (`:scp-jp:component:image-block`, candidate L61, B15) with its image re-hosted in the same line (section 4). The two escaped usage examples (B11, ESCAPED-INCLUDE) are repointed to `:scp-jp:`: candidate L37 names `theme:black-highlighter-theme`, the production JP page for the base (probed for this package, 2026-11-17: scp-jp.wikidot.com/theme:black-highlighter-theme returns 200 — correct), and candidate L38 names `:scp-jp:theme:cleaning-services` — the original's slug, not this candidate's posting name, and the per-theme record's flagged defect.
+- **What:** The frame pair and credit pair are section 3's and section 1's. The image-block include inside the exhibits is repointed (`:scp-jp:component:image-block`, candidate L61, B15) with its image re-hosted in the same line (section 4). The two escaped usage examples (B11, ESCAPED-INCLUDE) are repointed to `:scp-jp:`: candidate L37 names `theme:black-highlighter-theme`, the production JP page for the base (probed for this package, 2026-11-17: scp-jp.wikidot.com/theme:black-highlighter-theme returns 200 — correct), and candidate L38 named `:scp-jp:theme:cleaning-services` as built — the original's slug, not this candidate's posting name, and the per-theme record's flagged defect, since repaired by the population sweep (the line now names `:scp-jp:theme:cleaning-services-jp`).
 - **Why:** P1 (KB-15) for the live includes; the usage examples are governed by the campaign's settled rule that a copy-paste install example must name the page a user can actually include (AGENTS.md §6).
 - **Verify:** `grep -n '\[\[include' candidate.txt` — the frame pair, the credit pair, the image-block line, and the two escaped examples.
 - **Disposition:** Live includes applied; the self-example is flagged in the per-theme record (not edited here; the coordinator lands repairs).
@@ -159,9 +160,9 @@ Adjudication for this README (every block was read against the bytes): the heuri
 
 ## Per-theme record
 
-### The usage example names a page that does not exist (defect flag)
+### The usage example names a page that does not exist (defect flag, repaired)
 
-Candidate L38, inside the escaped install examples, reads `@@[[include :scp-jp:theme:cleaning-services]]@@`. Probe made for this package (2026-11-17): `https://scp-jp.wikidot.com/theme:cleaning-services` returns 404; the candidate posts to scp-jp under its own name, theme:cleaning-services-jp, so the example as written cannot be followed on the site it instructs for. The companion example on the line above (candidate L37, the base theme) is correct: `theme:black-highlighter-theme` returns 200 on scp-jp, because the base's JP page keeps the base's name. The campaign's settled rule (AGENTS.md §6) names this exact shape a finding: usage examples inside candidate docs naming `theme:<slug>` instead of `theme:<slug>-jp` break every copy-paste install. The localize lane did not record it, and the ledger's determination for this theme is PASS; this package carries the item as a flagged defect with its probe evidence, for the coordinator's repair wave. The candidate is documented as it stands; no byte of it was edited here.
+Candidate L38, inside the escaped install examples, reads `@@[[include :scp-jp:theme:cleaning-services]]@@`. Probe made for this package (2026-11-17): `https://scp-jp.wikidot.com/theme:cleaning-services` returns 404; the candidate posts to scp-jp under its own name, theme:cleaning-services-jp, so the example as written cannot be followed on the site it instructs for. The companion example on the line above (candidate L37, the base theme) is correct: `theme:black-highlighter-theme` returns 200 on scp-jp, because the base's JP page keeps the base's name. The campaign's settled rule (AGENTS.md §6) names this exact shape a finding: usage examples inside candidate docs naming `theme:<slug>` instead of `theme:<slug>-jp` break every copy-paste install. The localize lane did not record it, and the ledger's determination for this theme is PASS; this package carries the item as a flagged defect with its probe evidence, for the coordinator's repair wave. The candidate is documented as it stands; no byte of it was edited here. The repair has since landed: the usage-example population sweep (sweep report SWEEP-USAGE.md in the campaign record, R/review-scout/; canonical commit b5cb724), which repaired this shape across all 157 affected candidates; candidate L38 now reads `@@[[include :scp-jp:theme:cleaning-services-jp]]@@`, and this package documents the corrected candidate (its stamp reads STALE against the pre-repair verdict, by design).
 
 ## Appendix — residue blocks adjudicated
 

@@ -3,7 +3,8 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:suprematism-jp — origin CN, population #235 [GOSIGN2-LEDGER (b) row 235]
-- Overall: PASS — NOT PASS at the ledger determination (section (e) register); both OPEN items re-judged FIXED by the FIX5 wave; go-sign issued 2026-11-17 (COMPLETION-REPORT §10) [GOSIGN2-LEDGER (b); GOSIGN2-LEDGER-SUPPLEMENT (d)]
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 7e0d5949b9b6e2e6e047050ee5211a0792dab209672a1c25fa7a38d017e2c952); verdict not carried over, re-judgement required
+> verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 14 errors / 0 warns / 0 infos (hotlink×11, pseudo-ref×2, old-bhl×1); standing classes dispositioned in register c1 [T1-ROWS row 195; GOSIGN2-LEDGER (b) row 235]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page-overflow 454px@320/375 on page and sample + sidebar-unreachable at 375/320 + runtime-hotlink site-theme chain + candidate hosts cdn.jsdelivr.net, lemoncat233.github.io, nu-scptheme.github.io; sample credit-modal (preview-form); T3 re-run, no new screenshot-grounded visual finding; chromium-only coverage (no WebKit verdict). [RENDER-ROWS-G (CN15)]
 - Engine coverage: chromium-only, both pages (no WebKit verdict) [RENDER-ROWS-G row, findings cell]
@@ -11,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 234, source LOCALIZE-S2-E]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 234]
 - FIX5 re-judgement: items 91 (class H) FIXED, 92 (class I) FIXED — FIX5-STRUCTA, commit 8c0cd35: credit title -> (JP form matching the body); credit author field -> LemonCat233 & Liurd; all 11 #ifexpr preset bodies restored verbatim from original L669-972 into the existing shells, one JP adaptation in the restored scp preset (old-BHL host -> scp-jp.github.io, the KB-17 named rewrite); spot-verified for this supplement [GOSIGN2-LEDGER-SUPPLEMENT (a) items 91–92; (c) check 5]
-- Computed against: canonical commit 8c0cd3506a464a3286f3481b1720a051b4f7e0e6; candidate file pages/theme:suprematism-jp.txt sha256:7fccdaa1e8432bd5c4d0602cdd1258126383474655ae988ac3513ea6b4ac09a4; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:suprematism-jp.txt sha256:7e0d5949b9b6e2e6e047050ee5211a0792dab209672a1c25fa7a38d017e2c952; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -150,6 +151,10 @@ The restored minecraft and scp presets keep their Chinese display strings exactl
 ### Disposition argument 3 — the delivery change is part of the record
 
 A reviewer comparing only the two page sources will under-read this port, because the original's main stylesheet is not in the original: the page is a shell around a ThemePreviewer module, a fragment hosted on the backrooms CN wiki, and a stylesheet on the author's GitHub Pages. The candidate replaces that topology with a self-contained one (re-hosted base fragment plus own code block, section 3). The delivery change is therefore not an implementation detail behind the port; it is one of the port's three substantive changes, alongside the translation and the exhibit restructuring, and it is the reason the change set below is part of this package's record. Its risk is also recorded: the candidate's styling now depends on campaign-maintained deliveries (the fragment and the draft-host local--code URLs) rather than on the author's hosting, and the draft-host URLs stand as class (iii) until posting rewrites them.
+
+### The usage example's posting name
+
+The include census in section 2 covers live includes; the theme's centered install example at candidate L18 is an escaped exhibit line and was not listed there. As built it read `= {{@@[[include :scp-jp:theme:suprematism]]@@}}`, naming the original's slug on the JP branch — a page that does not exist on scp-jp, under the campaign's settled rule for usage examples (AGENTS.md §6). The usage-example population sweep has since completed the name to this candidate's posting name, `:scp-jp:theme:suprematism-jp` (sweep report SWEEP-USAGE.md in the campaign record, R/review-scout/; canonical commit b5cb724). This package documents the corrected candidate; its stamp reads STALE against the pre-repair verdict, by design.
 
 ## Change set outside the two diffed files
 

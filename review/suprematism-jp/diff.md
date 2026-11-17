@@ -40,7 +40,7 @@ adjudicated explanation.
 | 2 | 1 | 3–3 | 3–12 | +10/−1 | supplement | [[include :scp-jp:credit:start-preview]] |
 | 3 | 1 | 5–6 | 14–14 | +1/−2 | residual | 真理は幾何のあいだに潜む |
 | 4 | 1 | 8–11 | 16–16 | +1/−4 | residual | **至上主義**は、[[*user LemonCat233]]および[[*user Liurd]]による基礎美学テーマです。極端な簡潔さと余分な遷移効果の… |
-| 5 | 1 | 13–16 | 18–18 | +1/−4 | residual | = {{@@[[include :scp-jp:theme:suprematism]]@@}} |
+| 5 | 1 | 13–16 | 18–18 | +1/−4 | residual | = {{@@[[include :scp-jp:theme:suprematism-jp]]@@}} |
 | 6 | 1 | 18–75 | 20–20 | +1/−58 | residual | 以下は、このテーマに含まれる要素の一部の例です。 |
 | 7 | 1 | 79–79 | 24–24 | +1/−1 | translation | + 例 |
 | 8 | 1 | 81–83 | 26–27 | +2/−3 | residual | **名前:** 至上主義 美学テーマ |
@@ -183,7 +183,7 @@ adjudicated explanation.
 -    background: unset!important;
 -}
 -[[/module]]
-+= {{@@[[include :scp-jp:theme:suprematism]]@@}}
++= {{@@[[include :scp-jp:theme:suprematism-jp]]@@}}
  
 -
 -[[iftags +版式]]

@@ -3,7 +3,8 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:crayon-jp — origin EN, population #74 [GOSIGN2-LEDGER (b) row 74]
-- Overall: PASS — passed at the ledger determination; no OPEN items [GOSIGN2-LEDGER (b) row 74]
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now a3723fad7d2e05ca8c3043fe63675e91deae55e9733cba0a7404643a8414eb55); verdict not carried over, re-judgement required
+> verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 2 errors / 1 warn / 1 info (pseudo-ref×2); standing classes dispositioned in register c1 [T1-ROWS row 64; GOSIGN2-LEDGER (b) row 74]
 - T2/T3 (render, combined verdict): PASS-WITH-NOTES — [combined T2/T3] report `NO candidate-specific defect established` — error cluster is a transient 503 capture; other lines cross-cutting/draft-form/by-design. [RENDER-ROWS-1 (RENDER-S2-A)]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row [RENDER-ROWS-1 row]
@@ -11,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 2 [LOCALIZE-ROWS row 74, source LOCALIZE-S2-A]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 74]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 74]
-- Computed against: canonical commit 666f54356acb463c56016c967dc52464b25ba4a2; candidate file pages/theme:crayon-jp.txt sha256:ade98a0a571eabb542a2e13d7e14786314333d39c2033551c02091c00eb244f3; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:crayon-jp.txt sha256:a3723fad7d2e05ca8c3043fe63675e91deae55e9733cba0a7404643a8414eb55; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 
@@ -80,8 +81,8 @@ Adjudication for this README (every block was read against the bytes): the 1 res
 
 ### 2. Includes and components
 
-- **What:** One repoint in the body and the tail swap of section 1. B5: the usage example's escaped include, `:scp-wiki:theme:crayon` → `:scp-jp:theme:crayon` (candidate L11, inside `@@...@@`). The tail includes are the frame (section 3), the credit pair, and the license-box pair (section 1). Every include in the candidate names a `:scp-jp:` target; there are no other includes.
-- **Why:** P1 (KB-15): an include must name the JP counterpart that actually exists on scp-jp, and the escaped usage example is repointed on the same rule, because the snippet a user pastes must name the JP theme page. Ruling 4 is not engaged: no component had to be ported alongside this theme.
+- **What:** One repoint in the body and the tail swap of section 1. B5: the usage example's escaped include, `:scp-wiki:theme:crayon` → `:scp-jp:theme:crayon` as built (candidate L11, inside `@@...@@`); as built the repoint kept the original's slug, naming a page that does not exist on scp-jp, and the population sweep has since completed the name to `:scp-jp:theme:crayon-jp` (per-theme record). The tail includes are the frame (section 3), the credit pair, and the license-box pair (section 1). Every include in the candidate names a `:scp-jp:` target; there are no other includes.
+- **Why:** P1 (KB-15): an include must name the JP counterpart that actually exists on scp-jp, and the escaped usage example is repointed on the same rule, because the snippet a user pastes must name the JP theme page — as built it named the original's slug on the JP branch, a page that does not exist, and the population sweep's completion of the name is what brings the snippet under this rule. Ruling 4 is not engaged: no component had to be ported alongside this theme.
 - **Verify:** `grep -n '\[\[include' candidate.txt` — six includes, all `:scp-jp:`.
 - **Disposition:** Applied; no foreign include kept, no named exception needed.
 
@@ -154,6 +155,12 @@ Adjudication for this README (every block was read against the bytes): the 1 res
 - **Why:** Verification claims name the cheapest deciding check and its result, not a general assurance.
 - **Verify:** Re-run the checker on `pages/theme:crayon-jp.txt` and `python3 review/build_review.py --check` in this repo.
 - **Disposition:** PASS (GOSIGN2-LEDGER (b) row 74; go-sign, COMPLETION-REPORT §10).
+
+## Per-theme record
+
+### The usage example's posting name
+
+The theme's only exhibit, the usage syntax line at candidate L11, as built named this theme by its original's slug on the JP branch, `:scp-jp:theme:crayon` — a page that does not exist on scp-jp, under the campaign's settled rule for usage examples (AGENTS.md §6). The usage-example population sweep has since completed the name to this candidate's posting name, `:scp-jp:theme:crayon-jp` (sweep report SWEEP-USAGE.md in the campaign record, R/review-scout/; canonical commit b5cb724). This package documents the corrected candidate; its stamp reads STALE against the pre-repair verdict, by design.
 
 ## Appendix — residue blocks
 

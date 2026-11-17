@@ -3,7 +3,8 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:candela-jp — origin CN, population #173 [GOSIGN2-LEDGER (b) row 173]
-- Overall: PASS — passed at the ledger determination; no OPEN items [GOSIGN2-LEDGER (b) row 173]
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 155e4559259cf40efbca28a807d799a1a56d3bbc49e3bf6ad0c8d1f21873112b); verdict not carried over, re-judgement required
+> verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 12 errors / 0 warns / 1 info (pseudo-ref×10, hotlink×2); standing classes dispositioned in register c1 [T1-ROWS row 198; GOSIGN2-LEDGER (b) row 173]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page-overflow 515–525px@320/375 on page and sample (+ 853–854px@768 on sample); page hidden-* cluster confined to webkit-320, whose only hotlink host is http.cat = transient 503 capture, not a result; sample credit-modal (preview-form) + sidebar-not-opening at webkit-768. [RENDER-ROWS-2 (RENDER-S2-E (CN3))]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row [RENDER-ROWS-2 row]
@@ -11,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 2 [LOCALIZE-ROWS row 172, source LOCALIZE-S2-D]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 172]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 173]
-- Computed against: canonical commit db3738b8a7ed6e3fbd12782a2a02b7e79a1c1f36; candidate file pages/theme:candela-jp.txt sha256:78c4772111fcea40f0b84b2a68ef81d38fbf15bfb44b8f05e79da8646e96d7bf; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:candela-jp.txt sha256:155e4559259cf40efbca28a807d799a1a56d3bbc49e3bf6ad0c8d1f21873112b; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status

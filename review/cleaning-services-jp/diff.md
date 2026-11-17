@@ -79,7 +79,7 @@ with `python3 review/build_review.py`; verify with
 -[[collapsible show="+ You see the 'Cleaning Services Theme' title?" hide="- Want to change it?"]]
 -Only optional, but if you like to switch the font of the top of your page, you can use the code below:
 +@@[[include :scp-jp:theme:black-highlighter-theme]]@@
-+@@[[include :scp-jp:theme:cleaning-services]]@@
++@@[[include :scp-jp:theme:cleaning-services-jp]]@@
 +[[/div]]
 +
 +@@ @@

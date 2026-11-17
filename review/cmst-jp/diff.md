@@ -44,7 +44,7 @@ with `python3 review/build_review.py`; verify with
 +
 +このテーマを使用するには、ページの冒頭に以下の構文を追加してください。
 +
-+> @@[[include :scp-jp:theme:cmst]]@@
++> @@[[include :scp-jp:theme:cmst-jp]]@@
 +
 +[[collapsible show="+ ソースコード" hide="- ソースコードを隠す"]]
 +[[code type="CSS"]]

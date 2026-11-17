@@ -96,7 +96,7 @@ with `python3 review/build_review.py`; verify with
 +このテーマを使用するには、以下を挿入してください:
 +
 +> {{@@[[include :scp-jp:theme:space]]@@}}
-+> {{@@[[include :scp-jp:theme:cosmos]]@@}}
++> {{@@[[include :scp-jp:theme:cosmos-jp]]@@}}
 +
 +Cosmosテーマは[[[component:sigma-plus|]]]テーマであり、[[[component:toggle-sidebar|]]]を使用します。
  

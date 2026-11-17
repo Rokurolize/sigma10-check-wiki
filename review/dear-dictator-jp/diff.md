@@ -46,7 +46,7 @@ adjudicated explanation.
 | 8 | 2 | 46–46 | 66–66 | +1/−1 | residual | [[=image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Adear-dictat… |
 | 9 | 2 | 49–49 | 69–69 | +1/−1 | translation | 敬愛する独裁者 従属型装飾広場様式 |
 | 10 | 2 | 53–54 | 73–74 | +2/−2 | translation | この装飾様式は、共和国の団体「異常教化国（이상교화국）」のために特別に制作された専用の様式です。 |
-| 11 | 2 | 56–56 | 76–76 | +1/−1 | residual | > @@[[include :scp-jp:theme:dear-dictator]]@@ |
+| 11 | 2 | 56–56 | 76–76 | +1/−1 | residual | > @@[[include :scp-jp:theme:dear-dictator-jp]]@@ |
 | 12 | 3 | 65–65 | 85–85 | +1/−1 | translation | + カラーセット |
 | 13 | 4 | 73–73 | 93–93 | +1/−1 | translation | + ##FFF\|主体[[span style="white-space: nowrap"]]赤色[[/span]]## |
 | 14 | 4 | 79–79 | 99–99 | +1/−1 | translation | + 太陽[[span style="white-space: nowrap"]]金色[[/span]] |
@@ -218,7 +218,7 @@ adjudicated explanation.
 +この様式でウェブページを装飾しようとする者は、以下の命令文をそのまま書き写さなければなりません。
  
 -> @@[[include :scpko:theme:dear-dictator]]@@
-+> @@[[include :scp-jp:theme:dear-dictator]]@@
++> @@[[include :scp-jp:theme:dear-dictator-jp]]@@
  [[/=]]
  
  @@@@
