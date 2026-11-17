@@ -1,0 +1,2286 @@
+[!-- {$theme}]
+
+[[module css]]
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Amarchen-jp/2');
+
+/* {$daybreak}/
+
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Amarchen-jp/3');
+
+/{$daybreak} */
+
+/* {$dendrophobia}/
+
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Amarchen-jp/4');
+
+/{$dendrophobia} */
+
+[[/module]]
+
+[[include component:interwiki-style
+| priority=1
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Amarchen-jp/1
+]]
+
+[!{$theme} --]
+
+[!-- {$pagebook-start}]
+
+[[module css]]
+
+.book.n{$bookNo} > div:nth-of-type(n+3) { display: none; }
+
+.book.n{$bookNo}:has(.collapsible-block-unfolded[style=""] span.page1, .collapsible-block-unfolded[style="display: block;"] span.page1) > div:nth-of-type(n):nth-of-type(-n+1) {
+  display: none;
+}
+
+.book.n{$bookNo}:has(.collapsible-block-unfolded[style=""] span.page1, .collapsible-block-unfolded[style="display: block;"] span.page1) > div:nth-of-type(n+2):nth-of-type(-n+4) {
+  display: block;
+}
+
+.book.n{$bookNo}:has(.collapsible-block-unfolded[style=""] span.page1, .collapsible-block-unfolded[style="display: block;"] span.page1) > div:nth-of-type(n+5) {
+  display: none;
+}
+
+.book.n{$bookNo}:has(.collapsible-block-unfolded[style=""] span.page2, .collapsible-block-unfolded[style="display: block;"] span.page2) > div:nth-of-type(n):nth-of-type(-n+3) {
+  display: none;
+}
+
+.book.n{$bookNo}:has(.collapsible-block-unfolded[style=""] span.page2, .collapsible-block-unfolded[style="display: block;"] span.page2) > div:nth-of-type(n+4):nth-of-type(-n+6) {
+  display: block;
+}
+
+.book.n{$bookNo}:has(.collapsible-block-unfolded[style=""] span.page2, .collapsible-block-unfolded[style="display: block;"] span.page2) > div:nth-of-type(n+6) {
+  display: none;
+}
+
+.book.n{$bookNo}:has(.collapsible-block-unfolded[style=""] span.page3, .collapsible-block-unfolded[style="display: block;"] span.page3) > div:nth-of-type(n):nth-of-type(-n+5) {
+  display: none;
+}
+
+.book.n{$bookNo}:has(.collapsible-block-unfolded[style=""] span.page3, .collapsible-block-unfolded[style="display: block;"] span.page3) > div:nth-of-type(n+6):nth-of-type(-n+8) {
+  display: block;
+}
+
+.book.n{$bookNo}:has(.collapsible-block-unfolded[style=""] span.page3, .collapsible-block-unfolded[style="display: block;"] span.page3) > div:nth-of-type(n+8) {
+  display: none;
+}
+
+.book.n{$bookNo}:has(.collapsible-block-unfolded[style=""] span.page4, .collapsible-block-unfolded[style="display: block;"] span.page4) > div:nth-of-type(n):nth-of-type(-n+7) {
+  display: none;
+}
+
+.book.n{$bookNo}:has(.collapsible-block-unfolded[style=""] span.page4, .collapsible-block-unfolded[style="display: block;"] span.page4) > div:nth-of-type(n+8):nth-of-type(-n+10) {
+  display: block;
+}
+
+.book.n{$bookNo}:has(.collapsible-block-unfolded[style=""] span.page4, .collapsible-block-unfolded[style="display: block;"] span.page4) > div:nth-of-type(n+10) {
+  display: none;
+}
+
+.book.n{$bookNo}:has(.collapsible-block-unfolded[style=""] span.page5, .collapsible-block-unfolded[style="display: block;"] span.page5) > div:nth-of-type(n):nth-of-type(-n+9) {
+  display: none;
+}
+
+.book.n{$bookNo}:has(.collapsible-block-unfolded[style=""] span.page5, .collapsible-block-unfolded[style="display: block;"] span.page5) > div:nth-of-type(n+10):nth-of-type(-n+12) {
+  display: block;
+}
+
+.book.n{$bookNo}:has(.collapsible-block-unfolded[style=""] span.page5, .collapsible-block-unfolded[style="display: block;"] span.page5) > div:nth-of-type(n+12) {
+  display: none;
+}
+
+.book.n{$bookNo}:has(.collapsible-block-unfolded[style=""] span.page6, .collapsible-block-unfolded[style="display: block;"] span.page6) > div:nth-of-type(n):nth-of-type(-n+11) {
+  display: none;
+}
+
+.book.n{$bookNo}:has(.collapsible-block-unfolded[style=""] span.page6, .collapsible-block-unfolded[style="display: block;"] span.page6) > div:nth-of-type(n+12):nth-of-type(-n+14) {
+  display: block;
+}
+
+.book.n{$bookNo}:has(.collapsible-block-unfolded[style=""] span.page6, .collapsible-block-unfolded[style="display: block;"] span.page6) > div:nth-of-type(n+14) {
+  display: none;
+}
+
+.book.n{$bookNo}:has(.collapsible-block-unfolded[style=""] span.page7, .collapsible-block-unfolded[style="display: block;"] span.page7) > div:nth-of-type(n):nth-of-type(-n+13) {
+  display: none;
+}
+
+.book.n{$bookNo}:has(.collapsible-block-unfolded[style=""] span.page7, .collapsible-block-unfolded[style="display: block;"] span.page7) > div:nth-of-type(n+14):nth-of-type(-n+16) {
+  display: block;
+}
+
+.book.n{$bookNo}:has(.collapsible-block-unfolded[style=""] span.page7, .collapsible-block-unfolded[style="display: block;"] span.page7) > div:nth-of-type(n+16) {
+  display: none;
+}
+
+.book.n{$bookNo}:has(.collapsible-block-unfolded[style=""] span.page8, .collapsible-block-unfolded[style="display: block;"] span.page8) > div:nth-of-type(n):nth-of-type(-n+15) {
+  display: none;
+}
+
+.book.n{$bookNo}:has(.collapsible-block-unfolded[style=""] span.page8, .collapsible-block-unfolded[style="display: block;"] span.page8) > div:nth-of-type(n+16):nth-of-type(-n+18) {
+  display: block;
+}
+
+.book.n{$bookNo}:has(.collapsible-block-unfolded[style=""] span.page8, .collapsible-block-unfolded[style="display: block;"] span.page8) > div:nth-of-type(n+18) {
+  display: none;
+}
+
+.book.n{$bookNo}:has(.collapsible-block-unfolded[style=""] span.page9, .collapsible-block-unfolded[style="display: block;"] span.page9) > div:nth-of-type(n):nth-of-type(-n+17) {
+  display: none;
+}
+
+.book.n{$bookNo}:has(.collapsible-block-unfolded[style=""] span.page9, .collapsible-block-unfolded[style="display: block;"] span.page9) > div:nth-of-type(n+18):nth-of-type(-n+20) {
+  display: block;
+}
+
+.book.n{$bookNo}:has(.collapsible-block-unfolded[style=""] span.page9, .collapsible-block-unfolded[style="display: block;"] span.page9) > div:nth-of-type(n+20) {
+  display: none;
+}
+
+[[/module]]
+
+[[div class="blockquote wide book n{$bookNo}" style="height: {$height};"]]
+
+[!{$pagebook-start} --]
+
+[!-- {$paging}]
+
+[[div class="paging"]]
+[[collapsible show=" " hide=" "]]
+[[span class="page{$pageNo}"]]@@ @@[[/span]]
+[[/collapsible]]
+[[/div]]
+
+[!{$paging} --]
+
+[!-- {$pagebook-end}]
+
+[[/div]]
+
+[!{$pagebook-end} --]
+
+[!-- {$portable-toc}]
+
+[[div class="port-toc"]]
+[[collapsible show="◀" hide="◁"]]
+[[toc]]
+[[/collapsible]]
+[[/div]]
+
+[!{$portable-toc} --]
+
+[!-- {$selres-part1}]
+
+[[module css]]
+
+.selres.n{$selectionNo}:has(.collapsible-block-unfolded[style=""] span.branchA.n{$selectionNo}, .collapsible-block-unfolded[style="display: block;"] span.branchA.n{$selectionNo}) > div.a {
+  display: block;
+}
+
+.selres.n{$selectionNo}:has(.collapsible-block-unfolded[style=""] span.branchB.n{$selectionNo}, .collapsible-block-unfolded[style="display: block;"] span.branchB.n{$selectionNo}) > div.b {
+  display: block;
+}
+
+[[/module]]
+
+[[div class="selres n{$selectionNo}"]]
+
+[[div class="selection"]]
+
+[[div class="selA"]]
+
+[[div class="sel-display"]]
+
+[!{$selres-part1} --]
+
+[!-- {$selres-part2}]
+
+[[/div]]
+
+[[collapsible show="　" hide="　"]]
+[[span class="branchA n{$selectionNo}"]]@@ @@[[/span]]
+[[/collapsible]]
+
+[[/div]]
+
+[[div class="selB"]]
+
+[[div class="sel-display"]]
+
+[!{$selres-part2} --]
+
+[!-- {$selres-part3}]
+
+[[/div]]
+
+[[collapsible show="　" hide="　"]]
+[[span class="branchB n{$selectionNo}"]]@@ @@[[/span]]
+[[/collapsible]]
+
+[[/div]]
+
+[[/div]]
+
+[[div class="result a"]]
+
+[!{$selres-part3} --]
+
+[!-- {$selres-part4}]
+[[/div]]
+
+[[div class="result b"]]
+[!{$selres-part4} --]
+
+[!-- {$selres-part5}]
+[[/div]]
+
+[[/div]]
+[!{$selres-part5} --]
+
+[!-- {$has-warning}]
+[[div class="error-block has-warning"]]
+この文章が表示されている場合、お使いのブラウザは本記事の表示効果すべてに対応していない可能性が高いです。
+
+記事を完全な形で閲覧したい場合は、PC版ブラウザに切り替えるか、ブラウザを最新バージョンへ更新してからお読みください。
+[[/div]]
+[!{$has-warning} --]
+
+[[iftags +テーマ]]
+
+[[module css]]
+
+/* {$daybreak}/
+
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Amarchen-jp/3');
+
+/{$daybreak} */
+
+.movie .scp-image-block .image {
+  background-color: white;
+}
+
+#page-title {
+  display: none;
+}
+
+[[/module]]
+
+[[div class="meta-title"]]
+Märchen Theme
+[[/div]]
+
+[[>]]
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** 深林 版式
+**翻訳責任者:** AI
+**翻訳年:** 2026
+**原題:** 深林 版式
+**著作権者:** Sharia Vanilla
+**作成年:** 2025
+**初訳時参照リビジョン:** 35
+**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:marchen ソース]
+[[include :scp-jp:credit:end-preview]]
+[[/>]]
+
+これは[[*user Sharia Vanilla]]がSCP-CN向けに制作した美的テーマで、主に[*https://scp-wiki-cn.wikidot.com/waldichter-hub 吟遊詩客]（原語版）のGoIフォーマットで用いられます。このテーマは[*https://scp-wiki-cn.wikidot.com/theme:parallel Parallel]を基に制作されています。
+
+作品の冒頭に次のコードを追加すると、このテーマを適用できます。
+
+[[div class="code"]]
+@@[[include theme:marchen-jp theme=--]]@@
+[[/div]]
+
+また、次のコードで明るい背景版を呼び出せます。
+
+[[div class="code"]]
+@@[[include theme:marchen-jp theme=-- | daybreak=*]]@@
+[[/div]]
+
+また、次のコードでページ下部の木の装飾を取り除けます。明色版と重ねて使えます。
+
+[[div class="code"]]
+@@[[include theme:marchen-jp theme=-- | dendrophobia=*]]@@
+[[/div]]
+
+さらに、次のコードでページ背景画像を調整できます。
+
+[[div class="code"]]
+@@[[module css]]@@
+@@:root {@@
+@@  --bg-img: url(https://...);@@
+@@}@@
+@@[[/module]]@@
+[[/div]]
+
++ テーマカラー
+
+[[include :scp-jp:component:theme-squares -=-
+| color1-name=月白
+| color1-variable=--moonlight-white
+| color1-info=(238, 247, 242)
+| color2-name=深森の緑
+| color2-variable=--forest-green
+| color2-info=(20, 30, 27)
+| color2-has-light-text=1
+| subcolor1-name=夜空の青
+| subcolor1-variable=--nightsky-blue
+| subcolor1-info=(19, 72, 87)
+| subcolor1-has-light-text=1
+| subcolor2-name=玉簪の緑
+| subcolor2-variable=--jade-green
+| subcolor2-info=(164, 202, 182)
+| subcolor3-name=蒼緑
+| subcolor3-variable=--verdant-green
+| subcolor3-info=(34, 62, 54)
+| subcolor3-has-light-text=1
+| subcolor4-name=泉の緑
+| subcolor4-variable=--spring-green
+| subcolor4-info=(73, 117, 104)
+]]
+
++ 要素サンプル
+
+[[div class="movie"]]
+[[include component:image-block name=https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amarchen-jp/mega-stw.gif|caption=これは画像――待って、これは何？|width=200px]]
+[[/div]]
+
+4個以上のハイフン[[footnote]]これは誰も怒らせないための、きわめて厳密な表現です。ついでに言うと、これは脚注です。[[/footnote]]「@@----@@」で水平の区切り線を作れます。引用ブロックなど、ほかの部品の中に置かれていない場合は、ページを左右に貫くように伸びます。このように文書を複数の部分へ分ける線が区切り線です。
+
+----
+
+見出しは、行頭に1個から6個のプラス記号「+」を入力すると作成できます。
+
+~~~~
+
+[[collapsible show="+ 折りたたみブロック" hide="- 閉じる"]]
++ 一段階目の見出し
+++ 二段階目の見出し
++++ 三段階目の見出し
+++++ 四段階目の見出し
++++++ 五段階目の見出し
+++++++ 六段階目の見出し
+[[/collapsible]]
+
+[[tabview]]
+[[tab タブ]]
+これはタブビューです。
+[[/tab]]
+[[tab タブ]]
+見てください。こちらにはさらに文章があります。
+
+なんと精巧なことでしょう。
+[[/tab]]
+[[tab 長いタブ]]
+これは長いタブで、たくさんの文章があります。
+
+これは長いタブで、たくさんの文章があります。
+
+これは長いタブで、たくさんの文章があります。
+
+これは長いタブで、たくさんの文章があります。
+
+これは長いタブで、たくさんの文章があります。
+
+これは長いタブで、たくさんの文章があります。
+
+これは長いタブで、たくさんの文章があります。
+
+これは長いタブで、たくさんの文章があります。
+
+これは長いタブで、たくさんの文章があります。
+
+これは長いタブで、たくさんの文章があります。
+
+これは長いタブで、たくさんの文章があります。
+
+これは長いタブで、たくさんの文章があります。
+[[/tab]]
+[[tab 奇妙な理由により、この空のタブにはとても長い名前が付いています。なぜでしょう。不思議ですね。]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+規則がないこともまた一つの規則です。幻想そのものが、縛りのない奔放な想像なのですから。実際、それらの「創造物」の消滅が幻想の断絶に由来するのと同じように、その誕生もまた「飛空城」は存在するはずだという幻想、あるいは信念に由来しています。そして、それこそが最後の城が今なお存在する理由でもあります。考えてみてください。本来なら存在するとも限らない空中の巨大構造物を、あなたはいつから必ず見つけられると確信し始めたのでしょうか。それが答えです。
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[/tabview]]
+
+[[div class="blockquote"]]
+これは引用ブロックです――行頭に「> 」を付けると作成できます――。
+
+その方法は避けてください。次を使います。
+[[div class="blockquote"]]
+@@[[div class="blockquote"]]@@
+内容
+@@[[/div]]@@
+[[/div]]
+
+----
+
+一本の区切り線
+
+[[/div]]
+
+||~ これは ||~ xlsx ||
+|| ご存じの通り || これでできます ||
+|||| コンテスト順位の集計 ||
+
++ コンポーネント
+
+++ ページめくり本
+
+このモジュールは最大10ページの異なる内容を表示できます。さらにページ数が必要な場合は、本ページのソースコードを参考にして同じ要領で拡張してください。
+
+各ページの中には、画像、脚注、ボックス構造など任意の内容を配置できます。
+
+詳しい呼び出し方法は次の通りです。
+
+[[module css]]
+
+.book.n1 > div:nth-of-type(n+3) { display: none; }
+
+.book.n1:has(.collapsible-block-unfolded[style=""] span.page1, .collapsible-block-unfolded[style="display: block;"] span.page1) > div:nth-of-type(n):nth-of-type(-n+1) {
+  display: none;
+}
+
+.book.n1:has(.collapsible-block-unfolded[style=""] span.page1, .collapsible-block-unfolded[style="display: block;"] span.page1) > div:nth-of-type(n+2):nth-of-type(-n+4) {
+  display: block;
+}
+
+.book.n1:has(.collapsible-block-unfolded[style=""] span.page1, .collapsible-block-unfolded[style="display: block;"] span.page1) > div:nth-of-type(n+5) {
+  display: none;
+}
+
+.book.n1:has(.collapsible-block-unfolded[style=""] span.page2, .collapsible-block-unfolded[style="display: block;"] span.page2) > div:nth-of-type(n):nth-of-type(-n+3) {
+  display: none;
+}
+
+.book.n1:has(.collapsible-block-unfolded[style=""] span.page2, .collapsible-block-unfolded[style="display: block;"] span.page2) > div:nth-of-type(n+4):nth-of-type(-n+6) {
+  display: block;
+}
+
+.book.n1:has(.collapsible-block-unfolded[style=""] span.page2, .collapsible-block-unfolded[style="display: block;"] span.page2) > div:nth-of-type(n+6) {
+  display: none;
+}
+
+[[/module]]
+
+[[div class="blockquote"]]
+@@[[include theme:marchen-jp pagebook-start=-- | bookNo=1 | height=20em]]@@[[footnote]] 異なる冊子には別々の本番号を使用してください。 [[/footnote]]
+@@[[div class="book-content"]]@@
+これは1ページ目です。
+@@[[/div]]@@
+@@[[include theme:marchen-jp paging=-- | pageNo=1]]@@[[footnote]] ページめくりモジュールのページ番号は順に増やします。最後のページ内容の後にページめくりモジュールを追加する必要はありません。 [[/footnote]]
+@@[[div class="book-content"]]@@
+これは2ページ目です。
+@@[[/div]]@@
+@@[[include theme:marchen-jp paging=-- | pageNo=2]]@@
+@@[[div class="book-content"]]@@
+これは3ページ目です。
+@@[[/div]]@@
+@@[[include theme:marchen-jp pagebook-end=--]]@@
+[[/div]]
+
+----
+
+[[div class="blockquote wide book n1" style="height: 20em;"]]
+[[div class="book-content"]]
+[[include component:image-block
+|name=https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amarchen-jp/bard-white.png
+|caption=図6.1「吟遊詩客」(GoI-874)の公認ロゴ
+|width=min(30vw, 200px) !important
+]]
+「吟遊詩客」は活動レベルの比較的低い異常芸術家組織です。同組織の唯一確認されている前身組織「深林童謡会」(Märchen im Mori, MiM)[[footnote]]これは通用訳であり、正式名称は「死亡童謡会」とされます。この訳名は重訳上の誤記が慣用化したものです。[[/footnote]]はルネサンス期のゲルマン地域に起源を持ち、当時の常態社会で高度に活動していた著名な画家、作家、詩人を複数擁していました。関連記録によれば、この組織は文芸作品の表現形式を強化する目的で異常技術を初めて用い、中世の暗い社会制度と宗教思想による人文精神の束縛を批判しました。その後、東欧、西アジア、南米などに分布する複数の新興異常芸術団体を取り込み、18世紀半ばに現在の吟遊詩客へと再編されました。
+[[/div]]
+[[div class="paging"]]
+[[collapsible show=" " hide=" "]]
+[[span class="page1"]]@@ @@[[/span]]
+[[/collapsible]]
+[[/div]]
+[[div class="book-content"]]
+再編後、吟遊詩客は自らの使命を「失われた幻想の楽章を詠う」ことと定めました。すなわち、詩、童話、民話を編纂し、拡散・伝播させることで、消えゆく文化、伝説、さらには実在する異常を存続させるということです。そのため、この組織はすぐに複数の歴史学者や民俗学者を引きつけ、彼らも物語の創作と伝播に加わりました。ヤーコプ・グリムとヴィルヘルム・グリムの兄弟は、その典型例です。18世紀末以降、吟遊詩客の活動は世界各地で頂点に達しました。現在、現存し同組織の制作物と確認されている異常書籍・芸術作品の約8割が、1760年から1930年までの期間に制作されています。20世紀半ば以降、この組織の活動度は緩やかかつ安定して低下し始めました。主な兆候は、制作作品と関係者の活動が急坂を下るように減少したことです。財団が取得した関連事案報告を例に取れば、その数は1948年の717件から2022年には4件まで減少しています。
+[[/div]]
+[[div class="paging"]]
+[[collapsible show=" " hide=" "]]
+[[span class="page2"]]@@ @@[[/span]]
+[[/collapsible]]
+[[/div]]
+[[div class="book-content"]]
+吟遊詩客の構成員の多くは自らを「詩吟者」と呼びます。前身組織である深林童謡会と同じく、「詩吟者」たちの作品は一定の異常特性を備えていることが多いものの、そうした異常は多くの場合危険性を持たず、主に語られる物語の「展示」と「伝播」に焦点を置いています。現在の「詩吟者」たちの多くは、幻想造物およびそれに関わる古い神話・民俗伝承の保護に従事しているため、複数の分野でSite-CN-53と緊密な協力関係を結んでいます。
+[[/div]]
+[[/div]]
+
+++ 携帯用目次モジュール
+
+記事の冒頭部に次のコードを追加すると、携帯用の目次モジュールを呼び出せます。
+
+> @@[[include theme:marchen-jp portable-toc=--]]@@
+
+このモジュールの効果は本ページにも適用されており、ページ右上に表示されています。また、次のコードを使うと目次モジュールをカスタマイズできます。
+
+[[div class="blockquote"]]
+@@[[div class="port-toc"]]@@
+@@[[collapsible show="◀" hide="◁"]]@@
+カスタム目次に追加したい内容
+@@[[/collapsible]]@@
+@@[[/div]]@@
+[[/div]]
+
+[[div class="port-toc"]]
+[[collapsible show="◀" hide="◁"]]
+[[toc]]
+[[/collapsible]]
+[[/div]]
+
+++ 選択分岐
+
+このモジュールはページ内への選択分岐の埋め込みに対応しています。
+
+各分岐の下には、画像、脚注、ボックス構造など任意の内容を配置できます。選択肢を入れ子にすることもできます。
+
+詳しい呼び出し方法は次の通りです。
+
+[[div class="blockquote"]]
+@@[[include theme:marchen-jp@@
+@@| selres-part1=-- @@
+| selectionNo=1 [[footnote]] 異なる選択分岐グループには、それぞれ別の番号を使用してください。 [[/footnote]]
+@@]]@@
+選択肢Aの説明文
+@@[[include theme:marchen-jp selres-part2=--]]@@
+選択肢Bの説明文
+@@[[include theme:marchen-jp selres-part3=--]]@@
+選択肢Aへ進んだ後に表示する内容
+@@[[include theme:marchen-jp selres-part4=--]]@@
+選択肢Bへ進んだ後に表示する内容
+@@[[include theme:marchen-jp selres-part5=--]]@@
+[[/div]]
+
+----
+
+[[module css]]
+
+.selres.n1:has(.collapsible-block-unfolded[style=""] span.branchA.n1, .collapsible-block-unfolded[style="display: block;"] span.branchA.n1) > div.a {
+  display: block;
+}
+
+.selres.n1:has(.collapsible-block-unfolded[style=""] span.branchB.n1, .collapsible-block-unfolded[style="display: block;"] span.branchB.n1) > div.b {
+  display: block;
+}
+
+[[/module]]
+
+[[div class="selres n1"]]
+
+[[div class="selection"]]
+
+[[div class="selA"]]
+
+[[div class="sel-display"]]
+あなたの苦しみは分かります。
+けれど、世俗の枷とはそう簡単に振りほどけるものではありません。
+それなら、うっかり『あの人』に恋してみるのはいかがでしょう？
+[[/div]]
+
+[[collapsible show="　" hide="　"]]
+[[span class="branchA n1"]]@@ @@[[/span]]
+[[/collapsible]]
+
+[[/div]]
+
+[[div class="selB"]]
+
+[[div class="sel-display"]]
+ただ逃げるだけでよいのなら、
+深い森へ身を隠せば、すべては自然と片付きます。
+あなたの願いは叶うでしょう。けれど、それは本当にあなたが手に入れたかった【幸0304】なのでしょうか？
+[[/div]]
+
+[[collapsible show="　" hide="　"]]
+[[span class="branchB n1"]]@@ @@[[/span]]
+[[/collapsible]]
+
+[[/div]]
+
+[[/div]]
+
+[[div class="result a"]]
+ここは結末その一です。
+[[/div]]
+
+[[div class="result b"]]
+ここは結末その二です。
+[[/div]]
+
+[[/div]]
+
+++ セレクタ警告
+
+このテーマのページめくり本コンポーネントと選択分岐コンポーネントは、いずれも:hasセレクタに依存して動作します。そのため、バージョンが古い一部のブラウザでは、これらの機能の利用時に問題が発生する可能性があります。
+
+これらのコンポーネントを使用する場合、ページ冒頭で次のコードを引用すると、プリセットのセレクタ警告を呼び出せます。
+
+> @@[[include theme:marchen-jp has-warning=--]]@@
+
+この警告が有効になると、おおむね次のように表示されます。
+
+[[div class="error-block"]]
+この文章が表示されている場合、お使いのブラウザは本記事の表示効果すべてに対応していない可能性が高いです。
+
+記事を完全な形で閲覧したい場合は、PC版ブラウザに切り替えるか、ブラウザを最新バージョンへ更新してからお読みください。
+[[/div]]
+
+区切り線の下に同じ内容が表示されていなければ、お使いのブラウザは:hasセレクタに対応しています。
+
+----
+
+[[div class="error-block has-warning"]]
+この文章が表示されている場合、お使いのブラウザは本記事の表示効果すべてに対応していない可能性が高いです。
+
+記事を完全な形で閲覧したい場合は、PC版ブラウザに切り替えるか、ブラウザを最新バージョンへ更新してからお読みください。
+[[/div]]
+
++ その他の要素
+
+++ 装飾区切り線
+
+「@@----@@」をclassが「fancyhr」のdiv要素内に入れると、次のように別種の水平線スタイルを表示できます。
+> @@[[div_ class="fancyhr"]]@@
+> @@----@@
+> @@[[/div]]@@
+
+表示結果は次の通りです。
+
+[[div_ class="fancyhr"]]
+----
+[[/div]]
+
+++ 頭文字装飾
+
+テキスト内容をclassがletterdecoのdiv要素内に置くと、最初の段落の最初の文字が拡大されます。
+
+次は使用例です。
+
+[[div class="blockquote"]]
+@@[[div class="blockquote letterdeco"]]@@
+テキスト内容
+@@[[/div]]@@
+[[/div]]
+
+----
+
+[[div class="blockquote letterdeco"]]
+英国への旅が終わってから数日のあいだ、私は夢の中で嵐の吹き荒れるあの荒野を訪れていた――あるいは、幽青の垂れ幕を混ぜ込んだ焦げ黒い天穹が、許しも請わず幾晩も私の眠りへ押し入ってきた、と言うべきだろうか――雷鳴と雨音は絶え間なく轟き、水霧は本物の泥沼のように膝を越えて満ち、天と地の距離はそれによってしだいに縮まり、鼠がその巨大な口をゆっくり閉じていくかのようだった。
+
+そしてその上方――唐突にそびえる山巓の上、倒立した黒い海となって集まる雲層の上、都市の通気層と星雲の階段のさらに上――何かが漂っていた。私に見えたのは、しまい込めないほど長く、あるいはそもそも気にかけてもいないために、うねる天幕の中で錨のように安定し、悠然と揺れている触手の先端だけだった。その肢は水色で、全体が澄みきっており、表皮越しに濃い液体の流れる脈絡が見えた。
+
+それらに意識を向けると、頭蓋骨が真上へ分離していくような触感が生じ、主に大脳皮質の上を走る冷気と、眼球を引かれる感覚として知覚された。したがって、私はこう信じるだけの理由を持っている。私が夢に入るたび、まさにこの触手が私の頭蓋を貫き、釣り糸が水面へ潜り込むようにして、私を上方のこの場所へ引き上げているのだと。
+
+それがいったいどのような意図を持つのかを知るまでは、私はおそらく、既知のいかなる神明にも祈ることができず、その力も勇気も持てないだろう。
+[[/div]]
+
+++ 装飾ラテン文字
+
+テキスト内容をclassがdecoratedのdiv要素またはspan要素内に置くと、その中のラテン文字が装飾書体になります。
+
+注意。header要素内のテキストには、このスタイルが標準で適用されます。
+
+[[div class="blockquote"]]
+@@[[span class="decorated"]]Alle Menschen sind frei und gleich an Würde und Rechten geboren. [[/span]]@@
+----
+[[span class="decorated"]]Alle Menschen sind frei und gleich an Würde und Rechten geboren. [[/span]]
+[[/div]]
+
+----
+
++++ ヘッダーおよび見出し部の装飾フォントはUnifraktur Maguntia / Noto Serif JPです。
+
+= 本文フォントはNoto Sans JPです。
+
+++ //Parallel//由来のその他のスタイル
+
++++ 表
+
+[[div class="table dborder"]]
+||~ これは ||~ 暗色縁取り表 ||
+|| 表を || {{@@[[div class="table dborder"]]@@}} に入れます ||
+||||これを作るために ||
+[[/div]]
+
+@@ @@
+
+[[div class="table wide"]]
+||~ これは ||~ 幅広表 ||
+|| 表を || {{@@[[div class="table wide"]]@@}} に入れます ||
+||||これを作るために ||
+[[/div]]
+
+@@ @@
+
+[[div class="table three-lines"]]
+||~ これは ||~ 三線表 ||
+|| 表を || {{@@[[div class="table three-lines"]]@@}} に入れます ||
+||||これを作るために ||
+[[/div]]
+
++++ div
+
+[[div class="blockquote wide"]]
+{{@@[[div class="blockquote wide"]]@@}}
+[[/div]]
+
+[[div class="blockquote bordered"]]
+{{@@[[div class="blockquote bordered"]]@@}}
+[[/div]]
+
+[[div class="blockquote thin-bordered"]]
+{{@@[[div class="blockquote thin-bordered"]]@@}}
+[[/div]]
+
+[[div class="blockquote bordered dborder"]]
+{{@@[[div class="blockquote bordered dborder"]]@@}}
+[[/div]]
+
+[[div class="blockquote thin-bordered dborder"]]
+{{@@[[div class="blockquote thin-bordered dborder"]]@@}}
+[[/div]]
+
+[[div class="blockquote notation"]]
+{{@@[[div class="blockquote notation"]]@@}}
+[[/div]]
+
+[[div class="blockquote title" data-title="サンプル見出し"]]
+{{@@[[div class="blockquote title" data-title="サンプル見出し"]]@@}}
+
+この一部のコードは[[[theme:lumina|Lumina]]]から拝借したものです。
+[[/div]]
+
+
++ テーマソースコード
+
+[[collapsible show="+ ソースコードを表示" hide="- 閉じる"]]
+
+[!-- 基底コンポーネント "Parallel" (Dr Hormress 制作, CC BY-SA 3.0) の fragment:parallel/1 を同梱。原語版は scp-wiki-cn の fragment:parallel/1 を @import 参照。 --]
+
+[[code type="css"]]
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Abasalt-jp/1');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;700;900&display=swap');
+
+:where(:root:lang(cn)) {
+    --header-title: var(--title);
+    --title: "SCP基金会";
+    --header-subtitle: var(--subtitle);
+    --subtitle: "控制，收容，保护"
+}
+
+:root {
+
+/* ------- 変数 ------- */
+
+    --header-title: var(--title);
+    --title: "SCP財団";
+    --header-subtitle: var(--subtitle);
+    --subtitle: "確保、収容、保護";
+    --header-logo: var(--logo);
+    --logo: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amarchen-jp/scp-logo-small-black.svg");
+
+    --title-size: 2rem;
+    --subtitle-size: 0.8rem;
+    --header-border-width: 0rem;
+
+    --header-title-color: var(--basalt-primary-color);
+    --header-subtitle-color: var(--basalt-secondary-color);
+
+    --basalt-primary-color: 254, 254, 254;
+    --basalt-secondary-color: 239, 239, 240;
+    --basalt-tertiary-color: 219, 219, 222;
+    --basalt-main-text-color: 20, 20, 20;
+    --basalt-overtone: 20, 20, 20;
+    --basalt-undertone: 202, 20, 20;
+ 
+    --basalt-bright-element-color: 205, 40, 20;
+    --basalt-dark-element-color: 144, 20, 20;
+    --basalt-darker-element-color: 72, 20, 20;
+    --basalt-alternate-color: 232, 132, 20;
+    --basalt-positive-color: 24, 163, 20;
+    --basalt-negative-color: 255, 48, 48;
+    --basalt-sub-text-color: 128, 127, 130;
+
+    --header-gradient: linear-gradient(var(--header-gradient-rotation), rgba(var(--header-color-one), 0.75) 0%, rgb(var(--header-color-two)) 100%);
+    --header-gradient-rotation: -30deg;
+    --header-color-one: var(--basalt-dark-element-color);
+    --header-color-two: var(--basalt-darker-element-color);
+
+    --header-stripes: repeating-linear-gradient(var(--diagonal-stripes-angle), rgba(var(--diagonal-stripes-color), var(--diagonal-stripes-opacity)), rgba(var(--diagonal-stripes-color), var(--diagonal-stripes-opacity)) var(--diagonal-stripes-width), transparent var(--diagonal-stripes-width), transparent var(--diagonal-stripes-gap));
+    --diagonal-stripes-angle: -45deg;
+    --diagonal-stripes-width: 0.25rem;
+    --diagonal-stripes-gap: 0.5rem;
+    --diagonal-stripes-color: var(--basalt-primary-color);
+    --diagonal-stripes-opacity: 0.04;
+
+    --search-icon-color: var(--top-bar-link-color);
+
+    --top-bar-link-color: var(--basalt-primary-color);
+    --top-bar-dropdown-link-color: var(--basalt-darker-element-color);
+
+    --general-border-color: var(--basalt-secondary-color);
+
+    --header-drop-shadow-opacity: 0.1;
+    --window-border-radius: 0.5rem;
+
+    --UI-title-color: var(--basalt-dark-element-color);
+    --UI-title-background-color: var(--basalt-secondary-color);
+
+    --bottom-area-text-color: var(--basalt-dark-element-color);
+    --bottom-area-background-color: transparent;
+    --footer-link-color: var(--basalt-darker-element-color);
+
+    --rate-module-credit-color: var(--basalt-overtone);
+    --title-border-color: var(--basalt-tertiary-color);
+    --hr-color: var(--basalt-secondary-color);
+
+    --image-caption-background-color: var(--basalt-secondary-color);
+
+    --side-bar-resources-background-color: inherit;
+
+    --side-bar-width: 17rem;
+    --main-content-width: 56rem;
+    --main-content-top-margin: 1rem;
+
+    --base-border-width: .2rem;
+    --thin-border-width: .1rem;
+    --blockquote-border-width: var(--thin-border-width);
+    --license-area-divider-thickness: var(--base-border-width);
+    --tab-border-width: var(--thin-border-width);
+
+    --owindow-title-height: 2.25rem;
+
+/* AIM対応 */
+
+    --AIM-border-color: var(--basalt-tertiary-color);
+}
+
+/* ------- ヘッダー ------- */
+
+#header {
+    background-image: var(--header-stripes), var(--header-gradient);
+    box-shadow: 0px 0px 8.5px -1px rgba(0, 0, 0, var(--header-drop-shadow-opacity)), 0px 0px 68px -21px rgba(0, 0, 0, calc(var(--header-drop-shadow-opacity) * 4));
+    font-family: var(--header-font);
+}
+
+#header h1 a {
+    padding-left: calc(var(--base-header-height)*0.25);
+    padding-right: calc(var(--base-header-height)*0.5);
+}
+
+#header h1 a span::before {
+    font-weight: 900;
+}
+
+#header h1 a span::after {
+    margin-bottom: 6px;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+#header h1 a span {
+    align-items: unset;
+    text-align: unset;
+}
+
+#header h1 a::before {
+    width: calc(var(--base-header-height) * .925);
+    background-position: center left;
+    margin-right: calc(var(--base-header-height) * -0.35);
+    mask-image: linear-gradient(to right, #000 0%, transparent 85%);
+    mask-size: 100% 100%;
+    mask-position: center center;
+    mask-repeat: no-repeat;
+    -webkit-mask-image: linear-gradient(to right, #000 0%, transparent 85%);
+    -webkit-mask-size: 100% 100%;
+    -webkit-mask-position: center center;
+    -webkit-mask-repeat: no-repeat;
+}
+
+#search-top-box::before {
+    background-color: rgb(var(--basalt-UI-dark-palette));
+}
+
+#search-top-box-input {
+    outline: solid 0 rgb(var(--basalt-UI-dark-palette));
+}
+
+#login-status > a[href*="account/messages"] {
+    top: min(0.875rem, 42.5%);
+}
+
+/* ------- トップバー ------- */
+
+#top-bar div[class*="top-bar"] > ul > li > ul::before {
+    width: var(--base-border-width);
+}
+
+#top-bar div[class*="top-bar"] ul li ul li.sfhover ul li a:not(:hover, :focus) {
+  color: rgb(var(--top-bar-dropdown-link-color));
+}
+
+/* ------- サイドバー ------- */
+
+#side-bar .menu-item,
+#side-bar .menu-item.small {
+    flex-wrap: wrap;
+}
+
+/* ------- UI ------- */
+
+.owindow .title,
+#side-bar .side-block .heading,
+#side-bar .collapsible-block-unfolded a.collapsible-block-link,
+#side-bar .collapsible-block-folded a.collapsible-block-link {
+    color: rgb(var(--UI-title-color));
+    background-color: rgb(var(--UI-title-background-color));
+    border-bottom: solid var(--base-border-width) rgb(var(--UI-title-color));
+}
+
+.owindow .title {
+    height: var(--owindow-title-height);
+}
+
+.owindow .button-bar > a[onclick*="cleanAll"] {
+    width: var(--owindow-title-height);
+    height: var(--owindow-title-height);
+}
+
+.owindow .button-bar > a[onclick*="cleanAll"]::after {
+    background-color: rgb(var(--UI-title-color));
+    transition: background-color 125ms ease-out;
+}
+
+.owindow .button-bar > a[onclick*="cleanAll"]:hover::after {
+    background-color: rgb(var(--UI-title-background-color));
+}
+
+.owindow > .content.modal-body > img + h1 + table {
+    border-width: var(--thin-border-width) 0;
+}
+
+.owindow > .content.modal-body > img + h1 + table > tbody > tr:not(:last-child) {
+    border-bottom-width: var(--thin-border-width);
+}
+
+.owindow .button-bar > a:not([onclick*="cleanAll"]),
+.owindow div[style*="margin-top"] a {
+    border-width: var(--thin-border-width);
+}
+
+div[id*="page-options-bottom"] > a {
+    border-bottom: solid var(--base-border-width) rgb(var(--general-border-color));
+}
+
+div#main-content .pager .pager-no::after {
+    height: var(--base-border-width);
+    inset-block-start: calc(2em - 0.2rem);
+}
+
+#footer {
+    border-top: solid var(--base-border-width) rgb(var(--general-border-color));
+}
+
+#license-area::before,
+#license-area::after {
+    display: none;
+}
+
+#history-subarea a.action-area-close,
+#view-diff-div a.button,
+div:where(#action-area, .buttons) :is(a, input).btn {
+    border-width: var(--thin-border-width);
+}
+
+#action-area > h1::after,
+#action-area > h1::before,
+#history-subarea > h2::after,
+#history-subarea > h2::before,
+#revision-list .page-history tr[id*="revision-row"]::before {
+    height: var(--thin-border-width);
+}
+
+#history-form-1 > table.form > tbody > tr:first-child::before {
+    height: var(--base-border-width);
+}
+
+/* ------- ページ要素 ------- */
+
+div#page-title,
+div.meta-title {
+    border-bottom-width: var(--base-border-width);
+}
+
+hr {
+    height: var(--base-border-width);
+}
+
+/* YUI Tab */
+
+.yui-navset.yui-navset-top > ul.yui-nav {
+    font-family: var(--title-font);
+    gap: 0;
+    background-color: rgb(var(--tab-background-color));
+}
+
+.yui-navset.yui-navset-top > ul.yui-nav li {
+    background-color: transparent;
+    border-bottom: solid var(--base-border-width) rgb(var(--general-border-color));
+}
+
+.yui-navset.yui-navset-top > ul.yui-nav li::before {
+    background-color: transparent;
+    border-bottom: solid var(--base-border-width) rgb(var(--tab-hover-background-color));
+}
+
+.yui-navset.yui-navset-top > ul.yui-nav li.selected::before {
+    width: 100%;
+    border-bottom: solid var(--base-border-width) rgb(var(--tab-selected-background-color));
+    background-color: transparent;
+}
+
+.yui-navset.yui-navset-top > ul.yui-nav li a:is(:hover, :focus),
+.yui-navset.yui-navset-top > ul.yui-nav li.selected a {
+    color: rgb(var(--basalt-main-text-color));
+}
+
+.yui-navset.yui-navset-top > ul.yui-nav li.selected::after {
+    display: none;
+}
+
+.yui-navset.yui-navset-top .yui-content {
+    border-top: none;
+}
+
+/* 脚注 */
+
+.bibitems::before,
+.footnotes-footer::before {
+    width: 100%;
+    height: var(--base-border-width);
+}
+
+.bibitems .title,
+.footnotes-footer .title {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    height: 1.5rem;
+    padding-block-start: 0;
+    padding-block-end: 0;
+    inset-block-start: calc(-1.5rem + var(--base-border-width));
+    margin-block-end: -1rem;
+}
+
+.bibitems, .footnotes-footer {
+    margin-block-start: 2rem;
+}
+
+.hovertip .content .footnote .f-heading,
+.hovertip .content .reference .r-heading {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    height: 1.5rem;
+    padding-block-start: 0;
+    padding-block-end: 0;
+    inset-block-start: calc(-1.5rem + var(--base-border-width));
+    inset-inline-start: 0;
+    margin-block-end: -1rem;
+}
+
+.hovertip {
+    border: none !important;
+}
+
+.hovertip .content .footnote::before, .hovertip .content .reference::before {
+    width: 100%;
+    height: var(--base-border-width);
+    inset-inline-start: 0;
+    inset-block-start: 0;
+}
+
+/* 評価モジュール */
+
+div.page-rate-widget-box,
+div.rate-box-with-credit-button {
+    padding: var(--base-border-width);
+}
+
+div.page-rate-widget-box span.btn,
+div.rate-box-with-credit-button .creditButton {
+    padding: 0;
+    height: calc(var(--rate-module-button-size) + var(--base-border-width));
+    margin-block-end: calc(var(--base-border-width) * -1);
+}
+
+div.rate-box-with-credit-button .creditButton > p > a::before {
+    display: none;
+}
+
+div.rate-box-with-credit-button .creditButton > p > a::after {
+    height: calc(100% - var(--base-border-width)) !important;
+    background-color: rgb(var(--basalt-main-text-color));
+    padding: 0;
+}
+
+div.page-rate-widget-box span.btn > a,
+div.rate-box-with-credit-button .creditButton > p > a {
+    border-block-end-width: var(--base-border-width);
+}
+
+div.rate-box-with-credit-button .creditButton > p > a {
+    border-block-end-style: solid;
+    border-block-end-color: transparent;
+}
+
+div.rate-box-with-credit-button .creditButton > p > a:hover {
+    border-block-end-color: rgb(var(--rate-module-credit-color));
+}
+
+.fader iframe, .fader a {
+    border: none;
+}
+
+/* 画像ブロック */
+
+.image-block, .scp-image-block {
+    border-bottom-width: var(--base-border-width);
+}
+
+/* 表 */
+
+:is(:where(#page-content) table:not(.form), table.wiki-content-table) :is(th, td) {
+    border-width: var(--thin-border-width);
+}
+
+:is(div.table.wide, div.table.three-lines) table.wiki-content-table {
+    width: calc(100% - var(--thin-border-width) * 2);
+}
+
+div.table.three-lines table.wiki-content-table {
+    border: solid rgb(var(--basalt-UI-dark-palette));
+    border-width: var(--base-border-width) 0;
+}
+
+div.table.three-lines table.wiki-content-table :is(th, td) {
+    border: none;
+    color: inherit;
+    background-color: transparent;
+}
+
+div.table.three-lines table.wiki-content-table tr:nth-child(1) th {
+    border-bottom: solid var(--thin-border-width) rgb(var(--basalt-UI-dark-palette));
+}
+
+div.table.dborder table.wiki-content-table td {
+    border-color: rgb(var(--basalt-UI-dark-palette));
+}
+
+/* 着色 */
+
+.table1 {
+    --basalt-UI-dark-palette: var(--one-color);
+    --basalt-undertone: var(--one-color);
+}
+
+.table2 {
+    --basalt-UI-dark-palette: var(--two-color);
+    --basalt-undertone: var(--two-color);
+}
+
+.table3 {
+    --basalt-UI-dark-palette: var(--three-color);
+    --basalt-undertone: var(--three-color);
+}
+
+.table4 {
+    --basalt-UI-dark-palette: var(--four-color);
+    --basalt-undertone: var(--four-color);
+}
+
+.table5 {
+    --basalt-UI-dark-palette: var(--five-color);
+    --basalt-undertone: var(--five-color);
+}
+
+.table6 {
+    --basalt-UI-dark-palette: var(--six-color);
+    --basalt-undertone: var(--six-color);
+}
+
+/* タグ */
+
+#main-content > .page-tags > span a {
+    border-radius: .5rem;
+}
+
+/* 引用ブロックと関連コンテナ */
+
+:is(.blockquote, blockquote, .code) :is(.blockquote, blockquote, .code) {
+    box-shadow: 0 0 0 var(--blockquote-border-width) rgb(var(--basalt-tertiary-color));
+}
+
+:is(.blockquote, blockquote, .code) > hr {
+    background-color: rgb(var(--basalt-tertiary-color));
+}
+
+div.blockquote.wide {
+    max-width: 100%;
+}
+
+div.blockquote.notation {
+    max-width: 100%;
+    border: solid var(--base-border-width) rgb(var(--basalt-tertiary-color));
+    border-top: none;
+    border-bottom: none;
+}
+
+div.blockquote.title {
+    max-width: 100%;
+    position: relative;
+    border: solid var(--base-border-width) rgb(var(--basalt-UI-dark-palette));
+    border-left: none;
+    border-right: none;
+}
+
+div.blockquote.title::before {
+    content: attr(data-title);
+    position: absolute;
+    color: rgb(var(--basalt-light-text-color));
+    background-color: rgb(var(--basalt-UI-dark-palette));
+    font-family: var(--UI-font);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .01em;
+    padding: 0 0.5rem;
+    inset-inline-start: 0;
+    inset-block-end: 100%;
+    transform: translateY(calc(50% - var(--base-border-width) * 0.5));
+}
+
+div.blockquote.bordered {
+    border: solid var(--base-border-width) rgb(var(--basalt-tertiary-color));
+}
+
+div.blockquote.thin-bordered {
+    border: solid var(--thin-border-width) rgb(var(--basalt-tertiary-color));
+}
+
+div.blockquote.dborder {
+    border-color: rgb(var(--basalt-UI-dark-palette));
+}
+
+div.blockquote.warning-panel {
+    position: relative;
+    width: 30rem;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+div.blockquote.warning-panel * {
+    max-width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+div.blockquote.warning-panel::before {
+    display: block;
+    content: attr(data-title);
+    text-align: center;
+    margin-top: 0.8rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-family: var(--title-font);
+}
+
+div.blockquote.warning-panel::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: var(--warning-logo);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 80% auto;
+    opacity: var(--logo-opacity, 0.1);
+    z-index: 1;
+}
+
+/* ACS対応 */
+
+div.Parallel-ACS {
+
+    --one-color: 134, 227, 206;
+    --two-color: 209, 220, 226;
+    --three-color: 255, 201, 136;
+    --four-color: 255, 178, 132;
+    --five-color: 255, 137, 123;
+    --six-color: 134, 12, 12;
+    --title-font: var(--header-font);
+    --acs-border-color: var(--basalt-darker-element-color);
+    --swatch-primary: var(--basalt-dark-element-color);
+    --swatch-menubg-dark-color: var(--basalt-secondary-color);
+    --swatch-menutxt-dark-color: var(--acs-border-color);
+    --swatch-menubg-black-color: var(--acs-border-color);
+    --swatch-background: var(--basalt-background-color);
+}
+
+/* AIM対応 */
+
+div[class$="aim"] hr {
+    height: 1px;
+}
+
+div.Parallel-AIM div[class$="aim"] div.w-container {
+    box-shadow: none;
+    border: none;
+    padding: 0;
+}
+
+div.Parallel-AIM div[class$="aim"] hr {
+    height: var(--thin-border-width);
+    background-color: rgb(var(--AIM-border-color));
+}
+
+div.Parallel-AIM div[class$="aim"] div.cell-container-image + hr {
+    margin-bottom: 0;
+}
+
+div.Parallel-AIM div[class$="aim"] div.cell-container-image + hr + div.cell-container {
+    margin-top: 0;
+}
+
+div.Parallel-AIM div[class$="aim"] .w-cell {
+    border-width: 0;
+    border-left-width: var(--thin-border-width);
+    border-color: rgb(var(--AIM-border-color));
+}
+
+div.Parallel-AIM div[class$="aim"] .w-cell:nth-child(1) {
+    border-left-width: 0;
+}
+
+/* Earthwormナビゲーション対応 */
+
+div#page-content div.earthworm div.first:not(.true),
+div#page-content div.earthworm div.last:not(.true) {
+    border: none;
+    background-color: rgb(var(--basalt-secondary-color));
+}
+
+div#page-content div.earthworm div.first:not(.true) img,
+div#page-content div.earthworm div.last:not(.true) img {
+    display: none;
+}
+
+div#page-content div.earthworm div.first:not(.true) {
+    margin-left: 1.5rem;
+}
+
+div#page-content div.earthworm div.first:not(.true)::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 1.5rem;
+    left: -1.5rem;
+    top: 0;
+    margin: 0;
+    background-color: rgb(var(--basalt-secondary-color));
+    clip-path: polygon(0% 50%, 100% 0%, 100% 100%);
+    -webkit-clip-path: polygon(0% 50%, 100% 0%, 100% 100%);
+}
+
+div#page-content div.earthworm div.last:not(.true) {
+    margin-right: 1.5rem;
+}
+
+div#page-content div.earthworm div.last:not(.true)::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 1.5rem;
+    right: -1.5rem;
+    top: 0;
+    margin: 0;
+    background-color: rgb(var(--basalt-secondary-color));
+    clip-path: polygon(100% 50%, 0% 0%, 0% 100%);
+    -webkit-clip-path: polygon(100% 50%, 0% 0%, 0% 100%);
+}
+
+div#page-content div.earthworm div.hub {
+    border: solid var(--base-border-width) rgb(var(--basalt-tertiary-color));
+    background-color: rgb(var(--basalt-secondary-color));
+}
+
+/* 灰暗の鏡対応 */
+
+div[style*="z-index:999;"] div#mainBoard {
+    color: rgb(var(--basalt-main-text-color));
+    background-color: rgb(var(--basalt-secondary-color));
+    background-image: none;
+    border: none;
+}
+
+div[style*="z-index:999;"] div[style$="open;"] {
+    animation: 0.5s ease 0s 1 normal forwards running openR !important;
+}
+
+div[style*="z-index:999;"] div[style$="close;"] {
+    animation: 0.5s ease 0s 1 normal forwards running closeR !important;
+}
+
+div[style*="z-index:999;"] div.rhombic {
+    border: solid var(--base-border-width) rgb(var(--basalt-secondary-color));
+    border-radius: 0;
+    background-color: rgb(var(--basalt-primary-color));
+}
+
+div[style*="z-index:999;"] div#resultBoard {
+    color: rgb(var(--basalt-main-text-color));
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 1rem;
+}
+
+div[style*="z-index:999;"] div.switch {
+    cursor: pointer;
+    text-align: center;
+    padding: .5ch;
+    font-family: var(--UI-font);
+    color: rgb(var(--button-text-color));
+    background-color: rgb(var(--button-background-color));
+    border: solid var(--thin-border-width) rgb(var(--button-border-color));
+    outline: rgb(var(--button-outline-color)) solid 0;
+    transition: all var(--button-hover-transition);
+}
+
+div[style*="z-index:999;"] div#information {
+    padding: 0.5rem;
+    background-color: transparent;
+    border: none;
+}
+
+div[style*="z-index:999;"] div.switch:hover {
+    color: rgb(var(--button-hover-text-color));
+    background-color: rgb(var(--button-hover-background-color));
+    border-color: rgb(var(--button-hover-border-color));
+    outline-width: .25rem;
+    text-decoration: none;
+}
+
+div[style*="z-index:999;"] div#theCloseButton {
+    border: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    color: rgb(var(--basalt-main-text-color));
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, rgb(var(--basalt-negative-color)) 0% 100%);
+    background-size: 100% 100%;
+    background-position: 0 -1.5rem;
+    background-repeat: no-repeat;
+    transition: all var(--button-hover-transition);
+}
+
+div[style*="z-index:999;"] div#theCloseButton:hover {
+    color: rgb(var(--basalt-light-text-color));
+    background-position: 0 0;
+}
+
+div[style*="z-index:999;"] div.light {
+    width: 50%;
+    height: 4px;
+    border: none;
+    border-radius: 0px;
+    transform: translate(0px, 0px);
+}
+
+div[style*="z-index:999;"] div#textWindow {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: rgb(var(--basalt-primary-color));
+    border: none;
+    border-radius: 0px;
+}
+
+@keyframes closeR {
+0% {
+    transform: rotateZ(0deg);
+    width: 400px;
+    height: 350px;
+    opacity: 1;
+}
+
+50% {
+    transform: rotateZ(0deg);
+    width: 400px;
+    height: 65px;
+}
+
+90% {
+    transform: rotateZ(0deg);
+    width: 65px;
+}
+
+100% {
+    transform: rotateZ(90deg);
+    opacity: 0.5;
+}
+}
+
+@keyframes openR {
+0% {
+    transform: rotateZ(90deg);
+    opacity: 0.5;
+}
+
+10% {
+    transform: rotateZ(0deg);
+    width: 80px;
+}
+
+50% {
+    transform: rotateZ(0deg);
+    width: 400px;
+    height: 65px;
+}
+
+100% {
+    transform: rotateZ(0deg);
+    width: 400px;
+    height: 350px;
+    opacity: 1;
+}
+}
+[[/code]]
+
+[[code type="css"]]
+
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Amarchen-jp/1');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@100;300;400;500;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+
+:root{
+  --moonlight-white: 238, 247, 242;
+  --forest-green: 20, 30, 27;
+  --verdant-green: 34, 62, 54;
+  --nightsky-blue: 19, 72, 87;
+  --spring-green: 73, 117, 104;
+  --jade-green: 164, 202, 182;
+
+  --main-padding: clamp(1rem, calc((100dvw - var(--main-content-width)) / 2), 12rem);
+  --top-height: 60vh;
+  --bot-height: 6rem;
+  --head-grad: 6rem;
+
+  --basalt-primary-color: var(--forest-green);
+  --basalt-secondary-color: var(--verdant-green);
+  --basalt-tertiary-color: var(--nightsky-blue);
+  --basalt-main-text-color: var(--moonlight-white);
+  --basalt-overtone: var(--moonlight-white);
+  --basalt-undertone: var(--jade-green);
+
+  --basalt-bright-element-color: var(--forest-green);
+  --basalt-dark-element-color: var(--verdant-green);
+  --basalt-darker-element-color: var(--spring-green);
+
+  --header-title-color: var(--main-text-color);
+  --header-subtitle-color: var(--main-text-color);
+
+  --top-bar-link-color: var(--basalt-overtone);
+
+  --UI-title-color: var(--jade-green);
+  --UI-title-background-color: var(--basalt-secondary-color);
+
+  --side-bar-button-color: var(--basalt-main-text-color);
+  --search-icon-color: var(--basalt-main-text-color);
+  --search-icon-color-hover: var(--basalt-undertone);
+  --side-bar-link-color-hover: var(--basalt-undertone);
+  --hr-color: var(--basalt-main-text-color);
+  --tab-hover-background-color: var(--nightsky-blue);
+  --side-bar-background-color: var(--verdant-green);
+  --rate-module-background-color: var(--forest-green);
+
+  --top-bar-dropdown-link-color: var(--basalt-main-text-color);
+  --top-bar-dropdown-link-color-hover: var(--jade-green);
+
+
+  --logo: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amarchen-jp/bard-white.png);
+
+  --arrow-img: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amarchen-jp/bard-corner1.png);
+
+  --bg-img: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amarchen-jp/deepforest.svg);
+  /* https://publicdomainvectors.org/en/free-clipart/Digital-night-forest-illustration/78901.html PD */
+
+  --header-img: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amarchen-jp/Trees-Landscape.svg);
+  /* https://publicdomainvectors.org/en/free-clipart/Trees-landscape/49341.html PD */
+
+  --footer-img: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amarchen-jp/Footer-Trees.svg);
+  /* https://publicdomainvectors.org/en/free-clipart/Maui-sunset-silhouette/79734.html PD */
+
+  --sep-line: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Amarchen-jp/Ivy-Leaves.svg);
+  /* https://freesvg.org/1538965145 PD */
+
+  --title: "吟遊詩客";
+  --subtitle: "Märchen erben Fantasien";
+}
+
+@media (max-width: 1024px) {
+  :root{
+    --top-height: 30vh;
+    --bot-height: 3rem;
+  }
+}
+
+/* header */
+
+#header {
+  background: none;
+  box-shadow: none;
+}
+
+#header h1 a { padding-right: calc(var(--base-header-height)*0.25); }
+
+#header h1 a::before {
+  margin-right: 0;
+  mask-image: linear-gradient(to top, #000F 0%, 80%, #0000 100%);
+  -webkit-mask-image: linear-gradient(to top, #000F 0%, 80%, #0000 100%);
+}
+
+#header h1 a span { display: none; }
+
+#header h1 {
+  background-color: rgb(var(--basalt-darker-element-color));
+}
+
+#header div.mobile-top-bar > .open-menu {
+  background-color: rgb(var(--basalt-darker-element-color));
+  visibility: unset;
+}
+
+#header #top-bar ul {
+  background: linear-gradient(to right, rgb(var(--basalt-darker-element-color)) 0%, rgb(var(--basalt-darker-element-color)) 20%, rgb(var(--basalt-dark-element-color), 0.8) 60%, rgba(var(--basalt-bright-element-color), 0.2) 100%);
+  border-bottom-right-radius: calc(var(--base-header-height)*2.5) var(--base-header-height);
+  margin-right: calc(var(--base-header-height)*2);
+}
+
+#header #top-bar ul > li > a {
+  font-size: calc(var(--true-font-size) *0.9);
+}
+
+#search-top-box::before {
+  background: none;
+}
+
+#login-status::after {
+  background: none;
+}
+
+@media (max-width: 1024px) {
+  #header h1 { background: none; }
+  #header div.mobile-top-bar > .open-menu {
+    background: none;
+    visibility: visible;
+  }
+  #header #top-bar ul {
+    background: none;
+    border-bottom-right-radius: 0;
+    margin-right: 0;
+  }
+  #header h1 a span { display: flex; }
+  #header h1 a span::after, #header h1 a span::before {
+    font-family: 'UnifrakturMaguntia', 'Noto Serif JP', serif;
+  }
+  #header h1 a span::after {
+    letter-spacing: 0;
+  }
+  #header {
+    background: linear-gradient(to right, rgb(var(--basalt-darker-element-color)) 0%, rgb(var(--basalt-darker-element-color)) 20%, rgb(var(--basalt-dark-element-color), 0.8) 60%, rgba(var(--basalt-bright-element-color), 0.2) 100%);
+  }
+}
+
+/* page body */
+
+body {
+  background-color: rgb(var(--forest-green));
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(-50%, -50%);
+  background: var(--bg-img) no-repeat center;
+  background-size: cover;
+  opacity: .575;
+  z-index: -2;
+  pointer-events: none;
+}  /* taken from lumina */
+
+#main-content::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  aspect-ratio: 5 / 2;
+  transform: translate(0, -96%);
+  background: var(--header-img) no-repeat bottom;
+  background-size: cover;
+}
+
+#main-content {
+  position: relative;
+  margin-top: var(--top-height);
+  margin-bottom: 0;
+  padding: 2rem var(--main-padding);
+  padding-bottom: var(--bot-height);
+  background: linear-gradient(to bottom, #000 0%, rgba(var(--forest-green), 0.7) var(--head-grad) 100%);
+}
+
+#page-title, .meta-title {
+  position: absolute;
+  top: calc(0% - (var(--top-height) - var(--base-header-height)) *.6);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 400%;
+  border-bottom: none;
+  font-family: 'UnifrakturMaguntia', 'Noto Serif JP', serif;
+}
+
+@media (max-width: 1024px) {
+  #main-content {
+    --main-content-side-margin: 0;
+    margin-inline: 0;
+    box-sizing: border-box;
+    width: 100vw;
+  }
+  #page-title, .meta-title { font-size: 280%; }
+}
+
+@media (max-width: 640px) {
+  #page-title, .meta-title { font-size: 160%; }
+}
+
+/* footer bar */
+
+#footer {
+  position: relative;
+  border-top: none;
+  background-color: black;
+  color: var(--basalt-main-text-color);
+  overflow: unset;
+}
+
+div#license-area {
+  background-color: black;
+  color: var(--basalt-main-text-color);
+}
+
+#footer a, div#license-area a {
+  color: var(--basalt-main-text-color);
+}
+
+#footer::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  aspect-ratio: 5 / 2;
+  transform: translate(0, -100%);
+  background: var(--footer-img) no-repeat bottom;
+  background-size: cover;
+  pointer-events: none;
+}
+
+#footer .options {
+  border-right: none;
+}
+
+#edit-page-textarea, #page-tags-input {
+  position: relative;
+  z-index: 1;
+}
+
+#main-content > .page-tags {
+  margin-top: 40vh;
+}
+
+/* side bar */
+
+:is(#side-bar, #interwiki) .menu-item a::before {
+  transition: none;
+}
+
+#side-bar .collapsible-block-content::after {
+  background-color: rgb(var(--jade-green));;
+}
+
+#side-bar .collapsible-block-content {
+  background-color: rgb(var(--verdant-green));
+}
+
+/* IN PAGE ITEMS */
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  margin-top: 0.7em;
+  margin-bottom: 0.7em;
+  font-family: 'UnifrakturMaguntia', 'Noto Serif JP', serif;
+}
+
+li:not(:first-child) {margin-top: 0.75em;}
+
+ul, ol {padding-left: 10px;}
+
+:is(.blockquote, blockquote, .code) :is(.blockquote, blockquote, .code) {
+  box-shadow: none;
+  border: none;
+  background-color: rgba(var(--forest-green), 0.6);
+}
+
+div#main-content :is(.blockquote, blockquote, .code) > hr {
+  background-color: rgb(var(--basalt-main-text-color));
+}
+
+.decorated {
+  font-family: 'UnifrakturMaguntia', 'Noto Serif JP', serif;
+}
+
+div#main-content div.blockquote.notation {
+  border: 6px double rgb(var(--jade-green));
+}
+
+#main-content > .page-tags > span a:hover {
+  position: relative;
+  z-index: 1;
+}
+
+#who-rated-page-area > div span:nth-of-type(2n+1):is(:hover, :focus-within), #who-rated-page-area > div span:nth-of-type(2n+1):is(:hover, :focus-within) + span[style*="color"] {
+  position: relative;
+  z-index: 1;
+}
+
+/* anchor */
+
+a:link, a:visited {
+    color: inherit;
+    text-decoration: currentcolor solid underline;
+}
+
+a:hover, a:active {
+    background-color: rgb(var(--moonlight-white));
+    color: rgb(var(--forest-green));
+    text-decoration: rgb(var(--forest-green)) solid underline;
+}
+
+#page-options-bottom > a:hover, #page-options-bottom-2 > a:hover {
+    color:rgb(var(--forest-green));
+}
+
+#main-content > .page-tags > span a:is(:hover, :focus) {
+   background-color: rgb(var(--basalt-main-text-color));
+}
+
+/* credit and standalone */
+
+div.rate-box-with-credit-button,
+div.page-rate-widget-box {
+  box-shadow: 0 calc(0rem - var(--base-border-width)) 0 rgb(var(--verdant-green));
+}
+
+div.rate-box-with-credit-button div.page-rate-widget-box {
+  box-shadow: none;
+}
+
+div.page-rate-widget-box span.btn > a , div.rate-box-with-credit-button span.btn > a {
+  border-bottom-color: rgb(var(--forest-green));
+}
+
+.creditButtonStandalone a.fa.fa-info {
+  box-shadow: 0 calc(0rem - var(--base-border-width)) 0 rgb(var(--verdant-green));
+}
+
+.creditButtonStandalone a.fa.fa-info::before {
+  background-color: rgb(var(--forest-green));
+}
+
+.creditButtonStandalone a.fa.fa-info:hover::before {
+  background-color: rgb(var(--forest-green));
+  border-bottom: var(--base-border-width) solid rgb(var(--moonlight-white));
+}
+
+.creditButtonStandalone a.fa.fa-info::after {
+  background-color: rgb(var(--moonlight-white));
+}
+
+.b, div.b {
+  border: none;
+}
+
+/* ruby fix from scp-cn-2512 */
+
+p:has(span.ruby) {
+    line-height: 1.7;
+}
+
+span.ruby {
+    height: unset;
+    display: inline-flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    vertical-align: top;
+}
+
+span.rt {
+    display: block;
+    margin-top: -0.625em;
+    margin-bottom: 0;
+    line-height: 1.25;
+}
+
+/* code fix */
+.code {
+    --_reserved: 114, 162, 247;
+    --_number: 237, 123, 163;
+    --_string: 93, 178, 107;
+    --_quotes: 93, 178, 107;
+    --_special: 0, 183, 159;
+    --_var: 193, 154, 73;
+    margin: 1.5rem 0;
+}
+
+/* has check */
+
+.has-warning {display: none;}
+@supports not selector(:has(.collapsible-block-unfolded[style="display: block;"] span.branchA)) {
+  .has-warning {display: block;}
+}
+
+/* paging book */
+
+div.book {
+  display: flex;
+  border: 6px double rgb(var(--jade-green));
+  padding: 0 0.5em;
+  --paging-width: 3em;
+}
+
+.book-content {
+  flex: 1;
+  padding: 0 0.5em;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.book-content::-webkit-scrollbar {
+  display: none;
+}
+
+.book div.book-content:first-of-type {
+  padding-left: calc(var(--paging-width) + 0.5em);
+}
+
+.book div.book-content:last-of-type {
+  padding-right: calc(var(--paging-width) + 0.5em);
+}
+
+.paging {
+  width: var(--paging-width);
+  align-self: stretch;
+}
+
+.paging :is(.collapsible-block, .collapsible-block-folded, .collapsible-block-unfolded, .collapsible-block-unfolded-link) {
+  height: 100%;
+}
+
+.paging a.collapsible-block-link {
+  display: block;
+  width: var(--paging-width);
+  height: 100%;
+  color: transparent;
+  text-decoration: none;
+  background: var(--arrow-img) no-repeat center;
+  background-size: calc(var(--paging-width) * 1.5) auto;
+  background-position: left 30% center;
+}
+
+.paging a.collapsible-block-link:hover,  .paging a.collapsible-block-link:active {
+  color: transparent;
+  text-decoration: none;
+}
+
+.paging .collapsible-block-folded a.collapsible-block-link {
+  transform: scaleX(-1);
+}
+
+.paging p {
+  margin: 0;
+}
+
+.paging .collapsible-block span {
+  display: block;
+  font-size: 0;
+  height: 0;
+}
+
+@supports not selector(:has(.collapsible-block-unfolded[style="display: block;"] span.branchA)) {
+  div.book {
+    display: block;
+    height: fit-content !important;
+  }
+  div.book-content { display: block !important; }
+  div.paging { display: none !important; }
+  .book div.book-content:first-of-type {
+    padding-left: 0.5em;
+  }
+  .book div.book-content:last-of-type {
+    padding-right: 0.5em;
+  }
+  /* paging fix for nan-has users */
+}
+
+@media (max-width: 1024px) {
+  div.book {
+    --paging-width: 2em;
+  }
+}
+
+/* selres */
+
+.selection {
+  display: flex;
+  column-gap: 2rem;
+  margin-inline: 2rem;
+}
+
+.selection :is(.selA, .selB) {
+  flex: 1;
+  margin-inline: auto;
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 6px double rgb(var(--jade-green));
+  transition: border-color 1s;
+}
+
+.selection :is(.selA, .selB):hover {
+  border-color: rgb(var(--verdant-green));
+}
+
+.selection :is(.selA, .selB) :is(.sel-display, .collapsible-block) {
+  grid-area: 1 / 1 / span 1 / span 1;
+}
+
+.selection :is(div.collapsible-block, div.collapsible-block-folded, div.collapsible-block-unfolded, div.collapsible-block-unfolded-link, a.collapsible-block-link) {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.selection .collapsible-block a.collapsible-block-link {
+  text-decoration: none;
+}
+
+.selection .collapsible-block a.collapsible-block-link:hover {
+  background-color: transparent;
+}
+
+.selection .collapsible-block p {
+  margin: 0;
+}
+
+.selection .collapsible-block span {
+  display: block;
+  font-size: 0;
+  height: 0;
+}
+
+.result {
+  display: none;
+}
+
+.selection:has(.collapsible-block-unfolded[style=""] span.branchA, .collapsible-block-unfolded[style="display: block;"] span.branchA) > div:last-of-type {
+  display: none;
+}
+
+.selection:has(.collapsible-block-unfolded[style=""] span.branchB, .collapsible-block-unfolded[style="display: block;"] span.branchB) > div:first-of-type {
+  display: none;
+}
+
+/* big letter */
+
+.letterdeco p:first-of-type::first-letter{
+    margin-top: 0.3em;
+    font-size: 2em;
+    font-weight: bold;
+    float: left;
+    margin-right: 0.1em;
+    font-family: "Noto Serif JP", serif;
+}
+
+/* fancy hr */
+
+.fancyhr hr {
+  height: 2rem;
+  background: var(--sep-line) repeat center bottom;
+  background-size: contain;
+  mask-image: linear-gradient(to right, #0002 0%, 15%, #000 50%, 85%, #0002 100%);
+  -webkit-mask-image: linear-gradient(to right, #0002 0%, 15%, #000 50%, 85%, #0002 100%);
+  filter: brightness(66%) saturate(125%) sepia(50%);
+}
+
+/* portable toc */
+
+.port-toc {
+  position: fixed;
+  z-index: 10;
+  top: calc(var(--base-header-height)*2);
+  right: 0;
+}
+
+.port-toc .collapsible-block-unfolded {
+  display: grid;
+  grid-template-columns: 1fr 1.5rem;
+}
+
+.port-toc .collapsible-block-unfolded-link {
+  grid-area: 1 / 2 / span 1 / span 1;
+}
+
+.port-toc .collapsible-block-content {
+  grid-area: 1 / 1 / span 1 / span 1;
+}
+
+.port-toc a.collapsible-block-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 5rem;
+  background-color: rgb(var(--spring-green));
+  text-decoration: none;
+}
+
+.port-toc a.collapsible-block-link:hover, .port-toc a.collapsible-block-link:active {
+  color: rgb(var(--moonlight-white));
+}
+
+.port-toc #toc {
+  margin: 0;
+}
+
+[[/code]]
+
+明色（？）配色。
+
+[[code type="css"]]
+
+:root {
+  --moonlight-white: 238, 247, 242;
+  --forest-green: 77, 16, 24;
+  --verdant-green: 90, 18, 22;
+  --nightsky-blue: 75, 30, 47;
+  --spring-green: 166, 27, 41;
+  --jade-green: 192, 142, 175;
+
+  --bg-img: url(https://scpsandboxcn.wdfiles.com/local--files/collab%3Acastle-tracer/town-background.svg);
+  /* https://publicdomainvectors.org/en/free-clipart/Drawing-of-medieval-town-panorama-in-color/34957.html PD */
+
+  --outside-black: 45, 12, 19;
+
+  --basalt-UI-dark-palette: var(--outside-black);
+  --basalt-light-text-color: var(--moonlight-white);
+}
+
+#main-content::before,
+#footer::before {
+  display: none;
+}
+
+#main-content {
+  background: rgba(228, 214, 205, 0.7);
+}
+
+/* text color */
+
+#page-content {
+  color: rgb(var(--outside-black));
+}
+
+#page-content :is(div.blockquote, blockquote, .code, .footnotes-footer, div#toc, div#page-title, div.meta-title, div.scp-image-caption), div#lock-info {
+  color: rgb(var(--moonlight-white));
+}
+
+div#page-options-container, div#action-area {
+  color: rgb(var(--outside-black));
+}
+
+.selection a.collapsible-block-link:hover, .port-toc a.collapsible-block-link:active {
+  color: rgb(var(--outside-black));
+}
+
+/* hr */
+
+#page-content hr {
+  background-color: rgb(var(--outside-black));
+}
+
+#page-content :is(div.blockquote, blockquote, .code, .footnotes-footer, div#toc) hr{
+  background-color: rgb(var(--moonlight-white));
+}
+
+#page-content .fancyhr hr {
+  background-color: transparent;
+}
+
+[[/code]]
+
+光头强（ホアトウチアン）がまた木を切りに来ました！
+
+[[code type="css"]]
+
+:root {
+  --bot-height: var(--main-content-bottom-margin);
+}
+
+#footer::before {
+  display: none;
+}
+
+#main-content > .page-tags {
+  margin-top: 0;
+}
+
+[[/code]]
+
+[[/collapsible]]
+
+[[/iftags]]
