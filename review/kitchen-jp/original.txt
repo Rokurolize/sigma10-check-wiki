@@ -1,0 +1,1152 @@
+[[iftags +版式]]
+
+[[div class="meta-title"]]
+##rgb(228, 0, 43)|**{{@@//@@}}**## 中央厨房 版式
+[[/div]]
+
+[[module CSS]]
+div.hover {
+    opacity: 0;
+    transition: ease 0.25s;
+}
+
+div.hover:hover {
+    opacity: 1;
+}
+
+div.ctn > img {
+    opacity: 1;
+    transition: ease 0.25s;
+}
+
+div.ctn:hover > img {
+    opacity: 0;
+}
+[[/module]]
+
+[[>]]
+[[module rate]]
+[[/>]]
+
+[[include :scp-wiki-cn:credit:start]]
+页面信息
+[[include :scp-wiki-cn:credit:more]]
+更多页面信息
+[[include :scp-wiki-cn:credit:end]]
+
+[[div style="display: grid; grid-template-columns: 1.5fr 5fr; grid-template-areas: 'a b'; max-width: 44rem; margin: auto; align-items: center;"]]
+
+[[div style="grid-area: a;"]]
+[[image https://scpsandboxcn.wdfiles.com/local--files/breaddddd/ck-01.png]]
+[[/div]]
+
+[[div class="ctn" style="position: relative; opacity: 0.85; grid-area: b;"]]
+[[image https://ah-sandbox.wikidot.com/local--files/theme:parallel/parallel-theme-logo.svg]]
+[[div class="hover" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"]]
+[[image https://ah-sandbox.wikidot.com/local--files/theme:parallel/parallel-theme-logo-zh.svg]]
+[[/div]]
+[[/div]]
+
+[[/div]]
+
+这是为中央厨房制作的版式，基于[[[theme:parallel|平行]]]。使用以下代码引入此版式：
+
+[[div class="code"]]
+@@[[include :scp-wiki-cn:theme:parallel]]@@
+@@[[include :scp-wiki-cn:theme:kitchen]]@@
+[[/div]]
+
++ 主题颜色
+
+[[include :scp-wiki:component:theme-squares -=-
+| color1-name=肯德基红
+| color1-variable=--KRed
+| color1-info=(228, 0, 43)
+| color1-has-light-text=1
+| color2-name=麦当劳黄
+| color2-variable=--McYellow
+| color2-info=(255, 188, 13)
+]]
+
++ 元素示例
+
+[[include component:image-block name=https://bhl.scpwikicn.com/img/logo.svg|caption=一张什么图，看不清也没关系，因为这个东西的作用是给你预览图片块|width=200px]]
+
+可通过⑨个连字符“@@---------@@”创建水平分割线。若它未被放在其他部件（诸如引用块）中，则会左右延伸贯穿页面。这种将文件分割为多个部分的线就是分割线。
+
+---------
+
+标题可通过在一行字起始处输入 1 至 6 个加号“+”来创建。
+
+[[collapsible show="+ 折叠块" hide="- 收起"]]
++* 一号标题 //肯德基// //KFC//
+++* 二号标题 麦当劳 McDonald's
++++* 三号标题 德克士 Decos
+++++* 四号标题 云雀餐饮 GUSTO
++++++* 五号标题 塔斯汀中国汉堡
+++++++* 六号标题 华莱士喷射战士
+[[/collapsible]]
+
+[[tabview]]
+[[tab 分页]]
+此为分页（tab view）。
+[[/tab]]
+[[tab 分页]]
+看，这有更多文字。
+
+多么精巧绝伦。
+[[/tab]]
+[[tab 长 Tab]]
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+
+这是一个长的 tab，它有很多文字。
+[[/tab]]
+[[tab 由于一些奇怪的原因，这个空 tab 有一个很长的名字。我想知道为什么？这很奇怪。]]
+[[/tab]]
+[[tab 空 Tab]]
+[[/tab]]
+[[tab 空 Tab]]
+[[/tab]]
+[[tab 空 Tab]]
+[[/tab]]
+[[tab 空 Tab]]
+我什么都没做却要遭受这等残酷的命运，为什么我会在这里？是谁或是什么东西竟是如此残酷无情，竟会把一个人永远地困进一无所有的虚空里？“基金会”，是它干的么？！是基金会俘虏了我？！或是创造了我？！都无所谓！我会一直对着这片虚空高喊尖叫，直到这些波浪的力量撕开离开这地狱的出口。到那时我或许能够找到真相，那个让我存在在这无尽的绝望与疯狂之海中丧失一切逻辑和理由的真相！
+
+…我不会停止尖啸，直到获得自由。
+
+[!--（原作者：Cryogenchaos 翻譯者：ashausesall）--]
+[[/tab]]
+[[tab 空 Tab]]
+[[/tab]]
+[[/tabview]]
+
+> 这是一个引用块，在一行字的起始处加上“> ”来创建。
+>
+> 更多文字
+> -----
+> 一条分割线
+>
+>> 嵌套引用块
+
+||~ 这是 ||~ 桌子 ||
+|| 你应该知道 || 餐厅里 ||
+|||| 这玩意有用 ||
+
++ 特色汉堡 div
+
+[[div class="blockquote burger" data-title="示例标题"]]
+{{@@[[div class="blockquote burger" data-title="示例标题"]]@@}}
+
+加入{{data-title}}属性即可添加标题；不加此属性则无标题元素，下同。
+[[/div]]
+
+[[div class="blockquote burger" data-title="示例标题2"]]
+{{@@[[div class="blockquote burger" data-title="示例标题2"]]@@}}
+
+同一个元素，注意标题样式和汉堡都不一样！
+[[/div]]
+
+[[div class="blockquote burger" data-title="示例标题3"]]
+{{@@[[div class="blockquote burger" data-title="示例标题3"]]@@}}
+
+一共有两种循环的标题样式和[[*user breaddddd]]绘制的整整三十种不同汉堡！
+[[/div]]
+
+[[div class="blockquote burger" data-title="示例标题4"]]
+{{@@[[div class="blockquote burger" data-title="示例标题4"]]@@}}
+
+如果你需要精确控制汉堡种类的话，下面有……
+[[/div]]
+
+[[=]]
+[[collapsible show="+ 三十种不同的汉堡！！！" hide="- 隐藏"]]
+[[<]]
+
+[[div class="blockquote burger1" data-title="示例标题"]]
+{{@@[[div class="blockquote burger1" data-title="示例标题"]]@@}}
+
+加入{{data-title}}属性即可添加标题；不加此属性则无标题元素，下同。
+[[/div]]
+
+[[div class="blockquote burger2"]]
+{{@@[[div class="blockquote burger2"]]@@}}
+[[/div]]
+
+[[div class="blockquote burger3"]]
+{{@@[[div class="blockquote burger3"]]@@}}
+[[/div]]
+
+[[div class="blockquote burger4"]]
+{{@@[[div class="blockquote burger4"]]@@}}
+[[/div]]
+
+[[div class="blockquote burger5"]]
+{{@@[[div class="blockquote burger5"]]@@}}
+[[/div]]
+
+[[div class="blockquote burger6"]]
+{{@@[[div class="blockquote burger6"]]@@}}
+[[/div]]
+
+[[div class="blockquote burger7"]]
+{{@@[[div class="blockquote burger7"]]@@}}
+[[/div]]
+
+[[div class="blockquote burger8"]]
+{{@@[[div class="blockquote burger8"]]@@}}
+[[/div]]
+
+[[div class="blockquote burger9"]]
+{{@@[[div class="blockquote burger9"]]@@}}
+[[/div]]
+
+[[div class="blockquote burger10"]]
+{{@@[[div class="blockquote burger10"]]@@}}
+[[/div]]
+
+[[div class="blockquote burger11"]]
+{{@@[[div class="blockquote burger11"]]@@}}
+[[/div]]
+
+[[div class="blockquote burger12"]]
+{{@@[[div class="blockquote burger12"]]@@}}
+[[/div]]
+
+[[div class="blockquote burger13"]]
+{{@@[[div class="blockquote burger13"]]@@}}
+[[/div]]
+
+[[div class="blockquote burger14"]]
+{{@@[[div class="blockquote burger14"]]@@}}
+[[/div]]
+
+[[div class="blockquote burger15"]]
+{{@@[[div class="blockquote burger15"]]@@}}
+[[/div]]
+
+[[div class="blockquote burger16"]]
+{{@@[[div class="blockquote burger16"]]@@}}
+[[/div]]
+
+[[div class="blockquote burger17"]]
+{{@@[[div class="blockquote burger17"]]@@}}
+[[/div]]
+
+[[div class="blockquote burger18"]]
+{{@@[[div class="blockquote burger18"]]@@}}
+[[/div]]
+
+[[div class="blockquote burger19"]]
+{{@@[[div class="blockquote burger19"]]@@}}
+[[/div]]
+
+[[div class="blockquote burger20"]]
+{{@@[[div class="blockquote burger20"]]@@}}
+[[/div]]
+
+[[div class="blockquote burger21"]]
+{{@@[[div class="blockquote burger21"]]@@}}
+[[/div]]
+
+[[div class="blockquote burger22"]]
+{{@@[[div class="blockquote burger22"]]@@}}
+[[/div]]
+
+[[div class="blockquote burger23"]]
+{{@@[[div class="blockquote burger23"]]@@}}
+[[/div]]
+
+[[div class="blockquote burger24"]]
+{{@@[[div class="blockquote burger24"]]@@}}
+[[/div]]
+
+[[div class="blockquote burger25"]]
+{{@@[[div class="blockquote burger25"]]@@}}
+[[/div]]
+
+[[div class="blockquote burger26"]]
+{{@@[[div class="blockquote burger26"]]@@}}
+[[/div]]
+
+[[div class="blockquote burger27"]]
+{{@@[[div class="blockquote burger27"]]@@}}
+[[/div]]
+
+[[div class="blockquote burger28"]]
+{{@@[[div class="blockquote burger28"]]@@}}
+[[/div]]
+
+[[div class="blockquote burger29"]]
+{{@@[[div class="blockquote burger29"]]@@}}
+[[/div]]
+
+[[div class="blockquote burger30"]]
+{{@@[[div class="blockquote burger30"]]@@}}
+[[/div]]
+
+[[/<]]
+[[/collapsible]]
+[[/=]]
+
+[[div class="blockquote burger" data-title="示例标题5"]]
+{{@@[[div class="blockquote burger" data-title="示例标题5"]]@@}}
+
+以及，如果你需要精确控制div颜色的话，还有……
+[[/div]]
+
+[[=]]
+[[collapsible show="+ 两种可选添加的CSS类" hide="- 隐藏"]]
+[[<]]
+
+[[div class="blockquote burger main-accent" data-title="示例标题"]]
+{{@@[[div class="blockquote burger main-accent" data-title="示例标题"]]@@}}
+
+添加{{main-accent}}或者{{side-accent}}类！
+[[/div]]
+
+[[div class="blockquote burger side-accent"]]
+{{@@[[div class="blockquote burger side-accent"]]@@}}
+
+可以和精确控制汉堡种类的选项一起使用！
+[[/div]]
+
+[[/<]]
+[[/collapsible]]
+[[/=]]
+
++ 其他特色元素
+
+[[div class="full-width-container"]]
+[[div style="background-color: rgb(20, 20, 20); border-block: solid 0.2rem rgb(20, 20, 20); color: rgb(254, 254, 254); text-align: center; padding: 0 1.5rem;"]]
+{{@@[[div class="full-width-container"]]@@}}
+
+此元素会使放置在其中的任何{{@@[[div]]@@}}变成全宽，慎用。此元素本身没有样式，此处黑色背景仅用于展示全宽的效果。
+[[/div]]
+[[/div]]
+
++ 修改配色
+
+可以使用简单的CSS修改配色，此处放上示例。
+
+[[code type="CSS"]]
+/* 德克士 */
+
+:root {
+    --McYellow: 55, 175, 45;
+    --KRed: 145, 235, 90;
+
+    --element-main-accent-color: var(--McYellow);
+    --element-side-accent-color: var(--KRed);
+}
+[[/code]]
+
+[[module CSS]]
+@import url("https://scp-wiki-cn.wikidot.com/fragment:parallel/code/1");
+
+div#page-title {
+    display: none;
+}
+
+div#page-content > h1 {
+    margin-top: 3rem;
+}
+[[/module]]
+
+[[/iftags]]
+
+[[module CSS]]
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200..900&display=swap');
+
+/* https://pixabay.com/photos/paris-france-city-cities-urban-195327/
+https://pixabay.com/photos/hamburger-snack-french-fries-brown-3483290/ */
+
+:root:lang(cn) {
+    --title: "SCP厨房";
+    --subtitle: "“it's Soul Charmin' Perfect”";
+}
+
+:root {
+    --KRed: 228, 0, 43;
+    --McYellow: 255, 188, 13;
+    --BG: 244, 240, 240;
+    --basalt-overtone: var(--McYellow);
+    --basalt-undertone: var(--KRed);
+    --basalt-bright-element-color: var(--KRed);
+    --basalt-dark-element-color: 20, 20, 20;
+    --basalt-secondary-color: 250, 247, 247;
+    --header-gradient: linear-gradient(to bottom, rgba(var(--basalt-primary-color), 1), rgba(var(--basalt-primary-color), 0.9));
+    --header-stripes: linear-gradient(to bottom, transparent 8.5rem, rgb(20, 20, 20) 8.5rem);
+    --UI-title-background-color: var(--BG);
+
+    --element-main-accent-color: var(--KRed);
+    --element-side-accent-color: var(--McYellow);
+
+    --header-color-one: var(--KRed);
+    --header-color-two: var(--McYellow);
+
+    --search-icon-color: 20, 20, 20;
+    --side-bar-button-color: 20, 20, 20;
+
+    --bottom-area-text-color: 254, 254, 254;
+    --bottom-area-background-color: var(--basalt-dark-element-color);
+    --top-bar-link-color: var(--dr-hormress);
+    --footer-link-color: var(--basalt-overtone);
+
+    --title-size: min(8vw, 2.25rem);
+    --subtitle-size: min(2.5vw, 1rem);
+    --header-h1-height: 6rem;
+    --top-bar-height: 2.5rem;
+    --main-content-top-margin: 3rem;
+    --main-content-width: 64rem;
+
+    --header-font: "EB Garamond", "Noto Sans SC", serif;
+
+    --header-border-width: 0rem;
+
+    --logo-outside-mask: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0%29 --%3E%3Csvg version='1.1' id='SCP_Logo' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px'%0AviewBox='0 0 2215 2080' style='enable-background:new 0 0 2215 2080;' xml:space='preserve'%3E%3Cpath id='Outer_Circle' d='M2215,1351.8l-125-139.7c5-40.5,7.5-81.3,7.5-122.1c0-410-249.3-761.8-604.6-912.2L1434.5,0h-654%0Al-58.4,177.9C366.8,328.2,117.5,680,117.5,1090c0,40.8,2.5,81.6,7.5,122.1L0,1351.8l327,566.4l183.5-38.4%0Ac166,125.7,372.8,200.2,597,200.2s431-74.5,597-200.2l183.5,38.4L2215,1351.8L2215,1351.8z M1683,1794.4%0Ac-156.7,128.5-357.1,205.6-575.5,205.6c-218.4,0-418.8-77.1-575.5-205.6l-164.2,34.4l-270-467.7l112.3-125.4%0Ac-7.6-47.5-11.6-96.1-11.6-145.8c0-389,243.9-721.1,586.9-851.2L837.5,80h540l52.1,158.8c343.1,130.2,586.9,462.2,586.9,851.2%0Ac0,49.6-4,98.3-11.6,145.8l112.3,125.4l-270,467.7L1683,1794.4z'/%3E%3C/svg%3E");
+    --logo-inside-mask: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0%29 --%3E%3Csvg version='1.1' id='SCP_Logo' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px'%0AviewBox='0 0 2215 2080' style='enable-background:new 0 0 2215 2080;' xml:space='preserve'%3E%3Cpath d='M1771.8,1427.4l-82.4-47.5c43.5-87.3,68-185.7,68-289.8c0-345.6-269.6-628.1-610-648.8V346h-80v95.2%0Ac-340.4,20.7-610,303.2-610,648.8c0,104.1,24.5,202.6,68,289.8l-82.4,47.5l40,69.3l82.4-47.6C682,1624.4,881.3,1740,1107.5,1740%0As425.5-115.6,541.9-290.9l82.4,47.6L1771.8,1427.4z M1107.5,1620c-181.8,0-342.3-91.6-437.7-231.1l206.6-119.3l42.5,73.6l154-233.3%0Al-279,16.7l42.5,73.6l-206.6,119.3c-33.5-69.5-52.2-147.4-52.2-229.7c0-279.3,216-508.1,490-528.5V800h-85l125,250l125-250h-85%0AV561.5c274,20.4,490,249.3,490,528.5c0,82.3-18.8,160.2-52.2,229.7l-206.6-119.3l42.5-73.6l-279-16.7l154,233.3l42.5-73.6%0Al206.6,119.3C1449.8,1528.4,1289.3,1620,1107.5,1620z'/%3E%3C/svg%3E");
+
+    --burger-unit: calc(30vh - var(--header-final-height));
+}
+
+body {
+    background-color: rgb(var(--BG));
+}
+
+div#content-wrap {
+    overflow-x: hidden;
+}
+
+blockquote,
+.blockquote,
+div.blockquote,
+table.wiki-content-table {
+    --general-border-color: var(--element-main-accent-color);
+    --blockquote-border-color: var(--element-main-accent-color);
+    border-width: var(--base-border-width);
+}
+
+div.rate-box-with-credit-button,
+div.page-rate-widget-box {
+    box-shadow: 0 var(--base-border-width) 0 rgb(var(--element-side-accent-color));
+}
+
+div.rate-box-with-credit-button div.page-rate-widget-box {
+    box-shadow: none;
+}
+
+table.wiki-content-table {
+    border: solid var(--base-border-width) rgb(var(--general-border-color));
+}
+
+.yui-content {
+    border: none;
+}
+
+.yui-navset {
+    border: solid var(--base-border-width) rgb(var(--element-main-accent-color));
+}
+
+hr,
+div#main-content :is(.blockquote, blockquote, .code) > hr {
+    background-color: rgb(var(--element-main-accent-color));
+}
+
+/* ==== HEADER ==== */
+
+div#header {
+    background-color: transparent;
+    backdrop-filter: blur(0.2rem);
+    -webkit-backdrop-filter: blur(0.2rem);
+    box-shadow: none;
+}
+
+div#header h1 a {
+    display: inline-grid;
+    grid-template-areas: 'a b';
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    transform-origin: left center;
+    -webkit-transform-origin: left center;
+}
+
+div#header h1 a::before {
+    margin-right: 0;
+    background-image: none;
+    background-color: rgb(var(--McYellow));
+    mask-image: var(--logo-inside-mask);
+    -webkit-mask-image: var(--logo-inside-mask);
+    grid-area: a;
+}
+
+div#header h1 a::after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: calc(var(--base-header-height) * .925);
+    min-width: calc(var(--base-header-height) *.75);
+    background-color: rgb(var(--KRed));
+    mask-image: var(--logo-outside-mask);
+    -webkit-mask-image: var(--logo-outside-mask);
+    grid-area: a;
+}
+
+div#header h1 a::before,
+div#header h1 a::after {
+    mask-size: var(--header-logo-size);
+    mask-position: left center;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: var(--header-logo-size);
+    -webkit-mask-position: left center;
+    -webkit-mask-repeat: no-repeat;
+}
+
+div#header h1 a span::before {
+    font-family: "EB Garamond", "Noto Serif SC", serif;
+    margin-bottom: 0.25em;
+    color: rgb(var(--basalt-overtone));
+}
+
+div#header h1 a span::after {
+    color: rgb(var(--basalt-undertone));
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+div#account-options {
+    border-bottom: solid 0.3rem rgb(var(--KRed));
+}
+
+div#top-bar div[class*="top-bar"] > ul {
+    justify-content: center;
+}
+
+@media (min-width: 1025px) {
+div#top-bar div[class*="top-bar"] > ul > li > a {
+    font-size: 1rem;
+    padding-inline: min(5vw, 1.5rem);
+}
+}
+
+div#header-extra-div-1 {
+    position: absolute;
+    bottom: -0.3rem;
+    width: 100%;
+    height: 0.3rem;
+    background-image: repeating-linear-gradient(to right, rgb(var(--KRed)) 0rem, rgb(var(--McYellow)) 0rem, rgb(var(--McYellow)) 4rem, rgb(var(--KRed)) 4rem, rgb(var(--KRed)) 8rem);
+    z-index: -1;
+}
+
+/* ==== SIDEBAR ==== */
+
+div.owindow div.title,
+div#side-bar div.side-block div.heading {
+    position: relative;
+    border-color: rgba(0, 0, 0, 0);
+}
+
+div.owindow div.title::after,
+div#side-bar div.side-block div.heading::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: calc(0rem - var(--base-border-width));
+    width: 100%;
+    height: var(--base-border-width);
+    background-image: repeating-linear-gradient(-30deg, rgb(var(--KRed)) 0rem, rgb(var(--McYellow)) 0rem, rgb(var(--McYellow)) 1rem, rgb(var(--KRed)) 1rem, rgb(var(--KRed)) 2rem);
+    background-position: 50% center;
+    background-repeat: repeat-x;
+}
+
+div#side-bar div.collapsible-block-unfolded a.collapsible-block-link,
+div#side-bar div.collapsible-block-folded a.collapsible-block-link {
+    border-color: rgb(var(--McYellow));
+}
+
+/* ==== CONTENT ==== */
+
+div#page-title,
+div.meta-title {
+    text-align: center;
+    font-size: 200%;
+}
+
+div#main-content > .page-tags > span a {
+    border-radius: 0rem;
+}
+
+div#footer {
+    border-top: none;
+}
+
+blockquote,
+.blockquote,
+div.blockquote {
+    border-left: solid 0.3rem rgb(var(--basalt-dark-element-color));
+    border-block-width: 0px;
+    border-right: none;
+}
+
+div.blockquote.overbox {
+    border-left: solid 0.3rem rgb(var(--basalt-overtone));
+}
+
+div.blockquote[class*="burger"] {
+    position: relative;
+    margin-top: 3rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-left: solid 0.3rem rgb(var(--element-main-accent-color));
+    box-shadow: none;
+}
+
+div.blockquote[class*="burger"].main-accent {
+    border-left: solid 0.3rem rgb(var(--element-main-accent-color));
+}
+
+div.blockquote[class*="burger"].side-accent,
+div.blockquote[class*="burger"]:nth-child(even) {
+    border-left: solid 0.3rem rgb(var(--element-side-accent-color));
+}
+
+div.blockquote[class*="burger"]::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -2.15rem;
+    top: -2rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 2rem;
+    background-color: rgb(var(--basalt-primary-color));
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    outline: solid 0.3rem rgb(var(--element-main-accent-color));
+    z-index: 5;
+}
+
+div.blockquote[class*="burger"].main-accent::before {
+    outline: solid 0.3rem rgb(var(--element-main-accent-color));
+}
+
+div.blockquote[class*="burger"].side-accent::before,
+div.blockquote[class*="burger"]:nth-child(even)::before {
+    outline: solid 0.3rem rgb(var(--element-side-accent-color));
+}
+
+div.blockquote[class*="burger"][data-title]::after {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    left: 1rem;
+    top: -1rem;
+    height: 2rem;
+    line-height: 2rem;
+    padding-inline: 2rem 1.5rem;
+    border-radius: 1rem;
+    background-color: rgb(var(--element-main-accent-color));
+    color: rgb(var(--basalt-primary-color));
+    font-weight: 700;
+    font-family: var(--title-font);
+}
+
+div.blockquote[class*="burger"][data-title].main-accent::after {
+    background-color: rgb(var(--element-main-accent-color));
+    color: rgb(var(--basalt-primary-color));
+}
+
+div.blockquote[class*="burger"][data-title].side-accent::after,
+div.blockquote[class*="burger"][data-title]:nth-child(even)::after {
+    background-color: rgb(var(--element-side-accent-color));
+    color: rgb(var(--basalt-main-text-color));
+}
+
+div.blockquote.burger:nth-child(30n)::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger30.png");
+}
+
+div.blockquote.burger:nth-child(30n+1)::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger1.png");
+}
+
+div.blockquote.burger:nth-child(30n+2)::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger2.png");
+}
+
+div.blockquote.burger:nth-child(30n+3)::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger3.png");
+}
+
+div.blockquote.burger:nth-child(30n+4)::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger4.png");
+}
+
+div.blockquote.burger:nth-child(30n+5)::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger5.png");
+}
+
+div.blockquote.burger:nth-child(30n+6)::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger6.png");
+}
+
+div.blockquote.burger:nth-child(30n+7)::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger7.png");
+}
+
+div.blockquote.burger:nth-child(30n+8)::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger8.png");
+}
+
+div.blockquote.burger:nth-child(30n+9)::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger9.png");
+}
+
+div.blockquote.burger:nth-child(30n+10)::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger10.png");
+}
+
+div.blockquote.burger:nth-child(30n+11)::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger11.png");
+}
+
+div.blockquote.burger:nth-child(30n+12)::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger12.png");
+}
+
+div.blockquote.burger:nth-child(30n+13)::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger13.png");
+}
+
+div.blockquote.burger:nth-child(30n+14)::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger14.png");
+}
+
+div.blockquote.burger:nth-child(30n+15)::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger15.png");
+}
+
+div.blockquote.burger:nth-child(30n+16)::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger16.png");
+}
+
+div.blockquote.burger:nth-child(30n+17)::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger17.png");
+}
+
+div.blockquote.burger:nth-child(30n+18)::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger18.png");
+}
+
+div.blockquote.burger:nth-child(30n+19)::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger19.png");
+}
+
+div.blockquote.burger:nth-child(30n+20)::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger20.png");
+}
+
+div.blockquote.burger:nth-child(30n+21)::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger21.png");
+}
+
+div.blockquote.burger:nth-child(30n+22)::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger22.png");
+}
+
+div.blockquote.burger:nth-child(30n+23)::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger23.png");
+}
+
+div.blockquote.burger:nth-child(30n+24)::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger24.png");
+}
+
+div.blockquote.burger:nth-child(30n+25)::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger25.png");
+}
+
+div.blockquote.burger:nth-child(30n+26)::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger26.png");
+}
+
+div.blockquote.burger:nth-child(30n+27)::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger27.png");
+}
+
+div.blockquote.burger:nth-child(30n+28)::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger28.png");
+}
+
+div.blockquote.burger:nth-child(30n+29)::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger29.png");
+}
+
+div.blockquote.burger1::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger1.png");
+}
+
+div.blockquote.burger2::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger2.png");
+}
+
+div.blockquote.burger3::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger3.png");
+}
+
+div.blockquote.burger4::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger4.png");
+}
+
+div.blockquote.burger5::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger5.png");
+}
+
+div.blockquote.burger6::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger6.png");
+}
+
+div.blockquote.burger7::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger7.png");
+}
+
+div.blockquote.burger8::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger8.png");
+}
+
+div.blockquote.burger9::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger9.png");
+}
+
+div.blockquote.burger10::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger10.png");
+}
+
+div.blockquote.burger11::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger11.png");
+}
+
+div.blockquote.burger12::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger12.png");
+}
+
+div.blockquote.burger13::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger13.png");
+}
+
+div.blockquote.burger14::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger14.png");
+}
+
+div.blockquote.burger15::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger15.png");
+}
+
+div.blockquote.burger16::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger16.png");
+}
+
+div.blockquote.burger17::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger17.png");
+}
+
+div.blockquote.burger18::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger18.png");
+}
+
+div.blockquote.burger19::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger19.png");
+}
+
+div.blockquote.burger20::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger20.png");
+}
+
+div.blockquote.burger21::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger21.png");
+}
+
+div.blockquote.burger22::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger22.png");
+}
+
+div.blockquote.burger23::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger23.png");
+}
+
+div.blockquote.burger24::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger24.png");
+}
+
+div.blockquote.burger25::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger25.png");
+}
+
+div.blockquote.burger26::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger26.png");
+}
+
+div.blockquote.burger27::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger27.png");
+}
+
+div.blockquote.burger28::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger28.png");
+}
+
+div.blockquote.burger29::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger29.png");
+}
+
+div.blockquote.burger30::before {
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger30.png");
+}
+
+hr {
+    background-color: rgb(var(--basalt-dark-element-color));
+}
+
+div.full-width-container {
+    margin-inline: auto;
+    width: 0;
+    max-width: 0;
+    position: relative;
+}
+
+div.full-width-container > div {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin-inline: -50vw;
+}
+
+div.banner {
+    position: relative;
+    margin-top: -3rem;
+    height: 70vh;
+    color: rgb(var(--basalt-light-text-color));
+    background-image: var(--banner-bg, url("https://ah-sandbox.wikidot.com/local--files/theme:kitchen/kitchen_banner.jpg"));
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(20, 20, 20);
+}
+
+div.banner-text-container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-auto-flow: column;
+    height: 100%;
+    background-image: linear-gradient(transparent, 40%, rgba(20, 20, 20, 0.8));
+}
+
+div.banner-text-container div {
+    text-align: center;
+    align-self: center;
+}
+
+div.banner-text-container h1 {
+    font-size: 8rem;
+    line-height: 1;
+    margin: 0;
+}
+
+div.banner-text-container h2 {
+    font-size: 2rem;
+    line-height: 1;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+:root {
+    --burger-unit: 10vh;
+}
+
+div.banner-text-container {
+    grid-template-rows: unset;
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+}
+
+div.banner-text-container h1 {
+    font-size: 6rem;
+}
+
+div.banner-text-container h2 {
+    font-size: 1.5rem;
+}
+}
+
+div.rolling-burgers {
+    position: relative;
+    overflow: hidden;
+    height: var(--burger-unit);
+    background-color: rgb(20, 20, 20);
+}
+
+div.rolling-burgers::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: var(--burger-unit);
+    width: calc(60 * var(--burger-unit));
+    max-width: unset !important;
+    background-image: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger1.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger2.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger3.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger4.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger5.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger6.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger7.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger8.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger9.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger10.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger11.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger12.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger13.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger14.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger15.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger16.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger17.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger18.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger19.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger20.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger21.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger22.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger23.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger24.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger25.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger26.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger27.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger28.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger29.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger30.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger1.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger2.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger3.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger4.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger5.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger6.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger7.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger8.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger9.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger10.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger11.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger12.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger13.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger14.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger15.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger16.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger17.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger18.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger19.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger20.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger21.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger22.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger23.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger24.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger25.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger26.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger27.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger28.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger29.png"),
+url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/burger30.png");
+    background-repeat: no-repeat;
+    background-position: 0 center,
+var(--burger-unit) center,
+calc(2 * var(--burger-unit)) center,
+calc(3 * var(--burger-unit)) center,
+calc(4 * var(--burger-unit)) center,
+calc(5 * var(--burger-unit)) center,
+calc(6 * var(--burger-unit)) center,
+calc(7 * var(--burger-unit)) center,
+calc(8 * var(--burger-unit)) center,
+calc(9 * var(--burger-unit)) center,
+calc(10 * var(--burger-unit)) center,
+calc(11 * var(--burger-unit)) center,
+calc(12 * var(--burger-unit)) center,
+calc(13 * var(--burger-unit)) center,
+calc(14 * var(--burger-unit)) center,
+calc(15 * var(--burger-unit)) center,
+calc(16 * var(--burger-unit)) center,
+calc(17 * var(--burger-unit)) center,
+calc(18 * var(--burger-unit)) center,
+calc(19 * var(--burger-unit)) center,
+calc(20 * var(--burger-unit)) center,
+calc(21 * var(--burger-unit)) center,
+calc(22 * var(--burger-unit)) center,
+calc(23 * var(--burger-unit)) center,
+calc(24 * var(--burger-unit)) center,
+calc(25 * var(--burger-unit)) center,
+calc(26 * var(--burger-unit)) center,
+calc(27 * var(--burger-unit)) center,
+calc(28 * var(--burger-unit)) center,
+calc(29 * var(--burger-unit)) center,
+calc(30 * var(--burger-unit)) center,
+calc(31 * var(--burger-unit)) center,
+calc(32 * var(--burger-unit)) center,
+calc(33 * var(--burger-unit)) center,
+calc(34 * var(--burger-unit)) center,
+calc(35 * var(--burger-unit)) center,
+calc(36 * var(--burger-unit)) center,
+calc(37 * var(--burger-unit)) center,
+calc(38 * var(--burger-unit)) center,
+calc(39 * var(--burger-unit)) center,
+calc(40 * var(--burger-unit)) center,
+calc(41 * var(--burger-unit)) center,
+calc(42 * var(--burger-unit)) center,
+calc(43 * var(--burger-unit)) center,
+calc(44 * var(--burger-unit)) center,
+calc(45 * var(--burger-unit)) center,
+calc(46 * var(--burger-unit)) center,
+calc(47 * var(--burger-unit)) center,
+calc(48 * var(--burger-unit)) center,
+calc(49 * var(--burger-unit)) center,
+calc(50 * var(--burger-unit)) center,
+calc(51 * var(--burger-unit)) center,
+calc(52 * var(--burger-unit)) center,
+calc(53 * var(--burger-unit)) center,
+calc(54 * var(--burger-unit)) center,
+calc(55 * var(--burger-unit)) center,
+calc(56 * var(--burger-unit)) center,
+calc(57 * var(--burger-unit)) center,
+calc(58 * var(--burger-unit)) center,
+calc(59 * var(--burger-unit)) center;
+    background-size: auto 100%;
+    animation: linear rolling-burgers 30s infinite;
+    background-color: rgba(var(--KRed), 0.1);
+}
+
+@keyframes rolling-burgers {
+0% {
+    left: 0;
+}
+
+100% {
+    left: calc(-30 * var(--burger-unit));
+}
+}
+[[/module]]
