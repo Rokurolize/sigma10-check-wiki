@@ -1,0 +1,225 @@
+[[module CSS]]
+@import url('https://scp-wiki.wikidot.com/local--code/theme:vanguard-supplement/1');
+[[/module]]
+
+[[iftags +theme]]
+
+[[div style="display:none"]]
+[[include :scp-wiki:theme:scp-human-resources-sigma]]
+[[/div]]
+
+[[>]]
+**Rating:**
+[[module rate]]
+[[/>]]
+
+[[=]]
++ Usage
+[[/=]]
+
+This is a code supplement used in conjunction with the [[[theme:scp-human-resources-sigma|SCP Human Resources Sigma-9 Theme]]] to make it a Vanguard Sigma-9 Theme.
+
+To import this theme to your page, put the following anywhere inside it:
+
+[[div class="code"]]
+@@[[include :scp-wiki:theme:scp-human-resources-sigma]]@@
+@@[[include :scp-wiki:theme:vanguard-supplement]]@@
+[[/div]]
+
+If you want to hide the side bar, put the following after the above:
+
+[[div class="code"]]
+@@[[include :scp-wiki:component:toggle-sidebar]]@@
+[[/div]]
+
+You can view any page's Backlinks by clicking "+ Options" at the bottom of the page, then "Backlinks".
+
+----
+
+You can create the cream Vanguard div using the code below:
+
+[[div class="log"]]
+@@[[div class="log"]]@@
+[[/div]]
+
+----
+
+[[=]]
+[[collapsible hide="<<Hide Source Code>>" show="<<Show Source Code>>"]]
+[[<]]
+[[=]]
++ Source Code
+[[/=]]
+[[code type="css"]]
+
+/*
+    Vanguard Supplement
+    [2024 Wikidot Theme]
+    By macro_au_micro
+    Adapted from the code used to transform the BHL Human Resources theme into a Vanguard theme by Placeholder McD in the SCP-6500 Emissary Path
+    Based on SCP Sigma 9 Theme created by Aelanna and Dr Devan
+*/
+
+/* HEADER */
+
+#header, div#header {
+     background-image: none;
+}
+
+#header::before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    left: -11.6rem;
+    top: 1rem;
+    z-index: -1;
+
+    background-image: url('https://scp-wiki.wdfiles.com/local--files/theme%3Avanguard-supplement/vanguard_transparent.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: auto 9em;
+    filter: brightness(125%);
+}
+
+#header h1,
+#header h2 {
+    margin-left: 0;
+    float: none;
+    text-align: center;
+}
+
+#header h2 {
+    margin-top: 2rem;
+}
+
+#header h1 span,
+#header h2 span {
+    font-size: 0;
+    display: none;
+}
+
+#header h2::before {
+    color: rgb(207, 223, 245);
+    letter-spacing: -.02em;
+    line-height: 0;
+}
+
+#header h1 a::before {
+    content: "ANGUARD";
+    font-size: unset;
+}
+
+#header h2::before {
+    content: "SHELTER - NORMALIZE - INFORM";
+    font-size: 110%;
+}
+
+div#container-wrap {
+    background-image:
+        repeating-linear-gradient(45deg,
+        hsla(0, 0%, 100%, 0),
+        hsla(0, 0%, 100%, 0) 0.25vh,
+        rgba(88, 88, 88, 0.1) 0.35vh,
+        rgba(88, 88, 88, 0.2) 0.5vh),
+
+        repeating-linear-gradient(180deg,
+        hsla(0, 0%, 100%, 0),
+        hsla(0, 0%, 100%, 0) 0.25vh,
+        rgba(88, 88, 88, 0.1) 0.35vh,
+        rgba(88, 88, 88, 0.2) 0.5vh),
+
+        linear-gradient(to bottom,
+        rgba(7, 7, 40, 1) 10.125rem,
+        rgba(72, 114, 163, 1) 7.625rem,
+        rgba(72, 114, 163, 1) calc(91% - 0.125rem),
+        rgba(63, 97, 145, 1) calc(99% - 0.125rem)) !important;
+
+    background-size: 100% 10.125rem, 100% 10.125rem, 100% 11.438rem !important;
+    background-repeat: no-repeat;
+}
+
+/* BODY */
+
+div#content-wrap {
+    top: 1.375rem;
+    padding-bottom: 1rem;
+}
+
+/* TOP BAR */
+
+#top-bar {
+    top: 162px;
+}
+
+/* LOGIN & SEARCH */
+
+@media (min-width: 767px){
+    #login-status {
+        left: -4%;
+    }
+    #search-top-box {
+        right: 4%;
+        top: .5rem;
+    }
+}
+
+@media (max-width: 767px){
+    #search-top-box{
+        top: 40px;
+        right: 0;
+        font-size: 80%;
+    }
+    #login-status{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    #my-account{
+         display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    #header::before {
+        left: -6rem;
+    }
+
+    #header h1 {
+        position: relative;
+        left: 0.4em;
+    }
+}
+
+/* PAGE TITLE */
+
+#content-wrap :is(#page-title, .meta-title) {
+    text-align: center;
+    font-family: 'Copperplate Gothic', serif;
+    color: #b61805;
+    font-size: 280%;
+}
+
+@media (max-width: 767px) {
+    #content-wrap :is(#page-title, .meta-title) {
+        font-size: 180%;
+    }
+}
+
+/* CUSTOM DIVS */
+
+.log {
+    border: solid 3px #000000;
+    color: #000000;
+    border-radius: 10px;
+    background: #d8d6d6;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-family: initial;
+}
+
+[[/code]]
+[[/<]]
+[[/collapsible]]
+[[/=]]
+[[/iftags]]

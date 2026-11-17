@@ -1,0 +1,261 @@
+[[module CSS]]
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Basic&family=IBM+Plex+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Avanguard-supplement-jp/1');
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Avanguard-supplement-jp/1
+]]
+
+[[iftags +テーマ]]
+
+[[div style="display:none"]]
+[[include theme:scp-human-resources-sigma-jp]]
+[[/div]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** Vanguard Supplement
+**翻訳責任者:** AI
+**翻訳年:** 2026
+**著者:** macro_au_micro（親テーマ: Human Resources Sigma-9 Theme / macro_au_micro作、CC BY-SA 3.0（SCP-Wiki既定、個別記載なし）、rev 13 で読み取り）
+**原題:** [https://scp-wiki.wikidot.com/theme:vanguard-supplement Vanguard Supplement]
+**著作権者:** [[*user macro_au_micro]]
+**作成年:** 2024
+**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:vanguard-supplement ソース（rev 17）]
+**初訳時参照リビジョン:** 17
+[[include :scp-jp:credit:end-preview]]
+
+日本語のページタイトルには Noto Serif JP（SIL Open Font License 1.1）を使います。Google Fonts から読み込まれます。
+
+[[=]]
++ 使用方法
+[[/=]]
+
+これはVanguard Sigma-9テーマの補完コードです。親テーマである[[[theme:scp-human-resources-sigma-jp|Human Resources Sigma-9 Theme]]]はtheme:scp-human-resources-sigma-jpとしてSCP-JPに投稿されており、このテーマはそれを hidden include で読み込みます。
+
+このテーマをページへ読み込むには、ページ内の任意の場所に以下を入れてください:
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:scp-human-resources-sigma-jp]]@@
+@@[[include :scp-jp:theme:vanguard-supplement-jp]]@@
+[[/div]]
+
+サイドバーを隠したい場合は、上記の後に以下を入れてください:
+
+[[div class="code"]]
+@@[[include :scp-jp:component:toggle-sidebar]]@@
+[[/div]]
+
+各ページのバックリンクは、ページ下部の「+ オプション」をクリックし、続けて「バックリンク」を選ぶと確認できます。
+
+----
+
+以下のコードでクリーム色のヴァンガード用ブロックを作成できます:
+
+[[div class="log"]]
+@@[[div class="log"]]@@
+[[/div]]
+
+----
+
+[[=]]
+
+[[collapsible hide="<<ソースコードを隠す>>" show="<<ソースコードを表示する>>"]]
+[[<]]
+[[=]]
++ ソースコード
+[[/=]]
+[[code type="css"]]
+
+/* ===== Vanguard Supplement（本テーマ） ===== */
+/*
+    Vanguard Supplement
+    [2024 Wikidot Theme]
+    By macro_au_micro
+    Adapted from the code used to transform the BHL Human Resources theme into a Vanguard theme by Placeholder McD in the SCP-6500 Emissary Path
+    Based on SCP Sigma 9 Theme created by Aelanna and Dr Devan
+*/
+
+/* HEADER */
+
+#header, div#header {
+     background-image: none;
+}
+
+#header::before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    left: -11.6rem;
+    top: 1rem;
+    z-index: -1;
+
+    background-image: url('https://scp-jp-storage.wdfiles.com/local--files/file%3A2963469-77-1a78/vanguard%20transparent.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: auto 9em;
+    filter: brightness(125%);
+}
+
+#header h1,
+#header h2 {
+    margin-left: 0;
+    float: none;
+    text-align: center;
+}
+
+#header h2 {
+    margin-top: 2rem;
+}
+
+#header h1 span,
+#header h2 span {
+    font-size: 0;
+    display: none;
+}
+
+#header h2::before {
+    color: rgb(207, 223, 245);
+    letter-spacing: -.02em;
+    line-height: 0;
+}
+
+#header h1 a::before {
+    content: "ANGUARD";
+    font-size: unset;
+}
+
+#header h2::before {
+    content: "保護 - 正常化 - 告知";
+    font-size: 110%;
+}
+
+div#container-wrap {
+    background-image:
+        repeating-linear-gradient(45deg,
+        hsla(0, 0%, 100%, 0),
+        hsla(0, 0%, 100%, 0) 0.25vh,
+        rgba(88, 88, 88, 0.1) 0.35vh,
+        rgba(88, 88, 88, 0.2) 0.5vh),
+
+        repeating-linear-gradient(180deg,
+        hsla(0, 0%, 100%, 0),
+        hsla(0, 0%, 100%, 0) 0.25vh,
+        rgba(88, 88, 88, 0.1) 0.35vh,
+        rgba(88, 88, 88, 0.2) 0.5vh),
+
+        linear-gradient(to bottom,
+        rgba(7, 7, 40, 1) 10.125rem,
+        rgba(72, 114, 163, 1) 7.625rem,
+        rgba(72, 114, 163, 1) calc(91% - 0.125rem),
+        rgba(63, 97, 145, 1) calc(99% - 0.125rem)) !important;
+
+    background-size: 100% 10.125rem, 100% 10.125rem, 100% 11.438rem !important;
+    background-repeat: no-repeat;
+}
+
+/* BODY */
+
+div#content-wrap {
+    top: 1.375rem;
+    padding-bottom: 1rem;
+}
+
+/* TOP BAR */
+
+#top-bar {
+    top: 162px;
+}
+
+/* LOGIN & SEARCH */
+
+@media (min-width: 767px){
+    #login-status {
+        left: -4%;
+    }
+    #search-top-box {
+        right: 4%;
+        top: .5rem;
+    }
+}
+
+@media (max-width: 767px){
+    #search-top-box{
+        top: 40px;
+        right: 0;
+        font-size: 80%;
+    }
+    #login-status{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    #my-account{
+         display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    #header::before {
+        left: -6rem;
+    }
+
+    #header h1 {
+        position: relative;
+        left: 0.4em;
+    }
+}
+
+/* PAGE TITLE */
+
+#content-wrap :is(#page-title, .meta-title) {
+    text-align: center;
+    font-family: 'Copperplate Gothic', 'Noto Serif JP', serif;
+    color: #b61805;
+    font-size: 280%;
+}
+
+@media (max-width: 767px) {
+    #content-wrap :is(#page-title, .meta-title) {
+        font-size: 180%;
+    }
+}
+
+/* CUSTOM DIVS */
+
+.log {
+    border: solid 3px #000000;
+    color: #000000;
+    border-radius: 10px;
+    background: #d8d6d6;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-family: initial;
+}
+
+[[/code]]
+[[/<]]
+[[/collapsible]]
+[[/=]]
+
+[[include :scp-jp:component:license-box-backend
+|author=macro_au_micro]]
+
+> **名称:** Human Resources Sigma-9 Theme（theme:scp-human-resources-sigma-jp を hidden include で参照。rev 13 で原版を読み取り）
+> **作者:** macro_au_micro
+> **ライセンス:** CC BY-SA 3.0（SCP-Wiki既定。ページ内に個別記載なし）
+> **出典:** [https://scp-wiki.wikidot.com/theme:scp-human-resources-sigma SCP-Wiki「Human Resources Sigma-9 Theme」]
+> **補足:** 親テーマ（Human Resources Sigma-9 Theme）は theme:scp-human-resources-sigma-jp としてSCP-JPに投稿済みのため、このページはそれを hidden include で読み込みます（EN版と同じ方式です）。
+
+> **ファイル名:** hrlogo.png
+> **名称:** SCP Human Resources ロゴ
+> **作者:** 記載なし
+> **ライセンス:** 記載なし
+> **出典:** [https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-44-ziy1/hrlogo.png SCP-JP ファイルストレージ（人事部門テーマ）]
+
+[[include :scp-jp:component:license-box-end]]
+[[/iftags]]

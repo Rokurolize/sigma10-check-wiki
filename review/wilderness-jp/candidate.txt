@@ -1,0 +1,423 @@
+[[iftags +テーマ]]
+[[module CSS]]
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css");
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css");
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=1
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css
+]]
+
+[[include :scp-jp:component:interwiki-style
+| priority=2
+| theme=https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css
+]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** Wilderness Theme
+**翻訳責任者:** AI
+**翻訳年:** 2026
+**著者:** stormbreath（DarkStuffとの共同制作版を基に制作）
+**原題:** [https://scp-wiki.wikidot.com/theme:wilderness Wilderness Theme]
+**著作権者:** [[*user stormbreath]]
+**作成年:** 2019
+**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:wilderness ソース（rev 56）]
+**初訳時参照リビジョン:** 56
+[[include :scp-jp:credit:end-preview]]
+
+このページで使うフォントはすべて SIL Open Font License 1.1 の下で配布され、Google Fonts から読み込まれます。日本語テキストには Noto Sans JP が使われます。
+
++ 使い方
+
+++* 注記: これはBlack Highlighterをベースにしたテーマです。このテーマを使うには、Black Highlighterテーマも読み込む必要があります。[[[theme:black-highlighter-theme|詳しくはこちら]]]。
+
+このテーマを読み込むには、ページに以下を追加してください:
+
+> @@[[include :scp-jp:theme:black-highlighter-theme]]@@
+> @@[[include :scp-jp:theme:wilderness-jp]]@@
+
+トランスプライド版のロゴを使う場合は、2つ目のincludeを{{@@[[include :scp-jp:theme:wilderness-jp transpride=a]]@@}}に変更してください。
+
+[[=]]
++ テーマカラー:
+[[/=]]
+
+[[include :scp-jp:component:theme-squares -=-
+| color1-name=**Celery**
+| color1-variable=--wilson-header
+| color1-info=(163, 193, 98)
+| color2-name=**Primrose**
+| color2-variable=--wilson-subtitle
+| color2-info=(200, 226, 147)
+| color3-name=**Wilson**
+| color3-variable=--wilson-body
+| color3-info=(209, 237, 154)
+| subcolor1-name=**Lisbon**
+| subcolor1-variable=--gray-monochrome
+| subcolor1-info=(80, 68, 37)
+| subcolor1-has-light-text=1
+| subcolor2-name=**Reef**
+| subcolor2-variable=--pale-gray-monochrome
+| subcolor2-info=(220, 242, 176)
+| subcolor3-name=**Moss**
+| subcolor3-variable=--bright-accent
+| subcolor3-info=(126, 145, 84)
+| subcolor3-has-light-text=1
+| subcolor4-name=**Grove**
+| subcolor4-variable=--medium-accent
+| subcolor4-info=(90,125,90)
+| subcolor4-has-light-text=1
+| subcolor5-name=**Undergrowth**
+| subcolor5-variable=--dark-accent
+| subcolor5-info=(20, 100, 20)
+| subcolor5-has-light-text=1
+| subcolor6-name=**West Coast**
+| subcolor6-variable=--wilson-text
+| subcolor6-info=(102, 87, 49)
+| subcolor6-has-light-text=1
+]]
+
+[[module CSS]]
+.colors-container .colors .color {
+    flex-basis: initial;
+}
+[[/module]]
+
+----
+
+||~ ヘッダー ||~ ヘッダー ||~ ヘッダー||
+|| セル内容 || セル内容 || セル内容 ||
+
+[# 未訪問リンク] ([[[component:wilderness-theme|訪問済みリンク]]])
+
+[[collapsible show="+ 折りたたみ" hide="- 折りたたみ"]]
+折りたたみ内の内容
+[[/collapsible]]
+
+----
+
+[[div class="wilson-border"]]
+[[div class="wilson-header"]]
+ヘッダー
+[[/div]]
+[[div class="wilson-subtitle"]]
+サブタイトル
+[[/div]]
+[[div class="wilson-body"]]
+全ての部分を囲む枠には:
+> @@[[div class="wilson-border"]]@@
+
+ヘッダー要素には:
+> @@[[div class="wilson-header"]]@@
+> @@ここにテキスト。@@
+> @@[[/div]]@@
+
+サブタイトル要素には:
+> @@[[div class="wilson-subtitle"]]@@
+> @@ここにテキスト。@@
+> @@[[/div]]@@
+
+
+本文要素（この部分）には:
+> @@[[div class="wilson-body"]]@@
+> @@ここにテキスト。@@
+> @@[[/div]]@@
+
+全ての内部要素の末尾に以下を置いて、枠を閉じます:
+> @@[[/div]]@@
+[[/div]]
+[[/div]]
+
+----
+
+[[collapsible show="+ テーマコードを表示" hide="- テーマコードを隠す"]]
+[[code type="css"]]
+@import url('https://fonts.googleapis.com/css2?family=National+Park:wght@200;400;800&family=Comfortaa:wght@600&family=Dosis:wght@200&family=Nunito:wght@800&family=Noto+Sans+JP:wght@400;700&display=swap');
+
+/*
+    Wilson's Wildlife Theme
+    [2019 Wikidot Theme]
+    Theme produced stormbreath, based on a prior theme by stormbreath and DarkStuff.
+    The WWS logo was created by Jade Skylar, both standard and trans pride version.
+    The National Park Font is licensed under the SIL Open Font License and can be found here:
+https://fonts.google.com/specimen/National+Park
+
+*/
+
+:root {
+    /* イントロ */
+    --theme-base: "nuscp"
+        --theme-id: "wilderness-theme"
+        --theme-name: "Wilderness Theme";
+
+    /* フォント */
+    --national-park-thin: 'National Park', 'Dosis', 'Noto Sans JP', sans-serif;
+    --national-park: 'National Park', 'Comfortaa', 'Noto Sans JP', sans-serif;
+    --national-park-heavy: 'National Park', 'Nunito', 'Noto Sans JP', sans-serif;
+    --header-font: var(--national-park);
+    --title-font: var(--national-park-heavy);
+
+    /* ヘッダー */
+    --logo-image: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Awilderness-jp/wws-trans-pride.png");
+    --header-title: "ウィルソンズ・ワイルドライフ・ソリューションズ";
+    --header-subtitle: "あらゆる生き物を歓迎する場所";
+    --header-gradient-color-bottom: var(--wilson-header);
+    --header-gradient-color-middle: var(--wilson-subtitle);
+    --header-gradient-color-top: var(--wilson-body);
+    --diagonal-stripes: unset;
+
+    /* 色 */
+    --pale-gray-monochrome: 220, 242, 176;
+    /* ウィルソンの引用色（淡い緑）*/
+    --gray-monochrome: 80, 68, 37;
+    /* 暗い茶色 */
+    --dark-gray-monochrome: 66, 56, 31;
+    /* さらに暗い茶色 */
+    --bright-accent: 126, 145, 84;
+    /* 明るい緑 */
+    --medium-accent: 90, 125, 90;
+    /* 中間の緑 */
+    --dark-accent: 20, 100, 20;
+    /* 暗い緑 */
+    --pale-accent: 0, 170, 5;
+    /* 薄い緑 */
+    --newpage-color: 102, 221, 102;
+    /* 薄い緑 */
+
+    --wilson-header: 163, 193, 98;
+    /* ウィルソンズ形式のヘッダー */
+    --wilson-subtitle: 200, 226, 147;
+    /* ウィルソンズ形式のサブタイトル */
+    --wilson-body: 209, 237, 154;
+    /* ウィルソンズ形式の本文 */
+    --wilson-text: 102, 87, 49;
+    /* ウィルソンズ形式のテキスト */
+
+    --swatch-topmenu-bg-color: var(--gray-monochrome);
+    --rating-module-button-color: var(--wilson-text);
+    --rating-module-text-color: var(--wilson-text);
+
+    --ui-button-hover-outline: var(--gray-monochrome);
+    --ui-button-hover-bg: var(--gray-monochrome);
+    --pale-accent: var(--dark-accent);
+    /* 訪問済みリンク色*/
+    --barColour: var(--wilson-header);
+    /* Ayerの情報モジュール */
+}
+
+#main-content {
+    --pagetags-title-bg: var(--gray-monochrome);
+    --ui-icon-hover-bg: var(--gray-monochrome);
+}
+
+#side-bar,
+#interwiki {
+    --sidebar-links-text: var(--wilson-text);
+    --sideblock-heading-text-color: var(--wilson-text);
+    --sideblock-heading-bg-color: var(--wilson-subtitle);
+    --sideblock-heading-border-color: var(--gray-monochrome);
+    --sidebar-resources-bg-color: var(--wilson-header), 0.25;
+}
+
+/* ヘッダー */
+#header h1 a {
+    font-family: var(--national-park-thin);
+    font-weight: 200;
+}
+
+#header h2 span:before {
+    font-family: var(--national-park);
+}
+
+@media only screen and (max-width: 768px) {
+    #header {
+        background-size: 0.625rem 2.500rem;
+        background-repeat: no-repeat;
+        background-position: left 0.75rem top 1.1875rem;
+        background-clip: border-box;
+        background-size: auto 5.375rem;
+    }
+}
+
+/* モバイルでのサイズ問題を修正 */
+
+#page-title,
+.meta-title {
+    color: rgb(var(--wilson-text));
+    font-family: var(--national-park-thin);
+    font-weight: 200;
+    font-size: 2.25em;
+}
+
+#page-title::after,
+.meta-title::after {
+    background-color: rgb(var(--wilson-text));
+}
+
+@media only screen and (min-width: 56.25rem) {
+
+    #page-title,
+    .meta-title {
+        font-size: 3em;
+    }
+}
+
+/* トップバー */
+#header div#top-bar {
+    font-family: var(--national-park);
+}
+
+/* サイドバー */
+#side-bar .heading,
+#interwiki .heading {
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 0.313em;
+}
+
+#side-bar .heading p,
+#interwiki .heading p {
+    font-family: var(--national-park-heavy);
+    font-weight: 800;
+}
+
+#side-bar div.menu-item a:-webkit-any-link,
+#interwiki div.menu-item a:-webkit-any-link {
+    font-family: var(--national-park);
+}
+
+#side-bar div.menu-item a:-moz-any-link,
+#interwiki div.menu-item a:-moz-any-link {
+    font-family: var(--national-park);
+}
+
+#side-bar div.menu-item .text,
+#side-bar div.menu-item a:any-link,
+#interwiki div.menu-item .text,
+#interwiki div.menu-item a:any-link {
+    font-family: var(--national-park);
+}
+
+/* ページ評価モジュール */
+.page-rate-widget-box .rate-points .number {
+    font-size: calc(var(--base-font-size));
+}
+
+.page-rate-widget-box,
+#page-content .rate-box-with-credit-button {
+    --rating-module-bottom-border-color: var(--gray-monochrome);
+}
+
+.page-rate-widget-box .rate-points {
+    font-family: 'Comfortaa', 'Noto Sans JP', sans-serif;
+}
+
+#page-content .rate-box-with-credit-button>.creditButton>p>a::before {
+    background-color: rgb(var(--wilson-text));
+}
+
+#page-content .rate-box-with-credit-button>.creditButton:hover {
+    background: rgba(var(--bright-accent), 0.8);
+}
+
+#page-content .modalbox {
+    background: rgb(var(--pale-gray-monochrome)) !important;
+    color: rgb(var(--wilson-text));
+    border-radius: 0;
+    box-shadow: 0 2px 6px rgba(var(--bright-accent), 0.5);
+}
+
+/* 要素 */
+:is(blockquote,.blockquote,div.blockquote,[class*=blockquote]) {
+    border-color: transparent;
+    color: rgb(var(--wilson-text));
+    background: rgb(var(--pale-gray-monochrome));
+    box-shadow: none;
+}
+
+hr {
+    --swatch-tertiary-color: var(--wilson-text);
+}
+
+.scp-image-block .scp-image-caption {
+    border-color: rgb(var(--wilson-text));
+    color: rgb(var(--wilson-text));
+    /* 画像キャプションを再配色 */
+}
+
+#page-content .wiki-content-table tr th {
+    background-color: rgb(var(--wilson-header));
+    color: white;
+    border-color: rgb(var(--wilson-text));
+}
+
+/* ウィルソンズ用Div */
+/* フォールバックが発生した場合でもテーマの最重要部分が視覚的に保たれるよう、ウィルソンズ用Divは@supports(--css:variables)の外側に置きます。 */
+div.wilson-border {
+    border: 0.063em solid rgb(102, 87, 49);
+    box-shadow: 0em 0.063em 0.125em rgba(0, 0, 0, 0.1);
+}
+
+div.wilson-header {
+    color: white;
+    background: rgb(163, 193, 98);
+    padding: 1em;
+    font-size: 150%;
+    font-weight: bold;
+    text-align: center;
+}
+
+div.wilson-subtitle {
+    color: rgb(102, 87, 49);
+    background: rgba(200, 226, 147);
+    padding: 0.313em;
+    text-align: right;
+    font-weight: bold;
+    --wght: 800
+}
+
+div.wilson-body {
+    color: rgba(102, 87, 49);
+    background: rgb(209, 237, 154);
+    padding: 1em;
+}
+[[/code]]
+[[/collapsible]]
+
+------
+
+[[include :scp-jp:component:license-box-backend
+|author=stormbreath]]
+
+> **ファイル名:** wws-trans-pride.png
+> **名称:** WWS Logo (Trans Pride version)
+> **作者:** Jade Skylar
+> **ライセンス:** CC BY-SA 3.0
+> **出典:** [https://scp-wiki.wikidot.com/theme:wilderness SCP-Wiki「Wilderness Theme」] に添付されたファイル（WWS_Logo_2.2_abrv.pngの派生物）
+
+> **名称:** National Park Font（Regular, Thin, Heavy）
+> **作者:** Andrea Herstowski, Ben Hoepner, Jeremy Shellhorn
+> **ライセンス:** SIL Open Font License
+> **出典:** [https://fonts.google.com/specimen/National+Park Google Fonts]（この移植では Google Fonts から直接読み込みます）
+
+[[include :scp-jp:component:license-box-end]]
+[[/iftags]]
+
+>[[ift{$transpride}gs -テーマ]]
+>[[iftags]]
+[[module CSS]]
+:root {
+    --logo-image: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Awilderness-jp/wws-trans-pride.png");
+}
+[[/module]]
+>[[/iftags]]
+>[[/ift{$transpride}gs]]
+
+[[module css]]
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Awilderness-jp/1")
+[[/module]]
+[[include :scp-jp:component:interwiki-style
+| priority=3
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Awilderness-jp/1
+]]

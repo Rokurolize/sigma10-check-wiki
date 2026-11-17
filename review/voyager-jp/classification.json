@@ -1,0 +1,625 @@
+{
+ "tool": "classify_hunks.py",
+ "classifier_version": "0.1.0",
+ "signature_table_version": "2026-11-17.1",
+ "theme": {
+  "dir": "voyager-jp",
+  "cand_fullname": "theme:voyager-jp",
+  "orig_fullname": "theme:voyager",
+  "wiki": "scp-wiki-cn",
+  "revision": "2",
+  "kind": "standard",
+  "verdict": "PASS",
+  "original_file": "review/voyager-jp/original.txt",
+  "candidate_file": "review/voyager-jp/candidate.txt",
+  "original_sha256": "a5d767988d4ad991db9c69f891c2b5cb1798779d8132379d825d8f7c0c3b84ac",
+  "candidate_sha256": "b6494f68a8c914f05ed226a258b68340426dc50c0511dbd5135d9978c40ef5da",
+  "original_lines": 953,
+  "candidate_lines": 961
+ },
+ "topology": {
+  "original_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     2,
+     568
+    ],
+    "lines": 566
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     816,
+     860
+    ],
+    "lines": 44
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     865,
+     905
+    ],
+    "lines": 40
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     910,
+     930
+    ],
+    "lines": 20
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     933,
+     952
+    ],
+    "lines": 19
+   }
+  ],
+  "candidate_components": [
+   {
+    "kind": "code-css",
+    "range": [
+     270,
+     950
+    ],
+    "lines": 680
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     954,
+     957
+    ],
+    "lines": 3
+   }
+  ],
+  "moves": [
+   {
+    "from_kind": "module-css",
+    "to_kind": "code-css",
+    "orig_range": [
+     2,
+     568
+    ],
+    "cand_range": [
+     270,
+     950
+    ],
+    "similarity": 0.989,
+    "basis": "content"
+   }
+  ],
+  "external_own_delivery": false
+ },
+ "blocks": [
+  {
+   "id": "B1",
+   "orig_range": [
+    0,
+    5
+   ],
+   "cand_range": [
+    0,
+    274
+   ],
+   "orig_lines": "1-5",
+   "cand_lines": "1-274",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "COMPONENT-SWAP",
+    "CREDIT-PREVIEW",
+    "DELIVERY-MOVE",
+    "IFTAGS",
+    "INCLUDE-REPOINT",
+    "JPFONT-LOAD",
+    "SIGMA-PLUS-JP",
+    "TASL-FIELDS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "CREDIT-PREVIEW",
+   "primary_section": 1,
+   "label_prec": {
+    "CREDIT-PREVIEW": "A",
+    "TASL-FIELDS": "A",
+    "INCLUDE-REPOINT": "A",
+    "SIGMA-PLUS-JP": "A",
+    "COMPONENT-SWAP": "B",
+    "IFTAGS": "A",
+    "JPFONT-LOAD": "A",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "CREDIT-PREVIEW": {
+     "cand": [
+      [
+       5,
+       6
+      ],
+      [
+       14,
+       15
+      ]
+     ]
+    },
+    "TASL-FIELDS": {
+     "cand": [
+      [
+       6,
+       14
+      ],
+      [
+       140,
+       141
+      ]
+     ]
+    },
+    "INCLUDE-REPOINT": {
+     "orig": [
+      [
+       0,
+       2
+      ]
+     ],
+     "cand": [
+      [
+       0,
+       2
+      ]
+     ]
+    },
+    "SIGMA-PLUS-JP": {
+     "cand": [
+      [
+       0,
+       1
+      ],
+      [
+       154,
+       155
+      ]
+     ],
+     "orig": [
+      [
+       0,
+       1
+      ]
+     ]
+    },
+    "COMPONENT-SWAP": {
+     "orig": [
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       2
+      ],
+      [
+       1,
+       2
+      ]
+     ],
+     "cand": [
+      [
+       0,
+       1
+      ],
+      [
+       159,
+       160
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       159,
+       160
+      ]
+     ]
+    },
+    "IFTAGS": {
+     "orig": [],
+     "cand": [
+      [
+       3,
+       4
+      ]
+     ]
+    },
+    "JPFONT-LOAD": {
+     "cand": [
+      [
+       272,
+       274
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "orig": [
+      [
+       0,
+       5
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "bare form removed",
+    "absence claim needs base subtraction (resolved base)",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[include :scp-wiki-cn:component:sigma-plus]]",
+   "first_added": "[[include component:sigma-plus-jp]]"
+  },
+  {
+   "id": "B2",
+   "orig_range": [
+    59,
+    60
+   ],
+   "cand_range": [
+    328,
+    329
+   ],
+   "orig_lines": "60-60",
+   "cand_lines": "329-329",
+   "channel_pair": [
+    "module-css",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       328,
+       329
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    --ad_title-font: \"Noto Sans SC\", sans-serif;",
+   "first_added": "    --ad_title-font: \"Noto Sans JP\", sans-serif;"
+  },
+  {
+   "id": "B3",
+   "orig_range": [
+    567,
+    817
+   ],
+   "cand_range": [
+    836,
+    836
+   ],
+   "orig_lines": "568-817",
+   "cand_lines": "at 837",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [
+    "EXHIBIT-RESTRUCTURE",
+    "IFTAGS"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "IFTAGS": "A",
+    "EXHIBIT-RESTRUCTURE": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "IFTAGS": {
+     "orig": [
+      [
+       569,
+       570
+      ]
+     ],
+     "cand": []
+    },
+    "EXHIBIT-RESTRUCTURE": {}
+   },
+   "notes": [
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[/module]]",
+   "first_added": ""
+  },
+  {
+   "id": "B4",
+   "orig_range": [
+    859,
+    866
+   ],
+   "cand_range": [
+    878,
+    878
+   ],
+   "orig_lines": "860-866",
+   "cand_lines": "at 879",
+   "channel_pair": [
+    "code-css",
+    "body"
+   ],
+   "labels": [
+    "EXHIBIT-RESTRUCTURE"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "EXHIBIT-RESTRUCTURE": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "EXHIBIT-RESTRUCTURE": {}
+   },
+   "notes": [
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[/code]]",
+   "first_added": ""
+  },
+  {
+   "id": "B5",
+   "orig_range": [
+    904,
+    911
+   ],
+   "cand_range": [
+    916,
+    916
+   ],
+   "orig_lines": "905-911",
+   "cand_lines": "at 917",
+   "channel_pair": [
+    "code-css",
+    "body"
+   ],
+   "labels": [
+    "EXHIBIT-RESTRUCTURE"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "EXHIBIT-RESTRUCTURE": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "EXHIBIT-RESTRUCTURE": {}
+   },
+   "notes": [
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[/code]]",
+   "first_added": ""
+  },
+  {
+   "id": "B6",
+   "orig_range": [
+    928,
+    934
+   ],
+   "cand_range": [
+    933,
+    933
+   ],
+   "orig_lines": "929-934",
+   "cand_lines": "at 934",
+   "channel_pair": [
+    "code-css",
+    "body"
+   ],
+   "labels": [
+    "EXHIBIT-RESTRUCTURE"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "EXHIBIT-RESTRUCTURE": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "EXHIBIT-RESTRUCTURE": {}
+   },
+   "notes": [
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced"
+   ],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": ""
+  },
+  {
+   "id": "B7",
+   "orig_range": [
+    950,
+    950
+   ],
+   "cand_range": [
+    949,
+    951
+   ],
+   "orig_lines": "at 951",
+   "cand_lines": "950-951",
+   "channel_pair": [
+    "body",
+    "code-css"
+   ],
+   "labels": [
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       949,
+       951
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": "[[/code]]"
+  },
+  {
+   "id": "B8",
+   "orig_range": [
+    951,
+    952
+   ],
+   "cand_range": [
+    952,
+    952
+   ],
+   "orig_lines": "952-952",
+   "cand_lines": "at 953",
+   "channel_pair": [
+    "code-css",
+    "body"
+   ],
+   "labels": [
+    "CSS-BODY"
+   ],
+   "primary": "CSS-BODY",
+   "primary_section": 8,
+   "label_prec": {
+    "CSS-BODY": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "CSS-BODY": {}
+   },
+   "notes": [
+    "no other signature matched"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[/code]]",
+   "first_added": ""
+  },
+  {
+   "id": "B9",
+   "orig_range": [
+    953,
+    953
+   ],
+   "cand_range": [
+    953,
+    961
+   ],
+   "orig_lines": "at 954",
+   "cand_lines": "954-961",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "DRAFT-HOST",
+    "SELF-DELIVERY"
+   ],
+   "primary": "SELF-DELIVERY",
+   "primary_section": 3,
+   "label_prec": {
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "SELF-DELIVERY": {
+     "orig": [],
+     "cand": [
+      [
+       955,
+       956
+      ],
+      [
+       959,
+       960
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       955,
+       956
+      ],
+      [
+       959,
+       960
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": ""
+  }
+ ],
+ "derived_presence": {},
+ "summary": {
+  "blocks": 9,
+  "specific": 5,
+  "heuristic": 4,
+  "residue": 0,
+  "skipped": 0,
+  "reindent_blocks": 0,
+  "label_counts": {
+   "COMPONENT-SWAP": 1,
+   "CREDIT-PREVIEW": 1,
+   "DELIVERY-MOVE": 3,
+   "IFTAGS": 2,
+   "INCLUDE-REPOINT": 1,
+   "JPFONT-LOAD": 1,
+   "SIGMA-PLUS-JP": 1,
+   "TASL-FIELDS": 1,
+   "TRANS-UNANCHORED": 1,
+   "EXHIBIT-RESTRUCTURE": 4,
+   "CSS-BODY": 1,
+   "DRAFT-HOST": 1,
+   "SELF-DELIVERY": 1
+  }
+ },
+ "residue": [],
+ "skeleton": {
+  "sha256": "fea6a38eca932fb823f551dbd41de85f68a3c15a4edb2c922e04887f976a9701",
+  "status": "written (new)"
+ }
+}

@@ -1,0 +1,412 @@
+[[iftags +theme]]
+[[module CSS]]
+@import url("https://cdn.scpwiki.com/theme/en/black-highlighter/css/min/normalize.min.css");
+@import url("https://cdn.scpwiki.com/theme/en/black-highlighter/css/min/black-highlighter.min.css");
+[[/module]]
+
+[[include :scp-wiki:component:interwiki-style
+| priority=1
+| theme=https://cdn.scpwiki.com/theme/en/black-highlighter/css/min/normalize.min.css
+]]
+
+[[include :scp-wiki:component:interwiki-style
+| priority=2
+| theme=https://cdn.scpwiki.com/theme/en/black-highlighter/css/min/black-highlighter.min.css
+]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
+
++ Usage
+
+++* Note: This is a Black Highlighter based theme. You will need to import the Black Highlighter theme as well in order to use this theme. [[[theme:black-highlighter-theme|To learn more go here]]].
+
+To import this theme, add this to your page:
+
+> @@[[include :scp-wiki:theme:black-highlighter-theme]]@@
+> @@[[include :scp-wiki:theme:wilderness]]@@
+
+You can use a trans pride version of the logo by including changing the second include to {{@@[[include :scp-wiki:theme:wilderness transpride=a]]@@}}.
+
+[[=]]
++ Theme Colors:
+[[/=]]
+
+[[include :scp-wiki:component:theme-squares -=-
+| color1-name=**Celery**
+| color1-variable=--wilson-header
+| color1-info=(163, 193, 98)
+| color2-name=**Primrose**
+| color2-variable=--wilson-subtitle
+| color2-info=(200, 226, 147)
+| color3-name=**Wilson**
+| color3-variable=--wilson-body
+| color3-info=(209, 237, 154)
+| subcolor1-name=**Lisbon**
+| subcolor1-variable=--gray-monochrome
+| subcolor1-info=(80, 68, 37)
+| subcolor1-has-light-text=1
+| subcolor2-name=**Reef**
+| subcolor2-variable=--pale-gray-monochrome
+| subcolor2-info=(220, 242, 176)
+| subcolor3-name=**Moss**
+| subcolor3-variable=--bright-accent
+| subcolor3-info=(126, 145, 84)
+| subcolor3-has-light-text=1
+| subcolor4-name=**Grove**
+| subcolor4-variable=--medium-accent
+| subcolor4-info=(90,125,90)
+| subcolor4-has-light-text=1
+| subcolor5-name=**Undergrowth**
+| subcolor5-variable=--dark-accent
+| subcolor5-info=(20, 100, 20)
+| subcolor5-has-light-text=1
+| subcolor6-name=**West Coast**
+| subcolor6-variable=--wilson-text
+| subcolor6-info=(102, 87, 49)
+| subcolor6-has-light-text=1
+]]
+
+[[module CSS]]
+.colors-container .colors .color {
+    flex-basis: initial;
+}
+[[/module]]
+
+----
+
+||~ header ||~ header ||~ header||
+|| cell-content || cell-content || cell-content ||
+
+[# Unvisited Link] ([[[component:wilderness-theme|Visited Link]]])
+
+[[collapsible show="+ A collapsible" hide="- A collapsible"]]
+Something inside the collapsible
+[[/collapsible]]
+
+----
+
+[[div class="wilson-border"]]
+[[div class="wilson-header"]]
+Header
+[[/div]]
+[[div class="wilson-subtitle"]]
+Subtitle
+[[/div]]
+[[div class="wilson-body"]]
+For the border surrounding all parts:
+> @@[[div class="wilson-border"]]@@
+
+For the header element:
+> @@[[div class="wilson-header"]]@@
+> @@Text here.@@
+> @@[[/div]]@@
+
+For the subtitle element:
+> @@[[div class="wilson-subtitle"]]@@
+> @@Text here.@@
+> @@[[/div]]@@
+
+
+For the body element (this part):
+> @@[[div class="wilson-body"]]@@
+> @@Text here.@@
+> @@[[/div]]@@
+
+Close the border by putting the following at the end of all inner elements:
+> @@[[/div]]@@
+[[/div]]
+[[/div]]
+
+----
+
+[[collapsible show="+ Show theme code" hide="- Hide theme code"]]
+[[code type="css"]]
+@import url("https://scp-wiki.wdfiles.com/local--files/theme%3Awilderness/national-park-full.css");
+@import url('https://fonts.bunny.net/css2?family=Comfortaa:wght@600&family=Dosis:wght@200&family=Nunito:wght@800&display=swap');
+
+/*
+    Wilson's Wildlife Theme
+    [2019 Wikidot Theme]
+    Theme produced stormbreath, based on a prior theme by stormbreath and DarkStuff.
+    The WWS logo was created by Jade Skylar, both standard and trans pride version.
+    The National Park Font is licensed under the SIL Open Font License and can be found here: 
+https://nationalparktypeface.com/
+
+*/
+
+:root {
+    /* Intro */
+    --theme-base: "nuscp"
+    	--theme-id: "wilderness-theme"
+    	--theme-name: "Wilderness Theme";
+
+    /* Fonts */
+    --national-park-thin: 'national_parkthin', 'Dosis', sans-serif;
+    --national-park: 'national_parkregular', 'Comfortaa', sans-serif;
+    --national-park-heavy: 'national_parkheavy', 'Nunito', sans-serif;
+    --header-font: var(--national-park);
+    --title-font: var(--national-park-heavy);
+
+    /* Header */
+    --logo-image: url("https://scp-wiki.wdfiles.com/local--files/theme%3Awilsons/wws-trans-pride.png");
+    --header-title: "Wilson's Wildlife Solutions";
+    --header-subtitle: "Where all critters are welcome!";
+    --header-gradient-color-bottom: var(--wilson-header);
+    --header-gradient-color-middle: var(--wilson-subtitle);
+    --header-gradient-color-top: var(--wilson-body);
+    --diagonal-stripes: unset;
+
+    /* Colors */
+    --pale-gray-monochrome: 220, 242, 176;
+    /* Wilson's Quote Color (Light Green)*/
+    --gray-monochrome: 80, 68, 37;
+    /* dark brown */
+    --dark-gray-monochrome: 66, 56, 31;
+    /* darker brown */
+    --bright-accent: 126, 145, 84;
+    /* bright green */
+    --medium-accent: 90, 125, 90;
+    /* medium green */
+    --dark-accent: 20, 100, 20;
+    /* dark green */
+    --pale-accent: 0, 170, 5;
+    /* pale green */
+    --newpage-color: 102, 221, 102;
+    /* pale green */
+
+    --wilson-header: 163, 193, 98;
+    /* Wilson's Format Header */
+    --wilson-subtitle: 200, 226, 147;
+    /* Wilson's Format Subtitle */
+    --wilson-body: 209, 237, 154;
+    /* Wilson's Format Body */
+    --wilson-text: 102, 87, 49;
+    /* Wilson's Format Text */
+
+    --swatch-topmenu-bg-color: var(--gray-monochrome);
+    --rating-module-button-color: var(--wilson-text);
+    --rating-module-text-color: var(--wilson-text);
+
+    --ui-button-hover-outline: var(--gray-monochrome);
+    --ui-button-hover-bg: var(--gray-monochrome);
+    --pale-accent: var(--dark-accent);
+    /* Visited Link Color*/
+    --barColour: var(--wilson-header);
+    /* Ayer's Info Module */
+}
+
+#main-content {
+    --pagetags-title-bg: var(--gray-monochrome);
+    --ui-icon-hover-bg: var(--gray-monochrome);
+}
+
+#side-bar,
+#interwiki {
+    --sidebar-links-text: var(--wilson-text);
+    --sideblock-heading-text-color: var(--wilson-text);
+    --sideblock-heading-bg-color: var(--wilson-subtitle);
+    --sideblock-heading-border-color: var(--gray-monochrome);
+    --sidebar-resources-bg-color: var(--wilson-header), 0.25;
+}
+
+/* HEADER */
+#header h1 a {
+    font-family: var(--national-park-thin);
+}
+
+#header h2 span:before {
+    font-family: var(--national-park);
+}
+
+@media only screen and (max-width: 768px) {
+    #header {
+    	background-size: 0.625rem 2.500rem;
+    	background-repeat: no-repeat;
+    	background-position: left 0.75rem top 1.1875rem;
+    	background-clip: border-box;
+    	background-size: auto 5.375rem;
+    }
+}
+
+/* Fixes mobile sizing issue */
+
+#page-title,
+.meta-title {
+    color: rgb(var(--wilson-text));
+    font-family: var(--national-park-thin);
+    font-size: 2.25em;
+}
+
+#page-title::after,
+.meta-title::after {
+    background-color: rgb(var(--wilson-text));
+}
+
+@media only screen and (min-width: 56.25rem) {
+
+    #page-title,
+    .meta-title {
+    	font-size: 3em;
+    }
+}
+
+/* Top Bar */
+#header div#top-bar {
+    font-family: var(--national-park);
+}
+
+/* Side Bar */
+#side-bar .heading,
+#interwiki .heading {
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 0.313em;
+}
+
+#side-bar .heading p,
+#interwiki .heading p {
+    font-family: var(--national-park-heavy);
+}
+
+#side-bar div.menu-item a:-webkit-any-link, 
+#interwiki div.menu-item a:-webkit-any-link {
+    font-family: var(--national-park);
+}
+
+#side-bar div.menu-item a:-moz-any-link, 
+#interwiki div.menu-item a:-moz-any-link {
+    font-family: var(--national-park);
+}
+
+#side-bar div.menu-item .text,
+#side-bar div.menu-item a:any-link,
+#interwiki div.menu-item .text,
+#interwiki div.menu-item a:any-link {
+    font-family: var(--national-park);
+}
+
+/* Page Rating Module */
+.page-rate-widget-box .rate-points .number {
+    font-size: calc(var(--base-font-size));
+}
+
+.page-rate-widget-box,
+#page-content .rate-box-with-credit-button {
+    --rating-module-bottom-border-color: var(--gray-monochrome);
+}
+
+.page-rate-widget-box .rate-points {
+    font-family: 'Comfortaa', sans-serif;
+}
+
+#page-content .rate-box-with-credit-button>.creditButton>p>a::before {
+    background-color: rgb(var(--wilson-text));
+}
+
+#page-content .rate-box-with-credit-button>.creditButton:hover {
+    background: rgba(var(--bright-accent), 0.8);
+}
+
+#page-content .modalbox {
+    background: rgb(var(--pale-gray-monochrome)) !important;
+    color: rgb(var(--wilson-text));
+    border-radius: 0;
+    box-shadow: 0 2px 6px rgba(var(--bright-accent), 0.5);
+}
+
+/* Elements */
+:is(blockquote,.blockquote,div.blockquote,[class*=blockquote]) {
+    border-color: transparent;
+    color: rgb(var(--wilson-text));
+    background: rgb(var(--pale-gray-monochrome));
+    box-shadow: none;
+}
+
+hr {
+    --swatch-tertiary-color: var(--wilson-text);
+}
+
+.scp-image-block .scp-image-caption {
+    border-color: rgb(var(--wilson-text));
+    color: rgb(var(--wilson-text));
+    /*Recolors Image captions */
+}
+
+#page-content .wiki-content-table tr th {
+    background-color: rgb(var(--wilson-header));
+    color: white;
+    border-color: rgb(var(--wilson-text));
+}
+
+/* Wilson's Divs */
+/* Wilson's Divs placed outside supports @supports(--css:variables) to ensure most crucial part of theme remains visually intact if fallback occurs. */
+div.wilson-border {
+    border: 0.063em solid rgb(102, 87, 49);
+    box-shadow: 0em 0.063em 0.125em rgba(0, 0, 0, 0.1);
+}
+
+div.wilson-header {
+    color: white;
+    background: rgb(163, 193, 98);
+    padding: 1em;
+    font-size: 150%;
+    font-weight: bold;
+    text-align: center;
+}
+
+div.wilson-subtitle {
+    color: rgb(102, 87, 49);
+    background: rgba(200, 226, 147);
+    padding: 0.313em;
+    text-align: right;
+    font-weight: bold;
+    --wght: 800
+}
+
+div.wilson-body {
+    color: rgba(102, 87, 49);
+    background: rgb(209, 237, 154);
+    padding: 1em;
+}
+[[/code]]
+[[/collapsible]]
+
+------
+
+[[include :scp-wiki:component:license-box-theme]]
+=====
+> **Filename:** WWS_Logo_2.2_abrv.png
+> **Author:** [[*user Jade Skylar]]
+> **License:** CC BY-SA 3.0
+
+> **Filename:** wws-trans-pride.png
+> **Derivative of:** WWS_Logo_2.2_abrv.png
+
+> **Filename:** national-park.css
+> **Name:** National Park Typeface (Regular, Thin, Heavy)
+> **Author:** Andrea Herstowski, Ben Hoepner and Jeremy Shellhorn
+> **License:** SIL Open Font License
+> **Source Link:** https://nationalparktypeface.com/
+=====
+[[include :scp-wiki:component:license-box-end]]
+[[/iftags]]
+
+>[[ift{$transpride}gs -theme]]
+>[[iftags]]
+[[module CSS]]
+:root {
+    --logo-image: url("https://scp-wiki.wdfiles.com/local--files/theme%3Awilsons/wws-trans-pride.png");
+}
+[[/module]]
+>[[/iftags]]
+>[[/ift{$transpride}gs]]
+
+[[module css]]
+@import url("https://scp-wiki.wdfiles.com/local--code/theme%3Awilderness/1")
+[[/module]]
+[[include :scp-wiki:component:interwiki-style
+| priority=3
+| theme=https://scp-wiki.wdfiles.com/local--code/theme%3Awilderness/1
+]]

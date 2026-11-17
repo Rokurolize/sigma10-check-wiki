@@ -1,0 +1,1060 @@
+{
+ "tool": "classify_hunks.py",
+ "classifier_version": "0.1.0",
+ "signature_table_version": "2026-11-17.1",
+ "theme": {
+  "dir": "vanguard-supplement-jp",
+  "cand_fullname": "theme:vanguard-supplement-jp",
+  "orig_fullname": "theme:vanguard-supplement",
+  "wiki": "scp-wiki",
+  "revision": "17",
+  "kind": "standard",
+  "verdict": "PASS",
+  "original_file": "review/vanguard-supplement-jp/original.txt",
+  "candidate_file": "review/vanguard-supplement-jp/candidate.txt",
+  "original_sha256": "b311da0347c166373d515f3c00a70e72cafd19962466d2e89bb0f3d1260c1194",
+  "candidate_sha256": "4cbdf8d33a257ca37764871acd872b786403008f750a11373ee96449632d16af",
+  "original_lines": 225,
+  "candidate_lines": 261
+ },
+ "topology": {
+  "original_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     0,
+     3
+    ],
+    "lines": 3
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     52,
+     221
+    ],
+    "lines": 169
+   }
+  ],
+  "candidate_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     0,
+     6
+    ],
+    "lines": 6
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     70,
+     240
+    ],
+    "lines": 170
+   }
+  ],
+  "moves": [],
+  "external_own_delivery": true
+ },
+ "blocks": [
+  {
+   "id": "B1",
+   "orig_range": [
+    1,
+    2
+   ],
+   "cand_range": [
+    1,
+    5
+   ],
+   "orig_lines": "2-2",
+   "cand_lines": "2-5",
+   "channel_pair": [
+    "module-css",
+    "module-css"
+   ],
+   "labels": [
+    "DELIVERY-HOST",
+    "DRAFT-HOST",
+    "FONT-IMPORT",
+    "JPFONT-LOAD",
+    "SELF-DELIVERY"
+   ],
+   "primary": "DELIVERY-HOST",
+   "primary_section": 3,
+   "label_prec": {
+    "DELIVERY-HOST": "A",
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A",
+    "JPFONT-LOAD": "A",
+    "FONT-IMPORT": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "DELIVERY-HOST": {
+     "orig": [
+      [
+       1,
+       2
+      ]
+     ],
+     "cand": [
+      [
+       1,
+       5
+      ]
+     ]
+    },
+    "SELF-DELIVERY": {
+     "orig": [
+      [
+       1,
+       2
+      ]
+     ],
+     "cand": [
+      [
+       4,
+       5
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       4,
+       5
+      ]
+     ]
+    },
+    "JPFONT-LOAD": {
+     "cand": [
+      [
+       1,
+       2
+      ]
+     ]
+    },
+    "FONT-IMPORT": {
+     "orig": [],
+     "cand": [
+      [
+       2,
+       4
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form",
+    "absence claim needs base subtraction (resolved base)",
+    "the deciding evidence is the load probe (KB-04)"
+   ],
+   "partial_notes": [],
+   "first_removed": "@import url('https://scp-wiki.wikidot.com/local--code/theme:vanguard-supplement/1');",
+   "first_added": "@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');"
+  },
+  {
+   "id": "B2",
+   "orig_range": [
+    4,
+    5
+   ],
+   "cand_range": [
+    7,
+    13
+   ],
+   "orig_lines": "5-5",
+   "cand_lines": "8-13",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "DRAFT-HOST",
+    "IFTAGS",
+    "SELF-DELIVERY",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "SELF-DELIVERY",
+   "primary_section": 3,
+   "label_prec": {
+    "IFTAGS": "A",
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "IFTAGS": {
+     "orig": [
+      [
+       4,
+       5
+      ]
+     ],
+     "cand": [
+      [
+       12,
+       13
+      ]
+     ]
+    },
+    "SELF-DELIVERY": {
+     "orig": [],
+     "cand": [
+      [
+       9,
+       10
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       9,
+       10
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "class (iii) draft-stage form",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[iftags +theme]]",
+   "first_added": "[[include :scp-jp:component:interwiki-style"
+  },
+  {
+   "id": "B3",
+   "orig_range": [
+    7,
+    8
+   ],
+   "cand_range": [
+    15,
+    16
+   ],
+   "orig_lines": "8-8",
+   "cand_lines": "16-16",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "COMPONENT-SWAP",
+    "INCLUDE-REPOINT"
+   ],
+   "primary": "COMPONENT-SWAP",
+   "primary_section": 2,
+   "label_prec": {
+    "INCLUDE-REPOINT": "A",
+    "COMPONENT-SWAP": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "INCLUDE-REPOINT": {
+     "orig": [
+      [
+       7,
+       8
+      ]
+     ],
+     "cand": [
+      [
+       15,
+       16
+      ]
+     ]
+    },
+    "COMPONENT-SWAP": {
+     "orig": [
+      [
+       7,
+       8
+      ]
+     ],
+     "cand": [
+      [
+       15,
+       16
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[include :scp-wiki:theme:scp-human-resources-sigma]]",
+   "first_added": "[[include theme:scp-human-resources-sigma-jp]]"
+  },
+  {
+   "id": "B4",
+   "orig_range": [
+    10,
+    14
+   ],
+   "cand_range": [
+    18,
+    31
+   ],
+   "orig_lines": "11-14",
+   "cand_lines": "19-31",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "CREDIT-PREVIEW",
+    "TASL-FIELDS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "CREDIT-PREVIEW",
+   "primary_section": 1,
+   "label_prec": {
+    "CREDIT-PREVIEW": "A",
+    "TASL-FIELDS": "A",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "CREDIT-PREVIEW": {
+     "cand": [
+      [
+       18,
+       19
+      ],
+      [
+       28,
+       29
+      ]
+     ]
+    },
+    "TASL-FIELDS": {
+     "cand": [
+      [
+       19,
+       22
+      ],
+      [
+       23,
+       28
+      ],
+      [
+       30,
+       31
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[>]]",
+   "first_added": "[[include :scp-jp:credit:start-preview]]"
+  },
+  {
+   "id": "B5",
+   "orig_range": [
+    16,
+    17
+   ],
+   "cand_range": [
+    33,
+    34
+   ],
+   "orig_lines": "17-17",
+   "cand_lines": "34-34",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "+ Usage",
+   "first_added": "+ 使用方法"
+  },
+  {
+   "id": "B6",
+   "orig_range": [
+    19,
+    20
+   ],
+   "cand_range": [
+    36,
+    37
+   ],
+   "orig_lines": "20-20",
+   "cand_lines": "37-37",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "LINK-REPOINT",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "LINK-REPOINT",
+   "primary_section": 7,
+   "label_prec": {
+    "LINK-REPOINT": "C",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "LINK-REPOINT": {
+     "orig": [
+      [
+       19,
+       20
+      ]
+     ],
+     "cand": [
+      [
+       36,
+       37
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "This is a code supplement used in conjunction with the [[[theme:scp-human-resources-sigma|SCP Human Resources Sigma-9 Theme]]] to make it a Vanguard Sigma-9 Theme.",
+   "first_added": "これはVanguard Sigma-9テーマの補完コードです。親テーマである[[[theme:scp-human-resources-sigma-jp|Human Resources Sigma-9 Theme]]]はtheme:scp-human-resources-sigma-jpとしてSCP-JPに投稿されており、このテーマはそれを hidden include で読み込みます。"
+  },
+  {
+   "id": "B7",
+   "orig_range": [
+    21,
+    22
+   ],
+   "cand_range": [
+    38,
+    39
+   ],
+   "orig_lines": "22-22",
+   "cand_lines": "39-39",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "To import this theme to your page, put the following anywhere inside it:",
+   "first_added": "このテーマをページへ読み込むには、ページ内の任意の場所に以下を入れてください:"
+  },
+  {
+   "id": "B8",
+   "orig_range": [
+    24,
+    26
+   ],
+   "cand_range": [
+    41,
+    43
+   ],
+   "orig_lines": "25-26",
+   "cand_lines": "42-43",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "COMPONENT-SWAP",
+    "ESCAPED-INCLUDE",
+    "INCLUDE-REPOINT"
+   ],
+   "primary": "COMPONENT-SWAP",
+   "primary_section": 2,
+   "label_prec": {
+    "INCLUDE-REPOINT": "A",
+    "ESCAPED-INCLUDE": "B",
+    "COMPONENT-SWAP": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "INCLUDE-REPOINT": {
+     "orig": [
+      [
+       24,
+       26
+      ]
+     ],
+     "cand": [
+      [
+       41,
+       43
+      ]
+     ]
+    },
+    "ESCAPED-INCLUDE": {
+     "orig": [
+      [
+       24,
+       26
+      ]
+     ],
+     "cand": [
+      [
+       41,
+       43
+      ]
+     ]
+    },
+    "COMPONENT-SWAP": {
+     "orig": [
+      [
+       24,
+       25
+      ],
+      [
+       24,
+       26
+      ],
+      [
+       25,
+       26
+      ]
+     ],
+     "cand": [
+      [
+       41,
+       43
+      ],
+      [
+       41,
+       43
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "@@[[include :scp-wiki:theme:scp-human-resources-sigma]]@@",
+   "first_added": "@@[[include :scp-jp:theme:scp-human-resources-sigma-jp]]@@"
+  },
+  {
+   "id": "B9",
+   "orig_range": [
+    28,
+    29
+   ],
+   "cand_range": [
+    45,
+    46
+   ],
+   "orig_lines": "29-29",
+   "cand_lines": "46-46",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "If you want to hide the side bar, put the following after the above:",
+   "first_added": "サイドバーを隠したい場合は、上記の後に以下を入れてください:"
+  },
+  {
+   "id": "B10",
+   "orig_range": [
+    31,
+    32
+   ],
+   "cand_range": [
+    48,
+    49
+   ],
+   "orig_lines": "32-32",
+   "cand_lines": "49-49",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "ESCAPED-INCLUDE",
+    "EXHIBIT-RESTRUCTURE",
+    "INCLUDE-REPOINT"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "INCLUDE-REPOINT": "A",
+    "ESCAPED-INCLUDE": "B",
+    "EXHIBIT-RESTRUCTURE": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "INCLUDE-REPOINT": {
+     "orig": [
+      [
+       31,
+       32
+      ]
+     ],
+     "cand": [
+      [
+       48,
+       49
+      ]
+     ]
+    },
+    "ESCAPED-INCLUDE": {
+     "orig": [
+      [
+       31,
+       32
+      ]
+     ],
+     "cand": [
+      [
+       48,
+       49
+      ]
+     ]
+    },
+    "EXHIBIT-RESTRUCTURE": {}
+   },
+   "notes": [
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced"
+   ],
+   "partial_notes": [],
+   "first_removed": "@@[[include :scp-wiki:component:toggle-sidebar]]@@",
+   "first_added": "@@[[include :scp-jp:component:toggle-sidebar]]@@"
+  },
+  {
+   "id": "B11",
+   "orig_range": [
+    34,
+    35
+   ],
+   "cand_range": [
+    51,
+    52
+   ],
+   "orig_lines": "35-35",
+   "cand_lines": "52-52",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "You can view any page's Backlinks by clicking \"+ Options\" at the bottom of the page, then \"Backlinks\".",
+   "first_added": "各ページのバックリンクは、ページ下部の「+ オプション」をクリックし、続けて「バックリンク」を選ぶと確認できます。"
+  },
+  {
+   "id": "B12",
+   "orig_range": [
+    38,
+    39
+   ],
+   "cand_range": [
+    55,
+    56
+   ],
+   "orig_lines": "39-39",
+   "cand_lines": "56-56",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "You can create the cream Vanguard div using the code below:",
+   "first_added": "以下のコードでクリーム色のヴァンガード用ブロックを作成できます:"
+  },
+  {
+   "id": "B13",
+   "orig_range": [
+    47,
+    48
+   ],
+   "cand_range": [
+    64,
+    66
+   ],
+   "orig_lines": "48-48",
+   "cand_lines": "65-66",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[collapsible hide=\"<<Hide Source Code>>\" show=\"<<Show Source Code>>\"]]",
+   "first_added": ""
+  },
+  {
+   "id": "B14",
+   "orig_range": [
+    50,
+    51
+   ],
+   "cand_range": [
+    68,
+    69
+   ],
+   "orig_lines": "51-51",
+   "cand_lines": "69-69",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "TRANSLATION-ANCHORED"
+   ],
+   "primary": "TRANSLATION-ANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "TRANSLATION-ANCHORED": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "TRANSLATION-ANCHORED": {}
+   },
+   "notes": [
+    "anchored pairs 1/1"
+   ],
+   "partial_notes": [],
+   "first_removed": "+ Source Code",
+   "first_added": "+ ソースコード"
+  },
+  {
+   "id": "B15",
+   "orig_range": [
+    54,
+    54
+   ],
+   "cand_range": [
+    72,
+    73
+   ],
+   "orig_lines": "at 55",
+   "cand_lines": "73-73",
+   "channel_pair": [
+    "body",
+    "code-css"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "TRANS-UNANCHORED",
+   "primary_section": 6,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": "/* ===== Vanguard Supplement（本テーマ） ===== */"
+  },
+  {
+   "id": "B16",
+   "orig_range": [
+    77,
+    78
+   ],
+   "cand_range": [
+    96,
+    97
+   ],
+   "orig_lines": "78-78",
+   "cand_lines": "97-97",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "ASSET-REHOST"
+   ],
+   "primary": "ASSET-REHOST",
+   "primary_section": 4,
+   "label_prec": {
+    "ASSET-REHOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "ASSET-REHOST": {
+     "orig": [
+      [
+       77,
+       78
+      ]
+     ],
+     "cand": [
+      [
+       96,
+       97
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background-image: url('https://scp-wiki.wdfiles.com/local--files/theme%3Avanguard-supplement/vanguard_transparent.png');",
+   "first_added": "    background-image: url('https://scp-jp-storage.wdfiles.com/local--files/file%3A2963469-77-1a78/vanguard%20transparent.png');"
+  },
+  {
+   "id": "B17",
+   "orig_range": [
+    113,
+    114
+   ],
+   "cand_range": [
+    132,
+    133
+   ],
+   "orig_lines": "114-114",
+   "cand_lines": "133-133",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "CSS-BODY"
+   ],
+   "primary": "CSS-BODY",
+   "primary_section": 8,
+   "label_prec": {
+    "CSS-BODY": "C"
+   },
+   "tier": "C",
+   "label_spans": {
+    "CSS-BODY": {}
+   },
+   "notes": [
+    "no other signature matched"
+   ],
+   "partial_notes": [],
+   "first_removed": "    content: \"SHELTER - NORMALIZE - INFORM\";",
+   "first_added": "    content: \"保護 - 正常化 - 告知\";"
+  },
+  {
+   "id": "B18",
+   "orig_range": [
+    197,
+    198
+   ],
+   "cand_range": [
+    216,
+    217
+   ],
+   "orig_lines": "198-198",
+   "cand_lines": "217-217",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "JPFONT-STACK"
+   ],
+   "primary": "JPFONT-STACK",
+   "primary_section": 4,
+   "label_prec": {
+    "JPFONT-STACK": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "JPFONT-STACK": {
+     "orig": [
+      [
+       197,
+       198
+      ]
+     ],
+     "cand": [
+      [
+       216,
+       217
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    font-family: 'Copperplate Gothic', serif;",
+   "first_added": "    font-family: 'Copperplate Gothic', 'Noto Serif JP', serif;"
+  },
+  {
+   "id": "B19",
+   "orig_range": [
+    224,
+    224
+   ],
+   "cand_range": [
+    243,
+    260
+   ],
+   "orig_lines": "at 225",
+   "cand_lines": "244-260",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "LICENSE-BOX",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "LICENSE-BOX",
+   "primary_section": 1,
+   "label_prec": {
+    "LICENSE-BOX": "A",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "LICENSE-BOX": {
+     "cand": [
+      [
+       244,
+       245
+      ],
+      [
+       259,
+       260
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "supplement (T4): the original carried no license box",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": ""
+  }
+ ],
+ "derived_presence": {},
+ "summary": {
+  "blocks": 19,
+  "specific": 10,
+  "heuristic": 8,
+  "residue": 1,
+  "skipped": 0,
+  "reindent_blocks": 0,
+  "label_counts": {
+   "DELIVERY-HOST": 1,
+   "DRAFT-HOST": 2,
+   "FONT-IMPORT": 1,
+   "JPFONT-LOAD": 1,
+   "SELF-DELIVERY": 2,
+   "IFTAGS": 1,
+   "TRANS-UNANCHORED": 10,
+   "COMPONENT-SWAP": 2,
+   "INCLUDE-REPOINT": 3,
+   "CREDIT-PREVIEW": 1,
+   "TASL-FIELDS": 1,
+   "LINK-REPOINT": 1,
+   "ESCAPED-INCLUDE": 2,
+   "EXHIBIT-RESTRUCTURE": 1,
+   "TRANSLATION-ANCHORED": 1,
+   "COMMENT-TEXT": 1,
+   "ASSET-REHOST": 1,
+   "CSS-BODY": 1,
+   "JPFONT-STACK": 1,
+   "LICENSE-BOX": 1
+  }
+ },
+ "residue": [
+  "B5"
+ ],
+ "skeleton": {
+  "sha256": "9b41dd20a216ec72e6065a2b8087fbde4de1346a1a0def6b0ecd5747be06aab8",
+  "status": "written (new)"
+ }
+}
