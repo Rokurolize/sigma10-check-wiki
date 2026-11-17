@@ -9,10 +9,10 @@ with `python3 review/build_review.py`; verify with
 |---|---|
 | original.txt | 358 |
 | candidate.txt | 396 |
-| Added | +90 |
-| Review-stage comments | 0 of the +90 added lines |
-| Removed | -57 |
-| Hunks | 8 |
+| Added | +92 |
+| Review-stage comments | 0 of the +92 added lines |
+| Removed | -59 |
+| Hunks | 10 |
 
 ```diff
 --- original.txt
@@ -61,7 +61,7 @@ with `python3 review/build_review.py`; verify with
 +**翻訳責任者:** AI
 +**翻訳年:** 2026
 +**原題:** 旅行者之书 版式
-+**著作権者:** 原語版ページの作成者に同じ（scp-wiki-cn の theme:travellers-book）
++**著作権者:** [[*user W Asriel]]
 +**作成年:** 2021
 +**初訳時参照リビジョン:** 14
 +**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:travellers-book 旅行者之书 版式]
@@ -196,6 +196,15 @@ with `python3 review/build_review.py`; verify with
  a.newpage{
      color: #888;
      transition: box-shadow 0.5s ease-out;
+@@ -181,7 +200,7 @@
+ }
+ 
+ #header {
+-    font-family:'宋体' !important;
++    font-family:'Noto Serif JP','宋体' !important;
+     width:100% !important;
+     background:transparent !important;
+     border-bottom: 3px solid #044004;
 @@ -191,7 +210,7 @@
      width:162px;
      height:162px;
@@ -205,6 +214,15 @@ with `python3 review/build_review.py`; verify with
      background-repeat:no-repeat;
      background-size:162px 162px;
      padding:0;
+@@ -213,7 +232,7 @@
+ #header h1 a::before {
+ //    color: #044004 !important;   
+     color:transparent;
+-    font-family:'等线' !important;
++    font-family:'Noto Sans JP','等线' !important;
+     content: "旅行者之书";
+     text-shadow:none !important;
+ }
 @@ -253,19 +272,19 @@
        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
      width: 300px;
@@ -246,7 +264,7 @@ with `python3 review/build_review.py`; verify with
 +[[/collapsible]]
 +
 +[[include :scp-jp:component:license-box-backend
-+|author=scp-wiki-cn theme:travellers-book の作者]]
++|author=W Asriel]]
 +
 +> **画像・フォントの出典:** 原語版の theme:travellers-book の記載に従います。sandbox・他Wiki・個人サイトの添付は候補ページに再ホストしています。原語版にライセンス表記が無い画像は、投稿前に著者へ確認してください。
 +

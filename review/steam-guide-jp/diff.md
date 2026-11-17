@@ -15,150 +15,342 @@ adjudicated explanation.
 | | Lines |
 |---|---|
 | original.txt | 2307 |
-| candidate.txt | 2136 |
-| Added | +201 |
-| Review-stage comments | 0 of the +201 added lines |
-| Removed | -372 |
-| Changed | 573 |
-| Change blocks | 108 |
-| Diff sections (context 3) | 16 |
+| candidate.txt | 2322 |
+| Added | +211 |
+| Review-stage comments | 0 of the +211 added lines |
+| Removed | -196 |
+| Changed | 407 |
+| Change blocks | 124 |
+| Diff sections (context 3) | 25 |
 
 ## Changed lines by auto-class (heuristic)
 
 | Auto-class | Blocks | Changed lines |
 |---|---|---|
-| mechanical | 5 | 10 |
-| translation | 47 | 158 |
-| supplement | 6 | 69 |
-| residual | 50 | 336 |
+| mechanical | 6 | 12 |
+| translation | 57 | 184 |
+| supplement | 7 | 44 |
+| residual | 54 | 167 |
 
 ## Change-block index
 
 | # | Section | Original | Candidate | +/− | Auto-class | Gist |
 |---|---|---|---|---|---|---|
-| 1 | 1 | 1–3 | 1–12 | +12/−3 | supplement | [[iftags +テーマ]] |
-| 2 | 1 | 5–9 | 14–17 | +4/−5 | supplement | ページ情報 |
-| 3 | 1 | 11–16 | 19–21 | +3/−6 | residual | [[>]] |
-| 4 | 1 | 18–34 | 23–37 | +15/−17 | supplement | [[%%content{0}%%include :scp-jp:credit:start-standalone]] |
-| 5 | 1 | 37–228 | 40–40 | +1/−192 | residual | [[include]]の後に以下のCSSモジュールを置くと、タイトル、サブタイトル、ロゴを変更できます。 |
-| 6 | 1 | 231–233 | 43–45 | +3/−3 | translation | @@ --title: "ヘッダー大見出し";@@ |
-| 7 | 1 | 237–237 | 49–49 | +1/−1 | translation | + 例 |
-| 8 | 1 | 239–239 | 51–51 | +1/−1 | translation | [[include component:image-block name=https://scp-wiki.wdfiles.com/local--file… |
-| 9 | 1 | 241–241 | 53–53 | +1/−1 | residual | ハイフンを5つ並べた「@@-----@@」で水平の区切り線を作成できます。引用ブロックなど他の部品の中に置かれていなければ、左右へ伸びてページを横断します… |
-| 10 | 1 | 243–243 | 55–55 | +1/−1 | translation | 見出しは、行頭に1個から6個のプラス記号「+」を入力して作成できます。 |
-| 11 | 1 | 245–245 | 57–57 | +1/−1 | translation | 通常の__下線__**太字**//斜体//--取り消し線--{{等幅}}__**//--{{文字}}--//**__ |
-| 12 | 1 | 247–247 | 59–59 | +1/−1 | translation | もう一つの通常の __下線__ **太字** //斜体// --取り消し線-- {{等幅}} __**//--{{文字}}--//**__ |
-| 13 | 1 | 249–249 | 61–61 | +1/−1 | residual | \| [https://www.baidu.com/ これはリンクです！] \| [[[4o4-n0t-f0und\|空のリンクです！]]] \| [[a hre… |
-| 14 | 1 | 256–257 | 68–69 | +2/−2 | translation | [[collapsible show="+ 折りたたみ - ここをクリック" hide="- 折りたたみ - ここをクリック"]] |
-| 15 | 1 | 259–259 | 71–71 | +1/−1 | translation | ++ 2 段見出し |
-| 16 | 1 | 261–261 | 73–73 | +1/−1 | translation | +++ 3 段見出し |
-| 17 | 1 | 263–263 | 75–75 | +1/−1 | translation | ++++ 4 段見出し |
-| 18 | 1 | 265–265 | 77–77 | +1/−1 | translation | +++++ 5 段見出し |
-| 19 | 1 | 267–267 | 79–79 | +1/−1 | translation | ++++++ 6 段見出し |
-| 20 | 1 | 273–274 | 85–86 | +2/−2 | residual | [[tab タブ]] |
-| 21 | 1 | 276–277 | 88–89 | +2/−2 | translation | [[tab タブ]] |
-| 22 | 1 | 279–279 | 91–91 | +1/−1 | translation | なんと精巧なのでしょう。 |
-| 23 | 1 | 281–282 | 93–94 | +2/−2 | residual | [[tab 長いタブ]] |
-| 24 | 1 | 284–284 | 96–96 | +1/−1 | residual | これは長いタブで、たくさんの文章があります。 |
-| 25 | 1 | 286–286 | 98–98 | +1/−1 | residual | これは長いタブで、たくさんの文章があります。 |
-| 26 | 1 | 288–288 | 100–100 | +1/−1 | residual | これは長いタブで、たくさんの文章があります。 |
-| 27 | 1 | 290–290 | 102–102 | +1/−1 | residual | これは長いタブで、たくさんの文章があります。 |
-| 28 | 1 | 292–292 | 104–104 | +1/−1 | residual | これは長いタブで、たくさんの文章があります。 |
-| 29 | 1 | 294–294 | 106–106 | +1/−1 | residual | これは長いタブで、たくさんの文章があります。 |
-| 30 | 1 | 296–296 | 108–108 | +1/−1 | residual | これは長いタブで、たくさんの文章があります。 |
-| 31 | 1 | 298–299 | 110–111 | +2/−2 | residual | [[tab さらに長いタブ]] |
-| 32 | 1 | 301–301 | 113–113 | +1/−1 | residual | これも長いタブで、たくさんの文章があります。 |
-| 33 | 1 | 303–303 | 115–115 | +1/−1 | residual | これも長いタブで、たくさんの文章があります。 |
-| 34 | 1 | 305–305 | 117–117 | +1/−1 | residual | これも長いタブで、たくさんの文章があります。 |
-| 35 | 1 | 307–307 | 119–119 | +1/−1 | residual | これも長いタブで、たくさんの文章があります。 |
-| 36 | 1 | 309–309 | 121–121 | +1/−1 | residual | これも長いタブで、たくさんの文章があります。 |
-| 37 | 1 | 311–311 | 123–123 | +1/−1 | residual | これも長いタブで、たくさんの文章があります。 |
-| 38 | 1 | 313–313 | 125–125 | +1/−1 | residual | これも長いタブで、たくさんの文章があります。 |
-| 39 | 1 | 315–315 | 127–127 | +1/−1 | residual | これも長いタブで、たくさんの文章があります。 |
-| 40 | 1 | 317–317 | 129–129 | +1/−1 | residual | これも長いタブで、たくさんの文章があります。 |
-| 41 | 1 | 319–319 | 131–131 | +1/−1 | residual | これも長いタブで、たくさんの文章があります。 |
-| 42 | 1 | 321–321 | 133–133 | +1/−1 | residual | これも長いタブで、たくさんの文章があります。 |
-| 43 | 1 | 323–323 | 135–135 | +1/−1 | residual | これも長いタブで、たくさんの文章があります。 |
-| 44 | 1 | 325–325 | 137–137 | +1/−1 | residual | これも長いタブで、たくさんの文章があります。 |
-| 45 | 1 | 327–327 | 139–139 | +1/−1 | residual | [[tab 空のタブ]] |
-| 46 | 1 | 329–329 | 141–141 | +1/−1 | residual | [[tab 空のタブ]] |
-| 47 | 1 | 331–331 | 143–143 | +1/−1 | residual | [[tab ここの空のタブにはとてもとても長い名前があります。どうしてこんなに長いのでしょう？]] |
-| 48 | 1 | 333–333 | 145–145 | +1/−1 | residual | [[tab 空のタブ]] |
-| 49 | 1 | 335–335 | 147–147 | +1/−1 | residual | [[tab 空のタブ]] |
-| 50 | 1 | 337–337 | 149–149 | +1/−1 | residual | [[tab 空のタブ]] |
-| 51 | 1 | 343–343 | 155–155 | +1/−1 | translation | > これは引用ブロックです。行頭に「> 」を付けると作成できます。 |
-| 52 | 1 | 345–345 | 157–157 | +1/−1 | translation | > さらに文章 |
-| 53 | 1 | 347–347 | 159–159 | +1/−1 | translation | > 区切り線 |
-| 54 | 1 | 349–349 | 161–161 | +1/−1 | translation | >> 入れ子になった引用ブロック |
-| 55 | 1 | 351–351 | 163–163 | +1/−1 | translation | >> 入れ子になった引用ブロック内の区切り線 |
-| 56 | 1 | 353–353 | 165–165 | +1/−1 | translation | >>> さらに入れ子になった引用ブロック |
-| 57 | 1 | 355–355 | 167–167 | +1/−1 | translation | >>> さらに入れ子になった引用ブロック内の区切り線 |
-| 58 | 1 | 357–357 | 169–169 | +1/−1 | translation | >>>> もう十分です。これ以上入れ子にしないでください |
-| 59 | 1 | 361–363 | 173–175 | +3/−3 | translation | \|\|~ これは \|\|~ 表です \|\| |
-| 60 | 1 | 366–367 | 178–179 | +2/−2 | translation | \|\| ここで \|\| 一番すごいのは誰？ \|\| |
-| 61 | 1 | 371–371 | 183–183 | +1/−1 | residual | このテーマにはガイド版もあります。[http://scp-jp.wikidot.com/theme:steam-guide/offset/1/page2_… |
-| 62 | 1 | 374–374 | 186–186 | +1/−1 | residual | [[%%content{0}%%include :scp-jp:component:toggle-sidebar]] |
-| 63 | 1 | 376–376 | 188–188 | +1/−1 | supplement | @import url("https://scp-jp.wdfiles.com/local--code/theme%3Asteam-guide/1"); |
-| 64 | 2 | 389–389 | 201–201 | +1/−1 | translation | + 概要 |
-| 65 | 3 | 397–398 | 209–210 | +2/−2 | translation | [[span class="title"]]ゲームガイド テーマ[[/span]] |
-| 66 | 4 | 413–413 | 225–225 | +1/−1 | translation | ? 件の評価 |
-| 67 | 5 | 421–421 | 233–233 | +1/−1 | residual | これはゲームガイドテーマの第2形態です。詳しい使用方法は本文を参照してください。 |
-| 68 | 5 | 423–423 | 235–235 | +1/−1 | translation | --スーパー変形形態！-- |
-| 69 | 6 | 440–440 | 252–252 | +1/−1 | translation | 作成者 |
-| 70 | 6 | 443–443 | 255–255 | +1/−1 | residual | [[image https://www.wikidot.com/avatar.php?userid=4915183]] |
-| 71 | 7 | 454–454 | 266–266 | +1/−1 | residual | [http://scp-jp.wikidot.com/system:page-tags/tag/%E3%83%86%E3%83%BC%E3%83%9E#p… |
-| 72 | 7 | 459–460 | 271–272 | +2/−2 | translation | 公開日 |
-| 73 | 7 | 463–464 | 275–276 | +2/−2 | translation | 2022年3月9日 23:59 |
-| 74 | 8 | 476–477 | 288–289 | +2/−2 | translation | このページの文字数 |
-| 75 | 9 | 487–487 | 299–299 | +1/−1 | translation | ガイド目次 |
-| 76 | 9 | 494–494 | 306–306 | +1/−1 | translation | ご覧のとおり、これは本テーマに付属するガイド版です。Wikidotの制限により、このデモの表示は実際の使用時と完全には一致しません。実際の表示を確認するに… |
-| 77 | 9 | 496–496 | 308–308 | +1/−1 | translation | ガイド版の使用方法はやや複雑です。以下の使用説明をよく読んでください。「//（任意）//」と記されていないパラメータはすべて入力する必要があります。パラメ… |
-| 78 | 9 | 498–498 | 310–310 | +1/−1 | translation | まずコンポーネントのスタイルコードを挿入します。 |
-| 79 | 9 | 500–500 | 312–312 | +1/−1 | mechanical | @@[[include :scp-jp:theme:steam-guide-jp inc-source=--]]]@@ |
-| 80 | 9 | 503–504 | 315–316 | +2/−2 | translation | \|\| **inc-source** \|\| 識別子 _ |
-| 81 | 9 | 507–507 | 319–319 | +1/−1 | translation | 次は概要部分です。これはページ最上部に置かれる枠です。以下に概要部分の全パラメータを説明します。//この部分は任意です。// |
-| 82 | 9 | 509–509 | 321–321 | +1/−1 | mechanical | @@[[include :scp-jp:theme:steam-guide-jp inc-preview=--]@@ |
-| 83 | 9 | 512–512 | 324–324 | +1/−1 | translation | \|content=これは例です |
-| 84 | 9 | 516–523 | 328–335 | +8/−8 | residual | \|\| **inc-preview** \|\| 識別子 _ |
-| 85 | 9 | 526–526 | 338–338 | +1/−1 | translation | これは概要部分の下に置かれる固定バーです。作者情報や評価モジュールを入れられます。//この部分は任意です。// |
-| 86 | 9 | 528–529 | 340–341 | +2/−2 | residual | @@[[include :scp-jp:theme:steam-guide-jp inc-sticky=--]@@ |
-| 87 | 9 | 533–535 | 345–347 | +3/−3 | translation | \|\| **inc-sticky** \|\| 識別子 _ |
-| 88 | 9 | 538–538 | 350–350 | +1/−1 | translation | 最後は本文本体です。本文部分とサイドバー部分を含みます。 |
-| 89 | 9 | 540–540 | 352–352 | +1/−1 | mechanical | @@[[include :scp-jp:theme:steam-guide-jp inc-sidebar-start=--]]]@@ |
-| 90 | 9 | 542–542 | 354–354 | +1/−1 | mechanical | @@[[include :scp-jp:theme:steam-guide-jp inc-sidebar-end=--]]]@@ |
-| 91 | 9 | 544–546 | 356–358 | +3/−3 | residual | @@[[include :scp-jp:theme:steam-guide-jp inc-content-start=--]]]@@ |
-| 92 | 9 | 549–556 | 361–368 | +8/−8 | translation | \|\| **inc-sidebar-start** \|\| 識別子 _ |
-| 93 | 9 | 559–559 | 371–371 | +1/−1 | residual | サイドバー開始とサイドバー終了の間には、作成者モジュールを1つ以上挿入できます。この部分は任意ですが、挿入しないと表示に問題が出る可能性があります。この部… |
-| 94 | 9 | 561–561 | 373–373 | +1/−1 | mechanical | @@[[include :scp-jp:theme:steam-guide-jp inc-creator=--]@@ |
-| 95 | 10 | 570–576 | 382–388 | +7/−7 | translation | \|\| **inc-creator** \|\| 識別子 _ |
-| 96 | 10 | 578–580 | 390–392 | +3/−3 | translation | //（任意）// \|\| プレイ中のゲーム \|\| |
-| 97 | 10 | 583–583 | 395–395 | +1/−1 | residual | サイドバー終了と本文開始の間には、追加サイドバーパネルを1つ以上挿入できます。//この部分は任意です。// |
-| 98 | 10 | 585–587 | 397–399 | +3/−3 | residual | @@[[include :scp-jp:theme:steam-guide-jp inc-panel-start=--]]]@@ |
-| 99 | 10 | 590–593 | 402–405 | +4/−4 | translation | \|\| **inc-panel-start** \|\| 識別子 _ |
-| 100 | 10 | 596–596 | 408–408 | +1/−1 | translation | 本文開始と本文終了の間に本文内容を入力します。 |
-| 101 | 10 | 603–603 | 415–423 | +9/−1 | residual | [[collapsible show="+ コードを展開" hide="- コードを折りたたむ"]] |
-| 102 | 10 | 605–605 | 425–426 | +2/−1 | supplement | /* ===== steam-guide：原語版の CSS をまとめたもの ===== */ |
-| 103 | 11 | 676–676 | 497–497 | +1/−1 | residual | font-family: 'Noto Sans JP', sans-serif; |
-| 104 | 12 | 687–687 | 508–508 | +1/−1 | residual | font-family: 'Noto Sans JP', sans-serif; |
-| 105 | 13 | 758–758 | 579–579 | +1/−1 | residual | font-family: 'Noto Sans JP', sans-serif; |
-| 106 | 14 | 777–777 | 598–598 | +1/−1 | residual | font-family: 'Noto Sans JP', sans-serif; |
-| 107 | 15 | 1139–1139 | 960–960 | +1/−1 | residual | font-family: "Noto Sans JP", sans-serif; |
-| 108 | 16 | — | 2129–2136 | +8/−0 | supplement | [[module css]] |
+| 1 | 1 | 7–7 | 7–7 | +1/−1 | supplement | @import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Asteam-gu… |
+| 2 | 1 | 12–12 | 12–12 | +1/−1 | residual | [[include :scp-jp:component:toggle-sidebar]] |
+| 3 | 1 | 14–14 | 14–14 | +1/−1 | supplement | @import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Asteam-gu… |
+| 4 | 2 | 25–25 | 25–25 | +1/−1 | translation | + 概要 |
+| 5 | 3 | 34–34 | 34–34 | +1/−1 | residual | [[#ifexpr {$exauthor} >= 1 \| %%created_by%% ほか{$exauthor}名との共作]][[#ifexpr {$e… |
+| 6 | 4 | 49–49 | 49–49 | +1/−1 | translation | %%rating_votes%% 件の評価 |
+| 7 | 5 | 79–79 | 79–79 | +1/−1 | translation | 作成者 |
+| 8 | 6 | 105–106 | 105–106 | +2/−2 | translation | 公開日 |
+| 9 | 6 | 109–110 | 109–110 | +2/−2 | translation | %%created_at\|%Y年%m月%d日 %H:%M%% |
+| 10 | 7 | 124–125 | 124–125 | +2/−2 | translation | このページの文字数 |
+| 11 | 8 | 142–142 | 142–142 | +1/−1 | translation | ガイド目次 |
+| 12 | 9 | 164–164 | 164–164 | +1/−1 | translation | {$achi-user} が達成しました |
+| 13 | 10 | 187–187 | 187–187 | +1/−1 | translation | [[iftags +テーマ]] |
+| 14 | 10 | 189–191 | 189–204 | +16/−3 | supplement | [[include :scp-jp:credit:start-preview]] |
+| 15 | 10 | 193–194 | 206–206 | +1/−2 | residual | **クレジットモジュール:** |
+| 16 | 10 | 197–199 | 209–213 | +5/−3 | supplement | [[%%content{0}%%include :scp-jp:credit:start-standalone]] |
+| 17 | 10 | 201–205 | 215–215 | +1/−5 | residual | これは[[*user hoah2333]]が制作した美的テーマであり、特定のSCP、Tale、GoIフォーマット、設定には紐づきません。デザイン面では[[… |
+| 18 | 10 | 207–209 | 217–219 | +3/−3 | residual | このテーマにはガイド版もあります。[http://scp-jp.wikidot.com/theme:steam-guide-jp/offset/1/pag… |
+| 19 | 10 | 211–223 | 221–221 | +1/−13 | residual | このテーマを使用するには、使用したい記事の冒頭に以下のコードを追加してください。 |
+| 20 | 10 | 225–225 | 223–223 | +1/−1 | mechanical | @@[[include :scp-jp:theme:steam-guide-jp inc-css-only=--]]]@@ |
+| 21 | 10 | 228–228 | 226–226 | +1/−1 | translation | [[include]]の後に以下のCSSモジュールを置くと、タイトル、サブタイトル、ロゴを変更できます。 |
+| 22 | 10 | 231–233 | 229–231 | +3/−3 | translation | @@ --title: "ヘッダー大見出し";@@ |
+| 23 | 10 | 237–237 | 235–235 | +1/−1 | translation | + 例 |
+| 24 | 10 | 239–239 | 237–237 | +1/−1 | translation | [[include component:image-block name=https://scp-wiki.wdfiles.com/local--file… |
+| 25 | 10 | 241–241 | 239–239 | +1/−1 | residual | ハイフンを5つ並べた「@@-----@@」で水平の区切り線を作成できます。引用ブロックなど他の部品の中に置かれていなければ、左右へ伸びてページを横断します… |
+| 26 | 10 | 243–243 | 241–241 | +1/−1 | translation | 見出しは、行頭に1個から6個のプラス記号「+」を入力して作成できます。 |
+| 27 | 10 | 245–245 | 243–243 | +1/−1 | translation | 通常の__下線__**太字**//斜体//--取り消し線--{{等幅}}__**//--{{文字}}--//**__ |
+| 28 | 10 | 247–247 | 245–245 | +1/−1 | translation | もう一つの通常の __下線__ **太字** //斜体// --取り消し線-- {{等幅}} __**//--{{文字}}--//**__ |
+| 29 | 10 | 249–249 | 247–247 | +1/−1 | residual | \| [https://www.baidu.com/ これはリンクです！] \| [[[4o4-n0t-f0und\|空のリンクです！]]] \| [[a hre… |
+| 30 | 10 | 256–257 | 254–255 | +2/−2 | translation | [[collapsible show="+ 折りたたみ - ここをクリック" hide="- 折りたたみ - ここをクリック"]] |
+| 31 | 10 | 259–259 | 257–257 | +1/−1 | translation | ++ 2 段見出し |
+| 32 | 10 | 261–261 | 259–259 | +1/−1 | translation | +++ 3 段見出し |
+| 33 | 10 | 263–263 | 261–261 | +1/−1 | translation | ++++ 4 段見出し |
+| 34 | 10 | 265–265 | 263–263 | +1/−1 | translation | +++++ 5 段見出し |
+| 35 | 10 | 267–267 | 265–265 | +1/−1 | translation | ++++++ 6 段見出し |
+| 36 | 10 | 273–274 | 271–272 | +2/−2 | residual | [[tab タブ]] |
+| 37 | 10 | 276–277 | 274–275 | +2/−2 | translation | [[tab タブ]] |
+| 38 | 10 | 279–279 | 277–277 | +1/−1 | translation | なんと精巧なのでしょう。 |
+| 39 | 10 | 281–282 | 279–280 | +2/−2 | residual | [[tab 長いタブ]] |
+| 40 | 10 | 284–284 | 282–282 | +1/−1 | residual | これは長いタブで、たくさんの文章があります。 |
+| 41 | 10 | 286–286 | 284–284 | +1/−1 | residual | これは長いタブで、たくさんの文章があります。 |
+| 42 | 10 | 288–288 | 286–286 | +1/−1 | residual | これは長いタブで、たくさんの文章があります。 |
+| 43 | 10 | 290–290 | 288–288 | +1/−1 | residual | これは長いタブで、たくさんの文章があります。 |
+| 44 | 10 | 292–292 | 290–290 | +1/−1 | residual | これは長いタブで、たくさんの文章があります。 |
+| 45 | 10 | 294–294 | 292–292 | +1/−1 | residual | これは長いタブで、たくさんの文章があります。 |
+| 46 | 10 | 296–296 | 294–294 | +1/−1 | residual | これは長いタブで、たくさんの文章があります。 |
+| 47 | 10 | 298–299 | 296–297 | +2/−2 | residual | [[tab さらに長いタブ]] |
+| 48 | 10 | 301–301 | 299–299 | +1/−1 | residual | これも長いタブで、たくさんの文章があります。 |
+| 49 | 10 | 303–303 | 301–301 | +1/−1 | residual | これも長いタブで、たくさんの文章があります。 |
+| 50 | 10 | 305–305 | 303–303 | +1/−1 | residual | これも長いタブで、たくさんの文章があります。 |
+| 51 | 10 | 307–307 | 305–305 | +1/−1 | residual | これも長いタブで、たくさんの文章があります。 |
+| 52 | 10 | 309–309 | 307–307 | +1/−1 | residual | これも長いタブで、たくさんの文章があります。 |
+| 53 | 10 | 311–311 | 309–309 | +1/−1 | residual | これも長いタブで、たくさんの文章があります。 |
+| 54 | 10 | 313–313 | 311–311 | +1/−1 | residual | これも長いタブで、たくさんの文章があります。 |
+| 55 | 10 | 315–315 | 313–313 | +1/−1 | residual | これも長いタブで、たくさんの文章があります。 |
+| 56 | 10 | 317–317 | 315–315 | +1/−1 | residual | これも長いタブで、たくさんの文章があります。 |
+| 57 | 10 | 319–319 | 317–317 | +1/−1 | residual | これも長いタブで、たくさんの文章があります。 |
+| 58 | 10 | 321–321 | 319–319 | +1/−1 | residual | これも長いタブで、たくさんの文章があります。 |
+| 59 | 10 | 323–323 | 321–321 | +1/−1 | residual | これも長いタブで、たくさんの文章があります。 |
+| 60 | 10 | 325–325 | 323–323 | +1/−1 | residual | これも長いタブで、たくさんの文章があります。 |
+| 61 | 10 | 327–327 | 325–325 | +1/−1 | residual | [[tab 空のタブ]] |
+| 62 | 10 | 329–329 | 327–327 | +1/−1 | residual | [[tab 空のタブ]] |
+| 63 | 10 | 331–331 | 329–329 | +1/−1 | residual | [[tab ここの空のタブにはとてもとても長い名前があります。どうしてこんなに長いのでしょう？]] |
+| 64 | 10 | 333–333 | 331–331 | +1/−1 | residual | [[tab 空のタブ]] |
+| 65 | 10 | 335–335 | 333–333 | +1/−1 | residual | [[tab 空のタブ]] |
+| 66 | 10 | 337–337 | 335–335 | +1/−1 | residual | [[tab 空のタブ]] |
+| 67 | 10 | 343–343 | 341–341 | +1/−1 | translation | > これは引用ブロックです。行頭に「> 」を付けると作成できます。 |
+| 68 | 10 | 345–345 | 343–343 | +1/−1 | translation | > さらに文章 |
+| 69 | 10 | 347–347 | 345–345 | +1/−1 | translation | > 区切り線 |
+| 70 | 10 | 349–349 | 347–347 | +1/−1 | translation | >> 入れ子になった引用ブロック |
+| 71 | 10 | 351–351 | 349–349 | +1/−1 | translation | >> 入れ子になった引用ブロック内の区切り線 |
+| 72 | 10 | 353–353 | 351–351 | +1/−1 | translation | >>> さらに入れ子になった引用ブロック |
+| 73 | 10 | 355–355 | 353–353 | +1/−1 | translation | >>> さらに入れ子になった引用ブロック内の区切り線 |
+| 74 | 10 | 357–357 | 355–355 | +1/−1 | translation | >>>> もう十分です。これ以上入れ子にしないでください |
+| 75 | 10 | 361–363 | 359–361 | +3/−3 | translation | \|\|~ これは \|\|~ 表です \|\| |
+| 76 | 10 | 366–367 | 364–365 | +2/−2 | translation | \|\| ここで \|\| 一番すごいのは誰？ \|\| |
+| 77 | 10 | 371–371 | 369–369 | +1/−1 | residual | このテーマにはガイド版もあります。[http://scp-jp.wikidot.com/theme:steam-guide-jp/offset/1/pag… |
+| 78 | 10 | 374–374 | 372–372 | +1/−1 | residual | [[%%content{0}%%include :scp-jp:component:toggle-sidebar]] |
+| 79 | 10 | 376–376 | 374–374 | +1/−1 | supplement | @import url("https://scp-jp.wdfiles.com/local--code/theme%3Asteam-guide-jp/1"… |
+| 80 | 11 | 389–389 | 387–387 | +1/−1 | translation | + 概要 |
+| 81 | 12 | 397–398 | 395–396 | +2/−2 | translation | [[span class="title"]]ゲームガイド テーマ[[/span]] |
+| 82 | 13 | 413–413 | 411–411 | +1/−1 | translation | ? 件の評価 |
+| 83 | 14 | 421–421 | 419–419 | +1/−1 | residual | これはゲームガイドテーマの第2形態です。詳しい使用方法は本文を参照してください。 |
+| 84 | 14 | 423–423 | 421–421 | +1/−1 | translation | --スーパー変形形態！-- |
+| 85 | 15 | 440–440 | 438–438 | +1/−1 | translation | 作成者 |
+| 86 | 15 | 443–443 | 441–441 | +1/−1 | residual | [[image https://www.wikidot.com/avatar.php?userid=4915183]] |
+| 87 | 16 | 454–454 | 452–452 | +1/−1 | residual | [http://scp-jp.wikidot.com/system:page-tags/tag/%E3%83%86%E3%83%BC%E3%83%9E#p… |
+| 88 | 16 | 459–460 | 457–458 | +2/−2 | translation | 公開日 |
+| 89 | 16 | 463–464 | 461–462 | +2/−2 | translation | 2022年3月9日 23:59 |
+| 90 | 17 | 476–477 | 474–475 | +2/−2 | translation | このページの文字数 |
+| 91 | 18 | 487–487 | 485–485 | +1/−1 | translation | ガイド目次 |
+| 92 | 18 | 494–494 | 492–492 | +1/−1 | translation | ご覧のとおり、これは本テーマに付属するガイド版です。Wikidotの制限により、このデモの表示は実際の使用時と完全には一致しません。実際の表示を確認するに… |
+| 93 | 18 | 496–496 | 494–494 | +1/−1 | translation | ガイド版の使用方法はやや複雑です。以下の使用説明をよく読んでください。「//（任意）//」と記されていないパラメータはすべて入力する必要があります。パラメ… |
+| 94 | 18 | 498–498 | 496–496 | +1/−1 | translation | まずコンポーネントのスタイルコードを挿入します。 |
+| 95 | 18 | 500–500 | 498–498 | +1/−1 | mechanical | @@[[include :scp-jp:theme:steam-guide-jp inc-source=--]]]@@ |
+| 96 | 18 | 503–504 | 501–502 | +2/−2 | translation | \|\| **inc-source** \|\| 識別子 _ |
+| 97 | 18 | 507–507 | 505–505 | +1/−1 | translation | 次は概要部分です。これはページ最上部に置かれる枠です。以下に概要部分の全パラメータを説明します。//この部分は任意です。// |
+| 98 | 18 | 509–509 | 507–507 | +1/−1 | mechanical | @@[[include :scp-jp:theme:steam-guide-jp inc-preview=--]@@ |
+| 99 | 18 | 512–512 | 510–510 | +1/−1 | translation | \|content=これは例です |
+| 100 | 18 | 516–523 | 514–521 | +8/−8 | residual | \|\| **inc-preview** \|\| 識別子 _ |
+| 101 | 18 | 526–526 | 524–524 | +1/−1 | translation | これは概要部分の下に置かれる固定バーです。作者情報や評価モジュールを入れられます。//この部分は任意です。// |
+| 102 | 18 | 528–529 | 526–527 | +2/−2 | residual | @@[[include :scp-jp:theme:steam-guide-jp inc-sticky=--]@@ |
+| 103 | 18 | 533–535 | 531–533 | +3/−3 | translation | \|\| **inc-sticky** \|\| 識別子 _ |
+| 104 | 18 | 538–538 | 536–536 | +1/−1 | translation | 最後は本文本体です。本文部分とサイドバー部分を含みます。 |
+| 105 | 18 | 540–540 | 538–538 | +1/−1 | mechanical | @@[[include :scp-jp:theme:steam-guide-jp inc-sidebar-start=--]]]@@ |
+| 106 | 18 | 542–542 | 540–540 | +1/−1 | mechanical | @@[[include :scp-jp:theme:steam-guide-jp inc-sidebar-end=--]]]@@ |
+| 107 | 18 | 544–546 | 542–544 | +3/−3 | residual | @@[[include :scp-jp:theme:steam-guide-jp inc-content-start=--]]]@@ |
+| 108 | 18 | 549–556 | 547–554 | +8/−8 | translation | \|\| **inc-sidebar-start** \|\| 識別子 _ |
+| 109 | 18 | 559–559 | 557–557 | +1/−1 | residual | サイドバー開始とサイドバー終了の間には、作成者モジュールを1つ以上挿入できます。この部分は任意ですが、挿入しないと表示に問題が出る可能性があります。この部… |
+| 110 | 18 | 561–561 | 559–559 | +1/−1 | mechanical | @@[[include :scp-jp:theme:steam-guide-jp inc-creator=--]@@ |
+| 111 | 19 | 570–576 | 568–574 | +7/−7 | translation | \|\| **inc-creator** \|\| 識別子 _ |
+| 112 | 19 | 578–580 | 576–578 | +3/−3 | translation | //（任意）// \|\| プレイ中のゲーム \|\| |
+| 113 | 19 | 583–583 | 581–581 | +1/−1 | residual | サイドバー終了と本文開始の間には、追加サイドバーパネルを1つ以上挿入できます。//この部分は任意です。// |
+| 114 | 19 | 585–587 | 583–585 | +3/−3 | residual | @@[[include :scp-jp:theme:steam-guide-jp inc-panel-start=--]]]@@ |
+| 115 | 19 | 590–593 | 588–591 | +4/−4 | translation | \|\| **inc-panel-start** \|\| 識別子 _ |
+| 116 | 19 | 596–596 | 594–594 | +1/−1 | translation | 本文開始と本文終了の間に本文内容を入力します。 |
+| 117 | 19 | 603–603 | 601–609 | +9/−1 | residual | [[collapsible show="+ コードを展開" hide="- コードを折りたたむ"]] |
+| 118 | 19 | 605–605 | 611–612 | +2/−1 | supplement | /* ===== steam-guide：原語版の CSS をまとめたもの ===== */ |
+| 119 | 20 | 676–676 | 683–683 | +1/−1 | residual | font-family: 'Noto Sans JP', sans-serif; |
+| 120 | 21 | 687–687 | 694–694 | +1/−1 | residual | font-family: 'Noto Sans JP', sans-serif; |
+| 121 | 22 | 758–758 | 765–765 | +1/−1 | residual | font-family: 'Noto Sans JP', sans-serif; |
+| 122 | 23 | 777–777 | 784–784 | +1/−1 | residual | font-family: 'Noto Sans JP', sans-serif; |
+| 123 | 24 | 1139–1139 | 1146–1146 | +1/−1 | residual | font-family: "Noto Sans JP", sans-serif; |
+| 124 | 25 | — | 2315–2322 | +8/−0 | supplement | [[module css]] |
 
 ## Full diff
 
 <details>
-<summary>Section 1 — original 1–379 · candidate 1–191 · +103/−291 · residual, supplement, translation</summary>
+<summary>Section 1 — original 4–17 · candidate 4–17 · +3/−3 · residual, supplement</summary>
 
 ```diff
-@@ -1,379 +1,191 @@
--[!-- {$clear}
--[[module ThemePreviewer noUi="true" theme_url="https://sigma9.scpwikicn.com/cn/cn/sigma9_ch.min.css"]]
--[!-- --]
+@@ -4,14 +4,14 @@
+ 
+ [!-- {$inc-css-only}
+ [[module css]]
+-@import url("https://scp-wiki-cn.wdfiles.com/local--code/theme:steam-guide/1");
++@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Asteam-guide-jp/1");
+ [[/module]]
+ [!-- --]
+ 
+ [!-- {$inc-source}
+-[[include :scp-wiki:component:toggle-sidebar]]
++[[include :scp-jp:component:toggle-sidebar]]
+ [[module css]]
+-@import url("https://scp-wiki-cn.wdfiles.com/local--code/theme:steam-guide/1");
++@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Asteam-guide-jp/1");
+ [[/module]]
+ [!-- --]
+ 
+```
+
+</details>
+
+<details>
+<summary>Section 2 — original 22–28 · candidate 22–28 · +1/−1 · translation</summary>
+
+```diff
+@@ -22,7 +22,7 @@
+ }
+ [[/module]]
+ [[div id="preview" style="display: none;"]]
+-+ 总览
+++ 概要
+ [[/div]]
+ [[module listpages range="."]]
+ [[div class="guidePriview"]]
+```
+
+</details>
+
+<details>
+<summary>Section 3 — original 31–37 · candidate 31–37 · +1/−1 · residual</summary>
+
+```diff
+@@ -31,7 +31,7 @@
+ [[/div]]
+ [[div_ class="priviewTitle"]]
+ [[span class="title"]]%%title%%[[/span]]
+-由 %%created_by%% [[#ifexpr {$exauthor} >= 1 | 和其他 {$exauthor} 人合作完成]][[#ifexpr {$exauthor} == 0 | 制作]]
++[[#ifexpr {$exauthor} >= 1 | %%created_by%% ほか{$exauthor}名との共作]][[#ifexpr {$exauthor} == 0 | %%created_by%% 制作]]
+ [[/div]]
+ 
+ [[div class="priviewRate rate[[#ifexpr %%rating_votes%% >= 15 && (%%rating_votes%%-%%rating%%)/2/%%rating_votes%% < 0.2 | 5 ]][[#ifexpr %%rating_votes%% >= 15 && (%%rating_votes%%-%%rating%%)/2/%%rating_votes%% >= 0.2 && (%%rating_votes%%-%%rating%%)/2/%%rating_votes%% < 0.4 | 4 ]][[#ifexpr %%rating_votes%% >= 15 && (%%rating_votes%%-%%rating%%)/2/%%rating_votes%% >= 0.4 && (%%rating_votes%%-%%rating%%)/2/%%rating_votes%% < 0.6 | 3 ]][[#ifexpr %%rating_votes%% >= 15 && (%%rating_votes%%-%%rating%%)/2/%%rating_votes%% >= 0.6 && (%%rating_votes%%-%%rating%%)/2/%%rating_votes%% < 0.8 | 2 ]][[#ifexpr %%rating_votes%% >= 15 && (%%rating_votes%%-%%rating%%)/2/%%rating_votes%% >= 0.8 && (%%rating_votes%%-%%rating%%)/2/%%rating_votes%% < 1 | 1 ]][[#ifexpr %%rating_votes%% >= 15 && (%%rating_votes%%-%%rating%%)/2/%%rating_votes%% > 1 | 6 ]][[#ifexpr %%rating_votes%% < 15 | 0 ]]"]]
+```
+
+</details>
+
+<details>
+<summary>Section 4 — original 46–52 · candidate 46–52 · +1/−1 · translation</summary>
+
+```diff
+@@ -46,7 +46,7 @@
+ [[div class="rateStar star5"]]
+ [[/div]]
+ [[div_ class="rateNumber"]]
+-%%rating_votes%% 个评分
++%%rating_votes%% 件の評価
+ [[/div]]
+ [[/div]]
+ 
+```
+
+</details>
+
+<details>
+<summary>Section 5 — original 76–82 · candidate 76–82 · +1/−1 · translation</summary>
+
+```diff
+@@ -76,7 +76,7 @@
+ [[image https://cdn.jsdelivr.net/gh/scp-cn-tech/sigma9@cn/img/black.png style="z-index=-1; opacity: 0.3;"]]
+ [[/a]]
+ [[div class="sidebarPanel"]]
+-创建者
++作成者
+ [!-- --]
+ 
+ [!-- {$inc-creator}
+```
+
+</details>
+
+<details>
+<summary>Section 6 — original 102–113 · candidate 102–113 · +4/−4 · translation</summary>
+
+```diff
+@@ -102,12 +102,12 @@
+ [[module listpages range="."]]
+ [[div class="sidebarDate"]]
+ [[div_ class="dateDescription"]]
+-发表于
+-更新日期
++公開日
++更新日
+ [[/div]]
+ [[div_ class="dateSelf"]]
+-%%created_at|%Y 年 %m 月 %d 日 %H:%M%%
+-%%updated_at|%Y 年 %m 月 %d 日 %H:%M%%
++%%created_at|%Y年%m月%d日 %H:%M%%
++%%updated_at|%Y年%m月%d日 %H:%M%%
+ [[/div]]
+ [[/div]]
+ [[/module]]
+```
+
+</details>
+
+<details>
+<summary>Section 7 — original 121–128 · candidate 121–128 · +2/−2 · translation</summary>
+
+```diff
+@@ -121,8 +121,8 @@
+ %%rating_votes%%
+ [[/div]]
+ [[div_ class="visitorDescription"]]
+-本页面字符数
+-当前评分人数
++このページの文字数
++現在の評価者数
+ [[/div]]
+ [[/div]]
+ [[/module]]
+```
+
+</details>
+
+<details>
+<summary>Section 8 — original 139–145 · candidate 139–145 · +1/−1 · translation</summary>
+
+```diff
+@@ -139,7 +139,7 @@
+ 
+ [!-- {$inc-content-start}
+ [[div class="sidebarPanel sidebarToc"]]
+-指南索引
++ガイド目次
+ [[toc]]
+ [[/div]]
+ 
+```
+
+</details>
+
+<details>
+<summary>Section 9 — original 161–167 · candidate 161–167 · +1/−1 · translation</summary>
+
+```diff
+@@ -161,7 +161,7 @@
+ [!-- --]
+ [!-- {$inc-achi}
+ [[div class="achi-user"]]
+-{$achi-user} 已达成
++{$achi-user} が達成しました
+ [[/div]]
+ [[div class="achi-container"]]
+ [[div class="achi-img"]]
+```
+
+</details>
+
+<details>
+<summary>Section 10 — original 184–379 · candidate 184–377 · +98/−100 · mechanical, residual, supplement, translation</summary>
+
+```diff
+@@ -184,196 +184,194 @@
+ [[/div]]
+ [!-- --]
+ 
+-[[iftags +版式]]
 +[[iftags +テーマ]]
-+[[module ListPages offset="@URL|0" range="."]]
+ [[module ListPages offset="@URL|0" range="."]]
+-[[%%content{0}%%module css]]
+-@import url("https://scp-wiki-cn.wdfiles.com/local--code/theme:steam-guide/1");
+-[[%%content{0}%%/module]]
 +[[include :scp-jp:credit:start-preview]]
-+**タイトル:** 游戏指南 版式
++**タイトル:** ゲームガイド テーマ
 +**翻訳責任者:** AI
 +**翻訳年:** 2026
 +**原題:** 游戏指南 版式
@@ -167,235 +359,41 @@ adjudicated explanation.
 +**初訳時参照リビジョン:** 10
 +**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:steam-guide 游戏指南 版式]
 +[[include :scp-jp:credit:end-preview]]
- 
--[!-- {$inc-css-only}
--[[module css]]
--@import url("https://scp-wiki-cn.wdfiles.com/local--code/theme:steam-guide/1");
--[[/module]]
--[!-- --]
++
 +ページ情報
 +[[%%content{0}%%include :scp-jp:credit:more]]
 +さらに詳しいページ情報
 +[[%%content{0}%%include :scp-jp:credit:end]]
- 
--[!-- {$inc-source}
--[[include :scp-wiki:component:toggle-sidebar]]
--[[module css]]
--@import url("https://scp-wiki-cn.wdfiles.com/local--code/theme:steam-guide/1");
--[[/module]]
--[!-- --]
-+[[>]]
++
+ [[>]]
+-**评分：**
+-[[%%content{0}%%module Rate]]
 +**クレジットモジュール:**
-+[[/>]]
+ [[/>]]
  
--[!-- {$inc-preview}
--[[module css]]
--#page-title {
--    display: none;
--}
--[[/module]]
--[[div id="preview" style="display: none;"]]
--+ 总览
--[[/div]]
--[[module listpages range="."]]
--[[div class="guidePriview"]]
--[[div class="priviewIcon" style="display: {$icon};"]]
--[[image {$icon}]]
--[[/div]]
--[[div_ class="priviewTitle"]]
--[[span class="title"]]%%title%%[[/span]]
--由 %%created_by%% [[#ifexpr {$exauthor} >= 1 | 和其他 {$exauthor} 人合作完成]][[#ifexpr {$exauthor} == 0 | 制作]]
+-[[>]]
+-**评分模块与著作信息模块：**
+-[[/>]]
 +[[%%content{0}%%include :scp-jp:credit:start-standalone]]
 +ページ情報
 +[[%%content{0}%%include :scp-jp:credit:more-standalone]]
 +さらに詳しいページ情報
 +[[%%content{0}%%include :scp-jp:credit:end-standalone]]
-+
-+これは[[*user hoah2333]]が制作した美的テーマであり、特定のSCP、Tale、GoIフォーマット、設定には紐づきません。デザイン面では[[*user Croquembouche]]の[[[theme:ar|アンダーソン・ロボティクス テーマ]]]を参考にしています。
-+
-+このテーマにはガイド版もあります。[http://scp-jp.wikidot.com/theme:steam-guide/offset/1/page2_limit/1 こちらから確認できます]。
-+このテーマにはガイド版もあります。[http://scp-jp.wikidot.com/theme:steam-guide/offset/1/page2_limit/1 こちらから確認できます]。
-+このテーマにはガイド版もあります。[http://scp-jp.wikidot.com/theme:steam-guide/offset/1/page2_limit/1 こちらから確認できます]。
-+
-+このテーマを使用するには、使用したい記事の冒頭に以下のコードを追加してください。
-+[[div class="code"]]
-+@@[[include :scp-jp:theme:steam-guide-jp inc-css-only=--]]]@@
- [[/div]]
  
--[[div class="priviewRate rate[[#ifexpr %%rating_votes%% >= 15 && (%%rating_votes%%-%%rating%%)/2/%%rating_votes%% < 0.2 | 5 ]][[#ifexpr %%rating_votes%% >= 15 && (%%rating_votes%%-%%rating%%)/2/%%rating_votes%% >= 0.2 && (%%rating_votes%%-%%rating%%)/2/%%rating_votes%% < 0.4 | 4 ]][[#ifexpr %%rating_votes%% >= 15 && (%%rating_votes%%-%%rating%%)/2/%%rating_votes%% >= 0.4 && (%%rating_votes%%-%%rating%%)/2/%%rating_votes%% < 0.6 | 3 ]][[#ifexpr %%rating_votes%% >= 15 && (%%rating_votes%%-%%rating%%)/2/%%rating_votes%% >= 0.6 && (%%rating_votes%%-%%rating%%)/2/%%rating_votes%% < 0.8 | 2 ]][[#ifexpr %%rating_votes%% >= 15 && (%%rating_votes%%-%%rating%%)/2/%%rating_votes%% >= 0.8 && (%%rating_votes%%-%%rating%%)/2/%%rating_votes%% < 1 | 1 ]][[#ifexpr %%rating_votes%% >= 15 && (%%rating_votes%%-%%rating%%)/2/%%rating_votes%% > 1 | 6 ]][[#ifexpr %%rating_votes%% < 15 | 0 ]]"]]
--[[div class="rateStar star1"]]
--[[/div]]
--[[div class="rateStar star2"]]
--[[/div]]
--[[div class="rateStar star3"]]
--[[/div]]
--[[div class="rateStar star4"]]
--[[/div]]
--[[div class="rateStar star5"]]
--[[/div]]
--[[div_ class="rateNumber"]]
--%%rating_votes%% 个评分
--[[/div]]
--[[/div]]
--
--[[div class="priviewbr"]]
------
--[[/div]]
--[[div_ class="priviewContent"]]
--{$content}
--[[/div]]
--[[/div]]
--[[/module]]
--[!-- --]
--
--[!-- {$inc-sticky}
--[[div class="priviewSticky"]]
--{$content}
--[[/div]]
--[!-- --]
--
--[!-- {$inc-sidebar-start}
--[[div class="guideContainer"]]
--[[div class="sidebarButton"]]
--[[a href="#u-side-bar2"]]≡[[/a]]
--[[/div]]
--[[div id="u-side-bar2" class="guideSidebar"]]
--[[a href="###" class="close-menu"]]
--[[image https://cdn.jsdelivr.net/gh/scp-cn-tech/sigma9@cn/img/black.png style="z-index=-1; opacity: 0.3;"]]
--[[/a]]
--[[div class="sidebarPanel"]]
--创建者
--[!-- --]
--
--[!-- {$inc-creator}
--[[div class="sidebarCreator {$status}"]]
--[[image {$icon}]]
--[[a_ class="creatorLink" href="{$link}"]][[/a]]
--[[div_ class="creatorStatus"]]
--[[span class="username"]]{$name}[[/span]]
--[[span class="status"]]@@ @@[[/span]]
--[[span class="playing"]]{$game}[[/span]]
--[[/div]]
--[[/div]]
--[!-- --]
--
--[!-- {$inc-sidebar-end}
------
--[[module listpages range="."]]
--[[div_ class="sidebarTags"]]
--%%tags_linked%%
--[[/div]]
--[[/module]]
------
--[[module listpages range="."]]
--[[div class="sidebarDate"]]
--[[div_ class="dateDescription"]]
--发表于
--更新日期
--[[/div]]
--[[div_ class="dateSelf"]]
--%%created_at|%Y 年 %m 月 %d 日 %H:%M%%
--%%updated_at|%Y 年 %m 月 %d 日 %H:%M%%
--[[/div]]
--[[/div]]
--[[/module]]
--[[/div]]
--
--[[div class="sidebarPanel"]]
--[[module listpages range="."]]
--[[div class="sidebarVisitor"]]
--[[div_ class="visitorNumber"]]
--%%size%%
--%%rating_votes%%
--[[/div]]
--[[div_ class="visitorDescription"]]
--本页面字符数
--当前评分人数
--[[/div]]
--[[/div]]
--[[/module]]
--[[/div]]
--[!-- --]
--
--[!-- {$inc-panel-start}
--[[div class="sidebarPanel"]]
--[!-- --]
--
--[!-- {$inc-panel-end}
--[[/div]]
--[!-- --]
--
--[!-- {$inc-content-start}
--[[div class="sidebarPanel sidebarToc"]]
--指南索引
--[[toc]]
--[[/div]]
--
--[[/div]]
--[[div class="guideContent"]]
--[!-- --]
--
--[!-- {$inc-content-end}
--[[/div]]
--[[/div]]
--[!-- --]
--
--[!-- {$achi-left}
--[[div class="achi-flexbox"]]
--[[div class="achi-flex"]]
--[!-- --]
--[!-- {$achi-right}
--[[div class="achi-flex"]]
--[!-- --]
--[!-- {$inc-achi}
--[[div class="achi-user"]]
--{$achi-user} 已达成
--[[/div]]
--[[div class="achi-container"]]
--[[div class="achi-img"]]
--[[image {$achi-image}]]
--[[/div]]
--
--[[div class="achi-text-cont"]]
--[[div class="achi-text"]]
--+++ {$achi-title}
--+++++ {$achi-subtitle}
--[[/div]]
--[[/div]]
--[[/div]]
--[!-- --]
--[!-- {$achi-left}
--[[/div]]
--[!-- --]
--[!-- {$achi-right}
--[[/div]]
--[[/div]]
--[!-- --]
--
--[[iftags +版式]]
--[[module ListPages offset="@URL|0" range="."]]
--[[%%content{0}%%module css]]
--@import url("https://scp-wiki-cn.wdfiles.com/local--code/theme:steam-guide/1");
--[[%%content{0}%%/module]]
--[[>]]
--**评分：**
--[[%%content{0}%%module Rate]]
--[[/>]]
--
--[[>]]
--**评分模块与著作信息模块：**
--[[/>]]
--
 -[[%%content{0}%%include :scp-wiki-cn:credit:start]]
 -页面信息
 -[[%%content{0}%%include :scp-wiki-cn:credit:more]]
 -更多页面信息
 -[[%%content{0}%%include :scp-wiki-cn:credit:end]]
--
++これは[[*user hoah2333]]が制作した美的テーマであり、特定のSCP、Tale、GoIフォーマット、設定には紐づきません。デザイン面では[[*user Croquembouche]]の[[[theme:ar|アンダーソン・ロボティクス テーマ]]]を参考にしています。
+ 
 -[[>]]
 -**著作信息模块：**
 -[[/>]]
--
++このテーマにはガイド版もあります。[http://scp-jp.wikidot.com/theme:steam-guide-jp/offset/1/page2_limit/1 こちらから確認できます]。
++このテーマにはガイド版もあります。[http://scp-jp.wikidot.com/theme:steam-guide-jp/offset/1/page2_limit/1 こちらから確認できます]。
++このテーマにはガイド版もあります。[http://scp-jp.wikidot.com/theme:steam-guide-jp/offset/1/page2_limit/1 こちらから確認できます]。
+ 
 -[[%%content{0}%%include :scp-wiki-cn:credit:start-standalone]]
 -页面信息
 -[[%%content{0}%%include :scp-wiki-cn:credit:more-standalone]]
@@ -409,10 +407,12 @@ adjudicated explanation.
 -本版式亦有一个指南版本，[http://scp-wiki-cn.wikidot.com/theme:steam-guide/offset/1/page2_limit/1 点此查看]。
 -
 -若需使用本版式，请在所需使用的文章开头加上以下代码：
--[[div class="code"]]
++このテーマを使用するには、使用したい記事の冒頭に以下のコードを追加してください。
+ [[div class="code"]]
 -@@[[include :scp-wiki-cn:theme:steam-guide inc-css-only=--]]]@@
--[[/div]]
--
++@@[[include :scp-jp:theme:steam-guide-jp inc-css-only=--]]]@@
+ [[/div]]
+ 
 -你可以在 [[include]] 之后使用如下 CSS 模块来修改标题、副标题和标志。
 +[[include]]の後に以下のCSSモジュールを置くと、タイトル、サブタイトル、ロゴを変更できます。
  [[div class="blockquote code"]]
@@ -623,14 +623,14 @@ adjudicated explanation.
  ----
  
 -本版式亦有一个指南版本，[http://scp-wiki-cn.wikidot.com/theme:steam-guide/offset/1/page2_limit/1 点此查看]。
-+このテーマにはガイド版もあります。[http://scp-jp.wikidot.com/theme:steam-guide/offset/1/page2_limit/1 こちらから確認できます]。
++このテーマにはガイド版もあります。[http://scp-jp.wikidot.com/theme:steam-guide-jp/offset/1/page2_limit/1 こちらから確認できます]。
  [[/module]]
  [[module ListPages limit="@URL|0" range="." urlAttrPrefix="page2"]]
 -[[%%content{0}%%include :scp-wiki:component:toggle-sidebar]]
 +[[%%content{0}%%include :scp-jp:component:toggle-sidebar]]
  [[%%content{0}%%module css]]
 -@import url("https://scp-wiki-cn.wdfiles.com/local--code/theme:steam-guide/1");
-+@import url("https://scp-jp.wdfiles.com/local--code/theme%3Asteam-guide/1");
++@import url("https://scp-jp.wdfiles.com/local--code/theme%3Asteam-guide-jp/1");
  #page-title {
      display: none;
  }
@@ -639,10 +639,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 2 — original 386–392 · candidate 198–204 · +1/−1 · translation</summary>
+<summary>Section 11 — original 386–392 · candidate 384–390 · +1/−1 · translation</summary>
 
 ```diff
-@@ -386,7 +198,7 @@
+@@ -386,7 +384,7 @@
  }
  [[%%content{0}%%/module]]
  [[div id="preview" style="display: none;"]]
@@ -656,10 +656,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 3 — original 394–401 · candidate 206–213 · +2/−2 · translation</summary>
+<summary>Section 12 — original 394–401 · candidate 392–399 · +2/−2 · translation</summary>
 
 ```diff
-@@ -394,8 +206,8 @@
+@@ -394,8 +392,8 @@
  [[image https://hoah-lab.wikidot.com/local--files/scp-cn-2689/orange-tabby-2273817_1920.jpg]]
  [[/div]]
  [[div_ class="priviewTitle"]]
@@ -675,10 +675,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 4 — original 410–416 · candidate 222–228 · +1/−1 · translation</summary>
+<summary>Section 13 — original 410–416 · candidate 408–414 · +1/−1 · translation</summary>
 
 ```diff
-@@ -410,7 +222,7 @@
+@@ -410,7 +408,7 @@
  [[div class="rateStar star5"]]
  [[/div]]
  [[div_ class="rateNumber"]]
@@ -692,10 +692,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 5 — original 418–426 · candidate 230–238 · +2/−2 · residual, translation</summary>
+<summary>Section 14 — original 418–426 · candidate 416–424 · +2/−2 · residual, translation</summary>
 
 ```diff
-@@ -418,9 +230,9 @@
+@@ -418,9 +416,9 @@
  ----
  [[/div]]
  [[div_ class="priviewContent"]]
@@ -712,10 +712,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 6 — original 437–446 · candidate 249–258 · +2/−2 · residual, translation</summary>
+<summary>Section 15 — original 437–446 · candidate 435–444 · +2/−2 · residual, translation</summary>
 
 ```diff
-@@ -437,10 +249,10 @@
+@@ -437,10 +435,10 @@
  [[image https://cdn.jsdelivr.net/gh/scp-cn-tech/sigma9@cn/img/black.png style="z-index=-1; opacity: 0.3;"]]
  [[/a]]
  [[div class="sidebarPanel"]]
@@ -733,10 +733,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 7 — original 451–467 · candidate 263–279 · +5/−5 · residual, translation</summary>
+<summary>Section 16 — original 451–467 · candidate 449–465 · +5/−5 · residual, translation</summary>
 
 ```diff
-@@ -451,17 +263,17 @@
+@@ -451,17 +449,17 @@
  
  ----
  [[div_ class="sidebarTags"]]
@@ -764,10 +764,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 8 — original 473–480 · candidate 285–292 · +2/−2 · translation</summary>
+<summary>Section 17 — original 473–480 · candidate 471–478 · +2/−2 · translation</summary>
 
 ```diff
-@@ -473,8 +285,8 @@
+@@ -473,8 +471,8 @@
  ? 人
  [[/div]]
  [[div_ class="visitorDescription"]]
@@ -783,10 +783,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 9 — original 484–564 · candidate 296–376 · +40/−40 · mechanical, residual, translation</summary>
+<summary>Section 18 — original 484–564 · candidate 482–562 · +40/−40 · mechanical, residual, translation</summary>
 
 ```diff
-@@ -484,81 +296,81 @@
+@@ -484,81 +482,81 @@
  [[/div]]
  
  [[div class="sidebarPanel sidebarToc"]]
@@ -913,10 +913,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 10 — original 567–608 · candidate 379–429 · +30/−21 · residual, supplement, translation</summary>
+<summary>Section 19 — original 567–608 · candidate 565–615 · +30/−21 · residual, supplement, translation</summary>
 
 ```diff
-@@ -567,42 +379,51 @@
+@@ -567,42 +565,51 @@
  @@]]@@
  [[/div]]
  [[div class="options"]]
@@ -994,10 +994,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 11 — original 673–679 · candidate 494–500 · +1/−1 · residual</summary>
+<summary>Section 20 — original 673–679 · candidate 680–686 · +1/−1 · residual</summary>
 
 ```diff
-@@ -673,7 +494,7 @@
+@@ -673,7 +680,7 @@
      font-size: 20px;
      line-height: 23px;
      font-weight: normal;
@@ -1011,10 +1011,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 12 — original 684–690 · candidate 505–511 · +1/−1 · residual</summary>
+<summary>Section 21 — original 684–690 · candidate 691–697 · +1/−1 · residual</summary>
 
 ```diff
-@@ -684,7 +505,7 @@
+@@ -684,7 +691,7 @@
      padding: 0;
      margin: 8px 0 6px 0;
      color: rgba(var(--accent-color2, 90, 169, 214), 1);
@@ -1028,10 +1028,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 13 — original 755–761 · candidate 576–582 · +1/−1 · residual</summary>
+<summary>Section 22 — original 755–761 · candidate 762–768 · +1/−1 · residual</summary>
 
 ```diff
-@@ -755,7 +576,7 @@
+@@ -755,7 +762,7 @@
      padding: 20px 0 35px 0;
      line-height: unset;
      color: #c5c3c0;
@@ -1045,10 +1045,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 14 — original 774–780 · candidate 595–601 · +1/−1 · residual</summary>
+<summary>Section 23 — original 774–780 · candidate 781–787 · +1/−1 · residual</summary>
 
 ```diff
-@@ -774,7 +595,7 @@
+@@ -774,7 +781,7 @@
      max-height: unset;
      padding: 0px 0;
      color: #b7afa7;
@@ -1062,10 +1062,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 15 — original 1136–1142 · candidate 957–963 · +1/−1 · residual</summary>
+<summary>Section 24 — original 1136–1142 · candidate 1143–1149 · +1/−1 · residual</summary>
 
 ```diff
-@@ -1136,7 +957,7 @@
+@@ -1136,7 +1143,7 @@
      color: rgba(255, 255, 255, 1);
      font-size: 30px;
      margin: 0;
@@ -1079,10 +1079,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 16 — original 2305–2307 · candidate 2126–2136 · +8/−0 · supplement</summary>
+<summary>Section 25 — original 2305–2307 · candidate 2312–2322 · +8/−0 · supplement</summary>
 
 ```diff
-@@ -2305,3 +2126,11 @@
+@@ -2305,3 +2312,11 @@
  [[/collapsible]]
  
  [[/iftags]]

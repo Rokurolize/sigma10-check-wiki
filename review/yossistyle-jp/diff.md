@@ -9,9 +9,9 @@ with `python3 review/build_review.py`; verify with
 |---|---|
 | original.txt | 184 |
 | candidate.txt | 213 |
-| Added | +127 |
-| Review-stage comments | 0 of the +127 added lines |
-| Removed | -98 |
+| Added | +126 |
+| Review-stage comments | 0 of the +126 added lines |
+| Removed | -97 |
 | Hunks | 4 |
 
 ```diff
@@ -255,12 +255,8 @@ with `python3 review/build_review.py`; verify with
      font-weight: bold;
  }
  
-@@ -179,6 +185,29 @@
- 
- [[/code]]
- 
--[[footnoteblock]]
-+@@[[footnoteblock]]@@
+@@ -182,3 +188,26 @@
+ [[footnoteblock]]
  
  [[/collapsible]]
 +

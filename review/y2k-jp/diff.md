@@ -9,9 +9,9 @@ with `python3 review/build_review.py`; verify with
 |---|---|
 | original.txt | 462 |
 | candidate.txt | 505 |
-| Added | +129 |
-| Review-stage comments | 0 of the +129 added lines |
-| Removed | -91 |
+| Added | +130 |
+| Review-stage comments | 0 of the +130 added lines |
+| Removed | -92 |
 | Hunks | 9 |
 
 ```diff
@@ -217,8 +217,9 @@ with `python3 review/build_review.py`; verify with
  
  -----
  
- + Source code
+-+ Source code
 -[[collapsible show="> Show code" hide="> Hide code"]]
+++ ソースコード
 +[[collapsible show="> コードを表示" hide="> コードを閉じる"]]
  [[code type="css"]]
 +@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');

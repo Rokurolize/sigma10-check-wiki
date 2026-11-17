@@ -1,7 +1,193 @@
+[!-- {$clear}
+[[module ThemePreviewer noUi="true" theme_url="https://sigma9.scpwikicn.com/cn/cn/sigma9_ch.min.css"]]
+[!-- --]
+
+[!-- {$inc-css-only}
+[[module css]]
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Asteam-guide-jp/1");
+[[/module]]
+[!-- --]
+
+[!-- {$inc-source}
+[[include :scp-jp:component:toggle-sidebar]]
+[[module css]]
+@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Asteam-guide-jp/1");
+[[/module]]
+[!-- --]
+
+[!-- {$inc-preview}
+[[module css]]
+#page-title {
+    display: none;
+}
+[[/module]]
+[[div id="preview" style="display: none;"]]
++ 概要
+[[/div]]
+[[module listpages range="."]]
+[[div class="guidePriview"]]
+[[div class="priviewIcon" style="display: {$icon};"]]
+[[image {$icon}]]
+[[/div]]
+[[div_ class="priviewTitle"]]
+[[span class="title"]]%%title%%[[/span]]
+[[#ifexpr {$exauthor} >= 1 | %%created_by%% ほか{$exauthor}名との共作]][[#ifexpr {$exauthor} == 0 | %%created_by%% 制作]]
+[[/div]]
+
+[[div class="priviewRate rate[[#ifexpr %%rating_votes%% >= 15 && (%%rating_votes%%-%%rating%%)/2/%%rating_votes%% < 0.2 | 5 ]][[#ifexpr %%rating_votes%% >= 15 && (%%rating_votes%%-%%rating%%)/2/%%rating_votes%% >= 0.2 && (%%rating_votes%%-%%rating%%)/2/%%rating_votes%% < 0.4 | 4 ]][[#ifexpr %%rating_votes%% >= 15 && (%%rating_votes%%-%%rating%%)/2/%%rating_votes%% >= 0.4 && (%%rating_votes%%-%%rating%%)/2/%%rating_votes%% < 0.6 | 3 ]][[#ifexpr %%rating_votes%% >= 15 && (%%rating_votes%%-%%rating%%)/2/%%rating_votes%% >= 0.6 && (%%rating_votes%%-%%rating%%)/2/%%rating_votes%% < 0.8 | 2 ]][[#ifexpr %%rating_votes%% >= 15 && (%%rating_votes%%-%%rating%%)/2/%%rating_votes%% >= 0.8 && (%%rating_votes%%-%%rating%%)/2/%%rating_votes%% < 1 | 1 ]][[#ifexpr %%rating_votes%% >= 15 && (%%rating_votes%%-%%rating%%)/2/%%rating_votes%% > 1 | 6 ]][[#ifexpr %%rating_votes%% < 15 | 0 ]]"]]
+[[div class="rateStar star1"]]
+[[/div]]
+[[div class="rateStar star2"]]
+[[/div]]
+[[div class="rateStar star3"]]
+[[/div]]
+[[div class="rateStar star4"]]
+[[/div]]
+[[div class="rateStar star5"]]
+[[/div]]
+[[div_ class="rateNumber"]]
+%%rating_votes%% 件の評価
+[[/div]]
+[[/div]]
+
+[[div class="priviewbr"]]
+----
+[[/div]]
+[[div_ class="priviewContent"]]
+{$content}
+[[/div]]
+[[/div]]
+[[/module]]
+[!-- --]
+
+[!-- {$inc-sticky}
+[[div class="priviewSticky"]]
+{$content}
+[[/div]]
+[!-- --]
+
+[!-- {$inc-sidebar-start}
+[[div class="guideContainer"]]
+[[div class="sidebarButton"]]
+[[a href="#u-side-bar2"]]≡[[/a]]
+[[/div]]
+[[div id="u-side-bar2" class="guideSidebar"]]
+[[a href="###" class="close-menu"]]
+[[image https://cdn.jsdelivr.net/gh/scp-cn-tech/sigma9@cn/img/black.png style="z-index=-1; opacity: 0.3;"]]
+[[/a]]
+[[div class="sidebarPanel"]]
+作成者
+[!-- --]
+
+[!-- {$inc-creator}
+[[div class="sidebarCreator {$status}"]]
+[[image {$icon}]]
+[[a_ class="creatorLink" href="{$link}"]][[/a]]
+[[div_ class="creatorStatus"]]
+[[span class="username"]]{$name}[[/span]]
+[[span class="status"]]@@ @@[[/span]]
+[[span class="playing"]]{$game}[[/span]]
+[[/div]]
+[[/div]]
+[!-- --]
+
+[!-- {$inc-sidebar-end}
+----
+[[module listpages range="."]]
+[[div_ class="sidebarTags"]]
+%%tags_linked%%
+[[/div]]
+[[/module]]
+----
+[[module listpages range="."]]
+[[div class="sidebarDate"]]
+[[div_ class="dateDescription"]]
+公開日
+更新日
+[[/div]]
+[[div_ class="dateSelf"]]
+%%created_at|%Y年%m月%d日 %H:%M%%
+%%updated_at|%Y年%m月%d日 %H:%M%%
+[[/div]]
+[[/div]]
+[[/module]]
+[[/div]]
+
+[[div class="sidebarPanel"]]
+[[module listpages range="."]]
+[[div class="sidebarVisitor"]]
+[[div_ class="visitorNumber"]]
+%%size%%
+%%rating_votes%%
+[[/div]]
+[[div_ class="visitorDescription"]]
+このページの文字数
+現在の評価者数
+[[/div]]
+[[/div]]
+[[/module]]
+[[/div]]
+[!-- --]
+
+[!-- {$inc-panel-start}
+[[div class="sidebarPanel"]]
+[!-- --]
+
+[!-- {$inc-panel-end}
+[[/div]]
+[!-- --]
+
+[!-- {$inc-content-start}
+[[div class="sidebarPanel sidebarToc"]]
+ガイド目次
+[[toc]]
+[[/div]]
+
+[[/div]]
+[[div class="guideContent"]]
+[!-- --]
+
+[!-- {$inc-content-end}
+[[/div]]
+[[/div]]
+[!-- --]
+
+[!-- {$achi-left}
+[[div class="achi-flexbox"]]
+[[div class="achi-flex"]]
+[!-- --]
+[!-- {$achi-right}
+[[div class="achi-flex"]]
+[!-- --]
+[!-- {$inc-achi}
+[[div class="achi-user"]]
+{$achi-user} が達成しました
+[[/div]]
+[[div class="achi-container"]]
+[[div class="achi-img"]]
+[[image {$achi-image}]]
+[[/div]]
+
+[[div class="achi-text-cont"]]
+[[div class="achi-text"]]
++++ {$achi-title}
++++++ {$achi-subtitle}
+[[/div]]
+[[/div]]
+[[/div]]
+[!-- --]
+[!-- {$achi-left}
+[[/div]]
+[!-- --]
+[!-- {$achi-right}
+[[/div]]
+[[/div]]
+[!-- --]
+
 [[iftags +テーマ]]
 [[module ListPages offset="@URL|0" range="."]]
 [[include :scp-jp:credit:start-preview]]
-**タイトル:** 游戏指南 版式
+**タイトル:** ゲームガイド テーマ
 **翻訳責任者:** AI
 **翻訳年:** 2026
 **原題:** 游戏指南 版式
@@ -28,9 +214,9 @@
 
 これは[[*user hoah2333]]が制作した美的テーマであり、特定のSCP、Tale、GoIフォーマット、設定には紐づきません。デザイン面では[[*user Croquembouche]]の[[[theme:ar|アンダーソン・ロボティクス テーマ]]]を参考にしています。
 
-このテーマにはガイド版もあります。[http://scp-jp.wikidot.com/theme:steam-guide/offset/1/page2_limit/1 こちらから確認できます]。
-このテーマにはガイド版もあります。[http://scp-jp.wikidot.com/theme:steam-guide/offset/1/page2_limit/1 こちらから確認できます]。
-このテーマにはガイド版もあります。[http://scp-jp.wikidot.com/theme:steam-guide/offset/1/page2_limit/1 こちらから確認できます]。
+このテーマにはガイド版もあります。[http://scp-jp.wikidot.com/theme:steam-guide-jp/offset/1/page2_limit/1 こちらから確認できます]。
+このテーマにはガイド版もあります。[http://scp-jp.wikidot.com/theme:steam-guide-jp/offset/1/page2_limit/1 こちらから確認できます]。
+このテーマにはガイド版もあります。[http://scp-jp.wikidot.com/theme:steam-guide-jp/offset/1/page2_limit/1 こちらから確認できます]。
 
 このテーマを使用するには、使用したい記事の冒頭に以下のコードを追加してください。
 [[div class="code"]]
@@ -180,12 +366,12 @@
 
 ----
 
-このテーマにはガイド版もあります。[http://scp-jp.wikidot.com/theme:steam-guide/offset/1/page2_limit/1 こちらから確認できます]。
+このテーマにはガイド版もあります。[http://scp-jp.wikidot.com/theme:steam-guide-jp/offset/1/page2_limit/1 こちらから確認できます]。
 [[/module]]
 [[module ListPages limit="@URL|0" range="." urlAttrPrefix="page2"]]
 [[%%content{0}%%include :scp-jp:component:toggle-sidebar]]
 [[%%content{0}%%module css]]
-@import url("https://scp-jp.wdfiles.com/local--code/theme%3Asteam-guide/1");
+@import url("https://scp-jp.wdfiles.com/local--code/theme%3Asteam-guide-jp/1");
 #page-title {
     display: none;
 }

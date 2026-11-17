@@ -3,7 +3,8 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:yossistyle-jp — origin EN, population #44 [GOSIGN2-LEDGER (b) row 44]
-- Overall: PASS — NOT PASS at the ledger determination (section (e) register); both OPEN items re-judged FIXED by the FIX5 wave; go-sign issued 2026-11-17 (COMPLETION-REPORT §10) [GOSIGN2-LEDGER (b); GOSIGN2-LEDGER-SUPPLEMENT (d)]
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 01322714dfe5eb256ad875c396495a9f9a9f5831ed77e0be705edb88f01cb628); verdict not carried over, re-judgement required
+> verdicts below describe the pre-change file
 - T1 (source check): PASS — baseline 2026-11-16: exit 0, 0 errors / 3 warns / 2 infos (no error codes) [T1-ROWS row 44; GOSIGN2-LEDGER (b) row 44]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — webkit-375 `sidebar-not-opening` (screenshots show open; infinite `@keyframes` sidebar drift likely culprit), sample 884px@768 static-credit-replica overflow, GOSIGN "raw wikitext leak" unconfirmed, doubled header subtitle at ≤375, no page credit capture; contrast 2.13 joke link. [RENDER-ROWS-1 (RENDER-D2 row 44)]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row [RENDER-ROWS-1 row]
@@ -11,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 2 [LOCALIZE-ROWS row 44, source LOCALIZE-B]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 44]
 - FIX5 re-judgement: items 13 (class B) FIXED, 14 (class H) FIXED — FIX5-FURNA, commit 9e8931f: duplicate bare Rate block removed (class B); five EN links repointed to existing JP pages (checker fetched their JP titles as proof); component:croqstyle and component:rso links left unchanged with grounds (no JP page or candidate exists in census, repo or population) [GOSIGN2-LEDGER-SUPPLEMENT (a) items 13–14]
-- Computed against: canonical commit 9e8931f5fafb76900cb6c4591537368aefc0faf8; candidate file pages/theme:yossistyle-jp.txt sha256:68c294fb5714e7be749a9195044985344de52c4bf89959a2589ffe424ef1d14a; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 87c92400a1bc327a00c056d29f538f62762ce4c5; candidate file pages/theme:yossistyle-jp.txt sha256:01322714dfe5eb256ad875c396495a9f9a9f5831ed77e0be705edb88f01cb628; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## 0. Header / provenance
@@ -138,6 +139,12 @@ Charged: prose links at (then) L60/L66 naming EN pages where JP pages exist — 
 Fix as recorded: five links repointed to the scp-jp production pages (the FIX5 lane fetched the JP pages' titles as existence proof); croqstyle and rso left on scp-wiki, on the ground that no JP page and no candidate exists for either.
 Re-derived: cand L56 names scp-jp.wikidot.com for magnus-web-format, flopstyle, blankstyle, and placestyle; cand L62 names it for black-highlighter-theme; cand L56 keeps scp-wiki.wikidot.com for component:croqstyle and component:rso. Exactly the supplement's account — five repointed, two left with grounds. The repointed links name the production pages under plain slugs, the monotypical form for a link whose target exists in production.
 Closure: CONFIRMED.
+
+### Post-package repairs (REFRESH3-K)
+
+The items above describe this package as built. The repair recorded below postdates the package; `candidate.txt` has been recopied from the current canonical `pages/theme:yossistyle-jp.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+- **FIX-RFIX21 item 1, landing `87c92400a1bc327a00c056d29f538f62762ce4c5`** ("pages: R-fix-21 flags repaired (yossistyle, y2k)", 2026-11-17, R/review-scout/FIX-RFIX21.md §1; 1 line): candidate L188 `@@[[footnoteblock]]@@` → `[[footnoteblock]]`, unescaped, at the same position (after `[[/code]]`, before `[[/collapsible]]`, matching the original's placement). Evidence: the original carries the `[[footnote]]` live at orig L78 and `[[footnoteblock]]` live at orig L182; the candidate's footnote was live at L84 but its render position was escaped, the only footnoteblock occurrence in the file. Same shape as the penumbra and scp-offices-theme escapes, both adjudicated defects and repaired by unescaping (canonical 6660ec5, c1ba76a). Section 8's "Defect flag for repair" and §11's reference to it are kept as the as-built record; the flag is now repaired in the recopied candidate. Checker (FIX-RFIX21 §3): plain error 0 / warn 2 / info 1 → 0 / 2 / 1 and `--check-links` 0 / 7 / 1 → 0 / 7 / 1, finding sets byte-identical in both runs; class (i) 0 before and after. The multi-wave provenance's "the stamp is current, not stale" is the as-built record; the stamp now reads STALE against this repair.
 
 ## Change set outside the two diffed files
 

@@ -15,7 +15,7 @@
 **翻訳責任者:** AI
 **翻訳年:** 2026
 **原題:** 创伤 主题版式
-**著作権者:** 原語版ページの作成者に同じ（scp-wiki-cn の theme:trauma）
+**著作権者:** [[*user Liurd]]
 **作成年:** 2025
 **初訳時参照リビジョン:** 6
 **元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:trauma 创伤 主题版式]
@@ -243,18 +243,6 @@
 [[/collapsible]]
 [[/div]]
 
-[[iftags [[#ifexpr {$rainy} == (true) | - ]]]]
-
-[[iftags [[#ifexpr {$yellow} == (true) | - ]]]]
-
-[[iftags [[#ifexpr {$blue} == (true) | - ]]]]
-
-[[iftags [[#ifexpr {$minimal} == (true) | - ]]]]
-[[/iftags]]
-[[/iftags]]
-[[/iftags]]
-[[/iftags]]
-
 + ソースコード
 
 [[collapsible show="> コードを表示" hide="> コードを閉じる"]]
@@ -266,7 +254,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nixie+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
 
 /*
     创伤 / Trauma — Ported for SCP-JP (theme:trauma rev 6 on scp-wiki-cn).
@@ -699,7 +686,20 @@
         width: 50%;
     }
 }
+[[/code]]
+[[/collapsible]]
 
+[[include :scp-jp:component:license-box-backend
+|author=Liurd]]
+
+> **画像・フォントの出典:** 原語版の theme:trauma の記載に従います。sandbox・他Wiki・個人サイトの添付は候補ページに再ホストしています。原語版にライセンス表記が無い画像は、投稿前に著者へ確認してください。
+
+[[include :scp-jp:component:license-box-end]]
+
+[[/iftags]]
+
+[[iftags [[#ifexpr {$rainy} == (true) | - ]]]]
+[[module css]]
 #extra-div-4 {
     position: fixed;
     top: 0;
@@ -723,7 +723,11 @@
     background-position: 0 15rem;
   }
 }
+[[/module]]
+[[/iftags]]
 
+[[iftags [[#ifexpr {$yellow} == (true) | - ]]]]
+[[module css]]
 :root {
     --body-bg: 255, 235, 0;
     --global-white-color: 255, 248, 225;
@@ -751,7 +755,12 @@
     text-decoration: line-through;
     text-shadow: 0 1rem rgba(var(--global-accent-3), 1), 0 2rem rgba(var(--global-accent-3), .5), 0 3rem rgba(var(--global-accent-3), .25);
 }
+[[/module]]
+[[/iftags]]
 
+[[iftags [[#ifexpr {$blue} == (true) | - ]]]]
+[[module css]]
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
     --body-bg: var(--global-accent-2);
@@ -789,8 +798,11 @@ body {
 #extrac-div-1 {
     font-weight: 700;
 }
+[[/module]]
+[[/iftags]]
 
-
+[[iftags [[#ifexpr {$minimal} == (true) | - ]]]]
+[[module css]]
 :root {
     --extra-opacity-1: 0;
     --extra-opacity-2: 0;
@@ -876,14 +888,5 @@ body {
         padding: 0;
     }
 }
-[[/code]]
-[[/collapsible]]
-
-[[include :scp-jp:component:license-box-backend
-|author=scp-wiki-cn theme:trauma の作者]]
-
-> **画像・フォントの出典:** 原語版の theme:trauma の記載に従います。sandbox・他Wiki・個人サイトの添付は候補ページに再ホストしています。原語版にライセンス表記が無い画像は、投稿前に著者へ確認してください。
-
-[[include :scp-jp:component:license-box-end]]
-
+[[/module]]
 [[/iftags]]

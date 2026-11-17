@@ -15,44 +15,46 @@ adjudicated explanation.
 | | Lines |
 |---|---|
 | original.txt | 458 |
-| candidate.txt | 450 |
-| Added | +331 |
-| Review-stage comments | 0 of the +331 added lines |
-| Removed | -339 |
-| Changed | 670 |
-| Change blocks | 9 |
+| candidate.txt | 460 |
+| Added | +346 |
+| Review-stage comments | 0 of the +346 added lines |
+| Removed | -344 |
+| Changed | 690 |
+| Change blocks | 8 |
 | Diff sections (context 3) | 3 |
 
 ## Changed lines by auto-class (heuristic)
 
 | Auto-class | Blocks | Changed lines |
 |---|---|---|
-| supplement | 2 | 198 |
-| residual | 7 | 472 |
+| supplement | 2 | 496 |
+| residual | 6 | 194 |
 
 ## Change-block index
 
 | # | Section | Original | Candidate | +/− | Auto-class | Gist |
 |---|---|---|---|---|---|---|
-| 1 | 1 | 1–2 | 1–36 | +36/−2 | supplement | [[iftags +テーマ]] |
-| 2 | 1 | 4–4 | 38–322 | +285/−1 | residual | +* ページ要素 |
-| 3 | 1 | 8–8 | 326–326 | +1/−1 | residual | --header-logo: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/w… |
-| 4 | 2 | 45–45 | 363–363 | +1/−1 | residual | --bg-img: url(https://scpsandboxcn.wikidot.com/local--files/collab%3Azhongfen… |
-| 5 | 3 | 115–268 | — | +0/−154 | residual | [[/module]] |
-| 6 | 3 | 272–276 | — | +0/−5 | residual | [[/code]] |
-| 7 | 3 | 281–301 | — | +0/−21 | residual | [[include component:image-block name= https://scptestwiki.wdfiles.com/local--… |
-| 8 | 3 | 304–304 | 442–442 | +1/−1 | residual | [[/iftags]] |
-| 9 | 3 | 306–458 | 444–450 | +7/−153 | supplement | [[module css]] |
+| 1 | 1 | 2–2 | 2–2 | +1/−1 | residual | [[include theme:basalt-jp wide=a\|hidetitle={$hidetitle}\|centertitle={$centert… |
+| 2 | 1 | 4–4 | 4–338 | +335/−1 | supplement | [[iftags +テーマ]] |
+| 3 | 1 | 8–8 | 342–342 | +1/−1 | residual | --header-logo: url("https://scpsandboxcn.wdfiles.com/local--files/breaddddd/w… |
+| 4 | 2 | 45–45 | 379–379 | +1/−1 | residual | --bg-img: url(https://scpsandboxcn.wikidot.com/local--files/collab%3Azhongfen… |
+| 5 | 3 | 115–271 | — | +0/−157 | residual | [[/module]] |
+| 6 | 3 | 273–301 | — | +0/−29 | residual | 如果你想改图标 |
+| 7 | 3 | 304–304 | 452–452 | +1/−1 | residual | [[/iftags]] |
+| 8 | 3 | 306–458 | 454–460 | +7/−153 | supplement | [[module css]] |
 
 ## Full diff
 
 <details>
-<summary>Section 1 — original 1–11 · candidate 1–329 · +322/−4 · residual, supplement</summary>
+<summary>Section 1 — original 1–11 · candidate 1–345 · +337/−3 · residual, supplement</summary>
 
 ```diff
-@@ -1,11 +1,329 @@
--[[div style="display: none;"]]
+@@ -1,11 +1,345 @@
+ [[div style="display: none;"]]
 -[[include :scp-wiki-cn:theme:basalt wide=a|hidetitle={$hidetitle}|centertitle={$centertitle}|acs-itemnum={$acs-itemnum}|disable-acs-anim={$disable-acs-anim}]]
++[[include theme:basalt-jp wide=a|hidetitle={$hidetitle}|centertitle={$centertitle}|acs-itemnum={$acs-itemnum}|disable-acs-anim={$disable-acs-anim}]]
+ [[/div]]
+-[[module css]]
 +[[iftags +テーマ]]
 +
 +[[include :scp-jp:credit:start-preview]]
@@ -89,8 +91,7 @@ adjudicated explanation.
 +**このテーマはダークモードに対応していません。**
 +
 +[[div style="margin-top: 6.5rem;"]]
- [[/div]]
--[[module css]]
++[[/div]]
 +
 ++* ページ要素
 +
@@ -208,8 +209,21 @@ adjudicated explanation.
 +[[/=]]
 +
 +タイトルを変更したい場合
++[[code type="css"]]
++:root {
++    --header-title: "メインタイトル";
++    --header-subtitle: "サブタイトル";
++}
++[[/code]]
++
 +
 +アイコンを変更したい場合
++[[code type="css"]]
++:root {
++--logo: url('画像URL');
++}
++[[/code]]
++
 +
 +[[include component:image-block name= https://scptestwiki.wdfiles.com/local--files/sigma%3Aspace/spacelogo.png |caption=画像。|width=270px]]
 +
@@ -389,10 +403,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 2 — original 42–48 · candidate 360–366 · +1/−1 · residual</summary>
+<summary>Section 2 — original 42–48 · candidate 376–382 · +1/−1 · residual</summary>
 
 ```diff
-@@ -42,7 +360,7 @@
+@@ -42,7 +376,7 @@
      --footer-link-color: 234,194,52;
      --license-area-divider-color: var(--basalt-tertiary-color);
  
@@ -406,10 +420,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 3 — original 112–458 · candidate 430–450 · +8/−334 · residual, supplement</summary>
+<summary>Section 3 — original 112–458 · candidate 446–460 · +8/−340 · residual, supplement</summary>
 
 ```diff
-@@ -112,347 +430,21 @@
+@@ -112,347 +446,15 @@
      background-position: center center;
      background-repeat: no-repeat;
  }
@@ -567,18 +581,18 @@ adjudicated explanation.
 -
 -如果你想改标题
 -[[code type="css"]]
- :root {
-     --header-title: "主标题";
-     --header-subtitle: "副标题";
--[[/code]]
+-:root {
+-    --header-title: "主标题";
+-    --header-subtitle: "副标题";
+ [[/code]]
 -
 -
 -如果你想改图标
 -[[code type="css"]]
- :root {
- --logo: url('图片url');
- }
- [[/code]]
+-:root {
+---logo: url('图片url');
+-}
+-[[/code]]
 -
 -
 -[[include component:image-block name= https://scptestwiki.wdfiles.com/local--files/sigma%3Aspace/spacelogo.png |caption=图像。|width=270px]]

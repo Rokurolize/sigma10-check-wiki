@@ -62,7 +62,7 @@ adjudicated explanation.
 +[[iftags +テーマ]]
 +
 +[[include :scp-jp:credit:start-preview]]
-+**タイトル:** 旅行者 版式
++**タイトル:** ボイジャーテーマ
 +**翻訳責任者:** AI
 +**翻訳年:** 2026
 +**原題:** 旅行者 版式

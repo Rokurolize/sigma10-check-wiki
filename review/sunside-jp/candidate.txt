@@ -1,7 +1,6 @@
 [[module CSS]]
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /* 日本語フォント
    JP localization: the display stacks already name Noto Sans JP / Noto Sans
@@ -9,6 +8,64 @@
    default. Noto Sans JP (Google Fonts, SIL Open Font License) is now loaded
    and added to the mono stack as the loadable JP fallback. Latin faces unchanged. */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'iA Writer Mono';
+    src: url(https://cdn.jsdelivr.net/gh/SYwaves/Webfont-Archive@master/iAWriterMonoS-Regular.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'iA Writer Mono';
+    src: url(https://cdn.jsdelivr.net/gh/SYwaves/Webfont-Archive@master/iAWriterMonoS-Italic.woff2) format("woff2");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'iA Writer Mono';
+    src: url(https://cdn.jsdelivr.net/gh/SYwaves/Webfont-Archive@master/iAWriterMonoS-Bold.woff2) format("woff2");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'iA Writer Mono';
+    src: url(https://cdn.jsdelivr.net/gh/SYwaves/Webfont-Archive@master/iAWriterMonoS-BoldItalic.woff2) format("woff2");
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'iA Writer Duo';
+    src: url(https://cdn.jsdelivr.net/gh/SYwaves/Webfont-Archive@master/iAWriterDuoS-Regular.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'iA Writer Duo';
+    src: url(https://cdn.jsdelivr.net/gh/SYwaves/Webfont-Archive@master/iAWriterDuoS-Italic.woff2) format("woff2");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'iA Writer Duo';
+    src: url(https://cdn.jsdelivr.net/gh/SYwaves/Webfont-Archive@master/iAWriterDuoS-Bold.woff2) format("woff2");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'iA Writer Duo';
+    src: url(https://cdn.jsdelivr.net/gh/SYwaves/Webfont-Archive@master/iAWriterDuoS-BoldItalic.woff2) format("woff2");
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
 
 /* === Sigma-Plus (EstrellaYoshte) — component:sigma-plus-jp 経由で読み込み（原語版 rev.38 由来） === */
 /* JP アダプテーション（JPヘッダ文字列・ヘッダロゴ）は以下のオーバーライド層で保持。rev.38 の本体は component:sigma-plus-jp のコードを参照。 */
@@ -77,8 +134,8 @@
 
     --header-font: 'Sora', 'Noto Sans JP', 'Nanum Gothic', sans-serif;
     --body-font: 'Public Sans', 'Noto Sans JP', 'Nanum Gothic', Arial, sans-serif;
-    --UI-font: 'Public Sans', 'Noto Sans JP', 'Nanum Gothic', sans-serif;
-    --mono-font: 'JetBrains Mono', 'Noto Sans Mono CJK JP', 'Noto Sans JP', monospace;
+    --UI-font: 'iA Writer Duo', 'Noto Sans JP', 'Nanum Gothic', sans-serif;
+    --mono-font: 'iA Writer Mono', 'Noto Sans Mono CJK JP', 'Noto Sans JP', monospace;
     --header-title: "エスターバーグ";
     --header-subtitle: "新たなパラダイムを紡ぐ";
     --main-content-width: 50rem;
@@ -1269,7 +1326,7 @@ table.wiki-content-table th {
 {{@@[[include :scp-jp:theme:sunside-jp]]@@}}
 [[/div]]
 
-Sunside/Bożydar/「Rallistonはナード」テーマは、[[[https://scp-wiki.wikidot.com/component:sigma-plus|Sigma+]]]をベースにしています。Sigma+は component:sigma-plus-jp（原語版 rev.38 由来）経由で読み込まれます。
+Sunside/Bożydar/「Rallistonはナード」テーマは、[[[component:sigma-plus-jp|Sigma+]]]をベースにしています。Sigma+は component:sigma-plus-jp（原語版 rev.38 由来）経由で読み込まれます。
 
 ------
 
@@ -1415,9 +1472,9 @@ Etiam at massa eu turpis lacinia volutpat. Pellentesque hendrerit, diam vel dign
 
 本文フォントはPublic Sansです。
 
-[[span style="font-family: var(--UI-font);"]]UIフォントはPublic Sansです。[[/span]]
+[[span style="font-family: var(--UI-font);"]]UIフォントはiA Writer Duoです。[[/span]]
 
-{{等幅フォントはJetBrains Monoです。}}
+{{等幅フォントはiA Writer Monoです。}}
 [[/div]]
 
 ++ ソースコード
@@ -1436,6 +1493,64 @@ Etiam at massa eu turpis lacinia volutpat. Pellentesque hendrerit, diam vel dign
 /*-----------------------------*/
 /*------ FONTS ------*/
 /*-----------------------------*/
+
+@font-face {
+    font-family: 'iA Writer Mono';
+    src: url(https://cdn.jsdelivr.net/gh/SYwaves/Webfont-Archive@master/iAWriterMonoS-Regular.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'iA Writer Mono';
+    src: url(https://cdn.jsdelivr.net/gh/SYwaves/Webfont-Archive@master/iAWriterMonoS-Italic.woff2) format("woff2");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'iA Writer Mono';
+    src: url(https://cdn.jsdelivr.net/gh/SYwaves/Webfont-Archive@master/iAWriterMonoS-Bold.woff2) format("woff2");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'iA Writer Mono';
+    src: url(https://cdn.jsdelivr.net/gh/SYwaves/Webfont-Archive@master/iAWriterMonoS-BoldItalic.woff2) format("woff2");
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'iA Writer Duo';
+    src: url(https://cdn.jsdelivr.net/gh/SYwaves/Webfont-Archive@master/iAWriterDuoS-Regular.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'iA Writer Duo';
+    src: url(https://cdn.jsdelivr.net/gh/SYwaves/Webfont-Archive@master/iAWriterDuoS-Italic.woff2) format("woff2");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'iA Writer Duo';
+    src: url(https://cdn.jsdelivr.net/gh/SYwaves/Webfont-Archive@master/iAWriterDuoS-Bold.woff2) format("woff2");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'iA Writer Duo';
+    src: url(https://cdn.jsdelivr.net/gh/SYwaves/Webfont-Archive@master/iAWriterDuoS-BoldItalic.woff2) format("woff2");
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
 
 
 
@@ -1485,8 +1600,8 @@ Etiam at massa eu turpis lacinia volutpat. Pellentesque hendrerit, diam vel dign
 
     --header-font: 'Sora', 'Noto Sans JP', 'Nanum Gothic', sans-serif;
     --body-font: 'Public Sans', 'Noto Sans JP', 'Nanum Gothic', Arial, sans-serif;
-    --UI-font: 'Public Sans', 'Noto Sans JP', 'Nanum Gothic', sans-serif;
-    --mono-font: 'JetBrains Mono', 'Noto Sans Mono CJK JP', 'Noto Sans JP', monospace;
+    --UI-font: 'iA Writer Duo', 'Noto Sans JP', 'Nanum Gothic', sans-serif;
+    --mono-font: 'iA Writer Mono', 'Noto Sans Mono CJK JP', 'Noto Sans JP', monospace;
     --header-title: "エスターバーグ";
     --header-subtitle: "新たなパラダイムを紡ぐ";
     --main-content-width: 50rem;

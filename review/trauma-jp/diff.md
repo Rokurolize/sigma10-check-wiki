@@ -15,20 +15,21 @@ adjudicated explanation.
 | | Lines |
 |---|---|
 | original.txt | 854 |
-| candidate.txt | 889 |
-| Added | +290 |
-| Review-stage comments | 0 of the +290 added lines |
-| Removed | -255 |
-| Changed | 545 |
-| Change blocks | 18 |
-| Diff sections (context 3) | 9 |
+| candidate.txt | 892 |
+| Added | +278 |
+| Review-stage comments | 0 of the +278 added lines |
+| Removed | -240 |
+| Changed | 518 |
+| Change blocks | 12 |
+| Diff sections (context 3) | 7 |
 
 ## Changed lines by auto-class (heuristic)
 
 | Auto-class | Blocks | Changed lines |
 |---|---|---|
-| supplement | 4 | 289 |
-| residual | 14 | 256 |
+| mechanical | 2 | 2 |
+| supplement | 4 | 278 |
+| residual | 6 | 238 |
 
 ## Change-block index
 
@@ -36,30 +37,24 @@ adjudicated explanation.
 |---|---|---|---|---|---|---|
 | 1 | 1 | 1–2 | 1–5 | +5/−2 | supplement | [[include :scp-jp:theme:black-highlighter-theme]] |
 | 2 | 1 | 4–4 | 7–11 | +5/−1 | supplement | [[include :scp-jp:component:interwiki-style |
-| 3 | 1 | 6–7 | 13–278 | +266/−2 | supplement | [[include :scp-jp:credit:start-preview]] |
+| 3 | 1 | 6–7 | 13–265 | +253/−2 | supplement | [[include :scp-jp:credit:start-preview]] |
 | 4 | 2 | 64–64 | — | +0/−1 | residual | [[/module]] |
 | 5 | 2 | 66–290 | — | +0/−225 | residual | [[div_ class="supre-banner"]] |
-| 6 | 2 | 297–299 | 342–344 | +3/−3 | residual | --extra-bg-1: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Atr… |
-| 7 | 3 | 657–659 | — | +0/−3 | residual | [[/module]] |
-| 8 | 3 | 661–662 | — | +0/−2 | residual | [[iftags [[#ifexpr {$rainy} == (true) \| - ]]]] |
+| 6 | 2 | 297–299 | 329–331 | +3/−3 | residual | --extra-bg-1: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Atr… |
+| 7 | 3 | 657–657 | 689–689 | +1/−1 | residual | [[/code]] |
+| 8 | 3 | 659–659 | 691–699 | +9/−1 | supplement | [[include :scp-jp:component:license-box-backend |
 | 9 | 4 | 670–670 | 710–710 | +1/−1 | residual | background-image: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%… |
-| 10 | 5 | 686–687 | — | +0/−2 | residual | [[/module]] |
-| 11 | 5 | 689–690 | — | +0/−2 | residual | [[iftags [[#ifexpr {$yellow} == (true) \| - ]]]] |
-| 12 | 6 | 702–702 | 738–738 | +1/−1 | residual | --extra-bg-1: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Atr… |
-| 13 | 7 | 718–719 | — | +0/−2 | residual | [[/module]] |
-| 14 | 7 | 721–723 | — | +0/−3 | residual | [[iftags [[#ifexpr {$blue} == (true) \| - ]]]] |
-| 15 | 8 | 761–762 | — | +0/−2 | residual | [[/module]] |
-| 16 | 8 | 764–765 | — | +0/−2 | residual | [[iftags [[#ifexpr {$minimal} == (true) \| - ]]]] |
-| 17 | 9 | — | 879–880 | +2/−0 | residual | [[/code]] |
-| 18 | 9 | 853–853 | 882–888 | +7/−1 | supplement | [[include :scp-jp:component:license-box-backend |
+| 10 | 5 | 702–702 | 742–742 | +1/−1 | residual | --extra-bg-1: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Atr… |
+| 11 | 6 | 766–766 | — | +0/−1 | mechanical | (blank lines only) |
+| 12 | 7 | 852–852 | — | +0/−1 | mechanical | (blank lines only) |
 
 ## Full diff
 
 <details>
-<summary>Section 1 — original 1–10 · candidate 1–281 · +276/−5 · supplement</summary>
+<summary>Section 1 — original 1–10 · candidate 1–268 · +263/−5 · supplement</summary>
 
 ```diff
-@@ -1,10 +1,281 @@
+@@ -1,10 +1,268 @@
 -[[iftags +版式]]
 -[[module ThemePreviewer noUi="true" theme_url="https://cdn.scpwiki.com/theme/en/black-highlighter/css/min/normalize.min.css"]]
 +[[include :scp-jp:theme:black-highlighter-theme]]
@@ -82,7 +77,7 @@ adjudicated explanation.
 +**翻訳責任者:** AI
 +**翻訳年:** 2026
 +**原題:** 创伤 主题版式
-+**著作権者:** 原語版ページの作成者に同じ（scp-wiki-cn の theme:trauma）
++**著作権者:** [[*user Liurd]]
 +**作成年:** 2025
 +**初訳時参照リビジョン:** 6
 +**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:trauma 创伤 主题版式]
@@ -310,18 +305,6 @@ adjudicated explanation.
 +[[/collapsible]]
 +[[/div]]
 +
-+[[iftags [[#ifexpr {$rainy} == (true) | - ]]]]
-+
-+[[iftags [[#ifexpr {$yellow} == (true) | - ]]]]
-+
-+[[iftags [[#ifexpr {$blue} == (true) | - ]]]]
-+
-+[[iftags [[#ifexpr {$minimal} == (true) | - ]]]]
-+[[/iftags]]
-+[[/iftags]]
-+[[/iftags]]
-+[[/iftags]]
-+
 ++ ソースコード
 +
 +[[collapsible show="> コードを表示" hide="> コードを閉じる"]]
@@ -333,7 +316,6 @@ adjudicated explanation.
 +@import url('https://fonts.googleapis.com/css2?family=Nixie+One&display=swap');
 +@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 +@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
 +
 +/*
 +    创伤 / Trauma — Ported for SCP-JP (theme:trauma rev 6 on scp-wiki-cn).
@@ -351,10 +333,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 2 — original 61–302 · candidate 332–347 · +3/−229 · residual</summary>
+<summary>Section 2 — original 61–302 · candidate 319–334 · +3/−229 · residual</summary>
 
 ```diff
-@@ -61,242 +332,16 @@
+@@ -61,242 +319,16 @@
      position: relative;
      padding-left: 0;
  }
@@ -605,22 +587,29 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 3 — original 654–665 · candidate 699–705 · +0/−5 · residual</summary>
+<summary>Section 3 — original 654–662 · candidate 686–702 · +10/−2 · residual, supplement</summary>
 
 ```diff
-@@ -654,12 +699,7 @@
+@@ -654,9 +686,17 @@
          width: 50%;
      }
  }
 -[[/module]]
--[[/collapsible]]
++[[/code]]
+ [[/collapsible]]
 -[[/div]]
++
++[[include :scp-jp:component:license-box-backend
++|author=Liurd]]
++
++> **画像・フォントの出典:** 原語版の theme:trauma の記載に従います。sandbox・他Wiki・個人サイトの添付は候補ページに再ホストしています。原語版にライセンス表記が無い画像は、投稿前に著者へ確認してください。
++
++[[include :scp-jp:component:license-box-end]]
++
++[[/iftags]]
  
--[[iftags [[#ifexpr {$rainy} == (true) | - ]]]]
--[[module css]]
- #extra-div-4 {
-     position: fixed;
-     top: 0;
+ [[iftags [[#ifexpr {$rainy} == (true) | - ]]]]
+ [[module css]]
 ```
 
 </details>
@@ -643,30 +632,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 5 — original 683–693 · candidate 723–729 · +0/−4 · residual</summary>
+<summary>Section 5 — original 699–705 · candidate 739–745 · +1/−1 · residual</summary>
 
 ```diff
-@@ -683,11 +723,7 @@
-     background-position: 0 15rem;
-   }
- }
--[[/module]]
--[[/iftags]]
- 
--[[iftags [[#ifexpr {$yellow} == (true) | - ]]]]
--[[module css]]
- :root {
-     --body-bg: 255, 235, 0;
-     --global-white-color: 255, 248, 225;
-```
-
-</details>
-
-<details>
-<summary>Section 6 — original 699–705 · candidate 735–741 · +1/−1 · residual</summary>
-
-```diff
-@@ -699,7 +735,7 @@
+@@ -699,7 +739,7 @@
      --global-accent-2: 215, 155, 0;
      --global-accent-3: 125, 85, 80;
  
@@ -680,65 +649,26 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 7 — original 715–726 · candidate 751–757 · +0/−5 · residual</summary>
+<summary>Purely mechanical sections (6, 7) — whitespace, host, and branch-token changes only (heuristic)</summary>
 
 ```diff
-@@ -715,12 +751,7 @@
-     text-decoration: line-through;
-     text-shadow: 0 1rem rgba(var(--global-accent-3), 1), 0 2rem rgba(var(--global-accent-3), .5), 0 3rem rgba(var(--global-accent-3), .25);
- }
--[[/module]]
--[[/iftags]]
+@@ -763,7 +803,6 @@
  
--[[iftags [[#ifexpr {$blue} == (true) | - ]]]]
--[[module css]]
--@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
- 
- :root {
-     --body-bg: var(--global-accent-2);
-```
-
-</details>
-
-<details>
-<summary>Section 8 — original 758–768 · candidate 789–795 · +0/−4 · residual</summary>
-
-```diff
-@@ -758,11 +789,7 @@
- #extrac-div-1 {
-     font-weight: 700;
- }
--[[/module]]
--[[/iftags]]
- 
--[[iftags [[#ifexpr {$minimal} == (true) | - ]]]]
--[[module css]]
- 
+ [[iftags [[#ifexpr {$minimal} == (true) | - ]]]]
+ [[module css]]
+-
  :root {
      --extra-opacity-1: 0;
+     --extra-opacity-2: 0;
 ```
 
-</details>
-
-<details>
-<summary>Section 9 — original 849–854 · candidate 876–889 · +9/−1 · residual, supplement</summary>
-
 ```diff
-@@ -849,6 +876,14 @@
+@@ -849,6 +888,5 @@
          padding: 0;
      }
  }
-+[[/code]]
-+[[/collapsible]]
- 
--[[/module]]
-+[[include :scp-jp:component:license-box-backend
-+|author=scp-wiki-cn theme:trauma の作者]]
-+
-+> **画像・フォントの出典:** 原語版の theme:trauma の記載に従います。sandbox・他Wiki・個人サイトの添付は候補ページに再ホストしています。原語版にライセンス表記が無い画像は、投稿前に著者へ確認してください。
-+
-+[[include :scp-jp:component:license-box-end]]
-+
+-
+ [[/module]]
  [[/iftags]]
 ```
 

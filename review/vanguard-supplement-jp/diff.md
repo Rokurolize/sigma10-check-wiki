@@ -8,21 +8,19 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 225 |
-| candidate.txt | 261 |
-| Added | +64 |
-| Review-stage comments | 0 of the +64 added lines |
+| candidate.txt | 259 |
+| Added | +62 |
+| Review-stage comments | 0 of the +62 added lines |
 | Removed | -28 |
 | Hunks | 6 |
 
 ```diff
 --- original.txt
 +++ candidate.txt
-@@ -1,42 +1,59 @@
+@@ -1,42 +1,57 @@
  [[module CSS]]
 -@import url('https://scp-wiki.wikidot.com/local--code/theme:vanguard-supplement/1');
 +@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
-+@import url('https://fonts.googleapis.com/css2?family=Basic&family=IBM+Plex+Mono:wght@400;700&display=swap');
-+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 +@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Avanguard-supplement-jp/1');
  [[/module]]
  
@@ -100,7 +98,7 @@ with `python3 review/build_review.py`; verify with
  
  [[div class="log"]]
  @@[[div class="log"]]@@
-@@ -45,13 +62,15 @@
+@@ -45,13 +60,15 @@
  ----
  
  [[=]]
@@ -118,7 +116,7 @@ with `python3 review/build_review.py`; verify with
  /*
      Vanguard Supplement
      [2024 Wikidot Theme]
-@@ -75,7 +94,7 @@
+@@ -75,7 +92,7 @@
      top: 1rem;
      z-index: -1;
  
@@ -127,7 +125,7 @@ with `python3 review/build_review.py`; verify with
      background-position: center top;
      background-repeat: no-repeat;
      background-size: auto 9em;
-@@ -111,7 +130,7 @@
+@@ -111,7 +128,7 @@
  }
  
  #header h2::before {
@@ -136,7 +134,7 @@ with `python3 review/build_review.py`; verify with
      font-size: 110%;
  }
  
-@@ -195,7 +214,7 @@
+@@ -195,7 +212,7 @@
  
  #content-wrap :is(#page-title, .meta-title) {
      text-align: center;
@@ -145,7 +143,7 @@ with `python3 review/build_review.py`; verify with
      color: #b61805;
      font-size: 280%;
  }
-@@ -222,4 +241,21 @@
+@@ -222,4 +239,21 @@
  [[/<]]
  [[/collapsible]]
  [[/=]]

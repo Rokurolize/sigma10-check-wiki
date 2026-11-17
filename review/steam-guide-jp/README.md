@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:steam-guide-jp — origin CN, population #233 [GOSIGN2-LEDGER (b) row 233]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 3568fbc8ee7b52091a3a8080db68441eb25a5590149ccfcf744c3d47fdc5e1f9); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 5f72b6fbcb293b2dde1d65b41db52e379815687e8f765f3bb72156644df13033); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 7 errors / 2 warns / 7 infos (hotlink×5, http×1, pseudo-ref×1); standing classes dispositioned in register c1 [T1-ROWS row 193; GOSIGN2-LEDGER (b) row 233]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page-overflow 371–372px@320 (both engines) + runtime-hotlink site-theme chain + candidate cdn.jsdelivr.net; sample credit-modal (preview-form) + page-overflow 371px@320; T3 page not separately walked, no additional visual finding; mixed coverage: page full-engine, sample chromium-only (no WebKit verdict). [RENDER-ROWS-G (CN15)]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 232, source LOCALIZE-S2-E]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 232]
 - FIX5 re-judgement: item 89 (class I) FIXED — FIX5-STRUCTA, commit 8c0cd35: deleted ListPages wrapper restored at L2 verbatim from original L188; four CN credit includes repointed to :scp-jp:credit:*; spot-verified for this supplement [GOSIGN2-LEDGER-SUPPLEMENT (a) item 89; (c) check 2]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:steam-guide-jp.txt sha256:3568fbc8ee7b52091a3a8080db68441eb25a5590149ccfcf744c3d47fdc5e1f9; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit cdb1e6daa1f322aa4ec093f5f9967319e746274c; candidate file pages/theme:steam-guide-jp.txt sha256:5f72b6fbcb293b2dde1d65b41db52e379815687e8f765f3bb72156644df13033; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -93,6 +93,17 @@ Checks run for this package: sha256 of original.txt against review/sources.tsv (
 ## Per-theme record: FIX5 re-derivation (item 89)
 
 The ledger charges item 89 (class I) [GOSIGN2-LEDGER (e) item 89] with three defects: the opening ListPages wrapper deleted, raw %%content{0}%% literals fused into the body, and unrewritten CN credit includes. The supplement re-judges it FIXED by FIX5-STRUCTA, commit 8c0cd35 [GOSIGN2-LEDGER-SUPPLEMENT (a) item 89], with a supplement spot-check pass. Re-derived from this package's bytes: (1) candidate L2, the ListPages module with offset and range attributes, is byte-identical to original L188, the charged wrapper; (2) no scp-wiki-cn:credit reference survives anywhere in the candidate (grep count 0), and the demo region carries five %%content{0}%% lines naming :scp-jp:credit:* targets (candidate L15, 17, 23, 25, 27); the supplement counts four repointed credit includes, and under either count the closure holds, since the charge was the survival of CN targets; (3) no raw %%content{0}%% literal stands fused in body text outside the demo machinery. Closure CONFIRMED. The stamp is STALE only because the later usage sweep (b5cb724) touched the file after the verdict; that sweep renamed usage-example page references and did not touch the item-89 content.
+
+### Post-package repairs (REFRESH3-K)
+
+The items above describe this package as built. The repairs recorded below postdate the package; `candidate.txt` has been recopied from the current canonical `pages/theme:steam-guide-jp.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+- **FIX-RFIX15, landing `cdb1e6daa1f322aa4ec093f5f9967319e746274c`** ("pages: R-fix-15 flags repaired (steam-guide, sunside, supply)", 2026-11-17, R/review-scout/FIX-RFIX15.md §§1–4; +192/−6). Four items, all confined to this candidate:
+  - **F1 — credit title field.** The タイトル field no longer duplicates the CN 原題: refreshed candidate L190 now reads `**タイトル:** ゲームガイド テーマ`, the body's own name (the L233 prose form ゲームガイドテーマ is the same name without the space). 原題 and the 元記事リンク label still quote the Chinese title, correctly: they cite the original.
+  - **F2 — plain-slug self-delivery import.** The page2 import at L374 now names the candidate's own block 1, `https://scp-jp.wdfiles.com/local--code/theme%3Asteam-guide-jp/1` (pre-edit plain `theme:steam-guide/1`); only the page name changed, host and scheme untouched. The checker does not flag the address before or after (scp-jp.wdfiles.com is allowlisted); the defect was the page name.
+  - **F3 — four plain-slug guide links.** L217, L218, L219 and L369 now name `theme:steam-guide-jp` in the same URL form; the `http` scheme is the standing class (ii) posting rewrite, not edited. The fourfold repetition is inherited from the original and is not itself a defect.
+  - **F4 — include-parameter gates restored (17).** The original's entire 17-gate include interface (orig L1–186) is prepended byte-for-byte before `[[iftags +テーマ]]`, with only the candidate's established transformations: the two delivery @imports at L7/L14 name this candidate's own block 1 on the draft host (`https://sigma10-jp-test.wdfiles.com/local--code/theme%3Asteam-guide-jp/1`); inc-source's toggle-sidebar include is repointed `:scp-wiki:` → `:scp-jp:`; static gate prose is translated with the candidate's own renderings; all `{$...}` parameters, ListPages variables, rating computation and module forms are byte-identical to the original. The body's static guide preview is the port of the original's own demo, not an inlining of the gates, so no inlined content was carried back.
+The per-theme record's item-89 note that the stamp is STALE "only because the later usage sweep (b5cb724)" is the as-built record; these repairs are a further, later reason. Checker (FIX-RFIX15 §8): error 6 / warn 2 / info 7 → 9 / 2 / 7 — +2 pseudo-ref (class iii, the restored gates' own draft-host imports) and +1 hotlink (class ii, the gate's black.png); class (i) 0 before and after.
 
 ## Change set
 

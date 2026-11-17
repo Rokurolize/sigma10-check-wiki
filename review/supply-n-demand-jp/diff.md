@@ -8,16 +8,16 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 2887 |
-| candidate.txt | 2761 |
-| Added | +93 |
-| Review-stage comments | 0 of the +93 added lines |
-| Removed | -227 |
-| Hunks | 7 |
+| candidate.txt | 2902 |
+| Added | +149 |
+| Review-stage comments | 0 of the +149 added lines |
+| Removed | -149 |
+| Hunks | 10 |
 
 ```diff
 --- original.txt
 +++ candidate.txt
-@@ -1,209 +1,52 @@
+@@ -1,65 +1,49 @@
 -[[module CSS]]
 -@import url("https://cdn.jsdmirror.com/gh/EilixiusLu/WikidotTheme@v1.0.8/mcd-snd-mirror.css");
 -
@@ -99,75 +99,78 @@ with `python3 review/build_review.py`; verify with
 +脚注の表示を差し替えるコンポーネントを読み込みます
  [[/=]]
  
--
--[[div class="eqe-title"]]
+++* 画像の出典
++
++> **画像:** woodcut_background.png（底栏・レターヘッドの背景）
++> **出典:** [*https://mcd-curios.wikidot.com/ Marshall, Carter & Dark] Wiki
++> **URL:** https://themes.wdfiles.com/local--files/woodcut/woodcut_background.png
+ 
+ [[div class="eqe-title"]]
 -++ 配色方案
 -[[/div]]
 -
 -[[include :scp-wiki:component:theme-squares -=-
--| color1-name=MC&D 深紫
--| color1-variable=--snd-main
--| color1-info=64, 23, 68
--| color1-has-light-text=1
--
--| color2-name=浅灰紫
--| color2-variable=--pale-gray-monochrome
--| color2-info=248, 230, 238
--
++++ 配色
++[[/div]]
++
++[[include :scp-jp:component:theme-squares -=-
+ | color1-name=MC&D 深紫
+ | color1-variable=--snd-main
+ | color1-info=64, 23, 68
+@@ -69,7 +53,7 @@
+ | color2-variable=--pale-gray-monochrome
+ | color2-info=248, 230, 238
+ 
 -| color3-name=纯白
--| color3-variable=--light-gray-monochrome
--| color3-info=255, 255, 255
--
--| color4-name=灰紫
--| color4-variable=--gray-monochrome
--| color4-info=61, 43, 61
--| color4-has-light-text=1
--
--| color5-name=暗灰紫
--| color5-variable=--dark-gray-monochrome
--| color5-info=52, 31, 52
--| color5-has-light-text=1
--
++| color3-name=純白
+ | color3-variable=--light-gray-monochrome
+ | color3-info=255, 255, 255
+ 
+@@ -83,12 +67,12 @@
+ | color5-info=52, 31, 52
+ | color5-has-light-text=1
+ 
 -| subcolor1-name=亮浅紫
--| subcolor1-variable=--pale-accent
--| subcolor1-info=216, 39, 216
--| subcolor1-has-light-text=1
--
++| subcolor1-name=明るい薄紫
+ | subcolor1-variable=--pale-accent
+ | subcolor1-info=216, 39, 216
+ | subcolor1-has-light-text=1
+ 
 -| subcolor2-name=亮紫
--| subcolor2-variable=--bright-accent
--| subcolor2-info=180, 35, 180
--| subcolor2-has-light-text=1
--
--| subcolor3-name=中紫
--| subcolor3-variable=--medium-accent
--| subcolor3-info=140, 20, 140
--| subcolor3-has-light-text=1
--
--| subcolor4-name=暗紫
--| subcolor4-variable=--dark-accent
--| subcolor4-info=100, 3, 100
--| subcolor4-has-light-text=1
--
++| subcolor2-name=明るい紫
+ | subcolor2-variable=--bright-accent
+ | subcolor2-info=180, 35, 180
+ | subcolor2-has-light-text=1
+@@ -103,107 +87,107 @@
+ | subcolor4-info=100, 3, 100
+ | subcolor4-has-light-text=1
+ 
 -| subcolor5-name=新页面紫
--| subcolor5-variable=--newpage-color
--| subcolor5-info=221, 102, 221
--| subcolor5-has-light-text=1
--
++| subcolor5-name=新規ページ紫
+ | subcolor5-variable=--newpage-color
+ | subcolor5-info=221, 102, 221
+ | subcolor5-has-light-text=1
+ 
 -| subcolor6-name=边框灰
--| subcolor6-variable=--table-border-color
--| subcolor6-info=160, 140, 160
--| subcolor6-has-light-text=1
--]]
++| subcolor6-name=枠線グレー
+ | subcolor6-variable=--table-border-color
+ | subcolor6-info=160, 140, 160
+ | subcolor6-has-light-text=1
+ ]]
 -+ 示例
--
--[[toc]]
--
+++ 例
+ 
+ [[toc]]
+ 
 -[[include component:image-block name=https://site-eq-02.wdfiles.com/local--files/theme%3Amcdnew/mcd-bk.jpg|caption=MC&D神秘小背景|width=200px]]
 -
 -可通过五个连字符“@@-----@@”创建水平分割线。若它未被放在其他部件（诸如引用块）中，则会左右延伸贯穿页面。这种将文件分割为多个部分的线就是分割线。
--
-------
--
++[[include component:image-block name=https://site-eq-02.wdfiles.com/local--files/theme%3Amcdnew/mcd-bk.jpg|caption=MC&Dの神秘的な背景（小）|width=200px]]
++
++ハイフンを5つ並べた「@@-----@@」で水平の区切り線を作成できます。引用ブロックなど他の部品の中に置かれていなければ、左右へ伸びてページを横断します。このようにファイルを複数の部分へ分ける線が区切り線です。
+ 
+ -----
+ 
 -标题可通过在一行字起始处输入 1 至 6 个加号“+”来创建。
 -
 -[[collapsible show="+ 标题" hide="- 标题"]]
@@ -182,19 +185,39 @@ with `python3 review/build_review.py`; verify with
 -+++++ 5 级标题
 -
 -++++++ 6 级标题
--[[/collapsible]]
--
--@@ @@
--
--[[tabview]]
++見出しは、行頭に1個から6個のプラス記号「+」を入力して作成できます。
++
++[[collapsible show="+ 見出し" hide="- 見出し"]]
+++ 1 段見出し
++
++++ 2 段見出し
++
+++++ 3 段見出し
++
++++++ 4 段見出し
++
+++++++ 5 段見出し
++
++++++++ 6 段見出し
+ [[/collapsible]]
+ 
+ @@ @@
+ 
+ [[tabview]]
 -[[tab 分页]]
 -此为分页（tab view）。
--[[/tab]]
++[[tab タブ]]
++これはタブビュー（tab view）です。
+ [[/tab]]
 -[[tab 分页]]
 -看，这有更多文字。
 -
 -多么精巧绝伦。
--[[/tab]]
++[[tab タブ]]
++ほら、ここにはさらに文章があります。
++
++なんと精巧なのでしょう。
+ [[/tab]]
 -[[tab 长 Tab]]
 -这是一个长的 tab，它有很多文字。[[footnote]]这是一个脚注。[[/footnote]]
 -
@@ -211,33 +234,60 @@ with `python3 review/build_review.py`; verify with
 -这是一个长的 tab，它有很多文字。
 -
 -这是一个长的 tab，它有很多文字。
--[[/tab]]
++[[tab 長いタブ]]
++これは長いタブで、たくさんの文章があります。[[footnote]]これは脚注です。[[/footnote]]
++
++これは長いタブで、たくさんの文章があります。
++
++これは長いタブで、たくさんの文章があります。
++
++これは長いタブで、たくさんの文章があります。
++
++これは長いタブで、たくさんの文章があります。
++
++これは長いタブで、たくさんの文章があります。
++
++これは長いタブで、たくさんの文章があります。
++
++これは長いタブで、たくさんの文章があります。
+ [[/tab]]
 -[[tab 空 Tab]]
--[[/tab]]
--[[/tabview]]
--
++[[tab 空のタブ]]
+ [[/tab]]
+ [[/tabview]]
+ 
 -> 这是一个引用块，在一行字的起始处加上“> ”来创建。
-->
++> これは引用ブロックです。行頭に「> 」を付けると作成できます。
+ >
 -> 更多文字
--> -----
++> さらに文章
+ > -----
 -> 一条分割线
-->
++> 区切り線
+ >
 ->> 嵌套引用块
--
--[[code type="CSS"]]
++>> 入れ子になった引用ブロック
+ 
+ [[code type="CSS"]]
 -/* 这是代码块 */
--#header h1 a, #header h2 span {
--    margin: 0;
--    padding: 0;
--}
--[[/code]]
--
++/* これはコードブロックです */
+ #header h1 a, #header h2 span {
+     margin: 0;
+     padding: 0;
+ }
+ [[/code]]
+ 
 -||~ 这是 ||~ 表格 ||
 -||你应该老早 || 就知道怎么 ||
 -||||做这个了吧 ||
 -
 -||~ 表格演示 ||
--||~ XXXXX/XXXXX/XXXXX ||
++||~ これは ||~ 表です ||
++|| これの作り方は || もうとっくに ||
++|||| 分かっているはずです ||
++
++||~ 表のデモ ||
+ ||~ XXXXX/XXXXX/XXXXX ||
 -|| MC&D 格式中所使用的表格的标题格已用浅紫灰色重新上色，如以上和以下所示。 ||
 -||~ Marshall、Carter 和 Dark 有限责任合伙企业 ||
 -
@@ -245,11 +295,8 @@ with `python3 review/build_review.py`; verify with
 -
 -++ 浮动盒子
 -显然--剽窃--借鉴自[https://scp-wiki-cn.wikidot.com/theme:sunside 向阳 主题版式]的实现方案
-++* 画像の出典
-+
-+> **画像:** woodcut_background.png（底栏・レターヘッドの背景）
-+> **出典:** [*https://mcd-curios.wikidot.com/ Marshall, Carter & Dark] Wiki
-+> **URL:** https://themes.wdfiles.com/local--files/woodcut/woodcut_background.png
++|| MC&D形式で使用される表の見出しセルは、薄灰紫色に再着色されています。上記の表と以下の表に示すとおりです。 ||
++||~ Marshall、Carter and Dark 有限責任パートナーシップ ||
 +
 ++ カスタムスタイル
 +
@@ -263,7 +310,7 @@ with `python3 review/build_review.py`; verify with
  個飽讀錯七行的書巾千念頁信母哥後發「火青水重活和旦」路親她虎色冰得浪寸帽紅太位位耳發手荷假，姐公員貝候幾坡海再誰固毛定刃；七兔習。
  [[/div]]
  
-@@ -219,43 +62,43 @@
+@@ -219,43 +203,43 @@
  
  綠刀頭！采園爪完她子兌手許毛實抄葉葉想游即抓年！色方五點隻王跳尤兩朵種麼麻間色看裝知這方，世四扒不，美帶位問送斥木能汗員掃登歡頭即一，浪瓜安牠女草苦經山紅東成蝸。
  
@@ -331,7 +378,7 @@ with `python3 review/build_review.py`; verify with
  [[div class="mcd-box mcd-light"]]
  @@[[div class="mcd-card-wrapper"]]@@
  @@[[div class="mcd-card-inner"]]@@
-@@ -269,7 +112,7 @@
+@@ -269,7 +253,7 @@
  MR. TEST PAPER
  @@[[/div]]@@
  @@[[div class="person-title"]]@@
@@ -340,7 +387,7 @@ with `python3 review/build_review.py`; verify with
  @@[[/div]]@@
  @@[[div class="info-divider"]]@@
  @@[[/div]]@@
-@@ -335,7 +178,7 @@
+@@ -335,7 +319,7 @@
  MR. TEST PAPER
  [[/div]]
  [[div class="person-title"]]
@@ -349,7 +396,7 @@ with `python3 review/build_review.py`; verify with
  [[/div]]
  [[div class="info-divider"]]
  [[/div]]
-@@ -387,10 +230,10 @@
+@@ -387,10 +371,10 @@
  [[/div]]
  [[/div]]
  
@@ -364,7 +411,7 @@ with `python3 review/build_review.py`; verify with
  [[div class="mcd-box mcd-light"]]
  @@[[div class="mcd-letterhead"]]@@
  @@[[div class="engraving-top"]]@@
-@@ -441,18 +284,40 @@
+@@ -441,18 +425,40 @@
  ----
  
  [[=]]
@@ -410,7 +457,7 @@ with `python3 review/build_review.py`; verify with
  @import url("https://cdn.jsdmirror.com/gh/EilixiusLu/WikidotTheme@v1.0.8/lib/sigma-plus.css");
  @import url("https://cdn.jsdmirror.com/gh/EilixiusLu/WikidotTheme@v1.0.8/lib/editor-icons.css");
  
-@@ -2884,4 +2749,13 @@
+@@ -2884,4 +2890,13 @@
  /* #endregion */
  [[/code]]
  [[/collapsible]]

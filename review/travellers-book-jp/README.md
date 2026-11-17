@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:travellers-book-jp — origin CN, population #240 [GOSIGN2-LEDGER (b) row 240]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now ac71b69e4dddd42fb1ba31a7be11668644a5ba7fc743a8612f1ef0f55bbbbd44); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 0322792c92b6c30ece6ad0a2714fa21bbc21c336ba929868caf069b2b7900026); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 6 errors / 2 warns / 1 info (pseudo-ref×6); standing classes dispositioned in register c1 [T1-ROWS row 205; GOSIGN2-LEDGER (b) row 240]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page runtime-hotlink site-theme chain only; sample credit-modal (preview-form) + page-overflow 323px@320 + 960px@768; T3 re-run, no new screenshot-grounded visual finding; chromium-only coverage (no WebKit verdict). [RENDER-ROWS-G (CN16)]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 239, source LOCALIZE-S2-E]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 239]
 - FIX5 re-judgement: item 96 (class H) FIXED — FIX5-TEXTB §2, commit 3f328d8: dead wanderers:travellers-book-hub link (probe HTTP 404) converted to plain text with a translator's note; warning cleared [GOSIGN2-LEDGER-SUPPLEMENT (a) item 96]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:travellers-book-jp.txt sha256:ac71b69e4dddd42fb1ba31a7be11668644a5ba7fc743a8612f1ef0f55bbbbd44; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 872057f3664b2fe570f4ca78e86406d0694e5692; candidate file pages/theme:travellers-book-jp.txt sha256:0322792c92b6c30ece6ad0a2714fa21bbc21c336ba929868caf069b2b7900026; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -150,6 +150,15 @@ Argued in section 1. The original names its author in its code banner (original 
 ### Flag B — the load-only JP font supplement
 
 Argued in section 4. The port added two JP font loads (candidate L72–73) and no stack to name them; the file's only font-family declarations name the CN system faces '宋体' and '等线' with `!important` (candidate L203, L235), inherited byte-identically. In the population's settled P7 form, a JP load arrives with stacks that name the loaded face as the CJK fallback; where a candidate's winning stacks kept the source faces while its loads stood unused, the review pass has treated the misalignment as the defect (the shancheng shape). The counter-consideration, stated for the coordinator's adjudication rather than decided here: this file's own annotation says the Sigma-9 layer comes from the site theme, and a load in this file would serve that layer's stacks too if they name the JP faces; those stacks are outside this package's two files, so the package records the state and the deciding check (read the JP Sigma-10 site theme's font stacks for a Noto Sans JP / Noto Serif JP name) rather than a verdict. Flagged, not edited, by this package.
+
+### Post-package repairs (REFRESH3-K)
+
+The items above describe this package as built. The repairs recorded below postdate the package; `candidate.txt` has been recopied from the current canonical `pages/theme:travellers-book-jp.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+- **FIX-RFIX17 items 3–4, landing `872057f3664b2fe570f4ca78e86406d0694e5692`** ("pages: R-fix-17 flags repaired …", 2026-11-17, R/review-scout/FIX-RFIX17.md §§3–4; four one-line changes):
+  - **Item 3 — credit pointer → W Asriel.** The 著作権者 field at L16 now reads `**著作権者:** [[*user W Asriel]]` and the license-box author parameter at L390 reads `|author=W Asriel]]`. Evidence: the original's code banner names the maker (orig L69, "Made by [[*user W Asriel]] for the Traveller's Book"), carried byte-identically at candidate L88. This closes the package's Flag A, kept above as the as-built record.
+  - **Item 4 — load-only JP font supplement, stacks aligned.** The file's two inherited `font-family` declarations now name the loaded faces: L203 `font-family:'Noto Serif JP','宋体' !important;` and L235 `font-family:'Noto Sans JP','等线' !important;` — genre-matched (loaded JP face first, the face it replaces kept as fallback), each line's own punctuation preserved. Both loads already stood at L72–73; no load was added or removed. The stop-condition check was executed first: the file's only code-block annotation speaks of the Sigma-9 *site-theme layer*, not of these loads, so the coordinator's adjudication applied. This closes Flag B, kept above as the as-built record (including its counter-consideration).
+Checker (FIX-RFIX17 table): error 6 / warn 1 / info 1 → 6 / 1 / 1, finding sets identical modulo line numbers; class (i) 0 before and after.
 
 ## Change set outside the two diffed files
 

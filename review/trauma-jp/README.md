@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:trauma-jp — origin CN, population #239 [GOSIGN2-LEDGER (b) row 239]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now f147e1a0334c74851de7b2339cb5bc8c718f9eee64e15443b587f01c7e57a635); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now ee605cd60ac74024871b6a7dafe02fca440211d6e271d2776c1c11b7aef103d0); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 13 errors / 1 warn / 0 infos (pseudo-ref×12, hotlink×1); standing classes dispositioned in register c1 [T1-ROWS row 204; GOSIGN2-LEDGER (b) row 239]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page-overflow 517–520px@≤375 + 831px@768 (page) and 530–533px@≤375 + 831px@768 (sample) + runtime-hotlink site-theme chain + candidate hosts cdn.jsdelivr.net, lemoncat233.github.io; sample credit-modal (preview-form); T3 re-run, no new screenshot-grounded visual finding; chromium-only coverage (no WebKit verdict). [RENDER-ROWS-G (CN16)]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 238, source LOCALIZE-S2-E]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 238]
 - FIX5 re-judgement: item 95 (class H) FIXED — FIX5-TEXTB §3, commit 3f328d8: prose link repointed to theme:suprematism-jp (probe: unsuffixed name 404) [GOSIGN2-LEDGER-SUPPLEMENT (a) item 95]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:trauma-jp.txt sha256:f147e1a0334c74851de7b2339cb5bc8c718f9eee64e15443b587f01c7e57a635; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 872057f3664b2fe570f4ca78e86406d0694e5692; candidate file pages/theme:trauma-jp.txt sha256:ee605cd60ac74024871b6a7dafe02fca440211d6e271d2776c1c11b7aef103d0; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -154,6 +154,15 @@ Argued in sections 3 and 5. The original's four presets are functional: each is 
 ### Minor observation — the empty code-exhibit collapsible
 
 Candidate L243–245: the hidden div and collapsible that held the original's code exhibit stand empty after the exhibit's move to the + ソースコード section (section 8). The exhibit itself is complete in its new position; the husk costs a stray toggle inside a hidden div. Recorded for the same repair pass as the flags, at minor weight.
+
+### Post-package repairs (REFRESH3-K)
+
+The items above describe this package as built. The repairs recorded below postdate the package; `candidate.txt` has been recopied from the current canonical `pages/theme:trauma-jp.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+- **FIX-RFIX17 items 1–2, landing `872057f3664b2fe570f4ca78e86406d0694e5692`** ("pages: R-fix-17 flags repaired (trauma, travellers-book)", 2026-11-17, R/review-scout/FIX-RFIX17.md §§1–2; 889 → 892 lines):
+  - **Item 1 — credit pointer → Liurd.** The 著作権者 field at L18 now reads `**著作権者:** [[*user Liurd]]` and the license-box author parameter at L693 reads `|author=Liurd]]` (pre-edit both were pointers naming nobody). Evidence: the original names its author only in its intro byline (orig L76, `[[*user Liurd]]`), and the candidate's own prose already named him. This closes the package's Flag A, which is kept above as the as-built record.
+  - **Item 2 — emptied preset gates restored.** The four preset bodies were extracted from the consolidated code block and returned to inline gated `[[module css]]` blocks at the file tail, in the original's own gate form and order, as siblings outside the `[[iftags +テーマ]]` gate (the suprematism-jp item-92 repaired form): rainy at L701/L702, yellow L729/L730, blue L761/L762, minimal L804/L805 (file ends at L892 with minimal's `[[/iftags]]`). The empty nested shells formerly at L246–257 were removed; the blue preset's Old Standard TT `@import` was relocated from the code block's head into the blue gated module as its first line (byte-identical, stated once), because only the blue preset's `--banner-font` names the face. Rule-multiset census: 80 items / 78 distinct before and after, multisets exactly equal; @imports 10 before, 10 after. Restored modules byte-compared to the original: minimal and blue identical; rainy and yellow identical except their two URLs, which keep the candidate's settled draft-host re-host. This closes Flag B and the minor empty-collapsible observation, kept above as the as-built record.
+Checker (FIX-RFIX17 table): error 13 / warn 1 / info 0 → 13 / 1 / 0, finding sets identical modulo shifted line numbers; class (i) 0 before and after.
 
 ## Change set outside the two diffed files
 

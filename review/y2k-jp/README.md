@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:y2k-jp — origin EN, population #43 [GOSIGN2-LEDGER (b) row 43]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 285dd628cad4f40c6eb13c028ffd9e92d0d22e33984089475cc0e073f3369e94); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 2b47d82fc95a275fa29370f56a516711c6c16de02933b2d7d42e2478dc25475a); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 2 errors / 0 warns / 3 infos (http×1, pseudo-ref×1); standing classes dispositioned in register c1 [T1-ROWS row 43; GOSIGN2-LEDGER (b) row 43]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — `logo.png` broken in chromium at ≤768 (load-failed/ORB, real broken asset), custom header tagline clips at ≤375 both edges, mobile sidebar handle overlaps body text at 320; T2 sample no machine verdict (webkit never completes). [RENDER-ROWS-1 (RENDER-D2 row 43)]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 3 [LOCALIZE-ROWS row 43, source LOCALIZE-B]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 43]
 - FIX5 re-judgement: items 10 (class D) FIXED, 11 (class H) FIXED, 12 (class C) FIXED — FIX5-INFO, commit 9a1c86a: y2k font import and stack suffixes (pattern 7); heading '+ Examples' -> '+ ' (JP) and collapsible labels translated; orphaned info body text inside the credit panel removed. Lane documented on evidence (all five git revisions) that no literal info:start include ever existed; the ledger's wording was loose and the actually charged residue was removed [GOSIGN2-LEDGER-SUPPLEMENT (a) items 10–12]
-- Computed against: canonical commit 358955eb4013dac2399c414ba8ec2a6e416a3c11; candidate file pages/theme:y2k-jp.txt sha256:285dd628cad4f40c6eb13c028ffd9e92d0d22e33984089475cc0e073f3369e94; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 87c92400a1bc327a00c056d29f538f62762ce4c5; candidate file pages/theme:y2k-jp.txt sha256:2b47d82fc95a275fa29370f56a516711c6c16de02933b2d7d42e2478dc25475a; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## 0. Header / provenance
@@ -157,6 +157,12 @@ Charged (ledger wording): a stray info:start include line at L20 in the credit a
 The supplement corrects the wording on evidence: no literal info:start include exists in any of the candidate's five git revisions; the actual residue was the orphaned translated info body line あなたの記事に関する情報 standing inside the credit panel, removed by 9a1c86a (`git show 9a1c86a` shows the removal).
 Re-derived: the current candidate contains no info: include and no orphan body line — `grep -n "info" candidate.txt` matches only .fa-info CSS selectors. The charged residue is absent; the ledger's phrasing was loose, as the supplement states.
 Closure: CONFIRMED, with the wording correction recorded.
+
+### Post-package repairs (REFRESH3-K)
+
+The items above describe this package as built. The repair recorded below postdates the package; `candidate.txt` has been recopied from the current canonical `pages/theme:y2k-jp.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+- **FIX-RFIX21 item 2, landing `87c92400a1bc327a00c056d29f538f62762ce4c5`** ("pages: R-fix-21 flags repaired …", 2026-11-17, R/review-scout/FIX-RFIX21.md §2; 1 line): candidate L121 `+ Source code` → `+ ソースコード`. Evidence: the untranslated heading was the only "Source code" occurrence in the file, standing directly above the collapsible at L122 whose labels FIX5-INFO item 11 already translated (`show="> コードを表示" hide="> コードを閉じる"`); it is reader-visible prose of exactly the class item 11 charged but which no ledger row dispositioned. The population form `+ ソースコード` stands in 115 candidate files (foundom, eigenvector, turbo-vision, voyager, supply-n-demand, shancheng, rpma, mox); the colon-suffixed variants are only 3 files. Section 6's flag (and §11's reference to it) is kept as the as-built record; the flag is now repaired in the recopied candidate — item 11's closure line "the uncharged `+ Source code` heading at cand L121 is §6's flag" stands as issued. Checker (FIX-RFIX21 §3): plain error 2 / warn 0 / info 3 → 2 / 0 / 3 and `--check-links` 2 / 0 / 3 → 2 / 0 / 3, byte-identical finding sets; the two standing errors are L2 pseudo-ref (class iii) and L43 http (class ii), both on untouched lines; class (i) 0 before and after.
 
 ## Change set outside the two diffed files
 

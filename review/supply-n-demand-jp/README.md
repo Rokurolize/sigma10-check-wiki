@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:supply-n-demand-jp — origin CN, population #234 [GOSIGN2-LEDGER (b) row 234]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 031b7d9c69d907826712968a888571087c870c727af940f1e120c0f38cb3c29a); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now a9aed09aa078ee45c7eaaf2b5f8bbd1f07cc8424a3596995f1ec59a8d6bcec10); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 6 errors / 2 warns / 1 info (hotlink×5, pseudo-ref×1); standing classes dispositioned in register c1 [T1-ROWS row 194; GOSIGN2-LEDGER (b) row 234]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page-overflow 507px@320/375 (page) and 519px@320/375 (sample) + runtime-hotlink site-theme chain + candidate hosts cdn.jsdmirror.com, cdn.scpwiki.com, scp-wiki-cdn.nyc3.cdn.digitaloceanspaces.com; sample credit-modal (preview-form); T3 re-run, no new screenshot-grounded visual finding; chromium-only coverage (no WebKit verdict). [RENDER-ROWS-G (CN15)]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 233, source LOCALIZE-S2-E]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 233]
 - FIX5 re-judgement: item 90 (class I) FIXED — FIX5-STRUCTA, commit 8c0cd35: deleted showcase restored, 250 lines copied from original L199-448 at L42-291 with prose and labels translated (26 line-targeted replacements) [GOSIGN2-LEDGER-SUPPLEMENT (a) item 90]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:supply-n-demand-jp.txt sha256:031b7d9c69d907826712968a888571087c870c727af940f1e120c0f38cb3c29a; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit cdb1e6daa1f322aa4ec093f5f9967319e746274c; candidate file pages/theme:supply-n-demand-jp.txt sha256:a9aed09aa078ee45c7eaaf2b5f8bbd1f07cc8424a3596995f1ec59a8d6bcec10; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -93,6 +93,13 @@ Checks run for this package: sha256 of original.txt against review/sources.tsv (
 ## Per-theme record: FIX5 re-derivation (item 90)
 
 The ledger charges item 90 (class I) [GOSIGN2-LEDGER (e) item 90] with the deletion of the theme's entire showcase section in porting. The supplement re-judges it FIXED by FIX5-STRUCTA, commit 8c0cd35 [GOSIGN2-LEDGER-SUPPLEMENT (a) item 90]: the showcase restored, 250 lines copied from original L199-448 at candidate L42-291 with prose and labels translated in 26 line-targeted replacements. Re-derived from the bytes: `git show 8c0cd35` for this file is exactly 250 insertions and 0 deletions; candidate L42-291 is 250 lines; original L199-448 is 250 lines; and a direct diff of the two regions differs on exactly 26 lines, the translated prose and labels. Closure CONFIRMED, byte-exactly on every number the supplement states. The boundary matters: the restoration covers original L199-448 only, and the separate documentation drop at original L59-202 (flag F1, section 8) stands outside the item and outside the supplement's account.
+
+### Post-package repairs (REFRESH3-K)
+
+The items above describe this package as built. The repair recorded below postdates the package; `candidate.txt` has been recopied from the current canonical `pages/theme:supply-n-demand-jp.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+- **FIX-RFIX15 F1, landing `cdb1e6daa1f322aa4ec093f5f9967319e746274c`** ("pages: R-fix-15 flags repaired …", 2026-11-17, R/review-scout/FIX-RFIX15.md §6; +141/−0, a pure insertion): the original's dropped documentation body (orig L58–197) is restored immediately before `+ カスタムスタイル` (now L183), after the candidate's 画像の出典 block — the `++ 配色` heading and theme-squares include with its 11 named colors at L43–46, the `例` heading with `[[toc]]`, the image-block exhibit at L104 (`[[include component:image-block name=https://site-eq-02.wdfiles.com/local--files/theme%3Amcdnew/mcd-bk.jpg|caption=MC&Dの神秘的な背景（小）|width=200px]]`), and the typography demos (rule/heading prose, collapsible heading, tabview, blockquote, code exhibit, two tables). Form decisions (FIX-RFIX15 §6): theme-squares repointed `:scp-wiki:` → `:scp-jp:`, variables/RGB values byte-identical, CN color names kept where they are standard Japanese and translated otherwise; headings `配色方案` → `配色`, `示例` → `例` (steam-guide's own rendering); the image-block URL kept byte-identical (probed 200, image/jpeg, 115,677 B — class (ii) re-host-at-posting, not dead); demo passages follow steam-guide-jp's translated versions where the source text is identical.
+The item-90 record's boundary note — that the documentation drop at orig L59–202 "stands outside the item and outside the supplement's account" — is the as-built record; that drop is now repaired in the recopied candidate. Checker (FIX-RFIX15 §8): error 6 / warn 2 / info 1 → 7 / 2 / 1, the +1 being the restored image-block hotlink (class ii, the author's own serving demo image); class (i) 0 before and after.
 
 ## Change set
 

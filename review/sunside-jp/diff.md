@@ -15,12 +15,12 @@ adjudicated explanation.
 | | Lines |
 |---|---|
 | original.txt | 1487 |
-| candidate.txt | 2679 |
-| Added | +1459 |
-| Review-stage comments | 0 of the +1459 added lines |
-| Removed | -267 |
-| Changed | 1726 |
-| Change blocks | 19 |
+| candidate.txt | 2794 |
+| Added | +1531 |
+| Review-stage comments | 0 of the +1531 added lines |
+| Removed | -224 |
+| Changed | 1755 |
+| Change blocks | 14 |
 | Diff sections (context 3) | 7 |
 
 ## Changed lines by auto-class (heuristic)
@@ -28,40 +28,35 @@ adjudicated explanation.
 | Auto-class | Blocks | Changed lines |
 |---|---|---|
 | mechanical | 2 | 4 |
-| supplement | 5 | 1446 |
-| residual | 12 | 276 |
+| supplement | 5 | 1678 |
+| residual | 7 | 73 |
 
 ## Change-block index
 
 | # | Section | Original | Candidate | +/− | Auto-class | Gist |
 |---|---|---|---|---|---|---|
-| 1 | 1 | 1–4 | 1–4 | +4/−4 | supplement | [[module CSS]] |
-| 2 | 1 | 6–6 | 6–11 | +6/−1 | supplement | /* 日本語フォント |
-| 3 | 1 | 8–8 | 13–19 | +7/−1 | residual | /* === Sigma-Plus (EstrellaYoshte) — component:sigma-plus-jp 経由で読み込み（原語版 rev.… |
-| 4 | 1 | 10–165 | 21–21 | +1/−156 | residual | /* === Sunside 本体（以下のコードは、「ソースコード」表示のものと同一です） === */ |
-| 5 | 2 | 176–178 | — | +0/−3 | residual | /*-----------------------------*/ |
-| 6 | 2 | 180–181 | — | +0/−2 | residual | @import url('https://api.fonts.coollabs.io/css2?family=Sora:wght@400;700&disp… |
-| 7 | 2 | 183–210 | — | +0/−28 | residual | @font-face { |
-| 8 | 2 | 212–239 | — | +0/−28 | residual | @font-face { |
-| 9 | 3 | 270–270 | 65–65 | +1/−1 | residual | --sp_header-logo: url(https://scp-wiki.wdfiles.com/local--files/theme%3Asunsi… |
-| 10 | 4 | 283–288 | 78–83 | +6/−6 | residual | --header-font: 'Sora', 'Noto Sans JP', 'Nanum Gothic', sans-serif; |
-| 11 | 5 | 1063–1063 | 858–858 | +1/−1 | mechanical | 100% var(--cut), |
-| 12 | 6 | 1385–1385 | 1180–1180 | +1/−1 | mechanical | margin-right: clamp(calc(var(--main-content-width)/-4.5), calc((90vw - 95%)/-… |
-| 13 | 7 | — | 1240–2648 | +1409/−0 | supplement | [[/module]] |
-| 14 | 7 | 1448–1452 | 2652–2656 | +5/−5 | supplement | [[include :scp-jp:component:license-box-backend \|author=EstrellaYoshte]] |
-| 15 | 7 | 1454–1457 | 2658–2661 | +4/−4 | residual | > **名称:** Edinburgh Old Town Skyline P-EDI Banner |
-| 16 | 7 | 1459–1462 | 2663–2666 | +4/−4 | residual | > **名称:** Tuggeranong Town Centre skyline April 2020 |
-| 17 | 7 | 1464–1467 | 2668–2671 | +4/−4 | residual | > **名称:** PoznańCentrum1 |
-| 18 | 7 | 1469–1474 | 2673–2678 | +6/−6 | supplement | > **名称:** エスターバーグ旗 |
-| 19 | 7 | 1476–1487 | — | +0/−12 | residual | [[include :scp-wiki:component:sigma-plus]] |
+| 1 | 1 | 1–4 | 1–3 | +3/−4 | supplement | [[module CSS]] |
+| 2 | 1 | 6–181 | 5–10 | +6/−176 | supplement | /* 日本語フォント |
+| 3 | 2 | — | 70–92 | +23/−0 | residual | /* === Sigma-Plus (EstrellaYoshte) — component:sigma-plus-jp 経由で読み込み（原語版 rev.… |
+| 4 | 3 | 270–270 | 122–122 | +1/−1 | residual | --sp_header-logo: url(https://scp-wiki.wdfiles.com/local--files/theme%3Asunsi… |
+| 5 | 4 | 283–288 | 135–140 | +6/−6 | residual | --header-font: 'Sora', 'Noto Sans JP', 'Nanum Gothic', sans-serif; |
+| 6 | 5 | 1063–1063 | 915–915 | +1/−1 | mechanical | 100% var(--cut), |
+| 7 | 6 | 1385–1385 | 1237–1237 | +1/−1 | mechanical | margin-right: clamp(calc(var(--main-content-width)/-4.5), calc((90vw - 95%)/-… |
+| 8 | 7 | — | 1297–2763 | +1467/−0 | supplement | [[/module]] |
+| 9 | 7 | 1448–1452 | 2767–2771 | +5/−5 | supplement | [[include :scp-jp:component:license-box-backend \|author=EstrellaYoshte]] |
+| 10 | 7 | 1454–1457 | 2773–2776 | +4/−4 | residual | > **名称:** Edinburgh Old Town Skyline P-EDI Banner |
+| 11 | 7 | 1459–1462 | 2778–2781 | +4/−4 | residual | > **名称:** Tuggeranong Town Centre skyline April 2020 |
+| 12 | 7 | 1464–1467 | 2783–2786 | +4/−4 | residual | > **名称:** PoznańCentrum1 |
+| 13 | 7 | 1469–1474 | 2788–2793 | +6/−6 | supplement | > **名称:** エスターバーグ旗 |
+| 14 | 7 | 1476–1487 | — | +0/−12 | residual | [[include :scp-wiki:component:sigma-plus]] |
 
 ## Full diff
 
 <details>
-<summary>Section 1 — original 1–168 · candidate 1–24 · +18/−162 · residual, supplement</summary>
+<summary>Section 1 — original 1–184 · candidate 1–13 · +9/−180 · supplement</summary>
 
 ```diff
-@@ -1,168 +1,24 @@
+@@ -1,184 +1,13 @@
 -[[iftags +theme]]
 -[[>]]
 -[[module rate]]
@@ -69,25 +64,11 @@ adjudicated explanation.
 +[[module CSS]]
 +@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap');
 +@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
  
 -This is an aesthetic theme for [[[esterberg-city-wikipedia|Esterberg]]], made by [[*user EstrellaYoshte]] for [[*user Ralliston]].
-+/* 日本語フォント
-+   JP localization: the display stacks already name Noto Sans JP / Noto Sans
-+   Mono CJK JP but no load was present, so the JP glyphs fell back to an OS
-+   default. Noto Sans JP (Google Fonts, SIL Open Font License) is now loaded
-+   and added to the mono stack as the loadable JP fallback. Latin faces unchanged. */
-+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
- 
+-
 -To use the theme, insert the following:
-+/* === Sigma-Plus (EstrellaYoshte) — component:sigma-plus-jp 経由で読み込み（原語版 rev.38 由来） === */
-+/* JP アダプテーション（JPヘッダ文字列・ヘッダロゴ）は以下のオーバーライド層で保持。rev.38 の本体は component:sigma-plus-jp のコードを参照。 */
-+:root {
-+    --header-title: "SCP財団";
-+    --header-subtitle: "確保 - 収容 - 保護";
-+    --sp_header-logo: url(https://scp-wiki.wdfiles.com/local--files/theme%3Asunside/esterberg-sun.png);
-+}
- 
+-
 -[[div class="city-block"]]
 -{{@@[[include :scp-wiki:theme:sunside]]@@}}
 -[[/div]]
@@ -244,98 +225,78 @@ adjudicated explanation.
 -++ Source Code
 -[[collapsible show="Open" hide="Close"]]
 -[[code type="CSS"]]
-+/* === Sunside 本体（以下のコードは、「ソースコード」表示のものと同一です） === */
- /*
-     Esterberg Theme
-     [2023 Wikidot Theme]
-```
-
-</details>
-
-<details>
-<summary>Section 2 — original 173–242 · candidate 29–37 · +0/−61 · residual</summary>
-
-```diff
-@@ -173,70 +29,9 @@
-     SkipOS Theme by EstrellaYoshte
- */
- 
+-/*
+-    Esterberg Theme
+-    [2023 Wikidot Theme]
+-    By EstrellaYoshte
+-
+-    Based on:
+-    Generic Space Theme by EstrellaYoshte
+-    SkipOS Theme by EstrellaYoshte
+-*/
+-
 -/*-----------------------------*/
 -/*------ FONTS ------*/
 -/*-----------------------------*/
- 
+-
 -@import url('https://api.fonts.coollabs.io/css2?family=Sora:wght@400;700&display=swap');
 -@import url('https://api.fonts.coollabs.io/css2?family=Public+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
++/* 日本語フォント
++   JP localization: the display stacks already name Noto Sans JP / Noto Sans
++   Mono CJK JP but no load was present, so the JP glyphs fell back to an OS
++   default. Noto Sans JP (Google Fonts, SIL Open Font License) is now loaded
++   and added to the mono stack as the loadable JP fallback. Latin faces unchanged. */
++@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
  
--@font-face {
--    font-family: 'iA Writer Mono';
--    src: url(https://cdn.jsdelivr.net/gh/SYwaves/Webfont-Archive@master/iAWriterMonoS-Regular.woff2) format("woff2");
--    font-weight: normal;
--    font-style: normal;
--    font-display: swap;
--}
--@font-face {
--    font-family: 'iA Writer Mono';
--    src: url(https://cdn.jsdelivr.net/gh/SYwaves/Webfont-Archive@master/iAWriterMonoS-Italic.woff2) format("woff2");
--    font-weight: normal;
--    font-style: italic;
--    font-display: swap;
--}
--@font-face {
--    font-family: 'iA Writer Mono';
--    src: url(https://cdn.jsdelivr.net/gh/SYwaves/Webfont-Archive@master/iAWriterMonoS-Bold.woff2) format("woff2");
--    font-weight: bold;
--    font-style: normal;
--    font-display: swap;
--}
--@font-face {
--    font-family: 'iA Writer Mono';
--    src: url(https://cdn.jsdelivr.net/gh/SYwaves/Webfont-Archive@master/iAWriterMonoS-BoldItalic.woff2) format("woff2");
--    font-weight: bold;
--    font-style: italic;
--    font-display: swap;
--}
- 
--@font-face {
--    font-family: 'iA Writer Duo';
--    src: url(https://cdn.jsdelivr.net/gh/SYwaves/Webfont-Archive@master/iAWriterDuoS-Regular.woff2) format("woff2");
--    font-weight: normal;
--    font-style: normal;
--    font-display: swap;
--}
--@font-face {
--    font-family: 'iA Writer Duo';
--    src: url(https://cdn.jsdelivr.net/gh/SYwaves/Webfont-Archive@master/iAWriterDuoS-Italic.woff2) format("woff2");
--    font-weight: normal;
--    font-style: italic;
--    font-display: swap;
--}
--@font-face {
--    font-family: 'iA Writer Duo';
--    src: url(https://cdn.jsdelivr.net/gh/SYwaves/Webfont-Archive@master/iAWriterDuoS-Bold.woff2) format("woff2");
--    font-weight: bold;
--    font-style: normal;
--    font-display: swap;
--}
--@font-face {
--    font-family: 'iA Writer Duo';
--    src: url(https://cdn.jsdelivr.net/gh/SYwaves/Webfont-Archive@master/iAWriterDuoS-BoldItalic.woff2) format("woff2");
--    font-weight: bold;
--    font-style: italic;
--    font-display: swap;
--}
- 
- /*-----------------------------*/
- /*------ BASE ------*/
+ @font-face {
+     font-family: 'iA Writer Mono';
 ```
 
 </details>
 
 <details>
-<summary>Section 3 — original 267–273 · candidate 62–68 · +1/−1 · residual</summary>
+<summary>Section 2 — original 238–243 · candidate 67–95 · +23/−0 · residual</summary>
 
 ```diff
-@@ -267,7 +62,7 @@
+@@ -238,6 +67,29 @@
+     font-display: swap;
+ }
+ 
++/* === Sigma-Plus (EstrellaYoshte) — component:sigma-plus-jp 経由で読み込み（原語版 rev.38 由来） === */
++/* JP アダプテーション（JPヘッダ文字列・ヘッダロゴ）は以下のオーバーライド層で保持。rev.38 の本体は component:sigma-plus-jp のコードを参照。 */
++:root {
++    --header-title: "SCP財団";
++    --header-subtitle: "確保 - 収容 - 保護";
++    --sp_header-logo: url(https://scp-wiki.wdfiles.com/local--files/theme%3Asunside/esterberg-sun.png);
++}
++
++/* === Sunside 本体（以下のコードは、「ソースコード」表示のものと同一です） === */
++/*
++    Esterberg Theme
++    [2023 Wikidot Theme]
++    By EstrellaYoshte
++
++    Based on:
++    Generic Space Theme by EstrellaYoshte
++    SkipOS Theme by EstrellaYoshte
++*/
++
++
++
++
++
+ /*-----------------------------*/
+ /*------ BASE ------*/
+ /*-----------------------------*/
+```
+
+</details>
+
+<details>
+<summary>Section 3 — original 267–273 · candidate 119–125 · +1/−1 · residual</summary>
+
+```diff
+@@ -267,7 +119,7 @@
      --sp_header-height: var(--s-header-desktop-height);
      --sp_top-bar-height: 2.75rem;
      --sp_dropdown-width: 28ch;
@@ -349,10 +310,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 4 — original 280–291 · candidate 75–86 · +6/−6 · residual</summary>
+<summary>Section 4 — original 280–291 · candidate 132–143 · +6/−6 · residual</summary>
 
 ```diff
-@@ -280,12 +75,12 @@
+@@ -280,12 +132,12 @@
      --sp_rate-module-button-background: transparent;
      --sp_rate-module-button-hover-background: transparent;
  
@@ -364,8 +325,8 @@ adjudicated explanation.
 -    --header-subtitle: "Weaving New Paradigms";
 +    --header-font: 'Sora', 'Noto Sans JP', 'Nanum Gothic', sans-serif;
 +    --body-font: 'Public Sans', 'Noto Sans JP', 'Nanum Gothic', Arial, sans-serif;
-+    --UI-font: 'Public Sans', 'Noto Sans JP', 'Nanum Gothic', sans-serif;
-+    --mono-font: 'JetBrains Mono', 'Noto Sans Mono CJK JP', 'Noto Sans JP', monospace;
++    --UI-font: 'iA Writer Duo', 'Noto Sans JP', 'Nanum Gothic', sans-serif;
++    --mono-font: 'iA Writer Mono', 'Noto Sans Mono CJK JP', 'Noto Sans JP', monospace;
 +    --header-title: "エスターバーグ";
 +    --header-subtitle: "新たなパラダイムを紡ぐ";
      --main-content-width: 50rem;
@@ -376,10 +337,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 7 — original 1442–1487 · candidate 1237–2679 · +1432/−35 · residual, supplement</summary>
+<summary>Section 7 — original 1442–1487 · candidate 1294–2794 · +1490/−35 · residual, supplement</summary>
 
 ```diff
-@@ -1442,46 +1237,1443 @@
+@@ -1442,46 +1294,1501 @@
          width: 92.5%;
      }
  }
@@ -415,7 +376,7 @@ adjudicated explanation.
 +{{@@[[include :scp-jp:theme:sunside-jp]]@@}}
 +[[/div]]
 +
-+Sunside/Bożydar/「Rallistonはナード」テーマは、[[[https://scp-wiki.wikidot.com/component:sigma-plus|Sigma+]]]をベースにしています。Sigma+は component:sigma-plus-jp（原語版 rev.38 由来）経由で読み込まれます。
++Sunside/Bożydar/「Rallistonはナード」テーマは、[[[component:sigma-plus-jp|Sigma+]]]をベースにしています。Sigma+は component:sigma-plus-jp（原語版 rev.38 由来）経由で読み込まれます。
 +
 +------
 +
@@ -561,9 +522,9 @@ adjudicated explanation.
 +
 +本文フォントはPublic Sansです。
 +
-+[[span style="font-family: var(--UI-font);"]]UIフォントはPublic Sansです。[[/span]]
++[[span style="font-family: var(--UI-font);"]]UIフォントはiA Writer Duoです。[[/span]]
 +
-+{{等幅フォントはJetBrains Monoです。}}
++{{等幅フォントはiA Writer Monoです。}}
 +[[/div]]
 +
 +++ ソースコード
@@ -582,6 +543,64 @@ adjudicated explanation.
 +/*-----------------------------*/
 +/*------ FONTS ------*/
 +/*-----------------------------*/
++
++@font-face {
++    font-family: 'iA Writer Mono';
++    src: url(https://cdn.jsdelivr.net/gh/SYwaves/Webfont-Archive@master/iAWriterMonoS-Regular.woff2) format("woff2");
++    font-weight: normal;
++    font-style: normal;
++    font-display: swap;
++}
++@font-face {
++    font-family: 'iA Writer Mono';
++    src: url(https://cdn.jsdelivr.net/gh/SYwaves/Webfont-Archive@master/iAWriterMonoS-Italic.woff2) format("woff2");
++    font-weight: normal;
++    font-style: italic;
++    font-display: swap;
++}
++@font-face {
++    font-family: 'iA Writer Mono';
++    src: url(https://cdn.jsdelivr.net/gh/SYwaves/Webfont-Archive@master/iAWriterMonoS-Bold.woff2) format("woff2");
++    font-weight: bold;
++    font-style: normal;
++    font-display: swap;
++}
++@font-face {
++    font-family: 'iA Writer Mono';
++    src: url(https://cdn.jsdelivr.net/gh/SYwaves/Webfont-Archive@master/iAWriterMonoS-BoldItalic.woff2) format("woff2");
++    font-weight: bold;
++    font-style: italic;
++    font-display: swap;
++}
++
++@font-face {
++    font-family: 'iA Writer Duo';
++    src: url(https://cdn.jsdelivr.net/gh/SYwaves/Webfont-Archive@master/iAWriterDuoS-Regular.woff2) format("woff2");
++    font-weight: normal;
++    font-style: normal;
++    font-display: swap;
++}
++@font-face {
++    font-family: 'iA Writer Duo';
++    src: url(https://cdn.jsdelivr.net/gh/SYwaves/Webfont-Archive@master/iAWriterDuoS-Italic.woff2) format("woff2");
++    font-weight: normal;
++    font-style: italic;
++    font-display: swap;
++}
++@font-face {
++    font-family: 'iA Writer Duo';
++    src: url(https://cdn.jsdelivr.net/gh/SYwaves/Webfont-Archive@master/iAWriterDuoS-Bold.woff2) format("woff2");
++    font-weight: bold;
++    font-style: normal;
++    font-display: swap;
++}
++@font-face {
++    font-family: 'iA Writer Duo';
++    src: url(https://cdn.jsdelivr.net/gh/SYwaves/Webfont-Archive@master/iAWriterDuoS-BoldItalic.woff2) format("woff2");
++    font-weight: bold;
++    font-style: italic;
++    font-display: swap;
++}
 +
 +
 +
@@ -631,8 +650,8 @@ adjudicated explanation.
 +
 +    --header-font: 'Sora', 'Noto Sans JP', 'Nanum Gothic', sans-serif;
 +    --body-font: 'Public Sans', 'Noto Sans JP', 'Nanum Gothic', Arial, sans-serif;
-+    --UI-font: 'Public Sans', 'Noto Sans JP', 'Nanum Gothic', sans-serif;
-+    --mono-font: 'JetBrains Mono', 'Noto Sans Mono CJK JP', 'Noto Sans JP', monospace;
++    --UI-font: 'iA Writer Duo', 'Noto Sans JP', 'Nanum Gothic', sans-serif;
++    --mono-font: 'iA Writer Mono', 'Noto Sans Mono CJK JP', 'Noto Sans JP', monospace;
 +    --header-title: "エスターバーグ";
 +    --header-subtitle: "新たなパラダイムを紡ぐ";
 +    --main-content-width: 50rem;
@@ -1866,7 +1885,7 @@ adjudicated explanation.
 <summary>Purely mechanical sections (5, 6) — whitespace, host, and branch-token changes only (heuristic)</summary>
 
 ```diff
-@@ -1060,7 +855,7 @@
+@@ -1060,7 +912,7 @@
          0% var(--cut),
          var(--cut) 0%,
          calc(100% -  var(--cut)) 0%,
@@ -1878,7 +1897,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -1382,7 +1177,7 @@
+@@ -1382,7 +1234,7 @@
      margin-left: clamp(calc(var(--main-content-width)/-4.5), calc((90vw - 95%)/-2), 0rem);
  }
  .side-alley:where(.right) {

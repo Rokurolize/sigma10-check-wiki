@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:voyager-jp — origin CN, population #242 [GOSIGN2-LEDGER (b) row 242]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now b6494f68a8c914f05ed226a258b68340426dc50c0511dbd5135d9978c40ef5da); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 5bdcf4f54c8d54e83f5fe426a5c3c5c49415f04675025ad3925107697596272d); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 4 errors / 1 warn / 1 info (hotlink×3, pseudo-ref×1); standing classes dispositioned in register c1 [T1-ROWS row 207; GOSIGN2-LEDGER (b) row 242]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — hidden-login (chromium 1366/768) on page and sample + runtime-hotlink site-theme chain + host scp-wiki-cn.wdfiles.com (named verbatim, judgment-required); sample credit-modal (preview-form); T3 re-run, no new screenshot-grounded visual finding; chromium-only coverage (no WebKit verdict). [RENDER-ROWS-G (CN17)]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 241, source LOCALIZE-S2-E]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 241]
 - FIX5 re-judgement: item 97 (class I) FIXED — FIX5-STRUCTB §3, commit 435a6bb: [[include component:sigma-plus-jp]] restored at L1 in the original's position; prose link repointed to component:sigma-plus-jp; spot-verified for this supplement [GOSIGN2-LEDGER-SUPPLEMENT (a) item 97; (c) check 7]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:voyager-jp.txt sha256:b6494f68a8c914f05ed226a258b68340426dc50c0511dbd5135d9978c40ef5da; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 55c8314c7ac46c20bcedc4adfa362576beb89a00; candidate file pages/theme:voyager-jp.txt sha256:5bdcf4f54c8d54e83f5fe426a5c3c5c49415f04675025ad3925107697596272d; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## 0. Header / provenance
@@ -137,6 +137,13 @@ Counts: 9 blocks, 5 specific, 4 heuristic, 0 residue, 0 skipped (comment text). 
 - Supplement re-judgement: FIXED, FIX5-STRUCTB §3, commit 435a6bb. The STRUCTB lane report's evidence: original rev 2 L1 includes `:scp-wiki-cn:component:sigma-plus` and L716's prose names it; the pre-edit candidate had no sigma-plus include, while its shipped CSS uses `var(--sp_side-bar-width)` and `var(--sp_final-header-height)`, defined only in `pages/component:sigma-plus-jp.txt`; the fix prepended `[[include component:sigma-plus-jp]]` at L1 and repointed the prose link (pre-edit L154 → L155); checker 4/1/1 → 4/1/1, zero new errors, the residual link-target warning now naming the `-jp` component.
 - Re-derived from this package's bytes: candidate L1 carries the include; candidate L155 names `component:sigma-plus-jp` in prose; the candidate's CSS uses `var(--sp_side-bar-width)` at L461 and `var(--sp_final-header-height)` at L542, L677 and L683; `pages/component:sigma-plus-jp.txt` defines `--sp_side-bar-width` at its L115 and `--sp_final-header-height` at its L120. The dependency the item charged is satisfied by the restored include.
 - Closure: CONFIRMED on current bytes — which matters here, because the verdict stamp is STALE (section 0): the closure is re-derived from the package, not inherited from the stamp.
+
+### Post-package repairs (REFRESH3-K)
+
+The items above describe this package as built. The repair recorded below postdates the package; `candidate.txt` has been recopied from the current canonical `pages/theme:voyager-jp.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+- **FIX-RFIX19 item 2, landing `55c8314c7ac46c20bcedc4adfa362576beb89a00`** ("pages: R-fix-19 flags repaired …", 2026-11-17, R/review-scout/FIX-RFIX19.md §2; 1 line): the credit title field at L7 now reads `**タイトル:** ボイジャーテーマ` (pre-edit it duplicated the 原題 as `旅行者 版式`). Evidence: the candidate's own body names the theme ボイジャーテーマ (the meta-title specimen), the only such occurrence in the file. The 原題 field at L10 and the 元記事リンク label keep the original's Chinese title, correctly: they name the original work. Precedent: steam-guide's title field, repaired in the same R-fix-15 landing cdb1e6d. Section 1's "Defect flag (recorded for repair)" paragraph is kept above as the as-built record; the title field is now corrected in the recopied candidate.
+Checker (FIX-RFIX19 §3): plain error 4 / warn 0 / info 1 → 4 / 0 / 1 and `--check-links` 4 / 1 / 1 → 4 / 1 / 1, finding sets byte-identical (the edited title line is not a checker-flagged line); the four standing errors are 3 hotlink (class ii) + 1 pseudo-ref (class iii); class (i) 0 before and after.
 
 ## Change set outside the two diffed files
 

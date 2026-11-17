@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:vanguard-supplement-jp — origin EN, population #156 [GOSIGN2-LEDGER (b) row 156]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 4cbdf8d33a257ca37764871acd872b786403008f750a11373ee96449632d16af); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 0c4a383ed183d88a3fa354f49d8d4316f48e01a31806895e61659f48a1c53dc7); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 1 error / 2 warns / 2 infos (pseudo-ref×1); standing classes dispositioned in register c1 [T1-ROWS row 171; GOSIGN2-LEDGER (b) row 156]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page T2 no machine verdict (exit 2, no summary); sample hidden-rate (all combos) + page-overflow 330–335px@320 + 884px@768 + runtime-hotlink site-theme chain. [RENDER-ROWS-2 (RENDER-S2-D (EN23))]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 2 [LOCALIZE-ROWS row 156, source LOCALIZE-S2-C]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 156]
 - FIX5 re-judgement: item 38 (class B) FIXED — FIX5-FURNA, commit 9e8931f: duplicate bare Rate block removed [GOSIGN2-LEDGER-SUPPLEMENT (a) item 38]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:vanguard-supplement-jp.txt sha256:4cbdf8d33a257ca37764871acd872b786403008f750a11373ee96449632d16af; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 55c8314c7ac46c20bcedc4adfa362576beb89a00; candidate file pages/theme:vanguard-supplement-jp.txt sha256:0c4a383ed183d88a3fa354f49d8d4316f48e01a31806895e61659f48a1c53dc7; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## 0. Header / provenance
@@ -146,6 +146,13 @@ Counts: 19 blocks, 10 specific, 8 heuristic, 1 residue, 0 skipped (comment text)
 - Supplement re-judgement: FIXED, FIX5-FURNA, commit 9e8931f. The FURNA lane report's evidence: the pre-edit candidate at L19–22 held `[[>]]` / `**評価:**` / `[[module rate]]` / `[[/>]]` immediately before `credit:start-preview` (L24); the single 評価 label is not the exempt paired-label exhibit, so the exception does not apply and the whole 4-line wrapper was removed; checker 1/1/2 → 1/1/1, the `double-rate` info cleared, no new errors.
 - Re-derived from this package's bytes: the original carries the labelled Rate at original L11–14. The current candidate contains no `[[module rate]]` in any case (`grep -ci` = 0), and its credit block stands alone at candidate L19–29. This lane's checker runs report no `double-rate` line.
 - Closure: CONFIRMED on current bytes — which matters here, because the verdict stamp is STALE (section 0): the closure is re-derived from the package, not inherited from the stamp.
+
+### Post-package repairs (REFRESH3-K)
+
+The items above describe this package as built. The repair recorded below postdates the package; `candidate.txt` has been recopied from the current canonical `pages/theme:vanguard-supplement-jp.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+- **FIX-RFIX19 item 1, landing `55c8314c7ac46c20bcedc4adfa362576beb89a00`** ("pages: R-fix-19 flags repaired (vanguard-supplement, voyager)", 2026-11-17, R/review-scout/FIX-RFIX19.md §1; −2 lines): the head module now holds only the Noto Serif JP load (L2), the self-delivery import of the candidate's own block 1 (L3), and the module close (L4). The two removed lines were the combined `Basic` + IBM Plex Mono wght@400;700 import and the Zilla Slab import (old L3–L4). Evidence: the hidden-included parent candidate loads IBM Plex Mono and Zilla Slab once each (its L137/L138) with byte-identical specification strings, so the delivered chain had both twice; `Basic` occurred exactly once (the removed import) and in no stack in either file (the parent dropped it) — the KB-16 mirror case. Standalone-delivery verification executed before editing: the supplement hidden-includes the parent (L14–16), its usage docs instruct loading the parent first, and the single sample page includes the supplement alone (which still brings the parent through the hidden include) — none of the three delivery paths omits the parent. The Noto Serif JP load stays, named by the title stack at L215.
+Section 4's "minor defect flag (recorded for repair)" is kept above as the as-built record; the duplicated imports and the unapplied `Basic` are now gone in the recopied candidate. Checker (FIX-RFIX19 §3): plain error 1 / warn 0 / info 1 → 1 / 0 / 1 and `--check-links` 1 / 1 / 1 → 1 / 1 / 1, finding sets identical modulo the −2 line shift; the sole error is pseudo-ref (class iii); class (i) 0 before and after.
 
 ## Change set outside the two diffed files
 

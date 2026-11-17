@@ -3,7 +3,8 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:sunside-jp — origin EN, population #142 [GOSIGN2-LEDGER (b) row 142]
-- Overall: PASS — NOT PASS at the ledger determination (section (e) register); its one OPEN item re-judged FIXED by the FIX5 wave; go-sign issued 2026-11-17 (COMPLETION-REPORT §10) [GOSIGN2-LEDGER (b); GOSIGN2-LEDGER-SUPPLEMENT (d)]
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now c5843f9da9e67d5bd4187323b919f3838b8d864a34a66711d379320fd8ff44af); verdict not carried over, re-judgement required
+> verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 3 errors / 2 warns / 0 infos (hotlink×3); standing classes dispositioned in register c1 [T1-ROWS row 162; GOSIGN2-LEDGER (b) row 142]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page-overflow 502–510px@320/375 + 828–833px@768 (page) and 514–522px@320/375 + 828–833px@768 (sample); sample credit-modal (preview-form). [RENDER-ROWS-2 (RENDER-S2-D (EN20))]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row [RENDER-ROWS-2 row]
@@ -11,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 3 [LOCALIZE-ROWS row 142, source LOCALIZE-S2-C]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 142]
 - FIX5 re-judgement: item 31 (class D) FIXED — FIX5-FONTSA, commit 8eacd6e: pattern-7 fix; probe evidence recorded that 'Noto Sans Mono CJK JP' returns HTTP 400 'Font family not found' on Google Fonts, so loadable Noto Sans JP was appended instead [GOSIGN2-LEDGER-SUPPLEMENT (a) item 31]
-- Computed against: canonical commit 8eacd6e675b726c2fcf93372dc4dd7899958c2d4; candidate file pages/theme:sunside-jp.txt sha256:4d20f7847d8fc847091958cee022e50b79596cfe18cc3812bbfd2e511a353123; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 8868b5d164cbce9c07f6e76da11a5bdec2ec80d8; candidate file pages/theme:sunside-jp.txt sha256:c5843f9da9e67d5bd4187323b919f3838b8d864a34a66711d379320fd8ff44af; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -92,6 +93,21 @@ Checks run for this package: sha256 of original.txt against review/sources.tsv (
 ## Per-theme record: FIX5 re-derivation (item 31)
 
 The ledger charges item 31 (class D) [GOSIGN2-LEDGER (e) item 31] with a pattern-7 font miss: the stacks named Japanese-capable faces that no load in the file served, so Japanese glyphs fell back to the OS default. The supplement re-judges it FIXED by FIX5-FONTSA, commit 8eacd6e [GOSIGN2-LEDGER-SUPPLEMENT (a) item 31], recording probe evidence that 'Noto Sans Mono CJK JP' returns HTTP 400 'Font family not found' on Google Fonts, so the loadable Noto Sans JP was appended instead. Re-derived from the commit and the current bytes: `git show 8eacd6e` makes exactly three edits to this file, (1) the Japanese explanatory comment and the Noto Sans JP @import at the head module, now candidate L6-11; (2) the --mono-font variable in the delivered module copy gains the 'Noto Sans JP' suffix, now candidate L81; (3) the same suffix in the exhibit copy, now candidate L1489. All three stand in the current candidate bytes, in both CSS copies. Closure CONFIRMED. Because the stamp was computed against 8eacd6e itself and the file has not changed since, the PASS verdict carries to the bytes in this package.
+
+### Post-package repairs (REFRESH3-K)
+
+The items above describe this package as built. The two repairs recorded below postdate the package; `candidate.txt` has been recopied from the current canonical `pages/theme:sunside-jp.txt` and `diff.md` and the verdict stamp regenerated with `python3 review/build_review.py`, so this package now documents the post-repair candidate. The regenerated stamp reads **STALE** by design: no re-judgement is fabricated here, and the frozen ledger (`GOSIGN2-LEDGER.md` + supplement, FIX5 head 435a6bb) remains the verdict record.
+
+- **FIX-RFIX15 F2, landing `cdb1e6daa1f322aa4ec093f5f9967319e746274c`** ("pages: R-fix-15 flags repaired …", 2026-11-17, R/review-scout/FIX-RFIX15.md §5; +1/−1): the prose Sigma+ link at refreshed L1329 now reads `[[[component:sigma-plus-jp|Sigma+]]]` (pre-edit `[[[https://scp-wiki.wikidot.com/component:sigma-plus|Sigma+]]]`), label unchanged — the population's repaired form for this exact item (share-future-community-jp L41, tfnac-jp L22). The same sentence already stated delivery via component:sigma-plus-jp, the file's own delivery include. The one new `link-target-missing` warning naming the not-yet-posted candidate is the AGENTS.md posting-order class, recorded, not fixed. Checker: error 3 / warn 1 / info 0 → 3 / 2 / 0.
+- **FIX-SUNSIDEFONT, landing `8868b5d164cbce9c07f6e76da11a5bdec2ec80d8`** ("pages: sunside iA Writer font program restored", 2026-11-17, R/review-scout/FIX-SUNSIDEFONT.md; +122/−7), executing the RESTORE recommendation of FIX-RFIX15 §7:
+  - The eight `@font-face` blocks return in both delivered copies — the head `[[module CSS]]` (L12–69) and the source-exhibit FONTS section — byte-identical to the original's L183–239 (the exact block text now occurs twice, verified in the report). No exhibit @imports were added: the exhibit has none by the port's structure.
+  - Both font variables name the iA faces as primaries again at L137–138 (`--UI-font: 'iA Writer Duo', 'Noto Sans JP', …`, `--mono-font: 'iA Writer Mono', 'Noto Sans Mono CJK JP', …`), keeping the port's JP fallbacks behind them.
+  - The prose announcements at L1475/L1477 name `iA Writer Duo` / `iA Writer Mono` again, in the candidate's own translated sentence forms; the Sora and Public Sans announcements stand unchanged.
+  - The substitute-only Google Fonts JetBrains Mono @import was removed (zero occurrences of JetBrains Mono remain); Sora, Public Sans and Noto Sans JP loads stay in their original roles.
+  - Supply channel: the original's own SYwaves archive URLs, all eight probed HTTP 200 / font/woff2 and byte-identical to the official iaolo/iA-Fonts SIL OFL 1.1 release (SHA-256 table in FIX-SUNSIDEFONT §2) — a lawful channel twice over, not the clock-tower Colus posture. No annotation edit was needed (the JP-font comment remains true).
+Checker (FIX-SUNSIDEFONT §3): error 3 / warn 2 / info 0 → 19 / 2 / 0, the delta exactly +16 hotlinks (8 URLs × 2 copies), all class (ii) "outside hosts that serve today"; class (i) 0 before and after.
+
+The per-theme item-31 note that the stamp was computed against 8eacd6e and "the file has not changed since, the PASS verdict carries to the bytes" is the as-built record; the stamp now reads STALE against these two repairs.
 
 ## Change set
 
