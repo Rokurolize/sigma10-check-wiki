@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:caretaker-sigma-jp — origin EN, population #67 [GOSIGN2-LEDGER (b) row 67]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 5fb18dc46cb1bd65288ba61a28b3b8fb2f4a0f78e660d8847a15024dde131b0d); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now b831587f6d54dafd9d2496f760b858b7de83af53662a30befe2d32a1bf297f1a); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 4 errors / 1 warn / 0 infos (hotlink×3, pseudo-ref×1); standing classes dispositioned in register c1 [T1-ROWS row 72; GOSIGN2-LEDGER (b) row 67]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — port defect: `interwiki-style` rejected (missing `priority` parameter); no other candidate-specific defect. [RENDER-ROWS-1 (RENDER-S2-A)]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 3 [LOCALIZE-ROWS row 67, source LOCALIZE-S2-A]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 67]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 67]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:caretaker-sigma-jp.txt sha256:5fb18dc46cb1bd65288ba61a28b3b8fb2f4a0f78e660d8847a15024dde131b0d; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit ba896f4f980ac8fdf8c288b2faab80a226eca212; candidate file pages/theme:caretaker-sigma-jp.txt sha256:b831587f6d54dafd9d2496f760b858b7de83af53662a30befe2d32a1bf297f1a; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 Status: complete — skeleton by classify_hunks.py 0.1.0; every SLOT in the skeleton is resolved in the sections below and the Appendix.
@@ -186,6 +186,27 @@ The original places `[[footnoteblock]]` at orig L404, between the code exhibit a
 ### Flag 2 — the font supplement overrides the page-title face
 
 The appended P7 block (cand L402–411) groups its selectors as `h1, h2, h3, h4, h5, h6, #page-title, .meta-title` under one stack, `"Delius Swash Caps", "Noto Sans JP", cursive`. The original gives #page-title/.meta-title their own face — `"Fredericka the Great", serif` (orig L290–295), which the candidate's exhibit still declares (cand L287–292) — but the appended rule comes later in the same stylesheet at equal specificity for those two selectors, so the title's effective font-family is the Delius stack, not Fredericka with a JP fallback added. The JP fallback the supplement exists to provide is thus bought, for the title, by changing the title's Latin face. No register charges this (the localize row's pattern items are 5 and 6; the render walk records no title-face finding), and the theme's headings proper (h1–h6) are unaffected in kind (their stack gains exactly the intended fallback). Recorded with the cascade evidence so the judgment is visible; the minimal alternative, a separate appended rule for #page-title/.meta-title naming Fredericka first, is noted for a future editor.
+
+### Post-package repairs (REFRESH3-F)
+
+**FIX-CARETAKER, landing `ba896f4` (report `R/review-scout/FIX-CARETAKER.md`,
+items 1–2, "caretaker-sigma-jp").** This landing postdates the package
+build (`0533657`, the U-4 batch commit) and repairs Flags 1 and 2. Two
+candidate changes: (a) `[[footnoteblock]]` restored after
+`[[/collapsible]]` and before
+`[[include :scp-jp:component:license-box-backend]]`, with the original's
+blank lines around it (+2 lines, plain form, license apparatus
+untouched) — the live `[[footnote]]` at candidate L123 now has a render
+position; (b) `#page-title` and `.meta-title` removed from the appended
+P7 block's selector group, which now reads `h1, h2, h3, h4, h5, h6 {`
+with its declaration unchanged (3 lines in the one rule header) — the
+theme's own rule at candidate L287–292 again decides the title face
+(`"Fredericka the Great", serif`), as in the original, whose cascade
+never put those two selectors in the Delius stack. Checker per the
+report: error 4 / warn 1 / info 0 before and after, findings identical
+line for line, class (i) errors 0. This package documents the corrected
+candidate; its stamp reads STALE against the pre-repair verdict, by
+design.
 
 ## Change set outside the two diffed files
 

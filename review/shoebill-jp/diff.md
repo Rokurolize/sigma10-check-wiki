@@ -8,17 +8,29 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 700 |
-| candidate.txt | 712 |
-| Added | +145 |
-| Review-stage comments | 0 of the +145 added lines |
-| Removed | -133 |
+| candidate.txt | 708 |
+| Added | +146 |
+| Review-stage comments | 0 of the +146 added lines |
+| Removed | -138 |
 | Hunks | 19 |
 
 ```diff
 --- original.txt
 +++ candidate.txt
-@@ -1,50 +1,61 @@
+@@ -1,50 +1,57 @@
 -[[iftags +theme]]
+-
+-[[>]]
+-[[module rate]]
+-[[/>]]
+-
+-+ SANTA CLAUS HAS A FAT ASS.
+-
+-This is the aesthetic theme for Site-225, primarily created by [[*user MetalRavioli]], a site dedicated to biological anomalies like birds and fish. This theme was created by me, [[*user Fish^12]] for Art Exchange.
+-
+-This theme is a [https://scp-wiki.wikidot.com/component:sigma-plus Sigma Plus] theme and uses the [https://scp-wiki.wikidot.com/component:toggle-sidebar Toggle Sidebar Component] and the [https://scp-wiki.wikidot.com/component:betterfootnotes Better Footnotes Component]. Aesthetically, this theme uses lots of large, chunky blocks and lots of oranges and green, cause science... is orange. And biology? Green.
+-
+-To include this theme on your page, use the following code:
 +[[iftags +テーマ]]
 +
 +[[include :scp-jp:credit:start-preview]]
@@ -31,23 +43,12 @@ with `python3 review/build_review.py`; verify with
 +**初訳時参照リビジョン:** 16
 +**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:shoebill ソース]
 +[[include :scp-jp:credit:end-preview]]
- 
- [[>]]
- [[module rate]]
- [[/>]]
- 
--+ SANTA CLAUS HAS A FAT ASS.
--
--This is the aesthetic theme for Site-225, primarily created by [[*user MetalRavioli]], a site dedicated to biological anomalies like birds and fish. This theme was created by me, [[*user Fish^12]] for Art Exchange.
--
--This theme is a [https://scp-wiki.wikidot.com/component:sigma-plus Sigma Plus] theme and uses the [https://scp-wiki.wikidot.com/component:toggle-sidebar Toggle Sidebar Component] and the [https://scp-wiki.wikidot.com/component:betterfootnotes Better Footnotes Component]. Aesthetically, this theme uses lots of large, chunky blocks and lots of oranges and green, cause science... is orange. And biology? Green.
--
--To include this theme on your page, use the following code:
++
 ++ サンタクロースは尻がでかい。
 +
 +これは、鳥や魚などの生物学的アノマリーを専門とするサイトとして主に[[*user MetalRavioli]]が作成したサイト-225向けの美的テーマです。このテーマはArt Exchange用に、私こと[[*user Fish^12]]が作成しました。
 +
-+このテーマは[[[component:sigma-plus|Sigma Plus]]]テーマで、[[[component:toggle-sidebar|トグル式サイドバーコンポーネント]]]と[[[component:betterfootnotes|BetterFootnotesコンポーネント]]]を使用します。美的には、大きくずっしりしたブロックと、大量のオレンジおよび緑を使っています。科学は……オレンジですから。生物学は？ 緑です。
++このテーマは[[[component:sigma-plus-jp|Sigma Plus]]]テーマで、[[[component:toggle-sidebar|トグル式サイドバーコンポーネント]]]と[[[component:betterfootnotes|BetterFootnotesコンポーネント]]]を使用します。美的には、大きくずっしりしたブロックと、大量のオレンジおよび緑を使っています。科学は……オレンジですから。生物学は？ 緑です。
 +
 +このテーマをページに含めるには、次のコードを使ってください。
  
@@ -99,7 +100,7 @@ with `python3 review/build_review.py`; verify with
  [[code type="CSS"]]
  /*
      Shoebill Theme
-@@ -52,9 +63,10 @@
+@@ -52,9 +59,10 @@
      by Fish^12
  */
  
@@ -113,7 +114,7 @@ with `python3 review/build_review.py`; verify with
  
  :root {
      --green: #aadd56;
-@@ -65,17 +77,17 @@
+@@ -65,17 +73,17 @@
      --black: #171717;
      --trans: transparent;
  
@@ -136,7 +137,7 @@ with `python3 review/build_review.py`; verify with
      --sp_header-logo-adaptive-size: 0;
      --sp_header-title-size: clamp(2.5rem, 1.974rem + 2.807vw, 5.5rem);
      --sp_header-subtitle-size: clamp(1.3rem, 0.086rem + 3.238vw, 4rem);
-@@ -119,7 +131,7 @@
+@@ -119,7 +127,7 @@
      --sp_hovertip-border: 0.2em solid var(--orange);
  }
  
@@ -145,7 +146,7 @@ with `python3 review/build_review.py`; verify with
  
  #container {
      overflow-x: hidden;
-@@ -148,26 +160,26 @@
+@@ -148,26 +156,26 @@
      color: var(--black);
      transition: var(--timer);
      align-content: center;
@@ -183,7 +184,7 @@ with `python3 review/build_review.py`; verify with
  
  .owindow {
      background-color: var(--yellow);
-@@ -206,15 +218,15 @@
+@@ -206,15 +214,15 @@
  }
  .odialog-shader {
      background-image:
@@ -208,7 +209,7 @@ with `python3 review/build_review.py`; verify with
  
  #account-topbutton {
      font-size: 80%;
-@@ -242,8 +254,8 @@
+@@ -242,8 +250,8 @@
      color: var(--darkgreen);
      background-color: var(--white);
      box-shadow:
@@ -219,7 +220,7 @@ with `python3 review/build_review.py`; verify with
      text-decoration: none;
  }
  #search-top-box {
-@@ -272,26 +284,26 @@
+@@ -272,26 +280,26 @@
      box-shadow: 5px 0 var(--darkgreen), -5px 0 var(--darkgreen);
  }
  
@@ -257,7 +258,7 @@ with `python3 review/build_review.py`; verify with
      position: relative;
  }
  #header::before {
-@@ -303,8 +315,8 @@
+@@ -303,8 +311,8 @@
      top: 50%;
      left: 50%;
      transform:
@@ -268,7 +269,7 @@ with `python3 review/build_review.py`; verify with
      opacity: 10%;
  }
  #header h1, #header h2 {
-@@ -325,14 +337,14 @@
+@@ -325,14 +333,14 @@
      text-shadow: none;
  }
  
@@ -288,7 +289,7 @@ with `python3 review/build_review.py`; verify with
  }
  #top-bar ul li a {
      transition: var(--timer);
-@@ -356,7 +368,7 @@
+@@ -356,7 +364,7 @@
      box-shadow: 0 -5px var(--darkgreen);
  }
  
@@ -297,7 +298,7 @@ with `python3 review/build_review.py`; verify with
  
  #side-bar {
      background-color: rgba(0, 0, 0, 0.5);
-@@ -376,7 +388,7 @@
+@@ -376,7 +384,7 @@
  #interwiki .menu-item {
      text-align: left;
  }
@@ -306,7 +307,7 @@ with `python3 review/build_review.py`; verify with
      filter: hue-rotate(180deg);
  }
  #interwiki .heading, #side-bar .heading {
-@@ -398,7 +410,7 @@
+@@ -398,7 +406,7 @@
      filter: invert(1);
  }
  
@@ -315,7 +316,7 @@ with `python3 review/build_review.py`; verify with
  
  body, html {
      background-color: var(--white);
-@@ -439,7 +451,7 @@
+@@ -439,7 +447,7 @@
      border: solid 0.2rem var(--darkgreen);
  }
  
@@ -324,7 +325,7 @@ with `python3 review/build_review.py`; verify with
  
  table.wiki-content-table th {
      background-color: var(--green);
-@@ -489,27 +501,27 @@
+@@ -489,27 +497,27 @@
  div.scp-image-block.block-right::after, .scp-image-block.block-right::after {
      left: calc(100% + 5px);
      clip-path:
@@ -367,7 +368,7 @@ with `python3 review/build_review.py`; verify with
      background-image: linear-gradient(
  270deg, var(--orange) 0 4rem, transparent 4rem calc(4rem + 5px), var(--orange) 4rem);
  }
-@@ -524,7 +536,7 @@
+@@ -524,7 +532,7 @@
  div.page-rate-widget-box::before, div.rate-box-with-credit-button::before, .page-rate-widget-box::before{
      position: absolute;
      content: "";
@@ -376,7 +377,7 @@ with `python3 review/build_review.py`; verify with
      top: 35%;
      right: 102%;
      height: 3rem;
-@@ -569,7 +581,7 @@
+@@ -569,7 +577,7 @@
      height: 0.2rem;
  }
  
@@ -385,7 +386,7 @@ with `python3 review/build_review.py`; verify with
  
  #main-content .page-tags {
      border-top: 2rem solid var(--orange);
-@@ -588,27 +600,27 @@
+@@ -588,27 +596,27 @@
  .page-tags::before {
      right: calc(100% + 5px);
      clip-path:
@@ -429,7 +430,7 @@ with `python3 review/build_review.py`; verify with
      background-image: linear-gradient(90deg, var(--orange) 6rem, var(--trans) 6rem calc(6rem + 5px), var(--orange) 6rem 100%);
  }
  #main-content .page-tags span {
-@@ -655,46 +667,46 @@
+@@ -655,46 +663,46 @@
  
  @media (max-width: 500px) {
      #header {

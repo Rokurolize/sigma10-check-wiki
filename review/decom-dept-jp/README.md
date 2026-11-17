@@ -184,6 +184,26 @@ The original closes its body with `[[include :scp-wiki:more-by:calibold]]` (orig
 
 sources.tsv's notes column for this theme states that the original was "superseded upstream since the reference revision" and cites the follow-up artifact `diff-decom-dept-from187.txt` (kind K5a-i). The artifact records the opposite: `rev187 → rev187 変更: なし` (no changes), with an empty intervening-revision list. There is no post-reference delta to classify and no supersession. The note is a population-level convention in sources.tsv (the same shape recorded for the ambrose-chapter-two, caretaker-sigma, chaos, clock-tower and cosmonaut rows — all five themes in this batch carry it, and all five artifacts contradict it); for this row it does not survive contact with its own citation, and this package follows the artifact.
 
+### Post-package repairs (REFRESH3-F) — NO-EDIT adjudication
+
+**FIX-CARETAKER, landing `ba896f4` (report `R/review-scout/FIX-CARETAKER.md`,
+item 4, "decom-dept-jp: dropped more-by include, adjudicated, no edit").**
+That report supplies the ground the flag above lacked, and the
+adjudication is NO-EDIT: the candidate is byte-unchanged by this landing,
+and its canonical file has no commit after the package build (`0533657`)
+— `candidate.txt` was already byte-identical to canonical at refresh
+time. Census evidence from the report: exactly 2 of 287 originals carry a
+`more-by` include (this theme and 512-onwards); 0 of 2 `-jp` candidates
+keep one (512-onwards-jp dropped its include the same way); no
+`more-by:calibold-jp` candidate exists anywhere in the repo; and the
+campaign's only more-by port, `more-by:waylandlaurencepan-jp`, serves the
+production page `theme:512-onwards` under a posting-name arrangement, not
+any `-jp` candidate. The dropped include is Calibold author-promotion
+furniture; if a `more-by:calibold` port is ever commissioned, the include
+returns at the original's position in the posting-name form. The flag
+above is kept as the as-built record; the file was not edited, so its
+verdict and PASS stamp stand unchanged.
+
 ## Change set outside the two diffed files
 
 The diff covers two files; the port's full change set is larger. (1) `pages/theme-decoration-sample-decom-dept-jp.txt` — the render sample page; it is the "sample" the T2/T3 checks rendered, and its 884px overflow at 768px is the render row's subject. (2) `pages/theme:decom-dept.txt` — the repo's EN-side copy of the original page, the EN sample's base. (3) The delivery itself: the candidate's own local--code /1 on the draft host, named by the head module and the frame (cand L2, L16), which is the runtime form of the self-delivery; the original side's /1 was the same exhibit on scp-wiki.wdfiles.com. The author-label component the candidate keeps is EN-side by exception (section 2) and is not part of the JP change set.

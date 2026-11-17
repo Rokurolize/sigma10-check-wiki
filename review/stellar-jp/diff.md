@@ -15,11 +15,11 @@ adjudicated explanation.
 | | Lines |
 |---|---|
 | original.txt | 1016 |
-| candidate.txt | 1603 |
-| Added | +1032 |
-| Review-stage comments | 0 of the +1032 added lines |
+| candidate.txt | 1604 |
+| Added | +1033 |
+| Review-stage comments | 0 of the +1033 added lines |
 | Removed | -445 |
-| Changed | 1477 |
+| Changed | 1478 |
 | Change blocks | 13 |
 | Diff sections (context 3) | 10 |
 
@@ -28,7 +28,7 @@ adjudicated explanation.
 | Auto-class | Blocks | Changed lines |
 |---|---|---|
 | mechanical | 1 | 4 |
-| supplement | 4 | 1453 |
+| supplement | 4 | 1454 |
 | residual | 8 | 20 |
 
 ## Change-block index
@@ -37,17 +37,17 @@ adjudicated explanation.
 |---|---|---|---|---|---|---|
 | 1 | 1 | 2–420 | 2–3 | +2/−419 | supplement | @import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Abasalt-j… |
 | 2 | 1 | 426–427 | 9–10 | +2/−2 | mechanical | /* ║ \/\_____\ \ \_\ \ \_____\\ \_____\\ \_____\\ \_\ \_\\ \_\ \_\ ║ */ |
-| 3 | 2 | 441–443 | 24–25 | +2/−3 | supplement | @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&… |
-| 4 | 3 | 452–453 | 34–35 | +2/−2 | residual | --title: "SCP財団"; |
-| 5 | 3 | 455–455 | 37–37 | +1/−1 | residual | --UI-font-primary: 'Quantico', 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', '… |
-| 6 | 4 | 519–520 | 101–102 | +2/−2 | residual | --stellar-background: url(https://scp-wiki.wikidot.com/local--files/theme%3As… |
-| 7 | 5 | 530–530 | 112–112 | +1/−1 | residual | font-family: "Quantico", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Got… |
-| 8 | 6 | 567–567 | 149–149 | +1/−1 | residual | font-family: 'Orbitron', 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Yu Got… |
-| 9 | 6 | 571–571 | 153–153 | +1/−1 | residual | font-family: 'Orbitron', 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Yu Got… |
-| 10 | 7 | 658–658 | 240–240 | +1/−1 | residual | font-family: 'Orbitron', 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Yu Got… |
-| 11 | 8 | 694–694 | 276–276 | +1/−1 | residual | background-image: url("https://scp-wiki.wikidot.com/local--files/theme%3Astel… |
-| 12 | 9 | 867–867 | 449–1458 | +1010/−1 | supplement | font-family: 'Quantico', 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Yu Got… |
-| 13 | 10 | 1006–1015 | 1597–1602 | +6/−10 | supplement | [[include :scp-jp:component:license-box-backend \|author=GeminidStrix]] |
+| 3 | 2 | 441–443 | 24–26 | +3/−3 | supplement | @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&… |
+| 4 | 3 | 452–453 | 35–36 | +2/−2 | residual | --title: "SCP財団"; |
+| 5 | 3 | 455–455 | 38–38 | +1/−1 | residual | --UI-font-primary: 'Quantico', 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', '… |
+| 6 | 4 | 519–520 | 102–103 | +2/−2 | residual | --stellar-background: url(https://scp-wiki.wikidot.com/local--files/theme%3As… |
+| 7 | 5 | 530–530 | 113–113 | +1/−1 | residual | font-family: "Quantico", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Got… |
+| 8 | 6 | 567–567 | 150–150 | +1/−1 | residual | font-family: 'Orbitron', 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Yu Got… |
+| 9 | 6 | 571–571 | 154–154 | +1/−1 | residual | font-family: 'Orbitron', 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Yu Got… |
+| 10 | 7 | 658–658 | 241–241 | +1/−1 | residual | font-family: 'Orbitron', 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Yu Got… |
+| 11 | 8 | 694–694 | 277–277 | +1/−1 | residual | background-image: url("https://scp-wiki.wikidot.com/local--files/theme%3Astel… |
+| 12 | 9 | 867–867 | 450–1459 | +1010/−1 | supplement | font-family: 'Quantico', 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Yu Got… |
+| 13 | 10 | 1006–1015 | 1598–1603 | +6/−10 | supplement | [[include :scp-jp:component:license-box-backend \|author=GeminidStrix]] |
 
 ## Full diff
 
@@ -495,10 +495,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 2 — original 438–446 · candidate 21–28 · +2/−3 · supplement</summary>
+<summary>Section 2 — original 438–446 · candidate 21–29 · +3/−3 · supplement</summary>
 
 ```diff
-@@ -438,9 +21,8 @@
+@@ -438,9 +21,9 @@
  
  /*---- IMPORTS ----*/
  
@@ -507,6 +507,7 @@ adjudicated explanation.
 -@import url("https://scp-wiki.wikidot.com/local--files/geminid/fonts.css");
 +@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap&family=Roboto:wght@400..700&display=swap');
 +@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
++@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
  
  :root {
    /*---- BEDROCK VARS ----*/
@@ -515,10 +516,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 3 — original 449–458 · candidate 31–40 · +3/−3 · residual</summary>
+<summary>Section 3 — original 449–458 · candidate 32–41 · +3/−3 · residual</summary>
 
 ```diff
-@@ -449,10 +31,10 @@
+@@ -449,10 +32,10 @@
  
    --header-title: var(--title);
    --header-subtitle: var(--subtitle);
@@ -537,10 +538,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 4 — original 516–523 · candidate 98–105 · +2/−2 · residual</summary>
+<summary>Section 4 — original 516–523 · candidate 99–106 · +2/−2 · residual</summary>
 
 ```diff
-@@ -516,8 +98,8 @@
+@@ -516,8 +99,8 @@
  
    --white-monochrome: 13,13,15;
  
@@ -556,10 +557,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 5 — original 527–533 · candidate 109–115 · +1/−1 · residual</summary>
+<summary>Section 5 — original 527–533 · candidate 110–116 · +1/−1 · residual</summary>
 
 ```diff
-@@ -527,7 +109,7 @@
+@@ -527,7 +110,7 @@
  }
  
  body, html {
@@ -573,10 +574,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 6 — original 564–574 · candidate 146–156 · +2/−2 · residual</summary>
+<summary>Section 6 — original 564–574 · candidate 147–157 · +2/−2 · residual</summary>
 
 ```diff
-@@ -564,11 +146,11 @@
+@@ -564,11 +147,11 @@
  }
  
  h1, h2, h3, h4, h5, h6, #page-title {
@@ -595,10 +596,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 7 — original 655–661 · candidate 237–243 · +1/−1 · residual</summary>
+<summary>Section 7 — original 655–661 · candidate 238–244 · +1/−1 · residual</summary>
 
 ```diff
-@@ -655,7 +237,7 @@
+@@ -655,7 +238,7 @@
  }
  
  .bibitems .title, .footnotes-footer .title {
@@ -612,10 +613,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 8 — original 691–697 · candidate 273–279 · +1/−1 · residual</summary>
+<summary>Section 8 — original 691–697 · candidate 274–280 · +1/−1 · residual</summary>
 
 ```diff
-@@ -691,7 +273,7 @@
+@@ -691,7 +274,7 @@
  }
  
  #header h1 a::before, #license-area::after {
@@ -629,10 +630,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 9 — original 864–870 · candidate 446–1461 · +1010/−1 · supplement</summary>
+<summary>Section 9 — original 864–870 · candidate 447–1462 · +1010/−1 · supplement</summary>
 
 ```diff
-@@ -864,7 +446,1016 @@
+@@ -864,7 +447,1016 @@
  }
  
  div[class$="_memo"]::before {
@@ -1056,7 +1057,7 @@ adjudicated explanation.
 +[[=]]
 +[[collapsible show="+ メモをさらに表示" hide="- 隠す"]]
 +
-+アイコンは[[*user EstrellaYoshte]]によるものです（[[[https://scp-wiki.wikidot.com/desk-of-junior-designer-s-yvonne|こちらを参照]]]）。
++アイコンは[[*user EstrellaYoshte]]によるものです（[[[desk-of-junior-designer-s-yvonne|こちらを参照]]]）。
 +
 +[[div class="classification_memo"]]
 +**{{@@[[div class="classification_memo"]]@@}}**
@@ -1655,10 +1656,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 10 — original 1003–1016 · candidate 1594–1603 · +6/−10 · supplement</summary>
+<summary>Section 10 — original 1003–1016 · candidate 1595–1604 · +6/−10 · supplement</summary>
 
 ```diff
-@@ -1003,14 +1594,10 @@
+@@ -1003,14 +1595,10 @@
  ----
  @@ @@
  

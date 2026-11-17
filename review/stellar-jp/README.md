@@ -3,7 +3,8 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:stellar-jp — origin EN, population #141 [GOSIGN2-LEDGER (b) row 141]
-- Overall: PASS — passed at the ledger determination; no OPEN items [GOSIGN2-LEDGER (b) row 141]
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now e150c7f32c1490c6d54e77b6707c867474eb0b5119c0d508faa10c498170d79b); verdict not carried over, re-judgement required
+> verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 8 errors / 1 warn / 0 infos (hotlink×6, pseudo-ref×2); standing classes dispositioned in register c1 [T1-ROWS row 161; GOSIGN2-LEDGER (b) row 141]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page-overflow 498–503px@320/375 + runtime-hotlink site-theme chain; sample T2 no machine verdict (exit 2, no summary). [RENDER-ROWS-2 (RENDER-S2-D (EN20))]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row (the row records inconclusive runs, carried verbatim above) [RENDER-ROWS-2 row]
@@ -11,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 3 [LOCALIZE-ROWS row 141, source LOCALIZE-S2-C]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 141]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 141]
-- Computed against: canonical commit a497307c6e7eedc2580739ba55d2c3212d9cacd2; candidate file pages/theme:stellar-jp.txt sha256:24643dbb5a91bf0b578090e972fc66b77c64336dada08d3421be7b4b9adb8c7b; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 2dbb83da26b94a9c4a2e7de3a1562025f3552358; candidate file pages/theme:stellar-jp.txt sha256:e150c7f32c1490c6d54e77b6707c867474eb0b5119c0d508faa10c498170d79b; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -247,10 +248,19 @@ read `'Quantico', 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans
 actually loaded by the base (basalt-jp loads it). One gap stands:
 the mono stack names `'JetBrains Mono', 'Noto Sans Mono CJK JP'`
 (candidate L102 and exhibit L1111), and neither face is loaded by
-the candidate or its base — the original loaded JetBrains Mono
-through the dropped personal file, and the port did not replace
-that load. The documentation's font sample still tells readers the
-monospace font is JetBrains Mono (candidate L991).
+the candidate or its base. Two wording corrections recorded per
+`FIX-STELLAR.md` item 2(b): the original's bytes name only
+`'Jetbrains Mono'` (original L520, `--body-font-primary`), so the
+two-face stack with the CJK fallback is the port's own P7 rewrite,
+not a feature of the original; and the author's personal `fonts.css`
+(original L443), probed once on 2026-11-17, serves (302 → 200,
+`text/css`, 49,654 bytes) but declares only three data-URI faces
+('CIRCLE-STARGAZE', 'PROJECT SPACE', 'SQUARE-STARGAZE'), has no
+`@import`, and contains no "JetBrains" in any case — it cannot carry
+a mono load as served today (whether an earlier revision did could
+not be verified). The port dropped the personal-file hotlink and did
+not replace the load; the documentation's font sample still tells
+readers the monospace font is JetBrains Mono (candidate L991).
 
 Assets. Three EN-hosted files are referenced, each twice (delivered
 module and source exhibit): the object-warning component's logo
@@ -488,18 +498,24 @@ name, of the same shape as this candidate's other links; it belongs
 to the coordinator's repair lane.
 
 **Item 2 — the mono faces are named but loaded nowhere (minor
-flag).** The mono stack (candidate L102, exhibit L1111) names
-JetBrains Mono and Noto Sans Mono CJK JP; no `@import` or
-`@font-face` in the candidate or in basalt-jp loads either. The
-original loaded JetBrains Mono through the author's personal
-`fonts.css` (original L443), which the port correctly dropped as a
-personal-file hotlink — and did not replace. The documentation's
-font sample (candidate L991) still presents JetBrains Mono as the
-theme's monospace font. T4 noted the gap without a display-affecting
-mark, and the ledger's pattern-7 disposition covers only the
-base-delivered Noto Sans JP. Recorded so the reflection step can
-decide whether to load a mono face or let the stack fall back
-deliberately.
+flag; wording corrected at REFRESH3-F).** The mono stack (candidate
+L102, exhibit L1111) names JetBrains Mono and Noto Sans Mono CJK JP;
+no `@import` or `@font-face` in the candidate or in basalt-jp loads
+either. Two wording points corrected per `FIX-STELLAR.md` item 2(b):
+the original's bytes name only `'Jetbrains Mono'` (original L520), so
+the two-face stack with the CJK fallback is the port's own P7 rewrite,
+not something the original had; and the author's `fonts.css`
+(original L443), though it serves (probe 2026-11-17: 302 → 200,
+`text/css`, 49,654 bytes), declares only three data-URI faces and no
+mono face at all — it cannot be the source of a JetBrains load as
+served today (whether an earlier revision was could not be verified).
+The port dropped the personal-file hotlink and did not replace the
+load; the documentation's font sample (candidate L991) still presents
+JetBrains Mono as the theme's monospace font. T4 noted the gap without
+a display-affecting mark, and the ledger's pattern-7 disposition covers
+only the base-delivered Noto Sans JP. The landing `2dbb83d` restored the
+load through the candidate's own Google Fonts route (see the
+post-package repairs subsection below).
 
 **Item 3 — pattern 5's files: disposition path and probe evidence
 (record note).** T4 charged the three EN-hosted files as
@@ -532,6 +548,30 @@ the change mass; every line-level claim in this package was verified
 against diff.md and the two files, and the two classifier labels
 that would have misled a label-driven reading (the Rate false-fire
 and the Restoration primary) are adjudicated in the class summary.
+
+### Post-package repairs (REFRESH3-F)
+
+**FIX-STELLAR, landing `2dbb83d` (report `R/review-scout/FIX-STELLAR.md`, item 2,
+"theme:stellar-jp").** This landing postdates the package build
+(`7170328`) and repairs items 1 and 2. Two candidate changes: (a) the
+memo's icon-source link (candidate L868, now L869) repointed from
+`https://scp-wiki.wikidot.com/desk-of-junior-designer-s-yvonne` to the
+bare JP page form `[[[desk-of-junior-designer-s-yvonne|こちらを参照]]]` — the
+`[[*user EstrellaYoshte]]` attribution beside it is untouched; the JP
+target was verified by one probe (HTTP 200) and by the checker raising
+no `link-target-missing`; (b) the mono load restored at candidate L26,
+in the position the `fonts.css` line occupied in the original's import
+order (third, after Orbitron/Roboto and Quantico) and in the candidate's
+own Google Fonts form:
+`@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');`
+— the load goes through the candidate's own route because the served
+`fonts.css` declares no mono face (see item 2, wording corrected above);
+'Noto Sans Mono CJK JP' is left as the stack's second entry, the JP
+system-font name, with no load needed. Checker per the report: error 7 /
+warn 1 / info 0 before and after, finding sets identical after
+line-number normalization. This package documents the corrected
+candidate; its stamp reads STALE against the pre-repair verdict, by
+design.
 
 ## Change set
 

@@ -3,7 +3,8 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:stargazer-jp — origin EN, population #140 [GOSIGN2-LEDGER (b) row 140]
-- Overall: PASS — passed at the ledger determination; no OPEN items [GOSIGN2-LEDGER (b) row 140]
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now cf26715f871d45a1d950a269814d0d300410108f61655e26318137ce0c6546be); verdict not carried over, re-judgement required
+> verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 12 errors / 1 warn / 1 info (hotlink×10, pseudo-ref×2); standing classes dispositioned in register c1 [T1-ROWS row 160; GOSIGN2-LEDGER (b) row 140]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page-overflow 457–522px@320/375 on page and sample; runtime-hotlink site-theme chain; sample credit-modal (preview-form). [RENDER-ROWS-2 (RENDER-S2-D (EN20))]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row [RENDER-ROWS-2 row]
@@ -11,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 2 [LOCALIZE-ROWS row 140, source LOCALIZE-S2-C]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 140]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 140]
-- Computed against: canonical commit a497307c6e7eedc2580739ba55d2c3212d9cacd2; candidate file pages/theme:stargazer-jp.txt sha256:275b9c10b490fd0541d224135ead2c0342fdd9a1932297baa298d61e59189fb3; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 2dbb83da26b94a9c4a2e7de3a1562025f3552358; candidate file pages/theme:stargazer-jp.txt sha256:cf26715f871d45a1d950a269814d0d300410108f61655e26318137ce0c6546be; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -518,6 +519,29 @@ repointed the head import and both frame slots to `theme:basalt-jp/1`
 parent). The practical difference matters for section 5: the header
 text inheritance is JP now because the base changed, not because the
 charge was waived. This package follows the bytes.
+
+### Post-package repairs (REFRESH3-F)
+
+**FIX-STELLAR, landing `2dbb83d` (report `R/review-scout/FIX-STELLAR.md`, item 1,
+"theme:stargazer-jp").** This landing postdates the package build
+(`7170328`) and repairs items 1–3. Three candidate changes: (a) the logo
+repoint at 9 loci — the EN
+`https://scp-wiki.wdfiles.com/local--files/theme%3Abasalt/basalt_scp_logo-for_darkmode.svg`
+→ basalt-jp's own darkmode logo on the draft host,
+`https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abasalt-jp/basalt_scp_logo-for_darkmode.svg`
+(the delivered `--header-logo` L34, its source-exhibit mirror, and the
+seven image-block exhibits; probed HTTP 200, `image/svg+xml`, 2,405 bytes
+— a folder change, not a host swap of the EN path); (b) the 14-line
+author banner comment removed at its second copy in both the delivered
+module and the source-exhibit mirror, keeping the first (head) copy —
+banner occurrences 4 → 2 (comment-only); (c) the intro prose link
+`[[[https://scp-wiki.wikidot.com/theme:basalt|Basalt]]]` →
+`[[[theme:basalt-jp|Basalt]]]`. Checker per the report: error 11 / warn 1 /
+info 1 → 11/2/1 — the 9 EN-host hotlinks became 9 draft-host pseudo-refs
+(both class (ii)), plus the standing `link-target-missing` warn for the
+not-yet-posted `theme:basalt-jp`; no new class (i) error. This package
+documents the corrected candidate; its stamp reads STALE against the
+pre-repair verdict, by design.
 
 ## Change set
 

@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:some-guider-jp — origin KO, population #285 [GOSIGN2-LEDGER (b) row 285]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 2c8786b2b49cadf735f4dc74dc458b68c228156a7cfebd7e8625e24589f214b5); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now fb3838f4754e86bae11390b7c9408856029cdb4eb47b3069b27366468ec08e71); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 12 errors / 1 warn / 1 info (hotlink×11, pseudo-ref×1); standing classes dispositioned in register c1 [T1-ROWS row 255; GOSIGN2-LEDGER (b) row 285]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — runtime-hotlink site-theme chain + scpko.wdfiles.com / scpko.wikidot.com on both pages; sample credit-modal (preview-form), no sample overflow; T3 none beyond cross-cutting items. [RENDER-ROWS-2 (RENDER-S2-H (KO8))]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 284, source LOCALIZE-S2-F]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 284]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 285]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:some-guider-jp.txt sha256:2c8786b2b49cadf735f4dc74dc458b68c228156a7cfebd7e8625e24589f214b5; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 1e3da43416851307b491da1cf4cadf7bc1f61850; candidate file pages/theme:some-guider-jp.txt sha256:fb3838f4754e86bae11390b7c9408856029cdb4eb47b3069b27366468ec08e71; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -483,6 +483,32 @@ answers 404. So whichever citation governs, the end-state still
 requires the posting-time step (repoint plus upload); nothing in the
 candidate blocks it. Recorded so the reflection step does not mistake
 the disposition for the completed rewrite.
+
+### Post-package repairs (REFRESH3-F)
+
+**FIX-GUIDER, landing `1e3da43` (report `R/review-scout/FIX-GUIDER.md`, item 1,
+"theme:some-guider-jp credit furniture").** This landing postdates the
+package build (`7170328`, the M-pure-11 batch commit) and is the repair
+the two flags above waited for. Four candidate changes, all present in
+the recopied `candidate.txt`: (a) the 著作権者 field (candidate L8)
+`**著作権者:** CN 支部の作者` → `**著作権者:** [[*user c_bonefish]]` — item 1(a)'s
+wrong-branch, unnamed-author field now names the author the original's
+prose and the CSS banner name; (b) the credit タイトル field (candidate L4)
+`어떤 길잡이 CSS 테마` → `とある導き手テーマ`, the page's own JP heading, while
+原題 (L7) keeps the KO title; (c) the second credit-style block and the two
+empty label divs (as-built L16–25, ten lines) removed — every field they
+carried already stands in the preview block, and their translator
+`[[*user kkaacc]]` contradicted the ruling-3 翻訳責任者 AI in the same file;
+(d) the original's YoonDokrip load restored as
+`@import url('https://scpko.wdfiles.com/local--files/yoonfont/YoonDokrip.css');`
+at candidate L59, immediately after the Noto Sans JP import at the head of
+the delivered code block (item 2's stacks now resolve the face in
+delivery; the URL was probed 2026-11-17, HTTP 200, `text/css`, 1,348,788
+bytes). Checker per the report: error 12 / warn 1 / info 1 → 13/1/1; the
+one added finding is the restored import's hotlink, class (ii)
+posting-time re-host, with class (i) errors 0 before and after. This
+package documents the corrected candidate; its stamp reads STALE against
+the pre-repair verdict, by design.
 
 ## Change set
 

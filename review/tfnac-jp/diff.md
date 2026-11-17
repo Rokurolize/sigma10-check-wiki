@@ -9,15 +9,15 @@ with `python3 review/build_review.py`; verify with
 |---|---|
 | original.txt | 624 |
 | candidate.txt | 632 |
-| Added | +121 |
-| Review-stage comments | 0 of the +121 added lines |
-| Removed | -119 |
+| Added | +112 |
+| Review-stage comments | 0 of the +112 added lines |
+| Removed | -110 |
 | Hunks | 3 |
 
 ```diff
 --- original.txt
 +++ candidate.txt
-@@ -1,141 +1,129 @@
+@@ -1,138 +1,134 @@
 -[[include :scp-wiki-cn:component:sigma-plus]]
 -
 -[[iftags +版式]]
@@ -61,16 +61,13 @@ with `python3 review/build_review.py`; verify with
 +**元記事リンク:** [*https://scp-wiki-cn.wikidot.com/theme:tfnac 版式：The Foundation Network AssCO11]
 +[[include :scp-jp:credit:end-preview]]
 +
-+ページ情報
-+追加のページ情報
-+
 +これは、[[*user Liurd]]が[[[2023-canon-contest-hub |2023年カノンコンテスト]]]の参加設定「雪景球を打ち破る」のために制作したテーマです。
 +
 +作品の冒頭に次の構文を追加すると、このテーマを適用できます：
 +
 +> @@[[include :scp-jp:theme:tfnac-jp]]@@
 +
-+the Foundation Network assCO11テーマは、[[[component:sigma-plus|Sigma+]]]テーマです。
++the Foundation Network assCO11テーマは、[[[component:sigma-plus-jp|Sigma+]]]テーマです。
 +
 ++ 使用例
  
@@ -243,22 +240,21 @@ with `python3 review/build_review.py`; verify with
  @@@@
  
 -[[collapsible show="+ 展开示例代码" hide="- 收起"]]
--
--[[code]]
--[[div class="credits"]]
--[[div class="series"]]
--打碎雪景球
--[[/div]]
--[[div class="author"]]
--作者： [[*user Liurd]]
--[[/div]]
--[[/div]]
--[[/code]]
 +[[collapsible show="+ サンプルコードを開く" hide="- 閉じる"]]
  
- [[/collapsible]]
- 
-@@ -146,12 +134,15 @@
+ [[code]]
+ [[div class="credits"]]
+ [[div class="series"]]
+-打碎雪景球
++雪景球を打ち破る
+ [[/div]]
+ [[div class="author"]]
+-作者： [[*user Liurd]]
++著者： [[*user Liurd]]
+ [[/div]]
+ [[/div]]
+ [[/code]]
+@@ -146,12 +142,15 @@
  
  -----
  
@@ -280,18 +276,10 @@ with `python3 review/build_review.py`; verify with
  :root {
      --header-title: "S · C · P";
      --header-subtitle: "控制，收容，保护...？";
-@@ -619,6 +610,23 @@
+@@ -619,6 +618,15 @@
           background-position: 55% bottom, 45% bottom;
    }
  }
-+[[div class="credits"]]
-+[[div class="series"]]
-+打碎雪景球
-+[[/div]]
-+[[div class="author"]]
-+作者： [[*user Liurd]]
-+[[/div]]
-+[[/div]]
 +[[/code]]
 +[[/collapsible]]
 +

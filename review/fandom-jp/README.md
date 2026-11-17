@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:fandom-jp — origin EN, population #87 [GOSIGN2-LEDGER (b) row 87]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 86241a24d2613a5e754bef7b7dc8ff586a4f4e54cc98e8afe7515903a30d9efe); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 0a404e636e7e155be120c75c52193bdd38e9d8316089347d78bad34bdaab6b27); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 2 errors / 0 warns / 1 info (pseudo-ref×2); standing classes dispositioned in register c1 [T1-ROWS row 87; GOSIGN2-LEDGER (b) row 87]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — candidate's purple header wordmark overprints account links at ≤375 both engines (notice ends clipped at right); chameleon.gif 404 = owner-deferred EN9. [RENDER-ROWS-1 (RENDER-S2-B)]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 87, source LOCALIZE-S2-B]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 87]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 87]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:fandom-jp.txt sha256:86241a24d2613a5e754bef7b7dc8ff586a4f4e54cc98e8afe7515903a30d9efe; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 49a1e493cc9756c0314b065a789dbdb226faf5df; candidate file pages/theme:fandom-jp.txt sha256:0a404e636e7e155be120c75c52193bdd38e9d8316089347d78bad34bdaab6b27; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 Status: complete — skeleton by classify_hunks.py 0.1.0; every SLOT in the skeleton is resolved in the sections below and the Appendix.
@@ -173,6 +173,27 @@ LICENSE-BOX (B10, cand L405-413): a license box the original does not carry anyw
 3. **The license box is an addition, not a restoration.** The original carries no license box and no credit block; the candidate's box (cand L405-413) was added by the port and says so in its own text (the original has no license notation; confirm with the author before posting). The classifier's LICENSE-BOX label must not be read as evidence the original had one.
 4. **The P9 ground lives outside the ledger.** The ledger (c3) records only P1 for this theme. The `--header-title` disposition rests on ruling 2 as applied in FIX3-S2EN §6 item 1, which names fandom explicitly. Recorded here so the chain is derivable from this package plus the vendored authorities.
 5. **Follow-up currency is clean.** Upstream latest = reference revision (6), per the lane's follow-up artifact; no drift is outstanding.
+
+### Post-package repairs (REFRESH3-F)
+
+**FIX-DYN, landing `49a1e49` (report `R/review-scout/FIX-DYN.md`, item 2, "the
+EN prose links").** This landing postdates the package build (`a0a5549`)
+and repairs the pattern-11 links. Three candidate changes on two lines:
+L30's Sigma Plus link
+`[[[https://scp-wiki.wikidot.com/component:sigma-plus|Sigma Plus]]]` →
+`[[[component:sigma-plus-jp|Sigma Plus]]]` and its toggle-sidebar link →
+`[[[component:toggle-sidebar|トグル式サイドバー]]]` (both JP counterparts
+exist; the population uses the same-site prose form); L28's Fandation link
+keeps its target but gains the in-label annotation `Fandation（英語版）` —
+the article has no JP counterpart (probes of
+`https://scp-jp.wikidot.com/fandation` and the draft-host form both 404),
+so repointing would have replaced a working link with a dead one;
+pattern 11's annotation branch was applied instead. Checker per the
+report: error 2 / warn 0 / info 1 → 2/1/1 — the one added finding is
+`link-target-missing` at L30 for `component:sigma-plus-jp`, the standing
+posting-resolution class; no new class (i) error. This package documents
+the corrected candidate; its stamp reads STALE against the pre-repair
+verdict, by design.
 
 ## Change set outside the two diffed files
 

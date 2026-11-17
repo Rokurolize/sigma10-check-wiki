@@ -8,16 +8,16 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 783 |
-| candidate.txt | 801 |
-| Added | +55 |
-| Review-stage comments | 0 of the +55 added lines |
-| Removed | -42 |
+| candidate.txt | 791 |
+| Added | +51 |
+| Review-stage comments | 0 of the +51 added lines |
+| Removed | -48 |
 | Hunks | 10 |
 
 ```diff
 --- original.txt
 +++ candidate.txt
-@@ -1,43 +1,45 @@
+@@ -1,43 +1,34 @@
 -[[module CSS]]
 -@import url('https://scpko.wikidot.com/local--code/theme%3Asome-guider/1');
 -[[/module]]
@@ -30,31 +30,15 @@ with `python3 review/build_review.py`; verify with
 -[[iftags +테마]]
 -
 -+ 어떤 길잡이 CSS 테마
-+[[iftags +テーマ]]
-+
-+[[include :scp-jp:credit:start-preview]]
-+**タイトル:** 어떤 길잡이 CSS 테마
-+**翻訳責任者:** AI
-+**翻訳年:** 2026
-+**原題:** 어떤 길잡이 CSS 테마
-+**著作権者:** CN 支部の作者
-+**作成年:** 2023
-+**初訳時参照リビジョン:** 17
-+**元記事リンク:** [*https://scpko.wikidot.com/theme%3Asome-guider 어떤 길잡이 CSS 테마]
-+[[include :scp-jp:credit:end-preview]]
-+
-++ とある導き手テーマ
- 
- [[>]]
+-
+-[[>]]
 -**평가 모듈:**
 -[[module Rate]]
-+**評価：**
- [[/>]]
- 
- [[>]]
+-[[/>]]
+-
+-[[>]]
 -**정보 모듈이 있는 평가 모듈:**
-+**評価モジュールとクレジットモジュール：**
- [[/>]]
+-[[/>]]
 -[[include info:start]]
 -[[include info:end]]
 -
@@ -62,9 +46,20 @@ with `python3 review/build_review.py`; verify with
 -
 -테마를 적용하기 위해서 다음과 같은 구문을 페이지 상단에 삽입하세요:
 -> @@[[include :scpko:theme:some-guider]]@@
-+**タイトル：**とある導き手CSSテーマ
-+**翻訳者：**[[*user kkaacc]]
-+**作者：**c_bonefish、またあなたですか？
++[[iftags +テーマ]]
++
++[[include :scp-jp:credit:start-preview]]
++**タイトル:** とある導き手テーマ
++**翻訳責任者:** AI
++**翻訳年:** 2026
++**原題:** 어떤 길잡이 CSS 테마
++**著作権者:** [[*user c_bonefish]]
++**作成年:** 2023
++**初訳時参照リビジョン:** 17
++**元記事リンク:** [*https://scpko.wikidot.com/theme%3Asome-guider 어떤 길잡이 CSS 테마]
++[[include :scp-jp:credit:end-preview]]
++
+++ とある導き手テーマ
 +
 +とある導き手テーマは、[[*user c_bonefish]]が輝暮の導き手GoIフォーマット、またはそれに近い作品のために制作したテーマです。
 +
@@ -94,7 +89,7 @@ with `python3 review/build_review.py`; verify with
  @@@@
  @@@@
  @@@@
-@@ -46,18 +48,26 @@
+@@ -46,18 +37,27 @@
  ㅁㄴㅇㄹ
  
  > + Link
@@ -120,11 +115,12 @@ with `python3 review/build_review.py`; verify with
 +[[collapsible show="ソースコードを表示" hide="ソースコードを閉じる"]]
  [[code type="css"]]
 +@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
++@import url('https://scpko.wdfiles.com/local--files/yoonfont/YoonDokrip.css');
 +/* ===== some-guider ===== */
  /*
      Some Guider CSS Theme
      [2023 Wikidot Theme]
-@@ -69,7 +79,7 @@
+@@ -69,7 +69,7 @@
      CC BY-SA 3.0
  */
  
@@ -133,7 +129,7 @@ with `python3 review/build_review.py`; verify with
  
  :root {
     --color-1: #181824;
-@@ -89,7 +99,7 @@
+@@ -89,7 +89,7 @@
  
  /* Header */
  div#container-wrap {
@@ -142,7 +138,7 @@ with `python3 review/build_review.py`; verify with
      background-size: 150px;
  }
  
-@@ -111,7 +121,7 @@
+@@ -111,7 +111,7 @@
      background-repeat: no-repeat;
      background-size: 400px auto;
      background-position: left top;
@@ -151,7 +147,7 @@ with `python3 review/build_review.py`; verify with
      animation-name: eye-1;
      animation-duration: 5s;
      animation-delay: 0s;
-@@ -129,7 +139,7 @@
+@@ -129,7 +129,7 @@
      background-repeat: no-repeat;
      background-size: 400px auto;
      background-position: left top;
@@ -160,7 +156,7 @@ with `python3 review/build_review.py`; verify with
      transform-origin: 0 0 0;
      transform: scale(1.0, 0);
      animation-name: eye-2;
-@@ -391,7 +401,7 @@
+@@ -391,7 +391,7 @@
  div#side-bar .side-block.media,
  div#side-bar .side-block.resources,
  div#interwiki .side-block  {
@@ -169,7 +165,7 @@ with `python3 review/build_review.py`; verify with
      overflow-x: hidden;
      overflow-y: hidden;
      background-position: 0% 0%, 0% 0%, 100% 0%, 0% 100%, 100% 100% !important;
-@@ -676,7 +686,7 @@
+@@ -676,7 +676,7 @@
      z-index: 0 !important;
    }
      #top-bar .open-menu a {
@@ -178,7 +174,7 @@ with `python3 review/build_review.py`; verify with
        border: none !important;
        border-radius: 0em !important;
        background-size: 40px auto;
-@@ -686,7 +696,7 @@
+@@ -686,7 +686,7 @@
        content: none !important;
      }
      #top-bar .open-menu a:hover {
@@ -187,7 +183,7 @@ with `python3 review/build_review.py`; verify with
        border: none !important;
        border-radius: 0em !important;
        background-size: 40px auto;
-@@ -777,7 +787,15 @@
+@@ -777,7 +777,15 @@
        transform: scale(1.0, 0);
      }
  }

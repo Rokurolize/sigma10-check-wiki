@@ -9,9 +9,9 @@ with `python3 review/build_review.py`; verify with
 |---|---|
 | original.txt | 424 |
 | candidate.txt | 436 |
-| Added | +144 |
-| Review-stage comments | 0 of the +144 added lines |
-| Removed | -137 |
+| Added | +142 |
+| Review-stage comments | 0 of the +142 added lines |
+| Removed | -135 |
 | Hunks | 2 |
 
 ```diff
@@ -294,16 +294,14 @@ with `python3 review/build_review.py`; verify with
 +h3,
 +h4,
 +h5,
-+h6,
-+#page-title,
-+.meta-title {
++h6 {
 +  font-family: "Delius Swash Caps", "Noto Sans JP", cursive;
 +}
  [[/code]]
  [[/collapsible]]
  
--[[footnoteblock]]
--
+ [[footnoteblock]]
+ 
 -@@ @@
 -[[include :scp-wiki:component:license-box-theme]]
 -=====

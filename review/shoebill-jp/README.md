@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:shoebill-jp — origin EN, population #137 [GOSIGN2-LEDGER (b) row 137]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 2c2cb8293d9bfd56559d3ffe3546fd5bbc937a7b7c728fbef79333b9529b2a5a); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now fe4a47eec88340632ce5a4c730a5376b47a00a6e711786869f22e02d08bfda29); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 6 errors / 3 warns / 2 infos (pseudo-ref×6); standing classes dispositioned in register c1 [T1-ROWS row 122; GOSIGN2-LEDGER (b) row 137]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page runtime-hotlink site-theme chain only; sample credit-modal (preview-form) + runtime-hotlink site-theme chain. [RENDER-ROWS-2 (RENDER-S2-D (EN19))]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 2 [LOCALIZE-ROWS row 137, source LOCALIZE-S2-C]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 137]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 137]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:shoebill-jp.txt sha256:2c2cb8293d9bfd56559d3ffe3546fd5bbc937a7b7c728fbef79333b9529b2a5a; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 1e3da43416851307b491da1cf4cadf7bc1f61850; candidate file pages/theme:shoebill-jp.txt sha256:fe4a47eec88340632ce5a4c730a5376b47a00a6e711786869f22e02d08bfda29; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -179,6 +179,26 @@ Candidate L22 links `[[[component:sigma-plus|Sigma Plus]]]`. On scp-jp there is 
 ### Item 4 — the vendored T4 cell truncates
 
 The vendored LOCALIZE-ROWS row 137 in review/AUTHORITIES/ledger-parts/ truncates its charge text mid-sentence ("usage-sample include L21 also targets …"). The full charge text survives in the campaign record (gosign2-lanes/lane-oc-gs-localize-s2-C/REPORT-body.md and sections/shoebill.md), and sections 11–12 and items 1–3 above were adjudicated against that full text. Record gap, noted so a reviewer working from the vendored authorities alone knows the cell is incomplete.
+
+### Post-package repairs (REFRESH3-F)
+
+**FIX-GUIDER, landing `1e3da43` (report `R/review-scout/FIX-GUIDER.md`, item 3,
+"theme:shoebill-jp rating and link").** This landing postdates the package
+build (`7170328`) and repairs items 1 and 3. Two candidate changes: (a)
+the bare `[[>]]` / `[[module rate]]` / `[[/>]]` block below the preview
+credit block (as-built L14–16) removed — a census of the 151
+preview-credit packages found 91 of 96 comparable ports dropped the
+head-zone bare Rate, and the preview credit module is rate-bearing, so
+the block was a KB-09 duplicate; (b) the prose link at candidate L18
+`[[[component:sigma-plus|Sigma Plus]]]` →
+`[[[component:sigma-plus-jp|Sigma Plus]]]`, the posting form the
+candidate's own delivery include already uses. Checker per the report:
+error 6 / warn 3 / info 2 → 6/3/1 — the `double-rate` info cleared by (a),
+the `link-target-missing` warn's target changed by (b), class (i) errors
+0 throughout. Item 2's usage-example plain-slug flag belongs to an
+earlier sweep, not to this landing. This package documents the corrected
+candidate; its stamp reads STALE against the pre-repair verdict, by
+design.
 
 ## Change set outside the two diffed files
 

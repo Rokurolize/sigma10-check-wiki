@@ -3,7 +3,8 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:dynamikron-jp — origin EN, population #82 [GOSIGN2-LEDGER (b) row 82]
-- Overall: PASS — passed at the ledger determination; no OPEN items [GOSIGN2-LEDGER (b) row 82]
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 31685fbdda9eb908fd1cfe7c7f2a6226e0b9aff2cb9e01879cd8aa33c9ace35b); verdict not carried over, re-judgement required
+> verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 8 errors / 1 warn / 2 infos (pseudo-ref×8); standing classes dispositioned in register c1 [T1-ROWS row 102; GOSIGN2-LEDGER (b) row 82]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — credit modal wider than 320px viewport both engines + WebKit CC "S" + notice clip ≤375; assets 404/ORB = EN8 deferred; sample T3 none seen. [RENDER-ROWS-1 (RENDER-S2-B)]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row [RENDER-ROWS-1 row]
@@ -11,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 2 [LOCALIZE-ROWS row 82, source LOCALIZE-S2-A]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 82]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 82]
-- Computed against: canonical commit 1869877ffdcd33cb214b8dc421fb39e3de8d7e8d; candidate file pages/theme:dynamikron-jp.txt sha256:fd150c0f27888e4ffd662e68d1911e04bebf8fa2b323cdb9aa2acb8a9a3dea59; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 49a1e493cc9756c0314b065a789dbdb226faf5df; candidate file pages/theme:dynamikron-jp.txt sha256:31685fbdda9eb908fd1cfe7c7f2a6226e0b9aff2cb9e01879cd8aa33c9ace35b; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 Status: complete — skeleton by classify_hunks.py 0.1.0; every SLOT in the skeleton is resolved in the sections below and the Appendix.
@@ -170,6 +171,24 @@ Topology (classification.json): four components on each side, matching by kind �
 3. **P6's FIXED is a verification, not an edit** (section 2). No priority=3 frame exists; the checker's criterion does not require one; the lane's stricter recommendation was expressly not a posting blocker and was not taken.
 4. **P7's FIXED covers one stack of seven** (section 4). The import is real and the cited stack is extended; the variable stacks the lane enumerated were not.
 5. **The T5 quote defect is unrepaired and undispositioned by name** (section 6). It is the batch's clearest defect flag: a meaning-changing translation error, identified by the check lane with a proposed correction, that no fix wave picked up.
+
+### Post-package repairs (REFRESH3-F)
+
+**FIX-DYN, landing `49a1e49` (report `R/review-scout/FIX-DYN.md`, item 1, "the
+Eddie Murphy quote").** This landing postdates the package build
+(`a0a5549`, the U-5 batch commit) and repairs item 5's T5 flag. One
+candidate change at L173: the quote's subject
+`"ねえ、みんなパーティーしたがるの。…"` →
+`"ねえ、おれの彼女はパーティーしたがるんだ。…"` (the three-beat structure
+is kept). The original is "My girl wants to party all the time…" —
+LOCALIZE-S2-A had flagged みんな ("everyone") as a meaning-changing error
+with a proposed correction, which no wave had picked up; the landing
+takes the proposal's subject and verb form. "all the time" stays
+compressed, as in both the previous translation and the proposal.
+Checker per the report: error 8 / warn 1 / info 2 before and after, full
+finding list byte-identical (standing pseudo-ref baseline, class (iii)).
+This package documents the corrected candidate; its stamp reads STALE
+against the pre-repair verdict, by design.
 
 ## Change set outside the two diffed files
 

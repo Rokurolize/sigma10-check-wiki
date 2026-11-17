@@ -243,7 +243,7 @@ with `python3 review/build_review.py`; verify with
 -[[tab Empty Tab]]
 -"My girl wants to party all the time, party all the time, party all the tiiiime~" - Eddie Murphy, '85
 +[[tab 空のタブ]]
-+"ねえ、みんなパーティーしたがるの。パーティーしたがるの。パーティーしたがる〜〜〜〜〜〜" - エディ・マーフィ、'85
++"ねえ、おれの彼女はパーティーしたがるんだ。パーティーしたがるんだ。パーティーしたがる〜〜〜〜〜〜" - エディ・マーフィ、'85
  [[/tab]]
  [[/tabview]]
  @@ @@

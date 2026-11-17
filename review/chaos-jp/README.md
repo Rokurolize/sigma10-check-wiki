@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:chaos-jp — origin EN, population #70 [GOSIGN2-LEDGER (b) row 70]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 3c7706f1d41177fcd50fe010d32625e579d13b152214b17285482539ac6ee54e); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 0803975fbcef319fc203ffca508a652e83353fe2d041758d0725d735b3a8346f); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 2 errors / 2 warns / 2 infos (pseudo-ref×2); standing classes dispositioned in register c1 [T1-ROWS row 60; GOSIGN2-LEDGER (b) row 70]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — candidate-inherent ~500px min-width on page + page-overflow at every viewport on sample. [RENDER-ROWS-1 (RENDER-S2-A)]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 2 [LOCALIZE-ROWS row 70, source LOCALIZE-S2-A]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 70]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 70]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:chaos-jp.txt sha256:3c7706f1d41177fcd50fe010d32625e579d13b152214b17285482539ac6ee54e; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit ba896f4f980ac8fdf8c288b2faab80a226eca212; candidate file pages/theme:chaos-jp.txt sha256:0803975fbcef319fc203ffca508a652e83353fe2d041758d0725d735b3a8346f; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 Status: complete — skeleton by classify_hunks.py 0.1.0; every SLOT in the skeleton is resolved in the sections below and the Appendix.
@@ -182,6 +182,20 @@ sources.tsv's notes column for this theme states that the original was "supersed
 ### Flag — the prose link to the EN component page
 
 The introduction's last sentence names the theme's base as a link: `[[[component:sigma-plus |Sigma+]]]` (cand L29). The target is the EN component's fullname without a site prefix, which on the JP wiki names a page that is not the base port; the port, `component:sigma-plus-jp`, is what the file itself includes at cand L1 (swapped by FIX2-CREDIT) and what the campaign's T8 inventory carries. The wave that swapped the include did not touch the prose link, and no register charges the residue (the localize row's items are the credit fields, the Rate, P7 and P9). It is recorded here as a flag with the deciding grep (`grep -n 'component:sigma-plus' candidate.txt`: L1 in -jp form, L29 in plain form), so a future editor can repoint the link with the evidence in hand. This package does not edit the candidate.
+
+### Post-package repairs (REFRESH3-F)
+
+**FIX-CARETAKER, landing `ba896f4` (report `R/review-scout/FIX-CARETAKER.md`,
+item 3, "chaos-jp").** This landing postdates the package build
+(`0533657`) and repairs the prose-link flag above. One candidate change:
+the introduction's link `[[[component:sigma-plus |Sigma+]]]` at candidate
+L29 now names `component:sigma-plus-jp`, the form the candidate's L1
+include already uses (swapped by FIX2-CREDIT); label and sentence are
+unchanged. Checker per the report: error 2 / warn 2 / info 1 before and
+after; the L29 `link-target-missing` warn now names the campaign's own
+port, which resolves at posting, and class (i) errors stay 0. This
+package documents the corrected candidate; its stamp reads STALE against
+the pre-repair verdict, by design.
 
 ## Change set outside the two diffed files
 

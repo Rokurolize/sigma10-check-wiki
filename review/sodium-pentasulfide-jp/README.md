@@ -3,7 +3,8 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:sodium-pentasulfide-jp — origin CN, population #229 [GOSIGN2-LEDGER (b) row 229]
-- Overall: PASS — passed at the ledger determination; no OPEN items [GOSIGN2-LEDGER (b) row 229]
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 108abafeb88c08aee4eca8ff64e28c16a84f599d9d1c366ee6c5186e5d7bd187); verdict not carried over, re-judgement required
+> verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 11 errors / 4 warns / 1 info (pseudo-ref×11); standing classes dispositioned in register c1 [T1-ROWS row 260; GOSIGN2-LEDGER (b) row 229]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page runtime-hotlink site-theme chain only; sample credit-modal (preview-form) + page-overflow 331px@320 + 909px@768; T3 re-run, no new screenshot-grounded visual finding; chromium-only coverage (no WebKit verdict). [RENDER-ROWS-G (CN14)]
 - Engine coverage: chromium-only, both pages (no WebKit verdict) [RENDER-ROWS-G row, findings cell]
@@ -11,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 228, source LOCALIZE-S2-E]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 228]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 229]
-- Computed against: canonical commit 666f54356acb463c56016c967dc52464b25ba4a2; candidate file pages/theme:sodium-pentasulfide-jp.txt sha256:64b96da5f2e92bdd3aad6ba43677685a479a807f71093b94e144eb011b6b7237; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 1e3da43416851307b491da1cf4cadf7bc1f61850; candidate file pages/theme:sodium-pentasulfide-jp.txt sha256:108abafeb88c08aee4eca8ff64e28c16a84f599d9d1c366ee6c5186e5d7bd187; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -542,6 +543,21 @@ PASS (its (b) row is NOT PASS at determination with an (e) item of
 its own); layering over it is the K5b-3 premise the campaign
 accepted for this family, and nothing in this package re-judges the
 base.
+
+### Post-package repairs (REFRESH3-F)
+
+**FIX-GUIDER, landing `1e3da43` (report `R/review-scout/FIX-GUIDER.md`, item 2,
+"theme:sodium-pentasulfide-jp header subtitle").** This landing postdates
+the package build (`7170328`) and repairs item 1's flag. One candidate
+change: `--header-subtitle: "収容 制御 保護"` →
+`--header-subtitle: "確保 - 収容 - 保護"` at candidate L410. The old value
+was the CN motto carried over unlocalized; the JP standard form was
+verified against the population before writing — the exact declaration
+stands in theme:candela-jp, theme:minimalist-bhl-jp, theme:magicity-jp
+and theme:sunside-jp. Checker per the report: error 11 / warn 4 / info 1
+before and after, class (i) errors 0. This package documents the
+corrected candidate; its stamp reads STALE against the pre-repair
+verdict, by design.
 
 ## Change set
 

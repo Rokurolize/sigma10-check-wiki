@@ -57,7 +57,7 @@ with `python3 review/build_review.py`; verify with
  [[/div]]
  
 -This theme was made by [[*user HaydenSaintPascal]] for [[*user parenthesis]] in exchange for some **awesome** furry art. Chaos Insurgency Theme is a [[[component:sigma-plus |Sigma+]]] theme.
-+このテーマは[[*user HaydenSaintPascal]]が[[*user parenthesis]]のために、**素晴らしい**ファーリーアートと引き換えに作成したものです。Chaos Insurgency Themeは[[[component:sigma-plus |Sigma+]]]テーマです。
++このテーマは[[*user HaydenSaintPascal]]が[[*user parenthesis]]のために、**素晴らしい**ファーリーアートと引き換えに作成したものです。Chaos Insurgency Themeは[[[component:sigma-plus-jp |Sigma+]]]テーマです。
  
  ----
  

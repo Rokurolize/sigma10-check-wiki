@@ -15,99 +15,99 @@ adjudicated explanation.
 | | Lines |
 |---|---|
 | original.txt | 674 |
-| candidate.txt | 1004 |
-| Added | +452 |
-| Review-stage comments | 0 of the +452 added lines |
-| Removed | -122 |
-| Changed | 574 |
+| candidate.txt | 974 |
+| Added | +423 |
+| Review-stage comments | 0 of the +423 added lines |
+| Removed | -123 |
+| Changed | 546 |
 | Change blocks | 65 |
-| Diff sections (context 3) | 8 |
+| Diff sections (context 3) | 9 |
 
 ## Changed lines by auto-class (heuristic)
 
 | Auto-class | Blocks | Changed lines |
 |---|---|---|
 | mechanical | 2 | 4 |
-| supplement | 3 | 376 |
-| residual | 60 | 194 |
+| supplement | 3 | 361 |
+| residual | 60 | 181 |
 
 ## Change-block index
 
 | # | Section | Original | Candidate | +/− | Auto-class | Gist |
 |---|---|---|---|---|---|---|
-| 1 | 1 | 1–1 | 1–344 | +344/−1 | supplement | [[module CSS]] |
-| 2 | 1 | 4–8 | 347–347 | +1/−5 | supplement | @import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&display… |
-| 3 | 1 | 11–11 | 350–350 | +1/−1 | residual | font-family: 'Bungee Hairline', 'Noto Sans JP', sans-serif; |
-| 4 | 1 | 16–16 | 355–355 | +1/−1 | mechanical | width: 150px; |
-| 5 | 2 | 26–26 | 365–365 | +1/−1 | mechanical | width: 50px; |
+| 1 | 1 | 1–1 | 1–329 | +329/−1 | supplement | [[module CSS]] |
+| 2 | 1 | 4–8 | 332–332 | +1/−5 | supplement | @import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&display… |
+| 3 | 1 | 11–11 | 335–335 | +1/−1 | residual | font-family: 'Bungee Hairline', 'Noto Sans JP', sans-serif; |
+| 4 | 1 | 16–16 | 340–340 | +1/−1 | mechanical | width: 150px; |
+| 5 | 2 | 26–26 | 350–350 | +1/−1 | mechanical | width: 50px; |
 | 6 | 3 | 37–38 | — | +0/−2 | residual | @@ @@ |
-| 7 | 3 | 42–44 | 379–380 | +2/−3 | residual | [[size 120%]]**どの記事でも:**[[/size]] |
-| 8 | 3 | 47–47 | 383–383 | +1/−1 | residual | +* 情報 |
-| 9 | 3 | 49–49 | 385–385 | +1/−1 | residual | **Stargazer**は[[*user AstralNavigator]]によるSCP Wiki向けの美的テーマで、[[[https://scp-wi… |
-| 10 | 3 | 51–51 | 387–387 | +1/−1 | residual | +* ページ要素 |
-| 11 | 4 | 88–88 | 424–424 | +1/−1 | residual | これはフロートボックスです。現時点ではBetterFootnotesを除き、さまざまな内容を中に入れられます。周囲の要素に対して、ページの片側へ回り込みま… |
-| 12 | 5 | 121–121 | 457–457 | +1/−1 | residual | [[collapsible show="+ メモをさらに表示" hide="- 隠す"]] |
-| 13 | 5 | 123–123 | 459–459 | +1/−1 | residual | アイコンは[[*user EstrellaYoshte]]によるものです（[[[https://scp-wiki.wikidot.com/desk-of-… |
-| 14 | 6 | 158–158 | 494–494 | +1/−1 | residual | [[include :scp-jp:component:image-block name=https://scp-wiki.wdfiles.com/loc… |
-| 15 | 6 | 160–160 | 496–496 | +1/−1 | residual | 水平線はハイフン6つ「------」で作成でき、引用ブロックなどの内側に置かれていなければ、ページ全体の幅に広がります。[[footnote]]これは脚注… |
-| 16 | 6 | 162–162 | 498–498 | +1/−1 | residual | 行頭に1個から6個のプラス記号「+」を置くと、見出しを作成できます。 |
-| 17 | 6 | 164–164 | 500–500 | +1/−1 | residual | +* 第1見出し |
-| 18 | 6 | 166–166 | 502–502 | +1/−1 | residual | ++* 第2見出し |
-| 19 | 6 | 168–168 | 504–504 | +1/−1 | residual | +++* 第3見出し |
-| 20 | 6 | 170–170 | 506–506 | +1/−1 | residual | ++++* 第4見出し |
-| 21 | 6 | 172–172 | 508–508 | +1/−1 | residual | +++++* 第5見出し |
-| 22 | 6 | 174–174 | 510–510 | +1/−1 | residual | ++++++* 第6見出し |
-| 23 | 6 | 179–180 | 515–516 | +2/−2 | residual | [[tab タブレーター]] |
-| 24 | 6 | 182–183 | 518–519 | +2/−2 | residual | [[tab タブ化]] |
-| 25 | 6 | 185–185 | 521–521 | +1/−1 | residual | なんて趣深い。 |
-| 26 | 6 | 187–188 | 523–524 | +2/−2 | residual | [[tab 長いタブ]] |
-| 27 | 6 | 190–190 | 526–526 | +1/−1 | residual | これは長いタブです。大量のテキストが入っています。 |
-| 28 | 6 | 192–192 | 528–528 | +1/−1 | residual | これは長いタブです。大量のテキストが入っています。 |
-| 29 | 6 | 194–194 | 530–530 | +1/−1 | residual | これは長いタブです。大量のテキストが入っています。 |
-| 30 | 6 | 196–196 | 532–532 | +1/−1 | residual | これは長いタブです。大量のテキストが入っています。 |
-| 31 | 6 | 198–198 | 534–534 | +1/−1 | residual | これは長いタブです。大量のテキストが入っています。 |
-| 32 | 6 | 200–200 | 536–536 | +1/−1 | residual | これは長いタブです。大量のテキストが入っています。 |
-| 33 | 6 | 202–202 | 538–538 | +1/−1 | residual | これは長いタブです。大量のテキストが入っています。 |
-| 34 | 6 | 204–204 | 540–540 | +1/−1 | residual | これは長いタブです。大量のテキストが入っています。 |
-| 35 | 6 | 206–206 | 542–542 | +1/−1 | residual | これは長いタブです。大量のテキストが入っています。 |
-| 36 | 6 | 208–208 | 544–544 | +1/−1 | residual | これは長いタブです。大量のテキストが入っています。 |
-| 37 | 6 | 210–210 | 546–548 | +3/−1 | residual | これは長いタブです。大量のテキストが入っています。 |
-| 38 | 6 | 212–213 | 550–551 | +2/−2 | residual | [[tab なぜか非常に長い名前のタブです。どうしてでしょう？ とても奇妙ですね。]] |
-| 39 | 6 | 215–215 | 553–553 | +1/−1 | residual | [[tab 空のタブ]] |
-| 40 | 6 | 217–217 | 555–555 | +1/−1 | residual | [[tab 空のタブ]] |
-| 41 | 6 | 219–219 | 557–557 | +1/−1 | residual | [[tab 空のタブ]] |
-| 42 | 6 | 221–221 | 559–559 | +1/−1 | residual | [[tab 空のタブ]] |
-| 43 | 6 | 223–224 | 561–562 | +2/−2 | residual | [[tab 空のタブ]] |
-| 44 | 6 | 230–233 | 568–571 | +4/−4 | residual | \|\|~ これは \|\|~ 表です \|\| |
-| 45 | 6 | 240–240 | 578–578 | +1/−1 | residual | +* 配色 |
-| 46 | 6 | 242–243 | 580–581 | +2/−2 | residual | 一部の要素は**{{tableX}}**クラスで色を付けられます。 |
-| 47 | 6 | 250–250 | 588–588 | +1/−1 | residual | [[include :scp-jp:component:image-block name=https://scp-wiki.wdfiles.com/loc… |
-| 48 | 6 | 255–257 | 593–595 | +3/−3 | residual | \|\|= ここにテキスト \|\| |
-| 49 | 6 | 261–261 | 599–599 | +1/−1 | residual | [[include :scp-jp:component:image-block name=https://scp-wiki.wdfiles.com/loc… |
-| 50 | 6 | 266–268 | 604–606 | +3/−3 | residual | \|\|= ここにテキスト \|\| |
-| 51 | 6 | 272–272 | 610–610 | +1/−1 | residual | [[include :scp-jp:component:image-block name=https://scp-wiki.wdfiles.com/loc… |
-| 52 | 6 | 277–279 | 615–617 | +3/−3 | residual | \|\|= ここにテキスト \|\| |
-| 53 | 6 | 283–283 | 621–621 | +1/−1 | residual | [[include :scp-jp:component:image-block name=https://scp-wiki.wdfiles.com/loc… |
-| 54 | 6 | 288–290 | 626–628 | +3/−3 | residual | \|\|= ここにテキスト \|\| |
-| 55 | 6 | 294–294 | 632–632 | +1/−1 | residual | [[include :scp-jp:component:image-block name=https://scp-wiki.wdfiles.com/loc… |
-| 56 | 6 | 299–301 | 637–639 | +3/−3 | residual | \|\|= ここにテキスト \|\| |
-| 57 | 6 | 305–305 | 643–643 | +1/−1 | residual | [[include :scp-jp:component:image-block name=https://scp-wiki.wdfiles.com/loc… |
-| 58 | 6 | 310–312 | 648–650 | +3/−3 | residual | \|\|= ここにテキスト \|\| |
-| 59 | 7 | 320–320 | 658–658 | +1/−1 | residual | +* Stargazerに同梱（Basalt経由）: |
-| 60 | 7 | 322–323 | 660–661 | +2/−2 | residual | * **[[[component:betterfootnotes\|BetterFootnotes]]]**、[[*user EstrellaYoshte]… |
-| 61 | 7 | 330–332 | 668–670 | +3/−3 | residual | [[span style="font-family: var(--header-font);"]]ヘッダーとUIフォントは**Sofia Sans**です… |
-| 62 | 7 | 337–337 | 675–675 | +1/−1 | residual | [[collapsible show="+ テーマのソースコード" hide="- 隠す"]] |
-| 63 | 7 | — | 677–691 | +15/−0 | residual | /* __ _ */ |
-| 64 | 8 | 645–663 | 998–1003 | +6/−19 | supplement | [[include :scp-jp:component:license-box-backend \|author=AstralNavigator]] |
-| 65 | 8 | 665–674 | — | +0/−10 | residual | [[module css]] |
+| 7 | 3 | 42–44 | 364–365 | +2/−3 | residual | [[size 120%]]**どの記事でも:**[[/size]] |
+| 8 | 3 | 47–47 | 368–368 | +1/−1 | residual | +* 情報 |
+| 9 | 3 | 49–49 | 370–370 | +1/−1 | residual | **Stargazer**は[[*user AstralNavigator]]によるSCP Wiki向けの美的テーマで、[[[theme:basalt-j… |
+| 10 | 3 | 51–51 | 372–372 | +1/−1 | residual | +* ページ要素 |
+| 11 | 4 | 88–88 | 409–409 | +1/−1 | residual | これはフロートボックスです。現時点ではBetterFootnotesを除き、さまざまな内容を中に入れられます。周囲の要素に対して、ページの片側へ回り込みま… |
+| 12 | 5 | 121–121 | 442–442 | +1/−1 | residual | [[collapsible show="+ メモをさらに表示" hide="- 隠す"]] |
+| 13 | 5 | 123–123 | 444–444 | +1/−1 | residual | アイコンは[[*user EstrellaYoshte]]によるものです（[[[https://scp-wiki.wikidot.com/desk-of-… |
+| 14 | 6 | 158–158 | 479–479 | +1/−1 | residual | [[include :scp-jp:component:image-block name=https://sigma10-jp-test.wdfiles.… |
+| 15 | 6 | 160–160 | 481–481 | +1/−1 | residual | 水平線はハイフン6つ「------」で作成でき、引用ブロックなどの内側に置かれていなければ、ページ全体の幅に広がります。[[footnote]]これは脚注… |
+| 16 | 6 | 162–162 | 483–483 | +1/−1 | residual | 行頭に1個から6個のプラス記号「+」を置くと、見出しを作成できます。 |
+| 17 | 6 | 164–164 | 485–485 | +1/−1 | residual | +* 第1見出し |
+| 18 | 6 | 166–166 | 487–487 | +1/−1 | residual | ++* 第2見出し |
+| 19 | 6 | 168–168 | 489–489 | +1/−1 | residual | +++* 第3見出し |
+| 20 | 6 | 170–170 | 491–491 | +1/−1 | residual | ++++* 第4見出し |
+| 21 | 6 | 172–172 | 493–493 | +1/−1 | residual | +++++* 第5見出し |
+| 22 | 6 | 174–174 | 495–495 | +1/−1 | residual | ++++++* 第6見出し |
+| 23 | 6 | 179–180 | 500–501 | +2/−2 | residual | [[tab タブレーター]] |
+| 24 | 6 | 182–183 | 503–504 | +2/−2 | residual | [[tab タブ化]] |
+| 25 | 6 | 185–185 | 506–506 | +1/−1 | residual | なんて趣深い。 |
+| 26 | 6 | 187–188 | 508–509 | +2/−2 | residual | [[tab 長いタブ]] |
+| 27 | 6 | 190–190 | 511–511 | +1/−1 | residual | これは長いタブです。大量のテキストが入っています。 |
+| 28 | 6 | 192–192 | 513–513 | +1/−1 | residual | これは長いタブです。大量のテキストが入っています。 |
+| 29 | 6 | 194–194 | 515–515 | +1/−1 | residual | これは長いタブです。大量のテキストが入っています。 |
+| 30 | 6 | 196–196 | 517–517 | +1/−1 | residual | これは長いタブです。大量のテキストが入っています。 |
+| 31 | 6 | 198–198 | 519–519 | +1/−1 | residual | これは長いタブです。大量のテキストが入っています。 |
+| 32 | 6 | 200–200 | 521–521 | +1/−1 | residual | これは長いタブです。大量のテキストが入っています。 |
+| 33 | 6 | 202–202 | 523–523 | +1/−1 | residual | これは長いタブです。大量のテキストが入っています。 |
+| 34 | 6 | 204–204 | 525–525 | +1/−1 | residual | これは長いタブです。大量のテキストが入っています。 |
+| 35 | 6 | 206–206 | 527–527 | +1/−1 | residual | これは長いタブです。大量のテキストが入っています。 |
+| 36 | 6 | 208–208 | 529–529 | +1/−1 | residual | これは長いタブです。大量のテキストが入っています。 |
+| 37 | 6 | 210–210 | 531–533 | +3/−1 | residual | これは長いタブです。大量のテキストが入っています。 |
+| 38 | 6 | 212–213 | 535–536 | +2/−2 | residual | [[tab なぜか非常に長い名前のタブです。どうしてでしょう？ とても奇妙ですね。]] |
+| 39 | 6 | 215–215 | 538–538 | +1/−1 | residual | [[tab 空のタブ]] |
+| 40 | 6 | 217–217 | 540–540 | +1/−1 | residual | [[tab 空のタブ]] |
+| 41 | 6 | 219–219 | 542–542 | +1/−1 | residual | [[tab 空のタブ]] |
+| 42 | 6 | 221–221 | 544–544 | +1/−1 | residual | [[tab 空のタブ]] |
+| 43 | 6 | 223–224 | 546–547 | +2/−2 | residual | [[tab 空のタブ]] |
+| 44 | 6 | 230–233 | 553–556 | +4/−4 | residual | \|\|~ これは \|\|~ 表です \|\| |
+| 45 | 6 | 240–240 | 563–563 | +1/−1 | residual | +* 配色 |
+| 46 | 6 | 242–243 | 565–566 | +2/−2 | residual | 一部の要素は**{{tableX}}**クラスで色を付けられます。 |
+| 47 | 6 | 250–250 | 573–573 | +1/−1 | residual | [[include :scp-jp:component:image-block name=https://sigma10-jp-test.wdfiles.… |
+| 48 | 6 | 255–257 | 578–580 | +3/−3 | residual | \|\|= ここにテキスト \|\| |
+| 49 | 6 | 261–261 | 584–584 | +1/−1 | residual | [[include :scp-jp:component:image-block name=https://sigma10-jp-test.wdfiles.… |
+| 50 | 6 | 266–268 | 589–591 | +3/−3 | residual | \|\|= ここにテキスト \|\| |
+| 51 | 6 | 272–272 | 595–595 | +1/−1 | residual | [[include :scp-jp:component:image-block name=https://sigma10-jp-test.wdfiles.… |
+| 52 | 6 | 277–279 | 600–602 | +3/−3 | residual | \|\|= ここにテキスト \|\| |
+| 53 | 6 | 283–283 | 606–606 | +1/−1 | residual | [[include :scp-jp:component:image-block name=https://sigma10-jp-test.wdfiles.… |
+| 54 | 6 | 288–290 | 611–613 | +3/−3 | residual | \|\|= ここにテキスト \|\| |
+| 55 | 6 | 294–294 | 617–617 | +1/−1 | residual | [[include :scp-jp:component:image-block name=https://sigma10-jp-test.wdfiles.… |
+| 56 | 6 | 299–301 | 622–624 | +3/−3 | residual | \|\|= ここにテキスト \|\| |
+| 57 | 6 | 305–305 | 628–628 | +1/−1 | residual | [[include :scp-jp:component:image-block name=https://sigma10-jp-test.wdfiles.… |
+| 58 | 6 | 310–312 | 633–635 | +3/−3 | residual | \|\|= ここにテキスト \|\| |
+| 59 | 7 | 320–320 | 643–643 | +1/−1 | residual | +* Stargazerに同梱（Basalt経由）: |
+| 60 | 7 | 322–323 | 645–646 | +2/−2 | residual | * **[[[component:betterfootnotes\|BetterFootnotes]]]**、[[*user EstrellaYoshte]… |
+| 61 | 7 | 330–332 | 653–655 | +3/−3 | residual | [[span style="font-family: var(--header-font);"]]ヘッダーとUIフォントは**Sofia Sans**です… |
+| 62 | 7 | 337–337 | 660–660 | +1/−1 | residual | [[collapsible show="+ テーマのソースコード" hide="- 隠す"]] |
+| 63 | 8 | 355–355 | 678–678 | +1/−1 | residual | --header-logo: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Ab… |
+| 64 | 9 | 645–663 | 968–973 | +6/−19 | supplement | [[include :scp-jp:component:license-box-backend \|author=AstralNavigator]] |
+| 65 | 9 | 665–674 | — | +0/−10 | residual | [[module css]] |
 
 ## Full diff
 
 <details>
-<summary>Section 1 — original 1–19 · candidate 1–358 · +347/−8 · mechanical, residual, supplement</summary>
+<summary>Section 1 — original 1–19 · candidate 1–343 · +332/−8 · mechanical, residual, supplement</summary>
 
 ```diff
-@@ -1,19 +1,358 @@
+@@ -1,19 +1,343 @@
 -[[iftags +theme]]
 +[[module CSS]]
 +@import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Abasalt-jp/1");
@@ -126,23 +126,8 @@ adjudicated explanation.
 +/* Built on Basalt                            */
 +/*                                            */
 +
-+/*  __ _                                      */
-+/* / _\ |_ __ _ _ __ __ _  __ _ _______ _ __  */
-+/* \ \| __/ _` | '__/ _` |/ _` |_  / _ \ '__| */
-+/* _\ \ || (_| | | | (_| | (_| |/ /  __/ |    */
-+/* \__/\__\__,_|_|  \__, |\__,_/___\___|_|    */
-+/*                  |___/                     */
-+/*                                            */
-+/* [2026 Wikidot Theme]                       */
-+/* Version 1.0.0                              */
-+/*                                            */
-+/* by AstralNavigator                         */
-+/*                                            */
-+/* Built on Basalt                            */
-+/*                                            */
-+
 +:root {
-+    --header-logo: url(https://scp-wiki.wdfiles.com/local--files/theme%3Abasalt/basalt_scp_logo-for_darkmode.svg);
++    --header-logo: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abasalt-jp/basalt_scp_logo-for_darkmode.svg);
 +
 +    /* ---- STARGAZER VARIABLES ---- */
 +
@@ -479,10 +464,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 3 — original 34–54 · candidate 373–390 · +5/−8 · residual</summary>
+<summary>Section 3 — original 34–54 · candidate 358–375 · +5/−8 · residual</summary>
 
 ```diff
-@@ -34,21 +373,18 @@
+@@ -34,21 +358,18 @@
  **Stargazer**
  [[image https://scp-wiki.wdfiles.com/local--files/theme%3Astargazer/stargazer_logo.svg class="title-logo"]]
  [[/div]]
@@ -502,7 +487,7 @@ adjudicated explanation.
 ++* 情報
  
 -**Stargazer** is an aesthetic theme for the SCP Wiki by [[*user AstralNavigator]] which extends the [https://scp-wiki.wikidot.com/theme:basalt Basalt] theme. Visit Basalt's wiki page to see what theme settings are available to use. Please note that Stargazer is a darkmode theme by default, so there is no need to set "darkmode=a" in your Basalt import. Other Basalt theme settings should work normally.
-+**Stargazer**は[[*user AstralNavigator]]によるSCP Wiki向けの美的テーマで、[[[https://scp-wiki.wikidot.com/theme:basalt|Basalt]]]テーマの拡張版です。使用できるテーマ設定についてはBasaltのWikiページを参照してください。なお、Stargazerはデフォルトでダークモードのテーマです。そのため、Basaltのincludeで「darkmode=a」を指定する必要はありません。その他のBasaltテーマ設定は通常どおり使用できます。また、このテーマをincludeすると、Basaltもあわせて読み込まれます。
++**Stargazer**は[[*user AstralNavigator]]によるSCP Wiki向けの美的テーマで、[[[theme:basalt-jp|Basalt]]]テーマの拡張版です。使用できるテーマ設定についてはBasaltのWikiページを参照してください。なお、Stargazerはデフォルトでダークモードのテーマです。そのため、Basaltのincludeで「darkmode=a」を指定する必要はありません。その他のBasaltテーマ設定は通常どおり使用できます。また、このテーマをincludeすると、Basaltもあわせて読み込まれます。
  
 -+* Page elements
 ++* ページ要素
@@ -514,10 +499,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 4 — original 85–91 · candidate 421–427 · +1/−1 · residual</summary>
+<summary>Section 4 — original 85–91 · candidate 406–412 · +1/−1 · residual</summary>
 
 ```diff
-@@ -85,7 +421,7 @@
+@@ -85,7 +406,7 @@
  [[div class="floatbox"]]
  **{{@@[[div class="floatbox"]]@@}}**
  
@@ -531,10 +516,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 5 — original 118–126 · candidate 454–462 · +2/−2 · residual</summary>
+<summary>Section 5 — original 118–126 · candidate 439–447 · +2/−2 · residual</summary>
 
 ```diff
-@@ -118,9 +454,9 @@
+@@ -118,9 +439,9 @@
  [[/div]]
  
  [[=]]
@@ -551,15 +536,15 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 6 — original 155–315 · candidate 491–653 · +68/−66 · residual</summary>
+<summary>Section 6 — original 155–315 · candidate 476–638 · +68/−66 · residual</summary>
 
 ```diff
-@@ -155,161 +491,163 @@
+@@ -155,161 +476,163 @@
  
  ------
  
 -[[include :scp-wiki:component:image-block name=https://scp-wiki.wdfiles.com/local--files/theme%3Abasalt/basalt_scp_logo-for_darkmode.svg|caption=Image block.|width=280px]]
-+[[include :scp-jp:component:image-block name=https://scp-wiki.wdfiles.com/local--files/theme%3Abasalt/basalt_scp_logo-for_darkmode.svg|caption=画像ブロック。|width=280px]]
++[[include :scp-jp:component:image-block name=https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abasalt-jp/basalt_scp_logo-for_darkmode.svg|caption=画像ブロック。|width=280px]]
  
 -A horizontal rule can be created with 6 hyphens @@"------"@@ and extends across the whole page if it's not placed inside anything (eg a blockquote).[[footnote]]This is a footnote[[/footnote]]
 +水平線はハイフン6つ「------」で作成でき、引用ブロックなどの内側に置かれていなければ、ページ全体の幅に広がります。[[footnote]]これは脚注です[[/footnote]]
@@ -695,7 +680,7 @@ adjudicated explanation.
  
  [[div class="table1"]]
 -[[include :scp-wiki:component:image-block name=https://scp-wiki.wdfiles.com/local--files/theme%3Abasalt/basalt_scp_logo-for_darkmode.svg|caption=**{{.table1}}**|width=100px]]
-+[[include :scp-jp:component:image-block name=https://scp-wiki.wdfiles.com/local--files/theme%3Abasalt/basalt_scp_logo-for_darkmode.svg|caption=**{{.table1}}**|width=100px]]
++[[include :scp-jp:component:image-block name=https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abasalt-jp/basalt_scp_logo-for_darkmode.svg|caption=**{{.table1}}**|width=100px]]
  [[/div]]
  
  [[div class="table1"]]
@@ -710,7 +695,7 @@ adjudicated explanation.
  
  [[div class="table2"]]
 -[[include :scp-wiki:component:image-block name=https://scp-wiki.wdfiles.com/local--files/theme%3Abasalt/basalt_scp_logo-for_darkmode.svg|caption=**{{.table2}}**|width=100px]]
-+[[include :scp-jp:component:image-block name=https://scp-wiki.wdfiles.com/local--files/theme%3Abasalt/basalt_scp_logo-for_darkmode.svg|caption=**{{.table2}}**|width=100px]]
++[[include :scp-jp:component:image-block name=https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abasalt-jp/basalt_scp_logo-for_darkmode.svg|caption=**{{.table2}}**|width=100px]]
  [[/div]]
  
  [[div class="table2"]]
@@ -725,7 +710,7 @@ adjudicated explanation.
  
  [[div class="table3"]]
 -[[include :scp-wiki:component:image-block name=https://scp-wiki.wdfiles.com/local--files/theme%3Abasalt/basalt_scp_logo-for_darkmode.svg|caption=**{{.table3}}**|width=100px]]
-+[[include :scp-jp:component:image-block name=https://scp-wiki.wdfiles.com/local--files/theme%3Abasalt/basalt_scp_logo-for_darkmode.svg|caption=**{{.table3}}**|width=100px]]
++[[include :scp-jp:component:image-block name=https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abasalt-jp/basalt_scp_logo-for_darkmode.svg|caption=**{{.table3}}**|width=100px]]
  [[/div]]
  
  [[div class="table3"]]
@@ -740,7 +725,7 @@ adjudicated explanation.
  
  [[div class="table4"]]
 -[[include :scp-wiki:component:image-block name=https://scp-wiki.wdfiles.com/local--files/theme%3Abasalt/basalt_scp_logo-for_darkmode.svg|caption=**{{.table4}}**|width=100px]]
-+[[include :scp-jp:component:image-block name=https://scp-wiki.wdfiles.com/local--files/theme%3Abasalt/basalt_scp_logo-for_darkmode.svg|caption=**{{.table4}}**|width=100px]]
++[[include :scp-jp:component:image-block name=https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abasalt-jp/basalt_scp_logo-for_darkmode.svg|caption=**{{.table4}}**|width=100px]]
  [[/div]]
  
  [[div class="table4"]]
@@ -755,7 +740,7 @@ adjudicated explanation.
  
  [[div class="table5"]]
 -[[include :scp-wiki:component:image-block name=https://scp-wiki.wdfiles.com/local--files/theme%3Abasalt/basalt_scp_logo-for_darkmode.svg|caption=**{{.table5}}**|width=100px]]
-+[[include :scp-jp:component:image-block name=https://scp-wiki.wdfiles.com/local--files/theme%3Abasalt/basalt_scp_logo-for_darkmode.svg|caption=**{{.table5}}**|width=100px]]
++[[include :scp-jp:component:image-block name=https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abasalt-jp/basalt_scp_logo-for_darkmode.svg|caption=**{{.table5}}**|width=100px]]
  [[/div]]
  
  [[div class="table5"]]
@@ -770,7 +755,7 @@ adjudicated explanation.
  
  [[div class="table6"]]
 -[[include :scp-wiki:component:image-block name=https://scp-wiki.wdfiles.com/local--files/theme%3Abasalt/basalt_scp_logo-for_darkmode.svg|caption=**{{.table6}}**|width=100px]]
-+[[include :scp-jp:component:image-block name=https://scp-wiki.wdfiles.com/local--files/theme%3Abasalt/basalt_scp_logo-for_darkmode.svg|caption=**{{.table6}}**|width=100px]]
++[[include :scp-jp:component:image-block name=https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abasalt-jp/basalt_scp_logo-for_darkmode.svg|caption=**{{.table6}}**|width=100px]]
  [[/div]]
  
  [[div class="table6"]]
@@ -789,10 +774,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 7 — original 317–341 · candidate 655–694 · +22/−7 · residual</summary>
+<summary>Section 7 — original 317–340 · candidate 640–663 · +7/−7 · residual</summary>
 
 ```diff
-@@ -317,25 +655,40 @@
+@@ -317,24 +640,24 @@
  [[div style="margin-top: 6.5rem;"]]
  [[/div]]
  
@@ -822,33 +807,34 @@ adjudicated explanation.
 -[[collapsible show="+ Theme Source Code"]] 
 +[[collapsible show="+ テーマのソースコード" hide="- 隠す"]]
  [[code type="css"]]
-+/*  __ _                                      */
-+/* / _\ |_ __ _ _ __ __ _  __ _ _______ _ __  */
-+/* \ \| __/ _` | '__/ _` |/ _` |_  / _ \ '__| */
-+/* _\ \ || (_| | | | (_| | (_| |/ /  __/ |    */
-+/* \__/\__\__,_|_|  \__, |\__,_/___\___|_|    */
-+/*                  |___/                     */
-+/*                                            */
-+/* [2026 Wikidot Theme]                       */
-+/* Version 1.0.0                              */
-+/*                                            */
-+/* by AstralNavigator                         */
-+/*                                            */
-+/* Built on Basalt                            */
-+/*                                            */
-+
  /*  __ _                                      */
  /* / _\ |_ __ _ _ __ __ _  __ _ _______ _ __  */
- /* \ \| __/ _` | '__/ _` |/ _` |_  / _ \ '__| */
 ```
 
 </details>
 
 <details>
-<summary>Section 8 — original 642–674 · candidate 995–1004 · +6/−29 · residual, supplement</summary>
+<summary>Section 8 — original 352–358 · candidate 675–681 · +1/−1 · residual</summary>
 
 ```diff
-@@ -642,33 +995,10 @@
+@@ -352,7 +675,7 @@
+ /*                                            */
+ 
+ :root {
+-    --header-logo: url(https://scp-wiki.wdfiles.com/local--files/theme%3Abasalt/basalt_scp_logo-for_darkmode.svg);
++    --header-logo: url(https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abasalt-jp/basalt_scp_logo-for_darkmode.svg);
+ 
+     /* ---- STARGAZER VARIABLES ---- */
+ 
+```
+
+</details>
+
+<details>
+<summary>Section 9 — original 642–674 · candidate 965–974 · +6/−29 · residual, supplement</summary>
+
+```diff
+@@ -642,33 +965,10 @@
  [[/code]]
  [[/collapsible]]
  
@@ -896,7 +882,7 @@ adjudicated explanation.
 <summary>Purely mechanical sections (2) — whitespace, host, and branch-token changes only (heuristic)</summary>
 
 ```diff
-@@ -23,7 +362,7 @@
+@@ -23,7 +347,7 @@
      }
  
      .title-logo {

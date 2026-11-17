@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:tfnac-jp — origin CN, population #236 [GOSIGN2-LEDGER (b) row 236]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now a086f616be923accef91f5e6b87d21b12d1b717711db4a31388cf2b7cfc1814f); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 1a72d49301d78b8d12d4bc2d4eb6288806687f07e1ff6c5166fcff3a38c1b1bd); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 4 errors / 2 warns / 0 infos (old-bhl×2, hotlink×1, pseudo-ref×1); standing classes dispositioned in register c1 [T1-ROWS row 196; GOSIGN2-LEDGER (b) row 236]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page-overflow 507px@320/375 + 782px@768 (page) and 519px@320/375 + 883px@768 (sample) + runtime-hotlink site-theme chain + candidate hosts nu-scptheme.github.io, s1.ax1x.com; sample credit-modal (preview-form); T3 re-run, no new screenshot-grounded visual finding; chromium-only coverage (no WebKit verdict). [RENDER-ROWS-G (CN15)]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 235, source LOCALIZE-S2-E]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 235]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 236]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:tfnac-jp.txt sha256:a086f616be923accef91f5e6b87d21b12d1b717711db4a31388cf2b7cfc1814f; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 2dbb83da26b94a9c4a2e7de3a1562025f3552358; candidate file pages/theme:tfnac-jp.txt sha256:1a72d49301d78b8d12d4bc2d4eb6288806687f07e1ff6c5166fcff3a38c1b1bd; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -528,6 +528,27 @@ the (c2)/(c3) posting-time dispositions (section 4); the probe is
 recorded so the reflection step knows the origin copy may already
 be unreachable, which makes the re-hosting half of the rewrite
 load-bearing rather than cosmetic.
+
+### Post-package repairs (REFRESH3-F)
+
+**FIX-STELLAR, landing `2dbb83d` (report `R/review-scout/FIX-STELLAR.md`, item 3,
+"theme:tfnac-jp").** This landing postdates the package build
+(`7170328`) and repairs items 1, 2 and the Sigma+ half of item 4. Three
+candidate changes: (a) the credits snippet restored into the empty
+sample-code collapsible (as-built L127–130), translated to match its live
+twin byte for byte (雪景球を打ち破る / 著者： [[*user Liurd]]), and the
+displaced, untranslated copy at the CSS exhibit's tail (8 lines) removed;
+(b) the two orphaned credit labels ページ情報 / 追加のページ情報 and one
+surrounding blank line removed (as-built L16–17) — the JP preview credit
+block has no "more" boundary for them to head; (c) the prose link
+`[[[component:sigma-plus|Sigma+]]]` → `[[[component:sigma-plus-jp|Sigma+]]]`,
+the form the candidate's own L1 include uses. Item 3's usage-example flag
+belongs to an earlier sweep, not to this landing. Checker per the report:
+error 4 / warn 2 / info 0 before and after; the only delta is the L25
+warn's target changing to `component:sigma-plus-jp` (the standing
+posting-time class), with no new class (i) error. This package documents
+the corrected candidate; its stamp reads STALE against the pre-repair
+verdict, by design.
 
 ## Change set
 
