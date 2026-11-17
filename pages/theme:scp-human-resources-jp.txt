@@ -5,12 +5,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
+/* 日本語フォント
+   JP localization: Zilla Slab has no Japanese glyphs, so the Japanese face
+   Noto Sans JP (Google Fonts, SIL Open Font License) is appended to the
+   header/title stacks. The Latin face itself is unchanged. */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
 @supports(--css: variables) {
 
     :root {
      /* Typefaces */
-     --header-font: 'Zilla Slab', serif;
-     --title-font: 'Zilla Slab', monospace;
+     --header-font: 'Zilla Slab', 'Noto Sans JP', serif;
+     --title-font: 'Zilla Slab', 'Noto Sans JP', monospace;
 
      /* Standard Colors */
 
@@ -45,7 +51,7 @@
     #side-bar .heading p,
     #interwiki .heading p {
      color: rgba(var(--black-monochrome), 1);
-     font-family: 'Zilla Slab', serif;
+     font-family: 'Zilla Slab', 'Noto Sans JP', serif;
      --text-shadow: none;
     }
 

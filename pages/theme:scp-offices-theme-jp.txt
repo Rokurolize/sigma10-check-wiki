@@ -209,6 +209,12 @@ SCPオフィステーマ
 [[code type="CSS"]]
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
+/* 日本語フォント
+   JP localization: the JetBrains Mono body stack has no Japanese glyphs, so
+   the Japanese face Noto Sans JP (Google Fonts, SIL Open Font License) is
+   appended. The Latin faces themselves are unchanged. */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
 @supports(display: grid) {
 
     :root {
@@ -223,7 +229,7 @@ SCPオフィステーマ
      /* set this to your theme's full name */
 
      /* Typefaces */
-     --body-font: "JetBrains Mono", Recursive, Consolas, monaco, monospace;
+     --body-font: "JetBrains Mono", Recursive, Consolas, monaco, 'Noto Sans JP', monospace;
      --header-font: var(--header-font);
      --title-font: var(--header-font);
      --mono-font: var(--header-font);
