@@ -1,0 +1,160 @@
+[[module CSS]]
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Ay2k-jp/1');
+@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aretro-aiad-theme-jp/1');
+[[/module]]
+
+[[include component:interwiki-style
+| priority=1
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Ay2k-jp/1
+]]
+
+[[include component:interwiki-style
+| priority=2
+| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aretro-aiad-theme-jp/1
+]]
+
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** Retro AIAD Theme
+**翻訳責任者:** AI
+**翻訳年:** 2026
+**原題:** Retro AIAD Theme
+**著作権者:** [[*user Placeholder McD]]
+**作成年:** 2020
+**初訳時参照リビジョン:** 15
+**元記事リンク:** [*https://scp-wiki.wikidot.com/theme:retro-aiad-theme ソース]
+[[include :scp-jp:credit:end-preview]]
+
+これは、2020年カノン・ルネサンスコンテスト向けに執筆されているRetro AIADシリーズのため、[[*user Placeholder McD]]が[[*user etoisle]]のY2Kテーマを改変して開発したテーマです。この設定の外で使うのは、おそらく適切ではないでしょう。
+
+ロゴは[[*user EstrellaYoshte]]がこのテーマのために作成しました。背景画像はもともとetoisleが作成し、EstrellaYoshteが編集したものです。
+
+このテーマをページに読み込むには、ページ内の任意の場所に次のテキストを挿入してください。
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:y2k-jp]]@@
+@@[[include :scp-jp:theme:retro-aiad-theme-jp]]@@
+[[/div]]
+
+-----
+
++ 例
+
+[[include component:image-block name=https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aretro-aiad-theme-jp/retroaiadlogo2000.png|caption=Retro AIADロゴ|width=200px]]
+
+水平線はハイフン5個「-----」で作成でき、引用ブロックなどの内側に置かれていなければページ全体へ伸びます。この文書でセクションを区切っている線が水平線です。
+
+行頭に1個から6個の「+」を置くと見出しを作成できます。
+
+[[collapsible show="+ 見出し" hide="- 見出し"]]
++ 第一見出し
+
+++ 第二見出し
+
++++ 第三見出し
+
+++++ 第四見出し
+
++++++ 第五見出し
+
+++++++ 第六見出し
+[[/collapsible]]
+
+@@ @@
+
+[[tabview]]
+[[tab タブ]]
+これはタブビューです。
+[[/tab]]
+[[tab タブ]]
+ここにもテキストがあります。
+
+趣がありますね。
+[[/tab]]
+[[tab 長いタブ]]
+これは長いタブです。たくさんのテキストを収められます。
+
+これは長いタブです。たくさんのテキストを収められます。
+
+これは長いタブです。たくさんのテキストを収められます。
+
+これは長いタブです。たくさんのテキストを収められます。
+
+これは長いタブです。たくさんのテキストを収められます。
+
+これは長いタブです。たくさんのテキストを収められます。
+
+これは長いタブです。たくさんのテキストを収められます。
+
+これは長いタブです。たくさんのテキストを収められます。
+
+これは長いタブです。たくさんのテキストを収められます。
+
+これは長いタブです。たくさんのテキストを収められます。
+
+これは長いタブです。たくさんのテキストを収められます。
+
+これは長いタブです。たくさんのテキストを収められます。
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[/tabview]]
+
+> これは引用ブロックです。各行の先頭に半角の「> 」を置くと作成できます。
+>
+> さらにテキスト
+> -----
+> これは水平線です
+>
+>> 引用ブロックは入れ子にできます
+
+||~ これは ||~ 表です ||
+||あなたはもう || 作り方を ||
+||||知っているはずです ||
+
+使用フォントはMicrosoft Sans Serifです。
+
+-----
+
++ ソースコード
+
+[[collapsible show="+ コードを表示" hide="- コードを隠す"]]
+[[code type="css"]]
+
+/*
+    RETRO AIAD Theme
+    [2020 Wikidot Theme]
+    By Placeholder McD
+    Based on Y2K Theme created by Etoisle
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+div#container-wrap {
+    background-image: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aretro-aiad-theme-jp/retroaiadbg.png');
+}
+
+div#header {
+    background-image: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Aretro-aiad-theme-jp/retroaiadlogo.png');
+}
+
+#header h1 span {
+    color: transparent;
+    text-shadow: none;
+}
+
+#header h1 span::before {
+    font-family: "Microsoft Sans Serif", "Noto Sans JP", sans-serif;
+    content: "情報技術部門";
+    color: #ffffff;
+    text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.6);
+}
+
+#header h2 span::before {
+    font-family: "Microsoft Sans Serif", "Noto Sans JP", sans-serif;
+    content: "人工知能適用課";
+}
+[[/code]]
+[[/collapsible]]
+[[/iftags]]
