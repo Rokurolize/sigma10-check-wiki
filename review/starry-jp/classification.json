@@ -1,0 +1,3175 @@
+{
+ "tool": "classify_hunks.py",
+ "classifier_version": "0.1.0",
+ "signature_table_version": "2026-11-17.1",
+ "theme": {
+  "dir": "starry-jp",
+  "cand_fullname": "theme:starry-jp",
+  "orig_fullname": "theme:starry",
+  "wiki": "scp-wiki-cn",
+  "revision": "10",
+  "kind": "K5b-3",
+  "verdict": "PASS",
+  "original_file": "review/starry-jp/original.txt",
+  "candidate_file": "review/starry-jp/candidate.txt",
+  "original_sha256": "f8f9b8a61acbca5716fc9b5d4d78028beb272f5f13594acb211f4833a80e35aa",
+  "candidate_sha256": "1676e19afc7a0cc4666352526691a0c6ec0f0ec7d5ab1e0f8519c3c3078bdcb0",
+  "original_lines": 1079,
+  "candidate_lines": 1065
+ },
+ "topology": {
+  "original_components": [
+   {
+    "kind": "module-css",
+    "range": [
+     2,
+     8
+    ],
+    "lines": 6
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     9,
+     269
+    ],
+    "lines": 260
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     272,
+     294
+    ],
+    "lines": 22
+   },
+   {
+    "kind": "code-css",
+    "range": [
+     620,
+     1075
+    ],
+    "lines": 455
+   }
+  ],
+  "candidate_components": [
+   {
+    "kind": "code-css",
+    "range": [
+     341,
+     1052
+    ],
+    "lines": 711
+   },
+   {
+    "kind": "module-css",
+    "range": [
+     1057,
+     1061
+    ],
+    "lines": 4
+   }
+  ],
+  "moves": [
+   {
+    "from_kind": "module-css",
+    "to_kind": "code-css",
+    "orig_range": [
+     9,
+     269
+    ],
+    "cand_range": [
+     341,
+     1052
+    ],
+    "similarity": 0.871,
+    "basis": "content"
+   }
+  ],
+  "external_own_delivery": false
+ },
+ "blocks": [
+  {
+   "id": "B1",
+   "orig_range": [
+    0,
+    1
+   ],
+   "cand_range": [
+    0,
+    1
+   ],
+   "orig_lines": "1-1",
+   "cand_lines": "1-1",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "IFTAGS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "IFTAGS",
+   "primary_section": 2,
+   "label_prec": {
+    "IFTAGS": "A",
+    "TRANS-UNANCHORED": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "IFTAGS": {
+     "orig": [],
+     "cand": [
+      [
+       0,
+       1
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {}
+   },
+   "notes": [
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[module ThemePreviewer noUi=\"true\" theme_url=\"http://d3g0gp89917ko0.cloudfront.net/v--3e3a6f7dbcc9/common--theme/base/css/style.css\"]]",
+   "first_added": "[[iftags +テーマ]]"
+  },
+  {
+   "id": "B2",
+   "orig_range": [
+    2,
+    3
+   ],
+   "cand_range": [
+    2,
+    12
+   ],
+   "orig_lines": "3-3",
+   "cand_lines": "3-12",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [
+    "CREDIT-PREVIEW",
+    "CREDIT-PROSE",
+    "TASL-FIELDS",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "CREDIT-PREVIEW",
+   "primary_section": 1,
+   "label_prec": {
+    "CREDIT-PREVIEW": "A",
+    "TASL-FIELDS": "A",
+    "TRANS-UNANCHORED": "C",
+    "CREDIT-PROSE": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "CREDIT-PREVIEW": {
+     "cand": [
+      [
+       2,
+       3
+      ],
+      [
+       11,
+       12
+      ]
+     ]
+    },
+    "TASL-FIELDS": {
+     "cand": [
+      [
+       3,
+       11
+      ]
+     ]
+    },
+    "TRANS-UNANCHORED": {},
+    "CREDIT-PROSE": {}
+   },
+   "notes": [
+    "script delta without the anchor majority",
+    "position: inside the credit include pair"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[module CSS]]",
+   "first_added": "[[include :scp-jp:credit:start-preview]]"
+  },
+  {
+   "id": "B3",
+   "orig_range": [
+    4,
+    6
+   ],
+   "cand_range": [
+    13,
+    15
+   ],
+   "orig_lines": "5-6",
+   "cand_lines": "14-15",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [
+    "SELF-DELIVERY"
+   ],
+   "primary": "SELF-DELIVERY",
+   "primary_section": 3,
+   "label_prec": {
+    "SELF-DELIVERY": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "SELF-DELIVERY": {
+     "orig": [
+      [
+       5,
+       6
+      ]
+     ],
+     "cand": []
+    }
+   },
+   "notes": [],
+   "partial_notes": [
+    "BASE-DELIVERY/CROSS-IMPORT? theme:mox (include graph needed to decide base vs cross)"
+   ],
+   "first_removed": "@import url(https://scp-wiki-cn.wdfiles.com/local--code/theme:mox/8);",
+   "first_added": "@@@@"
+  },
+  {
+   "id": "B4",
+   "orig_range": [
+    7,
+    8
+   ],
+   "cand_range": [
+    16,
+    17
+   ],
+   "orig_lines": "8-8",
+   "cand_lines": "17-17",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "[[/module]]",
+   "first_added": "[[div class=\"s-title\"]]"
+  },
+  {
+   "id": "B5",
+   "orig_range": [
+    9,
+    10
+   ],
+   "cand_range": [
+    18,
+    343
+   ],
+   "orig_lines": "10-10",
+   "cand_lines": "19-343",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [
+    "COMMENT-TEXT",
+    "DELIVERY-MOVE",
+    "TRANS-UNANCHORED"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COMMENT-TEXT": "C",
+    "TRANS-UNANCHORED": "C",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "B",
+   "label_spans": {
+    "COMMENT-TEXT": {},
+    "TRANS-UNANCHORED": {},
+    "DELIVERY-MOVE": {
+     "orig": [
+      [
+       9,
+       10
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "porter-visible only; labeled and skipped by design",
+    "script delta without the anchor majority"
+   ],
+   "partial_notes": [],
+   "first_removed": "[[module CSS]]",
+   "first_added": "[[span class=\"s-title-line type-1\"]]流繁星[[span class=\"s-title-line type-2\"]]特殊テーマ[[/span]][[/span]]"
+  },
+  {
+   "id": "B6",
+   "orig_range": [
+    156,
+    157
+   ],
+   "cand_range": [
+    489,
+    490
+   ],
+   "orig_lines": "157-157",
+   "cand_lines": "490-490",
+   "channel_pair": [
+    "module-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       156,
+       157
+      ]
+     ],
+     "cand": [
+      [
+       489,
+       490
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       489,
+       490
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(var(--mox-header-height) * -1) / cover !important;",
+   "first_added": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-2) no-repeat local calc(var(--mox-header-height) * -1) / cover !important;"
+  },
+  {
+   "id": "B7",
+   "orig_range": [
+    160,
+    161
+   ],
+   "cand_range": [
+    493,
+    494
+   ],
+   "orig_lines": "161-161",
+   "cand_lines": "494-494",
+   "channel_pair": [
+    "module-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       160,
+       161
+      ]
+     ],
+     "cand": [
+      [
+       493,
+       494
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       493,
+       494
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(var(--mox-header-height)* -2) center / cover !important;",
+   "first_added": "    background: url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-2) no-repeat local calc(var(--mox-header-height)* -2) center / cover !important;"
+  },
+  {
+   "id": "B8",
+   "orig_range": [
+    164,
+    165
+   ],
+   "cand_range": [
+    497,
+    498
+   ],
+   "orig_lines": "165-165",
+   "cand_lines": "498-498",
+   "channel_pair": [
+    "module-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       164,
+       165
+      ]
+     ],
+     "cand": [
+      [
+       497,
+       498
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       497,
+       498
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 3) center / cover !important;",
+   "first_added": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-2) no-repeat local calc(-2.3rem* 3) center / cover !important;"
+  },
+  {
+   "id": "B9",
+   "orig_range": [
+    168,
+    169
+   ],
+   "cand_range": [
+    501,
+    502
+   ],
+   "orig_lines": "169-169",
+   "cand_lines": "502-502",
+   "channel_pair": [
+    "module-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       168,
+       169
+      ]
+     ],
+     "cand": [
+      [
+       501,
+       502
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       501,
+       502
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 4) center / cover !important;",
+   "first_added": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-2) no-repeat local calc(-2.3rem* 4) center / cover !important;"
+  },
+  {
+   "id": "B10",
+   "orig_range": [
+    172,
+    173
+   ],
+   "cand_range": [
+    505,
+    506
+   ],
+   "orig_lines": "173-173",
+   "cand_lines": "506-506",
+   "channel_pair": [
+    "module-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       172,
+       173
+      ]
+     ],
+     "cand": [
+      [
+       505,
+       506
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       505,
+       506
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 22) center / cover !important;",
+   "first_added": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-2) no-repeat local calc(-2.3rem* 22) center / cover !important;"
+  },
+  {
+   "id": "B11",
+   "orig_range": [
+    176,
+    177
+   ],
+   "cand_range": [
+    509,
+    510
+   ],
+   "orig_lines": "177-177",
+   "cand_lines": "510-510",
+   "channel_pair": [
+    "module-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       176,
+       177
+      ]
+     ],
+     "cand": [
+      [
+       509,
+       510
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       509,
+       510
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 5) center / cover !important;",
+   "first_added": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-2) no-repeat local calc(-2.3rem* 5) center / cover !important;"
+  },
+  {
+   "id": "B12",
+   "orig_range": [
+    180,
+    181
+   ],
+   "cand_range": [
+    513,
+    514
+   ],
+   "orig_lines": "181-181",
+   "cand_lines": "514-514",
+   "channel_pair": [
+    "module-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       180,
+       181
+      ]
+     ],
+     "cand": [
+      [
+       513,
+       514
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       513,
+       514
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 6) center / cover !important;",
+   "first_added": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-2) no-repeat local calc(-2.3rem* 6) center / cover !important;"
+  },
+  {
+   "id": "B13",
+   "orig_range": [
+    184,
+    185
+   ],
+   "cand_range": [
+    517,
+    518
+   ],
+   "orig_lines": "185-185",
+   "cand_lines": "518-518",
+   "channel_pair": [
+    "module-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       184,
+       185
+      ]
+     ],
+     "cand": [
+      [
+       517,
+       518
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       517,
+       518
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 7) center / cover !important;",
+   "first_added": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-2) no-repeat local calc(-2.3rem* 7) center / cover !important;"
+  },
+  {
+   "id": "B14",
+   "orig_range": [
+    188,
+    189
+   ],
+   "cand_range": [
+    521,
+    522
+   ],
+   "orig_lines": "189-189",
+   "cand_lines": "522-522",
+   "channel_pair": [
+    "module-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       188,
+       189
+      ]
+     ],
+     "cand": [
+      [
+       521,
+       522
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       521,
+       522
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 8) center / cover !important;",
+   "first_added": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-2) no-repeat local calc(-2.3rem* 8) center / cover !important;"
+  },
+  {
+   "id": "B15",
+   "orig_range": [
+    192,
+    193
+   ],
+   "cand_range": [
+    525,
+    526
+   ],
+   "orig_lines": "193-193",
+   "cand_lines": "526-526",
+   "channel_pair": [
+    "module-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       192,
+       193
+      ]
+     ],
+     "cand": [
+      [
+       525,
+       526
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       525,
+       526
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 9) center / cover !important;",
+   "first_added": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-2) no-repeat local calc(-2.3rem* 9) center / cover !important;"
+  },
+  {
+   "id": "B16",
+   "orig_range": [
+    196,
+    197
+   ],
+   "cand_range": [
+    529,
+    530
+   ],
+   "orig_lines": "197-197",
+   "cand_lines": "530-530",
+   "channel_pair": [
+    "module-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       196,
+       197
+      ]
+     ],
+     "cand": [
+      [
+       529,
+       530
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       529,
+       530
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 10) center / cover !important;",
+   "first_added": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-2) no-repeat local calc(-2.3rem* 10) center / cover !important;"
+  },
+  {
+   "id": "B17",
+   "orig_range": [
+    200,
+    201
+   ],
+   "cand_range": [
+    533,
+    534
+   ],
+   "orig_lines": "201-201",
+   "cand_lines": "534-534",
+   "channel_pair": [
+    "module-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       200,
+       201
+      ]
+     ],
+     "cand": [
+      [
+       533,
+       534
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       533,
+       534
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 11) center / cover !important;",
+   "first_added": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-2) no-repeat local calc(-2.3rem* 11) center / cover !important;"
+  },
+  {
+   "id": "B18",
+   "orig_range": [
+    204,
+    205
+   ],
+   "cand_range": [
+    537,
+    538
+   ],
+   "orig_lines": "205-205",
+   "cand_lines": "538-538",
+   "channel_pair": [
+    "module-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       204,
+       205
+      ]
+     ],
+     "cand": [
+      [
+       537,
+       538
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       537,
+       538
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 12) center / cover !important;",
+   "first_added": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-2) no-repeat local calc(-2.3rem* 12) center / cover !important;"
+  },
+  {
+   "id": "B19",
+   "orig_range": [
+    208,
+    209
+   ],
+   "cand_range": [
+    541,
+    542
+   ],
+   "orig_lines": "209-209",
+   "cand_lines": "542-542",
+   "channel_pair": [
+    "module-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       208,
+       209
+      ]
+     ],
+     "cand": [
+      [
+       541,
+       542
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       541,
+       542
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 13) center / cover !important;",
+   "first_added": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-2) no-repeat local calc(-2.3rem* 13) center / cover !important;"
+  },
+  {
+   "id": "B20",
+   "orig_range": [
+    212,
+    213
+   ],
+   "cand_range": [
+    545,
+    546
+   ],
+   "orig_lines": "213-213",
+   "cand_lines": "546-546",
+   "channel_pair": [
+    "module-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       212,
+       213
+      ]
+     ],
+     "cand": [
+      [
+       545,
+       546
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       545,
+       546
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 14) center / cover !important;",
+   "first_added": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-2) no-repeat local calc(-2.3rem* 14) center / cover !important;"
+  },
+  {
+   "id": "B21",
+   "orig_range": [
+    216,
+    217
+   ],
+   "cand_range": [
+    549,
+    550
+   ],
+   "orig_lines": "217-217",
+   "cand_lines": "550-550",
+   "channel_pair": [
+    "module-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       216,
+       217
+      ]
+     ],
+     "cand": [
+      [
+       549,
+       550
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       549,
+       550
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 15) center / cover !important;",
+   "first_added": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-2) no-repeat local calc(-2.3rem* 15) center / cover !important;"
+  },
+  {
+   "id": "B22",
+   "orig_range": [
+    220,
+    221
+   ],
+   "cand_range": [
+    553,
+    554
+   ],
+   "orig_lines": "221-221",
+   "cand_lines": "554-554",
+   "channel_pair": [
+    "module-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       220,
+       221
+      ]
+     ],
+     "cand": [
+      [
+       553,
+       554
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       553,
+       554
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 15.8) center / cover !important;",
+   "first_added": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-2) no-repeat local calc(-2.3rem* 15.8) center / cover !important;"
+  },
+  {
+   "id": "B23",
+   "orig_range": [
+    224,
+    225
+   ],
+   "cand_range": [
+    557,
+    558
+   ],
+   "orig_lines": "225-225",
+   "cand_lines": "558-558",
+   "channel_pair": [
+    "module-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       224,
+       225
+      ]
+     ],
+     "cand": [
+      [
+       557,
+       558
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       557,
+       558
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 16) center / cover !important;",
+   "first_added": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-2) no-repeat local calc(-2.3rem* 16) center / cover !important;"
+  },
+  {
+   "id": "B24",
+   "orig_range": [
+    228,
+    229
+   ],
+   "cand_range": [
+    561,
+    562
+   ],
+   "orig_lines": "229-229",
+   "cand_lines": "562-562",
+   "channel_pair": [
+    "module-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       228,
+       229
+      ]
+     ],
+     "cand": [
+      [
+       561,
+       562
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       561,
+       562
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 17) center / cover !important;",
+   "first_added": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-2) no-repeat local calc(-2.3rem* 17) center / cover !important;"
+  },
+  {
+   "id": "B25",
+   "orig_range": [
+    232,
+    233
+   ],
+   "cand_range": [
+    565,
+    566
+   ],
+   "orig_lines": "233-233",
+   "cand_lines": "566-566",
+   "channel_pair": [
+    "module-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       232,
+       233
+      ]
+     ],
+     "cand": [
+      [
+       565,
+       566
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       565,
+       566
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 18) center / cover !important;",
+   "first_added": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-2) no-repeat local calc(-2.3rem* 18) center / cover !important;"
+  },
+  {
+   "id": "B26",
+   "orig_range": [
+    236,
+    237
+   ],
+   "cand_range": [
+    569,
+    570
+   ],
+   "orig_lines": "237-237",
+   "cand_lines": "570-570",
+   "channel_pair": [
+    "module-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       236,
+       237
+      ]
+     ],
+     "cand": [
+      [
+       569,
+       570
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       569,
+       570
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 20.8) center / cover !important;",
+   "first_added": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-2) no-repeat local calc(-2.3rem* 20.8) center / cover !important;"
+  },
+  {
+   "id": "B27",
+   "orig_range": [
+    240,
+    241
+   ],
+   "cand_range": [
+    573,
+    574
+   ],
+   "orig_lines": "241-241",
+   "cand_lines": "574-574",
+   "channel_pair": [
+    "module-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       240,
+       241
+      ]
+     ],
+     "cand": [
+      [
+       573,
+       574
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       573,
+       574
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2) no-repeat local calc(-2.3rem* 20) center / cover;",
+   "first_added": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-2) no-repeat local calc(-2.3rem* 20) center / cover;"
+  },
+  {
+   "id": "B28",
+   "orig_range": [
+    245,
+    246
+   ],
+   "cand_range": [
+    578,
+    579
+   ],
+   "orig_lines": "246-246",
+   "cand_lines": "579-579",
+   "channel_pair": [
+    "module-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       245,
+       246
+      ]
+     ],
+     "cand": [
+      [
+       578,
+       579
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       578,
+       579
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background-image: url(https://oxygennine.wdfiles.com/local--files/system:files/icons-2);",
+   "first_added": "    background-image: url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-2);"
+  },
+  {
+   "id": "B29",
+   "orig_range": [
+    267,
+    622
+   ],
+   "cand_range": [
+    600,
+    600
+   ],
+   "orig_lines": "268-622",
+   "cand_lines": "at 601",
+   "channel_pair": [
+    "module-css",
+    "body"
+   ],
+   "labels": [
+    "EXHIBIT-RESTRUCTURE",
+    "IFTAGS"
+   ],
+   "primary": "EXHIBIT-RESTRUCTURE",
+   "primary_section": 8,
+   "label_prec": {
+    "IFTAGS": "A",
+    "EXHIBIT-RESTRUCTURE": "C"
+   },
+   "tier": "A",
+   "label_spans": {
+    "IFTAGS": {
+     "orig": [
+      [
+       270,
+       271
+      ]
+     ],
+     "cand": []
+    },
+    "EXHIBIT-RESTRUCTURE": {}
+   },
+   "notes": [
+    "no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced"
+   ],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": ""
+  },
+  {
+   "id": "B30",
+   "orig_range": [
+    636,
+    637
+   ],
+   "cand_range": [
+    614,
+    615
+   ],
+   "orig_lines": "637-637",
+   "cand_lines": "615-615",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       636,
+       637
+      ]
+     ],
+     "cand": [
+      [
+       614,
+       615
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       614,
+       615
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    --mox-header-logo: url(http://oxygennine.wdfiles.com/local--files/system:files/scp-logo-small-white.svg);",
+   "first_added": "    --mox-header-logo: url(http://oxygennine.wdfiles.com/local--files/system%3Afiles/scp-logo-small-white.svg);"
+  },
+  {
+   "id": "B31",
+   "orig_range": [
+    945,
+    946
+   ],
+   "cand_range": [
+    923,
+    924
+   ],
+   "orig_lines": "946-946",
+   "cand_lines": "924-924",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       945,
+       946
+      ]
+     ],
+     "cand": [
+      [
+       923,
+       924
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       923,
+       924
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(var(--mox-header-height) * -1) / cover !important;",
+   "first_added": "    background: url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-1) no-repeat local calc(var(--mox-header-height) * -1) / cover !important;"
+  },
+  {
+   "id": "B32",
+   "orig_range": [
+    949,
+    950
+   ],
+   "cand_range": [
+    927,
+    928
+   ],
+   "orig_lines": "950-950",
+   "cand_lines": "928-928",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       949,
+       950
+      ]
+     ],
+     "cand": [
+      [
+       927,
+       928
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       927,
+       928
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(var(--mox-header-height)* -2) center / cover !important;",
+   "first_added": "    background: url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-1) no-repeat local calc(var(--mox-header-height)* -2) center / cover !important;"
+  },
+  {
+   "id": "B33",
+   "orig_range": [
+    953,
+    954
+   ],
+   "cand_range": [
+    931,
+    932
+   ],
+   "orig_lines": "954-954",
+   "cand_lines": "932-932",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       953,
+       954
+      ]
+     ],
+     "cand": [
+      [
+       931,
+       932
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       931,
+       932
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 3) center / cover !important;",
+   "first_added": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-1) no-repeat local calc(-2.3rem* 3) center / cover !important;"
+  },
+  {
+   "id": "B34",
+   "orig_range": [
+    957,
+    958
+   ],
+   "cand_range": [
+    935,
+    936
+   ],
+   "orig_lines": "958-958",
+   "cand_lines": "936-936",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       957,
+       958
+      ]
+     ],
+     "cand": [
+      [
+       935,
+       936
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       935,
+       936
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 4) center / cover !important;",
+   "first_added": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-1) no-repeat local calc(-2.3rem* 4) center / cover !important;"
+  },
+  {
+   "id": "B35",
+   "orig_range": [
+    961,
+    962
+   ],
+   "cand_range": [
+    939,
+    940
+   ],
+   "orig_lines": "962-962",
+   "cand_lines": "940-940",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       961,
+       962
+      ]
+     ],
+     "cand": [
+      [
+       939,
+       940
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       939,
+       940
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 22) center / cover !important;",
+   "first_added": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-1) no-repeat local calc(-2.3rem* 22) center / cover !important;"
+  },
+  {
+   "id": "B36",
+   "orig_range": [
+    965,
+    966
+   ],
+   "cand_range": [
+    943,
+    944
+   ],
+   "orig_lines": "966-966",
+   "cand_lines": "944-944",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       965,
+       966
+      ]
+     ],
+     "cand": [
+      [
+       943,
+       944
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       943,
+       944
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 5) center / cover !important;",
+   "first_added": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-1) no-repeat local calc(-2.3rem* 5) center / cover !important;"
+  },
+  {
+   "id": "B37",
+   "orig_range": [
+    969,
+    970
+   ],
+   "cand_range": [
+    947,
+    948
+   ],
+   "orig_lines": "970-970",
+   "cand_lines": "948-948",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       969,
+       970
+      ]
+     ],
+     "cand": [
+      [
+       947,
+       948
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       947,
+       948
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 6) center / cover !important;",
+   "first_added": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-1) no-repeat local calc(-2.3rem* 6) center / cover !important;"
+  },
+  {
+   "id": "B38",
+   "orig_range": [
+    973,
+    974
+   ],
+   "cand_range": [
+    951,
+    952
+   ],
+   "orig_lines": "974-974",
+   "cand_lines": "952-952",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       973,
+       974
+      ]
+     ],
+     "cand": [
+      [
+       951,
+       952
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       951,
+       952
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 7) center / cover !important;",
+   "first_added": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-1) no-repeat local calc(-2.3rem* 7) center / cover !important;"
+  },
+  {
+   "id": "B39",
+   "orig_range": [
+    977,
+    978
+   ],
+   "cand_range": [
+    955,
+    956
+   ],
+   "orig_lines": "978-978",
+   "cand_lines": "956-956",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       977,
+       978
+      ]
+     ],
+     "cand": [
+      [
+       955,
+       956
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       955,
+       956
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 8) center / cover !important;",
+   "first_added": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-1) no-repeat local calc(-2.3rem* 8) center / cover !important;"
+  },
+  {
+   "id": "B40",
+   "orig_range": [
+    981,
+    982
+   ],
+   "cand_range": [
+    959,
+    960
+   ],
+   "orig_lines": "982-982",
+   "cand_lines": "960-960",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       981,
+       982
+      ]
+     ],
+     "cand": [
+      [
+       959,
+       960
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       959,
+       960
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 9) center / cover !important;",
+   "first_added": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-1) no-repeat local calc(-2.3rem* 9) center / cover !important;"
+  },
+  {
+   "id": "B41",
+   "orig_range": [
+    985,
+    986
+   ],
+   "cand_range": [
+    963,
+    964
+   ],
+   "orig_lines": "986-986",
+   "cand_lines": "964-964",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       985,
+       986
+      ]
+     ],
+     "cand": [
+      [
+       963,
+       964
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       963,
+       964
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 10) center / cover !important;",
+   "first_added": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-1) no-repeat local calc(-2.3rem* 10) center / cover !important;"
+  },
+  {
+   "id": "B42",
+   "orig_range": [
+    989,
+    990
+   ],
+   "cand_range": [
+    967,
+    968
+   ],
+   "orig_lines": "990-990",
+   "cand_lines": "968-968",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       989,
+       990
+      ]
+     ],
+     "cand": [
+      [
+       967,
+       968
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       967,
+       968
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 11) center / cover !important;",
+   "first_added": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-1) no-repeat local calc(-2.3rem* 11) center / cover !important;"
+  },
+  {
+   "id": "B43",
+   "orig_range": [
+    993,
+    994
+   ],
+   "cand_range": [
+    971,
+    972
+   ],
+   "orig_lines": "994-994",
+   "cand_lines": "972-972",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       993,
+       994
+      ]
+     ],
+     "cand": [
+      [
+       971,
+       972
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       971,
+       972
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 12) center / cover !important;",
+   "first_added": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-1) no-repeat local calc(-2.3rem* 12) center / cover !important;"
+  },
+  {
+   "id": "B44",
+   "orig_range": [
+    997,
+    998
+   ],
+   "cand_range": [
+    975,
+    976
+   ],
+   "orig_lines": "998-998",
+   "cand_lines": "976-976",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       997,
+       998
+      ]
+     ],
+     "cand": [
+      [
+       975,
+       976
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       975,
+       976
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 13) center / cover !important;",
+   "first_added": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-1) no-repeat local calc(-2.3rem* 13) center / cover !important;"
+  },
+  {
+   "id": "B45",
+   "orig_range": [
+    1001,
+    1002
+   ],
+   "cand_range": [
+    979,
+    980
+   ],
+   "orig_lines": "1002-1002",
+   "cand_lines": "980-980",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       1001,
+       1002
+      ]
+     ],
+     "cand": [
+      [
+       979,
+       980
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       979,
+       980
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 14) center / cover !important;",
+   "first_added": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-1) no-repeat local calc(-2.3rem* 14) center / cover !important;"
+  },
+  {
+   "id": "B46",
+   "orig_range": [
+    1005,
+    1006
+   ],
+   "cand_range": [
+    983,
+    984
+   ],
+   "orig_lines": "1006-1006",
+   "cand_lines": "984-984",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       1005,
+       1006
+      ]
+     ],
+     "cand": [
+      [
+       983,
+       984
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       983,
+       984
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 15) center / cover !important;",
+   "first_added": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-1) no-repeat local calc(-2.3rem* 15) center / cover !important;"
+  },
+  {
+   "id": "B47",
+   "orig_range": [
+    1009,
+    1010
+   ],
+   "cand_range": [
+    987,
+    988
+   ],
+   "orig_lines": "1010-1010",
+   "cand_lines": "988-988",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       1009,
+       1010
+      ]
+     ],
+     "cand": [
+      [
+       987,
+       988
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       987,
+       988
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 15.8) center / cover !important;",
+   "first_added": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-1) no-repeat local calc(-2.3rem* 15.8) center / cover !important;"
+  },
+  {
+   "id": "B48",
+   "orig_range": [
+    1013,
+    1014
+   ],
+   "cand_range": [
+    991,
+    992
+   ],
+   "orig_lines": "1014-1014",
+   "cand_lines": "992-992",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       1013,
+       1014
+      ]
+     ],
+     "cand": [
+      [
+       991,
+       992
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       991,
+       992
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 16) center / cover !important;",
+   "first_added": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-1) no-repeat local calc(-2.3rem* 16) center / cover !important;"
+  },
+  {
+   "id": "B49",
+   "orig_range": [
+    1017,
+    1018
+   ],
+   "cand_range": [
+    995,
+    996
+   ],
+   "orig_lines": "1018-1018",
+   "cand_lines": "996-996",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       1017,
+       1018
+      ]
+     ],
+     "cand": [
+      [
+       995,
+       996
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       995,
+       996
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 17) center / cover !important;",
+   "first_added": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-1) no-repeat local calc(-2.3rem* 17) center / cover !important;"
+  },
+  {
+   "id": "B50",
+   "orig_range": [
+    1021,
+    1022
+   ],
+   "cand_range": [
+    999,
+    1000
+   ],
+   "orig_lines": "1022-1022",
+   "cand_lines": "1000-1000",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       1021,
+       1022
+      ]
+     ],
+     "cand": [
+      [
+       999,
+       1000
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       999,
+       1000
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 18) center / cover !important;",
+   "first_added": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-1) no-repeat local calc(-2.3rem* 18) center / cover !important;"
+  },
+  {
+   "id": "B51",
+   "orig_range": [
+    1025,
+    1026
+   ],
+   "cand_range": [
+    1003,
+    1004
+   ],
+   "orig_lines": "1026-1026",
+   "cand_lines": "1004-1004",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       1025,
+       1026
+      ]
+     ],
+     "cand": [
+      [
+       1003,
+       1004
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       1003,
+       1004
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 20.8) center / cover !important;",
+   "first_added": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-1) no-repeat local calc(-2.3rem* 20.8) center / cover !important;"
+  },
+  {
+   "id": "B52",
+   "orig_range": [
+    1029,
+    1030
+   ],
+   "cand_range": [
+    1007,
+    1008
+   ],
+   "orig_lines": "1030-1030",
+   "cand_lines": "1008-1008",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       1029,
+       1030
+      ]
+     ],
+     "cand": [
+      [
+       1007,
+       1008
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       1007,
+       1008
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1) no-repeat local calc(-2.3rem* 20) center / cover;",
+   "first_added": "    background: var(--mox-layer-light-1) url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-1) no-repeat local calc(-2.3rem* 20) center / cover;"
+  },
+  {
+   "id": "B53",
+   "orig_range": [
+    1034,
+    1035
+   ],
+   "cand_range": [
+    1012,
+    1013
+   ],
+   "orig_lines": "1035-1035",
+   "cand_lines": "1013-1013",
+   "channel_pair": [
+    "code-css",
+    "code-css"
+   ],
+   "labels": [
+    "COLON-ENC",
+    "DELIVERY-MOVE"
+   ],
+   "primary": "DELIVERY-MOVE",
+   "primary_section": 3,
+   "label_prec": {
+    "COLON-ENC": "A",
+    "DELIVERY-MOVE": "B"
+   },
+   "tier": "A",
+   "label_spans": {
+    "COLON-ENC": {
+     "orig": [
+      [
+       1034,
+       1035
+      ]
+     ],
+     "cand": [
+      [
+       1012,
+       1013
+      ]
+     ]
+    },
+    "DELIVERY-MOVE": {
+     "cand": [
+      [
+       1012,
+       1013
+      ]
+     ]
+    }
+   },
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "    background-image: url(https://oxygennine.wdfiles.com/local--files/system:files/icons-1);",
+   "first_added": "    background-image: url(https://oxygennine.wdfiles.com/local--files/system%3Afiles/icons-1);"
+  },
+  {
+   "id": "B54",
+   "orig_range": [
+    1073,
+    1074
+   ],
+   "cand_range": [
+    1051,
+    1051
+   ],
+   "orig_lines": "1074-1074",
+   "cand_lines": "at 1052",
+   "channel_pair": [
+    "code-css",
+    "body"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": ""
+  },
+  {
+   "id": "B55",
+   "orig_range": [
+    1075,
+    1076
+   ],
+   "cand_range": [
+    1052,
+    1052
+   ],
+   "orig_lines": "1076-1076",
+   "cand_lines": "at 1053",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": ""
+  },
+  {
+   "id": "B56",
+   "orig_range": [
+    1078,
+    1078
+   ],
+   "cand_range": [
+    1054,
+    1055
+   ],
+   "orig_lines": "at 1079",
+   "cand_lines": "1055-1055",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [],
+   "primary": null,
+   "primary_section": null,
+   "label_prec": {},
+   "tier": null,
+   "label_spans": {},
+   "notes": [],
+   "partial_notes": [],
+   "first_removed": "",
+   "first_added": "[[/div]]"
+  },
+  {
+   "id": "B57",
+   "orig_range": [
+    1079,
+    1079
+   ],
+   "cand_range": [
+    1056,
+    1065
+   ],
+   "orig_lines": "at 1080",
+   "cand_lines": "1057-1065",
+   "channel_pair": [
+    "body",
+    "body"
+   ],
+   "labels": [
+    "DRAFT-HOST",
+    "SELF-DELIVERY"
+   ],
+   "primary": "SELF-DELIVERY",
+   "primary_section": 3,
+   "label_prec": {
+    "SELF-DELIVERY": "A",
+    "DRAFT-HOST": "A"
+   },
+   "tier": "A",
+   "label_spans": {
+    "SELF-DELIVERY": {
+     "orig": [],
+     "cand": [
+      [
+       1059,
+       1060
+      ],
+      [
+       1063,
+       1064
+      ]
+     ]
+    },
+    "DRAFT-HOST": {
+     "cand": [
+      [
+       1058,
+       1060
+      ],
+      [
+       1063,
+       1064
+      ]
+     ]
+    }
+   },
+   "notes": [
+    "class (iii) draft-stage form"
+   ],
+   "partial_notes": [
+    "BASE-DELIVERY/CROSS-IMPORT? theme:mox-jp (include graph needed to decide base vs cross)"
+   ],
+   "first_removed": "",
+   "first_added": ""
+  }
+ ],
+ "derived_presence": {},
+ "summary": {
+  "blocks": 57,
+  "specific": 53,
+  "heuristic": 0,
+  "residue": 4,
+  "skipped": 0,
+  "reindent_blocks": 0,
+  "label_counts": {
+   "IFTAGS": 2,
+   "TRANS-UNANCHORED": 3,
+   "CREDIT-PREVIEW": 1,
+   "CREDIT-PROSE": 1,
+   "TASL-FIELDS": 1,
+   "SELF-DELIVERY": 2,
+   "COMMENT-TEXT": 1,
+   "DELIVERY-MOVE": 48,
+   "COLON-ENC": 47,
+   "EXHIBIT-RESTRUCTURE": 1,
+   "DRAFT-HOST": 1
+  }
+ },
+ "residue": [
+  "B4",
+  "B54",
+  "B55",
+  "B56"
+ ],
+ "skeleton": {
+  "sha256": "901f63fe713390a7abae160d9c98f9e5b160aa5fecb790d827466376669c61a8",
+  "status": "written (new)"
+ }
+}
