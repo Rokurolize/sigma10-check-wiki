@@ -8,10 +8,10 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 961 |
-| candidate.txt | 1003 |
+| candidate.txt | 1004 |
 | Added | +116 |
 | Review-stage comments | 0 of the +116 added lines |
-| Removed | -79 |
+| Removed | -78 |
 | Hunks | 6 |
 
 ```diff
@@ -207,11 +207,8 @@ with `python3 review/build_review.py`; verify with
  
  ----
  
-@@ -119,10 +135,9 @@
- [[div class="wikibox"]]
- = {{**@@[[div class="wikibox"]]@@**}}
- 
--[[image https://scp-wiki.wdfiles.com/local--files/estrellayoshte/u.png]]
+@@ -122,7 +138,7 @@
+ [[image https://scp-wiki.wdfiles.com/local--files/estrellayoshte/u.png]]
  
  ----
 -Horizontal rule inside {{wikibox}} div.
@@ -219,7 +216,7 @@ with `python3 review/build_review.py`; verify with
  [[span class="capt grey"]]{{capt grey}} span[[/span]]
  [[span class="capt blue"]]{{capt blue}} span[[/span]]
  [[span class="capt lavender"]]{{capt lavender}} span[[/span]]
-@@ -136,14 +151,13 @@
+@@ -136,14 +152,13 @@
  
  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
  
@@ -237,7 +234,7 @@ with `python3 review/build_review.py`; verify with
  
  [[code type="CSS"]]
  /*
-@@ -154,7 +168,7 @@
+@@ -154,7 +169,7 @@
         Paperstack Theme by EstrellaYoshte
  */
  
@@ -246,7 +243,7 @@ with `python3 review/build_review.py`; verify with
  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
  
  /* ---- BASE ---- */
-@@ -282,7 +296,7 @@
+@@ -282,7 +297,7 @@
      div#extra-div-2::before, div#extra-div-2::after { display: none; }
  }
  
@@ -255,7 +252,7 @@ with `python3 review/build_review.py`; verify with
      color: #54595D;
      right: 0;
  }
-@@ -957,5 +971,33 @@
+@@ -957,5 +972,33 @@
  [[/iftags]]
  
  [[module CSS]]

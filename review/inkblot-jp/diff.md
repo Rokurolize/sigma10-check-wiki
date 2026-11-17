@@ -15,10 +15,10 @@ adjudicated explanation.
 | | Lines |
 |---|---|
 | original.txt | 1015 |
-| candidate.txt | 1016 |
-| Added | +174 |
-| Review-stage comments | 0 of the +174 added lines |
-| Removed | -173 |
+| candidate.txt | 1020 |
+| Added | +176 |
+| Review-stage comments | 0 of the +176 added lines |
+| Removed | -171 |
 | Changed | 347 |
 | Change blocks | 86 |
 | Diff sections (context 3) | 17 |
@@ -35,104 +35,106 @@ adjudicated explanation.
 
 | # | Section | Original | Candidate | +/− | Auto-class | Gist |
 |---|---|---|---|---|---|---|
-| 1 | 1 | 1–4 | — | +0/−4 | residual | [[iftags +theme]] |
-| 2 | 1 | 6–6 | 2–2 | +1/−1 | supplement | @import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Ainkblot-… |
-| 3 | 1 | 13–14 | 9–10 | +2/−2 | supplement | [[iftags -テーマ]] |
-| 4 | 1 | 16–16 | 12–12 | +1/−1 | supplement | \| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Ainkblot-jp/2 |
-| 5 | 1 | 21–21 | 17–17 | +1/−1 | residual | [[iftags +テーマ]] |
-| 6 | 1 | 23–23 | 19–30 | +12/−1 | supplement | [[include :scp-jp:credit:start-preview]] |
-| 7 | 1 | 25–25 | 32–32 | +1/−1 | supplement | \| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Ainkblot-jp/2 |
-| 8 | 2 | 33–33 | 40–40 | +1/−1 | residual | --header-subtitle: "我ら未知を鑑定する者"; |
-| 9 | 3 | 92–92 | 99–99 | +1/−1 | residual | テーマ。 |
-| 10 | 3 | 97–99 | 104–106 | +3/−3 | residual | レビューのためのテーマ。 |
-| 11 | 3 | — | 108–157 | +50/−0 | residual | [[div class="inkblot-image"]] |
-| 12 | 3 | 107–164 | 164–164 | +1/−58 | residual | [[/code]] |
-| 13 | 3 | 167–167 | 167–167 | +1/−1 | residual | Sigma-9の[[[component:toggle-sidebar \| Toggle Sidebar]]]コンポーネントと併用する場合: |
-| 14 | 3 | 169–169 | 169–169 | +1/−1 | residual | [[collapsible show="+ Toggle Sidebar専用の追加手順"]] |
-| 15 | 3 | 171–171 | 171–171 | +1/−1 | residual | このテーマはToggle Sidebarコンポーネントの//後//にincludeしてください。 |
-| 16 | 3 | 173–173 | 173–173 | +1/−1 | residual | 次の互換CSSをページに追加してください。 |
-| 17 | 4 | 186–186 | 186–186 | +1/−1 | residual | いくつかの異なるアクセント色でこのテーマをプレビューできます。 |
+| 1 | 1 | 1–2 | 1–2 | +2/−2 | residual | [[iftags +テーマ]] |
+| 2 | 1 | 6–6 | 6–6 | +1/−1 | supplement | @import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Ainkblot-… |
+| 3 | 1 | 13–14 | 13–14 | +2/−2 | supplement | [[iftags -テーマ]] |
+| 4 | 1 | 16–16 | 16–16 | +1/−1 | supplement | \| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Ainkblot-jp/2 |
+| 5 | 1 | 21–21 | 21–21 | +1/−1 | residual | [[iftags +テーマ]] |
+| 6 | 1 | 23–23 | 23–34 | +12/−1 | supplement | [[include :scp-jp:credit:start-preview]] |
+| 7 | 1 | 25–25 | 36–36 | +1/−1 | supplement | \| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Ainkblot-jp/2 |
+| 8 | 2 | 33–33 | 44–44 | +1/−1 | residual | --header-subtitle: "我ら未知を鑑定する者"; |
+| 9 | 3 | 92–92 | 103–103 | +1/−1 | residual | テーマ。 |
+| 10 | 3 | 97–99 | 108–110 | +3/−3 | residual | レビューのためのテーマ。 |
+| 11 | 3 | — | 112–161 | +50/−0 | residual | [[div class="inkblot-image"]] |
+| 12 | 3 | 107–164 | 168–168 | +1/−58 | residual | [[/code]] |
+| 13 | 3 | 167–167 | 171–171 | +1/−1 | residual | Sigma-9の[[[component:toggle-sidebar \| Toggle Sidebar]]]コンポーネントと併用する場合: |
+| 14 | 3 | 169–169 | 173–173 | +1/−1 | residual | [[collapsible show="+ Toggle Sidebar専用の追加手順"]] |
+| 15 | 3 | 171–171 | 175–175 | +1/−1 | residual | このテーマはToggle Sidebarコンポーネントの//後//にincludeしてください。 |
+| 16 | 3 | 173–173 | 177–177 | +1/−1 | residual | 次の互換CSSをページに追加してください。 |
+| 17 | 4 | 186–186 | 190–190 | +1/−1 | residual | いくつかの異なるアクセント色でこのテーマをプレビューできます。 |
 | 18 | 4 | 188–207 | — | +0/−20 | residual | [[div class="picker"]] |
-| 19 | 4 | 211–211 | 191–191 | +1/−1 | residual | + 前置き |
-| 20 | 4 | 213–213 | 193–193 | +1/−1 | residual | 私のヘッドカノンでは、宇宙内のウォルドン・スタジオは//`Michelin Guide Online, powered by the [[[the-dar… |
-| 21 | 4 | 215–215 | 195–195 | +1/−1 | residual | 現在のアンブローズ形式は、自分で自分の足を引っ張っています。多くのアンブローズ記事は、無関係なメニュー項目の集合に、無関係なレビューの集合が続く構成です。… |
-| 22 | 4 | 217–217 | 197–197 | +1/−1 | residual | 残念なことです。アンブローズ形式には大きな可能性があるからです。レビューは、織り合わせれば相互につながった物語を語れます。メニューは素晴らしい発想です。こ… |
-| 23 | 4 | 219–219 | 199–199 | +1/−1 | residual | ウォルドン・スタジオは、アンブローズ形式への別の取り組みです。ウォルドン・スタジオは一つのものを取り上げ、それを徹底的に掘り下げます。一つの対象と、そのあ… |
-| 24 | 4 | 221–221 | 201–201 | +1/−1 | residual | ウォルドン・スタジオにはハブページがありません。私が今でっち上げたばかりだからです。だから、これで代用できるでしょう。ウォルドン・スタジオは小さなレビュア… |
-| 25 | 4 | 223–223 | 203–203 | +1/−1 | residual | とはいえ、これはただのテーマです。好きに使ってください。 |
-| 26 | 4 | 227–227 | 207–207 | +1/−1 | residual | + 使用法 |
-| 27 | 4 | 229–229 | 209–209 | +1/−1 | residual | このテーマを使う手順はいくつかあります。 |
-| 28 | 4 | 231–233 | 211–213 | +3/−3 | residual | # テーマを追加する。 |
-| 29 | 4 | 235–235 | 215–215 | +1/−1 | residual | ++ テーマを追加する |
-| 30 | 4 | 237–237 | 217–217 | +1/−1 | residual | このテーマをページに追加するには、次のコードをページへコピーしてください。できれば、他のCSSと一緒にページ上部付近へ置くのが理想です。 |
-| 31 | 4 | 240–240 | 220–220 | +1/−1 | residual | **##var(--c-keyword)\|[[include##** ##var(--c-symbol)\|:scp-jp:theme:inkblot-jp… |
-| 32 | 4 | 245–245 | 225–225 | +1/−1 | residual | @@ @@##var(--c-builtin)\|@@--@@header-subtitle##: ##var(--c-string)\|"我ら未知を鑑定する… |
-| 33 | 4 | 250–250 | 230–230 | +1/−1 | residual | （上のような形のdivは、{{inksplot}}クラスを追加すれば作れます。） |
-| 34 | 4 | 252–252 | 232–232 | +1/−1 | residual | ++ テーマを設定する |
-| 35 | 4 | 254–254 | 234–234 | +1/−1 | residual | ページ見出しと副見出しを設定するには、二つのCSS変数を変更してください（元祖ウォルドン・スタジオ感を残したいなら、そのままでも構いません）。 |
-| 36 | 4 | 256–256 | 236–236 | +1/−1 | residual | include内の{{accent}}パラメータは、ページ周辺の小さな泡などの色を決めます。また、その暗くしたバリエーションがリンクに使われます。省略した… |
-| 37 | 4 | 258–258 | 238–238 | +1/−1 | residual | お願いがあります。**他のInkblot記事と同じアクセント色は使わないでください。** このテーマページは'**##coral\|coral##**'を使… |
-| 38 | 4 | 260–260 | 240–240 | +1/−1 | residual | （このテーマを使っているページは、ページ下部へ行き、'+ Options'を開いて'Backlinks'をクリックすると確認できます。） |
-| 39 | 4 | 262–262 | 242–242 | +1/−1 | residual | 黒い文字を重ねても読める色を選ぶようにしてください。暗い色を選ばざるを得ない場合は、評価ボタンの文字色を見えるように調整してください。また、Inkblot… |
-| 40 | 4 | 264–264 | 244–244 | +1/−1 | residual | ++ Inkblotヘッダーを作る |
-| 41 | 4 | 266–266 | 246–246 | +1/−1 | residual | Inkblotテーマは既定のページタイトルを非表示にするので、自分で作る必要があります。好きな文字を入れられますが、お願いです。**実際のページタイトルと… |
-| 42 | 4 | 268–268 | 248–248 | +1/−1 | residual | ページ上部に通常のInkblotヘッダーが表示されています。ここではもう一つ、ラベルを付け、すべてのHTML要素にアウトラインを引いたものを示します。 |
-| 43 | 5 | 281–281 | 261–261 | +1/−1 | residual | 好きな |
-| 44 | 5 | 284–284 | 264–264 | +1/−1 | residual | **どんな** |
-| 45 | 5 | 287–287 | 267–267 | +1/−1 | residual | 文字 |
-| 46 | 5 | 290–290 | 270–270 | +1/−1 | residual | //でも//。 |
-| 47 | 6 | 299–301 | 279–281 | +3/−3 | residual | レビューについての紹介文です。 |
-| 48 | 7 | 309–309 | 289–289 | +1/−1 | residual | [[image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Ainkblot-jp/p… |
-| 49 | 7 | 315–315 | 295–295 | +1/−1 | residual | 見て分かるとよいのですが、ヘッダーのタイトル部分は四つの小区画で構成されており、それぞれに一語か二語が入っています。タイトルを分割する、かなりすっきりして… |
-| 50 | 7 | 317–317 | 297–297 | +1/−1 | residual | 情報セクションには、レビューについての情報をいくらか入れるべきです。私からの提案としては、これは何のレビューなのか。誰が書いたのか。読むのにどれくらいかか… |
-| 51 | 7 | 319–319 | 299–299 | +1/−1 | residual | 画像は何でも構いません。おそらく、レビューしている人物の画像にするのがかなり普通でしょう。もしかすると、このテーマはパンケーキによって作られたのかもしれま… |
-| 52 | 7 | 321–321 | 301–301 | +1/−1 | residual | デスクトップでは、このヘッダーの三つのセクションはすべて一列に並びます。一方、モバイルでは、タイトルが単独で一行を取り、情報セクションと画像が次の行に置か… |
-| 53 | 7 | 323–323 | 303–303 | +1/−1 | residual | 四つのタイトル小区画を含め、上のヘッダーを作る方法は以下で確認できます。なお、タイトルセクションの一つを省略しても構いません。その場合、そこには隙間が残り… |
-| 54 | 7 | 330–330 | 310–310 | +1/−1 | residual | 好きな |
-| 55 | 7 | 333–333 | 313–313 | +1/−1 | residual | @@**どんな**@@ |
-| 56 | 7 | 336–336 | 316–316 | +1/−1 | residual | 文字 |
-| 57 | 7 | 339–339 | 319–319 | +1/−1 | residual | @@//でも//@@。 |
-| 58 | 7 | 344–346 | 324–326 | +3/−3 | residual | レビューについての紹介文です。 |
-| 59 | 8 | 356–356 | 336–336 | +1/−1 | residual | このヘッダーとタイトルレイアウトを使うと、いくつか問題があることに注意してください。 |
-| 60 | 8 | 358–359 | 338–339 | +2/−2 | residual | * タイトルの長さ、または四つへの分け方には注意が必要です。長すぎると、タイトルセクションの一つが次の行へ折り返され、読みづらくなる可能性があります。おお… |
-| 61 | 8 | 361–361 | 341–341 | +1/−1 | residual | 奇妙なタイトルグリッドも、情報セクションも、画像も、使う必要はありません。好きなように追加・削除できます。{{.inkblot-header}}クラスを使… |
-| 62 | 8 | 363–363 | 343–343 | +1/−1 | residual | タイトルグリッドなし、情報なし、画像なし、{{.inkblot-header}}なしの例を示します。 |
-| 63 | 8 | 366–366 | 346–346 | +1/−1 | residual | //ただの// **普通の** タイトル。 |
-| 64 | 8 | 371–371 | 351–351 | +1/−1 | residual | @@//ただの// **普通の** タイトル。@@ |
-| 65 | 8 | 377–377 | 357–357 | +1/−1 | residual | ++ では、アンブローズのメニューはどう作るの？ |
-| 66 | 8 | 379–379 | 359–359 | +1/−1 | residual | 要点はこうです。このテーマはアンブローズのレビュー用に設計されているかもしれませんが、アンブローズのメニューは付属しません。 |
-| 67 | 8 | 381–381 | 361–361 | +1/−1 | residual | なぜか？ |
-| 68 | 8 | 383–383 | 363–363 | +1/−1 | residual | 私は、アンブローズ形式を書く楽しさの半分は、自分でメニューを作ることにあると**強く**信じています。アンブローズ形式ごとに新しいメニューデザインを見るの… |
-| 69 | 8 | 385–385 | 365–365 | +1/−1 | residual | もし私がこのテーマにメニューデザインを同梱したら、あなたがそれを使わないなんて嘘を私につかないでください。使うでしょう。//私//だって使います。そして、… |
-| 70 | 8 | 387–387 | 367–367 | +1/−1 | residual | どうしても//本当に//必要なら、別のフォーマットからメニューをコピーして、色を少し調整しても構いません。ただし、そうした場合、私は一つのdownvote… |
-| 71 | 8 | 389–389 | 369–369 | +1/−1 | residual | あなた独自のやり方でスタイル付けしたアンブローズ・レストラン用メニューを追加すると、あなたの記事はアンブローズ・レストランのGoIフォーマットとして認めら… |
-| 72 | 8 | 393–393 | 373–373 | +1/−1 | residual | + ソースコード |
-| 73 | 8 | 395–395 | 375–375 | +1/−1 | residual | よし、私から言うことはこれで全部です。以下がソースコードです。 |
-| 74 | 8 | 397–397 | 377–377 | +1/−1 | residual | [[collapsible show="+ ソースコードを表示"]] |
-| 75 | 8 | — | 384–384 | +1/−0 | supplement | @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;7… |
-| 76 | 8 | 407–407 | 388–388 | +1/−1 | residual | body { font-family: 'Libre Baskerville', 'Noto Sans JP', serif; } |
-| 77 | 9 | 439–439 | 420–420 | +1/−1 | residual | font-family: 'Prata', 'Noto Sans JP', serif; |
-| 78 | 10 | 485–485 | 466–466 | +1/−1 | mechanical | .inkblot-info > p { |
-| 79 | 11 | 660–660 | 641–641 | +1/−1 | residual | div#container-wrap { background: url(https://sigma10-jp-test.wdfiles.com/loca… |
-| 80 | 12 | 674–674 | 655–655 | +1/−1 | residual | font-family: 'Montserrat', 'Noto Sans JP', sans-serif; |
-| 81 | 13 | 691–692 | 672–673 | +2/−2 | residual | background: |
-| 82 | 14 | 779–779 | 760–760 | +1/−1 | mechanical | background-image: |
-| 83 | 15 | 935–935 | 916–916 | +1/−1 | residual | font-family: 'Libre Baskerville', 'Noto Sans JP', serif; |
-| 84 | 15 | 941–941 | 922–922 | +1/−1 | residual | font-family: 'Prata', 'Noto Sans JP', serif; font-size: 3rem; text-align: cen… |
-| 85 | 16 | 998–998 | 979–979 | +1/−1 | residual | font-family: verdana, arial, helvetica, 'Noto Sans JP', sans-serif; |
-| 86 | 17 | — | 997–1016 | +20/−0 | residual | [[module CSS]] |
+| 19 | 4 | 211–211 | 195–195 | +1/−1 | residual | + 前置き |
+| 20 | 4 | 213–213 | 197–197 | +1/−1 | residual | 私のヘッドカノンでは、宇宙内のウォルドン・スタジオは//`Michelin Guide Online, powered by the [[[the-dar… |
+| 21 | 4 | 215–215 | 199–199 | +1/−1 | residual | 現在のアンブローズ形式は、自分で自分の足を引っ張っています。多くのアンブローズ記事は、無関係なメニュー項目の集合に、無関係なレビューの集合が続く構成です。… |
+| 22 | 4 | 217–217 | 201–201 | +1/−1 | residual | 残念なことです。アンブローズ形式には大きな可能性があるからです。レビューは、織り合わせれば相互につながった物語を語れます。メニューは素晴らしい発想です。こ… |
+| 23 | 4 | 219–219 | 203–203 | +1/−1 | residual | ウォルドン・スタジオは、アンブローズ形式への別の取り組みです。ウォルドン・スタジオは一つのものを取り上げ、それを徹底的に掘り下げます。一つの対象と、そのあ… |
+| 24 | 4 | 221–221 | 205–205 | +1/−1 | residual | ウォルドン・スタジオにはハブページがありません。私が今でっち上げたばかりだからです。だから、これで代用できるでしょう。ウォルドン・スタジオは小さなレビュア… |
+| 25 | 4 | 223–223 | 207–207 | +1/−1 | residual | とはいえ、これはただのテーマです。好きに使ってください。 |
+| 26 | 4 | 227–227 | 211–211 | +1/−1 | residual | + 使用法 |
+| 27 | 4 | 229–229 | 213–213 | +1/−1 | residual | このテーマを使う手順はいくつかあります。 |
+| 28 | 4 | 231–233 | 215–217 | +3/−3 | residual | # テーマを追加する。 |
+| 29 | 4 | 235–235 | 219–219 | +1/−1 | residual | ++ テーマを追加する |
+| 30 | 4 | 237–237 | 221–221 | +1/−1 | residual | このテーマをページに追加するには、次のコードをページへコピーしてください。できれば、他のCSSと一緒にページ上部付近へ置くのが理想です。 |
+| 31 | 4 | 240–240 | 224–224 | +1/−1 | residual | **##var(--c-keyword)\|[[include##** ##var(--c-symbol)\|:scp-jp:theme:inkblot-jp… |
+| 32 | 4 | 245–245 | 229–229 | +1/−1 | residual | @@ @@##var(--c-builtin)\|@@--@@header-subtitle##: ##var(--c-string)\|"我ら未知を鑑定する… |
+| 33 | 4 | 250–250 | 234–234 | +1/−1 | residual | （上のような形のdivは、{{inksplot}}クラスを追加すれば作れます。） |
+| 34 | 4 | 252–252 | 236–236 | +1/−1 | residual | ++ テーマを設定する |
+| 35 | 4 | 254–254 | 238–238 | +1/−1 | residual | ページ見出しと副見出しを設定するには、二つのCSS変数を変更してください（元祖ウォルドン・スタジオ感を残したいなら、そのままでも構いません）。 |
+| 36 | 4 | 256–256 | 240–240 | +1/−1 | residual | include内の{{accent}}パラメータは、ページ周辺の小さな泡などの色を決めます。また、その暗くしたバリエーションがリンクに使われます。省略した… |
+| 37 | 4 | 258–258 | 242–242 | +1/−1 | residual | お願いがあります。**他のInkblot記事と同じアクセント色は使わないでください。** このテーマページは'**##coral\|coral##**'を使… |
+| 38 | 4 | 260–260 | 244–244 | +1/−1 | residual | （このテーマを使っているページは、ページ下部へ行き、'+ Options'を開いて'Backlinks'をクリックすると確認できます。） |
+| 39 | 4 | 262–262 | 246–246 | +1/−1 | residual | 黒い文字を重ねても読める色を選ぶようにしてください。暗い色を選ばざるを得ない場合は、評価ボタンの文字色を見えるように調整してください。また、Inkblot… |
+| 40 | 4 | 264–264 | 248–248 | +1/−1 | residual | ++ Inkblotヘッダーを作る |
+| 41 | 4 | 266–266 | 250–250 | +1/−1 | residual | Inkblotテーマは既定のページタイトルを非表示にするので、自分で作る必要があります。好きな文字を入れられますが、お願いです。**実際のページタイトルと… |
+| 42 | 4 | 268–268 | 252–252 | +1/−1 | residual | ページ上部に通常のInkblotヘッダーが表示されています。ここではもう一つ、ラベルを付け、すべてのHTML要素にアウトラインを引いたものを示します。 |
+| 43 | 5 | 281–281 | 265–265 | +1/−1 | residual | 好きな |
+| 44 | 5 | 284–284 | 268–268 | +1/−1 | residual | **どんな** |
+| 45 | 5 | 287–287 | 271–271 | +1/−1 | residual | 文字 |
+| 46 | 5 | 290–290 | 274–274 | +1/−1 | residual | //でも//。 |
+| 47 | 6 | 299–301 | 283–285 | +3/−3 | residual | レビューについての紹介文です。 |
+| 48 | 7 | 309–309 | 293–293 | +1/−1 | residual | [[image https://sigma10-jp-test.wdfiles.com/local--files/theme%3Ainkblot-jp/p… |
+| 49 | 7 | 315–315 | 299–299 | +1/−1 | residual | 見て分かるとよいのですが、ヘッダーのタイトル部分は四つの小区画で構成されており、それぞれに一語か二語が入っています。タイトルを分割する、かなりすっきりして… |
+| 50 | 7 | 317–317 | 301–301 | +1/−1 | residual | 情報セクションには、レビューについての情報をいくらか入れるべきです。私からの提案としては、これは何のレビューなのか。誰が書いたのか。読むのにどれくらいかか… |
+| 51 | 7 | 319–319 | 303–303 | +1/−1 | residual | 画像は何でも構いません。おそらく、レビューしている人物の画像にするのがかなり普通でしょう。もしかすると、このテーマはパンケーキによって作られたのかもしれま… |
+| 52 | 7 | 321–321 | 305–305 | +1/−1 | residual | デスクトップでは、このヘッダーの三つのセクションはすべて一列に並びます。一方、モバイルでは、タイトルが単独で一行を取り、情報セクションと画像が次の行に置か… |
+| 53 | 7 | 323–323 | 307–307 | +1/−1 | residual | 四つのタイトル小区画を含め、上のヘッダーを作る方法は以下で確認できます。なお、タイトルセクションの一つを省略しても構いません。その場合、そこには隙間が残り… |
+| 54 | 7 | 330–330 | 314–314 | +1/−1 | residual | 好きな |
+| 55 | 7 | 333–333 | 317–317 | +1/−1 | residual | @@**どんな**@@ |
+| 56 | 7 | 336–336 | 320–320 | +1/−1 | residual | 文字 |
+| 57 | 7 | 339–339 | 323–323 | +1/−1 | residual | @@//でも//@@。 |
+| 58 | 7 | 344–346 | 328–330 | +3/−3 | residual | レビューについての紹介文です。 |
+| 59 | 8 | 356–356 | 340–340 | +1/−1 | residual | このヘッダーとタイトルレイアウトを使うと、いくつか問題があることに注意してください。 |
+| 60 | 8 | 358–359 | 342–343 | +2/−2 | residual | * タイトルの長さ、または四つへの分け方には注意が必要です。長すぎると、タイトルセクションの一つが次の行へ折り返され、読みづらくなる可能性があります。おお… |
+| 61 | 8 | 361–361 | 345–345 | +1/−1 | residual | 奇妙なタイトルグリッドも、情報セクションも、画像も、使う必要はありません。好きなように追加・削除できます。{{.inkblot-header}}クラスを使… |
+| 62 | 8 | 363–363 | 347–347 | +1/−1 | residual | タイトルグリッドなし、情報なし、画像なし、{{.inkblot-header}}なしの例を示します。 |
+| 63 | 8 | 366–366 | 350–350 | +1/−1 | residual | //ただの// **普通の** タイトル。 |
+| 64 | 8 | 371–371 | 355–355 | +1/−1 | residual | @@//ただの// **普通の** タイトル。@@ |
+| 65 | 8 | 377–377 | 361–361 | +1/−1 | residual | ++ では、アンブローズのメニューはどう作るの？ |
+| 66 | 8 | 379–379 | 363–363 | +1/−1 | residual | 要点はこうです。このテーマはアンブローズのレビュー用に設計されているかもしれませんが、アンブローズのメニューは付属しません。 |
+| 67 | 8 | 381–381 | 365–365 | +1/−1 | residual | なぜか？ |
+| 68 | 8 | 383–383 | 367–367 | +1/−1 | residual | 私は、アンブローズ形式を書く楽しさの半分は、自分でメニューを作ることにあると**強く**信じています。アンブローズ形式ごとに新しいメニューデザインを見るの… |
+| 69 | 8 | 385–385 | 369–369 | +1/−1 | residual | もし私がこのテーマにメニューデザインを同梱したら、あなたがそれを使わないなんて嘘を私につかないでください。使うでしょう。//私//だって使います。そして、… |
+| 70 | 8 | 387–387 | 371–371 | +1/−1 | residual | どうしても//本当に//必要なら、別のフォーマットからメニューをコピーして、色を少し調整しても構いません。ただし、そうした場合、私は一つのdownvote… |
+| 71 | 8 | 389–389 | 373–373 | +1/−1 | residual | あなた独自のやり方でスタイル付けしたアンブローズ・レストラン用メニューを追加すると、あなたの記事はアンブローズ・レストランのGoIフォーマットとして認めら… |
+| 72 | 8 | 393–393 | 377–377 | +1/−1 | residual | + ソースコード |
+| 73 | 8 | 395–395 | 379–379 | +1/−1 | residual | よし、私から言うことはこれで全部です。以下がソースコードです。 |
+| 74 | 8 | 397–397 | 381–381 | +1/−1 | residual | [[collapsible show="+ ソースコードを表示"]] |
+| 75 | 8 | — | 388–388 | +1/−0 | supplement | @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;7… |
+| 76 | 8 | 407–407 | 392–392 | +1/−1 | residual | body { font-family: 'Libre Baskerville', 'Noto Sans JP', serif; } |
+| 77 | 9 | 439–439 | 424–424 | +1/−1 | residual | font-family: 'Prata', 'Noto Sans JP', serif; |
+| 78 | 10 | 485–485 | 470–470 | +1/−1 | mechanical | .inkblot-info > p { |
+| 79 | 11 | 660–660 | 645–645 | +1/−1 | residual | div#container-wrap { background: url(https://sigma10-jp-test.wdfiles.com/loca… |
+| 80 | 12 | 674–674 | 659–659 | +1/−1 | residual | font-family: 'Montserrat', 'Noto Sans JP', sans-serif; |
+| 81 | 13 | 691–692 | 676–677 | +2/−2 | residual | background: |
+| 82 | 14 | 779–779 | 764–764 | +1/−1 | mechanical | background-image: |
+| 83 | 15 | 935–935 | 920–920 | +1/−1 | residual | font-family: 'Libre Baskerville', 'Noto Sans JP', serif; |
+| 84 | 15 | 941–941 | 926–926 | +1/−1 | residual | font-family: 'Prata', 'Noto Sans JP', serif; font-size: 3rem; text-align: cen… |
+| 85 | 16 | 998–998 | 983–983 | +1/−1 | residual | font-family: verdana, arial, helvetica, 'Noto Sans JP', sans-serif; |
+| 86 | 17 | — | 1001–1020 | +20/−0 | residual | [[module CSS]] |
 
 ## Full diff
 
 <details>
-<summary>Section 1 — original 1–28 · candidate 1–35 · +18/−11 · residual, supplement</summary>
+<summary>Section 1 — original 1–28 · candidate 1–39 · +20/−9 · residual, supplement</summary>
 
 ```diff
-@@ -1,28 +1,35 @@
+@@ -1,28 +1,39 @@
 -[[iftags +theme]]
 -[[include :scp-wiki:component:croqstyle]]
--[[/iftags]]
--
++[[iftags +テーマ]]
++[[include :scp-jp:component:croqstyle]]
+ [[/iftags]]
+ 
  [[module CSS]]
 -@import url('https://scp-wiki.wdfiles.com/local--code/theme%3Ainkblot/1');
 +@import url('https://sigma10-jp-test.wdfiles.com/local--code/theme%3Ainkblot-jp/2');
@@ -180,10 +182,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 2 — original 30–36 · candidate 37–43 · +1/−1 · residual</summary>
+<summary>Section 2 — original 30–36 · candidate 41–47 · +1/−1 · residual</summary>
 
 ```diff
-@@ -30,7 +37,7 @@
+@@ -30,7 +41,7 @@
  :root {
    --inkblot-accent: coral;
    --header-title: "WALDON STUDIO";
@@ -197,10 +199,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 3 — original 89–176 · candidate 96–176 · +59/−66 · residual</summary>
+<summary>Section 3 — original 89–176 · candidate 100–180 · +59/−66 · residual</summary>
 
 ```diff
-@@ -89,88 +96,81 @@
+@@ -89,88 +100,81 @@
  **Inkblot**
  [[/div]]
  [[div class="title-4"]]
@@ -353,10 +355,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 4 — original 183–271 · candidate 183–251 · +27/−47 · residual</summary>
+<summary>Section 4 — original 183–271 · candidate 187–255 · +27/−47 · residual</summary>
 
 ```diff
-@@ -183,89 +183,69 @@
+@@ -183,89 +187,69 @@
  
  -----
  
@@ -478,10 +480,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 5 — original 278–293 · candidate 258–273 · +4/−4 · residual</summary>
+<summary>Section 5 — original 278–293 · candidate 262–277 · +4/−4 · residual</summary>
 
 ```diff
-@@ -278,16 +258,16 @@
+@@ -278,16 +262,16 @@
  .inkblot-title
  [[/div]]
  [[div class="title-1" style="outline: 5px solid blue;"]]
@@ -507,10 +509,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 6 — original 296–304 · candidate 276–284 · +3/−3 · residual</summary>
+<summary>Section 6 — original 296–304 · candidate 280–288 · +3/−3 · residual</summary>
 
 ```diff
-@@ -296,9 +276,9 @@
+@@ -296,9 +280,9 @@
  .inkblot-info
  [[/div]]
  
@@ -528,10 +530,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 7 — original 306–349 · candidate 286–329 · +13/−13 · residual</summary>
+<summary>Section 7 — original 306–349 · candidate 290–333 · +13/−13 · residual</summary>
 
 ```diff
-@@ -306,44 +286,44 @@
+@@ -306,44 +290,44 @@
  .inkblot-image
  [[/div]]
  
@@ -594,10 +596,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 8 — original 353–410 · candidate 333–391 · +19/−18 · residual, supplement</summary>
+<summary>Section 8 — original 353–410 · candidate 337–395 · +19/−18 · residual, supplement</summary>
 
 ```diff
-@@ -353,58 +333,59 @@
+@@ -353,58 +337,59 @@
  **##var(--c-keyword)|@@[[/div]]@@##**
  [[/div]]
  
@@ -680,10 +682,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 9 — original 436–442 · candidate 417–423 · +1/−1 · residual</summary>
+<summary>Section 9 — original 436–442 · candidate 421–427 · +1/−1 · residual</summary>
 
 ```diff
-@@ -436,7 +417,7 @@
+@@ -436,7 +421,7 @@
  .inkblot-title {
    flex: 1 1 0;
    font-size: min(4rem, 10vw);
@@ -697,10 +699,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 11 — original 657–663 · candidate 638–644 · +1/−1 · residual</summary>
+<summary>Section 11 — original 657–663 · candidate 642–648 · +1/−1 · residual</summary>
 
 ```diff
-@@ -657,7 +638,7 @@
+@@ -657,7 +642,7 @@
  
  /* Replace the header background */
  /* 324px is twice the height of the default header */
@@ -714,10 +716,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 12 — original 671–677 · candidate 652–658 · +1/−1 · residual</summary>
+<summary>Section 12 — original 671–677 · candidate 656–662 · +1/−1 · residual</summary>
 
 ```diff
-@@ -671,7 +652,7 @@
+@@ -671,7 +656,7 @@
  /* Style the new text */
  #header h1 a::before, #header h2::before {
    color: #333;
@@ -731,10 +733,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 13 — original 688–695 · candidate 669–676 · +2/−2 · residual</summary>
+<summary>Section 13 — original 688–695 · candidate 673–680 · +2/−2 · residual</summary>
 
 ```diff
-@@ -688,8 +669,8 @@
+@@ -688,8 +673,8 @@
  #search-top-box { top: 10px; transform: translateY(-7%); }
  #search-top-box-form > input[type=text] { display: none; }
  #search-top-box-form > input[type=submit] {
@@ -750,10 +752,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 15 — original 932–944 · candidate 913–925 · +2/−2 · residual</summary>
+<summary>Section 15 — original 932–944 · candidate 917–929 · +2/−2 · residual</summary>
 
 ```diff
-@@ -932,13 +913,13 @@
+@@ -932,13 +917,13 @@
  
  #page-content h1, #page-content h2, #page-content h3,
  #page-content h4, #page-content h5, #page-content h6 {
@@ -774,10 +776,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 16 — original 995–1001 · candidate 976–982 · +1/−1 · residual</summary>
+<summary>Section 16 — original 995–1001 · candidate 980–986 · +1/−1 · residual</summary>
 
 ```diff
-@@ -995,7 +976,7 @@
+@@ -995,7 +980,7 @@
  
  .licensebox {
    font-size: 0.82rem;
@@ -791,10 +793,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 17 — original 1013–1015 · candidate 994–1016 · +20/−0 · residual</summary>
+<summary>Section 17 — original 1013–1015 · candidate 998–1020 · +20/−0 · residual</summary>
 
 ```diff
-@@ -1013,3 +994,23 @@
+@@ -1013,3 +998,23 @@
  [[/collapsible]]
  
  [[/iftags]]
@@ -826,7 +828,7 @@ adjudicated explanation.
 <summary>Purely mechanical sections (10, 14) — whitespace, host, and branch-token changes only (heuristic)</summary>
 
 ```diff
-@@ -482,7 +463,7 @@
+@@ -482,7 +467,7 @@
    justify-content: space-evenly;
    align-items: center;
  }
@@ -838,7 +840,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -776,7 +757,7 @@
+@@ -776,7 +761,7 @@
  }
  @media (max-width: 767px) {
    #side-bar {

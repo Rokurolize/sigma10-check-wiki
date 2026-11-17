@@ -8,16 +8,16 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 790 |
-| candidate.txt | 775 |
-| Added | +148 |
-| Review-stage comments | 0 of the +148 added lines |
-| Removed | -168 |
-| Hunks | 4 |
+| candidate.txt | 776 |
+| Added | +153 |
+| Review-stage comments | 0 of the +153 added lines |
+| Removed | -172 |
+| Hunks | 6 |
 
 ```diff
 --- original.txt
 +++ candidate.txt
-@@ -1,178 +1,77 @@
+@@ -1,181 +1,81 @@
 -[[iftags +theme]]
 -[[module css]]
 -@import url('https://cdn.scpwiki.com/theme/en/basalt/normalize-min.css');
@@ -259,7 +259,24 @@ with `python3 review/build_review.py`; verify with
  [[code type="css"]]
  @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
-@@ -228,7 +127,7 @@
++@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+ 
+ :root {
+     --basalt-primary-color: 36,35,50;
+@@ -193,9 +93,9 @@
+     --basalt-UI-opacity: 0.6875;
+     --selection-text-color: var(--basalt-overtone);
+ 
+-    --header-font-primary: "Red Hat Display";
+-    --UI-font-primary: "Fira Code";
+-    --mono-font-primary: "Fira Code";
++    --header-font-primary: "Red Hat Display", "Noto Sans JP";
++    --UI-font-primary: "Fira Code", "Noto Sans Mono CJK JP";
++    --mono-font-primary: "Fira Code", "Noto Sans Mono CJK JP";
+ 
+     --header-border-width: 0rem;
+     --header-title: 'SkipOS';
+@@ -228,7 +128,7 @@
      /*----SkipOS-specific variables----*/
  
      --desktop-time: '12:30';
@@ -268,7 +285,7 @@ with `python3 review/build_review.py`; verify with
      --window-radius: 0.875rem;
      --window-shadow: 0 0 0.625rem rgb(var(--basalt-UI-dark-palette),0.5);
      --window-border-width: 0.125rem;
-@@ -284,7 +183,7 @@
+@@ -284,7 +184,7 @@
  }
  #header-extra-div-2 span::before { content: var(--desktop-time); }
  
@@ -277,7 +294,16 @@ with `python3 review/build_review.py`; verify with
      transition: none;
      transform: none;
  }
-@@ -776,15 +675,101 @@
+@@ -652,7 +552,7 @@
+     background-color: rgb(var(--basalt-UI-dark-palette));
+ }
+ .skip_box.terminal::after {
+-    content: "Terminal";
++    content: "端末";
+     font-weight: bold;
+     position: absolute;
+     top: 0;
+@@ -776,15 +676,101 @@
      div.skip_side:is(:hover,:focus-within)::before { opacity: 1; }
  }
  [[/code]]

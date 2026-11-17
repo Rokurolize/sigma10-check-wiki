@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:scpedia-jp — origin EN, population #34 [GOSIGN2-LEDGER (b) row 34]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 38c3e0dc6cee775650bbeda76147a742d3dbefe275f750df06d7acab12c1dda6); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 0ed4133bccf6e7d5412ae4f4870360c19ef1de643bfbf8520b6976331c847801); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 5 errors / 2 warns / 2 infos (hotlink×3, pseudo-ref×2); standing classes dispositioned in register c1 [T1-ROWS row 34; GOSIGN2-LEDGER (b) row 34]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page body empty (tag gate `[[iftags +テーマ]]`, possible stale-cache, not a defect), SCPedia fixed-width EN wordmark clips at ≤768 both engines, notice/sidebar/code overflow, sample credit-modal; T2 sample exit 2 retried once. [RENDER-ROWS-1 (RENDER-D row 34)]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 2 [LOCALIZE-ROWS row 34, source LOCALIZE-B]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 34]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 34]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:scpedia-jp.txt sha256:38c3e0dc6cee775650bbeda76147a742d3dbefe275f750df06d7acab12c1dda6; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit d554544b88a5b14936b0f0e67c10361c79179ad3; candidate file pages/theme:scpedia-jp.txt sha256:0ed4133bccf6e7d5412ae4f4870360c19ef1de643bfbf8520b6976331c847801; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 Status: complete — skeleton by classify_hunks.py 0.1.0; every SLOT in the skeleton is resolved in the sections below and the Appendix.
@@ -191,6 +191,12 @@ Across 45 classified blocks: 23 specific (51.1%), 19 heuristic (42.2%), 3 residu
 ## Per-theme record
 
 LOCALIZE-ROWS row 34 (source LOCALIZE-B) records five items: (a) P5 raisa.png hotlinked from EN storage in two places (display-affecting); (b) P5 fonts.bunny.net Roboto (exception-list violation); (c) P6 missing interwiki-style; (d) P7 no JP face; (e) a fifth item whose text the vendored row truncates at "(e) …", not recoverable from the record in this repo. The ledger (c3) register records, for this theme: P5 DISPOSITIONED (class (ii) / KB-58), P6 FIXED, P7 DISPOSITIONED (recorded without a display-affecting mark), and pattern 2 FIXED via FIX4-REPOINT. The T4 display-affecting count of 2 corresponds to items (a) and (b). T1-ROWS row 34 records exit 1, 5 errors / 2 warns / 2 infos (hotlink×3, pseudo-ref×2). RENDER-ROWS-1 (RENDER-D row 34) records the combined T2/T3 FINDINGS quoted in the Status table. Three prose-vs-bytes discrepancies are recorded: (1) the skeleton's INFO-DEL lead claims the info pair was removed; the pair is retained and repointed (section 1). (2) The FIX-CREDIT-D commit's subject names only the credit normalization; its diff also adds the interwiki-style frame (the P6 fix) and repairs the eigenvector link (sections 2 and 7). (3) The localize row's item (e) is truncated in the vendored record, so this package can neither narrate nor adjudicate it; the ledger's registers, which are complete for this theme, record no fifth item.
+
+### Post-package repairs (REFRESH3-G)
+
+- **FIX-U8, landing `d554544b88a5b14936b0f0e67c10361c79179ad3`** ("pages: U-8 repairs …", 2026-11-17, R/review-scout/FIX-U8.md item 3): the wikibox exhibit image restored verbatim from the original — `[[image https://scp-wiki.wdfiles.com/local--files/estrellayoshte/u.png]]` at refreshed candidate L138, between the exhibit title line (L136) and the horizontal rule (L140), +1 line. The original's wikibox demonstration carries this image (orig L122); the production port dropped it and no canonical version had it (BATCH-U8 `git log -S "u.png"` empty). The EN host is the candidate's established form for this exhibit's assets — the sibling raisa.png stands at L43 (image-block include) and L959 (CSS variable), kept there by the dead-reference wave 4b52123. Checker: error 4 → 5 / warn 0 / info 2 — the single new finding is a class (ii) hotlink on the restored image, the same class the file's two pre-existing raisa.png hotlinks carry, class (i) 0 before and after.
+
+The regenerated stamp reads `Overall: STALE` against the pre-repair verdict, by design; no re-judgement is fabricated and the frozen GOSIGN2 ledger remains the verdict record.
 
 ## Change set outside the two diffed files
 

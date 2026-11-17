@@ -8,9 +8,9 @@ with `python3 review/build_review.py`; verify with
 | | Lines |
 |---|---|
 | original.txt | 412 |
-| candidate.txt | 383 |
-| Added | +35 |
-| Review-stage comments | 0 of the +35 added lines |
+| candidate.txt | 399 |
+| Added | +51 |
+| Review-stage comments | 0 of the +51 added lines |
 | Removed | -64 |
 | Hunks | 5 |
 
@@ -99,7 +99,7 @@ with `python3 review/build_review.py`; verify with
  }
  
  /* -------------- FOOTER -------------- */
-@@ -394,19 +351,33 @@
+@@ -394,19 +351,49 @@
           color: hsl(335, 100%, 85%);
      }
  }
@@ -147,5 +147,21 @@ with `python3 review/build_review.py`; verify with
 +
 +----
 +//出典: https://scp-wiki.wikidot.com/theme:just-girly-things（CC BY-SA 3.0）//
++
++[[include :scp-jp:component:license-box-backend
++|author=stormbreath]]
++
++> **ファイル名:** JGTLOGONEW.png
++> **作者:** [[*user Calibold]]
++> **ライセンス:** CC BY-SA 3.0
++
++> **ファイル名:** tablecloth.png
++> **名前:** tablecloth-greeting-solemnly
++> **作者:** Pixaline
++> **ライセンス:** Public domain
++> **出典:** [https://pixabay.com/vectors/tablecloth-greeting-solemnly-1628237 Pixabay]
++
++[[include :scp-jp:component:license-box-end]]
++
  [[/iftags]]
 ```

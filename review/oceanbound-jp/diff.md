@@ -15,11 +15,11 @@ adjudicated explanation.
 | | Lines |
 |---|---|
 | original.txt | 1633 |
-| candidate.txt | 1634 |
-| Added | +197 |
-| Review-stage comments | 0 of the +197 added lines |
+| candidate.txt | 1639 |
+| Added | +202 |
+| Review-stage comments | 0 of the +202 added lines |
 | Removed | -196 |
-| Changed | 393 |
+| Changed | 398 |
 | Change blocks | 149 |
 | Diff sections (context 3) | 51 |
 
@@ -28,7 +28,7 @@ adjudicated explanation.
 | Auto-class | Blocks | Changed lines |
 |---|---|---|
 | mechanical | 77 | 154 |
-| supplement | 11 | 57 |
+| supplement | 11 | 62 |
 | residual | 61 | 182 |
 
 ## Change-block index
@@ -183,7 +183,7 @@ adjudicated explanation.
 | 146 | 51 | 1613–1616 | 1612–1615 | +4/−4 | residual | > **ファイル名:** Celtic-knot-insquare.svg |
 | 147 | 51 | 1618–1621 | 1617–1620 | +4/−4 | residual | > **ファイル名:** Four-point cusp.svg |
 | 148 | 51 | 1623–1626 | 1622–1625 | +4/−4 | residual | > **ファイル名:** Orkney Islands by Sentinel-2.jpg |
-| 149 | 51 | 1628–1632 | 1627–1633 | +7/−5 | supplement | > **ファイル名:** Mither.jpeg |
+| 149 | 51 | 1628–1632 | 1627–1638 | +12/−5 | supplement | > **ファイル名:** Mither.jpeg |
 
 ## Full diff
 
@@ -561,10 +561,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 51 — original 1596–1633 · candidate 1599–1634 · +26/−28 · residual, supplement</summary>
+<summary>Section 51 — original 1596–1633 · candidate 1599–1639 · +31/−28 · residual, supplement</summary>
 
 ```diff
-@@ -1596,38 +1599,36 @@
+@@ -1596,38 +1599,41 @@
      background-color: rgb(var(--daev-stained-sand));
  }
  [[/code]]
@@ -625,6 +625,11 @@ adjudicated explanation.
 +> **作者:** Mah Ta
 +> **ライセンス:** CC BY 2.0
 +> **ソースリンク:** [https://www.flickr.com/photos/mah-ta/5602042481/in/photostream/ Flickr]
++
++> **ファイル名:** Amazing Sunset of Pheriche
++> **作者:** Babin Dulal
++> **ライセンス:** CC BY-SA 4.0
++> **ソースリンク:** [https://commons.wikimedia.org/wiki/File:Amazing_Sunset_of_Pheriche.jpg Wikimedia Commons]
 +
 +[[include :scp-jp:component:license-box-end]]
 +

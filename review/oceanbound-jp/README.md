@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:oceanbound-jp — origin EN, population #114 [GOSIGN2-LEDGER (b) row 114]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now e902a842323bb9073e6e372a050bafae68d072f0bd3338112f87d46dc048f9b6); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now eead4f0fc8a9c38bacec7673c1ab843d868e8571c6c64823fd2505313c04d815); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 6 errors / 0 warns / 1 info (hotlink×4, pseudo-ref×2); standing classes dispositioned in register c1 [T1-ROWS row 114; GOSIGN2-LEDGER (b) row 114]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page-overflow 340px@320 on page and sample; runtime-hotlink site-theme chain + scp-wiki.wikidot.com; sample credit-modal (preview-form); T3 clean on both pages. [RENDER-ROWS-2 (RENDER-S2-C (EN14))]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 114, source LOCALIZE-S2-B]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 114]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 114]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:oceanbound-jp.txt sha256:e902a842323bb9073e6e372a050bafae68d072f0bd3338112f87d46dc048f9b6; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit d554544b88a5b14936b0f0e67c10361c79179ad3; candidate file pages/theme:oceanbound-jp.txt sha256:eead4f0fc8a9c38bacec7673c1ab843d868e8571c6c64823fd2505313c04d815; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 Status: complete — skeleton by classify_hunks.py 0.1.0; every SLOT in the skeleton is resolved in the sections below and the Appendix.
@@ -195,6 +195,12 @@ Across 149 classified blocks: 109 specific (73.2%), 38 heuristic (25.5%), 2 resi
 ## Per-theme record
 
 LOCALIZE-ROWS row 114 (source LOCALIZE-S2-B) records one display-affecting finding: P5 (items a,b, EN-storage assets including a cross-article image hotlink). The ledger (c3) register dispositions it (class (ii) / KB-58). The same register records pattern 7 as FIXED for this theme via FIX4-LICENSE under KB-04 (font URL grammar, live-probed 400→200); the localize row does not charge P7 separately, because the broken grammar was introduced by the port's own host move and repaired by the wave, a sequence documented in section 4. T1-ROWS row 114 records exit 1, 6 errors / 0 warns / 1 info (hotlink×4, pseudo-ref×2). RENDER-ROWS-2 (RENDER-S2-C (EN14)) records the combined T2/T3 FINDINGS quoted in the Status table. Two prose-vs-bytes discrepancies are recorded: (1) the FIX4-LICENSE commit subject claims license-box furniture restoration for this theme, and the bytes confirm the furniture (both includes) but not the full content, one of six entries missing (section 8); (2) the ledger's pattern-7 entry names the fix KB-04 without mentioning the host move that made the fix necessary, which the diff shows plainly (original bunny.net, candidate googleapis from creation onward). Neither discrepancy changes the verdict; both are recorded so the next reader is not misled by the shorter record.
+
+### Post-package repairs (REFRESH3-G)
+
+- **FIX-U8, landing `d554544b88a5b14936b0f0e67c10361c79179ad3`** ("pages: U-8 repairs …", 2026-11-17, R/review-scout/FIX-U8.md item 1): the sixth license entry restored — "Amazing Sunset of Pheriche" / Babin Dulal / CC BY-SA 4.0 / Wikimedia Commons source (refreshed candidate L1632–1636, after the Mither.jpeg entry and before `license-box-end` at L1637), +5 lines. The original's box has six entries (orig L1627–1631); FIX4-LICENSE (c2a8bee) restored the box furniture around five, and the missing sixth existed in no canonical version (BATCH-U8 `git log -S Pheriche` empty). The discrepancy note above ("one of six entries missing, section 8") is the as-built record; the entry is now present in the recopied candidate. Checker: error 6 / warn 0 / info 1 before and after, finding set identical, class (i) 0.
+
+The regenerated stamp reads `Overall: STALE` against the pre-repair verdict, by design; no re-judgement is fabricated and the frozen GOSIGN2 ledger remains the verdict record.
 
 ## Change set outside the two diffed files
 

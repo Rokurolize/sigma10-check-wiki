@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:skipos-jp — origin EN, population #39 [GOSIGN2-LEDGER (b) row 39]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now c48a03cb49ad988575eea32f8598cd9247439865773586bb458e82cc95bae247); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 824edf347d11bac1982ad37182806a84dadeab74ad94fadac30c8cb7c92be9fb); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 8 errors / 1 warn / 1 info (pseudo-ref×6, hotlink×2); standing classes dispositioned in register c1 [T1-ROWS row 39; GOSIGN2-LEDGER (b) row 39]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — 453/454px@320/375 fixed-width OS-window overflow, double `interwiki-style` include → `priority{$priority}` console error, cdn.jsdelivr.net/fonts.bunny.net/cdn.scpwiki.com direct links, T2 sample no machine verdict. [RENDER-ROWS-1 (RENDER-D2 row 39)]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 39, source LOCALIZE-B]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 39]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 39]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:skipos-jp.txt sha256:c48a03cb49ad988575eea32f8598cd9247439865773586bb458e82cc95bae247; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit f4488f2d2948824238a2d06479f104f4aab0cf5d; candidate file pages/theme:skipos-jp.txt sha256:824edf347d11bac1982ad37182806a84dadeab74ad94fadac30c8cb7c92be9fb; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 Status: complete — skeleton by classify_hunks.py 0.1.0; every SLOT in the skeleton is resolved in the sections below and the Appendix.
@@ -183,6 +183,12 @@ The FIX4 mop-up (379eb44) removed one line from this file: the second of FIX-P4'
 ### Wave attribution in the registers vs the file
 
 The (c3) register credits this theme's P6 to "the frame waves" and its P7 to "the font wave". The file's frames were present from the import (d727e92) — what the waves added was the inner frame's priority (FIX4-IWB). The same FIX4-IWB commit is the "font wave" vehicle, but its font content is the bunny reversion (a pattern-2/KB-17 fix), not a pattern-7 supplement (see the flag above). FIX-P4's subject ("pattern-4 repoint of base-theme CSS imports") likewise does not mention that its diff for this file also normalized the credit translator field (SCP-JP → AI). The registers' outcomes are mostly right; their vehicle names are campaign-level, and this package follows the git record where the two differ.
+
+### Post-package repairs (REFRESH3-G)
+
+- **FIX-U9, landing `f4488f2d2948824238a2d06479f104f4aab0cf5d`** ("pages: skipos delivered channel …", 2026-11-17, R/review-scout/FIX-U9.md item 1): the pattern-7 remedy landed in the delivered channel. The three delivered stacks at refreshed candidate L96–98 now carry the porter's own JP values (`"Noto Sans JP"` in the header stack, `"Noto Sans Mono CJK JP"` in the UI and mono stacks); the delivered string at L555 reads `content: "端末";` (no "Terminal" remains anywhere); and the Noto Sans JP googleapis `@import` was inserted at L78 (HTTP 200, probed once 2026-11-17). "Noto Sans Mono CJK JP" was deliberately not loaded — Google Fonts returns HTTP 400 for it in all three API forms — so the stack names it as the base theme:basalt-jp does (equally unloaded); the inert porter memo (L679–698) was kept whole because it carries a KB-65-dispositioned element and does not duplicate the delivered bytes exactly. The "pattern-7 supplement that never entered the delivery (open flag)" subsection above is the as-built record; the flag is now repaired in the recopied candidate. FIX-U9 item 4 is record-only: the kernel prose link at L21, `[[[theme:bedrock|Bedrock]]]`, belongs to the production-predecessor reference class and was left untouched by the landing. Checker: error 5 / warn 1 / info 1 before and after, finding set identical, class (i) 0.
+
+The regenerated stamp reads `Overall: STALE` against the pre-repair verdict, by design; no re-judgement is fabricated and the frozen GOSIGN2 ledger remains the verdict record.
 
 ## Change set outside the two diffed files
 

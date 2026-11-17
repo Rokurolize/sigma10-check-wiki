@@ -75,6 +75,7 @@ SkipOSは[[[theme:bedrock|Bedrock]]]カーネルをベースにしています�
 [[code type="css"]]
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 
 :root {
     --basalt-primary-color: 36,35,50;
@@ -92,9 +93,9 @@ SkipOSは[[[theme:bedrock|Bedrock]]]カーネルをベースにしています�
     --basalt-UI-opacity: 0.6875;
     --selection-text-color: var(--basalt-overtone);
 
-    --header-font-primary: "Red Hat Display";
-    --UI-font-primary: "Fira Code";
-    --mono-font-primary: "Fira Code";
+    --header-font-primary: "Red Hat Display", "Noto Sans JP";
+    --UI-font-primary: "Fira Code", "Noto Sans Mono CJK JP";
+    --mono-font-primary: "Fira Code", "Noto Sans Mono CJK JP";
 
     --header-border-width: 0rem;
     --header-title: 'SkipOS';
@@ -551,7 +552,7 @@ div.yui-content::before {
     background-color: rgb(var(--basalt-UI-dark-palette));
 }
 .skip_box.terminal::after {
-    content: "Terminal";
+    content: "端末";
     font-weight: bold;
     position: absolute;
     top: 0;

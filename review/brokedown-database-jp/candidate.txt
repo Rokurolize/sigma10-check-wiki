@@ -58,7 +58,7 @@
 |logo-url=url('画像URL')
 ]]
 [[/div]]
-**PS:** 画像をbase64形式に変換してmodule CSSに追加すると、[/fragment:brokedown-database ロゴ用パラメータ]を直接変更できます。ヘッダーロゴの着色を保持でき、後述するロゴ走査線にも使用できます。
+**PS:** 画像をbase64形式に変換してmodule CSSに追加すると、[*https://scp-wiki-cn.wikidot.com/fragment:brokedown-database ロゴ用パラメータ（中国語版）]を直接変更できます。ヘッダーロゴの着色を保持でき、後述するロゴ走査線にも使用できます。
 
 
 
@@ -160,7 +160,7 @@ Wikidotピル
 
 
 [[=]]
-本文フォントはDotted Songti Squareです
+本文フォントはNoto Serif JPです
 {{等幅フォントはZCOOL XiaoWeiです}}
 [[/=]]
 
@@ -266,6 +266,26 @@ __ここに置くと__
 [[/div]]
 
 ------
+
+[[div class="flex-wrap"]]
+
+
+[[div class="flex-cell"]]
+[[module Rate]]
+[[/div]]
+
+[[div class="flex-cell"]]
+[[include :scp-jp:credit:start]]
+
+[[include :scp-jp:credit:end]]
+[[/div]]
+
+[[div class="flex-cell"]]
+[[include :scp-jp:credit:start-standalone]]
+
+[[include :scp-jp:credit:end-standalone]]
+[[/div]]
+[[/div]]
 
 [[div class="scanline-wrap"]]
 [[div class="scanline-cell scanline-text"]]
@@ -494,11 +514,11 @@ __ここに置くと__
 
 
 
-:root:lang(cn){
-         --body-font: 'Dotted Songti Square', 'PT Sans', '等线', sans-serif;
-   --header-font:'Dotted Songti Square',  'ZCOOL XiaoWei', 'Times New Roman', sans-serif;
-   --title-font: 'Dotted Songti Square', 'Times New Roman', '华文中宋',  monospace;
-   --mono-font:'ZCOOL XiaoWei','Dotted Songti Square',  'PT Sans', '微软雅黑', monospace;     
+:root:lang(ja){
+         --body-font: 'Noto Serif JP', 'Noto Sans JP', sans-serif;
+   --header-font:'Noto Serif JP',  'ZCOOL XiaoWei', 'Times New Roman', sans-serif;
+   --title-font: 'Noto Serif JP', 'Times New Roman', monospace;
+   --mono-font:'ZCOOL XiaoWei','Noto Serif JP',  'Noto Sans JP', monospace;     
 
 }
 
@@ -1600,6 +1620,11 @@ table.wiki-content-table td {
     --sidebar-links-text: 255,0,255;
     --swatch-menutxt-general-color:122,145,165;
 }
+
+.flex-wrap{
+   display: flex;
+   justify-content:   space-between;
+}
 [[/code]]
 [[/collapsible]]
 
@@ -1621,6 +1646,8 @@ table.wiki-content-table td {
 > **ライセンス:** SIL Open Font License（Google Fonts から配信）
 
 [[include :scp-jp:component:license-box-end]]
+
+= 本テーマは [[*user etinjat]] が制作し、画面のピクセルドットコードは [*https://scp-wiki-cn.wikidot.com/scp-style-resource 格式资源] に由来します。
 
 [[/iftags]]
 

@@ -15,12 +15,12 @@ adjudicated explanation.
 | | Lines |
 |---|---|
 | original.txt | 697 |
-| candidate.txt | 697 |
+| candidate.txt | 699 |
 | Added | +111 |
 | Review-stage comments | 0 of the +111 added lines |
-| Removed | -111 |
-| Changed | 222 |
-| Change blocks | 94 |
+| Removed | -109 |
+| Changed | 220 |
+| Change blocks | 93 |
 | Diff sections (context 3) | 22 |
 
 ## Changed lines by auto-class (heuristic)
@@ -29,7 +29,7 @@ adjudicated explanation.
 |---|---|---|
 | mechanical | 36 | 70 |
 | supplement | 5 | 25 |
-| residual | 53 | 127 |
+| residual | 52 | 125 |
 
 ## Change-block index
 
@@ -85,50 +85,49 @@ adjudicated explanation.
 | 48 | 2 | 125–125 | 124–124 | +1/−1 | residual | >> そしてこれが、いわゆるインセプションです。 |
 | 49 | 2 | 127–129 | 126–128 | +3/−3 | residual | \|\|~ これは \|\|~ 表です \|\| |
 | 50 | 2 | 131–131 | 130–130 | +1/−1 | residual | + 組み込みの div |
-| 51 | 3 | 149–150 | — | +0/−2 | residual | [[footnoteblock]] |
-| 52 | 3 | 153–153 | 150–150 | +1/−1 | residual | [[collapsible show="+ コードを表示" hide="- コードを閉じる"]] |
-| 53 | 3 | 156–157 | 153–155 | +3/−2 | supplement | @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;7… |
-| 54 | 4 | 167–167 | 165–165 | +1/−1 | mechanical | (blank lines only) |
-| 55 | 5 | 176–176 | 174–174 | +1/−1 | mechanical | (blank lines only) |
-| 56 | 5 | 180–180 | 178–178 | +1/−1 | mechanical | (blank lines only) |
-| 57 | 5 | 184–184 | 182–182 | +1/−1 | mechanical | (blank lines only) |
-| 58 | 5 | 188–188 | 186–186 | +1/−1 | mechanical | (blank lines only) |
-| 59 | 6 | 196–196 | 194–194 | +1/−1 | residual | background: url(https://scp-wiki.wikidot.com/local--files/theme%3Ai57-theme/o… |
-| 60 | 6 | 202–202 | 200–200 | +1/−1 | residual | background: url(https://scp-wiki.wikidot.com/local--files/theme%3Ai57-theme/S… |
-| 61 | 7 | 222–222 | 220–220 | +1/−1 | mechanical | (blank lines only) |
-| 62 | 8 | 234–234 | 232–232 | +1/−1 | mechanical | (blank lines only) |
-| 63 | 8 | 241–241 | 239–239 | +1/−1 | mechanical | (blank lines only) |
-| 64 | 8 | 245–245 | 243–243 | +1/−1 | residual | font-family: 'Play', 'Open Sans', "Noto Sans JP", sans-serif; |
-| 65 | 8 | 248–248 | 246–246 | +1/−1 | mechanical | (blank lines only) |
-| 66 | 9 | 268–268 | 266–266 | +1/−1 | mechanical | (blank lines only) |
-| 67 | 9 | 273–273 | 271–271 | +1/−1 | mechanical | (blank lines only) |
-| 68 | 10 | 299–299 | 297–297 | +1/−1 | mechanical | (blank lines only) |
-| 69 | 10 | 304–304 | 302–302 | +1/−1 | mechanical | (blank lines only) |
-| 70 | 10 | 310–310 | 308–308 | +1/−1 | mechanical | (blank lines only) |
-| 71 | 10 | 317–317 | 315–315 | +1/−1 | mechanical | (blank lines only) |
-| 72 | 11 | 326–326 | 324–324 | +1/−1 | mechanical | (blank lines only) |
-| 73 | 11 | 332–332 | 330–330 | +1/−1 | mechanical | (blank lines only) |
-| 74 | 12 | 350–350 | 348–348 | +1/−1 | mechanical | (blank lines only) |
-| 75 | 12 | 354–354 | 352–352 | +1/−1 | mechanical | (blank lines only) |
-| 76 | 12 | 358–358 | 356–356 | +1/−1 | mechanical | (blank lines only) |
-| 77 | 12 | 362–362 | 360–360 | +1/−1 | mechanical | (blank lines only) |
-| 78 | 13 | 436–436 | 434–434 | +1/−1 | mechanical | (blank lines only) |
-| 79 | 14 | 446–446 | 444–444 | +1/−1 | mechanical | (blank lines only) |
-| 80 | 14 | 452–452 | 450–450 | +1/−1 | mechanical | (blank lines only) |
-| 81 | 14 | 457–457 | 455–455 | +1/−1 | mechanical | (blank lines only) |
-| 82 | 15 | 508–508 | 506–506 | +1/−1 | mechanical | (blank lines only) |
-| 83 | 16 | 516–516 | 514–514 | +1/−1 | mechanical | (blank lines only) |
-| 84 | 16 | 521–521 | 519–519 | +1/−1 | mechanical | (blank lines only) |
-| 85 | 17 | 585–585 | 583–583 | +1/−1 | mechanical | (blank lines only) |
-| 86 | 18 | 594–594 | 592–592 | +1/−1 | mechanical | (blank lines only) |
-| 87 | 18 | 600–600 | 598–598 | +1/−1 | mechanical | (blank lines only) |
-| 88 | 19 | 648–648 | 646–646 | +1/−1 | residual | background-image: url("https://scp-wiki.wikidot.com/local--files/theme%3Ai57-… |
-| 89 | 20 | 657–657 | 655–655 | +1/−1 | residual | background-image: url("https://scp-wiki.wikidot.com/local--files/theme%3Ai57-… |
-| 90 | 21 | 671–671 | 669–669 | +1/−1 | mechanical | (blank lines only) |
-| 91 | 21 | 677–677 | 675–675 | +1/−1 | mechanical | (blank lines only) |
-| 92 | 21 | 684–684 | 682–682 | +1/−1 | mechanical | (blank lines only) |
-| 93 | 22 | — | 694–694 | +1/−0 | mechanical | (blank lines only) |
-| 94 | 22 | — | 696–696 | +1/−0 | mechanical | (blank lines only) |
+| 51 | 3 | 153–153 | 152–152 | +1/−1 | residual | [[collapsible show="+ コードを表示" hide="- コードを閉じる"]] |
+| 52 | 3 | 156–157 | 155–157 | +3/−2 | supplement | @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;7… |
+| 53 | 4 | 167–167 | 167–167 | +1/−1 | mechanical | (blank lines only) |
+| 54 | 5 | 176–176 | 176–176 | +1/−1 | mechanical | (blank lines only) |
+| 55 | 5 | 180–180 | 180–180 | +1/−1 | mechanical | (blank lines only) |
+| 56 | 5 | 184–184 | 184–184 | +1/−1 | mechanical | (blank lines only) |
+| 57 | 5 | 188–188 | 188–188 | +1/−1 | mechanical | (blank lines only) |
+| 58 | 6 | 196–196 | 196–196 | +1/−1 | residual | background: url(https://scp-wiki.wikidot.com/local--files/theme%3Ai57-theme/o… |
+| 59 | 6 | 202–202 | 202–202 | +1/−1 | residual | background: url(https://scp-wiki.wikidot.com/local--files/theme%3Ai57-theme/S… |
+| 60 | 7 | 222–222 | 222–222 | +1/−1 | mechanical | (blank lines only) |
+| 61 | 8 | 234–234 | 234–234 | +1/−1 | mechanical | (blank lines only) |
+| 62 | 8 | 241–241 | 241–241 | +1/−1 | mechanical | (blank lines only) |
+| 63 | 8 | 245–245 | 245–245 | +1/−1 | residual | font-family: 'Play', 'Open Sans', "Noto Sans JP", sans-serif; |
+| 64 | 8 | 248–248 | 248–248 | +1/−1 | mechanical | (blank lines only) |
+| 65 | 9 | 268–268 | 268–268 | +1/−1 | mechanical | (blank lines only) |
+| 66 | 9 | 273–273 | 273–273 | +1/−1 | mechanical | (blank lines only) |
+| 67 | 10 | 299–299 | 299–299 | +1/−1 | mechanical | (blank lines only) |
+| 68 | 10 | 304–304 | 304–304 | +1/−1 | mechanical | (blank lines only) |
+| 69 | 10 | 310–310 | 310–310 | +1/−1 | mechanical | (blank lines only) |
+| 70 | 10 | 317–317 | 317–317 | +1/−1 | mechanical | (blank lines only) |
+| 71 | 11 | 326–326 | 326–326 | +1/−1 | mechanical | (blank lines only) |
+| 72 | 11 | 332–332 | 332–332 | +1/−1 | mechanical | (blank lines only) |
+| 73 | 12 | 350–350 | 350–350 | +1/−1 | mechanical | (blank lines only) |
+| 74 | 12 | 354–354 | 354–354 | +1/−1 | mechanical | (blank lines only) |
+| 75 | 12 | 358–358 | 358–358 | +1/−1 | mechanical | (blank lines only) |
+| 76 | 12 | 362–362 | 362–362 | +1/−1 | mechanical | (blank lines only) |
+| 77 | 13 | 436–436 | 436–436 | +1/−1 | mechanical | (blank lines only) |
+| 78 | 14 | 446–446 | 446–446 | +1/−1 | mechanical | (blank lines only) |
+| 79 | 14 | 452–452 | 452–452 | +1/−1 | mechanical | (blank lines only) |
+| 80 | 14 | 457–457 | 457–457 | +1/−1 | mechanical | (blank lines only) |
+| 81 | 15 | 508–508 | 508–508 | +1/−1 | mechanical | (blank lines only) |
+| 82 | 16 | 516–516 | 516–516 | +1/−1 | mechanical | (blank lines only) |
+| 83 | 16 | 521–521 | 521–521 | +1/−1 | mechanical | (blank lines only) |
+| 84 | 17 | 585–585 | 585–585 | +1/−1 | mechanical | (blank lines only) |
+| 85 | 18 | 594–594 | 594–594 | +1/−1 | mechanical | (blank lines only) |
+| 86 | 18 | 600–600 | 600–600 | +1/−1 | mechanical | (blank lines only) |
+| 87 | 19 | 648–648 | 648–648 | +1/−1 | residual | background-image: url("https://scp-wiki.wikidot.com/local--files/theme%3Ai57-… |
+| 88 | 20 | 657–657 | 657–657 | +1/−1 | residual | background-image: url("https://scp-wiki.wikidot.com/local--files/theme%3Ai57-… |
+| 89 | 21 | 671–671 | 671–671 | +1/−1 | mechanical | (blank lines only) |
+| 90 | 21 | 677–677 | 677–677 | +1/−1 | mechanical | (blank lines only) |
+| 91 | 21 | 684–684 | 684–684 | +1/−1 | mechanical | (blank lines only) |
+| 92 | 22 | — | 696–696 | +1/−0 | mechanical | (blank lines only) |
+| 93 | 22 | — | 698–698 | +1/−0 | mechanical | (blank lines only) |
 
 ## Full diff
 
@@ -346,15 +345,11 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 3 — original 146–160 · candidate 145–158 · +4/−5 · residual, supplement</summary>
+<summary>Section 3 — original 150–160 · candidate 149–160 · +4/−3 · residual, supplement</summary>
 
 ```diff
-@@ -146,15 +145,14 @@
- > @@[[/div]]@@
- [[/div]]
+@@ -150,11 +149,12 @@
  
--[[footnoteblock]]
--
  ----
  
 -[[collapsible show="+ Show Code" hide="- Hide Code"]]
@@ -374,10 +369,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 6 — original 193–205 · candidate 191–203 · +2/−2 · residual</summary>
+<summary>Section 6 — original 193–205 · candidate 193–205 · +2/−2 · residual</summary>
 
 ```diff
-@@ -193,13 +191,13 @@
+@@ -193,13 +193,13 @@
  /* HEADER BACKGROUND */
  
  div#container-wrap {
@@ -398,10 +393,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 8 — original 231–251 · candidate 229–249 · +4/−4 · mechanical, residual</summary>
+<summary>Section 8 — original 231–251 · candidate 231–251 · +4/−4 · mechanical, residual</summary>
 
 ```diff
-@@ -231,21 +229,21 @@
+@@ -231,21 +231,21 @@
  #login-status ul a {
      color: #000;
  }
@@ -432,10 +427,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 19 — original 645–651 · candidate 643–649 · +1/−1 · residual</summary>
+<summary>Section 19 — original 645–651 · candidate 645–651 · +1/−1 · residual</summary>
 
 ```diff
-@@ -645,7 +643,7 @@
+@@ -645,7 +645,7 @@
  
  .owindow.owait .content {
      padding-bottom: 2rem;
@@ -449,10 +444,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 20 — original 654–660 · candidate 652–658 · +1/−1 · residual</summary>
+<summary>Section 20 — original 654–660 · candidate 654–660 · +1/−1 · residual</summary>
 
 ```diff
-@@ -654,7 +652,7 @@
+@@ -654,7 +654,7 @@
  
  .owindow.osuccess .content {
      padding-bottom: 2rem;
@@ -469,7 +464,7 @@ adjudicated explanation.
 <summary>Purely mechanical sections (4, 5, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 21, 22) — whitespace, host, and branch-token changes only (heuristic)</summary>
 
 ```diff
-@@ -164,7 +162,7 @@
+@@ -164,7 +164,7 @@
      Ported to EN, edited and shinied by ROUNDERHOUSE
      Updated in 2023 by Dc_Yerko
  */
@@ -481,7 +476,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -173,19 +171,19 @@
+@@ -173,19 +173,19 @@
  }
  
  /* LINKS */
@@ -508,7 +503,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -219,7 +217,7 @@
+@@ -219,7 +219,7 @@
  }
  
  /* LOGIN AND MY ACCOUNT */
@@ -520,7 +515,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -265,12 +263,12 @@
+@@ -265,12 +265,12 @@
  }
  
  /* HEADER SUBTITLE */
@@ -538,7 +533,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -296,25 +294,25 @@
+@@ -296,25 +296,25 @@
      color: #C0C0C0;
      background: transparent;
  }
@@ -571,7 +566,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -323,13 +321,13 @@
+@@ -323,13 +323,13 @@
      font-size: 10px;
      border-top: 1px solid #000000;
  }
@@ -590,7 +585,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -347,19 +345,19 @@
+@@ -347,19 +347,19 @@
  #side-bar a {
      color: #F3CF08;
  } 
@@ -617,7 +612,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -433,7 +431,7 @@
+@@ -433,7 +433,7 @@
      background: #000000; 
      margin-bottom: 15px;
  }
@@ -629,7 +624,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -443,18 +441,18 @@
+@@ -443,18 +443,18 @@
      font-size: 8pt;
      font-weight: bold;
  }
@@ -654,7 +649,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -505,7 +503,7 @@
+@@ -505,7 +505,7 @@
  #page-content .rate-box-with-credit-button .creditButton p a {
      border-left-color: #ffffff;
  }
@@ -666,7 +661,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -513,12 +511,12 @@
+@@ -513,12 +513,12 @@
  #page-content .rate-box-with-credit-button .fa-info:hover {
       color: #f7bb25;
  }
@@ -684,7 +679,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -582,7 +580,7 @@
+@@ -582,7 +582,7 @@
      border: 0px solid #000000;
      border-bottom: 2px solid #ddbc05;
  }
@@ -696,7 +691,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -591,13 +589,13 @@
+@@ -591,13 +591,13 @@
      border-left: 0;
      border-right: 0;
  }
@@ -715,7 +710,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -668,20 +666,20 @@
+@@ -668,20 +668,20 @@
  }
  
  /* FOOTER */
@@ -742,7 +737,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -693,5 +691,7 @@
+@@ -693,5 +693,7 @@
  /* yo también */
  /* yo = dc_yerko */
  [[/code]]

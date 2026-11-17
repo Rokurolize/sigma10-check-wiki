@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:ouroborous-theme-jp — origin EN, population #25 [GOSIGN2-LEDGER (b) row 25]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 847b7bd5dd34c1c730b258e493964bc30cde09c5b6010df2df963de0ada2220e); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 78b901e3ffe456acadf39f607b6f1a1463b718b90c8888efb4b9fc41a34b9f12); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 3 errors / 2 warns / 6 infos (pseudo-ref×3); standing classes dispositioned in register c1 [T1-ROWS row 25; GOSIGN2-LEDGER (b) row 25]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — 320px page overflow, notice left-clip, header logo clipped, WebKit CC "S", dark-on-dark table/title, sample credit-modal + overflow 337–419px. [RENDER-ROWS-1 (RENDER-C row 25)]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 0 [LOCALIZE-ROWS row 25, source LOCALIZE-B]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 25]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 25]
-- Computed against: canonical commit 358955eb4013dac2399c414ba8ec2a6e416a3c11; candidate file pages/theme:ouroborous-theme-jp.txt sha256:847b7bd5dd34c1c730b258e493964bc30cde09c5b6010df2df963de0ada2220e; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit d554544b88a5b14936b0f0e67c10361c79179ad3; candidate file pages/theme:ouroborous-theme-jp.txt sha256:78b901e3ffe456acadf39f607b6f1a1463b718b90c8888efb4b9fc41a34b9f12; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 Status: complete — skeleton by classify_hunks.py 0.1.0; every SLOT in the skeleton is resolved in the sections below and the Appendix.
@@ -193,6 +193,12 @@ Across 170 classified blocks: 148 specific (87.1%), 20 heuristic (11.8%), 2 resi
 ## Per-theme record
 
 LOCALIZE-ROWS row 25 (source LOCALIZE-B) records one finding: pattern 3, the credit block's missing 翻訳責任者/翻訳年/著作権者 label/元記事リンク, with 0 display-affecting findings, no unincorporated display-affecting upstream update, and no T5 residue. The ledger (c3) register records pattern 3 FIXED (waves 8dcac74 and b816e10, section 1). T1-ROWS row 25 records exit 1, 3 errors / 2 warns / 6 infos (pseudo-ref×3). RENDER-ROWS-1 (RENDER-C row 25) records the combined T2/T3 FINDINGS quoted in the Status table. Three prose-vs-bytes discrepancies are recorded: (1) the classifier skeleton flags the bare [[iftags]] head gate as a KB-08 anomaly; the bytes show the population-standard BHL base-include form, adjudicated in section 2. (2) The reconcile commit ffad285 ("ouroborous: reconcile") escapes the tail [[footnoteblock]] into literal text (@@[[footnoteblock]]@@, candidate L1037); no prose record states its reason. The change is inert on current bytes because neither side uses [[footnote]] anywhere (grep count 0 in both files), so no footnote rendering is lost; it is narrated here because the wave's subject does not say what it did. (3) The Typekit import drop (section 4) appears in no register at all; the production port made it, the registers' silence about it is a gap in the record, and this package is its first documentation.
+
+### Post-package repairs (REFRESH3-G)
+
+- **FIX-U8, landing `d554544b88a5b14936b0f0e67c10361c79179ad3`** ("pages: U-8 repairs …", 2026-11-17, R/review-scout/FIX-U8.md item 2): the original's Typekit import restored as the first line inside the delivered code block — `@import url("https://use.typekit.net/mst2dnj.css");` at refreshed candidate L188, immediately after `[[code type="css"]]` at L187, +1 line. The original's delivered block opens with this import (orig L176); it loads `korolev-condensed` / `korolev`, named by `--header-font` and `--title-font` (refreshed candidate L209 / L210), and the drop was inherited from the production port (no canonical version ever had it). Probe once, 2026-11-17: HTTP 200, text/css. The discrepancy note above (item 3, "Typekit import drop appears in no register") is the as-built record; the import is now present in the recopied candidate. Checker: error 3 → 4 / warn 2 / info 6 — the single new finding is a class (ii) hotlink on the restored external font load, the same family as 07k's restored @font-face loads (FIX-07K), not a class (i) error.
+
+The regenerated stamp reads `Overall: STALE` against the pre-repair verdict, by design; no re-judgement is fabricated and the frozen GOSIGN2 ledger remains the verdict record.
 
 ## Change set outside the two diffed files
 

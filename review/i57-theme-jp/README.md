@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:i57-theme-jp — origin EN, population #100 [GOSIGN2-LEDGER (b) row 100]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now d400dac38d6d650a01b7659b7fb2c33c4903c1e7233b1a087e1aca18e3e7dcd5); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 84273331fde99d48b134b4c8f401eb2ecece9fe823f0cbcd2d2ac1108ed28459); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 8 errors / 0 warns / 1 info (hotlink×7, pseudo-ref×1); standing classes dispositioned in register c1 [T1-ROWS row 90; GOSIGN2-LEDGER (b) row 100]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — credit-modal title white-on-light-gray (contrast 1.61); chromium/webkit disagree on 翻訳責任者 = possible stale-cache/page-state (noted); theme header wordmark overprints logo + search at ≤375, `.open-menu` overlaps body. [RENDER-ROWS-1 (RENDER-S2-B)]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 2 [LOCALIZE-ROWS row 100, source LOCALIZE-S2-B]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 100]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 100]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:i57-theme-jp.txt sha256:d400dac38d6d650a01b7659b7fb2c33c4903c1e7233b1a087e1aca18e3e7dcd5; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 1e34c0b668faf170da8af14c127251af3e35fa26; candidate file pages/theme:i57-theme-jp.txt sha256:84273331fde99d48b134b4c8f401eb2ecece9fe823f0cbcd2d2ac1108ed28459; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 Status: complete — skeleton by classify_hunks.py 0.1.0; every SLOT in the skeleton is resolved in the sections below and the Appendix.
@@ -220,6 +220,12 @@ Defect flag recorded by this review (not edited): the missing `[[footnoteblock]]
 Observations recorded without a flag: the head delivery lines' form deviations (unterminated @import at cand L2, spaced theme= parameter at cand L6) match the porter signature on magpie-swoops' tail lines in this batch; the render record shows both themes styled, so the deviations are noted for the coordinator's population-level judgement rather than flagged per theme.
 
 Discrepancies between record and bytes: (i) the ledger's (c3) line charges P5 and P9 and nothing else, yet the file also contains a P7 supplement (Noto import + stack) and the pattern-2 host form, both from creation and both benign — the silence is the record's, not the file's (the same shape as magpie-swoops in this batch). (ii) The (c1) pattern-2 preamble's fixed list does not name this theme although its candidate never carried the bunny lines; read with the creation evidence, the preamble's "otherwise DISPOSITIONED" clause never had a bunny line to attach to here — the T1 hotlink ×7 is fully accounted for by the P5 asset lines. (iii) The classifier's two EXHIBIT-RESTRUCTURE primaries are repoint false-fires, adjudicated in the Class summary.
+
+### Post-package repairs (REFRESH3-G)
+
+- **FIX-U7, landing `1e34c0b668faf170da8af14c127251af3e35fa26`** ("pages: U-7 repairs …", 2026-11-17, R/review-scout/FIX-U7.md item 3): `[[footnoteblock]]` restored at the position corresponding to the original's (orig L149) — refreshed candidate L148, between the "solid" div example's `[[/div]]` and the `----` at L150, +2 lines. The original closes its documentation body with the block, and the candidate's body demonstrates two footnotes on one line (cand L30), so the drop was a creation defect. The "Defect flag recorded by this review (not edited)" paragraph above is the as-built record; the block is now present in the recopied candidate. Checker: error 8 / warn 0 / info 1 before and after, class (i) 0.
+
+The regenerated stamp reads `Overall: STALE` against the pre-repair verdict, by design; no re-judgement is fabricated and the frozen GOSIGN2 ledger remains the verdict record.
 
 ## Change set outside the two diffed files
 

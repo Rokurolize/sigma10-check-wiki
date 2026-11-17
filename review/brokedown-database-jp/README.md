@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:brokedown-database-jp — origin CN, population #170 [GOSIGN2-LEDGER (b) row 170]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 8191e19176b08f8af4bb46dfad10307d1d843d2f0f8a22c1da0e62344f831fbe); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 921a7325b13ea6ca57c292a93e23c8b40b8a3e837a60c332d9bcbb062c2fd536); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 5 errors / 2 warns / 1 info (pseudo-ref×5); standing classes dispositioned in register c1 [T1-ROWS row 148; GOSIGN2-LEDGER (b) row 170]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page page-overflow 328px@320 chromium (8px), runtime-hotlink site-theme chain only; sample credit-modal (preview-form), page-overflow 341px@320 + 389px@375 chromium and 416px@320 + 419px@375 webkit (cross-cutting static-credit), runtime-hotlink site-theme chain + sample font host; T3 complete in the final report (pending in the partial) and clean on both pages (sidebar collapsed at PC width with left-edge toggle tab present, mobile hamburger opens in both engines, cyan-on-black readable); missing decorative logos = deferred assets. [RENDER-ROWS-RERUN16 (CN2) — supersedes the RENDER-ROWS-2 row for this theme, rule S1]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 2 [LOCALIZE-ROWS row 169, source LOCALIZE-S2-D]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 169]
 - FIX5 re-judgement: item 46 (class I) FIXED — FIX5-STRUCTB §1, commit 435a6bb: no-animation gated block (L1631-1680), my-logo gated block (L1683-1704) and the photosensitivity warning block (L248-266) restored from original L1623-1698 / L1152-1170; spot-verified for this supplement [GOSIGN2-LEDGER-SUPPLEMENT (a) item 46; (c) check 7]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:brokedown-database-jp.txt sha256:8191e19176b08f8af4bb46dfad10307d1d843d2f0f8a22c1da0e62344f831fbe; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 8dede754299cda919702130296e7c2131e4e6fce; candidate file pages/theme:brokedown-database-jp.txt sha256:921a7325b13ea6ca57c292a93e23c8b40b8a3e837a60c332d9bcbb062c2fd536; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status
@@ -148,6 +148,17 @@ FIX5-STRUCTB (commit 435a6bb) restored all three from the original, translated, 
 ### The usage example's posting name
 
 The usage exhibits at candidate L44–60 name this candidate by its posting name, `:scp-jp:theme:brokedown-database-jp`, in split-markup include form. The usage-example population sweep is the last change to this file (canonical commit b5cb724); the stamp reads STALE against the pre-sweep verdict, by design, and no re-judgement is claimed for the changed bytes.
+
+### Post-package repairs (REFRESH3-G)
+
+- **FIX-BROKEDOWN, landing `8dede754299cda919702130296e7c2131e4e6fce`** ("pages: brokedown-database attribution, exhibit row, fragment link, fonts", 2026-11-17, R/review-scout/FIX-BROKEDOWN.md; 1704 → 1731 lines, +34/−7). Four items, all confined to this candidate:
+  - **BD-1 — pixel-code attribution restored.** The line `= 本テーマは [[*user etinjat]] が制作し、画面のピクセルドットコードは [*https://scp-wiki-cn.wikidot.com/scp-style-resource 格式资源] に由来します。` stands at refreshed candidate L1650, the end of the gated documentation body after the license box (`license-box-end` at L1648), keeping the original's centered standalone form. The code-exhibit's banner copy is untouched.
+  - **BD-2 — exhibit flex row and its layout rule restored.** The `.flex-wrap` row of three `.flex-cell`s stands at L270–289 (bare `[[module Rate]]` at L274, the `credit:start`/`end` exhibit, and the `credit:start-standalone`/`end-standalone` exhibit, the credit includes in the candidate-side `:scp-jp:` form); its `.flex-wrap{display:flex;justify-content:space-between;}` rule is restored verbatim at L1624–1627, immediately before `[[/code]]`. The bare Rate is the original's labelled exhibit specimen, not a head-zone duplicate; the new `double-rate` info adjudicates itself (見本として並べているなら可).
+  - **BD-3 — fragment link repointed.** The PS line at L61 now absolutizes `fragment:brokedown-database` to `https://scp-wiki-cn.wikidot.com/fragment:brokedown-database` with the （中国語版） annotation. The fragment was not ported: it is unincluded by the original and its data already ships in the theme's own code (ruling 4 covers needed components).
+  - **BD-4 — fonts aligned to the loads.** `:root:lang(cn)` → `:root:lang(ja)` at L517, with the four stacks at L518–521 now naming Noto Serif JP / Noto Sans JP in place of the CN faces; specimen prose at L163 reads 「本文フォントはNoto Serif JPです」. Every loaded family is named and every named family is loaded, a system face, or generic.
+The "FIX5 restoration" subsection's note that the flex row and pixel-code attribution were "flagged in sections 8 and 1" is the as-built record; both are now repaired in the recopied candidate. Checker: error 5 / warn 2 / info 1 → error 5 / warn 2 / info 2, all errors pseudo-ref, class (i) 0 before and after.
+
+The regenerated stamp reads `Overall: STALE` against the pre-repair verdict, by design; no re-judgement is fabricated and the frozen GOSIGN2 ledger remains the verdict record.
 
 ## Change set outside the two diffed files
 

@@ -35,7 +35,7 @@ adjudicated explanation.
 
 | # | Section | Original | Candidate | +/− | Auto-class | Gist |
 |---|---|---|---|---|---|---|
-| 1 | 1 | 1–4 | 1–9 | +9/−4 | supplement | [[iftags]] |
+| 1 | 1 | 1–4 | 1–9 | +9/−4 | supplement | [[iftags +テーマ]] |
 | 2 | 1 | 7–7 | 12–12 | +1/−1 | supplement | [[include :scp-jp:component:interwiki-style |
 | 3 | 1 | 9–9 | 14–14 | +1/−1 | residual | \| theme=https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css |
 | 4 | 1 | 12–12 | 17–17 | +1/−1 | supplement | [[include :scp-jp:component:interwiki-style |
@@ -179,7 +179,7 @@ adjudicated explanation.
 -[[module CSS]]
 -@import url("https://cdn.scpwiki.com/theme/en/black-highlighter/css/min/normalize.min.css");
 -@import url("https://cdn.scpwiki.com/theme/en/black-highlighter/css/min/black-highlighter.min.css");
-+[[iftags]]
++[[iftags +テーマ]]
 +[[include :scp-jp:theme:black-highlighter-theme]]
 +[[/iftags]]
 +

@@ -3,7 +3,8 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:just-girly-things-jp — origin EN, population #19 [GOSIGN2-LEDGER (b) row 19]
-- Overall: PASS — passed at the ledger determination; no OPEN items [GOSIGN2-LEDGER (b) row 19]
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 0efcc6cebc542e4d17a481203ec88cdb55ca5a63bd9d3029aa0d01c4e2408a16); verdict not carried over, re-judgement required
+> verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 3 errors / 1 warn / 1 info (hotlink×3); standing classes dispositioned in register c1 [T1-ROWS row 19; GOSIGN2-LEDGER (b) row 19]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — T2 page incomplete (exit 2→exit 1 baseline, no summary), sample credit-modal + 768px overflow 884px + cdn.jsdelivr.net/fonts.bunny.net direct links. [RENDER-ROWS-1 (RENDER-B row 19)]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row (the row records inconclusive runs, carried verbatim above) [RENDER-ROWS-1 row]
@@ -11,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 20, source LOCALIZE-A]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 20]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 19]
-- Computed against: canonical commit 1869877ffdcd33cb214b8dc421fb39e3de8d7e8d; candidate file pages/theme:just-girly-things-jp.txt sha256:da9fe442f0255d016344965687c10c8a5096caf14a5c913521b7e621db9c6d8b; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 1e34c0b668faf170da8af14c127251af3e35fa26; candidate file pages/theme:just-girly-things-jp.txt sha256:0efcc6cebc542e4d17a481203ec88cdb55ca5a63bd9d3029aa0d01c4e2408a16; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 Status: complete — skeleton by classify_hunks.py 0.1.0; every SLOT in the skeleton is resolved in the sections below and the Appendix.
@@ -175,6 +176,12 @@ FIX-CREDIT-D's subject names one act — "translator attribution normalization o
 ### The license entries (pattern 3's second half)
 
 The LOCALIZE row's pattern-3 charge has two halves: "§3 fields mostly missing" and "license attribution dropped". The credit waves closed the first half verifiably (the eight fields stand at cand L362–369; the checker's credit-missing-fields count is 0 population-wide). The second half was never acted on: the original's license box (orig L399–411) credited the logo image to the box's "Calibold" (the banner's spelling is "CalibriBold", orig L55 — the original disagrees with itself, and the candidate's carried banner keeps "CalibriBold", cand L12) and the tablecloth image to Pixaline under Public domain with its Pixabay source. No JP license box (license-box-backend/end) exists in the candidate, so the Pixaline attribution and both formal license entries are simply absent. This package flags the item for the coordinator with the remedy form the campaign uses elsewhere: a JP license box carrying the two entries, placed where the original's box stood (after the CSS, in the gated zone). The PASS determination is the ledger's and is not re-opened here; the flag is about the record's completeness, in the same shape as the aces-and-eights holder-field flag in batch U-1.
+
+### Post-package repairs (REFRESH3-G)
+
+- **FIX-U7, landing `1e34c0b668faf170da8af14c127251af3e35fa26`** ("pages: U-7 repairs …", 2026-11-17, R/review-scout/FIX-U7.md item 4): the JP license box created at the candidate's tail inside its +テーマ gate — `component:license-box-backend` with `|author=stormbreath` (refreshed candidate L384–385), two per-file entries (JGTLOGONEW.png / `[[*user Calibold]]` / CC BY-SA 3.0 at L387–389; tablecloth.png / 名前 tablecloth-greeting-solemnly / Pixaline / Public domain / Pixabay source at L391–395), closed by `component:license-box-end` at L397, +16 lines. The original's box (orig L399–411) carried both entries; the drop was never charged. The "The license entries (pattern 3's second half)" subsection above is the as-built record that flagged the absent box; the box is now present in the recopied candidate. The banner's "CalibriBold" at cand L12 remains the original's own inconsistency and was not propagated into the license entry. Checker: error 2 / warn 0 / info 1 before and after, finding set identical, class (i) 0.
+
+The regenerated stamp reads `Overall: STALE` against the pre-repair verdict, by design; no re-judgement is fabricated and the frozen GOSIGN2 ledger remains the verdict record.
 
 ## Change set outside the two diffed files
 

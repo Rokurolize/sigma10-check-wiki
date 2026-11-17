@@ -15,86 +15,80 @@ adjudicated explanation.
 | | Lines |
 |---|---|
 | original.txt | 1705 |
-| candidate.txt | 1704 |
-| Added | +534 |
-| Review-stage comments | 0 of the +534 added lines |
-| Removed | -535 |
-| Changed | 1069 |
-| Change blocks | 51 |
+| candidate.txt | 1731 |
+| Added | +570 |
+| Review-stage comments | 0 of the +570 added lines |
+| Removed | -544 |
+| Changed | 1114 |
+| Change blocks | 45 |
 | Diff sections (context 3) | 15 |
 
 ## Changed lines by auto-class (heuristic)
 
 | Auto-class | Blocks | Changed lines |
 |---|---|---|
-| mechanical | 31 | 71 |
+| mechanical | 30 | 70 |
 | translation | 2 | 4 |
-| supplement | 4 | 490 |
-| residual | 14 | 504 |
+| supplement | 2 | 523 |
+| residual | 11 | 517 |
 
 ## Change-block index
 
 | # | Section | Original | Candidate | +/− | Auto-class | Gist |
 |---|---|---|---|---|---|---|
-| 1 | 1 | 1–3 | 1–478 | +478/−3 | supplement | [[include :scp-jp:theme:black-highlighter-theme]] |
-| 2 | 2 | 17–18 | — | +0/−2 | residual | @import url("https://etinjat.wikidot.com/component:collapsible-sidebar/code/1… |
-| 3 | 2 | 20–20 | 493–494 | +2/−1 | residual | @import url('https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&amp;amp;a… |
-| 4 | 3 | 123–123 | 597–597 | +1/−1 | mechanical | (blank lines only) |
-| 5 | 3 | 125–126 | 599–600 | +2/−2 | mechanical | (blank lines only) |
-| 6 | 4 | 208–208 | 682–682 | +1/−1 | mechanical | (blank lines only) |
-| 7 | 4 | 213–213 | 687–687 | +1/−1 | mechanical | (blank lines only) |
-| 8 | 4 | 217–217 | 691–691 | +1/−1 | mechanical | (blank lines only) |
-| 9 | 4 | 221–222 | 695–696 | +2/−2 | mechanical | (blank lines only) |
-| 10 | 4 | 226–226 | 700–700 | +1/−1 | mechanical | (blank lines only) |
-| 11 | 4 | 228–228 | 702–702 | +1/−1 | mechanical | (blank lines only) |
-| 12 | 5 | 261–261 | 735–735 | +1/−1 | mechanical | (blank lines only) |
-| 13 | 5 | 265–266 | 739–740 | +2/−2 | mechanical | (blank lines only) |
-| 14 | 5 | 272–273 | 746–747 | +2/−2 | mechanical | (blank lines only) |
-| 15 | 5 | 278–278 | 752–752 | +1/−1 | mechanical | (blank lines only) |
-| 16 | 5 | 283–283 | 757–757 | +1/−1 | mechanical | (blank lines only) |
-| 17 | 5 | 286–286 | 760–760 | +1/−1 | mechanical | (blank lines only) |
-| 18 | 5 | 292–292 | 766–766 | +1/−1 | mechanical | (blank lines only) |
-| 19 | 5 | 294–295 | 768–769 | +2/−2 | mechanical | (blank lines only) |
-| 20 | 5 | 299–299 | 773–773 | +1/−1 | mechanical | (blank lines only) |
-| 21 | 5 | 304–304 | 778–778 | +1/−1 | mechanical | (blank lines only) |
-| 22 | 5 | 309–309 | 783–783 | +1/−1 | residual | --icon-scp: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abro… |
-| 23 | 5 | 311–311 | 785–785 | +1/−1 | mechanical | (blank lines only) |
-| 24 | 6 | 609–609 | 1083–1083 | +1/−1 | mechanical | (blank lines only) |
-| 25 | 6 | 613–613 | 1087–1087 | +1/−1 | mechanical | (blank lines only) |
-| 26 | 6 | 618–618 | 1092–1092 | +1/−1 | mechanical | (blank lines only) |
-| 27 | 7 | 894–894 | 1368–1368 | +1/−1 | mechanical | (blank lines only) |
-| 28 | 7 | 900–900 | 1374–1374 | +1/−1 | mechanical | (blank lines only) |
-| 29 | 7 | 906–906 | 1380–1380 | +1/−1 | mechanical | (blank lines only) |
-| 30 | 8 | 914–914 | 1388–1388 | +1/−1 | mechanical | (blank lines only) |
-| 31 | 8 | 919–919 | 1393–1393 | +1/−1 | mechanical | (blank lines only) |
-| 32 | 9 | 971–971 | 1445–1445 | +1/−1 | mechanical | (blank lines only) |
-| 33 | 9 | 977–977 | 1451–1451 | +1/−1 | mechanical | (blank lines only) |
-| 34 | 10 | 1116–1124 | 1590–1590 | +1/−9 | residual | /* ===== brokedown-database: code file 2 (language-box colours) ===== */ |
-| 35 | 11 | 1137–1137 | — | +0/−1 | mechanical | (blank lines only) |
-| 36 | 11 | 1139–1143 | — | +0/−5 | residual | [!------------------------------- |
-| 37 | 11 | — | 1606–1607 | +2/−0 | supplement | [[include :scp-jp:component:license-box-backend |
-| 38 | 11 | — | 1609–1611 | +3/−0 | residual | > **ファイル名:** logo-scp.svg |
-| 39 | 11 | — | 1613–1615 | +3/−0 | residual | > **ファイル名:** img-wikidown.png |
-| 40 | 11 | 1149–1149 | 1617–1618 | +2/−1 | supplement | > **コンポーネント:** etinjat Wiki の component:collapsible-sidebar / component:cente… |
-| 41 | 11 | — | 1620–1621 | +2/−0 | residual | > **フォント:** ZCOOL XiaoWei / Noto Sans・Serif JP |
-| 42 | 11 | 1152–1154 | 1623–1623 | +1/−3 | supplement | [[include :scp-jp:component:license-box-end]] |
-| 43 | 11 | 1156–1606 | — | +0/−451 | residual | [[size 260%]]**警 告**[[/size]] |
-| 44 | 11 | 1610–1611 | 1628–1628 | +1/−2 | residual | （以下は原語版 pages/theme:brokedown-database.txt L1623–1698 の実装ブロックを日本語化して復元したもの。使用… |
-| 45 | 11 | 1613–1621 | — | +0/−9 | residual | [[include :etinjat:typeface-cn |
-| 46 | 11 | 1627–1627 | 1635–1635 | +1/−1 | translation | アニメーション停止 |
-| 47 | 12 | 1641–1641 | 1649–1649 | +1/−1 | residual | /* ------------- 背景とロゴ -------------------*/ |
-| 48 | 13 | 1654–1654 | 1662–1662 | +1/−1 | translation | /* ------------- ヘッダータイトル -------------------*/ |
-| 49 | 14 | 1675–1676 | — | +0/−2 | mechanical | (blank lines only) |
-| 50 | 14 | 1681–1681 | 1687–1687 | +1/−1 | residual | ロゴ変更 |
-| 51 | 15 | 1699–1705 | — | +0/−7 | residual | [[include :scp-wiki-cn:component:interwiki-style |
+| 1 | 1 | 1–3 | 1–498 | +498/−3 | supplement | [[include :scp-jp:theme:black-highlighter-theme]] |
+| 2 | 2 | 17–20 | — | +0/−4 | residual | @import url("https://etinjat.wikidot.com/component:collapsible-sidebar/code/1… |
+| 3 | 2 | 23–27 | 514–521 | +8/−5 | residual | :root:lang(ja){ |
+| 4 | 3 | 123–123 | 617–617 | +1/−1 | mechanical | (blank lines only) |
+| 5 | 3 | 125–126 | 619–620 | +2/−2 | mechanical | (blank lines only) |
+| 6 | 4 | 208–208 | 702–702 | +1/−1 | mechanical | (blank lines only) |
+| 7 | 4 | 213–213 | 707–707 | +1/−1 | mechanical | (blank lines only) |
+| 8 | 4 | 217–217 | 711–711 | +1/−1 | mechanical | (blank lines only) |
+| 9 | 4 | 221–222 | 715–716 | +2/−2 | mechanical | (blank lines only) |
+| 10 | 4 | 226–226 | 720–720 | +1/−1 | mechanical | (blank lines only) |
+| 11 | 4 | 228–228 | 722–722 | +1/−1 | mechanical | (blank lines only) |
+| 12 | 5 | 261–261 | 755–755 | +1/−1 | mechanical | (blank lines only) |
+| 13 | 5 | 265–266 | 759–760 | +2/−2 | mechanical | (blank lines only) |
+| 14 | 5 | 272–273 | 766–767 | +2/−2 | mechanical | (blank lines only) |
+| 15 | 5 | 278–278 | 772–772 | +1/−1 | mechanical | (blank lines only) |
+| 16 | 5 | 283–283 | 777–777 | +1/−1 | mechanical | (blank lines only) |
+| 17 | 5 | 286–286 | 780–780 | +1/−1 | mechanical | (blank lines only) |
+| 18 | 5 | 292–292 | 786–786 | +1/−1 | mechanical | (blank lines only) |
+| 19 | 5 | 294–295 | 788–789 | +2/−2 | mechanical | (blank lines only) |
+| 20 | 5 | 299–299 | 793–793 | +1/−1 | mechanical | (blank lines only) |
+| 21 | 5 | 304–304 | 798–798 | +1/−1 | mechanical | (blank lines only) |
+| 22 | 5 | 309–309 | 803–803 | +1/−1 | residual | --icon-scp: url('https://sigma10-jp-test.wdfiles.com/local--files/theme%3Abro… |
+| 23 | 5 | 311–311 | 805–805 | +1/−1 | mechanical | (blank lines only) |
+| 24 | 6 | 609–609 | 1103–1103 | +1/−1 | mechanical | (blank lines only) |
+| 25 | 6 | 613–613 | 1107–1107 | +1/−1 | mechanical | (blank lines only) |
+| 26 | 6 | 618–618 | 1112–1112 | +1/−1 | mechanical | (blank lines only) |
+| 27 | 7 | 894–894 | 1388–1388 | +1/−1 | mechanical | (blank lines only) |
+| 28 | 7 | 900–900 | 1394–1394 | +1/−1 | mechanical | (blank lines only) |
+| 29 | 7 | 906–906 | 1400–1400 | +1/−1 | mechanical | (blank lines only) |
+| 30 | 8 | 914–914 | 1408–1408 | +1/−1 | mechanical | (blank lines only) |
+| 31 | 8 | 919–919 | 1413–1413 | +1/−1 | mechanical | (blank lines only) |
+| 32 | 9 | 971–971 | 1465–1465 | +1/−1 | mechanical | (blank lines only) |
+| 33 | 9 | 977–977 | 1471–1471 | +1/−1 | mechanical | (blank lines only) |
+| 34 | 10 | 1116–1124 | 1610–1610 | +1/−9 | residual | /* ===== brokedown-database: code file 2 (language-box colours) ===== */ |
+| 35 | 11 | 1138–1600 | — | +0/−463 | residual | [[/code]] |
+| 36 | 11 | — | 1628–1629 | +2/−0 | residual | [[/code]] |
+| 37 | 11 | 1606–1606 | 1631–1651 | +21/−1 | supplement | [[include :scp-jp:component:license-box-backend |
+| 38 | 11 | 1610–1611 | 1655–1655 | +1/−2 | residual | （以下は原語版 pages/theme:brokedown-database.txt L1623–1698 の実装ブロックを日本語化して復元したもの。使用… |
+| 39 | 11 | 1613–1621 | — | +0/−9 | residual | [[include :etinjat:typeface-cn |
+| 40 | 11 | 1627–1627 | 1662–1662 | +1/−1 | translation | アニメーション停止 |
+| 41 | 12 | 1641–1641 | 1676–1676 | +1/−1 | residual | /* ------------- 背景とロゴ -------------------*/ |
+| 42 | 13 | 1654–1654 | 1689–1689 | +1/−1 | translation | /* ------------- ヘッダータイトル -------------------*/ |
+| 43 | 14 | 1675–1676 | — | +0/−2 | mechanical | (blank lines only) |
+| 44 | 14 | 1681–1681 | 1714–1714 | +1/−1 | residual | ロゴ変更 |
+| 45 | 15 | 1699–1705 | — | +0/−7 | residual | [[include :scp-wiki-cn:component:interwiki-style |
 
 ## Full diff
 
 <details>
-<summary>Section 1 — original 1–6 · candidate 1–481 · +478/−3 · supplement</summary>
+<summary>Section 1 — original 1–6 · candidate 1–501 · +498/−3 · supplement</summary>
 
 ```diff
-@@ -1,6 +1,481 @@
+@@ -1,6 +1,501 @@
 -[[iftags +版式]]
 -[[collapsible show="+ 源代码" hide="- 收起"]]
 -[[code type="CSS"]]
@@ -158,7 +152,7 @@ adjudicated explanation.
 +|logo-url=url('画像URL')
 +]]
 +[[/div]]
-+**PS:** 画像をbase64形式に変換してmodule CSSに追加すると、[/fragment:brokedown-database ロゴ用パラメータ]を直接変更できます。ヘッダーロゴの着色を保持でき、後述するロゴ走査線にも使用できます。
++**PS:** 画像をbase64形式に変換してmodule CSSに追加すると、[*https://scp-wiki-cn.wikidot.com/fragment:brokedown-database ロゴ用パラメータ（中国語版）]を直接変更できます。ヘッダーロゴの着色を保持でき、後述するロゴ走査線にも使用できます。
 +
 +
 +
@@ -260,7 +254,7 @@ adjudicated explanation.
 +
 +
 +[[=]]
-+本文フォントはDotted Songti Squareです
++本文フォントはNoto Serif JPです
 +{{等幅フォントはZCOOL XiaoWeiです}}
 +[[/=]]
 +
@@ -366,6 +360,26 @@ adjudicated explanation.
 +[[/div]]
 +
 +------
++
++[[div class="flex-wrap"]]
++
++
++[[div class="flex-cell"]]
++[[module Rate]]
++[[/div]]
++
++[[div class="flex-cell"]]
++[[include :scp-jp:credit:start]]
++
++[[include :scp-jp:credit:end]]
++[[/div]]
++
++[[div class="flex-cell"]]
++[[include :scp-jp:credit:start-standalone]]
++
++[[include :scp-jp:credit:end-standalone]]
++[[/div]]
++[[/div]]
 +
 +[[div class="scanline-wrap"]]
 +[[div class="scanline-cell scanline-text"]]
@@ -584,31 +598,44 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 2 — original 14–23 · candidate 489–497 · +2/−3 · residual</summary>
+<summary>Section 2 — original 14–30 · candidate 509–524 · +8/−9 · residual</summary>
 
 ```diff
-@@ -14,10 +489,9 @@
+@@ -14,17 +509,16 @@
  */
  
  
 -@import url("https://etinjat.wikidot.com/component:collapsible-sidebar/code/1");
 -@import url("https://etinjat.wikidot.com/component:centered-header-bhl/code/2");
- 
+-
 -@import url('https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&amp;amp;amp;display=swap');
-+
-+
  
  
- :root:lang(cn){
+-:root:lang(cn){
+-         --body-font: 'Dotted Songti Square', 'PT Sans', '等线', sans-serif;
+-   --header-font:'Dotted Songti Square',  'ZCOOL XiaoWei', 'Times New Roman', sans-serif;
+-   --title-font: 'Dotted Songti Square', 'Times New Roman', '华文中宋',  monospace;
+-   --mono-font:'ZCOOL XiaoWei','Dotted Songti Square',  'PT Sans', '微软雅黑', monospace;     
++
++
++
++:root:lang(ja){
++         --body-font: 'Noto Serif JP', 'Noto Sans JP', sans-serif;
++   --header-font:'Noto Serif JP',  'ZCOOL XiaoWei', 'Times New Roman', sans-serif;
++   --title-font: 'Noto Serif JP', 'Times New Roman', monospace;
++   --mono-font:'ZCOOL XiaoWei','Noto Serif JP',  'Noto Sans JP', monospace;     
+ 
+ }
+ 
 ```
 
 </details>
 
 <details>
-<summary>Section 5 — original 258–314 · candidate 732–788 · +15/−15 · mechanical, residual</summary>
+<summary>Section 5 — original 258–314 · candidate 752–808 · +15/−15 · mechanical, residual</summary>
 
 ```diff
-@@ -258,57 +732,57 @@
+@@ -258,57 +752,57 @@
         --quote-bd:4px solid rgba(33,33,33,0.8);
  
  /*-------------- 扫描引用块 ------------------*/      
@@ -686,10 +713,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 10 — original 1113–1127 · candidate 1587–1593 · +1/−9 · residual</summary>
+<summary>Section 10 — original 1113–1127 · candidate 1607–1613 · +1/−9 · residual</summary>
 
 ```diff
-@@ -1113,15 +1587,7 @@
+@@ -1113,15 +1607,7 @@
  #page-content .et-typing p:nth-child(20) { animation-delay: calc(18 * var(--fade-in-delay)); }
  #page-content .et-typing p:nth-child(n+20) { animation-delay: calc(n * var(--fade-in-delay)); }
  
@@ -711,45 +738,31 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 11 — original 1134–1630 · candidate 1600–1638 · +15/−473 · mechanical, residual, supplement, translation</summary>
+<summary>Section 11 — original 1135–1630 · candidate 1621–1665 · +25/−476 · residual, supplement, translation</summary>
 
 ```diff
-@@ -1134,497 +1600,39 @@
-     --sidebar-links-text: 255,0,255;
+@@ -1135,496 +1621,45 @@
      --swatch-menutxt-general-color:122,145,165;
  }
--
- [[/code]]
+ 
+-[[/code]]
 -
 -[!-------------------------------
 -mmmmmmmmmmmmmmmmm
 -结束
 ---------------------------------------------]
- [[/collapsible]]
- 
-+[[include :scp-jp:component:license-box-backend
-+|author=etinjat]]
- 
-+> **ファイル名:** logo-scp.svg
-+> **作者:** [[*user etinjat]]（原語版は作者の CSS リポジトリで配布）
-+> **ライセンス:** 原語版に記載なし（投稿前に著者へ確認してください）
- 
-+> **ファイル名:** img-wikidown.png
-+> **作者:** 原語版ではサンドボックスWikiの添付として配布
-+> **ライセンス:** 原語版に記載なし（投稿前に著者へ確認してください）
- 
+-[[/collapsible]]
+-
+-
+-
+-
 -[[div class="typing-center et-typing"  ]]
-+> **コンポーネント:** etinjat Wiki の component:collapsible-sidebar / component:centered-header-bhl を fragment:collapsible-sidebar-jp-base-css / fragment:centered-header-bhl-jp-base-css から @import
-+> **ライセンス:** 各コンポーネントのライセンス表記に従います（投稿前に原語版で確認してください）。
- 
-+> **フォント:** ZCOOL XiaoWei / Noto Sans・Serif JP
-+> **ライセンス:** SIL Open Font License（Google Fonts から配信）
- 
+-
+-
 -[[div class="scanline-wrap scanline-logo"]]
 -[[div class="scanline-cell scanline-text"]]
 -[[div class="scanline-intext"]]
-+[[include :scp-jp:component:license-box-end]]
- 
+-
 -[[size 260%]]**警 告**[[/size]]
 -
 -您正试图打开一个故障的数据库。
@@ -1195,12 +1208,35 @@ adjudicated explanation.
 -   display: none
 -}
 -
--.flex-wrap{
--   display: flex;
--   justify-content:   space-between;
--}
--
+ .flex-wrap{
+    display: flex;
+    justify-content:   space-between;
+ }
++[[/code]]
++[[/collapsible]]
+ 
 -[[/module]]
++[[include :scp-jp:component:license-box-backend
++|author=etinjat]]
++
++> **ファイル名:** logo-scp.svg
++> **作者:** [[*user etinjat]]（原語版は作者の CSS リポジトリで配布）
++> **ライセンス:** 原語版に記載なし（投稿前に著者へ確認してください）
++
++> **ファイル名:** img-wikidown.png
++> **作者:** 原語版ではサンドボックスWikiの添付として配布
++> **ライセンス:** 原語版に記載なし（投稿前に著者へ確認してください）
++
++> **コンポーネント:** etinjat Wiki の component:collapsible-sidebar / component:centered-header-bhl を fragment:collapsible-sidebar-jp-base-css / fragment:centered-header-bhl-jp-base-css から @import
++> **ライセンス:** 各コンポーネントのライセンス表記に従います（投稿前に原語版で確認してください）。
++
++> **フォント:** ZCOOL XiaoWei / Noto Sans・Serif JP
++> **ライセンス:** SIL Open Font License（Google Fonts から配信）
++
++[[include :scp-jp:component:license-box-end]]
++
++= 本テーマは [[*user etinjat]] が制作し、画面のピクセルドットコードは [*https://scp-wiki-cn.wikidot.com/scp-style-resource 格式资源] に由来します。
++
  [[/iftags]]
  
  [!-----------------
@@ -1232,10 +1268,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 12 — original 1638–1644 · candidate 1646–1652 · +1/−1 · residual</summary>
+<summary>Section 12 — original 1638–1644 · candidate 1673–1679 · +1/−1 · residual</summary>
 
 ```diff
-@@ -1638,7 +1646,7 @@
+@@ -1638,7 +1673,7 @@
    animation:none;
  }
  
@@ -1249,10 +1285,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 13 — original 1651–1657 · candidate 1659–1665 · +1/−1 · translation</summary>
+<summary>Section 13 — original 1651–1657 · candidate 1686–1692 · +1/−1 · translation</summary>
 
 ```diff
-@@ -1651,7 +1659,7 @@
+@@ -1651,7 +1686,7 @@
    background: none;
  }
  
@@ -1266,10 +1302,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 14 — original 1672–1684 · candidate 1680–1690 · +1/−3 · mechanical, residual</summary>
+<summary>Section 14 — original 1672–1684 · candidate 1707–1717 · +1/−3 · mechanical, residual</summary>
 
 ```diff
-@@ -1672,13 +1680,11 @@
+@@ -1672,13 +1707,11 @@
  [[/iftags]]
  
  
@@ -1289,10 +1325,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 15 — original 1696–1705 · candidate 1702–1704 · +0/−7 · residual</summary>
+<summary>Section 15 — original 1696–1705 · candidate 1729–1731 · +0/−7 · residual</summary>
 
 ```diff
-@@ -1696,10 +1702,3 @@
+@@ -1696,10 +1729,3 @@
  
  [[/module]]
  [[/iftags]]
@@ -1311,7 +1347,7 @@ adjudicated explanation.
 <summary>Purely mechanical sections (3, 4, 6, 7, 8, 9) — whitespace, host, and branch-token changes only (heuristic)</summary>
 
 ```diff
-@@ -120,10 +594,10 @@
+@@ -120,10 +614,10 @@
        --table-th-bg:rgba(var(--darkest-blue),0.8);
  
        --color-options-btn:#000;
@@ -1328,7 +1364,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -205,27 +679,27 @@
+@@ -205,27 +699,27 @@
  --header-mask-size:8.5rem;    
  --header-bg-color:rgba(var(--darkest-blue),0.8);
  --scanline-filter-color:rgba(var(--display-green),0.5);
@@ -1366,7 +1402,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -606,16 +1080,16 @@
+@@ -606,16 +1100,16 @@
        content: '';
        display: block;
        z-index: -5;
@@ -1389,7 +1425,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -891,19 +1365,19 @@
+@@ -891,19 +1385,19 @@
        content: '';
        display: block;
        z-index: -5;
@@ -1415,7 +1451,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -911,12 +1385,12 @@
+@@ -911,12 +1405,12 @@
  
  
  .scanline-verti .scanline-animation:before{
@@ -1433,7 +1469,7 @@ adjudicated explanation.
 ```
 
 ```diff
-@@ -968,13 +1442,13 @@
+@@ -968,13 +1462,13 @@
         background-color: rgba(var(--swatch-text-general),1);
         background-image: var(--hdbg-scanline-11w);        
          background-image: var(--hdbg-scanline-111);   

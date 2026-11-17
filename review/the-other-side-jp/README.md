@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:the-other-side-jp — origin CN, population #237 [GOSIGN2-LEDGER (b) row 237]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now c4016a128f7316c42fa9d80ac4b3d0ec9effbac887467f2924b4a3d9e5a88b14); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now cdad179bd0eb2e1bc009a89f2bb863b1bc970047b19b89c713cd81bcf57cdea6); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 4 errors / 0 warns / 1 info (pseudo-ref×4); standing classes dispositioned in register c1 [T1-ROWS row 202; GOSIGN2-LEDGER (b) row 237]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page-overflow 325px@320 on page and sample (+ 884px@768 on sample) + runtime-hotlink site-theme chain; sample credit-modal (preview-form); T3 re-run, no new screenshot-grounded visual finding; chromium-only coverage (no WebKit verdict). [RENDER-ROWS-G (CN16)]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 236, source LOCALIZE-S2-E]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 236]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 237]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:the-other-side-jp.txt sha256:c4016a128f7316c42fa9d80ac4b3d0ec9effbac887467f2924b4a3d9e5a88b14; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit f4488f2d2948824238a2d06479f104f4aab0cf5d; candidate file pages/theme:the-other-side-jp.txt sha256:cdad179bd0eb2e1bc009a89f2bb863b1bc970047b19b89c713cd81bcf57cdea6; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 Status: complete — skeleton by classify_hunks.py 0.1.0; every SLOT in the skeleton is resolved in the sections below and the Appendix.
@@ -186,6 +186,15 @@ For most themes the (c3) register itemizes outcomes pattern by pattern. For this
 ### The penumbra counterpart's role
 
 The T7 supplement's source is the production penumbra page (`pages-existing/existing:theme-penumbra.txt` L758–772), not the CN penumbra original: the port's credit rules were adapted from the JP production lineage's form of the base theme, palette-adjusted to this theme. That is why the supplement's comment names the production file. The relationship is a companion source for one block, not a production adoption of this theme (which has no JP production page); residue class R4 does not apply to the package as a whole.
+
+### Post-package repairs (REFRESH3-G)
+
+- **FIX-U9, landing `f4488f2d2948824238a2d06479f104f4aab0cf5d`** ("pages: skipos delivered channel, the-other-side fonts and subtitle …", 2026-11-17, R/review-scout/FIX-U9.md items 2–3; the main-chat rulings are also recorded in R/GOSIGN2-SUPERVISOR-STATE.md §"Main-chat rulings landed 2026-11-17"; 8 insertions / 7 deletions across the two files, this candidate +3/−3):
+  - **Item 2 — font coherence.** The port-introduced faces now serve JP glyphs: `--body-font` at refreshed candidate L382 reads `"Noto Serif JP", "Noto Serif SC", serif` and `--mono-font` at L383 names `"Noto Sans JP"` ahead of `"Noto Sans SC"` in the mono stack's CJK fallback slot. Both faces were loaded by the port (L224 / L225) but named in no delivered stack; the original neither loads nor names them. Fira Code (in `--mono-font`) and Jost (`--font1`) remain named-but-unloaded exactly as in the original — parity, left unchanged and recorded.
+  - **Item 3 — subtitle translation boundary (main-chat ruling 7) and its execution.** Ground: ruling 2 of 2026-11-16 stands for identity strings (names, brand marks, slogans functioning as marks), but a subtitle default that is a complete prose sentence is visible text governed by T5, and the candidate's own specimen demonstrating a Japanese value is the evidence of intent. Evidence: the delivered default was byte-identical to the original's `願我們能到達希望的彼岸` ("may we reach the shore of hope"), while the specimen's `ヘッダーのサブタイトル` (cand L46) is a placeholder label, not a translation, so the second branch applies. Execution: refreshed candidate L255 now reads `--header-subtitle: "私たちが希望の彼岸に辿り着けますように";`, a faithful translation of the default's sentence; the specimen keeps its placeholder and `--header-title: "悔恨城堡"` (the castle's proper name) is untouched under the identity-string branch.
+Checker for items 2 and 3 together: error 4 / warn 0 / info 2 before and after, finding set identical, class (i) 0.
+
+The regenerated stamp reads `Overall: STALE` against the pre-repair verdict, by design; no re-judgement is fabricated and the frozen GOSIGN2 ledger remains the verdict record.
 
 ## Change set outside the two diffed files
 

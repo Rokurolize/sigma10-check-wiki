@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:inkblot-jp — origin EN, population #16 [GOSIGN2-LEDGER (b) row 16]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 2db2fdd4ada19521ad6f67a83bf29a2312b81d8766ffb785a05e4d6c3c0908a3); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 885b8eb406c1aa11254236b757e8574c53f73e539e390f1823381c40736d34e4); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 8 errors / 3 warns / 2 infos (pseudo-ref×5, hotlink×3); standing classes dispositioned in register c1 [T1-ROWS row 16; GOSIGN2-LEDGER (b) row 16]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page body blank (possible stale-cache, not counted as defect), hidden-rate, sample credit-modal, 768px overflow 884px, webkit CSS non-CSS-MIME reject; re-check after purge recommended. [RENDER-ROWS-1 (RENDER-B row 16)]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 2 [LOCALIZE-ROWS row 17, source LOCALIZE-A]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 17]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 16]
-- Computed against: canonical commit 4176cc76aa668e42056010548f62a1db8d06a32e; candidate file pages/theme:inkblot-jp.txt sha256:2db2fdd4ada19521ad6f67a83bf29a2312b81d8766ffb785a05e4d6c3c0908a3; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 1e34c0b668faf170da8af14c127251af3e35fa26; candidate file pages/theme:inkblot-jp.txt sha256:885b8eb406c1aa11254236b757e8574c53f73e539e390f1823381c40736d34e4; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 Status: complete — skeleton by classify_hunks.py 0.1.0; every SLOT in the skeleton is resolved in the sections below and the Appendix.
@@ -222,6 +222,15 @@ Wave narration, each act verified against the diff and the file's git history (c
 Defect flag recorded by this review (not edited): the original's gated base-component include `[[include :scp-wiki:component:croqstyle]]` (orig L1–3) has no counterpart in the candidate, no committed version ever carried it, the JP component exists and is included by sibling candidates, and no ledger row charges the drop. The render row's blank-body item ("possible stale-cache, not counted") means the render evidence neither confirms nor clears the omission.
 
 Discrepancies between record and bytes: (i) 1869877's subject names one act; the file received seven (act 7 above). (ii) The ledger's (c3) line records P1 as DISPOSITIONED (posting-procedure) while the bytes show the P1 repoints completed in 1869877 — the register understates the file. (iii) The (c3) line's "P4 DISPOSITIONED (ii)" and the (c1) preamble's pattern-2 FIXED naming inkblot are reconciled only by splitting P4's aspects: the font-delivery aspect was fixed in the bytes, the delivery-host aspect is the dispositioned one; neither register says this in one place. (iv) LOCALIZE-ROWS row 17's line numbers (duplicate Rate at "L114", bunny at "L383–385") fit the pre-fix candidate's numbering, not the packaged mirror's (Rate at orig L109; the mirror's exhibit imports are the original's googleapis lines at orig L401–403) — the row was written against the candidate, and the package reads it that way.
+
+### Post-package repairs (REFRESH3-G)
+
+This package was built at commit `05dd295` against the candidate as it stood after the self-address repair. Two repairs are closed here:
+
+- **FIX-U7, landing `1e34c0b668faf170da8af14c127251af3e35fa26`** ("pages: U-7 repairs …", 2026-11-17, R/review-scout/FIX-U7.md item 1): the gated croqstyle base include restored — `[[iftags +テーマ]]` / `[[include :scp-jp:component:croqstyle]]` / `[[/iftags]]` inserted at the file head (refreshed candidate L1–4, ahead of `[[module CSS]]` at L6), +4 lines. Population evidence for the JP form is `[[include :scp-jp:component:croqstyle]]` in theme:highlighter-bhl-jp L271 and theme:flopstyle-dark-jp L5075 (no `component:croqstyle-jp` page exists); the gate tag is the file's own localized `+テーマ` form. The defect flag above ("no counterpart … not edited") is the as-built record at package-build time; the include is now present in the recopied candidate. Checker: error 5 / warn 2 / info 1 before and after, class (i) 0, only renumbered `important` infos.
+- **Self-address repair, landing `4176cc76aa668e42056010548f62a1db8d06a32e`** (FIX-CODEADDR.md proven-mismatch table / repairs item 2, "self-delivery code-block addresses repaired in five themes", 2026-11-17): already present in the package-build candidate — L6 / L16 / L36 name `/2` (the 614-line CSS exhibit) rather than `/1` (the 658 B usage sample), probe-verified by the audit. Per-theme record item 8 and section 3 carry the full record; this refresh closes it against the regenerated bytes. Its earlier STALE reading is unchanged.
+
+The regenerated stamp reads `Overall: STALE` against the pre-repair verdict, by design (jiha-jp / alexylva precedents); no re-judgement is fabricated and the frozen GOSIGN2 ledger remains the verdict record.
 
 ## Change set outside the two diffed files
 

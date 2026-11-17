@@ -3,7 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:magpie-swoops-jp — origin EN, population #111 [GOSIGN2-LEDGER (b) row 111]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 59e2c140e26ff72850a1922723a557f7b55fd102d0fd651777ea094ebd58b993); verdict not carried over, re-judgement required
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 86e84fd8ba2601ba56c292ebdde4947777109eb16a20859ddf6ba1926e121afe); verdict not carried over, re-judgement required
 > verdicts below describe the pre-change file
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 2 errors / 0 warns / 0 infos (hotlink×1, pseudo-ref×1); standing classes dispositioned in register c1 [T1-ROWS row 111; GOSIGN2-LEDGER (b) row 111]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page runtime-hotlink site-theme chain + scp-wiki.wikidot.com; sample T2 no machine verdict (exit 2); T3 page wordmark "MAGPIE SWOOPS財団" overprints account links and clips at 375/320 (both engines). [RENDER-ROWS-2 (RENDER-S2-C (EN14))]
@@ -12,7 +12,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 111, source LOCALIZE-S2-B]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 111]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 111]
-- Computed against: canonical commit b5cb7241f527a44933e45599b41df210690771c4; candidate file pages/theme:magpie-swoops-jp.txt sha256:59e2c140e26ff72850a1922723a557f7b55fd102d0fd651777ea094ebd58b993; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit 1e34c0b668faf170da8af14c127251af3e35fa26; candidate file pages/theme:magpie-swoops-jp.txt sha256:86e84fd8ba2601ba56c292ebdde4947777109eb16a20859ddf6ba1926e121afe; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 Status: complete — skeleton by classify_hunks.py 0.1.0; every SLOT in the skeleton is resolved in the sections below and the Appendix.
@@ -220,6 +220,12 @@ Wave narration, each act verified against the diff and the file's git history (c
 Defect flag recorded by this review (not edited): the condition-less `[[iftags]]` gate wrapping the BHL base include (cand L1–3) is the KB-08 anomaly — class A, file-provable, with a recorded fix (condition the gate +テーマ or remove the wrapper). It is uncharged by every ledger row for this theme. Two lesser observations ride with it: the tail @import's missing semicolon (cand L554) and the space inside the tail frame's theme= parameter (cand L558); both deviate from the original's line forms, and the render record shows the delivery functioning, so they are recorded as form deviations for the coordinator's judgement, not as breaks.
 
 Discrepancies between record and bytes: (i) the ledger's (c3) line for this theme charges only P5, yet the bytes contain two further campaign-class acts it never mentions — the pattern-2 font repoint (creation) and the P7 stack supplement; both are benign and verified above, and the silence is the record's, not the file's. (ii) The T4 row's display-affecting count (1) is consistent with the bytes once the creation-time repoint is understood: at T4 time there was no bunny.net line left to charge. (iii) The classifier's KB-04 description on B77 and its COMPONENT-SWAP primary on B11 do not fit the bytes; both are adjudicated in the Class summary.
+
+### Post-package repairs (REFRESH3-G)
+
+- **FIX-U7, landing `1e34c0b668faf170da8af14c127251af3e35fa26`** ("pages: U-7 repairs …", 2026-11-17, R/review-scout/FIX-U7.md item 2): the condition-less `[[iftags]]` gate at the file head was conditioned to `[[iftags +テーマ]]` (refreshed candidate L1; the closing `[[/iftags]]` at L3 and the file's second gate at L5 are unchanged). This is KB-08's recorded fix branch — restore the original's +theme condition rather than remove the wrapper, since the original's base delivery module stands under `[[iftags +theme]]` (orig L1) — using the candidate's own localized `+テーマ` form. The "Defect flag recorded by this review (not edited)" paragraph above is the as-built record; the gate is now conditioned in the recopied candidate. The two render-benign form deviations (unterminated tail @import, spaced `theme=` parameter) were untouched by the landing and remain as recorded. Checker: error 2 / warn 0 / info 0 before and after, finding set identical, class (i) 0.
+
+The regenerated stamp reads `Overall: STALE` against the pre-repair verdict, by design; no re-judgement is fabricated and the frozen GOSIGN2 ledger remains the verdict record.
 
 ## Change set outside the two diffed files
 

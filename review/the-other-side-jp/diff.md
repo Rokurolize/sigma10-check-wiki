@@ -16,12 +16,12 @@ adjudicated explanation.
 |---|---|
 | original.txt | 605 |
 | candidate.txt | 562 |
-| Added | +163 |
-| Review-stage comments | 0 of the +163 added lines |
-| Removed | -206 |
-| Changed | 369 |
-| Change blocks | 88 |
-| Diff sections (context 3) | 14 |
+| Added | +166 |
+| Review-stage comments | 0 of the +166 added lines |
+| Removed | -209 |
+| Changed | 375 |
+| Change blocks | 89 |
+| Diff sections (context 3) | 15 |
 
 ## Changed lines by auto-class (heuristic)
 
@@ -30,7 +30,7 @@ adjudicated explanation.
 | mechanical | 12 | 24 |
 | translation | 24 | 61 |
 | supplement | 3 | 60 |
-| residual | 49 | 224 |
+| residual | 50 | 230 |
 
 ## Change-block index
 
@@ -108,22 +108,23 @@ adjudicated explanation.
 | 70 | 1 | 235–236 | 230–234 | +5/−2 | residual | /* |
 | 71 | 1 | 238–304 | — | +0/−67 | residual | [[collapsible show="示例" hide="示例"]] |
 | 72 | 1 | 311–313 | — | +0/−3 | residual | @import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&displa… |
-| 73 | 2 | 328–328 | 256–256 | +1/−1 | residual | --lgurl: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Athe-ot… |
+| 73 | 2 | 327–328 | 255–256 | +2/−2 | residual | --header-subtitle: "私たちが希望の彼岸に辿り着けますように"; |
 | 74 | 3 | 360–360 | 288–288 | +1/−1 | mechanical | (blank lines only) |
 | 75 | 4 | 371–371 | 299–299 | +1/−1 | mechanical | (blank lines only) |
 | 76 | 5 | 385–385 | 313–313 | +1/−1 | mechanical | (blank lines only) |
 | 77 | 6 | 394–394 | 322–322 | +1/−1 | mechanical | (blank lines only) |
 | 78 | 7 | 403–403 | 331–331 | +1/−1 | mechanical | (blank lines only) |
 | 79 | 8 | 412–412 | 340–340 | +1/−1 | mechanical | (blank lines only) |
-| 80 | 9 | 483–483 | 411–411 | +1/−1 | mechanical | (blank lines only) |
-| 81 | 10 | 509–509 | 437–437 | +1/−1 | mechanical | (blank lines only) |
-| 82 | 11 | 520–520 | 448–448 | +1/−1 | mechanical | (blank lines only) |
-| 83 | 12 | 545–545 | 473–473 | +1/−1 | mechanical | (blank lines only) |
-| 84 | 13 | 553–553 | 481–481 | +1/−1 | mechanical | (blank lines only) |
-| 85 | 14 | — | 523–541 | +19/−0 | residual | /* Credit Module for JP — carried from the production counterpart |
-| 86 | 14 | — | 544–557 | +14/−0 | supplement | [[include :scp-jp:component:license-box-backend |
-| 87 | 14 | 600–601 | 561–561 | +1/−2 | residual | [[include component:betterbetterfootnote-jp]] |
-| 88 | 14 | 603–605 | — | +0/−3 | residual | [[module CSS]] |
+| 80 | 9 | 454–455 | 382–383 | +2/−2 | residual | --body-font: "Noto Serif JP", "Noto Serif SC", serif; |
+| 81 | 10 | 483–483 | 411–411 | +1/−1 | mechanical | (blank lines only) |
+| 82 | 11 | 509–509 | 437–437 | +1/−1 | mechanical | (blank lines only) |
+| 83 | 12 | 520–520 | 448–448 | +1/−1 | mechanical | (blank lines only) |
+| 84 | 13 | 545–545 | 473–473 | +1/−1 | mechanical | (blank lines only) |
+| 85 | 14 | 553–553 | 481–481 | +1/−1 | mechanical | (blank lines only) |
+| 86 | 15 | — | 523–541 | +19/−0 | residual | /* Credit Module for JP — carried from the production counterpart |
+| 87 | 15 | — | 544–557 | +14/−0 | supplement | [[include :scp-jp:component:license-box-backend |
+| 88 | 15 | 600–601 | 561–561 | +1/−2 | residual | [[include component:betterbetterfootnote-jp]] |
+| 89 | 15 | 603–605 | — | +0/−3 | residual | [[module CSS]] |
 
 ## Full diff
 
@@ -570,14 +571,16 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 2 — original 325–331 · candidate 253–259 · +1/−1 · residual</summary>
+<summary>Section 2 — original 324–331 · candidate 252–259 · +2/−2 · residual</summary>
 
 ```diff
-@@ -325,7 +253,7 @@
+@@ -324,8 +252,8 @@
+ 
  :root {
    --header-title: "悔恨城堡";
-   --header-subtitle: "願我們能到達希望的彼岸";
+-  --header-subtitle: "願我們能到達希望的彼岸";
 -  --lgurl: url("https://scpsandboxcn.wdfiles.com/local--files/justvektor-themes-part-2-electric-boogaloo/castle%20of%20remorse");
++  --header-subtitle: "私たちが希望の彼岸に辿り着けますように";
 +  --lgurl: url("https://sigma10-jp-test.wdfiles.com/local--files/theme%3Athe-other-side-jp/castle-of-remorse.png");
    --accentColor: rgb(255, 253, 208);
    --darkColor: rgb(5, 13, 23);
@@ -587,7 +590,26 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 14 — original 592–605 · candidate 520–562 · +34/−5 · residual, supplement</summary>
+<summary>Section 9 — original 451–458 · candidate 379–386 · +2/−2 · residual</summary>
+
+```diff
+@@ -451,8 +379,8 @@
+ }
+ :root {
+   --header-font:  "Kaisei HarunoUmi", cursive;
+-  --body-font: "Noto Serif SC", serif;
+-  --mono-font: 'Fira Code', "Noto Sans SC", 'Andale Mono', 'Courier New', Courier, monospace;
++  --body-font: "Noto Serif JP", "Noto Serif SC", serif;
++  --mono-font: 'Fira Code', "Noto Sans JP", "Noto Sans SC", 'Andale Mono', 'Courier New', Courier, monospace;
+ }
+ div#extra-div-1 {
+     height: 150px;
+```
+
+</details>
+
+<details>
+<summary>Section 15 — original 592–605 · candidate 520–562 · +34/−5 · residual, supplement</summary>
 
 ```diff
 @@ -592,14 +520,43 @@
@@ -644,7 +666,7 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Purely mechanical sections (3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13) — whitespace, host, and branch-token changes only (heuristic)</summary>
+<summary>Purely mechanical sections (3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 14) — whitespace, host, and branch-token changes only (heuristic)</summary>
 
 ```diff
 @@ -357,7 +285,7 @@

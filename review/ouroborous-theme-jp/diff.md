@@ -15,12 +15,12 @@ adjudicated explanation.
 | | Lines |
 |---|---|
 | original.txt | 1034 |
-| candidate.txt | 1050 |
+| candidate.txt | 1051 |
 | Added | +633 |
 | Review-stage comments | 0 of the +633 added lines |
-| Removed | -617 |
-| Changed | 1250 |
-| Change blocks | 170 |
+| Removed | -616 |
+| Changed | 1249 |
+| Change blocks | 169 |
 | Diff sections (context 3) | 4 |
 
 ## Changed lines by auto-class (heuristic)
@@ -29,7 +29,7 @@ adjudicated explanation.
 |---|---|---|
 | mechanical | 113 | 1038 |
 | supplement | 6 | 22 |
-| residual | 51 | 190 |
+| residual | 50 | 189 |
 
 ## Change-block index
 
@@ -91,120 +91,119 @@ adjudicated explanation.
 | 54 | 2 | 166–168 | 178–180 | +3/−3 | residual | > これは罫線です |
 | 55 | 2 | 170–172 | 182–184 | +3/−3 | residual | \|\|~ これは \|\|~ テーブルです \|\| |
 | 56 | 2 | 174–174 | 186–186 | +1/−1 | residual | [[collapsible show="+ テーマコードを表示" hide="- テーマコードを非表示"]] |
-| 57 | 2 | 176–176 | — | +0/−1 | residual | @import url("https://use.typekit.net/mst2dnj.css"); |
-| 58 | 2 | 181–188 | 192–199 | +8/−8 | mechanical | /* S-CSS-P Integration */ |
-| 59 | 2 | 190–191 | 201–202 | +2/−2 | mechanical | --header-title: "The Foundation"; |
-| 60 | 2 | 193–194 | 204–205 | +2/−2 | residual | /* Header */ |
-| 61 | 2 | 196–198 | 207–209 | +3/−3 | mechanical | /* Typefaces */ |
-| 62 | 2 | 200–201 | 211–212 | +2/−2 | mechanical | --ui-wght: 550; |
-| 63 | 2 | 203–226 | 214–237 | +24/−24 | mechanical | /* Standard Colors */ |
-| 64 | 2 | 228–229 | 239–240 | +2/−2 | mechanical | /* Primary Text Colors */ |
-| 65 | 2 | 231–235 | 242–246 | +5/−5 | mechanical | /* Primary Menu Colors */ |
-| 66 | 2 | 237–238 | 248–249 | +2/−2 | mechanical | /* Primary Theme Colors */ |
-| 67 | 2 | 240–244 | 251–255 | +5/−5 | mechanical | /* ===SECONDARY & TERTIARY COLORS=== */ |
-| 68 | 2 | 246–248 | 257–259 | +3/−3 | mechanical | /* Text Colors for Secondary & Tertiary items like Sidebar Headers and Top-Ba… |
-| 69 | 2 | 250–258 | 261–269 | +9/−9 | mechanical | /* Rating Module Colors */ |
-| 70 | 2 | 260–266 | 271–277 | +7/−7 | mechanical | /* Background and Header Colors */ |
-| 71 | 2 | 268–268 | 279–279 | +1/−1 | mechanical | --scrollbar-width: 0.5rem; |
-| 72 | 2 | 270–273 | 281–284 | +4/−4 | mechanical | /*Toggle Sidebar Button Colors*/ |
-| 73 | 2 | 279–280 | 290–291 | +2/−2 | mechanical | /* ===UI BUTTON COLORS=== */ |
-| 74 | 2 | 282–283 | 293–294 | +2/−2 | mechanical | /* ===TABS COLORS=== */ |
-| 75 | 2 | 285–288 | 296–299 | +4/−4 | mechanical | /* ===TABLES COLORS=== */ |
-| 76 | 2 | 290–291 | 301–302 | +2/−2 | mechanical | /* ===FOOTNOTES HOVER BLOCK COLORS=== */ |
-| 77 | 2 | 297–297 | 308–308 | +1/−1 | mechanical | --swatch-text-secondary-color: var(--swatch-menutxt-light-color); |
-| 78 | 2 | 301–308 | 312–319 | +8/−8 | mechanical | /* ===LOGIN BOX ELEMENT=== */ |
-| 79 | 2 | 313–313 | 324–324 | +1/−1 | mechanical | --sidebar-links-hover-text-color: var(--swatch-menutxt-general-color); |
-| 80 | 2 | 317–319 | 328–330 | +3/−3 | mechanical | background: rgba(var(--swatch-primary), 1); |
-| 81 | 2 | 323–325 | 334–336 | +3/−3 | mechanical | background: rgba(var(--swatch-primary), 1); |
-| 82 | 2 | 330–330 | 341–341 | +1/−1 | mechanical | color: rgb(var(--swatch-text-light)); |
-| 83 | 2 | 334–334 | 345–345 | +1/−1 | mechanical | color: rgb(var(--swatch-primary)); |
-| 84 | 2 | 338–338 | 349–349 | +1/−1 | mechanical | cursor: pointer; |
-| 85 | 2 | 342–342 | 353–353 | +1/−1 | mechanical | background-color: rgb(var(--black-monochrome)) !important; |
-| 86 | 2 | 346–347 | 357–358 | +2/−2 | mechanical | background-color: rgb(var(--dark-accent)) !important; |
-| 87 | 2 | 350–363 | 361–374 | +14/−14 | residual | #page-content a:not([href*="user"]):not([href*="javascript:;"]):not([href="/c… |
-| 88 | 2 | 366–376 | 377–387 | +11/−11 | residual | #page-content a:not([href*="user"]):not([href*="javascript:;"]):not([href="/c… |
-| 89 | 2 | 380–410 | 391–421 | +31/−31 | mechanical | #extra-div-1 { |
-| 90 | 2 | 412–423 | 423–434 | +12/−12 | mechanical | #extrac-div-1 { |
-| 91 | 2 | 427–432 | 438–443 | +6/−6 | mechanical | background-repeat: no-repeat; |
-| 92 | 2 | 437–438 | 448–449 | +2/−2 | mechanical | --wght: 400; |
-| 93 | 2 | 442–448 | 453–459 | +7/−7 | mechanical | --wght: 500; |
-| 94 | 2 | 452–457 | 463–468 | +6/−6 | mechanical | color: rgb(255, 219, 90); |
-| 95 | 2 | 462–467 | 473–478 | +6/−6 | mechanical | -webkit-animation: |
-| 96 | 2 | 471–476 | 482–487 | +6/−6 | mechanical | -webkit-animation: |
-| 97 | 2 | 481–486 | 492–497 | +6/−6 | mechanical | -webkit-animation: |
-| 98 | 2 | 490–495 | 501–506 | +6/−6 | mechanical | -webkit-animation: |
-| 99 | 2 | 499–499 | 510–510 | +1/−1 | mechanical | margin-left: calc(var(--header-height-on-desktop) + 0.75rem); |
-| 100 | 2 | 503–503 | 514–514 | +1/−1 | mechanical | --swatch-text-secondary-color: var(--swatch-text-tertiary-color); |
-| 101 | 2 | 508–508 | 519–519 | +1/−1 | mechanical | background: rgb(var(--swatch-menubg-black-color)); |
-| 102 | 2 | 513–513 | 524–524 | +1/−1 | mechanical | background: rgba(var(--swatch-menubg-black-color), .93); |
-| 103 | 2 | 517–517 | 528–528 | +1/−1 | mechanical | background-color: transparent; |
-| 104 | 2 | 521–521 | 532–532 | +1/−1 | mechanical | background-color: rgb(var(--black-monochrome)); |
-| 105 | 2 | 526–528 | 537–539 | +3/−3 | mechanical | border-bottom: 0.0625rem solid rgb(var(--swatch-menubg-dark-color)); |
-| 106 | 2 | 534–535 | 545–546 | +2/−2 | mechanical | color: rgb(var(--swatch-menutxt-light-color)); |
-| 107 | 2 | 540–540 | 551–551 | +1/−1 | mechanical | background-color: rgba(var(--bright-accent), .15); |
-| 108 | 2 | 547–548 | 558–559 | +2/−2 | mechanical | -webkit-animation: neonbg 1.5s ease-in-out infinite alternate; |
-| 109 | 2 | 554–556 | 565–567 | +3/−3 | mechanical | --wght: 700; |
-| 110 | 2 | 562–576 | 573–587 | +15/−15 | mechanical | --wght: 900; |
-| 111 | 3 | 585–588 | 596–599 | +4/−4 | mechanical | content: " "; |
-| 112 | 3 | 592–592 | 603–603 | +1/−1 | mechanical | margin-left: 0 !important; |
-| 113 | 3 | 596–596 | 607–607 | +1/−1 | mechanical | margin-top: .25rem; |
-| 114 | 3 | 602–602 | 613–613 | +1/−1 | mechanical | bottom: -0.6rem; |
-| 115 | 3 | 608–608 | 619–619 | +1/−1 | mechanical | top: -0.6rem; |
-| 116 | 3 | 612–612 | 623–623 | +1/−1 | mechanical | color: rgba(var(--swatch-primary-darker), 1); |
-| 117 | 4 | 620–625 | 631–636 | +6/−6 | mechanical | color: rgb(var(--swatch-menutxt-dark-color)); |
-| 118 | 4 | 630–636 | 641–647 | +7/−7 | mechanical | -webkit-animation: |
-| 119 | 4 | 641–641 | 652–652 | +1/−1 | mechanical | background-color: rgba(var(--swatch-menubg-dark-color), 0.25); |
-| 120 | 4 | 645–645 | 656–656 | +1/−1 | mechanical | background-color: rgba(var(--swatch-menubg-dark-color), 0.25); |
-| 121 | 4 | 650–650 | 661–661 | +1/−1 | mechanical | border-color: rgb(var(--swatch-menubg-dark-color)); |
-| 122 | 4 | 655–656 | 666–667 | +2/−2 | mechanical | background-color: rgb(var(--swatch-menubg-black-color)); |
-| 123 | 4 | 661–661 | 672–672 | +1/−1 | mechanical | background-color: rgb(var(--swatch-menubg-dark-color)); |
-| 124 | 4 | 666–667 | 677–678 | +2/−2 | mechanical | -webkit-animation: neonbg 1.5s ease-in-out infinite alternate; |
-| 125 | 4 | 671–671 | 682–682 | +1/−1 | mechanical | background: rgb(var(--swatch-primary-darkest)); |
-| 126 | 4 | 675–675 | 686–686 | +1/−1 | mechanical | background-color: rgba(var(--swatch-menubg-dark-color), 0.25); |
-| 127 | 4 | 679–680 | 690–691 | +2/−2 | mechanical | -webkit-filter: invert(1) hue-rotate(180deg); |
-| 128 | 4 | 684–684 | 695–695 | +1/−1 | mechanical | background-color: rgba(var(--swatch-menubg-dark-color), 0.25); |
-| 129 | 4 | 688–688 | 699–699 | +1/−1 | mechanical | border: 0.5rem solid rgba(var(--black-monochrome)); |
-| 130 | 4 | 692–692 | 703–703 | +1/−1 | mechanical | color: rgb(var(--swatch-primary-darker)); |
-| 131 | 4 | 696–696 | 707–707 | +1/−1 | mechanical | color: rgb(var(--swatch-primary)) !important; |
-| 132 | 4 | 700–708 | 711–719 | +9/−9 | mechanical | border-top: none; |
-| 133 | 4 | 712–726 | 723–737 | +15/−15 | mechanical | content: " "; |
-| 134 | 4 | 729–733 | 740–744 | +5/−5 | residual | .page-rate-widget-box, .rate-box-with-credit-button .creditButton { |
-| 135 | 4 | 737–737 | 748–748 | +1/−1 | mechanical | background-color: rgba(var(--bright-accent), 0.25); |
-| 136 | 4 | 742–744 | 753–755 | +3/−3 | mechanical | background-color: rgb(var(--black-monochrome)); |
-| 137 | 4 | 748–748 | 759–759 | +1/−1 | mechanical | background-color: rgb(var(--swatch-menubg-dark-color)); |
-| 138 | 4 | 755–756 | 766–767 | +2/−2 | mechanical | background-color: rgb(var(--swatch-primary-darkest)); |
-| 139 | 4 | 760–761 | 771–772 | +2/−2 | mechanical | background-color: rgb(var(--swatch-menubg-dark-color)); |
-| 140 | 4 | 765–772 | 776–783 | +8/−8 | mechanical | #header { |
-| 141 | 4 | 774–776 | 785–787 | +3/−3 | mechanical | #header>h1>a>span { |
-| 142 | 4 | 778–783 | 789–794 | +6/−6 | mechanical | #header h1 a { |
-| 143 | 4 | 785–790 | 796–801 | +6/−6 | mechanical | #header h2 span { |
-| 144 | 4 | 792–813 | 803–824 | +22/−22 | mechanical | #extra-div-1 { |
-| 145 | 4 | 817–824 | 828–835 | +8/−8 | mechanical | #header { |
-| 146 | 4 | 828–838 | 839–849 | +11/−11 | mechanical | from { |
-| 147 | 4 | 840–850 | 851–861 | +11/−11 | mechanical | to { |
-| 148 | 4 | 854–864 | 865–875 | +11/−11 | mechanical | from { |
-| 149 | 4 | 866–876 | 877–887 | +11/−11 | mechanical | to { |
-| 150 | 4 | 880–890 | 891–901 | +11/−11 | mechanical | from { |
-| 151 | 4 | 892–902 | 903–913 | +11/−11 | mechanical | to { |
-| 152 | 4 | 906–916 | 917–927 | +11/−11 | mechanical | from { |
-| 153 | 4 | 918–928 | 929–939 | +11/−11 | mechanical | to { |
-| 154 | 4 | 932–942 | 943–953 | +11/−11 | mechanical | from { |
-| 155 | 4 | 944–954 | 955–965 | +11/−11 | mechanical | to { |
-| 156 | 4 | 958–968 | 969–979 | +11/−11 | mechanical | from { |
-| 157 | 4 | 970–980 | 981–991 | +11/−11 | mechanical | to { |
-| 158 | 4 | 984–986 | 995–997 | +3/−3 | mechanical | 0% { |
-| 159 | 4 | 988–990 | 999–1001 | +3/−3 | mechanical | 100% { |
-| 160 | 4 | 994–996 | 1005–1007 | +3/−3 | mechanical | 0% { |
-| 161 | 4 | 998–1000 | 1009–1011 | +3/−3 | mechanical | 100% { |
-| 162 | 4 | 1004–1006 | 1015–1017 | +3/−3 | mechanical | 0% { |
-| 163 | 4 | 1008–1010 | 1019–1021 | +3/−3 | mechanical | 100% { |
-| 164 | 4 | 1014–1016 | 1025–1027 | +3/−3 | mechanical | 0% { |
-| 165 | 4 | 1018–1020 | 1029–1031 | +3/−3 | mechanical | 100% { |
-| 166 | 4 | 1026–1026 | 1037–1037 | +1/−1 | residual | @@[[footnoteblock]]@@ |
-| 167 | 4 | 1029–1029 | 1040–1040 | +1/−1 | supplement | @import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aouroboro… |
-| 168 | 4 | 1031–1031 | 1042–1042 | +1/−1 | supplement | [[include :scp-jp:component:interwiki-style |
-| 169 | 4 | 1033–1033 | 1044–1044 | +1/−1 | supplement | \| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aouroborous-th… |
-| 170 | 4 | — | 1046–1050 | +5/−0 | residual | [[module CSS]] |
+| 57 | 2 | 181–188 | 193–200 | +8/−8 | mechanical | /* S-CSS-P Integration */ |
+| 58 | 2 | 190–191 | 202–203 | +2/−2 | mechanical | --header-title: "The Foundation"; |
+| 59 | 2 | 193–194 | 205–206 | +2/−2 | residual | /* Header */ |
+| 60 | 2 | 196–198 | 208–210 | +3/−3 | mechanical | /* Typefaces */ |
+| 61 | 2 | 200–201 | 212–213 | +2/−2 | mechanical | --ui-wght: 550; |
+| 62 | 2 | 203–226 | 215–238 | +24/−24 | mechanical | /* Standard Colors */ |
+| 63 | 2 | 228–229 | 240–241 | +2/−2 | mechanical | /* Primary Text Colors */ |
+| 64 | 2 | 231–235 | 243–247 | +5/−5 | mechanical | /* Primary Menu Colors */ |
+| 65 | 2 | 237–238 | 249–250 | +2/−2 | mechanical | /* Primary Theme Colors */ |
+| 66 | 2 | 240–244 | 252–256 | +5/−5 | mechanical | /* ===SECONDARY & TERTIARY COLORS=== */ |
+| 67 | 2 | 246–248 | 258–260 | +3/−3 | mechanical | /* Text Colors for Secondary & Tertiary items like Sidebar Headers and Top-Ba… |
+| 68 | 2 | 250–258 | 262–270 | +9/−9 | mechanical | /* Rating Module Colors */ |
+| 69 | 2 | 260–266 | 272–278 | +7/−7 | mechanical | /* Background and Header Colors */ |
+| 70 | 2 | 268–268 | 280–280 | +1/−1 | mechanical | --scrollbar-width: 0.5rem; |
+| 71 | 2 | 270–273 | 282–285 | +4/−4 | mechanical | /*Toggle Sidebar Button Colors*/ |
+| 72 | 2 | 279–280 | 291–292 | +2/−2 | mechanical | /* ===UI BUTTON COLORS=== */ |
+| 73 | 2 | 282–283 | 294–295 | +2/−2 | mechanical | /* ===TABS COLORS=== */ |
+| 74 | 2 | 285–288 | 297–300 | +4/−4 | mechanical | /* ===TABLES COLORS=== */ |
+| 75 | 2 | 290–291 | 302–303 | +2/−2 | mechanical | /* ===FOOTNOTES HOVER BLOCK COLORS=== */ |
+| 76 | 2 | 297–297 | 309–309 | +1/−1 | mechanical | --swatch-text-secondary-color: var(--swatch-menutxt-light-color); |
+| 77 | 2 | 301–308 | 313–320 | +8/−8 | mechanical | /* ===LOGIN BOX ELEMENT=== */ |
+| 78 | 2 | 313–313 | 325–325 | +1/−1 | mechanical | --sidebar-links-hover-text-color: var(--swatch-menutxt-general-color); |
+| 79 | 2 | 317–319 | 329–331 | +3/−3 | mechanical | background: rgba(var(--swatch-primary), 1); |
+| 80 | 2 | 323–325 | 335–337 | +3/−3 | mechanical | background: rgba(var(--swatch-primary), 1); |
+| 81 | 2 | 330–330 | 342–342 | +1/−1 | mechanical | color: rgb(var(--swatch-text-light)); |
+| 82 | 2 | 334–334 | 346–346 | +1/−1 | mechanical | color: rgb(var(--swatch-primary)); |
+| 83 | 2 | 338–338 | 350–350 | +1/−1 | mechanical | cursor: pointer; |
+| 84 | 2 | 342–342 | 354–354 | +1/−1 | mechanical | background-color: rgb(var(--black-monochrome)) !important; |
+| 85 | 2 | 346–347 | 358–359 | +2/−2 | mechanical | background-color: rgb(var(--dark-accent)) !important; |
+| 86 | 2 | 350–363 | 362–375 | +14/−14 | residual | #page-content a:not([href*="user"]):not([href*="javascript:;"]):not([href="/c… |
+| 87 | 2 | 366–376 | 378–388 | +11/−11 | residual | #page-content a:not([href*="user"]):not([href*="javascript:;"]):not([href="/c… |
+| 88 | 2 | 380–410 | 392–422 | +31/−31 | mechanical | #extra-div-1 { |
+| 89 | 2 | 412–423 | 424–435 | +12/−12 | mechanical | #extrac-div-1 { |
+| 90 | 2 | 427–432 | 439–444 | +6/−6 | mechanical | background-repeat: no-repeat; |
+| 91 | 2 | 437–438 | 449–450 | +2/−2 | mechanical | --wght: 400; |
+| 92 | 2 | 442–448 | 454–460 | +7/−7 | mechanical | --wght: 500; |
+| 93 | 2 | 452–457 | 464–469 | +6/−6 | mechanical | color: rgb(255, 219, 90); |
+| 94 | 2 | 462–467 | 474–479 | +6/−6 | mechanical | -webkit-animation: |
+| 95 | 2 | 471–476 | 483–488 | +6/−6 | mechanical | -webkit-animation: |
+| 96 | 2 | 481–486 | 493–498 | +6/−6 | mechanical | -webkit-animation: |
+| 97 | 2 | 490–495 | 502–507 | +6/−6 | mechanical | -webkit-animation: |
+| 98 | 2 | 499–499 | 511–511 | +1/−1 | mechanical | margin-left: calc(var(--header-height-on-desktop) + 0.75rem); |
+| 99 | 2 | 503–503 | 515–515 | +1/−1 | mechanical | --swatch-text-secondary-color: var(--swatch-text-tertiary-color); |
+| 100 | 2 | 508–508 | 520–520 | +1/−1 | mechanical | background: rgb(var(--swatch-menubg-black-color)); |
+| 101 | 2 | 513–513 | 525–525 | +1/−1 | mechanical | background: rgba(var(--swatch-menubg-black-color), .93); |
+| 102 | 2 | 517–517 | 529–529 | +1/−1 | mechanical | background-color: transparent; |
+| 103 | 2 | 521–521 | 533–533 | +1/−1 | mechanical | background-color: rgb(var(--black-monochrome)); |
+| 104 | 2 | 526–528 | 538–540 | +3/−3 | mechanical | border-bottom: 0.0625rem solid rgb(var(--swatch-menubg-dark-color)); |
+| 105 | 2 | 534–535 | 546–547 | +2/−2 | mechanical | color: rgb(var(--swatch-menutxt-light-color)); |
+| 106 | 2 | 540–540 | 552–552 | +1/−1 | mechanical | background-color: rgba(var(--bright-accent), .15); |
+| 107 | 2 | 547–548 | 559–560 | +2/−2 | mechanical | -webkit-animation: neonbg 1.5s ease-in-out infinite alternate; |
+| 108 | 2 | 554–556 | 566–568 | +3/−3 | mechanical | --wght: 700; |
+| 109 | 2 | 562–576 | 574–588 | +15/−15 | mechanical | --wght: 900; |
+| 110 | 3 | 585–588 | 597–600 | +4/−4 | mechanical | content: " "; |
+| 111 | 3 | 592–592 | 604–604 | +1/−1 | mechanical | margin-left: 0 !important; |
+| 112 | 3 | 596–596 | 608–608 | +1/−1 | mechanical | margin-top: .25rem; |
+| 113 | 3 | 602–602 | 614–614 | +1/−1 | mechanical | bottom: -0.6rem; |
+| 114 | 3 | 608–608 | 620–620 | +1/−1 | mechanical | top: -0.6rem; |
+| 115 | 3 | 612–612 | 624–624 | +1/−1 | mechanical | color: rgba(var(--swatch-primary-darker), 1); |
+| 116 | 4 | 620–625 | 632–637 | +6/−6 | mechanical | color: rgb(var(--swatch-menutxt-dark-color)); |
+| 117 | 4 | 630–636 | 642–648 | +7/−7 | mechanical | -webkit-animation: |
+| 118 | 4 | 641–641 | 653–653 | +1/−1 | mechanical | background-color: rgba(var(--swatch-menubg-dark-color), 0.25); |
+| 119 | 4 | 645–645 | 657–657 | +1/−1 | mechanical | background-color: rgba(var(--swatch-menubg-dark-color), 0.25); |
+| 120 | 4 | 650–650 | 662–662 | +1/−1 | mechanical | border-color: rgb(var(--swatch-menubg-dark-color)); |
+| 121 | 4 | 655–656 | 667–668 | +2/−2 | mechanical | background-color: rgb(var(--swatch-menubg-black-color)); |
+| 122 | 4 | 661–661 | 673–673 | +1/−1 | mechanical | background-color: rgb(var(--swatch-menubg-dark-color)); |
+| 123 | 4 | 666–667 | 678–679 | +2/−2 | mechanical | -webkit-animation: neonbg 1.5s ease-in-out infinite alternate; |
+| 124 | 4 | 671–671 | 683–683 | +1/−1 | mechanical | background: rgb(var(--swatch-primary-darkest)); |
+| 125 | 4 | 675–675 | 687–687 | +1/−1 | mechanical | background-color: rgba(var(--swatch-menubg-dark-color), 0.25); |
+| 126 | 4 | 679–680 | 691–692 | +2/−2 | mechanical | -webkit-filter: invert(1) hue-rotate(180deg); |
+| 127 | 4 | 684–684 | 696–696 | +1/−1 | mechanical | background-color: rgba(var(--swatch-menubg-dark-color), 0.25); |
+| 128 | 4 | 688–688 | 700–700 | +1/−1 | mechanical | border: 0.5rem solid rgba(var(--black-monochrome)); |
+| 129 | 4 | 692–692 | 704–704 | +1/−1 | mechanical | color: rgb(var(--swatch-primary-darker)); |
+| 130 | 4 | 696–696 | 708–708 | +1/−1 | mechanical | color: rgb(var(--swatch-primary)) !important; |
+| 131 | 4 | 700–708 | 712–720 | +9/−9 | mechanical | border-top: none; |
+| 132 | 4 | 712–726 | 724–738 | +15/−15 | mechanical | content: " "; |
+| 133 | 4 | 729–733 | 741–745 | +5/−5 | residual | .page-rate-widget-box, .rate-box-with-credit-button .creditButton { |
+| 134 | 4 | 737–737 | 749–749 | +1/−1 | mechanical | background-color: rgba(var(--bright-accent), 0.25); |
+| 135 | 4 | 742–744 | 754–756 | +3/−3 | mechanical | background-color: rgb(var(--black-monochrome)); |
+| 136 | 4 | 748–748 | 760–760 | +1/−1 | mechanical | background-color: rgb(var(--swatch-menubg-dark-color)); |
+| 137 | 4 | 755–756 | 767–768 | +2/−2 | mechanical | background-color: rgb(var(--swatch-primary-darkest)); |
+| 138 | 4 | 760–761 | 772–773 | +2/−2 | mechanical | background-color: rgb(var(--swatch-menubg-dark-color)); |
+| 139 | 4 | 765–772 | 777–784 | +8/−8 | mechanical | #header { |
+| 140 | 4 | 774–776 | 786–788 | +3/−3 | mechanical | #header>h1>a>span { |
+| 141 | 4 | 778–783 | 790–795 | +6/−6 | mechanical | #header h1 a { |
+| 142 | 4 | 785–790 | 797–802 | +6/−6 | mechanical | #header h2 span { |
+| 143 | 4 | 792–813 | 804–825 | +22/−22 | mechanical | #extra-div-1 { |
+| 144 | 4 | 817–824 | 829–836 | +8/−8 | mechanical | #header { |
+| 145 | 4 | 828–838 | 840–850 | +11/−11 | mechanical | from { |
+| 146 | 4 | 840–850 | 852–862 | +11/−11 | mechanical | to { |
+| 147 | 4 | 854–864 | 866–876 | +11/−11 | mechanical | from { |
+| 148 | 4 | 866–876 | 878–888 | +11/−11 | mechanical | to { |
+| 149 | 4 | 880–890 | 892–902 | +11/−11 | mechanical | from { |
+| 150 | 4 | 892–902 | 904–914 | +11/−11 | mechanical | to { |
+| 151 | 4 | 906–916 | 918–928 | +11/−11 | mechanical | from { |
+| 152 | 4 | 918–928 | 930–940 | +11/−11 | mechanical | to { |
+| 153 | 4 | 932–942 | 944–954 | +11/−11 | mechanical | from { |
+| 154 | 4 | 944–954 | 956–966 | +11/−11 | mechanical | to { |
+| 155 | 4 | 958–968 | 970–980 | +11/−11 | mechanical | from { |
+| 156 | 4 | 970–980 | 982–992 | +11/−11 | mechanical | to { |
+| 157 | 4 | 984–986 | 996–998 | +3/−3 | mechanical | 0% { |
+| 158 | 4 | 988–990 | 1000–1002 | +3/−3 | mechanical | 100% { |
+| 159 | 4 | 994–996 | 1006–1008 | +3/−3 | mechanical | 0% { |
+| 160 | 4 | 998–1000 | 1010–1012 | +3/−3 | mechanical | 100% { |
+| 161 | 4 | 1004–1006 | 1016–1018 | +3/−3 | mechanical | 0% { |
+| 162 | 4 | 1008–1010 | 1020–1022 | +3/−3 | mechanical | 100% { |
+| 163 | 4 | 1014–1016 | 1026–1028 | +3/−3 | mechanical | 0% { |
+| 164 | 4 | 1018–1020 | 1030–1032 | +3/−3 | mechanical | 100% { |
+| 165 | 4 | 1026–1026 | 1038–1038 | +1/−1 | residual | @@[[footnoteblock]]@@ |
+| 166 | 4 | 1029–1029 | 1041–1041 | +1/−1 | supplement | @import url("https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aouroboro… |
+| 167 | 4 | 1031–1031 | 1043–1043 | +1/−1 | supplement | [[include :scp-jp:component:interwiki-style |
+| 168 | 4 | 1033–1033 | 1045–1045 | +1/−1 | supplement | \| theme=https://sigma10-jp-test.wdfiles.com/local--code/theme%3Aouroborous-th… |
+| 169 | 4 | — | 1047–1051 | +5/−0 | residual | [[module CSS]] |
 
 ## Full diff
 
@@ -232,10 +231,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 2 — original 18–579 · candidate 22–590 · +332/−325 · mechanical, residual, supplement</summary>
+<summary>Section 2 — original 18–579 · candidate 22–591 · +332/−324 · mechanical, residual, supplement</summary>
 
 ```diff
-@@ -18,562 +22,569 @@
+@@ -18,562 +22,570 @@
      box-sizing: border-box;
  }
  [[/module]]
@@ -470,7 +469,7 @@ adjudicated explanation.
 -[[collapsible show="+ Show theme code" hide="- Hide theme code"]]
 +[[collapsible show="+ テーマコードを表示" hide="- テーマコードを非表示"]]
  [[code type="css"]]
--@import url("https://use.typekit.net/mst2dnj.css");
+ @import url("https://use.typekit.net/mst2dnj.css");
  
  @supports(display: grid) {
  
@@ -1135,10 +1134,10 @@ adjudicated explanation.
 </details>
 
 <details>
-<summary>Section 4 — original 617–1034 · candidate 628–1050 · +285/−280 · mechanical, residual, supplement</summary>
+<summary>Section 4 — original 617–1034 · candidate 629–1051 · +285/−280 · mechanical, residual, supplement</summary>
 
 ```diff
-@@ -617,418 +628,423 @@
+@@ -617,418 +629,423 @@
      }
  
      #page-title {
@@ -1850,7 +1849,7 @@ adjudicated explanation.
 <summary>Purely mechanical sections (3) — whitespace, host, and branch-token changes only (heuristic)</summary>
 
 ```diff
-@@ -582,34 +593,34 @@
+@@ -582,34 +594,34 @@
      #interwiki .heading p::before,
      #side-bar .heading p::before,
      #side-bar .side-block>.collapsible-block .collapsible-block-link::before {
