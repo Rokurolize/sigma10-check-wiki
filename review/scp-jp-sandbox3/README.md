@@ -9,7 +9,7 @@
 | Candidate status | Authored, not deployed — authored for this package on 2026-11-17; production SB3 still serves the original full Sigma-9 fork. |
 | Verification status | Source-level only — the draft-page render check the governing requirement calls for has not been run, and no part of this package claims that it has. |
 | Governing requirement | The SB3 row of the site-operations table in /start (canonical source: pages/start.txt), quoted verbatim in this section. |
-| Canonical commit | 01eea3705b066ddc3ab4932fcc5570f39b181646 |
+| Canonical commit | 70cbeba2c2b309e03bf293e2f10f2b6839bc3d3e |
 <!-- END GENERATED STATUS STAMP -->
 
 Requirement (SB3 row, Sigma-10 migration-requirements cell, quoted verbatim from `pages/start.txt`):
