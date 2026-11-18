@@ -116,9 +116,10 @@ TITLES_FILE = "start-titles.json"
 SAMPLE_GAPS = {
     "dynamikron-jp": (
         "Sample note: this candidate's colour exhibit includes "
-        "component:theme-squares from the EN SCP Wiki; no JP port of that component "
-        "exists in this repository, so the sample shows a missing-include notice. "
-        "Recorded gap, not a candidate defect — ground in the dynamikron review package"
+        "component:theme-squares from the EN SCP Wiki. The check wiki carries that "
+        "component as a verbatim EN mirror (posted 2026-11-19, with "
+        "component:toggle-sidebar-bhl likewise), so the sample renders the exhibit; "
+        "no JP port of the component exists. Ground in the dynamikron review package"
     ),
 }
 
