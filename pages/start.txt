@@ -10,8 +10,8 @@ This page is the index (top) of the Sigma-10 display-check wikis: for each theme
 
 + Overall state (at a glance)
 
-* The theme table has **287 rows** across the origin subpages. review/sources.tsv records a review verdict of **PASS for 286 rows** and **EXCEPTION for 1 row** (Amethyst V2 Layout). The 286 are the pass-eligible population covered by the go-sign; 286 + 1 = 287. The exception still has a row, so the table accounts for all 287 rows.
-* The generated verdict stamp of each review package (review/build_review.py) reports the same underlying result but flags files changed since the verdict head: **PASS 49**, **STALE 237**, **EXCEPTION 1** (49 + 237 + 1 = 287). Both the record verdict and the factual stamp state are shown in each row's Status.
+* The theme table has **287 rows** across the origin subpages. review/sources.tsv records a review verdict of **PASS for 286 rows** and **EXCEPTION for 1 row** (Amethyst V2 Layout); each PASS row passed at the ledger determination with no OPEN items. The 286 are the pass-eligible population covered by the go-sign; 286 + 1 = 287. The exception still has a row, so the table accounts for all 287 rows.
+* Generated verdict stamp (review/build_review.py): **PASS 49**, **STALE 237**, **EXCEPTION 1** (49 + 237 + 1 = 287).
 * **Ruling on STALE rows — post them; do not re-judge.** Every change made to a candidate after its verdict landed through the campaign's recorded, verified repair waves, and each is noted in its review package. The record verdict therefore stands, and a STALE row is read and posted exactly like a PASS row: its Status shows the record verdict (PASS) with the stamp word STALE, and its package records the repair. STALE is not a new defect and is not a reason to hold a row back; it is the stamp honestly marking a file that changed after the verdict. The stamp regions themselves stay factual and are not edited.
 * Named exceptions, in plain words: **Amethyst V2 Layout** has no port candidate. Its original is a ThemePreviewer shell — the substance is three g2lighter components on another wiki plus about 199 KB of externally hosted CSS, and the JP check wikis do not carry that component set, so there is no standalone page to port or review. **Sigma-10** is not a theme row at all; it is the Sigma-10 JP site theme itself, the environment candidate that this whole wiki pair exists to check. Its "port candidate" is the plain decoration sample with no theme layered on it.
 * Where to start: the already-published pages are the priority verification surface, because what breaks on migration day is the live articles rather than the new port candidates. Begin with the existing-articles index below and the priority statement in "Existing articles (migration targets, priority)"; use the theme tables when doing the porting work itself.
@@ -29,7 +29,7 @@ References inside a candidate that point at the display-check wiki (sigma10-jp-t
 * **localcode** (local--code) — Wikidot's delivery path for a page's own CSS/JavaScript code block. A candidate's local--code URLs point at the display-check wiki and must be rewritten to the production host (scp-jp.wdfiles.com) when the candidate is posted.
 * **localfiles** (local--files) — Wikidot's delivery path for a page's own attachments (images, fonts). These must be moved to SCP-JP storage and their URLs rewritten when the candidate is posted.
 * **port candidate** — the JP port of one individual theme (theme:<slug>-jp) together with its display-check sample. This is the per-theme layer, displayed on top of the Sigma-10 JP site theme (the environment candidate) — a separate layer. Bare 「移植候補」 is avoided precisely because it would conflate the two.
-* **STALE** — a verdict-stamp state meaning the candidate was revised after the ledger verdict, through the campaign's recorded repair waves (each noted in its package). It is not a new defect: the record verdict stands, and a STALE row is posted exactly like a PASS row. See the ruling in "Overall state (at a glance)".
+* **STALE** — a verdict-stamp state; see the ruling in "Overall state (at a glance)".
 * **Notation in the review packages** — package prose uses campaign shorthand (KB pattern ids, P-numbers, T1–T5, class (i)/(ii)/(iii) and wave names) that this glossary does not expand. The plain-word key is [[[https://github.com/Rokurolize/sigma10-check-wiki/blob/main/review/HOW-TO-READ.md|package notation key]]].
 
 [[div class="content-panel standalone centered"]]
@@ -43,7 +43,8 @@ The 153 existing pages tagged "theme" on production SCP-JP were imported with th
 + How to use this index
 
 * Each row has three columns: Theme / Status / Details. "Theme" gives the title and the candidate slug in parentheses, so CN/KO rows are findable by slug. "Status" holds the prep state in plain words, the review verdict (PASS / STALE / NOT PASS / EXCEPTION with its one-line ground, sourced from review/sources.tsv and the generated package stamp), and the staff application procedure. "Details" holds the base, the reference rev, links to the original and the port candidate, and the diff page. The theme table is split into subpages reached from the contents below.
-* Each theme has two samples, the "original" and the "port candidate", and each has links to its Wikidot and Wikijump versions.
+* Each theme has two samples, the "original" and the "port candidate", with links to its Wikidot and Wikijump versions. The "original" is a check page that @@[[include]]@@s the original-language (or origin-branch) theme page into this wiki and renders it on this wiki's Sigma-10 JP environment, layered on the decoration-sample body; it is not a display of the original-language page itself. Because it is not that page, it can behave differently (measured 2026-11-15: EN's Aesthetic page is clickable, but the EN include specimen in this environment is not clickable); the final place to check a theme's own behavior is its original-language (home) page.
+* Each theme sample page opens with the theme's own documentation, followed by the shared decoration-sample body, so a porter comparing samples should expect those two layers in that order.
 * Every sample page and theme page has this page (start) set as its parent page. You can return here at any time through the breadcrumb list.
 
 + Display-check pages
@@ -52,10 +53,6 @@ The 153 existing pages tagged "theme" on production SCP-JP were imported with th
 || Theme decoration sample page (plain) || [https://sigma10-jp-test.wikidot.com/theme-decoration-sample Wikidot] / [https://codex-wsl-maintenance.tail3a09a5.ts.net/theme-decoration-sample Wikijump] || A plain sample with no theme layered on it. Its display as-is under the site theme (Sigma-10 JP) is itself the Sigma-10 JP check. ||
 || SCP-002-J || [https://sigma10-jp-test.wikidot.com/scp-002-j Wikidot] / [https://codex-wsl-maintenance.tail3a09a5.ts.net/scp-002-j Wikijump] || An article page including classification decoration, a rating module, and a credit block. ||
 || SCP-9972 || [https://sigma10-jp-test.wikidot.com/scp-9972 Wikidot] / [https://codex-wsl-maintenance.tail3a09a5.ts.net/scp-9972 Wikijump] || An article page including a rating module and an image block. ||
-
-+ Per-theme decoration samples
-
-This page is a check page that @@[[include]]@@s each theme's original-language (or origin-branch) theme page into this wiki and displays it layered on the decoration sample body under the Sigma-10 JP environment. It is not a display of the original-language page itself.
 
 + Contents (theme-table subpages)
 
@@ -77,11 +74,6 @@ The theme table (287 rows) is split into subpages by the branch each theme was c
 For the 153 existing articles, a record of whether Wikijump reproduces the Wikidot rendering (match / mismatch).
 
 * [[[start:wikijump-parity|Record of Wikijump rendering reproduction]]] (30 articles with a theme row, and 123 without)
-
-+ How to read this table
-
-* The "original" is a sample that @@[[include]]@@s the original-language (or origin-branch) theme page into a page of this check wiki and renders it on this wiki's Sigma-10 JP environment. Because it is not the original-language page itself, it can behave differently from the original-language page (measured 2026-11-15: EN's Aesthetic page is clickable, but the EN include specimen in this environment is not clickable). The final place to check a theme's own behavior is each theme's original-language (home) page.
-* Each theme sample page opens with the theme's own documentation, followed by the shared decoration-sample body, so a porter comparing samples should expect those two layers in that order.
 
 + Site-operations wikis (not themes; migration targets)
 

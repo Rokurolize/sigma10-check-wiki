@@ -15,13 +15,20 @@ Reader-facing fields (STARTFIX lane; BREVITY wave short forms):
     field that drops internal wave codes (EN1/CN9/KO1, "settled in CN1")
     and the retired Check 5 outcome, while preserving every real condition
     or caveat verbatim (see prep_parts()). The TSV itself is never edited.
+    Bookkeeping-only parentheticals ("(reference rev recorded)",
+    "(incorporated at rev N)") are dropped to plain "Complete": the rev
+    numbers they name already appear in each row's own Reference rev field
+    (BREVITY wave 2 adjudication 6).
     Verdict is sourced mechanically from review/sources.tsv's `verdict`
     column AND the package's generated verdict stamp: build_review.py's
     own Records()/assemble_stamp() supply the stamp word (PASS / STALE /
     NOT PASS / EXCEPTION). A STALE row renders as "<record verdict>
     (stamp: STALE)": both facts stay visible, while the repair ground is
     stated once in each subpage header and once on the top page, not
-    re-printed in all 237 rows (BREVITY review finding 1).
+    re-printed in all 237 rows (BREVITY review finding 1). A fresh PASS row
+    renders as the short "PASS"; the sweep-level fact its old clause carried
+    ("passed at the ledger determination; no OPEN items") is stated once in
+    each subpage header and once on the top page (BREVITY wave 2 adjudication 5).
   * The Theme cell carries the candidate slug alongside the title, so a
     CN/KO row is findable by slug. The slug comes from review/sources.tsv
     (cand_fullname, else orig_fullname), the same data the verdict uses.
@@ -146,6 +153,12 @@ HEADER_CHECK5_GROUND = (
     "Check 5 = a per-sample measurement retired 2026-11-16; mentions in "
     "records are historical; no action. "
 )
+# BREVITY wave 2 adjudication 5: the sweep-level fact formerly repeated in
+# all 49 fresh PASS rows' verdict clauses is stated once here and once on
+# the top page, so the commonest verdict renders as the short "PASS".
+HEADER_PASS_GROUND = (
+    "A fresh PASS row passed at the ledger determination with no OPEN items. "
+)
 
 # --- mechanical sources for the reader-facing verdict / slug -------------
 
@@ -208,6 +221,10 @@ def source_row(r, by_cand, by_orig):
 _MERGED = re.compile(r"^Complete \(merged in (?:EN|CN|KO)\d+, (.*)\)$")
 _SETTLED = re.compile(r" \(settled in (?:EN|CN|KO)\d+\)$")
 _WAVE_CODE = re.compile(r"(?:EN|CN|KO)\d+")
+# BREVITY wave 2 adjudication 6: bookkeeping-only parenthetical. The rev it
+# names already appears in the row's own Reference rev field, so the reader
+# phrase drops to plain "Complete".
+_INCORPORATED_REV = re.compile(r"^Complete \(incorporated at rev \d+\)$")
 
 
 def prep_parts(seibi):
@@ -235,10 +252,14 @@ def prep_parts(seibi):
         return "no-candidate", _SETTLED.sub("", seibi)
     fixed = {
         "Complete": "complete",
-        "Complete (reference rev recorded)": "reference-rev",
         "Complete (diff applied)": "diff-applied",
         "Complete (no reference rev: JP original)": "jp-original",
     }
+    # BREVITY wave 2 adjudication 6: these two parentheticals are pure
+    # bookkeeping. The rev numbers they name are already carried by each
+    # row's own Reference rev field, so dropping them loses no fact.
+    if seibi == "Complete (reference rev recorded)" or _INCORPORATED_REV.match(seibi):
+        return "bookkeeping", "Complete"
     if seibi in fixed:
         return fixed[seibi], seibi
     if seibi.startswith("Complete (") and seibi.endswith(")"):
@@ -254,8 +275,10 @@ def verdict_parts(fullname, rec, sources_verdict):
     render in the short form "<record verdict> (stamp: STALE)": the repair
     ground that used to be re-printed in all 237 STALE rows is stated once
     in each subpage header and once on the top page (BREVITY finding 1).
-    Non-STALE rows keep their one-line ground; citations and the sha256 are
-    trimmed, the substantive ground is kept verbatim.
+    A fresh PASS renders as the bare word "PASS" (its sweep-level clause is
+    stated once per subpage header and once on the top page). Other non-STALE
+    rows keep their one-line ground; citations and the sha256 are trimmed,
+    the substantive ground is kept verbatim.
 
     STALE rows follow the coordinator's ruling (recorded on pages/start.txt
     under "Overall state (at a glance)"): every post-verdict change landed
@@ -279,6 +302,11 @@ def verdict_parts(fullname, rec, sources_verdict):
     if word == "STALE":
         record_word = sources_verdict or "PASS"
         return word, f"{record_word} (stamp: STALE)"
+    if word == "PASS":
+        # BREVITY wave 2 adjudication 5: fresh PASS matches the short STALE
+        # form. The sweep-level fact its clause carried is stated once in
+        # each subpage header (HEADER_PASS_GROUND) and once on the top page.
+        return word, word
     phrase = f"{word} \u2014 {ground}" if ground else word
     if sources_verdict and sources_verdict != word:
         phrase += f" (record verdict: {sources_verdict})"
@@ -402,7 +430,7 @@ def render_page(title, rows, navline):
         '[[div class="content-panel standalone centered"]]',
         '[[div class="panel-body"]]',
         "Subpage of the top page's theme table; how to read the columns is on the top page. "
-        + HEADER_STALE_GROUND + HEADER_CHECK5_GROUND
+        + HEADER_STALE_GROUND + HEADER_PASS_GROUND + HEADER_CHECK5_GROUND
         + f"This subpage has {len(rows)} rows. {navline}",
         "[[/div]]",
         "[[/div]]",
