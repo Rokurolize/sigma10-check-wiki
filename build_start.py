@@ -153,15 +153,11 @@ NO_CHANGE_PROC = {
 }
 
 # Grounds stated once per subpage header (BREVITY finding 1): the row forms
-# carry only the short forms, this line carries the justification. The Check 5
-# line is a pointer; its full definition lives in the top-page Glossary.
+# carry only the short forms, this line carries the justification.
 HEADER_STALE_GROUND = (
     "Stamp STALE = candidate revised after the verdict through recorded "
     "repairs; the record verdict stands and the row is posted like PASS "
     "(ruling on the top page). "
-)
-HEADER_CHECK5_GROUND = (
-    "Check 5 = a retired per-sample measurement (see the top page). "
 )
 # BREVITY wave 3 adjudication A: the fresh-PASS ground is no longer repeated
 # in every subpage header; it is stated once on the top page in Overall state
@@ -437,7 +433,7 @@ def render_page(title, rows, navline):
         '[[div class="content-panel standalone centered"]]',
         '[[div class="panel-body"]]',
         "Subpage of the top page's theme table; how to read the columns is on the top page. "
-        + HEADER_STALE_GROUND + HEADER_CHECK5_GROUND
+        + HEADER_STALE_GROUND
         + f"This subpage has {len(rows)} rows. {navline}",
         "[[/div]]",
         "[[/div]]",

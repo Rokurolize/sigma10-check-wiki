@@ -1,4 +1,5 @@
 # Review package — theme:cmst-jp (CN → JP port)
+New to this package's shorthand? Read the notation key first: [How to read a review package](../HOW-TO-READ.md).
 
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp

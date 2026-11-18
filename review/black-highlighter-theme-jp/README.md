@@ -1,4 +1,5 @@
 # Review package — theme:black-highlighter-theme-jp (EN → JP, kind K6: production-matched migration)
+New to this package's shorthand? Read the notation key first: [How to read a review package](../HOW-TO-READ.md).
 
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp

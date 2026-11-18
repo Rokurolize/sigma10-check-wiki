@@ -1,4 +1,5 @@
 # Review package — theme:min-theme-jp (JP original "Min Theme")
+New to this package's shorthand? Read the notation key first: [How to read a review package](../HOW-TO-READ.md).
 
 This is a **class S / K3 special package**. Its first part is a production mirror, not a
 reference-revision fetch, because the theme is a Japanese original: there is no upstream

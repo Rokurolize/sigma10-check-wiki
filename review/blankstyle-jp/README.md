@@ -1,4 +1,5 @@
 # theme:blankstyle-jp — review package
+New to this package's shorthand? Read the notation key first: [How to read a review package](../HOW-TO-READ.md).
 
 An English theme by Placeholder McD and HarryBlank (March 2021). The JP candidate is a production-adoption row (kind K6): the SCP-JP production page already carries the theme in Japanese, the staff migration for it is recorded as a three-hunk delta (pages/phase17-diff-blankstyle-jp.txt), and the candidate reorganizes the production stylesheet into a single head module so the theme can be applied standalone, as its own closing prose declares. The theme carried one blocking item, ledger item 1 [E] (credit-modal text contrast 1.07), re-judged DISPOSITIONED by FIX5-CONTRA; the disposition is re-derived from this package's bytes in the per-theme record below and confirmed on every leg. Three content drops that neither the original nor the production page makes, and that no record dispositions, are flagged in section 8: the documentation body, the bundled-component delivery zone, and the tag-gated S&C Plastics variant module.
 
