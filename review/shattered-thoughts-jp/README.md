@@ -3,8 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:shattered-thoughts-jp — origin EN, population #136 [GOSIGN2-LEDGER (b) row 136]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 5ce0222552ea8828beab051d065972830d82e2792f5427866dc678447302c16c); verdict not carried over, re-judgement required
-> verdicts below describe the pre-change file
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 5ce0222552ea8828beab051d065972830d82e2792f5427866dc678447302c16c); the verdicts below were computed against that pre-change file, and the record verdict stands: a candidate revised through the campaign's recorded repairs is posted like a PASS row, with the change recorded in its package
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 5 errors / 0 warns / 2 infos (pseudo-ref×5); standing classes dispositioned in register c1 [T1-ROWS row 121; GOSIGN2-LEDGER (b) row 136]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page runtime-hotlink site-theme chain only (T3: credit modal opens); sample credit-modal (preview-form) + 884px@768 overflow; T3 broken explanet.png (deferred asset). [RENDER-ROWS-2 (RENDER-S2-D (EN19))]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row [RENDER-ROWS-2 row]

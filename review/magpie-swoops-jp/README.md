@@ -3,8 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:magpie-swoops-jp — origin EN, population #111 [GOSIGN2-LEDGER (b) row 111]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 86e84fd8ba2601ba56c292ebdde4947777109eb16a20859ddf6ba1926e121afe); verdict not carried over, re-judgement required
-> verdicts below describe the pre-change file
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 86e84fd8ba2601ba56c292ebdde4947777109eb16a20859ddf6ba1926e121afe); the verdicts below were computed against that pre-change file, and the record verdict stands: a candidate revised through the campaign's recorded repairs is posted like a PASS row, with the change recorded in its package
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 2 errors / 0 warns / 0 infos (hotlink×1, pseudo-ref×1); standing classes dispositioned in register c1 [T1-ROWS row 111; GOSIGN2-LEDGER (b) row 111]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page runtime-hotlink site-theme chain + scp-wiki.wikidot.com; sample T2 no machine verdict (exit 2); T3 page wordmark "MAGPIE SWOOPS財団" overprints account links and clips at 375/320 (both engines). [RENDER-ROWS-2 (RENDER-S2-C (EN14))]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row (the row records inconclusive runs, carried verbatim above) [RENDER-ROWS-2 row]

@@ -43,8 +43,30 @@ STATUS_INTRO = (
     "移行手続きは start-themes.tsv のスタッフ適用手続きと同READMEのクロスリファレンスから機械的に生成されています（build_existing_index.py）。"
     "公開済みページは移行日に影響を受ける優先の検証面です。"
 )
-HEADER4 = "||~ 状態・手続き ||"
+HEADER_ROW = "||~ ページ ||~ タイトル ||~ リンク ||~ 状態・手続き ||"
 MARKER = "各行の「状態・手続き」"
+
+# The four columns are named explicitly: the source row's trailing cell
+# separator used to leave an empty, unnamed header cell before 状態・手続き.
+GITHUB_REVIEW = ("https://github.com/Rokurolize/sigma10-check-wiki/tree/main/review/")
+
+# Generated phrases, rendered in Japanese in keeping with this page's voice.
+# Every fact (reproduction state, procedure, record kind) keeps its content;
+# only the wording changes. Unknown source values are passed through verbatim.
+REPRO_JP = {"match": "一致", "mismatch": "不一致"}
+KIND_JP = {
+    "collapsible difference": "折りたたみの差",
+    "tab difference": "タブの差",
+    "text difference": "テキストの差",
+    "image difference": "画像の差",
+    "literal difference": "リテラルの差",
+}
+PROC_JP = {
+    "No source change at migration; keep as-is": "移行時のソース変更なし（そのまま維持）",
+    "No change (keep as-is)": "変更なし（そのまま維持）",
+    "Apply the diff page to the existing page": "既存ページに差分ページを適用",
+    "Legacy record; no action (keep as-is)": "記録用レコード；対応不要（そのまま維持）",
+}
 
 
 def load_xrefs():
@@ -87,7 +109,7 @@ def load_staff():
             proc = r["staff"] or "No change (keep as-is)"
             diff = ""
             if r["diff"] == "1":
-                diff = f"[[[phase17-diff-{r['orig_slug']}-jp|diff page]]]"
+                diff = f"[[[phase17-diff-{r['orig_slug']}-jp|差分ページ]]]"
             out[r["existing"].replace(":", "-")] = (r["exist"], proc, diff)
     return out
 
@@ -106,21 +128,55 @@ def short_xref(text):
     return text[:90]
 
 
+def jp_repro(text):
+    """Translate a reproduction-state value without dropping any fact."""
+    if text in REPRO_JP:
+        return REPRO_JP[text]
+    m = re.fullmatch(r"match \(re-measured at ([^)]+)\)", text)
+    if m:
+        return f"一致（{m.group(1)} で再計測）"
+    m = re.fullmatch(r"mismatch \((.+)\)", text)
+    if m:
+        kinds = [KIND_JP.get(k.strip(), k.strip()) for k in m.group(1).split(",")]
+        return "不一致（" + "、".join(kinds) + "）"
+    return text
+
+
+def jp_proc(text):
+    """Translate a generated procedure phrase; keep unknown values verbatim."""
+    return PROC_JP.get(text, text)
+
+
+def jp_record(text):
+    """Translate a record kind; turn review/<dir>/ paths into GitHub links."""
+    if text.startswith("production counterpart of "):
+        return "本番相当ページ: " + text[len("production counterpart of "):]
+    if text == "no theme row; parity record only":
+        return "テーマ表の行なし；描画再現記録のみ"
+    if text == "legacy record; no action":
+        return "記録用レコード；対応不要"
+    m = re.fullmatch(r"cited in (review/([A-Za-z0-9-]+)/)", text)
+    if m:
+        path, directory = m.group(1), m.group(2)
+        return f"記録出典: [{GITHUB_REVIEW}{directory} {path}]"
+    return text
+
+
 def status_cell(fullname, xrefs, parity, staff):
     # `bare` is the check-wiki target slug (theme-x), the key shape used
     # by load_staff().
     bare = fullname.split(":", 1)[1]
     if bare in staff:
         repro, proc, diff = staff[bare]
-        proc = proc + (f" ({diff})" if diff else "")
+        proc = jp_proc(proc) + (f" ({diff})" if diff else "")
     else:
         repro = parity.get(bare, "match")
-        proc = "No source change at migration; keep as-is"
+        proc = jp_proc("No source change at migration; keep as-is")
     kind, xref = xrefs.get(fullname, ("unknown", "no record"))
-    record = short_xref(xref)
+    record = jp_record(short_xref(xref))
     if kind.startswith("old"):
-        proc = "Legacy record; no action (keep as-is)"
-    return f"再現状態: {repro} / 移行手続き: {proc} / 記録: {record}"
+        proc = jp_proc("Legacy record; no action (keep as-is)")
+    return f"再現状態: {jp_repro(repro)} / 移行手続き: {proc} / 記録: {record}"
 
 
 def generate():
@@ -133,7 +189,7 @@ def generate():
     records = 0
     for line in lines:
         if line.startswith("||~"):
-            out.append(line if HEADER4 in line else line + " " + HEADER4)
+            out.append(HEADER_ROW)
         elif line.startswith("||"):
             cells = [c.strip() for c in line.split("||")[1:-1]]
             if len(cells) < 3:

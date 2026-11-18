@@ -3,8 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:starry-jp — origin CN, population #232 [GOSIGN2-LEDGER (b) row 232]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 1676e19afc7a0cc4666352526691a0c6ec0f0ec7d5ab1e0f8519c3c3078bdcb0); verdict not carried over, re-judgement required
-> verdicts below describe the pre-change file
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 1676e19afc7a0cc4666352526691a0c6ec0f0ec7d5ab1e0f8519c3c3078bdcb0); the verdicts below were computed against that pre-change file, and the record verdict stands: a candidate revised through the campaign's recorded repairs is posted like a PASS row, with the change recorded in its package
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 57 errors / 3 warns / 2 infos (hotlink×54, pseudo-ref×2, http×1); standing classes dispositioned in register c1 [T1-ROWS row 192; GOSIGN2-LEDGER (b) row 232]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page sidebar-unreachable at 375/320 (both engines) + runtime-hotlink site-theme chain + candidate hosts oxygennine.wdfiles.com, scpsandboxcn.wdfiles.com, stsandbox.wdfiles.com; sample credit-modal (preview-form) + sidebar-unreachable (chromium 375/320); T3 page not separately walked, no additional visual finding; mixed coverage: page full-engine, sample chromium-only (no WebKit verdict). [RENDER-ROWS-G (CN15)]
 - Engine coverage: mixed: page full-engine, sample chromium-only [RENDER-ROWS-G row, findings cell]

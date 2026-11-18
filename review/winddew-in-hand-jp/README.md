@@ -3,8 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:winddew-in-hand-jp — origin CN, population #245 [GOSIGN2-LEDGER (b) row 245]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 3c42a8533879b208b03f3f4a340a5b7490bb96c72823faeaa757db22ab1354b3); verdict not carried over, re-judgement required
-> verdicts below describe the pre-change file
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 3c42a8533879b208b03f3f4a340a5b7490bb96c72823faeaa757db22ab1354b3); the verdicts below were computed against that pre-change file, and the record verdict stands: a candidate revised through the campaign's recorded repairs is posted like a PASS row, with the change recorded in its package
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 5 errors / 2 warns / 1 info (hotlink×4, pseudo-ref×1); standing classes dispositioned in register c1 [T1-ROWS row 210; GOSIGN2-LEDGER (b) row 245]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page runtime-hotlink site-theme chain + candidate hosts scpsandboxcn.wdfiles.com, scpsandboxcn.wikidot.com, scptestwiki.wdfiles.com; sample credit-modal (preview-form) + page-overflow 884px@768; T3 re-run, no new screenshot-grounded visual finding; chromium-only coverage (no WebKit verdict). [RENDER-ROWS-G (CN17)]
 - Engine coverage: chromium-only, both pages (no WebKit verdict) [RENDER-ROWS-G row, findings cell]

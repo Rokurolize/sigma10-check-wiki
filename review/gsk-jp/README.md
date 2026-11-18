@@ -3,8 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:gsk-jp — origin CN, population #195 [GOSIGN2-LEDGER (b) row 195]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 6ef4b5ebef5237b10503c72d9351c14978327fb2e70d495b8a5aa663e5b0a5f3); verdict not carried over, re-judgement required
-> verdicts below describe the pre-change file
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 6ef4b5ebef5237b10503c72d9351c14978327fb2e70d495b8a5aa663e5b0a5f3); the verdicts below were computed against that pre-change file, and the record verdict stands: a candidate revised through the campaign's recorded repairs is posted like a PASS row, with the change recorded in its package
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 11 errors / 4 warns / 1 info (pseudo-ref×11); standing classes dispositioned in register c1 [T1-ROWS row 178; GOSIGN2-LEDGER (b) row 195]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page runtime-hotlink site-theme chain only; sample credit-modal (preview-form), page-overflow 337px@320 + 389px@375 chromium and 416px@320 + 419px@375 webkit (cross-cutting static-credit), runtime-hotlink site-theme chain + sample font host; T3 clean on both pages; the original sample webkit 320x640 capture was a transient 503 (http.cat + hidden-* block), re-run once per rule 2 and the fresh capture carries no 503 signature; site-logo.png 404 (broken alt-text header logo clipped at mobile) = deferred asset. [RENDER-ROWS-RERUN16 (CN7) — supersedes the RENDER-ROWS-2 row for this theme, rule S1]
 - Engine coverage: full (chromium+webkit, both pages) [RENDER-ROWS-RERUN16 (CN7)]

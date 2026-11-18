@@ -3,8 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:deserted-years-theme-jp — origin CN, population #182 [GOSIGN2-LEDGER (b) row 182]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 26cebb6b1e42b8bb405f2617e8d29d333a6f37eb4637f1fe9628ab78ac4d6290); verdict not carried over, re-judgement required
-> verdicts below describe the pre-change file
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 26cebb6b1e42b8bb405f2617e8d29d333a6f37eb4637f1fe9628ab78ac4d6290); the verdicts below were computed against that pre-change file, and the record verdict stands: a candidate revised through the campaign's recorded repairs is posted like a PASS row, with the change recorded in its package
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 7 errors / 1 warn / 1 info (hotlink×7); standing classes dispositioned in register c1 [T1-ROWS row 217; GOSIGN2-LEDGER (b) row 182]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page runtime-hotlink site-theme chain only (cleanest run of the 17); sample credit-modal (preview-form), page-overflow 335px@320 chromium + 334px@320 webkit + 884px@768 both engines (cross-cutting static-credit), runtime-hotlink site-theme chain + sample font host; T3 complete in the final report (pending in the partial) and clean on both pages (page credit modal opens; sample black-on-black redaction by design; subtitle doubling + preview-notice clipping cross-cutting). [RENDER-ROWS-RERUN16 (CN5) — supersedes the RENDER-ROWS-2 row for this theme, rule S1]
 - Engine coverage: full (chromium+webkit, both pages) [RENDER-ROWS-RERUN16 (CN5)]

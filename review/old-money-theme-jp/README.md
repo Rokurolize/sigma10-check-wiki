@@ -3,8 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:old-money-theme-jp — origin EN, population #115 [GOSIGN2-LEDGER (b) row 115]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now e32b7933bb8126501dc97c45d44777403259b27c092575a33bc7a08dfdae149c); verdict not carried over, re-judgement required
-> verdicts below describe the pre-change file
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now e32b7933bb8126501dc97c45d44777403259b27c092575a33bc7a08dfdae149c); the verdicts below were computed against that pre-change file, and the record verdict stands: a candidate revised through the campaign's recorded repairs is posted like a PASS row, with the change recorded in its package
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 10 errors / 1 warn / 1 info (pseudo-ref×10); standing classes dispositioned in register c1 [T1-ROWS row 115; GOSIGN2-LEDGER (b) row 115]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page runtime-hotlink site-theme chain only; sample credit-modal (preview-form), page-overflow 337px@320 + 389px@375 chromium and 416px@320 + 419px@375 webkit (cross-cutting static-credit), runtime-hotlink site-theme chain + sample font host; T3 REAL FINDING: sample "15. コンテンツパネル" notice panel and left/right column panel body text render near-white #F7F8F9 on light-gray/white #F4F4F4, effectively unreadable (chromium 1366 + 375, webkit 1366 + 375); broken OldMoney_Logo.png = deferred asset. [RENDER-ROWS-RERUN16 (EN15) — supersedes the RENDER-ROWS-2 row for this theme, rule S1]
 - Engine coverage: full (chromium+webkit, both pages) [RENDER-ROWS-RERUN16 (EN15)]

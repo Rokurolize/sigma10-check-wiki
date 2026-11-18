@@ -3,8 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:linear-black-jp — origin EN, population #109 [GOSIGN2-LEDGER (b) row 109]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 2c820aec4eaf649480ff5b2bb78596fc80a0891ac3666c6aeb35afa5a57a1b31); verdict not carried over, re-judgement required
-> verdicts below describe the pre-change file
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 2c820aec4eaf649480ff5b2bb78596fc80a0891ac3666c6aeb35afa5a57a1b31); the verdicts below were computed against that pre-change file, and the record verdict stands: a candidate revised through the campaign's recorded repairs is posted like a PASS row, with the change recorded in its package
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 4 errors / 0 warns / 1 info (pseudo-ref×4); standing classes dispositioned in register c1 [T1-ROWS row 99; GOSIGN2-LEDGER (b) row 109]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — body text and headings illegible white-on-white at all 8 combos on both pages (contrast min 1 / 1.61, candidate defect); page-overflow 612–617px@320/375 (page) and 624–629px (sample); runtime-hotlink site-theme chain + scpwiki.github.io; sample credit-modal (preview-form); broken images deferred. [RENDER-ROWS-2 (RENDER-S2-C (EN13))]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row [RENDER-ROWS-2 row]

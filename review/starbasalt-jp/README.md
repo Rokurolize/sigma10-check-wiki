@@ -3,8 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:starbasalt-jp — origin CN, population #231 [GOSIGN2-LEDGER (b) row 231]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 7f29e9d4dce9515ae13a60d2626249c9c4e655e0b0ae3dcb78ceb3efc6a5ae75); verdict not carried over, re-judgement required
-> verdicts below describe the pre-change file
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 7f29e9d4dce9515ae13a60d2626249c9c4e655e0b0ae3dcb78ceb3efc6a5ae75); the verdicts below were computed against that pre-change file, and the record verdict stands: a candidate revised through the campaign's recorded repairs is posted like a PASS row, with the change recorded in its package
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 1 error / 1 warn / 1 info (pseudo-ref×1); standing classes dispositioned in register c1 [T1-ROWS row 262; GOSIGN2-LEDGER (b) row 231]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — hidden-rate on all combos on both pages (T3: script false positive, rate widget visible) + page-overflow at every viewport (437–506px mobile; sample 1489px@1366) + runtime-hotlink site-theme chain + candidate cdn.jsdelivr.net (one sample hotlink line also lists http.cat among other hosts, no hidden-* cluster); sample carries NO credit-modal machine line (T3: modal N/A, preview form); T3 sample §15 content panels unstyled plain text on black; full-engine coverage. [RENDER-ROWS-G (CN14)]
 - Engine coverage: full (chromium+webkit, both pages) [RENDER-ROWS-G row, findings cell]

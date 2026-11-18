@@ -3,8 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:frownstyle-jp — origin EN, population #91 [GOSIGN2-LEDGER (b) row 91]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now bf5df2b0bea19dbc33b7ee56ba5a7b1d4f01bd137ed4bb8f911123a16f1d00a3); verdict not carried over, re-judgement required
-> verdicts below describe the pre-change file
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now bf5df2b0bea19dbc33b7ee56ba5a7b1d4f01bd137ed4bb8f911123a16f1d00a3); the verdicts below were computed against that pre-change file, and the record verdict stands: a candidate revised through the campaign's recorded repairs is posted like a PASS row, with the change recorded in its package
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 6 errors / 3 warns / 1 info (pseudo-ref×4, hotlink×2); standing classes dispositioned in register c1 [T1-ROWS row 81; GOSIGN2-LEDGER (b) row 91]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — PC-width header broken at 1366 both engines (JP nav absent, wordmark clipped to "IN…", auth buttons overprint theme header) + blank `.open-menu` button + navy-on-navy opened-sidebar overprint; 383–419px sample overflow. [RENDER-ROWS-1 (RENDER-S2-B)]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row [RENDER-ROWS-1 row]

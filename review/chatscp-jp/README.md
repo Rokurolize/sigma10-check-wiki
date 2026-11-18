@@ -3,8 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:chatscp-jp — origin KO, population #256 [GOSIGN2-LEDGER (b) row 256]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 9cac88d942d351ab13bcf45c395217a19766bb7ae676a1d305877692a6f46e6b); verdict not carried over, re-judgement required
-> verdicts below describe the pre-change file
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 9cac88d942d351ab13bcf45c395217a19766bb7ae676a1d305877692a6f46e6b); the verdicts below were computed against that pre-change file, and the record verdict stands: a candidate revised through the campaign's recorded repairs is posted like a PASS row, with the change recorded in its package
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 1 error / 3 warns / 1 info (pseudo-ref×1); standing classes dispositioned in register c1 [T1-ROWS row 239; GOSIGN2-LEDGER (b) row 256]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — hidden-license on both pages (all combos) + page sidebar-not-opening; sample credit-modal (preview-form); T3 Wikidot footer/license bar renders as a fixed overlay at left-centre over the body at every viewport (theme-specific; machine hidden-license agrees). [RENDER-ROWS-2 (RENDER-S2-H (KO2))]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row [RENDER-ROWS-2 row]

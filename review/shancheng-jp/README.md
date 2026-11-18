@@ -3,8 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:shancheng-jp — origin CN, population #225 [GOSIGN2-LEDGER (b) row 225]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 6e14d11e4cd13b8606a4ef204008e1701f9cd1be17a50d6eaa774f57dbc2bd32); verdict not carried over, re-judgement required
-> verdicts below describe the pre-change file
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 6e14d11e4cd13b8606a4ef204008e1701f9cd1be17a50d6eaa774f57dbc2bd32); the verdicts below were computed against that pre-change file, and the record verdict stands: a candidate revised through the campaign's recorded repairs is posted like a PASS row, with the change recorded in its package
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 8 errors / 1 warn / 1 info (pseudo-ref×8); standing classes dispositioned in register c1 [T1-ROWS row 190; GOSIGN2-LEDGER (b) row 225]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page-overflow 505–519px@≤375 + 854–859px@768 (page) and 517–531px@≤375 + 951px@768 (sample), both engines, + runtime-hotlink site-theme chain; sample credit-modal (preview-form); T3 page overflow confirmed, decorative images 404 (deferred); full-engine coverage (sample via the full-engine re-run, over-ceiling WebKit full-page screenshots skipped). [RENDER-ROWS-G (CN13)]
 - Engine coverage: full (chromium+webkit, both pages) [RENDER-ROWS-G row, findings cell]

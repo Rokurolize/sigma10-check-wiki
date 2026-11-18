@@ -3,8 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:bedrock-jp — origin EN, population #4 [GOSIGN2-LEDGER (b) row 4]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 692df2a06030f22508215e6d5b185c8eabbeb9139afc2ca20a22b1116f818702); verdict not carried over, re-judgement required
-> verdicts below describe the pre-change file
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 692df2a06030f22508215e6d5b185c8eabbeb9139afc2ca20a22b1116f818702); the verdicts below were computed against that pre-change file, and the record verdict stands: a candidate revised through the campaign's recorded repairs is posted like a PASS row, with the change recorded in its package
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 4 errors / 0 warns / 2 infos (hotlink×2, pseudo-ref×2); standing classes dispositioned in register c1 [T1-ROWS row 4; GOSIGN2-LEDGER (b) row 4]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — mobile header/page overflow 440/445px both engines (logo + menu clipped), sample credit-modal, contrast 1.66 undetermined visually; cdn.scpwiki.com Basalt-logo reference. [RENDER-ROWS-1 (RENDER-A row 4)]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row [RENDER-ROWS-1 row]

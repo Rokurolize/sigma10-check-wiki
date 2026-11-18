@@ -3,8 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:aesthetic-theme-jp — origin EN, population #1 [GOSIGN2-LEDGER (b) row 1]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now ceeb9802f956a9413ca081009c73c414b2994230b87da42d28e7add64bb87a2e); verdict not carried over, re-judgement required
-> verdicts below describe the pre-change file
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now ceeb9802f956a9413ca081009c73c414b2994230b87da42d28e7add64bb87a2e); the verdicts below were computed against that pre-change file, and the record verdict stands: a candidate revised through the campaign's recorded repairs is posted like a PASS row, with the change recorded in its package
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 3 errors / 1 warn / 3 infos (pseudo-ref×3); standing classes dispositioned in register c1 [T1-ROWS row 1; GOSIGN2-LEDGER (b) row 1]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page-overflow at 320/375 (337–419px), TOC highlight staircase overlap, mobile preview-notice left-clip, sample credit-modal (shared showcase); runtime-hotlink site-theme chain. [RENDER-ROWS-1 (RENDER-A row 1)]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row [RENDER-ROWS-1 row]

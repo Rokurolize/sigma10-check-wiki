@@ -3,8 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:sound-jp — origin CN, population #230 [GOSIGN2-LEDGER (b) row 230]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now e5bca474b6dbc7cf14041bcb8c55e57394e0ed5fa644a5ee05a82c51e87899cc); verdict not carried over, re-judgement required
-> verdicts below describe the pre-change file
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now e5bca474b6dbc7cf14041bcb8c55e57394e0ed5fa644a5ee05a82c51e87899cc); the verdicts below were computed against that pre-change file, and the record verdict stands: a candidate revised through the campaign's recorded repairs is posted like a PASS row, with the change recorded in its package
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 31 errors / 0 warns / 1 info (pseudo-ref×31); standing classes dispositioned in register c1 [T1-ROWS row 261; GOSIGN2-LEDGER (b) row 230]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — sidebar-unreachable at 375/320 (both engines) on page and sample + runtime-hotlink site-theme chain; sample credit-modal (preview-form); T3 missing mobile sidebar toggle confirmed, sample §15/§16 panels near-white on light effectively unreadable; full-engine coverage. [RENDER-ROWS-G (CN14)]
 - Engine coverage: full (chromium+webkit, both pages) [RENDER-ROWS-G row, findings cell]

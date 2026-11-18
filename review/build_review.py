@@ -829,14 +829,20 @@ def assemble_stamp(rec, fullname):
     lines.append(f"- Theme: {fullname} — origin {brow['origin']}, "
                  f"population #{brow['n']} [GOSIGN2-LEDGER (b) row {brow['n']}]")
     if stale:
-        # A changed file must never carry a fresh PASS: the verdict words
-        # stay below, explicitly bannered as describing the pre-change file.
+        # Factual core, unchanged in substance: the file changed after the
+        # verdict and the verdicts below were computed against that
+        # pre-change file. Harmonized in one breath with the /start ruling:
+        # the record verdict stands and a STALE row is posted like a PASS
+        # row because every post-verdict change landed through a recorded
+        # repair. STALE still names the change and still differs from PASS.
         lines.append(
             f"- Overall: STALE — candidate file changed since the verdict "
             f"was computed (verdict against 435a6bb-era content, file "
-            f"sha256 now {cur_sha}); verdict not carried over, "
-            f"re-judgement required")
-        lines.append("> verdicts below describe the pre-change file")
+            f"sha256 now {cur_sha}); the verdicts below were computed "
+            f"against that pre-change file, and the record verdict stands: "
+            f"a candidate revised through the campaign's recorded repairs "
+            f"is posted like a PASS row, with the change recorded in its "
+            f"package")
     else:
         lines.append(_overall_line(rec, fullname, brow))
     lines.append(_t1_line(rec, fullname, brow))

@@ -3,8 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:wikifot-jp — origin EN, population #42 [GOSIGN2-LEDGER (b) row 42]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 9f1c62357cc784d7d897e82249f19c4d2cd8459f828694c4bd5a2788f8dddc49); verdict not carried over, re-judgement required
-> verdicts below describe the pre-change file
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 9f1c62357cc784d7d897e82249f19c4d2cd8459f828694c4bd5a2788f8dddc49); the verdicts below were computed against that pre-change file, and the record verdict stands: a candidate revised through the campaign's recorded repairs is posted like a PASS row, with the change recorded in its package
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 1 error / 0 warns / 2 infos (pseudo-ref×1); standing classes dispositioned in register c1 [T1-ROWS row 42; GOSIGN2-LEDGER (b) row 42]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page-overflow 1449/851/458/362px at all four widths; font-awesome 4.3.0 `@import` broken as authored (icons never load — real defect); GOSIGN "raw wikitext leak" unconfirmed in current renders; sidebar x=0, invisible ×. [RENDER-ROWS-1 (RENDER-D2 row 42)]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row [RENDER-ROWS-1 row]

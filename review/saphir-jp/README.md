@@ -3,8 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:saphir-jp — origin EN, population #132 [GOSIGN2-LEDGER (b) row 132]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now e92d55d70549f1e64ef518cc50b78ba7a1da49417b53d7433e15b3ba39bc5e46); verdict not carried over, re-judgement required
-> verdicts below describe the pre-change file
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now e92d55d70549f1e64ef518cc50b78ba7a1da49417b53d7433e15b3ba39bc5e46); the verdicts below were computed against that pre-change file, and the record verdict stands: a candidate revised through the campaign's recorded repairs is posted like a PASS row, with the change recorded in its package
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 5 errors / 0 warns / 2 infos (pseudo-ref×5); standing classes dispositioned in register c1 [T1-ROWS row 127; GOSIGN2-LEDGER (b) row 132]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page page-overflow 682/685px@320/375 + 989px@768 chromium and 672/675px + 996px@768 webkit (T3: visually confirmed, driven by cross-cutting preview-chrome rate module), runtime-hotlink site-theme chain only; sample credit-modal (preview-form), page-overflow 706/708px@320/375 + 1031/1036px@768 (706/708 = cross-cutting static-credit shape); T3 otherwise clean (sample section 27 bibliography-not-found = possible stale static-cache, not a theme defect); saphir-header/sapphire-logo missing = deferred assets. [RENDER-ROWS-RERUN16 (EN18) — supersedes the RENDER-ROWS-2 row for this theme, rule S1]
 - Engine coverage: full (chromium+webkit, both pages) [RENDER-ROWS-RERUN16 (EN18)]

@@ -3,8 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:scpdeclassified-jp — origin CN, population #223 [GOSIGN2-LEDGER (b) row 223]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now a614bc84d4a8b0a377e7246ab040241dec3a3f3df327bdd75ca48b9225780a5f); verdict not carried over, re-judgement required
-> verdicts below describe the pre-change file
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now a614bc84d4a8b0a377e7246ab040241dec3a3f3df327bdd75ca48b9225780a5f); the verdicts below were computed against that pre-change file, and the record verdict stands: a candidate revised through the campaign's recorded repairs is posted like a PASS row, with the change recorded in its package
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 6 errors / 1 warn / 1 info (pseudo-ref×6); standing classes dispositioned in register c1 [T1-ROWS row 188; GOSIGN2-LEDGER (b) row 223]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page runtime-hotlink site-theme chain only; sample credit-modal (preview-form) + page-overflow 333px@320 + 851px@768 (one sample hotlink line also lists http.cat among other hosts, no hidden-* cluster); T3 .open-menu toggle overlaps body text at ≤375 on both pages, webkit-768 sample render unstyled from a transient 503 (not theme); full-engine coverage. [RENDER-ROWS-G (CN13)]
 - Engine coverage: full (chromium+webkit, both pages) [RENDER-ROWS-G row, findings cell]

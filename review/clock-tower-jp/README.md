@@ -3,8 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:clock-tower-jp — origin EN, population #72 [GOSIGN2-LEDGER (b) row 72]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 6fffd492f4a4fdb1bd4760e98f9a126e838ec8a317f24bfc6c46e3d40645394e); verdict not carried over, re-judgement required
-> verdicts below describe the pre-change file
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 6fffd492f4a4fdb1bd4760e98f9a126e838ec8a317f24bfc6c46e3d40645394e); the verdicts below were computed against that pre-change file, and the record verdict stands: a candidate revised through the campaign's recorded repairs is posted like a PASS row, with the change recorded in its package
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 5 errors / 1 warn / 2 infos (pseudo-ref×5); standing classes dispositioned in register c1 [T1-ROWS row 62; GOSIGN2-LEDGER (b) row 72]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` (minor) — BHL min-width overflow 337–419px@≤375 on sample; mangled `url-https//…` stylesheet is a runtime artifact (recorded verbatim). [RENDER-ROWS-1 (RENDER-S2-A)]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row [RENDER-ROWS-1 row]

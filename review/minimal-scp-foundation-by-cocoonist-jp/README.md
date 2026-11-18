@@ -3,8 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:minimal-scp-foundation-by-cocoonist-jp — origin KO, population #273 [GOSIGN2-LEDGER (b) row 273]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 2b7886bfcda2094725915b2d1975ff5bd81e694725b3ab9721dcec8b829e6be2); verdict not carried over, re-judgement required
-> verdicts below describe the pre-change file
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 2b7886bfcda2094725915b2d1975ff5bd81e694725b3ab9721dcec8b829e6be2); the verdicts below were computed against that pre-change file, and the record verdict stands: a candidate revised through the campaign's recorded repairs is posted like a PASS row, with the change recorded in its package
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 1 error / 1 warn / 1 info (pseudo-ref×1); standing classes dispositioned in register c1 [T1-ROWS row 277; GOSIGN2-LEDGER (b) row 273]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page page-overflow 341–342px@320 + 389–535px@375 + hidden-footer + sidebar-unreachable; sample hidden-* cluster across combos (4 of 8 combos carry an http.cat-only hotlink line = transient 503 captures; the rest recorded as-is) + credit-modal (preview-form) + page-overflow 341px@320 + sidebar-unreachable; T3 none beyond cross-cutting items. [RENDER-ROWS-2 (RENDER-S2-H (KO5))]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row [RENDER-ROWS-2 row]

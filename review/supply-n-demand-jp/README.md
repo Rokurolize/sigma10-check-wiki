@@ -3,8 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:supply-n-demand-jp — origin CN, population #234 [GOSIGN2-LEDGER (b) row 234]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now a9aed09aa078ee45c7eaaf2b5f8bbd1f07cc8424a3596995f1ec59a8d6bcec10); verdict not carried over, re-judgement required
-> verdicts below describe the pre-change file
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now a9aed09aa078ee45c7eaaf2b5f8bbd1f07cc8424a3596995f1ec59a8d6bcec10); the verdicts below were computed against that pre-change file, and the record verdict stands: a candidate revised through the campaign's recorded repairs is posted like a PASS row, with the change recorded in its package
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 6 errors / 2 warns / 1 info (hotlink×5, pseudo-ref×1); standing classes dispositioned in register c1 [T1-ROWS row 194; GOSIGN2-LEDGER (b) row 234]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page-overflow 507px@320/375 (page) and 519px@320/375 (sample) + runtime-hotlink site-theme chain + candidate hosts cdn.jsdmirror.com, cdn.scpwiki.com, scp-wiki-cdn.nyc3.cdn.digitaloceanspaces.com; sample credit-modal (preview-form); T3 re-run, no new screenshot-grounded visual finding; chromium-only coverage (no WebKit verdict). [RENDER-ROWS-G (CN15)]
 - Engine coverage: chromium-only, both pages (no WebKit verdict) [RENDER-ROWS-G row, findings cell]

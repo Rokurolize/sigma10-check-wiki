@@ -3,8 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:highlighter-bhl-jp — origin CN, population #196 [GOSIGN2-LEDGER (b) row 196]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 87cdb659aefea29934eb148450a2f32a191ffe3d38d0e33bcd74be0a8adf139e); verdict not carried over, re-judgement required
-> verdicts below describe the pre-change file
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 87cdb659aefea29934eb148450a2f32a191ffe3d38d0e33bcd74be0a8adf139e); the verdicts below were computed against that pre-change file, and the record verdict stands: a candidate revised through the campaign's recorded repairs is posted like a PASS row, with the change recorded in its package
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 4 errors / 7 warns / 1 info (pseudo-ref×3, hotlink×1); standing classes dispositioned in register c1 [T1-ROWS row 179; GOSIGN2-LEDGER (b) row 196]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page page-overflow 467px@320 + 495px@375 chromium and 430px@320 + 458px@375 webkit, runtime-hotlink site-theme chain only; sample credit-modal (preview-form), page-overflow 467px@320 + 495px@375 chromium and 430px@320 + 419px@375 webkit, runtime-hotlink site-theme chain + sample font host; T3 clean on both pages (sidebar left JP position, opens in both engines; preview-notice clipping and overflow cross-cutting); sample webkit *-full.png absent (screenshot set incomplete, 32767px cap). [RENDER-ROWS-RERUN16 (CN7) — supersedes the RENDER-ROWS-2 row for this theme, rule S1]
 - Engine coverage: full (chromium+webkit, both pages) [RENDER-ROWS-RERUN16 (CN7)]

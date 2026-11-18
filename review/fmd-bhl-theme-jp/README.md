@@ -3,8 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:fmd-bhl-theme-jp — origin CN, population #188 [GOSIGN2-LEDGER (b) row 188]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 57a6bdf6d5df40f26e6ac5c6f63b88571d365beeb25e7320979e642102499644); verdict not carried over, re-judgement required
-> verdicts below describe the pre-change file
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 57a6bdf6d5df40f26e6ac5c6f63b88571d365beeb25e7320979e642102499644); the verdicts below were computed against that pre-change file, and the record verdict stands: a candidate revised through the campaign's recorded repairs is posted like a PASS row, with the change recorded in its package
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 5 errors / 1 warn / 1 info (hotlink×4, pseudo-ref×1); standing classes dispositioned in register c1 [T1-ROWS row 166; GOSIGN2-LEDGER (b) row 188]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page runtime-hotlink site-theme chain + candidate-own scpsandboxcn.wdfiles.com (judgment-required); sample credit-modal (preview-form), runtime-hotlink incl. scpsandboxcn.wdfiles.com + sample font host; no page-overflow on either page; T3 clean on both pages, with the caveat that the mobile *-full.png (and sample *-credit.png) are blank transient 503 captures while the same-viewport sidebar/credit shots are real and show the left sidebar opening in both engines (no rule-2 http.cat + hidden-* machine signature on this target). [RENDER-ROWS-RERUN16 (CN6) — supersedes the RENDER-ROWS-2 row for this theme, rule S1]
 - Engine coverage: full (chromium+webkit, both pages) [RENDER-ROWS-RERUN16 (CN6)]

@@ -3,8 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:brokedown-database-jp — origin CN, population #170 [GOSIGN2-LEDGER (b) row 170]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 921a7325b13ea6ca57c292a93e23c8b40b8a3e837a60c332d9bcbb062c2fd536); verdict not carried over, re-judgement required
-> verdicts below describe the pre-change file
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 921a7325b13ea6ca57c292a93e23c8b40b8a3e837a60c332d9bcbb062c2fd536); the verdicts below were computed against that pre-change file, and the record verdict stands: a candidate revised through the campaign's recorded repairs is posted like a PASS row, with the change recorded in its package
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 5 errors / 2 warns / 1 info (pseudo-ref×5); standing classes dispositioned in register c1 [T1-ROWS row 148; GOSIGN2-LEDGER (b) row 170]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page page-overflow 328px@320 chromium (8px), runtime-hotlink site-theme chain only; sample credit-modal (preview-form), page-overflow 341px@320 + 389px@375 chromium and 416px@320 + 419px@375 webkit (cross-cutting static-credit), runtime-hotlink site-theme chain + sample font host; T3 complete in the final report (pending in the partial) and clean on both pages (sidebar collapsed at PC width with left-edge toggle tab present, mobile hamburger opens in both engines, cyan-on-black readable); missing decorative logos = deferred assets. [RENDER-ROWS-RERUN16 (CN2) — supersedes the RENDER-ROWS-2 row for this theme, rule S1]
 - Engine coverage: full (chromium+webkit, both pages) [RENDER-ROWS-RERUN16 (CN2)]

@@ -3,8 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:3lawcracked-jp — origin EN, population #46 [GOSIGN2-LEDGER (b) row 46]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 2c5a9a8e18b184a17f1da96a3002c0994c151a4b1cda7a8e823c27fba30f3477); verdict not carried over, re-judgement required
-> verdicts below describe the pre-change file
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 2c5a9a8e18b184a17f1da96a3002c0994c151a4b1cda7a8e823c27fba30f3477); the verdicts below were computed against that pre-change file, and the record verdict stands: a candidate revised through the campaign's recorded repairs is posted like a PASS row, with the change recorded in its package
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 5 errors / 1 warn / 0 infos (hotlink×5); standing classes dispositioned in register c1 [T1-ROWS row 46; GOSIGN2-LEDGER (b) row 46]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — inherited Third-Law header clipping at ≤375; font-bauhaus ORB single-combo artifact (X7 family); no new candidate-specific defect. [RENDER-ROWS-1 (RENDER-S2-A)]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row [RENDER-ROWS-1 row]

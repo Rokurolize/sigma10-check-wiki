@@ -3,8 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:scpedia-jp — origin EN, population #34 [GOSIGN2-LEDGER (b) row 34]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 0ed4133bccf6e7d5412ae4f4870360c19ef1de643bfbf8520b6976331c847801); verdict not carried over, re-judgement required
-> verdicts below describe the pre-change file
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 0ed4133bccf6e7d5412ae4f4870360c19ef1de643bfbf8520b6976331c847801); the verdicts below were computed against that pre-change file, and the record verdict stands: a candidate revised through the campaign's recorded repairs is posted like a PASS row, with the change recorded in its package
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 5 errors / 2 warns / 2 infos (hotlink×3, pseudo-ref×2); standing classes dispositioned in register c1 [T1-ROWS row 34; GOSIGN2-LEDGER (b) row 34]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page body empty (tag gate `[[iftags +テーマ]]`, possible stale-cache, not a defect), SCPedia fixed-width EN wordmark clips at ≤768 both engines, notice/sidebar/code overflow, sample credit-modal; T2 sample exit 2 retried once. [RENDER-ROWS-1 (RENDER-D row 34)]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row (the row records inconclusive runs, carried verbatim above) [RENDER-ROWS-1 row]

@@ -230,10 +230,10 @@ def verdict_parts(fullname, rec, sources_verdict):
     through the campaign's recorded, verified repair waves and is noted in
     the package, so the record verdict stands and a STALE row is posted like
     a PASS row. The row therefore renders the record verdict with the
-    ruling's plain ground instead of the stamp's "verdict not carried over,
-    re-judgement required" gloss. The factual stamp word is kept in a
-    trailing bracket so the audit instrument's reading stays available; the
-    stamp region itself is never edited (build_review.py is untouched).
+    ruling's plain ground, matching the harmonized STALE wording the stamp
+    now carries itself. The factual stamp word is kept in a trailing bracket
+    so the audit instrument's reading stays available; the stamp region is
+    generated only by build_review.py, never hand-edited.
     """
     br = build_review()
     block = br.assemble_stamp(rec, fullname)

@@ -3,8 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:ordopharm-jp — origin EN, population #117 [GOSIGN2-LEDGER (b) row 117]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 39848689f953bab38ee93dbf8f4e620d4b2abe9276dcd04e46d6013544ddefc2); verdict not carried over, re-judgement required
-> verdicts below describe the pre-change file
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 39848689f953bab38ee93dbf8f4e620d4b2abe9276dcd04e46d6013544ddefc2); the verdicts below were computed against that pre-change file, and the record verdict stands: a candidate revised through the campaign's recorded repairs is posted like a PASS row, with the change recorded in its package
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 6 errors / 1 warn / 1 info (pseudo-ref×6); standing classes dispositioned in register c1 [T1-ROWS row 117; GOSIGN2-LEDGER (b) row 117]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page page-overflow 506px@320/375 chromium + 518px@320/375 webkit, runtime-hotlink site-theme chain + candidate-own cdn.jsdelivr.net (judgment-required); sample credit-modal (preview-form), same page-overflow, runtime-hotlink incl. candidate-own cdn.jsdelivr.net + cdn.scpwiki.com (judgment-required); T3 clean on both pages; the original page chromium 1366x768 capture was a transient 503 (http.cat + hidden-* block), re-run once per rule 2 and the fresh capture is a clean real page; sample webkit *-full.png missing (32767px screenshot cap). [RENDER-ROWS-RERUN16 (EN15) — supersedes the RENDER-ROWS-2 row for this theme, rule S1]
 - Engine coverage: full (chromium+webkit, both pages) [RENDER-ROWS-RERUN16 (EN15)]

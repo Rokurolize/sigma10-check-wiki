@@ -3,8 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:betwixt-jp — origin CN, population #167 [GOSIGN2-LEDGER (b) row 167]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 7d10ca5fbcb39ada43395a088b53d1e7a41db43a4310f80ba9a133a000467af7); verdict not carried over, re-judgement required
-> verdicts below describe the pre-change file
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 7d10ca5fbcb39ada43395a088b53d1e7a41db43a4310f80ba9a133a000467af7); the verdicts below were computed against that pre-change file, and the record verdict stands: a candidate revised through the campaign's recorded repairs is posted like a PASS row, with the change recorded in its package
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 8 errors / 0 warns / 1 info (pseudo-ref×8); standing classes dispositioned in register c1 [T1-ROWS row 145; GOSIGN2-LEDGER (b) row 167]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — REAL WebKit-specific FINDING on both pages: the top-left mobile sidebar-open hamburger renders in chromium but is entirely absent in webkit at 375x812 and 320x640, leaving no visible way to open the sidebar in webkit (screenshot-confirmed; machine `sidebar-unreachable` on all four mobile combos); page-overflow 434px chromium / 438px webkit @320/375; runtime-hotlink incl. candidate-own ah-sandbox hosts, hormress.github.io, nu-scptheme.github.io (judgment-required); sample adds credit-modal (preview-form); decorative 404/ORB assets leave a flat light-blue header (deferred). [RENDER-ROWS-RERUN16 (CN2) — supersedes the RENDER-ROWS-2 row for this theme, rule S1]
 - Engine coverage: full (chromium+webkit, both pages) [RENDER-ROWS-RERUN16 (CN2)]

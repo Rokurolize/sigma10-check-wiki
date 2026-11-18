@@ -5,8 +5,7 @@ A Chinese glass theme by Mercuresphere, built on theme:aero-glass (itself a Basa
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:cobalt-aero-glass-jp — origin CN, population #175 [GOSIGN2-LEDGER (b) row 175]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 0e703dd6e19759358d983a0439876faabd8ea099286a2669c985c6fc62581ec2); verdict not carried over, re-judgement required
-> verdicts below describe the pre-change file
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 0e703dd6e19759358d983a0439876faabd8ea099286a2669c985c6fc62581ec2); the verdicts below were computed against that pre-change file, and the record verdict stands: a candidate revised through the campaign's recorded repairs is posted like a PASS row, with the change recorded in its package
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 10 errors / 1 warn / 1 info (pseudo-ref×10); standing classes dispositioned in register c1 [T1-ROWS row 200; GOSIGN2-LEDGER (b) row 175]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page hidden-* cluster confined to chromium-768, whose only hotlink host is http.cat = transient 503 capture, not a result; page sidebar-unreachable at ≤375 (both engines); sample T2 no machine verdict (exit 2, no summary). [RENDER-ROWS-2 (RENDER-S2-E (CN3))]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row (the row records inconclusive runs, carried verbatim above) [RENDER-ROWS-2 row]

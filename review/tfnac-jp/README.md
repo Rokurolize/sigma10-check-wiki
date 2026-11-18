@@ -3,8 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:tfnac-jp — origin CN, population #236 [GOSIGN2-LEDGER (b) row 236]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now abec21eaf0bbfd529c8824651e62e9c4a4a3675c615071328f985c1e7e5b5d3e); verdict not carried over, re-judgement required
-> verdicts below describe the pre-change file
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now abec21eaf0bbfd529c8824651e62e9c4a4a3675c615071328f985c1e7e5b5d3e); the verdicts below were computed against that pre-change file, and the record verdict stands: a candidate revised through the campaign's recorded repairs is posted like a PASS row, with the change recorded in its package
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 4 errors / 2 warns / 0 infos (old-bhl×2, hotlink×1, pseudo-ref×1); standing classes dispositioned in register c1 [T1-ROWS row 196; GOSIGN2-LEDGER (b) row 236]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page-overflow 507px@320/375 + 782px@768 (page) and 519px@320/375 + 883px@768 (sample) + runtime-hotlink site-theme chain + candidate hosts nu-scptheme.github.io, s1.ax1x.com; sample credit-modal (preview-form); T3 re-run, no new screenshot-grounded visual finding; chromium-only coverage (no WebKit verdict). [RENDER-ROWS-G (CN15)]
 - Engine coverage: chromium-only, both pages (no WebKit verdict) [RENDER-ROWS-G row, findings cell]
@@ -12,7 +11,7 @@
 - T4 (localize patterns + follow-up): FINDINGS — display-affecting findings: 1 [LOCALIZE-ROWS row 235, source LOCALIZE-S2-E]
 - T5 (translation text): FINDINGS — the source reports judge T4/T5 jointly; one verdict word covers both [LOCALIZE-ROWS row 235]
 - FIX5 re-judgement: none — no OPEN items at the ledger determination [GOSIGN2-LEDGER (b) row 236]
-- Computed against: canonical commit 2dbb83da26b94a9c4a2e7de3a1562025f3552358; candidate file pages/theme:tfnac-jp.txt sha256:abec21eaf0bbfd529c8824651e62e9c4a4a3675c615071328f985c1e7e5b5d3e; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
+- Computed against: canonical commit fdec3533e70523dede654707a79aeb8e959a0905; candidate file pages/theme:tfnac-jp.txt sha256:abec21eaf0bbfd529c8824651e62e9c4a4a3675c615071328f985c1e7e5b5d3e; record: GOSIGN2-LEDGER.md + GOSIGN2-LEDGER-SUPPLEMENT.md as of the FIX5 head 435a6bb
 <!-- END GENERATED VERDICT STAMP -->
 
 ## Status

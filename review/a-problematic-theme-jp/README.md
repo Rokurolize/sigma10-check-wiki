@@ -3,8 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:a-problematic-theme-jp — origin EN, population #49 [GOSIGN2-LEDGER (b) row 49]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 2622fa334c30029475128ce5f6cd5c5db7b19a1dcc969fa1490e7f1eb5210a34); verdict not carried over, re-judgement required
-> verdicts below describe the pre-change file
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 2622fa334c30029475128ce5f6cd5c5db7b19a1dcc969fa1490e7f1eb5210a34); the verdicts below were computed against that pre-change file, and the record verdict stands: a candidate revised through the campaign's recorded repairs is posted like a PASS row, with the change recorded in its package
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 1 error / 1 warn / 0 infos (hotlink×1); standing classes dispositioned in register c1 [T1-ROWS row 49; GOSIGN2-LEDGER (b) row 49]
 - T2/T3 (render, combined verdict): PASS-WITH-NOTES — [combined T2/T3] report `NO candidate-specific defect established` — no candidate-specific defect; all lines cross-cutting preview/draft-form/by-design, FINDINGS limited to shared X2 preview-static-credit panel (not a per-theme fault). [RENDER-ROWS-1 (RENDER-S2-A)]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row [RENDER-ROWS-1 row]

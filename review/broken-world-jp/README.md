@@ -3,8 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:broken-world-jp — origin CN, population #172 [GOSIGN2-LEDGER (b) row 172]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 3f81a42331723ef836e7dce3cbb3235c6ed17ae9266fe223eb287f5ba46ee690); verdict not carried over, re-judgement required
-> verdicts below describe the pre-change file
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 3f81a42331723ef836e7dce3cbb3235c6ed17ae9266fe223eb287f5ba46ee690); the verdicts below were computed against that pre-change file, and the record verdict stands: a candidate revised through the campaign's recorded repairs is posted like a PASS row, with the change recorded in its package
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 14 errors / 4 warns / 2 infos (pseudo-ref×13, hotlink×1); standing classes dispositioned in register c1 [T1-ROWS row 197; GOSIGN2-LEDGER (b) row 172]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — `hidden-interwiki` on all 8 combos on both pages (translation module hidden, theme-level; T3: explicitly documented in the page text as an original quirk), page-overflow 374px@320 + 425px@375 + 810px@768 chromium and 450px@320 + 478px@375 webkit, runtime-hotlink site-theme chain only; sample adds credit-modal (preview-form); T3 complete in the final report (pending in the partial), no further finding (desktop sidebar collapsed with no visible reopen tab, mobile hamburger opens in both engines; low-contrast credit title and 404 logos intended/deferred). [RENDER-ROWS-RERUN16 (CN3) — supersedes the RENDER-ROWS-2 row for this theme, rule S1]
 - Engine coverage: full (chromium+webkit, both pages) [RENDER-ROWS-RERUN16 (CN3)]

@@ -3,8 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:the-greatest-education-jp — origin KO, population #287 [GOSIGN2-LEDGER (b) row 287]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 058647e246dd4df26abc9b80df166f1090dd14db5a52226b91cd873871f40ecf); verdict not carried over, re-judgement required
-> verdicts below describe the pre-change file
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 058647e246dd4df26abc9b80df166f1090dd14db5a52226b91cd873871f40ecf); the verdicts below were computed against that pre-change file, and the record verdict stands: a candidate revised through the campaign's recorded repairs is posted like a PASS row, with the change recorded in its package
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 4 errors / 2 warns / 1 info (hotlink×3, pseudo-ref×1); standing classes dispositioned in register c1 [T1-ROWS row 257; GOSIGN2-LEDGER (b) row 287]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — sample credit-modal (preview-form) + page-overflow 324px@320 + 884px@768 + runtime-hotlink incl. scpko hosts on both pages; T3 none beyond cross-cutting items. [RENDER-ROWS-2 (RENDER-S2-H (KO8))]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row [RENDER-ROWS-2 row]

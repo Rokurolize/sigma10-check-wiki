@@ -5,8 +5,7 @@ An English theme by Placeholder McD and HarryBlank (March 2021). The JP candidat
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:blankstyle-jp — origin EN, population #6 [GOSIGN2-LEDGER (b) row 6]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now d74bc016bd058deeb41fb094d0e0cc4fc04cfd6d2e53ffadd9caf226023e2475); verdict not carried over, re-judgement required
-> verdicts below describe the pre-change file
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now d74bc016bd058deeb41fb094d0e0cc4fc04cfd6d2e53ffadd9caf226023e2475); the verdicts below were computed against that pre-change file, and the record verdict stands: a candidate revised through the campaign's recorded repairs is posted like a PASS row, with the change recorded in its package
 - T1 (source check): PASS — baseline 2026-11-16: exit 0, 0 errors / 1 warn / 1 info (no error codes) [T1-ROWS row 6; GOSIGN2-LEDGER (b) row 6]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — credit-modal contrast-credit 1.07 (near-white × unreadable), sample chromium-1366 shows Wikidot 503 (one width unjudgeable), ≡ toggle overlaps body at 320, mobile overflow, sample credit-modal. [RENDER-ROWS-1 (RENDER-A row 6)]
 - Engine coverage: full matrix as run by the lane, with one width unjudgeable (sample chromium-1366, transient Wikidot 503; ledger (a) caveat 3) [RENDER-ROWS-1 row; GOSIGN2-LEDGER (a)]

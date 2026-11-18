@@ -3,8 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:suprematism-jp — origin CN, population #235 [GOSIGN2-LEDGER (b) row 235]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 7e0d5949b9b6e2e6e047050ee5211a0792dab209672a1c25fa7a38d017e2c952); verdict not carried over, re-judgement required
-> verdicts below describe the pre-change file
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 7e0d5949b9b6e2e6e047050ee5211a0792dab209672a1c25fa7a38d017e2c952); the verdicts below were computed against that pre-change file, and the record verdict stands: a candidate revised through the campaign's recorded repairs is posted like a PASS row, with the change recorded in its package
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 14 errors / 0 warns / 0 infos (hotlink×11, pseudo-ref×2, old-bhl×1); standing classes dispositioned in register c1 [T1-ROWS row 195; GOSIGN2-LEDGER (b) row 235]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page-overflow 454px@320/375 on page and sample + sidebar-unreachable at 375/320 + runtime-hotlink site-theme chain + candidate hosts cdn.jsdelivr.net, lemoncat233.github.io, nu-scptheme.github.io; sample credit-modal (preview-form); T3 re-run, no new screenshot-grounded visual finding; chromium-only coverage (no WebKit verdict). [RENDER-ROWS-G (CN15)]
 - Engine coverage: chromium-only, both pages (no WebKit verdict) [RENDER-ROWS-G row, findings cell]

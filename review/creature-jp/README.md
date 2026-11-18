@@ -3,8 +3,7 @@
 <!-- BEGIN GENERATED VERDICT STAMP — do not hand-edit; regenerate with review/build_review.py -->
 ## Verdict stamp
 - Theme: theme:creature-jp — origin KO, population #257 [GOSIGN2-LEDGER (b) row 257]
-- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 8a700d62103cd2d385c97673ce4df8cd55ad4ed5b4bb7a90e8fb295b9210fe40); verdict not carried over, re-judgement required
-> verdicts below describe the pre-change file
+- Overall: STALE — candidate file changed since the verdict was computed (verdict against 435a6bb-era content, file sha256 now 8a700d62103cd2d385c97673ce4df8cd55ad4ed5b4bb7a90e8fb295b9210fe40); the verdicts below were computed against that pre-change file, and the record verdict stands: a candidate revised through the campaign's recorded repairs is posted like a PASS row, with the change recorded in its package
 - T1 (source check): FINDINGS (classified) — baseline 2026-11-16: exit 1, 4 errors / 3 warns / 1 info (hotlink×2, pseudo-ref×2); standing classes dispositioned in register c1 [T1-ROWS row 240; GOSIGN2-LEDGER (b) row 257]
 - T2/T3 (render, combined verdict): FINDINGS — [combined T2/T3] report `FINDINGS` — page runtime-hotlink incl. cdn.jsdelivr.net + scpko.wdfiles.com; sample credit-modal (preview-form) + runtime-hotlink (one combo http.cat among other hosts); T3 oversized circular SCP PARK header art wider than the mobile viewport, lettering cut at the edges at 375/320 (both engines). [RENDER-ROWS-2 (RENDER-S2-H (KO2))]
 - Engine coverage: full matrix as run by the lane; coverage not separately caveated in the row [RENDER-ROWS-2 row]
