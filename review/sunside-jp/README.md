@@ -40,7 +40,7 @@ An EN Sigma-Plus theme by EstrellaYoshte for the fictional city of Esterberg. Th
 
 ## 0. Header and provenance
 
-What: the diff is Tier 2: +1,459 / -267 lines, 1,726 changed lines in 19 blocks across 7 sections; review-stage comments account for 0 of the +1,459. The growth is structural: the stylesheet now stands twice, once as the delivered head module and once as the source exhibit. The candidate's git history is 3faf2e1 (Stage 2 EN20), 2d69b1c (rework2-p3), f931619 (FIX2-COLON), 8c62b7b (FIX4-IWA), 379eb44 (FIX4-MOPUP), 8eacd6e (FIX5-FONTSA). Why: provenance discipline; the PASS stamp's currency rests on 8eacd6e being the file's last change. Verify: `sha256sum` on both package files against sources.tsv and the stamp; `cmp` candidate.txt against the canonical file. Disposition: stamp PASS as recorded in the Status table.
+What: the diff is Tier 2: +1,459 / -267 lines, 1,726 changed lines in 19 blocks across 7 sections; review-stage comments account for 0 of the +1,459. The growth is structural: the stylesheet now stands twice, once as the delivered head module and once as the source exhibit. The candidate's git history is 3faf2e1 (Stage 2 EN20), 2d69b1c (rework2-p3), f931619 (FIX2-COLON), 8c62b7b (FIX4-IWA), 379eb44 (FIX4-MOPUP), 8eacd6e (FIX5-FONTSA). Why: provenance discipline; the PASS stamp's currency rests on 8eacd6e being the file's last change. Verify: `sha256sum` on both package files against sources.tsv and the stamp; `cmp` candidate.txt against the canonical file. Disposition: the stamp as built read PASS; the regenerated stamp now reads STALE against the post-build repairs (canonical commits cdb1e6d and 8868b5d, Post-package repairs), matching the Status table, with the record verdict standing.
 
 ## 1. Credit and attribution
 

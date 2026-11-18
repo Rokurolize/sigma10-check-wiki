@@ -158,7 +158,7 @@ This instance: two annotations stand. The translator's footnote at candidate lin
 
 - (a) The four draft-host lines (candidate lines 11, 98, 107, 252) are the T1 baseline's four pseudo-ref errors, class (iii) draft-stage form (KB-41): recorded, rewritten at posting, not a defect.
 - (b) The render row (ledger (c2) row 33) is DISPOSITIONED: header logo clipped at ≤768px, notice text left-clipped, WebKit rate rendering, sidebar at x=0, a 1.84 contrast sample line, and the sample credit-modal with 337–419px overflow — the narrow-width header clip/collision family and the render-side difference class (KB-35 family), plus the credit-modal preview-form property (owner ruling 5, KB-32). Nothing in the candidate's bytes is charged by them.
-- (c) The escaped footnoteblock (section 8) is NOT dispositioned; it is an open defect flag for a repair lane.
+- (c) The escaped footnoteblock (section 8) was NOT dispositioned; it was an open defect flag for a repair lane. It is closed by landing `c1ba76a` (FIX-RFIX11 item 1, Post-package repairs), which unescaped candidate L559 to a live `[[footnoteblock]]`; the as-built record is kept.
 
 ## 12. Verification
 

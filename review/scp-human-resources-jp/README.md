@@ -25,7 +25,7 @@
 | Standing items | **DISPOSITIONED** — ledger §(c3): P3 credit fields FIXED by the credit waves, P6 FIXED by the frame waves; ledger §(c2) render row: sidebar x=0, mobile notice/logo clip, WebKit CC "S", page credit-modal overflow at 320, sample credit-modal preview form (KB-32), sample overflow 337–419px, near-black section swallowing its text (KB-33/KB-34 families); T1 PASS outright (0 errors / 1 warn) |
 | Go-sign basis | COMPLETION-REPORT.md §10 (go-sign issued; 81 FIXED / 26 DISPOSITIONED / 0 OPEN across the sweep) |
 | Named exception | None for this theme (the sweep's single named exception is theme:amethyst-v2, which has no candidate) |
-| Flags from this package | Two content omissions no ledger row dispositions: the SCP Offices delivery layer and the original head module's `.scp-image-block` rules (per-theme record). Flagged, not edited |
+| Flags from this package | Two content omissions no ledger row dispositions: the SCP Offices delivery layer and the original head module's `.scp-image-block` rules (per-theme record). Flagged as built; both closed after the build by landing `8c935d3` (FIX-RFIX10, HR-1/HR-2 in Post-package repairs), which restored the hidden Offices include and the 22-line `.scp-image-block` block |
 
 ## Provenance
 

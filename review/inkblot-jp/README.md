@@ -104,7 +104,7 @@ Adjudication of the classifier's labels against the bytes, where they diverge: D
 
 **Verify.** `grep -n "croqstyle" candidate.txt original.txt` returns one hit (orig L2) against none; `grep -n "module Rate" candidate.txt` returns nothing; the helix candidate line cited above proves the JP component's availability.
 
-**Disposition.** P1 usage repoints: the bytes are FIXED (1869877; no `:scp-wiki:` string remains anywhere in the candidate) — the ledger's (c3) line records P1 as DISPOSITIONED (posting-procedure), which understates the file's state; the discrepancy is recorded under Per-theme record. **Flag (this review): the croqstyle base include (orig L1–3) is dropped with no counterpart and no charge in any row; the render row neither confirms nor clears it (its page-body item reads "blank, possible stale-cache, not counted"). Recorded here and in the lane report; the candidate is not edited.**
+**Disposition.** P1 usage repoints: the bytes are FIXED (1869877; no `:scp-wiki:` string remains anywhere in the candidate) — the ledger's (c3) line records P1 as DISPOSITIONED (posting-procedure), which understates the file's state; the discrepancy is recorded under Per-theme record. **Flag (this review): the croqstyle base include (orig L1–3) is dropped with no counterpart and no charge in any row; the render row neither confirms nor clears it (its page-body item reads "blank, possible stale-cache, not counted"). Recorded here and in the lane report; the candidate was not edited by this package. **Closed after the build by landing `1e34c0b` (FIX-U7 item 1, Post-package repairs), which restored the gated `[[include :scp-jp:component:croqstyle]]` at the file head; the flag stands only as the as-built record.**
 
 ### 3. Delivery and code loading
 
@@ -164,7 +164,7 @@ Adjudication of the classifier's labels against the bytes, where they diverge: D
 
 **Verify.** The gate grep of section 0; `tail -15 candidate.txt` shows both correction modules and their comments; the depth scan is a five-line brace counter over each file.
 
-**Disposition.** The restructure and supplements are uncharged in the ledger (they predate or ride the import); the address consequence is closed by 4176cc7 (section 3). The croqstyle gate's loss is open at this review (section 2's flag).
+**Disposition.** The restructure and supplements are uncharged in the ledger (they predate or ride the import); the address consequence is closed by 4176cc7 (section 3). The croqstyle gate's loss was open at package-build time (section 2's flag); it is closed by landing `1e34c0b` (FIX-U7 item 1, Post-package repairs), which restored the gated include.
 
 ### 9. Formatting only
 

@@ -176,7 +176,7 @@ none — no signature for this section fired over 14 change blocks, and the grou
 
 - Ledger (b) row 257: NOT PASS. (c2) RENDER-S2-H (KO2): two DISPOSITIONED (runtime-hotlink class (ii); credit-modal preview-form) and one OPEN item, (e) item 104. (c3) LOCALIZE-S2-F: P3 FIXED; P4, P5, P10, P11 DISPOSITIONED.
 - FIX5 re-judgement (supplement (a) item 104, class F): DISPOSITIONED with grounds — FIX5-FUNC section 7 (no edit).
-- Go-sign: issued 2026-11-17 (COMPLETION-REPORT section 10) over the population with this item dispositioned. The generated stamp above reads PASS for this theme, and it is not STALE: the candidate's bytes are the verdict's bytes (the stamp's computed-against commit 1869877 is the last commit touching the candidate).
+- Go-sign: issued 2026-11-17 (COMPLETION-REPORT section 10) over the population with this item dispositioned. The generated stamp as built read PASS for this theme, and was not STALE: the candidate's bytes were the verdict's bytes (the stamp's as-built computed-against commit 1869877 was the last commit touching the candidate at build time). A later landing, FIX-RDISP4 (canonical commit 050817e, recorded in Post-package repairs), repaired five candidate lines; the regenerated stamp now reads STALE against the post-build bytes, with the record verdict standing.
 
 ### Item 104 re-derived from this package's bytes
 

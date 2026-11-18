@@ -7,6 +7,10 @@ Sigma-10 display-check composition used by the SCP-JP theme-porting work:
 - Wikijump check wiki: stafflab site 6000303 (`scp-jp-sigma10`), served at
   `https://codex-wsl-maintenance.tail3a09a5.ts.net:8443/`
 
+For the shorthand used in the review packages (KB ids, P-numbers, T1–T5,
+class (i)/(ii)/(iii), wave names), see
+[`review/HOW-TO-READ.md`](review/HOW-TO-READ.md).
+
 `pages/<fullname>.txt` holds the canonical text of each page (1,013 pages:
 the `start` index and its eight generated table subpages, every theme
 sample, the shared decoration body `theme-decoration-sample`, the locally
@@ -55,9 +59,9 @@ the composition.
 
 `pages/start.txt` is a hub: the introduction, how to read the tables,
 the table of contents, the site-operations wikis and the comparison
-references. The 287-row theme table lives on eight subpages
-(`start:themes-jp`, `start:themes-en-1` to `start:themes-en-3`,
-`start:themes-cn-1` to `start:themes-cn-2`, `start:themes-ko`,
+references. The 287-row theme table lives on ten subpages
+(`start:themes-jp`, `start:themes-en-1` to `start:themes-en-4`,
+`start:themes-cn-1` to `start:themes-cn-3`, `start:themes-ko`,
 `start:themes-fr`), grouped the way a reader looks a theme up: by the
 branch the theme was created in (its origin), in sample-slug order
 within a subpage. A theme posted on SCP-JP as a translation sits in its

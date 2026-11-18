@@ -24,10 +24,10 @@ Classifier: classify_hunks.py 0.1.0; signature table 2026-11-17.1; patterns comm
 
 | | |
 |---|---|
-| Verdict | **PASS** — passed at the ledger determination with no OPEN items (GOSIGN2-LEDGER (b) row 82); one of the 286 of 286 pass-eligible themes. The generated stamp above also reads PASS |
+| Verdict | **PASS** — passed at the ledger determination with no OPEN items (GOSIGN2-LEDGER (b) row 82); one of the 286 of 286 pass-eligible themes. The generated stamp above reads **STALE**, not PASS: the candidate was revised after the verdict by the FIX-DYN landing recorded below. The record verdict stands and the row is posted like a PASS row |
 | Wave edits | Two FIX3-S2EN edits (the font fix and the rev19 follow-up), both verified hunk by hunk in the Per-theme record. Both ride inside commit 1869877, whose subject names only the FIX-CREDIT-D translator normalization |
 | Discrepancies recorded | The ledger's "P6 FIXED (frame waves)" is a verification outcome, not an edit: no priority=3 own-CSS frame exists or was ever added (section 2). The ledger's "P7 FIXED" is broader than the edit: the wave loaded Noto Sans JP and extended one stack of seven (section 4) |
-| Defect flagged | One unrepaired translation defect: the Eddie Murphy quote at cand L173 changes the subject ("My girl" → みんな). The localize lane flagged it with a suggested correction; no wave acted and no register line dispositions it. Flagged with evidence in section 6 and the batch report; the candidate is not edited by this package |
+| Defect flagged (now closed) | The Eddie Murphy quote at cand L173 originally changed the subject ("My girl" → みんな). The localize lane flagged it with a suggested correction; the as-built section 6 records the flag. The FIX-DYN landing `49a1e49` (Post-package repairs, below) repaired L173 after the package build, and the current candidate reads 「おれの彼女はパーティーしたがる」; the flag is closed by that landing, not by this package |
 | Go-sign basis | COMPLETION-REPORT.md §10 (go-sign issued; 81 FIXED / 26 DISPOSITIONED / 0 OPEN across the sweep) |
 | Named exception | None for this theme (the sweep's single named exception is theme:amethyst-v2, which has no candidate) |
 
@@ -48,7 +48,7 @@ Wave history: the port (184cb65); then a single bundled commit, 1869877, carryin
 
 ## Summary
 
-A VHS-styled Black Highlighter theme by JackalRelated: BHL base by head-module `@import`, a documentation body with a font specimen and a fake VHS-log exhibit, one large CSS exhibit (564 lines, identical line count on both sides), and tail self-delivery by module `@import`. The port's own work is the standard EN8 shape (credit block, bare-Rate deletion, BHL host and frame repoints, bunny.net → Google Fonts in the exhibit, the stylesheet rehost). What makes the theme class U is the follow-up: between the port and the verdict, upstream moved from revision 17 to 19, and FIX3-S2EN both closed the JP-font finding and applied the upstream delta. A reviewer should look hardest at the two places where the register's language outruns the bytes (the P6 "FIXED" that edited nothing, section 2; the P7 "FIXED" that covers one stack of seven, section 4) and at the one translation error nobody's wave touched (section 6).
+A VHS-styled Black Highlighter theme by JackalRelated: BHL base by head-module `@import`, a documentation body with a font specimen and a fake VHS-log exhibit, one large CSS exhibit (564 lines, identical line count on both sides), and tail self-delivery by module `@import`. The port's own work is the standard EN8 shape (credit block, bare-Rate deletion, BHL host and frame repoints, bunny.net → Google Fonts in the exhibit, the stylesheet rehost). What makes the theme class U is the follow-up: between the port and the verdict, upstream moved from revision 17 to 19, and FIX3-S2EN both closed the JP-font finding and applied the upstream delta. A reviewer should look hardest at the two places where the register's language outruns the bytes (the P6 "FIXED" that edited nothing, section 2; the P7 "FIXED" that covers one stack of seven, section 4) and at the one translation error nobody's wave touched as built (section 6, since closed by the FIX-DYN landing in Post-package repairs).
 
 ## Classification
 
@@ -82,7 +82,7 @@ Topology (classification.json): four components on each side, matching by kind �
 - What: the package diffs the mirror of `theme:dynamikron` at revision 19 against the canonical candidate `pages/theme:dynamikron-jp.txt`. No delivery relocation: the component census matches by kind and position.
 - Why: the mirror is the re-translation reference revision; provenance for every row lives in review/sources.tsv, and this package's original.txt hash equals that row's value.
 - Verify: `sha256sum review/dynamikron-jp/original.txt` against review/sources.tsv; `cmp review/dynamikron-jp/candidate.txt pages/theme:dynamikron-jp.txt`.
-- Disposition: PASS at the ledger determination (GOSIGN2-LEDGER (b) row 82), stamp PASS.
+- Disposition: PASS at the ledger determination (GOSIGN2-LEDGER (b) row 82); stamp STALE after the post-build FIX-DYN repair, with the record verdict standing.
 
 ## 1. Credit and attribution
 
@@ -124,7 +124,7 @@ Topology (classification.json): four components on each side, matching by kind �
 - What: TRANSLATION-ANCHORED ×32 and TRANS-UNANCHORED ×30: the documentation body, the font specimen labels and the VHS-log exhibit are translated throughout (です・ます register). The rev19 colour correction rides inside this mass as a value change, not text: `--t20-ylo: 247, 185, 0` → `247, 187, 0` (cand L386), one of the FIX3-S2EN follow-up hunks, applied verbatim from the upstream delta.
 - Why: P10 (KB-18) for the translation; the colour hunk is upstream parity (revision 19 changed the value; a port frozen at 185 would diverge from the reference it cites).
 - Verify: `grep -n "t20-ylo" review/dynamikron-jp/candidate.txt review/dynamikron-jp/original.txt` — 187 on both sides.
-- Disposition: T5 FINDINGS at the ledger row, closed by the joint T4/T5 verdict — with one exception this package must state plainly. **The Eddie Murphy quote at cand L173 still reads 「ねえ、みんなパーティーしたがるの…」 where the original (rev19, the "My girl wants to party all the time…" line) has "My girl" as the subject; みんな ("everyone") changes who wants to party.** The LOCALIZE-S2-A lane flagged the line as a clear meaning divergence and proposed a correction; no wave acted on it, and no register line dispositions it by name (the ledger's T5 line for the theme is the joint verdict only). It stands here as a recorded, unrepaired translation defect, flagged to the coordinator in the batch report with both sides' text. This package does not edit the candidate.
+- Disposition: T5 FINDINGS at the ledger row, closed by the joint T4/T5 verdict — with one exception the as-built record must state plainly. **As built, the Eddie Murphy quote at cand L173 read 「ねえ、みんなパーティーしたがるの…」 where the original (rev19, the "My girl wants to party all the time…" line) has "My girl" as the subject; みんな ("everyone") changed who wants to party.** The LOCALIZE-S2-A lane flagged the line as a clear meaning divergence and proposed a correction, and no register line dispositions it by name (the ledger's T5 line for the theme is the joint verdict only). **Closed by landing `49a1e49` (FIX-DYN, Post-package repairs below):** the current candidate L173 reads 「ねえ、おれの彼女はパーティーしたがるんだ。…」, taking the proposal's subject and verb form; "all the time" stays compressed, as in both the previous translation and the proposal. The flag no longer stands against the current bytes; this package does not edit the candidate.
 
 ## 7. Links
 
@@ -155,7 +155,7 @@ Topology (classification.json): four components on each side, matching by kind �
 - T1 pseudo-ref×8: DISPOSITIONED, class (iii) (register (c1) preamble; T1-ROWS row 102 baseline: exit 1, 8 errors / 1 warn / 2 infos).
 - Render items (RENDER-S2-B, EN8 block): the credit modal wider than the 320px viewport in both engines and the WebKit CC "S" reading DISPOSITIONED under KB-36; the notice clip at ≤375px with them; asset 404/ORB items DISPOSITIONED as the EN8 deferred class (KB-47 family).
 - T4 P6: FIXED on the verification ground stated in section 2. T4 P7: FIXED on the wave's documented scope, with the coverage caveat stated in section 4.
-- The T5 quote defect (section 6) is NOT dispositioned anywhere; it is this package's open flag, carried to the batch report. It does not disturb the ledger verdict as recorded, which judged the joint T4/T5 FINDINGS with the lane's flag already on record in its report.
+- The T5 quote defect (section 6) was not dispositioned by any register line; it was this package's open flag, carried to the batch report. It did not disturb the ledger verdict as recorded, which judged the joint T4/T5 FINDINGS with the lane's flag already on record. The flag is now closed by landing `49a1e49` (FIX-DYN, Post-package repairs): the current candidate's L173 subject is おれの彼女, matching the original's "My girl".
 
 ## 12. Verification
 
@@ -170,7 +170,7 @@ Topology (classification.json): four components on each side, matching by kind �
 2. **The commit subject names one wave; three rode in it.** 1869877's subject is the FIX-CREDIT-D translator normalization (163 files). A reader working from subjects alone will miss that this file's FIX3-S2EN edits are inside it. The narration above exists so the package, not the subject line, is the record.
 3. **P6's FIXED is a verification, not an edit** (section 2). No priority=3 frame exists; the checker's criterion does not require one; the lane's stricter recommendation was expressly not a posting blocker and was not taken.
 4. **P7's FIXED covers one stack of seven** (section 4). The import is real and the cited stack is extended; the variable stacks the lane enumerated were not.
-5. **The T5 quote defect is unrepaired and undispositioned by name** (section 6). It is the batch's clearest defect flag: a meaning-changing translation error, identified by the check lane with a proposed correction, that no fix wave picked up.
+5. **The T5 quote defect was unrepaired and undispositioned by name as built** (section 6). It was the batch's clearest defect flag: a meaning-changing translation error, identified by the check lane with a proposed correction, that no fix wave in the package era picked up. It was closed after the build by landing `49a1e49` (FIX-DYN, Post-package repairs), which repaired candidate L173 to the proposed subject; the current bytes carry おれの彼女.
 
 ### Post-package repairs (REFRESH3-F)
 
@@ -193,6 +193,12 @@ against the pre-repair verdict, by design.
 ## Change set outside the two diffed files
 
 One companion candidate: `pages/theme-decoration-sample-dynamikron-jp.txt`, the decoration sample that applies this theme on the check wikis. The EN-named `pages/theme:dynamikron.txt` and `pages/theme-decoration-sample-dynamikron.txt` are composition members of the display-check wikis, not the JP candidate.
+
+## Sample-page gap — `component:theme-squares`
+
+The candidate's own documentation exhibit (cand L57) includes `component:theme-squares`, repointed from the original's `:scp-wiki:component:theme-squares` (orig L47) to the campaign's bare working form. `component:theme-squares` is the EN SCP Wiki's colour-swatch component used inside theme documentation; it is not a theme row. No JP port of it exists anywhere in this repository — a scan of `pages/`, `pages-existing/` and every `review/*/candidate.txt` finds no `component:theme-squares-jp` page, and neither check wiki carries a `component:theme-squares*` page. The candidate's colour data is not lost: the swatch variables and values are carried in the file itself (the exhibit's parameter lines at cand L58 ff.).
+
+**Disposition: recorded gap, not a candidate defect.** This lane does not fabricate a component port from nothing; the campaign's ruling-4 route would port the component with the theme at posting if a port is wanted. Until then, `theme-decoration-sample-dynamikron-jp` shows a missing-include notice for that one exhibit. The notice is explained in the dynamikron row's Details column of the /start theme table (generated by `build_start.py` from its `SAMPLE_GAPS` record) so a porter is not left guessing; it does not change the ledger verdict or the posted-on-record-verdict treatment of this row.
 
 ## Multi-wave provenance
 

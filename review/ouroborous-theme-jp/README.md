@@ -110,7 +110,7 @@ Across 170 classified blocks: 148 specific (87.1%), 20 heuristic (11.8%), 2 resi
 
 **Verify.** `grep -n "typekit" candidate.txt original.txt` returns original L176 only. `grep -n "korolev" candidate.txt` returns L208–209. The re-hosted logo is candidate L204 against original L193.
 
-**Disposition.** Ledger PASS, row 25 (no register charges the font import). **Defect flag (this package): font import dropped, dependent stacks kept** — original L176 (@import use.typekit.net/mst2dnj.css at the head of the delivered code block) absent from the candidate, while candidate L208–209 still name korolev-condensed and korolev. Provenance: inherited from the production port at import (commit d727e92), not a campaign wave edit.
+**Disposition.** Ledger PASS, row 25 (no register charges the font import). **Defect flag (this package): font import dropped, dependent stacks kept** — original L176 (@import use.typekit.net/mst2dnj.css at the head of the delivered code block) absent from the candidate, while candidate L208–209 still name korolev-condensed and korolev. Provenance: inherited from the production port at import (commit d727e92), not a campaign wave edit. **Closed after the build by landing `d554544` (FIX-U8 item 2, Post-package repairs):** the original's Typekit import is restored as the first line of the delivered code block (refreshed candidate L188); the flag stands only as the as-built record.
 
 ## 5. Header, sidebar, site furniture
 

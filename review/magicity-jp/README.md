@@ -34,7 +34,7 @@
 | Page | theme:magicity | theme:magicity-jp |
 | Wiki | scp-wiki-cn.wikidot.com | SCP-JP Sigma-10 candidate (canonical repo) |
 | Reference revision | 20, as recorded in the candidate's credit block (初訳時参照リビジョン: 20, candidate L29) and in review/sources.tsv | — |
-| Source of this copy | Mirror store `review-mirrors/orig-magicity-rev20.txt`, fetched once by the LOCALIZE-S2-D lane at rev 20 (INDEX.tsv class COPY) | Canonical file `pages/theme:magicity-jp.txt`, copied at worktree HEAD f24b7d0; the file is byte-identical to the copy FIX5 judged (its SHA-256 is the one REPORT-GOSIGN2-FIX5-CONTRA.md records), so the verdict stamp reads PASS, not STALE |
+| Source of this copy | Mirror store `review-mirrors/orig-magicity-rev20.txt`, fetched once by the LOCALIZE-S2-D lane at rev 20 (INDEX.tsv class COPY) | Canonical file `pages/theme:magicity-jp.txt`, copied at worktree HEAD f24b7d0; the file is byte-identical to the copy FIX5 judged (its SHA-256 is the one REPORT-GOSIGN2-FIX5-CONTRA.md records), so the verdict stamp as built read PASS, not STALE; the later FIX-RDISP7 landing (canonical commit 18aa301, Post-package repairs) changed the candidate after the build, so the regenerated stamp now reads STALE with the record verdict standing |
 | Lines / bytes | 2,510 lines / 60,067 bytes (the last line carries no trailing newline) | 2,617 lines / 66,849 bytes (the last line carries no trailing newline) |
 | SHA-256 | 0ff242ec2b12f497d8285ccfd0425f5c8e167d71938c03989bc7349420ed8427 | b6d967cec4b7ee64e2d70a1f8944140c713f0a788a7e8ffe596966ff30d9af1b |
 

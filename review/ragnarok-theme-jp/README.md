@@ -19,7 +19,7 @@
 
 | | |
 |---|---|
-| Verdict | **PASS** — passed at the ledger determination; this theme had no OPEN items and no §(e) register entry (GOSIGN2-LEDGER (b) row 127). The stamp reads PASS: no post-verdict change touched this candidate |
+| Verdict | **PASS** — passed at the ledger determination; this theme had no OPEN items and no §(e) register entry (GOSIGN2-LEDGER (b) row 127). The stamp as built read PASS: no post-verdict change had touched the candidate at build time; the FIX-FRAMEADDR self-address remedy (canonical commit 722ceb5, Post-package repairs) postdates the verdict, so the regenerated stamp reads STALE with the record verdict standing |
 | Standing items | **DISPOSITIONED** — the four EN-host hotlinks (P5, class (ii) / KB-58 deferred hosting, sections 4 and 11); the render row's two items (runtime-hotlink chain; sample T2 coverage caveat, section 11). **FIXED** — the missing frame (P6, FIX4-IWA), with the qualification flagged below. **One flag from this package:** the added frame names a code fragment that does not exist, because this theme delivers by a live CSS module and has no `[[code]]` block at all (probe-verified, per-theme record) |
 | Go-sign basis | COMPLETION-REPORT.md §10 (go-sign issued; 81 FIXED / 26 DISPOSITIONED / 0 OPEN across the sweep) |
 | Named exception | None for this theme (the sweep's single named exception is theme:amethyst-v2, which has no candidate) |
@@ -35,7 +35,7 @@
 | Lines / bytes | 1,220 lines / 31,690 bytes | 1,226 lines / 33,939 bytes |
 | SHA-256 | 35b59c48de15db00e0eb364178ea7b2816d145d6a3161093f1348cf1def169df | 01461624039e3de58f0909b6f8b1db216a743a03b4cbceb7579ba2b310556152 |
 
-Wave history: the candidate was created by the Stage 2 EN17 integration (commit b17d7e4); FIX-CREDIT-D (1869877) normalized its translator attribution; FIX4-IWA (8c62b7b) added the head frame (section 3) and is the last commit to touch the file, which is why the stamp computes against it and reads PASS.
+Wave history: the candidate was created by the Stage 2 EN17 integration (commit b17d7e4); FIX-CREDIT-D (1869877) normalized its translator attribution; FIX4-IWA (8c62b7b) added the head frame (section 3) and was the last commit to touch the file at build time, which is why the stamp as built computed against it and read PASS. A later post-verdict remedy, FIX-FRAMEADDR sub-shape (B) (canonical commit 722ceb5, recorded in Post-package repairs), changed the frame's own address; the regenerated stamp reads STALE against it, with the record verdict standing.
 
 ## Summary
 

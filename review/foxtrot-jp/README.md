@@ -24,7 +24,7 @@ Classifier: classify_hunks.py 0.1.0; signature table 2026-11-17.1; patterns comm
 
 | | |
 |---|---|
-| Verdict | **PASS** — passed at the ledger determination with no OPEN items (GOSIGN2-LEDGER (b) row 13); one of the 286 of 286 pass-eligible themes. The generated stamp above also reads PASS |
+| Verdict | **PASS** — passed at the ledger determination with no OPEN items (GOSIGN2-LEDGER (b) row 13); one of the 286 of 286 pass-eligible themes. The generated stamp above as built read PASS; it now reads STALE against the post-build FIX-SNIPPET landing (canonical commit 358955e, the production-predecessor reference audit), with the record verdict standing |
 | Kind | **K6 production-counterpart row.** The candidate is not a fresh port: it is SCP-JP's production page `theme:foxtrot` (translated by iti119 in 2022, against EN revision 148) carried into the campaign, plus campaign edits. The actual migration deliverable against the production page is the 24-line `pages/phase17-diff-foxtrot-jp.txt`. Read this package's diff through that fact (section 0) |
 | Wave edits | Three campaign waves edited the file: the gosign2 T1 fixes (b816e10), FIX-CREDIT-C (5c32672), and FIX3-A2 (a0038b8, four items). Each is verified in the Per-theme record |
 | Standing items | **DISPOSITIONED** — T1 baseline http×30 (class (ii), scheme rewrite at posting), foreign-include×2 (KB-54 named exception: the author-label-source pair), hotlink×1 (FIXED by FIX3-A2); the render row's coverage caveat and KB-33/KB-34 overflow items; T4's P1 (posting-procedure class), P4/P5 (class (ii) / KB-58 as recorded, with the rsms.me substance since FIXED) |
@@ -84,7 +84,7 @@ Topology (classification.json): the original delivers through 17 module-css bloc
 - What: the package diffs the mirror of `theme:foxtrot` at revision 171 against the canonical candidate `pages/theme:foxtrot-jp.txt`. Because the candidate descends from the production JP page (translated against revision 148) and Phase 22 declined the 148→171 upstream delta, the diff measures three things at once: the production localization, the declined upstream drift, and the campaign's edits. The campaign's edits alone are the 169-line difference between the candidate and `pages-existing/existing:theme-foxtrot.txt`.
 - Why: the mirror is the re-translation reference revision the credit block names; provenance for every row lives in review/sources.tsv, and this package's original.txt hash equals that row's value. The K6 shape (a production counterpart as a third source) is the SPECIAL-ROWS scout's K6 treatment.
 - Verify: `sha256sum review/foxtrot-jp/original.txt` against review/sources.tsv; `cmp review/foxtrot-jp/candidate.txt pages/theme:foxtrot-jp.txt`; `diff pages-existing/existing:theme-foxtrot.txt pages/theme:foxtrot-jp.txt | grep -c "^[<>]"` returns 169.
-- Disposition: PASS at the ledger determination (GOSIGN2-LEDGER (b) row 13), stamp PASS.
+- Disposition: PASS at the ledger determination (GOSIGN2-LEDGER (b) row 13), stamp STALE after the post-build FIX-SNIPPET landing 358955e, with the record verdict standing.
 
 ## 1. Credit and attribution
 

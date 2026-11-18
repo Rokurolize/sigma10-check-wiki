@@ -91,6 +91,37 @@ ORIGINS = [
 # bytes before the change). 40 leaves headroom and keeps tables contiguous.
 MAX_ROWS_PER_PAGE = 40
 
+# Live page titles on both check wikis. The numbered subpage titles are
+# derived from the same page plan that generates the tables (live_title_map
+# below) and written to start-titles.json, so the campaign reflect path has a
+# single authoritative title set and a future re-split cannot silently leave
+# the live page metadata on an old "EN 1/3" / "CN 1/2" shape.
+ORIGIN_TITLE_JP = {
+    "jp": "JP原典テーマ", "en": "EN原典テーマ", "cn": "CN原典テーマ",
+    "ko": "KO原典テーマ", "fr": "FR原典テーマ",
+}
+STATIC_TITLES = {
+    "start": "表示確認トップ",
+    "start:themes-jp": "テーマ表（JP原典テーマ）",
+    "start:themes-ko": "テーマ表（KO原典テーマ）",
+    "start:themes-fr": "テーマ表（FR原典テーマ）",
+    "start:wikijump-parity": "Wikijump描画再現の記録",
+}
+TITLES_FILE = "start-titles.json"
+
+# Sample-page gaps recorded in review packages. When a candidate's own
+# documentation includes a component that has no JP port anywhere in the
+# repository, its sample shows a missing-include notice; the row's Details
+# explains the notice instead of leaving a porter to guess at it.
+SAMPLE_GAPS = {
+    "dynamikron-jp": (
+        "Sample note: this candidate's colour exhibit includes "
+        "component:theme-squares from the EN SCP Wiki; no JP port of that component "
+        "exists in this repository, so the sample shows a missing-include notice. "
+        "Recorded gap, not a candidate defect — ground in the dynamikron review package"
+    ),
+}
+
 # --- mechanical sources for the reader-facing verdict / slug -------------
 
 _BR = None
@@ -193,6 +224,16 @@ def verdict_parts(fullname, rec, sources_verdict):
     word (normally PASS vs STALE after the candidate changed). Citations
     and the 64-hex sha256 are trimmed from the ground for readability; the
     substantive ground is kept verbatim.
+
+    STALE rows follow the coordinator's ruling (recorded on pages/start.txt
+    under "Overall state (at a glance)"): every post-verdict change landed
+    through the campaign's recorded, verified repair waves and is noted in
+    the package, so the record verdict stands and a STALE row is posted like
+    a PASS row. The row therefore renders the record verdict with the
+    ruling's plain ground instead of the stamp's "verdict not carried over,
+    re-judgement required" gloss. The factual stamp word is kept in a
+    trailing bracket so the audit instrument's reading stays available; the
+    stamp region itself is never edited (build_review.py is untouched).
     """
     br = build_review()
     block = br.assemble_stamp(rec, fullname)
@@ -206,6 +247,11 @@ def verdict_parts(fullname, rec, sources_verdict):
     if not dash:
         ground = ""
     word = word.strip()
+    if word == "STALE":
+        record_word = sources_verdict or "PASS"
+        phrase = (f"{record_word} (record verdict) \u2014 candidate revised after the "
+                  f"verdict through recorded repairs; see package [package stamp: STALE]")
+        return word, phrase
     phrase = f"{word} \u2014 {ground}" if ground else word
     if sources_verdict and sources_verdict != word:
         phrase += f" (record verdict: {sources_verdict})"
@@ -258,6 +304,32 @@ def plan_pages(by_origin):
     return plan
 
 
+def live_title_map(plan):
+    """Return {fullname: live Japanese title} for every /start page.
+
+    Numbered subpage titles are derived from plan_pages() (the same plan that
+    generates the tables), so a future re-split updates N/M in the title set
+    together with the pages. Unnumbered origin subpages and the hub/ledger
+    use their fixed live titles.
+    """
+    titles = dict(STATIC_TITLES)
+    counts = {}
+    for fn, _, _ in plan:
+        m = re.match(r"^start:themes-([a-z]+)-(\d+)$", fn)
+        code = m.group(1) if m else fn[len("start:themes-"):]
+        counts[code] = counts.get(code, 0) + 1
+    for fn, _, _ in plan:
+        if fn in STATIC_TITLES:
+            continue
+        m = re.match(r"^start:themes-([a-z]+)-(\d+)$", fn)
+        label = ORIGIN_TITLE_JP[m.group(1) if m else fn[len("start:themes-"):]]
+        if m:
+            titles[fn] = f"テーマ表（{label} {int(m.group(2))}/{counts[m.group(1)]}）"
+        else:
+            titles[fn] = f"テーマ表（{label}）"
+    return titles
+
+
 def sample_links(slug):
     """The [Wikidot] / [Wikijump] link pair for a sample page slug.
     An empty slug means the bare theme-decoration-sample page."""
@@ -287,6 +359,8 @@ def render_row(r):
     key = r["cand_slug"] or r["orig_slug"]
     if key and os.path.exists(os.path.join(REPO, "review", key, "README.md")):
         detail += f" / Review: [{REVIEW_URL}{key} review package]"
+    if key in SAMPLE_GAPS:
+        detail += " / " + SAMPLE_GAPS[key]
     return f"|| {label} || {status} || {detail} ||"
 
 
@@ -419,6 +493,22 @@ def main():
         return 0
     with open(PARITY_DATA, encoding="utf-8") as f:
         parity = json.load(f)
+    # Authoritative live-title set for the reflect path (Item 3, FIX3).
+    titles = live_title_map(plan)
+    titles_path = os.path.join(REPO, TITLES_FILE)
+    if mode == "--check":
+        try:
+            with open(titles_path, encoding="utf-8") as f:
+                current_titles = json.load(f)
+        except FileNotFoundError:
+            problems.append(f"{TITLES_FILE}: file missing (run build_start.py)")
+        else:
+            if current_titles != titles:
+                problems.append(f"{TITLES_FILE}: differs from the generated title set (run build_start.py)")
+    else:
+        with open(titles_path, "w", encoding="utf-8") as f:
+            json.dump(titles, f, ensure_ascii=False, indent=2, sort_keys=True)
+            f.write("\n")
     outputs = []
     for i, (fn, title, chunk) in enumerate(plan):
         nav = []

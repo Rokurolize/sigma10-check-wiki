@@ -317,9 +317,7 @@ carry, e.g. `theme:stellar-jp`), while the candidate's value is the
 CN motto carried over — it lacks 確保 and names 制御, which is no part
 of the tagline in either branch's standard form. The T4 lane charged
 exactly this as this theme's one display-affecting finding
-(LOCALIZE-ROWS row 228); no ledger line dispositions it. It is
-flagged in the per-theme record (item 1) for the coordinator; the
-candidate is not edited here.
+(LOCALIZE-ROWS row 228); no ledger line dispositions it. It was flagged in the per-theme record (item 1) for the coordinator; the candidate was not edited by this package. **Closed after the build by landing `1e3da43` (FIX-GUIDER item 2, Post-package repairs):** the subtitle now reads 確保 - 収容 - 保護, matching the branch tagline; the flag no longer stands against the current bytes.
 
 ## 6. Body translation (P10)
 
@@ -488,8 +486,7 @@ its record so the disposition can be re-checked at its source.
 (row 260), `RENDER-ROWS-G.md`, and `GOSIGN2-LEDGER.md` part (c2).
 
 **Disposition.** All items above are DISPOSITIONED in the cited
-records. The one finding that is not dispositioned is the header
-subtitle (section 5, per-theme record item 1).
+records. The one finding that was not dispositioned was the header subtitle (section 5, per-theme record item 1); it is closed by the post-build FIX-GUIDER landing `1e3da43` recorded in Post-package repairs.
 
 ## 12. Verification history
 
