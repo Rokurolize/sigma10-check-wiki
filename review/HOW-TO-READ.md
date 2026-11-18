@@ -34,6 +34,14 @@ error:
 - **(iii)** a draft-form matter — the candidate's own `local--code` on the
   sanctioned draft host, valid at the draft stage.
 
+**DISPOSITIONED.** Closed by a recorded decision with grounds, not necessarily
+by an edit to the candidate; the package states which. It is distinct from
+FIXED, which means an edit was actually applied — a DISPOSITIONED item may
+leave the candidate byte-unchanged.
+
+**Standing (standing classes, standing disposition).** Settled and in force —
+the state recorded as the final one — not "outstanding" or still open.
+
 **T1 … T5.** The campaign's five review tests behind the verdict:
 
 - **T1** source check (the staff checker over the candidate source);
@@ -45,6 +53,18 @@ error:
 "PASS / FINDINGS" in a package is the outcome of these tests; a finding can be
 fixed or dispositioned with grounds. **Check 5** is not one of them — it was a
 retired per-sample interaction measurement.
+
+**T6 and above (T7, T8, T9, …).** Change-class labels from the port
+classification, not review tests. They are a second series that reuses the
+letter "T": in package prose T6 marks header/title-language handling (the P9
+family), T7 marks credit-module CSS work, T8 marks a component swap, and T9
+marks code delivery (own-code or base re-hosting). The five review tests are
+T1–T5 only, so a T7 or T9 label means no test is missing or unrun.
+
+**FINDINGS.** A stamp word meaning the test recorded findings and classified
+them, not that the theme is blocked. The package's Status table carries the
+operative verdict: a package whose Status says PASS is posted like any PASS
+row even when a T line above it reads FINDINGS.
 
 **Wave names (FIX-CREDIT-D, FIX3-S2EN, FIX4-IWA, FIX5, REFRESH3-F,
 SWEEP-USAGE, …).** The campaign's recorded repair waves — named batches of

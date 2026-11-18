@@ -299,6 +299,12 @@ def verdict_parts(fullname, rec, sources_verdict):
     word, dash, ground = overall.partition(" \u2014 ")
     ground = re.sub(r"\s*\[[^\]]*\]", "", ground).strip()
     ground = re.sub(r"\s*\(verdict against [^)]*\)", "", ground).strip()
+    # Corridor wave 2: the top page names the final approval in plain words;
+    # a porter-facing row must not reintroduce the campaign-internal
+    # "go-sign". Only the wording changes — the COMPLETION-REPORT §10 pointer
+    # and every fact stay verbatim.
+    if "go-sign" in ground:
+        ground = ground.replace("go-sign", "final approval")
     if not dash:
         ground = ""
     word = word.strip()
