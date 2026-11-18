@@ -40,8 +40,6 @@ TSV = REPO / "start-themes.tsv"
 STATUS_INTRO = (
     "* 手続き欄が空の場合はソース変更なし・そのまま維持、記録欄が空の場合は描画再現記録のみです。"
     "各行の「状態・手続き」は、Wikijump側の描画再現状態（再現状態）、移行時の手続き（移行手続き）、記録の種別（記録）の三欄です。"
-    "各値は [[[start:wikijump-parity|Wikijump描画再現の記録]]] と review/existing-pages/README.md、"
-    "および start-themes.tsv のスタッフ適用手続きと同READMEのクロスリファレンスから、build_existing_index.py が機械的に生成しています。"
 )
 HEADER_ROW = "||~ ページ ||~ タイトル ||~ リンク ||~ 状態・手続き ||"
 MARKER = "各行の「状態・手続き」"
