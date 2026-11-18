@@ -85,3 +85,18 @@ never edits a stamp region.
 repair; "package build" is the earlier commit against which the package was
 written. A flag whose cited bytes no longer match the landing is closed by
 citing that landing — never by inventing a fix.
+
+**R4.** The production-counterpart adoption question, answered in a
+package's What section: if a production JP page already exists for this
+theme, does the candidate adopt that page's existing JP text as its base,
+or derive from the original alone? A package with no production
+counterpart records that R4 does not arise, which is a complete answer,
+not a missing step.
+
+**Citations (GOSIGN2-LEDGER, T1-ROWS, RENDER-ROWS, LOCALIZE-ROWS,
+register c1, …).** The campaign's working registers: row tables in which
+the underlying judgments were recorded, kept with the campaign record. A
+citation in a stamp or a package names the register and the row where a
+judgment can be checked. It is a pointer for verification; the package's
+Status table restates every operative fact, so no citation needs to be
+followed to know what to do.
