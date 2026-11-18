@@ -182,3 +182,11 @@ The items above describe this package as built. The repairs recorded below postd
 ## Change set outside the two diffed files
 
 The diff covers two files; the port's record is two files larger. `pages/phase17-diff-much-cool-jp.txt` is the migration's own diff against the current production page (the Phase 17 record; its head names theme:much-cool (SCP-JP) as its target and rev 19 as the reference), and `pages/theme-decoration-sample-much-cool-jp.txt` is the decoration sample the render checks ran against (its findings are the sample half of section 11(2)). There are no companion fragments and no shared base file for this theme.
+
+## License and attribution
+
+- **Title:** Much Cool CSS Theme
+- **Author:** c_bonefish (アカウント削除済)
+- **Source:** https://scp-wiki.wikidot.com/theme:much-cool — revision 19 (revision date 2023-02-25 16:46:05)
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: nebula2700 — a human translator credited by the live JP page and retained as the package records it (campaign-rule exception); where the campaign translated, the translator is AI.

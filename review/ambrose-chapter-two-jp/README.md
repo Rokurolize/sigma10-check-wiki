@@ -201,3 +201,11 @@ The classifier emitted three open blocks; all three are resolved, none required 
 - **R1 — B7 (residue; orig L21–26 → cand L23, body → body).** The import-instruction block. Resolved in sections 6 and 8: the block was restructured — its payload (the include line) survives as the usage line (cand L21, the added side of B6), its wrapper and separator were dropped as exhibit furniture, and its slot in the page is taken by the base-declaration line (cand L23). The subtitle explanation sentence inside it (orig L26) is the prose half of the T5 orphan (Per-theme record).
 - **R2 — B5 (heuristic; orig L17 → cand L19, body → body).** The introduction sentence. Resolved in section 6 as P10 translation by compression (the classifier's TRANS-UNANCHORED label stands); the attribution content's relocation is traced to the credit block and the comment header.
 - **R3 — B6 (heuristic; orig L19 → cand L21, body → body).** The usage sentence. Resolved in sections 6–7: the prose sentence was replaced by the usage line itself, in the P1 same-site include form; the permission half-sentence's absence is recorded in section 6.
+
+## License and attribution
+
+- **Title:** Ambrose Chapter Two
+- **Author:** Proasek
+- **Source:** https://scp-wiki.wikidot.com/theme:ambrose-chapter-two — revision 19
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

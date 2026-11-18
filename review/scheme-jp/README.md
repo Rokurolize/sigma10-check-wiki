@@ -221,3 +221,11 @@ All 11 residue blocks are translations whose lines defeat anchor matching; none 
 - R4 = B22 (original L70–73 → candidate L81–84): the sample volume and contents lines ("**Volume XX.XX.XX-XX**", "**1.** content 1", "**2.** content 2" → 第XX.XX.XX-XX巻， 内容1, 内容2).
 - R5 = B33 (original L179–180 → candidate L190–191): the CSS comment "/* ---- 검색창 - SEARCH-BOX ---- */" → "/* ---- 検索欄 - SEARCH-BOX ---- */" (section 6).
 - R6–R11 = B45, B48, B50, B58, B60, B62 (original L371–372, L406–407, L440–441, L578–579, L617–618, L659–660 → candidate L382–383, L417–418, L451–452, L589–590, L628–629, L670–671): the CSS section comments GEAR-SMALL → 小歯車, GEAR-MEDIUM → 中歯車, GEAR-LARGE → 大歯車, STICK → 棒, STICK-2 → 棒2, STEAM → 蒸気 (section 6).
+
+## License and attribution
+
+- **Title:** Scheme Theme
+- **Author:** shaftmetal, thd-glasses, Denevola, Fluxman
+- **Source:** https://scp-wiki.wikidot.com/theme:scheme — revision 30 (revision date 2023-07-23 15:04:30)
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

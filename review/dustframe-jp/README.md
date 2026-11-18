@@ -181,3 +181,11 @@ For class M the residue set is resolved in one table, not per-block slots.
 ## Change set outside the two diffed files
 
 The diff covers two files; the port's record is larger. `pages/theme-decoration-sample-dustframe-jp.txt` is the decoration sample the render checks ran against (its overflow and credit-modal items are section 11). One inbound dependency is recorded in another theme's T4 row: theme:paradigm-inapplicable-sigma-jp's row notes a P1 item for depending on this candidate (its own package carries that record; it is not an item against dustframe-jp). The follow-up diff artifact for the upstream drift since rev 7 (`diff-dustframe-from7.txt`) sits in the campaign record, outside this repo. There are no companion fragments for this theme.
+
+## License and attribution
+
+- **Title:** 尘封 Sigma-9 版式
+- **Author:** Mercuresphere
+- **Source:** https://scp-wiki-cn.wikidot.com/theme:dustframe — revision 7
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

@@ -183,3 +183,11 @@ The candidate's current state is the product of four commits and three check wav
 ## Appendix — residue blocks
 
 The classifier emitted no residue or heuristic blocks for this pair (9 blocks, all specific). The open shapes a reviewer might expect are accounted for in the standing sections: the large B2/B3 pair is the head-and-body restructure (sections 0, 3 and 8, with its coarseness disclosed in the Classification section), the three WS-ONLY blocks are the tab normalization (section 9), and B9 is the dissolved tail delivery zone (section 8). No new signature is proposed from this theme; the coarse-block shape itself is carried to the lane report as a classifier observation.
+
+## License and attribution
+
+- **Title:** Black Market Theme
+- **Author:** Randomini, stormbreath
+- **Source:** https://scp-wiki.wikidot.com/theme:black-market — revision 35
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

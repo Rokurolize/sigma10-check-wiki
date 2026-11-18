@@ -189,3 +189,11 @@ For class M the residue set is resolved in one table, not per-block slots. This 
 ## Change set outside the two diffed files
 
 The diff covers two files; the port's record is larger. `pages/theme-decoration-sample-flopstyle-dark-jp.txt` is the decoration sample the render lane attempted (its T2 runs are the coverage caveat of section 11(4)). The theme layers over the Flopstyle base apparatus delivered through its own code pages (section 0); its sibling theme:flopstyle-jp is a separate candidate with its own package in this batch. The follow-up diff artifact for the upstream drift since rev 21 (`diff-flopstyle-dark-from21.txt`) sits in the campaign record, outside this repo. The redeploy flagged in section 3 will change the draft-host page, not any file in this repo; when it happens, this package's flag should be closed by the coordinator's note in the batch record.
+
+## License and attribution
+
+- **Title:** Flopstyle: DARK
+- **Author:** GreenGolem
+- **Source:** https://scp-wiki.wikidot.com/theme:flopstyle-dark — revision 402 (revision date 2026-11-15 21:03:44)
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

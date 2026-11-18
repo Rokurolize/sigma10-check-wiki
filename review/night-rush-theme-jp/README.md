@@ -206,3 +206,11 @@ The classifier emitted two residue blocks and twenty-five heuristic blocks; all 
 - **R25 — B37 (heuristic, CSS-BODY; orig L212 → cand L224).** The header-image storage re-host. Resolved in section 4 as a P5 re-host; the ASSET-REHOST signature did not fire on the CSS `url()` form (patterns proposal, lane report).
 - **R26 — B38 (heuristic, CSS-BODY; orig L216 → cand L228).** The icon-image storage re-host, same shape. Resolved in section 4.
 - **R27 — B39 (heuristic, CSS-BODY; orig L368 → cand L380).** The added `margin-right: 2em;` declaration in the rate-widget rule. Resolved in section 8 (an in-place production-side correction no register names).
+
+## License and attribution
+
+- **Title:** Night Rush Theme
+- **Author:** Nagiros
+- **Source:** https://scp-wiki.wikidot.com/theme:night-rush-theme — revision 31 (revision date 2022-12-20 21:40:07)
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: pcysl — a human translator credited by the live JP page and retained as the package records it (campaign-rule exception); where the campaign translated, the translator is AI.

@@ -190,3 +190,11 @@ The migration deliverable `pages/phase17-diff-foxtrot-jp.txt` (the Phase 22 deci
 ## Appendix — residue and heuristic blocks
 
 The 21 residue blocks resolve by shape, in four groups. (1) Seventeen 2-line blocks in the documentation region (B28, B34, B53, B55, B56, B61, B62, B72, B73, B80, B81, B83, B125, B126, B131, B132 and their kin): the variable-documentation entries, where each `{{--var}}` row's description line pairs against its production translation without the anchor majority the classifier wants; all are section-6 translation, verified against the production page as third source. (2) B107 (orig L555 → cand L612-614): the font-import region, where the production page's Google Fonts set replaces the original's bunny.net set; section 4. (3) B117, B118 (orig L588-592 → cand L653-657): the `--head-font` / `--ui-font` / `--page-font-size` definitions themselves, the FIX3-A2 docs-correction counterparts; section 5. (4) B151 (orig L2216 → cand L2283-2391): the candidate-only JP localization CSS layer (section 3/8) — a whole production-added section has no original lines to anchor to, which is the residue shape an R4 adoption produces. B159 is a tail module boundary of the same adoption. The 48 heuristic blocks are the translation, whitespace and asset mass of sections 6, 9 and 4. No new signature is proposed from this theme; the R4-adoption residue shape (a candidate-only localization layer) is recorded here as a shape the classifier will meet again on every production-counterpart row.
+
+## License and attribution
+
+- **Title:** Foxtrot Theme
+- **Author:** Liryn
+- **Source:** https://scp-wiki.wikidot.com/theme:foxtrot — revision 171 (revision date 2026-03-26 17:29:48)
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: iti119 — a human translator credited by the live JP page and retained as the package records it (campaign-rule exception); where the campaign translated, the translator is AI.

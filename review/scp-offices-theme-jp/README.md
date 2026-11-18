@@ -177,3 +177,11 @@ The items above describe this package as built. The repair recorded below postda
 - B15: orig 101-102 -> cand 117-118 (body -> body) — the specimen heading "+ Examples" becomes "+ 例" and its lead line is translated; section 6.
 - B50: orig at 220 -> cand 221-221 (code-css -> code-css) — the `--offset-from-page-top: 0rem` definition; section 8.
 - B119: orig 537-537 -> cand 559-559 (body -> body) — the escaped footnoteblock; the defect flag in section 8.
+
+## License and attribution
+
+- **Title:** SCP Offices Theme
+- **Author:** ©Woedenaz
+- **Source:** https://scp-wiki.wikidot.com/theme:scp-offices-theme — revision 58 (revision date 2026-04-12 05:22:32)
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: 7happy7 — a human translator credited by the live JP page and retained as the package records it (campaign-rule exception); where the campaign translated, the translator is AI.

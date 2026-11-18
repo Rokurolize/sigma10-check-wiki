@@ -383,3 +383,11 @@ The stamp is STALE by design (computed against canonical 20ce2906; the candidate
 - R13-R59, B6, B8, B9, B10, B12, B14, B15, B17, B18, B23, B26, B28, B29, B30, B31, B32, B33, B34, B35, B36, B37, B38, B39, B40, B41, B42, B43, B44, B45, B46, B47, B48, B50, B51, B52, B53, B55, B56, B57, B58, B59, B61, B62, B63, B64, B66, B68 (heuristic, TRANS-UNANCHORED): one-to-one prose translations against the mirror (section 6).
 - R60, B70 (heuristic): the Source Code exhibit boundary, resolved in section 8.
 - R61-R189, B74, B75, B76, B77, B78, B79, B81, B82, B83, B84, B85, B86, B87, B88, B89, B90, B91, B92, B93, B94, B95, B96, B97, B98, B99, B100, B101, B102, B103, B104, B105, B106, B107, B108, B109, B110, B111, B113, B114, B116, B117, B118, B119, B120, B121, B122, B125, B126, B127, B128, B129, B130, B131, B132, B133, B134, B135, B136, B137, B138, B139, B140, B141, B142, B144, B145, B146, B147, B148, B149, B150, B151, B152, B153, B154, B155, B156, B157, B158, B159, B160, B161, B162, B163, B164, B165, B166, B167, B168, B169, B170, B171, B172, B173, B174, B175, B176, B177, B178, B179, B180, B181, B182, B183, B184, B185, B186, B187, B188, B189, B190, B191, B192, B194, B195, B196, B197, B198, B199, B200, B201, B202, B204, B205, B207, B208, B209, B210, B211 (heuristic, code-css channel): production-drift CSS pairs, the one shape of section 8; the channel change (code-css to body) is the delivery move of section 3, not content loss.
+
+## License and attribution
+
+- **Title:** Penumbra Theme
+- **Author:** EstrellaYoshte
+- **Source:** https://scp-wiki.wikidot.com/theme:penumbra — revision 155 (revision date 2026-04-12 05:16:38)
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: ukwhatn — a human translator credited by the live JP page and retained as the package records it (campaign-rule exception); where the campaign translated, the translator is AI.

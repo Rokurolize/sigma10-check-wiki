@@ -189,3 +189,11 @@ KB-28 is the pattern this instance confirms: a contrast failure whose cause is a
 The classifier left 35 heuristic blocks (tier C) and no residue: the 34 TRANS-UNANCHORED-primary blocks plus B67. They resolve by shape, not one by one. Thirty-one of the TRANS-UNANCHORED blocks are single-line prose, label, and exhibit translations in the documentation body (B7, B11, B14, B15, B19, B21–B31, B37, B40–B43, B47, B49, B51, B53, B56, B58, B61, B62, B64, B66), each verified against its original line as a one-to-one translation with no content added or dropped. The remaining four carry substance their sections record: B4 (the credit region's realignment, section 1), B67 (the color exhibit's form conversion, sections 6 and 8), and B68/B69 (the same realignment's other half — the exhibit's tail lines and the acknowledgment section's insertion, sections 8 and 10). No heuristic block required a new signature.
 
 Multi-label spans the primary-label listing under-reports, for the record: B1 carries the IFTAGS and DRAFT-HOST spans inside the delivery head (sections 0 and 3); B3 carries TASL-FIELDS and CREDIT-PROSE inside the credit block (section 1); B5/B6 are COLON-ENC blocks on single-line image exhibits (section 4); B38 carries the ANNOTATION span on a carried credit comment (sections 6 and 10); B71 carries JPFONT-LOAD inside the delivery move (section 4); B72 is the lang-gate rename inside the delivery move (section 5); B73 carries the COMMENT-TEXT span of the FIX5 override's own comment (per-theme record); B76 carries a COLON-ENC span inside the delivery move (section 4). The systematic lesson — a FIX5 repair can ride inside a DELIVERY-MOVE block and be invisible to a primary-label reading — is recorded in the lane report as a classifier-precision note.
+
+## License and attribution
+
+- **Title:** 中央厨房 版式
+- **Author:** breaddddd & Dr Hormress
+- **Source:** https://scp-wiki-cn.wikidot.com/theme:kitchen — revision 9
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

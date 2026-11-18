@@ -207,3 +207,11 @@ The 20 heuristic blocks are translation mass in three shapes, plus two seams; th
 - B9 (orig L58 → cand L40): the intro sentence; LINK-REPOINT primary, tier C because the prose translation dominates the line. Assigned to section 7 and flag F3.
 - B11 (orig L64 → cand L45-46): the install cluster's tail, carrying the translator's note. Assigned to section 10.
 - B64 (residue; orig L280 → cand L263): the gate-close relocation seam. Assigned to sections 2 and 8.
+
+## License and attribution
+
+- **Title:** 夹缝间 版式
+- **Author:** 原語版ページの作成者に同じ（scp-wiki-cn の theme:betwixt）
+- **Source:** https://scp-wiki-cn.wikidot.com/theme:betwixt — revision 3
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

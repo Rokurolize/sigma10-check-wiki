@@ -186,3 +186,11 @@ Two T4/T5 charges remain visible in the candidate under the ledger determination
 ## Change set outside the two diffed files
 
 The diff covers two files; the port's record is one file larger. `pages/theme-decoration-sample-highlighter-bhl-jp.txt` is the decoration sample the render checks ran against (its findings are the sample half of section 11(3)); it belongs to this theme's record but carries no port change of its own to explain here. There is no companion file and no shared base file beyond the Sigma-10 base itself.
+
+## License and attribution
+
+- **Title:** 标记笔 黑标主题版式
+- **Author:** 原語版ページの作成者に同じ（scp-wiki-cn の theme:highlighter-bhl）
+- **Source:** https://scp-wiki-cn.wikidot.com/theme:highlighter-bhl — revision 16
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

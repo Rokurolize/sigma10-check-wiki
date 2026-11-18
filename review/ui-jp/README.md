@@ -154,3 +154,11 @@ The classifier reports 0 residue blocks and 13 heuristic blocks. All 13 resolve 
 - B16 (CSS-BODY): the `iframe.scpnet-interwiki-frame` selector extension — section 8, the R6 JP-DOM shape.
 
 No heuristic block is left unadjudicated, and no new signature is proposed from this package alone; the selector-extension shape is carried to the lane report as a cross-batch proposal.
+
+## License and attribution
+
+- **Title:** Unusual Investigations CSS Theme
+- **Author:** GreenWolf (改訂: stormbreath)
+- **Source:** https://scp-wiki.wikidot.com/theme:ui — revision 44
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

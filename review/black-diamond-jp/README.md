@@ -166,3 +166,11 @@ The usage example at candidate L35 as built read `> @@[[include :scp-jp:theme:bl
 ## Change set outside the two diffed files
 
 The diff covers two files; the port's record is two files larger. `pages/theme-decoration-sample-black-diamond-jp.txt` is the decoration sample the render checks ran against (its overflow figures are section 11(2)). And `pages/component:sigma-plus-jp.txt` is the ported component candidate the head include names (section 2): it belongs to this theme's record as its required companion, carries its own port record, and is the concrete form of the campaign's rule that required components are ported alongside their themes. There are no other companion fragments and no inbound-link repairs in other candidates for this theme.
+
+## License and attribution
+
+- **Title:** Black Diamond Theme
+- **Author:** Fish^12
+- **Source:** https://scp-wiki.wikidot.com/theme:black-diamond — revision 16
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

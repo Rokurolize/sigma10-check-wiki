@@ -304,3 +304,11 @@ Resolution: assigned to section 8. B15 is the candidate's added `+ ソースコ�
 - Note: no other signature matched
 
 Resolution: assigned to sections 1 and 8. B37 is the exhibit's close pair — `[[/code]]` (candidate L617) and the `[[/collapsible]]` (candidate L618) that closes B15's wrapper — after which the license box (B38) attaches. The CSS-BODY label on this block is the classifier's catch-all; the content is structural, not CSS churn. No new signature proposed.
+
+## License and attribution
+
+- **Title:** 한밤중의 초대 CSS 테마
+- **Author:** c_bonefish
+- **Source:** https://scpko.wikidot.com/theme:a-midnight-invitation — revision 20
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

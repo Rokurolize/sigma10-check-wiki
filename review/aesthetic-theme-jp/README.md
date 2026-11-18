@@ -182,3 +182,11 @@ The items above describe this package as built. The repairs recorded below postd
 ## Change set outside the two diffed files
 
 The diff covers two files; the port's record is larger. `pages-existing/existing:theme-aesthetic-theme.txt` is the production counterpart and this candidate's actual ancestor (section 0) — a record source, not a port output. `pages/theme-decoration-sample-aesthetic-theme-jp.txt` is the decoration sample the render checks ran against. The BHL base the candidate includes is the production page `theme:black-highlighter-theme` on scp-jp (section 2), not a campaign candidate file. There are no companion fragments and no inbound-link repairs in other candidates for this theme.
+
+## License and attribution
+
+- **Title:** A E S T H E T I C T H E M E
+- **Author:** Woedenaz
+- **Source:** https://scp-wiki.wikidot.com/theme:aesthetic-theme — revision 68 (revision date 2022-09-28 17:32:25)
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: nebula2700 — a human translator credited by the live JP page and retained as the package records it (campaign-rule exception); where the campaign translated, the translator is AI.

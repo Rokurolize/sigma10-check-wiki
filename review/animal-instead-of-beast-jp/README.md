@@ -208,3 +208,11 @@ All six heuristic blocks are translation or seam mass; each is assigned here. No
 - R4 — B13 (orig L51 → cand L59): the footnote exhibit line, translated including the onomatopoeia. Neither side carries a [[footnoteblock]] (grep count 0 on both), so the live footnote has the same (absent) apparatus on both sides — parity, no flag. Assigned to section 6.
 - R5 — B15 (orig L60 → cand L68-71): the seam where the candidate adds the [[collapsible]] wrapper and the ソースコード heading above the code block. Assigned to section 3.
 - R6 — B36 (orig L614 → cand L634-635): the code-close seam (CSS-BODY primary); no CSS content changes behind it, per the item-102 comparison. Assigned to section 8.
+
+## License and attribution
+
+- **Title:** 짐승 대신 동물 CSS 테마
+- **Author:** c_bonefish
+- **Source:** https://scpko.wikidot.com/theme:animal-instead-of-beast — revision 5
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

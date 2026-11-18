@@ -170,3 +170,11 @@ The usage examples at candidate L225 and L254 as built read `@@[[include :scp-jp
 ## Change set outside the two diffed files
 
 The diff covers two files; the port's record is one file larger. `pages/theme-decoration-sample-asagao-jp.txt` is the decoration sample the render checks ran against (its credit-modal and overflow states are section 11(2)); it belongs to this theme's record but carries no port change of its own to explain here. There is no base-theme include for this theme (its CSS is self-contained, section 3), no companion fragments, and no inbound-link repairs in other candidates.
+
+## License and attribution
+
+- **Title:** 《朝颜文学报特刊》：实验性文章布局及其使用方法
+- **Author:** Dr Hormress（ヘッダーロゴ: breaddddd）
+- **Source:** https://scp-wiki-cn.wikidot.com/theme:asagao — revision 10
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

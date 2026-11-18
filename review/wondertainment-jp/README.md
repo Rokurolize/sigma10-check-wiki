@@ -162,3 +162,11 @@ The classifier reports 15 heuristic blocks and 2 residue blocks. All resolve by 
 - The duplicated yui-navset rules are carried content, not a classifier question (section 8).
 
 No heuristic or residue block is left unadjudicated, and no defect flag arises from this package.
+
+## License and attribution
+
+- **Title:** Dr. Wondertainment Theme
+- **Author:** DarkStuff・taylor_itkin（改訂: stormbreath）
+- **Source:** https://scp-wiki.wikidot.com/theme:wondertainment — revision 64
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

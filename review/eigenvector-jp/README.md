@@ -181,3 +181,11 @@ One companion candidate: `pages/theme-decoration-sample-eigenvector-jp.txt`, the
 ## Appendix — heuristic blocks
 
 No residue blocks (0). The 34 heuristic blocks resolve by shape: TRANSLATION-ANCHORED and TRANS-UNANCHORED mass in the documentation body (section 6), and the two CSS-BODY blocks (B56, B57), which are the P7 font-stack extensions adjudicated in section 4 per the standing rule that font-family rewrite blocks are P7 rewrites whatever the classifier's primary label says. No new signature is proposed from this theme.
+
+## License and attribution
+
+- **Title:** Eigenvector Theme
+- **Author:** EstrellaYoshte
+- **Source:** https://scp-wiki.wikidot.com/theme:eigenvector — revision 19
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

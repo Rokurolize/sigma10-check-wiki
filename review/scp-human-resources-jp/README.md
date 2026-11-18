@@ -199,3 +199,11 @@ The checker finding set is unchanged (error 0 / warn 0 / info 0 before and after
 ## Appendix — classifier adjudication
 
 No residue and no heuristic blocks (20 specific of 20). Two labels need adjudication against the bytes. (a) RATE-EXHIBIT-KEPT-CANDIDATE (span in B3): a false fire. B3 spans original L13–202, which contains the original's bare Rate (original L43), against candidate L8–12, the font-fix comment region. The candidate contains no `[[module Rate]]` (grep count 0); the original's bare Rate was removed under P3 (section 1). The label describes the original side of the hunk, not a kept exhibit. (b) DUPIMPORT-DEL (span in B3): the deleted import is the tail self-delivery @import of the original's local--code /1 (original L287), subsumed by the DELIVERY-MOVE inlining (section 3); the BHL dual channel is retained, so no BHL import was deleted. The WS-ONLY spans are adjudicated in section 9.
+
+## License and attribution
+
+- **Title:** Human Resources Theme
+- **Author:** ©CityToast
+- **Source:** https://scp-wiki.wikidot.com/theme:scp-human-resources — revision 14 (revision date 2023-01-06 08:48:09)
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: KanekoLiku — a human translator credited by the live JP page and retained as the package records it (campaign-rule exception); where the campaign translated, the translator is AI.

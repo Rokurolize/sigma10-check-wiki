@@ -168,3 +168,11 @@ The classifier reports 5 residue blocks and 43 heuristic blocks. All resolve by 
 - Heuristic mass by shape: the TRANS-UNANCHORED and COMMENT-TEXT blocks are the body prose and CSS comment translations (section 6); the EXHIBIT-RESTRUCTURE primaries (B3, B5, B14, B66, B68, B72) are include repoints and the license-box form swap at exhibit loci (sections 1–3), false fires against the exhibit census; the CSS-BODY blocks are the BHL host swap (B2, section 3) and the three font-weight mappings (B51, B54, B58, section 4); the WS-ONLY blocks are section 9.
 
 No heuristic or residue block is left unadjudicated, and no defect flag arises from this package.
+
+## License and attribution
+
+- **Title:** Wilderness Theme
+- **Author:** stormbreath
+- **Source:** https://scp-wiki.wikidot.com/theme:wilderness — revision 56
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

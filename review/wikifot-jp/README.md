@@ -188,3 +188,11 @@ The classifier emitted five residue blocks and twenty-one heuristic blocks; all 
 - **R3 — B37 (residue; orig L290–291 → cand L305–306, body → body).** The darkmode module line completed with `}}`. Resolved in section 8, item (a): a port repair of the original's truncated CSS (the original module's depth scan ends at +2; the candidate's ends at 0).
 - **R4 — B38 (residue; orig L292 → cand L307–365, body → body).** The candidate's tail growth: the closing gate line plus the five appended supplement modules. Resolved in sections 3 and 10.
 - **R5 — the heuristic mass (B2–B22, B24, B26, B28–B36).** The translated documentation body: joke prose, usage lines, the glossary, the tab specimens and the BSOD parody, interleaved with the exhibit restructures of section 8. The classifier's "script delta without the anchor majority" note is the honest label for line-by-line translation; each block's content is accounted in sections 6 and 8, and the localize lane recorded no display-visible T5 residue for this theme.
+
+## License and attribution
+
+- **Title:** Wikifot Theme
+- **Author:** Erminustay
+- **Source:** https://scp-wiki.wikidot.com/theme:wikifot — revision 12 (revision date 2024-07-05 14:55:30)
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

@@ -213,3 +213,11 @@ The items above describe this package as built. The repairs recorded below postd
 ## Appendix: residue and heuristic resolution
 
 Residue blocks: 0 of 10 — every block in this pair carries a specific signature, an unusually clean classification that reflects the port's shape (one consolidation move, one head insertion, one tail supplement). Heuristic blocks: likewise 0. The classification's work is done by its 10 specific blocks; block B5 (the consolidated stylesheet, 2,270 lines) is labeled RESTORATION by the classifier and adjudicated as consolidation in §3/§8, and its COMMENT-TEXT spans are the original's CSS comments carried and translated inside the moved block (R1 porter-visible mass, resolved by shape).
+
+## License and attribution
+
+- **Title:** 山城 版式
+- **Author:** Odeo
+- **Source:** https://scp-wiki-cn.wikidot.com/theme:shancheng — revision 14
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

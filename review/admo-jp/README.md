@@ -193,3 +193,11 @@ Stamp treatment follows the jiha-jp / alexylva-university-jp precedents: the reg
 ## Change set outside the two diffed files
 
 The diff covers two files; the port's record is larger in a way that matters here. `pages/theme:basalt-jp.txt` is the base candidate this file's delivery imports (candidate L3) — the K5b-3 reference; its own package carries its own record. `pages/theme-decoration-sample-admo-jp.txt` is the decoration sample the render checks ran against (the render row's page/sample overflow pair). There are no companion fragments and no inbound-link repairs in other candidates for this theme.
+
+## License and attribution
+
+- **Title:** ADMONITION Theme
+- **Author:** Liryn & Placeholder McD
+- **Source:** https://scp-wiki.wikidot.com/theme:admo — revision 66
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

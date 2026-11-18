@@ -193,3 +193,11 @@ There are no heuristic and no residue blocks (10 specific of 10). Two specific l
 
 - **B9** (orig L473 → cand L288–804, RESTORATION): the two-copy alignment artefact. With two full copies of the stylesheet in each file, the differ pairs a late original region against a long candidate span; the block's label spans locate the real insertions inside it: CREDIT-PREVIEW (cand L352–353, L361–362) and TASL-FIELDS (cand L353–361) for the credit block, HEADERVAR (cand L536–539) and CONTENT-STRING (cand L535–536, L588–589) in the exhibit copy. The RESTORATION label is a diff-only signal (added lines matching the original's own earlier region, i.e. the second copy); nothing for this theme was deleted and later restored by a wave.
 - **TASL-FIELDS second firing** (inside B9, cand L514–515): the signature fires on the font-sample `[[span]]` exhibit lines in the body, which are field-shaped documentation samples, not credit fields. The theme's only credit block is cand L353–362.
+
+## License and attribution
+
+- **Title:** Highroller Theme
+- **Author:** Rounderhouse
+- **Source:** https://scp-wiki.wikidot.com/theme:highroller — revision 17
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

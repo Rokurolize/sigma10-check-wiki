@@ -244,3 +244,11 @@ The four residue blocks resolve by shape; the 49 heuristic entries that follow t
 - R2 (B31, orig L240 → cand L220): the syntax-highlighted copy of the usage self-include repointed `:scp-wiki:theme:inkblot` → `:scp-jp:theme:inkblot-jp` — sections 2 and 7, the P1 closure's second copy (1869877).
 - R3 (B45, orig L287 → cand L267) and R4 (B56, orig L336 → cand L316): sample body strings "Text" → 「文字」 in the demonstration text — section 6, P10.
 - R5–R53 (B9, B10, B13, B15–B18, B20–B25, B27, B28, B30, B32, B33, B35–B39, B41–B43, B46, B47, B49–B55, B57–B59, B61–B64, B66–B71, B73): prose and sample-string translation pairs of the preamble, guide, and demonstrations (e.g. B9 "Theme." → 「テーマ。」, B10 "A theme for reviews." → 「レビューのためのテーマ。」) — section 6, P10 by shape; no new signature is proposed for any of them.
+
+## License and attribution
+
+- **Title:** Inkblot Theme (Waldon Studio Theme)
+- **Author:** Croquembouche
+- **Source:** https://scp-wiki.wikidot.com/theme:inkblot — revision 59 (revision date 2025-02-10 10:47:41)
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

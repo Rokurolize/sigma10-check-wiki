@@ -193,3 +193,11 @@ For class M the residue set is resolved in one table, not per-block slots.
 ## Change set outside the two diffed files
 
 The diff covers two files; the port's record is larger. `pages/theme-decoration-sample-enlightened-eyes-jp.txt` is the decoration sample the render checks ran against (its credit-modal item is section 11(3)). The candidate layers over `pages/theme:basalt-jp.txt` (frame priorities 1–2 and the exhibit's import) — that base is its own candidate with its own review package, and the K5b-3 scope note in section 0 is the boundary. The two defect flags of section 11 have since been repaired by canonical commit 4176cc7; this package's candidate.txt, diff.md and stamp have been refreshed against the corrected bytes by the harvest procedure. There are no companion fragments for this theme.
+
+## License and attribution
+
+- **Title:** Enlightened Eyes Theme
+- **Author:** JakdragonX
+- **Source:** https://scp-wiki.wikidot.com/theme:enlightened-eyes — revision 51
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

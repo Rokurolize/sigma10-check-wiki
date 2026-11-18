@@ -184,3 +184,11 @@ Class M treatment: the residue collapses into this table rather than per-block s
 | B62 (residue) | One empty alignment line at candidate L201 | No content |
 | B81 (residue) | An empty alignment span at candidate L454–457 where the body channel meets the code-css channel | No content |
 | B82 (CSS-BODY) | One measured value change inside the code body: `flex-basis: 6rem` → `8.3rem` (original L577 → candidate L688) | A real delta with no ground stated in the campaign record; shown here so a reviewer sees it rather than discovers it. It sits in the rate/credit width area of the layout, but the record does not say that, and this README does not invent a reason |
+
+## License and attribution
+
+- **Title:** Isolated Terminal Theme
+- **Author:** EstrellaYoshte, Woedenaz
+- **Source:** https://scp-wiki.wikidot.com/theme:isolated-terminal — revision 122 (revision date 2026-02-01 03:34:54)
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: oplax-counterpoint — a human translator credited by the live JP page and retained as the package records it (campaign-rule exception); where the campaign translated, the translator is AI.

@@ -286,3 +286,11 @@ The candidate's current state is the product of successive waves, not one pass: 
 ## Appendix — heuristic and residue adjudication
 
 60 blocks: 27 specific, 32 heuristic, 1 residue. **Residue B58** (original L389 → candidate at L406, code-css → body): the original's code block ends with a blank line before its `[[/code]]` (original L389–390); the candidate's block closes without that blank line (candidate L405). The block's last rule (the `#search-top-box-form` rule, original L384–388) is byte-identical in the candidate (L401–405 area); no rule text is involved. A form-only tail difference at the block boundary — assigned to section 9. **Heuristic mass:** the TRANS-UNANCHORED spans (35) and the single-line appendix pairs (R2–R33 of the skeleton's listing: the banner B5, the dead-link exhibit B8, and the documentation lines B6, B10, B11, B20–B51) are the documentation body's one-to-one translation lines, each verified against the mirror while section 6 was written; B5 and B8 carry the additional LINK-REPOINT spans adjudicated in section 7. The COMMENT-TEXT span is the font-import comment of section 10. No heuristic block conceals a drop: the include census (5 distinct includes in the original; the candidate adds the credit pair and the license-box pair and drops none) and the footnote census (per-theme record, item 4) close the content-presence check.
+
+## License and attribution
+
+- **Title:** Linear Black Theme
+- **Author:** Queerious
+- **Source:** https://scp-wiki.wikidot.com/theme:linear-black — revision 10
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

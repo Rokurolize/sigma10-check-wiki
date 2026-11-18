@@ -121,3 +121,12 @@ None of these is a defect in the campaign record or the candidate; they are cons
 - SHA-256 of `original.txt`: `17f5d83fc92f3f171fcdb790f78fe207db86203eeca1e34f508631fb36daca34` (1,374 bytes) — equals `mirror_sha256` in `review/sources.tsv` and the frozen mirror `review-mirrors/orig-site-rev9.txt`.
 - `python3 review/classify_hunks.py review/sigma-10-jp --repo . --no-skeleton`: wrote `classification.json`; 1 block, signatures as reported in "Strain" item 2.
 - `python3 review/build_review.py` then `python3 review/build_review.py --check`: generated `diff.md` and the verdict stamp below; the check's stale set was compared against the pristine baseline (captured before this package existed) — this package does not appear in either.
+
+## License and attribution
+
+- **Title:** theme:site — the SCP Wiki's Sigma-10 theme directory
+- **Author:** Not named in this package's record
+- **Source:** https://scp-wiki.wikidot.com/theme:site — revision 9 (revision date 2023-07-15 18:24:06)
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This row is the Sigma-10 environment selector itself: the candidate is an @import wrapper, not a ported theme. See "Part 1 — Original mirror, degraded to a provenance record" and "Change classes" in this README for what changed and why. Translator: not applicable — this row is an @import environment wrapper with no reader-visible text.
+  - Author gap: this package's record does not name an author. The original page's Wikidot identity is theme:site at https://scp-wiki.wikidot.com/theme:site.

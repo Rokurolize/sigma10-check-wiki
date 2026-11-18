@@ -176,3 +176,11 @@ Stamp treatment follows the jiha-jp / alexylva-university-jp precedents: the reg
 - Shape 2 — usage-prose translation without anchors: B5, B6, B7, B9, B11, B12, B13, B14, B15, B16, B17, B20, B22, B23, B24, B25, B26, B27, B28, B29, B30, B31, B32, B37, B38, B39, B40, B42. The BHL boilerplate body (usage, examples, footnotes prose) translated line by line; the differ lost the pairing where Japanese word order or a rewritten sentence broke its anchor tokens. Read against the mirror, each pair is the same sentence in Japanese; no content was added, dropped or restructured. B3 and B44 also carry TRANS-UNANCHORED but are specific-labeled and adjudicated in sections 1 and 8.
 - Shape 3 — exhibit-region residue: B4 (original L36–53 → candidate L50–67), B8 (original L46–53 region), B10. The titles/tabview exhibit, translated with its heading text and tab labels in Japanese; the classifier found no signature because the exhibit's own markup tokens changed language with its text. The exhibit is complete (section 8 census).
 - Shape 4 — unchanged-line seams: B48 (original L439 `color: white;` → candidate L458, identical) and B64 (original L549 → candidate L568, identical `background-color` line). The lines themselves are byte-identical on both sides; the differ isolated them because their neighbouring lines changed (Shape 1 comments). No change to adjudicate.
+
+## License and attribution
+
+- **Title:** The Foundation Sigma-9 Theme
+- **Author:** macro_au_micro
+- **Source:** https://scp-wiki.wikidot.com/theme:the-foundation-sigma — revision 7
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

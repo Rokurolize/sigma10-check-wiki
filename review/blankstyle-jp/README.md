@@ -148,3 +148,11 @@ Checker per the report: plain error 0 / warn 0 / info 1 unchanged; links error 0
 - B18 (original L333–345, no candidate counterpart): the #side-bar .side-block base rule and the .media / .resources background rules. The candidate carries production's restructured forms for the same surfaces (the base rule in production's text, the backgrounds as attribute-selector overrides, section 5), so this is the production mechanism change, not a rule loss. Adjudicated against the production page.
 - B28 (original L699–703, no candidate counterpart): the original's collapsible close and final [[/div]] of its wrapper structure. The candidate has no collapsible wrapper (section 8's form difference), so the tail tokens have no counterpart. Structural, adjudicated.
 - The heuristic CSS-BODY blocks resolve as: B4, the bunny.net import line's position (the import itself is section 4); B9, B13, B19, production text forms (section 9); B16 and B17, the #side-bar .side-block rule region restated in production's form (its border declaration gains !important); B21 and B23, production's #page-content prefixes (section 5).
+
+## License and attribution
+
+- **Title:** BLANKSTYLE CSS
+- **Author:** Placeholder McD、HarryBlank
+- **Source:** https://scp-wiki.wikidot.com/theme:blankstyle — revision 119 (revision date 2026-03-26 17:28:07)
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: iti119 — a human translator credited by the live JP page and retained as the package records it (campaign-rule exception); where the campaign translated, the translator is AI.

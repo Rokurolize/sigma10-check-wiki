@@ -165,3 +165,11 @@ The usage example at candidate L43 as built read `@@[[include :scp-jp:theme:blac
 ## Change set outside the two diffed files
 
 The diff covers two files; the port's record is one file larger. `pages/theme-decoration-sample-black-rain-jp.txt` is the decoration sample the render checks ran against (its credit-modal and overflow states are section 11(2)); it belongs to this theme's record but carries no port change of its own to explain here. The candidate layers over `pages/theme:black-highlighter-theme.txt`, the production JP Black Highlighter page, whose own record is the black-highlighter-theme package in this batch; the deferred logo attachment (section 4) lands on this candidate page itself at posting. There are no companion fragments and no inbound-link repairs in other candidates for this theme.
+
+## License and attribution
+
+- **Title:** 黑色之雨 主题版式
+- **Author:** 原語版ページの作成者に同じ（scp-wiki-cn の theme:black-rain）
+- **Source:** https://scp-wiki-cn.wikidot.com/theme:black-rain — revision 14
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

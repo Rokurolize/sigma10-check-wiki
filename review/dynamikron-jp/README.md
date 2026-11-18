@@ -207,3 +207,11 @@ One companion candidate: `pages/theme-decoration-sample-dynamikron-jp.txt`, the 
 - R2 — B61 (residue; orig L208 → cand L218): the VHS-log exhibit's "**> RECORDING STARTED <**" → "**> 録画開始 <**". In-fiction UI text, translated; section 6.
 - R3 — B66 (residue; orig L225 → cand L235): the log exhibit's "SPEAKER" → "話者". Same shape as R2; section 6.
 - The 28 heuristic blocks resolve by shape: TRANSLATION-ANCHORED and TRANS-UNANCHORED mass in the documentation and exhibits (section 6), WS-ONLY padding (section 9), and CSS comment translations inside the exhibit. No new signature is proposed from this theme; the three residue blocks are all the same shape (short in-fiction or label strings translated without anchors), already covered by the section-6 narration rule.
+
+## License and attribution
+
+- **Title:** Dynamikron Theme
+- **Author:** JackalRelated
+- **Source:** https://scp-wiki.wikidot.com/theme:dynamikron — revision 19 (revision date 2026-11-15 20:06:24)
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

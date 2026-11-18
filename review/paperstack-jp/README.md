@@ -191,3 +191,11 @@ The items above describe this package as built. The repairs recorded below postd
 ## Change set outside the two diffed files
 
 The diff covers two files; this theme's record is the batch's largest. `pages-existing/existing:theme-paperstack.txt` is the production third source (Provenance; sections 0–8 cite it throughout). `pages/phase17-diff-paperstack-jp.txt` is the production migration deliverable (the credit-only diff of section 1). `pages/theme-decoration-sample-paperstack-jp.txt` is the decoration sample the render checks ran against (its items are section 11(2)); the repo also holds the production-name sample `pages/theme-decoration-sample-paperstack.txt`. The follow-up artifact diff-paperstack-from71 lives in the campaign record outside this repo (section 11(3)). There are no companion fragments for this theme; inbound dependents (themes whose banners credit Paperstack, ragnarok-theme-jp among them) layer over their own bases and are not part of this change set.
+
+## License and attribution
+
+- **Title:** Paperstack Theme
+- **Author:** EstrellaYoshte
+- **Source:** https://scp-wiki.wikidot.com/theme:paperstack — revision 105 (revision date 2026-04-12 05:15:56)
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: ukwhatn — a human translator credited by the live JP page and retained as the package records it (campaign-rule exception); where the campaign translated, the translator is AI.

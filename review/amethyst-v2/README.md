@@ -92,3 +92,12 @@ No candidate text is invented to make the package look complete. The empty `cand
 ## Generator behaviour — strain reported
 
 The generator has an explicit `theme:amethyst-v2` branch inside `assemble_stamp()` (its `AMETHYST_LINES` constant) that emits the full EXCEPTION stamp, but `main()` applies stamps only to packages that have a `candidate.txt`. A K1 package has no candidate by definition, so `main()` neither regenerates nor `--check`es this package's stamp. To keep the stamp generator-emitted rather than hand-written, the block in this README was inserted by calling `build_review.assemble_stamp(rec, 'theme:amethyst-v2')` and `build_review.apply_stamp(...)` on this file; its bytes are exactly what the generator emits for the exception. This is a generator/workflow strain to report, not a reason to alter `build_review.py` (a file outside this package's assignment): the no-candidate case is handled in the stamp builder but unreachable from the generator's main loop. The package still behaves correctly under the generator — it is skipped cleanly, appears in no stale set, and its stamp's citations were verified independently with the generator's own citation checker.
+
+## License and attribution
+
+- **Title:** Amethyst V2 (theme:amethyst-v2)
+- **Author:** Not named in this package's record
+- **Source:** https://scp-wiki-cn.wikidot.com/theme:amethyst-v2 — revision 42 (revision date not recorded in review/sources.tsv; mirror metadata records 2026-08-24 03:04:21 as the revision updated_at)
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** No port candidate exists for this work: this package is the sweep's single named exception and holds the original mirror only. See "Part 1 — The mirror (present)" and "Why no candidate exists" in this README for what changed and why. Translator: not applicable — no port candidate exists; no translation was made.
+  - Author gap: this package's record does not name an author. The original page's Wikidot identity is theme:amethyst-v2 at https://scp-wiki-cn.wikidot.com/theme:amethyst-v2.

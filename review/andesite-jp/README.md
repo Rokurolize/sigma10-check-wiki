@@ -189,3 +189,11 @@ The diff covers two files; the port's full change set is larger. (1) `pages/them
 ## Multi-wave provenance
 
 The candidate's current state is the product of successive waves, not of a single porting pass: the Stage 2 CN1 integration (4a2f4a5) produced the port (translation, credit swap, delivery re-base, the cobs replacement, and the Chinese residue it left in strings and links); rework2-p3 (2d69b1c) attached the shared sigma-plus and footnote receivers; FIX-P4 (f1138e4) repointed the base-theme CSS imports to the JP candidates; and FIX5-TEXTA (6f6b349) closed items 43 and 44 and completed the usage example. Citations, in place of a changelog: GOSIGN2-LEDGER.md §(c3) (localize row), §(c2) (render row), §(e) items 43–44; GOSIGN2-LEDGER-SUPPLEMENT.md rows 43–44; REPORT-GOSIGN2-FIX5-TEXTA.md §8. The go-sign re-run over that record is what the Status block certifies.
+
+## License and attribution
+
+- **Title:** 安山岩 版式
+- **Author:** AsWheat
+- **Source:** https://scp-wiki-cn.wikidot.com/theme:andesite — revision 10
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

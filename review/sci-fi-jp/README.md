@@ -202,3 +202,11 @@ Flags 1–4 and the "Flags from this package" row above describe this package as
 ## Appendix — heuristic and residue adjudication
 
 79 blocks: 31 specific, 45 heuristic, 3 residue. **Residue B3** (original L11–13 → candidate L21–23) and **residue B5** (original L36–38 → candidate L40–42): the tails of the two URL-encoded sidebar css= includes (the template copy and the live copy). Decoding either candidate copy shows the P7 stack swap inside the encoding: `--UI-font` names `'Jost','Noto Sans JP'` where the original's encoding names `'Noto Sans SC'`; the residue is the encoding's tail bytes, unlabeled because the signature table does not decode URL-encoded parameters. **Residue B78** (the code block's tail): adjudicated in section 10 — the brace stands on its own line, the sourceMappingURL comment is dropped, and the port note rides here. **Heuristic mass:** COMMENT-TEXT (57 spans) is the compiled body's carried comments (section 6); TRANS-UNANCHORED (49) and TRANSLATION-ANCHORED (21) are the body translation pairs; GLYPH-FORM (7 spans, in the CSS body blocks) fires on the compiled body's retained simplified-Chinese strings, adjudicated in section 5 as identity forms under ruling 2 / KB-57, not unlocalized residue — the theme's Japanese-facing prose is fully translated, and the strings the signature catches sit inside the author's compiled artifact. The one CSS-BODY heuristic block (B22) carries the font loads of section 4 (its FONT-IMPORT and JPFONT-LOAD spans are specific labels inside it). The LICENSE-BOX span (B79) is the T4 supplement of section 1: the original has no license box; the candidate's box (candidate L1836–1841) is the campaign's standard supplement, with the author-parameter flag recorded against it.
+
+## License and attribution
+
+- **Title:** 科幻小说 版式
+- **Author:** hoah2333
+- **Source:** https://scp-wiki-cn.wikidot.com/theme:sci-fi — revision 4
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

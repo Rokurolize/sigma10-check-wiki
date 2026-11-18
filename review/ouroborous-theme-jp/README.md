@@ -218,3 +218,11 @@ The Phase 17 migration deliverable, pages/phase17-diff-ouroborous-theme-jp.txt i
 
 - R1 = B23 (original L88–89 → candidate L100–101): the demonstration heading "+ Examples" → "+ 例", a full heading-text translation with no surviving anchor token, so no signature fires. Translation by shape, counted in section 6.
 - R2 = B166 (original L1025–1026 → candidate L1036–1037): the tail [[footnoteblock]] escaping, the ffad285 reconcile line (Per-theme record, item 2). The classifier leaves it unlabeled because escaping changes no anchor; the wave commit is its ground.
+
+## License and attribution
+
+- **Title:** Ouroborous Theme
+- **Author:** Woedenaz
+- **Source:** https://scp-wiki.wikidot.com/theme:ouroborous-theme — revision 41 (revision date 2023-05-05 17:15:28)
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: nebula2700 — a human translator credited by the live JP page and retained as the package records it (campaign-rule exception); where the campaign translated, the translator is AI.

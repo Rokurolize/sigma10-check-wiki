@@ -176,3 +176,11 @@ For class M the residue set is resolved in one table, not per-block slots.
 ## Change set outside the two diffed files
 
 The diff covers two files; the port's record is one file larger. `pages/theme-decoration-sample-ethic-committee-jp.txt` is the decoration sample the render checks ran against (its findings are the sample half of section 11(3–4)); it belongs to this theme's record but carries no port change of its own to explain here. The candidate layers over no base theme, there are no companion fragments, and no inbound-link repairs in other candidates belong to this theme.
+
+## License and attribution
+
+- **Title:** 伦理委员会 版式
+- **Author:** M4A1MODIII
+- **Source:** https://scp-wiki-cn.wikidot.com/theme:ethic-committee — revision 36
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

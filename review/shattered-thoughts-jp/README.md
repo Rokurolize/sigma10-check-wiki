@@ -204,3 +204,11 @@ A compact port of a small Sigma-9-era EN theme. The delivery topology is unchang
 Residue blocks: 3 of 105. All three are CSS section-banner comment translations the classifier left unlabeled — `/* -=- IMAGES -=- */` → 画像 (original lines 521–522 → candidate 529–530), TABLES → 表 (527–528 → 535–536), FOOTNOTES → 脚注 (640–641 → 648–649). Shape: COMMENT-TEXT (R1, porter-visible comment translation), the same class as the 32 labeled COMMENT-TEXT blocks; resolved here so the residue count is explained, not waived.
 
 Heuristic mass: 62 of 105 blocks carry heuristic primaries. Their spans are TRANS-UNANCHORED (63 spans: prose and exhibit translation without a shared anchor token; §6) and COMMENT-TEXT (32 spans: CSS comment translation; R1). Both shapes are the expected heuristic population for a translated theme whose code comments were carried and translated; no heuristic block hides a delivery, credit or font change — those all carry specific signatures (§1, §3, §4).
+
+## License and attribution
+
+- **Title:** Shattered Thoughts Theme
+- **Author:** Yossipossi
+- **Source:** https://scp-wiki.wikidot.com/theme:shattered-thoughts — revision 34
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

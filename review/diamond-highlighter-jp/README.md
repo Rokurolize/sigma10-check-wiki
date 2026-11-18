@@ -182,3 +182,11 @@ One companion candidate: `pages/theme-decoration-sample-diamond-highlighter-jp.t
 ## Appendix — heuristic blocks
 
 No residue blocks (0). The 9 heuristic blocks resolve by shape: TRANS-UNANCHORED ×11 across sections 6-7 (small-file prose restructured around repointed includes; each unit verified against the mirror), and the single-line CSS-body heuristic blocks inside the exhibit (per-language `:root` blocks carried with at most the asset-host change of section 4). No new signature is proposed from this theme; the EXHIBIT-RESTRUCTURE false-fire shape on frame includes is already the standing adjudication rule.
+
+## License and attribution
+
+- **Title:** Diamond Highlighter Theme
+- **Author:** tetsusquared
+- **Source:** https://scp-wiki.wikidot.com/theme:diamond-highlighter — revision 11
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

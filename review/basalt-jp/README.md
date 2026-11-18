@@ -190,3 +190,11 @@ The diff covers two files; this theme's record is the widest in the batch, in fo
 **The inbound set.** 33 files under `pages/` name `theme:basalt-jp` or its colon-encoded form. Setting aside this candidate itself, its sample, one further sample (enlightened-eyes), and the two `/start` index pages that list it, **27 theme candidates** depend on this file by import, frame address, or foundation line: 512-onwards-jp, admo-jp, alcur-theme-jp, andesite-jp, another-night-jp, bedrock-jp, candela-jp, deepspace-jp, eigenmachine-jp, eigenvector-jp, enlightened-eyes-jp, gp-refresh-jp, hytoth-two-jp, immrama-jp, lumina-jp, marchen-jp, monotypical-jp, opinions-broadcaster-jp, ordopharm-jp, shivering-night-jp, skipos-jp, starbasalt-jp, stargazer-jp, stellar-jp, winddew-in-hand-jp, wish-for-miracle-jp, and 5k-jp. The FIX-P4 wave (39 files) is the commit set that aligned these dependents' base addresses to this candidate, per ruling 1: a dependent imports the JP port candidate's delivery, never the upstream branch's. Any future change to this file's delivery addresses or fallback variables is therefore a 27-file event, and this package's sections 3–4 are written to be read by the porters of those files as well.
 
 **The mirror.** The frames' and imports' jsdelivr addresses name the repository `Rokurolize/Basalt@gh-pages` — the campaign owner's mirror of the theme author's Basalt repository, which is the file set the EN theme itself is distributed from. It is not part of this repo, and the class (ii) disposition in section 3 is the record that governs it.
+
+## License and attribution
+
+- **Title:** Basalt Theme
+- **Author:** Liryn、Placeholder McD
+- **Source:** https://scp-wiki.wikidot.com/theme:basalt — revision 304 (revision date 2026-07-22 01:52:12)
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: iti119 — a human translator credited by the live JP page and retained as the package records it (campaign-rule exception); where the campaign translated, the translator is AI.

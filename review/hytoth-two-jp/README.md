@@ -218,3 +218,11 @@ The 23 heuristic and 6 residue blocks resolve by shape:
 - **B62** (orig L318 → cand L1909): the "Source Code" section's in-fiction line (Rakmou-leusan's hope), translated. **B63** (orig L320 → cand L1911–1913): the collapsible labels translated, with the declaration prose (cand L1913) entering in the same block. **B64** (orig at L323 → cand L1916, body → code-css, no signature): the exhibit's opening boundary — the original's exhibit comment header against the candidate's exhibit opening, displaced by the added declaration prose; the exhibit body itself is the retained own layer (section 8). **B66** (orig at L822 → cand L2415, no signature): blank-line placement at the exhibit's close, formatting only.
 - **B17** (orig L72 → cand L1661, EXHIBIT-RESTRUCTURE): the theme-squares exhibit line, repointed with the component; the label's "no translated counterpart" note is the differ's, and the counterpart is the repointed include itself (section 2).
 - **B52** (orig L299 → cand L1890, LINK-REPOINT): one of the intro's EN-URL link conversions (section 7).
+
+## License and attribution
+
+- **Title:** Second Second Hytoth Theme
+- **Author:** badooga
+- **Source:** https://scp-wiki.wikidot.com/theme:hytoth-two — revision 30
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

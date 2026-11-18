@@ -184,3 +184,11 @@ For class M the residue set is resolved in one table, not per-block slots.
 ## Change set outside the two diffed files
 
 The diff covers two files; the port's record is larger. `pages/theme-decoration-sample-eventyr-jp.txt` is the decoration sample the render checks ran against (its overflow and credit-modal items are section 11(2)). The candidate layers over Black Highlighter delivered from the JP distribution (section 0) — that base is an environment delivery, not a candidate file in this repo's port set, and no base package is owed here. There are no companion fragments and no inbound-link repairs in other candidates for this theme.
+
+## License and attribution
+
+- **Title:** Eventyr Theme
+- **Author:** FlyPurgatorio
+- **Source:** https://scp-wiki.wikidot.com/theme:eventyr — revision 79
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

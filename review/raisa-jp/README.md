@@ -1045,3 +1045,10 @@ Resolution: section 6, class R1 (in-CSS text, comment half). A CSS comment trans
 Resolution: sections 4 and 10, class P7 (credit half) with an R2 shape. This block is an addition, not a translation: the font-credit line at candidate L678 has no original counterpart. It is the credit the font supplement requires for the added JP face, placed after the code exhibit's collapsible; argued in section 10.
 
 
+## License and attribution
+
+- **Title:** RAISA Theme
+- **Author:** Rounderhouse
+- **Source:** https://scp-wiki.wikidot.com/theme:raisa — revision 56
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

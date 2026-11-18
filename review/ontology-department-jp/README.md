@@ -174,3 +174,11 @@ The diff covers two files; the port's record is one file larger. `pages/theme-de
 |---|---|---|
 | B4 | orig L13–15 → cand L12–16 by the diff's alignment; the intro prose pair (the department sentence and the logo-designer sentence) | Translation (section 6); the alignment splits the pair from its labels, and the sandbox link it carries is section 7 |
 | B39 | orig L103–104 → cand L121–122, one word inside a blockquote specimen (글자 → 文字） | Translation (section 6) |
+
+## License and attribution
+
+- **Title:** 존재학부 하이라이터
+- **Author:** Denevola
+- **Source:** https://scpko.wikidot.com/theme:ontology-department — revision 15
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

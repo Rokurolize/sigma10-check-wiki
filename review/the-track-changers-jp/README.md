@@ -188,3 +188,11 @@ The items above describe this package as built. The repairs recorded below postd
 - Shape 2 — residue B5 (original L186–192 → candidate L161–168): the code-display seam restructure adjudicated in section 8 (the emptied first collapsible and the added heading); the code exhibit itself is intact.
 - Shape 3 — residue B72 (original L753 → candidate L1608): the code block's closing seam; the `[[/code]]` line, unchanged in role, isolated because the block above it grew (section 3). No content change.
 - The WS-ONLY blocks (13) are specific-labeled formatting, counted in section 9; the TRANSLATION-ANCHORED blocks (23) are the anchored half of section 6's translation mass.
+
+## License and attribution
+
+- **Title:** 变轨 版式
+- **Author:** Mercuresphere
+- **Source:** https://scp-wiki-cn.wikidot.com/theme:the-track-changers — revision 34
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

@@ -167,3 +167,11 @@ The diff covers two files; the port's full record is slightly larger. (1) `pages
 ## Multi-wave provenance
 
 The candidate's current state is the product of successive waves: the Stage 2 KO7 integration (6889a0a) produced the initial port (translation, delivery frame, and, as later found, the leftover info block); FIX-CREDIT-D (1869877) normalized the translator attribution; FIX5-INFO (9a1c86a) removed the info residue (item 107); and the usage-example sweep (b5cb724) completed the posting names. Citations, in place of a changelog: GOSIGN2-LEDGER.md §(c3) (localize row), §(c2) (render row), §(e) item 107; GOSIGN2-LEDGER-SUPPLEMENT.md row 107; REPORT-GOSIGN2-FIX5-INFO.md (plugsoft section). The go-sign re-run over that record is what the Status block certifies.
+
+## License and attribution
+
+- **Title:** 플러그소프트™ 테마
+- **Author:** thd-glasses
+- **Source:** https://scpko.wikidot.com/theme:plugsoft — revision 20
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

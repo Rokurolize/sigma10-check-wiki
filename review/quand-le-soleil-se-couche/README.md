@@ -173,3 +173,11 @@ The diff covers two files; the port's record is slightly larger. (1) `pages/them
 ## Multi-wave provenance
 
 The candidate's current state is the product of successive waves: the canonical import (d727e92) brought the check-wiki page in; the live-pair reconciliation (ffad285) aligned it with the production pair state; FIX3-B (6ae6516) applied the LOCALIZE-B row fixes; FIX5-STRUCTB (435a6bb) set the slogan default (item 5); and the frame self-address remedies (722ceb5) dropped the dead frame parameter. Citations, in place of a changelog: GOSIGN2-LEDGER.md §(c3) (localize row), §(c2) (render row), §(e) item 5; GOSIGN2-LEDGER-SUPPLEMENT.md row 5 and §5 spot-check 4; REPORT-GOSIGN2-FIX5-STRUCTB.md §5; FIX-FRAMEADDR.md (sub-shape (B)). The go-sign re-run over that record is what the Status block certifies.
+
+## License and attribution
+
+- **Title:** Thème de Quand le Soleil se Couche
+- **Author:** Cyrielle Centori
+- **Source:** https://fondationscp.wikidot.com/theme:quand-le-soleil-se-couche — revision 13 (revision date 2025-08-12 09:09:31)
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: koku4 — a human translator credited by the live JP page and retained as the package records it (campaign-rule exception); where the campaign translated, the translator is AI.

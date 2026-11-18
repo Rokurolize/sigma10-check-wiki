@@ -172,3 +172,11 @@ This theme's font chain is the one place where the package's evidence runs longe
 ## Change set outside the two diffed files
 
 The diff covers the theme's own layer. (1) `pages/theme-decoration-sample-madoka-jp.txt` is the decoration sample the render checks ran against (its findings are the sample half of section 11(2)); it belongs to this theme's record but carries no port change of its own to explain here. (2) The declared base, theme:mox-jp, is another row's candidate with its own review package; this package reads its block-8 delivery contract and its font load from that file where sections 3–4 say so, and explains no part of it. There is no companion file of this theme's own.
+
+## License and attribution
+
+- **Title:** 魔法联盟 特种版式
+- **Author:** OxygenNine
+- **Source:** https://scp-wiki-cn.wikidot.com/theme:madoka — revision 4
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

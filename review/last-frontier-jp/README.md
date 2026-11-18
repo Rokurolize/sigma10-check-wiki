@@ -237,3 +237,11 @@ The two residue blocks resolve by shape; the 21 heuristic entries that follow th
 - R4 (B7, orig L19 → cand L29): the author-label end-include's removal, the component consolidation of section 2 — the skeleton's note ("no translated counterpart; the writer's replaced-vs-dropped call is forced") is answered there: replaced, its payload carried as text.
 - R5 (B19, orig L53 → cand L62): the lorem-ipsum sample replaced by Japanese dummy text — section 6.
 - R6–R23 (the remaining heuristic entries): body prose and sample translation pairs (headings, tabber samples, link and footnote samples) — section 6, P10 by shape; no new signature is proposed for any of them.
+
+## License and attribution
+
+- **Title:** Last Frontier Theme
+- **Author:** Vivarium, Yossipossi
+- **Source:** https://scp-wiki.wikidot.com/theme:last-frontier — revision 41
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

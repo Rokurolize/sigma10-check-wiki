@@ -163,3 +163,11 @@ The candidate's current state is the product of successive waves, not of a singl
 - **EXHIBIT-RESTRUCTURE labels (B3, B5, B12, B157, B159):** false-fires on include repoints inside frame and exhibit lines, adjudicated in section 8 against the exhibit census; no exhibit was dropped or replaced.
 - **Heuristic TRANS-UNANCHORED / COMMENT-TEXT mass (the remaining heuristic blocks):** the documentation translation and the CSS comment translations at block granularity; resolved as sections 6's mass.
 - **Skeleton "none" sections:** the skeleton's per-section listing follows primary labels only; the sections above are written from classification.json's label_spans (JPFONT-LOAD and FONT-IMPORT fire inside B122, HEADERVAR inside B123, SELF-DELIVERY inside B158/B160), per the settled format.
+
+## License and attribution
+
+- **Title:** Twin Files Theme
+- **Author:** JackalRelated
+- **Source:** https://scp-wiki.wikidot.com/theme:twin-files — revision 32
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

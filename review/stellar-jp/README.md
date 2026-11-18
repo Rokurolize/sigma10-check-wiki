@@ -588,3 +588,11 @@ The classifier left no blocks unlabeled for this pair (0 residue).
 The appendix exists in this package to state that ground explicitly:
 the adjudication burden for this theme sat not in residue but in the
 collapsed alignment, handled in the class summary and item 5 above.
+
+## License and attribution
+
+- **Title:** Stellar Theme
+- **Author:** GeminidStrix
+- **Source:** https://scp-wiki.wikidot.com/theme:stellar — revision 19
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

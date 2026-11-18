@@ -194,3 +194,11 @@ The candidate's current state is the product of the S2 port, one fix wave, and t
 ## Appendix — residue blocks
 
 One residue block was emitted. R1 = B17 (orig L112 → cand L120): the section heading `+ Examples` → `+ 例`. No signature in the table matches a bare heading line whose only change is its text. It is a plain heading translation of the P10 class, of the same shape as the examples heading in the caretaker-sigma package; it belongs to section 6 and is counted there. No new signature is proposed for a single generic heading line.
+
+## License and attribution
+
+- **Title:** Timepiece Theme
+- **Author:** JackalRelated
+- **Source:** https://scp-wiki.wikidot.com/theme:clock-tower — revision 20
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

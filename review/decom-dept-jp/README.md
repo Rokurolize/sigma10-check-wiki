@@ -215,3 +215,11 @@ The candidate's current state is the product of the S2 port and one two-line fix
 ## Appendix — residue blocks
 
 Three residue blocks were emitted. R1 = B42 (orig L138–139 → cand L135–136, TRANS-UNANCHORED heuristic): the blockquote specimen line "That's a horizontal rule" → それは水平線です — a plain specimen translation, section 6. R2 = B43 (orig L140–141 → cand L137–138, TRANS-UNANCHORED heuristic): the nested-blockquote specimen labels, the same shape, section 6. R3 = B51 (orig L634–636 → cand L632, no signature): the deletion of `[[include :scp-wiki:more-by:calibold]]` at the body's close — not a translation item but the undispositioned drop flagged in the Per-theme record, where it is written up with its evidence. No new signature is proposed for R1/R2 (specimen lines are the TRANS-UNANCHORED class's home); for R3 the lane report proposes that a closing-include deletion with no counterpart and no register entry is exactly the shape a future classifier pass should surface as a named drop class rather than residue.
+
+## License and attribution
+
+- **Title:** Decommissioning Dept. Theme
+- **Author:** Calibold
+- **Source:** https://scp-wiki.wikidot.com/theme:decom-dept — revision 187
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

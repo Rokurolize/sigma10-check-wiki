@@ -171,3 +171,11 @@ The items above describe this package as built. The repairs recorded below postd
 ## Change set outside the two diffed files
 
 The diff covers two files; this port's substance lives in a third. `pages/component:rok-gov-base-jp.txt` (614 lines) is the JP port of `:scpko:component:rok-gov-base`, ported with the theme under ruling 4: it carries the live module CSS (with the font substitution and asset repoints recorded in section 4), the GoI-format code block the frame names (section 3), and its own header comment recording its provenance (the original component, via theme:rok-gov-theme rev 81's include). `pages/theme-decoration-sample-rok-gov-theme-jp.txt` is the decoration sample the render checks ran against (its findings are the sample half of section 11(4)); it applies this candidate over the sample furniture. The repo also holds the original shell itself at `pages/theme:rok-gov-theme.txt` (7 lines, the `:scpko:` include form) as part of the check composition. There are no other companion fragments and no inbound-link repairs in other candidates for this theme.
+
+## License and attribution
+
+- **Title:** 대한민국 정부 테마 (국가초상방재원 테마)
+- **Author:** thd-glasses
+- **Source:** https://scpko.wikidot.com/theme:rok-gov-theme — revision 81
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

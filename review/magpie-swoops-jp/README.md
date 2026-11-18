@@ -239,3 +239,11 @@ All 11 residue blocks resolve by shape; none needs a new signature.
 - R3 (B26, orig L108 → cand L116): the "++ Examples" heading translated to 「++ 使用例」 — section 6, P10.
 - R4 (B85, orig L302 whitespace line): whitespace-only inside the exhibit — section 9.
 - R5–R11 (B86–B88, B118, B120, B126 and companions): CSS section-comment translations inside the exhibit (===Purples===, ===Greens=== → 緑, ===Black=== → 黒, ===TABLES=== → 表, ===TOC=== → 目次, SELECTION COLOUR → 選択範囲色) — section 6, the R1 comment half of P10; R5's comment additionally joins its rule line in the candidate, a line-join inside the same act.
+
+## License and attribution
+
+- **Title:** Magpie Swoops Theme
+- **Author:** Sinking_Otter
+- **Source:** https://scp-wiki.wikidot.com/theme:magpie-swoops — revision 12
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

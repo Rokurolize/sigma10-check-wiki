@@ -202,3 +202,11 @@ Stamp treatment follows the jiha-jp / alexylva-university-jp precedents: the reg
 ## Change set outside the two diffed files
 
 The diff covers two files; the port's record is one file larger. `pages/theme-decoration-sample-deserted-years-theme-jp.txt` is the decoration sample the render checks ran against (its findings are the sample half of the T2/T3 row); it belongs to this theme's record but carries no port change of its own to explain here. There are no companion fragments, no shared base file, and no inbound-link repairs in other candidates for this theme.
+
+## License and attribution
+
+- **Title:** 废年 版式
+- **Author:** Dr Hormress
+- **Source:** https://scp-wiki-cn.wikidot.com/theme:deserted-years-theme — revision 11
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

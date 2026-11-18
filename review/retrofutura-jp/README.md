@@ -174,3 +174,11 @@ The theme's §(c3) line records only the P1 disposition, yet the credit block's 
 ## Change set outside the two diffed files
 
 The diff covers two files; the port's record is larger by the companions the campaign built around this theme. `pages/theme-decoration-sample-retrofutura-jp.txt` is the decoration sample the render checks ran against (its findings are the sample half of section 11(2)); it belongs to this theme's record but carries no port change of its own to explain here. `pages/component:sigma-plus-jp.txt` is the JP port of the component this theme depends on, delivered under ruling 4 and included at candidate L1 (section 2). There are no companion fragments and no inbound-link repairs in other candidates for this theme.
+
+## License and attribution
+
+- **Title:** Retro Futura Theme
+- **Author:** Fish^12
+- **Source:** https://scp-wiki.wikidot.com/theme:retrofutura — revision 18
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

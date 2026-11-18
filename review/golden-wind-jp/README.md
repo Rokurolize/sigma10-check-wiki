@@ -178,3 +178,11 @@ Related candidate outside the change set: theme:drunken-alley-jp, an add-on whos
 ## Appendix: classifier residue and heuristic adjudication
 
 Classification: 41 blocks, 35 signature-specific, 6 heuristic, 0 residue (classification.json, classify_hunks.py 0.1.0, patterns commit 9c5e9079afb01d30cb9fc4ef9d714e5591eb2ffa). The 6 heuristic blocks are B10, B15, B20 and B21 (exhibit translation blocks the anchor pass could not pair, section 6), B27 (the header-logo stack rewrite, labeled CSS-BODY and narrated as P7 in section 4), and B40 (the code block's closing lines, where the candidate's tail gains the license box of B41). The other two FIX5 stack rewrites, B24 and B28, are signature-specific (GLYPH-FORM). The five WS-ONLY blocks are formatting only (section 9). No heuristic block conceals an unrecorded change.
+
+## License and attribution
+
+- **Title:** 黄金之风 版式
+- **Author:** Dr Roger_F_XL
+- **Source:** https://scp-wiki-cn.wikidot.com/theme:golden-wind — revision 29
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

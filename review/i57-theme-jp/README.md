@@ -240,3 +240,11 @@ The five residue blocks resolve by shape; the 22 heuristic entries that follow t
 - R3 (B51, orig L149–150): the footnoteblock deletion — section 8's flag; the residue class exists because a one-line module deletion matches no signature in the table. A signature proposal is carried in the lane report (a FOOTNOTEBLOCK-DEL class for a deleted [[footnoteblock]] whose page demonstrates footnotes).
 - R4 (B93) and R5 (B94): the candidate's added blank lines before [[/collapsible]] and [[/iftags]] at the file's tail (cand L694, L696) — section 9.
 - R6–R27 (B9, B12, B19, B22, B24, B25 and companions): prose translation pairs of the Use/Examples body (e.g. B19 "I had never seen so many titles together. It was an impressive show." → 「これだけ見出しが並ぶと壮観ですね。」; B22 "How intriguing." → 「興味深いですね。」) — section 6, P10 by shape; no new signature is proposed for any of them.
+
+## License and attribution
+
+- **Title:** I57 Theme
+- **Author:** Dc_Yerko, ROUNDERHOUSE
+- **Source:** https://scp-wiki.wikidot.com/theme:i57-theme — revision 40
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

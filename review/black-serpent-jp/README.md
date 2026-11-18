@@ -205,3 +205,11 @@ The classifier emitted 45 open blocks (1 residue, 44 heuristic). All are resolve
 - **R3 — B7 (heuristic; orig L26 → cand L29).** The BHL instruction sentence, translated, with its detail link repointed to the JP BHL page. Resolved in sections 6–7.
 - **R4 — B11–B64 (heuristic, the remaining mass).** One-line sample, specimen and palette-name translations across the body. Resolved in section 6 by shape; each was read against its original line.
 - **R5 — B68 (heuristic-tier CSS-BODY; orig L253–254 → cand L273–274).** The two font-stack lines gaining "Noto Sans JP". The classifier's CSS-BODY label stands as its mechanical reading; the mechanism is the P7 stack rewrite, resolved in section 4.
+
+## License and attribution
+
+- **Title:** Black Serpent Theme
+- **Author:** Jerden
+- **Source:** https://scp-wiki.wikidot.com/theme:black-serpent — revision 12
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

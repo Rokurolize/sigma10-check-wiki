@@ -180,3 +180,11 @@ The 2 heuristic blocks and the single residue block are the delivery seams of se
 - B1 (residue; orig L1-3 → cand L1): the hidden base-include div's relocation from the file head to below the credit block. Assigned to section 8 (and the repoint itself to section 2).
 - B9 (heuristic; orig L41 → cand L41-52): the code exhibit's opening restructure — porter banner added, original banner carried, heading and collapsible added. Assigned to sections 6, 8, and 10. The classifier's "porter-visible only; labeled and skipped by design" note refers to the banner's visibility class, not to missing content.
 - B23 (heuristic; orig L113 → cand L120-123): the .comments-box rule's relocation into the code block's tail. Assigned to section 3 (its CSS-BODY label is the skeleton's primary; the substance is the delivery-channel move).
+
+## License and attribution
+
+- **Title:** 태평양사령부 1943 테마
+- **Author:** thd-glasses
+- **Source:** https://scpko.wikidot.com/theme:pacom1943 — revision 43
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

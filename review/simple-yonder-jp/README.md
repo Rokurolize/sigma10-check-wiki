@@ -195,3 +195,11 @@ The candidate's current state is the product of one creation and six wave touche
 ## Appendix — residue blocks
 
 No residue: every block carries a specific label, and there are no heuristic blocks either (8 specific / 0 heuristic / 0 residue). The two blocks a reviewer is most likely to misread are resolved in place: B5 (orig L609–630 → cand L475), whose primary label is EXHIBIT-RESTRUCTURE, carries the SELF-DELIVERY span (the original's tail module import and frame, whose candidate-side counterparts are the head module and the remedied frame) and the xmode-gate deletion of section 8; B3 (orig L11–143 → cand L10) is the sample-body drop of section 8, labeled EXHIBIT-RESTRUCTURE with the INFO-DEL span.
+
+## License and attribution
+
+- **Title:** Simple Yonder Theme
+- **Author:** EstrellaYoshte
+- **Source:** https://scp-wiki.wikidot.com/theme:simple-yonder — revision 166 (revision date 2024-01-10 02:19:29)
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: ukwhatn — a human translator credited by the live JP page and retained as the package records it (campaign-rule exception); where the campaign translated, the translator is AI.

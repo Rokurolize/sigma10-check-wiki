@@ -173,3 +173,11 @@ Class M treatment: the residue collapses into this table rather than per-block s
 | Block(s) | Shape | Resolution |
 |---|---|---|
 | B26 (residue) | One added line at candidate L258–259: `[[/collapsible]]`, the closer of the collapsible wrapping the candidate's code exhibit (its opener aligned as context earlier in the exhibit) | A wrapper line, not content; counted here so the residue count is zero after adjudication |
+
+## License and attribution
+
+- **Title:** Kiryu Labs Theme
+- **Author:** Rounderhouse
+- **Source:** https://scp-wiki.wikidot.com/theme:kiryu-labs-theme — revision 29
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

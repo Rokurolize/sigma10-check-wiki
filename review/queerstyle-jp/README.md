@@ -265,3 +265,11 @@ No residue blocks. The 9 heuristic blocks are translation mass in three shapes; 
 - B9, B11, B13 (original L31-46 to candidate L43-58, body): one-line usage instructions, translated. Assigned to section 6.
 - B14 (original L50-51 to candidate L62-65, body): the design-note sentence, translated; the block also carries the added porter font note at candidate L65. Assigned to sections 6 and 10 (the note is defect flag F1, section 4).
 - B19, B23, B24 (code-css): CSS comment translations (the banner author line; the email component fix comment; the Pseudogenesis formats comment). Assigned to section 6.
+
+## License and attribution
+
+- **Title:** Queerstyle CSS
+- **Author:** Queerious
+- **Source:** https://scp-wiki.wikidot.com/theme:queerstyle — revision 51
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

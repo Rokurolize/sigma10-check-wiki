@@ -178,3 +178,11 @@ The candidate's current state is the product of successive waves, not of a singl
 - **DUPIMPORT-DEL on B5 and B14:** the spans are the original's font @import lines (original L288–290 and L723). The label reads them as deleted duplicates; the bytes show relocation — all four faces stand exactly once in the candidate's code block head (candidate L266–269). Adjudicated in section 4; not a deduplication and not a defect.
 - **EXHIBIT-RESTRUCTURE on B5 (original L66–290):** the differ's seam for the exhibit region, whose candidate counterpart was absorbed into block B3's insertion by the relocation. The exhibit census (section 8) finds every exhibit present; the label fired on the move, not on a drop.
 - **Skeleton "none" sections:** the skeleton printed sections 2, 4, 5, 6, 7, and 10 as "none" because it lists each block once under its primary label. The label_spans in classification.json show the signatures firing inside multi-label blocks (FONT-IMPORT and JPFONT-LOAD inside B3/B5/B14, TRANS-UNANCHORED inside B2/B3/B18, COMMENT-TEXT inside B3, LICENSE-BOX as B18's primary); the sections above are written from the spans, per the settled format.
+
+## License and attribution
+
+- **Title:** 创伤 主题版式
+- **Author:** Liurd
+- **Source:** https://scp-wiki-cn.wikidot.com/theme:trauma — revision 6
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

@@ -414,3 +414,11 @@ the moved CSS, not changes in substance). diff.md's auto-class table
 token-level heuristic) is a different instrument from
 classify_hunks.py; the adjudicated classification is the classifier's,
 and every one of its blocks is accounted in the sections above.
+
+## License and attribution
+
+- **Title:** 流繁星 特种版式
+- **Author:** OxygenNine
+- **Source:** https://scp-wiki-cn.wikidot.com/theme:starry — revision 10
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

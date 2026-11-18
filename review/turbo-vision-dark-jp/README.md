@@ -180,3 +180,11 @@ Recorded in section 5: one sidebar rule gains `#interwiki` selector variants wit
 ## Change set outside the two diffed files
 
 The diff covers two files; the port's record is larger in two directions. `pages/theme-decoration-sample-turbo-vision-dark-jp.txt` is the decoration sample the render checks ran against (it includes this candidate), and its findings are the sample half of section 11(2). And the base candidate `pages/theme:turbo-vision-jp.txt` is this theme's delivery dependency: the head module imports its two code blocks, so the base's package (review/turbo-vision-jp/) is part of this theme's record by reference. Neither file carries a port change of this theme's own to explain here.
+
+## License and attribution
+
+- **Title:** Turbo Vision Dark Theme
+- **Author:** JackalRelated
+- **Source:** https://scp-wiki.wikidot.com/theme:turbo-vision-dark — revision 50
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

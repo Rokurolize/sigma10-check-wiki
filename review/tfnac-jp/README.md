@@ -572,3 +572,11 @@ convention it is resolved here by shape.
 ## Post-adjudication repair (2026-11-18)
 
 The pattern linter's KB-70 nomination, adjudicated in the campaign record (theme-lint/ADJ1.md section 3.4), confirmed a code-address defect: the candidate delivers its stylesheet as code block /2, but both self-addresses (the [[module CSS]] @import and the interwiki-style include's theme= parameter) pointed at /1, which holds the credits exhibit. Both addresses are repointed to /2 in the canonical page; no other byte changed. T1 finding counts are unchanged (error 4 / warn 2 before and after); the page is reflected to the Wikidot check wiki.
+
+## License and attribution
+
+- **Title:** 版式：The Foundation Network AssCO11
+- **Author:** Liurd
+- **Source:** https://scp-wiki-cn.wikidot.com/theme:tfnac — revision 3
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

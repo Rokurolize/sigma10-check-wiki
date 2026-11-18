@@ -171,3 +171,11 @@ The K6 manifest: this package's record is the original mirror, the candidate, an
 ## Multi-wave provenance
 
 The candidate's current bytes are the sum of: the production page's 2024 translation and its later production life; the campaign's adoption adaptations (LOCALIZE-B row 40's enumeration: sigma-plus retarget as later unified by FIX4-SIGMA 1cdad38, draft-host delivery, user-link markup dropped, the re-translation revision field, the footnoteblock escape); FIX5-FUNC's two repairs (59130a2); and the snippet audit's one usage-example line (358955e). Each campaign wave's delta is separable in the file's git history; the FIX5 deltas are re-derived from the commit in the per-theme record.
+
+## License and attribution
+
+- **Title:** Generic Space Theme
+- **Author:** EstrellaYoshte
+- **Source:** https://scp-wiki.wikidot.com/theme:space — revision 32 (revision date 2026-04-12 05:02:40)
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: nebula2700 — a human translator credited by the live JP page and retained as the package records it (campaign-rule exception); where the campaign translated, the translator is AI.

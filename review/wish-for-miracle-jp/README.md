@@ -183,3 +183,11 @@ The 45 heuristic and 2 residue blocks resolve by shape, not line by line. COMMEN
 ## Change set outside the two diffed files
 
 The diff covers the theme's own layer; the port's record is larger. The base candidates `pages/theme:basalt-jp.txt` and `pages/theme:darkblue-jp.txt` carry the layers this theme imports (section 3); their changes are their own packages' records, and the FIX-P4 fetch evidence for darkblue-jp/1's same-role status is cited in section 3. `pages/theme-decoration-sample-wish-for-miracle-jp.txt` is the decoration sample the render checks ran against (its findings are the sample half of section 11(2)); it carries no port change of its own to explain here.
+
+## License and attribution
+
+- **Title:** 祈冀 版式
+- **Author:** Kcorena、Agent FS
+- **Source:** https://scp-wiki-cn.wikidot.com/theme:wish-for-miracle — revision 67
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

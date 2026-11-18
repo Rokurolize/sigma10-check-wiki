@@ -227,3 +227,11 @@ The stamp's PASS was computed against canonical 25bb0b4, the FIX5 commit itself.
 - R1, B1 (residue; original 1-2 to candidate 1-4): the original's CN fragment address comments give way to the candidate's delivery frames; resolved in section 3.
 - R2, B3 (heuristic): the delivery-head replacement, resolved in section 8.
 - R3-R28, B7, B8, B9, B11, B13, B21, B22, B25, B27, B38, B49, B50, B51, B52, B53, B54, B57, B62, B64, B66, B68, B72, B74, B76, B77, B78 (heuristic, TRANS-UNANCHORED): one-to-one prose translations against the mirror (section 6); B66 is the running-prose mention of the layout-page-content-block include at candidate line 463, part of the section 11 exception set.
+
+## License and attribution
+
+- **Title:** 过氧化物 基础版式
+- **Author:** OxygenNine
+- **Source:** https://scp-wiki-cn.wikidot.com/theme:peroxide — revision 27
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

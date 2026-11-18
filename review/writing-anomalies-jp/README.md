@@ -166,3 +166,11 @@ Closure: CONFIRMED.
 - B19 (residue; orig L84–85 → cand L94–95): the banner's head lines, carried verbatim; the block is the differ's seam beside the annotation line added at cand L99 (B20). No content change in B19 itself.
 - B20 (residue; cand L99): the added banner annotation — §10.
 - B36 (residue; orig L259): the stray `/` removal — §8(b).
+
+## License and attribution
+
+- **Title:** Writing Anomalies
+- **Author:** Cole 13
+- **Source:** https://scp-wiki.wikidot.com/theme:writing-anomalies — revision 20
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

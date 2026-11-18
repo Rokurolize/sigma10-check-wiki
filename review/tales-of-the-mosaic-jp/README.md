@@ -164,3 +164,11 @@ No heuristic and no residue blocks: all 49 blocks carry specific labels. Three c
 - B19's RESTORATION label: the block is the differ's alignment seam over the whole post-code region (original at L834 → candidate L648–1492), created by the delivery restructure. This theme has no class-I item and nothing was restored by a wave; the label does not describe a restoration. The credit, license and exhibit contents inside the seam are verified individually in sections 1, 2 and 8.
 - B1's EXHIBIT-RESTRUCTURE label: same seam at the head of the file; the exhibits are all present (section 8 census).
 - The topology pass's second move (code-css → candidate L660–1639 at 0.971): the matched region is the gated body containing the exhibit copy of the CSS, not a second delivery; the delivery is the single module at L1–646 (section 3).
+
+## License and attribution
+
+- **Title:** Tales of the Mosaic Theme
+- **Author:** Jezixo
+- **Source:** https://scp-wiki.wikidot.com/theme:tales-of-the-mosaic — revision 25
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

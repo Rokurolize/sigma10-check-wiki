@@ -182,3 +182,11 @@ For class M the residue set is resolved in one table, not per-block slots.
 ## Change set outside the two diffed files
 
 The diff covers two files; the port's record is larger. `pages/theme-decoration-sample-doap-nvl-jp.txt` is the decoration sample the render checks ran against (its credit-modal item is section 11(2)). The candidate layers over `pages/theme:navla-style-jp.txt` and delivers `component:navla-jp`'s code page through its frame — both are separate candidates with their own review packages, and the K5b-3 scope note in section 0 is the boundary: this package documents the doap-nvl layer and its references to the base, not the base's own port. The posting dependency recorded in section 2 is the operational consequence of that layering. There are no companion fragments and no inbound-link repairs in other candidates for this theme.
+
+## License and attribution
+
+- **Title:** 분석심리학부 블랙하이라이터 테마
+- **Author:** Navla
+- **Source:** https://scpko.wikidot.com/theme:doap-nvl — revision 35
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

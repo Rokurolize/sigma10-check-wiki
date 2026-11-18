@@ -175,3 +175,11 @@ The diff covers two files; the port's record is one file larger. `pages/theme-de
 ## Multi-wave provenance
 
 The candidate's current state is the product of successive waves, not of a single porting pass: the Stage 2 KO2 integration (d72b7b9) produced the port (translation, exhibit conversion, credit block, delivery frame, and the untranslated credit title it left behind); FIX-CREDIT-D (1869877) normalized the translator field across all candidates; FIX5-TEXTA (6f6b349) corrected the title field (item 103); and the usage-example sweep (b5cb724) completed the example's posting name. Citations, in place of a changelog: GOSIGN2-LEDGER.md §(c3) (localize row), §(c2) (render row), §(e) item 103; GOSIGN2-LEDGER-SUPPLEMENT.md row 103; REPORT-GOSIGN2-FIX5-TEXTA.md §3. The go-sign re-run over that record is what the Status block certifies.
+
+## License and attribution
+
+- **Title:** 등잔불 테마
+- **Author:** KO 支部の作者（原語版に記録なし）
+- **Source:** https://scpko.wikidot.com/theme:back-jan-fire — revision 9
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

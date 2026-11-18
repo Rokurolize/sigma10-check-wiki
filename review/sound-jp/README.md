@@ -372,3 +372,11 @@ The candidate's state is the product of successive waves: stage-2 CN14 (`12d839e
 ### Residue R25 — B64 (heuristic; orig 562-562 -> cand 595-595, code-css -> code-css)
 - `/* JP侧边栏暴力修复 */` → `/* JPサイドバー暴行修復 */`.
 - Resolution: section 6, class R1 (porter-visible comment); comments never render, so the 暴行 mistranslation is a T5 minor residue (section 6), not a display defect. No KB entry proposed.
+
+## License and attribution
+
+- **Title:** 虚拟之音 主题版式
+- **Author:** OxygenNine
+- **Source:** https://scp-wiki-cn.wikidot.com/theme:sound — revision 6
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

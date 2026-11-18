@@ -174,3 +174,11 @@ The ledger charge (§(e) item 25, from LOCALIZE-S2-C): the install example's inc
 ## Appendix — heuristic and residue adjudication
 
 49 blocks: 25 specific, 23 heuristic, 1 residue; all adjudicated here or in the sections. **Residue B10** (original L35–36 → candidate L42–43, unlabeled): the rule line plus "+ Examples" → "+ 例" — a heading translation pair (P10), unlabeled because the block pairs a horizontal-rule line with a one-word heading. **Heuristic TRANS-UNANCHORED blocks B39, B41, B42** (blockquote continuation, the font-note prose, the source-code heading zone): P10 translation by shape; B42 also carries the EXHIBIT-RESTRUCTURE heading promotion adjudicated in section 8. **Heuristic CSS-BODY block B48** (original L144–145 → candidate L155–157, the `h2 span::before` rule): its font-family line is a P7 stack suffix and its content line a KB-18 string translation — narrated as P7/KB-18 in sections 4–5 under the standing rule that font-stack rewrites are P7 even when the classifier labels the block CSS-BODY heuristic. The remaining TRANS-UNANCHORED / TRANSLATION-ANCHORED heuristic mass (B7–B38 passim) is the exhibit translation pairs of section 6, resolved by shape: every pair is a CN-free EN→JP line mapping inside the exhibit body, with no delivery, credit, or structural content.
+
+## License and attribution
+
+- **Title:** Retro AIAD Theme
+- **Author:** Placeholder McD
+- **Source:** https://scp-wiki.wikidot.com/theme:retro-aiad-theme — revision 15
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

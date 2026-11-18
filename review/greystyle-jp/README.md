@@ -203,3 +203,11 @@ There are no heuristic and no residue blocks (27 specific of 27). Two specific b
 
 - **B3** (orig L13–800 → cand at L12, EXHIBIT-RESTRUCTURE): the differ anchors the original's whole pre-exhibit body against the candidate's module opening because the inline moved the exhibit's start to the head of the file. Its labeled spans are the real changes inside that range: INFO-DEL (orig L29–30, L32–33, the info module) and SELF-DELIVERY (orig L24–25, the priority=3 frame, candidate side empty). Nothing else in the range changed semantically; the body text inside it is accounted for in sections 6–7.
 - **B24** (orig L2079–2081 → cand L1291–3570, RESTORATION): the two-copy alignment artefact. With two full copies of the stylesheet in each file, the differ pairs a late original region against a long candidate span; the block's label spans locate the real insertions inside it: CREDIT-PREVIEW (cand L1512–1513, L1521–1522) and TASL-FIELDS (cand L1513–1521) for the credit block, T7-CREDIT-CSS (cand L2739–2748, L3027–3044) for the exhibit copy's inherited credit CSS, HEADERVAR (cand L2421–2424) for the exhibit copy's --logo-image line, and CONTENT-STRING (13 spans) for the transcript rules' `content:` lines in both copies. The RESTORATION label is a diff-only signal (added lines matching the original's own earlier region, i.e. the second copy); nothing for this theme was deleted and later restored by a wave. The TASL-FIELDS label also fires spuriously at cand L1907–1908, L2145–2146, L2148–2149, L2167–2168 and L2170–2171, on field-shaped lines inside the transcript exhibits; the theme's only credit block is cand L1513–1522.
+
+## License and attribution
+
+- **Title:** Greystyle
+- **Author:** Greyve
+- **Source:** https://scp-wiki.wikidot.com/theme:greystyle — revision 14
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

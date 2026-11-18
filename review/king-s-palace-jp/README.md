@@ -206,3 +206,11 @@ The classifier left 6 heuristic blocks and 1 residue block open. All resolve as 
 - **R7 — B15 (heuristic; original L47 → candidate L57):** the footnote sample text; the Korean knock-knock filler 똑똑 is rendered ノック、ノック. One-to-one translation. Assigned to section 6.
 
 Multi-label spans the primary-label listing under-reports, for the record: B5 carries the TASL-FIELDS, INFO-DEL, and CREDIT-PROSE spans inside the CREDIT-PREVIEW block (all section 1); B11 carries a DRAFT-HOST span inside the exhibit (section 3); B21 carries an INCLUDE-REPOINT span beside COMPONENT-SWAP (section 2); B1 and B2 split the frame insertion and the tag localization of the opening lines between them (sections 0 and 2).
+
+## License and attribution
+
+- **Title:** 【サンプル】왕의 어전 CSS 테마
+- **Author:** 【サンプル】c_bonefish
+- **Source:** https://scpko.wikidot.com/theme:king-s-palace — revision 12
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

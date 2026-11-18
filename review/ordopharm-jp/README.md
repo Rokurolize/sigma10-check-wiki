@@ -200,3 +200,11 @@ The items above describe this package as built. The repairs recorded below postd
 ## Change set outside the two diffed files
 
 The diff covers two files; the port's record is three files larger. `pages/theme-decoration-sample-ordopharm-jp.txt` is the decoration sample the render checks ran against (its findings are the sample half of section 11(4)); `pages/theme:ordopharm.txt` is the original-name page the composition carries alongside the candidate (its second head module is intact, which is how item 2's loss is visible inside the composition itself); and `pages/theme-decoration-sample-ordopharm.txt` is that page's sample. The base theme's candidate, `pages/theme:basalt-jp.txt`, is a separate theme package in this campaign, not part of this change set; this candidate's dependence on it is recorded in section 3.
+
+## License and attribution
+
+- **Title:** Ordopharm Agronomics Theme
+- **Author:** Billith
+- **Source:** https://scp-wiki.wikidot.com/theme:ordopharm — revision 22
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

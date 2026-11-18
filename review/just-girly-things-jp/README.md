@@ -192,3 +192,11 @@ The diff covers two files; the port's record is one file larger. `pages/theme-de
 The classifier emitted no residue blocks for this pair. The one heuristic block is resolved here:
 
 - **R1 — B7 (heuristic; orig L398–403 → cand L355–358, body → body).** The alignment pairs the license box's opening lines with the candidate's frame include, because both sit between the CSS body and the gated tail. Resolved as two separate acts in two sections: the license box's departure is section 1's flag (creation, b0cfebd), and the frame's arrival is section 3 (1869877). The classifier's note ("no translated counterpart on the added side; the writer's replaced-vs-dropped call is forced") is answered: neither replaced nor dropped — the two sides of this block belong to different changes that happen to share a boundary.
+
+## License and attribution
+
+- **Title:** Just Girly Things Theme
+- **Author:** stormbreath
+- **Source:** https://scp-wiki.wikidot.com/theme:just-girly-things — revision 21 (revision date 2023-09-27 01:58:40)
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

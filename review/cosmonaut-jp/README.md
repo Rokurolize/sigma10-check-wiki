@@ -189,3 +189,11 @@ The candidate's current state is the product of a production translation, a Phas
 ## Appendix — residue blocks
 
 Three residue blocks were emitted, all in the exhibits' CSS, all resolved here. R1 = B90 (orig L1694–1696 → cand L1683–1685, CSS-BODY): the credit-modal selector extension (`#page-content .modalbox` gaining `#u-credit-otherwise .modalbox`) — the T7 credit-CSS adaptation, written up in section 8. R2 = B91 (orig L1702 → cand L1691–1695) and R3 = B92 (orig L1705 → cand L1698–1702): the added `.modalbox-title` rule and its closing brace, the same adaptation's other half, likewise section 8. (The classifier's own T7-CREDIT-CSS label fired on two other blocks in the tail zone; these three carry only the heuristic CSS-BODY label because their change is selector text, not a signature shape.) No new signature is proposed: a selector-extension census would be a population tool, and the lane report notes it as a possible classifier refinement rather than a pattern.
+
+## License and attribution
+
+- **Title:** Cosmonaut Theme
+- **Author:** EstrellaYoshte
+- **Source:** https://scp-wiki.wikidot.com/theme:cosmonaut — revision 27 (revision date 2025-12-14 11:15:02)
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: nebula2700 — a human translator credited by the live JP page and retained as the package records it (campaign-rule exception); where the campaign translated, the translator is AI.

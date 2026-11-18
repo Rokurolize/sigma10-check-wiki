@@ -116,3 +116,11 @@ The port is the single file pages/theme:sunside-jp.txt; its git history names no
 ## Appendix: residue and heuristic resolution
 
 Residue blocks: none (0 of 19). Heuristic blocks: 3 of 19, namely B15-B17, the license-box entries at original L1454-1467 to candidate L2658-2671, which the classifier leaves unanchored; adjudicated as anchored license-entry translations in substance, since each entry's name, author and license carry over and only the field labels and notes are localized (section 1). Block B13's RESTORATION label is adjudicated in section 8. The four HTTP-KEPT firings are adjudicated in section 4 as the data-URI namespace false-fire.
+
+## License and attribution
+
+- **Title:** Sunside Theme
+- **Author:** EstrellaYoshte
+- **Source:** https://scp-wiki.wikidot.com/theme:sunside — revision 17
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

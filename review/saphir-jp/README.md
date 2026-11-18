@@ -1201,3 +1201,10 @@ Resolution: section 6, class P10. The presentation-page note at the file tail, t
 Assign this block to a section (and write it there) or propose it as a new signature / pattern in the lane report.
 
 
+## License and attribution
+
+- **Title:** SAPPHIRE Theme Redux
+- **Author:** Lt Flops
+- **Source:** https://scp-wiki.wikidot.com/theme:saphir — revision 14
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

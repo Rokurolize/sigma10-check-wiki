@@ -159,3 +159,11 @@ Adjudication for this README: the RATE-EXHIBIT-KEPT-CANDIDATE label does not sur
 ## Change set outside the two diffed files
 
 The diff covers two files; the port's record is one file larger. `pages/theme-decoration-sample-immrama-jp.txt` is the decoration sample the render checks ran against (its findings are the sample half of section 11(3)); it belongs to this theme's record but carries no port change of its own to explain here. The FIX-P4 commit (f1138e4) that repointed this theme's base include touched 39 files in one wave; the other 38 are those themes' own records, not this one's change set. There are no companion fragments and no inbound-link repairs in other candidates for this theme.
+
+## License and attribution
+
+- **Title:** Immrama Theme
+- **Author:** arthcymro
+- **Source:** https://scp-wiki.wikidot.com/theme:immrama — revision 17
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

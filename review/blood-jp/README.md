@@ -166,3 +166,11 @@ The usage example at candidate L27 as built read `> @@[[include :scp-jp:theme:bl
 ## Change set outside the two diffed files
 
 The diff covers two files; the port's record is one file larger. `pages/theme-decoration-sample-blood-jp.txt` is the decoration sample the render checks ran against; it belongs to this theme's record but carries no port change of its own to explain here. The original-side sample `pages/theme-decoration-sample-blood.txt` is the campaign's mirror-side fixture, likewise outside the port. The re-hosted logo (section 4) is an attachment of the candidate page itself, recorded in the license box, not a separate repo file. There are no companion fragments and no inbound-link repairs in other candidates for this theme.
+
+## License and attribution
+
+- **Title:** Blood Theme
+- **Author:** ubergoober
+- **Source:** https://scp-wiki.wikidot.com/theme:blood — revision 12
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

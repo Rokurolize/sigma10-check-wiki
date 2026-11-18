@@ -455,3 +455,11 @@ blocks). Per the class-M convention it is resolved here by shape.
 | Block | Lines (orig → cand) | Resolution |
 |---|---|---|
 | B2 | 5 → 5 | The `sa` parameter's default converts from the hangul spelling 기지 to the kanji spelling 基地 — the same word ("base / site") in its Japanese written form, inside the include the shell forwards (sections 2, 5). The classifier's glyph signature did not fire inside the include's parameter list. |
+
+## License and attribution
+
+- **Title:** 최종책임자 테마
+- **Author:** thd-glasses
+- **Source:** https://scpko.wikidot.com/theme:the-buck-stops-here — revision 29
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

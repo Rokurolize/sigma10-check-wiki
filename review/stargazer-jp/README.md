@@ -561,3 +561,11 @@ convention they are resolved here by shape, one row per block.
 |---|---|---|
 | B8 | 47 → 383 | Settings tab heading translated: `+* Info` → `+* 情報` (section 6, P10). |
 | B45 | 240 → 578 | Settings tab heading translated: `+* Coloring` → `+* 配色` (section 6, P10). |
+
+## License and attribution
+
+- **Title:** Stargazer Theme
+- **Author:** AstralNavigator
+- **Source:** https://scp-wiki.wikidot.com/theme:stargazer — revision 11
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

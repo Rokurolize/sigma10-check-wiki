@@ -217,3 +217,11 @@ The items above describe this package as built. The repairs recorded below postd
 ## Appendix: residue and heuristic resolution
 
 Residue blocks: 0 of 72. Heuristic blocks: 42 of 72, in three shapes. (1) Translation mass over the Sigma+ sample body (TRANS-UNANCHORED and TRANSLATION-ANCHORED blocks B9–B67) — §6. (2) The SCSS exhibit region's three unlabeled blocks (B68: original lines 268–384 → candidate 207–208; B70: 391–448 → 213–215; B71: 450–616 → 217–219), which are the exhibit absence of §8 aligning against the restored credit rules — resolved there, not waived. (3) CSS-BODY spans inside the candidate's supplement block — the restored credit rules of §1, whose content is adjudicated there. No heuristic block hides a delivery or credit change beyond those adjudicated in §1, §3 and §8.
+
+## License and attribution
+
+- **Title:** 命运共同体 版式
+- **Author:** hoah2333 & Agent Phage
+- **Source:** https://scp-wiki-cn.wikidot.com/theme:share-future-community — revision 1
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

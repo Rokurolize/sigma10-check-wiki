@@ -165,3 +165,11 @@ The diff covers two files; the port's full change set is larger. (1) The hosted 
 ## Multi-wave provenance
 
 The candidate's current state is the product of successive waves, not of a single porting pass: the S2 localization wave produced the initial port (translation, font stacks, asset re-hosting, the added credit block, and, as later found, the retained bare Rate); the credit waves completed the six missing credit fields; the frame waves added the delivery frame (P6); FIX5-FURNB removed the duplicate Rate; the usage-example sweep completed the posting name; and the FIX-FRAMEADDR remedy later removed the frame's `theme=` parameter in canonical. Citations, in place of a changelog: GOSIGN2-LEDGER.md §(c3) (localize row), §(c2) (render row), §(e) item 49; GOSIGN2-LEDGER-SUPPLEMENT.md row 49; LOCALIZE-ROWS row 177; T1-ROWS row 213; commits cad7c86 (Stage 2 CN4 integration), 666f543 (FIX2-CREDIT), 25bb0b4 (FIX5-FURNB), b5cb724 (usage sweep), 722ceb5 (frameaddr remedy, post-base). The go-sign re-run over that record is what the Status block certifies. Patterns cited in this package are at patterns commit 9c5e9079afb01d30cb9fc4ef9d714e5591eb2ffa.
+
+## License and attribution
+
+- **Title:** 显像管 主题版式
+- **Author:** Mr_J_AND
+- **Source:** https://scp-wiki-cn.wikidot.com/theme:crt — revision 17
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

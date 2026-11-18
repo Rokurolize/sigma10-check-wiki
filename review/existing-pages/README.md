@@ -263,3 +263,11 @@ only **30** /start rows whose production page exists (25 `match` variants —
 | `existing:theme-y2k` | theme | `review/y2k-jp/` — production counterpart of `theme:y2k-jp` |
 | `existing:theme-yamisushi` | theme | no theme row; parity record only |
 | `existing:theme-zattou` | theme | no theme row; parity record only |
+
+## License and attribution
+
+- **Title:** Existing production pages (pages-existing/) — 153 records
+- **Author:** Not a single author: the 153 production pages are by their respective SCP-JP authors, and each page retains its own credit in pages-existing/
+- **Source:** https://scp-jp.wikidot.com/ (production pages) — no single revision; individual page URLs and revisions are in pages-existing/ and the cross-reference table below
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This collective record holds no ported text: at migration these production pages continue unchanged and only the rendering environment changes. See "The standing note (part 4 of the four-part standard, collapsed)" and "Full record table" in this README for what changed and why. Translator: not applicable — these are production pages, not translated ports; at migration the page source does not change.

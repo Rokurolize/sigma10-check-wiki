@@ -188,3 +188,11 @@ The diff covers two files; the port's record is one file larger. `pages/theme-de
 ## Multi-wave provenance
 
 The candidate's current state is the product of successive waves, not of a single porting pass: the Stage 2 KO1 integration (18280b3) produced the port (translation, delivery relocation, credit block, license box, and, as later found, the leftover info pair and the unconverted font stacks); FIX-CREDIT-D (1869877) normalized the translator field across all candidates; FIX5-INFO (9a1c86a) removed the info pair (item 99); and the usage-example sweep (b5cb724) completed the example's posting name. Citations, in place of a changelog: GOSIGN2-LEDGER.md §(c3) (localize row), §(c2) (render row), §(e) item 99; GOSIGN2-LEDGER-SUPPLEMENT.md row 99; REPORT-GOSIGN2-FIX5-INFO.md (07k section). The go-sign re-run over that record is what the Status block certifies.
+
+## License and attribution
+
+- **Title:** 건설자 테마
+- **Author:** thd-glasses
+- **Source:** https://scpko.wikidot.com/theme:07k — revision 3
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

@@ -196,3 +196,11 @@ All 18 residue blocks, adjudicated (class M treatment: one table, no per-block s
 | B173 | L1977 | L1896–1897 | Third exhibit's closing alignment pair (section 8) |
 | B174 | L1980–1983 | L1900 | Gate-exit alignment: the original's raw-marker lines before the gate close are absorbed at the candidate's section exit (section 8) |
 | B175 | L1985–1989 | L1901 | The main gate's closing lines, localized gate form (section 0) |
+
+## License and attribution
+
+- **Title:** 破碎的世界 BHL 主题
+- **Author:** Etinjat
+- **Source:** https://scp-wiki-cn.wikidot.com/theme:broken-world — revision 306
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

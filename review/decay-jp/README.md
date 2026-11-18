@@ -158,3 +158,11 @@ The diff covers two files; the port's full change set is slightly larger. (1) `p
 ## Multi-wave provenance
 
 The candidate's current state is the product of successive waves, not of a single porting pass: the S2 localization wave (LOCALIZE-S2-D) produced the initial port (translation, delivery re-hosting, exhibit structure, and, as later found, the surviving bare Rate); the credit waves completed the eight credit fields; the frame waves added the interwiki-style frame (the FIX4-era frame set, which the ledger names only by count — ROLLOUT.md's known limit); the render checks ran as RENDER-S2-E (CN4); FIX5-FURNB removed the bare Rate (item 53); and the usage-example sweep completed the exhibit slug after the verdict. Citations, in place of a changelog: GOSIGN2-LEDGER.md §(c3) (localize row), §(c2) (render row), §(e) item 53; GOSIGN2-LEDGER-SUPPLEMENT.md row 53; LOCALIZE-ROWS row 179; T1-ROWS row 215. The go-sign re-run over that record is what the Status block certifies.
+
+## License and attribution
+
+- **Title:** 衰残 版式
+- **Author:** lestday233・YanL777
+- **Source:** https://scp-wiki-cn.wikidot.com/theme:decay — revision 8
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

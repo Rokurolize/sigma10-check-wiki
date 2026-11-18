@@ -177,3 +177,11 @@ There are no residue blocks in this package. The 9 heuristic blocks resolve as f
 - **B4, B5, B6, B9, B12 (TRANS-UNANCHORED primaries):** unanchored body translation lines (the introduction's continuation, the credit lines, the heading samples). P10 mass, assigned to section 6.
 - **EXHIBIT-RESTRUCTURE on B7:** the image-block exhibit line; adjudicated in section 8 as a false-fire on an include repoint inside an exhibit line — the exhibit stands.
 - **Skeleton "none" sections:** the skeleton's per-section listing follows primary labels only; the sections above are written from classification.json's label_spans (JPFONT-LOAD fires inside B18, T7-CREDIT-CSS inside B30, LICENSE-BOX inside B31, COMMENT-TEXT inside B19), per the settled format.
+
+## License and attribution
+
+- **Title:** 旅行者之书 版式
+- **Author:** W Asriel
+- **Source:** https://scp-wiki-cn.wikidot.com/theme:travellers-book — revision 14
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

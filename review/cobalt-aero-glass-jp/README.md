@@ -143,3 +143,11 @@ Checker per the report: plain error 10 / warn 0 / info 1 and links error 10 / wa
 ## Appendix — residue blocks
 
 - B5 (insertion at candidate L38): one added blank line in the candidate before the head module's [[/module]] (candidate L37–38 both blank against original L38; [[/module]] at L39 on both sides). No signature fired; whitespace-only, adjudicated as formatting. No action.
+
+## License and attribution
+
+- **Title:** 钴玻璃 主题版式
+- **Author:** Mercuresphere
+- **Source:** https://scp-wiki-cn.wikidot.com/theme:cobalt-aero-glass — revision 56
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

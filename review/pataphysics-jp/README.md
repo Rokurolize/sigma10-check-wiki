@@ -204,3 +204,11 @@ Checks a reviewer can re-run from this package alone: (1) the sha256 of original
 - R3-R14, B3, B8, B9, B11, B13, B14, B15, B25, B26, B28, B29, B31 (heuristic, TRANS-UNANCHORED): one-to-one prose translations of the production page's Japanese against the mirror's English, verified line by line against the mirror; no exhibit, include, or delivery content hides in this set (section 6).
 - R15-R16, B42, B44 (heuristic, code-css): the content: string translations of section 6.
 - R17, B48 (heuristic; candidate 736-740): the tail module addition of section 8.
+
+## License and attribution
+
+- **Title:** 'Pataphysics Department Theme
+- **Author:** Lt Flops
+- **Source:** https://scp-wiki.wikidot.com/theme:pataphysics — revision 251 (revision date 2023-04-13 05:38:08)
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: Dr Devan — a human translator credited by the live JP page and retained as the package records it (campaign-rule exception); where the campaign translated, the translator is AI.

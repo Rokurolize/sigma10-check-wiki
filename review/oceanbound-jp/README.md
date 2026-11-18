@@ -219,3 +219,11 @@ None. This theme has no production JP counterpart and no companion deliverable; 
 
 - R1 = B13 (original L32–33 → candidate L38–39): the second usage exhibit line and its lead-in after restructuring; the pair is the blood-variant usage instruction, translated, with the include itself counted in B15's spans. No signature fires because the block mixes the translated lead-in with the escaped include line.
 - R2 = B143 (original L1598 → candidate L1601–1602): the blank line and spacing added before the restored license-box-backend include at the tail; the include itself is counted in B144's LICENSE-BOX span. The residue is the padding around the restoration point, nothing else.
+
+## License and attribution
+
+- **Title:** Oceanbound Theme
+- **Author:** EstrellaYoshte（DrBleep のために）
+- **Source:** https://scp-wiki.wikidot.com/theme:oceanbound — revision 62
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

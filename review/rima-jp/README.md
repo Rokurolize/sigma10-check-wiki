@@ -327,3 +327,11 @@ Heuristic (44 blocks, TRANS-UNANCHORED tier C unless noted):
 - B5-B9, B12-B14, B16-B19, B21-B23, B26, B29, B30, B34, B38, B40-B47, B50-B53, B61, B64-B66, B68, B69, B71-B74 (original L32-400 to candidate L46-419, body): one-line and short-group prose and specimen translations whose line shape changed in translation (script delta without the anchor majority). Assigned to section 6.
 - B81, B82 (original L687-688 and L935-936 to candidate L706-707 and L954-955, code-css): CSS comment translations inside the code block, also labeled COMMENT-TEXT. Assigned to section 6.
 - B4, B59, B75 are tier A/B seams rather than appendix mass: the credit block's tail (section 1; its annotation in section 10), the FIX5 reader's note (sections 8 and 10), and a glyph-form conversion (section 6).
+
+## License and attribution
+
+- **Title:** 月溪 主题版式
+- **Author:** OxygenNine
+- **Source:** https://scp-wiki-cn.wikidot.com/theme:rima — revision 10
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

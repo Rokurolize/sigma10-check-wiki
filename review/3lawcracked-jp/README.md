@@ -183,3 +183,11 @@ Stamp treatment follows the jiha-jp / alexylva-university-jp precedents: the reg
 ## Change set outside the two diffed files
 
 The diff covers two files; the port's record is larger. `pages/theme-decoration-sample-3lawcracked-jp.txt` is the decoration sample the render checks ran against. `pages-existing/existing:theme-3law.txt` is the production base page the T7 supplement was carried from (section 1); it is a record source, not a port output. The base theme:3law has no JP candidate file (see the per-theme record). There are no companion fragments and no inbound-link repairs in other candidates for this theme.
+
+## License and attribution
+
+- **Title:** Third Law Cracked CSS Theme
+- **Author:** TyGently
+- **Source:** https://scp-wiki.wikidot.com/theme:3lawcracked — revision 17
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

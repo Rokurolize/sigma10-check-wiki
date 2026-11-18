@@ -149,3 +149,11 @@ A Dustjacket-family theme by Mercuresphere, the "reconstruction" sibling of them
 
 - R1 — B8 (orig L717) and R2 — B9 (orig L719): blank lines deleted at the code block's tail. Assigned to section 9.
 - Unanchored translation mass (TRANS-UNANCHORED spans in B1, B2, B4): the CN → JP body translation, which the anchor matcher cannot pair line by line because the body also moved. Resolved by shape: it is the documentation body of section 6, exhibit for exhibit, with no content class of its own.
+
+## License and attribution
+
+- **Title:** 范式重构 主题版式
+- **Author:** Mercuresphere
+- **Source:** https://scp-wiki-cn.wikidot.com/theme:paradigm-reconstruction — revision 26
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

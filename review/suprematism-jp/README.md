@@ -163,3 +163,11 @@ The diff covers two files; the port's full change set is larger. (1) `pages/frag
 ## Multi-wave provenance
 
 The candidate's current state is the product of successive waves, not of a single porting pass: the S2 localization wave produced the initial port (translation, delivery frame, exhibit restructuring, and, as later found, the emptied preset shells and the stripped credit co-author); FIX2-INCLUDE repaired the license-box includes; the credit waves completed the credit fields that FIX5 then corrected; the FIX4 era fixed this theme's dispositions (old-bhl and foreign-host delivery as class (ii)); and FIX5-STRUCTA made the final restorations. Citations, in place of a changelog: GOSIGN2-LEDGER.md §(c3) (localize row), §(c2) (render row), §(e) items 91/92/95; GOSIGN2-LEDGER-SUPPLEMENT.md rows 91/92/95; REPORT-GOSIGN2-FIX5-STRUCTA.md (suprematism section). The go-sign re-run over that record is what the Status block certifies.
+
+## License and attribution
+
+- **Title:** 至上主义 美学版式
+- **Author:** LemonCat233 & Liurd
+- **Source:** https://scp-wiki-cn.wikidot.com/theme:suprematism — revision 7
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

@@ -190,3 +190,11 @@ The 20 heuristic blocks are translation mass in the shapes below, plus the font 
 - B48-B51 (orig L155-170 → cand L156-171): the blockquote exhibit, the table exhibit, and the font specimen lines. Assigned to section 6.
 - B52 (orig L172-173 → cand L173-180): the source-code section seam: the @@ @@ separator, the translator's note (section 10), the + ソースコード heading, the footnoteblock's relocation (section 8), and the collapsible opening. Assigned to sections 6, 8, and 10.
 - B53's TRANS-UNANCHORED label: the code-block head region, whose substance is sections 3, 4, and 10. B55's CSS-BODY label: the font stacks, section 4. B65's TRANS-UNANCHORED label: the license-box block, section 1. B5's TRANS-UNANCHORED label: the head-zone block, sections 1-2.
+
+## License and attribution
+
+- **Title:** Old Money Theme
+- **Author:** Woedenaz
+- **Source:** https://scp-wiki.wikidot.com/theme:old-money-theme — revision 89
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

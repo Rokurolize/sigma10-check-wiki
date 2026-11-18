@@ -199,3 +199,11 @@ The items above describe this package as built. The repairs recorded below postd
 ## Change set outside the two diffed files
 
 The diff covers the theme's own layer. (1) `pages/theme-decoration-sample-gsk-jp.txt` is the decoration sample the render checks ran against (its findings are the sample half of section 11(2)); it belongs to this theme's record but carries no port change of its own to explain here. (2) The declared base, theme:jakstyle-jp, is another row's candidate with its own review package; this package reads its delivery contract (block 1) and its furniture includes from that file where sections 2–3 say so, and explains no part of it. There is no companion file of this theme's own.
+
+## License and attribution
+
+- **Title:** GSK项目主题版式
+- **Author:** 原語版ページの作成者に同じ（scp-wiki-cn の theme:gsk）
+- **Source:** https://scp-wiki-cn.wikidot.com/theme:gsk — revision 7
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

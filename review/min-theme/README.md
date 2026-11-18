@@ -371,3 +371,11 @@ matter. Saying any of these is "unverified" would be wrong; they are **not appli
    the `ASSET-REHOST` false signal on B16, reflect the code-exhibit → module-css channel
    move rather than new port mechanisms; §§3–4 and §9 re-adjudicate them from the bytes.
    This is the K3 analogue of the normal packages' judgment slots.
+
+## License and attribution
+
+- **Title:** Min Theme (ミニマリストテーマ)
+- **Author:** Nanimono Demonai
+- **Source:** https://scp-jp.wikidot.com/theme:min-theme — no reference revision (JP original by rule; production page)
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: not applicable — JP original, no source language; no translator is credited.

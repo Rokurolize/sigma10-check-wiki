@@ -209,3 +209,11 @@ Stamp treatment follows the jiha-jp / alexylva-university-jp precedents: the reg
 - Note: no other signature matched
 
 Resolution: assigned to section 3, not a residue. B2 is the original head module's content — the normalize @import (original L4), the Black Highlighter @import (original L5), and the module close — ending with no candidate counterpart because the candidate's delivery is the inline module plus the composition's base layer (section 3 states the ground and the render evidence). No new signature is proposed: the shape is the delivery restructure the DELIVERY-MOVE topology already names, caught here as a heuristic only because the removed lines sit in the original's head module rather than in the moved exhibit.
+
+## License and attribution
+
+- **Title:** Angel Theme
+- **Author:** MisterFrown
+- **Source:** https://scp-wiki.wikidot.com/theme:angel — revision 6
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

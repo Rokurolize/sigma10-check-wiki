@@ -153,3 +153,11 @@ The diff covers two files; the port's full change set is slightly larger. (1) `p
 ## Multi-wave provenance
 
 The candidate's current state is the product of successive waves, not of a single porting pass: the S2 localization wave (LOCALIZE-S2-D) produced the initial port (translation, delivery re-hosting, exhibit structure, and, as later found, the deleted base prerequisite); the credit waves completed the eight credit fields; FIX4-IWA added the interwiki-style frame and removed the dead `url()` declarations; the render checks ran as RENDER-S2-E (CN4); and FIX5-STRUCTB §2 restored the golden-wind prerequisite (item 55), after which no wave has touched the file. Citations, in place of a changelog: GOSIGN2-LEDGER.md §(c3) (localize row), §(c4) (KB-03 entry), §(c2) (render row), §(e) item 55; GOSIGN2-LEDGER-SUPPLEMENT.md row 55 and §(c) check 7; LOCALIZE-ROWS row 183; T1-ROWS row 219. The go-sign re-run over that record is what the Status block certifies.
+
+## License and attribution
+
+- **Title:** 醉巷 版式
+- **Author:** Dr Roger_F_XL
+- **Source:** https://scp-wiki-cn.wikidot.com/theme:drunken-alley — revision 50
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

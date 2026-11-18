@@ -152,3 +152,11 @@ SB3 (scp-jp-sandbox3.wikidot.com) is SCP-JP's draft-and-sandbox wiki. Its whole 
 - **Logo sizing.** The candidate's `background` shorthand on `#header` resets the base's `background-size:100px`, so the sandbox logo is at natural size, as in SB3, at all widths. If a reviewer wants the base's responsive `calc(48px + 5%)` sizing kept, that is a one-line addition; the requirement names the art, not a size.
 - **Questions only site-admin access can settle** (carried over from REPORT24 §5, unresolved): which served `<style>` blocks are the admin "Custom CSS" field versus page/include content, and where the S10 management block is stored; whether the site theme will be selected in Site Manager per wiki; and whether the override layer will live in the Custom CSS field or in the imported theme file. None can be settled from the captures, and none blocks this source-level package.
 - **Verification status, restated.** Everything in this package is source-level: capture hashes, the generated Tier 2 diff, rule-by-rule comparison against the two captured bases, and the icon-usage audit. The draft-page render check the requirement calls for (「Check on a draft page」, the re-check of S10/S11 against the final Sigma-10 header markup) has not been performed, because the candidate is not deployed anywhere a browser can load it. No statement in this package claims rendered behaviour.
+
+## License and attribution
+
+- **Title:** SCP Sigma 9 (2014 Wikidot Theme) — SB3 site theme.css
+- **Author:** Aelanna (created for the SCP Foundation); edited for SCP財団 by Dr Devan, NanimonoDemonai, C-take
+- **Source:** https://scp-jp.github.io/files/util/sandbox/styles/theme.css — static file captured 2026-11-15 (no Wikidot page revision)
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 port of the site's CSS; changes were made. See "Summary" and "Change classes" in this README for what changed and why. Translator: not applicable — static site CSS, no translated prose; the port is a source-level rewrite.

@@ -199,3 +199,11 @@ The classifier emitted 25 open blocks (1 residue, 24 heuristic). All are resolve
 - **R7 — B41 (heuristic; orig L127–129 → cand L130–132).** The div-blockquote instruction, translated over three lines. Resolved in section 6.
 - **R8 — B50 (heuristic; orig at L188 → cand L191–192).** Pure addition with no original counterpart: the body 訳注 on JP font fallbacks. Resolved in sections 6 and 10 (porter annotation, P10 form).
 - **R9 — B54 (heuristic-tier CSS-BODY; orig L222–226 → cand L246–250).** The five font-stack lines gaining JP fallbacks. The classifier's CSS-BODY label stands as its mechanical reading; the mechanism is the P7 stack rewrite, resolved in section 4.
+
+## License and attribution
+
+- **Title:** Bedbugs Theme
+- **Author:** winkwonkboi
+- **Source:** https://scp-wiki.wikidot.com/theme:bedbugs-theme — revision 11
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

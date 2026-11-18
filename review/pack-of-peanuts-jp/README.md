@@ -170,3 +170,11 @@ The usage exhibit (candidate L38) was repointed from `:scp-wiki:theme:pack-of-pe
 ## Change set outside the two diffed files
 
 The diff covers two files; the port's record is one file larger. `pages/theme-decoration-sample-pack-of-peanuts-jp.txt` is the decoration sample the render checks ran against (its findings are the sample half of section 11(2)); it belongs to this theme's record but carries no port change of its own to explain here. The tabview.css copy the candidate imports lives in the candidate's own file area on the draft host (section 3); it is an uploaded asset, not a repo file. There are no companion fragments and no inbound-link repairs in other candidates for this theme.
+
+## License and attribution
+
+- **Title:** Pack Of Peanuts Theme
+- **Author:** Lt Flops
+- **Source:** https://scp-wiki.wikidot.com/theme:pack-of-peanuts — revision 45
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

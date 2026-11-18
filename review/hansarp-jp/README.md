@@ -191,3 +191,11 @@ The items above describe this package as built. The repairs recorded below postd
 ## Change set outside the two diffed files
 
 The diff covers two files; this theme's record is larger than any other in the batch. `pages-existing/existing:theme-hansarp.txt` is the production page, the candidate's parent (Per-theme record). `pages/phase17-diff-hansarp-jp.txt` is the migration delivery that brought the production page to the rev 14 basis. `pages/theme-decoration-sample-hansarp-jp.txt` is the decoration sample the render checks ran against, and `pages/theme-decoration-sample-hansarp.txt` is its production-side counterpart. The base include `:scp-jp:theme:black-highlighter-theme` is another candidate in the population with its own package; this theme's record names it as a dependency, not a change.
+
+## License and attribution
+
+- **Title:** HANSARP Theme
+- **Author:** EstrellaYoshte
+- **Source:** https://scp-wiki.wikidot.com/theme:hansarp — revision 14 (revision date 2026-09-03 13:21:03)
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: nebula2700 — a human translator credited by the live JP page and retained as the package records it (campaign-rule exception); where the campaign translated, the translator is AI.

@@ -49,3 +49,11 @@ Sync state: the pin history advanced 2025-07-06 -> 2025-11-16 -> 2025-12-20 -> 2
 Minimal? On JP's own side, yes except for one defect and four harmless drifts, each named with its repair above. Complete? No: four upstream correctness/parity items are untaken, and the mechanism that should have delivered them has been stalled by one unmerged PR since January. Both statements are exhaustive over the measured surface: every delivered-diff hunk and every drift hunk carries a class and a ground in the lane reports.
 
 SIGMA-AUDIT: COMPLETE
+
+## License and attribution
+
+- **Title:** Sigma base audit — is SCP-JP/sigma's total diff against scpwiki/sigma minimal?
+- **Author:** Sigma-10 review supervisor fleet (lanes sigma-half1a, sigma-half1b, sigma-half2; coordinator synthesis and spot verification)
+- **Source:** https://github.com/SCP-JP/sigma (main 63a6be9) and https://github.com/scpwiki/sigma (main e1c339f), read-only clones; full reports in muse-bhl/theme-port-readiness-20261114/sigma-audit/ — audited 2026-11-17
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This record is campaign-original analysis, not a port of a third-party work; no source text was translated or migrated. See "Structure of the thing being audited", "Verdict", "Half 1" and "Half 2" in this README for what changed and why. Translator: not applicable — campaign-original analysis, no source language and no translation.

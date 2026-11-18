@@ -299,3 +299,11 @@ The 21 heuristic blocks are translation mass in one shape, plus the three docume
 - B11 (residue; original L38-39 to candidate L46-47): the usage exhibit's closing lines gaining their @@ escapes, the tail of the exhibit-escaping delta. Assigned to section 8.
 - B48 (residue; original L139-140 to candidate L147): the footnoteblock line and its following blank, the escape flagged as F1. Assigned to the per-theme record.
 - B55 (residue; original L424 to candidate L431): a pairing seam with no content delta; the comment line "/* Okay, now for the links and the body */" stands on both sides (original L425, candidate L431), and the classifier paired the original's preceding blank line against it. Assigned here, closed.
+
+## License and attribution
+
+- **Title:** Minimalist BHL Theme
+- **Author:** JakdragonX、Pedagon
+- **Source:** https://scp-wiki.wikidot.com/theme:minimalist-bhl — revision 107 (revision date 2026-04-12 05:12:17)
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: walksoldi — a human translator credited by the live JP page and retained as the package records it (campaign-rule exception); where the campaign translated, the translator is AI.

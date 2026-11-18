@@ -177,3 +177,11 @@ Two items belong to this theme alone.
 |---|---|
 | `pages/theme-decoration-sample-lumina-jp.txt` | The theme's decoration sample: a JP page applying the candidate, the surface the T2/T3 render checks measured (section 11's sample readings) |
 | `pages/theme:basalt-jp.txt` (the base candidate) | Not part of this package's change set, but this candidate's delivery imports that candidate's /1 code (section 3); the base's own port is documented in the basalt-jp review package |
+
+## License and attribution
+
+- **Title:** Lumina Crash Theme
+- **Author:** EstrellaYoshte
+- **Source:** https://scp-wiki.wikidot.com/theme:lumina — revision 27
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

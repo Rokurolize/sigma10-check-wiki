@@ -208,3 +208,11 @@ The classifier emitted 56 open blocks (7 residue, 49 heuristic). All are resolve
 - **R7 — B87 (residue; orig L1440 → cand L1441–1442).** The file tail: both files end with the line `[!----]`; the original leaves it unterminated, the candidate terminates it and adds an empty final line. Termination only; no content. Resolved in section 9.
 - **R8 — B82 (heuristic, CSS-BODY; orig L1047–1048 → cand L1048–1049).** The fondo-code.png repoint — a one-line URL change inside a CSS rule, which is why the differ's CSS-BODY reading stands as its mechanical label. The mechanism is the FIX2-DEADREF dead-reference repair, resolved in section 4.
 - **R9 — the remaining heuristic mass (TRANS-UNANCHORED siblings).** One-line and short prose translations across the usage, variant and Examples sections, each read against its original line. Resolved in section 6 by shape.
+
+## License and attribution
+
+- **Title:** Blood Raven Theme
+- **Author:** Dc_Yerko, Kilerpoyo
+- **Source:** https://scp-wiki.wikidot.com/theme:bloodraven — revision 62
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

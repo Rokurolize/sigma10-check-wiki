@@ -173,3 +173,11 @@ The diff covers two files; the port's full change set is slightly larger. (1) `p
 ## Multi-wave provenance
 
 The candidate's current state is the product of successive waves, not of a single porting pass: the S2 localization wave (LOCALIZE-S2-D) produced the initial port (base swap, translation, font stacks, and, as later found, the surviving bare Rate and the basalt dependency the T4 lane then charged); the credit waves completed the eight credit fields; the frame waves added the interwiki-style frame; the render checks ran as RENDER-S2-E (CN4); FIX5-FURNB removed the bare Rate (item 54); and the codeaddr remedy later removed the frame's dead `theme=` parameter (722ceb5). Citations, in place of a changelog: GOSIGN2-LEDGER.md §(c3) (localize row), §(c2) (render row), §(e) item 54; GOSIGN2-LEDGER-SUPPLEMENT.md row 54; LOCALIZE-ROWS row 180; T1-ROWS row 216; FIX-CODEADDR.md (population audit). The go-sign re-run over that record is what the Status block certifies.
+
+## License and attribution
+
+- **Title:** 深空 美学版式
+- **Author:** Un Party
+- **Source:** https://scp-wiki-cn.wikidot.com/theme:deepspace — revision 3
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

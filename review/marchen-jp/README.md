@@ -390,3 +390,11 @@ The 75 heuristic blocks are translation mass in two shapes, plus the font-stack 
 - B142 (original L1455-1456 to candidate L2265-2266): the retained Chinese proper-name line with its reading note. Assigned to section 6.
 - B81 (residue; original L547 to candidate L550): the first line of the multi-line selres include, repointed like its single-line siblings; the signature missed it because the include spans lines. Assigned to section 2.
 - B123 and B125 are tier A/B seams rather than appendix mass: the porter annotation (section 10) and the bundled-layer seam carrying the HEADERVAR, JPFONT-LOAD, COMMENT-TEXT, and CONTENT-STRING labels (sections 3, 4, 5).
+
+## License and attribution
+
+- **Title:** 深林 版式
+- **Author:** Sharia Vanilla
+- **Source:** https://scp-wiki-cn.wikidot.com/theme:marchen — revision 35
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

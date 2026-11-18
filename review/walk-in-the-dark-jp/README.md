@@ -190,3 +190,11 @@ The items above describe this package as built. The repair recorded below postda
 ## Change set outside the two diffed files
 
 The diff covers two files; the port's record is two files larger. `pages/theme-decoration-sample-walk-in-the-dark-jp.txt` is the decoration sample the render checks ran against (it includes this candidate alone, the BHL-family sample form), and its findings are the sample half of section 11(2). The follow-up diff artifact `gosign2-lanes/lane-oc-gs-localize-s2-E/diff-walk-in-the-dark-from72.txt` (campaign record, not repo) is part of this theme's provenance record and is reported in section 12(d). The base relationship is by contract, not by file: the production BHL page the usage examples name is outside this repo's candidate set, and the base candidate file searched in section 4 is `review/black-highlighter-theme-jp/candidate.txt`.
+
+## License and attribution
+
+- **Title:** 圣人夜行 BHL 主题
+- **Author:** Etinjat
+- **Source:** https://scp-wiki-cn.wikidot.com/theme:walk-in-the-dark — revision 72
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

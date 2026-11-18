@@ -177,3 +177,11 @@ Section 4 records the `san-serif` stack typo (original L1867 = candidate L1896) 
 ## Change set outside the two diffed files
 
 The diff covers two files; the port's record is two files larger. `pages/theme-decoration-sample-winxp-jp.txt` is the decoration sample the render checks ran against (it includes this candidate), and its findings are the sample half of section 11(2). The follow-up diff artifact `gosign2-lanes/lane-oc-gs-localize-s2-E/diff-winxp-from4.txt` (campaign record, not repo) is part of this theme's provenance record and is reported in section 12(d). There are no companion fragments in the repo and no inbound-link repairs in other candidates for this theme.
+
+## License and attribution
+
+- **Title:** 倒错的新千年 版式
+- **Author:** Meowait
+- **Source:** https://scp-wiki-cn.wikidot.com/theme:winxp — revision 4
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

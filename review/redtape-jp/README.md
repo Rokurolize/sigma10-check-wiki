@@ -193,3 +193,11 @@ The items above describe this package as built. The repairs recorded below postd
 ## Change set outside the two diffed files
 
 The diff covers two files; the port's record is one file larger in the repo and several files larger in the world. `pages/theme-decoration-sample-redtape-jp.txt` is the decoration sample the render checks ran against (its findings are the sample half of section 11(2)); it belongs to this theme's record but carries no port change of its own to explain here. Outside the repo, the theme's delivery depends on the two fragment pages (fragment:redtape-light / fragment:redtape-dark on scp-jp, named in the header comment) and on the storage-wiki uploads of section 4; both are part of the production lineage's standing state, not changes made by this package. There are no companion fragments inside the repo, no shared base file, and no inbound-link repairs in other candidates for this theme.
+
+## License and attribution
+
+- **Title:** REDTAPE THEME
+- **Author:** Rounderhouse
+- **Source:** https://scp-wiki.wikidot.com/theme:redtape — revision 147 (revision date 2024-10-02 07:06:10)
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: nebula2700 — a human translator credited by the live JP page and retained as the package records it (campaign-rule exception); where the campaign translated, the translator is AI.

@@ -168,3 +168,11 @@ The candidate's credit block as built recorded both 初訳時参照リビジョ�
 ## Change set outside the two diffed files
 
 The diff covers two files; this port's record is defined by a third. `pages/phase17-diff-black-highlighter-theme-jp.txt` (1,161 bytes) is the migration deliverable for the production page: it states the drift account (rev 130 → 135; base CDN-followed; the JP corrections kept by decision; credit only) and contains the one-line diff that adds 改訳時参照リビジョン: 135 to the live page's credit block. `pages/theme-decoration-sample-black-highlighter-theme-jp.txt` is the decoration sample the render checks ran against (its credit-modal state is section 11(2)). The candidate is also the base of record for dependent themes in this batch: theme:black-rain-jp layers over the production page this migration maintains. There are no companion fragments and no inbound-link repairs in other candidates for this theme.
+
+## License and attribution
+
+- **Title:** Black Highlighter Theme
+- **Author:** Woedenaz、Croquembouche
+- **Source:** https://scp-wiki.wikidot.com/theme:black-highlighter-theme — revision 135 (revision date 2026-11-06 16:21:13)
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: YS_GPCR — a human translator credited by the live JP page and retained as the package records it (campaign-rule exception); where the campaign translated, the translator is AI.

@@ -118,3 +118,11 @@ Sections follow the theme-package README's standing-class manner. Where a class 
 - `diff.md` is present and generated from these two files by `review/build_review.py`.
 - No T1/T2/T3/T4/T5 verdict is claimed here: those belong to the 287-row theme rollout, not to this record.
 
+## License and attribution
+
+- **Title:** component:u-navstyle (CSS body)
+- **Author:** thd-glasses
+- **Source:** https://scpko.wikidot.com/component:u-navstyle — revision 4
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+  - The package record names CC BY-SA 4.0 for this original; this line states this repository's CC BY-SA 3.0 release position, per the campaign's attribution standard.
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Change classes" in this README for what changed and why. Translator: not applicable — the fragment carries no translated prose; credit is deferred to theme:garak-the-magazine-jp.

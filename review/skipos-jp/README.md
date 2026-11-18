@@ -206,3 +206,11 @@ The classifier emitted one residue block and seven heuristic blocks; all are res
 - **R2 — B8–B11 (heuristic; orig L84–175 → cand L53–74, body → body).** The specimen-set region: the wallpaper-customization exhibit, the skip_window/skip_side/skip_box/skip_float specimens and their Lorem ipsum bodies, and the surviving translated exhibits the differ interleaved with them. Resolved in sections 6 and 8: the surviving text is translation (TRANS-UNANCHORED in substance; the classifier's "script delta without the anchor majority" note is the honest label for a region where translation and deletion are mixed line by line), and the deletions are the exhibit drops of section 8.
 - **R3 — B14 (heuristic in part; the code-exhibit block).** Its label set (COMMENT-TEXT, CONTENT-STRING, DRAFT-HOST, SELF-DELIVERY, TRANS-UNANCHORED) is resolved across sections 3, 4 and 6: the wallpaper repoint, the "Terminal" string, and the EN comments are each accounted there.
 - **R4 — the RATE-EXHIBIT-KEPT-CANDIDATE label on B2 (false fire).** The signature fired on the head region that contains the original's bare Rate, but the candidate side of the block contains no Rate module in any form (`grep -n 'module Rate' candidate.txt` — no hits): the bare Rate was deleted, and the preview credit module is the only rating device. The label stands in classification.json as emitted; this adjudication is the correction of record.
+
+## License and attribution
+
+- **Title:** SkipOS Theme
+- **Author:** EstrellaYoshte
+- **Source:** https://scp-wiki.wikidot.com/theme:skipos — revision 26 (revision date 2025-12-04 14:11:21)
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

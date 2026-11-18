@@ -155,3 +155,11 @@ FIX4-JPORIG §0 recorded `pages/theme:shushuin-jp.txt` at SHA-256 `8555807848374
 ### What is deliberately left
 
 Nothing was edited. The production mirror, the candidate, the check wikis, /start, and other lanes' packages are untouched. The candidate keeps its labelled Rate module, its prose credit, its direct frame CSS, and its type=1-only scope; the T1 warns and infos stand as the named-exception form; the render items stand as preview/environment-layer dispositions. No TASL field, interwiki include, or type=2/3 exhibit was invented to "fix" a charge that is wrong for a JP original.
+
+## License and attribution
+
+- **Title:** 蒐集院テーマ・改 (Shushuin)
+- **Author:** Nanimono-demonai (original author), Wanazawawww (revision)
+- **Source:** https://scp-jp.wikidot.com/theme:shushuin — no reference revision (JP original by rule; production page)
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: not applicable — JP original, no source language; no translator is credited.

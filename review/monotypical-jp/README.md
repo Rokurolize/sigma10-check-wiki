@@ -176,3 +176,11 @@ Two items belong to this theme alone.
 |---|---|
 | `pages/theme-decoration-sample-monotypical-jp.txt` | The theme's decoration sample: a JP page applying the candidate, the surface the T2/T3 render checks measured (section 11's sample readings) |
 | `pages/phase17-diff-monotypical-jp.txt` | The migration's delivery form: the diff of this candidate against the production page theme:monotypical (recorded production drift: literal-level differences), per the sources.tsv note in the Provenance table |
+
+## License and attribution
+
+- **Title:** Monotypical Theme
+- **Author:** EstrellaYoshte
+- **Source:** https://scp-wiki.wikidot.com/theme:monotypical — revision 142 (revision date 2026-04-12 05:12:14)
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: nebula2700 — a human translator credited by the live JP page and retained as the package records it (campaign-rule exception); where the campaign translated, the translator is AI.

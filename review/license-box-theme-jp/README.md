@@ -125,3 +125,11 @@ Signed: lane-oc-components, 2026-11-17 — review-package author. Ground: SITE-S
 - No diff.md by design; the signed statement above stands in its place.
 - No T1/T2/T3/T4/T5 verdict is claimed here: those belong to the 287-row theme rollout, not to this record.
 
+## License and attribution
+
+- **Title:** License Box (Theme) / component:license-box-theme
+- **Author:** stormbreath
+- **Source:** https://scp-wiki.wikidot.com/component:license-box-theme — reference counterpart, 4 revisions at fetch time (no exact revision recorded)
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+  - The candidate records that the original page carries no license notice; the backend it forwards to carries conditional CC BY-SA 4.0/3.0 notices. No license is invented for the original.
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Change classes" in this README for what changed and why. Translator: AI (Muse and its delegated agents), as recorded in the receiver's TASL block.

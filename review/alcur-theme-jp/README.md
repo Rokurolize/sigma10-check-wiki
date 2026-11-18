@@ -218,3 +218,11 @@ The candidate's current state is the product of five commits and four check wave
 ## Appendix — residue blocks
 
 No residue: the classifier emitted 12 blocks, all carrying specific labels (12 specific, 0 heuristic, 0 residue, 0 skipped), and every block is adjudicated in the Classification section. No new signature was required; the one classifier behavior worth recording for later batches is that B1's ten labels and B2's alignment artifact (a body deletion whose added side lands on a module furniture rule) both resolve only when the sections are written from label_spans against the bytes, as the standing lesson prescribes.
+
+## License and attribution
+
+- **Title:** The Alcur Hospital Theme
+- **Author:** ApothecaryCat21 & dxxander
+- **Source:** https://scp-wiki.wikidot.com/theme:alcur-theme — revision 33
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

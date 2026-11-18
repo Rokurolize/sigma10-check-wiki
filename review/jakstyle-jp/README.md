@@ -180,3 +180,11 @@ Class M treatment: the residue and the exhibit mass collapse into this table rat
 | Remaining residue (15 blocks) | Single-line and short alignment deltas inside the code exhibit and at its tail | The same re-emission class as CSS-BODY/RESTORATION; no content family is present here that is absent from the original's exhibit |
 | CSS-BODY (49 blocks) | Heuristic code-body deltas across the exhibit; verified to contain no font stack | Section 8's counted class |
 | RESTORATION (13 blocks) | Candidate passages matching the original's CSS at a different position | Reordering under the production arrangement; section 8 |
+
+## License and attribution
+
+- **Title:** JAKSTYLE
+- **Author:** JakdragonX
+- **Source:** https://scp-wiki.wikidot.com/theme:jakstyle — revision 327 (revision date 2026-10-27 14:13:30)
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: KanekoLiku — a human translator credited by the live JP page and retained as the package records it (campaign-rule exception); where the campaign translated, the translator is AI.

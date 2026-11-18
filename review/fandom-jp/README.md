@@ -215,3 +215,11 @@ One companion candidate: `pages/theme-decoration-sample-fandom-jp.txt`, the deco
 - R4 — B6 (heuristic, TRANS-UNANCHORED): one-line prose translation (section 6).
 - R5 — B7 (heuristic, TRANS-UNANCHORED): the collapsible show/hide labels, translated (section 6).
 - R6 — B9 (heuristic, CSS-BODY): the `--robo` / `--rubi` stack extensions; adjudicated as the P7 font-stack class and written in section 4, per the standing rule that font-family rewrite blocks are P7 rewrites whatever the classifier's primary label says.
+
+## License and attribution
+
+- **Title:** Fandom Theme
+- **Author:** Fish^12
+- **Source:** https://scp-wiki.wikidot.com/theme:fandom — revision 6
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

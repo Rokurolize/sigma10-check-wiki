@@ -193,3 +193,11 @@ There are no residue blocks. The one heuristic block and the two diff-only label
 
 - **B3** (orig L17 → cand at L19, module-css → body, CSS-BODY, "no other signature matched"): the boundary artefact of the merged module. Orig L17 is the head module's closing line; in the candidate the same head rules end inside the enlarged module and the inlined body begins (the `/* Fonts */` comment at cand L20). Nothing was lost or added at this boundary beyond the inline itself, which section 3 accounts for.
 - **B11** (orig L561 → cand L363–1026, RESTORATION): the two-copy alignment artefact. The differ pairs a single original line against the long candidate span containing the credit block and the exhibit's head; its label spans locate the real insertions: CREDIT-PREVIEW (cand L484–485, L493–494) and TASL-FIELDS (cand L485–493) for the credit block, HEADERVAR (cand L699–703) and CONTENT-STRING (cand L695–696, L744–745, L842–843, L858–859) in the exhibit copy. The RESTORATION label is a diff-only signal; nothing for this theme was deleted and later restored by a wave. The TASL-FIELDS label also fires at cand L674–675, on field-shaped lines in the font-sample documentation region; the theme's only credit block is cand L485–494.
+
+## License and attribution
+
+- **Title:** I57 BHL Theme
+- **Author:** Rounderhouse
+- **Source:** https://scp-wiki.wikidot.com/theme:i57 — revision 41
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

@@ -173,3 +173,11 @@ The candidate's current state is the product of successive waves: the S2 localiz
 - **R2 = B15** (EXHIBIT-RESTRUCTURE + TRANS-UNANCHORED, heuristic): orig 521–529 → cand 1834. Same artifact class as R1.
 - **B14's LICENSE-BOX signature** false-fires on the scp_memo exhibit (candidate L198–209); the file's only license box is B16 at the tail. Recorded so a reader does not go looking for a second license box.
 - Brace balance: a depth scan of the candidate's delivered block (L416–1828) and of the original's CSS module ends at depth 0 with no negative point; the only brace defect in the pair is the original's unclosed exhibit `:root` (L484–487), fixed by the restoration (§6 record above).
+
+## License and attribution
+
+- **Title:** 亚空间传输时代 版式
+- **Author:** Jonuarl Reden
+- **Source:** https://scp-wiki-cn.wikidot.com/theme:gp-refresh — revision 14
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

@@ -216,3 +216,11 @@ The classifier emitted five residue blocks and forty-eight heuristic blocks; all
 - **R6 — B70 (heuristic; orig L235–236 → cand L230–234).** The code exhibit's header region: the porter annotation added inside the exhibit's comment header. Resolved in section 10.
 - **R7 — B71 (heuristic; orig L238–304, deleted).** The 67-line sidebox example collapsible. Resolved in section 8, item (b).
 - **R8 — the remaining heuristic mass (TRANS-UNANCHORED and TRANSLATION-ANCHORED blocks across the body, and the WS-ONLY padding blocks).** The translated documentation prose and the padding compression, interleaved line by line; the classifier's "script delta without the anchor majority" note is the honest label for them. Each region is accounted in sections 6, 8 and 9, and the generator's Tier 2 auto-classification (translation 24 blocks / 61 lines, mechanical 12 / 24) corroborates the split at its coarser grain.
+
+## License and attribution
+
+- **Title:** 我們的彼岸 主題版式
+- **Author:** Mr 09_doctor
+- **Source:** https://scp-wiki-cn.wikidot.com/theme:the-other-side — revision 59
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

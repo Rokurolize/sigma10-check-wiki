@@ -184,3 +184,11 @@ The items above describe this package as built. The repairs recorded below postd
 ## Change set outside the two diffed files
 
 The diff covers two files; the port's record is larger. `pages/phase17-diff-extra-black-highlighter-theme-jp.txt` is the migration deliverable itself (the diff to apply to the production page), and `pages-existing/existing:theme-extra-black-highlighter-theme.txt` is the production copy the adoption was measured against (similarity 0.9557, section 0). `pages/theme-decoration-sample-extra-black-highlighter-theme-jp.txt` is the decoration sample the render checks ran against (its items are section 11(2)). The follow-up diff artifact for the upstream drift since rev 21 (`diff-extra-black-highlighter-theme-from21.txt`) sits in the campaign record, outside this repo. There are no companion fragments for this theme.
+
+## License and attribution
+
+- **Title:** Extra Black Highlighter Theme
+- **Author:** Woedenaz
+- **Source:** https://scp-wiki.wikidot.com/theme:extra-black-highlighter-theme — revision 21 (revision date 2022-09-28 18:16:56)
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: Salty_149 — a human translator credited by the live JP page and retained as the package records it (campaign-rule exception); where the campaign translated, the translator is AI.

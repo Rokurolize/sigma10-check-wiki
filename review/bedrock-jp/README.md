@@ -192,3 +192,11 @@ The classifier emitted 17 open blocks (7 residue, 10 heuristic). All are resolve
 - **R5 — B18–B20, B23, B25, B34, B36–B46, B53–B56 (heuristic).** One-line prose and specimen translations across the examples body. Resolved in section 6 by shape; each was read against its original line.
 - **R6 — B68, B71 (heuristic; orig L228, L237 → cand L236, L245).** The calc() usage note and the "Other" section's source line, translated. Resolved in section 6.
 - **R7 — B65 (heuristic-tier CSS-BODY; orig L204–208 → cand L212–216).** The font exhibit's four stack lines gaining JP fallbacks. The classifier's CSS-BODY label stands as its mechanical reading; the mechanism is the P7 stack rewrite, resolved in section 4.
+
+## License and attribution
+
+- **Title:** Bedrock Theme
+- **Author:** EstrellaYoshte、Liryn、Placeholder McD
+- **Source:** https://scp-wiki.wikidot.com/theme:bedrock — revision 21 (revision date 2024-01-08 13:14:12)
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

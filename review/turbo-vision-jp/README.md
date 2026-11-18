@@ -211,3 +211,11 @@ The items above describe this package as built. The repair recorded below postda
 ## Change set outside the two diffed files
 
 The diff covers two files; this theme's record is three files larger. `pages/phase17-diff-turbo-vision-jp.txt` is the migration delta record the whole K6 claim rests on (per-theme record). `pages-existing/existing:theme-turbo-vision.txt` is the production capture the drift comparison was run against. And `pages/theme-decoration-sample-turbo-vision-jp.txt` is the decoration sample the render checks ran against, whose T2 run returned no machine verdict (section 11). The base relationship runs the other way as well: theme:turbo-vision-dark-jp's candidate (same batch) imports this candidate's two code blocks, so this file is part of that package's record by reference.
+
+## License and attribution
+
+- **Title:** Turbo Vision Theme
+- **Author:** JakdragonX, Croquembouche
+- **Source:** https://scp-wiki.wikidot.com/theme:turbo-vision — revision 54 (revision date 2026-04-12 05:37:45)
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: oplax-counterpoint — a human translator credited by the live JP page and retained as the package records it (campaign-rule exception); where the campaign translated, the translator is AI.

@@ -180,3 +180,11 @@ No component ports, sibling candidates or base-theme candidates belong to this t
 ## Appendix: classifier residue and heuristic adjudication
 
 Classification: 62 blocks, 27 signature-specific, 29 heuristic, 6 residue (classification.json, classify_hunks.py 0.1.0, patterns commit 9c5e9079afb01d30cb9fc4ef9d714e5591eb2ffa). The 6 residue blocks are B3, B4, B7, B12, B59 and B60 (unlabeled). Adjudicated by shape: B3 pairs the deleted banner image line with the added priority-1 frame (the deletion is section 8's banner item; the frame is section 2); B4 pairs the original's rule line with the added priority-2 frame (section 2); B7 is the exhibit logo image's http-to-https scheme upgrade (section 4's asset family); B12 is alignment residue from the credit-block swap, pairing the original's credit:start line against a blank candidate line (section 1); B59 and B60 are blank-line alignment residue at the code block's and the page's closing lines. The 29 heuristic blocks are B2 (head module: import repoints plus the section 8(c) rule loss), B52 (the banner comment, resolved in section 10), B55 (the FIX5 variable stacks, narrated as P7 in section 4), B56/B57 (the two sandbox background scheme upgrades, section 4), B58 (the .code-element stack, section 4), and 23 TRANS-UNANCHORED exhibit blocks (B8, B10, B13, B14, B17, B18, B28-B38, B45-B49, B51) whose translation pairing the anchor pass could not prove (section 6). The FIX5 comment-plus-imports block B53 is signature-specific (JPFONT-LOAD), not heuristic. No heuristic block conceals an unrecorded change.
+
+## License and attribution
+
+- **Title:** 药品监管部 主题版式
+- **Author:** AI_Mayca
+- **Source:** https://scp-wiki-cn.wikidot.com/theme:fmd-bhl-theme — revision 19
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

@@ -151,3 +151,11 @@ A Dustjacket-family theme by Mercuresphere, written for the Wanderers' Library "
 - R2 — B4 (orig L7 → cand L16–17): the original's `====` separator pairs against the empty `[[>]]`/`[[/>]]` pair left when the Rate module was removed. Assigned to section 1.
 - R3 — B11 (orig L770 → cand L772) and R4 — B12 (cand L775): blank-line moves at the code tail. Assigned to section 9.
 - Unanchored translation mass (TRANS-UNANCHORED spans in B1, B2, B5, B6): the CN → JP body translation, which the anchor matcher cannot pair line by line because the body also moved. Resolved by shape: it is the documentation body of section 6, exhibit for exhibit, with no content class of its own.
+
+## License and attribution
+
+- **Title:** 范式不适用 主题版式
+- **Author:** Mercuresphere
+- **Source:** https://scp-wiki-cn.wikidot.com/theme:paradigm-inapplicable — revision 132
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

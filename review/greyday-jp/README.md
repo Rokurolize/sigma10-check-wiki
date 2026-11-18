@@ -173,3 +173,11 @@ The candidate's current state is the product of successive waves: the S2 localiz
 - **B67** (DUPIMPORT-DEL): the label says a duplicated import was deleted; the bytes show the two sandbox webfont imports (original L383–384) removed once each as the font substitution (§4), with Font Awesome's import retained (candidate L338). Adjudicated as a mislabel of the substitution, not a duplicate deletion.
 - **B76** (WS-ONLY): §9.
 - The 44 TRANS-UNANCHORED blocks are the exhibit body's specimen prose (usage text, sample tables, tab and collapsible specimens), each present in both files; the 23 TRANSLATION-ANCHORED blocks are their anchored counterparts. Resolved by shape, as the standing lessons prescribe.
+
+## License and attribution
+
+- **Title:** 灰日 版式
+- **Author:** AI_Mayca
+- **Source:** https://scp-wiki-cn.wikidot.com/theme:greyday — revision 16
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

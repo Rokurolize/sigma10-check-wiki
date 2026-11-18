@@ -116,3 +116,11 @@ FS (scp-jp-storage.wikidot.com) is SCP-JP's attachment-file storage wiki. Its en
 - **Desktop title text.** As recorded in change class 4, after the migration the header reads "SCP-JP ストレージ" at all widths, which differs from the "SCP-JPファイルストレージ" (the site name) that the Sigma-9 desktop showed. This is a consequence of the requirement's chosen replacement string combined with Sigma-10's always-on span hiding, stated here explicitly as a reviewed consequence, not a deployment surprise.
 - **Questions only site-admin access can settle** (carried over from REPORT24 §5, unresolved). In FS's Site Manager settings, whether the imported theme file is the only site-theme source, and which of the served style blocks are the admin Custom CSS field. Whether privileged.css (sid 4548695) is still applied to FS, and whether its user-target hiding is still needed. Whether the migrated override layer will be placed in the imported theme file or in the Custom CSS field.
 - **Verification status, restated.** Everything in this package is source-level: file hashes, the generated diff, rule-by-rule comparison against the two captured bases. The render check the requirement names (「添付ファイルページで確認します」, "verify on an attachment file page"; the check on an attachment file page, the very purpose FS exists for) has not been performed, because the candidate is not yet deployed anywhere a browser can load it. No statement in this package claims rendered behavior.
+
+## License and attribution
+
+- **Title:** Sigma9 Customizable Header — SCP-JP storage site theme.css
+- **Author:** ukwhatn
+- **Source:** https://scp-jp.github.io/files/util/storage/styles/theme.css — static file captured 2026-11-15 (no Wikidot page revision); original notice cites http://scp-jp-sandbox3.wikidot.com/draft:3396310-168-9905
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 port of the site's CSS; changes were made. See "Summary" and "Change classes" in this README for what changed and why. Translator: not applicable — static site CSS, no translated prose; the port is a source-level rewrite.

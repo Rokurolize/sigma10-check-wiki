@@ -179,3 +179,11 @@ No component ports, sibling candidates or base-theme candidates belong to this t
 ## Appendix: classifier residue and heuristic adjudication
 
 Classification: 70 blocks, 41 signature-specific, 29 heuristic, 0 residue (classification.json, classify_hunks.py 0.1.0, patterns commit 9c5e9079afb01d30cb9fc4ef9d714e5591eb2ffa). The 29 heuristic blocks are 26 TRANS-UNANCHORED exhibit blocks whose translation pairing the anchor pass could not prove (section 6), B54 (the FlyFlowerSong @font-face region, resolved in sections 4 and 10), and the CSS-BODY blocks B59 (the Bauhaus stack's Simhei replacement, a P7 stack rewrite, section 4) and B60 (the header logo's scheme upgrade, section 4). The FIX5 comment-plus-imports block B55 is signature-specific (JPFONT-LOAD), not heuristic. No heuristic block conceals an unrecorded change; in particular the DELIVERY question is settled by topology, not by label: the classifier records no relocation, and the head-module removal with tail delivery is described in section 3 from the bytes.
+
+## License and attribution
+
+- **Title:** 我们曾被许诺过的未来 Frutiger Aero主题版式
+- **Author:** Meowait
+- **Source:** https://scp-wiki-cn.wikidot.com/theme:frutiger-aero — revision 24
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

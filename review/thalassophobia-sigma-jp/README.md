@@ -486,3 +486,11 @@ convention they are resolved here by shape, one row per block.
 | B16 | 95 → 97 | Manual section heading translated: `+ Formatting Examples` → `+ 書式例` (section 6, P10). |
 | B49 | 202 → 204 | Exhibit sentence translated around its code tokens: the `darkbox` div explanation, prose JP, punctuation converted (section 6, P10). |
 | B50 | 207 → 209 | The matching `lightbox` exhibit sentence, same shape (section 6, P10). |
+
+## License and attribution
+
+- **Title:** Thalassophobia Theme (Sigma-9)
+- **Author:** TheDarkArtist
+- **Source:** https://scp-wiki.wikidot.com/theme:thalassophobia-sigma — revision 56
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

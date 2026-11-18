@@ -243,3 +243,11 @@ Checker per the report: plain error 5 / warn 0 / info 1 → 5 / 2 / 1 and links 
 - R9-R15 = B25-B31 (orig L130-157 -> cand L137-164, heuristic). Resolution: section 6 — the specimen section's remaining translation pairs (link, image, and formatting specimens), each one-to-one against the mirror; the heuristic label is the script delta, nothing else.
 - R16 = B35 (orig L235 -> cand L233, heuristic) and R17 = B36 (orig L238-240 -> cand L236-238, heuristic). Resolution: section 8 — P7 font-stack rewrites by mechanism (item 51's application half, plus the recorded RedactRect name removal in B35), not unclassified churn.
 - R18 = B41 (orig L1664-1672 -> cand at L1662, heuristic). Resolution: section 8 — the dropped scpnet-interwiki rules, defect D1. The CSS-BODY heuristic label is precisely the gap: a two-rule drop with no signature reads as churn.
+
+## License and attribution
+
+- **Title:** 藏青 版式
+- **Author:** Agent FS
+- **Source:** https://scp-wiki-cn.wikidot.com/theme:darkblue — revision 3
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

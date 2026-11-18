@@ -108,3 +108,11 @@ The port is the single file pages/theme:supply-n-demand-jp.txt; its git history 
 ## Appendix: residue and heuristic resolution
 
 Residue blocks (2 of 35): B8 resolves to section 8 (the added centering opener inside the usage examples, balanced in the candidate's census); B34 resolves to section 9 (the empty file-end difference). Heuristic mass: 15 of the 35 blocks are heuristic, dominated by TRANS-UNANCHORED prose translation across the documentation and the restored showcase, resolved here by shape, with no content change beyond language. Blocks B12 and B13 carry EXHIBIT-RESTRUCTURE labels but are adjudicated as the F1 documentation drop in section 8, not as restructuring. The two HTTP-KEPT firings are adjudicated in section 4 as the data-URI namespace false-fire.
+
+## License and attribution
+
+- **Title:** 供求理论 主题版式
+- **Author:** Chhokmah Lu
+- **Source:** https://scp-wiki-cn.wikidot.com/theme:supply-n-demand — revision 3
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: AI (Muse and its delegated agents), per the campaign's standing attribution rule.

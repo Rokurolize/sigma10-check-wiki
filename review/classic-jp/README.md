@@ -185,3 +185,11 @@ The items above describe this package as built. The repairs recorded below postd
 ## Change set outside the two diffed files
 
 The diff covers two files; this theme's record is the batch's widest. `pages/theme-decoration-sample-classic-jp.txt` is the decoration sample the render checks ran against (its findings are the sample half of section 11(2)). `pages-existing/existing:theme-classic.txt` is the production counterpart (third source, section 0), and `pages/phase17-diff-classic-jp.txt` is its migration deliverable (per-theme record). Neither is edited by this package; both are part of the theme's record. There are no companion fragments and no inbound-link repairs in other candidates for this theme.
+
+## License and attribution
+
+- **Title:** Classic SCP Foundation Theme
+- **Author:** Lt Flops
+- **Source:** https://scp-wiki.wikidot.com/theme:classic — revision 95 (revision date 2026-07-12 20:13:59)
+- **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) — license deed: https://creativecommons.org/licenses/by-sa/3.0/
+- **Adaptation:** This package holds a Sigma-10 migration port of the work; changes were made. See "Summary" and "Standing sections" in this README for what changed and why. Translator: KanekoLiku — a human translator credited by the live JP page and retained as the package records it (campaign-rule exception); where the campaign translated, the translator is AI.
