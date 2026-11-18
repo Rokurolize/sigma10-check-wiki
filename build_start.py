@@ -9,11 +9,24 @@ was created in (the TSV `page` column holds the origin code: jp/en/cn/
 ko/fr). pages/start.txt itself is a hand-maintained hub that links to
 the subpages; it is not generated.
 
-Usage:
-  python3 build_start.py           regenerate the subpages in pages/
-  python3 build_start.py --check   verify pages/ matches the TSV (no writes);
-                                   also checks table contiguity and page size
-  python3 build_start.py --toc     print the hub table-of-contents lines
+Reader-facing fields (STARTFIX lane):
+  * Status = "Prep: <plain prep> / Verdict: <verdict> / Staff: <staff>".
+    Plain prep is a mechanical, total translation of the TSV `seibi`
+    field that drops internal wave codes (EN1/CN9/KO1, "settled in CN1")
+    and renders the Check 5 outcome as plain words, while preserving every
+    real condition or caveat verbatim (see prep_parts()). The TSV itself
+    is never edited.
+    Verdict is sourced mechanically from review/sources.tsv's `verdict`
+    column AND the package's generated verdict stamp: build_review.py's
+    own Records()/assemble_stamp() supply the stamp word (PASS / STALE /
+    NOT PASS / EXCEPTION) and its one-line ground. Both sources are shown,
+    so a porter can see at a glance whether the candidate passed review.
+  * The Theme cell carries the candidate slug alongside the title, so a
+    CN/KO row is findable by slug. The slug comes from review/sources.tsv
+    (cand_fullname, else orig_fullname), the same data the verdict uses.
+  * Rows-per-page was lowered from 54 to 40 because the added reader
+    fields push a 54-row page past the 40,000-character cap; plan_pages()
+    still chunks by origin and keeps every table contiguous.
 
 Row template (proven against the pre-split start.txt: 286 of 287 rows are
 pure template; the exceptions are data, not code):
@@ -39,12 +52,15 @@ contiguous block of || lines with no blank line inside. --check enforces
 this for every generated page.
 """
 import csv
+import importlib.util
 import json
 import os
+import re
 import sys
 
 REPO = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(REPO, "start-themes.tsv")
+SOURCES_DATA = os.path.join(REPO, "review", "sources.tsv")
 PARITY_DATA = os.path.join(REPO, "parity-existing.json")
 PAGES_DIR = os.path.join(REPO, "pages")
 MAX_PAGE_CHARS = 40000
@@ -52,7 +68,7 @@ PARITY_PAGE = "start:wikijump-parity"
 
 WD = "https://sigma10-jp-test.wikidot.com/"
 REVIEW_URL = "https://github.com/Rokurolize/sigma10-check-wiki/tree/main/review/"
-WJ = "https://codex-wsl-maintenance.tail3a09a5.ts.net:8443/"
+WJ = "https://codex-wsl-maintenance.tail3a09a5.ts.net/"
 
 # The subpages are grouped by the branch the theme was created in
 # (its origin), which is the categorization a reader expects: a theme
@@ -70,8 +86,154 @@ ORIGINS = [
     ("ko", "KO-origin themes"),
     ("fr", "FR-origin themes"),
 ]
-MAX_ROWS_PER_PAGE = 54
+# 54 rows/page overflowed the 40,000-char cap once the verdict phrase and
+# the candidate slug were added to each row (measured: en-2 at 39,999
+# bytes before the change). 40 leaves headroom and keeps tables contiguous.
+MAX_ROWS_PER_PAGE = 40
 
+# --- mechanical sources for the reader-facing verdict / slug -------------
+
+_BR = None
+
+
+def build_review():
+    """Import review/build_review.py once, from its canonical repo path.
+
+    Reusing the generator's own Records()/assemble_stamp() is what makes
+    the verdict word and its ground "in build_review.py's terms" rather
+    than a re-implementation that could drift from the record.
+    """
+    global _BR
+    if _BR is None:
+        path = os.path.join(REPO, "review", "build_review.py")
+        spec = importlib.util.spec_from_file_location(
+            "_startfix_build_review", path)
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        _BR = mod
+    return _BR
+
+
+def load_sources():
+    with open(SOURCES_DATA, encoding="utf-8") as f:
+        rows = list(csv.DictReader(f, delimiter="\t"))
+    by_cand = {r["cand_fullname"]: r for r in rows if r["cand_fullname"]}
+    by_orig = {r["orig_fullname"]: r for r in rows if r["orig_fullname"]}
+    return by_cand, by_orig
+
+
+def source_row(r, by_cand, by_orig):
+    """Join one TSV row to its review/sources.tsv row by identity.
+
+    Ordinary rows join on `theme:<cand_slug>` (else `theme:<orig_slug>`).
+    The telecom row's slugs are the short form and build_review.py's own
+    FILE_ALIASES maps them to the long canonical fullname. Amethyst has
+    neither slug, so its origin fullname is lifted from detail_override.
+    """
+    br = build_review()
+    key = ("theme:" + r["cand_slug"] if r["cand_slug"] else
+           "theme:" + r["orig_slug"] if r["orig_slug"] else None)
+    if key:
+        key = br.FILE_ALIASES.get(key, key)
+        if key in by_cand:
+            return by_cand[key]
+        if key in by_orig:
+            return by_orig[key]
+    m = re.search(r"theme:([a-z0-9-]+)", r["detail_override"] or "")
+    if m:
+        k = "theme:" + m.group(1)
+        if k in by_orig:
+            return by_orig[k]
+        if k in by_cand:
+            return by_cand[k]
+    return None
+
+
+_MERGED = re.compile(r"^Complete \(merged in (?:EN|CN|KO)\d+, (.*)\)$")
+_SETTLED = re.compile(r" \(settled in (?:EN|CN|KO)\d+\)$")
+_WAVE_CODE = re.compile(r"(?:EN|CN|KO)\d+")
+
+
+def prep_parts(seibi):
+    """Return (category, reader-facing phrase) for a TSV `seibi` value.
+
+    The mapping is total: every distinct seibi value in start-themes.tsv
+    falls into one of the categories below. Wave codes and "merged in"
+    bookkeeping are dropped; the Check 5 outcome is put in plain words;
+    every real condition or caveat is preserved verbatim.
+    """
+    m = _MERGED.match(seibi)
+    if m:
+        outcome = m.group(1)
+        if outcome == "Check 5 not measured: retired 2026-11-16":
+            return "wave-retired", "Complete (Check 5 retired 2026-11-16; not measured)"
+        if outcome == "Check 5 passed":
+            return "wave-passed", "Complete (Check 5 passed)"
+        return "wave-other", f"Complete ({outcome})"
+    if seibi.startswith("No candidate could be produced"):
+        return "no-candidate", _SETTLED.sub("", seibi)
+    fixed = {
+        "Complete": "complete",
+        "Complete (reference rev recorded)": "reference-rev",
+        "Complete (diff applied)": "diff-applied",
+        "Complete (no reference rev: JP original)": "jp-original",
+    }
+    if seibi in fixed:
+        return fixed[seibi], seibi
+    if seibi.startswith("Complete (") and seibi.endswith(")"):
+        return "condition", seibi
+    return "unclassified", seibi
+
+
+def verdict_parts(fullname, rec, sources_verdict):
+    """Return (stamp word, one-line verdict phrase) for a theme.
+
+    The stamp word and ground come from build_review.py's assemble_stamp;
+    the sources.tsv verdict is appended when it differs from the stamp
+    word (normally PASS vs STALE after the candidate changed). Citations
+    and the 64-hex sha256 are trimmed from the ground for readability; the
+    substantive ground is kept verbatim.
+    """
+    br = build_review()
+    block = br.assemble_stamp(rec, fullname)
+    m = re.search(r"^- Overall:\s*(.*)$", block, re.M)
+    if not m:
+        raise ValueError("no Overall line in stamp for " + fullname)
+    overall = m.group(1).strip()
+    word, dash, ground = overall.partition(" \u2014 ")
+    ground = re.sub(r"\s*\[[^\]]*\]", "", ground).strip()
+    ground = re.sub(r"\s*\(verdict against [^)]*\)", "", ground).strip()
+    if not dash:
+        ground = ""
+    word = word.strip()
+    phrase = f"{word} \u2014 {ground}" if ground else word
+    if sources_verdict and sources_verdict != word:
+        phrase += f" (record verdict: {sources_verdict})"
+    return word, phrase
+
+
+def enrich_rows(rows, by_cand, by_orig, rec):
+    """Attach _slug, _prep, _prep_cat and _verdict to every TSV row."""
+    problems = []
+    br = build_review()
+    for r in rows:
+        s = source_row(r, by_cand, by_orig)
+        if s is None:
+            problems.append(f"no review/sources.tsv row for {r['name']}")
+            continue
+        full = br._norm(s["cand_fullname"] or s["orig_fullname"])
+        try:
+            word, phrase = verdict_parts(full, rec, s["verdict"])
+        except Exception as e:
+            problems.append(f"verdict for {full}: {type(e).__name__}: {e}")
+            continue
+        r["_slug"] = (s["cand_fullname"] or s["orig_fullname"]).split(":")[-1]
+        r["_prep_cat"], r["_prep"] = prep_parts(r["seibi"])
+        r["_verdict"] = phrase
+    return problems
+
+
+# -------------------------------------------------------------- rendering
 
 def plan_pages(by_origin):
     """Return [(fullname, title, rows)] in reading order."""
@@ -104,12 +266,13 @@ def sample_links(slug):
 
 
 def render_row(r):
-    # The row status carries porting/migration state only. The existing
-    # article's Wikijump reproduction state (the TSV `exist` column) is
-    # rendered on the parity ledger page instead (render_parity below):
-    # the tables are the primary porting record, the ledger is the
-    # secondary Wikijump verification record, and the two stay separate.
-    status = f"Prep: {r['seibi']} / Staff: {r['staff']}"
+    # The row status carries porting/migration state plus the mechanical
+    # review verdict. The existing article's Wikijump reproduction state
+    # (the TSV `exist` column) is rendered on the parity ledger page
+    # instead (render_parity below): the tables are the primary porting
+    # record, the ledger is the secondary Wikijump verification record.
+    status = f"Prep: {r['_prep']} / Verdict: {r['_verdict']} / Staff: {r['staff']}"
+    label = r["name"] + (f" ({r['_slug']})" if r.get("_slug") else "")
     if r["detail_override"]:
         detail = r["detail_override"]
     else:
@@ -124,7 +287,7 @@ def render_row(r):
     key = r["cand_slug"] or r["orig_slug"]
     if key and os.path.exists(os.path.join(REPO, "review", key, "README.md")):
         detail += f" / Review: [{REVIEW_URL}{key} review package]"
-    return f"|| {r['name']} || {status} || {detail} ||"
+    return f"|| {label} || {status} || {detail} ||"
 
 
 def render_page(title, rows, navline):
@@ -138,11 +301,12 @@ def render_page(title, rows, navline):
         "A subpage of the theme table of the [[[start|Sigma-10 display-check top page]]]. "
         "How to read the table is in \"How to read this table (theme, status, details)\" on the top page. "
         "The canonical source of this subpage is start-themes.tsv in the Git repository (sigma10-check-wiki), generated by build_start.py. "
+        "The Status column shows Prep (plain-language work state), Verdict (the review verdict from review/sources.tsv and the generated package stamp), and Staff (the staff procedure). "
         f"This subpage has {len(rows)} rows. {navline}",
         "[[/div]]",
         "[[/div]]",
         "",
-        "||~ Theme ||~ Status ||~ Details ||",
+        "||~ Theme (candidate slug) ||~ Status ||~ Details ||",
     ]
     lines += [render_row(r) for r in rows]
     return "\n".join(lines) + "\n"
@@ -227,6 +391,23 @@ def main():
     if set(by_origin) != {code for code, _ in ORIGINS}:
         print(f"origin set mismatch: {sorted(by_origin)}", file=sys.stderr)
         return 1
+    br = build_review()
+    by_cand, by_orig = load_sources()
+    rec = br.Records()
+    problems = enrich_rows(rows, by_cand, by_orig, rec)
+    # The prep mapping must be total and must not leak internal codes.
+    seen = {}
+    for r in rows:
+        cat, phrase = prep_parts(r["seibi"])
+        seen.setdefault(cat, 0)
+        seen[cat] += 1
+        if cat == "unclassified":
+            problems.append(f"unclassified seibi pattern: {r['seibi']!r}")
+        if r.get("_prep") and (_WAVE_CODE.search(r["_prep"]) or "merged in" in r["_prep"]):
+            problems.append(f"wave code survived prep translation: {r['_prep']!r}")
+    if os.environ.get("STARTFIX_PREP_CATEGORIES"):
+        for cat, n in sorted(seen.items()):
+            print(f"PREP-CATEGORY {cat}: {n}")
     plan = plan_pages(by_origin)
     if mode == "--toc":
         for fn, title, chunk in plan:
@@ -247,7 +428,6 @@ def main():
             nav.append(f"Next subpage: [[[{plan[i + 1][0]}|{plan[i + 1][1]}]]]")
         outputs.append((fn, render_page(title, chunk, " / ".join(nav))))
     outputs.append((PARITY_PAGE, render_parity(rows, parity)))
-    problems = []
     expected = {label + ".txt" for label, _ in outputs}
     for name in os.listdir(PAGES_DIR):
         if name.startswith("start:themes-") and name not in expected:
@@ -273,7 +453,8 @@ def main():
             print("PROBLEM:", p)
         return 1
     total = sum(len(chunk) for _, _, chunk in plan)
-    print(f"OK: {total} rows on {len(plan)} subpages + parity ledger")
+    print(f"OK: {total} rows on {len(plan)} subpages + parity ledger; "
+          f"prep categories: {dict(sorted(seen.items()))}")
     return 0
 
 

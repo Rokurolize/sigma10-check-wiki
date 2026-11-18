@@ -8,6 +8,24 @@ This page is the index (top) of the Sigma-10 display-check wikis. The purpose of
 [[/div]]
 [[/div]]
 
++ Overall state (at a glance)
+
+* The theme table has **287 rows** across the origin subpages. review/sources.tsv records a review verdict of **PASS for 286 rows** and **EXCEPTION for 1 row** (Amethyst V2 Layout). The 286 are the pass-eligible population covered by the go-sign; 286 + 1 = 287. The exception still has a row, so the table accounts for all 287 rows.
+* The generated verdict stamp of each review package (review/build_review.py) reports the same underlying result but flags files changed since the verdict head: **PASS 49**, **STALE 237**, **EXCEPTION 1** (49 + 237 + 1 = 287). "STALE" means the candidate's review verdict on record was PASS but the candidate file has changed since it was computed, so that verdict is not carried over and must be re-judged; it is not a new defect. Both the record verdict and the stamp state are shown in each row's Status, so a porter never has to leave the table to know where a candidate stands.
+* Named exceptions, in plain words: **Amethyst V2 Layout** has no port candidate. Its original is a ThemePreviewer shell — the substance is three g2lighter components on another wiki plus about 199 KB of externally hosted CSS, and the JP check wikis do not carry that component set, so there is no standalone page to port or review. **Sigma-10** is not a theme row at all; it is the Sigma-10 JP site theme itself, the environment candidate that this whole wiki pair exists to check. Its "port candidate" is the plain decoration sample with no theme layered on it.
+* Where to start: the already-published pages are the priority verification surface, because what breaks on migration day is the live articles rather than the new port candidates. Begin with the existing-articles index below and the priority statement in "Existing articles (migration targets, priority)"; use the theme tables when doing the porting work itself.
+
++ Glossary of terms used in the tables
+
+* **Prep** — our side's work state for a candidate: recording the reference revision, incorporating upstream diffs, re-scoring. When the work is finished it reads Complete. It is internal bookkeeping rendered in plain words; the integration-wave codes (EN1, CN9, KO1 and so on) are no longer shown, and the retired Check 5 note is written out as a plain phrase.
+* **Check 5** — a retired per-sample interaction measurement. It measured interaction behaviour on each sample page (clicks, hovers, collapsibles and similar controls). It was retired on 2026-11-16 because its defect class is now judged through the render check and the visual checklist; it is not one of the campaign's five review tests (T1–T5) and is no longer run per sample. A record saying "Check 5 passed" means the measurement was taken and passed; "not measured: retired" means the measurement had been retired before that row was processed.
+* **retired** — no longer performed or used. A retired check is kept in the historical record but is not part of the current test set.
+* **Base** — the lineage a theme actually imports or includes: BHL (Black Highlighter), Basalt, Sigma-9, Sigma-10, Flopstyle, standalone, or a base component, sometimes read through a named receiver page.
+* **Reference rev** — the original-language revision the JP version was translated from, as recorded in its credit (first translation, re-translation or first edition). The themed rows carry it; the two JP originals have no reference revision.
+* **localcode** (local--code) — Wikidot's delivery path for a page's own CSS/JavaScript code block. A candidate's local--code URLs point at the display-check wiki and must be rewritten to the production host (scp-jp.wdfiles.com) when the candidate is posted.
+* **localfiles** (local--files) — Wikidot's delivery path for a page's own attachments (images, fonts). These must be moved to SCP-JP storage and their URLs rewritten when the candidate is posted.
+* **port candidate** — the JP port of one individual theme (theme:<slug>-jp) together with its display-check sample. This is the per-theme layer, displayed on top of the Sigma-10 JP site theme (the environment candidate) — a separate layer. Bare 「移植候補」 is avoided precisely because it would conflate the two.
+
 [[div class="content-panel standalone centered"]]
 [[div class="panel-body"]]
 + Existing articles (migration targets, priority)
@@ -18,7 +36,7 @@ The 153 existing pages tagged "theme" on production SCP-JP were imported with th
 
 + How to use this index
 
-* Each row has three columns: Theme / Status / Details. "Status" holds a summary of the prep state and the staff application procedure. "Details" holds the base, the reference rev, links to the original and the port candidate, and the diff page. The theme table is split into subpages reached from the contents below. The Wikijump reproduction state of existing articles is not carried in the theme table; it is kept separate at [[[start:wikijump-parity|Record of Wikijump rendering reproduction]]].
+* Each row has three columns: Theme / Status / Details. "Theme" gives the title and the candidate slug in parentheses, so CN/KO rows are findable by slug. "Status" holds the prep state in plain words, the review verdict (PASS / STALE / NOT PASS / EXCEPTION with its one-line ground, sourced from review/sources.tsv and the generated package stamp), and the staff application procedure. "Details" holds the base, the reference rev, links to the original and the port candidate, and the diff page. The theme table is split into subpages reached from the contents below. The Wikijump reproduction state of existing articles is not carried in the theme table; it is kept separate at [[[start:wikijump-parity|Record of Wikijump rendering reproduction]]].
 * Each theme has two samples, the "original" and the "port candidate", and each has links to its Wikidot and Wikijump versions. The only row without sample links is the Amethyst V2 Layout row; that row links only to the original (the CN branch).
 * The links in each sample's cell are the Wikidot and Wikijump versions of the same sample page. [Wikidot] is the correct rendering, and [Wikijump] is the side under verification.
 * Every sample page and theme page has this page (start) set as its parent page. You can return here at any time through the breadcrumb list.
@@ -27,9 +45,9 @@ The 153 existing pages tagged "theme" on production SCP-JP were imported with th
 + Display-check pages
 
 ||~ Page ||~ Links ||~ Notes ||
-|| Theme decoration sample page (plain) || [https://sigma10-jp-test.wikidot.com/theme-decoration-sample Wikidot] / [https://codex-wsl-maintenance.tail3a09a5.ts.net:8443/theme-decoration-sample Wikijump] || A plain sample with no theme layered on it. Its display as-is under the site theme (Sigma-10 JP) is itself the Sigma-10 JP check. ||
-|| SCP-002-J || [https://sigma10-jp-test.wikidot.com/scp-002-j Wikidot] / [https://codex-wsl-maintenance.tail3a09a5.ts.net:8443/scp-002-j Wikijump] || An article page including classification decoration, a rating module, and a credit block. ||
-|| SCP-9972 || [https://sigma10-jp-test.wikidot.com/scp-9972 Wikidot] / [https://codex-wsl-maintenance.tail3a09a5.ts.net:8443/scp-9972 Wikijump] || An article page including a rating module and an image block. ||
+|| Theme decoration sample page (plain) || [https://sigma10-jp-test.wikidot.com/theme-decoration-sample Wikidot] / [https://codex-wsl-maintenance.tail3a09a5.ts.net/theme-decoration-sample Wikijump] || A plain sample with no theme layered on it. Its display as-is under the site theme (Sigma-10 JP) is itself the Sigma-10 JP check. ||
+|| SCP-002-J || [https://sigma10-jp-test.wikidot.com/scp-002-j Wikidot] / [https://codex-wsl-maintenance.tail3a09a5.ts.net/scp-002-j Wikijump] || An article page including classification decoration, a rating module, and a credit block. ||
+|| SCP-9972 || [https://sigma10-jp-test.wikidot.com/scp-9972 Wikidot] / [https://codex-wsl-maintenance.tail3a09a5.ts.net/scp-9972 Wikijump] || An article page including a rating module and an image block. ||
 
 + Per-theme decoration samples
 
@@ -37,16 +55,18 @@ This page is a check page that @@[[include]]@@s each theme's original-language (
 
 + Contents (theme-table subpages)
 
-The theme table (287 rows) is split into subpages by the branch each theme was created in (its origin). Each subpage's table is a single table, ordered by sample-page slug. For themes posted on SCP-JP, the origin was judged by the branch tag on the production theme page (en, jp, cn, ko, and so on). Whether a theme is posted is visible from the "Existing page" link in each row's Details and from the staff procedure in Status (whether it is applied to an existing page or posted as a new page). The integration-wave work categories (EN1, CN3, and so on) remain recorded in each row's Prep.
+The theme table (287 rows) is split into subpages by the branch each theme was created in (its origin). Each subpage's table is a single table, ordered by sample-page slug. For themes posted on SCP-JP, the origin was judged by the branch tag on the production theme page (en, jp, cn, ko, and so on). Whether a theme is posted is visible from the "Existing page" link in each row's Details and from the staff procedure in Status (whether it is applied to an existing page or posted as a new page). Prep is rendered in plain words: internal integration-wave codes (EN1, CN3, and so on) are not shown, and the retired Check 5 note is written out as a plain phrase. The wave data itself is untouched in start-themes.tsv.
 
 * [[[start:themes-jp|Theme table (JP-origin themes)]]] (2 rows, of which 2 posted on SCP-JP, min-theme to shushuin)
-* [[[start:themes-en-1|Theme table (EN-origin themes 1/3)]]] (53 rows, of which 7 posted on SCP-JP, 3law-pride to febris-pharmaceuticals-theme)
-* [[[start:themes-en-2|Theme table (EN-origin themes 2/3)]]] (52 rows, of which 13 posted on SCP-JP, fish to plant)
-* [[[start:themes-en-3|Theme table (EN-origin themes 3/3)]]] (52 rows, of which 7 posted on SCP-JP, prom-labs to yossistyle)
-* [[[start:themes-cn-1|Theme table (CN-origin themes 1/2)]]] (44 rows, amethyst-v2 to marchen)
-* [[[start:themes-cn-2|Theme table (CN-origin themes 2/2)]]] (43 rows, mox to yore)
+* [[[start:themes-en-1|Theme table (EN-origin themes 1/4)]]] (40 rows, of which 6 posted on SCP-JP, 3law-pride to dark-dealings)
+* [[[start:themes-en-2|Theme table (EN-origin themes 2/4)]]] (39 rows, of which 6 posted on SCP-JP, darkqueer to lampeter-warm)
+* [[[start:themes-en-3|Theme table (EN-origin themes 3/4)]]] (39 rows, of which 10 posted on SCP-JP, laruetheme to scp-human-resources-sigma)
+* [[[start:themes-en-4|Theme table (EN-origin themes 4/4)]]] (39 rows, of which 5 posted on SCP-JP, scp-offices-sigma to yossistyle)
+* [[[start:themes-cn-1|Theme table (CN-origin themes 1/3)]]] (29 rows, Amethyst V2 Layout to foundom)
+* [[[start:themes-cn-2|Theme table (CN-origin themes 2/3)]]] (29 rows, frutiger-aero to progress-institute)
+* [[[start:themes-cn-3|Theme table (CN-origin themes 3/3)]]] (29 rows, redsquare to yore)
 * [[[start:themes-ko|Theme table (KO-origin themes)]]] (40 rows, 07k to the-greatest-education)
-* [[[start:themes-fr|Theme table (FR-origin themes)]]] (1 row, quand-le-soleil-se-couche)
+* [[[start:themes-fr|Theme table (FR-origin themes)]]] (1 row, of which 1 posted on SCP-JP, quand-le-soleil-se-couche to quand-le-soleil-se-couche)
 
 + Record of Wikijump rendering reproduction (secondary verification)
 
@@ -56,14 +76,14 @@ For the 153 existing articles, a record of whether Wikijump reproduces the Wikid
 
 + How to read this table (theme, status, details)
 
-* "Theme" is the subject. "Status" holds a summary of the prep state and the staff application procedure. "Details" holds the base, the reference rev, the existing page, links to the original and port candidate samples, and the diff page.
+* "Theme" is the subject: the title plus the candidate slug in parentheses. "Status" holds the prep state in plain words, the review verdict with its one-line ground, and the staff application procedure. "Details" holds the base, the reference rev, the existing page, links to the original and port candidate samples, and the diff page.
 * The state of an existing article itself is not carried in the theme row. The link to the existing page for each theme is in the "Existing page" part of Details, and its Wikijump reproduction state (match / mismatch) is brought together at [[[start:wikijump-parity|Record of Wikijump rendering reproduction]]].
 * The "original" is a sample that @@[[include]]@@s the original-language (or origin-branch) theme page into a page of this check wiki and renders it on this wiki's Sigma-10 JP environment. Because it is not the original-language page itself, it can behave differently from the original-language page (measured 2026-11-15: EN's Aesthetic page is clickable, but the EN include specimen in this environment is not clickable). The final place to check a theme's own behavior is each theme's original-language (home) page.
 * The "port candidate" is a sample with that theme's JP port applied.
 * The common procedure for posting a port candidate to production SCP-JP: references inside a candidate that point at the display-check wiki (sigma10-jp-test) cannot be brought into production as they are. Rewrite the URLs of the candidate's own code (local--code) to the production host (scp-jp.wdfiles.com). Rewrite the URLs of the candidate's own attachments (local--files) after moving the files to production. Move images and fonts hosted on hosts other than SCP-JP storage to SCP-JP storage or a permitted CDN. Rewrite SCP-JP storage URLs that use http:// to https://.
 * "Base" is the lineage a theme actually @imports / includes. The main values are BHL (Black Highlighter), Basalt, Sigma-9, Sigma-10, Flopstyle, standalone, and base component; where the base is read through a receiving page, that page name is recorded alongside. Flopstyle is treated as an independent theme base. "BHL (self-assembled)" means the theme belongs to the BHL family but does not read BHL's CDN directly and is assembled from its own composition (Monotypical).
 * "Reference rev" is the reference revision at first translation / re-translation / first edition recorded in the JP version's credit (including the reference edition under the old notation). It is recorded for 284 of 286 rows; the remaining 2 rows are JP originals and have no reference rev.
-* "Prep state" is our side's work state (recording the reference revision, incorporating diffs, re-scoring). When the work is done, it becomes "Complete".
+* "Prep state" is our side's work state (recording the reference revision, incorporating diffs, re-scoring). When the work is done, it becomes "Complete". It is rendered in plain words: wave codes are not shown and the retired Check 5 measurement is written out as a plain phrase; see the glossary above.
 * "Staff application procedure" is the operation SCP-JP staff actually perform after the materials are complete. The summary is in Status, and the link to the diff page is in Details.
 * The "Sigma-10" row is not a theme row; it points at this check environment itself (the Sigma-10 JP site theme, the migration candidate). That row's "port candidate" is the plain decoration sample with no theme layered on it (theme-decoration-sample).
 * In the "Quand le soleil se couche" row, the original and the port candidate are the same page. Because this theme's JP version has no independent local theme page, the original page itself doubles as the port candidate.
