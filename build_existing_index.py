@@ -38,10 +38,10 @@ PARITY = REPO / "parity-existing.json"
 TSV = REPO / "start-themes.tsv"
 
 STATUS_INTRO = (
-    "* 各行の「状態・手続き」は、Wikijump側の描画再現状態（再現状態）、移行時の手続き（移行手続き）、および記録の種別（記録）です。"
-    "再現状態は [[[start:wikijump-parity|Wikijump描画再現の記録]]] と review/existing-pages/README.md から、"
-    "移行手続きは start-themes.tsv のスタッフ適用手続きと同READMEのクロスリファレンスから機械的に生成されています（build_existing_index.py）。"
-    "行に手続きが書かれていない場合はソース変更なし。そのまま維持。記録欄が空の場合は描画再現記録のみ。"
+    "* 手続き欄が空の場合はソース変更なし・そのまま維持、記録欄が空の場合は描画再現記録のみです。"
+    "各行の「状態・手続き」は、Wikijump側の描画再現状態（再現状態）、移行時の手続き（移行手続き）、記録の種別（記録）の三欄です。"
+    "各値は [[[start:wikijump-parity|Wikijump描画再現の記録]]] と review/existing-pages/README.md、"
+    "および start-themes.tsv のスタッフ適用手続きと同READMEのクロスリファレンスから、build_existing_index.py が機械的に生成しています。"
 )
 HEADER_ROW = "||~ ページ ||~ タイトル ||~ リンク ||~ 状態・手続き ||"
 MARKER = "各行の「状態・手続き」"
@@ -66,6 +66,14 @@ PROC_JP = {
     "No change (keep as-is)": "変更なし（そのまま維持）",
     "Apply the diff page to the existing page": "既存ページに差分ページを適用",
     "Legacy record; no action (keep as-is)": "記録用レコード；対応不要（そのまま維持）",
+}
+# Staff procedures that mean "nothing to do" (wave 3 adjudication E). Kept in
+# step with build_start.py's NO_CHANGE_PROC; a row with one of these never
+# carries a Diff link, even when the TSV records that a diff page exists.
+NO_CHANGE_PROC = {
+    "No change (keep as-is)",
+    "No source change at migration; keep as-is",
+    "No action (no port candidate)",
 }
 
 
@@ -108,7 +116,10 @@ def load_staff():
                 continue
             proc = r["staff"] or "No change (keep as-is)"
             diff = ""
-            if r["diff"] == "1":
+            # BREVITY wave 3 adjudication E (same class as build_start.py's
+            # row grammar): a no-change procedure carries no Diff link. The
+            # TSV `diff` field keeps the evidence that a diff page exists.
+            if r["diff"] == "1" and proc not in NO_CHANGE_PROC:
                 diff = f"[[[phase17-diff-{r['orig_slug']}-jp|差分ページ]]]"
             out[r["existing"].replace(":", "-")] = (r["exist"], proc, diff)
     return out
@@ -174,12 +185,15 @@ def status_cell(fullname, xrefs, parity, staff):
         proc = jp_proc("No source change at migration; keep as-is")
     kind, xref = xrefs.get(fullname, ("unknown", "no record"))
     record = jp_record(short_xref(xref))
-    if kind.startswith("old"):
-        proc = jp_proc("Legacy record; no action (keep as-is)")
     # BREVITY finding 4: the two default values are stated once in 概要 above.
     # A default cell is left empty so the rows that need action stand out.
     default_proc = jp_proc("No source change at migration; keep as-is")
     default_rec = jp_record("no theme row; parity record only")
+    if kind.startswith("old"):
+        # BREVITY wave 3 adjudication D: the legacy "no action" fact belongs
+        # to the record kind; leave the procedure at its default so it is
+        # omitted here instead of stated twice in the same row.
+        proc = default_proc
     parts = [f"再現状態: {jp_repro(repro)}"]
     if proc != default_proc:
         parts.append(f"移行手続き: {proc}")

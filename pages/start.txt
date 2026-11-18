@@ -4,7 +4,7 @@
 
 [[div class="content-panel standalone centered"]]
 [[div class="panel-body"]]
-This page is the index (top) of the Sigma-10 display-check wikis: for each theme it brings together the original and the port candidate (JP port) samples, the prep state, and the staff procedure. The same content is placed on both the Wikidot side (sigma10-jp-test) and the Wikijump side (SCP-JP Sigma-10); [Wikidot] is the correct rendering and [Wikijump] is the side under verification. The record of how far Wikijump reproduces the existing articles is kept separately at [[[start:wikijump-parity|Record of Wikijump rendering reproduction]]].
+This page is the index (top) of the Sigma-10 display-check wikis: for each theme it brings together the original and the port candidate (JP port) samples, the prep state, and the staff procedure. The same content is placed on both the Wikidot side (sigma10-jp-test) and the Wikijump side (SCP-JP Sigma-10); [Wikidot] is the correct rendering and [Wikijump] is the side under verification. The record of how far Wikijump reproduces the existing articles is kept separately in the Record of Wikijump rendering reproduction.
 [[/div]]
 [[/div]]
 
@@ -14,45 +14,7 @@ This page is the index (top) of the Sigma-10 display-check wikis: for each theme
 * Generated verdict stamp (review/build_review.py): **PASS 49**, **STALE 237**, **EXCEPTION 1** (49 + 237 + 1 = 287).
 * **Ruling on STALE rows — post them; do not re-judge.** Every change made to a candidate after its verdict landed through the campaign's recorded, verified repair waves, and each is noted in its review package. The record verdict therefore stands, and a STALE row is read and posted exactly like a PASS row: its Status shows the record verdict (PASS) with the stamp word STALE, and its package records the repair. STALE is not a new defect and is not a reason to hold a row back; it is the stamp honestly marking a file that changed after the verdict. The stamp regions themselves stay factual and are not edited.
 * Named exceptions, in plain words: **Amethyst V2 Layout** has no port candidate. Its original is a ThemePreviewer shell — the substance is three g2lighter components on another wiki plus about 199 KB of externally hosted CSS, and the JP check wikis do not carry that component set, so there is no standalone page to port or review. **Sigma-10** is not a theme row at all; it is the Sigma-10 JP site theme itself, the environment candidate that this whole wiki pair exists to check. Its "port candidate" is the plain decoration sample with no theme layered on it.
-* Where to start: the already-published pages are the priority verification surface, because what breaks on migration day is the live articles rather than the new port candidates. Begin with the existing-articles index below and the priority statement in "Existing articles (migration targets, priority)"; use the theme tables when doing the porting work itself.
-
-+ Posting a port candidate to production SCP-JP
-
-References inside a candidate that point at the display-check wiki (sigma10-jp-test) cannot be brought into production as they are. Rewrite the URLs of the candidate's own code (local--code) to the production host (scp-jp.wdfiles.com). Rewrite the URLs of the candidate's own attachments (local--files) after moving the files to production. Move images and fonts hosted on hosts other than SCP-JP storage to SCP-JP storage or a permitted CDN. Rewrite SCP-JP storage URLs that use http:// to https://. Obtain the candidate source text from the repository's `pages/<fullname>` file, which is byte-identical to the package's `candidate.txt`. After posting, check that the posted page's source matches the candidate bytes and that the theme's sample page renders with the theme applied.
-
-+ Glossary of terms used in the tables
-
-* **Prep** — our side's work state for a candidate: recording the reference revision, incorporating upstream diffs, re-scoring. When the work is finished it reads Complete. It is internal bookkeeping rendered in plain words; the integration-wave codes (EN1, CN9, KO1 and so on) are no longer shown.
-* **Check 5** — a retired per-sample measurement (retired 2026-11-16). Mentions in row records are historical; no action.
-* **Base** — the lineage a theme actually imports or includes: BHL (Black Highlighter), Basalt, Sigma-9, Sigma-10, Flopstyle, standalone, or a base component, sometimes read through a named receiver page. Flopstyle is treated as an independent theme base; "BHL (self-assembled)" means the theme belongs to the BHL family but does not read BHL's CDN directly and is assembled from its own composition (Monotypical).
-* **Reference rev** — the original-language revision the JP version was translated from, as recorded in its credit (first translation, re-translation or first edition). It is recorded for 284 of 286 rows; the two JP originals have no reference revision.
-* **localcode** (local--code) — Wikidot's delivery path for a page's own CSS/JavaScript code block. A candidate's local--code URLs point at the display-check wiki and must be rewritten to the production host (scp-jp.wdfiles.com) when the candidate is posted.
-* **localfiles** (local--files) — Wikidot's delivery path for a page's own attachments (images, fonts). These must be moved to SCP-JP storage and their URLs rewritten when the candidate is posted.
-* **port candidate** — the JP port of one individual theme (theme:<slug>-jp) together with its display-check sample. This is the per-theme layer, displayed on top of the Sigma-10 JP site theme (the environment candidate) — a separate layer. Bare 「移植候補」 is avoided precisely because it would conflate the two.
-* **STALE** — a verdict-stamp state; see the ruling in "Overall state (at a glance)".
-* **Notation in the review packages** — package prose uses campaign shorthand (KB pattern ids, P-numbers, T1–T5, class (i)/(ii)/(iii) and wave names) that this glossary does not expand. The plain-word key is [[[https://github.com/Rokurolize/sigma10-check-wiki/blob/main/review/HOW-TO-READ.md|package notation key]]].
-
-[[div class="content-panel standalone centered"]]
-[[div class="panel-body"]]
-+ Existing articles (migration targets, priority)
-The 153 existing pages tagged "theme" on production SCP-JP were imported with their production sources unchanged. The breakdown is 126 theme pages, 20 components, and 7 old records. This is an import list of production pages, on a different axis from the theme table organized by origin branch (only 30 of the 153 have a row in the theme table).
-[[[existing:index|Existing articles index (secondary reference)]]]
-[[/div]]
-[[/div]]
-
-+ How to use this index
-
-* Each row has three columns: Theme / Status / Details. "Theme" gives the title and the candidate slug in parentheses, so CN/KO rows are findable by slug. "Status" holds the prep state in plain words, the review verdict (PASS / STALE / NOT PASS / EXCEPTION with its one-line ground, sourced from review/sources.tsv and the generated package stamp), and the staff application procedure. "Details" holds the base, the reference rev, links to the original and the port candidate, and the diff page. The theme table is split into subpages reached from the contents below.
-* Each theme has two samples, the "original" and the "port candidate", with links to its Wikidot and Wikijump versions. The "original" is a check page that @@[[include]]@@s the original-language (or origin-branch) theme page into this wiki and renders it on this wiki's Sigma-10 JP environment, layered on the decoration-sample body; it is not a display of the original-language page itself. Because it is not that page, it can behave differently (measured 2026-11-15: EN's Aesthetic page is clickable, but the EN include specimen in this environment is not clickable); the final place to check a theme's own behavior is its original-language (home) page.
-* Each theme sample page opens with the theme's own documentation, followed by the shared decoration-sample body, so a porter comparing samples should expect those two layers in that order.
-* Every sample page and theme page has this page (start) set as its parent page. You can return here at any time through the breadcrumb list.
-
-+ Display-check pages
-
-||~ Page ||~ Links ||~ Notes ||
-|| Theme decoration sample page (plain) || [https://sigma10-jp-test.wikidot.com/theme-decoration-sample Wikidot] / [https://codex-wsl-maintenance.tail3a09a5.ts.net/theme-decoration-sample Wikijump] || A plain sample with no theme layered on it. Its display as-is under the site theme (Sigma-10 JP) is itself the Sigma-10 JP check. ||
-|| SCP-002-J || [https://sigma10-jp-test.wikidot.com/scp-002-j Wikidot] / [https://codex-wsl-maintenance.tail3a09a5.ts.net/scp-002-j Wikijump] || An article page including classification decoration, a rating module, and a credit block. ||
-|| SCP-9972 || [https://sigma10-jp-test.wikidot.com/scp-9972 Wikidot] / [https://codex-wsl-maintenance.tail3a09a5.ts.net/scp-9972 Wikijump] || An article page including a rating module and an image block. ||
+* Where to start: the already-published pages are the priority verification surface, because what breaks on migration day is the live articles rather than the new port candidates. Begin with the existing-articles index below and the "Existing articles (migration targets, priority)" section; use the theme tables when doing the porting work itself.
 
 + Contents (theme-table subpages)
 
@@ -69,6 +31,42 @@ The theme table (287 rows) is split into subpages by the branch each theme was c
 * [[[start:themes-ko|Theme table (KO-origin themes)]]] (40 rows, 07k to the-greatest-education)
 * [[[start:themes-fr|Theme table (FR-origin themes)]]] (1 row, of which 1 posted on SCP-JP, quand-le-soleil-se-couche to quand-le-soleil-se-couche)
 
++ Posting a port candidate to production SCP-JP
+
+Obtain the candidate source text from the repository's `pages/<fullname>` file, which is byte-identical to the package's `candidate.txt`. After posting, check that the posted page's source matches the candidate bytes and that the theme's sample page renders with the theme applied. References inside a candidate that point at the display-check wiki (sigma10-jp-test) cannot be brought into production as they are. Rewrite the URLs of the candidate's own code (local--code) to the production host (scp-jp.wdfiles.com). Rewrite the URLs of the candidate's own attachments (local--files) after moving the files to production. Move images and fonts hosted on hosts other than SCP-JP storage to SCP-JP storage or a permitted CDN. Rewrite SCP-JP storage URLs that use http:// to https://.
+
++ Glossary of terms used in the tables
+
+* **Prep** — our side's work state for a candidate: recording the reference revision, incorporating upstream diffs, re-scoring. When the work is finished it reads Complete. It is internal bookkeeping rendered in plain words; the integration-wave codes (EN1, CN9, KO1 and so on) are no longer shown.
+* **Check 5** — a retired per-sample measurement (retired 2026-11-16). Mentions in row records are historical; no action.
+* **Base** — the lineage a theme actually imports or includes: BHL (Black Highlighter), Basalt, Sigma-9, Sigma-10, Flopstyle, standalone, or a base component, sometimes read through a named receiver page. Flopstyle is treated as an independent theme base; "BHL (self-assembled)" means the theme belongs to the BHL family but does not read BHL's CDN directly and is assembled from its own composition (Monotypical).
+* **Reference rev** — the original-language revision the JP version was translated from, as recorded in its credit (first translation, re-translation or first edition). It is recorded for 284 of 286 rows; the two JP originals have no reference revision.
+* **localcode** (local--code) — Wikidot's delivery path for a page's own CSS/JavaScript code block. A candidate's local--code URLs point at the display-check wiki and must be rewritten to the production host (scp-jp.wdfiles.com) when the candidate is posted.
+* **localfiles** (local--files) — Wikidot's delivery path for a page's own attachments (images, fonts). These must be moved to SCP-JP storage and their URLs rewritten when the candidate is posted.
+* **port candidate** — the JP port of one individual theme (theme:<slug>-jp) together with its display-check sample. This is the per-theme layer, displayed on top of the Sigma-10 JP site theme (the environment candidate) — a separate layer. Bare 「移植候補」 is avoided precisely because it would conflate the two.
+* **STALE** — a verdict-stamp state; see the ruling in "Overall state (at a glance)".
+* **Notation in the review packages** — package prose uses campaign shorthand (KB pattern ids, P-numbers, T1–T5, class (i)/(ii)/(iii) and wave names) that this glossary does not expand. The plain-word key is [[[https://github.com/Rokurolize/sigma10-check-wiki/blob/main/review/HOW-TO-READ.md|package notation key]]].
+
++ How to use this index
+
+* Each row has three columns: Theme / Status / Details. "Theme" gives the title and the candidate slug in parentheses, so CN/KO rows are findable by slug. "Status" holds the prep state in plain words, the review verdict and its one-line ground, and the staff application procedure; the verdict vocabulary and its sources are given in Overall state and the Glossary. "Details" holds the base, the reference rev, links to the original and the port candidate, and the diff page. The theme table is split into subpages reached from the contents above.
+* Each theme has two samples, the "original" and the "port candidate", with links to its Wikidot and Wikijump versions. The "original" is a check page that @@[[include]]@@s the original-language (or origin-branch) theme page into this wiki and renders it on this wiki's Sigma-10 JP environment, layered on the decoration-sample body; it opens with the theme's own documentation, followed by the shared decoration-sample body, and it is not a display of the original-language page itself. Because it is not that page, it can behave differently; the final place to check a theme's own behavior is its original-language (home) page.
+
+[[div class="content-panel standalone centered"]]
+[[div class="panel-body"]]
++ Existing articles (migration targets, priority)
+The 153 existing pages tagged "theme" on production SCP-JP were imported with their production sources unchanged. The breakdown is 126 theme pages, 20 components, and 7 old records. This is an import list of production pages, on a different axis from the theme table organized by origin branch (only 30 of the 153 have a row in the theme table).
+[[[existing:index|Existing articles index (secondary reference)]]]
+[[/div]]
+[[/div]]
+
++ Display-check pages
+
+||~ Page ||~ Links ||~ Notes ||
+|| Theme decoration sample page (plain) || [https://sigma10-jp-test.wikidot.com/theme-decoration-sample Wikidot] / [https://codex-wsl-maintenance.tail3a09a5.ts.net/theme-decoration-sample Wikijump] || A plain sample with no theme layered on it. Its display as-is under the site theme (Sigma-10 JP) is itself the Sigma-10 JP check. ||
+|| SCP-002-J || [https://sigma10-jp-test.wikidot.com/scp-002-j Wikidot] / [https://codex-wsl-maintenance.tail3a09a5.ts.net/scp-002-j Wikijump] || An article page including classification decoration, a rating module, and a credit block. ||
+|| SCP-9972 || [https://sigma10-jp-test.wikidot.com/scp-9972 Wikidot] / [https://codex-wsl-maintenance.tail3a09a5.ts.net/scp-9972 Wikijump] || An article page including a rating module and an image block. ||
+
 + Record of Wikijump rendering reproduction (secondary verification)
 
 For the 153 existing articles, a record of whether Wikijump reproduces the Wikidot rendering (match / mismatch).
@@ -77,11 +75,11 @@ For the 153 existing articles, a record of whether Wikijump reproduces the Wikid
 
 + Site-operations wikis (not themes; migration targets)
 
-SB3 and FS are not theme names; they are SCP-JP operations wikis. On 2026-11-15, the CSS actually being served was fetched and checked (the REPORT24 measurements). Under Sigma-10, on both wikis, the header fixes "SCP財団" with a pseudo-element and hides the site name's h1 span. Re-expressing the site name and the subtitle is therefore mandatory. Each site package has a public review package on GitHub, linked in the first column. Neither package has a display-check sample page on the check wikis yet, so the procedure note in each row says where verification happens.
+SB3 and FS are not theme names; they are SCP-JP operations wikis. Under Sigma-10, on both wikis, the header fixes "SCP財団" with a pseudo-element and hides the site name's h1 span. Re-expressing the site name and the subtitle is therefore mandatory. Each site package has a public review package on GitHub, linked in the first column. Neither package has a display-check sample page on the check wikis yet, so the procedure note in each row says where verification happens.
 
 ||~ Wiki (package) ||~ Current composition (served CSS) ||~ Sigma-10 migration requirements ||
-|| [[[https://github.com/Rokurolize/sigma10-check-wiki/blob/main/review/scp-jp-sandbox3|SB3 package (scp-jp-sandbox3)]]] || Sigma-9 full fork + management CSS; full inventory in the package. || Base it on Sigma-10 and layer the overrides on top. The green accents, the sandbox images, the narrow-width search-box position, the top-bar placement, and the sidebar width are re-expressed with the new selectors (because they conflict with Sigma-10's red, 13.75rem, and the fixed "SCP財団"). Reset the site name "SCP-JPサンドボックスⅢ" and the h2 subtitle in the header. Decide the handling of FontAwesome 4.7. Keep the management CSS's hiding of the top bar. Check on a draft page. Procedure: apply the package's `candidate.css` over Sigma-10 as its review package records, then verify on a draft page; no check-wiki sample page exists yet. ||
-|| [[[https://github.com/Rokurolize/sigma10-check-wiki/blob/main/review/scp-jp-storage|FS package (scp-jp-storage)]]] || Sigma-9 + storage overrides + privileged.css; full inventory in the package. || Base it on Sigma-10. The header background, gradient, and overlay conflict with Sigma-10's header and top bar, so re-express them. Replace the fixed "SCP財団" pseudo-element with "SCP-JP ストレージ", and adapt the mobile span hiding to the new structure. Keep the top-bar hiding adjustments and privileged.css. Check on an attachment file page. Procedure: apply the package's `candidate.css` over Sigma-10 as its review package records, then verify on an attachment file page; no check-wiki sample page exists yet. ||
+|| [[[https://github.com/Rokurolize/sigma10-check-wiki/blob/main/review/scp-jp-sandbox3|SB3 package (scp-jp-sandbox3)]]] || Sigma-9 full fork + management CSS; full inventory in the package. || Base it on Sigma-10 and layer the overrides on top. The green accents, the sandbox images, the narrow-width search-box position, the top-bar placement, and the sidebar width are re-expressed with the new selectors. Reset the site name "SCP-JPサンドボックスⅢ" and the h2 subtitle in the header. Decide the handling of FontAwesome 4.7. Keep the management CSS's hiding of the top bar. Check on a draft page. Procedure: apply the package's `candidate.css` over Sigma-10 as its review package records, then verify on a draft page; no check-wiki sample page exists yet. ||
+|| [[[https://github.com/Rokurolize/sigma10-check-wiki/blob/main/review/scp-jp-storage|FS package (scp-jp-storage)]]] || Sigma-9 + storage overrides + privileged.css; full inventory in the package. || Base it on Sigma-10. The header background, gradient, and overlay conflict with Sigma-10's header and top bar, so re-express them. Set the header title to "SCP-JP ストレージ", and adapt the mobile span hiding to the new structure. Keep the top-bar hiding adjustments and privileged.css. Check on an attachment file page. Procedure: apply the package's `candidate.css` over Sigma-10 as its review package records, then verify on an attachment file page; no check-wiki sample page exists yet. ||
 
 + Comparison references
 

@@ -27,8 +27,8 @@ Reader-facing fields (STARTFIX lane; BREVITY wave short forms):
     stated once in each subpage header and once on the top page, not
     re-printed in all 237 rows (BREVITY review finding 1). A fresh PASS row
     renders as the short "PASS"; the sweep-level fact its old clause carried
-    ("passed at the ledger determination; no OPEN items") is stated once in
-    each subpage header and once on the top page (BREVITY wave 2 adjudication 5).
+    ("passed at the ledger determination; no OPEN items") is stated once on
+    the top page in Overall state (BREVITY wave 2 adjudication 5; wave 3 A).
   * The Theme cell carries the candidate slug alongside the title, so a
     CN/KO row is findable by slug. The slug comes from review/sources.tsv
     (cand_fullname, else orig_fullname), the same data the verdict uses.
@@ -142,23 +142,30 @@ ROW_NOTES = {
     ),
 }
 
+# BREVITY wave 3 adjudication E: a no-change Staff procedure must not carry a
+# Diff link. The TSV `diff` field still records that a diff page exists (the
+# evidence layer); this only removes a surplus link from a row that says there
+# is nothing to do (theme:space and theme:turbo-vision are the named cases).
+NO_CHANGE_PROC = {
+    "No change (keep as-is)",
+    "No source change at migration; keep as-is",
+    "No action (no port candidate)",
+}
+
 # Grounds stated once per subpage header (BREVITY finding 1): the row forms
-# carry only the short forms, these lines carry the two justifications.
+# carry only the short forms, this line carries the justification. The Check 5
+# line is a pointer; its full definition lives in the top-page Glossary.
 HEADER_STALE_GROUND = (
     "Stamp STALE = candidate revised after the verdict through recorded "
     "repairs; the record verdict stands and the row is posted like PASS "
     "(ruling on the top page). "
 )
 HEADER_CHECK5_GROUND = (
-    "Check 5 = a per-sample measurement retired 2026-11-16; mentions in "
-    "records are historical; no action. "
+    "Check 5 = a retired per-sample measurement (see the top page). "
 )
-# BREVITY wave 2 adjudication 5: the sweep-level fact formerly repeated in
-# all 49 fresh PASS rows' verdict clauses is stated once here and once on
-# the top page, so the commonest verdict renders as the short "PASS".
-HEADER_PASS_GROUND = (
-    "A fresh PASS row passed at the ledger determination with no OPEN items. "
-)
+# BREVITY wave 3 adjudication A: the fresh-PASS ground is no longer repeated
+# in every subpage header; it is stated once on the top page in Overall state
+# ("each PASS row passed at the ledger determination with no OPEN items").
 
 # --- mechanical sources for the reader-facing verdict / slug -------------
 
@@ -240,9 +247,9 @@ def prep_parts(seibi):
         outcome = m.group(1)
         # Check 5 is retired: both its outcomes are historical and carry no
         # porter action. The rows render the short form; the fact that the
-        # measurement was retired (2026-11-16) is stated once per subpage
-        # header and once in the top-page glossary. The per-row outcome
-        # (passed / not measured) stays in start-themes.tsv, untouched.
+        # measurement was retired (2026-11-16) is stated in the top-page
+        # glossary (the subpage header is a pointer to it). The per-row
+        # outcome (passed / not measured) stays in start-themes.tsv, untouched.
         if outcome == "Check 5 not measured: retired 2026-11-16":
             return "wave-retired", "Complete"
         if outcome == "Check 5 passed":
@@ -304,8 +311,8 @@ def verdict_parts(fullname, rec, sources_verdict):
         return word, f"{record_word} (stamp: STALE)"
     if word == "PASS":
         # BREVITY wave 2 adjudication 5: fresh PASS matches the short STALE
-        # form. The sweep-level fact its clause carried is stated once in
-        # each subpage header (HEADER_PASS_GROUND) and once on the top page.
+        # form. The sweep-level fact its clause carried is stated once on
+        # the top page, in Overall state (wave 3 adjudication A).
         return word, word
     phrase = f"{word} \u2014 {ground}" if ground else word
     if sources_verdict and sources_verdict != word:
@@ -409,7 +416,7 @@ def render_row(r):
             detail += f" / Existing page: [[[existing:{target}|{r['existing']}]]]"
         detail += f" / Original: {sample_links(r['orig_slug'])}"
         detail += f" / Port candidate: {sample_links(r['cand_slug'])}"
-        if r["diff"] == "1":
+        if r["diff"] == "1" and r["staff"] not in NO_CHANGE_PROC:
             detail += f" / Diff: [[[phase17-diff-{r['orig_slug']}-jp|diff page]]]"
     key = r["cand_slug"] or r["orig_slug"]
     if key and os.path.exists(os.path.join(REPO, "review", key, "README.md")):
@@ -430,7 +437,7 @@ def render_page(title, rows, navline):
         '[[div class="content-panel standalone centered"]]',
         '[[div class="panel-body"]]',
         "Subpage of the top page's theme table; how to read the columns is on the top page. "
-        + HEADER_STALE_GROUND + HEADER_PASS_GROUND + HEADER_CHECK5_GROUND
+        + HEADER_STALE_GROUND + HEADER_CHECK5_GROUND
         + f"This subpage has {len(rows)} rows. {navline}",
         "[[/div]]",
         "[[/div]]",
