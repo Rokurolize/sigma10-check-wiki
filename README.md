@@ -33,6 +33,11 @@ at most a trailing-newline difference, which is not a difference.
    edited out of band: reconcile it back into the repository deliberately,
    never by silently re-dumping one side over the other.
 
+For `pages/start.txt` specifically: it is the canonical source of the top
+page. Edit and commit here first, then reflect the same text to both wikis;
+do not edit from the wiki side first. (This maintainer instruction used to
+sit on the porter-facing top page; it belongs with the maintainers here.)
+
 Before this repository existed, the same texts lived scattered across
 campaign state directories (`muse-bhl/theme-sample-*`,
 `theme-lab-playwright-factory/body.txt`, JSON dumps in the sigma10-unify and
@@ -78,7 +83,10 @@ then commit the TSV, the regenerated subpages and any hub edit together.
 `python3 build_start.py --check` fails if a subpage differs from the
 TSV, if a table is not one contiguous block of `||` lines (a blank line
 inside a Wikidot table splits it), or if a subpage exceeds 40,000
-characters. Do not edit the `start:themes-*` files by hand.
+characters. Do not edit the `start:themes-*` files by hand. The wave data
+itself is untouched in `start-themes.tsv` — the generator only renders it
+in plain words (integration-wave codes and the retired Check 5 outcome are
+not shown in rows).
 
 ## Scope notes
 

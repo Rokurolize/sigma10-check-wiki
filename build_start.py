@@ -9,18 +9,19 @@ was created in (the TSV `page` column holds the origin code: jp/en/cn/
 ko/fr). pages/start.txt itself is a hand-maintained hub that links to
 the subpages; it is not generated.
 
-Reader-facing fields (STARTFIX lane):
+Reader-facing fields (STARTFIX lane; BREVITY wave short forms):
   * Status = "Prep: <plain prep> / Verdict: <verdict> / Staff: <staff>".
     Plain prep is a mechanical, total translation of the TSV `seibi`
     field that drops internal wave codes (EN1/CN9/KO1, "settled in CN1")
-    and renders the Check 5 outcome as plain words, while preserving every
-    real condition or caveat verbatim (see prep_parts()). The TSV itself
-    is never edited.
+    and the retired Check 5 outcome, while preserving every real condition
+    or caveat verbatim (see prep_parts()). The TSV itself is never edited.
     Verdict is sourced mechanically from review/sources.tsv's `verdict`
     column AND the package's generated verdict stamp: build_review.py's
     own Records()/assemble_stamp() supply the stamp word (PASS / STALE /
-    NOT PASS / EXCEPTION) and its one-line ground. Both sources are shown,
-    so a porter can see at a glance whether the candidate passed review.
+    NOT PASS / EXCEPTION). A STALE row renders as "<record verdict>
+    (stamp: STALE)": both facts stay visible, while the repair ground is
+    stated once in each subpage header and once on the top page, not
+    re-printed in all 237 rows (BREVITY review finding 1).
   * The Theme cell carries the candidate slug alongside the title, so a
     CN/KO row is findable by slug. The slug comes from review/sources.tsv
     (cand_fullname, else orig_fullname), the same data the verdict uses.
@@ -123,6 +124,29 @@ SAMPLE_GAPS = {
     ),
 }
 
+# One-row explanations that belong in that row's Details, generated like
+# every other row note (BREVITY review finding 12). Keeping them here means
+# the general how-to sections on the top page no longer carry them.
+ROW_NOTES = {
+    "quand-le-soleil-se-couche": (
+        "Note: the original and the port candidate are the same page — this "
+        "theme's JP version has no independent local theme page, so the original "
+        "page itself doubles as the port candidate."
+    ),
+}
+
+# Grounds stated once per subpage header (BREVITY finding 1): the row forms
+# carry only the short forms, these lines carry the two justifications.
+HEADER_STALE_GROUND = (
+    "Stamp STALE = candidate revised after the verdict through recorded "
+    "repairs; the record verdict stands and the row is posted like PASS "
+    "(ruling on the top page). "
+)
+HEADER_CHECK5_GROUND = (
+    "Check 5 = a per-sample measurement retired 2026-11-16; mentions in "
+    "records are historical; no action. "
+)
+
 # --- mechanical sources for the reader-facing verdict / slug -------------
 
 _BR = None
@@ -197,10 +221,15 @@ def prep_parts(seibi):
     m = _MERGED.match(seibi)
     if m:
         outcome = m.group(1)
+        # Check 5 is retired: both its outcomes are historical and carry no
+        # porter action. The rows render the short form; the fact that the
+        # measurement was retired (2026-11-16) is stated once per subpage
+        # header and once in the top-page glossary. The per-row outcome
+        # (passed / not measured) stays in start-themes.tsv, untouched.
         if outcome == "Check 5 not measured: retired 2026-11-16":
-            return "wave-retired", "Complete (Check 5 retired 2026-11-16; not measured)"
+            return "wave-retired", "Complete"
         if outcome == "Check 5 passed":
-            return "wave-passed", "Complete (Check 5 passed)"
+            return "wave-passed", "Complete"
         return "wave-other", f"Complete ({outcome})"
     if seibi.startswith("No candidate could be produced"):
         return "no-candidate", _SETTLED.sub("", seibi)
@@ -220,21 +249,20 @@ def prep_parts(seibi):
 def verdict_parts(fullname, rec, sources_verdict):
     """Return (stamp word, one-line verdict phrase) for a theme.
 
-    The stamp word and ground come from build_review.py's assemble_stamp;
-    the sources.tsv verdict is appended when it differs from the stamp
-    word (normally PASS vs STALE after the candidate changed). Citations
-    and the 64-hex sha256 are trimmed from the ground for readability; the
-    substantive ground is kept verbatim.
+    The stamp word comes from build_review.py's assemble_stamp and the
+    record verdict from review/sources.tsv. For a STALE row the two facts
+    render in the short form "<record verdict> (stamp: STALE)": the repair
+    ground that used to be re-printed in all 237 STALE rows is stated once
+    in each subpage header and once on the top page (BREVITY finding 1).
+    Non-STALE rows keep their one-line ground; citations and the sha256 are
+    trimmed, the substantive ground is kept verbatim.
 
     STALE rows follow the coordinator's ruling (recorded on pages/start.txt
     under "Overall state (at a glance)"): every post-verdict change landed
     through the campaign's recorded, verified repair waves and is noted in
     the package, so the record verdict stands and a STALE row is posted like
-    a PASS row. The row therefore renders the record verdict with the
-    ruling's plain ground, matching the harmonized STALE wording the stamp
-    now carries itself. The factual stamp word is kept in a trailing bracket
-    so the audit instrument's reading stays available; the stamp region is
-    generated only by build_review.py, never hand-edited.
+    a PASS row. The stamp region itself is generated only by
+    build_review.py, never hand-edited.
     """
     br = build_review()
     block = br.assemble_stamp(rec, fullname)
@@ -250,9 +278,7 @@ def verdict_parts(fullname, rec, sources_verdict):
     word = word.strip()
     if word == "STALE":
         record_word = sources_verdict or "PASS"
-        phrase = (f"{record_word} (record verdict) \u2014 candidate revised after the "
-                  f"verdict through recorded repairs; see package [package stamp: STALE]")
-        return word, phrase
+        return word, f"{record_word} (stamp: STALE)"
     phrase = f"{word} \u2014 {ground}" if ground else word
     if sources_verdict and sources_verdict != word:
         phrase += f" (record verdict: {sources_verdict})"
@@ -362,6 +388,8 @@ def render_row(r):
         detail += f" / Review: [{REVIEW_URL}{key} review package]"
     if key in SAMPLE_GAPS:
         detail += " / " + SAMPLE_GAPS[key]
+    if key in ROW_NOTES:
+        detail += " / " + ROW_NOTES[key]
     return f"|| {label} || {status} || {detail} ||"
 
 
@@ -373,11 +401,9 @@ def render_page(title, rows, navline):
         "",
         '[[div class="content-panel standalone centered"]]',
         '[[div class="panel-body"]]',
-        "A subpage of the theme table of the [[[start|Sigma-10 display-check top page]]]. "
-        "How to read the table is in \"How to read this table (theme, status, details)\" on the top page. "
-        "The canonical source of this subpage is start-themes.tsv in the Git repository (sigma10-check-wiki), generated by build_start.py. "
-        "The Status column shows Prep (plain-language work state), Verdict (the review verdict from review/sources.tsv and the generated package stamp), and Staff (the staff procedure). "
-        f"This subpage has {len(rows)} rows. {navline}",
+        "Subpage of the top page's theme table; how to read the columns is on the top page. "
+        + HEADER_STALE_GROUND + HEADER_CHECK5_GROUND
+        + f"This subpage has {len(rows)} rows. {navline}",
         "[[/div]]",
         "[[/div]]",
         "",

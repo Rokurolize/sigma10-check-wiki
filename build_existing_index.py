@@ -41,7 +41,7 @@ STATUS_INTRO = (
     "* 各行の「状態・手続き」は、Wikijump側の描画再現状態（再現状態）、移行時の手続き（移行手続き）、および記録の種別（記録）です。"
     "再現状態は [[[start:wikijump-parity|Wikijump描画再現の記録]]] と review/existing-pages/README.md から、"
     "移行手続きは start-themes.tsv のスタッフ適用手続きと同READMEのクロスリファレンスから機械的に生成されています（build_existing_index.py）。"
-    "公開済みページは移行日に影響を受ける優先の検証面です。"
+    "行に手続きが書かれていない場合はソース変更なし。そのまま維持。記録欄が空の場合は描画再現記録のみ。"
 )
 HEADER_ROW = "||~ ページ ||~ タイトル ||~ リンク ||~ 状態・手続き ||"
 MARKER = "各行の「状態・手続き」"
@@ -176,7 +176,16 @@ def status_cell(fullname, xrefs, parity, staff):
     record = jp_record(short_xref(xref))
     if kind.startswith("old"):
         proc = jp_proc("Legacy record; no action (keep as-is)")
-    return f"再現状態: {jp_repro(repro)} / 移行手続き: {proc} / 記録: {record}"
+    # BREVITY finding 4: the two default values are stated once in 概要 above.
+    # A default cell is left empty so the rows that need action stand out.
+    default_proc = jp_proc("No source change at migration; keep as-is")
+    default_rec = jp_record("no theme row; parity record only")
+    parts = [f"再現状態: {jp_repro(repro)}"]
+    if proc != default_proc:
+        parts.append(f"移行手続き: {proc}")
+    if record != default_rec:
+        parts.append(f"記録: {record}")
+    return " / ".join(parts)
 
 
 def generate():
